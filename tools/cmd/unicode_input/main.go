@@ -7,8 +7,13 @@ import (
 	"unicode"
 
 	"kitty/tools/cli"
+	"kitty/tools/tui"
+	"kitty/tools/tui/loop"
 	"kitty/tools/unicode_names"
 	"kitty/tools/utils"
+	"kitty/tools/wcswidth"
+
+	"golang.org/x/exp/slices"
 )
 
 var _ = fmt.Print
@@ -21,6 +26,8 @@ const default_set_of_symbols string = `
 
 var DEFAULT_SET []rune
 var EMOTICONS_SET []rune
+
+const DEFAULT_MODE string = "HEX"
 
 func build_sets() {
 	DEFAULT_SET = make([]rune, 0, len(default_set_of_symbols))
@@ -42,12 +49,69 @@ type CachedData struct {
 
 var cached_data *CachedData
 
+type handler struct {
+	mode         string
+	recent       []rune
+	current_char rune
+	err          error
+}
+
+func run_loop(opts *Options) (err error) {
+	output := tui.KittenOutputSerializer()
+	lp, err := loop.New()
+	if err != nil {
+		return err
+	}
+	h := handler{mode: cached_data.Mode, recent: cached_data.Recent}
+
+	err = lp.Run()
+	if err != nil {
+		return
+	}
+	ds := lp.DeathSignalName()
+	if ds != "" {
+		fmt.Println("Killed by signal: ", ds)
+		lp.KillIfSignalled()
+		return
+	}
+	if h.err == nil {
+		cached_data.Mode = h.mode
+		if h.current_char != 0 {
+			cached_data.Recent = h.recent
+			idx := slices.Index(cached_data.Recent, h.current_char)
+			if idx > -1 {
+				cached_data.Recent = slices.Delete(cached_data.Recent, idx, idx+1)
+			}
+			cached_data.Recent = slices.Insert(cached_data.Recent, 0, h.current_char)[:len(DEFAULT_SET)]
+			ans := string(h.current_char)
+			if wcswidth.IsEmojiPresentationBase(h.current_char) {
+				switch opts.EmojiVariation {
+				case "text":
+					ans += "\ufe0e"
+				case "graphic":
+					ans += "\ufe0f"
+				}
+			}
+			o, err := output(ans)
+			if err != nil {
+				return err
+			}
+			fmt.Println(o)
+		}
+	}
+	return h.err
+}
+
 func main(cmd *cli.Command, o *Options, args []string) (rc int, err error) {
 	go unicode_names.Initialize() // start parsing name data in the background
 	build_sets()
-	cv := utils.NewCachedValues("unicode-input", &CachedData{Recent: DEFAULT_SET, Mode: "HEX"})
+	cv := utils.NewCachedValues("unicode-input", &CachedData{Recent: DEFAULT_SET, Mode: DEFAULT_MODE})
 	cached_data = cv.Load()
 	defer cv.Save()
+	err = run_loop(o)
+	if err != nil {
+		return 1, err
+	}
 	return
 }
 
