@@ -455,16 +455,8 @@ def gen_names() -> None:
             aliases_map.setdefault(cp, set()).add(word)
     if len(name_map) > 0xffff:
         raise Exception('Too many named codepoints')
-
-    with open('tools/unicode_names/data.go', 'w') as gof:
-        gp = partial(print, file=gof)
-        gp('package unicode_names\n\n')
-        gp('import _ "embed"\n\n')
-        gp(f'const num_of_lines = {len(name_map)}')
-        gp(f'const num_of_words = {len(word_search_map)}')
-        gp('//go:embed data.bin')
-        gp('var unicode_name_data []byte')
     with open('tools/unicode_names/data.bin', 'wb') as gob:
+        gob.write(struct.pack('<II', len(name_map), len(word_search_map)))
         for cp, name in name_map.items():
             words = name.lower().split()
             ename = ' '.join(words).encode()
@@ -474,7 +466,6 @@ def gen_names() -> None:
                 ename = ' '.join(aliases).encode()
                 record += ename
             gob.write(struct.pack('<H', len(record)) + record)
-    subprocess.check_call(['gofmt', '-w', '-s', gof.name])
 
     with create_header('kittens/unicode_input/names.h') as p:
         # Mapping of mark to codepoint name
