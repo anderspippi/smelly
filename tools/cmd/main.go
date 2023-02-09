@@ -6,6 +6,7 @@ import (
 	"kitty/tools/cli"
 	"kitty/tools/cmd/completion"
 	"kitty/tools/cmd/tool"
+	"kitty/tools/unicode_names"
 )
 
 func main() {
@@ -19,6 +20,7 @@ func main() {
 
 	tool.KittyToolEntryPoints(root)
 	completion.EntryPoint(root)
+	unicode_names.Develop()
 
 	root.Exec()
 }

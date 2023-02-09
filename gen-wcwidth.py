@@ -3,6 +3,7 @@
 
 import os
 import re
+import struct
 import subprocess
 import sys
 from collections import defaultdict
@@ -444,9 +445,38 @@ def gen_ucd() -> None:
 
 
 def gen_names() -> None:
+    mark_to_cp = list(sorted(name_map))
+    cp_to_mark = {cp: m for m, cp in enumerate(mark_to_cp)}
+    word_map = sorted(word_search_map)
+    word_rmap = {w: i for i, w in enumerate(word_map)}
+    aliases_map: Dict[int, Set[str]] = {}
+    for word, codepoints in word_search_map.items():
+        for cp in codepoints:
+            aliases_map.setdefault(cp, set()).add(word)
+    if len(name_map) > 0xffff:
+        raise Exception('Too many named codepoints')
+
+    with open('tools/unicode_names/data.go', 'w') as gof:
+        gp = partial(print, file=gof)
+        gp('package unicode_names\n\n')
+        gp('import _ "embed"\n\n')
+        gp(f'const num_of_lines = {len(name_map)}')
+        gp(f'const num_of_words = {len(word_search_map)}')
+        gp('//go:embed data.bin')
+        gp('var unicode_name_data []byte')
+    with open('tools/unicode_names/data.bin', 'wb') as gob:
+        for cp, name in name_map.items():
+            words = name.lower().split()
+            ename = ' '.join(words).encode()
+            record = struct.pack('<IH', cp, len(ename)) + ename
+            aliases = aliases_map.get(cp, set()) - set(words)
+            if aliases:
+                ename = ' '.join(aliases).encode()
+                record += ename
+            gob.write(struct.pack('<H', len(record)) + record)
+    subprocess.check_call(['gofmt', '-w', '-s', gof.name])
+
     with create_header('kittens/unicode_input/names.h') as p:
-        mark_to_cp = list(sorted(name_map))
-        cp_to_mark = {cp: m for m, cp in enumerate(mark_to_cp)}
         # Mapping of mark to codepoint name
         p(f'static const char* name_map[{len(mark_to_cp)}] = {{' ' // {{{')
         for cp in mark_to_cp:
@@ -469,8 +499,6 @@ def gen_names() -> None:
         p('}\n')
 
         # Array of all words
-        word_map = tuple(sorted(word_search_map))
-        word_rmap = {w: i for i, w in enumerate(word_map)}
         p(f'static const char* all_words_map[{len(word_map)}] = {{' ' // {{{')
         cwords = (w.replace('"', '\\"') for w in word_map)
         p(', '.join(f'"{w}"' for w in cwords))
