@@ -18,7 +18,7 @@ import (
 type mark_set = *utils.Set[uint16]
 
 //go:embed data.bin
-var unicode_name_data []byte
+var unicode_name_data string
 var _ = fmt.Print
 var names map[uint32]string
 var marks []uint32
@@ -60,7 +60,7 @@ func parse_record(record []byte, mark uint16) {
 var parse_once sync.Once
 
 func parse_data() {
-	raw := unicode_name_data
+	raw := utils.UnsafeStringToBytes(unicode_name_data)
 	num_of_lines := binary.LittleEndian.Uint32(raw)
 	raw = raw[4:]
 	num_of_words := binary.LittleEndian.Uint32(raw)
