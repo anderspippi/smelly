@@ -50,7 +50,7 @@ func parse_record(record []byte, mark uint16) {
 	names[codepoint] = name
 	add_words(mark, record[:namelen])
 	if len(record) > int(namelen) {
-		add_words(mark, record[:namelen])
+		add_words(mark, record[namelen:])
 	}
 }
 
@@ -109,6 +109,9 @@ func marks_for_query(query string) (ans mark_set) {
 		} else {
 			ans = ans.Intersect(x)
 		}
+	}
+	if ans == nil {
+		ans = utils.NewSet[uint16](0)
 	}
 	return
 }
