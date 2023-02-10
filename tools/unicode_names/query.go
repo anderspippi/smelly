@@ -22,8 +22,8 @@ type mark_set = *utils.Set[uint16]
 //go:embed data.bin
 var unicode_name_data string
 var _ = fmt.Print
-var names map[uint32]string
-var marks []uint32
+var names map[rune]string
+var marks []rune
 var word_map map[string][]uint16
 
 func add_word(codepoint uint16, word []byte) {
@@ -46,7 +46,7 @@ func add_words(codepoint uint16, raw []byte) {
 }
 
 func parse_record(record []byte, mark uint16) {
-	codepoint := binary.LittleEndian.Uint32(record)
+	codepoint := rune(binary.LittleEndian.Uint32(record))
 	record = record[4:]
 	marks[mark] = codepoint
 	namelen := binary.LittleEndian.Uint16(record)
@@ -92,9 +92,9 @@ func parse_data() {
 	raw = raw[4:]
 	num_of_words := binary.LittleEndian.Uint32(raw)
 	raw = raw[4:]
-	names = make(map[uint32]string, num_of_lines)
+	names = make(map[rune]string, num_of_lines)
 	word_map = make(map[string][]uint16, num_of_words)
-	marks = make([]uint32, num_of_lines)
+	marks = make([]rune, num_of_lines)
 	var mark uint16
 	for len(raw) > 0 {
 		record_len := binary.LittleEndian.Uint16(raw)
@@ -109,7 +109,7 @@ func Initialize() {
 	parse_once.Do(parse_data)
 }
 
-func NameForCodePoint(cp uint32) string {
+func NameForCodePoint(cp rune) string {
 	Initialize()
 	return names[cp]
 }
@@ -150,9 +150,9 @@ func marks_for_query(query string) (ans mark_set) {
 	return
 }
 
-func CodePointsForQuery(query string) (ans []uint32) {
+func CodePointsForQuery(query string) (ans []rune) {
 	x := marks_for_query(query)
-	ans = make([]uint32, x.Len())
+	ans = make([]rune, x.Len())
 	i := 0
 	for m := range x.Iterable() {
 		ans[i] = marks[m]
