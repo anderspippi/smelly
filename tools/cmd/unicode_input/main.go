@@ -4,6 +4,7 @@ package unicode_input
 
 import (
 	"fmt"
+	"strings"
 	"unicode"
 
 	"kitty/tools/cli"
@@ -11,6 +12,7 @@ import (
 	"kitty/tools/tui/loop"
 	"kitty/tools/unicode_names"
 	"kitty/tools/utils"
+	"kitty/tools/utils/style"
 	"kitty/tools/wcswidth"
 
 	"golang.org/x/exp/slices"
@@ -49,11 +51,65 @@ type CachedData struct {
 
 var cached_data *CachedData
 
+type Mode int
+
+const (
+	HEX Mode = iota
+	NAME
+	EMOTICONS
+	FAVORITES
+)
+
+type ModeData struct {
+	mode  Mode
+	key   string
+	title string
+}
+
+var all_modes [4]ModeData
+
 type handler struct {
-	mode         string
-	recent       []rune
-	current_char rune
-	err          error
+	mode                                     Mode
+	recent                                   []rune
+	current_char                             rune
+	err                                      error
+	lp                                       *loop.Loop
+	ctx                                      style.Context
+	current_tab_formatter, tab_bar_formatter func(...any) string
+}
+
+func (self *handler) initialize() {
+	self.lp.AllowLineWrapping(false)
+	self.lp.SetWindowTitle("Unicode input")
+	self.ctx.AllowEscapeCodes = true
+	self.current_tab_formatter = self.ctx.SprintFunc("reverse=false bold=true")
+	self.tab_bar_formatter = self.ctx.SprintFunc("reverse=true")
+	self.draw_screen()
+}
+
+func (self *handler) draw_title_bar() {
+	entries := make([]string, 0, len(all_modes))
+	for _, md := range all_modes {
+		entry := fmt.Sprintf(" %s (%s) ", md.title, md.key)
+		if md.mode == self.mode {
+			entry = self.current_tab_formatter(entry)
+		}
+		entries = append(entries, entry)
+	}
+	sz, _ := self.lp.ScreenSize()
+	text := fmt.Sprintf("Search by:%s", strings.Join(entries, ""))
+	extra := int(sz.WidthCells) - wcswidth.Stringwidth(text)
+	if extra > 0 {
+		text += strings.Repeat(" ", extra)
+	}
+	self.lp.QueueWriteString(self.tab_bar_formatter(text))
+}
+
+func (self *handler) draw_screen() {
+	self.lp.StartAtomicUpdate()
+	defer self.lp.EndAtomicUpdate()
+	self.lp.ClearScreen()
+	self.draw_title_bar()
 }
 
 func run_loop(opts *Options) (lp *loop.Loop, err error) {
@@ -66,12 +122,30 @@ func run_loop(opts *Options) (lp *loop.Loop, err error) {
 	cached_data = cv.Load()
 	defer cv.Save()
 
-	h := handler{mode: cached_data.Mode, recent: cached_data.Recent}
+	h := handler{recent: cached_data.Recent, lp: lp}
+	switch cached_data.Mode {
+	case "HEX":
+		h.mode = HEX
+	case "NAME":
+		h.mode = NAME
+	case "EMOTICONS":
+		h.mode = EMOTICONS
+	case "FAVORITES":
+		h.mode = FAVORITES
+	}
+	all_modes[0] = ModeData{mode: HEX, title: "Code", key: "F1"}
+	all_modes[1] = ModeData{mode: NAME, title: "Name", key: "F2"}
+	all_modes[2] = ModeData{mode: EMOTICONS, title: "Emoticons", key: "F3"}
+	all_modes[3] = ModeData{mode: FAVORITES, title: "Favorites", key: "F4"}
 
 	lp.OnInitialize = func() (string, error) {
-		lp.AllowLineWrapping(false)
-		lp.SetWindowTitle("Unicode input")
+		h.initialize()
 		return "", nil
+	}
+
+	lp.OnResize = func(old_size, new_size loop.ScreenSize) error {
+		h.draw_screen()
+		return nil
 	}
 
 	err = lp.Run()
@@ -79,7 +153,16 @@ func run_loop(opts *Options) (lp *loop.Loop, err error) {
 		return
 	}
 	if h.err == nil {
-		cached_data.Mode = h.mode
+		switch h.mode {
+		case HEX:
+			cached_data.Mode = "HEX"
+		case NAME:
+			cached_data.Mode = "NAME"
+		case EMOTICONS:
+			cached_data.Mode = "EMOTICONS"
+		case FAVORITES:
+			cached_data.Mode = "FAVORITES"
+		}
 		if h.current_char != 0 {
 			cached_data.Recent = h.recent
 			idx := slices.Index(cached_data.Recent, h.current_char)
