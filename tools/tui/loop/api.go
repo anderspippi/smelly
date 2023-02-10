@@ -333,6 +333,12 @@ func (self *Loop) AllowLineWrapping(allow bool) {
 	}
 }
 
+func (self *Loop) SetWindowTitle(title string) {
+	title = strings.ReplaceAll(title, "\033", "")
+	title = strings.ReplaceAll(title, "\x9c", "")
+	self.QueueWriteString("\033]2;" + title + "\033\\")
+}
+
 func (self *Loop) ClearScreen() {
 	self.QueueWriteString("\x1b[H\x1b[2J")
 }

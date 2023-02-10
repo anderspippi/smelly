@@ -56,22 +56,26 @@ type handler struct {
 	err          error
 }
 
-func run_loop(opts *Options) (err error) {
+func run_loop(opts *Options) (lp *loop.Loop, err error) {
 	output := tui.KittenOutputSerializer()
-	lp, err := loop.New()
-	if err != nil {
-		return err
-	}
-	h := handler{mode: cached_data.Mode, recent: cached_data.Recent}
-
-	err = lp.Run()
+	lp, err = loop.New()
 	if err != nil {
 		return
 	}
-	ds := lp.DeathSignalName()
-	if ds != "" {
-		fmt.Println("Killed by signal: ", ds)
-		lp.KillIfSignalled()
+	cv := utils.NewCachedValues("unicode-input", &CachedData{Recent: DEFAULT_SET, Mode: DEFAULT_MODE})
+	cached_data = cv.Load()
+	defer cv.Save()
+
+	h := handler{mode: cached_data.Mode, recent: cached_data.Recent}
+
+	lp.OnInitialize = func() (string, error) {
+		lp.AllowLineWrapping(false)
+		lp.SetWindowTitle("Unicode input")
+		return "", nil
+	}
+
+	err = lp.Run()
+	if err != nil {
 		return
 	}
 	if h.err == nil {
@@ -94,23 +98,27 @@ func run_loop(opts *Options) (err error) {
 			}
 			o, err := output(ans)
 			if err != nil {
-				return err
+				return lp, err
 			}
 			fmt.Println(o)
 		}
 	}
-	return h.err
+	err = h.err
+	return
 }
 
 func main(cmd *cli.Command, o *Options, args []string) (rc int, err error) {
 	go unicode_names.Initialize() // start parsing name data in the background
 	build_sets()
-	cv := utils.NewCachedValues("unicode-input", &CachedData{Recent: DEFAULT_SET, Mode: DEFAULT_MODE})
-	cached_data = cv.Load()
-	defer cv.Save()
-	err = run_loop(o)
+	lp, err := run_loop(o)
 	if err != nil {
 		return 1, err
+	}
+	ds := lp.DeathSignalName()
+	if ds != "" {
+		fmt.Println("Killed by signal: ", ds)
+		lp.KillIfSignalled()
+		return 1, nil
 	}
 	return
 }
