@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 # License: GPL v3 Copyright: 2017, Kovid Goyal <kovid at kovidgoyal.net>
 
+import io
 import os
 import re
 import struct
 import subprocess
 import sys
+import zlib
 from collections import defaultdict
 from contextlib import contextmanager
 from functools import lru_cache, partial
@@ -451,17 +453,21 @@ def gen_names() -> None:
             aliases_map.setdefault(cp, set()).add(word)
     if len(name_map) > 0xffff:
         raise Exception('Too many named codepoints')
-    with open('tools/unicode_names/data.bin', 'wb') as gob:
-        gob.write(struct.pack('<II', len(name_map), len(word_search_map)))
-        for cp, name in name_map.items():
-            words = name.lower().split()
-            ename = ' '.join(words).encode()
-            record = struct.pack('<IH', cp, len(ename)) + ename
-            aliases = aliases_map.get(cp, set()) - set(words)
-            if aliases:
-                ename = ' '.join(aliases).encode()
-                record += ename
-            gob.write(struct.pack('<H', len(record)) + record)
+    gob = io.BytesIO()
+    gob.write(struct.pack('<II', len(name_map), len(word_search_map)))
+    for cp, name in name_map.items():
+        words = name.lower().split()
+        ename = ' '.join(words).encode()
+        record = struct.pack('<IH', cp, len(ename)) + ename
+        aliases = aliases_map.get(cp, set()) - set(words)
+        if aliases:
+            ename = ' '.join(aliases).encode()
+            record += ename
+        gob.write(struct.pack('<H', len(record)) + record)
+    with open('tools/unicode_names/data.bin', 'wb') as f:
+        data = gob.getvalue()
+        f.write(struct.pack('<I', len(data)))
+        f.write(zlib.compress(data, zlib.Z_BEST_COMPRESSION))
 
 
 def gen_wcwidth() -> None:
