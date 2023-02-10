@@ -389,6 +389,11 @@ func run_loop(opts *Options) (lp *loop.Loop, err error) {
 		return nil
 	}
 
+	lp.OnResumeFromStop = func() error {
+		h.refresh()
+		return nil
+	}
+
 	lp.OnText = h.on_text
 	lp.OnFinalize = h.finalize
 	lp.OnKeyEvent = h.on_key_event
