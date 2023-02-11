@@ -23,7 +23,7 @@ If applicable, add screenshots to help explain your problem.
 **Environment details**
 ```
 Press Ctrl+Shift+F6 (cmd+option+comma on macOS) in smelly, to copy debug output about smelly and its
-configuration to the clipboard and paste it here. 
+configuration to the clipboard and paste it here.
 
 On older versions of smelly, run smelly --debug-config instead
 ```

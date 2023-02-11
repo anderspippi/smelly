@@ -984,8 +984,8 @@ struct __pyx_defaults1 {
 };
 
 /* "smelly/marks.py":25
- * 
- * 
+ *
+ *
  * def marker_from_regex(             # <<<<<<<<<<<<<<
  *         expression: Union[str, 'Pattern[str]'],
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -999,7 +999,7 @@ struct __pyx_obj_6smelly_5marks___pyx_scope_struct__marker_from_regex {
 
 /* "smelly/marks.py":34
  *         pat = expression
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, colorv = get_output_variables(
@@ -1022,8 +1022,8 @@ struct __pyx_obj_6smelly_5marks___pyx_scope_struct_1_marker {
 
 
 /* "smelly/marks.py":47
- * 
- * 
+ *
+ *
  * def marker_from_multiple_regex(             # <<<<<<<<<<<<<<
  *         regexes: Iterable[Tuple[int, str]],
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -1037,7 +1037,7 @@ struct __pyx_obj_6smelly_5marks___pyx_scope_struct_2_marker_from_multiple_regex 
 
 /* "smelly/marks.py":59
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, color = get_output_variables(
@@ -1061,8 +1061,8 @@ struct __pyx_obj_6smelly_5marks___pyx_scope_struct_3_marker {
 
 
 /* "smelly/marks.py":77
- * 
- * 
+ *
+ *
  * def marker_from_function(             # <<<<<<<<<<<<<<
  *         func: Callable[[str],
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -1946,8 +1946,8 @@ static PyObject *__pyx_codeobj__23;
 /* Late includes */
 
 /* "smelly/marks.py":16
- * 
- * 
+ *
+ *
  * def get_output_variables(left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                          color_address: int) -> Tuple[c_uint, c_uint, c_uint]:
  *     return (
@@ -2222,7 +2222,7 @@ static PyObject *__pyx_pf_6smelly_5marks_get_output_variables(CYTHON_UNUSED PyOb
  *         cast(c_void_p(right_address), pointer_to_uint).contents,
  *         cast(c_void_p(color_address), pointer_to_uint).contents,             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_cast); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -2321,8 +2321,8 @@ static PyObject *__pyx_pf_6smelly_5marks_get_output_variables(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/marks.py":16
- * 
- * 
+ *
+ *
  * def get_output_variables(left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                          color_address: int) -> Tuple[c_uint, c_uint, c_uint]:
  *     return (
@@ -2347,8 +2347,8 @@ static PyObject *__pyx_pf_6smelly_5marks_get_output_variables(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/marks.py":25
- * 
- * 
+ *
+ *
  * def marker_from_regex(             # <<<<<<<<<<<<<<
  *         expression: Union[str, 'Pattern[str]'],
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -2477,7 +2477,7 @@ static PyObject *__pyx_gb_6smelly_5marks_17marker_from_regex_2generator(__pyx_Co
 
 /* "smelly/marks.py":34
  *         pat = expression
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, colorv = get_output_variables(
@@ -2726,13 +2726,13 @@ static PyObject *__pyx_gb_6smelly_5marks_17marker_from_regex_2generator(__pyx_Co
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -2899,7 +2899,7 @@ static PyObject *__pyx_gb_6smelly_5marks_17marker_from_regex_2generator(__pyx_Co
  *             left.value = match.start()
  *             right.value = match.end() - 1             # <<<<<<<<<<<<<<
  *             yield
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_match, __pyx_n_s_end); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -2928,7 +2928,7 @@ static PyObject *__pyx_gb_6smelly_5marks_17marker_from_regex_2generator(__pyx_Co
  *             left.value = match.start()
  *             right.value = match.end() - 1
  *             yield             # <<<<<<<<<<<<<<
- * 
+ *
  *     return marker
  */
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2963,7 +2963,7 @@ static PyObject *__pyx_gb_6smelly_5marks_17marker_from_regex_2generator(__pyx_Co
 
   /* "smelly/marks.py":34
  *         pat = expression
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, colorv = get_output_variables(
@@ -2991,8 +2991,8 @@ static PyObject *__pyx_gb_6smelly_5marks_17marker_from_regex_2generator(__pyx_Co
 }
 
 /* "smelly/marks.py":25
- * 
- * 
+ *
+ *
  * def marker_from_regex(             # <<<<<<<<<<<<<<
  *         expression: Union[str, 'Pattern[str]'],
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -3088,7 +3088,7 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
  *         pat = re.compile(expression, flags=flags)
  *     else:
  */
-  __pyx_t_6 = PyString_Check(__pyx_v_expression); 
+  __pyx_t_6 = PyString_Check(__pyx_v_expression);
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
@@ -3135,7 +3135,7 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
  *         pat = re.compile(expression, flags=flags)
  *     else:
  *         pat = expression             # <<<<<<<<<<<<<<
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,
  */
   /*else*/ {
@@ -3147,7 +3147,7 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
 
   /* "smelly/marks.py":34
  *         pat = expression
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, colorv = get_output_variables(
@@ -3160,7 +3160,7 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
   if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_color_address, __pyx_n_u_int) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
 
   /* "smelly/marks.py":35
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,
  *                color_address: int) -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *         left, right, colorv = get_output_variables(
@@ -3176,7 +3176,7 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
 
   /* "smelly/marks.py":34
  *         pat = expression
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, colorv = get_output_variables(
@@ -3190,10 +3190,10 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
 
   /* "smelly/marks.py":44
  *             yield
- * 
+ *
  *     return marker             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_marker);
@@ -3201,8 +3201,8 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "smelly/marks.py":25
- * 
- * 
+ *
+ *
  * def marker_from_regex(             # <<<<<<<<<<<<<<
  *         expression: Union[str, 'Pattern[str]'],
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -3226,8 +3226,8 @@ static PyObject *__pyx_pf_6smelly_5marks_2marker_from_regex(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/marks.py":47
- * 
- * 
+ *
+ *
  * def marker_from_multiple_regex(             # <<<<<<<<<<<<<<
  *         regexes: Iterable[Tuple[int, str]],
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -3345,7 +3345,7 @@ static PyObject *__pyx_gb_6smelly_5marks_26marker_from_multiple_regex_2generator
 
 /* "smelly/marks.py":59
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, color = get_output_variables(
@@ -3595,13 +3595,13 @@ static PyObject *__pyx_gb_6smelly_5marks_26marker_from_multiple_regex_2generator
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -3802,7 +3802,7 @@ static PyObject *__pyx_gb_6smelly_5marks_26marker_from_multiple_regex_2generator
  *             grp = match.lastgroup
  *             color.value = color_map[grp] if grp is not None else 0             # <<<<<<<<<<<<<<
  *             yield
- * 
+ *
  */
     __pyx_t_10 = (__pyx_cur_scope->__pyx_v_grp != Py_None);
     if ((__pyx_t_10 != 0)) {
@@ -3826,7 +3826,7 @@ static PyObject *__pyx_gb_6smelly_5marks_26marker_from_multiple_regex_2generator
  *             grp = match.lastgroup
  *             color.value = color_map[grp] if grp is not None else 0
  *             yield             # <<<<<<<<<<<<<<
- * 
+ *
  *     return marker
  */
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -3861,7 +3861,7 @@ static PyObject *__pyx_gb_6smelly_5marks_26marker_from_multiple_regex_2generator
 
   /* "smelly/marks.py":59
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, color = get_output_variables(
@@ -3889,8 +3889,8 @@ static PyObject *__pyx_gb_6smelly_5marks_26marker_from_multiple_regex_2generator
 }
 
 /* "smelly/marks.py":47
- * 
- * 
+ *
+ *
  * def marker_from_multiple_regex(             # <<<<<<<<<<<<<<
  *         regexes: Iterable[Tuple[int, str]],
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -4012,11 +4012,11 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_7);
@@ -4144,7 +4144,7 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
  *         color_map[grp] = color
  *     expr = expr[1:]             # <<<<<<<<<<<<<<
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_expr, 1, 0, NULL, NULL, &__pyx_slice__7, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4155,7 +4155,7 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
  *         color_map[grp] = color
  *     expr = expr[1:]
  *     pat = re.compile(expr, flags=flags)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_re); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -4182,7 +4182,7 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
 
   /* "smelly/marks.py":59
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, color = get_output_variables(
@@ -4195,7 +4195,7 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
   if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_color_address, __pyx_n_u_int) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "smelly/marks.py":60
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,
  *                color_address: int) -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *         left, right, color = get_output_variables(
@@ -4211,7 +4211,7 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
 
   /* "smelly/marks.py":59
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, color = get_output_variables(
@@ -4225,10 +4225,10 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
 
   /* "smelly/marks.py":70
  *             yield
- * 
+ *
  *     return marker             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_marker);
@@ -4236,8 +4236,8 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/marks.py":47
- * 
- * 
+ *
+ *
  * def marker_from_multiple_regex(             # <<<<<<<<<<<<<<
  *         regexes: Iterable[Tuple[int, str]],
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -4268,11 +4268,11 @@ static PyObject *__pyx_pf_6smelly_5marks_4marker_from_multiple_regex(CYTHON_UNUS
 }
 
 /* "smelly/marks.py":73
- * 
- * 
+ *
+ *
  * def marker_from_text(expression: str, color: int) -> MarkerFunc:             # <<<<<<<<<<<<<<
  *     return marker_from_regex(re.escape(expression), color)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4360,11 +4360,11 @@ static PyObject *__pyx_pf_6smelly_5marks_6marker_from_text(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("marker_from_text", 0);
 
   /* "smelly/marks.py":74
- * 
+ *
  * def marker_from_text(expression: str, color: int) -> MarkerFunc:
  *     return marker_from_regex(re.escape(expression), color)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_marker_from_regex); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
@@ -4441,11 +4441,11 @@ static PyObject *__pyx_pf_6smelly_5marks_6marker_from_text(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/marks.py":73
- * 
- * 
+ *
+ *
  * def marker_from_text(expression: str, color: int) -> MarkerFunc:             # <<<<<<<<<<<<<<
  *     return marker_from_regex(re.escape(expression), color)
- * 
+ *
  */
 
   /* function exit code */
@@ -4464,8 +4464,8 @@ static PyObject *__pyx_pf_6smelly_5marks_6marker_from_text(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/marks.py":77
- * 
- * 
+ *
+ *
  * def marker_from_function(             # <<<<<<<<<<<<<<
  *         func: Callable[[str],
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -4738,13 +4738,13 @@ static PyObject *__pyx_gb_6smelly_5marks_20marker_from_function_2generator2(__py
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -4873,13 +4873,13 @@ static PyObject *__pyx_gb_6smelly_5marks_20marker_from_function_2generator2(__py
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_2);
@@ -4952,7 +4952,7 @@ static PyObject *__pyx_gb_6smelly_5marks_20marker_from_function_2generator2(__py
  *             right.value = r
  *             colorv.value = c             # <<<<<<<<<<<<<<
  *             yield
- * 
+ *
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_colorv, __pyx_n_s_value, __pyx_cur_scope->__pyx_v_c) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
 
@@ -4960,7 +4960,7 @@ static PyObject *__pyx_gb_6smelly_5marks_20marker_from_function_2generator2(__py
  *             right.value = r
  *             colorv.value = c
  *             yield             # <<<<<<<<<<<<<<
- * 
+ *
  *     return marker
  */
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -5024,8 +5024,8 @@ static PyObject *__pyx_gb_6smelly_5marks_20marker_from_function_2generator2(__py
 }
 
 /* "smelly/marks.py":77
- * 
- * 
+ *
+ *
  * def marker_from_function(             # <<<<<<<<<<<<<<
  *         func: Callable[[str],
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -5101,10 +5101,10 @@ static PyObject *__pyx_pf_6smelly_5marks_8marker_from_function(CYTHON_UNUSED PyO
 
   /* "smelly/marks.py":90
  *             yield
- * 
+ *
  *     return marker             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_marker);
@@ -5112,8 +5112,8 @@ static PyObject *__pyx_pf_6smelly_5marks_8marker_from_function(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly/marks.py":77
- * 
- * 
+ *
+ *
  * def marker_from_function(             # <<<<<<<<<<<<<<
  *         func: Callable[[str],
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -5136,8 +5136,8 @@ static PyObject *__pyx_pf_6smelly_5marks_8marker_from_function(CYTHON_UNUSED PyO
 }
 
 /* "smelly/marks.py":93
- * 
- * 
+ *
+ *
  * def marker_from_spec(             # <<<<<<<<<<<<<<
  *         ftype: str, spec: Union[str, Sequence[Tuple[int, str]]],
  *         flags: int) -> MarkerFunc:
@@ -5263,7 +5263,7 @@ static PyObject *__pyx_pf_6smelly_5marks_10marker_from_spec(CYTHON_UNUSED PyObje
  */
     #ifndef CYTHON_WITHOUT_ASSERTIONS
     if (unlikely(!Py_OptimizeFlag)) {
-      __pyx_t_2 = PyString_Check(__pyx_v_spec); 
+      __pyx_t_2 = PyString_Check(__pyx_v_spec);
       if (unlikely(!((!(__pyx_t_2 != 0)) != 0))) {
         PyErr_SetNone(PyExc_AssertionError);
         __PYX_ERR(0, 97, __pyx_L1_error)
@@ -5372,7 +5372,7 @@ static PyObject *__pyx_pf_6smelly_5marks_10marker_from_spec(CYTHON_UNUSED PyObje
  *         return marker_from_multiple_regex(spec, flags=flags)
  *     if ftype == 'function':             # <<<<<<<<<<<<<<
  *         import runpy
- * 
+ *
  */
   __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_ftype, __pyx_n_s_function, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 101, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
@@ -5382,7 +5382,7 @@ static PyObject *__pyx_pf_6smelly_5marks_10marker_from_spec(CYTHON_UNUSED PyObje
  *         return marker_from_multiple_regex(spec, flags=flags)
  *     if ftype == 'function':
  *         import runpy             # <<<<<<<<<<<<<<
- * 
+ *
  *         assert isinstance(spec, str)
  */
     __pyx_t_4 = __Pyx_Import(__pyx_n_s_runpy, 0, -1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -5392,14 +5392,14 @@ static PyObject *__pyx_pf_6smelly_5marks_10marker_from_spec(CYTHON_UNUSED PyObje
 
     /* "smelly/marks.py":104
  *         import runpy
- * 
+ *
  *         assert isinstance(spec, str)             # <<<<<<<<<<<<<<
  *         path = resolve_custom_file(spec)
  *         return marker_from_function(
  */
     #ifndef CYTHON_WITHOUT_ASSERTIONS
     if (unlikely(!Py_OptimizeFlag)) {
-      __pyx_t_1 = PyString_Check(__pyx_v_spec); 
+      __pyx_t_1 = PyString_Check(__pyx_v_spec);
       if (unlikely(!(__pyx_t_1 != 0))) {
         PyErr_SetNone(PyExc_AssertionError);
         __PYX_ERR(0, 104, __pyx_L1_error)
@@ -5408,7 +5408,7 @@ static PyObject *__pyx_pf_6smelly_5marks_10marker_from_spec(CYTHON_UNUSED PyObje
     #endif
 
     /* "smelly/marks.py":105
- * 
+ *
  *         assert isinstance(spec, str)
  *         path = resolve_custom_file(spec)             # <<<<<<<<<<<<<<
  *         return marker_from_function(
@@ -5494,7 +5494,7 @@ static PyObject *__pyx_pf_6smelly_5marks_10marker_from_spec(CYTHON_UNUSED PyObje
  *         return marker_from_multiple_regex(spec, flags=flags)
  *     if ftype == 'function':             # <<<<<<<<<<<<<<
  *         import runpy
- * 
+ *
  */
   }
 
@@ -5516,8 +5516,8 @@ static PyObject *__pyx_pf_6smelly_5marks_10marker_from_spec(CYTHON_UNUSED PyObje
   __PYX_ERR(0, 108, __pyx_L1_error)
 
   /* "smelly/marks.py":93
- * 
- * 
+ *
+ *
  * def marker_from_spec(             # <<<<<<<<<<<<<<
  *         ftype: str, spec: Union[str, Sequence[Tuple[int, str]]],
  *         flags: int) -> MarkerFunc:
@@ -6499,7 +6499,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/marks.py":34
  *         pat = expression
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, colorv = get_output_variables(
@@ -6510,7 +6510,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_marks_py, __pyx_n_s_marker, 34, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 34, __pyx_L1_error)
 
   /* "smelly/marks.py":35
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,
  *                color_address: int) -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *         left, right, colorv = get_output_variables(
@@ -6525,7 +6525,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         color_map[grp] = color
  *     expr = expr[1:]             # <<<<<<<<<<<<<<
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  */
   __pyx_slice__7 = PySlice_New(__pyx_int_1, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__7);
@@ -6533,7 +6533,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/marks.py":59
  *     pat = re.compile(expr, flags=flags)
- * 
+ *
  *     def marker(text: str, left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                color_address: int) -> Generator[None, None, None]:
  *         left, right, color = get_output_variables(
@@ -6556,8 +6556,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(4, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_marks_py, __pyx_n_s_marker, 80, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 80, __pyx_L1_error)
 
   /* "smelly/marks.py":16
- * 
- * 
+ *
+ *
  * def get_output_variables(left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                          color_address: int) -> Tuple[c_uint, c_uint, c_uint]:
  *     return (
@@ -6568,8 +6568,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_marks_py, __pyx_n_s_get_output_variables, 16, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 16, __pyx_L1_error)
 
   /* "smelly/marks.py":25
- * 
- * 
+ *
+ *
  * def marker_from_regex(             # <<<<<<<<<<<<<<
  *         expression: Union[str, 'Pattern[str]'],
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -6580,8 +6580,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(3, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_marks_py, __pyx_n_s_marker_from_regex, 25, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 25, __pyx_L1_error)
 
   /* "smelly/marks.py":47
- * 
- * 
+ *
+ *
  * def marker_from_multiple_regex(             # <<<<<<<<<<<<<<
  *         regexes: Iterable[Tuple[int, str]],
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -6592,11 +6592,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_marks_py, __pyx_n_s_marker_from_multiple_regex, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 47, __pyx_L1_error)
 
   /* "smelly/marks.py":73
- * 
- * 
+ *
+ *
  * def marker_from_text(expression: str, color: int) -> MarkerFunc:             # <<<<<<<<<<<<<<
  *     return marker_from_regex(re.escape(expression), color)
- * 
+ *
  */
   __pyx_tuple__18 = PyTuple_Pack(2, __pyx_n_s_expression, __pyx_n_s_color); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
@@ -6604,8 +6604,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_marks_py, __pyx_n_s_marker_from_text, 73, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 73, __pyx_L1_error)
 
   /* "smelly/marks.py":77
- * 
- * 
+ *
+ *
  * def marker_from_function(             # <<<<<<<<<<<<<<
  *         func: Callable[[str],
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -6616,8 +6616,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_marks_py, __pyx_n_s_marker_from_function, 77, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 77, __pyx_L1_error)
 
   /* "smelly/marks.py":93
- * 
- * 
+ *
+ *
  * def marker_from_spec(             # <<<<<<<<<<<<<<
  *         ftype: str, spec: Union[str, Sequence[Tuple[int, str]]],
  *         flags: int) -> MarkerFunc:
@@ -6968,7 +6968,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/marks.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import re             # <<<<<<<<<<<<<<
  * from ctypes import POINTER, c_uint, c_void_p, cast
  * from typing import Callable, Generator, Iterable, Pattern, Sequence, Tuple, Union
@@ -6979,11 +6979,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/marks.py":5
- * 
+ *
  * import re
  * from ctypes import POINTER, c_uint, c_void_p, cast             # <<<<<<<<<<<<<<
  * from typing import Callable, Generator, Iterable, Pattern, Sequence, Tuple, Union
- * 
+ *
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7024,7 +7024,7 @@ if (!__Pyx_RefNanny) {
  * import re
  * from ctypes import POINTER, c_uint, c_void_p, cast
  * from typing import Callable, Generator, Iterable, Pattern, Sequence, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .utils import resolve_custom_file
  */
   __pyx_t_2 = PyList_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -7085,9 +7085,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/marks.py":8
  * from typing import Callable, Generator, Iterable, Pattern, Sequence, Tuple, Union
- * 
+ *
  * from .utils import resolve_custom_file             # <<<<<<<<<<<<<<
- * 
+ *
  * pointer_to_uint = POINTER(c_uint)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -7106,10 +7106,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/marks.py":10
  * from .utils import resolve_custom_file
- * 
+ *
  * pointer_to_uint = POINTER(c_uint)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_POINTER); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7123,11 +7123,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/marks.py":13
- * 
- * 
+ *
+ *
  * MarkerFunc = Callable[[str, int, int, int], Generator[None, None, None]]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Callable); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -7166,8 +7166,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/marks.py":16
- * 
- * 
+ *
+ *
  * def get_output_variables(left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                          color_address: int) -> Tuple[c_uint, c_uint, c_uint]:
  *     return (
@@ -7179,7 +7179,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_color_address, __pyx_n_u_int) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
 
   /* "smelly/marks.py":17
- * 
+ *
  * def get_output_variables(left_address: int, right_address: int,
  *                          color_address: int) -> Tuple[c_uint, c_uint, c_uint]:             # <<<<<<<<<<<<<<
  *     return (
@@ -7212,8 +7212,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/marks.py":16
- * 
- * 
+ *
+ *
  * def get_output_variables(left_address: int, right_address: int,             # <<<<<<<<<<<<<<
  *                          color_address: int) -> Tuple[c_uint, c_uint, c_uint]:
  *     return (
@@ -7226,8 +7226,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/marks.py":25
- * 
- * 
+ *
+ *
  * def marker_from_regex(             # <<<<<<<<<<<<<<
  *         expression: Union[str, 'Pattern[str]'],
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -7236,7 +7236,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/marks.py":26
- * 
+ *
  * def marker_from_regex(
  *         expression: Union[str, 'Pattern[str]'],             # <<<<<<<<<<<<<<
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -7274,8 +7274,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/marks.py":25
- * 
- * 
+ *
+ *
  * def marker_from_regex(             # <<<<<<<<<<<<<<
  *         expression: Union[str, 'Pattern[str]'],
  *         color: int, flags: int = re.UNICODE) -> MarkerFunc:
@@ -7306,8 +7306,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/marks.py":47
- * 
- * 
+ *
+ *
  * def marker_from_multiple_regex(             # <<<<<<<<<<<<<<
  *         regexes: Iterable[Tuple[int, str]],
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -7316,7 +7316,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/marks.py":48
- * 
+ *
  * def marker_from_multiple_regex(
  *         regexes: Iterable[Tuple[int, str]],             # <<<<<<<<<<<<<<
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -7359,8 +7359,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/marks.py":47
- * 
- * 
+ *
+ *
  * def marker_from_multiple_regex(             # <<<<<<<<<<<<<<
  *         regexes: Iterable[Tuple[int, str]],
  *         flags: int = re.UNICODE) -> MarkerFunc:
@@ -7391,11 +7391,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/marks.py":73
- * 
- * 
+ *
+ *
  * def marker_from_text(expression: str, color: int) -> MarkerFunc:             # <<<<<<<<<<<<<<
  *     return marker_from_regex(re.escape(expression), color)
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -7413,8 +7413,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/marks.py":77
- * 
- * 
+ *
+ *
  * def marker_from_function(             # <<<<<<<<<<<<<<
  *         func: Callable[[str],
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -7423,7 +7423,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/marks.py":78
- * 
+ *
  * def marker_from_function(
  *         func: Callable[[str],             # <<<<<<<<<<<<<<
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -7469,7 +7469,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/marks.py":78
- * 
+ *
  * def marker_from_function(
  *         func: Callable[[str],             # <<<<<<<<<<<<<<
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -7503,8 +7503,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/marks.py":77
- * 
- * 
+ *
+ *
  * def marker_from_function(             # <<<<<<<<<<<<<<
  *         func: Callable[[str],
  *                        Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
@@ -7517,8 +7517,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/marks.py":93
- * 
- * 
+ *
+ *
  * def marker_from_spec(             # <<<<<<<<<<<<<<
  *         ftype: str, spec: Union[str, Sequence[Tuple[int, str]]],
  *         flags: int) -> MarkerFunc:
@@ -7528,7 +7528,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_ftype, __pyx_n_u_str) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
 
   /* "smelly/marks.py":94
- * 
+ *
  * def marker_from_spec(
  *         ftype: str, spec: Union[str, Sequence[Tuple[int, str]]],             # <<<<<<<<<<<<<<
  *         flags: int) -> MarkerFunc:
@@ -7585,8 +7585,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/marks.py":93
- * 
- * 
+ *
+ *
  * def marker_from_spec(             # <<<<<<<<<<<<<<
  *         ftype: str, spec: Union[str, Sequence[Tuple[int, str]]],
  *         flags: int) -> MarkerFunc:
@@ -7601,7 +7601,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/marks.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8365,8 +8365,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -9297,8 +9297,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

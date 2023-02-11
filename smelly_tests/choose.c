@@ -975,7 +975,7 @@ struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_5_genexpr;
 
 /* "smelly_tests/choose.py":82
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')
- * 
+ *
  *     def test_threading(self):             # <<<<<<<<<<<<<<
  *         'Test matching on a large data set with different number of threads'
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
@@ -990,7 +990,7 @@ struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct__test_threading {
 
 /* "smelly_tests/choose.py":86
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
- * 
+ *
  *         def random_word():             # <<<<<<<<<<<<<<
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))
@@ -1006,7 +1006,7 @@ struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_1_random_word {
  *         def random_word():
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))             # <<<<<<<<<<<<<<
- * 
+ *
  *         words = [random_word() for i in range(400)]
  */
 struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_2_genexpr {
@@ -1021,7 +1021,7 @@ struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_2_genexpr {
 
 /* "smelly_tests/choose.py":92
  *         words = [random_word() for i in range(400)]
- * 
+ *
  *         def random_item():             # <<<<<<<<<<<<<<
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))
@@ -1037,7 +1037,7 @@ struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_3_random_item {
  *         def random_item():
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))             # <<<<<<<<<<<<<<
- * 
+ *
  *         data = '\n'.join(random_item() for x in range(25123))
  */
 struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_4_genexpr {
@@ -1052,9 +1052,9 @@ struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_4_genexpr {
 
 /* "smelly_tests/choose.py":96
  *             return '/'.join(random.choice(words) for w in range(num))
- * 
+ *
  *         data = '\n'.join(random_item() for x in range(25123))             # <<<<<<<<<<<<<<
- * 
+ *
  *         for threads in range(4):
  */
 struct __pyx_obj_12smelly_tests_6choose___pyx_scope_struct_5_genexpr {
@@ -1983,8 +1983,8 @@ static PyObject *__pyx_codeobj__48;
 /* Late includes */
 
 /* "smelly_tests/choose.py":10
- * 
- * 
+ *
+ *
  * def run(input_data, query, **kw):             # <<<<<<<<<<<<<<
  *     kw['threads'] = kw.get('threads', 1)
  *     mark = kw.pop('mark', False)
@@ -2078,7 +2078,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
   __Pyx_RefNannySetupContext("run", 0);
 
   /* "smelly_tests/choose.py":11
- * 
+ *
  * def run(input_data, query, **kw):
  *     kw['threads'] = kw.get('threads', 1)             # <<<<<<<<<<<<<<
  *     mark = kw.pop('mark', False)
@@ -2094,7 +2094,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
  *     kw['threads'] = kw.get('threads', 1)
  *     mark = kw.pop('mark', False)             # <<<<<<<<<<<<<<
  *     from wellies.choose.match import match
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_Pop(__pyx_v_kw, __pyx_n_s_mark, Py_False); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2105,7 +2105,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
  *     kw['threads'] = kw.get('threads', 1)
  *     mark = kw.pop('mark', False)
  *     from wellies.choose.match import match             # <<<<<<<<<<<<<<
- * 
+ *
  *     mark_before = mark_after = ''
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -2125,7 +2125,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
 
   /* "smelly_tests/choose.py":15
  *     from wellies.choose.match import match
- * 
+ *
  *     mark_before = mark_after = ''             # <<<<<<<<<<<<<<
  *     if mark:
  *         if mark is True:
@@ -2136,7 +2136,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
   __pyx_v_mark_after = __pyx_kp_s_;
 
   /* "smelly_tests/choose.py":16
- * 
+ *
  *     mark_before = mark_after = ''
  *     if mark:             # <<<<<<<<<<<<<<
  *         if mark is True:
@@ -2198,7 +2198,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
     __pyx_L4:;
 
     /* "smelly_tests/choose.py":16
- * 
+ *
  *     mark_before = mark_after = ''
  *     if mark:             # <<<<<<<<<<<<<<
  *         if mark is True:
@@ -2211,7 +2211,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
  *             mark_before = mark_after = mark
  *     kw['mark_before'], kw['mark_after'] = mark_before, mark_after             # <<<<<<<<<<<<<<
  *     return match(input_data, query, **kw)
- * 
+ *
  */
   __pyx_t_1 = __pyx_v_mark_before;
   __Pyx_INCREF(__pyx_t_1);
@@ -2226,8 +2226,8 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
  *             mark_before = mark_after = mark
  *     kw['mark_before'], kw['mark_after'] = mark_before, mark_after
  *     return match(input_data, query, **kw)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
@@ -2249,8 +2249,8 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
   goto __pyx_L0;
 
   /* "smelly_tests/choose.py":10
- * 
- * 
+ *
+ *
  * def run(input_data, query, **kw):             # <<<<<<<<<<<<<<
  *     kw['threads'] = kw.get('threads', 1)
  *     mark = kw.pop('mark', False)
@@ -2274,7 +2274,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_run(CYTHON_UNUSED PyObject *__p
 }
 
 /* "smelly_tests/choose.py":26
- * 
+ *
  * class TestMatcher(BaseTest):
  *     def run_matcher(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         result = run(*args, **kwargs)
@@ -2372,7 +2372,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_run_matcher(CYTHO
  *     def run_matcher(self, *args, **kwargs):
  *         result = run(*args, **kwargs)             # <<<<<<<<<<<<<<
  *         return result
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_run); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2389,7 +2389,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_run_matcher(CYTHO
  *     def run_matcher(self, *args, **kwargs):
  *         result = run(*args, **kwargs)
  *         return result             # <<<<<<<<<<<<<<
- * 
+ *
  *     def basic_test(self, inp, query, out, **k):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2398,7 +2398,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_run_matcher(CYTHO
   goto __pyx_L0;
 
   /* "smelly_tests/choose.py":26
- * 
+ *
  * class TestMatcher(BaseTest):
  *     def run_matcher(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         result = run(*args, **kwargs)
@@ -2421,7 +2421,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_run_matcher(CYTHO
 
 /* "smelly_tests/choose.py":30
  *         return result
- * 
+ *
  *     def basic_test(self, inp, query, out, **k):             # <<<<<<<<<<<<<<
  *         result = self.run_matcher(inp, query, **k)
  *         if out is not None:
@@ -2538,7 +2538,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_2basic_test(CYTHO
   __Pyx_INCREF(__pyx_v_out);
 
   /* "smelly_tests/choose.py":31
- * 
+ *
  *     def basic_test(self, inp, query, out, **k):
  *         result = self.run_matcher(inp, query, **k)             # <<<<<<<<<<<<<<
  *         if out is not None:
@@ -2644,7 +2644,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_2basic_test(CYTHO
  *                 out = list(filter(None, out.split(k.get('delimiter', '\n'))))
  *             self.assertEqual(list(out), result)             # <<<<<<<<<<<<<<
  *         return out
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -2712,7 +2712,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_2basic_test(CYTHO
  *                 out = list(filter(None, out.split(k.get('delimiter', '\n'))))
  *             self.assertEqual(list(out), result)
  *         return out             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_filtering(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2722,7 +2722,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_2basic_test(CYTHO
 
   /* "smelly_tests/choose.py":30
  *         return result
- * 
+ *
  *     def basic_test(self, inp, query, out, **k):             # <<<<<<<<<<<<<<
  *         result = self.run_matcher(inp, query, **k)
  *         if out is not None:
@@ -2747,7 +2747,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_2basic_test(CYTHO
 
 /* "smelly_tests/choose.py":38
  *         return out
- * 
+ *
  *     def test_filtering(self):             # <<<<<<<<<<<<<<
  *         'Non matching entries must be removed'
  *         self.basic_test('test\nxyz', 'te', 'test')
@@ -2797,7 +2797,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_4test_filtering(C
  *         self.basic_test('test\nxyz', 'te', 'test')
  *         self.basic_test('abc\nxyz', 'ba', '')             # <<<<<<<<<<<<<<
  *         self.basic_test('abc\n123', 'abc', 'abc')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2810,7 +2810,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_4test_filtering(C
  *         self.basic_test('test\nxyz', 'te', 'test')
  *         self.basic_test('abc\nxyz', 'ba', '')
  *         self.basic_test('abc\n123', 'abc', 'abc')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_case_insensitive(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -2822,7 +2822,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_4test_filtering(C
 
   /* "smelly_tests/choose.py":38
  *         return out
- * 
+ *
  *     def test_filtering(self):             # <<<<<<<<<<<<<<
  *         'Non matching entries must be removed'
  *         self.basic_test('test\nxyz', 'te', 'test')
@@ -2844,7 +2844,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_4test_filtering(C
 
 /* "smelly_tests/choose.py":44
  *         self.basic_test('abc\n123', 'abc', 'abc')
- * 
+ *
  *     def test_case_insensitive(self):             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nxyz', 'Te', 'test')
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
@@ -2875,7 +2875,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_6test_case_insens
   __Pyx_RefNannySetupContext("test_case_insensitive", 0);
 
   /* "smelly_tests/choose.py":45
- * 
+ *
  *     def test_case_insensitive(self):
  *         self.basic_test('test\nxyz', 'Te', 'test')             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
@@ -2907,7 +2907,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_6test_case_insens
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
  *         self.basic_test('test\nXYZ', 'xy', 'XYZ')             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nXYZ', 'mn', '')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2920,7 +2920,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_6test_case_insens
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
  *         self.basic_test('test\nXYZ', 'xy', 'XYZ')
  *         self.basic_test('test\nXYZ', 'mn', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_marking(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -2932,7 +2932,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_6test_case_insens
 
   /* "smelly_tests/choose.py":44
  *         self.basic_test('abc\n123', 'abc', 'abc')
- * 
+ *
  *     def test_case_insensitive(self):             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nxyz', 'Te', 'test')
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
@@ -2954,7 +2954,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_6test_case_insens
 
 /* "smelly_tests/choose.py":50
  *         self.basic_test('test\nXYZ', 'mn', '')
- * 
+ *
  *     def test_marking(self):             # <<<<<<<<<<<<<<
  *         'Marking of matched characters'
  *         self.basic_test(
@@ -3000,7 +3000,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_8test_marking(CYT
  *         self.basic_test(
  *             'test\nxyz', 'ts', '\x1b[32mt\x1b[39me\x1b[32ms\x1b[39mt',
  *             mark=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_positions(self):
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -3022,7 +3022,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_8test_marking(CYT
 
   /* "smelly_tests/choose.py":50
  *         self.basic_test('test\nXYZ', 'mn', '')
- * 
+ *
  *     def test_marking(self):             # <<<<<<<<<<<<<<
  *         'Marking of matched characters'
  *         self.basic_test(
@@ -3045,7 +3045,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_8test_marking(CYT
 
 /* "smelly_tests/choose.py":56
  *             mark=True)
- * 
+ *
  *     def test_positions(self):             # <<<<<<<<<<<<<<
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)
@@ -3082,7 +3082,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_10test_positions(
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)             # <<<<<<<<<<<<<<
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3099,7 +3099,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_10test_positions(
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_delimiter(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
@@ -3115,7 +3115,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_10test_positions(
 
   /* "smelly_tests/choose.py":56
  *             mark=True)
- * 
+ *
  *     def test_positions(self):             # <<<<<<<<<<<<<<
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)
@@ -3138,7 +3138,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_10test_positions(
 
 /* "smelly_tests/choose.py":61
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)
- * 
+ *
  *     def test_delimiter(self):             # <<<<<<<<<<<<<<
  *         'Test using a custom line delimiter'
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
@@ -3174,7 +3174,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_12test_delimiter(
  *     def test_delimiter(self):
  *         'Test using a custom line delimiter'
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_scoring(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -3190,7 +3190,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_12test_delimiter(
 
   /* "smelly_tests/choose.py":61
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)
- * 
+ *
  *     def test_delimiter(self):             # <<<<<<<<<<<<<<
  *         'Test using a custom line delimiter'
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
@@ -3213,7 +3213,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_12test_delimiter(
 
 /* "smelly_tests/choose.py":65
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
- * 
+ *
  *     def test_scoring(self):             # <<<<<<<<<<<<<<
  *         'Scoring algorithm'
  *         # Match at start
@@ -3333,7 +3333,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_scoring(CY
  *         self.basic_test('xxa\naxx', 'a', 'axx\nxxa')
  *         # Highest score
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_threading(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_basic_test); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -3349,7 +3349,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_scoring(CY
 
   /* "smelly_tests/choose.py":65
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
- * 
+ *
  *     def test_scoring(self):             # <<<<<<<<<<<<<<
  *         'Scoring algorithm'
  *         # Match at start
@@ -3372,7 +3372,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_scoring(CY
 
 /* "smelly_tests/choose.py":82
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')
- * 
+ *
  *     def test_threading(self):             # <<<<<<<<<<<<<<
  *         'Test matching on a large data set with different number of threads'
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
@@ -3395,7 +3395,7 @@ static PyObject *__pyx_pw_12smelly_tests_6choose_11TestMatcher_17test_threading(
 
 /* "smelly_tests/choose.py":86
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
- * 
+ *
  *         def random_word():             # <<<<<<<<<<<<<<
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))
@@ -3420,7 +3420,7 @@ static PyObject *__pyx_gb_12smelly_tests_6choose_11TestMatcher_14test_threading_
  *         def random_word():
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))             # <<<<<<<<<<<<<<
- * 
+ *
  *         words = [random_word() for i in range(400)]
  */
 
@@ -3597,7 +3597,7 @@ static PyObject *__pyx_gb_12smelly_tests_6choose_11TestMatcher_14test_threading_
 
 /* "smelly_tests/choose.py":86
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
- * 
+ *
  *         def random_word():             # <<<<<<<<<<<<<<
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))
@@ -3627,11 +3627,11 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
 
   /* "smelly_tests/choose.py":87
- * 
+ *
  *         def random_word():
  *             sz = random.randint(2, 10)             # <<<<<<<<<<<<<<
  *             return ''.join(random.choice(alphabet) for x in range(sz))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3649,7 +3649,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_
  *         def random_word():
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))             # <<<<<<<<<<<<<<
- * 
+ *
  *         words = [random_word() for i in range(400)]
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3664,7 +3664,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_
 
   /* "smelly_tests/choose.py":86
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
- * 
+ *
  *         def random_word():             # <<<<<<<<<<<<<<
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))
@@ -3686,7 +3686,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_
 
 /* "smelly_tests/choose.py":92
  *         words = [random_word() for i in range(400)]
- * 
+ *
  *         def random_item():             # <<<<<<<<<<<<<<
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))
@@ -3711,7 +3711,7 @@ static PyObject *__pyx_gb_12smelly_tests_6choose_11TestMatcher_14test_threading_
  *         def random_item():
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))             # <<<<<<<<<<<<<<
- * 
+ *
  *         data = '\n'.join(random_item() for x in range(25123))
  */
 
@@ -3888,7 +3888,7 @@ static PyObject *__pyx_gb_12smelly_tests_6choose_11TestMatcher_14test_threading_
 
 /* "smelly_tests/choose.py":92
  *         words = [random_word() for i in range(400)]
- * 
+ *
  *         def random_item():             # <<<<<<<<<<<<<<
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))
@@ -3918,11 +3918,11 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
 
   /* "smelly_tests/choose.py":93
- * 
+ *
  *         def random_item():
  *             num = random.randint(2, 7)             # <<<<<<<<<<<<<<
  *             return '/'.join(random.choice(words) for w in range(num))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3940,7 +3940,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_
  *         def random_item():
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))             # <<<<<<<<<<<<<<
- * 
+ *
  *         data = '\n'.join(random_item() for x in range(25123))
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3955,7 +3955,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_
 
   /* "smelly_tests/choose.py":92
  *         words = [random_word() for i in range(400)]
- * 
+ *
  *         def random_item():             # <<<<<<<<<<<<<<
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))
@@ -3978,9 +3978,9 @@ static PyObject *__pyx_gb_12smelly_tests_6choose_11TestMatcher_14test_threading_
 
 /* "smelly_tests/choose.py":96
  *             return '/'.join(random.choice(words) for w in range(num))
- * 
+ *
  *         data = '\n'.join(random_item() for x in range(25123))             # <<<<<<<<<<<<<<
- * 
+ *
  *         for threads in range(4):
  */
 
@@ -4079,7 +4079,7 @@ static PyObject *__pyx_gb_12smelly_tests_6choose_11TestMatcher_14test_threading_
 
 /* "smelly_tests/choose.py":82
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')
- * 
+ *
  *     def test_threading(self):             # <<<<<<<<<<<<<<
  *         'Test matching on a large data set with different number of threads'
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
@@ -4116,7 +4116,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
  *     def test_threading(self):
  *         'Test matching on a large data set with different number of threads'
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits             # <<<<<<<<<<<<<<
- * 
+ *
  *         def random_word():
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_string); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
@@ -4148,7 +4148,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
 
   /* "smelly_tests/choose.py":86
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
- * 
+ *
  *         def random_word():             # <<<<<<<<<<<<<<
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))
@@ -4160,9 +4160,9 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
 
   /* "smelly_tests/choose.py":90
  *             return ''.join(random.choice(alphabet) for x in range(sz))
- * 
+ *
  *         words = [random_word() for i in range(400)]             # <<<<<<<<<<<<<<
- * 
+ *
  *         def random_item():
  */
   __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 90, __pyx_L1_error)
@@ -4180,7 +4180,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
 
   /* "smelly_tests/choose.py":92
  *         words = [random_word() for i in range(400)]
- * 
+ *
  *         def random_item():             # <<<<<<<<<<<<<<
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))
@@ -4193,9 +4193,9 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
 
   /* "smelly_tests/choose.py":96
  *             return '/'.join(random.choice(words) for w in range(num))
- * 
+ *
  *         data = '\n'.join(random_item() for x in range(25123))             # <<<<<<<<<<<<<<
- * 
+ *
  *         for threads in range(4):
  */
   __pyx_t_3 = __pyx_pf_12smelly_tests_6choose_11TestMatcher_14test_threading_4genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 96, __pyx_L1_error)
@@ -4208,7 +4208,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
 
   /* "smelly_tests/choose.py":98
  *         data = '\n'.join(random_item() for x in range(25123))
- * 
+ *
  *         for threads in range(4):             # <<<<<<<<<<<<<<
  *             self.basic_test(data, 'foo', None, threads=threads)
  */
@@ -4216,7 +4216,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
     __pyx_v_threads = __pyx_t_4;
 
     /* "smelly_tests/choose.py":99
- * 
+ *
  *         for threads in range(4):
  *             self.basic_test(data, 'foo', None, threads=threads)             # <<<<<<<<<<<<<<
  */
@@ -4249,7 +4249,7 @@ static PyObject *__pyx_pf_12smelly_tests_6choose_11TestMatcher_16test_threading(
 
   /* "smelly_tests/choose.py":82
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')
- * 
+ *
  *     def test_threading(self):             # <<<<<<<<<<<<<<
  *         'Test matching on a large data set with different number of threads'
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
@@ -5207,7 +5207,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.basic_test('test\nxyz', 'te', 'test')
  *         self.basic_test('abc\nxyz', 'ba', '')             # <<<<<<<<<<<<<<
  *         self.basic_test('abc\n123', 'abc', 'abc')
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(3, __pyx_kp_s_abc_xyz, __pyx_n_s_ba, __pyx_kp_s_); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
@@ -5217,7 +5217,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.basic_test('test\nxyz', 'te', 'test')
  *         self.basic_test('abc\nxyz', 'ba', '')
  *         self.basic_test('abc\n123', 'abc', 'abc')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_case_insensitive(self):
  */
   __pyx_tuple__5 = PyTuple_Pack(3, __pyx_kp_s_abc_123, __pyx_n_s_abc, __pyx_n_s_abc); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -5225,7 +5225,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "smelly_tests/choose.py":45
- * 
+ *
  *     def test_case_insensitive(self):
  *         self.basic_test('test\nxyz', 'Te', 'test')             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
@@ -5251,7 +5251,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
  *         self.basic_test('test\nXYZ', 'xy', 'XYZ')             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nXYZ', 'mn', '')
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(3, __pyx_kp_s_test_XYZ, __pyx_n_s_xy, __pyx_n_s_XYZ); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -5261,7 +5261,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
  *         self.basic_test('test\nXYZ', 'xy', 'XYZ')
  *         self.basic_test('test\nXYZ', 'mn', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_marking(self):
  */
   __pyx_tuple__9 = PyTuple_Pack(3, __pyx_kp_s_test_XYZ, __pyx_n_s_mn, __pyx_kp_s_); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -5284,7 +5284,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)             # <<<<<<<<<<<<<<
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)
- * 
+ *
  */
   __pyx_tuple__11 = PyTuple_Pack(3, __pyx_kp_s_abc_ac, __pyx_n_s_ac, __pyx_kp_s_0_1_ac_0_2_abc); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
@@ -5294,7 +5294,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_delimiter(self):
  */
   __pyx_tuple__12 = PyTuple_Pack(3, __pyx_kp_s_abc_v, __pyx_n_s_a, __pyx_kp_s_0_abc); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 59, __pyx_L1_error)
@@ -5305,7 +5305,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     def test_delimiter(self):
  *         'Test using a custom line delimiter'
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_scoring(self):
  */
   __pyx_tuple__13 = PyTuple_Pack(3, __pyx_kp_s_abc_21ac, __pyx_n_s_ac, __pyx_kp_s_ac1abc_2); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -5382,7 +5382,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.basic_test('xxa\naxx', 'a', 'axx\nxxa')
  *         # Highest score
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_threading(self):
  */
   __pyx_tuple__20 = PyTuple_Pack(3, __pyx_kp_s_xa_a, __pyx_n_s_a, __pyx_kp_s_xa_a_2); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -5390,22 +5390,22 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__20);
 
   /* "smelly_tests/choose.py":87
- * 
+ *
  *         def random_word():
  *             sz = random.randint(2, 10)             # <<<<<<<<<<<<<<
  *             return ''.join(random.choice(alphabet) for x in range(sz))
- * 
+ *
  */
   __pyx_tuple__22 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_10); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
   /* "smelly_tests/choose.py":93
- * 
+ *
  *         def random_item():
  *             num = random.randint(2, 7)             # <<<<<<<<<<<<<<
  *             return '/'.join(random.choice(words) for w in range(num))
- * 
+ *
  */
   __pyx_tuple__23 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_7); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
@@ -5413,7 +5413,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":86
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
- * 
+ *
  *         def random_word():             # <<<<<<<<<<<<<<
  *             sz = random.randint(2, 10)
  *             return ''.join(random.choice(alphabet) for x in range(sz))
@@ -5425,7 +5425,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":92
  *         words = [random_word() for i in range(400)]
- * 
+ *
  *         def random_item():             # <<<<<<<<<<<<<<
  *             num = random.randint(2, 7)
  *             return '/'.join(random.choice(words) for w in range(num))
@@ -5436,8 +5436,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_choose_py, __pyx_n_s_random_item, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 92, __pyx_L1_error)
 
   /* "smelly_tests/choose.py":10
- * 
- * 
+ *
+ *
  * def run(input_data, query, **kw):             # <<<<<<<<<<<<<<
  *     kw['threads'] = kw.get('threads', 1)
  *     mark = kw.pop('mark', False)
@@ -5448,7 +5448,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_choose_py, __pyx_n_s_run, 10, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 10, __pyx_L1_error)
 
   /* "smelly_tests/choose.py":26
- * 
+ *
  * class TestMatcher(BaseTest):
  *     def run_matcher(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         result = run(*args, **kwargs)
@@ -5461,7 +5461,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":30
  *         return result
- * 
+ *
  *     def basic_test(self, inp, query, out, **k):             # <<<<<<<<<<<<<<
  *         result = self.run_matcher(inp, query, **k)
  *         if out is not None:
@@ -5473,7 +5473,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":38
  *         return out
- * 
+ *
  *     def test_filtering(self):             # <<<<<<<<<<<<<<
  *         'Non matching entries must be removed'
  *         self.basic_test('test\nxyz', 'te', 'test')
@@ -5485,7 +5485,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":44
  *         self.basic_test('abc\n123', 'abc', 'abc')
- * 
+ *
  *     def test_case_insensitive(self):             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nxyz', 'Te', 'test')
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
@@ -5497,7 +5497,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":50
  *         self.basic_test('test\nXYZ', 'mn', '')
- * 
+ *
  *     def test_marking(self):             # <<<<<<<<<<<<<<
  *         'Marking of matched characters'
  *         self.basic_test(
@@ -5509,7 +5509,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":56
  *             mark=True)
- * 
+ *
  *     def test_positions(self):             # <<<<<<<<<<<<<<
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)
@@ -5521,7 +5521,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":61
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)
- * 
+ *
  *     def test_delimiter(self):             # <<<<<<<<<<<<<<
  *         'Test using a custom line delimiter'
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
@@ -5533,7 +5533,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":65
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
- * 
+ *
  *     def test_scoring(self):             # <<<<<<<<<<<<<<
  *         'Scoring algorithm'
  *         # Match at start
@@ -5545,7 +5545,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/choose.py":82
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')
- * 
+ *
  *     def test_threading(self):             # <<<<<<<<<<<<<<
  *         'Test matching on a large data set with different number of threads'
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
@@ -5897,10 +5897,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":4
  * # License: GPLv3 Copyright: 2019, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import random             # <<<<<<<<<<<<<<
  * import string
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_random, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5908,10 +5908,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/choose.py":5
- * 
+ *
  * import random
  * import string             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_string, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -5921,10 +5921,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":7
  * import string
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5941,8 +5941,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/choose.py":10
- * 
- * 
+ *
+ *
  * def run(input_data, query, **kw):             # <<<<<<<<<<<<<<
  *     kw['threads'] = kw.get('threads', 1)
  *     mark = kw.pop('mark', False)
@@ -5953,8 +5953,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/choose.py":25
- * 
- * 
+ *
+ *
  * class TestMatcher(BaseTest):             # <<<<<<<<<<<<<<
  *     def run_matcher(self, *args, **kwargs):
  *         result = run(*args, **kwargs)
@@ -5972,7 +5972,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/choose.py":26
- * 
+ *
  * class TestMatcher(BaseTest):
  *     def run_matcher(self, *args, **kwargs):             # <<<<<<<<<<<<<<
  *         result = run(*args, **kwargs)
@@ -5985,7 +5985,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":30
  *         return result
- * 
+ *
  *     def basic_test(self, inp, query, out, **k):             # <<<<<<<<<<<<<<
  *         result = self.run_matcher(inp, query, **k)
  *         if out is not None:
@@ -5997,7 +5997,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":38
  *         return out
- * 
+ *
  *     def test_filtering(self):             # <<<<<<<<<<<<<<
  *         'Non matching entries must be removed'
  *         self.basic_test('test\nxyz', 'te', 'test')
@@ -6009,7 +6009,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":44
  *         self.basic_test('abc\n123', 'abc', 'abc')
- * 
+ *
  *     def test_case_insensitive(self):             # <<<<<<<<<<<<<<
  *         self.basic_test('test\nxyz', 'Te', 'test')
  *         self.basic_test('test\nxyz', 'XY', 'xyz')
@@ -6021,7 +6021,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":50
  *         self.basic_test('test\nXYZ', 'mn', '')
- * 
+ *
  *     def test_marking(self):             # <<<<<<<<<<<<<<
  *         'Marking of matched characters'
  *         self.basic_test(
@@ -6033,7 +6033,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":56
  *             mark=True)
- * 
+ *
  *     def test_positions(self):             # <<<<<<<<<<<<<<
  *         'Output of positions'
  *         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)
@@ -6045,7 +6045,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":61
  *         self.basic_test('abc\nv', 'a', '0:abc', positions=True)
- * 
+ *
  *     def test_delimiter(self):             # <<<<<<<<<<<<<<
  *         'Test using a custom line delimiter'
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
@@ -6057,7 +6057,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":65
  *         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
- * 
+ *
  *     def test_scoring(self):             # <<<<<<<<<<<<<<
  *         'Scoring algorithm'
  *         # Match at start
@@ -6069,7 +6069,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/choose.py":82
  *         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')
- * 
+ *
  *     def test_threading(self):             # <<<<<<<<<<<<<<
  *         'Test matching on a large data set with different number of threads'
  *         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
@@ -6080,8 +6080,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/choose.py":25
- * 
- * 
+ *
+ *
  * class TestMatcher(BaseTest):             # <<<<<<<<<<<<<<
  *     def run_matcher(self, *args, **kwargs):
  *         result = run(*args, **kwargs)
@@ -6097,7 +6097,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/choose.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2019, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

@@ -970,10 +970,10 @@ struct __pyx_obj_12smelly_tests_4diff___pyx_scope_struct__test_split_with_highli
 
 /* "smelly_tests/diff.py":27
  *                      src[-sc:] if sc else ''))
- * 
+ *
  *     def test_split_with_highlights(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_4diff___pyx_scope_struct__test_split_with_highlights {
   PyObject_HEAD
@@ -1743,11 +1743,11 @@ static PyObject *__pyx_codeobj__30;
 /* Late includes */
 
 /* "smelly_tests/diff.py":9
- * 
+ *
  * class TestDiff(BaseTest):
  *     def test_changed_center(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.diff_speedup import changed_center
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1798,7 +1798,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
  * class TestDiff(BaseTest):
  *     def test_changed_center(self):
  *         from wellies.diff.diff_speedup import changed_center             # <<<<<<<<<<<<<<
- * 
+ *
  *         for left, right, prefix, suffix in [
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -1818,7 +1818,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
 
   /* "smelly_tests/diff.py":12
  *         from wellies.diff.diff_speedup import changed_center
- * 
+ *
  *         for left, right, prefix, suffix in [             # <<<<<<<<<<<<<<
  *             ('abc', 'def', '', ''),
  *             ('', 'def', '', ''),
@@ -1841,10 +1841,10 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
         __PYX_ERR(0, 12, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 3);
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -1936,11 +1936,11 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_5);
@@ -2036,7 +2036,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
  *                     (prefix, suffix),
  *                     (src[: pc],             # <<<<<<<<<<<<<<
  *                      src[-sc:] if sc else ''))
- * 
+ *
  */
       __pyx_t_4 = __Pyx_PyObject_GetSlice(__pyx_v_src, 0, 0, NULL, &__pyx_v_pc, NULL, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 24, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
@@ -2045,7 +2045,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
  *                     (prefix, suffix),
  *                     (src[: pc],
  *                      src[-sc:] if sc else ''))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_split_with_highlights(self):
  */
       __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_v_sc); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 25, __pyx_L1_error)
@@ -2067,7 +2067,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
  *                     (prefix, suffix),
  *                     (src[: pc],             # <<<<<<<<<<<<<<
  *                      src[-sc:] if sc else ''))
- * 
+ *
  */
       __pyx_t_14 = PyTuple_New(2); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 24, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_14);
@@ -2140,7 +2140,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
 
     /* "smelly_tests/diff.py":12
  *         from wellies.diff.diff_speedup import changed_center
- * 
+ *
  *         for left, right, prefix, suffix in [             # <<<<<<<<<<<<<<
  *             ('abc', 'def', '', ''),
  *             ('', 'def', '', ''),
@@ -2149,11 +2149,11 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/diff.py":9
- * 
+ *
  * class TestDiff(BaseTest):
  *     def test_changed_center(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.diff_speedup import changed_center
- * 
+ *
  */
 
   /* function exit code */
@@ -2187,10 +2187,10 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_test_changed_center(CYT
 
 /* "smelly_tests/diff.py":27
  *                      src[-sc:] if sc else ''))
- * 
+ *
  *     def test_split_with_highlights(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2209,7 +2209,7 @@ static PyObject *__pyx_pw_12smelly_tests_4diff_8TestDiff_3test_split_with_highli
 
 /* "smelly_tests/diff.py":42
  *             self.ae(expected, tuple(split_with_highlights(line, width, [], seg)))
- * 
+ *
  *         def h(s, e, w):             # <<<<<<<<<<<<<<
  *             ans = Segment(s, f'S{w}S')
  *             ans.end = e
@@ -2313,7 +2313,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_26test_split_with_highl
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/diff.py":43
- * 
+ *
  *         def h(s, e, w):
  *             ans = Segment(s, f'S{w}S')             # <<<<<<<<<<<<<<
  *             ans.end = e
@@ -2407,7 +2407,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_26test_split_with_highl
  *             ans.end = e
  *             ans.end_code = f'E{w}E'             # <<<<<<<<<<<<<<
  *             return ans
- * 
+ *
  */
   __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2438,7 +2438,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_26test_split_with_highl
  *             ans.end = e
  *             ans.end_code = f'E{w}E'
  *             return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *         highlights = [h(0, 1, 1), h(1, 3, 2)]
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2448,7 +2448,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_26test_split_with_highl
 
   /* "smelly_tests/diff.py":42
  *             self.ae(expected, tuple(split_with_highlights(line, width, [], seg)))
- * 
+ *
  *         def h(s, e, w):             # <<<<<<<<<<<<<<
  *             ans = Segment(s, f'S{w}S')
  *             ans.end = e
@@ -2472,10 +2472,10 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_26test_split_with_highl
 
 /* "smelly_tests/diff.py":27
  *                      src[-sc:] if sc else ''))
- * 
+ *
  *     def test_split_with_highlights(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highlights(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -2517,10 +2517,10 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
   }
 
   /* "smelly_tests/diff.py":28
- * 
+ *
  *     def test_split_with_highlights(self):
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(list(truncate_points('1234567890ab', 3)), [3, 6, 9])
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -2557,7 +2557,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
 
   /* "smelly_tests/diff.py":30
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  *         self.ae(list(truncate_points('1234567890ab', 3)), [3, 6, 9])             # <<<<<<<<<<<<<<
  *         for line, width, prefix_count, suffix_count, expected in [
  *             ('abcdefgh', 20, 2, 3, ('abSScdeEEfgh',)),
@@ -2632,7 +2632,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/diff.py":31
- * 
+ *
  *         self.ae(list(truncate_points('1234567890ab', 3)), [3, 6, 9])
  *         for line, width, prefix_count, suffix_count, expected in [             # <<<<<<<<<<<<<<
  *             ('abcdefgh', 20, 2, 3, ('abSScdeEEfgh',)),
@@ -2656,11 +2656,11 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
         __PYX_ERR(0, 31, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 4); 
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 4);
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_4);
@@ -2769,7 +2769,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
  *             seg.end = len(line) - suffix_count
  *             seg.end_code = 'EE'             # <<<<<<<<<<<<<<
  *             self.ae(expected, tuple(split_with_highlights(line, width, [], seg)))
- * 
+ *
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_seg, __pyx_n_s_end_code, __pyx_n_s_EE) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
 
@@ -2777,7 +2777,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
  *             seg.end = len(line) - suffix_count
  *             seg.end_code = 'EE'
  *             self.ae(expected, tuple(split_with_highlights(line, width, [], seg)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def h(s, e, w):
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
@@ -2891,7 +2891,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
     /* "smelly_tests/diff.py":31
- * 
+ *
  *         self.ae(list(truncate_points('1234567890ab', 3)), [3, 6, 9])
  *         for line, width, prefix_count, suffix_count, expected in [             # <<<<<<<<<<<<<<
  *             ('abcdefgh', 20, 2, 3, ('abSScdeEEfgh',)),
@@ -2902,7 +2902,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
 
   /* "smelly_tests/diff.py":42
  *             self.ae(expected, tuple(split_with_highlights(line, width, [], seg)))
- * 
+ *
  *         def h(s, e, w):             # <<<<<<<<<<<<<<
  *             ans = Segment(s, f'S{w}S')
  *             ans.end = e
@@ -2914,7 +2914,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
 
   /* "smelly_tests/diff.py":48
  *             return ans
- * 
+ *
  *         highlights = [h(0, 1, 1), h(1, 3, 2)]             # <<<<<<<<<<<<<<
  *         self.ae(
  *             ['S1SaE1ES2SbcE2Ed'],
@@ -2935,7 +2935,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
   __pyx_t_1 = 0;
 
   /* "smelly_tests/diff.py":49
- * 
+ *
  *         highlights = [h(0, 1, 1), h(1, 3, 2)]
  *         self.ae(             # <<<<<<<<<<<<<<
  *             ['S1SaE1ES2SbcE2Ed'],
@@ -2949,7 +2949,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
  *         self.ae(
  *             ['S1SaE1ES2SbcE2Ed'],             # <<<<<<<<<<<<<<
  *             split_with_highlights('abcd', 10, highlights))
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2961,7 +2961,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
  *         self.ae(
  *             ['S1SaE1ES2SbcE2Ed'],
  *             split_with_highlights('abcd', 10, highlights))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_walk(self):
  */
   __Pyx_INCREF(__pyx_v_split_with_highlights);
@@ -3066,10 +3066,10 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
 
   /* "smelly_tests/diff.py":27
  *                      src[-sc:] if sc else ''))
- * 
+ *
  *     def test_split_with_highlights(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  */
 
   /* function exit code */
@@ -3105,7 +3105,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_2test_split_with_highli
 
 /* "smelly_tests/diff.py":53
  *             split_with_highlights('abcd', 10, highlights))
- * 
+ *
  *     def test_walk(self):             # <<<<<<<<<<<<<<
  *         import tempfile
  *         from pathlib import Path
@@ -3155,11 +3155,11 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_4test_walk(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("test_walk", 0);
 
   /* "smelly_tests/diff.py":54
- * 
+ *
  *     def test_walk(self):
  *         import tempfile             # <<<<<<<<<<<<<<
  *         from pathlib import Path
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3170,7 +3170,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_4test_walk(CYTHON_UNUSE
  *     def test_walk(self):
  *         import tempfile
  *         from pathlib import Path             # <<<<<<<<<<<<<<
- * 
+ *
  *         from wellies.diff.collect import walk
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
@@ -3190,9 +3190,9 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_4test_walk(CYTHON_UNUSE
 
   /* "smelly_tests/diff.py":57
  *         from pathlib import Path
- * 
+ *
  *         from wellies.diff.collect import walk             # <<<<<<<<<<<<<<
- * 
+ *
  *         with tempfile.TemporaryDirectory() as tmpdir:
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -3212,7 +3212,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_4test_walk(CYTHON_UNUSE
 
   /* "smelly_tests/diff.py":59
  *         from wellies.diff.collect import walk
- * 
+ *
  *         with tempfile.TemporaryDirectory() as tmpdir:             # <<<<<<<<<<<<<<
  *             # /tmp/test/
  *             #  a
@@ -4251,7 +4251,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_4test_walk(CYTHON_UNUSE
 
           /* "smelly_tests/diff.py":59
  *         from wellies.diff.collect import walk
- * 
+ *
  *         with tempfile.TemporaryDirectory() as tmpdir:             # <<<<<<<<<<<<<<
  *             # /tmp/test/
  *             #  a
@@ -4289,7 +4289,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_4test_walk(CYTHON_UNUSE
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_10);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_1, __pyx_t_10);
-            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_10 = 0; 
+            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_10 = 0;
             __PYX_ERR(0, 59, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -4333,7 +4333,7 @@ static PyObject *__pyx_pf_12smelly_tests_4diff_8TestDiff_4test_walk(CYTHON_UNUSE
 
   /* "smelly_tests/diff.py":53
  *             split_with_highlights('abcd', 10, highlights))
- * 
+ *
  *     def test_walk(self):             # <<<<<<<<<<<<<<
  *         import tempfile
  *         from pathlib import Path
@@ -4646,7 +4646,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly_tests/diff.py":13
- * 
+ *
  *         for left, right, prefix, suffix in [
  *             ('abc', 'def', '', ''),             # <<<<<<<<<<<<<<
  *             ('', 'def', '', ''),
@@ -4713,7 +4713,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/diff.py":12
  *         from wellies.diff.diff_speedup import changed_center
- * 
+ *
  *         for left, right, prefix, suffix in [             # <<<<<<<<<<<<<<
  *             ('abc', 'def', '', ''),
  *             ('', 'def', '', ''),
@@ -4724,7 +4724,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/diff.py":30
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  *         self.ae(list(truncate_points('1234567890ab', 3)), [3, 6, 9])             # <<<<<<<<<<<<<<
  *         for line, width, prefix_count, suffix_count, expected in [
  *             ('abcdefgh', 20, 2, 3, ('abSScdeEEfgh',)),
@@ -4790,7 +4790,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__17);
 
   /* "smelly_tests/diff.py":31
- * 
+ *
  *         self.ae(list(truncate_points('1234567890ab', 3)), [3, 6, 9])
  *         for line, width, prefix_count, suffix_count, expected in [             # <<<<<<<<<<<<<<
  *             ('abcdefgh', 20, 2, 3, ('abSScdeEEfgh',)),
@@ -4802,7 +4802,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/diff.py":42
  *             self.ae(expected, tuple(split_with_highlights(line, width, [], seg)))
- * 
+ *
  *         def h(s, e, w):             # <<<<<<<<<<<<<<
  *             ans = Segment(s, f'S{w}S')
  *             ans.end = e
@@ -4825,7 +4825,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/diff.py":59
  *         from wellies.diff.collect import walk
- * 
+ *
  *         with tempfile.TemporaryDirectory() as tmpdir:             # <<<<<<<<<<<<<<
  *             # /tmp/test/
  *             #  a
@@ -4835,11 +4835,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__24);
 
   /* "smelly_tests/diff.py":9
- * 
+ *
  * class TestDiff(BaseTest):
  *     def test_changed_center(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.diff_speedup import changed_center
- * 
+ *
  */
   __pyx_tuple__25 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_changed_center, __pyx_n_s_left, __pyx_n_s_right, __pyx_n_s_prefix, __pyx_n_s_suffix, __pyx_n_s_pc, __pyx_n_s_sc, __pyx_n_s_src); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
@@ -4848,10 +4848,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/diff.py":27
  *                      src[-sc:] if sc else ''))
- * 
+ *
  *     def test_split_with_highlights(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(13, __pyx_n_s_self, __pyx_n_s_Segment, __pyx_n_s_split_with_highlights, __pyx_n_s_truncate_points, __pyx_n_s_line, __pyx_n_s_width, __pyx_n_s_prefix_count, __pyx_n_s_suffix_count, __pyx_n_s_expected, __pyx_n_s_seg, __pyx_n_s_h, __pyx_n_s_h, __pyx_n_s_highlights); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
@@ -4860,7 +4860,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/diff.py":53
  *             split_with_highlights('abcd', 10, highlights))
- * 
+ *
  *     def test_walk(self):             # <<<<<<<<<<<<<<
  *         import tempfile
  *         from pathlib import Path
@@ -5174,11 +5174,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/diff.py":5
- * 
- * 
+ *
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5195,8 +5195,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/diff.py":8
- * 
- * 
+ *
+ *
  * class TestDiff(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_changed_center(self):
  *         from wellies.diff.diff_speedup import changed_center
@@ -5214,11 +5214,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/diff.py":9
- * 
+ *
  * class TestDiff(BaseTest):
  *     def test_changed_center(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.diff_speedup import changed_center
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_4diff_8TestDiff_1test_changed_center, 0, __pyx_n_s_TestDiff_test_changed_center, NULL, __pyx_n_s_smelly_tests_diff, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5227,10 +5227,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/diff.py":27
  *                      src[-sc:] if sc else ''))
- * 
+ *
  *     def test_split_with_highlights(self):             # <<<<<<<<<<<<<<
  *         from wellies.diff.render import Segment, split_with_highlights, truncate_points
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_4diff_8TestDiff_3test_split_with_highlights, 0, __pyx_n_s_TestDiff_test_split_with_highlig_2, NULL, __pyx_n_s_smelly_tests_diff, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5239,7 +5239,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/diff.py":53
  *             split_with_highlights('abcd', 10, highlights))
- * 
+ *
  *     def test_walk(self):             # <<<<<<<<<<<<<<
  *         import tempfile
  *         from pathlib import Path
@@ -5250,8 +5250,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/diff.py":8
- * 
- * 
+ *
+ *
  * class TestDiff(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_changed_center(self):
  *         from wellies.diff.diff_speedup import changed_center
@@ -5267,7 +5267,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/diff.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

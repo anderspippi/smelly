@@ -971,7 +971,7 @@ struct __pyx_obj_6smelly_2rc_20set_background_image___pyx_scope_struct_1_file_pi
 
 /* "smelly/rc/set_background_image.py":83
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -984,7 +984,7 @@ struct __pyx_obj_6smelly_2rc_20set_background_image___pyx_scope_struct__message_
 
 /* "smelly/rc/set_background_image.py":99
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -1891,7 +1891,7 @@ static PyObject *__pyx_codeobj__10;
 
 /* "smelly/rc/set_background_image.py":83
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -1987,7 +1987,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
 /* "smelly/rc/set_background_image.py":99
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -2086,7 +2086,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 99, __pyx_L1_error)
 
   /* "smelly/rc/set_background_image.py":100
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -2296,7 +2296,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
           __pyx_L15_break:;
 
           /* "smelly/rc/set_background_image.py":100
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -2334,7 +2334,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_2);
-            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 100, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2381,7 +2381,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *                     yield ret
  *             ret['data'] = ''             # <<<<<<<<<<<<<<
  *             yield ret
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret)) { __Pyx_RaiseClosureNameError("ret"); __PYX_ERR(0, 107, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret == Py_None)) {
@@ -2394,7 +2394,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *                     yield ret
  *             ret['data'] = ''
  *             yield ret             # <<<<<<<<<<<<<<
- * 
+ *
  *         return file_pipe(path)
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret)) { __Pyx_RaiseClosureNameError("ret"); __PYX_ERR(0, 108, __pyx_L1_error) }
@@ -2412,7 +2412,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
   /* "smelly/rc/set_background_image.py":99
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -2440,7 +2440,7 @@ static PyObject *__pyx_gb_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
 /* "smelly/rc/set_background_image.py":83
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2473,7 +2473,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
   }
 
   /* "smelly/rc/set_background_image.py":84
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) != 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2510,7 +2510,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/set_background_image.py":84
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) != 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2670,7 +2670,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *             return ret
  *         if imghdr.what(path) != 'png':             # <<<<<<<<<<<<<<
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_imghdr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2700,7 +2700,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *             return ret
  *         if imghdr.what(path) != 'png':
  *             self.fatal(f'{path} is not a PNG image')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fatal); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
@@ -2733,13 +2733,13 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *             return ret
  *         if imghdr.what(path) != 'png':             # <<<<<<<<<<<<<<
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_background_image.py":99
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -2760,9 +2760,9 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
   /* "smelly/rc/set_background_image.py":110
  *             yield ret
- * 
+ *
  *         return file_pipe(path)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2775,7 +2775,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
   /* "smelly/rc/set_background_image.py":83
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2801,7 +2801,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
 /* "smelly/rc/set_background_image.py":112
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -2931,7 +2931,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/set_background_image.py":113
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         data = payload_get('data')             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -3297,7 +3297,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *                 return q
  *             path = q.name             # <<<<<<<<<<<<<<
  *             tfile = q
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_q, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -3308,7 +3308,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *                 return q
  *             path = q.name
  *             tfile = q             # <<<<<<<<<<<<<<
- * 
+ *
  *         try:
  */
     __Pyx_INCREF(__pyx_v_q);
@@ -3318,7 +3318,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
   /* "smelly/rc/set_background_image.py":127
  *             tfile = q
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             with tfile:
  *                 boss.set_background_image(path, os_windows, payload_get('configured'), layout)
@@ -3333,7 +3333,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
     /*try:*/ {
 
       /* "smelly/rc/set_background_image.py":128
- * 
+ *
  *         try:
  *             with tfile:             # <<<<<<<<<<<<<<
  *                 boss.set_background_image(path, os_windows, payload_get('configured'), layout)
@@ -3451,7 +3451,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
               __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
               /* "smelly/rc/set_background_image.py":128
- * 
+ *
  *         try:
  *             with tfile:             # <<<<<<<<<<<<<<
  *                 boss.set_background_image(path, os_windows, payload_get('configured'), layout)
@@ -3491,7 +3491,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
                 __Pyx_GIVEREF(__pyx_t_1);
                 __Pyx_XGIVEREF(__pyx_t_3);
                 __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_3);
-                __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+                __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
                 __PYX_ERR(0, 128, __pyx_L24_except_error)
               }
               __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -3535,7 +3535,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
       /* "smelly/rc/set_background_image.py":127
  *             tfile = q
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             with tfile:
  *                 boss.set_background_image(path, os_windows, payload_get('configured'), layout)
@@ -3584,13 +3584,13 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *             err.hide_traceback = True  # type: ignore
  *             raise             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __Pyx_GIVEREF(__pyx_t_3);
       __Pyx_GIVEREF(__pyx_t_1);
       __Pyx_XGIVEREF(__pyx_t_2);
       __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_2);
-      __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+      __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
       __PYX_ERR(0, 132, __pyx_L14_except_error)
     }
     goto __pyx_L14_except_error;
@@ -3598,7 +3598,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
     /* "smelly/rc/set_background_image.py":127
  *             tfile = q
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             with tfile:
  *                 boss.set_background_image(path, os_windows, payload_get('configured'), layout)
@@ -3615,8 +3615,8 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
  *             err.hide_traceback = True  # type: ignore
  *             raise
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -3624,7 +3624,7 @@ static PyObject *__pyx_pf_6smelly_2rc_20set_background_image_18SetBackgroundImag
 
   /* "smelly/rc/set_background_image.py":112
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -4085,7 +4085,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/rc/set_background_image.py":100
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -4097,7 +4097,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_background_image.py":99
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -4109,7 +4109,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_background_image.py":83
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -4121,7 +4121,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_background_image.py":112
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -4443,7 +4443,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_image.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import imghdr             # <<<<<<<<<<<<<<
  * import os
  * from base64 import standard_b64decode, standard_b64encode
@@ -4454,7 +4454,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_background_image.py":5
- * 
+ *
  * import imghdr
  * import os             # <<<<<<<<<<<<<<
  * from base64 import standard_b64decode, standard_b64encode
@@ -4470,7 +4470,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * from base64 import standard_b64decode, standard_b64encode             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4497,7 +4497,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * from base64 import standard_b64decode, standard_b64encode
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.types import AsyncResponse
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -4523,9 +4523,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_image.py":9
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from smelly.types import AsyncResponse             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import (
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -4543,7 +4543,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/set_background_image.py":12
- * 
+ *
  * from .base import (
  *     MATCH_WINDOW_OPTION,             # <<<<<<<<<<<<<<
  *     ArgsType,
@@ -4590,7 +4590,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_image.py":11
  * from smelly.types import AsyncResponse
- * 
+ *
  * from .base import (             # <<<<<<<<<<<<<<
  *     MATCH_WINDOW_OPTION,
  *     ArgsType,
@@ -4650,10 +4650,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_image.py":26
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetBackgroundImageRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4662,11 +4662,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_background_image.py":27
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetBackgroundImageRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4684,25 +4684,25 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_background_image.py":26
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetBackgroundImageRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_background_image.py":30
- * 
- * 
+ *
+ *
  * layout_choices = 'tiled,scaled,mirror-tiled,clamped,configured'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_layout_choices, __pyx_kp_s_tiled_scaled_mirror_tiled_clampe) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "smelly/rc/set_background_image.py":33
- * 
- * 
+ *
+ *
  * class SetBackgroundImage(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     data+/str: Chunk of at most 512 bytes of PNG data, base64 encoded. Must send an empty chunk to indicate end of image. \
@@ -4720,7 +4720,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/set_background_image.py":34
- * 
+ *
  * class SetBackgroundImage(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     data+/str: Chunk of at most 512 bytes of PNG data, base64 encoded. Must send an empty chunk to indicate end of image. \
@@ -4731,7 +4731,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_image.py":43
  *     '''
- * 
+ *
  *     short_desc = 'Set the background image'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Set the background image for the specified OS windows. You must specify the path to a PNG image that'
@@ -4856,14 +4856,14 @@ if (!__Pyx_RefNanny) {
  *         spec='PATH_TO_PNG_IMAGE', count=1, json_field='data', special_parse='!read_window_logo(io_data, args[0])', completion=ImageCompletion
  *     )
  *     reads_streaming_data = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_reads_streaming_data, Py_True) < 0) __PYX_ERR(0, 81, __pyx_L1_error)
 
   /* "smelly/rc/set_background_image.py":83
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -4892,7 +4892,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_image.py":112
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -4929,8 +4929,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
   /* "smelly/rc/set_background_image.py":33
- * 
- * 
+ *
+ *
  * class SetBackgroundImage(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     data+/str: Chunk of at most 512 bytes of PNG data, base64 encoded. Must send an empty chunk to indicate end of image. \
@@ -4944,8 +4944,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_background_image.py":136
- * 
- * 
+ *
+ *
  * set_background_image = SetBackgroundImage()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SetBackgroundImage); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
@@ -4959,7 +4959,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_background_image.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

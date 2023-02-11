@@ -970,11 +970,11 @@ struct __pyx_obj_12smelly_tests_4glfw___pyx_scope_struct__test_os_window_size_ca
 struct __pyx_obj_12smelly_tests_4glfw___pyx_scope_struct_1_test_utf_8_strndup;
 
 /* "smelly_tests/glfw.py":14
- * 
+ *
  * class TestGLFW(BaseTest):
  *     def test_os_window_size_calculation(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_4glfw___pyx_scope_struct__test_os_window_size_calculation {
   PyObject_HEAD
@@ -990,7 +990,7 @@ struct __pyx_obj_12smelly_tests_4glfw___pyx_scope_struct__test_os_window_size_ca
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
  *     def test_utf_8_strndup(self):             # <<<<<<<<<<<<<<
  *         import ctypes
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_4glfw___pyx_scope_struct_1_test_utf_8_strndup {
   PyObject_HEAD
@@ -1728,11 +1728,11 @@ static PyObject *__pyx_codeobj__20;
 /* Late includes */
 
 /* "smelly_tests/glfw.py":14
- * 
+ *
  * class TestGLFW(BaseTest):
  *     def test_os_window_size_calculation(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1751,7 +1751,7 @@ static PyObject *__pyx_pw_12smelly_tests_4glfw_8TestGLFW_1test_os_window_size_ca
 
 /* "smelly_tests/glfw.py":17
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  *         def t(w, h, width=0, height=0, unit='cells', incremental=False):             # <<<<<<<<<<<<<<
  *             self.ae(
  *                 (w, h),
@@ -1898,7 +1898,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_31test_os_window_size_c
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/glfw.py":18
- * 
+ *
  *         def t(w, h, width=0, height=0, unit='cells', incremental=False):
  *             self.ae(             # <<<<<<<<<<<<<<
  *                 (w, h),
@@ -1938,7 +1938,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_31test_os_window_size_c
  *                 get_new_os_window_size(
  *                     metrics, width, height, unit, incremental,             # <<<<<<<<<<<<<<
  *                     has_window_scaling))
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_metrics)) { __Pyx_RaiseClosureNameError("metrics"); __PYX_ERR(0, 21, __pyx_L1_error) }
 
@@ -1946,7 +1946,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_31test_os_window_size_c
  *                 get_new_os_window_size(
  *                     metrics, width, height, unit, incremental,
  *                     has_window_scaling))             # <<<<<<<<<<<<<<
- * 
+ *
  *         with self.subTest(has_window_scaling=False):
  */
   __pyx_t_5 = __Pyx_PyBool_FromLong(__pyx_cur_scope->__pyx_v_has_window_scaling); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 22, __pyx_L1_error)
@@ -2064,7 +2064,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_31test_os_window_size_c
 
   /* "smelly_tests/glfw.py":17
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  *         def t(w, h, width=0, height=0, unit='cells', incremental=False):             # <<<<<<<<<<<<<<
  *             self.ae(
  *                 (w, h),
@@ -2091,11 +2091,11 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_31test_os_window_size_c
 }
 
 /* "smelly_tests/glfw.py":14
- * 
+ *
  * class TestGLFW(BaseTest):
  *     def test_os_window_size_calculation(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_calculation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -2134,7 +2134,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  * class TestGLFW(BaseTest):
  *     def test_os_window_size_calculation(self):
  *         from smelly.utils import get_new_os_window_size             # <<<<<<<<<<<<<<
- * 
+ *
  *         def t(w, h, width=0, height=0, unit='cells', incremental=False):
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
@@ -2155,7 +2155,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
 
   /* "smelly_tests/glfw.py":17
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  *         def t(w, h, width=0, height=0, unit='cells', incremental=False):             # <<<<<<<<<<<<<<
  *             self.ae(
  *                 (w, h),
@@ -2168,7 +2168,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
 
   /* "smelly_tests/glfw.py":24
  *                     has_window_scaling))
- * 
+ *
  *         with self.subTest(has_window_scaling=False):             # <<<<<<<<<<<<<<
  *             has_window_scaling = False
  *             metrics = {
@@ -2215,7 +2215,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
         /*try:*/ {
 
           /* "smelly_tests/glfw.py":25
- * 
+ *
  *         with self.subTest(has_window_scaling=False):
  *             has_window_scaling = False             # <<<<<<<<<<<<<<
  *             metrics = {
@@ -2348,7 +2348,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  *             t(1217, 100, 1217, unit='pixels')
  *             t(1217 + metrics['width'], 100, 1217,             # <<<<<<<<<<<<<<
  *               unit='pixels', incremental=True)
- * 
+ *
  */
           __pyx_t_2 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_metrics, __pyx_n_s_width); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 42, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -2371,7 +2371,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  *             t(1217, 100, 1217, unit='pixels')
  *             t(1217 + metrics['width'], 100, 1217,
  *               unit='pixels', incremental=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *         with self.subTest(has_window_scaling=True):
  */
           __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L7_error)
@@ -2384,7 +2384,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  *             t(1217, 100, 1217, unit='pixels')
  *             t(1217 + metrics['width'], 100, 1217,             # <<<<<<<<<<<<<<
  *               unit='pixels', incremental=True)
- * 
+ *
  */
           __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_t, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_1);
@@ -2394,7 +2394,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
 
           /* "smelly_tests/glfw.py":24
  *                     has_window_scaling))
- * 
+ *
  *         with self.subTest(has_window_scaling=False):             # <<<<<<<<<<<<<<
  *             has_window_scaling = False
  *             metrics = {
@@ -2431,7 +2431,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 24, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2475,7 +2475,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
 
   /* "smelly_tests/glfw.py":45
  *               unit='pixels', incremental=True)
- * 
+ *
  *         with self.subTest(has_window_scaling=True):             # <<<<<<<<<<<<<<
  *             has_window_scaling = True
  *             metrics['framebuffer_width'] = metrics['width'] * 2
@@ -2522,7 +2522,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
         /*try:*/ {
 
           /* "smelly_tests/glfw.py":46
- * 
+ *
  *         with self.subTest(has_window_scaling=True):
  *             has_window_scaling = True             # <<<<<<<<<<<<<<
  *             metrics['framebuffer_width'] = metrics['width'] * 2
@@ -2699,7 +2699,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  *             t(1217, 100, 1217, unit='pixels')
  *             t(1217 + metrics['width'], 100, 1217,             # <<<<<<<<<<<<<<
  *               unit='pixels', incremental=True)
- * 
+ *
  */
           if (unlikely(!__pyx_cur_scope->__pyx_v_metrics)) { __Pyx_RaiseUnboundLocalError("metrics"); __PYX_ERR(0, 54, __pyx_L21_error) }
           __pyx_t_1 = __Pyx_PyDict_GetItem(__pyx_cur_scope->__pyx_v_metrics, __pyx_n_s_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L21_error)
@@ -2723,7 +2723,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  *             t(1217, 100, 1217, unit='pixels')
  *             t(1217 + metrics['width'], 100, 1217,
  *               unit='pixels', incremental=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @unittest.skipIf(
  */
           __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 55, __pyx_L21_error)
@@ -2736,7 +2736,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  *             t(1217, 100, 1217, unit='pixels')
  *             t(1217 + metrics['width'], 100, 1217,             # <<<<<<<<<<<<<<
  *               unit='pixels', incremental=True)
- * 
+ *
  */
           __pyx_t_2 = __Pyx_PyObject_Call(__pyx_v_t, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L21_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -2746,7 +2746,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
 
           /* "smelly_tests/glfw.py":45
  *               unit='pixels', incremental=True)
- * 
+ *
  *         with self.subTest(has_window_scaling=True):             # <<<<<<<<<<<<<<
  *             has_window_scaling = True
  *             metrics['framebuffer_width'] = metrics['width'] * 2
@@ -2783,7 +2783,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_3, __pyx_t_1);
-            __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
+            __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 45, __pyx_L23_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2826,11 +2826,11 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
   }
 
   /* "smelly_tests/glfw.py":14
- * 
+ *
  * class TestGLFW(BaseTest):
  *     def test_os_window_size_calculation(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  */
 
   /* function exit code */
@@ -2856,7 +2856,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_test_os_window_size_cal
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
  *     def test_utf_8_strndup(self):             # <<<<<<<<<<<<<<
  *         import ctypes
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2874,11 +2874,11 @@ static PyObject *__pyx_pw_12smelly_tests_4glfw_8TestGLFW_3test_utf_8_strndup(PyO
 }
 
 /* "smelly_tests/glfw.py":70
- * 
+ *
  *         class allocated_c_char_p(ctypes.c_char_p):
  *             def __del__(self):             # <<<<<<<<<<<<<<
  *                 libc.free(self)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2914,7 +2914,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_18
  *         class allocated_c_char_p(ctypes.c_char_p):
  *             def __del__(self):
  *                 libc.free(self)             # <<<<<<<<<<<<<<
- * 
+ *
  *         utf_8_strndup = lib.utf_8_strndup
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_libc)) { __Pyx_RaiseClosureNameError("libc"); __PYX_ERR(0, 71, __pyx_L1_error) }
@@ -2938,11 +2938,11 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_18
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/glfw.py":70
- * 
+ *
  *         class allocated_c_char_p(ctypes.c_char_p):
  *             def __del__(self):             # <<<<<<<<<<<<<<
  *                 libc.free(self)
- * 
+ *
  */
 
   /* function exit code */
@@ -2962,7 +2962,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_18
 
 /* "smelly_tests/glfw.py":77
  *         utf_8_strndup.argtypes = (ctypes.c_char_p, ctypes.c_size_t)
- * 
+ *
  *         def test(string):             # <<<<<<<<<<<<<<
  *             string_bytes = bytes(string, 'utf-8')
  *             prev_part_bytes = b''
@@ -3016,7 +3016,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_te
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/glfw.py":78
- * 
+ *
  *         def test(string):
  *             string_bytes = bytes(string, 'utf-8')             # <<<<<<<<<<<<<<
  *             prev_part_bytes = b''
@@ -3477,7 +3477,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_te
  *             # Try to go one character after the end of the string
  *             self.ae(utf_8_strndup(string_bytes, len(             # <<<<<<<<<<<<<<
  *                 string_bytes) + 1).value, string_bytes)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 96, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 96, __pyx_L1_error)
@@ -3488,7 +3488,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_te
  *             # Try to go one character after the end of the string
  *             self.ae(utf_8_strndup(string_bytes, len(
  *                 string_bytes) + 1).value, string_bytes)             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(utf_8_strndup(None, 2).value, None)
  */
   __pyx_t_4 = PyBytes_GET_SIZE(__pyx_v_string_bytes); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 96, __pyx_L1_error)
@@ -3596,7 +3596,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_te
 
   /* "smelly_tests/glfw.py":77
  *         utf_8_strndup.argtypes = (ctypes.c_char_p, ctypes.c_size_t)
- * 
+ *
  *         def test(string):             # <<<<<<<<<<<<<<
  *             string_bytes = bytes(string, 'utf-8')
  *             prev_part_bytes = b''
@@ -3632,7 +3632,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_te
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
  *     def test_utf_8_strndup(self):             # <<<<<<<<<<<<<<
  *         import ctypes
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -3671,7 +3671,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
  *     def test_utf_8_strndup(self):
  *         import ctypes             # <<<<<<<<<<<<<<
- * 
+ *
  *         from smelly.constants import glfw_path
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_ctypes, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
@@ -3681,9 +3681,9 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":63
  *         import ctypes
- * 
+ *
  *         from smelly.constants import glfw_path             # <<<<<<<<<<<<<<
- * 
+ *
  *         backend_utils = glfw_path('x11')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -3703,7 +3703,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":65
  *         from smelly.constants import glfw_path
- * 
+ *
  *         backend_utils = glfw_path('x11')             # <<<<<<<<<<<<<<
  *         lib = ctypes.CDLL(backend_utils)
  *         libc = ctypes.CDLL(None)
@@ -3728,11 +3728,11 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
   __pyx_t_2 = 0;
 
   /* "smelly_tests/glfw.py":66
- * 
+ *
  *         backend_utils = glfw_path('x11')
  *         lib = ctypes.CDLL(backend_utils)             # <<<<<<<<<<<<<<
  *         libc = ctypes.CDLL(None)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_ctypes, __pyx_n_s_CDLL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3758,7 +3758,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
  *         backend_utils = glfw_path('x11')
  *         lib = ctypes.CDLL(backend_utils)
  *         libc = ctypes.CDLL(None)             # <<<<<<<<<<<<<<
- * 
+ *
  *         class allocated_c_char_p(ctypes.c_char_p):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_ctypes, __pyx_n_s_CDLL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
@@ -3784,7 +3784,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":69
  *         libc = ctypes.CDLL(None)
- * 
+ *
  *         class allocated_c_char_p(ctypes.c_char_p):             # <<<<<<<<<<<<<<
  *             def __del__(self):
  *                 libc.free(self)
@@ -3802,11 +3802,11 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/glfw.py":70
- * 
+ *
  *         class allocated_c_char_p(ctypes.c_char_p):
  *             def __del__(self):             # <<<<<<<<<<<<<<
  *                 libc.free(self)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_4glfw_8TestGLFW_18test_utf_8_strndup_18allocated_c_char_p_1__del__, 0, __pyx_n_s_TestGLFW_test_utf_8_strndup_loca_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_glfw, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3815,7 +3815,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":69
  *         libc = ctypes.CDLL(None)
- * 
+ *
  *         class allocated_c_char_p(ctypes.c_char_p):             # <<<<<<<<<<<<<<
  *             def __del__(self):
  *                 libc.free(self)
@@ -3830,7 +3830,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":73
  *                 libc.free(self)
- * 
+ *
  *         utf_8_strndup = lib.utf_8_strndup             # <<<<<<<<<<<<<<
  *         utf_8_strndup.restype = allocated_c_char_p
  *         utf_8_strndup.argtypes = (ctypes.c_char_p, ctypes.c_size_t)
@@ -3842,11 +3842,11 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
   __pyx_t_1 = 0;
 
   /* "smelly_tests/glfw.py":74
- * 
+ *
  *         utf_8_strndup = lib.utf_8_strndup
  *         utf_8_strndup.restype = allocated_c_char_p             # <<<<<<<<<<<<<<
  *         utf_8_strndup.argtypes = (ctypes.c_char_p, ctypes.c_size_t)
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_utf_8_strndup, __pyx_n_s_restype, __pyx_v_allocated_c_char_p) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
 
@@ -3854,7 +3854,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
  *         utf_8_strndup = lib.utf_8_strndup
  *         utf_8_strndup.restype = allocated_c_char_p
  *         utf_8_strndup.argtypes = (ctypes.c_char_p, ctypes.c_size_t)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def test(string):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_ctypes, __pyx_n_s_c_char_p); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
@@ -3874,7 +3874,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":77
  *         utf_8_strndup.argtypes = (ctypes.c_char_p, ctypes.c_size_t)
- * 
+ *
  *         def test(string):             # <<<<<<<<<<<<<<
  *             string_bytes = bytes(string, 'utf-8')
  *             prev_part_bytes = b''
@@ -3886,10 +3886,10 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":99
  *                 string_bytes) + 1).value, string_bytes)
- * 
+ *
  *         self.ae(utf_8_strndup(None, 2).value, None)             # <<<<<<<<<<<<<<
  *         self.ae(utf_8_strndup(b'', 2).value, b'')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3948,10 +3948,10 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/glfw.py":100
- * 
+ *
  *         self.ae(utf_8_strndup(None, 2).value, None)
  *         self.ae(utf_8_strndup(b'', 2).value, b'')             # <<<<<<<<<<<<<<
- * 
+ *
  *         test('')
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
@@ -4012,7 +4012,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
 
   /* "smelly_tests/glfw.py":102
  *         self.ae(utf_8_strndup(b'', 2).value, b'')
- * 
+ *
  *         test('')             # <<<<<<<<<<<<<<
  *         test('>a<')
  *         test('><')
@@ -4022,7 +4022,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/glfw.py":103
- * 
+ *
  *         test('')
  *         test('>a<')             # <<<<<<<<<<<<<<
  *         test('><')
@@ -4078,7 +4078,7 @@ static PyObject *__pyx_pf_12smelly_tests_4glfw_8TestGLFW_2test_utf_8_strndup(CYT
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
  *     def test_utf_8_strndup(self):             # <<<<<<<<<<<<<<
  *         import ctypes
- * 
+ *
  */
 
   /* function exit code */
@@ -4524,7 +4524,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/glfw.py":17
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  *         def t(w, h, width=0, height=0, unit='cells', incremental=False):             # <<<<<<<<<<<<<<
  *             self.ae(
  *                 (w, h),
@@ -4550,7 +4550,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/glfw.py":24
  *                     has_window_scaling))
- * 
+ *
  *         with self.subTest(has_window_scaling=False):             # <<<<<<<<<<<<<<
  *             has_window_scaling = False
  *             metrics = {
@@ -4560,11 +4560,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "smelly_tests/glfw.py":70
- * 
+ *
  *         class allocated_c_char_p(ctypes.c_char_p):
  *             def __del__(self):             # <<<<<<<<<<<<<<
  *                 libc.free(self)
- * 
+ *
  */
   __pyx_tuple__7 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
@@ -4573,7 +4573,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/glfw.py":77
  *         utf_8_strndup.argtypes = (ctypes.c_char_p, ctypes.c_size_t)
- * 
+ *
  *         def test(string):             # <<<<<<<<<<<<<<
  *             string_bytes = bytes(string, 'utf-8')
  *             prev_part_bytes = b''
@@ -4585,20 +4585,20 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/glfw.py":99
  *                 string_bytes) + 1).value, string_bytes)
- * 
+ *
  *         self.ae(utf_8_strndup(None, 2).value, None)             # <<<<<<<<<<<<<<
  *         self.ae(utf_8_strndup(b'', 2).value, b'')
- * 
+ *
  */
   __pyx_tuple__11 = PyTuple_Pack(2, Py_None, __pyx_int_2); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
   /* "smelly_tests/glfw.py":100
- * 
+ *
  *         self.ae(utf_8_strndup(None, 2).value, None)
  *         self.ae(utf_8_strndup(b'', 2).value, b'')             # <<<<<<<<<<<<<<
- * 
+ *
  *         test('')
  */
   __pyx_tuple__12 = PyTuple_Pack(2, __pyx_kp_b__6, __pyx_int_2); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 100, __pyx_L1_error)
@@ -4606,11 +4606,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__12);
 
   /* "smelly_tests/glfw.py":14
- * 
+ *
  * class TestGLFW(BaseTest):
  *     def test_os_window_size_calculation(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_get_new_os_window_size, __pyx_n_s_t, __pyx_n_s_t, __pyx_n_s_has_window_scaling, __pyx_n_s_metrics); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -4622,7 +4622,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
  *     def test_utf_8_strndup(self):             # <<<<<<<<<<<<<<
  *         import ctypes
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(10, __pyx_n_s_self, __pyx_n_s_ctypes, __pyx_n_s_glfw_path, __pyx_n_s_backend_utils, __pyx_n_s_lib, __pyx_n_s_libc, __pyx_n_s_allocated_c_char_p, __pyx_n_s_utf_8_strndup, __pyx_n_s_test, __pyx_n_s_test); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -4952,10 +4952,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/glfw.py":4
  * # License: GPL v3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import sys             # <<<<<<<<<<<<<<
  * import unittest
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4963,10 +4963,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/glfw.py":5
- * 
+ *
  * import sys
  * import unittest             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_unittest, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -4976,9 +4976,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/glfw.py":7
  * import unittest
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
+ *
  * _plat = sys.platform.lower()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -4997,10 +4997,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/glfw.py":9
  * from . import BaseTest
- * 
+ *
  * _plat = sys.platform.lower()             # <<<<<<<<<<<<<<
  * is_macos = 'darwin' in _plat
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5017,11 +5017,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/glfw.py":10
- * 
+ *
  * _plat = sys.platform.lower()
  * is_macos = 'darwin' in _plat             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plat); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5033,8 +5033,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/glfw.py":13
- * 
- * 
+ *
+ *
  * class TestGLFW(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_os_window_size_calculation(self):
  *         from smelly.utils import get_new_os_window_size
@@ -5052,11 +5052,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly_tests/glfw.py":14
- * 
+ *
  * class TestGLFW(BaseTest):
  *     def test_os_window_size_calculation(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import get_new_os_window_size
- * 
+ *
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_4glfw_8TestGLFW_1test_os_window_size_calculation, 0, __pyx_n_s_TestGLFW_test_os_window_size_cal_2, NULL, __pyx_n_s_smelly_tests_glfw, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -5065,7 +5065,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/glfw.py":57
  *               unit='pixels', incremental=True)
- * 
+ *
  *     @unittest.skipIf(             # <<<<<<<<<<<<<<
  *         is_macos,
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
@@ -5077,7 +5077,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/glfw.py":58
- * 
+ *
  *     @unittest.skipIf(
  *         is_macos,             # <<<<<<<<<<<<<<
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
@@ -5138,7 +5138,7 @@ if (!__Pyx_RefNanny) {
  *         'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
  *     def test_utf_8_strndup(self):             # <<<<<<<<<<<<<<
  *         import ctypes
- * 
+ *
  */
   __pyx_t_8 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_4glfw_8TestGLFW_3test_utf_8_strndup, 0, __pyx_n_s_TestGLFW_test_utf_8_strndup, NULL, __pyx_n_s_smelly_tests_glfw, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -5162,8 +5162,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/glfw.py":13
- * 
- * 
+ *
+ *
  * class TestGLFW(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_os_window_size_calculation(self):
  *         from smelly.utils import get_new_os_window_size
@@ -5179,7 +5179,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/glfw.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6533,8 +6533,8 @@ static PyObject* __Pyx_PyInt_AddCObj(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -6942,8 +6942,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

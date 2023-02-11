@@ -975,8 +975,8 @@ struct __pyx_defaults {
 };
 
 /* "smelly/session.py":138
- * 
- * 
+ *
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:             # <<<<<<<<<<<<<<
  *     def finalize_session(ans: Session) -> Session:
  *         from .tabs import SpecialWindow
@@ -1002,8 +1002,8 @@ struct __pyx_obj_6smelly_7session___pyx_scope_struct__parse_session {
 
 
 /* "smelly/session.py":207
- * 
- * 
+ *
+ *
  * def create_sessions(             # <<<<<<<<<<<<<<
  *     opts: Options,
  *     args: Optional[CLIOptions] = None,
@@ -2246,7 +2246,7 @@ static PyObject *__pyx_codeobj__43;
  *             expand: Callable[[str],
  *                              str] = lambda x: x) -> None:             # <<<<<<<<<<<<<<
  *         from .launch import parse_launch_args
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2280,8 +2280,8 @@ static PyObject *__pyx_lambda_funcdef_6smelly_7session_lambda(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/session.py":25
- * 
- * 
+ *
+ *
  * def get_os_window_sizing_data(             # <<<<<<<<<<<<<<
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
  *     if session is None or session.os_window_size is None:
@@ -2304,7 +2304,7 @@ static PyObject *__pyx_pw_6smelly_7session_1get_os_window_sizing_data(PyObject *
     PyObject* values[2] = {0,0};
 
     /* "smelly/session.py":26
- * 
+ *
  * def get_os_window_sizing_data(
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:             # <<<<<<<<<<<<<<
  *     if session is None or session.os_window_size is None:
@@ -2360,8 +2360,8 @@ static PyObject *__pyx_pw_6smelly_7session_1get_os_window_sizing_data(PyObject *
   __pyx_r = __pyx_pf_6smelly_7session_get_os_window_sizing_data(__pyx_self, __pyx_v_opts, __pyx_v_session);
 
   /* "smelly/session.py":25
- * 
- * 
+ *
+ *
  * def get_os_window_sizing_data(             # <<<<<<<<<<<<<<
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
  *     if session is None or session.os_window_size is None:
@@ -2556,7 +2556,7 @@ static PyObject *__pyx_pf_6smelly_7session_get_os_window_sizing_data(CYTHON_UNUS
  *     return WindowSizeData(
  *         sizes, opts.remember_window_size, opts.single_window_margin_width,             # <<<<<<<<<<<<<<
  *         opts.window_margin_width, opts.window_padding_width)
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_remember_window_size); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -2567,8 +2567,8 @@ static PyObject *__pyx_pf_6smelly_7session_get_os_window_sizing_data(CYTHON_UNUS
  *     return WindowSizeData(
  *         sizes, opts.remember_window_size, opts.single_window_margin_width,
  *         opts.window_margin_width, opts.window_padding_width)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_window_margin_width); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -2641,8 +2641,8 @@ static PyObject *__pyx_pf_6smelly_7session_get_os_window_sizing_data(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/session.py":25
- * 
- * 
+ *
+ *
  * def get_os_window_sizing_data(             # <<<<<<<<<<<<<<
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
  *     if session is None or session.os_window_size is None:
@@ -2668,7 +2668,7 @@ static PyObject *__pyx_pf_6smelly_7session_get_os_window_sizing_data(CYTHON_UNUS
 }
 
 /* "smelly/session.py":42
- * 
+ *
  * class WindowSpec:
  *     def __init__(             # <<<<<<<<<<<<<<
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
@@ -2753,7 +2753,7 @@ static PyObject *__pyx_pf_6smelly_7session_10WindowSpec___init__(CYTHON_UNUSED P
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
  *         self.launch_spec = launch_spec             # <<<<<<<<<<<<<<
  *         self.resize_spec: Optional[ResizeSpec] = None
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_launch_spec, __pyx_v_launch_spec) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
 
@@ -2761,13 +2761,13 @@ static PyObject *__pyx_pf_6smelly_7session_10WindowSpec___init__(CYTHON_UNUSED P
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
  *         self.launch_spec = launch_spec
  *         self.resize_spec: Optional[ResizeSpec] = None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_resize_spec, Py_None) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
 
   /* "smelly/session.py":42
- * 
+ *
  * class WindowSpec:
  *     def __init__(             # <<<<<<<<<<<<<<
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
@@ -2787,7 +2787,7 @@ static PyObject *__pyx_pf_6smelly_7session_10WindowSpec___init__(CYTHON_UNUSED P
 }
 
 /* "smelly/session.py":49
- * 
+ *
  * class Tab:
  *     def __init__(self, opts: Options, name: str):             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowSpec] = []
@@ -2978,7 +2978,7 @@ static PyObject *__pyx_pf_6smelly_7session_3Tab___init__(CYTHON_UNUSED PyObject 
  *         self.layout = (self.enabled_layouts or ['tall'])[0]
  *         self.cwd: Optional[str] = None             # <<<<<<<<<<<<<<
  *         self.next_title: Optional[str] = None
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cwd, Py_None) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
 
@@ -2986,13 +2986,13 @@ static PyObject *__pyx_pf_6smelly_7session_3Tab___init__(CYTHON_UNUSED PyObject 
  *         self.layout = (self.enabled_layouts or ['tall'])[0]
  *         self.cwd: Optional[str] = None
  *         self.next_title: Optional[str] = None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_next_title, Py_None) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
 
   /* "smelly/session.py":49
- * 
+ *
  * class Tab:
  *     def __init__(self, opts: Options, name: str):             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowSpec] = []
@@ -3014,7 +3014,7 @@ static PyObject *__pyx_pf_6smelly_7session_3Tab___init__(CYTHON_UNUSED PyObject 
 }
 
 /* "smelly/session.py":61
- * 
+ *
  * class Session:
  *     def __init__(self, default_title: Optional[str] = None):             # <<<<<<<<<<<<<<
  *         self.tabs: List[Tab] = []
@@ -3143,7 +3143,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session___init__(CYTHON_UNUSED PyObj
  *         self.os_window_size: Optional[WindowSizes] = None
  *         self.os_window_class: Optional[str] = None             # <<<<<<<<<<<<<<
  *         self.focus_os_window: bool = False
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_os_window_class, Py_None) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
 
@@ -3151,13 +3151,13 @@ static PyObject *__pyx_pf_6smelly_7session_7Session___init__(CYTHON_UNUSED PyObj
  *         self.os_window_size: Optional[WindowSizes] = None
  *         self.os_window_class: Optional[str] = None
  *         self.focus_os_window: bool = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_tab(self, opts: Options, name: str = '') -> None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_focus_os_window, Py_False) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
 
   /* "smelly/session.py":61
- * 
+ *
  * class Session:
  *     def __init__(self, default_title: Optional[str] = None):             # <<<<<<<<<<<<<<
  *         self.tabs: List[Tab] = []
@@ -3179,7 +3179,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session___init__(CYTHON_UNUSED PyObj
 
 /* "smelly/session.py":69
  *         self.focus_os_window: bool = False
- * 
+ *
  *     def add_tab(self, opts: Options, name: str = '') -> None:             # <<<<<<<<<<<<<<
  *         if self.tabs and not self.tabs[-1].windows:
  *             del self.tabs[-1]
@@ -3289,7 +3289,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_2add_tab(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("add_tab", 0);
 
   /* "smelly/session.py":70
- * 
+ *
  *     def add_tab(self, opts: Options, name: str = '') -> None:
  *         if self.tabs and not self.tabs[-1].windows:             # <<<<<<<<<<<<<<
  *             del self.tabs[-1]
@@ -3324,7 +3324,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_2add_tab(CYTHON_UNUSED PyObj
  *         if self.tabs and not self.tabs[-1].windows:
  *             del self.tabs[-1]             # <<<<<<<<<<<<<<
  *         self.tabs.append(Tab(opts, name))
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -3332,7 +3332,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_2add_tab(CYTHON_UNUSED PyObj
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly/session.py":70
- * 
+ *
  *     def add_tab(self, opts: Options, name: str = '') -> None:
  *         if self.tabs and not self.tabs[-1].windows:             # <<<<<<<<<<<<<<
  *             del self.tabs[-1]
@@ -3344,7 +3344,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_2add_tab(CYTHON_UNUSED PyObj
  *         if self.tabs and not self.tabs[-1].windows:
  *             del self.tabs[-1]
  *         self.tabs.append(Tab(opts, name))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_next_title(self, title: str) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
@@ -3402,7 +3402,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_2add_tab(CYTHON_UNUSED PyObj
 
   /* "smelly/session.py":69
  *         self.focus_os_window: bool = False
- * 
+ *
  *     def add_tab(self, opts: Options, name: str = '') -> None:             # <<<<<<<<<<<<<<
  *         if self.tabs and not self.tabs[-1].windows:
  *             del self.tabs[-1]
@@ -3427,10 +3427,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_2add_tab(CYTHON_UNUSED PyObj
 
 /* "smelly/session.py":74
  *         self.tabs.append(Tab(opts, name))
- * 
+ *
  *     def set_next_title(self, title: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3515,10 +3515,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_4set_next_title(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("set_next_title", 0);
 
   /* "smelly/session.py":75
- * 
+ *
  *     def set_next_title(self, title: str) -> None:
  *         self.tabs[-1].next_title = title.strip()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_layout(self, val: str) -> None:
  */
   __pyx_t_1 = __Pyx_CallUnboundCMethod0(&__pyx_umethod_PyString_Type_strip, __pyx_v_title); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
@@ -3534,10 +3534,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_4set_next_title(CYTHON_UNUSE
 
   /* "smelly/session.py":74
  *         self.tabs.append(Tab(opts, name))
- * 
+ *
  *     def set_next_title(self, title: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  */
 
   /* function exit code */
@@ -3557,7 +3557,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_4set_next_title(CYTHON_UNUSE
 
 /* "smelly/session.py":77
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  *     def set_layout(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         if val.partition(':')[0] not in all_layouts:
  *             raise ValueError(f'{val} is not a valid layout')
@@ -3646,7 +3646,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_6set_layout(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("set_layout", 0);
 
   /* "smelly/session.py":78
- * 
+ *
  *     def set_layout(self, val: str) -> None:
  *         if val.partition(':')[0] not in all_layouts:             # <<<<<<<<<<<<<<
  *             raise ValueError(f'{val} is not a valid layout')
@@ -3670,7 +3670,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_6set_layout(CYTHON_UNUSED Py
  *         if val.partition(':')[0] not in all_layouts:
  *             raise ValueError(f'{val} is not a valid layout')             # <<<<<<<<<<<<<<
  *         self.tabs[-1].layout = val
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_FormatSimple(__pyx_v_val, __pyx_empty_unicode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3685,7 +3685,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_6set_layout(CYTHON_UNUSED Py
     __PYX_ERR(0, 79, __pyx_L1_error)
 
     /* "smelly/session.py":78
- * 
+ *
  *     def set_layout(self, val: str) -> None:
  *         if val.partition(':')[0] not in all_layouts:             # <<<<<<<<<<<<<<
  *             raise ValueError(f'{val} is not a valid layout')
@@ -3697,7 +3697,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_6set_layout(CYTHON_UNUSED Py
  *         if val.partition(':')[0] not in all_layouts:
  *             raise ValueError(f'{val} is not a valid layout')
  *         self.tabs[-1].layout = val             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_window(
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -3710,7 +3710,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_6set_layout(CYTHON_UNUSED Py
 
   /* "smelly/session.py":77
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  *     def set_layout(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         if val.partition(':')[0] not in all_layouts:
  *             raise ValueError(f'{val} is not a valid layout')
@@ -3732,7 +3732,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_6set_layout(CYTHON_UNUSED Py
 
 /* "smelly/session.py":82
  *         self.tabs[-1].layout = val
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, cmd: Union[None, str, List[str]],
  *             expand: Callable[[str],
@@ -3896,7 +3896,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
  *             expand: Callable[[str],
  *                              str] = lambda x: x) -> None:
  *         from .launch import parse_launch_args             # <<<<<<<<<<<<<<
- * 
+ *
  *         needs_expandvars = False
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
@@ -3916,7 +3916,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
 
   /* "smelly/session.py":88
  *         from .launch import parse_launch_args
- * 
+ *
  *         needs_expandvars = False             # <<<<<<<<<<<<<<
  *         if isinstance(cmd, str):
  *             needs_expandvars = True
@@ -3924,13 +3924,13 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
   __pyx_v_needs_expandvars = 0;
 
   /* "smelly/session.py":89
- * 
+ *
  *         needs_expandvars = False
  *         if isinstance(cmd, str):             # <<<<<<<<<<<<<<
  *             needs_expandvars = True
  *             cmd = shlex.split(cmd)
  */
-  __pyx_t_3 = PyString_Check(__pyx_v_cmd); 
+  __pyx_t_3 = PyString_Check(__pyx_v_cmd);
   __pyx_t_4 = (__pyx_t_3 != 0);
   if (__pyx_t_4) {
 
@@ -3974,7 +3974,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
     __pyx_t_2 = 0;
 
     /* "smelly/session.py":89
- * 
+ *
  *         needs_expandvars = False
  *         if isinstance(cmd, str):             # <<<<<<<<<<<<<<
  *             needs_expandvars = True
@@ -4027,7 +4027,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
  */
     #ifndef CYTHON_WITHOUT_ASSERTIONS
     if (unlikely(!Py_OptimizeFlag)) {
-      __pyx_t_4 = PyList_Check(__pyx_v_cmd); 
+      __pyx_t_4 = PyList_Check(__pyx_v_cmd);
       if (unlikely(!(__pyx_t_4 != 0))) {
         PyErr_SetNone(PyExc_AssertionError);
         __PYX_ERR(0, 94, __pyx_L1_error)
@@ -4190,7 +4190,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
                 __Pyx_GIVEREF(__pyx_t_5);
                 __Pyx_XGIVEREF(__pyx_t_8);
                 __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_5, __pyx_t_8);
-                __pyx_t_2 = 0; __pyx_t_5 = 0; __pyx_t_8 = 0; 
+                __pyx_t_2 = 0; __pyx_t_5 = 0; __pyx_t_8 = 0;
                 __PYX_ERR(0, 97, __pyx_L12_except_error)
               }
               __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4246,7 +4246,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
  *                     limit = cmd.index(spec.args[0])
  *             cmd = [(expand(x) if i < limit else x) for i, x in enumerate(cmd)]             # <<<<<<<<<<<<<<
  *             spec = parse_launch_args(cmd)
- * 
+ *
  */
     __pyx_t_8 = PyList_New(0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
@@ -4338,7 +4338,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
  *                     limit = cmd.index(spec.args[0])
  *             cmd = [(expand(x) if i < limit else x) for i, x in enumerate(cmd)]
  *             spec = parse_launch_args(cmd)             # <<<<<<<<<<<<<<
- * 
+ *
  *         t = self.tabs[-1]
  */
     __Pyx_INCREF(__pyx_v_parse_launch_args);
@@ -4371,7 +4371,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
 
   /* "smelly/session.py":102
  *             spec = parse_launch_args(cmd)
- * 
+ *
  *         t = self.tabs[-1]             # <<<<<<<<<<<<<<
  *         if t.next_title and not spec.opts.window_title:
  *             spec.opts.window_title = t.next_title
@@ -4385,7 +4385,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
   __pyx_t_5 = 0;
 
   /* "smelly/session.py":103
- * 
+ *
  *         t = self.tabs[-1]
  *         if t.next_title and not spec.opts.window_title:             # <<<<<<<<<<<<<<
  *             spec.opts.window_title = t.next_title
@@ -4428,7 +4428,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly/session.py":103
- * 
+ *
  *         t = self.tabs[-1]
  *         if t.next_title and not spec.opts.window_title:             # <<<<<<<<<<<<<<
  *             spec.opts.window_title = t.next_title
@@ -4527,7 +4527,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
  *         if t.pending_resize_spec is not None:
  *             t.windows[-1].resize_spec = t.pending_resize_spec             # <<<<<<<<<<<<<<
  *             t.pending_resize_spec = None
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_pending_resize_spec); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -4544,7 +4544,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
  *         if t.pending_resize_spec is not None:
  *             t.windows[-1].resize_spec = t.pending_resize_spec
  *             t.pending_resize_spec = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def resize_window(self, args: List[str]) -> None:
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_t, __pyx_n_s_pending_resize_spec, Py_None) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
@@ -4560,7 +4560,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
 
   /* "smelly/session.py":82
  *         self.tabs[-1].layout = val
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, cmd: Union[None, str, List[str]],
  *             expand: Callable[[str],
@@ -4594,7 +4594,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_8add_window(CYTHON_UNUSED Py
 
 /* "smelly/session.py":112
  *             t.pending_resize_spec = None
- * 
+ *
  *     def resize_window(self, args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *         s = resize_window('resize_window', shlex.join(args))[1]
  *         spec: ResizeSpec = s[0], s[1]
@@ -4684,7 +4684,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_10resize_window(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("resize_window", 0);
 
   /* "smelly/session.py":113
- * 
+ *
  *     def resize_window(self, args: List[str]) -> None:
  *         s = resize_window('resize_window', shlex.join(args))[1]             # <<<<<<<<<<<<<<
  *         spec: ResizeSpec = s[0], s[1]
@@ -4844,7 +4844,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_10resize_window(CYTHON_UNUSE
  *             t.windows[-1].resize_spec = spec
  *         else:
  *             t.pending_resize_spec = spec             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_special_window(self, sw: 'SpecialWindowInstance') -> None:
  */
   /*else*/ {
@@ -4854,7 +4854,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_10resize_window(CYTHON_UNUSE
 
   /* "smelly/session.py":112
  *             t.pending_resize_spec = None
- * 
+ *
  *     def resize_window(self, args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *         s = resize_window('resize_window', shlex.join(args))[1]
  *         spec: ResizeSpec = s[0], s[1]
@@ -4882,10 +4882,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_10resize_window(CYTHON_UNUSE
 
 /* "smelly/session.py":121
  *             t.pending_resize_spec = spec
- * 
+ *
  *     def add_special_window(self, sw: 'SpecialWindowInstance') -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4967,10 +4967,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_12add_special_window(CYTHON_
   __Pyx_RefNannySetupContext("add_special_window", 0);
 
   /* "smelly/session.py":122
- * 
+ *
  *     def add_special_window(self, sw: 'SpecialWindowInstance') -> None:
  *         self.tabs[-1].windows.append(WindowSpec(sw))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def focus(self) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
@@ -5004,10 +5004,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_12add_special_window(CYTHON_
 
   /* "smelly/session.py":121
  *             t.pending_resize_spec = spec
- * 
+ *
  *     def add_special_window(self, sw: 'SpecialWindowInstance') -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  */
 
   /* function exit code */
@@ -5028,7 +5028,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_12add_special_window(CYTHON_
 
 /* "smelly/session.py":124
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  *     def focus(self) -> None:             # <<<<<<<<<<<<<<
  *         self.active_tab_idx = max(0, len(self.tabs) - 1)
  *         self.tabs[-1].active_window_idx = max(0,
@@ -5063,7 +5063,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_14focus(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("focus", 0);
 
   /* "smelly/session.py":125
- * 
+ *
  *     def focus(self) -> None:
  *         self.active_tab_idx = max(0, len(self.tabs) - 1)             # <<<<<<<<<<<<<<
  *         self.tabs[-1].active_window_idx = max(0,
@@ -5089,7 +5089,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_14focus(CYTHON_UNUSED PyObje
  *         self.active_tab_idx = max(0, len(self.tabs) - 1)
  *         self.tabs[-1].active_window_idx = max(0,
  *                                               len(self.tabs[-1].windows) - 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_enabled_layouts(self, raw: str) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
@@ -5117,7 +5117,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_14focus(CYTHON_UNUSED PyObje
  *         self.active_tab_idx = max(0, len(self.tabs) - 1)
  *         self.tabs[-1].active_window_idx = max(0,             # <<<<<<<<<<<<<<
  *                                               len(self.tabs[-1].windows) - 1)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -5130,7 +5130,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_14focus(CYTHON_UNUSED PyObje
 
   /* "smelly/session.py":124
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  *     def focus(self) -> None:             # <<<<<<<<<<<<<<
  *         self.active_tab_idx = max(0, len(self.tabs) - 1)
  *         self.tabs[-1].active_window_idx = max(0,
@@ -5153,7 +5153,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_14focus(CYTHON_UNUSED PyObje
 
 /* "smelly/session.py":129
  *                                               len(self.tabs[-1].windows) - 1)
- * 
+ *
  *     def set_enabled_layouts(self, raw: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:
@@ -5243,7 +5243,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_16set_enabled_layouts(CYTHON
   __Pyx_RefNannySetupContext("set_enabled_layouts", 0);
 
   /* "smelly/session.py":130
- * 
+ *
  *     def set_enabled_layouts(self, raw: str) -> None:
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)             # <<<<<<<<<<<<<<
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:
@@ -5280,7 +5280,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_16set_enabled_layouts(CYTHON
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:             # <<<<<<<<<<<<<<
  *             self.tabs[-1].layout = self.tabs[-1].enabled_layouts[0]
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5308,7 +5308,7 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_16set_enabled_layouts(CYTHON
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:
  *             self.tabs[-1].layout = self.tabs[-1].enabled_layouts[0]             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_cwd(self, val: str) -> None:
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
@@ -5336,13 +5336,13 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_16set_enabled_layouts(CYTHON
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:             # <<<<<<<<<<<<<<
  *             self.tabs[-1].layout = self.tabs[-1].enabled_layouts[0]
- * 
+ *
  */
   }
 
   /* "smelly/session.py":129
  *                                               len(self.tabs[-1].windows) - 1)
- * 
+ *
  *     def set_enabled_layouts(self, raw: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:
@@ -5365,10 +5365,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_16set_enabled_layouts(CYTHON
 
 /* "smelly/session.py":134
  *             self.tabs[-1].layout = self.tabs[-1].enabled_layouts[0]
- * 
+ *
  *     def set_cwd(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].cwd = val
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5452,11 +5452,11 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_18set_cwd(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("set_cwd", 0);
 
   /* "smelly/session.py":135
- * 
+ *
  *     def set_cwd(self, val: str) -> None:
  *         self.tabs[-1].cwd = val             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tabs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5468,10 +5468,10 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_18set_cwd(CYTHON_UNUSED PyOb
 
   /* "smelly/session.py":134
  *             self.tabs[-1].layout = self.tabs[-1].enabled_layouts[0]
- * 
+ *
  *     def set_cwd(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].cwd = val
- * 
+ *
  */
 
   /* function exit code */
@@ -5490,8 +5490,8 @@ static PyObject *__pyx_pf_6smelly_7session_7Session_18set_cwd(CYTHON_UNUSED PyOb
 static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/session.py":138
- * 
- * 
+ *
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:             # <<<<<<<<<<<<<<
  *     def finalize_session(ans: Session) -> Session:
  *         from .tabs import SpecialWindow
@@ -5625,11 +5625,11 @@ static PyObject *__pyx_pf_6smelly_7session_2parse_session(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/session.py":139
- * 
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:
  *     def finalize_session(ans: Session) -> Session:             # <<<<<<<<<<<<<<
  *         from .tabs import SpecialWindow
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5677,7 +5677,7 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:
  *     def finalize_session(ans: Session) -> Session:
  *         from .tabs import SpecialWindow             # <<<<<<<<<<<<<<
- * 
+ *
  *         for t in ans.tabs:
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
@@ -5697,7 +5697,7 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
 
   /* "smelly/session.py":142
  *         from .tabs import SpecialWindow
- * 
+ *
  *         for t in ans.tabs:             # <<<<<<<<<<<<<<
  *             if not t.windows:
  *                 t.windows.append(
@@ -5748,7 +5748,7 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
     __pyx_t_2 = 0;
 
     /* "smelly/session.py":143
- * 
+ *
  *         for t in ans.tabs:
  *             if not t.windows:             # <<<<<<<<<<<<<<
  *                 t.windows.append(
@@ -5786,7 +5786,7 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
  *                         SpecialWindow(
  *                             cmd=resolved_shell(opts))))             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
       __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 147, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
@@ -5850,7 +5850,7 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
       /* "smelly/session.py":143
- * 
+ *
  *         for t in ans.tabs:
  *             if not t.windows:             # <<<<<<<<<<<<<<
  *                 t.windows.append(
@@ -5860,7 +5860,7 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
 
     /* "smelly/session.py":142
  *         from .tabs import SpecialWindow
- * 
+ *
  *         for t in ans.tabs:             # <<<<<<<<<<<<<<
  *             if not t.windows:
  *                 t.windows.append(
@@ -5872,7 +5872,7 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
  *                         SpecialWindow(
  *                             cmd=resolved_shell(opts))))
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     if environ is None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5881,11 +5881,11 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
   goto __pyx_L0;
 
   /* "smelly/session.py":139
- * 
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:
  *     def finalize_session(ans: Session) -> Session:             # <<<<<<<<<<<<<<
  *         from .tabs import SpecialWindow
- * 
+ *
  */
 
   /* function exit code */
@@ -5909,8 +5909,8 @@ static PyObject *__pyx_pf_6smelly_7session_13parse_session_finalize_session(PyOb
 }
 
 /* "smelly/session.py":138
- * 
- * 
+ *
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:             # <<<<<<<<<<<<<<
  *     def finalize_session(ans: Session) -> Session:
  *         from .tabs import SpecialWindow
@@ -5952,11 +5952,11 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 138, __pyx_L1_error)
 
   /* "smelly/session.py":139
- * 
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:
  *     def finalize_session(ans: Session) -> Session:             # <<<<<<<<<<<<<<
  *         from .tabs import SpecialWindow
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5978,7 +5978,7 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
 
   /* "smelly/session.py":150
  *         return ans
- * 
+ *
  *     if environ is None:             # <<<<<<<<<<<<<<
  *         environ = os.environ
  *     expand = partial(expandvars, env=environ, fallback_to_os_env=False)
@@ -5988,7 +5988,7 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
   if (__pyx_t_4) {
 
     /* "smelly/session.py":151
- * 
+ *
  *     if environ is None:
  *         environ = os.environ             # <<<<<<<<<<<<<<
  *     expand = partial(expandvars, env=environ, fallback_to_os_env=False)
@@ -6006,7 +6006,7 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
 
     /* "smelly/session.py":150
  *         return ans
- * 
+ *
  *     if environ is None:             # <<<<<<<<<<<<<<
  *         environ = os.environ
  *     expand = partial(expandvars, env=environ, fallback_to_os_env=False)
@@ -6296,11 +6296,11 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_5);
           __Pyx_INCREF(__pyx_t_1);
@@ -7032,11 +7032,11 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_12 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_12 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_12 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_12 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_12);
           __Pyx_INCREF(__pyx_t_5);
@@ -7278,7 +7278,7 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
  *             else:
  *                 raise ValueError(f'Unknown command in session file: {cmd}')             # <<<<<<<<<<<<<<
  *     yield finalize_session(ans)
- * 
+ *
  */
       /*else*/ {
         __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_cur_scope->__pyx_v_cmd, __pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
@@ -7318,8 +7318,8 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
  *             else:
  *                 raise ValueError(f'Unknown command in session file: {cmd}')
  *     yield finalize_session(ans)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __pyx_pf_6smelly_7session_13parse_session_finalize_session(__pyx_cur_scope->__pyx_v_finalize_session, __pyx_cur_scope->__pyx_v_ans); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7336,8 +7336,8 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/session.py":138
- * 
- * 
+ *
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:             # <<<<<<<<<<<<<<
  *     def finalize_session(ans: Session) -> Session:
  *         from .tabs import SpecialWindow
@@ -7367,7 +7367,7 @@ static PyObject *__pyx_gb_6smelly_7session_4generator(__pyx_CoroutineObject *__p
 }
 
 /* "smelly/session.py":200
- * 
+ *
  * class PreReadSession(str):
  *     def __new__(cls, val: str, associated_environ: Mapping[str, str]) -> 'PreReadSession':             # <<<<<<<<<<<<<<
  *         ans: PreReadSession = str.__new__(cls, val)
@@ -7540,7 +7540,7 @@ static PyObject *__pyx_pf_6smelly_7session_14PreReadSession___new__(CYTHON_UNUSE
  *         ans.pre_read = True  # type: ignore
  *         ans.associated_environ = associated_environ  # type: ignore             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_ans, __pyx_n_s_associated_environ, __pyx_v_associated_environ) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
 
@@ -7548,8 +7548,8 @@ static PyObject *__pyx_pf_6smelly_7session_14PreReadSession___new__(CYTHON_UNUSE
  *         ans.pre_read = True  # type: ignore
  *         ans.associated_environ = associated_environ  # type: ignore
  *         return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -7557,7 +7557,7 @@ static PyObject *__pyx_pf_6smelly_7session_14PreReadSession___new__(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/session.py":200
- * 
+ *
  * class PreReadSession(str):
  *     def __new__(cls, val: str, associated_environ: Mapping[str, str]) -> 'PreReadSession':             # <<<<<<<<<<<<<<
  *         ans: PreReadSession = str.__new__(cls, val)
@@ -7581,8 +7581,8 @@ static PyObject *__pyx_pf_6smelly_7session_14PreReadSession___new__(CYTHON_UNUSE
 static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/session.py":207
- * 
- * 
+ *
+ *
  * def create_sessions(             # <<<<<<<<<<<<<<
  *     opts: Options,
  *     args: Optional[CLIOptions] = None,
@@ -7745,8 +7745,8 @@ static PyObject *__pyx_pw_6smelly_7session_6create_sessions(PyObject *__pyx_self
   __pyx_r = __pyx_pf_6smelly_7session_5create_sessions(__pyx_self, __pyx_v_opts, __pyx_v_args, __pyx_v_special_window, __pyx_v_cwd_from, __pyx_v_respect_cwd, __pyx_v_default_session);
 
   /* "smelly/session.py":207
- * 
- * 
+ *
+ *
  * def create_sessions(             # <<<<<<<<<<<<<<
  *     opts: Options,
  *     args: Optional[CLIOptions] = None,
@@ -8122,7 +8122,7 @@ static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__
                 __Pyx_GIVEREF(__pyx_t_4);
                 __Pyx_XGIVEREF(__pyx_t_5);
                 __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_4, __pyx_t_5);
-                __pyx_t_3 = 0; __pyx_t_4 = 0; __pyx_t_5 = 0; 
+                __pyx_t_3 = 0; __pyx_t_4 = 0; __pyx_t_5 = 0;
                 __PYX_ERR(0, 225, __pyx_L15_except_error)
               }
               __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -8374,7 +8374,7 @@ static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__
                   __Pyx_GIVEREF(__pyx_t_6);
                   __Pyx_XGIVEREF(__pyx_t_3);
                   __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_6, __pyx_t_3);
-                  __pyx_t_4 = 0; __pyx_t_6 = 0; __pyx_t_3 = 0; 
+                  __pyx_t_4 = 0; __pyx_t_6 = 0; __pyx_t_3 = 0;
                   __PYX_ERR(0, 231, __pyx_L39_except_error)
                 }
                 __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8811,7 +8811,7 @@ static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__
  *         if args and args.hold:
  *             cmd = [kitten_exe(), '__hold_till_enter__'] + cmd             # <<<<<<<<<<<<<<
  *         from smelly.tabs import SpecialWindow
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_kitten_exe); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 246, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -8859,7 +8859,7 @@ static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__
  *         if args and args.hold:
  *             cmd = [kitten_exe(), '__hold_till_enter__'] + cmd
  *         from smelly.tabs import SpecialWindow             # <<<<<<<<<<<<<<
- * 
+ *
  *         cwd: Optional[str] = args.directory if respect_cwd and args else None
  */
     __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
@@ -8880,7 +8880,7 @@ static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__
 
     /* "smelly/session.py":249
  *         from smelly.tabs import SpecialWindow
- * 
+ *
  *         cwd: Optional[str] = args.directory if respect_cwd and args else None             # <<<<<<<<<<<<<<
  *         special_window = SpecialWindow(cmd, cwd_from=cwd_from, cwd=cwd)
  *     ans.add_special_window(special_window)
@@ -8908,7 +8908,7 @@ static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__
     __pyx_t_5 = 0;
 
     /* "smelly/session.py":250
- * 
+ *
  *         cwd: Optional[str] = args.directory if respect_cwd and args else None
  *         special_window = SpecialWindow(cmd, cwd_from=cwd_from, cwd=cwd)             # <<<<<<<<<<<<<<
  *     ans.add_special_window(special_window)
@@ -8984,8 +8984,8 @@ static PyObject *__pyx_gb_6smelly_7session_7generator1(__pyx_CoroutineObject *__
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/session.py":207
- * 
- * 
+ *
+ *
  * def create_sessions(             # <<<<<<<<<<<<<<
  *     opts: Options,
  *     args: Optional[CLIOptions] = None,
@@ -9605,11 +9605,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__3);
 
   /* "smelly/session.py":139
- * 
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:
  *     def finalize_session(ans: Session) -> Session:             # <<<<<<<<<<<<<<
  *         from .tabs import SpecialWindow
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(3, __pyx_n_s_ans, __pyx_n_s_SpecialWindow, __pyx_n_s_t); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -9617,8 +9617,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_session_py, __pyx_n_s_finalize_session, 139, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 139, __pyx_L1_error)
 
   /* "smelly/session.py":25
- * 
- * 
+ *
+ *
  * def get_os_window_sizing_data(             # <<<<<<<<<<<<<<
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
  *     if session is None or session.os_window_size is None:
@@ -9632,7 +9632,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__12);
 
   /* "smelly/session.py":42
- * 
+ *
  * class WindowSpec:
  *     def __init__(             # <<<<<<<<<<<<<<
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
@@ -9655,7 +9655,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__15);
 
   /* "smelly/session.py":49
- * 
+ *
  * class Tab:
  *     def __init__(self, opts: Options, name: str):             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowSpec] = []
@@ -9667,7 +9667,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_session_py, __pyx_n_s_init, 49, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 49, __pyx_L1_error)
 
   /* "smelly/session.py":61
- * 
+ *
  * class Session:
  *     def __init__(self, default_title: Optional[str] = None):             # <<<<<<<<<<<<<<
  *         self.tabs: List[Tab] = []
@@ -9683,7 +9683,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":69
  *         self.focus_os_window: bool = False
- * 
+ *
  *     def add_tab(self, opts: Options, name: str = '') -> None:             # <<<<<<<<<<<<<<
  *         if self.tabs and not self.tabs[-1].windows:
  *             del self.tabs[-1]
@@ -9698,10 +9698,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":74
  *         self.tabs.append(Tab(opts, name))
- * 
+ *
  *     def set_next_title(self, title: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  */
   __pyx_tuple__24 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_title); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
@@ -9710,7 +9710,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":77
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  *     def set_layout(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         if val.partition(':')[0] not in all_layouts:
  *             raise ValueError(f'{val} is not a valid layout')
@@ -9722,7 +9722,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":82
  *         self.tabs[-1].layout = val
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, cmd: Union[None, str, List[str]],
  *             expand: Callable[[str],
@@ -9734,7 +9734,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":112
  *             t.pending_resize_spec = None
- * 
+ *
  *     def resize_window(self, args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *         s = resize_window('resize_window', shlex.join(args))[1]
  *         spec: ResizeSpec = s[0], s[1]
@@ -9746,10 +9746,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":121
  *             t.pending_resize_spec = spec
- * 
+ *
  *     def add_special_window(self, sw: 'SpecialWindowInstance') -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  */
   __pyx_tuple__32 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_sw); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
@@ -9758,7 +9758,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":124
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  *     def focus(self) -> None:             # <<<<<<<<<<<<<<
  *         self.active_tab_idx = max(0, len(self.tabs) - 1)
  *         self.tabs[-1].active_window_idx = max(0,
@@ -9770,7 +9770,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":129
  *                                               len(self.tabs[-1].windows) - 1)
- * 
+ *
  *     def set_enabled_layouts(self, raw: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:
@@ -9782,10 +9782,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/session.py":134
  *             self.tabs[-1].layout = self.tabs[-1].enabled_layouts[0]
- * 
+ *
  *     def set_cwd(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].cwd = val
- * 
+ *
  */
   __pyx_tuple__38 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_val); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
@@ -9793,8 +9793,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_session_py, __pyx_n_s_set_cwd, 134, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 134, __pyx_L1_error)
 
   /* "smelly/session.py":138
- * 
- * 
+ *
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:             # <<<<<<<<<<<<<<
  *     def finalize_session(ans: Session) -> Session:
  *         from .tabs import SpecialWindow
@@ -9808,7 +9808,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__41);
 
   /* "smelly/session.py":200
- * 
+ *
  * class PreReadSession(str):
  *     def __new__(cls, val: str, associated_environ: Mapping[str, str]) -> 'PreReadSession':             # <<<<<<<<<<<<<<
  *         ans: PreReadSession = str.__new__(cls, val)
@@ -9820,8 +9820,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_session_py, __pyx_n_s_new, 200, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 200, __pyx_L1_error)
 
   /* "smelly/session.py":207
- * 
- * 
+ *
+ *
  * def create_sessions(             # <<<<<<<<<<<<<<
  *     opts: Options,
  *     args: Optional[CLIOptions] = None,
@@ -10147,7 +10147,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import shlex
  * import sys
@@ -10158,7 +10158,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/session.py":5
- * 
+ *
  * import os
  * import shlex             # <<<<<<<<<<<<<<
  * import sys
@@ -10207,7 +10207,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from functools import partial             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Callable, Generator, Iterator, List, Mapping, Optional, Tuple, Union
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10227,7 +10227,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from functools import partial
  * from typing import TYPE_CHECKING, Callable, Generator, Iterator, List, Mapping, Optional, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .cli_stub import CLIOptions
  */
   __pyx_t_1 = PyList_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -10302,7 +10302,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":11
  * from typing import TYPE_CHECKING, Callable, Generator, Iterator, List, Mapping, Optional, Tuple, Union
- * 
+ *
  * from .cli_stub import CLIOptions             # <<<<<<<<<<<<<<
  * from .constants import kitten_exe
  * from .layout.interface import all_layouts
@@ -10322,7 +10322,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/session.py":12
- * 
+ *
  * from .cli_stub import CLIOptions
  * from .constants import kitten_exe             # <<<<<<<<<<<<<<
  * from .layout.interface import all_layouts
@@ -10459,7 +10459,7 @@ if (!__Pyx_RefNanny) {
  * from .os_window_size import WindowSize, WindowSizeData, WindowSizes
  * from .typing import SpecialWindowInstance             # <<<<<<<<<<<<<<
  * from .utils import expandvars, log_error, resolve_custom_file, resolved_shell
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10479,7 +10479,7 @@ if (!__Pyx_RefNanny) {
  * from .os_window_size import WindowSize, WindowSizeData, WindowSizes
  * from .typing import SpecialWindowInstance
  * from .utils import expandvars, log_error, resolve_custom_file, resolved_shell             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
@@ -10519,7 +10519,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":20
  * from .utils import expandvars, log_error, resolve_custom_file, resolved_shell
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .launch import LaunchSpec
  *     from .window import CwdRequest
@@ -10531,11 +10531,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/session.py":21
- * 
+ *
  * if TYPE_CHECKING:
  *     from .launch import LaunchSpec             # <<<<<<<<<<<<<<
  *     from .window import CwdRequest
- * 
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -10555,8 +10555,8 @@ if (!__Pyx_RefNanny) {
  * if TYPE_CHECKING:
  *     from .launch import LaunchSpec
  *     from .window import CwdRequest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -10574,7 +10574,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/session.py":20
  * from .utils import expandvars, log_error, resolve_custom_file, resolved_shell
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .launch import LaunchSpec
  *     from .window import CwdRequest
@@ -10582,8 +10582,8 @@ if (!__Pyx_RefNanny) {
   }
 
   /* "smelly/session.py":25
- * 
- * 
+ *
+ *
  * def get_os_window_sizing_data(             # <<<<<<<<<<<<<<
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
  *     if session is None or session.os_window_size is None:
@@ -10592,7 +10592,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/session.py":26
- * 
+ *
  * def get_os_window_sizing_data(
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:             # <<<<<<<<<<<<<<
  *     if session is None or session.os_window_size is None:
@@ -10615,8 +10615,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/session.py":25
- * 
- * 
+ *
+ *
  * def get_os_window_sizing_data(             # <<<<<<<<<<<<<<
  *         opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
  *     if session is None or session.os_window_size is None:
@@ -10630,11 +10630,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/session.py":38
- * 
- * 
+ *
+ *
  * ResizeSpec = Tuple[str, int]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Tuple); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -10654,8 +10654,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/session.py":41
- * 
- * 
+ *
+ *
  * class WindowSpec:             # <<<<<<<<<<<<<<
  *     def __init__(
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
@@ -10664,7 +10664,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/session.py":42
- * 
+ *
  * class WindowSpec:
  *     def __init__(             # <<<<<<<<<<<<<<
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
@@ -10689,7 +10689,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/session.py":42
- * 
+ *
  * class WindowSpec:
  *     def __init__(             # <<<<<<<<<<<<<<
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
@@ -10703,8 +10703,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/session.py":41
- * 
- * 
+ *
+ *
  * class WindowSpec:             # <<<<<<<<<<<<<<
  *     def __init__(
  *             self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
@@ -10716,8 +10716,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/session.py":48
- * 
- * 
+ *
+ *
  * class Tab:             # <<<<<<<<<<<<<<
  *     def __init__(self, opts: Options, name: str):
  *         self.windows: List[WindowSpec] = []
@@ -10726,7 +10726,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/session.py":49
- * 
+ *
  * class Tab:
  *     def __init__(self, opts: Options, name: str):             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowSpec] = []
@@ -10747,8 +10747,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/session.py":48
- * 
- * 
+ *
+ *
  * class Tab:             # <<<<<<<<<<<<<<
  *     def __init__(self, opts: Options, name: str):
  *         self.windows: List[WindowSpec] = []
@@ -10760,8 +10760,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/session.py":60
- * 
- * 
+ *
+ *
  * class Session:             # <<<<<<<<<<<<<<
  *     def __init__(self, default_title: Optional[str] = None):
  *         self.tabs: List[Tab] = []
@@ -10770,7 +10770,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/session.py":61
- * 
+ *
  * class Session:
  *     def __init__(self, default_title: Optional[str] = None):             # <<<<<<<<<<<<<<
  *         self.tabs: List[Tab] = []
@@ -10795,7 +10795,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":69
  *         self.focus_os_window: bool = False
- * 
+ *
  *     def add_tab(self, opts: Options, name: str = '') -> None:             # <<<<<<<<<<<<<<
  *         if self.tabs and not self.tabs[-1].windows:
  *             del self.tabs[-1]
@@ -10818,10 +10818,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":74
  *         self.tabs.append(Tab(opts, name))
- * 
+ *
  *     def set_next_title(self, title: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10836,7 +10836,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":77
  *         self.tabs[-1].next_title = title.strip()
- * 
+ *
  *     def set_layout(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         if val.partition(':')[0] not in all_layouts:
  *             raise ValueError(f'{val} is not a valid layout')
@@ -10854,7 +10854,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":82
  *         self.tabs[-1].layout = val
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, cmd: Union[None, str, List[str]],
  *             expand: Callable[[str],
@@ -10863,7 +10863,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/session.py":83
- * 
+ *
  *     def add_window(
  *             self, cmd: Union[None, str, List[str]],             # <<<<<<<<<<<<<<
  *             expand: Callable[[str],
@@ -10914,7 +10914,7 @@ if (!__Pyx_RefNanny) {
  *             expand: Callable[[str],
  *                              str] = lambda x: x) -> None:             # <<<<<<<<<<<<<<
  *         from .launch import parse_launch_args
- * 
+ *
  */
   __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -10944,13 +10944,13 @@ if (!__Pyx_RefNanny) {
  *             expand: Callable[[str],
  *                              str] = lambda x: x) -> None:             # <<<<<<<<<<<<<<
  *         from .launch import parse_launch_args
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
 
   /* "smelly/session.py":82
  *         self.tabs[-1].layout = val
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, cmd: Union[None, str, List[str]],
  *             expand: Callable[[str],
@@ -10964,7 +10964,7 @@ if (!__Pyx_RefNanny) {
  *             expand: Callable[[str],
  *                              str] = lambda x: x) -> None:             # <<<<<<<<<<<<<<
  *         from .launch import parse_launch_args
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6smelly_7session_8lambda, 0, __pyx_n_s_Session_add_window_locals_lambda, NULL, __pyx_n_s_smelly_session, __pyx_d, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -10979,7 +10979,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":112
  *             t.pending_resize_spec = None
- * 
+ *
  *     def resize_window(self, args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *         s = resize_window('resize_window', shlex.join(args))[1]
  *         spec: ResizeSpec = s[0], s[1]
@@ -11003,10 +11003,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":121
  *             t.pending_resize_spec = spec
- * 
+ *
  *     def add_special_window(self, sw: 'SpecialWindowInstance') -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -11021,7 +11021,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":124
  *         self.tabs[-1].windows.append(WindowSpec(sw))
- * 
+ *
  *     def focus(self) -> None:             # <<<<<<<<<<<<<<
  *         self.active_tab_idx = max(0, len(self.tabs) - 1)
  *         self.tabs[-1].active_window_idx = max(0,
@@ -11038,7 +11038,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":129
  *                                               len(self.tabs[-1].windows) - 1)
- * 
+ *
  *     def set_enabled_layouts(self, raw: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].enabled_layouts = to_layout_names(raw)
  *         if self.tabs[-1].layout not in self.tabs[-1].enabled_layouts:
@@ -11056,10 +11056,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/session.py":134
  *             self.tabs[-1].layout = self.tabs[-1].enabled_layouts[0]
- * 
+ *
  *     def set_cwd(self, val: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tabs[-1].cwd = val
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -11073,8 +11073,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/session.py":60
- * 
- * 
+ *
+ *
  * class Session:             # <<<<<<<<<<<<<<
  *     def __init__(self, default_title: Optional[str] = None):
  *         self.tabs: List[Tab] = []
@@ -11086,8 +11086,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/session.py":138
- * 
- * 
+ *
+ *
  * def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:             # <<<<<<<<<<<<<<
  *     def finalize_session(ans: Session) -> Session:
  *         from .tabs import SpecialWindow
@@ -11151,8 +11151,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/session.py":199
- * 
- * 
+ *
+ *
  * class PreReadSession(str):             # <<<<<<<<<<<<<<
  *     def __new__(cls, val: str, associated_environ: Mapping[str, str]) -> 'PreReadSession':
  *         ans: PreReadSession = str.__new__(cls, val)
@@ -11168,7 +11168,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/session.py":200
- * 
+ *
  * class PreReadSession(str):
  *     def __new__(cls, val: str, associated_environ: Mapping[str, str]) -> 'PreReadSession':             # <<<<<<<<<<<<<<
  *         ans: PreReadSession = str.__new__(cls, val)
@@ -11202,8 +11202,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/session.py":199
- * 
- * 
+ *
+ *
  * class PreReadSession(str):             # <<<<<<<<<<<<<<
  *     def __new__(cls, val: str, associated_environ: Mapping[str, str]) -> 'PreReadSession':
  *         ans: PreReadSession = str.__new__(cls, val)
@@ -11217,8 +11217,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/session.py":207
- * 
- * 
+ *
+ *
  * def create_sessions(             # <<<<<<<<<<<<<<
  *     opts: Options,
  *     args: Optional[CLIOptions] = None,
@@ -11227,7 +11227,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/session.py":208
- * 
+ *
  * def create_sessions(
  *     opts: Options,             # <<<<<<<<<<<<<<
  *     args: Optional[CLIOptions] = None,
@@ -11329,8 +11329,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/session.py":207
- * 
- * 
+ *
+ *
  * def create_sessions(             # <<<<<<<<<<<<<<
  *     opts: Options,
  *     args: Optional[CLIOptions] = None,
@@ -11346,7 +11346,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/session.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12777,8 +12777,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

@@ -1436,7 +1436,7 @@ static PyObject *__pyx_codeobj__4;
 /* Late includes */
 
 /* "smelly_tests/utmp.py":9
- * 
+ *
  * class UTMPTest(BaseTest):
  *     def test_num_users(self):             # <<<<<<<<<<<<<<
  *         # who is the control
@@ -1742,7 +1742,7 @@ static PyObject *__pyx_pf_12smelly_tests_4utmp_8UTMPTest_test_num_users(CYTHON_U
   }
 
   /* "smelly_tests/utmp.py":9
- * 
+ *
  * class UTMPTest(BaseTest):
  *     def test_num_users(self):             # <<<<<<<<<<<<<<
  *         # who is the control
@@ -1857,7 +1857,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly_tests/utmp.py":9
- * 
+ *
  * class UTMPTest(BaseTest):
  *     def test_num_users(self):             # <<<<<<<<<<<<<<
  *         # who is the control
@@ -2150,7 +2150,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/utmp.py":1
  * import subprocess             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import num_users
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -2160,9 +2160,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/utmp.py":3
  * import subprocess
- * 
+ *
  * from smelly.fast_data_types import num_users             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
@@ -2181,10 +2181,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/utmp.py":5
  * from smelly.fast_data_types import num_users
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2201,8 +2201,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/utmp.py":8
- * 
- * 
+ *
+ *
  * class UTMPTest(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_num_users(self):
  *         # who is the control
@@ -2220,7 +2220,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/utmp.py":9
- * 
+ *
  * class UTMPTest(BaseTest):
  *     def test_num_users(self):             # <<<<<<<<<<<<<<
  *         # who is the control
@@ -2232,8 +2232,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/utmp.py":8
- * 
- * 
+ *
+ *
  * class UTMPTest(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_num_users(self):
  *         # who is the control
@@ -2248,7 +2248,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/utmp.py":1
  * import subprocess             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import num_users
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)

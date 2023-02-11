@@ -969,8 +969,8 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_6smelly_8cli_stub___pyx_scope_struct__generate_stub;
 
 /* "smelly/cli_stub.py":19
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from .cli import as_type_stub, parse_option_spec
  *     from .conf.utils import save_type_stub
@@ -1624,8 +1624,8 @@ static PyObject *__pyx_codeobj__6;
 /* Late includes */
 
 /* "smelly/cli_stub.py":19
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from .cli import as_type_stub, parse_option_spec
  *     from .conf.utils import save_type_stub
@@ -1647,7 +1647,7 @@ static PyObject *__pyx_pw_6smelly_8cli_stub_1generate_stub(PyObject *__pyx_self,
 
 /* "smelly/cli_stub.py":25
  *     text = 'import typing\n\n\n'
- * 
+ *
  *     def do(             # <<<<<<<<<<<<<<
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
  *         nonlocal text
@@ -1671,7 +1671,7 @@ static PyObject *__pyx_pw_6smelly_8cli_stub_13generate_stub_1do(PyObject *__pyx_
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/cli_stub.py":26
- * 
+ *
  *     def do(
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):             # <<<<<<<<<<<<<<
  *         nonlocal text
@@ -1745,7 +1745,7 @@ static PyObject *__pyx_pw_6smelly_8cli_stub_13generate_stub_1do(PyObject *__pyx_
 
   /* "smelly/cli_stub.py":25
  *     text = 'import typing\n\n\n'
- * 
+ *
  *     def do(             # <<<<<<<<<<<<<<
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
  *         nonlocal text
@@ -1780,7 +1780,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_13generate_stub_do(PyObject *__pyx_s
  *         nonlocal text
  *         text += as_type_stub(*parse_option_spec(otext),             # <<<<<<<<<<<<<<
  *                              class_name=cls, extra_fields=extra_fields)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_text)) { __Pyx_RaiseClosureNameError("text"); __PYX_ERR(0, 28, __pyx_L1_error) }
   if (unlikely(!__pyx_cur_scope->__pyx_v_as_type_stub)) { __Pyx_RaiseClosureNameError("as_type_stub"); __PYX_ERR(0, 28, __pyx_L1_error) }
@@ -1809,7 +1809,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_13generate_stub_do(PyObject *__pyx_s
  *         nonlocal text
  *         text += as_type_stub(*parse_option_spec(otext),
  *                              class_name=cls, extra_fields=extra_fields)             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(extra_fields=('args: typing.List[str]',))
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
@@ -1822,7 +1822,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_13generate_stub_do(PyObject *__pyx_s
  *         nonlocal text
  *         text += as_type_stub(*parse_option_spec(otext),             # <<<<<<<<<<<<<<
  *                              class_name=cls, extra_fields=extra_fields)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_Call(__pyx_cur_scope->__pyx_v_as_type_stub, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -1838,7 +1838,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_13generate_stub_do(PyObject *__pyx_s
 
   /* "smelly/cli_stub.py":25
  *     text = 'import typing\n\n\n'
- * 
+ *
  *     def do(             # <<<<<<<<<<<<<<
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
  *         nonlocal text
@@ -1860,8 +1860,8 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_13generate_stub_do(PyObject *__pyx_s
 }
 
 /* "smelly/cli_stub.py":19
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from .cli import as_type_stub, parse_option_spec
  *     from .conf.utils import save_type_stub
@@ -1904,11 +1904,11 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
   }
 
   /* "smelly/cli_stub.py":20
- * 
+ *
  * def generate_stub() -> None:
  *     from .cli import as_type_stub, parse_option_spec             # <<<<<<<<<<<<<<
  *     from .conf.utils import save_type_stub
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1939,7 +1939,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
  * def generate_stub() -> None:
  *     from .cli import as_type_stub, parse_option_spec
  *     from .conf.utils import save_type_stub             # <<<<<<<<<<<<<<
- * 
+ *
  *     text = 'import typing\n\n\n'
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
@@ -1959,9 +1959,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":23
  *     from .conf.utils import save_type_stub
- * 
+ *
  *     text = 'import typing\n\n\n'             # <<<<<<<<<<<<<<
- * 
+ *
  *     def do(
  */
   __Pyx_INCREF(__pyx_kp_s_import_typing);
@@ -1970,7 +1970,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":25
  *     text = 'import typing\n\n\n'
- * 
+ *
  *     def do(             # <<<<<<<<<<<<<<
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
  *         nonlocal text
@@ -1980,7 +1980,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_cls, __pyx_n_u_str) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
 
   /* "smelly/cli_stub.py":26
- * 
+ *
  *     def do(
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):             # <<<<<<<<<<<<<<
  *         nonlocal text
@@ -1996,7 +1996,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":25
  *     text = 'import typing\n\n\n'
- * 
+ *
  *     def do(             # <<<<<<<<<<<<<<
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
  *         nonlocal text
@@ -2011,9 +2011,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":31
  *                              class_name=cls, extra_fields=extra_fields)
- * 
+ *
  *     do(extra_fields=('args: typing.List[str]',))             # <<<<<<<<<<<<<<
- * 
+ *
  *     from .launch import options_spec
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
@@ -2026,9 +2026,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":33
  *     do(extra_fields=('args: typing.List[str]',))
- * 
+ *
  *     from .launch import options_spec             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(options_spec(), 'LaunchCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
@@ -2048,9 +2048,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":35
  *     from .launch import options_spec
- * 
+ *
  *     do(options_spec(), 'LaunchCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from .remote_control import global_options_spec
  */
   __Pyx_INCREF(__pyx_v_options_spec);
@@ -2084,9 +2084,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":37
  *     do(options_spec(), 'LaunchCLIOptions')
- * 
+ *
  *     from .remote_control import global_options_spec             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(global_options_spec(), 'RCOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 37, __pyx_L1_error)
@@ -2106,9 +2106,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":39
  *     from .remote_control import global_options_spec
- * 
+ *
  *     do(global_options_spec(), 'RCOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.ask.main import option_text
  */
   __Pyx_INCREF(__pyx_v_global_options_spec);
@@ -2142,9 +2142,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":41
  *     do(global_options_spec(), 'RCOptions')
- * 
+ *
  *     from wellies.ask.main import option_text             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(option_text(), 'AskCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
@@ -2164,9 +2164,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":43
  *     from wellies.ask.main import option_text
- * 
+ *
  *     do(option_text(), 'AskCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.remote_file.main import option_text
  */
   __Pyx_INCREF(__pyx_v_option_text);
@@ -2200,9 +2200,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":45
  *     do(option_text(), 'AskCLIOptions')
- * 
+ *
  *     from wellies.remote_file.main import option_text             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(option_text(), 'RemoteFileCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -2222,9 +2222,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":47
  *     from wellies.remote_file.main import option_text
- * 
+ *
  *     do(option_text(), 'RemoteFileCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.clipboard.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_option_text);
@@ -2258,9 +2258,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":49
  *     do(option_text(), 'RemoteFileCLIOptions')
- * 
+ *
  *     from wellies.clipboard.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'ClipboardCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
@@ -2280,9 +2280,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":51
  *     from wellies.clipboard.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'ClipboardCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.show_key.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2316,9 +2316,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":53
  *     do(OPTIONS(), 'ClipboardCLIOptions')
- * 
+ *
  *     from wellies.show_key.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'ShowKeyCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
@@ -2338,9 +2338,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":55
  *     from wellies.show_key.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'ShowKeyCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.diff.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2374,9 +2374,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":57
  *     do(OPTIONS(), 'ShowKeyCLIOptions')
- * 
+ *
  *     from wellies.diff.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'DiffCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -2396,9 +2396,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":59
  *     from wellies.diff.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'DiffCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.hints.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2432,9 +2432,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":61
  *     do(OPTIONS(), 'DiffCLIOptions')
- * 
+ *
  *     from wellies.hints.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'HintsCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
@@ -2454,9 +2454,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":63
  *     from wellies.hints.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'HintsCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.broadcast.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2490,9 +2490,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":65
  *     do(OPTIONS(), 'HintsCLIOptions')
- * 
+ *
  *     from wellies.broadcast.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'BroadcastCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
@@ -2512,9 +2512,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":67
  *     from wellies.broadcast.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'BroadcastCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.icat.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2548,9 +2548,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":69
  *     do(OPTIONS(), 'BroadcastCLIOptions')
- * 
+ *
  *     from wellies.icat.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS, 'IcatCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
@@ -2570,9 +2570,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":71
  *     from wellies.icat.main import OPTIONS
- * 
+ *
  *     do(OPTIONS, 'IcatCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.query_terminal.main import options_spec
  */
   __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
@@ -2590,9 +2590,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":73
  *     do(OPTIONS, 'IcatCLIOptions')
- * 
+ *
  *     from wellies.query_terminal.main import options_spec             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(options_spec(), 'QueryTerminalCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 73, __pyx_L1_error)
@@ -2612,9 +2612,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":75
  *     from wellies.query_terminal.main import options_spec
- * 
+ *
  *     do(options_spec(), 'QueryTerminalCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.panel.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_options_spec);
@@ -2648,9 +2648,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":77
  *     do(options_spec(), 'QueryTerminalCLIOptions')
- * 
+ *
  *     from wellies.panel.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'PanelCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
@@ -2670,9 +2670,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":79
  *     from wellies.panel.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'PanelCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.resize_window.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2706,9 +2706,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":81
  *     do(OPTIONS(), 'PanelCLIOptions')
- * 
+ *
  *     from wellies.resize_window.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'ResizeCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
@@ -2728,9 +2728,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":83
  *     from wellies.resize_window.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'ResizeCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.show_error.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2764,9 +2764,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":85
  *     do(OPTIONS(), 'ResizeCLIOptions')
- * 
+ *
  *     from wellies.show_error.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'ErrorCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
@@ -2786,9 +2786,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":87
  *     from wellies.show_error.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'ErrorCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.unicode_input.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2822,9 +2822,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":89
  *     do(OPTIONS(), 'ErrorCLIOptions')
- * 
+ *
  *     from wellies.unicode_input.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'UnicodeCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
@@ -2844,9 +2844,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":91
  *     from wellies.unicode_input.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'UnicodeCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.themes.main import OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2880,9 +2880,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":93
  *     do(OPTIONS(), 'UnicodeCLIOptions')
- * 
+ *
  *     from wellies.themes.main import OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'ThemesCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
@@ -2902,9 +2902,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":95
  *     from wellies.themes.main import OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'ThemesCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.transfer.main import option_text as OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2938,9 +2938,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":97
  *     do(OPTIONS(), 'ThemesCLIOptions')
- * 
+ *
  *     from wellies.transfer.main import option_text as OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'TransferCLIOptions')
  */
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
@@ -2960,9 +2960,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":99
  *     from wellies.transfer.main import option_text as OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'TransferCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.ssh.copy import option_text as OPTIONS
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -2996,9 +2996,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":101
  *     do(OPTIONS(), 'TransferCLIOptions')
- * 
+ *
  *     from wellies.ssh.copy import option_text as OPTIONS             # <<<<<<<<<<<<<<
- * 
+ *
  *     do(OPTIONS(), 'CopyCLIOptions')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
@@ -3018,9 +3018,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":103
  *     from wellies.ssh.copy import option_text as OPTIONS
- * 
+ *
  *     do(OPTIONS(), 'CopyCLIOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     from smelly.rc.base import all_command_names, command_for_name
  */
   __Pyx_INCREF(__pyx_v_OPTIONS);
@@ -3054,9 +3054,9 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":105
  *     do(OPTIONS(), 'CopyCLIOptions')
- * 
+ *
  *     from smelly.rc.base import all_command_names, command_for_name             # <<<<<<<<<<<<<<
- * 
+ *
  *     for cmd_name in all_command_names():
  */
   __pyx_t_3 = PyList_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
@@ -3084,7 +3084,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":107
  *     from smelly.rc.base import all_command_names, command_for_name
- * 
+ *
  *     for cmd_name in all_command_names():             # <<<<<<<<<<<<<<
  *         cmd = command_for_name(cmd_name)
  *         if cmd.options_spec:
@@ -3149,7 +3149,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
     __pyx_t_1 = 0;
 
     /* "smelly/cli_stub.py":108
- * 
+ *
  *     for cmd_name in all_command_names():
  *         cmd = command_for_name(cmd_name)             # <<<<<<<<<<<<<<
  *         if cmd.options_spec:
@@ -3179,7 +3179,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
  *         cmd = command_for_name(cmd_name)
  *         if cmd.options_spec:             # <<<<<<<<<<<<<<
  *             do(cmd.options_spec, f'{cmd.__class__.__name__}RCOptions')
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_cmd, __pyx_n_s_options_spec); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3191,7 +3191,7 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
  *         cmd = command_for_name(cmd_name)
  *         if cmd.options_spec:
  *             do(cmd.options_spec, f'{cmd.__class__.__name__}RCOptions')             # <<<<<<<<<<<<<<
- * 
+ *
  *     save_type_stub(text, __file__)
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_cmd, __pyx_n_s_options_spec); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
@@ -3225,13 +3225,13 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
  *         cmd = command_for_name(cmd_name)
  *         if cmd.options_spec:             # <<<<<<<<<<<<<<
  *             do(cmd.options_spec, f'{cmd.__class__.__name__}RCOptions')
- * 
+ *
  */
     }
 
     /* "smelly/cli_stub.py":107
  *     from smelly.rc.base import all_command_names, command_for_name
- * 
+ *
  *     for cmd_name in all_command_names():             # <<<<<<<<<<<<<<
  *         cmd = command_for_name(cmd_name)
  *         if cmd.options_spec:
@@ -3241,10 +3241,10 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
 
   /* "smelly/cli_stub.py":112
  *             do(cmd.options_spec, f'{cmd.__class__.__name__}RCOptions')
- * 
+ *
  *     save_type_stub(text, __file__)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_file); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -3299,8 +3299,8 @@ static PyObject *__pyx_pf_6smelly_8cli_stub_generate_stub(CYTHON_UNUSED PyObject
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/cli_stub.py":19
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from .cli import as_type_stub, parse_option_spec
  *     from .conf.utils import save_type_stub
@@ -3609,7 +3609,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/cli_stub.py":25
  *     text = 'import typing\n\n\n'
- * 
+ *
  *     def do(             # <<<<<<<<<<<<<<
  *             otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
  *         nonlocal text
@@ -3624,9 +3624,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/cli_stub.py":31
  *                              class_name=cls, extra_fields=extra_fields)
- * 
+ *
  *     do(extra_fields=('args: typing.List[str]',))             # <<<<<<<<<<<<<<
- * 
+ *
  *     from .launch import options_spec
  */
   __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_args_typing_List_str); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 31, __pyx_L1_error)
@@ -3634,8 +3634,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly/cli_stub.py":19
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from .cli import as_type_stub, parse_option_spec
  *     from .conf.utils import save_type_stub
@@ -3940,11 +3940,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/cli_stub.py":5
- * 
- * 
+ *
+ *
  * from typing import Sequence             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3961,11 +3961,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/cli_stub.py":8
- * 
- * 
+ *
+ *
  * class CLIOptions:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_CLIOptions, __pyx_n_s_CLIOptions, (PyObject *) NULL, __pyx_n_s_smelly_cli_stub, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3976,8 +3976,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/cli_stub.py":12
- * 
- * 
+ *
+ *
  * LaunchCLIOptions = AskCLIOptions = ClipboardCLIOptions = DiffCLIOptions = CLIOptions             # <<<<<<<<<<<<<<
  * HintsCLIOptions = IcatCLIOptions = PanelCLIOptions = ResizeCLIOptions = CLIOptions
  * ErrorCLIOptions = UnicodeCLIOptions = RCOptions = RemoteFileCLIOptions = CLIOptions
@@ -3991,7 +3991,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/cli_stub.py":13
- * 
+ *
  * LaunchCLIOptions = AskCLIOptions = ClipboardCLIOptions = DiffCLIOptions = CLIOptions
  * HintsCLIOptions = IcatCLIOptions = PanelCLIOptions = ResizeCLIOptions = CLIOptions             # <<<<<<<<<<<<<<
  * ErrorCLIOptions = UnicodeCLIOptions = RCOptions = RemoteFileCLIOptions = CLIOptions
@@ -4025,7 +4025,7 @@ if (!__Pyx_RefNanny) {
  * ErrorCLIOptions = UnicodeCLIOptions = RCOptions = RemoteFileCLIOptions = CLIOptions
  * QueryTerminalCLIOptions = BroadcastCLIOptions = ShowKeyCLIOptions = CLIOptions             # <<<<<<<<<<<<<<
  * ThemesCLIOptions = TransferCLIOptions = CopyCLIOptions = CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_CLIOptions); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4038,8 +4038,8 @@ if (!__Pyx_RefNanny) {
  * ErrorCLIOptions = UnicodeCLIOptions = RCOptions = RemoteFileCLIOptions = CLIOptions
  * QueryTerminalCLIOptions = BroadcastCLIOptions = ShowKeyCLIOptions = CLIOptions
  * ThemesCLIOptions = TransferCLIOptions = CopyCLIOptions = CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_CLIOptions); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4049,8 +4049,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/cli_stub.py":19
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from .cli import as_type_stub, parse_option_spec
  *     from .conf.utils import save_type_stub
@@ -4066,11 +4066,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/cli_stub.py":115
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     import subprocess
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4079,10 +4079,10 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/cli_stub.py":116
- * 
+ *
  * if __name__ == '__main__':
  *     import subprocess             # <<<<<<<<<<<<<<
- * 
+ *
  *     subprocess.Popen(
  */
     __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
@@ -4092,7 +4092,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/cli_stub.py":118
  *     import subprocess
- * 
+ *
  *     subprocess.Popen(             # <<<<<<<<<<<<<<
  *         ['smelly', '+runpy',
  *          'from smelly.cli_stub import generate_stub; generate_stub()'])
@@ -4104,7 +4104,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/cli_stub.py":119
- * 
+ *
  *     subprocess.Popen(
  *         ['smelly', '+runpy',             # <<<<<<<<<<<<<<
  *          'from smelly.cli_stub import generate_stub; generate_stub()'])
@@ -4123,7 +4123,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/cli_stub.py":118
  *     import subprocess
- * 
+ *
  *     subprocess.Popen(             # <<<<<<<<<<<<<<
  *         ['smelly', '+runpy',
  *          'from smelly.cli_stub import generate_stub; generate_stub()'])
@@ -4135,18 +4135,18 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "smelly/cli_stub.py":115
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     import subprocess
- * 
+ *
  */
   }
 
   /* "smelly/cli_stub.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);

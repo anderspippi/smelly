@@ -1581,7 +1581,7 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/disable_ligatures.py":41
  *     args = RemoteCommand.Args(spec='STRATEGY', count=1, json_field='strategy')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('You must specify the STRATEGY for disabling ligatures, must be one of' ' never, always or cursor')
@@ -1690,7 +1690,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_mes
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/disable_ligatures.py":42
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if not args:             # <<<<<<<<<<<<<<
  *             self.fatal('You must specify the STRATEGY for disabling ligatures, must be one of' ' never, always or cursor')
@@ -1727,7 +1727,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_mes
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/disable_ligatures.py":42
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if not args:             # <<<<<<<<<<<<<<
  *             self.fatal('You must specify the STRATEGY for disabling ligatures, must be one of' ' never, always or cursor')
@@ -1865,7 +1865,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_mes
  *             'match_tab': opts.match_tab,
  *             'all': opts.all,             # <<<<<<<<<<<<<<
  *         }
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_all); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -1877,7 +1877,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_mes
 
   /* "smelly/rc/disable_ligatures.py":41
  *     args = RemoteCommand.Args(spec='STRATEGY', count=1, json_field='strategy')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('You must specify the STRATEGY for disabling ligatures, must be one of' ' never, always or cursor')
@@ -1900,7 +1900,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_mes
 
 /* "smelly/rc/disable_ligatures.py":54
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         boss.disable_ligatures_in(windows, payload_get('strategy'))
@@ -2009,7 +2009,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_2re
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/disable_ligatures.py":55
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         windows = self.windows_for_payload(boss, window, payload_get)             # <<<<<<<<<<<<<<
  *         boss.disable_ligatures_in(windows, payload_get('strategy'))
@@ -2073,7 +2073,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_2re
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         boss.disable_ligatures_in(windows, payload_get('strategy'))             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_boss, __pyx_n_s_disable_ligatures_in); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2146,8 +2146,8 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_2re
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         boss.disable_ligatures_in(windows, payload_get('strategy'))
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2155,7 +2155,7 @@ static PyObject *__pyx_pf_6smelly_2rc_17disable_ligatures_16DisableLigatures_2re
 
   /* "smelly/rc/disable_ligatures.py":54
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         boss.disable_ligatures_in(windows, payload_get('strategy'))
@@ -2320,7 +2320,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/disable_ligatures.py":41
  *     args = RemoteCommand.Args(spec='STRATEGY', count=1, json_field='strategy')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('You must specify the STRATEGY for disabling ligatures, must be one of' ' never, always or cursor')
@@ -2332,7 +2332,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/disable_ligatures.py":54
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         boss.disable_ligatures_in(windows, payload_get('strategy'))
@@ -2628,10 +2628,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/disable_ligatures.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2657,9 +2657,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/disable_ligatures.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2741,10 +2741,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/disable_ligatures.py":9
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import DisableLigaturesRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2753,11 +2753,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/disable_ligatures.py":10
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import DisableLigaturesRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2775,16 +2775,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/disable_ligatures.py":9
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import DisableLigaturesRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/disable_ligatures.py":13
- * 
- * 
+ *
+ *
  * class DisableLigatures(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     strategy+/choices.never.always.cursor: One of :code:`never`, :code:`always` or :code:`cursor`
@@ -2802,7 +2802,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/disable_ligatures.py":14
- * 
+ *
  * class DisableLigatures(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     strategy+/choices.never.always.cursor: One of :code:`never`, :code:`always` or :code:`cursor`
@@ -2813,7 +2813,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/disable_ligatures.py":21
  *     '''
- * 
+ *
  *     short_desc = 'Control ligature rendering'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Control ligature rendering for the specified windows/tabs (defaults to active window). The :italic:`STRATEGY`'
@@ -2830,7 +2830,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_desc, __pyx_kp_s_Control_ligature_rendering_for_t) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "smelly/rc/disable_ligatures.py":34
- * 
+ *
  * '''
  *         + '\n\n'             # <<<<<<<<<<<<<<
  *         + MATCH_WINDOW_OPTION
@@ -2890,7 +2890,7 @@ if (!__Pyx_RefNanny) {
  *         + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
  *     )
  *     args = RemoteCommand.Args(spec='STRATEGY', count=1, json_field='strategy')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -2912,7 +2912,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/disable_ligatures.py":41
  *     args = RemoteCommand.Args(spec='STRATEGY', count=1, json_field='strategy')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('You must specify the STRATEGY for disabling ligatures, must be one of' ' never, always or cursor')
@@ -2941,7 +2941,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/disable_ligatures.py":54
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         boss.disable_ligatures_in(windows, payload_get('strategy'))
@@ -2978,8 +2978,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/disable_ligatures.py":13
- * 
- * 
+ *
+ *
  * class DisableLigatures(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     strategy+/choices.never.always.cursor: One of :code:`never`, :code:`always` or :code:`cursor`
@@ -2993,8 +2993,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/disable_ligatures.py":63
- * 
- * 
+ *
+ *
  * disable_ligatures = DisableLigatures()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DisableLigatures); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -3008,7 +3008,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/disable_ligatures.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

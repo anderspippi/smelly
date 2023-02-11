@@ -976,7 +976,7 @@ struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct_6_genexpr;
 
 /* "smelly/rc/send_text.py":119
  *     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         limit = 1024
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
@@ -991,7 +991,7 @@ struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct__message_to_smelly {
 
 /* "smelly/rc/send_text.py":123
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
- * 
+ *
  *         def pipe() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             if sys.stdin.isatty():
  *                 ret['exclude_active'] = True
@@ -1013,7 +1013,7 @@ struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct_1_pipe {
 
 /* "smelly/rc/send_text.py":150
  *                     yield ret
- * 
+ *
  *         def chunks(text: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             data = parse_send_text_bytes(text)
  *             while data:
@@ -1029,7 +1029,7 @@ struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct_2_chunks {
 
 /* "smelly/rc/send_text.py":158
  *                 data = data[limit:]
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -1049,7 +1049,7 @@ struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct_3_file_pipe {
 
 /* "smelly/rc/send_text.py":177
  *         sources.append(chunks(text))
- * 
+ *
  *         def chain() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             for src in sources:
  *                 yield from src
@@ -1065,7 +1065,7 @@ struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct_4_chain {
 
 /* "smelly/rc/send_text.py":183
  *         return chain()
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         sid = payload_get('session_id', '')
  *         if payload_get('all'):
@@ -1083,7 +1083,7 @@ struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct_5_response_from_smell
  *             raise TypeError(f'Invalid encoding for send-text data: {encoding}')
  *         exclude_active = payload_get('exclude_active')
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def create_or_update_session() -> Session:
  */
 struct __pyx_obj_6smelly_2rc_9send_text___pyx_scope_struct_6_genexpr {
@@ -2270,7 +2270,7 @@ static PyObject *__pyx_codeobj__33;
 
 /* "smelly/rc/send_text.py":36
  *     window_ids: Set[int]
- * 
+ *
  *     def __init__(self, id: str):             # <<<<<<<<<<<<<<
  *         self.id = id
  *         self.window_ids = set()
@@ -2356,11 +2356,11 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_7Session___init__(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/rc/send_text.py":37
- * 
+ *
  *     def __init__(self, id: str):
  *         self.id = id             # <<<<<<<<<<<<<<
  *         self.window_ids = set()
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_id, __pyx_v_id) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
 
@@ -2368,8 +2368,8 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_7Session___init__(CYTHON_UNUSED
  *     def __init__(self, id: str):
  *         self.id = id
  *         self.window_ids = set()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PySet_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2378,7 +2378,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_7Session___init__(CYTHON_UNUSED
 
   /* "smelly/rc/send_text.py":36
  *     window_ids: Set[int]
- * 
+ *
  *     def __init__(self, id: str):             # <<<<<<<<<<<<<<
  *         self.id = id
  *         self.window_ids = set()
@@ -2398,11 +2398,11 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_7Session___init__(CYTHON_UNUSED
 }
 
 /* "smelly/rc/send_text.py":45
- * 
+ *
  * class SessionAction:
  *     def __init__(self, sid: str):             # <<<<<<<<<<<<<<
  *         self.sid = sid
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2487,17 +2487,17 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_13SessionAction___init__(CYTHON
  * class SessionAction:
  *     def __init__(self, sid: str):
  *         self.sid = sid             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_sid, __pyx_v_sid) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":45
- * 
+ *
  * class SessionAction:
  *     def __init__(self, sid: str):             # <<<<<<<<<<<<<<
  *         self.sid = sid
- * 
+ *
  */
 
   /* function exit code */
@@ -2513,7 +2513,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_13SessionAction___init__(CYTHON
 }
 
 /* "smelly/rc/send_text.py":50
- * 
+ *
  * class ClearSession(SessionAction):
  *     def __call__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.pop(self.sid, None)
@@ -2799,7 +2799,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_12ClearSession___call__(CYTHON_
  *                 qw = boss.window_id_map.get(wid)
  *                 if qw is not None:             # <<<<<<<<<<<<<<
  *                     qw.screen.render_unfocused_cursor = 0
- * 
+ *
  */
       __pyx_t_8 = (__pyx_v_qw != Py_None);
       __pyx_t_7 = (__pyx_t_8 != 0);
@@ -2809,8 +2809,8 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_12ClearSession___call__(CYTHON_
  *                 qw = boss.window_id_map.get(wid)
  *                 if qw is not None:
  *                     qw.screen.render_unfocused_cursor = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_qw, __pyx_n_s_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
@@ -2822,7 +2822,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_12ClearSession___call__(CYTHON_
  *                 qw = boss.window_id_map.get(wid)
  *                 if qw is not None:             # <<<<<<<<<<<<<<
  *                     qw.screen.render_unfocused_cursor = 0
- * 
+ *
  */
       }
 
@@ -2846,7 +2846,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_12ClearSession___call__(CYTHON_
   }
 
   /* "smelly/rc/send_text.py":50
- * 
+ *
  * class ClearSession(SessionAction):
  *     def __call__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.pop(self.sid, None)
@@ -2875,7 +2875,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_12ClearSession___call__(CYTHON_
 }
 
 /* "smelly/rc/send_text.py":61
- * 
+ *
  * class FocusChangedSession(SessionAction):
  *     def __call__(self, window: Window, focused: bool) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.get(self.sid)
@@ -3149,7 +3149,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_19FocusChangedSession___call__(
  *                 qw = boss.window_id_map.get(wid)
  *                 if qw is not None:             # <<<<<<<<<<<<<<
  *                     qw.screen.render_unfocused_cursor = val
- * 
+ *
  */
       __pyx_t_6 = (__pyx_v_qw != Py_None);
       __pyx_t_5 = (__pyx_t_6 != 0);
@@ -3159,8 +3159,8 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_19FocusChangedSession___call__(
  *                 qw = boss.window_id_map.get(wid)
  *                 if qw is not None:
  *                     qw.screen.render_unfocused_cursor = val             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_qw, __pyx_n_s_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
@@ -3172,7 +3172,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_19FocusChangedSession___call__(
  *                 qw = boss.window_id_map.get(wid)
  *                 if qw is not None:             # <<<<<<<<<<<<<<
  *                     qw.screen.render_unfocused_cursor = val
- * 
+ *
  */
       }
 
@@ -3196,7 +3196,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_19FocusChangedSession___call__(
   }
 
   /* "smelly/rc/send_text.py":61
- * 
+ *
  * class FocusChangedSession(SessionAction):
  *     def __call__(self, window: Window, focused: bool) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.get(self.sid)
@@ -3226,7 +3226,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_19FocusChangedSession___call__(
 
 /* "smelly/rc/send_text.py":119
  *     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         limit = 1024
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
@@ -3322,7 +3322,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
 
 /* "smelly/rc/send_text.py":123
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
- * 
+ *
  *         def pipe() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             if sys.stdin.isatty():
  *                 ret['exclude_active'] = True
@@ -3410,7 +3410,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 123, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":124
- * 
+ *
  *         def pipe() -> CmdGenerator:
  *             if sys.stdin.isatty():             # <<<<<<<<<<<<<<
  *                 ret['exclude_active'] = True
@@ -3462,7 +3462,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
  *                 ret['exclude_active'] = True
  *                 keep_going = True             # <<<<<<<<<<<<<<
  *                 from smelly.utils import TTYIO
- * 
+ *
  */
     __pyx_cur_scope->__pyx_v_keep_going = 1;
 
@@ -3470,7 +3470,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
  *                 ret['exclude_active'] = True
  *                 keep_going = True
  *                 from smelly.utils import TTYIO             # <<<<<<<<<<<<<<
- * 
+ *
  *                 with TTYIO(read_with_timeout=False) as tty:
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
@@ -3491,7 +3491,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
 
     /* "smelly/rc/send_text.py":129
  *                 from smelly.utils import TTYIO
- * 
+ *
  *                 with TTYIO(read_with_timeout=False) as tty:             # <<<<<<<<<<<<<<
  *                     while keep_going:
  *                         if not tty.wait_till_read_available():
@@ -3537,7 +3537,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
             __pyx_t_3 = 0;
 
             /* "smelly/rc/send_text.py":130
- * 
+ *
  *                 with TTYIO(read_with_timeout=False) as tty:
  *                     while keep_going:             # <<<<<<<<<<<<<<
  *                         if not tty.wait_till_read_available():
@@ -3808,7 +3808,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
 
             /* "smelly/rc/send_text.py":129
  *                 from smelly.utils import TTYIO
- * 
+ *
  *                 with TTYIO(read_with_timeout=False) as tty:             # <<<<<<<<<<<<<<
  *                     while keep_going:
  *                         if not tty.wait_till_read_available():
@@ -3845,7 +3845,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
               __Pyx_GIVEREF(__pyx_t_1);
               __Pyx_XGIVEREF(__pyx_t_2);
               __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_2);
-              __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+              __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
               __PYX_ERR(0, 129, __pyx_L11_except_error)
             }
             __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3888,7 +3888,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
     }
 
     /* "smelly/rc/send_text.py":124
- * 
+ *
  *         def pipe() -> CmdGenerator:
  *             if sys.stdin.isatty():             # <<<<<<<<<<<<<<
  *                 ret['exclude_active'] = True
@@ -3982,7 +3982,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
  *                         break
  *                     ret['data'] = f'base64:{base64.standard_b64encode(data).decode("ascii")}'             # <<<<<<<<<<<<<<
  *                     yield ret
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_base64_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -4040,7 +4040,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
  *                         break
  *                     ret['data'] = f'base64:{base64.standard_b64encode(data).decode("ascii")}'
  *                     yield ret             # <<<<<<<<<<<<<<
- * 
+ *
  *         def chunks(text: str) -> CmdGenerator:
  */
       if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret)) { __Pyx_RaiseClosureNameError("ret"); __PYX_ERR(0, 148, __pyx_L1_error) }
@@ -4062,7 +4062,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_2
 
   /* "smelly/rc/send_text.py":123
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
- * 
+ *
  *         def pipe() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             if sys.stdin.isatty():
  *                 ret['exclude_active'] = True
@@ -4091,7 +4091,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_5
 
 /* "smelly/rc/send_text.py":150
  *                     yield ret
- * 
+ *
  *         def chunks(text: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             data = parse_send_text_bytes(text)
  *             while data:
@@ -4184,7 +4184,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_5
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 150, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":151
- * 
+ *
  *         def chunks(text: str) -> CmdGenerator:
  *             data = parse_send_text_bytes(text)             # <<<<<<<<<<<<<<
  *             while data:
@@ -4300,7 +4300,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_5
  *                 ret['data'] = f'base64:{b}'
  *                 yield ret             # <<<<<<<<<<<<<<
  *                 data = data[limit:]
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret)) { __Pyx_RaiseClosureNameError("ret"); __PYX_ERR(0, 155, __pyx_L1_error) }
     __Pyx_INCREF(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret);
@@ -4318,7 +4318,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_5
  *                 ret['data'] = f'base64:{b}'
  *                 yield ret
  *                 data = data[limit:]             # <<<<<<<<<<<<<<
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  */
     __pyx_t_5 = __Pyx_PyObject_GetSlice(__pyx_cur_scope->__pyx_v_data, __pyx_cur_scope->__pyx_outer_scope->__pyx_v_limit, 0, NULL, NULL, NULL, 1, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 156, __pyx_L1_error)
@@ -4332,7 +4332,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_5
 
   /* "smelly/rc/send_text.py":150
  *                     yield ret
- * 
+ *
  *         def chunks(text: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             data = parse_send_text_bytes(text)
  *             while data:
@@ -4362,7 +4362,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_8
 
 /* "smelly/rc/send_text.py":158
  *                 data = data[limit:]
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -4460,7 +4460,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_8
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 158, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":159
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -4586,7 +4586,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_8
  *                         break
  *                     ret['data'] = f'base64:{base64.standard_b64encode(data).decode("ascii")}'             # <<<<<<<<<<<<<<
  *                     yield ret
- * 
+ *
  */
             __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_base64_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L8_error)
             __Pyx_GOTREF(__pyx_t_1);
@@ -4644,7 +4644,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_8
  *                         break
  *                     ret['data'] = f'base64:{base64.standard_b64encode(data).decode("ascii")}'
  *                     yield ret             # <<<<<<<<<<<<<<
- * 
+ *
  *         sources = []
  */
             if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret)) { __Pyx_RaiseClosureNameError("ret"); __PYX_ERR(0, 165, __pyx_L8_error) }
@@ -4682,7 +4682,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_8
           __pyx_L15_break:;
 
           /* "smelly/rc/send_text.py":159
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -4720,7 +4720,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_8
             __Pyx_GIVEREF(__pyx_t_5);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_5, __pyx_t_2);
-            __pyx_t_4 = 0; __pyx_t_5 = 0; __pyx_t_2 = 0; 
+            __pyx_t_4 = 0; __pyx_t_5 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 159, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -4765,7 +4765,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_8
 
   /* "smelly/rc/send_text.py":158
  *                 data = data[limit:]
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -4794,7 +4794,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_1
 
 /* "smelly/rc/send_text.py":177
  *         sources.append(chunks(text))
- * 
+ *
  *         def chain() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             for src in sources:
  *                 yield from src
@@ -4873,11 +4873,11 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_1
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 177, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":178
- * 
+ *
  *         def chain() -> CmdGenerator:
  *             for src in sources:             # <<<<<<<<<<<<<<
  *                 yield from src
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_sources)) { __Pyx_RaiseClosureNameError("sources"); __PYX_ERR(0, 178, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_sources == Py_None)) {
@@ -4902,7 +4902,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_1
  *         def chain() -> CmdGenerator:
  *             for src in sources:
  *                 yield from src             # <<<<<<<<<<<<<<
- * 
+ *
  *         return chain()
  */
     __pyx_r = __Pyx_Generator_Yield_From(__pyx_generator, __pyx_cur_scope->__pyx_v_src);
@@ -4932,11 +4932,11 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_1
     }
 
     /* "smelly/rc/send_text.py":178
- * 
+ *
  *         def chain() -> CmdGenerator:
  *             for src in sources:             # <<<<<<<<<<<<<<
  *                 yield from src
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4944,7 +4944,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_1
 
   /* "smelly/rc/send_text.py":177
  *         sources.append(chunks(text))
- * 
+ *
  *         def chain() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             for src in sources:
  *                 yield from src
@@ -4970,7 +4970,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_17message_to_smelly_1
 
 /* "smelly/rc/send_text.py":119
  *     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         limit = 1024
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
@@ -5007,11 +5007,11 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
   }
 
   /* "smelly/rc/send_text.py":120
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         limit = 1024             # <<<<<<<<<<<<<<
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
- * 
+ *
  */
   __pyx_cur_scope->__pyx_v_limit = 0x400;
 
@@ -5019,7 +5019,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         limit = 1024
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}             # <<<<<<<<<<<<<<
- * 
+ *
  *         def pipe() -> CmdGenerator:
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L1_error)
@@ -5047,7 +5047,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
   /* "smelly/rc/send_text.py":123
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
- * 
+ *
  *         def pipe() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             if sys.stdin.isatty():
  *                 ret['exclude_active'] = True
@@ -5067,7 +5067,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
   /* "smelly/rc/send_text.py":150
  *                     yield ret
- * 
+ *
  *         def chunks(text: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             data = parse_send_text_bytes(text)
  *             while data:
@@ -5088,7 +5088,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
   /* "smelly/rc/send_text.py":158
  *                 data = data[limit:]
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -5109,7 +5109,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
   /* "smelly/rc/send_text.py":167
  *                     yield ret
- * 
+ *
  *         sources = []             # <<<<<<<<<<<<<<
  *         if opts.stdin:
  *             sources.append(pipe())
@@ -5121,11 +5121,11 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
   __pyx_t_2 = 0;
 
   /* "smelly/rc/send_text.py":168
- * 
+ *
  *         sources = []
  *         if opts.stdin:             # <<<<<<<<<<<<<<
  *             sources.append(pipe())
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_stdin); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5137,7 +5137,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
  *         sources = []
  *         if opts.stdin:
  *             sources.append(pipe())             # <<<<<<<<<<<<<<
- * 
+ *
  *         if opts.from_file:
  */
     __pyx_t_2 = __pyx_pf_6smelly_2rc_9send_text_8SendText_17message_to_smelly_pipe(__pyx_v_pipe); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
@@ -5146,20 +5146,20 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly/rc/send_text.py":168
- * 
+ *
  *         sources = []
  *         if opts.stdin:             # <<<<<<<<<<<<<<
  *             sources.append(pipe())
- * 
+ *
  */
   }
 
   /* "smelly/rc/send_text.py":171
  *             sources.append(pipe())
- * 
+ *
  *         if opts.from_file:             # <<<<<<<<<<<<<<
  *             sources.append(file_pipe(opts.from_file))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_from_file); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5168,10 +5168,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
   if (__pyx_t_3) {
 
     /* "smelly/rc/send_text.py":172
- * 
+ *
  *         if opts.from_file:
  *             sources.append(file_pipe(opts.from_file))             # <<<<<<<<<<<<<<
- * 
+ *
  *         text = ' '.join(args)
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_from_file); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 172, __pyx_L1_error)
@@ -5185,19 +5185,19 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
     /* "smelly/rc/send_text.py":171
  *             sources.append(pipe())
- * 
+ *
  *         if opts.from_file:             # <<<<<<<<<<<<<<
  *             sources.append(file_pipe(opts.from_file))
- * 
+ *
  */
   }
 
   /* "smelly/rc/send_text.py":174
  *             sources.append(file_pipe(opts.from_file))
- * 
+ *
  *         text = ' '.join(args)             # <<<<<<<<<<<<<<
  *         sources.append(chunks(text))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyString_Join(__pyx_kp_s__10, __pyx_v_args); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5205,10 +5205,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
   __pyx_t_1 = 0;
 
   /* "smelly/rc/send_text.py":175
- * 
+ *
  *         text = ' '.join(args)
  *         sources.append(chunks(text))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def chain() -> CmdGenerator:
  */
   if (!(likely(PyString_CheckExact(__pyx_v_text))||((__pyx_v_text) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "str", Py_TYPE(__pyx_v_text)->tp_name), 0))) __PYX_ERR(0, 175, __pyx_L1_error)
@@ -5219,7 +5219,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
   /* "smelly/rc/send_text.py":177
  *         sources.append(chunks(text))
- * 
+ *
  *         def chain() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             for src in sources:
  *                 yield from src
@@ -5239,9 +5239,9 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
   /* "smelly/rc/send_text.py":181
  *                 yield from src
- * 
+ *
  *         return chain()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5253,7 +5253,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
   /* "smelly/rc/send_text.py":119
  *     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         limit = 1024
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
@@ -5283,7 +5283,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_message_to_smelly(CYT
 
 /* "smelly/rc/send_text.py":183
  *         return chain()
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         sid = payload_get('session_id', '')
  *         if payload_get('all'):
@@ -5378,7 +5378,7 @@ static PyObject *__pyx_pw_6smelly_2rc_9send_text_8SendText_3response_from_smelly
 
 /* "smelly/rc/send_text.py":223
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))
- * 
+ *
  *         def create_or_update_session() -> Session:             # <<<<<<<<<<<<<<
  *             s = sessions_map.setdefault(sid, Session(sid))
  *             return s
@@ -5418,11 +5418,11 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smell
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/rc/send_text.py":224
- * 
+ *
  *         def create_or_update_session() -> Session:
  *             s = sessions_map.setdefault(sid, Session(sid))             # <<<<<<<<<<<<<<
  *             return s
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sessions_map); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5502,7 +5502,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smell
  *         def create_or_update_session() -> Session:
  *             s = sessions_map.setdefault(sid, Session(sid))
  *             return s             # <<<<<<<<<<<<<<
- * 
+ *
  *         if session == 'end':
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5512,7 +5512,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smell
 
   /* "smelly/rc/send_text.py":223
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))
- * 
+ *
  *         def create_or_update_session() -> Session:             # <<<<<<<<<<<<<<
  *             s = sessions_map.setdefault(sid, Session(sid))
  *             return s
@@ -5536,10 +5536,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smell
 
 /* "smelly/rc/send_text.py":237
  *             if window is not None:
- * 
+ *
  *                 def is_ok(x: Any) -> bool:             # <<<<<<<<<<<<<<
  *                     return not isinstance(x, SessionAction) or x.sid != sid
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5574,10 +5574,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smell
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/rc/send_text.py":238
- * 
+ *
  *                 def is_ok(x: Any) -> bool:
  *                     return not isinstance(x, SessionAction) or x.sid != sid             # <<<<<<<<<<<<<<
- * 
+ *
  *                 window.actions_on_removal = list(filter(is_ok, window.actions_on_removal))
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5609,10 +5609,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smell
 
   /* "smelly/rc/send_text.py":237
  *             if window is not None:
- * 
+ *
  *                 def is_ok(x: Any) -> bool:             # <<<<<<<<<<<<<<
  *                     return not isinstance(x, SessionAction) or x.sid != sid
- * 
+ *
  */
 
   /* function exit code */
@@ -5633,7 +5633,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_20response_from_smell
  *             raise TypeError(f'Invalid encoding for send-text data: {encoding}')
  *         exclude_active = payload_get('exclude_active')
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def create_or_update_session() -> Session:
  */
 
@@ -5810,7 +5810,7 @@ static PyObject *__pyx_gb_6smelly_2rc_9send_text_8SendText_20response_from_smell
 
 /* "smelly/rc/send_text.py":183
  *         return chain()
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         sid = payload_get('session_id', '')
  *         if payload_get('all'):
@@ -5869,7 +5869,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_boss);
 
   /* "smelly/rc/send_text.py":184
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         sid = payload_get('session_id', '')             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
@@ -6411,13 +6411,13 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_t_2);
@@ -6769,7 +6769,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
  *             raise TypeError(f'Invalid encoding for send-text data: {encoding}')
  *         exclude_active = payload_get('exclude_active')             # <<<<<<<<<<<<<<
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_payload_get);
   __pyx_t_3 = __pyx_v_payload_get; __pyx_t_2 = NULL;
@@ -6795,7 +6795,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
  *             raise TypeError(f'Invalid encoding for send-text data: {encoding}')
  *         exclude_active = payload_get('exclude_active')
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def create_or_update_session() -> Session:
  */
   __pyx_t_1 = __pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smelly_4genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L1_error)
@@ -6805,7 +6805,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
 
   /* "smelly/rc/send_text.py":223
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))
- * 
+ *
  *         def create_or_update_session() -> Session:             # <<<<<<<<<<<<<<
  *             s = sessions_map.setdefault(sid, Session(sid))
  *             return s
@@ -6825,7 +6825,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
 
   /* "smelly/rc/send_text.py":227
  *             return s
- * 
+ *
  *         if session == 'end':             # <<<<<<<<<<<<<<
  *             s = create_or_update_session()
  *             for w in actual_windows:
@@ -6834,7 +6834,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
   if (__pyx_t_5) {
 
     /* "smelly/rc/send_text.py":228
- * 
+ *
  *         if session == 'end':
  *             s = create_or_update_session()             # <<<<<<<<<<<<<<
  *             for w in actual_windows:
@@ -6991,7 +6991,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
 
     /* "smelly/rc/send_text.py":227
  *             return s
- * 
+ *
  *         if session == 'end':             # <<<<<<<<<<<<<<
  *             s = create_or_update_session()
  *             for w in actual_windows:
@@ -7014,7 +7014,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
  *         elif session == 'start':
  *             s = create_or_update_session()             # <<<<<<<<<<<<<<
  *             if window is not None:
- * 
+ *
  */
     __pyx_t_3 = __pyx_pf_6smelly_2rc_9send_text_8SendText_20response_from_smelly_create_or_update_session(__pyx_v_create_or_update_session); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 234, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -7025,7 +7025,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
  *         elif session == 'start':
  *             s = create_or_update_session()
  *             if window is not None:             # <<<<<<<<<<<<<<
- * 
+ *
  *                 def is_ok(x: Any) -> bool:
  */
     __pyx_t_5 = (__pyx_v_window != Py_None);
@@ -7034,10 +7034,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
 
       /* "smelly/rc/send_text.py":237
  *             if window is not None:
- * 
+ *
  *                 def is_ok(x: Any) -> bool:             # <<<<<<<<<<<<<<
  *                     return not isinstance(x, SessionAction) or x.sid != sid
- * 
+ *
  */
       __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 237, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
@@ -7055,7 +7055,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
 
       /* "smelly/rc/send_text.py":240
  *                     return not isinstance(x, SessionAction) or x.sid != sid
- * 
+ *
  *                 window.actions_on_removal = list(filter(is_ok, window.actions_on_removal))             # <<<<<<<<<<<<<<
  *                 window.actions_on_focus_change = list(filter(is_ok, window.actions_on_focus_change))
  *                 window.actions_on_removal.append(ClearSession(sid))
@@ -7080,7 +7080,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
       /* "smelly/rc/send_text.py":241
- * 
+ *
  *                 window.actions_on_removal = list(filter(is_ok, window.actions_on_removal))
  *                 window.actions_on_focus_change = list(filter(is_ok, window.actions_on_focus_change))             # <<<<<<<<<<<<<<
  *                 window.actions_on_removal.append(ClearSession(sid))
@@ -7169,7 +7169,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
  *         elif session == 'start':
  *             s = create_or_update_session()
  *             if window is not None:             # <<<<<<<<<<<<<<
- * 
+ *
  *                 def is_ok(x: Any) -> bool:
  */
     }
@@ -7535,7 +7535,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
  *                 else:
  *                     w.write_to_child(data)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       /*else*/ {
         __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_write_to_child); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 259, __pyx_L1_error)
@@ -7576,8 +7576,8 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
  *                 else:
  *                     w.write_to_child(data)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -7585,7 +7585,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9send_text_8SendText_2response_from_smelly
 
   /* "smelly/rc/send_text.py":183
  *         return chain()
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         sid = payload_get('session_id', '')
  *         if payload_get('all'):
@@ -8782,7 +8782,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":129
  *                 from smelly.utils import TTYIO
- * 
+ *
  *                 with TTYIO(read_with_timeout=False) as tty:             # <<<<<<<<<<<<<<
  *                     while keep_going:
  *                         if not tty.wait_till_read_available():
@@ -8793,7 +8793,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":123
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
- * 
+ *
  *         def pipe() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             if sys.stdin.isatty():
  *                 ret['exclude_active'] = True
@@ -8805,7 +8805,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":150
  *                     yield ret
- * 
+ *
  *         def chunks(text: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             data = parse_send_text_bytes(text)
  *             while data:
@@ -8817,7 +8817,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":158
  *                 data = data[limit:]
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -8829,7 +8829,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":177
  *         sources.append(chunks(text))
- * 
+ *
  *         def chain() -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             for src in sources:
  *                 yield from src
@@ -8840,7 +8840,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_send_text_py, __pyx_n_s_chain, 177, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 177, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":184
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         sid = payload_get('session_id', '')             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
@@ -8852,7 +8852,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":223
  *         actual_windows = (w for w in windows if w is not None and (not exclude_active or w is not boss.active_window))
- * 
+ *
  *         def create_or_update_session() -> Session:             # <<<<<<<<<<<<<<
  *             s = sessions_map.setdefault(sid, Session(sid))
  *             return s
@@ -8864,10 +8864,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":237
  *             if window is not None:
- * 
+ *
  *                 def is_ok(x: Any) -> bool:             # <<<<<<<<<<<<<<
  *                     return not isinstance(x, SessionAction) or x.sid != sid
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -8876,7 +8876,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":36
  *     window_ids: Set[int]
- * 
+ *
  *     def __init__(self, id: str):             # <<<<<<<<<<<<<<
  *         self.id = id
  *         self.window_ids = set()
@@ -8887,11 +8887,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_send_text_py, __pyx_n_s_init, 36, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 36, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":45
- * 
+ *
  * class SessionAction:
  *     def __init__(self, sid: str):             # <<<<<<<<<<<<<<
  *         self.sid = sid
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_sid); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -8899,7 +8899,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_send_text_py, __pyx_n_s_init, 45, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 45, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":50
- * 
+ *
  * class ClearSession(SessionAction):
  *     def __call__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.pop(self.sid, None)
@@ -8911,7 +8911,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_send_text_py, __pyx_n_s_call, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 50, __pyx_L1_error)
 
   /* "smelly/rc/send_text.py":61
- * 
+ *
  * class FocusChangedSession(SessionAction):
  *     def __call__(self, window: Window, focused: bool) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.get(self.sid)
@@ -8935,7 +8935,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":119
  *     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         limit = 1024
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
@@ -8947,7 +8947,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/send_text.py":183
  *         return chain()
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         sid = payload_get('session_id', '')
  *         if payload_get('all'):
@@ -9308,7 +9308,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/send_text.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import base64             # <<<<<<<<<<<<<<
  * import sys
  * from typing import TYPE_CHECKING, Any, Dict, List, Optional, Set, Union
@@ -9319,11 +9319,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/send_text.py":5
- * 
+ *
  * import base64
  * import sys             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Any, Dict, List, Optional, Set, Union
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9334,7 +9334,7 @@ if (!__Pyx_RefNanny) {
  * import base64
  * import sys
  * from typing import TYPE_CHECKING, Any, Dict, List, Optional, Set, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import KeyEvent as WindowSystemKeyEvent
  */
   __pyx_t_1 = PyList_New(7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -9395,7 +9395,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/send_text.py":8
  * from typing import TYPE_CHECKING, Any, Dict, List, Optional, Set, Union
- * 
+ *
  * from smelly.fast_data_types import KeyEvent as WindowSystemKeyEvent             # <<<<<<<<<<<<<<
  * from smelly.fast_data_types import get_boss
  * from smelly.key_encoding import decode_key_event_as_window_system_key
@@ -9415,7 +9415,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/send_text.py":9
- * 
+ *
  * from smelly.fast_data_types import KeyEvent as WindowSystemKeyEvent
  * from smelly.fast_data_types import get_boss             # <<<<<<<<<<<<<<
  * from smelly.key_encoding import decode_key_event_as_window_system_key
@@ -9440,7 +9440,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.fast_data_types import get_boss
  * from smelly.key_encoding import decode_key_event_as_window_system_key             # <<<<<<<<<<<<<<
  * from smelly.options.utils import parse_send_text_bytes
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9460,7 +9460,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.fast_data_types import get_boss
  * from smelly.key_encoding import decode_key_event_as_window_system_key
  * from smelly.options.utils import parse_send_text_bytes             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import (
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -9478,7 +9478,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/send_text.py":14
- * 
+ *
  * from .base import (
  *     MATCH_TAB_OPTION,             # <<<<<<<<<<<<<<
  *     MATCH_WINDOW_OPTION,
@@ -9525,7 +9525,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/send_text.py":13
  * from smelly.options.utils import parse_send_text_bytes
- * 
+ *
  * from .base import (             # <<<<<<<<<<<<<<
  *     MATCH_TAB_OPTION,
  *     MATCH_WINDOW_OPTION,
@@ -9585,10 +9585,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/send_text.py":28
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SendTextRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9597,11 +9597,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/send_text.py":29
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SendTextRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -9619,16 +9619,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/send_text.py":28
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SendTextRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/send_text.py":32
- * 
- * 
+ *
+ *
  * class Session:             # <<<<<<<<<<<<<<
  *     id: str
  *     window_ids: Set[int]
@@ -9638,7 +9638,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/send_text.py":36
  *     window_ids: Set[int]
- * 
+ *
  *     def __init__(self, id: str):             # <<<<<<<<<<<<<<
  *         self.id = id
  *         self.window_ids = set()
@@ -9654,8 +9654,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/rc/send_text.py":32
- * 
- * 
+ *
+ *
  * class Session:             # <<<<<<<<<<<<<<
  *     id: str
  *     window_ids: Set[int]
@@ -9667,11 +9667,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/send_text.py":41
- * 
- * 
+ *
+ *
  * sessions_map: Dict[str, Session] = {}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9679,8 +9679,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/send_text.py":44
- * 
- * 
+ *
+ *
  * class SessionAction:             # <<<<<<<<<<<<<<
  *     def __init__(self, sid: str):
  *         self.sid = sid
@@ -9689,11 +9689,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/rc/send_text.py":45
- * 
+ *
  * class SessionAction:
  *     def __init__(self, sid: str):             # <<<<<<<<<<<<<<
  *         self.sid = sid
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -9706,8 +9706,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/send_text.py":44
- * 
- * 
+ *
+ *
  * class SessionAction:             # <<<<<<<<<<<<<<
  *     def __init__(self, sid: str):
  *         self.sid = sid
@@ -9719,8 +9719,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/send_text.py":49
- * 
- * 
+ *
+ *
  * class ClearSession(SessionAction):             # <<<<<<<<<<<<<<
  *     def __call__(self, *a: Any) -> None:
  *         s = sessions_map.pop(self.sid, None)
@@ -9738,7 +9738,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/send_text.py":50
- * 
+ *
  * class ClearSession(SessionAction):
  *     def __call__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.pop(self.sid, None)
@@ -9759,8 +9759,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/rc/send_text.py":49
- * 
- * 
+ *
+ *
  * class ClearSession(SessionAction):             # <<<<<<<<<<<<<<
  *     def __call__(self, *a: Any) -> None:
  *         s = sessions_map.pop(self.sid, None)
@@ -9774,8 +9774,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/send_text.py":60
- * 
- * 
+ *
+ *
  * class FocusChangedSession(SessionAction):             # <<<<<<<<<<<<<<
  *     def __call__(self, window: Window, focused: bool) -> None:
  *         s = sessions_map.get(self.sid)
@@ -9793,7 +9793,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/send_text.py":61
- * 
+ *
  * class FocusChangedSession(SessionAction):
  *     def __call__(self, window: Window, focused: bool) -> None:             # <<<<<<<<<<<<<<
  *         s = sessions_map.get(self.sid)
@@ -9815,8 +9815,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/send_text.py":60
- * 
- * 
+ *
+ *
  * class FocusChangedSession(SessionAction):             # <<<<<<<<<<<<<<
  *     def __call__(self, window: Window, focused: bool) -> None:
  *         s = sessions_map.get(self.sid)
@@ -9830,8 +9830,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/send_text.py":72
- * 
- * 
+ *
+ *
  * class SendText(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     data+/str: The data being sent. Can be either: text: followed by text or base64: followed by standard base64 encoded bytes
@@ -9849,7 +9849,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/send_text.py":73
- * 
+ *
  * class SendText(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     data+/str: The data being sent. Can be either: text: followed by text or base64: followed by standard base64 encoded bytes
@@ -9934,7 +9934,7 @@ if (!__Pyx_RefNanny) {
  * '''
  *     )
  *     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
@@ -9956,7 +9956,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/send_text.py":119
  *     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         limit = 1024
  *         ret = {'match': opts.match, 'data': '', 'match_tab': opts.match_tab, 'all': opts.all, 'exclude_active': opts.exclude_active}
@@ -9985,7 +9985,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/send_text.py":183
  *         return chain()
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         sid = payload_get('session_id', '')
  *         if payload_get('all'):
@@ -10022,8 +10022,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/send_text.py":72
- * 
- * 
+ *
+ *
  * class SendText(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     data+/str: The data being sent. Can be either: text: followed by text or base64: followed by standard base64 encoded bytes
@@ -10037,8 +10037,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/send_text.py":263
- * 
- * 
+ *
+ *
  * send_text = SendText()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SendText); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 263, __pyx_L1_error)
@@ -10052,7 +10052,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/send_text.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

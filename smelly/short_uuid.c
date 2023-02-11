@@ -1629,8 +1629,8 @@ static PyObject *__pyx_codeobj__19;
 /* Late includes */
 
 /* "smelly/short_uuid.py":10
- * 
- * 
+ *
+ *
  * def num_to_string(             # <<<<<<<<<<<<<<
  *         number: int, alphabet: Sequence[str],
  *         alphabet_len: int, pad_to_length: Optional[int] = None) -> str:
@@ -1731,8 +1731,8 @@ static PyObject *__pyx_pw_6smelly_10short_uuid_1num_to_string(PyObject *__pyx_se
   __pyx_r = __pyx_pf_6smelly_10short_uuid_num_to_string(__pyx_self, __pyx_v_number, __pyx_v_alphabet, __pyx_v_alphabet_len, __pyx_v_pad_to_length);
 
   /* "smelly/short_uuid.py":10
- * 
- * 
+ *
+ *
  * def num_to_string(             # <<<<<<<<<<<<<<
  *         number: int, alphabet: Sequence[str],
  *         alphabet_len: int, pad_to_length: Optional[int] = None) -> str:
@@ -1839,11 +1839,11 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_num_to_string(CYTHON_UNUSED PyObj
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_5);
@@ -1923,7 +1923,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_num_to_string(CYTHON_UNUSED PyObj
  *     if pad_to_length is not None and pad_to_length > len(ans):
  *         ans.append(alphabet[0] * (pad_to_length - len(ans)))             # <<<<<<<<<<<<<<
  *     return ''.join(ans)
- * 
+ *
  */
     __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_alphabet, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 19, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -1953,8 +1953,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_num_to_string(CYTHON_UNUSED PyObj
  *     if pad_to_length is not None and pad_to_length > len(ans):
  *         ans.append(alphabet[0] * (pad_to_length - len(ans)))
  *     return ''.join(ans)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyString_Join(__pyx_kp_s_, __pyx_v_ans); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
@@ -1965,8 +1965,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_num_to_string(CYTHON_UNUSED PyObj
   goto __pyx_L0;
 
   /* "smelly/short_uuid.py":10
- * 
- * 
+ *
+ *
  * def num_to_string(             # <<<<<<<<<<<<<<
  *         number: int, alphabet: Sequence[str],
  *         alphabet_len: int, pad_to_length: Optional[int] = None) -> str:
@@ -1990,8 +1990,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_num_to_string(CYTHON_UNUSED PyObj
 }
 
 /* "smelly/short_uuid.py":23
- * 
- * 
+ *
+ *
  * def string_to_num(             # <<<<<<<<<<<<<<
  *         string: str, alphabet_map: Dict[str, int],
  *         alphabet_len: int) -> int:
@@ -2161,7 +2161,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_2string_to_num(CYTHON_UNUSED PyOb
  *     for char in reversed(string):
  *         ans = ans * alphabet_len + alphabet_map[char]             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __pyx_t_1 = PyNumber_Multiply(__pyx_v_ans, __pyx_v_alphabet_len); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2188,8 +2188,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_2string_to_num(CYTHON_UNUSED PyOb
  *     for char in reversed(string):
  *         ans = ans * alphabet_len + alphabet_map[char]
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2197,8 +2197,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_2string_to_num(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/short_uuid.py":23
- * 
- * 
+ *
+ *
  * def string_to_num(             # <<<<<<<<<<<<<<
  *         string: str, alphabet_map: Dict[str, int],
  *         alphabet_len: int) -> int:
@@ -2221,7 +2221,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_2string_to_num(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/short_uuid.py":37
- * 
+ *
  * class ShortUUID:
  *     def __init__(self, alphabet: str = human_alphabet):             # <<<<<<<<<<<<<<
  *         self.alphabet = tuple(sorted(alphabet))
@@ -2484,7 +2484,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID___init__(CYTHON_UNUSED
  *         self.alphabet_map = {c: i for i, c in enumerate(self.alphabet)}
  *         self.uuid_pad_len = int(
  *             math.ceil(math.log(1 << 128, self.alphabet_len)))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def uuid4(self, pad_to_length: Optional[int] = None) -> str:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_math); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -2568,7 +2568,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID___init__(CYTHON_UNUSED
  *         self.alphabet_map = {c: i for i, c in enumerate(self.alphabet)}
  *         self.uuid_pad_len = int(             # <<<<<<<<<<<<<<
  *             math.ceil(math.log(1 << 128, self.alphabet_len)))
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2577,7 +2577,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID___init__(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/short_uuid.py":37
- * 
+ *
  * class ShortUUID:
  *     def __init__(self, alphabet: str = human_alphabet):             # <<<<<<<<<<<<<<
  *         self.alphabet = tuple(sorted(alphabet))
@@ -2607,7 +2607,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID___init__(CYTHON_UNUSED
 
 /* "smelly/short_uuid.py":44
  *             math.ceil(math.log(1 << 128, self.alphabet_len)))
- * 
+ *
  *     def uuid4(self, pad_to_length: Optional[int] = None) -> str:             # <<<<<<<<<<<<<<
  *         if pad_to_length is None:
  *             pad_to_length = self.uuid_pad_len
@@ -2702,7 +2702,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_2uuid4(CYTHON_UNUSED P
   __Pyx_INCREF(__pyx_v_pad_to_length);
 
   /* "smelly/short_uuid.py":45
- * 
+ *
  *     def uuid4(self, pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:             # <<<<<<<<<<<<<<
  *             pad_to_length = self.uuid_pad_len
@@ -2725,7 +2725,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_2uuid4(CYTHON_UNUSED P
     __pyx_t_3 = 0;
 
     /* "smelly/short_uuid.py":45
- * 
+ *
  *     def uuid4(self, pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:             # <<<<<<<<<<<<<<
  *             pad_to_length = self.uuid_pad_len
@@ -2738,7 +2738,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_2uuid4(CYTHON_UNUSED P
  *             pad_to_length = self.uuid_pad_len
  *         return num_to_string(             # <<<<<<<<<<<<<<
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_num_to_string); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
@@ -2748,7 +2748,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_2uuid4(CYTHON_UNUSED P
  *             pad_to_length = self.uuid_pad_len
  *         return num_to_string(
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_uuid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -2841,7 +2841,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_2uuid4(CYTHON_UNUSED P
  *             pad_to_length = self.uuid_pad_len
  *         return num_to_string(             # <<<<<<<<<<<<<<
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  */
   if (!(likely(PyString_CheckExact(__pyx_t_3))||((__pyx_t_3) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "str", Py_TYPE(__pyx_t_3)->tp_name), 0))) __PYX_ERR(0, 47, __pyx_L1_error)
   __pyx_r = ((PyObject*)__pyx_t_3);
@@ -2850,7 +2850,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_2uuid4(CYTHON_UNUSED P
 
   /* "smelly/short_uuid.py":44
  *             math.ceil(math.log(1 << 128, self.alphabet_len)))
- * 
+ *
  *     def uuid4(self, pad_to_length: Optional[int] = None) -> str:             # <<<<<<<<<<<<<<
  *         if pad_to_length is None:
  *             pad_to_length = self.uuid_pad_len
@@ -2876,7 +2876,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_2uuid4(CYTHON_UNUSED P
 
 /* "smelly/short_uuid.py":50
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,             # <<<<<<<<<<<<<<
  *               pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:
@@ -2901,7 +2901,7 @@ static PyObject *__pyx_pw_6smelly_10short_uuid_9ShortUUID_5uuid5(PyObject *__pyx
     PyObject* values[4] = {0,0,0,0};
 
     /* "smelly/short_uuid.py":51
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,
  *               pad_to_length: Optional[int] = None) -> str:             # <<<<<<<<<<<<<<
  *         if pad_to_length is None:
@@ -2979,7 +2979,7 @@ static PyObject *__pyx_pw_6smelly_10short_uuid_9ShortUUID_5uuid5(PyObject *__pyx
 
   /* "smelly/short_uuid.py":50
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,             # <<<<<<<<<<<<<<
  *               pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:
@@ -3061,7 +3061,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_4uuid5(CYTHON_UNUSED P
  *         return num_to_string(
  *             _uuid.uuid5(namespace, name).int, self.alphabet, self.alphabet_len,             # <<<<<<<<<<<<<<
  *             pad_to_length)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_uuid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -3125,7 +3125,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_4uuid5(CYTHON_UNUSED P
  *         return num_to_string(
  *             _uuid.uuid5(namespace, name).int, self.alphabet, self.alphabet_len,
  *             pad_to_length)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def decode(self, encoded: str) -> _uuid.UUID:
  */
   __pyx_t_6 = NULL;
@@ -3200,7 +3200,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_4uuid5(CYTHON_UNUSED P
 
   /* "smelly/short_uuid.py":50
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,             # <<<<<<<<<<<<<<
  *               pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:
@@ -3226,7 +3226,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_4uuid5(CYTHON_UNUSED P
 
 /* "smelly/short_uuid.py":58
  *             pad_to_length)
- * 
+ *
  *     def decode(self, encoded: str) -> _uuid.UUID:             # <<<<<<<<<<<<<<
  *         return _uuid.UUID(
  *             int=string_to_num(
@@ -3320,7 +3320,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_6decode(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("decode", 0);
 
   /* "smelly/short_uuid.py":59
- * 
+ *
  *     def decode(self, encoded: str) -> _uuid.UUID:
  *         return _uuid.UUID(             # <<<<<<<<<<<<<<
  *             int=string_to_num(
@@ -3338,7 +3338,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_6decode(CYTHON_UNUSED 
  *         return _uuid.UUID(
  *             int=string_to_num(             # <<<<<<<<<<<<<<
  *                 encoded, self.alphabet_map, self.alphabet_len))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3349,8 +3349,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_6decode(CYTHON_UNUSED 
  *         return _uuid.UUID(
  *             int=string_to_num(
  *                 encoded, self.alphabet_map, self.alphabet_len))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_alphabet_map); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3412,7 +3412,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_6decode(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/short_uuid.py":59
- * 
+ *
  *     def decode(self, encoded: str) -> _uuid.UUID:
  *         return _uuid.UUID(             # <<<<<<<<<<<<<<
  *             int=string_to_num(
@@ -3428,7 +3428,7 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_6decode(CYTHON_UNUSED 
 
   /* "smelly/short_uuid.py":58
  *             pad_to_length)
- * 
+ *
  *     def decode(self, encoded: str) -> _uuid.UUID:             # <<<<<<<<<<<<<<
  *         return _uuid.UUID(
  *             int=string_to_num(
@@ -3453,8 +3453,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_9ShortUUID_6decode(CYTHON_UNUSED 
 }
 
 /* "smelly/short_uuid.py":71
- * 
- * 
+ *
+ *
  * def uuid4_for_escape_code() -> str:             # <<<<<<<<<<<<<<
  *     global _escape_code_instance
  *     if _escape_code_instance is None:
@@ -3572,8 +3572,8 @@ static PyObject *__pyx_pf_6smelly_10short_uuid_4uuid4_for_escape_code(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/short_uuid.py":71
- * 
- * 
+ *
+ *
  * def uuid4_for_escape_code() -> str:             # <<<<<<<<<<<<<<
  *     global _escape_code_instance
  *     if _escape_code_instance is None:
@@ -3720,8 +3720,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/short_uuid.py":10
- * 
- * 
+ *
+ *
  * def num_to_string(             # <<<<<<<<<<<<<<
  *         number: int, alphabet: Sequence[str],
  *         alphabet_len: int, pad_to_length: Optional[int] = None) -> str:
@@ -3735,8 +3735,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly/short_uuid.py":23
- * 
- * 
+ *
+ *
  * def string_to_num(             # <<<<<<<<<<<<<<
  *         string: str, alphabet_map: Dict[str, int],
  *         alphabet_len: int) -> int:
@@ -3747,18 +3747,18 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_short_uuid_py, __pyx_n_s_string_to_num, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":33
- * 
+ *
  * escape_code_safe_alphabet = string.ascii_letters + string.digits + string.punctuation + ' '
  * human_alphabet = (string.digits + string.ascii_letters)[2:]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_slice__8 = PySlice_New(__pyx_int_2, Py_None, Py_None); if (unlikely(!__pyx_slice__8)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__8);
   __Pyx_GIVEREF(__pyx_slice__8);
 
   /* "smelly/short_uuid.py":37
- * 
+ *
  * class ShortUUID:
  *     def __init__(self, alphabet: str = human_alphabet):             # <<<<<<<<<<<<<<
  *         self.alphabet = tuple(sorted(alphabet))
@@ -3771,7 +3771,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/short_uuid.py":44
  *             math.ceil(math.log(1 << 128, self.alphabet_len)))
- * 
+ *
  *     def uuid4(self, pad_to_length: Optional[int] = None) -> str:             # <<<<<<<<<<<<<<
  *         if pad_to_length is None:
  *             pad_to_length = self.uuid_pad_len
@@ -3786,7 +3786,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/short_uuid.py":50
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,             # <<<<<<<<<<<<<<
  *               pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:
@@ -3801,7 +3801,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/short_uuid.py":58
  *             pad_to_length)
- * 
+ *
  *     def decode(self, encoded: str) -> _uuid.UUID:             # <<<<<<<<<<<<<<
  *         return _uuid.UUID(
  *             int=string_to_num(
@@ -3812,8 +3812,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_short_uuid_py, __pyx_n_s_decode, 58, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 58, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":71
- * 
- * 
+ *
+ *
  * def uuid4_for_escape_code() -> str:             # <<<<<<<<<<<<<<
  *     global _escape_code_instance
  *     if _escape_code_instance is None:
@@ -4106,7 +4106,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/short_uuid.py":4
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import math             # <<<<<<<<<<<<<<
  * import string
  * import uuid as _uuid
@@ -4117,7 +4117,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/short_uuid.py":5
- * 
+ *
  * import math
  * import string             # <<<<<<<<<<<<<<
  * import uuid as _uuid
@@ -4133,7 +4133,7 @@ if (!__Pyx_RefNanny) {
  * import string
  * import uuid as _uuid             # <<<<<<<<<<<<<<
  * from typing import Dict, Optional, Sequence
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_uuid_2, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4144,8 +4144,8 @@ if (!__Pyx_RefNanny) {
  * import string
  * import uuid as _uuid
  * from typing import Dict, Optional, Sequence             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4176,8 +4176,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/short_uuid.py":10
- * 
- * 
+ *
+ *
  * def num_to_string(             # <<<<<<<<<<<<<<
  *         number: int, alphabet: Sequence[str],
  *         alphabet_len: int, pad_to_length: Optional[int] = None) -> str:
@@ -4187,7 +4187,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_number, __pyx_n_u_int) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":11
- * 
+ *
  * def num_to_string(
  *         number: int, alphabet: Sequence[str],             # <<<<<<<<<<<<<<
  *         alphabet_len: int, pad_to_length: Optional[int] = None) -> str:
@@ -4219,8 +4219,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, __pyx_n_u_str) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":10
- * 
- * 
+ *
+ *
  * def num_to_string(             # <<<<<<<<<<<<<<
  *         number: int, alphabet: Sequence[str],
  *         alphabet_len: int, pad_to_length: Optional[int] = None) -> str:
@@ -4234,8 +4234,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/short_uuid.py":23
- * 
- * 
+ *
+ *
  * def string_to_num(             # <<<<<<<<<<<<<<
  *         string: str, alphabet_map: Dict[str, int],
  *         alphabet_len: int) -> int:
@@ -4245,7 +4245,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_string, __pyx_n_u_str) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":24
- * 
+ *
  * def string_to_num(
  *         string: str, alphabet_map: Dict[str, int],             # <<<<<<<<<<<<<<
  *         alphabet_len: int) -> int:
@@ -4271,8 +4271,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_return, __pyx_n_u_int) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":23
- * 
- * 
+ *
+ *
  * def string_to_num(             # <<<<<<<<<<<<<<
  *         string: str, alphabet_map: Dict[str, int],
  *         alphabet_len: int) -> int:
@@ -4285,11 +4285,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/short_uuid.py":32
- * 
- * 
+ *
+ *
  * escape_code_safe_alphabet = string.ascii_letters + string.digits + string.punctuation + ' '             # <<<<<<<<<<<<<<
  * human_alphabet = (string.digits + string.ascii_letters)[2:]
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_string); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -4321,11 +4321,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/short_uuid.py":33
- * 
+ *
  * escape_code_safe_alphabet = string.ascii_letters + string.digits + string.punctuation + ' '
  * human_alphabet = (string.digits + string.ascii_letters)[2:]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_string); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4348,8 +4348,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/short_uuid.py":36
- * 
- * 
+ *
+ *
  * class ShortUUID:             # <<<<<<<<<<<<<<
  *     def __init__(self, alphabet: str = human_alphabet):
  *         self.alphabet = tuple(sorted(alphabet))
@@ -4358,7 +4358,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/short_uuid.py":37
- * 
+ *
  * class ShortUUID:
  *     def __init__(self, alphabet: str = human_alphabet):             # <<<<<<<<<<<<<<
  *         self.alphabet = tuple(sorted(alphabet))
@@ -4384,7 +4384,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/short_uuid.py":44
  *             math.ceil(math.log(1 << 128, self.alphabet_len)))
- * 
+ *
  *     def uuid4(self, pad_to_length: Optional[int] = None) -> str:             # <<<<<<<<<<<<<<
  *         if pad_to_length is None:
  *             pad_to_length = self.uuid_pad_len
@@ -4409,7 +4409,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/short_uuid.py":50
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,             # <<<<<<<<<<<<<<
  *               pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:
@@ -4426,7 +4426,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_name, __pyx_n_u_str) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":51
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,
  *               pad_to_length: Optional[int] = None) -> str:             # <<<<<<<<<<<<<<
  *         if pad_to_length is None:
@@ -4443,7 +4443,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/short_uuid.py":50
  *             _uuid.uuid4().int, self.alphabet, self.alphabet_len, pad_to_length)
- * 
+ *
  *     def uuid5(self, namespace: _uuid.UUID, name: str,             # <<<<<<<<<<<<<<
  *               pad_to_length: Optional[int] = None) -> str:
  *         if pad_to_length is None:
@@ -4458,7 +4458,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/short_uuid.py":58
  *             pad_to_length)
- * 
+ *
  *     def decode(self, encoded: str) -> _uuid.UUID:             # <<<<<<<<<<<<<<
  *         return _uuid.UUID(
  *             int=string_to_num(
@@ -4481,8 +4481,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/short_uuid.py":36
- * 
- * 
+ *
+ *
  * class ShortUUID:             # <<<<<<<<<<<<<<
  *     def __init__(self, alphabet: str = human_alphabet):
  *         self.alphabet = tuple(sorted(alphabet))
@@ -4494,8 +4494,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/short_uuid.py":64
- * 
- * 
+ *
+ *
  * _global_instance = ShortUUID()             # <<<<<<<<<<<<<<
  * uuid4 = _global_instance.uuid4
  * uuid5 = _global_instance.uuid5
@@ -4509,7 +4509,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/short_uuid.py":65
- * 
+ *
  * _global_instance = ShortUUID()
  * uuid4 = _global_instance.uuid4             # <<<<<<<<<<<<<<
  * uuid5 = _global_instance.uuid5
@@ -4543,7 +4543,7 @@ if (!__Pyx_RefNanny) {
  * uuid5 = _global_instance.uuid5
  * decode = _global_instance.decode             # <<<<<<<<<<<<<<
  * _escape_code_instance: Optional[ShortUUID] = None
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_global_instance); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4557,14 +4557,14 @@ if (!__Pyx_RefNanny) {
  * uuid5 = _global_instance.uuid5
  * decode = _global_instance.decode
  * _escape_code_instance: Optional[ShortUUID] = None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_escape_code_instance, Py_None) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
 
   /* "smelly/short_uuid.py":71
- * 
- * 
+ *
+ *
  * def uuid4_for_escape_code() -> str:             # <<<<<<<<<<<<<<
  *     global _escape_code_instance
  *     if _escape_code_instance is None:
@@ -4582,7 +4582,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/short_uuid.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5349,8 +5349,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

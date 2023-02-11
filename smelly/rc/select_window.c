@@ -970,10 +970,10 @@ struct __pyx_obj_6smelly_2rc_13select_window___pyx_scope_struct__response_from_s
 
 /* "smelly/rc/select_window.py":70
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  */
 struct __pyx_obj_6smelly_2rc_13select_window___pyx_scope_struct__response_from_smelly {
   PyObject_HEAD
@@ -1597,7 +1597,7 @@ static PyObject *__pyx_codeobj__9;
 
 /* "smelly/rc/select_window.py":60
  *     is_asynchronous = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {
  *             'self': opts.self,
@@ -1769,7 +1769,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_message_to_
  *             'reactivate_prev_tab': opts.reactivate_prev_tab,
  *         }
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1779,7 +1779,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_message_to_
 
   /* "smelly/rc/select_window.py":60
  *     is_asynchronous = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {
  *             'self': opts.self,
@@ -1800,10 +1800,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_message_to_
 
 /* "smelly/rc/select_window.py":70
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1895,7 +1895,7 @@ static PyObject *__pyx_pw_6smelly_2rc_13select_window_12SelectWindow_3response_f
 
 /* "smelly/rc/select_window.py":73
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  *         def callback(tab: Optional['Tab'], window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *             if window:
  *                 responder.send_data(window.id)
@@ -1984,7 +1984,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_20response_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/rc/select_window.py":74
- * 
+ *
  *         def callback(tab: Optional['Tab'], window: Optional[Window]) -> None:
  *             if window:             # <<<<<<<<<<<<<<
  *                 responder.send_data(window.id)
@@ -2024,7 +2024,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_20response_
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly/rc/select_window.py":74
- * 
+ *
  *         def callback(tab: Optional['Tab'], window: Optional[Window]) -> None:
  *             if window:             # <<<<<<<<<<<<<<
  *                 responder.send_data(window.id)
@@ -2037,7 +2037,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_20response_
  *                 responder.send_data(window.id)
  *             else:
  *                 responder.send_error('No window selected')             # <<<<<<<<<<<<<<
- * 
+ *
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  */
   /*else*/ {
@@ -2065,7 +2065,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_20response_
 
   /* "smelly/rc/select_window.py":73
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  *         def callback(tab: Optional['Tab'], window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *             if window:
  *                 responder.send_data(window.id)
@@ -2089,10 +2089,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_20response_
 
 /* "smelly/rc/select_window.py":70
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_from_smelly(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_boss, PyObject *__pyx_v_window, PyObject *__pyx_v_payload_get) {
@@ -2127,10 +2127,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
   }
 
   /* "smelly/rc/select_window.py":71
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         responder = self.create_async_responder(payload_get, window)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def callback(tab: Optional['Tab'], window: Optional[Window]) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_create_async_responder); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
@@ -2186,7 +2186,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
 
   /* "smelly/rc/select_window.py":73
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  *         def callback(tab: Optional['Tab'], window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *             if window:
  *                 responder.send_data(window.id)
@@ -2220,7 +2220,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
 
   /* "smelly/rc/select_window.py":79
  *                 responder.send_error('No window selected')
- * 
+ *
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if tab:
  *                 if payload_get('exclude_active'):
@@ -2319,7 +2319,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
     __pyx_t_3 = 0;
 
     /* "smelly/rc/select_window.py":80
- * 
+ *
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:             # <<<<<<<<<<<<<<
  *                 if payload_get('exclude_active'):
@@ -2505,12 +2505,12 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
  *                 )
  *                 break             # <<<<<<<<<<<<<<
  *         return AsyncResponse()
- * 
+ *
  */
       goto __pyx_L4_break;
 
       /* "smelly/rc/select_window.py":80
- * 
+ *
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:             # <<<<<<<<<<<<<<
  *                 if payload_get('exclude_active'):
@@ -2520,7 +2520,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
 
     /* "smelly/rc/select_window.py":79
  *                 responder.send_error('No window selected')
- * 
+ *
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if tab:
  *                 if payload_get('exclude_active'):
@@ -2533,7 +2533,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
  *                 )
  *                 break
  *         return AsyncResponse()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2560,10 +2560,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
 
   /* "smelly/rc/select_window.py":70
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  */
 
   /* function exit code */
@@ -2589,10 +2589,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_2response_f
 
 /* "smelly/rc/select_window.py":91
  *         return AsyncResponse()
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:             # <<<<<<<<<<<<<<
  *         boss.cancel_current_visual_select()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2694,11 +2694,11 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_4cancel_asy
   __Pyx_RefNannySetupContext("cancel_async_request", 0);
 
   /* "smelly/rc/select_window.py":92
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:
  *         boss.cancel_current_visual_select()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_boss, __pyx_n_s_cancel_current_visual_select); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2721,10 +2721,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13select_window_12SelectWindow_4cancel_asy
 
   /* "smelly/rc/select_window.py":91
  *         return AsyncResponse()
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:             # <<<<<<<<<<<<<<
  *         boss.cancel_current_visual_select()
- * 
+ *
  */
 
   /* function exit code */
@@ -2997,7 +2997,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/select_window.py":73
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  *         def callback(tab: Optional['Tab'], window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *             if window:
  *                 responder.send_data(window.id)
@@ -3009,7 +3009,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/select_window.py":60
  *     is_asynchronous = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {
  *             'self': opts.self,
@@ -3021,10 +3021,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/select_window.py":70
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get, __pyx_n_s_responder, __pyx_n_s_callback, __pyx_n_s_callback, __pyx_n_s_tab, __pyx_n_s_wids); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -3033,10 +3033,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/select_window.py":91
  *         return AsyncResponse()
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:             # <<<<<<<<<<<<<<
  *         boss.cancel_current_visual_select()
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -3343,9 +3343,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/select_window.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.types import AsyncResponse
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -3371,9 +3371,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/select_window.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from smelly.types import AsyncResponse             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -3392,9 +3392,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/select_window.py":8
  * from smelly.types import AsyncResponse
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -3469,7 +3469,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/select_window.py":10
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SelectWindowRCOptions as CLIOptions
  *     from smelly.tabs import Tab
@@ -3481,11 +3481,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/select_window.py":11
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SelectWindowRCOptions as CLIOptions             # <<<<<<<<<<<<<<
  *     from smelly.tabs import Tab
- * 
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -3505,8 +3505,8 @@ if (!__Pyx_RefNanny) {
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SelectWindowRCOptions as CLIOptions
  *     from smelly.tabs import Tab             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3524,7 +3524,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/select_window.py":10
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SelectWindowRCOptions as CLIOptions
  *     from smelly.tabs import Tab
@@ -3532,8 +3532,8 @@ if (!__Pyx_RefNanny) {
   }
 
   /* "smelly/rc/select_window.py":15
- * 
- * 
+ *
+ *
  * class SelectWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The tab to open the new window in
@@ -3551,7 +3551,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/select_window.py":16
- * 
+ *
  * class SelectWindow(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: The tab to open the new window in
@@ -3562,7 +3562,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/select_window.py":24
  *     '''
- * 
+ *
  *     short_desc = 'Visually select a window in the specified tab'             # <<<<<<<<<<<<<<
  *     desc = 'Prints out the id of the selected window. Other commands' ' can then be chained to make use of it.'
  *     options_spec = (
@@ -3570,7 +3570,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_short_desc, __pyx_kp_s_Visually_select_a_window_in_the) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
   /* "smelly/rc/select_window.py":25
- * 
+ *
  *     short_desc = 'Visually select a window in the specified tab'
  *     desc = 'Prints out the id of the selected window. Other commands' ' can then be chained to make use of it.'             # <<<<<<<<<<<<<<
  *     options_spec = (
@@ -3616,14 +3616,14 @@ if (!__Pyx_RefNanny) {
  * '''
  *     )
  *     is_asynchronous = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_is_asynchronous, Py_True) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
 
   /* "smelly/rc/select_window.py":60
  *     is_asynchronous = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {
  *             'self': opts.self,
@@ -3652,10 +3652,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/select_window.py":70
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         responder = self.create_async_responder(payload_get, window)
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -3690,10 +3690,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/select_window.py":91
  *         return AsyncResponse()
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:             # <<<<<<<<<<<<<<
  *         boss.cancel_current_visual_select()
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -3718,8 +3718,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/rc/select_window.py":15
- * 
- * 
+ *
+ *
  * class SelectWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The tab to open the new window in
@@ -3733,8 +3733,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/select_window.py":95
- * 
- * 
+ *
+ *
  * select_window = SelectWindow()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SelectWindow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
@@ -3748,7 +3748,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/select_window.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

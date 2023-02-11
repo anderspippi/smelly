@@ -975,11 +975,11 @@ struct __pyx_defaults {
 };
 
 /* "smelly_tests/hints.py":10
- * 
+ *
  * class TestHints(BaseTest):
  *     def test_url_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_5hints___pyx_scope_struct__test_url_hints {
   PyObject_HEAD
@@ -998,10 +998,10 @@ struct __pyx_obj_12smelly_tests_5hints___pyx_scope_struct__test_url_hints {
 
 /* "smelly_tests/hints.py":56
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  *     def test_ip_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_5hints___pyx_scope_struct_1_test_ip_hints {
   PyObject_HEAD
@@ -1796,11 +1796,11 @@ static PyObject *__pyx_codeobj__31;
 /* Late includes */
 
 /* "smelly_tests/hints.py":10
- * 
+ *
  * class TestHints(BaseTest):
  *     def test_url_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1819,7 +1819,7 @@ static PyObject *__pyx_pw_12smelly_tests_5hints_9TestHints_1test_url_hints(PyObj
 
 /* "smelly_tests/hints.py":16
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=20, mark=mark):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             text, _ = process_escape_codes(text)
@@ -1971,7 +1971,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_crea
   __Pyx_INCREF(__pyx_v_text);
 
   /* "smelly_tests/hints.py":17
- * 
+ *
  *         def create_marks(text, cols=20, mark=mark):
  *             text = convert_text(text, cols)             # <<<<<<<<<<<<<<
  *             text, _ = process_escape_codes(text)
@@ -2032,7 +2032,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_crea
  *             text = convert_text(text, cols)
  *             text, _ = process_escape_codes(text)             # <<<<<<<<<<<<<<
  *             return tuple(mark(pattern, post_processors, text, args))
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_process_escape_codes)) { __Pyx_RaiseClosureNameError("process_escape_codes"); __PYX_ERR(0, 18, __pyx_L1_error) }
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_process_escape_codes);
@@ -2061,11 +2061,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_crea
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -2106,7 +2106,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_crea
  *             text = convert_text(text, cols)
  *             text, _ = process_escape_codes(text)
  *             return tuple(mark(pattern, post_processors, text, args))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def t(text, url, cols=20):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2174,7 +2174,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_crea
 
   /* "smelly_tests/hints.py":16
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=20, mark=mark):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             text, _ = process_escape_codes(text)
@@ -2198,7 +2198,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_crea
 
 /* "smelly_tests/hints.py":21
  *             return tuple(mark(pattern, post_processors, text, args))
- * 
+ *
  *         def t(text, url, cols=20):             # <<<<<<<<<<<<<<
  *             marks = create_marks(text, cols)
  *             urls = [m.text for m in marks]
@@ -2308,7 +2308,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_2t(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/hints.py":22
- * 
+ *
  *         def t(text, url, cols=20):
  *             marks = create_marks(text, cols)             # <<<<<<<<<<<<<<
  *             urls = [m.text for m in marks]
@@ -2334,7 +2334,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_2t(P
  *             marks = create_marks(text, cols)
  *             urls = [m.text for m in marks]             # <<<<<<<<<<<<<<
  *             self.ae(urls, [url])
- * 
+ *
  */
   __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2392,7 +2392,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_2t(P
  *             marks = create_marks(text, cols)
  *             urls = [m.text for m in marks]
  *             self.ae(urls, [url])             # <<<<<<<<<<<<<<
- * 
+ *
  *         u = 'http://test.me/'
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 24, __pyx_L1_error) }
@@ -2454,7 +2454,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_2t(P
 
   /* "smelly_tests/hints.py":21
  *             return tuple(mark(pattern, post_processors, text, args))
- * 
+ *
  *         def t(text, url, cols=20):             # <<<<<<<<<<<<<<
  *             marks = create_marks(text, cols)
  *             urls = [m.text for m in marks]
@@ -2482,7 +2482,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_2t(P
 
 /* "smelly_tests/hints.py":38
  *           'http://test.me/123456')
- * 
+ *
  *         def m(text, path, line, cols=20):             # <<<<<<<<<<<<<<
  *             def adapt(pattern, postprocessors, text, *a):
  *                 return linenum_marks(text, args, Mark, ())
@@ -2580,11 +2580,11 @@ static PyObject *__pyx_pw_12smelly_tests_5hints_9TestHints_14test_url_hints_5m(P
 }
 
 /* "smelly_tests/hints.py":39
- * 
+ *
  *         def m(text, path, line, cols=20):
  *             def adapt(pattern, postprocessors, text, *a):             # <<<<<<<<<<<<<<
  *                 return linenum_marks(text, args, Mark, ())
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2698,7 +2698,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_1m_a
  *         def m(text, path, line, cols=20):
  *             def adapt(pattern, postprocessors, text, *a):
  *                 return linenum_marks(text, args, Mark, ())             # <<<<<<<<<<<<<<
- * 
+ *
  *             marks = create_marks(text, cols, mark=adapt)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2762,11 +2762,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_1m_a
   goto __pyx_L0;
 
   /* "smelly_tests/hints.py":39
- * 
+ *
  *         def m(text, path, line, cols=20):
  *             def adapt(pattern, postprocessors, text, *a):             # <<<<<<<<<<<<<<
  *                 return linenum_marks(text, args, Mark, ())
- * 
+ *
  */
 
   /* function exit code */
@@ -2785,7 +2785,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_1m_a
 
 /* "smelly_tests/hints.py":38
  *           'http://test.me/123456')
- * 
+ *
  *         def m(text, path, line, cols=20):             # <<<<<<<<<<<<<<
  *             def adapt(pattern, postprocessors, text, *a):
  *                 return linenum_marks(text, args, Mark, ())
@@ -2817,11 +2817,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_4m(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/hints.py":39
- * 
+ *
  *         def m(text, path, line, cols=20):
  *             def adapt(pattern, postprocessors, text, *a):             # <<<<<<<<<<<<<<
  *                 return linenum_marks(text, args, Mark, ())
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_5hints_9TestHints_14test_url_hints_1m_1adapt, 0, __pyx_n_s_TestHints_test_url_hints_locals, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_hints, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2830,7 +2830,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_4m(P
 
   /* "smelly_tests/hints.py":42
  *                 return linenum_marks(text, args, Mark, ())
- * 
+ *
  *             marks = create_marks(text, cols, mark=adapt)             # <<<<<<<<<<<<<<
  *             data = {
  *                 'groupdicts': [m.groupdict for m in marks],
@@ -2920,7 +2920,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_4m(P
  *                 'groupdicts': [m.groupdict for m in marks],
  *                 'match': [m.text for m in marks]}             # <<<<<<<<<<<<<<
  *             self.ae(linenum_process_result(data), (path, line))
- * 
+ *
  */
   __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2980,7 +2980,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_4m(P
  *                 'groupdicts': [m.groupdict for m in marks],
  *                 'match': [m.text for m in marks]}
  *             self.ae(linenum_process_result(data), (path, line))             # <<<<<<<<<<<<<<
- * 
+ *
  *         args = parse_hints_args('--type=linenum'.split())[0]
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 46, __pyx_L1_error) }
@@ -3064,7 +3064,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_4m(P
 
   /* "smelly_tests/hints.py":38
  *           'http://test.me/123456')
- * 
+ *
  *         def m(text, path, line, cols=20):             # <<<<<<<<<<<<<<
  *             def adapt(pattern, postprocessors, text, *a):
  *                 return linenum_marks(text, args, Mark, ())
@@ -3093,11 +3093,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_14test_url_hints_4m(P
 }
 
 /* "smelly_tests/hints.py":10
- * 
+ *
  * class TestHints(BaseTest):
  *     def test_url_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -3137,7 +3137,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
  * class TestHints(BaseTest):
  *     def test_url_hints(self):
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes             # <<<<<<<<<<<<<<
- * 
+ *
  *         args = parse_hints_args([])[0]
  */
   __pyx_t_1 = PyList_New(8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -3218,10 +3218,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
 
   /* "smelly_tests/hints.py":13
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
- * 
+ *
  *         args = parse_hints_args([])[0]             # <<<<<<<<<<<<<<
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3250,10 +3250,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
   __pyx_t_3 = 0;
 
   /* "smelly_tests/hints.py":14
- * 
+ *
  *         args = parse_hints_args([])[0]
  *         pattern, post_processors = functions_for(args)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def create_marks(text, cols=20, mark=mark):
  */
   __Pyx_INCREF(__pyx_v_functions_for);
@@ -3282,11 +3282,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_1);
@@ -3327,7 +3327,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
 
   /* "smelly_tests/hints.py":16
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=20, mark=mark):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             text, _ = process_escape_codes(text)
@@ -3345,7 +3345,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
 
   /* "smelly_tests/hints.py":21
  *             return tuple(mark(pattern, post_processors, text, args))
- * 
+ *
  *         def t(text, url, cols=20):             # <<<<<<<<<<<<<<
  *             marks = create_marks(text, cols)
  *             urls = [m.text for m in marks]
@@ -3358,7 +3358,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
 
   /* "smelly_tests/hints.py":26
  *             self.ae(urls, [url])
- * 
+ *
  *         u = 'http://test.me/'             # <<<<<<<<<<<<<<
  *         t(u, 'http://test.me/')
  *         t(f'"{u}"', u)
@@ -3367,7 +3367,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
   __pyx_v_u = __pyx_kp_s_http_test_me;
 
   /* "smelly_tests/hints.py":27
- * 
+ *
  *         u = 'http://test.me/'
  *         t(u, 'http://test.me/')             # <<<<<<<<<<<<<<
  *         t(f'"{u}"', u)
@@ -3633,7 +3633,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
  *         t('\x1b[mhttp://test.me/1234\n\x1b[mx', 'http://test.me/1234')
  *         t('\x1b[mhttp://test.me/12345\r\x1b[m6\n\x1b[mx',             # <<<<<<<<<<<<<<
  *           'http://test.me/123456')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_Call(__pyx_v_t, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3641,7 +3641,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
 
   /* "smelly_tests/hints.py":38
  *           'http://test.me/123456')
- * 
+ *
  *         def m(text, path, line, cols=20):             # <<<<<<<<<<<<<<
  *             def adapt(pattern, postprocessors, text, *a):
  *                 return linenum_marks(text, args, Mark, ())
@@ -3654,7 +3654,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
 
   /* "smelly_tests/hints.py":48
  *             self.ae(linenum_process_result(data), (path, line))
- * 
+ *
  *         args = parse_hints_args('--type=linenum'.split())[0]             # <<<<<<<<<<<<<<
  *         m('file.c:23', 'file.c', 23)
  *         m('file.c:23:32', 'file.c', 23)
@@ -3702,7 +3702,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
   __pyx_t_3 = 0;
 
   /* "smelly_tests/hints.py":49
- * 
+ *
  *         args = parse_hints_args('--type=linenum'.split())[0]
  *         m('file.c:23', 'file.c', 23)             # <<<<<<<<<<<<<<
  *         m('file.c:23:32', 'file.c', 23)
@@ -3750,7 +3750,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
  *         m('a/file.c:23', 'a/file.c', 23)
  *         m('a/file.c:23:32', 'a/file.c', 23)             # <<<<<<<<<<<<<<
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_Call(__pyx_v_m, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3760,7 +3760,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
  *         m('a/file.c:23', 'a/file.c', 23)
  *         m('a/file.c:23:32', 'a/file.c', 23)
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ip_hints(self):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -3803,11 +3803,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/hints.py":10
- * 
+ *
  * class TestHints(BaseTest):
  *     def test_url_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
- * 
+ *
  */
 
   /* function exit code */
@@ -3835,10 +3835,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_test_url_hints(CYTHON
 
 /* "smelly_tests/hints.py":56
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  *     def test_ip_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3857,7 +3857,7 @@ static PyObject *__pyx_pw_12smelly_tests_5hints_9TestHints_3test_ip_hints(PyObje
 
 /* "smelly_tests/hints.py":62
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=60):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             return tuple(mark(pattern, post_processors, text, args))
@@ -3951,11 +3951,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_13test_ip_hints_creat
   __Pyx_INCREF(__pyx_v_text);
 
   /* "smelly_tests/hints.py":63
- * 
+ *
  *         def create_marks(text, cols=60):
  *             text = convert_text(text, cols)             # <<<<<<<<<<<<<<
  *             return tuple(mark(pattern, post_processors, text, args))
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_convert_text)) { __Pyx_RaiseClosureNameError("convert_text"); __PYX_ERR(0, 63, __pyx_L1_error) }
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_convert_text);
@@ -4011,7 +4011,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_13test_ip_hints_creat
  *         def create_marks(text, cols=60):
  *             text = convert_text(text, cols)
  *             return tuple(mark(pattern, post_processors, text, args))             # <<<<<<<<<<<<<<
- * 
+ *
  *         testcases = (
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4080,7 +4080,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_13test_ip_hints_creat
 
   /* "smelly_tests/hints.py":62
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=60):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             return tuple(mark(pattern, post_processors, text, args))
@@ -4103,10 +4103,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_13test_ip_hints_creat
 
 /* "smelly_tests/hints.py":56
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  *     def test_ip_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -4158,10 +4158,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
   }
 
   /* "smelly_tests/hints.py":57
- * 
+ *
  *     def test_ip_hints(self):
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args             # <<<<<<<<<<<<<<
- * 
+ *
  *         args = parse_hints_args(['--type', 'ip'])[0]
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -4207,10 +4207,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
 
   /* "smelly_tests/hints.py":59
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
- * 
+ *
  *         args = parse_hints_args(['--type', 'ip'])[0]             # <<<<<<<<<<<<<<
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4245,10 +4245,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
   __pyx_t_3 = 0;
 
   /* "smelly_tests/hints.py":60
- * 
+ *
  *         args = parse_hints_args(['--type', 'ip'])[0]
  *         pattern, post_processors = functions_for(args)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def create_marks(text, cols=60):
  */
   __Pyx_INCREF(__pyx_v_functions_for);
@@ -4277,11 +4277,11 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_1);
@@ -4322,7 +4322,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
 
   /* "smelly_tests/hints.py":62
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=60):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             return tuple(mark(pattern, post_processors, text, args))
@@ -4334,7 +4334,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
   __pyx_t_3 = 0;
 
   /* "smelly_tests/hints.py":67
- * 
+ *
  *         testcases = (
  *             ('100.64.0.0', ['100.64.0.0']),             # <<<<<<<<<<<<<<
  *             ('2001:0db8:0000:0000:0000:ff00:0042:8329', [
@@ -4503,7 +4503,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
  *             ('255.255.255.256', []),
  *             (':1', []),             # <<<<<<<<<<<<<<
  *         )
- * 
+ *
  */
   __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4517,7 +4517,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
   __pyx_t_3 = 0;
 
   /* "smelly_tests/hints.py":67
- * 
+ *
  *         testcases = (
  *             ('100.64.0.0', ['100.64.0.0']),             # <<<<<<<<<<<<<<
  *             ('2001:0db8:0000:0000:0000:ff00:0042:8329', [
@@ -4557,7 +4557,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
 
   /* "smelly_tests/hints.py":81
  *         )
- * 
+ *
  *         for testcase, expected in testcases:             # <<<<<<<<<<<<<<
  *             with self.subTest(testcase=testcase, expected=expected):
  *                 marks = create_marks(testcase)
@@ -4580,8 +4580,8 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
         __PYX_ERR(0, 81, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_10);
       __Pyx_INCREF(__pyx_t_9);
       #else
@@ -4600,7 +4600,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
     __pyx_t_9 = 0;
 
     /* "smelly_tests/hints.py":82
- * 
+ *
  *         for testcase, expected in testcases:
  *             with self.subTest(testcase=testcase, expected=expected):             # <<<<<<<<<<<<<<
  *                 marks = create_marks(testcase)
@@ -4773,7 +4773,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
             __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
             /* "smelly_tests/hints.py":82
- * 
+ *
  *         for testcase, expected in testcases:
  *             with self.subTest(testcase=testcase, expected=expected):             # <<<<<<<<<<<<<<
  *                 marks = create_marks(testcase)
@@ -4816,7 +4816,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
               __Pyx_GIVEREF(__pyx_t_9);
               __Pyx_XGIVEREF(__pyx_t_8);
               __Pyx_ErrRestoreWithState(__pyx_t_10, __pyx_t_9, __pyx_t_8);
-              __pyx_t_10 = 0; __pyx_t_9 = 0; __pyx_t_8 = 0; 
+              __pyx_t_10 = 0; __pyx_t_9 = 0; __pyx_t_8 = 0;
               __PYX_ERR(0, 82, __pyx_L15_except_error)
             }
             __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -4860,7 +4860,7 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
 
     /* "smelly_tests/hints.py":81
  *         )
- * 
+ *
  *         for testcase, expected in testcases:             # <<<<<<<<<<<<<<
  *             with self.subTest(testcase=testcase, expected=expected):
  *                 marks = create_marks(testcase)
@@ -4870,10 +4870,10 @@ static PyObject *__pyx_pf_12smelly_tests_5hints_9TestHints_2test_ip_hints(CYTHON
 
   /* "smelly_tests/hints.py":56
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  *     def test_ip_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
- * 
+ *
  */
 
   /* function exit code */
@@ -5397,11 +5397,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly_tests/hints.py":39
- * 
+ *
  *         def m(text, path, line, cols=20):
  *             def adapt(pattern, postprocessors, text, *a):             # <<<<<<<<<<<<<<
  *                 return linenum_marks(text, args, Mark, ())
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_pattern, __pyx_n_s_postprocessors, __pyx_n_s_text, __pyx_n_s_a); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -5410,7 +5410,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/hints.py":16
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=20, mark=mark):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             text, _ = process_escape_codes(text)
@@ -5422,7 +5422,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/hints.py":21
  *             return tuple(mark(pattern, post_processors, text, args))
- * 
+ *
  *         def t(text, url, cols=20):             # <<<<<<<<<<<<<<
  *             marks = create_marks(text, cols)
  *             urls = [m.text for m in marks]
@@ -5451,7 +5451,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         t('\x1b[mhttp://test.me/1234\n\x1b[mx', 'http://test.me/1234')
  *         t('\x1b[mhttp://test.me/12345\r\x1b[m6\n\x1b[mx',             # <<<<<<<<<<<<<<
  *           'http://test.me/123456')
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(2, __pyx_kp_s_mhttp_test_me_12345_m6_mx, __pyx_kp_s_http_test_me_123456); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -5459,7 +5459,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/hints.py":38
  *           'http://test.me/123456')
- * 
+ *
  *         def m(text, path, line, cols=20):             # <<<<<<<<<<<<<<
  *             def adapt(pattern, postprocessors, text, *a):
  *                 return linenum_marks(text, args, Mark, ())
@@ -5473,7 +5473,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__17);
 
   /* "smelly_tests/hints.py":49
- * 
+ *
  *         args = parse_hints_args('--type=linenum'.split())[0]
  *         m('file.c:23', 'file.c', 23)             # <<<<<<<<<<<<<<
  *         m('file.c:23:32', 'file.c', 23)
@@ -5521,7 +5521,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         m('a/file.c:23', 'a/file.c', 23)
  *         m('a/file.c:23:32', 'a/file.c', 23)             # <<<<<<<<<<<<<<
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  */
   __pyx_tuple__22 = PyTuple_Pack(3, __pyx_kp_s_a_file_c_23_32, __pyx_kp_s_a_file_c, __pyx_int_23); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
@@ -5529,7 +5529,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/hints.py":62
  *         pattern, post_processors = functions_for(args)
- * 
+ *
  *         def create_marks(text, cols=60):             # <<<<<<<<<<<<<<
  *             text = convert_text(text, cols)
  *             return tuple(mark(pattern, post_processors, text, args))
@@ -5543,7 +5543,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__25);
 
   /* "smelly_tests/hints.py":82
- * 
+ *
  *         for testcase, expected in testcases:
  *             with self.subTest(testcase=testcase, expected=expected):             # <<<<<<<<<<<<<<
  *                 marks = create_marks(testcase)
@@ -5554,11 +5554,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__26);
 
   /* "smelly_tests/hints.py":10
- * 
+ *
  * class TestHints(BaseTest):
  *     def test_url_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
- * 
+ *
  */
   __pyx_tuple__28 = PyTuple_Pack(19, __pyx_n_s_self, __pyx_n_s_Mark, __pyx_n_s_convert_text, __pyx_n_s_functions_for, __pyx_n_s_linenum_marks, __pyx_n_s_linenum_process_result, __pyx_n_s_mark, __pyx_n_s_parse_hints_args, __pyx_n_s_process_escape_codes, __pyx_n_s_args, __pyx_n_s_pattern, __pyx_n_s_post_processors, __pyx_n_s_create_marks, __pyx_n_s_create_marks, __pyx_n_s_t, __pyx_n_s_t, __pyx_n_s_u, __pyx_n_s_m, __pyx_n_s_m); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
@@ -5567,10 +5567,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/hints.py":56
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  *     def test_ip_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
- * 
+ *
  */
   __pyx_tuple__30 = PyTuple_Pack(16, __pyx_n_s_self, __pyx_n_s_convert_text, __pyx_n_s_functions_for, __pyx_n_s_mark, __pyx_n_s_parse_hints_args, __pyx_n_s_args, __pyx_n_s_pattern, __pyx_n_s_post_processors, __pyx_n_s_create_marks, __pyx_n_s_create_marks, __pyx_n_s_testcases, __pyx_n_s_testcase, __pyx_n_s_expected, __pyx_n_s_marks, __pyx_n_s_ips, __pyx_n_s_m); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
@@ -5884,9 +5884,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/hints.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -5896,10 +5896,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/hints.py":6
  * import os
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5916,8 +5916,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/hints.py":9
- * 
- * 
+ *
+ *
  * class TestHints(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_url_hints(self):
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
@@ -5935,11 +5935,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/hints.py":10
- * 
+ *
  * class TestHints(BaseTest):
  *     def test_url_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_5hints_9TestHints_1test_url_hints, 0, __pyx_n_s_TestHints_test_url_hints, NULL, __pyx_n_s_smelly_tests_hints, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5948,10 +5948,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/hints.py":56
  *         m('~/file.c:23:32', os.path.expanduser('~/file.c'), 23)
- * 
+ *
  *     def test_ip_hints(self):             # <<<<<<<<<<<<<<
  *         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_5hints_9TestHints_3test_ip_hints, 0, __pyx_n_s_TestHints_test_ip_hints, NULL, __pyx_n_s_smelly_tests_hints, __pyx_d, ((PyObject *)__pyx_codeobj__31)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5959,8 +5959,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/hints.py":9
- * 
- * 
+ *
+ *
  * class TestHints(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_url_hints(self):
  *         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
@@ -5976,7 +5976,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/hints.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

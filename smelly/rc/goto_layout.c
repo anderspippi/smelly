@@ -1606,11 +1606,11 @@ static PyObject *__pyx_codeobj__7;
 /* Late includes */
 
 /* "smelly/rc/goto_layout.py":12
- * 
- * 
+ *
+ *
  * def layout_names() -> Iterable[str]:             # <<<<<<<<<<<<<<
  *     from smelly.layout.interface import all_layouts
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1640,10 +1640,10 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_layout_names(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("layout_names", 0);
 
   /* "smelly/rc/goto_layout.py":13
- * 
+ *
  * def layout_names() -> Iterable[str]:
  *     from smelly.layout.interface import all_layouts             # <<<<<<<<<<<<<<
- * 
+ *
  *     return all_layouts.keys()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -1663,10 +1663,10 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_layout_names(CYTHON_UNUSED P
 
   /* "smelly/rc/goto_layout.py":15
  *     from smelly.layout.interface import all_layouts
- * 
+ *
  *     return all_layouts.keys()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_layouts, __pyx_n_s_keys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
@@ -1691,11 +1691,11 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_layout_names(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly/rc/goto_layout.py":12
- * 
- * 
+ *
+ *
  * def layout_names() -> Iterable[str]:             # <<<<<<<<<<<<<<
  *     from smelly.layout.interface import all_layouts
- * 
+ *
  */
 
   /* function exit code */
@@ -1714,7 +1714,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_layout_names(CYTHON_UNUSED P
 
 /* "smelly/rc/goto_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Exactly one layout must be specified')
@@ -1821,7 +1821,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_message_to_smel
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/goto_layout.py":39
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) != 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Exactly one layout must be specified')
@@ -1836,7 +1836,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_message_to_smel
  *         if len(args) != 1:
  *             self.fatal('Exactly one layout must be specified')             # <<<<<<<<<<<<<<
  *         return {'layout': args[0], 'match': opts.match}
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fatal); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -1858,7 +1858,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_message_to_smel
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/goto_layout.py":39
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) != 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Exactly one layout must be specified')
@@ -1870,7 +1870,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_message_to_smel
  *         if len(args) != 1:
  *             self.fatal('Exactly one layout must be specified')
  *         return {'layout': args[0], 'match': opts.match}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1890,7 +1890,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_message_to_smel
 
   /* "smelly/rc/goto_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Exactly one layout must be specified')
@@ -1911,7 +1911,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_message_to_smel
 
 /* "smelly/rc/goto_layout.py":43
  *         return {'layout': args[0], 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         tabs = self.tabs_for_match_payload(boss, window, payload_get)
  *         for tab in tabs:
@@ -2033,7 +2033,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_2response_from_
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/goto_layout.py":44
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         tabs = self.tabs_for_match_payload(boss, window, payload_get)             # <<<<<<<<<<<<<<
  *         for tab in tabs:
@@ -2245,7 +2245,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_2response_from_
  *                 except ValueError:
  *                     raise UnknownLayout('The layout {} is unknown or disabled'.format(payload_get('layout')))             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_UnknownLayout); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 50, __pyx_L8_except_error)
           __Pyx_GOTREF(__pyx_t_13);
@@ -2344,8 +2344,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_2response_from_
  *                 except ValueError:
  *                     raise UnknownLayout('The layout {} is unknown or disabled'.format(payload_get('layout')))
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2353,7 +2353,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11goto_layout_10GotoLayout_2response_from_
 
   /* "smelly/rc/goto_layout.py":43
  *         return {'layout': args[0], 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         tabs = self.tabs_for_match_payload(boss, window, payload_get)
  *         for tab in tabs:
@@ -2520,11 +2520,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/rc/goto_layout.py":12
- * 
- * 
+ *
+ *
  * def layout_names() -> Iterable[str]:             # <<<<<<<<<<<<<<
  *     from smelly.layout.interface import all_layouts
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_all_layouts); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -2533,7 +2533,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/goto_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Exactly one layout must be specified')
@@ -2545,7 +2545,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/goto_layout.py":43
  *         return {'layout': args[0], 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         tabs = self.tabs_for_match_payload(boss, window, payload_get)
  *         for tab in tabs:
@@ -2845,9 +2845,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/goto_layout.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Iterable, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, UnknownLayout, Window
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2880,9 +2880,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/goto_layout.py":6
  * from typing import TYPE_CHECKING, Iterable, Optional
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, UnknownLayout, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2964,10 +2964,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/goto_layout.py":8
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, UnknownLayout, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import GotoLayoutRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2976,11 +2976,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/goto_layout.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import GotoLayoutRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2998,19 +2998,19 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/goto_layout.py":8
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, UnknownLayout, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import GotoLayoutRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/goto_layout.py":12
- * 
- * 
+ *
+ *
  * def layout_names() -> Iterable[str]:             # <<<<<<<<<<<<<<
  *     from smelly.layout.interface import all_layouts
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3029,8 +3029,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/rc/goto_layout.py":18
- * 
- * 
+ *
+ *
  * class GotoLayout(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     layout+/str: The new layout name
@@ -3048,7 +3048,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/rc/goto_layout.py":19
- * 
+ *
  * class GotoLayout(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     layout+/str: The new layout name
@@ -3059,7 +3059,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/goto_layout.py":24
  *     '''
- * 
+ *
  *     short_desc = 'Set the window layout'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Set the window layout in the specified tabs (or the active tab if not specified).'
@@ -3175,7 +3175,7 @@ if (!__Pyx_RefNanny) {
  *         completion=RemoteCommand.CompletionSpec.from_string('type:keyword group:"Layout" kwds:' + ','.join(layout_names())),
  *         args_choices=layout_names,             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_layout_names); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -3198,7 +3198,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/goto_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Exactly one layout must be specified')
@@ -3227,7 +3227,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/goto_layout.py":43
  *         return {'layout': args[0], 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         tabs = self.tabs_for_match_payload(boss, window, payload_get)
  *         for tab in tabs:
@@ -3264,8 +3264,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/goto_layout.py":18
- * 
- * 
+ *
+ *
  * class GotoLayout(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     layout+/str: The new layout name
@@ -3279,8 +3279,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/goto_layout.py":54
- * 
- * 
+ *
+ *
  * goto_layout = GotoLayout()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_GotoLayout); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -3294,7 +3294,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/goto_layout.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);

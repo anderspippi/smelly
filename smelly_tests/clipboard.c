@@ -1430,7 +1430,7 @@ static PyObject *__pyx_codeobj__5;
 /* Late includes */
 
 /* "smelly_tests/clipboard.py":11
- * 
+ *
  * class TestClipboard(BaseTest):
  *     def test_clipboard_write_request(self):             # <<<<<<<<<<<<<<
  *         wr = WriteRequest(max_size=64)
@@ -2127,7 +2127,7 @@ static PyObject *__pyx_pf_12smelly_tests_9clipboard_13TestClipboard_test_clipboa
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/clipboard.py":11
- * 
+ *
  * class TestClipboard(BaseTest):
  *     def test_clipboard_write_request(self):             # <<<<<<<<<<<<<<
  *         wr = WriteRequest(max_size=64)
@@ -2261,7 +2261,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__2);
 
   /* "smelly_tests/clipboard.py":11
- * 
+ *
  * class TestClipboard(BaseTest):
  *     def test_clipboard_write_request(self):             # <<<<<<<<<<<<<<
  *         wr = WriteRequest(max_size=64)
@@ -2554,10 +2554,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/clipboard.py":5
- * 
- * 
+ *
+ *
  * from smelly.clipboard import WriteRequest             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2576,10 +2576,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/clipboard.py":7
  * from smelly.clipboard import WriteRequest
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2596,8 +2596,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/clipboard.py":10
- * 
- * 
+ *
+ *
  * class TestClipboard(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_clipboard_write_request(self):
  *         wr = WriteRequest(max_size=64)
@@ -2615,7 +2615,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/clipboard.py":11
- * 
+ *
  * class TestClipboard(BaseTest):
  *     def test_clipboard_write_request(self):             # <<<<<<<<<<<<<<
  *         wr = WriteRequest(max_size=64)
@@ -2627,8 +2627,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/clipboard.py":10
- * 
- * 
+ *
+ *
  * class TestClipboard(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_clipboard_write_request(self):
  *         wr = WriteRequest(max_size=64)
@@ -2644,7 +2644,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/clipboard.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

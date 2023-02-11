@@ -981,8 +981,8 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_11_test_render_string
 struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_12_genexpr;
 
 /* "smelly/fonts/render.py":55
- * 
- * 
+ *
+ *
  * def merge_ranges(             # <<<<<<<<<<<<<<
  *     a: Tuple[Tuple[int, int], _T], b: Tuple[Tuple[int, int], _T], priority_map: Dict[Tuple[int, int], int]
  * ) -> Generator[Tuple[Tuple[int, int], _T], None, None]:
@@ -1018,8 +1018,8 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct__merge_ranges {
 
 
 /* "smelly/fonts/render.py":121
- * 
- * 
+ *
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:             # <<<<<<<<<<<<<<
  *     if not maps:
  *         return maps
@@ -1035,7 +1035,7 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_1_coalesce_symbol_map
  *     priority_map = {r: i for i, r in enumerate(maps.keys())}
  *     ranges = tuple((r, maps[r]) for r in sorted(maps))             # <<<<<<<<<<<<<<
  *     ans = [ranges[0]]
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_2_genexpr {
   PyObject_HEAD
@@ -1047,8 +1047,8 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_2_genexpr {
 
 
 /* "smelly/fonts/render.py":145
- * 
- * 
+ *
+ *
  * def create_symbol_map(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     val = coalesce_symbol_maps(opts.symbol_map)
  *     family_map: Dict[str, int] = {}
@@ -1065,7 +1065,7 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_3_create_symbol_map {
  *             current_faces.append((font, bold, italic))
  *     sm = tuple((a, b, family_map[f]) for (a, b), f in val.items())             # <<<<<<<<<<<<<<
  *     return sm
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_4_genexpr {
   PyObject_HEAD
@@ -1080,11 +1080,11 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_4_genexpr {
 
 
 /* "smelly/fonts/render.py":159
- * 
- * 
+ *
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_5_create_narrow_symbols {
   PyObject_HEAD
@@ -1093,11 +1093,11 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_5_create_narrow_symbo
 
 
 /* "smelly/fonts/render.py":160
- * 
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
 struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_6_genexpr {
   PyObject_HEAD
@@ -1112,8 +1112,8 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_6_genexpr {
 
 
 /* "smelly/fonts/render.py":259
- * 
- * 
+ *
+ *
  * def add_curl(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()
@@ -1128,8 +1128,8 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_7_add_curl {
 
 
 /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -1143,8 +1143,8 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_8_render_special {
 
 
 /* "smelly/fonts/render.py":353
- * 
- * 
+ *
+ *
  * def render_cursor(             # <<<<<<<<<<<<<<
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
  * ) -> CBufType:
@@ -1161,7 +1161,7 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_9_render_cursor {
 
 /* "smelly/fonts/render.py":444
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:             # <<<<<<<<<<<<<<
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)
@@ -1173,11 +1173,11 @@ struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_10___enter__ {
 
 
 /* "smelly/fonts/render.py":522
- * 
- * 
+ *
+ *
  * def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, current_fonts
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_6render___pyx_scope_struct_11_test_render_string {
   PyObject_HEAD
@@ -2969,8 +2969,8 @@ static PyObject *__pyx_codeobj__91;
 /* Late includes */
 
 /* "smelly/fonts/render.py":43
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return get_font_files_coretext(opts)
@@ -3003,7 +3003,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_get_font_files(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("get_font_files", 0);
 
   /* "smelly/fonts/render.py":44
- * 
+ *
  * def get_font_files(opts: Options) -> Dict[str, Any]:
  *     if is_macos:             # <<<<<<<<<<<<<<
  *         return get_font_files_coretext(opts)
@@ -3020,7 +3020,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_get_font_files(CYTHON_UNUSED Py
  *     if is_macos:
  *         return get_font_files_coretext(opts)             # <<<<<<<<<<<<<<
  *     return get_font_files_fontconfig(opts)
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_get_font_files_coretext); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -3045,7 +3045,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_get_font_files(CYTHON_UNUSED Py
     goto __pyx_L0;
 
     /* "smelly/fonts/render.py":44
- * 
+ *
  * def get_font_files(opts: Options) -> Dict[str, Any]:
  *     if is_macos:             # <<<<<<<<<<<<<<
  *         return get_font_files_coretext(opts)
@@ -3057,8 +3057,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_get_font_files(CYTHON_UNUSED Py
  *     if is_macos:
  *         return get_font_files_coretext(opts)
  *     return get_font_files_fontconfig(opts)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_get_font_files_fontconfig); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
@@ -3083,8 +3083,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_get_font_files(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":43
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return get_font_files_coretext(opts)
@@ -3104,8 +3104,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_get_font_files(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/render.py":49
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return font_for_family_macos(family)
@@ -3146,7 +3146,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_2font_for_family(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("font_for_family", 0);
 
   /* "smelly/fonts/render.py":50
- * 
+ *
  * def font_for_family(family: str) -> Tuple[FontObject, bool, bool]:
  *     if is_macos:             # <<<<<<<<<<<<<<
  *         return font_for_family_macos(family)
@@ -3163,7 +3163,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_2font_for_family(CYTHON_UNUSED 
  *     if is_macos:
  *         return font_for_family_macos(family)             # <<<<<<<<<<<<<<
  *     return font_for_family_fontconfig(family)
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_font_for_family_macos); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
@@ -3188,7 +3188,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_2font_for_family(CYTHON_UNUSED 
     goto __pyx_L0;
 
     /* "smelly/fonts/render.py":50
- * 
+ *
  * def font_for_family(family: str) -> Tuple[FontObject, bool, bool]:
  *     if is_macos:             # <<<<<<<<<<<<<<
  *         return font_for_family_macos(family)
@@ -3200,8 +3200,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_2font_for_family(CYTHON_UNUSED 
  *     if is_macos:
  *         return font_for_family_macos(family)
  *     return font_for_family_fontconfig(family)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_font_for_family_fontconfig); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
@@ -3226,8 +3226,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_2font_for_family(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":49
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return font_for_family_macos(family)
@@ -3248,8 +3248,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_2font_for_family(CYTHON_UNUSED 
 static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/fonts/render.py":55
- * 
- * 
+ *
+ *
  * def merge_ranges(             # <<<<<<<<<<<<<<
  *     a: Tuple[Tuple[int, int], _T], b: Tuple[Tuple[int, int], _T], priority_map: Dict[Tuple[int, int], int]
  * ) -> Generator[Tuple[Tuple[int, int], _T], None, None]:
@@ -3426,11 +3426,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -3488,11 +3488,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_2);
@@ -4355,8 +4355,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
         __PYX_ERR(0, 101, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_2);
       #else
@@ -4694,11 +4694,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_8 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_8 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_8);
       __Pyx_INCREF(__pyx_t_2);
@@ -4744,7 +4744,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
  *     for r, p in zip(ranges, priorities):
  *         priority_map[r[0]] = p             # <<<<<<<<<<<<<<
  *     yield from ranges
- * 
+ *
  */
     __pyx_t_1 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_r, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4765,8 +4765,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
  *     for r, p in zip(ranges, priorities):
  *         priority_map[r[0]] = p
  *     yield from ranges             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_r = __Pyx_Generator_Yield_From(__pyx_generator, __pyx_cur_scope->__pyx_v_ranges);
   __Pyx_XGOTREF(__pyx_r);
@@ -4789,8 +4789,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/fonts/render.py":55
- * 
- * 
+ *
+ *
  * def merge_ranges(             # <<<<<<<<<<<<<<
  *     a: Tuple[Tuple[int, int], _T], b: Tuple[Tuple[int, int], _T], priority_map: Dict[Tuple[int, int], int]
  * ) -> Generator[Tuple[Tuple[int, int], _T], None, None]:
@@ -4818,8 +4818,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_6generator(__pyx_CoroutineObjec
 }
 
 /* "smelly/fonts/render.py":121
- * 
- * 
+ *
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:             # <<<<<<<<<<<<<<
  *     if not maps:
  *         return maps
@@ -4845,7 +4845,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_20coalesce_symbol_maps_2generat
  *     priority_map = {r: i for i, r in enumerate(maps.keys())}
  *     ranges = tuple((r, maps[r]) for r in sorted(maps))             # <<<<<<<<<<<<<<
  *     ans = [ranges[0]]
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_6render_20coalesce_symbol_maps_genexpr(PyObject *__pyx_self) {
@@ -4986,8 +4986,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_20coalesce_symbol_maps_2generat
 }
 
 /* "smelly/fonts/render.py":121
- * 
- * 
+ *
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:             # <<<<<<<<<<<<<<
  *     if not maps:
  *         return maps
@@ -5038,7 +5038,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_maps);
 
   /* "smelly/fonts/render.py":122
- * 
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:
  *     if not maps:             # <<<<<<<<<<<<<<
  *         return maps
@@ -5061,7 +5061,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
     goto __pyx_L0;
 
     /* "smelly/fonts/render.py":122
- * 
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:
  *     if not maps:             # <<<<<<<<<<<<<<
  *         return maps
@@ -5168,7 +5168,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
  *     priority_map = {r: i for i, r in enumerate(maps.keys())}
  *     ranges = tuple((r, maps[r]) for r in sorted(maps))             # <<<<<<<<<<<<<<
  *     ans = [ranges[0]]
- * 
+ *
  */
   __pyx_t_3 = __pyx_pf_6smelly_5fonts_6render_20coalesce_symbol_maps_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5182,7 +5182,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
  *     priority_map = {r: i for i, r in enumerate(maps.keys())}
  *     ranges = tuple((r, maps[r]) for r in sorted(maps))
  *     ans = [ranges[0]]             # <<<<<<<<<<<<<<
- * 
+ *
  *     for i in range(1, len(ranges)):
  */
   __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_ranges, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
@@ -5197,7 +5197,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
 
   /* "smelly/fonts/render.py":128
  *     ans = [ranges[0]]
- * 
+ *
  *     for i in range(1, len(ranges)):             # <<<<<<<<<<<<<<
  *         r = ranges[i]
  *         new_ranges = merge_ranges(ans[-1], r, priority_map)
@@ -5208,7 +5208,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
     __pyx_v_i = __pyx_t_11;
 
     /* "smelly/fonts/render.py":129
- * 
+ *
  *     for i in range(1, len(ranges)):
  *         r = ranges[i]             # <<<<<<<<<<<<<<
  *         new_ranges = merge_ranges(ans[-1], r, priority_map)
@@ -5502,7 +5502,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
  *                 else:
  *                     ans.append(r)             # <<<<<<<<<<<<<<
  *     return dict(ans)
- * 
+ *
  */
         /*else*/ {
           __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_ans, __pyx_v_r); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 141, __pyx_L1_error)
@@ -5526,8 +5526,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
  *                 else:
  *                     ans.append(r)
  *     return dict(ans)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyDict_Type)), __pyx_v_ans); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
@@ -5537,8 +5537,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":121
- * 
- * 
+ *
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:             # <<<<<<<<<<<<<<
  *     if not maps:
  *         return maps
@@ -5570,8 +5570,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_7coalesce_symbol_maps(CYTHON_UN
 }
 
 /* "smelly/fonts/render.py":145
- * 
- * 
+ *
+ *
  * def create_symbol_map(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     val = coalesce_symbol_maps(opts.symbol_map)
  *     family_map: Dict[str, int] = {}
@@ -5597,7 +5597,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_17create_symbol_map_2generator2
  *             current_faces.append((font, bold, italic))
  *     sm = tuple((a, b, family_map[f]) for (a, b), f in val.items())             # <<<<<<<<<<<<<<
  *     return sm
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_6render_17create_symbol_map_genexpr(PyObject *__pyx_self) {
@@ -5732,11 +5732,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_17create_symbol_map_2generator2
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -5778,11 +5778,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_17create_symbol_map_2generator2
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_9);
@@ -5891,8 +5891,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_17create_symbol_map_2generator2
 }
 
 /* "smelly/fonts/render.py":145
- * 
- * 
+ *
+ *
  * def create_symbol_map(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     val = coalesce_symbol_maps(opts.symbol_map)
  *     family_map: Dict[str, int] = {}
@@ -5935,7 +5935,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_9create_symbol_map(CYTHON_UNUSE
   }
 
   /* "smelly/fonts/render.py":146
- * 
+ *
  * def create_symbol_map(opts: Options) -> Tuple[Tuple[int, int, int], ...]:
  *     val = coalesce_symbol_maps(opts.symbol_map)             # <<<<<<<<<<<<<<
  *     family_map: Dict[str, int] = {}
@@ -6100,13 +6100,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_9create_symbol_map(CYTHON_UNUSE
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
-          __pyx_t_9 = PyTuple_GET_ITEM(sequence, 2); 
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
+          __pyx_t_9 = PyTuple_GET_ITEM(sequence, 2);
         } else {
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
-          __pyx_t_9 = PyList_GET_ITEM(sequence, 2); 
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
+          __pyx_t_9 = PyList_GET_ITEM(sequence, 2);
         }
         __Pyx_INCREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_4);
@@ -6219,7 +6219,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_9create_symbol_map(CYTHON_UNUSE
  *             current_faces.append((font, bold, italic))
  *     sm = tuple((a, b, family_map[f]) for (a, b), f in val.items())             # <<<<<<<<<<<<<<
  *     return sm
- * 
+ *
  */
   __pyx_t_2 = __pyx_pf_6smelly_5fonts_6render_17create_symbol_map_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6233,8 +6233,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_9create_symbol_map(CYTHON_UNUSE
  *             current_faces.append((font, bold, italic))
  *     sm = tuple((a, b, family_map[f]) for (a, b), f in val.items())
  *     return sm             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_sm);
@@ -6242,8 +6242,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_9create_symbol_map(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":145
- * 
- * 
+ *
+ *
  * def create_symbol_map(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     val = coalesce_symbol_maps(opts.symbol_map)
  *     family_map: Dict[str, int] = {}
@@ -6274,11 +6274,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_9create_symbol_map(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/render.py":159
- * 
- * 
+ *
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6297,11 +6297,11 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_12create_narrow_symbols(PyObjec
 static PyObject *__pyx_gb_6smelly_5fonts_6render_21create_narrow_symbols_2generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/fonts/render.py":160
- * 
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_6render_21create_narrow_symbols_genexpr(PyObject *__pyx_self) {
@@ -6457,11 +6457,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_21create_narrow_symbols_2genera
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_4);
@@ -6503,11 +6503,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_21create_narrow_symbols_2genera
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_9);
@@ -6609,11 +6609,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_21create_narrow_symbols_2genera
 }
 
 /* "smelly/fonts/render.py":159
- * 
- * 
+ *
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_6render_11create_narrow_symbols(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_opts) {
@@ -6640,11 +6640,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_11create_narrow_symbols(CYTHON_
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_opts);
 
   /* "smelly/fonts/render.py":160
- * 
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __pyx_pf_6smelly_5fonts_6render_21create_narrow_symbols_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
@@ -6657,11 +6657,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_11create_narrow_symbols(CYTHON_
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":159
- * 
- * 
+ *
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())
- * 
+ *
  */
 
   /* function exit code */
@@ -6679,11 +6679,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_11create_narrow_symbols(CYTHON_
 }
 
 /* "smelly/fonts/render.py":163
- * 
- * 
+ *
+ *
  * def descriptor_for_idx(idx: int) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     return current_faces[idx]
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6711,11 +6711,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13descriptor_for_idx(CYTHON_UNU
   __Pyx_RefNannySetupContext("descriptor_for_idx", 0);
 
   /* "smelly/fonts/render.py":164
- * 
+ *
  * def descriptor_for_idx(idx: int) -> Tuple[FontObject, bool, bool]:
  *     return current_faces[idx]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_current_faces); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
@@ -6728,11 +6728,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13descriptor_for_idx(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":163
- * 
- * 
+ *
+ *
  * def descriptor_for_idx(idx: int) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     return current_faces[idx]
- * 
+ *
  */
 
   /* function exit code */
@@ -6748,8 +6748,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13descriptor_for_idx(CYTHON_UNU
 }
 
 /* "smelly/fonts/render.py":167
- * 
- * 
+ *
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:             # <<<<<<<<<<<<<<
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:
  *         fo = f[0]
@@ -6821,7 +6821,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_16dump_faces(PyObject *__pyx_se
 }
 
 /* "smelly/fonts/render.py":168
- * 
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:             # <<<<<<<<<<<<<<
  *         fo = f[0]
@@ -7014,7 +7014,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_10dump_faces_face_str(CYTHON_UN
  *             return '{}:{}'.format(fo['path'], cast('FontConfigPattern', fo)['index'])
  *         fo = cast('CoreTextFont', fo)             # <<<<<<<<<<<<<<
  *         return fo['path']
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_cast); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7070,7 +7070,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_10dump_faces_face_str(CYTHON_UN
  *             return '{}:{}'.format(fo['path'], cast('FontConfigPattern', fo)['index'])
  *         fo = cast('CoreTextFont', fo)
  *         return fo['path']             # <<<<<<<<<<<<<<
- * 
+ *
  *     log_error('Preloaded font faces:')
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7082,7 +7082,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_10dump_faces_face_str(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":168
- * 
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:             # <<<<<<<<<<<<<<
  *         fo = f[0]
@@ -7108,8 +7108,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_10dump_faces_face_str(CYTHON_UN
 }
 
 /* "smelly/fonts/render.py":167
- * 
- * 
+ *
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:             # <<<<<<<<<<<<<<
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:
  *         fo = f[0]
@@ -7138,7 +7138,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("dump_faces", 0);
 
   /* "smelly/fonts/render.py":168
- * 
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:             # <<<<<<<<<<<<<<
  *         fo = f[0]
@@ -7177,7 +7177,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
 
   /* "smelly/fonts/render.py":175
  *         return fo['path']
- * 
+ *
  *     log_error('Preloaded font faces:')             # <<<<<<<<<<<<<<
  *     log_error('normal face:', face_str(current_faces[0]))
  *     for ftype in ftypes:
@@ -7202,7 +7202,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/render.py":176
- * 
+ *
  *     log_error('Preloaded font faces:')
  *     log_error('normal face:', face_str(current_faces[0]))             # <<<<<<<<<<<<<<
  *     for ftype in ftypes:
@@ -7500,7 +7500,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
  *         log_error('Symbol map faces:')
  *         for face in si_faces:             # <<<<<<<<<<<<<<
  *             log_error(face_str(face))
- * 
+ *
  */
     if (likely(PyList_CheckExact(__pyx_v_si_faces)) || PyTuple_CheckExact(__pyx_v_si_faces)) {
       __pyx_t_6 = __pyx_v_si_faces; __Pyx_INCREF(__pyx_t_6); __pyx_t_7 = 0;
@@ -7548,8 +7548,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
  *         log_error('Symbol map faces:')
  *         for face in si_faces:
  *             log_error(face_str(face))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_log_error); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 184, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
@@ -7578,7 +7578,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
  *         log_error('Symbol map faces:')
  *         for face in si_faces:             # <<<<<<<<<<<<<<
  *             log_error(face_str(face))
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -7593,8 +7593,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
   }
 
   /* "smelly/fonts/render.py":167
- * 
- * 
+ *
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:             # <<<<<<<<<<<<<<
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:
  *         fo = f[0]
@@ -7623,8 +7623,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_15dump_faces(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/fonts/render.py":187
- * 
- * 
+ *
+ *
  * def set_font_family(opts: Optional[Options] = None, override_font_size: Optional[float] = None, debug_font_matching: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     global current_faces
  *     opts = opts or defaults
@@ -8235,13 +8235,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17set_font_family(CYTHON_UNUSED
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_9 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_9 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_10 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_9 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_10 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_9 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_10);
@@ -8492,7 +8492,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17set_font_family(CYTHON_UNUSED
  *         font_features,
  *         ns,             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __pyx_t_17 = NULL;
   __pyx_t_14 = 0;
@@ -8581,8 +8581,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17set_font_family(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly/fonts/render.py":187
- * 
- * 
+ *
+ *
  * def set_font_family(opts: Optional[Options] = None, override_font_size: Optional[float] = None, debug_font_matching: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     global current_faces
  *     opts = opts or defaults
@@ -8625,8 +8625,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17set_font_family(CYTHON_UNUSED
 }
 
 /* "smelly/fonts/render.py":231
- * 
- * 
+ *
+ *
  * def add_line(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     y = position - thickness // 2
  *     while thickness > 0 and -1 < y < cell_height:
@@ -8749,7 +8749,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_19add_line(CYTHON_UNUSED PyObje
   __Pyx_INCREF(__pyx_v_thickness);
 
   /* "smelly/fonts/render.py":232
- * 
+ *
  * def add_line(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:
  *     y = position - thickness // 2             # <<<<<<<<<<<<<<
  *     while thickness > 0 and -1 < y < cell_height:
@@ -8807,7 +8807,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_19add_line(CYTHON_UNUSED PyObje
  *         thickness -= 1
  *         ctypes.memset(ctypes.addressof(buf) + (cell_width * y), 255, cell_width)             # <<<<<<<<<<<<<<
  *         y += 1
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ctypes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -8896,8 +8896,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_19add_line(CYTHON_UNUSED PyObje
  *         thickness -= 1
  *         ctypes.memset(ctypes.addressof(buf) + (cell_width * y), 255, cell_width)
  *         y += 1             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_v_y, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 236, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -8906,8 +8906,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_19add_line(CYTHON_UNUSED PyObje
   }
 
   /* "smelly/fonts/render.py":231
- * 
- * 
+ *
+ *
  * def add_line(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     y = position - thickness // 2
  *     while thickness > 0 and -1 < y < cell_height:
@@ -8933,8 +8933,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_19add_line(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/fonts/render.py":239
- * 
- * 
+ *
+ *
  * def add_dline(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     a = min(position - thickness, cell_height - 1)
  *     b = min(position, cell_height - 1)
@@ -9065,7 +9065,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_21add_dline(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("add_dline", 0);
 
   /* "smelly/fonts/render.py":240
- * 
+ *
  * def add_dline(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:
  *     a = min(position - thickness, cell_height - 1)             # <<<<<<<<<<<<<<
  *     b = min(position, cell_height - 1)
@@ -9436,7 +9436,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_21add_dline(CYTHON_UNUSED PyObj
  *     bottom = max(0, min(bottom, cell_height - 1))
  *     for y in {top, bottom}:             # <<<<<<<<<<<<<<
  *         ctypes.memset(ctypes.addressof(buf) + (cell_width * y), 255, cell_width)
- * 
+ *
  */
   __pyx_t_8 = 0;
   __pyx_t_2 = PySet_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 255, __pyx_L1_error)
@@ -9461,8 +9461,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_21add_dline(CYTHON_UNUSED PyObj
  *     bottom = max(0, min(bottom, cell_height - 1))
  *     for y in {top, bottom}:
  *         ctypes.memset(ctypes.addressof(buf) + (cell_width * y), 255, cell_width)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ctypes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 256, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -9550,8 +9550,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_21add_dline(CYTHON_UNUSED PyObj
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/render.py":239
- * 
- * 
+ *
+ *
  * def add_dline(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     a = min(position - thickness, cell_height - 1)
  *     b = min(position, cell_height - 1)
@@ -9582,8 +9582,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_21add_dline(CYTHON_UNUSED PyObj
 }
 
 /* "smelly/fonts/render.py":259
- * 
- * 
+ *
+ *
  * def add_curl(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()
@@ -9689,7 +9689,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_24add_curl(PyObject *__pyx_self
 
 /* "smelly/fonts/render.py":271
  *         thickness = max(1, thickness) - (1 if thickness < 3 else 2)
- * 
+ *
  *     def add_intensity(x: int, y: int, val: int) -> None:             # <<<<<<<<<<<<<<
  *         y += position
  *         y = min(y, max_y)
@@ -9792,7 +9792,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_8add_curl_add_intensity(PyObjec
   __Pyx_INCREF(__pyx_v_y);
 
   /* "smelly/fonts/render.py":272
- * 
+ *
  *     def add_intensity(x: int, y: int, val: int) -> None:
  *         y += position             # <<<<<<<<<<<<<<
  *         y = min(y, max_y)
@@ -9839,7 +9839,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_8add_curl_add_intensity(PyObjec
  *         y = min(y, max_y)
  *         idx = cell_width * y + x             # <<<<<<<<<<<<<<
  *         buf[idx] = min(255, buf[idx] + val)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_cell_width)) { __Pyx_RaiseClosureNameError("cell_width"); __PYX_ERR(0, 274, __pyx_L1_error) }
   __pyx_t_1 = PyNumber_Multiply(__pyx_cur_scope->__pyx_v_cell_width, __pyx_v_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
@@ -9854,7 +9854,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_8add_curl_add_intensity(PyObjec
  *         y = min(y, max_y)
  *         idx = cell_width * y + x
  *         buf[idx] = min(255, buf[idx] + val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     # Ensure curve doesn't exceed cell boundary at the bottom
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_buf)) { __Pyx_RaiseClosureNameError("buf"); __PYX_ERR(0, 275, __pyx_L1_error) }
@@ -9889,7 +9889,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_8add_curl_add_intensity(PyObjec
 
   /* "smelly/fonts/render.py":271
  *         thickness = max(1, thickness) - (1 if thickness < 3 else 2)
- * 
+ *
  *     def add_intensity(x: int, y: int, val: int) -> None:             # <<<<<<<<<<<<<<
  *         y += position
  *         y = min(y, max_y)
@@ -9914,8 +9914,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_8add_curl_add_intensity(PyObjec
 }
 
 /* "smelly/fonts/render.py":259
- * 
- * 
+ *
+ *
  * def add_curl(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()
@@ -9973,7 +9973,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
   __Pyx_INCREF(__pyx_v_thickness);
 
   /* "smelly/fonts/render.py":260
- * 
+ *
  * def add_curl(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:
  *     max_x, max_y = cell_width - 1, cell_height - 1             # <<<<<<<<<<<<<<
  *     opts = get_options()
@@ -9994,7 +9994,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()             # <<<<<<<<<<<<<<
  *     xfactor = (4.0 if 'dense' in opts.undercurl_style else 2.0) * pi / max_x
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_get_options); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10020,7 +10020,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()
  *     xfactor = (4.0 if 'dense' in opts.undercurl_style else 2.0) * pi / max_x             # <<<<<<<<<<<<<<
- * 
+ *
  *     max_height = cell_height - (position - thickness // 2)  # descender from the font
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_undercurl_style); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 262, __pyx_L1_error)
@@ -10048,7 +10048,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
 
   /* "smelly/fonts/render.py":264
  *     xfactor = (4.0 if 'dense' in opts.undercurl_style else 2.0) * pi / max_x
- * 
+ *
  *     max_height = cell_height - (position - thickness // 2)  # descender from the font             # <<<<<<<<<<<<<<
  *     half_height = max(1, max_height // 4)
  *     if 'thick' in opts.undercurl_style:
@@ -10065,7 +10065,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
   __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":265
- * 
+ *
  *     max_height = cell_height - (position - thickness // 2)  # descender from the font
  *     half_height = max(1, max_height // 4)             # <<<<<<<<<<<<<<
  *     if 'thick' in opts.undercurl_style:
@@ -10153,7 +10153,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *         thickness = max(half_height, thickness)
  *     else:
  *         thickness = max(1, thickness) - (1 if thickness < 3 else 2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_intensity(x: int, y: int, val: int) -> None:
  */
   /*else*/ {
@@ -10197,7 +10197,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
 
   /* "smelly/fonts/render.py":271
  *         thickness = max(1, thickness) - (1 if thickness < 3 else 2)
- * 
+ *
  *     def add_intensity(x: int, y: int, val: int) -> None:             # <<<<<<<<<<<<<<
  *         y += position
  *         y = min(y, max_y)
@@ -10216,7 +10216,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
   __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":278
- * 
+ *
  *     # Ensure curve doesn't exceed cell boundary at the bottom
  *     position += half_height * 2             # <<<<<<<<<<<<<<
  *     if position + half_height > max_y:
@@ -10237,7 +10237,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *     position += half_height * 2
  *     if position + half_height > max_y:             # <<<<<<<<<<<<<<
  *         position = max_y - half_height
- * 
+ *
  */
   __pyx_t_2 = PyNumber_Add(__pyx_cur_scope->__pyx_v_position, __pyx_v_half_height); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10251,7 +10251,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *     position += half_height * 2
  *     if position + half_height > max_y:
  *         position = max_y - half_height             # <<<<<<<<<<<<<<
- * 
+ *
  *     # Use the Wu antialias algorithm to draw the curve
  */
     __pyx_t_1 = PyNumber_Subtract(__pyx_cur_scope->__pyx_v_max_y, __pyx_v_half_height); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
@@ -10266,7 +10266,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *     position += half_height * 2
  *     if position + half_height > max_y:             # <<<<<<<<<<<<<<
  *         position = max_y - half_height
- * 
+ *
  */
   }
 
@@ -10473,7 +10473,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *         # fill between upper and lower bound
  *         for t in range(1, thickness + 1):             # <<<<<<<<<<<<<<
  *             add_intensity(x, y1 + t, 255)
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyInt_AddObjC(__pyx_v_thickness, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -10535,8 +10535,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *         # fill between upper and lower bound
  *         for t in range(1, thickness + 1):
  *             add_intensity(x, y1 + t, 255)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_6 = PyNumber_Add(__pyx_v_y1, __pyx_v_t); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
@@ -10550,7 +10550,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
  *         # fill between upper and lower bound
  *         for t in range(1, thickness + 1):             # <<<<<<<<<<<<<<
  *             add_intensity(x, y1 + t, 255)
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -10566,8 +10566,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":259
- * 
- * 
+ *
+ *
  * def add_curl(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()
@@ -10605,11 +10605,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_23add_curl(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/fonts/render.py":295
- * 
- * 
+ *
+ *
  * def add_dots(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     spacing, size = distribute_dots(cell_width, cell_width // (2 * thickness))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10740,10 +10740,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("add_dots", 0);
 
   /* "smelly/fonts/render.py":296
- * 
+ *
  * def add_dots(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:
  *     spacing, size = distribute_dots(cell_width, cell_width // (2 * thickness))             # <<<<<<<<<<<<<<
- * 
+ *
  *     y = 1 + position - thickness // 2
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_distribute_dots); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 296, __pyx_L1_error)
@@ -10810,11 +10810,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_6);
@@ -10853,7 +10853,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
 
   /* "smelly/fonts/render.py":298
  *     spacing, size = distribute_dots(cell_width, cell_width // (2 * thickness))
- * 
+ *
  *     y = 1 + position - thickness // 2             # <<<<<<<<<<<<<<
  *     for i in range(y, min(y + thickness, cell_height)):
  *         for j, s in enumerate(spacing):
@@ -10870,7 +10870,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
   __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":299
- * 
+ *
  *     y = 1 + position - thickness // 2
  *     for i in range(y, min(y + thickness, cell_height)):             # <<<<<<<<<<<<<<
  *         for j, s in enumerate(spacing):
@@ -10952,7 +10952,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
  *     for i in range(y, min(y + thickness, cell_height)):
  *         for j, s in enumerate(spacing):             # <<<<<<<<<<<<<<
  *             buf[cell_width * i + j * size + s : cell_width * i + (j + 1) * size + s] = [255] * size
- * 
+ *
  */
     __Pyx_INCREF(__pyx_int_0);
     __pyx_t_1 = __pyx_int_0;
@@ -11009,8 +11009,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
  *     for i in range(y, min(y + thickness, cell_height)):
  *         for j, s in enumerate(spacing):
  *             buf[cell_width * i + j * size + s : cell_width * i + (j + 1) * size + s] = [255] * size             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 301, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
@@ -11057,14 +11057,14 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
  *     for i in range(y, min(y + thickness, cell_height)):
  *         for j, s in enumerate(spacing):             # <<<<<<<<<<<<<<
  *             buf[cell_width * i + j * size + s : cell_width * i + (j + 1) * size + s] = [255] * size
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/fonts/render.py":299
- * 
+ *
  *     y = 1 + position - thickness // 2
  *     for i in range(y, min(y + thickness, cell_height)):             # <<<<<<<<<<<<<<
  *         for j, s in enumerate(spacing):
@@ -11074,11 +11074,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":295
- * 
- * 
+ *
+ *
  * def add_dots(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     spacing, size = distribute_dots(cell_width, cell_width // (2 * thickness))
- * 
+ *
  */
 
   /* function exit code */
@@ -11108,8 +11108,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_25add_dots(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/fonts/render.py":304
- * 
- * 
+ *
+ *
  * def add_dashes(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     halfspace_width = cell_width // 4
  *     y = 1 + position - thickness // 2
@@ -11234,7 +11234,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_27add_dashes(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("add_dashes", 0);
 
   /* "smelly/fonts/render.py":305
- * 
+ *
  * def add_dashes(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:
  *     halfspace_width = cell_width // 4             # <<<<<<<<<<<<<<
  *     y = 1 + position - thickness // 2
@@ -11346,7 +11346,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_27add_dashes(CYTHON_UNUSED PyOb
  *     for i in range(y, min(y + thickness, cell_height)):
  *         buf[cell_width * i : cell_width * i + (cell_width - 3 * halfspace_width)] = [255] * (cell_width - 3 * halfspace_width)             # <<<<<<<<<<<<<<
  *         buf[cell_width * i + 3 * halfspace_width : cell_width * (i + 1)] = [255] * (cell_width - 3 * halfspace_width)
- * 
+ *
  */
     __pyx_t_1 = PyNumber_Multiply(__pyx_int_3, __pyx_v_halfspace_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -11386,8 +11386,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_27add_dashes(CYTHON_UNUSED PyOb
  *     for i in range(y, min(y + thickness, cell_height)):
  *         buf[cell_width * i : cell_width * i + (cell_width - 3 * halfspace_width)] = [255] * (cell_width - 3 * halfspace_width)
  *         buf[cell_width * i + 3 * halfspace_width : cell_width * (i + 1)] = [255] * (cell_width - 3 * halfspace_width)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyNumber_Multiply(__pyx_int_3, __pyx_v_halfspace_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -11434,8 +11434,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_27add_dashes(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/render.py":304
- * 
- * 
+ *
+ *
  * def add_dashes(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     halfspace_width = cell_width // 4
  *     y = 1 + position - thickness // 2
@@ -11463,8 +11463,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_27add_dashes(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -11691,8 +11691,8 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_30render_special(PyObject *__py
   __pyx_r = __pyx_pf_6smelly_5fonts_6render_29render_special(__pyx_self, __pyx_v_underline, __pyx_v_strikethrough, __pyx_v_missing, __pyx_v_cell_width, __pyx_v_cell_height, __pyx_v_baseline, __pyx_v_underline_position, __pyx_v_underline_thickness, __pyx_v_strikethrough_position, __pyx_v_strikethrough_thickness, __pyx_v_dpi_x, __pyx_v_dpi_y);
 
   /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -11705,7 +11705,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_30render_special(PyObject *__py
 
 /* "smelly/fonts/render.py":336
  *     ans = CharTexture()
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             f(ans, cell_width, *a)
@@ -11807,7 +11807,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_14render_special_dl(PyObject *_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/render.py":337
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:
  *         try:             # <<<<<<<<<<<<<<
  *             f(ans, cell_width, *a)
@@ -11848,7 +11848,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_14render_special_dl(PyObject *_
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
       /* "smelly/fonts/render.py":337
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:
  *         try:             # <<<<<<<<<<<<<<
  *             f(ans, cell_width, *a)
@@ -11868,7 +11868,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_14render_special_dl(PyObject *_
  *             f(ans, cell_width, *a)
  *         except Exception as e:             # <<<<<<<<<<<<<<
  *             log_error(f'Failed to render {f.__name__} at cell_width={cell_width} and cell_height={cell_height} with error: {e}')
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_6) {
@@ -11884,7 +11884,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_14render_special_dl(PyObject *_
  *             f(ans, cell_width, *a)
  *         except Exception as e:
  *             log_error(f'Failed to render {f.__name__} at cell_width={cell_width} and cell_height={cell_height} with error: {e}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     if underline:
  */
       __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_log_error); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 340, __pyx_L5_except_error)
@@ -11971,7 +11971,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_14render_special_dl(PyObject *_
     __pyx_L5_except_error:;
 
     /* "smelly/fonts/render.py":337
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:
  *         try:             # <<<<<<<<<<<<<<
  *             f(ans, cell_width, *a)
@@ -11992,7 +11992,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_14render_special_dl(PyObject *_
 
   /* "smelly/fonts/render.py":336
  *     ans = CharTexture()
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             f(ans, cell_width, *a)
@@ -12020,8 +12020,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_14render_special_dl(PyObject *_
 }
 
 /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -12070,7 +12070,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
  * ) -> CBufType:
  *     underline_position = min(underline_position, cell_height - sum(divmod(underline_thickness, 2)))             # <<<<<<<<<<<<<<
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
- * 
+ *
  */
   __pyx_t_1 = PyNumber_Divmod(__pyx_v_underline_thickness, __pyx_int_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12104,7 +12104,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
  * ) -> CBufType:
  *     underline_position = min(underline_position, cell_height - sum(divmod(underline_thickness, 2)))
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)             # <<<<<<<<<<<<<<
- * 
+ *
  *     if missing:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ctypes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 327, __pyx_L1_error)
@@ -12123,7 +12123,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
 
   /* "smelly/fonts/render.py":329
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
- * 
+ *
  *     if missing:             # <<<<<<<<<<<<<<
  *         buf = bytearray(cell_width * cell_height)
  *         render_missing_glyph(buf, cell_width, cell_height)
@@ -12132,7 +12132,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
   if (__pyx_t_5) {
 
     /* "smelly/fonts/render.py":330
- * 
+ *
  *     if missing:
  *         buf = bytearray(cell_width * cell_height)             # <<<<<<<<<<<<<<
  *         render_missing_glyph(buf, cell_width, cell_height)
@@ -12151,7 +12151,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
  *         buf = bytearray(cell_width * cell_height)
  *         render_missing_glyph(buf, cell_width, cell_height)             # <<<<<<<<<<<<<<
  *         return CharTexture.from_buffer(buf)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_render_missing_glyph); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -12209,7 +12209,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
  *         buf = bytearray(cell_width * cell_height)
  *         render_missing_glyph(buf, cell_width, cell_height)
  *         return CharTexture.from_buffer(buf)             # <<<<<<<<<<<<<<
- * 
+ *
  *     ans = CharTexture()
  */
     __Pyx_XDECREF(__pyx_r);
@@ -12236,7 +12236,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
 
     /* "smelly/fonts/render.py":329
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
- * 
+ *
  *     if missing:             # <<<<<<<<<<<<<<
  *         buf = bytearray(cell_width * cell_height)
  *         render_missing_glyph(buf, cell_width, cell_height)
@@ -12245,9 +12245,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
 
   /* "smelly/fonts/render.py":334
  *         return CharTexture.from_buffer(buf)
- * 
+ *
  *     ans = CharTexture()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:
  */
   __Pyx_INCREF(__pyx_v_CharTexture);
@@ -12272,7 +12272,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
 
   /* "smelly/fonts/render.py":336
  *     ans = CharTexture()
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             f(ans, cell_width, *a)
@@ -12297,7 +12297,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
 
   /* "smelly/fonts/render.py":342
  *             log_error(f'Failed to render {f.__name__} at cell_width={cell_width} and cell_height={cell_height} with error: {e}')
- * 
+ *
  *     if underline:             # <<<<<<<<<<<<<<
  *         t = underline_thickness
  *         if underline > 1:
@@ -12306,7 +12306,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
   if (__pyx_t_5) {
 
     /* "smelly/fonts/render.py":343
- * 
+ *
  *     if underline:
  *         t = underline_thickness             # <<<<<<<<<<<<<<
  *         if underline > 1:
@@ -12451,7 +12451,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
 
     /* "smelly/fonts/render.py":342
  *             log_error(f'Failed to render {f.__name__} at cell_width={cell_width} and cell_height={cell_height} with error: {e}')
- * 
+ *
  *     if underline:             # <<<<<<<<<<<<<<
  *         t = underline_thickness
  *         if underline > 1:
@@ -12463,7 +12463,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
  *         dl([add_line, add_line, add_dline, add_curl, add_dots, add_dashes][underline], underline_position, t, cell_height)
  *     if strikethrough:             # <<<<<<<<<<<<<<
  *         dl(add_line, strikethrough_position, strikethrough_thickness, cell_height)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_strikethrough); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 347, __pyx_L1_error)
   if (__pyx_t_5) {
@@ -12472,7 +12472,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
  *         dl([add_line, add_line, add_dline, add_curl, add_dots, add_dashes][underline], underline_position, t, cell_height)
  *     if strikethrough:
  *         dl(add_line, strikethrough_position, strikethrough_thickness, cell_height)             # <<<<<<<<<<<<<<
- * 
+ *
  *     return ans
  */
     __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_add_line); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 348, __pyx_L1_error)
@@ -12501,16 +12501,16 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
  *         dl([add_line, add_line, add_dline, add_curl, add_dots, add_dashes][underline], underline_position, t, cell_height)
  *     if strikethrough:             # <<<<<<<<<<<<<<
  *         dl(add_line, strikethrough_position, strikethrough_thickness, cell_height)
- * 
+ *
  */
   }
 
   /* "smelly/fonts/render.py":350
  *         dl(add_line, strikethrough_position, strikethrough_thickness, cell_height)
- * 
+ *
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_ans);
@@ -12518,8 +12518,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -12549,8 +12549,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_29render_special(CYTHON_UNUSED 
 }
 
 /* "smelly/fonts/render.py":353
- * 
- * 
+ *
+ *
  * def render_cursor(             # <<<<<<<<<<<<<<
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
  * ) -> CBufType:
@@ -12694,7 +12694,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_32render_cursor(PyObject *__pyx
 
 /* "smelly/fonts/render.py":359
  *     ans = CharTexture()
- * 
+ *
  *     def vert(edge: str, width_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         width = max(1, min(int(round(width_pt * dpi_x / 72.0)), cell_width))
  *         left = 0 if edge == 'left' else max(0, cell_width - width)
@@ -12807,7 +12807,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_vert(PyObject *
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/render.py":360
- * 
+ *
  *     def vert(edge: str, width_pt: float = 1) -> None:
  *         width = max(1, min(int(round(width_pt * dpi_x / 72.0)), cell_width))             # <<<<<<<<<<<<<<
  *         left = 0 if edge == 'left' else max(0, cell_width - width)
@@ -12975,7 +12975,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_vert(PyObject *
  *             offset = y * cell_width + left
  *             for x in range(offset, offset + width):             # <<<<<<<<<<<<<<
  *                 ans[x] = 255
- * 
+ *
  */
     __pyx_t_3 = PyNumber_Add(__pyx_v_offset, __pyx_v_width); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 364, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -13037,7 +13037,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_vert(PyObject *
  *             offset = y * cell_width + left
  *             for x in range(offset, offset + width):
  *                 ans[x] = 255             # <<<<<<<<<<<<<<
- * 
+ *
  *     def horz(edge: str, height_pt: float = 1) -> None:
  */
       if (unlikely(!__pyx_cur_scope->__pyx_v_ans)) { __Pyx_RaiseClosureNameError("ans"); __PYX_ERR(0, 365, __pyx_L1_error) }
@@ -13048,7 +13048,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_vert(PyObject *
  *             offset = y * cell_width + left
  *             for x in range(offset, offset + width):             # <<<<<<<<<<<<<<
  *                 ans[x] = 255
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -13065,7 +13065,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_vert(PyObject *
 
   /* "smelly/fonts/render.py":359
  *     ans = CharTexture()
- * 
+ *
  *     def vert(edge: str, width_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         width = max(1, min(int(round(width_pt * dpi_x / 72.0)), cell_width))
  *         left = 0 if edge == 'left' else max(0, cell_width - width)
@@ -13095,7 +13095,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_vert(PyObject *
 
 /* "smelly/fonts/render.py":367
  *                 ans[x] = 255
- * 
+ *
  *     def horz(edge: str, height_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         height = max(1, min(int(round(height_pt * dpi_y / 72.0)), cell_height))
  *         top = 0 if edge == 'top' else max(0, cell_height - height)
@@ -13208,7 +13208,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_2horz(PyObject 
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/render.py":368
- * 
+ *
  *     def horz(edge: str, height_pt: float = 1) -> None:
  *         height = max(1, min(int(round(height_pt * dpi_y / 72.0)), cell_height))             # <<<<<<<<<<<<<<
  *         top = 0 if edge == 'top' else max(0, cell_height - height)
@@ -13383,7 +13383,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_2horz(PyObject 
  *             offset = y * cell_width
  *             for x in range(cell_width):             # <<<<<<<<<<<<<<
  *                 ans[offset + x] = 255
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_cell_width)) { __Pyx_RaiseClosureNameError("cell_width"); __PYX_ERR(0, 372, __pyx_L1_error) }
     __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_cur_scope->__pyx_v_cell_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 372, __pyx_L1_error)
@@ -13435,7 +13435,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_2horz(PyObject 
  *             offset = y * cell_width
  *             for x in range(cell_width):
  *                 ans[offset + x] = 255             # <<<<<<<<<<<<<<
- * 
+ *
  *     if which == 1:  # beam
  */
       if (unlikely(!__pyx_cur_scope->__pyx_v_ans)) { __Pyx_RaiseClosureNameError("ans"); __PYX_ERR(0, 373, __pyx_L1_error) }
@@ -13449,7 +13449,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_2horz(PyObject 
  *             offset = y * cell_width
  *             for x in range(cell_width):             # <<<<<<<<<<<<<<
  *                 ans[offset + x] = 255
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -13466,7 +13466,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_2horz(PyObject 
 
   /* "smelly/fonts/render.py":367
  *                 ans[x] = 255
- * 
+ *
  *     def horz(edge: str, height_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         height = max(1, min(int(round(height_pt * dpi_y / 72.0)), cell_height))
  *         top = 0 if edge == 'top' else max(0, cell_height - height)
@@ -13495,8 +13495,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_13render_cursor_2horz(PyObject 
 }
 
 /* "smelly/fonts/render.py":353
- * 
- * 
+ *
+ *
  * def render_cursor(             # <<<<<<<<<<<<<<
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
  * ) -> CBufType:
@@ -13539,7 +13539,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
  * ) -> CBufType:
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)             # <<<<<<<<<<<<<<
  *     ans = CharTexture()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ctypes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 356, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13559,7 +13559,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
  * ) -> CBufType:
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
  *     ans = CharTexture()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def vert(edge: str, width_pt: float = 1) -> None:
  */
   __Pyx_INCREF(__pyx_v_CharTexture);
@@ -13584,7 +13584,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
 
   /* "smelly/fonts/render.py":359
  *     ans = CharTexture()
- * 
+ *
  *     def vert(edge: str, width_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         width = max(1, min(int(round(width_pt * dpi_x / 72.0)), cell_width))
  *         left = 0 if edge == 'left' else max(0, cell_width - width)
@@ -13612,7 +13612,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
 
   /* "smelly/fonts/render.py":367
  *                 ans[x] = 255
- * 
+ *
  *     def horz(edge: str, height_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         height = max(1, min(int(round(height_pt * dpi_y / 72.0)), cell_height))
  *         top = 0 if edge == 'top' else max(0, cell_height - height)
@@ -13640,7 +13640,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
 
   /* "smelly/fonts/render.py":375
  *                 ans[offset + x] = 255
- * 
+ *
  *     if which == 1:  # beam             # <<<<<<<<<<<<<<
  *         vert('left', cursor_beam_thickness)
  *     elif which == 2:  # underline
@@ -13652,7 +13652,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
   if (__pyx_t_4) {
 
     /* "smelly/fonts/render.py":376
- * 
+ *
  *     if which == 1:  # beam
  *         vert('left', cursor_beam_thickness)             # <<<<<<<<<<<<<<
  *     elif which == 2:  # underline
@@ -13664,7 +13664,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
 
     /* "smelly/fonts/render.py":375
  *                 ans[offset + x] = 255
- * 
+ *
  *     if which == 1:  # beam             # <<<<<<<<<<<<<<
  *         vert('left', cursor_beam_thickness)
  *     elif which == 2:  # underline
@@ -13757,7 +13757,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
  *         horz('top')
  *         horz('bottom')             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_horz, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 383, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -13777,8 +13777,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
  *         horz('top')
  *         horz('bottom')
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_ans);
@@ -13786,8 +13786,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":353
- * 
- * 
+ *
+ *
  * def render_cursor(             # <<<<<<<<<<<<<<
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
  * ) -> CBufType:
@@ -13811,8 +13811,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_31render_cursor(CYTHON_UNUSED P
 }
 
 /* "smelly/fonts/render.py":387
- * 
- * 
+ *
+ *
  * def prerender_function(             # <<<<<<<<<<<<<<
  *     cell_width: int,
  *     cell_height: int,
@@ -14395,7 +14395,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_33prerender_function(CYTHON_UNU
  *     cells.extend((c(1), c(2), c(3)))  # cursor glyphs
  *     tcells = tuple(cells)             # <<<<<<<<<<<<<<
  *     return tuple(map(ctypes.addressof, tcells)), tcells
- * 
+ *
  */
   __pyx_t_1 = PyList_AsTuple(__pyx_v_cells); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14406,8 +14406,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_33prerender_function(CYTHON_UNU
  *     cells.extend((c(1), c(2), c(3)))  # cursor glyphs
  *     tcells = tuple(cells)
  *     return tuple(map(ctypes.addressof, tcells)), tcells             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ctypes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 430, __pyx_L1_error)
@@ -14442,8 +14442,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_33prerender_function(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":387
- * 
- * 
+ *
+ *
  * def prerender_function(             # <<<<<<<<<<<<<<
  *     cell_width: int,
  *     cell_height: int,
@@ -14469,8 +14469,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_33prerender_function(CYTHON_UNU
 }
 
 /* "smelly/fonts/render.py":433
- * 
- * 
+ *
+ *
  * def render_box_drawing(codepoint: int, cell_width: int, cell_height: int, dpi: float) -> Tuple[int, CBufType]:             # <<<<<<<<<<<<<<
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
  *     buf = CharTexture()
@@ -14583,7 +14583,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_35render_box_drawing(CYTHON_UNU
   __Pyx_RefNannySetupContext("render_box_drawing", 0);
 
   /* "smelly/fonts/render.py":434
- * 
+ *
  * def render_box_drawing(codepoint: int, cell_width: int, cell_height: int, dpi: float) -> Tuple[int, CBufType]:
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)             # <<<<<<<<<<<<<<
  *     buf = CharTexture()
@@ -14634,7 +14634,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_35render_box_drawing(CYTHON_UNU
  *     buf = CharTexture()
  *     render_box_char(chr(codepoint), cast(BufType, buf), cell_width, cell_height, dpi)             # <<<<<<<<<<<<<<
  *     return ctypes.addressof(buf), buf
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_render_box_char); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 436, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14759,8 +14759,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_35render_box_drawing(CYTHON_UNU
  *     buf = CharTexture()
  *     render_box_char(chr(codepoint), cast(BufType, buf), cell_width, cell_height, dpi)
  *     return ctypes.addressof(buf), buf             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ctypes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
@@ -14796,8 +14796,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_35render_box_drawing(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":433
- * 
- * 
+ *
+ *
  * def render_box_drawing(codepoint: int, cell_width: int, cell_height: int, dpi: float) -> Tuple[int, CBufType]:             # <<<<<<<<<<<<<<
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
  *     buf = CharTexture()
@@ -14824,11 +14824,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_35render_box_drawing(CYTHON_UNU
 }
 
 /* "smelly/fonts/render.py":441
- * 
+ *
  * class setup_for_testing:
  *     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):             # <<<<<<<<<<<<<<
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  */
 
 /* Python wrapper */
@@ -14952,7 +14952,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing___init__(CY
  * class setup_for_testing:
  *     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):
  *         self.family, self.size, self.dpi = family, size, dpi             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:
  */
   __pyx_t_1 = __pyx_v_family;
@@ -14969,11 +14969,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing___init__(CY
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/render.py":441
- * 
+ *
  * class setup_for_testing:
  *     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):             # <<<<<<<<<<<<<<
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  */
 
   /* function exit code */
@@ -14993,7 +14993,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing___init__(CY
 
 /* "smelly/fonts/render.py":444
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:             # <<<<<<<<<<<<<<
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)
@@ -15015,10 +15015,10 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_17setup_for_testing_3__enter__(
 
 /* "smelly/fonts/render.py":449
  *         sprites = {}
- * 
+ *
  *         def send_to_gpu(x: int, y: int, z: int, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             sprites[(x, y, z)] = data
- * 
+ *
  */
 
 /* Python wrapper */
@@ -15127,10 +15127,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_9__enter___
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/render.py":450
- * 
+ *
  *         def send_to_gpu(x: int, y: int, z: int, data: bytes) -> None:
  *             sprites[(x, y, z)] = data             # <<<<<<<<<<<<<<
- * 
+ *
  *         sprite_map_set_limits(100000, 100)
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_sprites)) { __Pyx_RaiseClosureNameError("sprites"); __PYX_ERR(0, 450, __pyx_L1_error) }
@@ -15154,10 +15154,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_9__enter___
 
   /* "smelly/fonts/render.py":449
  *         sprites = {}
- * 
+ *
  *         def send_to_gpu(x: int, y: int, z: int, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             sprites[(x, y, z)] = data
- * 
+ *
  */
 
   /* function exit code */
@@ -15175,7 +15175,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_9__enter___
 
 /* "smelly/fonts/render.py":444
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:             # <<<<<<<<<<<<<<
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)
@@ -15215,7 +15215,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
   }
 
   /* "smelly/fonts/render.py":445
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)             # <<<<<<<<<<<<<<
  *         set_options(opts)
@@ -15248,7 +15248,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)             # <<<<<<<<<<<<<<
  *         sprites = {}
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_set_options); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 446, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -15273,7 +15273,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)
  *         sprites = {}             # <<<<<<<<<<<<<<
- * 
+ *
  *         def send_to_gpu(x: int, y: int, z: int, data: bytes) -> None:
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 447, __pyx_L1_error)
@@ -15284,10 +15284,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
 
   /* "smelly/fonts/render.py":449
  *         sprites = {}
- * 
+ *
  *         def send_to_gpu(x: int, y: int, z: int, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             sprites[(x, y, z)] = data
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 449, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -15305,7 +15305,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
 
   /* "smelly/fonts/render.py":452
  *             sprites[(x, y, z)] = data
- * 
+ *
  *         sprite_map_set_limits(100000, 100)             # <<<<<<<<<<<<<<
  *         set_send_sprite_to_gpu(send_to_gpu)
  *         try:
@@ -15318,7 +15318,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/render.py":453
- * 
+ *
  *         sprite_map_set_limits(100000, 100)
  *         set_send_sprite_to_gpu(send_to_gpu)             # <<<<<<<<<<<<<<
  *         try:
@@ -15464,11 +15464,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_11 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_11 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_11 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_11 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_1);
         __Pyx_INCREF(__pyx_t_11);
@@ -15565,7 +15565,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
  *         except Exception:
  *             set_send_sprite_to_gpu(None)             # <<<<<<<<<<<<<<
  *             raise
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_set_send_sprite_to_gpu); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 459, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_7);
@@ -15590,14 +15590,14 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
  *         except Exception:
  *             set_send_sprite_to_gpu(None)
  *             raise             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __exit__(self, *args: Any) -> None:
  */
       __Pyx_GIVEREF(__pyx_t_3);
       __Pyx_GIVEREF(__pyx_t_11);
       __Pyx_XGIVEREF(__pyx_t_1);
       __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_11, __pyx_t_1);
-      __pyx_t_3 = 0; __pyx_t_11 = 0; __pyx_t_1 = 0; 
+      __pyx_t_3 = 0; __pyx_t_11 = 0; __pyx_t_1 = 0;
       __PYX_ERR(0, 460, __pyx_L5_except_error)
     }
     goto __pyx_L5_except_error;
@@ -15625,7 +15625,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
 
   /* "smelly/fonts/render.py":444
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:             # <<<<<<<<<<<<<<
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)
@@ -15655,10 +15655,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_2__enter__(
 
 /* "smelly/fonts/render.py":462
  *             raise
- * 
+ *
  *     def __exit__(self, *args: Any) -> None:             # <<<<<<<<<<<<<<
  *         set_send_sprite_to_gpu(None)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -15741,11 +15741,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_4__exit__(C
   __Pyx_RefNannySetupContext("__exit__", 0);
 
   /* "smelly/fonts/render.py":463
- * 
+ *
  *     def __exit__(self, *args: Any) -> None:
  *         set_send_sprite_to_gpu(None)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_set_send_sprite_to_gpu); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 463, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -15768,10 +15768,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_4__exit__(C
 
   /* "smelly/fonts/render.py":462
  *             raise
- * 
+ *
  *     def __exit__(self, *args: Any) -> None:             # <<<<<<<<<<<<<<
  *         set_send_sprite_to_gpu(None)
- * 
+ *
  */
 
   /* function exit code */
@@ -15790,8 +15790,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_17setup_for_testing_4__exit__(C
 }
 
 /* "smelly/fonts/render.py":466
- * 
- * 
+ *
+ *
  * def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:             # <<<<<<<<<<<<<<
  *     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):
  *         s = Screen(None, 1, len(text) * 2)
@@ -15942,7 +15942,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("render_string", 0);
 
   /* "smelly/fonts/render.py":467
- * 
+ *
  * def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:
  *     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):             # <<<<<<<<<<<<<<
  *         s = Screen(None, 1, len(text) * 2)
@@ -16048,13 +16048,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-              __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+              __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
             } else {
-              __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-              __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+              __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
             }
             __Pyx_INCREF(__pyx_t_1);
             __Pyx_INCREF(__pyx_t_2);
@@ -16243,7 +16243,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
           /* "smelly/fonts/render.py":467
- * 
+ *
  * def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:
  *     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):             # <<<<<<<<<<<<<<
  *         s = Screen(None, 1, len(text) * 2)
@@ -16283,7 +16283,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
             __Pyx_GIVEREF(__pyx_t_4);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_7, __pyx_t_4, __pyx_t_3);
-            __pyx_t_7 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0; 
+            __pyx_t_7 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 467, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -16531,7 +16531,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
  *         found_content = True
  *         cells.append(sprites[tsp])             # <<<<<<<<<<<<<<
  *     return cell_width, cell_height, list(reversed(cells))
- * 
+ *
  */
     if (unlikely(!__pyx_v_sprites)) { __Pyx_RaiseUnboundLocalError("sprites"); __PYX_ERR(0, 481, __pyx_L1_error) }
     __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_sprites, __pyx_v_tsp); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 481, __pyx_L1_error)
@@ -16554,8 +16554,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
  *         found_content = True
  *         cells.append(sprites[tsp])
  *     return cell_width, cell_height, list(reversed(cells))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_cell_width)) { __Pyx_RaiseUnboundLocalError("cell_width"); __PYX_ERR(0, 482, __pyx_L1_error) }
@@ -16581,8 +16581,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly/fonts/render.py":466
- * 
- * 
+ *
+ *
  * def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:             # <<<<<<<<<<<<<<
  *     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):
  *         s = Screen(None, 1, len(text) * 2)
@@ -16614,8 +16614,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_37render_string(CYTHON_UNUSED P
 }
 
 /* "smelly/fonts/render.py":485
- * 
- * 
+ *
+ *
  * def shape_string(             # <<<<<<<<<<<<<<
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -16643,7 +16643,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_40shape_string(PyObject *__pyx_
     values[1] = ((PyObject*)((PyObject*)__pyx_n_s_monospace));
 
     /* "smelly/fonts/render.py":486
- * 
+ *
  * def shape_string(
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None             # <<<<<<<<<<<<<<
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -16745,8 +16745,8 @@ static PyObject *__pyx_pw_6smelly_5fonts_6render_40shape_string(PyObject *__pyx_
   __pyx_r = __pyx_pf_6smelly_5fonts_6render_39shape_string(__pyx_self, __pyx_v_text, __pyx_v_family, __pyx_v_size, __pyx_v_dpi, __pyx_v_path);
 
   /* "smelly/fonts/render.py":485
- * 
- * 
+ *
+ *
  * def shape_string(             # <<<<<<<<<<<<<<
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -16897,13 +16897,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_39shape_string(CYTHON_UNUSED Py
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-              __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+              __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
             } else {
-              __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-              __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+              __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
             }
             __Pyx_INCREF(__pyx_t_1);
             __Pyx_INCREF(__pyx_t_2);
@@ -17044,7 +17044,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_39shape_string(CYTHON_UNUSED Py
  *         line = s.line(0)
  *         s.draw(text)             # <<<<<<<<<<<<<<
  *         return test_shape(line, path)
- * 
+ *
  */
           __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 491, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_4);
@@ -17069,8 +17069,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_39shape_string(CYTHON_UNUSED Py
  *         line = s.line(0)
  *         s.draw(text)
  *         return test_shape(line, path)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_test_shape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 492, __pyx_L7_error)
@@ -17161,7 +17161,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_39shape_string(CYTHON_UNUSED Py
             __Pyx_GIVEREF(__pyx_t_4);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_7, __pyx_t_4, __pyx_t_2);
-            __pyx_t_7 = 0; __pyx_t_4 = 0; __pyx_t_2 = 0; 
+            __pyx_t_7 = 0; __pyx_t_4 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 488, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -17223,8 +17223,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_39shape_string(CYTHON_UNUSED Py
   }
 
   /* "smelly/fonts/render.py":485
- * 
- * 
+ *
+ *
  * def shape_string(             # <<<<<<<<<<<<<<
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -17254,8 +17254,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_39shape_string(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/render.py":495
- * 
- * 
+ *
+ *
  * def show(outfile: str, width: int, height: int, fmt: int) -> None:             # <<<<<<<<<<<<<<
  *     import os
  *     from base64 import standard_b64encode
@@ -17375,11 +17375,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
   __Pyx_RefNannySetupContext("show", 0);
 
   /* "smelly/fonts/render.py":496
- * 
+ *
  * def show(outfile: str, width: int, height: int, fmt: int) -> None:
  *     import os             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64encode
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 496, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17390,7 +17390,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
  * def show(outfile: str, width: int, height: int, fmt: int) -> None:
  *     import os
  *     from base64 import standard_b64encode             # <<<<<<<<<<<<<<
- * 
+ *
  *     from wellies.tui.images import GraphicsCommand
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 497, __pyx_L1_error)
@@ -17410,9 +17410,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
 
   /* "smelly/fonts/render.py":499
  *     from base64 import standard_b64encode
- * 
+ *
  *     from wellies.tui.images import GraphicsCommand             # <<<<<<<<<<<<<<
- * 
+ *
  *     cmd = GraphicsCommand()
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 499, __pyx_L1_error)
@@ -17432,7 +17432,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
 
   /* "smelly/fonts/render.py":501
  *     from wellies.tui.images import GraphicsCommand
- * 
+ *
  *     cmd = GraphicsCommand()             # <<<<<<<<<<<<<<
  *     cmd.a = 'T'
  *     cmd.f = fmt
@@ -17457,7 +17457,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
   __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":502
- * 
+ *
  *     cmd = GraphicsCommand()
  *     cmd.a = 'T'             # <<<<<<<<<<<<<<
  *     cmd.f = fmt
@@ -17538,7 +17538,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
  *     sys.stdout.flush()
  *     sys.stdout.buffer.write(cmd.serialize(standard_b64encode(os.path.abspath(outfile).encode())))             # <<<<<<<<<<<<<<
  *     sys.stdout.buffer.flush()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 508, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17646,8 +17646,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
  *     sys.stdout.flush()
  *     sys.stdout.buffer.write(cmd.serialize(standard_b64encode(os.path.abspath(outfile).encode())))
  *     sys.stdout.buffer.flush()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_sys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 509, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17678,8 +17678,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":495
- * 
- * 
+ *
+ *
  * def show(outfile: str, width: int, height: int, fmt: int) -> None:             # <<<<<<<<<<<<<<
  *     import os
  *     from base64 import standard_b64encode
@@ -17711,11 +17711,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_41show(CYTHON_UNUSED PyObject *
 }
 
 /* "smelly/fonts/render.py":512
- * 
- * 
+ *
+ *
  * def display_bitmap(rgb_data: bytes, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     from tempfile import NamedTemporaryFile
- * 
+ *
  */
 
 /* Python wrapper */
@@ -17825,10 +17825,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("display_bitmap", 0);
 
   /* "smelly/fonts/render.py":513
- * 
+ *
  * def display_bitmap(rgb_data: bytes, width: int, height: int) -> None:
  *     from tempfile import NamedTemporaryFile             # <<<<<<<<<<<<<<
- * 
+ *
  *     setattr(display_bitmap, 'detected', True)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 513, __pyx_L1_error)
@@ -17848,7 +17848,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
 
   /* "smelly/fonts/render.py":515
  *     from tempfile import NamedTemporaryFile
- * 
+ *
  *     setattr(display_bitmap, 'detected', True)             # <<<<<<<<<<<<<<
  *     with NamedTemporaryFile(suffix='.rgba', delete=False) as f:
  *         f.write(rgb_data)
@@ -17859,7 +17859,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":516
- * 
+ *
  *     setattr(display_bitmap, 'detected', True)
  *     with NamedTemporaryFile(suffix='.rgba', delete=False) as f:             # <<<<<<<<<<<<<<
  *         f.write(rgb_data)
@@ -17934,7 +17934,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
           /* "smelly/fonts/render.py":516
- * 
+ *
  *     setattr(display_bitmap, 'detected', True)
  *     with NamedTemporaryFile(suffix='.rgba', delete=False) as f:             # <<<<<<<<<<<<<<
  *         f.write(rgb_data)
@@ -17972,7 +17972,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_1, __pyx_t_2);
-            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 516, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -18019,7 +18019,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
  *         f.write(rgb_data)
  *     assert len(rgb_data) == 4 * width * height             # <<<<<<<<<<<<<<
  *     show(f.name, width, height, 32)
- * 
+ *
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
   if (unlikely(!Py_OptimizeFlag)) {
@@ -18051,8 +18051,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
  *         f.write(rgb_data)
  *     assert len(rgb_data) == 4 * width * height
  *     show(f.name, width, height, 32)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 519, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -18115,11 +18115,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":512
- * 
- * 
+ *
+ *
  * def display_bitmap(rgb_data: bytes, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     from tempfile import NamedTemporaryFile
- * 
+ *
  */
 
   /* function exit code */
@@ -18142,11 +18142,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_43display_bitmap(CYTHON_UNUSED 
 }
 
 /* "smelly/fonts/render.py":522
- * 
- * 
+ *
+ *
  * def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, current_fonts
- * 
+ *
  */
 
 /* Python wrapper */
@@ -18437,11 +18437,11 @@ static PyObject *__pyx_gb_6smelly_5fonts_6render_18test_render_string_2generator
 }
 
 /* "smelly/fonts/render.py":522
- * 
- * 
+ *
+ *
  * def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, current_fonts
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_text, PyObject *__pyx_v_family, double __pyx_v_size, double __pyx_v_dpi) {
@@ -18486,10 +18486,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNU
   }
 
   /* "smelly/fonts/render.py":523
- * 
+ *
  * def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:
  *     from smelly.fast_data_types import concat_cells, current_fonts             # <<<<<<<<<<<<<<
- * 
+ *
  *     cell_width, cell_height, cells = render_string(text, family, size, dpi)
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 523, __pyx_L1_error)
@@ -18517,7 +18517,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNU
 
   /* "smelly/fonts/render.py":525
  *     from smelly.fast_data_types import concat_cells, current_fonts
- * 
+ *
  *     cell_width, cell_height, cells = render_string(text, family, size, dpi)             # <<<<<<<<<<<<<<
  *     rgb_data = concat_cells(cell_width, cell_height, True, tuple(cells))
  *     cf = current_fonts()
@@ -18593,13 +18593,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNU
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_7);
@@ -18644,7 +18644,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNU
   __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":526
- * 
+ *
  *     cell_width, cell_height, cells = render_string(text, family, size, dpi)
  *     rgb_data = concat_cells(cell_width, cell_height, True, tuple(cells))             # <<<<<<<<<<<<<<
  *     cf = current_fonts()
@@ -18992,7 +18992,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNU
  *         sys.stdout.buffer.write(msg.encode('utf-8') + b'\n')
  *     display_bitmap(rgb_data, cell_width * len(cells), cell_height)             # <<<<<<<<<<<<<<
  *     print('\n')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_display_bitmap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 535, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -19058,17 +19058,17 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNU
  *         sys.stdout.buffer.write(msg.encode('utf-8') + b'\n')
  *     display_bitmap(rgb_data, cell_width * len(cells), cell_height)
  *     print('\n')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PrintOne(0, __pyx_kp_s__24) < 0) __PYX_ERR(0, 536, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":522
- * 
- * 
+ *
+ *
  * def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, current_fonts
- * 
+ *
  */
 
   /* function exit code */
@@ -19102,8 +19102,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_45test_render_string(CYTHON_UNU
 }
 
 /* "smelly/fonts/render.py":539
- * 
- * 
+ *
+ *
  * def test_fallback_font(qtext: Optional[str] = None, bold: bool = False, italic: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     with setup_for_testing():
  *         if qtext:
@@ -19228,7 +19228,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_47test_fallback_font(CYTHON_UNU
   __Pyx_RefNannySetupContext("test_fallback_font", 0);
 
   /* "smelly/fonts/render.py":540
- * 
+ *
  * def test_fallback_font(qtext: Optional[str] = None, bold: bool = False, italic: bool = False) -> None:
  *     with setup_for_testing():             # <<<<<<<<<<<<<<
  *         if qtext:
@@ -19478,7 +19478,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_47test_fallback_font(CYTHON_UNU
  *                 print(text, f)
  *             except UnicodeEncodeError:             # <<<<<<<<<<<<<<
  *                 sys.stdout.buffer.write(f'{text} {f}\n'.encode('utf-8'))
- * 
+ *
  */
               __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_UnicodeEncodeError);
               if (__pyx_t_11) {
@@ -19492,8 +19492,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_47test_fallback_font(CYTHON_UNU
  *                 print(text, f)
  *             except UnicodeEncodeError:
  *                 sys.stdout.buffer.write(f'{text} {f}\n'.encode('utf-8'))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
                 __Pyx_GetModuleGlobalName(__pyx_t_16, __pyx_n_s_sys); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 550, __pyx_L18_except_error)
                 __Pyx_GOTREF(__pyx_t_16);
@@ -19594,7 +19594,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_47test_fallback_font(CYTHON_UNU
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
           /* "smelly/fonts/render.py":540
- * 
+ *
  * def test_fallback_font(qtext: Optional[str] = None, bold: bool = False, italic: bool = False) -> None:
  *     with setup_for_testing():             # <<<<<<<<<<<<<<
  *         if qtext:
@@ -19636,7 +19636,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_47test_fallback_font(CYTHON_UNU
             __Pyx_GIVEREF(__pyx_t_12);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_12, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_12 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_12 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 540, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19679,8 +19679,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_47test_fallback_font(CYTHON_UNU
   }
 
   /* "smelly/fonts/render.py":539
- * 
- * 
+ *
+ *
  * def test_fallback_font(qtext: Optional[str] = None, bold: bool = False, italic: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     with setup_for_testing():
  *         if qtext:
@@ -19710,8 +19710,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_47test_fallback_font(CYTHON_UNU
 }
 
 /* "smelly/fonts/render.py":553
- * 
- * 
+ *
+ *
  * def showcase() -> None:             # <<<<<<<<<<<<<<
  *     f = 'monospace' if is_macos else 'Liberation Mono'
  *     test_render_string('He\u0347\u0305llo\u0337, w\u0302or\u0306l\u0354d!', family=f)
@@ -19745,7 +19745,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_49showcase(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("showcase", 0);
 
   /* "smelly/fonts/render.py":554
- * 
+ *
  * def showcase() -> None:
  *     f = 'monospace' if is_macos else 'Liberation Mono'             # <<<<<<<<<<<<<<
  *     test_render_string('He\u0347\u0305llo\u0337, w\u0302or\u0306l\u0354d!', family=f)
@@ -19835,8 +19835,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_6render_49showcase(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":553
- * 
- * 
+ *
+ *
  * def showcase() -> None:             # <<<<<<<<<<<<<<
  *     f = 'monospace' if is_macos else 'Liberation Mono'
  *     test_render_string('He\u0347\u0305llo\u0337, w\u0302or\u0306l\u0354d!', family=f)
@@ -21980,7 +21980,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/fonts/render.py":168
- * 
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:             # <<<<<<<<<<<<<<
  *         fo = f[0]
@@ -21993,7 +21993,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":271
  *         thickness = max(1, thickness) - (1 if thickness < 3 else 2)
- * 
+ *
  *     def add_intensity(x: int, y: int, val: int) -> None:             # <<<<<<<<<<<<<<
  *         y += position
  *         y = min(y, max_y)
@@ -22005,7 +22005,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":336
  *     ans = CharTexture()
- * 
+ *
  *     def dl(f: UnderlineCallback, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             f(ans, cell_width, *a)
@@ -22017,7 +22017,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":359
  *     ans = CharTexture()
- * 
+ *
  *     def vert(edge: str, width_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         width = max(1, min(int(round(width_pt * dpi_x / 72.0)), cell_width))
  *         left = 0 if edge == 'left' else max(0, cell_width - width)
@@ -22029,7 +22029,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":367
  *                 ans[x] = 255
- * 
+ *
  *     def horz(edge: str, height_pt: float = 1) -> None:             # <<<<<<<<<<<<<<
  *         height = max(1, min(int(round(height_pt * dpi_y / 72.0)), cell_height))
  *         top = 0 if edge == 'top' else max(0, cell_height - height)
@@ -22077,7 +22077,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         horz('top')
  *         horz('bottom')             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_tuple__16 = PyTuple_Pack(1, __pyx_n_s_bottom); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
@@ -22096,10 +22096,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":449
  *         sprites = {}
- * 
+ *
  *         def send_to_gpu(x: int, y: int, z: int, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             sprites[(x, y, z)] = data
- * 
+ *
  */
   __pyx_tuple__18 = PyTuple_Pack(4, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_z, __pyx_n_s_data); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 449, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
@@ -22108,7 +22108,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":452
  *             sprites[(x, y, z)] = data
- * 
+ *
  *         sprite_map_set_limits(100000, 100)             # <<<<<<<<<<<<<<
  *         set_send_sprite_to_gpu(send_to_gpu)
  *         try:
@@ -22118,7 +22118,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__20);
 
   /* "smelly/fonts/render.py":467
- * 
+ *
  * def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:
  *     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):             # <<<<<<<<<<<<<<
  *         s = Screen(None, 1, len(text) * 2)
@@ -22181,8 +22181,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__33);
 
   /* "smelly/fonts/render.py":43
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return get_font_files_coretext(opts)
@@ -22193,8 +22193,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_get_font_files, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":49
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return font_for_family_macos(family)
@@ -22205,8 +22205,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_font_for_family, 49, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 49, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":55
- * 
- * 
+ *
+ *
  * def merge_ranges(             # <<<<<<<<<<<<<<
  *     a: Tuple[Tuple[int, int], _T], b: Tuple[Tuple[int, int], _T], priority_map: Dict[Tuple[int, int], int]
  * ) -> Generator[Tuple[Tuple[int, int], _T], None, None]:
@@ -22217,8 +22217,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(3, 0, 25, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_merge_ranges, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 55, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":121
- * 
- * 
+ *
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:             # <<<<<<<<<<<<<<
  *     if not maps:
  *         return maps
@@ -22229,8 +22229,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(1, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_coalesce_symbol_maps, 121, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 121, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":145
- * 
- * 
+ *
+ *
  * def create_symbol_map(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     val = coalesce_symbol_maps(opts.symbol_map)
  *     family_map: Dict[str, int] = {}
@@ -22241,11 +22241,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(1, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_create_symbol_map, 145, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 145, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":159
- * 
- * 
+ *
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())
- * 
+ *
  */
   __pyx_tuple__43 = PyTuple_Pack(3, __pyx_n_s_opts, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__43);
@@ -22253,11 +22253,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_create_narrow_symbols, 159, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 159, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":163
- * 
- * 
+ *
+ *
  * def descriptor_for_idx(idx: int) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     return current_faces[idx]
- * 
+ *
  */
   __pyx_tuple__45 = PyTuple_Pack(1, __pyx_n_s_idx); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
@@ -22265,8 +22265,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_descriptor_for_idx, 163, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 163, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":167
- * 
- * 
+ *
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:             # <<<<<<<<<<<<<<
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:
  *         fo = f[0]
@@ -22277,8 +22277,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_dump_faces, 167, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 167, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":187
- * 
- * 
+ *
+ *
  * def set_font_family(opts: Optional[Options] = None, override_font_size: Optional[float] = None, debug_font_matching: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     global current_faces
  *     opts = opts or defaults
@@ -22292,8 +22292,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__52);
 
   /* "smelly/fonts/render.py":231
- * 
- * 
+ *
+ *
  * def add_line(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     y = position - thickness // 2
  *     while thickness > 0 and -1 < y < cell_height:
@@ -22304,8 +22304,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(5, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_add_line, 231, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 231, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":239
- * 
- * 
+ *
+ *
  * def add_dline(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     a = min(position - thickness, cell_height - 1)
  *     b = min(position, cell_height - 1)
@@ -22316,8 +22316,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(5, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_add_dline, 239, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) __PYX_ERR(0, 239, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":259
- * 
- * 
+ *
+ *
  * def add_curl(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()
@@ -22328,11 +22328,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__58 = (PyObject*)__Pyx_PyCode_New(5, 0, 19, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__57, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_add_curl, 259, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__58)) __PYX_ERR(0, 259, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":295
- * 
- * 
+ *
+ *
  * def add_dots(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     spacing, size = distribute_dots(cell_width, cell_width // (2 * thickness))
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(11, __pyx_n_s_buf, __pyx_n_s_cell_width, __pyx_n_s_position, __pyx_n_s_thickness, __pyx_n_s_cell_height, __pyx_n_s_spacing, __pyx_n_s_size, __pyx_n_s_y, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_s); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 295, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
@@ -22340,8 +22340,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(5, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_add_dots, 295, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 295, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":304
- * 
- * 
+ *
+ *
  * def add_dashes(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     halfspace_width = cell_width // 4
  *     y = 1 + position - thickness // 2
@@ -22352,8 +22352,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(5, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_add_dashes, 304, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 304, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -22364,8 +22364,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(12, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_render_special, 312, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 312, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":353
- * 
- * 
+ *
+ *
  * def render_cursor(             # <<<<<<<<<<<<<<
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
  * ) -> CBufType:
@@ -22376,8 +22376,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__66 = (PyObject*)__Pyx_PyCode_New(7, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__65, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_render_cursor, 353, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__66)) __PYX_ERR(0, 353, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":387
- * 
- * 
+ *
+ *
  * def prerender_function(             # <<<<<<<<<<<<<<
  *     cell_width: int,
  *     cell_height: int,
@@ -22388,8 +22388,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__68 = (PyObject*)__Pyx_PyCode_New(11, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__67, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_prerender_function, 387, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__68)) __PYX_ERR(0, 387, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":433
- * 
- * 
+ *
+ *
  * def render_box_drawing(codepoint: int, cell_width: int, cell_height: int, dpi: float) -> Tuple[int, CBufType]:             # <<<<<<<<<<<<<<
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
  *     buf = CharTexture()
@@ -22400,11 +22400,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__70 = (PyObject*)__Pyx_PyCode_New(4, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__69, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_render_box_drawing, 433, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__70)) __PYX_ERR(0, 433, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":441
- * 
+ *
  * class setup_for_testing:
  *     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):             # <<<<<<<<<<<<<<
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  */
   __pyx_tuple__71 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_family, __pyx_n_s_size, __pyx_n_s_dpi); if (unlikely(!__pyx_tuple__71)) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__71);
@@ -22413,7 +22413,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":444
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:             # <<<<<<<<<<<<<<
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)
@@ -22425,10 +22425,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/render.py":462
  *             raise
- * 
+ *
  *     def __exit__(self, *args: Any) -> None:             # <<<<<<<<<<<<<<
  *         set_send_sprite_to_gpu(None)
- * 
+ *
  */
   __pyx_tuple__75 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_args); if (unlikely(!__pyx_tuple__75)) __PYX_ERR(0, 462, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__75);
@@ -22436,8 +22436,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__76 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__75, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_exit, 462, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__76)) __PYX_ERR(0, 462, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":466
- * 
- * 
+ *
+ *
  * def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:             # <<<<<<<<<<<<<<
  *     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):
  *         s = Screen(None, 1, len(text) * 2)
@@ -22448,8 +22448,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__78 = (PyObject*)__Pyx_PyCode_New(4, 0, 14, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__77, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_render_string, 466, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__78)) __PYX_ERR(0, 466, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":485
- * 
- * 
+ *
+ *
  * def shape_string(             # <<<<<<<<<<<<<<
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -22460,8 +22460,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__80 = (PyObject*)__Pyx_PyCode_New(5, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__79, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_shape_string, 485, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__80)) __PYX_ERR(0, 485, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":495
- * 
- * 
+ *
+ *
  * def show(outfile: str, width: int, height: int, fmt: int) -> None:             # <<<<<<<<<<<<<<
  *     import os
  *     from base64 import standard_b64encode
@@ -22472,11 +22472,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__82 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__81, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_show, 495, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__82)) __PYX_ERR(0, 495, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":512
- * 
- * 
+ *
+ *
  * def display_bitmap(rgb_data: bytes, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     from tempfile import NamedTemporaryFile
- * 
+ *
  */
   __pyx_tuple__83 = PyTuple_Pack(5, __pyx_n_s_rgb_data, __pyx_n_s_width, __pyx_n_s_height, __pyx_n_s_NamedTemporaryFile, __pyx_n_s_f); if (unlikely(!__pyx_tuple__83)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__83);
@@ -22484,11 +22484,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__84 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__83, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_display_bitmap, 512, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__84)) __PYX_ERR(0, 512, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":522
- * 
- * 
+ *
+ *
  * def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, current_fonts
- * 
+ *
  */
   __pyx_tuple__85 = PyTuple_Pack(15, __pyx_n_s_text, __pyx_n_s_family, __pyx_n_s_size, __pyx_n_s_dpi, __pyx_n_s_concat_cells, __pyx_n_s_current_fonts, __pyx_n_s_cell_width, __pyx_n_s_cell_height, __pyx_n_s_cells, __pyx_n_s_rgb_data, __pyx_n_s_cf, __pyx_n_s_fonts, __pyx_n_s_msg, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__85)) __PYX_ERR(0, 522, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__85);
@@ -22496,8 +22496,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__86 = (PyObject*)__Pyx_PyCode_New(4, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__85, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_render_py, __pyx_n_s_test_render_string, 522, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__86)) __PYX_ERR(0, 522, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":539
- * 
- * 
+ *
+ *
  * def test_fallback_font(qtext: Optional[str] = None, bold: bool = False, italic: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     with setup_for_testing():
  *         if qtext:
@@ -22511,8 +22511,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__89);
 
   /* "smelly/fonts/render.py":553
- * 
- * 
+ *
+ *
  * def showcase() -> None:             # <<<<<<<<<<<<<<
  *     f = 'monospace' if is_macos else 'Liberation Mono'
  *     test_render_string('He\u0347\u0305llo\u0337, w\u0302or\u0306l\u0354d!', family=f)
@@ -22932,7 +22932,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/render.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import ctypes             # <<<<<<<<<<<<<<
  * import sys
  * from functools import partial
@@ -22943,7 +22943,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":5
- * 
+ *
  * import ctypes
  * import sys             # <<<<<<<<<<<<<<
  * from functools import partial
@@ -22980,7 +22980,7 @@ if (!__Pyx_RefNanny) {
  * from functools import partial
  * from math import ceil, cos, floor, pi             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union, cast
- * 
+ *
  */
   __pyx_t_2 = PyList_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -23021,7 +23021,7 @@ if (!__Pyx_RefNanny) {
  * from functools import partial
  * from math import ceil, cos, floor, pi
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union, cast             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.constants import is_macos
  */
   __pyx_t_1 = PyList_New(10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -23103,7 +23103,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/render.py":10
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generator, List, Optional, Tuple, Union, cast
- * 
+ *
  * from smelly.constants import is_macos             # <<<<<<<<<<<<<<
  * from smelly.fast_data_types import (
  *     NUM_UNDERLINE_STYLES,
@@ -23166,7 +23166,7 @@ if (!__Pyx_RefNanny) {
   PyList_SET_ITEM(__pyx_t_1, 10, __pyx_n_s_test_shape);
 
   /* "smelly/fonts/render.py":11
- * 
+ *
  * from smelly.constants import is_macos
  * from smelly.fast_data_types import (             # <<<<<<<<<<<<<<
  *     NUM_UNDERLINE_STYLES,
@@ -23317,7 +23317,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import _T
  * from smelly.typing import CoreTextFont, FontConfigPattern             # <<<<<<<<<<<<<<
  * from smelly.utils import log_error
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23344,7 +23344,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import _T
  * from smelly.typing import CoreTextFont, FontConfigPattern
  * from smelly.utils import log_error             # <<<<<<<<<<<<<<
- * 
+ *
  * if is_macos:
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -23363,7 +23363,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/render.py":30
  * from smelly.utils import log_error
- * 
+ *
  * if is_macos:             # <<<<<<<<<<<<<<
  *     from .core_text import find_font_features
  *     from .core_text import font_for_family as font_for_family_macos
@@ -23375,7 +23375,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/fonts/render.py":31
- * 
+ *
  * if is_macos:
  *     from .core_text import find_font_features             # <<<<<<<<<<<<<<
  *     from .core_text import font_for_family as font_for_family_macos
@@ -23439,7 +23439,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/fonts/render.py":30
  * from smelly.utils import log_error
- * 
+ *
  * if is_macos:             # <<<<<<<<<<<<<<
  *     from .core_text import find_font_features
  *     from .core_text import font_for_family as font_for_family_macos
@@ -23474,7 +23474,7 @@ if (!__Pyx_RefNanny) {
  *     from .fontconfig import find_font_features
  *     from .fontconfig import font_for_family as font_for_family_fontconfig             # <<<<<<<<<<<<<<
  *     from .fontconfig import get_font_files as get_font_files_fontconfig
- * 
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -23494,7 +23494,7 @@ if (!__Pyx_RefNanny) {
  *     from .fontconfig import find_font_features
  *     from .fontconfig import font_for_family as font_for_family_fontconfig
  *     from .fontconfig import get_font_files as get_font_files_fontconfig             # <<<<<<<<<<<<<<
- * 
+ *
  * FontObject = Union[CoreTextFont, FontConfigPattern]
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
@@ -23515,10 +23515,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/render.py":39
  *     from .fontconfig import get_font_files as get_font_files_fontconfig
- * 
+ *
  * FontObject = Union[CoreTextFont, FontConfigPattern]             # <<<<<<<<<<<<<<
  * current_faces: List[Tuple[FontObject, bool, bool]] = []
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Union); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23542,11 +23542,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":40
- * 
+ *
  * FontObject = Union[CoreTextFont, FontConfigPattern]
  * current_faces: List[Tuple[FontObject, bool, bool]] = []             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -23554,8 +23554,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":43
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return get_font_files_coretext(opts)
@@ -23592,8 +23592,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":49
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     if is_macos:
  *         return font_for_family_macos(family)
@@ -23630,8 +23630,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":55
- * 
- * 
+ *
+ *
  * def merge_ranges(             # <<<<<<<<<<<<<<
  *     a: Tuple[Tuple[int, int], _T], b: Tuple[Tuple[int, int], _T], priority_map: Dict[Tuple[int, int], int]
  * ) -> Generator[Tuple[Tuple[int, int], _T], None, None]:
@@ -23640,7 +23640,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/fonts/render.py":56
- * 
+ *
  * def merge_ranges(
  *     a: Tuple[Tuple[int, int], _T], b: Tuple[Tuple[int, int], _T], priority_map: Dict[Tuple[int, int], int]             # <<<<<<<<<<<<<<
  * ) -> Generator[Tuple[Tuple[int, int], _T], None, None]:
@@ -23799,8 +23799,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/render.py":55
- * 
- * 
+ *
+ *
  * def merge_ranges(             # <<<<<<<<<<<<<<
  *     a: Tuple[Tuple[int, int], _T], b: Tuple[Tuple[int, int], _T], priority_map: Dict[Tuple[int, int], int]
  * ) -> Generator[Tuple[Tuple[int, int], _T], None, None]:
@@ -23813,8 +23813,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/render.py":121
- * 
- * 
+ *
+ *
  * def coalesce_symbol_maps(maps: Dict[Tuple[int, int], _T]) -> Dict[Tuple[int, int], _T]:             # <<<<<<<<<<<<<<
  *     if not maps:
  *         return maps
@@ -23893,8 +23893,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":145
- * 
- * 
+ *
+ *
  * def create_symbol_map(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     val = coalesce_symbol_maps(opts.symbol_map)
  *     family_map: Dict[str, int] = {}
@@ -23946,11 +23946,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":159
- * 
- * 
+ *
+ *
  * def create_narrow_symbols(opts: Options) -> Tuple[Tuple[int, int, int], ...]:             # <<<<<<<<<<<<<<
  *     return tuple((a, b, v) for (a, b), v in coalesce_symbol_maps(opts.narrow_symbols).items())
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -23999,11 +23999,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":163
- * 
- * 
+ *
+ *
  * def descriptor_for_idx(idx: int) -> Tuple[FontObject, bool, bool]:             # <<<<<<<<<<<<<<
  *     return current_faces[idx]
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -24037,8 +24037,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/render.py":167
- * 
- * 
+ *
+ *
  * def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:             # <<<<<<<<<<<<<<
  *     def face_str(f: Tuple[FontObject, bool, bool]) -> str:
  *         fo = f[0]
@@ -24077,8 +24077,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":187
- * 
- * 
+ *
+ *
  * def set_font_family(opts: Optional[Options] = None, override_font_size: Optional[float] = None, debug_font_matching: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     global current_faces
  *     opts = opts or defaults
@@ -24113,8 +24113,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":224
- * 
- * 
+ *
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     CBufType = ctypes.Array[ctypes.c_ubyte]
  * else:
@@ -24126,7 +24126,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/fonts/render.py":225
- * 
+ *
  * if TYPE_CHECKING:
  *     CBufType = ctypes.Array[ctypes.c_ubyte]             # <<<<<<<<<<<<<<
  * else:
@@ -24150,8 +24150,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/fonts/render.py":224
- * 
- * 
+ *
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     CBufType = ctypes.Array[ctypes.c_ubyte]
  * else:
@@ -24164,7 +24164,7 @@ if (!__Pyx_RefNanny) {
  * else:
  *     CBufType = None             # <<<<<<<<<<<<<<
  * UnderlineCallback = Callable[[CBufType, int, int, int, int], None]
- * 
+ *
  */
   /*else*/ {
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_CBufType, Py_None) < 0) __PYX_ERR(0, 227, __pyx_L1_error)
@@ -24175,8 +24175,8 @@ if (!__Pyx_RefNanny) {
  * else:
  *     CBufType = None
  * UnderlineCallback = Callable[[CBufType, int, int, int, int], None]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Callable); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -24215,8 +24215,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":231
- * 
- * 
+ *
+ *
  * def add_line(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     y = position - thickness // 2
  *     while thickness > 0 and -1 < y < cell_height:
@@ -24240,8 +24240,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":239
- * 
- * 
+ *
+ *
  * def add_dline(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     a = min(position - thickness, cell_height - 1)
  *     b = min(position, cell_height - 1)
@@ -24265,8 +24265,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":259
- * 
- * 
+ *
+ *
  * def add_curl(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     max_x, max_y = cell_width - 1, cell_height - 1
  *     opts = get_options()
@@ -24290,11 +24290,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":295
- * 
- * 
+ *
+ *
  * def add_dots(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     spacing, size = distribute_dots(cell_width, cell_width // (2 * thickness))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 295, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -24315,8 +24315,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":304
- * 
- * 
+ *
+ *
  * def add_dashes(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:             # <<<<<<<<<<<<<<
  *     halfspace_width = cell_width // 4
  *     y = 1 + position - thickness // 2
@@ -24360,8 +24360,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -24448,8 +24448,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":312
- * 
- * 
+ *
+ *
  * def render_special(             # <<<<<<<<<<<<<<
  *     underline: int = 0,
  *     strikethrough: bool = False,
@@ -24464,7 +24464,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":354
- * 
+ *
  * def render_cursor(
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0             # <<<<<<<<<<<<<<
  * ) -> CBufType:
@@ -24476,8 +24476,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/fonts/render.py":353
- * 
- * 
+ *
+ *
  * def render_cursor(             # <<<<<<<<<<<<<<
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
  * ) -> CBufType:
@@ -24519,8 +24519,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":353
- * 
- * 
+ *
+ *
  * def render_cursor(             # <<<<<<<<<<<<<<
  *     which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
  * ) -> CBufType:
@@ -24535,8 +24535,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":387
- * 
- * 
+ *
+ *
  * def prerender_function(             # <<<<<<<<<<<<<<
  *     cell_width: int,
  *     cell_height: int,
@@ -24610,8 +24610,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":387
- * 
- * 
+ *
+ *
  * def prerender_function(             # <<<<<<<<<<<<<<
  *     cell_width: int,
  *     cell_height: int,
@@ -24624,8 +24624,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":433
- * 
- * 
+ *
+ *
  * def render_box_drawing(codepoint: int, cell_width: int, cell_height: int, dpi: float) -> Tuple[int, CBufType]:             # <<<<<<<<<<<<<<
  *     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
  *     buf = CharTexture()
@@ -24662,8 +24662,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/fonts/render.py":440
- * 
- * 
+ *
+ *
  * class setup_for_testing:             # <<<<<<<<<<<<<<
  *     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):
  *         self.family, self.size, self.dpi = family, size, dpi
@@ -24672,11 +24672,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "smelly/fonts/render.py":441
- * 
+ *
  * class setup_for_testing:
  *     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):             # <<<<<<<<<<<<<<
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  */
   __pyx_t_1 = PyFloat_FromDouble(((double)11.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 441, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -24709,7 +24709,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/render.py":444
  *         self.family, self.size, self.dpi = family, size, dpi
- * 
+ *
  *     def __enter__(self) -> Tuple[Dict[Tuple[int, int, int], bytes], int, int]:             # <<<<<<<<<<<<<<
  *         opts = defaults._replace(font_family=self.family, font_size=self.size)
  *         set_options(opts)
@@ -24775,10 +24775,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/render.py":462
  *             raise
- * 
+ *
  *     def __exit__(self, *args: Any) -> None:             # <<<<<<<<<<<<<<
  *         set_send_sprite_to_gpu(None)
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 462, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -24795,8 +24795,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":440
- * 
- * 
+ *
+ *
  * class setup_for_testing:             # <<<<<<<<<<<<<<
  *     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):
  *         self.family, self.size, self.dpi = family, size, dpi
@@ -24808,8 +24808,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/fonts/render.py":466
- * 
- * 
+ *
+ *
  * def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:             # <<<<<<<<<<<<<<
  *     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):
  *         s = Screen(None, 1, len(text) * 2)
@@ -24869,7 +24869,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/render.py":486
- * 
+ *
  * def shape_string(
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None             # <<<<<<<<<<<<<<
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -24881,8 +24881,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/fonts/render.py":485
- * 
- * 
+ *
+ *
  * def shape_string(             # <<<<<<<<<<<<<<
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -24912,7 +24912,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dpi, __pyx_n_u_float) < 0) __PYX_ERR(0, 485, __pyx_L1_error)
 
   /* "smelly/fonts/render.py":486
- * 
+ *
  * def shape_string(
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None             # <<<<<<<<<<<<<<
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -24977,8 +24977,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":485
- * 
- * 
+ *
+ *
  * def shape_string(             # <<<<<<<<<<<<<<
  *     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None
  * ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
@@ -24993,8 +24993,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":495
- * 
- * 
+ *
+ *
  * def show(outfile: str, width: int, height: int, fmt: int) -> None:             # <<<<<<<<<<<<<<
  *     import os
  *     from base64 import standard_b64encode
@@ -25014,11 +25014,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/render.py":512
- * 
- * 
+ *
+ *
  * def display_bitmap(rgb_data: bytes, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     from tempfile import NamedTemporaryFile
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -25034,11 +25034,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":522
- * 
- * 
+ *
+ *
  * def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, current_fonts
- * 
+ *
  */
   __pyx_t_2 = PyFloat_FromDouble(((double)64.0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 522, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -25075,8 +25075,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/render.py":539
- * 
- * 
+ *
+ *
  * def test_fallback_font(qtext: Optional[str] = None, bold: bool = False, italic: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     with setup_for_testing():
  *         if qtext:
@@ -25102,8 +25102,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/fonts/render.py":553
- * 
- * 
+ *
+ *
  * def showcase() -> None:             # <<<<<<<<<<<<<<
  *     f = 'monospace' if is_macos else 'Liberation Mono'
  *     test_render_string('He\u0347\u0305llo\u0337, w\u0302or\u0306l\u0354d!', family=f)
@@ -25121,7 +25121,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/fonts/render.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -25960,8 +25960,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -26084,8 +26084,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -28692,8 +28692,8 @@ static PyObject* __Pyx_PyInt_FloorDivideObjC(PyObject *op1, PyObject *op2, CYTHO
                 }
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceFloorDivide : PyNumber_FloorDivide)(op1, op2);
@@ -28807,8 +28807,8 @@ static PyObject* __Pyx_PyInt_SubtractCObj(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -29002,8 +29002,8 @@ static PyObject* __Pyx_PyInt_AddCObj(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -29616,8 +29616,8 @@ static PyObject* __Pyx_PyInt_AndObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla & llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceAnd : PyNumber_And)(op1, op2);

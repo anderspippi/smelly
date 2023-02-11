@@ -1640,8 +1640,8 @@ static PyObject *__pyx_codeobj__22;
 /* Late includes */
 
 /* "smelly_tests/bench_scrollback.py":10
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     parser = ArgumentParser(description='Generate text')
  *     parser.add_argument(
@@ -1697,7 +1697,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "smelly_tests/bench_scrollback.py":11
- * 
+ *
  * def main():
  *     parser = ArgumentParser(description='Generate text')             # <<<<<<<<<<<<<<
  *     parser.add_argument(
@@ -2004,7 +2004,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
  *         '--seed', default=sys.argv[0],
  *         type=str, help='seed to get different output')             # <<<<<<<<<<<<<<
  *     args = parser.parse_args()
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_type, ((PyObject *)(&PyString_Type))) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_help, __pyx_kp_s_seed_to_get_different_output) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
@@ -2026,7 +2026,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
  *         '--seed', default=sys.argv[0],
  *         type=str, help='seed to get different output')
  *     args = parser.parse_args()             # <<<<<<<<<<<<<<
- * 
+ *
  *     rng = Random()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_parser, __pyx_n_s_parse_args); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
@@ -2051,10 +2051,10 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
 
   /* "smelly_tests/bench_scrollback.py":38
  *     args = parser.parse_args()
- * 
+ *
  *     rng = Random()             # <<<<<<<<<<<<<<
  *     rng.seed(args.seed)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2077,10 +2077,10 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
   __pyx_t_1 = 0;
 
   /* "smelly_tests/bench_scrollback.py":39
- * 
+ *
  *     rng = Random()
  *     rng.seed(args.seed)             # <<<<<<<<<<<<<<
- * 
+ *
  *     characters = [c for c in printable if c not in '\r\n\x0b\x0c']
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_rng, __pyx_n_s_seed_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -2107,7 +2107,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
 
   /* "smelly_tests/bench_scrollback.py":41
  *     rng.seed(args.seed)
- * 
+ *
  *     characters = [c for c in printable if c not in '\r\n\x0b\x0c']             # <<<<<<<<<<<<<<
  *     if args.color:
  *         characters += ['\x1b[91m', '\x1b[0m',
@@ -2169,7 +2169,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
   __pyx_t_1 = 0;
 
   /* "smelly_tests/bench_scrollback.py":42
- * 
+ *
  *     characters = [c for c in printable if c not in '\r\n\x0b\x0c']
  *     if args.color:             # <<<<<<<<<<<<<<
  *         characters += ['\x1b[91m', '\x1b[0m',
@@ -2186,7 +2186,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
  *     if args.color:
  *         characters += ['\x1b[91m', '\x1b[0m',             # <<<<<<<<<<<<<<
  *                        '\x1b[1;32m', '\x1b[22m', '\x1b[35m']
- * 
+ *
  */
     __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2212,7 +2212,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
     __pyx_t_3 = 0;
 
     /* "smelly_tests/bench_scrollback.py":42
- * 
+ *
  *     characters = [c for c in printable if c not in '\r\n\x0b\x0c']
  *     if args.color:             # <<<<<<<<<<<<<<
  *         characters += ['\x1b[91m', '\x1b[0m',
@@ -2222,10 +2222,10 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
 
   /* "smelly_tests/bench_scrollback.py":46
  *                        '\x1b[1;32m', '\x1b[22m', '\x1b[35m']
- * 
+ *
  *     if args.unicode:             # <<<<<<<<<<<<<<
  *         characters += ['', '', '', '', '', '', '']
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_args, __pyx_n_s_unicode_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2234,10 +2234,10 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
   if (__pyx_t_8) {
 
     /* "smelly_tests/bench_scrollback.py":47
- * 
+ *
  *     if args.unicode:
  *         characters += ['', '', '', '', '', '', '']             # <<<<<<<<<<<<<<
- * 
+ *
  *     patterns = []
  */
     __pyx_t_3 = PyList_New(7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
@@ -2271,16 +2271,16 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
 
     /* "smelly_tests/bench_scrollback.py":46
  *                        '\x1b[1;32m', '\x1b[22m', '\x1b[35m']
- * 
+ *
  *     if args.unicode:             # <<<<<<<<<<<<<<
  *         characters += ['', '', '', '', '', '', '']
- * 
+ *
  */
   }
 
   /* "smelly_tests/bench_scrollback.py":49
  *         characters += ['', '', '', '', '', '', '']
- * 
+ *
  *     patterns = []             # <<<<<<<<<<<<<<
  *     for _ in range(0, args.patterns):
  *         s = ""
@@ -2291,7 +2291,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
   __pyx_t_1 = 0;
 
   /* "smelly_tests/bench_scrollback.py":50
- * 
+ *
  *     patterns = []
  *     for _ in range(0, args.patterns):             # <<<<<<<<<<<<<<
  *         s = ""
@@ -2567,7 +2567,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
  *                 cnt = 0
  *             s += "".join(rng.choices(characters, k=cnt)) + '\n'             # <<<<<<<<<<<<<<
  *         patterns += [s]
- * 
+ *
  */
       __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_rng, __pyx_n_s_choices); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 56, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
@@ -2610,7 +2610,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
  *                 cnt = 0
  *             s += "".join(rng.choices(characters, k=cnt)) + '\n'
  *         patterns += [s]             # <<<<<<<<<<<<<<
- * 
+ *
  *     time_per_print = args.linesperwrite / args.freq
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -2625,7 +2625,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
     __pyx_t_4 = 0;
 
     /* "smelly_tests/bench_scrollback.py":50
- * 
+ *
  *     patterns = []
  *     for _ in range(0, args.patterns):             # <<<<<<<<<<<<<<
  *         s = ""
@@ -2636,7 +2636,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
 
   /* "smelly_tests/bench_scrollback.py":59
  *         patterns += [s]
- * 
+ *
  *     time_per_print = args.linesperwrite / args.freq             # <<<<<<<<<<<<<<
  *     t1 = clock_gettime(CLOCK_MONOTONIC)
  *     cnt = 0
@@ -2653,7 +2653,7 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
   __pyx_t_2 = 0;
 
   /* "smelly_tests/bench_scrollback.py":60
- * 
+ *
  *     time_per_print = args.linesperwrite / args.freq
  *     t1 = clock_gettime(CLOCK_MONOTONIC)             # <<<<<<<<<<<<<<
  *     cnt = 0
@@ -3012,8 +3012,8 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
  *             break
  *         else:
  *             cnt += 1             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     /*else*/ {
       __pyx_t_11 = __Pyx_PyInt_AddObjC(__pyx_v_cnt, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -3026,8 +3026,8 @@ static PyObject *__pyx_pf_12smelly_tests_16bench_scrollback_main(CYTHON_UNUSED P
   __pyx_L16_break:;
 
   /* "smelly_tests/bench_scrollback.py":10
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     parser = ArgumentParser(description='Generate text')
  *     parser.add_argument(
@@ -3319,8 +3319,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__9);
 
   /* "smelly_tests/bench_scrollback.py":10
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     parser = ArgumentParser(description='Generate text')
  *     parser.add_argument(
@@ -3619,7 +3619,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/bench_scrollback.py":3
  * #!/usr/bin/env python3
- * 
+ *
  * import sys             # <<<<<<<<<<<<<<
  * from argparse import ArgumentParser
  * from random import Random
@@ -3630,7 +3630,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/bench_scrollback.py":4
- * 
+ *
  * import sys
  * from argparse import ArgumentParser             # <<<<<<<<<<<<<<
  * from random import Random
@@ -3676,7 +3676,7 @@ if (!__Pyx_RefNanny) {
  * from random import Random
  * from string import printable             # <<<<<<<<<<<<<<
  * from time import CLOCK_MONOTONIC, clock_gettime, sleep
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3696,8 +3696,8 @@ if (!__Pyx_RefNanny) {
  * from random import Random
  * from string import printable
  * from time import CLOCK_MONOTONIC, clock_gettime, sleep             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3728,8 +3728,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/bench_scrollback.py":10
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     parser = ArgumentParser(description='Generate text')
  *     parser.add_argument(
@@ -3740,8 +3740,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/bench_scrollback.py":81
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -3752,7 +3752,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly_tests/bench_scrollback.py":82
- * 
+ *
  * if __name__ == '__main__':
  *     main()             # <<<<<<<<<<<<<<
  */
@@ -3764,8 +3764,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly_tests/bench_scrollback.py":81
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -3773,7 +3773,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/bench_scrollback.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
- * 
+ *
  * import sys
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -4416,8 +4416,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

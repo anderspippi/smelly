@@ -971,10 +971,10 @@ struct __pyx_obj_6smelly_2rc_12signal_child___pyx_scope_struct_1_genexpr;
 
 /* "smelly/rc/signal_child.py":44
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         import signal
- * 
+ *
  */
 struct __pyx_obj_6smelly_2rc_12signal_child___pyx_scope_struct__response_from_smelly {
   PyObject_HEAD
@@ -985,7 +985,7 @@ struct __pyx_obj_6smelly_2rc_12signal_child___pyx_scope_struct__response_from_sm
 
 /* "smelly/rc/signal_child.py":47
  *         import signal
- * 
+ *
  *         signals = tuple(getattr(signal, x) for x in payload_get('signals'))             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -1710,7 +1710,7 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/signal_child.py":40
  *     args = RemoteCommand.Args(json_field='signals', spec='[SIGNAL_NAME ...]', value_if_unspecified=('SIGINT',))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         # defaults to signal the window this command is run in
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
@@ -1826,7 +1826,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_message_to_sm
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         # defaults to signal the window this command is run in
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1927,7 +1927,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_message_to_sm
 
   /* "smelly/rc/signal_child.py":40
  *     args = RemoteCommand.Args(json_field='signals', spec='[SIGNAL_NAME ...]', value_if_unspecified=('SIGINT',))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         # defaults to signal the window this command is run in
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
@@ -1953,10 +1953,10 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_message_to_sm
 
 /* "smelly/rc/signal_child.py":44
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         import signal
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2049,7 +2049,7 @@ static PyObject *__pyx_gb_6smelly_2rc_12signal_child_11SignalChild_20response_fr
 
 /* "smelly/rc/signal_child.py":47
  *         import signal
- * 
+ *
  *         signals = tuple(getattr(signal, x) for x in payload_get('signals'))             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2225,10 +2225,10 @@ static PyObject *__pyx_gb_6smelly_2rc_12signal_child_11SignalChild_20response_fr
 
 /* "smelly/rc/signal_child.py":44
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         import signal
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_from_smelly(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_boss, PyObject *__pyx_v_window, PyObject *__pyx_v_payload_get) {
@@ -2263,10 +2263,10 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_fro
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/signal_child.py":45
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         import signal             # <<<<<<<<<<<<<<
- * 
+ *
  *         signals = tuple(getattr(signal, x) for x in payload_get('signals'))
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_signal, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -2277,7 +2277,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_fro
 
   /* "smelly/rc/signal_child.py":47
  *         import signal
- * 
+ *
  *         signals = tuple(getattr(signal, x) for x in payload_get('signals'))             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2291,7 +2291,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_fro
   __pyx_t_2 = 0;
 
   /* "smelly/rc/signal_child.py":48
- * 
+ *
  *         signals = tuple(getattr(signal, x) for x in payload_get('signals'))
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -2405,7 +2405,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_fro
  *             if window:
  *                 window.signal_child(*signals)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_signal_child); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -2424,7 +2424,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_fro
     }
 
     /* "smelly/rc/signal_child.py":48
- * 
+ *
  *         signals = tuple(getattr(signal, x) for x in payload_get('signals'))
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -2437,8 +2437,8 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_fro
  *             if window:
  *                 window.signal_child(*signals)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2446,10 +2446,10 @@ static PyObject *__pyx_pf_6smelly_2rc_12signal_child_11SignalChild_2response_fro
 
   /* "smelly/rc/signal_child.py":44
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         import signal
- * 
+ *
  */
 
   /* function exit code */
@@ -2840,7 +2840,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         + MATCH_WINDOW_OPTION
  *     )
  *     args = RemoteCommand.Args(json_field='signals', spec='[SIGNAL_NAME ...]', value_if_unspecified=('SIGINT',))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __pyx_tuple__2 = PyTuple_Pack(1, __pyx_n_s_SIGINT); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 38, __pyx_L1_error)
@@ -2849,7 +2849,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/signal_child.py":40
  *     args = RemoteCommand.Args(json_field='signals', spec='[SIGNAL_NAME ...]', value_if_unspecified=('SIGINT',))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         # defaults to signal the window this command is run in
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
@@ -2861,10 +2861,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/signal_child.py":44
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         import signal
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get, __pyx_n_s_signal, __pyx_n_s_signals, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -3179,9 +3179,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/signal_child.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -3207,9 +3207,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/signal_child.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -3284,10 +3284,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/signal_child.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SignalChildRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3296,11 +3296,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/signal_child.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SignalChildRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3318,16 +3318,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/signal_child.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SignalChildRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/signal_child.py":12
- * 
- * 
+ *
+ *
  * class SignalChild(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     signals+/list.str: The signals, a list of names, such as :code:`SIGTERM`, :code:`SIGKILL`, :code:`SIGUSR1`, etc.
@@ -3345,7 +3345,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/signal_child.py":13
- * 
+ *
  * class SignalChild(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     signals+/list.str: The signals, a list of names, such as :code:`SIGTERM`, :code:`SIGKILL`, :code:`SIGUSR1`, etc.
@@ -3356,7 +3356,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/signal_child.py":18
  *     '''
- * 
+ *
  *     short_desc = 'Send a signal to the foreground process in the specified windows'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Send one or more signals to the foreground process in the specified windows.'
@@ -3402,7 +3402,7 @@ if (!__Pyx_RefNanny) {
  *         + MATCH_WINDOW_OPTION
  *     )
  *     args = RemoteCommand.Args(json_field='signals', spec='[SIGNAL_NAME ...]', value_if_unspecified=('SIGINT',))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 38, __pyx_L1_error)
@@ -3424,7 +3424,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/signal_child.py":40
  *     args = RemoteCommand.Args(json_field='signals', spec='[SIGNAL_NAME ...]', value_if_unspecified=('SIGINT',))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         # defaults to signal the window this command is run in
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
@@ -3453,10 +3453,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/signal_child.py":44
  *         return {'match': opts.match, 'self': True, 'signals': [x.upper() for x in args] or ['SIGINT']}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         import signal
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -3490,8 +3490,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/signal_child.py":12
- * 
- * 
+ *
+ *
  * class SignalChild(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     signals+/list.str: The signals, a list of names, such as :code:`SIGTERM`, :code:`SIGKILL`, :code:`SIGUSR1`, etc.
@@ -3505,8 +3505,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/signal_child.py":54
- * 
- * 
+ *
+ *
  * signal_child = SignalChild()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SignalChild); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -3520,7 +3520,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/signal_child.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

@@ -1526,7 +1526,7 @@ static PyObject *__pyx_codeobj__5;
 
 /* "smelly/rc/kitten.py":31
  *     args = RemoteCommand.Args(spec='kitten_name', json_field='kitten', minimum_count=1, first_rest=('kitten', 'args'))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify kitten name')
@@ -1633,7 +1633,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_message_to_smelly(CYTHON_U
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/kitten.py":32
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) < 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify kitten name')
@@ -1648,7 +1648,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_message_to_smelly(CYTHON_U
  *         if len(args) < 1:
  *             self.fatal('Must specify kitten name')             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'args': list(args)[1:], 'kitten': args[0]}
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fatal); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -1670,7 +1670,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_message_to_smelly(CYTHON_U
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/kitten.py":32
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) < 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify kitten name')
@@ -1682,7 +1682,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_message_to_smelly(CYTHON_U
  *         if len(args) < 1:
  *             self.fatal('Must specify kitten name')
  *         return {'match': opts.match, 'args': list(args)[1:], 'kitten': args[0]}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1709,7 +1709,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_message_to_smelly(CYTHON_U
 
   /* "smelly/rc/kitten.py":31
  *     args = RemoteCommand.Args(spec='kitten_name', json_field='kitten', minimum_count=1, first_rest=('kitten', 'args'))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify kitten name')
@@ -1730,7 +1730,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_message_to_smelly(CYTHON_U
 
 /* "smelly/rc/kitten.py":36
  *         return {'match': opts.match, 'args': list(args)[1:], 'kitten': args[0]}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         retval = None
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -1848,7 +1848,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_2response_from_smelly(CYTH
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/kitten.py":37
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         retval = None             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2079,14 +2079,14 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_2response_from_smelly(CYTH
  */
   __Pyx_INCREF(((PyObject*)&PyBool_Type));
   __pyx_t_2 = ((PyObject*)&PyBool_Type);
-  __pyx_t_13 = PyString_Check(__pyx_v_retval); 
+  __pyx_t_13 = PyString_Check(__pyx_v_retval);
   __pyx_t_14 = (__pyx_t_13 != 0);
   if (!__pyx_t_14) {
   } else {
     __pyx_t_8 = __pyx_t_14;
     goto __pyx_L9_bool_binop_done;
   }
-  __pyx_t_14 = PyObject_IsInstance(__pyx_v_retval, __pyx_t_2); 
+  __pyx_t_14 = PyObject_IsInstance(__pyx_v_retval, __pyx_t_2);
   __pyx_t_13 = (__pyx_t_14 != 0);
   __pyx_t_8 = __pyx_t_13;
   __pyx_L9_bool_binop_done:;
@@ -2099,7 +2099,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_2response_from_smelly(CYTH
  *         if isinstance(retval, (str, bool)):
  *             return retval             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_v_retval);
@@ -2119,8 +2119,8 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_2response_from_smelly(CYTH
  *         if isinstance(retval, (str, bool)):
  *             return retval
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2128,7 +2128,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6kitten_6Kitten_2response_from_smelly(CYTH
 
   /* "smelly/rc/kitten.py":36
  *         return {'match': opts.match, 'args': list(args)[1:], 'kitten': args[0]}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         retval = None
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2275,7 +2275,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     )
  *     options_spec = MATCH_WINDOW_OPTION
  *     args = RemoteCommand.Args(spec='kitten_name', json_field='kitten', minimum_count=1, first_rest=('kitten', 'args'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __pyx_tuple_ = PyTuple_Pack(2, __pyx_n_s_kitten, __pyx_n_s_args); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 29, __pyx_L1_error)
@@ -2284,7 +2284,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/kitten.py":31
  *     args = RemoteCommand.Args(spec='kitten_name', json_field='kitten', minimum_count=1, first_rest=('kitten', 'args'))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify kitten name')
@@ -2296,7 +2296,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/kitten.py":36
  *         return {'match': opts.match, 'args': list(args)[1:], 'kitten': args[0]}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         retval = None
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2593,9 +2593,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/kitten.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2621,9 +2621,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/kitten.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2698,10 +2698,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/kitten.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import KittenRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2710,11 +2710,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/kitten.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import KittenRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2732,16 +2732,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/kitten.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import KittenRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/kitten.py":12
- * 
- * 
+ *
+ *
  * class Kitten(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     kitten+/str: The name of the kitten to run
@@ -2759,7 +2759,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/kitten.py":13
- * 
+ *
  * class Kitten(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     kitten+/str: The name of the kitten to run
@@ -2770,7 +2770,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/kitten.py":19
  *     '''
- * 
+ *
  *     short_desc = 'Run a kitten'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Run a kitten over the specified windows (active window by default).'
@@ -2791,7 +2791,7 @@ if (!__Pyx_RefNanny) {
  *     )
  *     options_spec = MATCH_WINDOW_OPTION             # <<<<<<<<<<<<<<
  *     args = RemoteCommand.Args(spec='kitten_name', json_field='kitten', minimum_count=1, first_rest=('kitten', 'args'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_MATCH_WINDOW_OPTION); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2802,7 +2802,7 @@ if (!__Pyx_RefNanny) {
  *     )
  *     options_spec = MATCH_WINDOW_OPTION
  *     args = RemoteCommand.Args(spec='kitten_name', json_field='kitten', minimum_count=1, first_rest=('kitten', 'args'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
@@ -2825,7 +2825,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/kitten.py":31
  *     args = RemoteCommand.Args(spec='kitten_name', json_field='kitten', minimum_count=1, first_rest=('kitten', 'args'))
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify kitten name')
@@ -2854,7 +2854,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/kitten.py":36
  *         return {'match': opts.match, 'args': list(args)[1:], 'kitten': args[0]}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         retval = None
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2891,8 +2891,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/kitten.py":12
- * 
- * 
+ *
+ *
  * class Kitten(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     kitten+/str: The name of the kitten to run
@@ -2906,8 +2906,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/kitten.py":47
- * 
- * 
+ *
+ *
  * kitten = Kitten()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Kitten); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
@@ -2921,7 +2921,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/kitten.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

@@ -971,7 +971,7 @@ struct __pyx_obj_12smelly_tests_7options___pyx_scope_struct_1_keys_for_func;
 
 /* "smelly_tests/options.py":22
  *         super().tearDown()
- * 
+ *
  *     def test_conf_parsing(self):             # <<<<<<<<<<<<<<
  *         from smelly.config import defaults, load_config
  *         from smelly.constants import is_macos
@@ -987,7 +987,7 @@ struct __pyx_obj_12smelly_tests_7options___pyx_scope_struct__test_conf_parsing {
 
 /* "smelly_tests/options.py":40
  *             return ans
- * 
+ *
  *         def keys_for_func(opts, name):             # <<<<<<<<<<<<<<
  *             for key, defn in opts.keymap.items():
  *                 for action in opts.alias_map.resolve_aliases(defn):
@@ -1956,7 +1956,7 @@ static PyObject *__pyx_codeobj__41;
 /* Late includes */
 
 /* "smelly_tests/options.py":13
- * 
+ *
  * class TestConfParsing(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -2034,7 +2034,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_setUp(CYTHON
  *         super().setUp()
  *         self.error_messages = []             # <<<<<<<<<<<<<<
  *         log_error.redirect = self.error_messages.append
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2045,7 +2045,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_setUp(CYTHON
  *         super().setUp()
  *         self.error_messages = []
  *         log_error.redirect = self.error_messages.append             # <<<<<<<<<<<<<<
- * 
+ *
  *     def tearDown(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_error_messages); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
@@ -2060,7 +2060,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_setUp(CYTHON
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/options.py":13
- * 
+ *
  * class TestConfParsing(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -2084,7 +2084,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_setUp(CYTHON
 
 /* "smelly_tests/options.py":18
  *         log_error.redirect = self.error_messages.append
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         del log_error.redirect
  *         super().tearDown()
@@ -2116,11 +2116,11 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_2tearDown(CY
   __Pyx_RefNannySetupContext("tearDown", 0);
 
   /* "smelly_tests/options.py":19
- * 
+ *
  *     def tearDown(self):
  *         del log_error.redirect             # <<<<<<<<<<<<<<
  *         super().tearDown()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_log_error); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2131,7 +2131,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_2tearDown(CY
  *     def tearDown(self):
  *         del log_error.redirect
  *         super().tearDown()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_conf_parsing(self):
  */
   __pyx_t_2 = __Pyx_CyFunction_GetClassObj(__pyx_self);
@@ -2170,7 +2170,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_2tearDown(CY
 
   /* "smelly_tests/options.py":18
  *         log_error.redirect = self.error_messages.append
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         del log_error.redirect
  *         super().tearDown()
@@ -2193,7 +2193,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_2tearDown(CY
 
 /* "smelly_tests/options.py":22
  *         super().tearDown()
- * 
+ *
  *     def test_conf_parsing(self):             # <<<<<<<<<<<<<<
  *         from smelly.config import defaults, load_config
  *         from smelly.constants import is_macos
@@ -2215,7 +2215,7 @@ static PyObject *__pyx_pw_12smelly_tests_7options_15TestConfParsing_5test_conf_p
 
 /* "smelly_tests/options.py":30
  *         bad_lines = []
- * 
+ *
  *         def p(*lines, bad_line_num=0):             # <<<<<<<<<<<<<<
  *             del bad_lines[:]
  *             del self.error_messages[:]
@@ -2308,7 +2308,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/options.py":31
- * 
+ *
  *         def p(*lines, bad_line_num=0):
  *             del bad_lines[:]             # <<<<<<<<<<<<<<
  *             del self.error_messages[:]
@@ -2448,7 +2448,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
  *             else:
  *                 self.assertFalse(bad_lines)             # <<<<<<<<<<<<<<
  *             return ans
- * 
+ *
  */
   /*else*/ {
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 37, __pyx_L1_error) }
@@ -2478,7 +2478,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
  *             else:
  *                 self.assertFalse(bad_lines)
  *             return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *         def keys_for_func(opts, name):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2488,7 +2488,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
 
   /* "smelly_tests/options.py":30
  *         bad_lines = []
- * 
+ *
  *         def p(*lines, bad_line_num=0):             # <<<<<<<<<<<<<<
  *             del bad_lines[:]
  *             del self.error_messages[:]
@@ -2513,7 +2513,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
 
 /* "smelly_tests/options.py":40
  *             return ans
- * 
+ *
  *         def keys_for_func(opts, name):             # <<<<<<<<<<<<<<
  *             for key, defn in opts.keymap.items():
  *                 for action in opts.alias_map.resolve_aliases(defn):
@@ -2654,7 +2654,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 40, __pyx_L1_error)
 
   /* "smelly_tests/options.py":41
- * 
+ *
  *         def keys_for_func(opts, name):
  *             for key, defn in opts.keymap.items():             # <<<<<<<<<<<<<<
  *                 for action in opts.alias_map.resolve_aliases(defn):
@@ -2730,11 +2730,11 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_6);
@@ -2852,7 +2852,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
  *                 for action in opts.alias_map.resolve_aliases(defn):
  *                     if action.func == name:             # <<<<<<<<<<<<<<
  *                         yield key
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_action, __pyx_n_s_func); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -2866,7 +2866,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
  *                 for action in opts.alias_map.resolve_aliases(defn):
  *                     if action.func == name:
  *                         yield key             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('font_size 11.37', 'clear_all_shortcuts y', 'color23 red')
  */
         __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
@@ -2903,7 +2903,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
  *                 for action in opts.alias_map.resolve_aliases(defn):
  *                     if action.func == name:             # <<<<<<<<<<<<<<
  *                         yield key
- * 
+ *
  */
       }
 
@@ -2918,7 +2918,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly_tests/options.py":41
- * 
+ *
  *         def keys_for_func(opts, name):
  *             for key, defn in opts.keymap.items():             # <<<<<<<<<<<<<<
  *                 for action in opts.alias_map.resolve_aliases(defn):
@@ -2930,7 +2930,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
 
   /* "smelly_tests/options.py":40
  *             return ans
- * 
+ *
  *         def keys_for_func(opts, name):             # <<<<<<<<<<<<<<
  *             for key, defn in opts.keymap.items():
  *                 for action in opts.alias_map.resolve_aliases(defn):
@@ -2959,7 +2959,7 @@ static PyObject *__pyx_gb_12smelly_tests_7options_15TestConfParsing_17test_conf_
 
 /* "smelly_tests/options.py":82
  *         self.ae(opts.env, {'A': '1', 'B': 'x1', 'C': '', 'D': DELETE_ENV_VAR})
- * 
+ *
  *         def ac(which=0):             # <<<<<<<<<<<<<<
  *             ka = tuple(opts.keymap.values())[0]
  *             acs = opts.alias_map.resolve_aliases(ka)
@@ -3043,7 +3043,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/options.py":83
- * 
+ *
  *         def ac(which=0):
  *             ka = tuple(opts.keymap.values())[0]             # <<<<<<<<<<<<<<
  *             acs = opts.alias_map.resolve_aliases(ka)
@@ -3084,7 +3084,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
  *             ka = tuple(opts.keymap.values())[0]
  *             acs = opts.alias_map.resolve_aliases(ka)             # <<<<<<<<<<<<<<
  *             return acs[which]
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_opts)) { __Pyx_RaiseClosureNameError("opts"); __PYX_ERR(0, 84, __pyx_L1_error) }
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_opts, __pyx_n_s_alias_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
@@ -3114,7 +3114,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
  *             ka = tuple(opts.keymap.values())[0]
  *             acs = opts.alias_map.resolve_aliases(ka)
  *             return acs[which]             # <<<<<<<<<<<<<<
- * 
+ *
  *         ka = ac()
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3126,7 +3126,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
 
   /* "smelly_tests/options.py":82
  *         self.ae(opts.env, {'A': '1', 'B': 'x1', 'C': '', 'D': DELETE_ENV_VAR})
- * 
+ *
  *         def ac(which=0):             # <<<<<<<<<<<<<<
  *             ka = tuple(opts.keymap.values())[0]
  *             acs = opts.alias_map.resolve_aliases(ka)
@@ -3149,7 +3149,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_17test_conf_
 
 /* "smelly_tests/options.py":22
  *         super().tearDown()
- * 
+ *
  *     def test_conf_parsing(self):             # <<<<<<<<<<<<<<
  *         from smelly.config import defaults, load_config
  *         from smelly.constants import is_macos
@@ -3202,7 +3202,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/options.py":23
- * 
+ *
  *     def test_conf_parsing(self):
  *         from smelly.config import defaults, load_config             # <<<<<<<<<<<<<<
  *         from smelly.constants import is_macos
@@ -3259,7 +3259,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         from smelly.constants import is_macos
  *         from smelly.fonts import FontModification, ModificationType, ModificationUnit, ModificationValue             # <<<<<<<<<<<<<<
  *         from smelly.options.utils import to_modifiers
- * 
+ *
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3304,7 +3304,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         from smelly.constants import is_macos
  *         from smelly.fonts import FontModification, ModificationType, ModificationUnit, ModificationValue
  *         from smelly.options.utils import to_modifiers             # <<<<<<<<<<<<<<
- * 
+ *
  *         bad_lines = []
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
@@ -3324,9 +3324,9 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":28
  *         from smelly.options.utils import to_modifiers
- * 
+ *
  *         bad_lines = []             # <<<<<<<<<<<<<<
- * 
+ *
  *         def p(*lines, bad_line_num=0):
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -3337,7 +3337,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":30
  *         bad_lines = []
- * 
+ *
  *         def p(*lines, bad_line_num=0):             # <<<<<<<<<<<<<<
  *             del bad_lines[:]
  *             del self.error_messages[:]
@@ -3354,7 +3354,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":40
  *             return ans
- * 
+ *
  *         def keys_for_func(opts, name):             # <<<<<<<<<<<<<<
  *             for key, defn in opts.keymap.items():
  *                 for action in opts.alias_map.resolve_aliases(defn):
@@ -3366,7 +3366,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":46
  *                         yield key
- * 
+ *
  *         opts = p('font_size 11.37', 'clear_all_shortcuts y', 'color23 red')             # <<<<<<<<<<<<<<
  *         self.ae(opts.font_size, 11.37)
  *         self.ae(opts.mouse_hide_wait, 0 if is_macos else 3)
@@ -3378,7 +3378,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
   __pyx_t_2 = 0;
 
   /* "smelly_tests/options.py":47
- * 
+ *
  *         opts = p('font_size 11.37', 'clear_all_shortcuts y', 'color23 red')
  *         self.ae(opts.font_size, 11.37)             # <<<<<<<<<<<<<<
  *         self.ae(opts.mouse_hide_wait, 0 if is_macos else 3)
@@ -4375,7 +4375,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/options.py":77
- * 
+ *
  *         # test the aliasing options
  *         opts = p('env A=1', 'env B=x$A', 'env C=', 'env D',             # <<<<<<<<<<<<<<
  *                  'clear_all_shortcuts y', 'kitten_alias a b --moo',
@@ -4392,7 +4392,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *                  'clear_all_shortcuts y', 'kitten_alias a b --moo',
  *                  'map f1 kitten a arg')
  *         self.ae(opts.env, {'A': '1', 'B': 'x1', 'C': '', 'D': DELETE_ENV_VAR})             # <<<<<<<<<<<<<<
- * 
+ *
  *         def ac(which=0):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -4461,7 +4461,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":82
  *         self.ae(opts.env, {'A': '1', 'B': 'x1', 'C': '', 'D': DELETE_ENV_VAR})
- * 
+ *
  *         def ac(which=0):             # <<<<<<<<<<<<<<
  *             ka = tuple(opts.keymap.values())[0]
  *             acs = opts.alias_map.resolve_aliases(ka)
@@ -4474,7 +4474,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":87
  *             return acs[which]
- * 
+ *
  *         ka = ac()             # <<<<<<<<<<<<<<
  *         self.ae(ka.func, 'kitten')
  *         self.ae(ka.args, ('b', '--moo', 'arg'))
@@ -4485,11 +4485,11 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
   __pyx_t_1 = 0;
 
   /* "smelly_tests/options.py":88
- * 
+ *
  *         ka = ac()
  *         self.ae(ka.func, 'kitten')             # <<<<<<<<<<<<<<
  *         self.ae(ka.args, ('b', '--moo', 'arg'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4548,7 +4548,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'kitten')
  *         self.ae(ka.args, ('b', '--moo', 'arg'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
@@ -4606,7 +4606,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":91
  *         self.ae(ka.args, ('b', '--moo', 'arg'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y', 'kitten_alias hints hints --hi',
  *             'map f1 kitten hints XXX')
@@ -4635,7 +4635,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'kitten')             # <<<<<<<<<<<<<<
  *         self.ae(ka.args, ('hints', '--hi', 'XXX'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4694,7 +4694,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'kitten')
  *         self.ae(ka.args, ('hints', '--hi', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('clear_all_shortcuts y',
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 96, __pyx_L1_error)
@@ -4752,7 +4752,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":98
  *         self.ae(ka.args, ('hints', '--hi', 'XXX'))
- * 
+ *
  *         opts = p('clear_all_shortcuts y',             # <<<<<<<<<<<<<<
  *                  'action_alias la launch --moo', 'map f1 la XXX')
  *         ka = ac()
@@ -4781,7 +4781,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')             # <<<<<<<<<<<<<<
  *         self.ae(ka.args, ('--moo', 'XXX'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4840,7 +4840,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')
  *         self.ae(ka.args, ('--moo', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias one launch --moo',
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -4898,7 +4898,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":104
  *         self.ae(ka.args, ('--moo', 'XXX'))
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias one launch --moo',             # <<<<<<<<<<<<<<
  *                  'action_alias two one recursive', 'map f1 two XXX')
  *         ka = ac()
@@ -4927,7 +4927,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')             # <<<<<<<<<<<<<<
  *         self.ae(ka.args, ('--moo', 'recursive', 'XXX'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4986,7 +4986,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')
  *         self.ae(ka.args, ('--moo', 'recursive', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias launch two 1',
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -5044,7 +5044,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":110
  *         self.ae(ka.args, ('--moo', 'recursive', 'XXX'))
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias launch two 1',             # <<<<<<<<<<<<<<
  *                  'action_alias two launch 2', 'map f1 launch 3')
  *         ka = ac()
@@ -5073,7 +5073,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')             # <<<<<<<<<<<<<<
  *         self.ae(ka.args, ('2', '1', '3'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5132,7 +5132,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')
  *         self.ae(ka.args, ('2', '1', '3'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
@@ -5190,7 +5190,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":116
  *         self.ae(ka.args, ('2', '1', '3'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y', 'action_alias launch launch --moo',
  *             'map f1 launch XXX')
@@ -5219,7 +5219,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')             # <<<<<<<<<<<<<<
  *         self.ae(ka.args, ('--moo', 'XXX'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5278,7 +5278,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'launch')
  *         self.ae(ka.args, ('--moo', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
@@ -5336,7 +5336,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":123
  *         self.ae(ka.args, ('--moo', 'XXX'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y',
  *             'action_alias cfs change_font_size current', 'map f1 cfs +2')
@@ -5365,7 +5365,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'change_font_size')             # <<<<<<<<<<<<<<
  *         self.ae(ka.args, (False, '+', 2.0))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5424,7 +5424,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         ka = ac()
  *         self.ae(ka.func, 'change_font_size')
  *         self.ae(ka.args, (False, '+', 2.0))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
@@ -5482,7 +5482,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":130
  *         self.ae(ka.args, (False, '+', 2.0))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y', 'action_alias la launch --moo',
  *             'map f1 combine : new_window : la ')
@@ -5498,7 +5498,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *             'clear_all_shortcuts y', 'action_alias la launch --moo',
  *             'map f1 combine : new_window : la ')
  *         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
@@ -5572,7 +5572,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":135
  *         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y',
  *             'action_alias cc combine : new_window : launch --moo',
@@ -5589,7 +5589,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *             'map f1 cc XXX')
  *         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))             # <<<<<<<<<<<<<<
  *         self.ae(ac(1).args, ('--moo', 'XXX'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5664,7 +5664,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *             'map f1 cc XXX')
  *         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))
  *         self.ae(ac(1).args, ('--moo', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('smelly_mod alt')
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
@@ -5725,7 +5725,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":142
  *         self.ae(ac(1).args, ('--moo', 'XXX'))
- * 
+ *
  *         opts = p('smelly_mod alt')             # <<<<<<<<<<<<<<
  *         self.ae(opts.smelly_mod, to_modifiers('alt'))
  *         self.ae(next(keys_for_func(opts, 'next_layout')).mods, opts.smelly_mod)
@@ -5738,11 +5738,11 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
   __pyx_t_1 = 0;
 
   /* "smelly_tests/options.py":143
- * 
+ *
  *         opts = p('smelly_mod alt')
  *         self.ae(opts.smelly_mod, to_modifiers('alt'))             # <<<<<<<<<<<<<<
  *         self.ae(next(keys_for_func(opts, 'next_layout')).mods, opts.smelly_mod)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5819,7 +5819,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
  *         opts = p('smelly_mod alt')
  *         self.ae(opts.smelly_mod, to_modifiers('alt'))
  *         self.ae(next(keys_for_func(opts, 'next_layout')).mods, opts.smelly_mod)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # deprecation handling
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
@@ -5889,7 +5889,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/options.py":147
- * 
+ *
  *         # deprecation handling
  *         opts = p('clear_all_shortcuts y', 'send_text all f1 hello')             # <<<<<<<<<<<<<<
  *         self.ae(len(opts.keymap), 1)
@@ -6089,7 +6089,7 @@ static PyObject *__pyx_pf_12smelly_tests_7options_15TestConfParsing_4test_conf_p
 
   /* "smelly_tests/options.py":22
  *         super().tearDown()
- * 
+ *
  *     def test_conf_parsing(self):             # <<<<<<<<<<<<<<
  *         from smelly.config import defaults, load_config
  *         from smelly.constants import is_macos
@@ -6631,7 +6631,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":30
  *         bad_lines = []
- * 
+ *
  *         def p(*lines, bad_line_num=0):             # <<<<<<<<<<<<<<
  *             del bad_lines[:]
  *             del self.error_messages[:]
@@ -6643,7 +6643,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":40
  *             return ans
- * 
+ *
  *         def keys_for_func(opts, name):             # <<<<<<<<<<<<<<
  *             for key, defn in opts.keymap.items():
  *                 for action in opts.alias_map.resolve_aliases(defn):
@@ -6655,7 +6655,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":46
  *                         yield key
- * 
+ *
  *         opts = p('font_size 11.37', 'clear_all_shortcuts y', 'color23 red')             # <<<<<<<<<<<<<<
  *         self.ae(opts.font_size, 11.37)
  *         self.ae(opts.mouse_hide_wait, 0 if is_macos else 3)
@@ -6731,7 +6731,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__12);
 
   /* "smelly_tests/options.py":77
- * 
+ *
  *         # test the aliasing options
  *         opts = p('env A=1', 'env B=x$A', 'env C=', 'env D',             # <<<<<<<<<<<<<<
  *                  'clear_all_shortcuts y', 'kitten_alias a b --moo',
@@ -6743,7 +6743,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":82
  *         self.ae(opts.env, {'A': '1', 'B': 'x1', 'C': '', 'D': DELETE_ENV_VAR})
- * 
+ *
  *         def ac(which=0):             # <<<<<<<<<<<<<<
  *             ka = tuple(opts.keymap.values())[0]
  *             acs = opts.alias_map.resolve_aliases(ka)
@@ -6760,7 +6760,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         ka = ac()
  *         self.ae(ka.func, 'kitten')
  *         self.ae(ka.args, ('b', '--moo', 'arg'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_tuple__18 = PyTuple_Pack(3, __pyx_n_s_b, __pyx_kp_s_moo, __pyx_n_s_arg); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 89, __pyx_L1_error)
@@ -6769,7 +6769,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":91
  *         self.ae(ka.args, ('b', '--moo', 'arg'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y', 'kitten_alias hints hints --hi',
  *             'map f1 kitten hints XXX')
@@ -6782,7 +6782,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         ka = ac()
  *         self.ae(ka.func, 'kitten')
  *         self.ae(ka.args, ('hints', '--hi', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('clear_all_shortcuts y',
  */
   __pyx_tuple__20 = PyTuple_Pack(3, __pyx_n_s_hints, __pyx_kp_s_hi, __pyx_n_s_XXX); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 96, __pyx_L1_error)
@@ -6791,7 +6791,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":98
  *         self.ae(ka.args, ('hints', '--hi', 'XXX'))
- * 
+ *
  *         opts = p('clear_all_shortcuts y',             # <<<<<<<<<<<<<<
  *                  'action_alias la launch --moo', 'map f1 la XXX')
  *         ka = ac()
@@ -6804,7 +6804,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         ka = ac()
  *         self.ae(ka.func, 'launch')
  *         self.ae(ka.args, ('--moo', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias one launch --moo',
  */
   __pyx_tuple__22 = PyTuple_Pack(2, __pyx_kp_s_moo, __pyx_n_s_XXX); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -6813,7 +6813,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":104
  *         self.ae(ka.args, ('--moo', 'XXX'))
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias one launch --moo',             # <<<<<<<<<<<<<<
  *                  'action_alias two one recursive', 'map f1 two XXX')
  *         ka = ac()
@@ -6826,7 +6826,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         ka = ac()
  *         self.ae(ka.func, 'launch')
  *         self.ae(ka.args, ('--moo', 'recursive', 'XXX'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias launch two 1',
  */
   __pyx_tuple__24 = PyTuple_Pack(3, __pyx_kp_s_moo, __pyx_n_s_recursive, __pyx_n_s_XXX); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -6835,7 +6835,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":110
  *         self.ae(ka.args, ('--moo', 'recursive', 'XXX'))
- * 
+ *
  *         opts = p('clear_all_shortcuts y', 'action_alias launch two 1',             # <<<<<<<<<<<<<<
  *                  'action_alias two launch 2', 'map f1 launch 3')
  *         ka = ac()
@@ -6848,7 +6848,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         ka = ac()
  *         self.ae(ka.func, 'launch')
  *         self.ae(ka.args, ('2', '1', '3'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_tuple__26 = PyTuple_Pack(3, __pyx_kp_s_2, __pyx_kp_s_1, __pyx_kp_s_3); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 114, __pyx_L1_error)
@@ -6857,7 +6857,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":116
  *         self.ae(ka.args, ('2', '1', '3'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y', 'action_alias launch launch --moo',
  *             'map f1 launch XXX')
@@ -6868,7 +6868,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":123
  *         self.ae(ka.args, ('--moo', 'XXX'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y',
  *             'action_alias cfs change_font_size current', 'map f1 cfs +2')
@@ -6881,7 +6881,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         ka = ac()
  *         self.ae(ka.func, 'change_font_size')
  *         self.ae(ka.args, (False, '+', 2.0))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_tuple__30 = PyTuple_Pack(3, Py_False, __pyx_kp_s__29, __pyx_float_2_0); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 128, __pyx_L1_error)
@@ -6890,7 +6890,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":130
  *         self.ae(ka.args, (False, '+', 2.0))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y', 'action_alias la launch --moo',
  *             'map f1 combine : new_window : la ')
@@ -6903,7 +6903,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             'clear_all_shortcuts y', 'action_alias la launch --moo',
  *             'map f1 combine : new_window : la ')
  *         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = p(
  */
   __pyx_tuple__32 = PyTuple_Pack(2, __pyx_n_s_new_window, __pyx_n_s_launch); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 133, __pyx_L1_error)
@@ -6912,7 +6912,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":135
  *         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))
- * 
+ *
  *         opts = p(             # <<<<<<<<<<<<<<
  *             'clear_all_shortcuts y',
  *             'action_alias cc combine : new_window : launch --moo',
@@ -6923,7 +6923,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":142
  *         self.ae(ac(1).args, ('--moo', 'XXX'))
- * 
+ *
  *         opts = p('smelly_mod alt')             # <<<<<<<<<<<<<<
  *         self.ae(opts.smelly_mod, to_modifiers('alt'))
  *         self.ae(next(keys_for_func(opts, 'next_layout')).mods, opts.smelly_mod)
@@ -6933,7 +6933,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__34);
 
   /* "smelly_tests/options.py":147
- * 
+ *
  *         # deprecation handling
  *         opts = p('clear_all_shortcuts y', 'send_text all f1 hello')             # <<<<<<<<<<<<<<
  *         self.ae(len(opts.keymap), 1)
@@ -6944,7 +6944,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__35);
 
   /* "smelly_tests/options.py":13
- * 
+ *
  * class TestConfParsing(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -6957,7 +6957,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":18
  *         log_error.redirect = self.error_messages.append
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         del log_error.redirect
  *         super().tearDown()
@@ -6969,7 +6969,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/options.py":22
  *         super().tearDown()
- * 
+ *
  *     def test_conf_parsing(self):             # <<<<<<<<<<<<<<
  *         from smelly.config import defaults, load_config
  *         from smelly.constants import is_macos
@@ -7292,8 +7292,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/options.py":5
- * 
- * 
+ *
+ *
  * from smelly.fast_data_types import Color             # <<<<<<<<<<<<<<
  * from smelly.options.utils import DELETE_ENV_VAR
  * from smelly.utils import log_error
@@ -7313,11 +7313,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/options.py":6
- * 
+ *
  * from smelly.fast_data_types import Color
  * from smelly.options.utils import DELETE_ENV_VAR             # <<<<<<<<<<<<<<
  * from smelly.utils import log_error
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7337,7 +7337,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.fast_data_types import Color
  * from smelly.options.utils import DELETE_ENV_VAR
  * from smelly.utils import log_error             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -7356,10 +7356,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/options.py":9
  * from smelly.utils import log_error
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7376,8 +7376,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/options.py":12
- * 
- * 
+ *
+ *
  * class TestConfParsing(BaseTest):             # <<<<<<<<<<<<<<
  *     def setUp(self):
  *         super().setUp()
@@ -7397,7 +7397,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly_tests/options.py":13
- * 
+ *
  * class TestConfParsing(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -7413,7 +7413,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/options.py":18
  *         log_error.redirect = self.error_messages.append
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         del log_error.redirect
  *         super().tearDown()
@@ -7428,7 +7428,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/options.py":22
  *         super().tearDown()
- * 
+ *
  *     def test_conf_parsing(self):             # <<<<<<<<<<<<<<
  *         from smelly.config import defaults, load_config
  *         from smelly.constants import is_macos
@@ -7439,8 +7439,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/options.py":12
- * 
- * 
+ *
+ *
  * class TestConfParsing(BaseTest):             # <<<<<<<<<<<<<<
  *     def setUp(self):
  *         super().setUp()
@@ -7458,7 +7458,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/options.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

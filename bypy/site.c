@@ -1421,8 +1421,8 @@ static PyObject *__pyx_codeobj__5;
 /* Late includes */
 
 /* "site.py":11
- * 
- * 
+ *
+ *
  * def set_quit():             # <<<<<<<<<<<<<<
  *     eof = 'Ctrl-D (i.e. EOF)'
  *     builtins.quit = _sitebuiltins.Quitter('quit', eof)
@@ -1457,7 +1457,7 @@ static PyObject *__pyx_pf_4site_set_quit(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_RefNannySetupContext("set_quit", 0);
 
   /* "site.py":12
- * 
+ *
  * def set_quit():
  *     eof = 'Ctrl-D (i.e. EOF)'             # <<<<<<<<<<<<<<
  *     builtins.quit = _sitebuiltins.Quitter('quit', eof)
@@ -1471,7 +1471,7 @@ static PyObject *__pyx_pf_4site_set_quit(CYTHON_UNUSED PyObject *__pyx_self) {
  *     eof = 'Ctrl-D (i.e. EOF)'
  *     builtins.quit = _sitebuiltins.Quitter('quit', eof)             # <<<<<<<<<<<<<<
  *     builtins.exit = _sitebuiltins.Quitter('exit', eof)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sitebuiltins); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1533,8 +1533,8 @@ static PyObject *__pyx_pf_4site_set_quit(CYTHON_UNUSED PyObject *__pyx_self) {
  *     eof = 'Ctrl-D (i.e. EOF)'
  *     builtins.quit = _sitebuiltins.Quitter('quit', eof)
  *     builtins.exit = _sitebuiltins.Quitter('exit', eof)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sitebuiltins); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1593,8 +1593,8 @@ static PyObject *__pyx_pf_4site_set_quit(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "site.py":11
- * 
- * 
+ *
+ *
  * def set_quit():             # <<<<<<<<<<<<<<
  *     eof = 'Ctrl-D (i.e. EOF)'
  *     builtins.quit = _sitebuiltins.Quitter('quit', eof)
@@ -1618,11 +1618,11 @@ static PyObject *__pyx_pf_4site_set_quit(CYTHON_UNUSED PyObject *__pyx_self) {
 }
 
 /* "site.py":17
- * 
- * 
+ *
+ *
  * def set_helper():             # <<<<<<<<<<<<<<
  *     builtins.help = _sitebuiltins._Helper()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1651,11 +1651,11 @@ static PyObject *__pyx_pf_4site_2set_helper(CYTHON_UNUSED PyObject *__pyx_self) 
   __Pyx_RefNannySetupContext("set_helper", 0);
 
   /* "site.py":18
- * 
+ *
  * def set_helper():
  *     builtins.help = _sitebuiltins._Helper()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sitebuiltins); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1684,11 +1684,11 @@ static PyObject *__pyx_pf_4site_2set_helper(CYTHON_UNUSED PyObject *__pyx_self) 
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "site.py":17
- * 
- * 
+ *
+ *
  * def set_helper():             # <<<<<<<<<<<<<<
  *     builtins.help = _sitebuiltins._Helper()
- * 
+ *
  */
 
   /* function exit code */
@@ -1707,8 +1707,8 @@ static PyObject *__pyx_pf_4site_2set_helper(CYTHON_UNUSED PyObject *__pyx_self) 
 }
 
 /* "site.py":21
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     sys.argv[0] = sys.calibre_basename
  *     set_helper()
@@ -1742,7 +1742,7 @@ static PyObject *__pyx_pf_4site_4main(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "site.py":22
- * 
+ *
  * def main():
  *     sys.argv[0] = sys.calibre_basename             # <<<<<<<<<<<<<<
  *     set_helper()
@@ -1852,7 +1852,7 @@ static PyObject *__pyx_pf_4site_4main(CYTHON_UNUSED PyObject *__pyx_self) {
  *     mod = __import__(sys.calibre_module, fromlist=[1])
  *     func = getattr(mod, sys.calibre_function)             # <<<<<<<<<<<<<<
  *     return func()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1869,8 +1869,8 @@ static PyObject *__pyx_pf_4site_4main(CYTHON_UNUSED PyObject *__pyx_self) {
  *     mod = __import__(sys.calibre_module, fromlist=[1])
  *     func = getattr(mod, sys.calibre_function)
  *     return func()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_func);
@@ -1894,8 +1894,8 @@ static PyObject *__pyx_pf_4site_4main(CYTHON_UNUSED PyObject *__pyx_self) {
   goto __pyx_L0;
 
   /* "site.py":21
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     sys.argv[0] = sys.calibre_basename
  *     set_helper()
@@ -2003,8 +2003,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "site.py":11
- * 
- * 
+ *
+ *
  * def set_quit():             # <<<<<<<<<<<<<<
  *     eof = 'Ctrl-D (i.e. EOF)'
  *     builtins.quit = _sitebuiltins.Quitter('quit', eof)
@@ -2015,17 +2015,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_site_py, __pyx_n_s_set_quit, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "site.py":17
- * 
- * 
+ *
+ *
  * def set_helper():             # <<<<<<<<<<<<<<
  *     builtins.help = _sitebuiltins._Helper()
- * 
+ *
  */
   __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_site_py, __pyx_n_s_set_helper, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 17, __pyx_L1_error)
 
   /* "site.py":21
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     sys.argv[0] = sys.calibre_basename
  *     set_helper()
@@ -2317,10 +2317,10 @@ if (!__Pyx_RefNanny) {
 
   /* "site.py":5
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import builtins             # <<<<<<<<<<<<<<
  * import sys
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_builtins, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2328,10 +2328,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "site.py":6
- * 
+ *
  * import builtins
  * import sys             # <<<<<<<<<<<<<<
- * 
+ *
  * import _sitebuiltins
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2341,10 +2341,10 @@ if (!__Pyx_RefNanny) {
 
   /* "site.py":8
  * import sys
- * 
+ *
  * import _sitebuiltins             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sitebuiltins, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2352,8 +2352,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "site.py":11
- * 
- * 
+ *
+ *
  * def set_quit():             # <<<<<<<<<<<<<<
  *     eof = 'Ctrl-D (i.e. EOF)'
  *     builtins.quit = _sitebuiltins.Quitter('quit', eof)
@@ -2364,11 +2364,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "site.py":17
- * 
- * 
+ *
+ *
  * def set_helper():             # <<<<<<<<<<<<<<
  *     builtins.help = _sitebuiltins._Helper()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_4site_3set_helper, 0, __pyx_n_s_set_helper, NULL, __pyx_n_s_site, __pyx_d, ((PyObject *)__pyx_codeobj__3)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2376,8 +2376,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "site.py":21
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     sys.argv[0] = sys.calibre_basename
  *     set_helper()
@@ -2388,8 +2388,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "site.py":30
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -2400,7 +2400,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_2) {
 
     /* "site.py":31
- * 
+ *
  * if __name__ == '__main__':
  *     main()             # <<<<<<<<<<<<<<
  */
@@ -2412,8 +2412,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "site.py":30
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */

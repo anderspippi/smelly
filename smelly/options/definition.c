@@ -6085,7 +6085,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * definition.add_deprecation('deprecated_macos_show_window_title_in_menubar_alias', 'macos_show_window_title_in_menubar')
  * definition.add_deprecation('deprecated_send_text', 'send_text')             # <<<<<<<<<<<<<<
  * definition.add_deprecation('deprecated_adjust_line_height', 'adjust_line_height', 'adjust_column_width', 'adjust_baseline')
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(2, __pyx_n_s_deprecated_send_text, __pyx_n_s_send_text); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -6095,7 +6095,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * definition.add_deprecation('deprecated_macos_show_window_title_in_menubar_alias', 'macos_show_window_title_in_menubar')
  * definition.add_deprecation('deprecated_send_text', 'send_text')
  * definition.add_deprecation('deprecated_adjust_line_height', 'adjust_line_height', 'adjust_column_width', 'adjust_baseline')             # <<<<<<<<<<<<<<
- * 
+ *
  * agr = definition.add_group
  */
   __pyx_tuple__4 = PyTuple_Pack(4, __pyx_n_s_deprecated_adjust_line_height, __pyx_n_s_adjust_line_height, __pyx_n_s_adjust_column_width, __pyx_n_s_adjust_baseline); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 22, __pyx_L1_error)
@@ -6103,7 +6103,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly/options/definition.py":31
- * 
+ *
  * # fonts {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'fonts',
@@ -6115,7 +6115,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":40
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'font_family',
  *     'monospace',
@@ -6126,9 +6126,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":60
  * )
- * 
+ *
  * opt('bold_font', 'auto')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('italic_font', 'auto')
  */
   __pyx_tuple__7 = PyTuple_Pack(2, __pyx_n_s_bold_font, __pyx_n_s_auto); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 60, __pyx_L1_error)
@@ -6137,9 +6137,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":62
  * opt('bold_font', 'auto')
- * 
+ *
  * opt('italic_font', 'auto')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('bold_italic_font', 'auto')
  */
   __pyx_tuple__8 = PyTuple_Pack(2, __pyx_n_s_italic_font, __pyx_n_s_auto); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 62, __pyx_L1_error)
@@ -6148,9 +6148,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":64
  * opt('italic_font', 'auto')
- * 
+ *
  * opt('bold_italic_font', 'auto')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('font_size', '11.0', option_type='to_font_size', ctype='double', long_text='Font size (in pts)')
  */
   __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_bold_italic_font, __pyx_n_s_auto); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 64, __pyx_L1_error)
@@ -6159,9 +6159,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":66
  * opt('bold_italic_font', 'auto')
- * 
+ *
  * opt('font_size', '11.0', option_type='to_font_size', ctype='double', long_text='Font size (in pts)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__10 = PyTuple_Pack(2, __pyx_n_s_font_size, __pyx_kp_s_11_0); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 66, __pyx_L1_error)
@@ -6170,7 +6170,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":68
  * opt('font_size', '11.0', option_type='to_font_size', ctype='double', long_text='Font size (in pts)')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'force_ltr',
  *     'no',
@@ -6181,7 +6181,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":91
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+symbol_map',
  *     'U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols',
@@ -6192,7 +6192,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":108
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+narrow_symbols',
  *     'U+E0A0-U+E0A3,U+E0C0-U+E0C7 1',
@@ -6202,8 +6202,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__13);
 
   /* "smelly/options/definition.py":126
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'disable_ligatures',
  *     'never',
@@ -6214,7 +6214,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":149
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+font_features',
  *     'none',
@@ -6225,7 +6225,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":208
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+modify_font',
  *     '',
@@ -6236,7 +6236,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":239
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'box_drawing_scale',
  *     '0.001, 1, 1.5, 2',
@@ -6247,7 +6247,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":251
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'undercurl_style',
  *     'thin-sparse',
@@ -6269,7 +6269,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":263
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'text_composition_strategy',
  *     'platform',
@@ -6279,10 +6279,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__21);
 
   /* "smelly/options/definition.py":298
- * 
+ *
  * # cursor {{{
  * agr('cursor', 'Cursor customization')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__22 = PyTuple_Pack(2, __pyx_n_s_cursor, __pyx_kp_s_Cursor_customization); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 298, __pyx_L1_error)
@@ -6291,7 +6291,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":300
  * agr('cursor', 'Cursor customization')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor',
  *     '#cccccc',
@@ -6302,7 +6302,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":314
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_text_color',
  *     '#111111',
@@ -6313,7 +6313,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":326
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_shape',
  *     'block',
@@ -6324,9 +6324,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":342
  * )
- * 
+ *
  * opt('cursor_beam_thickness', '1.5', option_type='positive_float', ctype='float', long_text='The thickness of the beam cursor (in pts).')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('cursor_underline_thickness', '2.0', option_type='positive_float', ctype='float', long_text='The thickness of the underline cursor (in pts).')
  */
   __pyx_tuple__26 = PyTuple_Pack(2, __pyx_n_s_cursor_beam_thickness, __pyx_kp_s_1_5); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 342, __pyx_L1_error)
@@ -6335,9 +6335,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":344
  * opt('cursor_beam_thickness', '1.5', option_type='positive_float', ctype='float', long_text='The thickness of the beam cursor (in pts).')
- * 
+ *
  * opt('cursor_underline_thickness', '2.0', option_type='positive_float', ctype='float', long_text='The thickness of the underline cursor (in pts).')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__27 = PyTuple_Pack(2, __pyx_n_s_cursor_underline_thickness, __pyx_kp_s_2_0); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 344, __pyx_L1_error)
@@ -6346,7 +6346,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":346
  * opt('cursor_underline_thickness', '2.0', option_type='positive_float', ctype='float', long_text='The thickness of the underline cursor (in pts).')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_blink_interval',
  *     '-1',
@@ -6357,7 +6357,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_stop_blinking_after',
  *     '15.0',
@@ -6367,10 +6367,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__29);
 
   /* "smelly/options/definition.py":372
- * 
+ *
  * # scrollback {{{
  * agr('scrollback', 'Scrollback')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__30 = PyTuple_Pack(2, __pyx_n_s_scrollback, __pyx_n_s_Scrollback); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 372, __pyx_L1_error)
@@ -6379,7 +6379,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":374
  * agr('scrollback', 'Scrollback')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_lines',
  *     '2000',
@@ -6390,7 +6390,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":388
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_pager',
  *     'less --chop-long-lines --RAW-CONTROL-CHARS +INPUT_LINE_NUMBER',
@@ -6401,7 +6401,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":404
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_pager_history_size',
  *     '0',
@@ -6412,7 +6412,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":421
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_fill_enlarged_window',
  *     'no',
@@ -6423,7 +6423,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":429
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wheel_scroll_multiplier',
  *     '5.0',
@@ -6434,7 +6434,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":442
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wheel_scroll_min_lines',
  *     '1',
@@ -6445,7 +6445,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":456
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'touch_scroll_multiplier',
  *     '1.0',
@@ -6455,10 +6455,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__37);
 
   /* "smelly/options/definition.py":471
- * 
+ *
  * # mouse {{{
  * agr('mouse', 'Mouse')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__38 = PyTuple_Pack(2, __pyx_n_s_mouse, __pyx_n_s_Mouse); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 471, __pyx_L1_error)
@@ -6467,7 +6467,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":473
  * agr('mouse', 'Mouse')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'mouse_hide_wait',
  *     '3.0',
@@ -6478,7 +6478,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":488
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_color',
  *     '#0087bd',
@@ -6489,7 +6489,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":500
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_style',
  *     'curly',
@@ -6500,7 +6500,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":507
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'open_url_with',
  *     'default',
@@ -6511,7 +6511,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":519
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_prefixes',
  *     'file ftp ftps gemini git gopher http https irc ircs smelly mailto news sftp ssh',
@@ -6522,7 +6522,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":529
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'detect_urls',
  *     'yes',
@@ -6533,7 +6533,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":541
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_excluded_characters',
  *     '',
@@ -6544,7 +6544,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":551
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'show_hyperlink_targets',
  *     'no',
@@ -6555,7 +6555,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":562
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'copy_on_select',
  *     'no',
@@ -6566,7 +6566,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":584
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'paste_actions',
  *     'quote-urls-at-prompt',
@@ -6577,7 +6577,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":605
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'strip_trailing_spaces',
  *     'never',
@@ -6599,7 +6599,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":616
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_by_word_characters',
  *     '@-./_~?&=%+#',
@@ -6610,7 +6610,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":627
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_by_word_characters_forward',
  *     '',
@@ -6621,7 +6621,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":641
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'click_interval',
  *     '-1.0',
@@ -6632,7 +6632,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":653
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'focus_follows_mouse',
  *     'no',
@@ -6643,7 +6643,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":663
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pointer_shape_when_grabbed',
  *     'arrow',
@@ -6665,7 +6665,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":674
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'default_pointer_shape',
  *     'beam',
@@ -6676,7 +6676,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":685
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pointer_shape_when_dragging',
  *     'beam',
@@ -6686,7 +6686,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__59);
 
   /* "smelly/options/definition.py":698
- * 
+ *
  * # mouse.mousemap {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'mouse.mousemap',
@@ -6698,7 +6698,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":740
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clear_all_mouse_actions',
  *     'no',
@@ -6709,7 +6709,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":750
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse or move the cursor',
  *     'click_url_or_select left click ungrabbed mouse_handle_click selection link prompt',
@@ -6720,7 +6720,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":762
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse or move the cursor even when grabbed',
  *     'click_url_or_select_grabbed shift+left click grabbed,ungrabbed mouse_handle_click selection link prompt',
@@ -6731,7 +6731,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":771
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse cursor',
  *     'click_url ctrl+shift+left release grabbed,ungrabbed mouse_handle_click link',
@@ -6742,7 +6742,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":781
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Discard press event for link click',
  *     'click_url_discard ctrl+shift+left press grabbed discard_event',
@@ -6752,8 +6752,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__65);
 
   /* "smelly/options/definition.py":791
- * 
- * 
+ *
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Paste from the primary selection',
  *     'paste_selection middle release ungrabbed paste_from_selection',
@@ -6764,7 +6764,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":796
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text',
  *     'start_simple_selection left press ungrabbed mouse_selection normal',
@@ -6775,7 +6775,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":801
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text in a rectangle',
  *     'start_rectangle_selection ctrl+alt+left press ungrabbed mouse_selection rectangle',
@@ -6786,7 +6786,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":806
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a word',
  *     'select_word left doublepress ungrabbed mouse_selection word',
@@ -6797,7 +6797,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":811
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a line',
  *     'select_line left triplepress ungrabbed mouse_selection line',
@@ -6808,7 +6808,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":816
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select line from point',
  *     'select_line_from_point ctrl+alt+left triplepress ungrabbed mouse_selection line_from_point',
@@ -6819,7 +6819,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":822
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Extend the current selection',
  *     'extend_selection right press ungrabbed mouse_selection extend',
@@ -6830,7 +6830,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":831
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Paste from the primary selection even when grabbed',
  *     'paste_selection_grabbed shift+middle release ungrabbed,grabbed paste_selection',
@@ -6841,7 +6841,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":836
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Discard press event for middle click paste',
  *     'paste_selection_grabbed shift+middle press grabbed discard_event',
@@ -6852,7 +6852,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":841
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text even when grabbed',
  *     'start_simple_selection_grabbed shift+left press ungrabbed,grabbed mouse_selection normal',
@@ -6863,7 +6863,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":846
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text in a rectangle even when grabbed',
  *     'start_rectangle_selection_grabbed ctrl+shift+alt+left press ungrabbed,grabbed mouse_selection rectangle',
@@ -6874,7 +6874,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":851
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a word even when grabbed',
  *     'select_word_grabbed shift+left doublepress ungrabbed,grabbed mouse_selection word',
@@ -6885,7 +6885,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":856
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a line even when grabbed',
  *     'select_line_grabbed shift+left triplepress ungrabbed,grabbed mouse_selection line',
@@ -6896,7 +6896,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":861
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select line from point even when grabbed',
  *     'select_line_from_point_grabbed ctrl+shift+alt+left triplepress ungrabbed,grabbed mouse_selection line_from_point',
@@ -6907,7 +6907,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":867
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Extend the current selection even when grabbed',
  *     'extend_selection_grabbed shift+right press ungrabbed,grabbed mouse_selection extend',
@@ -6918,7 +6918,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":872
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Show clicked command output in pager',
  *     'show_clicked_cmd_output_ungrabbed ctrl+shift+right press ungrabbed mouse_show_command_output',
@@ -6928,10 +6928,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__81);
 
   /* "smelly/options/definition.py":882
- * 
+ *
  * # performance {{{
  * agr('performance', 'Performance tuning')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__82 = PyTuple_Pack(2, __pyx_n_s_performance, __pyx_kp_s_Performance_tuning); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 882, __pyx_L1_error)
@@ -6940,7 +6940,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":884
  * agr('performance', 'Performance tuning')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'repaint_delay',
  *     '10',
@@ -6951,7 +6951,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":899
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'input_delay',
  *     '3',
@@ -6962,7 +6962,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":913
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'sync_to_monitor',
  *     'yes',
@@ -6972,10 +6972,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__85);
 
   /* "smelly/options/definition.py":930
- * 
+ *
  * # bell {{{
  * agr('bell', 'Terminal bell')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__86 = PyTuple_Pack(2, __pyx_n_s_bell, __pyx_kp_s_Terminal_bell); if (unlikely(!__pyx_tuple__86)) __PYX_ERR(0, 930, __pyx_L1_error)
@@ -6984,7 +6984,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":932
  * agr('bell', 'Terminal bell')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'enable_audio_bell',
  *     'yes',
@@ -6995,7 +6995,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":942
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_bell_duration',
  *     '0.0',
@@ -7006,7 +7006,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":953
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_bell_color',
  *     'none',
@@ -7017,7 +7017,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":964
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_alert_on_bell',
  *     'yes',
@@ -7028,7 +7028,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":975
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_on_tab',
  *     '" "',
@@ -7039,7 +7039,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":991
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'command_on_bell',
  *     'none',
@@ -7050,7 +7050,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1002
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_path',
  *     'none',
@@ -7060,10 +7060,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__94);
 
   /* "smelly/options/definition.py":1019
- * 
+ *
  * # window {{{
  * agr('window', 'Window layout')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__95 = PyTuple_Pack(2, __pyx_n_s_window, __pyx_kp_s_Window_layout); if (unlikely(!__pyx_tuple__95)) __PYX_ERR(0, 1019, __pyx_L1_error)
@@ -7072,7 +7072,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1021
  * agr('window', 'Window layout')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remember_window_size',
  *     'yes',
@@ -7083,7 +7083,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1035
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'initial_window_width',
  *     '640',
@@ -7094,7 +7094,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1041
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'initial_window_height',
  *     '400',
@@ -7105,7 +7105,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1047
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'enabled_layouts',
  *     '*',
@@ -7116,7 +7116,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1059
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_resize_step_cells',
  *     '2',
@@ -7127,7 +7127,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1071
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_resize_step_lines',
  *     '2',
@@ -7138,7 +7138,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1077
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_border_width',
  *     '0.5pt',
@@ -7149,7 +7149,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1090
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'draw_minimal_borders',
  *     'yes',
@@ -7160,7 +7160,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1102
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_margin_width',
  *     '0',
@@ -7171,7 +7171,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1113
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'single_window_margin_width',
  *     '-1',
@@ -7182,7 +7182,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1126
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_padding_width',
  *     '0',
@@ -7193,7 +7193,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1138
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'placement_strategy',
  *     'center',
@@ -7215,7 +7215,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1151
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_border_color',
  *     '#00ff00',
@@ -7226,9 +7226,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1162
  * )
- * 
+ *
  * opt('inactive_border_color', '#cccccc', option_type='to_color', ctype='color_as_int', long_text='The color for the border of inactive windows.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__111 = PyTuple_Pack(2, __pyx_n_s_inactive_border_color, __pyx_kp_s_cccccc); if (unlikely(!__pyx_tuple__111)) __PYX_ERR(0, 1162, __pyx_L1_error)
@@ -7237,7 +7237,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1164
  * opt('inactive_border_color', '#cccccc', option_type='to_color', ctype='color_as_int', long_text='The color for the border of inactive windows.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_border_color',
  *     '#ff5a00',
@@ -7248,7 +7248,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1172
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_text_alpha',
  *     '1.0',
@@ -7259,7 +7259,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1183
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hide_window_decorations',
  *     'no',
@@ -7270,7 +7270,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1197
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_path',
  *     'none',
@@ -7281,7 +7281,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1211
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_position',
  *     'bottom-right',
@@ -7303,7 +7303,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1223
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_alpha',
  *     '0.5',
@@ -7313,8 +7313,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__118);
 
   /* "smelly/options/definition.py":1235
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_debounce_time',
  *     '0.1',
@@ -7325,7 +7325,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1247
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_draw_strategy',
  *     'static',
@@ -7336,7 +7336,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1261
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_in_steps',
  *     'no',
@@ -7347,7 +7347,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1275
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_window_select_characters',
  *     defval=string.digits[1:] + '0' + string.ascii_uppercase,
@@ -7369,7 +7369,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1287
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'confirm_os_window_close',
  *     '-1',
@@ -7379,10 +7379,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__124);
 
   /* "smelly/options/definition.py":1308
- * 
+ *
  * # tabbar {{{
  * agr('tabbar', 'Tab bar')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('tab_bar_edge', 'bottom', option_type='tab_bar_edge', ctype='int', long_text='The edge to show the tab bar on, :code:`top` or :code:`bottom`.')
  */
   __pyx_tuple__125 = PyTuple_Pack(2, __pyx_n_s_tabbar, __pyx_kp_s_Tab_bar); if (unlikely(!__pyx_tuple__125)) __PYX_ERR(0, 1308, __pyx_L1_error)
@@ -7391,9 +7391,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1310
  * agr('tabbar', 'Tab bar')
- * 
+ *
  * opt('tab_bar_edge', 'bottom', option_type='tab_bar_edge', ctype='int', long_text='The edge to show the tab bar on, :code:`top` or :code:`bottom`.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('tab_bar_margin_width', '0.0', option_type='positive_float', long_text='The margin to the left and right of the tab bar (in pts).')
  */
   __pyx_tuple__126 = PyTuple_Pack(2, __pyx_n_s_tab_bar_edge, __pyx_n_s_bottom); if (unlikely(!__pyx_tuple__126)) __PYX_ERR(0, 1310, __pyx_L1_error)
@@ -7402,9 +7402,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1312
  * opt('tab_bar_edge', 'bottom', option_type='tab_bar_edge', ctype='int', long_text='The edge to show the tab bar on, :code:`top` or :code:`bottom`.')
- * 
+ *
  * opt('tab_bar_margin_width', '0.0', option_type='positive_float', long_text='The margin to the left and right of the tab bar (in pts).')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__127 = PyTuple_Pack(2, __pyx_n_s_tab_bar_margin_width, __pyx_kp_s_0_0); if (unlikely(!__pyx_tuple__127)) __PYX_ERR(0, 1312, __pyx_L1_error)
@@ -7413,7 +7413,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1314
  * opt('tab_bar_margin_width', '0.0', option_type='positive_float', long_text='The margin to the left and right of the tab bar (in pts).')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_margin_height',
  *     '0.0 0.0',
@@ -7424,7 +7424,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1326
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_style',
  *     'fade',
@@ -7446,7 +7446,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_align',
  *     'left',
@@ -7468,9 +7468,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1368
  * )
- * 
+ *
  * opt('tab_bar_min_tabs', '2', option_type='tab_bar_min_tabs', ctype='uint', long_text='The minimum number of tabs that must exist before the tab bar is shown.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__133 = PyTuple_Pack(2, __pyx_n_s_tab_bar_min_tabs, __pyx_kp_s_2); if (unlikely(!__pyx_tuple__133)) __PYX_ERR(0, 1368, __pyx_L1_error)
@@ -7479,7 +7479,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1370
  * opt('tab_bar_min_tabs', '2', option_type='tab_bar_min_tabs', ctype='uint', long_text='The minimum number of tabs that must exist before the tab bar is shown.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_switch_strategy',
  *     'previous',
@@ -7501,7 +7501,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1383
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_fade',
  *     '0.25 0.5 0.75 1',
@@ -7512,7 +7512,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1396
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_separator',
  *     '" "',
@@ -7523,7 +7523,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1406
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_powerline_style',
  *     'angled',
@@ -7545,7 +7545,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1417
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_activity_symbol',
  *     'none',
@@ -7556,7 +7556,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1429
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_title_max_length',
  *     '0',
@@ -7567,7 +7567,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1439
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_title_template',
  *     '"{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{title}"',
@@ -7578,7 +7578,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1484
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_title_template',
  *     'none',
@@ -7589,9 +7589,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1494
  * )
- * 
+ *
  * opt('active_tab_foreground', '#000', option_type='to_color', long_text='Tab bar colors and styles.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__145 = PyTuple_Pack(2, __pyx_n_s_active_tab_foreground, __pyx_kp_s_000); if (unlikely(!__pyx_tuple__145)) __PYX_ERR(0, 1494, __pyx_L1_error)
@@ -7600,7 +7600,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1496
  * opt('active_tab_foreground', '#000', option_type='to_color', long_text='Tab bar colors and styles.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_background',
  *     '#eee',
@@ -7611,7 +7611,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1502
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_font_style',
  *     'bold-italic',
@@ -7622,7 +7622,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1508
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_foreground',
  *     '#444',
@@ -7633,7 +7633,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1514
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_background',
  *     '#999',
@@ -7644,7 +7644,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1520
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_font_style',
  *     'normal',
@@ -7655,7 +7655,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1526
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_background',
  *     'none',
@@ -7666,7 +7666,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1537
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_margin_color',
  *     'none',
@@ -7676,10 +7676,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__152);
 
   /* "smelly/options/definition.py":1552
- * 
+ *
  * # colors {{{
  * agr('colors', 'Color scheme')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('foreground', '#dddddd', option_type='to_color', ctype='color_as_int', long_text='The foreground and background colors.')
  */
   __pyx_tuple__153 = PyTuple_Pack(2, __pyx_n_s_colors, __pyx_kp_s_Color_scheme); if (unlikely(!__pyx_tuple__153)) __PYX_ERR(0, 1552, __pyx_L1_error)
@@ -7688,9 +7688,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1554
  * agr('colors', 'Color scheme')
- * 
+ *
  * opt('foreground', '#dddddd', option_type='to_color', ctype='color_as_int', long_text='The foreground and background colors.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__154 = PyTuple_Pack(2, __pyx_n_s_foreground, __pyx_kp_s_dddddd); if (unlikely(!__pyx_tuple__154)) __PYX_ERR(0, 1554, __pyx_L1_error)
@@ -7699,7 +7699,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1556
  * opt('foreground', '#dddddd', option_type='to_color', ctype='color_as_int', long_text='The foreground and background colors.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background',
  *     '#000000',
@@ -7710,7 +7710,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1563
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_opacity',
  *     '1.0',
@@ -7721,7 +7721,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1588
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image', 'none', option_type='config_or_absolute_path', ctype='!background_image', long_text='Path to a background image. Must be in PNG format.'
  * )
@@ -7732,7 +7732,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1592
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image_layout',
  *     'tiled',
@@ -7754,7 +7754,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1603
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image_linear',
  *     'no',
@@ -7765,7 +7765,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1611
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'dynamic_background_opacity',
  *     'no',
@@ -7776,7 +7776,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1624
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_tint',
  *     '0.0',
@@ -7787,7 +7787,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1637
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_tint_gaps',
  *     '1.0',
@@ -7798,7 +7798,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1650
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'dim_opacity',
  *     '0.75',
@@ -7809,7 +7809,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1661
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'selection_foreground',
  *     '#000000',
@@ -7820,7 +7820,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1675
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'selection_background',
  *     '#fffacd',
@@ -7830,7 +7830,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__166);
 
   /* "smelly/options/definition.py":1683
- * 
+ *
  * # colors.table {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'colors.table',
@@ -7842,9 +7842,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1693
  * )
- * 
+ *
  * opt('color0', '#000000', option_type='to_color', long_text='black')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__168 = PyTuple_Pack(2, __pyx_n_s_color0, __pyx_kp_s_000000); if (unlikely(!__pyx_tuple__168)) __PYX_ERR(0, 1693, __pyx_L1_error)
@@ -7853,7 +7853,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1695
  * opt('color0', '#000000', option_type='to_color', long_text='black')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color8',
  *     '#767676',
@@ -7864,9 +7864,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1701
  * )
- * 
+ *
  * opt('color1', '#cc0403', option_type='to_color', long_text='red')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__170 = PyTuple_Pack(2, __pyx_n_s_color1, __pyx_kp_s_cc0403); if (unlikely(!__pyx_tuple__170)) __PYX_ERR(0, 1701, __pyx_L1_error)
@@ -7875,7 +7875,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1703
  * opt('color1', '#cc0403', option_type='to_color', long_text='red')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color9',
  *     '#f2201f',
@@ -7886,9 +7886,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1709
  * )
- * 
+ *
  * opt('color2', '#19cb00', option_type='to_color', long_text='green')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__172 = PyTuple_Pack(2, __pyx_n_s_color2, __pyx_kp_s_19cb00); if (unlikely(!__pyx_tuple__172)) __PYX_ERR(0, 1709, __pyx_L1_error)
@@ -7897,7 +7897,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1711
  * opt('color2', '#19cb00', option_type='to_color', long_text='green')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color10',
  *     '#23fd00',
@@ -7908,9 +7908,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1717
  * )
- * 
+ *
  * opt('color3', '#cecb00', option_type='to_color', long_text='yellow')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__174 = PyTuple_Pack(2, __pyx_n_s_color3, __pyx_kp_s_cecb00); if (unlikely(!__pyx_tuple__174)) __PYX_ERR(0, 1717, __pyx_L1_error)
@@ -7919,7 +7919,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1719
  * opt('color3', '#cecb00', option_type='to_color', long_text='yellow')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color11',
  *     '#fffd00',
@@ -7930,9 +7930,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1725
  * )
- * 
+ *
  * opt('color4', '#0d73cc', option_type='to_color', long_text='blue')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__176 = PyTuple_Pack(2, __pyx_n_s_color4, __pyx_kp_s_0d73cc); if (unlikely(!__pyx_tuple__176)) __PYX_ERR(0, 1725, __pyx_L1_error)
@@ -7941,7 +7941,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1727
  * opt('color4', '#0d73cc', option_type='to_color', long_text='blue')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color12',
  *     '#1a8fff',
@@ -7952,9 +7952,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1733
  * )
- * 
+ *
  * opt('color5', '#cb1ed1', option_type='to_color', long_text='magenta')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__178 = PyTuple_Pack(2, __pyx_n_s_color5, __pyx_kp_s_cb1ed1); if (unlikely(!__pyx_tuple__178)) __PYX_ERR(0, 1733, __pyx_L1_error)
@@ -7963,7 +7963,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1735
  * opt('color5', '#cb1ed1', option_type='to_color', long_text='magenta')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color13',
  *     '#fd28ff',
@@ -7974,9 +7974,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1741
  * )
- * 
+ *
  * opt('color6', '#0dcdcd', option_type='to_color', long_text='cyan')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__180 = PyTuple_Pack(2, __pyx_n_s_color6, __pyx_kp_s_0dcdcd); if (unlikely(!__pyx_tuple__180)) __PYX_ERR(0, 1741, __pyx_L1_error)
@@ -7985,7 +7985,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1743
  * opt('color6', '#0dcdcd', option_type='to_color', long_text='cyan')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color14',
  *     '#14ffff',
@@ -7996,9 +7996,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1749
  * )
- * 
+ *
  * opt('color7', '#dddddd', option_type='to_color', long_text='white')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__182 = PyTuple_Pack(2, __pyx_n_s_color7, __pyx_kp_s_dddddd); if (unlikely(!__pyx_tuple__182)) __PYX_ERR(0, 1749, __pyx_L1_error)
@@ -8007,7 +8007,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1751
  * opt('color7', '#dddddd', option_type='to_color', long_text='white')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color15',
  *     '#ffffff',
@@ -8018,9 +8018,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1757
  * )
- * 
+ *
  * opt('mark1_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark1_background', '#98d3cb', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (light steel blue)')
  */
   __pyx_tuple__184 = PyTuple_Pack(2, __pyx_n_s_mark1_foreground, __pyx_n_s_black); if (unlikely(!__pyx_tuple__184)) __PYX_ERR(0, 1757, __pyx_L1_error)
@@ -8029,9 +8029,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1759
  * opt('mark1_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1')
- * 
+ *
  * opt('mark1_background', '#98d3cb', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (light steel blue)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark2_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 2')
  */
   __pyx_tuple__185 = PyTuple_Pack(2, __pyx_n_s_mark1_background, __pyx_kp_s_98d3cb); if (unlikely(!__pyx_tuple__185)) __PYX_ERR(0, 1759, __pyx_L1_error)
@@ -8040,9 +8040,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1761
  * opt('mark1_background', '#98d3cb', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (light steel blue)')
- * 
+ *
  * opt('mark2_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 2')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark2_background', '#f2dcd3', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (beige)')
  */
   __pyx_tuple__186 = PyTuple_Pack(2, __pyx_n_s_mark2_foreground, __pyx_n_s_black); if (unlikely(!__pyx_tuple__186)) __PYX_ERR(0, 1761, __pyx_L1_error)
@@ -8051,9 +8051,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1763
  * opt('mark2_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 2')
- * 
+ *
  * opt('mark2_background', '#f2dcd3', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (beige)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark3_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3')
  */
   __pyx_tuple__187 = PyTuple_Pack(2, __pyx_n_s_mark2_background, __pyx_kp_s_f2dcd3); if (unlikely(!__pyx_tuple__187)) __PYX_ERR(0, 1763, __pyx_L1_error)
@@ -8062,9 +8062,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1765
  * opt('mark2_background', '#f2dcd3', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (beige)')
- * 
+ *
  * opt('mark3_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark3_background', '#f274bc', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3 (violet)')
  */
   __pyx_tuple__188 = PyTuple_Pack(2, __pyx_n_s_mark3_foreground, __pyx_n_s_black); if (unlikely(!__pyx_tuple__188)) __PYX_ERR(0, 1765, __pyx_L1_error)
@@ -8073,9 +8073,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1767
  * opt('mark3_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3')
- * 
+ *
  * opt('mark3_background', '#f274bc', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3 (violet)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__189 = PyTuple_Pack(2, __pyx_n_s_mark3_background, __pyx_kp_s_f274bc); if (unlikely(!__pyx_tuple__189)) __PYX_ERR(0, 1767, __pyx_L1_error)
@@ -8084,7 +8084,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1769
  * opt('mark3_background', '#f274bc', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3 (violet)')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color16',
  *     '#000000',
@@ -8095,7 +8095,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1776
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color17',
  *     '#00005f',
@@ -8106,7 +8106,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1783
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color18',
  *     '#000087',
@@ -8117,7 +8117,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1790
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color19',
  *     '#0000af',
@@ -8128,7 +8128,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1797
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color20',
  *     '#0000d7',
@@ -8139,7 +8139,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1804
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color21',
  *     '#0000ff',
@@ -8150,7 +8150,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1811
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color22',
  *     '#005f00',
@@ -8161,7 +8161,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1818
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color23',
  *     '#005f5f',
@@ -8172,7 +8172,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1825
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color24',
  *     '#005f87',
@@ -8183,7 +8183,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1832
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color25',
  *     '#005faf',
@@ -8194,7 +8194,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1839
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color26',
  *     '#005fd7',
@@ -8205,7 +8205,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1846
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color27',
  *     '#005fff',
@@ -8216,7 +8216,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1853
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color28',
  *     '#008700',
@@ -8227,7 +8227,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1860
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color29',
  *     '#00875f',
@@ -8238,7 +8238,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1867
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color30',
  *     '#008787',
@@ -8249,7 +8249,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1874
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color31',
  *     '#0087af',
@@ -8260,7 +8260,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1881
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color32',
  *     '#0087d7',
@@ -8271,7 +8271,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1888
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color33',
  *     '#0087ff',
@@ -8282,7 +8282,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1895
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color34',
  *     '#00af00',
@@ -8293,7 +8293,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1902
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color35',
  *     '#00af5f',
@@ -8304,7 +8304,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1909
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color36',
  *     '#00af87',
@@ -8315,7 +8315,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1916
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color37',
  *     '#00afaf',
@@ -8326,7 +8326,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1923
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color38',
  *     '#00afd7',
@@ -8337,7 +8337,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1930
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color39',
  *     '#00afff',
@@ -8348,7 +8348,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1937
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color40',
  *     '#00d700',
@@ -8359,7 +8359,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1944
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color41',
  *     '#00d75f',
@@ -8370,7 +8370,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1951
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color42',
  *     '#00d787',
@@ -8381,7 +8381,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1958
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color43',
  *     '#00d7af',
@@ -8392,7 +8392,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1965
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color44',
  *     '#00d7d7',
@@ -8403,7 +8403,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1972
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color45',
  *     '#00d7ff',
@@ -8414,7 +8414,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1979
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color46',
  *     '#00ff00',
@@ -8425,7 +8425,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1986
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color47',
  *     '#00ff5f',
@@ -8436,7 +8436,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":1993
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color48',
  *     '#00ff87',
@@ -8447,7 +8447,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2000
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color49',
  *     '#00ffaf',
@@ -8458,7 +8458,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2007
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color50',
  *     '#00ffd7',
@@ -8469,7 +8469,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2014
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color51',
  *     '#00ffff',
@@ -8480,7 +8480,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2021
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color52',
  *     '#5f0000',
@@ -8491,7 +8491,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2028
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color53',
  *     '#5f005f',
@@ -8502,7 +8502,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2035
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color54',
  *     '#5f0087',
@@ -8513,7 +8513,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2042
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color55',
  *     '#5f00af',
@@ -8524,7 +8524,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2049
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color56',
  *     '#5f00d7',
@@ -8535,7 +8535,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2056
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color57',
  *     '#5f00ff',
@@ -8546,7 +8546,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2063
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color58',
  *     '#5f5f00',
@@ -8557,7 +8557,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2070
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color59',
  *     '#5f5f5f',
@@ -8568,7 +8568,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2077
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color60',
  *     '#5f5f87',
@@ -8579,7 +8579,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2084
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color61',
  *     '#5f5faf',
@@ -8590,7 +8590,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2091
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color62',
  *     '#5f5fd7',
@@ -8601,7 +8601,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2098
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color63',
  *     '#5f5fff',
@@ -8612,7 +8612,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2105
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color64',
  *     '#5f8700',
@@ -8623,7 +8623,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2112
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color65',
  *     '#5f875f',
@@ -8634,7 +8634,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2119
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color66',
  *     '#5f8787',
@@ -8645,7 +8645,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2126
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color67',
  *     '#5f87af',
@@ -8656,7 +8656,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2133
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color68',
  *     '#5f87d7',
@@ -8667,7 +8667,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2140
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color69',
  *     '#5f87ff',
@@ -8678,7 +8678,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2147
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color70',
  *     '#5faf00',
@@ -8689,7 +8689,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2154
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color71',
  *     '#5faf5f',
@@ -8700,7 +8700,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2161
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color72',
  *     '#5faf87',
@@ -8711,7 +8711,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2168
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color73',
  *     '#5fafaf',
@@ -8722,7 +8722,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2175
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color74',
  *     '#5fafd7',
@@ -8733,7 +8733,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2182
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color75',
  *     '#5fafff',
@@ -8744,7 +8744,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2189
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color76',
  *     '#5fd700',
@@ -8755,7 +8755,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2196
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color77',
  *     '#5fd75f',
@@ -8766,7 +8766,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2203
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color78',
  *     '#5fd787',
@@ -8777,7 +8777,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2210
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color79',
  *     '#5fd7af',
@@ -8788,7 +8788,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2217
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color80',
  *     '#5fd7d7',
@@ -8799,7 +8799,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2224
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color81',
  *     '#5fd7ff',
@@ -8810,7 +8810,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2231
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color82',
  *     '#5fff00',
@@ -8821,7 +8821,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2238
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color83',
  *     '#5fff5f',
@@ -8832,7 +8832,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2245
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color84',
  *     '#5fff87',
@@ -8843,7 +8843,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2252
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color85',
  *     '#5fffaf',
@@ -8854,7 +8854,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2259
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color86',
  *     '#5fffd7',
@@ -8865,7 +8865,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2266
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color87',
  *     '#5fffff',
@@ -8876,7 +8876,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2273
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color88',
  *     '#870000',
@@ -8887,7 +8887,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2280
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color89',
  *     '#87005f',
@@ -8898,7 +8898,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2287
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color90',
  *     '#870087',
@@ -8909,7 +8909,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2294
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color91',
  *     '#8700af',
@@ -8920,7 +8920,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2301
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color92',
  *     '#8700d7',
@@ -8931,7 +8931,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2308
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color93',
  *     '#8700ff',
@@ -8942,7 +8942,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2315
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color94',
  *     '#875f00',
@@ -8953,7 +8953,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2322
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color95',
  *     '#875f5f',
@@ -8964,7 +8964,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2329
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color96',
  *     '#875f87',
@@ -8975,7 +8975,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2336
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color97',
  *     '#875faf',
@@ -8986,7 +8986,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2343
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color98',
  *     '#875fd7',
@@ -8997,7 +8997,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2350
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color99',
  *     '#875fff',
@@ -9008,7 +9008,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2357
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color100',
  *     '#878700',
@@ -9019,7 +9019,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2364
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color101',
  *     '#87875f',
@@ -9030,7 +9030,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2371
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color102',
  *     '#878787',
@@ -9041,7 +9041,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2378
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color103',
  *     '#8787af',
@@ -9052,7 +9052,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2385
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color104',
  *     '#8787d7',
@@ -9063,7 +9063,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2392
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color105',
  *     '#8787ff',
@@ -9074,7 +9074,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2399
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color106',
  *     '#87af00',
@@ -9085,7 +9085,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2406
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color107',
  *     '#87af5f',
@@ -9096,7 +9096,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2413
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color108',
  *     '#87af87',
@@ -9107,7 +9107,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2420
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color109',
  *     '#87afaf',
@@ -9118,7 +9118,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2427
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color110',
  *     '#87afd7',
@@ -9129,7 +9129,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2434
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color111',
  *     '#87afff',
@@ -9140,7 +9140,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2441
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color112',
  *     '#87d700',
@@ -9151,7 +9151,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2448
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color113',
  *     '#87d75f',
@@ -9162,7 +9162,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2455
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color114',
  *     '#87d787',
@@ -9173,7 +9173,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2462
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color115',
  *     '#87d7af',
@@ -9184,7 +9184,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2469
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color116',
  *     '#87d7d7',
@@ -9195,7 +9195,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2476
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color117',
  *     '#87d7ff',
@@ -9206,7 +9206,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2483
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color118',
  *     '#87ff00',
@@ -9217,7 +9217,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2490
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color119',
  *     '#87ff5f',
@@ -9228,7 +9228,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2497
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color120',
  *     '#87ff87',
@@ -9239,7 +9239,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2504
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color121',
  *     '#87ffaf',
@@ -9250,7 +9250,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2511
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color122',
  *     '#87ffd7',
@@ -9261,7 +9261,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2518
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color123',
  *     '#87ffff',
@@ -9272,7 +9272,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2525
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color124',
  *     '#af0000',
@@ -9283,7 +9283,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2532
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color125',
  *     '#af005f',
@@ -9294,7 +9294,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2539
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color126',
  *     '#af0087',
@@ -9305,7 +9305,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2546
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color127',
  *     '#af00af',
@@ -9316,7 +9316,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2553
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color128',
  *     '#af00d7',
@@ -9327,7 +9327,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2560
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color129',
  *     '#af00ff',
@@ -9338,7 +9338,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2567
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color130',
  *     '#af5f00',
@@ -9349,7 +9349,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2574
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color131',
  *     '#af5f5f',
@@ -9360,7 +9360,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2581
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color132',
  *     '#af5f87',
@@ -9371,7 +9371,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2588
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color133',
  *     '#af5faf',
@@ -9382,7 +9382,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2595
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color134',
  *     '#af5fd7',
@@ -9393,7 +9393,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2602
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color135',
  *     '#af5fff',
@@ -9404,7 +9404,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2609
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color136',
  *     '#af8700',
@@ -9415,7 +9415,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2616
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color137',
  *     '#af875f',
@@ -9426,7 +9426,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2623
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color138',
  *     '#af8787',
@@ -9437,7 +9437,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2630
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color139',
  *     '#af87af',
@@ -9448,7 +9448,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2637
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color140',
  *     '#af87d7',
@@ -9459,7 +9459,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2644
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color141',
  *     '#af87ff',
@@ -9470,7 +9470,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2651
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color142',
  *     '#afaf00',
@@ -9481,7 +9481,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2658
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color143',
  *     '#afaf5f',
@@ -9492,7 +9492,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2665
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color144',
  *     '#afaf87',
@@ -9503,7 +9503,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2672
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color145',
  *     '#afafaf',
@@ -9514,7 +9514,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2679
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color146',
  *     '#afafd7',
@@ -9525,7 +9525,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2686
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color147',
  *     '#afafff',
@@ -9536,7 +9536,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2693
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color148',
  *     '#afd700',
@@ -9547,7 +9547,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2700
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color149',
  *     '#afd75f',
@@ -9558,7 +9558,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2707
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color150',
  *     '#afd787',
@@ -9569,7 +9569,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2714
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color151',
  *     '#afd7af',
@@ -9580,7 +9580,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2721
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color152',
  *     '#afd7d7',
@@ -9591,7 +9591,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2728
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color153',
  *     '#afd7ff',
@@ -9602,7 +9602,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2735
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color154',
  *     '#afff00',
@@ -9613,7 +9613,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2742
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color155',
  *     '#afff5f',
@@ -9624,7 +9624,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2749
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color156',
  *     '#afff87',
@@ -9635,7 +9635,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2756
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color157',
  *     '#afffaf',
@@ -9646,7 +9646,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2763
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color158',
  *     '#afffd7',
@@ -9657,7 +9657,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2770
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color159',
  *     '#afffff',
@@ -9668,7 +9668,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2777
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color160',
  *     '#d70000',
@@ -9679,7 +9679,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2784
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color161',
  *     '#d7005f',
@@ -9690,7 +9690,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2791
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color162',
  *     '#d70087',
@@ -9701,7 +9701,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2798
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color163',
  *     '#d700af',
@@ -9712,7 +9712,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2805
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color164',
  *     '#d700d7',
@@ -9723,7 +9723,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2812
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color165',
  *     '#d700ff',
@@ -9734,7 +9734,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2819
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color166',
  *     '#d75f00',
@@ -9745,7 +9745,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2826
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color167',
  *     '#d75f5f',
@@ -9756,7 +9756,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2833
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color168',
  *     '#d75f87',
@@ -9767,7 +9767,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2840
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color169',
  *     '#d75faf',
@@ -9778,7 +9778,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2847
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color170',
  *     '#d75fd7',
@@ -9789,7 +9789,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2854
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color171',
  *     '#d75fff',
@@ -9800,7 +9800,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2861
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color172',
  *     '#d78700',
@@ -9811,7 +9811,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2868
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color173',
  *     '#d7875f',
@@ -9822,7 +9822,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2875
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color174',
  *     '#d78787',
@@ -9833,7 +9833,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2882
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color175',
  *     '#d787af',
@@ -9844,7 +9844,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2889
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color176',
  *     '#d787d7',
@@ -9855,7 +9855,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2896
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color177',
  *     '#d787ff',
@@ -9866,7 +9866,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2903
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color178',
  *     '#d7af00',
@@ -9877,7 +9877,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2910
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color179',
  *     '#d7af5f',
@@ -9888,7 +9888,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2917
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color180',
  *     '#d7af87',
@@ -9899,7 +9899,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2924
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color181',
  *     '#d7afaf',
@@ -9910,7 +9910,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2931
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color182',
  *     '#d7afd7',
@@ -9921,7 +9921,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2938
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color183',
  *     '#d7afff',
@@ -9932,7 +9932,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2945
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color184',
  *     '#d7d700',
@@ -9943,7 +9943,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2952
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color185',
  *     '#d7d75f',
@@ -9954,7 +9954,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2959
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color186',
  *     '#d7d787',
@@ -9965,7 +9965,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2966
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color187',
  *     '#d7d7af',
@@ -9976,7 +9976,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2973
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color188',
  *     '#d7d7d7',
@@ -9987,7 +9987,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2980
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color189',
  *     '#d7d7ff',
@@ -9998,7 +9998,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2987
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color190',
  *     '#d7ff00',
@@ -10009,7 +10009,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":2994
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color191',
  *     '#d7ff5f',
@@ -10020,7 +10020,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3001
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color192',
  *     '#d7ff87',
@@ -10031,7 +10031,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3008
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color193',
  *     '#d7ffaf',
@@ -10042,7 +10042,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3015
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color194',
  *     '#d7ffd7',
@@ -10053,7 +10053,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3022
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color195',
  *     '#d7ffff',
@@ -10064,7 +10064,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3029
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color196',
  *     '#ff0000',
@@ -10075,7 +10075,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3036
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color197',
  *     '#ff005f',
@@ -10086,7 +10086,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3043
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color198',
  *     '#ff0087',
@@ -10097,7 +10097,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3050
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color199',
  *     '#ff00af',
@@ -10108,7 +10108,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3057
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color200',
  *     '#ff00d7',
@@ -10119,7 +10119,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3064
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color201',
  *     '#ff00ff',
@@ -10130,7 +10130,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3071
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color202',
  *     '#ff5f00',
@@ -10141,7 +10141,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3078
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color203',
  *     '#ff5f5f',
@@ -10152,7 +10152,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3085
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color204',
  *     '#ff5f87',
@@ -10163,7 +10163,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3092
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color205',
  *     '#ff5faf',
@@ -10174,7 +10174,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3099
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color206',
  *     '#ff5fd7',
@@ -10185,7 +10185,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3106
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color207',
  *     '#ff5fff',
@@ -10196,7 +10196,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3113
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color208',
  *     '#ff8700',
@@ -10207,7 +10207,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3120
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color209',
  *     '#ff875f',
@@ -10218,7 +10218,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3127
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color210',
  *     '#ff8787',
@@ -10229,7 +10229,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3134
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color211',
  *     '#ff87af',
@@ -10240,7 +10240,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3141
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color212',
  *     '#ff87d7',
@@ -10251,7 +10251,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3148
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color213',
  *     '#ff87ff',
@@ -10262,7 +10262,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3155
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color214',
  *     '#ffaf00',
@@ -10273,7 +10273,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3162
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color215',
  *     '#ffaf5f',
@@ -10284,7 +10284,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3169
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color216',
  *     '#ffaf87',
@@ -10295,7 +10295,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3176
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color217',
  *     '#ffafaf',
@@ -10306,7 +10306,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3183
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color218',
  *     '#ffafd7',
@@ -10317,7 +10317,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3190
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color219',
  *     '#ffafff',
@@ -10328,7 +10328,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3197
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color220',
  *     '#ffd700',
@@ -10339,7 +10339,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3204
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color221',
  *     '#ffd75f',
@@ -10350,7 +10350,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3211
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color222',
  *     '#ffd787',
@@ -10361,7 +10361,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3218
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color223',
  *     '#ffd7af',
@@ -10372,7 +10372,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3225
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color224',
  *     '#ffd7d7',
@@ -10383,7 +10383,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3232
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color225',
  *     '#ffd7ff',
@@ -10394,7 +10394,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3239
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color226',
  *     '#ffff00',
@@ -10405,7 +10405,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3246
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color227',
  *     '#ffff5f',
@@ -10416,7 +10416,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3253
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color228',
  *     '#ffff87',
@@ -10427,7 +10427,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3260
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color229',
  *     '#ffffaf',
@@ -10438,7 +10438,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3267
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color230',
  *     '#ffffd7',
@@ -10449,7 +10449,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3274
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color231',
  *     '#ffffff',
@@ -10460,7 +10460,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3281
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color232',
  *     '#080808',
@@ -10471,7 +10471,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3288
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color233',
  *     '#121212',
@@ -10482,7 +10482,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3295
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color234',
  *     '#1c1c1c',
@@ -10493,7 +10493,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3302
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color235',
  *     '#262626',
@@ -10504,7 +10504,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3309
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color236',
  *     '#303030',
@@ -10515,7 +10515,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3316
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color237',
  *     '#3a3a3a',
@@ -10526,7 +10526,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3323
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color238',
  *     '#444444',
@@ -10537,7 +10537,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3330
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color239',
  *     '#4e4e4e',
@@ -10548,7 +10548,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3337
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color240',
  *     '#585858',
@@ -10559,7 +10559,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3344
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color241',
  *     '#626262',
@@ -10570,7 +10570,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3351
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color242',
  *     '#6c6c6c',
@@ -10581,7 +10581,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color243',
  *     '#767676',
@@ -10592,7 +10592,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3365
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color244',
  *     '#808080',
@@ -10603,7 +10603,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3372
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color245',
  *     '#8a8a8a',
@@ -10614,7 +10614,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3379
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color246',
  *     '#949494',
@@ -10625,7 +10625,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3386
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color247',
  *     '#9e9e9e',
@@ -10636,7 +10636,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3393
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color248',
  *     '#a8a8a8',
@@ -10647,7 +10647,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3400
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color249',
  *     '#b2b2b2',
@@ -10658,7 +10658,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3407
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color250',
  *     '#bcbcbc',
@@ -10669,7 +10669,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3414
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color251',
  *     '#c6c6c6',
@@ -10680,7 +10680,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3421
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color252',
  *     '#d0d0d0',
@@ -10691,7 +10691,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3428
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color253',
  *     '#dadada',
@@ -10702,7 +10702,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3435
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color254',
  *     '#e4e4e4',
@@ -10713,7 +10713,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3442
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color255',
  *     '#eeeeee',
@@ -10723,10 +10723,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__429);
 
   /* "smelly/options/definition.py":3453
- * 
+ *
  * # advanced {{{
  * agr('advanced', 'Advanced')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__430 = PyTuple_Pack(2, __pyx_n_s_advanced, __pyx_n_s_Advanced); if (unlikely(!__pyx_tuple__430)) __PYX_ERR(0, 3453, __pyx_L1_error)
@@ -10735,7 +10735,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3455
  * agr('advanced', 'Advanced')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell',
  *     '.',
@@ -10746,7 +10746,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3467
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'editor',
  *     '.',
@@ -10757,7 +10757,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3483
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'close_on_child_death',
  *     'no',
@@ -10768,7 +10768,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3499
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+remote_control_password',
  *     '',
@@ -10779,7 +10779,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3538
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_remote_control',
  *     'no',
@@ -10801,7 +10801,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3571
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'listen_on',
  *     'none',
@@ -10812,7 +10812,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3591
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+env',
  *     '',
@@ -10823,7 +10823,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3610
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+watcher',
  *     '',
@@ -10834,7 +10834,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3624
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+exe_search_path',
  *     '',
@@ -10845,7 +10845,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3650
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'update_check_interval',
  *     '24',
@@ -10856,7 +10856,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3664
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'startup_session',
  *     'none',
@@ -10867,7 +10867,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3678
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clipboard_control',
  *     'write-clipboard write-primary read-clipboard-ask read-primary-ask',
@@ -10878,7 +10878,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3695
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clipboard_max_size',
  *     '512',
@@ -10889,7 +10889,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3706
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'file_transfer_confirmation_bypass',
  *     '',
@@ -10900,7 +10900,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3718
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_hyperlinks',
  *     'yes',
@@ -10911,7 +10911,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3732
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell_integration',
  *     'enabled',
@@ -10922,7 +10922,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3747
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_cloning',
  *     'ask',
@@ -10944,7 +10944,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3761
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clone_source_strategies',
  *     'venv,conda,env_var,path',
@@ -10955,7 +10955,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3787
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'term',
  *     'xterm-smelly',
@@ -10965,10 +10965,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__452);
 
   /* "smelly/options/definition.py":3806
- * 
+ *
  * # os {{{
  * agr('os', 'OS specific tweaks')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__453 = PyTuple_Pack(2, __pyx_n_s_os, __pyx_kp_s_OS_specific_tweaks); if (unlikely(!__pyx_tuple__453)) __PYX_ERR(0, 3806, __pyx_L1_error)
@@ -10977,7 +10977,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3808
  * agr('os', 'OS specific tweaks')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wayland_titlebar_color',
  *     'system',
@@ -10988,7 +10988,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3821
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_titlebar_color',
  *     'system',
@@ -10999,7 +10999,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3840
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_option_as_alt',
  *     'no',
@@ -11010,7 +11010,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3861
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_hide_from_tasks',
  *     'no',
@@ -11021,7 +11021,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3872
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_quit_when_last_window_closed',
  *     'no',
@@ -11032,7 +11032,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3884
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_window_resizable',
  *     'yes',
@@ -11043,7 +11043,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3896
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_thicken_font',
  *     '0',
@@ -11054,7 +11054,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3910
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_traditional_fullscreen',
  *     'no',
@@ -11065,7 +11065,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3921
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_show_window_title_in',
  *     'all',
@@ -11087,7 +11087,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3937
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_menubar_title_max_length',
  *     '0',
@@ -11098,7 +11098,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3948
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_custom_beam_cursor',
  *     'no',
@@ -11109,7 +11109,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":3960
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_colorspace',
  *     'srgb',
@@ -11130,8 +11130,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__467);
 
   /* "smelly/options/definition.py":3977
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'linux_display_server',
  *     'auto',
@@ -11152,7 +11152,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__469);
 
   /* "smelly/options/definition.py":3992
- * 
+ *
  * # shortcuts {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'shortcuts',
@@ -11164,7 +11164,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4062
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'smelly_mod',
  *     'ctrl+shift',
@@ -11175,7 +11175,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4072
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clear_all_shortcuts',
  *     'no',
@@ -11186,7 +11186,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4082
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+action_alias',
  *     'launch_tab launch --type=tab --cwd=current',
@@ -11197,7 +11197,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4102
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+kitten_alias',
  *     'hints hints --hints-offset=0',
@@ -11207,10 +11207,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__474);
 
   /* "smelly/options/definition.py":4119
- * 
+ *
  * # shortcuts.clipboard {{{
  * agr('shortcuts.clipboard', 'Clipboard')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__475 = PyTuple_Pack(2, __pyx_kp_s_shortcuts_clipboard, __pyx_n_s_Clipboard); if (unlikely(!__pyx_tuple__475)) __PYX_ERR(0, 4119, __pyx_L1_error)
@@ -11219,7 +11219,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4121
  * agr('shortcuts.clipboard', 'Clipboard')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Copy to clipboard',
  *     'copy_to_clipboard smelly_mod+c copy_to_clipboard',
@@ -11241,7 +11241,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4137
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Paste from clipboard',
  *     'paste_from_clipboard smelly_mod+v paste_from_clipboard',
@@ -11263,7 +11263,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4147
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Paste from selection',
  *     'paste_from_selection smelly_mod+s paste_from_selection',
@@ -11285,7 +11285,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4156
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Pass selection to program',
  *     'pass_selection_to_program smelly_mod+o pass_selection_to_program',
@@ -11295,10 +11295,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__482);
 
   /* "smelly/options/definition.py":4177
- * 
+ *
  * # shortcuts.scrolling {{{
  * agr('shortcuts.scrolling', 'Scrolling')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__483 = PyTuple_Pack(2, __pyx_kp_s_shortcuts_scrolling, __pyx_n_s_Scrolling); if (unlikely(!__pyx_tuple__483)) __PYX_ERR(0, 4177, __pyx_L1_error)
@@ -11307,7 +11307,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4179
  * agr('shortcuts.scrolling', 'Scrolling')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll line up',
  *     'scroll_line_up smelly_mod+up scroll_line_up',
@@ -11351,7 +11351,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4198
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll line down',
  *     'scroll_line_down smelly_mod+down scroll_line_down',
@@ -11395,7 +11395,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4217
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll page up',
  *     'scroll_page_up smelly_mod+page_up scroll_page_up',
@@ -11417,7 +11417,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4227
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll page down',
  *     'scroll_page_down smelly_mod+page_down scroll_page_down',
@@ -11439,7 +11439,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4237
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to top',
  *     'scroll_home smelly_mod+home scroll_home',
@@ -11461,7 +11461,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4247
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to bottom',
  *     'scroll_end smelly_mod+end scroll_end',
@@ -11483,7 +11483,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4257
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous shell prompt',
  *     'scroll_to_previous_prompt smelly_mod+z scroll_to_prompt -1',
@@ -11494,9 +11494,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4267
  * )
- * 
+ *
  * map('Scroll to next shell prompt', 'scroll_to_next_prompt smelly_mod+x scroll_to_prompt 1')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__501 = PyTuple_Pack(2, __pyx_kp_s_Scroll_to_next_shell_prompt, __pyx_kp_s_scroll_to_next_prompt_smelly_mod); if (unlikely(!__pyx_tuple__501)) __PYX_ERR(0, 4267, __pyx_L1_error)
@@ -11505,7 +11505,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4269
  * map('Scroll to next shell prompt', 'scroll_to_next_prompt smelly_mod+x scroll_to_prompt 1')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Browse scrollback buffer in pager',
  *     'show_scrollback smelly_mod+h show_scrollback',
@@ -11516,7 +11516,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4285
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Browse output of the last shell command in pager',
  *     'show_last_command_output smelly_mod+g show_last_command_output',
@@ -11526,10 +11526,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__503);
 
   /* "smelly/options/definition.py":4315
- * 
+ *
  * # shortcuts.window {{{
  * agr('shortcuts.window', 'Window management')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__504 = PyTuple_Pack(2, __pyx_kp_s_shortcuts_window, __pyx_kp_s_Window_management); if (unlikely(!__pyx_tuple__504)) __PYX_ERR(0, 4315, __pyx_L1_error)
@@ -11538,7 +11538,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4317
  * agr('shortcuts.window', 'Window management')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New window',
  *     'new_window smelly_mod+enter new_window',
@@ -11560,7 +11560,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4353
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New OS window',
  *     'new_os_window smelly_mod+n new_os_window',
@@ -11582,7 +11582,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4368
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Close window',
  *     'close_window smelly_mod+w close_window',
@@ -11604,7 +11604,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4378
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Next window',
  *     'next_window smelly_mod+] next_window',
@@ -11615,7 +11615,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4383
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Previous window',
  *     'previous_window smelly_mod+[ previous_window',
@@ -11626,7 +11626,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4388
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move window forward',
  *     'move_window_forward smelly_mod+f move_window_forward',
@@ -11637,7 +11637,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4393
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move window backward',
  *     'move_window_backward smelly_mod+b move_window_backward',
@@ -11648,7 +11648,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4398
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move window to top',
  *     'move_window_to_top smelly_mod+` move_window_to_top',
@@ -11659,7 +11659,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4403
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Start resizing window',
  *     'start_resizing_window smelly_mod+r start_resizing_window',
@@ -11681,7 +11681,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4413
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'First window',
  *     'first_window smelly_mod+1 first_window',
@@ -11703,7 +11703,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4423
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Second window',
  *     'second_window smelly_mod+2 second_window',
@@ -11725,7 +11725,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4433
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Third window',
  *     'third_window smelly_mod+3 third_window',
@@ -11747,7 +11747,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4443
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Fourth window',
  *     'fourth_window smelly_mod+4 fourth_window',
@@ -11769,7 +11769,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4453
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Fifth window',
  *     'fifth_window smelly_mod+5 fifth_window',
@@ -11791,7 +11791,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4463
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Sixth window',
  *     'sixth_window smelly_mod+6 sixth_window',
@@ -11813,7 +11813,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4473
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Seventh window',
  *     'seventh_window smelly_mod+7 seventh_window',
@@ -11835,7 +11835,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4483
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Eight window',
  *     'eighth_window smelly_mod+8 eighth_window',
@@ -11857,7 +11857,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4493
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Ninth window',
  *     'ninth_window smelly_mod+9 ninth_window',
@@ -11879,7 +11879,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4503
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Tenth window',
  *     'tenth_window smelly_mod+0 tenth_window',
@@ -11890,7 +11890,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4508
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Visually select and focus window',
  *     'focus_visible_window smelly_mod+f7 focus_visible_window',
@@ -11911,10 +11911,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__538);
 
   /* "smelly/options/definition.py":4529
- * 
+ *
  * # shortcuts.tab {{{
  * agr('shortcuts.tab', 'Tab management')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__539 = PyTuple_Pack(2, __pyx_kp_s_shortcuts_tab, __pyx_kp_s_Tab_management); if (unlikely(!__pyx_tuple__539)) __PYX_ERR(0, 4529, __pyx_L1_error)
@@ -11923,7 +11923,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4531
  * agr('shortcuts.tab', 'Tab management')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Next tab',
  *     'next_tab smelly_mod+right next_tab',
@@ -11956,7 +11956,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4545
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Previous tab',
  *     'previous_tab smelly_mod+left previous_tab',
@@ -11989,7 +11989,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4559
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New tab',
  *     'new_tab smelly_mod+t new_tab',
@@ -12011,7 +12011,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4569
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Close tab',
  *     'close_tab smelly_mod+q close_tab',
@@ -12033,7 +12033,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4579
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Close OS window',
  *     'close_os_window shift+cmd+w close_os_window',
@@ -12044,7 +12044,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4585
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move tab forward',
  *     'move_tab_forward smelly_mod+. move_tab_forward',
@@ -12055,7 +12055,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4590
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move tab backward',
  *     'move_tab_backward smelly_mod+, move_tab_backward',
@@ -12066,7 +12066,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4595
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Set tab title',
  *     'set_tab_title smelly_mod+alt+t set_tab_title',
@@ -12098,10 +12098,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__555);
 
   /* "smelly/options/definition.py":4625
- * 
+ *
  * # shortcuts.layout {{{
  * agr('shortcuts.layout', 'Layout management')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__556 = PyTuple_Pack(2, __pyx_kp_s_shortcuts_layout, __pyx_kp_s_Layout_management); if (unlikely(!__pyx_tuple__556)) __PYX_ERR(0, 4625, __pyx_L1_error)
@@ -12110,7 +12110,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4627
  * agr('shortcuts.layout', 'Layout management')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Next layout',
  *     'next_layout smelly_mod+l next_layout',
@@ -12131,7 +12131,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__558);
 
   /* "smelly/options/definition.py":4652
- * 
+ *
  * # shortcuts.fonts {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'shortcuts.fonts',
@@ -12143,7 +12143,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4661
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Increase font size',
  *     'increase_font_size smelly_mod+equal change_font_size all +2.0',
@@ -12209,7 +12209,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4689
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Decrease font size',
  *     'decrease_font_size smelly_mod+minus change_font_size all -2.0',
@@ -12253,7 +12253,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4708
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset font size',
  *     'reset_font_size smelly_mod+backspace change_font_size all 0',
@@ -12285,7 +12285,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__572);
 
   /* "smelly/options/definition.py":4731
- * 
+ *
  * # shortcuts.selection {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'shortcuts.selection',
@@ -12297,7 +12297,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4740
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open URL',
  *     'open_url smelly_mod+e open_url_with_hints',
@@ -12308,7 +12308,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4749
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected path',
  *     'insert_selected_path smelly_mod+p>f kitten hints --type path --program -',
@@ -12319,7 +12319,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4759
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open selected path',
  *     'open_selected_path smelly_mod+p>shift+f kitten hints --type path',
@@ -12330,7 +12330,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4765
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected line',
  *     'insert_selected_line smelly_mod+p>l kitten hints --type line --program -',
@@ -12341,9 +12341,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4774
  * )
- * 
+ *
  * map('Insert selected word', 'insert_selected_word smelly_mod+p>w kitten hints --type word --program -', long_text='Select words and insert into terminal.')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__578 = PyTuple_Pack(2, __pyx_kp_s_Insert_selected_word, __pyx_kp_s_insert_selected_word_smelly_mod); if (unlikely(!__pyx_tuple__578)) __PYX_ERR(0, 4774, __pyx_L1_error)
@@ -12352,7 +12352,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4776
  * map('Insert selected word', 'insert_selected_word smelly_mod+p>w kitten hints --type word --program -', long_text='Select words and insert into terminal.')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected hash',
  *     'insert_selected_hash smelly_mod+p>h kitten hints --type hash --program -',
@@ -12363,7 +12363,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4785
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the selected file at the selected line',
  *     'goto_file_line smelly_mod+p>n kitten hints --type linenum',
@@ -12374,7 +12374,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4794
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the selected hyperlink',
  *     'open_selected_hyperlink smelly_mod+p>y kitten hints --type hyperlink',
@@ -12395,10 +12395,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__582);
 
   /* "smelly/options/definition.py":4811
- * 
+ *
  * # shortcuts.misc {{{
  * agr('shortcuts.misc', 'Miscellaneous')             # <<<<<<<<<<<<<<
- * 
+ *
  * map('Show documentation', 'show_smelly_doc smelly_mod+f1 show_smelly_doc overview')
  */
   __pyx_tuple__583 = PyTuple_Pack(2, __pyx_kp_s_shortcuts_misc, __pyx_n_s_Miscellaneous); if (unlikely(!__pyx_tuple__583)) __PYX_ERR(0, 4811, __pyx_L1_error)
@@ -12407,9 +12407,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4813
  * agr('shortcuts.misc', 'Miscellaneous')
- * 
+ *
  * map('Show documentation', 'show_smelly_doc smelly_mod+f1 show_smelly_doc overview')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__584 = PyTuple_Pack(2, __pyx_kp_s_Show_documentation, __pyx_kp_s_show_smelly_doc_smelly_mod_f1_sh); if (unlikely(!__pyx_tuple__584)) __PYX_ERR(0, 4813, __pyx_L1_error)
@@ -12418,7 +12418,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4815
  * map('Show documentation', 'show_smelly_doc smelly_mod+f1 show_smelly_doc overview')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Toggle fullscreen',
  *     'toggle_fullscreen smelly_mod+f11 toggle_fullscreen',
@@ -12440,7 +12440,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4825
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Toggle maximized',
  *     'toggle_maximized smelly_mod+f10 toggle_maximized',
@@ -12451,7 +12451,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4830
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Toggle macOS secure keyboard entry',
  *     'toggle_macos_secure_keyboard_entry opt+cmd+s toggle_macos_secure_keyboard_entry',
@@ -12462,7 +12462,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4836
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Unicode input',
  *     'input_unicode_character smelly_mod+u kitten unicode_input',
@@ -12484,7 +12484,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4846
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Edit config file',
  *     'edit_config_file smelly_mod+f2 edit_config_file',
@@ -12506,7 +12506,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4856
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the smelly command shell',
  *     'smelly_shell smelly_mod+escape smelly_shell window',
@@ -12517,7 +12517,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4865
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Increase background opacity',
  *     'increase_background_opacity smelly_mod+a>m set_background_opacity +0.1',
@@ -12528,7 +12528,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4870
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Decrease background opacity',
  *     'decrease_background_opacity smelly_mod+a>l set_background_opacity -0.1',
@@ -12539,7 +12539,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4875
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Make background fully opaque',
  *     'full_background_opacity smelly_mod+a>1 set_background_opacity 1',
@@ -12550,7 +12550,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4880
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset background opacity',
  *     'reset_background_opacity smelly_mod+a>d set_background_opacity default',
@@ -12561,7 +12561,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4885
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset the terminal',
  *     'reset_terminal smelly_mod+delete clear_terminal reset active',
@@ -12572,7 +12572,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4921
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset the terminal',
  *     'reset_terminal opt+cmd+r clear_terminal reset active',
@@ -12583,7 +12583,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4927
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Clear up to cursor line',
  *     'clear_terminal_and_scrollback cmd+k clear_terminal to_cursor active',
@@ -12594,7 +12594,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4933
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reload smelly.conf',
  *     'reload_config_file smelly_mod+f5 load_config_file',
@@ -12605,9 +12605,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4950
  * )
- * 
+ *
  * map('Reload smelly.conf', 'reload_config_file ctrl+cmd+, load_config_file', only='macos')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__602 = PyTuple_Pack(2, __pyx_kp_s_Reload_smelly_conf, __pyx_kp_s_reload_config_file_ctrl_cmd_load); if (unlikely(!__pyx_tuple__602)) __PYX_ERR(0, 4950, __pyx_L1_error)
@@ -12616,7 +12616,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4952
  * map('Reload smelly.conf', 'reload_config_file ctrl+cmd+, load_config_file', only='macos')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Debug smelly configuration',
  *     'debug_config smelly_mod+f6 debug_config',
@@ -12627,18 +12627,18 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":4961
  * )
- * 
+ *
  * map('Debug smelly configuration', 'debug_config opt+cmd+, debug_config', only='macos')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_tuple__604 = PyTuple_Pack(2, __pyx_kp_s_Debug_smelly_configuration, __pyx_kp_s_debug_config_opt_cmd_debug_confi); if (unlikely(!__pyx_tuple__604)) __PYX_ERR(0, 4961, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__604);
   __Pyx_GIVEREF(__pyx_tuple__604);
 
   /* "smelly/options/definition.py":4964
- * 
- * 
+ *
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Send arbitrary text on key presses',
  *     'send_text ctrl+shift+alt+h send_text all Hello World',
@@ -12649,7 +12649,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":5004
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Hide macOS smelly application',
  *     'hide_macos_app cmd+h hide_macos_app',
@@ -12660,7 +12660,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":5010
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Hide macOS other applications',
  *     'hide_macos_other_apps opt+cmd+h hide_macos_other_apps',
@@ -12671,7 +12671,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":5016
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Minimize macOS window',
  *     'minimize_macos_window cmd+m minimize_macos_window',
@@ -12682,7 +12682,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/definition.py":5022
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Quit smelly',
  *     'quit cmd+q quit',
@@ -12976,9 +12976,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":6
  * # After editing this file run ./gen-config.py to apply the changes
- * 
+ *
  * import string             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.conf.types import Action, Definition
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_string, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -12988,10 +12988,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":8
  * import string
- * 
+ *
  * from smelly.conf.types import Action, Definition             # <<<<<<<<<<<<<<
  * from smelly.constants import website_url
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13015,10 +13015,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/options/definition.py":9
- * 
+ *
  * from smelly.conf.types import Action, Definition
  * from smelly.constants import website_url             # <<<<<<<<<<<<<<
- * 
+ *
  * definition = Definition(
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -13037,7 +13037,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":11
  * from smelly.constants import website_url
- * 
+ *
  * definition = Definition(             # <<<<<<<<<<<<<<
  *     'smelly',
  *     Action(
@@ -13140,7 +13140,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":11
  * from smelly.constants import website_url
- * 
+ *
  * definition = Definition(             # <<<<<<<<<<<<<<
  *     'smelly',
  *     Action(
@@ -13170,7 +13170,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":11
  * from smelly.constants import website_url
- * 
+ *
  * definition = Definition(             # <<<<<<<<<<<<<<
  *     'smelly',
  *     Action(
@@ -13222,7 +13222,7 @@ if (!__Pyx_RefNanny) {
  * definition.add_deprecation('deprecated_macos_show_window_title_in_menubar_alias', 'macos_show_window_title_in_menubar')
  * definition.add_deprecation('deprecated_send_text', 'send_text')             # <<<<<<<<<<<<<<
  * definition.add_deprecation('deprecated_adjust_line_height', 'adjust_line_height', 'adjust_column_width', 'adjust_baseline')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_definition); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -13238,7 +13238,7 @@ if (!__Pyx_RefNanny) {
  * definition.add_deprecation('deprecated_macos_show_window_title_in_menubar_alias', 'macos_show_window_title_in_menubar')
  * definition.add_deprecation('deprecated_send_text', 'send_text')
  * definition.add_deprecation('deprecated_adjust_line_height', 'adjust_line_height', 'adjust_column_width', 'adjust_baseline')             # <<<<<<<<<<<<<<
- * 
+ *
  * agr = definition.add_group
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_definition); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 22, __pyx_L1_error)
@@ -13253,7 +13253,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":24
  * definition.add_deprecation('deprecated_adjust_line_height', 'adjust_line_height', 'adjust_column_width', 'adjust_baseline')
- * 
+ *
  * agr = definition.add_group             # <<<<<<<<<<<<<<
  * egr = definition.end_group
  * opt = definition.add_option
@@ -13267,7 +13267,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":25
- * 
+ *
  * agr = definition.add_group
  * egr = definition.end_group             # <<<<<<<<<<<<<<
  * opt = definition.add_option
@@ -13301,7 +13301,7 @@ if (!__Pyx_RefNanny) {
  * opt = definition.add_option
  * map = definition.add_map             # <<<<<<<<<<<<<<
  * mma = definition.add_mouse_map
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_definition); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -13315,7 +13315,7 @@ if (!__Pyx_RefNanny) {
  * opt = definition.add_option
  * map = definition.add_map
  * mma = definition.add_mouse_map             # <<<<<<<<<<<<<<
- * 
+ *
  * # fonts {{{
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_definition); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -13327,7 +13327,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":31
- * 
+ *
  * # fonts {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'fonts',
@@ -13342,7 +13342,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":40
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'font_family',
  *     'monospace',
@@ -13363,7 +13363,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":40
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'font_family',
  *     'monospace',
@@ -13376,9 +13376,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":60
  * )
- * 
+ *
  * opt('bold_font', 'auto')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('italic_font', 'auto')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_opt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 60, __pyx_L1_error)
@@ -13390,9 +13390,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":62
  * opt('bold_font', 'auto')
- * 
+ *
  * opt('italic_font', 'auto')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('bold_italic_font', 'auto')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L1_error)
@@ -13404,9 +13404,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":64
  * opt('italic_font', 'auto')
- * 
+ *
  * opt('bold_italic_font', 'auto')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('font_size', '11.0', option_type='to_font_size', ctype='double', long_text='Font size (in pts)')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_opt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 64, __pyx_L1_error)
@@ -13418,9 +13418,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":66
  * opt('bold_italic_font', 'auto')
- * 
+ *
  * opt('font_size', '11.0', option_type='to_font_size', ctype='double', long_text='Font size (in pts)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
@@ -13438,7 +13438,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":68
  * opt('font_size', '11.0', option_type='to_font_size', ctype='double', long_text='Font size (in pts)')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'force_ltr',
  *     'no',
@@ -13461,7 +13461,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":68
  * opt('font_size', '11.0', option_type='to_font_size', ctype='double', long_text='Font size (in pts)')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'force_ltr',
  *     'no',
@@ -13474,7 +13474,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":91
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+symbol_map',
  *     'U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols',
@@ -13505,7 +13505,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":91
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+symbol_map',
  *     'U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols',
@@ -13518,7 +13518,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":108
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+narrow_symbols',
  *     'U+E0A0-U+E0A3,U+E0C0-U+E0C7 1',
@@ -13549,7 +13549,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":108
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+narrow_symbols',
  *     'U+E0A0-U+E0A3,U+E0C0-U+E0C7 1',
@@ -13561,8 +13561,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":126
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'disable_ligatures',
  *     'never',
@@ -13584,8 +13584,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_long_text, __pyx_kp_s_Choose_how_you_want_to_handle_m) < 0) __PYX_ERR(0, 129, __pyx_L1_error)
 
   /* "smelly/options/definition.py":126
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'disable_ligatures',
  *     'never',
@@ -13598,7 +13598,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":149
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+font_features',
  *     'none',
@@ -13629,7 +13629,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":149
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+font_features',
  *     'none',
@@ -13642,7 +13642,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":208
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+modify_font',
  *     '',
@@ -13674,7 +13674,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":208
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+modify_font',
  *     '',
@@ -13687,7 +13687,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":239
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'box_drawing_scale',
  *     '0.001, 1, 1.5, 2',
@@ -13709,7 +13709,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":239
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'box_drawing_scale',
  *     '0.001, 1, 1.5, 2',
@@ -13722,7 +13722,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":251
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'undercurl_style',
  *     'thin-sparse',
@@ -13744,7 +13744,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":251
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'undercurl_style',
  *     'thin-sparse',
@@ -13757,7 +13757,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":263
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'text_composition_strategy',
  *     'platform',
@@ -13779,7 +13779,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":263
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'text_composition_strategy',
  *     'platform',
@@ -13792,10 +13792,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":294
  * )
- * 
+ *
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_egr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 294, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -13805,10 +13805,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/options/definition.py":298
- * 
+ *
  * # cursor {{{
  * agr('cursor', 'Cursor customization')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_agr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 298, __pyx_L1_error)
@@ -13820,7 +13820,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":300
  * agr('cursor', 'Cursor customization')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor',
  *     '#cccccc',
@@ -13842,7 +13842,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":300
  * agr('cursor', 'Cursor customization')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor',
  *     '#cccccc',
@@ -13855,7 +13855,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":314
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_text_color',
  *     '#111111',
@@ -13877,7 +13877,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":314
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_text_color',
  *     '#111111',
@@ -13890,7 +13890,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":326
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_shape',
  *     'block',
@@ -13913,7 +13913,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":326
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_shape',
  *     'block',
@@ -13926,9 +13926,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":342
  * )
- * 
+ *
  * opt('cursor_beam_thickness', '1.5', option_type='positive_float', ctype='float', long_text='The thickness of the beam cursor (in pts).')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('cursor_underline_thickness', '2.0', option_type='positive_float', ctype='float', long_text='The thickness of the underline cursor (in pts).')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 342, __pyx_L1_error)
@@ -13946,9 +13946,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":344
  * opt('cursor_beam_thickness', '1.5', option_type='positive_float', ctype='float', long_text='The thickness of the beam cursor (in pts).')
- * 
+ *
  * opt('cursor_underline_thickness', '2.0', option_type='positive_float', ctype='float', long_text='The thickness of the underline cursor (in pts).')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 344, __pyx_L1_error)
@@ -13966,7 +13966,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":346
  * opt('cursor_underline_thickness', '2.0', option_type='positive_float', ctype='float', long_text='The thickness of the underline cursor (in pts).')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_blink_interval',
  *     '-1',
@@ -13989,7 +13989,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":346
  * opt('cursor_underline_thickness', '2.0', option_type='positive_float', ctype='float', long_text='The thickness of the underline cursor (in pts).')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_blink_interval',
  *     '-1',
@@ -14002,7 +14002,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_stop_blinking_after',
  *     '15.0',
@@ -14025,7 +14025,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cursor_stop_blinking_after',
  *     '15.0',
@@ -14040,8 +14040,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 368, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -14051,10 +14051,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/options/definition.py":372
- * 
+ *
  * # scrollback {{{
  * agr('scrollback', 'Scrollback')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_agr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 372, __pyx_L1_error)
@@ -14066,7 +14066,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":374
  * agr('scrollback', 'Scrollback')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_lines',
  *     '2000',
@@ -14088,7 +14088,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":374
  * agr('scrollback', 'Scrollback')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_lines',
  *     '2000',
@@ -14101,7 +14101,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":388
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_pager',
  *     'less --chop-long-lines --RAW-CONTROL-CHARS +INPUT_LINE_NUMBER',
@@ -14123,7 +14123,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":388
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_pager',
  *     'less --chop-long-lines --RAW-CONTROL-CHARS +INPUT_LINE_NUMBER',
@@ -14136,7 +14136,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":404
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_pager_history_size',
  *     '0',
@@ -14159,7 +14159,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":404
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_pager_history_size',
  *     '0',
@@ -14172,7 +14172,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":421
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_fill_enlarged_window',
  *     'no',
@@ -14195,7 +14195,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":421
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'scrollback_fill_enlarged_window',
  *     'no',
@@ -14208,7 +14208,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":429
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wheel_scroll_multiplier',
  *     '5.0',
@@ -14231,7 +14231,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":429
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wheel_scroll_multiplier',
  *     '5.0',
@@ -14244,7 +14244,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":442
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wheel_scroll_min_lines',
  *     '1',
@@ -14267,7 +14267,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":442
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wheel_scroll_min_lines',
  *     '1',
@@ -14280,7 +14280,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":456
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'touch_scroll_multiplier',
  *     '1.0',
@@ -14303,7 +14303,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":456
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'touch_scroll_multiplier',
  *     '1.0',
@@ -14318,8 +14318,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_egr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 467, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -14329,10 +14329,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/options/definition.py":471
- * 
+ *
  * # mouse {{{
  * agr('mouse', 'Mouse')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_agr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 471, __pyx_L1_error)
@@ -14344,7 +14344,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":473
  * agr('mouse', 'Mouse')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'mouse_hide_wait',
  *     '3.0',
@@ -14368,7 +14368,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":473
  * agr('mouse', 'Mouse')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'mouse_hide_wait',
  *     '3.0',
@@ -14381,7 +14381,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":488
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_color',
  *     '#0087bd',
@@ -14404,7 +14404,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":488
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_color',
  *     '#0087bd',
@@ -14417,7 +14417,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":500
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_style',
  *     'curly',
@@ -14439,7 +14439,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":500
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_style',
  *     'curly',
@@ -14452,7 +14452,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":507
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'open_url_with',
  *     'default',
@@ -14474,7 +14474,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":507
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'open_url_with',
  *     'default',
@@ -14487,7 +14487,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":519
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_prefixes',
  *     'file ftp ftps gemini git gopher http https irc ircs smelly mailto news sftp ssh',
@@ -14510,7 +14510,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":519
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_prefixes',
  *     'file ftp ftps gemini git gopher http https irc ircs smelly mailto news sftp ssh',
@@ -14523,7 +14523,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":529
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'detect_urls',
  *     'yes',
@@ -14546,7 +14546,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":529
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'detect_urls',
  *     'yes',
@@ -14559,7 +14559,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":541
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_excluded_characters',
  *     '',
@@ -14581,7 +14581,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":541
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'url_excluded_characters',
  *     '',
@@ -14594,7 +14594,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":551
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'show_hyperlink_targets',
  *     'no',
@@ -14617,7 +14617,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":551
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'show_hyperlink_targets',
  *     'no',
@@ -14630,7 +14630,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":562
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'copy_on_select',
  *     'no',
@@ -14652,7 +14652,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":562
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'copy_on_select',
  *     'no',
@@ -14665,7 +14665,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":584
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'paste_actions',
  *     'quote-urls-at-prompt',
@@ -14687,7 +14687,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":584
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'paste_actions',
  *     'quote-urls-at-prompt',
@@ -14700,7 +14700,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":605
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'strip_trailing_spaces',
  *     'never',
@@ -14722,7 +14722,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":605
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'strip_trailing_spaces',
  *     'never',
@@ -14735,7 +14735,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":616
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_by_word_characters',
  *     '@-./_~?&=%+#',
@@ -14757,7 +14757,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":616
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_by_word_characters',
  *     '@-./_~?&=%+#',
@@ -14770,7 +14770,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":627
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_by_word_characters_forward',
  *     '',
@@ -14792,7 +14792,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":627
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_by_word_characters_forward',
  *     '',
@@ -14805,7 +14805,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":641
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'click_interval',
  *     '-1.0',
@@ -14828,7 +14828,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":641
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'click_interval',
  *     '-1.0',
@@ -14841,7 +14841,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":653
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'focus_follows_mouse',
  *     'no',
@@ -14864,7 +14864,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":653
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'focus_follows_mouse',
  *     'no',
@@ -14877,7 +14877,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":663
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pointer_shape_when_grabbed',
  *     'arrow',
@@ -14900,7 +14900,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":663
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pointer_shape_when_grabbed',
  *     'arrow',
@@ -14913,7 +14913,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":674
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'default_pointer_shape',
  *     'beam',
@@ -14936,7 +14936,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":674
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'default_pointer_shape',
  *     'beam',
@@ -14949,7 +14949,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":685
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pointer_shape_when_dragging',
  *     'beam',
@@ -14972,7 +14972,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":685
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pointer_shape_when_dragging',
  *     'beam',
@@ -14984,7 +14984,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":698
- * 
+ *
  * # mouse.mousemap {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'mouse.mousemap',
@@ -14999,7 +14999,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":740
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clear_all_mouse_actions',
  *     'no',
@@ -15021,7 +15021,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":740
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clear_all_mouse_actions',
  *     'no',
@@ -15034,7 +15034,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":750
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse or move the cursor',
  *     'click_url_or_select left click ungrabbed mouse_handle_click selection link prompt',
@@ -15055,7 +15055,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":750
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse or move the cursor',
  *     'click_url_or_select left click ungrabbed mouse_handle_click selection link prompt',
@@ -15068,7 +15068,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":762
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse or move the cursor even when grabbed',
  *     'click_url_or_select_grabbed shift+left click grabbed,ungrabbed mouse_handle_click selection link prompt',
@@ -15089,7 +15089,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":762
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse or move the cursor even when grabbed',
  *     'click_url_or_select_grabbed shift+left click grabbed,ungrabbed mouse_handle_click selection link prompt',
@@ -15102,7 +15102,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":771
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse cursor',
  *     'click_url ctrl+shift+left release grabbed,ungrabbed mouse_handle_click link',
@@ -15123,7 +15123,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":771
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Click the link under the mouse cursor',
  *     'click_url ctrl+shift+left release grabbed,ungrabbed mouse_handle_click link',
@@ -15136,7 +15136,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":781
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Discard press event for link click',
  *     'click_url_discard ctrl+shift+left press grabbed discard_event',
@@ -15157,7 +15157,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":781
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Discard press event for link click',
  *     'click_url_discard ctrl+shift+left press grabbed discard_event',
@@ -15169,8 +15169,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/options/definition.py":791
- * 
- * 
+ *
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Paste from the primary selection',
  *     'paste_selection middle release ungrabbed paste_from_selection',
@@ -15184,7 +15184,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":796
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text',
  *     'start_simple_selection left press ungrabbed mouse_selection normal',
@@ -15198,7 +15198,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":801
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text in a rectangle',
  *     'start_rectangle_selection ctrl+alt+left press ungrabbed mouse_selection rectangle',
@@ -15212,7 +15212,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":806
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a word',
  *     'select_word left doublepress ungrabbed mouse_selection word',
@@ -15226,7 +15226,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":811
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a line',
  *     'select_line left triplepress ungrabbed mouse_selection line',
@@ -15240,7 +15240,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":816
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select line from point',
  *     'select_line_from_point ctrl+alt+left triplepress ungrabbed mouse_selection line_from_point',
@@ -15253,7 +15253,7 @@ if (!__Pyx_RefNanny) {
  *     'select_line_from_point ctrl+alt+left triplepress ungrabbed mouse_selection line_from_point',
  *     long_text='Select from the clicked point to the end of the line.',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 819, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -15261,7 +15261,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":816
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select line from point',
  *     'select_line_from_point ctrl+alt+left triplepress ungrabbed mouse_selection line_from_point',
@@ -15274,7 +15274,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":822
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Extend the current selection',
  *     'extend_selection right press ungrabbed mouse_selection extend',
@@ -15295,7 +15295,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":822
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Extend the current selection',
  *     'extend_selection right press ungrabbed mouse_selection extend',
@@ -15308,7 +15308,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":831
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Paste from the primary selection even when grabbed',
  *     'paste_selection_grabbed shift+middle release ungrabbed,grabbed paste_selection',
@@ -15322,7 +15322,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":836
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Discard press event for middle click paste',
  *     'paste_selection_grabbed shift+middle press grabbed discard_event',
@@ -15336,7 +15336,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":841
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text even when grabbed',
  *     'start_simple_selection_grabbed shift+left press ungrabbed,grabbed mouse_selection normal',
@@ -15350,7 +15350,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":846
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Start selecting text in a rectangle even when grabbed',
  *     'start_rectangle_selection_grabbed ctrl+shift+alt+left press ungrabbed,grabbed mouse_selection rectangle',
@@ -15364,7 +15364,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":851
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a word even when grabbed',
  *     'select_word_grabbed shift+left doublepress ungrabbed,grabbed mouse_selection word',
@@ -15378,7 +15378,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":856
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select a line even when grabbed',
  *     'select_line_grabbed shift+left triplepress ungrabbed,grabbed mouse_selection line',
@@ -15392,7 +15392,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":861
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select line from point even when grabbed',
  *     'select_line_from_point_grabbed ctrl+shift+alt+left triplepress ungrabbed,grabbed mouse_selection line_from_point',
@@ -15405,7 +15405,7 @@ if (!__Pyx_RefNanny) {
  *     'select_line_from_point_grabbed ctrl+shift+alt+left triplepress ungrabbed,grabbed mouse_selection line_from_point',
  *     long_text='Select from the clicked point to the end of the line even when grabbed.',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 864, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -15413,7 +15413,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":861
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Select line from point even when grabbed',
  *     'select_line_from_point_grabbed ctrl+shift+alt+left triplepress ungrabbed,grabbed mouse_selection line_from_point',
@@ -15426,7 +15426,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":867
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Extend the current selection even when grabbed',
  *     'extend_selection_grabbed shift+right press ungrabbed,grabbed mouse_selection extend',
@@ -15440,7 +15440,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":872
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Show clicked command output in pager',
  *     'show_clicked_cmd_output_ungrabbed ctrl+shift+right press ungrabbed mouse_show_command_output',
@@ -15461,7 +15461,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":872
  * )
- * 
+ *
  * mma(             # <<<<<<<<<<<<<<
  *     'Show clicked command output in pager',
  *     'show_clicked_cmd_output_ungrabbed ctrl+shift+right press ungrabbed mouse_show_command_output',
@@ -15477,7 +15477,7 @@ if (!__Pyx_RefNanny) {
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
  * egr()  # }}}
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_egr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 877, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -15490,8 +15490,8 @@ if (!__Pyx_RefNanny) {
  * )
  * egr()  # }}}
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_egr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 878, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -15501,10 +15501,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":882
- * 
+ *
  * # performance {{{
  * agr('performance', 'Performance tuning')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 882, __pyx_L1_error)
@@ -15516,7 +15516,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":884
  * agr('performance', 'Performance tuning')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'repaint_delay',
  *     '10',
@@ -15539,7 +15539,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":884
  * agr('performance', 'Performance tuning')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'repaint_delay',
  *     '10',
@@ -15552,7 +15552,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":899
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'input_delay',
  *     '3',
@@ -15575,7 +15575,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":899
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'input_delay',
  *     '3',
@@ -15588,7 +15588,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":913
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'sync_to_monitor',
  *     'yes',
@@ -15611,7 +15611,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":913
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'sync_to_monitor',
  *     'yes',
@@ -15626,8 +15626,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 926, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -15637,10 +15637,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":930
- * 
+ *
  * # bell {{{
  * agr('bell', 'Terminal bell')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 930, __pyx_L1_error)
@@ -15652,7 +15652,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":932
  * agr('bell', 'Terminal bell')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'enable_audio_bell',
  *     'yes',
@@ -15675,7 +15675,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":932
  * agr('bell', 'Terminal bell')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'enable_audio_bell',
  *     'yes',
@@ -15688,7 +15688,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":942
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_bell_duration',
  *     '0.0',
@@ -15711,7 +15711,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":942
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_bell_duration',
  *     '0.0',
@@ -15724,7 +15724,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":953
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_bell_color',
  *     'none',
@@ -15746,7 +15746,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":953
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_bell_color',
  *     'none',
@@ -15759,7 +15759,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":964
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_alert_on_bell',
  *     'yes',
@@ -15782,7 +15782,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":964
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_alert_on_bell',
  *     'yes',
@@ -15795,7 +15795,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":975
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_on_tab',
  *     '" "',
@@ -15817,7 +15817,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":975
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_on_tab',
  *     '" "',
@@ -15830,7 +15830,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":991
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'command_on_bell',
  *     'none',
@@ -15852,7 +15852,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":991
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'command_on_bell',
  *     'none',
@@ -15865,7 +15865,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1002
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_path',
  *     'none',
@@ -15888,7 +15888,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1002
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_path',
  *     'none',
@@ -15901,10 +15901,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1015
  * )
- * 
+ *
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_egr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1015, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -15914,10 +15914,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":1019
- * 
+ *
  * # window {{{
  * agr('window', 'Window layout')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1019, __pyx_L1_error)
@@ -15929,7 +15929,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1021
  * agr('window', 'Window layout')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remember_window_size',
  *     'yes',
@@ -15951,7 +15951,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1021
  * agr('window', 'Window layout')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remember_window_size',
  *     'yes',
@@ -15964,7 +15964,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1035
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'initial_window_width',
  *     '640',
@@ -15977,7 +15977,7 @@ if (!__Pyx_RefNanny) {
  *     '640',
  *     option_type='window_size',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1038, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -15985,7 +15985,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1035
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'initial_window_width',
  *     '640',
@@ -15998,7 +15998,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1041
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'initial_window_height',
  *     '400',
@@ -16011,7 +16011,7 @@ if (!__Pyx_RefNanny) {
  *     '400',
  *     option_type='window_size',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1044, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -16019,7 +16019,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1041
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'initial_window_height',
  *     '400',
@@ -16032,7 +16032,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1047
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'enabled_layouts',
  *     '*',
@@ -16054,7 +16054,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1047
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'enabled_layouts',
  *     '*',
@@ -16067,7 +16067,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1059
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_resize_step_cells',
  *     '2',
@@ -16089,7 +16089,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1059
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_resize_step_cells',
  *     '2',
@@ -16102,7 +16102,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1071
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_resize_step_lines',
  *     '2',
@@ -16115,7 +16115,7 @@ if (!__Pyx_RefNanny) {
  *     '2',
  *     option_type='positive_int',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1074, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -16123,7 +16123,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1071
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_resize_step_lines',
  *     '2',
@@ -16136,7 +16136,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1077
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_border_width',
  *     '0.5pt',
@@ -16158,7 +16158,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1077
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_border_width',
  *     '0.5pt',
@@ -16171,7 +16171,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1090
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'draw_minimal_borders',
  *     'yes',
@@ -16193,7 +16193,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1090
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'draw_minimal_borders',
  *     'yes',
@@ -16206,7 +16206,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1102
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_margin_width',
  *     '0',
@@ -16228,7 +16228,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1102
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_margin_width',
  *     '0',
@@ -16241,7 +16241,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1113
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'single_window_margin_width',
  *     '-1',
@@ -16263,7 +16263,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1113
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'single_window_margin_width',
  *     '-1',
@@ -16276,7 +16276,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1126
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_padding_width',
  *     '0',
@@ -16298,7 +16298,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1126
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_padding_width',
  *     '0',
@@ -16311,7 +16311,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1138
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'placement_strategy',
  *     'center',
@@ -16333,7 +16333,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1138
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'placement_strategy',
  *     'center',
@@ -16346,7 +16346,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1151
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_border_color',
  *     '#00ff00',
@@ -16369,7 +16369,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1151
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_border_color',
  *     '#00ff00',
@@ -16382,9 +16382,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1162
  * )
- * 
+ *
  * opt('inactive_border_color', '#cccccc', option_type='to_color', ctype='color_as_int', long_text='The color for the border of inactive windows.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1162, __pyx_L1_error)
@@ -16402,7 +16402,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1164
  * opt('inactive_border_color', '#cccccc', option_type='to_color', ctype='color_as_int', long_text='The color for the border of inactive windows.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_border_color',
  *     '#ff5a00',
@@ -16425,7 +16425,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1164
  * opt('inactive_border_color', '#cccccc', option_type='to_color', ctype='color_as_int', long_text='The color for the border of inactive windows.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'bell_border_color',
  *     '#ff5a00',
@@ -16438,7 +16438,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1172
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_text_alpha',
  *     '1.0',
@@ -16461,7 +16461,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1172
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_text_alpha',
  *     '1.0',
@@ -16474,7 +16474,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1183
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hide_window_decorations',
  *     'no',
@@ -16497,7 +16497,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1183
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hide_window_decorations',
  *     'no',
@@ -16510,7 +16510,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1197
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_path',
  *     'none',
@@ -16533,7 +16533,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1197
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_path',
  *     'none',
@@ -16546,7 +16546,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1211
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_position',
  *     'bottom-right',
@@ -16569,7 +16569,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1211
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_position',
  *     'bottom-right',
@@ -16582,7 +16582,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1223
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_alpha',
  *     '0.5',
@@ -16605,7 +16605,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1223
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'window_logo_alpha',
  *     '0.5',
@@ -16617,8 +16617,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/options/definition.py":1235
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_debounce_time',
  *     '0.1',
@@ -16640,8 +16640,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_long_text, __pyx_kp_s_The_time_to_wait_before_redrawi) < 0) __PYX_ERR(0, 1238, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1235
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_debounce_time',
  *     '0.1',
@@ -16654,7 +16654,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1247
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_draw_strategy',
  *     'static',
@@ -16677,7 +16677,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1247
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_draw_strategy',
  *     'static',
@@ -16690,7 +16690,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1261
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_in_steps',
  *     'no',
@@ -16713,7 +16713,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1261
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'resize_in_steps',
  *     'no',
@@ -16726,7 +16726,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1275
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_window_select_characters',
  *     defval=string.digits[1:] + '0' + string.ascii_uppercase,
@@ -16770,7 +16770,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1275
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'visual_window_select_characters',
  *     defval=string.digits[1:] + '0' + string.ascii_uppercase,
@@ -16783,7 +16783,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1287
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'confirm_os_window_close',
  *     '-1',
@@ -16805,7 +16805,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1287
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'confirm_os_window_close',
  *     '-1',
@@ -16820,8 +16820,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -16831,10 +16831,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":1308
- * 
+ *
  * # tabbar {{{
  * agr('tabbar', 'Tab bar')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('tab_bar_edge', 'bottom', option_type='tab_bar_edge', ctype='int', long_text='The edge to show the tab bar on, :code:`top` or :code:`bottom`.')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1308, __pyx_L1_error)
@@ -16846,9 +16846,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1310
  * agr('tabbar', 'Tab bar')
- * 
+ *
  * opt('tab_bar_edge', 'bottom', option_type='tab_bar_edge', ctype='int', long_text='The edge to show the tab bar on, :code:`top` or :code:`bottom`.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('tab_bar_margin_width', '0.0', option_type='positive_float', long_text='The margin to the left and right of the tab bar (in pts).')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1310, __pyx_L1_error)
@@ -16866,9 +16866,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1312
  * opt('tab_bar_edge', 'bottom', option_type='tab_bar_edge', ctype='int', long_text='The edge to show the tab bar on, :code:`top` or :code:`bottom`.')
- * 
+ *
  * opt('tab_bar_margin_width', '0.0', option_type='positive_float', long_text='The margin to the left and right of the tab bar (in pts).')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_opt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1312, __pyx_L1_error)
@@ -16885,7 +16885,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1314
  * opt('tab_bar_margin_width', '0.0', option_type='positive_float', long_text='The margin to the left and right of the tab bar (in pts).')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_margin_height',
  *     '0.0 0.0',
@@ -16908,7 +16908,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1314
  * opt('tab_bar_margin_width', '0.0', option_type='positive_float', long_text='The margin to the left and right of the tab bar (in pts).')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_margin_height',
  *     '0.0 0.0',
@@ -16921,7 +16921,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1326
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_style',
  *     'fade',
@@ -16944,7 +16944,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1326
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_style',
  *     'fade',
@@ -16957,7 +16957,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_align',
  *     'left',
@@ -16979,7 +16979,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_align',
  *     'left',
@@ -16992,9 +16992,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1368
  * )
- * 
+ *
  * opt('tab_bar_min_tabs', '2', option_type='tab_bar_min_tabs', ctype='uint', long_text='The minimum number of tabs that must exist before the tab bar is shown.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_opt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1368, __pyx_L1_error)
@@ -17012,7 +17012,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1370
  * opt('tab_bar_min_tabs', '2', option_type='tab_bar_min_tabs', ctype='uint', long_text='The minimum number of tabs that must exist before the tab bar is shown.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_switch_strategy',
  *     'previous',
@@ -17034,7 +17034,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1370
  * opt('tab_bar_min_tabs', '2', option_type='tab_bar_min_tabs', ctype='uint', long_text='The minimum number of tabs that must exist before the tab bar is shown.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_switch_strategy',
  *     'previous',
@@ -17047,7 +17047,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1383
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_fade',
  *     '0.25 0.5 0.75 1',
@@ -17069,7 +17069,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1383
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_fade',
  *     '0.25 0.5 0.75 1',
@@ -17082,7 +17082,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1396
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_separator',
  *     '" "',
@@ -17104,7 +17104,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1396
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_separator',
  *     '" "',
@@ -17117,7 +17117,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1406
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_powerline_style',
  *     'angled',
@@ -17139,7 +17139,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1406
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_powerline_style',
  *     'angled',
@@ -17152,7 +17152,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1417
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_activity_symbol',
  *     'none',
@@ -17174,7 +17174,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1417
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_activity_symbol',
  *     'none',
@@ -17187,7 +17187,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1429
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_title_max_length',
  *     '0',
@@ -17209,7 +17209,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1429
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_title_max_length',
  *     '0',
@@ -17222,7 +17222,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1439
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_title_template',
  *     '"{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{title}"',
@@ -17244,7 +17244,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1439
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_title_template',
  *     '"{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{title}"',
@@ -17257,7 +17257,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1484
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_title_template',
  *     'none',
@@ -17279,7 +17279,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1484
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_title_template',
  *     'none',
@@ -17292,9 +17292,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1494
  * )
- * 
+ *
  * opt('active_tab_foreground', '#000', option_type='to_color', long_text='Tab bar colors and styles.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1494, __pyx_L1_error)
@@ -17311,7 +17311,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1496
  * opt('active_tab_foreground', '#000', option_type='to_color', long_text='Tab bar colors and styles.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_background',
  *     '#eee',
@@ -17324,7 +17324,7 @@ if (!__Pyx_RefNanny) {
  *     '#eee',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1499, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17332,7 +17332,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1496
  * opt('active_tab_foreground', '#000', option_type='to_color', long_text='Tab bar colors and styles.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_background',
  *     '#eee',
@@ -17345,7 +17345,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1502
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_font_style',
  *     'bold-italic',
@@ -17358,7 +17358,7 @@ if (!__Pyx_RefNanny) {
  *     'bold-italic',
  *     option_type='tab_font_style',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1505, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17366,7 +17366,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1502
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'active_tab_font_style',
  *     'bold-italic',
@@ -17379,7 +17379,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1508
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_foreground',
  *     '#444',
@@ -17392,7 +17392,7 @@ if (!__Pyx_RefNanny) {
  *     '#444',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1511, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17400,7 +17400,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1508
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_foreground',
  *     '#444',
@@ -17413,7 +17413,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1514
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_background',
  *     '#999',
@@ -17426,7 +17426,7 @@ if (!__Pyx_RefNanny) {
  *     '#999',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1517, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17434,7 +17434,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1514
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_background',
  *     '#999',
@@ -17447,7 +17447,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1520
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_font_style',
  *     'normal',
@@ -17460,7 +17460,7 @@ if (!__Pyx_RefNanny) {
  *     'normal',
  *     option_type='tab_font_style',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1523, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17468,7 +17468,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1520
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'inactive_tab_font_style',
  *     'normal',
@@ -17481,7 +17481,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1526
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_background',
  *     'none',
@@ -17504,7 +17504,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1526
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_background',
  *     'none',
@@ -17517,7 +17517,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1537
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_margin_color',
  *     'none',
@@ -17540,7 +17540,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1537
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'tab_bar_margin_color',
  *     'none',
@@ -17555,8 +17555,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1548, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -17566,10 +17566,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":1552
- * 
+ *
  * # colors {{{
  * agr('colors', 'Color scheme')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('foreground', '#dddddd', option_type='to_color', ctype='color_as_int', long_text='The foreground and background colors.')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1552, __pyx_L1_error)
@@ -17581,9 +17581,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1554
  * agr('colors', 'Color scheme')
- * 
+ *
  * opt('foreground', '#dddddd', option_type='to_color', ctype='color_as_int', long_text='The foreground and background colors.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1554, __pyx_L1_error)
@@ -17601,7 +17601,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1556
  * opt('foreground', '#dddddd', option_type='to_color', ctype='color_as_int', long_text='The foreground and background colors.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background',
  *     '#000000',
@@ -17623,7 +17623,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1556
  * opt('foreground', '#dddddd', option_type='to_color', ctype='color_as_int', long_text='The foreground and background colors.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background',
  *     '#000000',
@@ -17636,7 +17636,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1563
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_opacity',
  *     '1.0',
@@ -17659,7 +17659,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1563
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_opacity',
  *     '1.0',
@@ -17672,7 +17672,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1588
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image', 'none', option_type='config_or_absolute_path', ctype='!background_image', long_text='Path to a background image. Must be in PNG format.'
  * )
@@ -17681,11 +17681,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/options/definition.py":1589
- * 
+ *
  * opt(
  *     'background_image', 'none', option_type='config_or_absolute_path', ctype='!background_image', long_text='Path to a background image. Must be in PNG format.'             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1589, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17695,7 +17695,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1588
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image', 'none', option_type='config_or_absolute_path', ctype='!background_image', long_text='Path to a background image. Must be in PNG format.'
  * )
@@ -17708,7 +17708,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1592
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image_layout',
  *     'tiled',
@@ -17731,7 +17731,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1592
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image_layout',
  *     'tiled',
@@ -17744,7 +17744,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1603
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image_linear',
  *     'no',
@@ -17767,7 +17767,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1603
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_image_linear',
  *     'no',
@@ -17780,7 +17780,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1611
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'dynamic_background_opacity',
  *     'no',
@@ -17803,7 +17803,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1611
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'dynamic_background_opacity',
  *     'no',
@@ -17816,7 +17816,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1624
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_tint',
  *     '0.0',
@@ -17839,7 +17839,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1624
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_tint',
  *     '0.0',
@@ -17852,7 +17852,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1637
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_tint_gaps',
  *     '1.0',
@@ -17875,7 +17875,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1637
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background_tint_gaps',
  *     '1.0',
@@ -17888,7 +17888,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1650
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'dim_opacity',
  *     '0.75',
@@ -17911,7 +17911,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1650
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'dim_opacity',
  *     '0.75',
@@ -17924,7 +17924,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1661
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'selection_foreground',
  *     '#000000',
@@ -17946,7 +17946,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1661
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'selection_foreground',
  *     '#000000',
@@ -17959,7 +17959,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1675
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'selection_background',
  *     '#fffacd',
@@ -17972,7 +17972,7 @@ if (!__Pyx_RefNanny) {
  *     '#fffacd',
  *     option_type='to_color_or_none',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1678, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17980,7 +17980,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1675
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'selection_background',
  *     '#fffacd',
@@ -17992,7 +17992,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/options/definition.py":1683
- * 
+ *
  * # colors.table {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'colors.table',
@@ -18007,9 +18007,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1693
  * )
- * 
+ *
  * opt('color0', '#000000', option_type='to_color', long_text='black')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1693, __pyx_L1_error)
@@ -18026,7 +18026,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1695
  * opt('color0', '#000000', option_type='to_color', long_text='black')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color8',
  *     '#767676',
@@ -18039,7 +18039,7 @@ if (!__Pyx_RefNanny) {
  *     '#767676',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1698, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18047,7 +18047,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1695
  * opt('color0', '#000000', option_type='to_color', long_text='black')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color8',
  *     '#767676',
@@ -18060,9 +18060,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1701
  * )
- * 
+ *
  * opt('color1', '#cc0403', option_type='to_color', long_text='red')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1701, __pyx_L1_error)
@@ -18079,7 +18079,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1703
  * opt('color1', '#cc0403', option_type='to_color', long_text='red')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color9',
  *     '#f2201f',
@@ -18092,7 +18092,7 @@ if (!__Pyx_RefNanny) {
  *     '#f2201f',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1706, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18100,7 +18100,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1703
  * opt('color1', '#cc0403', option_type='to_color', long_text='red')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color9',
  *     '#f2201f',
@@ -18113,9 +18113,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1709
  * )
- * 
+ *
  * opt('color2', '#19cb00', option_type='to_color', long_text='green')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1709, __pyx_L1_error)
@@ -18132,7 +18132,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1711
  * opt('color2', '#19cb00', option_type='to_color', long_text='green')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color10',
  *     '#23fd00',
@@ -18145,7 +18145,7 @@ if (!__Pyx_RefNanny) {
  *     '#23fd00',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1714, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18153,7 +18153,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1711
  * opt('color2', '#19cb00', option_type='to_color', long_text='green')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color10',
  *     '#23fd00',
@@ -18166,9 +18166,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1717
  * )
- * 
+ *
  * opt('color3', '#cecb00', option_type='to_color', long_text='yellow')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1717, __pyx_L1_error)
@@ -18185,7 +18185,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1719
  * opt('color3', '#cecb00', option_type='to_color', long_text='yellow')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color11',
  *     '#fffd00',
@@ -18198,7 +18198,7 @@ if (!__Pyx_RefNanny) {
  *     '#fffd00',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1722, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18206,7 +18206,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1719
  * opt('color3', '#cecb00', option_type='to_color', long_text='yellow')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color11',
  *     '#fffd00',
@@ -18219,9 +18219,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1725
  * )
- * 
+ *
  * opt('color4', '#0d73cc', option_type='to_color', long_text='blue')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1725, __pyx_L1_error)
@@ -18238,7 +18238,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1727
  * opt('color4', '#0d73cc', option_type='to_color', long_text='blue')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color12',
  *     '#1a8fff',
@@ -18251,7 +18251,7 @@ if (!__Pyx_RefNanny) {
  *     '#1a8fff',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1730, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18259,7 +18259,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1727
  * opt('color4', '#0d73cc', option_type='to_color', long_text='blue')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color12',
  *     '#1a8fff',
@@ -18272,9 +18272,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1733
  * )
- * 
+ *
  * opt('color5', '#cb1ed1', option_type='to_color', long_text='magenta')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1733, __pyx_L1_error)
@@ -18291,7 +18291,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1735
  * opt('color5', '#cb1ed1', option_type='to_color', long_text='magenta')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color13',
  *     '#fd28ff',
@@ -18304,7 +18304,7 @@ if (!__Pyx_RefNanny) {
  *     '#fd28ff',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18312,7 +18312,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1735
  * opt('color5', '#cb1ed1', option_type='to_color', long_text='magenta')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color13',
  *     '#fd28ff',
@@ -18325,9 +18325,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1741
  * )
- * 
+ *
  * opt('color6', '#0dcdcd', option_type='to_color', long_text='cyan')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1741, __pyx_L1_error)
@@ -18344,7 +18344,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1743
  * opt('color6', '#0dcdcd', option_type='to_color', long_text='cyan')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color14',
  *     '#14ffff',
@@ -18357,7 +18357,7 @@ if (!__Pyx_RefNanny) {
  *     '#14ffff',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1746, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18365,7 +18365,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1743
  * opt('color6', '#0dcdcd', option_type='to_color', long_text='cyan')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color14',
  *     '#14ffff',
@@ -18378,9 +18378,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1749
  * )
- * 
+ *
  * opt('color7', '#dddddd', option_type='to_color', long_text='white')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1749, __pyx_L1_error)
@@ -18397,7 +18397,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1751
  * opt('color7', '#dddddd', option_type='to_color', long_text='white')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color15',
  *     '#ffffff',
@@ -18410,7 +18410,7 @@ if (!__Pyx_RefNanny) {
  *     '#ffffff',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1754, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18418,7 +18418,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1751
  * opt('color7', '#dddddd', option_type='to_color', long_text='white')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color15',
  *     '#ffffff',
@@ -18431,9 +18431,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1757
  * )
- * 
+ *
  * opt('mark1_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark1_background', '#98d3cb', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (light steel blue)')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1757, __pyx_L1_error)
@@ -18451,9 +18451,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1759
  * opt('mark1_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1')
- * 
+ *
  * opt('mark1_background', '#98d3cb', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (light steel blue)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark2_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 2')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_opt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1759, __pyx_L1_error)
@@ -18471,9 +18471,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1761
  * opt('mark1_background', '#98d3cb', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (light steel blue)')
- * 
+ *
  * opt('mark2_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 2')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark2_background', '#f2dcd3', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (beige)')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1761, __pyx_L1_error)
@@ -18491,9 +18491,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1763
  * opt('mark2_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 2')
- * 
+ *
  * opt('mark2_background', '#f2dcd3', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (beige)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark3_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_opt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1763, __pyx_L1_error)
@@ -18511,9 +18511,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1765
  * opt('mark2_background', '#f2dcd3', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 1 (beige)')
- * 
+ *
  * opt('mark3_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('mark3_background', '#f274bc', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3 (violet)')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_opt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1765, __pyx_L1_error)
@@ -18531,9 +18531,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1767
  * opt('mark3_foreground', 'black', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3')
- * 
+ *
  * opt('mark3_background', '#f274bc', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3 (violet)')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_opt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1767, __pyx_L1_error)
@@ -18551,7 +18551,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1769
  * opt('mark3_background', '#f274bc', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3 (violet)')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color16',
  *     '#000000',
@@ -18575,13 +18575,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1772, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1769
  * opt('mark3_background', '#f274bc', option_type='to_color', ctype='color_as_int', long_text='Color for marks of type 3 (violet)')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color16',
  *     '#000000',
@@ -18594,7 +18594,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1776
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color17',
  *     '#00005f',
@@ -18618,13 +18618,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1779, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1776
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color17',
  *     '#00005f',
@@ -18637,7 +18637,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1783
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color18',
  *     '#000087',
@@ -18661,13 +18661,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1786, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1783
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color18',
  *     '#000087',
@@ -18680,7 +18680,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1790
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color19',
  *     '#0000af',
@@ -18704,13 +18704,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1793, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1790
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color19',
  *     '#0000af',
@@ -18723,7 +18723,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1797
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color20',
  *     '#0000d7',
@@ -18747,13 +18747,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1800, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1797
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color20',
  *     '#0000d7',
@@ -18766,7 +18766,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1804
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color21',
  *     '#0000ff',
@@ -18790,13 +18790,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1807, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1804
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color21',
  *     '#0000ff',
@@ -18809,7 +18809,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1811
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color22',
  *     '#005f00',
@@ -18833,13 +18833,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1814, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1811
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color22',
  *     '#005f00',
@@ -18852,7 +18852,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1818
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color23',
  *     '#005f5f',
@@ -18876,13 +18876,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1821, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1818
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color23',
  *     '#005f5f',
@@ -18895,7 +18895,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1825
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color24',
  *     '#005f87',
@@ -18919,13 +18919,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1828, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1825
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color24',
  *     '#005f87',
@@ -18938,7 +18938,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1832
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color25',
  *     '#005faf',
@@ -18962,13 +18962,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1835, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1832
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color25',
  *     '#005faf',
@@ -18981,7 +18981,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1839
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color26',
  *     '#005fd7',
@@ -19005,13 +19005,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1842, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1839
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color26',
  *     '#005fd7',
@@ -19024,7 +19024,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1846
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color27',
  *     '#005fff',
@@ -19048,13 +19048,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1849, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1846
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color27',
  *     '#005fff',
@@ -19067,7 +19067,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1853
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color28',
  *     '#008700',
@@ -19091,13 +19091,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1856, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1853
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color28',
  *     '#008700',
@@ -19110,7 +19110,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1860
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color29',
  *     '#00875f',
@@ -19134,13 +19134,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1863, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1860
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color29',
  *     '#00875f',
@@ -19153,7 +19153,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1867
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color30',
  *     '#008787',
@@ -19177,13 +19177,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1870, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1867
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color30',
  *     '#008787',
@@ -19196,7 +19196,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1874
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color31',
  *     '#0087af',
@@ -19220,13 +19220,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1877, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1874
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color31',
  *     '#0087af',
@@ -19239,7 +19239,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1881
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color32',
  *     '#0087d7',
@@ -19263,13 +19263,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1884, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1881
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color32',
  *     '#0087d7',
@@ -19282,7 +19282,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1888
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color33',
  *     '#0087ff',
@@ -19306,13 +19306,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1891, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1888
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color33',
  *     '#0087ff',
@@ -19325,7 +19325,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1895
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color34',
  *     '#00af00',
@@ -19349,13 +19349,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1898, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1895
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color34',
  *     '#00af00',
@@ -19368,7 +19368,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1902
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color35',
  *     '#00af5f',
@@ -19392,13 +19392,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1905, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1902
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color35',
  *     '#00af5f',
@@ -19411,7 +19411,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1909
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color36',
  *     '#00af87',
@@ -19435,13 +19435,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1912, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1909
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color36',
  *     '#00af87',
@@ -19454,7 +19454,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1916
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color37',
  *     '#00afaf',
@@ -19478,13 +19478,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1919, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1916
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color37',
  *     '#00afaf',
@@ -19497,7 +19497,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1923
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color38',
  *     '#00afd7',
@@ -19521,13 +19521,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1926, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1923
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color38',
  *     '#00afd7',
@@ -19540,7 +19540,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1930
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color39',
  *     '#00afff',
@@ -19564,13 +19564,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1933, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1930
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color39',
  *     '#00afff',
@@ -19583,7 +19583,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1937
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color40',
  *     '#00d700',
@@ -19607,13 +19607,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1940, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1937
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color40',
  *     '#00d700',
@@ -19626,7 +19626,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1944
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color41',
  *     '#00d75f',
@@ -19650,13 +19650,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1947, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1944
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color41',
  *     '#00d75f',
@@ -19669,7 +19669,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1951
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color42',
  *     '#00d787',
@@ -19693,13 +19693,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1954, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1951
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color42',
  *     '#00d787',
@@ -19712,7 +19712,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1958
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color43',
  *     '#00d7af',
@@ -19736,13 +19736,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1961, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1958
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color43',
  *     '#00d7af',
@@ -19755,7 +19755,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1965
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color44',
  *     '#00d7d7',
@@ -19779,13 +19779,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1968, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1965
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color44',
  *     '#00d7d7',
@@ -19798,7 +19798,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1972
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color45',
  *     '#00d7ff',
@@ -19822,13 +19822,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1975, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1972
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color45',
  *     '#00d7ff',
@@ -19841,7 +19841,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1979
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color46',
  *     '#00ff00',
@@ -19865,13 +19865,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1982, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1979
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color46',
  *     '#00ff00',
@@ -19884,7 +19884,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1986
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color47',
  *     '#00ff5f',
@@ -19908,13 +19908,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1989, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1986
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color47',
  *     '#00ff5f',
@@ -19927,7 +19927,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":1993
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color48',
  *     '#00ff87',
@@ -19951,13 +19951,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 1996, __pyx_L1_error)
 
   /* "smelly/options/definition.py":1993
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color48',
  *     '#00ff87',
@@ -19970,7 +19970,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2000
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color49',
  *     '#00ffaf',
@@ -19994,13 +19994,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2003, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2000
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color49',
  *     '#00ffaf',
@@ -20013,7 +20013,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2007
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color50',
  *     '#00ffd7',
@@ -20037,13 +20037,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2010, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2007
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color50',
  *     '#00ffd7',
@@ -20056,7 +20056,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2014
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color51',
  *     '#00ffff',
@@ -20080,13 +20080,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2017, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2014
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color51',
  *     '#00ffff',
@@ -20099,7 +20099,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2021
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color52',
  *     '#5f0000',
@@ -20123,13 +20123,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2024, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2021
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color52',
  *     '#5f0000',
@@ -20142,7 +20142,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2028
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color53',
  *     '#5f005f',
@@ -20166,13 +20166,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2031, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2028
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color53',
  *     '#5f005f',
@@ -20185,7 +20185,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2035
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color54',
  *     '#5f0087',
@@ -20209,13 +20209,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2038, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2035
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color54',
  *     '#5f0087',
@@ -20228,7 +20228,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2042
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color55',
  *     '#5f00af',
@@ -20252,13 +20252,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2045, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2042
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color55',
  *     '#5f00af',
@@ -20271,7 +20271,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2049
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color56',
  *     '#5f00d7',
@@ -20295,13 +20295,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2052, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2049
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color56',
  *     '#5f00d7',
@@ -20314,7 +20314,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2056
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color57',
  *     '#5f00ff',
@@ -20338,13 +20338,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2059, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2056
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color57',
  *     '#5f00ff',
@@ -20357,7 +20357,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2063
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color58',
  *     '#5f5f00',
@@ -20381,13 +20381,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2066, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2063
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color58',
  *     '#5f5f00',
@@ -20400,7 +20400,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2070
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color59',
  *     '#5f5f5f',
@@ -20424,13 +20424,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2073, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2070
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color59',
  *     '#5f5f5f',
@@ -20443,7 +20443,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2077
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color60',
  *     '#5f5f87',
@@ -20467,13 +20467,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2080, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2077
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color60',
  *     '#5f5f87',
@@ -20486,7 +20486,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2084
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color61',
  *     '#5f5faf',
@@ -20510,13 +20510,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2087, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2084
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color61',
  *     '#5f5faf',
@@ -20529,7 +20529,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2091
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color62',
  *     '#5f5fd7',
@@ -20553,13 +20553,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2094, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2091
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color62',
  *     '#5f5fd7',
@@ -20572,7 +20572,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2098
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color63',
  *     '#5f5fff',
@@ -20596,13 +20596,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2101, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2098
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color63',
  *     '#5f5fff',
@@ -20615,7 +20615,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2105
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color64',
  *     '#5f8700',
@@ -20639,13 +20639,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2108, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2105
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color64',
  *     '#5f8700',
@@ -20658,7 +20658,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2112
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color65',
  *     '#5f875f',
@@ -20682,13 +20682,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2115, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2112
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color65',
  *     '#5f875f',
@@ -20701,7 +20701,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2119
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color66',
  *     '#5f8787',
@@ -20725,13 +20725,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2122, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2119
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color66',
  *     '#5f8787',
@@ -20744,7 +20744,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2126
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color67',
  *     '#5f87af',
@@ -20768,13 +20768,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2129, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2126
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color67',
  *     '#5f87af',
@@ -20787,7 +20787,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2133
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color68',
  *     '#5f87d7',
@@ -20811,13 +20811,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2136, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2133
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color68',
  *     '#5f87d7',
@@ -20830,7 +20830,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2140
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color69',
  *     '#5f87ff',
@@ -20854,13 +20854,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2143, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2140
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color69',
  *     '#5f87ff',
@@ -20873,7 +20873,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2147
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color70',
  *     '#5faf00',
@@ -20897,13 +20897,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2150, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2147
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color70',
  *     '#5faf00',
@@ -20916,7 +20916,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2154
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color71',
  *     '#5faf5f',
@@ -20940,13 +20940,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2157, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2154
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color71',
  *     '#5faf5f',
@@ -20959,7 +20959,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2161
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color72',
  *     '#5faf87',
@@ -20983,13 +20983,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2164, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2161
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color72',
  *     '#5faf87',
@@ -21002,7 +21002,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2168
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color73',
  *     '#5fafaf',
@@ -21026,13 +21026,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2171, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2168
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color73',
  *     '#5fafaf',
@@ -21045,7 +21045,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2175
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color74',
  *     '#5fafd7',
@@ -21069,13 +21069,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2178, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2175
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color74',
  *     '#5fafd7',
@@ -21088,7 +21088,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2182
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color75',
  *     '#5fafff',
@@ -21112,13 +21112,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2185, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2182
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color75',
  *     '#5fafff',
@@ -21131,7 +21131,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2189
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color76',
  *     '#5fd700',
@@ -21155,13 +21155,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2192, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2189
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color76',
  *     '#5fd700',
@@ -21174,7 +21174,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2196
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color77',
  *     '#5fd75f',
@@ -21198,13 +21198,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2199, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2196
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color77',
  *     '#5fd75f',
@@ -21217,7 +21217,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2203
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color78',
  *     '#5fd787',
@@ -21241,13 +21241,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2206, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2203
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color78',
  *     '#5fd787',
@@ -21260,7 +21260,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2210
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color79',
  *     '#5fd7af',
@@ -21284,13 +21284,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2213, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2210
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color79',
  *     '#5fd7af',
@@ -21303,7 +21303,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2217
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color80',
  *     '#5fd7d7',
@@ -21327,13 +21327,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2220, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2217
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color80',
  *     '#5fd7d7',
@@ -21346,7 +21346,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2224
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color81',
  *     '#5fd7ff',
@@ -21370,13 +21370,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2227, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2224
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color81',
  *     '#5fd7ff',
@@ -21389,7 +21389,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2231
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color82',
  *     '#5fff00',
@@ -21413,13 +21413,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2234, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2231
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color82',
  *     '#5fff00',
@@ -21432,7 +21432,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2238
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color83',
  *     '#5fff5f',
@@ -21456,13 +21456,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2241, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2238
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color83',
  *     '#5fff5f',
@@ -21475,7 +21475,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2245
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color84',
  *     '#5fff87',
@@ -21499,13 +21499,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2248, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2245
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color84',
  *     '#5fff87',
@@ -21518,7 +21518,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2252
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color85',
  *     '#5fffaf',
@@ -21542,13 +21542,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2255, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2252
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color85',
  *     '#5fffaf',
@@ -21561,7 +21561,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2259
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color86',
  *     '#5fffd7',
@@ -21585,13 +21585,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2262, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2259
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color86',
  *     '#5fffd7',
@@ -21604,7 +21604,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2266
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color87',
  *     '#5fffff',
@@ -21628,13 +21628,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2269, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2266
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color87',
  *     '#5fffff',
@@ -21647,7 +21647,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2273
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color88',
  *     '#870000',
@@ -21671,13 +21671,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2276, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2273
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color88',
  *     '#870000',
@@ -21690,7 +21690,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2280
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color89',
  *     '#87005f',
@@ -21714,13 +21714,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2283, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2280
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color89',
  *     '#87005f',
@@ -21733,7 +21733,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2287
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color90',
  *     '#870087',
@@ -21757,13 +21757,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2290, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2287
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color90',
  *     '#870087',
@@ -21776,7 +21776,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2294
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color91',
  *     '#8700af',
@@ -21800,13 +21800,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2297, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2294
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color91',
  *     '#8700af',
@@ -21819,7 +21819,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2301
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color92',
  *     '#8700d7',
@@ -21843,13 +21843,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2304, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2301
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color92',
  *     '#8700d7',
@@ -21862,7 +21862,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2308
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color93',
  *     '#8700ff',
@@ -21886,13 +21886,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2311, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2308
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color93',
  *     '#8700ff',
@@ -21905,7 +21905,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2315
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color94',
  *     '#875f00',
@@ -21929,13 +21929,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2318, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2315
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color94',
  *     '#875f00',
@@ -21948,7 +21948,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2322
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color95',
  *     '#875f5f',
@@ -21972,13 +21972,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2325, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2322
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color95',
  *     '#875f5f',
@@ -21991,7 +21991,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2329
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color96',
  *     '#875f87',
@@ -22015,13 +22015,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2332, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2329
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color96',
  *     '#875f87',
@@ -22034,7 +22034,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2336
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color97',
  *     '#875faf',
@@ -22058,13 +22058,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2339, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2336
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color97',
  *     '#875faf',
@@ -22077,7 +22077,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2343
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color98',
  *     '#875fd7',
@@ -22101,13 +22101,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2346, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2343
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color98',
  *     '#875fd7',
@@ -22120,7 +22120,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2350
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color99',
  *     '#875fff',
@@ -22144,13 +22144,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2353, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2350
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color99',
  *     '#875fff',
@@ -22163,7 +22163,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2357
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color100',
  *     '#878700',
@@ -22187,13 +22187,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2360, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2357
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color100',
  *     '#878700',
@@ -22206,7 +22206,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2364
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color101',
  *     '#87875f',
@@ -22230,13 +22230,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2367, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2364
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color101',
  *     '#87875f',
@@ -22249,7 +22249,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2371
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color102',
  *     '#878787',
@@ -22273,13 +22273,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2374, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2371
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color102',
  *     '#878787',
@@ -22292,7 +22292,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2378
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color103',
  *     '#8787af',
@@ -22316,13 +22316,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2381, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2378
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color103',
  *     '#8787af',
@@ -22335,7 +22335,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2385
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color104',
  *     '#8787d7',
@@ -22359,13 +22359,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2388, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2385
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color104',
  *     '#8787d7',
@@ -22378,7 +22378,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2392
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color105',
  *     '#8787ff',
@@ -22402,13 +22402,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2395, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2392
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color105',
  *     '#8787ff',
@@ -22421,7 +22421,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2399
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color106',
  *     '#87af00',
@@ -22445,13 +22445,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2402, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2399
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color106',
  *     '#87af00',
@@ -22464,7 +22464,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2406
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color107',
  *     '#87af5f',
@@ -22488,13 +22488,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2409, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2406
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color107',
  *     '#87af5f',
@@ -22507,7 +22507,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2413
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color108',
  *     '#87af87',
@@ -22531,13 +22531,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2416, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2413
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color108',
  *     '#87af87',
@@ -22550,7 +22550,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2420
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color109',
  *     '#87afaf',
@@ -22574,13 +22574,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2423, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2420
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color109',
  *     '#87afaf',
@@ -22593,7 +22593,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2427
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color110',
  *     '#87afd7',
@@ -22617,13 +22617,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2430, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2427
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color110',
  *     '#87afd7',
@@ -22636,7 +22636,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2434
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color111',
  *     '#87afff',
@@ -22660,13 +22660,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2437, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2434
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color111',
  *     '#87afff',
@@ -22679,7 +22679,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2441
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color112',
  *     '#87d700',
@@ -22703,13 +22703,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2444, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2441
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color112',
  *     '#87d700',
@@ -22722,7 +22722,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2448
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color113',
  *     '#87d75f',
@@ -22746,13 +22746,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2451, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2448
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color113',
  *     '#87d75f',
@@ -22765,7 +22765,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2455
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color114',
  *     '#87d787',
@@ -22789,13 +22789,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2458, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2455
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color114',
  *     '#87d787',
@@ -22808,7 +22808,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2462
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color115',
  *     '#87d7af',
@@ -22832,13 +22832,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2465, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2462
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color115',
  *     '#87d7af',
@@ -22851,7 +22851,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2469
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color116',
  *     '#87d7d7',
@@ -22875,13 +22875,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2472, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2469
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color116',
  *     '#87d7d7',
@@ -22894,7 +22894,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2476
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color117',
  *     '#87d7ff',
@@ -22918,13 +22918,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2479, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2476
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color117',
  *     '#87d7ff',
@@ -22937,7 +22937,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2483
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color118',
  *     '#87ff00',
@@ -22961,13 +22961,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2486, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2483
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color118',
  *     '#87ff00',
@@ -22980,7 +22980,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2490
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color119',
  *     '#87ff5f',
@@ -23004,13 +23004,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2493, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2490
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color119',
  *     '#87ff5f',
@@ -23023,7 +23023,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2497
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color120',
  *     '#87ff87',
@@ -23047,13 +23047,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2500, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2497
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color120',
  *     '#87ff87',
@@ -23066,7 +23066,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2504
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color121',
  *     '#87ffaf',
@@ -23090,13 +23090,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2507, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2504
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color121',
  *     '#87ffaf',
@@ -23109,7 +23109,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2511
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color122',
  *     '#87ffd7',
@@ -23133,13 +23133,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2514, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2511
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color122',
  *     '#87ffd7',
@@ -23152,7 +23152,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2518
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color123',
  *     '#87ffff',
@@ -23176,13 +23176,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2521, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2518
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color123',
  *     '#87ffff',
@@ -23195,7 +23195,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2525
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color124',
  *     '#af0000',
@@ -23219,13 +23219,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2528, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2525
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color124',
  *     '#af0000',
@@ -23238,7 +23238,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2532
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color125',
  *     '#af005f',
@@ -23262,13 +23262,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2535, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2532
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color125',
  *     '#af005f',
@@ -23281,7 +23281,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2539
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color126',
  *     '#af0087',
@@ -23305,13 +23305,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2542, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2539
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color126',
  *     '#af0087',
@@ -23324,7 +23324,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2546
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color127',
  *     '#af00af',
@@ -23348,13 +23348,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2549, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2546
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color127',
  *     '#af00af',
@@ -23367,7 +23367,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2553
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color128',
  *     '#af00d7',
@@ -23391,13 +23391,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2556, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2553
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color128',
  *     '#af00d7',
@@ -23410,7 +23410,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2560
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color129',
  *     '#af00ff',
@@ -23434,13 +23434,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2563, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2560
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color129',
  *     '#af00ff',
@@ -23453,7 +23453,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2567
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color130',
  *     '#af5f00',
@@ -23477,13 +23477,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2570, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2567
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color130',
  *     '#af5f00',
@@ -23496,7 +23496,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2574
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color131',
  *     '#af5f5f',
@@ -23520,13 +23520,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2577, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2574
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color131',
  *     '#af5f5f',
@@ -23539,7 +23539,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2581
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color132',
  *     '#af5f87',
@@ -23563,13 +23563,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2584, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2581
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color132',
  *     '#af5f87',
@@ -23582,7 +23582,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2588
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color133',
  *     '#af5faf',
@@ -23606,13 +23606,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2591, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2588
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color133',
  *     '#af5faf',
@@ -23625,7 +23625,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2595
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color134',
  *     '#af5fd7',
@@ -23649,13 +23649,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2598, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2595
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color134',
  *     '#af5fd7',
@@ -23668,7 +23668,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2602
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color135',
  *     '#af5fff',
@@ -23692,13 +23692,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2605, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2602
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color135',
  *     '#af5fff',
@@ -23711,7 +23711,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2609
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color136',
  *     '#af8700',
@@ -23735,13 +23735,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2612, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2609
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color136',
  *     '#af8700',
@@ -23754,7 +23754,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2616
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color137',
  *     '#af875f',
@@ -23778,13 +23778,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2619, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2616
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color137',
  *     '#af875f',
@@ -23797,7 +23797,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2623
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color138',
  *     '#af8787',
@@ -23821,13 +23821,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2626, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2623
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color138',
  *     '#af8787',
@@ -23840,7 +23840,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2630
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color139',
  *     '#af87af',
@@ -23864,13 +23864,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2633, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2630
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color139',
  *     '#af87af',
@@ -23883,7 +23883,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2637
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color140',
  *     '#af87d7',
@@ -23907,13 +23907,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2640, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2637
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color140',
  *     '#af87d7',
@@ -23926,7 +23926,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2644
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color141',
  *     '#af87ff',
@@ -23950,13 +23950,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2647, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2644
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color141',
  *     '#af87ff',
@@ -23969,7 +23969,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2651
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color142',
  *     '#afaf00',
@@ -23993,13 +23993,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2654, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2651
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color142',
  *     '#afaf00',
@@ -24012,7 +24012,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2658
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color143',
  *     '#afaf5f',
@@ -24036,13 +24036,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2661, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2658
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color143',
  *     '#afaf5f',
@@ -24055,7 +24055,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2665
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color144',
  *     '#afaf87',
@@ -24079,13 +24079,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2668, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2665
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color144',
  *     '#afaf87',
@@ -24098,7 +24098,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2672
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color145',
  *     '#afafaf',
@@ -24122,13 +24122,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2675, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2672
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color145',
  *     '#afafaf',
@@ -24141,7 +24141,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2679
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color146',
  *     '#afafd7',
@@ -24165,13 +24165,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2682, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2679
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color146',
  *     '#afafd7',
@@ -24184,7 +24184,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2686
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color147',
  *     '#afafff',
@@ -24208,13 +24208,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2689, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2686
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color147',
  *     '#afafff',
@@ -24227,7 +24227,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2693
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color148',
  *     '#afd700',
@@ -24251,13 +24251,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2696, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2693
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color148',
  *     '#afd700',
@@ -24270,7 +24270,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2700
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color149',
  *     '#afd75f',
@@ -24294,13 +24294,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2703, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2700
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color149',
  *     '#afd75f',
@@ -24313,7 +24313,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2707
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color150',
  *     '#afd787',
@@ -24337,13 +24337,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2710, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2707
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color150',
  *     '#afd787',
@@ -24356,7 +24356,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2714
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color151',
  *     '#afd7af',
@@ -24380,13 +24380,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2717, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2714
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color151',
  *     '#afd7af',
@@ -24399,7 +24399,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2721
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color152',
  *     '#afd7d7',
@@ -24423,13 +24423,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2724, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2721
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color152',
  *     '#afd7d7',
@@ -24442,7 +24442,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2728
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color153',
  *     '#afd7ff',
@@ -24466,13 +24466,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2731, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2728
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color153',
  *     '#afd7ff',
@@ -24485,7 +24485,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2735
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color154',
  *     '#afff00',
@@ -24509,13 +24509,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2738, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2735
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color154',
  *     '#afff00',
@@ -24528,7 +24528,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2742
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color155',
  *     '#afff5f',
@@ -24552,13 +24552,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2745, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2742
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color155',
  *     '#afff5f',
@@ -24571,7 +24571,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2749
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color156',
  *     '#afff87',
@@ -24595,13 +24595,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2752, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2749
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color156',
  *     '#afff87',
@@ -24614,7 +24614,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2756
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color157',
  *     '#afffaf',
@@ -24638,13 +24638,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2759, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2756
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color157',
  *     '#afffaf',
@@ -24657,7 +24657,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2763
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color158',
  *     '#afffd7',
@@ -24681,13 +24681,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2766, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2763
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color158',
  *     '#afffd7',
@@ -24700,7 +24700,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2770
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color159',
  *     '#afffff',
@@ -24724,13 +24724,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2773, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2770
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color159',
  *     '#afffff',
@@ -24743,7 +24743,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2777
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color160',
  *     '#d70000',
@@ -24767,13 +24767,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2780, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2777
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color160',
  *     '#d70000',
@@ -24786,7 +24786,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2784
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color161',
  *     '#d7005f',
@@ -24810,13 +24810,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2787, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2784
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color161',
  *     '#d7005f',
@@ -24829,7 +24829,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2791
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color162',
  *     '#d70087',
@@ -24853,13 +24853,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2794, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2791
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color162',
  *     '#d70087',
@@ -24872,7 +24872,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2798
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color163',
  *     '#d700af',
@@ -24896,13 +24896,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2801, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2798
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color163',
  *     '#d700af',
@@ -24915,7 +24915,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2805
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color164',
  *     '#d700d7',
@@ -24939,13 +24939,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2808, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2805
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color164',
  *     '#d700d7',
@@ -24958,7 +24958,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2812
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color165',
  *     '#d700ff',
@@ -24982,13 +24982,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2815, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2812
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color165',
  *     '#d700ff',
@@ -25001,7 +25001,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2819
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color166',
  *     '#d75f00',
@@ -25025,13 +25025,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2822, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2819
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color166',
  *     '#d75f00',
@@ -25044,7 +25044,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2826
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color167',
  *     '#d75f5f',
@@ -25068,13 +25068,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2829, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2826
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color167',
  *     '#d75f5f',
@@ -25087,7 +25087,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2833
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color168',
  *     '#d75f87',
@@ -25111,13 +25111,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2836, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2833
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color168',
  *     '#d75f87',
@@ -25130,7 +25130,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2840
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color169',
  *     '#d75faf',
@@ -25154,13 +25154,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2843, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2840
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color169',
  *     '#d75faf',
@@ -25173,7 +25173,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2847
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color170',
  *     '#d75fd7',
@@ -25197,13 +25197,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2850, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2847
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color170',
  *     '#d75fd7',
@@ -25216,7 +25216,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2854
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color171',
  *     '#d75fff',
@@ -25240,13 +25240,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2857, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2854
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color171',
  *     '#d75fff',
@@ -25259,7 +25259,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2861
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color172',
  *     '#d78700',
@@ -25283,13 +25283,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2864, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2861
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color172',
  *     '#d78700',
@@ -25302,7 +25302,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2868
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color173',
  *     '#d7875f',
@@ -25326,13 +25326,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2871, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2868
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color173',
  *     '#d7875f',
@@ -25345,7 +25345,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2875
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color174',
  *     '#d78787',
@@ -25369,13 +25369,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2878, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2875
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color174',
  *     '#d78787',
@@ -25388,7 +25388,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2882
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color175',
  *     '#d787af',
@@ -25412,13 +25412,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2885, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2882
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color175',
  *     '#d787af',
@@ -25431,7 +25431,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2889
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color176',
  *     '#d787d7',
@@ -25455,13 +25455,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2892, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2889
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color176',
  *     '#d787d7',
@@ -25474,7 +25474,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2896
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color177',
  *     '#d787ff',
@@ -25498,13 +25498,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2899, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2896
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color177',
  *     '#d787ff',
@@ -25517,7 +25517,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2903
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color178',
  *     '#d7af00',
@@ -25541,13 +25541,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2906, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2903
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color178',
  *     '#d7af00',
@@ -25560,7 +25560,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2910
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color179',
  *     '#d7af5f',
@@ -25584,13 +25584,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2913, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2910
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color179',
  *     '#d7af5f',
@@ -25603,7 +25603,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2917
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color180',
  *     '#d7af87',
@@ -25627,13 +25627,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2920, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2917
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color180',
  *     '#d7af87',
@@ -25646,7 +25646,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2924
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color181',
  *     '#d7afaf',
@@ -25670,13 +25670,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2927, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2924
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color181',
  *     '#d7afaf',
@@ -25689,7 +25689,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2931
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color182',
  *     '#d7afd7',
@@ -25713,13 +25713,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2934, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2931
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color182',
  *     '#d7afd7',
@@ -25732,7 +25732,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2938
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color183',
  *     '#d7afff',
@@ -25756,13 +25756,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2941, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2938
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color183',
  *     '#d7afff',
@@ -25775,7 +25775,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2945
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color184',
  *     '#d7d700',
@@ -25799,13 +25799,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2948, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2945
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color184',
  *     '#d7d700',
@@ -25818,7 +25818,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2952
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color185',
  *     '#d7d75f',
@@ -25842,13 +25842,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2955, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2952
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color185',
  *     '#d7d75f',
@@ -25861,7 +25861,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2959
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color186',
  *     '#d7d787',
@@ -25885,13 +25885,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2962, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2959
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color186',
  *     '#d7d787',
@@ -25904,7 +25904,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2966
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color187',
  *     '#d7d7af',
@@ -25928,13 +25928,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2969, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2966
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color187',
  *     '#d7d7af',
@@ -25947,7 +25947,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2973
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color188',
  *     '#d7d7d7',
@@ -25971,13 +25971,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2976, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2973
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color188',
  *     '#d7d7d7',
@@ -25990,7 +25990,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2980
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color189',
  *     '#d7d7ff',
@@ -26014,13 +26014,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2983, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2980
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color189',
  *     '#d7d7ff',
@@ -26033,7 +26033,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2987
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color190',
  *     '#d7ff00',
@@ -26057,13 +26057,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2990, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2987
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color190',
  *     '#d7ff00',
@@ -26076,7 +26076,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":2994
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color191',
  *     '#d7ff5f',
@@ -26100,13 +26100,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 2997, __pyx_L1_error)
 
   /* "smelly/options/definition.py":2994
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color191',
  *     '#d7ff5f',
@@ -26119,7 +26119,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3001
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color192',
  *     '#d7ff87',
@@ -26143,13 +26143,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3004, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3001
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color192',
  *     '#d7ff87',
@@ -26162,7 +26162,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3008
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color193',
  *     '#d7ffaf',
@@ -26186,13 +26186,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3011, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3008
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color193',
  *     '#d7ffaf',
@@ -26205,7 +26205,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3015
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color194',
  *     '#d7ffd7',
@@ -26229,13 +26229,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3018, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3015
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color194',
  *     '#d7ffd7',
@@ -26248,7 +26248,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3022
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color195',
  *     '#d7ffff',
@@ -26272,13 +26272,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3025, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3022
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color195',
  *     '#d7ffff',
@@ -26291,7 +26291,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3029
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color196',
  *     '#ff0000',
@@ -26315,13 +26315,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3032, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3029
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color196',
  *     '#ff0000',
@@ -26334,7 +26334,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3036
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color197',
  *     '#ff005f',
@@ -26358,13 +26358,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3039, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3036
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color197',
  *     '#ff005f',
@@ -26377,7 +26377,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3043
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color198',
  *     '#ff0087',
@@ -26401,13 +26401,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3046, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3043
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color198',
  *     '#ff0087',
@@ -26420,7 +26420,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3050
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color199',
  *     '#ff00af',
@@ -26444,13 +26444,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3053, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3050
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color199',
  *     '#ff00af',
@@ -26463,7 +26463,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3057
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color200',
  *     '#ff00d7',
@@ -26487,13 +26487,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3060, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3057
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color200',
  *     '#ff00d7',
@@ -26506,7 +26506,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3064
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color201',
  *     '#ff00ff',
@@ -26530,13 +26530,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3067, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3064
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color201',
  *     '#ff00ff',
@@ -26549,7 +26549,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3071
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color202',
  *     '#ff5f00',
@@ -26573,13 +26573,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3074, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3071
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color202',
  *     '#ff5f00',
@@ -26592,7 +26592,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3078
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color203',
  *     '#ff5f5f',
@@ -26616,13 +26616,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3081, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3078
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color203',
  *     '#ff5f5f',
@@ -26635,7 +26635,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3085
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color204',
  *     '#ff5f87',
@@ -26659,13 +26659,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3088, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3085
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color204',
  *     '#ff5f87',
@@ -26678,7 +26678,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3092
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color205',
  *     '#ff5faf',
@@ -26702,13 +26702,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3095, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3092
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color205',
  *     '#ff5faf',
@@ -26721,7 +26721,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3099
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color206',
  *     '#ff5fd7',
@@ -26745,13 +26745,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3102, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3099
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color206',
  *     '#ff5fd7',
@@ -26764,7 +26764,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3106
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color207',
  *     '#ff5fff',
@@ -26788,13 +26788,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3109, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3106
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color207',
  *     '#ff5fff',
@@ -26807,7 +26807,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3113
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color208',
  *     '#ff8700',
@@ -26831,13 +26831,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3116, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3113
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color208',
  *     '#ff8700',
@@ -26850,7 +26850,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3120
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color209',
  *     '#ff875f',
@@ -26874,13 +26874,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3123, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3120
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color209',
  *     '#ff875f',
@@ -26893,7 +26893,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3127
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color210',
  *     '#ff8787',
@@ -26917,13 +26917,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3130, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3127
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color210',
  *     '#ff8787',
@@ -26936,7 +26936,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3134
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color211',
  *     '#ff87af',
@@ -26960,13 +26960,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3137, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3134
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color211',
  *     '#ff87af',
@@ -26979,7 +26979,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3141
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color212',
  *     '#ff87d7',
@@ -27003,13 +27003,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3144, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3141
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color212',
  *     '#ff87d7',
@@ -27022,7 +27022,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3148
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color213',
  *     '#ff87ff',
@@ -27046,13 +27046,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3151, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3148
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color213',
  *     '#ff87ff',
@@ -27065,7 +27065,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3155
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color214',
  *     '#ffaf00',
@@ -27089,13 +27089,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3158, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3155
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color214',
  *     '#ffaf00',
@@ -27108,7 +27108,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3162
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color215',
  *     '#ffaf5f',
@@ -27132,13 +27132,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3165, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3162
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color215',
  *     '#ffaf5f',
@@ -27151,7 +27151,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3169
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color216',
  *     '#ffaf87',
@@ -27175,13 +27175,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3172, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3169
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color216',
  *     '#ffaf87',
@@ -27194,7 +27194,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3176
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color217',
  *     '#ffafaf',
@@ -27218,13 +27218,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3179, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3176
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color217',
  *     '#ffafaf',
@@ -27237,7 +27237,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3183
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color218',
  *     '#ffafd7',
@@ -27261,13 +27261,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3186, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3183
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color218',
  *     '#ffafd7',
@@ -27280,7 +27280,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3190
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color219',
  *     '#ffafff',
@@ -27304,13 +27304,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3193, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3190
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color219',
  *     '#ffafff',
@@ -27323,7 +27323,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3197
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color220',
  *     '#ffd700',
@@ -27347,13 +27347,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3200, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3197
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color220',
  *     '#ffd700',
@@ -27366,7 +27366,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3204
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color221',
  *     '#ffd75f',
@@ -27390,13 +27390,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3207, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3204
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color221',
  *     '#ffd75f',
@@ -27409,7 +27409,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3211
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color222',
  *     '#ffd787',
@@ -27433,13 +27433,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3214, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3211
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color222',
  *     '#ffd787',
@@ -27452,7 +27452,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3218
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color223',
  *     '#ffd7af',
@@ -27476,13 +27476,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3221, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3218
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color223',
  *     '#ffd7af',
@@ -27495,7 +27495,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3225
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color224',
  *     '#ffd7d7',
@@ -27519,13 +27519,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3228, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3225
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color224',
  *     '#ffd7d7',
@@ -27538,7 +27538,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3232
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color225',
  *     '#ffd7ff',
@@ -27562,13 +27562,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3235, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3232
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color225',
  *     '#ffd7ff',
@@ -27581,7 +27581,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3239
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color226',
  *     '#ffff00',
@@ -27605,13 +27605,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3242, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3239
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color226',
  *     '#ffff00',
@@ -27624,7 +27624,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3246
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color227',
  *     '#ffff5f',
@@ -27648,13 +27648,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3249, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3246
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color227',
  *     '#ffff5f',
@@ -27667,7 +27667,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3253
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color228',
  *     '#ffff87',
@@ -27691,13 +27691,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3256, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3253
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color228',
  *     '#ffff87',
@@ -27710,7 +27710,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3260
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color229',
  *     '#ffffaf',
@@ -27734,13 +27734,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3263, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3260
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color229',
  *     '#ffffaf',
@@ -27753,7 +27753,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3267
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color230',
  *     '#ffffd7',
@@ -27777,13 +27777,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3270, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3267
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color230',
  *     '#ffffd7',
@@ -27796,7 +27796,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3274
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color231',
  *     '#ffffff',
@@ -27820,13 +27820,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3277, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3274
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color231',
  *     '#ffffff',
@@ -27839,7 +27839,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3281
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color232',
  *     '#080808',
@@ -27863,13 +27863,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3284, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3281
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color232',
  *     '#080808',
@@ -27882,7 +27882,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3288
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color233',
  *     '#121212',
@@ -27906,13 +27906,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3291, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3288
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color233',
  *     '#121212',
@@ -27925,7 +27925,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3295
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color234',
  *     '#1c1c1c',
@@ -27949,13 +27949,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3298, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3295
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color234',
  *     '#1c1c1c',
@@ -27968,7 +27968,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3302
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color235',
  *     '#262626',
@@ -27992,13 +27992,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3305, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3302
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color235',
  *     '#262626',
@@ -28011,7 +28011,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3309
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color236',
  *     '#303030',
@@ -28035,13 +28035,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3312, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3309
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color236',
  *     '#303030',
@@ -28054,7 +28054,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3316
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color237',
  *     '#3a3a3a',
@@ -28078,13 +28078,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3319, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3316
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color237',
  *     '#3a3a3a',
@@ -28097,7 +28097,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3323
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color238',
  *     '#444444',
@@ -28121,13 +28121,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3326, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3323
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color238',
  *     '#444444',
@@ -28140,7 +28140,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3330
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color239',
  *     '#4e4e4e',
@@ -28164,13 +28164,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3333, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3330
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color239',
  *     '#4e4e4e',
@@ -28183,7 +28183,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3337
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color240',
  *     '#585858',
@@ -28207,13 +28207,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3340, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3337
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color240',
  *     '#585858',
@@ -28226,7 +28226,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3344
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color241',
  *     '#626262',
@@ -28250,13 +28250,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3347, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3344
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color241',
  *     '#626262',
@@ -28269,7 +28269,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3351
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color242',
  *     '#6c6c6c',
@@ -28293,13 +28293,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3354, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3351
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color242',
  *     '#6c6c6c',
@@ -28312,7 +28312,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color243',
  *     '#767676',
@@ -28336,13 +28336,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3361, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3358
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color243',
  *     '#767676',
@@ -28355,7 +28355,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3365
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color244',
  *     '#808080',
@@ -28379,13 +28379,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3368, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3365
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color244',
  *     '#808080',
@@ -28398,7 +28398,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3372
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color245',
  *     '#8a8a8a',
@@ -28422,13 +28422,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3375, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3372
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color245',
  *     '#8a8a8a',
@@ -28441,7 +28441,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3379
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color246',
  *     '#949494',
@@ -28465,13 +28465,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3382, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3379
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color246',
  *     '#949494',
@@ -28484,7 +28484,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3386
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color247',
  *     '#9e9e9e',
@@ -28508,13 +28508,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3389, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3386
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color247',
  *     '#9e9e9e',
@@ -28527,7 +28527,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3393
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color248',
  *     '#a8a8a8',
@@ -28551,13 +28551,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3396, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3393
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color248',
  *     '#a8a8a8',
@@ -28570,7 +28570,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3400
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color249',
  *     '#b2b2b2',
@@ -28594,13 +28594,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3403, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3400
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color249',
  *     '#b2b2b2',
@@ -28613,7 +28613,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3407
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color250',
  *     '#bcbcbc',
@@ -28637,13 +28637,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3410, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3407
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color250',
  *     '#bcbcbc',
@@ -28656,7 +28656,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3414
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color251',
  *     '#c6c6c6',
@@ -28680,13 +28680,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3417, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3414
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color251',
  *     '#c6c6c6',
@@ -28699,7 +28699,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3421
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color252',
  *     '#d0d0d0',
@@ -28723,13 +28723,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3424, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3421
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color252',
  *     '#d0d0d0',
@@ -28742,7 +28742,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3428
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color253',
  *     '#dadada',
@@ -28766,13 +28766,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3431, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3428
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color253',
  *     '#dadada',
@@ -28785,7 +28785,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3435
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color254',
  *     '#e4e4e4',
@@ -28809,13 +28809,13 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color',
  *     documented=False,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_documented, Py_False) < 0) __PYX_ERR(0, 3438, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3435
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color254',
  *     '#e4e4e4',
@@ -28828,7 +28828,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3442
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color255',
  *     '#eeeeee',
@@ -28858,7 +28858,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3442
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color255',
  *     '#eeeeee',
@@ -28874,7 +28874,7 @@ if (!__Pyx_RefNanny) {
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
  * egr()  # }}}
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_egr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 3448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -28887,8 +28887,8 @@ if (!__Pyx_RefNanny) {
  * )
  * egr()  # }}}
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 3449, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -28898,10 +28898,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":3453
- * 
+ *
  * # advanced {{{
  * agr('advanced', 'Advanced')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 3453, __pyx_L1_error)
@@ -28913,7 +28913,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3455
  * agr('advanced', 'Advanced')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell',
  *     '.',
@@ -28934,7 +28934,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3455
  * agr('advanced', 'Advanced')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell',
  *     '.',
@@ -28947,7 +28947,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3467
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'editor',
  *     '.',
@@ -28968,7 +28968,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3467
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'editor',
  *     '.',
@@ -28981,7 +28981,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3483
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'close_on_child_death',
  *     'no',
@@ -29004,7 +29004,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3483
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'close_on_child_death',
  *     'no',
@@ -29017,7 +29017,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3499
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+remote_control_password',
  *     '',
@@ -29048,7 +29048,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3499
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+remote_control_password',
  *     '',
@@ -29061,7 +29061,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3538
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_remote_control',
  *     'no',
@@ -29083,7 +29083,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3538
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_remote_control',
  *     'no',
@@ -29096,7 +29096,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3571
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'listen_on',
  *     'none',
@@ -29117,7 +29117,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3571
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'listen_on',
  *     'none',
@@ -29130,7 +29130,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3591
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+env',
  *     '',
@@ -29161,7 +29161,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3591
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+env',
  *     '',
@@ -29174,7 +29174,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3610
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+watcher',
  *     '',
@@ -29205,7 +29205,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3610
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+watcher',
  *     '',
@@ -29218,7 +29218,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3624
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+exe_search_path',
  *     '',
@@ -29249,7 +29249,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3624
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+exe_search_path',
  *     '',
@@ -29262,7 +29262,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3650
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'update_check_interval',
  *     '24',
@@ -29284,7 +29284,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3650
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'update_check_interval',
  *     '24',
@@ -29297,7 +29297,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3664
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'startup_session',
  *     'none',
@@ -29319,7 +29319,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3664
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'startup_session',
  *     'none',
@@ -29332,7 +29332,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3678
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clipboard_control',
  *     'write-clipboard write-primary read-clipboard-ask read-primary-ask',
@@ -29354,7 +29354,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3678
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clipboard_control',
  *     'write-clipboard write-primary read-clipboard-ask read-primary-ask',
@@ -29367,7 +29367,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3695
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clipboard_max_size',
  *     '512',
@@ -29389,7 +29389,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3695
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clipboard_max_size',
  *     '512',
@@ -29402,7 +29402,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3706
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'file_transfer_confirmation_bypass',
  *     '',
@@ -29423,7 +29423,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3706
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'file_transfer_confirmation_bypass',
  *     '',
@@ -29436,7 +29436,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3718
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_hyperlinks',
  *     'yes',
@@ -29459,7 +29459,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3718
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_hyperlinks',
  *     'yes',
@@ -29472,7 +29472,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3732
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell_integration',
  *     'enabled',
@@ -29494,7 +29494,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3732
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell_integration',
  *     'enabled',
@@ -29507,7 +29507,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3747
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_cloning',
  *     'ask',
@@ -29529,7 +29529,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3747
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'allow_cloning',
  *     'ask',
@@ -29542,7 +29542,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3761
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clone_source_strategies',
  *     'venv,conda,env_var,path',
@@ -29564,7 +29564,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3761
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clone_source_strategies',
  *     'venv,conda,env_var,path',
@@ -29577,7 +29577,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3787
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'term',
  *     'xterm-smelly',
@@ -29598,7 +29598,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3787
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'term',
  *     'xterm-smelly',
@@ -29613,8 +29613,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_egr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 3802, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -29624,10 +29624,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":3806
- * 
+ *
  * # os {{{
  * agr('os', 'OS specific tweaks')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 3806, __pyx_L1_error)
@@ -29639,7 +29639,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3808
  * agr('os', 'OS specific tweaks')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wayland_titlebar_color',
  *     'system',
@@ -29661,7 +29661,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3808
  * agr('os', 'OS specific tweaks')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'wayland_titlebar_color',
  *     'system',
@@ -29674,7 +29674,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3821
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_titlebar_color',
  *     'system',
@@ -29696,7 +29696,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3821
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_titlebar_color',
  *     'system',
@@ -29709,7 +29709,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3840
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_option_as_alt',
  *     'no',
@@ -29732,7 +29732,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3840
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_option_as_alt',
  *     'no',
@@ -29745,7 +29745,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3861
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_hide_from_tasks',
  *     'no',
@@ -29768,7 +29768,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3861
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_hide_from_tasks',
  *     'no',
@@ -29781,7 +29781,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3872
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_quit_when_last_window_closed',
  *     'no',
@@ -29804,7 +29804,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3872
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_quit_when_last_window_closed',
  *     'no',
@@ -29817,7 +29817,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3884
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_window_resizable',
  *     'yes',
@@ -29840,7 +29840,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3884
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_window_resizable',
  *     'yes',
@@ -29853,7 +29853,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3896
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_thicken_font',
  *     '0',
@@ -29876,7 +29876,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3896
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_thicken_font',
  *     '0',
@@ -29889,7 +29889,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3910
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_traditional_fullscreen',
  *     'no',
@@ -29912,7 +29912,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3910
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_traditional_fullscreen',
  *     'no',
@@ -29925,7 +29925,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3921
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_show_window_title_in',
  *     'all',
@@ -29948,7 +29948,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3921
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_show_window_title_in',
  *     'all',
@@ -29961,7 +29961,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3937
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_menubar_title_max_length',
  *     '0',
@@ -29984,7 +29984,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3937
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_menubar_title_max_length',
  *     '0',
@@ -29997,7 +29997,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3948
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_custom_beam_cursor',
  *     'no',
@@ -30019,7 +30019,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3948
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_custom_beam_cursor',
  *     'no',
@@ -30032,7 +30032,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3960
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_colorspace',
  *     'srgb',
@@ -30055,7 +30055,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":3960
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'macos_colorspace',
  *     'srgb',
@@ -30067,8 +30067,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/options/definition.py":3977
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'linux_display_server',
  *     'auto',
@@ -30089,8 +30089,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_long_text, __pyx_kp_s_Choose_between_Wayland_and_X11) < 0) __PYX_ERR(0, 3980, __pyx_L1_error)
 
   /* "smelly/options/definition.py":3977
- * 
- * 
+ *
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'linux_display_server',
  *     'auto',
@@ -30105,8 +30105,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 3988, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -30116,7 +30116,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":3992
- * 
+ *
  * # shortcuts {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'shortcuts',
@@ -30131,7 +30131,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4062
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'smelly_mod',
  *     'ctrl+shift',
@@ -30153,7 +30153,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4062
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'smelly_mod',
  *     'ctrl+shift',
@@ -30166,7 +30166,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4072
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clear_all_shortcuts',
  *     'no',
@@ -30188,7 +30188,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4072
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'clear_all_shortcuts',
  *     'no',
@@ -30201,7 +30201,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4082
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+action_alias',
  *     'launch_tab launch --type=tab --cwd=current',
@@ -30232,7 +30232,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4082
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+action_alias',
  *     'launch_tab launch --type=tab --cwd=current',
@@ -30245,7 +30245,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4102
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+kitten_alias',
  *     'hints hints --hints-offset=0',
@@ -30276,7 +30276,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4102
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+kitten_alias',
  *     'hints hints --hints-offset=0',
@@ -30288,10 +30288,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/options/definition.py":4119
- * 
+ *
  * # shortcuts.clipboard {{{
  * agr('shortcuts.clipboard', 'Clipboard')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_agr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4119, __pyx_L1_error)
@@ -30303,7 +30303,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4121
  * agr('shortcuts.clipboard', 'Clipboard')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Copy to clipboard',
  *     'copy_to_clipboard smelly_mod+c copy_to_clipboard',
@@ -30324,7 +30324,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4121
  * agr('shortcuts.clipboard', 'Clipboard')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Copy to clipboard',
  *     'copy_to_clipboard smelly_mod+c copy_to_clipboard',
@@ -30350,7 +30350,7 @@ if (!__Pyx_RefNanny) {
  *     'copy_to_clipboard cmd+c copy_to_clipboard',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -30371,7 +30371,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4137
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Paste from clipboard',
  *     'paste_from_clipboard smelly_mod+v paste_from_clipboard',
@@ -30398,7 +30398,7 @@ if (!__Pyx_RefNanny) {
  *     'paste_from_clipboard cmd+v paste_from_clipboard',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -30419,7 +30419,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4147
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Paste from selection',
  *     'paste_from_selection smelly_mod+s paste_from_selection',
@@ -30447,7 +30447,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4156
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Pass selection to program',
  *     'pass_selection_to_program smelly_mod+o pass_selection_to_program',
@@ -30468,7 +30468,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4156
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Pass selection to program',
  *     'pass_selection_to_program smelly_mod+o pass_selection_to_program',
@@ -30483,8 +30483,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -30494,10 +30494,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":4177
- * 
+ *
  * # shortcuts.scrolling {{{
  * agr('shortcuts.scrolling', 'Scrolling')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4177, __pyx_L1_error)
@@ -30509,7 +30509,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4179
  * agr('shortcuts.scrolling', 'Scrolling')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll line up',
  *     'scroll_line_up smelly_mod+up scroll_line_up',
@@ -30584,7 +30584,7 @@ if (!__Pyx_RefNanny) {
  *     'scroll_line_up cmd+up scroll_line_up',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4195, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -30605,7 +30605,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4198
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll line down',
  *     'scroll_line_down smelly_mod+down scroll_line_down',
@@ -30680,7 +30680,7 @@ if (!__Pyx_RefNanny) {
  *     'scroll_line_down cmd+down scroll_line_down',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -30701,7 +30701,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4217
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll page up',
  *     'scroll_page_up smelly_mod+page_up scroll_page_up',
@@ -30728,7 +30728,7 @@ if (!__Pyx_RefNanny) {
  *     'scroll_page_up cmd+page_up scroll_page_up',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -30749,7 +30749,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4227
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll page down',
  *     'scroll_page_down smelly_mod+page_down scroll_page_down',
@@ -30776,7 +30776,7 @@ if (!__Pyx_RefNanny) {
  *     'scroll_page_down cmd+page_down scroll_page_down',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4234, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -30797,7 +30797,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4237
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to top',
  *     'scroll_home smelly_mod+home scroll_home',
@@ -30824,7 +30824,7 @@ if (!__Pyx_RefNanny) {
  *     'scroll_home cmd+home scroll_home',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -30845,7 +30845,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4247
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to bottom',
  *     'scroll_end smelly_mod+end scroll_end',
@@ -30872,7 +30872,7 @@ if (!__Pyx_RefNanny) {
  *     'scroll_end cmd+end scroll_end',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -30893,7 +30893,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4257
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous shell prompt',
  *     'scroll_to_previous_prompt smelly_mod+z scroll_to_prompt -1',
@@ -30914,7 +30914,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4257
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous shell prompt',
  *     'scroll_to_previous_prompt smelly_mod+z scroll_to_prompt -1',
@@ -30927,9 +30927,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4267
  * )
- * 
+ *
  * map('Scroll to next shell prompt', 'scroll_to_next_prompt smelly_mod+x scroll_to_prompt 1')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4267, __pyx_L1_error)
@@ -30941,7 +30941,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4269
  * map('Scroll to next shell prompt', 'scroll_to_next_prompt smelly_mod+x scroll_to_prompt 1')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Browse scrollback buffer in pager',
  *     'show_scrollback smelly_mod+h show_scrollback',
@@ -30962,7 +30962,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4269
  * map('Scroll to next shell prompt', 'scroll_to_next_prompt smelly_mod+x scroll_to_prompt 1')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Browse scrollback buffer in pager',
  *     'show_scrollback smelly_mod+h show_scrollback',
@@ -30975,7 +30975,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4285
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Browse output of the last shell command in pager',
  *     'show_last_command_output smelly_mod+g show_last_command_output',
@@ -30996,7 +30996,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4285
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Browse output of the last shell command in pager',
  *     'show_last_command_output smelly_mod+g show_last_command_output',
@@ -31011,8 +31011,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4311, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31022,10 +31022,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":4315
- * 
+ *
  * # shortcuts.window {{{
  * agr('shortcuts.window', 'Window management')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4315, __pyx_L1_error)
@@ -31037,7 +31037,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4317
  * agr('shortcuts.window', 'Window management')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New window',
  *     'new_window smelly_mod+enter new_window',
@@ -31058,7 +31058,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4317
  * agr('shortcuts.window', 'Window management')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New window',
  *     'new_window smelly_mod+enter new_window',
@@ -31084,7 +31084,7 @@ if (!__Pyx_RefNanny) {
  *     'new_window cmd+enter new_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4350, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31105,7 +31105,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4353
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New OS window',
  *     'new_os_window smelly_mod+n new_os_window',
@@ -31126,7 +31126,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4353
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New OS window',
  *     'new_os_window smelly_mod+n new_os_window',
@@ -31152,7 +31152,7 @@ if (!__Pyx_RefNanny) {
  *     'new_os_window cmd+n new_os_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4365, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31173,7 +31173,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4368
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Close window',
  *     'close_window smelly_mod+w close_window',
@@ -31200,7 +31200,7 @@ if (!__Pyx_RefNanny) {
  *     'close_window shift+cmd+d close_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4375, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31221,7 +31221,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4378
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Next window',
  *     'next_window smelly_mod+] next_window',
@@ -31235,7 +31235,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4383
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Previous window',
  *     'previous_window smelly_mod+[ previous_window',
@@ -31249,7 +31249,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4388
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move window forward',
  *     'move_window_forward smelly_mod+f move_window_forward',
@@ -31263,7 +31263,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4393
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move window backward',
  *     'move_window_backward smelly_mod+b move_window_backward',
@@ -31277,7 +31277,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4398
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move window to top',
  *     'move_window_to_top smelly_mod+` move_window_to_top',
@@ -31291,7 +31291,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4403
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Start resizing window',
  *     'start_resizing_window smelly_mod+r start_resizing_window',
@@ -31318,7 +31318,7 @@ if (!__Pyx_RefNanny) {
  *     'start_resizing_window cmd+r start_resizing_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4410, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31339,7 +31339,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4413
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'First window',
  *     'first_window smelly_mod+1 first_window',
@@ -31366,7 +31366,7 @@ if (!__Pyx_RefNanny) {
  *     'first_window cmd+1 first_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4420, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31387,7 +31387,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4423
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Second window',
  *     'second_window smelly_mod+2 second_window',
@@ -31414,7 +31414,7 @@ if (!__Pyx_RefNanny) {
  *     'second_window cmd+2 second_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4430, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -31435,7 +31435,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4433
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Third window',
  *     'third_window smelly_mod+3 third_window',
@@ -31462,7 +31462,7 @@ if (!__Pyx_RefNanny) {
  *     'third_window cmd+3 third_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4440, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31483,7 +31483,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4443
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Fourth window',
  *     'fourth_window smelly_mod+4 fourth_window',
@@ -31510,7 +31510,7 @@ if (!__Pyx_RefNanny) {
  *     'fourth_window cmd+4 fourth_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4450, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31531,7 +31531,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4453
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Fifth window',
  *     'fifth_window smelly_mod+5 fifth_window',
@@ -31558,7 +31558,7 @@ if (!__Pyx_RefNanny) {
  *     'fifth_window cmd+5 fifth_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4460, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -31579,7 +31579,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4463
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Sixth window',
  *     'sixth_window smelly_mod+6 sixth_window',
@@ -31606,7 +31606,7 @@ if (!__Pyx_RefNanny) {
  *     'sixth_window cmd+6 sixth_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4470, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31627,7 +31627,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4473
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Seventh window',
  *     'seventh_window smelly_mod+7 seventh_window',
@@ -31654,7 +31654,7 @@ if (!__Pyx_RefNanny) {
  *     'seventh_window cmd+7 seventh_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4480, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31675,7 +31675,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4483
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Eight window',
  *     'eighth_window smelly_mod+8 eighth_window',
@@ -31702,7 +31702,7 @@ if (!__Pyx_RefNanny) {
  *     'eighth_window cmd+8 eighth_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4490, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -31723,7 +31723,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4493
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Ninth window',
  *     'ninth_window smelly_mod+9 ninth_window',
@@ -31750,7 +31750,7 @@ if (!__Pyx_RefNanny) {
  *     'ninth_window cmd+9 ninth_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4500, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31771,7 +31771,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4503
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Tenth window',
  *     'tenth_window smelly_mod+0 tenth_window',
@@ -31785,7 +31785,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4508
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Visually select and focus window',
  *     'focus_visible_window smelly_mod+f7 focus_visible_window',
@@ -31806,7 +31806,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4508
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Visually select and focus window',
  *     'focus_visible_window smelly_mod+f7 focus_visible_window',
@@ -31855,8 +31855,8 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4525, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31866,10 +31866,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":4529
- * 
+ *
  * # shortcuts.tab {{{
  * agr('shortcuts.tab', 'Tab management')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_agr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4529, __pyx_L1_error)
@@ -31881,7 +31881,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4531
  * agr('shortcuts.tab', 'Tab management')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Next tab',
  *     'next_tab smelly_mod+right next_tab',
@@ -31943,7 +31943,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4545
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Previous tab',
  *     'previous_tab smelly_mod+left previous_tab',
@@ -32005,7 +32005,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4559
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'New tab',
  *     'new_tab smelly_mod+t new_tab',
@@ -32032,7 +32032,7 @@ if (!__Pyx_RefNanny) {
  *     'new_tab cmd+t new_tab',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4566, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -32053,7 +32053,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4569
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Close tab',
  *     'close_tab smelly_mod+q close_tab',
@@ -32080,7 +32080,7 @@ if (!__Pyx_RefNanny) {
  *     'close_tab cmd+w close_tab',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -32101,7 +32101,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4579
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Close OS window',
  *     'close_os_window shift+cmd+w close_os_window',
@@ -32114,7 +32114,7 @@ if (!__Pyx_RefNanny) {
  *     'close_os_window shift+cmd+w close_os_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4582, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -32122,7 +32122,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4579
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Close OS window',
  *     'close_os_window shift+cmd+w close_os_window',
@@ -32135,7 +32135,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4585
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move tab forward',
  *     'move_tab_forward smelly_mod+. move_tab_forward',
@@ -32149,7 +32149,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4590
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Move tab backward',
  *     'move_tab_backward smelly_mod+, move_tab_backward',
@@ -32163,7 +32163,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4595
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Set tab title',
  *     'set_tab_title smelly_mod+alt+t set_tab_title',
@@ -32224,10 +32224,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/options/definition.py":4625
- * 
+ *
  * # shortcuts.layout {{{
  * agr('shortcuts.layout', 'Layout management')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_agr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4625, __pyx_L1_error)
@@ -32239,7 +32239,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4627
  * agr('shortcuts.layout', 'Layout management')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Next layout',
  *     'next_layout smelly_mod+l next_layout',
@@ -32266,7 +32266,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/options/definition.py":4652
- * 
+ *
  * # shortcuts.fonts {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'shortcuts.fonts',
@@ -32281,7 +32281,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4661
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Increase font size',
  *     'increase_font_size smelly_mod+equal change_font_size all +2.0',
@@ -32404,7 +32404,7 @@ if (!__Pyx_RefNanny) {
  *     'increase_font_size shift+cmd+equal change_font_size all +2.0',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4686, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -32425,7 +32425,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4689
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Decrease font size',
  *     'decrease_font_size smelly_mod+minus change_font_size all -2.0',
@@ -32500,7 +32500,7 @@ if (!__Pyx_RefNanny) {
  *     'decrease_font_size shift+cmd+minus change_font_size all -2.0',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4705, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -32521,7 +32521,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4708
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset font size',
  *     'reset_font_size smelly_mod+backspace change_font_size all 0',
@@ -32582,7 +32582,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/options/definition.py":4731
- * 
+ *
  * # shortcuts.selection {{{
  * agr(             # <<<<<<<<<<<<<<
  *     'shortcuts.selection',
@@ -32597,7 +32597,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4740
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open URL',
  *     'open_url smelly_mod+e open_url_with_hints',
@@ -32618,7 +32618,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4740
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open URL',
  *     'open_url smelly_mod+e open_url_with_hints',
@@ -32631,7 +32631,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4749
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected path',
  *     'insert_selected_path smelly_mod+p>f kitten hints --type path --program -',
@@ -32652,7 +32652,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4749
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected path',
  *     'insert_selected_path smelly_mod+p>f kitten hints --type path --program -',
@@ -32665,7 +32665,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4759
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open selected path',
  *     'open_selected_path smelly_mod+p>shift+f kitten hints --type path',
@@ -32678,7 +32678,7 @@ if (!__Pyx_RefNanny) {
  *     'open_selected_path smelly_mod+p>shift+f kitten hints --type path',
  *     long_text='Select a path/filename and open it with the default open program.',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4762, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -32686,7 +32686,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4759
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open selected path',
  *     'open_selected_path smelly_mod+p>shift+f kitten hints --type path',
@@ -32699,7 +32699,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4765
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected line',
  *     'insert_selected_line smelly_mod+p>l kitten hints --type line --program -',
@@ -32720,7 +32720,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4765
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected line',
  *     'insert_selected_line smelly_mod+p>l kitten hints --type line --program -',
@@ -32733,9 +32733,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4774
  * )
- * 
+ *
  * map('Insert selected word', 'insert_selected_word smelly_mod+p>w kitten hints --type word --program -', long_text='Select words and insert into terminal.')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4774, __pyx_L1_error)
@@ -32751,7 +32751,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4776
  * map('Insert selected word', 'insert_selected_word smelly_mod+p>w kitten hints --type word --program -', long_text='Select words and insert into terminal.')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected hash',
  *     'insert_selected_hash smelly_mod+p>h kitten hints --type hash --program -',
@@ -32772,7 +32772,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4776
  * map('Insert selected word', 'insert_selected_word smelly_mod+p>w kitten hints --type word --program -', long_text='Select words and insert into terminal.')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Insert selected hash',
  *     'insert_selected_hash smelly_mod+p>h kitten hints --type hash --program -',
@@ -32785,7 +32785,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4785
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the selected file at the selected line',
  *     'goto_file_line smelly_mod+p>n kitten hints --type linenum',
@@ -32806,7 +32806,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4785
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the selected file at the selected line',
  *     'goto_file_line smelly_mod+p>n kitten hints --type linenum',
@@ -32819,7 +32819,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4794
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the selected hyperlink',
  *     'open_selected_hyperlink smelly_mod+p>y kitten hints --type hyperlink',
@@ -32840,7 +32840,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4794
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the selected hyperlink',
  *     'open_selected_hyperlink smelly_mod+p>y kitten hints --type hyperlink',
@@ -32866,10 +32866,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/options/definition.py":4811
- * 
+ *
  * # shortcuts.misc {{{
  * agr('shortcuts.misc', 'Miscellaneous')             # <<<<<<<<<<<<<<
- * 
+ *
  * map('Show documentation', 'show_smelly_doc smelly_mod+f1 show_smelly_doc overview')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_agr); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4811, __pyx_L1_error)
@@ -32881,9 +32881,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4813
  * agr('shortcuts.misc', 'Miscellaneous')
- * 
+ *
  * map('Show documentation', 'show_smelly_doc smelly_mod+f1 show_smelly_doc overview')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4813, __pyx_L1_error)
@@ -32895,7 +32895,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4815
  * map('Show documentation', 'show_smelly_doc smelly_mod+f1 show_smelly_doc overview')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Toggle fullscreen',
  *     'toggle_fullscreen smelly_mod+f11 toggle_fullscreen',
@@ -32922,7 +32922,7 @@ if (!__Pyx_RefNanny) {
  *     'toggle_fullscreen ctrl+cmd+f toggle_fullscreen',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4822, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -32943,7 +32943,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4825
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Toggle maximized',
  *     'toggle_maximized smelly_mod+f10 toggle_maximized',
@@ -32957,7 +32957,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4830
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Toggle macOS secure keyboard entry',
  *     'toggle_macos_secure_keyboard_entry opt+cmd+s toggle_macos_secure_keyboard_entry',
@@ -32970,7 +32970,7 @@ if (!__Pyx_RefNanny) {
  *     'toggle_macos_secure_keyboard_entry opt+cmd+s toggle_macos_secure_keyboard_entry',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4833, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -32978,7 +32978,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4830
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Toggle macOS secure keyboard entry',
  *     'toggle_macos_secure_keyboard_entry opt+cmd+s toggle_macos_secure_keyboard_entry',
@@ -32991,7 +32991,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4836
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Unicode input',
  *     'input_unicode_character smelly_mod+u kitten unicode_input',
@@ -33018,7 +33018,7 @@ if (!__Pyx_RefNanny) {
  *     'input_unicode_character ctrl+cmd+space kitten unicode_input',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4843, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -33039,7 +33039,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4846
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Edit config file',
  *     'edit_config_file smelly_mod+f2 edit_config_file',
@@ -33066,7 +33066,7 @@ if (!__Pyx_RefNanny) {
  *     'edit_config_file cmd+, edit_config_file',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4853, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -33087,7 +33087,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4856
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the smelly command shell',
  *     'smelly_shell smelly_mod+escape smelly_shell window',
@@ -33108,7 +33108,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4856
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open the smelly command shell',
  *     'smelly_shell smelly_mod+escape smelly_shell window',
@@ -33121,7 +33121,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4865
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Increase background opacity',
  *     'increase_background_opacity smelly_mod+a>m set_background_opacity +0.1',
@@ -33135,7 +33135,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4870
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Decrease background opacity',
  *     'decrease_background_opacity smelly_mod+a>l set_background_opacity -0.1',
@@ -33149,7 +33149,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4875
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Make background fully opaque',
  *     'full_background_opacity smelly_mod+a>1 set_background_opacity 1',
@@ -33163,7 +33163,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4880
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset background opacity',
  *     'reset_background_opacity smelly_mod+a>d set_background_opacity default',
@@ -33177,7 +33177,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4885
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset the terminal',
  *     'reset_terminal smelly_mod+delete clear_terminal reset active',
@@ -33190,7 +33190,7 @@ if (!__Pyx_RefNanny) {
  *     'reset_terminal smelly_mod+delete clear_terminal reset active',
  *     long_text='''             # <<<<<<<<<<<<<<
  * You can create shortcuts to clear/reset the terminal. For example::
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4888, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -33198,7 +33198,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4885
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset the terminal',
  *     'reset_terminal smelly_mod+delete clear_terminal reset active',
@@ -33211,7 +33211,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4921
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset the terminal',
  *     'reset_terminal opt+cmd+r clear_terminal reset active',
@@ -33224,7 +33224,7 @@ if (!__Pyx_RefNanny) {
  *     'reset_terminal opt+cmd+r clear_terminal reset active',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4924, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -33232,7 +33232,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4921
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reset the terminal',
  *     'reset_terminal opt+cmd+r clear_terminal reset active',
@@ -33245,7 +33245,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4927
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Clear up to cursor line',
  *     'clear_terminal_and_scrollback cmd+k clear_terminal to_cursor active',
@@ -33258,7 +33258,7 @@ if (!__Pyx_RefNanny) {
  *     'clear_terminal_and_scrollback cmd+k clear_terminal to_cursor active',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 4930, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -33266,7 +33266,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4927
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Clear up to cursor line',
  *     'clear_terminal_and_scrollback cmd+k clear_terminal to_cursor active',
@@ -33279,7 +33279,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4933
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reload smelly.conf',
  *     'reload_config_file smelly_mod+f5 load_config_file',
@@ -33300,7 +33300,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4933
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Reload smelly.conf',
  *     'reload_config_file smelly_mod+f5 load_config_file',
@@ -33313,9 +33313,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4950
  * )
- * 
+ *
  * map('Reload smelly.conf', 'reload_config_file ctrl+cmd+, load_config_file', only='macos')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4950, __pyx_L1_error)
@@ -33331,7 +33331,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4952
  * map('Reload smelly.conf', 'reload_config_file ctrl+cmd+, load_config_file', only='macos')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Debug smelly configuration',
  *     'debug_config smelly_mod+f6 debug_config',
@@ -33352,7 +33352,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4952
  * map('Reload smelly.conf', 'reload_config_file ctrl+cmd+, load_config_file', only='macos')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Debug smelly configuration',
  *     'debug_config smelly_mod+f6 debug_config',
@@ -33365,10 +33365,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4961
  * )
- * 
+ *
  * map('Debug smelly configuration', 'debug_config opt+cmd+, debug_config', only='macos')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 4961, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -33382,8 +33382,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/options/definition.py":4964
- * 
- * 
+ *
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Send arbitrary text on key presses',
  *     'send_text ctrl+shift+alt+h send_text all Hello World',
@@ -33404,8 +33404,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_long_text, __pyx_kp_s_You_can_tell_smelly_to_send_arb) < 0) __PYX_ERR(0, 4967, __pyx_L1_error)
 
   /* "smelly/options/definition.py":4964
- * 
- * 
+ *
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Send arbitrary text on key presses',
  *     'send_text ctrl+shift+alt+h send_text all Hello World',
@@ -33418,7 +33418,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4998
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open smelly Website',
  *     f'open_smelly_website shift+cmd+/ open_url {website_url()}',
@@ -33447,7 +33447,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4998
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open smelly Website',
  *     f'open_smelly_website shift+cmd+/ open_url {website_url()}',
@@ -33466,7 +33466,7 @@ if (!__Pyx_RefNanny) {
  *     f'open_smelly_website shift+cmd+/ open_url {website_url()}',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 5001, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -33474,7 +33474,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":4998
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Open smelly Website',
  *     f'open_smelly_website shift+cmd+/ open_url {website_url()}',
@@ -33488,7 +33488,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5004
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Hide macOS smelly application',
  *     'hide_macos_app cmd+h hide_macos_app',
@@ -33501,7 +33501,7 @@ if (!__Pyx_RefNanny) {
  *     'hide_macos_app cmd+h hide_macos_app',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 5007, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -33509,7 +33509,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5004
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Hide macOS smelly application',
  *     'hide_macos_app cmd+h hide_macos_app',
@@ -33522,7 +33522,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5010
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Hide macOS other applications',
  *     'hide_macos_other_apps opt+cmd+h hide_macos_other_apps',
@@ -33535,7 +33535,7 @@ if (!__Pyx_RefNanny) {
  *     'hide_macos_other_apps opt+cmd+h hide_macos_other_apps',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 5013, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -33543,7 +33543,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5010
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Hide macOS other applications',
  *     'hide_macos_other_apps opt+cmd+h hide_macos_other_apps',
@@ -33556,7 +33556,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5016
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Minimize macOS window',
  *     'minimize_macos_window cmd+m minimize_macos_window',
@@ -33569,7 +33569,7 @@ if (!__Pyx_RefNanny) {
  *     'minimize_macos_window cmd+m minimize_macos_window',
  *     only='macos',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 5019, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -33577,7 +33577,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5016
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Minimize macOS window',
  *     'minimize_macos_window cmd+m minimize_macos_window',
@@ -33590,7 +33590,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5022
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Quit smelly',
  *     'quit cmd+q quit',
@@ -33611,7 +33611,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/definition.py":5022
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Quit smelly',
  *     'quit cmd+q quit',
@@ -33650,7 +33650,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/options/definition.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);

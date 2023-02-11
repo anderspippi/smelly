@@ -1369,7 +1369,7 @@ static PyObject *__pyx_pf_5welly_4diff_8__init___10GlobalData___init__(CYTHON_UN
  *     def __init__(self) -> None:
  *         self.title = ''             # <<<<<<<<<<<<<<
  *         self.cmd = ''
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_title, __pyx_kp_s_) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
 
@@ -1377,8 +1377,8 @@ static PyObject *__pyx_pf_5welly_4diff_8__init___10GlobalData___init__(CYTHON_UN
  *     def __init__(self) -> None:
  *         self.title = ''
  *         self.cmd = ''             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cmd, __pyx_kp_s_) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
 
@@ -1807,8 +1807,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/__init__.py":7
- * 
- * 
+ *
+ *
  * global_data = GlobalData             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_GlobalData); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)

@@ -1697,7 +1697,7 @@ static PyObject *__pyx_codeobj__31;
 /* Late includes */
 
 /* "welly/ssh/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def askpass(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
@@ -1832,7 +1832,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_askpass(CYTHON_UNU
  *         if val not in self.choices_for_askpass:
  *             raise ValueError(f"The value {val} is not a valid choice for askpass")             # <<<<<<<<<<<<<<
  *         ans["askpass"] = val
- * 
+ *
  */
     __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -1876,13 +1876,13 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_askpass(CYTHON_UNU
  *         if val not in self.choices_for_askpass:
  *             raise ValueError(f"The value {val} is not a valid choice for askpass")
  *         ans["askpass"] = val             # <<<<<<<<<<<<<<
- * 
+ *
  *     choices_for_askpass = frozenset(('unless-set', 'ssh', 'native'))
  */
   if (unlikely(PyObject_SetItem(__pyx_v_ans, __pyx_n_s_askpass, __pyx_v_val) < 0)) __PYX_ERR(0, 14, __pyx_L1_error)
 
   /* "welly/ssh/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def askpass(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
@@ -1906,10 +1906,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_askpass(CYTHON_UNU
 
 /* "welly/ssh/options/parse.py":18
  *     choices_for_askpass = frozenset(('unless-set', 'ssh', 'native'))
- * 
+ *
  *     def color_scheme(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['color_scheme'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2003,10 +2003,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_2color_scheme(CYTH
   __Pyx_RefNannySetupContext("color_scheme", 0);
 
   /* "welly/ssh/options/parse.py":19
- * 
+ *
  *     def color_scheme(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['color_scheme'] = str(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
@@ -2016,10 +2016,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_2color_scheme(CYTH
 
   /* "welly/ssh/options/parse.py":18
  *     choices_for_askpass = frozenset(('unless-set', 'ssh', 'native'))
- * 
+ *
  *     def color_scheme(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['color_scheme'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2037,7 +2037,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_2color_scheme(CYTH
 
 /* "welly/ssh/options/parse.py":21
  *         ans['color_scheme'] = str(val)
- * 
+ *
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in copy(val, ans["copy"]):
  *             ans["copy"][k] = v
@@ -2144,11 +2144,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_4copy(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("copy", 0);
 
   /* "welly/ssh/options/parse.py":22
- * 
+ *
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in copy(val, ans["copy"]):             # <<<<<<<<<<<<<<
  *             ans["copy"][k] = v
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2251,11 +2251,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_4copy(CYTHON_UNUSE
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_3);
@@ -2296,7 +2296,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_4copy(CYTHON_UNUSE
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in copy(val, ans["copy"]):
  *             ans["copy"][k] = v             # <<<<<<<<<<<<<<
- * 
+ *
  *     def cwd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
     __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_ans, __pyx_n_s_copy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -2305,18 +2305,18 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_4copy(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/ssh/options/parse.py":22
- * 
+ *
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in copy(val, ans["copy"]):             # <<<<<<<<<<<<<<
  *             ans["copy"][k] = v
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/options/parse.py":21
  *         ans['color_scheme'] = str(val)
- * 
+ *
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in copy(val, ans["copy"]):
  *             ans["copy"][k] = v
@@ -2343,10 +2343,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_4copy(CYTHON_UNUSE
 
 /* "welly/ssh/options/parse.py":25
  *             ans["copy"][k] = v
- * 
+ *
  *     def cwd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['cwd'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2440,10 +2440,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_6cwd(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("cwd", 0);
 
   /* "welly/ssh/options/parse.py":26
- * 
+ *
  *     def cwd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['cwd'] = str(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
@@ -2453,10 +2453,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_6cwd(CYTHON_UNUSED
 
   /* "welly/ssh/options/parse.py":25
  *             ans["copy"][k] = v
- * 
+ *
  *     def cwd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['cwd'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2474,7 +2474,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_6cwd(CYTHON_UNUSED
 
 /* "welly/ssh/options/parse.py":28
  *         ans['cwd'] = str(val)
- * 
+ *
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in env(val, ans["env"]):
  *             ans["env"][k] = v
@@ -2581,11 +2581,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_8env(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("env", 0);
 
   /* "welly/ssh/options/parse.py":29
- * 
+ *
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in env(val, ans["env"]):             # <<<<<<<<<<<<<<
  *             ans["env"][k] = v
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_env); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2688,11 +2688,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_8env(CYTHON_UNUSED
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_3);
@@ -2733,7 +2733,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_8env(CYTHON_UNUSED
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in env(val, ans["env"]):
  *             ans["env"][k] = v             # <<<<<<<<<<<<<<
- * 
+ *
  *     def hostname(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
     __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_ans, __pyx_n_s_env); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
@@ -2742,18 +2742,18 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_8env(CYTHON_UNUSED
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/ssh/options/parse.py":29
- * 
+ *
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in env(val, ans["env"]):             # <<<<<<<<<<<<<<
  *             ans["env"][k] = v
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/options/parse.py":28
  *         ans['cwd'] = str(val)
- * 
+ *
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in env(val, ans["env"]):
  *             ans["env"][k] = v
@@ -2780,10 +2780,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_8env(CYTHON_UNUSED
 
 /* "welly/ssh/options/parse.py":32
  *             ans["env"][k] = v
- * 
+ *
  *     def hostname(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         hostname(val, ans)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2881,10 +2881,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_10hostname(CYTHON_
   __Pyx_RefNannySetupContext("hostname", 0);
 
   /* "welly/ssh/options/parse.py":33
- * 
+ *
  *     def hostname(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         hostname(val, ans)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def interpreter(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_hostname); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
@@ -2938,10 +2938,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_10hostname(CYTHON_
 
   /* "welly/ssh/options/parse.py":32
  *             ans["env"][k] = v
- * 
+ *
  *     def hostname(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         hostname(val, ans)
- * 
+ *
  */
 
   /* function exit code */
@@ -2962,10 +2962,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_10hostname(CYTHON_
 
 /* "welly/ssh/options/parse.py":35
  *         hostname(val, ans)
- * 
+ *
  *     def interpreter(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['interpreter'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3059,10 +3059,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_12interpreter(CYTH
   __Pyx_RefNannySetupContext("interpreter", 0);
 
   /* "welly/ssh/options/parse.py":36
- * 
+ *
  *     def interpreter(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['interpreter'] = str(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def login_shell(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
@@ -3072,10 +3072,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_12interpreter(CYTH
 
   /* "welly/ssh/options/parse.py":35
  *         hostname(val, ans)
- * 
+ *
  *     def interpreter(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['interpreter'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3093,10 +3093,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_12interpreter(CYTH
 
 /* "welly/ssh/options/parse.py":38
  *         ans['interpreter'] = str(val)
- * 
+ *
  *     def login_shell(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['login_shell'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3190,10 +3190,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_14login_shell(CYTH
   __Pyx_RefNannySetupContext("login_shell", 0);
 
   /* "welly/ssh/options/parse.py":39
- * 
+ *
  *     def login_shell(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['login_shell'] = str(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remote_dir(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -3203,10 +3203,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_14login_shell(CYTH
 
   /* "welly/ssh/options/parse.py":38
  *         ans['interpreter'] = str(val)
- * 
+ *
  *     def login_shell(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['login_shell'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3224,10 +3224,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_14login_shell(CYTH
 
 /* "welly/ssh/options/parse.py":41
  *         ans['login_shell'] = str(val)
- * 
+ *
  *     def remote_dir(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['remote_dir'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3321,10 +3321,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_16remote_dir(CYTHO
   __Pyx_RefNannySetupContext("remote_dir", 0);
 
   /* "welly/ssh/options/parse.py":42
- * 
+ *
  *     def remote_dir(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['remote_dir'] = str(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remote_smelly(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -3334,10 +3334,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_16remote_dir(CYTHO
 
   /* "welly/ssh/options/parse.py":41
  *         ans['login_shell'] = str(val)
- * 
+ *
  *     def remote_dir(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['remote_dir'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3355,7 +3355,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_16remote_dir(CYTHO
 
 /* "welly/ssh/options/parse.py":44
  *         ans['remote_dir'] = str(val)
- * 
+ *
  *     def remote_smelly(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
  *         if val not in self.choices_for_remote_smelly:
@@ -3458,7 +3458,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_18remote_smelly(CY
   __Pyx_INCREF(__pyx_v_val);
 
   /* "welly/ssh/options/parse.py":45
- * 
+ *
  *     def remote_smelly(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         val = val.lower()             # <<<<<<<<<<<<<<
  *         if val not in self.choices_for_remote_smelly:
@@ -3489,7 +3489,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_18remote_smelly(CY
  *         if val not in self.choices_for_remote_smelly:
  *             raise ValueError(f"The value {val} is not a valid choice for remote_smelly")             # <<<<<<<<<<<<<<
  *         ans["remote_smelly"] = val
- * 
+ *
  */
     __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3533,14 +3533,14 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_18remote_smelly(CY
  *         if val not in self.choices_for_remote_smelly:
  *             raise ValueError(f"The value {val} is not a valid choice for remote_smelly")
  *         ans["remote_smelly"] = val             # <<<<<<<<<<<<<<
- * 
+ *
  *     choices_for_remote_smelly = frozenset(('if-needed', 'no', 'yes'))
  */
   if (unlikely(PyObject_SetItem(__pyx_v_ans, __pyx_n_s_remote_smelly, __pyx_v_val) < 0)) __PYX_ERR(0, 48, __pyx_L1_error)
 
   /* "welly/ssh/options/parse.py":44
  *         ans['remote_dir'] = str(val)
- * 
+ *
  *     def remote_smelly(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
  *         if val not in self.choices_for_remote_smelly:
@@ -3563,10 +3563,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_18remote_smelly(CY
 
 /* "welly/ssh/options/parse.py":52
  *     choices_for_remote_smelly = frozenset(('if-needed', 'no', 'yes'))
- * 
+ *
  *     def share_connections(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3662,10 +3662,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_20share_connection
   __Pyx_RefNannySetupContext("share_connections", 0);
 
   /* "welly/ssh/options/parse.py":53
- * 
+ *
  *     def share_connections(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['share_connections'] = to_bool(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def shell_integration(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_bool); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
@@ -3690,10 +3690,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_20share_connection
 
   /* "welly/ssh/options/parse.py":52
  *     choices_for_remote_smelly = frozenset(('if-needed', 'no', 'yes'))
- * 
+ *
  *     def share_connections(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3713,10 +3713,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_20share_connection
 
 /* "welly/ssh/options/parse.py":55
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  *     def shell_integration(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['shell_integration'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3810,11 +3810,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_22shell_integratio
   __Pyx_RefNannySetupContext("shell_integration", 0);
 
   /* "welly/ssh/options/parse.py":56
- * 
+ *
  *     def shell_integration(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['shell_integration'] = str(val)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3823,10 +3823,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_22shell_integratio
 
   /* "welly/ssh/options/parse.py":55
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  *     def shell_integration(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['shell_integration'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3843,8 +3843,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_6Parser_22shell_integratio
 }
 
 /* "welly/ssh/options/parse.py":59
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'copy': {},
@@ -3875,7 +3875,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_create_result_dict(CYTHON_
   __Pyx_RefNannySetupContext("create_result_dict", 0);
 
   /* "welly/ssh/options/parse.py":60
- * 
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:
  *     return {             # <<<<<<<<<<<<<<
  *         'copy': {},
@@ -3902,7 +3902,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_create_result_dict(CYTHON_
  *         'copy': {},
  *         'env': {},             # <<<<<<<<<<<<<<
  *     }
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3913,8 +3913,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_create_result_dict(CYTHON_
   goto __pyx_L0;
 
   /* "welly/ssh/options/parse.py":59
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'copy': {},
@@ -3933,8 +3933,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_create_result_dict(CYTHON_
 }
 
 /* "welly/ssh/options/parse.py":69
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -4031,7 +4031,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_2merge_result_dicts(CYTHON
   __Pyx_RefNannySetupContext("merge_result_dicts", 0);
 
   /* "welly/ssh/options/parse.py":70
- * 
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:
  *     ans = {}             # <<<<<<<<<<<<<<
  *     for k, v in defaults.items():
@@ -4116,11 +4116,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_2merge_result_dicts(CYTHON
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -4164,7 +4164,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_2merge_result_dicts(CYTHON
  *             ans[k] = merge_dicts(v, vals.get(k, {}))
  *         elif k in actions:
  */
-    __pyx_t_9 = PyDict_Check(__pyx_v_v); 
+    __pyx_t_9 = PyDict_Check(__pyx_v_v);
     __pyx_t_10 = (__pyx_t_9 != 0);
     if (__pyx_t_10) {
 
@@ -4381,7 +4381,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_2merge_result_dicts(CYTHON
  *         else:
  *             ans[k] = vals.get(k, v)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     /*else*/ {
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_vals, __pyx_n_s_get); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
@@ -4450,8 +4450,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_2merge_result_dicts(CYTHON
  *         else:
  *             ans[k] = vals.get(k, v)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -4459,8 +4459,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_2merge_result_dicts(CYTHON
   goto __pyx_L0;
 
   /* "welly/ssh/options/parse.py":69
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -4488,8 +4488,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_2merge_result_dicts(CYTHON
 }
 
 /* "welly/ssh/options/parse.py":84
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -4594,7 +4594,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_4parse_conf_item(CYTHON_UN
   __Pyx_RefNannySetupContext("parse_conf_item", 0);
 
   /* "welly/ssh/options/parse.py":85
- * 
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:
  *     func = getattr(parser, key, None)             # <<<<<<<<<<<<<<
  *     if func is not None:
@@ -4705,8 +4705,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5parse_4parse_conf_item(CYTHON_UN
   goto __pyx_L0;
 
   /* "welly/ssh/options/parse.py":84
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -4862,7 +4862,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/ssh/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def askpass(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
@@ -4875,9 +4875,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":16
  *         ans["askpass"] = val
- * 
+ *
  *     choices_for_askpass = frozenset(('unless-set', 'ssh', 'native'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def color_scheme(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_tuple__3 = PyTuple_Pack(3, __pyx_kp_s_unless_set, __pyx_n_s_ssh, __pyx_n_s_native); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 16, __pyx_L1_error)
@@ -4886,10 +4886,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":18
  *     choices_for_askpass = frozenset(('unless-set', 'ssh', 'native'))
- * 
+ *
  *     def color_scheme(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['color_scheme'] = str(val)
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
@@ -4898,7 +4898,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":21
  *         ans['color_scheme'] = str(val)
- * 
+ *
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in copy(val, ans["copy"]):
  *             ans["copy"][k] = v
@@ -4910,10 +4910,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":25
  *             ans["copy"][k] = v
- * 
+ *
  *     def cwd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['cwd'] = str(val)
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -4922,7 +4922,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":28
  *         ans['cwd'] = str(val)
- * 
+ *
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in env(val, ans["env"]):
  *             ans["env"][k] = v
@@ -4934,10 +4934,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":32
  *             ans["env"][k] = v
- * 
+ *
  *     def hostname(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         hostname(val, ans)
- * 
+ *
  */
   __pyx_tuple__12 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
@@ -4946,10 +4946,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":35
  *         hostname(val, ans)
- * 
+ *
  *     def interpreter(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['interpreter'] = str(val)
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -4958,10 +4958,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":38
  *         ans['interpreter'] = str(val)
- * 
+ *
  *     def login_shell(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['login_shell'] = str(val)
- * 
+ *
  */
   __pyx_tuple__16 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
@@ -4970,10 +4970,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":41
  *         ans['login_shell'] = str(val)
- * 
+ *
  *     def remote_dir(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['remote_dir'] = str(val)
- * 
+ *
  */
   __pyx_tuple__18 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
@@ -4982,7 +4982,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":44
  *         ans['remote_dir'] = str(val)
- * 
+ *
  *     def remote_smelly(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
  *         if val not in self.choices_for_remote_smelly:
@@ -4994,9 +4994,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":50
  *         ans["remote_smelly"] = val
- * 
+ *
  *     choices_for_remote_smelly = frozenset(('if-needed', 'no', 'yes'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def share_connections(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_tuple__22 = PyTuple_Pack(3, __pyx_kp_s_if_needed, __pyx_n_s_no, __pyx_n_s_yes); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 50, __pyx_L1_error)
@@ -5005,10 +5005,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":52
  *     choices_for_remote_smelly = frozenset(('if-needed', 'no', 'yes'))
- * 
+ *
  *     def share_connections(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  */
   __pyx_tuple__23 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
@@ -5017,10 +5017,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/parse.py":55
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  *     def shell_integration(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['shell_integration'] = str(val)
- * 
+ *
  */
   __pyx_tuple__25 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
@@ -5028,8 +5028,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_options_parse_py, __pyx_n_s_shell_integration, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 55, __pyx_L1_error)
 
   /* "welly/ssh/options/parse.py":59
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'copy': {},
@@ -5037,8 +5037,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_options_parse_py, __pyx_n_s_create_result_dict, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "welly/ssh/options/parse.py":69
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -5049,8 +5049,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_options_parse_py, __pyx_n_s_merge_result_dicts, 69, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 69, __pyx_L1_error)
 
   /* "welly/ssh/options/parse.py":84
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -5343,7 +5343,7 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/ssh/options/parse.py":4
- * 
+ *
  * # isort: skip_file
  * import typing             # <<<<<<<<<<<<<<
  * from wellies.ssh.options.utils import copy, env, hostname
@@ -5359,7 +5359,7 @@ if (!__Pyx_RefNanny) {
  * import typing
  * from wellies.ssh.options.utils import copy, env, hostname             # <<<<<<<<<<<<<<
  * from smelly.conf.utils import merge_dicts, to_bool
- * 
+ *
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5393,8 +5393,8 @@ if (!__Pyx_RefNanny) {
  * import typing
  * from wellies.ssh.options.utils import copy, env, hostname
  * from smelly.conf.utils import merge_dicts, to_bool             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5418,8 +5418,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/options/parse.py":9
- * 
- * 
+ *
+ *
  * class Parser:             # <<<<<<<<<<<<<<
  *     def askpass(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         val = val.lower()
@@ -5428,7 +5428,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "welly/ssh/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def askpass(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
@@ -5471,9 +5471,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":16
  *         ans["askpass"] = val
- * 
+ *
  *     choices_for_askpass = frozenset(('unless-set', 'ssh', 'native'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def color_scheme(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_5 = __Pyx_PyFrozenSet_New(__pyx_tuple__3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 16, __pyx_L1_error)
@@ -5483,10 +5483,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":18
  *     choices_for_askpass = frozenset(('unless-set', 'ssh', 'native'))
- * 
+ *
  *     def color_scheme(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['color_scheme'] = str(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -5525,7 +5525,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":21
  *         ans['color_scheme'] = str(val)
- * 
+ *
  *     def copy(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in copy(val, ans["copy"]):
  *             ans["copy"][k] = v
@@ -5567,10 +5567,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":25
  *             ans["copy"][k] = v
- * 
+ *
  *     def cwd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['cwd'] = str(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5609,7 +5609,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":28
  *         ans['cwd'] = str(val)
- * 
+ *
  *     def env(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in env(val, ans["env"]):
  *             ans["env"][k] = v
@@ -5651,10 +5651,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":32
  *             ans["env"][k] = v
- * 
+ *
  *     def hostname(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         hostname(val, ans)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -5693,10 +5693,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":35
  *         hostname(val, ans)
- * 
+ *
  *     def interpreter(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['interpreter'] = str(val)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5735,10 +5735,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":38
  *         ans['interpreter'] = str(val)
- * 
+ *
  *     def login_shell(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['login_shell'] = str(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5777,10 +5777,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":41
  *         ans['login_shell'] = str(val)
- * 
+ *
  *     def remote_dir(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['remote_dir'] = str(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5819,7 +5819,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":44
  *         ans['remote_dir'] = str(val)
- * 
+ *
  *     def remote_smelly(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         val = val.lower()
  *         if val not in self.choices_for_remote_smelly:
@@ -5861,9 +5861,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":50
  *         ans["remote_smelly"] = val
- * 
+ *
  *     choices_for_remote_smelly = frozenset(('if-needed', 'no', 'yes'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def share_connections(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_4 = __Pyx_PyFrozenSet_New(__pyx_tuple__22); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
@@ -5873,10 +5873,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":52
  *     choices_for_remote_smelly = frozenset(('if-needed', 'no', 'yes'))
- * 
+ *
  *     def share_connections(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5915,10 +5915,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":55
  *         ans['share_connections'] = to_bool(val)
- * 
+ *
  *     def shell_integration(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['shell_integration'] = str(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5956,8 +5956,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/options/parse.py":9
- * 
- * 
+ *
+ *
  * class Parser:             # <<<<<<<<<<<<<<
  *     def askpass(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         val = val.lower()
@@ -5969,8 +5969,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/options/parse.py":59
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'copy': {},
@@ -6009,11 +6009,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/ssh/options/parse.py":66
- * 
- * 
+ *
+ *
  * actions: typing.FrozenSet[str] = frozenset(())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_PyFrozenSet_New(((PyObject *)NULL)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -6021,8 +6021,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/ssh/options/parse.py":69
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -6109,11 +6109,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/options/parse.py":81
- * 
- * 
+ *
+ *
  * parser = Parser()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Parser); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6124,8 +6124,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/ssh/options/parse.py":84
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -6168,7 +6168,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/parse.py":1
  * # generated by gen-config.py DO NOT edit             # <<<<<<<<<<<<<<
- * 
+ *
  * # isort: skip_file
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)

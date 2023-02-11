@@ -971,11 +971,11 @@ struct __pyx_obj_5welly_4diff_6config___pyx_scope_struct_1_init_config;
 struct __pyx_obj_5welly_4diff_6config___pyx_scope_struct_2_genexpr;
 
 /* "welly/diff/config.py":43
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  */
 struct __pyx_obj_5welly_4diff_6config___pyx_scope_struct__load_config {
   PyObject_HEAD
@@ -985,8 +985,8 @@ struct __pyx_obj_5welly_4diff_6config___pyx_scope_struct__load_config {
 
 
 /* "welly/diff/config.py":63
- * 
- * 
+ *
+ *
  * def init_config(args: DiffCLIOptions) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf, args.config))
  *     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
@@ -1779,8 +1779,8 @@ static PyObject *__pyx_codeobj__12;
 /* Late includes */
 
 /* "welly/diff/config.py":23
- * 
- * 
+ *
+ *
  * def set_formats(opts: DiffOptions) -> None:             # <<<<<<<<<<<<<<
  *     formats['text'] = '48' + color_as_sgr(opts.background)
  *     formats['title'] = '38' + color_as_sgr(opts.title_fg) + ';48' + color_as_sgr(opts.title_bg) + ';1'
@@ -1815,7 +1815,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_set_formats(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("set_formats", 0);
 
   /* "welly/diff/config.py":24
- * 
+ *
  * def set_formats(opts: DiffOptions) -> None:
  *     formats['text'] = '48' + color_as_sgr(opts.background)             # <<<<<<<<<<<<<<
  *     formats['title'] = '38' + color_as_sgr(opts.title_fg) + ';48' + color_as_sgr(opts.title_bg) + ';1'
@@ -2395,7 +2395,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_set_formats(CYTHON_UNUSED PyObjec
  *     formats['hunk'] = '38' + color_as_sgr(opts.margin_fg) + ';48' + color_as_sgr(opts.hunk_bg)
  *     formats['removed_highlight'] = '48' + color_as_sgr(opts.highlight_removed_bg)             # <<<<<<<<<<<<<<
  *     formats['added_highlight'] = '48' + color_as_sgr(opts.highlight_added_bg)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_color_as_sgr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2430,8 +2430,8 @@ static PyObject *__pyx_pf_5welly_4diff_6config_set_formats(CYTHON_UNUSED PyObjec
  *     formats['hunk'] = '38' + color_as_sgr(opts.margin_fg) + ';48' + color_as_sgr(opts.hunk_bg)
  *     formats['removed_highlight'] = '48' + color_as_sgr(opts.highlight_removed_bg)
  *     formats['added_highlight'] = '48' + color_as_sgr(opts.highlight_added_bg)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_color_as_sgr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2463,8 +2463,8 @@ static PyObject *__pyx_pf_5welly_4diff_6config_set_formats(CYTHON_UNUSED PyObjec
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/config.py":23
- * 
- * 
+ *
+ *
  * def set_formats(opts: DiffOptions) -> None:             # <<<<<<<<<<<<<<
  *     formats['text'] = '48' + color_as_sgr(opts.background)
  *     formats['title'] = '38' + color_as_sgr(opts.title_fg) + ';48' + color_as_sgr(opts.title_bg) + ';1'
@@ -2488,11 +2488,11 @@ static PyObject *__pyx_pf_5welly_4diff_6config_set_formats(CYTHON_UNUSED PyObjec
 }
 
 /* "welly/diff/config.py":43
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2562,7 +2562,7 @@ static PyObject *__pyx_pw_5welly_4diff_6config_3load_config(PyObject *__pyx_self
 
 /* "welly/diff/config.py":46
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = create_result_dict()
  *         parse_config_base(
@@ -2601,7 +2601,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_11load_config_parse_config(PyObje
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "welly/diff/config.py":47
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:
  *         ans: Dict[str, Any] = create_result_dict()             # <<<<<<<<<<<<<<
  *         parse_config_base(
@@ -2707,7 +2707,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_11load_config_parse_config(PyObje
  *             ans,
  *         )
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2717,7 +2717,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_11load_config_parse_config(PyObje
 
   /* "welly/diff/config.py":46
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = create_result_dict()
  *         parse_config_base(
@@ -2739,11 +2739,11 @@ static PyObject *__pyx_pf_5welly_4diff_6config_11load_config_parse_config(PyObje
 }
 
 /* "welly/diff/config.py":43
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  */
 
 static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_overrides, PyObject *__pyx_v_paths) {
@@ -2776,10 +2776,10 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
   __Pyx_INCREF(__pyx_v_paths);
 
   /* "welly/diff/config.py":44
- * 
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None) -> DiffOptions:
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 44, __pyx_L1_error)
@@ -2817,7 +2817,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
 
   /* "welly/diff/config.py":46
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = create_result_dict()
  *         parse_config_base(
@@ -2858,7 +2858,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
 
   /* "welly/diff/config.py":55
  *         return ans
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()             # <<<<<<<<<<<<<<
  *     opts_dict, paths = _load_config(defaults, parse_config, merge_result_dicts, *paths, overrides=overrides)
  *     opts = DiffOptions(opts_dict)
@@ -2877,7 +2877,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
   __pyx_t_1 = 0;
 
   /* "welly/diff/config.py":56
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  *     opts_dict, paths = _load_config(defaults, parse_config, merge_result_dicts, *paths, overrides=overrides)             # <<<<<<<<<<<<<<
  *     opts = DiffOptions(opts_dict)
@@ -2922,11 +2922,11 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -3004,7 +3004,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
  *     opts.config_paths = paths
  *     opts.config_overrides = overrides             # <<<<<<<<<<<<<<
  *     return opts
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_opts, __pyx_n_s_config_overrides, __pyx_v_overrides) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
 
@@ -3012,8 +3012,8 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
  *     opts.config_paths = paths
  *     opts.config_overrides = overrides
  *     return opts             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_opts);
@@ -3021,11 +3021,11 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "welly/diff/config.py":43
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  */
 
   /* function exit code */
@@ -3050,8 +3050,8 @@ static PyObject *__pyx_pf_5welly_4diff_6config_2load_config(CYTHON_UNUSED PyObje
 }
 
 /* "welly/diff/config.py":63
- * 
- * 
+ *
+ *
  * def init_config(args: DiffCLIOptions) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf, args.config))
  *     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
@@ -3247,8 +3247,8 @@ static PyObject *__pyx_gb_5welly_4diff_6config_11init_config_2generator(__pyx_Co
 }
 
 /* "welly/diff/config.py":63
- * 
- * 
+ *
+ *
  * def init_config(args: DiffCLIOptions) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf, args.config))
  *     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
@@ -3292,7 +3292,7 @@ static PyObject *__pyx_pf_5welly_4diff_6config_4init_config(CYTHON_UNUSED PyObje
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_args);
 
   /* "welly/diff/config.py":64
- * 
+ *
  * def init_config(args: DiffCLIOptions) -> DiffOptions:
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf, args.config))             # <<<<<<<<<<<<<<
  *     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
@@ -3482,11 +3482,11 @@ static PyObject *__pyx_pf_5welly_4diff_6config_4init_config(CYTHON_UNUSED PyObje
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_5);
@@ -3555,8 +3555,8 @@ static PyObject *__pyx_pf_5welly_4diff_6config_4init_config(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "welly/diff/config.py":63
- * 
- * 
+ *
+ *
  * def init_config(args: DiffCLIOptions) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf, args.config))
  *     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
@@ -4105,7 +4105,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/config.py":46
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = create_result_dict()
  *         parse_config_base(
@@ -4127,8 +4127,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "welly/diff/config.py":23
- * 
- * 
+ *
+ *
  * def set_formats(opts: DiffOptions) -> None:             # <<<<<<<<<<<<<<
  *     formats['text'] = '48' + color_as_sgr(opts.background)
  *     formats['title'] = '38' + color_as_sgr(opts.title_fg) + ';48' + color_as_sgr(opts.title_bg) + ';1'
@@ -4139,11 +4139,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_config_py, __pyx_n_s_set_formats, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "welly/diff/config.py":43
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  */
   __pyx_tuple__9 = PyTuple_Pack(9, __pyx_n_s_overrides, __pyx_n_s_paths, __pyx_n_s_create_result_dict, __pyx_n_s_merge_result_dicts, __pyx_n_s_parse_conf_item, __pyx_n_s_parse_config, __pyx_n_s_parse_config, __pyx_n_s_opts_dict, __pyx_n_s_opts); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
@@ -4151,8 +4151,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(0, 1, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_config_py, __pyx_n_s_load_config_2, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "welly/diff/config.py":63
- * 
- * 
+ *
+ *
  * def init_config(args: DiffCLIOptions) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf, args.config))
  *     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
@@ -4476,10 +4476,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/config.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * from typing import Any, Dict, Iterable, Optional
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4487,10 +4487,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/config.py":5
- * 
+ *
  * import os
  * from typing import Any, Dict, Iterable, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.cli_stub import DiffCLIOptions
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -4530,7 +4530,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/config.py":7
  * from typing import Any, Dict, Iterable, Optional
- * 
+ *
  * from smelly.cli_stub import DiffCLIOptions             # <<<<<<<<<<<<<<
  * from smelly.conf.utils import load_config as _load_config
  * from smelly.conf.utils import parse_config_base, resolve_config
@@ -4550,7 +4550,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/config.py":8
- * 
+ *
  * from smelly.cli_stub import DiffCLIOptions
  * from smelly.conf.utils import load_config as _load_config             # <<<<<<<<<<<<<<
  * from smelly.conf.utils import parse_config_base, resolve_config
@@ -4603,7 +4603,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.conf.utils import parse_config_base, resolve_config
  * from smelly.constants import config_dir             # <<<<<<<<<<<<<<
  * from smelly.rgb import color_as_sgr
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4623,7 +4623,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.conf.utils import parse_config_base, resolve_config
  * from smelly.constants import config_dir
  * from smelly.rgb import color_as_sgr             # <<<<<<<<<<<<<<
- * 
+ *
  * from .options.types import Options as DiffOptions
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -4642,10 +4642,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/config.py":13
  * from smelly.rgb import color_as_sgr
- * 
+ *
  * from .options.types import Options as DiffOptions             # <<<<<<<<<<<<<<
  * from .options.types import defaults
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4662,10 +4662,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/config.py":14
- * 
+ *
  * from .options.types import Options as DiffOptions
  * from .options.types import defaults             # <<<<<<<<<<<<<<
- * 
+ *
  * formats: Dict[str, str] = {
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -4683,7 +4683,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/config.py":17
- * 
+ *
  * formats: Dict[str, str] = {
  *     'title': '',             # <<<<<<<<<<<<<<
  *     'margin': '',
@@ -4698,8 +4698,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/config.py":23
- * 
- * 
+ *
+ *
  * def set_formats(opts: DiffOptions) -> None:             # <<<<<<<<<<<<<<
  *     formats['text'] = '48' + color_as_sgr(opts.background)
  *     formats['title'] = '38' + color_as_sgr(opts.title_fg) + ';48' + color_as_sgr(opts.title_bg) + ';1'
@@ -4719,20 +4719,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/config.py":39
- * 
- * 
+ *
+ *
  * SYSTEM_CONF = '/etc/xdg/smelly/diff.conf'             # <<<<<<<<<<<<<<
  * defconf = os.path.join(config_dir, 'diff.conf')
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_SYSTEM_CONF, __pyx_kp_s_etc_xdg_smelly_diff_conf) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
 
   /* "welly/diff/config.py":40
- * 
+ *
  * SYSTEM_CONF = '/etc/xdg/smelly/diff.conf'
  * defconf = os.path.join(config_dir, 'diff.conf')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4760,11 +4760,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/config.py":43
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4799,8 +4799,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/diff/config.py":63
- * 
- * 
+ *
+ *
  * def init_config(args: DiffCLIOptions) -> DiffOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf, args.config))
  *     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
@@ -4825,7 +4825,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/diff/config.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);

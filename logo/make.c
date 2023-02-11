@@ -1618,11 +1618,11 @@ static PyObject *__pyx_codeobj__10;
 /* Late includes */
 
 /* "make.py":14
- * 
- * 
+ *
+ *
  * def abspath(x):             # <<<<<<<<<<<<<<
  *     return os.path.join(base, x)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1654,11 +1654,11 @@ static PyObject *__pyx_pf_4make_abspath(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_RefNannySetupContext("abspath", 0);
 
   /* "make.py":15
- * 
+ *
  * def abspath(x):
  *     return os.path.join(base, x)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
@@ -1723,11 +1723,11 @@ static PyObject *__pyx_pf_4make_abspath(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   goto __pyx_L0;
 
   /* "make.py":14
- * 
- * 
+ *
+ *
  * def abspath(x):             # <<<<<<<<<<<<<<
  *     return os.path.join(base, x)
- * 
+ *
  */
 
   /* function exit code */
@@ -1746,8 +1746,8 @@ static PyObject *__pyx_pf_4make_abspath(CYTHON_UNUSED PyObject *__pyx_self, PyOb
 }
 
 /* "make.py":18
- * 
- * 
+ *
+ *
  * def run(*args):             # <<<<<<<<<<<<<<
  *     try:
  *         subprocess.check_call(args)
@@ -1793,7 +1793,7 @@ static PyObject *__pyx_pf_4make_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
   __Pyx_RefNannySetupContext("run", 0);
 
   /* "make.py":19
- * 
+ *
  * def run(*args):
  *     try:             # <<<<<<<<<<<<<<
  *         subprocess.check_call(args)
@@ -1838,7 +1838,7 @@ static PyObject *__pyx_pf_4make_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
       /* "make.py":19
- * 
+ *
  * def run(*args):
  *     try:             # <<<<<<<<<<<<<<
  *         subprocess.check_call(args)
@@ -1873,8 +1873,8 @@ static PyObject *__pyx_pf_4make_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
  *     except OSError:
  *         raise SystemExit(
  *             f'You are missing the {args[0]} program needed to generate the smelly logo')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 23, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
@@ -1907,7 +1907,7 @@ static PyObject *__pyx_pf_4make_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
  *     except OSError:
  *         raise SystemExit(             # <<<<<<<<<<<<<<
  *             f'You are missing the {args[0]} program needed to generate the smelly logo')
- * 
+ *
  */
       __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_SystemExit, __pyx_t_12); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 22, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
@@ -1920,7 +1920,7 @@ static PyObject *__pyx_pf_4make_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
     __pyx_L5_except_error:;
 
     /* "make.py":19
- * 
+ *
  * def run(*args):
  *     try:             # <<<<<<<<<<<<<<
  *         subprocess.check_call(args)
@@ -1935,8 +1935,8 @@ static PyObject *__pyx_pf_4make_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
   }
 
   /* "make.py":18
- * 
- * 
+ *
+ *
  * def run(*args):             # <<<<<<<<<<<<<<
  *     try:
  *         subprocess.check_call(args)
@@ -1961,8 +1961,8 @@ static PyObject *__pyx_pf_4make_2run(CYTHON_UNUSED PyObject *__pyx_self, PyObjec
 }
 
 /* "make.py":26
- * 
- * 
+ *
+ *
  * def render(output, sz=256, src=unframed_src):             # <<<<<<<<<<<<<<
  *     print(f'Rendering {os.path.basename(src)} at {sz}x{sz}...')
  *     run('rsvg-convert', '-w', str(sz), '-h', str(sz), '-o', output, src)
@@ -2111,7 +2111,7 @@ static PyObject *__pyx_pf_4make_4render(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_RefNannySetupContext("render", 0);
 
   /* "make.py":27
- * 
+ *
  * def render(output, sz=256, src=unframed_src):
  *     print(f'Rendering {os.path.basename(src)} at {sz}x{sz}...')             # <<<<<<<<<<<<<<
  *     run('rsvg-convert', '-w', str(sz), '-h', str(sz), '-o', output, src)
@@ -2193,7 +2193,7 @@ static PyObject *__pyx_pf_4make_4render(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  *     print(f'Rendering {os.path.basename(src)} at {sz}x{sz}...')
  *     run('rsvg-convert', '-w', str(sz), '-h', str(sz), '-o', output, src)             # <<<<<<<<<<<<<<
  *     run('optipng', '-quiet', '-o7', '-strip', 'all', output)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_run); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2274,8 +2274,8 @@ static PyObject *__pyx_pf_4make_4render(CYTHON_UNUSED PyObject *__pyx_self, PyOb
  *     print(f'Rendering {os.path.basename(src)} at {sz}x{sz}...')
  *     run('rsvg-convert', '-w', str(sz), '-h', str(sz), '-o', output, src)
  *     run('optipng', '-quiet', '-o7', '-strip', 'all', output)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_run); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2339,8 +2339,8 @@ static PyObject *__pyx_pf_4make_4render(CYTHON_UNUSED PyObject *__pyx_self, PyOb
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "make.py":26
- * 
- * 
+ *
+ *
  * def render(output, sz=256, src=unframed_src):             # <<<<<<<<<<<<<<
  *     print(f'Rendering {os.path.basename(src)} at {sz}x{sz}...')
  *     run('rsvg-convert', '-w', str(sz), '-h', str(sz), '-o', output, src)
@@ -2365,8 +2365,8 @@ static PyObject *__pyx_pf_4make_4render(CYTHON_UNUSED PyObject *__pyx_self, PyOb
 }
 
 /* "make.py":32
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     render(abspath('smelly.png'))
  *     render(abspath('smelly-128.png'), sz=128)
@@ -2409,7 +2409,7 @@ static PyObject *__pyx_pf_4make_6main(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "make.py":33
- * 
+ *
  * def main():
  *     render(abspath('smelly.png'))             # <<<<<<<<<<<<<<
  *     render(abspath('smelly-128.png'), sz=128)
@@ -2907,7 +2907,7 @@ static PyObject *__pyx_pf_4make_6main(CYTHON_UNUSED PyObject *__pyx_self) {
  *             shutil.copy2(iname, iname2x)
  *         if sz in (64, 1024):             # <<<<<<<<<<<<<<
  *             os.remove(iname)
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_sz);
     __pyx_t_1 = __pyx_v_sz;
@@ -2934,8 +2934,8 @@ static PyObject *__pyx_pf_4make_6main(CYTHON_UNUSED PyObject *__pyx_self) {
  *             shutil.copy2(iname, iname2x)
  *         if sz in (64, 1024):
  *             os.remove(iname)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -2964,7 +2964,7 @@ static PyObject *__pyx_pf_4make_6main(CYTHON_UNUSED PyObject *__pyx_self) {
  *             shutil.copy2(iname, iname2x)
  *         if sz in (64, 1024):             # <<<<<<<<<<<<<<
  *             os.remove(iname)
- * 
+ *
  */
     }
 
@@ -2979,8 +2979,8 @@ static PyObject *__pyx_pf_4make_6main(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "make.py":32
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     render(abspath('smelly.png'))
  *     render(abspath('smelly-128.png'), sz=128)
@@ -3145,11 +3145,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__2);
 
   /* "make.py":14
- * 
- * 
+ *
+ *
  * def abspath(x):             # <<<<<<<<<<<<<<
  *     return os.path.join(base, x)
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -3157,8 +3157,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_logo_make_py, __pyx_n_s_abspath, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 14, __pyx_L1_error)
 
   /* "make.py":18
- * 
- * 
+ *
+ *
  * def run(*args):             # <<<<<<<<<<<<<<
  *     try:
  *         subprocess.check_call(args)
@@ -3169,8 +3169,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_logo_make_py, __pyx_n_s_run, 18, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 18, __pyx_L1_error)
 
   /* "make.py":26
- * 
- * 
+ *
+ *
  * def render(output, sz=256, src=unframed_src):             # <<<<<<<<<<<<<<
  *     print(f'Rendering {os.path.basename(src)} at {sz}x{sz}...')
  *     run('rsvg-convert', '-w', str(sz), '-h', str(sz), '-o', output, src)
@@ -3181,8 +3181,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_logo_make_py, __pyx_n_s_render, 26, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 26, __pyx_L1_error)
 
   /* "make.py":32
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     render(abspath('smelly.png'))
  *     render(abspath('smelly-128.png'), sz=128)
@@ -3483,7 +3483,7 @@ if (!__Pyx_RefNanny) {
 
   /* "make.py":5
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import shutil
  * import subprocess
@@ -3494,11 +3494,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "make.py":6
- * 
+ *
  * import os
  * import shutil             # <<<<<<<<<<<<<<
  * import subprocess
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_shutil, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3509,7 +3509,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import shutil
  * import subprocess             # <<<<<<<<<<<<<<
- * 
+ *
  * base = os.path.dirname(os.path.abspath(__file__))
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -3519,7 +3519,7 @@ if (!__Pyx_RefNanny) {
 
   /* "make.py":9
  * import subprocess
- * 
+ *
  * base = os.path.dirname(os.path.abspath(__file__))             # <<<<<<<<<<<<<<
  * unframed_src = os.path.join(base, 'smelly.svg')
  * framed_src = os.path.join(base, 'smelly-framed.svg')
@@ -3554,11 +3554,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "make.py":10
- * 
+ *
  * base = os.path.dirname(os.path.abspath(__file__))
  * unframed_src = os.path.join(base, 'smelly.svg')             # <<<<<<<<<<<<<<
  * framed_src = os.path.join(base, 'smelly-framed.svg')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3589,8 +3589,8 @@ if (!__Pyx_RefNanny) {
  * base = os.path.dirname(os.path.abspath(__file__))
  * unframed_src = os.path.join(base, 'smelly.svg')
  * framed_src = os.path.join(base, 'smelly-framed.svg')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_os); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3618,11 +3618,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "make.py":14
- * 
- * 
+ *
+ *
  * def abspath(x):             # <<<<<<<<<<<<<<
  *     return os.path.join(base, x)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_4make_1abspath, 0, __pyx_n_s_abspath, NULL, __pyx_n_s_make, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3630,8 +3630,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "make.py":18
- * 
- * 
+ *
+ *
  * def run(*args):             # <<<<<<<<<<<<<<
  *     try:
  *         subprocess.check_call(args)
@@ -3642,8 +3642,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "make.py":26
- * 
- * 
+ *
+ *
  * def render(output, sz=256, src=unframed_src):             # <<<<<<<<<<<<<<
  *     print(f'Rendering {os.path.basename(src)} at {sz}x{sz}...')
  *     run('rsvg-convert', '-w', str(sz), '-h', str(sz), '-o', output, src)
@@ -3661,8 +3661,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "make.py":32
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     render(abspath('smelly.png'))
  *     render(abspath('smelly-128.png'), sz=128)
@@ -3673,8 +3673,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "make.py":50
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -3685,7 +3685,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_5) {
 
     /* "make.py":51
- * 
+ *
  * if __name__ == '__main__':
  *     main()             # <<<<<<<<<<<<<<
  */
@@ -3697,8 +3697,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "make.py":50
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -4902,8 +4902,8 @@ static PyObject* __Pyx_PyInt_FloorDivideObjC(PyObject *op1, PyObject *op2, CYTHO
                 }
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceFloorDivide : PyNumber_FloorDivide)(op1, op2);

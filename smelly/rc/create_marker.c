@@ -1619,7 +1619,7 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/create_marker.py":36
  *     args = RemoteCommand.Args(spec='MARKER SPECIFICATION', json_field='marker_spec', minimum_count=2)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 2:
  *             self.fatal('Invalid marker specification: {}'.format(' '.join(args)))
@@ -1737,7 +1737,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_message_to_
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/create_marker.py":37
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) < 2:             # <<<<<<<<<<<<<<
  *             self.fatal('Invalid marker specification: {}'.format(' '.join(args)))
@@ -1795,7 +1795,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_message_to_
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/create_marker.py":37
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) < 2:             # <<<<<<<<<<<<<<
  *             self.fatal('Invalid marker specification: {}'.format(' '.join(args)))
@@ -1925,7 +1925,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_message_to_
  *         except Exception as err:
  *             self.fatal(f"Failed to parse marker specification {' '.join(args)} with error: {err}")             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'self': opts.self, 'marker_spec': args}
- * 
+ *
  */
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fatal); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 42, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -2010,7 +2010,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_message_to_
  *         except Exception as err:
  *             self.fatal(f"Failed to parse marker specification {' '.join(args)} with error: {err}")
  *         return {'match': opts.match, 'self': opts.self, 'marker_spec': args}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2031,7 +2031,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_message_to_
 
   /* "smelly/rc/create_marker.py":36
  *     args = RemoteCommand.Args(spec='MARKER SPECIFICATION', json_field='marker_spec', minimum_count=2)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 2:
  *             self.fatal('Invalid marker specification: {}'.format(' '.join(args)))
@@ -2058,7 +2058,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_message_to_
 
 /* "smelly/rc/create_marker.py":45
  *         return {'match': opts.match, 'self': opts.self, 'marker_spec': args}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         args = payload_get('marker_spec')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2170,7 +2170,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_2response_f
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/create_marker.py":46
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         args = payload_get('marker_spec')             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2310,7 +2310,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_2response_f
  *             if window:
  *                 window.set_marker(args)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_set_marker); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 49, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -2354,8 +2354,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_2response_f
  *             if window:
  *                 window.set_marker(args)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2363,7 +2363,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13create_marker_12CreateMarker_2response_f
 
   /* "smelly/rc/create_marker.py":45
  *         return {'match': opts.match, 'self': opts.self, 'marker_spec': args}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         args = payload_get('marker_spec')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2523,7 +2523,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/create_marker.py":36
  *     args = RemoteCommand.Args(spec='MARKER SPECIFICATION', json_field='marker_spec', minimum_count=2)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 2:
  *             self.fatal('Invalid marker specification: {}'.format(' '.join(args)))
@@ -2535,7 +2535,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/create_marker.py":45
  *         return {'match': opts.match, 'self': opts.self, 'marker_spec': args}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         args = payload_get('marker_spec')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2833,9 +2833,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/create_marker.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.options.utils import parse_marker_spec
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2861,9 +2861,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/create_marker.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from smelly.options.utils import parse_marker_spec             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2882,9 +2882,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/create_marker.py":8
  * from smelly.options.utils import parse_marker_spec
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -2959,10 +2959,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/create_marker.py":10
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import CreateMarkerRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2971,11 +2971,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/create_marker.py":11
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import CreateMarkerRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -2993,16 +2993,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/create_marker.py":10
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import CreateMarkerRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/create_marker.py":14
- * 
- * 
+ *
+ *
  * class CreateMarker(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to create the marker in
@@ -3020,7 +3020,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/create_marker.py":15
- * 
+ *
  * class CreateMarker(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: Which window to create the marker in
@@ -3031,7 +3031,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/create_marker.py":21
  *     '''
- * 
+ *
  *     short_desc = 'Create a marker that highlights specified text'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Create a marker which can highlight text in the specified window. For example:'
@@ -3074,7 +3074,7 @@ if (!__Pyx_RefNanny) {
  * '''
  *     )
  *     args = RemoteCommand.Args(spec='MARKER SPECIFICATION', json_field='marker_spec', minimum_count=2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 34, __pyx_L1_error)
@@ -3096,7 +3096,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/create_marker.py":36
  *     args = RemoteCommand.Args(spec='MARKER SPECIFICATION', json_field='marker_spec', minimum_count=2)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 2:
  *             self.fatal('Invalid marker specification: {}'.format(' '.join(args)))
@@ -3125,7 +3125,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/create_marker.py":45
  *         return {'match': opts.match, 'self': opts.self, 'marker_spec': args}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         args = payload_get('marker_spec')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -3162,8 +3162,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/create_marker.py":14
- * 
- * 
+ *
+ *
  * class CreateMarker(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to create the marker in
@@ -3177,8 +3177,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/create_marker.py":53
- * 
- * 
+ *
+ *
  * create_marker = CreateMarker()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_CreateMarker); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
@@ -3192,7 +3192,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/create_marker.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

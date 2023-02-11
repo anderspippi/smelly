@@ -1659,8 +1659,8 @@ static PyObject *__pyx_codeobj__13;
 /* Late includes */
 
 /* "smelly/borders.py":27
- * 
- * 
+ *
+ *
  * def vertical_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, width: int, top: int,
  *         bottom: int, left: int) -> None:
@@ -1818,7 +1818,7 @@ static PyObject *__pyx_pf_6smelly_7borders_vertical_edge(CYTHON_UNUSED PyObject 
  *     if width > 0:
  *         add_borders_rect(os_window_id, tab_id, left, top,             # <<<<<<<<<<<<<<
  *                          left + width, bottom, color)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_add_borders_rect); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -1827,8 +1827,8 @@ static PyObject *__pyx_pf_6smelly_7borders_vertical_edge(CYTHON_UNUSED PyObject 
  *     if width > 0:
  *         add_borders_rect(os_window_id, tab_id, left, top,
  *                          left + width, bottom, color)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_4 = PyNumber_Add(__pyx_v_left, __pyx_v_width); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 32, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -1906,8 +1906,8 @@ static PyObject *__pyx_pf_6smelly_7borders_vertical_edge(CYTHON_UNUSED PyObject 
   }
 
   /* "smelly/borders.py":27
- * 
- * 
+ *
+ *
  * def vertical_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, width: int, top: int,
  *         bottom: int, left: int) -> None:
@@ -1931,8 +1931,8 @@ static PyObject *__pyx_pf_6smelly_7borders_vertical_edge(CYTHON_UNUSED PyObject 
 }
 
 /* "smelly/borders.py":35
- * 
- * 
+ *
+ *
  * def horizontal_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, height: int, left: int,
  *         right: int, top: int) -> None:
@@ -2090,7 +2090,7 @@ static PyObject *__pyx_pf_6smelly_7borders_2horizontal_edge(CYTHON_UNUSED PyObje
  *     if height > 0:
  *         add_borders_rect(os_window_id, tab_id, left,             # <<<<<<<<<<<<<<
  *                          top, right, top + height, color)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_add_borders_rect); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -2099,8 +2099,8 @@ static PyObject *__pyx_pf_6smelly_7borders_2horizontal_edge(CYTHON_UNUSED PyObje
  *     if height > 0:
  *         add_borders_rect(os_window_id, tab_id, left,
  *                          top, right, top + height, color)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_4 = PyNumber_Add(__pyx_v_top, __pyx_v_height); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -2178,8 +2178,8 @@ static PyObject *__pyx_pf_6smelly_7borders_2horizontal_edge(CYTHON_UNUSED PyObje
   }
 
   /* "smelly/borders.py":35
- * 
- * 
+ *
+ *
  * def horizontal_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, height: int, left: int,
  *         right: int, top: int) -> None:
@@ -2203,8 +2203,8 @@ static PyObject *__pyx_pf_6smelly_7borders_2horizontal_edge(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/borders.py":43
- * 
- * 
+ *
+ *
  * def draw_edges(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, colors: Sequence[int],
  *         wg: WindowGroup, borders: bool = False) -> None:
@@ -2316,8 +2316,8 @@ static PyObject *__pyx_pw_6smelly_7borders_5draw_edges(PyObject *__pyx_self, PyO
   __pyx_r = __pyx_pf_6smelly_7borders_4draw_edges(__pyx_self, __pyx_v_os_window_id, __pyx_v_tab_id, __pyx_v_colors, __pyx_v_wg, __pyx_v_borders);
 
   /* "smelly/borders.py":43
- * 
- * 
+ *
+ *
  * def draw_edges(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, colors: Sequence[int],
  *         wg: WindowGroup, borders: bool = False) -> None:
@@ -2854,7 +2854,7 @@ static PyObject *__pyx_pf_6smelly_7borders_4draw_edges(CYTHON_UNUSED PyObject *_
  *     horizontal_edge(os_window_id, tab_id, colors[3], pb, left, right, bt)
  *     vertical_edge(os_window_id, tab_id, colors[0], pl, top, bottom, left)             # <<<<<<<<<<<<<<
  *     vertical_edge(os_window_id, tab_id, colors[2], pr, top, bottom, lr)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_vertical_edge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2928,8 +2928,8 @@ static PyObject *__pyx_pf_6smelly_7borders_4draw_edges(CYTHON_UNUSED PyObject *_
  *     horizontal_edge(os_window_id, tab_id, colors[3], pb, left, right, bt)
  *     vertical_edge(os_window_id, tab_id, colors[0], pl, top, bottom, left)
  *     vertical_edge(os_window_id, tab_id, colors[2], pr, top, bottom, lr)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_vertical_edge); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3000,8 +3000,8 @@ static PyObject *__pyx_pf_6smelly_7borders_4draw_edges(CYTHON_UNUSED PyObject *_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/borders.py":43
- * 
- * 
+ *
+ *
  * def draw_edges(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, colors: Sequence[int],
  *         wg: WindowGroup, borders: bool = False) -> None:
@@ -3037,8 +3037,8 @@ static PyObject *__pyx_pf_6smelly_7borders_4draw_edges(CYTHON_UNUSED PyObject *_
 }
 
 /* "smelly/borders.py":72
- * 
- * 
+ *
+ *
  * def load_borders_program() -> None:             # <<<<<<<<<<<<<<
  *     compile_program(BORDERS_PROGRAM, *load_shaders('border'))
  *     init_borders_program()
@@ -3072,11 +3072,11 @@ static PyObject *__pyx_pf_6smelly_7borders_6load_borders_program(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("load_borders_program", 0);
 
   /* "smelly/borders.py":73
- * 
+ *
  * def load_borders_program() -> None:
  *     compile_program(BORDERS_PROGRAM, *load_shaders('border'))             # <<<<<<<<<<<<<<
  *     init_borders_program()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_compile_program); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3121,8 +3121,8 @@ static PyObject *__pyx_pf_6smelly_7borders_6load_borders_program(CYTHON_UNUSED P
  * def load_borders_program() -> None:
  *     compile_program(BORDERS_PROGRAM, *load_shaders('border'))
  *     init_borders_program()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_init_borders_program); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3144,8 +3144,8 @@ static PyObject *__pyx_pf_6smelly_7borders_6load_borders_program(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/borders.py":72
- * 
- * 
+ *
+ *
  * def load_borders_program() -> None:             # <<<<<<<<<<<<<<
  *     compile_program(BORDERS_PROGRAM, *load_shaders('border'))
  *     init_borders_program()
@@ -3169,7 +3169,7 @@ static PyObject *__pyx_pf_6smelly_7borders_6load_borders_program(CYTHON_UNUSED P
 }
 
 /* "smelly/borders.py":78
- * 
+ *
  * class Borders:
  *     def __init__(self, os_window_id: int, tab_id: int):             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
@@ -3265,7 +3265,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders___init__(CYTHON_UNUSED PyObj
  *     def __init__(self, os_window_id: int, tab_id: int):
  *         self.os_window_id = os_window_id             # <<<<<<<<<<<<<<
  *         self.tab_id = tab_id
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_os_window_id, __pyx_v_os_window_id) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
 
@@ -3273,13 +3273,13 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders___init__(CYTHON_UNUSED PyObj
  *     def __init__(self, os_window_id: int, tab_id: int):
  *         self.os_window_id = os_window_id
  *         self.tab_id = tab_id             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_tab_id, __pyx_v_tab_id) < 0) __PYX_ERR(0, 80, __pyx_L1_error)
 
   /* "smelly/borders.py":78
- * 
+ *
  * class Borders:
  *     def __init__(self, os_window_id: int, tab_id: int):             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
@@ -3300,7 +3300,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders___init__(CYTHON_UNUSED PyObj
 
 /* "smelly/borders.py":82
  *         self.tab_id = tab_id
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *         self,
  *         all_windows: WindowList,
@@ -3413,7 +3413,7 @@ static PyObject *__pyx_pw_6smelly_7borders_7Borders_3__call__(PyObject *__pyx_se
 
   /* "smelly/borders.py":82
  *         self.tab_id = tab_id
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *         self,
  *         all_windows: WindowList,
@@ -4058,7 +4058,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
  *             bw = groups[0].effective_border()
  *         draw_borders = bw > 0 and draw_window_borders             # <<<<<<<<<<<<<<
  *         active_group = all_windows.active_group
- * 
+ *
  */
   __pyx_t_1 = PyObject_RichCompare(__pyx_v_bw, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
   __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -4080,7 +4080,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
  *             bw = groups[0].effective_border()
  *         draw_borders = bw > 0 and draw_window_borders
  *         active_group = all_windows.active_group             # <<<<<<<<<<<<<<
- * 
+ *
  *         for i, wg in enumerate(groups):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_active_group); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
@@ -4090,7 +4090,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
 
   /* "smelly/borders.py":111
  *         active_group = all_windows.active_group
- * 
+ *
  *         for i, wg in enumerate(groups):             # <<<<<<<<<<<<<<
  *             window_bg = wg.default_bg
  *             window_bg = (window_bg << 8) | BorderColor.window_bg
@@ -4117,7 +4117,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
     __pyx_t_5 = 0;
 
     /* "smelly/borders.py":112
- * 
+ *
  *         for i, wg in enumerate(groups):
  *             window_bg = wg.default_bg             # <<<<<<<<<<<<<<
  *             window_bg = (window_bg << 8) | BorderColor.window_bg
@@ -4362,7 +4362,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
  *                 # Draw the background rectangles over the padding region
  *                 colors = window_bg, window_bg, window_bg, window_bg             # <<<<<<<<<<<<<<
  *                 draw_edges(self.os_window_id, self.tab_id, colors, wg)
- * 
+ *
  */
       __pyx_t_5 = PyTuple_New(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -4385,7 +4385,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
  *                 # Draw the background rectangles over the padding region
  *                 colors = window_bg, window_bg, window_bg, window_bg
  *                 draw_edges(self.os_window_id, self.tab_id, colors, wg)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if draw_minimal_borders:
  */
       __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_draw_edges); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
@@ -4462,7 +4462,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
 
     /* "smelly/borders.py":111
  *         active_group = all_windows.active_group
- * 
+ *
  *         for i, wg in enumerate(groups):             # <<<<<<<<<<<<<<
  *             window_bg = wg.default_bg
  *             window_bg = (window_bg << 8) | BorderColor.window_bg
@@ -4473,7 +4473,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
 
   /* "smelly/borders.py":129
  *                 draw_edges(self.os_window_id, self.tab_id, colors, wg)
- * 
+ *
  *         if draw_minimal_borders:             # <<<<<<<<<<<<<<
  *             for border_line in current_layout.get_minimal_borders(all_windows):
  *                 left, top, right, bottom = border_line.edges
@@ -4482,7 +4482,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
   if (__pyx_t_11) {
 
     /* "smelly/borders.py":130
- * 
+ *
  *         if draw_minimal_borders:
  *             for border_line in current_layout.get_minimal_borders(all_windows):             # <<<<<<<<<<<<<<
  *                 left, top, right, bottom = border_line.edges
@@ -4567,15 +4567,15 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-          __pyx_t_14 = PyTuple_GET_ITEM(sequence, 2); 
-          __pyx_t_9 = PyTuple_GET_ITEM(sequence, 3); 
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+          __pyx_t_14 = PyTuple_GET_ITEM(sequence, 2);
+          __pyx_t_9 = PyTuple_GET_ITEM(sequence, 3);
         } else {
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-          __pyx_t_14 = PyList_GET_ITEM(sequence, 2); 
-          __pyx_t_9 = PyList_GET_ITEM(sequence, 3); 
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+          __pyx_t_14 = PyList_GET_ITEM(sequence, 2);
+          __pyx_t_9 = PyList_GET_ITEM(sequence, 3);
         }
         __Pyx_INCREF(__pyx_t_5);
         __Pyx_INCREF(__pyx_t_3);
@@ -4722,7 +4722,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
       /* "smelly/borders.py":130
- * 
+ *
  *         if draw_minimal_borders:
  *             for border_line in current_layout.get_minimal_borders(all_windows):             # <<<<<<<<<<<<<<
  *                 left, top, right, bottom = border_line.edges
@@ -4733,7 +4733,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
 
     /* "smelly/borders.py":129
  *                 draw_edges(self.os_window_id, self.tab_id, colors, wg)
- * 
+ *
  *         if draw_minimal_borders:             # <<<<<<<<<<<<<<
  *             for border_line in current_layout.get_minimal_borders(all_windows):
  *                 left, top, right, bottom = border_line.edges
@@ -4742,7 +4742,7 @@ static PyObject *__pyx_pf_6smelly_7borders_7Borders_2__call__(CYTHON_UNUSED PyOb
 
   /* "smelly/borders.py":82
  *         self.tab_id = tab_id
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *         self,
  *         all_windows: WindowList,
@@ -4958,15 +4958,15 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     # These are indices into the array of colors in the border vertex shader
  *     default_bg, active, inactive, window_bg, bell, tab_bar_bg, tab_bar_margin_color, tab_bar_left_edge_color, tab_bar_right_edge_color = range(             # <<<<<<<<<<<<<<
  *         9)
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(1, __pyx_int_9); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
   /* "smelly/borders.py":27
- * 
- * 
+ *
+ *
  * def vertical_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, width: int, top: int,
  *         bottom: int, left: int) -> None:
@@ -4977,8 +4977,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(7, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_borders_py, __pyx_n_s_vertical_edge, 27, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 27, __pyx_L1_error)
 
   /* "smelly/borders.py":35
- * 
- * 
+ *
+ *
  * def horizontal_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, height: int, left: int,
  *         right: int, top: int) -> None:
@@ -4989,8 +4989,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(7, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_borders_py, __pyx_n_s_horizontal_edge, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 35, __pyx_L1_error)
 
   /* "smelly/borders.py":43
- * 
- * 
+ *
+ *
  * def draw_edges(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, colors: Sequence[int],
  *         wg: WindowGroup, borders: bool = False) -> None:
@@ -5004,8 +5004,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__8);
 
   /* "smelly/borders.py":72
- * 
- * 
+ *
+ *
  * def load_borders_program() -> None:             # <<<<<<<<<<<<<<
  *     compile_program(BORDERS_PROGRAM, *load_shaders('border'))
  *     init_borders_program()
@@ -5013,7 +5013,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_borders_py, __pyx_n_s_load_borders_program, 72, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 72, __pyx_L1_error)
 
   /* "smelly/borders.py":78
- * 
+ *
  * class Borders:
  *     def __init__(self, os_window_id: int, tab_id: int):             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
@@ -5026,7 +5026,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/borders.py":82
  *         self.tab_id = tab_id
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *         self,
  *         all_windows: WindowList,
@@ -5337,10 +5337,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/borders.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from enum import IntFlag             # <<<<<<<<<<<<<<
  * from typing import Iterable, NamedTuple, Sequence
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5357,10 +5357,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/borders.py":5
- * 
+ *
  * from enum import IntFlag
  * from typing import Iterable, NamedTuple, Sequence             # <<<<<<<<<<<<<<
- * 
+ *
  * from .fast_data_types import BORDERS_PROGRAM, add_borders_rect, compile_program, get_options, init_borders_program, os_window_has_background_image
  */
   __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -5393,7 +5393,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/borders.py":7
  * from typing import Iterable, NamedTuple, Sequence
- * 
+ *
  * from .fast_data_types import BORDERS_PROGRAM, add_borders_rect, compile_program, get_options, init_borders_program, os_window_has_background_image             # <<<<<<<<<<<<<<
  * from .typing import LayoutType
  * from .utils import load_shaders
@@ -5448,7 +5448,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/borders.py":8
- * 
+ *
  * from .fast_data_types import BORDERS_PROGRAM, add_borders_rect, compile_program, get_options, init_borders_program, os_window_has_background_image
  * from .typing import LayoutType             # <<<<<<<<<<<<<<
  * from .utils import load_shaders
@@ -5473,7 +5473,7 @@ if (!__Pyx_RefNanny) {
  * from .typing import LayoutType
  * from .utils import load_shaders             # <<<<<<<<<<<<<<
  * from .window_list import WindowGroup, WindowList
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5493,8 +5493,8 @@ if (!__Pyx_RefNanny) {
  * from .typing import LayoutType
  * from .utils import load_shaders
  * from .window_list import WindowGroup, WindowList             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5518,8 +5518,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/borders.py":13
- * 
- * 
+ *
+ *
  * class BorderColor(IntFlag):             # <<<<<<<<<<<<<<
  *     # These are indices into the array of colors in the border vertex shader
  *     default_bg, active, inactive, window_bg, bell, tab_bar_bg, tab_bar_margin_color, tab_bar_left_edge_color, tab_bar_right_edge_color = range(
@@ -5541,7 +5541,7 @@ if (!__Pyx_RefNanny) {
  *     # These are indices into the array of colors in the border vertex shader
  *     default_bg, active, inactive, window_bg, bell, tab_bar_bg, tab_bar_margin_color, tab_bar_left_edge_color, tab_bar_right_edge_color = range(             # <<<<<<<<<<<<<<
  *         9)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5555,25 +5555,25 @@ if (!__Pyx_RefNanny) {
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 3); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 4); 
-      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 5); 
-      __pyx_t_11 = PyTuple_GET_ITEM(sequence, 6); 
-      __pyx_t_12 = PyTuple_GET_ITEM(sequence, 7); 
-      __pyx_t_13 = PyTuple_GET_ITEM(sequence, 8); 
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 3);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 4);
+      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 5);
+      __pyx_t_11 = PyTuple_GET_ITEM(sequence, 6);
+      __pyx_t_12 = PyTuple_GET_ITEM(sequence, 7);
+      __pyx_t_13 = PyTuple_GET_ITEM(sequence, 8);
     } else {
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 3); 
-      __pyx_t_9 = PyList_GET_ITEM(sequence, 4); 
-      __pyx_t_10 = PyList_GET_ITEM(sequence, 5); 
-      __pyx_t_11 = PyList_GET_ITEM(sequence, 6); 
-      __pyx_t_12 = PyList_GET_ITEM(sequence, 7); 
-      __pyx_t_13 = PyList_GET_ITEM(sequence, 8); 
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 3);
+      __pyx_t_9 = PyList_GET_ITEM(sequence, 4);
+      __pyx_t_10 = PyList_GET_ITEM(sequence, 5);
+      __pyx_t_11 = PyList_GET_ITEM(sequence, 6);
+      __pyx_t_12 = PyList_GET_ITEM(sequence, 7);
+      __pyx_t_13 = PyList_GET_ITEM(sequence, 8);
     }
     __Pyx_INCREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_t_6);
@@ -5639,8 +5639,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
 
   /* "smelly/borders.py":13
- * 
- * 
+ *
+ *
  * class BorderColor(IntFlag):             # <<<<<<<<<<<<<<
  *     # These are indices into the array of colors in the border vertex shader
  *     default_bg, active, inactive, window_bg, bell, tab_bar_bg, tab_bar_margin_color, tab_bar_left_edge_color, tab_bar_right_edge_color = range(
@@ -5654,8 +5654,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/borders.py":19
- * 
- * 
+ *
+ *
  * class Border(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: int
  *     top: int
@@ -5676,8 +5676,8 @@ if (!__Pyx_RefNanny) {
  *     right: int
  *     bottom: int
  *     color: BorderColor             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_Border, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5688,8 +5688,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/borders.py":27
- * 
- * 
+ *
+ *
  * def vertical_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, width: int, top: int,
  *         bottom: int, left: int) -> None:
@@ -5714,8 +5714,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
 
   /* "smelly/borders.py":27
- * 
- * 
+ *
+ *
  * def vertical_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, width: int, top: int,
  *         bottom: int, left: int) -> None:
@@ -5728,8 +5728,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/borders.py":35
- * 
- * 
+ *
+ *
  * def horizontal_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, height: int, left: int,
  *         right: int, top: int) -> None:
@@ -5754,8 +5754,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
 
   /* "smelly/borders.py":35
- * 
- * 
+ *
+ *
  * def horizontal_edge(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, color: int, height: int, left: int,
  *         right: int, top: int) -> None:
@@ -5768,8 +5768,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/borders.py":43
- * 
- * 
+ *
+ *
  * def draw_edges(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, colors: Sequence[int],
  *         wg: WindowGroup, borders: bool = False) -> None:
@@ -5780,7 +5780,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_tab_id, __pyx_n_u_int) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "smelly/borders.py":44
- * 
+ *
  * def draw_edges(
  *         os_window_id: int, tab_id: int, colors: Sequence[int],             # <<<<<<<<<<<<<<
  *         wg: WindowGroup, borders: bool = False) -> None:
@@ -5809,8 +5809,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "smelly/borders.py":43
- * 
- * 
+ *
+ *
  * def draw_edges(             # <<<<<<<<<<<<<<
  *         os_window_id: int, tab_id: int, colors: Sequence[int],
  *         wg: WindowGroup, borders: bool = False) -> None:
@@ -5824,8 +5824,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/borders.py":72
- * 
- * 
+ *
+ *
  * def load_borders_program() -> None:             # <<<<<<<<<<<<<<
  *     compile_program(BORDERS_PROGRAM, *load_shaders('border'))
  *     init_borders_program()
@@ -5841,8 +5841,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/borders.py":77
- * 
- * 
+ *
+ *
  * class Borders:             # <<<<<<<<<<<<<<
  *     def __init__(self, os_window_id: int, tab_id: int):
  *         self.os_window_id = os_window_id
@@ -5851,7 +5851,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/borders.py":78
- * 
+ *
  * class Borders:
  *     def __init__(self, os_window_id: int, tab_id: int):             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
@@ -5870,7 +5870,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/borders.py":82
  *         self.tab_id = tab_id
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *         self,
  *         all_windows: WindowList,
@@ -5940,7 +5940,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/borders.py":82
  *         self.tab_id = tab_id
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *         self,
  *         all_windows: WindowList,
@@ -5954,8 +5954,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
 
   /* "smelly/borders.py":77
- * 
- * 
+ *
+ *
  * class Borders:             # <<<<<<<<<<<<<<
  *     def __init__(self, os_window_id: int, tab_id: int):
  *         self.os_window_id = os_window_id
@@ -5969,7 +5969,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/borders.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6743,8 +6743,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -6874,8 +6874,8 @@ static PyObject* __Pyx_PyInt_LshiftObjC(PyObject *op1, PyObject *op2, CYTHON_UNU
                 if (likely(lla == llx >> llb))
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceLshift : PyNumber_Lshift)(op1, op2);

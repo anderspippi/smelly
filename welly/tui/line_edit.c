@@ -1698,7 +1698,7 @@ static PyObject *__pyx_codeobj__43;
 /* Late includes */
 
 /* "welly/tui/line_edit.py":13
- * 
+ *
  * class LineEdit:
  *     def __init__(self, is_password: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.clear()
@@ -1790,7 +1790,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit___init__(CYTHON_UNUSE
  *     def __init__(self, is_password: bool = False) -> None:
  *         self.clear()             # <<<<<<<<<<<<<<
  *         self.is_password = is_password
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_clear); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1815,13 +1815,13 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit___init__(CYTHON_UNUSE
  *     def __init__(self, is_password: bool = False) -> None:
  *         self.clear()
  *         self.is_password = is_password             # <<<<<<<<<<<<<<
- * 
+ *
  *     def clear(self) -> None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_is_password, __pyx_v_is_password) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
 
   /* "welly/tui/line_edit.py":13
- * 
+ *
  * class LineEdit:
  *     def __init__(self, is_password: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.clear()
@@ -1845,7 +1845,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit___init__(CYTHON_UNUSE
 
 /* "welly/tui/line_edit.py":17
  *         self.is_password = is_password
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_input = ''
  *         self.cursor_pos = 0
@@ -1874,7 +1874,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_2clear(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("clear", 0);
 
   /* "welly/tui/line_edit.py":18
- * 
+ *
  *     def clear(self) -> None:
  *         self.current_input = ''             # <<<<<<<<<<<<<<
  *         self.cursor_pos = 0
@@ -1887,7 +1887,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_2clear(CYTHON_UNUSED 
  *         self.current_input = ''
  *         self.cursor_pos = 0             # <<<<<<<<<<<<<<
  *         self.pending_bell = False
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cursor_pos, __pyx_int_0) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
 
@@ -1895,14 +1895,14 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_2clear(CYTHON_UNUSED 
  *         self.current_input = ''
  *         self.cursor_pos = 0
  *         self.pending_bell = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def split_at_cursor(self, delta: int = 0) -> Tuple[str, str]:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pending_bell, Py_False) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
 
   /* "welly/tui/line_edit.py":17
  *         self.is_password = is_password
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_input = ''
  *         self.cursor_pos = 0
@@ -1922,7 +1922,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_2clear(CYTHON_UNUSED 
 
 /* "welly/tui/line_edit.py":22
  *         self.pending_bell = False
- * 
+ *
  *     def split_at_cursor(self, delta: int = 0) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *         pos = max(0, self.cursor_pos + delta)
  *         x = truncate_point_for_length(self.current_input, pos) if pos else 0
@@ -2019,7 +2019,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_4split_at_cursor(CYTH
   __Pyx_RefNannySetupContext("split_at_cursor", 0);
 
   /* "welly/tui/line_edit.py":23
- * 
+ *
  *     def split_at_cursor(self, delta: int = 0) -> Tuple[str, str]:
  *         pos = max(0, self.cursor_pos + delta)             # <<<<<<<<<<<<<<
  *         x = truncate_point_for_length(self.current_input, pos) if pos else 0
@@ -2127,7 +2127,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_4split_at_cursor(CYTH
  *         x = truncate_point_for_length(self.current_input, pos) if pos else 0
  *         before, after = self.current_input[:x], self.current_input[x:]             # <<<<<<<<<<<<<<
  *         return before, after
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_input); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2148,7 +2148,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_4split_at_cursor(CYTH
  *         x = truncate_point_for_length(self.current_input, pos) if pos else 0
  *         before, after = self.current_input[:x], self.current_input[x:]
  *         return before, after             # <<<<<<<<<<<<<<
- * 
+ *
  *     def write(self, write: Callable[[str], None], prompt: str = '', screen_cols: int = 0) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2166,7 +2166,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_4split_at_cursor(CYTH
 
   /* "welly/tui/line_edit.py":22
  *         self.pending_bell = False
- * 
+ *
  *     def split_at_cursor(self, delta: int = 0) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *         pos = max(0, self.cursor_pos + delta)
  *         x = truncate_point_for_length(self.current_input, pos) if pos else 0
@@ -2194,7 +2194,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_4split_at_cursor(CYTH
 
 /* "welly/tui/line_edit.py":28
  *         return before, after
- * 
+ *
  *     def write(self, write: Callable[[str], None], prompt: str = '', screen_cols: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if self.pending_bell:
  *             write('\a')
@@ -2320,7 +2320,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_6write(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("write", 0);
 
   /* "welly/tui/line_edit.py":29
- * 
+ *
  *     def write(self, write: Callable[[str], None], prompt: str = '', screen_cols: int = 0) -> None:
  *         if self.pending_bell:             # <<<<<<<<<<<<<<
  *             write('\a')
@@ -2367,7 +2367,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_6write(CYTHON_UNUSED 
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pending_bell, Py_False) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
 
     /* "welly/tui/line_edit.py":29
- * 
+ *
  *     def write(self, write: Callable[[str], None], prompt: str = '', screen_cols: int = 0) -> None:
  *         if self.pending_bell:             # <<<<<<<<<<<<<<
  *             write('\a')
@@ -2550,11 +2550,11 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_6write(CYTHON_UNUSED 
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_5);
@@ -2969,7 +2969,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_6write(CYTHON_UNUSED 
  *             if cursor_pos:
  *                 write(move_cursor_by(cursor_pos, 'right'))             # <<<<<<<<<<<<<<
  *             write(set_cursor_shape('beam'))
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_move_cursor_by); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -3050,7 +3050,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_6write(CYTHON_UNUSED 
  *             if cursor_pos:
  *                 write(move_cursor_by(cursor_pos, 'right'))
  *             write(set_cursor_shape('beam'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_text(self, text: str) -> None:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_set_cursor_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
@@ -3093,7 +3093,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_6write(CYTHON_UNUSED 
 
   /* "welly/tui/line_edit.py":28
  *         return before, after
- * 
+ *
  *     def write(self, write: Callable[[str], None], prompt: str = '', screen_cols: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if self.pending_bell:
  *             write('\a')
@@ -3123,7 +3123,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_6write(CYTHON_UNUSED 
 
 /* "welly/tui/line_edit.py":55
  *             write(set_cursor_shape('beam'))
- * 
+ *
  *     def add_text(self, text: str) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_input:
  *             x = truncate_point_for_length(self.current_input, self.cursor_pos) if self.cursor_pos else 0
@@ -3218,7 +3218,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_8add_text(CYTHON_UNUS
   __Pyx_RefNannySetupContext("add_text", 0);
 
   /* "welly/tui/line_edit.py":56
- * 
+ *
  *     def add_text(self, text: str) -> None:
  *         if self.current_input:             # <<<<<<<<<<<<<<
  *             x = truncate_point_for_length(self.current_input, self.cursor_pos) if self.cursor_pos else 0
@@ -3334,7 +3334,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_8add_text(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "welly/tui/line_edit.py":56
- * 
+ *
  *     def add_text(self, text: str) -> None:
  *         if self.current_input:             # <<<<<<<<<<<<<<
  *             x = truncate_point_for_length(self.current_input, self.cursor_pos) if self.cursor_pos else 0
@@ -3348,7 +3348,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_8add_text(CYTHON_UNUS
  *         else:
  *             self.current_input = text             # <<<<<<<<<<<<<<
  *         self.cursor_pos += wcswidth(text)
- * 
+ *
  */
   /*else*/ {
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_current_input, __pyx_v_text) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
@@ -3359,7 +3359,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_8add_text(CYTHON_UNUS
  *         else:
  *             self.current_input = text
  *         self.cursor_pos += wcswidth(text)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool) -> None:
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cursor_pos); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
@@ -3390,7 +3390,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_8add_text(CYTHON_UNUS
 
   /* "welly/tui/line_edit.py":55
  *             write(set_cursor_shape('beam'))
- * 
+ *
  *     def add_text(self, text: str) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_input:
  *             x = truncate_point_for_length(self.current_input, self.cursor_pos) if self.cursor_pos else 0
@@ -3418,10 +3418,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_8add_text(CYTHON_UNUS
 
 /* "welly/tui/line_edit.py":63
  *         self.cursor_pos += wcswidth(text)
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool) -> None:             # <<<<<<<<<<<<<<
  *         self.add_text(text)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3517,10 +3517,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_10on_text(CYTHON_UNUS
   __Pyx_RefNannySetupContext("on_text", 0);
 
   /* "welly/tui/line_edit.py":64
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool) -> None:
  *         self.add_text(text)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def backspace(self, num: int = 1) -> bool:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_add_text); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
@@ -3544,10 +3544,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_10on_text(CYTHON_UNUS
 
   /* "welly/tui/line_edit.py":63
  *         self.cursor_pos += wcswidth(text)
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool) -> None:             # <<<<<<<<<<<<<<
  *         self.add_text(text)
- * 
+ *
  */
 
   /* function exit code */
@@ -3567,7 +3567,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_10on_text(CYTHON_UNUS
 
 /* "welly/tui/line_edit.py":66
  *         self.add_text(text)
- * 
+ *
  *     def backspace(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nbefore = before[:-num]
@@ -3660,7 +3660,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_12backspace(CYTHON_UN
   __Pyx_RefNannySetupContext("backspace", 0);
 
   /* "welly/tui/line_edit.py":67
- * 
+ *
  *     def backspace(self, num: int = 1) -> bool:
  *         before, after = self.split_at_cursor()             # <<<<<<<<<<<<<<
  *         nbefore = before[:-num]
@@ -3693,11 +3693,11 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_12backspace(CYTHON_UN
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -3826,7 +3826,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_12backspace(CYTHON_UN
  *             return True
  *         self.pending_bell = True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pending_bell, Py_True) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
 
@@ -3834,7 +3834,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_12backspace(CYTHON_UN
  *             return True
  *         self.pending_bell = True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def delete(self, num: int = 1) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3844,7 +3844,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_12backspace(CYTHON_UN
 
   /* "welly/tui/line_edit.py":66
  *         self.add_text(text)
- * 
+ *
  *     def backspace(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nbefore = before[:-num]
@@ -3869,7 +3869,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_12backspace(CYTHON_UN
 
 /* "welly/tui/line_edit.py":76
  *         return False
- * 
+ *
  *     def delete(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nafter = after[num:]
@@ -3962,7 +3962,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_14delete(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("delete", 0);
 
   /* "welly/tui/line_edit.py":77
- * 
+ *
  *     def delete(self, num: int = 1) -> bool:
  *         before, after = self.split_at_cursor()             # <<<<<<<<<<<<<<
  *         nafter = after[num:]
@@ -3995,11 +3995,11 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_14delete(CYTHON_UNUSE
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -4125,7 +4125,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_14delete(CYTHON_UNUSE
  *             return True
  *         self.pending_bell = True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pending_bell, Py_True) < 0) __PYX_ERR(0, 83, __pyx_L1_error)
 
@@ -4133,7 +4133,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_14delete(CYTHON_UNUSE
  *             return True
  *         self.pending_bell = True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _left(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4143,7 +4143,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_14delete(CYTHON_UNUSE
 
   /* "welly/tui/line_edit.py":76
  *         return False
- * 
+ *
  *     def delete(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nafter = after[num:]
@@ -4168,7 +4168,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_14delete(CYTHON_UNUSE
 
 /* "welly/tui/line_edit.py":86
  *         return False
- * 
+ *
  *     def _left(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -4206,7 +4206,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_16_left(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("_left", 0);
 
   /* "welly/tui/line_edit.py":87
- * 
+ *
  *     def _left(self) -> None:
  *         if not self.current_input:             # <<<<<<<<<<<<<<
  *             self.cursor_pos = 0
@@ -4240,7 +4240,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_16_left(CYTHON_UNUSED
     goto __pyx_L0;
 
     /* "welly/tui/line_edit.py":87
- * 
+ *
  *     def _left(self) -> None:
  *         if not self.current_input:             # <<<<<<<<<<<<<<
  *             self.cursor_pos = 0
@@ -4266,7 +4266,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_16_left(CYTHON_UNUSED
  *         if self.cursor_pos:
  *             before, after = self.split_at_cursor(-1)             # <<<<<<<<<<<<<<
  *             self.cursor_pos = wcswidth(before)
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_split_at_cursor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -4295,11 +4295,11 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_16_left(CYTHON_UNUSED
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_5);
@@ -4340,7 +4340,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_16_left(CYTHON_UNUSED
  *         if self.cursor_pos:
  *             before, after = self.split_at_cursor(-1)
  *             self.cursor_pos = wcswidth(before)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _right(self) -> None:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_wcswidth); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -4374,7 +4374,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_16_left(CYTHON_UNUSED
 
   /* "welly/tui/line_edit.py":86
  *         return False
- * 
+ *
  *     def _left(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -4400,7 +4400,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_16_left(CYTHON_UNUSED
 
 /* "welly/tui/line_edit.py":94
  *             self.cursor_pos = wcswidth(before)
- * 
+ *
  *     def _right(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -4439,7 +4439,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_18_right(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("_right", 0);
 
   /* "welly/tui/line_edit.py":95
- * 
+ *
  *     def _right(self) -> None:
  *         if not self.current_input:             # <<<<<<<<<<<<<<
  *             self.cursor_pos = 0
@@ -4473,7 +4473,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_18_right(CYTHON_UNUSE
     goto __pyx_L0;
 
     /* "welly/tui/line_edit.py":95
- * 
+ *
  *     def _right(self) -> None:
  *         if not self.current_input:             # <<<<<<<<<<<<<<
  *             self.cursor_pos = 0
@@ -4560,7 +4560,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_18_right(CYTHON_UNUSE
  *             return
  *         before, after = self.split_at_cursor(1)             # <<<<<<<<<<<<<<
  *         self.cursor_pos += 1 + int(wcswidth(before) == self.cursor_pos)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_split_at_cursor); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4589,11 +4589,11 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_18_right(CYTHON_UNUSE
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_5);
@@ -4634,7 +4634,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_18_right(CYTHON_UNUSE
  *             return
  *         before, after = self.split_at_cursor(1)
  *         self.cursor_pos += 1 + int(wcswidth(before) == self.cursor_pos)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _move_loop(self, func: Callable[[], None], num: int) -> bool:
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cursor_pos); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 103, __pyx_L1_error)
@@ -4676,7 +4676,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_18_right(CYTHON_UNUSE
 
   /* "welly/tui/line_edit.py":94
  *             self.cursor_pos = wcswidth(before)
- * 
+ *
  *     def _right(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -4703,7 +4703,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_18_right(CYTHON_UNUSE
 
 /* "welly/tui/line_edit.py":105
  *         self.cursor_pos += 1 + int(wcswidth(before) == self.cursor_pos)
- * 
+ *
  *     def _move_loop(self, func: Callable[[], None], num: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = self.cursor_pos
  *         changed = False
@@ -4802,7 +4802,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_20_move_loop(CYTHON_U
   __Pyx_INCREF(__pyx_v_num);
 
   /* "welly/tui/line_edit.py":106
- * 
+ *
  *     def _move_loop(self, func: Callable[[], None], num: int) -> bool:
  *         before = self.cursor_pos             # <<<<<<<<<<<<<<
  *         changed = False
@@ -4934,7 +4934,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_20_move_loop(CYTHON_U
  *         if not changed:
  *             self.pending_bell = True             # <<<<<<<<<<<<<<
  *         return changed
- * 
+ *
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pending_bell, Py_True) < 0) __PYX_ERR(0, 115, __pyx_L1_error)
 
@@ -4951,7 +4951,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_20_move_loop(CYTHON_U
  *         if not changed:
  *             self.pending_bell = True
  *         return changed             # <<<<<<<<<<<<<<
- * 
+ *
  *     def left(self, num: int = 1) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4961,7 +4961,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_20_move_loop(CYTHON_U
 
   /* "welly/tui/line_edit.py":105
  *         self.cursor_pos += 1 + int(wcswidth(before) == self.cursor_pos)
- * 
+ *
  *     def _move_loop(self, func: Callable[[], None], num: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = self.cursor_pos
  *         changed = False
@@ -4985,10 +4985,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_20_move_loop(CYTHON_U
 
 /* "welly/tui/line_edit.py":118
  *         return changed
- * 
+ *
  *     def left(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._left, num)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5075,10 +5075,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_22left(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("left", 0);
 
   /* "welly/tui/line_edit.py":119
- * 
+ *
  *     def left(self, num: int = 1) -> bool:
  *         return self._move_loop(self._left, num)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def right(self, num: int = 1) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5139,10 +5139,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_22left(CYTHON_UNUSED 
 
   /* "welly/tui/line_edit.py":118
  *         return changed
- * 
+ *
  *     def left(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._left, num)
- * 
+ *
  */
 
   /* function exit code */
@@ -5162,10 +5162,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_22left(CYTHON_UNUSED 
 
 /* "welly/tui/line_edit.py":121
  *         return self._move_loop(self._left, num)
- * 
+ *
  *     def right(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._right, num)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5252,10 +5252,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_24right(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("right", 0);
 
   /* "welly/tui/line_edit.py":122
- * 
+ *
  *     def right(self, num: int = 1) -> bool:
  *         return self._move_loop(self._right, num)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def home(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5316,10 +5316,10 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_24right(CYTHON_UNUSED
 
   /* "welly/tui/line_edit.py":121
  *         return self._move_loop(self._left, num)
- * 
+ *
  *     def right(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._right, num)
- * 
+ *
  */
 
   /* function exit code */
@@ -5339,7 +5339,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_24right(CYTHON_UNUSED
 
 /* "welly/tui/line_edit.py":124
  *         return self._move_loop(self._right, num)
- * 
+ *
  *     def home(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.cursor_pos:
  *             self.cursor_pos = 0
@@ -5370,7 +5370,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_26home(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("home", 0);
 
   /* "welly/tui/line_edit.py":125
- * 
+ *
  *     def home(self) -> bool:
  *         if self.cursor_pos:             # <<<<<<<<<<<<<<
  *             self.cursor_pos = 0
@@ -5396,7 +5396,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_26home(CYTHON_UNUSED 
  *             self.cursor_pos = 0
  *             return True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(Py_True);
@@ -5404,7 +5404,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_26home(CYTHON_UNUSED 
     goto __pyx_L0;
 
     /* "welly/tui/line_edit.py":125
- * 
+ *
  *     def home(self) -> bool:
  *         if self.cursor_pos:             # <<<<<<<<<<<<<<
  *             self.cursor_pos = 0
@@ -5416,7 +5416,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_26home(CYTHON_UNUSED 
  *             self.cursor_pos = 0
  *             return True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def end(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5426,7 +5426,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_26home(CYTHON_UNUSED 
 
   /* "welly/tui/line_edit.py":124
  *         return self._move_loop(self._right, num)
- * 
+ *
  *     def home(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.cursor_pos:
  *             self.cursor_pos = 0
@@ -5445,7 +5445,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_26home(CYTHON_UNUSED 
 
 /* "welly/tui/line_edit.py":130
  *         return False
- * 
+ *
  *     def end(self) -> bool:             # <<<<<<<<<<<<<<
  *         orig = self.cursor_pos
  *         self.cursor_pos = wcswidth(self.current_input)
@@ -5479,7 +5479,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_28end(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("end", 0);
 
   /* "welly/tui/line_edit.py":131
- * 
+ *
  *     def end(self) -> bool:
  *         orig = self.cursor_pos             # <<<<<<<<<<<<<<
  *         self.cursor_pos = wcswidth(self.current_input)
@@ -5495,7 +5495,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_28end(CYTHON_UNUSED P
  *         orig = self.cursor_pos
  *         self.cursor_pos = wcswidth(self.current_input)             # <<<<<<<<<<<<<<
  *         return self.cursor_pos != orig
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_wcswidth); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5524,7 +5524,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_28end(CYTHON_UNUSED P
  *         orig = self.cursor_pos
  *         self.cursor_pos = wcswidth(self.current_input)
  *         return self.cursor_pos != orig             # <<<<<<<<<<<<<<
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5538,7 +5538,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_28end(CYTHON_UNUSED P
 
   /* "welly/tui/line_edit.py":130
  *         return False
- * 
+ *
  *     def end(self) -> bool:             # <<<<<<<<<<<<<<
  *         orig = self.cursor_pos
  *         self.cursor_pos = wcswidth(self.current_input)
@@ -5561,7 +5561,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_28end(CYTHON_UNUSED P
 
 /* "welly/tui/line_edit.py":135
  *         return self.cursor_pos != orig
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *         if key_event.type is EventType.RELEASE:
  *             return False
@@ -5646,7 +5646,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_30on_key(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("on_key", 0);
 
   /* "welly/tui/line_edit.py":136
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> bool:
  *         if key_event.type is EventType.RELEASE:             # <<<<<<<<<<<<<<
  *             return False
@@ -5678,7 +5678,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_30on_key(CYTHON_UNUSE
     goto __pyx_L0;
 
     /* "welly/tui/line_edit.py":136
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> bool:
  *         if key_event.type is EventType.RELEASE:             # <<<<<<<<<<<<<<
  *             return False
@@ -6259,7 +6259,7 @@ static PyObject *__pyx_pf_5welly_3tui_9line_edit_8LineEdit_30on_key(CYTHON_UNUSE
 
   /* "welly/tui/line_edit.py":135
  *         return self.cursor_pos != orig
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *         if key_event.type is EventType.RELEASE:
  *             return False
@@ -6436,7 +6436,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/tui/line_edit.py":13
- * 
+ *
  * class LineEdit:
  *     def __init__(self, is_password: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.clear()
@@ -6452,7 +6452,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":17
  *         self.is_password = is_password
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_input = ''
  *         self.cursor_pos = 0
@@ -6464,7 +6464,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":22
  *         self.pending_bell = False
- * 
+ *
  *     def split_at_cursor(self, delta: int = 0) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *         pos = max(0, self.cursor_pos + delta)
  *         x = truncate_point_for_length(self.current_input, pos) if pos else 0
@@ -6479,7 +6479,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":28
  *         return before, after
- * 
+ *
  *     def write(self, write: Callable[[str], None], prompt: str = '', screen_cols: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if self.pending_bell:
  *             write('\a')
@@ -6494,7 +6494,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":55
  *             write(set_cursor_shape('beam'))
- * 
+ *
  *     def add_text(self, text: str) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_input:
  *             x = truncate_point_for_length(self.current_input, self.cursor_pos) if self.cursor_pos else 0
@@ -6506,10 +6506,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":63
  *         self.cursor_pos += wcswidth(text)
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool) -> None:             # <<<<<<<<<<<<<<
  *         self.add_text(text)
- * 
+ *
  */
   __pyx_tuple__18 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_text, __pyx_n_s_in_bracketed_paste); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
@@ -6518,7 +6518,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":66
  *         self.add_text(text)
- * 
+ *
  *     def backspace(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nbefore = before[:-num]
@@ -6533,7 +6533,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":76
  *         return False
- * 
+ *
  *     def delete(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nafter = after[num:]
@@ -6548,7 +6548,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":86
  *         return False
- * 
+ *
  *     def _left(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -6560,7 +6560,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":94
  *             self.cursor_pos = wcswidth(before)
- * 
+ *
  *     def _right(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -6572,7 +6572,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":105
  *         self.cursor_pos += 1 + int(wcswidth(before) == self.cursor_pos)
- * 
+ *
  *     def _move_loop(self, func: Callable[[], None], num: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = self.cursor_pos
  *         changed = False
@@ -6584,10 +6584,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":118
  *         return changed
- * 
+ *
  *     def left(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._left, num)
- * 
+ *
  */
   __pyx_tuple__32 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_num); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
@@ -6599,10 +6599,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":121
  *         return self._move_loop(self._left, num)
- * 
+ *
  *     def right(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._right, num)
- * 
+ *
  */
   __pyx_tuple__35 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_num); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
@@ -6614,7 +6614,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":124
  *         return self._move_loop(self._right, num)
- * 
+ *
  *     def home(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.cursor_pos:
  *             self.cursor_pos = 0
@@ -6626,7 +6626,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":130
  *         return False
- * 
+ *
  *     def end(self) -> bool:             # <<<<<<<<<<<<<<
  *         orig = self.cursor_pos
  *         self.cursor_pos = wcswidth(self.current_input)
@@ -6638,7 +6638,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/line_edit.py":135
  *         return self.cursor_pos != orig
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *         if key_event.type is EventType.RELEASE:
  *             return False
@@ -6934,9 +6934,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Callable, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import truncate_point_for_length, wcswidth
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -6962,10 +6962,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":6
  * from typing import Callable, Tuple
- * 
+ *
  * from smelly.fast_data_types import truncate_point_for_length, wcswidth             # <<<<<<<<<<<<<<
  * from smelly.key_encoding import EventType, KeyEvent
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6989,10 +6989,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/line_edit.py":7
- * 
+ *
  * from smelly.fast_data_types import truncate_point_for_length, wcswidth
  * from smelly.key_encoding import EventType, KeyEvent             # <<<<<<<<<<<<<<
- * 
+ *
  * from .operations import RESTORE_CURSOR, SAVE_CURSOR, move_cursor_by, set_cursor_shape
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -7018,10 +7018,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":9
  * from smelly.key_encoding import EventType, KeyEvent
- * 
+ *
  * from .operations import RESTORE_CURSOR, SAVE_CURSOR, move_cursor_by, set_cursor_shape             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7059,8 +7059,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/line_edit.py":12
- * 
- * 
+ *
+ *
  * class LineEdit:             # <<<<<<<<<<<<<<
  *     def __init__(self, is_password: bool = False) -> None:
  *         self.clear()
@@ -7069,7 +7069,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "welly/tui/line_edit.py":13
- * 
+ *
  * class LineEdit:
  *     def __init__(self, is_password: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.clear()
@@ -7089,7 +7089,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":17
  *         self.is_password = is_password
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_input = ''
  *         self.cursor_pos = 0
@@ -7106,7 +7106,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":22
  *         self.pending_bell = False
- * 
+ *
  *     def split_at_cursor(self, delta: int = 0) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *         pos = max(0, self.cursor_pos + delta)
  *         x = truncate_point_for_length(self.current_input, pos) if pos else 0
@@ -7140,7 +7140,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":28
  *         return before, after
- * 
+ *
  *     def write(self, write: Callable[[str], None], prompt: str = '', screen_cols: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if self.pending_bell:
  *             write('\a')
@@ -7181,7 +7181,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":55
  *             write(set_cursor_shape('beam'))
- * 
+ *
  *     def add_text(self, text: str) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_input:
  *             x = truncate_point_for_length(self.current_input, self.cursor_pos) if self.cursor_pos else 0
@@ -7199,10 +7199,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":63
  *         self.cursor_pos += wcswidth(text)
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool) -> None:             # <<<<<<<<<<<<<<
  *         self.add_text(text)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7218,7 +7218,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":66
  *         self.add_text(text)
- * 
+ *
  *     def backspace(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nbefore = before[:-num]
@@ -7237,7 +7237,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":76
  *         return False
- * 
+ *
  *     def delete(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         before, after = self.split_at_cursor()
  *         nafter = after[num:]
@@ -7256,7 +7256,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":86
  *         return False
- * 
+ *
  *     def _left(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -7273,7 +7273,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":94
  *             self.cursor_pos = wcswidth(before)
- * 
+ *
  *     def _right(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.current_input:
  *             self.cursor_pos = 0
@@ -7290,7 +7290,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":105
  *         self.cursor_pos += 1 + int(wcswidth(before) == self.cursor_pos)
- * 
+ *
  *     def _move_loop(self, func: Callable[[], None], num: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = self.cursor_pos
  *         changed = False
@@ -7326,10 +7326,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":118
  *         return changed
- * 
+ *
  *     def left(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._left, num)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -7345,10 +7345,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":121
  *         return self._move_loop(self._left, num)
- * 
+ *
  *     def right(self, num: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         return self._move_loop(self._right, num)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7364,7 +7364,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":124
  *         return self._move_loop(self._right, num)
- * 
+ *
  *     def home(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.cursor_pos:
  *             self.cursor_pos = 0
@@ -7381,7 +7381,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":130
  *         return False
- * 
+ *
  *     def end(self) -> bool:             # <<<<<<<<<<<<<<
  *         orig = self.cursor_pos
  *         self.cursor_pos = wcswidth(self.current_input)
@@ -7398,7 +7398,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/line_edit.py":135
  *         return self.cursor_pos != orig
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *         if key_event.type is EventType.RELEASE:
  *             return False
@@ -7418,8 +7418,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/tui/line_edit.py":12
- * 
- * 
+ *
+ *
  * class LineEdit:             # <<<<<<<<<<<<<<
  *     def __init__(self, is_password: bool = False) -> None:
  *         self.clear()
@@ -7433,7 +7433,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/tui/line_edit.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8354,8 +8354,8 @@ static PyObject* __Pyx_PyInt_AddCObj(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -8478,8 +8478,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

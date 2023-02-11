@@ -969,8 +969,8 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_5welly_3ssh_6config___pyx_scope_struct__load_config;
 
 /* "welly/ssh/config.py":30
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
@@ -1668,8 +1668,8 @@ static PyObject *__pyx_codeobj__15;
 /* Late includes */
 
 /* "welly/ssh/config.py":20
- * 
- * 
+ *
+ *
  * def host_matches(mpat: str, hostname: str, username: str) -> bool:             # <<<<<<<<<<<<<<
  *     for pat in mpat.split():
  *         upat = '*'
@@ -1780,7 +1780,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_host_matches(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("host_matches", 0);
 
   /* "welly/ssh/config.py":21
- * 
+ *
  * def host_matches(mpat: str, hostname: str, username: str) -> bool:
  *     for pat in mpat.split():             # <<<<<<<<<<<<<<
  *         upat = '*'
@@ -1874,11 +1874,11 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_host_matches(CYTHON_UNUSED PyObjec
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_1);
         __Pyx_INCREF(__pyx_t_8);
@@ -2049,7 +2049,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_host_matches(CYTHON_UNUSED PyObjec
  *         if fnmatch.fnmatchcase(hostname, pat) and fnmatch.fnmatchcase(username, upat):
  *             return True             # <<<<<<<<<<<<<<
  *     return False
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(Py_True);
@@ -2067,7 +2067,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_host_matches(CYTHON_UNUSED PyObjec
     }
 
     /* "welly/ssh/config.py":21
- * 
+ *
  * def host_matches(mpat: str, hostname: str, username: str) -> bool:
  *     for pat in mpat.split():             # <<<<<<<<<<<<<<
  *         upat = '*'
@@ -2080,8 +2080,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_host_matches(CYTHON_UNUSED PyObjec
  *         if fnmatch.fnmatchcase(hostname, pat) and fnmatch.fnmatchcase(username, upat):
  *             return True
  *     return False             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(Py_False);
@@ -2089,8 +2089,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_host_matches(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "welly/ssh/config.py":20
- * 
- * 
+ *
+ *
  * def host_matches(mpat: str, hostname: str, username: str) -> bool:             # <<<<<<<<<<<<<<
  *     for pat in mpat.split():
  *         upat = '*'
@@ -2114,8 +2114,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_host_matches(CYTHON_UNUSED PyObjec
 }
 
 /* "welly/ssh/config.py":30
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
@@ -2202,7 +2202,7 @@ static PyObject *__pyx_pw_5welly_3ssh_6config_3load_config(PyObject *__pyx_self,
 
 /* "welly/ssh/config.py":34
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
- * 
+ *
  *     def merge_dicts(base: Dict[str, Any], vals: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         base_phd = get_per_hosts_dict(base)
  *         vals_phd = get_per_hosts_dict(vals)
@@ -2301,7 +2301,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_merge_dicts(PyObject
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "welly/ssh/config.py":35
- * 
+ *
  *     def merge_dicts(base: Dict[str, Any], vals: Dict[str, Any]) -> Dict[str, Any]:
  *         base_phd = get_per_hosts_dict(base)             # <<<<<<<<<<<<<<
  *         vals_phd = get_per_hosts_dict(vals)
@@ -2562,7 +2562,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_merge_dicts(PyObject
  *         ans: Dict[str, Any] = vals_phd.pop(vals['hostname'])
  *         ans['per_host_dicts'] = vals_phd             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
   if (unlikely(PyObject_SetItem(__pyx_v_ans, __pyx_n_s_per_host_dicts, __pyx_v_vals_phd) < 0)) __PYX_ERR(0, 40, __pyx_L1_error)
 
@@ -2570,7 +2570,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_merge_dicts(PyObject
  *         ans: Dict[str, Any] = vals_phd.pop(vals['hostname'])
  *         ans['per_host_dicts'] = vals_phd
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2580,7 +2580,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_merge_dicts(PyObject
 
   /* "welly/ssh/config.py":34
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
- * 
+ *
  *     def merge_dicts(base: Dict[str, Any], vals: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         base_phd = get_per_hosts_dict(base)
  *         vals_phd = get_per_hosts_dict(vals)
@@ -2610,7 +2610,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_merge_dicts(PyObject
 
 /* "welly/ssh/config.py":43
  *         return ans
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = init_results_dict(create_result_dict())
  *         parse_config_base(lines, parse_conf_item, ans)
@@ -2649,7 +2649,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_2parse_config(PyObje
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "welly/ssh/config.py":44
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:
  *         ans: Dict[str, Any] = init_results_dict(create_result_dict())             # <<<<<<<<<<<<<<
  *         parse_config_base(lines, parse_conf_item, ans)
@@ -2698,7 +2698,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_2parse_config(PyObje
  *         ans: Dict[str, Any] = init_results_dict(create_result_dict())
  *         parse_config_base(lines, parse_conf_item, ans)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_parse_config_base); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2757,7 +2757,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_2parse_config(PyObje
  *         ans: Dict[str, Any] = init_results_dict(create_result_dict())
  *         parse_config_base(lines, parse_conf_item, ans)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2767,7 +2767,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_2parse_config(PyObje
 
   /* "welly/ssh/config.py":43
  *         return ans
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = init_results_dict(create_result_dict())
  *         parse_config_base(lines, parse_conf_item, ans)
@@ -2789,8 +2789,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_11load_config_2parse_config(PyObje
 }
 
 /* "welly/ssh/config.py":30
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
@@ -2841,11 +2841,11 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
   __Pyx_INCREF(__pyx_v_paths);
 
   /* "welly/ssh/config.py":31
- * 
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item             # <<<<<<<<<<<<<<
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
- * 
+ *
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2885,7 +2885,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict             # <<<<<<<<<<<<<<
- * 
+ *
  *     def merge_dicts(base: Dict[str, Any], vals: Dict[str, Any]) -> Dict[str, Any]:
  */
   __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
@@ -2923,7 +2923,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
 
   /* "welly/ssh/config.py":34
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
- * 
+ *
  *     def merge_dicts(base: Dict[str, Any], vals: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         base_phd = get_per_hosts_dict(base)
  *         vals_phd = get_per_hosts_dict(vals)
@@ -2993,7 +2993,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
 
   /* "welly/ssh/config.py":43
  *         return ans
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = init_results_dict(create_result_dict())
  *         parse_config_base(lines, parse_conf_item, ans)
@@ -3034,7 +3034,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
 
   /* "welly/ssh/config.py":48
  *         return ans
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()             # <<<<<<<<<<<<<<
  *     first_seen_positions.clear()
  *     first_seen_positions['*'] = 0
@@ -3053,7 +3053,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
   __pyx_t_1 = 0;
 
   /* "welly/ssh/config.py":49
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  *     first_seen_positions.clear()             # <<<<<<<<<<<<<<
  *     first_seen_positions['*'] = 0
@@ -3134,11 +3134,11 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -3425,11 +3425,11 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_10 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_10 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_10);
           __Pyx_INCREF(__pyx_t_1);
@@ -3473,7 +3473,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
  *                     bv = final_dict.setdefault(k, {})
  *                     bv.update(v)
  */
-        __pyx_t_5 = PyDict_Check(__pyx_v_v); 
+        __pyx_t_5 = PyDict_Check(__pyx_v_v);
         __pyx_t_14 = (__pyx_t_5 != 0);
         if (__pyx_t_14) {
 
@@ -3574,7 +3574,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
  *                     final_dict[k] = v
  *     first_seen_positions.clear()             # <<<<<<<<<<<<<<
  *     return SSHOptions(final_dict)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_first_seen_positions, __pyx_n_s_clear); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3599,8 +3599,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
  *                     final_dict[k] = v
  *     first_seen_positions.clear()
  *     return SSHOptions(final_dict)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_SSHOptions); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
@@ -3625,8 +3625,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "welly/ssh/config.py":30
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
@@ -3663,8 +3663,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_2load_config(CYTHON_UNUSED PyObjec
 }
 
 /* "welly/ssh/config.py":67
- * 
- * 
+ *
+ *
  * def init_config(hostname: str, username: str, overrides: Optional[Iterable[str]] = None) -> SSHOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf))
  *     return load_config(*config, overrides=overrides, hostname=hostname, username=username)
@@ -3773,7 +3773,7 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_4init_config(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("init_config", 0);
 
   /* "welly/ssh/config.py":68
- * 
+ *
  * def init_config(hostname: str, username: str, overrides: Optional[Iterable[str]] = None) -> SSHOptions:
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf))             # <<<<<<<<<<<<<<
  *     return load_config(*config, overrides=overrides, hostname=hostname, username=username)
@@ -3861,8 +3861,8 @@ static PyObject *__pyx_pf_5welly_3ssh_6config_4init_config(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "welly/ssh/config.py":67
- * 
- * 
+ *
+ *
  * def init_config(hostname: str, username: str, overrides: Optional[Iterable[str]] = None) -> SSHOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf))
  *     return load_config(*config, overrides=overrides, hostname=hostname, username=username)
@@ -4189,7 +4189,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/config.py":34
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
- * 
+ *
  *     def merge_dicts(base: Dict[str, Any], vals: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         base_phd = get_per_hosts_dict(base)
  *         vals_phd = get_per_hosts_dict(vals)
@@ -4201,7 +4201,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/config.py":43
  *         return ans
- * 
+ *
  *     def parse_config(lines: Iterable[str]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         ans: Dict[str, Any] = init_results_dict(create_result_dict())
  *         parse_config_base(lines, parse_conf_item, ans)
@@ -4212,8 +4212,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_config_py, __pyx_n_s_parse_config, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "welly/ssh/config.py":20
- * 
- * 
+ *
+ *
  * def host_matches(mpat: str, hostname: str, username: str) -> bool:             # <<<<<<<<<<<<<<
  *     for pat in mpat.split():
  *         upat = '*'
@@ -4224,8 +4224,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_config_py, __pyx_n_s_host_matches, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 20, __pyx_L1_error)
 
   /* "welly/ssh/config.py":30
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
@@ -4236,8 +4236,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(0, 3, 22, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_config_py, __pyx_n_s_load_config_2, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "welly/ssh/config.py":67
- * 
- * 
+ *
+ *
  * def init_config(hostname: str, username: str, overrides: Optional[Iterable[str]] = None) -> SSHOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf))
  *     return load_config(*config, overrides=overrides, hostname=hostname, username=username)
@@ -4550,8 +4550,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/ssh/config.py":5
- * 
- * 
+ *
+ *
  * import fnmatch             # <<<<<<<<<<<<<<
  * import os
  * from typing import Any, Dict, Iterable, Optional
@@ -4562,11 +4562,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/config.py":6
- * 
+ *
  * import fnmatch
  * import os             # <<<<<<<<<<<<<<
  * from typing import Any, Dict, Iterable, Optional
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4577,7 +4577,7 @@ if (!__Pyx_RefNanny) {
  * import fnmatch
  * import os
  * from typing import Any, Dict, Iterable, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.conf.utils import load_config as _load_config
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -4617,7 +4617,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/config.py":9
  * from typing import Any, Dict, Iterable, Optional
- * 
+ *
  * from smelly.conf.utils import load_config as _load_config             # <<<<<<<<<<<<<<
  * from smelly.conf.utils import parse_config_base, resolve_config
  * from smelly.constants import config_dir
@@ -4637,11 +4637,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/config.py":10
- * 
+ *
  * from smelly.conf.utils import load_config as _load_config
  * from smelly.conf.utils import parse_config_base, resolve_config             # <<<<<<<<<<<<<<
  * from smelly.constants import config_dir
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4668,7 +4668,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.conf.utils import load_config as _load_config
  * from smelly.conf.utils import parse_config_base, resolve_config
  * from smelly.constants import config_dir             # <<<<<<<<<<<<<<
- * 
+ *
  * from .options.types import Options as SSHOptions
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -4687,10 +4687,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/config.py":13
  * from smelly.constants import config_dir
- * 
+ *
  * from .options.types import Options as SSHOptions             # <<<<<<<<<<<<<<
  * from .options.types import defaults
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4707,10 +4707,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/config.py":14
- * 
+ *
  * from .options.types import Options as SSHOptions
  * from .options.types import defaults             # <<<<<<<<<<<<<<
- * 
+ *
  * SYSTEM_CONF = '/etc/xdg/smelly/ssh.conf'
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -4729,19 +4729,19 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/config.py":16
  * from .options.types import defaults
- * 
+ *
  * SYSTEM_CONF = '/etc/xdg/smelly/ssh.conf'             # <<<<<<<<<<<<<<
  * defconf = os.path.join(config_dir, 'ssh.conf')
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_SYSTEM_CONF, __pyx_kp_s_etc_xdg_smelly_ssh_conf) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
 
   /* "welly/ssh/config.py":17
- * 
+ *
  * SYSTEM_CONF = '/etc/xdg/smelly/ssh.conf'
  * defconf = os.path.join(config_dir, 'ssh.conf')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4769,8 +4769,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/config.py":20
- * 
- * 
+ *
+ *
  * def host_matches(mpat: str, hostname: str, username: str) -> bool:             # <<<<<<<<<<<<<<
  *     for pat in mpat.split():
  *         upat = '*'
@@ -4789,8 +4789,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/config.py":30
- * 
- * 
+ *
+ *
  * def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname: str = '!', username: str = '') -> SSHOptions:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, merge_result_dicts, parse_conf_item
  *     from .options.utils import first_seen_positions, get_per_hosts_dict, init_results_dict
@@ -4832,8 +4832,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/ssh/config.py":67
- * 
- * 
+ *
+ *
  * def init_config(hostname: str, username: str, overrides: Optional[Iterable[str]] = None) -> SSHOptions:             # <<<<<<<<<<<<<<
  *     config = tuple(resolve_config(SYSTEM_CONF, defconf))
  *     return load_config(*config, overrides=overrides, hostname=hostname, username=username)
@@ -4870,7 +4870,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/ssh/config.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);

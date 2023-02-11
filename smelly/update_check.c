@@ -1855,11 +1855,11 @@ static PyObject *__pyx_codeobj__32;
 /* Late includes */
 
 /* "smelly/update_check.py":28
- * 
- * 
+ *
+ *
  * def notification_activated() -> None:             # <<<<<<<<<<<<<<
  *     open_url(CHANGELOG_URL)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1889,11 +1889,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_notification_activated(CYTHON_U
   __Pyx_RefNannySetupContext("notification_activated", 0);
 
   /* "smelly/update_check.py":29
- * 
+ *
  * def notification_activated() -> None:
  *     open_url(CHANGELOG_URL)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_open_url); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1918,11 +1918,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_notification_activated(CYTHON_U
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":28
- * 
- * 
+ *
+ *
  * def notification_activated() -> None:             # <<<<<<<<<<<<<<
  *     open_url(CHANGELOG_URL)
- * 
+ *
  */
 
   /* function exit code */
@@ -1942,8 +1942,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_notification_activated(CYTHON_U
 }
 
 /* "smelly/update_check.py":32
- * 
- * 
+ *
+ *
  * def version_notification_log() -> str:             # <<<<<<<<<<<<<<
  *     override = getattr(version_notification_log, 'override', None)
  *     if isinstance(override, str):
@@ -1981,7 +1981,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_2version_notification_log(CYTHO
   __Pyx_RefNannySetupContext("version_notification_log", 0);
 
   /* "smelly/update_check.py":33
- * 
+ *
  * def version_notification_log() -> str:
  *     override = getattr(version_notification_log, 'override', None)             # <<<<<<<<<<<<<<
  *     if isinstance(override, str):
@@ -2002,7 +2002,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_2version_notification_log(CYTHO
  *         return override
  *     return os.path.join(cache_dir(), 'new-version-notifications-1.txt')
  */
-  __pyx_t_3 = PyString_Check(__pyx_v_override); 
+  __pyx_t_3 = PyString_Check(__pyx_v_override);
   __pyx_t_4 = (__pyx_t_3 != 0);
   if (__pyx_t_4) {
 
@@ -2011,7 +2011,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_2version_notification_log(CYTHO
  *     if isinstance(override, str):
  *         return override             # <<<<<<<<<<<<<<
  *     return os.path.join(cache_dir(), 'new-version-notifications-1.txt')
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     if (!(likely(PyString_CheckExact(__pyx_v_override))||((__pyx_v_override) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "str", Py_TYPE(__pyx_v_override)->tp_name), 0))) __PYX_ERR(0, 35, __pyx_L1_error)
@@ -2032,8 +2032,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_2version_notification_log(CYTHO
  *     if isinstance(override, str):
  *         return override
  *     return os.path.join(cache_dir(), 'new-version-notifications-1.txt')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
@@ -2114,8 +2114,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_2version_notification_log(CYTHO
   goto __pyx_L0;
 
   /* "smelly/update_check.py":32
- * 
- * 
+ *
+ *
  * def version_notification_log() -> str:             # <<<<<<<<<<<<<<
  *     override = getattr(version_notification_log, 'override', None)
  *     if isinstance(override, str):
@@ -2138,8 +2138,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_2version_notification_log(CYTHO
 }
 
 /* "smelly/update_check.py":39
- * 
- * 
+ *
+ *
  * def notify_new_version(release_version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notify('smelly update available!', 'smelly version {} released'.format(
  *         '.'.join(map(str, release_version))), identifier='new-version', )
@@ -2173,11 +2173,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_4notify_new_version(CYTHON_UNUS
   __Pyx_RefNannySetupContext("notify_new_version", 0);
 
   /* "smelly/update_check.py":40
- * 
+ *
  * def notify_new_version(release_version: Version) -> None:
  *     notify('smelly update available!', 'smelly version {} released'.format(             # <<<<<<<<<<<<<<
  *         '.'.join(map(str, release_version))), identifier='new-version', )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_notify); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2188,8 +2188,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_4notify_new_version(CYTHON_UNUS
  * def notify_new_version(release_version: Version) -> None:
  *     notify('smelly update available!', 'smelly version {} released'.format(
  *         '.'.join(map(str, release_version))), identifier='new-version', )             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2223,11 +2223,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_4notify_new_version(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/update_check.py":40
- * 
+ *
  * def notify_new_version(release_version: Version) -> None:
  *     notify('smelly update available!', 'smelly version {} released'.format(             # <<<<<<<<<<<<<<
  *         '.'.join(map(str, release_version))), identifier='new-version', )
- * 
+ *
  */
   __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2242,19 +2242,19 @@ static PyObject *__pyx_pf_6smelly_12update_check_4notify_new_version(CYTHON_UNUS
  * def notify_new_version(release_version: Version) -> None:
  *     notify('smelly update available!', 'smelly version {} released'.format(
  *         '.'.join(map(str, release_version))), identifier='new-version', )             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_identifier, __pyx_kp_s_new_version) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
 
   /* "smelly/update_check.py":40
- * 
+ *
  * def notify_new_version(release_version: Version) -> None:
  *     notify('smelly update available!', 'smelly version {} released'.format(             # <<<<<<<<<<<<<<
  *         '.'.join(map(str, release_version))), identifier='new-version', )
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2264,8 +2264,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_4notify_new_version(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/update_check.py":39
- * 
- * 
+ *
+ *
  * def notify_new_version(release_version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notify('smelly update available!', 'smelly version {} released'.format(
  *         '.'.join(map(str, release_version))), identifier='new-version', )
@@ -2289,8 +2289,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_4notify_new_version(CYTHON_UNUS
 }
 
 /* "smelly/update_check.py":44
- * 
- * 
+ *
+ *
  * def get_released_version() -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         raw = urlopen(RELEASED_VERSION_URL).read().decode('utf-8').strip()
@@ -2331,7 +2331,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_6get_released_version(CYTHON_UN
   __Pyx_RefNannySetupContext("get_released_version", 0);
 
   /* "smelly/update_check.py":45
- * 
+ *
  * def get_released_version() -> str:
  *     try:             # <<<<<<<<<<<<<<
  *         raw = urlopen(RELEASED_VERSION_URL).read().decode('utf-8').strip()
@@ -2431,7 +2431,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_6get_released_version(CYTHON_UN
       __pyx_t_4 = 0;
 
       /* "smelly/update_check.py":45
- * 
+ *
  * def get_released_version() -> str:
  *     try:             # <<<<<<<<<<<<<<
  *         raw = urlopen(RELEASED_VERSION_URL).read().decode('utf-8').strip()
@@ -2471,7 +2471,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_6get_released_version(CYTHON_UN
  *     except Exception:
  *         raw = '0.0.0'             # <<<<<<<<<<<<<<
  *     return str(raw)
- * 
+ *
  */
       __Pyx_INCREF(__pyx_kp_s_0_0_0);
       __Pyx_XDECREF_SET(__pyx_v_raw, __pyx_kp_s_0_0_0);
@@ -2484,7 +2484,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_6get_released_version(CYTHON_UN
     __pyx_L5_except_error:;
 
     /* "smelly/update_check.py":45
- * 
+ *
  * def get_released_version() -> str:
  *     try:             # <<<<<<<<<<<<<<
  *         raw = urlopen(RELEASED_VERSION_URL).read().decode('utf-8').strip()
@@ -2507,8 +2507,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_6get_released_version(CYTHON_UN
  *     except Exception:
  *         raw = '0.0.0'
  *     return str(raw)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_raw); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 49, __pyx_L1_error)
@@ -2519,8 +2519,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_6get_released_version(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly/update_check.py":44
- * 
- * 
+ *
+ *
  * def get_released_version() -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         raw = urlopen(RELEASED_VERSION_URL).read().decode('utf-8').strip()
@@ -2545,8 +2545,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_6get_released_version(CYTHON_UN
 }
 
 /* "smelly/update_check.py":52
- * 
- * 
+ *
+ *
  * def parse_line(line: str) -> Notification:             # <<<<<<<<<<<<<<
  *     parts = line.split(',')
  *     version, timestamp, count = parts
@@ -2597,7 +2597,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_8parse_line(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("parse_line", 0);
 
   /* "smelly/update_check.py":53
- * 
+ *
  * def parse_line(line: str) -> Notification:
  *     parts = line.split(',')             # <<<<<<<<<<<<<<
  *     version, timestamp, count = parts
@@ -2625,13 +2625,13 @@ static PyObject *__pyx_pf_6smelly_12update_check_8parse_line(CYTHON_UNUSED PyObj
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_2);
@@ -2705,7 +2705,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_8parse_line(CYTHON_UNUSED PyObj
  *     parts = version.split('.')
  *     v = Version(int(parts[0]), int(parts[1]), int(parts[2]))             # <<<<<<<<<<<<<<
  *     return Notification(v, float(timestamp), int(count))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Version); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2785,8 +2785,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_8parse_line(CYTHON_UNUSED PyObj
  *     parts = version.split('.')
  *     v = Version(int(parts[0]), int(parts[1]), int(parts[2]))
  *     return Notification(v, float(timestamp), int(count))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Notification); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -2852,8 +2852,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_8parse_line(CYTHON_UNUSED PyObj
   goto __pyx_L0;
 
   /* "smelly/update_check.py":52
- * 
- * 
+ *
+ *
  * def parse_line(line: str) -> Notification:             # <<<<<<<<<<<<<<
  *     parts = line.split(',')
  *     version, timestamp, count = parts
@@ -2882,8 +2882,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_8parse_line(CYTHON_UNUSED PyObj
 }
 
 /* "smelly/update_check.py":60
- * 
- * 
+ *
+ *
  * def read_cache() -> Dict[Version, Notification]:             # <<<<<<<<<<<<<<
  *     notified_versions = {}
  *     with suppress(FileNotFoundError):
@@ -2936,7 +2936,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_10read_cache(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("read_cache", 0);
 
   /* "smelly/update_check.py":61
- * 
+ *
  * def read_cache() -> Dict[Version, Notification]:
  *     notified_versions = {}             # <<<<<<<<<<<<<<
  *     with suppress(FileNotFoundError):
@@ -3235,7 +3235,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_10read_cache(CYTHON_UNUSED PyOb
  *                     continue
  *                 notified_versions[n.version] = n             # <<<<<<<<<<<<<<
  *     return notified_versions
- * 
+ *
  */
                     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_n, __pyx_n_s_version); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L17_error)
                     __Pyx_GOTREF(__pyx_t_4);
@@ -3292,7 +3292,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_10read_cache(CYTHON_UNUSED PyOb
                     __Pyx_GIVEREF(__pyx_t_4);
                     __Pyx_XGIVEREF(__pyx_t_1);
                     __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_4, __pyx_t_1);
-                    __pyx_t_3 = 0; __pyx_t_4 = 0; __pyx_t_1 = 0; 
+                    __pyx_t_3 = 0; __pyx_t_4 = 0; __pyx_t_1 = 0;
                     __PYX_ERR(0, 63, __pyx_L19_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3373,7 +3373,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_10read_cache(CYTHON_UNUSED PyOb
             __Pyx_GIVEREF(__pyx_t_4);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_4, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 62, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -3419,8 +3419,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_10read_cache(CYTHON_UNUSED PyOb
  *                     continue
  *                 notified_versions[n.version] = n
  *     return notified_versions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_notified_versions);
@@ -3428,8 +3428,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_10read_cache(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/update_check.py":60
- * 
- * 
+ *
+ *
  * def read_cache() -> Dict[Version, Notification]:             # <<<<<<<<<<<<<<
  *     notified_versions = {}
  *     with suppress(FileNotFoundError):
@@ -3454,8 +3454,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_10read_cache(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/update_check.py":73
- * 
- * 
+ *
+ *
  * def already_notified(version: Tuple[int, int, int]) -> bool:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     return version in notified_versions
@@ -3489,11 +3489,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_12already_notified(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("already_notified", 0);
 
   /* "smelly/update_check.py":74
- * 
+ *
  * def already_notified(version: Tuple[int, int, int]) -> bool:
  *     notified_versions = read_cache()             # <<<<<<<<<<<<<<
  *     return version in notified_versions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_read_cache); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3519,8 +3519,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_12already_notified(CYTHON_UNUSE
  * def already_notified(version: Tuple[int, int, int]) -> bool:
  *     notified_versions = read_cache()
  *     return version in notified_versions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_4 = (__Pyx_PySequence_ContainsTF(__pyx_v_version, __pyx_v_notified_versions, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 75, __pyx_L1_error)
@@ -3531,8 +3531,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_12already_notified(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/update_check.py":73
- * 
- * 
+ *
+ *
  * def already_notified(version: Tuple[int, int, int]) -> bool:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     return version in notified_versions
@@ -3553,8 +3553,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_12already_notified(CYTHON_UNUSE
 }
 
 /* "smelly/update_check.py":78
- * 
- * 
+ *
+ *
  * def save_notification(version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     if version in notified_versions:
@@ -3601,7 +3601,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_14save_notification(CYTHON_UNUS
   __Pyx_INCREF(__pyx_v_version);
 
   /* "smelly/update_check.py":79
- * 
+ *
  * def save_notification(version: Version) -> None:
  *     notified_versions = read_cache()             # <<<<<<<<<<<<<<
  *     if version in notified_versions:
@@ -3908,7 +3908,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_14save_notification(CYTHON_UNUS
  *                 '.'.join(map(str, n.version)),
  *                 n.time_of_last_notification, n.notification_count))             # <<<<<<<<<<<<<<
  *     atomic_save('\n'.join(lines).encode('utf-8'), version_notification_log())
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_n, __pyx_n_s_time_of_last_notification); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3993,8 +3993,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_14save_notification(CYTHON_UNUS
  *                 '.'.join(map(str, n.version)),
  *                 n.time_of_last_notification, n.notification_count))
  *     atomic_save('\n'.join(lines).encode('utf-8'), version_notification_log())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_atomic_save); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -4087,8 +4087,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_14save_notification(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/update_check.py":78
- * 
- * 
+ *
+ *
  * def save_notification(version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     if version in notified_versions:
@@ -4120,8 +4120,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_14save_notification(CYTHON_UNUS
 }
 
 /* "smelly/update_check.py":97
- * 
- * 
+ *
+ *
  * def process_current_release(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     release_version = Version(*tuple(map(int, raw.split('.'))))
  *     if release_version > version and not already_notified(release_version):
@@ -4165,7 +4165,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_16process_current_release(CYTHO
   __Pyx_RefNannySetupContext("process_current_release", 0);
 
   /* "smelly/update_check.py":98
- * 
+ *
  * def process_current_release(raw: str) -> None:
  *     release_version = Version(*tuple(map(int, raw.split('.'))))             # <<<<<<<<<<<<<<
  *     if release_version > version and not already_notified(release_version):
@@ -4243,7 +4243,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_16process_current_release(CYTHO
  *     if release_version > version and not already_notified(release_version):
  *         save_notification(release_version)             # <<<<<<<<<<<<<<
  *         notify_new_version(release_version)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_save_notification); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4268,8 +4268,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_16process_current_release(CYTHO
  *     if release_version > version and not already_notified(release_version):
  *         save_notification(release_version)
  *         notify_new_version(release_version)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_notify_new_version); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4300,8 +4300,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_16process_current_release(CYTHO
   }
 
   /* "smelly/update_check.py":97
- * 
- * 
+ *
+ *
  * def process_current_release(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     release_version = Version(*tuple(map(int, raw.split('.'))))
  *     if release_version > version and not already_notified(release_version):
@@ -4324,8 +4324,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_16process_current_release(CYTHO
 }
 
 /* "smelly/update_check.py":104
- * 
- * 
+ *
+ *
  * def run_worker() -> None:             # <<<<<<<<<<<<<<
  *     import random
  *     import time
@@ -4367,11 +4367,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("run_worker", 0);
 
   /* "smelly/update_check.py":105
- * 
+ *
  * def run_worker() -> None:
  *     import random             # <<<<<<<<<<<<<<
  *     import time
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_random, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4382,7 +4382,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
  * def run_worker() -> None:
  *     import random
  *     import time             # <<<<<<<<<<<<<<
- * 
+ *
  *     time.sleep(random.randint(1000, 4000) / 1000)
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_time, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
@@ -4392,7 +4392,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
 
   /* "smelly/update_check.py":108
  *     import time
- * 
+ *
  *     time.sleep(random.randint(1000, 4000) / 1000)             # <<<<<<<<<<<<<<
  *     with suppress(BrokenPipeError):  # happens if parent process is killed before us
  *         print(get_released_version())
@@ -4426,11 +4426,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":109
- * 
+ *
  *     time.sleep(random.randint(1000, 4000) / 1000)
  *     with suppress(BrokenPipeError):  # happens if parent process is killed before us             # <<<<<<<<<<<<<<
  *         print(get_released_version())
- * 
+ *
  */
   /*with:*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_suppress); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
@@ -4488,8 +4488,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
  *     time.sleep(random.randint(1000, 4000) / 1000)
  *     with suppress(BrokenPipeError):  # happens if parent process is killed before us
  *         print(get_released_version())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_get_released_version); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -4512,11 +4512,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
           /* "smelly/update_check.py":109
- * 
+ *
  *     time.sleep(random.randint(1000, 4000) / 1000)
  *     with suppress(BrokenPipeError):  # happens if parent process is killed before us             # <<<<<<<<<<<<<<
  *         print(get_released_version())
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -4550,7 +4550,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 109, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4593,8 +4593,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
   }
 
   /* "smelly/update_check.py":104
- * 
- * 
+ *
+ *
  * def run_worker() -> None:             # <<<<<<<<<<<<<<
  *     import random
  *     import time
@@ -4619,8 +4619,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_18run_worker(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/update_check.py":113
- * 
- * 
+ *
+ *
  * def update_check() -> bool:             # <<<<<<<<<<<<<<
  *     try:
  *         p = subprocess.Popen(
@@ -4662,7 +4662,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_20update_check(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("update_check", 0);
 
   /* "smelly/update_check.py":114
- * 
+ *
  * def update_check() -> bool:
  *     try:             # <<<<<<<<<<<<<<
  *         p = subprocess.Popen(
@@ -4776,7 +4776,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_20update_check(CYTHON_UNUSED Py
       __pyx_t_8 = 0;
 
       /* "smelly/update_check.py":114
- * 
+ *
  * def update_check() -> bool:
  *     try:             # <<<<<<<<<<<<<<
  *         p = subprocess.Popen(
@@ -4862,7 +4862,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_20update_check(CYTHON_UNUSED Py
     __pyx_L5_except_error:;
 
     /* "smelly/update_check.py":114
- * 
+ *
  * def update_check() -> bool:
  *     try:             # <<<<<<<<<<<<<<
  *         p = subprocess.Popen(
@@ -4916,7 +4916,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_20update_check(CYTHON_UNUSED Py
  *     monitor_pid(p.pid)
  *     get_boss().set_update_check_process(p)             # <<<<<<<<<<<<<<
  *     return True
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_get_boss); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 124, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -4959,8 +4959,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_20update_check(CYTHON_UNUSED Py
  *     monitor_pid(p.pid)
  *     get_boss().set_update_check_process(p)
  *     return True             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(Py_True);
@@ -4968,8 +4968,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_20update_check(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/update_check.py":113
- * 
- * 
+ *
+ *
  * def update_check() -> bool:             # <<<<<<<<<<<<<<
  *     try:
  *         p = subprocess.Popen(
@@ -4995,11 +4995,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_20update_check(CYTHON_UNUSED Py
 }
 
 /* "smelly/update_check.py":128
- * 
- * 
+ *
+ *
  * def update_check_callback(timer_id: Optional[int]) -> None:             # <<<<<<<<<<<<<<
  *     update_check()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5028,11 +5028,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_22update_check_callback(CYTHON_
   __Pyx_RefNannySetupContext("update_check_callback", 0);
 
   /* "smelly/update_check.py":129
- * 
+ *
  * def update_check_callback(timer_id: Optional[int]) -> None:
  *     update_check()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_update_check); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5054,11 +5054,11 @@ static PyObject *__pyx_pf_6smelly_12update_check_22update_check_callback(CYTHON_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":128
- * 
- * 
+ *
+ *
  * def update_check_callback(timer_id: Optional[int]) -> None:             # <<<<<<<<<<<<<<
  *     update_check()
- * 
+ *
  */
 
   /* function exit code */
@@ -5077,8 +5077,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_22update_check_callback(CYTHON_
 }
 
 /* "smelly/update_check.py":132
- * 
- * 
+ *
+ *
  * def run_update_check(interval: float = CHECK_INTERVAL) -> None:             # <<<<<<<<<<<<<<
  *     if update_check():
  *         add_timer(update_check_callback, interval)
@@ -5200,7 +5200,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_24run_update_check(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("run_update_check", 0);
 
   /* "smelly/update_check.py":133
- * 
+ *
  * def run_update_check(interval: float = CHECK_INTERVAL) -> None:
  *     if update_check():             # <<<<<<<<<<<<<<
  *         add_timer(update_check_callback, interval)
@@ -5285,7 +5285,7 @@ static PyObject *__pyx_pf_6smelly_12update_check_24run_update_check(CYTHON_UNUSE
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/update_check.py":133
- * 
+ *
  * def run_update_check(interval: float = CHECK_INTERVAL) -> None:
  *     if update_check():             # <<<<<<<<<<<<<<
  *         add_timer(update_check_callback, interval)
@@ -5293,8 +5293,8 @@ static PyObject *__pyx_pf_6smelly_12update_check_24run_update_check(CYTHON_UNUSE
   }
 
   /* "smelly/update_check.py":132
- * 
- * 
+ *
+ *
  * def run_update_check(interval: float = CHECK_INTERVAL) -> None:             # <<<<<<<<<<<<<<
  *     if update_check():
  *         add_timer(update_check_callback, interval)
@@ -5514,7 +5514,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/update_check.py":108
  *     import time
- * 
+ *
  *     time.sleep(random.randint(1000, 4000) / 1000)             # <<<<<<<<<<<<<<
  *     with suppress(BrokenPipeError):  # happens if parent process is killed before us
  *         print(get_released_version())
@@ -5525,7 +5525,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/update_check.py":17
  * from .utils import log_error, open_url
- * 
+ *
  * CHANGELOG_URL = website_url('changelog')             # <<<<<<<<<<<<<<
  * RELEASED_VERSION_URL = website_url() + 'current-version.txt'
  * CHECK_INTERVAL = 24 * 60 * 60.0
@@ -5535,17 +5535,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__7);
 
   /* "smelly/update_check.py":28
- * 
- * 
+ *
+ *
  * def notification_activated() -> None:             # <<<<<<<<<<<<<<
  *     open_url(CHANGELOG_URL)
- * 
+ *
  */
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_notification_activated, 28, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 28, __pyx_L1_error)
 
   /* "smelly/update_check.py":32
- * 
- * 
+ *
+ *
  * def version_notification_log() -> str:             # <<<<<<<<<<<<<<
  *     override = getattr(version_notification_log, 'override', None)
  *     if isinstance(override, str):
@@ -5556,8 +5556,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_version_notification_log, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 32, __pyx_L1_error)
 
   /* "smelly/update_check.py":39
- * 
- * 
+ *
+ *
  * def notify_new_version(release_version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notify('smelly update available!', 'smelly version {} released'.format(
  *         '.'.join(map(str, release_version))), identifier='new-version', )
@@ -5568,8 +5568,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_notify_new_version, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 39, __pyx_L1_error)
 
   /* "smelly/update_check.py":44
- * 
- * 
+ *
+ *
  * def get_released_version() -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         raw = urlopen(RELEASED_VERSION_URL).read().decode('utf-8').strip()
@@ -5580,8 +5580,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_get_released_version, 44, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 44, __pyx_L1_error)
 
   /* "smelly/update_check.py":52
- * 
- * 
+ *
+ *
  * def parse_line(line: str) -> Notification:             # <<<<<<<<<<<<<<
  *     parts = line.split(',')
  *     version, timestamp, count = parts
@@ -5592,8 +5592,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_parse_line, 52, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 52, __pyx_L1_error)
 
   /* "smelly/update_check.py":60
- * 
- * 
+ *
+ *
  * def read_cache() -> Dict[Version, Notification]:             # <<<<<<<<<<<<<<
  *     notified_versions = {}
  *     with suppress(FileNotFoundError):
@@ -5604,8 +5604,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_read_cache, 60, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 60, __pyx_L1_error)
 
   /* "smelly/update_check.py":73
- * 
- * 
+ *
+ *
  * def already_notified(version: Tuple[int, int, int]) -> bool:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     return version in notified_versions
@@ -5616,8 +5616,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_already_notified, 73, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 73, __pyx_L1_error)
 
   /* "smelly/update_check.py":78
- * 
- * 
+ *
+ *
  * def save_notification(version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     if version in notified_versions:
@@ -5628,8 +5628,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_save_notification, 78, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 78, __pyx_L1_error)
 
   /* "smelly/update_check.py":97
- * 
- * 
+ *
+ *
  * def process_current_release(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     release_version = Version(*tuple(map(int, raw.split('.'))))
  *     if release_version > version and not already_notified(release_version):
@@ -5640,8 +5640,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_process_current_release, 97, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 97, __pyx_L1_error)
 
   /* "smelly/update_check.py":104
- * 
- * 
+ *
+ *
  * def run_worker() -> None:             # <<<<<<<<<<<<<<
  *     import random
  *     import time
@@ -5652,8 +5652,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_run_worker, 104, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 104, __pyx_L1_error)
 
   /* "smelly/update_check.py":113
- * 
- * 
+ *
+ *
  * def update_check() -> bool:             # <<<<<<<<<<<<<<
  *     try:
  *         p = subprocess.Popen(
@@ -5664,11 +5664,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_update_check, 113, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 113, __pyx_L1_error)
 
   /* "smelly/update_check.py":128
- * 
- * 
+ *
+ *
  * def update_check_callback(timer_id: Optional[int]) -> None:             # <<<<<<<<<<<<<<
  *     update_check()
- * 
+ *
  */
   __pyx_tuple__29 = PyTuple_Pack(1, __pyx_n_s_timer_id); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
@@ -5676,8 +5676,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_update_check_py, __pyx_n_s_update_check_callback, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 128, __pyx_L1_error)
 
   /* "smelly/update_check.py":132
- * 
- * 
+ *
+ *
  * def run_update_check(interval: float = CHECK_INTERVAL) -> None:             # <<<<<<<<<<<<<<
  *     if update_check():
  *         add_timer(update_check_callback, interval)
@@ -5974,7 +5974,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/update_check.py":4
  * # License: GPLv3 Copyright: 2019, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import subprocess
  * import time
@@ -5985,7 +5985,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":5
- * 
+ *
  * import os
  * import subprocess             # <<<<<<<<<<<<<<
  * import time
@@ -6034,7 +6034,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from typing import Dict, NamedTuple, Optional, Tuple             # <<<<<<<<<<<<<<
  * from urllib.request import urlopen
- * 
+ *
  */
   __pyx_t_2 = PyList_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6075,7 +6075,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from typing import Dict, NamedTuple, Optional, Tuple
  * from urllib.request import urlopen             # <<<<<<<<<<<<<<
- * 
+ *
  * from .config import atomic_save
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -6094,7 +6094,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/update_check.py":11
  * from urllib.request import urlopen
- * 
+ *
  * from .config import atomic_save             # <<<<<<<<<<<<<<
  * from .constants import Version, cache_dir, clear_handled_signals, smelly_exe, version, website_url
  * from .fast_data_types import add_timer, get_boss, monitor_pid
@@ -6114,7 +6114,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":12
- * 
+ *
  * from .config import atomic_save
  * from .constants import Version, cache_dir, clear_handled_signals, smelly_exe, version, website_url             # <<<<<<<<<<<<<<
  * from .fast_data_types import add_timer, get_boss, monitor_pid
@@ -6209,7 +6209,7 @@ if (!__Pyx_RefNanny) {
  * from .fast_data_types import add_timer, get_boss, monitor_pid
  * from .notify import notify             # <<<<<<<<<<<<<<
  * from .utils import log_error, open_url
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6229,7 +6229,7 @@ if (!__Pyx_RefNanny) {
  * from .fast_data_types import add_timer, get_boss, monitor_pid
  * from .notify import notify
  * from .utils import log_error, open_url             # <<<<<<<<<<<<<<
- * 
+ *
  * CHANGELOG_URL = website_url('changelog')
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
@@ -6255,7 +6255,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/update_check.py":17
  * from .utils import log_error, open_url
- * 
+ *
  * CHANGELOG_URL = website_url('changelog')             # <<<<<<<<<<<<<<
  * RELEASED_VERSION_URL = website_url() + 'current-version.txt'
  * CHECK_INTERVAL = 24 * 60 * 60.0
@@ -6269,11 +6269,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/update_check.py":18
- * 
+ *
  * CHANGELOG_URL = website_url('changelog')
  * RELEASED_VERSION_URL = website_url() + 'current-version.txt'             # <<<<<<<<<<<<<<
  * CHECK_INTERVAL = 24 * 60 * 60.0
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_website_url); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6290,8 +6290,8 @@ if (!__Pyx_RefNanny) {
  * CHANGELOG_URL = website_url('changelog')
  * RELEASED_VERSION_URL = website_url() + 'current-version.txt'
  * CHECK_INTERVAL = 24 * 60 * 60.0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyFloat_FromDouble((1440.0 * 60.0)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6299,8 +6299,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/update_check.py":22
- * 
- * 
+ *
+ *
  * class Notification(NamedTuple):             # <<<<<<<<<<<<<<
  *     version: Version
  *     time_of_last_notification: float
@@ -6321,8 +6321,8 @@ if (!__Pyx_RefNanny) {
  *     version: Version
  *     time_of_last_notification: float
  *     notification_count: int             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_Notification, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -6333,11 +6333,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":28
- * 
- * 
+ *
+ *
  * def notification_activated() -> None:             # <<<<<<<<<<<<<<
  *     open_url(CHANGELOG_URL)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6350,8 +6350,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/update_check.py":32
- * 
- * 
+ *
+ *
  * def version_notification_log() -> str:             # <<<<<<<<<<<<<<
  *     override = getattr(version_notification_log, 'override', None)
  *     if isinstance(override, str):
@@ -6367,8 +6367,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":39
- * 
- * 
+ *
+ *
  * def notify_new_version(release_version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notify('smelly update available!', 'smelly version {} released'.format(
  *         '.'.join(map(str, release_version))), identifier='new-version', )
@@ -6388,8 +6388,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/update_check.py":44
- * 
- * 
+ *
+ *
  * def get_released_version() -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         raw = urlopen(RELEASED_VERSION_URL).read().decode('utf-8').strip()
@@ -6405,8 +6405,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":52
- * 
- * 
+ *
+ *
  * def parse_line(line: str) -> Notification:             # <<<<<<<<<<<<<<
  *     parts = line.split(',')
  *     version, timestamp, count = parts
@@ -6426,8 +6426,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/update_check.py":60
- * 
- * 
+ *
+ *
  * def read_cache() -> Dict[Version, Notification]:             # <<<<<<<<<<<<<<
  *     notified_versions = {}
  *     with suppress(FileNotFoundError):
@@ -6462,8 +6462,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/update_check.py":73
- * 
- * 
+ *
+ *
  * def already_notified(version: Tuple[int, int, int]) -> bool:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     return version in notified_versions
@@ -6498,8 +6498,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":78
- * 
- * 
+ *
+ *
  * def save_notification(version: Version) -> None:             # <<<<<<<<<<<<<<
  *     notified_versions = read_cache()
  *     if version in notified_versions:
@@ -6519,8 +6519,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/update_check.py":97
- * 
- * 
+ *
+ *
  * def process_current_release(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     release_version = Version(*tuple(map(int, raw.split('.'))))
  *     if release_version > version and not already_notified(release_version):
@@ -6537,8 +6537,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":104
- * 
- * 
+ *
+ *
  * def run_worker() -> None:             # <<<<<<<<<<<<<<
  *     import random
  *     import time
@@ -6554,8 +6554,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/update_check.py":113
- * 
- * 
+ *
+ *
  * def update_check() -> bool:             # <<<<<<<<<<<<<<
  *     try:
  *         p = subprocess.Popen(
@@ -6571,11 +6571,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/update_check.py":128
- * 
- * 
+ *
+ *
  * def update_check_callback(timer_id: Optional[int]) -> None:             # <<<<<<<<<<<<<<
  *     update_check()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6595,8 +6595,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/update_check.py":132
- * 
- * 
+ *
+ *
  * def run_update_check(interval: float = CHECK_INTERVAL) -> None:             # <<<<<<<<<<<<<<
  *     if update_check():
  *         add_timer(update_check_callback, interval)
@@ -6622,7 +6622,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/update_check.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2019, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7625,8 +7625,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

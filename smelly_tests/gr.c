@@ -970,8 +970,8 @@ struct __pyx_obj_12smelly_tests_2gr___pyx_scope_struct__write_gr_cmd;
 struct __pyx_obj_12smelly_tests_2gr___pyx_scope_struct_1_genexpr;
 
 /* "smelly_tests/gr.py":21
- * 
- * 
+ *
+ *
  * def write_gr_cmd(cmd, payload):             # <<<<<<<<<<<<<<
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())
  *     w = write
@@ -983,7 +983,7 @@ struct __pyx_obj_12smelly_tests_2gr___pyx_scope_struct__write_gr_cmd {
 
 
 /* "smelly_tests/gr.py":22
- * 
+ *
  * def write_gr_cmd(cmd, payload):
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())             # <<<<<<<<<<<<<<
  *     w = write
@@ -1897,11 +1897,11 @@ static PyObject *__pyx_codeobj__29;
 /* Late includes */
 
 /* "smelly_tests/gr.py":13
- * 
- * 
+ *
+ *
  * def clear_screen():             # <<<<<<<<<<<<<<
  *     write(b'\033[2J')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1930,11 +1930,11 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_clear_screen(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("clear_screen", 0);
 
   /* "smelly_tests/gr.py":14
- * 
+ *
  * def clear_screen():
  *     write(b'\033[2J')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1956,11 +1956,11 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_clear_screen(CYTHON_UNUSED PyObject
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/gr.py":13
- * 
- * 
+ *
+ *
  * def clear_screen():             # <<<<<<<<<<<<<<
  *     write(b'\033[2J')
- * 
+ *
  */
 
   /* function exit code */
@@ -1979,11 +1979,11 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_clear_screen(CYTHON_UNUSED PyObject
 }
 
 /* "smelly_tests/gr.py":17
- * 
- * 
+ *
+ *
  * def move_cursor(x, y):             # <<<<<<<<<<<<<<
  *     write(f'\033[{y};{x}H'.encode('ascii'))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2066,11 +2066,11 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_2move_cursor(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("move_cursor", 0);
 
   /* "smelly_tests/gr.py":18
- * 
+ *
  * def move_cursor(x, y):
  *     write(f'\033[{y};{x}H'.encode('ascii'))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2129,11 +2129,11 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_2move_cursor(CYTHON_UNUSED PyObject
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/gr.py":17
- * 
- * 
+ *
+ *
  * def move_cursor(x, y):             # <<<<<<<<<<<<<<
  *     write(f'\033[{y};{x}H'.encode('ascii'))
- * 
+ *
  */
 
   /* function exit code */
@@ -2153,8 +2153,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_2move_cursor(CYTHON_UNUSED PyObject
 }
 
 /* "smelly_tests/gr.py":21
- * 
- * 
+ *
+ *
  * def write_gr_cmd(cmd, payload):             # <<<<<<<<<<<<<<
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())
  *     w = write
@@ -2227,7 +2227,7 @@ static PyObject *__pyx_pw_12smelly_tests_2gr_5write_gr_cmd(PyObject *__pyx_self,
 static PyObject *__pyx_gb_12smelly_tests_2gr_12write_gr_cmd_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/gr.py":22
- * 
+ *
  * def write_gr_cmd(cmd, payload):
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())             # <<<<<<<<<<<<<<
  *     w = write
@@ -2366,11 +2366,11 @@ static PyObject *__pyx_gb_12smelly_tests_2gr_12write_gr_cmd_2generator(__pyx_Cor
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -2480,8 +2480,8 @@ static PyObject *__pyx_gb_12smelly_tests_2gr_12write_gr_cmd_2generator(__pyx_Cor
 }
 
 /* "smelly_tests/gr.py":21
- * 
- * 
+ *
+ *
  * def write_gr_cmd(cmd, payload):             # <<<<<<<<<<<<<<
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())
  *     w = write
@@ -2517,7 +2517,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_4write_gr_cmd(CYTHON_UNUSED PyObjec
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_cmd);
 
   /* "smelly_tests/gr.py":22
- * 
+ *
  * def write_gr_cmd(cmd, payload):
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())             # <<<<<<<<<<<<<<
  *     w = write
@@ -2550,7 +2550,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_4write_gr_cmd(CYTHON_UNUSED PyObjec
  *     w = write
  *     w(b'\033_G'), w(cmd.encode('ascii')), w(b';'), w(payload), w(b'\033\\')             # <<<<<<<<<<<<<<
  *     sys.stdout.flush()
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_w);
   __pyx_t_1 = __pyx_v_w; __pyx_t_3 = NULL;
@@ -2673,8 +2673,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_4write_gr_cmd(CYTHON_UNUSED PyObjec
  *     w = write
  *     w(b'\033_G'), w(cmd.encode('ascii')), w(b';'), w(payload), w(b'\033\\')
  *     sys.stdout.flush()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_sys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2702,8 +2702,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_4write_gr_cmd(CYTHON_UNUSED PyObjec
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/gr.py":21
- * 
- * 
+ *
+ *
  * def write_gr_cmd(cmd, payload):             # <<<<<<<<<<<<<<
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())
  *     w = write
@@ -2732,8 +2732,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_4write_gr_cmd(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly_tests/gr.py":28
- * 
- * 
+ *
+ *
  * def display(data, width, height, x, y, z, ncols=0, nrows=0):             # <<<<<<<<<<<<<<
  *     move_cursor(x, y)
  *     cmd = {'a': 'T', 's': width, 'v': height,
@@ -2898,7 +2898,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_6display(CYTHON_UNUSED PyObject *__
   __Pyx_INCREF(__pyx_v_data);
 
   /* "smelly_tests/gr.py":29
- * 
+ *
  * def display(data, width, height, x, y, z, ncols=0, nrows=0):
  *     move_cursor(x, y)             # <<<<<<<<<<<<<<
  *     cmd = {'a': 'T', 's': width, 'v': height,
@@ -3109,7 +3109,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_6display(CYTHON_UNUSED PyObject *__
  *         cmd['m'] = m
  *         write_gr_cmd(cmd, chunk)             # <<<<<<<<<<<<<<
  *         cmd.clear()
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_write_gr_cmd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3164,15 +3164,15 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_6display(CYTHON_UNUSED PyObject *__
  *         cmd['m'] = m
  *         write_gr_cmd(cmd, chunk)
  *         cmd.clear()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_9 = __Pyx_PyDict_Clear(__pyx_v_cmd); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 40, __pyx_L1_error)
   }
 
   /* "smelly_tests/gr.py":28
- * 
- * 
+ *
+ *
  * def display(data, width, height, x, y, z, ncols=0, nrows=0):             # <<<<<<<<<<<<<<
  *     move_cursor(x, y)
  *     cmd = {'a': 'T', 's': width, 'v': height,
@@ -3198,8 +3198,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_6display(CYTHON_UNUSED PyObject *__
 }
 
 /* "smelly_tests/gr.py":43
- * 
- * 
+ *
+ *
  * def display_png_file(path):             # <<<<<<<<<<<<<<
  *     cmd = {'a': 'T', 't': 'f', 'f': '100'}
  *     path = os.path.abspath(path)
@@ -3240,7 +3240,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_8display_png_file(CYTHON_UNUSED PyO
   __Pyx_INCREF(__pyx_v_path);
 
   /* "smelly_tests/gr.py":44
- * 
+ *
  * def display_png_file(path):
  *     cmd = {'a': 'T', 't': 'f', 'f': '100'}             # <<<<<<<<<<<<<<
  *     path = os.path.abspath(path)
@@ -3294,7 +3294,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_8display_png_file(CYTHON_UNUSED PyO
  *         path = path.encode(sys.getfilesystemencoding() or 'utf-8')
  *     data = standard_b64encode(path)
  */
-  __pyx_t_4 = PyBytes_Check(__pyx_v_path); 
+  __pyx_t_4 = PyBytes_Check(__pyx_v_path);
   __pyx_t_5 = ((!(__pyx_t_4 != 0)) != 0);
   if (__pyx_t_5) {
 
@@ -3372,7 +3372,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_8display_png_file(CYTHON_UNUSED PyO
  *         path = path.encode(sys.getfilesystemencoding() or 'utf-8')
  *     data = standard_b64encode(path)             # <<<<<<<<<<<<<<
  *     write_gr_cmd(cmd, data)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_standard_b64encode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3398,8 +3398,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_8display_png_file(CYTHON_UNUSED PyO
  *         path = path.encode(sys.getfilesystemencoding() or 'utf-8')
  *     data = standard_b64encode(path)
  *     write_gr_cmd(cmd, data)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write_gr_cmd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3451,8 +3451,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_8display_png_file(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/gr.py":43
- * 
- * 
+ *
+ *
  * def display_png_file(path):             # <<<<<<<<<<<<<<
  *     cmd = {'a': 'T', 't': 'f', 'f': '100'}
  *     path = os.path.abspath(path)
@@ -3480,11 +3480,11 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_8display_png_file(CYTHON_UNUSED PyO
 }
 
 /* "smelly_tests/gr.py":52
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     from smelly.constants import logo_png_file
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3526,10 +3526,10 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "smelly_tests/gr.py":53
- * 
+ *
  * def main():
  *     from smelly.constants import logo_png_file             # <<<<<<<<<<<<<<
- * 
+ *
  *     photo = sys.argv[-1]
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
@@ -3549,7 +3549,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
 
   /* "smelly_tests/gr.py":55
  *     from smelly.constants import logo_png_file
- * 
+ *
  *     photo = sys.argv[-1]             # <<<<<<<<<<<<<<
  *     if not photo.lower().endswith('.png'):
  *         raise SystemExit('Must specify a PNG file to display')
@@ -3566,7 +3566,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
   __pyx_t_2 = 0;
 
   /* "smelly_tests/gr.py":56
- * 
+ *
  *     photo = sys.argv[-1]
  *     if not photo.lower().endswith('.png'):             # <<<<<<<<<<<<<<
  *         raise SystemExit('Must specify a PNG file to display')
@@ -3626,7 +3626,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
     __PYX_ERR(0, 57, __pyx_L1_error)
 
     /* "smelly_tests/gr.py":56
- * 
+ *
  *     photo = sys.argv[-1]
  *     if not photo.lower().endswith('.png'):             # <<<<<<<<<<<<<<
  *         raise SystemExit('Must specify a PNG file to display')
@@ -3859,7 +3859,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_11);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_11);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_11 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_11 = 0;
             __PYX_ERR(0, 60, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -3992,7 +3992,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
  *     display_png_file(photo)
  *     with suppress(EOFError, KeyboardInterrupt):             # <<<<<<<<<<<<<<
  *         input()
- * 
+ *
  */
   /*with:*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_suppress); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
@@ -4035,8 +4035,8 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
  *     display_png_file(photo)
  *     with suppress(EOFError, KeyboardInterrupt):
  *         input()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __pyx_t_11 = __Pyx_PyObject_CallNoArg(__pyx_builtin_input); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 69, __pyx_L22_error)
           __Pyx_GOTREF(__pyx_t_11);
@@ -4047,7 +4047,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
  *     display_png_file(photo)
  *     with suppress(EOFError, KeyboardInterrupt):             # <<<<<<<<<<<<<<
  *         input()
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -4082,7 +4082,7 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_11, __pyx_t_2, __pyx_t_1);
-            __pyx_t_11 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_11 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 68, __pyx_L24_except_error)
           }
           __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -4125,11 +4125,11 @@ static PyObject *__pyx_pf_12smelly_tests_2gr_10main(CYTHON_UNUSED PyObject *__py
   }
 
   /* "smelly_tests/gr.py":52
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     from smelly.constants import logo_png_file
- * 
+ *
  */
 
   /* function exit code */
@@ -4640,27 +4640,27 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     display_png_file(photo)
  *     with suppress(EOFError, KeyboardInterrupt):             # <<<<<<<<<<<<<<
  *         input()
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(2, __pyx_builtin_EOFError, __pyx_builtin_KeyboardInterrupt); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
   /* "smelly_tests/gr.py":13
- * 
- * 
+ *
+ *
  * def clear_screen():             # <<<<<<<<<<<<<<
  *     write(b'\033[2J')
- * 
+ *
  */
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_gr_py, __pyx_n_s_clear_screen, 13, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 13, __pyx_L1_error)
 
   /* "smelly_tests/gr.py":17
- * 
- * 
+ *
+ *
  * def move_cursor(x, y):             # <<<<<<<<<<<<<<
  *     write(f'\033[{y};{x}H'.encode('ascii'))
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_y); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -4668,8 +4668,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_gr_py, __pyx_n_s_move_cursor, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 17, __pyx_L1_error)
 
   /* "smelly_tests/gr.py":21
- * 
- * 
+ *
+ *
  * def write_gr_cmd(cmd, payload):             # <<<<<<<<<<<<<<
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())
  *     w = write
@@ -4680,8 +4680,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_gr_py, __pyx_n_s_write_gr_cmd, 21, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 21, __pyx_L1_error)
 
   /* "smelly_tests/gr.py":28
- * 
- * 
+ *
+ *
  * def display(data, width, height, x, y, z, ncols=0, nrows=0):             # <<<<<<<<<<<<<<
  *     move_cursor(x, y)
  *     cmd = {'a': 'T', 's': width, 'v': height,
@@ -4695,8 +4695,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__25);
 
   /* "smelly_tests/gr.py":43
- * 
- * 
+ *
+ *
  * def display_png_file(path):             # <<<<<<<<<<<<<<
  *     cmd = {'a': 'T', 't': 'f', 'f': '100'}
  *     path = os.path.abspath(path)
@@ -4707,11 +4707,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_gr_py, __pyx_n_s_display_png_file, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "smelly_tests/gr.py":52
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     from smelly.constants import logo_png_file
- * 
+ *
  */
   __pyx_tuple__28 = PyTuple_Pack(3, __pyx_n_s_logo_png_file, __pyx_n_s_photo, __pyx_n_s_f); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
@@ -5036,7 +5036,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/gr.py":4
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import sys
  * import zlib
@@ -5047,7 +5047,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/gr.py":5
- * 
+ *
  * import os
  * import sys             # <<<<<<<<<<<<<<
  * import zlib
@@ -5075,7 +5075,7 @@ if (!__Pyx_RefNanny) {
  * import zlib
  * from base64 import standard_b64encode             # <<<<<<<<<<<<<<
  * from contextlib import suppress
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5095,7 +5095,7 @@ if (!__Pyx_RefNanny) {
  * import zlib
  * from base64 import standard_b64encode
  * from contextlib import suppress             # <<<<<<<<<<<<<<
- * 
+ *
  * write = getattr(sys.stdout, 'buffer', sys.stdout).write
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -5114,10 +5114,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/gr.py":10
  * from contextlib import suppress
- * 
+ *
  * write = getattr(sys.stdout, 'buffer', sys.stdout).write             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5140,11 +5140,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/gr.py":13
- * 
- * 
+ *
+ *
  * def clear_screen():             # <<<<<<<<<<<<<<
  *     write(b'\033[2J')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_2gr_1clear_screen, 0, __pyx_n_s_clear_screen, NULL, __pyx_n_s_smelly_tests_gr, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5152,11 +5152,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/gr.py":17
- * 
- * 
+ *
+ *
  * def move_cursor(x, y):             # <<<<<<<<<<<<<<
  *     write(f'\033[{y};{x}H'.encode('ascii'))
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_2gr_3move_cursor, 0, __pyx_n_s_move_cursor, NULL, __pyx_n_s_smelly_tests_gr, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5164,8 +5164,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/gr.py":21
- * 
- * 
+ *
+ *
  * def write_gr_cmd(cmd, payload):             # <<<<<<<<<<<<<<
  *     cmd = ','.join(f'{k}={v}' for k, v in cmd.items())
  *     w = write
@@ -5176,8 +5176,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/gr.py":28
- * 
- * 
+ *
+ *
  * def display(data, width, height, x, y, z, ncols=0, nrows=0):             # <<<<<<<<<<<<<<
  *     move_cursor(x, y)
  *     cmd = {'a': 'T', 's': width, 'v': height,
@@ -5189,8 +5189,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/gr.py":43
- * 
- * 
+ *
+ *
  * def display_png_file(path):             # <<<<<<<<<<<<<<
  *     cmd = {'a': 'T', 't': 'f', 'f': '100'}
  *     path = os.path.abspath(path)
@@ -5201,11 +5201,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/gr.py":52
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     from smelly.constants import logo_png_file
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_2gr_11main, 0, __pyx_n_s_main_2, NULL, __pyx_n_s_smelly_tests_gr, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5213,8 +5213,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/gr.py":72
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -5225,7 +5225,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_4) {
 
     /* "smelly_tests/gr.py":73
- * 
+ *
  * if __name__ == '__main__':
  *     main()             # <<<<<<<<<<<<<<
  */
@@ -5237,8 +5237,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly_tests/gr.py":72
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -5247,7 +5247,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/gr.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

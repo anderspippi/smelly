@@ -972,8 +972,8 @@ struct __pyx_obj_6smelly_12open_actions___pyx_scope_struct_2_actions_for_url;
 struct __pyx_obj_6smelly_12open_actions___pyx_scope_struct_3_actions_for_launch;
 
 /* "smelly/open_actions.py":35
- * 
- * 
+ *
+ *
  * def parse(lines: Iterable[str]) -> Iterator[OpenAction]:             # <<<<<<<<<<<<<<
  *     match_criteria: List[MatchCriteria] = []
  *     raw_actions: List[str] = []
@@ -1005,8 +1005,8 @@ struct __pyx_obj_6smelly_12open_actions___pyx_scope_struct__parse {
 
 
 /* "smelly/open_actions.py":173
- * 
- * 
+ *
+ *
  * def actions_for_url_from_list(             # <<<<<<<<<<<<<<
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
  *     try:
@@ -1032,8 +1032,8 @@ struct __pyx_obj_6smelly_12open_actions___pyx_scope_struct_1_actions_for_url_fro
 
 
 /* "smelly/open_actions.py":289
- * 
- * 
+ *
+ *
  * def actions_for_url(             # <<<<<<<<<<<<<<
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
  *     if actions_spec is None:
@@ -1052,8 +1052,8 @@ struct __pyx_obj_6smelly_12open_actions___pyx_scope_struct_2_actions_for_url {
 
 
 /* "smelly/open_actions.py":303
- * 
- * 
+ *
+ *
  * def actions_for_launch(url: str) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     # Custom launch actions using smelly URL scheme needs to be prefixed with
  *     # `smelly:///launch/`
@@ -2189,11 +2189,11 @@ static PyObject *__pyx_codeobj__27;
 /* Late includes */
 
 /* "smelly/open_actions.py":22
- * 
+ *
  * if not hasattr(shlex, 'join'):
  *     shlex.join = lambda a: ' '.join(map(shlex.quote, a))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
 
 /* Python wrapper */
@@ -2257,8 +2257,8 @@ static PyObject *__pyx_lambda_funcdef_6smelly_12open_actions_lambda(CYTHON_UNUSE
 static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/open_actions.py":35
- * 
- * 
+ *
+ *
  * def parse(lines: Iterable[str]) -> Iterator[OpenAction]:             # <<<<<<<<<<<<<<
  *     match_criteria: List[MatchCriteria] = []
  *     raw_actions: List[str] = []
@@ -2355,7 +2355,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 35, __pyx_L1_error)
 
   /* "smelly/open_actions.py":36
- * 
+ *
  * def parse(lines: Iterable[str]) -> Iterator[OpenAction]:
  *     match_criteria: List[MatchCriteria] = []             # <<<<<<<<<<<<<<
  *     raw_actions: List[str] = []
@@ -2385,7 +2385,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
  *     raw_actions: List[str] = []
  *     alias_map: Dict[str, List[ActionAlias]] = {}             # <<<<<<<<<<<<<<
  *     entries = []
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2397,7 +2397,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
  *     raw_actions: List[str] = []
  *     alias_map: Dict[str, List[ActionAlias]] = {}
  *     entries = []             # <<<<<<<<<<<<<<
- * 
+ *
  *     for line in lines:
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -2408,7 +2408,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
 
   /* "smelly/open_actions.py":41
  *     entries = []
- * 
+ *
  *     for line in lines:             # <<<<<<<<<<<<<<
  *         line = line.strip()
  *         if line.startswith('#'):
@@ -2458,7 +2458,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
     __pyx_t_4 = 0;
 
     /* "smelly/open_actions.py":42
- * 
+ *
  *     for line in lines:
  *         line = line.strip()             # <<<<<<<<<<<<<<
  *         if line.startswith('#'):
@@ -2705,11 +2705,11 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_5);
@@ -3076,11 +3076,11 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+              __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
             } else {
-              __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+              __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
             }
             __Pyx_INCREF(__pyx_t_4);
             __Pyx_INCREF(__pyx_t_5);
@@ -3271,7 +3271,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
  *             alias_map[alias_name] = [ActionAlias(alias_name, alias_val)]
  *         else:
  *             log_error(f'Ignoring malformed open actions line: {line}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     if match_criteria and raw_actions:
  */
     /*else*/ {
@@ -3304,7 +3304,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
 
     /* "smelly/open_actions.py":41
  *     entries = []
- * 
+ *
  *     for line in lines:             # <<<<<<<<<<<<<<
  *         line = line.strip()
  *         if line.startswith('#'):
@@ -3315,10 +3315,10 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
 
   /* "smelly/open_actions.py":71
  *             log_error(f'Ignoring malformed open actions line: {line}')
- * 
+ *
  *     if match_criteria and raw_actions:             # <<<<<<<<<<<<<<
  *         entries.append((tuple(match_criteria), tuple(raw_actions)))
- * 
+ *
  */
   __pyx_t_8 = (PyList_GET_SIZE(__pyx_cur_scope->__pyx_v_match_criteria) != 0);
   if (__pyx_t_8) {
@@ -3332,10 +3332,10 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
   if (__pyx_t_7) {
 
     /* "smelly/open_actions.py":72
- * 
+ *
  *     if match_criteria and raw_actions:
  *         entries.append((tuple(match_criteria), tuple(raw_actions)))             # <<<<<<<<<<<<<<
- * 
+ *
  *     with to_cmdline_implementation.filter_env_vars(
  */
     __pyx_t_1 = PyList_AsTuple(__pyx_cur_scope->__pyx_v_match_criteria); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
@@ -3355,16 +3355,16 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
 
     /* "smelly/open_actions.py":71
  *             log_error(f'Ignoring malformed open actions line: {line}')
- * 
+ *
  *     if match_criteria and raw_actions:             # <<<<<<<<<<<<<<
  *         entries.append((tuple(match_criteria), tuple(raw_actions)))
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":74
  *         entries.append((tuple(match_criteria), tuple(raw_actions)))
- * 
+ *
  *     with to_cmdline_implementation.filter_env_vars(             # <<<<<<<<<<<<<<
  *         'URL', 'FILE_PATH', 'FILE', 'FRAGMENT', 'URL_PATH', EDITOR=shlex.join(get_editor()), SHELL=resolved_shell(get_options())[0]
  *     ):
@@ -3377,7 +3377,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "smelly/open_actions.py":75
- * 
+ *
  *     with to_cmdline_implementation.filter_env_vars(
  *         'URL', 'FILE_PATH', 'FILE', 'FRAGMENT', 'URL_PATH', EDITOR=shlex.join(get_editor()), SHELL=resolved_shell(get_options())[0]             # <<<<<<<<<<<<<<
  *     ):
@@ -3468,7 +3468,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
 
     /* "smelly/open_actions.py":74
  *         entries.append((tuple(match_criteria), tuple(raw_actions)))
- * 
+ *
  *     with to_cmdline_implementation.filter_env_vars(             # <<<<<<<<<<<<<<
  *         'URL', 'FILE_PATH', 'FILE', 'FRAGMENT', 'URL_PATH', EDITOR=shlex.join(get_editor()), SHELL=resolved_shell(get_options())[0]
  *     ):
@@ -3532,11 +3532,11 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
               }
               #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
               if (likely(PyTuple_CheckExact(sequence))) {
-                __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-                __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+                __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+                __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
               } else {
-                __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-                __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+                __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+                __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
               }
               __Pyx_INCREF(__pyx_t_5);
               __Pyx_INCREF(__pyx_t_1);
@@ -3657,7 +3657,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
  *                     resolve_aliases_and_parse_actions(
  *                         defn, alias_map, 'open_action'))             # <<<<<<<<<<<<<<
  *             yield OpenAction(mc, tuple(actions))
- * 
+ *
  */
               __pyx_t_16 = NULL;
               __pyx_t_15 = 0;
@@ -3732,8 +3732,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
  *                     resolve_aliases_and_parse_actions(
  *                         defn, alias_map, 'open_action'))
  *             yield OpenAction(mc, tuple(actions))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
             __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_OpenAction); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L42_error)
             __Pyx_GOTREF(__pyx_t_1);
@@ -3836,7 +3836,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
 
           /* "smelly/open_actions.py":74
  *         entries.append((tuple(match_criteria), tuple(raw_actions)))
- * 
+ *
  *     with to_cmdline_implementation.filter_env_vars(             # <<<<<<<<<<<<<<
  *         'URL', 'FILE_PATH', 'FILE', 'FRAGMENT', 'URL_PATH', EDITOR=shlex.join(get_editor()), SHELL=resolved_shell(get_options())[0]
  *     ):
@@ -3877,7 +3877,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
             __Pyx_GIVEREF(__pyx_t_4);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_6, __pyx_t_4, __pyx_t_1);
-            __pyx_t_6 = 0; __pyx_t_4 = 0; __pyx_t_1 = 0; 
+            __pyx_t_6 = 0; __pyx_t_4 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 74, __pyx_L44_except_error)
           }
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -3921,8 +3921,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/open_actions.py":35
- * 
- * 
+ *
+ *
  * def parse(lines: Iterable[str]) -> Iterator[OpenAction]:             # <<<<<<<<<<<<<<
  *     match_criteria: List[MatchCriteria] = []
  *     raw_actions: List[str] = []
@@ -3953,8 +3953,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_2generator(__pyx_CoroutineObjec
 }
 
 /* "smelly/open_actions.py":86
- * 
- * 
+ *
+ *
  * def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str,             # <<<<<<<<<<<<<<
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':
@@ -4092,7 +4092,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':             # <<<<<<<<<<<<<<
  *         import re
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_mc, __pyx_n_s_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4104,7 +4104,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':
  *         import re             # <<<<<<<<<<<<<<
- * 
+ *
  *         try:
  */
     __pyx_t_1 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
@@ -4114,7 +4114,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":91
  *         import re
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             pat = re.compile(mc.value)
  *         except re.error:
@@ -4129,7 +4129,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
       /*try:*/ {
 
         /* "smelly/open_actions.py":92
- * 
+ *
  *         try:
  *             pat = re.compile(mc.value)             # <<<<<<<<<<<<<<
  *         except re.error:
@@ -4160,7 +4160,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
         /* "smelly/open_actions.py":91
  *         import re
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             pat = re.compile(mc.value)
  *         except re.error:
@@ -4202,7 +4202,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *         except re.error:
  *             return False             # <<<<<<<<<<<<<<
  *         return pat.search(unquote(url)) is not None
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(Py_False);
@@ -4217,7 +4217,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
       /* "smelly/open_actions.py":91
  *         import re
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             pat = re.compile(mc.value)
  *         except re.error:
@@ -4240,7 +4240,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *         except re.error:
  *             return False
  *         return pat.search(unquote(url)) is not None             # <<<<<<<<<<<<<<
- * 
+ *
  *     if mc.type == 'mime':
  */
     __Pyx_XDECREF(__pyx_r);
@@ -4292,16 +4292,16 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':             # <<<<<<<<<<<<<<
  *         import re
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":97
  *         return pat.search(unquote(url)) is not None
- * 
+ *
  *     if mc.type == 'mime':             # <<<<<<<<<<<<<<
  *         import fnmatch
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_mc, __pyx_n_s_type); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4310,10 +4310,10 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
   if (__pyx_t_2) {
 
     /* "smelly/open_actions.py":98
- * 
+ *
  *     if mc.type == 'mime':
  *         import fnmatch             # <<<<<<<<<<<<<<
- * 
+ *
  *         mt = guess_type(
  */
     __pyx_t_1 = __Pyx_Import(__pyx_n_s_fnmatch, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
@@ -4323,7 +4323,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":100
  *         import fnmatch
- * 
+ *
  *         mt = guess_type(             # <<<<<<<<<<<<<<
  *             unquoted_path, allow_filesystem_access=purl.scheme in (
  *                 '', 'file'))
@@ -4332,7 +4332,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
     __Pyx_GOTREF(__pyx_t_1);
 
     /* "smelly/open_actions.py":101
- * 
+ *
  *         mt = guess_type(
  *             unquoted_path, allow_filesystem_access=purl.scheme in (             # <<<<<<<<<<<<<<
  *                 '', 'file'))
@@ -4364,7 +4364,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":100
  *         import fnmatch
- * 
+ *
  *         mt = guess_type(             # <<<<<<<<<<<<<<
  *             unquoted_path, allow_filesystem_access=purl.scheme in (
  *                 '', 'file'))
@@ -4652,7 +4652,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *                 if fnmatch.fnmatchcase(mt, mpat):
  *                     return True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
                 __Pyx_XDECREF(__pyx_r);
                 __Pyx_INCREF(Py_True);
@@ -4708,7 +4708,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
                 __Pyx_GIVEREF(__pyx_t_7);
                 __Pyx_XGIVEREF(__pyx_t_10);
                 __Pyx_ErrRestoreWithState(__pyx_t_8, __pyx_t_7, __pyx_t_10);
-                __pyx_t_8 = 0; __pyx_t_7 = 0; __pyx_t_10 = 0; 
+                __pyx_t_8 = 0; __pyx_t_7 = 0; __pyx_t_10 = 0;
                 __PYX_ERR(0, 108, __pyx_L26_except_error)
               }
               __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -4784,7 +4784,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *                 if fnmatch.fnmatchcase(mt, mpat):
  *                     return True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     if mc.type == 'ext':
  */
     __Pyx_XDECREF(__pyx_r);
@@ -4794,16 +4794,16 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":97
  *         return pat.search(unquote(url)) is not None
- * 
+ *
  *     if mc.type == 'mime':             # <<<<<<<<<<<<<<
  *         import fnmatch
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":113
  *         return False
- * 
+ *
  *     if mc.type == 'ext':             # <<<<<<<<<<<<<<
  *         if not purl.path:
  *             return False
@@ -4815,7 +4815,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
   if (__pyx_t_2) {
 
     /* "smelly/open_actions.py":114
- * 
+ *
  *     if mc.type == 'ext':
  *         if not purl.path:             # <<<<<<<<<<<<<<
  *             return False
@@ -4841,7 +4841,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
       goto __pyx_L0;
 
       /* "smelly/open_actions.py":114
- * 
+ *
  *     if mc.type == 'ext':
  *         if not purl.path:             # <<<<<<<<<<<<<<
  *             return False
@@ -4997,7 +4997,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             if path.endswith(f'.{ext}'):
  *                 return True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(Py_True);
@@ -5028,7 +5028,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             if path.endswith(f'.{ext}'):
  *                 return True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     if mc.type == 'protocol':
  */
     __Pyx_XDECREF(__pyx_r);
@@ -5038,7 +5038,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":113
  *         return False
- * 
+ *
  *     if mc.type == 'ext':             # <<<<<<<<<<<<<<
  *         if not purl.path:
  *             return False
@@ -5047,7 +5047,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
   /* "smelly/open_actions.py":123
  *         return False
- * 
+ *
  *     if mc.type == 'protocol':             # <<<<<<<<<<<<<<
  *         protocol = (purl.scheme or 'file').lower()
  *         for key in mc.value.split(','):
@@ -5059,7 +5059,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
   if (__pyx_t_11) {
 
     /* "smelly/open_actions.py":124
- * 
+ *
  *     if mc.type == 'protocol':
  *         protocol = (purl.scheme or 'file').lower()             # <<<<<<<<<<<<<<
  *         for key in mc.value.split(','):
@@ -5205,7 +5205,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             if key.strip() == protocol:
  *                 return True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(Py_True);
@@ -5236,7 +5236,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             if key.strip() == protocol:
  *                 return True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     if mc.type == 'fragment_matches':
  */
     __Pyx_XDECREF(__pyx_r);
@@ -5246,7 +5246,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":123
  *         return False
- * 
+ *
  *     if mc.type == 'protocol':             # <<<<<<<<<<<<<<
  *         protocol = (purl.scheme or 'file').lower()
  *         for key in mc.value.split(','):
@@ -5255,10 +5255,10 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
   /* "smelly/open_actions.py":130
  *         return False
- * 
+ *
  *     if mc.type == 'fragment_matches':             # <<<<<<<<<<<<<<
  *         import re
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_mc, __pyx_n_s_type); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -5267,10 +5267,10 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
   if (__pyx_t_11) {
 
     /* "smelly/open_actions.py":131
- * 
+ *
  *     if mc.type == 'fragment_matches':
  *         import re             # <<<<<<<<<<<<<<
- * 
+ *
  *         try:
  */
     __pyx_t_6 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
@@ -5280,7 +5280,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":133
  *         import re
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             pat = re.compile(mc.value)
  *         except re.error:
@@ -5295,7 +5295,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
       /*try:*/ {
 
         /* "smelly/open_actions.py":134
- * 
+ *
  *         try:
  *             pat = re.compile(mc.value)             # <<<<<<<<<<<<<<
  *         except re.error:
@@ -5326,7 +5326,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
         /* "smelly/open_actions.py":133
  *         import re
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             pat = re.compile(mc.value)
  *         except re.error:
@@ -5348,7 +5348,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             pat = re.compile(mc.value)
  *         except re.error:             # <<<<<<<<<<<<<<
  *             return False
- * 
+ *
  */
       __Pyx_ErrFetch(&__pyx_t_6, &__pyx_t_10, &__pyx_t_7);
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_re, __pyx_n_s_error); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L51_except_error)
@@ -5368,7 +5368,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             pat = re.compile(mc.value)
  *         except re.error:
  *             return False             # <<<<<<<<<<<<<<
- * 
+ *
  *         return pat.search(unquote(purl.fragment)) is not None
  */
         __Pyx_XDECREF(__pyx_r);
@@ -5384,7 +5384,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
       /* "smelly/open_actions.py":133
  *         import re
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             pat = re.compile(mc.value)
  *         except re.error:
@@ -5405,9 +5405,9 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":138
  *             return False
- * 
+ *
  *         return pat.search(unquote(purl.fragment)) is not None             # <<<<<<<<<<<<<<
- * 
+ *
  *     if mc.type == 'path':
  */
     __Pyx_XDECREF(__pyx_r);
@@ -5459,19 +5459,19 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":130
  *         return False
- * 
+ *
  *     if mc.type == 'fragment_matches':             # <<<<<<<<<<<<<<
  *         import re
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":140
  *         return pat.search(unquote(purl.fragment)) is not None
- * 
+ *
  *     if mc.type == 'path':             # <<<<<<<<<<<<<<
  *         import fnmatch
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_mc, __pyx_n_s_type); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -5480,10 +5480,10 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
   if (__pyx_t_11) {
 
     /* "smelly/open_actions.py":141
- * 
+ *
  *     if mc.type == 'path':
  *         import fnmatch             # <<<<<<<<<<<<<<
- * 
+ *
  *         try:
  */
     __pyx_t_6 = __Pyx_Import(__pyx_n_s_fnmatch, 0, -1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 141, __pyx_L1_error)
@@ -5493,7 +5493,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":143
  *         import fnmatch
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             return fnmatch.fnmatchcase(unquoted_path.lower(), mc.value)
  *         except Exception:
@@ -5508,7 +5508,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
       /*try:*/ {
 
         /* "smelly/open_actions.py":144
- * 
+ *
  *         try:
  *             return fnmatch.fnmatchcase(unquoted_path.lower(), mc.value)             # <<<<<<<<<<<<<<
  *         except Exception:
@@ -5576,7 +5576,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
         /* "smelly/open_actions.py":143
  *         import fnmatch
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             return fnmatch.fnmatchcase(unquoted_path.lower(), mc.value)
  *         except Exception:
@@ -5595,7 +5595,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             return fnmatch.fnmatchcase(unquoted_path.lower(), mc.value)
  *         except Exception:             # <<<<<<<<<<<<<<
  *             return False
- * 
+ *
  */
       __pyx_t_9 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_9) {
@@ -5609,7 +5609,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             return fnmatch.fnmatchcase(unquoted_path.lower(), mc.value)
  *         except Exception:
  *             return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     if mc.type == 'file':
  */
         __Pyx_XDECREF(__pyx_r);
@@ -5625,7 +5625,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
       /* "smelly/open_actions.py":143
  *         import fnmatch
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             return fnmatch.fnmatchcase(unquoted_path.lower(), mc.value)
  *         except Exception:
@@ -5651,19 +5651,19 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":140
  *         return pat.search(unquote(purl.fragment)) is not None
- * 
+ *
  *     if mc.type == 'path':             # <<<<<<<<<<<<<<
  *         import fnmatch
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":148
  *             return False
- * 
+ *
  *     if mc.type == 'file':             # <<<<<<<<<<<<<<
  *         import fnmatch
- * 
+ *
  */
   __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_mc, __pyx_n_s_type); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_16);
@@ -5672,10 +5672,10 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
   if (__pyx_t_11) {
 
     /* "smelly/open_actions.py":149
- * 
+ *
  *     if mc.type == 'file':
  *         import fnmatch             # <<<<<<<<<<<<<<
- * 
+ *
  *         try:
  */
     __pyx_t_16 = __Pyx_Import(__pyx_n_s_fnmatch, 0, -1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 149, __pyx_L1_error)
@@ -5685,7 +5685,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":151
  *         import fnmatch
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             fname = posixpath.basename(unquoted_path)
  *         except Exception:
@@ -5700,7 +5700,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
       /*try:*/ {
 
         /* "smelly/open_actions.py":152
- * 
+ *
  *         try:
  *             fname = posixpath.basename(unquoted_path)             # <<<<<<<<<<<<<<
  *         except Exception:
@@ -5731,7 +5731,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
         /* "smelly/open_actions.py":151
  *         import fnmatch
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             fname = posixpath.basename(unquoted_path)
  *         except Exception:
@@ -5784,7 +5784,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
       /* "smelly/open_actions.py":151
  *         import fnmatch
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             fname = posixpath.basename(unquoted_path)
  *         except Exception:
@@ -5922,7 +5922,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             return fnmatch.fnmatchcase(fname.lower(), mc.value)
  *         except Exception:             # <<<<<<<<<<<<<<
  *             return False
- * 
+ *
  */
       __pyx_t_9 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_9) {
@@ -5936,8 +5936,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
  *             return fnmatch.fnmatchcase(fname.lower(), mc.value)
  *         except Exception:
  *             return False             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(Py_False);
@@ -5978,16 +5978,16 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 
     /* "smelly/open_actions.py":148
  *             return False
- * 
+ *
  *     if mc.type == 'file':             # <<<<<<<<<<<<<<
  *         import fnmatch
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":86
- * 
- * 
+ *
+ *
  * def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str,             # <<<<<<<<<<<<<<
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':
@@ -6022,8 +6022,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_3url_matches_criterion(CYTHON_U
 }
 
 /* "smelly/open_actions.py":161
- * 
- * 
+ *
+ *
  * def url_matches_criteria(             # <<<<<<<<<<<<<<
  *         purl: 'ParseResult', url: str, unquoted_path: str,
  *         criteria: Iterable[MatchCriteria]) -> bool:
@@ -6334,7 +6334,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_5url_matches_criteria(CYTHON_UN
  *         except Exception:
  *             return False             # <<<<<<<<<<<<<<
  *     return True
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(Py_False);
@@ -6389,8 +6389,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_5url_matches_criteria(CYTHON_UN
  *         except Exception:
  *             return False
  *     return True             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(Py_True);
@@ -6398,8 +6398,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_5url_matches_criteria(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly/open_actions.py":161
- * 
- * 
+ *
+ *
  * def url_matches_criteria(             # <<<<<<<<<<<<<<
  *         purl: 'ParseResult', url: str, unquoted_path: str,
  *         criteria: Iterable[MatchCriteria]) -> bool:
@@ -6423,8 +6423,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_5url_matches_criteria(CYTHON_UN
 static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/open_actions.py":173
- * 
- * 
+ *
+ *
  * def actions_for_url_from_list(             # <<<<<<<<<<<<<<
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
  *     try:
@@ -6541,7 +6541,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_7actions_for_url_from_list(CYTH
 
 /* "smelly/open_actions.py":190
  *            'FRAGMENT': unquote(purl.fragment)}
- * 
+ *
  *     def expand(x: Any) -> Any:             # <<<<<<<<<<<<<<
  *         as_bytes = isinstance(x, bytes)
  *         if as_bytes:
@@ -6583,13 +6583,13 @@ static PyObject *__pyx_pf_6smelly_12open_actions_25actions_for_url_from_list_exp
   __Pyx_INCREF(__pyx_v_x);
 
   /* "smelly/open_actions.py":191
- * 
+ *
  *     def expand(x: Any) -> Any:
  *         as_bytes = isinstance(x, bytes)             # <<<<<<<<<<<<<<
  *         if as_bytes:
  *             x = x.decode('utf-8')
  */
-  __pyx_t_1 = PyBytes_Check(__pyx_v_x); 
+  __pyx_t_1 = PyBytes_Check(__pyx_v_x);
   __pyx_v_as_bytes = __pyx_t_1;
 
   /* "smelly/open_actions.py":192
@@ -6645,7 +6645,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_25actions_for_url_from_list_exp
  *             ans = expandvars(x, env, fallback_to_os_env=False)
  *             if as_bytes:
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_x); 
+  __pyx_t_1 = PyString_Check(__pyx_v_x);
   __pyx_t_5 = (__pyx_t_1 != 0);
   if (__pyx_t_5) {
 
@@ -6731,7 +6731,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_25actions_for_url_from_list_exp
  *                 return ans.encode('utf-8')
  *             return ans             # <<<<<<<<<<<<<<
  *         return x
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_v_ans);
@@ -6751,7 +6751,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_25actions_for_url_from_list_exp
  *                 return ans.encode('utf-8')
  *             return ans
  *         return x             # <<<<<<<<<<<<<<
- * 
+ *
  *     for action in actions:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6761,7 +6761,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_25actions_for_url_from_list_exp
 
   /* "smelly/open_actions.py":190
  *            'FRAGMENT': unquote(purl.fragment)}
- * 
+ *
  *     def expand(x: Any) -> Any:             # <<<<<<<<<<<<<<
  *         as_bytes = isinstance(x, bytes)
  *         if as_bytes:
@@ -6784,8 +6784,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_25actions_for_url_from_list_exp
 }
 
 /* "smelly/open_actions.py":173
- * 
- * 
+ *
+ *
  * def actions_for_url_from_list(             # <<<<<<<<<<<<<<
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
  *     try:
@@ -7031,7 +7031,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
  *         up += f'?{purl.query}'
  *     if purl.fragment:             # <<<<<<<<<<<<<<
  *         up += f'#{purl.fragment}'
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_purl, __pyx_n_s_fragment); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7043,7 +7043,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
  *         up += f'?{purl.query}'
  *     if purl.fragment:
  *         up += f'#{purl.fragment}'             # <<<<<<<<<<<<<<
- * 
+ *
  *     env = {'URL': url, 'FILE_PATH': path, 'URL_PATH': up,
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_purl, __pyx_n_s_fragment); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 184, __pyx_L1_error)
@@ -7067,13 +7067,13 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
  *         up += f'?{purl.query}'
  *     if purl.fragment:             # <<<<<<<<<<<<<<
  *         up += f'#{purl.fragment}'
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":186
  *         up += f'#{purl.fragment}'
- * 
+ *
  *     env = {'URL': url, 'FILE_PATH': path, 'URL_PATH': up,             # <<<<<<<<<<<<<<
  *            'FILE': posixpath.basename(path),
  *            'FRAGMENT': unquote(purl.fragment)}
@@ -7085,11 +7085,11 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_URL_PATH, __pyx_cur_scope->__pyx_v_up) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
 
   /* "smelly/open_actions.py":187
- * 
+ *
  *     env = {'URL': url, 'FILE_PATH': path, 'URL_PATH': up,
  *            'FILE': posixpath.basename(path),             # <<<<<<<<<<<<<<
  *            'FRAGMENT': unquote(purl.fragment)}
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_posixpath); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7118,7 +7118,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
  *     env = {'URL': url, 'FILE_PATH': path, 'URL_PATH': up,
  *            'FILE': posixpath.basename(path),
  *            'FRAGMENT': unquote(purl.fragment)}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def expand(x: Any) -> Any:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_unquote); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 188, __pyx_L1_error)
@@ -7149,7 +7149,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
 
   /* "smelly/open_actions.py":190
  *            'FRAGMENT': unquote(purl.fragment)}
- * 
+ *
  *     def expand(x: Any) -> Any:             # <<<<<<<<<<<<<<
  *         as_bytes = isinstance(x, bytes)
  *         if as_bytes:
@@ -7174,7 +7174,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
 
   /* "smelly/open_actions.py":201
  *         return x
- * 
+ *
  *     for action in actions:             # <<<<<<<<<<<<<<
  *         if url_matches_criteria(purl, url, path, action.match_criteria):
  *             for ac in action.actions:
@@ -7224,7 +7224,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
     __pyx_t_6 = 0;
 
     /* "smelly/open_actions.py":202
- * 
+ *
  *     for action in actions:
  *         if url_matches_criteria(purl, url, path, action.match_criteria):             # <<<<<<<<<<<<<<
  *             for ac in action.actions:
@@ -7350,7 +7350,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
  *             for ac in action.actions:
  *                 yield ac._replace(args=tuple(map(expand, ac.args)))             # <<<<<<<<<<<<<<
  *             return
- * 
+ *
  */
         __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_ac, __pyx_n_s_replace); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 204, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
@@ -7421,8 +7421,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
  *             for ac in action.actions:
  *                 yield ac._replace(args=tuple(map(expand, ac.args)))
  *             return             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_r = NULL;
@@ -7430,7 +7430,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
       goto __pyx_L0;
 
       /* "smelly/open_actions.py":202
- * 
+ *
  *     for action in actions:
  *         if url_matches_criteria(purl, url, path, action.match_criteria):             # <<<<<<<<<<<<<<
  *             for ac in action.actions:
@@ -7440,7 +7440,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
 
     /* "smelly/open_actions.py":201
  *         return x
- * 
+ *
  *     for action in actions:             # <<<<<<<<<<<<<<
  *         if url_matches_criteria(purl, url, path, action.match_criteria):
  *             for ac in action.actions:
@@ -7450,8 +7450,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/open_actions.py":173
- * 
- * 
+ *
+ *
  * def actions_for_url_from_list(             # <<<<<<<<<<<<<<
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
  *     try:
@@ -7480,7 +7480,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_9generator1(__pyx_CoroutineObje
 }
 
 /* "smelly/open_actions.py":209
- * 
+ *
  * @run_once
  * def load_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -7693,7 +7693,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_10load_open_actions(CYTHON_UNUS
  *         return ()
  *     with f:             # <<<<<<<<<<<<<<
  *         return tuple(parse(f))
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_v_f, __pyx_n_s_exit); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
@@ -7730,8 +7730,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_10load_open_actions(CYTHON_UNUS
  *         return ()
  *     with f:
  *         return tuple(parse(f))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_parse); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 215, __pyx_L15_error)
@@ -7763,7 +7763,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_10load_open_actions(CYTHON_UNUS
  *         return ()
  *     with f:             # <<<<<<<<<<<<<<
  *         return tuple(parse(f))
- * 
+ *
  */
         }
         __pyx_L15_error:;
@@ -7794,7 +7794,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_10load_open_actions(CYTHON_UNUS
             __Pyx_GIVEREF(__pyx_t_5);
             __Pyx_XGIVEREF(__pyx_t_9);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_5, __pyx_t_9);
-            __pyx_t_4 = 0; __pyx_t_5 = 0; __pyx_t_9 = 0; 
+            __pyx_t_4 = 0; __pyx_t_5 = 0; __pyx_t_9 = 0;
             __PYX_ERR(0, 214, __pyx_L17_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -7856,7 +7856,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_10load_open_actions(CYTHON_UNUS
   }
 
   /* "smelly/open_actions.py":209
- * 
+ *
  * @run_once
  * def load_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -7882,7 +7882,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_10load_open_actions(CYTHON_UNUS
 }
 
 /* "smelly/open_actions.py":219
- * 
+ *
  * @run_once
  * def load_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -8095,7 +8095,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_12load_launch_actions(CYTHON_UN
  *         return ()
  *     with f:             # <<<<<<<<<<<<<<
  *         return tuple(parse(f))
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_v_f, __pyx_n_s_exit); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 224, __pyx_L1_error)
@@ -8132,8 +8132,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_12load_launch_actions(CYTHON_UN
  *         return ()
  *     with f:
  *         return tuple(parse(f))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_parse); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 225, __pyx_L15_error)
@@ -8165,7 +8165,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_12load_launch_actions(CYTHON_UN
  *         return ()
  *     with f:             # <<<<<<<<<<<<<<
  *         return tuple(parse(f))
- * 
+ *
  */
         }
         __pyx_L15_error:;
@@ -8196,7 +8196,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_12load_launch_actions(CYTHON_UN
             __Pyx_GIVEREF(__pyx_t_5);
             __Pyx_XGIVEREF(__pyx_t_9);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_5, __pyx_t_9);
-            __pyx_t_4 = 0; __pyx_t_5 = 0; __pyx_t_9 = 0; 
+            __pyx_t_4 = 0; __pyx_t_5 = 0; __pyx_t_9 = 0;
             __PYX_ERR(0, 224, __pyx_L17_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8258,7 +8258,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_12load_launch_actions(CYTHON_UN
   }
 
   /* "smelly/open_actions.py":219
- * 
+ *
  * @run_once
  * def load_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -8284,8 +8284,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_12load_launch_actions(CYTHON_UN
 }
 
 /* "smelly/open_actions.py":228
- * 
- * 
+ *
+ *
  * def clear_caches() -> None:             # <<<<<<<<<<<<<<
  *     load_open_actions.clear_cached()
  *     load_launch_actions.clear_cached()
@@ -8317,11 +8317,11 @@ static PyObject *__pyx_pf_6smelly_12open_actions_14clear_caches(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("clear_caches", 0);
 
   /* "smelly/open_actions.py":229
- * 
+ *
  * def clear_caches() -> None:
  *     load_open_actions.clear_cached()             # <<<<<<<<<<<<<<
  *     load_launch_actions.clear_cached()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_load_open_actions); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8349,8 +8349,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_14clear_caches(CYTHON_UNUSED Py
  * def clear_caches() -> None:
  *     load_open_actions.clear_cached()
  *     load_launch_actions.clear_cached()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_load_launch_actions); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8375,8 +8375,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_14clear_caches(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/open_actions.py":228
- * 
- * 
+ *
+ *
  * def clear_caches() -> None:             # <<<<<<<<<<<<<<
  *     load_open_actions.clear_cached()
  *     load_launch_actions.clear_cached()
@@ -8398,7 +8398,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_14clear_caches(CYTHON_UNUSED Py
 }
 
 /* "smelly/open_actions.py":234
- * 
+ *
  * @run_once
  * def default_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -8507,7 +8507,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_16default_open_actions(CYTHON_U
   goto __pyx_L0;
 
   /* "smelly/open_actions.py":234
- * 
+ *
  * @run_once
  * def default_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -8530,7 +8530,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_16default_open_actions(CYTHON_U
 }
 
 /* "smelly/open_actions.py":247
- * 
+ *
  * @run_once
  * def default_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -8639,7 +8639,7 @@ static PyObject *__pyx_pf_6smelly_12open_actions_18default_launch_actions(CYTHON
   goto __pyx_L0;
 
   /* "smelly/open_actions.py":247
- * 
+ *
  * @run_once
  * def default_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -8663,8 +8663,8 @@ static PyObject *__pyx_pf_6smelly_12open_actions_18default_launch_actions(CYTHON
 static PyObject *__pyx_gb_6smelly_12open_actions_22generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/open_actions.py":289
- * 
- * 
+ *
+ *
  * def actions_for_url(             # <<<<<<<<<<<<<<
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
  *     if actions_spec is None:
@@ -8687,7 +8687,7 @@ static PyObject *__pyx_pw_6smelly_12open_actions_21actions_for_url(PyObject *__p
     PyObject* values[2] = {0,0};
 
     /* "smelly/open_actions.py":290
- * 
+ *
  * def actions_for_url(
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     if actions_spec is None:
@@ -8744,8 +8744,8 @@ static PyObject *__pyx_pw_6smelly_12open_actions_21actions_for_url(PyObject *__p
   __pyx_r = __pyx_pf_6smelly_12open_actions_20actions_for_url(__pyx_self, __pyx_v_url, __pyx_v_actions_spec);
 
   /* "smelly/open_actions.py":289
- * 
- * 
+ *
+ *
  * def actions_for_url(             # <<<<<<<<<<<<<<
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
  *     if actions_spec is None:
@@ -9089,7 +9089,7 @@ static PyObject *__pyx_gb_6smelly_12open_actions_22generator2(__pyx_CoroutineObj
  *         yield action
  *     if not found:             # <<<<<<<<<<<<<<
  *         yield from actions_for_url_from_list(url, default_open_actions())
- * 
+ *
  */
   __pyx_t_2 = ((!(__pyx_cur_scope->__pyx_v_found != 0)) != 0);
   if (__pyx_t_2) {
@@ -9098,8 +9098,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_22generator2(__pyx_CoroutineObj
  *         yield action
  *     if not found:
  *         yield from actions_for_url_from_list(url, default_open_actions())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_actions_for_url_from_list); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -9192,14 +9192,14 @@ static PyObject *__pyx_gb_6smelly_12open_actions_22generator2(__pyx_CoroutineObj
  *         yield action
  *     if not found:             # <<<<<<<<<<<<<<
  *         yield from actions_for_url_from_list(url, default_open_actions())
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/open_actions.py":289
- * 
- * 
+ *
+ *
  * def actions_for_url(             # <<<<<<<<<<<<<<
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
  *     if actions_spec is None:
@@ -9228,8 +9228,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_22generator2(__pyx_CoroutineObj
 static PyObject *__pyx_gb_6smelly_12open_actions_25generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/open_actions.py":303
- * 
- * 
+ *
+ *
  * def actions_for_launch(url: str) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     # Custom launch actions using smelly URL scheme needs to be prefixed with
  *     # `smelly:///launch/`
@@ -9654,8 +9654,8 @@ static PyObject *__pyx_gb_6smelly_12open_actions_25generator3(__pyx_CoroutineObj
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/open_actions.py":303
- * 
- * 
+ *
+ *
  * def actions_for_launch(url: str) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     # Custom launch actions using smelly URL scheme needs to be prefixed with
  *     # `smelly:///launch/`
@@ -10480,7 +10480,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/open_actions.py":74
  *         entries.append((tuple(match_criteria), tuple(raw_actions)))
- * 
+ *
  *     with to_cmdline_implementation.filter_env_vars(             # <<<<<<<<<<<<<<
  *         'URL', 'FILE_PATH', 'FILE', 'FRAGMENT', 'URL_PATH', EDITOR=shlex.join(get_editor()), SHELL=resolved_shell(get_options())[0]
  *     ):
@@ -10494,7 +10494,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/open_actions.py":190
  *            'FRAGMENT': unquote(purl.fragment)}
- * 
+ *
  *     def expand(x: Any) -> Any:             # <<<<<<<<<<<<<<
  *         as_bytes = isinstance(x, bytes)
  *         if as_bytes:
@@ -10505,8 +10505,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_expand, 190, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 190, __pyx_L1_error)
 
   /* "smelly/open_actions.py":35
- * 
- * 
+ *
+ *
  * def parse(lines: Iterable[str]) -> Iterator[OpenAction]:             # <<<<<<<<<<<<<<
  *     match_criteria: List[MatchCriteria] = []
  *     raw_actions: List[str] = []
@@ -10517,8 +10517,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_parse, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 35, __pyx_L1_error)
 
   /* "smelly/open_actions.py":86
- * 
- * 
+ *
+ *
  * def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str,             # <<<<<<<<<<<<<<
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':
@@ -10529,8 +10529,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(4, 0, 14, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_url_matches_criterion, 86, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 86, __pyx_L1_error)
 
   /* "smelly/open_actions.py":161
- * 
- * 
+ *
+ *
  * def url_matches_criteria(             # <<<<<<<<<<<<<<
  *         purl: 'ParseResult', url: str, unquoted_path: str,
  *         criteria: Iterable[MatchCriteria]) -> bool:
@@ -10541,8 +10541,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(4, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_url_matches_criteria, 161, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 161, __pyx_L1_error)
 
   /* "smelly/open_actions.py":173
- * 
- * 
+ *
+ *
  * def actions_for_url_from_list(             # <<<<<<<<<<<<<<
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
  *     try:
@@ -10553,7 +10553,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(2, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_actions_for_url_from_list, 173, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 173, __pyx_L1_error)
 
   /* "smelly/open_actions.py":209
- * 
+ *
  * @run_once
  * def load_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -10565,7 +10565,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_load_open_actions, 209, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 209, __pyx_L1_error)
 
   /* "smelly/open_actions.py":219
- * 
+ *
  * @run_once
  * def load_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -10577,8 +10577,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_load_launch_actions, 219, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 219, __pyx_L1_error)
 
   /* "smelly/open_actions.py":228
- * 
- * 
+ *
+ *
  * def clear_caches() -> None:             # <<<<<<<<<<<<<<
  *     load_open_actions.clear_cached()
  *     load_launch_actions.clear_cached()
@@ -10586,7 +10586,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_clear_caches, 228, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 228, __pyx_L1_error)
 
   /* "smelly/open_actions.py":234
- * 
+ *
  * @run_once
  * def default_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -10595,7 +10595,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_default_open_actions, 234, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 234, __pyx_L1_error)
 
   /* "smelly/open_actions.py":247
- * 
+ *
  * @run_once
  * def default_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -10604,8 +10604,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_open_actions_py, __pyx_n_s_default_launch_actions, 247, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 247, __pyx_L1_error)
 
   /* "smelly/open_actions.py":289
- * 
- * 
+ *
+ *
  * def actions_for_url(             # <<<<<<<<<<<<<<
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
  *     if actions_spec is None:
@@ -10619,8 +10619,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__29);
 
   /* "smelly/open_actions.py":303
- * 
- * 
+ *
+ *
  * def actions_for_launch(url: str) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     # Custom launch actions using smelly URL scheme needs to be prefixed with
  *     # `smelly:///launch/`
@@ -10954,8 +10954,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/open_actions.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * import posixpath
  * import shlex
@@ -10966,7 +10966,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/open_actions.py":6
- * 
+ *
  * import os
  * import posixpath             # <<<<<<<<<<<<<<
  * import shlex
@@ -11015,7 +11015,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from typing import Any, Dict, Iterable, Iterator, List, NamedTuple, Optional, Tuple, cast             # <<<<<<<<<<<<<<
  * from urllib.parse import ParseResult, unquote, urlparse
- * 
+ *
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11091,7 +11091,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from typing import Any, Dict, Iterable, Iterator, List, NamedTuple, Optional, Tuple, cast
  * from urllib.parse import ParseResult, unquote, urlparse             # <<<<<<<<<<<<<<
- * 
+ *
  * from .conf.utils import KeyAction, to_cmdline_implementation
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -11124,7 +11124,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/open_actions.py":12
  * from urllib.parse import ParseResult, unquote, urlparse
- * 
+ *
  * from .conf.utils import KeyAction, to_cmdline_implementation             # <<<<<<<<<<<<<<
  * from .constants import config_dir
  * from .fast_data_types import get_options
@@ -11151,7 +11151,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/open_actions.py":13
- * 
+ *
  * from .conf.utils import KeyAction, to_cmdline_implementation
  * from .constants import config_dir             # <<<<<<<<<<<<<<
  * from .fast_data_types import get_options
@@ -11267,7 +11267,7 @@ if (!__Pyx_RefNanny) {
  * from .types import run_once
  * from .typing import MatchType             # <<<<<<<<<<<<<<
  * from .utils import expandvars, get_editor, log_error, resolved_shell
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11287,7 +11287,7 @@ if (!__Pyx_RefNanny) {
  * from .types import run_once
  * from .typing import MatchType
  * from .utils import expandvars, get_editor, log_error, resolved_shell             # <<<<<<<<<<<<<<
- * 
+ *
  * if not hasattr(shlex, 'join'):
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
@@ -11327,10 +11327,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/open_actions.py":21
  * from .utils import expandvars, get_editor, log_error, resolved_shell
- * 
+ *
  * if not hasattr(shlex, 'join'):             # <<<<<<<<<<<<<<
  *     shlex.join = lambda a: ' '.join(map(shlex.quote, a))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_shlex); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11340,11 +11340,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_4) {
 
     /* "smelly/open_actions.py":22
- * 
+ *
  * if not hasattr(shlex, 'join'):
  *     shlex.join = lambda a: ' '.join(map(shlex.quote, a))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6smelly_12open_actions_26lambda, 0, __pyx_n_s_lambda, NULL, __pyx_n_s_smelly_open_actions, __pyx_d, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -11356,16 +11356,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/open_actions.py":21
  * from .utils import expandvars, get_editor, log_error, resolved_shell
- * 
+ *
  * if not hasattr(shlex, 'join'):             # <<<<<<<<<<<<<<
  *     shlex.join = lambda a: ' '.join(map(shlex.quote, a))
- * 
+ *
  */
   }
 
   /* "smelly/open_actions.py":25
- * 
- * 
+ *
+ *
  * class MatchCriteria(NamedTuple):             # <<<<<<<<<<<<<<
  *     type: MatchType
  *     value: str
@@ -11386,8 +11386,8 @@ if (!__Pyx_RefNanny) {
  * class MatchCriteria(NamedTuple):
  *     type: MatchType
  *     value: str             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_6 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_MatchCriteria, __pyx_t_2, __pyx_t_5, NULL, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -11398,8 +11398,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/open_actions.py":30
- * 
- * 
+ *
+ *
  * class OpenAction(NamedTuple):             # <<<<<<<<<<<<<<
  *     match_criteria: Tuple[MatchCriteria, ...]
  *     actions: Tuple[KeyAction, ...]
@@ -11420,8 +11420,8 @@ if (!__Pyx_RefNanny) {
  * class OpenAction(NamedTuple):
  *     match_criteria: Tuple[MatchCriteria, ...]
  *     actions: Tuple[KeyAction, ...]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_6 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_OpenAction, __pyx_t_1, __pyx_t_5, NULL, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -11432,8 +11432,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/open_actions.py":35
- * 
- * 
+ *
+ *
  * def parse(lines: Iterable[str]) -> Iterator[OpenAction]:             # <<<<<<<<<<<<<<
  *     match_criteria: List[MatchCriteria] = []
  *     raw_actions: List[str] = []
@@ -11465,8 +11465,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/open_actions.py":86
- * 
- * 
+ *
+ *
  * def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str,             # <<<<<<<<<<<<<<
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':
@@ -11478,7 +11478,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_unquoted_path, __pyx_n_u_str) < 0) __PYX_ERR(0, 86, __pyx_L1_error)
 
   /* "smelly/open_actions.py":87
- * 
+ *
  * def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str,
  *                           mc: MatchCriteria) -> bool:             # <<<<<<<<<<<<<<
  *     if mc.type == 'url':
@@ -11491,8 +11491,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_return, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 86, __pyx_L1_error)
 
   /* "smelly/open_actions.py":86
- * 
- * 
+ *
+ *
  * def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str,             # <<<<<<<<<<<<<<
  *                           mc: MatchCriteria) -> bool:
  *     if mc.type == 'url':
@@ -11505,8 +11505,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/open_actions.py":161
- * 
- * 
+ *
+ *
  * def url_matches_criteria(             # <<<<<<<<<<<<<<
  *         purl: 'ParseResult', url: str, unquoted_path: str,
  *         criteria: Iterable[MatchCriteria]) -> bool:
@@ -11537,8 +11537,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_return, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 161, __pyx_L1_error)
 
   /* "smelly/open_actions.py":161
- * 
- * 
+ *
+ *
  * def url_matches_criteria(             # <<<<<<<<<<<<<<
  *         purl: 'ParseResult', url: str, unquoted_path: str,
  *         criteria: Iterable[MatchCriteria]) -> bool:
@@ -11551,8 +11551,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/open_actions.py":173
- * 
- * 
+ *
+ *
  * def actions_for_url_from_list(             # <<<<<<<<<<<<<<
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
  *     try:
@@ -11562,7 +11562,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_url, __pyx_n_u_str) < 0) __PYX_ERR(0, 173, __pyx_L1_error)
 
   /* "smelly/open_actions.py":174
- * 
+ *
  * def actions_for_url_from_list(
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     try:
@@ -11590,8 +11590,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/open_actions.py":173
- * 
- * 
+ *
+ *
  * def actions_for_url_from_list(             # <<<<<<<<<<<<<<
  *         url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
  *     try:
@@ -11604,8 +11604,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/open_actions.py":208
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def load_open_actions() -> Tuple[OpenAction, ...]:
  *     try:
@@ -11614,7 +11614,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/open_actions.py":209
- * 
+ *
  * @run_once
  * def load_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -11646,8 +11646,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/open_actions.py":208
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def load_open_actions() -> Tuple[OpenAction, ...]:
  *     try:
@@ -11660,8 +11660,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/open_actions.py":218
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def load_launch_actions() -> Tuple[OpenAction, ...]:
  *     try:
@@ -11670,7 +11670,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/open_actions.py":219
- * 
+ *
  * @run_once
  * def load_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     try:
@@ -11702,8 +11702,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/open_actions.py":218
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def load_launch_actions() -> Tuple[OpenAction, ...]:
  *     try:
@@ -11716,8 +11716,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/open_actions.py":228
- * 
- * 
+ *
+ *
  * def clear_caches() -> None:             # <<<<<<<<<<<<<<
  *     load_open_actions.clear_cached()
  *     load_launch_actions.clear_cached()
@@ -11733,8 +11733,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/open_actions.py":233
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def default_open_actions() -> Tuple[OpenAction, ...]:
  *     return tuple(
@@ -11743,7 +11743,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "smelly/open_actions.py":234
- * 
+ *
  * @run_once
  * def default_open_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -11775,8 +11775,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/open_actions.py":233
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def default_open_actions() -> Tuple[OpenAction, ...]:
  *     return tuple(
@@ -11789,8 +11789,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/open_actions.py":246
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def default_launch_actions() -> Tuple[OpenAction, ...]:
  *     return tuple(
@@ -11799,7 +11799,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/open_actions.py":247
- * 
+ *
  * @run_once
  * def default_launch_actions() -> Tuple[OpenAction, ...]:             # <<<<<<<<<<<<<<
  *     return tuple(
@@ -11831,8 +11831,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/open_actions.py":246
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def default_launch_actions() -> Tuple[OpenAction, ...]:
  *     return tuple(
@@ -11845,8 +11845,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/open_actions.py":289
- * 
- * 
+ *
+ *
  * def actions_for_url(             # <<<<<<<<<<<<<<
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
  *     if actions_spec is None:
@@ -11856,7 +11856,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_url, __pyx_n_u_str) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
 
   /* "smelly/open_actions.py":290
- * 
+ *
  * def actions_for_url(
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     if actions_spec is None:
@@ -11881,8 +11881,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/open_actions.py":289
- * 
- * 
+ *
+ *
  * def actions_for_url(             # <<<<<<<<<<<<<<
  *         url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
  *     if actions_spec is None:
@@ -11896,8 +11896,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/open_actions.py":303
- * 
- * 
+ *
+ *
  * def actions_for_launch(url: str) -> Iterator[KeyAction]:             # <<<<<<<<<<<<<<
  *     # Custom launch actions using smelly URL scheme needs to be prefixed with
  *     # `smelly:///launch/`
@@ -11925,7 +11925,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/open_actions.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);

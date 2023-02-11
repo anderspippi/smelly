@@ -972,8 +972,8 @@ struct __pyx_obj_6smelly_14remote_control___pyx_scope_struct_2_parse_rc_args;
 struct __pyx_obj_6smelly_14remote_control___pyx_scope_struct_3_genexpr;
 
 /* "smelly/remote_control.py":368
- * 
- * 
+ *
+ *
  * def do_io(to: Optional[str],             # <<<<<<<<<<<<<<
  *           original_cmd: Dict[str, Any],
  *           no_response: bool, response_timeout: float,
@@ -988,7 +988,7 @@ struct __pyx_obj_6smelly_14remote_control___pyx_scope_struct__do_io {
 
 /* "smelly/remote_control.py":378
  *     else:
- * 
+ *
  *         def send_generator() -> Iterator[bytes]:             # <<<<<<<<<<<<<<
  *             assert payload is not None
  *             for chunk in payload:
@@ -1004,8 +1004,8 @@ struct __pyx_obj_6smelly_14remote_control___pyx_scope_struct_1_send_generator {
 
 
 /* "smelly/remote_control.py":403
- * 
- * 
+ *
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     cmap = {name: command_for_name(name)
  *             for name in sorted(all_command_names())}
@@ -2627,11 +2627,11 @@ static PyObject *__pyx_codeobj__95;
 /* Late includes */
 
 /* "smelly/remote_control.py":50
- * 
- * 
+ *
+ *
  * def encode_response_for_peer(response: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     return b'\x1bP@smelly-cmd' + json.dumps(response).encode('utf-8') + b'\x1b\\'
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2661,11 +2661,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_encode_response_for_peer(CYTH
   __Pyx_RefNannySetupContext("encode_response_for_peer", 0);
 
   /* "smelly/remote_control.py":51
- * 
+ *
  * def encode_response_for_peer(response: Any) -> bytes:
  *     return b'\x1bP@smelly-cmd' + json.dumps(response).encode('utf-8') + b'\x1b\\'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_json); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
@@ -2718,11 +2718,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_encode_response_for_peer(CYTH
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":50
- * 
- * 
+ *
+ *
  * def encode_response_for_peer(response: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     return b'\x1bP@smelly-cmd' + json.dumps(response).encode('utf-8') + b'\x1b\\'
- * 
+ *
  */
 
   /* function exit code */
@@ -2740,8 +2740,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_encode_response_for_peer(CYTH
 }
 
 /* "smelly/remote_control.py":54
- * 
- * 
+ *
+ *
  * def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     try:
  *         pcmd = json.loads(serialized_cmd)
@@ -2848,7 +2848,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("parse_cmd", 0);
 
   /* "smelly/remote_control.py":55
- * 
+ *
  * def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str, Any]:
  *     try:             # <<<<<<<<<<<<<<
  *         pcmd = json.loads(serialized_cmd)
@@ -2894,7 +2894,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
       __pyx_t_4 = 0;
 
       /* "smelly/remote_control.py":55
- * 
+ *
  * def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str, Any]:
  *     try:             # <<<<<<<<<<<<<<
  *         pcmd = json.loads(serialized_cmd)
@@ -2946,7 +2946,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
     __pyx_L5_except_error:;
 
     /* "smelly/remote_control.py":55
- * 
+ *
  * def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str, Any]:
  *     try:             # <<<<<<<<<<<<<<
  *         pcmd = json.loads(serialized_cmd)
@@ -2973,7 +2973,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
  *         return {}
  *     pcmd.pop('password', None)
  */
-  __pyx_t_10 = PyDict_Check(__pyx_v_pcmd); 
+  __pyx_t_10 = PyDict_Check(__pyx_v_pcmd);
   __pyx_t_11 = ((!(__pyx_t_10 != 0)) != 0);
   if (!__pyx_t_11) {
   } else {
@@ -3498,7 +3498,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
  *             return {}
  *         delta = time_ns() - pcmd.pop('timestamp')
  */
-    __pyx_t_10 = PyDict_Check(__pyx_v_pcmd); 
+    __pyx_t_10 = PyDict_Check(__pyx_v_pcmd);
     __pyx_t_11 = ((!(__pyx_t_10 != 0)) != 0);
     if (!__pyx_t_11) {
     } else {
@@ -3665,7 +3665,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
  *             )
  *             return {}             # <<<<<<<<<<<<<<
  *     return pcmd
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_t_6 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
@@ -3696,8 +3696,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
  *             )
  *             return {}
  *     return pcmd             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_pcmd);
@@ -3705,8 +3705,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":54
- * 
- * 
+ *
+ *
  * def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     try:
  *         pcmd = json.loads(serialized_cmd)
@@ -3736,7 +3736,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_2parse_cmd(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/remote_control.py":90
- * 
+ *
  * class CMDChecker:
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
@@ -3850,8 +3850,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_10CMDChecker___call__(CYTHON_
  *             window: Optional['Window'],
  *             from_socket: bool, extra_data: Dict[str, Any]) -> Optional[bool]:
  *         return False             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(Py_False);
@@ -3859,7 +3859,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_10CMDChecker___call__(CYTHON_
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":90
- * 
+ *
  * class CMDChecker:
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
@@ -3874,11 +3874,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_10CMDChecker___call__(CYTHON_
 }
 
 /* "smelly/remote_control.py":98
- * 
+ *
  * @lru_cache(maxsize=64)
  * def is_cmd_allowed_loader(path: str) -> CMDChecker:             # <<<<<<<<<<<<<<
  *     import runpy
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3932,7 +3932,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
  * @lru_cache(maxsize=64)
  * def is_cmd_allowed_loader(path: str) -> CMDChecker:
  *     import runpy             # <<<<<<<<<<<<<<
- * 
+ *
  *     try:
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_runpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
@@ -3942,7 +3942,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
 
   /* "smelly/remote_control.py":101
  *     import runpy
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         m = runpy.run_path(path)
  *         func: CMDChecker = m['is_cmd_allowed']
@@ -3957,7 +3957,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
     /*try:*/ {
 
       /* "smelly/remote_control.py":102
- * 
+ *
  *     try:
  *         m = runpy.run_path(path)             # <<<<<<<<<<<<<<
  *         func: CMDChecker = m['is_cmd_allowed']
@@ -3997,7 +3997,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
 
       /* "smelly/remote_control.py":101
  *     import runpy
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         m = runpy.run_path(path)
  *         func: CMDChecker = m['is_cmd_allowed']
@@ -4098,7 +4098,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
  *             f'Failed to load cmd check function from {path} with error: {e}')
  *         func = CMDChecker()             # <<<<<<<<<<<<<<
  *     return func
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_CMDChecker); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 107, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_9);
@@ -4129,7 +4129,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
 
     /* "smelly/remote_control.py":101
  *     import runpy
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         m = runpy.run_path(path)
  *         func: CMDChecker = m['is_cmd_allowed']
@@ -4151,8 +4151,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
  *             f'Failed to load cmd check function from {path} with error: {e}')
  *         func = CMDChecker()
  *     return func             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_func);
@@ -4160,11 +4160,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":98
- * 
+ *
  * @lru_cache(maxsize=64)
  * def is_cmd_allowed_loader(path: str) -> CMDChecker:             # <<<<<<<<<<<<<<
  *     import runpy
- * 
+ *
  */
 
   /* function exit code */
@@ -4189,11 +4189,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4is_cmd_allowed_loader(CYTHON
 }
 
 /* "smelly/remote_control.py":112
- * 
+ *
  * @lru_cache(maxsize=1024)
  * def fnmatch_pattern(pat: str) -> 're.Pattern[str]':             # <<<<<<<<<<<<<<
  *     from fnmatch import translate
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4236,7 +4236,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_6fnmatch_pattern(CYTHON_UNUSE
  * @lru_cache(maxsize=1024)
  * def fnmatch_pattern(pat: str) -> 're.Pattern[str]':
  *     from fnmatch import translate             # <<<<<<<<<<<<<<
- * 
+ *
  *     return re.compile(translate(pat))
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
@@ -4256,10 +4256,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_6fnmatch_pattern(CYTHON_UNUSE
 
   /* "smelly/remote_control.py":115
  *     from fnmatch import translate
- * 
+ *
  *     return re.compile(translate(pat))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_re); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
@@ -4304,11 +4304,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_6fnmatch_pattern(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":112
- * 
+ *
  * @lru_cache(maxsize=1024)
  * def fnmatch_pattern(pat: str) -> 're.Pattern[str]':             # <<<<<<<<<<<<<<
  *     from fnmatch import translate
- * 
+ *
  */
 
   /* function exit code */
@@ -4328,7 +4328,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_6fnmatch_pattern(CYTHON_UNUSE
 }
 
 /* "smelly/remote_control.py":119
- * 
+ *
  * class PasswordAuthorizer:
  *     def __init__(self, auth_items: FrozenSet[str]) -> None:             # <<<<<<<<<<<<<<
  *         self.command_patterns = []
@@ -4599,7 +4599,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer___init__
  *                 self.function_checkers.append(is_cmd_allowed_loader(path))
  *             else:
  *                 self.command_patterns.append(fnmatch_pattern(item))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def is_cmd_allowed(
  */
     /*else*/ {
@@ -4631,7 +4631,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer___init__
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/remote_control.py":119
- * 
+ *
  * class PasswordAuthorizer:
  *     def __init__(self, auth_items: FrozenSet[str]) -> None:             # <<<<<<<<<<<<<<
  *         self.command_patterns = []
@@ -4660,7 +4660,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer___init__
 
 /* "smelly/remote_control.py":130
  *                 self.command_patterns.append(fnmatch_pattern(item))
- * 
+ *
  *     def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
  *             window: Optional['Window'],
@@ -5167,7 +5167,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
  *                 ret = f(pcmd, window, from_socket, extra_data)
  *             except Exception as e:             # <<<<<<<<<<<<<<
  *                 import traceback
- * 
+ *
  */
       __pyx_t_13 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_13) {
@@ -5183,7 +5183,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
  *                 ret = f(pcmd, window, from_socket, extra_data)
  *             except Exception as e:
  *                 import traceback             # <<<<<<<<<<<<<<
- * 
+ *
  *                 traceback.print_exc()
  */
         __pyx_t_9 = __Pyx_Import(__pyx_n_s_traceback, 0, -1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 146, __pyx_L14_except_error)
@@ -5193,7 +5193,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
 
         /* "smelly/remote_control.py":148
  *                 import traceback
- * 
+ *
  *                 traceback.print_exc()             # <<<<<<<<<<<<<<
  *                 log_error(
  *                     f'There was an error using a custom RC auth function, blocking the remote command. Error: {e}')
@@ -5218,7 +5218,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
         /* "smelly/remote_control.py":149
- * 
+ *
  *                 traceback.print_exc()
  *                 log_error(             # <<<<<<<<<<<<<<
  *                     f'There was an error using a custom RC auth function, blocking the remote command. Error: {e}')
@@ -5310,7 +5310,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
  *             if ret is not None:
  *                 return ret             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_ret);
@@ -5341,8 +5341,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
  *             if ret is not None:
  *                 return ret
  *         return False             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(Py_False);
@@ -5351,7 +5351,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
 
   /* "smelly/remote_control.py":130
  *                 self.command_patterns.append(fnmatch_pattern(item))
- * 
+ *
  *     def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
  *             window: Optional['Window'],
@@ -5382,11 +5382,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18PasswordAuthorizer_2is_cmd_
 }
 
 /* "smelly/remote_control.py":158
- * 
+ *
  * @lru_cache(maxsize=256)
  * def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:             # <<<<<<<<<<<<<<
  *     return PasswordAuthorizer(auth_items)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5418,8 +5418,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8password_authorizer(CYTHON_U
  * @lru_cache(maxsize=256)
  * def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:
  *     return PasswordAuthorizer(auth_items)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_PasswordAuthorizer); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 159, __pyx_L1_error)
@@ -5444,11 +5444,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8password_authorizer(CYTHON_U
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":158
- * 
+ *
  * @lru_cache(maxsize=256)
  * def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:             # <<<<<<<<<<<<<<
  *     return PasswordAuthorizer(auth_items)
- * 
+ *
  */
 
   /* function exit code */
@@ -5465,8 +5465,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8password_authorizer(CYTHON_U
 }
 
 /* "smelly/remote_control.py":165
- * 
- * 
+ *
+ *
  * def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *         pcmd: Dict[str, Any],
  *         window: Optional['Window'],
@@ -6101,7 +6101,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_10is_cmd_allowed(CYTHON_UNUSE
  *         return None
  *     pa = password_authorizer(auth_items)             # <<<<<<<<<<<<<<
  *     return pa.is_cmd_allowed(pcmd, window, from_socket, extra_data)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_password_authorizer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6127,8 +6127,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_10is_cmd_allowed(CYTHON_UNUSE
  *         return None
  *     pa = password_authorizer(auth_items)
  *     return pa.is_cmd_allowed(pcmd, window, from_socket, extra_data)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_pa, __pyx_n_s_is_cmd_allowed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
@@ -6189,8 +6189,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_10is_cmd_allowed(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":165
- * 
- * 
+ *
+ *
  * def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *         pcmd: Dict[str, Any],
  *         window: Optional['Window'],
@@ -6216,11 +6216,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_10is_cmd_allowed(CYTHON_UNUSE
 }
 
 /* "smelly/remote_control.py":196
- * 
- * 
+ *
+ *
  * def set_user_password_allowed(pwd: str, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     user_password_allowed[pwd] = allowed
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6307,11 +6307,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12set_user_password_allowed(C
   __Pyx_RefNannySetupContext("set_user_password_allowed", 0);
 
   /* "smelly/remote_control.py":197
- * 
+ *
  * def set_user_password_allowed(pwd: str, allowed: bool = True) -> None:
  *     user_password_allowed[pwd] = allowed             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_user_password_allowed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6319,11 +6319,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12set_user_password_allowed(C
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/remote_control.py":196
- * 
- * 
+ *
+ *
  * def set_user_password_allowed(pwd: str, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     user_password_allowed[pwd] = allowed
- * 
+ *
  */
 
   /* function exit code */
@@ -6340,11 +6340,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12set_user_password_allowed(C
 }
 
 /* "smelly/remote_control.py":200
- * 
- * 
+ *
+ *
  * def close_active_stream(stream_id: str) -> None:             # <<<<<<<<<<<<<<
  *     active_streams.pop(stream_id, None)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6383,11 +6383,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_14close_active_stream(CYTHON_
   __Pyx_RefNannySetupContext("close_active_stream", 0);
 
   /* "smelly/remote_control.py":201
- * 
+ *
  * def close_active_stream(stream_id: str) -> None:
  *     active_streams.pop(stream_id, None)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_active_streams); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 201, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6442,11 +6442,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_14close_active_stream(CYTHON_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/remote_control.py":200
- * 
- * 
+ *
+ *
  * def close_active_stream(stream_id: str) -> None:             # <<<<<<<<<<<<<<
  *     active_streams.pop(stream_id, None)
- * 
+ *
  */
 
   /* function exit code */
@@ -6466,8 +6466,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_14close_active_stream(CYTHON_
 }
 
 /* "smelly/remote_control.py":204
- * 
- * 
+ *
+ *
  * def handle_cmd(             # <<<<<<<<<<<<<<
  *     boss: BossType, window: Optional[WindowType], cmd: Dict[str, Any], peer_id: int, self_window: Optional[WindowType]
  * ) -> Union[Dict[str, Any], None, AsyncResponse]:
@@ -7549,7 +7549,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16handle_cmd(CYTHON_UNUSED Py
       __Pyx_GIVEREF(__pyx_t_1);
       __Pyx_XGIVEREF(__pyx_t_11);
       __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_11);
-      __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_11 = 0; 
+      __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_11 = 0;
       __PYX_ERR(0, 244, __pyx_L20_except_error)
     }
     goto __pyx_L20_except_error;
@@ -7738,7 +7738,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16handle_cmd(CYTHON_UNUSED Py
  *     if not no_response:
  *         return response             # <<<<<<<<<<<<<<
  *     return None
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_v_response);
@@ -7758,16 +7758,16 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16handle_cmd(CYTHON_UNUSED Py
  *     if not no_response:
  *         return response
  *     return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":204
- * 
- * 
+ *
+ *
  * def handle_cmd(             # <<<<<<<<<<<<<<
  *     boss: BossType, window: Optional[WindowType], cmd: Dict[str, Any], peer_id: int, self_window: Optional[WindowType]
  * ) -> Union[Dict[str, Any], None, AsyncResponse]:
@@ -7801,8 +7801,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16handle_cmd(CYTHON_UNUSED Py
 }
 
 /* "smelly/remote_control.py":303
- * 
- * 
+ *
+ *
  * def encode_send(send: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     es = ('@smelly-cmd' + json.dumps(send)).encode('ascii')
  *     return b'\x1bP' + es + b'\x1b\\'
@@ -7836,11 +7836,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18encode_send(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("encode_send", 0);
 
   /* "smelly/remote_control.py":304
- * 
+ *
  * def encode_send(send: Any) -> bytes:
  *     es = ('@smelly-cmd' + json.dumps(send)).encode('ascii')             # <<<<<<<<<<<<<<
  *     return b'\x1bP' + es + b'\x1b\\'
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_json); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -7890,8 +7890,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18encode_send(CYTHON_UNUSED P
  * def encode_send(send: Any) -> bytes:
  *     es = ('@smelly-cmd' + json.dumps(send)).encode('ascii')
  *     return b'\x1bP' + es + b'\x1b\\'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyNumber_Add(__pyx_kp_b_P, __pyx_v_es); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 305, __pyx_L1_error)
@@ -7905,8 +7905,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18encode_send(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":303
- * 
- * 
+ *
+ *
  * def encode_send(send: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     es = ('@smelly-cmd' + json.dumps(send)).encode('ascii')
  *     return b'\x1bP' + es + b'\x1b\\'
@@ -7928,11 +7928,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_18encode_send(CYTHON_UNUSED P
 }
 
 /* "smelly/remote_control.py":313
- * 
+ *
  * class SocketIO:
  *     def __init__(self, to: str):             # <<<<<<<<<<<<<<
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8022,7 +8022,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO___init__(CYTHON_UNU
  * class SocketIO:
  *     def __init__(self, to: str):
  *         self.family, self.address = parse_address_spec(to)[:2]             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __enter__(self) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_address_spec); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 314, __pyx_L1_error)
@@ -8055,11 +8055,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO___init__(CYTHON_UNU
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -8097,11 +8097,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO___init__(CYTHON_UNU
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/remote_control.py":313
- * 
+ *
  * class SocketIO:
  *     def __init__(self, to: str):             # <<<<<<<<<<<<<<
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  */
 
   /* function exit code */
@@ -8122,10 +8122,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO___init__(CYTHON_UNU
 
 /* "smelly/remote_control.py":316
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8156,10 +8156,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_2__enter__(CYTHON_U
   __Pyx_RefNannySetupContext("__enter__", 0);
 
   /* "smelly/remote_control.py":317
- * 
+ *
  *     def __enter__(self) -> None:
  *         import socket             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.socket = socket.socket(self.family)
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_socket, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
@@ -8169,7 +8169,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_2__enter__(CYTHON_U
 
   /* "smelly/remote_control.py":319
  *         import socket
- * 
+ *
  *         self.socket = socket.socket(self.family)             # <<<<<<<<<<<<<<
  *         self.socket.setblocking(True)
  *         self.socket.connect(self.address)
@@ -8198,11 +8198,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_2__enter__(CYTHON_U
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/remote_control.py":320
- * 
+ *
  *         self.socket = socket.socket(self.family)
  *         self.socket.setblocking(True)             # <<<<<<<<<<<<<<
  *         self.socket.connect(self.address)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_socket); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 320, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8230,7 +8230,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_2__enter__(CYTHON_U
  *         self.socket = socket.socket(self.family)
  *         self.socket.setblocking(True)
  *         self.socket.connect(self.address)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __exit__(self, *a: Any) -> None:
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_socket); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 321, __pyx_L1_error)
@@ -8260,10 +8260,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_2__enter__(CYTHON_U
 
   /* "smelly/remote_control.py":316
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
 
   /* function exit code */
@@ -8285,10 +8285,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_2__enter__(CYTHON_U
 
 /* "smelly/remote_control.py":323
  *         self.socket.connect(self.address)
- * 
+ *
  *     def __exit__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8380,10 +8380,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
   __Pyx_RefNannySetupContext("__exit__", 0);
 
   /* "smelly/remote_control.py":324
- * 
+ *
  *     def __exit__(self, *a: Any) -> None:
  *         import socket             # <<<<<<<<<<<<<<
- * 
+ *
  *         # on some OSes such as macOS the socket is already closed at this point
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_socket, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 324, __pyx_L1_error)
@@ -8392,7 +8392,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
   __pyx_t_1 = 0;
 
   /* "smelly/remote_control.py":327
- * 
+ *
  *         # on some OSes such as macOS the socket is already closed at this point
  *         with suppress(OSError):             # <<<<<<<<<<<<<<
  *             self.socket.shutdown(socket.SHUT_RDWR)
@@ -8452,7 +8452,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
  *         with suppress(OSError):
  *             self.socket.shutdown(socket.SHUT_RDWR)             # <<<<<<<<<<<<<<
  *         self.socket.close()
- * 
+ *
  */
           __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_socket); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 328, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -8480,7 +8480,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
           /* "smelly/remote_control.py":327
- * 
+ *
  *         # on some OSes such as macOS the socket is already closed at this point
  *         with suppress(OSError):             # <<<<<<<<<<<<<<
  *             self.socket.shutdown(socket.SHUT_RDWR)
@@ -8518,7 +8518,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 327, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -8564,7 +8564,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
  *         with suppress(OSError):
  *             self.socket.shutdown(socket.SHUT_RDWR)
  *         self.socket.close()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send(self, data: Union[bytes, Iterable[Union[str, bytes]]]) -> None:
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_socket); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 329, __pyx_L1_error)
@@ -8591,10 +8591,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
 
   /* "smelly/remote_control.py":323
  *         self.socket.connect(self.address)
- * 
+ *
  *     def __exit__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
 
   /* function exit code */
@@ -8616,10 +8616,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_4__exit__(CYTHON_UN
 
 /* "smelly/remote_control.py":331
  *         self.socket.close()
- * 
+ *
  *     def send(self, data: Union[bytes, Iterable[Union[str, bytes]]]) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8712,10 +8712,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("send", 0);
 
   /* "smelly/remote_control.py":332
- * 
+ *
  *     def send(self, data: Union[bytes, Iterable[Union[str, bytes]]]) -> None:
  *         import socket             # <<<<<<<<<<<<<<
- * 
+ *
  *         with self.socket.makefile('wb') as out:
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_socket, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 332, __pyx_L1_error)
@@ -8725,7 +8725,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
 
   /* "smelly/remote_control.py":334
  *         import socket
- * 
+ *
  *         with self.socket.makefile('wb') as out:             # <<<<<<<<<<<<<<
  *             if isinstance(data, bytes):
  *                 out.write(data)
@@ -8786,13 +8786,13 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
           __pyx_t_2 = 0;
 
           /* "smelly/remote_control.py":335
- * 
+ *
  *         with self.socket.makefile('wb') as out:
  *             if isinstance(data, bytes):             # <<<<<<<<<<<<<<
  *                 out.write(data)
  *             else:
  */
-          __pyx_t_9 = PyBytes_Check(__pyx_v_data); 
+          __pyx_t_9 = PyBytes_Check(__pyx_v_data);
           __pyx_t_10 = (__pyx_t_9 != 0);
           if (__pyx_t_10) {
 
@@ -8823,7 +8823,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
             /* "smelly/remote_control.py":335
- * 
+ *
  *         with self.socket.makefile('wb') as out:
  *             if isinstance(data, bytes):             # <<<<<<<<<<<<<<
  *                 out.write(data)
@@ -8889,7 +8889,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
  *                         chunk = chunk.encode('utf-8')
  *                     out.write(chunk)
  */
-              __pyx_t_10 = PyString_Check(__pyx_v_chunk); 
+              __pyx_t_10 = PyString_Check(__pyx_v_chunk);
               __pyx_t_9 = (__pyx_t_10 != 0);
               if (__pyx_t_9) {
 
@@ -8960,7 +8960,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
  *                     out.write(chunk)
  *                     out.flush()             # <<<<<<<<<<<<<<
  *         self.socket.shutdown(socket.SHUT_WR)
- * 
+ *
  */
               __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_out, __pyx_n_s_flush); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 342, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_3);
@@ -8995,7 +8995,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
 
           /* "smelly/remote_control.py":334
  *         import socket
- * 
+ *
  *         with self.socket.makefile('wb') as out:             # <<<<<<<<<<<<<<
  *             if isinstance(data, bytes):
  *                 out.write(data)
@@ -9032,7 +9032,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_3);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 334, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -9078,7 +9078,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
  *                     out.write(chunk)
  *                     out.flush()
  *         self.socket.shutdown(socket.SHUT_WR)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def simple_recv(self, timeout: float) -> bytes:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_socket); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 343, __pyx_L1_error)
@@ -9108,10 +9108,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
 
   /* "smelly/remote_control.py":331
  *         self.socket.close()
- * 
+ *
  *     def send(self, data: Union[bytes, Iterable[Union[str, bytes]]]) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
 
   /* function exit code */
@@ -9135,7 +9135,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_6send(CYTHON_UNUSED
 
 /* "smelly/remote_control.py":345
  *         self.socket.shutdown(socket.SHUT_WR)
- * 
+ *
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         dcs = re.compile(br'\x1bP@smelly-cmd([^\x1b]+)\x1b\\')
  *         self.socket.settimeout(timeout)
@@ -9231,7 +9231,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_8simple_recv(CYTHON
   __Pyx_RefNannySetupContext("simple_recv", 0);
 
   /* "smelly/remote_control.py":346
- * 
+ *
  *     def simple_recv(self, timeout: float) -> bytes:
  *         dcs = re.compile(br'\x1bP@smelly-cmd([^\x1b]+)\x1b\\')             # <<<<<<<<<<<<<<
  *         self.socket.settimeout(timeout)
@@ -9447,7 +9447,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_8simple_recv(CYTHON
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_3);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 349, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -9630,8 +9630,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_8simple_recv(CYTHON
  *             raise SocketClosed(
  *                 'Remote control connection was closed by smelly without any response being received')
  *         return bytes(m.group(1))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_m, __pyx_n_s_group); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 358, __pyx_L1_error)
@@ -9660,7 +9660,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_8simple_recv(CYTHON
 
   /* "smelly/remote_control.py":345
  *         self.socket.shutdown(socket.SHUT_WR)
- * 
+ *
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         dcs = re.compile(br'\x1bP@smelly-cmd([^\x1b]+)\x1b\\')
  *         self.socket.settimeout(timeout)
@@ -9686,7 +9686,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_8SocketIO_8simple_recv(CYTHON
 }
 
 /* "smelly/remote_control.py":362
- * 
+ *
  * class RCIO(TTYIO):
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
@@ -9791,7 +9791,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4RCIO_simple_recv(CYTHON_UNUS
  *         ans: List[bytes] = []
  *         read_command_response(self.tty_fd, timeout, ans)             # <<<<<<<<<<<<<<
  *         return b''.join(ans)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_read_command_response); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 364, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9857,8 +9857,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4RCIO_simple_recv(CYTHON_UNUS
  *         ans: List[bytes] = []
  *         read_command_response(self.tty_fd, timeout, ans)
  *         return b''.join(ans)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyBytes_Join(__pyx_kp_b__4, __pyx_v_ans); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 365, __pyx_L1_error)
@@ -9869,7 +9869,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4RCIO_simple_recv(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":362
- * 
+ *
  * class RCIO(TTYIO):
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
@@ -9894,8 +9894,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_4RCIO_simple_recv(CYTHON_UNUS
 }
 
 /* "smelly/remote_control.py":368
- * 
- * 
+ *
+ *
  * def do_io(to: Optional[str],             # <<<<<<<<<<<<<<
  *           original_cmd: Dict[str, Any],
  *           no_response: bool, response_timeout: float,
@@ -10002,7 +10002,7 @@ static PyObject *__pyx_gb_6smelly_14remote_control_5do_io_2generator(__pyx_Corou
 
 /* "smelly/remote_control.py":378
  *     else:
- * 
+ *
  *         def send_generator() -> Iterator[bytes]:             # <<<<<<<<<<<<<<
  *             assert payload is not None
  *             for chunk in payload:
@@ -10087,7 +10087,7 @@ static PyObject *__pyx_gb_6smelly_14remote_control_5do_io_2generator(__pyx_Corou
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 378, __pyx_L1_error)
 
   /* "smelly/remote_control.py":379
- * 
+ *
  *         def send_generator() -> Iterator[bytes]:
  *             assert payload is not None             # <<<<<<<<<<<<<<
  *             for chunk in payload:
@@ -10161,7 +10161,7 @@ static PyObject *__pyx_gb_6smelly_14remote_control_5do_io_2generator(__pyx_Corou
  *             for chunk in payload:
  *                 original_cmd['payload'] = chunk             # <<<<<<<<<<<<<<
  *                 yield encode_send(encrypter(original_cmd))
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_original_cmd)) { __Pyx_RaiseClosureNameError("original_cmd"); __PYX_ERR(0, 381, __pyx_L1_error) }
     if (unlikely(PyObject_SetItem(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_original_cmd, __pyx_n_s_payload, __pyx_cur_scope->__pyx_v_chunk) < 0)) __PYX_ERR(0, 381, __pyx_L1_error)
@@ -10170,7 +10170,7 @@ static PyObject *__pyx_gb_6smelly_14remote_control_5do_io_2generator(__pyx_Corou
  *             for chunk in payload:
  *                 original_cmd['payload'] = chunk
  *                 yield encode_send(encrypter(original_cmd))             # <<<<<<<<<<<<<<
- * 
+ *
  *         send_data = send_generator()
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_encode_send); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 382, __pyx_L1_error)
@@ -10242,7 +10242,7 @@ static PyObject *__pyx_gb_6smelly_14remote_control_5do_io_2generator(__pyx_Corou
 
   /* "smelly/remote_control.py":378
  *     else:
- * 
+ *
  *         def send_generator() -> Iterator[bytes]:             # <<<<<<<<<<<<<<
  *             assert payload is not None
  *             for chunk in payload:
@@ -10271,8 +10271,8 @@ static PyObject *__pyx_gb_6smelly_14remote_control_5do_io_2generator(__pyx_Corou
 }
 
 /* "smelly/remote_control.py":368
- * 
- * 
+ *
+ *
  * def do_io(to: Optional[str],             # <<<<<<<<<<<<<<
  *           original_cmd: Dict[str, Any],
  *           no_response: bool, response_timeout: float,
@@ -10372,7 +10372,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
  *         send_data: Union[bytes, Iterator[bytes]
  *                          ] = encode_send(encrypter(original_cmd))             # <<<<<<<<<<<<<<
  *     else:
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_encode_send); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 375, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -10423,7 +10423,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
 
   /* "smelly/remote_control.py":378
  *     else:
- * 
+ *
  *         def send_generator() -> Iterator[bytes]:             # <<<<<<<<<<<<<<
  *             assert payload is not None
  *             for chunk in payload:
@@ -10447,9 +10447,9 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
 
     /* "smelly/remote_control.py":384
  *                 yield encode_send(encrypter(original_cmd))
- * 
+ *
  *         send_data = send_generator()             # <<<<<<<<<<<<<<
- * 
+ *
  *     io: Union[SocketIO, RCIO] = SocketIO(to) if to else RCIO()
  */
     __pyx_t_3 = __pyx_pf_6smelly_14remote_control_5do_io_send_generator(__pyx_v_send_generator); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 384, __pyx_L1_error)
@@ -10461,7 +10461,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
 
   /* "smelly/remote_control.py":386
  *         send_data = send_generator()
- * 
+ *
  *     io: Union[SocketIO, RCIO] = SocketIO(to) if to else RCIO()             # <<<<<<<<<<<<<<
  *     with io:
  *         io.send(send_data)
@@ -10512,7 +10512,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
   __pyx_t_3 = 0;
 
   /* "smelly/remote_control.py":387
- * 
+ *
  *     io: Union[SocketIO, RCIO] = SocketIO(to) if to else RCIO()
  *     with io:             # <<<<<<<<<<<<<<
  *         io.send(send_data)
@@ -10590,7 +10590,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
  *         if no_response:
  *             return {'ok': True}             # <<<<<<<<<<<<<<
  *         received = io.simple_recv(timeout=response_timeout)
- * 
+ *
  */
             __Pyx_XDECREF(__pyx_r);
             __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 390, __pyx_L8_error)
@@ -10613,7 +10613,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
  *         if no_response:
  *             return {'ok': True}
  *         received = io.simple_recv(timeout=response_timeout)             # <<<<<<<<<<<<<<
- * 
+ *
  *     return cast(Dict[str, Any], json.loads(received.decode('ascii')))
  */
           __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_io, __pyx_n_s_simple_recv); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 391, __pyx_L8_error)
@@ -10632,7 +10632,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
           __pyx_t_1 = 0;
 
           /* "smelly/remote_control.py":387
- * 
+ *
  *     io: Union[SocketIO, RCIO] = SocketIO(to) if to else RCIO()
  *     with io:             # <<<<<<<<<<<<<<
  *         io.send(send_data)
@@ -10671,7 +10671,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 387, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -10735,10 +10735,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
 
   /* "smelly/remote_control.py":393
  *         received = io.simple_recv(timeout=response_timeout)
- * 
+ *
  *     return cast(Dict[str, Any], json.loads(received.decode('ascii')))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_cast); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 393, __pyx_L1_error)
@@ -10852,8 +10852,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":368
- * 
- * 
+ *
+ *
  * def do_io(to: Optional[str],             # <<<<<<<<<<<<<<
  *           original_cmd: Dict[str, Any],
  *           no_response: bool, response_timeout: float,
@@ -10884,8 +10884,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_20do_io(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/remote_control.py":403
- * 
- * 
+ *
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     cmap = {name: command_for_name(name)
  *             for name in sorted(all_command_names())}
@@ -11035,11 +11035,11 @@ static PyObject *__pyx_gb_6smelly_14remote_control_13parse_rc_args_2generator1(_
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -11159,8 +11159,8 @@ static PyObject *__pyx_gb_6smelly_14remote_control_13parse_rc_args_2generator1(_
 }
 
 /* "smelly/remote_control.py":403
- * 
- * 
+ *
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     cmap = {name: command_for_name(name)
  *             for name in sorted(all_command_names())}
@@ -11195,7 +11195,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_22parse_rc_args(CYTHON_UNUSED
   }
 
   /* "smelly/remote_control.py":404
- * 
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:
  *     cmap = {name: command_for_name(name)             # <<<<<<<<<<<<<<
  *             for name in sorted(all_command_names())}
@@ -11253,7 +11253,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_22parse_rc_args(CYTHON_UNUSED
       __pyx_t_2 = 0;
 
       /* "smelly/remote_control.py":404
- * 
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:
  *     cmap = {name: command_for_name(name)             # <<<<<<<<<<<<<<
  *             for name in sorted(all_command_names())}
@@ -11401,7 +11401,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_22parse_rc_args(CYTHON_UNUSED
  *         args[1:],
  *         global_options_spec, 'command ...', msg, f'{appname} @',             # <<<<<<<<<<<<<<
  *         result_class=RCOptions)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_global_options_spec); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 415, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11443,8 +11443,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_22parse_rc_args(CYTHON_UNUSED
  *         args[1:],
  *         global_options_spec, 'command ...', msg, f'{appname} @',
  *         result_class=RCOptions)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 416, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -11470,8 +11470,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_22parse_rc_args(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":403
- * 
- * 
+ *
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     cmap = {name: command_for_name(name)
  *             for name in sorted(all_command_names())}
@@ -11498,11 +11498,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_22parse_rc_args(CYTHON_UNUSED
 }
 
 /* "smelly/remote_control.py":419
- * 
- * 
+ *
+ *
  * def encode_as_base85(data: bytes) -> str:             # <<<<<<<<<<<<<<
  *     return base64.b85encode(data).decode('ascii')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -11540,11 +11540,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_24encode_as_base85(CYTHON_UNU
   __Pyx_RefNannySetupContext("encode_as_base85", 0);
 
   /* "smelly/remote_control.py":420
- * 
+ *
  * def encode_as_base85(data: bytes) -> str:
  *     return base64.b85encode(data).decode('ascii')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_base64); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 420, __pyx_L1_error)
@@ -11591,11 +11591,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_24encode_as_base85(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":419
- * 
- * 
+ *
+ *
  * def encode_as_base85(data: bytes) -> str:             # <<<<<<<<<<<<<<
  *     return base64.b85encode(data).decode('ascii')
- * 
+ *
  */
 
   /* function exit code */
@@ -11614,7 +11614,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_24encode_as_base85(CYTHON_UNU
 
 /* "smelly/remote_control.py":426
  *     encrypts: bool = True
- * 
+ *
  *     def __init__(self, pubkey: bytes, encryption_version: str, password: str) -> None:             # <<<<<<<<<<<<<<
  *         skey = EllipticCurveKey()
  *         self.secret = skey.derive_secret(pubkey)
@@ -11727,7 +11727,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter___init__(C
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/remote_control.py":427
- * 
+ *
  *     def __init__(self, pubkey: bytes, encryption_version: str, password: str) -> None:
  *         skey = EllipticCurveKey()             # <<<<<<<<<<<<<<
  *         self.secret = skey.derive_secret(pubkey)
@@ -11797,7 +11797,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter___init__(C
  *         self.pubkey = skey.public
  *         self.encryption_version = encryption_version             # <<<<<<<<<<<<<<
  *         self.password = password
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_encryption_version, __pyx_v_encryption_version) < 0) __PYX_ERR(0, 430, __pyx_L1_error)
 
@@ -11805,14 +11805,14 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter___init__(C
  *         self.pubkey = skey.public
  *         self.encryption_version = encryption_version
  *         self.password = password             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_password, __pyx_v_password) < 0) __PYX_ERR(0, 431, __pyx_L1_error)
 
   /* "smelly/remote_control.py":426
  *     encrypts: bool = True
- * 
+ *
  *     def __init__(self, pubkey: bytes, encryption_version: str, password: str) -> None:             # <<<<<<<<<<<<<<
  *         skey = EllipticCurveKey()
  *         self.secret = skey.derive_secret(pubkey)
@@ -11836,7 +11836,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter___init__(C
 
 /* "smelly/remote_control.py":433
  *         self.password = password
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         encrypter = AES256GCMEncrypt(self.secret)
  *         cmd['timestamp'] = time_ns()
@@ -11927,7 +11927,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_2__call__(
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "smelly/remote_control.py":434
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:
  *         encrypter = AES256GCMEncrypt(self.secret)             # <<<<<<<<<<<<<<
  *         cmd['timestamp'] = time_ns()
@@ -12251,7 +12251,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_2__call__(
  *         if self.encryption_version != '1':
  *             ans['enc_proto'] = self.encryption_version             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_encryption_version); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 447, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -12271,7 +12271,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_2__call__(
  *         if self.encryption_version != '1':
  *             ans['enc_proto'] = self.encryption_version
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def adjust_response_timeout_for_password(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12281,7 +12281,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_2__call__(
 
   /* "smelly/remote_control.py":433
  *         self.password = password
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         encrypter = AES256GCMEncrypt(self.secret)
  *         cmd['timestamp'] = time_ns()
@@ -12308,7 +12308,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_2__call__(
 
 /* "smelly/remote_control.py":450
  *         return ans
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return max(response_timeout, 120)
@@ -12395,8 +12395,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_4adjust_re
  *     def adjust_response_timeout_for_password(
  *             self, response_timeout: float) -> float:
  *         return max(response_timeout, 120)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = 0x78;
@@ -12414,7 +12414,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_4adjust_re
 
   /* "smelly/remote_control.py":450
  *         return ans
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return max(response_timeout, 120)
@@ -12433,10 +12433,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_16CommandEncrypter_4adjust_re
 
 /* "smelly/remote_control.py":458
  *     encrypts: bool = False
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -12467,10 +12467,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12NoEncryption___init__(CYTHO
 
 /* "smelly/remote_control.py":461
  *         ...
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return cmd
- * 
+ *
  */
 
 /* Python wrapper */
@@ -12544,10 +12544,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12NoEncryption_2__call__(CYTH
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "smelly/remote_control.py":462
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:
  *         return cmd             # <<<<<<<<<<<<<<
- * 
+ *
  *     def adjust_response_timeout_for_password(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12557,10 +12557,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12NoEncryption_2__call__(CYTH
 
   /* "smelly/remote_control.py":461
  *         ...
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return cmd
- * 
+ *
  */
 
   /* function exit code */
@@ -12572,7 +12572,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12NoEncryption_2__call__(CYTH
 
 /* "smelly/remote_control.py":464
  *         return cmd
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return response_timeout
@@ -12656,8 +12656,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12NoEncryption_4adjust_respon
  *     def adjust_response_timeout_for_password(
  *             self, response_timeout: float) -> float:
  *         return response_timeout             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyFloat_FromDouble(__pyx_v_response_timeout); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 466, __pyx_L1_error)
@@ -12668,7 +12668,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12NoEncryption_4adjust_respon
 
   /* "smelly/remote_control.py":464
  *         return cmd
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return response_timeout
@@ -12686,8 +12686,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_12NoEncryption_4adjust_respon
 }
 
 /* "smelly/remote_control.py":469
- * 
- * 
+ *
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,             # <<<<<<<<<<<<<<
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -12714,7 +12714,7 @@ static PyObject *__pyx_pw_6smelly_14remote_control_27create_basic_command(PyObje
     values[2] = ((PyObject *)((PyObject *)Py_False));
 
     /* "smelly/remote_control.py":470
- * 
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -12793,8 +12793,8 @@ static PyObject *__pyx_pw_6smelly_14remote_control_27create_basic_command(PyObje
   __pyx_r = __pyx_pf_6smelly_14remote_control_26create_basic_command(__pyx_self, __pyx_v_name, __pyx_v_payload, __pyx_v_no_response, __pyx_v_is_asynchronous);
 
   /* "smelly/remote_control.py":469
- * 
- * 
+ *
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,             # <<<<<<<<<<<<<<
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -12876,7 +12876,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_26create_basic_command(CYTHON
  *         ans['payload'] = payload
  *     if is_asynchronous:             # <<<<<<<<<<<<<<
  *         from smelly.short_uuid import uuid4
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_is_asynchronous); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 474, __pyx_L1_error)
   if (__pyx_t_4) {
@@ -12885,7 +12885,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_26create_basic_command(CYTHON
  *         ans['payload'] = payload
  *     if is_asynchronous:
  *         from smelly.short_uuid import uuid4             # <<<<<<<<<<<<<<
- * 
+ *
  *         ans['async'] = uuid4()
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 475, __pyx_L1_error)
@@ -12905,10 +12905,10 @@ static PyObject *__pyx_pf_6smelly_14remote_control_26create_basic_command(CYTHON
 
     /* "smelly/remote_control.py":477
  *         from smelly.short_uuid import uuid4
- * 
+ *
  *         ans['async'] = uuid4()             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_uuid4);
     __pyx_t_1 = __pyx_v_uuid4; __pyx_t_5 = NULL;
@@ -12934,16 +12934,16 @@ static PyObject *__pyx_pf_6smelly_14remote_control_26create_basic_command(CYTHON
  *         ans['payload'] = payload
  *     if is_asynchronous:             # <<<<<<<<<<<<<<
  *         from smelly.short_uuid import uuid4
- * 
+ *
  */
   }
 
   /* "smelly/remote_control.py":478
- * 
+ *
  *         ans['async'] = uuid4()
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -12951,8 +12951,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_26create_basic_command(CYTHON
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":469
- * 
- * 
+ *
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,             # <<<<<<<<<<<<<<
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -12974,8 +12974,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_26create_basic_command(CYTHON
 }
 
 /* "smelly/remote_control.py":481
- * 
- * 
+ *
+ *
  * def send_response_to_client(             # <<<<<<<<<<<<<<
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,
  *         async_id: str = '') -> None:
@@ -13001,7 +13001,7 @@ static PyObject *__pyx_pw_6smelly_14remote_control_29send_response_to_client(PyO
     PyObject* values[5] = {0,0,0,0,0};
 
     /* "smelly/remote_control.py":482
- * 
+ *
  * def send_response_to_client(
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,             # <<<<<<<<<<<<<<
  *         async_id: str = '') -> None:
@@ -13099,8 +13099,8 @@ static PyObject *__pyx_pw_6smelly_14remote_control_29send_response_to_client(PyO
   __pyx_r = __pyx_pf_6smelly_14remote_control_28send_response_to_client(__pyx_self, __pyx_v_data, __pyx_v_error, __pyx_v_peer_id, __pyx_v_window_id, __pyx_v_async_id);
 
   /* "smelly/remote_control.py":481
- * 
- * 
+ *
+ *
  * def send_response_to_client(             # <<<<<<<<<<<<<<
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,
  *         async_id: str = '') -> None:
@@ -13413,7 +13413,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_28send_response_to_client(CYT
  *         w = get_boss().window_id_map[window_id]
  *         if w is not None:             # <<<<<<<<<<<<<<
  *             w.send_cmd_response(response)
- * 
+ *
  */
     __pyx_t_7 = (__pyx_v_w != Py_None);
     __pyx_t_6 = (__pyx_t_7 != 0);
@@ -13423,8 +13423,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_28send_response_to_client(CYT
  *         w = get_boss().window_id_map[window_id]
  *         if w is not None:
  *             w.send_cmd_response(response)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_send_cmd_response); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 496, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
@@ -13450,7 +13450,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_28send_response_to_client(CYT
  *         w = get_boss().window_id_map[window_id]
  *         if w is not None:             # <<<<<<<<<<<<<<
  *             w.send_cmd_response(response)
- * 
+ *
  */
     }
 
@@ -13465,8 +13465,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_28send_response_to_client(CYT
   __pyx_L5:;
 
   /* "smelly/remote_control.py":481
- * 
- * 
+ *
+ *
  * def send_response_to_client(             # <<<<<<<<<<<<<<
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,
  *         async_id: str = '') -> None:
@@ -13492,8 +13492,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_28send_response_to_client(CYT
 }
 
 /* "smelly/remote_control.py":499
- * 
- * 
+ *
+ *
  * def get_password(opts: RCOptions) -> str:             # <<<<<<<<<<<<<<
  *     if opts.use_password == 'never':
  *         return ''
@@ -13545,7 +13545,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("get_password", 0);
 
   /* "smelly/remote_control.py":500
- * 
+ *
  * def get_password(opts: RCOptions) -> str:
  *     if opts.use_password == 'never':             # <<<<<<<<<<<<<<
  *         return ''
@@ -13570,7 +13570,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
     goto __pyx_L0;
 
     /* "smelly/remote_control.py":500
- * 
+ *
  * def get_password(opts: RCOptions) -> str:
  *     if opts.use_password == 'never':             # <<<<<<<<<<<<<<
  *         return ''
@@ -13662,7 +13662,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
  *         if opts.password_file == '-':
  *             if sys.stdin.isatty():             # <<<<<<<<<<<<<<
  *                 from getpass import getpass
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_sys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 507, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -13695,7 +13695,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
  *         if opts.password_file == '-':
  *             if sys.stdin.isatty():
  *                 from getpass import getpass             # <<<<<<<<<<<<<<
- * 
+ *
  *                 ans = getpass()
  */
         __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 508, __pyx_L1_error)
@@ -13715,7 +13715,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
 
         /* "smelly/remote_control.py":510
  *                 from getpass import getpass
- * 
+ *
  *                 ans = getpass()             # <<<<<<<<<<<<<<
  *             else:
  *                 ans = sys.stdin.read().rstrip()
@@ -13744,7 +13744,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
  *         if opts.password_file == '-':
  *             if sys.stdin.isatty():             # <<<<<<<<<<<<<<
  *                 from getpass import getpass
- * 
+ *
  */
         goto __pyx_L9;
       }
@@ -14101,7 +14101,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
                       __Pyx_GIVEREF(__pyx_t_5);
                       __Pyx_XGIVEREF(__pyx_t_6);
                       __Pyx_ErrRestoreWithState(__pyx_t_7, __pyx_t_5, __pyx_t_6);
-                      __pyx_t_7 = 0; __pyx_t_5 = 0; __pyx_t_6 = 0; 
+                      __pyx_t_7 = 0; __pyx_t_5 = 0; __pyx_t_6 = 0;
                       __PYX_ERR(0, 518, __pyx_L22_except_error)
                     }
                     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -14370,7 +14370,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
                     __Pyx_GIVEREF(__pyx_t_6);
                     __Pyx_XGIVEREF(__pyx_t_5);
                     __Pyx_ErrRestoreWithState(__pyx_t_7, __pyx_t_6, __pyx_t_5);
-                    __pyx_t_7 = 0; __pyx_t_6 = 0; __pyx_t_5 = 0; 
+                    __pyx_t_7 = 0; __pyx_t_6 = 0; __pyx_t_5 = 0;
                     __PYX_ERR(0, 522, __pyx_L42_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -14644,7 +14644,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
  *     if ans and len(ans) > 1024:
  *         raise SystemExit('Specified password is too long')             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_SystemExit, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 531, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -14665,8 +14665,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
  *     if ans and len(ans) > 1024:
  *         raise SystemExit('Specified password is too long')
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   if (!(likely(PyString_CheckExact(__pyx_v_ans))||((__pyx_v_ans) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "str", Py_TYPE(__pyx_v_ans)->tp_name), 0))) __PYX_ERR(0, 532, __pyx_L1_error)
@@ -14675,8 +14675,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":499
- * 
- * 
+ *
+ *
  * def get_password(opts: RCOptions) -> str:             # <<<<<<<<<<<<<<
  *     if opts.use_password == 'never':
  *         return ''
@@ -14703,8 +14703,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_30get_password(CYTHON_UNUSED 
 }
 
 /* "smelly/remote_control.py":535
- * 
- * 
+ *
+ *
  * def get_pubkey() -> Tuple[str, bytes]:             # <<<<<<<<<<<<<<
  *     raw = os.environ.get('smelly_PUBLIC_KEY', '')
  *     if not raw:
@@ -14744,7 +14744,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_32get_pubkey(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("get_pubkey", 0);
 
   /* "smelly/remote_control.py":536
- * 
+ *
  * def get_pubkey() -> Tuple[str, bytes]:
  *     raw = os.environ.get('smelly_PUBLIC_KEY', '')             # <<<<<<<<<<<<<<
  *     if not raw:
@@ -14819,11 +14819,11 @@ static PyObject *__pyx_pf_6smelly_14remote_control_32get_pubkey(CYTHON_UNUSED Py
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -14901,7 +14901,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_32get_pubkey(CYTHON_UNUSED Py
  *         raise SystemExit(
  *             'smelly_PUBLIC_KEY has unknown version, if you are running on a remote system, update smelly on this system')
  *     from base64 import b85decode             # <<<<<<<<<<<<<<
- * 
+ *
  *     return version, b85decode(pubkey)
  */
   __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 544, __pyx_L1_error)
@@ -14921,7 +14921,7 @@ static PyObject *__pyx_pf_6smelly_14remote_control_32get_pubkey(CYTHON_UNUSED Py
 
   /* "smelly/remote_control.py":546
  *     from base64 import b85decode
- * 
+ *
  *     return version, b85decode(pubkey)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14954,8 +14954,8 @@ static PyObject *__pyx_pf_6smelly_14remote_control_32get_pubkey(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/remote_control.py":535
- * 
- * 
+ *
+ *
  * def get_pubkey() -> Tuple[str, bytes]:             # <<<<<<<<<<<<<<
  *     raw = os.environ.get('smelly_PUBLIC_KEY', '')
  *     if not raw:
@@ -15959,7 +15959,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__11);
 
   /* "smelly/remote_control.py":327
- * 
+ *
  *         # on some OSes such as macOS the socket is already closed at this point
  *         with suppress(OSError):             # <<<<<<<<<<<<<<
  *             self.socket.shutdown(socket.SHUT_RDWR)
@@ -15982,7 +15982,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":378
  *     else:
- * 
+ *
  *         def send_generator() -> Iterator[bytes]:             # <<<<<<<<<<<<<<
  *             assert payload is not None
  *             for chunk in payload:
@@ -16019,14 +16019,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     if ans and len(ans) > 1024:
  *         raise SystemExit('Specified password is too long')             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_s_Specified_password_is_too_long); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 531, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
   /* "smelly/remote_control.py":536
- * 
+ *
  * def get_pubkey() -> Tuple[str, bytes]:
  *     raw = os.environ.get('smelly_PUBLIC_KEY', '')             # <<<<<<<<<<<<<<
  *     if not raw:
@@ -16070,11 +16070,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__27);
 
   /* "smelly/remote_control.py":50
- * 
- * 
+ *
+ *
  * def encode_response_for_peer(response: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     return b'\x1bP@smelly-cmd' + json.dumps(response).encode('utf-8') + b'\x1b\\'
- * 
+ *
  */
   __pyx_tuple__28 = PyTuple_Pack(1, __pyx_n_s_response); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
@@ -16082,8 +16082,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_encode_response_for_peer, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 50, __pyx_L1_error)
 
   /* "smelly/remote_control.py":54
- * 
- * 
+ *
+ *
  * def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     try:
  *         pcmd = json.loads(serialized_cmd)
@@ -16094,7 +16094,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_parse_cmd, 54, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 54, __pyx_L1_error)
 
   /* "smelly/remote_control.py":90
- * 
+ *
  * class CMDChecker:
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
@@ -16106,11 +16106,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_call, 90, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 90, __pyx_L1_error)
 
   /* "smelly/remote_control.py":98
- * 
+ *
  * @lru_cache(maxsize=64)
  * def is_cmd_allowed_loader(path: str) -> CMDChecker:             # <<<<<<<<<<<<<<
  *     import runpy
- * 
+ *
  */
   __pyx_tuple__34 = PyTuple_Pack(5, __pyx_n_s_path, __pyx_n_s_runpy, __pyx_n_s_m, __pyx_n_s_func, __pyx_n_s_e); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
@@ -16118,11 +16118,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_is_cmd_allowed_loader, 98, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 98, __pyx_L1_error)
 
   /* "smelly/remote_control.py":112
- * 
+ *
  * @lru_cache(maxsize=1024)
  * def fnmatch_pattern(pat: str) -> 're.Pattern[str]':             # <<<<<<<<<<<<<<
  *     from fnmatch import translate
- * 
+ *
  */
   __pyx_tuple__36 = PyTuple_Pack(2, __pyx_n_s_pat, __pyx_n_s_translate); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
@@ -16130,7 +16130,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_fnmatch_pattern, 112, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 112, __pyx_L1_error)
 
   /* "smelly/remote_control.py":119
- * 
+ *
  * class PasswordAuthorizer:
  *     def __init__(self, auth_items: FrozenSet[str]) -> None:             # <<<<<<<<<<<<<<
  *         self.command_patterns = []
@@ -16143,7 +16143,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":130
  *                 self.command_patterns.append(fnmatch_pattern(item))
- * 
+ *
  *     def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
  *             window: Optional['Window'],
@@ -16154,11 +16154,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(5, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_is_cmd_allowed, 130, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 130, __pyx_L1_error)
 
   /* "smelly/remote_control.py":158
- * 
+ *
  * @lru_cache(maxsize=256)
  * def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:             # <<<<<<<<<<<<<<
  *     return PasswordAuthorizer(auth_items)
- * 
+ *
  */
   __pyx_tuple__42 = PyTuple_Pack(1, __pyx_n_s_auth_items); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
@@ -16166,8 +16166,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_password_authorizer, 158, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 158, __pyx_L1_error)
 
   /* "smelly/remote_control.py":165
- * 
- * 
+ *
+ *
  * def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *         pcmd: Dict[str, Any],
  *         window: Optional['Window'],
@@ -16178,11 +16178,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(4, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_is_cmd_allowed, 165, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 165, __pyx_L1_error)
 
   /* "smelly/remote_control.py":196
- * 
- * 
+ *
+ *
  * def set_user_password_allowed(pwd: str, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     user_password_allowed[pwd] = allowed
- * 
+ *
  */
   __pyx_tuple__46 = PyTuple_Pack(2, __pyx_n_s_pwd, __pyx_n_s_allowed); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
@@ -16193,11 +16193,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__48);
 
   /* "smelly/remote_control.py":200
- * 
- * 
+ *
+ *
  * def close_active_stream(stream_id: str) -> None:             # <<<<<<<<<<<<<<
  *     active_streams.pop(stream_id, None)
- * 
+ *
  */
   __pyx_tuple__49 = PyTuple_Pack(1, __pyx_n_s_stream_id); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 200, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__49);
@@ -16205,8 +16205,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_close_active_stream, 200, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) __PYX_ERR(0, 200, __pyx_L1_error)
 
   /* "smelly/remote_control.py":204
- * 
- * 
+ *
+ *
  * def handle_cmd(             # <<<<<<<<<<<<<<
  *     boss: BossType, window: Optional[WindowType], cmd: Dict[str, Any], peer_id: int, self_window: Optional[WindowType]
  * ) -> Union[Dict[str, Any], None, AsyncResponse]:
@@ -16217,8 +16217,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(5, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_handle_cmd, 204, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(0, 204, __pyx_L1_error)
 
   /* "smelly/remote_control.py":303
- * 
- * 
+ *
+ *
  * def encode_send(send: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     es = ('@smelly-cmd' + json.dumps(send)).encode('ascii')
  *     return b'\x1bP' + es + b'\x1b\\'
@@ -16229,22 +16229,22 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_encode_send, 303, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 303, __pyx_L1_error)
 
   /* "smelly/remote_control.py":308
- * 
- * 
+ *
+ *
  * class SocketClosed(EOFError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_tuple__55 = PyTuple_Pack(1, __pyx_builtin_EOFError); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__55);
   __Pyx_GIVEREF(__pyx_tuple__55);
 
   /* "smelly/remote_control.py":313
- * 
+ *
  * class SocketIO:
  *     def __init__(self, to: str):             # <<<<<<<<<<<<<<
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  */
   __pyx_tuple__56 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_to); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 313, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__56);
@@ -16253,10 +16253,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":316
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
   __pyx_tuple__58 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_socket); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 316, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__58);
@@ -16265,10 +16265,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":323
  *         self.socket.connect(self.address)
- * 
+ *
  *     def __exit__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
   __pyx_tuple__60 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_a, __pyx_n_s_socket); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 323, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__60);
@@ -16277,10 +16277,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":331
  *         self.socket.close()
- * 
+ *
  *     def send(self, data: Union[bytes, Iterable[Union[str, bytes]]]) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
   __pyx_tuple__62 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_data, __pyx_n_s_socket, __pyx_n_s_out, __pyx_n_s_chunk); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__62);
@@ -16289,7 +16289,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":345
  *         self.socket.shutdown(socket.SHUT_WR)
- * 
+ *
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         dcs = re.compile(br'\x1bP@smelly-cmd([^\x1b]+)\x1b\\')
  *         self.socket.settimeout(timeout)
@@ -16300,7 +16300,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__65 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__64, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_simple_recv, 345, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__65)) __PYX_ERR(0, 345, __pyx_L1_error)
 
   /* "smelly/remote_control.py":362
- * 
+ *
  * class RCIO(TTYIO):
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
@@ -16312,8 +16312,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__67 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__66, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_simple_recv, 362, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__67)) __PYX_ERR(0, 362, __pyx_L1_error)
 
   /* "smelly/remote_control.py":368
- * 
- * 
+ *
+ *
  * def do_io(to: Optional[str],             # <<<<<<<<<<<<<<
  *           original_cmd: Dict[str, Any],
  *           no_response: bool, response_timeout: float,
@@ -16324,8 +16324,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__69 = (PyObject*)__Pyx_PyCode_New(5, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__68, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_do_io, 368, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__69)) __PYX_ERR(0, 368, __pyx_L1_error)
 
   /* "smelly/remote_control.py":403
- * 
- * 
+ *
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     cmap = {name: command_for_name(name)
  *             for name in sorted(all_command_names())}
@@ -16336,11 +16336,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__71 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__70, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_parse_rc_args, 403, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__71)) __PYX_ERR(0, 403, __pyx_L1_error)
 
   /* "smelly/remote_control.py":419
- * 
- * 
+ *
+ *
  * def encode_as_base85(data: bytes) -> str:             # <<<<<<<<<<<<<<
  *     return base64.b85encode(data).decode('ascii')
- * 
+ *
  */
   __pyx_tuple__72 = PyTuple_Pack(1, __pyx_n_s_data); if (unlikely(!__pyx_tuple__72)) __PYX_ERR(0, 419, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__72);
@@ -16349,7 +16349,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":426
  *     encrypts: bool = True
- * 
+ *
  *     def __init__(self, pubkey: bytes, encryption_version: str, password: str) -> None:             # <<<<<<<<<<<<<<
  *         skey = EllipticCurveKey()
  *         self.secret = skey.derive_secret(pubkey)
@@ -16361,7 +16361,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":433
  *         self.password = password
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         encrypter = AES256GCMEncrypt(self.secret)
  *         cmd['timestamp'] = time_ns()
@@ -16373,7 +16373,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":450
  *         return ans
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return max(response_timeout, 120)
@@ -16385,10 +16385,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":458
  *     encrypts: bool = False
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_tuple__80 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__80)) __PYX_ERR(0, 458, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__80);
@@ -16397,10 +16397,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":461
  *         ...
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return cmd
- * 
+ *
  */
   __pyx_tuple__82 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_cmd); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 461, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__82);
@@ -16409,7 +16409,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/remote_control.py":464
  *         return cmd
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return response_timeout
@@ -16420,8 +16420,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__85 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__84, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_adjust_response_timeout_for_pass, 464, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__85)) __PYX_ERR(0, 464, __pyx_L1_error)
 
   /* "smelly/remote_control.py":469
- * 
- * 
+ *
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,             # <<<<<<<<<<<<<<
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -16435,8 +16435,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__88);
 
   /* "smelly/remote_control.py":481
- * 
- * 
+ *
+ *
  * def send_response_to_client(             # <<<<<<<<<<<<<<
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,
  *         async_id: str = '') -> None:
@@ -16450,8 +16450,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__91);
 
   /* "smelly/remote_control.py":499
- * 
- * 
+ *
+ *
  * def get_password(opts: RCOptions) -> str:             # <<<<<<<<<<<<<<
  *     if opts.use_password == 'never':
  *         return ''
@@ -16462,8 +16462,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__93 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__92, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_remote_control_py, __pyx_n_s_get_password, 499, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__93)) __PYX_ERR(0, 499, __pyx_L1_error)
 
   /* "smelly/remote_control.py":535
- * 
- * 
+ *
+ *
  * def get_pubkey() -> Tuple[str, bytes]:             # <<<<<<<<<<<<<<
  *     raw = os.environ.get('smelly_PUBLIC_KEY', '')
  *     if not raw:
@@ -16805,7 +16805,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import base64             # <<<<<<<<<<<<<<
  * import json
  * import os
@@ -16816,7 +16816,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/remote_control.py":5
- * 
+ *
  * import base64
  * import json             # <<<<<<<<<<<<<<
  * import os
@@ -17062,7 +17062,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":27
  * )
- * 
+ *
  * from .cli import parse_args             # <<<<<<<<<<<<<<
  * from .cli_stub import RCOptions
  * from .constants import RC_ENCRYPTION_PROTOCOL_VERSION, appname, version
@@ -17082,7 +17082,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/remote_control.py":28
- * 
+ *
  * from .cli import parse_args
  * from .cli_stub import RCOptions             # <<<<<<<<<<<<<<
  * from .constants import RC_ENCRYPTION_PROTOCOL_VERSION, appname, version
@@ -17276,7 +17276,7 @@ if (!__Pyx_RefNanny) {
  * from .types import AsyncResponse
  * from .typing import BossType, WindowType             # <<<<<<<<<<<<<<
  * from .utils import TTYIO, log_error, parse_address_spec, resolve_custom_file
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17303,7 +17303,7 @@ if (!__Pyx_RefNanny) {
  * from .types import AsyncResponse
  * from .typing import BossType, WindowType
  * from .utils import TTYIO, log_error, parse_address_spec, resolve_custom_file             # <<<<<<<<<<<<<<
- * 
+ *
  * active_async_requests: Dict[str, float] = {}
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -17343,7 +17343,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":44
  * from .utils import TTYIO, log_error, parse_address_spec, resolve_custom_file
- * 
+ *
  * active_async_requests: Dict[str, float] = {}             # <<<<<<<<<<<<<<
  * active_streams: Dict[str, str] = {}
  * if TYPE_CHECKING:
@@ -17354,7 +17354,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":45
- * 
+ *
  * active_async_requests: Dict[str, float] = {}
  * active_streams: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  * if TYPE_CHECKING:
@@ -17370,7 +17370,7 @@ if (!__Pyx_RefNanny) {
  * active_streams: Dict[str, str] = {}
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .window import Window
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17382,8 +17382,8 @@ if (!__Pyx_RefNanny) {
  * active_streams: Dict[str, str] = {}
  * if TYPE_CHECKING:
  *     from .window import Window             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -17404,16 +17404,16 @@ if (!__Pyx_RefNanny) {
  * active_streams: Dict[str, str] = {}
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .window import Window
- * 
+ *
  */
   }
 
   /* "smelly/remote_control.py":50
- * 
- * 
+ *
+ *
  * def encode_response_for_peer(response: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     return b'\x1bP@smelly-cmd' + json.dumps(response).encode('utf-8') + b'\x1b\\'
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17430,8 +17430,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":54
- * 
- * 
+ *
+ *
  * def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     try:
  *         pcmd = json.loads(serialized_cmd)
@@ -17469,8 +17469,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":89
- * 
- * 
+ *
+ *
  * class CMDChecker:             # <<<<<<<<<<<<<<
  *     def __call__(
  *             self, pcmd: Dict[str, Any],
@@ -17479,7 +17479,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/remote_control.py":90
- * 
+ *
  * class CMDChecker:
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
@@ -17534,7 +17534,7 @@ if (!__Pyx_RefNanny) {
  *             window: Optional['Window'],
  *             from_socket: bool, extra_data: Dict[str, Any]) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_from_socket, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_Dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 93, __pyx_L1_error)
@@ -17564,7 +17564,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":90
- * 
+ *
  * class CMDChecker:
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
@@ -17578,8 +17578,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":89
- * 
- * 
+ *
+ *
  * class CMDChecker:             # <<<<<<<<<<<<<<
  *     def __call__(
  *             self, pcmd: Dict[str, Any],
@@ -17591,8 +17591,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":97
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=64)             # <<<<<<<<<<<<<<
  * def is_cmd_allowed_loader(path: str) -> CMDChecker:
  *     import runpy
@@ -17608,11 +17608,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":98
- * 
+ *
  * @lru_cache(maxsize=64)
  * def is_cmd_allowed_loader(path: str) -> CMDChecker:             # <<<<<<<<<<<<<<
  *     import runpy
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -17627,8 +17627,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":97
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=64)             # <<<<<<<<<<<<<<
  * def is_cmd_allowed_loader(path: str) -> CMDChecker:
  *     import runpy
@@ -17641,8 +17641,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":111
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=1024)             # <<<<<<<<<<<<<<
  * def fnmatch_pattern(pat: str) -> 're.Pattern[str]':
  *     from fnmatch import translate
@@ -17658,11 +17658,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":112
- * 
+ *
  * @lru_cache(maxsize=1024)
  * def fnmatch_pattern(pat: str) -> 're.Pattern[str]':             # <<<<<<<<<<<<<<
  *     from fnmatch import translate
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -17674,8 +17674,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":111
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=1024)             # <<<<<<<<<<<<<<
  * def fnmatch_pattern(pat: str) -> 're.Pattern[str]':
  *     from fnmatch import translate
@@ -17688,8 +17688,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":118
- * 
- * 
+ *
+ *
  * class PasswordAuthorizer:             # <<<<<<<<<<<<<<
  *     def __init__(self, auth_items: FrozenSet[str]) -> None:
  *         self.command_patterns = []
@@ -17698,7 +17698,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/remote_control.py":119
- * 
+ *
  * class PasswordAuthorizer:
  *     def __init__(self, auth_items: FrozenSet[str]) -> None:             # <<<<<<<<<<<<<<
  *         self.command_patterns = []
@@ -17723,7 +17723,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":130
  *                 self.command_patterns.append(fnmatch_pattern(item))
- * 
+ *
  *     def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
  *             window: Optional['Window'],
@@ -17732,7 +17732,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/remote_control.py":131
- * 
+ *
  *     def is_cmd_allowed(
  *             self, pcmd: Dict[str, Any],             # <<<<<<<<<<<<<<
  *             window: Optional['Window'],
@@ -17802,7 +17802,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":130
  *                 self.command_patterns.append(fnmatch_pattern(item))
- * 
+ *
  *     def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *             self, pcmd: Dict[str, Any],
  *             window: Optional['Window'],
@@ -17815,8 +17815,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":118
- * 
- * 
+ *
+ *
  * class PasswordAuthorizer:             # <<<<<<<<<<<<<<
  *     def __init__(self, auth_items: FrozenSet[str]) -> None:
  *         self.command_patterns = []
@@ -17828,8 +17828,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":157
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=256)             # <<<<<<<<<<<<<<
  * def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:
  *     return PasswordAuthorizer(auth_items)
@@ -17845,11 +17845,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":158
- * 
+ *
  * @lru_cache(maxsize=256)
  * def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:             # <<<<<<<<<<<<<<
  *     return PasswordAuthorizer(auth_items)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17870,8 +17870,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":157
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=256)             # <<<<<<<<<<<<<<
  * def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:
  *     return PasswordAuthorizer(auth_items)
@@ -17884,11 +17884,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":162
- * 
- * 
+ *
+ *
  * user_password_allowed: Dict[str, bool] = {}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17896,8 +17896,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":165
- * 
- * 
+ *
+ *
  * def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *         pcmd: Dict[str, Any],
  *         window: Optional['Window'],
@@ -17906,7 +17906,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/remote_control.py":166
- * 
+ *
  * def is_cmd_allowed(
  *         pcmd: Dict[str, Any],             # <<<<<<<<<<<<<<
  *         window: Optional['Window'],
@@ -17981,8 +17981,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":165
- * 
- * 
+ *
+ *
  * def is_cmd_allowed(             # <<<<<<<<<<<<<<
  *         pcmd: Dict[str, Any],
  *         window: Optional['Window'],
@@ -17995,11 +17995,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":196
- * 
- * 
+ *
+ *
  * def set_user_password_allowed(pwd: str, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     user_password_allowed[pwd] = allowed
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -18015,11 +18015,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":200
- * 
- * 
+ *
+ *
  * def close_active_stream(stream_id: str) -> None:             # <<<<<<<<<<<<<<
  *     active_streams.pop(stream_id, None)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 200, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18033,8 +18033,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":204
- * 
- * 
+ *
+ *
  * def handle_cmd(             # <<<<<<<<<<<<<<
  *     boss: BossType, window: Optional[WindowType], cmd: Dict[str, Any], peer_id: int, self_window: Optional[WindowType]
  * ) -> Union[Dict[str, Any], None, AsyncResponse]:
@@ -18043,7 +18043,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/remote_control.py":205
- * 
+ *
  * def handle_cmd(
  *     boss: BossType, window: Optional[WindowType], cmd: Dict[str, Any], peer_id: int, self_window: Optional[WindowType]             # <<<<<<<<<<<<<<
  * ) -> Union[Dict[str, Any], None, AsyncResponse]:
@@ -18139,8 +18139,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/remote_control.py":204
- * 
- * 
+ *
+ *
  * def handle_cmd(             # <<<<<<<<<<<<<<
  *     boss: BossType, window: Optional[WindowType], cmd: Dict[str, Any], peer_id: int, self_window: Optional[WindowType]
  * ) -> Union[Dict[str, Any], None, AsyncResponse]:
@@ -18153,8 +18153,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/remote_control.py":259
- * 
- * 
+ *
+ *
  * global_options_spec = partial(             # <<<<<<<<<<<<<<
  *     '''\
  * --to
@@ -18173,8 +18173,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/remote_control.py":259
- * 
- * 
+ *
+ *
  * global_options_spec = partial(             # <<<<<<<<<<<<<<
  *     '''\
  * --to
@@ -18190,7 +18190,7 @@ if (!__Pyx_RefNanny) {
  * '''.format,
  *     appname=appname,             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 299, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -18200,8 +18200,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":259
- * 
- * 
+ *
+ *
  * global_options_spec = partial(             # <<<<<<<<<<<<<<
  *     '''\
  * --to
@@ -18215,8 +18215,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":303
- * 
- * 
+ *
+ *
  * def encode_send(send: Any) -> bytes:             # <<<<<<<<<<<<<<
  *     es = ('@smelly-cmd' + json.dumps(send)).encode('ascii')
  *     return b'\x1bP' + es + b'\x1b\\'
@@ -18236,11 +18236,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":308
- * 
- * 
+ *
+ *
  * class SocketClosed(EOFError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_5 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__55); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -18254,8 +18254,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":312
- * 
- * 
+ *
+ *
  * class SocketIO:             # <<<<<<<<<<<<<<
  *     def __init__(self, to: str):
  *         self.family, self.address = parse_address_spec(to)[:2]
@@ -18264,11 +18264,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/remote_control.py":313
- * 
+ *
  * class SocketIO:
  *     def __init__(self, to: str):             # <<<<<<<<<<<<<<
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 313, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18282,10 +18282,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":316
  *         self.family, self.address = parse_address_spec(to)[:2]
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 316, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18299,10 +18299,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":323
  *         self.socket.connect(self.address)
- * 
+ *
  *     def __exit__(self, *a: Any) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 323, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18320,10 +18320,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":331
  *         self.socket.close()
- * 
+ *
  *     def send(self, data: Union[bytes, Iterable[Union[str, bytes]]]) -> None:             # <<<<<<<<<<<<<<
  *         import socket
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18373,7 +18373,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":345
  *         self.socket.shutdown(socket.SHUT_WR)
- * 
+ *
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         dcs = re.compile(br'\x1bP@smelly-cmd([^\x1b]+)\x1b\\')
  *         self.socket.settimeout(timeout)
@@ -18390,8 +18390,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":312
- * 
- * 
+ *
+ *
  * class SocketIO:             # <<<<<<<<<<<<<<
  *     def __init__(self, to: str):
  *         self.family, self.address = parse_address_spec(to)[:2]
@@ -18403,8 +18403,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":361
- * 
- * 
+ *
+ *
  * class RCIO(TTYIO):             # <<<<<<<<<<<<<<
  *     def simple_recv(self, timeout: float) -> bytes:
  *         ans: List[bytes] = []
@@ -18422,7 +18422,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "smelly/remote_control.py":362
- * 
+ *
  * class RCIO(TTYIO):
  *     def simple_recv(self, timeout: float) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
@@ -18440,8 +18440,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":361
- * 
- * 
+ *
+ *
  * class RCIO(TTYIO):             # <<<<<<<<<<<<<<
  *     def simple_recv(self, timeout: float) -> bytes:
  *         ans: List[bytes] = []
@@ -18455,8 +18455,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":368
- * 
- * 
+ *
+ *
  * def do_io(to: Optional[str],             # <<<<<<<<<<<<<<
  *           original_cmd: Dict[str, Any],
  *           no_response: bool, response_timeout: float,
@@ -18472,7 +18472,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/remote_control.py":369
- * 
+ *
  * def do_io(to: Optional[str],
  *           original_cmd: Dict[str, Any],             # <<<<<<<<<<<<<<
  *           no_response: bool, response_timeout: float,
@@ -18535,8 +18535,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":368
- * 
- * 
+ *
+ *
  * def do_io(to: Optional[str],             # <<<<<<<<<<<<<<
  *           original_cmd: Dict[str, Any],
  *           no_response: bool, response_timeout: float,
@@ -18553,7 +18553,7 @@ if (!__Pyx_RefNanny) {
  *     ' :opt:`allow_remote_control` option in :file:`smelly.conf` or use a password, for this'
  *     ' to work.').format(             # <<<<<<<<<<<<<<
  *     appname=appname)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_Control_appname_by_sending_it_co, __pyx_n_s_format); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 399, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18562,8 +18562,8 @@ if (!__Pyx_RefNanny) {
  *     ' :opt:`allow_remote_control` option in :file:`smelly.conf` or use a password, for this'
  *     ' to work.').format(
  *     appname=appname)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 400, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18577,7 +18577,7 @@ if (!__Pyx_RefNanny) {
  *     ' :opt:`allow_remote_control` option in :file:`smelly.conf` or use a password, for this'
  *     ' to work.').format(             # <<<<<<<<<<<<<<
  *     appname=appname)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 399, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -18587,8 +18587,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/remote_control.py":403
- * 
- * 
+ *
+ *
  * def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     cmap = {name: command_for_name(name)
  *             for name in sorted(all_command_names())}
@@ -18633,11 +18633,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/remote_control.py":419
- * 
- * 
+ *
+ *
  * def encode_as_base85(data: bytes) -> str:             # <<<<<<<<<<<<<<
  *     return base64.b85encode(data).decode('ascii')
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 419, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -18651,27 +18651,27 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/remote_control.py":423
- * 
- * 
+ *
+ *
  * class CommandEncrypter:             # <<<<<<<<<<<<<<
  *     encrypts: bool = True
- * 
+ *
  */
   __pyx_t_7 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_CommandEncrypter, __pyx_n_s_CommandEncrypter, (PyObject *) NULL, __pyx_n_s_smelly_remote_control, (PyObject *) NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 423, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "smelly/remote_control.py":424
- * 
+ *
  * class CommandEncrypter:
  *     encrypts: bool = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, pubkey: bytes, encryption_version: str, password: str) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_7, __pyx_n_s_encrypts, Py_True) < 0) __PYX_ERR(0, 424, __pyx_L1_error)
 
   /* "smelly/remote_control.py":426
  *     encrypts: bool = True
- * 
+ *
  *     def __init__(self, pubkey: bytes, encryption_version: str, password: str) -> None:             # <<<<<<<<<<<<<<
  *         skey = EllipticCurveKey()
  *         self.secret = skey.derive_secret(pubkey)
@@ -18691,7 +18691,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":433
  *         self.password = password
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         encrypter = AES256GCMEncrypt(self.secret)
  *         cmd['timestamp'] = time_ns()
@@ -18743,7 +18743,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":450
  *         return ans
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return max(response_timeout, 120)
@@ -18760,11 +18760,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":423
- * 
- * 
+ *
+ *
  * class CommandEncrypter:             # <<<<<<<<<<<<<<
  *     encrypts: bool = True
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_CommandEncrypter, __pyx_empty_tuple, __pyx_t_7, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 423, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -18773,11 +18773,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/remote_control.py":455
- * 
- * 
+ *
+ *
  * class NoEncryption(CommandEncrypter):             # <<<<<<<<<<<<<<
  *     encrypts: bool = False
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_CommandEncrypter); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -18792,20 +18792,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/remote_control.py":456
- * 
+ *
  * class NoEncryption(CommandEncrypter):
  *     encrypts: bool = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_encrypts, Py_False) < 0) __PYX_ERR(0, 456, __pyx_L1_error)
 
   /* "smelly/remote_control.py":458
  *     encrypts: bool = False
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 458, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -18819,10 +18819,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":461
  *         ...
- * 
+ *
  *     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return cmd
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 461, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18871,7 +18871,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/remote_control.py":464
  *         return cmd
- * 
+ *
  *     def adjust_response_timeout_for_password(             # <<<<<<<<<<<<<<
  *             self, response_timeout: float) -> float:
  *         return response_timeout
@@ -18888,11 +18888,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/remote_control.py":455
- * 
- * 
+ *
+ *
  * class NoEncryption(CommandEncrypter):             # <<<<<<<<<<<<<<
  *     encrypts: bool = False
- * 
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_7, __pyx_n_s_NoEncryption, __pyx_t_5, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 455, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18903,8 +18903,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":469
- * 
- * 
+ *
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,             # <<<<<<<<<<<<<<
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -18919,7 +18919,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_no_response, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 469, __pyx_L1_error)
 
   /* "smelly/remote_control.py":470
- * 
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -18946,8 +18946,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":469
- * 
- * 
+ *
+ *
  * def create_basic_command(name: str, payload: Any = None, no_response: bool = False,             # <<<<<<<<<<<<<<
  *                          is_asynchronous: bool = False) -> Dict[str, Any]:
  *     ans = {'cmd': name, 'version': version, 'no_response': no_response}
@@ -18961,8 +18961,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":481
- * 
- * 
+ *
+ *
  * def send_response_to_client(             # <<<<<<<<<<<<<<
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,
  *         async_id: str = '') -> None:
@@ -18971,7 +18971,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/remote_control.py":482
- * 
+ *
  * def send_response_to_client(
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,             # <<<<<<<<<<<<<<
  *         async_id: str = '') -> None:
@@ -18996,8 +18996,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 481, __pyx_L1_error)
 
   /* "smelly/remote_control.py":481
- * 
- * 
+ *
+ *
  * def send_response_to_client(             # <<<<<<<<<<<<<<
  *         data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,
  *         async_id: str = '') -> None:
@@ -19011,8 +19011,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/remote_control.py":499
- * 
- * 
+ *
+ *
  * def get_password(opts: RCOptions) -> str:             # <<<<<<<<<<<<<<
  *     if opts.use_password == 'never':
  *         return ''
@@ -19032,8 +19032,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/remote_control.py":535
- * 
- * 
+ *
+ *
  * def get_pubkey() -> Tuple[str, bytes]:             # <<<<<<<<<<<<<<
  *     raw = os.environ.get('smelly_PUBLIC_KEY', '')
  *     if not raw:
@@ -19066,7 +19066,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/remote_control.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -19854,12 +19854,12 @@ static PyObject* __Pyx_PyFloat_DivideObjC(PyObject *op1, PyObject *op2, double f
     (void)zerodivision_check;
     if (likely(PyFloat_CheckExact(op1))) {
         a = PyFloat_AS_DOUBLE(op1);
-        
+
     } else
     #if PY_MAJOR_VERSION < 3
     if (likely(PyInt_CheckExact(op1))) {
         a = (double) PyInt_AS_LONG(op1);
-        
+
     } else
     #endif
     if (likely(PyLong_CheckExact(op1))) {
@@ -19909,12 +19909,12 @@ static PyObject* __Pyx_PyFloat_DivideObjC(PyObject *op1, PyObject *op2, double f
         #endif
             a = PyLong_AsDouble(op1);
             if (unlikely(a == -1.0 && PyErr_Occurred())) return NULL;
-            
+
         }
     } else {
         return (inplace ? __Pyx_PyNumber_InPlaceDivide(op1, op2) : __Pyx_PyNumber_Divide(op1, op2));
     }
-        
+
         PyFPE_START_PROTECT("divide", return NULL)
         result = a / b;
         PyFPE_END_PROTECT(result)

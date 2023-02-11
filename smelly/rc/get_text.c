@@ -1563,7 +1563,7 @@ static PyObject *__pyx_codeobj__4;
 
 /* "smelly/rc/get_text.py":73
  *     field_to_option_map = {'wrap_markers': 'add_wrap_markers', 'cursor': 'add_cursor'}
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -1667,7 +1667,7 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_message_to_smelly(CYTHO
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/get_text.py":74
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {             # <<<<<<<<<<<<<<
  *             'match': opts.match,
@@ -1754,7 +1754,7 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_message_to_smelly(CYTHO
  *             'clear_selection': opts.clear_selection,
  *             'self': opts.self,             # <<<<<<<<<<<<<<
  *         }
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_self); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1766,7 +1766,7 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_message_to_smelly(CYTHO
 
   /* "smelly/rc/get_text.py":73
  *     field_to_option_map = {'wrap_markers': 'add_wrap_markers', 'cursor': 'add_cursor'}
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -1786,10 +1786,10 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_message_to_smelly(CYTHO
 
 /* "smelly/rc/get_text.py":84
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.window import CommandOutput
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1901,10 +1901,10 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_2response_from_smelly(C
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/get_text.py":85
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         from smelly.window import CommandOutput             # <<<<<<<<<<<<<<
- * 
+ *
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
@@ -1924,7 +1924,7 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_2response_from_smelly(C
 
   /* "smelly/rc/get_text.py":87
  *         from smelly.window import CommandOutput
- * 
+ *
  *         windows = self.windows_for_match_payload(boss, window, payload_get)             # <<<<<<<<<<<<<<
  *         if windows and windows[0]:
  *             window = windows[0]
@@ -1983,7 +1983,7 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_2response_from_smelly(C
   __pyx_t_2 = 0;
 
   /* "smelly/rc/get_text.py":88
- * 
+ *
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         if windows and windows[0]:             # <<<<<<<<<<<<<<
  *             window = windows[0]
@@ -2016,7 +2016,7 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_2response_from_smelly(C
     __pyx_t_2 = 0;
 
     /* "smelly/rc/get_text.py":88
- * 
+ *
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         if windows and windows[0]:             # <<<<<<<<<<<<<<
  *             window = windows[0]
@@ -2879,7 +2879,7 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_2response_from_smelly(C
  *         if payload_get('clear_selection'):
  *             window.clear_selection()             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_clear_selection); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2913,8 +2913,8 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_2response_from_smelly(C
  *         if payload_get('clear_selection'):
  *             window.clear_selection()
  *         return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2923,10 +2923,10 @@ static PyObject *__pyx_pf_6smelly_2rc_8get_text_7GetText_2response_from_smelly(C
 
   /* "smelly/rc/get_text.py":84
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.window import CommandOutput
- * 
+ *
  */
 
   /* function exit code */
@@ -3084,7 +3084,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/get_text.py":73
  *     field_to_option_map = {'wrap_markers': 'add_wrap_markers', 'cursor': 'add_cursor'}
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -3096,10 +3096,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/get_text.py":84
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.window import CommandOutput
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get, __pyx_n_s_CommandOutput, __pyx_n_s_windows, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -3391,10 +3391,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/get_text.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -3420,9 +3420,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_text.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -3497,10 +3497,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_text.py":9
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import GetTextRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3509,11 +3509,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/get_text.py":10
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import GetTextRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3531,16 +3531,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/get_text.py":9
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import GetTextRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/get_text.py":13
- * 
- * 
+ *
+ *
  * class GetText(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The window to get text from
@@ -3558,7 +3558,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/get_text.py":14
- * 
+ *
  * class GetText(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: The window to get text from
@@ -3569,7 +3569,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_text.py":26
  *     '''
- * 
+ *
  *     short_desc = 'Get text from the specified window'             # <<<<<<<<<<<<<<
  *     options_spec = (
  *         MATCH_WINDOW_OPTION
@@ -3601,9 +3601,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_text.py":71
  *     )
- * 
+ *
  *     field_to_option_map = {'wrap_markers': 'add_wrap_markers', 'cursor': 'add_cursor'}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 71, __pyx_L1_error)
@@ -3615,7 +3615,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_text.py":73
  *     field_to_option_map = {'wrap_markers': 'add_wrap_markers', 'cursor': 'add_cursor'}
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -3644,10 +3644,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_text.py":84
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.window import CommandOutput
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3681,8 +3681,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/get_text.py":13
- * 
- * 
+ *
+ *
  * class GetText(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The window to get text from
@@ -3696,8 +3696,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/get_text.py":130
- * 
- * 
+ *
+ *
  * get_text = GetText()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_GetText); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
@@ -3711,7 +3711,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/get_text.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

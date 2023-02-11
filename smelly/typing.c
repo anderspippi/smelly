@@ -1706,9 +1706,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/typing.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * BossType = ChildType = TabType = WindowType = ScreenType = None
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -1727,7 +1727,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/typing.py":6
  * from typing import Tuple
- * 
+ *
  * BossType = ChildType = TabType = WindowType = ScreenType = None             # <<<<<<<<<<<<<<
  * BadLineType = SequenceMap = KeyActionType = AliasMap = None
  * AddressFamily = PopenType = Socket = StartupCtx = None
@@ -1739,7 +1739,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_ScreenType, Py_None) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
 
   /* "smelly/typing.py":7
- * 
+ *
  * BossType = ChildType = TabType = WindowType = ScreenType = None
  * BadLineType = SequenceMap = KeyActionType = AliasMap = None             # <<<<<<<<<<<<<<
  * AddressFamily = PopenType = Socket = StartupCtx = None
@@ -1818,7 +1818,7 @@ if (!__Pyx_RefNanny) {
  * GRT_t = GRT_a = GRT_d = GRT_f = GRT_m = GRT_o = GRT_C = None
  * ScreenSize = welliesKeyActionType = MouseEvent = MouseButton = AbstractEventLoop = None             # <<<<<<<<<<<<<<
  * TermManagerType = LoopType = Debug = GraphicsCommandType = None
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_ScreenSize, Py_None) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_welliesKeyActionType, Py_None) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -1830,7 +1830,7 @@ if (!__Pyx_RefNanny) {
  * GRT_t = GRT_a = GRT_d = GRT_f = GRT_m = GRT_o = GRT_C = None
  * ScreenSize = welliesKeyActionType = MouseEvent = MouseButton = AbstractEventLoop = None
  * TermManagerType = LoopType = Debug = GraphicsCommandType = None             # <<<<<<<<<<<<<<
- * 
+ *
  * CompletedProcess = Tuple
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_TermManagerType, Py_None) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -1840,7 +1840,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/typing.py":16
  * TermManagerType = LoopType = Debug = GraphicsCommandType = None
- * 
+ *
  * CompletedProcess = Tuple             # <<<<<<<<<<<<<<
  * TypedDict = dict
  * EdgeLiteral = str
@@ -1851,7 +1851,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/typing.py":17
- * 
+ *
  * CompletedProcess = Tuple
  * TypedDict = dict             # <<<<<<<<<<<<<<
  * EdgeLiteral = str
@@ -1913,7 +1913,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/typing.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

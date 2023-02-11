@@ -1524,11 +1524,11 @@ static PyObject *__pyx_codeobj__13;
 /* Late includes */
 
 /* "welly/choose/main.py":14
- * 
+ *
  * class ChooseHandler(Handler):
  *     def initialize(self) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1559,10 +1559,10 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_initialize(CYTHON
 
 /* "welly/choose/main.py":17
  *         pass
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1664,10 +1664,10 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_2on_text(CYTHON_U
 
 /* "welly/choose/main.py":20
  *         pass
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1749,10 +1749,10 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_4on_key(CYTHON_UN
 
 /* "welly/choose/main.py":23
  *         pass
- * 
+ *
  *     def on_interrupt(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1781,10 +1781,10 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_6on_interrupt(CYT
   __Pyx_RefNannySetupContext("on_interrupt", 0);
 
   /* "welly/choose/main.py":24
- * 
+ *
  *     def on_interrupt(self) -> None:
  *         self.quit_loop(1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def on_eot(self) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_quit_loop); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 24, __pyx_L1_error)
@@ -1808,10 +1808,10 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_6on_interrupt(CYT
 
   /* "welly/choose/main.py":23
  *         pass
- * 
+ *
  *     def on_interrupt(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
 
   /* function exit code */
@@ -1831,10 +1831,10 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_6on_interrupt(CYT
 
 /* "welly/choose/main.py":26
  *         self.quit_loop(1)
- * 
+ *
  *     def on_eot(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1863,11 +1863,11 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_8on_eot(CYTHON_UN
   __Pyx_RefNannySetupContext("on_eot", 0);
 
   /* "welly/choose/main.py":27
- * 
+ *
  *     def on_eot(self) -> None:
  *         self.quit_loop(1)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_quit_loop); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1890,10 +1890,10 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_8on_eot(CYTHON_UN
 
   /* "welly/choose/main.py":26
  *         self.quit_loop(1)
- * 
+ *
  *     def on_eot(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
 
   /* function exit code */
@@ -1912,8 +1912,8 @@ static PyObject *__pyx_pf_5welly_6choose_4main_13ChooseHandler_8on_eot(CYTHON_UN
 }
 
 /* "welly/choose/main.py":30
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     loop = Loop()
  *     handler = ChooseHandler()
@@ -1947,7 +1947,7 @@ static PyObject *__pyx_pf_5welly_6choose_4main_main(CYTHON_UNUSED PyObject *__py
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "welly/choose/main.py":31
- * 
+ *
  * def main(args: List[str]) -> None:
  *     loop = Loop()             # <<<<<<<<<<<<<<
  *     handler = ChooseHandler()
@@ -2005,7 +2005,7 @@ static PyObject *__pyx_pf_5welly_6choose_4main_main(CYTHON_UNUSED PyObject *__py
  *     handler = ChooseHandler()
  *     loop.loop(handler)             # <<<<<<<<<<<<<<
  *     raise SystemExit(loop.return_code)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_loop, __pyx_n_s_loop); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2030,8 +2030,8 @@ static PyObject *__pyx_pf_5welly_6choose_4main_main(CYTHON_UNUSED PyObject *__py
  *     handler = ChooseHandler()
  *     loop.loop(handler)
  *     raise SystemExit(loop.return_code)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_loop, __pyx_n_s_return_code); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2043,8 +2043,8 @@ static PyObject *__pyx_pf_5welly_6choose_4main_main(CYTHON_UNUSED PyObject *__py
   __PYX_ERR(0, 34, __pyx_L1_error)
 
   /* "welly/choose/main.py":30
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     loop = Loop()
  *     handler = ChooseHandler()
@@ -2170,11 +2170,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/choose/main.py":14
- * 
+ *
  * class ChooseHandler(Handler):
  *     def initialize(self) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -2183,10 +2183,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/choose/main.py":17
  *         pass
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_text, __pyx_n_s_in_bracketed_paste); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -2198,10 +2198,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/choose/main.py":20
  *         pass
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_key_event); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -2210,10 +2210,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/choose/main.py":23
  *         pass
- * 
+ *
  *     def on_interrupt(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -2222,10 +2222,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/choose/main.py":26
  *         self.quit_loop(1)
- * 
+ *
  *     def on_eot(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
   __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
@@ -2233,8 +2233,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_choose_main_py, __pyx_n_s_on_eot, 26, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 26, __pyx_L1_error)
 
   /* "welly/choose/main.py":30
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     loop = Loop()
  *     handler = ChooseHandler()
@@ -2529,10 +2529,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/main.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import sys             # <<<<<<<<<<<<<<
  * from typing import List
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2540,10 +2540,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/choose/main.py":5
- * 
+ *
  * import sys
  * from typing import List             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.key_encoding import KeyEvent
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2562,9 +2562,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/main.py":7
  * from typing import List
- * 
+ *
  * from smelly.key_encoding import KeyEvent             # <<<<<<<<<<<<<<
- * 
+ *
  * from ..tui.handler import Handler
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2583,10 +2583,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/main.py":9
  * from smelly.key_encoding import KeyEvent
- * 
+ *
  * from ..tui.handler import Handler             # <<<<<<<<<<<<<<
  * from ..tui.loop import Loop
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2603,11 +2603,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/choose/main.py":10
- * 
+ *
  * from ..tui.handler import Handler
  * from ..tui.loop import Loop             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2624,8 +2624,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/choose/main.py":13
- * 
- * 
+ *
+ *
  * class ChooseHandler(Handler):             # <<<<<<<<<<<<<<
  *     def initialize(self) -> None:
  *         pass
@@ -2643,11 +2643,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "welly/choose/main.py":14
- * 
+ *
  * class ChooseHandler(Handler):
  *     def initialize(self) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2661,10 +2661,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/main.py":17
  *         pass
- * 
+ *
  *     def on_text(self, text: str, in_bracketed_paste: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2681,10 +2681,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/main.py":20
  *         pass
- * 
+ *
  *     def on_key(self, key_event: KeyEvent) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2702,10 +2702,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/main.py":23
  *         pass
- * 
+ *
  *     def on_interrupt(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2719,10 +2719,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/main.py":26
  *         self.quit_loop(1)
- * 
+ *
  *     def on_eot(self) -> None:             # <<<<<<<<<<<<<<
  *         self.quit_loop(1)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2735,8 +2735,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/choose/main.py":13
- * 
- * 
+ *
+ *
  * class ChooseHandler(Handler):             # <<<<<<<<<<<<<<
  *     def initialize(self) -> None:
  *         pass
@@ -2750,8 +2750,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/choose/main.py":30
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     loop = Loop()
  *     handler = ChooseHandler()
@@ -2774,8 +2774,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/choose/main.py":37
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main(sys.argv)
  */
@@ -2786,7 +2786,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_6) {
 
     /* "welly/choose/main.py":38
- * 
+ *
  * if __name__ == '__main__':
  *     main(sys.argv)             # <<<<<<<<<<<<<<
  */
@@ -2804,8 +2804,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "welly/choose/main.py":37
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main(sys.argv)
  */
@@ -2814,7 +2814,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/choose/main.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

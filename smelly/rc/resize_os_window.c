@@ -1552,7 +1552,7 @@ static PyObject *__pyx_codeobj__4;
 
 /* "smelly/rc/resize_os_window.py":75
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -1656,7 +1656,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_messag
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/resize_os_window.py":76
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {             # <<<<<<<<<<<<<<
  *             'match': opts.match,
@@ -1743,7 +1743,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_messag
  *             'self': opts.self,
  *             'incremental': opts.incremental,             # <<<<<<<<<<<<<<
  *         }
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_incremental); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1755,7 +1755,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_messag
 
   /* "smelly/rc/resize_os_window.py":75
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -1775,7 +1775,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_messag
 
 /* "smelly/rc/resize_os_window.py":86
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         if windows:
@@ -1895,7 +1895,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_2respo
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/resize_os_window.py":87
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         windows = self.windows_for_match_payload(boss, window, payload_get)             # <<<<<<<<<<<<<<
  *         if windows:
@@ -2264,7 +2264,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_2respo
  *                 elif ac == 'toggle-maximized':
  *                     boss.toggle_maximized(os_window_id)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
         __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_boss, __pyx_n_s_toggle_maximized_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
@@ -2310,8 +2310,8 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_2respo
  *                 elif ac == 'toggle-maximized':
  *                     boss.toggle_maximized(os_window_id)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2319,7 +2319,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16resize_os_window_14ResizeOSWindow_2respo
 
   /* "smelly/rc/resize_os_window.py":86
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         if windows:
@@ -2470,7 +2470,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/resize_os_window.py":75
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -2482,7 +2482,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/resize_os_window.py":86
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         if windows:
@@ -2778,9 +2778,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/resize_os_window.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2806,9 +2806,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/resize_os_window.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2883,10 +2883,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/resize_os_window.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import ResizeOSWindowRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2895,11 +2895,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/resize_os_window.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import ResizeOSWindowRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2917,16 +2917,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/resize_os_window.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import ResizeOSWindowRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/resize_os_window.py":12
- * 
- * 
+ *
+ *
  * class ResizeOSWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to resize
@@ -2944,7 +2944,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/resize_os_window.py":13
- * 
+ *
  * class ResizeOSWindow(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: Which window to resize
@@ -2955,7 +2955,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/resize_os_window.py":23
  *     '''
- * 
+ *
  *     short_desc = 'Resize the specified OS Windows'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Resize the specified OS Windows.'
@@ -2996,7 +2996,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/resize_os_window.py":75
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {
  *             'match': opts.match,
@@ -3025,7 +3025,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/resize_os_window.py":86
  *         }
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         if windows:
@@ -3062,8 +3062,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/resize_os_window.py":12
- * 
- * 
+ *
+ *
  * class ResizeOSWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to resize
@@ -3077,8 +3077,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/resize_os_window.py":102
- * 
- * 
+ *
+ *
  * resize_os_window = ResizeOSWindow()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ResizeOSWindow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -3092,7 +3092,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/resize_os_window.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

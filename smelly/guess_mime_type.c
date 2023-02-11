@@ -1686,8 +1686,8 @@ static PyObject *__pyx_codeobj__13;
 /* Late includes */
 
 /* "smelly/guess_mime_type.py":40
- * 
- * 
+ *
+ *
  * def is_rc_file(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     name = os.path.basename(path)
  *     return '.' not in name and name.endswith('rc')
@@ -1730,11 +1730,11 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_is_rc_file(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("is_rc_file", 0);
 
   /* "smelly/guess_mime_type.py":41
- * 
+ *
  * def is_rc_file(path: str) -> bool:
  *     name = os.path.basename(path)             # <<<<<<<<<<<<<<
  *     return '.' not in name and name.endswith('rc')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1766,8 +1766,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_is_rc_file(CYTHON_UNUSED PyO
  * def is_rc_file(path: str) -> bool:
  *     name = os.path.basename(path)
  *     return '.' not in name and name.endswith('rc')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_4 = (__Pyx_PySequence_ContainsTF(__pyx_kp_s_, __pyx_v_name, Py_NE)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -1805,8 +1805,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_is_rc_file(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly/guess_mime_type.py":40
- * 
- * 
+ *
+ *
  * def is_rc_file(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     name = os.path.basename(path)
  *     return '.' not in name and name.endswith('rc')
@@ -1828,8 +1828,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_is_rc_file(CYTHON_UNUSED PyO
 }
 
 /* "smelly/guess_mime_type.py":45
- * 
- * 
+ *
+ *
  * def is_folder(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     with suppress(OSError):
  *         return os.path.isdir(path)
@@ -1877,7 +1877,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_2is_folder(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("is_folder", 0);
 
   /* "smelly/guess_mime_type.py":46
- * 
+ *
  * def is_folder(path: str) -> bool:
  *     with suppress(OSError):             # <<<<<<<<<<<<<<
  *         return os.path.isdir(path)
@@ -1937,7 +1937,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_2is_folder(CYTHON_UNUSED PyO
  *     with suppress(OSError):
  *         return os.path.isdir(path)             # <<<<<<<<<<<<<<
  *     return False
- * 
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L7_error)
@@ -1968,7 +1968,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_2is_folder(CYTHON_UNUSED PyO
           goto __pyx_L11_try_return;
 
           /* "smelly/guess_mime_type.py":46
- * 
+ *
  * def is_folder(path: str) -> bool:
  *     with suppress(OSError):             # <<<<<<<<<<<<<<
  *         return os.path.isdir(path)
@@ -2002,7 +2002,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_2is_folder(CYTHON_UNUSED PyO
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 46, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2067,8 +2067,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_2is_folder(CYTHON_UNUSED PyO
  *     with suppress(OSError):
  *         return os.path.isdir(path)
  *     return False             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(Py_False);
@@ -2076,8 +2076,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_2is_folder(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly/guess_mime_type.py":45
- * 
- * 
+ *
+ *
  * def is_folder(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     with suppress(OSError):
  *         return os.path.isdir(path)
@@ -2098,8 +2098,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_2is_folder(CYTHON_UNUSED PyO
 }
 
 /* "smelly/guess_mime_type.py":51
- * 
- * 
+ *
+ *
  * def initialize_mime_database() -> None:             # <<<<<<<<<<<<<<
  *     if hasattr(initialize_mime_database, 'inited'):
  *         return
@@ -2139,7 +2139,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
   __Pyx_RefNannySetupContext("initialize_mime_database", 0);
 
   /* "smelly/guess_mime_type.py":52
- * 
+ *
  * def initialize_mime_database() -> None:
  *     if hasattr(initialize_mime_database, 'inited'):             # <<<<<<<<<<<<<<
  *         return
@@ -2164,7 +2164,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
     goto __pyx_L0;
 
     /* "smelly/guess_mime_type.py":52
- * 
+ *
  * def initialize_mime_database() -> None:
  *     if hasattr(initialize_mime_database, 'inited'):             # <<<<<<<<<<<<<<
  *         return
@@ -2177,7 +2177,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
  *         return
  *     setattr(initialize_mime_database, 'inited', True)             # <<<<<<<<<<<<<<
  *     from mimetypes import init
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_initialize_mime_database); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2188,7 +2188,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
  *         return
  *     setattr(initialize_mime_database, 'inited', True)
  *     from mimetypes import init             # <<<<<<<<<<<<<<
- * 
+ *
  *     init(None)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
@@ -2208,10 +2208,10 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
 
   /* "smelly/guess_mime_type.py":57
  *     from mimetypes import init
- * 
+ *
  *     init(None)             # <<<<<<<<<<<<<<
  *     from smelly.constants import config_dir
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_init);
   __pyx_t_1 = __pyx_v_init; __pyx_t_6 = NULL;
@@ -2232,10 +2232,10 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/guess_mime_type.py":58
- * 
+ *
  *     init(None)
  *     from smelly.constants import config_dir             # <<<<<<<<<<<<<<
- * 
+ *
  *     local_defs = os.path.join(config_dir, 'mime.types')
  */
   __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 58, __pyx_L1_error)
@@ -2255,7 +2255,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
 
   /* "smelly/guess_mime_type.py":60
  *     from smelly.constants import config_dir
- * 
+ *
  *     local_defs = os.path.join(config_dir, 'mime.types')             # <<<<<<<<<<<<<<
  *     if os.path.exists(local_defs):
  *         init((local_defs,))
@@ -2317,11 +2317,11 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
   __pyx_t_1 = 0;
 
   /* "smelly/guess_mime_type.py":61
- * 
+ *
  *     local_defs = os.path.join(config_dir, 'mime.types')
  *     if os.path.exists(local_defs):             # <<<<<<<<<<<<<<
  *         init((local_defs,))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_os); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2354,8 +2354,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
  *     local_defs = os.path.join(config_dir, 'mime.types')
  *     if os.path.exists(local_defs):
  *         init((local_defs,))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -2382,17 +2382,17 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/guess_mime_type.py":61
- * 
+ *
  *     local_defs = os.path.join(config_dir, 'mime.types')
  *     if os.path.exists(local_defs):             # <<<<<<<<<<<<<<
  *         init((local_defs,))
- * 
+ *
  */
   }
 
   /* "smelly/guess_mime_type.py":51
- * 
- * 
+ *
+ *
  * def initialize_mime_database() -> None:             # <<<<<<<<<<<<<<
  *     if hasattr(initialize_mime_database, 'inited'):
  *         return
@@ -2418,8 +2418,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_4initialize_mime_database(CY
 }
 
 /* "smelly/guess_mime_type.py":65
- * 
- * 
+ *
+ *
  * def guess_type(             # <<<<<<<<<<<<<<
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:
  *     is_dir = is_exe = False
@@ -2442,11 +2442,11 @@ static PyObject *__pyx_pw_6smelly_15guess_mime_type_7guess_type(PyObject *__pyx_
     PyObject* values[2] = {0,0};
 
     /* "smelly/guess_mime_type.py":66
- * 
+ *
  * def guess_type(
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *     is_dir = is_exe = False
- * 
+ *
  */
     values[1] = ((PyObject *)((PyObject *)Py_False));
     if (unlikely(__pyx_kwds)) {
@@ -2499,8 +2499,8 @@ static PyObject *__pyx_pw_6smelly_15guess_mime_type_7guess_type(PyObject *__pyx_
   __pyx_r = __pyx_pf_6smelly_15guess_mime_type_6guess_type(__pyx_self, __pyx_v_path, __pyx_v_allow_filesystem_access);
 
   /* "smelly/guess_mime_type.py":65
- * 
- * 
+ *
+ *
  * def guess_type(             # <<<<<<<<<<<<<<
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:
  *     is_dir = is_exe = False
@@ -2547,7 +2547,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
  * def guess_type(
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:
  *     is_dir = is_exe = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     if allow_filesystem_access:
  */
   __Pyx_INCREF(Py_False);
@@ -2557,7 +2557,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
 
   /* "smelly/guess_mime_type.py":69
  *     is_dir = is_exe = False
- * 
+ *
  *     if allow_filesystem_access:             # <<<<<<<<<<<<<<
  *         with suppress(OSError):
  *             st = os.stat(path)
@@ -2566,7 +2566,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
   if (__pyx_t_1) {
 
     /* "smelly/guess_mime_type.py":70
- * 
+ *
  *     if allow_filesystem_access:
  *         with suppress(OSError):             # <<<<<<<<<<<<<<
  *             st = os.stat(path)
@@ -2707,7 +2707,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
  *             is_exe = bool(not is_dir and st.st_mode &
  *                           (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
  *                           and os.access(path, os.X_OK))             # <<<<<<<<<<<<<<
- * 
+ *
  *     if is_dir:
  */
             __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_st, __pyx_n_s_st_mode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L8_error)
@@ -2718,7 +2718,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
  *             is_exe = bool(not is_dir and st.st_mode &
  *                           (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)             # <<<<<<<<<<<<<<
  *                           and os.access(path, os.X_OK))
- * 
+ *
  */
             __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_stat); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L8_error)
             __Pyx_GOTREF(__pyx_t_3);
@@ -2767,7 +2767,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
  *             is_exe = bool(not is_dir and st.st_mode &
  *                           (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
  *                           and os.access(path, os.X_OK))             # <<<<<<<<<<<<<<
- * 
+ *
  *     if is_dir:
  */
             __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_os); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 75, __pyx_L8_error)
@@ -2845,7 +2845,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
             __pyx_t_4 = 0;
 
             /* "smelly/guess_mime_type.py":70
- * 
+ *
  *     if allow_filesystem_access:
  *         with suppress(OSError):             # <<<<<<<<<<<<<<
  *             st = os.stat(path)
@@ -2884,7 +2884,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
               __Pyx_GIVEREF(__pyx_t_2);
               __Pyx_XGIVEREF(__pyx_t_13);
               __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_2, __pyx_t_13);
-              __pyx_t_4 = 0; __pyx_t_2 = 0; __pyx_t_13 = 0; 
+              __pyx_t_4 = 0; __pyx_t_2 = 0; __pyx_t_13 = 0;
               __PYX_ERR(0, 70, __pyx_L10_except_error)
             }
             __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2928,7 +2928,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
 
     /* "smelly/guess_mime_type.py":69
  *     is_dir = is_exe = False
- * 
+ *
  *     if allow_filesystem_access:             # <<<<<<<<<<<<<<
  *         with suppress(OSError):
  *             st = os.stat(path)
@@ -2937,7 +2937,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
 
   /* "smelly/guess_mime_type.py":77
  *                           and os.access(path, os.X_OK))
- * 
+ *
  *     if is_dir:             # <<<<<<<<<<<<<<
  *         return 'inode/directory'
  *     from mimetypes import guess_type as stdlib_guess_type
@@ -2946,11 +2946,11 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
   if (__pyx_t_11) {
 
     /* "smelly/guess_mime_type.py":78
- * 
+ *
  *     if is_dir:
  *         return 'inode/directory'             # <<<<<<<<<<<<<<
  *     from mimetypes import guess_type as stdlib_guess_type
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_kp_s_inode_directory);
@@ -2959,7 +2959,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
 
     /* "smelly/guess_mime_type.py":77
  *                           and os.access(path, os.X_OK))
- * 
+ *
  *     if is_dir:             # <<<<<<<<<<<<<<
  *         return 'inode/directory'
  *     from mimetypes import guess_type as stdlib_guess_type
@@ -2970,7 +2970,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
  *     if is_dir:
  *         return 'inode/directory'
  *     from mimetypes import guess_type as stdlib_guess_type             # <<<<<<<<<<<<<<
- * 
+ *
  *     initialize_mime_database()
  */
   __pyx_t_13 = PyList_New(1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 79, __pyx_L1_error)
@@ -2990,7 +2990,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
 
   /* "smelly/guess_mime_type.py":81
  *     from mimetypes import guess_type as stdlib_guess_type
- * 
+ *
  *     initialize_mime_database()             # <<<<<<<<<<<<<<
  *     mt = None
  *     with suppress(Exception):
@@ -3015,7 +3015,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/guess_mime_type.py":82
- * 
+ *
  *     initialize_mime_database()
  *     mt = None             # <<<<<<<<<<<<<<
  *     with suppress(Exception):
@@ -3149,7 +3149,7 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_4);
             __Pyx_ErrRestoreWithState(__pyx_t_13, __pyx_t_2, __pyx_t_4);
-            __pyx_t_13 = 0; __pyx_t_2 = 0; __pyx_t_4 = 0; 
+            __pyx_t_13 = 0; __pyx_t_2 = 0; __pyx_t_4 = 0;
             __PYX_ERR(0, 83, __pyx_L28_except_error)
           }
           __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -3467,8 +3467,8 @@ static PyObject *__pyx_pf_6smelly_15guess_mime_type_6guess_type(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/guess_mime_type.py":65
- * 
- * 
+ *
+ *
  * def guess_type(             # <<<<<<<<<<<<<<
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:
  *     is_dir = is_exe = False
@@ -3652,7 +3652,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/guess_mime_type.py":46
- * 
+ *
  * def is_folder(path: str) -> bool:
  *     with suppress(OSError):             # <<<<<<<<<<<<<<
  *         return os.path.isdir(path)
@@ -3674,7 +3674,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly/guess_mime_type.py":25
- * 
+ *
  * text_mimes = (
  *     'application/x-sh',             # <<<<<<<<<<<<<<
  *     'application/x-csh',
@@ -3685,8 +3685,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "smelly/guess_mime_type.py":40
- * 
- * 
+ *
+ *
  * def is_rc_file(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     name = os.path.basename(path)
  *     return '.' not in name and name.endswith('rc')
@@ -3697,8 +3697,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_guess_mime_type_py, __pyx_n_s_is_rc_file, 40, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 40, __pyx_L1_error)
 
   /* "smelly/guess_mime_type.py":45
- * 
- * 
+ *
+ *
  * def is_folder(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     with suppress(OSError):
  *         return os.path.isdir(path)
@@ -3709,8 +3709,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_guess_mime_type_py, __pyx_n_s_is_folder, 45, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 45, __pyx_L1_error)
 
   /* "smelly/guess_mime_type.py":51
- * 
- * 
+ *
+ *
  * def initialize_mime_database() -> None:             # <<<<<<<<<<<<<<
  *     if hasattr(initialize_mime_database, 'inited'):
  *         return
@@ -3721,8 +3721,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_guess_mime_type_py, __pyx_n_s_initialize_mime_database, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 51, __pyx_L1_error)
 
   /* "smelly/guess_mime_type.py":65
- * 
- * 
+ *
+ *
  * def guess_type(             # <<<<<<<<<<<<<<
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:
  *     is_dir = is_exe = False
@@ -4018,7 +4018,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/guess_mime_type.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import stat
  * from contextlib import suppress
@@ -4029,7 +4029,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/guess_mime_type.py":5
- * 
+ *
  * import os
  * import stat             # <<<<<<<<<<<<<<
  * from contextlib import suppress
@@ -4045,7 +4045,7 @@ if (!__Pyx_RefNanny) {
  * import stat
  * from contextlib import suppress             # <<<<<<<<<<<<<<
  * from typing import Optional
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4065,7 +4065,7 @@ if (!__Pyx_RefNanny) {
  * import stat
  * from contextlib import suppress
  * from typing import Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * known_extensions = {
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -4083,7 +4083,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/guess_mime_type.py":10
- * 
+ *
  * known_extensions = {
  *     'asciidoc': 'text/asciidoctor',             # <<<<<<<<<<<<<<
  *     'conf': 'text/config',
@@ -4106,7 +4106,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/guess_mime_type.py":25
- * 
+ *
  * text_mimes = (
  *     'application/x-sh',             # <<<<<<<<<<<<<<
  *     'application/x-csh',
@@ -4115,8 +4115,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_text_mimes, __pyx_tuple__5) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
   /* "smelly/guess_mime_type.py":40
- * 
- * 
+ *
+ *
  * def is_rc_file(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     name = os.path.basename(path)
  *     return '.' not in name and name.endswith('rc')
@@ -4133,8 +4133,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/guess_mime_type.py":45
- * 
- * 
+ *
+ *
  * def is_folder(path: str) -> bool:             # <<<<<<<<<<<<<<
  *     with suppress(OSError):
  *         return os.path.isdir(path)
@@ -4151,8 +4151,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/guess_mime_type.py":51
- * 
- * 
+ *
+ *
  * def initialize_mime_database() -> None:             # <<<<<<<<<<<<<<
  *     if hasattr(initialize_mime_database, 'inited'):
  *         return
@@ -4168,8 +4168,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/guess_mime_type.py":65
- * 
- * 
+ *
+ *
  * def guess_type(             # <<<<<<<<<<<<<<
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:
  *     is_dir = is_exe = False
@@ -4179,11 +4179,11 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_path, __pyx_n_u_str) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
 
   /* "smelly/guess_mime_type.py":66
- * 
+ *
  * def guess_type(
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *     is_dir = is_exe = False
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_allow_filesystem_access, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Optional); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
@@ -4195,8 +4195,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/guess_mime_type.py":65
- * 
- * 
+ *
+ *
  * def guess_type(             # <<<<<<<<<<<<<<
  *         path: str, allow_filesystem_access: bool = False) -> Optional[str]:
  *     is_dir = is_exe = False
@@ -4212,7 +4212,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/guess_mime_type.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);

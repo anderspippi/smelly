@@ -977,7 +977,7 @@ struct __pyx_defaults {
 };
 
 /* "smelly_tests/keys.py":13
- * 
+ *
  * class TestKeys(BaseTest):
  *     def test_encode_key_event(self):             # <<<<<<<<<<<<<<
  *         enc = defines.encode_key_for_tty
@@ -1000,7 +1000,7 @@ struct __pyx_obj_12smelly_tests_4keys___pyx_scope_struct__test_encode_key_event 
 
 /* "smelly_tests/keys.py":67
  *             return ans + trailer
- * 
+ *
  *         def mods_test(             # <<<<<<<<<<<<<<
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -1014,7 +1014,7 @@ struct __pyx_obj_12smelly_tests_4keys___pyx_scope_struct_1_mods_test {
 
 /* "smelly_tests/keys.py":517
  *                                 self.ae(ev, q)
- * 
+ *
  *     def test_encode_mouse_event(self):             # <<<<<<<<<<<<<<
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3
@@ -2388,7 +2388,7 @@ static PyObject *__pyx_codeobj__161;
 /* Late includes */
 
 /* "smelly_tests/keys.py":13
- * 
+ *
  * class TestKeys(BaseTest):
  *     def test_encode_key_event(self):             # <<<<<<<<<<<<<<
  *         enc = defines.encode_key_for_tty
@@ -2411,7 +2411,7 @@ static PyObject *__pyx_pw_12smelly_tests_4keys_8TestKeys_1test_encode_key_event(
 
 /* "smelly_tests/keys.py":27
  *         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa
- * 
+ *
  *         def csi(             # <<<<<<<<<<<<<<
  *                 mods=0, num=1, action=1, shifted_key=0, alternate_key=0,
  *                 text=None, trailer='u'):
@@ -2560,7 +2560,7 @@ static PyObject *__pyx_pw_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":27
  *         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa
- * 
+ *
  *         def csi(             # <<<<<<<<<<<<<<
  *                 mods=0, num=1, action=1, shifted_key=0, alternate_key=0,
  *                 text=None, trailer='u'):
@@ -2610,7 +2610,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                 num = ord(num)
  *             if num != 1 or mods or shifted_key or alternate_key or text:
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_num); 
+  __pyx_t_1 = PyString_Check(__pyx_v_num);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -2724,7 +2724,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                     shifted_key = ord(shifted_key)
  *                 ans += ':' + (f'{shifted_key}' if shifted_key else '')
  */
-    __pyx_t_2 = PyString_Check(__pyx_v_shifted_key); 
+    __pyx_t_2 = PyString_Check(__pyx_v_shifted_key);
     __pyx_t_1 = (__pyx_t_2 != 0);
     if (__pyx_t_1) {
 
@@ -2793,7 +2793,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                         alternate_key = ord(alternate_key)
  *                     ans += f':{alternate_key}'
  */
-      __pyx_t_1 = PyString_Check(__pyx_v_alternate_key); 
+      __pyx_t_1 = PyString_Check(__pyx_v_alternate_key);
       __pyx_t_2 = (__pyx_t_1 != 0);
       if (__pyx_t_2) {
 
@@ -3247,7 +3247,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *             if text:
  *                 ans += ';' + ':'.join(map(str, map(ord, text)))             # <<<<<<<<<<<<<<
  *             return ans + trailer
- * 
+ *
  */
     __pyx_t_4 = __Pyx_GetBuiltinName(__pyx_n_s_ord); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -3298,7 +3298,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *             if text:
  *                 ans += ';' + ':'.join(map(str, map(ord, text)))
  *             return ans + trailer             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mods_test(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3310,7 +3310,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":27
  *         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa
- * 
+ *
  *         def csi(             # <<<<<<<<<<<<<<
  *                 mods=0, num=1, action=1, shifted_key=0, alternate_key=0,
  *                 text=None, trailer='u'):
@@ -3335,7 +3335,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
 /* "smelly_tests/keys.py":67
  *             return ans + trailer
- * 
+ *
  *         def mods_test(             # <<<<<<<<<<<<<<
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -3366,7 +3366,7 @@ static PyObject *__pyx_pw_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
     PyObject* values[10] = {0,0,0,0,0,0,0,0,0,0};
 
     /* "smelly_tests/keys.py":68
- * 
+ *
  *         def mods_test(
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,             # <<<<<<<<<<<<<<
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -3527,7 +3527,7 @@ static PyObject *__pyx_pw_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":67
  *             return ans + trailer
- * 
+ *
  *         def mods_test(             # <<<<<<<<<<<<<<
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -3540,10 +3540,10 @@ static PyObject *__pyx_pw_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
 /* "smelly_tests/keys.py":73
  *             e = partial(enc, key=key)
- * 
+ *
  *             def a(a, b):             # <<<<<<<<<<<<<<
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3632,10 +3632,10 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/keys.py":74
- * 
+ *
  *             def a(a, b):
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")             # <<<<<<<<<<<<<<
- * 
+ *
  *             def w(a, b):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ae)) { __Pyx_RaiseClosureNameError("ae"); __PYX_ERR(0, 74, __pyx_L1_error) }
@@ -3755,10 +3755,10 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":73
  *             e = partial(enc, key=key)
- * 
+ *
  *             def a(a, b):             # <<<<<<<<<<<<<<
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  */
 
   /* function exit code */
@@ -3780,10 +3780,10 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
 /* "smelly_tests/keys.py":76
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  *             def w(a, b):             # <<<<<<<<<<<<<<
  *                 return c(b) if a is None else a
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3869,10 +3869,10 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/keys.py":77
- * 
+ *
  *             def w(a, b):
  *                 return c(b) if a is None else a             # <<<<<<<<<<<<<<
- * 
+ *
  *             a(e(), plain or c())
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3907,10 +3907,10 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":76
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  *             def w(a, b):             # <<<<<<<<<<<<<<
  *                 return c(b) if a is None else a
- * 
+ *
  */
 
   /* function exit code */
@@ -3929,7 +3929,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
 /* "smelly_tests/keys.py":67
  *             return ans + trailer
- * 
+ *
  *         def mods_test(             # <<<<<<<<<<<<<<
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -3969,7 +3969,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
  *             c = partial(csi, num=csi_num or key, trailer=trailer)             # <<<<<<<<<<<<<<
  *             e = partial(enc, key=key)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_partial); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4007,7 +4007,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
  *             c = partial(csi, num=csi_num or key, trailer=trailer)
  *             e = partial(enc, key=key)             # <<<<<<<<<<<<<<
- * 
+ *
  *             def a(a, b):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_partial); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
@@ -4031,10 +4031,10 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":73
  *             e = partial(enc, key=key)
- * 
+ *
  *             def a(a, b):             # <<<<<<<<<<<<<<
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_4keys_8TestKeys_21test_encode_key_event_9mods_test_1a, 0, __pyx_n_s_TestKeys_test_encode_key_event_l, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_keys, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4043,10 +4043,10 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":76
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  *             def w(a, b):             # <<<<<<<<<<<<<<
  *                 return c(b) if a is None else a
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_4keys_8TestKeys_21test_encode_key_event_9mods_test_3w, 0, __pyx_n_s_TestKeys_test_encode_key_event_l_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_keys, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4055,7 +4055,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":79
  *                 return c(b) if a is None else a
- * 
+ *
  *             a(e(), plain or c())             # <<<<<<<<<<<<<<
  *             a(e(mods=defines.GLFW_MOD_SHIFT), w(shift, defines.GLFW_MOD_SHIFT))
  *             a(e(mods=defines.GLFW_MOD_CONTROL), w(ctrl, defines.GLFW_MOD_CONTROL))
@@ -4110,7 +4110,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/keys.py":80
- * 
+ *
  *             a(e(), plain or c())
  *             a(e(mods=defines.GLFW_MOD_SHIFT), w(shift, defines.GLFW_MOD_SHIFT))             # <<<<<<<<<<<<<<
  *             a(e(mods=defines.GLFW_MOD_CONTROL), w(ctrl, defines.GLFW_MOD_CONTROL))
@@ -4314,7 +4314,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                 cshift, defines.GLFW_MOD_CONTROL | defines.GLFW_MOD_SHIFT))
  *             a(e(mods=defines.GLFW_MOD_SHIFT | defines.GLFW_MOD_ALT), w(             # <<<<<<<<<<<<<<
  *                 ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4342,7 +4342,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                 cshift, defines.GLFW_MOD_CONTROL | defines.GLFW_MOD_SHIFT))
  *             a(e(mods=defines.GLFW_MOD_SHIFT | defines.GLFW_MOD_ALT), w(
  *                 ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mkp(name, *a, **kw):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_defines); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
@@ -4365,7 +4365,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *                 cshift, defines.GLFW_MOD_CONTROL | defines.GLFW_MOD_SHIFT))
  *             a(e(mods=defines.GLFW_MOD_SHIFT | defines.GLFW_MOD_ALT), w(             # <<<<<<<<<<<<<<
  *                 ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event_9mods_test_2w(__pyx_v_w, __pyx_v_ashift, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4378,7 +4378,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":67
  *             return ans + trailer
- * 
+ *
  *         def mods_test(             # <<<<<<<<<<<<<<
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -4407,7 +4407,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
 /* "smelly_tests/keys.py":89
  *                 ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
- * 
+ *
  *         def mkp(name, *a, **kw):             # <<<<<<<<<<<<<<
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):
  *                 k = getattr(defines, x)
@@ -4507,7 +4507,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/keys.py":90
- * 
+ *
  *         def mkp(name, *a, **kw):
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):             # <<<<<<<<<<<<<<
  *                 k = getattr(defines, x)
@@ -4549,7 +4549,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):
  *                 k = getattr(defines, x)             # <<<<<<<<<<<<<<
  *                 mods_test(k, *a, **kw)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_defines); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4563,7 +4563,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):
  *                 k = getattr(defines, x)
  *                 mods_test(k, *a, **kw)             # <<<<<<<<<<<<<<
- * 
+ *
  *         mkp('ENTER', '\x0d', alt='\033\x0d', ctrl='\x0d', shift='\x0d',
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_mods_test)) { __Pyx_RaiseClosureNameError("mods_test"); __PYX_ERR(0, 92, __pyx_L1_error) }
@@ -4584,7 +4584,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly_tests/keys.py":90
- * 
+ *
  *         def mkp(name, *a, **kw):
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):             # <<<<<<<<<<<<<<
  *                 k = getattr(defines, x)
@@ -4595,7 +4595,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 
   /* "smelly_tests/keys.py":89
  *                 ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
- * 
+ *
  *         def mkp(name, *a, **kw):             # <<<<<<<<<<<<<<
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):
  *                 k = getattr(defines, x)
@@ -4620,7 +4620,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_21test_encode_key_event
 }
 
 /* "smelly_tests/keys.py":13
- * 
+ *
  * class TestKeys(BaseTest):
  *     def test_encode_key_event(self):             # <<<<<<<<<<<<<<
  *         enc = defines.encode_key_for_tty
@@ -4815,7 +4815,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         )  # noqa
  *         num_lock, caps_lock = defines.GLFW_MOD_NUM_LOCK, defines.GLFW_MOD_CAPS_LOCK             # <<<<<<<<<<<<<<
  *         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_defines); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -4836,7 +4836,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         )  # noqa
  *         num_lock, caps_lock = defines.GLFW_MOD_NUM_LOCK, defines.GLFW_MOD_CAPS_LOCK
  *         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa             # <<<<<<<<<<<<<<
- * 
+ *
  *         def csi(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_defines); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L1_error)
@@ -4863,7 +4863,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
 
   /* "smelly_tests/keys.py":27
  *         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa
- * 
+ *
  *         def csi(             # <<<<<<<<<<<<<<
  *                 mods=0, num=1, action=1, shifted_key=0, alternate_key=0,
  *                 text=None, trailer='u'):
@@ -4877,7 +4877,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
 
   /* "smelly_tests/keys.py":67
  *             return ans + trailer
- * 
+ *
  *         def mods_test(             # <<<<<<<<<<<<<<
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -4891,7 +4891,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
 
   /* "smelly_tests/keys.py":89
  *                 ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
- * 
+ *
  *         def mkp(name, *a, **kw):             # <<<<<<<<<<<<<<
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):
  *                 k = getattr(defines, x)
@@ -4903,7 +4903,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
 
   /* "smelly_tests/keys.py":94
  *                 mods_test(k, *a, **kw)
- * 
+ *
  *         mkp('ENTER', '\x0d', alt='\033\x0d', ctrl='\x0d', shift='\x0d',             # <<<<<<<<<<<<<<
  *             ashift='\033\x0d', calt='\033\x0d', cshift='\x0d')
  *         mods_test(
@@ -5564,7 +5564,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         mkp('DOWN', csi_num=1, trailer='B')
  *         mkp('RIGHT', csi_num=1, trailer='C')             # <<<<<<<<<<<<<<
  *         mkp('LEFT', csi_num=1, trailer='D')
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -5579,7 +5579,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         mkp('DOWN', csi_num=1, trailer='B')
  *         mkp('RIGHT', csi_num=1, trailer='C')
  *         mkp('LEFT', csi_num=1, trailer='D')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # legacy key tests {{{
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
@@ -24464,7 +24464,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
 
   /* "smelly_tests/keys.py":417
  *         # }}}
- * 
+ *
  *         ae(enc(key=ord(':'), shifted_key=ord('/'), mods=shift | alt), '\x1b/')             # <<<<<<<<<<<<<<
  *         for key in '~!@#$%^&*()_+{}|:"<>?':
  *             ae(enc(key=ord(key), mods=alt), '\x1b' + key)
@@ -24531,7 +24531,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/keys.py":418
- * 
+ *
  *         ae(enc(key=ord(':'), shifted_key=ord('/'), mods=shift | alt), '\x1b/')
  *         for key in '~!@#$%^&*()_+{}|:"<>?':             # <<<<<<<<<<<<<<
  *             ae(enc(key=ord(key), mods=alt), '\x1b' + key)
@@ -24629,7 +24629,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly_tests/keys.py":418
- * 
+ *
  *         ae(enc(key=ord(':'), shifted_key=ord('/'), mods=shift | alt), '\x1b/')
  *         for key in '~!@#$%^&*()_+{}|:"<>?':             # <<<<<<<<<<<<<<
  *             ae(enc(key=ord(key), mods=alt), '\x1b' + key)
@@ -25251,7 +25251,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(enc(key=ord('i'), mods=ctrl | shift), csi(ctrl | shift, ord('i')))
  *         ae(enc(key=defines.GLFW_FKEY_LEFT_SHIFT), '')             # <<<<<<<<<<<<<<
  *         ae(enc(key=defines.GLFW_FKEY_CAPS_LOCK), '')
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -25319,7 +25319,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(enc(key=ord('i'), mods=ctrl | shift), csi(ctrl | shift, ord('i')))
  *         ae(enc(key=defines.GLFW_FKEY_LEFT_SHIFT), '')
  *         ae(enc(key=defines.GLFW_FKEY_CAPS_LOCK), '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         q = partial(enc, key=ord('a'))
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 430, __pyx_L1_error)
@@ -25386,7 +25386,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
 
   /* "smelly_tests/keys.py":432
  *         ae(enc(key=defines.GLFW_FKEY_CAPS_LOCK), '')
- * 
+ *
  *         q = partial(enc, key=ord('a'))             # <<<<<<<<<<<<<<
  *         ae(q(), 'a')
  *         ae(q(text='a'), 'a')
@@ -25410,7 +25410,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __pyx_t_5 = 0;
 
   /* "smelly_tests/keys.py":433
- * 
+ *
  *         q = partial(enc, key=ord('a'))
  *         ae(q(), 'a')             # <<<<<<<<<<<<<<
  *         ae(q(text='a'), 'a')
@@ -25550,7 +25550,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(q(text='a'), 'a')
  *         ae(q(action=repeat), 'a')             # <<<<<<<<<<<<<<
  *         ae(q(action=release), '')
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 435, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -25612,7 +25612,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(q(text='a'), 'a')
  *         ae(q(action=repeat), 'a')
  *         ae(q(action=release), '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test disambiguate
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 436, __pyx_L1_error)
@@ -25672,7 +25672,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/keys.py":439
- * 
+ *
  *         # test disambiguate
  *         dq = partial(enc, key_encoding_flags=0b1)             # <<<<<<<<<<<<<<
  *         ae(dq(ord('a')), 'a')
@@ -26684,7 +26684,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *             ae(dq(k, mods=ctrl), csi(ctrl, num=k))
  *         ae(dq(defines.GLFW_FKEY_UP), '\x1b[A')             # <<<<<<<<<<<<<<
  *         ae(dq(defines.GLFW_FKEY_UP, mods=ctrl), csi(ctrl, 1, trailer='A'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_defines); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 453, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -26762,7 +26762,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *             ae(dq(k, mods=ctrl), csi(ctrl, num=k))
  *         ae(dq(defines.GLFW_FKEY_UP), '\x1b[A')
  *         ae(dq(defines.GLFW_FKEY_UP, mods=ctrl), csi(ctrl, 1, trailer='A'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test event type reporting
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_defines); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 454, __pyx_L1_error)
@@ -26850,7 +26850,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/keys.py":457
- * 
+ *
  *         # test event type reporting
  *         tq = partial(enc, key_encoding_flags=0b10)             # <<<<<<<<<<<<<<
  *         ae(tq(ord('a')), 'a')
@@ -27108,7 +27108,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE), csi(num='a', action=3))
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE,             # <<<<<<<<<<<<<<
  *            mods=shift), csi(shift, num='a', action=3))
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 461, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -27124,7 +27124,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE), csi(num='a', action=3))
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE,
  *            mods=shift), csi(shift, num='a', action=3))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test alternate key reporting
  */
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_mods, __pyx_cur_scope->__pyx_v_shift) < 0) __PYX_ERR(0, 461, __pyx_L1_error)
@@ -27134,7 +27134,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE), csi(num='a', action=3))
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE,             # <<<<<<<<<<<<<<
  *            mods=shift), csi(shift, num='a', action=3))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_Call(__pyx_v_tq, __pyx_tuple__95, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 461, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -27144,7 +27144,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE), csi(num='a', action=3))
  *         ae(tq(ord('a'), action=defines.GLFW_RELEASE,
  *            mods=shift), csi(shift, num='a', action=3))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test alternate key reporting
  */
   __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 462, __pyx_L1_error)
@@ -27213,7 +27213,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/keys.py":465
- * 
+ *
  *         # test alternate key reporting
  *         aq = partial(enc, key_encoding_flags=0b100)             # <<<<<<<<<<<<<<
  *         ae(aq(ord('a')), 'a')
@@ -27539,7 +27539,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(aq(ord('a'), alternate_key=ord('A')), csi(num='a', alternate_key='A'))
  *         ae(aq(ord('a'), mods=shift, shifted_key=ord('A'), alternate_key=ord(             # <<<<<<<<<<<<<<
  *             'b')), csi(shift, 'a', shifted_key='A', alternate_key='b'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 471, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -27554,7 +27554,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(aq(ord('a'), alternate_key=ord('A')), csi(num='a', alternate_key='A'))
  *         ae(aq(ord('a'), mods=shift, shifted_key=ord('A'), alternate_key=ord(
  *             'b')), csi(shift, 'a', shifted_key='A', alternate_key='b'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test report all keys
  */
   __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 472, __pyx_L1_error)
@@ -27626,7 +27626,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/keys.py":475
- * 
+ *
  *         # test report all keys
  *         kq = partial(enc, key_encoding_flags=0b1000)             # <<<<<<<<<<<<<<
  *         ae(kq(ord('a')), csi(num='a'))
@@ -28157,7 +28157,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(kq(defines.GLFW_FKEY_ENTER), '\x1b[13u')
  *         ae(kq(defines.GLFW_FKEY_TAB), '\x1b[9u')             # <<<<<<<<<<<<<<
  *         ae(kq(defines.GLFW_FKEY_BACKSPACE), '\x1b[127u')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_defines); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 483, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -28235,7 +28235,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(kq(defines.GLFW_FKEY_ENTER), '\x1b[13u')
  *         ae(kq(defines.GLFW_FKEY_TAB), '\x1b[9u')
  *         ae(kq(defines.GLFW_FKEY_BACKSPACE), '\x1b[127u')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test embed text
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_defines); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 484, __pyx_L1_error)
@@ -28311,7 +28311,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/keys.py":487
- * 
+ *
  *         # test embed text
  *         eq = partial(enc, key_encoding_flags=0b11000)             # <<<<<<<<<<<<<<
  *         ae(eq(ord('a'), text='a'), csi(num='a', text='a'))
@@ -28412,7 +28412,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(eq(ord('a'), text='a'), csi(num='a', text='a'))
  *         ae(eq(ord('a'), mods=shift, text='A'), csi(shift, num='a', text='A'))             # <<<<<<<<<<<<<<
  *         ae(eq(ord('a'), mods=shift, text='AB'), csi(shift, num='a', text='AB'))
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 489, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -28490,7 +28490,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *         ae(eq(ord('a'), text='a'), csi(num='a', text='a'))
  *         ae(eq(ord('a'), mods=shift, text='A'), csi(shift, num='a', text='A'))
  *         ae(eq(ord('a'), mods=shift, text='AB'), csi(shift, num='a', text='AB'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test roundtripping via KeyEvent
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 490, __pyx_L1_error)
@@ -28566,7 +28566,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/keys.py":493
- * 
+ *
  *         # test roundtripping via KeyEvent
  *         for mods in range(64):             # <<<<<<<<<<<<<<
  *             for action in EventType:
@@ -28914,7 +28914,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *                                 ec = encode_key_event(ev)
  *                                 q = decode_key_event(ec[2:-1], ec[-1])             # <<<<<<<<<<<<<<
  *                                 self.ae(ev, q)
- * 
+ *
  */
               __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_decode_key_event); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 514, __pyx_L1_error)
               __Pyx_GOTREF(__pyx_t_7);
@@ -28978,7 +28978,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
  *                                 ec = encode_key_event(ev)
  *                                 q = decode_key_event(ec[2:-1], ec[-1])
  *                                 self.ae(ev, q)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_encode_mouse_event(self):
  */
               __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 515, __pyx_L1_error)
@@ -29082,7 +29082,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
   }
 
   /* "smelly_tests/keys.py":13
- * 
+ *
  * class TestKeys(BaseTest):
  *     def test_encode_key_event(self):             # <<<<<<<<<<<<<<
  *         enc = defines.encode_key_for_tty
@@ -29136,7 +29136,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_test_encode_key_event(C
 
 /* "smelly_tests/keys.py":517
  *                                 self.ae(ev, q)
- * 
+ *
  *     def test_encode_mouse_event(self):             # <<<<<<<<<<<<<<
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3
@@ -29158,7 +29158,7 @@ static PyObject *__pyx_pw_12smelly_tests_4keys_8TestKeys_3test_encode_mouse_even
 
 /* "smelly_tests/keys.py":522
  *         protocol = SGR_PROTOCOL
- * 
+ *
  *         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):             # <<<<<<<<<<<<<<
  *             return defines.test_encode_mouse(
  *                 x, y, protocol, button, action, mods)
@@ -29346,11 +29346,11 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_23test_encode_mouse_eve
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/keys.py":523
- * 
+ *
  *         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):
  *             return defines.test_encode_mouse(             # <<<<<<<<<<<<<<
  *                 x, y, protocol, button, action, mods)
- * 
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_defines); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 523, __pyx_L1_error)
@@ -29363,7 +29363,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_23test_encode_mouse_eve
  *         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):
  *             return defines.test_encode_mouse(
  *                 x, y, protocol, button, action, mods)             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(enc(), '<0;1;1M')
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_protocol)) { __Pyx_RaiseClosureNameError("protocol"); __PYX_ERR(0, 524, __pyx_L1_error) }
@@ -29430,7 +29430,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_23test_encode_mouse_eve
 
   /* "smelly_tests/keys.py":522
  *         protocol = SGR_PROTOCOL
- * 
+ *
  *         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):             # <<<<<<<<<<<<<<
  *             return defines.test_encode_mouse(
  *                 x, y, protocol, button, action, mods)
@@ -29452,7 +29452,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_23test_encode_mouse_eve
 
 /* "smelly_tests/keys.py":517
  *                                 self.ae(ev, q)
- * 
+ *
  *     def test_encode_mouse_event(self):             # <<<<<<<<<<<<<<
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3
@@ -29495,7 +29495,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
   }
 
   /* "smelly_tests/keys.py":518
- * 
+ *
  *     def test_encode_mouse_event(self):
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)             # <<<<<<<<<<<<<<
  *         L, M, R = 1, 2, 3
@@ -29513,15 +29513,15 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -29576,7 +29576,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3             # <<<<<<<<<<<<<<
  *         protocol = SGR_PROTOCOL
- * 
+ *
  */
   __pyx_t_8 = 1;
   __pyx_t_9 = 2;
@@ -29589,7 +29589,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3
  *         protocol = SGR_PROTOCOL             # <<<<<<<<<<<<<<
- * 
+ *
  *         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):
  */
   __Pyx_INCREF(__pyx_v_SGR_PROTOCOL);
@@ -29598,7 +29598,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
 
   /* "smelly_tests/keys.py":522
  *         protocol = SGR_PROTOCOL
- * 
+ *
  *         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):             # <<<<<<<<<<<<<<
  *             return defines.test_encode_mouse(
  *                 x, y, protocol, button, action, mods)
@@ -29625,7 +29625,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
 
   /* "smelly_tests/keys.py":526
  *                 x, y, protocol, button, action, mods)
- * 
+ *
  *         self.ae(enc(), '<0;1;1M')             # <<<<<<<<<<<<<<
  *         self.ae(enc(action=defines.RELEASE), '<0;1;1m')
  *         self.ae(enc(action=defines.MOVE, button=0), '<35;1;1M')
@@ -29684,7 +29684,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/keys.py":527
- * 
+ *
  *         self.ae(enc(), '<0;1;1M')
  *         self.ae(enc(action=defines.RELEASE), '<0;1;1m')             # <<<<<<<<<<<<<<
  *         self.ae(enc(action=defines.MOVE, button=0), '<35;1;1M')
@@ -29758,7 +29758,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
  *         self.ae(enc(action=defines.RELEASE), '<0;1;1m')
  *         self.ae(enc(action=defines.MOVE, button=0), '<35;1;1M')             # <<<<<<<<<<<<<<
  *         self.ae(enc(action=defines.DRAG), '<32;1;1M')
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -29828,7 +29828,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
  *         self.ae(enc(action=defines.RELEASE), '<0;1;1m')
  *         self.ae(enc(action=defines.MOVE, button=0), '<35;1;1M')
  *         self.ae(enc(action=defines.DRAG), '<32;1;1M')             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(enc(R), '<2;1;1M')
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 529, __pyx_L1_error)
@@ -29896,7 +29896,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
 
   /* "smelly_tests/keys.py":531
  *         self.ae(enc(action=defines.DRAG), '<32;1;1M')
- * 
+ *
  *         self.ae(enc(R), '<2;1;1M')             # <<<<<<<<<<<<<<
  *         self.ae(enc(R, action=defines.RELEASE), '<2;1;1m')
  *         self.ae(enc(R, action=defines.DRAG), '<34;1;1M')
@@ -29958,11 +29958,11 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/keys.py":532
- * 
+ *
  *         self.ae(enc(R), '<2;1;1M')
  *         self.ae(enc(R, action=defines.RELEASE), '<2;1;1m')             # <<<<<<<<<<<<<<
  *         self.ae(enc(R, action=defines.DRAG), '<34;1;1M')
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 532, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -30039,7 +30039,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
  *         self.ae(enc(R), '<2;1;1M')
  *         self.ae(enc(R, action=defines.RELEASE), '<2;1;1m')
  *         self.ae(enc(R, action=defines.DRAG), '<34;1;1M')             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(enc(M), '<1;1;1M')
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 533, __pyx_L1_error)
@@ -30115,7 +30115,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
 
   /* "smelly_tests/keys.py":535
  *         self.ae(enc(R, action=defines.DRAG), '<34;1;1M')
- * 
+ *
  *         self.ae(enc(M), '<1;1;1M')             # <<<<<<<<<<<<<<
  *         self.ae(enc(M, action=defines.RELEASE), '<1;1;1m')
  *         self.ae(enc(M, action=defines.DRAG), '<33;1;1M')
@@ -30177,11 +30177,11 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/keys.py":536
- * 
+ *
  *         self.ae(enc(M), '<1;1;1M')
  *         self.ae(enc(M, action=defines.RELEASE), '<1;1;1m')             # <<<<<<<<<<<<<<
  *         self.ae(enc(M, action=defines.DRAG), '<33;1;1M')
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 536, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -30258,7 +30258,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
  *         self.ae(enc(M), '<1;1;1M')
  *         self.ae(enc(M, action=defines.RELEASE), '<1;1;1m')
  *         self.ae(enc(M, action=defines.DRAG), '<33;1;1M')             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(enc(x=1234, y=5678), '<0;1234;5678M')
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 537, __pyx_L1_error)
@@ -30334,7 +30334,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
 
   /* "smelly_tests/keys.py":539
  *         self.ae(enc(M, action=defines.DRAG), '<33;1;1M')
- * 
+ *
  *         self.ae(enc(x=1234, y=5678), '<0;1234;5678M')             # <<<<<<<<<<<<<<
  *         self.ae(enc(mods=defines.GLFW_MOD_SHIFT), '<4;1;1M')
  *         self.ae(enc(mods=defines.GLFW_MOD_ALT), '<8;1;1M')
@@ -30398,7 +30398,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/keys.py":540
- * 
+ *
  *         self.ae(enc(x=1234, y=5678), '<0;1234;5678M')
  *         self.ae(enc(mods=defines.GLFW_MOD_SHIFT), '<4;1;1M')             # <<<<<<<<<<<<<<
  *         self.ae(enc(mods=defines.GLFW_MOD_ALT), '<8;1;1M')
@@ -30606,7 +30606,7 @@ static PyObject *__pyx_pf_12smelly_tests_4keys_8TestKeys_2test_encode_mouse_even
 
   /* "smelly_tests/keys.py":517
  *                                 self.ae(ev, q)
- * 
+ *
  *     def test_encode_mouse_event(self):             # <<<<<<<<<<<<<<
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3
@@ -31431,10 +31431,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":73
  *             e = partial(enc, key=key)
- * 
+ *
  *             def a(a, b):             # <<<<<<<<<<<<<<
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(2, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -31443,10 +31443,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":76
  *                 ae(a, b, f"{a.encode('ascii')} != {b.encode('ascii')}")
- * 
+ *
  *             def w(a, b):             # <<<<<<<<<<<<<<
  *                 return c(b) if a is None else a
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(2, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -31455,7 +31455,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":27
  *         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa
- * 
+ *
  *         def csi(             # <<<<<<<<<<<<<<
  *                 mods=0, num=1, action=1, shifted_key=0, alternate_key=0,
  *                 text=None, trailer='u'):
@@ -31470,7 +31470,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":67
  *             return ans + trailer
- * 
+ *
  *         def mods_test(             # <<<<<<<<<<<<<<
  *                 key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
  *                 cshift=None, ashift=None, csi_num=None, trailer='u'):
@@ -31485,7 +31485,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":89
  *                 ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
- * 
+ *
  *         def mkp(name, *a, **kw):             # <<<<<<<<<<<<<<
  *             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):
  *                 k = getattr(defines, x)
@@ -31497,7 +31497,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":94
  *                 mods_test(k, *a, **kw)
- * 
+ *
  *         mkp('ENTER', '\x0d', alt='\033\x0d', ctrl='\x0d', shift='\x0d',             # <<<<<<<<<<<<<<
  *             ashift='\033\x0d', calt='\033\x0d', cshift='\x0d')
  *         mods_test(
@@ -31599,7 +31599,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         mkp('DOWN', csi_num=1, trailer='B')
  *         mkp('RIGHT', csi_num=1, trailer='C')             # <<<<<<<<<<<<<<
  *         mkp('LEFT', csi_num=1, trailer='D')
- * 
+ *
  */
   __pyx_tuple__38 = PyTuple_Pack(1, __pyx_n_s_RIGHT); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
@@ -31609,7 +31609,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         mkp('DOWN', csi_num=1, trailer='B')
  *         mkp('RIGHT', csi_num=1, trailer='C')
  *         mkp('LEFT', csi_num=1, trailer='D')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # legacy key tests {{{
  */
   __pyx_tuple__39 = PyTuple_Pack(1, __pyx_n_s_LEFT); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 126, __pyx_L1_error)
@@ -32193,14 +32193,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                                 ec = encode_key_event(ev)
  *                                 q = decode_key_event(ec[2:-1], ec[-1])             # <<<<<<<<<<<<<<
  *                                 self.ae(ev, q)
- * 
+ *
  */
   __pyx_slice__154 = PySlice_New(__pyx_int_2, __pyx_int_neg_1, Py_None); if (unlikely(!__pyx_slice__154)) __PYX_ERR(0, 514, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__154);
   __Pyx_GIVEREF(__pyx_slice__154);
 
   /* "smelly_tests/keys.py":518
- * 
+ *
  *     def test_encode_mouse_event(self):
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)             # <<<<<<<<<<<<<<
  *         L, M, R = 1, 2, 3
@@ -32212,7 +32212,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":522
  *         protocol = SGR_PROTOCOL
- * 
+ *
  *         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):             # <<<<<<<<<<<<<<
  *             return defines.test_encode_mouse(
  *                 x, y, protocol, button, action, mods)
@@ -32223,7 +32223,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__157 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__156, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_keys_py, __pyx_n_s_enc, 522, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__157)) __PYX_ERR(0, 522, __pyx_L1_error)
 
   /* "smelly_tests/keys.py":13
- * 
+ *
  * class TestKeys(BaseTest):
  *     def test_encode_key_event(self):             # <<<<<<<<<<<<<<
  *         enc = defines.encode_key_for_tty
@@ -32236,7 +32236,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/keys.py":517
  *                                 self.ae(ev, q)
- * 
+ *
  *     def test_encode_mouse_event(self):             # <<<<<<<<<<<<<<
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3
@@ -32676,9 +32676,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/keys.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from functools import partial             # <<<<<<<<<<<<<<
- * 
+ *
  * import smelly.fast_data_types as defines
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -32697,10 +32697,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/keys.py":6
  * from functools import partial
- * 
+ *
  * import smelly.fast_data_types as defines             # <<<<<<<<<<<<<<
  * from smelly.key_encoding import EventType, KeyEvent, decode_key_event, encode_key_event
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -32714,10 +32714,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/keys.py":7
- * 
+ *
  * import smelly.fast_data_types as defines
  * from smelly.key_encoding import EventType, KeyEvent, decode_key_event, encode_key_event             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -32757,10 +32757,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/keys.py":9
  * from smelly.key_encoding import EventType, KeyEvent, decode_key_event, encode_key_event
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -32777,8 +32777,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/keys.py":12
- * 
- * 
+ *
+ *
  * class TestKeys(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_encode_key_event(self):
  *         enc = defines.encode_key_for_tty
@@ -32796,7 +32796,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/keys.py":13
- * 
+ *
  * class TestKeys(BaseTest):
  *     def test_encode_key_event(self):             # <<<<<<<<<<<<<<
  *         enc = defines.encode_key_for_tty
@@ -32809,7 +32809,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/keys.py":517
  *                                 self.ae(ev, q)
- * 
+ *
  *     def test_encode_mouse_event(self):             # <<<<<<<<<<<<<<
  *         NORMAL_PROTOCOL, UTF8_PROTOCOL, SGR_PROTOCOL, URXVT_PROTOCOL = range(4)
  *         L, M, R = 1, 2, 3
@@ -32820,8 +32820,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/keys.py":12
- * 
- * 
+ *
+ *
  * class TestKeys(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_encode_key_event(self):
  *         enc = defines.encode_key_for_tty
@@ -32837,7 +32837,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/keys.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -33294,8 +33294,8 @@ static PyObject* __Pyx_PyInt_OrObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED 
                 llx = lla | llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceOr : PyNumber_Or)(op1, op2);
@@ -33409,8 +33409,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -34613,8 +34613,8 @@ static PyObject* __Pyx_PyInt_AndObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla & llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceAnd : PyNumber_And)(op1, op2);

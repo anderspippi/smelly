@@ -2049,8 +2049,8 @@ static PyObject *__pyx_codeobj__112;
 /* Late includes */
 
 /* "smelly/client.py":18
- * 
- * 
+ *
+ *
  * def write(x: str) -> None:             # <<<<<<<<<<<<<<
  *     sys.stdout.write(x)
  *     sys.stdout.flush()
@@ -2090,11 +2090,11 @@ static PyObject *__pyx_pf_6smelly_6client_write(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_RefNannySetupContext("write", 0);
 
   /* "smelly/client.py":19
- * 
+ *
  * def write(x: str) -> None:
  *     sys.stdout.write(x)             # <<<<<<<<<<<<<<
  *     sys.stdout.flush()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2125,8 +2125,8 @@ static PyObject *__pyx_pf_6smelly_6client_write(CYTHON_UNUSED PyObject *__pyx_se
  * def write(x: str) -> None:
  *     sys.stdout.write(x)
  *     sys.stdout.flush()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sys); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2154,8 +2154,8 @@ static PyObject *__pyx_pf_6smelly_6client_write(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":18
- * 
- * 
+ *
+ *
  * def write(x: str) -> None:             # <<<<<<<<<<<<<<
  *     sys.stdout.write(x)
  *     sys.stdout.flush()
@@ -2177,11 +2177,11 @@ static PyObject *__pyx_pf_6smelly_6client_write(CYTHON_UNUSED PyObject *__pyx_se
 }
 
 /* "smelly/client.py":23
- * 
- * 
+ *
+ *
  * def set_title(*args: Any) -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2216,11 +2216,11 @@ static PyObject *__pyx_pf_6smelly_6client_2set_title(CYTHON_UNUSED PyObject *__p
 }
 
 /* "smelly/client.py":27
- * 
- * 
+ *
+ *
  * def set_icon(*args: Any) -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2255,11 +2255,11 @@ static PyObject *__pyx_pf_6smelly_6client_4set_icon(CYTHON_UNUSED PyObject *__py
 }
 
 /* "smelly/client.py":31
- * 
- * 
+ *
+ *
  * def screen_bell() -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2289,11 +2289,11 @@ static PyObject *__pyx_pf_6smelly_6client_6screen_bell(CYTHON_UNUSED PyObject *_
 }
 
 /* "smelly/client.py":35
- * 
- * 
+ *
+ *
  * def screen_normal_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b>')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2322,11 +2322,11 @@ static PyObject *__pyx_pf_6smelly_6client_8screen_normal_keypad_mode(CYTHON_UNUS
   __Pyx_RefNannySetupContext("screen_normal_keypad_mode", 0);
 
   /* "smelly/client.py":36
- * 
+ *
  * def screen_normal_keypad_mode() -> None:
  *     write('\x1b>')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2348,11 +2348,11 @@ static PyObject *__pyx_pf_6smelly_6client_8screen_normal_keypad_mode(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":35
- * 
- * 
+ *
+ *
  * def screen_normal_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b>')
- * 
+ *
  */
 
   /* function exit code */
@@ -2371,11 +2371,11 @@ static PyObject *__pyx_pf_6smelly_6client_8screen_normal_keypad_mode(CYTHON_UNUS
 }
 
 /* "smelly/client.py":39
- * 
- * 
+ *
+ *
  * def screen_alternate_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b=')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2404,11 +2404,11 @@ static PyObject *__pyx_pf_6smelly_6client_10screen_alternate_keypad_mode(CYTHON_
   __Pyx_RefNannySetupContext("screen_alternate_keypad_mode", 0);
 
   /* "smelly/client.py":40
- * 
+ *
  * def screen_alternate_keypad_mode() -> None:
  *     write('\x1b=')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2430,11 +2430,11 @@ static PyObject *__pyx_pf_6smelly_6client_10screen_alternate_keypad_mode(CYTHON_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":39
- * 
- * 
+ *
+ *
  * def screen_alternate_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b=')
- * 
+ *
  */
 
   /* function exit code */
@@ -2453,11 +2453,11 @@ static PyObject *__pyx_pf_6smelly_6client_10screen_alternate_keypad_mode(CYTHON_
 }
 
 /* "smelly/client.py":43
- * 
- * 
+ *
+ *
  * def screen_cursor_position(y: int, x: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{y};{x}H')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2541,11 +2541,11 @@ static PyObject *__pyx_pf_6smelly_6client_12screen_cursor_position(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("screen_cursor_position", 0);
 
   /* "smelly/client.py":44
- * 
+ *
  * def screen_cursor_position(y: int, x: int) -> None:
  *     write(f'{CSI}{y};{x}H')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2607,11 +2607,11 @@ static PyObject *__pyx_pf_6smelly_6client_12screen_cursor_position(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":43
- * 
- * 
+ *
+ *
  * def screen_cursor_position(y: int, x: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{y};{x}H')
- * 
+ *
  */
 
   /* function exit code */
@@ -2632,11 +2632,11 @@ static PyObject *__pyx_pf_6smelly_6client_12screen_cursor_position(CYTHON_UNUSED
 }
 
 /* "smelly/client.py":47
- * 
- * 
+ *
+ *
  * def screen_cursor_forward(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}C')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2669,11 +2669,11 @@ static PyObject *__pyx_pf_6smelly_6client_14screen_cursor_forward(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("screen_cursor_forward", 0);
 
   /* "smelly/client.py":48
- * 
+ *
  * def screen_cursor_forward(amt: int) -> None:
  *     write(f'{CSI}{amt}C')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2724,11 +2724,11 @@ static PyObject *__pyx_pf_6smelly_6client_14screen_cursor_forward(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":47
- * 
- * 
+ *
+ *
  * def screen_cursor_forward(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}C')
- * 
+ *
  */
 
   /* function exit code */
@@ -2749,11 +2749,11 @@ static PyObject *__pyx_pf_6smelly_6client_14screen_cursor_forward(CYTHON_UNUSED 
 }
 
 /* "smelly/client.py":51
- * 
- * 
+ *
+ *
  * def screen_save_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b7')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2782,11 +2782,11 @@ static PyObject *__pyx_pf_6smelly_6client_16screen_save_cursor(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("screen_save_cursor", 0);
 
   /* "smelly/client.py":52
- * 
+ *
  * def screen_save_cursor() -> None:
  *     write('\x1b7')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2808,11 +2808,11 @@ static PyObject *__pyx_pf_6smelly_6client_16screen_save_cursor(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":51
- * 
- * 
+ *
+ *
  * def screen_save_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b7')
- * 
+ *
  */
 
   /* function exit code */
@@ -2831,11 +2831,11 @@ static PyObject *__pyx_pf_6smelly_6client_16screen_save_cursor(CYTHON_UNUSED PyO
 }
 
 /* "smelly/client.py":55
- * 
- * 
+ *
+ *
  * def screen_restore_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b8')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2864,11 +2864,11 @@ static PyObject *__pyx_pf_6smelly_6client_18screen_restore_cursor(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("screen_restore_cursor", 0);
 
   /* "smelly/client.py":56
- * 
+ *
  * def screen_restore_cursor() -> None:
  *     write('\x1b8')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2890,11 +2890,11 @@ static PyObject *__pyx_pf_6smelly_6client_18screen_restore_cursor(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":55
- * 
- * 
+ *
+ *
  * def screen_restore_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b8')
- * 
+ *
  */
 
   /* function exit code */
@@ -2913,11 +2913,11 @@ static PyObject *__pyx_pf_6smelly_6client_18screen_restore_cursor(CYTHON_UNUSED 
 }
 
 /* "smelly/client.py":59
- * 
- * 
+ *
+ *
  * def screen_cursor_back1(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}D')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2950,11 +2950,11 @@ static PyObject *__pyx_pf_6smelly_6client_20screen_cursor_back1(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("screen_cursor_back1", 0);
 
   /* "smelly/client.py":60
- * 
+ *
  * def screen_cursor_back1(amt: int) -> None:
  *     write(f'{CSI}{amt}D')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3005,11 +3005,11 @@ static PyObject *__pyx_pf_6smelly_6client_20screen_cursor_back1(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":59
- * 
- * 
+ *
+ *
  * def screen_cursor_back1(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}D')
- * 
+ *
  */
 
   /* function exit code */
@@ -3030,11 +3030,11 @@ static PyObject *__pyx_pf_6smelly_6client_20screen_cursor_back1(CYTHON_UNUSED Py
 }
 
 /* "smelly/client.py":63
- * 
- * 
+ *
+ *
  * def screen_save_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?s')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3064,11 +3064,11 @@ static PyObject *__pyx_pf_6smelly_6client_22screen_save_modes(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("screen_save_modes", 0);
 
   /* "smelly/client.py":64
- * 
+ *
  * def screen_save_modes() -> None:
  *     write(f'{CSI}?s')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3099,11 +3099,11 @@ static PyObject *__pyx_pf_6smelly_6client_22screen_save_modes(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":63
- * 
- * 
+ *
+ *
  * def screen_save_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?s')
- * 
+ *
  */
 
   /* function exit code */
@@ -3123,11 +3123,11 @@ static PyObject *__pyx_pf_6smelly_6client_22screen_save_modes(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/client.py":67
- * 
- * 
+ *
+ *
  * def screen_restore_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?r')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3157,11 +3157,11 @@ static PyObject *__pyx_pf_6smelly_6client_24screen_restore_modes(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("screen_restore_modes", 0);
 
   /* "smelly/client.py":68
- * 
+ *
  * def screen_restore_modes() -> None:
  *     write(f'{CSI}?r')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3192,11 +3192,11 @@ static PyObject *__pyx_pf_6smelly_6client_24screen_restore_modes(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":67
- * 
- * 
+ *
+ *
  * def screen_restore_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?r')
- * 
+ *
  */
 
   /* function exit code */
@@ -3216,8 +3216,8 @@ static PyObject *__pyx_pf_6smelly_6client_24screen_restore_modes(CYTHON_UNUSED P
 }
 
 /* "smelly/client.py":71
- * 
- * 
+ *
+ *
  * def screen_designate_charset(which: int, to: int) -> None:             # <<<<<<<<<<<<<<
  *     w = '()'[int(which)]
  *     t = chr(int(to))
@@ -3305,7 +3305,7 @@ static PyObject *__pyx_pf_6smelly_6client_26screen_designate_charset(CYTHON_UNUS
   __Pyx_RefNannySetupContext("screen_designate_charset", 0);
 
   /* "smelly/client.py":72
- * 
+ *
  * def screen_designate_charset(which: int, to: int) -> None:
  *     w = '()'[int(which)]             # <<<<<<<<<<<<<<
  *     t = chr(int(to))
@@ -3324,7 +3324,7 @@ static PyObject *__pyx_pf_6smelly_6client_26screen_designate_charset(CYTHON_UNUS
  *     w = '()'[int(which)]
  *     t = chr(int(to))             # <<<<<<<<<<<<<<
  *     write(f'\x1b{w}{t}')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyNumber_Int(__pyx_v_to); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3338,8 +3338,8 @@ static PyObject *__pyx_pf_6smelly_6client_26screen_designate_charset(CYTHON_UNUS
  *     w = '()'[int(which)]
  *     t = chr(int(to))
  *     write(f'\x1b{w}{t}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3387,8 +3387,8 @@ static PyObject *__pyx_pf_6smelly_6client_26screen_designate_charset(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":71
- * 
- * 
+ *
+ *
  * def screen_designate_charset(which: int, to: int) -> None:             # <<<<<<<<<<<<<<
  *     w = '()'[int(which)]
  *     t = chr(int(to))
@@ -3413,11 +3413,11 @@ static PyObject *__pyx_pf_6smelly_6client_26screen_designate_charset(CYTHON_UNUS
 }
 
 /* "smelly/client.py":77
- * 
- * 
+ *
+ *
  * def select_graphic_rendition(*a: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{";".join(map(str, a))}m')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3455,11 +3455,11 @@ static PyObject *__pyx_pf_6smelly_6client_28select_graphic_rendition(CYTHON_UNUS
   __Pyx_RefNannySetupContext("select_graphic_rendition", 0);
 
   /* "smelly/client.py":78
- * 
+ *
  * def select_graphic_rendition(*a: int) -> None:
  *     write(f'{CSI}{";".join(map(str, a))}m')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3525,11 +3525,11 @@ static PyObject *__pyx_pf_6smelly_6client_28select_graphic_rendition(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":77
- * 
- * 
+ *
+ *
  * def select_graphic_rendition(*a: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{";".join(map(str, a))}m')
- * 
+ *
  */
 
   /* function exit code */
@@ -3550,11 +3550,11 @@ static PyObject *__pyx_pf_6smelly_6client_28select_graphic_rendition(CYTHON_UNUS
 }
 
 /* "smelly/client.py":81
- * 
- * 
+ *
+ *
  * def screen_cursor_to_column(c: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{c}G')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3587,11 +3587,11 @@ static PyObject *__pyx_pf_6smelly_6client_30screen_cursor_to_column(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("screen_cursor_to_column", 0);
 
   /* "smelly/client.py":82
- * 
+ *
  * def screen_cursor_to_column(c: int) -> None:
  *     write(f'{CSI}{c}G')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3642,11 +3642,11 @@ static PyObject *__pyx_pf_6smelly_6client_30screen_cursor_to_column(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":81
- * 
- * 
+ *
+ *
  * def screen_cursor_to_column(c: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{c}G')
- * 
+ *
  */
 
   /* function exit code */
@@ -3667,11 +3667,11 @@ static PyObject *__pyx_pf_6smelly_6client_30screen_cursor_to_column(CYTHON_UNUSE
 }
 
 /* "smelly/client.py":85
- * 
- * 
+ *
+ *
  * def screen_cursor_to_line(ln: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{ln}d')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3704,11 +3704,11 @@ static PyObject *__pyx_pf_6smelly_6client_32screen_cursor_to_line(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("screen_cursor_to_line", 0);
 
   /* "smelly/client.py":86
- * 
+ *
  * def screen_cursor_to_line(ln: int) -> None:
  *     write(f'{CSI}{ln}d')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3759,11 +3759,11 @@ static PyObject *__pyx_pf_6smelly_6client_32screen_cursor_to_line(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":85
- * 
- * 
+ *
+ *
  * def screen_cursor_to_line(ln: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{ln}d')
- * 
+ *
  */
 
   /* function exit code */
@@ -3784,11 +3784,11 @@ static PyObject *__pyx_pf_6smelly_6client_32screen_cursor_to_line(CYTHON_UNUSED 
 }
 
 /* "smelly/client.py":89
- * 
- * 
+ *
+ *
  * def screen_set_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}h')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3873,11 +3873,11 @@ static PyObject *__pyx_pf_6smelly_6client_34screen_set_mode(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("screen_set_mode", 0);
 
   /* "smelly/client.py":90
- * 
+ *
  * def screen_set_mode(x: int, private: bool) -> None:
  *     write(f'{CSI}{"?" if private else ""}{x}h')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3944,11 +3944,11 @@ static PyObject *__pyx_pf_6smelly_6client_34screen_set_mode(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":89
- * 
- * 
+ *
+ *
  * def screen_set_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}h')
- * 
+ *
  */
 
   /* function exit code */
@@ -3969,11 +3969,11 @@ static PyObject *__pyx_pf_6smelly_6client_34screen_set_mode(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/client.py":93
- * 
- * 
+ *
+ *
  * def screen_save_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}s')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4058,11 +4058,11 @@ static PyObject *__pyx_pf_6smelly_6client_36screen_save_mode(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("screen_save_mode", 0);
 
   /* "smelly/client.py":94
- * 
+ *
  * def screen_save_mode(x: int, private: bool) -> None:
  *     write(f'{CSI}{"?" if private else ""}{x}s')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4129,11 +4129,11 @@ static PyObject *__pyx_pf_6smelly_6client_36screen_save_mode(CYTHON_UNUSED PyObj
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":93
- * 
- * 
+ *
+ *
  * def screen_save_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}s')
- * 
+ *
  */
 
   /* function exit code */
@@ -4154,11 +4154,11 @@ static PyObject *__pyx_pf_6smelly_6client_36screen_save_mode(CYTHON_UNUSED PyObj
 }
 
 /* "smelly/client.py":97
- * 
- * 
+ *
+ *
  * def screen_reset_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}l')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4243,11 +4243,11 @@ static PyObject *__pyx_pf_6smelly_6client_38screen_reset_mode(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("screen_reset_mode", 0);
 
   /* "smelly/client.py":98
- * 
+ *
  * def screen_reset_mode(x: int, private: bool) -> None:
  *     write(f'{CSI}{"?" if private else ""}{x}l')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4314,11 +4314,11 @@ static PyObject *__pyx_pf_6smelly_6client_38screen_reset_mode(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":97
- * 
- * 
+ *
+ *
  * def screen_reset_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}l')
- * 
+ *
  */
 
   /* function exit code */
@@ -4339,11 +4339,11 @@ static PyObject *__pyx_pf_6smelly_6client_38screen_reset_mode(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/client.py":101
- * 
- * 
+ *
+ *
  * def screen_restore_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}r')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4428,11 +4428,11 @@ static PyObject *__pyx_pf_6smelly_6client_40screen_restore_mode(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("screen_restore_mode", 0);
 
   /* "smelly/client.py":102
- * 
+ *
  * def screen_restore_mode(x: int, private: bool) -> None:
  *     write(f'{CSI}{"?" if private else ""}{x}r')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4499,11 +4499,11 @@ static PyObject *__pyx_pf_6smelly_6client_40screen_restore_mode(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":101
- * 
- * 
+ *
+ *
  * def screen_restore_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}r')
- * 
+ *
  */
 
   /* function exit code */
@@ -4524,11 +4524,11 @@ static PyObject *__pyx_pf_6smelly_6client_40screen_restore_mode(CYTHON_UNUSED Py
 }
 
 /* "smelly/client.py":105
- * 
- * 
+ *
+ *
  * def screen_set_margins(t: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{t};{b}r')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4612,11 +4612,11 @@ static PyObject *__pyx_pf_6smelly_6client_42screen_set_margins(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("screen_set_margins", 0);
 
   /* "smelly/client.py":106
- * 
+ *
  * def screen_set_margins(t: int, b: int) -> None:
  *     write(f'{CSI}{t};{b}r')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4678,11 +4678,11 @@ static PyObject *__pyx_pf_6smelly_6client_42screen_set_margins(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":105
- * 
- * 
+ *
+ *
  * def screen_set_margins(t: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{t};{b}r')
- * 
+ *
  */
 
   /* function exit code */
@@ -4703,11 +4703,11 @@ static PyObject *__pyx_pf_6smelly_6client_42screen_set_margins(CYTHON_UNUSED PyO
 }
 
 /* "smelly/client.py":109
- * 
- * 
+ *
+ *
  * def screen_indexn(n: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{n}S')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4740,11 +4740,11 @@ static PyObject *__pyx_pf_6smelly_6client_44screen_indexn(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("screen_indexn", 0);
 
   /* "smelly/client.py":110
- * 
+ *
  * def screen_indexn(n: int) -> None:
  *     write(f'{CSI}{n}S')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4795,11 +4795,11 @@ static PyObject *__pyx_pf_6smelly_6client_44screen_indexn(CYTHON_UNUSED PyObject
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":109
- * 
- * 
+ *
+ *
  * def screen_indexn(n: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{n}S')
- * 
+ *
  */
 
   /* function exit code */
@@ -4820,11 +4820,11 @@ static PyObject *__pyx_pf_6smelly_6client_44screen_indexn(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/client.py":113
- * 
- * 
+ *
+ *
  * def screen_delete_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}P')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4857,11 +4857,11 @@ static PyObject *__pyx_pf_6smelly_6client_46screen_delete_characters(CYTHON_UNUS
   __Pyx_RefNannySetupContext("screen_delete_characters", 0);
 
   /* "smelly/client.py":114
- * 
+ *
  * def screen_delete_characters(count: int) -> None:
  *     write(f'{CSI}{count}P')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4912,11 +4912,11 @@ static PyObject *__pyx_pf_6smelly_6client_46screen_delete_characters(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":113
- * 
- * 
+ *
+ *
  * def screen_delete_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}P')
- * 
+ *
  */
 
   /* function exit code */
@@ -4937,11 +4937,11 @@ static PyObject *__pyx_pf_6smelly_6client_46screen_delete_characters(CYTHON_UNUS
 }
 
 /* "smelly/client.py":117
- * 
- * 
+ *
+ *
  * def screen_push_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#P')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4974,11 +4974,11 @@ static PyObject *__pyx_pf_6smelly_6client_48screen_push_colors(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("screen_push_colors", 0);
 
   /* "smelly/client.py":118
- * 
+ *
  * def screen_push_colors(which: int) -> None:
  *     write(f'{CSI}{which}#P')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5029,11 +5029,11 @@ static PyObject *__pyx_pf_6smelly_6client_48screen_push_colors(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":117
- * 
- * 
+ *
+ *
  * def screen_push_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#P')
- * 
+ *
  */
 
   /* function exit code */
@@ -5054,11 +5054,11 @@ static PyObject *__pyx_pf_6smelly_6client_48screen_push_colors(CYTHON_UNUSED PyO
 }
 
 /* "smelly/client.py":121
- * 
- * 
+ *
+ *
  * def screen_pop_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#Q')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5091,11 +5091,11 @@ static PyObject *__pyx_pf_6smelly_6client_50screen_pop_colors(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("screen_pop_colors", 0);
 
   /* "smelly/client.py":122
- * 
+ *
  * def screen_pop_colors(which: int) -> None:
  *     write(f'{CSI}{which}#Q')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5146,11 +5146,11 @@ static PyObject *__pyx_pf_6smelly_6client_50screen_pop_colors(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":121
- * 
- * 
+ *
+ *
  * def screen_pop_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#Q')
- * 
+ *
  */
 
   /* function exit code */
@@ -5171,11 +5171,11 @@ static PyObject *__pyx_pf_6smelly_6client_50screen_pop_colors(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/client.py":125
- * 
- * 
+ *
+ *
  * def screen_report_colors() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}#R')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5205,11 +5205,11 @@ static PyObject *__pyx_pf_6smelly_6client_52screen_report_colors(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("screen_report_colors", 0);
 
   /* "smelly/client.py":126
- * 
+ *
  * def screen_report_colors() -> None:
  *     write(f'{CSI}#R')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5240,11 +5240,11 @@ static PyObject *__pyx_pf_6smelly_6client_52screen_report_colors(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":125
- * 
- * 
+ *
+ *
  * def screen_report_colors() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}#R')
- * 
+ *
  */
 
   /* function exit code */
@@ -5264,11 +5264,11 @@ static PyObject *__pyx_pf_6smelly_6client_52screen_report_colors(CYTHON_UNUSED P
 }
 
 /* "smelly/client.py":129
- * 
- * 
+ *
+ *
  * def screen_repeat_character(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}b')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5301,11 +5301,11 @@ static PyObject *__pyx_pf_6smelly_6client_54screen_repeat_character(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("screen_repeat_character", 0);
 
   /* "smelly/client.py":130
- * 
+ *
  * def screen_repeat_character(num: int) -> None:
  *     write(f'{CSI}{num}b')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5356,11 +5356,11 @@ static PyObject *__pyx_pf_6smelly_6client_54screen_repeat_character(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":129
- * 
- * 
+ *
+ *
  * def screen_repeat_character(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}b')
- * 
+ *
  */
 
   /* function exit code */
@@ -5381,11 +5381,11 @@ static PyObject *__pyx_pf_6smelly_6client_54screen_repeat_character(CYTHON_UNUSE
 }
 
 /* "smelly/client.py":133
- * 
- * 
+ *
+ *
  * def screen_insert_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}@')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5418,11 +5418,11 @@ static PyObject *__pyx_pf_6smelly_6client_56screen_insert_characters(CYTHON_UNUS
   __Pyx_RefNannySetupContext("screen_insert_characters", 0);
 
   /* "smelly/client.py":134
- * 
+ *
  * def screen_insert_characters(count: int) -> None:
  *     write(f'{CSI}{count}@')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5473,11 +5473,11 @@ static PyObject *__pyx_pf_6smelly_6client_56screen_insert_characters(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":133
- * 
- * 
+ *
+ *
  * def screen_insert_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}@')
- * 
+ *
  */
 
   /* function exit code */
@@ -5498,11 +5498,11 @@ static PyObject *__pyx_pf_6smelly_6client_56screen_insert_characters(CYTHON_UNUS
 }
 
 /* "smelly/client.py":137
- * 
- * 
+ *
+ *
  * def screen_scroll(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}S')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5535,11 +5535,11 @@ static PyObject *__pyx_pf_6smelly_6client_58screen_scroll(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("screen_scroll", 0);
 
   /* "smelly/client.py":138
- * 
+ *
  * def screen_scroll(count: int) -> None:
  *     write(f'{CSI}{count}S')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5590,11 +5590,11 @@ static PyObject *__pyx_pf_6smelly_6client_58screen_scroll(CYTHON_UNUSED PyObject
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":137
- * 
- * 
+ *
+ *
  * def screen_scroll(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}S')
- * 
+ *
  */
 
   /* function exit code */
@@ -5615,11 +5615,11 @@ static PyObject *__pyx_pf_6smelly_6client_58screen_scroll(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/client.py":141
- * 
- * 
+ *
+ *
  * def screen_erase_in_display(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}J')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5704,11 +5704,11 @@ static PyObject *__pyx_pf_6smelly_6client_60screen_erase_in_display(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("screen_erase_in_display", 0);
 
   /* "smelly/client.py":142
- * 
+ *
  * def screen_erase_in_display(how: int, private: bool) -> None:
  *     write(f'{CSI}{"?" if private else ""}{how}J')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5775,11 +5775,11 @@ static PyObject *__pyx_pf_6smelly_6client_60screen_erase_in_display(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":141
- * 
- * 
+ *
+ *
  * def screen_erase_in_display(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}J')
- * 
+ *
  */
 
   /* function exit code */
@@ -5800,11 +5800,11 @@ static PyObject *__pyx_pf_6smelly_6client_60screen_erase_in_display(CYTHON_UNUSE
 }
 
 /* "smelly/client.py":145
- * 
- * 
+ *
+ *
  * def screen_erase_in_line(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}K')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5889,11 +5889,11 @@ static PyObject *__pyx_pf_6smelly_6client_62screen_erase_in_line(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("screen_erase_in_line", 0);
 
   /* "smelly/client.py":146
- * 
+ *
  * def screen_erase_in_line(how: int, private: bool) -> None:
  *     write(f'{CSI}{"?" if private else ""}{how}K')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5960,11 +5960,11 @@ static PyObject *__pyx_pf_6smelly_6client_62screen_erase_in_line(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":145
- * 
- * 
+ *
+ *
  * def screen_erase_in_line(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}K')
- * 
+ *
  */
 
   /* function exit code */
@@ -5985,11 +5985,11 @@ static PyObject *__pyx_pf_6smelly_6client_62screen_erase_in_line(CYTHON_UNUSED P
 }
 
 /* "smelly/client.py":149
- * 
- * 
+ *
+ *
  * def screen_delete_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}M')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6022,11 +6022,11 @@ static PyObject *__pyx_pf_6smelly_6client_64screen_delete_lines(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("screen_delete_lines", 0);
 
   /* "smelly/client.py":150
- * 
+ *
  * def screen_delete_lines(num: int) -> None:
  *     write(f'{CSI}{num}M')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6077,11 +6077,11 @@ static PyObject *__pyx_pf_6smelly_6client_64screen_delete_lines(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":149
- * 
- * 
+ *
+ *
  * def screen_delete_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}M')
- * 
+ *
  */
 
   /* function exit code */
@@ -6102,11 +6102,11 @@ static PyObject *__pyx_pf_6smelly_6client_64screen_delete_lines(CYTHON_UNUSED Py
 }
 
 /* "smelly/client.py":153
- * 
- * 
+ *
+ *
  * def screen_cursor_up2(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}A')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6139,11 +6139,11 @@ static PyObject *__pyx_pf_6smelly_6client_66screen_cursor_up2(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("screen_cursor_up2", 0);
 
   /* "smelly/client.py":154
- * 
+ *
  * def screen_cursor_up2(count: int) -> None:
  *     write(f'{CSI}{count}A')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6194,11 +6194,11 @@ static PyObject *__pyx_pf_6smelly_6client_66screen_cursor_up2(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":153
- * 
- * 
+ *
+ *
  * def screen_cursor_up2(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}A')
- * 
+ *
  */
 
   /* function exit code */
@@ -6219,11 +6219,11 @@ static PyObject *__pyx_pf_6smelly_6client_66screen_cursor_up2(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/client.py":157
- * 
- * 
+ *
+ *
  * def screen_cursor_down(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}B')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6256,11 +6256,11 @@ static PyObject *__pyx_pf_6smelly_6client_68screen_cursor_down(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("screen_cursor_down", 0);
 
   /* "smelly/client.py":158
- * 
+ *
  * def screen_cursor_down(count: int) -> None:
  *     write(f'{CSI}{count}B')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6311,11 +6311,11 @@ static PyObject *__pyx_pf_6smelly_6client_68screen_cursor_down(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":157
- * 
- * 
+ *
+ *
  * def screen_cursor_down(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}B')
- * 
+ *
  */
 
   /* function exit code */
@@ -6336,11 +6336,11 @@ static PyObject *__pyx_pf_6smelly_6client_68screen_cursor_down(CYTHON_UNUSED PyO
 }
 
 /* "smelly/client.py":161
- * 
- * 
+ *
+ *
  * def screen_carriage_return() -> None:             # <<<<<<<<<<<<<<
  *     write('\r')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6369,11 +6369,11 @@ static PyObject *__pyx_pf_6smelly_6client_70screen_carriage_return(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("screen_carriage_return", 0);
 
   /* "smelly/client.py":162
- * 
+ *
  * def screen_carriage_return() -> None:
  *     write('\r')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6395,11 +6395,11 @@ static PyObject *__pyx_pf_6smelly_6client_70screen_carriage_return(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":161
- * 
- * 
+ *
+ *
  * def screen_carriage_return() -> None:             # <<<<<<<<<<<<<<
  *     write('\r')
- * 
+ *
  */
 
   /* function exit code */
@@ -6418,11 +6418,11 @@ static PyObject *__pyx_pf_6smelly_6client_70screen_carriage_return(CYTHON_UNUSED
 }
 
 /* "smelly/client.py":165
- * 
- * 
+ *
+ *
  * def screen_linefeed() -> None:             # <<<<<<<<<<<<<<
  *     write('\n')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6451,11 +6451,11 @@ static PyObject *__pyx_pf_6smelly_6client_72screen_linefeed(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("screen_linefeed", 0);
 
   /* "smelly/client.py":166
- * 
+ *
  * def screen_linefeed() -> None:
  *     write('\n')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6477,11 +6477,11 @@ static PyObject *__pyx_pf_6smelly_6client_72screen_linefeed(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":165
- * 
- * 
+ *
+ *
  * def screen_linefeed() -> None:             # <<<<<<<<<<<<<<
  *     write('\n')
- * 
+ *
  */
 
   /* function exit code */
@@ -6500,11 +6500,11 @@ static PyObject *__pyx_pf_6smelly_6client_72screen_linefeed(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/client.py":169
- * 
- * 
+ *
+ *
  * def screen_tab() -> None:             # <<<<<<<<<<<<<<
  *     write('\t')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6533,11 +6533,11 @@ static PyObject *__pyx_pf_6smelly_6client_74screen_tab(CYTHON_UNUSED PyObject *_
   __Pyx_RefNannySetupContext("screen_tab", 0);
 
   /* "smelly/client.py":170
- * 
+ *
  * def screen_tab() -> None:
  *     write('\t')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6559,11 +6559,11 @@ static PyObject *__pyx_pf_6smelly_6client_74screen_tab(CYTHON_UNUSED PyObject *_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":169
- * 
- * 
+ *
+ *
  * def screen_tab() -> None:             # <<<<<<<<<<<<<<
  *     write('\t')
- * 
+ *
  */
 
   /* function exit code */
@@ -6582,11 +6582,11 @@ static PyObject *__pyx_pf_6smelly_6client_74screen_tab(CYTHON_UNUSED PyObject *_
 }
 
 /* "smelly/client.py":173
- * 
- * 
+ *
+ *
  * def screen_backspace() -> None:             # <<<<<<<<<<<<<<
  *     write('\x08')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6615,11 +6615,11 @@ static PyObject *__pyx_pf_6smelly_6client_76screen_backspace(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("screen_backspace", 0);
 
   /* "smelly/client.py":174
- * 
+ *
  * def screen_backspace() -> None:
  *     write('\x08')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6641,11 +6641,11 @@ static PyObject *__pyx_pf_6smelly_6client_76screen_backspace(CYTHON_UNUSED PyObj
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":173
- * 
- * 
+ *
+ *
  * def screen_backspace() -> None:             # <<<<<<<<<<<<<<
  *     write('\x08')
- * 
+ *
  */
 
   /* function exit code */
@@ -6664,11 +6664,11 @@ static PyObject *__pyx_pf_6smelly_6client_76screen_backspace(CYTHON_UNUSED PyObj
 }
 
 /* "smelly/client.py":177
- * 
- * 
+ *
+ *
  * def screen_set_cursor(mode: int, secondary: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{secondary} q')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6752,11 +6752,11 @@ static PyObject *__pyx_pf_6smelly_6client_78screen_set_cursor(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("screen_set_cursor", 0);
 
   /* "smelly/client.py":178
- * 
+ *
  * def screen_set_cursor(mode: int, secondary: int) -> None:
  *     write(f'{CSI}{secondary} q')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6807,11 +6807,11 @@ static PyObject *__pyx_pf_6smelly_6client_78screen_set_cursor(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":177
- * 
- * 
+ *
+ *
  * def screen_set_cursor(mode: int, secondary: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{secondary} q')
- * 
+ *
  */
 
   /* function exit code */
@@ -6832,11 +6832,11 @@ static PyObject *__pyx_pf_6smelly_6client_78screen_set_cursor(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/client.py":181
- * 
- * 
+ *
+ *
  * def screen_insert_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}L')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6869,11 +6869,11 @@ static PyObject *__pyx_pf_6smelly_6client_80screen_insert_lines(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("screen_insert_lines", 0);
 
   /* "smelly/client.py":182
- * 
+ *
  * def screen_insert_lines(num: int) -> None:
  *     write(f'{CSI}{num}L')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6924,11 +6924,11 @@ static PyObject *__pyx_pf_6smelly_6client_80screen_insert_lines(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":181
- * 
- * 
+ *
+ *
  * def screen_insert_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}L')
- * 
+ *
  */
 
   /* function exit code */
@@ -6949,11 +6949,11 @@ static PyObject *__pyx_pf_6smelly_6client_80screen_insert_lines(CYTHON_UNUSED Py
 }
 
 /* "smelly/client.py":185
- * 
- * 
+ *
+ *
  * def draw(*a: str) -> None:             # <<<<<<<<<<<<<<
  *     write(' '.join(a))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6988,11 +6988,11 @@ static PyObject *__pyx_pf_6smelly_6client_82draw(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_RefNannySetupContext("draw", 0);
 
   /* "smelly/client.py":186
- * 
+ *
  * def draw(*a: str) -> None:
  *     write(' '.join(a))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7017,11 +7017,11 @@ static PyObject *__pyx_pf_6smelly_6client_82draw(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":185
- * 
- * 
+ *
+ *
  * def draw(*a: str) -> None:             # <<<<<<<<<<<<<<
  *     write(' '.join(a))
- * 
+ *
  */
 
   /* function exit code */
@@ -7041,11 +7041,11 @@ static PyObject *__pyx_pf_6smelly_6client_82draw(CYTHON_UNUSED PyObject *__pyx_s
 }
 
 /* "smelly/client.py":189
- * 
- * 
+ *
+ *
  * def screen_manipulate_title_stack(op: int, which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{op};{which}t')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7129,11 +7129,11 @@ static PyObject *__pyx_pf_6smelly_6client_84screen_manipulate_title_stack(CYTHON
   __Pyx_RefNannySetupContext("screen_manipulate_title_stack", 0);
 
   /* "smelly/client.py":190
- * 
+ *
  * def screen_manipulate_title_stack(op: int, which: int) -> None:
  *     write(f'{CSI}{op};{which}t')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7195,11 +7195,11 @@ static PyObject *__pyx_pf_6smelly_6client_84screen_manipulate_title_stack(CYTHON
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":189
- * 
- * 
+ *
+ *
  * def screen_manipulate_title_stack(op: int, which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{op};{which}t')
- * 
+ *
  */
 
   /* function exit code */
@@ -7220,8 +7220,8 @@ static PyObject *__pyx_pf_6smelly_6client_84screen_manipulate_title_stack(CYTHON
 }
 
 /* "smelly/client.py":193
- * 
- * 
+ *
+ *
  * def report_device_attributes(mode: int, char: int) -> None:             # <<<<<<<<<<<<<<
  *     x = CSI
  *     if char:
@@ -7310,7 +7310,7 @@ static PyObject *__pyx_pf_6smelly_6client_86report_device_attributes(CYTHON_UNUS
   __Pyx_RefNannySetupContext("report_device_attributes", 0);
 
   /* "smelly/client.py":194
- * 
+ *
  * def report_device_attributes(mode: int, char: int) -> None:
  *     x = CSI             # <<<<<<<<<<<<<<
  *     if char:
@@ -7370,7 +7370,7 @@ static PyObject *__pyx_pf_6smelly_6client_86report_device_attributes(CYTHON_UNUS
  *     if mode:
  *         x += str(mode)             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{x}c')
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_mode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 198, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -7393,8 +7393,8 @@ static PyObject *__pyx_pf_6smelly_6client_86report_device_attributes(CYTHON_UNUS
  *     if mode:
  *         x += str(mode)
  *     write(f'{CSI}{x}c')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_write); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -7445,8 +7445,8 @@ static PyObject *__pyx_pf_6smelly_6client_86report_device_attributes(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":193
- * 
- * 
+ *
+ *
  * def report_device_attributes(mode: int, char: int) -> None:             # <<<<<<<<<<<<<<
  *     x = CSI
  *     if char:
@@ -7471,11 +7471,11 @@ static PyObject *__pyx_pf_6smelly_6client_86report_device_attributes(CYTHON_UNUS
 }
 
 /* "smelly/client.py":202
- * 
- * 
+ *
+ *
  * def screen_decsace(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{mode}*x')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7508,11 +7508,11 @@ static PyObject *__pyx_pf_6smelly_6client_88screen_decsace(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("screen_decsace", 0);
 
   /* "smelly/client.py":203
- * 
+ *
  * def screen_decsace(mode: int) -> None:
  *     write(f'{CSI}{mode}*x')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7563,11 +7563,11 @@ static PyObject *__pyx_pf_6smelly_6client_88screen_decsace(CYTHON_UNUSED PyObjec
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":202
- * 
- * 
+ *
+ *
  * def screen_decsace(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{mode}*x')
- * 
+ *
  */
 
   /* function exit code */
@@ -7588,11 +7588,11 @@ static PyObject *__pyx_pf_6smelly_6client_88screen_decsace(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/client.py":206
- * 
- * 
+ *
+ *
  * def screen_set_8bit_controls(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'\x1b {"G" if mode else "F"}')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7623,11 +7623,11 @@ static PyObject *__pyx_pf_6smelly_6client_90screen_set_8bit_controls(CYTHON_UNUS
   __Pyx_RefNannySetupContext("screen_set_8bit_controls", 0);
 
   /* "smelly/client.py":207
- * 
+ *
  * def screen_set_8bit_controls(mode: int) -> None:
  *     write(f'\x1b {"G" if mode else "F"}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7664,11 +7664,11 @@ static PyObject *__pyx_pf_6smelly_6client_90screen_set_8bit_controls(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":206
- * 
- * 
+ *
+ *
  * def screen_set_8bit_controls(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'\x1b {"G" if mode else "F"}')
- * 
+ *
  */
 
   /* function exit code */
@@ -7688,8 +7688,8 @@ static PyObject *__pyx_pf_6smelly_6client_90screen_set_8bit_controls(CYTHON_UNUS
 }
 
 /* "smelly/client.py":210
- * 
- * 
+ *
+ *
  * def write_osc(code: int, string: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if string:
  *         write(f'{OSC}{code};{string}\x07')
@@ -7786,7 +7786,7 @@ static PyObject *__pyx_pf_6smelly_6client_92write_osc(CYTHON_UNUSED PyObject *__
   __Pyx_RefNannySetupContext("write_osc", 0);
 
   /* "smelly/client.py":211
- * 
+ *
  * def write_osc(code: int, string: str = '') -> None:
  *     if string:             # <<<<<<<<<<<<<<
  *         write(f'{OSC}{code};{string}\x07')
@@ -7862,7 +7862,7 @@ static PyObject *__pyx_pf_6smelly_6client_92write_osc(CYTHON_UNUSED PyObject *__
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly/client.py":211
- * 
+ *
  * def write_osc(code: int, string: str = '') -> None:
  *     if string:             # <<<<<<<<<<<<<<
  *         write(f'{OSC}{code};{string}\x07')
@@ -7875,8 +7875,8 @@ static PyObject *__pyx_pf_6smelly_6client_92write_osc(CYTHON_UNUSED PyObject *__
  *         write(f'{OSC}{code};{string}\x07')
  *     else:
  *         write(f'{OSC}{code}\x07')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*else*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_write); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
@@ -7930,8 +7930,8 @@ static PyObject *__pyx_pf_6smelly_6client_92write_osc(CYTHON_UNUSED PyObject *__
   __pyx_L3:;
 
   /* "smelly/client.py":210
- * 
- * 
+ *
+ *
  * def write_osc(code: int, string: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if string:
  *         write(f'{OSC}{code};{string}\x07')
@@ -7955,11 +7955,11 @@ static PyObject *__pyx_pf_6smelly_6client_92write_osc(CYTHON_UNUSED PyObject *__
 }
 
 /* "smelly/client.py":221
- * 
- * 
+ *
+ *
  * def shell_prompt_marking(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     write_osc(133, payload)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7998,11 +7998,11 @@ static PyObject *__pyx_pf_6smelly_6client_94shell_prompt_marking(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("shell_prompt_marking", 0);
 
   /* "smelly/client.py":222
- * 
+ *
  * def shell_prompt_marking(payload: str) -> None:
  *     write_osc(133, payload)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write_osc); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8054,11 +8054,11 @@ static PyObject *__pyx_pf_6smelly_6client_94shell_prompt_marking(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":221
- * 
- * 
+ *
+ *
  * def shell_prompt_marking(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     write_osc(133, payload)
- * 
+ *
  */
 
   /* function exit code */
@@ -8078,8 +8078,8 @@ static PyObject *__pyx_pf_6smelly_6client_94shell_prompt_marking(CYTHON_UNUSED P
 }
 
 /* "smelly/client.py":225
- * 
- * 
+ *
+ *
  * def clipboard_control(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     global clipboard_control_pending
  *     code, data = payload.split(';', 1)
@@ -8146,11 +8146,11 @@ static PyObject *__pyx_pf_6smelly_6client_96clipboard_control(CYTHON_UNUSED PyOb
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -8349,7 +8349,7 @@ static PyObject *__pyx_pf_6smelly_6client_96clipboard_control(CYTHON_UNUSED PyOb
  *         payload = clipboard_control_pending
  *         clipboard_control_pending = ''             # <<<<<<<<<<<<<<
  *     write(f'{OSC}{payload}\x07')
- * 
+ *
  */
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_clipboard_control_pending, __pyx_kp_s__7) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
 
@@ -8366,8 +8366,8 @@ static PyObject *__pyx_pf_6smelly_6client_96clipboard_control(CYTHON_UNUSED PyOb
  *         payload = clipboard_control_pending
  *         clipboard_control_pending = ''
  *     write(f'{OSC}{payload}\x07')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_write); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 238, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8418,8 +8418,8 @@ static PyObject *__pyx_pf_6smelly_6client_96clipboard_control(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":225
- * 
- * 
+ *
+ *
  * def clipboard_control(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     global clipboard_control_pending
  *     code, data = payload.split(';', 1)
@@ -8446,8 +8446,8 @@ static PyObject *__pyx_pf_6smelly_6client_96clipboard_control(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/client.py":241
- * 
- * 
+ *
+ *
  * def replay(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     specials = {
  *         'draw',
@@ -8663,11 +8663,11 @@ static PyObject *__pyx_pf_6smelly_6client_98replay(CYTHON_UNUSED PyObject *__pyx
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_1);
         __Pyx_INCREF(__pyx_t_7);
@@ -8759,7 +8759,7 @@ static PyObject *__pyx_pf_6smelly_6client_98replay(CYTHON_UNUSED PyObject *__pyx
  *             else:
  *                 r = map(int, rest.split()) if rest else ()             # <<<<<<<<<<<<<<
  *                 globals()[cmd](*r)
- * 
+ *
  */
       /*else*/ {
         __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_rest); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 258, __pyx_L1_error)
@@ -8805,8 +8805,8 @@ static PyObject *__pyx_pf_6smelly_6client_98replay(CYTHON_UNUSED PyObject *__pyx
  *             else:
  *                 r = map(int, rest.split()) if rest else ()
  *                 globals()[cmd](*r)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_6 = __Pyx_Globals(); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 259, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
@@ -8843,8 +8843,8 @@ static PyObject *__pyx_pf_6smelly_6client_98replay(CYTHON_UNUSED PyObject *__pyx
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":241
- * 
- * 
+ *
+ *
  * def replay(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     specials = {
  *         'draw',
@@ -8873,8 +8873,8 @@ static PyObject *__pyx_pf_6smelly_6client_98replay(CYTHON_UNUSED PyObject *__pyx
 }
 
 /* "smelly/client.py":262
- * 
- * 
+ *
+ *
  * def main(path: str) -> None:             # <<<<<<<<<<<<<<
  *     with open(path) as f:
  *         raw = f.read()
@@ -8924,7 +8924,7 @@ static PyObject *__pyx_pf_6smelly_6client_100main(CYTHON_UNUSED PyObject *__pyx_
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "smelly/client.py":263
- * 
+ *
  * def main(path: str) -> None:
  *     with open(path) as f:             # <<<<<<<<<<<<<<
  *         raw = f.read()
@@ -8995,7 +8995,7 @@ static PyObject *__pyx_pf_6smelly_6client_100main(CYTHON_UNUSED PyObject *__pyx_
           __pyx_t_4 = 0;
 
           /* "smelly/client.py":263
- * 
+ *
  * def main(path: str) -> None:
  *     with open(path) as f:             # <<<<<<<<<<<<<<
  *         raw = f.read()
@@ -9033,7 +9033,7 @@ static PyObject *__pyx_pf_6smelly_6client_100main(CYTHON_UNUSED PyObject *__pyx_
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_3);
-            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 263, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9192,7 +9192,7 @@ static PyObject *__pyx_pf_6smelly_6client_100main(CYTHON_UNUSED PyObject *__pyx_
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_4);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_4);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0;
             __PYX_ERR(0, 266, __pyx_L23_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -9235,8 +9235,8 @@ static PyObject *__pyx_pf_6smelly_6client_100main(CYTHON_UNUSED PyObject *__pyx_
   }
 
   /* "smelly/client.py":262
- * 
- * 
+ *
+ *
  * def main(path: str) -> None:             # <<<<<<<<<<<<<<
  *     with open(path) as f:
  *         raw = f.read()
@@ -9511,7 +9511,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_slice__17);
 
   /* "smelly/client.py":263
- * 
+ *
  * def main(path: str) -> None:
  *     with open(path) as f:             # <<<<<<<<<<<<<<
  *         raw = f.read()
@@ -9532,8 +9532,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__19);
 
   /* "smelly/client.py":18
- * 
- * 
+ *
+ *
  * def write(x: str) -> None:             # <<<<<<<<<<<<<<
  *     sys.stdout.write(x)
  *     sys.stdout.flush()
@@ -9544,11 +9544,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_write, 18, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 18, __pyx_L1_error)
 
   /* "smelly/client.py":23
- * 
- * 
+ *
+ *
  * def set_title(*args: Any) -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_args); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
@@ -9556,11 +9556,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_set_title, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "smelly/client.py":27
- * 
- * 
+ *
+ *
  * def set_icon(*args: Any) -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_tuple__26 = PyTuple_Pack(1, __pyx_n_s_args); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
@@ -9568,38 +9568,38 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_set_icon, 27, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 27, __pyx_L1_error)
 
   /* "smelly/client.py":31
- * 
- * 
+ *
+ *
  * def screen_bell() -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_bell, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 31, __pyx_L1_error)
 
   /* "smelly/client.py":35
- * 
- * 
+ *
+ *
  * def screen_normal_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b>')
- * 
+ *
  */
   __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_normal_keypad_mode, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 35, __pyx_L1_error)
 
   /* "smelly/client.py":39
- * 
- * 
+ *
+ *
  * def screen_alternate_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b=')
- * 
+ *
  */
   __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_alternate_keypad_mode, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 39, __pyx_L1_error)
 
   /* "smelly/client.py":43
- * 
- * 
+ *
+ *
  * def screen_cursor_position(y: int, x: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{y};{x}H')
- * 
+ *
  */
   __pyx_tuple__31 = PyTuple_Pack(2, __pyx_n_s_y, __pyx_n_s_x); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
@@ -9607,11 +9607,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_cursor_position, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "smelly/client.py":47
- * 
- * 
+ *
+ *
  * def screen_cursor_forward(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}C')
- * 
+ *
  */
   __pyx_tuple__33 = PyTuple_Pack(1, __pyx_n_s_amt); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
@@ -9619,29 +9619,29 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_cursor_forward, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 47, __pyx_L1_error)
 
   /* "smelly/client.py":51
- * 
- * 
+ *
+ *
  * def screen_save_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b7')
- * 
+ *
  */
   __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_save_cursor, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 51, __pyx_L1_error)
 
   /* "smelly/client.py":55
- * 
- * 
+ *
+ *
  * def screen_restore_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b8')
- * 
+ *
  */
   __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_restore_cursor, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 55, __pyx_L1_error)
 
   /* "smelly/client.py":59
- * 
- * 
+ *
+ *
  * def screen_cursor_back1(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}D')
- * 
+ *
  */
   __pyx_tuple__37 = PyTuple_Pack(1, __pyx_n_s_amt); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
@@ -9649,26 +9649,26 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_cursor_back1, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "smelly/client.py":63
- * 
- * 
+ *
+ *
  * def screen_save_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?s')
- * 
+ *
  */
   __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_save_modes, 63, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 63, __pyx_L1_error)
 
   /* "smelly/client.py":67
- * 
- * 
+ *
+ *
  * def screen_restore_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?r')
- * 
+ *
  */
   __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_restore_modes, 67, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 67, __pyx_L1_error)
 
   /* "smelly/client.py":71
- * 
- * 
+ *
+ *
  * def screen_designate_charset(which: int, to: int) -> None:             # <<<<<<<<<<<<<<
  *     w = '()'[int(which)]
  *     t = chr(int(to))
@@ -9679,11 +9679,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_designate_charset, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 71, __pyx_L1_error)
 
   /* "smelly/client.py":77
- * 
- * 
+ *
+ *
  * def select_graphic_rendition(*a: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{";".join(map(str, a))}m')
- * 
+ *
  */
   __pyx_tuple__43 = PyTuple_Pack(1, __pyx_n_s_a); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__43);
@@ -9691,11 +9691,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_select_graphic_rendition, 77, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 77, __pyx_L1_error)
 
   /* "smelly/client.py":81
- * 
- * 
+ *
+ *
  * def screen_cursor_to_column(c: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{c}G')
- * 
+ *
  */
   __pyx_tuple__45 = PyTuple_Pack(1, __pyx_n_s_c); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
@@ -9703,11 +9703,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_cursor_to_column, 81, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 81, __pyx_L1_error)
 
   /* "smelly/client.py":85
- * 
- * 
+ *
+ *
  * def screen_cursor_to_line(ln: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{ln}d')
- * 
+ *
  */
   __pyx_tuple__47 = PyTuple_Pack(1, __pyx_n_s_ln); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__47);
@@ -9715,11 +9715,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_cursor_to_line, 85, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 85, __pyx_L1_error)
 
   /* "smelly/client.py":89
- * 
- * 
+ *
+ *
  * def screen_set_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}h')
- * 
+ *
  */
   __pyx_tuple__49 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_private); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__49);
@@ -9727,11 +9727,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_set_mode, 89, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) __PYX_ERR(0, 89, __pyx_L1_error)
 
   /* "smelly/client.py":93
- * 
- * 
+ *
+ *
  * def screen_save_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}s')
- * 
+ *
  */
   __pyx_tuple__51 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_private); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__51);
@@ -9739,11 +9739,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_save_mode, 93, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(0, 93, __pyx_L1_error)
 
   /* "smelly/client.py":97
- * 
- * 
+ *
+ *
  * def screen_reset_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}l')
- * 
+ *
  */
   __pyx_tuple__53 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_private); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__53);
@@ -9751,11 +9751,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_reset_mode, 97, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 97, __pyx_L1_error)
 
   /* "smelly/client.py":101
- * 
- * 
+ *
+ *
  * def screen_restore_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}r')
- * 
+ *
  */
   __pyx_tuple__55 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_private); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__55);
@@ -9763,11 +9763,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_restore_mode, 101, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) __PYX_ERR(0, 101, __pyx_L1_error)
 
   /* "smelly/client.py":105
- * 
- * 
+ *
+ *
  * def screen_set_margins(t: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{t};{b}r')
- * 
+ *
  */
   __pyx_tuple__57 = PyTuple_Pack(2, __pyx_n_s_t, __pyx_n_s_b); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__57);
@@ -9775,11 +9775,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__58 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__57, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_set_margins, 105, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__58)) __PYX_ERR(0, 105, __pyx_L1_error)
 
   /* "smelly/client.py":109
- * 
- * 
+ *
+ *
  * def screen_indexn(n: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{n}S')
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(1, __pyx_n_s_n); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
@@ -9787,11 +9787,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_indexn, 109, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 109, __pyx_L1_error)
 
   /* "smelly/client.py":113
- * 
- * 
+ *
+ *
  * def screen_delete_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}P')
- * 
+ *
  */
   __pyx_tuple__61 = PyTuple_Pack(1, __pyx_n_s_count); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
@@ -9799,11 +9799,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_delete_characters, 113, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 113, __pyx_L1_error)
 
   /* "smelly/client.py":117
- * 
- * 
+ *
+ *
  * def screen_push_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#P')
- * 
+ *
  */
   __pyx_tuple__63 = PyTuple_Pack(1, __pyx_n_s_which); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
@@ -9811,11 +9811,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_push_colors, 117, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 117, __pyx_L1_error)
 
   /* "smelly/client.py":121
- * 
- * 
+ *
+ *
  * def screen_pop_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#Q')
- * 
+ *
  */
   __pyx_tuple__65 = PyTuple_Pack(1, __pyx_n_s_which); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__65);
@@ -9823,20 +9823,20 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__66 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__65, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_pop_colors, 121, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__66)) __PYX_ERR(0, 121, __pyx_L1_error)
 
   /* "smelly/client.py":125
- * 
- * 
+ *
+ *
  * def screen_report_colors() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}#R')
- * 
+ *
  */
   __pyx_codeobj__67 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_report_colors, 125, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__67)) __PYX_ERR(0, 125, __pyx_L1_error)
 
   /* "smelly/client.py":129
- * 
- * 
+ *
+ *
  * def screen_repeat_character(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}b')
- * 
+ *
  */
   __pyx_tuple__68 = PyTuple_Pack(1, __pyx_n_s_num); if (unlikely(!__pyx_tuple__68)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__68);
@@ -9844,11 +9844,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__69 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__68, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_repeat_character, 129, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__69)) __PYX_ERR(0, 129, __pyx_L1_error)
 
   /* "smelly/client.py":133
- * 
- * 
+ *
+ *
  * def screen_insert_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}@')
- * 
+ *
  */
   __pyx_tuple__70 = PyTuple_Pack(1, __pyx_n_s_count); if (unlikely(!__pyx_tuple__70)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__70);
@@ -9856,11 +9856,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__71 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__70, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_insert_characters, 133, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__71)) __PYX_ERR(0, 133, __pyx_L1_error)
 
   /* "smelly/client.py":137
- * 
- * 
+ *
+ *
  * def screen_scroll(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}S')
- * 
+ *
  */
   __pyx_tuple__72 = PyTuple_Pack(1, __pyx_n_s_count); if (unlikely(!__pyx_tuple__72)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__72);
@@ -9868,11 +9868,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__73 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__72, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_scroll, 137, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__73)) __PYX_ERR(0, 137, __pyx_L1_error)
 
   /* "smelly/client.py":141
- * 
- * 
+ *
+ *
  * def screen_erase_in_display(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}J')
- * 
+ *
  */
   __pyx_tuple__74 = PyTuple_Pack(2, __pyx_n_s_how, __pyx_n_s_private); if (unlikely(!__pyx_tuple__74)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__74);
@@ -9880,11 +9880,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__75 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__74, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_erase_in_display, 141, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__75)) __PYX_ERR(0, 141, __pyx_L1_error)
 
   /* "smelly/client.py":145
- * 
- * 
+ *
+ *
  * def screen_erase_in_line(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}K')
- * 
+ *
  */
   __pyx_tuple__76 = PyTuple_Pack(2, __pyx_n_s_how, __pyx_n_s_private); if (unlikely(!__pyx_tuple__76)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__76);
@@ -9892,11 +9892,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__77 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__76, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_erase_in_line, 145, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__77)) __PYX_ERR(0, 145, __pyx_L1_error)
 
   /* "smelly/client.py":149
- * 
- * 
+ *
+ *
  * def screen_delete_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}M')
- * 
+ *
  */
   __pyx_tuple__78 = PyTuple_Pack(1, __pyx_n_s_num); if (unlikely(!__pyx_tuple__78)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__78);
@@ -9904,11 +9904,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__79 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__78, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_delete_lines, 149, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__79)) __PYX_ERR(0, 149, __pyx_L1_error)
 
   /* "smelly/client.py":153
- * 
- * 
+ *
+ *
  * def screen_cursor_up2(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}A')
- * 
+ *
  */
   __pyx_tuple__80 = PyTuple_Pack(1, __pyx_n_s_count); if (unlikely(!__pyx_tuple__80)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__80);
@@ -9916,11 +9916,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__81 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__80, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_cursor_up2, 153, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__81)) __PYX_ERR(0, 153, __pyx_L1_error)
 
   /* "smelly/client.py":157
- * 
- * 
+ *
+ *
  * def screen_cursor_down(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}B')
- * 
+ *
  */
   __pyx_tuple__82 = PyTuple_Pack(1, __pyx_n_s_count); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__82);
@@ -9928,47 +9928,47 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__83 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__82, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_cursor_down, 157, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__83)) __PYX_ERR(0, 157, __pyx_L1_error)
 
   /* "smelly/client.py":161
- * 
- * 
+ *
+ *
  * def screen_carriage_return() -> None:             # <<<<<<<<<<<<<<
  *     write('\r')
- * 
+ *
  */
   __pyx_codeobj__84 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_carriage_return, 161, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__84)) __PYX_ERR(0, 161, __pyx_L1_error)
 
   /* "smelly/client.py":165
- * 
- * 
+ *
+ *
  * def screen_linefeed() -> None:             # <<<<<<<<<<<<<<
  *     write('\n')
- * 
+ *
  */
   __pyx_codeobj__85 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_linefeed, 165, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__85)) __PYX_ERR(0, 165, __pyx_L1_error)
 
   /* "smelly/client.py":169
- * 
- * 
+ *
+ *
  * def screen_tab() -> None:             # <<<<<<<<<<<<<<
  *     write('\t')
- * 
+ *
  */
   __pyx_codeobj__86 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_tab, 169, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__86)) __PYX_ERR(0, 169, __pyx_L1_error)
 
   /* "smelly/client.py":173
- * 
- * 
+ *
+ *
  * def screen_backspace() -> None:             # <<<<<<<<<<<<<<
  *     write('\x08')
- * 
+ *
  */
   __pyx_codeobj__87 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_backspace, 173, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__87)) __PYX_ERR(0, 173, __pyx_L1_error)
 
   /* "smelly/client.py":177
- * 
- * 
+ *
+ *
  * def screen_set_cursor(mode: int, secondary: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{secondary} q')
- * 
+ *
  */
   __pyx_tuple__88 = PyTuple_Pack(2, __pyx_n_s_mode, __pyx_n_s_secondary); if (unlikely(!__pyx_tuple__88)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__88);
@@ -9976,11 +9976,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__89 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__88, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_set_cursor, 177, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__89)) __PYX_ERR(0, 177, __pyx_L1_error)
 
   /* "smelly/client.py":181
- * 
- * 
+ *
+ *
  * def screen_insert_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}L')
- * 
+ *
  */
   __pyx_tuple__90 = PyTuple_Pack(1, __pyx_n_s_num); if (unlikely(!__pyx_tuple__90)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__90);
@@ -9988,11 +9988,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__91 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__90, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_insert_lines, 181, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__91)) __PYX_ERR(0, 181, __pyx_L1_error)
 
   /* "smelly/client.py":185
- * 
- * 
+ *
+ *
  * def draw(*a: str) -> None:             # <<<<<<<<<<<<<<
  *     write(' '.join(a))
- * 
+ *
  */
   __pyx_tuple__92 = PyTuple_Pack(1, __pyx_n_s_a); if (unlikely(!__pyx_tuple__92)) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__92);
@@ -10000,11 +10000,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__93 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__92, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_draw, 185, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__93)) __PYX_ERR(0, 185, __pyx_L1_error)
 
   /* "smelly/client.py":189
- * 
- * 
+ *
+ *
  * def screen_manipulate_title_stack(op: int, which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{op};{which}t')
- * 
+ *
  */
   __pyx_tuple__94 = PyTuple_Pack(2, __pyx_n_s_op, __pyx_n_s_which); if (unlikely(!__pyx_tuple__94)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__94);
@@ -10012,8 +10012,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__95 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__94, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_manipulate_title_stack, 189, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__95)) __PYX_ERR(0, 189, __pyx_L1_error)
 
   /* "smelly/client.py":193
- * 
- * 
+ *
+ *
  * def report_device_attributes(mode: int, char: int) -> None:             # <<<<<<<<<<<<<<
  *     x = CSI
  *     if char:
@@ -10024,11 +10024,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__97 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__96, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_report_device_attributes, 193, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__97)) __PYX_ERR(0, 193, __pyx_L1_error)
 
   /* "smelly/client.py":202
- * 
- * 
+ *
+ *
  * def screen_decsace(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{mode}*x')
- * 
+ *
  */
   __pyx_tuple__98 = PyTuple_Pack(1, __pyx_n_s_mode); if (unlikely(!__pyx_tuple__98)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__98);
@@ -10036,11 +10036,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__99 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__98, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_decsace, 202, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__99)) __PYX_ERR(0, 202, __pyx_L1_error)
 
   /* "smelly/client.py":206
- * 
- * 
+ *
+ *
  * def screen_set_8bit_controls(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'\x1b {"G" if mode else "F"}')
- * 
+ *
  */
   __pyx_tuple__100 = PyTuple_Pack(1, __pyx_n_s_mode); if (unlikely(!__pyx_tuple__100)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__100);
@@ -10048,8 +10048,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__101 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__100, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_screen_set_8bit_controls, 206, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__101)) __PYX_ERR(0, 206, __pyx_L1_error)
 
   /* "smelly/client.py":210
- * 
- * 
+ *
+ *
  * def write_osc(code: int, string: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if string:
  *         write(f'{OSC}{code};{string}\x07')
@@ -10063,11 +10063,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__104);
 
   /* "smelly/client.py":221
- * 
- * 
+ *
+ *
  * def shell_prompt_marking(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     write_osc(133, payload)
- * 
+ *
  */
   __pyx_tuple__105 = PyTuple_Pack(1, __pyx_n_s_payload); if (unlikely(!__pyx_tuple__105)) __PYX_ERR(0, 221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__105);
@@ -10075,8 +10075,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__106 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__105, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_shell_prompt_marking, 221, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__106)) __PYX_ERR(0, 221, __pyx_L1_error)
 
   /* "smelly/client.py":225
- * 
- * 
+ *
+ *
  * def clipboard_control(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     global clipboard_control_pending
  *     code, data = payload.split(';', 1)
@@ -10087,8 +10087,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__108 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__107, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_clipboard_control, 225, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__108)) __PYX_ERR(0, 225, __pyx_L1_error)
 
   /* "smelly/client.py":241
- * 
- * 
+ *
+ *
  * def replay(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     specials = {
  *         'draw',
@@ -10099,8 +10099,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__110 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__109, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_client_py, __pyx_n_s_replay, 241, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__110)) __PYX_ERR(0, 241, __pyx_L1_error)
 
   /* "smelly/client.py":262
- * 
- * 
+ *
+ *
  * def main(path: str) -> None:             # <<<<<<<<<<<<<<
  *     with open(path) as f:
  *         raw = f.read()
@@ -10395,7 +10395,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/client.py":10
  * # will replay the commands and pause at the end waiting for user to press enter
- * 
+ *
  * import sys             # <<<<<<<<<<<<<<
  * from contextlib import suppress
  * from typing import Any
@@ -10406,11 +10406,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":11
- * 
+ *
  * import sys
  * from contextlib import suppress             # <<<<<<<<<<<<<<
  * from typing import Any
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10430,7 +10430,7 @@ if (!__Pyx_RefNanny) {
  * import sys
  * from contextlib import suppress
  * from typing import Any             # <<<<<<<<<<<<<<
- * 
+ *
  * CSI = '\x1b['
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -10449,25 +10449,25 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/client.py":14
  * from typing import Any
- * 
+ *
  * CSI = '\x1b['             # <<<<<<<<<<<<<<
  * OSC = '\x1b]'
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CSI, __pyx_kp_s__20) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
 
   /* "smelly/client.py":15
- * 
+ *
  * CSI = '\x1b['
  * OSC = '\x1b]'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_OSC, __pyx_kp_s__21) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
 
   /* "smelly/client.py":18
- * 
- * 
+ *
+ *
  * def write(x: str) -> None:             # <<<<<<<<<<<<<<
  *     sys.stdout.write(x)
  *     sys.stdout.flush()
@@ -10484,11 +10484,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":23
- * 
- * 
+ *
+ *
  * def set_title(*args: Any) -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10505,11 +10505,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":27
- * 
- * 
+ *
+ *
  * def set_icon(*args: Any) -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10526,11 +10526,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":31
- * 
- * 
+ *
+ *
  * def screen_bell() -> None:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10543,11 +10543,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":35
- * 
- * 
+ *
+ *
  * def screen_normal_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b>')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10560,11 +10560,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":39
- * 
- * 
+ *
+ *
  * def screen_alternate_keypad_mode() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b=')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10577,11 +10577,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":43
- * 
- * 
+ *
+ *
  * def screen_cursor_position(y: int, x: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{y};{x}H')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10596,11 +10596,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":47
- * 
- * 
+ *
+ *
  * def screen_cursor_forward(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}C')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10614,11 +10614,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":51
- * 
- * 
+ *
+ *
  * def screen_save_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b7')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10631,11 +10631,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":55
- * 
- * 
+ *
+ *
  * def screen_restore_cursor() -> None:             # <<<<<<<<<<<<<<
  *     write('\x1b8')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10648,11 +10648,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":59
- * 
- * 
+ *
+ *
  * def screen_cursor_back1(amt: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{amt}D')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10666,11 +10666,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":63
- * 
- * 
+ *
+ *
  * def screen_save_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?s')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10683,11 +10683,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":67
- * 
- * 
+ *
+ *
  * def screen_restore_modes() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}?r')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10700,8 +10700,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":71
- * 
- * 
+ *
+ *
  * def screen_designate_charset(which: int, to: int) -> None:             # <<<<<<<<<<<<<<
  *     w = '()'[int(which)]
  *     t = chr(int(to))
@@ -10719,11 +10719,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":77
- * 
- * 
+ *
+ *
  * def select_graphic_rendition(*a: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{";".join(map(str, a))}m')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10737,11 +10737,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":81
- * 
- * 
+ *
+ *
  * def screen_cursor_to_column(c: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{c}G')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10755,11 +10755,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":85
- * 
- * 
+ *
+ *
  * def screen_cursor_to_line(ln: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{ln}d')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10773,11 +10773,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":89
- * 
- * 
+ *
+ *
  * def screen_set_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}h')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10792,11 +10792,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":93
- * 
- * 
+ *
+ *
  * def screen_save_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}s')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10811,11 +10811,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":97
- * 
- * 
+ *
+ *
  * def screen_reset_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}l')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10830,11 +10830,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":101
- * 
- * 
+ *
+ *
  * def screen_restore_mode(x: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{x}r')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10849,11 +10849,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":105
- * 
- * 
+ *
+ *
  * def screen_set_margins(t: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{t};{b}r')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10868,11 +10868,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":109
- * 
- * 
+ *
+ *
  * def screen_indexn(n: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{n}S')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10886,11 +10886,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":113
- * 
- * 
+ *
+ *
  * def screen_delete_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}P')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10904,11 +10904,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":117
- * 
- * 
+ *
+ *
  * def screen_push_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#P')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10922,11 +10922,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":121
- * 
- * 
+ *
+ *
  * def screen_pop_colors(which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{which}#Q')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10940,11 +10940,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":125
- * 
- * 
+ *
+ *
  * def screen_report_colors() -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}#R')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10957,11 +10957,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":129
- * 
- * 
+ *
+ *
  * def screen_repeat_character(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}b')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10975,11 +10975,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":133
- * 
- * 
+ *
+ *
  * def screen_insert_characters(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}@')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10993,11 +10993,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":137
- * 
- * 
+ *
+ *
  * def screen_scroll(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}S')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11011,11 +11011,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":141
- * 
- * 
+ *
+ *
  * def screen_erase_in_display(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}J')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11030,11 +11030,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":145
- * 
- * 
+ *
+ *
  * def screen_erase_in_line(how: int, private: bool) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{"?" if private else ""}{how}K')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11049,11 +11049,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":149
- * 
- * 
+ *
+ *
  * def screen_delete_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}M')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11067,11 +11067,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":153
- * 
- * 
+ *
+ *
  * def screen_cursor_up2(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}A')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11085,11 +11085,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":157
- * 
- * 
+ *
+ *
  * def screen_cursor_down(count: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{count}B')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11103,11 +11103,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":161
- * 
- * 
+ *
+ *
  * def screen_carriage_return() -> None:             # <<<<<<<<<<<<<<
  *     write('\r')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11120,11 +11120,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":165
- * 
- * 
+ *
+ *
  * def screen_linefeed() -> None:             # <<<<<<<<<<<<<<
  *     write('\n')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11137,11 +11137,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":169
- * 
- * 
+ *
+ *
  * def screen_tab() -> None:             # <<<<<<<<<<<<<<
  *     write('\t')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11154,11 +11154,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":173
- * 
- * 
+ *
+ *
  * def screen_backspace() -> None:             # <<<<<<<<<<<<<<
  *     write('\x08')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11171,11 +11171,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":177
- * 
- * 
+ *
+ *
  * def screen_set_cursor(mode: int, secondary: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{secondary} q')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11190,11 +11190,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":181
- * 
- * 
+ *
+ *
  * def screen_insert_lines(num: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{num}L')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11208,11 +11208,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":185
- * 
- * 
+ *
+ *
  * def draw(*a: str) -> None:             # <<<<<<<<<<<<<<
  *     write(' '.join(a))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11226,11 +11226,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":189
- * 
- * 
+ *
+ *
  * def screen_manipulate_title_stack(op: int, which: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{op};{which}t')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11245,8 +11245,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":193
- * 
- * 
+ *
+ *
  * def report_device_attributes(mode: int, char: int) -> None:             # <<<<<<<<<<<<<<
  *     x = CSI
  *     if char:
@@ -11264,11 +11264,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":202
- * 
- * 
+ *
+ *
  * def screen_decsace(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'{CSI}{mode}*x')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11282,11 +11282,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":206
- * 
- * 
+ *
+ *
  * def screen_set_8bit_controls(mode: int) -> None:             # <<<<<<<<<<<<<<
  *     write(f'\x1b {"G" if mode else "F"}')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11300,8 +11300,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":210
- * 
- * 
+ *
+ *
  * def write_osc(code: int, string: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if string:
  *         write(f'{OSC}{code};{string}\x07')
@@ -11320,11 +11320,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":217
- * 
- * 
+ *
+ *
  * set_dynamic_color = set_color_table_color = process_cwd_notification = write_osc             # <<<<<<<<<<<<<<
  * clipboard_control_pending: str = ''
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_write_osc); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11334,20 +11334,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":218
- * 
+ *
  * set_dynamic_color = set_color_table_color = process_cwd_notification = write_osc
  * clipboard_control_pending: str = ''             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_clipboard_control_pending, __pyx_kp_s__7) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
 
   /* "smelly/client.py":221
- * 
- * 
+ *
+ *
  * def shell_prompt_marking(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     write_osc(133, payload)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11361,8 +11361,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":225
- * 
- * 
+ *
+ *
  * def clipboard_control(payload: str) -> None:             # <<<<<<<<<<<<<<
  *     global clipboard_control_pending
  *     code, data = payload.split(';', 1)
@@ -11379,8 +11379,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/client.py":241
- * 
- * 
+ *
+ *
  * def replay(raw: str) -> None:             # <<<<<<<<<<<<<<
  *     specials = {
  *         'draw',
@@ -11397,8 +11397,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/client.py":262
- * 
- * 
+ *
+ *
  * def main(path: str) -> None:             # <<<<<<<<<<<<<<
  *     with open(path) as f:
  *         raw = f.read()
@@ -11417,7 +11417,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/client.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

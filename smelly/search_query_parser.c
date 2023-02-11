@@ -974,7 +974,7 @@ struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct_4_genexpr;
 
 /* "smelly/search_query_parser.py":66
  *         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -987,7 +987,7 @@ struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct__iter_token_no
 
 /* "smelly/search_query_parser.py":84
  *         return self.rhs(lhs, get_matches)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -1000,10 +1000,10 @@ struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct_1_iter_token_n
 
 /* "smelly/search_query_parser.py":100
  *         return candidates.difference(self.rhs(candidates, get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.rhs.iter_token_nodes()
- * 
+ *
  */
 struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct_2_iter_token_nodes {
   PyObject_HEAD
@@ -1013,10 +1013,10 @@ struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct_2_iter_token_n
 
 /* "smelly/search_query_parser.py":116
  *         return get_matches(self.location, self.query, candidates)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield self
- * 
+ *
  */
 struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct_3_iter_token_nodes {
   PyObject_HEAD
@@ -1028,8 +1028,8 @@ struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct_3_iter_token_n
  *      (r'\s+', None),],
  *     flags=re.DOTALL,)
  * REPLACEMENTS = tuple(('\\' + x, chr(i + 1)) for i, x in enumerate('\\"()'))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
 struct __pyx_obj_6smelly_19search_query_parser___pyx_scope_struct_4_genexpr {
   PyObject_HEAD
@@ -2913,8 +2913,8 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_10generator4(__pyx_Corou
  *      (r'\s+', None),],
  *     flags=re.DOTALL,)
  * REPLACEMENTS = tuple(('\\' + x, chr(i + 1)) for i, x in enumerate('\\"()'))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_19search_query_parser_8genexpr(CYTHON_UNUSED PyObject *__pyx_self) {
@@ -3121,7 +3121,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14ParseException_msg(CYT
  *         if len(self.args) > 0:
  *             return str(self.args[0])             # <<<<<<<<<<<<<<
  *         return ""
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_args); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -3150,8 +3150,8 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14ParseException_msg(CYT
  *         if len(self.args) > 0:
  *             return str(self.args[0])
  *         return ""             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_kp_s__4);
@@ -3180,10 +3180,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14ParseException_msg(CYT
 
 /* "smelly/search_query_parser.py":39
  *     type = ExpressionType.OR
- * 
+ *
  *     def __init__(self, type: ExpressionType) -> None:             # <<<<<<<<<<<<<<
  *         self.type = type
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3260,20 +3260,20 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode___init_
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/search_query_parser.py":40
- * 
+ *
  *     def __init__(self, type: ExpressionType) -> None:
  *         self.type = type             # <<<<<<<<<<<<<<
- * 
+ *
  *     def search(self, universal_set: Set[T],
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_type, __pyx_v_type) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":39
  *     type = ExpressionType.OR
- * 
+ *
  *     def __init__(self, type: ExpressionType) -> None:             # <<<<<<<<<<<<<<
  *         self.type = type
- * 
+ *
  */
 
   /* function exit code */
@@ -3290,7 +3290,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode___init_
 
 /* "smelly/search_query_parser.py":42
  *         self.type = type
- * 
+ *
  *     def search(self, universal_set: Set[T],             # <<<<<<<<<<<<<<
  *                get_matches: GetMatches[T]) -> Set[T]:
  *         return self(universal_set, get_matches)
@@ -3389,7 +3389,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_2search
  *     def search(self, universal_set: Set[T],
  *                get_matches: GetMatches[T]) -> Set[T]:
  *         return self(universal_set, get_matches)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3445,7 +3445,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_2search
 
   /* "smelly/search_query_parser.py":42
  *         self.type = type
- * 
+ *
  *     def search(self, universal_set: Set[T],             # <<<<<<<<<<<<<<
  *                get_matches: GetMatches[T]) -> Set[T]:
  *         return self(universal_set, get_matches)
@@ -3467,7 +3467,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_2search
 
 /* "smelly/search_query_parser.py":46
  *         return self(universal_set, get_matches)
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -3562,7 +3562,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_4__call
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
  *         return set()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3574,7 +3574,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_4__call
 
   /* "smelly/search_query_parser.py":46
  *         return self(universal_set, get_matches)
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -3593,10 +3593,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_4__call
 
 /* "smelly/search_query_parser.py":51
  *         return set()
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         return iter(())
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3623,11 +3623,11 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_6iter_t
   __Pyx_RefNannySetupContext("iter_token_nodes", 0);
 
   /* "smelly/search_query_parser.py":52
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  *         return iter(())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyObject_GetIter(__pyx_empty_tuple); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
@@ -3638,10 +3638,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_6iter_t
 
   /* "smelly/search_query_parser.py":51
  *         return set()
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         return iter(())
- * 
+ *
  */
 
   /* function exit code */
@@ -3656,7 +3656,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_14SearchTreeNode_6iter_t
 }
 
 /* "smelly/search_query_parser.py":56
- * 
+ *
  * class OrNode(SearchTreeNode):
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
@@ -3752,7 +3752,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6OrNode___init__(CYTHON_
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
  *         self.lhs = lhs             # <<<<<<<<<<<<<<
  *         self.rhs = rhs
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lhs, __pyx_v_lhs) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
 
@@ -3760,13 +3760,13 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6OrNode___init__(CYTHON_
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
  *         self.lhs = lhs
  *         self.rhs = rhs             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_rhs, __pyx_v_rhs) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":56
- * 
+ *
  * class OrNode(SearchTreeNode):
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
@@ -3787,7 +3787,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6OrNode___init__(CYTHON_
 
 /* "smelly/search_query_parser.py":60
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -3891,7 +3891,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6OrNode_2__call__(CYTHON
  *             get_matches: GetMatches[T]) -> Set[T]:
  *         lhs = self.lhs(candidates, get_matches)             # <<<<<<<<<<<<<<
  *         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lhs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3947,7 +3947,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6OrNode_2__call__(CYTHON
  *             get_matches: GetMatches[T]) -> Set[T]:
  *         lhs = self.lhs(candidates, get_matches)
  *         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4041,7 +4041,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6OrNode_2__call__(CYTHON
 
   /* "smelly/search_query_parser.py":60
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -4068,7 +4068,7 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_6OrNode_6generator(__pyx
 
 /* "smelly/search_query_parser.py":66
  *         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -4148,11 +4148,11 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_6OrNode_6generator(__pyx
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 66, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":67
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  *         yield from self.lhs.iter_token_nodes()             # <<<<<<<<<<<<<<
  *         yield from self.rhs.iter_token_nodes()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_lhs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4198,8 +4198,8 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_6OrNode_6generator(__pyx
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_rhs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4244,7 +4244,7 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_6OrNode_6generator(__pyx
 
   /* "smelly/search_query_parser.py":66
  *         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -4271,7 +4271,7 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_6OrNode_6generator(__pyx
 
 /* "smelly/search_query_parser.py":74
  *     type = ExpressionType.AND
- * 
+ *
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
  *         self.rhs = rhs
@@ -4362,11 +4362,11 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7AndNode___init__(CYTHON
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/search_query_parser.py":75
- * 
+ *
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
  *         self.lhs = lhs             # <<<<<<<<<<<<<<
  *         self.rhs = rhs
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lhs, __pyx_v_lhs) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
 
@@ -4374,14 +4374,14 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7AndNode___init__(CYTHON
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
  *         self.lhs = lhs
  *         self.rhs = rhs             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_rhs, __pyx_v_rhs) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":74
  *     type = ExpressionType.AND
- * 
+ *
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
  *         self.rhs = rhs
@@ -4401,7 +4401,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7AndNode___init__(CYTHON
 
 /* "smelly/search_query_parser.py":78
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -4502,7 +4502,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7AndNode_2__call__(CYTHO
  *             get_matches: GetMatches[T]) -> Set[T]:
  *         lhs = self.lhs(candidates, get_matches)             # <<<<<<<<<<<<<<
  *         return self.rhs(lhs, get_matches)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lhs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4558,7 +4558,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7AndNode_2__call__(CYTHO
  *             get_matches: GetMatches[T]) -> Set[T]:
  *         lhs = self.lhs(candidates, get_matches)
  *         return self.rhs(lhs, get_matches)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4615,7 +4615,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7AndNode_2__call__(CYTHO
 
   /* "smelly/search_query_parser.py":78
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -4639,7 +4639,7 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7AndNode_6generator1(__p
 
 /* "smelly/search_query_parser.py":84
  *         return self.rhs(lhs, get_matches)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -4719,11 +4719,11 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7AndNode_6generator1(__p
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 84, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":85
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  *         yield from self.lhs.iter_token_nodes()             # <<<<<<<<<<<<<<
  *         yield from self.rhs.iter_token_nodes()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_lhs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4769,8 +4769,8 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7AndNode_6generator1(__p
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_rhs); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4815,7 +4815,7 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7AndNode_6generator1(__p
 
   /* "smelly/search_query_parser.py":84
  *         return self.rhs(lhs, get_matches)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -4842,10 +4842,10 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7AndNode_6generator1(__p
 
 /* "smelly/search_query_parser.py":92
  *     type = ExpressionType.NOT
- * 
+ *
  *     def __init__(self, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.rhs = rhs
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4922,20 +4922,20 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7NotNode___init__(CYTHON
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/search_query_parser.py":93
- * 
+ *
  *     def __init__(self, rhs: SearchTreeNode) -> None:
  *         self.rhs = rhs             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_rhs, __pyx_v_rhs) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":92
  *     type = ExpressionType.NOT
- * 
+ *
  *     def __init__(self, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.rhs = rhs
- * 
+ *
  */
 
   /* function exit code */
@@ -4952,7 +4952,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7NotNode___init__(CYTHON
 
 /* "smelly/search_query_parser.py":95
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -5053,7 +5053,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7NotNode_2__call__(CYTHO
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
  *         return candidates.difference(self.rhs(candidates, get_matches))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5128,7 +5128,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_7NotNode_2__call__(CYTHO
 
   /* "smelly/search_query_parser.py":95
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -5153,10 +5153,10 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7NotNode_6generator2(__p
 
 /* "smelly/search_query_parser.py":100
  *         return candidates.difference(self.rhs(candidates, get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.rhs.iter_token_nodes()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5232,11 +5232,11 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7NotNode_6generator2(__p
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 100, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":101
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  *         yield from self.rhs.iter_token_nodes()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_rhs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5281,10 +5281,10 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7NotNode_6generator2(__p
 
   /* "smelly/search_query_parser.py":100
  *         return candidates.difference(self.rhs(candidates, get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.rhs.iter_token_nodes()
- * 
+ *
  */
 
   /* function exit code */
@@ -5308,7 +5308,7 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_7NotNode_6generator2(__p
 
 /* "smelly/search_query_parser.py":107
  *     type = ExpressionType.TOKEN
- * 
+ *
  *     def __init__(self, location: str, query: str) -> None:             # <<<<<<<<<<<<<<
  *         self.location = location
  *         self.query = query
@@ -5405,11 +5405,11 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_9TokenNode___init__(CYTH
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/search_query_parser.py":108
- * 
+ *
  *     def __init__(self, location: str, query: str) -> None:
  *         self.location = location             # <<<<<<<<<<<<<<
  *         self.query = query
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_location, __pyx_v_location) < 0) __PYX_ERR(0, 108, __pyx_L1_error)
 
@@ -5417,14 +5417,14 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_9TokenNode___init__(CYTH
  *     def __init__(self, location: str, query: str) -> None:
  *         self.location = location
  *         self.query = query             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_query, __pyx_v_query) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":107
  *     type = ExpressionType.TOKEN
- * 
+ *
  *     def __init__(self, location: str, query: str) -> None:             # <<<<<<<<<<<<<<
  *         self.location = location
  *         self.query = query
@@ -5444,7 +5444,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_9TokenNode___init__(CYTH
 
 /* "smelly/search_query_parser.py":111
  *         self.query = query
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -5545,7 +5545,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_9TokenNode_2__call__(CYT
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
  *         return get_matches(self.location, self.query, candidates)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5612,7 +5612,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_9TokenNode_2__call__(CYT
 
   /* "smelly/search_query_parser.py":111
  *         self.query = query
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -5637,10 +5637,10 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_9TokenNode_6generator3(_
 
 /* "smelly/search_query_parser.py":116
  *         return get_matches(self.location, self.query, candidates)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield self
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5713,11 +5713,11 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_9TokenNode_6generator3(_
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 116, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":117
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:
  *         yield self             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_self);
   __pyx_r = __pyx_cur_scope->__pyx_v_self;
@@ -5733,10 +5733,10 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_9TokenNode_6generator3(_
 
   /* "smelly/search_query_parser.py":116
  *         return get_matches(self.location, self.query, candidates)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield self
- * 
+ *
  */
 
   /* function exit code */
@@ -5756,7 +5756,7 @@ static PyObject *__pyx_gb_6smelly_19search_query_parser_9TokenNode_6generator3(_
 }
 
 /* "smelly/search_query_parser.py":138
- * 
+ *
  * class Parser:
  *     def __init__(self, allow_no_location: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token = 0
@@ -5855,7 +5855,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser___init__(CYTHON_
  *         self.current_token = 0
  *         self.tokens: List[Token] = []             # <<<<<<<<<<<<<<
  *         self.allow_no_location = allow_no_location
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5866,13 +5866,13 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser___init__(CYTHON_
  *         self.current_token = 0
  *         self.tokens: List[Token] = []
  *         self.allow_no_location = allow_no_location             # <<<<<<<<<<<<<<
- * 
+ *
  *     def token(self, advance: bool = False) -> Optional[str]:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_allow_no_location, __pyx_v_allow_no_location) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":138
- * 
+ *
  * class Parser:
  *     def __init__(self, allow_no_location: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token = 0
@@ -5894,7 +5894,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser___init__(CYTHON_
 
 /* "smelly/search_query_parser.py":143
  *         self.allow_no_location = allow_no_location
- * 
+ *
  *     def token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -5983,7 +5983,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_2token(CYTHON_UN
   __Pyx_RefNannySetupContext("token", 0);
 
   /* "smelly/search_query_parser.py":144
- * 
+ *
  *     def token(self, advance: bool = False) -> Optional[str]:
  *         if self.is_eof():             # <<<<<<<<<<<<<<
  *             return None
@@ -6022,7 +6022,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_2token(CYTHON_UN
     goto __pyx_L0;
 
     /* "smelly/search_query_parser.py":144
- * 
+ *
  *     def token(self, advance: bool = False) -> Optional[str]:
  *         if self.is_eof():             # <<<<<<<<<<<<<<
  *             return None
@@ -6066,7 +6066,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_2token(CYTHON_UN
  *         if advance:
  *             self.current_token += 1             # <<<<<<<<<<<<<<
  *         return res
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_token); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -6089,7 +6089,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_2token(CYTHON_UN
  *         if advance:
  *             self.current_token += 1
  *         return res             # <<<<<<<<<<<<<<
- * 
+ *
  *     def lcase_token(self, advance: bool = False) -> Optional[str]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6099,7 +6099,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_2token(CYTHON_UN
 
   /* "smelly/search_query_parser.py":143
  *         self.allow_no_location = allow_no_location
- * 
+ *
  *     def token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -6121,7 +6121,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_2token(CYTHON_UN
 
 /* "smelly/search_query_parser.py":151
  *         return res
- * 
+ *
  *     def lcase_token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -6210,7 +6210,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_4lcase_token(CYT
   __Pyx_RefNannySetupContext("lcase_token", 0);
 
   /* "smelly/search_query_parser.py":152
- * 
+ *
  *     def lcase_token(self, advance: bool = False) -> Optional[str]:
  *         if self.is_eof():             # <<<<<<<<<<<<<<
  *             return None
@@ -6249,7 +6249,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_4lcase_token(CYT
     goto __pyx_L0;
 
     /* "smelly/search_query_parser.py":152
- * 
+ *
  *     def lcase_token(self, advance: bool = False) -> Optional[str]:
  *         if self.is_eof():             # <<<<<<<<<<<<<<
  *             return None
@@ -6293,7 +6293,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_4lcase_token(CYT
  *         if advance:
  *             self.current_token += 1             # <<<<<<<<<<<<<<
  *         return res.lower()
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_token); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -6316,7 +6316,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_4lcase_token(CYT
  *         if advance:
  *             self.current_token += 1
  *         return res.lower()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def token_type(self) -> TokenType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6343,7 +6343,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_4lcase_token(CYT
 
   /* "smelly/search_query_parser.py":151
  *         return res
- * 
+ *
  *     def lcase_token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -6365,7 +6365,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_4lcase_token(CYT
 
 /* "smelly/search_query_parser.py":159
  *         return res.lower()
- * 
+ *
  *     def token_type(self) -> TokenType:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return TokenType.EOF
@@ -6398,7 +6398,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_6token_type(CYTH
   __Pyx_RefNannySetupContext("token_type", 0);
 
   /* "smelly/search_query_parser.py":160
- * 
+ *
  *     def token_type(self) -> TokenType:
  *         if self.is_eof():             # <<<<<<<<<<<<<<
  *             return TokenType.EOF
@@ -6430,7 +6430,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_6token_type(CYTH
  *         if self.is_eof():
  *             return TokenType.EOF             # <<<<<<<<<<<<<<
  *         return self.tokens[self.current_token].type
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TokenType); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
@@ -6443,7 +6443,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_6token_type(CYTH
     goto __pyx_L0;
 
     /* "smelly/search_query_parser.py":160
- * 
+ *
  *     def token_type(self) -> TokenType:
  *         if self.is_eof():             # <<<<<<<<<<<<<<
  *             return TokenType.EOF
@@ -6455,7 +6455,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_6token_type(CYTH
  *         if self.is_eof():
  *             return TokenType.EOF
  *         return self.tokens[self.current_token].type             # <<<<<<<<<<<<<<
- * 
+ *
  *     def is_eof(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6476,7 +6476,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_6token_type(CYTH
 
   /* "smelly/search_query_parser.py":159
  *         return res.lower()
- * 
+ *
  *     def token_type(self) -> TokenType:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return TokenType.EOF
@@ -6497,10 +6497,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_6token_type(CYTH
 
 /* "smelly/search_query_parser.py":164
  *         return self.tokens[self.current_token].type
- * 
+ *
  *     def is_eof(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6530,10 +6530,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8is_eof(CYTHON_U
   __Pyx_RefNannySetupContext("is_eof", 0);
 
   /* "smelly/search_query_parser.py":165
- * 
+ *
  *     def is_eof(self) -> bool:
  *         return self.current_token >= len(self.tokens)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def advance(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6554,10 +6554,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8is_eof(CYTHON_U
 
   /* "smelly/search_query_parser.py":164
  *         return self.tokens[self.current_token].type
- * 
+ *
  *     def is_eof(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  */
 
   /* function exit code */
@@ -6575,10 +6575,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8is_eof(CYTHON_U
 
 /* "smelly/search_query_parser.py":167
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  *     def advance(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token += 1
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6606,10 +6606,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_10advance(CYTHON
   __Pyx_RefNannySetupContext("advance", 0);
 
   /* "smelly/search_query_parser.py":168
- * 
+ *
  *     def advance(self) -> None:
  *         self.current_token += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def tokenize(self, expr: str) -> List[Token]:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_token); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
@@ -6622,10 +6622,10 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_10advance(CYTHON
 
   /* "smelly/search_query_parser.py":167
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  *     def advance(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token += 1
- * 
+ *
  */
 
   /* function exit code */
@@ -6644,7 +6644,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_10advance(CYTHON
 
 /* "smelly/search_query_parser.py":170
  *         self.current_token += 1
- * 
+ *
  *     def tokenize(self, expr: str) -> List[Token]:             # <<<<<<<<<<<<<<
  *         # Strip out escaped backslashes, quotes and parens so that the
  *         # lex scanner doesn't get confused. We put them back later.
@@ -6722,7 +6722,7 @@ static PyObject *__pyx_pw_6smelly_19search_query_parser_6Parser_13tokenize(PyObj
 
 /* "smelly/search_query_parser.py":177
  *         tokens = lex_scanner.scan(expr)[0]
- * 
+ *
  *         def unescape(x: str) -> str:             # <<<<<<<<<<<<<<
  *             for k, v in REPLACEMENTS:
  *                 x = x.replace(v, k[1:])
@@ -6770,7 +6770,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8tokenize_unesca
   __Pyx_INCREF(__pyx_v_x);
 
   /* "smelly/search_query_parser.py":178
- * 
+ *
  *         def unescape(x: str) -> str:
  *             for k, v in REPLACEMENTS:             # <<<<<<<<<<<<<<
  *                 x = x.replace(v, k[1:])
@@ -6828,11 +6828,11 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8tokenize_unesca
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -6874,7 +6874,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8tokenize_unesca
  *             for k, v in REPLACEMENTS:
  *                 x = x.replace(v, k[1:])             # <<<<<<<<<<<<<<
  *             return x
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_k, 1, 0, NULL, NULL, &__pyx_slice__9, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 179, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -6886,7 +6886,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8tokenize_unesca
     __pyx_t_6 = 0;
 
     /* "smelly/search_query_parser.py":178
- * 
+ *
  *         def unescape(x: str) -> str:
  *             for k, v in REPLACEMENTS:             # <<<<<<<<<<<<<<
  *                 x = x.replace(v, k[1:])
@@ -6899,7 +6899,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8tokenize_unesca
  *             for k, v in REPLACEMENTS:
  *                 x = x.replace(v, k[1:])
  *             return x             # <<<<<<<<<<<<<<
- * 
+ *
  *         return [Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv) for tt, tv in tokens]
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6909,7 +6909,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8tokenize_unesca
 
   /* "smelly/search_query_parser.py":177
  *         tokens = lex_scanner.scan(expr)[0]
- * 
+ *
  *         def unescape(x: str) -> str:             # <<<<<<<<<<<<<<
  *             for k, v in REPLACEMENTS:
  *                 x = x.replace(v, k[1:])
@@ -6935,7 +6935,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_8tokenize_unesca
 
 /* "smelly/search_query_parser.py":170
  *         self.current_token += 1
- * 
+ *
  *     def tokenize(self, expr: str) -> List[Token]:             # <<<<<<<<<<<<<<
  *         # Strip out escaped backslashes, quotes and parens so that the
  *         # lex scanner doesn't get confused. We put them back later.
@@ -7029,11 +7029,11 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -7075,7 +7075,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
  *         for k, v in REPLACEMENTS:
  *             expr = expr.replace(k, v)             # <<<<<<<<<<<<<<
  *         tokens = lex_scanner.scan(expr)[0]
- * 
+ *
  */
     __pyx_t_1 = __Pyx_CallUnboundCMethod2(&__pyx_umethod_PyString_Type_replace, __pyx_v_expr, __pyx_v_k, __pyx_v_v); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -7097,7 +7097,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
  *         for k, v in REPLACEMENTS:
  *             expr = expr.replace(k, v)
  *         tokens = lex_scanner.scan(expr)[0]             # <<<<<<<<<<<<<<
- * 
+ *
  *         def unescape(x: str) -> str:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_lex_scanner); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
@@ -7128,7 +7128,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
 
   /* "smelly/search_query_parser.py":177
  *         tokens = lex_scanner.scan(expr)[0]
- * 
+ *
  *         def unescape(x: str) -> str:             # <<<<<<<<<<<<<<
  *             for k, v in REPLACEMENTS:
  *                 x = x.replace(v, k[1:])
@@ -7146,9 +7146,9 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
 
   /* "smelly/search_query_parser.py":182
  *             return x
- * 
+ *
  *         return [Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv) for tt, tv in tokens]             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parse(self, expr: str, locations: Sequence[str]) -> SearchTreeNode:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7203,11 +7203,11 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_7);
@@ -7340,7 +7340,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
 
   /* "smelly/search_query_parser.py":170
  *         self.current_token += 1
- * 
+ *
  *     def tokenize(self, expr: str) -> List[Token]:             # <<<<<<<<<<<<<<
  *         # Strip out escaped backslashes, quotes and parens so that the
  *         # lex scanner doesn't get confused. We put them back later.
@@ -7373,7 +7373,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_12tokenize(CYTHO
 
 /* "smelly/search_query_parser.py":184
  *         return [Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv) for tt, tv in tokens]
- * 
+ *
  *     def parse(self, expr: str, locations: Sequence[str]) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         self.locations = locations
  *         self.tokens = self.tokenize(expr)
@@ -7477,7 +7477,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_14parse(CYTHON_U
   __Pyx_RefNannySetupContext("parse", 0);
 
   /* "smelly/search_query_parser.py":185
- * 
+ *
  *     def parse(self, expr: str, locations: Sequence[str]) -> SearchTreeNode:
  *         self.locations = locations             # <<<<<<<<<<<<<<
  *         self.tokens = self.tokenize(expr)
@@ -7582,7 +7582,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_14parse(CYTHON_U
  *         if not self.is_eof():
  *             raise ParseException(_('Extra characters at end of search'))             # <<<<<<<<<<<<<<
  *         return prog
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ParseException); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -7636,7 +7636,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_14parse(CYTHON_U
  *         if not self.is_eof():
  *             raise ParseException(_('Extra characters at end of search'))
  *         return prog             # <<<<<<<<<<<<<<
- * 
+ *
  *     def or_expression(self) -> SearchTreeNode:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7646,7 +7646,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_14parse(CYTHON_U
 
   /* "smelly/search_query_parser.py":184
  *         return [Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv) for tt, tv in tokens]
- * 
+ *
  *     def parse(self, expr: str, locations: Sequence[str]) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         self.locations = locations
  *         self.tokens = self.tokenize(expr)
@@ -7670,7 +7670,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_14parse(CYTHON_U
 
 /* "smelly/search_query_parser.py":193
  *         return prog
- * 
+ *
  *     def or_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.and_expression()
  *         if self.lcase_token() == 'or':
@@ -7707,7 +7707,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_16or_expression(
   __Pyx_RefNannySetupContext("or_expression", 0);
 
   /* "smelly/search_query_parser.py":194
- * 
+ *
  *     def or_expression(self) -> SearchTreeNode:
  *         lhs = self.and_expression()             # <<<<<<<<<<<<<<
  *         if self.lcase_token() == 'or':
@@ -7792,7 +7792,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_16or_expression(
  *             self.advance()
  *             return OrNode(lhs, self.or_expression())             # <<<<<<<<<<<<<<
  *         return lhs
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_OrNode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 197, __pyx_L1_error)
@@ -7878,7 +7878,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_16or_expression(
  *             self.advance()
  *             return OrNode(lhs, self.or_expression())
  *         return lhs             # <<<<<<<<<<<<<<
- * 
+ *
  *     def and_expression(self) -> SearchTreeNode:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7888,7 +7888,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_16or_expression(
 
   /* "smelly/search_query_parser.py":193
  *         return prog
- * 
+ *
  *     def or_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.and_expression()
  *         if self.lcase_token() == 'or':
@@ -7912,7 +7912,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_16or_expression(
 
 /* "smelly/search_query_parser.py":200
  *         return lhs
- * 
+ *
  *     def and_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.not_expression()
  *         if self.lcase_token() == 'and':
@@ -7951,7 +7951,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
   __Pyx_RefNannySetupContext("and_expression", 0);
 
   /* "smelly/search_query_parser.py":201
- * 
+ *
  *     def and_expression(self) -> SearchTreeNode:
  *         lhs = self.not_expression()             # <<<<<<<<<<<<<<
  *         if self.lcase_token() == 'and':
@@ -8010,7 +8010,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
  *         if self.lcase_token() == 'and':
  *             self.advance()             # <<<<<<<<<<<<<<
  *             return AndNode(lhs, self.and_expression())
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_advance); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -8035,7 +8035,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
  *         if self.lcase_token() == 'and':
  *             self.advance()
  *             return AndNode(lhs, self.and_expression())             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Account for the optional 'and'
  */
     __Pyx_XDECREF(__pyx_r);
@@ -8119,7 +8119,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
   }
 
   /* "smelly/search_query_parser.py":207
- * 
+ *
  *         # Account for the optional 'and'
  *         if (self.token_type() in (TokenType.WORD, TokenType.QUOTED_WORD) or self.token() == '(') and self.lcase_token() != 'or':             # <<<<<<<<<<<<<<
  *             return AndNode(lhs, self.and_expression())
@@ -8226,7 +8226,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
  *         if (self.token_type() in (TokenType.WORD, TokenType.QUOTED_WORD) or self.token() == '(') and self.lcase_token() != 'or':
  *             return AndNode(lhs, self.and_expression())             # <<<<<<<<<<<<<<
  *         return lhs
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_AndNode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
@@ -8300,7 +8300,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
     goto __pyx_L0;
 
     /* "smelly/search_query_parser.py":207
- * 
+ *
  *         # Account for the optional 'and'
  *         if (self.token_type() in (TokenType.WORD, TokenType.QUOTED_WORD) or self.token() == '(') and self.lcase_token() != 'or':             # <<<<<<<<<<<<<<
  *             return AndNode(lhs, self.and_expression())
@@ -8312,7 +8312,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
  *         if (self.token_type() in (TokenType.WORD, TokenType.QUOTED_WORD) or self.token() == '(') and self.lcase_token() != 'or':
  *             return AndNode(lhs, self.and_expression())
  *         return lhs             # <<<<<<<<<<<<<<
- * 
+ *
  *     def not_expression(self) -> SearchTreeNode:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8322,7 +8322,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
 
   /* "smelly/search_query_parser.py":200
  *         return lhs
- * 
+ *
  *     def and_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.not_expression()
  *         if self.lcase_token() == 'and':
@@ -8346,7 +8346,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_18and_expression
 
 /* "smelly/search_query_parser.py":211
  *         return lhs
- * 
+ *
  *     def not_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.lcase_token() == 'not':
  *             self.advance()
@@ -8381,7 +8381,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_20not_expression
   __Pyx_RefNannySetupContext("not_expression", 0);
 
   /* "smelly/search_query_parser.py":212
- * 
+ *
  *     def not_expression(self) -> SearchTreeNode:
  *         if self.lcase_token() == 'not':             # <<<<<<<<<<<<<<
  *             self.advance()
@@ -8439,7 +8439,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_20not_expression
  *             self.advance()
  *             return NotNode(self.not_expression())             # <<<<<<<<<<<<<<
  *         return self.location_expression()
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_NotNode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
@@ -8482,7 +8482,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_20not_expression
     goto __pyx_L0;
 
     /* "smelly/search_query_parser.py":212
- * 
+ *
  *     def not_expression(self) -> SearchTreeNode:
  *         if self.lcase_token() == 'not':             # <<<<<<<<<<<<<<
  *             self.advance()
@@ -8494,7 +8494,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_20not_expression
  *             self.advance()
  *             return NotNode(self.not_expression())
  *         return self.location_expression()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def location_expression(self) -> SearchTreeNode:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8521,7 +8521,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_20not_expression
 
   /* "smelly/search_query_parser.py":211
  *         return lhs
- * 
+ *
  *     def not_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.lcase_token() == 'not':
  *             self.advance()
@@ -8544,7 +8544,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_20not_expression
 
 /* "smelly/search_query_parser.py":217
  *         return self.location_expression()
- * 
+ *
  *     def location_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() == TokenType.OPCODE and self.token() == '(':
  *             self.advance()
@@ -8581,7 +8581,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_22location_expre
   __Pyx_RefNannySetupContext("location_expression", 0);
 
   /* "smelly/search_query_parser.py":218
- * 
+ *
  *     def location_expression(self) -> SearchTreeNode:
  *         if self.token_type() == TokenType.OPCODE and self.token() == '(':             # <<<<<<<<<<<<<<
  *             self.advance()
@@ -8817,7 +8817,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_22location_expre
     goto __pyx_L0;
 
     /* "smelly/search_query_parser.py":218
- * 
+ *
  *     def location_expression(self) -> SearchTreeNode:
  *         if self.token_type() == TokenType.OPCODE and self.token() == '(':             # <<<<<<<<<<<<<<
  *             self.advance()
@@ -8883,7 +8883,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_22location_expre
  *         if self.token_type() not in (TokenType.WORD, TokenType.QUOTED_WORD):
  *             raise ParseException(             # <<<<<<<<<<<<<<
  *                 _('Invalid syntax. Expected a lookup name or a word'))
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ParseException); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -8892,7 +8892,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_22location_expre
  *         if self.token_type() not in (TokenType.WORD, TokenType.QUOTED_WORD):
  *             raise ParseException(
  *                 _('Invalid syntax. Expected a lookup name or a word'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         return self.base_token()
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s__12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 226, __pyx_L1_error)
@@ -8943,9 +8943,9 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_22location_expre
 
   /* "smelly/search_query_parser.py":228
  *                 _('Invalid syntax. Expected a lookup name or a word'))
- * 
+ *
  *         return self.base_token()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def base_token(self) -> SearchTreeNode:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8972,7 +8972,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_22location_expre
 
   /* "smelly/search_query_parser.py":217
  *         return self.location_expression()
- * 
+ *
  *     def location_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() == TokenType.OPCODE and self.token() == '(':
  *             self.advance()
@@ -8996,7 +8996,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_22location_expre
 
 /* "smelly/search_query_parser.py":230
  *         return self.base_token()
- * 
+ *
  *     def base_token(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() is TokenType.QUOTED_WORD:
  *             tt = self.token(advance=True)
@@ -9039,7 +9039,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
   __Pyx_RefNannySetupContext("base_token", 0);
 
   /* "smelly/search_query_parser.py":231
- * 
+ *
  *     def base_token(self) -> SearchTreeNode:
  *         if self.token_type() is TokenType.QUOTED_WORD:             # <<<<<<<<<<<<<<
  *             tt = self.token(advance=True)
@@ -9127,7 +9127,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
  *             if self.allow_no_location:
  *                 return TokenNode('all', tt)             # <<<<<<<<<<<<<<
  *             raise ParseException(f'No location specified before {tt}')
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TokenNode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
@@ -9194,7 +9194,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
  *             if self.allow_no_location:
  *                 return TokenNode('all', tt)
  *             raise ParseException(f'No location specified before {tt}')             # <<<<<<<<<<<<<<
- * 
+ *
  *         tt = self.token(advance=True)
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ParseException); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L1_error)
@@ -9225,7 +9225,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
     __PYX_ERR(0, 236, __pyx_L1_error)
 
     /* "smelly/search_query_parser.py":231
- * 
+ *
  *     def base_token(self) -> SearchTreeNode:
  *         if self.token_type() is TokenType.QUOTED_WORD:             # <<<<<<<<<<<<<<
  *             tt = self.token(advance=True)
@@ -9235,7 +9235,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
 
   /* "smelly/search_query_parser.py":238
  *             raise ParseException(f'No location specified before {tt}')
- * 
+ *
  *         tt = self.token(advance=True)             # <<<<<<<<<<<<<<
  *         assert tt is not None
  *         words = tt.split(':')
@@ -9253,7 +9253,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
   __pyx_t_3 = 0;
 
   /* "smelly/search_query_parser.py":239
- * 
+ *
  *         tt = self.token(advance=True)
  *         assert tt is not None             # <<<<<<<<<<<<<<
  *         words = tt.split(':')
@@ -9468,7 +9468,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
  *                 assert tt is not None
  *                 return TokenNode(loc, tt)             # <<<<<<<<<<<<<<
  *             return TokenNode(loc.lower(), ':'.join(words))
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_TokenNode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 259, __pyx_L1_error)
@@ -9535,7 +9535,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
  *                 assert tt is not None
  *                 return TokenNode(loc, tt)
  *             return TokenNode(loc.lower(), ':'.join(words))             # <<<<<<<<<<<<<<
- * 
+ *
  *         if self.allow_no_location:
  */
     __Pyx_XDECREF(__pyx_r);
@@ -9624,7 +9624,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
 
   /* "smelly/search_query_parser.py":262
  *             return TokenNode(loc.lower(), ':'.join(words))
- * 
+ *
  *         if self.allow_no_location:             # <<<<<<<<<<<<<<
  *             return TokenNode('all', ':'.join(words))
  *         raise ParseException(f'No location specified before {tt}')
@@ -9636,11 +9636,11 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
   if (__pyx_t_5) {
 
     /* "smelly/search_query_parser.py":263
- * 
+ *
  *         if self.allow_no_location:
  *             return TokenNode('all', ':'.join(words))             # <<<<<<<<<<<<<<
  *         raise ParseException(f'No location specified before {tt}')
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_TokenNode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 263, __pyx_L1_error)
@@ -9700,7 +9700,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
 
     /* "smelly/search_query_parser.py":262
  *             return TokenNode(loc.lower(), ':'.join(words))
- * 
+ *
  *         if self.allow_no_location:             # <<<<<<<<<<<<<<
  *             return TokenNode('all', ':'.join(words))
  *         raise ParseException(f'No location specified before {tt}')
@@ -9711,8 +9711,8 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
  *         if self.allow_no_location:
  *             return TokenNode('all', ':'.join(words))
  *         raise ParseException(f'No location specified before {tt}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_ParseException); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 264, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -9743,7 +9743,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
 
   /* "smelly/search_query_parser.py":230
  *         return self.base_token()
- * 
+ *
  *     def base_token(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() is TokenType.QUOTED_WORD:
  *             tt = self.token(advance=True)
@@ -9769,7 +9769,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_6Parser_24base_token(CYT
 }
 
 /* "smelly/search_query_parser.py":268
- * 
+ *
  * @lru_cache(maxsize=64)
  * def build_tree(             # <<<<<<<<<<<<<<
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -9861,7 +9861,7 @@ static PyObject *__pyx_pw_6smelly_19search_query_parser_1build_tree(PyObject *__
   __pyx_r = __pyx_pf_6smelly_19search_query_parser_build_tree(__pyx_self, __pyx_v_query, __pyx_v_locations, __pyx_v_allow_no_location);
 
   /* "smelly/search_query_parser.py":268
- * 
+ *
  * @lru_cache(maxsize=64)
  * def build_tree(             # <<<<<<<<<<<<<<
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -9910,7 +9910,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_build_tree(CYTHON_UNUSED
  *         locations = tuple(locations.split())
  *     p = Parser(allow_no_location)
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_locations); 
+  __pyx_t_1 = PyString_Check(__pyx_v_locations);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -10091,7 +10091,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_build_tree(CYTHON_UNUSED
  *     except RuntimeError as e:
  *         raise ParseException(             # <<<<<<<<<<<<<<
  *             f'Failed to parse {query!r}, too much recursion required') from e
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_ParseException); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 277, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_11);
@@ -10100,8 +10100,8 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_build_tree(CYTHON_UNUSED
  *     except RuntimeError as e:
  *         raise ParseException(
  *             f'Failed to parse {query!r}, too much recursion required') from e             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_12 = PyTuple_New(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 278, __pyx_L6_except_error)
       __Pyx_GOTREF(__pyx_t_12);
@@ -10169,7 +10169,7 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_build_tree(CYTHON_UNUSED
   }
 
   /* "smelly/search_query_parser.py":268
- * 
+ *
  * @lru_cache(maxsize=64)
  * def build_tree(             # <<<<<<<<<<<<<<
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -10197,8 +10197,8 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_build_tree(CYTHON_UNUSED
 }
 
 /* "smelly/search_query_parser.py":281
- * 
- * 
+ *
+ *
  * def search(             # <<<<<<<<<<<<<<
  *     query: str,
  *     locations: Union[str, Tuple[str, ...]],
@@ -10311,8 +10311,8 @@ static PyObject *__pyx_pw_6smelly_19search_query_parser_3search(PyObject *__pyx_
   __pyx_r = __pyx_pf_6smelly_19search_query_parser_2search(__pyx_self, __pyx_v_query, __pyx_v_locations, __pyx_v_universal_set, __pyx_v_get_matches, __pyx_v_allow_no_location);
 
   /* "smelly/search_query_parser.py":281
- * 
- * 
+ *
+ *
  * def search(             # <<<<<<<<<<<<<<
  *     query: str,
  *     locations: Union[str, Tuple[str, ...]],
@@ -10465,8 +10465,8 @@ static PyObject *__pyx_pf_6smelly_19search_query_parser_2search(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/search_query_parser.py":281
- * 
- * 
+ *
+ *
  * def search(             # <<<<<<<<<<<<<<
  *     query: str,
  *     locations: Union[str, Tuple[str, ...]],
@@ -11295,7 +11295,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             for k, v in REPLACEMENTS:
  *                 x = x.replace(v, k[1:])             # <<<<<<<<<<<<<<
  *             return x
- * 
+ *
  */
   __pyx_slice__9 = PySlice_New(__pyx_int_1, Py_None, Py_None); if (unlikely(!__pyx_slice__9)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__9);
@@ -11303,7 +11303,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":177
  *         tokens = lex_scanner.scan(expr)[0]
- * 
+ *
  *         def unescape(x: str) -> str:             # <<<<<<<<<<<<<<
  *             for k, v in REPLACEMENTS:
  *                 x = x.replace(v, k[1:])
@@ -11326,11 +11326,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_search_query_parser_py, __pyx_n_s_msg, 12, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 12, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":32
- * 
- * 
+ *
+ *
  * T = TypeVar('T')             # <<<<<<<<<<<<<<
  * GetMatches = Callable[[str, str, Set[T]], Set[T]]
- * 
+ *
  */
   __pyx_tuple__18 = PyTuple_Pack(1, __pyx_n_s_T); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
@@ -11338,10 +11338,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":39
  *     type = ExpressionType.OR
- * 
+ *
  *     def __init__(self, type: ExpressionType) -> None:             # <<<<<<<<<<<<<<
  *         self.type = type
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_type); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -11350,7 +11350,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":42
  *         self.type = type
- * 
+ *
  *     def search(self, universal_set: Set[T],             # <<<<<<<<<<<<<<
  *                get_matches: GetMatches[T]) -> Set[T]:
  *         return self(universal_set, get_matches)
@@ -11362,7 +11362,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":46
  *         return self(universal_set, get_matches)
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -11374,10 +11374,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":51
  *         return set()
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         return iter(())
- * 
+ *
  */
   __pyx_tuple__25 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
@@ -11385,7 +11385,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_search_query_parser_py, __pyx_n_s_iter_token_nodes, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 51, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":56
- * 
+ *
  * class OrNode(SearchTreeNode):
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
@@ -11398,7 +11398,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":60
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -11410,7 +11410,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":66
  *         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -11422,7 +11422,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":74
  *     type = ExpressionType.AND
- * 
+ *
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
  *         self.rhs = rhs
@@ -11434,7 +11434,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":78
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -11446,7 +11446,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":84
  *         return self.rhs(lhs, get_matches)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -11458,10 +11458,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":92
  *     type = ExpressionType.NOT
- * 
+ *
  *     def __init__(self, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.rhs = rhs
- * 
+ *
  */
   __pyx_tuple__37 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_rhs); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
@@ -11470,7 +11470,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":95
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -11482,10 +11482,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":100
  *         return candidates.difference(self.rhs(candidates, get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.rhs.iter_token_nodes()
- * 
+ *
  */
   __pyx_tuple__41 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__41);
@@ -11494,7 +11494,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":107
  *     type = ExpressionType.TOKEN
- * 
+ *
  *     def __init__(self, location: str, query: str) -> None:             # <<<<<<<<<<<<<<
  *         self.location = location
  *         self.query = query
@@ -11506,7 +11506,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":111
  *         self.query = query
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -11518,10 +11518,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":116
  *         return get_matches(self.location, self.query, candidates)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield self
- * 
+ *
  */
   __pyx_tuple__46 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
@@ -11540,7 +11540,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__49);
 
   /* "smelly/search_query_parser.py":138
- * 
+ *
  * class Parser:
  *     def __init__(self, allow_no_location: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token = 0
@@ -11556,7 +11556,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":143
  *         self.allow_no_location = allow_no_location
- * 
+ *
  *     def token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -11571,7 +11571,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":151
  *         return res
- * 
+ *
  *     def lcase_token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -11586,7 +11586,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":159
  *         return res.lower()
- * 
+ *
  *     def token_type(self) -> TokenType:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return TokenType.EOF
@@ -11598,10 +11598,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":164
  *         return self.tokens[self.current_token].type
- * 
+ *
  *     def is_eof(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  */
   __pyx_tuple__61 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
@@ -11610,10 +11610,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":167
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  *     def advance(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token += 1
- * 
+ *
  */
   __pyx_tuple__63 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
@@ -11622,7 +11622,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":170
  *         self.current_token += 1
- * 
+ *
  *     def tokenize(self, expr: str) -> List[Token]:             # <<<<<<<<<<<<<<
  *         # Strip out escaped backslashes, quotes and parens so that the
  *         # lex scanner doesn't get confused. We put them back later.
@@ -11634,7 +11634,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":184
  *         return [Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv) for tt, tv in tokens]
- * 
+ *
  *     def parse(self, expr: str, locations: Sequence[str]) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         self.locations = locations
  *         self.tokens = self.tokenize(expr)
@@ -11646,7 +11646,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":193
  *         return prog
- * 
+ *
  *     def or_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.and_expression()
  *         if self.lcase_token() == 'or':
@@ -11658,7 +11658,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":200
  *         return lhs
- * 
+ *
  *     def and_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.not_expression()
  *         if self.lcase_token() == 'and':
@@ -11670,7 +11670,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":211
  *         return lhs
- * 
+ *
  *     def not_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.lcase_token() == 'not':
  *             self.advance()
@@ -11682,7 +11682,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":217
  *         return self.location_expression()
- * 
+ *
  *     def location_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() == TokenType.OPCODE and self.token() == '(':
  *             self.advance()
@@ -11694,7 +11694,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/search_query_parser.py":230
  *         return self.base_token()
- * 
+ *
  *     def base_token(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() is TokenType.QUOTED_WORD:
  *             tt = self.token(advance=True)
@@ -11705,7 +11705,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__78 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__77, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_search_query_parser_py, __pyx_n_s_base_token, 230, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__78)) __PYX_ERR(0, 230, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":268
- * 
+ *
  * @lru_cache(maxsize=64)
  * def build_tree(             # <<<<<<<<<<<<<<
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -11720,8 +11720,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__81);
 
   /* "smelly/search_query_parser.py":281
- * 
- * 
+ *
+ *
  * def search(             # <<<<<<<<<<<<<<
  *     query: str,
  *     locations: Union[str, Tuple[str, ...]],
@@ -12130,7 +12130,7 @@ if (!__Pyx_RefNanny) {
  * from functools import lru_cache
  * from gettext import gettext as _             # <<<<<<<<<<<<<<
  * from typing import Callable, Iterator, List, NamedTuple, Optional, Sequence, Set, Tuple, TypeVar, Union
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12150,8 +12150,8 @@ if (!__Pyx_RefNanny) {
  * from functools import lru_cache
  * from gettext import gettext as _
  * from typing import Callable, Iterator, List, NamedTuple, Optional, Sequence, Set, Tuple, TypeVar, Union             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -12231,8 +12231,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/search_query_parser.py":10
- * 
- * 
+ *
+ *
  * class ParseException(Exception):             # <<<<<<<<<<<<<<
  *     @property
  *     def msg(self) -> str:
@@ -12263,7 +12263,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/search_query_parser.py":11
- * 
+ *
  * class ParseException(Exception):
  *     @property             # <<<<<<<<<<<<<<
  *     def msg(self) -> str:
@@ -12276,8 +12276,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/search_query_parser.py":10
- * 
- * 
+ *
+ *
  * class ParseException(Exception):             # <<<<<<<<<<<<<<
  *     @property
  *     def msg(self) -> str:
@@ -12291,8 +12291,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/search_query_parser.py":18
- * 
- * 
+ *
+ *
  * class ExpressionType(Enum):             # <<<<<<<<<<<<<<
  *     OR = 1
  *     AND = 2
@@ -12310,7 +12310,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/search_query_parser.py":19
- * 
+ *
  * class ExpressionType(Enum):
  *     OR = 1             # <<<<<<<<<<<<<<
  *     AND = 2
@@ -12332,7 +12332,7 @@ if (!__Pyx_RefNanny) {
  *     AND = 2
  *     NOT = 3             # <<<<<<<<<<<<<<
  *     TOKEN = 4
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_NOT, __pyx_int_3) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
 
@@ -12340,14 +12340,14 @@ if (!__Pyx_RefNanny) {
  *     AND = 2
  *     NOT = 3
  *     TOKEN = 4             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_TOKEN, __pyx_int_4) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":18
- * 
- * 
+ *
+ *
  * class ExpressionType(Enum):             # <<<<<<<<<<<<<<
  *     OR = 1
  *     AND = 2
@@ -12361,8 +12361,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/search_query_parser.py":25
- * 
- * 
+ *
+ *
  * class TokenType(Enum):             # <<<<<<<<<<<<<<
  *     OPCODE = 1
  *     WORD = 2
@@ -12380,7 +12380,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/search_query_parser.py":26
- * 
+ *
  * class TokenType(Enum):
  *     OPCODE = 1             # <<<<<<<<<<<<<<
  *     WORD = 2
@@ -12402,7 +12402,7 @@ if (!__Pyx_RefNanny) {
  *     WORD = 2
  *     QUOTED_WORD = 3             # <<<<<<<<<<<<<<
  *     EOF = 4
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_QUOTED_WORD, __pyx_int_3) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
 
@@ -12410,14 +12410,14 @@ if (!__Pyx_RefNanny) {
  *     WORD = 2
  *     QUOTED_WORD = 3
  *     EOF = 4             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_EOF, __pyx_int_4) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
 
   /* "smelly/search_query_parser.py":25
- * 
- * 
+ *
+ *
  * class TokenType(Enum):             # <<<<<<<<<<<<<<
  *     OPCODE = 1
  *     WORD = 2
@@ -12431,11 +12431,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/search_query_parser.py":32
- * 
- * 
+ *
+ *
  * T = TypeVar('T')             # <<<<<<<<<<<<<<
  * GetMatches = Callable[[str, str, Set[T]], Set[T]]
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TypeVar); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12446,11 +12446,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/search_query_parser.py":33
- * 
+ *
  * T = TypeVar('T')
  * GetMatches = Callable[[str, str, Set[T]], Set[T]]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Callable); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -12497,20 +12497,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/search_query_parser.py":36
- * 
- * 
+ *
+ *
  * class SearchTreeNode:             # <<<<<<<<<<<<<<
  *     type = ExpressionType.OR
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_SearchTreeNode, __pyx_n_s_SearchTreeNode, (PyObject *) NULL, __pyx_n_s_smelly_search_query_parser, (PyObject *) NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/search_query_parser.py":37
- * 
+ *
  * class SearchTreeNode:
  *     type = ExpressionType.OR             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, type: ExpressionType) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ExpressionType); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
@@ -12523,10 +12523,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":39
  *     type = ExpressionType.OR
- * 
+ *
  *     def __init__(self, type: ExpressionType) -> None:             # <<<<<<<<<<<<<<
  *         self.type = type
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -12544,7 +12544,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":42
  *         self.type = type
- * 
+ *
  *     def search(self, universal_set: Set[T],             # <<<<<<<<<<<<<<
  *                get_matches: GetMatches[T]) -> Set[T]:
  *         return self(universal_set, get_matches)
@@ -12563,11 +12563,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/search_query_parser.py":43
- * 
+ *
  *     def search(self, universal_set: Set[T],
  *                get_matches: GetMatches[T]) -> Set[T]:             # <<<<<<<<<<<<<<
  *         return self(universal_set, get_matches)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_GetMatches); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -12592,7 +12592,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":42
  *         self.type = type
- * 
+ *
  *     def search(self, universal_set: Set[T],             # <<<<<<<<<<<<<<
  *                get_matches: GetMatches[T]) -> Set[T]:
  *         return self(universal_set, get_matches)
@@ -12606,7 +12606,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":46
  *         return self(universal_set, get_matches)
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12615,7 +12615,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/search_query_parser.py":47
- * 
+ *
  *     def __call__(
  *             self, candidates: Set[T],             # <<<<<<<<<<<<<<
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12637,7 +12637,7 @@ if (!__Pyx_RefNanny) {
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:             # <<<<<<<<<<<<<<
  *         return set()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_GetMatches); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -12662,7 +12662,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":46
  *         return self(universal_set, get_matches)
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12676,10 +12676,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":51
  *         return set()
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         return iter(())
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -12698,11 +12698,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/search_query_parser.py":36
- * 
- * 
+ *
+ *
  * class SearchTreeNode:             # <<<<<<<<<<<<<<
  *     type = ExpressionType.OR
- * 
+ *
  */
   __pyx_t_3 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_SearchTreeNode, __pyx_empty_tuple, __pyx_t_5, NULL, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -12711,8 +12711,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/search_query_parser.py":55
- * 
- * 
+ *
+ *
  * class OrNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
  *         self.lhs = lhs
@@ -12730,7 +12730,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/search_query_parser.py":56
- * 
+ *
  * class OrNode(SearchTreeNode):
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
@@ -12756,7 +12756,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":60
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12765,7 +12765,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/search_query_parser.py":61
- * 
+ *
  *     def __call__(
  *             self, candidates: Set[T],             # <<<<<<<<<<<<<<
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12812,7 +12812,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":60
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12826,7 +12826,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":66
  *         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -12848,8 +12848,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/search_query_parser.py":55
- * 
- * 
+ *
+ *
  * class OrNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
  *         self.lhs = lhs
@@ -12863,11 +12863,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/search_query_parser.py":71
- * 
- * 
+ *
+ *
  * class AndNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     type = ExpressionType.AND
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_SearchTreeNode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -12882,10 +12882,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/search_query_parser.py":72
- * 
+ *
  * class AndNode(SearchTreeNode):
  *     type = ExpressionType.AND             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_ExpressionType); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 72, __pyx_L1_error)
@@ -12898,7 +12898,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":74
  *     type = ExpressionType.AND
- * 
+ *
  *     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.lhs = lhs
  *         self.rhs = rhs
@@ -12923,7 +12923,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":78
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12932,7 +12932,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/search_query_parser.py":79
- * 
+ *
  *     def __call__(
  *             self, candidates: Set[T],             # <<<<<<<<<<<<<<
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12979,7 +12979,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":78
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -12993,7 +12993,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":84
  *         return self.rhs(lhs, get_matches)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.lhs.iter_token_nodes()
  *         yield from self.rhs.iter_token_nodes()
@@ -13015,11 +13015,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/search_query_parser.py":71
- * 
- * 
+ *
+ *
  * class AndNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     type = ExpressionType.AND
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_3, __pyx_n_s_AndNode, __pyx_t_5, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13030,11 +13030,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/search_query_parser.py":89
- * 
- * 
+ *
+ *
  * class NotNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     type = ExpressionType.NOT
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_SearchTreeNode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -13049,10 +13049,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/search_query_parser.py":90
- * 
+ *
  * class NotNode(SearchTreeNode):
  *     type = ExpressionType.NOT             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, rhs: SearchTreeNode) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ExpressionType); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 90, __pyx_L1_error)
@@ -13065,10 +13065,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":92
  *     type = ExpressionType.NOT
- * 
+ *
  *     def __init__(self, rhs: SearchTreeNode) -> None:             # <<<<<<<<<<<<<<
  *         self.rhs = rhs
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -13086,7 +13086,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":95
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -13095,7 +13095,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/search_query_parser.py":96
- * 
+ *
  *     def __call__(
  *             self, candidates: Set[T],             # <<<<<<<<<<<<<<
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -13117,7 +13117,7 @@ if (!__Pyx_RefNanny) {
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:             # <<<<<<<<<<<<<<
  *         return candidates.difference(self.rhs(candidates, get_matches))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_GetMatches); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -13142,7 +13142,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":95
  *         self.rhs = rhs
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -13156,10 +13156,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":100
  *         return candidates.difference(self.rhs(candidates, get_matches))
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield from self.rhs.iter_token_nodes()
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -13178,11 +13178,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/search_query_parser.py":89
- * 
- * 
+ *
+ *
  * class NotNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     type = ExpressionType.NOT
- * 
+ *
  */
   __pyx_t_6 = __Pyx_Py3ClassCreate(__pyx_t_5, __pyx_n_s_NotNode, __pyx_t_3, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -13193,11 +13193,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/search_query_parser.py":104
- * 
- * 
+ *
+ *
  * class TokenNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     type = ExpressionType.TOKEN
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_SearchTreeNode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -13212,10 +13212,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/search_query_parser.py":105
- * 
+ *
  * class TokenNode(SearchTreeNode):
  *     type = ExpressionType.TOKEN             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, location: str, query: str) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_ExpressionType); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 105, __pyx_L1_error)
@@ -13228,7 +13228,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":107
  *     type = ExpressionType.TOKEN
- * 
+ *
  *     def __init__(self, location: str, query: str) -> None:             # <<<<<<<<<<<<<<
  *         self.location = location
  *         self.query = query
@@ -13247,7 +13247,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":111
  *         self.query = query
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -13256,7 +13256,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/search_query_parser.py":112
- * 
+ *
  *     def __call__(
  *             self, candidates: Set[T],             # <<<<<<<<<<<<<<
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -13278,7 +13278,7 @@ if (!__Pyx_RefNanny) {
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:             # <<<<<<<<<<<<<<
  *         return get_matches(self.location, self.query, candidates)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_GetMatches); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -13303,7 +13303,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":111
  *         self.query = query
- * 
+ *
  *     def __call__(             # <<<<<<<<<<<<<<
  *             self, candidates: Set[T],
  *             get_matches: GetMatches[T]) -> Set[T]:
@@ -13317,10 +13317,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":116
  *         return get_matches(self.location, self.query, candidates)
- * 
+ *
  *     def iter_token_nodes(self) -> Iterator['TokenNode']:             # <<<<<<<<<<<<<<
  *         yield self
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -13339,11 +13339,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/search_query_parser.py":104
- * 
- * 
+ *
+ *
  * class TokenNode(SearchTreeNode):             # <<<<<<<<<<<<<<
  *     type = ExpressionType.TOKEN
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_3, __pyx_n_s_TokenNode, __pyx_t_5, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13354,8 +13354,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/search_query_parser.py":120
- * 
- * 
+ *
+ *
  * class Token(NamedTuple):             # <<<<<<<<<<<<<<
  *     type: TokenType
  *     val: str
@@ -13376,8 +13376,8 @@ if (!__Pyx_RefNanny) {
  * class Token(NamedTuple):
  *     type: TokenType
  *     val: str             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_5, __pyx_n_s_Token, __pyx_t_3, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13388,7 +13388,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/search_query_parser.py":126
- * 
+ *
  * lex_scanner = getattr(
  *     re, 'Scanner')(             # <<<<<<<<<<<<<<
  *     [(r'[()]', lambda x, t: Token(TokenType.OPCODE, t)),
@@ -13398,8 +13398,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/search_query_parser.py":125
- * 
- * 
+ *
+ *
  * lex_scanner = getattr(             # <<<<<<<<<<<<<<
  *     re, 'Scanner')(
  *     [(r'[()]', lambda x, t: Token(TokenType.OPCODE, t)),
@@ -13506,7 +13506,7 @@ if (!__Pyx_RefNanny) {
   __pyx_t_6 = 0;
 
   /* "smelly/search_query_parser.py":126
- * 
+ *
  * lex_scanner = getattr(
  *     re, 'Scanner')(             # <<<<<<<<<<<<<<
  *     [(r'[()]', lambda x, t: Token(TokenType.OPCODE, t)),
@@ -13523,7 +13523,7 @@ if (!__Pyx_RefNanny) {
  *      (r'\s+', None),],
  *     flags=re.DOTALL,)             # <<<<<<<<<<<<<<
  * REPLACEMENTS = tuple(('\\' + x, chr(i + 1)) for i, x in enumerate('\\"()'))
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -13536,7 +13536,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/search_query_parser.py":126
- * 
+ *
  * lex_scanner = getattr(
  *     re, 'Scanner')(             # <<<<<<<<<<<<<<
  *     [(r'[()]', lambda x, t: Token(TokenType.OPCODE, t)),
@@ -13554,8 +13554,8 @@ if (!__Pyx_RefNanny) {
  *      (r'\s+', None),],
  *     flags=re.DOTALL,)
  * REPLACEMENTS = tuple(('\\' + x, chr(i + 1)) for i, x in enumerate('\\"()'))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __pyx_pf_6smelly_19search_query_parser_8genexpr(NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13566,8 +13566,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/search_query_parser.py":137
- * 
- * 
+ *
+ *
  * class Parser:             # <<<<<<<<<<<<<<
  *     def __init__(self, allow_no_location: bool = False) -> None:
  *         self.current_token = 0
@@ -13576,7 +13576,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/search_query_parser.py":138
- * 
+ *
  * class Parser:
  *     def __init__(self, allow_no_location: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token = 0
@@ -13596,7 +13596,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":143
  *         self.allow_no_location = allow_no_location
- * 
+ *
  *     def token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -13621,7 +13621,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":151
  *         return res
- * 
+ *
  *     def lcase_token(self, advance: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return None
@@ -13646,7 +13646,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":159
  *         return res.lower()
- * 
+ *
  *     def token_type(self) -> TokenType:             # <<<<<<<<<<<<<<
  *         if self.is_eof():
  *             return TokenType.EOF
@@ -13666,10 +13666,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":164
  *         return self.tokens[self.current_token].type
- * 
+ *
  *     def is_eof(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -13683,10 +13683,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":167
  *         return self.current_token >= len(self.tokens)
- * 
+ *
  *     def advance(self) -> None:             # <<<<<<<<<<<<<<
  *         self.current_token += 1
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13700,7 +13700,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":170
  *         self.current_token += 1
- * 
+ *
  *     def tokenize(self, expr: str) -> List[Token]:             # <<<<<<<<<<<<<<
  *         # Strip out escaped backslashes, quotes and parens so that the
  *         # lex scanner doesn't get confused. We put them back later.
@@ -13727,7 +13727,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":184
  *         return [Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv) for tt, tv in tokens]
- * 
+ *
  *     def parse(self, expr: str, locations: Sequence[str]) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         self.locations = locations
  *         self.tokens = self.tokenize(expr)
@@ -13755,7 +13755,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":193
  *         return prog
- * 
+ *
  *     def or_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.and_expression()
  *         if self.lcase_token() == 'or':
@@ -13775,7 +13775,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":200
  *         return lhs
- * 
+ *
  *     def and_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         lhs = self.not_expression()
  *         if self.lcase_token() == 'and':
@@ -13795,7 +13795,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":211
  *         return lhs
- * 
+ *
  *     def not_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.lcase_token() == 'not':
  *             self.advance()
@@ -13815,7 +13815,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":217
  *         return self.location_expression()
- * 
+ *
  *     def location_expression(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() == TokenType.OPCODE and self.token() == '(':
  *             self.advance()
@@ -13835,7 +13835,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/search_query_parser.py":230
  *         return self.base_token()
- * 
+ *
  *     def base_token(self) -> SearchTreeNode:             # <<<<<<<<<<<<<<
  *         if self.token_type() is TokenType.QUOTED_WORD:
  *             tt = self.token(advance=True)
@@ -13854,8 +13854,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/search_query_parser.py":137
- * 
- * 
+ *
+ *
  * class Parser:             # <<<<<<<<<<<<<<
  *     def __init__(self, allow_no_location: bool = False) -> None:
  *         self.current_token = 0
@@ -13867,8 +13867,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/search_query_parser.py":267
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=64)             # <<<<<<<<<<<<<<
  * def build_tree(
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -13884,7 +13884,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/search_query_parser.py":268
- * 
+ *
  * @lru_cache(maxsize=64)
  * def build_tree(             # <<<<<<<<<<<<<<
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -13946,7 +13946,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/search_query_parser.py":268
- * 
+ *
  * @lru_cache(maxsize=64)
  * def build_tree(             # <<<<<<<<<<<<<<
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -13959,8 +13959,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/search_query_parser.py":267
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=64)             # <<<<<<<<<<<<<<
  * def build_tree(
  *         query: str, locations: Union[str, Tuple[str, ...]],
@@ -13973,8 +13973,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/search_query_parser.py":281
- * 
- * 
+ *
+ *
  * def search(             # <<<<<<<<<<<<<<
  *     query: str,
  *     locations: Union[str, Tuple[str, ...]],
@@ -14085,8 +14085,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/search_query_parser.py":281
- * 
- * 
+ *
+ *
  * def search(             # <<<<<<<<<<<<<<
  *     query: str,
  *     locations: Union[str, Tuple[str, ...]],
@@ -14814,8 +14814,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

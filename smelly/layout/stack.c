@@ -1526,7 +1526,7 @@ static PyObject *__pyx_codeobj__4;
 
 /* "smelly/layout/stack.py":15
  *     only_active_window_visible = True
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_group = all_windows.active_group
  *         for group in all_windows.iter_all_layoutable_groups():
@@ -1616,7 +1616,7 @@ static PyObject *__pyx_pf_6smelly_6layout_5stack_5Stack_do_layout(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("do_layout", 0);
 
   /* "smelly/layout/stack.py":16
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:
  *         active_group = all_windows.active_group             # <<<<<<<<<<<<<<
  *         for group in all_windows.iter_all_layoutable_groups():
@@ -1632,7 +1632,7 @@ static PyObject *__pyx_pf_6smelly_6layout_5stack_5Stack_do_layout(CYTHON_UNUSED 
  *         active_group = all_windows.active_group
  *         for group in all_windows.iter_all_layoutable_groups():             # <<<<<<<<<<<<<<
  *             self.layout_single_window_group(group, add_blank_rects=group is active_group)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_iter_all_layoutable_groups); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1698,7 +1698,7 @@ static PyObject *__pyx_pf_6smelly_6layout_5stack_5Stack_do_layout(CYTHON_UNUSED 
  *         active_group = all_windows.active_group
  *         for group in all_windows.iter_all_layoutable_groups():
  *             self.layout_single_window_group(group, add_blank_rects=group is active_group)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_layout_single_window_group); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
@@ -1727,14 +1727,14 @@ static PyObject *__pyx_pf_6smelly_6layout_5stack_5Stack_do_layout(CYTHON_UNUSED 
  *         active_group = all_windows.active_group
  *         for group in all_windows.iter_all_layoutable_groups():             # <<<<<<<<<<<<<<
  *             self.layout_single_window_group(group, add_blank_rects=group is active_group)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/stack.py":15
  *     only_active_window_visible = True
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_group = all_windows.active_group
  *         for group in all_windows.iter_all_layoutable_groups():
@@ -1761,7 +1761,7 @@ static PyObject *__pyx_pf_6smelly_6layout_5stack_5Stack_do_layout(CYTHON_UNUSED 
 
 /* "smelly/layout/stack.py":20
  *             self.layout_single_window_group(group, add_blank_rects=group is active_group)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -1861,7 +1861,7 @@ static PyObject *__pyx_pf_6smelly_6layout_5stack_5Stack_2neighbors_for_window(CY
   __Pyx_RefNannySetupContext("neighbors_for_window", 0);
 
   /* "smelly/layout/stack.py":21
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:
  *         wg = all_windows.group_for_window(window)             # <<<<<<<<<<<<<<
  *         assert wg is not None
@@ -2035,7 +2035,7 @@ static PyObject *__pyx_pf_6smelly_6layout_5stack_5Stack_2neighbors_for_window(CY
 
   /* "smelly/layout/stack.py":20
  *             self.layout_single_window_group(group, add_blank_rects=group is active_group)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -2166,7 +2166,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/stack.py":15
  *     only_active_window_visible = True
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_group = all_windows.active_group
  *         for group in all_windows.iter_all_layoutable_groups():
@@ -2178,7 +2178,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/stack.py":20
  *             self.layout_single_window_group(group, add_blank_rects=group is active_group)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -2473,10 +2473,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/stack.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from smelly.typing import WindowType             # <<<<<<<<<<<<<<
  * from smelly.window_list import WindowList
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2493,10 +2493,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/stack.py":5
- * 
+ *
  * from smelly.typing import WindowType
  * from smelly.window_list import WindowList             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import Layout, NeighborsMap
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2515,10 +2515,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/stack.py":7
  * from smelly.window_list import WindowList
- * 
+ *
  * from .base import Layout, NeighborsMap             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2542,8 +2542,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/stack.py":10
- * 
- * 
+ *
+ *
  * class Stack(Layout):             # <<<<<<<<<<<<<<
  *     name = 'stack'
  *     needs_window_borders = False
@@ -2561,7 +2561,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/layout/stack.py":11
- * 
+ *
  * class Stack(Layout):
  *     name = 'stack'             # <<<<<<<<<<<<<<
  *     needs_window_borders = False
@@ -2574,7 +2574,7 @@ if (!__Pyx_RefNanny) {
  *     name = 'stack'
  *     needs_window_borders = False             # <<<<<<<<<<<<<<
  *     only_active_window_visible = True
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_needs_window_borders, Py_False) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
 
@@ -2582,14 +2582,14 @@ if (!__Pyx_RefNanny) {
  *     name = 'stack'
  *     needs_window_borders = False
  *     only_active_window_visible = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_only_active_window_visible, Py_True) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
 
   /* "smelly/layout/stack.py":15
  *     only_active_window_visible = True
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_group = all_windows.active_group
  *         for group in all_windows.iter_all_layoutable_groups():
@@ -2610,7 +2610,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/stack.py":20
  *             self.layout_single_window_group(group, add_blank_rects=group is active_group)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -2637,8 +2637,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/layout/stack.py":10
- * 
- * 
+ *
+ *
  * class Stack(Layout):             # <<<<<<<<<<<<<<
  *     name = 'stack'
  *     needs_window_borders = False
@@ -2654,7 +2654,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/layout/stack.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3402,8 +3402,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -3555,8 +3555,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

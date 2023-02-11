@@ -982,7 +982,7 @@ struct __pyx_defaults {
 
 /* "smelly/layout/grid.py":60
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         num_windows = all_windows.num_groups
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
@@ -1000,10 +1000,10 @@ struct __pyx_obj_6smelly_6layout_4grid___pyx_scope_struct__apply_bias {
 
 /* "smelly/layout/grid.py":64
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             row_num = col_num = 0
- * 
+ *
  */
 struct __pyx_obj_6smelly_6layout_4grid___pyx_scope_struct_1_position_for_window_idx {
   PyObject_HEAD
@@ -1015,7 +1015,7 @@ struct __pyx_obj_6smelly_6layout_4grid___pyx_scope_struct_1_position_for_window_
 
 /* "smelly/layout/grid.py":109
  *         return True
- * 
+ *
  *     def layout_windows(             # <<<<<<<<<<<<<<
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -1052,7 +1052,7 @@ struct __pyx_obj_6smelly_6layout_4grid___pyx_scope_struct_2_layout_windows {
 
 /* "smelly/layout/grid.py":129
  *             on_col_done(col_windows)
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n == 1:
@@ -1069,7 +1069,7 @@ struct __pyx_obj_6smelly_6layout_4grid___pyx_scope_struct_3_do_layout {
 
 /* "smelly/layout/grid.py":168
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if not lgd.draw_minimal_borders or n < 2:
@@ -1114,7 +1114,7 @@ struct __pyx_obj_6smelly_6layout_4grid___pyx_scope_struct_4_minimal_borders {
 
 /* "smelly/layout/grid.py":207
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  *         def borders_for_window(gid: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *             xl, yl = layout_data_map[gid]
  *             left, right = ends(xl)
@@ -1138,7 +1138,7 @@ struct __pyx_obj_6smelly_6layout_4grid___pyx_scope_struct_5_borders_for_window {
 
 /* "smelly/layout/grid.py":235
  *                     yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n < 4:
@@ -2415,7 +2415,7 @@ static PyObject *__pyx_codeobj__54;
 /* Late includes */
 
 /* "smelly/layout/grid.py":110
- * 
+ *
  *     def layout_windows(
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None             # <<<<<<<<<<<<<<
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -2452,7 +2452,7 @@ static PyObject *__pyx_lambda_funcdef_6smelly_6layout_4grid_lambda(CYTHON_UNUSED
 }
 
 /* "smelly/layout/grid.py":19
- * 
+ *
  * @lru_cache()
  * def calc_grid_size(n: int) -> Tuple[int, int, int, int]:             # <<<<<<<<<<<<<<
  *     if n <= 5:
@@ -2684,7 +2684,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_calc_grid_size(CYTHON_UNUSED PyO
  *     special_rows = n - (nrows * (ncols - 1))
  *     special_col = 0 if special_rows < nrows else ncols - 1             # <<<<<<<<<<<<<<
  *     return ncols, nrows, special_rows, special_col
- * 
+ *
  */
   __pyx_t_6 = PyObject_RichCompare(__pyx_v_special_rows, __pyx_v_nrows, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 28, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -2706,8 +2706,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_calc_grid_size(CYTHON_UNUSED PyO
  *     special_rows = n - (nrows * (ncols - 1))
  *     special_col = 0 if special_rows < nrows else ncols - 1
  *     return ncols, nrows, special_rows, special_col             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_ncols)) { __Pyx_RaiseUnboundLocalError("ncols"); __PYX_ERR(0, 29, __pyx_L1_error) }
@@ -2730,7 +2730,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_calc_grid_size(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly/layout/grid.py":19
- * 
+ *
  * @lru_cache()
  * def calc_grid_size(n: int) -> Tuple[int, int, int, int]:             # <<<<<<<<<<<<<<
  *     if n <= 5:
@@ -2756,7 +2756,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_calc_grid_size(CYTHON_UNUSED PyO
 
 /* "smelly/layout/grid.py":36
  *     no_minimal_window_borders = True
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.biased_rows: Dict[int, float] = {}
  *         self.biased_cols: Dict[int, float] = {}
@@ -2786,7 +2786,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_remove_all_biases(CYTHON_U
   __Pyx_RefNannySetupContext("remove_all_biases", 0);
 
   /* "smelly/layout/grid.py":37
- * 
+ *
  *     def remove_all_biases(self) -> bool:
  *         self.biased_rows: Dict[int, float] = {}             # <<<<<<<<<<<<<<
  *         self.biased_cols: Dict[int, float] = {}
@@ -2802,7 +2802,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_remove_all_biases(CYTHON_U
  *         self.biased_rows: Dict[int, float] = {}
  *         self.biased_cols: Dict[int, float] = {}             # <<<<<<<<<<<<<<
  *         return True
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2813,7 +2813,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_remove_all_biases(CYTHON_U
  *         self.biased_rows: Dict[int, float] = {}
  *         self.biased_cols: Dict[int, float] = {}
  *         return True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def column_layout(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2823,7 +2823,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_remove_all_biases(CYTHON_U
 
   /* "smelly/layout/grid.py":36
  *     no_minimal_window_borders = True
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.biased_rows: Dict[int, float] = {}
  *         self.biased_cols: Dict[int, float] = {}
@@ -2842,7 +2842,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_remove_all_biases(CYTHON_U
 
 /* "smelly/layout/grid.py":41
  *         return True
- * 
+ *
  *     def column_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -2933,7 +2933,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4grid_4Grid_3column_layout(PyObject *_
 
   /* "smelly/layout/grid.py":41
  *         return True
- * 
+ *
  *     def column_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -2964,7 +2964,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_2column_layout(CYTHON_UNUS
  *     ) -> LayoutDimension:
  *         decoration_pairs = tuple(repeat((0, 0), num))             # <<<<<<<<<<<<<<
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_repeat); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3023,7 +3023,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_2column_layout(CYTHON_UNUS
  *     ) -> LayoutDimension:
  *         decoration_pairs = tuple(repeat((0, 0), num))
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def row_layout(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3085,7 +3085,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_2column_layout(CYTHON_UNUS
 
   /* "smelly/layout/grid.py":41
  *         return True
- * 
+ *
  *     def column_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -3109,7 +3109,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_2column_layout(CYTHON_UNUS
 
 /* "smelly/layout/grid.py":49
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def row_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -3200,7 +3200,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4grid_4Grid_5row_layout(PyObject *__py
 
   /* "smelly/layout/grid.py":49
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def row_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -3231,7 +3231,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_4row_layout(CYTHON_UNUSED 
  *     ) -> LayoutDimension:
  *         decoration_pairs = tuple(repeat((0, 0), num))             # <<<<<<<<<<<<<<
  *         return layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_repeat); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3290,7 +3290,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_4row_layout(CYTHON_UNUSED 
  *     ) -> LayoutDimension:
  *         decoration_pairs = tuple(repeat((0, 0), num))
  *         return layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def variable_layout(self, layout_func: Callable[..., LayoutDimension], num_windows: int, biased_map: Dict[int, float]) -> LayoutDimension:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3352,7 +3352,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_4row_layout(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":49
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def row_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -3376,10 +3376,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_4row_layout(CYTHON_UNUSED 
 
 /* "smelly/layout/grid.py":57
  *         return layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def variable_layout(self, layout_func: Callable[..., LayoutDimension], num_windows: int, biased_map: Dict[int, float]) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3483,10 +3483,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_6variable_layout(CYTHON_UN
   __Pyx_RefNannySetupContext("variable_layout", 0);
 
   /* "smelly/layout/grid.py":58
- * 
+ *
  *     def variable_layout(self, layout_func: Callable[..., LayoutDimension], num_windows: int, biased_map: Dict[int, float]) -> LayoutDimension:
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3519,10 +3519,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_6variable_layout(CYTHON_UN
 
   /* "smelly/layout/grid.py":57
  *         return layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def variable_layout(self, layout_func: Callable[..., LayoutDimension], num_windows: int, biased_map: Dict[int, float]) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  */
 
   /* function exit code */
@@ -3541,7 +3541,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_6variable_layout(CYTHON_UN
 
 /* "smelly/layout/grid.py":60
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         num_windows = all_windows.num_groups
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
@@ -3651,10 +3651,10 @@ static PyObject *__pyx_pw_6smelly_6layout_4grid_4Grid_9apply_bias(PyObject *__py
 
 /* "smelly/layout/grid.py":64
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             row_num = col_num = 0
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3673,7 +3673,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4grid_4Grid_10apply_bias_1position_for
 
 /* "smelly/layout/grid.py":67
  *             row_num = col_num = 0
- * 
+ *
  *             def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *                 nonlocal col_num, row_num
  *                 row_num = 0
@@ -3711,7 +3711,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_23position_fo
  *                 nonlocal col_num, row_num
  *                 row_num = 0             # <<<<<<<<<<<<<<
  *                 col_num += 1
- * 
+ *
  */
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_row_num);
@@ -3722,7 +3722,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_23position_fo
  *                 nonlocal col_num, row_num
  *                 row_num = 0
  *                 col_num += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *             for window_idx, xl, yl in self.layout_windows(num_windows, nrows, ncols, special_rows, special_col, on_col_done):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_col_num)) { __Pyx_RaiseClosureNameError("col_num"); __PYX_ERR(0, 70, __pyx_L1_error) }
@@ -3735,7 +3735,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_23position_fo
 
   /* "smelly/layout/grid.py":67
  *             row_num = col_num = 0
- * 
+ *
  *             def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *                 nonlocal col_num, row_num
  *                 row_num = 0
@@ -3756,10 +3756,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_23position_fo
 
 /* "smelly/layout/grid.py":64
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             row_num = col_num = 0
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_window_idx(PyObject *__pyx_self, PyObject *__pyx_v_idx) {
@@ -3798,10 +3798,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
 
   /* "smelly/layout/grid.py":65
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:
  *             row_num = col_num = 0             # <<<<<<<<<<<<<<
- * 
+ *
  *             def on_col_done(col_windows: List[int]) -> None:
  */
   __Pyx_INCREF(__pyx_int_0);
@@ -3813,7 +3813,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
 
   /* "smelly/layout/grid.py":67
  *             row_num = col_num = 0
- * 
+ *
  *             def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *                 nonlocal col_num, row_num
  *                 row_num = 0
@@ -3837,7 +3837,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
 
   /* "smelly/layout/grid.py":72
  *                 col_num += 1
- * 
+ *
  *             for window_idx, xl, yl in self.layout_windows(num_windows, nrows, ncols, special_rows, special_col, on_col_done):             # <<<<<<<<<<<<<<
  *                 if idx == window_idx:
  *                     return row_num, col_num
@@ -3957,13 +3957,13 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_8 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_8 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_2);
@@ -4008,7 +4008,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
     __pyx_t_8 = 0;
 
     /* "smelly/layout/grid.py":73
- * 
+ *
  *             for window_idx, xl, yl in self.layout_windows(num_windows, nrows, ncols, special_rows, special_col, on_col_done):
  *                 if idx == window_idx:             # <<<<<<<<<<<<<<
  *                     return row_num, col_num
@@ -4041,7 +4041,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
       goto __pyx_L0;
 
       /* "smelly/layout/grid.py":73
- * 
+ *
  *             for window_idx, xl, yl in self.layout_windows(num_windows, nrows, ncols, special_rows, special_col, on_col_done):
  *                 if idx == window_idx:             # <<<<<<<<<<<<<<
  *                     return row_num, col_num
@@ -4054,7 +4054,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
  *                     return row_num, col_num
  *                 row_num += 1             # <<<<<<<<<<<<<<
  *             return 0, 0
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_cur_scope->__pyx_v_row_num, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -4065,7 +4065,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
 
     /* "smelly/layout/grid.py":72
  *                 col_num += 1
- * 
+ *
  *             for window_idx, xl, yl in self.layout_windows(num_windows, nrows, ncols, special_rows, special_col, on_col_done):             # <<<<<<<<<<<<<<
  *                 if idx == window_idx:
  *                     return row_num, col_num
@@ -4077,7 +4077,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
  *                     return row_num, col_num
  *                 row_num += 1
  *             return 0, 0             # <<<<<<<<<<<<<<
- * 
+ *
  *         row_num, col_num = position_for_window_idx(idx)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4087,10 +4087,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
 
   /* "smelly/layout/grid.py":64
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             row_num = col_num = 0
- * 
+ *
  */
 
   /* function exit code */
@@ -4116,10 +4116,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_
 
 /* "smelly/layout/grid.py":87
  *             attr = 'biased_cols'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.column_layout(num_windows, bias=bias)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4208,10 +4208,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_2layout_func(
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/layout/grid.py":88
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:
  *                 return self.column_layout(num_windows, bias=bias)             # <<<<<<<<<<<<<<
- * 
+ *
  *         else:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4238,10 +4238,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_2layout_func(
 
   /* "smelly/layout/grid.py":87
  *             attr = 'biased_cols'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.column_layout(num_windows, bias=bias)
- * 
+ *
  */
 
   /* function exit code */
@@ -4260,10 +4260,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_2layout_func(
 
 /* "smelly/layout/grid.py":97
  *             attr = 'biased_rows'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.row_layout(num_windows, bias=bias)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4352,10 +4352,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_4layout_func(
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/layout/grid.py":98
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:
  *                 return self.row_layout(num_windows, bias=bias)             # <<<<<<<<<<<<<<
- * 
+ *
  *         before_layout = list(self.variable_layout(layout_func, num_windows, b))
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4382,10 +4382,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_4layout_func(
 
   /* "smelly/layout/grid.py":97
  *             attr = 'biased_rows'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.row_layout(num_windows, bias=bias)
- * 
+ *
  */
 
   /* function exit code */
@@ -4404,7 +4404,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_4layout_func(
 
 /* "smelly/layout/grid.py":60
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         num_windows = all_windows.num_groups
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
@@ -4451,11 +4451,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly/layout/grid.py":61
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:
  *         num_windows = all_windows.num_groups             # <<<<<<<<<<<<<<
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_num_groups); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4467,7 +4467,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:
  *         num_windows = all_windows.num_groups
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_calc_grid_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)
@@ -4497,15 +4497,15 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -4561,10 +4561,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":64
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             row_num = col_num = 0
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4594,9 +4594,9 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":78
  *             return 0, 0
- * 
+ *
  *         row_num, col_num = position_for_window_idx(idx)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if is_horizontal:
  */
   __pyx_t_3 = __pyx_pf_6smelly_6layout_4grid_4Grid_10apply_bias_position_for_window_idx(__pyx_v_position_for_window_idx, __pyx_v_idx); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -4611,11 +4611,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_4);
@@ -4654,7 +4654,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":80
  *         row_num, col_num = position_for_window_idx(idx)
- * 
+ *
  *         if is_horizontal:             # <<<<<<<<<<<<<<
  *             b = self.biased_cols
  *             if ncols < 2:
@@ -4663,7 +4663,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
   if (__pyx_t_8) {
 
     /* "smelly/layout/grid.py":81
- * 
+ *
  *         if is_horizontal:
  *             b = self.biased_cols             # <<<<<<<<<<<<<<
  *             if ncols < 2:
@@ -4712,7 +4712,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
  *                 return False
  *             bias_idx = col_num             # <<<<<<<<<<<<<<
  *             attr = 'biased_cols'
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_col_num);
     __pyx_v_bias_idx = __pyx_v_col_num;
@@ -4721,7 +4721,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
  *                 return False
  *             bias_idx = col_num
  *             attr = 'biased_cols'             # <<<<<<<<<<<<<<
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:
  */
     __Pyx_INCREF(__pyx_n_s_biased_cols);
@@ -4729,10 +4729,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
     /* "smelly/layout/grid.py":87
  *             attr = 'biased_cols'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.column_layout(num_windows, bias=bias)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -4767,7 +4767,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
     /* "smelly/layout/grid.py":80
  *         row_num, col_num = position_for_window_idx(idx)
- * 
+ *
  *         if is_horizontal:             # <<<<<<<<<<<<<<
  *             b = self.biased_cols
  *             if ncols < 2:
@@ -4776,7 +4776,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
   }
 
   /* "smelly/layout/grid.py":91
- * 
+ *
  *         else:
  *             b = self.biased_rows             # <<<<<<<<<<<<<<
  *             if max(nrows, special_rows) < 2:
@@ -4843,7 +4843,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
  *                 return False
  *             bias_idx = row_num             # <<<<<<<<<<<<<<
  *             attr = 'biased_rows'
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_row_num);
     __pyx_v_bias_idx = __pyx_v_row_num;
@@ -4852,7 +4852,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
  *                 return False
  *             bias_idx = row_num
  *             attr = 'biased_rows'             # <<<<<<<<<<<<<<
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:
  */
     __Pyx_INCREF(__pyx_n_s_biased_rows);
@@ -4860,10 +4860,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
     /* "smelly/layout/grid.py":97
  *             attr = 'biased_rows'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.row_layout(num_windows, bias=bias)
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4900,7 +4900,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":100
  *                 return self.row_layout(num_windows, bias=bias)
- * 
+ *
  *         before_layout = list(self.variable_layout(layout_func, num_windows, b))             # <<<<<<<<<<<<<<
  *         candidate = b.copy()
  *         before = candidate.get(bias_idx, 0)
@@ -4962,7 +4962,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
   __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":101
- * 
+ *
  *         before_layout = list(self.variable_layout(layout_func, num_windows, b))
  *         candidate = b.copy()             # <<<<<<<<<<<<<<
  *         before = candidate.get(bias_idx, 0)
@@ -5152,7 +5152,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
  *             return False
  *         setattr(self, attr, candidate)             # <<<<<<<<<<<<<<
  *         return True
- * 
+ *
  */
   __pyx_t_3 = __pyx_cur_scope->__pyx_v_self;
   __Pyx_INCREF(__pyx_t_3);
@@ -5163,7 +5163,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
  *             return False
  *         setattr(self, attr, candidate)
  *         return True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def layout_windows(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5173,7 +5173,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_8apply_bias(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":60
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         num_windows = all_windows.num_groups
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
@@ -5209,7 +5209,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_12generator(__pyx_Coroutin
 
 /* "smelly/layout/grid.py":109
  *         return True
- * 
+ *
  *     def layout_windows(             # <<<<<<<<<<<<<<
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -5946,7 +5946,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_12generator(__pyx_Coroutin
  *                 col_windows.append(window_idx)
  *             pos += rows             # <<<<<<<<<<<<<<
  *             on_col_done(col_windows)
- * 
+ *
  */
     __pyx_t_2 = PyNumber_InPlaceAdd(__pyx_cur_scope->__pyx_v_pos, __pyx_cur_scope->__pyx_v_rows); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -5959,7 +5959,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_12generator(__pyx_Coroutin
  *                 col_windows.append(window_idx)
  *             pos += rows
  *             on_col_done(col_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:
  */
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_on_col_done);
@@ -5993,7 +5993,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_12generator(__pyx_Coroutin
 
   /* "smelly/layout/grid.py":109
  *         return True
- * 
+ *
  *     def layout_windows(             # <<<<<<<<<<<<<<
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -6024,7 +6024,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_12generator(__pyx_Coroutin
 
 /* "smelly/layout/grid.py":129
  *             on_col_done(col_windows)
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n == 1:
@@ -6097,7 +6097,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4grid_4Grid_14do_layout(PyObject *__py
 
 /* "smelly/layout/grid.py":138
  *         win_col_map: List[List[WindowGroup]] = []
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             col_windows_w = [groups[i] for i in col_windows]
  *             win_col_map.append(col_windows_w)
@@ -6138,11 +6138,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_on_col_done(PyO
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/layout/grid.py":139
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:
  *             col_windows_w = [groups[i] for i in col_windows]             # <<<<<<<<<<<<<<
  *             win_col_map.append(col_windows_w)
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6205,7 +6205,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_on_col_done(PyO
  *         def on_col_done(col_windows: List[int]) -> None:
  *             col_windows_w = [groups[i] for i in col_windows]
  *             win_col_map.append(col_windows_w)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def extents(ld: LayoutData) -> Tuple[int, int]:
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_win_col_map)) { __Pyx_RaiseClosureNameError("win_col_map"); __PYX_ERR(0, 140, __pyx_L1_error) }
@@ -6217,7 +6217,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_on_col_done(PyO
 
   /* "smelly/layout/grid.py":138
  *         win_col_map: List[List[WindowGroup]] = []
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             col_windows_w = [groups[i] for i in col_windows]
  *             win_col_map.append(col_windows_w)
@@ -6242,7 +6242,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_on_col_done(PyO
 
 /* "smelly/layout/grid.py":142
  *             win_col_map.append(col_windows_w)
- * 
+ *
  *         def extents(ld: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             start = ld.content_pos - ld.space_before
  *             size = ld.space_before + ld.space_after + ld.content_size
@@ -6276,7 +6276,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_2extents(CYTHON
   __Pyx_RefNannySetupContext("extents", 0);
 
   /* "smelly/layout/grid.py":143
- * 
+ *
  *         def extents(ld: LayoutData) -> Tuple[int, int]:
  *             start = ld.content_pos - ld.space_before             # <<<<<<<<<<<<<<
  *             size = ld.space_before + ld.space_after + ld.content_size
@@ -6298,7 +6298,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_2extents(CYTHON
  *             start = ld.content_pos - ld.space_before
  *             size = ld.space_before + ld.space_after + ld.content_size             # <<<<<<<<<<<<<<
  *             return start, size
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_ld, __pyx_n_s_space_before); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -6321,7 +6321,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_2extents(CYTHON
  *             start = ld.content_pos - ld.space_before
  *             size = ld.space_before + ld.space_after + ld.content_size
  *             return start, size             # <<<<<<<<<<<<<<
- * 
+ *
  *         def layout(ld: LayoutData, cell_length: int, before_dec: int, after_dec: int) -> LayoutData:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6339,7 +6339,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_2extents(CYTHON
 
   /* "smelly/layout/grid.py":142
  *             win_col_map.append(col_windows_w)
- * 
+ *
  *         def extents(ld: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             start = ld.content_pos - ld.space_before
  *             size = ld.space_before + ld.space_after + ld.content_size
@@ -6362,7 +6362,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_2extents(CYTHON
 
 /* "smelly/layout/grid.py":147
  *             return start, size
- * 
+ *
  *         def layout(ld: LayoutData, cell_length: int, before_dec: int, after_dec: int) -> LayoutData:             # <<<<<<<<<<<<<<
  *             start, size = extents(ld)
  *             space_needed_for_decorations = before_dec + after_dec
@@ -6487,7 +6487,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_4layout(PyObjec
   __Pyx_INCREF(__pyx_v_before_dec);
 
   /* "smelly/layout/grid.py":148
- * 
+ *
  *         def layout(ld: LayoutData, cell_length: int, before_dec: int, after_dec: int) -> LayoutData:
  *             start, size = extents(ld)             # <<<<<<<<<<<<<<
  *             space_needed_for_decorations = before_dec + after_dec
@@ -6506,11 +6506,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_4layout(PyObjec
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -6639,7 +6639,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_4layout(PyObjec
  *             if extra > 0 and not lgd.align_top_left:
  *                 before_dec += extra // 2             # <<<<<<<<<<<<<<
  *             return LayoutData(start + before_dec, number_of_cells, before_dec, size - cell_area - before_dec, cell_area)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyInt_FloorDivideObjC(__pyx_v_extra, __pyx_int_2, 2, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 155, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -6662,7 +6662,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_4layout(PyObjec
  *             if extra > 0 and not lgd.align_top_left:
  *                 before_dec += extra // 2
  *             return LayoutData(start + before_dec, number_of_cells, before_dec, size - cell_area - before_dec, cell_area)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def position_window_in_grid_cell(window_idx: int, xl: LayoutData, yl: LayoutData) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6739,7 +6739,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_4layout(PyObjec
 
   /* "smelly/layout/grid.py":147
  *             return start, size
- * 
+ *
  *         def layout(ld: LayoutData, cell_length: int, before_dec: int, after_dec: int) -> LayoutData:             # <<<<<<<<<<<<<<
  *             start, size = extents(ld)
  *             space_needed_for_decorations = before_dec + after_dec
@@ -6771,7 +6771,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_4layout(PyObjec
 
 /* "smelly/layout/grid.py":158
  *             return LayoutData(start + before_dec, number_of_cells, before_dec, size - cell_area - before_dec, cell_area)
- * 
+ *
  *         def position_window_in_grid_cell(window_idx: int, xl: LayoutData, yl: LayoutData) -> None:             # <<<<<<<<<<<<<<
  *             wg = groups[window_idx]
  *             edges = Edges(wg.decoration('left'), wg.decoration('top'), wg.decoration('right'), wg.decoration('bottom'))
@@ -6879,7 +6879,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_6position_windo
   __Pyx_INCREF(__pyx_v_yl);
 
   /* "smelly/layout/grid.py":159
- * 
+ *
  *         def position_window_in_grid_cell(window_idx: int, xl: LayoutData, yl: LayoutData) -> None:
  *             wg = groups[window_idx]             # <<<<<<<<<<<<<<
  *             edges = Edges(wg.decoration('left'), wg.decoration('top'), wg.decoration('right'), wg.decoration('bottom'))
@@ -7064,7 +7064,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_6position_windo
  *             xl = layout(xl, lgd.cell_width, edges.left, edges.right)
  *             yl = layout(yl, lgd.cell_height, edges.top, edges.bottom)             # <<<<<<<<<<<<<<
  *             self.set_window_group_geometry(wg, xl, yl)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_lgd); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -7088,7 +7088,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_6position_windo
  *             xl = layout(xl, lgd.cell_width, edges.left, edges.right)
  *             yl = layout(yl, lgd.cell_height, edges.top, edges.bottom)
  *             self.set_window_group_geometry(wg, xl, yl)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 163, __pyx_L1_error) }
@@ -7146,7 +7146,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_6position_windo
 
   /* "smelly/layout/grid.py":158
  *             return LayoutData(start + before_dec, number_of_cells, before_dec, size - cell_area - before_dec, cell_area)
- * 
+ *
  *         def position_window_in_grid_cell(window_idx: int, xl: LayoutData, yl: LayoutData) -> None:             # <<<<<<<<<<<<<<
  *             wg = groups[window_idx]
  *             edges = Edges(wg.decoration('left'), wg.decoration('top'), wg.decoration('right'), wg.decoration('bottom'))
@@ -7178,7 +7178,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_6position_windo
 
 /* "smelly/layout/grid.py":129
  *             on_col_done(col_windows)
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n == 1:
@@ -7226,7 +7226,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly/layout/grid.py":130
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:
  *         n = all_windows.num_groups             # <<<<<<<<<<<<<<
  *         if n == 1:
@@ -7351,15 +7351,15 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_5);
@@ -7414,7 +7414,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
  *         ncols, nrows, special_rows, special_col = calc_grid_size(n)
  *         groups = tuple(all_windows.iter_all_layoutable_groups())             # <<<<<<<<<<<<<<
  *         win_col_map: List[List[WindowGroup]] = []
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_iter_all_layoutable_groups); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -7444,7 +7444,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
  *         ncols, nrows, special_rows, special_col = calc_grid_size(n)
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         win_col_map: List[List[WindowGroup]] = []             # <<<<<<<<<<<<<<
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:
  */
   __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
@@ -7455,7 +7455,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":138
  *         win_col_map: List[List[WindowGroup]] = []
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             col_windows_w = [groups[i] for i in col_windows]
  *             win_col_map.append(col_windows_w)
@@ -7479,7 +7479,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":142
  *             win_col_map.append(col_windows_w)
- * 
+ *
  *         def extents(ld: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             start = ld.content_pos - ld.space_before
  *             size = ld.space_before + ld.space_after + ld.content_size
@@ -7516,7 +7516,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":147
  *             return start, size
- * 
+ *
  *         def layout(ld: LayoutData, cell_length: int, before_dec: int, after_dec: int) -> LayoutData:             # <<<<<<<<<<<<<<
  *             start, size = extents(ld)
  *             space_needed_for_decorations = before_dec + after_dec
@@ -7544,7 +7544,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":158
  *             return LayoutData(start + before_dec, number_of_cells, before_dec, size - cell_area - before_dec, cell_area)
- * 
+ *
  *         def position_window_in_grid_cell(window_idx: int, xl: LayoutData, yl: LayoutData) -> None:             # <<<<<<<<<<<<<<
  *             wg = groups[window_idx]
  *             edges = Edges(wg.decoration('left'), wg.decoration('top'), wg.decoration('right'), wg.decoration('bottom'))
@@ -7570,10 +7570,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
 
   /* "smelly/layout/grid.py":165
  *             self.set_window_group_geometry(wg, xl, yl)
- * 
+ *
  *         for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):             # <<<<<<<<<<<<<<
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_layout_windows); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7684,13 +7684,13 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_1);
@@ -7735,10 +7735,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
     __pyx_t_3 = 0;
 
     /* "smelly/layout/grid.py":166
- * 
+ *
  *         for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):
  *             position_window_in_grid_cell(window_idx, xl, yl)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:
  */
     __pyx_t_5 = __pyx_pf_6smelly_6layout_4grid_4Grid_9do_layout_6position_window_in_grid_cell(__pyx_v_position_window_in_grid_cell, __pyx_v_window_idx, __pyx_v_xl, __pyx_v_yl); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 166, __pyx_L1_error)
@@ -7747,17 +7747,17 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_13do_layout(CYTHON_UNUSED 
 
     /* "smelly/layout/grid.py":165
  *             self.set_window_group_geometry(wg, xl, yl)
- * 
+ *
  *         for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):             # <<<<<<<<<<<<<<
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/layout/grid.py":129
  *             on_col_done(col_windows)
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n == 1:
@@ -7795,7 +7795,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
 /* "smelly/layout/grid.py":168
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if not lgd.draw_minimal_borders or n < 2:
@@ -7909,7 +7909,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_15minimal_borders(CYTHON_U
 
 /* "smelly/layout/grid.py":187
  *         layout_data_map: Dict[int, Tuple[LayoutData, LayoutData]] = {}
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             nonlocal prev_col_windows, is_first_column
  *             if col_windows:
@@ -8043,7 +8043,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_15minimal_borders_on_col_d
  *             if not prev_col_windows:
  *                 is_first_column = {groups[x].id for x in col_windows}             # <<<<<<<<<<<<<<
  *             prev_col_windows = col_windows
- * 
+ *
  */
     { /* enter inner scope */
       __pyx_t_2 = PySet_New(NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 193, __pyx_L7_error)
@@ -8128,7 +8128,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_15minimal_borders_on_col_d
  *             if not prev_col_windows:
  *                 is_first_column = {groups[x].id for x in col_windows}
  *             prev_col_windows = col_windows             # <<<<<<<<<<<<<<
- * 
+ *
  *         all_groups_in_order: List[WindowGroup] = []
  */
   __Pyx_INCREF(__pyx_v_col_windows);
@@ -8138,7 +8138,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_15minimal_borders_on_col_d
 
   /* "smelly/layout/grid.py":187
  *         layout_data_map: Dict[int, Tuple[LayoutData, LayoutData]] = {}
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             nonlocal prev_col_windows, is_first_column
  *             if col_windows:
@@ -8163,10 +8163,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_15minimal_borders_on_col_d
 
 /* "smelly/layout/grid.py":204
  *         active_group = all_windows.active_group
- * 
+ *
  *         def ends(yl: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8196,10 +8196,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_15minimal_borders_2ends(CY
   __Pyx_RefNannySetupContext("ends", 0);
 
   /* "smelly/layout/grid.py":205
- * 
+ *
  *         def ends(yl: LayoutData) -> Tuple[int, int]:
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after             # <<<<<<<<<<<<<<
- * 
+ *
  *         def borders_for_window(gid: int) -> Generator[Edges, None, None]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8239,10 +8239,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_15minimal_borders_2ends(CY
 
   /* "smelly/layout/grid.py":204
  *         active_group = all_windows.active_group
- * 
+ *
  *         def ends(yl: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  */
 
   /* function exit code */
@@ -8262,7 +8262,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
 
 /* "smelly/layout/grid.py":207
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  *         def borders_for_window(gid: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *             xl, yl = layout_data_map[gid]
  *             left, right = ends(xl)
@@ -8353,7 +8353,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 207, __pyx_L1_error)
 
   /* "smelly/layout/grid.py":208
- * 
+ *
  *         def borders_for_window(gid: int) -> Generator[Edges, None, None]:
  *             xl, yl = layout_data_map[gid]             # <<<<<<<<<<<<<<
  *             left, right = ends(xl)
@@ -8376,11 +8376,11 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -8439,11 +8439,11 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_2);
@@ -8502,11 +8502,11 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -8550,7 +8550,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *             top, bottom = ends(yl)
  *             first_row, last_row = gid in is_first_row, gid in is_last_row             # <<<<<<<<<<<<<<
  *             first_column, last_column = gid in is_first_column, gid in is_last_column
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_is_first_row)) { __Pyx_RaiseClosureNameError("is_first_row"); __PYX_ERR(0, 211, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_is_first_row == Py_None)) {
@@ -8579,7 +8579,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *             top, bottom = ends(yl)
  *             first_row, last_row = gid in is_first_row, gid in is_last_row
  *             first_column, last_column = gid in is_first_column, gid in is_last_column             # <<<<<<<<<<<<<<
- * 
+ *
  *             # Horizontal
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_is_first_column)) { __Pyx_RaiseClosureNameError("is_first_column"); __PYX_ERR(0, 212, __pyx_L1_error) }
@@ -8606,7 +8606,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
   __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":215
- * 
+ *
  *             # Horizontal
  *             if not first_row:             # <<<<<<<<<<<<<<
  *                 yield Edges(left, top, right, top + bw)
@@ -8693,7 +8693,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
     if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 216, __pyx_L1_error)
 
     /* "smelly/layout/grid.py":215
- * 
+ *
  *             # Horizontal
  *             if not first_row:             # <<<<<<<<<<<<<<
  *                 yield Edges(left, top, right, top + bw)
@@ -8706,7 +8706,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *                 yield Edges(left, top, right, top + bw)
  *             if not last_row:             # <<<<<<<<<<<<<<
  *                 yield Edges(left, bottom - bw, right, bottom)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_last_row); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 217, __pyx_L1_error)
   __pyx_t_6 = ((!__pyx_t_7) != 0);
@@ -8716,7 +8716,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *                 yield Edges(left, top, right, top + bw)
  *             if not last_row:
  *                 yield Edges(left, bottom - bw, right, bottom)             # <<<<<<<<<<<<<<
- * 
+ *
  *             # Vertical
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Edges); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 218, __pyx_L1_error)
@@ -8793,12 +8793,12 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *                 yield Edges(left, top, right, top + bw)
  *             if not last_row:             # <<<<<<<<<<<<<<
  *                 yield Edges(left, bottom - bw, right, bottom)
- * 
+ *
  */
   }
 
   /* "smelly/layout/grid.py":221
- * 
+ *
  *             # Vertical
  *             if not first_column:             # <<<<<<<<<<<<<<
  *                 yield Edges(left, top, left + bw, bottom)
@@ -8885,7 +8885,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
     if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 222, __pyx_L1_error)
 
     /* "smelly/layout/grid.py":221
- * 
+ *
  *             # Vertical
  *             if not first_column:             # <<<<<<<<<<<<<<
  *                 yield Edges(left, top, left + bw, bottom)
@@ -8898,7 +8898,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *                 yield Edges(left, top, left + bw, bottom)
  *             if not last_column:             # <<<<<<<<<<<<<<
  *                 yield Edges(right - bw, top, right, bottom)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_last_column); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 223, __pyx_L1_error)
   __pyx_t_6 = ((!__pyx_t_7) != 0);
@@ -8908,7 +8908,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *                 yield Edges(left, top, left + bw, bottom)
  *             if not last_column:
  *                 yield Edges(right - bw, top, right, bottom)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for wg in all_groups_in_order:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Edges); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 224, __pyx_L1_error)
@@ -8985,14 +8985,14 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
  *                 yield Edges(left, top, left + bw, bottom)
  *             if not last_column:             # <<<<<<<<<<<<<<
  *                 yield Edges(right - bw, top, right, bottom)
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/layout/grid.py":207
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  *         def borders_for_window(gid: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *             xl, yl = layout_data_map[gid]
  *             left, right = ends(xl)
@@ -9021,7 +9021,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_15minimal_borders_6generat
 
 /* "smelly/layout/grid.py":168
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if not lgd.draw_minimal_borders or n < 2:
@@ -9063,7 +9063,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 168, __pyx_L1_error)
 
   /* "smelly/layout/grid.py":169
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:
  *         n = all_windows.num_groups             # <<<<<<<<<<<<<<
  *         if not lgd.draw_minimal_borders or n < 2:
@@ -9190,15 +9190,15 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_7);
@@ -9458,7 +9458,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
  *         yl: LayoutData = LayoutData()
  *         prev_col_windows: List[int] = []             # <<<<<<<<<<<<<<
  *         layout_data_map: Dict[int, Tuple[LayoutData, LayoutData]] = {}
- * 
+ *
  */
   __pyx_t_8 = PyList_New(0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 184, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -9470,7 +9470,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
  *         yl: LayoutData = LayoutData()
  *         prev_col_windows: List[int] = []
  *         layout_data_map: Dict[int, Tuple[LayoutData, LayoutData]] = {}             # <<<<<<<<<<<<<<
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L1_error)
@@ -9481,7 +9481,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
   /* "smelly/layout/grid.py":187
  *         layout_data_map: Dict[int, Tuple[LayoutData, LayoutData]] = {}
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             nonlocal prev_col_windows, is_first_column
  *             if col_windows:
@@ -9506,7 +9506,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
   /* "smelly/layout/grid.py":196
  *             prev_col_windows = col_windows
- * 
+ *
  *         all_groups_in_order: List[WindowGroup] = []             # <<<<<<<<<<<<<<
  *         for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):
  *             wg = groups[window_idx]
@@ -9518,7 +9518,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
   __pyx_t_3 = 0;
 
   /* "smelly/layout/grid.py":197
- * 
+ *
  *         all_groups_in_order: List[WindowGroup] = []
  *         for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):             # <<<<<<<<<<<<<<
  *             wg = groups[window_idx]
@@ -9633,13 +9633,13 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_6);
@@ -9734,7 +9734,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/layout/grid.py":197
- * 
+ *
  *         all_groups_in_order: List[WindowGroup] = []
  *         for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):             # <<<<<<<<<<<<<<
  *             wg = groups[window_idx]
@@ -9748,7 +9748,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
  *             layout_data_map[wg.id] = xl, yl
  *         is_last_column = {groups[x].id for x in prev_col_windows}             # <<<<<<<<<<<<<<
  *         active_group = all_windows.active_group
- * 
+ *
  */
   { /* enter inner scope */
     __pyx_t_8 = PySet_New(NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 201, __pyx_L1_error)
@@ -9815,7 +9815,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
  *             layout_data_map[wg.id] = xl, yl
  *         is_last_column = {groups[x].id for x in prev_col_windows}
  *         active_group = all_windows.active_group             # <<<<<<<<<<<<<<
- * 
+ *
  *         def ends(yl: LayoutData) -> Tuple[int, int]:
  */
   __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_all_windows, __pyx_n_s_active_group); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 202, __pyx_L1_error)
@@ -9826,10 +9826,10 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
   /* "smelly/layout/grid.py":204
  *         active_group = all_windows.active_group
- * 
+ *
  *         def ends(yl: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -9863,7 +9863,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
   /* "smelly/layout/grid.py":207
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  *         def borders_for_window(gid: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *             xl, yl = layout_data_map[gid]
  *             left, right = ends(xl)
@@ -9902,7 +9902,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
   /* "smelly/layout/grid.py":226
  *                 yield Edges(right - bw, top, right, bottom)
- * 
+ *
  *         for wg in all_groups_in_order:             # <<<<<<<<<<<<<<
  *             for edges in borders_for_window(wg.id):
  *                 yield BorderLine(edges)
@@ -9922,7 +9922,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
     __pyx_t_1 = 0;
 
     /* "smelly/layout/grid.py":227
- * 
+ *
  *         for wg in all_groups_in_order:
  *             for edges in borders_for_window(wg.id):             # <<<<<<<<<<<<<<
  *                 yield BorderLine(edges)
@@ -10030,7 +10030,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
       if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 228, __pyx_L1_error)
 
       /* "smelly/layout/grid.py":227
- * 
+ *
  *         for wg in all_groups_in_order:
  *             for edges in borders_for_window(wg.id):             # <<<<<<<<<<<<<<
  *                 yield BorderLine(edges)
@@ -10041,7 +10041,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
     /* "smelly/layout/grid.py":226
  *                 yield Edges(right - bw, top, right, bottom)
- * 
+ *
  *         for wg in all_groups_in_order:             # <<<<<<<<<<<<<<
  *             for edges in borders_for_window(wg.id):
  *                 yield BorderLine(edges)
@@ -10136,7 +10136,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
  *                 color = BorderColor.active if wg is active_group else BorderColor.bell
  *                 for edges in borders_for_window(wg.id):             # <<<<<<<<<<<<<<
  *                     yield BorderLine(edges, color)
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_wg, __pyx_n_s_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -10192,7 +10192,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
  *                 color = BorderColor.active if wg is active_group else BorderColor.bell
  *                 for edges in borders_for_window(wg.id):
  *                     yield BorderLine(edges, color)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:
  */
         __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_BorderLine); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 233, __pyx_L1_error)
@@ -10274,7 +10274,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
  *                 color = BorderColor.active if wg is active_group else BorderColor.bell
  *                 for edges in borders_for_window(wg.id):             # <<<<<<<<<<<<<<
  *                     yield BorderLine(edges, color)
- * 
+ *
  */
       }
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -10301,7 +10301,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
   /* "smelly/layout/grid.py":168
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if not lgd.draw_minimal_borders or n < 2:
@@ -10331,7 +10331,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_17generator1(__pyx_Corouti
 
 /* "smelly/layout/grid.py":235
  *                     yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n < 4:
@@ -10415,7 +10415,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4grid_4Grid_19neighbors_for_window(PyO
 
 /* "smelly/layout/grid.py":257
  *         row, col = pos_map[wg.id]
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             try:
  *                 ans = matrix[row][col]
@@ -10508,7 +10508,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_nei
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/layout/grid.py":258
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:
  *             try:             # <<<<<<<<<<<<<<
  *                 ans = matrix[row][col]
@@ -10544,7 +10544,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_nei
       __pyx_t_5 = 0;
 
       /* "smelly/layout/grid.py":258
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:
  *             try:             # <<<<<<<<<<<<<<
  *                 ans = matrix[row][col]
@@ -10579,7 +10579,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_nei
  *             except IndexError:
  *                 ans = None             # <<<<<<<<<<<<<<
  *             return [] if ans is None else [ans]
- * 
+ *
  */
       __Pyx_INCREF(Py_None);
       __Pyx_XDECREF_SET(__pyx_v_ans, Py_None);
@@ -10592,7 +10592,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_nei
     __pyx_L5_except_error:;
 
     /* "smelly/layout/grid.py":258
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:
  *             try:             # <<<<<<<<<<<<<<
  *                 ans = matrix[row][col]
@@ -10615,7 +10615,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_nei
  *             except IndexError:
  *                 ans = None
  *             return [] if ans is None else [ans]             # <<<<<<<<<<<<<<
- * 
+ *
  *         def side(row: int, col: int, delta: int) -> List[int]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10640,7 +10640,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_nei
 
   /* "smelly/layout/grid.py":257
  *         row, col = pos_map[wg.id]
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             try:
  *                 ans = matrix[row][col]
@@ -10662,7 +10662,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_nei
 
 /* "smelly/layout/grid.py":264
  *             return [] if ans is None else [ans]
- * 
+ *
  *         def side(row: int, col: int, delta: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             neighbor_col = col + delta
  *             neighbor_nrows = col_counts[neighbor_col]
@@ -10772,7 +10772,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/layout/grid.py":265
- * 
+ *
  *         def side(row: int, col: int, delta: int) -> List[int]:
  *             neighbor_col = col + delta             # <<<<<<<<<<<<<<
  *             neighbor_nrows = col_counts[neighbor_col]
@@ -10822,7 +10822,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
  *             nrows = col_counts[col]
  *             if neighbor_nrows == nrows:             # <<<<<<<<<<<<<<
  *                 return neighbors(row, neighbor_col)
- * 
+ *
  */
   __pyx_t_1 = PyObject_RichCompare(__pyx_v_neighbor_nrows, __pyx_v_nrows, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 268, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 268, __pyx_L1_error)
@@ -10833,7 +10833,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
  *             nrows = col_counts[col]
  *             if neighbor_nrows == nrows:
  *                 return neighbors(row, neighbor_col)             # <<<<<<<<<<<<<<
- * 
+ *
  *             start_row = floor(neighbor_nrows * row / nrows)
  */
     __Pyx_XDECREF(__pyx_r);
@@ -10849,13 +10849,13 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
  *             nrows = col_counts[col]
  *             if neighbor_nrows == nrows:             # <<<<<<<<<<<<<<
  *                 return neighbors(row, neighbor_col)
- * 
+ *
  */
   }
 
   /* "smelly/layout/grid.py":271
  *                 return neighbors(row, neighbor_col)
- * 
+ *
  *             start_row = floor(neighbor_nrows * row / nrows)             # <<<<<<<<<<<<<<
  *             end_row = ceil(neighbor_nrows * (row + 1) / nrows)
  *             xs = []
@@ -10887,7 +10887,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
   __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":272
- * 
+ *
  *             start_row = floor(neighbor_nrows * row / nrows)
  *             end_row = ceil(neighbor_nrows * (row + 1) / nrows)             # <<<<<<<<<<<<<<
  *             xs = []
@@ -11000,7 +11000,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
  *             for neighbor_row in range(start_row, end_row):
  *                 xs.extend(neighbors(neighbor_row, neighbor_col))             # <<<<<<<<<<<<<<
  *             return xs
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_neighbors)) { __Pyx_RaiseClosureNameError("neighbors"); __PYX_ERR(0, 275, __pyx_L1_error) }
     __pyx_t_3 = __pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_neighbors(__pyx_cur_scope->__pyx_v_neighbors, __pyx_v_neighbor_row, __pyx_v_neighbor_col); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 275, __pyx_L1_error)
@@ -11022,7 +11022,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
  *             for neighbor_row in range(start_row, end_row):
  *                 xs.extend(neighbors(neighbor_row, neighbor_col))
  *             return xs             # <<<<<<<<<<<<<<
- * 
+ *
  *         return {
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11032,7 +11032,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20neighbors_for_window_2si
 
   /* "smelly/layout/grid.py":264
  *             return [] if ans is None else [ans]
- * 
+ *
  *         def side(row: int, col: int, delta: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             neighbor_col = col + delta
  *             neighbor_nrows = col_counts[neighbor_col]
@@ -11246,7 +11246,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4grid_4Grid_20neighbors_for_window_6ge
 
 /* "smelly/layout/grid.py":235
  *                     yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n < 4:
@@ -11298,7 +11298,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
   }
 
   /* "smelly/layout/grid.py":236
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:
  *         n = all_windows.num_groups             # <<<<<<<<<<<<<<
  *         if n < 4:
@@ -11314,7 +11314,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
  *         n = all_windows.num_groups
  *         if n < 4:             # <<<<<<<<<<<<<<
  *             return neighbors_for_tall_window(1, window, all_windows)
- * 
+ *
  */
   __pyx_t_1 = PyObject_RichCompare(__pyx_v_n, __pyx_int_4, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 237, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 237, __pyx_L1_error)
@@ -11325,7 +11325,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
  *         n = all_windows.num_groups
  *         if n < 4:
  *             return neighbors_for_tall_window(1, window, all_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *         wg = all_windows.group_for_window(window)
  */
     __Pyx_XDECREF(__pyx_r);
@@ -11388,13 +11388,13 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
  *         n = all_windows.num_groups
  *         if n < 4:             # <<<<<<<<<<<<<<
  *             return neighbors_for_tall_window(1, window, all_windows)
- * 
+ *
  */
   }
 
   /* "smelly/layout/grid.py":240
  *             return neighbors_for_tall_window(1, window, all_windows)
- * 
+ *
  *         wg = all_windows.group_for_window(window)             # <<<<<<<<<<<<<<
  *         assert wg is not None
  *         ncols, nrows, special_rows, special_col = calc_grid_size(n)
@@ -11420,7 +11420,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
   __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":241
- * 
+ *
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None             # <<<<<<<<<<<<<<
  *         ncols, nrows, special_rows, special_col = calc_grid_size(n)
@@ -11470,15 +11470,15 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_6);
@@ -11844,7 +11844,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
  *                 pos_map[wid] = row, col
  *             col_counts.append(rows)             # <<<<<<<<<<<<<<
  *         row, col = pos_map[wg.id]
- * 
+ *
  */
     __pyx_t_14 = __Pyx_PyList_Append(__pyx_cur_scope->__pyx_v_col_counts, __pyx_v_rows); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 254, __pyx_L1_error)
 
@@ -11862,7 +11862,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
  *                 pos_map[wid] = row, col
  *             col_counts.append(rows)
  *         row, col = pos_map[wg.id]             # <<<<<<<<<<<<<<
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_wg, __pyx_n_s_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
@@ -11880,11 +11880,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_4);
@@ -11923,7 +11923,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
 
   /* "smelly/layout/grid.py":257
  *         row, col = pos_map[wg.id]
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             try:
  *                 ans = matrix[row][col]
@@ -11949,7 +11949,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
 
   /* "smelly/layout/grid.py":264
  *             return [] if ans is None else [ans]
- * 
+ *
  *         def side(row: int, col: int, delta: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             neighbor_col = col + delta
  *             neighbor_nrows = col_counts[neighbor_col]
@@ -11975,7 +11975,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
 
   /* "smelly/layout/grid.py":278
  *             return xs
- * 
+ *
  *         return {             # <<<<<<<<<<<<<<
  *             'top': neighbors(row - 1, col) if row else [],
  *             'bottom': neighbors(row + 1, col),
@@ -11983,7 +11983,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
   __Pyx_XDECREF(__pyx_r);
 
   /* "smelly/layout/grid.py":279
- * 
+ *
  *         return {
  *             'top': neighbors(row - 1, col) if row else [],             # <<<<<<<<<<<<<<
  *             'bottom': neighbors(row + 1, col),
@@ -12051,7 +12051,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
  *             'left': side(row, col, -1) if col else [],
  *             'right': side(row, col, 1) if col < ncols - 1 else [],             # <<<<<<<<<<<<<<
  *         }
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyInt_SubtractObjC(__pyx_v_ncols, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 282, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12078,7 +12078,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
 
   /* "smelly/layout/grid.py":235
  *                     yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n < 4:
@@ -12117,7 +12117,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_18neighbors_for_window(CYT
 
 /* "smelly/layout/grid.py":285
  *         }
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'biased_cols': self.biased_cols, 'biased_rows': self.biased_rows}
  */
@@ -12147,7 +12147,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20layout_state(CYTHON_UNUS
   __Pyx_RefNannySetupContext("layout_state", 0);
 
   /* "smelly/layout/grid.py":286
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:
  *         return {'biased_cols': self.biased_cols, 'biased_rows': self.biased_rows}             # <<<<<<<<<<<<<<
  */
@@ -12168,7 +12168,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4grid_4Grid_20layout_state(CYTHON_UNUS
 
   /* "smelly/layout/grid.py":285
  *         }
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'biased_cols': self.biased_cols, 'biased_rows': self.biased_rows}
  */
@@ -13749,7 +13749,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     ) -> LayoutDimension:
  *         decoration_pairs = tuple(repeat((0, 0), num))             # <<<<<<<<<<<<<<
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -13757,7 +13757,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":67
  *             row_num = col_num = 0
- * 
+ *
  *             def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *                 nonlocal col_num, row_num
  *                 row_num = 0
@@ -13769,10 +13769,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":64
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
- * 
+ *
  *         def position_for_window_idx(idx: int) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             row_num = col_num = 0
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(8, __pyx_n_s_idx, __pyx_n_s_row_num, __pyx_n_s_col_num, __pyx_n_s_on_col_done, __pyx_n_s_on_col_done, __pyx_n_s_window_idx, __pyx_n_s_xl, __pyx_n_s_yl); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
@@ -13781,10 +13781,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":87
  *             attr = 'biased_cols'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.column_layout(num_windows, bias=bias)
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(2, __pyx_n_s_windows, __pyx_n_s_bias); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -13796,10 +13796,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":97
  *             attr = 'biased_rows'
- * 
+ *
  *             def layout_func(windows: ListOfWindows, bias: Optional[Sequence[float]] = None) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *                 return self.row_layout(num_windows, bias=bias)
- * 
+ *
  */
   __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_windows, __pyx_n_s_bias); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
@@ -13811,7 +13811,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":138
  *         win_col_map: List[List[WindowGroup]] = []
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             col_windows_w = [groups[i] for i in col_windows]
  *             win_col_map.append(col_windows_w)
@@ -13823,7 +13823,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":142
  *             win_col_map.append(col_windows_w)
- * 
+ *
  *         def extents(ld: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             start = ld.content_pos - ld.space_before
  *             size = ld.space_before + ld.space_after + ld.content_size
@@ -13835,7 +13835,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":147
  *             return start, size
- * 
+ *
  *         def layout(ld: LayoutData, cell_length: int, before_dec: int, after_dec: int) -> LayoutData:             # <<<<<<<<<<<<<<
  *             start, size = extents(ld)
  *             space_needed_for_decorations = before_dec + after_dec
@@ -13847,7 +13847,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":158
  *             return LayoutData(start + before_dec, number_of_cells, before_dec, size - cell_area - before_dec, cell_area)
- * 
+ *
  *         def position_window_in_grid_cell(window_idx: int, xl: LayoutData, yl: LayoutData) -> None:             # <<<<<<<<<<<<<<
  *             wg = groups[window_idx]
  *             edges = Edges(wg.decoration('left'), wg.decoration('top'), wg.decoration('right'), wg.decoration('bottom'))
@@ -13859,7 +13859,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":187
  *         layout_data_map: Dict[int, Tuple[LayoutData, LayoutData]] = {}
- * 
+ *
  *         def on_col_done(col_windows: List[int]) -> None:             # <<<<<<<<<<<<<<
  *             nonlocal prev_col_windows, is_first_column
  *             if col_windows:
@@ -13871,10 +13871,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":204
  *         active_group = all_windows.active_group
- * 
+ *
  *         def ends(yl: LayoutData) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  */
   __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_yl); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
@@ -13883,7 +13883,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":207
  *             return yl.content_pos - yl.space_before, yl.content_pos + yl.content_size + yl.space_after
- * 
+ *
  *         def borders_for_window(gid: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *             xl, yl = layout_data_map[gid]
  *             left, right = ends(xl)
@@ -13895,7 +13895,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":257
  *         row, col = pos_map[wg.id]
- * 
+ *
  *         def neighbors(row: int, col: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             try:
  *                 ans = matrix[row][col]
@@ -13907,7 +13907,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":264
  *             return [] if ans is None else [ans]
- * 
+ *
  *         def side(row: int, col: int, delta: int) -> List[int]:             # <<<<<<<<<<<<<<
  *             neighbor_col = col + delta
  *             neighbor_nrows = col_counts[neighbor_col]
@@ -13918,7 +13918,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(3, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_grid_py, __pyx_n_s_side, 264, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 264, __pyx_L1_error)
 
   /* "smelly/layout/grid.py":19
- * 
+ *
  * @lru_cache()
  * def calc_grid_size(n: int) -> Tuple[int, int, int, int]:             # <<<<<<<<<<<<<<
  *     if n <= 5:
@@ -13931,7 +13931,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":36
  *     no_minimal_window_borders = True
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.biased_rows: Dict[int, float] = {}
  *         self.biased_cols: Dict[int, float] = {}
@@ -13943,7 +13943,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":41
  *         return True
- * 
+ *
  *     def column_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -13958,7 +13958,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":49
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def row_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -13973,10 +13973,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":57
  *         return layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def variable_layout(self, layout_func: Callable[..., LayoutDimension], num_windows: int, biased_map: Dict[int, float]) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  */
   __pyx_tuple__42 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_layout_func, __pyx_n_s_num_windows, __pyx_n_s_biased_map); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
@@ -13985,7 +13985,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":60
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         num_windows = all_windows.num_groups
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
@@ -14000,7 +14000,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":109
  *         return True
- * 
+ *
  *     def layout_windows(             # <<<<<<<<<<<<<<
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -14012,7 +14012,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":129
  *             on_col_done(col_windows)
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n == 1:
@@ -14024,7 +14024,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":168
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if not lgd.draw_minimal_borders or n < 2:
@@ -14036,7 +14036,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":235
  *                     yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n < 4:
@@ -14048,7 +14048,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/grid.py":285
  *         }
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'biased_cols': self.biased_cols, 'biased_rows': self.biased_rows}
  */
@@ -14421,7 +14421,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from functools import lru_cache             # <<<<<<<<<<<<<<
  * from itertools import repeat
  * from math import ceil, floor
@@ -14441,7 +14441,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/grid.py":5
- * 
+ *
  * from functools import lru_cache
  * from itertools import repeat             # <<<<<<<<<<<<<<
  * from math import ceil, floor
@@ -14466,7 +14466,7 @@ if (!__Pyx_RefNanny) {
  * from itertools import repeat
  * from math import ceil, floor             # <<<<<<<<<<<<<<
  * from typing import Any, Callable, Dict, Generator, List, Optional, Sequence, Set, Tuple
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14493,7 +14493,7 @@ if (!__Pyx_RefNanny) {
  * from itertools import repeat
  * from math import ceil, floor
  * from typing import Any, Callable, Dict, Generator, List, Optional, Sequence, Set, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.borders import BorderColor
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -14568,7 +14568,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":9
  * from typing import Any, Callable, Dict, Generator, List, Optional, Sequence, Set, Tuple
- * 
+ *
  * from smelly.borders import BorderColor             # <<<<<<<<<<<<<<
  * from smelly.types import Edges
  * from smelly.typing import WindowType
@@ -14588,7 +14588,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/grid.py":10
- * 
+ *
  * from smelly.borders import BorderColor
  * from smelly.types import Edges             # <<<<<<<<<<<<<<
  * from smelly.typing import WindowType
@@ -14613,7 +14613,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import Edges
  * from smelly.typing import WindowType             # <<<<<<<<<<<<<<
  * from smelly.window_list import WindowGroup, WindowList
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14633,7 +14633,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import Edges
  * from smelly.typing import WindowType
  * from smelly.window_list import WindowGroup, WindowList             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import BorderLine, Layout, LayoutData, LayoutDimension, ListOfWindows, NeighborsMap, layout_dimension, lgd
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -14659,10 +14659,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":14
  * from smelly.window_list import WindowGroup, WindowList
- * 
+ *
  * from .base import BorderLine, Layout, LayoutData, LayoutDimension, ListOfWindows, NeighborsMap, layout_dimension, lgd             # <<<<<<<<<<<<<<
  * from .tall import neighbors_for_tall_window
- * 
+ *
  */
   __pyx_t_1 = PyList_New(8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14728,11 +14728,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/grid.py":15
- * 
+ *
  * from .base import BorderLine, Layout, LayoutData, LayoutDimension, ListOfWindows, NeighborsMap, layout_dimension, lgd
  * from .tall import neighbors_for_tall_window             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14749,8 +14749,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":18
- * 
- * 
+ *
+ *
  * @lru_cache()             # <<<<<<<<<<<<<<
  * def calc_grid_size(n: int) -> Tuple[int, int, int, int]:
  *     if n <= 5:
@@ -14762,7 +14762,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":19
- * 
+ *
  * @lru_cache()
  * def calc_grid_size(n: int) -> Tuple[int, int, int, int]:             # <<<<<<<<<<<<<<
  *     if n <= 5:
@@ -14799,8 +14799,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":18
- * 
- * 
+ *
+ *
  * @lru_cache()             # <<<<<<<<<<<<<<
  * def calc_grid_size(n: int) -> Tuple[int, int, int, int]:
  *     if n <= 5:
@@ -14813,8 +14813,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/grid.py":32
- * 
- * 
+ *
+ *
  * class Grid(Layout):             # <<<<<<<<<<<<<<
  *     name: str = 'grid'
  *     no_minimal_window_borders = True
@@ -14832,11 +14832,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/layout/grid.py":33
- * 
+ *
  * class Grid(Layout):
  *     name: str = 'grid'             # <<<<<<<<<<<<<<
  *     no_minimal_window_borders = True
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_name_2, __pyx_n_s_grid) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
 
@@ -14844,14 +14844,14 @@ if (!__Pyx_RefNanny) {
  * class Grid(Layout):
  *     name: str = 'grid'
  *     no_minimal_window_borders = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_all_biases(self) -> bool:
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_no_minimal_window_borders, Py_True) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
 
   /* "smelly/layout/grid.py":36
  *     no_minimal_window_borders = True
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.biased_rows: Dict[int, float] = {}
  *         self.biased_cols: Dict[int, float] = {}
@@ -14868,7 +14868,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":41
  *         return True
- * 
+ *
  *     def column_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -14912,7 +14912,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":41
  *         return True
- * 
+ *
  *     def column_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -14927,7 +14927,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":49
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def row_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -14971,7 +14971,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":49
  *         return layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def row_layout(             # <<<<<<<<<<<<<<
  *         self,
  *         num: int,
@@ -14986,10 +14986,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":57
  *         return layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def variable_layout(self, layout_func: Callable[..., LayoutDimension], num_windows: int, biased_map: Dict[int, float]) -> LayoutDimension:             # <<<<<<<<<<<<<<
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -15041,7 +15041,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":60
  *         return layout_func(num_windows, bias=biased_map if num_windows > 1 else None)
- * 
+ *
  *     def apply_bias(self, idx: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         num_windows = all_windows.num_groups
  *         ncols, nrows, special_rows, special_col = calc_grid_size(num_windows)
@@ -15066,7 +15066,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":109
  *         return True
- * 
+ *
  *     def layout_windows(             # <<<<<<<<<<<<<<
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -15080,7 +15080,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_special_col, __pyx_n_u_int) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
 
   /* "smelly/layout/grid.py":110
- * 
+ *
  *     def layout_windows(
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None             # <<<<<<<<<<<<<<
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -15163,7 +15163,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":109
  *         return True
- * 
+ *
  *     def layout_windows(             # <<<<<<<<<<<<<<
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -15173,7 +15173,7 @@ if (!__Pyx_RefNanny) {
   if (!__Pyx_CyFunction_InitDefaults(__pyx_t_8, sizeof(__pyx_defaults), 1)) __PYX_ERR(0, 109, __pyx_L1_error)
 
   /* "smelly/layout/grid.py":110
- * 
+ *
  *     def layout_windows(
  *         self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None             # <<<<<<<<<<<<<<
  *     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
@@ -15192,7 +15192,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":129
  *             on_col_done(col_windows)
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n == 1:
@@ -15213,7 +15213,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":168
  *             position_window_in_grid_cell(window_idx, xl, yl)
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if not lgd.draw_minimal_borders or n < 2:
@@ -15254,7 +15254,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":235
  *                     yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         n = all_windows.num_groups
  *         if n < 4:
@@ -15282,7 +15282,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/grid.py":285
  *         }
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'biased_cols': self.biased_cols, 'biased_rows': self.biased_rows}
  */
@@ -15314,8 +15314,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/grid.py":32
- * 
- * 
+ *
+ *
  * class Grid(Layout):             # <<<<<<<<<<<<<<
  *     name: str = 'grid'
  *     no_minimal_window_borders = True
@@ -15331,7 +15331,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/layout/grid.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -15590,8 +15590,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -15741,8 +15741,8 @@ static PyObject* __Pyx_PyInt_FloorDivideObjC(PyObject *op1, PyObject *op2, CYTHO
                 }
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceFloorDivide : PyNumber_FloorDivide)(op1, op2);
@@ -15881,8 +15881,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

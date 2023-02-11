@@ -1370,8 +1370,8 @@ static PyObject *__pyx_codeobj__2;
 /* Late includes */
 
 /* "test.py":7
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     m = importlib.import_module('smelly_tests.main')
  *     getattr(m, 'main')()
@@ -1404,11 +1404,11 @@ static PyObject *__pyx_pf_4test_main(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "test.py":8
- * 
+ *
  * def main() -> None:
  *     m = importlib.import_module('smelly_tests.main')             # <<<<<<<<<<<<<<
  *     getattr(m, 'main')()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_importlib); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1437,8 +1437,8 @@ static PyObject *__pyx_pf_4test_main(CYTHON_UNUSED PyObject *__pyx_self) {
  * def main() -> None:
  *     m = importlib.import_module('smelly_tests.main')
  *     getattr(m, 'main')()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_3 = __Pyx_GetAttr(__pyx_v_m, __pyx_n_s_main); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -1460,8 +1460,8 @@ static PyObject *__pyx_pf_4test_main(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "test.py":7
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     m = importlib.import_module('smelly_tests.main')
  *     getattr(m, 'main')()
@@ -1553,8 +1553,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "test.py":7
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     m = importlib.import_module('smelly_tests.main')
  *     getattr(m, 'main')()
@@ -1845,10 +1845,10 @@ if (!__Pyx_RefNanny) {
 
   /* "test.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import importlib             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_importlib, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1856,8 +1856,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "test.py":7
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     m = importlib.import_module('smelly_tests.main')
  *     getattr(m, 'main')()
@@ -1873,8 +1873,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "test.py":12
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -1885,7 +1885,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "test.py":13
- * 
+ *
  * if __name__ == '__main__':
  *     main()             # <<<<<<<<<<<<<<
  */
@@ -1897,8 +1897,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "test.py":12
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -1907,7 +1907,7 @@ if (!__Pyx_RefNanny) {
   /* "test.py":1
  * #!./smelly/launcher/smelly +launch             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

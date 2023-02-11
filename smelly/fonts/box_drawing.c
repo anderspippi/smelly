@@ -1007,11 +1007,11 @@ struct __pyx_ctuple_long__and_long {
 };
 
 /* "smelly/fonts/box_drawing.py":146
- * 
- * 
+ *
+ *
  * def downsample(src: BufType, dest: BufType, dest_width: int, dest_height: int, factor: int = 4) -> None:             # <<<<<<<<<<<<<<
  *     src_width = 4 * dest_width
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct__downsample {
   PyObject_HEAD
@@ -1022,8 +1022,8 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct__downsample {
 
 
 /* "smelly/fonts/box_drawing.py":169
- * 
- * 
+ *
+ *
  * def supersampled(supersample_factor: int = 4) -> Callable[[Callable[..., None]], Callable[..., None]]:             # <<<<<<<<<<<<<<
  *     # Anti-alias the drawing performed by the wrapped function by
  *     # using supersampling
@@ -1036,7 +1036,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_1_supersampled 
 
 /* "smelly/fonts/box_drawing.py":173
  *     # using supersampling
- * 
+ *
  *     def create_wrapper(f: Callable[..., None]) -> Callable[..., None]:             # <<<<<<<<<<<<<<
  *         @wraps(f)
  *         def supersampled_wrapper(buf: BufType, width: int, height: int, *args: Any, **kw: Any) -> None:
@@ -1049,8 +1049,8 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_2_create_wrappe
 
 
 /* "smelly/fonts/box_drawing.py":195
- * 
- * 
+ *
+ *
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:             # <<<<<<<<<<<<<<
  *     m = (y2 - y1) / (x2 - x1)
  *     c = y1 - m * x1
@@ -1063,7 +1063,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_3_line_equation
 
 
 /* "smelly/fonts/box_drawing.py":236
- * 
+ *
  * @supersampled()
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
@@ -1184,11 +1184,11 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_10_genexpr {
 
 
 /* "smelly/fonts/box_drawing.py":305
- * 
+ *
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_11_mid_lines {
   PyObject_HEAD
@@ -1200,7 +1200,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_11_mid_lines {
 
 
 /* "smelly/fonts/box_drawing.py":328
- * 
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:             # <<<<<<<<<<<<<<
  *         def f(t: float) -> float:
@@ -1216,8 +1216,8 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_12_bezier_eq {
 
 
 /* "smelly/fonts/box_drawing.py":356
- * 
- * 
+ *
+ *
  * def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:             # <<<<<<<<<<<<<<
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))
@@ -1241,8 +1241,8 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_13_get_bezier_l
 
 
 /* "smelly/fonts/box_drawing.py":434
- * 
- * 
+ *
+ *
  * def rectircle_equations(cell_width: int, cell_height: int, supersample_factor: int, which: str = '') -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     '''
  *     Return two functions, x(t) and y(t) that map the parameter t which must be
@@ -1260,8 +1260,8 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_14_rectircle_eq
 
 
 /* "smelly/fonts/box_drawing.py":667
- * 
- * 
+ *
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:
  *         if row == 0:
@@ -1276,7 +1276,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_15_sextant {
 
 
 /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -1289,7 +1289,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_16_smooth_mosai
 
 
 /* "smelly/fonts/box_drawing.py":755
- * 
+ *
  * @lru_cache(maxsize=64)
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:             # <<<<<<<<<<<<<<
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -1306,7 +1306,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_17_distribute_d
  *     gaps[0] //= 2
  *     summed_gaps = tuple(sum(gaps[: i + 1]) for i in range(len(gaps)))             # <<<<<<<<<<<<<<
  *     return summed_gaps, dot_size
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_18_genexpr {
   PyObject_HEAD
@@ -1319,8 +1319,8 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_18_genexpr {
 
 
 /* "smelly/fonts/box_drawing.py":1049
- * 
- * 
+ *
+ *
  * def test_char(ch: str, sz: int = 48) -> None:             # <<<<<<<<<<<<<<
  *     # smelly +runpy "from smelly.fonts.box_drawing import test_char; test_char('XXX')"
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
@@ -1335,7 +1335,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_19_test_char {
 
 /* "smelly/fonts/box_drawing.py":1060
  *             render_box_char(ch, buf, width, height)
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *                 cells = tuple(bytes(x) for x in cells)
  *                 return concat_cells(width, height, False, cells)
@@ -1348,11 +1348,11 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_20_join_cells {
 
 
 /* "smelly/fonts/box_drawing.py":1061
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:
  *                 cells = tuple(bytes(x) for x in cells)             # <<<<<<<<<<<<<<
  *                 return concat_cells(width, height, False, cells)
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_21_genexpr {
   PyObject_HEAD
@@ -1364,11 +1364,11 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_21_genexpr {
 
 
 /* "smelly/fonts/box_drawing.py":1071
- * 
- * 
+ *
+ *
  * def test_drawing(sz: int = 48, family: str = 'monospace', start: int = 0x2500, num_rows: int = 10, num_cols: int = 16) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_22_test_drawing {
   PyObject_HEAD
@@ -1381,7 +1381,7 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_22_test_drawing
 
 /* "smelly/fonts/box_drawing.py":1079
  *         space = bytearray(width * height)
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:             # <<<<<<<<<<<<<<
  *             cells = tuple(bytes(x) for x in cells)
  *             return concat_cells(width, height, False, cells)
@@ -1394,11 +1394,11 @@ struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_23_join_cells {
 
 
 /* "smelly/fonts/box_drawing.py":1080
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:
  *             cells = tuple(bytes(x) for x in cells)             # <<<<<<<<<<<<<<
  *             return concat_cells(width, height, False, cells)
- * 
+ *
  */
 struct __pyx_obj_6smelly_5fonts_11box_drawing___pyx_scope_struct_24_genexpr {
   PyObject_HEAD
@@ -3882,8 +3882,8 @@ static PyObject *__pyx_codeobj__454;
 /* Late includes */
 
 /* "smelly/fonts/box_drawing.py":20
- * 
- * 
+ *
+ *
  * def set_scale(new_scale: Sequence[float]) -> None:             # <<<<<<<<<<<<<<
  *     global scale
  *     scale = (new_scale[0], new_scale[1], new_scale[2], new_scale[3])
@@ -3920,8 +3920,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_set_scale(CYTHON_UNUSED P
  * def set_scale(new_scale: Sequence[float]) -> None:
  *     global scale
  *     scale = (new_scale[0], new_scale[1], new_scale[2], new_scale[3])             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_new_scale, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3949,8 +3949,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_set_scale(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":20
- * 
- * 
+ *
+ *
  * def set_scale(new_scale: Sequence[float]) -> None:             # <<<<<<<<<<<<<<
  *     global scale
  *     scale = (new_scale[0], new_scale[1], new_scale[2], new_scale[3])
@@ -3974,8 +3974,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_set_scale(CYTHON_UNUSED P
 }
 
 /* "smelly/fonts/box_drawing.py":25
- * 
- * 
+ *
+ *
  * def thickness(level: int = 1, horizontal: bool = True) -> int:             # <<<<<<<<<<<<<<
  *     pts = scale[level]
  *     return int(math.ceil(pts * (_dpi / 72.0)))
@@ -4068,11 +4068,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_2thickness(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("thickness", 0);
 
   /* "smelly/fonts/box_drawing.py":26
- * 
+ *
  * def thickness(level: int = 1, horizontal: bool = True) -> int:
  *     pts = scale[level]             # <<<<<<<<<<<<<<
  *     return int(math.ceil(pts * (_dpi / 72.0)))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4086,8 +4086,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_2thickness(CYTHON_UNUSED 
  * def thickness(level: int = 1, horizontal: bool = True) -> int:
  *     pts = scale[level]
  *     return int(math.ceil(pts * (_dpi / 72.0)))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_math); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
@@ -4127,8 +4127,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_2thickness(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":25
- * 
- * 
+ *
+ *
  * def thickness(level: int = 1, horizontal: bool = True) -> int:             # <<<<<<<<<<<<<<
  *     pts = scale[level]
  *     return int(math.ceil(pts * (_dpi / 72.0)))
@@ -4150,8 +4150,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_2thickness(CYTHON_UNUSED 
 }
 
 /* "smelly/fonts/box_drawing.py":30
- * 
- * 
+ *
+ *
  * def draw_hline(buf: BufType, width: int, x1: int, x2: int, y: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a horizontal line between [x1, x2) centered at y with the thickness given by level'
  *     sz = thickness(level=level, horizontal=False)
@@ -4402,7 +4402,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_4draw_hline(CYTHON_UNUSED
  *         offset = y * width
  *         for x in range(x1, x2):             # <<<<<<<<<<<<<<
  *             buf[offset + x] = 255
- * 
+ *
  */
     __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4462,8 +4462,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_4draw_hline(CYTHON_UNUSED
  *         offset = y * width
  *         for x in range(x1, x2):
  *             buf[offset + x] = 255             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_1 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -4475,7 +4475,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_4draw_hline(CYTHON_UNUSED
  *         offset = y * width
  *         for x in range(x1, x2):             # <<<<<<<<<<<<<<
  *             buf[offset + x] = 255
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4491,8 +4491,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_4draw_hline(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":30
- * 
- * 
+ *
+ *
  * def draw_hline(buf: BufType, width: int, x1: int, x2: int, y: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a horizontal line between [x1, x2) centered at y with the thickness given by level'
  *     sz = thickness(level=level, horizontal=False)
@@ -4519,8 +4519,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_4draw_hline(CYTHON_UNUSED
 }
 
 /* "smelly/fonts/box_drawing.py":40
- * 
- * 
+ *
+ *
  * def draw_vline(buf: BufType, width: int, y1: int, y2: int, x: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a vertical line between [y1, y2) centered at x with the thickness given by level'
  *     sz = thickness(level=level, horizontal=True)
@@ -4759,7 +4759,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_6draw_vline(CYTHON_UNUSED
  *     for x in range(start, start + sz):
  *         for y in range(y1, y2):             # <<<<<<<<<<<<<<
  *             buf[x + y * width] = 255
- * 
+ *
  */
     __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4819,8 +4819,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_6draw_vline(CYTHON_UNUSED
  *     for x in range(start, start + sz):
  *         for y in range(y1, y2):
  *             buf[x + y * width] = 255             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_1 = PyNumber_Multiply(__pyx_v_y, __pyx_v_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -4835,7 +4835,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_6draw_vline(CYTHON_UNUSED
  *     for x in range(start, start + sz):
  *         for y in range(y1, y2):             # <<<<<<<<<<<<<<
  *             buf[x + y * width] = 255
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4851,8 +4851,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_6draw_vline(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":40
- * 
- * 
+ *
+ *
  * def draw_vline(buf: BufType, width: int, y1: int, y2: int, x: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a vertical line between [y1, y2) centered at x with the thickness given by level'
  *     sz = thickness(level=level, horizontal=True)
@@ -4879,8 +4879,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_6draw_vline(CYTHON_UNUSED
 }
 
 /* "smelly/fonts/box_drawing.py":49
- * 
- * 
+ *
+ *
  * def half_hline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, extend_by + width // 2) if which == 'left' else (width // 2 - extend_by, width)
  *     draw_hline(buf, width, x1, x2, height // 2, level)
@@ -5026,11 +5026,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_8half_hline(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("half_hline", 0);
 
   /* "smelly/fonts/box_drawing.py":50
- * 
+ *
  * def half_hline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', extend_by: int = 0) -> None:
  *     x1, x2 = (0, extend_by + width // 2) if which == 'left' else (width // 2 - extend_by, width)             # <<<<<<<<<<<<<<
  *     draw_hline(buf, width, x1, x2, height // 2, level)
- * 
+ *
  */
   __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_which, __pyx_n_s_left, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 50, __pyx_L1_error)
   if ((__pyx_t_2 != 0)) {
@@ -5075,8 +5075,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_8half_hline(CYTHON_UNUSED
       __PYX_ERR(0, 50, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
     #else
@@ -5098,8 +5098,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_8half_hline(CYTHON_UNUSED
  * def half_hline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', extend_by: int = 0) -> None:
  *     x1, x2 = (0, extend_by + width // 2) if which == 'left' else (width // 2 - extend_by, width)
  *     draw_hline(buf, width, x1, x2, height // 2, level)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_draw_hline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5167,8 +5167,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_8half_hline(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":49
- * 
- * 
+ *
+ *
  * def half_hline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, extend_by + width // 2) if which == 'left' else (width // 2 - extend_by, width)
  *     draw_hline(buf, width, x1, x2, height // 2, level)
@@ -5194,8 +5194,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_8half_hline(CYTHON_UNUSED
 }
 
 /* "smelly/fonts/box_drawing.py":54
- * 
- * 
+ *
+ *
  * def half_vline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2 + extend_by) if which == 'top' else (height // 2 - extend_by, height)
  *     draw_vline(buf, width, y1, y2, width // 2, level)
@@ -5341,11 +5341,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10half_vline(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("half_vline", 0);
 
   /* "smelly/fonts/box_drawing.py":55
- * 
+ *
  * def half_vline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', extend_by: int = 0) -> None:
  *     y1, y2 = (0, height // 2 + extend_by) if which == 'top' else (height // 2 - extend_by, height)             # <<<<<<<<<<<<<<
  *     draw_vline(buf, width, y1, y2, width // 2, level)
- * 
+ *
  */
   __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_which, __pyx_n_s_top, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 55, __pyx_L1_error)
   if ((__pyx_t_2 != 0)) {
@@ -5390,8 +5390,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10half_vline(CYTHON_UNUSE
       __PYX_ERR(0, 55, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
     #else
@@ -5413,8 +5413,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10half_vline(CYTHON_UNUSE
  * def half_vline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', extend_by: int = 0) -> None:
  *     y1, y2 = (0, height // 2 + extend_by) if which == 'top' else (height // 2 - extend_by, height)
  *     draw_vline(buf, width, y1, y2, width // 2, level)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_draw_vline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5482,8 +5482,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10half_vline(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":54
- * 
- * 
+ *
+ *
  * def half_vline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2 + extend_by) if which == 'top' else (height // 2 - extend_by, height)
  *     draw_vline(buf, width, y1, y2, width // 2, level)
@@ -5509,8 +5509,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10half_vline(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":59
- * 
- * 
+ *
+ *
  * def get_holes(sz: int, hole_sz: int, num: int) -> List[Tuple[int, ...]]:             # <<<<<<<<<<<<<<
  *     all_holes_use = (num + 1) * hole_sz
  *     individual_block_size = (sz - all_holes_use) // (num + 1)
@@ -5615,7 +5615,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12get_holes(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("get_holes", 0);
 
   /* "smelly/fonts/box_drawing.py":60
- * 
+ *
  * def get_holes(sz: int, hole_sz: int, num: int) -> List[Tuple[int, ...]]:
  *     all_holes_use = (num + 1) * hole_sz             # <<<<<<<<<<<<<<
  *     individual_block_size = (sz - all_holes_use) // (num + 1)
@@ -5807,7 +5807,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12get_holes(CYTHON_UNUSED
  *             holes.append(tuple(range(left, right)))
  *         pos = right + individual_block_size             # <<<<<<<<<<<<<<
  *     return holes
- * 
+ *
  */
     __pyx_t_3 = PyNumber_Add(__pyx_v_right, __pyx_v_individual_block_size); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -5819,8 +5819,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12get_holes(CYTHON_UNUSED
  *             holes.append(tuple(range(left, right)))
  *         pos = right + individual_block_size
  *     return holes             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_holes);
@@ -5828,8 +5828,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12get_holes(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":59
- * 
- * 
+ *
+ *
  * def get_holes(sz: int, hole_sz: int, num: int) -> List[Tuple[int, ...]]:             # <<<<<<<<<<<<<<
  *     all_holes_use = (num + 1) * hole_sz
  *     individual_block_size = (sz - all_holes_use) // (num + 1)
@@ -5857,8 +5857,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12get_holes(CYTHON_UNUSED
 }
 
 /* "smelly/fonts/box_drawing.py":77
- * 
- * 
+ *
+ *
  * def add_hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=True)
  *     hole_sz = width // hole_factor
@@ -5996,7 +5996,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_14add_hholes(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("add_hholes", 0);
 
   /* "smelly/fonts/box_drawing.py":78
- * 
+ *
  * def add_hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:
  *     line_sz = thickness(level=level, horizontal=True)             # <<<<<<<<<<<<<<
  *     hole_sz = width // hole_factor
@@ -6237,7 +6237,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_14add_hholes(CYTHON_UNUSE
  *         for hole in holes:
  *             for x in hole:             # <<<<<<<<<<<<<<
  *                 buf[offset + x] = 0
- * 
+ *
  */
       if (likely(PyList_CheckExact(__pyx_v_hole)) || PyTuple_CheckExact(__pyx_v_hole)) {
         __pyx_t_5 = __pyx_v_hole; __Pyx_INCREF(__pyx_t_5); __pyx_t_10 = 0;
@@ -6285,8 +6285,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_14add_hholes(CYTHON_UNUSE
  *         for hole in holes:
  *             for x in hole:
  *                 buf[offset + x] = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_2 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
@@ -6298,7 +6298,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_14add_hholes(CYTHON_UNUSE
  *         for hole in holes:
  *             for x in hole:             # <<<<<<<<<<<<<<
  *                 buf[offset + x] = 0
- * 
+ *
  */
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -6324,8 +6324,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_14add_hholes(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":77
- * 
- * 
+ *
+ *
  * def add_hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=True)
  *     hole_sz = width // hole_factor
@@ -6356,8 +6356,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_14add_hholes(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":89
- * 
- * 
+ *
+ *
  * def add_vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=False)
  *     hole_sz = height // hole_factor
@@ -6495,7 +6495,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_16add_vholes(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("add_vholes", 0);
 
   /* "smelly/fonts/box_drawing.py":90
- * 
+ *
  * def add_vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:
  *     line_sz = thickness(level=level, horizontal=False)             # <<<<<<<<<<<<<<
  *     hole_sz = height // hole_factor
@@ -6724,7 +6724,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_16add_vholes(CYTHON_UNUSE
  *         for hole in holes:
  *             for y in hole:             # <<<<<<<<<<<<<<
  *                 buf[x + width * y] = 0
- * 
+ *
  */
       if (likely(PyList_CheckExact(__pyx_v_hole)) || PyTuple_CheckExact(__pyx_v_hole)) {
         __pyx_t_5 = __pyx_v_hole; __Pyx_INCREF(__pyx_t_5); __pyx_t_10 = 0;
@@ -6772,8 +6772,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_16add_vholes(CYTHON_UNUSE
  *         for hole in holes:
  *             for y in hole:
  *                 buf[x + width * y] = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_2 = PyNumber_Multiply(__pyx_v_width, __pyx_v_y); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
@@ -6788,7 +6788,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_16add_vholes(CYTHON_UNUSE
  *         for hole in holes:
  *             for y in hole:             # <<<<<<<<<<<<<<
  *                 buf[x + width * y] = 0
- * 
+ *
  */
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -6814,8 +6814,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_16add_vholes(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":89
- * 
- * 
+ *
+ *
  * def add_vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=False)
  *     hole_sz = height // hole_factor
@@ -6846,8 +6846,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_16add_vholes(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":100
- * 
- * 
+ *
+ *
  * def hline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=level)
  *     half_hline(buf, width, height, level=level, which='right')
@@ -6957,11 +6957,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_18hline(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("hline", 0);
 
   /* "smelly/fonts/box_drawing.py":101
- * 
+ *
  * def hline(buf: BufType, width: int, height: int, level: int = 1) -> None:
  *     half_hline(buf, width, height, level=level)             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=level, which='right')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_hline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6990,8 +6990,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_18hline(CYTHON_UNUSED PyO
  * def hline(buf: BufType, width: int, height: int, level: int = 1) -> None:
  *     half_hline(buf, width, height, level=level)
  *     half_hline(buf, width, height, level=level, which='right')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_half_hline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7018,8 +7018,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_18hline(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":100
- * 
- * 
+ *
+ *
  * def hline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=level)
  *     half_hline(buf, width, height, level=level, which='right')
@@ -7042,8 +7042,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_18hline(CYTHON_UNUSED PyO
 }
 
 /* "smelly/fonts/box_drawing.py":105
- * 
- * 
+ *
+ *
  * def vline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=level)
  *     half_vline(buf, width, height, level=level, which='bottom')
@@ -7153,11 +7153,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_20vline(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("vline", 0);
 
   /* "smelly/fonts/box_drawing.py":106
- * 
+ *
  * def vline(buf: BufType, width: int, height: int, level: int = 1) -> None:
  *     half_vline(buf, width, height, level=level)             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=level, which='bottom')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7186,8 +7186,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_20vline(CYTHON_UNUSED PyO
  * def vline(buf: BufType, width: int, height: int, level: int = 1) -> None:
  *     half_vline(buf, width, height, level=level)
  *     half_vline(buf, width, height, level=level, which='bottom')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7214,8 +7214,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_20vline(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":105
- * 
- * 
+ *
+ *
  * def vline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=level)
  *     half_vline(buf, width, height, level=level, which='bottom')
@@ -7238,8 +7238,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_20vline(CYTHON_UNUSED PyO
 }
 
 /* "smelly/fonts/box_drawing.py":110
- * 
- * 
+ *
+ *
  * def hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hline(buf, width, height, level=level)
  *     add_hholes(buf, width, height, level=level, num=num)
@@ -7362,11 +7362,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_22hholes(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("hholes", 0);
 
   /* "smelly/fonts/box_drawing.py":111
- * 
+ *
  * def hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:
  *     hline(buf, width, height, level=level)             # <<<<<<<<<<<<<<
  *     add_hholes(buf, width, height, level=level, num=num)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_hline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7395,8 +7395,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_22hholes(CYTHON_UNUSED Py
  * def hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:
  *     hline(buf, width, height, level=level)
  *     add_hholes(buf, width, height, level=level, num=num)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_add_hholes); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7423,8 +7423,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_22hholes(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":110
- * 
- * 
+ *
+ *
  * def hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hline(buf, width, height, level=level)
  *     add_hholes(buf, width, height, level=level, num=num)
@@ -7447,8 +7447,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_22hholes(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/box_drawing.py":115
- * 
- * 
+ *
+ *
  * def vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     vline(buf, width, height, level=level)
  *     add_vholes(buf, width, height, level=level, num=num)
@@ -7571,11 +7571,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_24vholes(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("vholes", 0);
 
   /* "smelly/fonts/box_drawing.py":116
- * 
+ *
  * def vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:
  *     vline(buf, width, height, level=level)             # <<<<<<<<<<<<<<
  *     add_vholes(buf, width, height, level=level, num=num)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7604,8 +7604,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_24vholes(CYTHON_UNUSED Py
  * def vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:
  *     vline(buf, width, height, level=level)
  *     add_vholes(buf, width, height, level=level, num=num)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_add_vholes); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7632,8 +7632,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_24vholes(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":115
- * 
- * 
+ *
+ *
  * def vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     vline(buf, width, height, level=level)
  *     add_vholes(buf, width, height, level=level, num=num)
@@ -7656,8 +7656,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_24vholes(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/box_drawing.py":120
- * 
- * 
+ *
+ *
  * def corner(buf: BufType, width: int, height: int, hlevel: int = 1, vlevel: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     wh = 'right' if which is not None and which in '' else 'left'
  *     half_hline(buf, width, height, level=hlevel, which=wh, extend_by=thickness(vlevel, horizontal=True) // 2)
@@ -7801,7 +7801,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_26corner(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("corner", 0);
 
   /* "smelly/fonts/box_drawing.py":121
- * 
+ *
  * def corner(buf: BufType, width: int, height: int, hlevel: int = 1, vlevel: int = 1, which: Optional[str] = None) -> None:
  *     wh = 'right' if which is not None and which in '' else 'left'             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=hlevel, which=wh, extend_by=thickness(vlevel, horizontal=True) // 2)
@@ -7884,7 +7884,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_26corner(CYTHON_UNUSED Py
  *     half_hline(buf, width, height, level=hlevel, which=wh, extend_by=thickness(vlevel, horizontal=True) // 2)
  *     wv = 'top' if which is not None and which in '' else 'bottom'             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=vlevel, which=wv)
- * 
+ *
  */
   __pyx_t_3 = (__pyx_v_which != Py_None);
   __pyx_t_4 = (__pyx_t_3 != 0);
@@ -7911,8 +7911,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_26corner(CYTHON_UNUSED Py
  *     half_hline(buf, width, height, level=hlevel, which=wh, extend_by=thickness(vlevel, horizontal=True) // 2)
  *     wv = 'top' if which is not None and which in '' else 'bottom'
  *     half_vline(buf, width, height, level=vlevel, which=wv)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 124, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
@@ -7939,8 +7939,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_26corner(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":120
- * 
- * 
+ *
+ *
  * def corner(buf: BufType, width: int, height: int, hlevel: int = 1, vlevel: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     wh = 'right' if which is not None and which in '' else 'left'
  *     half_hline(buf, width, height, level=hlevel, which=wh, extend_by=thickness(vlevel, horizontal=True) // 2)
@@ -7968,8 +7968,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_26corner(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/box_drawing.py":127
- * 
- * 
+ *
+ *
  * def vert_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=a, which='top')
  *     half_hline(buf, width, height, level=b, which='left' if which == '' else 'right')
@@ -8119,7 +8119,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_28vert_t(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("vert_t", 0);
 
   /* "smelly/fonts/box_drawing.py":128
- * 
+ *
  * def vert_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:
  *     half_vline(buf, width, height, level=a, which='top')             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=b, which='left' if which == '' else 'right')
@@ -8154,7 +8154,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_28vert_t(CYTHON_UNUSED Py
  *     half_vline(buf, width, height, level=a, which='top')
  *     half_hline(buf, width, height, level=b, which='left' if which == '' else 'right')             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=c, which='bottom')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_half_hline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8193,8 +8193,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_28vert_t(CYTHON_UNUSED Py
  *     half_vline(buf, width, height, level=a, which='top')
  *     half_hline(buf, width, height, level=b, which='left' if which == '' else 'right')
  *     half_vline(buf, width, height, level=c, which='bottom')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8221,8 +8221,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_28vert_t(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":127
- * 
- * 
+ *
+ *
  * def vert_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=a, which='top')
  *     half_hline(buf, width, height, level=b, which='left' if which == '' else 'right')
@@ -8245,8 +8245,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_28vert_t(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/box_drawing.py":133
- * 
- * 
+ *
+ *
  * def horz_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a, which='left')
  *     half_hline(buf, width, height, level=b, which='right')
@@ -8396,7 +8396,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_30horz_t(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("horz_t", 0);
 
   /* "smelly/fonts/box_drawing.py":134
- * 
+ *
  * def horz_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:
  *     half_hline(buf, width, height, level=a, which='left')             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=b, which='right')
@@ -8431,7 +8431,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_30horz_t(CYTHON_UNUSED Py
  *     half_hline(buf, width, height, level=a, which='left')
  *     half_hline(buf, width, height, level=b, which='right')             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=c, which='top' if which == '' else 'bottom')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_half_hline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8461,8 +8461,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_30horz_t(CYTHON_UNUSED Py
  *     half_hline(buf, width, height, level=a, which='left')
  *     half_hline(buf, width, height, level=b, which='right')
  *     half_vline(buf, width, height, level=c, which='top' if which == '' else 'bottom')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8498,8 +8498,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_30horz_t(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":133
- * 
- * 
+ *
+ *
  * def horz_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a, which='left')
  *     half_hline(buf, width, height, level=b, which='right')
@@ -8522,8 +8522,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_30horz_t(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/box_drawing.py":139
- * 
- * 
+ *
+ *
  * def cross(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, d: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a)
  *     half_hline(buf, width, height, level=b, which='right')
@@ -8672,7 +8672,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_32cross(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("cross", 0);
 
   /* "smelly/fonts/box_drawing.py":140
- * 
+ *
  * def cross(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, d: int = 1) -> None:
  *     half_hline(buf, width, height, level=a)             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=b, which='right')
@@ -8737,7 +8737,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_32cross(CYTHON_UNUSED PyO
  *     half_hline(buf, width, height, level=b, which='right')
  *     half_vline(buf, width, height, level=c)             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=d, which='bottom')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8766,8 +8766,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_32cross(CYTHON_UNUSED PyO
  *     half_hline(buf, width, height, level=b, which='right')
  *     half_vline(buf, width, height, level=c)
  *     half_vline(buf, width, height, level=d, which='bottom')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8794,8 +8794,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_32cross(CYTHON_UNUSED PyO
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":139
- * 
- * 
+ *
+ *
  * def cross(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, d: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a)
  *     half_hline(buf, width, height, level=b, which='right')
@@ -8818,11 +8818,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_32cross(CYTHON_UNUSED PyO
 }
 
 /* "smelly/fonts/box_drawing.py":146
- * 
- * 
+ *
+ *
  * def downsample(src: BufType, dest: BufType, dest_width: int, dest_height: int, factor: int = 4) -> None:             # <<<<<<<<<<<<<<
  *     src_width = 4 * dest_width
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8929,7 +8929,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_35downsample(PyObject *__
 
 /* "smelly/fonts/box_drawing.py":149
  *     src_width = 4 * dest_width
- * 
+ *
  *     def average_intensity_in_src(dest_x: int, dest_y: int) -> int:             # <<<<<<<<<<<<<<
  *         src_y = dest_y * factor
  *         src_x = dest_x * factor
@@ -9027,7 +9027,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10downsample_average_inte
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":150
- * 
+ *
  *     def average_intensity_in_src(dest_x: int, dest_y: int) -> int:
  *         src_y = dest_y * factor             # <<<<<<<<<<<<<<
  *         src_x = dest_x * factor
@@ -9208,7 +9208,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10downsample_average_inte
  *             for x in range(src_x, src_x + factor):
  *                 total += src[offset + x]             # <<<<<<<<<<<<<<
  *         return total // (factor * factor)
- * 
+ *
  */
       if (unlikely(!__pyx_cur_scope->__pyx_v_src)) { __Pyx_RaiseClosureNameError("src"); __PYX_ERR(0, 156, __pyx_L1_error) }
       __pyx_t_1 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
@@ -9246,7 +9246,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10downsample_average_inte
  *             for x in range(src_x, src_x + factor):
  *                 total += src[offset + x]
  *         return total // (factor * factor)             # <<<<<<<<<<<<<<
- * 
+ *
  *     for y in range(dest_height):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9263,7 +9263,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10downsample_average_inte
 
   /* "smelly/fonts/box_drawing.py":149
  *     src_width = 4 * dest_width
- * 
+ *
  *     def average_intensity_in_src(dest_x: int, dest_y: int) -> int:             # <<<<<<<<<<<<<<
  *         src_y = dest_y * factor
  *         src_x = dest_x * factor
@@ -9290,11 +9290,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_10downsample_average_inte
 }
 
 /* "smelly/fonts/box_drawing.py":146
- * 
- * 
+ *
+ *
  * def downsample(src: BufType, dest: BufType, dest_width: int, dest_height: int, factor: int = 4) -> None:             # <<<<<<<<<<<<<<
  *     src_width = 4 * dest_width
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_src, PyObject *__pyx_v_dest, PyObject *__pyx_v_dest_width, PyObject *__pyx_v_dest_height, PyObject *__pyx_v_factor) {
@@ -9337,10 +9337,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_factor);
 
   /* "smelly/fonts/box_drawing.py":147
- * 
+ *
  * def downsample(src: BufType, dest: BufType, dest_width: int, dest_height: int, factor: int = 4) -> None:
  *     src_width = 4 * dest_width             # <<<<<<<<<<<<<<
- * 
+ *
  *     def average_intensity_in_src(dest_x: int, dest_y: int) -> int:
  */
   __pyx_t_1 = PyNumber_Multiply(__pyx_int_4, __pyx_v_dest_width); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
@@ -9351,7 +9351,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
 
   /* "smelly/fonts/box_drawing.py":149
  *     src_width = 4 * dest_width
- * 
+ *
  *     def average_intensity_in_src(dest_x: int, dest_y: int) -> int:             # <<<<<<<<<<<<<<
  *         src_y = dest_y * factor
  *         src_x = dest_x * factor
@@ -9370,7 +9370,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
 
   /* "smelly/fonts/box_drawing.py":159
  *         return total // (factor * factor)
- * 
+ *
  *     for y in range(dest_height):             # <<<<<<<<<<<<<<
  *         offset = dest_width * y
  *         for x in range(dest_width):
@@ -9421,7 +9421,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
     __pyx_t_2 = 0;
 
     /* "smelly/fonts/box_drawing.py":160
- * 
+ *
  *     for y in range(dest_height):
  *         offset = dest_width * y             # <<<<<<<<<<<<<<
  *         for x in range(dest_width):
@@ -9437,7 +9437,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
  *         offset = dest_width * y
  *         for x in range(dest_width):             # <<<<<<<<<<<<<<
  *             dest[offset + x] = min(255, dest[offset + x] + average_intensity_in_src(x, y))
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_dest_width); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 161, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -9488,8 +9488,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
  *         offset = dest_width * y
  *         for x in range(dest_width):
  *             dest[offset + x] = min(255, dest[offset + x] + average_intensity_in_src(x, y))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_2 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -9533,14 +9533,14 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
  *         offset = dest_width * y
  *         for x in range(dest_width):             # <<<<<<<<<<<<<<
  *             dest[offset + x] = min(255, dest[offset + x] + average_intensity_in_src(x, y))
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly/fonts/box_drawing.py":159
  *         return total // (factor * factor)
- * 
+ *
  *     for y in range(dest_height):             # <<<<<<<<<<<<<<
  *         offset = dest_width * y
  *         for x in range(dest_width):
@@ -9549,11 +9549,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":146
- * 
- * 
+ *
+ *
  * def downsample(src: BufType, dest: BufType, dest_width: int, dest_height: int, factor: int = 4) -> None:             # <<<<<<<<<<<<<<
  *     src_width = 4 * dest_width
- * 
+ *
  */
 
   /* function exit code */
@@ -9580,8 +9580,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_34downsample(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":169
- * 
- * 
+ *
+ *
  * def supersampled(supersample_factor: int = 4) -> Callable[[Callable[..., None]], Callable[..., None]]:             # <<<<<<<<<<<<<<
  *     # Anti-alias the drawing performed by the wrapped function by
  *     # using supersampling
@@ -9649,7 +9649,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_37supersampled(PyObject *
 
 /* "smelly/fonts/box_drawing.py":173
  *     # using supersampling
- * 
+ *
  *     def create_wrapper(f: Callable[..., None]) -> Callable[..., None]:             # <<<<<<<<<<<<<<
  *         @wraps(f)
  *         def supersampled_wrapper(buf: BufType, width: int, height: int, *args: Any, **kw: Any) -> None:
@@ -9855,7 +9855,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12supersampled_14create_w
  *             ssbuf.supersample_factor = supersample_factor
  *             f(ssbuf, w, h, *args, **kw)             # <<<<<<<<<<<<<<
  *             downsample(ssbuf, buf, width, height, factor=supersample_factor)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_f)) { __Pyx_RaiseClosureNameError("f"); __PYX_ERR(0, 179, __pyx_L1_error) }
   __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 179, __pyx_L1_error)
@@ -9884,7 +9884,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12supersampled_14create_w
  *             ssbuf.supersample_factor = supersample_factor
  *             f(ssbuf, w, h, *args, **kw)
  *             downsample(ssbuf, buf, width, height, factor=supersample_factor)             # <<<<<<<<<<<<<<
- * 
+ *
  *         return supersampled_wrapper
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_downsample); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 180, __pyx_L1_error)
@@ -9943,7 +9943,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12supersampled_14create_w
 
 /* "smelly/fonts/box_drawing.py":173
  *     # using supersampling
- * 
+ *
  *     def create_wrapper(f: Callable[..., None]) -> Callable[..., None]:             # <<<<<<<<<<<<<<
  *         @wraps(f)
  *         def supersampled_wrapper(buf: BufType, width: int, height: int, *args: Any, **kw: Any) -> None:
@@ -9978,7 +9978,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12supersampled_create_wra
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_f);
 
   /* "smelly/fonts/box_drawing.py":174
- * 
+ *
  *     def create_wrapper(f: Callable[..., None]) -> Callable[..., None]:
  *         @wraps(f)             # <<<<<<<<<<<<<<
  *         def supersampled_wrapper(buf: BufType, width: int, height: int, *args: Any, **kw: Any) -> None:
@@ -10051,9 +10051,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12supersampled_create_wra
 
   /* "smelly/fonts/box_drawing.py":182
  *             downsample(ssbuf, buf, width, height, factor=supersample_factor)
- * 
+ *
  *         return supersampled_wrapper             # <<<<<<<<<<<<<<
- * 
+ *
  *     return create_wrapper
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10063,7 +10063,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12supersampled_create_wra
 
   /* "smelly/fonts/box_drawing.py":173
  *     # using supersampling
- * 
+ *
  *     def create_wrapper(f: Callable[..., None]) -> Callable[..., None]:             # <<<<<<<<<<<<<<
  *         @wraps(f)
  *         def supersampled_wrapper(buf: BufType, width: int, height: int, *args: Any, **kw: Any) -> None:
@@ -10086,8 +10086,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12supersampled_create_wra
 }
 
 /* "smelly/fonts/box_drawing.py":169
- * 
- * 
+ *
+ *
  * def supersampled(supersample_factor: int = 4) -> Callable[[Callable[..., None]], Callable[..., None]]:             # <<<<<<<<<<<<<<
  *     # Anti-alias the drawing performed by the wrapped function by
  *     # using supersampling
@@ -10119,7 +10119,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_36supersampled(CYTHON_UNU
 
   /* "smelly/fonts/box_drawing.py":173
  *     # using supersampling
- * 
+ *
  *     def create_wrapper(f: Callable[..., None]) -> Callable[..., None]:             # <<<<<<<<<<<<<<
  *         @wraps(f)
  *         def supersampled_wrapper(buf: BufType, width: int, height: int, *args: Any, **kw: Any) -> None:
@@ -10149,10 +10149,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_36supersampled(CYTHON_UNU
 
   /* "smelly/fonts/box_drawing.py":184
  *         return supersampled_wrapper
- * 
+ *
  *     return create_wrapper             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_create_wrapper);
@@ -10160,8 +10160,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_36supersampled(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":169
- * 
- * 
+ *
+ *
  * def supersampled(supersample_factor: int = 4) -> Callable[[Callable[..., None]], Callable[..., None]]:             # <<<<<<<<<<<<<<
  *     # Anti-alias the drawing performed by the wrapped function by
  *     # using supersampling
@@ -10183,8 +10183,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_36supersampled(CYTHON_UNU
 }
 
 /* "smelly/fonts/box_drawing.py":187
- * 
- * 
+ *
+ *
  * def fill_region(buf: BufType, width: int, height: int, xlimits: Iterable[Iterable[float]], inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     full, empty = (0, 255) if inverted else (255, 0)
  *     for y in range(height):
@@ -10325,7 +10325,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_38fill_region(CYTHON_UNUS
   __Pyx_RefNannySetupContext("fill_region", 0);
 
   /* "smelly/fonts/box_drawing.py":188
- * 
+ *
  * def fill_region(buf: BufType, width: int, height: int, xlimits: Iterable[Iterable[float]], inverted: bool = False) -> None:
  *     full, empty = (0, 255) if inverted else (255, 0)             # <<<<<<<<<<<<<<
  *     for y in range(height):
@@ -10415,7 +10415,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_38fill_region(CYTHON_UNUS
  *         offset = y * width
  *         for x, (upper, lower) in enumerate(xlimits):             # <<<<<<<<<<<<<<
  *             buf[x + offset] = full if upper <= y <= lower else empty
- * 
+ *
  */
     __Pyx_INCREF(__pyx_int_0);
     __pyx_t_6 = __pyx_int_0;
@@ -10468,11 +10468,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_38fill_region(CYTHON_UNUS
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_14 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_15 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_14 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_15 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_14 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_15 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_14 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_15 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_14);
         __Pyx_INCREF(__pyx_t_15);
@@ -10520,8 +10520,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_38fill_region(CYTHON_UNUS
  *         offset = y * width
  *         for x, (upper, lower) in enumerate(xlimits):
  *             buf[x + offset] = full if upper <= y <= lower else empty             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_15 = PyObject_RichCompare(__pyx_v_upper, __pyx_v_y, Py_LE); __Pyx_XGOTREF(__pyx_t_15); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 192, __pyx_L1_error)
       if (__Pyx_PyObject_IsTrue(__pyx_t_15)) {
@@ -10552,7 +10552,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_38fill_region(CYTHON_UNUS
  *         offset = y * width
  *         for x, (upper, lower) in enumerate(xlimits):             # <<<<<<<<<<<<<<
  *             buf[x + offset] = full if upper <= y <= lower else empty
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -10569,8 +10569,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_38fill_region(CYTHON_UNUS
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/fonts/box_drawing.py":187
- * 
- * 
+ *
+ *
  * def fill_region(buf: BufType, width: int, height: int, xlimits: Iterable[Iterable[float]], inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     full, empty = (0, 255) if inverted else (255, 0)
  *     for y in range(height):
@@ -10601,8 +10601,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_38fill_region(CYTHON_UNUS
 }
 
 /* "smelly/fonts/box_drawing.py":195
- * 
- * 
+ *
+ *
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:             # <<<<<<<<<<<<<<
  *     m = (y2 - y1) / (x2 - x1)
  *     c = y1 - m * x1
@@ -10697,10 +10697,10 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_41line_equation(PyObject 
 
 /* "smelly/fonts/box_drawing.py":199
  *     c = y1 - m * x1
- * 
+ *
  *     def y(x: int) -> float:             # <<<<<<<<<<<<<<
  *         return m * x + c
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10732,10 +10732,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13line_equation_y(PyObjec
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":200
- * 
+ *
  *     def y(x: int) -> float:
  *         return m * x + c             # <<<<<<<<<<<<<<
- * 
+ *
  *     return y
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10752,10 +10752,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13line_equation_y(PyObjec
 
   /* "smelly/fonts/box_drawing.py":199
  *     c = y1 - m * x1
- * 
+ *
  *     def y(x: int) -> float:             # <<<<<<<<<<<<<<
  *         return m * x + c
- * 
+ *
  */
 
   /* function exit code */
@@ -10771,8 +10771,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13line_equation_y(PyObjec
 }
 
 /* "smelly/fonts/box_drawing.py":195
- * 
- * 
+ *
+ *
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:             # <<<<<<<<<<<<<<
  *     m = (y2 - y1) / (x2 - x1)
  *     c = y1 - m * x1
@@ -10800,11 +10800,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_40line_equation(CYTHON_UN
   }
 
   /* "smelly/fonts/box_drawing.py":196
- * 
+ *
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:
  *     m = (y2 - y1) / (x2 - x1)             # <<<<<<<<<<<<<<
  *     c = y1 - m * x1
- * 
+ *
  */
   __pyx_t_1 = PyNumber_Subtract(__pyx_v_y2, __pyx_v_y1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10822,7 +10822,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_40line_equation(CYTHON_UN
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:
  *     m = (y2 - y1) / (x2 - x1)
  *     c = y1 - m * x1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def y(x: int) -> float:
  */
   __pyx_t_3 = PyNumber_Multiply(__pyx_cur_scope->__pyx_v_m, __pyx_v_x1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 197, __pyx_L1_error)
@@ -10836,10 +10836,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_40line_equation(CYTHON_UN
 
   /* "smelly/fonts/box_drawing.py":199
  *     c = y1 - m * x1
- * 
+ *
  *     def y(x: int) -> float:             # <<<<<<<<<<<<<<
  *         return m * x + c
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10854,10 +10854,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_40line_equation(CYTHON_UN
 
   /* "smelly/fonts/box_drawing.py":202
  *         return m * x + c
- * 
+ *
  *     return y             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_y);
@@ -10865,8 +10865,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_40line_equation(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":195
- * 
- * 
+ *
+ *
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:             # <<<<<<<<<<<<<<
  *     m = (y2 - y1) / (x2 - x1)
  *     c = y1 - m * x1
@@ -10888,7 +10888,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_40line_equation(CYTHON_UN
 }
 
 /* "smelly/fonts/box_drawing.py":206
- * 
+ *
  * @supersampled()
  * def triangle(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     ay1, by1, y2 = 0, height - 1, height // 2
@@ -11222,7 +11222,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_42triangle(CYTHON_UNUSED 
  *     lowery = line_equation(x1, by1, x2, y2)
  *     xlimits = [(uppery(x), lowery(x)) for x in range(width)]             # <<<<<<<<<<<<<<
  *     fill_region(buf, width, height, xlimits)
- * 
+ *
  */
   __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -11321,8 +11321,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_42triangle(CYTHON_UNUSED 
  *     lowery = line_equation(x1, by1, x2, y2)
  *     xlimits = [(uppery(x), lowery(x)) for x in range(width)]
  *     fill_region(buf, width, height, xlimits)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_fill_region); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -11380,7 +11380,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_42triangle(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":206
- * 
+ *
  * @supersampled()
  * def triangle(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     ay1, by1, y2 = 0, height - 1, height // 2
@@ -11414,7 +11414,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_42triangle(CYTHON_UNUSED 
 }
 
 /* "smelly/fonts/box_drawing.py":219
- * 
+ *
  * @supersampled()
  * def corner_triangle(buf: SSByteArray, width: int, height: int, corner: str) -> None:             # <<<<<<<<<<<<<<
  *     if corner == 'top-right' or corner == 'bottom-left':
@@ -12042,7 +12042,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_44corner_triangle(CYTHON_
  *         elif corner == 'bottom-right':
  *             xlimits = [(diagonal_y(x), height - 1.0) for x in range(width)]             # <<<<<<<<<<<<<<
  *     fill_region(buf, width, height, xlimits)
- * 
+ *
  */
       __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
@@ -12139,8 +12139,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_44corner_triangle(CYTHON_
  *         elif corner == 'bottom-right':
  *             xlimits = [(diagonal_y(x), height - 1.0) for x in range(width)]
  *     fill_region(buf, width, height, xlimits)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_fill_region); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -12199,7 +12199,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_44corner_triangle(CYTHON_
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":219
- * 
+ *
  * @supersampled()
  * def corner_triangle(buf: SSByteArray, width: int, height: int, corner: str) -> None:             # <<<<<<<<<<<<<<
  *     if corner == 'top-right' or corner == 'bottom-left':
@@ -12228,7 +12228,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_44corner_triangle(CYTHON_
 }
 
 /* "smelly/fonts/box_drawing.py":236
- * 
+ *
  * @supersampled()
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
@@ -13513,7 +13513,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_13half_triangle_17generat
 }
 
 /* "smelly/fonts/box_drawing.py":236
- * 
+ *
  * @supersampled()
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
@@ -14306,7 +14306,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_46half_triangle(CYTHON_UN
  *         second_ = tuple((second_y(x), height - 1) for x in range(mid_x, width))
  *         limits = first_ + second_             # <<<<<<<<<<<<<<
  *     fill_region(buf, width, height, limits, inverted)
- * 
+ *
  */
     __pyx_t_2 = PyNumber_Add(__pyx_v_first_, __pyx_v_second_); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 257, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -14327,8 +14327,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_46half_triangle(CYTHON_UN
  *         second_ = tuple((second_y(x), height - 1) for x in range(mid_x, width))
  *         limits = first_ + second_
  *     fill_region(buf, width, height, limits, inverted)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_fill_region); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 258, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14390,7 +14390,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_46half_triangle(CYTHON_UN
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":236
- * 
+ *
  * @supersampled()
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
@@ -14429,8 +14429,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_46half_triangle(CYTHON_UN
 }
 
 /* "smelly/fonts/box_drawing.py":261
- * 
- * 
+ *
+ *
  * def thick_line(buf: BufType, width: int, height: int, thickness_in_pixels: int, p1: Tuple[int, int], p2: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *     if p1[0] > p2[0]:
  *         p1, p2 = p2, p1
@@ -14575,7 +14575,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
   __Pyx_INCREF(__pyx_v_p2);
 
   /* "smelly/fonts/box_drawing.py":262
- * 
+ *
  * def thick_line(buf: BufType, width: int, height: int, thickness_in_pixels: int, p1: Tuple[int, int], p2: Tuple[int, int]) -> None:
  *     if p1[0] > p2[0]:             # <<<<<<<<<<<<<<
  *         p1, p2 = p2, p1
@@ -14607,7 +14607,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
     __pyx_t_6 = 0;
 
     /* "smelly/fonts/box_drawing.py":262
- * 
+ *
  * def thick_line(buf: BufType, width: int, height: int, thickness_in_pixels: int, p1: Tuple[int, int], p2: Tuple[int, int]) -> None:
  *     if p1[0] > p2[0]:             # <<<<<<<<<<<<<<
  *         p1, p2 = p2, p1
@@ -14620,7 +14620,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
  *         p1, p2 = p2, p1
  *     leq = line_equation(*p1, *p2)             # <<<<<<<<<<<<<<
  *     delta, extra = divmod(thickness_in_pixels, 2)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_line_equation); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 264, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -14643,7 +14643,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
  *         p1, p2 = p2, p1
  *     leq = line_equation(*p1, *p2)
  *     delta, extra = divmod(thickness_in_pixels, 2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     for x in range(p1[0], p2[0] + 1):
  */
   __pyx_t_1 = PyNumber_Divmod(__pyx_v_thickness_in_pixels, __pyx_int_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 265, __pyx_L1_error)
@@ -14658,11 +14658,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_t_3);
@@ -14701,7 +14701,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
 
   /* "smelly/fonts/box_drawing.py":267
  *     delta, extra = divmod(thickness_in_pixels, 2)
- * 
+ *
  *     for x in range(p1[0], p2[0] + 1):             # <<<<<<<<<<<<<<
  *         if 0 <= x < width:
  *             y_p = leq(x)
@@ -14768,7 +14768,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
     __pyx_t_7 = 0;
 
     /* "smelly/fonts/box_drawing.py":268
- * 
+ *
  *     for x in range(p1[0], p2[0] + 1):
  *         if 0 <= x < width:             # <<<<<<<<<<<<<<
  *             y_p = leq(x)
@@ -14897,7 +14897,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
  *             for y in r:
  *                 if 0 <= y < height:             # <<<<<<<<<<<<<<
  *                     buf[x + y * width] = 255
- * 
+ *
  */
         __pyx_t_2 = PyObject_RichCompare(__pyx_int_0, __pyx_v_y, Py_LE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
         if (__Pyx_PyObject_IsTrue(__pyx_t_2)) {
@@ -14912,8 +14912,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
  *             for y in r:
  *                 if 0 <= y < height:
  *                     buf[x + y * width] = 255             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __pyx_t_2 = PyNumber_Multiply(__pyx_v_y, __pyx_v_width); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -14928,7 +14928,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
  *             for y in r:
  *                 if 0 <= y < height:             # <<<<<<<<<<<<<<
  *                     buf[x + y * width] = 255
- * 
+ *
  */
         }
 
@@ -14943,7 +14943,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
       /* "smelly/fonts/box_drawing.py":268
- * 
+ *
  *     for x in range(p1[0], p2[0] + 1):
  *         if 0 <= x < width:             # <<<<<<<<<<<<<<
  *             y_p = leq(x)
@@ -14953,7 +14953,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
 
     /* "smelly/fonts/box_drawing.py":267
  *     delta, extra = divmod(thickness_in_pixels, 2)
- * 
+ *
  *     for x in range(p1[0], p2[0] + 1):             # <<<<<<<<<<<<<<
  *         if 0 <= x < width:
  *             y_p = leq(x)
@@ -14962,8 +14962,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":261
- * 
- * 
+ *
+ *
  * def thick_line(buf: BufType, width: int, height: int, thickness_in_pixels: int, p1: Tuple[int, int], p2: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *     if p1[0] > p2[0]:
  *         p1, p2 = p2, p1
@@ -14995,7 +14995,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_48thick_line(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":277
- * 
+ *
  * @supersampled()
  * def cross_line(buf: SSByteArray, width: int, height: int, left: bool = True, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     if left:
@@ -15175,7 +15175,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_50cross_line(CYTHON_UNUSE
  *     else:
  *         p1, p2 = (width - 1, 0), (0, height - 1)             # <<<<<<<<<<<<<<
  *     thick_line(buf, width, height, buf.supersample_factor * thickness(level), p1, p2)
- * 
+ *
  */
   /*else*/ {
     __pyx_t_5 = __Pyx_PyInt_SubtractObjC(__pyx_v_width, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 281, __pyx_L1_error)
@@ -15209,8 +15209,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_50cross_line(CYTHON_UNUSE
  *     else:
  *         p1, p2 = (width - 1, 0), (0, height - 1)
  *     thick_line(buf, width, height, buf.supersample_factor * thickness(level), p1, p2)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_thick_line); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 282, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -15299,7 +15299,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_50cross_line(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":277
- * 
+ *
  * @supersampled()
  * def cross_line(buf: SSByteArray, width: int, height: int, left: bool = True, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     if left:
@@ -15327,7 +15327,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_50cross_line(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":286
- * 
+ *
  * @supersampled()
  * def half_cross_line(buf: SSByteArray, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     thickness_in_pixels = thickness(level) * buf.supersample_factor
@@ -15709,7 +15709,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_52half_cross_line(CYTHON_
  *         p2 = width - 1, height - 1
  *         p1 = 0, my             # <<<<<<<<<<<<<<
  *     thick_line(buf, width, height, thickness_in_pixels, p1, p2)
- * 
+ *
  */
     __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -15728,8 +15728,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_52half_cross_line(CYTHON_
  *         p2 = width - 1, height - 1
  *         p1 = 0, my
  *     thick_line(buf, width, height, thickness_in_pixels, p1, p2)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_thick_line); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 301, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -15793,7 +15793,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_52half_cross_line(CYTHON_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":286
- * 
+ *
  * @supersampled()
  * def half_cross_line(buf: SSByteArray, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     thickness_in_pixels = thickness(level) * buf.supersample_factor
@@ -15821,11 +15821,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_52half_cross_line(CYTHON_
 }
 
 /* "smelly/fonts/box_drawing.py":305
- * 
+ *
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  */
 
 /* Python wrapper */
@@ -15934,7 +15934,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_55mid_lines(PyObject *__p
 
 /* "smelly/fonts/box_drawing.py":308
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  *     def pt_to_coords(p: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         if p == 'l':
  *             return 0, mid_y
@@ -15979,7 +15979,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9mid_lines_pt_to_coords(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":309
- * 
+ *
  *     def pt_to_coords(p: str) -> Tuple[int, int]:
  *         if p == 'l':             # <<<<<<<<<<<<<<
  *             return 0, mid_y
@@ -16011,7 +16011,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9mid_lines_pt_to_coords(P
     goto __pyx_L0;
 
     /* "smelly/fonts/box_drawing.py":309
- * 
+ *
  *     def pt_to_coords(p: str) -> Tuple[int, int]:
  *         if p == 'l':             # <<<<<<<<<<<<<<
  *             return 0, mid_y
@@ -16120,7 +16120,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9mid_lines_pt_to_coords(P
  *         if p == 'b':
  *             return mid_x, height - 1             # <<<<<<<<<<<<<<
  *         raise KeyError(f'Unknown p: {p}')
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(!__pyx_cur_scope->__pyx_v_mid_x)) { __Pyx_RaiseClosureNameError("mid_x"); __PYX_ERR(0, 316, __pyx_L1_error) }
@@ -16152,7 +16152,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9mid_lines_pt_to_coords(P
  *         if p == 'b':
  *             return mid_x, height - 1
  *         raise KeyError(f'Unknown p: {p}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     for x in pts:
  */
   __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_v_p, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 317, __pyx_L1_error)
@@ -16169,7 +16169,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9mid_lines_pt_to_coords(P
 
   /* "smelly/fonts/box_drawing.py":308
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  *     def pt_to_coords(p: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         if p == 'l':
  *             return 0, mid_y
@@ -16188,11 +16188,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9mid_lines_pt_to_coords(P
 }
 
 /* "smelly/fonts/box_drawing.py":305
- * 
+ *
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_buf, PyObject *__pyx_v_width, PyObject *__pyx_v_height, PyObject *__pyx_v_level, PyObject *__pyx_v_pts) {
@@ -16237,7 +16237,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:
  *     mid_x, mid_y = width // 2, height // 2             # <<<<<<<<<<<<<<
- * 
+ *
  *     def pt_to_coords(p: str) -> Tuple[int, int]:
  */
   __pyx_t_1 = __Pyx_PyInt_FloorDivideObjC(__pyx_cur_scope->__pyx_v_width, __pyx_int_2, 2, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
@@ -16253,7 +16253,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
 
   /* "smelly/fonts/box_drawing.py":308
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  *     def pt_to_coords(p: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         if p == 'l':
  *             return 0, mid_y
@@ -16286,7 +16286,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
 
   /* "smelly/fonts/box_drawing.py":319
  *         raise KeyError(f'Unknown p: {p}')
- * 
+ *
  *     for x in pts:             # <<<<<<<<<<<<<<
  *         p1, p2 = map(pt_to_coords, x)
  *         thick_line(buf, width, height, buf.supersample_factor * thickness(level), p1, p2)
@@ -16334,11 +16334,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
     __pyx_t_2 = 0;
 
     /* "smelly/fonts/box_drawing.py":320
- * 
+ *
  *     for x in pts:
  *         p1, p2 = map(pt_to_coords, x)             # <<<<<<<<<<<<<<
  *         thick_line(buf, width, height, buf.supersample_factor * thickness(level), p1, p2)
- * 
+ *
  */
     __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 320, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -16361,11 +16361,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_1);
@@ -16406,8 +16406,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
  *     for x in pts:
  *         p1, p2 = map(pt_to_coords, x)
  *         thick_line(buf, width, height, buf.supersample_factor * thickness(level), p1, p2)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_thick_line); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -16497,7 +16497,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
 
     /* "smelly/fonts/box_drawing.py":319
  *         raise KeyError(f'Unknown p: {p}')
- * 
+ *
  *     for x in pts:             # <<<<<<<<<<<<<<
  *         p1, p2 = map(pt_to_coords, x)
  *         thick_line(buf, width, height, buf.supersample_factor * thickness(level), p1, p2)
@@ -16506,11 +16506,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":305
- * 
+ *
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  */
 
   /* function exit code */
@@ -16538,8 +16538,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_54mid_lines(CYTHON_UNUSED
 }
 
 /* "smelly/fonts/box_drawing.py":327
- * 
- * 
+ *
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:
  *         def f(t: float) -> float:
@@ -16633,7 +16633,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_57cubic_bezier(PyObject *
 }
 
 /* "smelly/fonts/box_drawing.py":328
- * 
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:             # <<<<<<<<<<<<<<
  *         def f(t: float) -> float:
@@ -16805,7 +16805,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12cubic_bezier_9bezier_eq
  *             tm1_3 = tm1 * tm1 * tm1
  *             t_3 = t * t * t             # <<<<<<<<<<<<<<
  *             return tm1_3 * p0 + 3 * t * tm1 * (tm1 * p1 + t * p2) + t_3 * p3
- * 
+ *
  */
   __pyx_v_t_3 = ((__pyx_v_t * __pyx_v_t) * __pyx_v_t);
 
@@ -16813,7 +16813,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12cubic_bezier_9bezier_eq
  *             tm1_3 = tm1 * tm1 * tm1
  *             t_3 = t * t * t
  *             return tm1_3 * p0 + 3 * t * tm1 * (tm1 * p1 + t * p2) + t_3 * p3             # <<<<<<<<<<<<<<
- * 
+ *
  *         return f
  */
   __Pyx_XDECREF(__pyx_r);
@@ -16887,7 +16887,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12cubic_bezier_9bezier_eq
 }
 
 /* "smelly/fonts/box_drawing.py":328
- * 
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:             # <<<<<<<<<<<<<<
  *         def f(t: float) -> float:
@@ -16946,9 +16946,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12cubic_bezier_bezier_eq(
 
   /* "smelly/fonts/box_drawing.py":335
  *             return tm1_3 * p0 + 3 * t * tm1 * (tm1 * p1 + t * p2) + t_3 * p3
- * 
+ *
  *         return f             # <<<<<<<<<<<<<<
- * 
+ *
  *     bezier_x = bezier_eq(start[0], c1[0], c2[0], end[0])
  */
   __Pyx_XDECREF(__pyx_r);
@@ -16957,7 +16957,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12cubic_bezier_bezier_eq(
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":328
- * 
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:             # <<<<<<<<<<<<<<
  *         def f(t: float) -> float:
@@ -16979,8 +16979,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12cubic_bezier_bezier_eq(
 }
 
 /* "smelly/fonts/box_drawing.py":327
- * 
- * 
+ *
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:
  *         def f(t: float) -> float:
@@ -17003,7 +17003,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_56cubic_bezier(CYTHON_UNU
   __Pyx_RefNannySetupContext("cubic_bezier", 0);
 
   /* "smelly/fonts/box_drawing.py":328
- * 
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:             # <<<<<<<<<<<<<<
  *         def f(t: float) -> float:
@@ -17028,7 +17028,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_56cubic_bezier(CYTHON_UNU
 
   /* "smelly/fonts/box_drawing.py":337
  *         return f
- * 
+ *
  *     bezier_x = bezier_eq(start[0], c1[0], c2[0], end[0])             # <<<<<<<<<<<<<<
  *     bezier_y = bezier_eq(start[1], c1[1], c2[1], end[1])
  *     return bezier_x, bezier_y
@@ -17051,11 +17051,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_56cubic_bezier(CYTHON_UNU
   __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":338
- * 
+ *
  *     bezier_x = bezier_eq(start[0], c1[0], c2[0], end[0])
  *     bezier_y = bezier_eq(start[1], c1[1], c2[1], end[1])             # <<<<<<<<<<<<<<
  *     return bezier_x, bezier_y
- * 
+ *
  */
   __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_start, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 338, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -17078,8 +17078,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_56cubic_bezier(CYTHON_UNU
  *     bezier_x = bezier_eq(start[0], c1[0], c2[0], end[0])
  *     bezier_y = bezier_eq(start[1], c1[1], c2[1], end[1])
  *     return bezier_x, bezier_y             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 339, __pyx_L1_error)
@@ -17095,8 +17095,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_56cubic_bezier(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":327
- * 
- * 
+ *
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:
  *         def f(t: float) -> float:
@@ -17121,8 +17121,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_56cubic_bezier(CYTHON_UNU
 }
 
 /* "smelly/fonts/box_drawing.py":342
- * 
- * 
+ *
+ *
  * def find_bezier_for_D(width: int, height: int) -> int:             # <<<<<<<<<<<<<<
  *     cx = last_cx = width - 1
  *     start = (0, 0)
@@ -17217,7 +17217,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_58find_bezier_for_D(CYTHO
   __Pyx_RefNannySetupContext("find_bezier_for_D", 0);
 
   /* "smelly/fonts/box_drawing.py":343
- * 
+ *
  * def find_bezier_for_D(width: int, height: int) -> int:
  *     cx = last_cx = width - 1             # <<<<<<<<<<<<<<
  *     start = (0, 0)
@@ -17380,11 +17380,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_58find_bezier_for_D(CYTHO
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_5);
@@ -17479,7 +17479,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_58find_bezier_for_D(CYTHO
  *             return last_cx
  *         last_cx = cx             # <<<<<<<<<<<<<<
  *         cx += 1
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_cx);
     __Pyx_DECREF_SET(__pyx_v_last_cx, __pyx_v_cx);
@@ -17488,8 +17488,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_58find_bezier_for_D(CYTHO
  *             return last_cx
  *         last_cx = cx
  *         cx += 1             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_v_cx, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 353, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -17498,8 +17498,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_58find_bezier_for_D(CYTHO
   }
 
   /* "smelly/fonts/box_drawing.py":342
- * 
- * 
+ *
+ *
  * def find_bezier_for_D(width: int, height: int) -> int:             # <<<<<<<<<<<<<<
  *     cx = last_cx = width - 1
  *     start = (0, 0)
@@ -17531,8 +17531,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_58find_bezier_for_D(CYTHO
 static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/fonts/box_drawing.py":356
- * 
- * 
+ *
+ *
  * def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:             # <<<<<<<<<<<<<<
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))
@@ -17644,7 +17644,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_60get_bezier_limits(CYTHO
 
 /* "smelly/fonts/box_drawing.py":361
  *     last_t, t_limit = 0.0, 0.5
- * 
+ *
  *     def find_t_for_x(x: int, start_t: float) -> float:             # <<<<<<<<<<<<<<
  *         if abs(bezier_x(start_t) - x) < 0.1:
  *             return start_t
@@ -17735,7 +17735,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_17get_bezier_limits_find_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":362
- * 
+ *
  *     def find_t_for_x(x: int, start_t: float) -> float:
  *         if abs(bezier_x(start_t) - x) < 0.1:             # <<<<<<<<<<<<<<
  *             return start_t
@@ -17788,7 +17788,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_17get_bezier_limits_find_
     goto __pyx_L0;
 
     /* "smelly/fonts/box_drawing.py":362
- * 
+ *
  *     def find_t_for_x(x: int, start_t: float) -> float:
  *         if abs(bezier_x(start_t) - x) < 0.1:             # <<<<<<<<<<<<<<
  *             return start_t
@@ -18011,7 +18011,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_17get_bezier_limits_find_
  *                 increment = t_limit - start_t
  *                 if increment <= 0:             # <<<<<<<<<<<<<<
  *                     return start_t
- * 
+ *
  */
       __pyx_t_5 = ((__pyx_v_increment <= 0.0) != 0);
       if (__pyx_t_5) {
@@ -18020,7 +18020,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_17get_bezier_limits_find_
  *                 increment = t_limit - start_t
  *                 if increment <= 0:
  *                     return start_t             # <<<<<<<<<<<<<<
- * 
+ *
  *     for x in range(start_x, max_x + 1):
  */
         __Pyx_XDECREF(__pyx_r);
@@ -18035,7 +18035,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_17get_bezier_limits_find_
  *                 increment = t_limit - start_t
  *                 if increment <= 0:             # <<<<<<<<<<<<<<
  *                     return start_t
- * 
+ *
  */
       }
     }
@@ -18044,7 +18044,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_17get_bezier_limits_find_
 
   /* "smelly/fonts/box_drawing.py":361
  *     last_t, t_limit = 0.0, 0.5
- * 
+ *
  *     def find_t_for_x(x: int, start_t: float) -> float:             # <<<<<<<<<<<<<<
  *         if abs(bezier_x(start_t) - x) < 0.1:
  *             return start_t
@@ -18068,8 +18068,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_17get_bezier_limits_find_
 }
 
 /* "smelly/fonts/box_drawing.py":356
- * 
- * 
+ *
+ *
  * def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:             # <<<<<<<<<<<<<<
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))
@@ -18105,7 +18105,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 356, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":357
- * 
+ *
  * def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:
  *     start_x = int(bezier_x(0))             # <<<<<<<<<<<<<<
  *     max_x = int(bezier_x(0.5))
@@ -18139,7 +18139,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))             # <<<<<<<<<<<<<<
  *     last_t, t_limit = 0.0, 0.5
- * 
+ *
  */
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_bezier_x);
   __pyx_t_1 = __pyx_cur_scope->__pyx_v_bezier_x; __pyx_t_3 = NULL;
@@ -18168,7 +18168,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))
  *     last_t, t_limit = 0.0, 0.5             # <<<<<<<<<<<<<<
- * 
+ *
  *     def find_t_for_x(x: int, start_t: float) -> float:
  */
   __pyx_t_1 = __pyx_float_0_0;
@@ -18181,7 +18181,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
 
   /* "smelly/fonts/box_drawing.py":361
  *     last_t, t_limit = 0.0, 0.5
- * 
+ *
  *     def find_t_for_x(x: int, start_t: float) -> float:             # <<<<<<<<<<<<<<
  *         if abs(bezier_x(start_t) - x) < 0.1:
  *             return start_t
@@ -18201,7 +18201,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
 
   /* "smelly/fonts/box_drawing.py":381
  *                     return start_t
- * 
+ *
  *     for x in range(start_x, max_x + 1):             # <<<<<<<<<<<<<<
  *         if x > start_x:
  *             last_t = find_t_for_x(x, last_t)
@@ -18265,7 +18265,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
     __pyx_t_2 = 0;
 
     /* "smelly/fonts/box_drawing.py":382
- * 
+ *
  *     for x in range(start_x, max_x + 1):
  *         if x > start_x:             # <<<<<<<<<<<<<<
  *             last_t = find_t_for_x(x, last_t)
@@ -18292,7 +18292,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
       __pyx_t_2 = 0;
 
       /* "smelly/fonts/box_drawing.py":382
- * 
+ *
  *     for x in range(start_x, max_x + 1):
  *         if x > start_x:             # <<<<<<<<<<<<<<
  *             last_t = find_t_for_x(x, last_t)
@@ -18374,7 +18374,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
  *         if abs(upper - lower) <= 2:  # avoid pip on end of D
  *             break             # <<<<<<<<<<<<<<
  *         yield upper, lower
- * 
+ *
  */
       goto __pyx_L5_break;
 
@@ -18391,8 +18391,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
  *         if abs(upper - lower) <= 2:  # avoid pip on end of D
  *             break
  *         yield upper, lower             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 387, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -18424,7 +18424,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
 
     /* "smelly/fonts/box_drawing.py":381
  *                     return start_t
- * 
+ *
  *     for x in range(start_x, max_x + 1):             # <<<<<<<<<<<<<<
  *         if x > start_x:
  *             last_t = find_t_for_x(x, last_t)
@@ -18435,8 +18435,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/fonts/box_drawing.py":356
- * 
- * 
+ *
+ *
  * def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:             # <<<<<<<<<<<<<<
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))
@@ -18465,7 +18465,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_62generator(__pyx_Corouti
 }
 
 /* "smelly/fonts/box_drawing.py":391
- * 
+ *
  * @supersampled()
  * def D(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     c1x = find_bezier_for_D(width, height)
@@ -18792,11 +18792,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_63D(CYTHON_UNUSED PyObjec
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -19174,7 +19174,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_63D(CYTHON_UNUSED PyObjec
  *             for src_x in range(width):
  *                 dest_x = width - 1 - src_x             # <<<<<<<<<<<<<<
  *                 buf[offset + dest_x] = mbuf[offset + src_x]
- * 
+ *
  */
         __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_v_width, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 407, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
@@ -19188,8 +19188,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_63D(CYTHON_UNUSED PyObjec
  *             for src_x in range(width):
  *                 dest_x = width - 1 - src_x
  *                 buf[offset + dest_x] = mbuf[offset + src_x]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_1 = PyNumber_Add(__pyx_v_offset, __pyx_v_src_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 408, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
@@ -19225,7 +19225,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_63D(CYTHON_UNUSED PyObjec
   __pyx_L5:;
 
   /* "smelly/fonts/box_drawing.py":391
- * 
+ *
  * @supersampled()
  * def D(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     c1x = find_bezier_for_D(width, height)
@@ -19262,8 +19262,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_63D(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/fonts/box_drawing.py":411
- * 
- * 
+ *
+ *
  * def draw_parametrized_curve(buf: SSByteArray, width: int, height: int, level: int, xfunc: ParameterizedFunc, yfunc: ParameterizedFunc) -> None:             # <<<<<<<<<<<<<<
  *     supersample_factor = buf.supersample_factor
  *     num_samples = height * 8
@@ -19419,7 +19419,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_65draw_parametrized_curve
   __Pyx_RefNannySetupContext("draw_parametrized_curve", 0);
 
   /* "smelly/fonts/box_drawing.py":412
- * 
+ *
  * def draw_parametrized_curve(buf: SSByteArray, width: int, height: int, level: int, xfunc: ParameterizedFunc, yfunc: ParameterizedFunc) -> None:
  *     supersample_factor = buf.supersample_factor             # <<<<<<<<<<<<<<
  *     num_samples = height * 8
@@ -19479,11 +19479,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_65draw_parametrized_curve
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -19724,8 +19724,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_65draw_parametrized_curve
         __PYX_ERR(0, 423, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_4);
       #else
@@ -19934,7 +19934,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_65draw_parametrized_curve
  *                     if 0 <= x < width:
  *                         pos = offset + x             # <<<<<<<<<<<<<<
  *                         buf[pos] = min(255, buf[pos] + 255)
- * 
+ *
  */
             __pyx_t_8 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 430, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_8);
@@ -19945,8 +19945,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_65draw_parametrized_curve
  *                     if 0 <= x < width:
  *                         pos = offset + x
  *                         buf[pos] = min(255, buf[pos] + 255)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
             __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_buf, __pyx_v_pos); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 431, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_8);
@@ -20026,8 +20026,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_65draw_parametrized_curve
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":411
- * 
- * 
+ *
+ *
  * def draw_parametrized_curve(buf: SSByteArray, width: int, height: int, level: int, xfunc: ParameterizedFunc, yfunc: ParameterizedFunc) -> None:             # <<<<<<<<<<<<<<
  *     supersample_factor = buf.supersample_factor
  *     num_samples = height * 8
@@ -20067,8 +20067,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_65draw_parametrized_curve
 }
 
 /* "smelly/fonts/box_drawing.py":434
- * 
- * 
+ *
+ *
  * def rectircle_equations(cell_width: int, cell_height: int, supersample_factor: int, which: str = '') -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     '''
  *     Return two functions, x(t) and y(t) that map the parameter t which must be
@@ -20173,10 +20173,10 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_68rectircle_equations(PyO
 
 /* "smelly/fonts/box_drawing.py":463
  *     if lower_quadrants:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return t * b
- * 
+ *
  */
 
 /* Python wrapper */
@@ -20221,10 +20221,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_y(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":464
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell
  *             return t * b             # <<<<<<<<<<<<<<
- * 
+ *
  *     else:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -20240,10 +20240,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_y(P
 
   /* "smelly/fonts/box_drawing.py":463
  *     if lower_quadrants:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return t * b
- * 
+ *
  */
 
   /* function exit code */
@@ -20260,10 +20260,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_y(P
 
 /* "smelly/fonts/box_drawing.py":468
  *     else:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> bottom of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return (2 - t) * b
- * 
+ *
  */
 
 /* Python wrapper */
@@ -20308,10 +20308,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_2y(
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":469
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> bottom of cell, 1 -> middle of cell
  *             return (2 - t) * b             # <<<<<<<<<<<<<<
- * 
+ *
  *     # x(t). To get this we first need |y(t)|/b. This is just t since as t goes
  */
   __Pyx_XDECREF(__pyx_r);
@@ -20327,10 +20327,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_2y(
 
   /* "smelly/fonts/box_drawing.py":468
  *     else:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> bottom of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return (2 - t) * b
- * 
+ *
  */
 
   /* function exit code */
@@ -20347,7 +20347,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_2y(
 
 /* "smelly/fonts/box_drawing.py":475
  *     if left_quadrants:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.floor(cell_width - abs(a * pow(xterm, xexp)) - adjust_x)
@@ -20401,11 +20401,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_4x(
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":476
- * 
+ *
  *         def x(t: float) -> float:
  *             xterm = 1 - pow(t, yexp)             # <<<<<<<<<<<<<<
  *             return math.floor(cell_width - abs(a * pow(xterm, xexp)) - adjust_x)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_pow)) { __Pyx_RaiseClosureNameError("pow"); __PYX_ERR(0, 476, __pyx_L1_error) }
   __pyx_t_2 = PyFloat_FromDouble(__pyx_v_t); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 476, __pyx_L1_error)
@@ -20469,7 +20469,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_4x(
  *         def x(t: float) -> float:
  *             xterm = 1 - pow(t, yexp)
  *             return math.floor(cell_width - abs(a * pow(xterm, xexp)) - adjust_x)             # <<<<<<<<<<<<<<
- * 
+ *
  *     else:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -20563,7 +20563,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_4x(
 
   /* "smelly/fonts/box_drawing.py":475
  *     if left_quadrants:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.floor(cell_width - abs(a * pow(xterm, xexp)) - adjust_x)
@@ -20588,7 +20588,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_4x(
 
 /* "smelly/fonts/box_drawing.py":481
  *     else:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.ceil(abs(a * pow(xterm, xexp)))
@@ -20642,11 +20642,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_6x(
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":482
- * 
+ *
  *         def x(t: float) -> float:
  *             xterm = 1 - pow(t, yexp)             # <<<<<<<<<<<<<<
  *             return math.ceil(abs(a * pow(xterm, xexp)))
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_pow)) { __Pyx_RaiseClosureNameError("pow"); __PYX_ERR(0, 482, __pyx_L1_error) }
   __pyx_t_2 = PyFloat_FromDouble(__pyx_v_t); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 482, __pyx_L1_error)
@@ -20710,7 +20710,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_6x(
  *         def x(t: float) -> float:
  *             xterm = 1 - pow(t, yexp)
  *             return math.ceil(abs(a * pow(xterm, xexp)))             # <<<<<<<<<<<<<<
- * 
+ *
  *     return x, y
  */
   __Pyx_XDECREF(__pyx_r);
@@ -20796,7 +20796,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_6x(
 
   /* "smelly/fonts/box_drawing.py":481
  *     else:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.ceil(abs(a * pow(xterm, xexp)))
@@ -20820,8 +20820,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_19rectircle_equations_6x(
 }
 
 /* "smelly/fonts/box_drawing.py":434
- * 
- * 
+ *
+ *
  * def rectircle_equations(cell_width: int, cell_height: int, supersample_factor: int, which: str = '') -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     '''
  *     Return two functions, x(t) and y(t) that map the parameter t which must be
@@ -20977,11 +20977,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -21023,7 +21023,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
  *     left_quadrants, lower_quadrants = {'': (True, False), '': (False, False), '': (True, True), '': (False, True)}[which]
  *     cell_width_is_odd = (cell_width // supersample_factor) % 2             # <<<<<<<<<<<<<<
  *     adjust_x = cell_width_is_odd * supersample_factor
- * 
+ *
  */
   __pyx_t_1 = PyNumber_FloorDivide(__pyx_cur_scope->__pyx_v_cell_width, __pyx_v_supersample_factor); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 458, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -21037,7 +21037,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
  *     left_quadrants, lower_quadrants = {'': (True, False), '': (False, False), '': (True, True), '': (False, True)}[which]
  *     cell_width_is_odd = (cell_width // supersample_factor) % 2
  *     adjust_x = cell_width_is_odd * supersample_factor             # <<<<<<<<<<<<<<
- * 
+ *
  *     if lower_quadrants:
  */
   __pyx_t_3 = PyNumber_Multiply(__pyx_v_cell_width_is_odd, __pyx_v_supersample_factor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 459, __pyx_L1_error)
@@ -21048,9 +21048,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 
   /* "smelly/fonts/box_drawing.py":461
  *     adjust_x = cell_width_is_odd * supersample_factor
- * 
+ *
  *     if lower_quadrants:             # <<<<<<<<<<<<<<
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell
  */
   __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_v_lower_quadrants); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 461, __pyx_L1_error)
@@ -21058,10 +21058,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 
     /* "smelly/fonts/box_drawing.py":463
  *     if lower_quadrants:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return t * b
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 463, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -21076,9 +21076,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 
     /* "smelly/fonts/box_drawing.py":461
  *     adjust_x = cell_width_is_odd * supersample_factor
- * 
+ *
  *     if lower_quadrants:             # <<<<<<<<<<<<<<
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell
  */
     goto __pyx_L5;
@@ -21086,10 +21086,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 
   /* "smelly/fonts/box_drawing.py":468
  *     else:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> bottom of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return (2 - t) * b
- * 
+ *
  */
   /*else*/ {
     __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 468, __pyx_L1_error)
@@ -21109,7 +21109,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
  *     # x(t). To get this we first need |y(t)|/b. This is just t since as t goes
  *     # from 0 to 1 y goes from either 0 to b or 0 to -b
  *     if left_quadrants:             # <<<<<<<<<<<<<<
- * 
+ *
  *         def x(t: float) -> float:
  */
   __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_v_left_quadrants); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 473, __pyx_L1_error)
@@ -21117,7 +21117,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 
     /* "smelly/fonts/box_drawing.py":475
  *     if left_quadrants:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.floor(cell_width - abs(a * pow(xterm, xexp)) - adjust_x)
@@ -21137,7 +21137,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
  *     # x(t). To get this we first need |y(t)|/b. This is just t since as t goes
  *     # from 0 to 1 y goes from either 0 to b or 0 to -b
  *     if left_quadrants:             # <<<<<<<<<<<<<<
- * 
+ *
  *         def x(t: float) -> float:
  */
     goto __pyx_L6;
@@ -21145,7 +21145,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 
   /* "smelly/fonts/box_drawing.py":481
  *     else:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.ceil(abs(a * pow(xterm, xexp)))
@@ -21166,10 +21166,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 
   /* "smelly/fonts/box_drawing.py":485
  *             return math.ceil(abs(a * pow(xterm, xexp)))
- * 
+ *
  *     return x, y             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 485, __pyx_L1_error)
@@ -21185,8 +21185,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":434
- * 
- * 
+ *
+ *
  * def rectircle_equations(cell_width: int, cell_height: int, supersample_factor: int, which: str = '') -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     '''
  *     Return two functions, x(t) and y(t) that map the parameter t which must be
@@ -21214,7 +21214,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_67rectircle_equations(CYT
 }
 
 /* "smelly/fonts/box_drawing.py":489
- * 
+ *
  * @supersampled()
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)
@@ -21352,7 +21352,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_69rounded_corner(CYTHON_U
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)             # <<<<<<<<<<<<<<
  *     draw_parametrized_curve(buf, width, height, level, xfunc, yfunc)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rectircle_equations); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 490, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -21421,11 +21421,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_69rounded_corner(CYTHON_U
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_6);
@@ -21466,8 +21466,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_69rounded_corner(CYTHON_U
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)
  *     draw_parametrized_curve(buf, width, height, level, xfunc, yfunc)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_draw_parametrized_curve); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 491, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -21531,7 +21531,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_69rounded_corner(CYTHON_U
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":489
- * 
+ *
  * @supersampled()
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)
@@ -21558,7 +21558,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_69rounded_corner(CYTHON_U
 }
 
 /* "smelly/fonts/box_drawing.py":495
- * 
+ *
  * @supersampled()
  * def rounded_separator(buf: SSByteArray, width: int, height: int, level: int = 1, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     gap = thickness(level) * buf.supersample_factor
@@ -21936,11 +21936,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_71rounded_separator(CYTHO
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_1);
@@ -22297,7 +22297,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_71rounded_separator(CYTHO
  *             for src_x in range(width):
  *                 dest_x = width - 1 - src_x             # <<<<<<<<<<<<<<
  *                 buf[offset + dest_x] = mbuf[offset + src_x]
- * 
+ *
  */
         __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_v_width, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 512, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
@@ -22311,8 +22311,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_71rounded_separator(CYTHO
  *             for src_x in range(width):
  *                 dest_x = width - 1 - src_x
  *                 buf[offset + dest_x] = mbuf[offset + src_x]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_6 = PyNumber_Add(__pyx_v_offset, __pyx_v_src_x); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 513, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
@@ -22348,7 +22348,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_71rounded_separator(CYTHO
   __pyx_L5:;
 
   /* "smelly/fonts/box_drawing.py":495
- * 
+ *
  * @supersampled()
  * def rounded_separator(buf: SSByteArray, width: int, height: int, level: int = 1, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     gap = thickness(level) * buf.supersample_factor
@@ -22386,8 +22386,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_71rounded_separator(CYTHO
 }
 
 /* "smelly/fonts/box_drawing.py":516
- * 
- * 
+ *
+ *
  * def half_dhline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, width // 2) if which == 'left' else (width // 2, width)
  *     gap = thickness(level + 1, horizontal=False)
@@ -22534,7 +22534,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_73half_dhline(CYTHON_UNUS
   __Pyx_RefNannySetupContext("half_dhline", 0);
 
   /* "smelly/fonts/box_drawing.py":517
- * 
+ *
  * def half_dhline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', only: Optional[str] = None) -> Tuple[int, int]:
  *     x1, x2 = (0, width // 2) if which == 'left' else (width // 2, width)             # <<<<<<<<<<<<<<
  *     gap = thickness(level + 1, horizontal=False)
@@ -22577,8 +22577,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_73half_dhline(CYTHON_UNUS
       __PYX_ERR(0, 517, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
     #else
@@ -22732,7 +22732,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_73half_dhline(CYTHON_UNUS
  *     if only != 'top':
  *         draw_hline(buf, width, x1, x2, height // 2 + gap, level)             # <<<<<<<<<<<<<<
  *     return height // 2 - gap, height // 2 + gap
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_draw_hline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 522, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -22815,8 +22815,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_73half_dhline(CYTHON_UNUS
  *     if only != 'top':
  *         draw_hline(buf, width, x1, x2, height // 2 + gap, level)
  *     return height // 2 - gap, height // 2 + gap             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = __Pyx_PyInt_FloorDivideObjC(__pyx_v_height, __pyx_int_2, 2, 0, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 523, __pyx_L1_error)
@@ -22842,8 +22842,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_73half_dhline(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":516
- * 
- * 
+ *
+ *
  * def half_dhline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, width // 2) if which == 'left' else (width // 2, width)
  *     gap = thickness(level + 1, horizontal=False)
@@ -22868,8 +22868,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_73half_dhline(CYTHON_UNUS
 }
 
 /* "smelly/fonts/box_drawing.py":526
- * 
- * 
+ *
+ *
  * def half_dvline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2) if which == 'top' else (height // 2, height)
  *     gap = thickness(level + 1, horizontal=True)
@@ -23016,7 +23016,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_75half_dvline(CYTHON_UNUS
   __Pyx_RefNannySetupContext("half_dvline", 0);
 
   /* "smelly/fonts/box_drawing.py":527
- * 
+ *
  * def half_dvline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', only: Optional[str] = None) -> Tuple[int, int]:
  *     y1, y2 = (0, height // 2) if which == 'top' else (height // 2, height)             # <<<<<<<<<<<<<<
  *     gap = thickness(level + 1, horizontal=True)
@@ -23059,8 +23059,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_75half_dvline(CYTHON_UNUS
       __PYX_ERR(0, 527, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
     #else
@@ -23214,7 +23214,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_75half_dvline(CYTHON_UNUS
  *     if only != 'left':
  *         draw_vline(buf, width, y1, y2, width // 2 + gap, level)             # <<<<<<<<<<<<<<
  *     return width // 2 - gap, width // 2 + gap
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_draw_vline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 532, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -23297,8 +23297,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_75half_dvline(CYTHON_UNUS
  *     if only != 'left':
  *         draw_vline(buf, width, y1, y2, width // 2 + gap, level)
  *     return width // 2 - gap, width // 2 + gap             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = __Pyx_PyInt_FloorDivideObjC(__pyx_v_width, __pyx_int_2, 2, 0, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 533, __pyx_L1_error)
@@ -23324,8 +23324,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_75half_dvline(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":526
- * 
- * 
+ *
+ *
  * def half_dvline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2) if which == 'top' else (height // 2, height)
  *     gap = thickness(level + 1, horizontal=True)
@@ -23350,8 +23350,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_75half_dvline(CYTHON_UNUS
 }
 
 /* "smelly/fonts/box_drawing.py":536
- * 
- * 
+ *
+ *
  * def dvline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dvline(buf, width, height, only=only, level=level)
  *     return half_dvline(buf, width, height, only=only, which='bottom', level=level)
@@ -23474,11 +23474,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_77dvline(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("dvline", 0);
 
   /* "smelly/fonts/box_drawing.py":537
- * 
+ *
  * def dvline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:
  *     half_dvline(buf, width, height, only=only, level=level)             # <<<<<<<<<<<<<<
  *     return half_dvline(buf, width, height, only=only, which='bottom', level=level)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_dvline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 537, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23508,8 +23508,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_77dvline(CYTHON_UNUSED Py
  * def dvline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:
  *     half_dvline(buf, width, height, only=only, level=level)
  *     return half_dvline(buf, width, height, only=only, which='bottom', level=level)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_half_dvline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 538, __pyx_L1_error)
@@ -23540,8 +23540,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_77dvline(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":536
- * 
- * 
+ *
+ *
  * def dvline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dvline(buf, width, height, only=only, level=level)
  *     return half_dvline(buf, width, height, only=only, which='bottom', level=level)
@@ -23562,8 +23562,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_77dvline(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/box_drawing.py":541
- * 
- * 
+ *
+ *
  * def dhline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dhline(buf, width, height, only=only, level=level)
  *     return half_dhline(buf, width, height, only=only, which='bottom', level=level)
@@ -23686,11 +23686,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_79dhline(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("dhline", 0);
 
   /* "smelly/fonts/box_drawing.py":542
- * 
+ *
  * def dhline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:
  *     half_dhline(buf, width, height, only=only, level=level)             # <<<<<<<<<<<<<<
  *     return half_dhline(buf, width, height, only=only, which='bottom', level=level)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_dhline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 542, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23720,8 +23720,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_79dhline(CYTHON_UNUSED Py
  * def dhline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:
  *     half_dhline(buf, width, height, only=only, level=level)
  *     return half_dhline(buf, width, height, only=only, which='bottom', level=level)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_half_dhline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 543, __pyx_L1_error)
@@ -23752,8 +23752,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_79dhline(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":541
- * 
- * 
+ *
+ *
  * def dhline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dhline(buf, width, height, only=only, level=level)
  *     return half_dhline(buf, width, height, only=only, which='bottom', level=level)
@@ -23774,8 +23774,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_79dhline(CYTHON_UNUSED Py
 }
 
 /* "smelly/fonts/box_drawing.py":546
- * 
- * 
+ *
+ *
  * def dvcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     half_dhline(buf, width, height, which=hw)
@@ -23911,7 +23911,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_81dvcorner(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("dvcorner", 0);
 
   /* "smelly/fonts/box_drawing.py":547
- * 
+ *
  * def dvcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     hw = 'right' if which in '' else 'left'             # <<<<<<<<<<<<<<
  *     half_dhline(buf, width, height, which=hw)
@@ -23981,7 +23981,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_81dvcorner(CYTHON_UNUSED 
  *     vw = 'top' if which in '' else 'bottom'
  *     gap = thickness(level + 1, horizontal=False)             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, which=vw, extend_by=gap // 2 + thickness(level, horizontal=False))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_thickness); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 550, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -24007,8 +24007,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_81dvcorner(CYTHON_UNUSED 
  *     vw = 'top' if which in '' else 'bottom'
  *     gap = thickness(level + 1, horizontal=False)
  *     half_vline(buf, width, height, which=vw, extend_by=gap // 2 + thickness(level, horizontal=False))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 551, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -24057,8 +24057,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_81dvcorner(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/fonts/box_drawing.py":546
- * 
- * 
+ *
+ *
  * def dvcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     half_dhline(buf, width, height, which=hw)
@@ -24088,8 +24088,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_81dvcorner(CYTHON_UNUSED 
 }
 
 /* "smelly/fonts/box_drawing.py":554
- * 
- * 
+ *
+ *
  * def dhcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     vw = 'top' if which in '' else 'bottom'
  *     half_dvline(buf, width, height, which=vw)
@@ -24225,7 +24225,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_83dhcorner(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("dhcorner", 0);
 
   /* "smelly/fonts/box_drawing.py":555
- * 
+ *
  * def dhcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     vw = 'top' if which in '' else 'bottom'             # <<<<<<<<<<<<<<
  *     half_dvline(buf, width, height, which=vw)
@@ -24295,7 +24295,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_83dhcorner(CYTHON_UNUSED 
  *     hw = 'right' if which in '' else 'left'
  *     gap = thickness(level + 1, horizontal=True)             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, which=hw, extend_by=gap // 2 + thickness(level, horizontal=True))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_thickness); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 558, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -24321,8 +24321,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_83dhcorner(CYTHON_UNUSED 
  *     hw = 'right' if which in '' else 'left'
  *     gap = thickness(level + 1, horizontal=True)
  *     half_hline(buf, width, height, which=hw, extend_by=gap // 2 + thickness(level, horizontal=True))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_half_hline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 559, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -24371,8 +24371,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_83dhcorner(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/fonts/box_drawing.py":554
- * 
- * 
+ *
+ *
  * def dhcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     vw = 'top' if which in '' else 'bottom'
  *     half_dvline(buf, width, height, which=vw)
@@ -24402,8 +24402,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_83dhcorner(CYTHON_UNUSED 
 }
 
 /* "smelly/fonts/box_drawing.py":562
- * 
- * 
+ *
+ *
  * def dcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     vw = 'top' if which in '' else 'bottom'
@@ -24545,7 +24545,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_85dcorner(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("dcorner", 0);
 
   /* "smelly/fonts/box_drawing.py":563
- * 
+ *
  * def dcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     hw = 'right' if which in '' else 'left'             # <<<<<<<<<<<<<<
  *     vw = 'top' if which in '' else 'bottom'
@@ -24678,8 +24678,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_85dcorner(CYTHON_UNUSED P
       __PYX_ERR(0, 567, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
     #else
@@ -25011,8 +25011,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_85dcorner(CYTHON_UNUSED P
       __PYX_ERR(0, 579, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_3);
     #else
@@ -25246,7 +25246,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_85dcorner(CYTHON_UNUSED P
  *     else:
  *         y1 += 2 * hgap             # <<<<<<<<<<<<<<
  *     draw_vline(buf, width, y1, y2, width // 2 + xdelta, level)
- * 
+ *
  */
   /*else*/ {
     __pyx_t_5 = PyNumber_Multiply(__pyx_int_2, __pyx_v_hgap); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 590, __pyx_L1_error)
@@ -25263,8 +25263,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_85dcorner(CYTHON_UNUSED P
  *     else:
  *         y1 += 2 * hgap
  *     draw_vline(buf, width, y1, y2, width // 2 + xdelta, level)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_draw_vline); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 591, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -25335,8 +25335,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_85dcorner(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":562
- * 
- * 
+ *
+ *
  * def dcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     vw = 'top' if which in '' else 'bottom'
@@ -25371,8 +25371,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_85dcorner(CYTHON_UNUSED P
 }
 
 /* "smelly/fonts/box_drawing.py":594
- * 
- * 
+ *
+ *
  * def dpip(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if which in '':
  *         left, right = dvline(buf, width, height)
@@ -25513,7 +25513,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("dpip", 0);
 
   /* "smelly/fonts/box_drawing.py":595
- * 
+ *
  * def dpip(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     if which in '':             # <<<<<<<<<<<<<<
  *         left, right = dvline(buf, width, height)
@@ -25590,11 +25590,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_7);
@@ -25671,8 +25671,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
         __PYX_ERR(0, 597, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_4);
       #else
@@ -25763,7 +25763,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/fonts/box_drawing.py":595
- * 
+ *
  * def dpip(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     if which in '':             # <<<<<<<<<<<<<<
  *         left, right = dvline(buf, width, height)
@@ -25840,11 +25840,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_7);
@@ -25886,7 +25886,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
  *         top, bottom = dhline(buf, width, height)
  *         y1, y2 = (0, top) if which == '' else (bottom, height)             # <<<<<<<<<<<<<<
  *         draw_vline(buf, width, y1, y2, width // 2, level)
- * 
+ *
  */
     __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_which, __pyx_kp_s__53, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 601, __pyx_L1_error)
     if ((__pyx_t_2 != 0)) {
@@ -25921,8 +25921,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
         __PYX_ERR(0, 601, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_4);
       #else
@@ -25944,8 +25944,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
  *         top, bottom = dhline(buf, width, height)
  *         y1, y2 = (0, top) if which == '' else (bottom, height)
  *         draw_vline(buf, width, y1, y2, width // 2, level)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_draw_vline); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 602, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -26015,8 +26015,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
   __pyx_L3:;
 
   /* "smelly/fonts/box_drawing.py":594
- * 
- * 
+ *
+ *
  * def dpip(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if which in '':
  *         left, right = dvline(buf, width, height)
@@ -26048,8 +26048,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_87dpip(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/fonts/box_drawing.py":605
- * 
- * 
+ *
+ *
  * def inner_corner(buf: BufType, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level + 1, horizontal=True)
  *     vgap = thickness(level + 1, horizontal=False)
@@ -26189,7 +26189,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_89inner_corner(CYTHON_UNU
   __Pyx_RefNannySetupContext("inner_corner", 0);
 
   /* "smelly/fonts/box_drawing.py":606
- * 
+ *
  * def inner_corner(buf: BufType, width: int, height: int, which: str = 'tl', level: int = 1) -> None:
  *     hgap = thickness(level + 1, horizontal=True)             # <<<<<<<<<<<<<<
  *     vgap = thickness(level + 1, horizontal=False)
@@ -26329,8 +26329,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_89inner_corner(CYTHON_UNU
       __PYX_ERR(0, 609, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_4);
     #else
@@ -26494,8 +26494,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_89inner_corner(CYTHON_UNU
       __PYX_ERR(0, 612, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-    __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+    __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+    __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_2);
     #else
@@ -26518,7 +26518,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_89inner_corner(CYTHON_UNU
  *     y1, y2 = (0, height // 2 - vgap) if 't' in which else (height // 2 + vgap, height)
  *     xd = -1 if 'l' in which else 1             # <<<<<<<<<<<<<<
  *     draw_vline(buf, width, y1, y2, width // 2 + (xd * hgap), level)
- * 
+ *
  */
   __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_l, __pyx_v_which, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 613, __pyx_L1_error)
   if ((__pyx_t_5 != 0)) {
@@ -26535,8 +26535,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_89inner_corner(CYTHON_UNU
  *     y1, y2 = (0, height // 2 - vgap) if 't' in which else (height // 2 + vgap, height)
  *     xd = -1 if 'l' in which else 1
  *     draw_vline(buf, width, y1, y2, width // 2 + (xd * hgap), level)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_draw_vline); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 614, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -26610,8 +26610,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_89inner_corner(CYTHON_UNU
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":605
- * 
- * 
+ *
+ *
  * def inner_corner(buf: BufType, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level + 1, horizontal=True)
  *     vgap = thickness(level + 1, horizontal=False)
@@ -26644,8 +26644,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_89inner_corner(CYTHON_UNU
 }
 
 /* "smelly/fonts/box_drawing.py":617
- * 
- * 
+ *
+ *
  * def shade(buf: BufType, width: int, height: int, light: bool = False, invert: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     square_sz = max(1, width // 12)
  *     number_of_rows = height // square_sz
@@ -26794,7 +26794,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("shade", 0);
 
   /* "smelly/fonts/box_drawing.py":618
- * 
+ *
  * def shade(buf: BufType, width: int, height: int, light: bool = False, invert: bool = False) -> None:
  *     square_sz = max(1, width // 12)             # <<<<<<<<<<<<<<
  *     number_of_rows = height // square_sz
@@ -26842,7 +26842,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
  *     number_of_rows = height // square_sz
  *     number_of_cols = width // square_sz             # <<<<<<<<<<<<<<
  *     nums = tuple(range(square_sz))
- * 
+ *
  */
   __pyx_t_1 = PyNumber_FloorDivide(__pyx_v_width, __pyx_v_square_sz); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 620, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -26853,7 +26853,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
  *     number_of_rows = height // square_sz
  *     number_of_cols = width // square_sz
  *     nums = tuple(range(square_sz))             # <<<<<<<<<<<<<<
- * 
+ *
  *     dest = bytearray(width * height) if invert else buf
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_square_sz); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 621, __pyx_L1_error)
@@ -26866,9 +26866,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
 
   /* "smelly/fonts/box_drawing.py":623
  *     nums = tuple(range(square_sz))
- * 
+ *
  *     dest = bytearray(width * height) if invert else buf             # <<<<<<<<<<<<<<
- * 
+ *
  *     for r in range(number_of_rows):
  */
   __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_v_invert); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 623, __pyx_L1_error)
@@ -26889,7 +26889,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
 
   /* "smelly/fonts/box_drawing.py":625
  *     dest = bytearray(width * height) if invert else buf
- * 
+ *
  *     for r in range(number_of_rows):             # <<<<<<<<<<<<<<
  *         is_odd = r % 2 != 0
  *         if is_odd:
@@ -26940,7 +26940,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
     __pyx_t_3 = 0;
 
     /* "smelly/fonts/box_drawing.py":626
- * 
+ *
  *     for r in range(number_of_rows):
  *         is_odd = r % 2 != 0             # <<<<<<<<<<<<<<
  *         if is_odd:
@@ -27317,7 +27317,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
 
     /* "smelly/fonts/box_drawing.py":625
  *     dest = bytearray(width * height) if invert else buf
- * 
+ *
  *     for r in range(number_of_rows):             # <<<<<<<<<<<<<<
  *         is_odd = r % 2 != 0
  *         if is_odd:
@@ -27457,7 +27457,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
  *             for x in range(width):
  *                 q = off + x             # <<<<<<<<<<<<<<
  *                 buf[q] = 255 - dest[q]
- * 
+ *
  */
         __pyx_t_5 = PyNumber_Add(__pyx_v_off, __pyx_v_x); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 650, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
@@ -27468,8 +27468,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
  *             for x in range(width):
  *                 q = off + x
  *                 buf[q] = 255 - dest[q]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_dest, __pyx_v_q); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 651, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
@@ -27509,8 +27509,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
   }
 
   /* "smelly/fonts/box_drawing.py":617
- * 
- * 
+ *
+ *
  * def shade(buf: BufType, width: int, height: int, light: bool = False, invert: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     square_sz = max(1, width // 12)
  *     number_of_rows = height // square_sz
@@ -27551,8 +27551,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_91shade(CYTHON_UNUSED PyO
 }
 
 /* "smelly/fonts/box_drawing.py":654
- * 
- * 
+ *
+ *
  * def quad(buf: BufType, width: int, height: int, x: int = 0, y: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     num_cols = width // 2
  *     left = x * num_cols
@@ -27688,7 +27688,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_93quad(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("quad", 0);
 
   /* "smelly/fonts/box_drawing.py":655
- * 
+ *
  * def quad(buf: BufType, width: int, height: int, x: int = 0, y: int = 0) -> None:
  *     num_cols = width // 2             # <<<<<<<<<<<<<<
  *     left = x * num_cols
@@ -27849,7 +27849,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_93quad(CYTHON_UNUSED PyOb
  *         off = r * width
  *         for c in range(left, right):             # <<<<<<<<<<<<<<
  *             buf[off + c] = 255
- * 
+ *
  */
     __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 663, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -27909,8 +27909,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_93quad(CYTHON_UNUSED PyOb
  *         off = r * width
  *         for c in range(left, right):
  *             buf[off + c] = 255             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_6 = PyNumber_Add(__pyx_v_off, __pyx_v_c); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 664, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
@@ -27922,7 +27922,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_93quad(CYTHON_UNUSED PyOb
  *         off = r * width
  *         for c in range(left, right):             # <<<<<<<<<<<<<<
  *             buf[off + c] = 255
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -27938,8 +27938,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_93quad(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":654
- * 
- * 
+ *
+ *
  * def quad(buf: BufType, width: int, height: int, x: int = 0, y: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     num_cols = width // 2
  *     left = x * num_cols
@@ -27970,8 +27970,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_93quad(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/fonts/box_drawing.py":667
- * 
- * 
+ *
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:
  *         if row == 0:
@@ -28082,7 +28082,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_96sextant(PyObject *__pyx
 }
 
 /* "smelly/fonts/box_drawing.py":668
- * 
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if row == 0:
@@ -28437,7 +28437,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_draw_sextant(PyO
  *             off = r * width
  *             for c in range(x_start, x_end):             # <<<<<<<<<<<<<<
  *                 buf[c + off] = 255
- * 
+ *
  */
     __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 681, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -28497,7 +28497,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_draw_sextant(PyO
  *             off = r * width
  *             for c in range(x_start, x_end):
  *                 buf[c + off] = 255             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_row(q: int, r: int) -> None:
  */
       if (unlikely(!__pyx_cur_scope->__pyx_v_buf)) { __Pyx_RaiseClosureNameError("buf"); __PYX_ERR(0, 682, __pyx_L1_error) }
@@ -28511,7 +28511,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_draw_sextant(PyO
  *             off = r * width
  *             for c in range(x_start, x_end):             # <<<<<<<<<<<<<<
  *                 buf[c + off] = 255
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -28527,7 +28527,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_draw_sextant(PyO
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":668
- * 
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if row == 0:
@@ -28558,7 +28558,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_draw_sextant(PyO
 
 /* "smelly/fonts/box_drawing.py":684
  *                 buf[c + off] = 255
- * 
+ *
  *     def add_row(q: int, r: int) -> None:             # <<<<<<<<<<<<<<
  *         if q & 1:
  *             draw_sextant(r)
@@ -28646,7 +28646,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_2add_row(PyObjec
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":685
- * 
+ *
  *     def add_row(q: int, r: int) -> None:
  *         if q & 1:             # <<<<<<<<<<<<<<
  *             draw_sextant(r)
@@ -28671,7 +28671,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_2add_row(PyObjec
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/fonts/box_drawing.py":685
- * 
+ *
  *     def add_row(q: int, r: int) -> None:
  *         if q & 1:             # <<<<<<<<<<<<<<
  *             draw_sextant(r)
@@ -28684,7 +28684,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_2add_row(PyObjec
  *             draw_sextant(r)
  *         if q & 2:             # <<<<<<<<<<<<<<
  *             draw_sextant(r, col=1)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyInt_AndObjC(__pyx_v_q, __pyx_int_2, 2, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 687, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -28696,7 +28696,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_2add_row(PyObjec
  *             draw_sextant(r)
  *         if q & 2:
  *             draw_sextant(r, col=1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     add_row(which % 4, 0)
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_draw_sextant)) { __Pyx_RaiseClosureNameError("draw_sextant"); __PYX_ERR(0, 688, __pyx_L1_error) }
@@ -28719,13 +28719,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_2add_row(PyObjec
  *             draw_sextant(r)
  *         if q & 2:             # <<<<<<<<<<<<<<
  *             draw_sextant(r, col=1)
- * 
+ *
  */
   }
 
   /* "smelly/fonts/box_drawing.py":684
  *                 buf[c + off] = 255
- * 
+ *
  *     def add_row(q: int, r: int) -> None:             # <<<<<<<<<<<<<<
  *         if q & 1:
  *             draw_sextant(r)
@@ -28747,8 +28747,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_7sextant_2add_row(PyObjec
 }
 
 /* "smelly/fonts/box_drawing.py":667
- * 
- * 
+ *
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:
  *         if row == 0:
@@ -28784,7 +28784,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_95sextant(CYTHON_UNUSED P
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_height);
 
   /* "smelly/fonts/box_drawing.py":668
- * 
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if row == 0:
@@ -28806,7 +28806,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_95sextant(CYTHON_UNUSED P
 
   /* "smelly/fonts/box_drawing.py":684
  *                 buf[c + off] = 255
- * 
+ *
  *     def add_row(q: int, r: int) -> None:             # <<<<<<<<<<<<<<
  *         if q & 1:
  *             draw_sextant(r)
@@ -28825,7 +28825,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_95sextant(CYTHON_UNUSED P
 
   /* "smelly/fonts/box_drawing.py":690
  *             draw_sextant(r, col=1)
- * 
+ *
  *     add_row(which % 4, 0)             # <<<<<<<<<<<<<<
  *     add_row(which // 4, 1)
  *     add_row(which // 16, 2)
@@ -28838,11 +28838,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_95sextant(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":691
- * 
+ *
  *     add_row(which % 4, 0)
  *     add_row(which // 4, 1)             # <<<<<<<<<<<<<<
  *     add_row(which // 16, 2)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyInt_FloorDivideObjC(__pyx_v_which, __pyx_int_4, 4, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 691, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -28855,8 +28855,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_95sextant(CYTHON_UNUSED P
  *     add_row(which % 4, 0)
  *     add_row(which // 4, 1)
  *     add_row(which // 16, 2)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyInt_FloorDivideObjC(__pyx_v_which, __pyx_int_16, 16, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 692, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -28866,8 +28866,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_95sextant(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":667
- * 
- * 
+ *
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:
  *         if row == 0:
@@ -28890,7 +28890,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_95sextant(CYTHON_UNUSED P
 }
 
 /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -29031,7 +29031,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_98smooth_mosaic(PyObject 
   __pyx_r = __pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(__pyx_self, __pyx_v_buf, __pyx_v_width, __pyx_v_height, __pyx_v_level, __pyx_v_lower, __pyx_v_a, __pyx_v_b);
 
   /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -29045,10 +29045,10 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_98smooth_mosaic(PyObject 
 
 /* "smelly/fonts/box_drawing.py":703
  *     line = line_equation(ax, ay, bx, by)
- * 
+ *
  *     def lower_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y >= line(x)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -29132,10 +29132,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13smooth_mosaic_lower_con
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":704
- * 
+ *
  *     def lower_condition(x: int, y: int) -> bool:
  *         return y >= line(x)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def upper_condition(x: int, y: int) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -29164,10 +29164,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13smooth_mosaic_lower_con
 
   /* "smelly/fonts/box_drawing.py":703
  *     line = line_equation(ax, ay, bx, by)
- * 
+ *
  *     def lower_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y >= line(x)
- * 
+ *
  */
 
   /* function exit code */
@@ -29185,10 +29185,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13smooth_mosaic_lower_con
 
 /* "smelly/fonts/box_drawing.py":706
  *         return y >= line(x)
- * 
+ *
  *     def upper_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y <= line(x)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -29272,10 +29272,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13smooth_mosaic_2upper_co
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":707
- * 
+ *
  *     def upper_condition(x: int, y: int) -> bool:
  *         return y <= line(x)             # <<<<<<<<<<<<<<
- * 
+ *
  *     condition = lower_condition if lower else upper_condition
  */
   __Pyx_XDECREF(__pyx_r);
@@ -29304,10 +29304,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13smooth_mosaic_2upper_co
 
   /* "smelly/fonts/box_drawing.py":706
  *         return y >= line(x)
- * 
+ *
  *     def upper_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y <= line(x)
- * 
+ *
  */
 
   /* function exit code */
@@ -29324,7 +29324,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_13smooth_mosaic_2upper_co
 }
 
 /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -29409,7 +29409,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
  *     ax, ay = int(a[0] * (width - 1)), int(a[1] * (height - 1))
  *     bx, by = int(b[0] * (width - 1)), int(b[1] * (height - 1))             # <<<<<<<<<<<<<<
  *     line = line_equation(ax, ay, bx, by)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_b, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 700, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -29442,7 +29442,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
  *     ax, ay = int(a[0] * (width - 1)), int(a[1] * (height - 1))
  *     bx, by = int(b[0] * (width - 1)), int(b[1] * (height - 1))
  *     line = line_equation(ax, ay, bx, by)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def lower_condition(x: int, y: int) -> bool:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_line_equation); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 701, __pyx_L1_error)
@@ -29504,10 +29504,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
 
   /* "smelly/fonts/box_drawing.py":703
  *     line = line_equation(ax, ay, bx, by)
- * 
+ *
  *     def lower_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y >= line(x)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 703, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -29523,10 +29523,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
 
   /* "smelly/fonts/box_drawing.py":706
  *         return y >= line(x)
- * 
+ *
  *     def upper_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y <= line(x)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 706, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -29542,7 +29542,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
 
   /* "smelly/fonts/box_drawing.py":709
  *         return y <= line(x)
- * 
+ *
  *     condition = lower_condition if lower else upper_condition             # <<<<<<<<<<<<<<
  *     for y in range(height):
  *         offset = width * y
@@ -29559,7 +29559,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
   __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":710
- * 
+ *
  *     condition = lower_condition if lower else upper_condition
  *     for y in range(height):             # <<<<<<<<<<<<<<
  *         offset = width * y
@@ -29679,7 +29679,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
  *         for x in range(width):
  *             if condition(x, y):             # <<<<<<<<<<<<<<
  *                 buf[offset + x] = 255
- * 
+ *
  */
       __Pyx_INCREF(__pyx_v_condition);
       __pyx_t_3 = __pyx_v_condition; __pyx_t_11 = NULL;
@@ -29735,8 +29735,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
  *         for x in range(width):
  *             if condition(x, y):
  *                 buf[offset + x] = 255             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_1 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 714, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
@@ -29748,7 +29748,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
  *         for x in range(width):
  *             if condition(x, y):             # <<<<<<<<<<<<<<
  *                 buf[offset + x] = 255
- * 
+ *
  */
       }
 
@@ -29763,7 +29763,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "smelly/fonts/box_drawing.py":710
- * 
+ *
  *     condition = lower_condition if lower else upper_condition
  *     for y in range(height):             # <<<<<<<<<<<<<<
  *         offset = width * y
@@ -29773,7 +29773,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -29810,8 +29810,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_97smooth_mosaic(CYTHON_UN
 }
 
 /* "smelly/fonts/box_drawing.py":717
- * 
- * 
+ *
+ *
  * def eight_range(size: int, which: int) -> range:             # <<<<<<<<<<<<<<
  *     thickness = max(1, size // 8)
  *     block = thickness * 8
@@ -29908,7 +29908,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_99eight_range(CYTHON_UNUS
   __Pyx_RefNannySetupContext("eight_range", 0);
 
   /* "smelly/fonts/box_drawing.py":718
- * 
+ *
  * def eight_range(size: int, which: int) -> range:
  *     thickness = max(1, size // 8)             # <<<<<<<<<<<<<<
  *     block = thickness * 8
@@ -30243,7 +30243,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_99eight_range(CYTHON_UNUS
  *         thicknesses[i] += 1
  *     pos = sum(thicknesses[:which])             # <<<<<<<<<<<<<<
  *     return range(pos, pos + thicknesses[which])
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_which);
   __pyx_t_1 = __pyx_v_which;
@@ -30267,8 +30267,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_99eight_range(CYTHON_UNUS
  *         thicknesses[i] += 1
  *     pos = sum(thicknesses[:which])
  *     return range(pos, pos + thicknesses[which])             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_thicknesses, __pyx_v_which); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 733, __pyx_L1_error)
@@ -30292,8 +30292,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_99eight_range(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":717
- * 
- * 
+ *
+ *
  * def eight_range(size: int, which: int) -> range:             # <<<<<<<<<<<<<<
  *     thickness = max(1, size // 8)
  *     block = thickness * 8
@@ -30321,8 +30321,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_99eight_range(CYTHON_UNUS
 }
 
 /* "smelly/fonts/box_drawing.py":736
- * 
- * 
+ *
+ *
  * def eight_bar(buf: BufType, width: int, height: int, level: int = 1, which: int = 0, horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     if horizontal:
  *         x_range = range(0, width)
@@ -30469,7 +30469,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_101eight_bar(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("eight_bar", 0);
 
   /* "smelly/fonts/box_drawing.py":737
- * 
+ *
  * def eight_bar(buf: BufType, width: int, height: int, level: int = 1, which: int = 0, horizontal: bool = False) -> None:
  *     if horizontal:             # <<<<<<<<<<<<<<
  *         x_range = range(0, width)
@@ -30557,7 +30557,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_101eight_bar(CYTHON_UNUSE
     __pyx_t_3 = 0;
 
     /* "smelly/fonts/box_drawing.py":737
- * 
+ *
  * def eight_bar(buf: BufType, width: int, height: int, level: int = 1, which: int = 0, horizontal: bool = False) -> None:
  *     if horizontal:             # <<<<<<<<<<<<<<
  *         x_range = range(0, width)
@@ -30713,7 +30713,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_101eight_bar(CYTHON_UNUSE
  *         offset = y * width
  *         for x in x_range:             # <<<<<<<<<<<<<<
  *             buf[offset + x] = 255
- * 
+ *
  */
     if (likely(PyList_CheckExact(__pyx_v_x_range)) || PyTuple_CheckExact(__pyx_v_x_range)) {
       __pyx_t_3 = __pyx_v_x_range; __Pyx_INCREF(__pyx_t_3); __pyx_t_9 = 0;
@@ -30761,8 +30761,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_101eight_bar(CYTHON_UNUSE
  *         offset = y * width
  *         for x in x_range:
  *             buf[offset + x] = 255             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_4 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 746, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
@@ -30774,7 +30774,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_101eight_bar(CYTHON_UNUSE
  *         offset = y * width
  *         for x in x_range:             # <<<<<<<<<<<<<<
  *             buf[offset + x] = 255
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -30790,8 +30790,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_101eight_bar(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":736
- * 
- * 
+ *
+ *
  * def eight_bar(buf: BufType, width: int, height: int, level: int = 1, which: int = 0, horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     if horizontal:
  *         x_range = range(0, width)
@@ -30819,8 +30819,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_101eight_bar(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":749
- * 
- * 
+ *
+ *
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     for x in which:
  *         eight_bar(buf, width, height, level, x, horizontal)
@@ -30961,11 +30961,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_103eight_block(CYTHON_UNU
   __Pyx_RefNannySetupContext("eight_block", 0);
 
   /* "smelly/fonts/box_drawing.py":750
- * 
+ *
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:
  *     for x in which:             # <<<<<<<<<<<<<<
  *         eight_bar(buf, width, height, level, x, horizontal)
- * 
+ *
  */
   if (likely(PyList_CheckExact(__pyx_v_which)) || PyTuple_CheckExact(__pyx_v_which)) {
     __pyx_t_1 = __pyx_v_which; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
@@ -31013,8 +31013,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_103eight_block(CYTHON_UNU
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:
  *     for x in which:
  *         eight_bar(buf, width, height, level, x, horizontal)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_eight_bar); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 751, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -31078,18 +31078,18 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_103eight_block(CYTHON_UNU
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "smelly/fonts/box_drawing.py":750
- * 
+ *
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:
  *     for x in which:             # <<<<<<<<<<<<<<
  *         eight_bar(buf, width, height, level, x, horizontal)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":749
- * 
- * 
+ *
+ *
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     for x in which:
  *         eight_bar(buf, width, height, level, x, horizontal)
@@ -31114,7 +31114,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_103eight_block(CYTHON_UNU
 }
 
 /* "smelly/fonts/box_drawing.py":755
- * 
+ *
  * @lru_cache(maxsize=64)
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:             # <<<<<<<<<<<<<<
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -31192,7 +31192,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_15distribute_dots_2genera
  *     gaps[0] //= 2
  *     summed_gaps = tuple(sum(gaps[: i + 1]) for i in range(len(gaps)))             # <<<<<<<<<<<<<<
  *     return summed_gaps, dot_size
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_15distribute_dots_genexpr(PyObject *__pyx_self) {
@@ -31378,7 +31378,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_15distribute_dots_2genera
 }
 
 /* "smelly/fonts/box_drawing.py":755
- * 
+ *
  * @lru_cache(maxsize=64)
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:             # <<<<<<<<<<<<<<
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -31651,7 +31651,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_105distribute_dots(CYTHON
  *     gaps[0] //= 2
  *     summed_gaps = tuple(sum(gaps[: i + 1]) for i in range(len(gaps)))             # <<<<<<<<<<<<<<
  *     return summed_gaps, dot_size
- * 
+ *
  */
   __pyx_t_4 = __pyx_pf_6smelly_5fonts_11box_drawing_15distribute_dots_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 766, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -31665,8 +31665,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_105distribute_dots(CYTHON
  *     gaps[0] //= 2
  *     summed_gaps = tuple(sum(gaps[: i + 1]) for i in range(len(gaps)))
  *     return summed_gaps, dot_size             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 767, __pyx_L1_error)
@@ -31682,7 +31682,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_105distribute_dots(CYTHON
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":755
- * 
+ *
  * @lru_cache(maxsize=64)
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:             # <<<<<<<<<<<<<<
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -31710,8 +31710,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_105distribute_dots(CYTHON
 }
 
 /* "smelly/fonts/box_drawing.py":770
- * 
- * 
+ *
+ *
  * def braille_dot(buf: BufType, width: int, height: int, col: int, row: int) -> None:             # <<<<<<<<<<<<<<
  *     x_gaps, dot_width = distribute_dots(width, 2)
  *     y_gaps, dot_height = distribute_dots(height, 4)
@@ -31846,7 +31846,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
   __Pyx_RefNannySetupContext("braille_dot", 0);
 
   /* "smelly/fonts/box_drawing.py":771
- * 
+ *
  * def braille_dot(buf: BufType, width: int, height: int, col: int, row: int) -> None:
  *     x_gaps, dot_width = distribute_dots(width, 2)             # <<<<<<<<<<<<<<
  *     y_gaps, dot_height = distribute_dots(height, 4)
@@ -31909,11 +31909,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -32014,11 +32014,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_t_3);
@@ -32208,7 +32208,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
  *             offset = y * width
  *             for x in range(x_start, min(width, x_start + dot_width)):             # <<<<<<<<<<<<<<
  *                 buf[offset + x] = 255
- * 
+ *
  */
       __pyx_t_5 = PyNumber_Add(__pyx_v_x_start, __pyx_v_dot_width); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 778, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -32285,8 +32285,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
  *             offset = y * width
  *             for x in range(x_start, min(width, x_start + dot_width)):
  *                 buf[offset + x] = 255             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __pyx_t_2 = PyNumber_Add(__pyx_v_offset, __pyx_v_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 779, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
@@ -32298,7 +32298,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
  *             offset = y * width
  *             for x in range(x_start, min(width, x_start + dot_width)):             # <<<<<<<<<<<<<<
  *                 buf[offset + x] = 255
- * 
+ *
  */
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -32323,8 +32323,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
   }
 
   /* "smelly/fonts/box_drawing.py":770
- * 
- * 
+ *
+ *
  * def braille_dot(buf: BufType, width: int, height: int, col: int, row: int) -> None:             # <<<<<<<<<<<<<<
  *     x_gaps, dot_width = distribute_dots(width, 2)
  *     y_gaps, dot_height = distribute_dots(height, 4)
@@ -32357,8 +32357,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_107braille_dot(CYTHON_UNU
 }
 
 /* "smelly/fonts/box_drawing.py":782
- * 
- * 
+ *
+ *
  * def braille(buf: BufType, width: int, height: int, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     if not which:
  *         return
@@ -32487,7 +32487,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_109braille(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("braille", 0);
 
   /* "smelly/fonts/box_drawing.py":783
- * 
+ *
  * def braille(buf: BufType, width: int, height: int, which: int = 0) -> None:
  *     if not which:             # <<<<<<<<<<<<<<
  *         return
@@ -32509,7 +32509,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_109braille(CYTHON_UNUSED 
     goto __pyx_L0;
 
     /* "smelly/fonts/box_drawing.py":783
- * 
+ *
  * def braille(buf: BufType, width: int, height: int, which: int = 0) -> None:
  *     if not which:             # <<<<<<<<<<<<<<
  *         return
@@ -32661,7 +32661,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_109braille(CYTHON_UNUSED 
  *             col = 0 if q in (1, 2, 3, 7) else 1
  *             row = 0 if q in (1, 4) else 1 if q in (2, 5) else 2 if q in (3, 6) else 3             # <<<<<<<<<<<<<<
  *             braille_dot(buf, width, height, col, row)
- * 
+ *
  */
       __Pyx_INCREF(__pyx_v_q);
       __pyx_t_4 = __pyx_v_q;
@@ -32738,8 +32738,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_109braille(CYTHON_UNUSED 
  *             col = 0 if q in (1, 2, 3, 7) else 1
  *             row = 0 if q in (1, 4) else 1 if q in (2, 5) else 2 if q in (3, 6) else 3
  *             braille_dot(buf, width, height, col, row)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_braille_dot); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 790, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
@@ -32828,8 +32828,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_109braille(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":782
- * 
- * 
+ *
+ *
  * def braille(buf: BufType, width: int, height: int, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     if not which:
  *         return
@@ -32859,8 +32859,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_109braille(CYTHON_UNUSED 
 }
 
 /* "smelly/fonts/box_drawing.py":1032
- * 
- * 
+ *
+ *
  * def render_box_char(ch: str, buf: BufType, width: int, height: int, dpi: float = 96.0) -> BufType:             # <<<<<<<<<<<<<<
  *     global _dpi
  *     _dpi = dpi
@@ -33065,7 +33065,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_111render_box_char(CYTHON
  *     for func in box_chars[ch]:
  *         func(buf, width, height)             # <<<<<<<<<<<<<<
  *     return buf
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_func);
     __pyx_t_5 = __pyx_v_func; __pyx_t_6 = NULL;
@@ -33132,8 +33132,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_111render_box_char(CYTHON
  *     for func in box_chars[ch]:
  *         func(buf, width, height)
  *     return buf             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_buf);
@@ -33141,8 +33141,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_111render_box_char(CYTHON
   goto __pyx_L0;
 
   /* "smelly/fonts/box_drawing.py":1032
- * 
- * 
+ *
+ *
  * def render_box_char(ch: str, buf: BufType, width: int, height: int, dpi: float = 96.0) -> BufType:             # <<<<<<<<<<<<<<
  *     global _dpi
  *     _dpi = dpi
@@ -33165,8 +33165,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_111render_box_char(CYTHON
 }
 
 /* "smelly/fonts/box_drawing.py":1040
- * 
- * 
+ *
+ *
  * def render_missing_glyph(buf: BufType, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level=0, horizontal=True) + 1
  *     vgap = thickness(level=0, horizontal=False) + 1
@@ -33266,7 +33266,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_113render_missing_glyph(C
   __Pyx_RefNannySetupContext("render_missing_glyph", 0);
 
   /* "smelly/fonts/box_drawing.py":1041
- * 
+ *
  * def render_missing_glyph(buf: BufType, width: int, height: int) -> None:
  *     hgap = thickness(level=0, horizontal=True) + 1             # <<<<<<<<<<<<<<
  *     vgap = thickness(level=0, horizontal=False) + 1
@@ -33470,7 +33470,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_113render_missing_glyph(C
  *     draw_hline(buf, width, hgap, width - hgap + 1, height - vgap, 0)
  *     draw_vline(buf, width, vgap, height - vgap + 1, hgap, 0)             # <<<<<<<<<<<<<<
  *     draw_vline(buf, width, vgap, height - vgap + 1, width - hgap, 0)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_draw_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1045, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -33544,8 +33544,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_113render_missing_glyph(C
  *     draw_hline(buf, width, hgap, width - hgap + 1, height - vgap, 0)
  *     draw_vline(buf, width, vgap, height - vgap + 1, hgap, 0)
  *     draw_vline(buf, width, vgap, height - vgap + 1, width - hgap, 0)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_draw_vline); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1046, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -33620,8 +33620,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_113render_missing_glyph(C
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":1040
- * 
- * 
+ *
+ *
  * def render_missing_glyph(buf: BufType, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level=0, horizontal=True) + 1
  *     vgap = thickness(level=0, horizontal=False) + 1
@@ -33648,8 +33648,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_113render_missing_glyph(C
 }
 
 /* "smelly/fonts/box_drawing.py":1049
- * 
- * 
+ *
+ *
  * def test_char(ch: str, sz: int = 48) -> None:             # <<<<<<<<<<<<<<
  *     # smelly +runpy "from smelly.fonts.box_drawing import test_char; test_char('XXX')"
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
@@ -33731,7 +33731,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_116test_char(PyObject *__
 
 /* "smelly/fonts/box_drawing.py":1060
  *             render_box_char(ch, buf, width, height)
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *                 cells = tuple(bytes(x) for x in cells)
  *                 return concat_cells(width, height, False, cells)
@@ -33758,11 +33758,11 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_9test_char_1join_cells(Py
 static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_9test_char_10join_cells_2generator8(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/fonts/box_drawing.py":1061
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:
  *                 cells = tuple(bytes(x) for x in cells)             # <<<<<<<<<<<<<<
  *                 return concat_cells(width, height, False, cells)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9test_char_10join_cells_genexpr(PyObject *__pyx_self) {
@@ -33883,7 +33883,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_9test_char_10join_cells_2
 
 /* "smelly/fonts/box_drawing.py":1060
  *             render_box_char(ch, buf, width, height)
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *                 cells = tuple(bytes(x) for x in cells)
  *                 return concat_cells(width, height, False, cells)
@@ -33919,11 +33919,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9test_char_join_cells(PyO
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_cells);
 
   /* "smelly/fonts/box_drawing.py":1061
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:
  *                 cells = tuple(bytes(x) for x in cells)             # <<<<<<<<<<<<<<
  *                 return concat_cells(width, height, False, cells)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_6smelly_5fonts_11box_drawing_9test_char_10join_cells_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1061, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -33939,7 +33939,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9test_char_join_cells(PyO
  *             def join_cells(*cells: bytes) -> bytes:
  *                 cells = tuple(bytes(x) for x in cells)
  *                 return concat_cells(width, height, False, cells)             # <<<<<<<<<<<<<<
- * 
+ *
  *             rgb_data = join_cells(buf)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -34005,7 +34005,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9test_char_join_cells(PyO
 
   /* "smelly/fonts/box_drawing.py":1060
  *             render_box_char(ch, buf, width, height)
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *                 cells = tuple(bytes(x) for x in cells)
  *                 return concat_cells(width, height, False, cells)
@@ -34028,8 +34028,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_9test_char_join_cells(PyO
 }
 
 /* "smelly/fonts/box_drawing.py":1049
- * 
- * 
+ *
+ *
  * def test_char(ch: str, sz: int = 48) -> None:             # <<<<<<<<<<<<<<
  *     # smelly +runpy "from smelly.fonts.box_drawing import test_char; test_char('XXX')"
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
@@ -34084,7 +34084,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
  * def test_char(ch: str, sz: int = 48) -> None:
  *     # smelly +runpy "from smelly.fonts.box_drawing import test_char; test_char('XXX')"
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu             # <<<<<<<<<<<<<<
- * 
+ *
  *     from .render import display_bitmap, setup_for_testing
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1051, __pyx_L1_error)
@@ -34113,9 +34113,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
 
   /* "smelly/fonts/box_drawing.py":1053
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  *     from .render import display_bitmap, setup_for_testing             # <<<<<<<<<<<<<<
- * 
+ *
  *     with setup_for_testing('monospace', sz) as (_, width, height):
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1053, __pyx_L1_error)
@@ -34143,7 +34143,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
 
   /* "smelly/fonts/box_drawing.py":1055
  *     from .render import display_bitmap, setup_for_testing
- * 
+ *
  *     with setup_for_testing('monospace', sz) as (_, width, height):             # <<<<<<<<<<<<<<
  *         buf = bytearray(width * height)
  *         try:
@@ -34236,13 +34236,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-              __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+              __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
             } else {
-              __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-              __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+              __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
             }
             __Pyx_INCREF(__pyx_t_1);
             __Pyx_INCREF(__pyx_t_2);
@@ -34289,7 +34289,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
           __pyx_t_3 = 0;
 
           /* "smelly/fonts/box_drawing.py":1056
- * 
+ *
  *     with setup_for_testing('monospace', sz) as (_, width, height):
  *         buf = bytearray(width * height)             # <<<<<<<<<<<<<<
  *         try:
@@ -34308,7 +34308,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
  *         buf = bytearray(width * height)
  *         try:             # <<<<<<<<<<<<<<
  *             render_box_char(ch, buf, width, height)
- * 
+ *
  */
           /*try:*/ {
 
@@ -34316,7 +34316,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
  *         buf = bytearray(width * height)
  *         try:
  *             render_box_char(ch, buf, width, height)             # <<<<<<<<<<<<<<
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:
  */
             __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_render_box_char); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1058, __pyx_L16_error)
@@ -34376,7 +34376,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
 
             /* "smelly/fonts/box_drawing.py":1060
  *             render_box_char(ch, buf, width, height)
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *                 cells = tuple(bytes(x) for x in cells)
  *                 return concat_cells(width, height, False, cells)
@@ -34394,7 +34394,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
 
             /* "smelly/fonts/box_drawing.py":1064
  *                 return concat_cells(width, height, False, cells)
- * 
+ *
  *             rgb_data = join_cells(buf)             # <<<<<<<<<<<<<<
  *             display_bitmap(rgb_data, width, height)
  *             print()
@@ -34405,7 +34405,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
             __pyx_t_5 = 0;
 
             /* "smelly/fonts/box_drawing.py":1065
- * 
+ *
  *             rgb_data = join_cells(buf)
  *             display_bitmap(rgb_data, width, height)             # <<<<<<<<<<<<<<
  *             print()
@@ -34476,8 +34476,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
  *             print()
  *         finally:
  *             set_send_sprite_to_gpu(None)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           /*finally:*/ {
             /*normal exit:*/{
@@ -34569,7 +34569,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
 
           /* "smelly/fonts/box_drawing.py":1055
  *     from .render import display_bitmap, setup_for_testing
- * 
+ *
  *     with setup_for_testing('monospace', sz) as (_, width, height):             # <<<<<<<<<<<<<<
  *         buf = bytearray(width * height)
  *         try:
@@ -34607,7 +34607,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_3, __pyx_t_2);
-            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 1055, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -34650,8 +34650,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
   }
 
   /* "smelly/fonts/box_drawing.py":1049
- * 
- * 
+ *
+ *
  * def test_char(ch: str, sz: int = 48) -> None:             # <<<<<<<<<<<<<<
  *     # smelly +runpy "from smelly.fonts.box_drawing import test_char; test_char('XXX')"
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
@@ -34683,11 +34683,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_115test_char(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/box_drawing.py":1071
- * 
- * 
+ *
+ *
  * def test_drawing(sz: int = 48, family: str = 'monospace', start: int = 0x2500, num_rows: int = 10, num_cols: int = 16) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  */
 
 /* Python wrapper */
@@ -34809,7 +34809,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_118test_drawing(PyObject 
 
 /* "smelly/fonts/box_drawing.py":1079
  *         space = bytearray(width * height)
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:             # <<<<<<<<<<<<<<
  *             cells = tuple(bytes(x) for x in cells)
  *             return concat_cells(width, height, False, cells)
@@ -34831,11 +34831,11 @@ static PyObject *__pyx_pw_6smelly_5fonts_11box_drawing_12test_drawing_1join_cell
 static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_12test_drawing_10join_cells_2generator9(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/fonts/box_drawing.py":1080
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:
  *             cells = tuple(bytes(x) for x in cells)             # <<<<<<<<<<<<<<
  *             return concat_cells(width, height, False, cells)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_10join_cells_genexpr(PyObject *__pyx_self) {
@@ -34985,7 +34985,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_11box_drawing_12test_drawing_10join_cel
 
 /* "smelly/fonts/box_drawing.py":1079
  *         space = bytearray(width * height)
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:             # <<<<<<<<<<<<<<
  *             cells = tuple(bytes(x) for x in cells)
  *             return concat_cells(width, height, False, cells)
@@ -35021,11 +35021,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_join_cells
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_cells);
 
   /* "smelly/fonts/box_drawing.py":1080
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:
  *             cells = tuple(bytes(x) for x in cells)             # <<<<<<<<<<<<<<
  *             return concat_cells(width, height, False, cells)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_10join_cells_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1080, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -35041,7 +35041,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_join_cells
  *         def join_cells(cells: Iterable[bytes]) -> bytes:
  *             cells = tuple(bytes(x) for x in cells)
  *             return concat_cells(width, height, False, cells)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def render_chr(ch: str) -> bytearray:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -35107,7 +35107,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_join_cells
 
   /* "smelly/fonts/box_drawing.py":1079
  *         space = bytearray(width * height)
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:             # <<<<<<<<<<<<<<
  *             cells = tuple(bytes(x) for x in cells)
  *             return concat_cells(width, height, False, cells)
@@ -35131,7 +35131,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_join_cells
 
 /* "smelly/fonts/box_drawing.py":1083
  *             return concat_cells(width, height, False, cells)
- * 
+ *
  *         def render_chr(ch: str) -> bytearray:             # <<<<<<<<<<<<<<
  *             if ch in box_chars:
  *                 cell = bytearray(len(space))
@@ -35181,7 +35181,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_2render_ch
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/box_drawing.py":1084
- * 
+ *
  *         def render_chr(ch: str) -> bytearray:
  *             if ch in box_chars:             # <<<<<<<<<<<<<<
  *                 cell = bytearray(len(space))
@@ -35287,7 +35287,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_2render_ch
  *                 render_box_char(ch, cell, width, height)
  *                 return cell             # <<<<<<<<<<<<<<
  *             return space
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_v_cell);
@@ -35295,7 +35295,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_2render_ch
     goto __pyx_L0;
 
     /* "smelly/fonts/box_drawing.py":1084
- * 
+ *
  *         def render_chr(ch: str) -> bytearray:
  *             if ch in box_chars:             # <<<<<<<<<<<<<<
  *                 cell = bytearray(len(space))
@@ -35307,7 +35307,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_2render_ch
  *                 render_box_char(ch, cell, width, height)
  *                 return cell
  *             return space             # <<<<<<<<<<<<<<
- * 
+ *
  *         pos = start
  */
   __Pyx_XDECREF(__pyx_r);
@@ -35318,7 +35318,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_2render_ch
 
   /* "smelly/fonts/box_drawing.py":1083
  *             return concat_cells(width, height, False, cells)
- * 
+ *
  *         def render_chr(ch: str) -> bytearray:             # <<<<<<<<<<<<<<
  *             if ch in box_chars:
  *                 cell = bytearray(len(space))
@@ -35340,11 +35340,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_12test_drawing_2render_ch
 }
 
 /* "smelly/fonts/box_drawing.py":1071
- * 
- * 
+ *
+ *
  * def test_drawing(sz: int = 48, family: str = 'monospace', start: int = 0x2500, num_rows: int = 10, num_cols: int = 16) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_sz, PyObject *__pyx_v_family, PyObject *__pyx_v_start, PyObject *__pyx_v_num_rows, PyObject *__pyx_v_num_cols) {
@@ -35405,10 +35405,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
   }
 
   /* "smelly/fonts/box_drawing.py":1072
- * 
+ *
  * def test_drawing(sz: int = 48, family: str = 'monospace', start: int = 0x2500, num_rows: int = 10, num_cols: int = 16) -> None:
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu             # <<<<<<<<<<<<<<
- * 
+ *
  *     from .render import display_bitmap, setup_for_testing
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1072, __pyx_L1_error)
@@ -35437,9 +35437,9 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
 
   /* "smelly/fonts/box_drawing.py":1074
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  *     from .render import display_bitmap, setup_for_testing             # <<<<<<<<<<<<<<
- * 
+ *
  *     with setup_for_testing(family, sz) as (_, width, height):
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1074, __pyx_L1_error)
@@ -35467,10 +35467,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
 
   /* "smelly/fonts/box_drawing.py":1076
  *     from .render import display_bitmap, setup_for_testing
- * 
+ *
  *     with setup_for_testing(family, sz) as (_, width, height):             # <<<<<<<<<<<<<<
  *         space = bytearray(width * height)
- * 
+ *
  */
   /*with:*/ {
     __Pyx_INCREF(__pyx_v_setup_for_testing);
@@ -35560,13 +35560,13 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-              __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+              __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
             } else {
-              __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-              __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+              __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+              __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
             }
             __Pyx_INCREF(__pyx_t_1);
             __Pyx_INCREF(__pyx_t_2);
@@ -35613,10 +35613,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
           __pyx_t_3 = 0;
 
           /* "smelly/fonts/box_drawing.py":1077
- * 
+ *
  *     with setup_for_testing(family, sz) as (_, width, height):
  *         space = bytearray(width * height)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:
  */
           __pyx_t_5 = PyNumber_Multiply(__pyx_cur_scope->__pyx_v_width, __pyx_cur_scope->__pyx_v_height); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1077, __pyx_L7_error)
@@ -35630,7 +35630,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
 
           /* "smelly/fonts/box_drawing.py":1079
  *         space = bytearray(width * height)
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:             # <<<<<<<<<<<<<<
  *             cells = tuple(bytes(x) for x in cells)
  *             return concat_cells(width, height, False, cells)
@@ -35654,7 +35654,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
 
           /* "smelly/fonts/box_drawing.py":1083
  *             return concat_cells(width, height, False, cells)
- * 
+ *
  *         def render_chr(ch: str) -> bytearray:             # <<<<<<<<<<<<<<
  *             if ch in box_chars:
  *                 cell = bytearray(len(space))
@@ -35672,7 +35672,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
 
           /* "smelly/fonts/box_drawing.py":1090
  *             return space
- * 
+ *
  *         pos = start             # <<<<<<<<<<<<<<
  *         rows = []
  *         space_row = join_cells(repeat(space, 32))
@@ -35681,11 +35681,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
           __pyx_v_pos = __pyx_v_start;
 
           /* "smelly/fonts/box_drawing.py":1091
- * 
+ *
  *         pos = start
  *         rows = []             # <<<<<<<<<<<<<<
  *         space_row = join_cells(repeat(space, 32))
- * 
+ *
  */
           __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1091, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_3);
@@ -35696,7 +35696,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
  *         pos = start
  *         rows = []
  *         space_row = join_cells(repeat(space, 32))             # <<<<<<<<<<<<<<
- * 
+ *
  *         try:
  */
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_repeat); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1092, __pyx_L7_error)
@@ -35754,7 +35754,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
 
           /* "smelly/fonts/box_drawing.py":1094
  *         space_row = join_cells(repeat(space, 32))
- * 
+ *
  *         try:             # <<<<<<<<<<<<<<
  *             for r in range(num_rows):
  *                 row = []
@@ -35762,7 +35762,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
           /*try:*/ {
 
             /* "smelly/fonts/box_drawing.py":1095
- * 
+ *
  *         try:
  *             for r in range(num_rows):             # <<<<<<<<<<<<<<
  *                 row = []
@@ -35949,7 +35949,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
               __pyx_t_16 = __Pyx_PyList_Append(__pyx_v_rows, __pyx_v_space_row); if (unlikely(__pyx_t_16 == ((int)-1))) __PYX_ERR(0, 1102, __pyx_L16_error)
 
               /* "smelly/fonts/box_drawing.py":1095
- * 
+ *
  *         try:
  *             for r in range(num_rows):             # <<<<<<<<<<<<<<
  *                 row = []
@@ -36217,10 +36217,10 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
 
           /* "smelly/fonts/box_drawing.py":1076
  *     from .render import display_bitmap, setup_for_testing
- * 
+ *
  *     with setup_for_testing(family, sz) as (_, width, height):             # <<<<<<<<<<<<<<
  *         space = bytearray(width * height)
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -36255,7 +36255,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_3, __pyx_t_2);
-            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 1076, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -36298,11 +36298,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_11box_drawing_117test_drawing(CYTHON_UN
   }
 
   /* "smelly/fonts/box_drawing.py":1071
- * 
- * 
+ *
+ *
  * def test_drawing(sz: int = 48, family: str = 'monospace', start: int = 0x2500, num_rows: int = 10, num_cols: int = 16) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  */
 
   /* function exit code */
@@ -40179,7 +40179,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":149
  *     src_width = 4 * dest_width
- * 
+ *
  *     def average_intensity_in_src(dest_x: int, dest_y: int) -> int:             # <<<<<<<<<<<<<<
  *         src_y = dest_y * factor
  *         src_x = dest_x * factor
@@ -40203,7 +40203,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":173
  *     # using supersampling
- * 
+ *
  *     def create_wrapper(f: Callable[..., None]) -> Callable[..., None]:             # <<<<<<<<<<<<<<
  *         @wraps(f)
  *         def supersampled_wrapper(buf: BufType, width: int, height: int, *args: Any, **kw: Any) -> None:
@@ -40218,10 +40218,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":199
  *     c = y1 - m * x1
- * 
+ *
  *     def y(x: int) -> float:             # <<<<<<<<<<<<<<
  *         return m * x + c
- * 
+ *
  */
   __pyx_tuple__12 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
@@ -40240,11 +40240,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__14);
 
   /* "smelly/fonts/box_drawing.py":305
- * 
+ *
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(1, __pyx_n_s_lt); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -40252,7 +40252,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":308
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  *     def pt_to_coords(p: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         if p == 'l':
  *             return 0, mid_y
@@ -40275,7 +40275,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_f, 329, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 329, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":328
- * 
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:             # <<<<<<<<<<<<<<
  *         def f(t: float) -> float:
@@ -40288,7 +40288,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":361
  *     last_t, t_limit = 0.0, 0.5
- * 
+ *
  *     def find_t_for_x(x: int, start_t: float) -> float:             # <<<<<<<<<<<<<<
  *         if abs(bezier_x(start_t) - x) < 0.1:
  *             return start_t
@@ -40320,10 +40320,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":463
  *     if lower_quadrants:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return t * b
- * 
+ *
  */
   __pyx_tuple__33 = PyTuple_Pack(2, __pyx_n_s_t, __pyx_n_s_t); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 463, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
@@ -40332,10 +40332,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":468
  *     else:
- * 
+ *
  *         def y(t: float) -> float:  # 0 -> bottom of cell, 1 -> middle of cell             # <<<<<<<<<<<<<<
  *             return (2 - t) * b
- * 
+ *
  */
   __pyx_tuple__35 = PyTuple_Pack(2, __pyx_n_s_t, __pyx_n_s_t); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 468, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
@@ -40344,7 +40344,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":475
  *     if left_quadrants:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.floor(cell_width - abs(a * pow(xterm, xexp)) - adjust_x)
@@ -40356,7 +40356,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":481
  *     else:
- * 
+ *
  *         def x(t: float) -> float:             # <<<<<<<<<<<<<<
  *             xterm = 1 - pow(t, yexp)
  *             return math.ceil(abs(a * pow(xterm, xexp)))
@@ -40367,7 +40367,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_x, 481, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 481, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":668
- * 
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:             # <<<<<<<<<<<<<<
  *         if row == 0:
@@ -40383,7 +40383,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":684
  *                 buf[c + off] = 255
- * 
+ *
  *     def add_row(q: int, r: int) -> None:             # <<<<<<<<<<<<<<
  *         if q & 1:
  *             draw_sextant(r)
@@ -40395,10 +40395,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":703
  *     line = line_equation(ax, ay, bx, by)
- * 
+ *
  *     def lower_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y >= line(x)
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_y); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 703, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
@@ -40407,10 +40407,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":706
  *         return y >= line(x)
- * 
+ *
  *     def upper_condition(x: int, y: int) -> bool:             # <<<<<<<<<<<<<<
  *         return y <= line(x)
- * 
+ *
  */
   __pyx_tuple__61 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_y); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 706, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
@@ -40429,8 +40429,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__63);
 
   /* "smelly/fonts/box_drawing.py":749
- * 
- * 
+ *
+ *
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     for x in which:
  *         eight_bar(buf, width, height, level, x, horizontal)
@@ -40452,7 +40452,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":1060
  *             render_box_char(ch, buf, width, height)
- * 
+ *
  *             def join_cells(*cells: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *                 cells = tuple(bytes(x) for x in cells)
  *                 return concat_cells(width, height, False, cells)
@@ -40464,7 +40464,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":1055
  *     from .render import display_bitmap, setup_for_testing
- * 
+ *
  *     with setup_for_testing('monospace', sz) as (_, width, height):             # <<<<<<<<<<<<<<
  *         buf = bytearray(width * height)
  *         try:
@@ -40475,7 +40475,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":1079
  *         space = bytearray(width * height)
- * 
+ *
  *         def join_cells(cells: Iterable[bytes]) -> bytes:             # <<<<<<<<<<<<<<
  *             cells = tuple(bytes(x) for x in cells)
  *             return concat_cells(width, height, False, cells)
@@ -40487,7 +40487,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":1083
  *             return concat_cells(width, height, False, cells)
- * 
+ *
  *         def render_chr(ch: str) -> bytearray:             # <<<<<<<<<<<<<<
  *             if ch in box_chars:
  *                 cell = bytearray(len(space))
@@ -40499,7 +40499,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/box_drawing.py":15
  * from typing import Any, Callable, Dict, Iterable, Iterator, List, MutableSequence, Optional, Sequence, Tuple
- * 
+ *
  * scale = (0.001, 1.0, 1.5, 2.0)             # <<<<<<<<<<<<<<
  * _dpi = 96.0
  * BufType = MutableSequence[int]
@@ -40509,8 +40509,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__75);
 
   /* "smelly/fonts/box_drawing.py":20
- * 
- * 
+ *
+ *
  * def set_scale(new_scale: Sequence[float]) -> None:             # <<<<<<<<<<<<<<
  *     global scale
  *     scale = (new_scale[0], new_scale[1], new_scale[2], new_scale[3])
@@ -40521,8 +40521,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__77 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__76, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_set_scale, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__77)) __PYX_ERR(0, 20, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":25
- * 
- * 
+ *
+ *
  * def thickness(level: int = 1, horizontal: bool = True) -> int:             # <<<<<<<<<<<<<<
  *     pts = scale[level]
  *     return int(math.ceil(pts * (_dpi / 72.0)))
@@ -40536,8 +40536,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__80);
 
   /* "smelly/fonts/box_drawing.py":30
- * 
- * 
+ *
+ *
  * def draw_hline(buf: BufType, width: int, x1: int, x2: int, y: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a horizontal line between [x1, x2) centered at y with the thickness given by level'
  *     sz = thickness(level=level, horizontal=False)
@@ -40548,8 +40548,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__82 = (PyObject*)__Pyx_PyCode_New(6, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__81, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_draw_hline, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__82)) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":40
- * 
- * 
+ *
+ *
  * def draw_vline(buf: BufType, width: int, y1: int, y2: int, x: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a vertical line between [y1, y2) centered at x with the thickness given by level'
  *     sz = thickness(level=level, horizontal=True)
@@ -40560,8 +40560,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__84 = (PyObject*)__Pyx_PyCode_New(6, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__83, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_draw_vline, 40, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__84)) __PYX_ERR(0, 40, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":49
- * 
- * 
+ *
+ *
  * def half_hline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, extend_by + width // 2) if which == 'left' else (width // 2 - extend_by, width)
  *     draw_hline(buf, width, x1, x2, height // 2, level)
@@ -40575,8 +40575,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__87);
 
   /* "smelly/fonts/box_drawing.py":54
- * 
- * 
+ *
+ *
  * def half_vline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2 + extend_by) if which == 'top' else (height // 2 - extend_by, height)
  *     draw_vline(buf, width, y1, y2, width // 2, level)
@@ -40590,8 +40590,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__90);
 
   /* "smelly/fonts/box_drawing.py":59
- * 
- * 
+ *
+ *
  * def get_holes(sz: int, hole_sz: int, num: int) -> List[Tuple[int, ...]]:             # <<<<<<<<<<<<<<
  *     all_holes_use = (num + 1) * hole_sz
  *     individual_block_size = (sz - all_holes_use) // (num + 1)
@@ -40602,8 +40602,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__92 = (PyObject*)__Pyx_PyCode_New(3, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__91, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_get_holes, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__92)) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":77
- * 
- * 
+ *
+ *
  * def add_hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=True)
  *     hole_sz = width // hole_factor
@@ -40617,8 +40617,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__95);
 
   /* "smelly/fonts/box_drawing.py":89
- * 
- * 
+ *
+ *
  * def add_vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=False)
  *     hole_sz = height // hole_factor
@@ -40632,8 +40632,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__98);
 
   /* "smelly/fonts/box_drawing.py":100
- * 
- * 
+ *
+ *
  * def hline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=level)
  *     half_hline(buf, width, height, level=level, which='right')
@@ -40647,8 +40647,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__101);
 
   /* "smelly/fonts/box_drawing.py":105
- * 
- * 
+ *
+ *
  * def vline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=level)
  *     half_vline(buf, width, height, level=level, which='bottom')
@@ -40662,8 +40662,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__104);
 
   /* "smelly/fonts/box_drawing.py":110
- * 
- * 
+ *
+ *
  * def hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hline(buf, width, height, level=level)
  *     add_hholes(buf, width, height, level=level, num=num)
@@ -40677,8 +40677,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__107);
 
   /* "smelly/fonts/box_drawing.py":115
- * 
- * 
+ *
+ *
  * def vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     vline(buf, width, height, level=level)
  *     add_vholes(buf, width, height, level=level, num=num)
@@ -40692,8 +40692,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__110);
 
   /* "smelly/fonts/box_drawing.py":120
- * 
- * 
+ *
+ *
  * def corner(buf: BufType, width: int, height: int, hlevel: int = 1, vlevel: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     wh = 'right' if which is not None and which in '' else 'left'
  *     half_hline(buf, width, height, level=hlevel, which=wh, extend_by=thickness(vlevel, horizontal=True) // 2)
@@ -40707,8 +40707,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__113);
 
   /* "smelly/fonts/box_drawing.py":127
- * 
- * 
+ *
+ *
  * def vert_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=a, which='top')
  *     half_hline(buf, width, height, level=b, which='left' if which == '' else 'right')
@@ -40722,8 +40722,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__116);
 
   /* "smelly/fonts/box_drawing.py":133
- * 
- * 
+ *
+ *
  * def horz_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a, which='left')
  *     half_hline(buf, width, height, level=b, which='right')
@@ -40737,8 +40737,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__119);
 
   /* "smelly/fonts/box_drawing.py":139
- * 
- * 
+ *
+ *
  * def cross(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, d: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a)
  *     half_hline(buf, width, height, level=b, which='right')
@@ -40752,11 +40752,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__122);
 
   /* "smelly/fonts/box_drawing.py":146
- * 
- * 
+ *
+ *
  * def downsample(src: BufType, dest: BufType, dest_width: int, dest_height: int, factor: int = 4) -> None:             # <<<<<<<<<<<<<<
  *     src_width = 4 * dest_width
- * 
+ *
  */
   __pyx_tuple__123 = PyTuple_Pack(11, __pyx_n_s_src, __pyx_n_s_dest, __pyx_n_s_dest_width, __pyx_n_s_dest_height, __pyx_n_s_factor, __pyx_n_s_src_width, __pyx_n_s_average_intensity_in_src, __pyx_n_s_average_intensity_in_src, __pyx_n_s_y, __pyx_n_s_offset, __pyx_n_s_x); if (unlikely(!__pyx_tuple__123)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__123);
@@ -40767,8 +40767,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__125);
 
   /* "smelly/fonts/box_drawing.py":169
- * 
- * 
+ *
+ *
  * def supersampled(supersample_factor: int = 4) -> Callable[[Callable[..., None]], Callable[..., None]]:             # <<<<<<<<<<<<<<
  *     # Anti-alias the drawing performed by the wrapped function by
  *     # using supersampling
@@ -40782,8 +40782,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__128);
 
   /* "smelly/fonts/box_drawing.py":187
- * 
- * 
+ *
+ *
  * def fill_region(buf: BufType, width: int, height: int, xlimits: Iterable[Iterable[float]], inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     full, empty = (0, 255) if inverted else (255, 0)
  *     for y in range(height):
@@ -40797,8 +40797,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__131);
 
   /* "smelly/fonts/box_drawing.py":195
- * 
- * 
+ *
+ *
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:             # <<<<<<<<<<<<<<
  *     m = (y2 - y1) / (x2 - x1)
  *     c = y1 - m * x1
@@ -40809,7 +40809,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__133 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__132, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_line_equation, 195, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__133)) __PYX_ERR(0, 195, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":206
- * 
+ *
  * @supersampled()
  * def triangle(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     ay1, by1, y2 = 0, height - 1, height // 2
@@ -40824,7 +40824,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__136);
 
   /* "smelly/fonts/box_drawing.py":219
- * 
+ *
  * @supersampled()
  * def corner_triangle(buf: SSByteArray, width: int, height: int, corner: str) -> None:             # <<<<<<<<<<<<<<
  *     if corner == 'top-right' or corner == 'bottom-left':
@@ -40836,7 +40836,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__138 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__137, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_corner_triangle, 219, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__138)) __PYX_ERR(0, 219, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":236
- * 
+ *
  * @supersampled()
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
@@ -40851,8 +40851,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__141);
 
   /* "smelly/fonts/box_drawing.py":261
- * 
- * 
+ *
+ *
  * def thick_line(buf: BufType, width: int, height: int, thickness_in_pixels: int, p1: Tuple[int, int], p2: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *     if p1[0] > p2[0]:
  *         p1, p2 = p2, p1
@@ -40863,7 +40863,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__143 = (PyObject*)__Pyx_PyCode_New(6, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__142, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_thick_line, 261, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__143)) __PYX_ERR(0, 261, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":277
- * 
+ *
  * @supersampled()
  * def cross_line(buf: SSByteArray, width: int, height: int, left: bool = True, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     if left:
@@ -40878,7 +40878,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__146);
 
   /* "smelly/fonts/box_drawing.py":286
- * 
+ *
  * @supersampled()
  * def half_cross_line(buf: SSByteArray, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     thickness_in_pixels = thickness(level) * buf.supersample_factor
@@ -40893,11 +40893,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__149);
 
   /* "smelly/fonts/box_drawing.py":305
- * 
+ *
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  */
   __pyx_tuple__150 = PyTuple_Pack(12, __pyx_n_s_buf, __pyx_n_s_width, __pyx_n_s_height, __pyx_n_s_level, __pyx_n_s_pts, __pyx_n_s_mid_x, __pyx_n_s_mid_y, __pyx_n_s_pt_to_coords, __pyx_n_s_pt_to_coords, __pyx_n_s_x, __pyx_n_s_p1, __pyx_n_s_p2); if (unlikely(!__pyx_tuple__150)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__150);
@@ -40908,8 +40908,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__152);
 
   /* "smelly/fonts/box_drawing.py":327
- * 
- * 
+ *
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:
  *         def f(t: float) -> float:
@@ -40920,8 +40920,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__154 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__153, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_cubic_bezier, 327, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__154)) __PYX_ERR(0, 327, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":342
- * 
- * 
+ *
+ *
  * def find_bezier_for_D(width: int, height: int) -> int:             # <<<<<<<<<<<<<<
  *     cx = last_cx = width - 1
  *     start = (0, 0)
@@ -40932,8 +40932,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__156 = (PyObject*)__Pyx_PyCode_New(2, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__155, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_find_bezier_for_D, 342, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__156)) __PYX_ERR(0, 342, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":356
- * 
- * 
+ *
+ *
  * def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:             # <<<<<<<<<<<<<<
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))
@@ -40944,7 +40944,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(2, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__157, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_get_bezier_limits, 356, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 356, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":391
- * 
+ *
  * @supersampled()
  * def D(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     c1x = find_bezier_for_D(width, height)
@@ -40959,8 +40959,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__160);
 
   /* "smelly/fonts/box_drawing.py":411
- * 
- * 
+ *
+ *
  * def draw_parametrized_curve(buf: SSByteArray, width: int, height: int, level: int, xfunc: ParameterizedFunc, yfunc: ParameterizedFunc) -> None:             # <<<<<<<<<<<<<<
  *     supersample_factor = buf.supersample_factor
  *     num_samples = height * 8
@@ -40971,8 +40971,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__162 = (PyObject*)__Pyx_PyCode_New(6, 0, 20, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__161, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_draw_parametrized_curve, 411, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__162)) __PYX_ERR(0, 411, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":434
- * 
- * 
+ *
+ *
  * def rectircle_equations(cell_width: int, cell_height: int, supersample_factor: int, which: str = '') -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     '''
  *     Return two functions, x(t) and y(t) that map the parameter t which must be
@@ -40986,7 +40986,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__165);
 
   /* "smelly/fonts/box_drawing.py":489
- * 
+ *
  * @supersampled()
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)
@@ -41001,7 +41001,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__168);
 
   /* "smelly/fonts/box_drawing.py":495
- * 
+ *
  * @supersampled()
  * def rounded_separator(buf: SSByteArray, width: int, height: int, level: int = 1, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     gap = thickness(level) * buf.supersample_factor
@@ -41016,8 +41016,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__171);
 
   /* "smelly/fonts/box_drawing.py":516
- * 
- * 
+ *
+ *
  * def half_dhline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, width // 2) if which == 'left' else (width // 2, width)
  *     gap = thickness(level + 1, horizontal=False)
@@ -41031,8 +41031,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__174);
 
   /* "smelly/fonts/box_drawing.py":526
- * 
- * 
+ *
+ *
  * def half_dvline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2) if which == 'top' else (height // 2, height)
  *     gap = thickness(level + 1, horizontal=True)
@@ -41046,8 +41046,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__177);
 
   /* "smelly/fonts/box_drawing.py":536
- * 
- * 
+ *
+ *
  * def dvline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dvline(buf, width, height, only=only, level=level)
  *     return half_dvline(buf, width, height, only=only, which='bottom', level=level)
@@ -41061,8 +41061,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__180);
 
   /* "smelly/fonts/box_drawing.py":541
- * 
- * 
+ *
+ *
  * def dhline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dhline(buf, width, height, only=only, level=level)
  *     return half_dhline(buf, width, height, only=only, which='bottom', level=level)
@@ -41076,8 +41076,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__183);
 
   /* "smelly/fonts/box_drawing.py":546
- * 
- * 
+ *
+ *
  * def dvcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     half_dhline(buf, width, height, which=hw)
@@ -41091,8 +41091,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__186);
 
   /* "smelly/fonts/box_drawing.py":554
- * 
- * 
+ *
+ *
  * def dhcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     vw = 'top' if which in '' else 'bottom'
  *     half_dvline(buf, width, height, which=vw)
@@ -41106,8 +41106,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__189);
 
   /* "smelly/fonts/box_drawing.py":562
- * 
- * 
+ *
+ *
  * def dcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     vw = 'top' if which in '' else 'bottom'
@@ -41121,8 +41121,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__192);
 
   /* "smelly/fonts/box_drawing.py":594
- * 
- * 
+ *
+ *
  * def dpip(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if which in '':
  *         left, right = dvline(buf, width, height)
@@ -41136,8 +41136,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__195);
 
   /* "smelly/fonts/box_drawing.py":605
- * 
- * 
+ *
+ *
  * def inner_corner(buf: BufType, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level + 1, horizontal=True)
  *     vgap = thickness(level + 1, horizontal=False)
@@ -41151,8 +41151,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__198);
 
   /* "smelly/fonts/box_drawing.py":617
- * 
- * 
+ *
+ *
  * def shade(buf: BufType, width: int, height: int, light: bool = False, invert: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     square_sz = max(1, width // 12)
  *     number_of_rows = height // square_sz
@@ -41166,8 +41166,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__201);
 
   /* "smelly/fonts/box_drawing.py":654
- * 
- * 
+ *
+ *
  * def quad(buf: BufType, width: int, height: int, x: int = 0, y: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     num_cols = width // 2
  *     left = x * num_cols
@@ -41181,8 +41181,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__204);
 
   /* "smelly/fonts/box_drawing.py":667
- * 
- * 
+ *
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:
  *         if row == 0:
@@ -41196,7 +41196,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__207);
 
   /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -41211,8 +41211,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__210);
 
   /* "smelly/fonts/box_drawing.py":717
- * 
- * 
+ *
+ *
  * def eight_range(size: int, which: int) -> range:             # <<<<<<<<<<<<<<
  *     thickness = max(1, size // 8)
  *     block = thickness * 8
@@ -41223,8 +41223,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__212 = (PyObject*)__Pyx_PyCode_New(2, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__211, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_eight_range, 717, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__212)) __PYX_ERR(0, 717, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":736
- * 
- * 
+ *
+ *
  * def eight_bar(buf: BufType, width: int, height: int, level: int = 1, which: int = 0, horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     if horizontal:
  *         x_range = range(0, width)
@@ -41238,8 +41238,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__215);
 
   /* "smelly/fonts/box_drawing.py":749
- * 
- * 
+ *
+ *
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     for x in which:
  *         eight_bar(buf, width, height, level, x, horizontal)
@@ -41253,7 +41253,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__218);
 
   /* "smelly/fonts/box_drawing.py":755
- * 
+ *
  * @lru_cache(maxsize=64)
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:             # <<<<<<<<<<<<<<
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -41265,8 +41265,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__220 = (PyObject*)__Pyx_PyCode_New(2, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__219, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_distribute_dots, 755, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__220)) __PYX_ERR(0, 755, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":770
- * 
- * 
+ *
+ *
  * def braille_dot(buf: BufType, width: int, height: int, col: int, row: int) -> None:             # <<<<<<<<<<<<<<
  *     x_gaps, dot_width = distribute_dots(width, 2)
  *     y_gaps, dot_height = distribute_dots(height, 4)
@@ -41277,8 +41277,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__222 = (PyObject*)__Pyx_PyCode_New(5, 0, 14, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__221, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_braille_dot, 770, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__222)) __PYX_ERR(0, 770, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":782
- * 
- * 
+ *
+ *
  * def braille(buf: BufType, width: int, height: int, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     if not which:
  *         return
@@ -41662,15 +41662,15 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     '': [p(mid_lines, pts=('rt', 'lt', 'lb'))],
  *     '': [p(mid_lines, pts=('rt', 'rb', 'lt', 'lb'))],             # <<<<<<<<<<<<<<
  * }
- * 
+ *
  */
   __pyx_tuple__435 = PyTuple_Pack(4, __pyx_n_s_rt, __pyx_n_s_rb, __pyx_n_s_lt, __pyx_n_s_lb); if (unlikely(!__pyx_tuple__435)) __PYX_ERR(0, 973, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__435);
   __Pyx_GIVEREF(__pyx_tuple__435);
 
   /* "smelly/fonts/box_drawing.py":1032
- * 
- * 
+ *
+ *
  * def render_box_char(ch: str, buf: BufType, width: int, height: int, dpi: float = 96.0) -> BufType:             # <<<<<<<<<<<<<<
  *     global _dpi
  *     _dpi = dpi
@@ -41681,8 +41681,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__446 = (PyObject*)__Pyx_PyCode_New(5, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__445, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_render_box_char, 1032, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__446)) __PYX_ERR(0, 1032, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":1040
- * 
- * 
+ *
+ *
  * def render_missing_glyph(buf: BufType, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level=0, horizontal=True) + 1
  *     vgap = thickness(level=0, horizontal=False) + 1
@@ -41693,8 +41693,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__448 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__447, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_box_drawing_py, __pyx_n_s_render_missing_glyph, 1040, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__448)) __PYX_ERR(0, 1040, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":1049
- * 
- * 
+ *
+ *
  * def test_char(ch: str, sz: int = 48) -> None:             # <<<<<<<<<<<<<<
  *     # smelly +runpy "from smelly.fonts.box_drawing import test_char; test_char('XXX')"
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
@@ -41708,11 +41708,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__452);
 
   /* "smelly/fonts/box_drawing.py":1071
- * 
- * 
+ *
+ *
  * def test_drawing(sz: int = 48, family: str = 'monospace', start: int = 0x2500, num_rows: int = 10, num_cols: int = 16) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  */
   __pyx_tuple__453 = PyTuple_Pack(24, __pyx_n_s_sz, __pyx_n_s_family, __pyx_n_s_start, __pyx_n_s_num_rows, __pyx_n_s_num_cols, __pyx_n_s_concat_cells, __pyx_n_s_set_send_sprite_to_gpu, __pyx_n_s_display_bitmap, __pyx_n_s_setup_for_testing, __pyx_n_s__449, __pyx_n_s_width, __pyx_n_s_height, __pyx_n_s_space, __pyx_n_s_join_cells, __pyx_n_s_join_cells, __pyx_n_s_render_chr, __pyx_n_s_render_chr, __pyx_n_s_pos, __pyx_n_s_rows, __pyx_n_s_space_row, __pyx_n_s_r, __pyx_n_s_row, __pyx_n_s_i, __pyx_n_s_rgb_data); if (unlikely(!__pyx_tuple__453)) __PYX_ERR(0, 1071, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__453);
@@ -42271,7 +42271,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":9
  * #
- * 
+ *
  * import math             # <<<<<<<<<<<<<<
  * from functools import lru_cache, wraps
  * from functools import partial as p
@@ -42282,7 +42282,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":10
- * 
+ *
  * import math
  * from functools import lru_cache, wraps             # <<<<<<<<<<<<<<
  * from functools import partial as p
@@ -42335,7 +42335,7 @@ if (!__Pyx_RefNanny) {
  * from functools import partial as p
  * from itertools import repeat             # <<<<<<<<<<<<<<
  * from typing import Any, Callable, Dict, Iterable, Iterator, List, MutableSequence, Optional, Sequence, Tuple
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -42355,7 +42355,7 @@ if (!__Pyx_RefNanny) {
  * from functools import partial as p
  * from itertools import repeat
  * from typing import Any, Callable, Dict, Iterable, Iterator, List, MutableSequence, Optional, Sequence, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * scale = (0.001, 1.0, 1.5, 2.0)
  */
   __pyx_t_2 = PyList_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -42437,7 +42437,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":15
  * from typing import Any, Callable, Dict, Iterable, Iterator, List, MutableSequence, Optional, Sequence, Tuple
- * 
+ *
  * scale = (0.001, 1.0, 1.5, 2.0)             # <<<<<<<<<<<<<<
  * _dpi = 96.0
  * BufType = MutableSequence[int]
@@ -42445,11 +42445,11 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_scale, __pyx_tuple__75) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":16
- * 
+ *
  * scale = (0.001, 1.0, 1.5, 2.0)
  * _dpi = 96.0             # <<<<<<<<<<<<<<
  * BufType = MutableSequence[int]
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_dpi, __pyx_float_96_0) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
 
@@ -42457,8 +42457,8 @@ if (!__Pyx_RefNanny) {
  * scale = (0.001, 1.0, 1.5, 2.0)
  * _dpi = 96.0
  * BufType = MutableSequence[int]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_MutableSequence); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -42469,8 +42469,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":20
- * 
- * 
+ *
+ *
  * def set_scale(new_scale: Sequence[float]) -> None:             # <<<<<<<<<<<<<<
  *     global scale
  *     scale = (new_scale[0], new_scale[1], new_scale[2], new_scale[3])
@@ -42493,8 +42493,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":25
- * 
- * 
+ *
+ *
  * def thickness(level: int = 1, horizontal: bool = True) -> int:             # <<<<<<<<<<<<<<
  *     pts = scale[level]
  *     return int(math.ceil(pts * (_dpi / 72.0)))
@@ -42513,8 +42513,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":30
- * 
- * 
+ *
+ *
  * def draw_hline(buf: BufType, width: int, x1: int, x2: int, y: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a horizontal line between [x1, x2) centered at y with the thickness given by level'
  *     sz = thickness(level=level, horizontal=False)
@@ -42539,8 +42539,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":40
- * 
- * 
+ *
+ *
  * def draw_vline(buf: BufType, width: int, y1: int, y2: int, x: int, level: int) -> None:             # <<<<<<<<<<<<<<
  *     'Draw a vertical line between [y1, y2) centered at x with the thickness given by level'
  *     sz = thickness(level=level, horizontal=True)
@@ -42565,8 +42565,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":49
- * 
- * 
+ *
+ *
  * def half_hline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, extend_by + width // 2) if which == 'left' else (width // 2 - extend_by, width)
  *     draw_hline(buf, width, x1, x2, height // 2, level)
@@ -42592,8 +42592,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":54
- * 
- * 
+ *
+ *
  * def half_vline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', extend_by: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2 + extend_by) if which == 'top' else (height // 2 - extend_by, height)
  *     draw_vline(buf, width, y1, y2, width // 2, level)
@@ -42619,8 +42619,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":59
- * 
- * 
+ *
+ *
  * def get_holes(sz: int, hole_sz: int, num: int) -> List[Tuple[int, ...]]:             # <<<<<<<<<<<<<<
  *     all_holes_use = (num + 1) * hole_sz
  *     individual_block_size = (sz - all_holes_use) // (num + 1)
@@ -42660,17 +42660,17 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":74
- * 
- * 
+ *
+ *
  * hole_factor = 8             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_hole_factor, __pyx_int_8) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":77
- * 
- * 
+ *
+ *
  * def add_hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=True)
  *     hole_sz = width // hole_factor
@@ -42695,8 +42695,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":89
- * 
- * 
+ *
+ *
  * def add_vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     line_sz = thickness(level=level, horizontal=False)
  *     hole_sz = height // hole_factor
@@ -42721,8 +42721,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":100
- * 
- * 
+ *
+ *
  * def hline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=level)
  *     half_hline(buf, width, height, level=level, which='right')
@@ -42746,8 +42746,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":105
- * 
- * 
+ *
+ *
  * def vline(buf: BufType, width: int, height: int, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=level)
  *     half_vline(buf, width, height, level=level, which='bottom')
@@ -42771,8 +42771,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":110
- * 
- * 
+ *
+ *
  * def hholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hline(buf, width, height, level=level)
  *     add_hholes(buf, width, height, level=level, num=num)
@@ -42797,8 +42797,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":115
- * 
- * 
+ *
+ *
  * def vholes(buf: BufType, width: int, height: int, level: int = 1, num: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     vline(buf, width, height, level=level)
  *     add_vholes(buf, width, height, level=level, num=num)
@@ -42823,8 +42823,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":120
- * 
- * 
+ *
+ *
  * def corner(buf: BufType, width: int, height: int, hlevel: int = 1, vlevel: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     wh = 'right' if which is not None and which in '' else 'left'
  *     half_hline(buf, width, height, level=hlevel, which=wh, extend_by=thickness(vlevel, horizontal=True) // 2)
@@ -42856,8 +42856,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":127
- * 
- * 
+ *
+ *
  * def vert_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_vline(buf, width, height, level=a, which='top')
  *     half_hline(buf, width, height, level=b, which='left' if which == '' else 'right')
@@ -42890,8 +42890,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":133
- * 
- * 
+ *
+ *
  * def horz_t(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, which: Optional[str] = None) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a, which='left')
  *     half_hline(buf, width, height, level=b, which='right')
@@ -42924,8 +42924,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":139
- * 
- * 
+ *
+ *
  * def cross(buf: BufType, width: int, height: int, a: int = 1, b: int = 1, c: int = 1, d: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     half_hline(buf, width, height, level=a)
  *     half_hline(buf, width, height, level=b, which='right')
@@ -42952,11 +42952,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":146
- * 
- * 
+ *
+ *
  * def downsample(src: BufType, dest: BufType, dest_width: int, dest_height: int, factor: int = 4) -> None:             # <<<<<<<<<<<<<<
  *     src_width = 4 * dest_width
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -42981,11 +42981,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":165
- * 
- * 
+ *
+ *
  * class SSByteArray(bytearray):             # <<<<<<<<<<<<<<
  *     supersample_factor = 1
- * 
+ *
  */
   __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -42998,20 +42998,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/fonts/box_drawing.py":166
- * 
+ *
  * class SSByteArray(bytearray):
  *     supersample_factor = 1             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_supersample_factor, __pyx_int_1) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":165
- * 
- * 
+ *
+ *
  * class SSByteArray(bytearray):             # <<<<<<<<<<<<<<
  *     supersample_factor = 1
- * 
+ *
  */
   __pyx_t_3 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_SSByteArray, __pyx_t_4, __pyx_t_5, NULL, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -43022,8 +43022,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":169
- * 
- * 
+ *
+ *
  * def supersampled(supersample_factor: int = 4) -> Callable[[Callable[..., None]], Callable[..., None]]:             # <<<<<<<<<<<<<<
  *     # Anti-alias the drawing performed by the wrapped function by
  *     # using supersampling
@@ -43071,8 +43071,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":187
- * 
- * 
+ *
+ *
  * def fill_region(buf: BufType, width: int, height: int, xlimits: Iterable[Iterable[float]], inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     full, empty = (0, 255) if inverted else (255, 0)
  *     for y in range(height):
@@ -43109,8 +43109,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":195
- * 
- * 
+ *
+ *
  * def line_equation(x1: int, y1: int, x2: int, y2: int) -> Callable[[int], float]:             # <<<<<<<<<<<<<<
  *     m = (y2 - y1) / (x2 - x1)
  *     c = y1 - m * x1
@@ -43150,8 +43150,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":205
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def triangle(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:
  *     ay1, by1, y2 = 0, height - 1, height // 2
@@ -43163,7 +43163,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":206
- * 
+ *
  * @supersampled()
  * def triangle(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     ay1, by1, y2 = 0, height - 1, height // 2
@@ -43186,8 +43186,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":205
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def triangle(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:
  *     ay1, by1, y2 = 0, height - 1, height // 2
@@ -43200,8 +43200,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":218
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def corner_triangle(buf: SSByteArray, width: int, height: int, corner: str) -> None:
  *     if corner == 'top-right' or corner == 'bottom-left':
@@ -43213,7 +43213,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":219
- * 
+ *
  * @supersampled()
  * def corner_triangle(buf: SSByteArray, width: int, height: int, corner: str) -> None:             # <<<<<<<<<<<<<<
  *     if corner == 'top-right' or corner == 'bottom-left':
@@ -43235,8 +43235,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":218
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def corner_triangle(buf: SSByteArray, width: int, height: int, corner: str) -> None:
  *     if corner == 'top-right' or corner == 'bottom-left':
@@ -43249,8 +43249,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":235
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:
  *     mid_x, mid_y = width // 2, height // 2
@@ -43262,7 +43262,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":236
- * 
+ *
  * @supersampled()
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
@@ -43286,8 +43286,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":235
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def half_triangle(buf: SSByteArray, width: int, height: int, which: str = 'left', inverted: bool = False) -> None:
  *     mid_x, mid_y = width // 2, height // 2
@@ -43300,8 +43300,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":261
- * 
- * 
+ *
+ *
  * def thick_line(buf: BufType, width: int, height: int, thickness_in_pixels: int, p1: Tuple[int, int], p2: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *     if p1[0] > p2[0]:
  *         p1, p2 = p2, p1
@@ -43356,8 +43356,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":276
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def cross_line(buf: SSByteArray, width: int, height: int, left: bool = True, level: int = 1) -> None:
  *     if left:
@@ -43369,7 +43369,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":277
- * 
+ *
  * @supersampled()
  * def cross_line(buf: SSByteArray, width: int, height: int, left: bool = True, level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     if left:
@@ -43393,8 +43393,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":276
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def cross_line(buf: SSByteArray, width: int, height: int, left: bool = True, level: int = 1) -> None:
  *     if left:
@@ -43407,8 +43407,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":285
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def half_cross_line(buf: SSByteArray, width: int, height: int, which: str = 'tl', level: int = 1) -> None:
  *     thickness_in_pixels = thickness(level) * buf.supersample_factor
@@ -43420,7 +43420,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":286
- * 
+ *
  * @supersampled()
  * def half_cross_line(buf: SSByteArray, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     thickness_in_pixels = thickness(level) * buf.supersample_factor
@@ -43444,8 +43444,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":285
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def half_cross_line(buf: SSByteArray, width: int, height: int, which: str = 'tl', level: int = 1) -> None:
  *     thickness_in_pixels = thickness(level) * buf.supersample_factor
@@ -43458,8 +43458,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":304
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:
  *     mid_x, mid_y = width // 2, height // 2
@@ -43471,11 +43471,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":305
- * 
+ *
  * @supersampled()
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:             # <<<<<<<<<<<<<<
  *     mid_x, mid_y = width // 2, height // 2
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -43501,8 +43501,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":304
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def mid_lines(buf: SSByteArray, width: int, height: int, level: int = 1, pts: Iterable[str] = ('lt',)) -> None:
  *     mid_x, mid_y = width // 2, height // 2
@@ -43515,11 +43515,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":324
- * 
- * 
+ *
+ *
  * ParameterizedFunc = Callable[[float], float]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Callable); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 324, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -43544,8 +43544,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":327
- * 
- * 
+ *
+ *
  * def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:
  *         def f(t: float) -> float:
@@ -43644,8 +43644,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":342
- * 
- * 
+ *
+ *
  * def find_bezier_for_D(width: int, height: int) -> int:             # <<<<<<<<<<<<<<
  *     cx = last_cx = width - 1
  *     start = (0, 0)
@@ -43663,8 +43663,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/box_drawing.py":356
- * 
- * 
+ *
+ *
  * def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:             # <<<<<<<<<<<<<<
  *     start_x = int(bezier_x(0))
  *     max_x = int(bezier_x(0.5))
@@ -43709,8 +43709,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":390
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def D(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:
  *     c1x = find_bezier_for_D(width, height)
@@ -43722,7 +43722,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":391
- * 
+ *
  * @supersampled()
  * def D(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     c1x = find_bezier_for_D(width, height)
@@ -43745,8 +43745,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":390
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def D(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:
  *     c1x = find_bezier_for_D(width, height)
@@ -43759,8 +43759,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":411
- * 
- * 
+ *
+ *
  * def draw_parametrized_curve(buf: SSByteArray, width: int, height: int, level: int, xfunc: ParameterizedFunc, yfunc: ParameterizedFunc) -> None:             # <<<<<<<<<<<<<<
  *     supersample_factor = buf.supersample_factor
  *     num_samples = height * 8
@@ -43791,8 +43791,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":434
- * 
- * 
+ *
+ *
  * def rectircle_equations(cell_width: int, cell_height: int, supersample_factor: int, which: str = '') -> Tuple[ParameterizedFunc, ParameterizedFunc]:             # <<<<<<<<<<<<<<
  *     '''
  *     Return two functions, x(t) and y(t) that map the parameter t which must be
@@ -43832,8 +43832,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":488
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)
@@ -43845,7 +43845,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":489
- * 
+ *
  * @supersampled()
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)
@@ -43869,8 +43869,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":488
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def rounded_corner(buf: SSByteArray, width: int, height: int, level: int = 1, which: str = '') -> None:
  *     xfunc, yfunc = rectircle_equations(width, height, buf.supersample_factor, which)
@@ -43883,8 +43883,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":494
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def rounded_separator(buf: SSByteArray, width: int, height: int, level: int = 1, left: bool = True) -> None:
  *     gap = thickness(level) * buf.supersample_factor
@@ -43896,7 +43896,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":495
- * 
+ *
  * @supersampled()
  * def rounded_separator(buf: SSByteArray, width: int, height: int, level: int = 1, left: bool = True) -> None:             # <<<<<<<<<<<<<<
  *     gap = thickness(level) * buf.supersample_factor
@@ -43920,8 +43920,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":494
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def rounded_separator(buf: SSByteArray, width: int, height: int, level: int = 1, left: bool = True) -> None:
  *     gap = thickness(level) * buf.supersample_factor
@@ -43934,8 +43934,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":516
- * 
- * 
+ *
+ *
  * def half_dhline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'left', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     x1, x2 = (0, width // 2) if which == 'left' else (width // 2, width)
  *     gap = thickness(level + 1, horizontal=False)
@@ -43982,8 +43982,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":526
- * 
- * 
+ *
+ *
  * def half_dvline(buf: BufType, width: int, height: int, level: int = 1, which: str = 'top', only: Optional[str] = None) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     y1, y2 = (0, height // 2) if which == 'top' else (height // 2, height)
  *     gap = thickness(level + 1, horizontal=True)
@@ -44030,8 +44030,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":536
- * 
- * 
+ *
+ *
  * def dvline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dvline(buf, width, height, only=only, level=level)
  *     return half_dvline(buf, width, height, only=only, which='bottom', level=level)
@@ -44077,8 +44077,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":541
- * 
- * 
+ *
+ *
  * def dhline(buf: BufType, width: int, height: int, only: Optional[str] = None, level: int = 1) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     half_dhline(buf, width, height, only=only, level=level)
  *     return half_dhline(buf, width, height, only=only, which='bottom', level=level)
@@ -44124,8 +44124,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":546
- * 
- * 
+ *
+ *
  * def dvcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     half_dhline(buf, width, height, which=hw)
@@ -44150,8 +44150,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":554
- * 
- * 
+ *
+ *
  * def dhcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     vw = 'top' if which in '' else 'bottom'
  *     half_dvline(buf, width, height, which=vw)
@@ -44176,8 +44176,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":562
- * 
- * 
+ *
+ *
  * def dcorner(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     hw = 'right' if which in '' else 'left'
  *     vw = 'top' if which in '' else 'bottom'
@@ -44202,8 +44202,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":594
- * 
- * 
+ *
+ *
  * def dpip(buf: BufType, width: int, height: int, level: int = 1, which: str = '') -> None:             # <<<<<<<<<<<<<<
  *     if which in '':
  *         left, right = dvline(buf, width, height)
@@ -44228,8 +44228,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":605
- * 
- * 
+ *
+ *
  * def inner_corner(buf: BufType, width: int, height: int, which: str = 'tl', level: int = 1) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level + 1, horizontal=True)
  *     vgap = thickness(level + 1, horizontal=False)
@@ -44254,8 +44254,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":617
- * 
- * 
+ *
+ *
  * def shade(buf: BufType, width: int, height: int, light: bool = False, invert: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     square_sz = max(1, width // 12)
  *     number_of_rows = height // square_sz
@@ -44280,8 +44280,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":654
- * 
- * 
+ *
+ *
  * def quad(buf: BufType, width: int, height: int, x: int = 0, y: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     num_cols = width // 2
  *     left = x * num_cols
@@ -44306,8 +44306,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/box_drawing.py":667
- * 
- * 
+ *
+ *
  * def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     def draw_sextant(row: int = 0, col: int = 0) -> None:
  *         if row == 0:
@@ -44332,8 +44332,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":695
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def smooth_mosaic(
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -44345,7 +44345,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -44412,7 +44412,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 696, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":696
- * 
+ *
  * @supersampled()
  * def smooth_mosaic(             # <<<<<<<<<<<<<<
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -44425,8 +44425,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":695
- * 
- * 
+ *
+ *
  * @supersampled()             # <<<<<<<<<<<<<<
  * def smooth_mosaic(
  *     buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
@@ -44439,8 +44439,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":717
- * 
- * 
+ *
+ *
  * def eight_range(size: int, which: int) -> range:             # <<<<<<<<<<<<<<
  *     thickness = max(1, size // 8)
  *     block = thickness * 8
@@ -44458,8 +44458,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":736
- * 
- * 
+ *
+ *
  * def eight_bar(buf: BufType, width: int, height: int, level: int = 1, which: int = 0, horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     if horizontal:
  *         x_range = range(0, width)
@@ -44485,8 +44485,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":749
- * 
- * 
+ *
+ *
  * def eight_block(buf: BufType, width: int, height: int, level: int = 1, which: Tuple[int, ...] = (0,), horizontal: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     for x in which:
  *         eight_bar(buf, width, height, level, x, horizontal)
@@ -44527,8 +44527,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/box_drawing.py":754
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=64)             # <<<<<<<<<<<<<<
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -44544,7 +44544,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":755
- * 
+ *
  * @lru_cache(maxsize=64)
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:             # <<<<<<<<<<<<<<
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -44590,8 +44590,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":754
- * 
- * 
+ *
+ *
  * @lru_cache(maxsize=64)             # <<<<<<<<<<<<<<
  * def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, ...], int]:
  *     dot_size = max(1, available_space // (2 * num_of_dots))
@@ -44604,8 +44604,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":770
- * 
- * 
+ *
+ *
  * def braille_dot(buf: BufType, width: int, height: int, col: int, row: int) -> None:             # <<<<<<<<<<<<<<
  *     x_gaps, dot_width = distribute_dots(width, 2)
  *     y_gaps, dot_height = distribute_dots(height, 4)
@@ -44629,8 +44629,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/fonts/box_drawing.py":782
- * 
- * 
+ *
+ *
  * def braille(buf: BufType, width: int, height: int, which: int = 0) -> None:             # <<<<<<<<<<<<<<
  *     if not which:
  *         return
@@ -44654,7 +44654,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/box_drawing.py":794
- * 
+ *
  * box_chars: Dict[str, List[Callable[[BufType, int, int], Any]]] = {
  *     '': [hline],             # <<<<<<<<<<<<<<
  *     '': [p(hline, level=3)],
@@ -50681,7 +50681,7 @@ if (!__Pyx_RefNanny) {
  *     '': [p(mid_lines, pts=('rt', 'lt', 'lb'))],
  *     '': [p(mid_lines, pts=('rt', 'rb', 'lt', 'lb'))],             # <<<<<<<<<<<<<<
  * }
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_p); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 973, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
@@ -50712,7 +50712,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":976
  * }
- * 
+ *
  * t, f = 1, 3             # <<<<<<<<<<<<<<
  * for start in '':
  *     for i, (hlevel, vlevel) in enumerate(((t, t), (f, t), (t, f), (f, f))):
@@ -50727,7 +50727,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":977
- * 
+ *
  * t, f = 1, 3
  * for start in '':             # <<<<<<<<<<<<<<
  *     for i, (hlevel, vlevel) in enumerate(((t, t), (f, t), (t, f), (f, f))):
@@ -50843,11 +50843,11 @@ if (!__Pyx_RefNanny) {
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_2);
@@ -50964,7 +50964,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/fonts/box_drawing.py":977
- * 
+ *
  * t, f = 1, 3
  * for start in '':             # <<<<<<<<<<<<<<
  *     for i, (hlevel, vlevel) in enumerate(((t, t), (f, t), (t, f), (f, f))):
@@ -50978,7 +50978,7 @@ if (!__Pyx_RefNanny) {
  *         box_chars[chr(ord(start) + i)] = [p(corner, which=start, hlevel=hlevel, vlevel=vlevel)]
  * for ch in '':             # <<<<<<<<<<<<<<
  *     box_chars[ch] = [p(rounded_corner, which=ch)]
- * 
+ *
  */
   __pyx_t_5 = PyObject_GetIter(__pyx_kp_s__437); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 980, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -51003,7 +51003,7 @@ if (!__Pyx_RefNanny) {
  *         box_chars[chr(ord(start) + i)] = [p(corner, which=start, hlevel=hlevel, vlevel=vlevel)]
  * for ch in '':
  *     box_chars[ch] = [p(rounded_corner, which=ch)]             # <<<<<<<<<<<<<<
- * 
+ *
  * for i, (a_, b_, c_, d_) in enumerate(
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_p); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 981, __pyx_L1_error)
@@ -51045,14 +51045,14 @@ if (!__Pyx_RefNanny) {
  *         box_chars[chr(ord(start) + i)] = [p(corner, which=start, hlevel=hlevel, vlevel=vlevel)]
  * for ch in '':             # <<<<<<<<<<<<<<
  *     box_chars[ch] = [p(rounded_corner, which=ch)]
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":983
  *     box_chars[ch] = [p(rounded_corner, which=ch)]
- * 
+ *
  * for i, (a_, b_, c_, d_) in enumerate(             # <<<<<<<<<<<<<<
  *     (
  *         (t, t, t, t),
@@ -51600,7 +51600,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":983
  *     box_chars[ch] = [p(rounded_corner, which=ch)]
- * 
+ *
  * for i, (a_, b_, c_, d_) in enumerate(             # <<<<<<<<<<<<<<
  *     (
  *         (t, t, t, t),
@@ -51625,15 +51625,15 @@ if (!__Pyx_RefNanny) {
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_24 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_23 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_22 = PyTuple_GET_ITEM(sequence, 2); 
-        __pyx_t_21 = PyTuple_GET_ITEM(sequence, 3); 
+        __pyx_t_24 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_23 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_22 = PyTuple_GET_ITEM(sequence, 2);
+        __pyx_t_21 = PyTuple_GET_ITEM(sequence, 3);
       } else {
-        __pyx_t_24 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_23 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_22 = PyList_GET_ITEM(sequence, 2); 
-        __pyx_t_21 = PyList_GET_ITEM(sequence, 3); 
+        __pyx_t_24 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_23 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_22 = PyList_GET_ITEM(sequence, 2);
+        __pyx_t_21 = PyList_GET_ITEM(sequence, 3);
       }
       __Pyx_INCREF(__pyx_t_24);
       __Pyx_INCREF(__pyx_t_23);
@@ -51693,7 +51693,7 @@ if (!__Pyx_RefNanny) {
  *     )
  * ):
  *     box_chars[chr(ord('') + i)] = [p(cross, a=a_, b=b_, c=c_, d=d_)]             # <<<<<<<<<<<<<<
- * 
+ *
  * for starts, func, pattern in (
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_p); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1003, __pyx_L1_error)
@@ -51754,7 +51754,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/fonts/box_drawing.py":983
  *     box_chars[ch] = [p(rounded_corner, which=ch)]
- * 
+ *
  * for i, (a_, b_, c_, d_) in enumerate(             # <<<<<<<<<<<<<<
  *     (
  *         (t, t, t, t),
@@ -51764,7 +51764,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":1006
- * 
+ *
  * for starts, func, pattern in (
  *     ('', vert_t, ((t, t, t), (t, f, t), (f, t, t), (t, t, f), (f, t, f), (f, f, t), (t, f, f), (f, f, f))),             # <<<<<<<<<<<<<<
  *     ('', horz_t, ((t, t, t), (f, t, t), (t, f, t), (f, f, t), (t, t, f), (f, t, f), (t, f, f), (f, f, f))),
@@ -52130,7 +52130,7 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":1006
- * 
+ *
  * for starts, func, pattern in (
  *     ('', vert_t, ((t, t, t), (t, f, t), (f, t, t), (t, t, f), (f, t, f), (f, f, t), (t, f, f), (f, f, f))),             # <<<<<<<<<<<<<<
  *     ('', horz_t, ((t, t, t), (f, t, t), (t, f, t), (f, f, t), (t, t, f), (f, t, f), (t, f, f), (f, f, f))),
@@ -52147,7 +52147,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":1005
  *     box_chars[chr(ord('') + i)] = [p(cross, a=a_, b=b_, c=c_, d=d_)]
- * 
+ *
  * for starts, func, pattern in (             # <<<<<<<<<<<<<<
  *     ('', vert_t, ((t, t, t), (t, f, t), (f, t, t), (t, t, f), (f, t, f), (f, f, t), (t, f, f), (f, f, f))),
  *     ('', horz_t, ((t, t, t), (f, t, t), (t, f, t), (f, f, t), (t, t, f), (f, t, f), (t, f, f), (f, f, f))),
@@ -52171,9 +52171,9 @@ if (!__Pyx_RefNanny) {
         __PYX_ERR(0, 1005, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_16 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_25 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_16 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_25 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2);
       __Pyx_INCREF(__pyx_t_16);
       __Pyx_INCREF(__pyx_t_25);
       __Pyx_INCREF(__pyx_t_6);
@@ -52253,7 +52253,7 @@ if (!__Pyx_RefNanny) {
  *     for start in starts:
  *         for i, (a_, b_, c_) in enumerate(pattern):             # <<<<<<<<<<<<<<
  *             box_chars[chr(ord(start) + i)] = [p(func, which=start, a=a_, b=b_, c=c_)]
- * 
+ *
  */
       __Pyx_INCREF(__pyx_int_0);
       __pyx_t_5 = __pyx_int_0;
@@ -52309,13 +52309,13 @@ if (!__Pyx_RefNanny) {
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_21 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_23 = PyTuple_GET_ITEM(sequence, 1); 
-            __pyx_t_24 = PyTuple_GET_ITEM(sequence, 2); 
+            __pyx_t_21 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_23 = PyTuple_GET_ITEM(sequence, 1);
+            __pyx_t_24 = PyTuple_GET_ITEM(sequence, 2);
           } else {
-            __pyx_t_21 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_23 = PyList_GET_ITEM(sequence, 1); 
-            __pyx_t_24 = PyList_GET_ITEM(sequence, 2); 
+            __pyx_t_21 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_23 = PyList_GET_ITEM(sequence, 1);
+            __pyx_t_24 = PyList_GET_ITEM(sequence, 2);
           }
           __Pyx_INCREF(__pyx_t_21);
           __Pyx_INCREF(__pyx_t_23);
@@ -52369,7 +52369,7 @@ if (!__Pyx_RefNanny) {
  *     for start in starts:
  *         for i, (a_, b_, c_) in enumerate(pattern):
  *             box_chars[chr(ord(start) + i)] = [p(func, which=start, a=a_, b=b_, c=c_)]             # <<<<<<<<<<<<<<
- * 
+ *
  * for chars, func_ in (('', dvcorner), ('', dhcorner), ('', dcorner), ('', dpip)):
  */
         __Pyx_GetModuleGlobalName(__pyx_t_25, __pyx_n_s_p); if (unlikely(!__pyx_t_25)) __PYX_ERR(0, 1011, __pyx_L1_error)
@@ -52436,7 +52436,7 @@ if (!__Pyx_RefNanny) {
  *     for start in starts:
  *         for i, (a_, b_, c_) in enumerate(pattern):             # <<<<<<<<<<<<<<
  *             box_chars[chr(ord(start) + i)] = [p(func, which=start, a=a_, b=b_, c=c_)]
- * 
+ *
  */
       }
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
@@ -52454,7 +52454,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/fonts/box_drawing.py":1005
  *     box_chars[chr(ord('') + i)] = [p(cross, a=a_, b=b_, c=c_, d=d_)]
- * 
+ *
  * for starts, func, pattern in (             # <<<<<<<<<<<<<<
  *     ('', vert_t, ((t, t, t), (t, f, t), (f, t, t), (t, t, f), (f, t, f), (f, f, t), (t, f, f), (f, f, f))),
  *     ('', horz_t, ((t, t, t), (f, t, t), (t, f, t), (f, f, t), (t, t, f), (f, t, f), (t, f, f), (f, f, f))),
@@ -52464,7 +52464,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":1013
  *             box_chars[chr(ord(start) + i)] = [p(func, which=start, a=a_, b=b_, c=c_)]
- * 
+ *
  * for chars, func_ in (('', dvcorner), ('', dhcorner), ('', dcorner), ('', dpip)):             # <<<<<<<<<<<<<<
  *     for ch in chars:
  *         box_chars[ch] = [p(func_, which=ch)]
@@ -52542,8 +52542,8 @@ if (!__Pyx_RefNanny) {
         __PYX_ERR(0, 1013, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_16 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_16 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_16);
       __Pyx_INCREF(__pyx_t_5);
       #else
@@ -52562,11 +52562,11 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly/fonts/box_drawing.py":1014
- * 
+ *
  * for chars, func_ in (('', dvcorner), ('', dhcorner), ('', dcorner), ('', dpip)):
  *     for ch in chars:             # <<<<<<<<<<<<<<
  *         box_chars[ch] = [p(func_, which=ch)]
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_chars); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 1014, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
@@ -52617,7 +52617,7 @@ if (!__Pyx_RefNanny) {
  * for chars, func_ in (('', dvcorner), ('', dhcorner), ('', dcorner), ('', dpip)):
  *     for ch in chars:
  *         box_chars[ch] = [p(func_, which=ch)]             # <<<<<<<<<<<<<<
- * 
+ *
  * for i in range(256):
  */
       __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_p); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 1015, __pyx_L1_error)
@@ -52655,18 +52655,18 @@ if (!__Pyx_RefNanny) {
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
 
       /* "smelly/fonts/box_drawing.py":1014
- * 
+ *
  * for chars, func_ in (('', dvcorner), ('', dhcorner), ('', dcorner), ('', dpip)):
  *     for ch in chars:             # <<<<<<<<<<<<<<
  *         box_chars[ch] = [p(func_, which=ch)]
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly/fonts/box_drawing.py":1013
  *             box_chars[chr(ord(start) + i)] = [p(func, which=start, a=a_, b=b_, c=c_)]
- * 
+ *
  * for chars, func_ in (('', dvcorner), ('', dhcorner), ('', dcorner), ('', dpip)):             # <<<<<<<<<<<<<<
  *     for ch in chars:
  *         box_chars[ch] = [p(func_, which=ch)]
@@ -52676,10 +52676,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":1017
  *         box_chars[ch] = [p(func_, which=ch)]
- * 
+ *
  * for i in range(256):             # <<<<<<<<<<<<<<
  *     box_chars[chr(0x2800 + i)] = [p(braille, which=i)]
- * 
+ *
  */
   for (__pyx_t_12 = 0; __pyx_t_12 < 0x100; __pyx_t_12+=1) {
     __pyx_t_24 = __Pyx_PyInt_From_long(__pyx_t_12); if (unlikely(!__pyx_t_24)) __PYX_ERR(0, 1017, __pyx_L1_error)
@@ -52688,11 +52688,11 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_24); __pyx_t_24 = 0;
 
     /* "smelly/fonts/box_drawing.py":1018
- * 
+ *
  * for i in range(256):
  *     box_chars[chr(0x2800 + i)] = [p(braille, which=i)]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_24, __pyx_n_s_p); if (unlikely(!__pyx_t_24)) __PYX_ERR(0, 1018, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_24);
@@ -52736,8 +52736,8 @@ if (!__Pyx_RefNanny) {
   }
 
   /* "smelly/fonts/box_drawing.py":1021
- * 
- * 
+ *
+ *
  * c = 0x1FB00             # <<<<<<<<<<<<<<
  * for i in range(1, 63):
  *     if i not in (21, 42):
@@ -52745,7 +52745,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_c, __pyx_int_129792) < 0) __PYX_ERR(0, 1021, __pyx_L1_error)
 
   /* "smelly/fonts/box_drawing.py":1022
- * 
+ *
  * c = 0x1FB00
  * for i in range(1, 63):             # <<<<<<<<<<<<<<
  *     if i not in (21, 42):
@@ -52790,7 +52790,7 @@ if (!__Pyx_RefNanny) {
  *     if i not in (21, 42):
  *         box_chars[chr(c)] = [p(sextant, which=i)]             # <<<<<<<<<<<<<<
  *         c += 1
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_p); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1024, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -52833,7 +52833,7 @@ if (!__Pyx_RefNanny) {
  *     if i not in (21, 42):
  *         box_chars[chr(c)] = [p(sextant, which=i)]
  *         c += 1             # <<<<<<<<<<<<<<
- * 
+ *
  * for i in range(1, 7):
  */
       __Pyx_GetModuleGlobalName(__pyx_t_16, __pyx_n_s_c); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 1025, __pyx_L1_error)
@@ -52856,7 +52856,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/box_drawing.py":1027
  *         c += 1
- * 
+ *
  * for i in range(1, 7):             # <<<<<<<<<<<<<<
  *     box_chars[chr(0x1FB6F + i)] = [p(eight_bar, which=i)]
  *     box_chars[chr(0x1FB75 + i)] = [p(eight_bar, which=i, horizontal=True)]
@@ -52868,11 +52868,11 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly/fonts/box_drawing.py":1028
- * 
+ *
  * for i in range(1, 7):
  *     box_chars[chr(0x1FB6F + i)] = [p(eight_bar, which=i)]             # <<<<<<<<<<<<<<
  *     box_chars[chr(0x1FB75 + i)] = [p(eight_bar, which=i, horizontal=True)]
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_p); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1028, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -52918,8 +52918,8 @@ if (!__Pyx_RefNanny) {
  * for i in range(1, 7):
  *     box_chars[chr(0x1FB6F + i)] = [p(eight_bar, which=i)]
  *     box_chars[chr(0x1FB75 + i)] = [p(eight_bar, which=i, horizontal=True)]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_16, __pyx_n_s_p); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 1029, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
@@ -52964,8 +52964,8 @@ if (!__Pyx_RefNanny) {
   }
 
   /* "smelly/fonts/box_drawing.py":1032
- * 
- * 
+ *
+ *
  * def render_box_char(ch: str, buf: BufType, width: int, height: int, dpi: float = 96.0) -> BufType:             # <<<<<<<<<<<<<<
  *     global _dpi
  *     _dpi = dpi
@@ -53001,8 +53001,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":1040
- * 
- * 
+ *
+ *
  * def render_missing_glyph(buf: BufType, width: int, height: int) -> None:             # <<<<<<<<<<<<<<
  *     hgap = thickness(level=0, horizontal=True) + 1
  *     vgap = thickness(level=0, horizontal=False) + 1
@@ -53024,8 +53024,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_24); __pyx_t_24 = 0;
 
   /* "smelly/fonts/box_drawing.py":1049
- * 
- * 
+ *
+ *
  * def test_char(ch: str, sz: int = 48) -> None:             # <<<<<<<<<<<<<<
  *     # smelly +runpy "from smelly.fonts.box_drawing import test_char; test_char('XXX')"
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
@@ -53044,11 +53044,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/box_drawing.py":1071
- * 
- * 
+ *
+ *
  * def test_drawing(sz: int = 48, family: str = 'monospace', start: int = 0x2500, num_rows: int = 10, num_cols: int = 16) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1071, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -53069,7 +53069,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/fonts/box_drawing.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_24 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_24)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_24);
@@ -53494,12 +53494,12 @@ static PyObject* __Pyx_PyFloat_DivideObjC(PyObject *op1, PyObject *op2, double f
     (void)zerodivision_check;
     if (likely(PyFloat_CheckExact(op1))) {
         a = PyFloat_AS_DOUBLE(op1);
-        
+
     } else
     #if PY_MAJOR_VERSION < 3
     if (likely(PyInt_CheckExact(op1))) {
         a = (double) PyInt_AS_LONG(op1);
-        
+
     } else
     #endif
     if (likely(PyLong_CheckExact(op1))) {
@@ -53549,12 +53549,12 @@ static PyObject* __Pyx_PyFloat_DivideObjC(PyObject *op1, PyObject *op2, double f
         #endif
             a = PyLong_AsDouble(op1);
             if (unlikely(a == -1.0 && PyErr_Occurred())) return NULL;
-            
+
         }
     } else {
         return (inplace ? __Pyx_PyNumber_InPlaceDivide(op1, op2) : __Pyx_PyNumber_Divide(op1, op2));
     }
-        
+
         PyFPE_START_PROTECT("divide", return NULL)
         result = a / b;
         PyFPE_END_PROTECT(result)
@@ -53947,8 +53947,8 @@ static PyObject* __Pyx_PyInt_FloorDivideObjC(PyObject *op1, PyObject *op2, CYTHO
                 }
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceFloorDivide : PyNumber_FloorDivide)(op1, op2);
@@ -54250,8 +54250,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -55106,8 +55106,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -55132,12 +55132,12 @@ static PyObject* __Pyx_PyFloat_SubtractObjC(PyObject *op1, PyObject *op2, double
     (void)zerodivision_check;
     if (likely(PyFloat_CheckExact(op1))) {
         a = PyFloat_AS_DOUBLE(op1);
-        
+
     } else
     #if PY_MAJOR_VERSION < 3
     if (likely(PyInt_CheckExact(op1))) {
         a = (double) PyInt_AS_LONG(op1);
-        
+
     } else
     #endif
     if (likely(PyLong_CheckExact(op1))) {
@@ -55187,12 +55187,12 @@ static PyObject* __Pyx_PyFloat_SubtractObjC(PyObject *op1, PyObject *op2, double
         #endif
             a = PyLong_AsDouble(op1);
             if (unlikely(a == -1.0 && PyErr_Occurred())) return NULL;
-            
+
         }
     } else {
         return (inplace ? PyNumber_InPlaceSubtract : PyNumber_Subtract)(op1, op2);
     }
-        
+
         PyFPE_START_PROTECT("subtract", return NULL)
         result = a - b;
         PyFPE_END_PROTECT(result)
@@ -55515,8 +55515,8 @@ static PyObject* __Pyx_PyInt_SubtractCObj(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -55727,8 +55727,8 @@ static PyObject* __Pyx_PyInt_RemainderObjC(PyObject *op1, PyObject *op2, CYTHON_
                 llx += ((llx != 0) & ((llx ^ llb) < 0)) * llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceRemainder : PyNumber_Remainder)(op1, op2);
@@ -55972,8 +55972,8 @@ static PyObject* __Pyx_PyInt_AndObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla & llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceAnd : PyNumber_And)(op1, op2);
@@ -57050,8 +57050,8 @@ static PyObject* __Pyx_PyInt_AddCObj(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {

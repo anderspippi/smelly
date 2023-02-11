@@ -969,8 +969,8 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_6smelly_14os_window_size___pyx_scope_struct__initial_window_size_func;
 
 /* "smelly/os_window_size.py":35
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:             # <<<<<<<<<<<<<<
  *                              Dict[str, Any]) -> Callable[[int, int, float,
  *                                                          float, float, float],
@@ -1659,8 +1659,8 @@ static PyObject *__pyx_codeobj__10;
 /* Late includes */
 
 /* "smelly/os_window_size.py":30
- * 
- * 
+ *
+ *
  * def sanitize_window_size(x: Any) -> int:             # <<<<<<<<<<<<<<
  *     ans = int(x)
  *     return max(20, min(ans, 50000))
@@ -1696,11 +1696,11 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_sanitize_window_size(CYTHON_U
   __Pyx_RefNannySetupContext("sanitize_window_size", 0);
 
   /* "smelly/os_window_size.py":31
- * 
+ *
  * def sanitize_window_size(x: Any) -> int:
  *     ans = int(x)             # <<<<<<<<<<<<<<
  *     return max(20, min(ans, 50000))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1711,8 +1711,8 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_sanitize_window_size(CYTHON_U
  * def sanitize_window_size(x: Any) -> int:
  *     ans = int(x)
  *     return max(20, min(ans, 50000))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = 0xC350;
@@ -1760,8 +1760,8 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_sanitize_window_size(CYTHON_U
   goto __pyx_L0;
 
   /* "smelly/os_window_size.py":30
- * 
- * 
+ *
+ *
  * def sanitize_window_size(x: Any) -> int:             # <<<<<<<<<<<<<<
  *     ans = int(x)
  *     return max(20, min(ans, 50000))
@@ -1783,8 +1783,8 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_sanitize_window_size(CYTHON_U
 }
 
 /* "smelly/os_window_size.py":35
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:             # <<<<<<<<<<<<<<
  *                              Dict[str, Any]) -> Callable[[int, int, float,
  *                                                          float, float, float],
@@ -1857,10 +1857,10 @@ static PyObject *__pyx_pw_6smelly_14os_window_size_3initial_window_size_func(PyO
 
 /* "smelly/os_window_size.py":44
  *             w, h = map(sanitize_window_size, ws)
- * 
+ *
  *             def initial_window_size(*a: Any) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return w, h
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1896,10 +1896,10 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_in
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/os_window_size.py":45
- * 
+ *
  *             def initial_window_size(*a: Any) -> Tuple[int, int]:
  *                 return w, h             # <<<<<<<<<<<<<<
- * 
+ *
  *             return initial_window_size
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1919,10 +1919,10 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_in
 
   /* "smelly/os_window_size.py":44
  *             w, h = map(sanitize_window_size, ws)
- * 
+ *
  *             def initial_window_size(*a: Any) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return w, h
- * 
+ *
  */
 
   /* function exit code */
@@ -1938,7 +1938,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_in
 
 /* "smelly/os_window_size.py":54
  *     h, h_unit = opts.initial_window_sizes.height
- * 
+ *
  *     def get_window_size(             # <<<<<<<<<<<<<<
  *             cell_width: int, cell_height: int, dpi_x: float, dpi_y: float,
  *             xscale: float, yscale: float) -> Tuple[
@@ -2055,7 +2055,7 @@ static PyObject *__pyx_pw_6smelly_14os_window_size_24initial_window_size_func_3g
 
 /* "smelly/os_window_size.py":62
  *             xscale = yscale = 1
- * 
+ *
  *         def effective_margin(which: EdgeLiteral) -> float:             # <<<<<<<<<<<<<<
  *             ans: float = getattr(opts.single_window_margin_width, which)
  *             if ans < 0:
@@ -2093,7 +2093,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_15
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/os_window_size.py":63
- * 
+ *
  *         def effective_margin(which: EdgeLiteral) -> float:
  *             ans: float = getattr(opts.single_window_margin_width, which)             # <<<<<<<<<<<<<<
  *             if ans < 0:
@@ -2124,7 +2124,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_15
  *             if ans < 0:
  *                 ans = getattr(opts.window_margin_width, which)             # <<<<<<<<<<<<<<
  *             return ans
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_opts)) { __Pyx_RaiseClosureNameError("opts"); __PYX_ERR(0, 65, __pyx_L1_error) }
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_opts, __pyx_n_s_window_margin_width); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
@@ -2149,7 +2149,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_15
  *             if ans < 0:
  *                 ans = getattr(opts.window_margin_width, which)
  *             return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *         if w_unit == 'cells':
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2161,7 +2161,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_15
 
   /* "smelly/os_window_size.py":62
  *             xscale = yscale = 1
- * 
+ *
  *         def effective_margin(which: EdgeLiteral) -> float:             # <<<<<<<<<<<<<<
  *             ans: float = getattr(opts.single_window_margin_width, which)
  *             if ans < 0:
@@ -2181,7 +2181,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_15
 
 /* "smelly/os_window_size.py":54
  *     h, h_unit = opts.initial_window_sizes.height
- * 
+ *
  *     def get_window_size(             # <<<<<<<<<<<<<<
  *             cell_width: int, cell_height: int, dpi_x: float, dpi_y: float,
  *             xscale: float, yscale: float) -> Tuple[
@@ -2254,7 +2254,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
  *         if not is_macos and not is_wayland():
  *             # Not sure what the deal with scaling on X11 is
  *             xscale = yscale = 1             # <<<<<<<<<<<<<<
- * 
+ *
  *         def effective_margin(which: EdgeLiteral) -> float:
  */
     __pyx_v_xscale = 1.0;
@@ -2271,7 +2271,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
 
   /* "smelly/os_window_size.py":62
  *             xscale = yscale = 1
- * 
+ *
  *         def effective_margin(which: EdgeLiteral) -> float:             # <<<<<<<<<<<<<<
  *             ans: float = getattr(opts.single_window_margin_width, which)
  *             if ans < 0:
@@ -2292,7 +2292,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
 
   /* "smelly/os_window_size.py":68
  *             return ans
- * 
+ *
  *         if w_unit == 'cells':             # <<<<<<<<<<<<<<
  *             spacing = effective_margin('left') + effective_margin('right')
  *             spacing += opts.window_padding_width.left + opts.window_padding_width.right
@@ -2302,7 +2302,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
   if (__pyx_t_1) {
 
     /* "smelly/os_window_size.py":69
- * 
+ *
  *         if w_unit == 'cells':
  *             spacing = effective_margin('left') + effective_margin('right')             # <<<<<<<<<<<<<<
  *             spacing += opts.window_padding_width.left + opts.window_padding_width.right
@@ -2381,7 +2381,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
 
     /* "smelly/os_window_size.py":68
  *             return ans
- * 
+ *
  *         if w_unit == 'cells':             # <<<<<<<<<<<<<<
  *             spacing = effective_margin('left') + effective_margin('right')
  *             spacing += opts.window_padding_width.left + opts.window_padding_width.right
@@ -2507,7 +2507,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
  *         else:
  *             height = h             # <<<<<<<<<<<<<<
  *         return int(width), int(height)
- * 
+ *
  */
   /*else*/ {
     if (unlikely(!__pyx_cur_scope->__pyx_v_h)) { __Pyx_RaiseClosureNameError("h"); __PYX_ERR(0, 79, __pyx_L1_error) }
@@ -2520,7 +2520,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
  *         else:
  *             height = h
  *         return int(width), int(height)             # <<<<<<<<<<<<<<
- * 
+ *
  *     return get_window_size
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2542,7 +2542,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
 
   /* "smelly/os_window_size.py":54
  *     h, h_unit = opts.initial_window_sizes.height
- * 
+ *
  *     def get_window_size(             # <<<<<<<<<<<<<<
  *             cell_width: int, cell_height: int, dpi_x: float, dpi_y: float,
  *             xscale: float, yscale: float) -> Tuple[
@@ -2566,8 +2566,8 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_24initial_window_size_func_2g
 }
 
 /* "smelly/os_window_size.py":35
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:             # <<<<<<<<<<<<<<
  *                              Dict[str, Any]) -> Callable[[int, int, float,
  *                                                          float, float, float],
@@ -2649,7 +2649,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
  *         ws = cached_values['window-size']
  *         try:             # <<<<<<<<<<<<<<
  *             w, h = map(sanitize_window_size, ws)
- * 
+ *
  */
     {
       __Pyx_PyThreadState_declare
@@ -2664,7 +2664,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
  *         ws = cached_values['window-size']
  *         try:
  *             w, h = map(sanitize_window_size, ws)             # <<<<<<<<<<<<<<
- * 
+ *
  *             def initial_window_size(*a: Any) -> Tuple[int, int]:
  */
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sanitize_window_size); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 42, __pyx_L6_error)
@@ -2690,11 +2690,11 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_8 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_8 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_8);
           __Pyx_INCREF(__pyx_t_9);
@@ -2735,10 +2735,10 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
 
         /* "smelly/os_window_size.py":44
  *             w, h = map(sanitize_window_size, ws)
- * 
+ *
  *             def initial_window_size(*a: Any) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return w, h
- * 
+ *
  */
         __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_4);
@@ -2771,7 +2771,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
 
         /* "smelly/os_window_size.py":47
  *                 return w, h
- * 
+ *
  *             return initial_window_size             # <<<<<<<<<<<<<<
  *         except Exception:
  *             log_error('Invalid cached window size, ignoring')
@@ -2786,7 +2786,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
  *         ws = cached_values['window-size']
  *         try:             # <<<<<<<<<<<<<<
  *             w, h = map(sanitize_window_size, ws)
- * 
+ *
  */
       }
       __pyx_L6_error:;
@@ -2796,11 +2796,11 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
 
       /* "smelly/os_window_size.py":48
- * 
+ *
  *             return initial_window_size
  *         except Exception:             # <<<<<<<<<<<<<<
  *             log_error('Invalid cached window size, ignoring')
- * 
+ *
  */
       __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_12) {
@@ -2814,7 +2814,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
  *             return initial_window_size
  *         except Exception:
  *             log_error('Invalid cached window size, ignoring')             # <<<<<<<<<<<<<<
- * 
+ *
  *     w, w_unit = opts.initial_window_sizes.width
  */
         __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_log_error); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 49, __pyx_L8_except_error)
@@ -2848,7 +2848,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
  *         ws = cached_values['window-size']
  *         try:             # <<<<<<<<<<<<<<
  *             w, h = map(sanitize_window_size, ws)
- * 
+ *
  */
       __Pyx_XGIVEREF(__pyx_t_5);
       __Pyx_XGIVEREF(__pyx_t_6);
@@ -2879,10 +2879,10 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
 
   /* "smelly/os_window_size.py":51
  *             log_error('Invalid cached window size, ignoring')
- * 
+ *
  *     w, w_unit = opts.initial_window_sizes.width             # <<<<<<<<<<<<<<
  *     h, h_unit = opts.initial_window_sizes.height
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_opts, __pyx_n_s_initial_window_sizes); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -2899,11 +2899,11 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_10 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_10 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_t_10);
@@ -2944,10 +2944,10 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
   __pyx_t_10 = 0;
 
   /* "smelly/os_window_size.py":52
- * 
+ *
  *     w, w_unit = opts.initial_window_sizes.width
  *     h, h_unit = opts.initial_window_sizes.height             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_window_size(
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_opts, __pyx_n_s_initial_window_sizes); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
@@ -2965,11 +2965,11 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_8);
@@ -3011,7 +3011,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
 
   /* "smelly/os_window_size.py":54
  *     h, h_unit = opts.initial_window_sizes.height
- * 
+ *
  *     def get_window_size(             # <<<<<<<<<<<<<<
  *             cell_width: int, cell_height: int, dpi_x: float, dpi_y: float,
  *             xscale: float, yscale: float) -> Tuple[
@@ -3067,7 +3067,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
 
   /* "smelly/os_window_size.py":54
  *     h, h_unit = opts.initial_window_sizes.height
- * 
+ *
  *     def get_window_size(             # <<<<<<<<<<<<<<
  *             cell_width: int, cell_height: int, dpi_x: float, dpi_y: float,
  *             xscale: float, yscale: float) -> Tuple[
@@ -3081,7 +3081,7 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
 
   /* "smelly/os_window_size.py":82
  *         return int(width), int(height)
- * 
+ *
  *     return get_window_size             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3090,8 +3090,8 @@ static PyObject *__pyx_pf_6smelly_14os_window_size_2initial_window_size_func(CYT
   goto __pyx_L0;
 
   /* "smelly/os_window_size.py":35
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:             # <<<<<<<<<<<<<<
  *                              Dict[str, Any]) -> Callable[[int, int, float,
  *                                                          float, float, float],
@@ -3397,7 +3397,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/os_window_size.py":62
  *             xscale = yscale = 1
- * 
+ *
  *         def effective_margin(which: EdgeLiteral) -> float:             # <<<<<<<<<<<<<<
  *             ans: float = getattr(opts.single_window_margin_width, which)
  *             if ans < 0:
@@ -3409,10 +3409,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/os_window_size.py":44
  *             w, h = map(sanitize_window_size, ws)
- * 
+ *
  *             def initial_window_size(*a: Any) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return w, h
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_a); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -3421,7 +3421,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/os_window_size.py":54
  *     h, h_unit = opts.initial_window_sizes.height
- * 
+ *
  *     def get_window_size(             # <<<<<<<<<<<<<<
  *             cell_width: int, cell_height: int, dpi_x: float, dpi_y: float,
  *             xscale: float, yscale: float) -> Tuple[
@@ -3432,8 +3432,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(6, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_os_window_size_py, __pyx_n_s_get_window_size, 54, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 54, __pyx_L1_error)
 
   /* "smelly/os_window_size.py":30
- * 
- * 
+ *
+ *
  * def sanitize_window_size(x: Any) -> int:             # <<<<<<<<<<<<<<
  *     ans = int(x)
  *     return max(20, min(ans, 50000))
@@ -3444,8 +3444,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_os_window_size_py, __pyx_n_s_sanitize_window_size, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "smelly/os_window_size.py":35
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:             # <<<<<<<<<<<<<<
  *                              Dict[str, Any]) -> Callable[[int, int, float,
  *                                                          float, float, float],
@@ -3754,9 +3754,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/os_window_size.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Any, Callable, Dict, NamedTuple, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from .constants import is_macos, is_wayland
  */
   __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -3803,7 +3803,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/os_window_size.py":6
  * from typing import Any, Callable, Dict, NamedTuple, Tuple
- * 
+ *
  * from .constants import is_macos, is_wayland             # <<<<<<<<<<<<<<
  * from .types import FloatEdges
  * from .typing import EdgeLiteral
@@ -3830,7 +3830,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/os_window_size.py":7
- * 
+ *
  * from .constants import is_macos, is_wayland
  * from .types import FloatEdges             # <<<<<<<<<<<<<<
  * from .typing import EdgeLiteral
@@ -3855,7 +3855,7 @@ if (!__Pyx_RefNanny) {
  * from .types import FloatEdges
  * from .typing import EdgeLiteral             # <<<<<<<<<<<<<<
  * from .utils import log_error
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3875,8 +3875,8 @@ if (!__Pyx_RefNanny) {
  * from .types import FloatEdges
  * from .typing import EdgeLiteral
  * from .utils import log_error             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3893,8 +3893,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/os_window_size.py":12
- * 
- * 
+ *
+ *
  * class WindowSize(NamedTuple):             # <<<<<<<<<<<<<<
  *     size: int
  *     unit: str
@@ -3915,8 +3915,8 @@ if (!__Pyx_RefNanny) {
  * class WindowSize(NamedTuple):
  *     size: int
  *     unit: str             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_WindowSize, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3927,8 +3927,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/os_window_size.py":17
- * 
- * 
+ *
+ *
  * class WindowSizes(NamedTuple):             # <<<<<<<<<<<<<<
  *     width: WindowSize
  *     height: WindowSize
@@ -3949,8 +3949,8 @@ if (!__Pyx_RefNanny) {
  * class WindowSizes(NamedTuple):
  *     width: WindowSize
  *     height: WindowSize             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_WindowSizes, __pyx_t_2, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3961,8 +3961,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/os_window_size.py":22
- * 
- * 
+ *
+ *
  * class WindowSizeData(NamedTuple):             # <<<<<<<<<<<<<<
  *     initial_window_sizes: WindowSizes
  *     remember_window_size: bool
@@ -3983,8 +3983,8 @@ if (!__Pyx_RefNanny) {
  *     single_window_margin_width: FloatEdges
  *     window_margin_width: FloatEdges
  *     window_padding_width: FloatEdges             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_WindowSizeData, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3995,8 +3995,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/os_window_size.py":30
- * 
- * 
+ *
+ *
  * def sanitize_window_size(x: Any) -> int:             # <<<<<<<<<<<<<<
  *     ans = int(x)
  *     return max(20, min(ans, 50000))
@@ -4016,8 +4016,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/os_window_size.py":35
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:             # <<<<<<<<<<<<<<
  *                              Dict[str, Any]) -> Callable[[int, int, float,
  *                                                          float, float, float],
@@ -4030,7 +4030,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/os_window_size.py":36
- * 
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:
  *                              Dict[str, Any]) -> Callable[[int, int, float,             # <<<<<<<<<<<<<<
  *                                                          float, float, float],
@@ -4108,7 +4108,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/os_window_size.py":36
- * 
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:
  *                              Dict[str, Any]) -> Callable[[int, int, float,             # <<<<<<<<<<<<<<
  *                                                          float, float, float],
@@ -4130,8 +4130,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/os_window_size.py":35
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values:             # <<<<<<<<<<<<<<
  *                              Dict[str, Any]) -> Callable[[int, int, float,
  *                                                          float, float, float],
@@ -4146,7 +4146,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/os_window_size.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -5657,8 +5657,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

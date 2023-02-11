@@ -1609,7 +1609,7 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/launch.py":80
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or []}
  *         for attr, val in opts.__dict__.items():
@@ -1723,7 +1723,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_message_to_smelly(CYTHON_U
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/launch.py":81
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         ans = {'args': args or []}             # <<<<<<<<<<<<<<
  *         for attr, val in opts.__dict__.items():
@@ -1826,11 +1826,11 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_message_to_smelly(CYTHON_U
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_7);
@@ -1872,7 +1872,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_message_to_smelly(CYTHON_U
  *         for attr, val in opts.__dict__.items():
  *             ans[attr] = val             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     if (unlikely(PyDict_SetItem(__pyx_v_ans, __pyx_v_attr, __pyx_v_val) < 0)) __PYX_ERR(0, 83, __pyx_L1_error)
 
@@ -1890,7 +1890,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_message_to_smelly(CYTHON_U
  *         for attr, val in opts.__dict__.items():
  *             ans[attr] = val
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1900,7 +1900,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_message_to_smelly(CYTHON_U
 
   /* "smelly/rc/launch.py":80
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or []}
  *         for attr, val in opts.__dict__.items():
@@ -1926,7 +1926,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_message_to_smelly(CYTHON_U
 
 /* "smelly/rc/launch.py":86
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         default_opts = parse_launch_args()[0]
  *         opts = LaunchCLIOptions()
@@ -2048,7 +2048,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_2response_from_smelly(CYTH
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/launch.py":87
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         default_opts = parse_launch_args()[0]             # <<<<<<<<<<<<<<
  *         opts = LaunchCLIOptions()
@@ -2181,11 +2181,11 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_2response_from_smelly(CYTH
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_6);
@@ -2484,7 +2484,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_2response_from_smelly(CYTH
  *             return None
  *         w = do_launch(boss, opts, payload_get('args') or [], target_tab=target_tab, rc_from_window=window)             # <<<<<<<<<<<<<<
  *         return None if payload_get('no_response') else str(getattr(w, 'id', 0))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_do_launch); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2546,8 +2546,8 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_2response_from_smelly(CYTH
  *             return None
  *         w = do_launch(boss, opts, payload_get('args') or [], target_tab=target_tab, rc_from_window=window)
  *         return None if payload_get('no_response') else str(getattr(w, 'id', 0))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_payload_get);
@@ -2586,7 +2586,7 @@ static PyObject *__pyx_pf_6smelly_2rc_6launch_6Launch_2response_from_smelly(CYTH
 
   /* "smelly/rc/launch.py":86
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         default_opts = parse_launch_args()[0]
  *         opts = LaunchCLIOptions()
@@ -2770,7 +2770,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/launch.py":80
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or []}
  *         for attr, val in opts.__dict__.items():
@@ -2782,7 +2782,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/launch.py":86
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         default_opts = parse_launch_args()[0]
  *         opts = LaunchCLIOptions()
@@ -3079,10 +3079,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/launch.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.cli_stub import LaunchCLIOptions
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -3108,7 +3108,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/launch.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from smelly.cli_stub import LaunchCLIOptions             # <<<<<<<<<<<<<<
  * from smelly.launch import launch as do_launch
  * from smelly.launch import options_spec as launch_options_spec
@@ -3128,7 +3128,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/launch.py":8
- * 
+ *
  * from smelly.cli_stub import LaunchCLIOptions
  * from smelly.launch import launch as do_launch             # <<<<<<<<<<<<<<
  * from smelly.launch import options_spec as launch_options_spec
@@ -3153,7 +3153,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.launch import launch as do_launch
  * from smelly.launch import options_spec as launch_options_spec             # <<<<<<<<<<<<<<
  * from smelly.launch import parse_launch_args
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3173,7 +3173,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.launch import launch as do_launch
  * from smelly.launch import options_spec as launch_options_spec
  * from smelly.launch import parse_launch_args             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -3192,9 +3192,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/launch.py":12
  * from smelly.launch import parse_launch_args
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -3269,10 +3269,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/launch.py":14
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import LaunchRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3281,11 +3281,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/launch.py":15
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import LaunchRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3303,16 +3303,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/launch.py":14
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import LaunchRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/launch.py":18
- * 
- * 
+ *
+ *
  * class Launch(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
@@ -3330,7 +3330,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/launch.py":19
- * 
+ *
  * class Launch(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
@@ -3341,7 +3341,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/launch.py":52
  *     '''
- * 
+ *
  *     short_desc = 'Run an arbitrary process in a new window/tab'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Prints out the id of the newly opened window. Any command line arguments'
@@ -3455,7 +3455,7 @@ if (!__Pyx_RefNanny) {
  *     args = RemoteCommand.Args(
  *         spec='[CMD ...]', json_field='args', completion=RemoteCommand.CompletionSpec.from_string('type:special group:cli.CompleteExecutableFirstArg')             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -3503,7 +3503,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/launch.py":80
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or []}
  *         for attr, val in opts.__dict__.items():
@@ -3532,7 +3532,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/launch.py":86
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         default_opts = parse_launch_args()[0]
  *         opts = LaunchCLIOptions()
@@ -3569,8 +3569,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/launch.py":18
- * 
- * 
+ *
+ *
  * class Launch(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
@@ -3584,8 +3584,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/launch.py":104
- * 
- * 
+ *
+ *
  * launch = Launch()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Launch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
@@ -3599,7 +3599,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/launch.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

@@ -1410,8 +1410,8 @@ static PyObject *__pyx_codeobj__6;
 /* Late includes */
 
 /* "welly/tui/progress.py":8
- * 
- * 
+ *
+ *
  * def render_progress_bar(frac: float, width: int = 80) -> str:             # <<<<<<<<<<<<<<
  *     if frac >= 1:
  *         return styled('' * width, fg='green')
@@ -1511,7 +1511,7 @@ static PyObject *__pyx_pf_5welly_3tui_8progress_render_progress_bar(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("render_progress_bar", 0);
 
   /* "welly/tui/progress.py":9
- * 
+ *
  * def render_progress_bar(frac: float, width: int = 80) -> str:
  *     if frac >= 1:             # <<<<<<<<<<<<<<
  *         return styled('' * width, fg='green')
@@ -1551,7 +1551,7 @@ static PyObject *__pyx_pf_5welly_3tui_8progress_render_progress_bar(CYTHON_UNUSE
     goto __pyx_L0;
 
     /* "welly/tui/progress.py":9
- * 
+ *
  * def render_progress_bar(frac: float, width: int = 80) -> str:
  *     if frac >= 1:             # <<<<<<<<<<<<<<
  *         return styled('' * width, fg='green')
@@ -2098,8 +2098,8 @@ static PyObject *__pyx_pf_5welly_3tui_8progress_render_progress_bar(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "welly/tui/progress.py":8
- * 
- * 
+ *
+ *
  * def render_progress_bar(frac: float, width: int = 80) -> str:             # <<<<<<<<<<<<<<
  *     if frac >= 1:
  *         return styled('' * width, fg='green')
@@ -2216,8 +2216,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/tui/progress.py":8
- * 
- * 
+ *
+ *
  * def render_progress_bar(frac: float, width: int = 80) -> str:             # <<<<<<<<<<<<<<
  *     if frac >= 1:
  *         return styled('' * width, fg='green')
@@ -2514,11 +2514,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/tui/progress.py":5
- * 
- * 
+ *
+ *
  * from .operations import repeat, styled             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2542,8 +2542,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/tui/progress.py":8
- * 
- * 
+ *
+ *
  * def render_progress_bar(frac: float, width: int = 80) -> str:             # <<<<<<<<<<<<<<
  *     if frac >= 1:
  *         return styled('' * width, fg='green')
@@ -2564,7 +2564,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/tui/progress.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3114,8 +3114,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -3238,8 +3238,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

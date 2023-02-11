@@ -973,7 +973,7 @@ struct __pyx_obj_6smelly_2rc_4base___pyx_scope_struct_3_genexpr;
 
 /* "smelly/rc/base.py":211
  *         return self.count
- * 
+ *
  *     def as_go_completion_code(self, go_name: str) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c is not None:
@@ -988,7 +988,7 @@ struct __pyx_obj_6smelly_2rc_4base___pyx_scope_struct__as_go_completion_code {
 
 /* "smelly/rc/base.py":218
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c == 0:
@@ -2595,10 +2595,10 @@ static PyObject *__pyx_codeobj__101;
 
 /* "smelly/rc/base.py":34
  *     name: str = ''
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2629,10 +2629,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_18NamedTemporaryFile___enter__(CYTHO
 
 /* "smelly/rc/base.py":37
  *         ...
- * 
+ *
  *     def __exit__(self, exc: Any, value: Any, tb: Any) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2736,10 +2736,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_18NamedTemporaryFile_2__exit__(CYTHO
 
 /* "smelly/rc/base.py":40
  *         ...
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2770,10 +2770,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_18NamedTemporaryFile_4close(CYTHON_U
 
 /* "smelly/rc/base.py":43
  *         ...
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2860,10 +2860,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_18NamedTemporaryFile_6write(CYTHON_U
 
 /* "smelly/rc/base.py":46
  *         ...
- * 
+ *
  *     def flush(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2894,10 +2894,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_18NamedTemporaryFile_8flush(CYTHON_U
 
 /* "smelly/rc/base.py":57
  *     hide_traceback = True
- * 
+ *
  *     def __init__(self, expression: str, target: str = 'windows'):             # <<<<<<<<<<<<<<
  *         ValueError.__init__(self, f'No matching {target} for expression: {expression}')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3003,11 +3003,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_10MatchError___init__(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/rc/base.py":58
- * 
+ *
  *     def __init__(self, expression: str, target: str = 'windows'):
  *         ValueError.__init__(self, f'No matching {target} for expression: {expression}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_builtin_ValueError, __pyx_n_s_init); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3091,10 +3091,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_10MatchError___init__(CYTHON_UNUSED 
 
   /* "smelly/rc/base.py":57
  *     hide_traceback = True
- * 
+ *
  *     def __init__(self, expression: str, target: str = 'windows'):             # <<<<<<<<<<<<<<
  *         ValueError.__init__(self, f'No matching {target} for expression: {expression}')
- * 
+ *
  */
 
   /* function exit code */
@@ -3115,7 +3115,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_10MatchError___init__(CYTHON_UNUSED 
 }
 
 /* "smelly/rc/base.py":74
- * 
+ *
  * class PayloadGetter:
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):             # <<<<<<<<<<<<<<
  *         self.payload = payload
@@ -3211,7 +3211,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter___init__(CYTHON_UNUS
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):
  *         self.payload = payload             # <<<<<<<<<<<<<<
  *         self.cmd = cmd
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_payload, __pyx_v_payload) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
 
@@ -3219,13 +3219,13 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter___init__(CYTHON_UNUS
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):
  *         self.payload = payload
  *         self.cmd = cmd             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, key: str, opt_name: Optional[str] = None, missing: Any = None) -> Any:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cmd, __pyx_v_cmd) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
 
   /* "smelly/rc/base.py":74
- * 
+ *
  * class PayloadGetter:
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):             # <<<<<<<<<<<<<<
  *         self.payload = payload
@@ -3246,7 +3246,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter___init__(CYTHON_UNUS
 
 /* "smelly/rc/base.py":78
  *         self.cmd = cmd
- * 
+ *
  *     def __call__(self, key: str, opt_name: Optional[str] = None, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         ans = self.payload.get(key, payload_get)
  *         if ans is not payload_get:
@@ -3368,7 +3368,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter_2__call__(CYTHON_UNU
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "smelly/rc/base.py":79
- * 
+ *
  *     def __call__(self, key: str, opt_name: Optional[str] = None, missing: Any = None) -> Any:
  *         ans = self.payload.get(key, payload_get)             # <<<<<<<<<<<<<<
  *         if ans is not payload_get:
@@ -3450,7 +3450,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter_2__call__(CYTHON_UNU
  *         if ans is not payload_get:
  *             return ans             # <<<<<<<<<<<<<<
  *         return self.cmd.get_default(opt_name or key, missing=missing)
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_v_ans);
@@ -3470,8 +3470,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter_2__call__(CYTHON_UNU
  *         if ans is not payload_get:
  *             return ans
  *         return self.cmd.get_default(opt_name or key, missing=missing)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cmd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
@@ -3508,7 +3508,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter_2__call__(CYTHON_UNU
 
   /* "smelly/rc/base.py":78
  *         self.cmd = cmd
- * 
+ *
  *     def __call__(self, key: str, opt_name: Optional[str] = None, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         ans = self.payload.get(key, payload_get)
  *         if ans is not payload_get:
@@ -3531,7 +3531,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13PayloadGetter_2__call__(CYTHON_UNU
 }
 
 /* "smelly/rc/base.py":177
- * 
+ *
  * class AsyncResponder:
  *     def __init__(self, payload_get: PayloadGetType, window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *         self.async_id: str = payload_get('async_id', missing='')
@@ -3645,7 +3645,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder___init__(CYTHON_UNU
  *         self.async_id: str = payload_get('async_id', missing='')
  *         self.peer_id: int = payload_get('peer_id', missing=0)             # <<<<<<<<<<<<<<
  *         self.window_id: int = getattr(window, 'id', 0)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3660,7 +3660,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder___init__(CYTHON_UNU
  *         self.async_id: str = payload_get('async_id', missing='')
  *         self.peer_id: int = payload_get('peer_id', missing=0)
  *         self.window_id: int = getattr(window, 'id', 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send_data(self, data: Any) -> None:
  */
   __pyx_t_1 = __Pyx_GetAttr3(__pyx_v_window, __pyx_n_s_id, __pyx_int_0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
@@ -3669,7 +3669,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder___init__(CYTHON_UNU
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":177
- * 
+ *
  * class AsyncResponder:
  *     def __init__(self, payload_get: PayloadGetType, window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *         self.async_id: str = payload_get('async_id', missing='')
@@ -3692,10 +3692,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder___init__(CYTHON_UNU
 
 /* "smelly/rc/base.py":182
  *         self.window_id: int = getattr(window, 'id', 0)
- * 
+ *
  *     def send_data(self, data: Any) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3775,10 +3775,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_2send_data(CYTHON_U
   __Pyx_RefNannySetupContext("send_data", 0);
 
   /* "smelly/rc/base.py":183
- * 
+ *
  *     def send_data(self, data: Any) -> None:
  *         from smelly.remote_control import send_response_to_client             # <<<<<<<<<<<<<<
- * 
+ *
  *         send_response_to_client(data=data, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
@@ -3798,9 +3798,9 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_2send_data(CYTHON_U
 
   /* "smelly/rc/base.py":185
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  *         send_response_to_client(data=data, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send_error(self, error: str) -> None:
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
@@ -3825,10 +3825,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_2send_data(CYTHON_U
 
   /* "smelly/rc/base.py":182
  *         self.window_id: int = getattr(window, 'id', 0)
- * 
+ *
  *     def send_data(self, data: Any) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
 
   /* function exit code */
@@ -3848,10 +3848,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_2send_data(CYTHON_U
 
 /* "smelly/rc/base.py":187
  *         send_response_to_client(data=data, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
- * 
+ *
  *     def send_error(self, error: str) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3936,10 +3936,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_4send_error(CYTHON_
   __Pyx_RefNannySetupContext("send_error", 0);
 
   /* "smelly/rc/base.py":188
- * 
+ *
  *     def send_error(self, error: str) -> None:
  *         from smelly.remote_control import send_response_to_client             # <<<<<<<<<<<<<<
- * 
+ *
  *         send_response_to_client(error=error, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 188, __pyx_L1_error)
@@ -3959,10 +3959,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_4send_error(CYTHON_
 
   /* "smelly/rc/base.py":190
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  *         send_response_to_client(error=error, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3986,10 +3986,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_4send_error(CYTHON_
 
   /* "smelly/rc/base.py":187
  *         send_response_to_client(data=data, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
- * 
+ *
  *     def send_error(self, error: str) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
 
   /* function exit code */
@@ -4008,7 +4008,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14AsyncResponder_4send_error(CYTHON_
 }
 
 /* "smelly/rc/base.py":206
- * 
+ *
  *     @property
  *     def args_count(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if not self.spec:
@@ -4059,7 +4059,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_12ArgsHandling_args_count(CYTHON_UNU
  *         if not self.spec:
  *             return 0             # <<<<<<<<<<<<<<
  *         return self.count
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_int_0);
@@ -4079,7 +4079,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_12ArgsHandling_args_count(CYTHON_UNU
  *         if not self.spec:
  *             return 0
  *         return self.count             # <<<<<<<<<<<<<<
- * 
+ *
  *     def as_go_completion_code(self, go_name: str) -> Iterator[str]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4090,7 +4090,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_12ArgsHandling_args_count(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/rc/base.py":206
- * 
+ *
  *     @property
  *     def args_count(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if not self.spec:
@@ -4111,7 +4111,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_4generator(__pyx_Coro
 
 /* "smelly/rc/base.py":211
  *         return self.count
- * 
+ *
  *     def as_go_completion_code(self, go_name: str) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c is not None:
@@ -4257,7 +4257,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_4generator(__pyx_Coro
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 211, __pyx_L1_error)
 
   /* "smelly/rc/base.py":212
- * 
+ *
  *     def as_go_completion_code(self, go_name: str) -> Iterator[str]:
  *         c = self.args_count             # <<<<<<<<<<<<<<
  *         if c is not None:
@@ -4337,7 +4337,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_4generator(__pyx_Coro
  *             yield f'{go_name}.StopCompletingAtArg = {c}'
  *         if self.completion:             # <<<<<<<<<<<<<<
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_completion); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -4349,7 +4349,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_4generator(__pyx_Coro
  *             yield f'{go_name}.StopCompletingAtArg = {c}'
  *         if self.completion:
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_completion); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
@@ -4431,14 +4431,14 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_4generator(__pyx_Coro
  *             yield f'{go_name}.StopCompletingAtArg = {c}'
  *         if self.completion:             # <<<<<<<<<<<<<<
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/rc/base.py":211
  *         return self.count
- * 
+ *
  *     def as_go_completion_code(self, go_name: str) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c is not None:
@@ -4468,7 +4468,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_7generator1(__pyx_Cor
 
 /* "smelly/rc/base.py":218
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c == 0:
@@ -4916,7 +4916,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_10as_go_code_5generat
 
 /* "smelly/rc/base.py":218
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c == 0:
@@ -5027,7 +5027,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_7generator1(__pyx_Cor
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 218, __pyx_L1_error)
 
   /* "smelly/rc/base.py":219
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:
  *         c = self.args_count             # <<<<<<<<<<<<<<
  *         if c == 0:
@@ -6073,11 +6073,11 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_7generator1(__pyx_Cor
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_9 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_9 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_9);
           __Pyx_INCREF(__pyx_t_5);
@@ -6691,7 +6691,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_7generator1(__pyx_Cor
  *                 yield f'{dest} = parse_key_val_args(args)'
  *                 return             # <<<<<<<<<<<<<<
  *         raise TypeError(f'Unknown args handling for cmd: {cmd_name}')
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_r = NULL;
@@ -6719,8 +6719,8 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_7generator1(__pyx_Cor
  *                 yield f'{dest} = parse_key_val_args(args)'
  *                 return
  *         raise TypeError(f'Unknown args handling for cmd: {cmd_name}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_10 = __Pyx_PyObject_FormatSimple(__pyx_cur_scope->__pyx_v_cmd_name, __pyx_empty_unicode); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 280, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
@@ -6737,7 +6737,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_7generator1(__pyx_Cor
 
   /* "smelly/rc/base.py":218
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c == 0:
@@ -6763,7 +6763,7 @@ static PyObject *__pyx_gb_6smelly_2rc_4base_12ArgsHandling_7generator1(__pyx_Cor
 }
 
 /* "smelly/rc/base.py":284
- * 
+ *
  * class StreamInFlight:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.stream_id = ''
@@ -6797,7 +6797,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight___init__(CYTHON_UNU
  *     def __init__(self) -> None:
  *         self.stream_id = ''             # <<<<<<<<<<<<<<
  *         self.tempfile: Optional[NamedTemporaryFile] = None
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_stream_id, __pyx_kp_s__2) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
 
@@ -6805,13 +6805,13 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight___init__(CYTHON_UNU
  *     def __init__(self) -> None:
  *         self.stream_id = ''
  *         self.tempfile: Optional[NamedTemporaryFile] = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def handle_data(self, stream_id: str, data: bytes) -> Union[AsyncResponse, NamedTemporaryFile]:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_tempfile, Py_None) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
 
   /* "smelly/rc/base.py":284
- * 
+ *
  * class StreamInFlight:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.stream_id = ''
@@ -6832,10 +6832,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight___init__(CYTHON_UNU
 
 /* "smelly/rc/base.py":288
  *         self.tempfile: Optional[NamedTemporaryFile] = None
- * 
+ *
  *     def handle_data(self, stream_id: str, data: bytes) -> Union[AsyncResponse, NamedTemporaryFile]:             # <<<<<<<<<<<<<<
  *         from ..remote_control import close_active_stream
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6940,10 +6940,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
   __Pyx_RefNannySetupContext("handle_data", 0);
 
   /* "smelly/rc/base.py":289
- * 
+ *
  *     def handle_data(self, stream_id: str, data: bytes) -> Union[AsyncResponse, NamedTemporaryFile]:
  *         from ..remote_control import close_active_stream             # <<<<<<<<<<<<<<
- * 
+ *
  *         if stream_id != self.stream_id:
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 289, __pyx_L1_error)
@@ -6963,7 +6963,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
 
   /* "smelly/rc/base.py":291
  *         from ..remote_control import close_active_stream
- * 
+ *
  *         if stream_id != self.stream_id:             # <<<<<<<<<<<<<<
  *             close_active_stream(self.stream_id)
  *             if self.tempfile is not None:
@@ -6975,7 +6975,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
   if (__pyx_t_3) {
 
     /* "smelly/rc/base.py":292
- * 
+ *
  *         if stream_id != self.stream_id:
  *             close_active_stream(self.stream_id)             # <<<<<<<<<<<<<<
  *             if self.tempfile is not None:
@@ -7074,7 +7074,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
 
     /* "smelly/rc/base.py":291
  *         from ..remote_control import close_active_stream
- * 
+ *
  *         if stream_id != self.stream_id:             # <<<<<<<<<<<<<<
  *             close_active_stream(self.stream_id)
  *             if self.tempfile is not None:
@@ -7329,7 +7329,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
  *         self.tempfile = None
  *         t.flush()             # <<<<<<<<<<<<<<
  *         return t
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_t, __pyx_n_s_flush); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 308, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -7354,8 +7354,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
  *         self.tempfile = None
  *         t.flush()
  *         return t             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_t);
@@ -7364,10 +7364,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
 
   /* "smelly/rc/base.py":288
  *         self.tempfile: Optional[NamedTemporaryFile] = None
- * 
+ *
  *     def handle_data(self, stream_id: str, data: bytes) -> Union[AsyncResponse, NamedTemporaryFile]:             # <<<<<<<<<<<<<<
  *         from ..remote_control import close_active_stream
- * 
+ *
  */
 
   /* function exit code */
@@ -7390,7 +7390,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_14StreamInFlight_2handle_data(CYTHON
 
 /* "smelly/rc/base.py":331
  *     reads_streaming_data: bool = False
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.desc = self.desc or self.short_desc
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')
@@ -7423,7 +7423,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand___init__(CYTHON_UNUS
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/rc/base.py":332
- * 
+ *
  *     def __init__(self) -> None:
  *         self.desc = self.desc or self.short_desc             # <<<<<<<<<<<<<<
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')
@@ -7454,7 +7454,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand___init__(CYTHON_UNUS
  *         self.desc = self.desc or self.short_desc
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')             # <<<<<<<<<<<<<<
  *         self.stream_in_flight = StreamInFlight()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_class); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 333, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7495,7 +7495,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand___init__(CYTHON_UNUS
  *         self.desc = self.desc or self.short_desc
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')
  *         self.stream_in_flight = StreamInFlight()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def fatal(self, msg: str) -> NoReturn:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_StreamInFlight); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 334, __pyx_L1_error)
@@ -7520,7 +7520,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand___init__(CYTHON_UNUS
 
   /* "smelly/rc/base.py":331
  *     reads_streaming_data: bool = False
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.desc = self.desc or self.short_desc
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')
@@ -7543,7 +7543,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand___init__(CYTHON_UNUS
 
 /* "smelly/rc/base.py":336
  *         self.stream_in_flight = StreamInFlight()
- * 
+ *
  *     def fatal(self, msg: str) -> NoReturn:             # <<<<<<<<<<<<<<
  *         if running_in_smelly():
  *             raise RemoteControlError(msg)
@@ -7632,7 +7632,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_2fatal(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("fatal", 0);
 
   /* "smelly/rc/base.py":337
- * 
+ *
  *     def fatal(self, msg: str) -> NoReturn:
  *         if running_in_smelly():             # <<<<<<<<<<<<<<
  *             raise RemoteControlError(msg)
@@ -7664,7 +7664,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_2fatal(CYTHON_UNUSED
  *         if running_in_smelly():
  *             raise RemoteControlError(msg)             # <<<<<<<<<<<<<<
  *         raise SystemExit(msg)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_RemoteControlError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 338, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -7688,7 +7688,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_2fatal(CYTHON_UNUSED
     __PYX_ERR(0, 338, __pyx_L1_error)
 
     /* "smelly/rc/base.py":337
- * 
+ *
  *     def fatal(self, msg: str) -> NoReturn:
  *         if running_in_smelly():             # <<<<<<<<<<<<<<
  *             raise RemoteControlError(msg)
@@ -7700,7 +7700,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_2fatal(CYTHON_UNUSED
  *         if running_in_smelly():
  *             raise RemoteControlError(msg)
  *         raise SystemExit(msg)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_default(self, name: str, missing: Any = None) -> Any:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_SystemExit, __pyx_v_msg); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 339, __pyx_L1_error)
@@ -7711,7 +7711,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_2fatal(CYTHON_UNUSED
 
   /* "smelly/rc/base.py":336
  *         self.stream_in_flight = StreamInFlight()
- * 
+ *
  *     def fatal(self, msg: str) -> NoReturn:             # <<<<<<<<<<<<<<
  *         if running_in_smelly():
  *             raise RemoteControlError(msg)
@@ -7731,7 +7731,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_2fatal(CYTHON_UNUSED
 
 /* "smelly/rc/base.py":341
  *         raise SystemExit(msg)
- * 
+ *
  *     def get_default(self, name: str, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         if self.options_spec:
  *             if self.defaults is None:
@@ -7840,7 +7840,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_4get_default(CYTHON_
   __Pyx_RefNannySetupContext("get_default", 0);
 
   /* "smelly/rc/base.py":342
- * 
+ *
  *     def get_default(self, name: str, missing: Any = None) -> Any:
  *         if self.options_spec:             # <<<<<<<<<<<<<<
  *             if self.defaults is None:
@@ -7931,7 +7931,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_4get_default(CYTHON_
  *                 self.defaults = get_defaults_from_seq(parse_option_spec(self.options_spec)[0])
  *             return self.defaults.get(name, missing)             # <<<<<<<<<<<<<<
  *         return missing
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_defaults); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 345, __pyx_L1_error)
@@ -7989,7 +7989,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_4get_default(CYTHON_
     goto __pyx_L0;
 
     /* "smelly/rc/base.py":342
- * 
+ *
  *     def get_default(self, name: str, missing: Any = None) -> Any:
  *         if self.options_spec:             # <<<<<<<<<<<<<<
  *             if self.defaults is None:
@@ -8001,7 +8001,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_4get_default(CYTHON_
  *                 self.defaults = get_defaults_from_seq(parse_option_spec(self.options_spec)[0])
  *             return self.defaults.get(name, missing)
  *         return missing             # <<<<<<<<<<<<<<
- * 
+ *
  *     def windows_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8011,7 +8011,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_4get_default(CYTHON_
 
   /* "smelly/rc/base.py":341
  *         raise SystemExit(msg)
- * 
+ *
  *     def get_default(self, name: str, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         if self.options_spec:
  *             if self.defaults is None:
@@ -8035,7 +8035,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_4get_default(CYTHON_
 
 /* "smelly/rc/base.py":348
  *         return missing
- * 
+ *
  *     def windows_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -8148,7 +8148,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_6windows_for_match_p
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/base.py":349
- * 
+ *
  *     def windows_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:
  *         if payload_get('all'):             # <<<<<<<<<<<<<<
  *             windows = list(boss.all_windows)
@@ -8190,7 +8190,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_6windows_for_match_p
     __pyx_t_2 = 0;
 
     /* "smelly/rc/base.py":349
- * 
+ *
  *     def windows_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:
  *         if payload_get('all'):             # <<<<<<<<<<<<<<
  *             windows = list(boss.all_windows)
@@ -8456,7 +8456,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_6windows_for_match_p
  *                 if not windows:
  *                     raise MatchError(payload_get('match'))             # <<<<<<<<<<<<<<
  *         return windows
- * 
+ *
  */
         __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_MatchError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 361, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
@@ -8520,7 +8520,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_6windows_for_match_p
  *                 if not windows:
  *                     raise MatchError(payload_get('match'))
  *         return windows             # <<<<<<<<<<<<<<
- * 
+ *
  *     def tabs_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Tab']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8530,7 +8530,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_6windows_for_match_p
 
   /* "smelly/rc/base.py":348
  *         return missing
- * 
+ *
  *     def windows_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -8556,7 +8556,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_6windows_for_match_p
 
 /* "smelly/rc/base.py":364
  *         return windows
- * 
+ *
  *     def tabs_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Tab']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             return list(boss.all_tabs)
@@ -8670,7 +8670,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_8tabs_for_match_payl
   __Pyx_RefNannySetupContext("tabs_for_match_payload", 0);
 
   /* "smelly/rc/base.py":365
- * 
+ *
  *     def tabs_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Tab']:
  *         if payload_get('all'):             # <<<<<<<<<<<<<<
  *             return list(boss.all_tabs)
@@ -8714,7 +8714,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_8tabs_for_match_payl
     goto __pyx_L0;
 
     /* "smelly/rc/base.py":365
- * 
+ *
  *     def tabs_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Tab']:
  *         if payload_get('all'):             # <<<<<<<<<<<<<<
  *             return list(boss.all_tabs)
@@ -9034,7 +9034,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_8tabs_for_match_payl
  *         if t:
  *             return [t]             # <<<<<<<<<<<<<<
  *         return []
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 379, __pyx_L1_error)
@@ -9059,7 +9059,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_8tabs_for_match_payl
  *         if t:
  *             return [t]
  *         return []             # <<<<<<<<<<<<<<
- * 
+ *
  *     def windows_for_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9071,7 +9071,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_8tabs_for_match_payl
 
   /* "smelly/rc/base.py":364
  *         return windows
- * 
+ *
  *     def tabs_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Tab']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             return list(boss.all_tabs)
@@ -9097,7 +9097,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_8tabs_for_match_payl
 
 /* "smelly/rc/base.py":382
  *         return []
- * 
+ *
  *     def windows_for_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -9212,7 +9212,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_10windows_for_payloa
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/base.py":383
- * 
+ *
  *     def windows_for_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:
  *         if payload_get('all'):             # <<<<<<<<<<<<<<
  *             windows = list(boss.all_windows)
@@ -9254,7 +9254,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_10windows_for_payloa
     __pyx_t_2 = 0;
 
     /* "smelly/rc/base.py":383
- * 
+ *
  *     def windows_for_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:
  *         if payload_get('all'):             # <<<<<<<<<<<<<<
  *             windows = list(boss.all_windows)
@@ -9654,7 +9654,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_10windows_for_payloa
  *                 for tab in tabs:
  *                     windows += list(tab)             # <<<<<<<<<<<<<<
  *         return windows
- * 
+ *
  */
         __pyx_t_1 = PySequence_List(__pyx_v_tab); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 397, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
@@ -9689,7 +9689,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_10windows_for_payloa
  *                 for tab in tabs:
  *                     windows += list(tab)
  *         return windows             # <<<<<<<<<<<<<<
- * 
+ *
  *     def create_async_responder(self, payload_get: PayloadGetType, window: Optional[Window]) -> AsyncResponder:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9699,7 +9699,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_10windows_for_payloa
 
   /* "smelly/rc/base.py":382
  *         return []
- * 
+ *
  *     def windows_for_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -9726,10 +9726,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_10windows_for_payloa
 
 /* "smelly/rc/base.py":400
  *         return windows
- * 
+ *
  *     def create_async_responder(self, payload_get: PayloadGetType, window: Optional[Window]) -> AsyncResponder:             # <<<<<<<<<<<<<<
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9822,10 +9822,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_12create_async_respo
   __Pyx_RefNannySetupContext("create_async_responder", 0);
 
   /* "smelly/rc/base.py":401
- * 
+ *
  *     def create_async_responder(self, payload_get: PayloadGetType, window: Optional[Window]) -> AsyncResponder:
  *         return AsyncResponder(payload_get, window)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9882,10 +9882,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_12create_async_respo
 
   /* "smelly/rc/base.py":400
  *         return windows
- * 
+ *
  *     def create_async_responder(self, payload_get: PayloadGetType, window: Optional[Window]) -> AsyncResponder:             # <<<<<<<<<<<<<<
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  */
 
   /* function exit code */
@@ -9904,10 +9904,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_12create_async_respo
 
 /* "smelly/rc/base.py":403
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10007,10 +10007,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_14message_to_smelly(
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/base.py":404
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:
  *         raise NotImplementedError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> ResponseType:
  */
   __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_builtin_NotImplementedError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 404, __pyx_L1_error)
@@ -10021,10 +10021,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_14message_to_smelly(
 
   /* "smelly/rc/base.py":403
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
 
   /* function exit code */
@@ -10039,10 +10039,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_14message_to_smelly(
 
 /* "smelly/rc/base.py":406
  *         raise NotImplementedError()
- * 
+ *
  *     def response_from_smelly(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10142,10 +10142,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_16response_from_smel
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/base.py":407
- * 
+ *
  *     def response_from_smelly(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> ResponseType:
  *         raise NotImplementedError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_builtin_NotImplementedError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 407, __pyx_L1_error)
@@ -10156,10 +10156,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_16response_from_smel
 
   /* "smelly/rc/base.py":406
  *         raise NotImplementedError()
- * 
+ *
  *     def response_from_smelly(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
 
   /* function exit code */
@@ -10174,10 +10174,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_16response_from_smel
 
 /* "smelly/rc/base.py":409
  *         raise NotImplementedError()
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10281,7 +10281,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_18cancel_async_reque
 
 /* "smelly/rc/base.py":412
  *         pass
- * 
+ *
  *     def handle_streamed_data(self, data: bytes, payload_get: PayloadGetType) -> Union[NamedTemporaryFile, AsyncResponse]:             # <<<<<<<<<<<<<<
  *         stream_id = payload_get('stream_id')
  *         if not stream_id or not isinstance(stream_id, str):
@@ -10386,7 +10386,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_20handle_streamed_da
   __Pyx_RefNannySetupContext("handle_streamed_data", 0);
 
   /* "smelly/rc/base.py":413
- * 
+ *
  *     def handle_streamed_data(self, data: bytes, payload_get: PayloadGetType) -> Union[NamedTemporaryFile, AsyncResponse]:
  *         stream_id = payload_get('stream_id')             # <<<<<<<<<<<<<<
  *         if not stream_id or not isinstance(stream_id, str):
@@ -10425,7 +10425,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_20handle_streamed_da
     __pyx_t_4 = __pyx_t_6;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_6 = PyString_Check(__pyx_v_stream_id); 
+  __pyx_t_6 = PyString_Check(__pyx_v_stream_id);
   __pyx_t_5 = ((!(__pyx_t_6 != 0)) != 0);
   __pyx_t_4 = __pyx_t_5;
   __pyx_L4_bool_binop_done:;
@@ -10436,7 +10436,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_20handle_streamed_da
  *         if not stream_id or not isinstance(stream_id, str):
  *             raise StreamError('No stream_id in rc payload')             # <<<<<<<<<<<<<<
  *         return self.stream_in_flight.handle_data(stream_id, data)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_StreamError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 415, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -10472,8 +10472,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_20handle_streamed_da
  *         if not stream_id or not isinstance(stream_id, str):
  *             raise StreamError('No stream_id in rc payload')
  *         return self.stream_in_flight.handle_data(stream_id, data)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_stream_in_flight); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 416, __pyx_L1_error)
@@ -10532,7 +10532,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_20handle_streamed_da
 
   /* "smelly/rc/base.py":412
  *         pass
- * 
+ *
  *     def handle_streamed_data(self, data: bytes, payload_get: PayloadGetType) -> Union[NamedTemporaryFile, AsyncResponse]:             # <<<<<<<<<<<<<<
  *         stream_id = payload_get('stream_id')
  *         if not stream_id or not isinstance(stream_id, str):
@@ -10554,11 +10554,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_13RemoteCommand_20handle_streamed_da
 }
 
 /* "smelly/rc/base.py":419
- * 
- * 
+ *
+ *
  * def cli_params_for(command: RemoteCommand) -> Tuple[Callable[[], str], str, str, str]:             # <<<<<<<<<<<<<<
  *     return (command.options_spec or '\n').format, command.args.spec, command.desc, f'{appname} @ {command.name}'
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10593,11 +10593,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_cli_params_for(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("cli_params_for", 0);
 
   /* "smelly/rc/base.py":420
- * 
+ *
  * def cli_params_for(command: RemoteCommand) -> Tuple[Callable[[], str], str, str, str]:
  *     return (command.options_spec or '\n').format, command.args.spec, command.desc, f'{appname} @ {command.name}'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_command, __pyx_n_s_options_spec); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 420, __pyx_L1_error)
@@ -10674,11 +10674,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_cli_params_for(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/rc/base.py":419
- * 
- * 
+ *
+ *
  * def cli_params_for(command: RemoteCommand) -> Tuple[Callable[[], str], str, str, str]:             # <<<<<<<<<<<<<<
  *     return (command.options_spec or '\n').format, command.args.spec, command.desc, f'{appname} @ {command.name}'
- * 
+ *
  */
 
   /* function exit code */
@@ -10698,8 +10698,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_cli_params_for(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/rc/base.py":423
- * 
- * 
+ *
+ *
  * def parse_subcommand_cli(command: RemoteCommand, args: ArgsType) -> Tuple[Any, ArgsType]:             # <<<<<<<<<<<<<<
  *     opts, items = parse_args(args[1:], *cli_params_for(command), result_class=command.options_class)
  *     if command.args.args_count is not None and command.args.args_count != len(items):
@@ -10792,7 +10792,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_2parse_subcommand_cli(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("parse_subcommand_cli", 0);
 
   /* "smelly/rc/base.py":424
- * 
+ *
  * def parse_subcommand_cli(command: RemoteCommand, args: ArgsType) -> Tuple[Any, ArgsType]:
  *     opts, items = parse_args(args[1:], *cli_params_for(command), result_class=command.options_class)             # <<<<<<<<<<<<<<
  *     if command.args.args_count is not None and command.args.args_count != len(items):
@@ -10852,11 +10852,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_2parse_subcommand_cli(CYTHON_UNUSED 
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_2);
@@ -10985,7 +10985,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_2parse_subcommand_cli(CYTHON_UNUSED 
  *             raise SystemExit(f'Unknown extra argument(s) supplied to {command.name}')
  *         raise SystemExit(f'Must specify exactly {command.args.args_count} argument(s) for {command.name}')             # <<<<<<<<<<<<<<
  *     return opts, items
- * 
+ *
  */
     __pyx_t_2 = PyTuple_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 428, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -11045,8 +11045,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_2parse_subcommand_cli(CYTHON_UNUSED 
  *             raise SystemExit(f'Unknown extra argument(s) supplied to {command.name}')
  *         raise SystemExit(f'Must specify exactly {command.args.args_count} argument(s) for {command.name}')
  *     return opts, items             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 429, __pyx_L1_error)
@@ -11062,8 +11062,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_2parse_subcommand_cli(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/rc/base.py":423
- * 
- * 
+ *
+ *
  * def parse_subcommand_cli(command: RemoteCommand, args: ArgsType) -> Tuple[Any, ArgsType]:             # <<<<<<<<<<<<<<
  *     opts, items = parse_args(args[1:], *cli_params_for(command), result_class=command.options_class)
  *     if command.args.args_count is not None and command.args.args_count != len(items):
@@ -11087,8 +11087,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_2parse_subcommand_cli(CYTHON_UNUSED 
 }
 
 /* "smelly/rc/base.py":432
- * 
- * 
+ *
+ *
  * def display_subcommand_help(func: RemoteCommand) -> None:             # <<<<<<<<<<<<<<
  *     with suppress(SystemExit):
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)
@@ -11134,11 +11134,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_4display_subcommand_help(CYTHON_UNUS
   __Pyx_RefNannySetupContext("display_subcommand_help", 0);
 
   /* "smelly/rc/base.py":433
- * 
+ *
  * def display_subcommand_help(func: RemoteCommand) -> None:
  *     with suppress(SystemExit):             # <<<<<<<<<<<<<<
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)
- * 
+ *
  */
   /*with:*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_suppress); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 433, __pyx_L1_error)
@@ -11193,8 +11193,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_4display_subcommand_help(CYTHON_UNUS
  * def display_subcommand_help(func: RemoteCommand) -> None:
  *     with suppress(SystemExit):
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_args); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 434, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -11296,11 +11296,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_4display_subcommand_help(CYTHON_UNUS
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
           /* "smelly/rc/base.py":433
- * 
+ *
  * def display_subcommand_help(func: RemoteCommand) -> None:
  *     with suppress(SystemExit):             # <<<<<<<<<<<<<<
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -11339,7 +11339,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_4display_subcommand_help(CYTHON_UNUS
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_15);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_15);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_15 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_15 = 0;
             __PYX_ERR(0, 433, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -11382,8 +11382,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_4display_subcommand_help(CYTHON_UNUS
   }
 
   /* "smelly/rc/base.py":432
- * 
- * 
+ *
+ *
  * def display_subcommand_help(func: RemoteCommand) -> None:             # <<<<<<<<<<<<<<
  *     with suppress(SystemExit):
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)
@@ -11411,11 +11411,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_4display_subcommand_help(CYTHON_UNUS
 }
 
 /* "smelly/rc/base.py":437
- * 
- * 
+ *
+ *
  * def command_for_name(cmd_name: str) -> RemoteCommand:             # <<<<<<<<<<<<<<
  *     from importlib import import_module
- * 
+ *
  */
 
 /* Python wrapper */
@@ -11462,10 +11462,10 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
   __Pyx_INCREF(__pyx_v_cmd_name);
 
   /* "smelly/rc/base.py":438
- * 
+ *
  * def command_for_name(cmd_name: str) -> RemoteCommand:
  *     from importlib import import_module             # <<<<<<<<<<<<<<
- * 
+ *
  *     cmd_name = cmd_name.replace('-', '_')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 438, __pyx_L1_error)
@@ -11485,7 +11485,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
 
   /* "smelly/rc/base.py":440
  *     from importlib import import_module
- * 
+ *
  *     cmd_name = cmd_name.replace('-', '_')             # <<<<<<<<<<<<<<
  *     try:
  *         m = import_module(f'smelly.rc.{cmd_name}')
@@ -11497,7 +11497,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
   __pyx_t_2 = 0;
 
   /* "smelly/rc/base.py":441
- * 
+ *
  *     cmd_name = cmd_name.replace('-', '_')
  *     try:             # <<<<<<<<<<<<<<
  *         m = import_module(f'smelly.rc.{cmd_name}')
@@ -11545,7 +11545,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
       __pyx_t_2 = 0;
 
       /* "smelly/rc/base.py":441
- * 
+ *
  *     cmd_name = cmd_name.replace('-', '_')
  *     try:             # <<<<<<<<<<<<<<
  *         m = import_module(f'smelly.rc.{cmd_name}')
@@ -11582,7 +11582,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
  *     except ImportError:
  *         raise KeyError(f'Unknown smelly remote control command: {cmd_name}')             # <<<<<<<<<<<<<<
  *     return cast(RemoteCommand, getattr(m, cmd_name))
- * 
+ *
  */
       __pyx_t_7 = __Pyx_PyObject_FormatSimple(__pyx_v_cmd_name, __pyx_empty_unicode); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 444, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_7);
@@ -11600,7 +11600,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
     __pyx_L5_except_error:;
 
     /* "smelly/rc/base.py":441
- * 
+ *
  *     cmd_name = cmd_name.replace('-', '_')
  *     try:             # <<<<<<<<<<<<<<
  *         m = import_module(f'smelly.rc.{cmd_name}')
@@ -11618,8 +11618,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
  *     except ImportError:
  *         raise KeyError(f'Unknown smelly remote control command: {cmd_name}')
  *     return cast(RemoteCommand, getattr(m, cmd_name))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_cast); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 445, __pyx_L1_error)
@@ -11682,11 +11682,11 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/rc/base.py":437
- * 
- * 
+ *
+ *
  * def command_for_name(cmd_name: str) -> RemoteCommand:             # <<<<<<<<<<<<<<
  *     from importlib import import_module
- * 
+ *
  */
 
   /* function exit code */
@@ -11709,8 +11709,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_6command_for_name(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/rc/base.py":448
- * 
- * 
+ *
+ *
  * def all_command_names() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     def ok(name: str) -> bool:
  *         root, _, ext = name.rpartition('.')
@@ -11731,7 +11731,7 @@ static PyObject *__pyx_pw_6smelly_2rc_4base_9all_command_names(PyObject *__pyx_s
 }
 
 /* "smelly/rc/base.py":449
- * 
+ *
  * def all_command_names() -> FrozenSet[str]:
  *     def ok(name: str) -> bool:             # <<<<<<<<<<<<<<
  *         root, _, ext = name.rpartition('.')
@@ -11785,7 +11785,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_17all_command_names_ok(CYTHON_UNUSED
  *     def ok(name: str) -> bool:
  *         root, _, ext = name.rpartition('.')             # <<<<<<<<<<<<<<
  *         return bool(ext in ('py', 'pyc', 'pyo') and root and root not in ('base', '__init__'))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CallUnboundCMethod1(&__pyx_umethod_PyString_Type_rpartition, __pyx_v_name, __pyx_kp_s__7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 450, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11799,13 +11799,13 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_17all_command_names_ok(CYTHON_UNUSED
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -11853,7 +11853,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_17all_command_names_ok(CYTHON_UNUSED
  *     def ok(name: str) -> bool:
  *         root, _, ext = name.rpartition('.')
  *         return bool(ext in ('py', 'pyc', 'pyo') and root and root not in ('base', '__init__'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     return frozenset({x.rpartition('.')[0] for x in filter(ok, list_smelly_resources('smelly.rc'))})
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11909,7 +11909,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_17all_command_names_ok(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/rc/base.py":449
- * 
+ *
  * def all_command_names() -> FrozenSet[str]:
  *     def ok(name: str) -> bool:             # <<<<<<<<<<<<<<
  *         root, _, ext = name.rpartition('.')
@@ -11935,8 +11935,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_17all_command_names_ok(CYTHON_UNUSED
 }
 
 /* "smelly/rc/base.py":448
- * 
- * 
+ *
+ *
  * def all_command_names() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     def ok(name: str) -> bool:
  *         root, _, ext = name.rpartition('.')
@@ -11960,7 +11960,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_8all_command_names(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("all_command_names", 0);
 
   /* "smelly/rc/base.py":449
- * 
+ *
  * def all_command_names() -> FrozenSet[str]:
  *     def ok(name: str) -> bool:             # <<<<<<<<<<<<<<
  *         root, _, ext = name.rpartition('.')
@@ -11979,7 +11979,7 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_8all_command_names(CYTHON_UNUSED PyO
 
   /* "smelly/rc/base.py":453
  *         return bool(ext in ('py', 'pyc', 'pyo') and root and root not in ('base', '__init__'))
- * 
+ *
  *     return frozenset({x.rpartition('.')[0] for x in filter(ok, list_smelly_resources('smelly.rc'))})             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12095,8 +12095,8 @@ static PyObject *__pyx_pf_6smelly_2rc_4base_8all_command_names(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly/rc/base.py":448
- * 
- * 
+ *
+ *
  * def all_command_names() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     def ok(name: str) -> bool:
  *         root, _, ext = name.rpartition('.')
@@ -13048,7 +13048,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.async_id: str = payload_get('async_id', missing='')
  *         self.peer_id: int = payload_get('peer_id', missing=0)             # <<<<<<<<<<<<<<
  *         self.window_id: int = getattr(window, 'id', 0)
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_peer_id); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -13081,25 +13081,25 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.desc = self.desc or self.short_desc
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')             # <<<<<<<<<<<<<<
  *         self.stream_in_flight = StreamInFlight()
- * 
+ *
  */
   __pyx_tuple__24 = PyTuple_Pack(2, __pyx_n_s__22, __pyx_kp_s__23); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 333, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
 
   /* "smelly/rc/base.py":433
- * 
+ *
  * def display_subcommand_help(func: RemoteCommand) -> None:
  *     with suppress(SystemExit):             # <<<<<<<<<<<<<<
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 433, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
 
   /* "smelly/rc/base.py":449
- * 
+ *
  * def all_command_names() -> FrozenSet[str]:
  *     def ok(name: str) -> bool:             # <<<<<<<<<<<<<<
  *         root, _, ext = name.rpartition('.')
@@ -13112,10 +13112,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":34
  *     name: str = ''
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_tuple__30 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
@@ -13124,10 +13124,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":37
  *         ...
- * 
+ *
  *     def __exit__(self, exc: Any, value: Any, tb: Any) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_tuple__32 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_exc, __pyx_n_s_value, __pyx_n_s_tb); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
@@ -13136,10 +13136,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":40
  *         ...
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_tuple__34 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
@@ -13148,10 +13148,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":43
  *         ...
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_tuple__36 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_data); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
@@ -13160,10 +13160,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":46
  *         ...
- * 
+ *
  *     def flush(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_tuple__38 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
@@ -13171,11 +13171,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_flush, 46, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 46, __pyx_L1_error)
 
   /* "smelly/rc/base.py":54
- * 
- * 
+ *
+ *
  * class MatchError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_tuple__40 = PyTuple_Pack(1, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
@@ -13183,10 +13183,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":57
  *     hide_traceback = True
- * 
+ *
  *     def __init__(self, expression: str, target: str = 'windows'):             # <<<<<<<<<<<<<<
  *         ValueError.__init__(self, f'No matching {target} for expression: {expression}')
- * 
+ *
  */
   __pyx_tuple__41 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_expression, __pyx_n_s_target); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__41);
@@ -13197,40 +13197,40 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__43);
 
   /* "smelly/rc/base.py":61
- * 
- * 
+ *
+ *
  * class OpacityError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_tuple__44 = PyTuple_Pack(1, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__44);
   __Pyx_GIVEREF(__pyx_tuple__44);
 
   /* "smelly/rc/base.py":65
- * 
- * 
+ *
+ *
  * class UnknownLayout(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_tuple__45 = PyTuple_Pack(1, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
   __Pyx_GIVEREF(__pyx_tuple__45);
 
   /* "smelly/rc/base.py":69
- * 
- * 
+ *
+ *
  * class StreamError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_tuple__46 = PyTuple_Pack(1, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
   __Pyx_GIVEREF(__pyx_tuple__46);
 
   /* "smelly/rc/base.py":74
- * 
+ *
  * class PayloadGetter:
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):             # <<<<<<<<<<<<<<
  *         self.payload = payload
@@ -13243,7 +13243,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":78
  *         self.cmd = cmd
- * 
+ *
  *     def __call__(self, key: str, opt_name: Optional[str] = None, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         ans = self.payload.get(key, payload_get)
  *         if ans is not payload_get:
@@ -13261,7 +13261,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * ArgsType = List[str]
  * ImageCompletion = CompletionSpec.from_string('type:file group:"Images"')             # <<<<<<<<<<<<<<
  * ImageCompletion.extensions = 'png', 'jpg', 'jpeg', 'webp', 'gif', 'bmp', 'tiff'
- * 
+ *
  */
   __pyx_tuple__52 = PyTuple_Pack(1, __pyx_kp_s_type_file_group_Images); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__52);
@@ -13271,26 +13271,26 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * ArgsType = List[str]
  * ImageCompletion = CompletionSpec.from_string('type:file group:"Images"')
  * ImageCompletion.extensions = 'png', 'jpg', 'jpeg', 'webp', 'gif', 'bmp', 'tiff'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_tuple__53 = PyTuple_Pack(7, __pyx_n_s_png_2, __pyx_n_s_jpg, __pyx_n_s_jpeg, __pyx_n_s_webp, __pyx_n_s_gif, __pyx_n_s_bmp, __pyx_n_s_tiff); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__53);
   __Pyx_GIVEREF(__pyx_tuple__53);
 
   /* "smelly/rc/base.py":172
- * 
- * 
+ *
+ *
  * class ParsingOfArgsFailed(ValueError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_tuple__54 = PyTuple_Pack(1, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__54);
   __Pyx_GIVEREF(__pyx_tuple__54);
 
   /* "smelly/rc/base.py":177
- * 
+ *
  * class AsyncResponder:
  *     def __init__(self, payload_get: PayloadGetType, window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *         self.async_id: str = payload_get('async_id', missing='')
@@ -13303,10 +13303,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":182
  *         self.window_id: int = getattr(window, 'id', 0)
- * 
+ *
  *     def send_data(self, data: Any) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
   __pyx_tuple__57 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_data, __pyx_n_s_send_response_to_client); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__57);
@@ -13315,10 +13315,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":187
  *         send_response_to_client(data=data, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
- * 
+ *
  *     def send_error(self, error: str) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_error, __pyx_n_s_send_response_to_client); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
@@ -13326,7 +13326,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_send_error, 187, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 187, __pyx_L1_error)
 
   /* "smelly/rc/base.py":206
- * 
+ *
  *     @property
  *     def args_count(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if not self.spec:
@@ -13339,7 +13339,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":211
  *         return self.count
- * 
+ *
  *     def as_go_completion_code(self, go_name: str) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c is not None:
@@ -13351,7 +13351,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":218
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c == 0:
@@ -13362,7 +13362,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(4, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__64, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_as_go_code, 218, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 218, __pyx_L1_error)
 
   /* "smelly/rc/base.py":284
- * 
+ *
  * class StreamInFlight:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.stream_id = ''
@@ -13375,10 +13375,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":288
  *         self.tempfile: Optional[NamedTemporaryFile] = None
- * 
+ *
  *     def handle_data(self, stream_id: str, data: bytes) -> Union[AsyncResponse, NamedTemporaryFile]:             # <<<<<<<<<<<<<<
  *         from ..remote_control import close_active_stream
- * 
+ *
  */
   __pyx_tuple__67 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_stream_id, __pyx_n_s_data, __pyx_n_s_close_active_stream, __pyx_n_s_t); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(0, 288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__67);
@@ -13387,7 +13387,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":331
  *     reads_streaming_data: bool = False
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.desc = self.desc or self.short_desc
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')
@@ -13399,7 +13399,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":336
  *         self.stream_in_flight = StreamInFlight()
- * 
+ *
  *     def fatal(self, msg: str) -> NoReturn:             # <<<<<<<<<<<<<<
  *         if running_in_smelly():
  *             raise RemoteControlError(msg)
@@ -13411,7 +13411,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":341
  *         raise SystemExit(msg)
- * 
+ *
  *     def get_default(self, name: str, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         if self.options_spec:
  *             if self.defaults is None:
@@ -13426,7 +13426,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":348
  *         return missing
- * 
+ *
  *     def windows_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -13438,7 +13438,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":364
  *         return windows
- * 
+ *
  *     def tabs_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Tab']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             return list(boss.all_tabs)
@@ -13450,7 +13450,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":382
  *         return []
- * 
+ *
  *     def windows_for_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -13462,10 +13462,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":400
  *         return windows
- * 
+ *
  *     def create_async_responder(self, payload_get: PayloadGetType, window: Optional[Window]) -> AsyncResponder:             # <<<<<<<<<<<<<<
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  */
   __pyx_tuple__82 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_payload_get, __pyx_n_s_window); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 400, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__82);
@@ -13474,10 +13474,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":403
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
   __pyx_tuple__84 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple__84)) __PYX_ERR(0, 403, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__84);
@@ -13486,10 +13486,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":406
  *         raise NotImplementedError()
- * 
+ *
  *     def response_from_smelly(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
   __pyx_tuple__86 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get); if (unlikely(!__pyx_tuple__86)) __PYX_ERR(0, 406, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__86);
@@ -13498,10 +13498,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":409
  *         raise NotImplementedError()
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_tuple__88 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get); if (unlikely(!__pyx_tuple__88)) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__88);
@@ -13510,7 +13510,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/base.py":412
  *         pass
- * 
+ *
  *     def handle_streamed_data(self, data: bytes, payload_get: PayloadGetType) -> Union[NamedTemporaryFile, AsyncResponse]:             # <<<<<<<<<<<<<<
  *         stream_id = payload_get('stream_id')
  *         if not stream_id or not isinstance(stream_id, str):
@@ -13521,11 +13521,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__91 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__90, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_handle_streamed_data, 412, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__91)) __PYX_ERR(0, 412, __pyx_L1_error)
 
   /* "smelly/rc/base.py":419
- * 
- * 
+ *
+ *
  * def cli_params_for(command: RemoteCommand) -> Tuple[Callable[[], str], str, str, str]:             # <<<<<<<<<<<<<<
  *     return (command.options_spec or '\n').format, command.args.spec, command.desc, f'{appname} @ {command.name}'
- * 
+ *
  */
   __pyx_tuple__92 = PyTuple_Pack(1, __pyx_n_s_command); if (unlikely(!__pyx_tuple__92)) __PYX_ERR(0, 419, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__92);
@@ -13533,8 +13533,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__93 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__92, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_cli_params_for, 419, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__93)) __PYX_ERR(0, 419, __pyx_L1_error)
 
   /* "smelly/rc/base.py":423
- * 
- * 
+ *
+ *
  * def parse_subcommand_cli(command: RemoteCommand, args: ArgsType) -> Tuple[Any, ArgsType]:             # <<<<<<<<<<<<<<
  *     opts, items = parse_args(args[1:], *cli_params_for(command), result_class=command.options_class)
  *     if command.args.args_count is not None and command.args.args_count != len(items):
@@ -13545,8 +13545,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__95 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__94, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_parse_subcommand_cli, 423, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__95)) __PYX_ERR(0, 423, __pyx_L1_error)
 
   /* "smelly/rc/base.py":432
- * 
- * 
+ *
+ *
  * def display_subcommand_help(func: RemoteCommand) -> None:             # <<<<<<<<<<<<<<
  *     with suppress(SystemExit):
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)
@@ -13557,11 +13557,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__97 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__96, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_display_subcommand_help, 432, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__97)) __PYX_ERR(0, 432, __pyx_L1_error)
 
   /* "smelly/rc/base.py":437
- * 
- * 
+ *
+ *
  * def command_for_name(cmd_name: str) -> RemoteCommand:             # <<<<<<<<<<<<<<
  *     from importlib import import_module
- * 
+ *
  */
   __pyx_tuple__98 = PyTuple_Pack(3, __pyx_n_s_cmd_name, __pyx_n_s_import_module, __pyx_n_s_m); if (unlikely(!__pyx_tuple__98)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__98);
@@ -13569,8 +13569,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__99 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__98, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_base_py, __pyx_n_s_command_for_name, 437, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__99)) __PYX_ERR(0, 437, __pyx_L1_error)
 
   /* "smelly/rc/base.py":448
- * 
- * 
+ *
+ *
  * def all_command_names() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     def ok(name: str) -> bool:
  *         root, _, ext = name.rpartition('.')
@@ -13909,7 +13909,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import tempfile             # <<<<<<<<<<<<<<
  * from contextlib import suppress
  * from dataclasses import dataclass, field
@@ -13920,7 +13920,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":5
- * 
+ *
  * import tempfile
  * from contextlib import suppress             # <<<<<<<<<<<<<<
  * from dataclasses import dataclass, field
@@ -13945,7 +13945,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from dataclasses import dataclass, field             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Any, Callable, Dict, FrozenSet, Iterable, Iterator, List, NoReturn, Optional, Set, Tuple, Type, Union, cast
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13972,7 +13972,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from dataclasses import dataclass, field
  * from typing import TYPE_CHECKING, Any, Callable, Dict, FrozenSet, Iterable, Iterator, List, NoReturn, Optional, Set, Tuple, Type, Union, cast             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.cli import CompletionSpec, get_defaults_from_seq, parse_args, parse_option_spec
  */
   __pyx_t_1 = PyList_New(15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -14089,7 +14089,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":9
  * from typing import TYPE_CHECKING, Any, Callable, Dict, FrozenSet, Iterable, Iterator, List, NoReturn, Optional, Set, Tuple, Type, Union, cast
- * 
+ *
  * from smelly.cli import CompletionSpec, get_defaults_from_seq, parse_args, parse_option_spec             # <<<<<<<<<<<<<<
  * from smelly.cli_stub import RCOptions as R
  * from smelly.constants import appname, list_smelly_resources, running_in_smelly
@@ -14130,7 +14130,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":10
- * 
+ *
  * from smelly.cli import CompletionSpec, get_defaults_from_seq, parse_args, parse_option_spec
  * from smelly.cli_stub import RCOptions as R             # <<<<<<<<<<<<<<
  * from smelly.constants import appname, list_smelly_resources, running_in_smelly
@@ -14155,7 +14155,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.cli_stub import RCOptions as R
  * from smelly.constants import appname, list_smelly_resources, running_in_smelly             # <<<<<<<<<<<<<<
  * from smelly.types import AsyncResponse
- * 
+ *
  */
   __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14189,7 +14189,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.cli_stub import RCOptions as R
  * from smelly.constants import appname, list_smelly_resources, running_in_smelly
  * from smelly.types import AsyncResponse             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -14208,7 +14208,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":14
  * from smelly.types import AsyncResponse
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.boss import Boss as B
  *     from smelly.tabs import Tab
@@ -14220,7 +14220,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/base.py":15
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.boss import Boss as B             # <<<<<<<<<<<<<<
  *     from smelly.tabs import Tab
@@ -14245,7 +14245,7 @@ if (!__Pyx_RefNanny) {
  *     from smelly.boss import Boss as B
  *     from smelly.tabs import Tab             # <<<<<<<<<<<<<<
  *     from smelly.window import Window as W
- * 
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -14265,7 +14265,7 @@ if (!__Pyx_RefNanny) {
  *     from smelly.boss import Boss as B
  *     from smelly.tabs import Tab
  *     from smelly.window import Window as W             # <<<<<<<<<<<<<<
- * 
+ *
  *     Window = W
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
@@ -14284,7 +14284,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/base.py":19
  *     from smelly.window import Window as W
- * 
+ *
  *     Window = W             # <<<<<<<<<<<<<<
  *     Boss = B
  *     Tab
@@ -14295,7 +14295,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/rc/base.py":20
- * 
+ *
  *     Window = W
  *     Boss = B             # <<<<<<<<<<<<<<
  *     Tab
@@ -14319,7 +14319,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/base.py":14
  * from smelly.types import AsyncResponse
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.boss import Boss as B
  *     from smelly.tabs import Tab
@@ -14332,7 +14332,7 @@ if (!__Pyx_RefNanny) {
  * else:
  *     Boss = Window = Tab = None             # <<<<<<<<<<<<<<
  * RCOptions = R
- * 
+ *
  */
   /*else*/ {
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_Boss, Py_None) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -14345,8 +14345,8 @@ if (!__Pyx_RefNanny) {
  * else:
  *     Boss = Window = Tab = None
  * RCOptions = R             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_R); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14354,11 +14354,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":27
- * 
- * 
+ *
+ *
  * class NoResponse:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_NoResponse, __pyx_n_s_NoResponse, (PyObject *) NULL, __pyx_n_s_smelly_rc_base, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14369,30 +14369,30 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":31
- * 
- * 
+ *
+ *
  * class NamedTemporaryFile:             # <<<<<<<<<<<<<<
  *     name: str = ''
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_NamedTemporaryFile, __pyx_n_s_NamedTemporaryFile, (PyObject *) NULL, __pyx_n_s_smelly_rc_base, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/rc/base.py":32
- * 
+ *
  * class NamedTemporaryFile:
  *     name: str = ''             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __enter__(self) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_name, __pyx_kp_s__2) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
 
   /* "smelly/rc/base.py":34
  *     name: str = ''
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14406,10 +14406,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":37
  *         ...
- * 
+ *
  *     def __exit__(self, exc: Any, value: Any, tb: Any) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -14435,10 +14435,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":40
  *         ...
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14452,10 +14452,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":43
  *         ...
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -14470,10 +14470,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":46
  *         ...
- * 
+ *
  *     def flush(self) -> None:             # <<<<<<<<<<<<<<
  *         ...
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14486,11 +14486,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/rc/base.py":31
- * 
- * 
+ *
+ *
  * class NamedTemporaryFile:             # <<<<<<<<<<<<<<
  *     name: str = ''
- * 
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_NamedTemporaryFile, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -14499,11 +14499,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":50
- * 
- * 
+ *
+ *
  * class RemoteControlError(Exception):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14523,11 +14523,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":54
- * 
- * 
+ *
+ *
  * class MatchError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__40); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14535,20 +14535,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/base.py":55
- * 
+ *
  * class MatchError(ValueError):
  *     hide_traceback = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, expression: str, target: str = 'windows'):
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_hide_traceback, Py_True) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
 
   /* "smelly/rc/base.py":57
  *     hide_traceback = True
- * 
+ *
  *     def __init__(self, expression: str, target: str = 'windows'):             # <<<<<<<<<<<<<<
  *         ValueError.__init__(self, f'No matching {target} for expression: {expression}')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14563,11 +14563,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/base.py":54
- * 
- * 
+ *
+ *
  * class MatchError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_MatchError, __pyx_tuple__40, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -14577,11 +14577,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":61
- * 
- * 
+ *
+ *
  * class OpacityError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__44); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14589,20 +14589,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/base.py":62
- * 
+ *
  * class OpacityError(ValueError):
  *     hide_traceback = True             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_hide_traceback, Py_True) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
 
   /* "smelly/rc/base.py":61
- * 
- * 
+ *
+ *
  * class OpacityError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_OpacityError, __pyx_tuple__44, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -14612,11 +14612,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":65
- * 
- * 
+ *
+ *
  * class UnknownLayout(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__45); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14624,20 +14624,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/base.py":66
- * 
+ *
  * class UnknownLayout(ValueError):
  *     hide_traceback = True             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_hide_traceback, Py_True) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
 
   /* "smelly/rc/base.py":65
- * 
- * 
+ *
+ *
  * class UnknownLayout(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_UnknownLayout, __pyx_tuple__45, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -14647,11 +14647,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":69
- * 
- * 
+ *
+ *
  * class StreamError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__46); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14659,20 +14659,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/base.py":70
- * 
+ *
  * class StreamError(ValueError):
  *     hide_traceback = True             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_hide_traceback, Py_True) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
 
   /* "smelly/rc/base.py":69
- * 
- * 
+ *
+ *
  * class StreamError(ValueError):             # <<<<<<<<<<<<<<
  *     hide_traceback = True
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_StreamError, __pyx_tuple__46, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -14682,8 +14682,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":73
- * 
- * 
+ *
+ *
  * class PayloadGetter:             # <<<<<<<<<<<<<<
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):
  *         self.payload = payload
@@ -14692,7 +14692,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/rc/base.py":74
- * 
+ *
  * class PayloadGetter:
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):             # <<<<<<<<<<<<<<
  *         self.payload = payload
@@ -14728,7 +14728,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":78
  *         self.cmd = cmd
- * 
+ *
  *     def __call__(self, key: str, opt_name: Optional[str] = None, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         ans = self.payload.get(key, payload_get)
  *         if ans is not payload_get:
@@ -14760,8 +14760,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/rc/base.py":73
- * 
- * 
+ *
+ *
  * class PayloadGetter:             # <<<<<<<<<<<<<<
  *     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):
  *         self.payload = payload
@@ -14773,8 +14773,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":85
- * 
- * 
+ *
+ *
  * no_response = NoResponse()             # <<<<<<<<<<<<<<
  * payload_get = object()
  * ResponseType = Union[bool, str, None, NoResponse, AsyncResponse]
@@ -14788,7 +14788,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/rc/base.py":86
- * 
+ *
  * no_response = NoResponse()
  * payload_get = object()             # <<<<<<<<<<<<<<
  * ResponseType = Union[bool, str, None, NoResponse, AsyncResponse]
@@ -14999,7 +14999,7 @@ if (!__Pyx_RefNanny) {
  * ArgsType = List[str]
  * ImageCompletion = CompletionSpec.from_string('type:file group:"Images"')             # <<<<<<<<<<<<<<
  * ImageCompletion.extensions = 'png', 'jpg', 'jpeg', 'webp', 'gif', 'bmp', 'tiff'
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_CompletionSpec); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -15016,8 +15016,8 @@ if (!__Pyx_RefNanny) {
  * ArgsType = List[str]
  * ImageCompletion = CompletionSpec.from_string('type:file group:"Images"')
  * ImageCompletion.extensions = 'png', 'jpg', 'jpeg', 'webp', 'gif', 'bmp', 'tiff'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ImageCompletion); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -15025,8 +15025,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/base.py":97
- * 
- * 
+ *
+ *
  * MATCH_WINDOW_OPTION = '''\             # <<<<<<<<<<<<<<
  * --match -m
  * The window to match. Match specifications are of the form: :italic:`field:query`.
@@ -15043,11 +15043,11 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_MATCH_TAB_OPTION, __pyx_kp_s_match_m_The_tab_to_match_Match) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
 
   /* "smelly/rc/base.py":172
- * 
- * 
+ *
+ *
  * class ParsingOfArgsFailed(ValueError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_5 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__54); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -15061,8 +15061,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/base.py":176
- * 
- * 
+ *
+ *
  * class AsyncResponder:             # <<<<<<<<<<<<<<
  *     def __init__(self, payload_get: PayloadGetType, window: Optional[Window]) -> None:
  *         self.async_id: str = payload_get('async_id', missing='')
@@ -15071,7 +15071,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/rc/base.py":177
- * 
+ *
  * class AsyncResponder:
  *     def __init__(self, payload_get: PayloadGetType, window: Optional[Window]) -> None:             # <<<<<<<<<<<<<<
  *         self.async_id: str = payload_get('async_id', missing='')
@@ -15103,10 +15103,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":182
  *         self.window_id: int = getattr(window, 'id', 0)
- * 
+ *
  *     def send_data(self, data: Any) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -15124,10 +15124,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":187
  *         send_response_to_client(data=data, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
- * 
+ *
  *     def send_error(self, error: str) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.remote_control import send_response_to_client
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -15141,8 +15141,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":176
- * 
- * 
+ *
+ *
  * class AsyncResponder:             # <<<<<<<<<<<<<<
  *     def __init__(self, payload_get: PayloadGetType, window: Optional[Window]) -> None:
  *         self.async_id: str = payload_get('async_id', missing='')
@@ -15154,7 +15154,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/base.py":194
- * 
+ *
  * @dataclass(frozen=True)
  * class ArgsHandling:             # <<<<<<<<<<<<<<
  *     json_field: str = ''
@@ -15244,7 +15244,7 @@ if (!__Pyx_RefNanny) {
  *     first_rest: Optional[Tuple[str, str]] = None
  *     special_parse: str = ''             # <<<<<<<<<<<<<<
  *     args_choices: Optional[Callable[[], Iterable[str]]] = None
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_special_parse, __pyx_kp_s__2) < 0) __PYX_ERR(0, 202, __pyx_L1_error)
 
@@ -15252,13 +15252,13 @@ if (!__Pyx_RefNanny) {
  *     first_rest: Optional[Tuple[str, str]] = None
  *     special_parse: str = ''
  *     args_choices: Optional[Callable[[], Iterable[str]]] = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_args_choices, Py_None) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
 
   /* "smelly/rc/base.py":206
- * 
+ *
  *     @property
  *     def args_count(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if not self.spec:
@@ -15280,7 +15280,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":205
  *     args_choices: Optional[Callable[[], Iterable[str]]] = None
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def args_count(self) -> Optional[int]:
  *         if not self.spec:
@@ -15293,7 +15293,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":211
  *         return self.count
- * 
+ *
  *     def as_go_completion_code(self, go_name: str) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c is not None:
@@ -15317,7 +15317,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":218
  *             yield from self.completion.as_go_code(go_name + '.ArgCompleter', ' = ')
- * 
+ *
  *     def as_go_code(self, cmd_name: str, field_types: Dict[str, str], handled_fields: Set[str]) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *         c = self.args_count
  *         if c == 0:
@@ -15363,8 +15363,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/base.py":193
- * 
- * 
+ *
+ *
  * @dataclass(frozen=True)             # <<<<<<<<<<<<<<
  * class ArgsHandling:
  *     json_field: str = ''
@@ -15380,7 +15380,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":194
- * 
+ *
  * @dataclass(frozen=True)
  * class ArgsHandling:             # <<<<<<<<<<<<<<
  *     json_field: str = ''
@@ -15409,8 +15409,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/base.py":283
- * 
- * 
+ *
+ *
  * class StreamInFlight:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.stream_id = ''
@@ -15419,7 +15419,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/rc/base.py":284
- * 
+ *
  * class StreamInFlight:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.stream_id = ''
@@ -15437,10 +15437,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":288
  *         self.tempfile: Optional[NamedTemporaryFile] = None
- * 
+ *
  *     def handle_data(self, stream_id: str, data: bytes) -> Union[AsyncResponse, NamedTemporaryFile]:             # <<<<<<<<<<<<<<
  *         from ..remote_control import close_active_stream
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 288, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -15474,8 +15474,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/rc/base.py":283
- * 
- * 
+ *
+ *
  * class StreamInFlight:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.stream_id = ''
@@ -15487,8 +15487,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/base.py":312
- * 
- * 
+ *
+ *
  * class RemoteCommand:             # <<<<<<<<<<<<<<
  *     Args = ArgsHandling
  *     CompletionSpec = CompletionSpec
@@ -15497,11 +15497,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/rc/base.py":313
- * 
+ *
  * class RemoteCommand:
  *     Args = ArgsHandling             # <<<<<<<<<<<<<<
  *     CompletionSpec = CompletionSpec
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_ArgsHandling); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 313, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -15512,7 +15512,7 @@ if (!__Pyx_RefNanny) {
  * class RemoteCommand:
  *     Args = ArgsHandling
  *     CompletionSpec = CompletionSpec             # <<<<<<<<<<<<<<
- * 
+ *
  *     name: str = ''
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_CompletionSpec);
@@ -15523,7 +15523,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":316
  *     CompletionSpec = CompletionSpec
- * 
+ *
  *     name: str = ''             # <<<<<<<<<<<<<<
  *     short_desc: str = ''
  *     desc: str = ''
@@ -15531,7 +15531,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_name, __pyx_kp_s__2) < 0) __PYX_ERR(0, 316, __pyx_L1_error)
 
   /* "smelly/rc/base.py":317
- * 
+ *
  *     name: str = ''
  *     short_desc: str = ''             # <<<<<<<<<<<<<<
  *     desc: str = ''
@@ -15675,7 +15675,7 @@ if (!__Pyx_RefNanny) {
  *     argspec = args_count = args_completion = ArgsHandling()
  *     field_to_option_map: Optional[Dict[str, str]] = None             # <<<<<<<<<<<<<<
  *     reads_streaming_data: bool = False
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_field_to_option_map, Py_None) < 0) __PYX_ERR(0, 328, __pyx_L1_error)
 
@@ -15683,14 +15683,14 @@ if (!__Pyx_RefNanny) {
  *     argspec = args_count = args_completion = ArgsHandling()
  *     field_to_option_map: Optional[Dict[str, str]] = None
  *     reads_streaming_data: bool = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_reads_streaming_data, Py_False) < 0) __PYX_ERR(0, 329, __pyx_L1_error)
 
   /* "smelly/rc/base.py":331
  *     reads_streaming_data: bool = False
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.desc = self.desc or self.short_desc
  *         self.name = self.__class__.__module__.split('.')[-1].replace('_', '-')
@@ -15707,7 +15707,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":336
  *         self.stream_in_flight = StreamInFlight()
- * 
+ *
  *     def fatal(self, msg: str) -> NoReturn:             # <<<<<<<<<<<<<<
  *         if running_in_smelly():
  *             raise RemoteControlError(msg)
@@ -15728,7 +15728,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":341
  *         raise SystemExit(msg)
- * 
+ *
  *     def get_default(self, name: str, missing: Any = None) -> Any:             # <<<<<<<<<<<<<<
  *         if self.options_spec:
  *             if self.defaults is None:
@@ -15754,7 +15754,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":348
  *         return missing
- * 
+ *
  *     def windows_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -15789,7 +15789,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":364
  *         return windows
- * 
+ *
  *     def tabs_for_match_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Tab']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             return list(boss.all_tabs)
@@ -15824,7 +15824,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":382
  *         return []
- * 
+ *
  *     def windows_for_payload(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> List['Window']:             # <<<<<<<<<<<<<<
  *         if payload_get('all'):
  *             windows = list(boss.all_windows)
@@ -15859,10 +15859,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":400
  *         return windows
- * 
+ *
  *     def create_async_responder(self, payload_get: PayloadGetType, window: Optional[Window]) -> AsyncResponder:             # <<<<<<<<<<<<<<
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 400, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -15893,10 +15893,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":403
  *         return AsyncResponder(payload_get, window)
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 403, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -15925,10 +15925,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":406
  *         raise NotImplementedError()
- * 
+ *
  *     def response_from_smelly(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 406, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -15957,10 +15957,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":409
  *         raise NotImplementedError()
- * 
+ *
  *     def cancel_async_request(self, boss: 'Boss', window: Optional['Window'], payload_get: PayloadGetType) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -15986,7 +15986,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/base.py":412
  *         pass
- * 
+ *
  *     def handle_streamed_data(self, data: bytes, payload_get: PayloadGetType) -> Union[NamedTemporaryFile, AsyncResponse]:             # <<<<<<<<<<<<<<
  *         stream_id = payload_get('stream_id')
  *         if not stream_id or not isinstance(stream_id, str):
@@ -16026,8 +16026,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/rc/base.py":312
- * 
- * 
+ *
+ *
  * class RemoteCommand:             # <<<<<<<<<<<<<<
  *     Args = ArgsHandling
  *     CompletionSpec = CompletionSpec
@@ -16039,11 +16039,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/base.py":419
- * 
- * 
+ *
+ *
  * def cli_params_for(command: RemoteCommand) -> Tuple[Callable[[], str], str, str, str]:             # <<<<<<<<<<<<<<
  *     return (command.options_spec or '\n').format, command.args.spec, command.desc, f'{appname} @ {command.name}'
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 419, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -16097,8 +16097,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":423
- * 
- * 
+ *
+ *
  * def parse_subcommand_cli(command: RemoteCommand, args: ArgsType) -> Tuple[Any, ArgsType]:             # <<<<<<<<<<<<<<
  *     opts, items = parse_args(args[1:], *cli_params_for(command), result_class=command.options_class)
  *     if command.args.args_count is not None and command.args.args_count != len(items):
@@ -16141,8 +16141,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/rc/base.py":432
- * 
- * 
+ *
+ *
  * def display_subcommand_help(func: RemoteCommand) -> None:             # <<<<<<<<<<<<<<
  *     with suppress(SystemExit):
  *         parse_args(['--help'], (func.options_spec or '\n').format, func.args.spec, func.desc, func.name)
@@ -16162,11 +16162,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/base.py":437
- * 
- * 
+ *
+ *
  * def command_for_name(cmd_name: str) -> RemoteCommand:             # <<<<<<<<<<<<<<
  *     from importlib import import_module
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -16183,8 +16183,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/rc/base.py":448
- * 
- * 
+ *
+ *
  * def all_command_names() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     def ok(name: str) -> bool:
  *         root, _, ext = name.rpartition('.')
@@ -16208,7 +16208,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/base.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

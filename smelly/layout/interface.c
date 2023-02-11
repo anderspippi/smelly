@@ -1566,7 +1566,7 @@ static PyObject *__pyx_codeobj__8;
 
 /* "smelly/layout/interface.py":29
  *     cache: Dict[KeyType, Layout] = {}
- * 
+ *
  *     def __call__(self, name: str, os_window_id: int, tab_id: int, layout_opts: str = '') -> Layout:             # <<<<<<<<<<<<<<
  *         key = name, os_window_id, tab_id, layout_opts
  *         ans = create_layout_object_for.cache.get(key)
@@ -1701,7 +1701,7 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_21CreateLayoutObjectFor___c
   __Pyx_INCREF(__pyx_v_layout_opts);
 
   /* "smelly/layout/interface.py":30
- * 
+ *
  *     def __call__(self, name: str, os_window_id: int, tab_id: int, layout_opts: str = '') -> Layout:
  *         key = name, os_window_id, tab_id, layout_opts             # <<<<<<<<<<<<<<
  *         ans = create_layout_object_for.cache.get(key)
@@ -1790,11 +1790,11 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_21CreateLayoutObjectFor___c
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_3);
@@ -1838,7 +1838,7 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_21CreateLayoutObjectFor___c
  *             name, layout_opts = name.partition(':')[::2]
  *             ans = create_layout_object_for.cache[key] = all_layouts[name](os_window_id, tab_id, layout_opts)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_all_layouts); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -1917,8 +1917,8 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_21CreateLayoutObjectFor___c
  *             name, layout_opts = name.partition(':')[::2]
  *             ans = create_layout_object_for.cache[key] = all_layouts[name](os_window_id, tab_id, layout_opts)
  *         return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -1927,7 +1927,7 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_21CreateLayoutObjectFor___c
 
   /* "smelly/layout/interface.py":29
  *     cache: Dict[KeyType, Layout] = {}
- * 
+ *
  *     def __call__(self, name: str, os_window_id: int, tab_id: int, layout_opts: str = '') -> Layout:             # <<<<<<<<<<<<<<
  *         key = name, os_window_id, tab_id, layout_opts
  *         ans = create_layout_object_for.cache.get(key)
@@ -1952,8 +1952,8 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_21CreateLayoutObjectFor___c
 }
 
 /* "smelly/layout/interface.py":41
- * 
- * 
+ *
+ *
  * def evict_cached_layouts(tab_id: int) -> None:             # <<<<<<<<<<<<<<
  *     remove = [key for key in create_layout_object_for.cache if key[2] == tab_id]
  *     for key in remove:
@@ -1991,7 +1991,7 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_evict_cached_layouts(CYTHON
   __Pyx_RefNannySetupContext("evict_cached_layouts", 0);
 
   /* "smelly/layout/interface.py":42
- * 
+ *
  * def evict_cached_layouts(tab_id: int) -> None:
  *     remove = [key for key in create_layout_object_for.cache if key[2] == tab_id]             # <<<<<<<<<<<<<<
  *     for key in remove:
@@ -2101,8 +2101,8 @@ static PyObject *__pyx_pf_6smelly_6layout_9interface_evict_cached_layouts(CYTHON
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/interface.py":41
- * 
- * 
+ *
+ *
  * def evict_cached_layouts(tab_id: int) -> None:             # <<<<<<<<<<<<<<
  *     remove = [key for key in create_layout_object_for.cache if key[2] == tab_id]
  *     for key in remove:
@@ -2248,7 +2248,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/interface.py":29
  *     cache: Dict[KeyType, Layout] = {}
- * 
+ *
  *     def __call__(self, name: str, os_window_id: int, tab_id: int, layout_opts: str = '') -> Layout:             # <<<<<<<<<<<<<<
  *         key = name, os_window_id, tab_id, layout_opts
  *         ans = create_layout_object_for.cache.get(key)
@@ -2262,8 +2262,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
 
   /* "smelly/layout/interface.py":41
- * 
- * 
+ *
+ *
  * def evict_cached_layouts(tab_id: int) -> None:             # <<<<<<<<<<<<<<
  *     remove = [key for key in create_layout_object_for.cache if key[2] == tab_id]
  *     for key in remove:
@@ -2556,9 +2556,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/interface.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Dict, Tuple, Type             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import Layout
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2591,7 +2591,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/interface.py":6
  * from typing import Dict, Tuple, Type
- * 
+ *
  * from .base import Layout             # <<<<<<<<<<<<<<
  * from .grid import Grid
  * from .splits import Splits
@@ -2611,7 +2611,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/interface.py":7
- * 
+ *
  * from .base import Layout
  * from .grid import Grid             # <<<<<<<<<<<<<<
  * from .splits import Splits
@@ -2678,7 +2678,7 @@ if (!__Pyx_RefNanny) {
  * from .stack import Stack
  * from .tall import Fat, Tall             # <<<<<<<<<<<<<<
  * from .vertical import Horizontal, Vertical
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2705,7 +2705,7 @@ if (!__Pyx_RefNanny) {
  * from .stack import Stack
  * from .tall import Fat, Tall
  * from .vertical import Horizontal, Vertical             # <<<<<<<<<<<<<<
- * 
+ *
  * all_layouts: Dict[str, Type[Layout]] = {
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -2730,7 +2730,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/interface.py":14
- * 
+ *
  * all_layouts: Dict[str, Type[Layout]] = {
  *     Stack.name: Stack,             # <<<<<<<<<<<<<<
  *     Tall.name: Tall,
@@ -2844,7 +2844,7 @@ if (!__Pyx_RefNanny) {
  *     Grid.name: Grid,
  *     Splits.name: Splits,             # <<<<<<<<<<<<<<
  * }
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Splits); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2861,10 +2861,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/interface.py":23
  * }
- * 
+ *
  * KeyType = Tuple[str, int, int, str]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Tuple); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2890,20 +2890,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/interface.py":26
- * 
- * 
+ *
+ *
  * class CreateLayoutObjectFor:             # <<<<<<<<<<<<<<
  *     cache: Dict[KeyType, Layout] = {}
- * 
+ *
  */
   __pyx_t_3 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_CreateLayoutObjectFor, __pyx_n_s_CreateLayoutObjectFor, (PyObject *) NULL, __pyx_n_s_smelly_layout_interface, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/layout/interface.py":27
- * 
+ *
  * class CreateLayoutObjectFor:
  *     cache: Dict[KeyType, Layout] = {}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, name: str, os_window_id: int, tab_id: int, layout_opts: str = '') -> Layout:
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
@@ -2913,7 +2913,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/interface.py":29
  *     cache: Dict[KeyType, Layout] = {}
- * 
+ *
  *     def __call__(self, name: str, os_window_id: int, tab_id: int, layout_opts: str = '') -> Layout:             # <<<<<<<<<<<<<<
  *         key = name, os_window_id, tab_id, layout_opts
  *         ans = create_layout_object_for.cache.get(key)
@@ -2937,11 +2937,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/interface.py":26
- * 
- * 
+ *
+ *
  * class CreateLayoutObjectFor:             # <<<<<<<<<<<<<<
  *     cache: Dict[KeyType, Layout] = {}
- * 
+ *
  */
   __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_CreateLayoutObjectFor, __pyx_empty_tuple, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2950,11 +2950,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/interface.py":38
- * 
- * 
+ *
+ *
  * create_layout_object_for = CreateLayoutObjectFor()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_CreateLayoutObjectFor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2965,8 +2965,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/interface.py":41
- * 
- * 
+ *
+ *
  * def evict_cached_layouts(tab_id: int) -> None:             # <<<<<<<<<<<<<<
  *     remove = [key for key in create_layout_object_for.cache if key[2] == tab_id]
  *     for key in remove:
@@ -2985,7 +2985,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/layout/interface.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);

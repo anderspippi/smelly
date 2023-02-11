@@ -970,8 +970,8 @@ struct __pyx_obj_6smelly_6launch___pyx_scope_struct__tab_for_window;
 struct __pyx_obj_6smelly_6launch___pyx_scope_struct_1_parse_message;
 
 /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -984,11 +984,11 @@ struct __pyx_obj_6smelly_6launch___pyx_scope_struct__tab_for_window {
 
 
 /* "smelly/launch.py":665
- * 
- * 
+ *
+ *
  * def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64decode
- * 
+ *
  */
 struct __pyx_obj_6smelly_6launch___pyx_scope_struct_1_parse_message {
   PyObject_HEAD
@@ -2863,7 +2863,7 @@ static PyObject *__pyx_codeobj__82;
 /* Late includes */
 
 /* "smelly/launch.py":35
- * 
+ *
  * @run_once
  * def options_spec() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -2902,7 +2902,7 @@ static PyObject *__pyx_pf_6smelly_6launch_options_spec(CYTHON_UNUSED PyObject *_
   goto __pyx_L0;
 
   /* "smelly/launch.py":35
- * 
+ *
  * @run_once
  * def options_spec() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -2917,8 +2917,8 @@ static PyObject *__pyx_pf_6smelly_6launch_options_spec(CYTHON_UNUSED PyObject *_
 }
 
 /* "smelly/launch.py":303
- * 
- * 
+ *
+ *
  * def parse_launch_args(args: Optional[Sequence[str]] = None) -> LaunchSpec:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -3006,7 +3006,7 @@ static PyObject *__pyx_pf_6smelly_6launch_2parse_launch_args(CYTHON_UNUSED PyObj
   __Pyx_INCREF(__pyx_v_args);
 
   /* "smelly/launch.py":304
- * 
+ *
  * def parse_launch_args(args: Optional[Sequence[str]] = None) -> LaunchSpec:
  *     args = list(args or ())             # <<<<<<<<<<<<<<
  *     try:
@@ -3094,11 +3094,11 @@ static PyObject *__pyx_pf_6smelly_6launch_2parse_launch_args(CYTHON_UNUSED PyObj
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_1);
         __Pyx_INCREF(__pyx_t_3);
@@ -3175,7 +3175,7 @@ static PyObject *__pyx_pf_6smelly_6launch_2parse_launch_args(CYTHON_UNUSED PyObj
  *     except SystemExit as e:
  *         raise ValueError from e             # <<<<<<<<<<<<<<
  *     return LaunchSpec(opts, args)
- * 
+ *
  */
       __Pyx_Raise(__pyx_builtin_ValueError, 0, 0, __pyx_v_e);
       __PYX_ERR(0, 309, __pyx_L7_except_error)
@@ -3202,8 +3202,8 @@ static PyObject *__pyx_pf_6smelly_6launch_2parse_launch_args(CYTHON_UNUSED PyObj
  *     except SystemExit as e:
  *         raise ValueError from e
  *     return LaunchSpec(opts, args)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_LaunchSpec); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 310, __pyx_L1_error)
@@ -3258,8 +3258,8 @@ static PyObject *__pyx_pf_6smelly_6launch_2parse_launch_args(CYTHON_UNUSED PyObj
   goto __pyx_L0;
 
   /* "smelly/launch.py":303
- * 
- * 
+ *
+ *
  * def parse_launch_args(args: Optional[Sequence[str]] = None) -> LaunchSpec:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -3283,8 +3283,8 @@ static PyObject *__pyx_pf_6smelly_6launch_2parse_launch_args(CYTHON_UNUSED PyObj
 }
 
 /* "smelly/launch.py":313
- * 
- * 
+ *
+ *
  * def get_env(opts: LaunchCLIOptions, active_child: Optional[Child] = None) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     env: Dict[str, str] = {}
  *     if opts.copy_env and active_child:
@@ -3386,7 +3386,7 @@ static PyObject *__pyx_pf_6smelly_6launch_4get_env(CYTHON_UNUSED PyObject *__pyx
   __Pyx_RefNannySetupContext("get_env", 0);
 
   /* "smelly/launch.py":314
- * 
+ *
  * def get_env(opts: LaunchCLIOptions, active_child: Optional[Child] = None) -> Dict[str, str]:
  *     env: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  *     if opts.copy_env and active_child:
@@ -3597,11 +3597,11 @@ static PyObject *__pyx_pf_6smelly_6launch_4get_env(CYTHON_UNUSED PyObject *__pyx
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_10 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_10 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_10);
         __Pyx_INCREF(__pyx_t_8);
@@ -3643,7 +3643,7 @@ static PyObject *__pyx_pf_6smelly_6launch_4get_env(CYTHON_UNUSED PyObject *__pyx
  *         for k, v in parse_env(x, env):
  *             env[k] = v             # <<<<<<<<<<<<<<
  *     return env
- * 
+ *
  */
       if (unlikely(PyDict_SetItem(__pyx_v_env, __pyx_v_k, __pyx_v_v) < 0)) __PYX_ERR(0, 319, __pyx_L1_error)
 
@@ -3671,8 +3671,8 @@ static PyObject *__pyx_pf_6smelly_6launch_4get_env(CYTHON_UNUSED PyObject *__pyx
  *         for k, v in parse_env(x, env):
  *             env[k] = v
  *     return env             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_env);
@@ -3680,8 +3680,8 @@ static PyObject *__pyx_pf_6smelly_6launch_4get_env(CYTHON_UNUSED PyObject *__pyx
   goto __pyx_L0;
 
   /* "smelly/launch.py":313
- * 
- * 
+ *
+ *
  * def get_env(opts: LaunchCLIOptions, active_child: Optional[Child] = None) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     env: Dict[str, str] = {}
  *     if opts.copy_env and active_child:
@@ -3708,8 +3708,8 @@ static PyObject *__pyx_pf_6smelly_6launch_4get_env(CYTHON_UNUSED PyObject *__pyx
 }
 
 /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -3733,7 +3733,7 @@ static PyObject *__pyx_pw_6smelly_6launch_7tab_for_window(PyObject *__pyx_self, 
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/launch.py":324
- * 
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:             # <<<<<<<<<<<<<<
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -3799,8 +3799,8 @@ static PyObject *__pyx_pw_6smelly_6launch_7tab_for_window(PyObject *__pyx_self, 
   __pyx_r = __pyx_pf_6smelly_6launch_6tab_for_window(__pyx_self, __pyx_v_boss, __pyx_v_opts, __pyx_v_target_tab);
 
   /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -4049,7 +4049,7 @@ static PyObject *__pyx_pf_6smelly_6launch_14tab_for_window_create_tab(PyObject *
  *         if opts.tab_title:
  *             tab.set_title(opts.tab_title)             # <<<<<<<<<<<<<<
  *         return tab
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_tab, __pyx_n_s_set_title); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 333, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -4087,7 +4087,7 @@ static PyObject *__pyx_pf_6smelly_6launch_14tab_for_window_create_tab(PyObject *
  *         if opts.tab_title:
  *             tab.set_title(opts.tab_title)
  *         return tab             # <<<<<<<<<<<<<<
- * 
+ *
  *     if opts.type == 'tab':
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4121,8 +4121,8 @@ static PyObject *__pyx_pf_6smelly_6launch_14tab_for_window_create_tab(PyObject *
 }
 
 /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -4193,7 +4193,7 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
 
   /* "smelly/launch.py":336
  *         return tab
- * 
+ *
  *     if opts.type == 'tab':             # <<<<<<<<<<<<<<
  *         if target_tab is not None:
  *             tm = target_tab.tab_manager_ref() or boss.active_tab_manager
@@ -4205,7 +4205,7 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
   if (__pyx_t_5) {
 
     /* "smelly/launch.py":337
- * 
+ *
  *     if opts.type == 'tab':
  *         if target_tab is not None:             # <<<<<<<<<<<<<<
  *             tm = target_tab.tab_manager_ref() or boss.active_tab_manager
@@ -4258,7 +4258,7 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
       __pyx_t_4 = 0;
 
       /* "smelly/launch.py":337
- * 
+ *
  *     if opts.type == 'tab':
  *         if target_tab is not None:             # <<<<<<<<<<<<<<
  *             tm = target_tab.tab_manager_ref() or boss.active_tab_manager
@@ -4296,7 +4296,7 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
 
     /* "smelly/launch.py":336
  *         return tab
- * 
+ *
  *     if opts.type == 'tab':             # <<<<<<<<<<<<<<
  *         if target_tab is not None:
  *             tm = target_tab.tab_manager_ref() or boss.active_tab_manager
@@ -4343,7 +4343,7 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
  *         tab = create_tab()
  *     else:
  *         tab = target_tab or boss.active_tab or create_tab()             # <<<<<<<<<<<<<<
- * 
+ *
  *     return tab
  */
   /*else*/ {
@@ -4378,10 +4378,10 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
 
   /* "smelly/launch.py":347
  *         tab = target_tab or boss.active_tab or create_tab()
- * 
+ *
  *     return tab             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_tab);
@@ -4389,8 +4389,8 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
   goto __pyx_L0;
 
   /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -4415,8 +4415,8 @@ static PyObject *__pyx_pf_6smelly_6launch_6tab_for_window(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/launch.py":353
- * 
- * 
+ *
+ *
  * def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:             # <<<<<<<<<<<<<<
  *     if not watchers:
  *         return None
@@ -4472,7 +4472,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("load_watch_modules", 0);
 
   /* "smelly/launch.py":354
- * 
+ *
  * def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:
  *     if not watchers:             # <<<<<<<<<<<<<<
  *         return None
@@ -4487,14 +4487,14 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
  *     if not watchers:
  *         return None             # <<<<<<<<<<<<<<
  *     import runpy
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
     /* "smelly/launch.py":354
- * 
+ *
  * def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:
  *     if not watchers:             # <<<<<<<<<<<<<<
  *         return None
@@ -4506,7 +4506,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
  *     if not watchers:
  *         return None
  *     import runpy             # <<<<<<<<<<<<<<
- * 
+ *
  *     ans = Watchers()
  */
   __pyx_t_3 = __Pyx_Import(__pyx_n_s_runpy, 0, -1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 356, __pyx_L1_error)
@@ -4516,7 +4516,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
 
   /* "smelly/launch.py":358
  *     import runpy
- * 
+ *
  *     ans = Watchers()             # <<<<<<<<<<<<<<
  *     for path in watchers:
  *         path = resolve_custom_file(path)
@@ -4542,7 +4542,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
   __pyx_t_3 = 0;
 
   /* "smelly/launch.py":359
- * 
+ *
  *     ans = Watchers()
  *     for path in watchers:             # <<<<<<<<<<<<<<
  *         path = resolve_custom_file(path)
@@ -4752,7 +4752,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
  *                 m = runpy.run_path(path, run_name='__smelly_watcher__')
  *             except Exception as err:             # <<<<<<<<<<<<<<
  *                 import traceback
- * 
+ *
  */
         __pyx_t_9 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
         if (__pyx_t_9) {
@@ -4768,7 +4768,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
  *                 m = runpy.run_path(path, run_name='__smelly_watcher__')
  *             except Exception as err:
  *                 import traceback             # <<<<<<<<<<<<<<
- * 
+ *
  *                 log_error(traceback.format_exc())
  */
           __pyx_t_4 = __Pyx_Import(__pyx_n_s_traceback, 0, -1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 366, __pyx_L9_except_error)
@@ -4778,7 +4778,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
 
           /* "smelly/launch.py":368
  *                 import traceback
- * 
+ *
  *                 log_error(traceback.format_exc())             # <<<<<<<<<<<<<<
  *                 log_error(
  *                     f'Failed to load watcher from {path} with error: {err}')
@@ -4821,7 +4821,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
           /* "smelly/launch.py":369
- * 
+ *
  *                 log_error(traceback.format_exc())
  *                 log_error(             # <<<<<<<<<<<<<<
  *                     f'Failed to load watcher from {path} with error: {err}')
@@ -5145,7 +5145,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
  *         if callable(w):
  *             ans.on_focus_change.append(w)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
       __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_ans, __pyx_n_s_on_focus_change); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 384, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
@@ -5162,7 +5162,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
     }
 
     /* "smelly/launch.py":359
- * 
+ *
  *     ans = Watchers()
  *     for path in watchers:             # <<<<<<<<<<<<<<
  *         path = resolve_custom_file(path)
@@ -5176,8 +5176,8 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
  *         if callable(w):
  *             ans.on_focus_change.append(w)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -5185,8 +5185,8 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/launch.py":353
- * 
- * 
+ *
+ *
  * def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:             # <<<<<<<<<<<<<<
  *     if not watchers:
  *         return None
@@ -5219,11 +5219,11 @@ static PyObject *__pyx_pf_6smelly_6launch_8load_watch_modules(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/launch.py":402
- * 
- * 
+ *
+ *
  * def apply_colors(window: Window, spec: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.rc.set_colors import parse_colors
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5308,10 +5308,10 @@ static PyObject *__pyx_pf_6smelly_6launch_10apply_colors(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("apply_colors", 0);
 
   /* "smelly/launch.py":403
- * 
+ *
  * def apply_colors(window: Window, spec: Sequence[str]) -> None:
  *     from smelly.rc.set_colors import parse_colors             # <<<<<<<<<<<<<<
- * 
+ *
  *     colors = parse_colors(spec)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 403, __pyx_L1_error)
@@ -5331,7 +5331,7 @@ static PyObject *__pyx_pf_6smelly_6launch_10apply_colors(CYTHON_UNUSED PyObject 
 
   /* "smelly/launch.py":405
  *     from smelly.rc.set_colors import parse_colors
- * 
+ *
  *     colors = parse_colors(spec)             # <<<<<<<<<<<<<<
  *     profiles = (window.screen.color_profile,)
  *     patch_color_profiles(colors, profiles, True)
@@ -5356,11 +5356,11 @@ static PyObject *__pyx_pf_6smelly_6launch_10apply_colors(CYTHON_UNUSED PyObject 
   __pyx_t_2 = 0;
 
   /* "smelly/launch.py":406
- * 
+ *
  *     colors = parse_colors(spec)
  *     profiles = (window.screen.color_profile,)             # <<<<<<<<<<<<<<
  *     patch_color_profiles(colors, profiles, True)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 406, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5379,8 +5379,8 @@ static PyObject *__pyx_pf_6smelly_6launch_10apply_colors(CYTHON_UNUSED PyObject 
  *     colors = parse_colors(spec)
  *     profiles = (window.screen.color_profile,)
  *     patch_color_profiles(colors, profiles, True)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_patch_color_profiles); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 407, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5435,11 +5435,11 @@ static PyObject *__pyx_pf_6smelly_6launch_10apply_colors(CYTHON_UNUSED PyObject 
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":402
- * 
- * 
+ *
+ *
  * def apply_colors(window: Window, spec: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.rc.set_colors import parse_colors
- * 
+ *
  */
 
   /* function exit code */
@@ -5462,11 +5462,11 @@ static PyObject *__pyx_pf_6smelly_6launch_10apply_colors(CYTHON_UNUSED PyObject 
 }
 
 /* "smelly/launch.py":411
- * 
+ *
  * class ForceWindowLaunch:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5495,17 +5495,17 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch___init__(CYTHON_UN
  * class ForceWindowLaunch:
  *     def __init__(self) -> None:
  *         self.force = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __bool__(self) -> bool:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_force, Py_False) < 0) __PYX_ERR(0, 412, __pyx_L1_error)
 
   /* "smelly/launch.py":411
- * 
+ *
  * class ForceWindowLaunch:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
 
   /* function exit code */
@@ -5522,10 +5522,10 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch___init__(CYTHON_UN
 
 /* "smelly/launch.py":414
  *         self.force = False
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.force
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5552,10 +5552,10 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_2__bool__(CYTHON_U
   __Pyx_RefNannySetupContext("__bool__", 0);
 
   /* "smelly/launch.py":415
- * 
+ *
  *     def __bool__(self) -> bool:
  *         return self.force             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, force: bool) -> 'ForceWindowLaunch':
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5567,10 +5567,10 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_2__bool__(CYTHON_U
 
   /* "smelly/launch.py":414
  *         self.force = False
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.force
- * 
+ *
  */
 
   /* function exit code */
@@ -5586,7 +5586,7 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_2__bool__(CYTHON_U
 
 /* "smelly/launch.py":417
  *         return self.force
- * 
+ *
  *     def __call__(self, force: bool) -> 'ForceWindowLaunch':             # <<<<<<<<<<<<<<
  *         self.force = force
  *         return self
@@ -5666,11 +5666,11 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_4__call__(CYTHON_U
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "smelly/launch.py":418
- * 
+ *
  *     def __call__(self, force: bool) -> 'ForceWindowLaunch':
  *         self.force = force             # <<<<<<<<<<<<<<
  *         return self
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_force, __pyx_v_force) < 0) __PYX_ERR(0, 418, __pyx_L1_error)
 
@@ -5678,7 +5678,7 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_4__call__(CYTHON_U
  *     def __call__(self, force: bool) -> 'ForceWindowLaunch':
  *         self.force = force
  *         return self             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __enter__(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5688,7 +5688,7 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_4__call__(CYTHON_U
 
   /* "smelly/launch.py":417
  *         return self.force
- * 
+ *
  *     def __call__(self, force: bool) -> 'ForceWindowLaunch':             # <<<<<<<<<<<<<<
  *         self.force = force
  *         return self
@@ -5706,10 +5706,10 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_4__call__(CYTHON_U
 
 /* "smelly/launch.py":421
  *         return self
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5740,10 +5740,10 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_6__enter__(CYTHON_
 
 /* "smelly/launch.py":424
  *         pass
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5823,20 +5823,20 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_8__exit__(CYTHON_U
   __Pyx_RefNannySetupContext("__exit__", 0);
 
   /* "smelly/launch.py":425
- * 
+ *
  *     def __exit__(self, *a: object) -> None:
  *         self.force = False             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_force, Py_False) < 0) __PYX_ERR(0, 425, __pyx_L1_error)
 
   /* "smelly/launch.py":424
  *         pass
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
 
   /* function exit code */
@@ -5852,8 +5852,8 @@ static PyObject *__pyx_pf_6smelly_6launch_17ForceWindowLaunch_8__exit__(CYTHON_U
 }
 
 /* "smelly/launch.py":432
- * 
- * 
+ *
+ *
  * def launch(             # <<<<<<<<<<<<<<
  *     boss: Boss,
  *     opts: LaunchCLIOptions,
@@ -6031,8 +6031,8 @@ static PyObject *__pyx_pw_6smelly_6launch_13launch(PyObject *__pyx_self, PyObjec
   __pyx_r = __pyx_pf_6smelly_6launch_12launch(__pyx_self, __pyx_v_boss, __pyx_v_opts, __pyx_v_args, __pyx_v_target_tab, __pyx_v_force_target_tab, __pyx_v_active, __pyx_v_is_clone_launch, __pyx_v_rc_from_window);
 
   /* "smelly/launch.py":432
- * 
- * 
+ *
+ *
  * def launch(             # <<<<<<<<<<<<<<
  *     boss: Boss,
  *     opts: LaunchCLIOptions,
@@ -6432,7 +6432,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *     remote_control_restrictions: Optional[Dict[str, Sequence[str]]] = None
  *     if opts.allow_remote_control and opts.remote_control_password:             # <<<<<<<<<<<<<<
  *         from smelly.options.utils import remote_control_password
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_allow_remote_control); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 458, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6455,7 +6455,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *     remote_control_restrictions: Optional[Dict[str, Sequence[str]]] = None
  *     if opts.allow_remote_control and opts.remote_control_password:
  *         from smelly.options.utils import remote_control_password             # <<<<<<<<<<<<<<
- * 
+ *
  *         remote_control_restrictions = {}
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 459, __pyx_L1_error)
@@ -6475,7 +6475,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
 
     /* "smelly/launch.py":461
  *         from smelly.options.utils import remote_control_password
- * 
+ *
  *         remote_control_restrictions = {}             # <<<<<<<<<<<<<<
  *         for rcp in opts.remote_control_password:
  *             for pw, rcp_items in remote_control_password(rcp, {}):
@@ -6486,7 +6486,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
     __pyx_t_3 = 0;
 
     /* "smelly/launch.py":462
- * 
+ *
  *         remote_control_restrictions = {}
  *         for rcp in opts.remote_control_password:             # <<<<<<<<<<<<<<
  *             for pw, rcp_items in remote_control_password(rcp, {}):
@@ -6644,11 +6644,11 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_11 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_11 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_11 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_11 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_11);
           __Pyx_INCREF(__pyx_t_5);
@@ -6705,7 +6705,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
       /* "smelly/launch.py":462
- * 
+ *
  *         remote_control_restrictions = {}
  *         for rcp in opts.remote_control_password:             # <<<<<<<<<<<<<<
  *             for pw, rcp_items in remote_control_password(rcp, {}):
@@ -6719,7 +6719,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *     remote_control_restrictions: Optional[Dict[str, Sequence[str]]] = None
  *     if opts.allow_remote_control and opts.remote_control_password:             # <<<<<<<<<<<<<<
  *         from smelly.options.utils import remote_control_password
- * 
+ *
  */
   }
 
@@ -6876,7 +6876,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *     spacing = {}
  *     if opts.spacing:             # <<<<<<<<<<<<<<
  *         from .rc.set_spacing import parse_spacing_settings, patch_window_edges
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_spacing); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 479, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6888,7 +6888,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *     spacing = {}
  *     if opts.spacing:
  *         from .rc.set_spacing import parse_spacing_settings, patch_window_edges             # <<<<<<<<<<<<<<
- * 
+ *
  *         spacing = parse_spacing_settings(opts.spacing)
  */
     __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 480, __pyx_L1_error)
@@ -6916,7 +6916,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
 
     /* "smelly/launch.py":482
  *         from .rc.set_spacing import parse_spacing_settings, patch_window_edges
- * 
+ *
  *         spacing = parse_spacing_settings(opts.spacing)             # <<<<<<<<<<<<<<
  *     if opts.cwd:
  *         if opts.cwd == 'current':
@@ -6948,12 +6948,12 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *     spacing = {}
  *     if opts.spacing:             # <<<<<<<<<<<<<<
  *         from .rc.set_spacing import parse_spacing_settings, patch_window_edges
- * 
+ *
  */
   }
 
   /* "smelly/launch.py":483
- * 
+ *
  *         spacing = parse_spacing_settings(opts.spacing)
  *     if opts.cwd:             # <<<<<<<<<<<<<<
  *         if opts.cwd == 'current':
@@ -7431,7 +7431,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
     }
 
     /* "smelly/launch.py":483
- * 
+ *
  *         spacing = parse_spacing_settings(opts.spacing)
  *     if opts.cwd:             # <<<<<<<<<<<<<<
  *         if opts.cwd == 'current':
@@ -7731,11 +7731,11 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_4);
@@ -7796,7 +7796,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *             kw['stdin'] = stdin
  *             if penv:             # <<<<<<<<<<<<<<
  *                 env.update(penv)
- * 
+ *
  */
       __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_v_penv); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 525, __pyx_L1_error)
       if (__pyx_t_8) {
@@ -7805,7 +7805,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *             kw['stdin'] = stdin
  *             if penv:
  *                 env.update(penv)             # <<<<<<<<<<<<<<
- * 
+ *
  *     cmd = args or None
  */
         __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_env, __pyx_n_s_update); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 526, __pyx_L1_error)
@@ -7832,7 +7832,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *             kw['stdin'] = stdin
  *             if penv:             # <<<<<<<<<<<<<<
  *                 env.update(penv)
- * 
+ *
  */
       }
 
@@ -7856,7 +7856,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
 
   /* "smelly/launch.py":528
  *                 env.update(penv)
- * 
+ *
  *     cmd = args or None             # <<<<<<<<<<<<<<
  *     if opts.copy_cmdline and active_child:
  *         cmd = active_child.foreground_cmdline
@@ -7875,7 +7875,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
   __pyx_t_11 = 0;
 
   /* "smelly/launch.py":529
- * 
+ *
  *     cmd = args or None
  *     if opts.copy_cmdline and active_child:             # <<<<<<<<<<<<<<
  *         cmd = active_child.foreground_cmdline
@@ -7908,7 +7908,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
     __pyx_t_11 = 0;
 
     /* "smelly/launch.py":529
- * 
+ *
  *     cmd = args or None
  *     if opts.copy_cmdline and active_child:             # <<<<<<<<<<<<<<
  *         cmd = active_child.foreground_cmdline
@@ -9825,7 +9825,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *                 new_window.overlay_type = OverlayType.main
  *             return new_window             # <<<<<<<<<<<<<<
  *     return None
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_new_window);
@@ -9847,16 +9847,16 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
  *                 new_window.overlay_type = OverlayType.main
  *             return new_window
  *     return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
   /* "smelly/launch.py":432
- * 
- * 
+ *
+ *
  * def launch(             # <<<<<<<<<<<<<<
  *     boss: Boss,
  *     opts: LaunchCLIOptions,
@@ -9908,7 +9908,7 @@ static PyObject *__pyx_pf_6smelly_6launch_12launch(CYTHON_UNUSED PyObject *__pyx
 }
 
 /* "smelly/launch.py":621
- * 
+ *
  * @run_once
  * def clone_safe_opts() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     return frozenset(
@@ -9961,7 +9961,7 @@ static PyObject *__pyx_pf_6smelly_6launch_14clone_safe_opts(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "smelly/launch.py":621
- * 
+ *
  * @run_once
  * def clone_safe_opts() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     return frozenset(
@@ -9980,8 +9980,8 @@ static PyObject *__pyx_pf_6smelly_6launch_14clone_safe_opts(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/launch.py":644
- * 
- * 
+ *
+ *
  * def parse_opts_for_clone(args: List[str]) -> Tuple[LaunchCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     unsafe, unsafe_args = parse_launch_args(args)
  *     default_opts, default_args = parse_launch_args()
@@ -10023,7 +10023,7 @@ static PyObject *__pyx_pf_6smelly_6launch_16parse_opts_for_clone(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("parse_opts_for_clone", 0);
 
   /* "smelly/launch.py":645
- * 
+ *
  * def parse_opts_for_clone(args: List[str]) -> Tuple[LaunchCLIOptions, List[str]]:
  *     unsafe, unsafe_args = parse_launch_args(args)             # <<<<<<<<<<<<<<
  *     default_opts, default_args = parse_launch_args()
@@ -10056,11 +10056,11 @@ static PyObject *__pyx_pf_6smelly_6launch_16parse_opts_for_clone(CYTHON_UNUSED P
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -10131,11 +10131,11 @@ static PyObject *__pyx_pf_6smelly_6launch_16parse_opts_for_clone(CYTHON_UNUSED P
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_2);
@@ -10244,7 +10244,7 @@ static PyObject *__pyx_pf_6smelly_6launch_16parse_opts_for_clone(CYTHON_UNUSED P
  *     for x in clone_safe_opts():
  *         setattr(default_opts, x, getattr(unsafe, x))             # <<<<<<<<<<<<<<
  *     return default_opts, unsafe_args
- * 
+ *
  */
     __pyx_t_1 = __Pyx_GetAttr(__pyx_v_unsafe, __pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 649, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -10265,8 +10265,8 @@ static PyObject *__pyx_pf_6smelly_6launch_16parse_opts_for_clone(CYTHON_UNUSED P
  *     for x in clone_safe_opts():
  *         setattr(default_opts, x, getattr(unsafe, x))
  *     return default_opts, unsafe_args             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 650, __pyx_L1_error)
@@ -10282,8 +10282,8 @@ static PyObject *__pyx_pf_6smelly_6launch_16parse_opts_for_clone(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly/launch.py":644
- * 
- * 
+ *
+ *
  * def parse_opts_for_clone(args: List[str]) -> Tuple[LaunchCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     unsafe, unsafe_args = parse_launch_args(args)
  *     default_opts, default_args = parse_launch_args()
@@ -10309,8 +10309,8 @@ static PyObject *__pyx_pf_6smelly_6launch_16parse_opts_for_clone(CYTHON_UNUSED P
 }
 
 /* "smelly/launch.py":653
- * 
- * 
+ *
+ *
  * def parse_null_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.split('\0'):
@@ -10364,7 +10364,7 @@ static PyObject *__pyx_pf_6smelly_6launch_18parse_null_env(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("parse_null_env", 0);
 
   /* "smelly/launch.py":654
- * 
+ *
  * def parse_null_env(text: str) -> Dict[str, str]:
  *     ans = {}             # <<<<<<<<<<<<<<
  *     for line in text.split('\0'):
@@ -10475,11 +10475,11 @@ static PyObject *__pyx_pf_6smelly_6launch_18parse_null_env(CYTHON_UNUSED PyObjec
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1); 
+              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1);
             } else {
-              __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_10 = PyList_GET_ITEM(sequence, 1); 
+              __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_10 = PyList_GET_ITEM(sequence, 1);
             }
             __Pyx_INCREF(__pyx_t_1);
             __Pyx_INCREF(__pyx_t_10);
@@ -10592,7 +10592,7 @@ static PyObject *__pyx_pf_6smelly_6launch_18parse_null_env(CYTHON_UNUSED PyObjec
  *                 continue
  *             ans[k] = v             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
       if (unlikely(PyDict_SetItem(__pyx_v_ans, __pyx_v_k, __pyx_v_v) < 0)) __PYX_ERR(0, 661, __pyx_L1_error)
 
@@ -10620,8 +10620,8 @@ static PyObject *__pyx_pf_6smelly_6launch_18parse_null_env(CYTHON_UNUSED PyObjec
  *                 continue
  *             ans[k] = v
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -10629,8 +10629,8 @@ static PyObject *__pyx_pf_6smelly_6launch_18parse_null_env(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/launch.py":653
- * 
- * 
+ *
+ *
  * def parse_null_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.split('\0'):
@@ -10657,11 +10657,11 @@ static PyObject *__pyx_pf_6smelly_6launch_18parse_null_env(CYTHON_UNUSED PyObjec
 static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/launch.py":665
- * 
- * 
+ *
+ *
  * def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64decode
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10807,10 +10807,10 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 665, __pyx_L1_error)
 
   /* "smelly/launch.py":666
- * 
+ *
  * def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]:
  *     from base64 import standard_b64decode             # <<<<<<<<<<<<<<
- * 
+ *
  *     for x in msg.split(','):
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 666, __pyx_L1_error)
@@ -10831,7 +10831,7 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
 
   /* "smelly/launch.py":668
  *     from base64 import standard_b64decode
- * 
+ *
  *     for x in msg.split(','):             # <<<<<<<<<<<<<<
  *         try:
  *             k, v = x.split('=', 1)
@@ -10884,7 +10884,7 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
     __pyx_t_2 = 0;
 
     /* "smelly/launch.py":669
- * 
+ *
  *     for x in msg.split(','):
  *         try:             # <<<<<<<<<<<<<<
  *             k, v = x.split('=', 1)
@@ -10919,11 +10919,11 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(__pyx_t_9);
@@ -10965,7 +10965,7 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
         __pyx_t_9 = 0;
 
         /* "smelly/launch.py":669
- * 
+ *
  *     for x in msg.split(','):
  *         try:             # <<<<<<<<<<<<<<
  *             k, v = x.split('=', 1)
@@ -11015,7 +11015,7 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
       __pyx_L8_except_error:;
 
       /* "smelly/launch.py":669
- * 
+ *
  *     for x in msg.split(','):
  *         try:             # <<<<<<<<<<<<<<
  *             k, v = x.split('=', 1)
@@ -11051,7 +11051,7 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
  *         if k not in simple:
  *             v = standard_b64decode(v).decode('utf-8', 'replace')             # <<<<<<<<<<<<<<
  *         yield k, v
- * 
+ *
  */
       __Pyx_INCREF(__pyx_cur_scope->__pyx_v_standard_b64decode);
       __pyx_t_9 = __pyx_cur_scope->__pyx_v_standard_b64decode; __pyx_t_8 = NULL;
@@ -11093,8 +11093,8 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
  *         if k not in simple:
  *             v = standard_b64decode(v).decode('utf-8', 'replace')
  *         yield k, v             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 675, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -11126,7 +11126,7 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
 
     /* "smelly/launch.py":668
  *     from base64 import standard_b64decode
- * 
+ *
  *     for x in msg.split(','):             # <<<<<<<<<<<<<<
  *         try:
  *             k, v = x.split('=', 1)
@@ -11137,11 +11137,11 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/launch.py":665
- * 
- * 
+ *
+ *
  * def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64decode
- * 
+ *
  */
 
   /* function exit code */
@@ -11166,7 +11166,7 @@ static PyObject *__pyx_gb_6smelly_6launch_22generator(__pyx_CoroutineObject *__p
 }
 
 /* "smelly/launch.py":679
- * 
+ *
  * class EditCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tdir = ''
@@ -11485,11 +11485,11 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_3);
@@ -11655,7 +11655,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *                 self.args.append(v)
  *             elif k == 'file_data':             # <<<<<<<<<<<<<<
  *                 import base64
- * 
+ *
  */
     __pyx_t_10 = (__Pyx_PyString_Equals(__pyx_v_k, __pyx_n_s_file_data, Py_EQ)); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 697, __pyx_L1_error)
     if (__pyx_t_10) {
@@ -11664,7 +11664,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *                 self.args.append(v)
  *             elif k == 'file_data':
  *                 import base64             # <<<<<<<<<<<<<<
- * 
+ *
  *                 self.file_data = base64.standard_b64decode(v)
  */
       __pyx_t_5 = __Pyx_Import(__pyx_n_s_base64, 0, -1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 698, __pyx_L1_error)
@@ -11674,7 +11674,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
 
       /* "smelly/launch.py":700
  *                 import base64
- * 
+ *
  *                 self.file_data = base64.standard_b64decode(v)             # <<<<<<<<<<<<<<
  *             elif k == 'version':
  *                 self.version = int(v)
@@ -11704,13 +11704,13 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *                 self.args.append(v)
  *             elif k == 'file_data':             # <<<<<<<<<<<<<<
  *                 import base64
- * 
+ *
  */
       goto __pyx_L7;
     }
 
     /* "smelly/launch.py":701
- * 
+ *
  *                 self.file_data = base64.standard_b64decode(v)
  *             elif k == 'version':             # <<<<<<<<<<<<<<
  *                 self.version = int(v)
@@ -11732,7 +11732,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
       /* "smelly/launch.py":701
- * 
+ *
  *                 self.file_data = base64.standard_b64decode(v)
  *             elif k == 'version':             # <<<<<<<<<<<<<<
  *                 self.version = int(v)
@@ -11904,11 +11904,11 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_t_8);
@@ -11970,7 +11970,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *         self.file_spec = extra_args.pop()
  *         self.line_number = 0             # <<<<<<<<<<<<<<
  *         import re
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_line_number, __pyx_int_0) < 0) __PYX_ERR(0, 713, __pyx_L1_error)
 
@@ -11978,7 +11978,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *         self.file_spec = extra_args.pop()
  *         self.line_number = 0
  *         import re             # <<<<<<<<<<<<<<
- * 
+ *
  *         pat = re.compile(r'\+(-?\d+)')
  */
   __pyx_t_2 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 714, __pyx_L1_error)
@@ -11988,7 +11988,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
 
   /* "smelly/launch.py":716
  *         import re
- * 
+ *
  *         pat = re.compile(r'\+(-?\d+)')             # <<<<<<<<<<<<<<
  *         for x in extra_args:
  *             m = pat.match(x)
@@ -12014,7 +12014,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
   __pyx_t_2 = 0;
 
   /* "smelly/launch.py":717
- * 
+ *
  *         pat = re.compile(r'\+(-?\d+)')
  *         for x in extra_args:             # <<<<<<<<<<<<<<
  *             m = pat.match(x)
@@ -12140,7 +12140,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
     }
 
     /* "smelly/launch.py":717
- * 
+ *
  *         pat = re.compile(r'\+(-?\d+)')
  *         for x in extra_args:             # <<<<<<<<<<<<<<
  *             m = pat.match(x)
@@ -12464,7 +12464,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
             __Pyx_GIVEREF(__pyx_t_8);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_8, __pyx_t_5);
-            __pyx_t_2 = 0; __pyx_t_8 = 0; __pyx_t_5 = 0; 
+            __pyx_t_2 = 0; __pyx_t_8 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 725, __pyx_L21_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -12511,7 +12511,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *             self.is_local_file = (st.st_dev, st.st_ino) == self.file_inode
  *         if not self.is_local_file:             # <<<<<<<<<<<<<<
  *             import tempfile
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_local_file); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 728, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -12524,7 +12524,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *             self.is_local_file = (st.st_dev, st.st_ino) == self.file_inode
  *         if not self.is_local_file:
  *             import tempfile             # <<<<<<<<<<<<<<
- * 
+ *
  *             self.tdir = tempfile.mkdtemp()
  */
     __pyx_t_5 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 729, __pyx_L1_error)
@@ -12534,7 +12534,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
 
     /* "smelly/launch.py":731
  *             import tempfile
- * 
+ *
  *             self.tdir = tempfile.mkdtemp()             # <<<<<<<<<<<<<<
  *             self.file_localpath = os.path.join(self.tdir, self.file_name)
  *             with open(self.file_localpath, 'wb') as f:
@@ -12560,7 +12560,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly/launch.py":732
- * 
+ *
  *             self.tdir = tempfile.mkdtemp()
  *             self.file_localpath = os.path.join(self.tdir, self.file_name)             # <<<<<<<<<<<<<<
  *             with open(self.file_localpath, 'wb') as f:
@@ -12757,7 +12757,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
               __Pyx_GIVEREF(__pyx_t_5);
               __Pyx_XGIVEREF(__pyx_t_8);
               __Pyx_ErrRestoreWithState(__pyx_t_13, __pyx_t_5, __pyx_t_8);
-              __pyx_t_13 = 0; __pyx_t_5 = 0; __pyx_t_8 = 0; 
+              __pyx_t_13 = 0; __pyx_t_5 = 0; __pyx_t_8 = 0;
               __PYX_ERR(0, 733, __pyx_L36_except_error)
             }
             __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -12804,7 +12804,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *             self.is_local_file = (st.st_dev, st.st_ino) == self.file_inode
  *         if not self.is_local_file:             # <<<<<<<<<<<<<<
  *             import tempfile
- * 
+ *
  */
   }
 
@@ -12834,7 +12834,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *         self.last_mod_time = self.file_mod_time
  *         if not self.opts.cwd:             # <<<<<<<<<<<<<<
  *             self.opts.cwd = os.path.dirname(self.file_localpath)
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_opts); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 737, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -12850,7 +12850,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *         self.last_mod_time = self.file_mod_time
  *         if not self.opts.cwd:
  *             self.opts.cwd = os.path.dirname(self.file_localpath)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __del__(self) -> None:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_os); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 738, __pyx_L1_error)
@@ -12890,12 +12890,12 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
  *         self.last_mod_time = self.file_mod_time
  *         if not self.opts.cwd:             # <<<<<<<<<<<<<<
  *             self.opts.cwd = os.path.dirname(self.file_localpath)
- * 
+ *
  */
   }
 
   /* "smelly/launch.py":679
- * 
+ *
  * class EditCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tdir = ''
@@ -12937,7 +12937,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd___init__(CYTHON_UNUSED PyObje
 
 /* "smelly/launch.py":740
  *             self.opts.cwd = os.path.dirname(self.file_localpath)
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.tdir:
  *             with suppress(OSError):
@@ -12977,7 +12977,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_2__del__(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("__del__", 0);
 
   /* "smelly/launch.py":741
- * 
+ *
  *     def __del__(self) -> None:
  *         if self.tdir:             # <<<<<<<<<<<<<<
  *             with suppress(OSError):
@@ -13050,7 +13050,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_2__del__(CYTHON_UNUSED PyObje
  *             with suppress(OSError):
  *                 shutil.rmtree(self.tdir)             # <<<<<<<<<<<<<<
  *             self.tdir = ''
- * 
+ *
  */
             __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_shutil); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 743, __pyx_L8_error)
             __Pyx_GOTREF(__pyx_t_3);
@@ -13116,7 +13116,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_2__del__(CYTHON_UNUSED PyObje
               __Pyx_GIVEREF(__pyx_t_4);
               __Pyx_XGIVEREF(__pyx_t_3);
               __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_4, __pyx_t_3);
-              __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0; 
+              __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0;
               __PYX_ERR(0, 742, __pyx_L10_except_error)
             }
             __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -13162,13 +13162,13 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_2__del__(CYTHON_UNUSED PyObje
  *             with suppress(OSError):
  *                 shutil.rmtree(self.tdir)
  *             self.tdir = ''             # <<<<<<<<<<<<<<
- * 
+ *
  *     def read_data(self) -> bytes:
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_tdir, __pyx_kp_s__4) < 0) __PYX_ERR(0, 744, __pyx_L1_error)
 
     /* "smelly/launch.py":741
- * 
+ *
  *     def __del__(self) -> None:
  *         if self.tdir:             # <<<<<<<<<<<<<<
  *             with suppress(OSError):
@@ -13178,7 +13178,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_2__del__(CYTHON_UNUSED PyObje
 
   /* "smelly/launch.py":740
  *             self.opts.cwd = os.path.dirname(self.file_localpath)
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.tdir:
  *             with suppress(OSError):
@@ -13202,7 +13202,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_2__del__(CYTHON_UNUSED PyObje
 
 /* "smelly/launch.py":746
  *             self.tdir = ''
- * 
+ *
  *     def read_data(self) -> bytes:             # <<<<<<<<<<<<<<
  *         with open(self.file_localpath, 'rb') as f:
  *             return f.read()
@@ -13244,11 +13244,11 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_4read_data(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("read_data", 0);
 
   /* "smelly/launch.py":747
- * 
+ *
  *     def read_data(self) -> bytes:
  *         with open(self.file_localpath, 'rb') as f:             # <<<<<<<<<<<<<<
  *             return f.read()
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_file_localpath); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 747, __pyx_L1_error)
@@ -13302,7 +13302,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_4read_data(CYTHON_UNUSED PyOb
  *     def read_data(self) -> bytes:
  *         with open(self.file_localpath, 'rb') as f:
  *             return f.read()             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
           __Pyx_XDECREF(__pyx_r);
@@ -13329,11 +13329,11 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_4read_data(CYTHON_UNUSED PyOb
           goto __pyx_L11_try_return;
 
           /* "smelly/launch.py":747
- * 
+ *
  *     def read_data(self) -> bytes:
  *         with open(self.file_localpath, 'rb') as f:             # <<<<<<<<<<<<<<
  *             return f.read()
- * 
+ *
  */
         }
         __pyx_L7_error:;
@@ -13363,7 +13363,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_4read_data(CYTHON_UNUSED PyOb
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_2);
-            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 747, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -13426,7 +13426,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_4read_data(CYTHON_UNUSED PyOb
 
   /* "smelly/launch.py":746
  *             self.tdir = ''
- * 
+ *
  *     def read_data(self) -> bytes:             # <<<<<<<<<<<<<<
  *         with open(self.file_localpath, 'rb') as f:
  *             return f.read()
@@ -13450,11 +13450,11 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_4read_data(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/launch.py":751
- * 
+ *
  *     @property
  *     def file_mod_time(self) -> int:             # <<<<<<<<<<<<<<
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  */
 
 /* Python wrapper */
@@ -13487,7 +13487,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_6file_mod_time(CYTHON_UNUSED 
  *     @property
  *     def file_mod_time(self) -> int:
  *         return os.stat(self.file_localpath).st_mtime_ns             # <<<<<<<<<<<<<<
- * 
+ *
  *     def schedule_check(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13522,11 +13522,11 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_6file_mod_time(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/launch.py":751
- * 
+ *
  *     @property
  *     def file_mod_time(self) -> int:             # <<<<<<<<<<<<<<
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  */
 
   /* function exit code */
@@ -13545,7 +13545,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_6file_mod_time(CYTHON_UNUSED 
 
 /* "smelly/launch.py":754
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  *     def schedule_check(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.abort_signaled:
  *             add_timer(self.check_status, 1.0, False)
@@ -13582,11 +13582,11 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_8schedule_check(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("schedule_check", 0);
 
   /* "smelly/launch.py":755
- * 
+ *
  *     def schedule_check(self) -> None:
  *         if not self.abort_signaled:             # <<<<<<<<<<<<<<
  *             add_timer(self.check_status, 1.0, False)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_abort_signaled); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 755, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13599,7 +13599,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_8schedule_check(CYTHON_UNUSED
  *     def schedule_check(self) -> None:
  *         if not self.abort_signaled:
  *             add_timer(self.check_status, 1.0, False)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def on_edit_window_close(self, window: Window) -> None:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_add_timer); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 756, __pyx_L1_error)
@@ -13659,17 +13659,17 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_8schedule_check(CYTHON_UNUSED
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/launch.py":755
- * 
+ *
  *     def schedule_check(self) -> None:
  *         if not self.abort_signaled:             # <<<<<<<<<<<<<<
  *             add_timer(self.check_status, 1.0, False)
- * 
+ *
  */
   }
 
   /* "smelly/launch.py":754
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  *     def schedule_check(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.abort_signaled:
  *             add_timer(self.check_status, 1.0, False)
@@ -13694,10 +13694,10 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_8schedule_check(CYTHON_UNUSED
 
 /* "smelly/launch.py":758
  *             add_timer(self.check_status, 1.0, False)
- * 
+ *
  *     def on_edit_window_close(self, window: Window) -> None:             # <<<<<<<<<<<<<<
  *         self.check_status()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -13777,10 +13777,10 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_10on_edit_window_close(CYTHON
   __Pyx_RefNannySetupContext("on_edit_window_close", 0);
 
   /* "smelly/launch.py":759
- * 
+ *
  *     def on_edit_window_close(self, window: Window) -> None:
  *         self.check_status()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def check_status(self, timer_id: Optional[int] = None) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_check_status); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 759, __pyx_L1_error)
@@ -13804,10 +13804,10 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_10on_edit_window_close(CYTHON
 
   /* "smelly/launch.py":758
  *             add_timer(self.check_status, 1.0, False)
- * 
+ *
  *     def on_edit_window_close(self, window: Window) -> None:             # <<<<<<<<<<<<<<
  *         self.check_status()
- * 
+ *
  */
 
   /* function exit code */
@@ -13827,7 +13827,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_10on_edit_window_close(CYTHON
 
 /* "smelly/launch.py":761
  *         self.check_status()
- * 
+ *
  *     def check_status(self, timer_id: Optional[int] = None) -> None:             # <<<<<<<<<<<<<<
  *         if self.abort_signaled:
  *             return
@@ -13925,7 +13925,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_12check_status(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("check_status", 0);
 
   /* "smelly/launch.py":762
- * 
+ *
  *     def check_status(self, timer_id: Optional[int] = None) -> None:
  *         if self.abort_signaled:             # <<<<<<<<<<<<<<
  *             return
@@ -13949,7 +13949,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_12check_status(CYTHON_UNUSED 
     goto __pyx_L0;
 
     /* "smelly/launch.py":762
- * 
+ *
  *     def check_status(self, timer_id: Optional[int] = None) -> None:
  *         if self.abort_signaled:             # <<<<<<<<<<<<<<
  *             return
@@ -14401,7 +14401,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_12check_status(CYTHON_UNUSED 
  *             self.abort_signaled = self.abort_signaled or 'closed'
  *         else:
  *             self.schedule_check()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send_data(
  */
   /*else*/ {
@@ -14428,7 +14428,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_12check_status(CYTHON_UNUSED 
 
   /* "smelly/launch.py":761
  *         self.check_status()
- * 
+ *
  *     def check_status(self, timer_id: Optional[int] = None) -> None:             # <<<<<<<<<<<<<<
  *         if self.abort_signaled:
  *             return
@@ -14458,7 +14458,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_12check_status(CYTHON_UNUSED 
 
 /* "smelly/launch.py":781
  *             self.schedule_check()
- * 
+ *
  *     def send_data(             # <<<<<<<<<<<<<<
  *             self, window: Window, data_type: str, data: bytes = b'') -> None:
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
@@ -14632,7 +14632,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
  *         if data:             # <<<<<<<<<<<<<<
  *             import base64
- * 
+ *
  */
   __pyx_t_7 = (__pyx_v_data != Py_None)&&(PyBytes_GET_SIZE(__pyx_v_data) != 0);
   if (__pyx_t_7) {
@@ -14641,7 +14641,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
  *         if data:
  *             import base64             # <<<<<<<<<<<<<<
- * 
+ *
  *             mv = memoryview(base64.standard_b64encode(data))
  */
     __pyx_t_1 = __Pyx_Import(__pyx_n_s_base64, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 785, __pyx_L1_error)
@@ -14651,7 +14651,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
 
     /* "smelly/launch.py":787
  *             import base64
- * 
+ *
  *             mv = memoryview(base64.standard_b64encode(data))             # <<<<<<<<<<<<<<
  *             while mv:
  *                 window.write_to_child(bytes(mv[:512]))
@@ -14683,7 +14683,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
     __pyx_t_6 = 0;
 
     /* "smelly/launch.py":788
- * 
+ *
  *             mv = memoryview(base64.standard_b64encode(data))
  *             while mv:             # <<<<<<<<<<<<<<
  *                 window.write_to_child(bytes(mv[:512]))
@@ -14756,7 +14756,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
  *                 window.write_to_child('\n')
  *                 mv = mv[512:]             # <<<<<<<<<<<<<<
  *         window.write_to_child('smelly_DATA_END\n')
- * 
+ *
  */
       __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_mv, 0x200, 0, NULL, NULL, &__pyx_slice__20, 1, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 791, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
@@ -14769,7 +14769,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
  *         if data:             # <<<<<<<<<<<<<<
  *             import base64
- * 
+ *
  */
   }
 
@@ -14777,8 +14777,8 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
  *                 window.write_to_child('\n')
  *                 mv = mv[512:]
  *         window.write_to_child('smelly_DATA_END\n')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_write_to_child); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 792, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14801,7 +14801,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
 
   /* "smelly/launch.py":781
  *             self.schedule_check()
- * 
+ *
  *     def send_data(             # <<<<<<<<<<<<<<
  *             self, window: Window, data_type: str, data: bytes = b'') -> None:
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
@@ -14826,7 +14826,7 @@ static PyObject *__pyx_pf_6smelly_6launch_7EditCmd_14send_data(CYTHON_UNUSED PyO
 }
 
 /* "smelly/launch.py":796
- * 
+ *
  * class CloneCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.args: List[str] = []
@@ -14995,7 +14995,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd___init__(CYTHON_UNUSED PyObj
  *         self.history = ''
  *         self.parse_message(msg)             # <<<<<<<<<<<<<<
  *         self.opts = parse_opts_for_clone(self.args)[0]
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_parse_message); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 805, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -15020,7 +15020,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd___init__(CYTHON_UNUSED PyObj
  *         self.history = ''
  *         self.parse_message(msg)
  *         self.opts = parse_opts_for_clone(self.args)[0]             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parse_message(self, msg: str) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_opts_for_clone); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 806, __pyx_L1_error)
@@ -15050,7 +15050,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd___init__(CYTHON_UNUSED PyObj
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":796
- * 
+ *
  * class CloneCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.args: List[str] = []
@@ -15075,7 +15075,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd___init__(CYTHON_UNUSED PyObj
 
 /* "smelly/launch.py":808
  *         self.opts = parse_opts_for_clone(self.args)[0]
- * 
+ *
  *     def parse_message(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         simple = 'pid', 'envfmt', 'shell', 'bash_version'
  *         for k, v in parse_message(msg, simple):
@@ -15184,7 +15184,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("parse_message", 0);
 
   /* "smelly/launch.py":809
- * 
+ *
  *     def parse_message(self, msg: str) -> None:
  *         simple = 'pid', 'envfmt', 'shell', 'bash_version'             # <<<<<<<<<<<<<<
  *         for k, v in parse_message(msg, simple):
@@ -15297,11 +15297,11 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_3);
@@ -15450,7 +15450,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
  *             elif k == 'env':
  *                 if self.envfmt == 'bash':             # <<<<<<<<<<<<<<
  *                     from .bash import parse_bash_env
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_envfmt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 819, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -15462,7 +15462,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
  *             elif k == 'env':
  *                 if self.envfmt == 'bash':
  *                     from .bash import parse_bash_env             # <<<<<<<<<<<<<<
- * 
+ *
  *                     env = parse_bash_env(v, self.bash_version)
  */
         __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 820, __pyx_L1_error)
@@ -15482,7 +15482,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
 
         /* "smelly/launch.py":822
  *                     from .bash import parse_bash_env
- * 
+ *
  *                     env = parse_bash_env(v, self.bash_version)             # <<<<<<<<<<<<<<
  *                 else:
  *                     env = parse_null_env(v)
@@ -15545,7 +15545,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
  *             elif k == 'env':
  *                 if self.envfmt == 'bash':             # <<<<<<<<<<<<<<
  *                     from .bash import parse_bash_env
- * 
+ *
  */
         goto __pyx_L9;
       }
@@ -15665,11 +15665,11 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
             } else {
-              __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+              __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
             }
             __Pyx_INCREF(__pyx_t_1);
             __Pyx_INCREF(__pyx_t_8);
@@ -16036,7 +16036,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
  *                 self.cwd = v
  *             elif k == 'history':             # <<<<<<<<<<<<<<
  *                 self.history = v
- * 
+ *
  */
     __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_v_k, __pyx_n_s_history, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 871, __pyx_L1_error)
     if (__pyx_t_11) {
@@ -16045,8 +16045,8 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
  *                 self.cwd = v
  *             elif k == 'history':
  *                 self.history = v             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_history, __pyx_v_v) < 0) __PYX_ERR(0, 872, __pyx_L1_error)
 
@@ -16055,7 +16055,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
  *                 self.cwd = v
  *             elif k == 'history':             # <<<<<<<<<<<<<<
  *                 self.history = v
- * 
+ *
  */
     }
     __pyx_L7:;
@@ -16072,7 +16072,7 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
 
   /* "smelly/launch.py":808
  *         self.opts = parse_opts_for_clone(self.args)[0]
- * 
+ *
  *     def parse_message(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         simple = 'pid', 'envfmt', 'shell', 'bash_version'
  *         for k, v in parse_message(msg, simple):
@@ -16105,8 +16105,8 @@ static PyObject *__pyx_pf_6smelly_6launch_8CloneCmd_2parse_message(CYTHON_UNUSED
 }
 
 /* "smelly/launch.py":878
- * 
- * 
+ *
+ *
  * def remote_edit(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     c = EditCmd(msg)
  *     if c.abort_signaled:
@@ -16204,7 +16204,7 @@ static PyObject *__pyx_pf_6smelly_6launch_23remote_edit(CYTHON_UNUSED PyObject *
   __Pyx_RefNannySetupContext("remote_edit", 0);
 
   /* "smelly/launch.py":879
- * 
+ *
  * def remote_edit(msg: str, window: Window) -> None:
  *     c = EditCmd(msg)             # <<<<<<<<<<<<<<
  *     if c.abort_signaled:
@@ -16599,7 +16599,7 @@ static PyObject *__pyx_pf_6smelly_6launch_23remote_edit(CYTHON_UNUSED PyObject *
  *         edits_in_flight[window.id] = c
  *         w.actions_on_close.append(c.on_edit_window_close)             # <<<<<<<<<<<<<<
  *         c.schedule_check()
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_actions_on_close); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 895, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -16613,8 +16613,8 @@ static PyObject *__pyx_pf_6smelly_6launch_23remote_edit(CYTHON_UNUSED PyObject *
  *         edits_in_flight[window.id] = c
  *         w.actions_on_close.append(c.on_edit_window_close)
  *         c.schedule_check()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_c, __pyx_n_s_schedule_check); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 896, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -16645,8 +16645,8 @@ static PyObject *__pyx_pf_6smelly_6launch_23remote_edit(CYTHON_UNUSED PyObject *
   }
 
   /* "smelly/launch.py":878
- * 
- * 
+ *
+ *
  * def remote_edit(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     c = EditCmd(msg)
  *     if c.abort_signaled:
@@ -16674,11 +16674,11 @@ static PyObject *__pyx_pf_6smelly_6launch_23remote_edit(CYTHON_UNUSED PyObject *
 }
 
 /* "smelly/launch.py":899
- * 
- * 
+ *
+ *
  * def clone_and_launch(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     from .shell_integration import serialize_env
- * 
+ *
  */
 
 /* Python wrapper */
@@ -16784,10 +16784,10 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("clone_and_launch", 0);
 
   /* "smelly/launch.py":900
- * 
+ *
  * def clone_and_launch(msg: str, window: Window) -> None:
  *     from .shell_integration import serialize_env             # <<<<<<<<<<<<<<
- * 
+ *
  *     c = CloneCmd(msg)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 900, __pyx_L1_error)
@@ -16807,7 +16807,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
 
   /* "smelly/launch.py":902
  *     from .shell_integration import serialize_env
- * 
+ *
  *     c = CloneCmd(msg)             # <<<<<<<<<<<<<<
  *     if c.cwd and not c.opts.cwd:
  *         c.opts.cwd = c.cwd
@@ -16833,7 +16833,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
   __pyx_t_2 = 0;
 
   /* "smelly/launch.py":903
- * 
+ *
  *     c = CloneCmd(msg)
  *     if c.cwd and not c.opts.cwd:             # <<<<<<<<<<<<<<
  *         c.opts.cwd = c.cwd
@@ -16876,7 +16876,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly/launch.py":903
- * 
+ *
  *     c = CloneCmd(msg)
  *     if c.cwd and not c.opts.cwd:             # <<<<<<<<<<<<<<
  *         c.opts.cwd = c.cwd
@@ -17259,7 +17259,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
  *     ssh_kitten_cmdline = window.ssh_kitten_cmdline()
  *     if ssh_kitten_cmdline:             # <<<<<<<<<<<<<<
  *         from wellies.ssh.utils import patch_cmdline, set_cwd_in_cmdline, set_env_in_cmdline
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_ssh_kitten_cmdline); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 918, __pyx_L1_error)
   if (__pyx_t_4) {
@@ -17268,7 +17268,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
  *     ssh_kitten_cmdline = window.ssh_kitten_cmdline()
  *     if ssh_kitten_cmdline:
  *         from wellies.ssh.utils import patch_cmdline, set_cwd_in_cmdline, set_env_in_cmdline             # <<<<<<<<<<<<<<
- * 
+ *
  *         cmdline = ssh_kitten_cmdline
  */
     __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 919, __pyx_L1_error)
@@ -17304,7 +17304,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
 
     /* "smelly/launch.py":921
  *         from wellies.ssh.utils import patch_cmdline, set_cwd_in_cmdline, set_env_in_cmdline
- * 
+ *
  *         cmdline = ssh_kitten_cmdline             # <<<<<<<<<<<<<<
  *         if c.opts.cwd:
  *             set_cwd_in_cmdline(c.opts.cwd, cmdline)
@@ -17313,7 +17313,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
     __pyx_v_cmdline = __pyx_v_ssh_kitten_cmdline;
 
     /* "smelly/launch.py":922
- * 
+ *
  *         cmdline = ssh_kitten_cmdline
  *         if c.opts.cwd:             # <<<<<<<<<<<<<<
  *             set_cwd_in_cmdline(c.opts.cwd, cmdline)
@@ -17403,7 +17403,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
       /* "smelly/launch.py":922
- * 
+ *
  *         cmdline = ssh_kitten_cmdline
  *         if c.opts.cwd:             # <<<<<<<<<<<<<<
  *             set_cwd_in_cmdline(c.opts.cwd, cmdline)
@@ -17681,7 +17681,7 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
  *     ssh_kitten_cmdline = window.ssh_kitten_cmdline()
  *     if ssh_kitten_cmdline:             # <<<<<<<<<<<<<<
  *         from wellies.ssh.utils import patch_cmdline, set_cwd_in_cmdline, set_env_in_cmdline
- * 
+ *
  */
     goto __pyx_L13;
   }
@@ -18032,11 +18032,11 @@ static PyObject *__pyx_pf_6smelly_6launch_25clone_and_launch(CYTHON_UNUSED PyObj
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":899
- * 
- * 
+ *
+ *
  * def clone_and_launch(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     from .shell_integration import serialize_env
- * 
+ *
  */
 
   /* function exit code */
@@ -18893,7 +18893,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         if k not in simple:
  *             v = standard_b64decode(v).decode('utf-8', 'replace')             # <<<<<<<<<<<<<<
  *         yield k, v
- * 
+ *
  */
   __pyx_tuple__13 = PyTuple_Pack(2, __pyx_kp_s_utf_8, __pyx_n_s_replace); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 674, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
@@ -18948,14 +18948,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                 window.write_to_child('\n')
  *                 mv = mv[512:]             # <<<<<<<<<<<<<<
  *         window.write_to_child('smelly_DATA_END\n')
- * 
+ *
  */
   __pyx_slice__20 = PySlice_New(__pyx_int_512, Py_None, Py_None); if (unlikely(!__pyx_slice__20)) __PYX_ERR(0, 791, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__20);
   __Pyx_GIVEREF(__pyx_slice__20);
 
   /* "smelly/launch.py":809
- * 
+ *
  *     def parse_message(self, msg: str) -> None:
  *         simple = 'pid', 'envfmt', 'shell', 'bash_version'             # <<<<<<<<<<<<<<
  *         for k, v in parse_message(msg, simple):
@@ -18977,7 +18977,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__22);
 
   /* "smelly/launch.py":35
- * 
+ *
  * @run_once
  * def options_spec() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -18986,8 +18986,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_options_spec, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 35, __pyx_L1_error)
 
   /* "smelly/launch.py":303
- * 
- * 
+ *
+ *
  * def parse_launch_args(args: Optional[Sequence[str]] = None) -> LaunchSpec:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -19001,8 +19001,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__26);
 
   /* "smelly/launch.py":313
- * 
- * 
+ *
+ *
  * def get_env(opts: LaunchCLIOptions, active_child: Optional[Child] = None) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     env: Dict[str, str] = {}
  *     if opts.copy_env and active_child:
@@ -19016,8 +19016,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__29);
 
   /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -19031,8 +19031,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__32);
 
   /* "smelly/launch.py":353
- * 
- * 
+ *
+ *
  * def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:             # <<<<<<<<<<<<<<
  *     if not watchers:
  *         return None
@@ -19043,11 +19043,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(1, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_load_watch_modules, 353, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 353, __pyx_L1_error)
 
   /* "smelly/launch.py":402
- * 
- * 
+ *
+ *
  * def apply_colors(window: Window, spec: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.rc.set_colors import parse_colors
- * 
+ *
  */
   __pyx_tuple__35 = PyTuple_Pack(5, __pyx_n_s_window, __pyx_n_s_spec, __pyx_n_s_parse_colors, __pyx_n_s_colors, __pyx_n_s_profiles); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 402, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
@@ -19055,11 +19055,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_apply_colors, 402, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 402, __pyx_L1_error)
 
   /* "smelly/launch.py":411
- * 
+ *
  * class ForceWindowLaunch:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
   __pyx_tuple__37 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 411, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
@@ -19068,10 +19068,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":414
  *         self.force = False
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.force
- * 
+ *
  */
   __pyx_tuple__39 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__39);
@@ -19080,7 +19080,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":417
  *         return self.force
- * 
+ *
  *     def __call__(self, force: bool) -> 'ForceWindowLaunch':             # <<<<<<<<<<<<<<
  *         self.force = force
  *         return self
@@ -19092,10 +19092,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":421
  *         return self
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_tuple__43 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__43);
@@ -19104,10 +19104,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":424
  *         pass
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
   __pyx_tuple__45 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_a); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 424, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
@@ -19115,19 +19115,19 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_exit, 424, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 424, __pyx_L1_error)
 
   /* "smelly/launch.py":429
- * 
+ *
  * force_window_launch = ForceWindowLaunch()
  * non_window_launch_types = 'background', 'clipboard', 'primary'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_tuple__47 = PyTuple_Pack(3, __pyx_n_s_background, __pyx_n_s_clipboard, __pyx_n_s_primary); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__47);
   __Pyx_GIVEREF(__pyx_tuple__47);
 
   /* "smelly/launch.py":432
- * 
- * 
+ *
+ *
  * def launch(             # <<<<<<<<<<<<<<
  *     boss: Boss,
  *     opts: LaunchCLIOptions,
@@ -19141,7 +19141,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__50);
 
   /* "smelly/launch.py":621
- * 
+ *
  * @run_once
  * def clone_safe_opts() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     return frozenset(
@@ -19150,8 +19150,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_clone_safe_opts, 621, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 621, __pyx_L1_error)
 
   /* "smelly/launch.py":644
- * 
- * 
+ *
+ *
  * def parse_opts_for_clone(args: List[str]) -> Tuple[LaunchCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     unsafe, unsafe_args = parse_launch_args(args)
  *     default_opts, default_args = parse_launch_args()
@@ -19162,8 +19162,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_parse_opts_for_clone, 644, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) __PYX_ERR(0, 644, __pyx_L1_error)
 
   /* "smelly/launch.py":653
- * 
- * 
+ *
+ *
  * def parse_null_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.split('\0'):
@@ -19174,11 +19174,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_parse_null_env, 653, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 653, __pyx_L1_error)
 
   /* "smelly/launch.py":665
- * 
- * 
+ *
+ *
  * def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64decode
- * 
+ *
  */
   __pyx_tuple__56 = PyTuple_Pack(6, __pyx_n_s_msg, __pyx_n_s_simple, __pyx_n_s_standard_b64decode, __pyx_n_s_x, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 665, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__56);
@@ -19186,7 +19186,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_parse_message, 665, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 665, __pyx_L1_error)
 
   /* "smelly/launch.py":679
- * 
+ *
  * class EditCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tdir = ''
@@ -19199,7 +19199,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":740
  *             self.opts.cwd = os.path.dirname(self.file_localpath)
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.tdir:
  *             with suppress(OSError):
@@ -19211,7 +19211,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":746
  *             self.tdir = ''
- * 
+ *
  *     def read_data(self) -> bytes:             # <<<<<<<<<<<<<<
  *         with open(self.file_localpath, 'rb') as f:
  *             return f.read()
@@ -19222,11 +19222,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_read_data, 746, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 746, __pyx_L1_error)
 
   /* "smelly/launch.py":751
- * 
+ *
  *     @property
  *     def file_mod_time(self) -> int:             # <<<<<<<<<<<<<<
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  */
   __pyx_tuple__63 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 751, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
@@ -19235,7 +19235,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":754
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  *     def schedule_check(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.abort_signaled:
  *             add_timer(self.check_status, 1.0, False)
@@ -19247,10 +19247,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":758
  *             add_timer(self.check_status, 1.0, False)
- * 
+ *
  *     def on_edit_window_close(self, window: Window) -> None:             # <<<<<<<<<<<<<<
  *         self.check_status()
- * 
+ *
  */
   __pyx_tuple__67 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_window); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(0, 758, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__67);
@@ -19259,7 +19259,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":761
  *         self.check_status()
- * 
+ *
  *     def check_status(self, timer_id: Optional[int] = None) -> None:             # <<<<<<<<<<<<<<
  *         if self.abort_signaled:
  *             return
@@ -19274,7 +19274,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":781
  *             self.schedule_check()
- * 
+ *
  *     def send_data(             # <<<<<<<<<<<<<<
  *             self, window: Window, data_type: str, data: bytes = b'') -> None:
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
@@ -19288,7 +19288,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__74);
 
   /* "smelly/launch.py":796
- * 
+ *
  * class CloneCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.args: List[str] = []
@@ -19301,7 +19301,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/launch.py":808
  *         self.opts = parse_opts_for_clone(self.args)[0]
- * 
+ *
  *     def parse_message(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         simple = 'pid', 'envfmt', 'shell', 'bash_version'
  *         for k, v in parse_message(msg, simple):
@@ -19312,8 +19312,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__78 = (PyObject*)__Pyx_PyCode_New(2, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__77, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_parse_message, 808, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__78)) __PYX_ERR(0, 808, __pyx_L1_error)
 
   /* "smelly/launch.py":878
- * 
- * 
+ *
+ *
  * def remote_edit(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     c = EditCmd(msg)
  *     if c.abort_signaled:
@@ -19324,11 +19324,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__80 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__79, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_launch_py, __pyx_n_s_remote_edit, 878, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__80)) __PYX_ERR(0, 878, __pyx_L1_error)
 
   /* "smelly/launch.py":899
- * 
- * 
+ *
+ *
  * def clone_and_launch(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     from .shell_integration import serialize_env
- * 
+ *
  */
   __pyx_tuple__81 = PyTuple_Pack(12, __pyx_n_s_msg, __pyx_n_s_window, __pyx_n_s_serialize_env, __pyx_n_s_c, __pyx_n_s_env_to_serialize, __pyx_n_s_is_clone_launch, __pyx_n_s_ssh_kitten_cmdline, __pyx_n_s_patch_cmdline, __pyx_n_s_set_cwd_in_cmdline, __pyx_n_s_set_env_in_cmdline, __pyx_n_s_cmdline, __pyx_n_s_entry); if (unlikely(!__pyx_tuple__81)) __PYX_ERR(0, 899, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__81);
@@ -19652,8 +19652,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/launch.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * import shutil
  * from contextlib import suppress
@@ -19664,7 +19664,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":6
- * 
+ *
  * import os
  * import shutil             # <<<<<<<<<<<<<<
  * from contextlib import suppress
@@ -19680,7 +19680,7 @@ if (!__Pyx_RefNanny) {
  * import shutil
  * from contextlib import suppress             # <<<<<<<<<<<<<<
  * from typing import Any, Container, Dict, FrozenSet, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -19700,7 +19700,7 @@ if (!__Pyx_RefNanny) {
  * import shutil
  * from contextlib import suppress
  * from typing import Any, Container, Dict, FrozenSet, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from .boss import Boss
  */
   __pyx_t_2 = PyList_New(11); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -19789,7 +19789,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":10
  * from typing import Any, Container, Dict, FrozenSet, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple
- * 
+ *
  * from .boss import Boss             # <<<<<<<<<<<<<<
  * from .child import Child
  * from .cli import parse_args
@@ -19809,7 +19809,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":11
- * 
+ *
  * from .boss import Boss
  * from .child import Child             # <<<<<<<<<<<<<<
  * from .cli import parse_args
@@ -20058,7 +20058,7 @@ if (!__Pyx_RefNanny) {
  * from .types import OverlayType, run_once
  * from .utils import get_editor, log_error, resolve_custom_file, which             # <<<<<<<<<<<<<<
  * from .window import CwdRequest, CwdRequestType, Watchers, Window
- * 
+ *
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20099,7 +20099,7 @@ if (!__Pyx_RefNanny) {
  * from .types import OverlayType, run_once
  * from .utils import get_editor, log_error, resolve_custom_file, which
  * from .window import CwdRequest, CwdRequestType, Watchers, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * try:
  */
   __pyx_t_2 = PyList_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
@@ -20139,7 +20139,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":23
  * from .window import CwdRequest, CwdRequestType, Watchers, Window
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from typing import TypedDict
  * except ImportError:
@@ -20154,7 +20154,7 @@ if (!__Pyx_RefNanny) {
     /*try:*/ {
 
       /* "smelly/launch.py":24
- * 
+ *
  * try:
  *     from typing import TypedDict             # <<<<<<<<<<<<<<
  * except ImportError:
@@ -20176,7 +20176,7 @@ if (!__Pyx_RefNanny) {
 
       /* "smelly/launch.py":23
  * from .window import CwdRequest, CwdRequestType, Watchers, Window
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from typing import TypedDict
  * except ImportError:
@@ -20195,7 +20195,7 @@ if (!__Pyx_RefNanny) {
  *     from typing import TypedDict
  * except ImportError:             # <<<<<<<<<<<<<<
  *     TypedDict = dict
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_6) {
@@ -20209,8 +20209,8 @@ if (!__Pyx_RefNanny) {
  *     from typing import TypedDict
  * except ImportError:
  *     TypedDict = dict             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       if (PyDict_SetItem(__pyx_d, __pyx_n_s_TypedDict, ((PyObject *)(&PyDict_Type))) < 0) __PYX_ERR(0, 26, __pyx_L4_except_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -20223,7 +20223,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/launch.py":23
  * from .window import CwdRequest, CwdRequestType, Watchers, Window
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from typing import TypedDict
  * except ImportError:
@@ -20242,8 +20242,8 @@ if (!__Pyx_RefNanny) {
   }
 
   /* "smelly/launch.py":29
- * 
- * 
+ *
+ *
  * class LaunchSpec(NamedTuple):             # <<<<<<<<<<<<<<
  *     opts: LaunchCLIOptions
  *     args: List[str]
@@ -20264,8 +20264,8 @@ if (!__Pyx_RefNanny) {
  * class LaunchSpec(NamedTuple):
  *     opts: LaunchCLIOptions
  *     args: List[str]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_8 = __Pyx_Py3ClassCreate(__pyx_t_7, __pyx_n_s_LaunchSpec, __pyx_t_1, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -20276,8 +20276,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":34
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def options_spec() -> str:
  *     return '''
@@ -20286,7 +20286,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/launch.py":35
- * 
+ *
  * @run_once
  * def options_spec() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -20301,8 +20301,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/launch.py":34
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def options_spec() -> str:
  *     return '''
@@ -20315,8 +20315,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/launch.py":303
- * 
- * 
+ *
+ *
  * def parse_launch_args(args: Optional[Sequence[str]] = None) -> LaunchSpec:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -20349,8 +20349,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":313
- * 
- * 
+ *
+ *
  * def get_env(opts: LaunchCLIOptions, active_child: Optional[Child] = None) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     env: Dict[str, str] = {}
  *     if opts.copy_env and active_child:
@@ -20396,8 +20396,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -20414,7 +20414,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":324
- * 
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:             # <<<<<<<<<<<<<<
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -20442,8 +20442,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":323
- * 
- * 
+ *
+ *
  * def tab_for_window(boss: Boss, opts: LaunchCLIOptions,             # <<<<<<<<<<<<<<
  *                    target_tab: Optional[Tab] = None) -> Optional[Tab]:
  *     def create_tab(tm: Optional[TabManager] = None) -> Tab:
@@ -20457,11 +20457,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":350
- * 
- * 
+ *
+ *
  * watcher_modules: Dict[str, Any] = {}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 350, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20469,8 +20469,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":353
- * 
- * 
+ *
+ *
  * def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:             # <<<<<<<<<<<<<<
  *     if not watchers:
  *         return None
@@ -20502,8 +20502,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":388
- * 
- * 
+ *
+ *
  * class LaunchKwds(TypedDict):             # <<<<<<<<<<<<<<
  *     allow_remote_control: bool
  *     remote_control_passwords: Optional[Dict[str, Sequence[str]]]
@@ -20524,8 +20524,8 @@ if (!__Pyx_RefNanny) {
  *     cmd: Optional[List[str]]
  *     overlay_for: Optional[int]
  *     stdin: Optional[bytes]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_8 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_LaunchKwds, __pyx_t_1, __pyx_t_7, NULL, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 388, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -20536,11 +20536,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":402
- * 
- * 
+ *
+ *
  * def apply_colors(window: Window, spec: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     from smelly.rc.set_colors import parse_colors
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 402, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20564,8 +20564,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/launch.py":410
- * 
- * 
+ *
+ *
  * class ForceWindowLaunch:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.force = False
@@ -20574,11 +20574,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "smelly/launch.py":411
- * 
+ *
  * class ForceWindowLaunch:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 411, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20592,10 +20592,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":414
  *         self.force = False
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.force
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20609,7 +20609,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":417
  *         return self.force
- * 
+ *
  *     def __call__(self, force: bool) -> 'ForceWindowLaunch':             # <<<<<<<<<<<<<<
  *         self.force = force
  *         return self
@@ -20627,10 +20627,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":421
  *         return self
- * 
+ *
  *     def __enter__(self) -> None:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20644,10 +20644,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":424
  *         pass
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.force = False
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 424, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20661,8 +20661,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":410
- * 
- * 
+ *
+ *
  * class ForceWindowLaunch:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.force = False
@@ -20674,11 +20674,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/launch.py":428
- * 
- * 
+ *
+ *
  * force_window_launch = ForceWindowLaunch()             # <<<<<<<<<<<<<<
  * non_window_launch_types = 'background', 'clipboard', 'primary'
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_ForceWindowLaunch); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 428, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -20689,17 +20689,17 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":429
- * 
+ *
  * force_window_launch = ForceWindowLaunch()
  * non_window_launch_types = 'background', 'clipboard', 'primary'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_non_window_launch_types, __pyx_tuple__47) < 0) __PYX_ERR(0, 429, __pyx_L1_error)
 
   /* "smelly/launch.py":432
- * 
- * 
+ *
+ *
  * def launch(             # <<<<<<<<<<<<<<
  *     boss: Boss,
  *     opts: LaunchCLIOptions,
@@ -20708,7 +20708,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/launch.py":433
- * 
+ *
  * def launch(
  *     boss: Boss,             # <<<<<<<<<<<<<<
  *     opts: LaunchCLIOptions,
@@ -20829,8 +20829,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":432
- * 
- * 
+ *
+ *
  * def launch(             # <<<<<<<<<<<<<<
  *     boss: Boss,
  *     opts: LaunchCLIOptions,
@@ -20844,8 +20844,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":620
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def clone_safe_opts() -> FrozenSet[str]:
  *     return frozenset(
@@ -20854,7 +20854,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/launch.py":621
- * 
+ *
  * @run_once
  * def clone_safe_opts() -> FrozenSet[str]:             # <<<<<<<<<<<<<<
  *     return frozenset(
@@ -20875,8 +20875,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":620
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def clone_safe_opts() -> FrozenSet[str]:
  *     return frozenset(
@@ -20889,8 +20889,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":644
- * 
- * 
+ *
+ *
  * def parse_opts_for_clone(args: List[str]) -> Tuple[LaunchCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     unsafe, unsafe_args = parse_launch_args(args)
  *     default_opts, default_args = parse_launch_args()
@@ -20935,8 +20935,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /* "smelly/launch.py":653
- * 
- * 
+ *
+ *
  * def parse_null_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.split('\0'):
@@ -20968,11 +20968,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/launch.py":665
- * 
- * 
+ *
+ *
  * def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64decode
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 665, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -21014,8 +21014,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":678
- * 
- * 
+ *
+ *
  * class EditCmd:             # <<<<<<<<<<<<<<
  *     def __init__(self, msg: str) -> None:
  *         self.tdir = ''
@@ -21024,7 +21024,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/launch.py":679
- * 
+ *
  * class EditCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.tdir = ''
@@ -21043,7 +21043,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":740
  *             self.opts.cwd = os.path.dirname(self.file_localpath)
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.tdir:
  *             with suppress(OSError):
@@ -21060,7 +21060,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":746
  *             self.tdir = ''
- * 
+ *
  *     def read_data(self) -> bytes:             # <<<<<<<<<<<<<<
  *         with open(self.file_localpath, 'rb') as f:
  *             return f.read()
@@ -21076,11 +21076,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/launch.py":751
- * 
+ *
  *     @property
  *     def file_mod_time(self) -> int:             # <<<<<<<<<<<<<<
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 751, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -21092,7 +21092,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":750
  *             return f.read()
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def file_mod_time(self) -> int:
  *         return os.stat(self.file_localpath).st_mtime_ns
@@ -21105,7 +21105,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":754
  *         return os.stat(self.file_localpath).st_mtime_ns
- * 
+ *
  *     def schedule_check(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.abort_signaled:
  *             add_timer(self.check_status, 1.0, False)
@@ -21122,10 +21122,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":758
  *             add_timer(self.check_status, 1.0, False)
- * 
+ *
  *     def on_edit_window_close(self, window: Window) -> None:             # <<<<<<<<<<<<<<
  *         self.check_status()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 758, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -21143,7 +21143,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":761
  *         self.check_status()
- * 
+ *
  *     def check_status(self, timer_id: Optional[int] = None) -> None:             # <<<<<<<<<<<<<<
  *         if self.abort_signaled:
  *             return
@@ -21168,7 +21168,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":781
  *             self.schedule_check()
- * 
+ *
  *     def send_data(             # <<<<<<<<<<<<<<
  *             self, window: Window, data_type: str, data: bytes = b'') -> None:
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
@@ -21177,7 +21177,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "smelly/launch.py":782
- * 
+ *
  *     def send_data(
  *             self, window: Window, data_type: str, data: bytes = b'') -> None:             # <<<<<<<<<<<<<<
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
@@ -21193,7 +21193,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":781
  *             self.schedule_check()
- * 
+ *
  *     def send_data(             # <<<<<<<<<<<<<<
  *             self, window: Window, data_type: str, data: bytes = b'') -> None:
  *         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
@@ -21207,8 +21207,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/launch.py":678
- * 
- * 
+ *
+ *
  * class EditCmd:             # <<<<<<<<<<<<<<
  *     def __init__(self, msg: str) -> None:
  *         self.tdir = ''
@@ -21220,8 +21220,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":795
- * 
- * 
+ *
+ *
  * class CloneCmd:             # <<<<<<<<<<<<<<
  *     def __init__(self, msg: str) -> None:
  *         self.args: List[str] = []
@@ -21230,7 +21230,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/launch.py":796
- * 
+ *
  * class CloneCmd:
  *     def __init__(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         self.args: List[str] = []
@@ -21249,7 +21249,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/launch.py":808
  *         self.opts = parse_opts_for_clone(self.args)[0]
- * 
+ *
  *     def parse_message(self, msg: str) -> None:             # <<<<<<<<<<<<<<
  *         simple = 'pid', 'envfmt', 'shell', 'bash_version'
  *         for k, v in parse_message(msg, simple):
@@ -21266,8 +21266,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/launch.py":795
- * 
- * 
+ *
+ *
  * class CloneCmd:             # <<<<<<<<<<<<<<
  *     def __init__(self, msg: str) -> None:
  *         self.args: List[str] = []
@@ -21279,11 +21279,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":875
- * 
- * 
+ *
+ *
  * edits_in_flight: Dict[int, EditCmd] = {}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 875, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -21291,8 +21291,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/launch.py":878
- * 
- * 
+ *
+ *
  * def remote_edit(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     c = EditCmd(msg)
  *     if c.abort_signaled:
@@ -21313,11 +21313,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/launch.py":899
- * 
- * 
+ *
+ *
  * def clone_and_launch(msg: str, window: Window) -> None:             # <<<<<<<<<<<<<<
  *     from .shell_integration import serialize_env
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 899, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -21337,7 +21337,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/launch.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2019, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -23831,8 +23831,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -23955,8 +23955,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

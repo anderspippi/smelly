@@ -969,11 +969,11 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_12smelly_tests_13unicode_input___pyx_scope_struct__test_word_trie;
 
 /* "smelly_tests/unicode_input.py":9
- * 
+ *
  * class TestUnicodeInput(BaseTest):
  *     def test_word_trie(self):             # <<<<<<<<<<<<<<
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_13unicode_input___pyx_scope_struct__test_word_trie {
   PyObject_HEAD
@@ -1463,11 +1463,11 @@ static PyObject *__pyx_codeobj__9;
 /* Late includes */
 
 /* "smelly_tests/unicode_input.py":9
- * 
+ *
  * class TestUnicodeInput(BaseTest):
  *     def test_word_trie(self):             # <<<<<<<<<<<<<<
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1486,7 +1486,7 @@ static PyObject *__pyx_pw_12smelly_tests_13unicode_input_16TestUnicodeInput_1tes
 
 /* "smelly_tests/unicode_input.py":12
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  *         def matches(a, *words):             # <<<<<<<<<<<<<<
  *             ans = codepoints_for_word(a)
  *             for w in words:
@@ -1580,7 +1580,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_14te
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/unicode_input.py":13
- * 
+ *
  *         def matches(a, *words):
  *             ans = codepoints_for_word(a)             # <<<<<<<<<<<<<<
  *             for w in words:
@@ -1630,7 +1630,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_14te
  *             for w in words:
  *                 ans &= codepoints_for_word(w)             # <<<<<<<<<<<<<<
  *             return set(ans)
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_codepoints_for_word)) { __Pyx_RaiseClosureNameError("codepoints_for_word"); __PYX_ERR(0, 15, __pyx_L1_error) }
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_codepoints_for_word);
@@ -1669,7 +1669,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_14te
  *             for w in words:
  *                 ans &= codepoints_for_word(w)
  *             return set(ans)             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1681,7 +1681,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_14te
 
   /* "smelly_tests/unicode_input.py":12
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  *         def matches(a, *words):             # <<<<<<<<<<<<<<
  *             ans = codepoints_for_word(a)
  *             for w in words:
@@ -1704,11 +1704,11 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_14te
 }
 
 /* "smelly_tests/unicode_input.py":9
- * 
+ *
  * class TestUnicodeInput(BaseTest):
  *     def test_word_trie(self):             # <<<<<<<<<<<<<<
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_test_word_trie(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -1740,7 +1740,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_test
  * class TestUnicodeInput(BaseTest):
  *     def test_word_trie(self):
  *         from wellies.unicode_input.unicode_names import codepoints_for_word             # <<<<<<<<<<<<<<
- * 
+ *
  *         def matches(a, *words):
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -1761,7 +1761,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_test
 
   /* "smelly_tests/unicode_input.py":12
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  *         def matches(a, *words):             # <<<<<<<<<<<<<<
  *             ans = codepoints_for_word(a)
  *             for w in words:
@@ -1773,7 +1773,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_test
 
   /* "smelly_tests/unicode_input.py":18
  *             return set(ans)
- * 
+ *
  *         self.ae(             # <<<<<<<<<<<<<<
  *             matches('horiz', 'ell'),
  *             {0x2026, 0x22EF, 0x2B2C, 0x2B2D, 0xFE19})
@@ -1782,7 +1782,7 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_test
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly_tests/unicode_input.py":19
- * 
+ *
  *         self.ae(
  *             matches('horiz', 'ell'),             # <<<<<<<<<<<<<<
  *             {0x2026, 0x22EF, 0x2B2C, 0x2B2D, 0xFE19})
@@ -2004,11 +2004,11 @@ static PyObject *__pyx_pf_12smelly_tests_13unicode_input_16TestUnicodeInput_test
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/unicode_input.py":9
- * 
+ *
  * class TestUnicodeInput(BaseTest):
  *     def test_word_trie(self):             # <<<<<<<<<<<<<<
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  */
 
   /* function exit code */
@@ -2241,7 +2241,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/unicode_input.py":12
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  *         def matches(a, *words):             # <<<<<<<<<<<<<<
  *             ans = codepoints_for_word(a)
  *             for w in words:
@@ -2252,7 +2252,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_unicode_input_py, __pyx_n_s_matches, 12, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 12, __pyx_L1_error)
 
   /* "smelly_tests/unicode_input.py":19
- * 
+ *
  *         self.ae(
  *             matches('horiz', 'ell'),             # <<<<<<<<<<<<<<
  *             {0x2026, 0x22EF, 0x2B2C, 0x2B2D, 0xFE19})
@@ -2293,11 +2293,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
 
   /* "smelly_tests/unicode_input.py":9
- * 
+ *
  * class TestUnicodeInput(BaseTest):
  *     def test_word_trie(self):             # <<<<<<<<<<<<<<
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_codepoints_for_word, __pyx_n_s_matches, __pyx_n_s_matches); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -2605,11 +2605,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/unicode_input.py":5
- * 
- * 
+ *
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2626,8 +2626,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/unicode_input.py":8
- * 
- * 
+ *
+ *
  * class TestUnicodeInput(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_word_trie(self):
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
@@ -2645,11 +2645,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/unicode_input.py":9
- * 
+ *
  * class TestUnicodeInput(BaseTest):
  *     def test_word_trie(self):             # <<<<<<<<<<<<<<
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_13unicode_input_16TestUnicodeInput_1test_word_trie, 0, __pyx_n_s_TestUnicodeInput_test_word_trie_2, NULL, __pyx_n_s_smelly_tests_unicode_input, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2657,8 +2657,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/unicode_input.py":8
- * 
- * 
+ *
+ *
  * class TestUnicodeInput(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_word_trie(self):
  *         from wellies.unicode_input.unicode_names import codepoints_for_word
@@ -2674,7 +2674,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/unicode_input.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

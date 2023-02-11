@@ -1819,8 +1819,8 @@ static PyObject *__pyx_codeobj__18;
 /* Late includes */
 
 /* "smelly/rc/set_spacing.py":14
- * 
- * 
+ *
+ *
  * def patch_window_edges(w: Window, s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, v in s.items():
  *         which, edge = k.lower().split('-', 1)
@@ -1914,7 +1914,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
   __Pyx_RefNannySetupContext("patch_window_edges", 0);
 
   /* "smelly/rc/set_spacing.py":15
- * 
+ *
  * def patch_window_edges(w: Window, s: Dict[str, Optional[float]]) -> None:
  *     for k, v in s.items():             # <<<<<<<<<<<<<<
  *         which, edge = k.lower().split('-', 1)
@@ -1987,11 +1987,11 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -2068,11 +2068,11 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_3);
@@ -2351,7 +2351,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
  *             w.patch_edge_width(which, 'top', v)
  *         elif edge == 'bottom':             # <<<<<<<<<<<<<<
  *             w.patch_edge_width(which, 'bottom', v)
- * 
+ *
  */
     __pyx_t_9 = (__Pyx_PyString_Equals(__pyx_v_edge, __pyx_n_s_bottom, Py_EQ)); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 23, __pyx_L1_error)
     if (__pyx_t_9) {
@@ -2360,8 +2360,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
  *             w.patch_edge_width(which, 'top', v)
  *         elif edge == 'bottom':
  *             w.patch_edge_width(which, 'bottom', v)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_patch_edge_width); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 24, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
@@ -2420,13 +2420,13 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
  *             w.patch_edge_width(which, 'top', v)
  *         elif edge == 'bottom':             # <<<<<<<<<<<<<<
  *             w.patch_edge_width(which, 'bottom', v)
- * 
+ *
  */
     }
     __pyx_L9:;
 
     /* "smelly/rc/set_spacing.py":15
- * 
+ *
  * def patch_window_edges(w: Window, s: Dict[str, Optional[float]]) -> None:
  *     for k, v in s.items():             # <<<<<<<<<<<<<<
  *         which, edge = k.lower().split('-', 1)
@@ -2436,8 +2436,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/set_spacing.py":14
- * 
- * 
+ *
+ *
  * def patch_window_edges(w: Window, s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, v in s.items():
  *         which, edge = k.lower().split('-', 1)
@@ -2465,8 +2465,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_patch_window_edges(CYTHON_UN
 }
 
 /* "smelly/rc/set_spacing.py":27
- * 
- * 
+ *
+ *
  * def patch_configured_edges(opts: 'Options', s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, val in s.items():
  *         if val is None:
@@ -2565,7 +2565,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_2patch_configured_edges(CYTH
   __Pyx_RefNannySetupContext("patch_configured_edges", 0);
 
   /* "smelly/rc/set_spacing.py":28
- * 
+ *
  * def patch_configured_edges(opts: 'Options', s: Dict[str, Optional[float]]) -> None:
  *     for k, val in s.items():             # <<<<<<<<<<<<<<
  *         if val is None:
@@ -2638,11 +2638,11 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_2patch_configured_edges(CYTH
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -2748,11 +2748,11 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_2patch_configured_edges(CYTH
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_3);
@@ -2826,7 +2826,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_2patch_configured_edges(CYTH
  *         q = f'window_{which}_width'
  *         new_edges = getattr(opts, q)._replace(**{edge: val})             # <<<<<<<<<<<<<<
  *         setattr(opts, q, new_edges)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_GetAttr(__pyx_v_opts, __pyx_v_q); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -2851,13 +2851,13 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_2patch_configured_edges(CYTH
  *         q = f'window_{which}_width'
  *         new_edges = getattr(opts, q)._replace(**{edge: val})
  *         setattr(opts, q, new_edges)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_13 = PyObject_SetAttr(__pyx_v_opts, __pyx_v_q, __pyx_v_new_edges); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 34, __pyx_L1_error)
 
     /* "smelly/rc/set_spacing.py":28
- * 
+ *
  * def patch_configured_edges(opts: 'Options', s: Dict[str, Optional[float]]) -> None:
  *     for k, val in s.items():             # <<<<<<<<<<<<<<
  *         if val is None:
@@ -2868,8 +2868,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_2patch_configured_edges(CYTH
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/set_spacing.py":27
- * 
- * 
+ *
+ *
  * def patch_configured_edges(opts: 'Options', s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, val in s.items():
  *         if val is None:
@@ -2899,8 +2899,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_2patch_configured_edges(CYTH
 }
 
 /* "smelly/rc/set_spacing.py":37
- * 
- * 
+ *
+ *
  * def parse_spacing_settings(args: Iterable[str]) -> Dict[str, Optional[float]]:             # <<<<<<<<<<<<<<
  *     mapper: Dict[str, List[str]] = {}
  *     for q in ('margin', 'padding'):
@@ -2955,7 +2955,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_4parse_spacing_settings(CYTH
   __Pyx_RefNannySetupContext("parse_spacing_settings", 0);
 
   /* "smelly/rc/set_spacing.py":38
- * 
+ *
  * def parse_spacing_settings(args: Iterable[str]) -> Dict[str, Optional[float]]:
  *     mapper: Dict[str, List[str]] = {}             # <<<<<<<<<<<<<<
  *     for q in ('margin', 'padding'):
@@ -3666,7 +3666,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_4parse_spacing_settings(CYTH
  *         for q in which:
  *             settings[q] = val             # <<<<<<<<<<<<<<
  *     return settings
- * 
+ *
  */
       if (unlikely(PyDict_SetItem(__pyx_v_settings, __pyx_v_q, __pyx_v_val) < 0)) __PYX_ERR(0, 61, __pyx_L1_error)
 
@@ -3694,8 +3694,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_4parse_spacing_settings(CYTH
  *         for q in which:
  *             settings[q] = val
  *     return settings             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_settings);
@@ -3703,8 +3703,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_4parse_spacing_settings(CYTH
   goto __pyx_L0;
 
   /* "smelly/rc/set_spacing.py":37
- * 
- * 
+ *
+ *
  * def parse_spacing_settings(args: Iterable[str]) -> Dict[str, Optional[float]]:             # <<<<<<<<<<<<<<
  *     mapper: Dict[str, List[str]] = {}
  *     for q in ('margin', 'padding'):
@@ -3736,7 +3736,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_4parse_spacing_settings(CYTH
 
 /* "smelly/rc/set_spacing.py":102
  *     args = RemoteCommand.Args(spec='MARGIN_OR_PADDING ...', minimum_count=1, json_field='settings', special_parse='parse_set_spacing(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('At least one setting must be specified')
@@ -3854,7 +3854,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_message_to_smel
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/set_spacing.py":103
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if not args:             # <<<<<<<<<<<<<<
  *             self.fatal('At least one setting must be specified')
@@ -3891,7 +3891,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_message_to_smel
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/set_spacing.py":103
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if not args:             # <<<<<<<<<<<<<<
  *             self.fatal('At least one setting must be specified')
@@ -4037,7 +4037,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_message_to_smel
  *             self.fatal(str(e))
  *         ans = {'match_window': opts.match, 'match_tab': opts.match_tab, 'all': opts.all, 'configured': opts.configured, 'settings': settings}             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -4066,7 +4066,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_message_to_smel
  *             self.fatal(str(e))
  *         ans = {'match_window': opts.match, 'match_tab': opts.match_tab, 'all': opts.all, 'configured': opts.configured, 'settings': settings}
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4076,7 +4076,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_message_to_smel
 
   /* "smelly/rc/set_spacing.py":102
  *     args = RemoteCommand.Args(spec='MARGIN_OR_PADDING ...', minimum_count=1, json_field='settings', special_parse='parse_set_spacing(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('At least one setting must be specified')
@@ -4104,7 +4104,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_message_to_smel
 
 /* "smelly/rc/set_spacing.py":112
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         settings: Dict[str, Optional[float]] = payload_get('settings')
@@ -4222,7 +4222,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/set_spacing.py":113
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         windows = self.windows_for_payload(boss, window, payload_get)             # <<<<<<<<<<<<<<
  *         settings: Dict[str, Optional[float]] = payload_get('settings')
@@ -4312,7 +4312,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
  *         settings: Dict[str, Optional[float]] = payload_get('settings')
  *         dirtied_tabs = {}             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4323,7 +4323,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
  *         settings: Dict[str, Optional[float]] = payload_get('settings')
  *         dirtied_tabs = {}
  *         from smelly.fast_data_types import get_options             # <<<<<<<<<<<<<<
- * 
+ *
  *         if payload_get('configured'):
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
@@ -4343,10 +4343,10 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
 
   /* "smelly/rc/set_spacing.py":118
  *         from smelly.fast_data_types import get_options
- * 
+ *
  *         if payload_get('configured'):             # <<<<<<<<<<<<<<
  *             patch_configured_edges(get_options(), settings)
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_payload_get);
   __pyx_t_1 = __pyx_v_payload_get; __pyx_t_5 = NULL;
@@ -4369,10 +4369,10 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
   if (__pyx_t_6) {
 
     /* "smelly/rc/set_spacing.py":119
- * 
+ *
  *         if payload_get('configured'):
  *             patch_configured_edges(get_options(), settings)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for w in windows:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_patch_configured_edges); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
@@ -4444,16 +4444,16 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
 
     /* "smelly/rc/set_spacing.py":118
  *         from smelly.fast_data_types import get_options
- * 
+ *
  *         if payload_get('configured'):             # <<<<<<<<<<<<<<
  *             patch_configured_edges(get_options(), settings)
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_spacing.py":121
  *             patch_configured_edges(get_options(), settings)
- * 
+ *
  *         for w in windows:             # <<<<<<<<<<<<<<
  *             if w:
  *                 patch_window_edges(w, settings)
@@ -4501,7 +4501,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
     __pyx_t_1 = 0;
 
     /* "smelly/rc/set_spacing.py":122
- * 
+ *
  *         for w in windows:
  *             if w:             # <<<<<<<<<<<<<<
  *                 patch_window_edges(w, settings)
@@ -4598,7 +4598,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
  *                 tab = w.tabref()
  *                 if tab is not None:             # <<<<<<<<<<<<<<
  *                     dirtied_tabs[tab.id] = tab
- * 
+ *
  */
       __pyx_t_6 = (__pyx_v_tab != Py_None);
       __pyx_t_10 = (__pyx_t_6 != 0);
@@ -4608,7 +4608,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
  *                 tab = w.tabref()
  *                 if tab is not None:
  *                     dirtied_tabs[tab.id] = tab             # <<<<<<<<<<<<<<
- * 
+ *
  *         for tab in dirtied_tabs.values():
  */
         __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tab, __pyx_n_s_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
@@ -4621,12 +4621,12 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
  *                 tab = w.tabref()
  *                 if tab is not None:             # <<<<<<<<<<<<<<
  *                     dirtied_tabs[tab.id] = tab
- * 
+ *
  */
       }
 
       /* "smelly/rc/set_spacing.py":122
- * 
+ *
  *         for w in windows:
  *             if w:             # <<<<<<<<<<<<<<
  *                 patch_window_edges(w, settings)
@@ -4636,7 +4636,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
 
     /* "smelly/rc/set_spacing.py":121
  *             patch_configured_edges(get_options(), settings)
- * 
+ *
  *         for w in windows:             # <<<<<<<<<<<<<<
  *             if w:
  *                 patch_window_edges(w, settings)
@@ -4646,7 +4646,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
 
   /* "smelly/rc/set_spacing.py":128
  *                     dirtied_tabs[tab.id] = tab
- * 
+ *
  *         for tab in dirtied_tabs.values():             # <<<<<<<<<<<<<<
  *             tab.relayout()
  *         return None
@@ -4697,11 +4697,11 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
     __pyx_t_2 = 0;
 
     /* "smelly/rc/set_spacing.py":129
- * 
+ *
  *         for tab in dirtied_tabs.values():
  *             tab.relayout()             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_tab, __pyx_n_s_relayout); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
@@ -4724,7 +4724,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
 
     /* "smelly/rc/set_spacing.py":128
  *                     dirtied_tabs[tab.id] = tab
- * 
+ *
  *         for tab in dirtied_tabs.values():             # <<<<<<<<<<<<<<
  *             tab.relayout()
  *         return None
@@ -4736,8 +4736,8 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
  *         for tab in dirtied_tabs.values():
  *             tab.relayout()
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -4745,7 +4745,7 @@ static PyObject *__pyx_pf_6smelly_2rc_11set_spacing_10SetSpacing_2response_from_
 
   /* "smelly/rc/set_spacing.py":112
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         settings: Dict[str, Optional[float]] = payload_get('settings')
@@ -5008,8 +5008,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
 
   /* "smelly/rc/set_spacing.py":14
- * 
- * 
+ *
+ *
  * def patch_window_edges(w: Window, s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, v in s.items():
  *         which, edge = k.lower().split('-', 1)
@@ -5020,8 +5020,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_set_spacing_py, __pyx_n_s_patch_window_edges, 14, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 14, __pyx_L1_error)
 
   /* "smelly/rc/set_spacing.py":27
- * 
- * 
+ *
+ *
  * def patch_configured_edges(opts: 'Options', s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, val in s.items():
  *         if val is None:
@@ -5032,8 +5032,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rc_set_spacing_py, __pyx_n_s_patch_configured_edges, 27, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 27, __pyx_L1_error)
 
   /* "smelly/rc/set_spacing.py":37
- * 
- * 
+ *
+ *
  * def parse_spacing_settings(args: Iterable[str]) -> Dict[str, Optional[float]]:             # <<<<<<<<<<<<<<
  *     mapper: Dict[str, List[str]] = {}
  *     for q in ('margin', 'padding'):
@@ -5056,7 +5056,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_spacing.py":102
  *     args = RemoteCommand.Args(spec='MARGIN_OR_PADDING ...', minimum_count=1, json_field='settings', special_parse='parse_set_spacing(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('At least one setting must be specified')
@@ -5068,7 +5068,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_spacing.py":112
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         settings: Dict[str, Optional[float]] = payload_get('settings')
@@ -5366,10 +5366,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/set_spacing.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Dict, Iterable, List, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -5416,9 +5416,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_spacing.py":7
  * from typing import TYPE_CHECKING, Dict, Iterable, List, Optional
- * 
+ *
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -5500,7 +5500,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_spacing.py":9
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetSpacingRCOptions as CLIOptions
  *     from smelly.options.types import Options
@@ -5512,11 +5512,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_spacing.py":10
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetSpacingRCOptions as CLIOptions             # <<<<<<<<<<<<<<
  *     from smelly.options.types import Options
- * 
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -5536,8 +5536,8 @@ if (!__Pyx_RefNanny) {
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetSpacingRCOptions as CLIOptions
  *     from smelly.options.types import Options             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -5555,7 +5555,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_spacing.py":9
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetSpacingRCOptions as CLIOptions
  *     from smelly.options.types import Options
@@ -5563,8 +5563,8 @@ if (!__Pyx_RefNanny) {
   }
 
   /* "smelly/rc/set_spacing.py":14
- * 
- * 
+ *
+ *
  * def patch_window_edges(w: Window, s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, v in s.items():
  *         which, edge = k.lower().split('-', 1)
@@ -5605,8 +5605,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/set_spacing.py":27
- * 
- * 
+ *
+ *
  * def patch_configured_edges(opts: 'Options', s: Dict[str, Optional[float]]) -> None:             # <<<<<<<<<<<<<<
  *     for k, val in s.items():
  *         if val is None:
@@ -5644,8 +5644,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/set_spacing.py":37
- * 
- * 
+ *
+ *
  * def parse_spacing_settings(args: Iterable[str]) -> Dict[str, Optional[float]]:             # <<<<<<<<<<<<<<
  *     mapper: Dict[str, List[str]] = {}
  *     for q in ('margin', 'padding'):
@@ -5688,8 +5688,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_spacing.py":65
- * 
- * 
+ *
+ *
  * class SetSpacing(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     settings+/dict.spacing: An object mapping margins/paddings using canonical form {'margin-top': 50, 'padding-left': null} etc
@@ -5707,7 +5707,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/rc/set_spacing.py":66
- * 
+ *
  * class SetSpacing(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     settings+/dict.spacing: An object mapping margins/paddings using canonical form {'margin-top': 50, 'padding-left': null} etc
@@ -5718,7 +5718,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_spacing.py":74
  *     '''
- * 
+ *
  *     short_desc = 'Set window paddings and margins'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Set the paddings and margins for the specified windows (defaults to active window).'
@@ -5795,7 +5795,7 @@ if (!__Pyx_RefNanny) {
  *         + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
  *     )
  *     args = RemoteCommand.Args(spec='MARGIN_OR_PADDING ...', minimum_count=1, json_field='settings', special_parse='parse_set_spacing(args)')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error)
@@ -5818,7 +5818,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_spacing.py":102
  *     args = RemoteCommand.Args(spec='MARGIN_OR_PADDING ...', minimum_count=1, json_field='settings', special_parse='parse_set_spacing(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('At least one setting must be specified')
@@ -5847,7 +5847,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_spacing.py":112
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         settings: Dict[str, Optional[float]] = payload_get('settings')
@@ -5884,8 +5884,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/set_spacing.py":65
- * 
- * 
+ *
+ *
  * class SetSpacing(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     settings+/dict.spacing: An object mapping margins/paddings using canonical form {'margin-top': 50, 'padding-left': null} etc
@@ -5899,8 +5899,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/set_spacing.py":133
- * 
- * 
+ *
+ *
  * set_spacing = SetSpacing()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_SetSpacing); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
@@ -5914,7 +5914,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_spacing.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

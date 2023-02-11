@@ -1490,10 +1490,10 @@ static PyObject *__pyx_codeobj__4;
 
 /* "smelly/rc/remove_marker.py":29
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1594,10 +1594,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_message_to_
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/remove_marker.py":30
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {'match': opts.match, 'self': opts.self}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1617,10 +1617,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_message_to_
 
   /* "smelly/rc/remove_marker.py":29
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  */
 
   /* function exit code */
@@ -1637,7 +1637,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_message_to_
 
 /* "smelly/rc/remove_marker.py":32
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -1748,7 +1748,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_2response_f
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/remove_marker.py":33
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -1862,7 +1862,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_2response_f
  *             if window:
  *                 window.remove_marker()             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_remove_marker); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 35, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -1893,7 +1893,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_2response_f
     }
 
     /* "smelly/rc/remove_marker.py":33
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -1906,8 +1906,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_2response_f
  *             if window:
  *                 window.remove_marker()
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -1915,7 +1915,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13remove_marker_12RemoveMarker_2response_f
 
   /* "smelly/rc/remove_marker.py":32
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2044,10 +2044,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/remove_marker.py":29
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -2056,7 +2056,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/remove_marker.py":32
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2351,10 +2351,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/remove_marker.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2380,9 +2380,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/remove_marker.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2457,10 +2457,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/remove_marker.py":9
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import RemoveMarkerRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2469,11 +2469,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/remove_marker.py":10
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import RemoveMarkerRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2491,16 +2491,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/remove_marker.py":9
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import RemoveMarkerRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/remove_marker.py":13
- * 
- * 
+ *
+ *
  * class RemoveMarker(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to remove the marker from
@@ -2518,7 +2518,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/remove_marker.py":14
- * 
+ *
  * class RemoveMarker(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: Which window to remove the marker from
@@ -2529,7 +2529,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/remove_marker.py":19
  *     '''
- * 
+ *
  *     short_desc = 'Remove the currently set marker, if any.'             # <<<<<<<<<<<<<<
  *     options_spec = (
  *         MATCH_WINDOW_OPTION
@@ -2561,10 +2561,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/remove_marker.py":29
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2590,7 +2590,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/remove_marker.py":32
  *         return {'match': opts.match, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2627,8 +2627,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/remove_marker.py":13
- * 
- * 
+ *
+ *
  * class RemoveMarker(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to remove the marker from
@@ -2642,8 +2642,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/remove_marker.py":39
- * 
- * 
+ *
+ *
  * remove_marker = RemoveMarker()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_RemoveMarker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -2657,7 +2657,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/remove_marker.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

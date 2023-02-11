@@ -971,7 +971,7 @@ struct __pyx_obj_12smelly_tests_11check_build___pyx_scope_struct_1_run_tests;
 
 /* "smelly_tests/check_build.py":106
  *         del pygments
- * 
+ *
  *     def test_docs_url(self):             # <<<<<<<<<<<<<<
  *         from smelly.constants import website_url
  *         from smelly.utils import docs_url
@@ -984,7 +984,7 @@ struct __pyx_obj_12smelly_tests_11check_build___pyx_scope_struct__test_docs_url 
 
 /* "smelly_tests/check_build.py":110
  *         from smelly.utils import docs_url
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):             # <<<<<<<<<<<<<<
  *             def t(x, e):
  *                 self.ae(p(x), base + e)
@@ -1910,11 +1910,11 @@ static PyObject *__pyx_codeobj__34;
 /* Late includes */
 
 /* "smelly_tests/check_build.py":16
- * 
+ *
  * class TestBuild(BaseTest):
  *     def test_exe(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import kitten_exe, smelly_exe, str_version
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1955,7 +1955,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
  * class TestBuild(BaseTest):
  *     def test_exe(self) -> None:
  *         from smelly.constants import kitten_exe, smelly_exe, str_version             # <<<<<<<<<<<<<<
- * 
+ *
  *         exe = smelly_exe()
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
@@ -1991,7 +1991,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
 
   /* "smelly_tests/check_build.py":19
  *         from smelly.constants import kitten_exe, smelly_exe, str_version
- * 
+ *
  *         exe = smelly_exe()             # <<<<<<<<<<<<<<
  *         self.assertTrue(os.access(exe, os.X_OK))
  *         self.assertTrue(os.path.isfile(exe))
@@ -2016,7 +2016,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
   __pyx_t_2 = 0;
 
   /* "smelly_tests/check_build.py":20
- * 
+ *
  *         exe = smelly_exe()
  *         self.assertTrue(os.access(exe, os.X_OK))             # <<<<<<<<<<<<<<
  *         self.assertTrue(os.path.isfile(exe))
@@ -2395,7 +2395,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
  *         self.assertTrue(os.path.isfile(exe))
  *         self.assertIn(str_version, subprocess.check_output(             # <<<<<<<<<<<<<<
  *             [exe, '--version']).decode())
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2404,7 +2404,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
  *         self.assertTrue(os.path.isfile(exe))
  *         self.assertIn(str_version, subprocess.check_output(
  *             [exe, '--version']).decode())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_loading_extensions(self) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_subprocess); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 26, __pyx_L1_error)
@@ -2415,7 +2415,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
  *         self.assertTrue(os.path.isfile(exe))
  *         self.assertIn(str_version, subprocess.check_output(             # <<<<<<<<<<<<<<
  *             [exe, '--version']).decode())
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_check_output); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2425,7 +2425,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
  *         self.assertTrue(os.path.isfile(exe))
  *         self.assertIn(str_version, subprocess.check_output(
  *             [exe, '--version']).decode())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_loading_extensions(self) -> None:
  */
   __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
@@ -2520,11 +2520,11 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/check_build.py":16
- * 
+ *
  * class TestBuild(BaseTest):
  *     def test_exe(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import kitten_exe, smelly_exe, str_version
- * 
+ *
  */
 
   /* function exit code */
@@ -2552,7 +2552,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_test_exe(CYTHO
 
 /* "smelly_tests/check_build.py":29
  *             [exe, '--version']).decode())
- * 
+ *
  *     def test_loading_extensions(self) -> None:             # <<<<<<<<<<<<<<
  *         import smelly.fast_data_types as fdt
  *         from wellies.choose import subseq_matcher
@@ -2588,7 +2588,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_2test_loading_
   __Pyx_RefNannySetupContext("test_loading_extensions", 0);
 
   /* "smelly_tests/check_build.py":30
- * 
+ *
  *     def test_loading_extensions(self) -> None:
  *         import smelly.fast_data_types as fdt             # <<<<<<<<<<<<<<
  *         from wellies.choose import subseq_matcher
@@ -2654,7 +2654,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_2test_loading_
  *         from wellies.diff import diff_speedup
  *         from wellies.transfer import rsync             # <<<<<<<<<<<<<<
  *         from wellies.unicode_input import unicode_names
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2675,7 +2675,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_2test_loading_
  *         from wellies.diff import diff_speedup
  *         from wellies.transfer import rsync
  *         from wellies.unicode_input import unicode_names             # <<<<<<<<<<<<<<
- * 
+ *
  *         del fdt, unicode_names, subseq_matcher, diff_speedup, rsync
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
@@ -2695,9 +2695,9 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_2test_loading_
 
   /* "smelly_tests/check_build.py":36
  *         from wellies.unicode_input import unicode_names
- * 
+ *
  *         del fdt, unicode_names, subseq_matcher, diff_speedup, rsync             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_loading_shaders(self) -> None:
  */
   __Pyx_DECREF(__pyx_v_fdt);
@@ -2713,7 +2713,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_2test_loading_
 
   /* "smelly_tests/check_build.py":29
  *             [exe, '--version']).decode())
- * 
+ *
  *     def test_loading_extensions(self) -> None:             # <<<<<<<<<<<<<<
  *         import smelly.fast_data_types as fdt
  *         from wellies.choose import subseq_matcher
@@ -2740,10 +2740,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_2test_loading_
 
 /* "smelly_tests/check_build.py":38
  *         del fdt, unicode_names, subseq_matcher, diff_speedup, rsync
- * 
+ *
  *     def test_loading_shaders(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.utils import load_shaders
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2777,10 +2777,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_4test_loading_
   __Pyx_RefNannySetupContext("test_loading_shaders", 0);
 
   /* "smelly_tests/check_build.py":39
- * 
+ *
  *     def test_loading_shaders(self) -> None:
  *         from smelly.utils import load_shaders             # <<<<<<<<<<<<<<
- * 
+ *
  *         for name in 'cell border bgimage tint blit graphics'.split():
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -2800,10 +2800,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_4test_loading_
 
   /* "smelly_tests/check_build.py":41
  *         from smelly.utils import load_shaders
- * 
+ *
  *         for name in 'cell border bgimage tint blit graphics'.split():             # <<<<<<<<<<<<<<
  *             load_shaders(name)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_cell_border_bgimage_tint_blit_gr, __pyx_n_s_split); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2866,10 +2866,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_4test_loading_
     __pyx_t_2 = 0;
 
     /* "smelly_tests/check_build.py":42
- * 
+ *
  *         for name in 'cell border bgimage tint blit graphics'.split():
  *             load_shaders(name)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_glfw_modules(self) -> None:
  */
     __Pyx_INCREF(__pyx_v_load_shaders);
@@ -2892,20 +2892,20 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_4test_loading_
 
     /* "smelly_tests/check_build.py":41
  *         from smelly.utils import load_shaders
- * 
+ *
  *         for name in 'cell border bgimage tint blit graphics'.split():             # <<<<<<<<<<<<<<
  *             load_shaders(name)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/check_build.py":38
  *         del fdt, unicode_names, subseq_matcher, diff_speedup, rsync
- * 
+ *
  *     def test_loading_shaders(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.utils import load_shaders
- * 
+ *
  */
 
   /* function exit code */
@@ -2928,10 +2928,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_4test_loading_
 
 /* "smelly_tests/check_build.py":44
  *             load_shaders(name)
- * 
+ *
  *     def test_glfw_modules(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import glfw_path, is_macos
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2976,10 +2976,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
   __Pyx_RefNannySetupContext("test_glfw_modules", 0);
 
   /* "smelly_tests/check_build.py":45
- * 
+ *
  *     def test_glfw_modules(self) -> None:
  *         from smelly.constants import glfw_path, is_macos             # <<<<<<<<<<<<<<
- * 
+ *
  *         linux_backends = ['x11']
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -3007,7 +3007,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
 
   /* "smelly_tests/check_build.py":47
  *         from smelly.constants import glfw_path, is_macos
- * 
+ *
  *         linux_backends = ['x11']             # <<<<<<<<<<<<<<
  *         if not self.is_ci:
  *             linux_backends.append('wayland')
@@ -3021,7 +3021,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
   __pyx_t_2 = 0;
 
   /* "smelly_tests/check_build.py":48
- * 
+ *
  *         linux_backends = ['x11']
  *         if not self.is_ci:             # <<<<<<<<<<<<<<
  *             linux_backends.append('wayland')
@@ -3044,7 +3044,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
     __pyx_t_5 = __Pyx_PyList_Append(__pyx_v_linux_backends, __pyx_n_s_wayland); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 49, __pyx_L1_error)
 
     /* "smelly_tests/check_build.py":48
- * 
+ *
  *         linux_backends = ['x11']
  *         if not self.is_ci:             # <<<<<<<<<<<<<<
  *             linux_backends.append('wayland')
@@ -3227,7 +3227,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
  *             self.assertTrue(
  *                 os.access(path, os.X_OK),             # <<<<<<<<<<<<<<
  *                 f'{path} is not executable')
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_os); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
@@ -3291,7 +3291,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
  *             self.assertTrue(
  *                 os.access(path, os.X_OK),
  *                 f'{path} is not executable')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_all_kitten_names(self) -> None:
  */
     __pyx_t_8 = __Pyx_PyObject_FormatSimple(__pyx_v_path, __pyx_empty_unicode); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 56, __pyx_L1_error)
@@ -3362,10 +3362,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
 
   /* "smelly_tests/check_build.py":44
  *             load_shaders(name)
- * 
+ *
  *     def test_glfw_modules(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import glfw_path, is_macos
- * 
+ *
  */
 
   /* function exit code */
@@ -3396,10 +3396,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_6test_glfw_mod
 
 /* "smelly_tests/check_build.py":58
  *                 f'{path} is not executable')
- * 
+ *
  *     def test_all_kitten_names(self) -> None:             # <<<<<<<<<<<<<<
  *         from wellies.runner import all_kitten_names
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3434,10 +3434,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_8test_all_kitt
   __Pyx_RefNannySetupContext("test_all_kitten_names", 0);
 
   /* "smelly_tests/check_build.py":59
- * 
+ *
  *     def test_all_kitten_names(self) -> None:
  *         from wellies.runner import all_kitten_names             # <<<<<<<<<<<<<<
- * 
+ *
  *         names = all_kitten_names()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
@@ -3457,7 +3457,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_8test_all_kitt
 
   /* "smelly_tests/check_build.py":61
  *         from wellies.runner import all_kitten_names
- * 
+ *
  *         names = all_kitten_names()             # <<<<<<<<<<<<<<
  *         self.assertIn('diff', names)
  *         self.assertIn('hints', names)
@@ -3482,7 +3482,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_8test_all_kitt
   __pyx_t_2 = 0;
 
   /* "smelly_tests/check_build.py":62
- * 
+ *
  *         names = all_kitten_names()
  *         self.assertIn('diff', names)             # <<<<<<<<<<<<<<
  *         self.assertIn('hints', names)
@@ -3542,7 +3542,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_8test_all_kitt
  *         self.assertIn('diff', names)
  *         self.assertIn('hints', names)             # <<<<<<<<<<<<<<
  *         self.assertGreater(len(names), 8)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3597,7 +3597,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_8test_all_kitt
  *         self.assertIn('diff', names)
  *         self.assertIn('hints', names)
  *         self.assertGreater(len(names), 8)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_filesystem_locations(self) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertGreater); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L1_error)
@@ -3656,10 +3656,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_8test_all_kitt
 
   /* "smelly_tests/check_build.py":58
  *                 f'{path} is not executable')
- * 
+ *
  *     def test_all_kitten_names(self) -> None:             # <<<<<<<<<<<<<<
  *         from wellies.runner import all_kitten_names
- * 
+ *
  */
 
   /* function exit code */
@@ -3683,10 +3683,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_8test_all_kitt
 
 /* "smelly_tests/check_build.py":66
  *         self.assertGreater(len(names), 8)
- * 
+ *
  *     def test_filesystem_locations(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3705,7 +3705,7 @@ static PyObject *__pyx_pw_12smelly_tests_11check_build_9TestBuild_11test_filesys
 
 /* "smelly_tests/check_build.py":78
  *         self.assertTrue(os.path.exists(zsh), f'Shell integration: {zsh}')
- * 
+ *
  *         def is_executable(x):             # <<<<<<<<<<<<<<
  *             mode = os.stat(x).st_mode
  *             q = stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH
@@ -3739,7 +3739,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_25test_filesys
   __Pyx_RefNannySetupContext("is_executable", 0);
 
   /* "smelly_tests/check_build.py":79
- * 
+ *
  *         def is_executable(x):
  *             mode = os.stat(x).st_mode             # <<<<<<<<<<<<<<
  *             q = stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH
@@ -3776,7 +3776,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_25test_filesys
  *             mode = os.stat(x).st_mode
  *             q = stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH             # <<<<<<<<<<<<<<
  *             return mode & q == q
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_stat); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3808,7 +3808,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_25test_filesys
  *             mode = os.stat(x).st_mode
  *             q = stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH
  *             return mode & q == q             # <<<<<<<<<<<<<<
- * 
+ *
  *         for x in ('smelly', 'kitten', 'askpass.py'):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3822,7 +3822,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_25test_filesys
 
   /* "smelly_tests/check_build.py":78
  *         self.assertTrue(os.path.exists(zsh), f'Shell integration: {zsh}')
- * 
+ *
  *         def is_executable(x):             # <<<<<<<<<<<<<<
  *             mode = os.stat(x).st_mode
  *             q = stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH
@@ -3845,10 +3845,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_25test_filesys
 
 /* "smelly_tests/check_build.py":66
  *         self.assertGreater(len(names), 8)
- * 
+ *
  *     def test_filesystem_locations(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesystem_locations(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -3877,10 +3877,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
   __Pyx_RefNannySetupContext("test_filesystem_locations", 0);
 
   /* "smelly_tests/check_build.py":67
- * 
+ *
  *     def test_filesystem_locations(self) -> None:
  *         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir             # <<<<<<<<<<<<<<
- * 
+ *
  *         zsh = os.path.join(shell_integration_dir, 'zsh')
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
@@ -3924,7 +3924,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
 
   /* "smelly_tests/check_build.py":69
  *         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
- * 
+ *
  *         zsh = os.path.join(shell_integration_dir, 'zsh')             # <<<<<<<<<<<<<<
  *         self.assertTrue(
  *             os.path.isdir(terminfo_dir),
@@ -3986,7 +3986,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
   __pyx_t_2 = 0;
 
   /* "smelly_tests/check_build.py":70
- * 
+ *
  *         zsh = os.path.join(shell_integration_dir, 'zsh')
  *         self.assertTrue(             # <<<<<<<<<<<<<<
  *             os.path.isdir(terminfo_dir),
@@ -4135,7 +4135,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
  *             os.path.exists(logo_png_file),
  *             f'Logo file: {logo_png_file}')             # <<<<<<<<<<<<<<
  *         self.assertTrue(os.path.exists(zsh), f'Shell integration: {zsh}')
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_v_logo_png_file, __pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -4197,7 +4197,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
  *             os.path.exists(logo_png_file),
  *             f'Logo file: {logo_png_file}')
  *         self.assertTrue(os.path.exists(zsh), f'Shell integration: {zsh}')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def is_executable(x):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
@@ -4283,7 +4283,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
 
   /* "smelly_tests/check_build.py":78
  *         self.assertTrue(os.path.exists(zsh), f'Shell integration: {zsh}')
- * 
+ *
  *         def is_executable(x):             # <<<<<<<<<<<<<<
  *             mode = os.stat(x).st_mode
  *             q = stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH
@@ -4295,7 +4295,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
 
   /* "smelly_tests/check_build.py":83
  *             return mode & q == q
- * 
+ *
  *         for x in ('smelly', 'kitten', 'askpass.py'):             # <<<<<<<<<<<<<<
  *             x = os.path.join(shell_integration_dir, 'ssh', x)
  *             self.assertTrue(is_executable(x), f'{x} is not executable')
@@ -4313,7 +4313,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
     __pyx_t_1 = 0;
 
     /* "smelly_tests/check_build.py":84
- * 
+ *
  *         for x in ('smelly', 'kitten', 'askpass.py'):
  *             x = os.path.join(shell_integration_dir, 'ssh', x)             # <<<<<<<<<<<<<<
  *             self.assertTrue(is_executable(x), f'{x} is not executable')
@@ -4447,7 +4447,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
 
     /* "smelly_tests/check_build.py":83
  *             return mode & q == q
- * 
+ *
  *         for x in ('smelly', 'kitten', 'askpass.py'):             # <<<<<<<<<<<<<<
  *             x = os.path.join(shell_integration_dir, 'ssh', x)
  *             self.assertTrue(is_executable(x), f'{x} is not executable')
@@ -4486,7 +4486,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
  *             self.assertTrue(
  *                 os.path.isdir(local_docs()),             # <<<<<<<<<<<<<<
  *                 f'Local docs: {local_docs()}')
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_os); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 88, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
@@ -4533,7 +4533,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
  *             self.assertTrue(
  *                 os.path.isdir(local_docs()),
  *                 f'Local docs: {local_docs()}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ca_certificates(self):
  */
     __Pyx_INCREF(__pyx_v_local_docs);
@@ -4620,10 +4620,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
 
   /* "smelly_tests/check_build.py":66
  *         self.assertGreater(len(names), 8)
- * 
+ *
  *     def test_filesystem_locations(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
- * 
+ *
  */
 
   /* function exit code */
@@ -4654,10 +4654,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_10test_filesys
 
 /* "smelly_tests/check_build.py":91
  *                 f'Local docs: {local_docs()}')
- * 
+ *
  *     def test_ca_certificates(self):             # <<<<<<<<<<<<<<
  *         import ssl
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4693,10 +4693,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
   __Pyx_RefNannySetupContext("test_ca_certificates", 0);
 
   /* "smelly_tests/check_build.py":92
- * 
+ *
  *     def test_ca_certificates(self):
  *         import ssl             # <<<<<<<<<<<<<<
- * 
+ *
  *         if not getattr(sys, 'frozen', False):
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_ssl, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -4706,7 +4706,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
 
   /* "smelly_tests/check_build.py":94
  *         import ssl
- * 
+ *
  *         if not getattr(sys, 'frozen', False):             # <<<<<<<<<<<<<<
  *             self.skipTest('CA certificates are only tested on frozen builds')
  *         c = ssl.create_default_context()
@@ -4722,7 +4722,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
   if (__pyx_t_4) {
 
     /* "smelly_tests/check_build.py":95
- * 
+ *
  *         if not getattr(sys, 'frozen', False):
  *             self.skipTest('CA certificates are only tested on frozen builds')             # <<<<<<<<<<<<<<
  *         c = ssl.create_default_context()
@@ -4749,7 +4749,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
 
     /* "smelly_tests/check_build.py":94
  *         import ssl
- * 
+ *
  *         if not getattr(sys, 'frozen', False):             # <<<<<<<<<<<<<<
  *             self.skipTest('CA certificates are only tested on frozen builds')
  *         c = ssl.create_default_context()
@@ -4761,7 +4761,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
  *             self.skipTest('CA certificates are only tested on frozen builds')
  *         c = ssl.create_default_context()             # <<<<<<<<<<<<<<
  *         self.assertGreater(c.cert_store_stats()['x509_ca'], 2)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_ssl, __pyx_n_s_create_default_context); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4787,7 +4787,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
  *             self.skipTest('CA certificates are only tested on frozen builds')
  *         c = ssl.create_default_context()
  *         self.assertGreater(c.cert_store_stats()['x509_ca'], 2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_pygments(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertGreater); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
@@ -4863,10 +4863,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
 
   /* "smelly_tests/check_build.py":91
  *                 f'Local docs: {local_docs()}')
- * 
+ *
  *     def test_ca_certificates(self):             # <<<<<<<<<<<<<<
  *         import ssl
- * 
+ *
  */
 
   /* function exit code */
@@ -4890,7 +4890,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_12test_ca_cert
 
 /* "smelly_tests/check_build.py":99
  *         self.assertGreater(c.cert_store_stats()['x509_ca'], 2)
- * 
+ *
  *     def test_pygments(self):             # <<<<<<<<<<<<<<
  *         if not getattr(sys, 'frozen', False):
  *             self.skipTest('Pygments is only tested on frozen builds')
@@ -4925,7 +4925,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_14test_pygment
   __Pyx_RefNannySetupContext("test_pygments", 0);
 
   /* "smelly_tests/check_build.py":100
- * 
+ *
  *     def test_pygments(self):
  *         if not getattr(sys, 'frozen', False):             # <<<<<<<<<<<<<<
  *             self.skipTest('Pygments is only tested on frozen builds')
@@ -4946,7 +4946,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_14test_pygment
  *         if not getattr(sys, 'frozen', False):
  *             self.skipTest('Pygments is only tested on frozen builds')             # <<<<<<<<<<<<<<
  *         import pygments
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_skipTest); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4968,7 +4968,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_14test_pygment
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly_tests/check_build.py":100
- * 
+ *
  *     def test_pygments(self):
  *         if not getattr(sys, 'frozen', False):             # <<<<<<<<<<<<<<
  *             self.skipTest('Pygments is only tested on frozen builds')
@@ -4980,7 +4980,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_14test_pygment
  *         if not getattr(sys, 'frozen', False):
  *             self.skipTest('Pygments is only tested on frozen builds')
  *         import pygments             # <<<<<<<<<<<<<<
- * 
+ *
  *         del pygments
  */
   __pyx_t_2 = __Pyx_Import(__pyx_n_s_pygments, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -4990,9 +4990,9 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_14test_pygment
 
   /* "smelly_tests/check_build.py":104
  *         import pygments
- * 
+ *
  *         del pygments             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_docs_url(self):
  */
   __Pyx_DECREF(__pyx_v_pygments);
@@ -5000,7 +5000,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_14test_pygment
 
   /* "smelly_tests/check_build.py":99
  *         self.assertGreater(c.cert_store_stats()['x509_ca'], 2)
- * 
+ *
  *     def test_pygments(self):             # <<<<<<<<<<<<<<
  *         if not getattr(sys, 'frozen', False):
  *             self.skipTest('Pygments is only tested on frozen builds')
@@ -5024,7 +5024,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_14test_pygment
 
 /* "smelly_tests/check_build.py":106
  *         del pygments
- * 
+ *
  *     def test_docs_url(self):             # <<<<<<<<<<<<<<
  *         from smelly.constants import website_url
  *         from smelly.utils import docs_url
@@ -5046,7 +5046,7 @@ static PyObject *__pyx_pw_12smelly_tests_11check_build_9TestBuild_17test_docs_ur
 
 /* "smelly_tests/check_build.py":110
  *         from smelly.utils import docs_url
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):             # <<<<<<<<<<<<<<
  *             def t(x, e):
  *                 self.ae(p(x), base + e)
@@ -5133,11 +5133,11 @@ static PyObject *__pyx_pw_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
 }
 
 /* "smelly_tests/check_build.py":111
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):
  *             def t(x, e):             # <<<<<<<<<<<<<<
  *                 self.ae(p(x), base + e)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5228,7 +5228,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
  *         def run_tests(p, base, suffix='.html'):
  *             def t(x, e):
  *                 self.ae(p(x), base + e)             # <<<<<<<<<<<<<<
- * 
+ *
  *             t('', 'index.html' if suffix == '.html' else '')
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 112, __pyx_L1_error) }
@@ -5306,11 +5306,11 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/check_build.py":111
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):
  *             def t(x, e):             # <<<<<<<<<<<<<<
  *                 self.ae(p(x), base + e)
- * 
+ *
  */
 
   /* function exit code */
@@ -5333,7 +5333,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
 
 /* "smelly_tests/check_build.py":110
  *         from smelly.utils import docs_url
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):             # <<<<<<<<<<<<<<
  *             def t(x, e):
  *                 self.ae(p(x), base + e)
@@ -5372,11 +5372,11 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_base);
 
   /* "smelly_tests/check_build.py":111
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):
  *             def t(x, e):             # <<<<<<<<<<<<<<
  *                 self.ae(p(x), base + e)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_11check_build_9TestBuild_13test_docs_url_9run_tests_1t, 0, __pyx_n_s_TestBuild_test_docs_url_locals_r, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_check_build, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5385,7 +5385,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
 
   /* "smelly_tests/check_build.py":114
  *                 self.ae(p(x), base + e)
- * 
+ *
  *             t('', 'index.html' if suffix == '.html' else '')             # <<<<<<<<<<<<<<
  *             t('conf', f'conf{suffix}')
  *             t('wellies/ssh#frag', f'wellies/ssh{suffix}#frag')
@@ -5404,7 +5404,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/check_build.py":115
- * 
+ *
  *             t('', 'index.html' if suffix == '.html' else '')
  *             t('conf', f'conf{suffix}')             # <<<<<<<<<<<<<<
  *             t('wellies/ssh#frag', f'wellies/ssh{suffix}#frag')
@@ -5637,7 +5637,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
  *             t('#ref=at-close-tab', f'remote-control{suffix}#at-close-tab')
  *             t('#ref=action-copy', f'actions{suffix}#copy')             # <<<<<<<<<<<<<<
  *             t('#ref=doc-/marks', f'marks{suffix}')
- * 
+ *
  */
   __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5670,7 +5670,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
  *             t('#ref=at-close-tab', f'remote-control{suffix}#at-close-tab')
  *             t('#ref=action-copy', f'actions{suffix}#copy')
  *             t('#ref=doc-/marks', f'marks{suffix}')             # <<<<<<<<<<<<<<
- * 
+ *
  *         run_tests(partial(docs_url, local_docs_root='/docs'), 'file:///docs/')
  */
   __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_v_suffix, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
@@ -5685,7 +5685,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
 
   /* "smelly_tests/check_build.py":110
  *         from smelly.utils import docs_url
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):             # <<<<<<<<<<<<<<
  *             def t(x, e):
  *                 self.ae(p(x), base + e)
@@ -5709,7 +5709,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_13test_docs_ur
 
 /* "smelly_tests/check_build.py":106
  *         del pygments
- * 
+ *
  *     def test_docs_url(self):             # <<<<<<<<<<<<<<
  *         from smelly.constants import website_url
  *         from smelly.utils import docs_url
@@ -5746,11 +5746,11 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/check_build.py":107
- * 
+ *
  *     def test_docs_url(self):
  *         from smelly.constants import website_url             # <<<<<<<<<<<<<<
  *         from smelly.utils import docs_url
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5771,7 +5771,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
  *     def test_docs_url(self):
  *         from smelly.constants import website_url
  *         from smelly.utils import docs_url             # <<<<<<<<<<<<<<
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -5791,7 +5791,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
 
   /* "smelly_tests/check_build.py":110
  *         from smelly.utils import docs_url
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):             # <<<<<<<<<<<<<<
  *             def t(x, e):
  *                 self.ae(p(x), base + e)
@@ -5804,7 +5804,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
 
   /* "smelly_tests/check_build.py":126
  *             t('#ref=doc-/marks', f'marks{suffix}')
- * 
+ *
  *         run_tests(partial(docs_url, local_docs_root='/docs'), 'file:///docs/')             # <<<<<<<<<<<<<<
  *         w = website_url()
  *         run_tests(partial(docs_url, local_docs_root=None), w, '/')
@@ -5838,7 +5838,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/check_build.py":127
- * 
+ *
  *         run_tests(partial(docs_url, local_docs_root='/docs'), 'file:///docs/')
  *         w = website_url()             # <<<<<<<<<<<<<<
  *         run_tests(partial(docs_url, local_docs_root=None), w, '/')
@@ -5905,7 +5905,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
  *         self.ae(
  *             docs_url('#ref=issues-123'),             # <<<<<<<<<<<<<<
  *             'https://github.com/backbiter-no/smelly/issues/123')
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_docs_url);
   __pyx_t_4 = __pyx_v_docs_url; __pyx_t_5 = NULL;
@@ -5974,7 +5974,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
 
   /* "smelly_tests/check_build.py":106
  *         del pygments
- * 
+ *
  *     def test_docs_url(self):             # <<<<<<<<<<<<<<
  *         from smelly.constants import website_url
  *         from smelly.utils import docs_url
@@ -6004,10 +6004,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_16test_docs_ur
 
 /* "smelly_tests/check_build.py":133
  *             'https://github.com/backbiter-no/smelly/issues/123')
- * 
+ *
  *     def test_launcher_ensures_stdio(self):             # <<<<<<<<<<<<<<
  *         import subprocess
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6045,10 +6045,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_18test_launche
   __Pyx_RefNannySetupContext("test_launcher_ensures_stdio", 0);
 
   /* "smelly_tests/check_build.py":134
- * 
+ *
  *     def test_launcher_ensures_stdio(self):
  *         import subprocess             # <<<<<<<<<<<<<<
- * 
+ *
  *         from smelly.constants import smelly_exe
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
@@ -6058,9 +6058,9 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_18test_launche
 
   /* "smelly_tests/check_build.py":136
  *         import subprocess
- * 
+ *
  *         from smelly.constants import smelly_exe             # <<<<<<<<<<<<<<
- * 
+ *
  *         exe = smelly_exe()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
@@ -6080,7 +6080,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_18test_launche
 
   /* "smelly_tests/check_build.py":138
  *         from smelly.constants import smelly_exe
- * 
+ *
  *         exe = smelly_exe()             # <<<<<<<<<<<<<<
  *         cp = subprocess.run(
  *             [
@@ -6105,7 +6105,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_18test_launche
   __pyx_t_2 = 0;
 
   /* "smelly_tests/check_build.py":139
- * 
+ *
  *         exe = smelly_exe()
  *         cp = subprocess.run(             # <<<<<<<<<<<<<<
  *             [
@@ -6185,8 +6185,8 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_18test_launche
  *             ]
  *         )
  *         self.assertEqual(cp.returncode, 0)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6243,10 +6243,10 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_18test_launche
 
   /* "smelly_tests/check_build.py":133
  *             'https://github.com/backbiter-no/smelly/issues/123')
- * 
+ *
  *     def test_launcher_ensures_stdio(self):             # <<<<<<<<<<<<<<
  *         import subprocess
- * 
+ *
  */
 
   /* function exit code */
@@ -6271,8 +6271,8 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_9TestBuild_18test_launche
 }
 
 /* "smelly_tests/check_build.py":158
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     tests = unittest.defaultTestLoader.loadTestsFromTestCase(TestBuild)
  *     r = unittest.TextTestRunner(verbosity=4)
@@ -6310,7 +6310,7 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_main(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "smelly_tests/check_build.py":159
- * 
+ *
  * def main() -> None:
  *     tests = unittest.defaultTestLoader.loadTestsFromTestCase(TestBuild)             # <<<<<<<<<<<<<<
  *     r = unittest.TextTestRunner(verbosity=4)
@@ -6437,8 +6437,8 @@ static PyObject *__pyx_pf_12smelly_tests_11check_build_main(CYTHON_UNUSED PyObje
   }
 
   /* "smelly_tests/check_build.py":158
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     tests = unittest.defaultTestLoader.loadTestsFromTestCase(TestBuild)
  *     r = unittest.TextTestRunner(verbosity=4)
@@ -6958,7 +6958,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":78
  *         self.assertTrue(os.path.exists(zsh), f'Shell integration: {zsh}')
- * 
+ *
  *         def is_executable(x):             # <<<<<<<<<<<<<<
  *             mode = os.stat(x).st_mode
  *             q = stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH
@@ -6970,7 +6970,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":83
  *             return mode & q == q
- * 
+ *
  *         for x in ('smelly', 'kitten', 'askpass.py'):             # <<<<<<<<<<<<<<
  *             x = os.path.join(shell_integration_dir, 'ssh', x)
  *             self.assertTrue(is_executable(x), f'{x} is not executable')
@@ -6980,11 +6980,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly_tests/check_build.py":111
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):
  *             def t(x, e):             # <<<<<<<<<<<<<<
  *                 self.ae(p(x), base + e)
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_e); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -6993,7 +6993,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":110
  *         from smelly.utils import docs_url
- * 
+ *
  *         def run_tests(p, base, suffix='.html'):             # <<<<<<<<<<<<<<
  *             def t(x, e):
  *                 self.ae(p(x), base + e)
@@ -7016,11 +7016,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__12);
 
   /* "smelly_tests/check_build.py":16
- * 
+ *
  * class TestBuild(BaseTest):
  *     def test_exe(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import kitten_exe, smelly_exe, str_version
- * 
+ *
  */
   __pyx_tuple__13 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_kitten_exe, __pyx_n_s_smelly_exe, __pyx_n_s_str_version, __pyx_n_s_exe); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
@@ -7029,7 +7029,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":29
  *             [exe, '--version']).decode())
- * 
+ *
  *     def test_loading_extensions(self) -> None:             # <<<<<<<<<<<<<<
  *         import smelly.fast_data_types as fdt
  *         from wellies.choose import subseq_matcher
@@ -7041,10 +7041,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":38
  *         del fdt, unicode_names, subseq_matcher, diff_speedup, rsync
- * 
+ *
  *     def test_loading_shaders(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.utils import load_shaders
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_load_shaders, __pyx_n_s_name_2); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -7053,10 +7053,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":44
  *             load_shaders(name)
- * 
+ *
  *     def test_glfw_modules(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import glfw_path, is_macos
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_glfw_path, __pyx_n_s_is_macos, __pyx_n_s_linux_backends, __pyx_n_s_modules, __pyx_n_s_name_2, __pyx_n_s_path); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -7065,10 +7065,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":58
  *                 f'{path} is not executable')
- * 
+ *
  *     def test_all_kitten_names(self) -> None:             # <<<<<<<<<<<<<<
  *         from wellies.runner import all_kitten_names
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_all_kitten_names, __pyx_n_s_names); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -7077,10 +7077,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":66
  *         self.assertGreater(len(names), 8)
- * 
+ *
  *     def test_filesystem_locations(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
- * 
+ *
  */
   __pyx_tuple__23 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_local_docs, __pyx_n_s_logo_png_file, __pyx_n_s_shell_integration_dir, __pyx_n_s_terminfo_dir, __pyx_n_s_zsh, __pyx_n_s_is_executable, __pyx_n_s_is_executable, __pyx_n_s_x); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
@@ -7089,10 +7089,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":91
  *                 f'Local docs: {local_docs()}')
- * 
+ *
  *     def test_ca_certificates(self):             # <<<<<<<<<<<<<<
  *         import ssl
- * 
+ *
  */
   __pyx_tuple__25 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_ssl, __pyx_n_s_c); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
@@ -7101,7 +7101,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":99
  *         self.assertGreater(c.cert_store_stats()['x509_ca'], 2)
- * 
+ *
  *     def test_pygments(self):             # <<<<<<<<<<<<<<
  *         if not getattr(sys, 'frozen', False):
  *             self.skipTest('Pygments is only tested on frozen builds')
@@ -7113,7 +7113,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":106
  *         del pygments
- * 
+ *
  *     def test_docs_url(self):             # <<<<<<<<<<<<<<
  *         from smelly.constants import website_url
  *         from smelly.utils import docs_url
@@ -7125,10 +7125,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/check_build.py":133
  *             'https://github.com/backbiter-no/smelly/issues/123')
- * 
+ *
  *     def test_launcher_ensures_stdio(self):             # <<<<<<<<<<<<<<
  *         import subprocess
- * 
+ *
  */
   __pyx_tuple__31 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_subprocess, __pyx_n_s_smelly_exe, __pyx_n_s_exe, __pyx_n_s_cp); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
@@ -7136,8 +7136,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_check_build_py, __pyx_n_s_test_launcher_ensures_stdio, 133, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 133, __pyx_L1_error)
 
   /* "smelly_tests/check_build.py":158
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     tests = unittest.defaultTestLoader.loadTestsFromTestCase(TestBuild)
  *     r = unittest.TextTestRunner(verbosity=4)
@@ -7456,8 +7456,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/check_build.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * import stat
  * import subprocess
@@ -7468,7 +7468,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/check_build.py":6
- * 
+ *
  * import os
  * import stat             # <<<<<<<<<<<<<<
  * import subprocess
@@ -7508,7 +7508,7 @@ if (!__Pyx_RefNanny) {
  * import sys
  * import unittest             # <<<<<<<<<<<<<<
  * from functools import partial
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_unittest, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7519,7 +7519,7 @@ if (!__Pyx_RefNanny) {
  * import sys
  * import unittest
  * from functools import partial             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -7538,10 +7538,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":12
  * from functools import partial
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7558,8 +7558,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/check_build.py":15
- * 
- * 
+ *
+ *
  * class TestBuild(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_exe(self) -> None:
  *         from smelly.constants import kitten_exe, smelly_exe, str_version
@@ -7577,11 +7577,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/check_build.py":16
- * 
+ *
  * class TestBuild(BaseTest):
  *     def test_exe(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import kitten_exe, smelly_exe, str_version
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7595,7 +7595,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":29
  *             [exe, '--version']).decode())
- * 
+ *
  *     def test_loading_extensions(self) -> None:             # <<<<<<<<<<<<<<
  *         import smelly.fast_data_types as fdt
  *         from wellies.choose import subseq_matcher
@@ -7612,10 +7612,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":38
  *         del fdt, unicode_names, subseq_matcher, diff_speedup, rsync
- * 
+ *
  *     def test_loading_shaders(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.utils import load_shaders
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7629,10 +7629,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":44
  *             load_shaders(name)
- * 
+ *
  *     def test_glfw_modules(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import glfw_path, is_macos
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7646,10 +7646,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":58
  *                 f'{path} is not executable')
- * 
+ *
  *     def test_all_kitten_names(self) -> None:             # <<<<<<<<<<<<<<
  *         from wellies.runner import all_kitten_names
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7663,10 +7663,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":66
  *         self.assertGreater(len(names), 8)
- * 
+ *
  *     def test_filesystem_locations(self) -> None:             # <<<<<<<<<<<<<<
  *         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7680,10 +7680,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":91
  *                 f'Local docs: {local_docs()}')
- * 
+ *
  *     def test_ca_certificates(self):             # <<<<<<<<<<<<<<
  *         import ssl
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_11check_build_9TestBuild_13test_ca_certificates, 0, __pyx_n_s_TestBuild_test_ca_certificates, NULL, __pyx_n_s_smelly_tests_check_build, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7692,7 +7692,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":99
  *         self.assertGreater(c.cert_store_stats()['x509_ca'], 2)
- * 
+ *
  *     def test_pygments(self):             # <<<<<<<<<<<<<<
  *         if not getattr(sys, 'frozen', False):
  *             self.skipTest('Pygments is only tested on frozen builds')
@@ -7704,7 +7704,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":106
  *         del pygments
- * 
+ *
  *     def test_docs_url(self):             # <<<<<<<<<<<<<<
  *         from smelly.constants import website_url
  *         from smelly.utils import docs_url
@@ -7716,10 +7716,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/check_build.py":133
  *             'https://github.com/backbiter-no/smelly/issues/123')
- * 
+ *
  *     def test_launcher_ensures_stdio(self):             # <<<<<<<<<<<<<<
  *         import subprocess
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_11check_build_9TestBuild_19test_launcher_ensures_stdio, 0, __pyx_n_s_TestBuild_test_launcher_ensures, NULL, __pyx_n_s_smelly_tests_check_build, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7727,8 +7727,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/check_build.py":15
- * 
- * 
+ *
+ *
  * class TestBuild(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_exe(self) -> None:
  *         from smelly.constants import kitten_exe, smelly_exe, str_version
@@ -7742,8 +7742,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/check_build.py":158
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     tests = unittest.defaultTestLoader.loadTestsFromTestCase(TestBuild)
  *     r = unittest.TextTestRunner(verbosity=4)
@@ -7761,7 +7761,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/check_build.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

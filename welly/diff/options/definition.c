@@ -1794,10 +1794,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/diff/options/definition.py":21
- * 
+ *
  * # diff {{{
  * agr('diff', 'Diffing')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple_ = PyTuple_Pack(2, __pyx_n_s_diff, __pyx_n_s_Diffing); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 21, __pyx_L1_error)
@@ -1806,7 +1806,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":23
  * agr('diff', 'Diffing')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'syntax_aliases',
  *     'pyj:py pyi:py recipe:py',
@@ -1817,9 +1817,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":33
  * )
- * 
+ *
  * opt('num_context_lines', '3', option_type='positive_int', long_text='The number of lines of context to show around each change.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__3 = PyTuple_Pack(2, __pyx_n_s_num_context_lines, __pyx_kp_s_3); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 33, __pyx_L1_error)
@@ -1828,7 +1828,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":35
  * opt('num_context_lines', '3', option_type='positive_int', long_text='The number of lines of context to show around each change.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'diff_cmd',
  *     'auto',
@@ -1839,9 +1839,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":46
  * )
- * 
+ *
  * opt('replace_tab_by', '\\x20\\x20\\x20\\x20', option_type='python_string', long_text='The string to replace tabs with. Default is to use four spaces.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__5 = PyTuple_Pack(2, __pyx_n_s_replace_tab_by, __pyx_kp_s_x20_x20_x20_x20); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 46, __pyx_L1_error)
@@ -1850,7 +1850,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":48
  * opt('replace_tab_by', '\\x20\\x20\\x20\\x20', option_type='python_string', long_text='The string to replace tabs with. Default is to use four spaces.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+ignore_name',
  *     '',
@@ -1860,10 +1860,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__7);
 
   /* "welly/diff/options/definition.py":67
- * 
+ *
  * # colors {{{
  * agr('colors', 'Colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__8 = PyTuple_Pack(2, __pyx_n_s_colors, __pyx_n_s_Colors); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 67, __pyx_L1_error)
@@ -1872,7 +1872,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":69
  * agr('colors', 'Colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pygments_style',
  *     'default',
@@ -1883,9 +1883,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":78
  * )
- * 
+ *
  * opt('foreground', 'black', option_type='to_color', long_text='Basic colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__10 = PyTuple_Pack(2, __pyx_n_s_foreground, __pyx_n_s_black); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -1894,7 +1894,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":80
  * opt('foreground', 'black', option_type='to_color', long_text='Basic colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background',
  *     'white',
@@ -1905,9 +1905,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":86
  * )
- * 
+ *
  * opt('title_fg', 'black', option_type='to_color', long_text='Title colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__12 = PyTuple_Pack(2, __pyx_n_s_title_fg, __pyx_n_s_black); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 86, __pyx_L1_error)
@@ -1916,7 +1916,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":88
  * opt('title_fg', 'black', option_type='to_color', long_text='Title colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'title_bg',
  *     'white',
@@ -1927,9 +1927,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":94
  * )
- * 
+ *
  * opt('margin_bg', '#fafbfc', option_type='to_color', long_text='Margin colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__14 = PyTuple_Pack(2, __pyx_n_s_margin_bg, __pyx_kp_s_fafbfc); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 94, __pyx_L1_error)
@@ -1938,7 +1938,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":96
  * opt('margin_bg', '#fafbfc', option_type='to_color', long_text='Margin colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'margin_fg',
  *     '#aaaaaa',
@@ -1949,9 +1949,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":102
  * )
- * 
+ *
  * opt('removed_bg', '#ffeef0', option_type='to_color', long_text='Removed text backgrounds')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__16 = PyTuple_Pack(2, __pyx_n_s_removed_bg, __pyx_kp_s_ffeef0); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -1960,7 +1960,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":104
  * opt('removed_bg', '#ffeef0', option_type='to_color', long_text='Removed text backgrounds')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'highlight_removed_bg',
  *     '#fdb8c0',
@@ -1971,7 +1971,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":110
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'removed_margin_bg',
  *     '#ffdce0',
@@ -1982,9 +1982,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":116
  * )
- * 
+ *
  * opt('added_bg', '#e6ffed', option_type='to_color', long_text='Added text backgrounds')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__19 = PyTuple_Pack(2, __pyx_n_s_added_bg, __pyx_kp_s_e6ffed); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 116, __pyx_L1_error)
@@ -1993,7 +1993,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":118
  * opt('added_bg', '#e6ffed', option_type='to_color', long_text='Added text backgrounds')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'highlight_added_bg',
  *     '#acf2bd',
@@ -2004,7 +2004,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":124
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'added_margin_bg',
  *     '#cdffd8',
@@ -2015,9 +2015,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":130
  * )
- * 
+ *
  * opt('filler_bg', '#fafbfc', option_type='to_color', long_text='Filler (empty) line background')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('margin_filler_bg', 'none', option_type='to_color_or_none', long_text='Filler (empty) line background in margins, defaults to the filler background')
  */
   __pyx_tuple__22 = PyTuple_Pack(2, __pyx_n_s_filler_bg, __pyx_kp_s_fafbfc); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 130, __pyx_L1_error)
@@ -2026,9 +2026,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":132
  * opt('filler_bg', '#fafbfc', option_type='to_color', long_text='Filler (empty) line background')
- * 
+ *
  * opt('margin_filler_bg', 'none', option_type='to_color_or_none', long_text='Filler (empty) line background in margins, defaults to the filler background')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('hunk_margin_bg', '#dbedff', option_type='to_color', long_text='Hunk header colors')
  */
   __pyx_tuple__23 = PyTuple_Pack(2, __pyx_n_s_margin_filler_bg, __pyx_n_s_none); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 132, __pyx_L1_error)
@@ -2037,9 +2037,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":134
  * opt('margin_filler_bg', 'none', option_type='to_color_or_none', long_text='Filler (empty) line background in margins, defaults to the filler background')
- * 
+ *
  * opt('hunk_margin_bg', '#dbedff', option_type='to_color', long_text='Hunk header colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__24 = PyTuple_Pack(2, __pyx_n_s_hunk_margin_bg, __pyx_kp_s_dbedff); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 134, __pyx_L1_error)
@@ -2048,7 +2048,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":136
  * opt('hunk_margin_bg', '#dbedff', option_type='to_color', long_text='Hunk header colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hunk_bg',
  *     '#f1f8ff',
@@ -2059,9 +2059,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":142
  * )
- * 
+ *
  * opt('search_bg', '#444', option_type='to_color', long_text='Highlighting')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__26 = PyTuple_Pack(2, __pyx_n_s_search_bg, __pyx_kp_s_444); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 142, __pyx_L1_error)
@@ -2070,7 +2070,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":144
  * opt('search_bg', '#444', option_type='to_color', long_text='Highlighting')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'search_fg',
  *     'white',
@@ -2081,7 +2081,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":150
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_bg',
  *     '#b4d5fe',
@@ -2092,7 +2092,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":156
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_fg',
  *     'black',
@@ -2102,10 +2102,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__29);
 
   /* "welly/diff/options/definition.py":164
- * 
+ *
  * # shortcuts {{{
  * agr('shortcuts', 'Keyboard shortcuts')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __pyx_tuple__30 = PyTuple_Pack(2, __pyx_n_s_shortcuts, __pyx_kp_s_Keyboard_shortcuts); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 164, __pyx_L1_error)
@@ -2114,7 +2114,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":166
  * agr('shortcuts', 'Keyboard shortcuts')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Quit',
  *     'quit q quit',
@@ -2136,7 +2136,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":175
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll down',
  *     'scroll_down j scroll_by 1',
@@ -2158,7 +2158,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":184
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll up',
  *     'scroll_up k scroll_by -1',
@@ -2180,7 +2180,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":193
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to top',
  *     'scroll_top home scroll_to start',
@@ -2191,7 +2191,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":198
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to bottom',
  *     'scroll_bottom end scroll_to end',
@@ -2202,7 +2202,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":203
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to next page',
  *     'scroll_page_down page_down scroll_to next-page',
@@ -2224,7 +2224,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":212
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous page',
  *     'scroll_page_up page_up scroll_to prev-page',
@@ -2235,7 +2235,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":217
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to next change',
  *     'next_change n scroll_to next-change',
@@ -2246,7 +2246,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":222
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous change',
  *     'prev_change p scroll_to prev-change',
@@ -2257,7 +2257,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":227
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Show all context',
  *     'all_context a change_context all',
@@ -2268,7 +2268,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":232
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Show default context',
  *     'default_context = change_context default',
@@ -2279,7 +2279,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":237
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Increase context',
  *     'increase_context + change_context 5',
@@ -2290,7 +2290,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":242
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Decrease context',
  *     'decrease_context - change_context -5',
@@ -2301,7 +2301,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":247
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search forward',
  *     'search_forward / start_search regex forward',
@@ -2312,7 +2312,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":252
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search backward',
  *     'search_backward ? start_search regex backward',
@@ -2323,7 +2323,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":257
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to next search match',
  *     'next_match . scroll_to next-match',
@@ -2345,7 +2345,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":266
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous search match',
  *     'prev_match , scroll_to prev-match',
@@ -2367,7 +2367,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":275
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search forward (no regex)',
  *     'search_forward_simple f start_search substring forward',
@@ -2378,7 +2378,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/definition.py":280
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search backward (no regex)',
  *     'search_backward_simple b start_search substring backward',
@@ -2670,9 +2670,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":7
  * # After editing this file run ./gen-config.py to apply the changes
- * 
+ *
  * from smelly.conf.types import Action, Definition             # <<<<<<<<<<<<<<
- * 
+ *
  * definition = Definition(
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2698,7 +2698,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":9
  * from smelly.conf.types import Action, Definition
- * 
+ *
  * definition = Definition(             # <<<<<<<<<<<<<<
  *     'wellies.diff',
  *     Action('map', 'parse_map', {'key_definitions': 'smelly.conf.utils.welliesKeyMap'}, ['smelly.types.ParsedShortcut', 'smelly.conf.utils.KeyAction']),
@@ -2711,7 +2711,7 @@ if (!__Pyx_RefNanny) {
  *     'wellies.diff',
  *     Action('map', 'parse_map', {'key_definitions': 'smelly.conf.utils.welliesKeyMap'}, ['smelly.types.ParsedShortcut', 'smelly.conf.utils.KeyAction']),             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Action); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2747,7 +2747,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":9
  * from smelly.conf.types import Action, Definition
- * 
+ *
  * definition = Definition(             # <<<<<<<<<<<<<<
  *     'wellies.diff',
  *     Action('map', 'parse_map', {'key_definitions': 'smelly.conf.utils.welliesKeyMap'}, ['smelly.types.ParsedShortcut', 'smelly.conf.utils.KeyAction']),
@@ -2769,7 +2769,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":14
  * )
- * 
+ *
  * agr = definition.add_group             # <<<<<<<<<<<<<<
  * egr = definition.end_group
  * opt = definition.add_option
@@ -2783,7 +2783,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/definition.py":15
- * 
+ *
  * agr = definition.add_group
  * egr = definition.end_group             # <<<<<<<<<<<<<<
  * opt = definition.add_option
@@ -2817,7 +2817,7 @@ if (!__Pyx_RefNanny) {
  * opt = definition.add_option
  * map = definition.add_map             # <<<<<<<<<<<<<<
  * mma = definition.add_mouse_map
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_definition); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2831,7 +2831,7 @@ if (!__Pyx_RefNanny) {
  * opt = definition.add_option
  * map = definition.add_map
  * mma = definition.add_mouse_map             # <<<<<<<<<<<<<<
- * 
+ *
  * # diff {{{
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_definition); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 18, __pyx_L1_error)
@@ -2843,10 +2843,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/definition.py":21
- * 
+ *
  * # diff {{{
  * agr('diff', 'Diffing')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_agr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
@@ -2858,7 +2858,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":23
  * agr('diff', 'Diffing')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'syntax_aliases',
  *     'pyj:py pyi:py recipe:py',
@@ -2880,7 +2880,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":23
  * agr('diff', 'Diffing')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'syntax_aliases',
  *     'pyj:py pyi:py recipe:py',
@@ -2893,9 +2893,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":33
  * )
- * 
+ *
  * opt('num_context_lines', '3', option_type='positive_int', long_text='The number of lines of context to show around each change.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_opt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
@@ -2912,7 +2912,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":35
  * opt('num_context_lines', '3', option_type='positive_int', long_text='The number of lines of context to show around each change.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'diff_cmd',
  *     'auto',
@@ -2933,7 +2933,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":35
  * opt('num_context_lines', '3', option_type='positive_int', long_text='The number of lines of context to show around each change.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'diff_cmd',
  *     'auto',
@@ -2946,9 +2946,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":46
  * )
- * 
+ *
  * opt('replace_tab_by', '\\x20\\x20\\x20\\x20', option_type='python_string', long_text='The string to replace tabs with. Default is to use four spaces.')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_opt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
@@ -2965,7 +2965,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":48
  * opt('replace_tab_by', '\\x20\\x20\\x20\\x20', option_type='python_string', long_text='The string to replace tabs with. Default is to use four spaces.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+ignore_name',
  *     '',
@@ -2996,7 +2996,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":48
  * opt('replace_tab_by', '\\x20\\x20\\x20\\x20', option_type='python_string', long_text='The string to replace tabs with. Default is to use four spaces.')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+ignore_name',
  *     '',
@@ -3009,9 +3009,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":64
  * )
- * 
+ *
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
+ *
  * # colors {{{
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_egr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
@@ -3022,10 +3022,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/definition.py":67
- * 
+ *
  * # colors {{{
  * agr('colors', 'Colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_agr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
@@ -3037,7 +3037,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":69
  * agr('colors', 'Colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pygments_style',
  *     'default',
@@ -3058,7 +3058,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":69
  * agr('colors', 'Colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'pygments_style',
  *     'default',
@@ -3071,9 +3071,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":78
  * )
- * 
+ *
  * opt('foreground', 'black', option_type='to_color', long_text='Basic colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -3090,7 +3090,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":80
  * opt('foreground', 'black', option_type='to_color', long_text='Basic colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background',
  *     'white',
@@ -3103,7 +3103,7 @@ if (!__Pyx_RefNanny) {
  *     'white',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3111,7 +3111,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":80
  * opt('foreground', 'black', option_type='to_color', long_text='Basic colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'background',
  *     'white',
@@ -3124,9 +3124,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":86
  * )
- * 
+ *
  * opt('title_fg', 'black', option_type='to_color', long_text='Title colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
@@ -3143,7 +3143,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":88
  * opt('title_fg', 'black', option_type='to_color', long_text='Title colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'title_bg',
  *     'white',
@@ -3156,7 +3156,7 @@ if (!__Pyx_RefNanny) {
  *     'white',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3164,7 +3164,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":88
  * opt('title_fg', 'black', option_type='to_color', long_text='Title colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'title_bg',
  *     'white',
@@ -3177,9 +3177,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":94
  * )
- * 
+ *
  * opt('margin_bg', '#fafbfc', option_type='to_color', long_text='Margin colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
@@ -3196,7 +3196,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":96
  * opt('margin_bg', '#fafbfc', option_type='to_color', long_text='Margin colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'margin_fg',
  *     '#aaaaaa',
@@ -3209,7 +3209,7 @@ if (!__Pyx_RefNanny) {
  *     '#aaaaaa',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3217,7 +3217,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":96
  * opt('margin_bg', '#fafbfc', option_type='to_color', long_text='Margin colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'margin_fg',
  *     '#aaaaaa',
@@ -3230,9 +3230,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":102
  * )
- * 
+ *
  * opt('removed_bg', '#ffeef0', option_type='to_color', long_text='Removed text backgrounds')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -3249,7 +3249,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":104
  * opt('removed_bg', '#ffeef0', option_type='to_color', long_text='Removed text backgrounds')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'highlight_removed_bg',
  *     '#fdb8c0',
@@ -3262,7 +3262,7 @@ if (!__Pyx_RefNanny) {
  *     '#fdb8c0',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3270,7 +3270,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":104
  * opt('removed_bg', '#ffeef0', option_type='to_color', long_text='Removed text backgrounds')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'highlight_removed_bg',
  *     '#fdb8c0',
@@ -3283,7 +3283,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":110
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'removed_margin_bg',
  *     '#ffdce0',
@@ -3296,7 +3296,7 @@ if (!__Pyx_RefNanny) {
  *     '#ffdce0',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3304,7 +3304,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":110
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'removed_margin_bg',
  *     '#ffdce0',
@@ -3317,9 +3317,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":116
  * )
- * 
+ *
  * opt('added_bg', '#e6ffed', option_type='to_color', long_text='Added text backgrounds')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_opt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
@@ -3336,7 +3336,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":118
  * opt('added_bg', '#e6ffed', option_type='to_color', long_text='Added text backgrounds')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'highlight_added_bg',
  *     '#acf2bd',
@@ -3349,7 +3349,7 @@ if (!__Pyx_RefNanny) {
  *     '#acf2bd',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3357,7 +3357,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":118
  * opt('added_bg', '#e6ffed', option_type='to_color', long_text='Added text backgrounds')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'highlight_added_bg',
  *     '#acf2bd',
@@ -3370,7 +3370,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":124
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'added_margin_bg',
  *     '#cdffd8',
@@ -3383,7 +3383,7 @@ if (!__Pyx_RefNanny) {
  *     '#cdffd8',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3391,7 +3391,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":124
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'added_margin_bg',
  *     '#cdffd8',
@@ -3404,9 +3404,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":130
  * )
- * 
+ *
  * opt('filler_bg', '#fafbfc', option_type='to_color', long_text='Filler (empty) line background')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('margin_filler_bg', 'none', option_type='to_color_or_none', long_text='Filler (empty) line background in margins, defaults to the filler background')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
@@ -3423,9 +3423,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":132
  * opt('filler_bg', '#fafbfc', option_type='to_color', long_text='Filler (empty) line background')
- * 
+ *
  * opt('margin_filler_bg', 'none', option_type='to_color_or_none', long_text='Filler (empty) line background in margins, defaults to the filler background')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt('hunk_margin_bg', '#dbedff', option_type='to_color', long_text='Hunk header colors')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_opt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
@@ -3442,9 +3442,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":134
  * opt('margin_filler_bg', 'none', option_type='to_color_or_none', long_text='Filler (empty) line background in margins, defaults to the filler background')
- * 
+ *
  * opt('hunk_margin_bg', '#dbedff', option_type='to_color', long_text='Hunk header colors')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 134, __pyx_L1_error)
@@ -3461,7 +3461,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":136
  * opt('hunk_margin_bg', '#dbedff', option_type='to_color', long_text='Hunk header colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hunk_bg',
  *     '#f1f8ff',
@@ -3474,7 +3474,7 @@ if (!__Pyx_RefNanny) {
  *     '#f1f8ff',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3482,7 +3482,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":136
  * opt('hunk_margin_bg', '#dbedff', option_type='to_color', long_text='Hunk header colors')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hunk_bg',
  *     '#f1f8ff',
@@ -3495,9 +3495,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":142
  * )
- * 
+ *
  * opt('search_bg', '#444', option_type='to_color', long_text='Highlighting')             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_opt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
@@ -3514,7 +3514,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":144
  * opt('search_bg', '#444', option_type='to_color', long_text='Highlighting')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'search_fg',
  *     'white',
@@ -3527,7 +3527,7 @@ if (!__Pyx_RefNanny) {
  *     'white',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3535,7 +3535,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":144
  * opt('search_bg', '#444', option_type='to_color', long_text='Highlighting')
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'search_fg',
  *     'white',
@@ -3548,7 +3548,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":150
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_bg',
  *     '#b4d5fe',
@@ -3561,7 +3561,7 @@ if (!__Pyx_RefNanny) {
  *     '#b4d5fe',
  *     option_type='to_color',             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3569,7 +3569,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":150
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_bg',
  *     '#b4d5fe',
@@ -3582,7 +3582,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":156
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_fg',
  *     'black',
@@ -3603,7 +3603,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":156
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'select_fg',
  *     'black',
@@ -3618,7 +3618,7 @@ if (!__Pyx_RefNanny) {
  *     option_type='to_color_or_none',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
+ *
  * # shortcuts {{{
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_egr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 161, __pyx_L1_error)
@@ -3629,10 +3629,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/definition.py":164
- * 
+ *
  * # shortcuts {{{
  * agr('shortcuts', 'Keyboard shortcuts')             # <<<<<<<<<<<<<<
- * 
+ *
  * map(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_agr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 164, __pyx_L1_error)
@@ -3644,7 +3644,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":166
  * agr('shortcuts', 'Keyboard shortcuts')
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Quit',
  *     'quit q quit',
@@ -3672,7 +3672,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":175
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll down',
  *     'scroll_down j scroll_by 1',
@@ -3700,7 +3700,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":184
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll up',
  *     'scroll_up k scroll_by -1',
@@ -3728,7 +3728,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":193
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to top',
  *     'scroll_top home scroll_to start',
@@ -3742,7 +3742,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":198
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to bottom',
  *     'scroll_bottom end scroll_to end',
@@ -3756,7 +3756,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":203
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to next page',
  *     'scroll_page_down page_down scroll_to next-page',
@@ -3784,7 +3784,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":212
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous page',
  *     'scroll_page_up page_up scroll_to prev-page',
@@ -3798,7 +3798,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":217
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to next change',
  *     'next_change n scroll_to next-change',
@@ -3812,7 +3812,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":222
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous change',
  *     'prev_change p scroll_to prev-change',
@@ -3826,7 +3826,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":227
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Show all context',
  *     'all_context a change_context all',
@@ -3840,7 +3840,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":232
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Show default context',
  *     'default_context = change_context default',
@@ -3854,7 +3854,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":237
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Increase context',
  *     'increase_context + change_context 5',
@@ -3868,7 +3868,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":242
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Decrease context',
  *     'decrease_context - change_context -5',
@@ -3882,7 +3882,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":247
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search forward',
  *     'search_forward / start_search regex forward',
@@ -3896,7 +3896,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":252
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search backward',
  *     'search_backward ? start_search regex backward',
@@ -3910,7 +3910,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":257
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to next search match',
  *     'next_match . scroll_to next-match',
@@ -3938,7 +3938,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":266
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Scroll to previous search match',
  *     'prev_match , scroll_to prev-match',
@@ -3966,7 +3966,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":275
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search forward (no regex)',
  *     'search_forward_simple f start_search substring forward',
@@ -3980,7 +3980,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/definition.py":280
  * )
- * 
+ *
  * map(             # <<<<<<<<<<<<<<
  *     'Search backward (no regex)',
  *     'search_backward_simple b start_search substring backward',

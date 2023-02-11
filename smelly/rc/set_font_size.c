@@ -1543,7 +1543,7 @@ static PyObject *__pyx_codeobj__5;
 
 /* "smelly/rc/set_font_size.py":38
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('No font size specified')
@@ -1654,7 +1654,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_message_to_s
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/set_font_size.py":39
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if not args:             # <<<<<<<<<<<<<<
  *             self.fatal('No font size specified')
@@ -1691,7 +1691,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_message_to_s
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/set_font_size.py":39
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if not args:             # <<<<<<<<<<<<<<
  *             self.fatal('No font size specified')
@@ -1716,7 +1716,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_message_to_s
  *         fs = args[0]
  *         inc = fs[0] if fs and fs[0] in '+-' else None             # <<<<<<<<<<<<<<
  *         return {'size': abs(float(fs)), 'all': opts.all, 'increment_op': inc}
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_fs); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 42, __pyx_L1_error)
   if (__pyx_t_1) {
@@ -1747,7 +1747,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_message_to_s
  *         fs = args[0]
  *         inc = fs[0] if fs and fs[0] in '+-' else None
  *         return {'size': abs(float(fs)), 'all': opts.all, 'increment_op': inc}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1769,7 +1769,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_message_to_s
 
   /* "smelly/rc/set_font_size.py":38
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('No font size specified')
@@ -1792,7 +1792,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_message_to_s
 
 /* "smelly/rc/set_font_size.py":45
  *         return {'size': abs(float(fs)), 'all': opts.all, 'increment_op': inc}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         boss.change_font_size(payload_get('all'), payload_get('increment_op'), payload_get('size') or 0)
  *         return None
@@ -1904,11 +1904,11 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_2response_fr
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/set_font_size.py":46
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         boss.change_font_size(payload_get('all'), payload_get('increment_op'), payload_get('size') or 0)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_boss, __pyx_n_s_change_font_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2034,8 +2034,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_2response_fr
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         boss.change_font_size(payload_get('all'), payload_get('increment_op'), payload_get('size') or 0)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2043,7 +2043,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_font_size_11SetFontSize_2response_fr
 
   /* "smelly/rc/set_font_size.py":45
  *         return {'size': abs(float(fs)), 'all': opts.all, 'increment_op': inc}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         boss.change_font_size(payload_get('all'), payload_get('increment_op'), payload_get('size') or 0)
  *         return None
@@ -2190,7 +2190,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_font_size.py":38
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('No font size specified')
@@ -2202,7 +2202,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_font_size.py":45
  *         return {'size': abs(float(fs)), 'all': opts.all, 'increment_op': inc}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         boss.change_font_size(payload_get('all'), payload_get('increment_op'), payload_get('size') or 0)
  *         return None
@@ -2499,9 +2499,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_font_size.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2527,9 +2527,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_font_size.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2597,10 +2597,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_font_size.py":8
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetFontSizeRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2609,11 +2609,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_font_size.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetFontSizeRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2631,16 +2631,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_font_size.py":8
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetFontSizeRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_font_size.py":12
- * 
- * 
+ *
+ *
  * class SetFontSize(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     size+/float: The new font size in pts (a positive number). If absent is assumed to be zero which means reset to default.
@@ -2658,7 +2658,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/set_font_size.py":13
- * 
+ *
  * class SetFontSize(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     size+/float: The new font size in pts (a positive number). If absent is assumed to be zero which means reset to default.
@@ -2669,7 +2669,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_font_size.py":19
  *     '''
- * 
+ *
  *     short_desc = 'Set the font size in the active top-level OS window'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Sets the font size to the specified size, in pts. Note'
@@ -2721,7 +2721,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_font_size.py":38
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if not args:
  *             self.fatal('No font size specified')
@@ -2750,7 +2750,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_font_size.py":45
  *         return {'size': abs(float(fs)), 'all': opts.all, 'increment_op': inc}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         boss.change_font_size(payload_get('all'), payload_get('increment_op'), payload_get('size') or 0)
  *         return None
@@ -2787,8 +2787,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/set_font_size.py":12
- * 
- * 
+ *
+ *
  * class SetFontSize(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     size+/float: The new font size in pts (a positive number). If absent is assumed to be zero which means reset to default.
@@ -2802,8 +2802,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_font_size.py":50
- * 
- * 
+ *
+ *
  * set_font_size = SetFontSize()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SetFontSize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
@@ -2817,7 +2817,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_font_size.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

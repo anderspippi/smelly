@@ -973,8 +973,8 @@ struct __pyx_obj_6smelly_5types___pyx_scope_struct_3_human_repr;
 struct __pyx_obj_6smelly_5types___pyx_scope_struct_4_ac;
 
 /* "smelly/types.py":69
- * 
- * 
+ *
+ *
  * def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     if has_smelly_mod:
  *         mods &= ~smelly_mod
@@ -994,7 +994,7 @@ struct __pyx_obj_6smelly_5types___pyx_scope_struct__mod_to_names {
 
 /* "smelly/types.py":96
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)
@@ -1007,11 +1007,11 @@ struct __pyx_obj_6smelly_5types___pyx_scope_struct_1_human_repr {
 
 
 /* "smelly/types.py":97
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)             # <<<<<<<<<<<<<<
  *                           for k in self.keys)
- * 
+ *
  */
 struct __pyx_obj_6smelly_5types___pyx_scope_struct_2_genexpr {
   PyObject_HEAD
@@ -1025,10 +1025,10 @@ struct __pyx_obj_6smelly_5types___pyx_scope_struct_2_genexpr {
 
 /* "smelly/types.py":107
  *     grabbed: bool = False
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  */
 struct __pyx_obj_6smelly_5types___pyx_scope_struct_3_human_repr {
   PyObject_HEAD
@@ -1038,8 +1038,8 @@ struct __pyx_obj_6smelly_5types___pyx_scope_struct_3_human_repr {
 
 
 /* "smelly/types.py":233
- * 
- * 
+ *
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:             # <<<<<<<<<<<<<<
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -2125,8 +2125,8 @@ static PyObject *__pyx_codeobj__48;
 static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/types.py":69
- * 
- * 
+ *
+ *
  * def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     if has_smelly_mod:
  *         mods &= ~smelly_mod
@@ -2286,7 +2286,7 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 69, __pyx_L1_error)
 
   /* "smelly/types.py":70
- * 
+ *
  * def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -> Iterator[str]:
  *     if has_smelly_mod:             # <<<<<<<<<<<<<<
  *         mods &= ~smelly_mod
@@ -2331,7 +2331,7 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
     if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 72, __pyx_L1_error)
 
     /* "smelly/types.py":70
- * 
+ *
  * def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -> Iterator[str]:
  *     if has_smelly_mod:             # <<<<<<<<<<<<<<
  *         mods &= ~smelly_mod
@@ -2431,11 +2431,11 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_5);
@@ -2481,7 +2481,7 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
  *     for name, val in modmap().items():
  *         if mods & val:             # <<<<<<<<<<<<<<
  *             yield name
- * 
+ *
  */
     __pyx_t_3 = PyNumber_And(__pyx_cur_scope->__pyx_v_mods, __pyx_cur_scope->__pyx_v_val); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -2493,8 +2493,8 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
  *     for name, val in modmap().items():
  *         if mods & val:
  *             yield name             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_INCREF(__pyx_cur_scope->__pyx_v_name);
       __pyx_r = __pyx_cur_scope->__pyx_v_name;
@@ -2521,7 +2521,7 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
  *     for name, val in modmap().items():
  *         if mods & val:             # <<<<<<<<<<<<<<
  *             yield name
- * 
+ *
  */
     }
 
@@ -2537,8 +2537,8 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/types.py":69
- * 
- * 
+ *
+ *
  * def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     if has_smelly_mod:
  *         mods &= ~smelly_mod
@@ -2566,11 +2566,11 @@ static PyObject *__pyx_gb_6smelly_5types_2generator(__pyx_CoroutineObject *__pyx
 }
 
 /* "smelly/types.py":78
- * 
- * 
+ *
+ *
  * def human_repr_of_single_key(self: 'SingleKey', smelly_mod: int) -> str:             # <<<<<<<<<<<<<<
  *     from .fast_data_types import glfw_get_key_name
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2660,10 +2660,10 @@ static PyObject *__pyx_pf_6smelly_5types_3human_repr_of_single_key(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("human_repr_of_single_key", 0);
 
   /* "smelly/types.py":79
- * 
+ *
  * def human_repr_of_single_key(self: 'SingleKey', smelly_mod: int) -> str:
  *     from .fast_data_types import glfw_get_key_name             # <<<<<<<<<<<<<<
- * 
+ *
  *     names = []
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
@@ -2683,7 +2683,7 @@ static PyObject *__pyx_pf_6smelly_5types_3human_repr_of_single_key(CYTHON_UNUSED
 
   /* "smelly/types.py":81
  *     from .fast_data_types import glfw_get_key_name
- * 
+ *
  *     names = []             # <<<<<<<<<<<<<<
  *     names = list(
  *         mod_to_names(
@@ -2768,7 +2768,7 @@ static PyObject *__pyx_pf_6smelly_5types_3human_repr_of_single_key(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":82
- * 
+ *
  *     names = []
  *     names = list(             # <<<<<<<<<<<<<<
  *         mod_to_names(
@@ -2963,7 +2963,7 @@ static PyObject *__pyx_pf_6smelly_5types_3human_repr_of_single_key(CYTHON_UNUSED
  *         kname = {' ': 'space'}.get(kname, kname)
  *         names.append(kname)             # <<<<<<<<<<<<<<
  *     return '+'.join(names)
- * 
+ *
  */
     __pyx_t_10 = __Pyx_PyList_Append(__pyx_v_names, __pyx_v_kname); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 89, __pyx_L1_error)
 
@@ -2980,8 +2980,8 @@ static PyObject *__pyx_pf_6smelly_5types_3human_repr_of_single_key(CYTHON_UNUSED
  *         kname = {' ': 'space'}.get(kname, kname)
  *         names.append(kname)
  *     return '+'.join(names)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_7 = __Pyx_PyString_Join(__pyx_kp_s__3, __pyx_v_names); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 90, __pyx_L1_error)
@@ -2992,11 +2992,11 @@ static PyObject *__pyx_pf_6smelly_5types_3human_repr_of_single_key(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/types.py":78
- * 
- * 
+ *
+ *
  * def human_repr_of_single_key(self: 'SingleKey', smelly_mod: int) -> str:             # <<<<<<<<<<<<<<
  *     from .fast_data_types import glfw_get_key_name
- * 
+ *
  */
 
   /* function exit code */
@@ -3021,7 +3021,7 @@ static PyObject *__pyx_pf_6smelly_5types_3human_repr_of_single_key(CYTHON_UNUSED
 
 /* "smelly/types.py":96
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)
@@ -3098,11 +3098,11 @@ static PyObject *__pyx_pw_6smelly_5types_8Shortcut_1human_repr(PyObject *__pyx_s
 static PyObject *__pyx_gb_6smelly_5types_8Shortcut_10human_repr_2generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/types.py":97
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)             # <<<<<<<<<<<<<<
  *                           for k in self.keys)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5types_8Shortcut_10human_repr_genexpr(PyObject *__pyx_self) {
@@ -3172,8 +3172,8 @@ static PyObject *__pyx_gb_6smelly_5types_8Shortcut_10human_repr_2generator1(__py
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 98, __pyx_L1_error) }
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self, __pyx_n_s_keys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
@@ -3224,11 +3224,11 @@ static PyObject *__pyx_gb_6smelly_5types_8Shortcut_10human_repr_2generator1(__py
     __pyx_t_1 = 0;
 
     /* "smelly/types.py":97
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)             # <<<<<<<<<<<<<<
  *                           for k in self.keys)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_human_repr_of_single_key); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -3302,19 +3302,19 @@ static PyObject *__pyx_gb_6smelly_5types_8Shortcut_10human_repr_2generator1(__py
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/types.py":97
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)             # <<<<<<<<<<<<<<
  *                           for k in self.keys)
- * 
+ *
  */
 
   /* function exit code */
@@ -3340,7 +3340,7 @@ static PyObject *__pyx_gb_6smelly_5types_8Shortcut_10human_repr_2generator1(__py
 
 /* "smelly/types.py":96
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)
@@ -3373,11 +3373,11 @@ static PyObject *__pyx_pf_6smelly_5types_8Shortcut_human_repr(CYTHON_UNUSED PyOb
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_smelly_mod);
 
   /* "smelly/types.py":97
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)             # <<<<<<<<<<<<<<
  *                           for k in self.keys)
- * 
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __pyx_pf_6smelly_5types_8Shortcut_10human_repr_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
@@ -3392,7 +3392,7 @@ static PyObject *__pyx_pf_6smelly_5types_8Shortcut_human_repr(CYTHON_UNUSED PyOb
 
   /* "smelly/types.py":96
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)
@@ -3414,10 +3414,10 @@ static PyObject *__pyx_pf_6smelly_5types_8Shortcut_human_repr(CYTHON_UNUSED PyOb
 
 /* "smelly/types.py":107
  *     grabbed: bool = False
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3491,7 +3491,7 @@ static PyObject *__pyx_pw_6smelly_5types_10MouseEvent_1human_repr(PyObject *__py
 
 /* "smelly/types.py":110
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  *         def mouse_button_num_to_name(num: int) -> str:             # <<<<<<<<<<<<<<
  *             button_map = {v: k for k, v in mouse_button_map.items()}
  *             name = f'b{num+1}'
@@ -3537,7 +3537,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_mouse_button_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/types.py":111
- * 
+ *
  *         def mouse_button_num_to_name(num: int) -> str:
  *             button_map = {v: k for k, v in mouse_button_map.items()}             # <<<<<<<<<<<<<<
  *             name = f'b{num+1}'
@@ -3614,11 +3614,11 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_mouse_button_
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_7);
@@ -3674,7 +3674,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_mouse_button_
  *             button_map = {v: k for k, v in mouse_button_map.items()}
  *             name = f'b{num+1}'             # <<<<<<<<<<<<<<
  *             return button_map.get(name, name)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_v_num, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3691,7 +3691,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_mouse_button_
  *             button_map = {v: k for k, v in mouse_button_map.items()}
  *             name = f'b{num+1}'
  *             return button_map.get(name, name)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mouse_trigger_count_to_name(count: int) -> str:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3704,7 +3704,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_mouse_button_
 
   /* "smelly/types.py":110
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  *         def mouse_button_num_to_name(num: int) -> str:             # <<<<<<<<<<<<<<
  *             button_map = {v: k for k, v in mouse_button_map.items()}
  *             name = f'b{num+1}'
@@ -3732,7 +3732,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_mouse_button_
 
 /* "smelly/types.py":115
  *             return button_map.get(name, name)
- * 
+ *
  *         def mouse_trigger_count_to_name(count: int) -> str:             # <<<<<<<<<<<<<<
  *             trigger_count_map = {
  *                 str(v): k for k, v in mouse_trigger_count_map.items()}
@@ -3778,7 +3778,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_2mouse_trigge
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/types.py":116
- * 
+ *
  *         def mouse_trigger_count_to_name(count: int) -> str:
  *             trigger_count_map = {             # <<<<<<<<<<<<<<
  *                 str(v): k for k, v in mouse_trigger_count_map.items()}
@@ -3863,11 +3863,11 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_2mouse_trigge
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_7);
@@ -3926,7 +3926,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_2mouse_trigge
  *                 str(v): k for k, v in mouse_trigger_count_map.items()}
  *             k = str(count)             # <<<<<<<<<<<<<<
  *             return trigger_count_map.get(k, k)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_count); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3937,7 +3937,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_2mouse_trigge
  *                 str(v): k for k, v in mouse_trigger_count_map.items()}
  *             k = str(count)
  *             return trigger_count_map.get(k, k)             # <<<<<<<<<<<<<<
- * 
+ *
  *         names = list(mod_to_names(self.mods)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3950,7 +3950,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_2mouse_trigge
 
   /* "smelly/types.py":115
  *             return button_map.get(name, name)
- * 
+ *
  *         def mouse_trigger_count_to_name(count: int) -> str:             # <<<<<<<<<<<<<<
  *             trigger_count_map = {
  *                 str(v): k for k, v in mouse_trigger_count_map.items()}
@@ -3978,10 +3978,10 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_10human_repr_2mouse_trigge
 
 /* "smelly/types.py":107
  *     grabbed: bool = False
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_smelly_mod) {
@@ -4012,10 +4012,10 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
   }
 
   /* "smelly/types.py":108
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mouse_button_num_to_name(num: int) -> str:
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -4045,7 +4045,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
 
   /* "smelly/types.py":110
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  *         def mouse_button_num_to_name(num: int) -> str:             # <<<<<<<<<<<<<<
  *             button_map = {v: k for k, v in mouse_button_map.items()}
  *             name = f'b{num+1}'
@@ -4063,7 +4063,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
 
   /* "smelly/types.py":115
  *             return button_map.get(name, name)
- * 
+ *
  *         def mouse_trigger_count_to_name(count: int) -> str:             # <<<<<<<<<<<<<<
  *             trigger_count_map = {
  *                 str(v): k for k, v in mouse_trigger_count_map.items()}
@@ -4081,7 +4081,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
 
   /* "smelly/types.py":121
  *             return trigger_count_map.get(k, k)
- * 
+ *
  *         names = list(mod_to_names(self.mods)             # <<<<<<<<<<<<<<
  *                      ) + [mouse_button_num_to_name(self.button)]
  *         when = mouse_trigger_count_to_name(self.repeat_count)
@@ -4111,7 +4111,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":122
- * 
+ *
  *         names = list(mod_to_names(self.mods)
  *                      ) + [mouse_button_num_to_name(self.button)]             # <<<<<<<<<<<<<<
  *         when = mouse_trigger_count_to_name(self.repeat_count)
@@ -4154,7 +4154,7 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
  *         when = mouse_trigger_count_to_name(self.repeat_count)
  *         grabbed = 'grabbed' if self.grabbed else 'ungrabbed'             # <<<<<<<<<<<<<<
  *         return ' '.join(('+'.join(names), when, grabbed))
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_grabbed); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4174,8 +4174,8 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
  *         when = mouse_trigger_count_to_name(self.repeat_count)
  *         grabbed = 'grabbed' if self.grabbed else 'ungrabbed'
  *         return ' '.join(('+'.join(names), when, grabbed))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyString_Join(__pyx_kp_s__3, __pyx_v_names); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
@@ -4201,10 +4201,10 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
 
   /* "smelly/types.py":107
  *     grabbed: bool = False
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  */
 
   /* function exit code */
@@ -4228,11 +4228,11 @@ static PyObject *__pyx_pf_6smelly_5types_10MouseEvent_human_repr(CYTHON_UNUSED P
 }
 
 /* "smelly/types.py":149
- * 
+ *
  *     class RunOnce(Generic[_T]):
  *         def __init__(self, func: Callable[[], _T]):             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4314,10 +4314,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce___init__(CYTHON_UNUSED PyObjec
 
 /* "smelly/types.py":152
  *             ...
- * 
+ *
  *         def __call__(self) -> _T:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4348,10 +4348,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_2__call__(CYTHON_UNUSED PyObje
 
 /* "smelly/types.py":155
  *             ...
- * 
+ *
  *         def set_override(self, val: _T) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4433,10 +4433,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_4set_override(CYTHON_UNUSED Py
 
 /* "smelly/types.py":158
  *             ...
- * 
+ *
  *         def clear_override(self) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4467,10 +4467,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_6clear_override(CYTHON_UNUSED 
 
 /* "smelly/types.py":161
  *             ...
- * 
+ *
  *         def clear_cached(self) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4500,7 +4500,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_8clear_cached(CYTHON_UNUSED Py
 }
 
 /* "smelly/types.py":167
- * 
+ *
  *     class RunOnce:
  *         def __init__(self, f):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
@@ -4602,7 +4602,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_10__init__(CYTHON_UNUSED PyObj
  *             self._override = RunOnce
  *             self._cached_result = RunOnce             # <<<<<<<<<<<<<<
  *             update_wrapper(self, f)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_RunOnce); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4613,7 +4613,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_10__init__(CYTHON_UNUSED PyObj
  *             self._override = RunOnce
  *             self._cached_result = RunOnce
  *             update_wrapper(self, f)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def __call__(self):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_update_wrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L1_error)
@@ -4666,7 +4666,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_10__init__(CYTHON_UNUSED PyObj
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":167
- * 
+ *
  *     class RunOnce:
  *         def __init__(self, f):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
@@ -4691,7 +4691,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_10__init__(CYTHON_UNUSED PyObj
 
 /* "smelly/types.py":172
  *             update_wrapper(self, f)
- * 
+ *
  *         def __call__(self):             # <<<<<<<<<<<<<<
  *             if self._override is not RunOnce:
  *                 return self._override
@@ -4725,7 +4725,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_12__call__(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "smelly/types.py":173
- * 
+ *
  *         def __call__(self):
  *             if self._override is not RunOnce:             # <<<<<<<<<<<<<<
  *                 return self._override
@@ -4756,7 +4756,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_12__call__(CYTHON_UNUSED PyObj
     goto __pyx_L0;
 
     /* "smelly/types.py":173
- * 
+ *
  *         def __call__(self):
  *             if self._override is not RunOnce:             # <<<<<<<<<<<<<<
  *                 return self._override
@@ -4786,7 +4786,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_12__call__(CYTHON_UNUSED PyObj
  *             if self._cached_result is RunOnce:
  *                 self._cached_result = self.__wrapped__()             # <<<<<<<<<<<<<<
  *             return self._cached_result
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_wrapped); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 176, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4821,7 +4821,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_12__call__(CYTHON_UNUSED PyObj
  *             if self._cached_result is RunOnce:
  *                 self._cached_result = self.__wrapped__()
  *             return self._cached_result             # <<<<<<<<<<<<<<
- * 
+ *
  *         def clear_cached(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4833,7 +4833,7 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_12__call__(CYTHON_UNUSED PyObj
 
   /* "smelly/types.py":172
  *             update_wrapper(self, f)
- * 
+ *
  *         def __call__(self):             # <<<<<<<<<<<<<<
  *             if self._override is not RunOnce:
  *                 return self._override
@@ -4854,10 +4854,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_12__call__(CYTHON_UNUSED PyObj
 
 /* "smelly/types.py":179
  *             return self._cached_result
- * 
+ *
  *         def clear_cached(self):             # <<<<<<<<<<<<<<
  *             self._cached_result = RunOnce
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4884,10 +4884,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_14clear_cached(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("clear_cached", 0);
 
   /* "smelly/types.py":180
- * 
+ *
  *         def clear_cached(self):
  *             self._cached_result = RunOnce             # <<<<<<<<<<<<<<
- * 
+ *
  *         def set_override(self, val):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_RunOnce); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
@@ -4897,10 +4897,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_14clear_cached(CYTHON_UNUSED P
 
   /* "smelly/types.py":179
  *             return self._cached_result
- * 
+ *
  *         def clear_cached(self):             # <<<<<<<<<<<<<<
  *             self._cached_result = RunOnce
- * 
+ *
  */
 
   /* function exit code */
@@ -4918,10 +4918,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_14clear_cached(CYTHON_UNUSED P
 
 /* "smelly/types.py":182
  *             self._cached_result = RunOnce
- * 
+ *
  *         def set_override(self, val):             # <<<<<<<<<<<<<<
  *             self._override = val
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4998,20 +4998,20 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_16set_override(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("set_override", 0);
 
   /* "smelly/types.py":183
- * 
+ *
  *         def set_override(self, val):
  *             self._override = val             # <<<<<<<<<<<<<<
- * 
+ *
  *         def clear_override(self):
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_override, __pyx_v_val) < 0) __PYX_ERR(0, 183, __pyx_L1_error)
 
   /* "smelly/types.py":182
  *             self._cached_result = RunOnce
- * 
+ *
  *         def set_override(self, val):             # <<<<<<<<<<<<<<
  *             self._override = val
- * 
+ *
  */
 
   /* function exit code */
@@ -5028,10 +5028,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_16set_override(CYTHON_UNUSED P
 
 /* "smelly/types.py":185
  *             self._override = val
- * 
+ *
  *         def clear_override(self):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5058,11 +5058,11 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_18clear_override(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("clear_override", 0);
 
   /* "smelly/types.py":186
- * 
+ *
  *         def clear_override(self):
  *             self._override = RunOnce             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_RunOnce); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5071,10 +5071,10 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_18clear_override(CYTHON_UNUSED
 
   /* "smelly/types.py":185
  *             self._override = val
- * 
+ *
  *         def clear_override(self):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
- * 
+ *
  */
 
   /* function exit code */
@@ -5091,11 +5091,11 @@ static PyObject *__pyx_pf_6smelly_5types_7RunOnce_18clear_override(CYTHON_UNUSED
 }
 
 /* "smelly/types.py":189
- * 
- * 
+ *
+ *
  * def run_once(f: Callable[[], _T]) -> 'RunOnce[_T]':             # <<<<<<<<<<<<<<
  *     return RunOnce(f)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5124,11 +5124,11 @@ static PyObject *__pyx_pf_6smelly_5types_5run_once(CYTHON_UNUSED PyObject *__pyx
   __Pyx_RefNannySetupContext("run_once", 0);
 
   /* "smelly/types.py":190
- * 
+ *
  * def run_once(f: Callable[[], _T]) -> 'RunOnce[_T]':
  *     return RunOnce(f)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_RunOnce); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
@@ -5153,11 +5153,11 @@ static PyObject *__pyx_pf_6smelly_5types_5run_once(CYTHON_UNUSED PyObject *__pyx
   goto __pyx_L0;
 
   /* "smelly/types.py":189
- * 
- * 
+ *
+ *
  * def run_once(f: Callable[[], _T]) -> 'RunOnce[_T]':             # <<<<<<<<<<<<<<
  *     return RunOnce(f)
- * 
+ *
  */
 
   /* function exit code */
@@ -5174,7 +5174,7 @@ static PyObject *__pyx_pf_6smelly_5types_5run_once(CYTHON_UNUSED PyObject *__pyx
 }
 
 /* "smelly/types.py":194
- * 
+ *
  * @run_once
  * def modmap() -> Dict[str, int]:             # <<<<<<<<<<<<<<
  *     from .constants import is_macos
@@ -5325,7 +5325,7 @@ static PyObject *__pyx_pf_6smelly_5types_7modmap(CYTHON_UNUSED PyObject *__pyx_s
 
   /* "smelly/types.py":207
  *     )
- * 
+ *
  *     return {             # <<<<<<<<<<<<<<
  *         'ctrl': GLFW_MOD_CONTROL,
  *         'shift': GLFW_MOD_SHIFT,
@@ -5333,7 +5333,7 @@ static PyObject *__pyx_pf_6smelly_5types_7modmap(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_XDECREF(__pyx_r);
 
   /* "smelly/types.py":208
- * 
+ *
  *     return {
  *         'ctrl': GLFW_MOD_CONTROL,             # <<<<<<<<<<<<<<
  *         'shift': GLFW_MOD_SHIFT,
@@ -5420,7 +5420,7 @@ static PyObject *__pyx_pf_6smelly_5types_7modmap(CYTHON_UNUSED PyObject *__pyx_s
  *         'caps_lock': GLFW_MOD_CAPS_LOCK,
  *         'num_lock': GLFW_MOD_NUM_LOCK,             # <<<<<<<<<<<<<<
  *     }
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_num_lock, __pyx_v_GLFW_MOD_NUM_LOCK) < 0) __PYX_ERR(0, 208, __pyx_L1_error)
   __pyx_r = __pyx_t_1;
@@ -5428,7 +5428,7 @@ static PyObject *__pyx_pf_6smelly_5types_7modmap(CYTHON_UNUSED PyObject *__pyx_s
   goto __pyx_L0;
 
   /* "smelly/types.py":194
- * 
+ *
  * @run_once
  * def modmap() -> Dict[str, int]:             # <<<<<<<<<<<<<<
  *     from .constants import is_macos
@@ -5457,8 +5457,8 @@ static PyObject *__pyx_pf_6smelly_5types_7modmap(CYTHON_UNUSED PyObject *__pyx_s
 }
 
 /* "smelly/types.py":233
- * 
- * 
+ *
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:             # <<<<<<<<<<<<<<
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -5535,7 +5535,7 @@ static PyObject *__pyx_pw_6smelly_5types_10ac(PyObject *__pyx_self, PyObject *__
 }
 
 /* "smelly/types.py":234
- * 
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:
  *     def w(f: _T) -> _T:             # <<<<<<<<<<<<<<
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -5579,7 +5579,7 @@ static PyObject *__pyx_pf_6smelly_5types_2ac_w(PyObject *__pyx_self, PyObject *_
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))             # <<<<<<<<<<<<<<
  *         return f
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_ActionSpec); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5637,7 +5637,7 @@ static PyObject *__pyx_pf_6smelly_5types_2ac_w(PyObject *__pyx_self, PyObject *_
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
  *         return f             # <<<<<<<<<<<<<<
- * 
+ *
  *     return w
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5646,7 +5646,7 @@ static PyObject *__pyx_pf_6smelly_5types_2ac_w(PyObject *__pyx_self, PyObject *_
   goto __pyx_L0;
 
   /* "smelly/types.py":234
- * 
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:
  *     def w(f: _T) -> _T:             # <<<<<<<<<<<<<<
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -5668,8 +5668,8 @@ static PyObject *__pyx_pf_6smelly_5types_2ac_w(PyObject *__pyx_self, PyObject *_
 }
 
 /* "smelly/types.py":233
- * 
- * 
+ *
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:             # <<<<<<<<<<<<<<
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -5702,7 +5702,7 @@ static PyObject *__pyx_pf_6smelly_5types_9ac(CYTHON_UNUSED PyObject *__pyx_self,
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_doc);
 
   /* "smelly/types.py":234
- * 
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:
  *     def w(f: _T) -> _T:             # <<<<<<<<<<<<<<
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -5727,10 +5727,10 @@ static PyObject *__pyx_pf_6smelly_5types_9ac(CYTHON_UNUSED PyObject *__pyx_self,
 
   /* "smelly/types.py":238
  *         return f
- * 
+ *
  *     return w             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_w);
@@ -5738,8 +5738,8 @@ static PyObject *__pyx_pf_6smelly_5types_9ac(CYTHON_UNUSED PyObject *__pyx_self,
   goto __pyx_L0;
 
   /* "smelly/types.py":233
- * 
- * 
+ *
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:             # <<<<<<<<<<<<<<
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -6598,7 +6598,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":110
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  *         def mouse_button_num_to_name(num: int) -> str:             # <<<<<<<<<<<<<<
  *             button_map = {v: k for k, v in mouse_button_map.items()}
  *             name = f'b{num+1}'
@@ -6610,7 +6610,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":115
  *             return button_map.get(name, name)
- * 
+ *
  *         def mouse_trigger_count_to_name(count: int) -> str:             # <<<<<<<<<<<<<<
  *             trigger_count_map = {
  *                 str(v): k for k, v in mouse_trigger_count_map.items()}
@@ -6621,7 +6621,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_types_py, __pyx_n_s_mouse_trigger_count_to_name, 115, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 115, __pyx_L1_error)
 
   /* "smelly/types.py":234
- * 
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:
  *     def w(f: _T) -> _T:             # <<<<<<<<<<<<<<
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -6634,18 +6634,18 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":11
  *     from smelly.fast_data_types import SingleKey
- * 
+ *
  * _T = TypeVar('_T')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_tuple__11 = PyTuple_Pack(1, __pyx_n_s_T); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
   /* "smelly/types.py":69
- * 
- * 
+ *
+ *
  * def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     if has_smelly_mod:
  *         mods &= ~smelly_mod
@@ -6659,11 +6659,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__13);
 
   /* "smelly/types.py":78
- * 
- * 
+ *
+ *
  * def human_repr_of_single_key(self: 'SingleKey', smelly_mod: int) -> str:             # <<<<<<<<<<<<<<
  *     from .fast_data_types import glfw_get_key_name
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_smelly_mod, __pyx_n_s_glfw_get_key_name, __pyx_n_s_names, __pyx_n_s_kname); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -6672,7 +6672,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":96
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)
@@ -6687,10 +6687,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":107
  *     grabbed: bool = False
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_smelly_mod, __pyx_n_s_mouse_button_map, __pyx_n_s_mouse_trigger_count_map, __pyx_n_s_mouse_button_num_to_name, __pyx_n_s_mouse_button_num_to_name, __pyx_n_s_mouse_trigger_count_to_name, __pyx_n_s_mouse_trigger_count_to_name, __pyx_n_s_names, __pyx_n_s_when, __pyx_n_s_grabbed); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -6701,11 +6701,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__21);
 
   /* "smelly/types.py":149
- * 
+ *
  *     class RunOnce(Generic[_T]):
  *         def __init__(self, func: Callable[[], _T]):             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
   __pyx_tuple__22 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_func); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
@@ -6714,10 +6714,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":152
  *             ...
- * 
+ *
  *         def __call__(self) -> _T:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
   __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
@@ -6726,10 +6726,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":155
  *             ...
- * 
+ *
  *         def set_override(self, val: _T) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
   __pyx_tuple__26 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_val); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
@@ -6738,10 +6738,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":158
  *             ...
- * 
+ *
  *         def clear_override(self) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
   __pyx_tuple__28 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
@@ -6750,10 +6750,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":161
  *             ...
- * 
+ *
  *         def clear_cached(self) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
   __pyx_tuple__30 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 161, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
@@ -6761,7 +6761,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_types_py, __pyx_n_s_clear_cached, 161, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 161, __pyx_L1_error)
 
   /* "smelly/types.py":167
- * 
+ *
  *     class RunOnce:
  *         def __init__(self, f):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
@@ -6774,7 +6774,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":172
  *             update_wrapper(self, f)
- * 
+ *
  *         def __call__(self):             # <<<<<<<<<<<<<<
  *             if self._override is not RunOnce:
  *                 return self._override
@@ -6786,10 +6786,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":179
  *             return self._cached_result
- * 
+ *
  *         def clear_cached(self):             # <<<<<<<<<<<<<<
  *             self._cached_result = RunOnce
- * 
+ *
  */
   __pyx_tuple__36 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
@@ -6798,10 +6798,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":182
  *             self._cached_result = RunOnce
- * 
+ *
  *         def set_override(self, val):             # <<<<<<<<<<<<<<
  *             self._override = val
- * 
+ *
  */
   __pyx_tuple__38 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_val); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
@@ -6810,10 +6810,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":185
  *             self._override = val
- * 
+ *
  *         def clear_override(self):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
- * 
+ *
  */
   __pyx_tuple__40 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
@@ -6821,11 +6821,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_types_py, __pyx_n_s_clear_override, 185, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 185, __pyx_L1_error)
 
   /* "smelly/types.py":189
- * 
- * 
+ *
+ *
  * def run_once(f: Callable[[], _T]) -> 'RunOnce[_T]':             # <<<<<<<<<<<<<<
  *     return RunOnce(f)
- * 
+ *
  */
   __pyx_tuple__42 = PyTuple_Pack(1, __pyx_n_s_f); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
@@ -6833,7 +6833,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_types_py, __pyx_n_s_run_once, 189, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 189, __pyx_L1_error)
 
   /* "smelly/types.py":194
- * 
+ *
  * @run_once
  * def modmap() -> Dict[str, int]:             # <<<<<<<<<<<<<<
  *     from .constants import is_macos
@@ -6846,7 +6846,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/types.py":222
  *     from typing import Literal
- * 
+ *
  *     ActionGroup = Literal['cp', 'sc', 'win', 'tab',             # <<<<<<<<<<<<<<
  *                           'mouse', 'mk', 'lay', 'misc', 'debug']
  * else:
@@ -6856,8 +6856,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__46);
 
   /* "smelly/types.py":233
- * 
- * 
+ *
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:             # <<<<<<<<<<<<<<
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -6868,8 +6868,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_types_py, __pyx_n_s_ac, 233, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 233, __pyx_L1_error)
 
   /* "smelly/types.py":241
- * 
- * 
+ *
+ *
  * DecoratedFunc = TypeVar('DecoratedFunc', bound=Callable[..., Any])             # <<<<<<<<<<<<<<
  */
   __pyx_tuple__49 = PyTuple_Pack(1, __pyx_n_s_DecoratedFunc); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 241, __pyx_L1_error)
@@ -7212,7 +7212,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/types.py":4
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from enum import Enum             # <<<<<<<<<<<<<<
  * from functools import update_wrapper
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generic, Iterator, Mapping, NamedTuple, Optional, Sequence, Tuple, TypedDict, TypeVar, Union
@@ -7232,11 +7232,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":5
- * 
+ *
  * from enum import Enum
  * from functools import update_wrapper             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generic, Iterator, Mapping, NamedTuple, Optional, Sequence, Tuple, TypedDict, TypeVar, Union
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7256,7 +7256,7 @@ if (!__Pyx_RefNanny) {
  * from enum import Enum
  * from functools import update_wrapper
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generic, Iterator, Mapping, NamedTuple, Optional, Sequence, Tuple, TypedDict, TypeVar, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -7366,10 +7366,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/types.py":8
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generic, Iterator, Mapping, NamedTuple, Optional, Sequence, Tuple, TypedDict, TypeVar, Union
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import SingleKey
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7378,10 +7378,10 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/types.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.fast_data_types import SingleKey             # <<<<<<<<<<<<<<
- * 
+ *
  * _T = TypeVar('_T')
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -7400,19 +7400,19 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":8
  * from typing import TYPE_CHECKING, Any, Callable, Dict, Generic, Iterator, Mapping, NamedTuple, Optional, Sequence, Tuple, TypedDict, TypeVar, Union
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import SingleKey
- * 
+ *
  */
   }
 
   /* "smelly/types.py":11
  *     from smelly.fast_data_types import SingleKey
- * 
+ *
  * _T = TypeVar('_T')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TypeVar); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7423,8 +7423,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":14
- * 
- * 
+ *
+ *
  * class SingleInstanceData(TypedDict):             # <<<<<<<<<<<<<<
  *     cmd: str
  *     args: Sequence[str]
@@ -7445,8 +7445,8 @@ if (!__Pyx_RefNanny) {
  *     session_data: str
  *     environ: Mapping[str, str]
  *     notify_on_os_window_death: Optional[str]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_SingleInstanceData, __pyx_t_1, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7457,8 +7457,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":24
- * 
- * 
+ *
+ *
  * class OverlayType(Enum):             # <<<<<<<<<<<<<<
  *     transient: str = 'transient'
  *     main: str = 'main'
@@ -7476,11 +7476,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/types.py":25
- * 
+ *
  * class OverlayType(Enum):
  *     transient: str = 'transient'             # <<<<<<<<<<<<<<
  *     main: str = 'main'
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_transient, __pyx_n_s_transient) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
 
@@ -7488,14 +7488,14 @@ if (!__Pyx_RefNanny) {
  * class OverlayType(Enum):
  *     transient: str = 'transient'
  *     main: str = 'main'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_main_2, __pyx_n_s_main_2) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
 
   /* "smelly/types.py":24
- * 
- * 
+ *
+ *
  * class OverlayType(Enum):             # <<<<<<<<<<<<<<
  *     transient: str = 'transient'
  *     main: str = 'main'
@@ -7509,8 +7509,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":29
- * 
- * 
+ *
+ *
  * class ParsedShortcut(NamedTuple):             # <<<<<<<<<<<<<<
  *     mods: int
  *     key_name: str
@@ -7531,8 +7531,8 @@ if (!__Pyx_RefNanny) {
  * class ParsedShortcut(NamedTuple):
  *     mods: int
  *     key_name: str             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_ParsedShortcut, __pyx_t_1, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7543,8 +7543,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":34
- * 
- * 
+ *
+ *
  * class Edges(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: int = 0
  *     top: int = 0
@@ -7562,7 +7562,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/types.py":35
- * 
+ *
  * class Edges(NamedTuple):
  *     left: int = 0             # <<<<<<<<<<<<<<
  *     top: int = 0
@@ -7584,7 +7584,7 @@ if (!__Pyx_RefNanny) {
  *     top: int = 0
  *     right: int = 0             # <<<<<<<<<<<<<<
  *     bottom: int = 0
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_right, __pyx_int_0) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
 
@@ -7592,14 +7592,14 @@ if (!__Pyx_RefNanny) {
  *     top: int = 0
  *     right: int = 0
  *     bottom: int = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_bottom, __pyx_int_0) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
 
   /* "smelly/types.py":34
- * 
- * 
+ *
+ *
  * class Edges(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: int = 0
  *     top: int = 0
@@ -7613,8 +7613,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":41
- * 
- * 
+ *
+ *
  * class FloatEdges(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: float = 0
  *     top: float = 0
@@ -7632,7 +7632,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/types.py":42
- * 
+ *
  * class FloatEdges(NamedTuple):
  *     left: float = 0             # <<<<<<<<<<<<<<
  *     top: float = 0
@@ -7654,7 +7654,7 @@ if (!__Pyx_RefNanny) {
  *     top: float = 0
  *     right: float = 0             # <<<<<<<<<<<<<<
  *     bottom: float = 0
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_right, __pyx_int_0) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
 
@@ -7662,14 +7662,14 @@ if (!__Pyx_RefNanny) {
  *     top: float = 0
  *     right: float = 0
  *     bottom: float = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_bottom, __pyx_int_0) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
 
   /* "smelly/types.py":41
- * 
- * 
+ *
+ *
  * class FloatEdges(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: float = 0
  *     top: float = 0
@@ -7683,8 +7683,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":48
- * 
- * 
+ *
+ *
  * class WindowGeometry(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: int
  *     top: int
@@ -7705,8 +7705,8 @@ if (!__Pyx_RefNanny) {
  *     xnum: int
  *     ynum: int
  *     spaces: Edges = Edges()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_Edges); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -7729,8 +7729,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/types.py":48
- * 
- * 
+ *
+ *
  * class WindowGeometry(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: int
  *     top: int
@@ -7744,8 +7744,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":58
- * 
- * 
+ *
+ *
  * class SignalInfo(NamedTuple):             # <<<<<<<<<<<<<<
  *     si_signo: int
  *     si_code: int
@@ -7766,8 +7766,8 @@ if (!__Pyx_RefNanny) {
  *     si_status: int
  *     sival_int: int
  *     sival_ptr: int             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_SignalInfo, __pyx_t_1, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7778,8 +7778,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":69
- * 
- * 
+ *
+ *
  * def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     if has_smelly_mod:
  *         mods &= ~smelly_mod
@@ -7805,11 +7805,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/types.py":78
- * 
- * 
+ *
+ *
  * def human_repr_of_single_key(self: 'SingleKey', smelly_mod: int) -> str:             # <<<<<<<<<<<<<<
  *     from .fast_data_types import glfw_get_key_name
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7824,11 +7824,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":93
- * 
- * 
+ *
+ *
  * class Shortcut(NamedTuple):             # <<<<<<<<<<<<<<
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_NamedTuple); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7844,7 +7844,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/types.py":96
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         return ' > '.join(human_repr_of_single_key(k, smelly_mod)
  *                           for k in self.keys)
@@ -7862,11 +7862,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/types.py":93
- * 
- * 
+ *
+ *
  * class Shortcut(NamedTuple):             # <<<<<<<<<<<<<<
  *     keys: Tuple['SingleKey', ...]
- * 
+ *
  */
   __pyx_t_6 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_Shortcut, __pyx_t_4, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -7877,8 +7877,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/types.py":101
- * 
- * 
+ *
+ *
  * class MouseEvent(NamedTuple):             # <<<<<<<<<<<<<<
  *     button: int = 0
  *     mods: int = 0
@@ -7896,7 +7896,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/types.py":102
- * 
+ *
  * class MouseEvent(NamedTuple):
  *     button: int = 0             # <<<<<<<<<<<<<<
  *     mods: int = 0
@@ -7918,7 +7918,7 @@ if (!__Pyx_RefNanny) {
  *     mods: int = 0
  *     repeat_count: int = 1             # <<<<<<<<<<<<<<
  *     grabbed: bool = False
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_repeat_count, __pyx_int_1) < 0) __PYX_ERR(0, 104, __pyx_L1_error)
 
@@ -7926,17 +7926,17 @@ if (!__Pyx_RefNanny) {
  *     mods: int = 0
  *     repeat_count: int = 1
  *     grabbed: bool = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_grabbed, Py_False) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
 
   /* "smelly/types.py":107
  *     grabbed: bool = False
- * 
+ *
  *     def human_repr(self, smelly_mod: int = 0) -> str:             # <<<<<<<<<<<<<<
  *         from .options.utils import mouse_button_map, mouse_trigger_count_map
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -7951,8 +7951,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/types.py":101
- * 
- * 
+ *
+ *
  * class MouseEvent(NamedTuple):             # <<<<<<<<<<<<<<
  *     button: int = 0
  *     mods: int = 0
@@ -7966,8 +7966,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":128
- * 
- * 
+ *
+ *
  * class WindowSystemMouseEvent(NamedTuple):             # <<<<<<<<<<<<<<
  *     in_tab_bar: bool
  *     window_id: int
@@ -7988,8 +7988,8 @@ if (!__Pyx_RefNanny) {
  *     currently_pressed_button: int
  *     x: float
  *     y: float             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_WindowSystemMouseEvent, __pyx_t_4, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8000,11 +8000,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/types.py":139
- * 
- * 
+ *
+ *
  * ConvertibleToNumbers = Union[str, bytes, int, float]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Union); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8030,11 +8030,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":142
- * 
- * 
+ *
+ *
  * class AsyncResponse:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_AsyncResponse, __pyx_n_s_AsyncResponse, (PyObject *) NULL, __pyx_n_s_smelly_types, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8045,10 +8045,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":146
- * 
- * 
+ *
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
- * 
+ *
  *     class RunOnce(Generic[_T]):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
@@ -8059,7 +8059,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":148
  * if TYPE_CHECKING:
- * 
+ *
  *     class RunOnce(Generic[_T]):             # <<<<<<<<<<<<<<
  *         def __init__(self, func: Callable[[], _T]):
  *             ...
@@ -8083,11 +8083,11 @@ if (!__Pyx_RefNanny) {
     __Pyx_GOTREF(__pyx_t_2);
 
     /* "smelly/types.py":149
- * 
+ *
  *     class RunOnce(Generic[_T]):
  *         def __init__(self, func: Callable[[], _T]):             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -8120,10 +8120,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":152
  *             ...
- * 
+ *
  *         def __call__(self) -> _T:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
     __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
@@ -8140,10 +8140,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":155
  *             ...
- * 
+ *
  *         def set_override(self, val: _T) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 155, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -8161,10 +8161,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":158
  *             ...
- * 
+ *
  *         def clear_override(self) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
     __pyx_t_8 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 158, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
@@ -8178,10 +8178,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":161
  *             ...
- * 
+ *
  *         def clear_cached(self) -> None:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 161, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -8195,7 +8195,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":148
  * if TYPE_CHECKING:
- * 
+ *
  *     class RunOnce(Generic[_T]):             # <<<<<<<<<<<<<<
  *         def __init__(self, func: Callable[[], _T]):
  *             ...
@@ -8209,10 +8209,10 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/types.py":146
- * 
- * 
+ *
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
- * 
+ *
  *     class RunOnce(Generic[_T]):
  */
     goto __pyx_L3;
@@ -8220,7 +8220,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/types.py":166
  * else:
- * 
+ *
  *     class RunOnce:             # <<<<<<<<<<<<<<
  *         def __init__(self, f):
  *             self._override = RunOnce
@@ -8230,7 +8230,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_GOTREF(__pyx_t_1);
 
     /* "smelly/types.py":167
- * 
+ *
  *     class RunOnce:
  *         def __init__(self, f):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
@@ -8243,7 +8243,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":172
  *             update_wrapper(self, f)
- * 
+ *
  *         def __call__(self):             # <<<<<<<<<<<<<<
  *             if self._override is not RunOnce:
  *                 return self._override
@@ -8255,10 +8255,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":179
  *             return self._cached_result
- * 
+ *
  *         def clear_cached(self):             # <<<<<<<<<<<<<<
  *             self._cached_result = RunOnce
- * 
+ *
  */
     __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6smelly_5types_7RunOnce_15clear_cached, 0, __pyx_n_s_RunOnce_clear_cached, NULL, __pyx_n_s_smelly_types, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 179, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -8267,10 +8267,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":182
  *             self._cached_result = RunOnce
- * 
+ *
  *         def set_override(self, val):             # <<<<<<<<<<<<<<
  *             self._override = val
- * 
+ *
  */
     __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6smelly_5types_7RunOnce_17set_override, 0, __pyx_n_s_RunOnce_set_override, NULL, __pyx_n_s_smelly_types, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -8279,10 +8279,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":185
  *             self._override = val
- * 
+ *
  *         def clear_override(self):             # <<<<<<<<<<<<<<
  *             self._override = RunOnce
- * 
+ *
  */
     __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6smelly_5types_7RunOnce_19clear_override, 0, __pyx_n_s_RunOnce_clear_override, NULL, __pyx_n_s_smelly_types, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -8291,7 +8291,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":166
  * else:
- * 
+ *
  *     class RunOnce:             # <<<<<<<<<<<<<<
  *         def __init__(self, f):
  *             self._override = RunOnce
@@ -8305,11 +8305,11 @@ if (!__Pyx_RefNanny) {
   __pyx_L3:;
 
   /* "smelly/types.py":189
- * 
- * 
+ *
+ *
  * def run_once(f: Callable[[], _T]) -> 'RunOnce[_T]':             # <<<<<<<<<<<<<<
  *     return RunOnce(f)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8342,8 +8342,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/types.py":193
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def modmap() -> Dict[str, int]:
  *     from .constants import is_macos
@@ -8352,7 +8352,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_8);
 
   /* "smelly/types.py":194
- * 
+ *
  * @run_once
  * def modmap() -> Dict[str, int]:             # <<<<<<<<<<<<<<
  *     from .constants import is_macos
@@ -8382,8 +8382,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":193
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def modmap() -> Dict[str, int]:
  *     from .constants import is_macos
@@ -8396,11 +8396,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/types.py":219
- * 
- * 
+ *
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from typing import Literal
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 219, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8409,10 +8409,10 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/types.py":220
- * 
+ *
  * if TYPE_CHECKING:
  *     from typing import Literal             # <<<<<<<<<<<<<<
- * 
+ *
  *     ActionGroup = Literal['cp', 'sc', 'win', 'tab',
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 220, __pyx_L1_error)
@@ -8431,7 +8431,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/types.py":222
  *     from typing import Literal
- * 
+ *
  *     ActionGroup = Literal['cp', 'sc', 'win', 'tab',             # <<<<<<<<<<<<<<
  *                           'mouse', 'mk', 'lay', 'misc', 'debug']
  * else:
@@ -8445,11 +8445,11 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/types.py":219
- * 
- * 
+ *
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from typing import Literal
- * 
+ *
  */
     goto __pyx_L4;
   }
@@ -8458,8 +8458,8 @@ if (!__Pyx_RefNanny) {
  *                           'mouse', 'mk', 'lay', 'misc', 'debug']
  * else:
  *     ActionGroup = str             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*else*/ {
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_ActionGroup, ((PyObject *)(&PyString_Type))) < 0) __PYX_ERR(0, 225, __pyx_L1_error)
@@ -8467,8 +8467,8 @@ if (!__Pyx_RefNanny) {
   __pyx_L4:;
 
   /* "smelly/types.py":228
- * 
- * 
+ *
+ *
  * class ActionSpec(NamedTuple):             # <<<<<<<<<<<<<<
  *     group: str
  *     doc: str
@@ -8489,8 +8489,8 @@ if (!__Pyx_RefNanny) {
  * class ActionSpec(NamedTuple):
  *     group: str
  *     doc: str             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_ActionSpec, __pyx_t_2, __pyx_t_8, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8501,8 +8501,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/types.py":233
- * 
- * 
+ *
+ *
  * def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:             # <<<<<<<<<<<<<<
  *     def w(f: _T) -> _T:
  *         setattr(f, 'action_spec', ActionSpec(group, doc))
@@ -8547,8 +8547,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/types.py":241
- * 
- * 
+ *
+ *
  * DecoratedFunc = TypeVar('DecoratedFunc', bound=Callable[..., Any])             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_TypeVar); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 241, __pyx_L1_error)
@@ -8583,7 +8583,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/types.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9528,8 +9528,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

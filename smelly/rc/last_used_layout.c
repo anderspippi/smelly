@@ -1502,10 +1502,10 @@ static PyObject *__pyx_codeobj__5;
 
 /* "smelly/rc/last_used_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1606,10 +1606,10 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_messag
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/last_used_layout.py":39
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1633,10 +1633,10 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_messag
 
   /* "smelly/rc/last_used_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  */
 
   /* function exit code */
@@ -1653,7 +1653,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_messag
 
 /* "smelly/rc/last_used_layout.py":41
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -1764,7 +1764,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_2respo
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/last_used_layout.py":42
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if tab:
@@ -1878,7 +1878,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_2respo
  *             if tab:
  *                 tab.last_used_layout()             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_tab, __pyx_n_s_last_used_layout); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -1909,7 +1909,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_2respo
     }
 
     /* "smelly/rc/last_used_layout.py":42
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if tab:
@@ -1922,8 +1922,8 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_2respo
  *             if tab:
  *                 tab.last_used_layout()
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -1931,7 +1931,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16last_used_layout_14LastUsedLayout_2respo
 
   /* "smelly/rc/last_used_layout.py":41
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -2066,10 +2066,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/last_used_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  */
   __pyx_tuple__2 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
@@ -2078,7 +2078,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/last_used_layout.py":41
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -2373,10 +2373,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/last_used_layout.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2402,9 +2402,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/last_used_layout.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2479,10 +2479,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/last_used_layout.py":9
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import LastUsedLayoutRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2491,11 +2491,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/last_used_layout.py":10
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import LastUsedLayoutRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2513,16 +2513,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/last_used_layout.py":9
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import LastUsedLayoutRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/last_used_layout.py":13
- * 
- * 
+ *
+ *
  * class LastUsedLayout(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which tab to change the layout of
@@ -2540,7 +2540,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/last_used_layout.py":14
- * 
+ *
  * class LastUsedLayout(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: Which tab to change the layout of
@@ -2551,7 +2551,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/last_used_layout.py":19
  *     '''
- * 
+ *
  *     short_desc = 'Switch to the last used layout'             # <<<<<<<<<<<<<<
  *     desc = 'Switch to the last used window layout in the specified tabs (or the active tab if not specified).'
  *     options_spec = (
@@ -2559,7 +2559,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_short_desc, __pyx_kp_s_Switch_to_the_last_used_layout) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
 
   /* "smelly/rc/last_used_layout.py":20
- * 
+ *
  *     short_desc = 'Switch to the last used layout'
  *     desc = 'Switch to the last used window layout in the specified tabs (or the active tab if not specified).'             # <<<<<<<<<<<<<<
  *     options_spec = (
@@ -2582,7 +2582,7 @@ if (!__Pyx_RefNanny) {
  *         + '\n\n\n'
  *         + MATCH_TAB_OPTION             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_MATCH_TAB_OPTION); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2595,10 +2595,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/last_used_layout.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -2624,7 +2624,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/last_used_layout.py":41
  *         return {'match': opts.match, 'all': opts.all, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -2661,8 +2661,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/last_used_layout.py":13
- * 
- * 
+ *
+ *
  * class LastUsedLayout(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which tab to change the layout of
@@ -2676,8 +2676,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/last_used_layout.py":48
- * 
- * 
+ *
+ *
  * last_used_layout = LastUsedLayout()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_LastUsedLayout); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -2691,7 +2691,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/last_used_layout.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

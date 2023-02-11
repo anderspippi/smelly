@@ -970,8 +970,8 @@ struct __pyx_obj_5welly_4diff_7options_5utils___pyx_scope_struct__store_multiple
 struct __pyx_obj_5welly_4diff_7options_5utils___pyx_scope_struct_1_parse_map;
 
 /* "welly/diff/options/utils.py":59
- * 
- * 
+ *
+ *
  * def store_multiple(val: str, current_val: Container[str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val not in current_val:
@@ -984,8 +984,8 @@ struct __pyx_obj_5welly_4diff_7options_5utils___pyx_scope_struct__store_multiple
 
 
 /* "welly/diff/options/utils.py":65
- * 
- * 
+ *
+ *
  * def parse_map(val: str) -> Iterable[welliesKeyDefinition]:             # <<<<<<<<<<<<<<
  *     x = parse_wellies_key(val, func_with_args.args_funcs)
  *     if x is not None:
@@ -1769,7 +1769,7 @@ static PyObject *__pyx_codeobj__18;
 /* Late includes */
 
 /* "welly/diff/options/utils.py":15
- * 
+ *
  * @func_with_args('scroll_by')
  * def parse_scroll_by(func: str, rest: str) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     try:
@@ -1918,7 +1918,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_parse_scroll_by(CYTHON_UN
  *         return func, int(rest)
  *     except Exception:             # <<<<<<<<<<<<<<
  *         return func, 1
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_6) {
@@ -1932,8 +1932,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_parse_scroll_by(CYTHON_UN
  *         return func, int(rest)
  *     except Exception:
  *         return func, 1             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 19, __pyx_L5_except_error)
@@ -1981,7 +1981,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_parse_scroll_by(CYTHON_UN
   }
 
   /* "welly/diff/options/utils.py":15
- * 
+ *
  * @func_with_args('scroll_by')
  * def parse_scroll_by(func: str, rest: str) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     try:
@@ -2003,7 +2003,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_parse_scroll_by(CYTHON_UN
 }
 
 /* "welly/diff/options/utils.py":23
- * 
+ *
  * @func_with_args('scroll_to')
  * def parse_scroll_to(func: str, rest: str) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -2179,7 +2179,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_2parse_scroll_to(CYTHON_U
  *     if rest not in {'start', 'end', 'next-change', 'prev-change', 'next-page', 'prev-page', 'next-match', 'prev-match'}:
  *         rest = 'start'             # <<<<<<<<<<<<<<
  *     return func, rest
- * 
+ *
  */
     __Pyx_INCREF(__pyx_n_s_start);
     __Pyx_DECREF_SET(__pyx_v_rest, __pyx_n_s_start);
@@ -2197,8 +2197,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_2parse_scroll_to(CYTHON_U
  *     if rest not in {'start', 'end', 'next-change', 'prev-change', 'next-page', 'prev-page', 'next-match', 'prev-match'}:
  *         rest = 'start'
  *     return func, rest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
@@ -2214,7 +2214,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_2parse_scroll_to(CYTHON_U
   goto __pyx_L0;
 
   /* "welly/diff/options/utils.py":23
- * 
+ *
  * @func_with_args('scroll_to')
  * def parse_scroll_to(func: str, rest: str) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -2235,7 +2235,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_2parse_scroll_to(CYTHON_U
 }
 
 /* "welly/diff/options/utils.py":31
- * 
+ *
  * @func_with_args('change_context')
  * def parse_change_context(func: str, rest: str) -> Tuple[str, Union[int, str]]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -2464,7 +2464,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_4parse_change_context(CYT
  *     except Exception:
  *         amount = 5             # <<<<<<<<<<<<<<
  *     return func, amount
- * 
+ *
  */
       __Pyx_INCREF(__pyx_int_5);
       __Pyx_XDECREF_SET(__pyx_v_amount, __pyx_int_5);
@@ -2500,8 +2500,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_4parse_change_context(CYT
  *     except Exception:
  *         amount = 5
  *     return func, amount             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -2517,7 +2517,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_4parse_change_context(CYT
   goto __pyx_L0;
 
   /* "welly/diff/options/utils.py":31
- * 
+ *
  * @func_with_args('change_context')
  * def parse_change_context(func: str, rest: str) -> Tuple[str, Union[int, str]]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -2541,7 +2541,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_4parse_change_context(CYT
 }
 
 /* "welly/diff/options/utils.py":43
- * 
+ *
  * @func_with_args('start_search')
  * def parse_start_search(func: str, rest: str) -> Tuple[str, Tuple[bool, bool]]:             # <<<<<<<<<<<<<<
  *     rest_ = rest.lower().split()
@@ -2695,7 +2695,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_6parse_start_search(CYTHO
  *     is_regex = bool(rest_ and rest_[0] == 'regex')
  *     is_backward = bool(len(rest_) > 1 and rest_[1] == 'backward')             # <<<<<<<<<<<<<<
  *     return func, (is_regex, is_backward)
- * 
+ *
  */
   __pyx_t_6 = PyObject_Length(__pyx_v_rest_); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 46, __pyx_L1_error)
   __pyx_t_5 = ((__pyx_t_6 > 1) != 0);
@@ -2719,8 +2719,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_6parse_start_search(CYTHO
  *     is_regex = bool(rest_ and rest_[0] == 'regex')
  *     is_backward = bool(len(rest_) > 1 and rest_[1] == 'backward')
  *     return func, (is_regex, is_backward)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
@@ -2744,7 +2744,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_6parse_start_search(CYTHO
   goto __pyx_L0;
 
   /* "welly/diff/options/utils.py":43
- * 
+ *
  * @func_with_args('start_search')
  * def parse_start_search(func: str, rest: str) -> Tuple[str, Tuple[bool, bool]]:             # <<<<<<<<<<<<<<
  *     rest_ = rest.lower().split()
@@ -2768,8 +2768,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_6parse_start_search(CYTHO
 }
 
 /* "welly/diff/options/utils.py":50
- * 
- * 
+ *
+ *
  * def syntax_aliases(raw: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for x in raw.split():
@@ -2820,7 +2820,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_8syntax_aliases(CYTHON_UN
   __Pyx_RefNannySetupContext("syntax_aliases", 0);
 
   /* "welly/diff/options/utils.py":51
- * 
+ *
  * def syntax_aliases(raw: str) -> Dict[str, str]:
  *     ans = {}             # <<<<<<<<<<<<<<
  *     for x in raw.split():
@@ -2920,11 +2920,11 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_8syntax_aliases(CYTHON_UN
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_6);
@@ -2984,7 +2984,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_8syntax_aliases(CYTHON_UN
  *         if a and b:
  *             ans[a.lower()] = b             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
       __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_a, __pyx_n_s_lower); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
@@ -3029,8 +3029,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_8syntax_aliases(CYTHON_UN
  *         if a and b:
  *             ans[a.lower()] = b
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -3038,8 +3038,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_8syntax_aliases(CYTHON_UN
   goto __pyx_L0;
 
   /* "welly/diff/options/utils.py":50
- * 
- * 
+ *
+ *
  * def syntax_aliases(raw: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for x in raw.split():
@@ -3066,8 +3066,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5utils_8syntax_aliases(CYTHON_UN
 static PyObject *__pyx_gb_5welly_4diff_7options_5utils_12generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/diff/options/utils.py":59
- * 
- * 
+ *
+ *
  * def store_multiple(val: str, current_val: Container[str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val not in current_val:
@@ -3205,7 +3205,7 @@ static PyObject *__pyx_gb_5welly_4diff_7options_5utils_12generator(__pyx_Corouti
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":60
- * 
+ *
  * def store_multiple(val: str, current_val: Container[str]) -> Iterable[Tuple[str, str]]:
  *     val = val.strip()             # <<<<<<<<<<<<<<
  *     if val not in current_val:
@@ -3224,7 +3224,7 @@ static PyObject *__pyx_gb_5welly_4diff_7options_5utils_12generator(__pyx_Corouti
  *     val = val.strip()
  *     if val not in current_val:             # <<<<<<<<<<<<<<
  *         yield val, val
- * 
+ *
  */
   __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_cur_scope->__pyx_v_val, __pyx_cur_scope->__pyx_v_current_val, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 61, __pyx_L1_error)
   __pyx_t_3 = (__pyx_t_2 != 0);
@@ -3234,8 +3234,8 @@ static PyObject *__pyx_gb_5welly_4diff_7options_5utils_12generator(__pyx_Corouti
  *     val = val.strip()
  *     if val not in current_val:
  *         yield val, val             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3261,14 +3261,14 @@ static PyObject *__pyx_gb_5welly_4diff_7options_5utils_12generator(__pyx_Corouti
  *     val = val.strip()
  *     if val not in current_val:             # <<<<<<<<<<<<<<
  *         yield val, val
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/diff/options/utils.py":59
- * 
- * 
+ *
+ *
  * def store_multiple(val: str, current_val: Container[str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val not in current_val:
@@ -3293,8 +3293,8 @@ static PyObject *__pyx_gb_5welly_4diff_7options_5utils_12generator(__pyx_Corouti
 static PyObject *__pyx_gb_5welly_4diff_7options_5utils_15generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/diff/options/utils.py":65
- * 
- * 
+ *
+ *
  * def parse_map(val: str) -> Iterable[welliesKeyDefinition]:             # <<<<<<<<<<<<<<
  *     x = parse_wellies_key(val, func_with_args.args_funcs)
  *     if x is not None:
@@ -3386,7 +3386,7 @@ static PyObject *__pyx_gb_5welly_4diff_7options_5utils_15generator1(__pyx_Corout
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 65, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":66
- * 
+ *
  * def parse_map(val: str) -> Iterable[welliesKeyDefinition]:
  *     x = parse_wellies_key(val, func_with_args.args_funcs)             # <<<<<<<<<<<<<<
  *     if x is not None:
@@ -3486,8 +3486,8 @@ static PyObject *__pyx_gb_5welly_4diff_7options_5utils_15generator1(__pyx_Corout
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/diff/options/utils.py":65
- * 
- * 
+ *
+ *
  * def parse_map(val: str) -> Iterable[welliesKeyDefinition]:             # <<<<<<<<<<<<<<
  *     x = parse_wellies_key(val, func_with_args.args_funcs)
  *     if x is not None:
@@ -3870,8 +3870,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_slice__2);
 
   /* "welly/diff/options/utils.py":14
- * 
- * 
+ *
+ *
  * @func_with_args('scroll_by')             # <<<<<<<<<<<<<<
  * def parse_scroll_by(func: str, rest: str) -> Tuple[str, int]:
  *     try:
@@ -3881,7 +3881,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "welly/diff/options/utils.py":15
- * 
+ *
  * @func_with_args('scroll_by')
  * def parse_scroll_by(func: str, rest: str) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     try:
@@ -3893,8 +3893,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_utils_py, __pyx_n_s_parse_scroll_by, 15, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 15, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":22
- * 
- * 
+ *
+ *
  * @func_with_args('scroll_to')             # <<<<<<<<<<<<<<
  * def parse_scroll_to(func: str, rest: str) -> Tuple[str, str]:
  *     rest = rest.lower()
@@ -3904,7 +3904,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__8);
 
   /* "welly/diff/options/utils.py":23
- * 
+ *
  * @func_with_args('scroll_to')
  * def parse_scroll_to(func: str, rest: str) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -3916,8 +3916,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_utils_py, __pyx_n_s_parse_scroll_to, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":30
- * 
- * 
+ *
+ *
  * @func_with_args('change_context')             # <<<<<<<<<<<<<<
  * def parse_change_context(func: str, rest: str) -> Tuple[str, Union[int, str]]:
  *     rest = rest.lower()
@@ -3927,7 +3927,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__11);
 
   /* "welly/diff/options/utils.py":31
- * 
+ *
  * @func_with_args('change_context')
  * def parse_change_context(func: str, rest: str) -> Tuple[str, Union[int, str]]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -3939,8 +3939,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_utils_py, __pyx_n_s_parse_change_context, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 31, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":42
- * 
- * 
+ *
+ *
  * @func_with_args('start_search')             # <<<<<<<<<<<<<<
  * def parse_start_search(func: str, rest: str) -> Tuple[str, Tuple[bool, bool]]:
  *     rest_ = rest.lower().split()
@@ -3950,7 +3950,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__14);
 
   /* "welly/diff/options/utils.py":43
- * 
+ *
  * @func_with_args('start_search')
  * def parse_start_search(func: str, rest: str) -> Tuple[str, Tuple[bool, bool]]:             # <<<<<<<<<<<<<<
  *     rest_ = rest.lower().split()
@@ -3962,8 +3962,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_utils_py, __pyx_n_s_parse_start_search, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":50
- * 
- * 
+ *
+ *
  * def syntax_aliases(raw: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for x in raw.split():
@@ -3974,8 +3974,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_utils_py, __pyx_n_s_syntax_aliases, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 50, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":59
- * 
- * 
+ *
+ *
  * def store_multiple(val: str, current_val: Container[str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val not in current_val:
@@ -3986,8 +3986,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_utils_py, __pyx_n_s_store_multiple, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "welly/diff/options/utils.py":65
- * 
- * 
+ *
+ *
  * def parse_map(val: str) -> Iterable[welliesKeyDefinition]:             # <<<<<<<<<<<<<<
  *     x = parse_wellies_key(val, func_with_args.args_funcs)
  *     if x is not None:
@@ -4308,10 +4308,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/diff/options/utils.py":6
- * 
- * 
+ *
+ *
  * from typing import Any, Container, Dict, Iterable, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.conf.utils import KeyFuncWrapper, welliesKeyDefinition, parse_wellies_key
  */
   __pyx_t_1 = PyList_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -4365,9 +4365,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/utils.py":8
  * from typing import Any, Container, Dict, Iterable, Tuple, Union
- * 
+ *
  * from smelly.conf.utils import KeyFuncWrapper, welliesKeyDefinition, parse_wellies_key             # <<<<<<<<<<<<<<
- * 
+ *
  * ReturnType = Tuple[str, Any]
  */
   __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -4400,10 +4400,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/utils.py":10
  * from smelly.conf.utils import KeyFuncWrapper, welliesKeyDefinition, parse_wellies_key
- * 
+ *
  * ReturnType = Tuple[str, Any]             # <<<<<<<<<<<<<<
  * func_with_args = KeyFuncWrapper[ReturnType]()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Tuple); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4425,11 +4425,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/options/utils.py":11
- * 
+ *
  * ReturnType = Tuple[str, Any]
  * func_with_args = KeyFuncWrapper[ReturnType]()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_KeyFuncWrapper); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4446,8 +4446,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":14
- * 
- * 
+ *
+ *
  * @func_with_args('scroll_by')             # <<<<<<<<<<<<<<
  * def parse_scroll_by(func: str, rest: str) -> Tuple[str, int]:
  *     try:
@@ -4459,7 +4459,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":15
- * 
+ *
  * @func_with_args('scroll_by')
  * def parse_scroll_by(func: str, rest: str) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     try:
@@ -4491,8 +4491,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":14
- * 
- * 
+ *
+ *
  * @func_with_args('scroll_by')             # <<<<<<<<<<<<<<
  * def parse_scroll_by(func: str, rest: str) -> Tuple[str, int]:
  *     try:
@@ -4505,8 +4505,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":22
- * 
- * 
+ *
+ *
  * @func_with_args('scroll_to')             # <<<<<<<<<<<<<<
  * def parse_scroll_to(func: str, rest: str) -> Tuple[str, str]:
  *     rest = rest.lower()
@@ -4518,7 +4518,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":23
- * 
+ *
  * @func_with_args('scroll_to')
  * def parse_scroll_to(func: str, rest: str) -> Tuple[str, str]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -4550,8 +4550,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":22
- * 
- * 
+ *
+ *
  * @func_with_args('scroll_to')             # <<<<<<<<<<<<<<
  * def parse_scroll_to(func: str, rest: str) -> Tuple[str, str]:
  *     rest = rest.lower()
@@ -4564,8 +4564,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":30
- * 
- * 
+ *
+ *
  * @func_with_args('change_context')             # <<<<<<<<<<<<<<
  * def parse_change_context(func: str, rest: str) -> Tuple[str, Union[int, str]]:
  *     rest = rest.lower()
@@ -4577,7 +4577,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":31
- * 
+ *
  * @func_with_args('change_context')
  * def parse_change_context(func: str, rest: str) -> Tuple[str, Union[int, str]]:             # <<<<<<<<<<<<<<
  *     rest = rest.lower()
@@ -4623,8 +4623,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":30
- * 
- * 
+ *
+ *
  * @func_with_args('change_context')             # <<<<<<<<<<<<<<
  * def parse_change_context(func: str, rest: str) -> Tuple[str, Union[int, str]]:
  *     rest = rest.lower()
@@ -4637,8 +4637,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":42
- * 
- * 
+ *
+ *
  * @func_with_args('start_search')             # <<<<<<<<<<<<<<
  * def parse_start_search(func: str, rest: str) -> Tuple[str, Tuple[bool, bool]]:
  *     rest_ = rest.lower().split()
@@ -4650,7 +4650,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":43
- * 
+ *
  * @func_with_args('start_search')
  * def parse_start_search(func: str, rest: str) -> Tuple[str, Tuple[bool, bool]]:             # <<<<<<<<<<<<<<
  *     rest_ = rest.lower().split()
@@ -4696,8 +4696,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":42
- * 
- * 
+ *
+ *
  * @func_with_args('start_search')             # <<<<<<<<<<<<<<
  * def parse_start_search(func: str, rest: str) -> Tuple[str, Tuple[bool, bool]]:
  *     rest_ = rest.lower().split()
@@ -4710,8 +4710,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/utils.py":50
- * 
- * 
+ *
+ *
  * def syntax_aliases(raw: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for x in raw.split():
@@ -4743,8 +4743,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/utils.py":59
- * 
- * 
+ *
+ *
  * def store_multiple(val: str, current_val: Container[str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val not in current_val:
@@ -4789,8 +4789,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/diff/options/utils.py":65
- * 
- * 
+ *
+ *
  * def parse_map(val: str) -> Iterable[welliesKeyDefinition]:             # <<<<<<<<<<<<<<
  *     x = parse_wellies_key(val, func_with_args.args_funcs)
  *     if x is not None:

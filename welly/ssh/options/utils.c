@@ -970,8 +970,8 @@ struct __pyx_obj_5welly_3ssh_7options_5utils___pyx_scope_struct__env;
 struct __pyx_obj_5welly_3ssh_7options_5utils___pyx_scope_struct_1_copy;
 
 /* "welly/ssh/options/utils.py":11
- * 
- * 
+ *
+ *
  * def env(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val:
@@ -986,11 +986,11 @@ struct __pyx_obj_5welly_3ssh_7options_5utils___pyx_scope_struct__env {
 
 
 /* "welly/ssh/options/utils.py":23
- * 
- * 
+ *
+ *
  * def copy(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     yield from parse_copy_instructions(val, current_val)
- * 
+ *
  */
 struct __pyx_obj_5welly_3ssh_7options_5utils___pyx_scope_struct_1_copy {
   PyObject_HEAD
@@ -1735,8 +1735,8 @@ static PyObject *__pyx_codeobj__12;
 static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/ssh/options/utils.py":11
- * 
- * 
+ *
+ *
  * def env(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val:
@@ -1879,7 +1879,7 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_2generator(__pyx_Coroutine
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "welly/ssh/options/utils.py":12
- * 
+ *
  * def env(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, str]]:
  *     val = val.strip()             # <<<<<<<<<<<<<<
  *     if val:
@@ -1933,11 +1933,11 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_2generator(__pyx_Coroutine
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_5);
@@ -2085,8 +2085,8 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_2generator(__pyx_Coroutine
  *                 yield key, v
  *         else:
  *             yield val, DELETE_ENV_VAR             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     /*else*/ {
       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_DELETE_ENV_VAR); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 20, __pyx_L1_error)
@@ -2123,8 +2123,8 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_2generator(__pyx_Coroutine
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/ssh/options/utils.py":11
- * 
- * 
+ *
+ *
  * def env(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val:
@@ -2152,11 +2152,11 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_2generator(__pyx_Coroutine
 static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_5generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/ssh/options/utils.py":23
- * 
- * 
+ *
+ *
  * def copy(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     yield from parse_copy_instructions(val, current_val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2293,11 +2293,11 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_5generator1(__pyx_Coroutin
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "welly/ssh/options/utils.py":24
- * 
+ *
  * def copy(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:
  *     yield from parse_copy_instructions(val, current_val)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_copy_instructions); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2368,11 +2368,11 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_5generator1(__pyx_Coroutin
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/ssh/options/utils.py":23
- * 
- * 
+ *
+ *
  * def copy(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     yield from parse_copy_instructions(val, current_val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2396,8 +2396,8 @@ static PyObject *__pyx_gb_5welly_3ssh_7options_5utils_5generator1(__pyx_Coroutin
 }
 
 /* "welly/ssh/options/utils.py":27
- * 
- * 
+ *
+ *
  * def init_results_dict(ans: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     ans['hostname'] = '*'
  *     ans['per_host_dicts'] = {}
@@ -2427,7 +2427,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_6init_results_dict(CYTHON_
   __Pyx_RefNannySetupContext("init_results_dict", 0);
 
   /* "welly/ssh/options/utils.py":28
- * 
+ *
  * def init_results_dict(ans: Dict[str, Any]) -> Dict[str, Any]:
  *     ans['hostname'] = '*'             # <<<<<<<<<<<<<<
  *     ans['per_host_dicts'] = {}
@@ -2440,7 +2440,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_6init_results_dict(CYTHON_
  *     ans['hostname'] = '*'
  *     ans['per_host_dicts'] = {}             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2451,8 +2451,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_6init_results_dict(CYTHON_
  *     ans['hostname'] = '*'
  *     ans['per_host_dicts'] = {}
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2460,8 +2460,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_6init_results_dict(CYTHON_
   goto __pyx_L0;
 
   /* "welly/ssh/options/utils.py":27
- * 
- * 
+ *
+ *
  * def init_results_dict(ans: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     ans['hostname'] = '*'
  *     ans['per_host_dicts'] = {}
@@ -2479,8 +2479,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_6init_results_dict(CYTHON_
 }
 
 /* "welly/ssh/options/utils.py":33
- * 
- * 
+ *
+ *
  * def get_per_hosts_dict(results_dict: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Dict[str, Any]] = results_dict.get('per_host_dicts', {}).copy()
  *     h = results_dict['hostname']
@@ -2525,7 +2525,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_8get_per_hosts_dict(CYTHON
   __Pyx_RefNannySetupContext("get_per_hosts_dict", 0);
 
   /* "welly/ssh/options/utils.py":34
- * 
+ *
  * def get_per_hosts_dict(results_dict: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
  *     ans: Dict[str, Dict[str, Any]] = results_dict.get('per_host_dicts', {}).copy()             # <<<<<<<<<<<<<<
  *     h = results_dict['hostname']
@@ -2692,11 +2692,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_8get_per_hosts_dict(CYTHON
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_7);
         __Pyx_INCREF(__pyx_t_4);
@@ -2755,7 +2755,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_8get_per_hosts_dict(CYTHON
  *     hd = {k: v for k, v in results_dict.items() if k != 'per_host_dicts'}
  *     ans[h] = hd             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   if (unlikely(PyObject_SetItem(__pyx_v_ans, __pyx_v_h, __pyx_v_hd) < 0)) __PYX_ERR(0, 37, __pyx_L1_error)
 
@@ -2763,8 +2763,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_8get_per_hosts_dict(CYTHON
  *     hd = {k: v for k, v in results_dict.items() if k != 'per_host_dicts'}
  *     ans[h] = hd
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2772,8 +2772,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_8get_per_hosts_dict(CYTHON
   goto __pyx_L0;
 
   /* "welly/ssh/options/utils.py":33
- * 
- * 
+ *
+ *
  * def get_per_hosts_dict(results_dict: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Dict[str, Any]] = results_dict.get('per_host_dicts', {}).copy()
  *     h = results_dict['hostname']
@@ -2801,8 +2801,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_8get_per_hosts_dict(CYTHON
 }
 
 /* "welly/ssh/options/utils.py":44
- * 
- * 
+ *
+ *
  * def hostname(val: str, dict_with_parse_results: Optional[Dict[str, Any]] = None) -> str:             # <<<<<<<<<<<<<<
  *     if dict_with_parse_results is not None:
  *         ch = dict_with_parse_results['hostname']
@@ -2905,7 +2905,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_10hostname(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("hostname", 0);
 
   /* "welly/ssh/options/utils.py":45
- * 
+ *
  * def hostname(val: str, dict_with_parse_results: Optional[Dict[str, Any]] = None) -> str:
  *     if dict_with_parse_results is not None:             # <<<<<<<<<<<<<<
  *         ch = dict_with_parse_results['hostname']
@@ -2932,7 +2932,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_10hostname(CYTHON_UNUSED P
  *         ch = dict_with_parse_results['hostname']
  *         if val != ch:             # <<<<<<<<<<<<<<
  *             from .parse import create_result_dict
- * 
+ *
  */
     __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_val, __pyx_v_ch, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 47, __pyx_L1_error)
     if (__pyx_t_2) {
@@ -2941,7 +2941,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_10hostname(CYTHON_UNUSED P
  *         ch = dict_with_parse_results['hostname']
  *         if val != ch:
  *             from .parse import create_result_dict             # <<<<<<<<<<<<<<
- * 
+ *
  *             phd = get_per_hosts_dict(dict_with_parse_results)
  */
       __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -2961,7 +2961,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_10hostname(CYTHON_UNUSED P
 
       /* "welly/ssh/options/utils.py":50
  *             from .parse import create_result_dict
- * 
+ *
  *             phd = get_per_hosts_dict(dict_with_parse_results)             # <<<<<<<<<<<<<<
  *             dict_with_parse_results.clear()
  *             dict_with_parse_results.update(phd.pop(val, create_result_dict()))
@@ -2987,7 +2987,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_10hostname(CYTHON_UNUSED P
       __pyx_t_4 = 0;
 
       /* "welly/ssh/options/utils.py":51
- * 
+ *
  *             phd = get_per_hosts_dict(dict_with_parse_results)
  *             dict_with_parse_results.clear()             # <<<<<<<<<<<<<<
  *             dict_with_parse_results.update(phd.pop(val, create_result_dict()))
@@ -3168,12 +3168,12 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_10hostname(CYTHON_UNUSED P
  *         ch = dict_with_parse_results['hostname']
  *         if val != ch:             # <<<<<<<<<<<<<<
  *             from .parse import create_result_dict
- * 
+ *
  */
     }
 
     /* "welly/ssh/options/utils.py":45
- * 
+ *
  * def hostname(val: str, dict_with_parse_results: Optional[Dict[str, Any]] = None) -> str:
  *     if dict_with_parse_results is not None:             # <<<<<<<<<<<<<<
  *         ch = dict_with_parse_results['hostname']
@@ -3192,8 +3192,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5utils_10hostname(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "welly/ssh/options/utils.py":44
- * 
- * 
+ *
+ *
  * def hostname(val: str, dict_with_parse_results: Optional[Dict[str, Any]] = None) -> str:             # <<<<<<<<<<<<<<
  *     if dict_with_parse_results is not None:
  *         ch = dict_with_parse_results['hostname']
@@ -3557,8 +3557,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/ssh/options/utils.py":11
- * 
- * 
+ *
+ *
  * def env(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val:
@@ -3569,11 +3569,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_options_utils_py, __pyx_n_s_env, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "welly/ssh/options/utils.py":23
- * 
- * 
+ *
+ *
  * def copy(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     yield from parse_copy_instructions(val, current_val)
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(2, __pyx_n_s_val, __pyx_n_s_current_val); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -3581,8 +3581,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_options_utils_py, __pyx_n_s_copy, 23, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "welly/ssh/options/utils.py":27
- * 
- * 
+ *
+ *
  * def init_results_dict(ans: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     ans['hostname'] = '*'
  *     ans['per_host_dicts'] = {}
@@ -3593,8 +3593,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_options_utils_py, __pyx_n_s_init_results_dict, 27, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 27, __pyx_L1_error)
 
   /* "welly/ssh/options/utils.py":33
- * 
- * 
+ *
+ *
  * def get_per_hosts_dict(results_dict: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Dict[str, Any]] = results_dict.get('per_host_dicts', {}).copy()
  *     h = results_dict['hostname']
@@ -3605,8 +3605,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_options_utils_py, __pyx_n_s_get_per_hosts_dict, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 33, __pyx_L1_error)
 
   /* "welly/ssh/options/utils.py":44
- * 
- * 
+ *
+ *
  * def hostname(val: str, dict_with_parse_results: Optional[Dict[str, Any]] = None) -> str:             # <<<<<<<<<<<<<<
  *     if dict_with_parse_results is not None:
  *         ch = dict_with_parse_results['hostname']
@@ -3927,9 +3927,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/utils.py":4
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Any, Dict, Iterable, Optional, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from ..copy import CopyInstruction, parse_copy_instructions
  */
   __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -3976,9 +3976,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/utils.py":6
  * from typing import Any, Dict, Iterable, Optional, Tuple
- * 
+ *
  * from ..copy import CopyInstruction, parse_copy_instructions             # <<<<<<<<<<<<<<
- * 
+ *
  * DELETE_ENV_VAR = '_delete_this_env_var_'
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -4004,16 +4004,16 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/utils.py":8
  * from ..copy import CopyInstruction, parse_copy_instructions
- * 
+ *
  * DELETE_ENV_VAR = '_delete_this_env_var_'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_DELETE_ENV_VAR, __pyx_n_s_delete_this_env_var) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
 
   /* "welly/ssh/options/utils.py":11
- * 
- * 
+ *
+ *
  * def env(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, str]]:             # <<<<<<<<<<<<<<
  *     val = val.strip()
  *     if val:
@@ -4067,11 +4067,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/options/utils.py":23
- * 
- * 
+ *
+ *
  * def copy(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     yield from parse_copy_instructions(val, current_val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4124,8 +4124,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/options/utils.py":27
- * 
- * 
+ *
+ *
  * def init_results_dict(ans: Dict[str, Any]) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     ans['hostname'] = '*'
  *     ans['per_host_dicts'] = {}
@@ -4176,8 +4176,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/ssh/options/utils.py":33
- * 
- * 
+ *
+ *
  * def get_per_hosts_dict(results_dict: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Dict[str, Any]] = results_dict.get('per_host_dicts', {}).copy()
  *     h = results_dict['hostname']
@@ -4242,11 +4242,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/options/utils.py":41
- * 
- * 
+ *
+ *
  * first_seen_positions: Dict[str, int] = {}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4254,8 +4254,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/options/utils.py":44
- * 
- * 
+ *
+ *
  * def hostname(val: str, dict_with_parse_results: Optional[Dict[str, Any]] = None) -> str:             # <<<<<<<<<<<<<<
  *     if dict_with_parse_results is not None:
  *         ch = dict_with_parse_results['hostname']
@@ -4299,7 +4299,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/ssh/options/utils.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

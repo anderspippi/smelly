@@ -1583,8 +1583,8 @@ static PyObject *__pyx_codeobj__8;
 /* Late includes */
 
 /* "smelly/fonts/list.py":17
- * 
- * 
+ *
+ *
  * def create_family_groups(monospaced: bool = True) -> Dict[str, List[ListedFont]]:             # <<<<<<<<<<<<<<
  *     g: Dict[str, List[ListedFont]] = {}
  *     for f in list_fonts():
@@ -1671,7 +1671,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_4list_create_family_groups(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("create_family_groups", 0);
 
   /* "smelly/fonts/list.py":18
- * 
+ *
  * def create_family_groups(monospaced: bool = True) -> Dict[str, List[ListedFont]]:
  *     g: Dict[str, List[ListedFont]] = {}             # <<<<<<<<<<<<<<
  *     for f in list_fonts():
@@ -1776,7 +1776,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_4list_create_family_groups(CYTHON_UNUSE
  *         if not monospaced or f['is_monospace']:
  *             g.setdefault(f['family'], []).append(f)             # <<<<<<<<<<<<<<
  *     return g
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_f, __pyx_n_s_family); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -1812,8 +1812,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_4list_create_family_groups(CYTHON_UNUSE
  *         if not monospaced or f['is_monospace']:
  *             g.setdefault(f['family'], []).append(f)
  *     return g             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_g);
@@ -1821,8 +1821,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_4list_create_family_groups(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/fonts/list.py":17
- * 
- * 
+ *
+ *
  * def create_family_groups(monospaced: bool = True) -> Dict[str, List[ListedFont]]:             # <<<<<<<<<<<<<<
  *     g: Dict[str, List[ListedFont]] = {}
  *     for f in list_fonts():
@@ -1845,8 +1845,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_4list_create_family_groups(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/list.py":25
- * 
- * 
+ *
+ *
  * def main(argv: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     psnames = '--psnames' in argv
  *     isatty = sys.stdout.isatty()
@@ -2004,8 +2004,8 @@ static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* "smelly/fonts/list.py":25
- * 
- * 
+ *
+ *
  * def main(argv: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     psnames = '--psnames' in argv
  *     isatty = sys.stdout.isatty()
@@ -2039,7 +2039,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_4list_2main(CYTHON_UNUSED PyObject *__p
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "smelly/fonts/list.py":26
- * 
+ *
  * def main(argv: Sequence[str]) -> None:
  *     psnames = '--psnames' in argv             # <<<<<<<<<<<<<<
  *     isatty = sys.stdout.isatty()
@@ -2467,8 +2467,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_4list_2main(CYTHON_UNUSED PyObject *__p
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/fonts/list.py":25
- * 
- * 
+ *
+ *
  * def main(argv: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     psnames = '--psnames' in argv
  *     isatty = sys.stdout.isatty()
@@ -2610,8 +2610,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/fonts/list.py":17
- * 
- * 
+ *
+ *
  * def create_family_groups(monospaced: bool = True) -> Dict[str, List[ListedFont]]:             # <<<<<<<<<<<<<<
  *     g: Dict[str, List[ListedFont]] = {}
  *     for f in list_fonts():
@@ -2625,8 +2625,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
 
   /* "smelly/fonts/list.py":25
- * 
- * 
+ *
+ *
  * def main(argv: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     psnames = '--psnames' in argv
  *     isatty = sys.stdout.isatty()
@@ -2921,10 +2921,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/list.py":4
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import sys             # <<<<<<<<<<<<<<
  * from typing import Dict, List, Sequence
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2932,10 +2932,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/list.py":5
- * 
+ *
  * import sys
  * from typing import Dict, List, Sequence             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.constants import is_macos
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2968,9 +2968,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/list.py":7
  * from typing import Dict, List, Sequence
- * 
+ *
  * from smelly.constants import is_macos             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import ListedFont
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2989,9 +2989,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/list.py":9
  * from smelly.constants import is_macos
- * 
+ *
  * from . import ListedFont             # <<<<<<<<<<<<<<
- * 
+ *
  * if is_macos:
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -3010,7 +3010,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/list.py":11
  * from . import ListedFont
- * 
+ *
  * if is_macos:             # <<<<<<<<<<<<<<
  *     from .core_text import list_fonts
  * else:
@@ -3022,7 +3022,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/fonts/list.py":12
- * 
+ *
  * if is_macos:
  *     from .core_text import list_fonts             # <<<<<<<<<<<<<<
  * else:
@@ -3044,7 +3044,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/fonts/list.py":11
  * from . import ListedFont
- * 
+ *
  * if is_macos:             # <<<<<<<<<<<<<<
  *     from .core_text import list_fonts
  * else:
@@ -3056,8 +3056,8 @@ if (!__Pyx_RefNanny) {
  *     from .core_text import list_fonts
  * else:
  *     from .fontconfig import list_fonts             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*else*/ {
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -3077,8 +3077,8 @@ if (!__Pyx_RefNanny) {
   __pyx_L2:;
 
   /* "smelly/fonts/list.py":17
- * 
- * 
+ *
+ *
  * def create_family_groups(monospaced: bool = True) -> Dict[str, List[ListedFont]]:             # <<<<<<<<<<<<<<
  *     g: Dict[str, List[ListedFont]] = {}
  *     for f in list_fonts():
@@ -3119,8 +3119,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/fonts/list.py":25
- * 
- * 
+ *
+ *
  * def main(argv: Sequence[str]) -> None:             # <<<<<<<<<<<<<<
  *     psnames = '--psnames' in argv
  *     isatty = sys.stdout.isatty()
@@ -3145,7 +3145,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/fonts/list.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);

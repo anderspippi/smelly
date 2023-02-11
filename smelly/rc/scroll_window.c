@@ -1710,7 +1710,7 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/scroll_window.py":42
  *     args = RemoteCommand.Args(spec='SCROLL_AMOUNT', count=1, special_parse='parse_scroll_amount(args[0])', json_field='amount')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Scroll amount must be specified')
@@ -1827,7 +1827,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_message_to_
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/scroll_window.py":43
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) < 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Scroll amount must be specified')
@@ -1864,7 +1864,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_message_to_
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/scroll_window.py":43
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) < 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Scroll amount must be specified')
@@ -2069,7 +2069,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_message_to_
  *             if not pages and not q.is_integer():
  *                 self.fatal('The number must be an integer')             # <<<<<<<<<<<<<<
  *             amount = q * mult, 'p' if pages else ('u' if unscroll else 'l')
- * 
+ *
  */
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fatal); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -2103,7 +2103,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_message_to_
  *             if not pages and not q.is_integer():
  *                 self.fatal('The number must be an integer')
  *             amount = q * mult, 'p' if pages else ('u' if unscroll else 'l')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # defaults to scroll the window this command is run in
  */
     __pyx_t_3 = PyFloat_FromDouble(__pyx_v_q); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -2148,10 +2148,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_message_to_
   }
 
   /* "smelly/rc/scroll_window.py":57
- * 
+ *
  *         # defaults to scroll the window this command is run in
  *         return {'match': opts.match, 'amount': amount, 'self': True}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2169,7 +2169,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_message_to_
 
   /* "smelly/rc/scroll_window.py":42
  *     args = RemoteCommand.Args(spec='SCROLL_AMOUNT', count=1, special_parse='parse_scroll_amount(args[0])', json_field='amount')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Scroll amount must be specified')
@@ -2196,7 +2196,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_message_to_
 
 /* "smelly/rc/scroll_window.py":59
  *         return {'match': opts.match, 'amount': amount, 'self': True}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         amt = payload_get('amount')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2320,7 +2320,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_2response_f
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/scroll_window.py":60
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         amt = payload_get('amount')             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -2541,11 +2541,11 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_2response_f
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_1);
           __Pyx_INCREF(__pyx_t_3);
@@ -2698,7 +2698,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_2response_f
             __pyx_t_9 = __pyx_t_8;
             goto __pyx_L13_bool_binop_done;
           }
-          __pyx_t_8 = PyInt_Check(__pyx_v_amt); 
+          __pyx_t_8 = PyInt_Check(__pyx_v_amt);
           __pyx_t_13 = ((!(__pyx_t_8 != 0)) != 0);
           if (__pyx_t_13) {
           } else {
@@ -2894,7 +2894,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_2response_f
  *                         for i in range(int(abs(amt))):
  *                             func()             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
             __Pyx_INCREF(__pyx_v_func);
             __pyx_t_12 = __pyx_v_func; __pyx_t_5 = NULL;
@@ -2951,8 +2951,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_2response_f
  *                         for i in range(int(abs(amt))):
  *                             func()
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2960,7 +2960,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13scroll_window_12ScrollWindow_2response_f
 
   /* "smelly/rc/scroll_window.py":59
  *         return {'match': opts.match, 'amount': amount, 'self': True}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         amt = payload_get('amount')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -3148,7 +3148,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/scroll_window.py":42
  *     args = RemoteCommand.Args(spec='SCROLL_AMOUNT', count=1, special_parse='parse_scroll_amount(args[0])', json_field='amount')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Scroll amount must be specified')
@@ -3160,7 +3160,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/scroll_window.py":59
  *         return {'match': opts.match, 'amount': amount, 'self': True}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         amt = payload_get('amount')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -3459,10 +3459,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/scroll_window.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -3502,9 +3502,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/scroll_window.py":7
  * from typing import TYPE_CHECKING, Optional, Tuple, Union
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -3579,10 +3579,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/scroll_window.py":9
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import ScrollWindowRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3591,11 +3591,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/scroll_window.py":10
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import ScrollWindowRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3613,16 +3613,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/scroll_window.py":9
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import ScrollWindowRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/scroll_window.py":13
- * 
- * 
+ *
+ *
  * class ScrollWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     amount+/list.scroll_amount: The amount to scroll, a two item list with the first item being \
@@ -3640,7 +3640,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/scroll_window.py":14
- * 
+ *
  * class ScrollWindow(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     amount+/list.scroll_amount: The amount to scroll, a two item list with the first item being \
@@ -3651,7 +3651,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/scroll_window.py":22
  *     '''
- * 
+ *
  *     short_desc = 'Scroll the specified windows'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Scroll the specified windows, if no window is specified, scroll the window this command is run inside.'
@@ -3694,7 +3694,7 @@ if (!__Pyx_RefNanny) {
  * '''
  *     )
  *     args = RemoteCommand.Args(spec='SCROLL_AMOUNT', count=1, special_parse='parse_scroll_amount(args[0])', json_field='amount')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 40, __pyx_L1_error)
@@ -3717,7 +3717,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/scroll_window.py":42
  *     args = RemoteCommand.Args(spec='SCROLL_AMOUNT', count=1, special_parse='parse_scroll_amount(args[0])', json_field='amount')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Scroll amount must be specified')
@@ -3746,7 +3746,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/scroll_window.py":59
  *         return {'match': opts.match, 'amount': amount, 'self': True}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         amt = payload_get('amount')
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
@@ -3783,8 +3783,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/scroll_window.py":13
- * 
- * 
+ *
+ *
  * class ScrollWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     amount+/list.scroll_amount: The amount to scroll, a two item list with the first item being \
@@ -3798,8 +3798,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/scroll_window.py":81
- * 
- * 
+ *
+ *
  * scroll_window = ScrollWindow()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ScrollWindow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
@@ -3813,7 +3813,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/scroll_window.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

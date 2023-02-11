@@ -971,7 +971,7 @@ struct __pyx_obj_6smelly_2rc_10set_colors___pyx_scope_struct_1_genexpr;
 
 /* "smelly/rc/set_colors.py":132
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         colors: Dict[str, Optional[int]] = payload_get('colors')
@@ -1975,8 +1975,8 @@ static PyObject *__pyx_codeobj__13;
 /* Late includes */
 
 /* "smelly/rc/set_colors.py":45
- * 
- * 
+ *
+ *
  * def parse_colors(args: Iterable[str]) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     colors: Dict[str, Optional[Color]] = {}
  *     nullable_color_map: Dict[str, Optional[int]] = {}
@@ -2031,7 +2031,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_parse_colors(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("parse_colors", 0);
 
   /* "smelly/rc/set_colors.py":46
- * 
+ *
  * def parse_colors(args: Iterable[str]) -> Dict[str, Optional[int]]:
  *     colors: Dict[str, Optional[Color]] = {}             # <<<<<<<<<<<<<<
  *     nullable_color_map: Dict[str, Optional[int]] = {}
@@ -2311,7 +2311,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_parse_colors(CYTHON_UNUSED Py
                 __Pyx_GIVEREF(__pyx_t_4);
                 __Pyx_XGIVEREF(__pyx_t_7);
                 __Pyx_ErrRestoreWithState(__pyx_t_8, __pyx_t_4, __pyx_t_7);
-                __pyx_t_8 = 0; __pyx_t_4 = 0; __pyx_t_7 = 0; 
+                __pyx_t_8 = 0; __pyx_t_4 = 0; __pyx_t_7 = 0;
                 __PYX_ERR(0, 52, __pyx_L14_except_error)
               }
               __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -2553,11 +2553,11 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_parse_colors(CYTHON_UNUSED Py
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_8 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_8 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_8);
         __Pyx_INCREF(__pyx_t_9);
@@ -2623,7 +2623,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_parse_colors(CYTHON_UNUSED Py
  *     ans: Dict[str, Optional[int]] = {k: int(v) for k, v in colors.items() if isinstance(v, Color)}
  *     ans.update(nullable_color_map)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_t_7 = __Pyx_CallUnboundCMethod1(&__pyx_umethod_PyDict_Type_update, __pyx_v_ans, __pyx_v_nullable_color_map); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -2633,8 +2633,8 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_parse_colors(CYTHON_UNUSED Py
  *     ans: Dict[str, Optional[int]] = {k: int(v) for k, v in colors.items() if isinstance(v, Color)}
  *     ans.update(nullable_color_map)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2642,8 +2642,8 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_parse_colors(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/rc/set_colors.py":45
- * 
- * 
+ *
+ *
  * def parse_colors(args: Iterable[str]) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     colors: Dict[str, Optional[Color]] = {}
  *     nullable_color_map: Dict[str, Optional[int]] = {}
@@ -2677,7 +2677,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_parse_colors(CYTHON_UNUSED Py
 
 /* "smelly/rc/set_colors.py":113
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         final_colors: Dict[str, Optional[int]] = {}
  *         if not opts.reset:
@@ -2800,7 +2800,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_message_to_smelly(
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/set_colors.py":114
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         final_colors: Dict[str, Optional[int]] = {}             # <<<<<<<<<<<<<<
  *         if not opts.reset:
@@ -3163,7 +3163,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_message_to_smelly(
  *             'reset': opts.reset,
  *         }
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3173,7 +3173,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_message_to_smelly(
 
   /* "smelly/rc/set_colors.py":113
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         final_colors: Dict[str, Optional[int]] = {}
  *         if not opts.reset:
@@ -3204,7 +3204,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_message_to_smelly(
 
 /* "smelly/rc/set_colors.py":132
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         colors: Dict[str, Optional[int]] = payload_get('colors')
@@ -3462,7 +3462,7 @@ static PyObject *__pyx_gb_6smelly_2rc_10set_colors_9SetColors_20response_from_sm
 
 /* "smelly/rc/set_colors.py":132
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         colors: Dict[str, Optional[int]] = payload_get('colors')
@@ -3504,7 +3504,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_2response_from_sme
   }
 
   /* "smelly/rc/set_colors.py":133
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         windows = self.windows_for_payload(boss, window, payload_get)             # <<<<<<<<<<<<<<
  *         colors: Dict[str, Optional[int]] = payload_get('colors')
@@ -3697,11 +3697,11 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_2response_from_sme
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_5);
           __Pyx_INCREF(__pyx_t_9);
@@ -4081,7 +4081,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_2response_from_sme
  *                     boss.default_bg_changed_for(w.id)
  *                 w.refresh()             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_refresh); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 146, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
@@ -4125,8 +4125,8 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_2response_from_sme
  *                     boss.default_bg_changed_for(w.id)
  *                 w.refresh()
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -4134,7 +4134,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10set_colors_9SetColors_2response_from_sme
 
   /* "smelly/rc/set_colors.py":132
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         colors: Dict[str, Optional[int]] = payload_get('colors')
@@ -4630,8 +4630,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "smelly/rc/set_colors.py":45
- * 
- * 
+ *
+ *
  * def parse_colors(args: Iterable[str]) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     colors: Dict[str, Optional[Color]] = {}
  *     nullable_color_map: Dict[str, Optional[int]] = {}
@@ -4654,7 +4654,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_colors.py":113
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         final_colors: Dict[str, Optional[int]] = {}
  *         if not opts.reset:
@@ -4666,7 +4666,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_colors.py":132
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         colors: Dict[str, Optional[int]] = payload_get('colors')
@@ -4987,11 +4987,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/set_colors.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Dict, Iterable, Optional
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4999,10 +4999,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_colors.py":6
- * 
+ *
  * import os
  * from typing import TYPE_CHECKING, Dict, Iterable, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.cli import emph
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -5042,7 +5042,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_colors.py":8
  * from typing import TYPE_CHECKING, Dict, Iterable, Optional
- * 
+ *
  * from smelly.cli import emph             # <<<<<<<<<<<<<<
  * from smelly.config import parse_config
  * from smelly.fast_data_types import Color, patch_color_profiles
@@ -5062,11 +5062,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_colors.py":9
- * 
+ *
  * from smelly.cli import emph
  * from smelly.config import parse_config             # <<<<<<<<<<<<<<
  * from smelly.fast_data_types import Color, patch_color_profiles
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5086,7 +5086,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.cli import emph
  * from smelly.config import parse_config
  * from smelly.fast_data_types import Color, patch_color_profiles             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import (
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -5111,7 +5111,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_colors.py":13
- * 
+ *
  * from .base import (
  *     MATCH_TAB_OPTION,             # <<<<<<<<<<<<<<
  *     MATCH_WINDOW_OPTION,
@@ -5155,7 +5155,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_colors.py":12
  * from smelly.fast_data_types import Color, patch_color_profiles
- * 
+ *
  * from .base import (             # <<<<<<<<<<<<<<
  *     MATCH_TAB_OPTION,
  *     MATCH_WINDOW_OPTION,
@@ -5211,10 +5211,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_colors.py":26
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetColorsRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5223,11 +5223,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_colors.py":27
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetColorsRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -5245,10 +5245,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_colors.py":26
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetColorsRCOptions as CLIOptions
- * 
+ *
  */
   }
 
@@ -5262,8 +5262,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_nullable_colors, __pyx_tuple__5) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "smelly/rc/set_colors.py":45
- * 
- * 
+ *
+ *
  * def parse_colors(args: Iterable[str]) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     colors: Dict[str, Optional[Color]] = {}
  *     nullable_color_map: Dict[str, Optional[int]] = {}
@@ -5306,8 +5306,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/set_colors.py":64
- * 
- * 
+ *
+ *
  * class SetColors(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers or null for nullable colors
@@ -5325,7 +5325,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/rc/set_colors.py":65
- * 
+ *
  * class SetColors(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers or null for nullable colors
@@ -5336,7 +5336,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_colors.py":74
  *     '''
- * 
+ *
  *     short_desc = 'Set terminal colors'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Set the terminal colors for the specified windows/tabs (defaults to active window).'
@@ -5440,7 +5440,7 @@ if (!__Pyx_RefNanny) {
  *         special_parse='parse_colors_and_files(args)',
  *         completion=RemoteCommand.CompletionSpec.from_string('type:file group:"CONF files", ext:conf'),             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -5484,7 +5484,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_colors.py":113
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         final_colors: Dict[str, Optional[int]] = {}
  *         if not opts.reset:
@@ -5513,7 +5513,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_colors.py":132
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
  *         colors: Dict[str, Optional[int]] = payload_get('colors')
@@ -5550,8 +5550,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/set_colors.py":64
- * 
- * 
+ *
+ *
  * class SetColors(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers or null for nullable colors
@@ -5565,8 +5565,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_colors.py":150
- * 
- * 
+ *
+ *
  * set_colors = SetColors()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SetColors); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
@@ -5580,7 +5580,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_colors.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);

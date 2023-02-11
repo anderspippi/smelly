@@ -1505,8 +1505,8 @@ static PyObject *__pyx_codeobj__12;
 /* Late includes */
 
 /* "generate.py":17
- * 
- * 
+ *
+ *
  * def clean(x):             # <<<<<<<<<<<<<<
  *     if os.path.exists(x):
  *         shutil.rmtree(x)
@@ -1539,11 +1539,11 @@ static PyObject *__pyx_pf_8generate_clean(CYTHON_UNUSED PyObject *__pyx_self, Py
   __Pyx_RefNannySetupContext("clean", 0);
 
   /* "generate.py":18
- * 
+ *
  * def clean(x):
  *     if os.path.exists(x):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(x)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1576,8 +1576,8 @@ static PyObject *__pyx_pf_8generate_clean(CYTHON_UNUSED PyObject *__pyx_self, Py
  * def clean(x):
  *     if os.path.exists(x):
  *         shutil.rmtree(x)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_shutil); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 19, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -1602,17 +1602,17 @@ static PyObject *__pyx_pf_8generate_clean(CYTHON_UNUSED PyObject *__pyx_self, Py
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "generate.py":18
- * 
+ *
  * def clean(x):
  *     if os.path.exists(x):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(x)
- * 
+ *
  */
   }
 
   /* "generate.py":17
- * 
- * 
+ *
+ *
  * def clean(x):             # <<<<<<<<<<<<<<
  *     if os.path.exists(x):
  *         shutil.rmtree(x)
@@ -1634,11 +1634,11 @@ static PyObject *__pyx_pf_8generate_clean(CYTHON_UNUSED PyObject *__pyx_self, Py
 }
 
 /* "generate.py":22
- * 
- * 
+ *
+ *
  * def regenerate():             # <<<<<<<<<<<<<<
  *     clean('out')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1671,10 +1671,10 @@ static PyObject *__pyx_pf_8generate_2regenerate(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_RefNannySetupContext("regenerate", 0);
 
   /* "generate.py":23
- * 
+ *
  * def regenerate():
  *     clean('out')             # <<<<<<<<<<<<<<
- * 
+ *
  *     subprocess.check_call(shlex.split(cmdline.format(dest='out')))
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_clean); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -1698,10 +1698,10 @@ static PyObject *__pyx_pf_8generate_2regenerate(CYTHON_UNUSED PyObject *__pyx_se
 
   /* "generate.py":25
  *     clean('out')
- * 
+ *
  *     subprocess.check_call(shlex.split(cmdline.format(dest='out')))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_subprocess); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -1760,11 +1760,11 @@ static PyObject *__pyx_pf_8generate_2regenerate(CYTHON_UNUSED PyObject *__pyx_se
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "generate.py":22
- * 
- * 
+ *
+ *
  * def regenerate():             # <<<<<<<<<<<<<<
  *     clean('out')
- * 
+ *
  */
 
   /* function exit code */
@@ -1787,11 +1787,11 @@ static PyObject *__pyx_pf_8generate_2regenerate(CYTHON_UNUSED PyObject *__pyx_se
 }
 
 /* "generate.py":28
- * 
- * 
+ *
+ *
  * def strip_trailing_whitespace(c):             # <<<<<<<<<<<<<<
  *     return re.sub(r'\s+$', '', c, flags=re.MULTILINE) + '\n'
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1822,11 +1822,11 @@ static PyObject *__pyx_pf_8generate_4strip_trailing_whitespace(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("strip_trailing_whitespace", 0);
 
   /* "generate.py":29
- * 
+ *
  * def strip_trailing_whitespace(c):
  *     return re.sub(r'\s+$', '', c, flags=re.MULTILINE) + '\n'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_re); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
@@ -1867,11 +1867,11 @@ static PyObject *__pyx_pf_8generate_4strip_trailing_whitespace(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "generate.py":28
- * 
- * 
+ *
+ *
  * def strip_trailing_whitespace(c):             # <<<<<<<<<<<<<<
  *     return re.sub(r'\s+$', '', c, flags=re.MULTILINE) + '\n'
- * 
+ *
  */
 
   /* function exit code */
@@ -1890,8 +1890,8 @@ static PyObject *__pyx_pf_8generate_4strip_trailing_whitespace(CYTHON_UNUSED PyO
 }
 
 /* "generate.py":32
- * 
- * 
+ *
+ *
  * def export():             # <<<<<<<<<<<<<<
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:
  *         data = source.read()
@@ -1938,7 +1938,7 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
   __Pyx_RefNannySetupContext("export", 0);
 
   /* "generate.py":33
- * 
+ *
  * def export():
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:             # <<<<<<<<<<<<<<
  *         data = source.read()
@@ -1990,7 +1990,7 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:
  *         data = source.read()             # <<<<<<<<<<<<<<
  *         data = strip_trailing_whitespace(data)
- * 
+ *
  */
           __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_source, __pyx_n_s_read); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -2016,7 +2016,7 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:
  *         data = source.read()
  *         data = strip_trailing_whitespace(data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         with open('../smelly/gl-wrapper.h', 'w', encoding='utf-8') as dest:
  */
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_strip_trailing_whitespace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L7_error)
@@ -2041,10 +2041,10 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
 
           /* "generate.py":37
  *         data = strip_trailing_whitespace(data)
- * 
+ *
  *         with open('../smelly/gl-wrapper.h', 'w', encoding='utf-8') as dest:             # <<<<<<<<<<<<<<
  *             dest.write(data)
- * 
+ *
  */
           /*with:*/ {
             __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 37, __pyx_L7_error)
@@ -2088,11 +2088,11 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
                   __pyx_t_1 = 0;
 
                   /* "generate.py":38
- * 
+ *
  *         with open('../smelly/gl-wrapper.h', 'w', encoding='utf-8') as dest:
  *             dest.write(data)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
                   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_dest, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L17_error)
                   __Pyx_GOTREF(__pyx_t_2);
@@ -2115,10 +2115,10 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
 
                   /* "generate.py":37
  *         data = strip_trailing_whitespace(data)
- * 
+ *
  *         with open('../smelly/gl-wrapper.h', 'w', encoding='utf-8') as dest:             # <<<<<<<<<<<<<<
  *             dest.write(data)
- * 
+ *
  */
                 }
                 __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -2152,7 +2152,7 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
                     __Pyx_GIVEREF(__pyx_t_2);
                     __Pyx_XGIVEREF(__pyx_t_4);
                     __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_4);
-                    __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_4 = 0; 
+                    __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_4 = 0;
                     __PYX_ERR(0, 37, __pyx_L19_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2195,7 +2195,7 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
           }
 
           /* "generate.py":33
- * 
+ *
  * def export():
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:             # <<<<<<<<<<<<<<
  *         data = source.read()
@@ -2233,7 +2233,7 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_2, __pyx_t_1);
-            __pyx_t_4 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_4 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 33, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2276,8 +2276,8 @@ static PyObject *__pyx_pf_8generate_6export(CYTHON_UNUSED PyObject *__pyx_self) 
   }
 
   /* "generate.py":32
- * 
- * 
+ *
+ *
  * def export():             # <<<<<<<<<<<<<<
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:
  *         data = source.read()
@@ -2413,7 +2413,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "generate.py":33
- * 
+ *
  * def export():
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:             # <<<<<<<<<<<<<<
  *         data = source.read()
@@ -2425,10 +2425,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "generate.py":37
  *         data = strip_trailing_whitespace(data)
- * 
+ *
  *         with open('../smelly/gl-wrapper.h', 'w', encoding='utf-8') as dest:             # <<<<<<<<<<<<<<
  *             dest.write(data)
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(2, __pyx_kp_s_smelly_gl_wrapper_h, __pyx_n_s_w); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
@@ -2438,8 +2438,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "generate.py":17
- * 
- * 
+ *
+ *
  * def clean(x):             # <<<<<<<<<<<<<<
  *     if os.path.exists(x):
  *         shutil.rmtree(x)
@@ -2450,20 +2450,20 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_glad_generate_py, __pyx_n_s_clean, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 17, __pyx_L1_error)
 
   /* "generate.py":22
- * 
- * 
+ *
+ *
  * def regenerate():             # <<<<<<<<<<<<<<
  *     clean('out')
- * 
+ *
  */
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_glad_generate_py, __pyx_n_s_regenerate, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "generate.py":28
- * 
- * 
+ *
+ *
  * def strip_trailing_whitespace(c):             # <<<<<<<<<<<<<<
  *     return re.sub(r'\s+$', '', c, flags=re.MULTILINE) + '\n'
- * 
+ *
  */
   __pyx_tuple__9 = PyTuple_Pack(1, __pyx_n_s_c); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
@@ -2471,8 +2471,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_glad_generate_py, __pyx_n_s_strip_trailing_whitespace, 28, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 28, __pyx_L1_error)
 
   /* "generate.py":32
- * 
- * 
+ *
+ *
  * def export():             # <<<<<<<<<<<<<<
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:
  *         data = source.read()
@@ -2766,7 +2766,7 @@ if (!__Pyx_RefNanny) {
 
   /* "generate.py":5
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import re
  * import shlex
@@ -2777,7 +2777,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "generate.py":6
- * 
+ *
  * import os
  * import re             # <<<<<<<<<<<<<<
  * import shlex
@@ -2805,7 +2805,7 @@ if (!__Pyx_RefNanny) {
  * import shlex
  * import shutil             # <<<<<<<<<<<<<<
  * import subprocess
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_shutil, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2816,7 +2816,7 @@ if (!__Pyx_RefNanny) {
  * import shlex
  * import shutil
  * import subprocess             # <<<<<<<<<<<<<<
- * 
+ *
  * cmdline = (
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -2825,7 +2825,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "generate.py":12
- * 
+ *
  * cmdline = (
  *     'glad --out-path {dest} --api gl:core=3.1 '             # <<<<<<<<<<<<<<
  *     ' --extensions GL_ARB_texture_storage,GL_ARB_copy_image,GL_ARB_multisample,GL_ARB_robustness,GL_ARB_instanced_arrays,GL_KHR_debug '
@@ -2834,8 +2834,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_cmdline, __pyx_kp_s_glad_out_path_dest_api_gl_core_3) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "generate.py":17
- * 
- * 
+ *
+ *
  * def clean(x):             # <<<<<<<<<<<<<<
  *     if os.path.exists(x):
  *         shutil.rmtree(x)
@@ -2846,11 +2846,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "generate.py":22
- * 
- * 
+ *
+ *
  * def regenerate():             # <<<<<<<<<<<<<<
  *     clean('out')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_8generate_3regenerate, 0, __pyx_n_s_regenerate, NULL, __pyx_n_s_generate, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2858,11 +2858,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "generate.py":28
- * 
- * 
+ *
+ *
  * def strip_trailing_whitespace(c):             # <<<<<<<<<<<<<<
  *     return re.sub(r'\s+$', '', c, flags=re.MULTILINE) + '\n'
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_8generate_5strip_trailing_whitespace, 0, __pyx_n_s_strip_trailing_whitespace, NULL, __pyx_n_s_generate, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2870,8 +2870,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "generate.py":32
- * 
- * 
+ *
+ *
  * def export():             # <<<<<<<<<<<<<<
  *     with open('out/include/glad/gl.h', 'r', encoding='utf-8') as source:
  *         data = source.read()
@@ -2882,8 +2882,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "generate.py":41
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     os.chdir(os.path.dirname(os.path.abspath(__file__)))
  *     regenerate()
@@ -2895,7 +2895,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_2) {
 
     /* "generate.py":42
- * 
+ *
  * if __name__ == '__main__':
  *     os.chdir(os.path.dirname(os.path.abspath(__file__)))             # <<<<<<<<<<<<<<
  *     regenerate()
@@ -2964,8 +2964,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "generate.py":41
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     os.chdir(os.path.dirname(os.path.abspath(__file__)))
  *     regenerate()

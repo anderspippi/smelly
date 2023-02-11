@@ -1665,9 +1665,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/clipboard/main.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import sys             # <<<<<<<<<<<<<<
- * 
+ *
  * OPTIONS = r'''
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -1692,13 +1692,13 @@ if (!__Pyx_RefNanny) {
  * '''.format
  * help_text = '''\             # <<<<<<<<<<<<<<
  * Read or write to the system clipboard.
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_help_text, __pyx_kp_s_Read_or_write_to_the_system_clip) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
 
   /* "welly/clipboard/main.py":81
  * '''
- * 
+ *
  * usage = '[files to copy to/from]'             # <<<<<<<<<<<<<<
  * if __name__ == '__main__':
  *     raise SystemExit('This should be run as kitten clipboard')
@@ -1706,7 +1706,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_usage, __pyx_kp_s_files_to_copy_to_from) < 0) __PYX_ERR(0, 81, __pyx_L1_error)
 
   /* "welly/clipboard/main.py":82
- * 
+ *
  * usage = '[files to copy to/from]'
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     raise SystemExit('This should be run as kitten clipboard')
@@ -1732,7 +1732,7 @@ if (!__Pyx_RefNanny) {
     __PYX_ERR(0, 83, __pyx_L1_error)
 
     /* "welly/clipboard/main.py":82
- * 
+ *
  * usage = '[files to copy to/from]'
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     raise SystemExit('This should be run as kitten clipboard')
@@ -1745,7 +1745,7 @@ if (!__Pyx_RefNanny) {
  *     raise SystemExit('This should be run as kitten clipboard')
  * elif __name__ == '__doc__':             # <<<<<<<<<<<<<<
  *     from smelly.cli import CompletionSpec
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1757,7 +1757,7 @@ if (!__Pyx_RefNanny) {
  *     raise SystemExit('This should be run as kitten clipboard')
  * elif __name__ == '__doc__':
  *     from smelly.cli import CompletionSpec             # <<<<<<<<<<<<<<
- * 
+ *
  *     cd = sys.cli_docs  # type: ignore
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
@@ -1776,7 +1776,7 @@ if (!__Pyx_RefNanny) {
 
     /* "welly/clipboard/main.py":87
  *     from smelly.cli import CompletionSpec
- * 
+ *
  *     cd = sys.cli_docs  # type: ignore             # <<<<<<<<<<<<<<
  *     cd['usage'] = usage
  *     cd['options'] = OPTIONS
@@ -1790,7 +1790,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/clipboard/main.py":88
- * 
+ *
  *     cd = sys.cli_docs  # type: ignore
  *     cd['usage'] = usage             # <<<<<<<<<<<<<<
  *     cd['options'] = OPTIONS
@@ -1869,14 +1869,14 @@ if (!__Pyx_RefNanny) {
  *     raise SystemExit('This should be run as kitten clipboard')
  * elif __name__ == '__doc__':             # <<<<<<<<<<<<<<
  *     from smelly.cli import CompletionSpec
- * 
+ *
  */
   }
 
   /* "welly/clipboard/main.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

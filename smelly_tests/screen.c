@@ -994,10 +994,10 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_24_test_prompt_markin
 
 /* "smelly_tests/screen.py":135
  *             self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_char_manipulation(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct__test_char_manipulation {
   PyObject_HEAD
@@ -1008,10 +1008,10 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct__test_char_manipulati
 
 /* "smelly_tests/screen.py":202
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  *     def test_erase_in_screen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_1_test_erase_in_screen {
   PyObject_HEAD
@@ -1023,10 +1023,10 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_1_test_erase_in_scree
 
 /* "smelly_tests/screen.py":213
  *             self.ae(continuations(s), (True, True, True, True, False))
- * 
+ *
  *         def all_lines(s):             # <<<<<<<<<<<<<<
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_2_all_lines {
   PyObject_HEAD
@@ -1035,10 +1035,10 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_2_all_lines {
 
 
 /* "smelly_tests/screen.py":214
- * 
+ *
  *         def all_lines(s):
  *             return tuple(str(s.line(i)) for i in range(s.lines))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def continuations(s):
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_3_genexpr {
@@ -1053,7 +1053,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_3_genexpr {
 
 /* "smelly_tests/screen.py":216
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  *         def continuations(s):             # <<<<<<<<<<<<<<
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))
@@ -1065,11 +1065,11 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_4_continuations {
 
 
 /* "smelly_tests/screen.py":217
- * 
+ *
  *         def continuations(s):
  *             return tuple(s.line(i).last_char_has_wrapped_flag()             # <<<<<<<<<<<<<<
  *                          for i in range(s.lines))
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_5_genexpr {
   PyObject_HEAD
@@ -1083,7 +1083,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_5_genexpr {
 
 /* "smelly_tests/screen.py":281
  *         self.ae(s.cursor.x, 1)
- * 
+ *
  *     def test_resize(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(scrollback=6)
  *         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
@@ -1113,7 +1113,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_7_genexpr {
 
 /* "smelly_tests/screen.py":309
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
- * 
+ *
  *     def test_cursor_after_resize(self):             # <<<<<<<<<<<<<<
  *         def draw(text, end_line=True):
  *             s.draw(text)
@@ -1126,7 +1126,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_8_test_cursor_after_r
 
 /* "smelly_tests/screen.py":343
  *         self.assertEqual(s.cursor.x, 0)
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):             # <<<<<<<<<<<<<<
  *         def prepare_screen(content=()):
  *             ans = self.create_screen(
@@ -1142,7 +1142,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_9_test_scrollback_fil
  *         def assert_lines(*lines):
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test the reverse scroll function
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_10_genexpr {
@@ -1157,7 +1157,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_10_genexpr {
 
 /* "smelly_tests/screen.py":427
  *         self.ae(str(s.line(0)), '\t*' * 13)
- * 
+ *
  *     def test_margins(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=24)
@@ -1170,7 +1170,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_11_test_margins {
 
 /* "smelly_tests/screen.py":553
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  *     def test_selection_as_text(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         for i in range(2 * s.lines):
@@ -1183,10 +1183,10 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_12_test_selection_as_
 
 /* "smelly_tests/screen.py":619
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_serialize(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_13_test_serialize {
   PyObject_HEAD
@@ -1196,7 +1196,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_13_test_serialize {
 
 /* "smelly_tests/screen.py":700
  *         self.ae(as_text(s), 'a')
- * 
+ *
  *     def test_pagerhist(self):             # <<<<<<<<<<<<<<
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
@@ -1213,7 +1213,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_14_test_pagerhist {
 
 /* "smelly_tests/screen.py":762
  *         self.ae(s.marked_cells(), [])
- * 
+ *
  *         def mark_x(text):             # <<<<<<<<<<<<<<
  *             col = 0
  *             for i, c in enumerate(text):
@@ -1233,7 +1233,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_15_mark_x {
 
 /* "smelly_tests/screen.py":809
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])
- * 
+ *
  *     def test_hyperlinks(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
@@ -1248,7 +1248,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_16_test_hyperlinks {
  *     def test_hyperlinks(self):
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def set_link(url=None, id=None):
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_17_genexpr {
@@ -1262,7 +1262,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_17_genexpr {
 
 
 /* "smelly_tests/screen.py":818
- * 
+ *
  *         set_link('url-a', 'a')
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))             # <<<<<<<<<<<<<<
  *         s.draw('a')
@@ -1297,7 +1297,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_19_genexpr {
 
 /* "smelly_tests/screen.py":938
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_osc_52(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -1313,7 +1313,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_20_test_osc_52 {
 
 /* "smelly_tests/screen.py":962
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  *     def test_key_encoding_flags_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -1328,7 +1328,7 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_21_test_key_encoding_
 
 /* "smelly_tests/screen.py":1005
  *         w('<'), ac(14), w('<'), ac(13)
- * 
+ *
  *     def test_color_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -1343,10 +1343,10 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_22_test_color_stack {
 
 /* "smelly_tests/screen.py":1033
  *         ac(9, 10)
- * 
+ *
  *     def test_detect_url(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=30)
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_23_test_detect_url {
   PyObject_HEAD
@@ -1358,10 +1358,10 @@ struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_23_test_detect_url {
 
 /* "smelly_tests/screen.py":1058
  *         t('http://moo.com', x=s.columns - 9)
- * 
+ *
  *     def test_prompt_marking(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_6screen___pyx_scope_struct_24_test_prompt_marking {
   PyObject_HEAD
@@ -3636,11 +3636,11 @@ static PyObject *__pyx_codeobj__299;
 /* Late includes */
 
 /* "smelly_tests/screen.py":12
- * 
+ *
  * class TestScreen(BaseTest):
  *     def test_draw_fast(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3677,7 +3677,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
  * class TestScreen(BaseTest):
  *     def test_draw_fast(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test in line-wrap, non-insert mode
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -3701,7 +3701,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":16
- * 
+ *
  *         # Test in line-wrap, non-insert mode
  *         s.draw('a' * 5)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), 'a' * 5)
@@ -4439,7 +4439,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
  *         s.draw('c' * 15)
  *         self.ae(str(s.line(0)), 'b' * 5)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(1)), 'bbccc')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4516,7 +4516,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
  *         s.draw('c' * 15)
  *         self.ae(str(s.line(0)), 'b' * 5)
  *         self.ae(str(s.line(1)), 'bbccc')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Now test without line-wrap
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -4591,7 +4591,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":31
- * 
+ *
  *         # Now test without line-wrap
  *         s.reset(), s.reset_dirty()             # <<<<<<<<<<<<<<
  *         s.reset_mode(DECAWM)
@@ -4930,7 +4930,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
  *         s.draw('ab')
  *         self.ae(str(s.line(0)), '0123b')             # <<<<<<<<<<<<<<
  *         self.ae(s.cursor.x, 5), self.ae(s.cursor.y, 0)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5007,7 +5007,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
  *         s.draw('ab')
  *         self.ae(str(s.line(0)), '0123b')
  *         self.ae(s.cursor.x, 5), self.ae(s.cursor.y, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Now test in insert mode
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
@@ -5129,7 +5129,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":41
- * 
+ *
  *         # Now test in insert mode
  *         s.reset(), s.reset_dirty()             # <<<<<<<<<<<<<<
  *         s.set_mode(IRM)
@@ -5442,7 +5442,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
  *         s.draw('ab')
  *         self.ae(str(s.line(4)), 'ab123')             # <<<<<<<<<<<<<<
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5519,7 +5519,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
  *         s.draw('ab')
  *         self.ae(str(s.line(4)), 'ab123')
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_draw_char(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
@@ -5592,11 +5592,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/screen.py":12
- * 
+ *
  * class TestScreen(BaseTest):
  *     def test_draw_fast(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
   /* function exit code */
@@ -5620,7 +5620,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_test_draw_fast(CYT
 
 /* "smelly_tests/screen.py":51
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_draw_char(self):             # <<<<<<<<<<<<<<
  *         # Test in line-wrap, non-insert mode
  *         s = self.create_screen()
@@ -6879,7 +6879,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
  *         self.ae(s.cursor.x, 5), self.ae(s.cursor.y, 2)
  *         s.draw('c' * 15)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), '')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6904,7 +6904,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
  *         self.ae(s.cursor.x, 5), self.ae(s.cursor.y, 2)
  *         s.draw('c' * 15)
  *         self.ae(str(s.line(0)), '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Now test without line-wrap
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
@@ -6979,7 +6979,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/screen.py":73
- * 
+ *
  *         # Now test without line-wrap
  *         s.reset(), s.reset_dirty()             # <<<<<<<<<<<<<<
  *         s.reset_mode(DECAWM)
@@ -7318,7 +7318,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
  *         s.draw('ab\u0306')
  *         self.ae(str(s.line(0)), '0\u0306123b\u0306')             # <<<<<<<<<<<<<<
  *         self.ae(s.cursor.x, 5), self.ae(s.cursor.y, 0)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7395,7 +7395,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
  *         s.draw('ab\u0306')
  *         self.ae(str(s.line(0)), '0\u0306123b\u0306')
  *         self.ae(s.cursor.x, 5), self.ae(s.cursor.y, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Now test in insert mode
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -7517,7 +7517,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/screen.py":83
- * 
+ *
  *         # Now test in insert mode
  *         s.reset(), s.reset_dirty()             # <<<<<<<<<<<<<<
  *         s.set_mode(IRM)
@@ -7830,7 +7830,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
  *         s.draw('a\u0306b')
  *         self.ae(str(s.line(4)), 'a\u0306b1\u030623')             # <<<<<<<<<<<<<<
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7907,7 +7907,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
  *         s.draw('a\u0306b')
  *         self.ae(str(s.line(4)), 'a\u0306b1\u030623')
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_rep(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
@@ -7981,7 +7981,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
 
   /* "smelly_tests/screen.py":51
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_draw_char(self):             # <<<<<<<<<<<<<<
  *         # Test in line-wrap, non-insert mode
  *         s = self.create_screen()
@@ -8008,7 +8008,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_2test_draw_char(CY
 
 /* "smelly_tests/screen.py":93
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_rep(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a')
@@ -8044,7 +8044,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_4test_rep(CYTHON_U
   __Pyx_RefNannySetupContext("test_rep", 0);
 
   /* "smelly_tests/screen.py":94
- * 
+ *
  *     def test_rep(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('a')
@@ -8395,7 +8395,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_4test_rep(CYTHON_U
  *         s.draw(' ')
  *         parse_bytes(s, b'\x1b[3b')             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(1)), ' ' * 4)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8450,7 +8450,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_4test_rep(CYTHON_U
  *         s.draw(' ')
  *         parse_bytes(s, b'\x1b[3b')
  *         self.ae(str(s.line(1)), ' ' * 4)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_emoji_skin_tone_modifiers(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -8526,7 +8526,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_4test_rep(CYTHON_U
 
   /* "smelly_tests/screen.py":93
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_rep(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a')
@@ -8552,7 +8552,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_4test_rep(CYTHON_U
 
 /* "smelly_tests/screen.py":104
  *         self.ae(str(s.line(1)), ' ' * 4)
- * 
+ *
  *     def test_emoji_skin_tone_modifiers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         q = chr(0x1F469) + chr(0x1F3FD)
@@ -8589,7 +8589,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_6test_emoji_skin_t
   __Pyx_RefNannySetupContext("test_emoji_skin_tone_modifiers", 0);
 
   /* "smelly_tests/screen.py":105
- * 
+ *
  *     def test_emoji_skin_tone_modifiers(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         q = chr(0x1F469) + chr(0x1F3FD)
@@ -8664,7 +8664,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_6test_emoji_skin_t
  *         s.draw(q)
  *         self.ae(str(s.line(0)), q)             # <<<<<<<<<<<<<<
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8741,7 +8741,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_6test_emoji_skin_t
  *         s.draw(q)
  *         self.ae(str(s.line(0)), q)
  *         self.ae(s.cursor.x, 2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_regional_indicators(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
@@ -8802,7 +8802,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_6test_emoji_skin_t
 
   /* "smelly_tests/screen.py":104
  *         self.ae(str(s.line(1)), ' ' * 4)
- * 
+ *
  *     def test_emoji_skin_tone_modifiers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         q = chr(0x1F469) + chr(0x1F3FD)
@@ -8829,7 +8829,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_6test_emoji_skin_t
 
 /* "smelly_tests/screen.py":111
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_regional_indicators(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         flag = '\U0001f1ee\U0001f1f3'
@@ -8867,7 +8867,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_8test_regional_ind
   __Pyx_RefNannySetupContext("test_regional_indicators", 0);
 
   /* "smelly_tests/screen.py":112
- * 
+ *
  *     def test_regional_indicators(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         flag = '\U0001f1ee\U0001f1f3'
@@ -9176,7 +9176,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_8test_regional_ind
  *         s.draw('a'), s.draw(flag[0]), s.draw('b')
  *         self.ae(str(s.line(0)), 'a' + flag[0] + 'b')             # <<<<<<<<<<<<<<
  *         self.ae(s.cursor.x, 4)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -9263,7 +9263,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_8test_regional_ind
  *         s.draw('a'), s.draw(flag[0]), s.draw('b')
  *         self.ae(str(s.line(0)), 'a' + flag[0] + 'b')
  *         self.ae(s.cursor.x, 4)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_zwj(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
@@ -9324,7 +9324,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_8test_regional_ind
 
   /* "smelly_tests/screen.py":111
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_regional_indicators(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         flag = '\U0001f1ee\U0001f1f3'
@@ -9352,7 +9352,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_8test_regional_ind
 
 /* "smelly_tests/screen.py":122
  *         self.ae(s.cursor.x, 4)
- * 
+ *
  *     def test_zwj(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=20)
  *         q = '\U0001f468\u200d\U0001f469\u200d\U0001f467\u200d\U0001f466'
@@ -9394,7 +9394,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_10test_zwj(CYTHON_
   __Pyx_RefNannySetupContext("test_zwj", 0);
 
   /* "smelly_tests/screen.py":123
- * 
+ *
  *     def test_zwj(self):
  *         s = self.create_screen(cols=20)             # <<<<<<<<<<<<<<
  *         q = '\U0001f468\u200d\U0001f469\u200d\U0001f467\u200d\U0001f466'
@@ -9705,7 +9705,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_10test_zwj(CYTHON_
  *             s.draw(q)
  *             self.ae(q, str(s.line(0)))             # <<<<<<<<<<<<<<
  *             self.ae(s.cursor.x, 2)
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -9782,7 +9782,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_10test_zwj(CYTHON_
  *             s.draw(q)
  *             self.ae(q, str(s.line(0)))
  *             self.ae(s.cursor.x, 2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_char_manipulation(self):
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
@@ -9853,7 +9853,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_10test_zwj(CYTHON_
 
   /* "smelly_tests/screen.py":122
  *         self.ae(s.cursor.x, 4)
- * 
+ *
  *     def test_zwj(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=20)
  *         q = '\U0001f468\u200d\U0001f469\u200d\U0001f467\u200d\U0001f466'
@@ -9882,10 +9882,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_10test_zwj(CYTHON_
 
 /* "smelly_tests/screen.py":135
  *             self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_char_manipulation(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9904,7 +9904,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_13test_char_manipu
 
 /* "smelly_tests/screen.py":138
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset(), s.reset_dirty()
  *             s.draw('abcde')
@@ -9943,7 +9943,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_char_manipu
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":139
- * 
+ *
  *         def init():
  *             s.reset(), s.reset_dirty()             # <<<<<<<<<<<<<<
  *             s.draw('abcde')
@@ -10067,7 +10067,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_char_manipu
  *             s.cursor_back(4)
  *             s.reset_dirty()             # <<<<<<<<<<<<<<
  *             self.ae(s.cursor.x, 1)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 143, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_reset_dirty); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
@@ -10093,7 +10093,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_char_manipu
  *             s.cursor_back(4)
  *             s.reset_dirty()
  *             self.ae(s.cursor.x, 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 144, __pyx_L1_error) }
@@ -10156,7 +10156,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_char_manipu
 
   /* "smelly_tests/screen.py":138
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset(), s.reset_dirty()
  *             s.draw('abcde')
@@ -10183,7 +10183,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_char_manipu
  *         s.erase_in_line(2, True)
  *         self.ae((False, False, False, False, False), tuple(
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_erase_in_screen(self):
  */
 
@@ -10276,10 +10276,10 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self, PyObject *__p
 
 /* "smelly_tests/screen.py":135
  *             self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_char_manipulation(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipulation(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -10312,10 +10312,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":136
- * 
+ *
  *     def test_char_manipulation(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def init():
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
@@ -10341,7 +10341,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
 
   /* "smelly_tests/screen.py":138
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset(), s.reset_dirty()
  *             s.draw('abcde')
@@ -10353,7 +10353,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
 
   /* "smelly_tests/screen.py":146
  *             self.ae(s.cursor.x, 1)
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.insert_characters(2)
  *         self.ae(str(s.line(0)), 'a  bc')
@@ -10363,7 +10363,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":147
- * 
+ *
  *         init()
  *         s.insert_characters(2)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), 'a  bc')
@@ -11054,7 +11054,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         self.ae(s.line(0).width(2), 2)
  *         self.assertTrue(s.line(0).cursor_from(2).italic)             # <<<<<<<<<<<<<<
  *         self.assertFalse(s.line(0).cursor_from(2).bold)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -11118,7 +11118,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         self.ae(s.line(0).width(2), 2)
  *         self.assertTrue(s.line(0).cursor_from(2).italic)
  *         self.assertFalse(s.line(0).cursor_from(2).bold)             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
@@ -11181,7 +11181,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
 
   /* "smelly_tests/screen.py":165
  *         self.assertFalse(s.line(0).cursor_from(2).bold)
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.delete_characters(2)
  *         self.ae(str(s.line(0)), 'ade')
@@ -11191,7 +11191,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":166
- * 
+ *
  *         init()
  *         s.delete_characters(2)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), 'ade')
@@ -11522,7 +11522,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         s.cursor.x = 0
  *         s.delete_characters(2)             # <<<<<<<<<<<<<<
  *         self.ae('cde', str(s.line(s.cursor.y)))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_delete_characters); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11547,7 +11547,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         s.cursor.x = 0
  *         s.delete_characters(2)
  *         self.ae('cde', str(s.line(s.cursor.y)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
@@ -11629,7 +11629,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
 
   /* "smelly_tests/screen.py":178
  *         self.ae('cde', str(s.line(s.cursor.y)))
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.erase_characters(2)
  *         self.ae(str(s.line(0)), 'a  de')
@@ -11639,7 +11639,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":179
- * 
+ *
  *         init()
  *         s.erase_characters(2)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), 'a  de')
@@ -11877,7 +11877,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         self.assertFalse(s.line(0).cursor_from(4).bold)
  *         s.erase_characters(20)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), 'a')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_erase_characters); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11902,7 +11902,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         self.assertFalse(s.line(0).cursor_from(4).bold)
  *         s.erase_characters(20)
  *         self.ae(str(s.line(0)), 'a')             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 184, __pyx_L1_error)
@@ -11978,7 +11978,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
 
   /* "smelly_tests/screen.py":186
  *         self.ae(str(s.line(0)), 'a')
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.erase_in_line()
  *         self.ae(str(s.line(0)), 'a')
@@ -11988,7 +11988,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":187
- * 
+ *
  *         init()
  *         s.erase_in_line()             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), 'a')
@@ -12481,7 +12481,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         s.erase_in_line(2, True)
  *         self.ae((False, False, False, False, False), tuple(             # <<<<<<<<<<<<<<
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -12490,7 +12490,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         s.erase_in_line(2, True)
  *         self.ae((False, False, False, False, False), tuple(
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_erase_in_screen(self):
  */
   __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_22test_char_manipulation_2lambda, 0, __pyx_n_s_TestScreen_test_char_manipulatio_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 200, __pyx_L1_error)
@@ -12514,7 +12514,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
  *         s.erase_in_line(2, True)
  *         self.ae((False, False, False, False, False), tuple(             # <<<<<<<<<<<<<<
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PySequence_Tuple(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -12570,10 +12570,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
 
   /* "smelly_tests/screen.py":135
  *             self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_char_manipulation(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
   /* function exit code */
@@ -12599,10 +12599,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_char_manipu
 
 /* "smelly_tests/screen.py":202
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  *     def test_erase_in_screen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -12621,7 +12621,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_15test_erase_in_sc
 
 /* "smelly_tests/screen.py":205
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('12345' * 5)
@@ -12660,7 +12660,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":206
- * 
+ *
  *         def init():
  *             s.reset()             # <<<<<<<<<<<<<<
  *             s.draw('12345' * 5)
@@ -12769,7 +12769,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
  *             s.cursor.x, s.cursor.y = 2, 1
  *             s.cursor.bold = True             # <<<<<<<<<<<<<<
  *             self.ae(continuations(s), (True, True, True, True, False))
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 210, __pyx_L1_error) }
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_cursor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 210, __pyx_L1_error)
@@ -12781,7 +12781,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
  *             s.cursor.x, s.cursor.y = 2, 1
  *             s.cursor.bold = True
  *             self.ae(continuations(s), (True, True, True, True, False))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def all_lines(s):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 211, __pyx_L1_error) }
@@ -12845,7 +12845,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
   /* "smelly_tests/screen.py":205
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('12345' * 5)
@@ -12870,10 +12870,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
 /* "smelly_tests/screen.py":213
  *             self.ae(continuations(s), (True, True, True, True, False))
- * 
+ *
  *         def all_lines(s):             # <<<<<<<<<<<<<<
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -12892,10 +12892,10 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_screen_9all_lines_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/screen.py":214
- * 
+ *
  *         def all_lines(s):
  *             return tuple(str(s.line(i)) for i in range(s.lines))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def continuations(s):
  */
 
@@ -13075,10 +13075,10 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
 /* "smelly_tests/screen.py":213
  *             self.ae(continuations(s), (True, True, True, True, False))
- * 
+ *
  *         def all_lines(s):             # <<<<<<<<<<<<<<
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_screen_2all_lines(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_s) {
@@ -13105,10 +13105,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_s);
 
   /* "smelly_tests/screen.py":214
- * 
+ *
  *         def all_lines(s):
  *             return tuple(str(s.line(i)) for i in range(s.lines))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def continuations(s):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13123,10 +13123,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
   /* "smelly_tests/screen.py":213
  *             self.ae(continuations(s), (True, True, True, True, False))
- * 
+ *
  *         def all_lines(s):             # <<<<<<<<<<<<<<
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  */
 
   /* function exit code */
@@ -13145,7 +13145,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
 /* "smelly_tests/screen.py":216
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  *         def continuations(s):             # <<<<<<<<<<<<<<
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))
@@ -13167,11 +13167,11 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_screen_13continuations_2generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/screen.py":217
- * 
+ *
  *         def continuations(s):
  *             return tuple(s.line(i).last_char_has_wrapped_flag()             # <<<<<<<<<<<<<<
  *                          for i in range(s.lines))
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_screen_13continuations_genexpr(PyObject *__pyx_self) {
@@ -13240,7 +13240,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
  *         def continuations(s):
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 218, __pyx_L1_error) }
@@ -13295,11 +13295,11 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
     __pyx_t_2 = 0;
 
     /* "smelly_tests/screen.py":217
- * 
+ *
  *         def continuations(s):
  *             return tuple(s.line(i).last_char_has_wrapped_flag()             # <<<<<<<<<<<<<<
  *                          for i in range(s.lines))
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 217, __pyx_L1_error) }
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_s, __pyx_n_s_line); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 217, __pyx_L1_error)
@@ -13361,7 +13361,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
  *         def continuations(s):
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   }
@@ -13369,11 +13369,11 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly_tests/screen.py":217
- * 
+ *
  *         def continuations(s):
  *             return tuple(s.line(i).last_char_has_wrapped_flag()             # <<<<<<<<<<<<<<
  *                          for i in range(s.lines))
- * 
+ *
  */
 
   /* function exit code */
@@ -13399,7 +13399,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
 /* "smelly_tests/screen.py":216
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  *         def continuations(s):             # <<<<<<<<<<<<<<
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))
@@ -13429,11 +13429,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_s);
 
   /* "smelly_tests/screen.py":217
- * 
+ *
  *         def continuations(s):
  *             return tuple(s.line(i).last_char_has_wrapped_flag()             # <<<<<<<<<<<<<<
  *                          for i in range(s.lines))
- * 
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_screen_13continuations_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 217, __pyx_L1_error)
@@ -13447,7 +13447,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
   /* "smelly_tests/screen.py":216
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  *         def continuations(s):             # <<<<<<<<<<<<<<
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))
@@ -13469,10 +13469,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_erase_in_sc
 
 /* "smelly_tests/screen.py":202
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  *     def test_erase_in_screen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_screen(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -13505,10 +13505,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":203
- * 
+ *
  *     def test_erase_in_screen(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def init():
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
@@ -13534,7 +13534,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":205
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('12345' * 5)
@@ -13546,10 +13546,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":213
  *             self.ae(continuations(s), (True, True, True, True, False))
- * 
+ *
  *         def all_lines(s):             # <<<<<<<<<<<<<<
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_20test_erase_in_screen_3all_lines, 0, __pyx_n_s_TestScreen_test_erase_in_screen_4, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13558,7 +13558,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":216
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  *         def continuations(s):             # <<<<<<<<<<<<<<
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))
@@ -13571,7 +13571,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":220
  *                          for i in range(s.lines))
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.erase_in_display(0)
  *         self.ae(all_lines(s), ('12345', '12', '', '', ''))
@@ -13581,7 +13581,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":221
- * 
+ *
  *         init()
  *         s.erase_in_display(0)             # <<<<<<<<<<<<<<
  *         self.ae(all_lines(s), ('12345', '12', '', '', ''))
@@ -13611,7 +13611,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         s.erase_in_display(0)
  *         self.ae(all_lines(s), ('12345', '12', '', '', ''))             # <<<<<<<<<<<<<<
  *         self.ae(continuations(s), (True, False, False, False, False))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13673,7 +13673,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         s.erase_in_display(0)
  *         self.ae(all_lines(s), ('12345', '12', '', '', ''))
  *         self.ae(continuations(s), (True, False, False, False, False))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
@@ -13734,7 +13734,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":225
  *         self.ae(continuations(s), (True, False, False, False, False))
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.erase_in_display(1)
  *         self.ae(all_lines(s), ('', '   45', '12345', '12345', '12345'))
@@ -13744,7 +13744,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":226
- * 
+ *
  *         init()
  *         s.erase_in_display(1)             # <<<<<<<<<<<<<<
  *         self.ae(all_lines(s), ('', '   45', '12345', '12345', '12345'))
@@ -13774,7 +13774,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         s.erase_in_display(1)
  *         self.ae(all_lines(s), ('', '   45', '12345', '12345', '12345'))             # <<<<<<<<<<<<<<
  *         self.ae(continuations(s), (False, True, True, True, False))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13836,7 +13836,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         s.erase_in_display(1)
  *         self.ae(all_lines(s), ('', '   45', '12345', '12345', '12345'))
  *         self.ae(continuations(s), (False, True, True, True, False))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 228, __pyx_L1_error)
@@ -13897,7 +13897,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":230
  *         self.ae(continuations(s), (False, True, True, True, False))
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.erase_in_display(2)
  *         self.ae(all_lines(s), ('', '', '', '', ''))
@@ -13907,7 +13907,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":231
- * 
+ *
  *         init()
  *         s.erase_in_display(2)             # <<<<<<<<<<<<<<
  *         self.ae(all_lines(s), ('', '', '', '', ''))
@@ -14000,7 +14000,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         self.ae(all_lines(s), ('', '', '', '', ''))
  *         self.assertTrue(s.line(0).cursor_from(1).bold)             # <<<<<<<<<<<<<<
  *         self.ae(continuations(s), (False, False, False, False, False))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14064,7 +14064,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         self.ae(all_lines(s), ('', '', '', '', ''))
  *         self.assertTrue(s.line(0).cursor_from(1).bold)
  *         self.ae(continuations(s), (False, False, False, False, False))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 234, __pyx_L1_error)
@@ -14125,7 +14125,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":236
  *         self.ae(continuations(s), (False, False, False, False, False))
- * 
+ *
  *         init()             # <<<<<<<<<<<<<<
  *         s.erase_in_display(2, True)
  *         self.ae(all_lines(s), ('', '', '', '', ''))
@@ -14135,7 +14135,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":237
- * 
+ *
  *         init()
  *         s.erase_in_display(2, True)             # <<<<<<<<<<<<<<
  *         self.ae(all_lines(s), ('', '', '', '', ''))
@@ -14216,7 +14216,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         self.ae(all_lines(s), ('', '', '', '', ''))
  *         self.ae(continuations(s), (False, False, False, False, False))             # <<<<<<<<<<<<<<
  *         self.assertFalse(s.line(0).cursor_from(1).bold)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 239, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14278,7 +14278,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
  *         self.ae(all_lines(s), ('', '', '', '', ''))
  *         self.ae(continuations(s), (False, False, False, False, False))
  *         self.assertFalse(s.line(0).cursor_from(1).bold)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_cursor_movement(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
@@ -14341,10 +14341,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
   /* "smelly_tests/screen.py":202
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  *     def test_erase_in_screen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
   /* function exit code */
@@ -14370,7 +14370,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_erase_in_sc
 
 /* "smelly_tests/screen.py":242
  *         self.assertFalse(s.line(0).cursor_from(1).bold)
- * 
+ *
  *     def test_cursor_movement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('12345' * 5)
@@ -14409,7 +14409,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
   __Pyx_RefNannySetupContext("test_cursor_movement", 0);
 
   /* "smelly_tests/screen.py":243
- * 
+ *
  *     def test_cursor_movement(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('12345' * 5)
@@ -15002,7 +15002,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
  *         self.ae((s.cursor.x, s.cursor.y), (2, 2))
  *         s.cursor_down1(5)             # <<<<<<<<<<<<<<
  *         self.ae((s.cursor.x, s.cursor.y), (0, 4))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_cursor_down1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -15027,7 +15027,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
  *         self.ae((s.cursor.x, s.cursor.y), (2, 2))
  *         s.cursor_down1(5)
  *         self.ae((s.cursor.x, s.cursor.y), (0, 4))             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 257, __pyx_L1_error)
@@ -15101,7 +15101,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
 
   /* "smelly_tests/screen.py":259
  *         self.ae((s.cursor.x, s.cursor.y), (0, 4))
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('12345' * 5)
  *         s.index()
@@ -15127,7 +15127,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":260
- * 
+ *
  *         s = self.create_screen()
  *         s.draw('12345' * 5)             # <<<<<<<<<<<<<<
  *         s.index()
@@ -15509,7 +15509,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
  *         self.ae(str(s.line(0)), '')
  *         for i in range(1, 5):             # <<<<<<<<<<<<<<
  *             self.ae(str(s.line(i)), '12345')
- * 
+ *
  */
   for (__pyx_t_7 = 1; __pyx_t_7 < 5; __pyx_t_7+=1) {
     __pyx_v_i = __pyx_t_7;
@@ -15518,7 +15518,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
  *         self.ae(str(s.line(0)), '')
  *         for i in range(1, 5):
  *             self.ae(str(s.line(i)), '12345')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_backspace_wide_characters(self):
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
@@ -15598,7 +15598,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
 
   /* "smelly_tests/screen.py":242
  *         self.assertFalse(s.line(0).cursor_from(1).bold)
- * 
+ *
  *     def test_cursor_movement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('12345' * 5)
@@ -15625,7 +15625,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_cursor_move
 
 /* "smelly_tests/screen.py":272
  *             self.ae(str(s.line(i)), '12345')
- * 
+ *
  *     def test_backspace_wide_characters(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('')
@@ -15661,7 +15661,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_18test_backspace_w
   __Pyx_RefNannySetupContext("test_backspace_wide_characters", 0);
 
   /* "smelly_tests/screen.py":273
- * 
+ *
  *     def test_backspace_wide_characters(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('')
@@ -15833,7 +15833,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_18test_backspace_w
  *         s.draw(' ')
  *         s.backspace()             # <<<<<<<<<<<<<<
  *         self.ae(s.cursor.x, 1)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_backspace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -15858,7 +15858,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_18test_backspace_w
  *         s.draw(' ')
  *         s.backspace()
  *         self.ae(s.cursor.x, 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_resize(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
@@ -15919,7 +15919,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_18test_backspace_w
 
   /* "smelly_tests/screen.py":272
  *             self.ae(str(s.line(i)), '12345')
- * 
+ *
  *     def test_backspace_wide_characters(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('')
@@ -15945,7 +15945,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_18test_backspace_w
 
 /* "smelly_tests/screen.py":281
  *         self.ae(s.cursor.x, 1)
- * 
+ *
  *     def test_resize(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(scrollback=6)
  *         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
@@ -16141,7 +16141,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_11test_resize_2gen
 
 /* "smelly_tests/screen.py":281
  *         self.ae(s.cursor.x, 1)
- * 
+ *
  *     def test_resize(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(scrollback=6)
  *         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
@@ -16177,7 +16177,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_resize(CYTH
   }
 
   /* "smelly_tests/screen.py":282
- * 
+ *
  *     def test_resize(self):
  *         s = self.create_screen(scrollback=6)             # <<<<<<<<<<<<<<
  *         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
@@ -17339,7 +17339,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_resize(CYTH
  *         s.draw('x' * len(str(s.line(1))))
  *         s.resize(s.lines, s.columns + 4)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -17405,7 +17405,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_resize(CYTH
  *         s.draw('x' * len(str(s.line(1))))
  *         s.resize(s.lines, s.columns + 4)
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_cursor_after_resize(self):
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 307, __pyx_L1_error)
@@ -17466,7 +17466,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_resize(CYTH
 
   /* "smelly_tests/screen.py":281
  *         self.ae(s.cursor.x, 1)
- * 
+ *
  *     def test_resize(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(scrollback=6)
  *         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
@@ -17496,7 +17496,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_20test_resize(CYTH
 
 /* "smelly_tests/screen.py":309
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
- * 
+ *
  *     def test_cursor_after_resize(self):             # <<<<<<<<<<<<<<
  *         def draw(text, end_line=True):
  *             s.draw(text)
@@ -17517,7 +17517,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_23test_cursor_afte
 }
 
 /* "smelly_tests/screen.py":310
- * 
+ *
  *     def test_cursor_after_resize(self):
  *         def draw(text, end_line=True):             # <<<<<<<<<<<<<<
  *             s.draw(text)
@@ -17642,7 +17642,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_cursor_afte
  *             s.draw(text)
  *             if end_line:             # <<<<<<<<<<<<<<
  *                 s.linefeed(), s.carriage_return()
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_end_line); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 312, __pyx_L1_error)
   if (__pyx_t_4) {
@@ -17651,7 +17651,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_cursor_afte
  *             s.draw(text)
  *             if end_line:
  *                 s.linefeed(), s.carriage_return()             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 313, __pyx_L1_error) }
@@ -17705,12 +17705,12 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_cursor_afte
  *             s.draw(text)
  *             if end_line:             # <<<<<<<<<<<<<<
  *                 s.linefeed(), s.carriage_return()
- * 
+ *
  */
   }
 
   /* "smelly_tests/screen.py":310
- * 
+ *
  *     def test_cursor_after_resize(self):
  *         def draw(text, end_line=True):             # <<<<<<<<<<<<<<
  *             s.draw(text)
@@ -17735,7 +17735,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_cursor_afte
 
 /* "smelly_tests/screen.py":309
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
- * 
+ *
  *     def test_cursor_after_resize(self):             # <<<<<<<<<<<<<<
  *         def draw(text, end_line=True):
  *             s.draw(text)
@@ -17771,7 +17771,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
   }
 
   /* "smelly_tests/screen.py":310
- * 
+ *
  *     def test_cursor_after_resize(self):
  *         def draw(text, end_line=True):             # <<<<<<<<<<<<<<
  *             s.draw(text)
@@ -17785,7 +17785,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
 
   /* "smelly_tests/screen.py":315
  *                 s.linefeed(), s.carriage_return()
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         draw('123'), draw('123')
  *         y_before = s.cursor.y
@@ -17812,7 +17812,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":316
- * 
+ *
  *         s = self.create_screen()
  *         draw('123'), draw('123')             # <<<<<<<<<<<<<<
  *         y_before = s.cursor.y
@@ -17852,7 +17852,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         y_before = s.cursor.y
  *         s.resize(s.lines, s.columns - 1)             # <<<<<<<<<<<<<<
  *         self.ae(y_before, s.cursor.y)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 318, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17918,7 +17918,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         y_before = s.cursor.y
  *         s.resize(s.lines, s.columns - 1)
  *         self.ae(y_before, s.cursor.y)             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(cols=5, lines=8)
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 319, __pyx_L1_error)
@@ -17979,7 +17979,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
 
   /* "smelly_tests/screen.py":321
  *         self.ae(y_before, s.cursor.y)
- * 
+ *
  *         s = self.create_screen(cols=5, lines=8)             # <<<<<<<<<<<<<<
  *         draw('one')
  *         draw('two three four five |||', end_line=False)
@@ -18000,7 +18000,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":322
- * 
+ *
  *         s = self.create_screen(cols=5, lines=8)
  *         draw('one')             # <<<<<<<<<<<<<<
  *         draw('two three four five |||', end_line=False)
@@ -18100,7 +18100,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         s.resize(s.lines + 2, s.columns + 2)
  *         y = s.cursor.y             # <<<<<<<<<<<<<<
  *         self.assertIn('|', str(s.line(y)))
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_cursor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 325, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -18114,7 +18114,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         s.resize(s.lines + 2, s.columns + 2)
  *         y = s.cursor.y
  *         self.assertIn('|', str(s.line(y)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 326, __pyx_L1_error)
@@ -18190,7 +18190,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
 
   /* "smelly_tests/screen.py":328
  *         self.assertIn('|', str(s.line(y)))
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         draw('a')
  *         x_before = s.cursor.x
@@ -18218,7 +18218,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":329
- * 
+ *
  *         s = self.create_screen()
  *         draw('a')             # <<<<<<<<<<<<<<
  *         x_before = s.cursor.x
@@ -18248,7 +18248,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         x_before = s.cursor.x
  *         s.resize(s.lines - 1, s.columns)             # <<<<<<<<<<<<<<
  *         self.ae(x_before, s.cursor.x)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18314,7 +18314,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         x_before = s.cursor.x
  *         s.resize(s.lines - 1, s.columns)
  *         self.ae(x_before, s.cursor.x)             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 332, __pyx_L1_error)
@@ -18375,7 +18375,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
 
   /* "smelly_tests/screen.py":334
  *         self.ae(x_before, s.cursor.x)
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('abc')
  *         b = s.cursor.x
@@ -18403,7 +18403,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
   __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":335
- * 
+ *
  *         s = self.create_screen()
  *         s.draw('abc')             # <<<<<<<<<<<<<<
  *         b = s.cursor.x
@@ -18583,7 +18583,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         s.cursor.x = 0
  *         s.resize(5, s.columns)             # <<<<<<<<<<<<<<
  *         self.assertEqual(s.cursor.x, 0)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 340, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -18642,7 +18642,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
  *         s.cursor.x = 0
  *         s.resize(5, s.columns)
  *         self.assertEqual(s.cursor.x, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 341, __pyx_L1_error)
@@ -18703,7 +18703,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
 
   /* "smelly_tests/screen.py":309
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
- * 
+ *
  *     def test_cursor_after_resize(self):             # <<<<<<<<<<<<<<
  *         def draw(text, end_line=True):
  *             s.draw(text)
@@ -18735,7 +18735,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_cursor_afte
 
 /* "smelly_tests/screen.py":343
  *         self.assertEqual(s.cursor.x, 0)
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):             # <<<<<<<<<<<<<<
  *         def prepare_screen(content=()):
  *             ans = self.create_screen(
@@ -18756,7 +18756,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_25test_scrollback_
 }
 
 /* "smelly_tests/screen.py":344
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):
  *         def prepare_screen(content=()):             # <<<<<<<<<<<<<<
  *             ans = self.create_screen(
@@ -18989,7 +18989,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
  *                 ans.linefeed()
  *                 ans.carriage_return()             # <<<<<<<<<<<<<<
  *             return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_ans, __pyx_n_s_carriage_return); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 350, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -19024,7 +19024,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
  *                 ans.linefeed()
  *                 ans.carriage_return()
  *             return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *         def assert_lines(*lines):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -19033,7 +19033,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
   goto __pyx_L0;
 
   /* "smelly_tests/screen.py":344
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):
  *         def prepare_screen(content=()):             # <<<<<<<<<<<<<<
  *             ans = self.create_screen(
@@ -19058,7 +19058,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
 
 /* "smelly_tests/screen.py":353
  *             return ans
- * 
+ *
  *         def assert_lines(*lines):             # <<<<<<<<<<<<<<
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))
@@ -19088,7 +19088,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_33test_scrollback_
  *         def assert_lines(*lines):
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test the reverse scroll function
  */
 
@@ -19268,7 +19268,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_33test_scrollback_
 
 /* "smelly_tests/screen.py":353
  *             return ans
- * 
+ *
  *         def assert_lines(*lines):             # <<<<<<<<<<<<<<
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))
@@ -19294,11 +19294,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":354
- * 
+ *
  *         def assert_lines(*lines):
  *             return self.ae(             # <<<<<<<<<<<<<<
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))
- * 
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 354, __pyx_L1_error) }
@@ -19309,7 +19309,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
  *         def assert_lines(*lines):
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test the reverse scroll function
  */
   __pyx_t_3 = __pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_fill_after_resize_12assert_lines_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 355, __pyx_L1_error)
@@ -19370,7 +19370,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
 
   /* "smelly_tests/screen.py":353
  *             return ans
- * 
+ *
  *         def assert_lines(*lines):             # <<<<<<<<<<<<<<
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))
@@ -19394,7 +19394,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_33test_scrollback_
 
 /* "smelly_tests/screen.py":343
  *         self.assertEqual(s.cursor.x, 0)
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):             # <<<<<<<<<<<<<<
  *         def prepare_screen(content=()):
  *             ans = self.create_screen(
@@ -19431,7 +19431,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":344
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):
  *         def prepare_screen(content=()):             # <<<<<<<<<<<<<<
  *             ans = self.create_screen(
@@ -19445,7 +19445,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
 
   /* "smelly_tests/screen.py":353
  *             return ans
- * 
+ *
  *         def assert_lines(*lines):             # <<<<<<<<<<<<<<
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))
@@ -19456,7 +19456,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":358
- * 
+ *
  *         # test the reverse scroll function
  *         s = prepare_screen(map(str, range(6)))             # <<<<<<<<<<<<<<
  *         assert_lines('2', '3', '4', '5', '')
@@ -19498,7 +19498,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '3', '4', '5', '')
  *         s.reverse_scroll(2, True)             # <<<<<<<<<<<<<<
  *         assert_lines('0', '1', '2', '3', '4')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_reverse_scroll); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 360, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -19511,7 +19511,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '3', '4', '5', '')
  *         s.reverse_scroll(2, True)
  *         assert_lines('0', '1', '2', '3', '4')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height increased, width unchanged  pull down lines to fill new space
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_assert_lines, __pyx_tuple__58, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L1_error)
@@ -19643,7 +19643,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         s.resize(7, s.columns)
  *         assert_lines('0', '1', '2', '3', '4', '5', '')             # <<<<<<<<<<<<<<
  *         self.ae(dist_from_bottom, s.lines - s.cursor.y)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_assert_lines, __pyx_tuple__59, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 369, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -19653,7 +19653,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         s.resize(7, s.columns)
  *         assert_lines('0', '1', '2', '3', '4', '5', '')
  *         self.ae(dist_from_bottom, s.lines - s.cursor.y)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height increased, width increased  rewrap, pull down
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 370, __pyx_L1_error)
@@ -19719,7 +19719,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":373
- * 
+ *
  *         # Height increased, width increased  rewrap, pull down
  *         s = prepare_screen(['0', '1', '2', '3' * 15])             # <<<<<<<<<<<<<<
  *         assert_lines('2', '33333', '33333', '33333', '')
@@ -19763,7 +19763,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(7, 12)             # <<<<<<<<<<<<<<
  *         assert_lines('0', '1', '2', '333333333333', '333', '', '')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 375, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -19776,7 +19776,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(7, 12)
  *         assert_lines('0', '1', '2', '333333333333', '333', '', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height increased, width decreased  rewrap, pull down if possible
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_assert_lines, __pyx_tuple__62, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 376, __pyx_L1_error)
@@ -19784,7 +19784,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":379
- * 
+ *
  *         # Height increased, width decreased  rewrap, pull down if possible
  *         s = prepare_screen(['0', '1', '2', '3' * 5])             # <<<<<<<<<<<<<<
  *         assert_lines('0', '1', '2', '33333', '')
@@ -19828,7 +19828,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('0', '1', '2', '33333', '')
  *         s.resize(6, 4)             # <<<<<<<<<<<<<<
  *         assert_lines('0', '1', '2', '3333', '3', '')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -19841,7 +19841,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('0', '1', '2', '33333', '')
  *         s.resize(6, 4)
  *         assert_lines('0', '1', '2', '3333', '3', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height unchanged, width increased  rewrap, pull down if possible
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_assert_lines, __pyx_tuple__65, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 382, __pyx_L1_error)
@@ -19849,7 +19849,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":385
- * 
+ *
  *         # Height unchanged, width increased  rewrap, pull down if possible
  *         s = prepare_screen(['0', '1', '2', '3' * 15])             # <<<<<<<<<<<<<<
  *         assert_lines('2', '33333', '33333', '33333', '')
@@ -19893,7 +19893,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(s.lines, 12)             # <<<<<<<<<<<<<<
  *         assert_lines('1', '2', '333333333333', '333', '')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -19952,7 +19952,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(s.lines, 12)
  *         assert_lines('1', '2', '333333333333', '333', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height decreased, width increased  rewrap, pull down if possible
  */
   __pyx_t_3 = __Pyx_PyObject_Call(__pyx_v_assert_lines, __pyx_tuple__66, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 388, __pyx_L1_error)
@@ -19960,7 +19960,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":391
- * 
+ *
  *         # Height decreased, width increased  rewrap, pull down if possible
  *         s = prepare_screen(['0', '1', '2', '3' * 15])             # <<<<<<<<<<<<<<
  *         assert_lines('2', '33333', '33333', '33333', '')
@@ -20004,7 +20004,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(4, 12)             # <<<<<<<<<<<<<<
  *         assert_lines('2', '333333333333', '333', '')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 393, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20017,7 +20017,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(4, 12)
  *         assert_lines('2', '333333333333', '333', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height increased with large continued text
  */
   __pyx_t_3 = __Pyx_PyObject_Call(__pyx_v_assert_lines, __pyx_tuple__68, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 394, __pyx_L1_error)
@@ -20025,7 +20025,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":397
- * 
+ *
  *         # Height increased with large continued text
  *         s = self.create_screen(             # <<<<<<<<<<<<<<
  *             options={'scrollback_fill_enlarged_window': True})
@@ -20050,7 +20050,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/screen.py":397
- * 
+ *
  *         # Height increased with large continued text
  *         s = self.create_screen(             # <<<<<<<<<<<<<<
  *             options={'scrollback_fill_enlarged_window': True})
@@ -20202,7 +20202,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
  *         s.resize(s.lines + 2, s.columns)             # <<<<<<<<<<<<<<
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_resize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 403, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20268,7 +20268,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
  *         s.resize(s.lines + 2, s.columns)
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_tab_stops(self):
  */
   __pyx_t_6 = __Pyx_PyObject_Call(__pyx_v_assert_lines, __pyx_tuple__71, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 404, __pyx_L1_error)
@@ -20277,7 +20277,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
 
   /* "smelly_tests/screen.py":343
  *         self.assertEqual(s.cursor.x, 0)
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):             # <<<<<<<<<<<<<<
  *         def prepare_screen(content=()):
  *             ans = self.create_screen(
@@ -20307,7 +20307,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_24test_scrollback_
 
 /* "smelly_tests/screen.py":406
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
- * 
+ *
  *     def test_tab_stops(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=2)
@@ -20871,7 +20871,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_26test_tab_stops(C
  *             s.draw('*')
  *         s.cursor_position(2, 2)             # <<<<<<<<<<<<<<
  *         self.ae(str(s.line(0)), '\t*' * 13)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_cursor_position); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 424, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -20884,7 +20884,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_26test_tab_stops(C
  *             s.draw('*')
  *         s.cursor_position(2, 2)
  *         self.ae(str(s.line(0)), '\t*' * 13)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_margins(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 425, __pyx_L1_error)
@@ -20960,7 +20960,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_26test_tab_stops(C
 
   /* "smelly_tests/screen.py":406
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
- * 
+ *
  *     def test_tab_stops(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=2)
@@ -20987,7 +20987,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_26test_tab_stops(C
 
 /* "smelly_tests/screen.py":427
  *         self.ae(str(s.line(0)), '\t*' * 13)
- * 
+ *
  *     def test_margins(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=24)
@@ -21009,10 +21009,10 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_29test_margins(PyO
 
 /* "smelly_tests/screen.py":431
  *         s = self.create_screen(cols=80, lines=24)
- * 
+ *
  *         def nl():             # <<<<<<<<<<<<<<
  *             s.carriage_return(), s.linefeed()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -21046,10 +21046,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_margins_nl(
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":432
- * 
+ *
  *         def nl():
  *             s.carriage_return(), s.linefeed()             # <<<<<<<<<<<<<<
- * 
+ *
  *         for deccolm in (False, True):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 432, __pyx_L1_error) }
@@ -21100,10 +21100,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_margins_nl(
 
   /* "smelly_tests/screen.py":431
  *         s = self.create_screen(cols=80, lines=24)
- * 
+ *
  *         def nl():             # <<<<<<<<<<<<<<
  *             s.carriage_return(), s.linefeed()
- * 
+ *
  */
 
   /* function exit code */
@@ -21124,7 +21124,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_12test_margins_nl(
 
 /* "smelly_tests/screen.py":427
  *         self.ae(str(s.line(0)), '\t*' * 13)
- * 
+ *
  *     def test_margins(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=24)
@@ -21178,7 +21178,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
  *     def test_margins(self):
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=24)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def nl():
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 429, __pyx_L1_error)
@@ -21197,10 +21197,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
 
   /* "smelly_tests/screen.py":431
  *         s = self.create_screen(cols=80, lines=24)
- * 
+ *
  *         def nl():             # <<<<<<<<<<<<<<
  *             s.carriage_return(), s.linefeed()
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_12test_margins_1nl, 0, __pyx_n_s_TestScreen_test_margins_locals_n, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__77)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 431, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -21209,7 +21209,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
 
   /* "smelly_tests/screen.py":434
  *             s.carriage_return(), s.linefeed()
- * 
+ *
  *         for deccolm in (False, True):             # <<<<<<<<<<<<<<
  *             if deccolm:
  *                 s.resize(24, 132)
@@ -21227,7 +21227,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
     __pyx_t_2 = 0;
 
     /* "smelly_tests/screen.py":435
- * 
+ *
  *         for deccolm in (False, True):
  *             if deccolm:             # <<<<<<<<<<<<<<
  *                 s.resize(24, 132)
@@ -21280,7 +21280,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
       /* "smelly_tests/screen.py":435
- * 
+ *
  *         for deccolm in (False, True):
  *             if deccolm:             # <<<<<<<<<<<<<<
  *                 s.resize(24, 132)
@@ -22950,7 +22950,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
 
     /* "smelly_tests/screen.py":434
  *             s.carriage_return(), s.linefeed()
- * 
+ *
  *         for deccolm in (False, True):             # <<<<<<<<<<<<<<
  *             if deccolm:
  *                 s.resize(24, 132)
@@ -23226,7 +23226,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
  *         self.ae(s.cursor.y, 9)
  *         s.reverse_index()             # <<<<<<<<<<<<<<
  *         self.ae(s.cursor.y, 8)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_reverse_index); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 486, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -23251,7 +23251,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
  *         self.ae(s.cursor.y, 9)
  *         s.reverse_index()
  *         self.ae(s.cursor.y, 8)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_sgr(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 487, __pyx_L1_error)
@@ -23312,7 +23312,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
 
   /* "smelly_tests/screen.py":427
  *         self.ae(str(s.line(0)), '\t*' * 13)
- * 
+ *
  *     def test_margins(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=24)
@@ -23354,7 +23354,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_28test_margins(CYT
 
 /* "smelly_tests/screen.py":489
  *         self.ae(s.cursor.y, 8)
- * 
+ *
  *     def test_sgr(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.select_graphic_rendition(0, 1, 37, 42)
@@ -23391,7 +23391,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_30test_sgr(CYTHON_
   __Pyx_RefNannySetupContext("test_sgr", 0);
 
   /* "smelly_tests/screen.py":490
- * 
+ *
  *     def test_sgr(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.select_graphic_rendition(0, 1, 37, 42)
@@ -23869,7 +23869,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_30test_sgr(CYTHON_
  *         s.draw('c')
  *         c = s.line(1).cursor_from(1)             # <<<<<<<<<<<<<<
  *         self.ae(c.fg, (1 << 24) | (2 << 16) | (3 << 8) | 2)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_line); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 505, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23913,7 +23913,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_30test_sgr(CYTHON_
  *         s.draw('c')
  *         c = s.line(1).cursor_from(1)
  *         self.ae(c.fg, (1 << 24) | (2 << 16) | (3 << 8) | 2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_cursor_hidden(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 506, __pyx_L1_error)
@@ -23971,7 +23971,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_30test_sgr(CYTHON_
 
   /* "smelly_tests/screen.py":489
  *         self.ae(s.cursor.y, 8)
- * 
+ *
  *     def test_sgr(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.select_graphic_rendition(0, 1, 37, 42)
@@ -23998,7 +23998,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_30test_sgr(CYTHON_
 
 /* "smelly_tests/screen.py":508
  *         self.ae(c.fg, (1 << 24) | (2 << 16) | (3 << 8) | 2)
- * 
+ *
  *     def test_cursor_hidden(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.toggle_alt_screen()
@@ -24032,7 +24032,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_32test_cursor_hidd
   __Pyx_RefNannySetupContext("test_cursor_hidden", 0);
 
   /* "smelly_tests/screen.py":509
- * 
+ *
  *     def test_cursor_hidden(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.toggle_alt_screen()
@@ -24098,7 +24098,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_32test_cursor_hidd
  *         s.cursor_visible = False
  *         s.toggle_alt_screen()             # <<<<<<<<<<<<<<
  *         self.assertFalse(s.cursor_visible)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_toggle_alt_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -24123,7 +24123,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_32test_cursor_hidd
  *         s.cursor_visible = False
  *         s.toggle_alt_screen()
  *         self.assertFalse(s.cursor_visible)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_dirty_lines(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 513, __pyx_L1_error)
@@ -24150,7 +24150,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_32test_cursor_hidd
 
   /* "smelly_tests/screen.py":508
  *         self.ae(c.fg, (1 << 24) | (2 << 16) | (3 << 8) | 2)
- * 
+ *
  *     def test_cursor_hidden(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.toggle_alt_screen()
@@ -24175,7 +24175,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_32test_cursor_hidd
 
 /* "smelly_tests/screen.py":515
  *         self.assertFalse(s.cursor_visible)
- * 
+ *
  *     def test_dirty_lines(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.assertFalse(s.linebuf.dirty_lines())
@@ -24214,7 +24214,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
   __Pyx_RefNannySetupContext("test_dirty_lines", 0);
 
   /* "smelly_tests/screen.py":516
- * 
+ *
  *     def test_dirty_lines(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         self.assertFalse(s.linebuf.dirty_lines())
@@ -24982,7 +24982,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
  *         s.cursor.x, s.cursor.y = 0, 1
  *         s.delete_lines(2)             # <<<<<<<<<<<<<<
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_delete_lines); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 531, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -25007,7 +25007,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
  *         s.cursor.x, s.cursor.y = 0, 1
  *         s.delete_lines(2)
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 532, __pyx_L1_error)
@@ -25096,7 +25096,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
 
   /* "smelly_tests/screen.py":534
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         self.assertFalse(s.linebuf.dirty_lines())
  *         s.erase_in_line(0, False)
@@ -25122,7 +25122,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
   __pyx_t_7 = 0;
 
   /* "smelly_tests/screen.py":535
- * 
+ *
  *         s = self.create_screen()
  *         self.assertFalse(s.linebuf.dirty_lines())             # <<<<<<<<<<<<<<
  *         s.erase_in_line(0, False)
@@ -25323,7 +25323,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
  *         s.index(), s.index()
  *         s.erase_in_display(0, False)             # <<<<<<<<<<<<<<
  *         self.ae(s.linebuf.dirty_lines(), [0, 2, 3, 4])
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_erase_in_display); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 539, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -25336,7 +25336,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
  *         s.index(), s.index()
  *         s.erase_in_display(0, False)
  *         self.ae(s.linebuf.dirty_lines(), [0, 2, 3, 4])             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 540, __pyx_L1_error)
@@ -25428,7 +25428,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
 
   /* "smelly_tests/screen.py":542
  *         self.ae(s.linebuf.dirty_lines(), [0, 2, 3, 4])
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         self.assertFalse(s.linebuf.dirty_lines())
  *         s.insert_characters(2)
@@ -25454,7 +25454,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
   __pyx_t_7 = 0;
 
   /* "smelly_tests/screen.py":543
- * 
+ *
  *         s = self.create_screen()
  *         self.assertFalse(s.linebuf.dirty_lines())             # <<<<<<<<<<<<<<
  *         s.insert_characters(2)
@@ -25754,7 +25754,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
  *         s.cursor.y = 2
  *         s.erase_characters(2)             # <<<<<<<<<<<<<<
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_erase_characters); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 550, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -25779,7 +25779,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
  *         s.cursor.y = 2
  *         s.erase_characters(2)
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_selection_as_text(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 551, __pyx_L1_error)
@@ -25868,7 +25868,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
 
   /* "smelly_tests/screen.py":515
  *         self.assertFalse(s.cursor_visible)
- * 
+ *
  *     def test_dirty_lines(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.assertFalse(s.linebuf.dirty_lines())
@@ -25895,7 +25895,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_34test_dirty_lines
 
 /* "smelly_tests/screen.py":553
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  *     def test_selection_as_text(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         for i in range(2 * s.lines):
@@ -25917,10 +25917,10 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_37test_selection_a
 
 /* "smelly_tests/screen.py":562
  *         s.update_selection(4, 4)
- * 
+ *
  *         def ts(*args):             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection(*args))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -25957,10 +25957,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_selection_a
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":563
- * 
+ *
  *         def ts(*args):
  *             return ''.join(s.text_for_selection(*args))             # <<<<<<<<<<<<<<
- * 
+ *
  *         expected = ''.join(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -25979,10 +25979,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_selection_a
 
   /* "smelly_tests/screen.py":562
  *         s.update_selection(4, 4)
- * 
+ *
  *         def ts(*args):             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection(*args))
- * 
+ *
  */
 
   /* function exit code */
@@ -25999,7 +25999,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_22test_selection_a
 
 /* "smelly_tests/screen.py":553
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  *     def test_selection_as_text(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         for i in range(2 * s.lines):
@@ -26036,7 +26036,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
   }
 
   /* "smelly_tests/screen.py":554
- * 
+ *
  *     def test_selection_as_text(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         for i in range(2 * s.lines):
@@ -26244,7 +26244,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
  *             s.draw(str(i) * s.columns)
  *         s.start_selection(0, 0)             # <<<<<<<<<<<<<<
  *         s.update_selection(4, 4)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_start_selection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 559, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -26257,7 +26257,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
  *             s.draw(str(i) * s.columns)
  *         s.start_selection(0, 0)
  *         s.update_selection(4, 4)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def ts(*args):
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_update_selection); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 560, __pyx_L1_error)
@@ -26269,10 +26269,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
 
   /* "smelly_tests/screen.py":562
  *         s.update_selection(4, 4)
- * 
+ *
  *         def ts(*args):             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection(*args))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_22test_selection_as_text_1ts, 0, __pyx_n_s_TestScreen_test_selection_as_tex, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__90)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 562, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -26281,7 +26281,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
 
   /* "smelly_tests/screen.py":565
  *             return ''.join(s.text_for_selection(*args))
- * 
+ *
  *         expected = ''.join(             # <<<<<<<<<<<<<<
  *             ('55555', '\n66666', '\n77777', '\n88888', '\n99999'))
  *         self.ae(ts(), expected)
@@ -27206,7 +27206,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
  *             ('a\x1b[32mb\x1b[39mc  ', 'xy', '\x1b[m'))
  *         self.ae(s.text_for_selection(True, True),             # <<<<<<<<<<<<<<
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -27220,7 +27220,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
  *             ('a\x1b[32mb\x1b[39mc  ', 'xy', '\x1b[m'))
  *         self.ae(s.text_for_selection(True, True),
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_soft_hyphen(self):
  */
   __pyx_t_3 = NULL;
@@ -27274,7 +27274,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
 
   /* "smelly_tests/screen.py":553
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  *     def test_selection_as_text(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         for i in range(2 * s.lines):
@@ -27304,7 +27304,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_36test_selection_a
 
 /* "smelly_tests/screen.py":597
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
- * 
+ *
  *     def test_soft_hyphen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a\u00adb')
@@ -27340,7 +27340,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_38test_soft_hyphen
   __Pyx_RefNannySetupContext("test_soft_hyphen", 0);
 
   /* "smelly_tests/screen.py":598
- * 
+ *
  *     def test_soft_hyphen(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('a\u00adb')
@@ -27474,7 +27474,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_38test_soft_hyphen
  *         s.start_selection(0, 0)
  *         s.update_selection(2, 0)             # <<<<<<<<<<<<<<
  *         self.ae(s.text_for_selection(), ('a\u00adb',))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_update_selection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 602, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -27487,7 +27487,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_38test_soft_hyphen
  *         s.start_selection(0, 0)
  *         s.update_selection(2, 0)
  *         self.ae(s.text_for_selection(), ('a\u00adb',))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_variation_selectors(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 603, __pyx_L1_error)
@@ -27560,7 +27560,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_38test_soft_hyphen
 
   /* "smelly_tests/screen.py":597
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
- * 
+ *
  *     def test_soft_hyphen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a\u00adb')
@@ -27586,7 +27586,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_38test_soft_hyphen
 
 /* "smelly_tests/screen.py":605
  *         self.ae(s.text_for_selection(), ('a\u00adb',))
- * 
+ *
  *     def test_variation_selectors(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('\U0001f610')
@@ -27622,7 +27622,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_40test_variation_s
   __Pyx_RefNannySetupContext("test_variation_selectors", 0);
 
   /* "smelly_tests/screen.py":606
- * 
+ *
  *     def test_variation_selectors(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('\U0001f610')
@@ -28073,7 +28073,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_40test_variation_s
  *         s.carriage_return(), s.linefeed()
  *         s.draw('\u25b6\ufe0f')             # <<<<<<<<<<<<<<
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 616, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -28098,7 +28098,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_40test_variation_s
  *         s.carriage_return(), s.linefeed()
  *         s.draw('\u25b6\ufe0f')
  *         self.ae(s.cursor.x, 2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_serialize(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 617, __pyx_L1_error)
@@ -28159,7 +28159,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_40test_variation_s
 
   /* "smelly_tests/screen.py":605
  *         self.ae(s.text_for_selection(), ('a\u00adb',))
- * 
+ *
  *     def test_variation_selectors(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('\U0001f610')
@@ -28185,10 +28185,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_40test_variation_s
 
 /* "smelly_tests/screen.py":619
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_serialize(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
 
 /* Python wrapper */
@@ -28207,7 +28207,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_43test_serialize(P
 
 /* "smelly_tests/screen.py":638
  *             '\x1b[m\x1b[31m11\x1b[m\x1b[32m22\x1b[m\x1b[33m33\x1b[m\x1b[34m44\x1b[m\x1b[m\x1b[35m55\x1b[m\x1b[36m66')
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -28310,11 +28310,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_serialize_s
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":639
- * 
+ *
  *         def set_link(url=None, id=None):
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(             # <<<<<<<<<<<<<<
  *                 id or '', url or '').encode('utf-8'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 639, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -28324,7 +28324,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_serialize_s
  *         def set_link(url=None, id=None):
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_8_id, __pyx_n_s_format); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 639, __pyx_L1_error)
@@ -28467,7 +28467,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_serialize_s
 
   /* "smelly_tests/screen.py":638
  *             '\x1b[m\x1b[31m11\x1b[m\x1b[32m22\x1b[m\x1b[33m33\x1b[m\x1b[34m44\x1b[m\x1b[m\x1b[35m55\x1b[m\x1b[36m66')
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -28496,10 +28496,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_serialize_s
 
 /* "smelly_tests/screen.py":619
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_serialize(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -28531,10 +28531,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
   }
 
   /* "smelly_tests/screen.py":620
- * 
+ *
  *     def test_serialize(self):
  *         from smelly.window import as_text             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 620, __pyx_L1_error)
@@ -28554,7 +28554,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
 
   /* "smelly_tests/screen.py":622
  *         from smelly.window import as_text
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('ab' * s.columns)
  *         s.carriage_return(), s.linefeed()
@@ -28581,7 +28581,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
   __pyx_t_2 = 0;
 
   /* "smelly_tests/screen.py":623
- * 
+ *
  *         s = self.create_screen()
  *         s.draw('ab' * s.columns)             # <<<<<<<<<<<<<<
  *         s.carriage_return(), s.linefeed()
@@ -28617,7 +28617,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
  *         s.draw('ab' * s.columns)
  *         s.carriage_return(), s.linefeed()             # <<<<<<<<<<<<<<
  *         s.draw('c')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_carriage_return); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 624, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -28667,7 +28667,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
  *         s.draw('ab' * s.columns)
  *         s.carriage_return(), s.linefeed()
  *         s.draw('c')             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(as_text(s), 'ababababab\nc\n\n')
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 625, __pyx_L1_error)
@@ -28691,10 +28691,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
 
   /* "smelly_tests/screen.py":627
  *         s.draw('c')
- * 
+ *
  *         self.ae(as_text(s), 'ababababab\nc\n\n')             # <<<<<<<<<<<<<<
  *         self.ae(as_text(s, True), '\x1b[mababa\x1b[mbabab\n\x1b[mc\n\n')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 627, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -28764,10 +28764,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/screen.py":628
- * 
+ *
  *         self.ae(as_text(s), 'ababababab\nc\n\n')
  *         self.ae(as_text(s, True), '\x1b[mababa\x1b[mbabab\n\x1b[mc\n\n')             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2)
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 628, __pyx_L1_error)
@@ -28869,7 +28869,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
 
   /* "smelly_tests/screen.py":630
  *         self.ae(as_text(s, True), '\x1b[mababa\x1b[mbabab\n\x1b[mc\n\n')
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2)             # <<<<<<<<<<<<<<
  *         for i in range(1, 7):
  *             s.select_graphic_rendition(30 + i)
@@ -28891,7 +28891,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
   __pyx_t_7 = 0;
 
   /* "smelly_tests/screen.py":631
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2)
  *         for i in range(1, 7):             # <<<<<<<<<<<<<<
  *             s.select_graphic_rendition(30 + i)
@@ -28983,7 +28983,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
  *         self.ae(
  *             as_text(s, True, True),             # <<<<<<<<<<<<<<
  *             '\x1b[m\x1b[31m11\x1b[m\x1b[32m22\x1b[m\x1b[33m33\x1b[m\x1b[34m44\x1b[m\x1b[m\x1b[35m55\x1b[m\x1b[36m66')
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_as_text);
   __pyx_t_5 = __pyx_v_as_text; __pyx_t_4 = NULL;
@@ -29085,7 +29085,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
 
   /* "smelly_tests/screen.py":638
  *             '\x1b[m\x1b[31m11\x1b[m\x1b[32m22\x1b[m\x1b[33m33\x1b[m\x1b[34m44\x1b[m\x1b[m\x1b[35m55\x1b[m\x1b[36m66')
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -29098,7 +29098,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
 
   /* "smelly_tests/screen.py":642
  *                 id or '', url or '').encode('utf-8'))
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('a')
  *         set_link('moo', 'foo')
@@ -29126,7 +29126,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
   __pyx_t_7 = 0;
 
   /* "smelly_tests/screen.py":643
- * 
+ *
  *         s = self.create_screen()
  *         s.draw('a')             # <<<<<<<<<<<<<<
  *         set_link('moo', 'foo')
@@ -29556,7 +29556,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
  *         self.ae(
  *             as_text(s, True),             # <<<<<<<<<<<<<<
  *             '\x1b[ma\x1b]8;;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_as_text);
   __pyx_t_4 = __pyx_v_as_text; __pyx_t_3 = NULL;
@@ -29655,10 +29655,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
 
   /* "smelly_tests/screen.py":619
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_serialize(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
 
   /* function exit code */
@@ -29685,10 +29685,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_42test_serialize(C
 
 /* "smelly_tests/screen.py":662
  *             '\x1b[ma\x1b]8;;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
- * 
+ *
  *     def test_wrapping_serialization(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
 
 /* Python wrapper */
@@ -29722,10 +29722,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
   __Pyx_RefNannySetupContext("test_wrapping_serialization", 0);
 
   /* "smelly_tests/screen.py":663
- * 
+ *
  *     def test_wrapping_serialization(self):
  *         from smelly.window import as_text             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 663, __pyx_L1_error)
@@ -29745,7 +29745,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":665
  *         from smelly.window import as_text
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('aabbccddeeff')
@@ -29759,7 +29759,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_scrollback, __pyx_int_2) < 0) __PYX_ERR(0, 665, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":666
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  *                                'scrollback_pager_history_size': 128})             # <<<<<<<<<<<<<<
  *         s.draw('aabbccddeeff')
@@ -29773,7 +29773,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":665
  *         from smelly.window import as_text
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('aabbccddeeff')
@@ -29816,7 +29816,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *         s.draw('aabbccddeeff')
  *         self.ae(as_text(s, add_history=True), 'aabbccddeeff')             # <<<<<<<<<<<<<<
  *         self.assertNotIn('\n', as_text(s, add_history=True, as_ansi=True))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 668, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -29885,7 +29885,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *         s.draw('aabbccddeeff')
  *         self.ae(as_text(s, add_history=True), 'aabbccddeeff')
  *         self.assertNotIn('\n', as_text(s, add_history=True, as_ansi=True))             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertNotIn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 669, __pyx_L1_error)
@@ -29954,7 +29954,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":671
  *         self.assertNotIn('\n', as_text(s, add_history=True, as_ansi=True))
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('1'), s.carriage_return(), s.linefeed()
@@ -29968,7 +29968,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_scrollback, __pyx_int_2) < 0) __PYX_ERR(0, 671, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":672
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  *                                'scrollback_pager_history_size': 128})             # <<<<<<<<<<<<<<
  *         s.draw('1'), s.carriage_return(), s.linefeed()
@@ -29982,7 +29982,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":671
  *         self.assertNotIn('\n', as_text(s, add_history=True, as_ansi=True))
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('1'), s.carriage_return(), s.linefeed()
@@ -30425,7 +30425,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *         s.draw('6'), s.carriage_return(), s.linefeed()
  *         s.draw('7')             # <<<<<<<<<<<<<<
  *         self.ae(as_text(s, add_history=True), '1\n2\n3\n4\n5\n6\n7')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 679, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -30450,7 +30450,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *         s.draw('6'), s.carriage_return(), s.linefeed()
  *         s.draw('7')
  *         self.ae(as_text(s, add_history=True), '1\n2\n3\n4\n5\n6\n7')             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 680, __pyx_L1_error)
@@ -30518,7 +30518,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":682
  *         self.ae(as_text(s, add_history=True), '1\n2\n3\n4\n5\n6\n7')
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('aabb')
@@ -30532,7 +30532,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_scrollback, __pyx_int_2) < 0) __PYX_ERR(0, 682, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":683
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  *                                'scrollback_pager_history_size': 128})             # <<<<<<<<<<<<<<
  *         s.draw('aabb')
@@ -30546,7 +30546,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":682
  *         self.ae(as_text(s, add_history=True), '1\n2\n3\n4\n5\n6\n7')
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('aabb')
@@ -30601,7 +30601,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *         s.cursor.y = 0
  *         s.carriage_return(), s.linefeed()             # <<<<<<<<<<<<<<
  *         self.ae(as_text(s, add_history=True), 'aabb')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_carriage_return); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 686, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -30651,7 +30651,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *         s.cursor.y = 0
  *         s.carriage_return(), s.linefeed()
  *         self.ae(as_text(s, add_history=True), 'aabb')             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 687, __pyx_L1_error)
@@ -30719,7 +30719,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":689
  *         self.ae(as_text(s, add_history=True), 'aabb')
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('a'), s.carriage_return(), s.linefeed()
@@ -30733,7 +30733,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_scrollback, __pyx_int_2) < 0) __PYX_ERR(0, 689, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":690
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  *                                'scrollback_pager_history_size': 128})             # <<<<<<<<<<<<<<
  *         s.draw('a'), s.carriage_return(), s.linefeed()
@@ -30747,7 +30747,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":689
  *         self.ae(as_text(s, add_history=True), 'aabb')
- * 
+ *
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('a'), s.carriage_return(), s.linefeed()
@@ -30989,7 +30989,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('a')             # <<<<<<<<<<<<<<
  *         self.ae(as_text(s), 'a')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 697, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -31014,7 +31014,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
  *                                'scrollback_pager_history_size': 128})
  *         s.draw('a')
  *         self.ae(as_text(s), 'a')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_pagerhist(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 698, __pyx_L1_error)
@@ -31086,10 +31086,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
   /* "smelly_tests/screen.py":662
  *             '\x1b[ma\x1b]8;;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
- * 
+ *
  *     def test_wrapping_serialization(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
 
   /* function exit code */
@@ -31113,7 +31113,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_44test_wrapping_se
 
 /* "smelly_tests/screen.py":700
  *         self.ae(as_text(s), 'a')
- * 
+ *
  *     def test_pagerhist(self):             # <<<<<<<<<<<<<<
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
@@ -31135,10 +31135,10 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_47test_pagerhist(P
 
 /* "smelly_tests/screen.py":705
  *                                'scrollback_pager_history_size': hsz})
- * 
+ *
  *         def contents():             # <<<<<<<<<<<<<<
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -31171,10 +31171,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_c
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":706
- * 
+ *
  *         def contents():
  *             return s.historybuf.pagerhist_as_text()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def line(i):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -31205,10 +31205,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_c
 
   /* "smelly_tests/screen.py":705
  *                                'scrollback_pager_history_size': hsz})
- * 
+ *
  *         def contents():             # <<<<<<<<<<<<<<
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  */
 
   /* function exit code */
@@ -31226,10 +31226,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_c
 
 /* "smelly_tests/screen.py":708
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  *         def line(i):             # <<<<<<<<<<<<<<
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -31263,10 +31263,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_2
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":709
- * 
+ *
  *         def line(i):
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def w(x):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_q)) { __Pyx_RaiseClosureNameError("q"); __PYX_ERR(0, 709, __pyx_L1_error) }
@@ -31294,10 +31294,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_2
 
   /* "smelly_tests/screen.py":708
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  *         def line(i):             # <<<<<<<<<<<<<<
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  */
 
   /* function exit code */
@@ -31317,10 +31317,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_2
 
 /* "smelly_tests/screen.py":711
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  *         def w(x):             # <<<<<<<<<<<<<<
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -31353,10 +31353,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_4
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":712
- * 
+ *
  *         def w(x):
  *             s.historybuf.pagerhist_write(x)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def test():
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 712, __pyx_L1_error) }
@@ -31384,10 +31384,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_4
 
   /* "smelly_tests/screen.py":711
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  *         def w(x):             # <<<<<<<<<<<<<<
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  */
 
   /* function exit code */
@@ -31407,7 +31407,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_4
 
 /* "smelly_tests/screen.py":714
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  *         def test():             # <<<<<<<<<<<<<<
  *             expected = ''.join(q)
  *             maxlen = hsz
@@ -31452,7 +31452,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_6
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":715
- * 
+ *
  *         def test():
  *             expected = ''.join(q)             # <<<<<<<<<<<<<<
  *             maxlen = hsz
@@ -31547,7 +31547,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_6
  *                 expected = expected[extra:]
  *             got = contents()             # <<<<<<<<<<<<<<
  *             self.ae(got, expected)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_contents)) { __Pyx_RaiseClosureNameError("contents"); __PYX_ERR(0, 720, __pyx_L1_error) }
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_contents(__pyx_cur_scope->__pyx_v_contents); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 720, __pyx_L1_error)
@@ -31559,7 +31559,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_6
  *                 expected = expected[extra:]
  *             got = contents()
  *             self.ae(got, expected)             # <<<<<<<<<<<<<<
- * 
+ *
  *         q = []
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 721, __pyx_L1_error) }
@@ -31614,7 +31614,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_6
 
   /* "smelly_tests/screen.py":714
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  *         def test():             # <<<<<<<<<<<<<<
  *             expected = ''.join(q)
  *             maxlen = hsz
@@ -31642,7 +31642,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_6
 
 /* "smelly_tests/screen.py":700
  *         self.ae(as_text(s), 'a')
- * 
+ *
  *     def test_pagerhist(self):             # <<<<<<<<<<<<<<
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
@@ -31681,7 +31681,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":701
- * 
+ *
  *     def test_pagerhist(self):
  *         hsz = 8             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
@@ -31694,7 +31694,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': hsz})
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 702, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -31708,7 +31708,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
  *                                'scrollback_pager_history_size': hsz})             # <<<<<<<<<<<<<<
- * 
+ *
  *         def contents():
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 703, __pyx_L1_error)
@@ -31725,7 +31725,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={             # <<<<<<<<<<<<<<
  *                                'scrollback_pager_history_size': hsz})
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 702, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31737,10 +31737,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":705
  *                                'scrollback_pager_history_size': hsz})
- * 
+ *
  *         def contents():             # <<<<<<<<<<<<<<
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_14test_pagerhist_1contents, 0, __pyx_n_s_TestScreen_test_pagerhist_locals, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__115)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 705, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31750,10 +31750,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":708
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  *         def line(i):             # <<<<<<<<<<<<<<
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_14test_pagerhist_3line, 0, __pyx_n_s_TestScreen_test_pagerhist_locals_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__117)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31762,10 +31762,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":711
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  *         def w(x):             # <<<<<<<<<<<<<<
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_14test_pagerhist_5w, 0, __pyx_n_s_TestScreen_test_pagerhist_locals_3, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__119)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 711, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -31774,7 +31774,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":714
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  *         def test():             # <<<<<<<<<<<<<<
  *             expected = ''.join(q)
  *             maxlen = hsz
@@ -31786,7 +31786,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":723
  *             self.ae(got, expected)
- * 
+ *
  *         q = []             # <<<<<<<<<<<<<<
  *         for i in range(4):
  *             s.draw(f'{i}' * s.columns)
@@ -31798,7 +31798,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
   __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":724
- * 
+ *
  *         q = []
  *         for i in range(4):             # <<<<<<<<<<<<<<
  *             s.draw(f'{i}' * s.columns)
@@ -32096,7 +32096,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         s.draw('7' * s.columns), line(3), test()
  *         s.draw('8' * s.columns), line(4), test()             # <<<<<<<<<<<<<<
  *         s.draw('9' * s.columns), line(5), test()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 731, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -32142,7 +32142,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         s.draw('7' * s.columns), line(3), test()
  *         s.draw('8' * s.columns), line(4), test()
  *         s.draw('9' * s.columns), line(5), test()             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(options={'scrollback_pager_history_size': 2048})
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 732, __pyx_L1_error)
@@ -32187,7 +32187,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":734
  *         s.draw('9' * s.columns), line(5), test()
- * 
+ *
  *         s = self.create_screen(options={'scrollback_pager_history_size': 2048})             # <<<<<<<<<<<<<<
  *         text = '\x1b[msoft\r\x1b[mbreak\nnextcat'
  *         w(text)
@@ -32211,7 +32211,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
   __pyx_t_6 = 0;
 
   /* "smelly_tests/screen.py":735
- * 
+ *
  *         s = self.create_screen(options={'scrollback_pager_history_size': 2048})
  *         text = '\x1b[msoft\r\x1b[mbreak\nnextcat'             # <<<<<<<<<<<<<<
  *         w(text)
@@ -32296,7 +32296,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         self.ae(contents(), text)
  *         s.historybuf.pagerhist_rewrap(2)             # <<<<<<<<<<<<<<
  *         self.ae(contents(), '\x1b[mso\rft\x1b[m\rbr\rea\rk\nne\rxt\r\rca\rt')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_historybuf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 738, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -32324,7 +32324,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         self.ae(contents(), text)
  *         s.historybuf.pagerhist_rewrap(2)
  *         self.ae(contents(), '\x1b[mso\rft\x1b[m\rbr\rea\rk\nne\rxt\r\rca\rt')             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(options={'scrollback_pager_history_size': 8})
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 739, __pyx_L1_error)
@@ -32382,7 +32382,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":741
  *         self.ae(contents(), '\x1b[mso\rft\x1b[m\rbr\rea\rk\nne\rxt\r\rca\rt')
- * 
+ *
  *         s = self.create_screen(options={'scrollback_pager_history_size': 8})             # <<<<<<<<<<<<<<
  *         w('')
  *         self.ae(contents(), '')
@@ -32406,7 +32406,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":742
- * 
+ *
  *         s = self.create_screen(options={'scrollback_pager_history_size': 8})
  *         w('')             # <<<<<<<<<<<<<<
  *         self.ae(contents(), '')
@@ -32552,7 +32552,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         self.ae(contents(), 'abcd')
  *         w('e')             # <<<<<<<<<<<<<<
  *         self.ae(contents(), 'abcde')
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_14test_pagerhist_4w(__pyx_v_w, __pyx_n_s_e); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 746, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -32562,7 +32562,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
  *         self.ae(contents(), 'abcd')
  *         w('e')
  *         self.ae(contents(), 'abcde')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_user_marking(self):
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 747, __pyx_L1_error)
@@ -32620,7 +32620,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
   /* "smelly_tests/screen.py":700
  *         self.ae(as_text(s), 'a')
- * 
+ *
  *     def test_pagerhist(self):             # <<<<<<<<<<<<<<
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
@@ -32650,7 +32650,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_46test_pagerhist(C
 
 /* "smelly_tests/screen.py":749
  *         self.ae(contents(), 'abcde')
- * 
+ *
  *     def test_user_marking(self):             # <<<<<<<<<<<<<<
  *         def cells(*a, y=0, mark=3):
  *             return [(x, y, mark) for x in a]
@@ -32671,11 +32671,11 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_49test_user_markin
 }
 
 /* "smelly_tests/screen.py":750
- * 
+ *
  *     def test_user_marking(self):
  *         def cells(*a, y=0, mark=3):             # <<<<<<<<<<<<<<
  *             return [(x, y, mark) for x in a]
- * 
+ *
  */
 
 /* Python wrapper */
@@ -32765,7 +32765,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_17test_user_markin
  *     def test_user_marking(self):
  *         def cells(*a, y=0, mark=3):
  *             return [(x, y, mark) for x in a]             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __Pyx_XDECREF(__pyx_r);
@@ -32802,11 +32802,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_17test_user_markin
   goto __pyx_L0;
 
   /* "smelly_tests/screen.py":750
- * 
+ *
  *     def test_user_marking(self):
  *         def cells(*a, y=0, mark=3):             # <<<<<<<<<<<<<<
  *             return [(x, y, mark) for x in a]
- * 
+ *
  */
 
   /* function exit code */
@@ -32826,7 +32826,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_17test_user_markin
 
 /* "smelly_tests/screen.py":762
  *         self.ae(s.marked_cells(), [])
- * 
+ *
  *         def mark_x(text):             # <<<<<<<<<<<<<<
  *             col = 0
  *             for i, c in enumerate(text):
@@ -32908,7 +32908,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_17test_user_markin
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 762, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":763
- * 
+ *
  *         def mark_x(text):
  *             col = 0             # <<<<<<<<<<<<<<
  *             for i, c in enumerate(text):
@@ -32995,7 +32995,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_17test_user_markin
  *                 if c == 'x':
  *                     col += 1             # <<<<<<<<<<<<<<
  *                     yield i, i, col
- * 
+ *
  */
       __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_cur_scope->__pyx_v_col, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 766, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -33008,7 +33008,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_17test_user_markin
  *                 if c == 'x':
  *                     col += 1
  *                     yield i, i, col             # <<<<<<<<<<<<<<
- * 
+ *
  *         s.set_marker(marker_from_function(mark_x))
  */
       __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 767, __pyx_L1_error)
@@ -33070,7 +33070,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_17test_user_markin
 
   /* "smelly_tests/screen.py":762
  *         self.ae(s.marked_cells(), [])
- * 
+ *
  *         def mark_x(text):             # <<<<<<<<<<<<<<
  *             col = 0
  *             for i, c in enumerate(text):
@@ -33097,7 +33097,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_17test_user_markin
 
 /* "smelly_tests/screen.py":749
  *         self.ae(contents(), 'abcde')
- * 
+ *
  *     def test_user_marking(self):             # <<<<<<<<<<<<<<
  *         def cells(*a, y=0, mark=3):
  *             return [(x, y, mark) for x in a]
@@ -33126,11 +33126,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
   __Pyx_RefNannySetupContext("test_user_marking", 0);
 
   /* "smelly_tests/screen.py":750
- * 
+ *
  *     def test_user_marking(self):
  *         def cells(*a, y=0, mark=3):             # <<<<<<<<<<<<<<
  *             return [(x, y, mark) for x in a]
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 750, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -33145,7 +33145,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
 
   /* "smelly_tests/screen.py":753
  *             return [(x, y, mark) for x in a]
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('abaa')
  *         s.carriage_return(), s.linefeed()
@@ -33171,7 +33171,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
   __pyx_t_2 = 0;
 
   /* "smelly_tests/screen.py":754
- * 
+ *
  *         s = self.create_screen()
  *         s.draw('abaa')             # <<<<<<<<<<<<<<
  *         s.carriage_return(), s.linefeed()
@@ -33389,7 +33389,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
  *         self.ae(s.marked_cells(), cells(0, 2, 3))
  *         s.set_marker()             # <<<<<<<<<<<<<<
  *         self.ae(s.marked_cells(), [])
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_set_marker); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 759, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -33414,7 +33414,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
  *         self.ae(s.marked_cells(), cells(0, 2, 3))
  *         s.set_marker()
  *         self.ae(s.marked_cells(), [])             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mark_x(text):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 760, __pyx_L1_error)
@@ -33491,7 +33491,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
 
   /* "smelly_tests/screen.py":762
  *         self.ae(s.marked_cells(), [])
- * 
+ *
  *         def mark_x(text):             # <<<<<<<<<<<<<<
  *             col = 0
  *             for i, c in enumerate(text):
@@ -33503,7 +33503,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
 
   /* "smelly_tests/screen.py":769
  *                     yield i, i, col
- * 
+ *
  *         s.set_marker(marker_from_function(mark_x))             # <<<<<<<<<<<<<<
  *         self.ae(s.marked_cells(), [(0, 1, 1), (2, 1, 2), (4, 1, 3)])
  *         s = self.create_screen(lines=5, scrollback=10)
@@ -33546,7 +33546,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":770
- * 
+ *
  *         s.set_marker(marker_from_function(mark_x))
  *         self.ae(s.marked_cells(), [(0, 1, 1), (2, 1, 2), (4, 1, 3)])             # <<<<<<<<<<<<<<
  *         s = self.create_screen(lines=5, scrollback=10)
@@ -34033,7 +34033,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
  *             self.assertTrue(s.scroll_to_next_mark(0, False))
  *             self.ae(s.scrolled_by, 10 - i - 1)             # <<<<<<<<<<<<<<
  *         self.ae(s.scrolled_by, 0)
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 783, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -34100,7 +34100,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
  *             self.assertTrue(s.scroll_to_next_mark(0, False))
  *             self.ae(s.scrolled_by, 10 - i - 1)
  *         self.ae(s.scrolled_by, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 784, __pyx_L1_error)
@@ -34158,7 +34158,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
 
   /* "smelly_tests/screen.py":786
  *         self.ae(s.scrolled_by, 0)
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('ab')
  *         s.set_marker(marker_from_regex('', 3))
@@ -34184,7 +34184,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
   __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":787
- * 
+ *
  *         s = self.create_screen()
  *         s.draw('ab')             # <<<<<<<<<<<<<<
  *         s.set_marker(marker_from_regex('', 3))
@@ -34955,7 +34955,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
  *         s.draw('x')
  *         s.set_marker(marker_from_function(mark_x))             # <<<<<<<<<<<<<<
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_set_marker); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 806, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -34998,7 +34998,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
  *         s.draw('x')
  *         s.set_marker(marker_from_function(mark_x))
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_hyperlinks(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 807, __pyx_L1_error)
@@ -35081,7 +35081,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
 
   /* "smelly_tests/screen.py":749
  *         self.ae(contents(), 'abcde')
- * 
+ *
  *     def test_user_marking(self):             # <<<<<<<<<<<<<<
  *         def cells(*a, y=0, mark=3):
  *             return [(x, y, mark) for x in a]
@@ -35112,7 +35112,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_48test_user_markin
 
 /* "smelly_tests/screen.py":809
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])
- * 
+ *
  *     def test_hyperlinks(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
@@ -35134,7 +35134,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_51test_hyperlinks(
 
 /* "smelly_tests/screen.py":813
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -35237,11 +35237,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_hyperlinks_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":814
- * 
+ *
  *         def set_link(url=None, id=None):
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(             # <<<<<<<<<<<<<<
  *                 id or '', url or '').encode('utf-8'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 814, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -35251,7 +35251,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_hyperlinks_
  *         def set_link(url=None, id=None):
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         set_link('url-a', 'a')
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_8_id, __pyx_n_s_format); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 814, __pyx_L1_error)
@@ -35394,7 +35394,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_hyperlinks_
 
   /* "smelly_tests/screen.py":813
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -35426,7 +35426,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_15test_hyperlinks_
  *     def test_hyperlinks(self):
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def set_link(url=None, id=None):
  */
 
@@ -35581,7 +35581,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_15test_hyperlinks_
 static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_15test_hyperlinks_7generator6(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/screen.py":818
- * 
+ *
  *         set_link('url-a', 'a')
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))             # <<<<<<<<<<<<<<
  *         s.draw('a')
@@ -35900,7 +35900,7 @@ static PyObject *__pyx_gb_12smelly_tests_6screen_10TestScreen_15test_hyperlinks_
 
 /* "smelly_tests/screen.py":809
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])
- * 
+ *
  *     def test_hyperlinks(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
@@ -35940,11 +35940,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
   }
 
   /* "smelly_tests/screen.py":810
- * 
+ *
  *     def test_hyperlinks(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 810, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -35971,7 +35971,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *     def test_hyperlinks(self):
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def set_link(url=None, id=None):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 811, __pyx_L1_error)
@@ -36069,7 +36069,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
   /* "smelly_tests/screen.py":813
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -36082,7 +36082,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
   /* "smelly_tests/screen.py":817
  *                 id or '', url or '').encode('utf-8'))
- * 
+ *
  *         set_link('url-a', 'a')             # <<<<<<<<<<<<<<
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
  *         s.draw('a')
@@ -36092,7 +36092,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":818
- * 
+ *
  *         set_link('url-a', 'a')
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))             # <<<<<<<<<<<<<<
  *         s.draw('a')
@@ -37593,7 +37593,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         s.draw('a')
  *         set_link()             # <<<<<<<<<<<<<<
  *         self.ae([('x:url-a', 1), ('y:url-a', 2)], s.hyperlinks_as_list())
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_v_set_link); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 851, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -37603,7 +37603,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         s.draw('a')
  *         set_link()
  *         self.ae([('x:url-a', 1), ('y:url-a', 2)], s.hyperlinks_as_list())             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 852, __pyx_L1_error)
@@ -37686,7 +37686,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
   /* "smelly_tests/screen.py":854
  *         self.ae([('x:url-a', 1), ('y:url-a', 2)], s.hyperlinks_as_list())
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         set_link('u' * 2048)
  *         s.draw('a')
@@ -37714,7 +37714,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
   __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":855
- * 
+ *
  *         s = self.create_screen()
  *         set_link('u' * 2048)             # <<<<<<<<<<<<<<
  *         s.draw('a')
@@ -37925,7 +37925,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         s.draw('a')
  *         self.ae([('i' * 256 + ':' + 'u' * (2045 - 256), 1)],             # <<<<<<<<<<<<<<
  *                 s.hyperlinks_as_list())
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 861, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -37955,7 +37955,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         s.draw('a')
  *         self.ae([('i' * 256 + ':' + 'u' * (2045 - 256), 1)],
  *                 s.hyperlinks_as_list())             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_hyperlinks_as_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 862, __pyx_L1_error)
@@ -38028,7 +38028,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
   /* "smelly_tests/screen.py":864
  *                 s.hyperlinks_as_list())
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         set_link('1'), s.draw('1')
  *         set_link('2'), s.draw('2')
@@ -38056,7 +38056,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
   __pyx_t_5 = 0;
 
   /* "smelly_tests/screen.py":865
- * 
+ *
  *         s = self.create_screen()
  *         set_link('1'), s.draw('1')             # <<<<<<<<<<<<<<
  *         set_link('2'), s.draw('2')
@@ -38629,7 +38629,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         self.ae([(':1', 1), (':3', 2)], s.hyperlinks_as_list())
  *         set_link('4'), s.draw('4')             # <<<<<<<<<<<<<<
  *         self.ae([(':1', 1), (':3', 2), (':4', 3)], s.hyperlinks_as_list())
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_Call(__pyx_v_set_link, __pyx_tuple__164, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 876, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -38664,7 +38664,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         self.ae([(':1', 1), (':3', 2)], s.hyperlinks_as_list())
  *         set_link('4'), s.draw('4')
  *         self.ae([(':1', 1), (':3', 2), (':4', 3)], s.hyperlinks_as_list())             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 877, __pyx_L1_error)
@@ -38750,7 +38750,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
   /* "smelly_tests/screen.py":879
  *         self.ae([(':1', 1), (':3', 2), (':4', 3)], s.hyperlinks_as_list())
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         set_link('1'), s.draw('1')
  *         set_link('2'), s.draw('2')
@@ -38778,7 +38778,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
   __pyx_t_4 = 0;
 
   /* "smelly_tests/screen.py":880
- * 
+ *
  *         s = self.create_screen()
  *         set_link('1'), s.draw('1')             # <<<<<<<<<<<<<<
  *         set_link('2'), s.draw('2')
@@ -38854,7 +38854,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         set_link('2'), s.draw('2')
  *         set_link('1'), s.draw('1')             # <<<<<<<<<<<<<<
  *         self.ae([(':2', 2), (':1', 1)], s.hyperlinks_as_list())
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_Call(__pyx_v_set_link, __pyx_tuple__156, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 882, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -38889,7 +38889,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         set_link('2'), s.draw('2')
  *         set_link('1'), s.draw('1')
  *         self.ae([(':2', 2), (':1', 1)], s.hyperlinks_as_list())             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 883, __pyx_L1_error)
@@ -38972,7 +38972,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
   /* "smelly_tests/screen.py":885
  *         self.ae([(':2', 2), (':1', 1)], s.hyperlinks_as_list())
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         set_link('1'), s.draw('12'), set_link(), s.draw(
  *             'X'), set_link('1'), s.draw('3')
@@ -39000,7 +39000,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
   __pyx_t_2 = 0;
 
   /* "smelly_tests/screen.py":886
- * 
+ *
  *         s = self.create_screen()
  *         set_link('1'), s.draw('12'), set_link(), s.draw(             # <<<<<<<<<<<<<<
  *             'X'), set_link('1'), s.draw('3')
@@ -39073,7 +39073,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
   /* "smelly_tests/screen.py":886
- * 
+ *
  *         s = self.create_screen()
  *         set_link('1'), s.draw('12'), set_link(), s.draw(             # <<<<<<<<<<<<<<
  *             'X'), set_link('1'), s.draw('3')
@@ -39789,7 +39789,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         self.ae(s.current_url_text(), '123abcxyz')
  *         self.ae('2', s.hyperlink_at(1, 3))             # <<<<<<<<<<<<<<
  *         self.ae(s.current_url_text(), 'Z Z')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 902, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -39851,7 +39851,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
  *         self.ae(s.current_url_text(), '123abcxyz')
  *         self.ae('2', s.hyperlink_at(1, 3))
  *         self.ae(s.current_url_text(), 'Z Z')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_bottom_margin(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 903, __pyx_L1_error)
@@ -39924,7 +39924,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
   /* "smelly_tests/screen.py":809
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])
- * 
+ *
  *     def test_hyperlinks(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
@@ -39958,7 +39958,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_50test_hyperlinks(
 
 /* "smelly_tests/screen.py":905
  *         self.ae(s.current_url_text(), 'Z Z')
- * 
+ *
  *     def test_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(0, 5)
@@ -39996,7 +39996,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_52test_bottom_marg
   __Pyx_RefNannySetupContext("test_bottom_margin", 0);
 
   /* "smelly_tests/screen.py":906
- * 
+ *
  *     def test_bottom_margin(self):
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)             # <<<<<<<<<<<<<<
  *         s.set_margins(0, 5)
@@ -40077,7 +40077,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_52test_bottom_marg
  *             s.draw(str(i))
  *             s.linefeed()             # <<<<<<<<<<<<<<
  *             s.carriage_return()
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_linefeed); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 910, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -40102,7 +40102,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_52test_bottom_marg
  *             s.draw(str(i))
  *             s.linefeed()
  *             s.carriage_return()             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(str(s.linebuf), '4\n5\n6\n7\n\n')
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_carriage_return); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 911, __pyx_L1_error)
@@ -40127,10 +40127,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_52test_bottom_marg
 
   /* "smelly_tests/screen.py":913
  *             s.carriage_return()
- * 
+ *
  *         self.ae(str(s.linebuf), '4\n5\n6\n7\n\n')             # <<<<<<<<<<<<<<
  *         self.ae(str(s.historybuf), '3\n2\n1\n0')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 913, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -40189,10 +40189,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_52test_bottom_marg
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/screen.py":914
- * 
+ *
  *         self.ae(str(s.linebuf), '4\n5\n6\n7\n\n')
  *         self.ae(str(s.historybuf), '3\n2\n1\n0')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_top_margin(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 914, __pyx_L1_error)
@@ -40253,7 +40253,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_52test_bottom_marg
 
   /* "smelly_tests/screen.py":905
  *         self.ae(s.current_url_text(), 'Z Z')
- * 
+ *
  *     def test_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(0, 5)
@@ -40279,7 +40279,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_52test_bottom_marg
 
 /* "smelly_tests/screen.py":916
  *         self.ae(str(s.historybuf), '3\n2\n1\n0')
- * 
+ *
  *     def test_top_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 6)
@@ -40317,7 +40317,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_54test_top_margin(
   __Pyx_RefNannySetupContext("test_top_margin", 0);
 
   /* "smelly_tests/screen.py":917
- * 
+ *
  *     def test_top_margin(self):
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)             # <<<<<<<<<<<<<<
  *         s.set_margins(2, 6)
@@ -40398,7 +40398,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_54test_top_margin(
  *             s.draw(str(i))
  *             s.linefeed()             # <<<<<<<<<<<<<<
  *             s.carriage_return()
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_linefeed); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 921, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -40423,7 +40423,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_54test_top_margin(
  *             s.draw(str(i))
  *             s.linefeed()
  *             s.carriage_return()             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(str(s.linebuf), '0\n4\n5\n6\n7\n')
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_carriage_return); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 922, __pyx_L1_error)
@@ -40448,10 +40448,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_54test_top_margin(
 
   /* "smelly_tests/screen.py":924
  *             s.carriage_return()
- * 
+ *
  *         self.ae(str(s.linebuf), '0\n4\n5\n6\n7\n')             # <<<<<<<<<<<<<<
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 924, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -40510,10 +40510,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_54test_top_margin(
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/screen.py":925
- * 
+ *
  *         self.ae(str(s.linebuf), '0\n4\n5\n6\n7\n')
  *         self.ae(str(s.historybuf), '')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_top_and_bottom_margin(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 925, __pyx_L1_error)
@@ -40574,7 +40574,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_54test_top_margin(
 
   /* "smelly_tests/screen.py":916
  *         self.ae(str(s.historybuf), '3\n2\n1\n0')
- * 
+ *
  *     def test_top_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 6)
@@ -40600,7 +40600,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_54test_top_margin(
 
 /* "smelly_tests/screen.py":927
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_top_and_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 5)
@@ -40638,7 +40638,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_56test_top_and_bot
   __Pyx_RefNannySetupContext("test_top_and_bottom_margin", 0);
 
   /* "smelly_tests/screen.py":928
- * 
+ *
  *     def test_top_and_bottom_margin(self):
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)             # <<<<<<<<<<<<<<
  *         s.set_margins(2, 5)
@@ -40719,7 +40719,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_56test_top_and_bot
  *             s.draw(str(i))
  *             s.linefeed()             # <<<<<<<<<<<<<<
  *             s.carriage_return()
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_linefeed); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 932, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -40744,7 +40744,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_56test_top_and_bot
  *             s.draw(str(i))
  *             s.linefeed()
  *             s.carriage_return()             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(str(s.linebuf), '0\n5\n6\n7\n\n')
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_carriage_return); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 933, __pyx_L1_error)
@@ -40769,10 +40769,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_56test_top_and_bot
 
   /* "smelly_tests/screen.py":935
  *             s.carriage_return()
- * 
+ *
  *         self.ae(str(s.linebuf), '0\n5\n6\n7\n\n')             # <<<<<<<<<<<<<<
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 935, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -40831,10 +40831,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_56test_top_and_bot
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/screen.py":936
- * 
+ *
  *         self.ae(str(s.linebuf), '0\n5\n6\n7\n\n')
  *         self.ae(str(s.historybuf), '')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_osc_52(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 936, __pyx_L1_error)
@@ -40895,7 +40895,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_56test_top_and_bot
 
   /* "smelly_tests/screen.py":927
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_top_and_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 5)
@@ -40921,7 +40921,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_56test_top_and_bot
 
 /* "smelly_tests/screen.py":938
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_osc_52(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -40943,10 +40943,10 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_59test_osc_52(PyOb
 
 /* "smelly_tests/screen.py":942
  *         c = s.callbacks
- * 
+ *
  *         def send(what: str):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -40992,10 +40992,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_send
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":943
- * 
+ *
  *         def send(what: str):
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def t(q, use_pending_mode, *expected):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -41080,10 +41080,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_send
 
   /* "smelly_tests/screen.py":942
  *         c = s.callbacks
- * 
+ *
  *         def send(what: str):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  */
 
   /* function exit code */
@@ -41103,7 +41103,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_send
 
 /* "smelly_tests/screen.py":945
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  *         def t(q, use_pending_mode, *expected):             # <<<<<<<<<<<<<<
  *             c.clear()
  *             if use_pending_mode:
@@ -41209,7 +41209,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_2t(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":946
- * 
+ *
  *         def t(q, use_pending_mode, *expected):
  *             c.clear()             # <<<<<<<<<<<<<<
  *             if use_pending_mode:
@@ -41405,7 +41405,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_2t(P
  *                 self.ae(c.cc_buf, [])
  *                 parse_bytes(s, b'\033[?2026l')             # <<<<<<<<<<<<<<
  *             self.ae(c.cc_buf, list(expected))
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 952, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -41470,7 +41470,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_2t(P
  *                 self.ae(c.cc_buf, [])
  *                 parse_bytes(s, b'\033[?2026l')
  *             self.ae(c.cc_buf, list(expected))             # <<<<<<<<<<<<<<
- * 
+ *
  *         for use_pending_mode in (False, True):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 953, __pyx_L1_error) }
@@ -41534,7 +41534,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_2t(P
 
   /* "smelly_tests/screen.py":945
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  *         def t(q, use_pending_mode, *expected):             # <<<<<<<<<<<<<<
  *             c.clear()
  *             if use_pending_mode:
@@ -41560,7 +41560,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_11test_osc_52_2t(P
 
 /* "smelly_tests/screen.py":938
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_osc_52(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -41595,11 +41595,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":939
- * 
+ *
  *     def test_osc_52(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         c = s.callbacks
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 939, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -41626,7 +41626,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
  *     def test_osc_52(self):
  *         s = self.create_screen()
  *         c = s.callbacks             # <<<<<<<<<<<<<<
- * 
+ *
  *         def send(what: str):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_callbacks); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 940, __pyx_L1_error)
@@ -41637,10 +41637,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
 
   /* "smelly_tests/screen.py":942
  *         c = s.callbacks
- * 
+ *
  *         def send(what: str):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 942, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -41655,7 +41655,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
 
   /* "smelly_tests/screen.py":945
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  *         def t(q, use_pending_mode, *expected):             # <<<<<<<<<<<<<<
  *             c.clear()
  *             if use_pending_mode:
@@ -41667,7 +41667,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
 
   /* "smelly_tests/screen.py":955
  *             self.ae(c.cc_buf, list(expected))
- * 
+ *
  *         for use_pending_mode in (False, True):             # <<<<<<<<<<<<<<
  *             t('XYZ', use_pending_mode, ('p;XYZ', False))
  *             t('a' * 8192, use_pending_mode,
@@ -41685,7 +41685,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
     __pyx_t_1 = 0;
 
     /* "smelly_tests/screen.py":956
- * 
+ *
  *         for use_pending_mode in (False, True):
  *             t('XYZ', use_pending_mode, ('p;XYZ', False))             # <<<<<<<<<<<<<<
  *             t('a' * 8192, use_pending_mode,
@@ -41779,7 +41779,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
  *               ('p;' + 'a' * (8192 - 6), True), (';' + 'a' * 6, False))
  *             t('', use_pending_mode, ('p;', False))             # <<<<<<<<<<<<<<
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  */
     __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 959, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -41801,7 +41801,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
  *               ('p;' + 'a' * (8192 - 6), True), (';' + 'a' * 6, False))
  *             t('', use_pending_mode, ('p;', False))
  *             t('!', use_pending_mode, ('p;!', False))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_key_encoding_flags_stack(self):
  */
     __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 960, __pyx_L1_error)
@@ -41822,7 +41822,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
 
     /* "smelly_tests/screen.py":955
  *             self.ae(c.cc_buf, list(expected))
- * 
+ *
  *         for use_pending_mode in (False, True):             # <<<<<<<<<<<<<<
  *             t('XYZ', use_pending_mode, ('p;XYZ', False))
  *             t('a' * 8192, use_pending_mode,
@@ -41832,7 +41832,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
 
   /* "smelly_tests/screen.py":938
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_osc_52(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -41860,7 +41860,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_58test_osc_52(CYTH
 
 /* "smelly_tests/screen.py":962
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  *     def test_key_encoding_flags_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -41882,7 +41882,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_61test_key_encodin
 
 /* "smelly_tests/screen.py":966
  *         c = s.callbacks
- * 
+ *
  *         def w(code, p1='', p2=''):             # <<<<<<<<<<<<<<
  *             p = f'{p1}'
  *             if p2:
@@ -41993,7 +41993,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":967
- * 
+ *
  *         def w(code, p1='', p2=''):
  *             p = f'{p1}'             # <<<<<<<<<<<<<<
  *             if p2:
@@ -42019,7 +42019,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
  *             if p2:
  *                 p += f';{p2}'             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, f'\033[{code}{p}u'.encode('ascii'))
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_FormatSimple(__pyx_v_p2, __pyx_empty_unicode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 969, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -42045,7 +42045,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
  *             if p2:
  *                 p += f';{p2}'
  *             return parse_bytes(s, f'\033[{code}{p}u'.encode('ascii'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def ac(flags):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -42135,7 +42135,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
 
   /* "smelly_tests/screen.py":966
  *         c = s.callbacks
- * 
+ *
  *         def w(code, p1='', p2=''):             # <<<<<<<<<<<<<<
  *             p = f'{p1}'
  *             if p2:
@@ -42159,7 +42159,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
 
 /* "smelly_tests/screen.py":972
  *             return parse_bytes(s, f'\033[{code}{p}u'.encode('ascii'))
- * 
+ *
  *         def ac(flags):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033[?u')
  *             self.ae(c.wtcbuf, f'\033[?{flags}u'.encode('ascii'))
@@ -42201,7 +42201,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":973
- * 
+ *
  *         def ac(flags):
  *             parse_bytes(s, b'\033[?u')             # <<<<<<<<<<<<<<
  *             self.ae(c.wtcbuf, f'\033[?{flags}u'.encode('ascii'))
@@ -42262,7 +42262,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
  *             parse_bytes(s, b'\033[?u')
  *             self.ae(c.wtcbuf, f'\033[?{flags}u'.encode('ascii'))             # <<<<<<<<<<<<<<
  *             c.clear()
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 974, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 974, __pyx_L1_error)
@@ -42350,7 +42350,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
  *             parse_bytes(s, b'\033[?u')
  *             self.ae(c.wtcbuf, f'\033[?{flags}u'.encode('ascii'))
  *             c.clear()             # <<<<<<<<<<<<<<
- * 
+ *
  *         ac(0)
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_c)) { __Pyx_RaiseClosureNameError("c"); __PYX_ERR(0, 975, __pyx_L1_error) }
@@ -42375,7 +42375,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
 
   /* "smelly_tests/screen.py":972
  *             return parse_bytes(s, f'\033[{code}{p}u'.encode('ascii'))
- * 
+ *
  *         def ac(flags):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033[?u')
  *             self.ae(c.wtcbuf, f'\033[?{flags}u'.encode('ascii'))
@@ -42401,7 +42401,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encodin
 
 /* "smelly_tests/screen.py":962
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  *     def test_key_encoding_flags_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -42437,11 +42437,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":963
- * 
+ *
  *     def test_key_encoding_flags_stack(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         c = s.callbacks
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 963, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -42468,7 +42468,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
  *     def test_key_encoding_flags_stack(self):
  *         s = self.create_screen()
  *         c = s.callbacks             # <<<<<<<<<<<<<<
- * 
+ *
  *         def w(code, p1='', p2=''):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_callbacks); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 964, __pyx_L1_error)
@@ -42479,7 +42479,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
 
   /* "smelly_tests/screen.py":966
  *         c = s.callbacks
- * 
+ *
  *         def w(code, p1='', p2=''):             # <<<<<<<<<<<<<<
  *             p = f'{p1}'
  *             if p2:
@@ -42492,7 +42492,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
 
   /* "smelly_tests/screen.py":972
  *             return parse_bytes(s, f'\033[{code}{p}u'.encode('ascii'))
- * 
+ *
  *         def ac(flags):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033[?u')
  *             self.ae(c.wtcbuf, f'\033[?{flags}u'.encode('ascii'))
@@ -42504,7 +42504,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
 
   /* "smelly_tests/screen.py":977
  *             c.clear()
- * 
+ *
  *         ac(0)             # <<<<<<<<<<<<<<
  *         w('=', 0b1001)
  *         ac(0b1001)
@@ -42514,7 +42514,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":978
- * 
+ *
  *         ac(0)
  *         w('=', 0b1001)             # <<<<<<<<<<<<<<
  *         ac(0b1001)
@@ -42584,7 +42584,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
  *         ac(0b1001)
  *         s.reset()             # <<<<<<<<<<<<<<
  *         ac(0)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 984, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -42609,7 +42609,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
  *         ac(0b1001)
  *         s.reset()
  *         ac(0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         w('>', 0b0011)
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encoding_flags_stack_2ac(__pyx_v_ac, __pyx_int_0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 985, __pyx_L1_error)
@@ -42618,7 +42618,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
 
   /* "smelly_tests/screen.py":987
  *         ac(0)
- * 
+ *
  *         w('>', 0b0011)             # <<<<<<<<<<<<<<
  *         ac(0b0011)
  *         w('=', 0b1111)
@@ -42628,7 +42628,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":988
- * 
+ *
  *         w('>', 0b0011)
  *         ac(0b0011)             # <<<<<<<<<<<<<<
  *         w('=', 0b1111)
@@ -42730,7 +42730,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
  *             w('<')
  *             ac(0)             # <<<<<<<<<<<<<<
  *         s.reset()
- * 
+ *
  */
     __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encoding_flags_stack_2ac(__pyx_v_ac, __pyx_int_0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 997, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -42741,7 +42741,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
  *             w('<')
  *             ac(0)
  *         s.reset()             # <<<<<<<<<<<<<<
- * 
+ *
  *         for i in range(1, 16):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 998, __pyx_L1_error)
@@ -42765,7 +42765,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
 
   /* "smelly_tests/screen.py":1000
  *         s.reset()
- * 
+ *
  *         for i in range(1, 16):             # <<<<<<<<<<<<<<
  *             w('>', i)
  *         ac(15)
@@ -42774,7 +42774,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
     __pyx_v_i = __pyx_t_4;
 
     /* "smelly_tests/screen.py":1001
- * 
+ *
  *         for i in range(1, 16):
  *             w('>', i)             # <<<<<<<<<<<<<<
  *         ac(15)
@@ -42801,7 +42801,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
  *             w('>', i)
  *         ac(15)             # <<<<<<<<<<<<<<
  *         w('<'), ac(14), w('<'), ac(13)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_29test_key_encoding_flags_stack_2ac(__pyx_v_ac, __pyx_int_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1002, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -42811,7 +42811,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
  *             w('>', i)
  *         ac(15)
  *         w('<'), ac(14), w('<'), ac(13)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_color_stack(self):
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_w, __pyx_tuple__193, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1003, __pyx_L1_error)
@@ -42840,7 +42840,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
 
   /* "smelly_tests/screen.py":962
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  *     def test_key_encoding_flags_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -42868,7 +42868,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_60test_key_encodin
 
 /* "smelly_tests/screen.py":1005
  *         w('<'), ac(14), w('<'), ac(13)
- * 
+ *
  *     def test_color_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -42890,10 +42890,10 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_63test_color_stack
 
 /* "smelly_tests/screen.py":1009
  *         c = s.callbacks
- * 
+ *
  *         def w(code):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -42929,10 +42929,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1010
- * 
+ *
  *         def w(code):
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def ac(idx, count):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -43012,10 +43012,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack
 
   /* "smelly_tests/screen.py":1009
  *         c = s.callbacks
- * 
+ *
  *         def w(code):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  */
 
   /* function exit code */
@@ -43035,7 +43035,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack
 
 /* "smelly_tests/screen.py":1012
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  *         def ac(idx, count):             # <<<<<<<<<<<<<<
  *             self.ae(c.wtcbuf, f'\033[{idx};{count}#Q'.encode('ascii'))
  *             c.clear()
@@ -43128,11 +43128,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1013
- * 
+ *
  *         def ac(idx, count):
  *             self.ae(c.wtcbuf, f'\033[{idx};{count}#Q'.encode('ascii'))             # <<<<<<<<<<<<<<
  *             c.clear()
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 1013, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1013, __pyx_L1_error)
@@ -43231,7 +43231,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack
  *         def ac(idx, count):
  *             self.ae(c.wtcbuf, f'\033[{idx};{count}#Q'.encode('ascii'))
  *             c.clear()             # <<<<<<<<<<<<<<
- * 
+ *
  *         w('#R')
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_c)) { __Pyx_RaiseClosureNameError("c"); __PYX_ERR(0, 1014, __pyx_L1_error) }
@@ -43256,7 +43256,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack
 
   /* "smelly_tests/screen.py":1012
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  *         def ac(idx, count):             # <<<<<<<<<<<<<<
  *             self.ae(c.wtcbuf, f'\033[{idx};{count}#Q'.encode('ascii'))
  *             c.clear()
@@ -43282,7 +43282,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack
 
 /* "smelly_tests/screen.py":1005
  *         w('<'), ac(14), w('<'), ac(13)
- * 
+ *
  *     def test_color_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -43316,11 +43316,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":1006
- * 
+ *
  *     def test_color_stack(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         c = s.callbacks
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1006, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -43347,7 +43347,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
  *     def test_color_stack(self):
  *         s = self.create_screen()
  *         c = s.callbacks             # <<<<<<<<<<<<<<
- * 
+ *
  *         def w(code):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_callbacks); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1007, __pyx_L1_error)
@@ -43358,10 +43358,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
 
   /* "smelly_tests/screen.py":1009
  *         c = s.callbacks
- * 
+ *
  *         def w(code):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_16test_color_stack_1w, 0, __pyx_n_s_TestScreen_test_color_stack_loca, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__195)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1009, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -43370,7 +43370,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
 
   /* "smelly_tests/screen.py":1012
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  *         def ac(idx, count):             # <<<<<<<<<<<<<<
  *             self.ae(c.wtcbuf, f'\033[{idx};{count}#Q'.encode('ascii'))
  *             c.clear()
@@ -43382,20 +43382,20 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
 
   /* "smelly_tests/screen.py":1016
  *             c.clear()
- * 
+ *
  *         w('#R')             # <<<<<<<<<<<<<<
  *         ac(0, 0)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack_w(__pyx_v_w, __pyx_kp_s_R); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1016, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":1017
- * 
+ *
  *         w('#R')
  *         ac(0, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         w('#P')
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack_2ac(__pyx_v_ac, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1017, __pyx_L1_error)
@@ -43404,7 +43404,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
 
   /* "smelly_tests/screen.py":1019
  *         ac(0, 0)
- * 
+ *
  *         w('#P')             # <<<<<<<<<<<<<<
  *         w('#R')
  *         ac(0, 1)
@@ -43414,7 +43414,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":1020
- * 
+ *
  *         w('#P')
  *         w('#R')             # <<<<<<<<<<<<<<
  *         ac(0, 1)
@@ -43528,7 +43528,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
  *             w('#P')
  *         w('#R')             # <<<<<<<<<<<<<<
  *         ac(9, 10)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack_w(__pyx_v_w, __pyx_kp_s_R); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1030, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -43538,7 +43538,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
  *             w('#P')
  *         w('#R')
  *         ac(9, 10)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_detect_url(self):
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_6screen_10TestScreen_16test_color_stack_2ac(__pyx_v_ac, __pyx_int_9, __pyx_int_10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1031, __pyx_L1_error)
@@ -43547,7 +43547,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
 
   /* "smelly_tests/screen.py":1005
  *         w('<'), ac(14), w('<'), ac(13)
- * 
+ *
  *     def test_color_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -43573,10 +43573,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_62test_color_stack
 
 /* "smelly_tests/screen.py":1033
  *         ac(9, 10)
- * 
+ *
  *     def test_detect_url(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=30)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -43595,7 +43595,7 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_65test_detect_url(
 
 /* "smelly_tests/screen.py":1036
  *         s = self.create_screen(cols=30)
- * 
+ *
  *         def ae(expected, x=3, y=0):             # <<<<<<<<<<<<<<
  *             s.detect_url(x, y)
  *             url = ''.join(s.text_for_marked_url())
@@ -43702,7 +43702,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1037
- * 
+ *
  *         def ae(expected, x=3, y=0):
  *             s.detect_url(x, y)             # <<<<<<<<<<<<<<
  *             url = ''.join(s.text_for_marked_url())
@@ -43763,7 +43763,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
  *             s.detect_url(x, y)
  *             url = ''.join(s.text_for_marked_url())             # <<<<<<<<<<<<<<
  *             self.assertEqual(expected, url)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 1038, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_text_for_marked_url); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1038, __pyx_L1_error)
@@ -43793,7 +43793,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
  *             s.detect_url(x, y)
  *             url = ''.join(s.text_for_marked_url())
  *             self.assertEqual(expected, url)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def t(url, x=0, y=0, before='', after=''):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 1039, __pyx_L1_error) }
@@ -43848,7 +43848,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
 
   /* "smelly_tests/screen.py":1036
  *         s = self.create_screen(cols=30)
- * 
+ *
  *         def ae(expected, x=3, y=0):             # <<<<<<<<<<<<<<
  *             s.detect_url(x, y)
  *             url = ''.join(s.text_for_marked_url())
@@ -43873,7 +43873,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
 
 /* "smelly_tests/screen.py":1041
  *             self.assertEqual(expected, url)
- * 
+ *
  *         def t(url, x=0, y=0, before='', after=''):             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.cursor.x = x
@@ -44006,7 +44006,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1042
- * 
+ *
  *         def t(url, x=0, y=0, before='', after=''):
  *             s.reset()             # <<<<<<<<<<<<<<
  *             s.cursor.x = x
@@ -44063,7 +44063,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
  *             s.cursor.y = y
  *             s.draw(before + url + after)             # <<<<<<<<<<<<<<
  *             ae(url, x=x + 1 + len(before), y=y)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 1045, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1045, __pyx_L1_error)
@@ -44095,7 +44095,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
  *             s.cursor.y = y
  *             s.draw(before + url + after)
  *             ae(url, x=x + 1 + len(before), y=y)             # <<<<<<<<<<<<<<
- * 
+ *
  *         t('http://moo.com')
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_ae)) { __Pyx_RaiseClosureNameError("ae"); __PYX_ERR(0, 1046, __pyx_L1_error) }
@@ -44126,7 +44126,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
 
   /* "smelly_tests/screen.py":1041
  *             self.assertEqual(expected, url)
- * 
+ *
  *         def t(url, x=0, y=0, before='', after=''):             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.cursor.x = x
@@ -44151,10 +44151,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_15test_detect_url_
 
 /* "smelly_tests/screen.py":1033
  *         ac(9, 10)
- * 
+ *
  *     def test_detect_url(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=30)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -44190,10 +44190,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/screen.py":1034
- * 
+ *
  *     def test_detect_url(self):
  *         s = self.create_screen(cols=30)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def ae(expected, x=3, y=0):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1034, __pyx_L1_error)
@@ -44211,7 +44211,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
 
   /* "smelly_tests/screen.py":1036
  *         s = self.create_screen(cols=30)
- * 
+ *
  *         def ae(expected, x=3, y=0):             # <<<<<<<<<<<<<<
  *             s.detect_url(x, y)
  *             url = ''.join(s.text_for_marked_url())
@@ -44225,7 +44225,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
 
   /* "smelly_tests/screen.py":1041
  *             self.assertEqual(expected, url)
- * 
+ *
  *         def t(url, x=0, y=0, before='', after=''):             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.cursor.x = x
@@ -44238,7 +44238,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
 
   /* "smelly_tests/screen.py":1048
  *             ae(url, x=x + 1 + len(before), y=y)
- * 
+ *
  *         t('http://moo.com')             # <<<<<<<<<<<<<<
  *         t('http://moo.com/something?else=+&what-')
  *         for st, e in '() {} [] <>'.split():
@@ -44248,7 +44248,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":1049
- * 
+ *
  *         t('http://moo.com')
  *         t('http://moo.com/something?else=+&what-')             # <<<<<<<<<<<<<<
  *         for st, e in '() {} [] <>'.split():
@@ -44332,11 +44332,11 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_6);
@@ -44480,7 +44480,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
  *         for trailer in '{([':
  *             t('http://moo.com', after=trailer)             # <<<<<<<<<<<<<<
  *         t('http://moo.com', x=s.columns - 9)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1055, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -44504,7 +44504,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
  *         for trailer in '{([':
  *             t('http://moo.com', after=trailer)
  *         t('http://moo.com', x=s.columns - 9)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_prompt_marking(self):
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1056, __pyx_L1_error)
@@ -44523,10 +44523,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
 
   /* "smelly_tests/screen.py":1033
  *         ac(9, 10)
- * 
+ *
  *     def test_detect_url(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=30)
- * 
+ *
  */
 
   /* function exit code */
@@ -44553,10 +44553,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_64test_detect_url(
 
 /* "smelly_tests/screen.py":1058
  *         t('http://moo.com', x=s.columns - 9)
- * 
+ *
  *     def test_prompt_marking(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -44575,10 +44575,10 @@ static PyObject *__pyx_pw_12smelly_tests_6screen_10TestScreen_67test_prompt_mark
 
 /* "smelly_tests/screen.py":1061
  *         s = self.create_screen()
- * 
+ *
  *         def mark_prompt():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -44613,10 +44613,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1062
- * 
+ *
  *         def mark_prompt():
  *             parse_bytes(s, b'\033]133;A\007')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mark_output():
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1062, __pyx_L1_error)
@@ -44671,10 +44671,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
   /* "smelly_tests/screen.py":1061
  *         s = self.create_screen()
- * 
+ *
  *         def mark_prompt():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  */
 
   /* function exit code */
@@ -44695,10 +44695,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
 /* "smelly_tests/screen.py":1064
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  *         def mark_output():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;C\007')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -44733,10 +44733,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1065
- * 
+ *
  *         def mark_output():
  *             parse_bytes(s, b'\033]133;C\007')             # <<<<<<<<<<<<<<
- * 
+ *
  *         for i in range(4):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_bytes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1065, __pyx_L1_error)
@@ -44791,10 +44791,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
   /* "smelly_tests/screen.py":1064
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  *         def mark_output():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;C\007')
- * 
+ *
  */
 
   /* function exit code */
@@ -44815,7 +44815,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
 /* "smelly_tests/screen.py":1094
  *         self.ae(str(s.visual_line(0)), '$ 1')
- * 
+ *
  *         def lco(as_ansi=False, which=0):             # <<<<<<<<<<<<<<
  *             a = []
  *             if s.cmd_output(which, a.append, as_ansi):
@@ -44917,7 +44917,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1095
- * 
+ *
  *         def lco(as_ansi=False, which=0):
  *             a = []             # <<<<<<<<<<<<<<
  *             if s.cmd_output(which, a.append, as_ansi):
@@ -45036,7 +45036,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *                 if pht:
  *                     a.insert(0, pht)             # <<<<<<<<<<<<<<
  *             return ''.join(a)
- * 
+ *
  */
       __pyx_t_8 = PyList_Insert(__pyx_v_a, 0, __pyx_v_pht); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 1099, __pyx_L1_error)
 
@@ -45062,7 +45062,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *                 if pht:
  *                     a.insert(0, pht)
  *             return ''.join(a)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def fco():
  */
   __Pyx_XDECREF(__pyx_r);
@@ -45074,7 +45074,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
   /* "smelly_tests/screen.py":1094
  *         self.ae(str(s.visual_line(0)), '$ 1')
- * 
+ *
  *         def lco(as_ansi=False, which=0):             # <<<<<<<<<<<<<<
  *             a = []
  *             if s.cmd_output(which, a.append, as_ansi):
@@ -45099,7 +45099,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
 /* "smelly_tests/screen.py":1102
  *             return ''.join(a)
- * 
+ *
  *         def fco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(1, a.append)
@@ -45139,7 +45139,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1103
- * 
+ *
  *         def fco():
  *             a = []             # <<<<<<<<<<<<<<
  *             s.cmd_output(1, a.append)
@@ -45155,7 +45155,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *             a = []
  *             s.cmd_output(1, a.append)             # <<<<<<<<<<<<<<
  *             return ''.join(a)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 1104, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_cmd_output); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1104, __pyx_L1_error)
@@ -45215,7 +45215,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *             a = []
  *             s.cmd_output(1, a.append)
  *             return ''.join(a)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def lvco():
  */
   __Pyx_XDECREF(__pyx_r);
@@ -45227,7 +45227,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
   /* "smelly_tests/screen.py":1102
  *             return ''.join(a)
- * 
+ *
  *         def fco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(1, a.append)
@@ -45251,7 +45251,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
 /* "smelly_tests/screen.py":1107
  *             return ''.join(a)
- * 
+ *
  *         def lvco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(2, a.append)
@@ -45291,7 +45291,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1108
- * 
+ *
  *         def lvco():
  *             a = []             # <<<<<<<<<<<<<<
  *             s.cmd_output(2, a.append)
@@ -45307,7 +45307,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *             a = []
  *             s.cmd_output(2, a.append)             # <<<<<<<<<<<<<<
  *             return ''.join(a)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 1109, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_cmd_output); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1109, __pyx_L1_error)
@@ -45367,7 +45367,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *             a = []
  *             s.cmd_output(2, a.append)
  *             return ''.join(a)             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __Pyx_XDECREF(__pyx_r);
@@ -45379,7 +45379,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
   /* "smelly_tests/screen.py":1107
  *             return ''.join(a)
- * 
+ *
  *         def lvco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(2, a.append)
@@ -45403,10 +45403,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
 /* "smelly_tests/screen.py":1128
  *         self.ae(lco(as_ansi=True), '\x1b[m\x1b]133;C\x1b\\abcd\n\x1b[m12')
- * 
+ *
  *         def draw_prompt(x):             # <<<<<<<<<<<<<<
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -45442,10 +45442,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1129
- * 
+ *
  *         def draw_prompt(x):
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def draw_output(n, x='', m=True):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_mark_prompt)) { __Pyx_RaiseClosureNameError("mark_prompt"); __PYX_ERR(0, 1129, __pyx_L1_error) }
@@ -45529,10 +45529,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
   /* "smelly_tests/screen.py":1128
  *         self.ae(lco(as_ansi=True), '\x1b[m\x1b]133;C\x1b\\abcd\n\x1b[m12')
- * 
+ *
  *         def draw_prompt(x):             # <<<<<<<<<<<<<<
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  */
 
   /* function exit code */
@@ -45555,7 +45555,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
 /* "smelly_tests/screen.py":1131
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  *         def draw_output(n, x='', m=True):             # <<<<<<<<<<<<<<
  *             if m:
  *                 mark_output()
@@ -45666,7 +45666,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/screen.py":1132
- * 
+ *
  *         def draw_output(n, x='', m=True):
  *             if m:             # <<<<<<<<<<<<<<
  *                 mark_output()
@@ -45688,7 +45688,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly_tests/screen.py":1132
- * 
+ *
  *         def draw_output(n, x='', m=True):
  *             if m:             # <<<<<<<<<<<<<<
  *                 mark_output()
@@ -45701,7 +45701,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *                 mark_output()
  *             for i in range(n):             # <<<<<<<<<<<<<<
  *                 s.draw(f'{i}{x}'), s.index(), s.carriage_return()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -45752,7 +45752,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *                 mark_output()
  *             for i in range(n):
  *                 s.draw(f'{i}{x}'), s.index(), s.carriage_return()             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen(cols=5, lines=5, scrollback=15)
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 1135, __pyx_L1_error) }
@@ -45836,14 +45836,14 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
  *                 mark_output()
  *             for i in range(n):             # <<<<<<<<<<<<<<
  *                 s.draw(f'{i}{x}'), s.index(), s.carriage_return()
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/screen.py":1131
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  *         def draw_output(n, x='', m=True):             # <<<<<<<<<<<<<<
  *             if m:
  *                 mark_output()
@@ -45870,10 +45870,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_mark
 
 /* "smelly_tests/screen.py":1058
  *         t('http://moo.com', x=s.columns - 9)
- * 
+ *
  *     def test_prompt_marking(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_marking(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -45910,10 +45910,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   }
 
   /* "smelly_tests/screen.py":1059
- * 
+ *
  *     def test_prompt_marking(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mark_prompt():
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1059, __pyx_L1_error)
@@ -45939,10 +45939,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1061
  *         s = self.create_screen()
- * 
+ *
  *         def mark_prompt():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_19test_prompt_marking_1mark_prompt, 0, __pyx_n_s_TestScreen_test_prompt_marking_l, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__210)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1061, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -45952,10 +45952,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1064
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  *         def mark_output():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;C\007')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_19test_prompt_marking_3mark_output, 0, __pyx_n_s_TestScreen_test_prompt_marking_l_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__211)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1064, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -45965,7 +45965,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1067
  *             parse_bytes(s, b'\033]133;C\007')
- * 
+ *
  *         for i in range(4):             # <<<<<<<<<<<<<<
  *             mark_prompt()
  *             s.draw(f'$ {i}')
@@ -45977,7 +45977,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
     __pyx_t_1 = 0;
 
     /* "smelly_tests/screen.py":1068
- * 
+ *
  *         for i in range(4):
  *             mark_prompt()             # <<<<<<<<<<<<<<
  *             s.draw(f'$ {i}')
@@ -46616,7 +46616,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.assertTrue(s.scroll_to_prompt(1))
  *         self.ae(str(s.visual_line(0)), '$ 2')             # <<<<<<<<<<<<<<
  *         self.assertFalse(s.scroll_to_prompt(1))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -46693,7 +46693,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.assertTrue(s.scroll_to_prompt(1))
  *         self.ae(str(s.visual_line(0)), '$ 2')
  *         self.assertFalse(s.scroll_to_prompt(1))             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1082, __pyx_L1_error)
@@ -46735,7 +46735,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1084
  *         self.assertFalse(s.scroll_to_prompt(1))
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         mark_prompt(), s.draw('$ 0')
  *         s.carriage_return(), s.index()
@@ -46763,7 +46763,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   __pyx_t_5 = 0;
 
   /* "smelly_tests/screen.py":1085
- * 
+ *
  *         s = self.create_screen()
  *         mark_prompt(), s.draw('$ 0')             # <<<<<<<<<<<<<<
  *         s.carriage_return(), s.index()
@@ -47035,7 +47035,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *             s.draw(str(i))
  *         self.assertTrue(s.scroll_to_prompt())             # <<<<<<<<<<<<<<
  *         self.ae(str(s.visual_line(0)), '$ 1')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1091, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -47078,7 +47078,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *             s.draw(str(i))
  *         self.assertTrue(s.scroll_to_prompt())
  *         self.ae(str(s.visual_line(0)), '$ 1')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def lco(as_ansi=False, which=0):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1092, __pyx_L1_error)
@@ -47154,7 +47154,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1094
  *         self.ae(str(s.visual_line(0)), '$ 1')
- * 
+ *
  *         def lco(as_ansi=False, which=0):             # <<<<<<<<<<<<<<
  *             a = []
  *             if s.cmd_output(which, a.append, as_ansi):
@@ -47167,7 +47167,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1102
  *             return ''.join(a)
- * 
+ *
  *         def fco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(1, a.append)
@@ -47179,7 +47179,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1107
  *             return ''.join(a)
- * 
+ *
  *         def lvco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(2, a.append)
@@ -47191,7 +47191,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1112
  *             return ''.join(a)
- * 
+ *
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         s.draw('abcd'), s.index(), s.carriage_return()
  *         s.draw('12'), s.index(), s.carriage_return()
@@ -47219,7 +47219,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   __pyx_t_7 = 0;
 
   /* "smelly_tests/screen.py":1113
- * 
+ *
  *         s = self.create_screen()
  *         s.draw('abcd'), s.index(), s.carriage_return()             # <<<<<<<<<<<<<<
  *         s.draw('12'), s.index(), s.carriage_return()
@@ -47850,7 +47850,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(fco(), 'abcd\n12')
  *         self.ae(lco(), 'abcd\n12')             # <<<<<<<<<<<<<<
  *         self.ae(lco(as_ansi=True), '\x1b[m\x1b]133;C\x1b\\abcd\n\x1b[m12')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -47909,7 +47909,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(fco(), 'abcd\n12')
  *         self.ae(lco(), 'abcd\n12')
  *         self.ae(lco(as_ansi=True), '\x1b[m\x1b]133;C\x1b\\abcd\n\x1b[m12')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def draw_prompt(x):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1126, __pyx_L1_error)
@@ -47971,10 +47971,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1128
  *         self.ae(lco(as_ansi=True), '\x1b[m\x1b]133;C\x1b\\abcd\n\x1b[m12')
- * 
+ *
  *         def draw_prompt(x):             # <<<<<<<<<<<<<<
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_19test_prompt_marking_11draw_prompt, 0, __pyx_n_s_TestScreen_test_prompt_marking_l_6, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__220)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -47983,7 +47983,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1131
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  *         def draw_output(n, x='', m=True):             # <<<<<<<<<<<<<<
  *             if m:
  *                 mark_output()
@@ -47996,7 +47996,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1137
  *                 s.draw(f'{i}{x}'), s.index(), s.carriage_return()
- * 
+ *
  *         s = self.create_screen(cols=5, lines=5, scrollback=15)             # <<<<<<<<<<<<<<
  *         draw_output(1, 'start', False)
  *         draw_prompt('0'), draw_output(3)
@@ -48018,7 +48018,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   __pyx_t_7 = 0;
 
   /* "smelly_tests/screen.py":1138
- * 
+ *
  *         s = self.create_screen(cols=5, lines=5, scrollback=15)
  *         draw_output(1, 'start', False)             # <<<<<<<<<<<<<<
  *         draw_prompt('0'), draw_output(3)
@@ -48054,7 +48054,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         draw_prompt('0'), draw_output(3)
  *         draw_prompt('1')             # <<<<<<<<<<<<<<
  *         draw_prompt('2'), draw_output(2, 'x')
- * 
+ *
  */
   __pyx_t_2 = __pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_marking_10draw_prompt(__pyx_v_draw_prompt, __pyx_kp_s_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -48064,7 +48064,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         draw_prompt('0'), draw_output(3)
  *         draw_prompt('1')
  *         draw_prompt('2'), draw_output(2, 'x')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # last cmd output
  */
   __pyx_t_2 = __pyx_pf_12smelly_tests_6screen_10TestScreen_19test_prompt_marking_10draw_prompt(__pyx_v_draw_prompt, __pyx_kp_s_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1141, __pyx_L1_error)
@@ -48292,7 +48292,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(s.scrolled_by, 4)
  *         self.ae(str(s.visual_line(0)), '$ 0')             # <<<<<<<<<<<<<<
  *         self.ae(lco(), '0x\n1x\n')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -48369,7 +48369,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(s.scrolled_by, 4)
  *         self.ae(str(s.visual_line(0)), '$ 0')
  *         self.ae(lco(), '0x\n1x\n')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # first cmd output on screen
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1151, __pyx_L1_error)
@@ -48716,7 +48716,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         s.scroll(2, False)
  *         self.ae(str(s.visual_line(0)), '$ 1')             # <<<<<<<<<<<<<<
  *         self.ae(fco(), '0x\n1x\n')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -48793,7 +48793,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         s.scroll(2, False)
  *         self.ae(str(s.visual_line(0)), '$ 1')
  *         self.ae(fco(), '0x\n1x\n')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # resize
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1163, __pyx_L1_error)
@@ -48936,7 +48936,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         s.scroll_to_prompt(-4)
  *         self.ae(str(s.visual_line(0)), '$ 0')             # <<<<<<<<<<<<<<
  *         self.ae(lco(), '0long_line\n0l\n1l\n')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -49013,7 +49013,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         s.scroll_to_prompt(-4)
  *         self.ae(str(s.visual_line(0)), '$ 0')
  *         self.ae(lco(), '0long_line\n0l\n1l\n')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # last visited cmd output
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1173, __pyx_L1_error)
@@ -49070,7 +49070,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/screen.py":1176
- * 
+ *
  *         # last visited cmd output
  *         self.ae(lvco(), '0\n1\n2')             # <<<<<<<<<<<<<<
  *         s.scroll_to_prompt(1)
@@ -49134,7 +49134,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(lvco(), '0\n1\n2')
  *         s.scroll_to_prompt(1)             # <<<<<<<<<<<<<<
  *         self.ae(lvco(), '0x\n1x')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_scroll_to_prompt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -49159,7 +49159,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(lvco(), '0\n1\n2')
  *         s.scroll_to_prompt(1)
  *         self.ae(lvco(), '0x\n1x')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # last command output without line break
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1178, __pyx_L1_error)
@@ -49216,7 +49216,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/screen.py":1181
- * 
+ *
  *         # last command output without line break
  *         s = self.create_screen(cols=10, lines=3)             # <<<<<<<<<<<<<<
  *         draw_prompt('p1')
@@ -49349,7 +49349,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(lco(), 'running')
  *         s.index(), s.carriage_return()             # <<<<<<<<<<<<<<
  *         self.ae(lco(), 'running\n')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_index); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -49399,7 +49399,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         self.ae(lco(), 'running')
  *         s.index(), s.carriage_return()
  *         self.ae(lco(), 'running\n')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # last command output from pager history
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1186, __pyx_L1_error)
@@ -49456,7 +49456,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":1189
- * 
+ *
  *         # last command output from pager history
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         draw_prompt('p1')
@@ -49500,7 +49500,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         draw_prompt('p1')
  *         draw_output(30)             # <<<<<<<<<<<<<<
  *         self.ae(tuple(map(int, lco().split())), tuple(range(0, 30)))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_draw_output, __pyx_tuple__229, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -49510,7 +49510,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
  *         draw_prompt('p1')
  *         draw_output(30)
  *         self.ae(tuple(map(int, lco().split())), tuple(range(0, 30)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # last non empty command output
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1192, __pyx_L1_error)
@@ -49606,7 +49606,7 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":1195
- * 
+ *
  *         # last non empty command output
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         draw_prompt('a'), draw_output(2, 'a')
@@ -50225,10 +50225,10 @@ static PyObject *__pyx_pf_12smelly_tests_6screen_10TestScreen_66test_prompt_mark
 
   /* "smelly_tests/screen.py":1058
  *         t('http://moo.com', x=s.columns - 9)
- * 
+ *
  *     def test_prompt_marking(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
 
   /* function exit code */
@@ -53996,7 +53996,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.draw('ab')
  *         self.ae(str(s.line(4)), 'ab123')
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_draw_char(self):
  */
   __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_2, __pyx_int_4); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 49, __pyx_L1_error)
@@ -54033,7 +54033,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":138
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset(), s.reset_dirty()
  *             s.draw('abcde')
@@ -54067,7 +54067,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.erase_in_line(2, True)
  *         self.ae((False, False, False, False, False), tuple(             # <<<<<<<<<<<<<<
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(5, Py_False, Py_False, Py_False, Py_False, Py_False); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -54077,7 +54077,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             s.cursor.x, s.cursor.y = 2, 1
  *             s.cursor.bold = True
  *             self.ae(continuations(s), (True, True, True, True, False))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def all_lines(s):
  */
   __pyx_tuple__22 = PyTuple_Pack(5, Py_True, Py_True, Py_True, Py_True, Py_False); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 211, __pyx_L1_error)
@@ -54086,7 +54086,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":205
  *         s = self.create_screen()
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('12345' * 5)
@@ -54095,10 +54095,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":213
  *             self.ae(continuations(s), (True, True, True, True, False))
- * 
+ *
  *         def all_lines(s):             # <<<<<<<<<<<<<<
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  */
   __pyx_tuple__24 = PyTuple_Pack(3, __pyx_n_s_s, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 213, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
@@ -54107,7 +54107,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":216
  *             return tuple(str(s.line(i)) for i in range(s.lines))
- * 
+ *
  *         def continuations(s):             # <<<<<<<<<<<<<<
  *             return tuple(s.line(i).last_char_has_wrapped_flag()
  *                          for i in range(s.lines))
@@ -54122,7 +54122,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.erase_in_display(0)
  *         self.ae(all_lines(s), ('12345', '12', '', '', ''))             # <<<<<<<<<<<<<<
  *         self.ae(continuations(s), (True, False, False, False, False))
- * 
+ *
  */
   __pyx_tuple__28 = PyTuple_Pack(5, __pyx_kp_s_12345, __pyx_kp_s_12, __pyx_kp_s__18, __pyx_kp_s__18, __pyx_kp_s__18); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 222, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
@@ -54132,7 +54132,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.erase_in_display(0)
  *         self.ae(all_lines(s), ('12345', '12', '', '', ''))
  *         self.ae(continuations(s), (True, False, False, False, False))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_tuple__29 = PyTuple_Pack(5, Py_True, Py_False, Py_False, Py_False, Py_False); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 223, __pyx_L1_error)
@@ -54144,7 +54144,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.erase_in_display(1)
  *         self.ae(all_lines(s), ('', '   45', '12345', '12345', '12345'))             # <<<<<<<<<<<<<<
  *         self.ae(continuations(s), (False, True, True, True, False))
- * 
+ *
  */
   __pyx_tuple__30 = PyTuple_Pack(5, __pyx_kp_s__18, __pyx_kp_s_45, __pyx_kp_s_12345, __pyx_kp_s_12345, __pyx_kp_s_12345); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
@@ -54154,7 +54154,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.erase_in_display(1)
  *         self.ae(all_lines(s), ('', '   45', '12345', '12345', '12345'))
  *         self.ae(continuations(s), (False, True, True, True, False))             # <<<<<<<<<<<<<<
- * 
+ *
  *         init()
  */
   __pyx_tuple__31 = PyTuple_Pack(5, Py_False, Py_True, Py_True, Py_True, Py_False); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 228, __pyx_L1_error)
@@ -54231,7 +54231,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae((s.cursor.x, s.cursor.y), (2, 2))
  *         s.cursor_down1(5)
  *         self.ae((s.cursor.x, s.cursor.y), (0, 4))             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_tuple__38 = PyTuple_Pack(2, __pyx_int_0, __pyx_int_4); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 257, __pyx_L1_error)
@@ -54272,7 +54272,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__42);
 
   /* "smelly_tests/screen.py":310
- * 
+ *
  *     def test_cursor_after_resize(self):
  *         def draw(text, end_line=True):             # <<<<<<<<<<<<<<
  *             s.draw(text)
@@ -54287,7 +54287,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__45);
 
   /* "smelly_tests/screen.py":316
- * 
+ *
  *         s = self.create_screen()
  *         draw('123'), draw('123')             # <<<<<<<<<<<<<<
  *         y_before = s.cursor.y
@@ -54298,7 +54298,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__46);
 
   /* "smelly_tests/screen.py":322
- * 
+ *
  *         s = self.create_screen(cols=5, lines=8)
  *         draw('one')             # <<<<<<<<<<<<<<
  *         draw('two three four five |||', end_line=False)
@@ -54320,7 +54320,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__48);
 
   /* "smelly_tests/screen.py":329
- * 
+ *
  *         s = self.create_screen()
  *         draw('a')             # <<<<<<<<<<<<<<
  *         x_before = s.cursor.x
@@ -54331,7 +54331,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__50);
 
   /* "smelly_tests/screen.py":344
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):
  *         def prepare_screen(content=()):             # <<<<<<<<<<<<<<
  *             ans = self.create_screen(
@@ -54347,7 +54347,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":353
  *             return ans
- * 
+ *
  *         def assert_lines(*lines):             # <<<<<<<<<<<<<<
  *             return self.ae(
  *                 lines, tuple(str(s.line(i)) for i in range(s.lines)))
@@ -54358,7 +54358,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_assert_lines, 353, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 353, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":358
- * 
+ *
  *         # test the reverse scroll function
  *         s = prepare_screen(map(str, range(6)))             # <<<<<<<<<<<<<<
  *         assert_lines('2', '3', '4', '5', '')
@@ -54383,7 +54383,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('2', '3', '4', '5', '')
  *         s.reverse_scroll(2, True)
  *         assert_lines('0', '1', '2', '3', '4')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height increased, width unchanged  pull down lines to fill new space
  */
   __pyx_tuple__58 = PyTuple_Pack(5, __pyx_kp_s_0, __pyx_kp_s_1, __pyx_kp_s_2, __pyx_kp_s_3, __pyx_kp_s_4); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 361, __pyx_L1_error)
@@ -54395,7 +54395,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.resize(7, s.columns)
  *         assert_lines('0', '1', '2', '3', '4', '5', '')             # <<<<<<<<<<<<<<
  *         self.ae(dist_from_bottom, s.lines - s.cursor.y)
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(7, __pyx_kp_s_0, __pyx_kp_s_1, __pyx_kp_s_2, __pyx_kp_s_3, __pyx_kp_s_4, __pyx_kp_s_5, __pyx_kp_s__18); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 369, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
@@ -54417,7 +54417,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(7, 12)             # <<<<<<<<<<<<<<
  *         assert_lines('0', '1', '2', '333333333333', '333', '', '')
- * 
+ *
  */
   __pyx_tuple__61 = PyTuple_Pack(2, __pyx_int_7, __pyx_int_12); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 375, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
@@ -54427,7 +54427,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(7, 12)
  *         assert_lines('0', '1', '2', '333333333333', '333', '', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height increased, width decreased  rewrap, pull down if possible
  */
   __pyx_tuple__62 = PyTuple_Pack(7, __pyx_kp_s_0, __pyx_kp_s_1, __pyx_kp_s_2, __pyx_kp_s_333333333333, __pyx_kp_s_333, __pyx_kp_s__18, __pyx_kp_s__18); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 376, __pyx_L1_error)
@@ -54450,7 +54450,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('0', '1', '2', '33333', '')
  *         s.resize(6, 4)             # <<<<<<<<<<<<<<
  *         assert_lines('0', '1', '2', '3333', '3', '')
- * 
+ *
  */
   __pyx_tuple__64 = PyTuple_Pack(2, __pyx_int_6, __pyx_int_4); if (unlikely(!__pyx_tuple__64)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__64);
@@ -54460,7 +54460,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('0', '1', '2', '33333', '')
  *         s.resize(6, 4)
  *         assert_lines('0', '1', '2', '3333', '3', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height unchanged, width increased  rewrap, pull down if possible
  */
   __pyx_tuple__65 = PyTuple_Pack(6, __pyx_kp_s_0, __pyx_kp_s_1, __pyx_kp_s_2, __pyx_kp_s_3333, __pyx_kp_s_3, __pyx_kp_s__18); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 382, __pyx_L1_error)
@@ -54471,7 +54471,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(s.lines, 12)
  *         assert_lines('1', '2', '333333333333', '333', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height decreased, width increased  rewrap, pull down if possible
  */
   __pyx_tuple__66 = PyTuple_Pack(5, __pyx_kp_s_1, __pyx_kp_s_2, __pyx_kp_s_333333333333, __pyx_kp_s_333, __pyx_kp_s__18); if (unlikely(!__pyx_tuple__66)) __PYX_ERR(0, 388, __pyx_L1_error)
@@ -54483,7 +54483,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(4, 12)             # <<<<<<<<<<<<<<
  *         assert_lines('2', '333333333333', '333', '')
- * 
+ *
  */
   __pyx_tuple__67 = PyTuple_Pack(2, __pyx_int_4, __pyx_int_12); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(0, 393, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__67);
@@ -54493,7 +54493,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('2', '33333', '33333', '33333', '')
  *         s.resize(4, 12)
  *         assert_lines('2', '333333333333', '333', '')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Height increased with large continued text
  */
   __pyx_tuple__68 = PyTuple_Pack(4, __pyx_kp_s_2, __pyx_kp_s_333333333333, __pyx_kp_s_333, __pyx_kp_s__18); if (unlikely(!__pyx_tuple__68)) __PYX_ERR(0, 394, __pyx_L1_error)
@@ -54515,7 +54515,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
  *         s.resize(s.lines + 2, s.columns)
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_tab_stops(self):
  */
   __pyx_tuple__71 = PyTuple_Pack(7, __pyx_n_s_xxxxx, __pyx_n_s_xxxxx, __pyx_n_s_xxxxx, __pyx_n_s_xxxxx, __pyx_n_s_xxxxx, __pyx_n_s_abcde, __pyx_kp_s__69); if (unlikely(!__pyx_tuple__71)) __PYX_ERR(0, 404, __pyx_L1_error)
@@ -54557,16 +54557,16 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":431
  *         s = self.create_screen(cols=80, lines=24)
- * 
+ *
  *         def nl():             # <<<<<<<<<<<<<<
  *             s.carriage_return(), s.linefeed()
- * 
+ *
  */
   __pyx_codeobj__77 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_nl, 431, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__77)) __PYX_ERR(0, 431, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":434
  *             s.carriage_return(), s.linefeed()
- * 
+ *
  *         for deccolm in (False, True):             # <<<<<<<<<<<<<<
  *             if deccolm:
  *                 s.resize(24, 132)
@@ -54667,7 +54667,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             s.draw(str(i) * s.columns)
  *         s.start_selection(0, 0)
  *         s.update_selection(4, 4)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def ts(*args):
  */
   __pyx_tuple__88 = PyTuple_Pack(2, __pyx_int_4, __pyx_int_4); if (unlikely(!__pyx_tuple__88)) __PYX_ERR(0, 560, __pyx_L1_error)
@@ -54676,10 +54676,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":562
  *         s.update_selection(4, 4)
- * 
+ *
  *         def ts(*args):             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection(*args))
- * 
+ *
  */
   __pyx_tuple__89 = PyTuple_Pack(1, __pyx_n_s_args); if (unlikely(!__pyx_tuple__89)) __PYX_ERR(0, 562, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__89);
@@ -54687,7 +54687,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__90 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__89, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_ts, 562, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__90)) __PYX_ERR(0, 562, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":566
- * 
+ *
  *         expected = ''.join(
  *             ('55555', '\n66666', '\n77777', '\n88888', '\n99999'))             # <<<<<<<<<<<<<<
  *         self.ae(ts(), expected)
@@ -54790,7 +54790,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             ('a\x1b[32mb\x1b[39mc  ', 'xy', '\x1b[m'))
  *         self.ae(s.text_for_selection(True, True),             # <<<<<<<<<<<<<<
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
- * 
+ *
  */
   __pyx_tuple__102 = PyTuple_Pack(2, Py_True, Py_True); if (unlikely(!__pyx_tuple__102)) __PYX_ERR(0, 594, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__102);
@@ -54800,7 +54800,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             ('a\x1b[32mb\x1b[39mc  ', 'xy', '\x1b[m'))
  *         self.ae(s.text_for_selection(True, True),
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_soft_hyphen(self):
  */
   __pyx_tuple__103 = PyTuple_Pack(3, __pyx_kp_s_a_32mb_39mc_2, __pyx_n_s_xy, __pyx_kp_s_m); if (unlikely(!__pyx_tuple__103)) __PYX_ERR(0, 595, __pyx_L1_error)
@@ -54812,7 +54812,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.start_selection(0, 0)
  *         s.update_selection(2, 0)             # <<<<<<<<<<<<<<
  *         self.ae(s.text_for_selection(), ('a\u00adb',))
- * 
+ *
  */
   __pyx_tuple__104 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_0); if (unlikely(!__pyx_tuple__104)) __PYX_ERR(0, 602, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__104);
@@ -54822,7 +54822,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.start_selection(0, 0)
  *         s.update_selection(2, 0)
  *         self.ae(s.text_for_selection(), ('a\u00adb',))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_variation_selectors(self):
  */
   __pyx_tuple__105 = PyTuple_Pack(1, __pyx_kp_s_a_u00adb); if (unlikely(!__pyx_tuple__105)) __PYX_ERR(0, 603, __pyx_L1_error)
@@ -54831,7 +54831,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":638
  *             '\x1b[m\x1b[31m11\x1b[m\x1b[32m22\x1b[m\x1b[33m33\x1b[m\x1b[34m44\x1b[m\x1b[m\x1b[35m55\x1b[m\x1b[36m66')
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -54857,19 +54857,19 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":705
  *                                'scrollback_pager_history_size': hsz})
- * 
+ *
  *         def contents():             # <<<<<<<<<<<<<<
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  */
   __pyx_codeobj__115 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_contents, 705, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__115)) __PYX_ERR(0, 705, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":708
  *             return s.historybuf.pagerhist_as_text()
- * 
+ *
  *         def line(i):             # <<<<<<<<<<<<<<
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  */
   __pyx_tuple__116 = PyTuple_Pack(1, __pyx_n_s_i); if (unlikely(!__pyx_tuple__116)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__116);
@@ -54878,10 +54878,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":711
  *             q.append('\x1b[m' + f'{i}' * s.columns + '\r')
- * 
+ *
  *         def w(x):             # <<<<<<<<<<<<<<
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  */
   __pyx_tuple__118 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__118)) __PYX_ERR(0, 711, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__118);
@@ -54890,7 +54890,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":714
  *             s.historybuf.pagerhist_write(x)
- * 
+ *
  *         def test():             # <<<<<<<<<<<<<<
  *             expected = ''.join(q)
  *             maxlen = hsz
@@ -54901,11 +54901,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__121 = (PyObject*)__Pyx_PyCode_New(0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__120, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_test, 714, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__121)) __PYX_ERR(0, 714, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":750
- * 
+ *
  *     def test_user_marking(self):
  *         def cells(*a, y=0, mark=3):             # <<<<<<<<<<<<<<
  *             return [(x, y, mark) for x in a]
- * 
+ *
  */
   __pyx_tuple__123 = PyTuple_Pack(4, __pyx_n_s_y, __pyx_n_s_mark, __pyx_n_s_a, __pyx_n_s_x); if (unlikely(!__pyx_tuple__123)) __PYX_ERR(0, 750, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__123);
@@ -54936,7 +54936,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":762
  *         self.ae(s.marked_cells(), [])
- * 
+ *
  *         def mark_x(text):             # <<<<<<<<<<<<<<
  *             col = 0
  *             for i, c in enumerate(text):
@@ -54947,7 +54947,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__128 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__127, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_mark_x, 762, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__128)) __PYX_ERR(0, 762, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":770
- * 
+ *
  *         s.set_marker(marker_from_function(mark_x))
  *         self.ae(s.marked_cells(), [(0, 1, 1), (2, 1, 2), (4, 1, 3)])             # <<<<<<<<<<<<<<
  *         s = self.create_screen(lines=5, scrollback=10)
@@ -55044,7 +55044,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.draw('x')
  *         s.set_marker(marker_from_function(mark_x))
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_hyperlinks(self):
  */
   __pyx_tuple__140 = PyTuple_Pack(3, __pyx_int_2, __pyx_int_0, __pyx_int_1); if (unlikely(!__pyx_tuple__140)) __PYX_ERR(0, 807, __pyx_L1_error)
@@ -55056,7 +55056,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":813
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
- * 
+ *
  *         def set_link(url=None, id=None):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
  *                 id or '', url or '').encode('utf-8'))
@@ -55153,7 +55153,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         s.draw('a')
  *         set_link()
  *         self.ae([('x:url-a', 1), ('y:url-a', 2)], s.hyperlinks_as_list())             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_tuple__153 = PyTuple_Pack(2, __pyx_kp_s_x_url_a, __pyx_int_1); if (unlikely(!__pyx_tuple__153)) __PYX_ERR(0, 852, __pyx_L1_error)
@@ -55164,7 +55164,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__154);
 
   /* "smelly_tests/screen.py":865
- * 
+ *
  *         s = self.create_screen()
  *         set_link('1'), s.draw('1')             # <<<<<<<<<<<<<<
  *         set_link('2'), s.draw('2')
@@ -55240,7 +55240,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae([(':1', 1), (':3', 2)], s.hyperlinks_as_list())
  *         set_link('4'), s.draw('4')             # <<<<<<<<<<<<<<
  *         self.ae([(':1', 1), (':3', 2), (':4', 3)], s.hyperlinks_as_list())
- * 
+ *
  */
   __pyx_tuple__164 = PyTuple_Pack(1, __pyx_kp_s_4); if (unlikely(!__pyx_tuple__164)) __PYX_ERR(0, 876, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__164);
@@ -55250,7 +55250,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae([(':1', 1), (':3', 2)], s.hyperlinks_as_list())
  *         set_link('4'), s.draw('4')
  *         self.ae([(':1', 1), (':3', 2), (':4', 3)], s.hyperlinks_as_list())             # <<<<<<<<<<<<<<
- * 
+ *
  *         s = self.create_screen()
  */
   __pyx_tuple__165 = PyTuple_Pack(2, __pyx_kp_s_4_2, __pyx_int_3); if (unlikely(!__pyx_tuple__165)) __PYX_ERR(0, 877, __pyx_L1_error)
@@ -55303,10 +55303,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":942
  *         c = s.callbacks
- * 
+ *
  *         def send(what: str):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  */
   __pyx_tuple__171 = PyTuple_Pack(1, __pyx_n_s_what); if (unlikely(!__pyx_tuple__171)) __PYX_ERR(0, 942, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__171);
@@ -55315,7 +55315,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":945
  *             return parse_bytes(s, f'\033]52;p;{what}\a'.encode('ascii'))
- * 
+ *
  *         def t(q, use_pending_mode, *expected):             # <<<<<<<<<<<<<<
  *             c.clear()
  *             if use_pending_mode:
@@ -55326,7 +55326,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__174 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__173, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_t, 945, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__174)) __PYX_ERR(0, 945, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":956
- * 
+ *
  *         for use_pending_mode in (False, True):
  *             t('XYZ', use_pending_mode, ('p;XYZ', False))             # <<<<<<<<<<<<<<
  *             t('a' * 8192, use_pending_mode,
@@ -55341,7 +55341,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *               ('p;' + 'a' * (8192 - 6), True), (';' + 'a' * 6, False))
  *             t('', use_pending_mode, ('p;', False))             # <<<<<<<<<<<<<<
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  */
   __pyx_tuple__177 = PyTuple_Pack(2, __pyx_kp_s_p, Py_False); if (unlikely(!__pyx_tuple__177)) __PYX_ERR(0, 959, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__177);
@@ -55351,7 +55351,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *               ('p;' + 'a' * (8192 - 6), True), (';' + 'a' * 6, False))
  *             t('', use_pending_mode, ('p;', False))
  *             t('!', use_pending_mode, ('p;!', False))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_key_encoding_flags_stack(self):
  */
   __pyx_tuple__179 = PyTuple_Pack(2, __pyx_kp_s_p_2, Py_False); if (unlikely(!__pyx_tuple__179)) __PYX_ERR(0, 960, __pyx_L1_error)
@@ -55360,7 +55360,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":966
  *         c = s.callbacks
- * 
+ *
  *         def w(code, p1='', p2=''):             # <<<<<<<<<<<<<<
  *             p = f'{p1}'
  *             if p2:
@@ -55375,7 +55375,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":972
  *             return parse_bytes(s, f'\033[{code}{p}u'.encode('ascii'))
- * 
+ *
  *         def ac(flags):             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033[?u')
  *             self.ae(c.wtcbuf, f'\033[?{flags}u'.encode('ascii'))
@@ -55386,7 +55386,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__186 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__185, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_ac, 972, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__186)) __PYX_ERR(0, 972, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":978
- * 
+ *
  *         ac(0)
  *         w('=', 0b1001)             # <<<<<<<<<<<<<<
  *         ac(0b1001)
@@ -55398,7 +55398,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":987
  *         ac(0)
- * 
+ *
  *         w('>', 0b0011)             # <<<<<<<<<<<<<<
  *         ac(0b0011)
  *         w('=', 0b1111)
@@ -55442,10 +55442,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1009
  *         c = s.callbacks
- * 
+ *
  *         def w(code):             # <<<<<<<<<<<<<<
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  */
   __pyx_tuple__194 = PyTuple_Pack(1, __pyx_n_s_code); if (unlikely(!__pyx_tuple__194)) __PYX_ERR(0, 1009, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__194);
@@ -55454,7 +55454,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1012
  *             return parse_bytes(s, ('\033[' + code).encode('ascii'))
- * 
+ *
  *         def ac(idx, count):             # <<<<<<<<<<<<<<
  *             self.ae(c.wtcbuf, f'\033[{idx};{count}#Q'.encode('ascii'))
  *             c.clear()
@@ -55466,7 +55466,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1036
  *         s = self.create_screen(cols=30)
- * 
+ *
  *         def ae(expected, x=3, y=0):             # <<<<<<<<<<<<<<
  *             s.detect_url(x, y)
  *             url = ''.join(s.text_for_marked_url())
@@ -55481,7 +55481,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1041
  *             self.assertEqual(expected, url)
- * 
+ *
  *         def t(url, x=0, y=0, before='', after=''):             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.cursor.x = x
@@ -55496,7 +55496,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1048
  *             ae(url, x=x + 1 + len(before), y=y)
- * 
+ *
  *         t('http://moo.com')             # <<<<<<<<<<<<<<
  *         t('http://moo.com/something?else=+&what-')
  *         for st, e in '() {} [] <>'.split():
@@ -55506,7 +55506,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__204);
 
   /* "smelly_tests/screen.py":1049
- * 
+ *
  *         t('http://moo.com')
  *         t('http://moo.com/something?else=+&what-')             # <<<<<<<<<<<<<<
  *         for st, e in '() {} [] <>'.split():
@@ -55518,25 +55518,25 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1061
  *         s = self.create_screen()
- * 
+ *
  *         def mark_prompt():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  */
   __pyx_codeobj__210 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_mark_prompt, 1061, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__210)) __PYX_ERR(0, 1061, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":1064
  *             parse_bytes(s, b'\033]133;A\007')
- * 
+ *
  *         def mark_output():             # <<<<<<<<<<<<<<
  *             parse_bytes(s, b'\033]133;C\007')
- * 
+ *
  */
   __pyx_codeobj__211 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_screen_py, __pyx_n_s_mark_output, 1064, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__211)) __PYX_ERR(0, 1064, __pyx_L1_error)
 
   /* "smelly_tests/screen.py":1094
  *         self.ae(str(s.visual_line(0)), '$ 1')
- * 
+ *
  *         def lco(as_ansi=False, which=0):             # <<<<<<<<<<<<<<
  *             a = []
  *             if s.cmd_output(which, a.append, as_ansi):
@@ -55551,7 +55551,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1102
  *             return ''.join(a)
- * 
+ *
  *         def fco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(1, a.append)
@@ -55563,7 +55563,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1107
  *             return ''.join(a)
- * 
+ *
  *         def lvco():             # <<<<<<<<<<<<<<
  *             a = []
  *             s.cmd_output(2, a.append)
@@ -55575,10 +55575,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1128
  *         self.ae(lco(as_ansi=True), '\x1b[m\x1b]133;C\x1b\\abcd\n\x1b[m12')
- * 
+ *
  *         def draw_prompt(x):             # <<<<<<<<<<<<<<
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  */
   __pyx_tuple__219 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__219)) __PYX_ERR(0, 1128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__219);
@@ -55587,7 +55587,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1131
  *             mark_prompt(), s.draw(f'$ {x}'), s.carriage_return(), s.index()
- * 
+ *
  *         def draw_output(n, x='', m=True):             # <<<<<<<<<<<<<<
  *             if m:
  *                 mark_output()
@@ -55615,7 +55615,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         draw_prompt('0'), draw_output(3)
  *         draw_prompt('1')
  *         draw_prompt('2'), draw_output(2, 'x')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # last cmd output
  */
   __pyx_tuple__225 = PyTuple_Pack(2, __pyx_int_2, __pyx_n_s_x); if (unlikely(!__pyx_tuple__225)) __PYX_ERR(0, 1141, __pyx_L1_error)
@@ -55660,7 +55660,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         draw_prompt('p1')
  *         draw_output(30)             # <<<<<<<<<<<<<<
  *         self.ae(tuple(map(int, lco().split())), tuple(range(0, 30)))
- * 
+ *
  */
   __pyx_tuple__229 = PyTuple_Pack(1, __pyx_int_30); if (unlikely(!__pyx_tuple__229)) __PYX_ERR(0, 1191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__229);
@@ -55670,7 +55670,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         draw_prompt('p1')
  *         draw_output(30)
  *         self.ae(tuple(map(int, lco().split())), tuple(range(0, 30)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # last non empty command output
  */
   __pyx_tuple__230 = PyTuple_Pack(2, __pyx_int_0, __pyx_int_30); if (unlikely(!__pyx_tuple__230)) __PYX_ERR(0, 1192, __pyx_L1_error)
@@ -55689,11 +55689,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__231);
 
   /* "smelly_tests/screen.py":12
- * 
+ *
  * class TestScreen(BaseTest):
  *     def test_draw_fast(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_tuple__232 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_s); if (unlikely(!__pyx_tuple__232)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__232);
@@ -55702,7 +55702,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":51
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_draw_char(self):             # <<<<<<<<<<<<<<
  *         # Test in line-wrap, non-insert mode
  *         s = self.create_screen()
@@ -55714,7 +55714,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":93
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_rep(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a')
@@ -55726,7 +55726,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":104
  *         self.ae(str(s.line(1)), ' ' * 4)
- * 
+ *
  *     def test_emoji_skin_tone_modifiers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         q = chr(0x1F469) + chr(0x1F3FD)
@@ -55738,7 +55738,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":111
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_regional_indicators(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         flag = '\U0001f1ee\U0001f1f3'
@@ -55750,7 +55750,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":122
  *         self.ae(s.cursor.x, 4)
- * 
+ *
  *     def test_zwj(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=20)
  *         q = '\U0001f468\u200d\U0001f469\u200d\U0001f467\u200d\U0001f466'
@@ -55762,10 +55762,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":135
  *             self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_char_manipulation(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_tuple__244 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_init, __pyx_n_s_init, __pyx_n_s_c); if (unlikely(!__pyx_tuple__244)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__244);
@@ -55774,10 +55774,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":202
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  *     def test_erase_in_screen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_tuple__246 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_init, __pyx_n_s_init, __pyx_n_s_all_lines, __pyx_n_s_all_lines, __pyx_n_s_continuations, __pyx_n_s_continuations); if (unlikely(!__pyx_tuple__246)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__246);
@@ -55786,7 +55786,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":242
  *         self.assertFalse(s.line(0).cursor_from(1).bold)
- * 
+ *
  *     def test_cursor_movement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('12345' * 5)
@@ -55798,7 +55798,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":272
  *             self.ae(str(s.line(i)), '12345')
- * 
+ *
  *     def test_backspace_wide_characters(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('')
@@ -55810,7 +55810,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":281
  *         self.ae(s.cursor.x, 1)
- * 
+ *
  *     def test_resize(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(scrollback=6)
  *         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
@@ -55822,7 +55822,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":309
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
- * 
+ *
  *     def test_cursor_after_resize(self):             # <<<<<<<<<<<<<<
  *         def draw(text, end_line=True):
  *             s.draw(text)
@@ -55834,7 +55834,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":343
  *         self.assertEqual(s.cursor.x, 0)
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):             # <<<<<<<<<<<<<<
  *         def prepare_screen(content=()):
  *             ans = self.create_screen(
@@ -55846,7 +55846,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":406
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
- * 
+ *
  *     def test_tab_stops(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=2)
@@ -55858,7 +55858,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":427
  *         self.ae(str(s.line(0)), '\t*' * 13)
- * 
+ *
  *     def test_margins(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=24)
@@ -55870,7 +55870,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":489
  *         self.ae(s.cursor.y, 8)
- * 
+ *
  *     def test_sgr(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.select_graphic_rendition(0, 1, 37, 42)
@@ -55882,7 +55882,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":508
  *         self.ae(c.fg, (1 << 24) | (2 << 16) | (3 << 8) | 2)
- * 
+ *
  *     def test_cursor_hidden(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.toggle_alt_screen()
@@ -55894,7 +55894,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":515
  *         self.assertFalse(s.cursor_visible)
- * 
+ *
  *     def test_dirty_lines(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.assertFalse(s.linebuf.dirty_lines())
@@ -55906,7 +55906,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":553
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  *     def test_selection_as_text(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         for i in range(2 * s.lines):
@@ -55918,7 +55918,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":597
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
- * 
+ *
  *     def test_soft_hyphen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a\u00adb')
@@ -55930,7 +55930,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":605
  *         self.ae(s.text_for_selection(), ('a\u00adb',))
- * 
+ *
  *     def test_variation_selectors(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('\U0001f610')
@@ -55942,10 +55942,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":619
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_serialize(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
   __pyx_tuple__274 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_as_text, __pyx_n_s_s, __pyx_n_s_i, __pyx_n_s_set_link, __pyx_n_s_set_link); if (unlikely(!__pyx_tuple__274)) __PYX_ERR(0, 619, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__274);
@@ -55954,10 +55954,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":662
  *             '\x1b[ma\x1b]8;;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
- * 
+ *
  *     def test_wrapping_serialization(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
   __pyx_tuple__276 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_as_text, __pyx_n_s_s); if (unlikely(!__pyx_tuple__276)) __PYX_ERR(0, 662, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__276);
@@ -55966,7 +55966,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":700
  *         self.ae(as_text(s), 'a')
- * 
+ *
  *     def test_pagerhist(self):             # <<<<<<<<<<<<<<
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
@@ -55978,7 +55978,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":749
  *         self.ae(contents(), 'abcde')
- * 
+ *
  *     def test_user_marking(self):             # <<<<<<<<<<<<<<
  *         def cells(*a, y=0, mark=3):
  *             return [(x, y, mark) for x in a]
@@ -55990,7 +55990,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":809
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])
- * 
+ *
  *     def test_hyperlinks(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
@@ -56002,7 +56002,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":905
  *         self.ae(s.current_url_text(), 'Z Z')
- * 
+ *
  *     def test_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(0, 5)
@@ -56014,7 +56014,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":916
  *         self.ae(str(s.historybuf), '3\n2\n1\n0')
- * 
+ *
  *     def test_top_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 6)
@@ -56026,7 +56026,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":927
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_top_and_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 5)
@@ -56038,7 +56038,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":938
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_osc_52(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -56050,7 +56050,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":962
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  *     def test_key_encoding_flags_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -56062,7 +56062,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1005
  *         w('<'), ac(14), w('<'), ac(13)
- * 
+ *
  *     def test_color_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -56074,10 +56074,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1033
  *         ac(9, 10)
- * 
+ *
  *     def test_detect_url(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=30)
- * 
+ *
  */
   __pyx_tuple__296 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_ae, __pyx_n_s_ae, __pyx_n_s_t, __pyx_n_s_t, __pyx_n_s_st, __pyx_n_s_e, __pyx_n_s_trailer); if (unlikely(!__pyx_tuple__296)) __PYX_ERR(0, 1033, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__296);
@@ -56086,10 +56086,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/screen.py":1058
  *         t('http://moo.com', x=s.columns - 9)
- * 
+ *
  *     def test_prompt_marking(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_tuple__298 = PyTuple_Pack(17, __pyx_n_s_self, __pyx_n_s_s, __pyx_n_s_mark_prompt, __pyx_n_s_mark_prompt, __pyx_n_s_mark_output, __pyx_n_s_mark_output, __pyx_n_s_i, __pyx_n_s_lco, __pyx_n_s_lco, __pyx_n_s_fco, __pyx_n_s_fco, __pyx_n_s_lvco, __pyx_n_s_lvco, __pyx_n_s_draw_prompt, __pyx_n_s_draw_prompt, __pyx_n_s_draw_output, __pyx_n_s_draw_output); if (unlikely(!__pyx_tuple__298)) __PYX_ERR(0, 1058, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__298);
@@ -56627,7 +56627,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from smelly.fast_data_types import DECAWM, DECCOLM, DECOM, IRM, Cursor, parse_bytes             # <<<<<<<<<<<<<<
  * from smelly.marks import marker_from_function, marker_from_regex
  * from smelly.window import pagerhist
@@ -56682,11 +56682,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/screen.py":5
- * 
+ *
  * from smelly.fast_data_types import DECAWM, DECCOLM, DECOM, IRM, Cursor, parse_bytes
  * from smelly.marks import marker_from_function, marker_from_regex             # <<<<<<<<<<<<<<
  * from smelly.window import pagerhist
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -56713,7 +56713,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.fast_data_types import DECAWM, DECCOLM, DECOM, IRM, Cursor, parse_bytes
  * from smelly.marks import marker_from_function, marker_from_regex
  * from smelly.window import pagerhist             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -56732,10 +56732,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":8
  * from smelly.window import pagerhist
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -56752,8 +56752,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/screen.py":11
- * 
- * 
+ *
+ *
  * class TestScreen(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_draw_fast(self):
  *         s = self.create_screen()
@@ -56771,11 +56771,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/screen.py":12
- * 
+ *
  * class TestScreen(BaseTest):
  *     def test_draw_fast(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_1test_draw_fast, 0, __pyx_n_s_TestScreen_test_draw_fast, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__233)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -56784,7 +56784,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":51
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_draw_char(self):             # <<<<<<<<<<<<<<
  *         # Test in line-wrap, non-insert mode
  *         s = self.create_screen()
@@ -56796,7 +56796,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":93
  *         self.ae((s.cursor.x, s.cursor.y), (2, 4))
- * 
+ *
  *     def test_rep(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a')
@@ -56808,7 +56808,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":104
  *         self.ae(str(s.line(1)), ' ' * 4)
- * 
+ *
  *     def test_emoji_skin_tone_modifiers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         q = chr(0x1F469) + chr(0x1F3FD)
@@ -56820,7 +56820,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":111
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_regional_indicators(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         flag = '\U0001f1ee\U0001f1f3'
@@ -56832,7 +56832,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":122
  *         self.ae(s.cursor.x, 4)
- * 
+ *
  *     def test_zwj(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=20)
  *         q = '\U0001f468\u200d\U0001f469\u200d\U0001f467\u200d\U0001f466'
@@ -56844,10 +56844,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":135
  *             self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_char_manipulation(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_13test_char_manipulation, 0, __pyx_n_s_TestScreen_test_char_manipulatio_3, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__245)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -56856,10 +56856,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":202
  *             map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
- * 
+ *
  *     def test_erase_in_screen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_15test_erase_in_screen, 0, __pyx_n_s_TestScreen_test_erase_in_screen_6, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__247)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 202, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -56868,7 +56868,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":242
  *         self.assertFalse(s.line(0).cursor_from(1).bold)
- * 
+ *
  *     def test_cursor_movement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('12345' * 5)
@@ -56880,7 +56880,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":272
  *             self.ae(str(s.line(i)), '12345')
- * 
+ *
  *     def test_backspace_wide_characters(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('')
@@ -56892,7 +56892,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":281
  *         self.ae(s.cursor.x, 1)
- * 
+ *
  *     def test_resize(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(scrollback=6)
  *         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
@@ -56904,7 +56904,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":309
  *         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
- * 
+ *
  *     def test_cursor_after_resize(self):             # <<<<<<<<<<<<<<
  *         def draw(text, end_line=True):
  *             s.draw(text)
@@ -56916,7 +56916,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":343
  *         self.assertEqual(s.cursor.x, 0)
- * 
+ *
  *     def test_scrollback_fill_after_resize(self):             # <<<<<<<<<<<<<<
  *         def prepare_screen(content=()):
  *             ans = self.create_screen(
@@ -56928,7 +56928,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":406
  *         assert_lines('xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'xxxxx', 'abcde', '>')
- * 
+ *
  *     def test_tab_stops(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=2)
@@ -56940,7 +56940,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":427
  *         self.ae(str(s.line(0)), '\t*' * 13)
- * 
+ *
  *     def test_margins(self):             # <<<<<<<<<<<<<<
  *         # Taken from vttest/main.c
  *         s = self.create_screen(cols=80, lines=24)
@@ -56952,7 +56952,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":489
  *         self.ae(s.cursor.y, 8)
- * 
+ *
  *     def test_sgr(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.select_graphic_rendition(0, 1, 37, 42)
@@ -56964,7 +56964,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":508
  *         self.ae(c.fg, (1 << 24) | (2 << 16) | (3 << 8) | 2)
- * 
+ *
  *     def test_cursor_hidden(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.toggle_alt_screen()
@@ -56976,7 +56976,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":515
  *         self.assertFalse(s.cursor_visible)
- * 
+ *
  *     def test_dirty_lines(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.assertFalse(s.linebuf.dirty_lines())
@@ -56988,7 +56988,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":553
  *         self.ae(s.linebuf.dirty_lines(), [0, 1, 2])
- * 
+ *
  *     def test_selection_as_text(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         for i in range(2 * s.lines):
@@ -57000,7 +57000,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":597
  *                 ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
- * 
+ *
  *     def test_soft_hyphen(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('a\u00adb')
@@ -57012,7 +57012,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":605
  *         self.ae(s.text_for_selection(), ('a\u00adb',))
- * 
+ *
  *     def test_variation_selectors(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         s.draw('\U0001f610')
@@ -57024,10 +57024,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":619
  *         self.ae(s.cursor.x, 2)
- * 
+ *
  *     def test_serialize(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_43test_serialize, 0, __pyx_n_s_TestScreen_test_serialize, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__275)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 619, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -57036,10 +57036,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":662
  *             '\x1b[ma\x1b]8;;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
- * 
+ *
  *     def test_wrapping_serialization(self):             # <<<<<<<<<<<<<<
  *         from smelly.window import as_text
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_45test_wrapping_serialization, 0, __pyx_n_s_TestScreen_test_wrapping_seriali, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__277)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 662, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -57048,7 +57048,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":700
  *         self.ae(as_text(s), 'a')
- * 
+ *
  *     def test_pagerhist(self):             # <<<<<<<<<<<<<<
  *         hsz = 8
  *         s = self.create_screen(cols=2, lines=2, scrollback=2, options={
@@ -57060,7 +57060,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":749
  *         self.ae(contents(), 'abcde')
- * 
+ *
  *     def test_user_marking(self):             # <<<<<<<<<<<<<<
  *         def cells(*a, y=0, mark=3):
  *             return [(x, y, mark) for x in a]
@@ -57072,7 +57072,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":809
  *         self.ae(s.marked_cells(), [(2, 0, 1), (4, 0, 2)])
- * 
+ *
  *     def test_hyperlinks(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
@@ -57084,7 +57084,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":905
  *         self.ae(s.current_url_text(), 'Z Z')
- * 
+ *
  *     def test_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(0, 5)
@@ -57096,7 +57096,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":916
  *         self.ae(str(s.historybuf), '3\n2\n1\n0')
- * 
+ *
  *     def test_top_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 6)
@@ -57108,7 +57108,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":927
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_top_and_bottom_margin(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=80, lines=6, scrollback=4)
  *         s.set_margins(2, 5)
@@ -57120,7 +57120,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":938
  *         self.ae(str(s.historybuf), '')
- * 
+ *
  *     def test_osc_52(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -57132,7 +57132,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":962
  *             t('!', use_pending_mode, ('p;!', False))
- * 
+ *
  *     def test_key_encoding_flags_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -57144,7 +57144,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":1005
  *         w('<'), ac(14), w('<'), ac(13)
- * 
+ *
  *     def test_color_stack(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         c = s.callbacks
@@ -57156,10 +57156,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":1033
  *         ac(9, 10)
- * 
+ *
  *     def test_detect_url(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(cols=30)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_65test_detect_url, 0, __pyx_n_s_TestScreen_test_detect_url, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__297)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1033, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -57168,10 +57168,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/screen.py":1058
  *         t('http://moo.com', x=s.columns - 9)
- * 
+ *
  *     def test_prompt_marking(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6screen_10TestScreen_67test_prompt_marking, 0, __pyx_n_s_TestScreen_test_prompt_marking, NULL, __pyx_n_s_smelly_tests_screen, __pyx_d, ((PyObject *)__pyx_codeobj__299)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1058, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -57179,8 +57179,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/screen.py":11
- * 
- * 
+ *
+ *
  * class TestScreen(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_draw_fast(self):
  *         s = self.create_screen()
@@ -57196,7 +57196,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/screen.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -58560,8 +58560,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -58684,8 +58684,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -58990,8 +58990,8 @@ static PyObject* __Pyx_PyInt_AddCObj(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -59124,8 +59124,8 @@ static PyObject* __Pyx_PyInt_RemainderObjC(PyObject *op1, PyObject *op2, CYTHON_
                 llx += ((llx != 0) & ((llx ^ llb) < 0)) * llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceRemainder : PyNumber_Remainder)(op1, op2);
@@ -59778,8 +59778,8 @@ static PyObject* __Pyx_PyInt_SubtractCObj(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {

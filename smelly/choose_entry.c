@@ -969,8 +969,8 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_6smelly_12choose_entry___pyx_scope_struct__mark;
 
 /* "smelly/choose_entry.py":11
- * 
- * 
+ *
+ *
  * def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],             # <<<<<<<<<<<<<<
  *          extra_cli_args: List[str],
  *          *a: Any) -> Generator[MarkType, None, None]:
@@ -1649,8 +1649,8 @@ static PyObject *__pyx_tuple__9;
 static PyObject *__pyx_gb_6smelly_12choose_entry_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/choose_entry.py":11
- * 
- * 
+ *
+ *
  * def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],             # <<<<<<<<<<<<<<
  *          extra_cli_args: List[str],
  *          *a: Any) -> Generator[MarkType, None, None]:
@@ -1999,11 +1999,11 @@ static PyObject *__pyx_gb_6smelly_12choose_entry_2generator(__pyx_CoroutineObjec
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_2);
@@ -2315,8 +2315,8 @@ static PyObject *__pyx_gb_6smelly_12choose_entry_2generator(__pyx_CoroutineObjec
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/choose_entry.py":11
- * 
- * 
+ *
+ *
  * def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],             # <<<<<<<<<<<<<<
  *          extra_cli_args: List[str],
  *          *a: Any) -> Generator[MarkType, None, None]:
@@ -2605,8 +2605,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
 
   /* "smelly/choose_entry.py":11
- * 
- * 
+ *
+ *
  * def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],             # <<<<<<<<<<<<<<
  *          extra_cli_args: List[str],
  *          *a: Any) -> Generator[MarkType, None, None]:
@@ -2914,10 +2914,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/choose_entry.py":4
  * # License: GPLv3 Copyright: 2019, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import re             # <<<<<<<<<<<<<<
  * from typing import Any, Generator, List, Type
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2925,10 +2925,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/choose_entry.py":5
- * 
+ *
  * import re
  * from typing import Any, Generator, List, Type             # <<<<<<<<<<<<<<
- * 
+ *
  * from .cli_stub import HintsCLIOptions
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2968,10 +2968,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/choose_entry.py":7
  * from typing import Any, Generator, List, Type
- * 
+ *
  * from .cli_stub import HintsCLIOptions             # <<<<<<<<<<<<<<
  * from .typing import MarkType
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2988,11 +2988,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/choose_entry.py":8
- * 
+ *
  * from .cli_stub import HintsCLIOptions
  * from .typing import MarkType             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3009,8 +3009,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/choose_entry.py":11
- * 
- * 
+ *
+ *
  * def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],             # <<<<<<<<<<<<<<
  *          extra_cli_args: List[str],
  *          *a: Any) -> Generator[MarkType, None, None]:
@@ -3034,7 +3034,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/choose_entry.py":12
- * 
+ *
  * def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],
  *          extra_cli_args: List[str],             # <<<<<<<<<<<<<<
  *          *a: Any) -> Generator[MarkType, None, None]:
@@ -3082,8 +3082,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/choose_entry.py":11
- * 
- * 
+ *
+ *
  * def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],             # <<<<<<<<<<<<<<
  *          extra_cli_args: List[str],
  *          *a: Any) -> Generator[MarkType, None, None]:
@@ -3098,7 +3098,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/choose_entry.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2019, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3989,8 +3989,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

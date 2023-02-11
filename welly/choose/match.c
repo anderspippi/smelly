@@ -1507,8 +1507,8 @@ static PyObject *__pyx_codeobj__6;
 /* Late includes */
 
 /* "welly/choose/match.py":9
- * 
- * 
+ *
+ *
  * def match(             # <<<<<<<<<<<<<<
  *     input_data: Union[str, bytes, Iterable[Union[str, bytes]]],
  *     query: str,
@@ -1709,8 +1709,8 @@ static PyObject *__pyx_pw_5welly_6choose_5match_1match(PyObject *__pyx_self, PyO
   __pyx_r = __pyx_pf_5welly_6choose_5match_match(__pyx_self, __pyx_v_input_data, __pyx_v_query, __pyx_v_threads, __pyx_v_positions, __pyx_v_level1, __pyx_v_level2, __pyx_v_level3, __pyx_v_limit, __pyx_v_mark_before, __pyx_v_mark_after, __pyx_v_delimiter);
 
   /* "welly/choose/match.py":9
- * 
- * 
+ *
+ *
  * def match(             # <<<<<<<<<<<<<<
  *     input_data: Union[str, bytes, Iterable[Union[str, bytes]]],
  *     query: str,
@@ -1758,7 +1758,7 @@ static PyObject *__pyx_pf_5welly_6choose_5match_match(CYTHON_UNUSED PyObject *__
  *         idata = [x.encode('utf-8') for x in input_data.split(delimiter)]
  *     elif isinstance(input_data, bytes):
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_input_data); 
+  __pyx_t_1 = PyString_Check(__pyx_v_input_data);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -1871,7 +1871,7 @@ static PyObject *__pyx_pf_5welly_6choose_5match_match(CYTHON_UNUSED PyObject *__
  *         idata = input_data.split(delimiter.encode('utf-8'))
  *     else:
  */
-  __pyx_t_2 = PyBytes_Check(__pyx_v_input_data); 
+  __pyx_t_2 = PyBytes_Check(__pyx_v_input_data);
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
@@ -1966,7 +1966,7 @@ static PyObject *__pyx_pf_5welly_6choose_5match_match(CYTHON_UNUSED PyObject *__
       }
       __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_4);
       __pyx_t_4 = 0;
-      __pyx_t_1 = PyString_Check(__pyx_v_x); 
+      __pyx_t_1 = PyString_Check(__pyx_v_x);
       if ((__pyx_t_1 != 0)) {
         __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_encode); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 27, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
@@ -2232,8 +2232,8 @@ static PyObject *__pyx_pf_5welly_6choose_5match_match(CYTHON_UNUSED PyObject *__
   goto __pyx_L0;
 
   /* "welly/choose/match.py":9
- * 
- * 
+ *
+ *
  * def match(             # <<<<<<<<<<<<<<
  *     input_data: Union[str, bytes, Iterable[Union[str, bytes]]],
  *     query: str,
@@ -2362,8 +2362,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/choose/match.py":9
- * 
- * 
+ *
+ *
  * def match(             # <<<<<<<<<<<<<<
  *     input_data: Union[str, bytes, Iterable[Union[str, bytes]]],
  *     query: str,
@@ -2663,9 +2663,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/match.py":4
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Iterable, List, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import subseq_matcher
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2698,10 +2698,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/choose/match.py":6
  * from typing import Iterable, List, Union
- * 
+ *
  * from . import subseq_matcher             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2718,8 +2718,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/choose/match.py":9
- * 
- * 
+ *
+ *
  * def match(             # <<<<<<<<<<<<<<
  *     input_data: Union[str, bytes, Iterable[Union[str, bytes]]],
  *     query: str,
@@ -2728,7 +2728,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "welly/choose/match.py":10
- * 
+ *
  * def match(
  *     input_data: Union[str, bytes, Iterable[Union[str, bytes]]],             # <<<<<<<<<<<<<<
  *     query: str,
@@ -2808,8 +2808,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "welly/choose/match.py":9
- * 
- * 
+ *
+ *
  * def match(             # <<<<<<<<<<<<<<
  *     input_data: Union[str, bytes, Iterable[Union[str, bytes]]],
  *     query: str,
@@ -2825,7 +2825,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/choose/match.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);

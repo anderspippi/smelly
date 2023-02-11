@@ -1711,7 +1711,7 @@ static PyObject *__pyx_codeobj__23;
 
 /* "welly/ssh/options/types.py":46
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         if options_dict is not None:
  *             null = object()
@@ -1809,7 +1809,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options___init__(CYTHON_U
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "welly/ssh/options/types.py":47
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:
  *         if options_dict is not None:             # <<<<<<<<<<<<<<
  *             null = object()
@@ -1945,7 +1945,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options___init__(CYTHON_U
  *                 val = options_dict.get(key, null)
  *                 if val is not null:             # <<<<<<<<<<<<<<
  *                     setattr(self, key, val)
- * 
+ *
  */
       __pyx_t_2 = (__pyx_v_val != __pyx_v_null);
       __pyx_t_1 = (__pyx_t_2 != 0);
@@ -1955,7 +1955,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options___init__(CYTHON_U
  *                 val = options_dict.get(key, null)
  *                 if val is not null:
  *                     setattr(self, key, val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
         __pyx_t_11 = PyObject_SetAttr(__pyx_v_self, __pyx_v_key, __pyx_v_val); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 52, __pyx_L1_error)
@@ -1965,7 +1965,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options___init__(CYTHON_U
  *                 val = options_dict.get(key, null)
  *                 if val is not null:             # <<<<<<<<<<<<<<
  *                     setattr(self, key, val)
- * 
+ *
  */
       }
 
@@ -1980,7 +1980,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options___init__(CYTHON_U
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "welly/ssh/options/types.py":47
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:
  *         if options_dict is not None:             # <<<<<<<<<<<<<<
  *             null = object()
@@ -1990,7 +1990,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options___init__(CYTHON_U
 
   /* "welly/ssh/options/types.py":46
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         if options_dict is not None:
  *             null = object()
@@ -2017,11 +2017,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options___init__(CYTHON_U
 }
 
 /* "welly/ssh/options/types.py":55
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2051,7 +2051,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_2_fields(CYTHON_U
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:
  *         return option_names             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2062,11 +2062,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_2_fields(CYTHON_U
   goto __pyx_L0;
 
   /* "welly/ssh/options/types.py":55
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
 
   /* function exit code */
@@ -2082,10 +2082,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_2_fields(CYTHON_U
 
 /* "welly/ssh/options/types.py":58
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2113,10 +2113,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_4__iter__(CYTHON_
   __Pyx_RefNannySetupContext("__iter__", 0);
 
   /* "welly/ssh/options/types.py":59
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:
  *         return iter(self._fields)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __len__(self) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2131,10 +2131,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_4__iter__(CYTHON_
 
   /* "welly/ssh/options/types.py":58
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
 
   /* function exit code */
@@ -2151,10 +2151,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_4__iter__(CYTHON_
 
 /* "welly/ssh/options/types.py":61
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2182,10 +2182,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_6__len__(CYTHON_U
   __Pyx_RefNannySetupContext("__len__", 0);
 
   /* "welly/ssh/options/types.py":62
- * 
+ *
  *     def __len__(self) -> int:
  *         return len(self._fields)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2201,10 +2201,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_6__len__(CYTHON_U
 
   /* "welly/ssh/options/types.py":61
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
 
   /* function exit code */
@@ -2220,7 +2220,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_6__len__(CYTHON_U
 
 /* "welly/ssh/options/types.py":64
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -2311,7 +2311,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_8_copy_of_val(CYT
   __Pyx_RefNannySetupContext("_copy_of_val", 0);
 
   /* "welly/ssh/options/types.py":65
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:
  *         ans = getattr(self, name)             # <<<<<<<<<<<<<<
  *         if isinstance(ans, dict):
@@ -2329,7 +2329,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_8_copy_of_val(CYT
  *             ans = ans.copy()
  *         elif isinstance(ans, list):
  */
-  __pyx_t_2 = PyDict_Check(__pyx_v_ans); 
+  __pyx_t_2 = PyDict_Check(__pyx_v_ans);
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
@@ -2377,7 +2377,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_8_copy_of_val(CYT
  *             ans = ans[:]
  *         return ans
  */
-  __pyx_t_3 = PyList_Check(__pyx_v_ans); 
+  __pyx_t_3 = PyList_Check(__pyx_v_ans);
   __pyx_t_2 = (__pyx_t_3 != 0);
   if (__pyx_t_2) {
 
@@ -2386,7 +2386,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_8_copy_of_val(CYT
  *         elif isinstance(ans, list):
  *             ans = ans[:]             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_ans, 0, 0, NULL, NULL, &__pyx_slice_, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2407,7 +2407,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_8_copy_of_val(CYT
  *         elif isinstance(ans, list):
  *             ans = ans[:]
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2417,7 +2417,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_8_copy_of_val(CYT
 
   /* "welly/ssh/options/types.py":64
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -2439,10 +2439,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_8_copy_of_val(CYT
 
 /* "welly/ssh/options/types.py":72
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2476,10 +2476,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_10_asdict(CYTHON_
   __Pyx_RefNannySetupContext("_asdict", 0);
 
   /* "welly/ssh/options/types.py":73
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:
  *         return {k: self._copy_of_val(k) for k in self}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2561,10 +2561,10 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_10_asdict(CYTHON_
 
   /* "welly/ssh/options/types.py":72
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
 
   /* function exit code */
@@ -2585,7 +2585,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_10_asdict(CYTHON_
 
 /* "welly/ssh/options/types.py":75
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -2671,7 +2671,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_12_replace(CYTHON
   __Pyx_RefNannySetupContext("_replace", 0);
 
   /* "welly/ssh/options/types.py":76
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":
  *         ans = Options()             # <<<<<<<<<<<<<<
  *         for name in self:
@@ -2842,11 +2842,11 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_12_replace(CYTHON
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -2888,7 +2888,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_12_replace(CYTHON
  *         for name, val in kw.items():
  *             setattr(ans, name, val)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_7 = PyObject_SetAttr(__pyx_v_ans, __pyx_v_name, __pyx_v_val); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 80, __pyx_L1_error)
 
@@ -2906,7 +2906,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_12_replace(CYTHON
  *         for name, val in kw.items():
  *             setattr(ans, name, val)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2916,7 +2916,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_12_replace(CYTHON
 
   /* "welly/ssh/options/types.py":75
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -2942,7 +2942,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_12_replace(CYTHON
 
 /* "welly/ssh/options/types.py":83
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -3031,13 +3031,13 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_14__getitem__(CYT
   __Pyx_RefNannySetupContext("__getitem__", 0);
 
   /* "welly/ssh/options/types.py":84
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:
  *         k = option_names[key] if isinstance(key, int) else key             # <<<<<<<<<<<<<<
  *         try:
  *             return getattr(self, k)
  */
-  __pyx_t_2 = PyInt_Check(__pyx_v_key); 
+  __pyx_t_2 = PyInt_Check(__pyx_v_key);
   if ((__pyx_t_2 != 0)) {
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_option_names); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -3140,8 +3140,8 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_14__getitem__(CYT
  *         except AttributeError:
  *             pass
  *         raise KeyError(f"No option named: {k}")             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_FormatSimple(__pyx_v_k, __pyx_empty_unicode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3157,7 +3157,7 @@ static PyObject *__pyx_pf_5welly_3ssh_7options_5types_7Options_14__getitem__(CYT
 
   /* "welly/ssh/options/types.py":83
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -3332,14 +3332,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         elif isinstance(ans, list):
  *             ans = ans[:]             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
   __pyx_slice_ = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice_)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice_);
   __Pyx_GIVEREF(__pyx_slice_);
 
   /* "welly/ssh/options/types.py":8
- * 
+ *
  * if typing.TYPE_CHECKING:
  *     choices_for_askpass = typing.Literal['unless-set', 'ssh', 'native']             # <<<<<<<<<<<<<<
  *     choices_for_remote_smelly = typing.Literal['if-needed', 'no', 'yes']
@@ -3361,7 +3361,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__3);
 
   /* "welly/ssh/options/types.py":15
- * 
+ *
  * option_names = (  # {{{
  *     'askpass',             # <<<<<<<<<<<<<<
  *     'color_scheme',
@@ -3373,7 +3373,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/types.py":46
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         if options_dict is not None:
  *             null = object()
@@ -3387,11 +3387,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__9);
 
   /* "welly/ssh/options/types.py":55
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
   __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
@@ -3400,10 +3400,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/types.py":58
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
   __pyx_tuple__12 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
@@ -3412,10 +3412,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/types.py":61
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -3424,7 +3424,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/types.py":64
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -3436,10 +3436,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/types.py":72
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
   __pyx_tuple__18 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_k); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
@@ -3448,7 +3448,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/types.py":75
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -3460,7 +3460,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/types.py":83
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -3755,11 +3755,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/ssh/options/types.py":4
- * 
+ *
  * # isort: skip_file
  * import typing             # <<<<<<<<<<<<<<
  * import wellies.ssh.copy
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_typing, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3770,7 +3770,7 @@ if (!__Pyx_RefNanny) {
  * # isort: skip_file
  * import typing
  * import wellies.ssh.copy             # <<<<<<<<<<<<<<
- * 
+ *
  * if typing.TYPE_CHECKING:
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_wellies_ssh_copy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -3780,7 +3780,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":7
  * import wellies.ssh.copy
- * 
+ *
  * if typing.TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     choices_for_askpass = typing.Literal['unless-set', 'ssh', 'native']
  *     choices_for_remote_smelly = typing.Literal['if-needed', 'no', 'yes']
@@ -3795,7 +3795,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "welly/ssh/options/types.py":8
- * 
+ *
  * if typing.TYPE_CHECKING:
  *     choices_for_askpass = typing.Literal['unless-set', 'ssh', 'native']             # <<<<<<<<<<<<<<
  *     choices_for_remote_smelly = typing.Literal['if-needed', 'no', 'yes']
@@ -3832,7 +3832,7 @@ if (!__Pyx_RefNanny) {
 
     /* "welly/ssh/options/types.py":7
  * import wellies.ssh.copy
- * 
+ *
  * if typing.TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     choices_for_askpass = typing.Literal['unless-set', 'ssh', 'native']
  *     choices_for_remote_smelly = typing.Literal['if-needed', 'no', 'yes']
@@ -3845,7 +3845,7 @@ if (!__Pyx_RefNanny) {
  * else:
  *     choices_for_askpass = str             # <<<<<<<<<<<<<<
  *     choices_for_remote_smelly = str
- * 
+ *
  */
   /*else*/ {
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_choices_for_askpass, ((PyObject *)(&PyString_Type))) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -3854,7 +3854,7 @@ if (!__Pyx_RefNanny) {
  * else:
  *     choices_for_askpass = str
  *     choices_for_remote_smelly = str             # <<<<<<<<<<<<<<
- * 
+ *
  * option_names = (  # {{{
  */
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_choices_for_remote_smelly, ((PyObject *)(&PyString_Type))) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -3862,7 +3862,7 @@ if (!__Pyx_RefNanny) {
   __pyx_L2:;
 
   /* "welly/ssh/options/types.py":15
- * 
+ *
  * option_names = (  # {{{
  *     'askpass',             # <<<<<<<<<<<<<<
  *     'color_scheme',
@@ -3871,8 +3871,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_option_names, __pyx_tuple__4) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
 
   /* "welly/ssh/options/types.py":30
- * 
- * 
+ *
+ *
  * class Options:             # <<<<<<<<<<<<<<
  *     askpass: choices_for_askpass = 'unless-set'
  *     color_scheme: str = ''
@@ -3881,7 +3881,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "welly/ssh/options/types.py":31
- * 
+ *
  * class Options:
  *     askpass: choices_for_askpass = 'unless-set'             # <<<<<<<<<<<<<<
  *     color_scheme: str = ''
@@ -3999,7 +3999,7 @@ if (!__Pyx_RefNanny) {
  *     env: typing.Dict[str, str] = {}
  *     config_paths: typing.Tuple[str, ...] = ()             # <<<<<<<<<<<<<<
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_config_paths, __pyx_empty_tuple) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
 
@@ -4007,14 +4007,14 @@ if (!__Pyx_RefNanny) {
  *     env: typing.Dict[str, str] = {}
  *     config_paths: typing.Tuple[str, ...] = ()
  *     config_overrides: typing.Tuple[str, ...] = ()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_config_overrides, __pyx_empty_tuple) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
 
   /* "welly/ssh/options/types.py":46
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         if options_dict is not None:
  *             null = object()
@@ -4064,11 +4064,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/ssh/options/types.py":55
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -4098,7 +4098,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":54
  *                     setattr(self, key, val)
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def _fields(self) -> typing.Tuple[str, ...]:
  *         return option_names
@@ -4111,10 +4111,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":58
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -4137,10 +4137,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":61
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -4154,7 +4154,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":64
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -4178,10 +4178,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":72
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4218,7 +4218,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":75
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -4242,7 +4242,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":83
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -4283,8 +4283,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "welly/ssh/options/types.py":30
- * 
- * 
+ *
+ *
  * class Options:             # <<<<<<<<<<<<<<
  *     askpass: choices_for_askpass = 'unless-set'
  *     color_scheme: str = ''
@@ -4296,8 +4296,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/options/types.py":92
- * 
- * 
+ *
+ *
  * defaults = Options()             # <<<<<<<<<<<<<<
  * defaults.copy = {}
  * defaults.env = {}
@@ -4311,7 +4311,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "welly/ssh/options/types.py":93
- * 
+ *
  * defaults = Options()
  * defaults.copy = {}             # <<<<<<<<<<<<<<
  * defaults.env = {}
@@ -4339,7 +4339,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/types.py":1
  * # generated by gen-config.py DO NOT edit             # <<<<<<<<<<<<<<
- * 
+ *
  * # isort: skip_file
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1, __pyx_L1_error)

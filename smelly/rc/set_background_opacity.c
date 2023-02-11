@@ -1576,7 +1576,7 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/set_background_opacity.py":55
  *     args = RemoteCommand.Args(spec='OPACITY', count=1, json_field='opacity', special_parse='parse_opacity(args[0])')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         opacity = max(0.1, min(float(args[0]), 1.0))
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
@@ -1684,11 +1684,11 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/set_background_opacity.py":56
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         opacity = max(0.1, min(float(args[0]), 1.0))             # <<<<<<<<<<<<<<
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
- * 
+ *
  */
   __pyx_t_1 = 1.0;
   __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_args, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
@@ -1713,7 +1713,7 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         opacity = max(0.1, min(float(args[0]), 1.0))
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1741,7 +1741,7 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
 
   /* "smelly/rc/set_background_opacity.py":55
  *     args = RemoteCommand.Args(spec='OPACITY', count=1, json_field='opacity', special_parse='parse_opacity(args[0])')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         opacity = max(0.1, min(float(args[0]), 1.0))
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
@@ -1761,10 +1761,10 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
 
 /* "smelly/rc/set_background_opacity.py":59
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1881,10 +1881,10 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/set_background_opacity.py":60
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         from smelly.fast_data_types import get_options             # <<<<<<<<<<<<<<
- * 
+ *
  *         if not get_options().dynamic_background_opacity:
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
@@ -1904,7 +1904,7 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
 
   /* "smelly/rc/set_background_opacity.py":62
  *         from smelly.fast_data_types import get_options
- * 
+ *
  *         if not get_options().dynamic_background_opacity:             # <<<<<<<<<<<<<<
  *             raise OpacityError('You must turn on the dynamic_background_opacity option in smelly.conf to be able to set background opacity')
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -1934,7 +1934,7 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
   if (unlikely(__pyx_t_5)) {
 
     /* "smelly/rc/set_background_opacity.py":63
- * 
+ *
  *         if not get_options().dynamic_background_opacity:
  *             raise OpacityError('You must turn on the dynamic_background_opacity option in smelly.conf to be able to set background opacity')             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -1963,7 +1963,7 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
 
     /* "smelly/rc/set_background_opacity.py":62
  *         from smelly.fast_data_types import get_options
- * 
+ *
  *         if not get_options().dynamic_background_opacity:             # <<<<<<<<<<<<<<
  *             raise OpacityError('You must turn on the dynamic_background_opacity option in smelly.conf to be able to set background opacity')
  *         windows = self.windows_for_payload(boss, window, payload_get)
@@ -2117,7 +2117,7 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
  *         for os_window_id in {w.os_window_id for w in windows if w}:
  *             boss._set_os_window_background_opacity(os_window_id, payload_get('opacity'))             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_boss, __pyx_n_s_set_os_window_background_opacit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -2192,8 +2192,8 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
  *         for os_window_id in {w.os_window_id for w in windows if w}:
  *             boss._set_os_window_background_opacity(os_window_id, payload_get('opacity'))
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2201,10 +2201,10 @@ static PyObject *__pyx_pf_6smelly_2rc_22set_background_opacity_20SetBackgroundOp
 
   /* "smelly/rc/set_background_opacity.py":59
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
 
   /* function exit code */
@@ -2373,7 +2373,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_background_opacity.py":55
  *     args = RemoteCommand.Args(spec='OPACITY', count=1, json_field='opacity', special_parse='parse_opacity(args[0])')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         opacity = max(0.1, min(float(args[0]), 1.0))
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
@@ -2385,10 +2385,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_background_opacity.py":59
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get, __pyx_n_s_get_options, __pyx_n_s_windows, __pyx_n_s_os_window_id, __pyx_n_s_w); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -2681,10 +2681,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/set_background_opacity.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import (
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2709,7 +2709,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/set_background_opacity.py":8
- * 
+ *
  * from .base import (
  *     MATCH_TAB_OPTION,             # <<<<<<<<<<<<<<
  *     MATCH_WINDOW_OPTION,
@@ -2753,7 +2753,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_opacity.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import (             # <<<<<<<<<<<<<<
  *     MATCH_TAB_OPTION,
  *     MATCH_WINDOW_OPTION,
@@ -2809,10 +2809,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_opacity.py":21
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetBackgroundOpacityRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2821,11 +2821,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_background_opacity.py":22
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetBackgroundOpacityRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2843,16 +2843,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_background_opacity.py":21
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetBackgroundOpacityRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_background_opacity.py":25
- * 
- * 
+ *
+ *
  * class SetBackgroundOpacity(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     opacity+/float: A number between 0.1 and 1
@@ -2870,7 +2870,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/set_background_opacity.py":26
- * 
+ *
  * class SetBackgroundOpacity(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     opacity+/float: A number between 0.1 and 1
@@ -2881,7 +2881,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_opacity.py":33
  *     '''
- * 
+ *
  *     short_desc = 'Set the background opacity'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Set the background opacity for the specified windows. This will only work if you have turned on'
@@ -2898,7 +2898,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_desc, __pyx_kp_s_Set_the_background_opacity_for_t) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
 
   /* "smelly/rc/set_background_opacity.py":48
- * 
+ *
  * '''
  *         + '\n\n'             # <<<<<<<<<<<<<<
  *         + MATCH_WINDOW_OPTION
@@ -2958,7 +2958,7 @@ if (!__Pyx_RefNanny) {
  *         + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
  *     )
  *     args = RemoteCommand.Args(spec='OPACITY', count=1, json_field='opacity', special_parse='parse_opacity(args[0])')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
@@ -2981,7 +2981,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_opacity.py":55
  *     args = RemoteCommand.Args(spec='OPACITY', count=1, json_field='opacity', special_parse='parse_opacity(args[0])')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         opacity = max(0.1, min(float(args[0]), 1.0))
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
@@ -3010,10 +3010,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_background_opacity.py":59
  *         return {'opacity': opacity, 'match_window': opts.match, 'all': opts.all, 'match_tab': opts.match_tab}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3047,8 +3047,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/set_background_opacity.py":25
- * 
- * 
+ *
+ *
  * class SetBackgroundOpacity(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     opacity+/float: A number between 0.1 and 1
@@ -3062,8 +3062,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_background_opacity.py":70
- * 
- * 
+ *
+ *
  * set_background_opacity = SetBackgroundOpacity()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SetBackgroundOpacity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
@@ -3077,7 +3077,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_background_opacity.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

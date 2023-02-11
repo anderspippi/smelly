@@ -1463,11 +1463,11 @@ static PyObject *__pyx_codeobj__7;
 /* Late includes */
 
 /* "smelly_tests/tui.py":9
- * 
+ *
  * class TestTUI(BaseTest):
  *     def test_line_edit(self):             # <<<<<<<<<<<<<<
  *         from wellies.tui.line_edit import LineEdit
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1510,7 +1510,7 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_test_line_edit(CYTHON_UNU
  * class TestTUI(BaseTest):
  *     def test_line_edit(self):
  *         from wellies.tui.line_edit import LineEdit             # <<<<<<<<<<<<<<
- * 
+ *
  *         le = LineEdit()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -1530,7 +1530,7 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_test_line_edit(CYTHON_UNU
 
   /* "smelly_tests/tui.py":12
  *         from wellies.tui.line_edit import LineEdit
- * 
+ *
  *         le = LineEdit()             # <<<<<<<<<<<<<<
  *         le.on_text('abcd', False)
  *         self.ae(le.cursor_pos, 4)
@@ -1555,7 +1555,7 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_test_line_edit(CYTHON_UNU
   __pyx_t_2 = 0;
 
   /* "smelly_tests/tui.py":13
- * 
+ *
  *         le = LineEdit()
  *         le.on_text('abcd', False)             # <<<<<<<<<<<<<<
  *         self.ae(le.cursor_pos, 4)
@@ -3011,7 +3011,7 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_test_line_edit(CYTHON_UNU
  *         self.ae(le.cursor_pos, 0)
  *         le.backspace()             # <<<<<<<<<<<<<<
  *         self.assertTrue(le.pending_bell)
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_le, __pyx_n_s_backspace); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -3036,7 +3036,7 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_test_line_edit(CYTHON_UNU
  *         self.ae(le.cursor_pos, 0)
  *         le.backspace()
  *         self.assertTrue(le.pending_bell)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_multiprocessing_spawn(self):
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 47, __pyx_L1_error)
@@ -3062,11 +3062,11 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_test_line_edit(CYTHON_UNU
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly_tests/tui.py":9
- * 
+ *
  * class TestTUI(BaseTest):
  *     def test_line_edit(self):             # <<<<<<<<<<<<<<
  *         from wellies.tui.line_edit import LineEdit
- * 
+ *
  */
 
   /* function exit code */
@@ -3093,10 +3093,10 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_test_line_edit(CYTHON_UNU
 
 /* "smelly_tests/tui.py":49
  *         self.assertTrue(le.pending_bell)
- * 
+ *
  *     def test_multiprocessing_spawn(self):             # <<<<<<<<<<<<<<
  *         from smelly.multiprocessing import test_spawn
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3126,10 +3126,10 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_2test_multiprocessing_spa
   __Pyx_RefNannySetupContext("test_multiprocessing_spawn", 0);
 
   /* "smelly_tests/tui.py":50
- * 
+ *
  *     def test_multiprocessing_spawn(self):
  *         from smelly.multiprocessing import test_spawn             # <<<<<<<<<<<<<<
- * 
+ *
  *         test_spawn()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
@@ -3149,7 +3149,7 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_2test_multiprocessing_spa
 
   /* "smelly_tests/tui.py":52
  *         from smelly.multiprocessing import test_spawn
- * 
+ *
  *         test_spawn()             # <<<<<<<<<<<<<<
  */
   __Pyx_INCREF(__pyx_v_test_spawn);
@@ -3172,10 +3172,10 @@ static PyObject *__pyx_pf_12smelly_tests_3tui_7TestTUI_2test_multiprocessing_spa
 
   /* "smelly_tests/tui.py":49
  *         self.assertTrue(le.pending_bell)
- * 
+ *
  *     def test_multiprocessing_spawn(self):             # <<<<<<<<<<<<<<
  *         from smelly.multiprocessing import test_spawn
- * 
+ *
  */
 
   /* function exit code */
@@ -3298,7 +3298,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly_tests/tui.py":13
- * 
+ *
  *         le = LineEdit()
  *         le.on_text('abcd', False)             # <<<<<<<<<<<<<<
  *         self.ae(le.cursor_pos, 4)
@@ -3320,11 +3320,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__3);
 
   /* "smelly_tests/tui.py":9
- * 
+ *
  * class TestTUI(BaseTest):
  *     def test_line_edit(self):             # <<<<<<<<<<<<<<
  *         from wellies.tui.line_edit import LineEdit
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_LineEdit, __pyx_n_s_le, __pyx_n_s_i); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
@@ -3333,10 +3333,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/tui.py":49
  *         self.assertTrue(le.pending_bell)
- * 
+ *
  *     def test_multiprocessing_spawn(self):             # <<<<<<<<<<<<<<
  *         from smelly.multiprocessing import test_spawn
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_test_spawn); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -3629,11 +3629,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/tui.py":5
- * 
- * 
+ *
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3650,8 +3650,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/tui.py":8
- * 
- * 
+ *
+ *
  * class TestTUI(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_line_edit(self):
  *         from wellies.tui.line_edit import LineEdit
@@ -3669,11 +3669,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/tui.py":9
- * 
+ *
  * class TestTUI(BaseTest):
  *     def test_line_edit(self):             # <<<<<<<<<<<<<<
  *         from wellies.tui.line_edit import LineEdit
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_3tui_7TestTUI_1test_line_edit, 0, __pyx_n_s_TestTUI_test_line_edit, NULL, __pyx_n_s_smelly_tests_tui, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3682,10 +3682,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/tui.py":49
  *         self.assertTrue(le.pending_bell)
- * 
+ *
  *     def test_multiprocessing_spawn(self):             # <<<<<<<<<<<<<<
  *         from smelly.multiprocessing import test_spawn
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_3tui_7TestTUI_3test_multiprocessing_spawn, 0, __pyx_n_s_TestTUI_test_multiprocessing_spa, NULL, __pyx_n_s_smelly_tests_tui, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3693,8 +3693,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/tui.py":8
- * 
- * 
+ *
+ *
  * class TestTUI(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_line_edit(self):
  *         from wellies.tui.line_edit import LineEdit
@@ -3710,7 +3710,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/tui.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4249,8 +4249,8 @@ static PyObject* __Pyx_PyInt_SubtractCObj(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -4373,8 +4373,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

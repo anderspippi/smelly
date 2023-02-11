@@ -974,11 +974,11 @@ struct __pyx_defaults {
 };
 
 /* "smelly_tests/search_query_parser.py":9
- * 
+ *
  * class TestSQP(BaseTest):
  *     def test_search_query_parser(self):             # <<<<<<<<<<<<<<
  *         from smelly.search_query_parser import ParseException, search
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_19search_query_parser___pyx_scope_struct__test_search_query_parser {
   PyObject_HEAD
@@ -1493,11 +1493,11 @@ static PyObject *__pyx_codeobj__8;
 /* Late includes */
 
 /* "smelly_tests/search_query_parser.py":9
- * 
+ *
  * class TestSQP(BaseTest):
  *     def test_search_query_parser(self):             # <<<<<<<<<<<<<<
  *         from smelly.search_query_parser import ParseException, search
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1516,10 +1516,10 @@ static PyObject *__pyx_pw_12smelly_tests_19search_query_parser_7TestSQP_1test_se
 
 /* "smelly_tests/search_query_parser.py":15
  *         universal_set = {1, 2, 3, 4, 5}
- * 
+ *
  *         def get_matches(location, query, candidates):             # <<<<<<<<<<<<<<
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1615,10 +1615,10 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_24test_s
   __Pyx_RefNannySetupContext("get_matches", 0);
 
   /* "smelly_tests/search_query_parser.py":16
- * 
+ *
  *         def get_matches(location, query, candidates):
  *             return {x for x in candidates if query == str(x)}             # <<<<<<<<<<<<<<
- * 
+ *
  *         def t(q, expected=set()):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1690,10 +1690,10 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_24test_s
 
   /* "smelly_tests/search_query_parser.py":15
  *         universal_set = {1, 2, 3, 4, 5}
- * 
+ *
  *         def get_matches(location, query, candidates):             # <<<<<<<<<<<<<<
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  */
 
   /* function exit code */
@@ -1713,7 +1713,7 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_24test_s
 
 /* "smelly_tests/search_query_parser.py":18
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  *         def t(q, expected=set()):             # <<<<<<<<<<<<<<
  *             actual = search(q, locations, universal_set, get_matches)
  *             self.ae(actual, expected)
@@ -1847,11 +1847,11 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_24test_s
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/search_query_parser.py":19
- * 
+ *
  *         def t(q, expected=set()):
  *             actual = search(q, locations, universal_set, get_matches)             # <<<<<<<<<<<<<<
  *             self.ae(actual, expected)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_search)) { __Pyx_RaiseClosureNameError("search"); __PYX_ERR(0, 19, __pyx_L1_error) }
   if (unlikely(!__pyx_cur_scope->__pyx_v_locations)) { __Pyx_RaiseClosureNameError("locations"); __PYX_ERR(0, 19, __pyx_L1_error) }
@@ -1916,7 +1916,7 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_24test_s
  *         def t(q, expected=set()):
  *             actual = search(q, locations, universal_set, get_matches)
  *             self.ae(actual, expected)             # <<<<<<<<<<<<<<
- * 
+ *
  *         t('id:1', {1})
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 20, __pyx_L1_error) }
@@ -1971,7 +1971,7 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_24test_s
 
   /* "smelly_tests/search_query_parser.py":18
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  *         def t(q, expected=set()):             # <<<<<<<<<<<<<<
  *             actual = search(q, locations, universal_set, get_matches)
  *             self.ae(actual, expected)
@@ -1995,11 +1995,11 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_24test_s
 }
 
 /* "smelly_tests/search_query_parser.py":9
- * 
+ *
  * class TestSQP(BaseTest):
  *     def test_search_query_parser(self):             # <<<<<<<<<<<<<<
  *         from smelly.search_query_parser import ParseException, search
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_search_query_parser(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -2033,7 +2033,7 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_sea
  * class TestSQP(BaseTest):
  *     def test_search_query_parser(self):
  *         from smelly.search_query_parser import ParseException, search             # <<<<<<<<<<<<<<
- * 
+ *
  *         locations = 'id'
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -2062,20 +2062,20 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_sea
 
   /* "smelly_tests/search_query_parser.py":12
  *         from smelly.search_query_parser import ParseException, search
- * 
+ *
  *         locations = 'id'             # <<<<<<<<<<<<<<
  *         universal_set = {1, 2, 3, 4, 5}
- * 
+ *
  */
   __Pyx_INCREF(__pyx_n_s_id);
   __Pyx_GIVEREF(__pyx_n_s_id);
   __pyx_cur_scope->__pyx_v_locations = __pyx_n_s_id;
 
   /* "smelly_tests/search_query_parser.py":13
- * 
+ *
  *         locations = 'id'
  *         universal_set = {1, 2, 3, 4, 5}             # <<<<<<<<<<<<<<
- * 
+ *
  *         def get_matches(location, query, candidates):
  */
   __pyx_t_2 = PySet_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -2091,10 +2091,10 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_sea
 
   /* "smelly_tests/search_query_parser.py":15
  *         universal_set = {1, 2, 3, 4, 5}
- * 
+ *
  *         def get_matches(location, query, candidates):             # <<<<<<<<<<<<<<
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_19search_query_parser_7TestSQP_24test_search_query_parser_1get_matches, 0, __pyx_n_s_TestSQP_test_search_query_parser, NULL, __pyx_n_s_smelly_tests_search_query_parser_2, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2104,7 +2104,7 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_sea
 
   /* "smelly_tests/search_query_parser.py":18
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  *         def t(q, expected=set()):             # <<<<<<<<<<<<<<
  *             actual = search(q, locations, universal_set, get_matches)
  *             self.ae(actual, expected)
@@ -2123,7 +2123,7 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_sea
 
   /* "smelly_tests/search_query_parser.py":22
  *             self.ae(actual, expected)
- * 
+ *
  *         t('id:1', {1})             # <<<<<<<<<<<<<<
  *         t('id:"1"', {1})
  *         t('id:1 and id:1', {1})
@@ -2137,7 +2137,7 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_sea
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/search_query_parser.py":23
- * 
+ *
  *         t('id:1', {1})
  *         t('id:"1"', {1})             # <<<<<<<<<<<<<<
  *         t('id:1 and id:1', {1})
@@ -2342,11 +2342,11 @@ static PyObject *__pyx_pf_12smelly_tests_19search_query_parser_7TestSQP_test_sea
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/search_query_parser.py":9
- * 
+ *
  * class TestSQP(BaseTest):
  *     def test_search_query_parser(self):             # <<<<<<<<<<<<<<
  *         from smelly.search_query_parser import ParseException, search
- * 
+ *
  */
 
   /* function exit code */
@@ -2618,10 +2618,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/search_query_parser.py":15
  *         universal_set = {1, 2, 3, 4, 5}
- * 
+ *
  *         def get_matches(location, query, candidates):             # <<<<<<<<<<<<<<
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_location, __pyx_n_s_query, __pyx_n_s_candidates, __pyx_n_s_x); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -2630,7 +2630,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/search_query_parser.py":18
  *             return {x for x in candidates if query == str(x)}
- * 
+ *
  *         def t(q, expected=set()):             # <<<<<<<<<<<<<<
  *             actual = search(q, locations, universal_set, get_matches)
  *             self.ae(actual, expected)
@@ -2652,11 +2652,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "smelly_tests/search_query_parser.py":9
- * 
+ *
  * class TestSQP(BaseTest):
  *     def test_search_query_parser(self):             # <<<<<<<<<<<<<<
  *         from smelly.search_query_parser import ParseException, search
- * 
+ *
  */
   __pyx_tuple__7 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_ParseException, __pyx_n_s_search, __pyx_n_s_locations, __pyx_n_s_universal_set, __pyx_n_s_get_matches, __pyx_n_s_get_matches, __pyx_n_s_t, __pyx_n_s_t); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
@@ -2963,11 +2963,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/search_query_parser.py":5
- * 
- * 
+ *
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2984,8 +2984,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/search_query_parser.py":8
- * 
- * 
+ *
+ *
  * class TestSQP(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_search_query_parser(self):
  *         from smelly.search_query_parser import ParseException, search
@@ -3003,11 +3003,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/search_query_parser.py":9
- * 
+ *
  * class TestSQP(BaseTest):
  *     def test_search_query_parser(self):             # <<<<<<<<<<<<<<
  *         from smelly.search_query_parser import ParseException, search
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_19search_query_parser_7TestSQP_1test_search_query_parser, 0, __pyx_n_s_TestSQP_test_search_query_parser_3, NULL, __pyx_n_s_smelly_tests_search_query_parser_2, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3015,8 +3015,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/search_query_parser.py":8
- * 
- * 
+ *
+ *
  * class TestSQP(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_search_query_parser(self):
  *         from smelly.search_query_parser import ParseException, search
@@ -3032,7 +3032,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/search_query_parser.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

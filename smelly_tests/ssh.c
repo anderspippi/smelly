@@ -978,8 +978,8 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_8_test_ssh_shell_integra
 struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_9_check_bootstrap;
 
 /* "smelly_tests/ssh.py":25
- * 
- * 
+ *
+ *
  * def files_in(path):             # <<<<<<<<<<<<<<
  *     for record in os.walk(path):
  *         for f in record[-1]:
@@ -1000,7 +1000,7 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct__files_in {
 
 /* "smelly_tests/ssh.py":50
  *         self.ae(pty.screen_contents(), '13 77 770 260')
- * 
+ *
  *     def test_ssh_connection_data(self):             # <<<<<<<<<<<<<<
  *         def t(
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -1012,7 +1012,7 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_1_test_ssh_connection_da
 
 
 /* "smelly_tests/ssh.py":51
- * 
+ *
  *     def test_ssh_connection_data(self):
  *         def t(             # <<<<<<<<<<<<<<
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -1041,7 +1041,7 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_3_genexpr {
 
 /* "smelly_tests/ssh.py":92
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})
- * 
+ *
  *     def test_ssh_bootstrap_sh_cmd_limit(self):             # <<<<<<<<<<<<<<
  *         # dropbear has a 9000 bytes maximum command length limit
  *         sh_script, _, _ = bootstrap_script(
@@ -1056,7 +1056,7 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_4_test_ssh_bootstrap_sh_
  *             request_id='123-123')
  *         rcmd = wrap_bootstrap_script(sh_script, 'sh')
  *         self.assertLessEqual(sum(len(x) for x in rcmd), 9000)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
 struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_5_genexpr {
@@ -1071,10 +1071,10 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_5_genexpr {
 
 /* "smelly_tests/ssh.py":110
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
- * 
+ *
  *     def test_ssh_copy(self):             # <<<<<<<<<<<<<<
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_6_test_ssh_copy {
   PyObject_HEAD
@@ -1085,7 +1085,7 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_6_test_ssh_copy {
 
 /* "smelly_tests/ssh.py":184
  *                     2)
- * 
+ *
  *     def test_ssh_env_vars(self):             # <<<<<<<<<<<<<<
  *         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'
  *         for sh in self.all_possible_sh:
@@ -1099,7 +1099,7 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_7_test_ssh_env_vars {
 
 /* "smelly_tests/ssh.py":264
  *                     self.assertIn(expected_login_shell, pty.screen_contents())
- * 
+ *
  *     def test_ssh_shell_integration(self):             # <<<<<<<<<<<<<<
  *         ok_login_shell = ''
  *         for sh in self.all_possible_sh:
@@ -1113,7 +1113,7 @@ struct __pyx_obj_12smelly_tests_3ssh___pyx_scope_struct_8_test_ssh_shell_integra
 
 /* "smelly_tests/ssh.py":302
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',             # <<<<<<<<<<<<<<
  *                         SHELL_INTEGRATION_VALUE='enabled', test_script='',
  *                         pre_data='', ssh_opts=None, launcher='sh'):
@@ -2601,8 +2601,8 @@ static PyObject *__pyx_codeobj__58;
 static PyObject *__pyx_gb_12smelly_tests_3ssh_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/ssh.py":25
- * 
- * 
+ *
+ *
  * def files_in(path):             # <<<<<<<<<<<<<<
  *     for record in os.walk(path):
  *         for f in record[-1]:
@@ -2692,7 +2692,7 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_2generator(__pyx_CoroutineObject *
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 25, __pyx_L1_error)
 
   /* "smelly_tests/ssh.py":26
- * 
+ *
  * def files_in(path):
  *     for record in os.walk(path):             # <<<<<<<<<<<<<<
  *         for f in record[-1]:
@@ -2768,7 +2768,7 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_2generator(__pyx_CoroutineObject *
  *     for record in os.walk(path):
  *         for f in record[-1]:             # <<<<<<<<<<<<<<
  *             yield os.path.relpath(os.path.join(record[0], f), path)
- * 
+ *
  */
     __pyx_t_1 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_record, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2821,8 +2821,8 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_2generator(__pyx_CoroutineObject *
  *     for record in os.walk(path):
  *         for f in record[-1]:
  *             yield os.path.relpath(os.path.join(record[0], f), path)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_os); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 28, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
@@ -2970,13 +2970,13 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_2generator(__pyx_CoroutineObject *
  *     for record in os.walk(path):
  *         for f in record[-1]:             # <<<<<<<<<<<<<<
  *             yield os.path.relpath(os.path.join(record[0], f), path)
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly_tests/ssh.py":26
- * 
+ *
  * def files_in(path):
  *     for record in os.walk(path):             # <<<<<<<<<<<<<<
  *         for f in record[-1]:
@@ -2987,8 +2987,8 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_2generator(__pyx_CoroutineObject *
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly_tests/ssh.py":25
- * 
- * 
+ *
+ *
  * def files_in(path):             # <<<<<<<<<<<<<<
  *     for record in os.walk(path):
  *         for f in record[-1]:
@@ -3020,7 +3020,7 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_2generator(__pyx_CoroutineObject *
 }
 
 /* "smelly_tests/ssh.py":32
- * 
+ *
  * class SSHKitten(BaseTest):
  *     def test_basic_pty_operations(self):             # <<<<<<<<<<<<<<
  *         pty = self.create_pty('echo hello')
@@ -3264,7 +3264,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_test_basic_pty_operatio
  *         )
  *         pty.process_input_from_child()             # <<<<<<<<<<<<<<
  *         self.ae(pty.screen_contents(), '13 77 770 260')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_pty, __pyx_n_s_process_input_from_child); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3289,7 +3289,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_test_basic_pty_operatio
  *         )
  *         pty.process_input_from_child()
  *         self.ae(pty.screen_contents(), '13 77 770 260')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_connection_data(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -3361,7 +3361,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_test_basic_pty_operatio
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/ssh.py":32
- * 
+ *
  * class SSHKitten(BaseTest):
  *     def test_basic_pty_operations(self):             # <<<<<<<<<<<<<<
  *         pty = self.create_pty('echo hello')
@@ -3388,7 +3388,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_test_basic_pty_operatio
 
 /* "smelly_tests/ssh.py":50
  *         self.ae(pty.screen_contents(), '13 77 770 260')
- * 
+ *
  *     def test_ssh_connection_data(self):             # <<<<<<<<<<<<<<
  *         def t(
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -3409,7 +3409,7 @@ static PyObject *__pyx_pw_12smelly_tests_3ssh_9SSHKitten_3test_ssh_connection_da
 }
 
 /* "smelly_tests/ssh.py":51
- * 
+ *
  *     def test_ssh_connection_data(self):
  *         def t(             # <<<<<<<<<<<<<<
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -3549,7 +3549,7 @@ static PyObject *__pyx_pw_12smelly_tests_3ssh_9SSHKitten_24test_ssh_connection_d
   __pyx_r = __pyx_pf_12smelly_tests_3ssh_9SSHKitten_24test_ssh_connection_data_t(__pyx_self, __pyx_v_cmdline, __pyx_v_binary, __pyx_v_host, __pyx_v_port, __pyx_v_identity_file, __pyx_v_extra_args);
 
   /* "smelly_tests/ssh.py":51
- * 
+ *
  *     def test_ssh_connection_data(self):
  *         def t(             # <<<<<<<<<<<<<<
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -3705,7 +3705,7 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_9SSHKitten_24test_ssh_connection_d
 }
 
 /* "smelly_tests/ssh.py":51
- * 
+ *
  *     def test_ssh_connection_data(self):
  *         def t(             # <<<<<<<<<<<<<<
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -3861,7 +3861,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_24test_ssh_connection_d
  *             q = get_connection_data(cmdline.split(), extra_args=en)
  *             self.ae(q, SSHConnectionData(binary, host,             # <<<<<<<<<<<<<<
  *                     port, identity_file, extra_args))
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 58, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
@@ -3873,7 +3873,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_24test_ssh_connection_d
  *             q = get_connection_data(cmdline.split(), extra_args=en)
  *             self.ae(q, SSHConnectionData(binary, host,
  *                     port, identity_file, extra_args))             # <<<<<<<<<<<<<<
- * 
+ *
  *         t('ssh main')
  */
   __pyx_t_6 = NULL;
@@ -3980,7 +3980,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_24test_ssh_connection_d
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/ssh.py":51
- * 
+ *
  *     def test_ssh_connection_data(self):
  *         def t(             # <<<<<<<<<<<<<<
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -4012,7 +4012,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_24test_ssh_connection_d
 
 /* "smelly_tests/ssh.py":50
  *         self.ae(pty.screen_contents(), '13 77 770 260')
- * 
+ *
  *     def test_ssh_connection_data(self):             # <<<<<<<<<<<<<<
  *         def t(
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -4045,7 +4045,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_2test_ssh_connection_da
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/ssh.py":51
- * 
+ *
  *     def test_ssh_connection_data(self):
  *         def t(             # <<<<<<<<<<<<<<
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -4059,7 +4059,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_2test_ssh_connection_da
 
   /* "smelly_tests/ssh.py":61
  *                     port, identity_file, extra_args))
- * 
+ *
  *         t('ssh main')             # <<<<<<<<<<<<<<
  *         t('ssh un@ip -i ident -p34', host='un@ip', port=34, identity_file='ident')
  *         t('ssh un@ip -iident -p34', host='un@ip', port=34, identity_file='ident')
@@ -4069,7 +4069,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_2test_ssh_connection_da
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/ssh.py":62
- * 
+ *
  *         t('ssh main')
  *         t('ssh un@ip -i ident -p34', host='un@ip', port=34, identity_file='ident')             # <<<<<<<<<<<<<<
  *         t('ssh un@ip -iident -p34', host='un@ip', port=34, identity_file='ident')
@@ -4150,7 +4150,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_2test_ssh_connection_da
  *         t('ssh --kitten=one -p 12 --kitten two -ix main', identity_file='x',
  *           port=12, extra_args=(('--kitten', 'one'), ('--kitten', 'two')))             # <<<<<<<<<<<<<<
  *         self.assertTrue(runtime_dir())
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_extra_args, __pyx_tuple__14) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
 
@@ -4170,7 +4170,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_2test_ssh_connection_da
  *         t('ssh --kitten=one -p 12 --kitten two -ix main', identity_file='x',
  *           port=12, extra_args=(('--kitten', 'one'), ('--kitten', 'two')))
  *         self.assertTrue(runtime_dir())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_config_parsing(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
@@ -4212,7 +4212,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_2test_ssh_connection_da
 
   /* "smelly_tests/ssh.py":50
  *         self.ae(pty.screen_contents(), '13 77 770 260')
- * 
+ *
  *     def test_ssh_connection_data(self):             # <<<<<<<<<<<<<<
  *         def t(
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -4239,7 +4239,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_2test_ssh_connection_da
 
 /* "smelly_tests/ssh.py":70
  *         self.assertTrue(runtime_dir())
- * 
+ *
  *     def test_ssh_config_parsing(self):             # <<<<<<<<<<<<<<
  *         def parse(conf, hostname='unmatched_host', username=''):
  *             return load_config(
@@ -4260,7 +4260,7 @@ static PyObject *__pyx_pw_12smelly_tests_3ssh_9SSHKitten_5test_ssh_config_parsin
 }
 
 /* "smelly_tests/ssh.py":71
- * 
+ *
  *     def test_ssh_config_parsing(self):
  *         def parse(conf, hostname='unmatched_host', username=''):             # <<<<<<<<<<<<<<
  *             return load_config(
@@ -4378,7 +4378,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_23test_ssh_config_parsi
  *             return load_config(
  *                 overrides=conf.splitlines(),             # <<<<<<<<<<<<<<
  *                 hostname=hostname, username=username)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4406,7 +4406,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_23test_ssh_config_parsi
  *             return load_config(
  *                 overrides=conf.splitlines(),
  *                 hostname=hostname, username=username)             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(parse('').env, {})
  */
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_hostname, __pyx_v_hostname) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
@@ -4428,7 +4428,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_23test_ssh_config_parsi
   goto __pyx_L0;
 
   /* "smelly_tests/ssh.py":71
- * 
+ *
  *     def test_ssh_config_parsing(self):
  *         def parse(conf, hostname='unmatched_host', username=''):             # <<<<<<<<<<<<<<
  *             return load_config(
@@ -4452,7 +4452,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_23test_ssh_config_parsi
 
 /* "smelly_tests/ssh.py":70
  *         self.assertTrue(runtime_dir())
- * 
+ *
  *     def test_ssh_config_parsing(self):             # <<<<<<<<<<<<<<
  *         def parse(conf, hostname='unmatched_host', username=''):
  *             return load_config(
@@ -4476,7 +4476,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_4test_ssh_config_parsin
   __Pyx_RefNannySetupContext("test_ssh_config_parsing", 0);
 
   /* "smelly_tests/ssh.py":71
- * 
+ *
  *     def test_ssh_config_parsing(self):
  *         def parse(conf, hostname='unmatched_host', username=''):             # <<<<<<<<<<<<<<
  *             return load_config(
@@ -4490,7 +4490,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_4test_ssh_config_parsin
 
   /* "smelly_tests/ssh.py":76
  *                 hostname=hostname, username=username)
- * 
+ *
  *         self.ae(parse('').env, {})             # <<<<<<<<<<<<<<
  *         self.ae(parse('env a=b').env, {'a': 'b'})
  *         conf = 'env a=b\nhostname 2\nenv a=c\nenv b=b'
@@ -4556,7 +4556,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_4test_ssh_config_parsin
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/ssh.py":77
- * 
+ *
  *         self.ae(parse('').env, {})
  *         self.ae(parse('env a=b').env, {'a': 'b'})             # <<<<<<<<<<<<<<
  *         conf = 'env a=b\nhostname 2\nenv a=c\nenv b=b'
@@ -5222,7 +5222,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_4test_ssh_config_parsin
  *         self.ae(parse(conf).env, {'a': 'b'})
  *         self.ae(parse(conf, '1').env, {'a': 'c', 'b': 'b'})             # <<<<<<<<<<<<<<
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5299,7 +5299,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_4test_ssh_config_parsin
  *         self.ae(parse(conf).env, {'a': 'b'})
  *         self.ae(parse(conf, '1').env, {'a': 'c', 'b': 'b'})
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_bootstrap_sh_cmd_limit(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
@@ -5375,7 +5375,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_4test_ssh_config_parsin
 
   /* "smelly_tests/ssh.py":70
  *         self.assertTrue(runtime_dir())
- * 
+ *
  *     def test_ssh_config_parsing(self):             # <<<<<<<<<<<<<<
  *         def parse(conf, hostname='unmatched_host', username=''):
  *             return load_config(
@@ -5403,7 +5403,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_4test_ssh_config_parsin
 
 /* "smelly_tests/ssh.py":92
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})
- * 
+ *
  *     def test_ssh_bootstrap_sh_cmd_limit(self):             # <<<<<<<<<<<<<<
  *         # dropbear has a 9000 bytes maximum command length limit
  *         sh_script, _, _ = bootstrap_script(
@@ -5428,7 +5428,7 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_9SSHKitten_31test_ssh_bootstrap_sh
  *             request_id='123-123')
  *         rcmd = wrap_bootstrap_script(sh_script, 'sh')
  *         self.assertLessEqual(sum(len(x) for x in rcmd), 9000)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
 
@@ -5581,7 +5581,7 @@ static PyObject *__pyx_gb_12smelly_tests_3ssh_9SSHKitten_31test_ssh_bootstrap_sh
 
 /* "smelly_tests/ssh.py":92
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})
- * 
+ *
  *     def test_ssh_bootstrap_sh_cmd_limit(self):             # <<<<<<<<<<<<<<
  *         # dropbear has a 9000 bytes maximum command length limit
  *         sh_script, _, _ = bootstrap_script(
@@ -5704,13 +5704,13 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_6test_ssh_bootstrap_sh_
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -5759,7 +5759,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_6test_ssh_bootstrap_sh_
  *             request_id='123-123')
  *         rcmd = wrap_bootstrap_script(sh_script, 'sh')             # <<<<<<<<<<<<<<
  *         self.assertLessEqual(sum(len(x) for x in rcmd), 9000)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_wrap_bootstrap_script); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5816,7 +5816,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_6test_ssh_bootstrap_sh_
  *             request_id='123-123')
  *         rcmd = wrap_bootstrap_script(sh_script, 'sh')
  *         self.assertLessEqual(sum(len(x) for x in rcmd), 9000)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertLessEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
@@ -5877,7 +5877,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_6test_ssh_bootstrap_sh_
 
   /* "smelly_tests/ssh.py":92
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})
- * 
+ *
  *     def test_ssh_bootstrap_sh_cmd_limit(self):             # <<<<<<<<<<<<<<
  *         # dropbear has a 9000 bytes maximum command length limit
  *         sh_script, _, _ = bootstrap_script(
@@ -5993,7 +5993,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_8all_possible_sh(CYTHON
  *             filter(
  *                 shutil.which,             # <<<<<<<<<<<<<<
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_shutil); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6005,7 +6005,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_8all_possible_sh(CYTHON
  *             filter(
  *                 shutil.which,
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_copy(self):
  */
   __pyx_t_1 = PyTuple_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -6087,10 +6087,10 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_8all_possible_sh(CYTHON
 
 /* "smelly_tests/ssh.py":110
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
- * 
+ *
  *     def test_ssh_copy(self):             # <<<<<<<<<<<<<<
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6109,7 +6109,7 @@ static PyObject *__pyx_pw_12smelly_tests_3ssh_9SSHKitten_11test_ssh_copy(PyObjec
 
 /* "smelly_tests/ssh.py":113
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  *         def touch(p):             # <<<<<<<<<<<<<<
  *             with open(os.path.join(local_home, p), 'w') as f:
  *                 f.write(simple_data)
@@ -6155,11 +6155,11 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_13test_ssh_copy_touch(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/ssh.py":114
- * 
+ *
  *         def touch(p):
  *             with open(os.path.join(local_home, p), 'w') as f:             # <<<<<<<<<<<<<<
  *                 f.write(simple_data)
- * 
+ *
  */
   /*with:*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
@@ -6265,7 +6265,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_13test_ssh_copy_touch(P
  *         def touch(p):
  *             with open(os.path.join(local_home, p), 'w') as f:
  *                 f.write(simple_data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for sh in self.all_possible_sh:
  */
           __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L7_error)
@@ -6289,11 +6289,11 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_13test_ssh_copy_touch(P
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
           /* "smelly_tests/ssh.py":114
- * 
+ *
  *         def touch(p):
  *             with open(os.path.join(local_home, p), 'w') as f:             # <<<<<<<<<<<<<<
  *                 f.write(simple_data)
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -6327,7 +6327,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_13test_ssh_copy_touch(P
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_1, __pyx_t_2);
-            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 114, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -6371,7 +6371,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_13test_ssh_copy_touch(P
 
   /* "smelly_tests/ssh.py":113
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  *         def touch(p):             # <<<<<<<<<<<<<<
  *             with open(os.path.join(local_home, p), 'w') as f:
  *                 f.write(simple_data)
@@ -6396,10 +6396,10 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_13test_ssh_copy_touch(P
 
 /* "smelly_tests/ssh.py":110
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
- * 
+ *
  *     def test_ssh_copy(self):             # <<<<<<<<<<<<<<
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -6466,10 +6466,10 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
   }
 
   /* "smelly_tests/ssh.py":111
- * 
+ *
  *     def test_ssh_copy(self):
  *         simple_data = 'rkjlhfwf9whoaa'             # <<<<<<<<<<<<<<
- * 
+ *
  *         def touch(p):
  */
   __Pyx_INCREF(__pyx_n_s_rkjlhfwf9whoaa);
@@ -6478,7 +6478,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
 
   /* "smelly_tests/ssh.py":113
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  *         def touch(p):             # <<<<<<<<<<<<<<
  *             with open(os.path.join(local_home, p), 'w') as f:
  *                 f.write(simple_data)
@@ -6490,7 +6490,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
 
   /* "smelly_tests/ssh.py":117
  *                 f.write(simple_data)
- * 
+ *
  *         for sh in self.all_possible_sh:             # <<<<<<<<<<<<<<
  *             with self.subTest(sh=sh), tempfile.TemporaryDirectory() as remote_home, tempfile.TemporaryDirectory() as local_home, set_paths(home=local_home):
  *                 tuple(map(touch, 'simple-file g.1 g.2'.split()))
@@ -6541,7 +6541,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
     __pyx_t_1 = 0;
 
     /* "smelly_tests/ssh.py":118
- * 
+ *
  *         for sh in self.all_possible_sh:
  *             with self.subTest(sh=sh), tempfile.TemporaryDirectory() as remote_home, tempfile.TemporaryDirectory() as local_home, set_paths(home=local_home):             # <<<<<<<<<<<<<<
  *                 tuple(map(touch, 'simple-file g.1 g.2'.split()))
@@ -6906,7 +6906,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
  *                 os.symlink('d2/x', f'{local_home}/d1/y')
  *                 os.symlink('simple-file', f'{local_home}/s1')             # <<<<<<<<<<<<<<
  *                 os.symlink('simple-file', f'{local_home}/s2')
- * 
+ *
  */
                                     __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_os); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 124, __pyx_L53_error)
                                     __Pyx_GOTREF(__pyx_t_8);
@@ -6971,7 +6971,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
  *                 os.symlink('d2/x', f'{local_home}/d1/y')
  *                 os.symlink('simple-file', f'{local_home}/s1')
  *                 os.symlink('simple-file', f'{local_home}/s2')             # <<<<<<<<<<<<<<
- * 
+ *
  *                 conf = '''\
  */
                                     __Pyx_GetModuleGlobalName(__pyx_t_25, __pyx_n_s_os); if (unlikely(!__pyx_t_25)) __PYX_ERR(0, 125, __pyx_L53_error)
@@ -7035,7 +7035,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
 
                                     /* "smelly_tests/ssh.py":127
  *                 os.symlink('simple-file', f'{local_home}/s2')
- * 
+ *
  *                 conf = '''\             # <<<<<<<<<<<<<<
  * copy simple-file
  * copy s1
@@ -7736,7 +7736,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
                                                 __Pyx_GIVEREF(__pyx_t_5);
                                                 __Pyx_XGIVEREF(__pyx_t_25);
                                                 __Pyx_ErrRestoreWithState(__pyx_t_29, __pyx_t_5, __pyx_t_25);
-                                                __pyx_t_29 = 0; __pyx_t_5 = 0; __pyx_t_25 = 0; 
+                                                __pyx_t_29 = 0; __pyx_t_5 = 0; __pyx_t_25 = 0;
                                                 __PYX_ERR(0, 150, __pyx_L72_except_error)
                                               }
                                               __Pyx_XDECREF(__pyx_t_29); __pyx_t_29 = 0;
@@ -8292,7 +8292,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
  *                 self.ae(
  *                     len(glob.glob(f'{remote_home}/{tname}/[inserted by cython to avoid comment start]*[inserted by cython to avoid comment closer]/xterm-smelly')),             # <<<<<<<<<<<<<<
  *                     2)
- * 
+ *
  */
                                     __Pyx_GetModuleGlobalName(__pyx_t_29, __pyx_n_s_glob); if (unlikely(!__pyx_t_29)) __PYX_ERR(0, 181, __pyx_L53_error)
                                     __Pyx_GOTREF(__pyx_t_29);
@@ -8398,7 +8398,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
                                     __Pyx_DECREF(__pyx_t_25); __pyx_t_25 = 0;
 
                                     /* "smelly_tests/ssh.py":118
- * 
+ *
  *         for sh in self.all_possible_sh:
  *             with self.subTest(sh=sh), tempfile.TemporaryDirectory() as remote_home, tempfile.TemporaryDirectory() as local_home, set_paths(home=local_home):             # <<<<<<<<<<<<<<
  *                 tuple(map(touch, 'simple-file g.1 g.2'.split()))
@@ -8439,7 +8439,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
                                       __Pyx_GIVEREF(__pyx_t_1);
                                       __Pyx_XGIVEREF(__pyx_t_5);
                                       __Pyx_ErrRestoreWithState(__pyx_t_25, __pyx_t_1, __pyx_t_5);
-                                      __pyx_t_25 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0; 
+                                      __pyx_t_25 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0;
                                       __PYX_ERR(0, 118, __pyx_L55_except_error)
                                     }
                                     __Pyx_XDECREF(__pyx_t_25); __pyx_t_25 = 0;
@@ -8515,7 +8515,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
                               __Pyx_GIVEREF(__pyx_t_1);
                               __Pyx_XGIVEREF(__pyx_t_25);
                               __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_1, __pyx_t_25);
-                              __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_25 = 0; 
+                              __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_25 = 0;
                               __PYX_ERR(0, 118, __pyx_L41_except_error)
                             }
                             __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -8591,7 +8591,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
                       __Pyx_GIVEREF(__pyx_t_1);
                       __Pyx_XGIVEREF(__pyx_t_5);
                       __Pyx_ErrRestoreWithState(__pyx_t_25, __pyx_t_1, __pyx_t_5);
-                      __pyx_t_25 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0; 
+                      __pyx_t_25 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0;
                       __PYX_ERR(0, 118, __pyx_L27_except_error)
                     }
                     __Pyx_XDECREF(__pyx_t_25); __pyx_t_25 = 0;
@@ -8667,7 +8667,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
               __Pyx_GIVEREF(__pyx_t_1);
               __Pyx_XGIVEREF(__pyx_t_25);
               __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_1, __pyx_t_25);
-              __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_25 = 0; 
+              __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_25 = 0;
               __PYX_ERR(0, 118, __pyx_L13_except_error)
             }
             __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -8711,7 +8711,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
 
     /* "smelly_tests/ssh.py":117
  *                 f.write(simple_data)
- * 
+ *
  *         for sh in self.all_possible_sh:             # <<<<<<<<<<<<<<
  *             with self.subTest(sh=sh), tempfile.TemporaryDirectory() as remote_home, tempfile.TemporaryDirectory() as local_home, set_paths(home=local_home):
  *                 tuple(map(touch, 'simple-file g.1 g.2'.split()))
@@ -8721,10 +8721,10 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
 
   /* "smelly_tests/ssh.py":110
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
- * 
+ *
  *     def test_ssh_copy(self):             # <<<<<<<<<<<<<<
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  */
 
   /* function exit code */
@@ -8759,7 +8759,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_10test_ssh_copy(CYTHON_
 
 /* "smelly_tests/ssh.py":184
  *                     2)
- * 
+ *
  *     def test_ssh_env_vars(self):             # <<<<<<<<<<<<<<
  *         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'
  *         for sh in self.all_possible_sh:
@@ -8928,7 +8928,7 @@ static PyObject *__pyx_lambda_funcdef_lambda2(PyObject *__pyx_self) {
  *                 self.assertNotIn('COLORTERM', pty.screen_contents())
  *                 pty.wait_till(lambda: '/cwd' in pty.screen_contents())             # <<<<<<<<<<<<<<
  *                 self.assertTrue(pty.is_echo_on())
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9002,7 +9002,7 @@ static PyObject *__pyx_lambda_funcdef_lambda3(PyObject *__pyx_self) {
 
 /* "smelly_tests/ssh.py":184
  *                     2)
- * 
+ *
  *     def test_ssh_env_vars(self):             # <<<<<<<<<<<<<<
  *         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'
  *         for sh in self.all_possible_sh:
@@ -9049,7 +9049,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_12test_ssh_env_vars(CYT
   }
 
   /* "smelly_tests/ssh.py":185
- * 
+ *
  *     def test_ssh_env_vars(self):
  *         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'             # <<<<<<<<<<<<<<
  *         for sh in self.all_possible_sh:
@@ -9507,7 +9507,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_12test_ssh_env_vars(CYT
  *                 self.assertNotIn('COLORTERM', pty.screen_contents())
  *                 pty.wait_till(lambda: '/cwd' in pty.screen_contents())             # <<<<<<<<<<<<<<
  *                 self.assertTrue(pty.is_echo_on())
- * 
+ *
  */
                     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_pty, __pyx_n_s_wait_till); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 207, __pyx_L25_error)
                     __Pyx_GOTREF(__pyx_t_6);
@@ -9535,7 +9535,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_12test_ssh_env_vars(CYT
  *                 self.assertNotIn('COLORTERM', pty.screen_contents())
  *                 pty.wait_till(lambda: '/cwd' in pty.screen_contents())
  *                 self.assertTrue(pty.is_echo_on())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_bootstrap_with_different_launchers(self):
  */
                     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 208, __pyx_L25_error)
@@ -9616,7 +9616,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_12test_ssh_env_vars(CYT
                       __Pyx_GIVEREF(__pyx_t_6);
                       __Pyx_XGIVEREF(__pyx_t_18);
                       __Pyx_ErrRestoreWithState(__pyx_t_8, __pyx_t_6, __pyx_t_18);
-                      __pyx_t_8 = 0; __pyx_t_6 = 0; __pyx_t_18 = 0; 
+                      __pyx_t_8 = 0; __pyx_t_6 = 0; __pyx_t_18 = 0;
                       __PYX_ERR(0, 187, __pyx_L27_except_error)
                     }
                     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -9691,7 +9691,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_12test_ssh_env_vars(CYT
               __Pyx_GIVEREF(__pyx_t_6);
               __Pyx_XGIVEREF(__pyx_t_8);
               __Pyx_ErrRestoreWithState(__pyx_t_18, __pyx_t_6, __pyx_t_8);
-              __pyx_t_18 = 0; __pyx_t_6 = 0; __pyx_t_8 = 0; 
+              __pyx_t_18 = 0; __pyx_t_6 = 0; __pyx_t_8 = 0;
               __PYX_ERR(0, 187, __pyx_L13_except_error)
             }
             __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
@@ -9745,7 +9745,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_12test_ssh_env_vars(CYT
 
   /* "smelly_tests/ssh.py":184
  *                     2)
- * 
+ *
  *     def test_ssh_env_vars(self):             # <<<<<<<<<<<<<<
  *         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'
  *         for sh in self.all_possible_sh:
@@ -9775,7 +9775,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_12test_ssh_env_vars(CYT
 
 /* "smelly_tests/ssh.py":210
  *                 self.assertTrue(pty.is_echo_on())
- * 
+ *
  *     def test_ssh_bootstrap_with_different_launchers(self):             # <<<<<<<<<<<<<<
  *         for launcher in self.all_possible_sh:
  *             if 'python' in launcher:
@@ -9830,7 +9830,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
   __Pyx_RefNannySetupContext("test_ssh_bootstrap_with_different_launchers", 0);
 
   /* "smelly_tests/ssh.py":211
- * 
+ *
  *     def test_ssh_bootstrap_with_different_launchers(self):
  *         for launcher in self.all_possible_sh:             # <<<<<<<<<<<<<<
  *             if 'python' in launcher:
@@ -10139,7 +10139,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
  *                             self.check_bootstrap(
  *                                 sh, tdir, test_script='env; exit 0',             # <<<<<<<<<<<<<<
  *                                 SHELL_INTEGRATION_VALUE='', launcher=q)
- * 
+ *
  */
                           __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 219, __pyx_L32_error)
                           __Pyx_GOTREF(__pyx_t_11);
@@ -10158,7 +10158,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
  *                             self.check_bootstrap(
  *                                 sh, tdir, test_script='env; exit 0',
  *                                 SHELL_INTEGRATION_VALUE='', launcher=q)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_leading_data(self):
  */
                           if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_launcher, __pyx_v_q) < 0) __PYX_ERR(0, 220, __pyx_L32_error)
@@ -10216,7 +10216,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
                             __Pyx_GIVEREF(__pyx_t_1);
                             __Pyx_XGIVEREF(__pyx_t_11);
                             __Pyx_ErrRestoreWithState(__pyx_t_14, __pyx_t_1, __pyx_t_11);
-                            __pyx_t_14 = 0; __pyx_t_1 = 0; __pyx_t_11 = 0; 
+                            __pyx_t_14 = 0; __pyx_t_1 = 0; __pyx_t_11 = 0;
                             __PYX_ERR(0, 218, __pyx_L34_except_error)
                           }
                           __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
@@ -10289,7 +10289,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
                     __Pyx_GIVEREF(__pyx_t_1);
                     __Pyx_XGIVEREF(__pyx_t_14);
                     __Pyx_ErrRestoreWithState(__pyx_t_11, __pyx_t_1, __pyx_t_14);
-                    __pyx_t_11 = 0; __pyx_t_1 = 0; __pyx_t_14 = 0; 
+                    __pyx_t_11 = 0; __pyx_t_1 = 0; __pyx_t_14 = 0;
                     __PYX_ERR(0, 218, __pyx_L20_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -10360,7 +10360,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
     /* "smelly_tests/ssh.py":211
- * 
+ *
  *     def test_ssh_bootstrap_with_different_launchers(self):
  *         for launcher in self.all_possible_sh:             # <<<<<<<<<<<<<<
  *             if 'python' in launcher:
@@ -10372,7 +10372,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
 
   /* "smelly_tests/ssh.py":210
  *                 self.assertTrue(pty.is_echo_on())
- * 
+ *
  *     def test_ssh_bootstrap_with_different_launchers(self):             # <<<<<<<<<<<<<<
  *         for launcher in self.all_possible_sh:
  *             if 'python' in launcher:
@@ -10402,7 +10402,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_14test_ssh_bootstrap_wi
 
 /* "smelly_tests/ssh.py":223
  *                                 SHELL_INTEGRATION_VALUE='', launcher=q)
- * 
+ *
  *     def test_ssh_leading_data(self):             # <<<<<<<<<<<<<<
  *         script = 'echo "ld:$leading_data"; exit 0'
  *         for sh in self.all_possible_sh:
@@ -10455,7 +10455,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_16test_ssh_leading_data
   __Pyx_RefNannySetupContext("test_ssh_leading_data", 0);
 
   /* "smelly_tests/ssh.py":224
- * 
+ *
  *     def test_ssh_leading_data(self):
  *         script = 'echo "ld:$leading_data"; exit 0'             # <<<<<<<<<<<<<<
  *         for sh in self.all_possible_sh:
@@ -10698,7 +10698,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_16test_ssh_leading_data
  *                     sh, tdir, test_script=script, SHELL_INTEGRATION_VALUE='',
  *                     pre_data='before_tarfile')
  *                 self.ae(pty.screen_contents(), 'UNTAR_DONE\nld:before_tarfile')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_login_shell_detection(self):
  */
                     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L26_error)
@@ -10809,7 +10809,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_16test_ssh_leading_data
                       __Pyx_GIVEREF(__pyx_t_1);
                       __Pyx_XGIVEREF(__pyx_t_18);
                       __Pyx_ErrRestoreWithState(__pyx_t_10, __pyx_t_1, __pyx_t_18);
-                      __pyx_t_10 = 0; __pyx_t_1 = 0; __pyx_t_18 = 0; 
+                      __pyx_t_10 = 0; __pyx_t_1 = 0; __pyx_t_18 = 0;
                       __PYX_ERR(0, 228, __pyx_L28_except_error)
                     }
                     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -10883,7 +10883,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_16test_ssh_leading_data
               __Pyx_GIVEREF(__pyx_t_1);
               __Pyx_XGIVEREF(__pyx_t_10);
               __Pyx_ErrRestoreWithState(__pyx_t_18, __pyx_t_1, __pyx_t_10);
-              __pyx_t_18 = 0; __pyx_t_1 = 0; __pyx_t_10 = 0; 
+              __pyx_t_18 = 0; __pyx_t_1 = 0; __pyx_t_10 = 0;
               __PYX_ERR(0, 228, __pyx_L14_except_error)
             }
             __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
@@ -10937,7 +10937,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_16test_ssh_leading_data
 
   /* "smelly_tests/ssh.py":223
  *                                 SHELL_INTEGRATION_VALUE='', launcher=q)
- * 
+ *
  *     def test_ssh_leading_data(self):             # <<<<<<<<<<<<<<
  *         script = 'echo "ld:$leading_data"; exit 0'
  *         for sh in self.all_possible_sh:
@@ -10967,7 +10967,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_16test_ssh_leading_data
 
 /* "smelly_tests/ssh.py":234
  *                 self.ae(pty.screen_contents(), 'UNTAR_DONE\nld:before_tarfile')
- * 
+ *
  *     def test_ssh_login_shell_detection(self):             # <<<<<<<<<<<<<<
  *         methods = []
  *         if shutil.which('python') or shutil.which('python3') or shutil.which(
@@ -11026,7 +11026,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
   __Pyx_RefNannySetupContext("test_ssh_login_shell_detection", 0);
 
   /* "smelly_tests/ssh.py":235
- * 
+ *
  *     def test_ssh_login_shell_detection(self):
  *         methods = []             # <<<<<<<<<<<<<<
  *         if shutil.which('python') or shutil.which('python3') or shutil.which(
@@ -11326,7 +11326,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
  *                 methods.append('using_passwd')
  *         self.assertTrue(methods)             # <<<<<<<<<<<<<<
  *         import pwd
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 246, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11351,7 +11351,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
  *                 methods.append('using_passwd')
  *         self.assertTrue(methods)
  *         import pwd             # <<<<<<<<<<<<<<
- * 
+ *
  *         expected_login_shell = pwd.getpwuid(os.geteuid()).pw_shell
  */
   __pyx_t_4 = __Pyx_Import(__pyx_n_s_pwd, 0, -1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 247, __pyx_L1_error)
@@ -11361,7 +11361,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
 
   /* "smelly_tests/ssh.py":249
  *         import pwd
- * 
+ *
  *         expected_login_shell = pwd.getpwuid(os.geteuid()).pw_shell             # <<<<<<<<<<<<<<
  *         if os.path.basename(expected_login_shell) == 'nologin':
  *             self.skipTest(
@@ -11411,7 +11411,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
   __pyx_t_1 = 0;
 
   /* "smelly_tests/ssh.py":250
- * 
+ *
  *         expected_login_shell = pwd.getpwuid(os.geteuid()).pw_shell
  *         if os.path.basename(expected_login_shell) == 'nologin':             # <<<<<<<<<<<<<<
  *             self.skipTest(
@@ -11471,7 +11471,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly_tests/ssh.py":250
- * 
+ *
  *         expected_login_shell = pwd.getpwuid(os.geteuid()).pw_shell
  *         if os.path.basename(expected_login_shell) == 'nologin':             # <<<<<<<<<<<<<<
  *             self.skipTest(
@@ -11745,7 +11745,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
  *                         test_script=f'{m}; echo "$login_shell"; exit 0',
  *                         SHELL_INTEGRATION_VALUE='')
  *                     self.assertIn(expected_login_shell, pty.screen_contents())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ssh_shell_integration(self):
  */
                       __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIn); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 262, __pyx_L36_error)
@@ -11856,7 +11856,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
                         __Pyx_GIVEREF(__pyx_t_4);
                         __Pyx_XGIVEREF(__pyx_t_14);
                         __Pyx_ErrRestoreWithState(__pyx_t_22, __pyx_t_4, __pyx_t_14);
-                        __pyx_t_22 = 0; __pyx_t_4 = 0; __pyx_t_14 = 0; 
+                        __pyx_t_22 = 0; __pyx_t_4 = 0; __pyx_t_14 = 0;
                         __PYX_ERR(0, 257, __pyx_L38_except_error)
                       }
                       __Pyx_XDECREF(__pyx_t_22); __pyx_t_22 = 0;
@@ -11930,7 +11930,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
                 __Pyx_GIVEREF(__pyx_t_4);
                 __Pyx_XGIVEREF(__pyx_t_22);
                 __Pyx_ErrRestoreWithState(__pyx_t_14, __pyx_t_4, __pyx_t_22);
-                __pyx_t_14 = 0; __pyx_t_4 = 0; __pyx_t_22 = 0; 
+                __pyx_t_14 = 0; __pyx_t_4 = 0; __pyx_t_22 = 0;
                 __PYX_ERR(0, 257, __pyx_L24_except_error)
               }
               __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
@@ -11995,7 +11995,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
 
   /* "smelly_tests/ssh.py":234
  *                 self.ae(pty.screen_contents(), 'UNTAR_DONE\nld:before_tarfile')
- * 
+ *
  *     def test_ssh_login_shell_detection(self):             # <<<<<<<<<<<<<<
  *         methods = []
  *         if shutil.which('python') or shutil.which('python3') or shutil.which(
@@ -12029,7 +12029,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_18test_ssh_login_shell_
 
 /* "smelly_tests/ssh.py":264
  *                     self.assertIn(expected_login_shell, pty.screen_contents())
- * 
+ *
  *     def test_ssh_shell_integration(self):             # <<<<<<<<<<<<<<
  *         ok_login_shell = ''
  *         for sh in self.all_possible_sh:
@@ -12395,7 +12395,7 @@ static PyObject *__pyx_lambda_funcdef_lambda7(PyObject *__pyx_self) {
 
 /* "smelly_tests/ssh.py":264
  *                     self.assertIn(expected_login_shell, pty.screen_contents())
- * 
+ *
  *     def test_ssh_shell_integration(self):             # <<<<<<<<<<<<<<
  *         ok_login_shell = ''
  *         for sh in self.all_possible_sh:
@@ -12449,7 +12449,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
   }
 
   /* "smelly_tests/ssh.py":265
- * 
+ *
  *     def test_ssh_shell_integration(self):
  *         ok_login_shell = ''             # <<<<<<<<<<<<<<
  *         for sh in self.all_possible_sh:
@@ -13090,7 +13090,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
                         __Pyx_GIVEREF(__pyx_t_8);
                         __Pyx_XGIVEREF(__pyx_t_24);
                         __Pyx_ErrRestoreWithState(__pyx_t_9, __pyx_t_8, __pyx_t_24);
-                        __pyx_t_9 = 0; __pyx_t_8 = 0; __pyx_t_24 = 0; 
+                        __pyx_t_9 = 0; __pyx_t_8 = 0; __pyx_t_24 = 0;
                         __PYX_ERR(0, 273, __pyx_L32_except_error)
                       }
                       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -13164,7 +13164,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
                 __Pyx_GIVEREF(__pyx_t_8);
                 __Pyx_XGIVEREF(__pyx_t_9);
                 __Pyx_ErrRestoreWithState(__pyx_t_24, __pyx_t_8, __pyx_t_9);
-                __pyx_t_24 = 0; __pyx_t_8 = 0; __pyx_t_9 = 0; 
+                __pyx_t_24 = 0; __pyx_t_8 = 0; __pyx_t_9 = 0;
                 __PYX_ERR(0, 273, __pyx_L18_except_error)
               }
               __Pyx_XDECREF(__pyx_t_24); __pyx_t_24 = 0;
@@ -13619,7 +13619,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
  *                             num_lines + 2)
  *                         self.assertEqual(pty.screen.cursor.shape, 0)             # <<<<<<<<<<<<<<
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  */
                 __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 299, __pyx_L60_error)
                 __Pyx_GOTREF(__pyx_t_16);
@@ -13684,7 +13684,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
  *                             num_lines + 2)
  *                         self.assertEqual(pty.screen.cursor.shape, 0)
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',
  */
                 __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertNotIn); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 300, __pyx_L60_error)
@@ -13780,7 +13780,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
                   __Pyx_GIVEREF(__pyx_t_16);
                   __Pyx_XGIVEREF(__pyx_t_8);
                   __Pyx_ErrRestoreWithState(__pyx_t_24, __pyx_t_16, __pyx_t_8);
-                  __pyx_t_24 = 0; __pyx_t_16 = 0; __pyx_t_8 = 0; 
+                  __pyx_t_24 = 0; __pyx_t_16 = 0; __pyx_t_8 = 0;
                   __PYX_ERR(0, 288, __pyx_L62_except_error)
                 }
                 __Pyx_XDECREF(__pyx_t_24); __pyx_t_24 = 0;
@@ -13853,7 +13853,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
 
   /* "smelly_tests/ssh.py":264
  *                     self.assertIn(expected_login_shell, pty.screen_contents())
- * 
+ *
  *     def test_ssh_shell_integration(self):             # <<<<<<<<<<<<<<
  *         ok_login_shell = ''
  *         for sh in self.all_possible_sh:
@@ -13886,7 +13886,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_20test_ssh_shell_integr
 
 /* "smelly_tests/ssh.py":302
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',             # <<<<<<<<<<<<<<
  *                         SHELL_INTEGRATION_VALUE='enabled', test_script='',
  *                         pre_data='', ssh_opts=None, launcher='sh'):
@@ -14053,7 +14053,7 @@ static PyObject *__pyx_pw_12smelly_tests_3ssh_9SSHKitten_23check_bootstrap(PyObj
 
   /* "smelly_tests/ssh.py":302
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',             # <<<<<<<<<<<<<<
  *                         SHELL_INTEGRATION_VALUE='enabled', test_script='',
  *                         pre_data='', ssh_opts=None, launcher='sh'):
@@ -14066,7 +14066,7 @@ static PyObject *__pyx_pw_12smelly_tests_3ssh_9SSHKitten_23check_bootstrap(PyObj
 
 /* "smelly_tests/ssh.py":343
  *             del script
- * 
+ *
  *             def check_untar_or_fail():             # <<<<<<<<<<<<<<
  *                 q = pty.screen_contents()
  *                 if 'bzip2' in q:
@@ -14105,7 +14105,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_15check_bootstrap_check
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/ssh.py":344
- * 
+ *
  *             def check_untar_or_fail():
  *                 q = pty.screen_contents()             # <<<<<<<<<<<<<<
  *                 if 'bzip2' in q:
@@ -14148,7 +14148,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_15check_bootstrap_check
  *                     raise ValueError(
  *                         'Untarring failed with screen contents:\n' + q)             # <<<<<<<<<<<<<<
  *                 return 'UNTAR_DONE' in q
- * 
+ *
  */
     __pyx_t_1 = PyNumber_Add(__pyx_kp_s_Untarring_failed_with_screen_con, __pyx_v_q); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 347, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -14180,7 +14180,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_15check_bootstrap_check
  *                     raise ValueError(
  *                         'Untarring failed with screen contents:\n' + q)
  *                 return 'UNTAR_DONE' in q             # <<<<<<<<<<<<<<
- * 
+ *
  *             pty.wait_till(check_untar_or_fail, timeout=30)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14193,7 +14193,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_15check_bootstrap_check
 
   /* "smelly_tests/ssh.py":343
  *             del script
- * 
+ *
  *             def check_untar_or_fail():             # <<<<<<<<<<<<<<
  *                 q = pty.screen_contents()
  *                 if 'bzip2' in q:
@@ -14396,7 +14396,7 @@ static PyObject *__pyx_lambda_funcdef_lambda9(PyObject *__pyx_self) {
 
 /* "smelly_tests/ssh.py":302
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',             # <<<<<<<<<<<<<<
  *                         SHELL_INTEGRATION_VALUE='enabled', test_script='',
  *                         pre_data='', ssh_opts=None, launcher='sh'):
@@ -14765,13 +14765,13 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_5);
@@ -15251,7 +15251,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
  *             if pre_data:
  *                 pty.write_buf = pre_data.encode('utf-8')             # <<<<<<<<<<<<<<
  *             del script
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_pre_data, __pyx_n_s_encode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 340, __pyx_L13_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -15286,7 +15286,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
  *             if pre_data:
  *                 pty.write_buf = pre_data.encode('utf-8')
  *             del script             # <<<<<<<<<<<<<<
- * 
+ *
  *             def check_untar_or_fail():
  */
     __Pyx_DECREF(__pyx_v_script);
@@ -15294,7 +15294,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
 
     /* "smelly_tests/ssh.py":343
  *             del script
- * 
+ *
  *             def check_untar_or_fail():             # <<<<<<<<<<<<<<
  *                 q = pty.screen_contents()
  *                 if 'bzip2' in q:
@@ -15306,7 +15306,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
 
     /* "smelly_tests/ssh.py":350
  *                 return 'UNTAR_DONE' in q
- * 
+ *
  *             pty.wait_till(check_untar_or_fail, timeout=30)             # <<<<<<<<<<<<<<
  *             self.assertTrue(os.path.exists(os.path.join(
  *                 home_dir, '.terminfo/smelly.terminfo')))
@@ -15329,7 +15329,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
     /* "smelly_tests/ssh.py":351
- * 
+ *
  *             pty.wait_till(check_untar_or_fail, timeout=30)
  *             self.assertTrue(os.path.exists(os.path.join(             # <<<<<<<<<<<<<<
  *                 home_dir, '.terminfo/smelly.terminfo')))
@@ -15790,7 +15790,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
                   __Pyx_GIVEREF(__pyx_t_5);
                   __Pyx_XGIVEREF(__pyx_t_3);
                   __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_5, __pyx_t_3);
-                  __pyx_t_1 = 0; __pyx_t_5 = 0; __pyx_t_3 = 0; 
+                  __pyx_t_1 = 0; __pyx_t_5 = 0; __pyx_t_3 = 0;
                   __PYX_ERR(0, 363, __pyx_L25_except_error)
                 }
                 __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15979,7 +15979,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
                 __Pyx_GIVEREF(__pyx_t_5);
                 __Pyx_XGIVEREF(__pyx_t_1);
                 __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_5, __pyx_t_1);
-                __pyx_t_3 = 0; __pyx_t_5 = 0; __pyx_t_1 = 0; 
+                __pyx_t_3 = 0; __pyx_t_5 = 0; __pyx_t_1 = 0;
                 __PYX_ERR(0, 363, __pyx_L39_except_error)
               }
               __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -16028,7 +16028,7 @@ static PyObject *__pyx_pf_12smelly_tests_3ssh_9SSHKitten_22check_bootstrap(CYTHO
 
   /* "smelly_tests/ssh.py":302
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',             # <<<<<<<<<<<<<<
  *                         SHELL_INTEGRATION_VALUE='enabled', test_script='',
  *                         pre_data='', ssh_opts=None, launcher='sh'):
@@ -17663,7 +17663,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly_tests/ssh.py":51
- * 
+ *
  *     def test_ssh_connection_data(self):
  *         def t(             # <<<<<<<<<<<<<<
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -17679,7 +17679,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":61
  *                     port, identity_file, extra_args))
- * 
+ *
  *         t('ssh main')             # <<<<<<<<<<<<<<
  *         t('ssh un@ip -i ident -p34', host='un@ip', port=34, identity_file='ident')
  *         t('ssh un@ip -iident -p34', host='un@ip', port=34, identity_file='ident')
@@ -17689,7 +17689,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
 
   /* "smelly_tests/ssh.py":62
- * 
+ *
  *         t('ssh main')
  *         t('ssh un@ip -i ident -p34', host='un@ip', port=34, identity_file='ident')             # <<<<<<<<<<<<<<
  *         t('ssh un@ip -iident -p34', host='un@ip', port=34, identity_file='ident')
@@ -17748,7 +17748,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         t('ssh --kitten=one -p 12 --kitten two -ix main', identity_file='x',
  *           port=12, extra_args=(('--kitten', 'one'), ('--kitten', 'two')))             # <<<<<<<<<<<<<<
  *         self.assertTrue(runtime_dir())
- * 
+ *
  */
   __pyx_tuple__12 = PyTuple_Pack(2, __pyx_kp_s_kitten, __pyx_n_s_one); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
@@ -17761,7 +17761,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__14);
 
   /* "smelly_tests/ssh.py":71
- * 
+ *
  *     def test_ssh_config_parsing(self):
  *         def parse(conf, hostname='unmatched_host', username=''):             # <<<<<<<<<<<<<<
  *             return load_config(
@@ -17777,7 +17777,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":76
  *                 hostname=hostname, username=username)
- * 
+ *
  *         self.ae(parse('').env, {})             # <<<<<<<<<<<<<<
  *         self.ae(parse('env a=b').env, {'a': 'b'})
  *         conf = 'env a=b\nhostname 2\nenv a=c\nenv b=b'
@@ -17787,7 +17787,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__18);
 
   /* "smelly_tests/ssh.py":77
- * 
+ *
  *         self.ae(parse('').env, {})
  *         self.ae(parse('env a=b').env, {'a': 'b'})             # <<<<<<<<<<<<<<
  *         conf = 'env a=b\nhostname 2\nenv a=c\nenv b=b'
@@ -17820,11 +17820,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__21);
 
   /* "smelly_tests/ssh.py":114
- * 
+ *
  *         def touch(p):
  *             with open(os.path.join(local_home, p), 'w') as f:             # <<<<<<<<<<<<<<
  *                 f.write(simple_data)
- * 
+ *
  */
   __pyx_tuple__22 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
@@ -17832,7 +17832,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":113
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  *         def touch(p):             # <<<<<<<<<<<<<<
  *             with open(os.path.join(local_home, p), 'w') as f:
  *                 f.write(simple_data)
@@ -17877,7 +17877,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":343
  *             del script
- * 
+ *
  *             def check_untar_or_fail():             # <<<<<<<<<<<<<<
  *                 q = pty.screen_contents()
  *                 if 'bzip2' in q:
@@ -17888,8 +17888,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_ssh_py, __pyx_n_s_check_untar_or_fail, 343, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 343, __pyx_L1_error)
 
   /* "smelly_tests/ssh.py":25
- * 
- * 
+ *
+ *
  * def files_in(path):             # <<<<<<<<<<<<<<
  *     for record in os.walk(path):
  *         for f in record[-1]:
@@ -17900,7 +17900,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_ssh_py, __pyx_n_s_files_in, 25, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 25, __pyx_L1_error)
 
   /* "smelly_tests/ssh.py":32
- * 
+ *
  * class SSHKitten(BaseTest):
  *     def test_basic_pty_operations(self):             # <<<<<<<<<<<<<<
  *         pty = self.create_pty('echo hello')
@@ -17913,7 +17913,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":50
  *         self.ae(pty.screen_contents(), '13 77 770 260')
- * 
+ *
  *     def test_ssh_connection_data(self):             # <<<<<<<<<<<<<<
  *         def t(
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -17925,7 +17925,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":70
  *         self.assertTrue(runtime_dir())
- * 
+ *
  *     def test_ssh_config_parsing(self):             # <<<<<<<<<<<<<<
  *         def parse(conf, hostname='unmatched_host', username=''):
  *             return load_config(
@@ -17937,7 +17937,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":92
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})
- * 
+ *
  *     def test_ssh_bootstrap_sh_cmd_limit(self):             # <<<<<<<<<<<<<<
  *         # dropbear has a 9000 bytes maximum command length limit
  *         sh_script, _, _ = bootstrap_script(
@@ -17961,10 +17961,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":110
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
- * 
+ *
  *     def test_ssh_copy(self):             # <<<<<<<<<<<<<<
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  */
   __pyx_tuple__45 = PyTuple_Pack(13, __pyx_n_s_self, __pyx_n_s_simple_data, __pyx_n_s_touch, __pyx_n_s_touch, __pyx_n_s_sh, __pyx_n_s_remote_home, __pyx_n_s_local_home, __pyx_n_s_conf, __pyx_n_s_copy, __pyx_n_s_tname, __pyx_n_s_w, __pyx_n_s_f, __pyx_n_s_contents); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
@@ -17973,7 +17973,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":184
  *                     2)
- * 
+ *
  *     def test_ssh_env_vars(self):             # <<<<<<<<<<<<<<
  *         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'
  *         for sh in self.all_possible_sh:
@@ -17985,7 +17985,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":210
  *                 self.assertTrue(pty.is_echo_on())
- * 
+ *
  *     def test_ssh_bootstrap_with_different_launchers(self):             # <<<<<<<<<<<<<<
  *         for launcher in self.all_possible_sh:
  *             if 'python' in launcher:
@@ -17997,7 +17997,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":223
  *                                 SHELL_INTEGRATION_VALUE='', launcher=q)
- * 
+ *
  *     def test_ssh_leading_data(self):             # <<<<<<<<<<<<<<
  *         script = 'echo "ld:$leading_data"; exit 0'
  *         for sh in self.all_possible_sh:
@@ -18009,7 +18009,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":234
  *                 self.ae(pty.screen_contents(), 'UNTAR_DONE\nld:before_tarfile')
- * 
+ *
  *     def test_ssh_login_shell_detection(self):             # <<<<<<<<<<<<<<
  *         methods = []
  *         if shutil.which('python') or shutil.which('python3') or shutil.which(
@@ -18021,7 +18021,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":264
  *                     self.assertIn(expected_login_shell, pty.screen_contents())
- * 
+ *
  *     def test_ssh_shell_integration(self):             # <<<<<<<<<<<<<<
  *         ok_login_shell = ''
  *         for sh in self.all_possible_sh:
@@ -18033,7 +18033,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/ssh.py":302
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',             # <<<<<<<<<<<<<<
  *                         SHELL_INTEGRATION_VALUE='enabled', test_script='',
  *                         pre_data='', ssh_opts=None, launcher='sh'):
@@ -18425,8 +18425,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/ssh.py":5
- * 
- * 
+ *
+ *
  * import glob             # <<<<<<<<<<<<<<
  * import os
  * import shutil
@@ -18437,7 +18437,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/ssh.py":6
- * 
+ *
  * import glob
  * import os             # <<<<<<<<<<<<<<
  * import shutil
@@ -18477,7 +18477,7 @@ if (!__Pyx_RefNanny) {
  * import tempfile
  * from contextlib import suppress             # <<<<<<<<<<<<<<
  * from functools import lru_cache
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18497,7 +18497,7 @@ if (!__Pyx_RefNanny) {
  * import tempfile
  * from contextlib import suppress
  * from functools import lru_cache             # <<<<<<<<<<<<<<
- * 
+ *
  * from wellies.ssh.config import load_config
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -18516,7 +18516,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":12
  * from functools import lru_cache
- * 
+ *
  * from wellies.ssh.config import load_config             # <<<<<<<<<<<<<<
  * from wellies.ssh.main import bootstrap_script, get_connection_data, wrap_bootstrap_script
  * from wellies.ssh.options.types import Options as SSHOptions
@@ -18536,7 +18536,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/ssh.py":13
- * 
+ *
  * from wellies.ssh.config import load_config
  * from wellies.ssh.main import bootstrap_script, get_connection_data, wrap_bootstrap_script             # <<<<<<<<<<<<<<
  * from wellies.ssh.options.types import Options as SSHOptions
@@ -18666,7 +18666,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.constants import is_macos, runtime_dir
  * from smelly.fast_data_types import CURSOR_BEAM, shm_unlink             # <<<<<<<<<<<<<<
  * from smelly.utils import SSHConnectionData
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18693,7 +18693,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.constants import is_macos, runtime_dir
  * from smelly.fast_data_types import CURSOR_BEAM, shm_unlink
  * from smelly.utils import SSHConnectionData             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 19, __pyx_L1_error)
@@ -18712,10 +18712,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":21
  * from smelly.utils import SSHConnectionData
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
  * from .shell_integration import bash_ok, basic_shell_env
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18732,11 +18732,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/ssh.py":22
- * 
+ *
  * from . import BaseTest
  * from .shell_integration import bash_ok, basic_shell_env             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18760,8 +18760,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/ssh.py":25
- * 
- * 
+ *
+ *
  * def files_in(path):             # <<<<<<<<<<<<<<
  *     for record in os.walk(path):
  *         for f in record[-1]:
@@ -18772,8 +18772,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/ssh.py":31
- * 
- * 
+ *
+ *
  * class SSHKitten(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_basic_pty_operations(self):
  *         pty = self.create_pty('echo hello')
@@ -18791,7 +18791,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/ssh.py":32
- * 
+ *
  * class SSHKitten(BaseTest):
  *     def test_basic_pty_operations(self):             # <<<<<<<<<<<<<<
  *         pty = self.create_pty('echo hello')
@@ -18804,7 +18804,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":50
  *         self.ae(pty.screen_contents(), '13 77 770 260')
- * 
+ *
  *     def test_ssh_connection_data(self):             # <<<<<<<<<<<<<<
  *         def t(
  *                 cmdline, binary='ssh', host='main', port=None,
@@ -18816,7 +18816,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":70
  *         self.assertTrue(runtime_dir())
- * 
+ *
  *     def test_ssh_config_parsing(self):             # <<<<<<<<<<<<<<
  *         def parse(conf, hostname='unmatched_host', username=''):
  *             return load_config(
@@ -18828,7 +18828,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":92
  *         self.ae(parse(conf, '2').env, {'a': 'c', 'b': 'b'})
- * 
+ *
  *     def test_ssh_bootstrap_sh_cmd_limit(self):             # <<<<<<<<<<<<<<
  *         # dropbear has a 9000 bytes maximum command length limit
  *         sh_script, _, _ = bootstrap_script(
@@ -18839,7 +18839,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/ssh.py":102
- * 
+ *
  *     @property
  *     @lru_cache()             # <<<<<<<<<<<<<<
  *     def all_possible_sh(self):
@@ -18891,7 +18891,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":101
  *         self.assertLessEqual(sum(len(x) for x in rcmd), 9000)
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     @lru_cache()
  *     def all_possible_sh(self):
@@ -18904,10 +18904,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":110
  *                 ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
- * 
+ *
  *     def test_ssh_copy(self):             # <<<<<<<<<<<<<<
  *         simple_data = 'rkjlhfwf9whoaa'
- * 
+ *
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_3ssh_9SSHKitten_11test_ssh_copy, 0, __pyx_n_s_SSHKitten_test_ssh_copy, NULL, __pyx_n_s_smelly_tests_ssh, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -18916,7 +18916,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":184
  *                     2)
- * 
+ *
  *     def test_ssh_env_vars(self):             # <<<<<<<<<<<<<<
  *         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'
  *         for sh in self.all_possible_sh:
@@ -18928,7 +18928,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":210
  *                 self.assertTrue(pty.is_echo_on())
- * 
+ *
  *     def test_ssh_bootstrap_with_different_launchers(self):             # <<<<<<<<<<<<<<
  *         for launcher in self.all_possible_sh:
  *             if 'python' in launcher:
@@ -18940,7 +18940,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":223
  *                                 SHELL_INTEGRATION_VALUE='', launcher=q)
- * 
+ *
  *     def test_ssh_leading_data(self):             # <<<<<<<<<<<<<<
  *         script = 'echo "ld:$leading_data"; exit 0'
  *         for sh in self.all_possible_sh:
@@ -18952,7 +18952,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":234
  *                 self.ae(pty.screen_contents(), 'UNTAR_DONE\nld:before_tarfile')
- * 
+ *
  *     def test_ssh_login_shell_detection(self):             # <<<<<<<<<<<<<<
  *         methods = []
  *         if shutil.which('python') or shutil.which('python3') or shutil.which(
@@ -18964,7 +18964,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":264
  *                     self.assertIn(expected_login_shell, pty.screen_contents())
- * 
+ *
  *     def test_ssh_shell_integration(self):             # <<<<<<<<<<<<<<
  *         ok_login_shell = ''
  *         for sh in self.all_possible_sh:
@@ -18976,7 +18976,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/ssh.py":302
  *                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
- * 
+ *
  *     def check_bootstrap(self, sh, home_dir, login_shell='',             # <<<<<<<<<<<<<<
  *                         SHELL_INTEGRATION_VALUE='enabled', test_script='',
  *                         pre_data='', ssh_opts=None, launcher='sh'):
@@ -18988,8 +18988,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/ssh.py":31
- * 
- * 
+ *
+ *
  * class SSHKitten(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_basic_pty_operations(self):
  *         pty = self.create_pty('echo hello')
@@ -19005,7 +19005,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/ssh.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

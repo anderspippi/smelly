@@ -1633,8 +1633,8 @@ static PyObject *__pyx_codeobj__15;
 /* Late includes */
 
 /* "welly/transfer/main.py":19
- * 
- * 
+ *
+ *
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''\
  * --direction -d
@@ -1660,7 +1660,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_option_text(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("option_text", 0);
 
   /* "welly/transfer/main.py":20
- * 
+ *
  * def option_text() -> str:
  *     return '''\             # <<<<<<<<<<<<<<
  * --direction -d
@@ -1672,8 +1672,8 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_option_text(CYTHON_UNUSED PyObj
   goto __pyx_L0;
 
   /* "welly/transfer/main.py":19
- * 
- * 
+ *
+ *
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''\
  * --direction -d
@@ -1687,11 +1687,11 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_option_text(CYTHON_UNUSED PyObj
 }
 
 /* "welly/transfer/main.py":62
- * 
- * 
+ *
+ *
  * def parse_transfer_args(args: List[str]) -> Tuple[TransferCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args[1:], option_text, usage, help_text, 'smelly +kitten transfer', result_class=TransferCLIOptions)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1723,11 +1723,11 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_2parse_transfer_args(CYTHON_UNU
   __Pyx_RefNannySetupContext("parse_transfer_args", 0);
 
   /* "welly/transfer/main.py":63
- * 
+ *
  * def parse_transfer_args(args: List[str]) -> Tuple[TransferCLIOptions, List[str]]:
  *     return parse_args(args[1:], option_text, usage, help_text, 'smelly +kitten transfer', result_class=TransferCLIOptions)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_parse_args); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -1773,11 +1773,11 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_2parse_transfer_args(CYTHON_UNU
   goto __pyx_L0;
 
   /* "welly/transfer/main.py":62
- * 
- * 
+ *
+ *
  * def parse_transfer_args(args: List[str]) -> Tuple[TransferCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args[1:], option_text, usage, help_text, 'smelly +kitten transfer', result_class=TransferCLIOptions)
- * 
+ *
  */
 
   /* function exit code */
@@ -1797,8 +1797,8 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_2parse_transfer_args(CYTHON_UNU
 }
 
 /* "welly/transfer/main.py":66
- * 
- * 
+ *
+ *
  * def read_bypass(loc: str) -> str:             # <<<<<<<<<<<<<<
  *     if not loc:
  *         return ''
@@ -1849,7 +1849,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
   __Pyx_INCREF(__pyx_v_loc);
 
   /* "welly/transfer/main.py":67
- * 
+ *
  * def read_bypass(loc: str) -> str:
  *     if not loc:             # <<<<<<<<<<<<<<
  *         return ''
@@ -1872,7 +1872,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
     goto __pyx_L0;
 
     /* "welly/transfer/main.py":67
- * 
+ *
  * def read_bypass(loc: str) -> str:
  *     if not loc:             # <<<<<<<<<<<<<<
  *         return ''
@@ -2055,7 +2055,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
               __Pyx_GIVEREF(__pyx_t_4);
               __Pyx_XGIVEREF(__pyx_t_3);
               __Pyx_ErrRestoreWithState(__pyx_t_6, __pyx_t_4, __pyx_t_3);
-              __pyx_t_6 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0; 
+              __pyx_t_6 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0;
               __PYX_ERR(0, 70, __pyx_L14_except_error)
             }
             __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -2345,7 +2345,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
               __Pyx_GIVEREF(__pyx_t_3);
               __Pyx_XGIVEREF(__pyx_t_4);
               __Pyx_ErrRestoreWithState(__pyx_t_6, __pyx_t_3, __pyx_t_4);
-              __pyx_t_6 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0; 
+              __pyx_t_6 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0;
               __PYX_ERR(0, 75, __pyx_L33_except_error)
             }
             __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -2431,7 +2431,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
  *     if loc == '-':
  *         return sys.stdin.read()             # <<<<<<<<<<<<<<
  *     return loc
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_sys); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -2475,8 +2475,8 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
  *     if loc == '-':
  *         return sys.stdin.read()
  *     return loc             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_loc);
@@ -2484,8 +2484,8 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "welly/transfer/main.py":66
- * 
- * 
+ *
+ *
  * def read_bypass(loc: str) -> str:             # <<<<<<<<<<<<<<
  *     if not loc:
  *         return ''
@@ -2508,8 +2508,8 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_4read_bypass(CYTHON_UNUSED PyOb
 }
 
 /* "welly/transfer/main.py":82
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     cli_opts, items = parse_transfer_args(args)
  *     if cli_opts.permissions_bypass:
@@ -2549,7 +2549,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "welly/transfer/main.py":83
- * 
+ *
  * def main(args: List[str]) -> None:
  *     cli_opts, items = parse_transfer_args(args)             # <<<<<<<<<<<<<<
  *     if cli_opts.permissions_bypass:
@@ -2582,11 +2582,11 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -2628,7 +2628,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
  *     cli_opts, items = parse_transfer_args(args)
  *     if cli_opts.permissions_bypass:             # <<<<<<<<<<<<<<
  *         cli_opts.permissions_bypass = read_bypass(cli_opts.permissions_bypass).strip()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_cli_opts, __pyx_n_s_permissions_bypass); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2640,7 +2640,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
  *     cli_opts, items = parse_transfer_args(args)
  *     if cli_opts.permissions_bypass:
  *         cli_opts.permissions_bypass = read_bypass(cli_opts.permissions_bypass).strip()             # <<<<<<<<<<<<<<
- * 
+ *
  *     if not items:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_read_bypass); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
@@ -2689,13 +2689,13 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
  *     cli_opts, items = parse_transfer_args(args)
  *     if cli_opts.permissions_bypass:             # <<<<<<<<<<<<<<
  *         cli_opts.permissions_bypass = read_bypass(cli_opts.permissions_bypass).strip()
- * 
+ *
  */
   }
 
   /* "welly/transfer/main.py":87
  *         cli_opts.permissions_bypass = read_bypass(cli_opts.permissions_bypass).strip()
- * 
+ *
  *     if not items:             # <<<<<<<<<<<<<<
  *         raise SystemExit('Usage: smelly +kitten transfer file_or_directory ...')
  *     if cli_opts.direction == 'send':
@@ -2705,7 +2705,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
   if (unlikely(__pyx_t_8)) {
 
     /* "welly/transfer/main.py":88
- * 
+ *
  *     if not items:
  *         raise SystemExit('Usage: smelly +kitten transfer file_or_directory ...')             # <<<<<<<<<<<<<<
  *     if cli_opts.direction == 'send':
@@ -2719,7 +2719,7 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
 
     /* "welly/transfer/main.py":87
  *         cli_opts.permissions_bypass = read_bypass(cli_opts.permissions_bypass).strip()
- * 
+ *
  *     if not items:             # <<<<<<<<<<<<<<
  *         raise SystemExit('Usage: smelly +kitten transfer file_or_directory ...')
  *     if cli_opts.direction == 'send':
@@ -2809,8 +2809,8 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
  *         send_main(cli_opts, items)
  *     else:
  *         receive_main(cli_opts, items)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*else*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_receive_main); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -2865,8 +2865,8 @@ static PyObject *__pyx_pf_5welly_8transfer_4main_6main(CYTHON_UNUSED PyObject *_
   __pyx_L7:;
 
   /* "welly/transfer/main.py":82
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     cli_opts, items = parse_transfer_args(args)
  *     if cli_opts.permissions_bypass:
@@ -3016,11 +3016,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/transfer/main.py":63
- * 
+ *
  * def parse_transfer_args(args: List[str]) -> Tuple[TransferCLIOptions, List[str]]:
  *     return parse_args(args[1:], option_text, usage, help_text, 'smelly +kitten transfer', result_class=TransferCLIOptions)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_slice_ = PySlice_New(__pyx_int_1, Py_None, Py_None); if (unlikely(!__pyx_slice_)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice_);
@@ -3038,7 +3038,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__3);
 
   /* "welly/transfer/main.py":88
- * 
+ *
  *     if not items:
  *         raise SystemExit('Usage: smelly +kitten transfer file_or_directory ...')             # <<<<<<<<<<<<<<
  *     if cli_opts.direction == 'send':
@@ -3049,8 +3049,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__8);
 
   /* "welly/transfer/main.py":19
- * 
- * 
+ *
+ *
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''\
  * --direction -d
@@ -3058,11 +3058,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_transfer_main_py, __pyx_n_s_option_text, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 19, __pyx_L1_error)
 
   /* "welly/transfer/main.py":62
- * 
- * 
+ *
+ *
  * def parse_transfer_args(args: List[str]) -> Tuple[TransferCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args[1:], option_text, usage, help_text, 'smelly +kitten transfer', result_class=TransferCLIOptions)
- * 
+ *
  */
   __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_args); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
@@ -3070,8 +3070,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_transfer_main_py, __pyx_n_s_parse_transfer_args, 62, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 62, __pyx_L1_error)
 
   /* "welly/transfer/main.py":66
- * 
- * 
+ *
+ *
  * def read_bypass(loc: str) -> str:             # <<<<<<<<<<<<<<
  *     if not loc:
  *         return ''
@@ -3082,8 +3082,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_transfer_main_py, __pyx_n_s_read_bypass, 66, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 66, __pyx_L1_error)
 
   /* "welly/transfer/main.py":82
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     cli_opts, items = parse_transfer_args(args)
  *     if cli_opts.permissions_bypass:
@@ -3380,8 +3380,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/transfer/main.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * import sys
  * from typing import List, Tuple
@@ -3392,11 +3392,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/transfer/main.py":6
- * 
+ *
  * import os
  * import sys             # <<<<<<<<<<<<<<
  * from typing import List, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3407,7 +3407,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import sys
  * from typing import List, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.cli import parse_args
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -3433,10 +3433,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/main.py":9
  * from typing import List, Tuple
- * 
+ *
  * from smelly.cli import parse_args             # <<<<<<<<<<<<<<
  * from smelly.cli_stub import TransferCLIOptions
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3453,10 +3453,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/transfer/main.py":10
- * 
+ *
  * from smelly.cli import parse_args
  * from smelly.cli_stub import TransferCLIOptions             # <<<<<<<<<<<<<<
- * 
+ *
  * from .receive import receive_main
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -3475,10 +3475,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/main.py":12
  * from smelly.cli_stub import TransferCLIOptions
- * 
+ *
  * from .receive import receive_main             # <<<<<<<<<<<<<<
  * from .send import send_main
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3495,10 +3495,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/transfer/main.py":13
- * 
+ *
  * from .receive import receive_main
  * from .send import send_main             # <<<<<<<<<<<<<<
- * 
+ *
  * usage = 'source_files_or_directories destination_path'
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -3517,25 +3517,25 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/main.py":15
  * from .send import send_main
- * 
+ *
  * usage = 'source_files_or_directories destination_path'             # <<<<<<<<<<<<<<
  * help_text = 'Transfer files over the TTY device'
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_usage, __pyx_kp_s_source_files_or_directories_dest) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
 
   /* "welly/transfer/main.py":16
- * 
+ *
  * usage = 'source_files_or_directories destination_path'
  * help_text = 'Transfer files over the TTY device'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_help_text, __pyx_kp_s_Transfer_files_over_the_TTY_devi) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
 
   /* "welly/transfer/main.py":19
- * 
- * 
+ *
+ *
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''\
  * --direction -d
@@ -3551,11 +3551,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/transfer/main.py":62
- * 
- * 
+ *
+ *
  * def parse_transfer_args(args: List[str]) -> Tuple[TransferCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args[1:], option_text, usage, help_text, 'smelly +kitten transfer', result_class=TransferCLIOptions)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3597,8 +3597,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/transfer/main.py":66
- * 
- * 
+ *
+ *
  * def read_bypass(loc: str) -> str:             # <<<<<<<<<<<<<<
  *     if not loc:
  *         return ''
@@ -3615,8 +3615,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/transfer/main.py":82
- * 
- * 
+ *
+ *
  * def main(args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     cli_opts, items = parse_transfer_args(args)
  *     if cli_opts.permissions_bypass:
@@ -3639,8 +3639,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/transfer/main.py":95
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main(sys.argv)
  * elif __name__ == '__doc__':
@@ -3652,7 +3652,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_6) {
 
     /* "welly/transfer/main.py":96
- * 
+ *
  * if __name__ == '__main__':
  *     main(sys.argv)             # <<<<<<<<<<<<<<
  * elif __name__ == '__doc__':
@@ -3672,8 +3672,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/transfer/main.py":95
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main(sys.argv)
  * elif __name__ == '__doc__':
@@ -3764,7 +3764,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/transfer/main.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);

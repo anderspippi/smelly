@@ -986,7 +986,7 @@ struct __pyx_defaults1 {
 
 /* "smelly/clipboard.py":51
  *         return self.file.read(size)
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],             # <<<<<<<<<<<<<<
  *                                                                  Callable[[],
  *                                                                           bytes]]:
@@ -1016,7 +1016,7 @@ struct __pyx_obj_6smelly_9clipboard___pyx_scope_struct_1_chunk_creator {
 
 /* "smelly/clipboard.py":128
  *         return b''.join(ans)
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             parts: List[bytes] = []
@@ -1032,7 +1032,7 @@ struct __pyx_obj_6smelly_9clipboard___pyx_scope_struct_2_get_available_mime_type
  *                 return tuple(self.data)
  *             return tuple(x.decode('utf-8', 'replace') for x in uniq(parts))             # <<<<<<<<<<<<<<
  *         return ()
- * 
+ *
  */
 struct __pyx_obj_6smelly_9clipboard___pyx_scope_struct_3_genexpr {
   PyObject_HEAD
@@ -1046,7 +1046,7 @@ struct __pyx_obj_6smelly_9clipboard___pyx_scope_struct_3_genexpr {
 
 /* "smelly/clipboard.py":140
  *         return ()
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:             # <<<<<<<<<<<<<<
  *         data = self.data.get(mime, b'')
  *         if isinstance(data, str):
@@ -1059,7 +1059,7 @@ struct __pyx_obj_6smelly_9clipboard___pyx_scope_struct_4___call__ {
 
 /* "smelly/clipboard.py":289
  *             cp.set_mime(x)
- * 
+ *
  *     def add_base64_data(             # <<<<<<<<<<<<<<
  *             self, data: Union[str, bytes],
  *             mime: str = 'text/plain') -> None:
@@ -1072,7 +1072,7 @@ struct __pyx_obj_6smelly_9clipboard___pyx_scope_struct_5_add_base64_data {
 
 /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -2601,7 +2601,7 @@ static PyObject *__pyx_codeobj__123;
 /* Late includes */
 
 /* "smelly/clipboard.py":26
- * 
+ *
  * class Tempfile:
  *     def __init__(self, max_size: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
@@ -2689,7 +2689,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile___init__(CYTHON_UNUSED Py
  *     def __init__(self, max_size: int) -> None:
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()             # <<<<<<<<<<<<<<
  *         self.max_size = max_size
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_io); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2718,13 +2718,13 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile___init__(CYTHON_UNUSED Py
  *     def __init__(self, max_size: int) -> None:
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
  *         self.max_size = max_size             # <<<<<<<<<<<<<<
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_max_size, __pyx_v_max_size) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
 
   /* "smelly/clipboard.py":26
- * 
+ *
  * class Tempfile:
  *     def __init__(self, max_size: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
@@ -2748,7 +2748,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile___init__(CYTHON_UNUSED Py
 
 /* "smelly/clipboard.py":30
  *         self.max_size = max_size
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(
  *                 self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
@@ -2850,7 +2850,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_2rollover_if_needed(CYTHO
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":31
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:
  *         if isinstance(             # <<<<<<<<<<<<<<
  *                 self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
@@ -2907,7 +2907,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_2rollover_if_needed(CYTHO
   __pyx_L4_bool_binop_done:;
 
   /* "smelly/clipboard.py":31
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:
  *         if isinstance(             # <<<<<<<<<<<<<<
  *                 self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
@@ -2950,7 +2950,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_2rollover_if_needed(CYTHO
  *             before = self.file.getvalue()
  *             self.file = TemporaryFile()             # <<<<<<<<<<<<<<
  *             self.file.write(before)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_TemporaryFile); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -2976,7 +2976,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_2rollover_if_needed(CYTHO
  *             before = self.file.getvalue()
  *             self.file = TemporaryFile()
  *             self.file.write(before)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def write(self, data: bytes) -> None:
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_file); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
@@ -3002,7 +3002,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_2rollover_if_needed(CYTHO
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly/clipboard.py":31
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:
  *         if isinstance(             # <<<<<<<<<<<<<<
  *                 self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
@@ -3012,7 +3012,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_2rollover_if_needed(CYTHO
 
   /* "smelly/clipboard.py":30
  *         self.max_size = max_size
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(
  *                 self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
@@ -3036,7 +3036,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_2rollover_if_needed(CYTHO
 
 /* "smelly/clipboard.py":37
  *             self.file.write(before)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         self.rollover_if_needed(len(data))
  *         self.file.write(data)
@@ -3126,11 +3126,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_4write(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("write", 0);
 
   /* "smelly/clipboard.py":38
- * 
+ *
  *     def write(self, data: bytes) -> None:
  *         self.rollover_if_needed(len(data))             # <<<<<<<<<<<<<<
  *         self.file.write(data)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_rollover_if_needed); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3163,7 +3163,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_4write(CYTHON_UNUSED PyOb
  *     def write(self, data: bytes) -> None:
  *         self.rollover_if_needed(len(data))
  *         self.file.write(data)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def tell(self) -> int:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_file); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
@@ -3190,7 +3190,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_4write(CYTHON_UNUSED PyOb
 
   /* "smelly/clipboard.py":37
  *             self.file.write(before)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         self.rollover_if_needed(len(data))
  *         self.file.write(data)
@@ -3214,10 +3214,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_4write(CYTHON_UNUSED PyOb
 
 /* "smelly/clipboard.py":41
  *         self.file.write(data)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.file.tell()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3246,10 +3246,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_6tell(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("tell", 0);
 
   /* "smelly/clipboard.py":42
- * 
+ *
  *     def tell(self) -> int:
  *         return self.file.tell()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def seek(self, pos: int) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3279,10 +3279,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_6tell(CYTHON_UNUSED PyObj
 
   /* "smelly/clipboard.py":41
  *         self.file.write(data)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.file.tell()
- * 
+ *
  */
 
   /* function exit code */
@@ -3300,10 +3300,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_6tell(CYTHON_UNUSED PyObj
 
 /* "smelly/clipboard.py":44
  *         return self.file.tell()
- * 
+ *
  *     def seek(self, pos: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3386,10 +3386,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_8seek(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("seek", 0);
 
   /* "smelly/clipboard.py":45
- * 
+ *
  *     def seek(self, pos: int) -> None:
  *         self.file.seek(pos, os.SEEK_SET)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def read(self, offset: int, size: int) -> bytes:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_file); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -3453,10 +3453,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_8seek(CYTHON_UNUSED PyObj
 
   /* "smelly/clipboard.py":44
  *         return self.file.tell()
- * 
+ *
  *     def seek(self, pos: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  */
 
   /* function exit code */
@@ -3478,7 +3478,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_8seek(CYTHON_UNUSED PyObj
 
 /* "smelly/clipboard.py":47
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  *     def read(self, offset: int, size: int) -> bytes:             # <<<<<<<<<<<<<<
  *         self.file.seek(offset)
  *         return self.file.read(size)
@@ -3572,11 +3572,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_10read(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("read", 0);
 
   /* "smelly/clipboard.py":48
- * 
+ *
  *     def read(self, offset: int, size: int) -> bytes:
  *         self.file.seek(offset)             # <<<<<<<<<<<<<<
  *         return self.file.read(size)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_file); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3604,7 +3604,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_10read(CYTHON_UNUSED PyOb
  *     def read(self, offset: int, size: int) -> bytes:
  *         self.file.seek(offset)
  *         return self.file.read(size)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3635,7 +3635,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_10read(CYTHON_UNUSED PyOb
 
   /* "smelly/clipboard.py":47
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  *     def read(self, offset: int, size: int) -> bytes:             # <<<<<<<<<<<<<<
  *         self.file.seek(offset)
  *         return self.file.read(size)
@@ -3656,7 +3656,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_10read(CYTHON_UNUSED PyOb
 
 /* "smelly/clipboard.py":51
  *         return self.file.read(size)
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],             # <<<<<<<<<<<<<<
  *                                                                  Callable[[],
  *                                                                           bytes]]:
@@ -3762,7 +3762,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_8Tempfile_14create_chunker_1chunk_c
 
 /* "smelly/clipboard.py":58
  *             limit = offset + size
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal pos, limit
  *                 if pos >= limit:
@@ -3926,7 +3926,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_13chunk_
  *                 ans = self.read(pos, min(io.DEFAULT_BUFFER_SIZE, limit - pos))
  *                 pos = self.file.tell()             # <<<<<<<<<<<<<<
  *                 return ans
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 63, __pyx_L1_error) }
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self, __pyx_n_s_file); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -3958,7 +3958,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_13chunk_
  *                 ans = self.read(pos, min(io.DEFAULT_BUFFER_SIZE, limit - pos))
  *                 pos = self.file.tell()
  *                 return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *             return chunker
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3969,7 +3969,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_13chunk_
 
   /* "smelly/clipboard.py":58
  *             limit = offset + size
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal pos, limit
  *                 if pos >= limit:
@@ -4028,7 +4028,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_chunk_cr
  *         def chunk_creator() -> Callable[[], bytes]:
  *             pos = offset             # <<<<<<<<<<<<<<
  *             limit = offset + size
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_offset)) { __Pyx_RaiseClosureNameError("offset"); __PYX_ERR(0, 55, __pyx_L1_error) }
   __Pyx_INCREF(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_offset);
@@ -4039,7 +4039,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_chunk_cr
  *         def chunk_creator() -> Callable[[], bytes]:
  *             pos = offset
  *             limit = offset + size             # <<<<<<<<<<<<<<
- * 
+ *
  *             def chunker() -> bytes:
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_offset)) { __Pyx_RaiseClosureNameError("offset"); __PYX_ERR(0, 56, __pyx_L1_error) }
@@ -4052,7 +4052,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_chunk_cr
 
   /* "smelly/clipboard.py":58
  *             limit = offset + size
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal pos, limit
  *                 if pos >= limit:
@@ -4069,9 +4069,9 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_chunk_cr
 
   /* "smelly/clipboard.py":66
  *                 return ans
- * 
+ *
  *             return chunker             # <<<<<<<<<<<<<<
- * 
+ *
  *         return chunk_creator
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4103,7 +4103,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_14create_chunker_chunk_cr
 
 /* "smelly/clipboard.py":51
  *         return self.file.read(size)
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],             # <<<<<<<<<<<<<<
  *                                                                  Callable[[],
  *                                                                           bytes]]:
@@ -4176,10 +4176,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_12create_chunker(CYTHON_U
 
   /* "smelly/clipboard.py":68
  *             return chunker
- * 
+ *
  *         return chunk_creator             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_chunk_creator);
@@ -4188,7 +4188,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_12create_chunker(CYTHON_U
 
   /* "smelly/clipboard.py":51
  *         return self.file.read(size)
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],             # <<<<<<<<<<<<<<
  *                                                                  Callable[[],
  *                                                                           bytes]]:
@@ -4211,7 +4211,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8Tempfile_12create_chunker(CYTHON_U
 }
 
 /* "smelly/clipboard.py":80
- * 
+ *
  *     @staticmethod
  *     def from_osc52_where_field(where: str) -> 'ClipboardType':             # <<<<<<<<<<<<<<
  *         where = where or 's0'
@@ -4260,7 +4260,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_13ClipboardType_from_osc52_where_fi
  *     def from_osc52_where_field(where: str) -> 'ClipboardType':
  *         where = where or 's0'             # <<<<<<<<<<<<<<
  *         return ClipboardType.clipboard if 'c' in where or 's' in where else ClipboardType.primary_selection
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_where); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 81, __pyx_L1_error)
   if (!__pyx_t_2) {
@@ -4279,8 +4279,8 @@ static PyObject *__pyx_pf_6smelly_9clipboard_13ClipboardType_from_osc52_where_fi
  *     def from_osc52_where_field(where: str) -> 'ClipboardType':
  *         where = where or 's0'
  *         return ClipboardType.clipboard if 'c' in where or 's' in where else ClipboardType.primary_selection             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_c, __pyx_v_where, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 82, __pyx_L1_error)
@@ -4316,7 +4316,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_13ClipboardType_from_osc52_where_fi
   goto __pyx_L0;
 
   /* "smelly/clipboard.py":80
- * 
+ *
  *     @staticmethod
  *     def from_osc52_where_field(where: str) -> 'ClipboardType':             # <<<<<<<<<<<<<<
  *         where = where or 's0'
@@ -4338,7 +4338,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_13ClipboardType_from_osc52_where_fi
 }
 
 /* "smelly/clipboard.py":86
- * 
+ *
  * class Clipboard:
  *     def __init__(self, clipboard_type: ClipboardType = ClipboardType.clipboard) -> None:             # <<<<<<<<<<<<<<
  *         self.data: Dict[str, DataType] = {}
@@ -4484,7 +4484,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard___init__(CYTHON_UNUSED P
  *         self.data: Dict[str, DataType] = {}
  *         self.clipboard_type = clipboard_type             # <<<<<<<<<<<<<<
  *         self.enabled = self.clipboard_type is ClipboardType.clipboard or supports_primary_selection
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_clipboard_type, __pyx_v_clipboard_type) < 0) __PYX_ERR(0, 88, __pyx_L1_error)
 
@@ -4492,7 +4492,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard___init__(CYTHON_UNUSED P
  *         self.data: Dict[str, DataType] = {}
  *         self.clipboard_type = clipboard_type
  *         self.enabled = self.clipboard_type is ClipboardType.clipboard or supports_primary_selection             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_text(self, x: Union[str, bytes]) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_clipboard_type); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
@@ -4523,7 +4523,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard___init__(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":86
- * 
+ *
  * class Clipboard:
  *     def __init__(self, clipboard_type: ClipboardType = ClipboardType.clipboard) -> None:             # <<<<<<<<<<<<<<
  *         self.data: Dict[str, DataType] = {}
@@ -4548,7 +4548,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard___init__(CYTHON_UNUSED P
 
 /* "smelly/clipboard.py":91
  *         self.enabled = self.clipboard_type is ClipboardType.clipboard or supports_primary_selection
- * 
+ *
  *     def set_text(self, x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(x, str):
  *             x = x.encode('utf-8')
@@ -4635,13 +4635,13 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_2set_text(CYTHON_UNUSED 
   __Pyx_INCREF(__pyx_v_x);
 
   /* "smelly/clipboard.py":92
- * 
+ *
  *     def set_text(self, x: Union[str, bytes]) -> None:
  *         if isinstance(x, str):             # <<<<<<<<<<<<<<
  *             x = x.encode('utf-8')
  *         self.set_mime({'text/plain': x})
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_x); 
+  __pyx_t_1 = PyString_Check(__pyx_v_x);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -4650,7 +4650,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_2set_text(CYTHON_UNUSED 
  *         if isinstance(x, str):
  *             x = x.encode('utf-8')             # <<<<<<<<<<<<<<
  *         self.set_mime({'text/plain': x})
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_encode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 93, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -4673,7 +4673,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_2set_text(CYTHON_UNUSED 
     __pyx_t_3 = 0;
 
     /* "smelly/clipboard.py":92
- * 
+ *
  *     def set_text(self, x: Union[str, bytes]) -> None:
  *         if isinstance(x, str):             # <<<<<<<<<<<<<<
  *             x = x.encode('utf-8')
@@ -4685,7 +4685,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_2set_text(CYTHON_UNUSED 
  *         if isinstance(x, str):
  *             x = x.encode('utf-8')
  *         self.set_mime({'text/plain': x})             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_mime(self, data: Mapping[str, DataType]) -> None:
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_mime); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
@@ -4713,7 +4713,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_2set_text(CYTHON_UNUSED 
 
   /* "smelly/clipboard.py":91
  *         self.enabled = self.clipboard_type is ClipboardType.clipboard or supports_primary_selection
- * 
+ *
  *     def set_text(self, x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(x, str):
  *             x = x.encode('utf-8')
@@ -4738,7 +4738,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_2set_text(CYTHON_UNUSED 
 
 /* "smelly/clipboard.py":96
  *         self.set_mime({'text/plain': x})
- * 
+ *
  *     def set_mime(self, data: Mapping[str, DataType]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled and isinstance(data, dict):
  *             self.data = data
@@ -4828,7 +4828,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_4set_mime(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("set_mime", 0);
 
   /* "smelly/clipboard.py":97
- * 
+ *
  *     def set_mime(self, data: Mapping[str, DataType]) -> None:
  *         if self.enabled and isinstance(data, dict):             # <<<<<<<<<<<<<<
  *             self.data = data
@@ -4843,7 +4843,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_4set_mime(CYTHON_UNUSED 
     __pyx_t_1 = __pyx_t_3;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = PyDict_Check(__pyx_v_data); 
+  __pyx_t_3 = PyDict_Check(__pyx_v_data);
   __pyx_t_4 = (__pyx_t_3 != 0);
   __pyx_t_1 = __pyx_t_4;
   __pyx_L4_bool_binop_done:;
@@ -4854,7 +4854,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_4set_mime(CYTHON_UNUSED 
  *         if self.enabled and isinstance(data, dict):
  *             self.data = data             # <<<<<<<<<<<<<<
  *             set_clipboard_data_types(self.clipboard_type, tuple(self.data))
- * 
+ *
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_data, __pyx_v_data) < 0) __PYX_ERR(0, 98, __pyx_L1_error)
 
@@ -4862,7 +4862,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_4set_mime(CYTHON_UNUSED 
  *         if self.enabled and isinstance(data, dict):
  *             self.data = data
  *             set_clipboard_data_types(self.clipboard_type, tuple(self.data))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_text(self) -> str:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_set_clipboard_data_types); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 99, __pyx_L1_error)
@@ -4926,7 +4926,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_4set_mime(CYTHON_UNUSED 
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly/clipboard.py":97
- * 
+ *
  *     def set_mime(self, data: Mapping[str, DataType]) -> None:
  *         if self.enabled and isinstance(data, dict):             # <<<<<<<<<<<<<<
  *             self.data = data
@@ -4936,7 +4936,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_4set_mime(CYTHON_UNUSED 
 
   /* "smelly/clipboard.py":96
  *         self.set_mime({'text/plain': x})
- * 
+ *
  *     def set_mime(self, data: Mapping[str, DataType]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled and isinstance(data, dict):
  *             self.data = data
@@ -4962,7 +4962,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_4set_mime(CYTHON_UNUSED 
 
 /* "smelly/clipboard.py":101
  *             set_clipboard_data_types(self.clipboard_type, tuple(self.data))
- * 
+ *
  *     def get_text(self) -> str:             # <<<<<<<<<<<<<<
  *         parts: List[bytes] = []
  *         self.get_mime("text/plain", parts.append)
@@ -4998,7 +4998,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_6get_text(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("get_text", 0);
 
   /* "smelly/clipboard.py":102
- * 
+ *
  *     def get_text(self) -> str:
  *         parts: List[bytes] = []             # <<<<<<<<<<<<<<
  *         self.get_mime("text/plain", parts.append)
@@ -5014,7 +5014,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_6get_text(CYTHON_UNUSED 
  *         parts: List[bytes] = []
  *         self.get_mime("text/plain", parts.append)             # <<<<<<<<<<<<<<
  *         return b''.join(parts).decode('utf-8', 'replace')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_get_mime); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5073,7 +5073,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_6get_text(CYTHON_UNUSED 
  *         parts: List[bytes] = []
  *         self.get_mime("text/plain", parts.append)
  *         return b''.join(parts).decode('utf-8', 'replace')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5092,7 +5092,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_6get_text(CYTHON_UNUSED 
 
   /* "smelly/clipboard.py":101
  *             set_clipboard_data_types(self.clipboard_type, tuple(self.data))
- * 
+ *
  *     def get_text(self) -> str:             # <<<<<<<<<<<<<<
  *         parts: List[bytes] = []
  *         self.get_mime("text/plain", parts.append)
@@ -5116,7 +5116,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_6get_text(CYTHON_UNUSED 
 
 /* "smelly/clipboard.py":106
  *         return b''.join(parts).decode('utf-8', 'replace')
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             try:
@@ -5229,7 +5229,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("get_mime", 0);
 
   /* "smelly/clipboard.py":107
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:
  *         if self.enabled:             # <<<<<<<<<<<<<<
  *             try:
@@ -5380,7 +5380,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
           __Pyx_GIVEREF(__pyx_t_6);
           __Pyx_XGIVEREF(__pyx_t_10);
           __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_6, __pyx_t_10);
-          __pyx_t_1 = 0; __pyx_t_6 = 0; __pyx_t_10 = 0; 
+          __pyx_t_1 = 0; __pyx_t_6 = 0; __pyx_t_10 = 0;
           __PYX_ERR(0, 112, __pyx_L6_except_error)
 
           /* "smelly/clipboard.py":111
@@ -5459,7 +5459,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
  *                     output(data)
  *                 else:
  */
-        __pyx_t_2 = PyBytes_Check(__pyx_v_data); 
+        __pyx_t_2 = PyBytes_Check(__pyx_v_data);
         __pyx_t_13 = (__pyx_t_2 != 0);
         if (__pyx_t_13) {
 
@@ -5551,7 +5551,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
  *                     while q:
  *                         q = chunker()             # <<<<<<<<<<<<<<
  *                         output(q)
- * 
+ *
  */
             __Pyx_INCREF(__pyx_v_chunker);
             __pyx_t_11 = __pyx_v_chunker; __pyx_t_12 = NULL;
@@ -5576,7 +5576,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
  *                     while q:
  *                         q = chunker()
  *                         output(q)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_mime_data(self, mime: str) -> bytes:
  */
             __Pyx_INCREF(__pyx_v_output);
@@ -5628,7 +5628,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
     }
 
     /* "smelly/clipboard.py":107
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:
  *         if self.enabled:             # <<<<<<<<<<<<<<
  *             try:
@@ -5638,7 +5638,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
 
   /* "smelly/clipboard.py":106
  *         return b''.join(parts).decode('utf-8', 'replace')
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             try:
@@ -5669,7 +5669,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8get_mime(CYTHON_UNUSED 
 
 /* "smelly/clipboard.py":123
  *                         output(q)
- * 
+ *
  *     def get_mime_data(self, mime: str) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
  *         self.get_mime(mime, ans.append)
@@ -5761,7 +5761,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_10get_mime_data(CYTHON_U
   __Pyx_RefNannySetupContext("get_mime_data", 0);
 
   /* "smelly/clipboard.py":124
- * 
+ *
  *     def get_mime_data(self, mime: str) -> bytes:
  *         ans: List[bytes] = []             # <<<<<<<<<<<<<<
  *         self.get_mime(mime, ans.append)
@@ -5777,7 +5777,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_10get_mime_data(CYTHON_U
  *         ans: List[bytes] = []
  *         self.get_mime(mime, ans.append)             # <<<<<<<<<<<<<<
  *         return b''.join(ans)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_get_mime); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5836,7 +5836,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_10get_mime_data(CYTHON_U
  *         ans: List[bytes] = []
  *         self.get_mime(mime, ans.append)
  *         return b''.join(ans)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5849,7 +5849,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_10get_mime_data(CYTHON_U
 
   /* "smelly/clipboard.py":123
  *                         output(q)
- * 
+ *
  *     def get_mime_data(self, mime: str) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
  *         self.get_mime(mime, ans.append)
@@ -5873,7 +5873,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_10get_mime_data(CYTHON_U
 
 /* "smelly/clipboard.py":128
  *         return b''.join(ans)
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             parts: List[bytes] = []
@@ -5899,7 +5899,7 @@ static PyObject *__pyx_gb_6smelly_9clipboard_9Clipboard_34get_available_mime_typ
  *                 return tuple(self.data)
  *             return tuple(x.decode('utf-8', 'replace') for x in uniq(parts))             # <<<<<<<<<<<<<<
  *         return ()
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_34get_available_mime_types_for_paste_genexpr(PyObject *__pyx_self) {
@@ -6072,7 +6072,7 @@ static PyObject *__pyx_gb_6smelly_9clipboard_9Clipboard_34get_available_mime_typ
 
 /* "smelly/clipboard.py":128
  *         return b''.join(ans)
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             parts: List[bytes] = []
@@ -6109,7 +6109,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_12get_available_mime_typ
   }
 
   /* "smelly/clipboard.py":129
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:
  *         if self.enabled:             # <<<<<<<<<<<<<<
  *             parts: List[bytes] = []
@@ -6278,7 +6278,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_12get_available_mime_typ
           __Pyx_GIVEREF(__pyx_t_6);
           __Pyx_XGIVEREF(__pyx_t_11);
           __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_6, __pyx_t_11);
-          __pyx_t_1 = 0; __pyx_t_6 = 0; __pyx_t_11 = 0; 
+          __pyx_t_1 = 0; __pyx_t_6 = 0; __pyx_t_11 = 0;
           __PYX_ERR(0, 135, __pyx_L6_except_error)
 
           /* "smelly/clipboard.py":134
@@ -6339,7 +6339,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_12get_available_mime_typ
  *                 return tuple(self.data)
  *             return tuple(x.decode('utf-8', 'replace') for x in uniq(parts))             # <<<<<<<<<<<<<<
  *         return ()
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_11 = __pyx_pf_6smelly_9clipboard_9Clipboard_34get_available_mime_types_for_paste_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 137, __pyx_L1_error)
@@ -6352,7 +6352,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_12get_available_mime_typ
     goto __pyx_L0;
 
     /* "smelly/clipboard.py":129
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:
  *         if self.enabled:             # <<<<<<<<<<<<<<
  *             parts: List[bytes] = []
@@ -6364,7 +6364,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_12get_available_mime_typ
  *                 return tuple(self.data)
  *             return tuple(x.decode('utf-8', 'replace') for x in uniq(parts))
  *         return ()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6374,7 +6374,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_12get_available_mime_typ
 
   /* "smelly/clipboard.py":128
  *         return b''.join(ans)
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             parts: List[bytes] = []
@@ -6401,7 +6401,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_12get_available_mime_typ
 
 /* "smelly/clipboard.py":140
  *         return ()
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:             # <<<<<<<<<<<<<<
  *         data = self.data.get(mime, b'')
  *         if isinstance(data, str):
@@ -6479,7 +6479,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_9Clipboard_15__call__(PyObject *__p
 
 /* "smelly/clipboard.py":146
  *         if isinstance(data, bytes):
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal data
  *                 assert isinstance(data, bytes)
@@ -6526,7 +6526,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8__call___chunker(PyObje
     if (unlikely(!__pyx_cur_scope->__pyx_v_data)) { __Pyx_RaiseClosureNameError("data"); __PYX_ERR(0, 148, __pyx_L1_error) }
     __pyx_t_1 = __pyx_cur_scope->__pyx_v_data;
     __Pyx_INCREF(__pyx_t_1);
-    __pyx_t_2 = PyBytes_Check(__pyx_t_1); 
+    __pyx_t_2 = PyBytes_Check(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (unlikely(!(__pyx_t_2 != 0))) {
       PyErr_SetNone(PyExc_AssertionError);
@@ -6551,7 +6551,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8__call___chunker(PyObje
  *                 ans = data
  *                 data = b''             # <<<<<<<<<<<<<<
  *                 return ans
- * 
+ *
  */
   __Pyx_INCREF(__pyx_kp_b_);
   __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_data);
@@ -6562,7 +6562,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8__call___chunker(PyObje
  *                 ans = data
  *                 data = b''
  *                 return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *             return chunker
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6573,7 +6573,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8__call___chunker(PyObje
 
   /* "smelly/clipboard.py":146
  *         if isinstance(data, bytes):
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal data
  *                 assert isinstance(data, bytes)
@@ -6593,7 +6593,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_8__call___chunker(PyObje
 
 /* "smelly/clipboard.py":140
  *         return ()
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:             # <<<<<<<<<<<<<<
  *         data = self.data.get(mime, b'')
  *         if isinstance(data, str):
@@ -6625,7 +6625,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
   }
 
   /* "smelly/clipboard.py":141
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:
  *         data = self.data.get(mime, b'')             # <<<<<<<<<<<<<<
  *         if isinstance(data, str):
@@ -6694,7 +6694,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
  */
   __pyx_t_1 = __pyx_cur_scope->__pyx_v_data;
   __Pyx_INCREF(__pyx_t_1);
-  __pyx_t_6 = PyString_Check(__pyx_t_1); 
+  __pyx_t_6 = PyString_Check(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
@@ -6704,7 +6704,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
  *         if isinstance(data, str):
  *             data = data.encode('utf-8')  # type: ignore             # <<<<<<<<<<<<<<
  *         if isinstance(data, bytes):
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_data, __pyx_n_s_encode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -6741,19 +6741,19 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
  *         if isinstance(data, str):
  *             data = data.encode('utf-8')  # type: ignore
  *         if isinstance(data, bytes):             # <<<<<<<<<<<<<<
- * 
+ *
  *             def chunker() -> bytes:
  */
   __pyx_t_1 = __pyx_cur_scope->__pyx_v_data;
   __Pyx_INCREF(__pyx_t_1);
-  __pyx_t_7 = PyBytes_Check(__pyx_t_1); 
+  __pyx_t_7 = PyBytes_Check(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_6 = (__pyx_t_7 != 0);
   if (__pyx_t_6) {
 
     /* "smelly/clipboard.py":146
  *         if isinstance(data, bytes):
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal data
  *                 assert isinstance(data, bytes)
@@ -6770,9 +6770,9 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
 
     /* "smelly/clipboard.py":153
  *                 return ans
- * 
+ *
  *             return chunker             # <<<<<<<<<<<<<<
- * 
+ *
  *         return data()
  */
     __Pyx_XDECREF(__pyx_r);
@@ -6784,17 +6784,17 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
  *         if isinstance(data, str):
  *             data = data.encode('utf-8')  # type: ignore
  *         if isinstance(data, bytes):             # <<<<<<<<<<<<<<
- * 
+ *
  *             def chunker() -> bytes:
  */
   }
 
   /* "smelly/clipboard.py":155
  *             return chunker
- * 
+ *
  *         return data()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_data);
@@ -6819,7 +6819,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
 
   /* "smelly/clipboard.py":140
  *         return ()
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:             # <<<<<<<<<<<<<<
  *         data = self.data.get(mime, b'')
  *         if isinstance(data, str):
@@ -6842,11 +6842,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_9Clipboard_14__call__(CYTHON_UNUSED
 }
 
 /* "smelly/clipboard.py":158
- * 
- * 
+ *
+ *
  * def set_clipboard_string(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().clipboard.set_text(x)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6876,11 +6876,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_set_clipboard_string(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("set_clipboard_string", 0);
 
   /* "smelly/clipboard.py":159
- * 
+ *
  * def set_clipboard_string(x: Union[str, bytes]) -> None:
  *     get_boss().clipboard.set_text(x)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_get_boss); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -6923,11 +6923,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_set_clipboard_string(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":158
- * 
- * 
+ *
+ *
  * def set_clipboard_string(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().clipboard.set_text(x)
- * 
+ *
  */
 
   /* function exit code */
@@ -6947,11 +6947,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_set_clipboard_string(CYTHON_UNUSED 
 }
 
 /* "smelly/clipboard.py":162
- * 
- * 
+ *
+ *
  * def get_clipboard_string() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().clipboard.get_text()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6981,11 +6981,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_2get_clipboard_string(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("get_clipboard_string", 0);
 
   /* "smelly/clipboard.py":163
- * 
+ *
  * def get_clipboard_string() -> str:
  *     return get_boss().clipboard.get_text()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_get_boss); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
@@ -7032,11 +7032,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_2get_clipboard_string(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/clipboard.py":162
- * 
- * 
+ *
+ *
  * def get_clipboard_string() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().clipboard.get_text()
- * 
+ *
  */
 
   /* function exit code */
@@ -7054,11 +7054,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_2get_clipboard_string(CYTHON_UNUSED
 }
 
 /* "smelly/clipboard.py":166
- * 
- * 
+ *
+ *
  * def set_primary_selection(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().primary_selection.set_text(x)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7088,11 +7088,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_4set_primary_selection(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("set_primary_selection", 0);
 
   /* "smelly/clipboard.py":167
- * 
+ *
  * def set_primary_selection(x: Union[str, bytes]) -> None:
  *     get_boss().primary_selection.set_text(x)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_get_boss); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -7135,11 +7135,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_4set_primary_selection(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":166
- * 
- * 
+ *
+ *
  * def set_primary_selection(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().primary_selection.set_text(x)
- * 
+ *
  */
 
   /* function exit code */
@@ -7159,11 +7159,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_4set_primary_selection(CYTHON_UNUSE
 }
 
 /* "smelly/clipboard.py":170
- * 
- * 
+ *
+ *
  * def get_primary_selection() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().primary_selection.get_text()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7193,11 +7193,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_6get_primary_selection(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("get_primary_selection", 0);
 
   /* "smelly/clipboard.py":171
- * 
+ *
  * def get_primary_selection() -> str:
  *     return get_boss().primary_selection.get_text()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_get_boss); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
@@ -7244,11 +7244,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_6get_primary_selection(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/clipboard.py":170
- * 
- * 
+ *
+ *
  * def get_primary_selection() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().primary_selection.get_text()
- * 
+ *
  */
 
   /* function exit code */
@@ -7266,8 +7266,8 @@ static PyObject *__pyx_pf_6smelly_9clipboard_6get_primary_selection(CYTHON_UNUSE
 }
 
 /* "smelly/clipboard.py":174
- * 
- * 
+ *
+ *
  * def develop() -> Tuple[Clipboard, Clipboard]:             # <<<<<<<<<<<<<<
  *     from .constants import detect_if_wayland_ok, is_macos
  *     from .fast_data_types import set_boss
@@ -7309,7 +7309,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
   __Pyx_RefNannySetupContext("develop", 0);
 
   /* "smelly/clipboard.py":175
- * 
+ *
  * def develop() -> Tuple[Clipboard, Clipboard]:
  *     from .constants import detect_if_wayland_ok, is_macos             # <<<<<<<<<<<<<<
  *     from .fast_data_types import set_boss
@@ -7343,7 +7343,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
  *     from .constants import detect_if_wayland_ok, is_macos
  *     from .fast_data_types import set_boss             # <<<<<<<<<<<<<<
  *     from .main import init_glfw_module
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7364,7 +7364,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
  *     from .constants import detect_if_wayland_ok, is_macos
  *     from .fast_data_types import set_boss
  *     from .main import init_glfw_module             # <<<<<<<<<<<<<<
- * 
+ *
  *     glfw_module = 'cocoa' if is_macos else (
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
@@ -7384,10 +7384,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
 
   /* "smelly/clipboard.py":179
  *     from .main import init_glfw_module
- * 
+ *
  *     glfw_module = 'cocoa' if is_macos else (             # <<<<<<<<<<<<<<
  *         'wayland' if detect_if_wayland_ok() else 'x11')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_v_is_macos); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 179, __pyx_L1_error)
   if (__pyx_t_3) {
@@ -7396,10 +7396,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
   } else {
 
     /* "smelly/clipboard.py":180
- * 
+ *
  *     glfw_module = 'cocoa' if is_macos else (
  *         'wayland' if detect_if_wayland_ok() else 'x11')             # <<<<<<<<<<<<<<
- * 
+ *
  *     class Boss:
  */
     __Pyx_INCREF(__pyx_v_detect_if_wayland_ok);
@@ -7435,7 +7435,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
 
   /* "smelly/clipboard.py":182
  *         'wayland' if detect_if_wayland_ok() else 'x11')
- * 
+ *
  *     class Boss:             # <<<<<<<<<<<<<<
  *         clipboard = Clipboard()
  *         primary_selection = Clipboard(ClipboardType.primary_selection)
@@ -7444,11 +7444,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/clipboard.py":183
- * 
+ *
  *     class Boss:
  *         clipboard = Clipboard()             # <<<<<<<<<<<<<<
  *         primary_selection = Clipboard(ClipboardType.primary_selection)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Clipboard); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7474,7 +7474,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
  *     class Boss:
  *         clipboard = Clipboard()
  *         primary_selection = Clipboard(ClipboardType.primary_selection)             # <<<<<<<<<<<<<<
- * 
+ *
  *     init_glfw_module(glfw_module)
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Clipboard); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 184, __pyx_L1_error)
@@ -7505,7 +7505,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
 
   /* "smelly/clipboard.py":182
  *         'wayland' if detect_if_wayland_ok() else 'x11')
- * 
+ *
  *     class Boss:             # <<<<<<<<<<<<<<
  *         clipboard = Clipboard()
  *         primary_selection = Clipboard(ClipboardType.primary_selection)
@@ -7518,7 +7518,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
 
   /* "smelly/clipboard.py":186
  *         primary_selection = Clipboard(ClipboardType.primary_selection)
- * 
+ *
  *     init_glfw_module(glfw_module)             # <<<<<<<<<<<<<<
  *     set_boss(Boss())  # type: ignore
  *     return Boss.clipboard, Boss.primary_selection
@@ -7542,11 +7542,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/clipboard.py":187
- * 
+ *
  *     init_glfw_module(glfw_module)
  *     set_boss(Boss())  # type: ignore             # <<<<<<<<<<<<<<
  *     return Boss.clipboard, Boss.primary_selection
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_v_Boss); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7573,8 +7573,8 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
  *     init_glfw_module(glfw_module)
  *     set_boss(Boss())  # type: ignore
  *     return Boss.clipboard, Boss.primary_selection             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_Boss, __pyx_n_s_clipboard); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 188, __pyx_L1_error)
@@ -7594,8 +7594,8 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
   goto __pyx_L0;
 
   /* "smelly/clipboard.py":174
- * 
- * 
+ *
+ *
  * def develop() -> Tuple[Clipboard, Clipboard]:             # <<<<<<<<<<<<<<
  *     from .constants import detect_if_wayland_ok, is_macos
  *     from .fast_data_types import set_boss
@@ -7623,11 +7623,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_8develop(CYTHON_UNUSED PyObject *__
 }
 
 /* "smelly/clipboard.py":196
- * 
- * 
+ *
+ *
  * def encode_mime(x: str) -> str:             # <<<<<<<<<<<<<<
  *     import base64
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7667,10 +7667,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_10encode_mime(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("encode_mime", 0);
 
   /* "smelly/clipboard.py":197
- * 
+ *
  * def encode_mime(x: str) -> str:
  *     import base64             # <<<<<<<<<<<<<<
- * 
+ *
  *     return base64.standard_b64encode(x.encode('utf-8')).decode('ascii')
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_base64, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 197, __pyx_L1_error)
@@ -7680,10 +7680,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_10encode_mime(CYTHON_UNUSED PyObjec
 
   /* "smelly/clipboard.py":199
  *     import base64
- * 
+ *
  *     return base64.standard_b64encode(x.encode('utf-8')).decode('ascii')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_base64, __pyx_n_s_standard_b64encode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
@@ -7730,11 +7730,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_10encode_mime(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/clipboard.py":196
- * 
- * 
+ *
+ *
  * def encode_mime(x: str) -> str:             # <<<<<<<<<<<<<<
  *     import base64
- * 
+ *
  */
 
   /* function exit code */
@@ -7754,8 +7754,8 @@ static PyObject *__pyx_pf_6smelly_9clipboard_10encode_mime(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/clipboard.py":202
- * 
- * 
+ *
+ *
  * def decode_metadata_value(k: str, x: str) -> str:             # <<<<<<<<<<<<<<
  *     if k == 'mime':
  *         import base64
@@ -7849,11 +7849,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12decode_metadata_value(CYTHON_UNUS
   __Pyx_INCREF(__pyx_v_x);
 
   /* "smelly/clipboard.py":203
- * 
+ *
  * def decode_metadata_value(k: str, x: str) -> str:
  *     if k == 'mime':             # <<<<<<<<<<<<<<
  *         import base64
- * 
+ *
  */
   __pyx_t_1 = (__Pyx_PyString_Equals(__pyx_v_k, __pyx_n_s_mime, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 203, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
@@ -7863,7 +7863,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12decode_metadata_value(CYTHON_UNUS
  * def decode_metadata_value(k: str, x: str) -> str:
  *     if k == 'mime':
  *         import base64             # <<<<<<<<<<<<<<
- * 
+ *
  *         x = base64.standard_b64decode(x).decode('utf-8')
  */
     __pyx_t_3 = __Pyx_Import(__pyx_n_s_base64, 0, -1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 204, __pyx_L1_error)
@@ -7873,10 +7873,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12decode_metadata_value(CYTHON_UNUS
 
     /* "smelly/clipboard.py":206
  *         import base64
- * 
+ *
  *         x = base64.standard_b64decode(x).decode('utf-8')             # <<<<<<<<<<<<<<
  *     return x
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_base64, __pyx_n_s_standard_b64decode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -7918,20 +7918,20 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12decode_metadata_value(CYTHON_UNUS
     __pyx_t_3 = 0;
 
     /* "smelly/clipboard.py":203
- * 
+ *
  * def decode_metadata_value(k: str, x: str) -> str:
  *     if k == 'mime':             # <<<<<<<<<<<<<<
  *         import base64
- * 
+ *
  */
   }
 
   /* "smelly/clipboard.py":207
- * 
+ *
  *         x = base64.standard_b64decode(x).decode('utf-8')
  *     return x             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_x);
@@ -7939,8 +7939,8 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12decode_metadata_value(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/clipboard.py":202
- * 
- * 
+ *
+ *
  * def decode_metadata_value(k: str, x: str) -> str:             # <<<<<<<<<<<<<<
  *     if k == 'mime':
  *         import base64
@@ -7964,7 +7964,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12decode_metadata_value(CYTHON_UNUS
 
 /* "smelly/clipboard.py":216
  *     protocol_type: ProtocolType = ProtocolType.osc_52
- * 
+ *
  *     def encode_response(self, status: str = 'DATA', mime: str = '',             # <<<<<<<<<<<<<<
  *                         payload: bytes = b'') -> bytes:
  *         ans = f'{self.protocol_type.value};type=read:status={status}'
@@ -8290,7 +8290,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_11ReadRequest_encode_response(CYTHO
  *         a = ans.encode('ascii')
  *         if payload:             # <<<<<<<<<<<<<<
  *             import base64
- * 
+ *
  */
   __pyx_t_6 = (__pyx_v_payload != Py_None)&&(PyBytes_GET_SIZE(__pyx_v_payload) != 0);
   if (__pyx_t_6) {
@@ -8299,7 +8299,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_11ReadRequest_encode_response(CYTHO
  *         a = ans.encode('ascii')
  *         if payload:
  *             import base64             # <<<<<<<<<<<<<<
- * 
+ *
  *             a += b';' + base64.standard_b64encode(payload)
  */
     __pyx_t_4 = __Pyx_Import(__pyx_n_s_base64, 0, -1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 227, __pyx_L1_error)
@@ -8309,10 +8309,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_11ReadRequest_encode_response(CYTHO
 
     /* "smelly/clipboard.py":229
  *             import base64
- * 
+ *
  *             a += b';' + base64.standard_b64encode(payload)             # <<<<<<<<<<<<<<
  *         return a
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_base64, __pyx_n_s_standard_b64encode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -8345,16 +8345,16 @@ static PyObject *__pyx_pf_6smelly_9clipboard_11ReadRequest_encode_response(CYTHO
  *         a = ans.encode('ascii')
  *         if payload:             # <<<<<<<<<<<<<<
  *             import base64
- * 
+ *
  */
   }
 
   /* "smelly/clipboard.py":230
- * 
+ *
  *             a += b';' + base64.standard_b64encode(payload)
  *         return a             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   if (!(likely(PyBytes_CheckExact(__pyx_v_a))||((__pyx_v_a) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "bytes", Py_TYPE(__pyx_v_a)->tp_name), 0))) __PYX_ERR(0, 230, __pyx_L1_error)
@@ -8364,7 +8364,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_11ReadRequest_encode_response(CYTHO
 
   /* "smelly/clipboard.py":216
  *     protocol_type: ProtocolType = ProtocolType.osc_52
- * 
+ *
  *     def encode_response(self, status: str = 'DATA', mime: str = '',             # <<<<<<<<<<<<<<
  *                         payload: bytes = b'') -> bytes:
  *         ans = f'{self.protocol_type.value};type=read:status={status}'
@@ -8387,11 +8387,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_11ReadRequest_encode_response(CYTHO
 }
 
 /* "smelly/clipboard.py":233
- * 
- * 
+ *
+ *
  * def encode_osc52(loc: str, response: str) -> str:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64encode
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8483,10 +8483,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_14encode_osc52(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("encode_osc52", 0);
 
   /* "smelly/clipboard.py":234
- * 
+ *
  * def encode_osc52(loc: str, response: str) -> str:
  *     from base64 import standard_b64encode             # <<<<<<<<<<<<<<
- * 
+ *
  *     return '52;{};{}'.format(
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 234, __pyx_L1_error)
@@ -8506,21 +8506,21 @@ static PyObject *__pyx_pf_6smelly_9clipboard_14encode_osc52(CYTHON_UNUSED PyObje
 
   /* "smelly/clipboard.py":236
  *     from base64 import standard_b64encode
- * 
+ *
  *     return '52;{};{}'.format(             # <<<<<<<<<<<<<<
  *         loc, standard_b64encode(response.encode('utf-8')).decode('ascii'))
- * 
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_52, __pyx_n_s_format); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/clipboard.py":237
- * 
+ *
  *     return '52;{};{}'.format(
  *         loc, standard_b64encode(response.encode('utf-8')).decode('ascii'))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = __Pyx_CallUnboundCMethod1(&__pyx_umethod_PyString_Type_encode, __pyx_v_response, __pyx_kp_s_utf_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 237, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8609,10 +8609,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_14encode_osc52(CYTHON_UNUSED PyObje
 
   /* "smelly/clipboard.py":236
  *     from base64 import standard_b64encode
- * 
+ *
  *     return '52;{};{}'.format(             # <<<<<<<<<<<<<<
  *         loc, standard_b64encode(response.encode('utf-8')).decode('ascii'))
- * 
+ *
  */
   if (!(likely(PyString_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "str", Py_TYPE(__pyx_t_2)->tp_name), 0))) __PYX_ERR(0, 236, __pyx_L1_error)
   __pyx_r = ((PyObject*)__pyx_t_2);
@@ -8620,11 +8620,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_14encode_osc52(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "smelly/clipboard.py":233
- * 
- * 
+ *
+ *
  * def encode_osc52(loc: str, response: str) -> str:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64encode
- * 
+ *
  */
 
   /* function exit code */
@@ -8646,7 +8646,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_14encode_osc52(CYTHON_UNUSED PyObje
 }
 
 /* "smelly/clipboard.py":246
- * 
+ *
  * class WriteRequest:
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
@@ -8690,7 +8690,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_18__defaults__(CYTHON_UNUSED PyObje
   PyTuple_SET_ITEM(__pyx_t_1, 4, ((PyObject *)__pyx_int_neg_1));
 
   /* "smelly/clipboard.py":246
- * 
+ *
  * class WriteRequest:
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
@@ -9010,7 +9010,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest___init__(CYTHON_UNUS
  *             get_options().clipboard_max_size * 1024 * 1024) if max_size < 0 else max_size
  *         self.aliases: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  *         self.commited = False
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 264, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9021,13 +9021,13 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest___init__(CYTHON_UNUS
  *             get_options().clipboard_max_size * 1024 * 1024) if max_size < 0 else max_size
  *         self.aliases: Dict[str, str] = {}
  *         self.commited = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def encode_response(self, status: str = 'OK') -> bytes:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_commited, Py_False) < 0) __PYX_ERR(0, 265, __pyx_L1_error)
 
   /* "smelly/clipboard.py":246
- * 
+ *
  * class WriteRequest:
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
@@ -9052,7 +9052,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest___init__(CYTHON_UNUS
 
 /* "smelly/clipboard.py":267
  *         self.commited = False
- * 
+ *
  *     def encode_response(self, status: str = 'OK') -> bytes:             # <<<<<<<<<<<<<<
  *         ans = f'{self.protocol_type.value};type=write:status={status}'
  *         if self.id:
@@ -9149,7 +9149,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_2encode_response(CYT
   __Pyx_RefNannySetupContext("encode_response", 0);
 
   /* "smelly/clipboard.py":268
- * 
+ *
  *     def encode_response(self, status: str = 'OK') -> bytes:
  *         ans = f'{self.protocol_type.value};type=write:status={status}'             # <<<<<<<<<<<<<<
  *         if self.id:
@@ -9237,7 +9237,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_2encode_response(CYT
  *             ans += f':id={self.id}'
  *         a = ans.encode('ascii')             # <<<<<<<<<<<<<<
  *         return a
- * 
+ *
  */
   __pyx_t_1 = PyUnicode_AsASCIIString(__pyx_v_ans); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9248,7 +9248,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_2encode_response(CYT
  *             ans += f':id={self.id}'
  *         a = ans.encode('ascii')
  *         return a             # <<<<<<<<<<<<<<
- * 
+ *
  *     def commit(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9259,7 +9259,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_2encode_response(CYT
 
   /* "smelly/clipboard.py":267
  *         self.commited = False
- * 
+ *
  *     def encode_response(self, status: str = 'OK') -> bytes:             # <<<<<<<<<<<<<<
  *         ans = f'{self.protocol_type.value};type=write:status={status}'
  *         if self.id:
@@ -9282,7 +9282,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_2encode_response(CYT
 
 /* "smelly/clipboard.py":274
  *         return a
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.commited:
  *             return
@@ -9332,7 +9332,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("commit", 0);
 
   /* "smelly/clipboard.py":275
- * 
+ *
  *     def commit(self) -> None:
  *         if self.commited:             # <<<<<<<<<<<<<<
  *             return
@@ -9356,7 +9356,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
     goto __pyx_L0;
 
     /* "smelly/clipboard.py":275
- * 
+ *
  *     def commit(self) -> None:
  *         if self.commited:             # <<<<<<<<<<<<<<
  *             return
@@ -9524,11 +9524,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_5);
@@ -9653,7 +9653,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
  *                 mime: self.tempfile.create_chunker(pos.start, pos.size)
  *                 for mime, pos in self.mime_map.items()}             # <<<<<<<<<<<<<<
  *             cp.set_mime(x)
- * 
+ *
  */
       __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_mime_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 286, __pyx_L12_error)
       __Pyx_GOTREF(__pyx_t_3);
@@ -9725,11 +9725,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_3);
           __Pyx_INCREF(__pyx_t_8);
@@ -9839,7 +9839,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
  *                 mime: self.tempfile.create_chunker(pos.start, pos.size)
  *                 for mime, pos in self.mime_map.items()}             # <<<<<<<<<<<<<<
  *             cp.set_mime(x)
- * 
+ *
  */
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -9859,7 +9859,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
  *                 mime: self.tempfile.create_chunker(pos.start, pos.size)
  *                 for mime, pos in self.mime_map.items()}
  *             cp.set_mime(x)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_base64_data(
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_cp, __pyx_n_s_set_mime); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 287, __pyx_L1_error)
@@ -9892,7 +9892,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
 
   /* "smelly/clipboard.py":274
  *         return a
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.commited:
  *             return
@@ -9927,7 +9927,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_4commit(CYTHON_UNUSE
 
 /* "smelly/clipboard.py":289
  *             cp.set_mime(x)
- * 
+ *
  *     def add_base64_data(             # <<<<<<<<<<<<<<
  *             self, data: Union[str, bytes],
  *             mime: str = 'text/plain') -> None:
@@ -10020,7 +10020,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_12WriteRequest_7add_base64_data(PyO
 
 /* "smelly/clipboard.py":300
  *             self.currently_writing_mime = mime
- * 
+ *
  *         def write_saving_leftover_bytes(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             if len(data) == 0:
  *                 return
@@ -10068,7 +10068,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_15add_base64_data_wr
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/clipboard.py":301
- * 
+ *
  *         def write_saving_leftover_bytes(data: bytes) -> None:
  *             if len(data) == 0:             # <<<<<<<<<<<<<<
  *                 return
@@ -10094,7 +10094,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_15add_base64_data_wr
     goto __pyx_L0;
 
     /* "smelly/clipboard.py":301
- * 
+ *
  *         def write_saving_leftover_bytes(data: bytes) -> None:
  *             if len(data) == 0:             # <<<<<<<<<<<<<<
  *                 return
@@ -10238,7 +10238,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_15add_base64_data_wr
  *                     self.write_base64_data(mv)
  *             else:
  *                 self.write_base64_data(data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if len(self.current_leftover_bytes) > 0:
  */
   /*else*/ {
@@ -10266,7 +10266,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_15add_base64_data_wr
 
   /* "smelly/clipboard.py":300
  *             self.currently_writing_mime = mime
- * 
+ *
  *         def write_saving_leftover_bytes(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             if len(data) == 0:
  *                 return
@@ -10291,7 +10291,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_15add_base64_data_wr
 
 /* "smelly/clipboard.py":289
  *             cp.set_mime(x)
- * 
+ *
  *     def add_base64_data(             # <<<<<<<<<<<<<<
  *             self, data: Union[str, bytes],
  *             mime: str = 'text/plain') -> None:
@@ -10337,7 +10337,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
  *             data = data.encode('ascii')
  *         if self.currently_writing_mime and self.currently_writing_mime != mime:
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_data); 
+  __pyx_t_1 = PyString_Check(__pyx_v_data);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -10455,7 +10455,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
  *         if not self.currently_writing_mime:
  *             self.mime_map[mime] = MimePos(self.tempfile.tell(), -1)             # <<<<<<<<<<<<<<
  *             self.currently_writing_mime = mime
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_MimePos); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -10536,7 +10536,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
  *         if not self.currently_writing_mime:
  *             self.mime_map[mime] = MimePos(self.tempfile.tell(), -1)
  *             self.currently_writing_mime = mime             # <<<<<<<<<<<<<<
- * 
+ *
  *         def write_saving_leftover_bytes(data: bytes) -> None:
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_currently_writing_mime, __pyx_v_mime) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
@@ -10552,7 +10552,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
 
   /* "smelly/clipboard.py":300
  *             self.currently_writing_mime = mime
- * 
+ *
  *         def write_saving_leftover_bytes(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             if len(data) == 0:
  *                 return
@@ -10570,7 +10570,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
 
   /* "smelly/clipboard.py":313
  *                 self.write_base64_data(data)
- * 
+ *
  *         if len(self.current_leftover_bytes) > 0:             # <<<<<<<<<<<<<<
  *             extra = 4 - len(self.current_leftover_bytes)
  *             if len(data) >= extra:
@@ -10583,7 +10583,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
   if (__pyx_t_1) {
 
     /* "smelly/clipboard.py":314
- * 
+ *
  *         if len(self.current_leftover_bytes) > 0:
  *             extra = 4 - len(self.current_leftover_bytes)             # <<<<<<<<<<<<<<
  *             if len(data) >= extra:
@@ -10798,7 +10798,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
 
     /* "smelly/clipboard.py":313
  *                 self.write_base64_data(data)
- * 
+ *
  *         if len(self.current_leftover_bytes) > 0:             # <<<<<<<<<<<<<<
  *             extra = 4 - len(self.current_leftover_bytes)
  *             if len(data) >= extra:
@@ -10810,7 +10810,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
  *                     bytes(self.current_leftover_bytes) + data)
  *         else:
  *             write_saving_leftover_bytes(data)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def flush_base64_data(self) -> None:
  */
   /*else*/ {
@@ -10823,7 +10823,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
 
   /* "smelly/clipboard.py":289
  *             cp.set_mime(x)
- * 
+ *
  *     def add_base64_data(             # <<<<<<<<<<<<<<
  *             self, data: Union[str, bytes],
  *             mime: str = 'text/plain') -> None:
@@ -10852,7 +10852,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_6add_base64_data(CYT
 
 /* "smelly/clipboard.py":330
  *             write_saving_leftover_bytes(data)
- * 
+ *
  *     def flush_base64_data(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.currently_writing_mime:
  *             b = self.current_leftover_bytes
@@ -10894,7 +10894,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_8flush_base64_data(C
   __Pyx_RefNannySetupContext("flush_base64_data", 0);
 
   /* "smelly/clipboard.py":331
- * 
+ *
  *     def flush_base64_data(self) -> None:
  *         if self.currently_writing_mime:             # <<<<<<<<<<<<<<
  *             b = self.current_leftover_bytes
@@ -11139,7 +11139,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_8flush_base64_data(C
  *                 start, self.tempfile.tell() - start)
  *             self.currently_writing_mime = ''             # <<<<<<<<<<<<<<
  *             self.current_leftover_bytes = memoryview(b'')
- * 
+ *
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_currently_writing_mime, __pyx_kp_s_) < 0) __PYX_ERR(0, 339, __pyx_L1_error)
 
@@ -11147,7 +11147,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_8flush_base64_data(C
  *                 start, self.tempfile.tell() - start)
  *             self.currently_writing_mime = ''
  *             self.current_leftover_bytes = memoryview(b'')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def write_base64_data(self, b: bytes) -> None:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 340, __pyx_L1_error)
@@ -11159,7 +11159,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_8flush_base64_data(C
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
     /* "smelly/clipboard.py":331
- * 
+ *
  *     def flush_base64_data(self) -> None:
  *         if self.currently_writing_mime:             # <<<<<<<<<<<<<<
  *             b = self.current_leftover_bytes
@@ -11169,7 +11169,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_8flush_base64_data(C
 
   /* "smelly/clipboard.py":330
  *             write_saving_leftover_bytes(data)
- * 
+ *
  *     def flush_base64_data(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.currently_writing_mime:
  *             b = self.current_leftover_bytes
@@ -11198,10 +11198,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_8flush_base64_data(C
 
 /* "smelly/clipboard.py":342
  *             self.current_leftover_bytes = memoryview(b'')
- * 
+ *
  *     def write_base64_data(self, b: bytes) -> None:             # <<<<<<<<<<<<<<
  *         from base64 import standard_b64decode
- * 
+ *
  */
 
 /* Python wrapper */
@@ -11294,10 +11294,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
   __Pyx_RefNannySetupContext("write_base64_data", 0);
 
   /* "smelly/clipboard.py":343
- * 
+ *
  *     def write_base64_data(self, b: bytes) -> None:
  *         from base64 import standard_b64decode             # <<<<<<<<<<<<<<
- * 
+ *
  *         if not self.max_size_exceeded:
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 343, __pyx_L1_error)
@@ -11317,7 +11317,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
 
   /* "smelly/clipboard.py":345
  *         from base64 import standard_b64decode
- * 
+ *
  *         if not self.max_size_exceeded:             # <<<<<<<<<<<<<<
  *             d = standard_b64decode(b)
  *             self.tempfile.write(d)
@@ -11330,7 +11330,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
   if (__pyx_t_4) {
 
     /* "smelly/clipboard.py":346
- * 
+ *
  *         if not self.max_size_exceeded:
  *             d = standard_b64decode(b)             # <<<<<<<<<<<<<<
  *             self.tempfile.write(d)
@@ -11454,7 +11454,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
  *                 log_error(
  *                     f'Clipboard write request has more data than allowed by clipboard_max_size ({self.max_size}), truncating')             # <<<<<<<<<<<<<<
  *                 self.max_size_exceeded = True
- * 
+ *
  */
       __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 350, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -11503,7 +11503,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
  *                 log_error(
  *                     f'Clipboard write request has more data than allowed by clipboard_max_size ({self.max_size}), truncating')
  *                 self.max_size_exceeded = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def data_for(
  */
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_max_size_exceeded, Py_True) < 0) __PYX_ERR(0, 351, __pyx_L1_error)
@@ -11519,7 +11519,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
 
     /* "smelly/clipboard.py":345
  *         from base64 import standard_b64decode
- * 
+ *
  *         if not self.max_size_exceeded:             # <<<<<<<<<<<<<<
  *             d = standard_b64decode(b)
  *             self.tempfile.write(d)
@@ -11528,10 +11528,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
 
   /* "smelly/clipboard.py":342
  *             self.current_leftover_bytes = memoryview(b'')
- * 
+ *
  *     def write_base64_data(self, b: bytes) -> None:             # <<<<<<<<<<<<<<
  *         from base64 import standard_b64decode
- * 
+ *
  */
 
   /* function exit code */
@@ -11555,7 +11555,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_10write_base64_data(
 
 /* "smelly/clipboard.py":353
  *                 self.max_size_exceeded = True
- * 
+ *
  *     def data_for(             # <<<<<<<<<<<<<<
  *             self, mime: str = 'text/plain', offset: int = 0, size: int = -1) -> bytes:
  *         start, full_size = self.mime_map[mime]
@@ -11702,11 +11702,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_12data_for(CYTHON_UN
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -11761,7 +11761,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_12data_for(CYTHON_UN
  *         if size == -1:
  *             size = full_size             # <<<<<<<<<<<<<<
  *         return self.tempfile.read(start + offset, size)
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_full_size);
     __Pyx_DECREF_SET(__pyx_v_size, __pyx_v_full_size);
@@ -11779,8 +11779,8 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_12data_for(CYTHON_UN
  *         if size == -1:
  *             size = full_size
  *         return self.tempfile.read(start + offset, size)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_tempfile); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 358, __pyx_L1_error)
@@ -11844,7 +11844,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_12data_for(CYTHON_UN
 
   /* "smelly/clipboard.py":353
  *                 self.max_size_exceeded = True
- * 
+ *
  *     def data_for(             # <<<<<<<<<<<<<<
  *             self, mime: str = 'text/plain', offset: int = 0, size: int = -1) -> bytes:
  *         start, full_size = self.mime_map[mime]
@@ -11869,7 +11869,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_12WriteRequest_12data_for(CYTHON_UN
 }
 
 /* "smelly/clipboard.py":362
- * 
+ *
  * class ClipboardRequestManager:
  *     def __init__(self, window_id: int) -> None:             # <<<<<<<<<<<<<<
  *         self.window_id = window_id
@@ -11963,7 +11963,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager___init__(
  *         self.window_id = window_id
  *         self.currently_asking_permission_for: Optional[ReadRequest] = None             # <<<<<<<<<<<<<<
  *         self.in_flight_write_request: Optional[WriteRequest] = None
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_currently_asking_permission_for, Py_None) < 0) __PYX_ERR(0, 364, __pyx_L1_error)
 
@@ -11971,13 +11971,13 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager___init__(
  *         self.window_id = window_id
  *         self.currently_asking_permission_for: Optional[ReadRequest] = None
  *         self.in_flight_write_request: Optional[WriteRequest] = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parse_osc_5522(self, data: str) -> None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_flight_write_request, Py_None) < 0) __PYX_ERR(0, 365, __pyx_L1_error)
 
   /* "smelly/clipboard.py":362
- * 
+ *
  * class ClipboardRequestManager:
  *     def __init__(self, window_id: int) -> None:             # <<<<<<<<<<<<<<
  *         self.window_id = window_id
@@ -11998,10 +11998,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager___init__(
 
 /* "smelly/clipboard.py":367
  *         self.in_flight_write_request: Optional[WriteRequest] = None
- * 
+ *
  *     def parse_osc_5522(self, data: str) -> None:             # <<<<<<<<<<<<<<
  *         import base64
- * 
+ *
  */
 
 /* Python wrapper */
@@ -12119,10 +12119,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
   __Pyx_RefNannySetupContext("parse_osc_5522", 0);
 
   /* "smelly/clipboard.py":368
- * 
+ *
  *     def parse_osc_5522(self, data: str) -> None:
  *         import base64             # <<<<<<<<<<<<<<
- * 
+ *
  *         from .notify import sanitize_id
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_base64, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 368, __pyx_L1_error)
@@ -12132,9 +12132,9 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
 
   /* "smelly/clipboard.py":370
  *         import base64
- * 
+ *
  *         from .notify import sanitize_id             # <<<<<<<<<<<<<<
- * 
+ *
  *         metadata, _, epayload = data.partition(';')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 370, __pyx_L1_error)
@@ -12154,7 +12154,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
 
   /* "smelly/clipboard.py":372
  *         from .notify import sanitize_id
- * 
+ *
  *         metadata, _, epayload = data.partition(';')             # <<<<<<<<<<<<<<
  *         m: Dict[str, str] = {}
  *         for record in metadata.split(':'):
@@ -12171,13 +12171,13 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -12222,7 +12222,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
   __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":373
- * 
+ *
  *         metadata, _, epayload = data.partition(';')
  *         m: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  *         for record in metadata.split(':'):
@@ -12338,11 +12338,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(__pyx_t_1);
@@ -13464,7 +13464,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
           __Pyx_GIVEREF(__pyx_t_3);
           __Pyx_XGIVEREF(__pyx_t_5);
           __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_3, __pyx_t_5);
-          __pyx_t_4 = 0; __pyx_t_3 = 0; __pyx_t_5 = 0; 
+          __pyx_t_4 = 0; __pyx_t_3 = 0; __pyx_t_5 = 0;
           __PYX_ERR(0, 419, __pyx_L29_except_error)
         }
 
@@ -13605,7 +13605,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
           __Pyx_GIVEREF(__pyx_t_3);
           __Pyx_XGIVEREF(__pyx_t_4);
           __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_3, __pyx_t_4);
-          __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0; 
+          __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_4 = 0;
           __PYX_ERR(0, 425, __pyx_L29_except_error)
         }
         goto __pyx_L29_except_error;
@@ -13714,7 +13714,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
  *                 if w is not None:
  *                     w.screen.send_escape_code_to_child(             # <<<<<<<<<<<<<<
  *                         OSC, wr.encode_response(status='DONE'))
- * 
+ *
  */
         __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_screen); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 431, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
@@ -13726,7 +13726,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
  *                 if w is not None:
  *                     w.screen.send_escape_code_to_child(
  *                         OSC, wr.encode_response(status='DONE'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:
  */
         __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_OSC); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 432, __pyx_L1_error)
@@ -13814,10 +13814,10 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
 
   /* "smelly/clipboard.py":367
  *         self.in_flight_write_request: Optional[WriteRequest] = None
- * 
+ *
  *     def parse_osc_5522(self, data: str) -> None:             # <<<<<<<<<<<<<<
  *         import base64
- * 
+ *
  */
 
   /* function exit code */
@@ -13860,7 +13860,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_2parse_os
 
 /* "smelly/clipboard.py":434
  *                         OSC, wr.encode_response(status='DONE'))
- * 
+ *
  *     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         where, text = data.partition(';')[::2]
  *         if text == '?':
@@ -13972,7 +13972,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_4parse_os
   __Pyx_RefNannySetupContext("parse_osc_52", 0);
 
   /* "smelly/clipboard.py":435
- * 
+ *
  *     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:
  *         where, text = data.partition(';')[::2]             # <<<<<<<<<<<<<<
  *         if text == '?':
@@ -13993,11 +13993,11 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_4parse_os
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -14316,7 +14316,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_4parse_os
  *                 return
  *             self.in_flight_write_request = None             # <<<<<<<<<<<<<<
  *             self.handle_write_request(wr)
- * 
+ *
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_flight_write_request, Py_None) < 0) __PYX_ERR(0, 448, __pyx_L1_error)
 
@@ -14324,7 +14324,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_4parse_os
  *                 return
  *             self.in_flight_write_request = None
  *             self.handle_write_request(wr)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def handle_write_request(self, wr: WriteRequest) -> None:
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_handle_write_request); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 449, __pyx_L1_error)
@@ -14350,7 +14350,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_4parse_os
 
   /* "smelly/clipboard.py":434
  *                         OSC, wr.encode_response(status='DONE'))
- * 
+ *
  *     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         where, text = data.partition(';')[::2]
  *         if text == '?':
@@ -14379,7 +14379,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_4parse_os
 
 /* "smelly/clipboard.py":451
  *             self.handle_write_request(wr)
- * 
+ *
  *     def handle_write_request(self, wr: WriteRequest) -> None:             # <<<<<<<<<<<<<<
  *         wr.flush_base64_data()
  *         q = 'write-primary' if wr.is_primary_selection else 'write-clipboard'
@@ -14467,7 +14467,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_6handle_w
   __Pyx_RefNannySetupContext("handle_write_request", 0);
 
   /* "smelly/clipboard.py":452
- * 
+ *
  *     def handle_write_request(self, wr: WriteRequest) -> None:
  *         wr.flush_base64_data()             # <<<<<<<<<<<<<<
  *         q = 'write-primary' if wr.is_primary_selection else 'write-clipboard'
@@ -14518,7 +14518,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_6handle_w
  *         q = 'write-primary' if wr.is_primary_selection else 'write-clipboard'
  *         allowed = q in get_options().clipboard_control             # <<<<<<<<<<<<<<
  *         self.fulfill_write_request(wr, allowed)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_get_options); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 454, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14551,7 +14551,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_6handle_w
  *         q = 'write-primary' if wr.is_primary_selection else 'write-clipboard'
  *         allowed = q in get_options().clipboard_control
  *         self.fulfill_write_request(wr, allowed)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def fulfill_write_request(
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fulfill_write_request); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 455, __pyx_L1_error)
@@ -14605,7 +14605,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_6handle_w
 
   /* "smelly/clipboard.py":451
  *             self.handle_write_request(wr)
- * 
+ *
  *     def handle_write_request(self, wr: WriteRequest) -> None:             # <<<<<<<<<<<<<<
  *         wr.flush_base64_data()
  *         q = 'write-primary' if wr.is_primary_selection else 'write-clipboard'
@@ -14631,7 +14631,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_6handle_w
 
 /* "smelly/clipboard.py":457
  *         self.fulfill_write_request(wr, allowed)
- * 
+ *
  *     def fulfill_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -14655,7 +14655,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_9fulfill_
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/clipboard.py":458
- * 
+ *
  *     def fulfill_write_request(
  *             self, wr: WriteRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -14722,7 +14722,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_9fulfill_
 
   /* "smelly/clipboard.py":457
  *         self.fulfill_write_request(wr, allowed)
- * 
+ *
  *     def fulfill_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -15022,7 +15022,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_8fulfill_
  *                 w.screen.send_escape_code_to_child(
  *                     OSC, wr.encode_response(             # <<<<<<<<<<<<<<
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_OSC); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 468, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -15033,7 +15033,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_8fulfill_
  *                 w.screen.send_escape_code_to_child(
  *                     OSC, wr.encode_response(
  *                         status='EPERM' if not allowed else 'ENOSYS'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def fulfill_legacy_write_request(
  */
       __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 469, __pyx_L1_error)
@@ -15054,7 +15054,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_8fulfill_
  *                 w.screen.send_escape_code_to_child(
  *                     OSC, wr.encode_response(             # <<<<<<<<<<<<<<
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  */
       __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 468, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
@@ -15131,7 +15131,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_8fulfill_
 
   /* "smelly/clipboard.py":457
  *         self.fulfill_write_request(wr, allowed)
- * 
+ *
  *     def fulfill_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -15159,7 +15159,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_8fulfill_
 
 /* "smelly/clipboard.py":471
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  *     def fulfill_legacy_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -15183,7 +15183,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_11fulfill
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/clipboard.py":472
- * 
+ *
  *     def fulfill_legacy_write_request(
  *             self, wr: WriteRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -15250,7 +15250,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_11fulfill
 
   /* "smelly/clipboard.py":471
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  *     def fulfill_legacy_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -15395,7 +15395,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_10fulfill
  *         w = get_boss().window_id_map.get(self.window_id)
  *         if w is not None and cp.enabled and allowed:             # <<<<<<<<<<<<<<
  *             wr.commit()
- * 
+ *
  */
   __pyx_t_6 = (__pyx_v_w != Py_None);
   __pyx_t_7 = (__pyx_t_6 != 0);
@@ -15422,7 +15422,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_10fulfill
  *         w = get_boss().window_id_map.get(self.window_id)
  *         if w is not None and cp.enabled and allowed:
  *             wr.commit()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def handle_read_request(self, rr: ReadRequest) -> None:
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wr, __pyx_n_s_commit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 476, __pyx_L1_error)
@@ -15449,13 +15449,13 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_10fulfill
  *         w = get_boss().window_id_map.get(self.window_id)
  *         if w is not None and cp.enabled and allowed:             # <<<<<<<<<<<<<<
  *             wr.commit()
- * 
+ *
  */
   }
 
   /* "smelly/clipboard.py":471
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  *     def fulfill_legacy_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -15481,7 +15481,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_10fulfill
 
 /* "smelly/clipboard.py":478
  *             wr.commit()
- * 
+ *
  *     def handle_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         cc = get_options().clipboard_control
  *         if rr.is_primary_selection:
@@ -15569,7 +15569,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_12handle_
   __Pyx_RefNannySetupContext("handle_read_request", 0);
 
   /* "smelly/clipboard.py":479
- * 
+ *
  *     def handle_read_request(self, rr: ReadRequest) -> None:
  *         cc = get_options().clipboard_control             # <<<<<<<<<<<<<<
  *         if rr.is_primary_selection:
@@ -15726,7 +15726,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_12handle_
  *             self.ask_to_read_clipboard(rr)
  *         else:
  *             self.fulfill_read_request(rr, allowed=allowed)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def fulfill_read_request(
  */
   /*else*/ {
@@ -15751,7 +15751,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_12handle_
 
   /* "smelly/clipboard.py":478
  *             wr.commit()
- * 
+ *
  *     def handle_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         cc = get_options().clipboard_control
  *         if rr.is_primary_selection:
@@ -15778,7 +15778,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_12handle_
 
 /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -15802,7 +15802,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_15fulfill
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/clipboard.py":492
- * 
+ *
  *     def fulfill_read_request(
  *             self, rr: ReadRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -15869,7 +15869,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_15fulfill
 
   /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -15882,7 +15882,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_15fulfill
 
 /* "smelly/clipboard.py":512
  *         current_mime = ''
- * 
+ *
  *         def write_chunks(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             assert w is not None
  *             mv = memoryview(data)
@@ -15932,7 +15932,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20fulfill
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/clipboard.py":513
- * 
+ *
  *         def write_chunks(data: bytes) -> None:
  *             assert w is not None             # <<<<<<<<<<<<<<
  *             mv = memoryview(data)
@@ -16021,7 +16021,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20fulfill
  *                         payload=mv[: 4096],
  *                         mime=current_mime))             # <<<<<<<<<<<<<<
  *                 mv = mv[4096:]
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_current_mime)) { __Pyx_RaiseClosureNameError("current_mime"); __PYX_ERR(0, 519, __pyx_L1_error) }
     if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_mime, __pyx_cur_scope->__pyx_v_current_mime) < 0) __PYX_ERR(0, 518, __pyx_L1_error)
@@ -16092,7 +16092,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20fulfill
  *                         payload=mv[: 4096],
  *                         mime=current_mime))
  *                 mv = mv[4096:]             # <<<<<<<<<<<<<<
- * 
+ *
  *         for mime in rr.mime_types:
  */
     __pyx_t_3 = __Pyx_PyObject_GetSlice(__pyx_v_mv, 0x1000, 0, NULL, NULL, &__pyx_slice__20, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 520, __pyx_L1_error)
@@ -16103,7 +16103,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20fulfill
 
   /* "smelly/clipboard.py":512
  *         current_mime = ''
- * 
+ *
  *         def write_chunks(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             assert w is not None
  *             mv = memoryview(data)
@@ -16130,7 +16130,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20fulfill
 
 /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -16645,7 +16645,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
  *             return
  *         w.screen.send_escape_code_to_child(             # <<<<<<<<<<<<<<
  *             OSC, rr.encode_response(status='OK'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_w, __pyx_n_s_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 507, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -16657,7 +16657,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
  *             return
  *         w.screen.send_escape_code_to_child(
  *             OSC, rr.encode_response(status='OK'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         current_mime = ''
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_OSC); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 508, __pyx_L1_error)
@@ -16724,9 +16724,9 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
 
   /* "smelly/clipboard.py":510
  *             OSC, rr.encode_response(status='OK'))
- * 
+ *
  *         current_mime = ''             # <<<<<<<<<<<<<<
- * 
+ *
  *         def write_chunks(data: bytes) -> None:
  */
   __Pyx_INCREF(__pyx_kp_s_);
@@ -16735,7 +16735,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
 
   /* "smelly/clipboard.py":512
  *         current_mime = ''
- * 
+ *
  *         def write_chunks(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             assert w is not None
  *             mv = memoryview(data)
@@ -16753,7 +16753,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
 
   /* "smelly/clipboard.py":522
  *                 mv = mv[4096:]
- * 
+ *
  *         for mime in rr.mime_types:             # <<<<<<<<<<<<<<
  *             current_mime = mime
  *             if mime == TARGETS_MIME:
@@ -16804,7 +16804,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
     __pyx_t_9 = 0;
 
     /* "smelly/clipboard.py":523
- * 
+ *
  *         for mime in rr.mime_types:
  *             current_mime = mime             # <<<<<<<<<<<<<<
  *             if mime == TARGETS_MIME:
@@ -17244,7 +17244,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
 
     /* "smelly/clipboard.py":522
  *                 mv = mv[4096:]
- * 
+ *
  *         for mime in rr.mime_types:             # <<<<<<<<<<<<<<
  *             current_mime = mime
  *             if mime == TARGETS_MIME:
@@ -17258,7 +17258,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
  *                     f'Failed to read requested mime type {mime} with error: {e}')
  *         w.screen.send_escape_code_to_child(             # <<<<<<<<<<<<<<
  *             OSC, rr.encode_response(status='DONE'))
- * 
+ *
  */
   __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_w, __pyx_n_s_screen); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 538, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
@@ -17270,7 +17270,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
  *                     f'Failed to read requested mime type {mime} with error: {e}')
  *         w.screen.send_escape_code_to_child(
  *             OSC, rr.encode_response(status='DONE'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def reject_read_request(self, rr: ReadRequest) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_OSC); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 539, __pyx_L1_error)
@@ -17337,7 +17337,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
 
   /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -17371,7 +17371,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_14fulfill
 
 /* "smelly/clipboard.py":541
  *             OSC, rr.encode_response(status='DONE'))
- * 
+ *
  *     def reject_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.protocol_type is ProtocolType.osc_52:
  *             return self.fulfill_legacy_read_request(rr, False)
@@ -17461,7 +17461,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_16reject_
   __Pyx_RefNannySetupContext("reject_read_request", 0);
 
   /* "smelly/clipboard.py":542
- * 
+ *
  *     def reject_read_request(self, rr: ReadRequest) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:             # <<<<<<<<<<<<<<
  *             return self.fulfill_legacy_read_request(rr, False)
@@ -17540,7 +17540,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_16reject_
     goto __pyx_L0;
 
     /* "smelly/clipboard.py":542
- * 
+ *
  *     def reject_read_request(self, rr: ReadRequest) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:             # <<<<<<<<<<<<<<
  *             return self.fulfill_legacy_read_request(rr, False)
@@ -17615,7 +17615,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_16reject_
  *         if w is not None:
  *             w.screen.send_escape_code_to_child(             # <<<<<<<<<<<<<<
  *                 OSC, rr.encode_response(status='EPERM'))
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 546, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -17627,7 +17627,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_16reject_
  *         if w is not None:
  *             w.screen.send_escape_code_to_child(
  *                 OSC, rr.encode_response(status='EPERM'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def fulfill_legacy_read_request(
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_OSC); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 547, __pyx_L1_error)
@@ -17703,7 +17703,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_16reject_
 
   /* "smelly/clipboard.py":541
  *             OSC, rr.encode_response(status='DONE'))
- * 
+ *
  *     def reject_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.protocol_type is ProtocolType.osc_52:
  *             return self.fulfill_legacy_read_request(rr, False)
@@ -17730,7 +17730,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_16reject_
 
 /* "smelly/clipboard.py":549
  *                 OSC, rr.encode_response(status='EPERM'))
- * 
+ *
  *     def fulfill_legacy_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -17754,7 +17754,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_19fulfill
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/clipboard.py":550
- * 
+ *
  *     def fulfill_legacy_read_request(
  *             self, rr: ReadRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -17821,7 +17821,7 @@ static PyObject *__pyx_pw_6smelly_9clipboard_23ClipboardRequestManager_19fulfill
 
   /* "smelly/clipboard.py":549
  *                 OSC, rr.encode_response(status='EPERM'))
- * 
+ *
  *     def fulfill_legacy_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -18049,7 +18049,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_18fulfill
  *                 text = cp.get_text()
  *             loc = 'p' if rr.is_primary_selection else 'c'             # <<<<<<<<<<<<<<
  *             w.screen.send_escape_code_to_child(OSC, encode_osc52(loc, text))
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_rr, __pyx_n_s_is_primary_selection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 557, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -18069,7 +18069,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_18fulfill
  *                 text = cp.get_text()
  *             loc = 'p' if rr.is_primary_selection else 'c'
  *             w.screen.send_escape_code_to_child(OSC, encode_osc52(loc, text))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def ask_to_read_clipboard(self, rr: ReadRequest) -> None:
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 558, __pyx_L1_error)
@@ -18188,7 +18188,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_18fulfill
 
   /* "smelly/clipboard.py":549
  *                 OSC, rr.encode_response(status='EPERM'))
- * 
+ *
  *     def fulfill_legacy_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -18219,7 +18219,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_18fulfill
 
 /* "smelly/clipboard.py":560
  *             w.screen.send_escape_code_to_child(OSC, encode_osc52(loc, text))
- * 
+ *
  *     def ask_to_read_clipboard(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.mime_types == (TARGETS_MIME,):
  *             self.fulfill_read_request(rr, True)
@@ -18307,7 +18307,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20ask_to_
   __Pyx_RefNannySetupContext("ask_to_read_clipboard", 0);
 
   /* "smelly/clipboard.py":561
- * 
+ *
  *     def ask_to_read_clipboard(self, rr: ReadRequest) -> None:
  *         if rr.mime_types == (TARGETS_MIME,):             # <<<<<<<<<<<<<<
  *             self.fulfill_read_request(rr, True)
@@ -18397,7 +18397,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20ask_to_
     goto __pyx_L0;
 
     /* "smelly/clipboard.py":561
- * 
+ *
  *     def ask_to_read_clipboard(self, rr: ReadRequest) -> None:
  *         if rr.mime_types == (TARGETS_MIME,):             # <<<<<<<<<<<<<<
  *             self.fulfill_read_request(rr, True)
@@ -18593,7 +18593,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20ask_to_
  *                     'A program running in this window wants to read from the system clipboard.'
  *                     ' Allow it to do so, once?'),
  *                 self.handle_clipboard_confirmation, window=w,)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def handle_clipboard_confirmation(self, confirmed: bool) -> None:
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_handle_clipboard_confirmation); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 574, __pyx_L1_error)
@@ -18619,7 +18619,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20ask_to_
  *                     'A program running in this window wants to read from the system clipboard.'
  *                     ' Allow it to do so, once?'),
  *                 self.handle_clipboard_confirmation, window=w,)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def handle_clipboard_confirmation(self, confirmed: bool) -> None:
  */
     __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 574, __pyx_L1_error)
@@ -18651,7 +18651,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20ask_to_
 
   /* "smelly/clipboard.py":560
  *             w.screen.send_escape_code_to_child(OSC, encode_osc52(loc, text))
- * 
+ *
  *     def ask_to_read_clipboard(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.mime_types == (TARGETS_MIME,):
  *             self.fulfill_read_request(rr, True)
@@ -18676,7 +18676,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_20ask_to_
 
 /* "smelly/clipboard.py":576
  *                 self.handle_clipboard_confirmation, window=w,)
- * 
+ *
  *     def handle_clipboard_confirmation(self, confirmed: bool) -> None:             # <<<<<<<<<<<<<<
  *         rr = self.currently_asking_permission_for
  *         self.currently_asking_permission_for = None
@@ -18764,7 +18764,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_22handle_
   __Pyx_RefNannySetupContext("handle_clipboard_confirmation", 0);
 
   /* "smelly/clipboard.py":577
- * 
+ *
  *     def handle_clipboard_confirmation(self, confirmed: bool) -> None:
  *         rr = self.currently_asking_permission_for             # <<<<<<<<<<<<<<
  *         self.currently_asking_permission_for = None
@@ -18789,7 +18789,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_22handle_
  *         self.currently_asking_permission_for = None
  *         if rr is not None:             # <<<<<<<<<<<<<<
  *             self.fulfill_read_request(rr, confirmed)
- * 
+ *
  */
   __pyx_t_2 = (__pyx_v_rr != Py_None);
   __pyx_t_3 = (__pyx_t_2 != 0);
@@ -18799,7 +18799,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_22handle_
  *         self.currently_asking_permission_for = None
  *         if rr is not None:
  *             self.fulfill_read_request(rr, confirmed)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def close(self) -> None:
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fulfill_read_request); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 580, __pyx_L1_error)
@@ -18856,13 +18856,13 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_22handle_
  *         self.currently_asking_permission_for = None
  *         if rr is not None:             # <<<<<<<<<<<<<<
  *             self.fulfill_read_request(rr, confirmed)
- * 
+ *
  */
   }
 
   /* "smelly/clipboard.py":576
  *                 self.handle_clipboard_confirmation, window=w,)
- * 
+ *
  *     def handle_clipboard_confirmation(self, confirmed: bool) -> None:             # <<<<<<<<<<<<<<
  *         rr = self.currently_asking_permission_for
  *         self.currently_asking_permission_for = None
@@ -18887,7 +18887,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_22handle_
 
 /* "smelly/clipboard.py":582
  *             self.fulfill_read_request(rr, confirmed)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.in_flight_write_request is not None:
  *             self.in_flight_write_request = None
@@ -18919,7 +18919,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_24close(C
   __Pyx_RefNannySetupContext("close", 0);
 
   /* "smelly/clipboard.py":583
- * 
+ *
  *     def close(self) -> None:
  *         if self.in_flight_write_request is not None:             # <<<<<<<<<<<<<<
  *             self.in_flight_write_request = None
@@ -18939,7 +18939,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_24close(C
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_flight_write_request, Py_None) < 0) __PYX_ERR(0, 584, __pyx_L1_error)
 
     /* "smelly/clipboard.py":583
- * 
+ *
  *     def close(self) -> None:
  *         if self.in_flight_write_request is not None:             # <<<<<<<<<<<<<<
  *             self.in_flight_write_request = None
@@ -18948,7 +18948,7 @@ static PyObject *__pyx_pf_6smelly_9clipboard_23ClipboardRequestManager_24close(C
 
   /* "smelly/clipboard.py":582
  *             self.fulfill_read_request(rr, confirmed)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.in_flight_write_request is not None:
  *             self.in_flight_write_request = None
@@ -20210,7 +20210,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":58
  *             limit = offset + size
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal pos, limit
  *                 if pos >= limit:
@@ -20236,7 +20236,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         parts: List[bytes] = []
  *         self.get_mime("text/plain", parts.append)
  *         return b''.join(parts).decode('utf-8', 'replace')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:
  */
   __pyx_tuple__6 = PyTuple_Pack(2, __pyx_kp_s_utf_8, __pyx_n_s_replace); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 104, __pyx_L1_error)
@@ -20245,7 +20245,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":146
  *         if isinstance(data, bytes):
- * 
+ *
  *             def chunker() -> bytes:             # <<<<<<<<<<<<<<
  *                 nonlocal data
  *                 assert isinstance(data, bytes)
@@ -20268,7 +20268,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":300
  *             self.currently_writing_mime = mime
- * 
+ *
  *         def write_saving_leftover_bytes(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             if len(data) == 0:
  *                 return
@@ -20290,7 +20290,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__16);
 
   /* "smelly/clipboard.py":435
- * 
+ *
  *     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:
  *         where, text = data.partition(';')[::2]             # <<<<<<<<<<<<<<
  *         if text == '?':
@@ -20315,7 +20315,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                         payload=mv[: 4096],
  *                         mime=current_mime))
  *                 mv = mv[4096:]             # <<<<<<<<<<<<<<
- * 
+ *
  *         for mime in rr.mime_types:
  */
   __pyx_slice__20 = PySlice_New(__pyx_int_4096, Py_None, Py_None); if (unlikely(!__pyx_slice__20)) __PYX_ERR(0, 520, __pyx_L1_error)
@@ -20324,7 +20324,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":512
  *         current_mime = ''
- * 
+ *
  *         def write_chunks(data: bytes) -> None:             # <<<<<<<<<<<<<<
  *             assert w is not None
  *             mv = memoryview(data)
@@ -20335,7 +20335,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_write_chunks, 512, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 512, __pyx_L1_error)
 
   /* "smelly/clipboard.py":26
- * 
+ *
  * class Tempfile:
  *     def __init__(self, max_size: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
@@ -20348,7 +20348,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":30
  *         self.max_size = max_size
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(
  *                 self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
@@ -20360,7 +20360,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":37
  *             self.file.write(before)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         self.rollover_if_needed(len(data))
  *         self.file.write(data)
@@ -20372,10 +20372,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":41
  *         self.file.write(data)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.file.tell()
- * 
+ *
  */
   __pyx_tuple__31 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
@@ -20384,10 +20384,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":44
  *         return self.file.tell()
- * 
+ *
  *     def seek(self, pos: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  */
   __pyx_tuple__33 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
@@ -20396,7 +20396,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":47
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  *     def read(self, offset: int, size: int) -> bytes:             # <<<<<<<<<<<<<<
  *         self.file.seek(offset)
  *         return self.file.read(size)
@@ -20408,7 +20408,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":51
  *         return self.file.read(size)
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],             # <<<<<<<<<<<<<<
  *                                                                  Callable[[],
  *                                                                           bytes]]:
@@ -20419,7 +20419,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_create_chunker, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 51, __pyx_L1_error)
 
   /* "smelly/clipboard.py":80
- * 
+ *
  *     @staticmethod
  *     def from_osc52_where_field(where: str) -> 'ClipboardType':             # <<<<<<<<<<<<<<
  *         where = where or 's0'
@@ -20431,7 +20431,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_from_osc52_where_field, 80, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 80, __pyx_L1_error)
 
   /* "smelly/clipboard.py":86
- * 
+ *
  * class Clipboard:
  *     def __init__(self, clipboard_type: ClipboardType = ClipboardType.clipboard) -> None:             # <<<<<<<<<<<<<<
  *         self.data: Dict[str, DataType] = {}
@@ -20444,7 +20444,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":91
  *         self.enabled = self.clipboard_type is ClipboardType.clipboard or supports_primary_selection
- * 
+ *
  *     def set_text(self, x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(x, str):
  *             x = x.encode('utf-8')
@@ -20456,7 +20456,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":96
  *         self.set_mime({'text/plain': x})
- * 
+ *
  *     def set_mime(self, data: Mapping[str, DataType]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled and isinstance(data, dict):
  *             self.data = data
@@ -20468,7 +20468,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":101
  *             set_clipboard_data_types(self.clipboard_type, tuple(self.data))
- * 
+ *
  *     def get_text(self) -> str:             # <<<<<<<<<<<<<<
  *         parts: List[bytes] = []
  *         self.get_mime("text/plain", parts.append)
@@ -20480,7 +20480,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":106
  *         return b''.join(parts).decode('utf-8', 'replace')
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             try:
@@ -20492,7 +20492,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":123
  *                         output(q)
- * 
+ *
  *     def get_mime_data(self, mime: str) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
  *         self.get_mime(mime, ans.append)
@@ -20504,7 +20504,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":128
  *         return b''.join(ans)
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             parts: List[bytes] = []
@@ -20516,7 +20516,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":140
  *         return ()
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:             # <<<<<<<<<<<<<<
  *         data = self.data.get(mime, b'')
  *         if isinstance(data, str):
@@ -20527,11 +20527,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_call, 140, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 140, __pyx_L1_error)
 
   /* "smelly/clipboard.py":158
- * 
- * 
+ *
+ *
  * def set_clipboard_string(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().clipboard.set_text(x)
- * 
+ *
  */
   __pyx_tuple__58 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__58);
@@ -20539,20 +20539,20 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_set_clipboard_string, 158, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 158, __pyx_L1_error)
 
   /* "smelly/clipboard.py":162
- * 
- * 
+ *
+ *
  * def get_clipboard_string() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().clipboard.get_text()
- * 
+ *
  */
   __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_get_clipboard_string, 162, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 162, __pyx_L1_error)
 
   /* "smelly/clipboard.py":166
- * 
- * 
+ *
+ *
  * def set_primary_selection(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().primary_selection.set_text(x)
- * 
+ *
  */
   __pyx_tuple__61 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
@@ -20560,17 +20560,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_set_primary_selection, 166, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 166, __pyx_L1_error)
 
   /* "smelly/clipboard.py":170
- * 
- * 
+ *
+ *
  * def get_primary_selection() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().primary_selection.get_text()
- * 
+ *
  */
   __pyx_codeobj__63 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_get_primary_selection, 170, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__63)) __PYX_ERR(0, 170, __pyx_L1_error)
 
   /* "smelly/clipboard.py":174
- * 
- * 
+ *
+ *
  * def develop() -> Tuple[Clipboard, Clipboard]:             # <<<<<<<<<<<<<<
  *     from .constants import detect_if_wayland_ok, is_macos
  *     from .fast_data_types import set_boss
@@ -20581,11 +20581,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__65 = (PyObject*)__Pyx_PyCode_New(0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__64, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_develop, 174, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__65)) __PYX_ERR(0, 174, __pyx_L1_error)
 
   /* "smelly/clipboard.py":196
- * 
- * 
+ *
+ *
  * def encode_mime(x: str) -> str:             # <<<<<<<<<<<<<<
  *     import base64
- * 
+ *
  */
   __pyx_tuple__66 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_base64); if (unlikely(!__pyx_tuple__66)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__66);
@@ -20593,8 +20593,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__67 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__66, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_encode_mime, 196, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__67)) __PYX_ERR(0, 196, __pyx_L1_error)
 
   /* "smelly/clipboard.py":202
- * 
- * 
+ *
+ *
  * def decode_metadata_value(k: str, x: str) -> str:             # <<<<<<<<<<<<<<
  *     if k == 'mime':
  *         import base64
@@ -20617,7 +20617,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":216
  *     protocol_type: ProtocolType = ProtocolType.osc_52
- * 
+ *
  *     def encode_response(self, status: str = 'DATA', mime: str = '',             # <<<<<<<<<<<<<<
  *                         payload: bytes = b'') -> bytes:
  *         ans = f'{self.protocol_type.value};type=read:status={status}'
@@ -20631,11 +20631,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__73);
 
   /* "smelly/clipboard.py":233
- * 
- * 
+ *
+ *
  * def encode_osc52(loc: str, response: str) -> str:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64encode
- * 
+ *
  */
   __pyx_tuple__74 = PyTuple_Pack(3, __pyx_n_s_loc, __pyx_n_s_response, __pyx_n_s_standard_b64encode); if (unlikely(!__pyx_tuple__74)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__74);
@@ -20643,7 +20643,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__75 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__74, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_clipboard_py, __pyx_n_s_encode_osc52, 233, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__75)) __PYX_ERR(0, 233, __pyx_L1_error)
 
   /* "smelly/clipboard.py":246
- * 
+ *
  * class WriteRequest:
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
@@ -20656,7 +20656,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":267
  *         self.commited = False
- * 
+ *
  *     def encode_response(self, status: str = 'OK') -> bytes:             # <<<<<<<<<<<<<<
  *         ans = f'{self.protocol_type.value};type=write:status={status}'
  *         if self.id:
@@ -20671,7 +20671,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":274
  *         return a
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.commited:
  *             return
@@ -20683,7 +20683,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":289
  *             cp.set_mime(x)
- * 
+ *
  *     def add_base64_data(             # <<<<<<<<<<<<<<
  *             self, data: Union[str, bytes],
  *             mime: str = 'text/plain') -> None:
@@ -20698,7 +20698,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":330
  *             write_saving_leftover_bytes(data)
- * 
+ *
  *     def flush_base64_data(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.currently_writing_mime:
  *             b = self.current_leftover_bytes
@@ -20710,10 +20710,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":342
  *             self.current_leftover_bytes = memoryview(b'')
- * 
+ *
  *     def write_base64_data(self, b: bytes) -> None:             # <<<<<<<<<<<<<<
  *         from base64 import standard_b64decode
- * 
+ *
  */
   __pyx_tuple__88 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_b, __pyx_n_s_standard_b64decode, __pyx_n_s_d); if (unlikely(!__pyx_tuple__88)) __PYX_ERR(0, 342, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__88);
@@ -20722,7 +20722,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":353
  *                 self.max_size_exceeded = True
- * 
+ *
  *     def data_for(             # <<<<<<<<<<<<<<
  *             self, mime: str = 'text/plain', offset: int = 0, size: int = -1) -> bytes:
  *         start, full_size = self.mime_map[mime]
@@ -20736,7 +20736,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__92);
 
   /* "smelly/clipboard.py":362
- * 
+ *
  * class ClipboardRequestManager:
  *     def __init__(self, window_id: int) -> None:             # <<<<<<<<<<<<<<
  *         self.window_id = window_id
@@ -20749,10 +20749,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":367
  *         self.in_flight_write_request: Optional[WriteRequest] = None
- * 
+ *
  *     def parse_osc_5522(self, data: str) -> None:             # <<<<<<<<<<<<<<
  *         import base64
- * 
+ *
  */
   __pyx_tuple__95 = PyTuple_Pack(19, __pyx_n_s_self, __pyx_n_s_data, __pyx_n_s_base64, __pyx_n_s_sanitize_id, __pyx_n_s_metadata, __pyx_n_s__24, __pyx_n_s_epayload, __pyx_n_s_m, __pyx_n_s_record, __pyx_n_s_k, __pyx_n_s_v, __pyx_n_s_typ, __pyx_n_s_payload, __pyx_n_s_rr, __pyx_n_s_wr, __pyx_n_s_mime, __pyx_n_s_aliases, __pyx_n_s_alias, __pyx_n_s_w); if (unlikely(!__pyx_tuple__95)) __PYX_ERR(0, 367, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__95);
@@ -20761,7 +20761,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":434
  *                         OSC, wr.encode_response(status='DONE'))
- * 
+ *
  *     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         where, text = data.partition(';')[::2]
  *         if text == '?':
@@ -20776,7 +20776,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":451
  *             self.handle_write_request(wr)
- * 
+ *
  *     def handle_write_request(self, wr: WriteRequest) -> None:             # <<<<<<<<<<<<<<
  *         wr.flush_base64_data()
  *         q = 'write-primary' if wr.is_primary_selection else 'write-clipboard'
@@ -20788,7 +20788,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":457
  *         self.fulfill_write_request(wr, allowed)
- * 
+ *
  *     def fulfill_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -20803,7 +20803,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":471
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  *     def fulfill_legacy_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -20818,7 +20818,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":478
  *             wr.commit()
- * 
+ *
  *     def handle_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         cc = get_options().clipboard_control
  *         if rr.is_primary_selection:
@@ -20830,7 +20830,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -20845,7 +20845,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":541
  *             OSC, rr.encode_response(status='DONE'))
- * 
+ *
  *     def reject_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.protocol_type is ProtocolType.osc_52:
  *             return self.fulfill_legacy_read_request(rr, False)
@@ -20857,7 +20857,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":549
  *                 OSC, rr.encode_response(status='EPERM'))
- * 
+ *
  *     def fulfill_legacy_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -20872,7 +20872,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":560
  *             w.screen.send_escape_code_to_child(OSC, encode_osc52(loc, text))
- * 
+ *
  *     def ask_to_read_clipboard(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.mime_types == (TARGETS_MIME,):
  *             self.fulfill_read_request(rr, True)
@@ -20884,7 +20884,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":576
  *                 self.handle_clipboard_confirmation, window=w,)
- * 
+ *
  *     def handle_clipboard_confirmation(self, confirmed: bool) -> None:             # <<<<<<<<<<<<<<
  *         rr = self.currently_asking_permission_for
  *         self.currently_asking_permission_for = None
@@ -20896,7 +20896,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/clipboard.py":582
  *             self.fulfill_read_request(rr, confirmed)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.in_flight_write_request is not None:
  *             self.in_flight_write_request = None
@@ -21265,7 +21265,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":4
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import io             # <<<<<<<<<<<<<<
  * import os
  * from enum import Enum, IntEnum
@@ -21276,7 +21276,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":5
- * 
+ *
  * import io
  * import os             # <<<<<<<<<<<<<<
  * from enum import Enum, IntEnum
@@ -21341,7 +21341,7 @@ if (!__Pyx_RefNanny) {
  * from gettext import gettext as _
  * from tempfile import TemporaryFile             # <<<<<<<<<<<<<<
  * from typing import IO, Callable, Dict, List, Mapping, NamedTuple, Optional, Tuple, Union
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -21361,7 +21361,7 @@ if (!__Pyx_RefNanny) {
  * from gettext import gettext as _
  * from tempfile import TemporaryFile
  * from typing import IO, Callable, Dict, List, Mapping, NamedTuple, Optional, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .conf.utils import uniq
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -21436,7 +21436,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":11
  * from typing import IO, Callable, Dict, List, Mapping, NamedTuple, Optional, Tuple, Union
- * 
+ *
  * from .conf.utils import uniq             # <<<<<<<<<<<<<<
  * from .constants import supports_primary_selection
  * from .fast_data_types import (
@@ -21456,7 +21456,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/clipboard.py":12
- * 
+ *
  * from .conf.utils import uniq
  * from .constants import supports_primary_selection             # <<<<<<<<<<<<<<
  * from .fast_data_types import (
@@ -21551,8 +21551,8 @@ if (!__Pyx_RefNanny) {
  *     set_clipboard_data_types,
  * )
  * from .utils import log_error             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -21569,8 +21569,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":25
- * 
- * 
+ *
+ *
  * class Tempfile:             # <<<<<<<<<<<<<<
  *     def __init__(self, max_size: int) -> None:
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
@@ -21579,7 +21579,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/clipboard.py":26
- * 
+ *
  * class Tempfile:
  *     def __init__(self, max_size: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
@@ -21598,7 +21598,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":30
  *         self.max_size = max_size
- * 
+ *
  *     def rollover_if_needed(self, sz: int) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(
  *                 self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
@@ -21616,7 +21616,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":37
  *             self.file.write(before)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         self.rollover_if_needed(len(data))
  *         self.file.write(data)
@@ -21634,10 +21634,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":41
  *         self.file.write(data)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.file.tell()
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -21651,10 +21651,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":44
  *         return self.file.tell()
- * 
+ *
  *     def seek(self, pos: int) -> None:             # <<<<<<<<<<<<<<
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -21669,7 +21669,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":47
  *         self.file.seek(pos, os.SEEK_SET)
- * 
+ *
  *     def read(self, offset: int, size: int) -> bytes:             # <<<<<<<<<<<<<<
  *         self.file.seek(offset)
  *         return self.file.read(size)
@@ -21688,7 +21688,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":51
  *         return self.file.read(size)
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],             # <<<<<<<<<<<<<<
  *                                                                  Callable[[],
  *                                                                           bytes]]:
@@ -21703,7 +21703,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/clipboard.py":52
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],
  *                                                                  Callable[[],             # <<<<<<<<<<<<<<
  *                                                                           bytes]]:
@@ -21731,7 +21731,7 @@ if (!__Pyx_RefNanny) {
   __pyx_t_6 = 0;
 
   /* "smelly/clipboard.py":52
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],
  *                                                                  Callable[[],             # <<<<<<<<<<<<<<
  *                                                                           bytes]]:
@@ -21744,7 +21744,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":51
  *         return self.file.read(size)
- * 
+ *
  *     def create_chunker(self, offset: int, size: int) -> Callable[[],             # <<<<<<<<<<<<<<
  *                                                                  Callable[[],
  *                                                                           bytes]]:
@@ -21771,8 +21771,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/clipboard.py":25
- * 
- * 
+ *
+ *
  * class Tempfile:             # <<<<<<<<<<<<<<
  *     def __init__(self, max_size: int) -> None:
  *         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
@@ -21784,11 +21784,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":71
- * 
- * 
+ *
+ *
  * DataType = Union[bytes, Callable[[], Callable[[], bytes]]]             # <<<<<<<<<<<<<<
  * TARGETS_MIME = '.'
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Union); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -21840,17 +21840,17 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":72
- * 
+ *
  * DataType = Union[bytes, Callable[[], Callable[[], bytes]]]
  * TARGETS_MIME = '.'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_TARGETS_MIME, __pyx_kp_s__39) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
 
   /* "smelly/clipboard.py":75
- * 
- * 
+ *
+ *
  * class ClipboardType(IntEnum):             # <<<<<<<<<<<<<<
  *     clipboard = GLFW_CLIPBOARD
  *     primary_selection = GLFW_PRIMARY_SELECTION
@@ -21868,11 +21868,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/clipboard.py":76
- * 
+ *
  * class ClipboardType(IntEnum):
  *     clipboard = GLFW_CLIPBOARD             # <<<<<<<<<<<<<<
  *     primary_selection = GLFW_PRIMARY_SELECTION
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_GLFW_CLIPBOARD); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -21883,7 +21883,7 @@ if (!__Pyx_RefNanny) {
  * class ClipboardType(IntEnum):
  *     clipboard = GLFW_CLIPBOARD
  *     primary_selection = GLFW_PRIMARY_SELECTION             # <<<<<<<<<<<<<<
- * 
+ *
  *     @staticmethod
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_GLFW_PRIMARY_SELECTION); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)
@@ -21892,7 +21892,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/clipboard.py":80
- * 
+ *
  *     @staticmethod
  *     def from_osc52_where_field(where: str) -> 'ClipboardType':             # <<<<<<<<<<<<<<
  *         where = where or 's0'
@@ -21909,7 +21909,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":79
  *     primary_selection = GLFW_PRIMARY_SELECTION
- * 
+ *
  *     @staticmethod             # <<<<<<<<<<<<<<
  *     def from_osc52_where_field(where: str) -> 'ClipboardType':
  *         where = where or 's0'
@@ -21921,8 +21921,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/clipboard.py":75
- * 
- * 
+ *
+ *
  * class ClipboardType(IntEnum):             # <<<<<<<<<<<<<<
  *     clipboard = GLFW_CLIPBOARD
  *     primary_selection = GLFW_PRIMARY_SELECTION
@@ -21936,8 +21936,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":85
- * 
- * 
+ *
+ *
  * class Clipboard:             # <<<<<<<<<<<<<<
  *     def __init__(self, clipboard_type: ClipboardType = ClipboardType.clipboard) -> None:
  *         self.data: Dict[str, DataType] = {}
@@ -21946,7 +21946,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/clipboard.py":86
- * 
+ *
  * class Clipboard:
  *     def __init__(self, clipboard_type: ClipboardType = ClipboardType.clipboard) -> None:             # <<<<<<<<<<<<<<
  *         self.data: Dict[str, DataType] = {}
@@ -21978,7 +21978,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":91
  *         self.enabled = self.clipboard_type is ClipboardType.clipboard or supports_primary_selection
- * 
+ *
  *     def set_text(self, x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(x, str):
  *             x = x.encode('utf-8')
@@ -22011,7 +22011,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":96
  *         self.set_mime({'text/plain': x})
- * 
+ *
  *     def set_mime(self, data: Mapping[str, DataType]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled and isinstance(data, dict):
  *             self.data = data
@@ -22046,7 +22046,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":101
  *             set_clipboard_data_types(self.clipboard_type, tuple(self.data))
- * 
+ *
  *     def get_text(self) -> str:             # <<<<<<<<<<<<<<
  *         parts: List[bytes] = []
  *         self.get_mime("text/plain", parts.append)
@@ -22063,7 +22063,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":106
  *         return b''.join(parts).decode('utf-8', 'replace')
- * 
+ *
  *     def get_mime(self, mime: str, output: Callable[[bytes], None]) -> None:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             try:
@@ -22102,7 +22102,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":123
  *                         output(q)
- * 
+ *
  *     def get_mime_data(self, mime: str) -> bytes:             # <<<<<<<<<<<<<<
  *         ans: List[bytes] = []
  *         self.get_mime(mime, ans.append)
@@ -22120,7 +22120,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":128
  *         return b''.join(ans)
- * 
+ *
  *     def get_available_mime_types_for_paste(self) -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         if self.enabled:
  *             parts: List[bytes] = []
@@ -22152,7 +22152,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":140
  *         return ()
- * 
+ *
  *     def __call__(self, mime: str) -> Callable[[], bytes]:             # <<<<<<<<<<<<<<
  *         data = self.data.get(mime, b'')
  *         if isinstance(data, str):
@@ -22186,8 +22186,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":85
- * 
- * 
+ *
+ *
  * class Clipboard:             # <<<<<<<<<<<<<<
  *     def __init__(self, clipboard_type: ClipboardType = ClipboardType.clipboard) -> None:
  *         self.data: Dict[str, DataType] = {}
@@ -22199,11 +22199,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":158
- * 
- * 
+ *
+ *
  * def set_clipboard_string(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().clipboard.set_text(x)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -22232,11 +22232,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":162
- * 
- * 
+ *
+ *
  * def get_clipboard_string() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().clipboard.get_text()
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -22249,11 +22249,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":166
- * 
- * 
+ *
+ *
  * def set_primary_selection(x: Union[str, bytes]) -> None:             # <<<<<<<<<<<<<<
  *     get_boss().primary_selection.set_text(x)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -22282,11 +22282,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":170
- * 
- * 
+ *
+ *
  * def get_primary_selection() -> str:             # <<<<<<<<<<<<<<
  *     return get_boss().primary_selection.get_text()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -22299,8 +22299,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":174
- * 
- * 
+ *
+ *
  * def develop() -> Tuple[Clipboard, Clipboard]:             # <<<<<<<<<<<<<<
  *     from .constants import detect_if_wayland_ok, is_macos
  *     from .fast_data_types import set_boss
@@ -22335,8 +22335,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":191
- * 
- * 
+ *
+ *
  * class ProtocolType(Enum):             # <<<<<<<<<<<<<<
  *     osc_52 = 52
  *     osc_5522 = 5522
@@ -22354,11 +22354,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/clipboard.py":192
- * 
+ *
  * class ProtocolType(Enum):
  *     osc_52 = 52             # <<<<<<<<<<<<<<
  *     osc_5522 = 5522
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_6, __pyx_n_s_osc_52, __pyx_int_52) < 0) __PYX_ERR(0, 192, __pyx_L1_error)
 
@@ -22366,14 +22366,14 @@ if (!__Pyx_RefNanny) {
  * class ProtocolType(Enum):
  *     osc_52 = 52
  *     osc_5522 = 5522             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_6, __pyx_n_s_osc_5522, __pyx_int_5522) < 0) __PYX_ERR(0, 193, __pyx_L1_error)
 
   /* "smelly/clipboard.py":191
- * 
- * 
+ *
+ *
  * class ProtocolType(Enum):             # <<<<<<<<<<<<<<
  *     osc_52 = 52
  *     osc_5522 = 5522
@@ -22387,11 +22387,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":196
- * 
- * 
+ *
+ *
  * def encode_mime(x: str) -> str:             # <<<<<<<<<<<<<<
  *     import base64
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -22405,8 +22405,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":202
- * 
- * 
+ *
+ *
  * def decode_metadata_value(k: str, x: str) -> str:             # <<<<<<<<<<<<<<
  *     if k == 'mime':
  *         import base64
@@ -22424,8 +22424,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":210
- * 
- * 
+ *
+ *
  * class ReadRequest(NamedTuple):             # <<<<<<<<<<<<<<
  *     is_primary_selection: bool = False
  *     mime_types: Tuple[str, ...] = ('text/plain',)
@@ -22443,7 +22443,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/clipboard.py":211
- * 
+ *
  * class ReadRequest(NamedTuple):
  *     is_primary_selection: bool = False             # <<<<<<<<<<<<<<
  *     mime_types: Tuple[str, ...] = ('text/plain',)
@@ -22465,7 +22465,7 @@ if (!__Pyx_RefNanny) {
  *     mime_types: Tuple[str, ...] = ('text/plain',)
  *     id: str = ''             # <<<<<<<<<<<<<<
  *     protocol_type: ProtocolType = ProtocolType.osc_52
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_6, __pyx_n_s_id, __pyx_kp_s_) < 0) __PYX_ERR(0, 213, __pyx_L1_error)
 
@@ -22473,7 +22473,7 @@ if (!__Pyx_RefNanny) {
  *     mime_types: Tuple[str, ...] = ('text/plain',)
  *     id: str = ''
  *     protocol_type: ProtocolType = ProtocolType.osc_52             # <<<<<<<<<<<<<<
- * 
+ *
  *     def encode_response(self, status: str = 'DATA', mime: str = '',
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_ProtocolType); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 214, __pyx_L1_error)
@@ -22486,7 +22486,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":216
  *     protocol_type: ProtocolType = ProtocolType.osc_52
- * 
+ *
  *     def encode_response(self, status: str = 'DATA', mime: str = '',             # <<<<<<<<<<<<<<
  *                         payload: bytes = b'') -> bytes:
  *         ans = f'{self.protocol_type.value};type=read:status={status}'
@@ -22506,8 +22506,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":210
- * 
- * 
+ *
+ *
  * class ReadRequest(NamedTuple):             # <<<<<<<<<<<<<<
  *     is_primary_selection: bool = False
  *     mime_types: Tuple[str, ...] = ('text/plain',)
@@ -22521,11 +22521,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":233
- * 
- * 
+ *
+ *
  * def encode_osc52(loc: str, response: str) -> str:             # <<<<<<<<<<<<<<
  *     from base64 import standard_b64encode
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -22540,8 +22540,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/clipboard.py":240
- * 
- * 
+ *
+ *
  * class MimePos(NamedTuple):             # <<<<<<<<<<<<<<
  *     start: int
  *     size: int
@@ -22562,8 +22562,8 @@ if (!__Pyx_RefNanny) {
  * class MimePos(NamedTuple):
  *     start: int
  *     size: int             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_4, __pyx_n_s_MimePos, __pyx_t_3, __pyx_t_6, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -22574,8 +22574,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":245
- * 
- * 
+ *
+ *
  * class WriteRequest:             # <<<<<<<<<<<<<<
  *     def __init__(
  *         self,
@@ -22584,7 +22584,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/clipboard.py":246
- * 
+ *
  * class WriteRequest:
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
@@ -22627,7 +22627,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 246, __pyx_L1_error)
 
   /* "smelly/clipboard.py":246
- * 
+ *
  * class WriteRequest:
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
@@ -22660,7 +22660,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":267
  *         self.commited = False
- * 
+ *
  *     def encode_response(self, status: str = 'OK') -> bytes:             # <<<<<<<<<<<<<<
  *         ans = f'{self.protocol_type.value};type=write:status={status}'
  *         if self.id:
@@ -22679,7 +22679,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":274
  *         return a
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.commited:
  *             return
@@ -22696,7 +22696,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":289
  *             cp.set_mime(x)
- * 
+ *
  *     def add_base64_data(             # <<<<<<<<<<<<<<
  *             self, data: Union[str, bytes],
  *             mime: str = 'text/plain') -> None:
@@ -22705,7 +22705,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/clipboard.py":290
- * 
+ *
  *     def add_base64_data(
  *             self, data: Union[str, bytes],             # <<<<<<<<<<<<<<
  *             mime: str = 'text/plain') -> None:
@@ -22740,7 +22740,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":289
  *             cp.set_mime(x)
- * 
+ *
  *     def add_base64_data(             # <<<<<<<<<<<<<<
  *             self, data: Union[str, bytes],
  *             mime: str = 'text/plain') -> None:
@@ -22755,7 +22755,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":330
  *             write_saving_leftover_bytes(data)
- * 
+ *
  *     def flush_base64_data(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.currently_writing_mime:
  *             b = self.current_leftover_bytes
@@ -22772,10 +22772,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":342
  *             self.current_leftover_bytes = memoryview(b'')
- * 
+ *
  *     def write_base64_data(self, b: bytes) -> None:             # <<<<<<<<<<<<<<
  *         from base64 import standard_b64decode
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 342, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -22790,7 +22790,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":353
  *                 self.max_size_exceeded = True
- * 
+ *
  *     def data_for(             # <<<<<<<<<<<<<<
  *             self, mime: str = 'text/plain', offset: int = 0, size: int = -1) -> bytes:
  *         start, full_size = self.mime_map[mime]
@@ -22810,8 +22810,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/clipboard.py":245
- * 
- * 
+ *
+ *
  * class WriteRequest:             # <<<<<<<<<<<<<<
  *     def __init__(
  *         self,
@@ -22823,8 +22823,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/clipboard.py":361
- * 
- * 
+ *
+ *
  * class ClipboardRequestManager:             # <<<<<<<<<<<<<<
  *     def __init__(self, window_id: int) -> None:
  *         self.window_id = window_id
@@ -22833,7 +22833,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/clipboard.py":362
- * 
+ *
  * class ClipboardRequestManager:
  *     def __init__(self, window_id: int) -> None:             # <<<<<<<<<<<<<<
  *         self.window_id = window_id
@@ -22852,10 +22852,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":367
  *         self.in_flight_write_request: Optional[WriteRequest] = None
- * 
+ *
  *     def parse_osc_5522(self, data: str) -> None:             # <<<<<<<<<<<<<<
  *         import base64
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 367, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -22870,7 +22870,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":434
  *                         OSC, wr.encode_response(status='DONE'))
- * 
+ *
  *     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         where, text = data.partition(';')[::2]
  *         if text == '?':
@@ -22890,7 +22890,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":451
  *             self.handle_write_request(wr)
- * 
+ *
  *     def handle_write_request(self, wr: WriteRequest) -> None:             # <<<<<<<<<<<<<<
  *         wr.flush_base64_data()
  *         q = 'write-primary' if wr.is_primary_selection else 'write-clipboard'
@@ -22911,7 +22911,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":457
  *         self.fulfill_write_request(wr, allowed)
- * 
+ *
  *     def fulfill_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -22920,7 +22920,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/clipboard.py":458
- * 
+ *
  *     def fulfill_write_request(
  *             self, wr: WriteRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -22935,7 +22935,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":457
  *         self.fulfill_write_request(wr, allowed)
- * 
+ *
  *     def fulfill_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         if wr.protocol_type is ProtocolType.osc_52:
@@ -22950,7 +22950,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":471
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  *     def fulfill_legacy_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -22959,7 +22959,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/clipboard.py":472
- * 
+ *
  *     def fulfill_legacy_write_request(
  *             self, wr: WriteRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -22974,7 +22974,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":471
  *                         status='EPERM' if not allowed else 'ENOSYS'))
- * 
+ *
  *     def fulfill_legacy_write_request(             # <<<<<<<<<<<<<<
  *             self, wr: WriteRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
@@ -22989,7 +22989,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":478
  *             wr.commit()
- * 
+ *
  *     def handle_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         cc = get_options().clipboard_control
  *         if rr.is_primary_selection:
@@ -23010,7 +23010,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -23019,7 +23019,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/clipboard.py":492
- * 
+ *
  *     def fulfill_read_request(
  *             self, rr: ReadRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -23034,7 +23034,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":491
  *             self.fulfill_read_request(rr, allowed=allowed)
- * 
+ *
  *     def fulfill_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         if rr.protocol_type is ProtocolType.osc_52:
@@ -23049,7 +23049,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":541
  *             OSC, rr.encode_response(status='DONE'))
- * 
+ *
  *     def reject_read_request(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.protocol_type is ProtocolType.osc_52:
  *             return self.fulfill_legacy_read_request(rr, False)
@@ -23070,7 +23070,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":549
  *                 OSC, rr.encode_response(status='EPERM'))
- * 
+ *
  *     def fulfill_legacy_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -23079,7 +23079,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/clipboard.py":550
- * 
+ *
  *     def fulfill_legacy_read_request(
  *             self, rr: ReadRequest, allowed: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -23094,7 +23094,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":549
  *                 OSC, rr.encode_response(status='EPERM'))
- * 
+ *
  *     def fulfill_legacy_read_request(             # <<<<<<<<<<<<<<
  *             self, rr: ReadRequest, allowed: bool = True) -> None:
  *         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
@@ -23109,7 +23109,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":560
  *             w.screen.send_escape_code_to_child(OSC, encode_osc52(loc, text))
- * 
+ *
  *     def ask_to_read_clipboard(self, rr: ReadRequest) -> None:             # <<<<<<<<<<<<<<
  *         if rr.mime_types == (TARGETS_MIME,):
  *             self.fulfill_read_request(rr, True)
@@ -23130,7 +23130,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":576
  *                 self.handle_clipboard_confirmation, window=w,)
- * 
+ *
  *     def handle_clipboard_confirmation(self, confirmed: bool) -> None:             # <<<<<<<<<<<<<<
  *         rr = self.currently_asking_permission_for
  *         self.currently_asking_permission_for = None
@@ -23148,7 +23148,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/clipboard.py":582
  *             self.fulfill_read_request(rr, confirmed)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.in_flight_write_request is not None:
  *             self.in_flight_write_request = None
@@ -23164,8 +23164,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/clipboard.py":361
- * 
- * 
+ *
+ *
  * class ClipboardRequestManager:             # <<<<<<<<<<<<<<
  *     def __init__(self, window_id: int) -> None:
  *         self.window_id = window_id
@@ -23179,7 +23179,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/clipboard.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);

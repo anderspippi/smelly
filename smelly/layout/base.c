@@ -976,8 +976,8 @@ struct __pyx_obj_6smelly_6layout_4base___pyx_scope_struct_6_get_minimal_borders;
 struct __pyx_obj_6smelly_6layout_4base___pyx_scope_struct_7_minimal_borders;
 
 /* "smelly/layout/base.py":103
- * 
- * 
+ *
+ *
  * def layout_dimension(             # <<<<<<<<<<<<<<
  *     start_at: int,
  *     length: int,
@@ -1013,8 +1013,8 @@ struct __pyx_obj_6smelly_6layout_4base___pyx_scope_struct__layout_dimension {
 
 
 /* "smelly/layout/base.py":151
- * 
- * 
+ *
+ *
  * def blank_rects_for_window(wg: WindowGeometry) -> Generator[Rect, None, None]:             # <<<<<<<<<<<<<<
  *     left_width, right_width = wg.spaces.left, wg.spaces.right
  *     top_height, bottom_height = wg.spaces.top, wg.spaces.bottom
@@ -1031,7 +1031,7 @@ struct __pyx_obj_6smelly_6layout_4base___pyx_scope_struct_1_blank_rects_for_wind
 
 /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -1065,7 +1065,7 @@ struct __pyx_obj_6smelly_6layout_4base___pyx_scope_struct_3_genexpr {
 
 /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -1099,7 +1099,7 @@ struct __pyx_obj_6smelly_6layout_4base___pyx_scope_struct_5_genexpr {
 
 /* "smelly/layout/base.py":393
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         yield from self.minimal_borders(windows)
@@ -1113,7 +1113,7 @@ struct __pyx_obj_6smelly_6layout_4base___pyx_scope_struct_6_get_minimal_borders 
 
 /* "smelly/layout/base.py":397
  *         yield from self.minimal_borders(windows)
- * 
+ *
  *     def minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         return
  *         yield BorderLine()  # type: ignore
@@ -2580,11 +2580,11 @@ static PyObject *__pyx_codeobj__108;
 /* Late includes */
 
 /* "smelly/layout/base.py":22
- * 
+ *
  * class LayoutOpts:
  *     def __init__(self, data: Dict[str, str]):             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2666,10 +2666,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_10LayoutOpts___init__(CYTHON_UNU
 
 /* "smelly/layout/base.py":25
  *         pass
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2696,11 +2696,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_10LayoutOpts_2serialized(CYTHON_
   __Pyx_RefNannySetupContext("serialized", 0);
 
   /* "smelly/layout/base.py":26
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:
  *         return {}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
@@ -2711,10 +2711,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_10LayoutOpts_2serialized(CYTHON_
 
   /* "smelly/layout/base.py":25
  *         pass
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
- * 
+ *
  */
 
   /* function exit code */
@@ -2729,8 +2729,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_10LayoutOpts_2serialized(CYTHON_
 }
 
 /* "smelly/layout/base.py":62
- * 
- * 
+ *
+ *
  * def idx_for_id(win_id: int, windows: Iterable[WindowType]) -> Optional[int]:             # <<<<<<<<<<<<<<
  *     for i, w in enumerate(windows):
  *         if w.id == win_id:
@@ -2819,7 +2819,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_idx_for_id(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("idx_for_id", 0);
 
   /* "smelly/layout/base.py":63
- * 
+ *
  * def idx_for_id(win_id: int, windows: Iterable[WindowType]) -> Optional[int]:
  *     for i, w in enumerate(windows):             # <<<<<<<<<<<<<<
  *         if w.id == win_id:
@@ -2896,7 +2896,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_idx_for_id(CYTHON_UNUSED PyObjec
  *         if w.id == win_id:
  *             return i             # <<<<<<<<<<<<<<
  *     return None
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_i);
@@ -2915,7 +2915,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_idx_for_id(CYTHON_UNUSED PyObjec
     }
 
     /* "smelly/layout/base.py":63
- * 
+ *
  * def idx_for_id(win_id: int, windows: Iterable[WindowType]) -> Optional[int]:
  *     for i, w in enumerate(windows):             # <<<<<<<<<<<<<<
  *         if w.id == win_id:
@@ -2929,16 +2929,16 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_idx_for_id(CYTHON_UNUSED PyObjec
  *         if w.id == win_id:
  *             return i
  *     return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":62
- * 
- * 
+ *
+ *
  * def idx_for_id(win_id: int, windows: Iterable[WindowType]) -> Optional[int]:             # <<<<<<<<<<<<<<
  *     for i, w in enumerate(windows):
  *         if w.id == win_id:
@@ -2961,8 +2961,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_idx_for_id(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/layout/base.py":69
- * 
- * 
+ *
+ *
  * def set_layout_options(opts: Options) -> None:             # <<<<<<<<<<<<<<
  *     lgd.draw_minimal_borders = opts.draw_minimal_borders and sum(opts.window_margin_width) == 0
  *     lgd.draw_active_borders = opts.active_border_color is not None
@@ -2995,7 +2995,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_2set_layout_options(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("set_layout_options", 0);
 
   /* "smelly/layout/base.py":70
- * 
+ *
  * def set_layout_options(opts: Options) -> None:
  *     lgd.draw_minimal_borders = opts.draw_minimal_borders and sum(opts.window_margin_width) == 0             # <<<<<<<<<<<<<<
  *     lgd.draw_active_borders = opts.active_border_color is not None
@@ -3035,7 +3035,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_2set_layout_options(CYTHON_UNUSE
  *     lgd.draw_minimal_borders = opts.draw_minimal_borders and sum(opts.window_margin_width) == 0
  *     lgd.draw_active_borders = opts.active_border_color is not None             # <<<<<<<<<<<<<<
  *     lgd.align_top_left = opts.placement_strategy == 'top-left'
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_active_border_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3053,8 +3053,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_2set_layout_options(CYTHON_UNUSE
  *     lgd.draw_minimal_borders = opts.draw_minimal_borders and sum(opts.window_margin_width) == 0
  *     lgd.draw_active_borders = opts.active_border_color is not None
  *     lgd.align_top_left = opts.placement_strategy == 'top-left'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_placement_strategy); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3067,8 +3067,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_2set_layout_options(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/base.py":69
- * 
- * 
+ *
+ *
  * def set_layout_options(opts: Options) -> None:             # <<<<<<<<<<<<<<
  *     lgd.draw_minimal_borders = opts.draw_minimal_borders and sum(opts.window_margin_width) == 0
  *     lgd.draw_active_borders = opts.active_border_color is not None
@@ -3090,8 +3090,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_2set_layout_options(CYTHON_UNUSE
 }
 
 /* "smelly/layout/base.py":75
- * 
- * 
+ *
+ *
  * def convert_bias_map(bias: Dict[int, float], number_of_windows: int, number_of_cells: int) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     cells_per_window, extra = divmod(number_of_cells, number_of_windows)
  *     cell_map = list(repeat(cells_per_window, number_of_windows))
@@ -3194,7 +3194,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_4convert_bias_map(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("convert_bias_map", 0);
 
   /* "smelly/layout/base.py":76
- * 
+ *
  * def convert_bias_map(bias: Dict[int, float], number_of_windows: int, number_of_cells: int) -> Sequence[float]:
  *     cells_per_window, extra = divmod(number_of_cells, number_of_windows)             # <<<<<<<<<<<<<<
  *     cell_map = list(repeat(cells_per_window, number_of_windows))
@@ -3212,11 +3212,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_4convert_bias_map(CYTHON_UNUSED 
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -3334,7 +3334,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_4convert_bias_map(CYTHON_UNUSED 
  *     cell_map[-1] += extra
  *     base_bias = [x / number_of_cells for x in cell_map]             # <<<<<<<<<<<<<<
  *     return distribute_indexed_bias(base_bias, bias)
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3362,8 +3362,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_4convert_bias_map(CYTHON_UNUSED 
  *     cell_map[-1] += extra
  *     base_bias = [x / number_of_cells for x in cell_map]
  *     return distribute_indexed_bias(base_bias, bias)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_distribute_indexed_bias); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -3418,8 +3418,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_4convert_bias_map(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":75
- * 
- * 
+ *
+ *
  * def convert_bias_map(bias: Dict[int, float], number_of_windows: int, number_of_cells: int) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     cells_per_window, extra = divmod(number_of_cells, number_of_windows)
  *     cell_map = list(repeat(cells_per_window, number_of_windows))
@@ -3445,8 +3445,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_4convert_bias_map(CYTHON_UNUSED 
 }
 
 /* "smelly/layout/base.py":83
- * 
- * 
+ *
+ *
  * def calculate_cells_map(bias: Union[None, Sequence[float], Dict[int, float]], number_of_windows: int, number_of_cells: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     if isinstance(bias, dict):
  *         bias = convert_bias_map(bias, number_of_windows, number_of_cells)
@@ -3555,13 +3555,13 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6calculate_cells_map(CYTHON_UNUS
   __Pyx_INCREF(__pyx_v_bias);
 
   /* "smelly/layout/base.py":84
- * 
+ *
  * def calculate_cells_map(bias: Union[None, Sequence[float], Dict[int, float]], number_of_windows: int, number_of_cells: int) -> List[int]:
  *     if isinstance(bias, dict):             # <<<<<<<<<<<<<<
  *         bias = convert_bias_map(bias, number_of_windows, number_of_cells)
  *     cells_per_window = number_of_cells // number_of_windows
  */
-  __pyx_t_1 = PyDict_Check(__pyx_v_bias); 
+  __pyx_t_1 = PyDict_Check(__pyx_v_bias);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -3626,7 +3626,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6calculate_cells_map(CYTHON_UNUS
     __pyx_t_3 = 0;
 
     /* "smelly/layout/base.py":84
- * 
+ *
  * def calculate_cells_map(bias: Union[None, Sequence[float], Dict[int, float]], number_of_windows: int, number_of_cells: int) -> List[int]:
  *     if isinstance(bias, dict):             # <<<<<<<<<<<<<<
  *         bias = convert_bias_map(bias, number_of_windows, number_of_cells)
@@ -3807,11 +3807,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6calculate_cells_map(CYTHON_UNUS
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_5);
         __Pyx_INCREF(__pyx_t_3);
@@ -4021,7 +4021,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6calculate_cells_map(CYTHON_UNUS
  *     if extra > 0:
  *         cells_map[-1] += extra             # <<<<<<<<<<<<<<
  *     return cells_map
- * 
+ *
  */
     __pyx_t_9 = -1L;
     __pyx_t_7 = __Pyx_GetItemInt_List(__pyx_v_cells_map, __pyx_t_9, Py_ssize_t, 1, PyInt_FromSsize_t, 1, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 99, __pyx_L1_error)
@@ -4045,8 +4045,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6calculate_cells_map(CYTHON_UNUS
  *     if extra > 0:
  *         cells_map[-1] += extra
  *     return cells_map             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_cells_map);
@@ -4054,8 +4054,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6calculate_cells_map(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":83
- * 
- * 
+ *
+ *
  * def calculate_cells_map(bias: Union[None, Sequence[float], Dict[int, float]], number_of_windows: int, number_of_cells: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     if isinstance(bias, dict):
  *         bias = convert_bias_map(bias, number_of_windows, number_of_cells)
@@ -4084,8 +4084,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6calculate_cells_map(CYTHON_UNUS
 static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/layout/base.py":103
- * 
- * 
+ *
+ *
  * def layout_dimension(             # <<<<<<<<<<<<<<
  *     start_at: int,
  *     length: int,
@@ -4218,8 +4218,8 @@ static PyObject *__pyx_pw_6smelly_6layout_4base_9layout_dimension(PyObject *__py
   __pyx_r = __pyx_pf_6smelly_6layout_4base_8layout_dimension(__pyx_self, __pyx_v_start_at, __pyx_v_length, __pyx_v_cell_length, __pyx_v_decoration_pairs, __pyx_v_left_align, __pyx_v_bias);
 
   /* "smelly/layout/base.py":103
- * 
- * 
+ *
+ *
  * def layout_dimension(             # <<<<<<<<<<<<<<
  *     start_at: int,
  *     length: int,
@@ -4436,7 +4436,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
  *         extra = length - number_of_cells * cell_length
  *     cells_map = calculate_cells_map(bias, number_of_windows, number_of_cells)             # <<<<<<<<<<<<<<
  *     assert sum(cells_map) == number_of_cells
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_calculate_cells_map); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4500,7 +4500,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
  *         extra = length - number_of_cells * cell_length
  *     cells_map = calculate_cells_map(bias, number_of_windows, number_of_cells)
  *     assert sum(cells_map) == number_of_cells             # <<<<<<<<<<<<<<
- * 
+ *
  *     extra = length - number_of_cells * cell_length - space_needed_for_decorations
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
@@ -4520,7 +4520,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
 
   /* "smelly/layout/base.py":122
  *     assert sum(cells_map) == number_of_cells
- * 
+ *
  *     extra = length - number_of_cells * cell_length - space_needed_for_decorations             # <<<<<<<<<<<<<<
  *     pos = start_at
  *     if not left_align:
@@ -4539,7 +4539,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
   __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":123
- * 
+ *
  *     extra = length - number_of_cells * cell_length - space_needed_for_decorations
  *     pos = start_at             # <<<<<<<<<<<<<<
  *     if not left_align:
@@ -4565,7 +4565,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
  *     if not left_align:
  *         pos += extra // 2             # <<<<<<<<<<<<<<
  *     last_i = len(cells_map) - 1
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyInt_FloorDivideObjC(__pyx_cur_scope->__pyx_v_extra, __pyx_int_2, 2, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4590,7 +4590,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
  *     if not left_align:
  *         pos += extra // 2
  *     last_i = len(cells_map) - 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     for i, cells_per_window in enumerate(cells_map):
  */
   __pyx_t_1 = PyObject_Length(__pyx_cur_scope->__pyx_v_cells_map); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 126, __pyx_L1_error)
@@ -4598,7 +4598,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
 
   /* "smelly/layout/base.py":128
  *     last_i = len(cells_map) - 1
- * 
+ *
  *     for i, cells_per_window in enumerate(cells_map):             # <<<<<<<<<<<<<<
  *         before_dec, after_dec = decoration_pairs[i]
  *         pos += before_dec
@@ -4659,7 +4659,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
     __pyx_t_8 = 0;
 
     /* "smelly/layout/base.py":129
- * 
+ *
  *     for i, cells_per_window in enumerate(cells_map):
  *         before_dec, after_dec = decoration_pairs[i]             # <<<<<<<<<<<<<<
  *         pos += before_dec
@@ -4677,11 +4677,11 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -4867,7 +4867,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
  *             after_space = after_dec
  *         yield LayoutData(pos, cells_per_window, before_space, after_space, content_size)             # <<<<<<<<<<<<<<
  *         pos += content_size + after_space
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_LayoutData); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
@@ -4954,8 +4954,8 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
  *             after_space = after_dec
  *         yield LayoutData(pos, cells_per_window, before_space, after_space, content_size)
  *         pos += content_size + after_space             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_5 = PyNumber_Add(__pyx_cur_scope->__pyx_v_content_size, __pyx_cur_scope->__pyx_v_after_space); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 141, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -4969,7 +4969,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
 
     /* "smelly/layout/base.py":128
  *     last_i = len(cells_map) - 1
- * 
+ *
  *     for i, cells_per_window in enumerate(cells_map):             # <<<<<<<<<<<<<<
  *         before_dec, after_dec = decoration_pairs[i]
  *         pos += before_dec
@@ -4980,8 +4980,8 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/layout/base.py":103
- * 
- * 
+ *
+ *
  * def layout_dimension(             # <<<<<<<<<<<<<<
  *     start_at: int,
  *     length: int,
@@ -5011,8 +5011,8 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_10generator(__pyx_CoroutineObjec
 static PyObject *__pyx_gb_6smelly_6layout_4base_13generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/layout/base.py":151
- * 
- * 
+ *
+ *
  * def blank_rects_for_window(wg: WindowGeometry) -> Generator[Rect, None, None]:             # <<<<<<<<<<<<<<
  *     left_width, right_width = wg.spaces.left, wg.spaces.right
  *     top_height, bottom_height = wg.spaces.top, wg.spaces.bottom
@@ -5101,7 +5101,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_13generator1(__pyx_CoroutineObje
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 151, __pyx_L1_error)
 
   /* "smelly/layout/base.py":152
- * 
+ *
  * def blank_rects_for_window(wg: WindowGeometry) -> Generator[Rect, None, None]:
  *     left_width, right_width = wg.spaces.left, wg.spaces.right             # <<<<<<<<<<<<<<
  *     top_height, bottom_height = wg.spaces.top, wg.spaces.bottom
@@ -5498,7 +5498,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_13generator1(__pyx_CoroutineObje
  *         yield Rect(wg.right, wg.top, wg.right + right_width, wg.bottom + bottom_height)
  *     if bottom_height > 0:             # <<<<<<<<<<<<<<
  *         yield Rect(wg.left, wg.bottom, wg.right, wg.bottom + bottom_height)
- * 
+ *
  */
   __pyx_t_1 = PyObject_RichCompare(__pyx_cur_scope->__pyx_v_bottom_height, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 160, __pyx_L1_error)
@@ -5509,8 +5509,8 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_13generator1(__pyx_CoroutineObje
  *         yield Rect(wg.right, wg.top, wg.right + right_width, wg.bottom + bottom_height)
  *     if bottom_height > 0:
  *         yield Rect(wg.left, wg.bottom, wg.right, wg.bottom + bottom_height)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Rect); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 161, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -5600,14 +5600,14 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_13generator1(__pyx_CoroutineObje
  *         yield Rect(wg.right, wg.top, wg.right + right_width, wg.bottom + bottom_height)
  *     if bottom_height > 0:             # <<<<<<<<<<<<<<
  *         yield Rect(wg.left, wg.bottom, wg.right, wg.bottom + bottom_height)
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/layout/base.py":151
- * 
- * 
+ *
+ *
  * def blank_rects_for_window(wg: WindowGeometry) -> Generator[Rect, None, None]:             # <<<<<<<<<<<<<<
  *     left_width, right_width = wg.spaces.left, wg.spaces.right
  *     top_height, bottom_height = wg.spaces.top, wg.spaces.bottom
@@ -5638,8 +5638,8 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_13generator1(__pyx_CoroutineObje
 }
 
 /* "smelly/layout/base.py":164
- * 
- * 
+ *
+ *
  * def window_geometry(xstart: int, xnum: int, ystart: int, ynum: int, left: int, top: int, right: int, bottom: int) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return WindowGeometry(
  *         left=xstart,
@@ -5792,7 +5792,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_14window_geometry(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("window_geometry", 0);
 
   /* "smelly/layout/base.py":165
- * 
+ *
  * def window_geometry(xstart: int, xnum: int, ystart: int, ynum: int, left: int, top: int, right: int, bottom: int) -> WindowGeometry:
  *     return WindowGeometry(             # <<<<<<<<<<<<<<
  *         left=xstart,
@@ -5887,7 +5887,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_14window_geometry(CYTHON_UNUSED 
  *         bottom=ystart + lgd.cell_height * ynum,
  *         spaces=Edges(left, top, right, bottom),             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Edges); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5946,7 +5946,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_14window_geometry(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/base.py":165
- * 
+ *
  * def window_geometry(xstart: int, xnum: int, ystart: int, ynum: int, left: int, top: int, right: int, bottom: int) -> WindowGeometry:
  *     return WindowGeometry(             # <<<<<<<<<<<<<<
  *         left=xstart,
@@ -5961,8 +5961,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_14window_geometry(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":164
- * 
- * 
+ *
+ *
  * def window_geometry(xstart: int, xnum: int, ystart: int, ynum: int, left: int, top: int, right: int, bottom: int) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return WindowGeometry(
  *         left=xstart,
@@ -5985,11 +5985,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_14window_geometry(CYTHON_UNUSED 
 }
 
 /* "smelly/layout/base.py":176
- * 
- * 
+ *
+ *
  * def window_geometry_from_layouts(x: LayoutData, y: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return window_geometry(x.content_pos, x.cells_per_window, y.content_pos, y.cells_per_window, x.space_before, y.space_before, x.space_after, y.space_after)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6079,11 +6079,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_16window_geometry_from_layouts(C
   __Pyx_RefNannySetupContext("window_geometry_from_layouts", 0);
 
   /* "smelly/layout/base.py":177
- * 
+ *
  * def window_geometry_from_layouts(x: LayoutData, y: LayoutData) -> WindowGeometry:
  *     return window_geometry(x.content_pos, x.cells_per_window, y.content_pos, y.cells_per_window, x.space_before, y.space_before, x.space_after, y.space_after)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_window_geometry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
@@ -6188,11 +6188,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_16window_geometry_from_layouts(C
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":176
- * 
- * 
+ *
+ *
  * def window_geometry_from_layouts(x: LayoutData, y: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return window_geometry(x.content_pos, x.cells_per_window, y.content_pos, y.cells_per_window, x.space_before, y.space_before, x.space_after, y.space_after)
- * 
+ *
  */
 
   /* function exit code */
@@ -6218,8 +6218,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_16window_geometry_from_layouts(C
 }
 
 /* "smelly/layout/base.py":180
- * 
- * 
+ *
+ *
  * def layout_single_window(xdecoration_pairs: DecorationPairs, ydecoration_pairs: DecorationPairs, left_align: bool = False) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     x = next(layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, xdecoration_pairs, left_align=lgd.align_top_left))
  *     y = next(layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, ydecoration_pairs, left_align=lgd.align_top_left))
@@ -6322,7 +6322,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_18layout_single_window(CYTHON_UN
   __Pyx_RefNannySetupContext("layout_single_window", 0);
 
   /* "smelly/layout/base.py":181
- * 
+ *
  * def layout_single_window(xdecoration_pairs: DecorationPairs, ydecoration_pairs: DecorationPairs, left_align: bool = False) -> WindowGeometry:
  *     x = next(layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, xdecoration_pairs, left_align=lgd.align_top_left))             # <<<<<<<<<<<<<<
  *     y = next(layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, ydecoration_pairs, left_align=lgd.align_top_left))
@@ -6390,7 +6390,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_18layout_single_window(CYTHON_UN
  *     x = next(layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, xdecoration_pairs, left_align=lgd.align_top_left))
  *     y = next(layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, ydecoration_pairs, left_align=lgd.align_top_left))             # <<<<<<<<<<<<<<
  *     return window_geometry_from_layouts(x, y)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_layout_dimension); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -6453,8 +6453,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_18layout_single_window(CYTHON_UN
  *     x = next(layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, xdecoration_pairs, left_align=lgd.align_top_left))
  *     y = next(layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, ydecoration_pairs, left_align=lgd.align_top_left))
  *     return window_geometry_from_layouts(x, y)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_window_geometry_from_layouts); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 183, __pyx_L1_error)
@@ -6509,8 +6509,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_18layout_single_window(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":180
- * 
- * 
+ *
+ *
  * def layout_single_window(xdecoration_pairs: DecorationPairs, ydecoration_pairs: DecorationPairs, left_align: bool = False) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     x = next(layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, xdecoration_pairs, left_align=lgd.align_top_left))
  *     y = next(layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, ydecoration_pairs, left_align=lgd.align_top_left))
@@ -6534,11 +6534,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_18layout_single_window(CYTHON_UN
 }
 
 /* "smelly/layout/base.py":186
- * 
- * 
+ *
+ *
  * def safe_increment_bias(old_val: float, increment: float) -> float:             # <<<<<<<<<<<<<<
  *     return max(0.1, min(old_val + increment, 0.9))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6619,11 +6619,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_20safe_increment_bias(CYTHON_UNU
   __Pyx_RefNannySetupContext("safe_increment_bias", 0);
 
   /* "smelly/layout/base.py":187
- * 
+ *
  * def safe_increment_bias(old_val: float, increment: float) -> float:
  *     return max(0.1, min(old_val + increment, 0.9))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = 0.9;
@@ -6647,11 +6647,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_20safe_increment_bias(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":186
- * 
- * 
+ *
+ *
  * def safe_increment_bias(old_val: float, increment: float) -> float:             # <<<<<<<<<<<<<<
  *     return max(0.1, min(old_val + increment, 0.9))
- * 
+ *
  */
 
   /* function exit code */
@@ -6666,8 +6666,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_20safe_increment_bias(CYTHON_UNU
 }
 
 /* "smelly/layout/base.py":190
- * 
- * 
+ *
+ *
  * def normalize_biases(biases: List[float]) -> List[float]:             # <<<<<<<<<<<<<<
  *     s = sum(biases)
  *     if s == 1.0:
@@ -6704,7 +6704,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_22normalize_biases(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("normalize_biases", 0);
 
   /* "smelly/layout/base.py":191
- * 
+ *
  * def normalize_biases(biases: List[float]) -> List[float]:
  *     s = sum(biases)             # <<<<<<<<<<<<<<
  *     if s == 1.0:
@@ -6733,7 +6733,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_22normalize_biases(CYTHON_UNUSED
  *     if s == 1.0:
  *         return biases             # <<<<<<<<<<<<<<
  *     return [x / s for x in biases]
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_v_biases);
@@ -6753,8 +6753,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_22normalize_biases(CYTHON_UNUSED
  *     if s == 1.0:
  *         return biases
  *     return [x / s for x in biases]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
@@ -6811,8 +6811,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_22normalize_biases(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":190
- * 
- * 
+ *
+ *
  * def normalize_biases(biases: List[float]) -> List[float]:             # <<<<<<<<<<<<<<
  *     s = sum(biases)
  *     if s == 1.0:
@@ -6834,8 +6834,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_22normalize_biases(CYTHON_UNUSED
 }
 
 /* "smelly/layout/base.py":197
- * 
- * 
+ *
+ *
  * def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int, float]) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     if not index_bias_map:
  *         return base_bias
@@ -6939,7 +6939,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_24distribute_indexed_bias(CYTHON
   __Pyx_RefNannySetupContext("distribute_indexed_bias", 0);
 
   /* "smelly/layout/base.py":198
- * 
+ *
  * def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int, float]) -> Sequence[float]:
  *     if not index_bias_map:             # <<<<<<<<<<<<<<
  *         return base_bias
@@ -6962,7 +6962,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_24distribute_indexed_bias(CYTHON
     goto __pyx_L0;
 
     /* "smelly/layout/base.py":198
- * 
+ *
  * def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int, float]) -> Sequence[float]:
  *     if not index_bias_map:             # <<<<<<<<<<<<<<
  *         return base_bias
@@ -7069,11 +7069,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_24distribute_indexed_bias(CYTHON
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_8);
@@ -7172,7 +7172,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_24distribute_indexed_bias(CYTHON
  *         other_increment = -increment / (limit - 1)
  *         ans = [safe_increment_bias(b, increment if i == row else other_increment) for i, b in enumerate(ans)]             # <<<<<<<<<<<<<<
  *     return normalize_biases(ans)
- * 
+ *
  */
     __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -7278,8 +7278,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_24distribute_indexed_bias(CYTHON
  *         other_increment = -increment / (limit - 1)
  *         ans = [safe_increment_bias(b, increment if i == row else other_increment) for i, b in enumerate(ans)]
  *     return normalize_biases(ans)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_normalize_biases); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 207, __pyx_L1_error)
@@ -7304,8 +7304,8 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_24distribute_indexed_bias(CYTHON
   goto __pyx_L0;
 
   /* "smelly/layout/base.py":197
- * 
- * 
+ *
+ *
  * def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int, float]) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     if not index_bias_map:
  *         return base_bias
@@ -7339,7 +7339,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_24distribute_indexed_bias(CYTHON
 
 /* "smelly/layout/base.py":217
  *     only_active_window_visible = False
- * 
+ *
  *     def __init__(self, os_window_id: int, tab_id: int, layout_opts: str = '') -> None:             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
  *         self.tab_id = tab_id
@@ -7459,7 +7459,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout___init__(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/layout/base.py":218
- * 
+ *
  *     def __init__(self, os_window_id: int, tab_id: int, layout_opts: str = '') -> None:
  *         self.os_window_id = os_window_id             # <<<<<<<<<<<<<<
  *         self.tab_id = tab_id
@@ -7604,7 +7604,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout___init__(CYTHON_UNUSED P
  *         assert self.name is not None
  *         self.full_name = f'{self.name}:{layout_opts}' if layout_opts else self.name             # <<<<<<<<<<<<<<
  *         self.remove_all_biases()
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_v_layout_opts); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 226, __pyx_L1_error)
   if (__pyx_t_7) {
@@ -7651,7 +7651,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout___init__(CYTHON_UNUSED P
  *         assert self.name is not None
  *         self.full_name = f'{self.name}:{layout_opts}' if layout_opts else self.name
  *         self.remove_all_biases()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def bias_increment_for_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_remove_all_biases); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 227, __pyx_L1_error)
@@ -7675,7 +7675,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout___init__(CYTHON_UNUSED P
 
   /* "smelly/layout/base.py":217
  *     only_active_window_visible = False
- * 
+ *
  *     def __init__(self, os_window_id: int, tab_id: int, layout_opts: str = '') -> None:             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
  *         self.tab_id = tab_id
@@ -7700,7 +7700,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout___init__(CYTHON_UNUSED P
 
 /* "smelly/layout/base.py":229
  *         self.remove_all_biases()
- * 
+ *
  *     def bias_increment_for_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
@@ -7807,11 +7807,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_2bias_increment_for_cell
   __Pyx_RefNannySetupContext("bias_increment_for_cell", 0);
 
   /* "smelly/layout/base.py":230
- * 
+ *
  *     def bias_increment_for_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:
  *         self._set_dimensions()             # <<<<<<<<<<<<<<
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_dimensions); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7836,7 +7836,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_2bias_increment_for_cell
  *     def bias_increment_for_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:
  *         self._set_dimensions()
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def calculate_bias_increment_for_a_single_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7896,7 +7896,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_2bias_increment_for_cell
 
   /* "smelly/layout/base.py":229
  *         self.remove_all_biases()
- * 
+ *
  *     def bias_increment_for_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
@@ -7918,7 +7918,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_2bias_increment_for_cell
 
 /* "smelly/layout/base.py":233
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
- * 
+ *
  *     def calculate_bias_increment_for_a_single_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         if is_horizontal:
  *             return (lgd.cell_width + 1) / lgd.central.width
@@ -8024,7 +8024,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_4calculate_bias_incremen
   __Pyx_RefNannySetupContext("calculate_bias_increment_for_a_single_cell", 0);
 
   /* "smelly/layout/base.py":234
- * 
+ *
  *     def calculate_bias_increment_for_a_single_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:
  *         if is_horizontal:             # <<<<<<<<<<<<<<
  *             return (lgd.cell_width + 1) / lgd.central.width
@@ -8038,7 +8038,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_4calculate_bias_incremen
  *         if is_horizontal:
  *             return (lgd.cell_width + 1) / lgd.central.width             # <<<<<<<<<<<<<<
  *         return (lgd.cell_height + 1) / lgd.central.height
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_lgd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 235, __pyx_L1_error)
@@ -8066,7 +8066,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_4calculate_bias_incremen
     goto __pyx_L0;
 
     /* "smelly/layout/base.py":234
- * 
+ *
  *     def calculate_bias_increment_for_a_single_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:
  *         if is_horizontal:             # <<<<<<<<<<<<<<
  *             return (lgd.cell_width + 1) / lgd.central.width
@@ -8078,7 +8078,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_4calculate_bias_incremen
  *         if is_horizontal:
  *             return (lgd.cell_width + 1) / lgd.central.width
  *         return (lgd.cell_height + 1) / lgd.central.height             # <<<<<<<<<<<<<<
- * 
+ *
  *     def apply_bias(self, window_id: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8108,7 +8108,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_4calculate_bias_incremen
 
   /* "smelly/layout/base.py":233
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
- * 
+ *
  *     def calculate_bias_increment_for_a_single_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         if is_horizontal:
  *             return (lgd.cell_width + 1) / lgd.central.width
@@ -8129,10 +8129,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_4calculate_bias_incremen
 
 /* "smelly/layout/base.py":238
  *         return (lgd.cell_height + 1) / lgd.central.height
- * 
+ *
  *     def apply_bias(self, window_id: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8243,10 +8243,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_6apply_bias(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("apply_bias", 0);
 
   /* "smelly/layout/base.py":239
- * 
+ *
  *     def apply_bias(self, window_id: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_all_biases(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8256,10 +8256,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_6apply_bias(CYTHON_UNUSE
 
   /* "smelly/layout/base.py":238
  *         return (lgd.cell_height + 1) / lgd.central.height
- * 
+ *
  *     def apply_bias(self, window_id: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
 
   /* function exit code */
@@ -8271,10 +8271,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_6apply_bias(CYTHON_UNUSE
 
 /* "smelly/layout/base.py":241
  *         return False
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8297,10 +8297,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_8remove_all_biases(CYTHO
   __Pyx_RefNannySetupContext("remove_all_biases", 0);
 
   /* "smelly/layout/base.py":242
- * 
+ *
  *     def remove_all_biases(self) -> bool:
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8310,10 +8310,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_8remove_all_biases(CYTHO
 
   /* "smelly/layout/base.py":241
  *         return False
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
 
   /* function exit code */
@@ -8325,7 +8325,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_8remove_all_biases(CYTHO
 
 /* "smelly/layout/base.py":244
  *         return False
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         idx = all_windows.group_idx_for_window(window_id)
  *         if idx is None:
@@ -8451,7 +8451,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_10modify_size_of_window(
   __Pyx_RefNannySetupContext("modify_size_of_window", 0);
 
   /* "smelly/layout/base.py":245
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:
  *         idx = all_windows.group_idx_for_window(window_id)             # <<<<<<<<<<<<<<
  *         if idx is None:
@@ -8493,7 +8493,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_10modify_size_of_window(
  *         if idx is None:
  *             return False             # <<<<<<<<<<<<<<
  *         return self.apply_bias(idx, increment, all_windows, is_horizontal)
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(Py_False);
@@ -8513,7 +8513,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_10modify_size_of_window(
  *         if idx is None:
  *             return False
  *         return self.apply_bias(idx, increment, all_windows, is_horizontal)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parse_layout_opts(self, layout_opts: Optional[str] = None) -> LayoutOpts:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8580,7 +8580,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_10modify_size_of_window(
 
   /* "smelly/layout/base.py":244
  *         return False
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         idx = all_windows.group_idx_for_window(window_id)
  *         if idx is None:
@@ -8604,7 +8604,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_10modify_size_of_window(
 
 /* "smelly/layout/base.py":250
  *         return self.apply_bias(idx, increment, all_windows, is_horizontal)
- * 
+ *
  *     def parse_layout_opts(self, layout_opts: Optional[str] = None) -> LayoutOpts:             # <<<<<<<<<<<<<<
  *         data: Dict[str, str] = {}
  *         if layout_opts:
@@ -8702,7 +8702,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_12parse_layout_opts(CYTH
   __Pyx_RefNannySetupContext("parse_layout_opts", 0);
 
   /* "smelly/layout/base.py":251
- * 
+ *
  *     def parse_layout_opts(self, layout_opts: Optional[str] = None) -> LayoutOpts:
  *         data: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  *         if layout_opts:
@@ -8827,11 +8827,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_12parse_layout_opts(CYTH
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_1);
         __Pyx_INCREF(__pyx_t_7);
@@ -8891,7 +8891,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_12parse_layout_opts(CYTH
  *                 if k and v:
  *                     data[k] = v             # <<<<<<<<<<<<<<
  *         return type(self.layout_opts)(data)
- * 
+ *
  */
         if (unlikely(PyDict_SetItem(__pyx_v_data, __pyx_v_k, __pyx_v_v) < 0)) __PYX_ERR(0, 256, __pyx_L1_error)
 
@@ -8927,7 +8927,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_12parse_layout_opts(CYTH
  *                 if k and v:
  *                     data[k] = v
  *         return type(self.layout_opts)(data)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def nth_window(self, all_windows: WindowList, num: int) -> Optional[WindowType]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8956,7 +8956,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_12parse_layout_opts(CYTH
 
   /* "smelly/layout/base.py":250
  *         return self.apply_bias(idx, increment, all_windows, is_horizontal)
- * 
+ *
  *     def parse_layout_opts(self, layout_opts: Optional[str] = None) -> LayoutOpts:             # <<<<<<<<<<<<<<
  *         data: Dict[str, str] = {}
  *         if layout_opts:
@@ -8983,10 +8983,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_12parse_layout_opts(CYTH
 
 /* "smelly/layout/base.py":259
  *         return type(self.layout_opts)(data)
- * 
+ *
  *     def nth_window(self, all_windows: WindowList, num: int) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9078,10 +9078,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_14nth_window(CYTHON_UNUS
   __Pyx_RefNannySetupContext("nth_window", 0);
 
   /* "smelly/layout/base.py":260
- * 
+ *
  *     def nth_window(self, all_windows: WindowList, num: int) -> Optional[WindowType]:
  *         return all_windows.active_window_in_nth_group(num, clamp=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def activate_nth_window(self, all_windows: WindowList, num: int) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9106,10 +9106,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_14nth_window(CYTHON_UNUS
 
   /* "smelly/layout/base.py":259
  *         return type(self.layout_opts)(data)
- * 
+ *
  *     def nth_window(self, all_windows: WindowList, num: int) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  */
 
   /* function exit code */
@@ -9128,10 +9128,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_14nth_window(CYTHON_UNUS
 
 /* "smelly/layout/base.py":262
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  *     def activate_nth_window(self, all_windows: WindowList, num: int) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9222,10 +9222,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_16activate_nth_window(CY
   __Pyx_RefNannySetupContext("activate_nth_window", 0);
 
   /* "smelly/layout/base.py":263
- * 
+ *
  *     def activate_nth_window(self, all_windows: WindowList, num: int) -> None:
  *         all_windows.set_active_group_idx(num)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def next_window(self, all_windows: WindowList, delta: int = 1) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_set_active_group_idx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 263, __pyx_L1_error)
@@ -9249,10 +9249,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_16activate_nth_window(CY
 
   /* "smelly/layout/base.py":262
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  *     def activate_nth_window(self, all_windows: WindowList, num: int) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  */
 
   /* function exit code */
@@ -9272,10 +9272,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_16activate_nth_window(CY
 
 /* "smelly/layout/base.py":265
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  *     def next_window(self, all_windows: WindowList, delta: int = 1) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9370,10 +9370,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_18next_window(CYTHON_UNU
   __Pyx_RefNannySetupContext("next_window", 0);
 
   /* "smelly/layout/base.py":266
- * 
+ *
  *     def next_window(self, all_windows: WindowList, delta: int = 1) -> None:
  *         all_windows.activate_next_window_group(delta)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def neighbors(self, all_windows: WindowList) -> NeighborsMap:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_activate_next_window_group); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 266, __pyx_L1_error)
@@ -9397,10 +9397,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_18next_window(CYTHON_UNU
 
   /* "smelly/layout/base.py":265
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  *     def next_window(self, all_windows: WindowList, delta: int = 1) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  */
 
   /* function exit code */
@@ -9420,7 +9420,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_18next_window(CYTHON_UNU
 
 /* "smelly/layout/base.py":268
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  *     def neighbors(self, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         w = all_windows.active_window
  *         assert w is not None
@@ -9507,7 +9507,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_20neighbors(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("neighbors", 0);
 
   /* "smelly/layout/base.py":269
- * 
+ *
  *     def neighbors(self, all_windows: WindowList) -> NeighborsMap:
  *         w = all_windows.active_window             # <<<<<<<<<<<<<<
  *         assert w is not None
@@ -9523,7 +9523,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_20neighbors(CYTHON_UNUSE
  *         w = all_windows.active_window
  *         assert w is not None             # <<<<<<<<<<<<<<
  *         return self.neighbors_for_window(w, all_windows)
- * 
+ *
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
   if (unlikely(!Py_OptimizeFlag)) {
@@ -9539,7 +9539,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_20neighbors(CYTHON_UNUSE
  *         w = all_windows.active_window
  *         assert w is not None
  *         return self.neighbors_for_window(w, all_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9596,7 +9596,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_20neighbors(CYTHON_UNUSE
 
   /* "smelly/layout/base.py":268
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  *     def neighbors(self, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         w = all_windows.active_window
  *         assert w is not None
@@ -9619,7 +9619,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_20neighbors(CYTHON_UNUSE
 
 /* "smelly/layout/base.py":273
  *         return self.neighbors_for_window(w, all_windows)
- * 
+ *
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         if all_windows.num_groups < 2 or not delta:
  *             return False
@@ -9720,11 +9720,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_22move_window(CYTHON_UNU
   __Pyx_RefNannySetupContext("move_window", 0);
 
   /* "smelly/layout/base.py":274
- * 
+ *
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:
  *         if all_windows.num_groups < 2 or not delta:             # <<<<<<<<<<<<<<
  *             return False
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_num_groups); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9747,7 +9747,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_22move_window(CYTHON_UNU
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:
  *         if all_windows.num_groups < 2 or not delta:
  *             return False             # <<<<<<<<<<<<<<
- * 
+ *
  *         return all_windows.move_window_group(by=delta)
  */
     __Pyx_XDECREF(__pyx_r);
@@ -9756,19 +9756,19 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_22move_window(CYTHON_UNU
     goto __pyx_L0;
 
     /* "smelly/layout/base.py":274
- * 
+ *
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:
  *         if all_windows.num_groups < 2 or not delta:             # <<<<<<<<<<<<<<
  *             return False
- * 
+ *
  */
   }
 
   /* "smelly/layout/base.py":277
  *             return False
- * 
+ *
  *         return all_windows.move_window_group(by=delta)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9787,7 +9787,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_22move_window(CYTHON_UNU
 
   /* "smelly/layout/base.py":273
  *         return self.neighbors_for_window(w, all_windows)
- * 
+ *
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         if all_windows.num_groups < 2 or not delta:
  *             return False
@@ -9808,10 +9808,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_22move_window(CYTHON_UNU
 
 /* "smelly/layout/base.py":279
  *         return all_windows.move_window_group(by=delta)
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9902,10 +9902,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_24move_window_to_group(C
   __Pyx_RefNannySetupContext("move_window_to_group", 0);
 
   /* "smelly/layout/base.py":280
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:
  *         return all_windows.move_window_group(to_group=group)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_window(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9924,10 +9924,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_24move_window_to_group(C
 
   /* "smelly/layout/base.py":279
  *         return all_windows.move_window_group(by=delta)
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  */
 
   /* function exit code */
@@ -9945,7 +9945,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_24move_window_to_group(C
 
 /* "smelly/layout/base.py":282
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False
  *     ) -> None:
@@ -9972,7 +9972,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4base_6Layout_27add_window(PyObject *_
     PyObject* values[6] = {0,0,0,0,0,0};
 
     /* "smelly/layout/base.py":283
- * 
+ *
  *     def add_window(
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False             # <<<<<<<<<<<<<<
  *     ) -> None:
@@ -10073,7 +10073,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4base_6Layout_27add_window(PyObject *_
 
   /* "smelly/layout/base.py":282
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False
  *     ) -> None:
@@ -10181,7 +10181,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_26add_window(CYTHON_UNUS
  *         if location == 'neighbor':
  *             location = 'after'             # <<<<<<<<<<<<<<
  *         self.add_non_overlay_window(all_windows, window, location)
- * 
+ *
  */
     __Pyx_INCREF(__pyx_n_s_after);
     __Pyx_DECREF_SET(__pyx_v_location, __pyx_n_s_after);
@@ -10199,7 +10199,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_26add_window(CYTHON_UNUS
  *         if location == 'neighbor':
  *             location = 'after'
  *         self.add_non_overlay_window(all_windows, window, location)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_add_non_overlay_window); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 290, __pyx_L1_error)
@@ -10256,7 +10256,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_26add_window(CYTHON_UNUS
 
   /* "smelly/layout/base.py":282
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False
  *     ) -> None:
@@ -10281,7 +10281,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_26add_window(CYTHON_UNUS
 
 /* "smelly/layout/base.py":292
  *         self.add_non_overlay_window(all_windows, window, location)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         next_to: Optional[WindowType] = None
  *         before = False
@@ -10391,7 +10391,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_28add_non_overlay_window
   __Pyx_RefNannySetupContext("add_non_overlay_window", 0);
 
   /* "smelly/layout/base.py":293
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:
  *         next_to: Optional[WindowType] = None             # <<<<<<<<<<<<<<
  *         before = False
@@ -10545,7 +10545,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_28add_non_overlay_window
  *             elif location == 'last':
  *                 next_to = None             # <<<<<<<<<<<<<<
  *         all_windows.add_window(window, next_to=next_to, before=before)
- * 
+ *
  */
       __Pyx_INCREF(Py_None);
       __Pyx_DECREF_SET(__pyx_v_next_to, Py_None);
@@ -10573,7 +10573,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_28add_non_overlay_window
  *             elif location == 'last':
  *                 next_to = None
  *         all_windows.add_window(window, next_to=next_to, before=before)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def update_visibility(self, all_windows: WindowList) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_add_window); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
@@ -10599,7 +10599,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_28add_non_overlay_window
 
   /* "smelly/layout/base.py":292
  *         self.add_non_overlay_window(all_windows, window, location)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         next_to: Optional[WindowType] = None
  *         before = False
@@ -10624,7 +10624,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_28add_non_overlay_window
 
 /* "smelly/layout/base.py":308
  *         all_windows.add_window(window, next_to=next_to, before=before)
- * 
+ *
  *     def update_visibility(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_window = all_windows.active_window
  *         for window, is_group_leader in all_windows.iter_windows_with_visibility():
@@ -10718,7 +10718,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_30update_visibility(CYTH
   __Pyx_RefNannySetupContext("update_visibility", 0);
 
   /* "smelly/layout/base.py":309
- * 
+ *
  *     def update_visibility(self, all_windows: WindowList) -> None:
  *         active_window = all_windows.active_window             # <<<<<<<<<<<<<<
  *         for window, is_group_leader in all_windows.iter_windows_with_visibility():
@@ -10803,11 +10803,11 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_30update_visibility(CYTH
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -10849,7 +10849,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_30update_visibility(CYTH
  *         for window, is_group_leader in all_windows.iter_windows_with_visibility():
  *             is_visible = window is active_window or (is_group_leader and not self.only_active_window_visible)             # <<<<<<<<<<<<<<
  *             window.set_visible_in_layout(is_visible)
- * 
+ *
  */
     __pyx_t_9 = (__pyx_v_window == __pyx_v_active_window);
     if (!__pyx_t_9) {
@@ -10884,7 +10884,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_30update_visibility(CYTH
  *         for window, is_group_leader in all_windows.iter_windows_with_visibility():
  *             is_visible = window is active_window or (is_group_leader and not self.only_active_window_visible)
  *             window.set_visible_in_layout(is_visible)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _set_dimensions(self) -> None:
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_set_visible_in_layout); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 312, __pyx_L1_error)
@@ -10918,7 +10918,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_30update_visibility(CYTH
 
   /* "smelly/layout/base.py":308
  *         all_windows.add_window(window, next_to=next_to, before=before)
- * 
+ *
  *     def update_visibility(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_window = all_windows.active_window
  *         for window, is_group_leader in all_windows.iter_windows_with_visibility():
@@ -10947,10 +10947,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_30update_visibility(CYTH
 
 /* "smelly/layout/base.py":314
  *             window.set_visible_in_layout(is_visible)
- * 
+ *
  *     def _set_dimensions(self) -> None:             # <<<<<<<<<<<<<<
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10988,10 +10988,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_32_set_dimensions(CYTHON
   __Pyx_RefNannySetupContext("_set_dimensions", 0);
 
   /* "smelly/layout/base.py":315
- * 
+ *
  *     def _set_dimensions(self) -> None:
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, all_windows: WindowList) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_viewport_for_window); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 315, __pyx_L1_error)
@@ -11024,19 +11024,19 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_32_set_dimensions(CYTHON
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 4); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 5); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 4);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 5);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 4); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 5); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 4);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 5);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -11103,10 +11103,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_32_set_dimensions(CYTHON
 
   /* "smelly/layout/base.py":314
  *             window.set_visible_in_layout(is_visible)
- * 
+ *
  *     def _set_dimensions(self) -> None:             # <<<<<<<<<<<<<<
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  */
 
   /* function exit code */
@@ -11134,7 +11134,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_32_set_dimensions(CYTHON
 
 /* "smelly/layout/base.py":317
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  *     def __call__(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         self.update_visibility(all_windows)
@@ -11217,7 +11217,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_34__call__(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "smelly/layout/base.py":318
- * 
+ *
  *     def __call__(self, all_windows: WindowList) -> None:
  *         self._set_dimensions()             # <<<<<<<<<<<<<<
  *         self.update_visibility(all_windows)
@@ -11273,7 +11273,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_34__call__(CYTHON_UNUSED
  *         self.update_visibility(all_windows)
  *         self.blank_rects = []             # <<<<<<<<<<<<<<
  *         self.do_layout(all_windows)
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 320, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11284,7 +11284,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_34__call__(CYTHON_UNUSED
  *         self.update_visibility(all_windows)
  *         self.blank_rects = []
  *         self.do_layout(all_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def layout_single_window_group(self, wg: WindowGroup, add_blank_rects: bool = True) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_do_layout); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 321, __pyx_L1_error)
@@ -11308,7 +11308,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_34__call__(CYTHON_UNUSED
 
   /* "smelly/layout/base.py":317
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  *     def __call__(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         self.update_visibility(all_windows)
@@ -11331,7 +11331,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_34__call__(CYTHON_UNUSED
 
 /* "smelly/layout/base.py":323
  *         self.do_layout(all_windows)
- * 
+ *
  *     def layout_single_window_group(self, wg: WindowGroup, add_blank_rects: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         bw = 1 if self.must_draw_borders else 0
  *         xdecoration_pairs = (
@@ -11438,7 +11438,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_36layout_single_window_g
   __Pyx_RefNannySetupContext("layout_single_window_group", 0);
 
   /* "smelly/layout/base.py":324
- * 
+ *
  *     def layout_single_window_group(self, wg: WindowGroup, add_blank_rects: bool = True) -> None:
  *         bw = 1 if self.must_draw_borders else 0             # <<<<<<<<<<<<<<
  *         xdecoration_pairs = (
@@ -11666,7 +11666,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_36layout_single_window_g
  *         wg.set_geometry(geom)
  *         if add_blank_rects and wg:             # <<<<<<<<<<<<<<
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_v_add_blank_rects); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 339, __pyx_L1_error)
   if (__pyx_t_8) {
@@ -11683,7 +11683,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_36layout_single_window_g
  *         wg.set_geometry(geom)
  *         if add_blank_rects and wg:
  *             self.blank_rects.extend(blank_rects_for_window(geom))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def xlayout(
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_blank_rects); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 340, __pyx_L1_error)
@@ -11731,13 +11731,13 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_36layout_single_window_g
  *         wg.set_geometry(geom)
  *         if add_blank_rects and wg:             # <<<<<<<<<<<<<<
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  */
   }
 
   /* "smelly/layout/base.py":323
  *         self.do_layout(all_windows)
- * 
+ *
  *     def layout_single_window_group(self, wg: WindowGroup, add_blank_rects: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         bw = 1 if self.must_draw_borders else 0
  *         xdecoration_pairs = (
@@ -11765,7 +11765,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_36layout_single_window_g
 
 /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -11924,7 +11924,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4base_6Layout_39xlayout(PyObject *__py
 
   /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -12149,7 +12149,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_7xlayout_2generator4(__p
 
 /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -12269,7 +12269,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_38xlayout(CYTHON_UNUSED 
  *         if size is None:
  *             size = lgd.central.width             # <<<<<<<<<<<<<<
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_lgd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 357, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -12295,7 +12295,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_38xlayout(CYTHON_UNUSED 
  *         if size is None:
  *             size = lgd.central.width
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def ylayout(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12341,7 +12341,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_38xlayout(CYTHON_UNUSED 
 
   /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -12369,7 +12369,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_38xlayout(CYTHON_UNUSED 
 
 /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -12528,7 +12528,7 @@ static PyObject *__pyx_pw_6smelly_6layout_4base_6Layout_41ylayout(PyObject *__py
 
   /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -12753,7 +12753,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_7ylayout_2generator5(__p
 
 /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -12873,7 +12873,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_40ylayout(CYTHON_UNUSED 
  *         if size is None:
  *             size = lgd.central.height             # <<<<<<<<<<<<<<
  *         return layout_dimension(start, size, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_lgd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -12899,7 +12899,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_40ylayout(CYTHON_UNUSED 
  *         if size is None:
  *             size = lgd.central.height
  *         return layout_dimension(start, size, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_window_group_geometry(self, wg: WindowGroup, xl: LayoutData, yl: LayoutData) -> WindowGeometry:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12945,7 +12945,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_40ylayout(CYTHON_UNUSED 
 
   /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -12973,7 +12973,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_40ylayout(CYTHON_UNUSED 
 
 /* "smelly/layout/base.py":378
  *         return layout_dimension(start, size, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def set_window_group_geometry(self, wg: WindowGroup, xl: LayoutData, yl: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *         geom = window_geometry_from_layouts(xl, yl)
  *         wg.set_geometry(geom)
@@ -13082,7 +13082,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_42set_window_group_geome
   __Pyx_RefNannySetupContext("set_window_group_geometry", 0);
 
   /* "smelly/layout/base.py":379
- * 
+ *
  *     def set_window_group_geometry(self, wg: WindowGroup, xl: LayoutData, yl: LayoutData) -> WindowGeometry:
  *         geom = window_geometry_from_layouts(xl, yl)             # <<<<<<<<<<<<<<
  *         wg.set_geometry(geom)
@@ -13169,7 +13169,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_42set_window_group_geome
  *         wg.set_geometry(geom)
  *         self.blank_rects.extend(blank_rects_for_window(geom))             # <<<<<<<<<<<<<<
  *         return geom
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_blank_rects); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13215,7 +13215,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_42set_window_group_geome
  *         wg.set_geometry(geom)
  *         self.blank_rects.extend(blank_rects_for_window(geom))
  *         return geom             # <<<<<<<<<<<<<<
- * 
+ *
  *     def do_layout(self, windows: WindowList) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13225,7 +13225,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_42set_window_group_geome
 
   /* "smelly/layout/base.py":378
  *         return layout_dimension(start, size, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def set_window_group_geometry(self, wg: WindowGroup, xl: LayoutData, yl: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *         geom = window_geometry_from_layouts(xl, yl)
  *         wg.set_geometry(geom)
@@ -13249,10 +13249,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_42set_window_group_geome
 
 /* "smelly/layout/base.py":384
  *         return geom
- * 
+ *
  *     def do_layout(self, windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -13330,10 +13330,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_44do_layout(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("do_layout", 0);
 
   /* "smelly/layout/base.py":385
- * 
+ *
  *     def do_layout(self, windows: WindowList) -> None:
  *         raise NotImplementedError()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, windows: WindowList) -> NeighborsMap:
  */
   __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_builtin_NotImplementedError); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 385, __pyx_L1_error)
@@ -13344,10 +13344,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_44do_layout(CYTHON_UNUSE
 
   /* "smelly/layout/base.py":384
  *         return geom
- * 
+ *
  *     def do_layout(self, windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
 
   /* function exit code */
@@ -13362,10 +13362,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_44do_layout(CYTHON_UNUSE
 
 /* "smelly/layout/base.py":387
  *         raise NotImplementedError()
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -13455,10 +13455,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_46neighbors_for_window(C
   __Pyx_RefNannySetupContext("neighbors_for_window", 0);
 
   /* "smelly/layout/base.py":388
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, windows: WindowList) -> NeighborsMap:
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def compute_needs_borders_map(self, all_windows: WindowList) -> Dict[int, bool]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13486,10 +13486,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_46neighbors_for_window(C
 
   /* "smelly/layout/base.py":387
  *         raise NotImplementedError()
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  */
 
   /* function exit code */
@@ -13506,10 +13506,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_46neighbors_for_window(C
 
 /* "smelly/layout/base.py":390
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  *     def compute_needs_borders_map(self, all_windows: WindowList) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -13590,10 +13590,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_48compute_needs_borders_
   __Pyx_RefNannySetupContext("compute_needs_borders_map", 0);
 
   /* "smelly/layout/base.py":391
- * 
+ *
  *     def compute_needs_borders_map(self, all_windows: WindowList) -> Dict[int, bool]:
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13626,10 +13626,10 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_48compute_needs_borders_
 
   /* "smelly/layout/base.py":390
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  *     def compute_needs_borders_map(self, all_windows: WindowList) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  */
 
   /* function exit code */
@@ -13649,7 +13649,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_52generator2(__pyx_Corou
 
 /* "smelly/layout/base.py":393
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         yield from self.minimal_borders(windows)
@@ -13782,11 +13782,11 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_52generator2(__pyx_Corou
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 393, __pyx_L1_error)
 
   /* "smelly/layout/base.py":394
- * 
+ *
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:
  *         self._set_dimensions()             # <<<<<<<<<<<<<<
  *         yield from self.minimal_borders(windows)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_set_dimensions); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13811,7 +13811,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_52generator2(__pyx_Corou
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:
  *         self._set_dimensions()
  *         yield from self.minimal_borders(windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_minimal_borders); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 395, __pyx_L1_error)
@@ -13854,7 +13854,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_52generator2(__pyx_Corou
 
   /* "smelly/layout/base.py":393
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         yield from self.minimal_borders(windows)
@@ -13882,7 +13882,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_55generator3(__pyx_Corou
 
 /* "smelly/layout/base.py":397
  *         yield from self.minimal_borders(windows)
- * 
+ *
  *     def minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         return
  *         yield BorderLine()  # type: ignore
@@ -14011,11 +14011,11 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_55generator3(__pyx_Corou
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 397, __pyx_L1_error)
 
   /* "smelly/layout/base.py":398
- * 
+ *
  *     def minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:
  *         return             # <<<<<<<<<<<<<<
  *         yield BorderLine()  # type: ignore
- * 
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = NULL;
@@ -14024,7 +14024,7 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_55generator3(__pyx_Corou
 
   /* "smelly/layout/base.py":397
  *         yield from self.minimal_borders(windows)
- * 
+ *
  *     def minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         return
  *         yield BorderLine()  # type: ignore
@@ -14046,10 +14046,10 @@ static PyObject *__pyx_gb_6smelly_6layout_4base_6Layout_55generator3(__pyx_Corou
 
 /* "smelly/layout/base.py":401
  *         yield BorderLine()  # type: ignore
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
 
 /* Python wrapper */
@@ -14158,7 +14158,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_56layout_action(CYTHON_U
 
 /* "smelly/layout/base.py":404
  *         pass
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
  */
@@ -14187,7 +14187,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_58layout_state(CYTHON_UN
   __Pyx_RefNannySetupContext("layout_state", 0);
 
   /* "smelly/layout/base.py":405
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:
  *         return {}             # <<<<<<<<<<<<<<
  */
@@ -14200,7 +14200,7 @@ static PyObject *__pyx_pf_6smelly_6layout_4base_6Layout_58layout_state(CYTHON_UN
 
   /* "smelly/layout/base.py":404
  *         pass
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
  */
@@ -15687,11 +15687,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__11);
 
   /* "smelly/layout/base.py":22
- * 
+ *
  * class LayoutOpts:
  *     def __init__(self, data: Dict[str, str]):             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_data); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -15700,10 +15700,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":25
  *         pass
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
- * 
+ *
  */
   __pyx_tuple__16 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
@@ -15712,7 +15712,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":54
  *     align_top_left: bool = False
- * 
+ *
  *     central: Region = Region((0, 0, 199, 199, 200, 200))             # <<<<<<<<<<<<<<
  *     cell_width: int = 20
  *     cell_height: int = 20
@@ -15722,8 +15722,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__18);
 
   /* "smelly/layout/base.py":62
- * 
- * 
+ *
+ *
  * def idx_for_id(win_id: int, windows: Iterable[WindowType]) -> Optional[int]:             # <<<<<<<<<<<<<<
  *     for i, w in enumerate(windows):
  *         if w.id == win_id:
@@ -15734,8 +15734,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_idx_for_id, 62, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 62, __pyx_L1_error)
 
   /* "smelly/layout/base.py":69
- * 
- * 
+ *
+ *
  * def set_layout_options(opts: Options) -> None:             # <<<<<<<<<<<<<<
  *     lgd.draw_minimal_borders = opts.draw_minimal_borders and sum(opts.window_margin_width) == 0
  *     lgd.draw_active_borders = opts.active_border_color is not None
@@ -15746,8 +15746,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_set_layout_options, 69, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 69, __pyx_L1_error)
 
   /* "smelly/layout/base.py":75
- * 
- * 
+ *
+ *
  * def convert_bias_map(bias: Dict[int, float], number_of_windows: int, number_of_cells: int) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     cells_per_window, extra = divmod(number_of_cells, number_of_windows)
  *     cell_map = list(repeat(cells_per_window, number_of_windows))
@@ -15758,8 +15758,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_convert_bias_map, 75, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 75, __pyx_L1_error)
 
   /* "smelly/layout/base.py":83
- * 
- * 
+ *
+ *
  * def calculate_cells_map(bias: Union[None, Sequence[float], Dict[int, float]], number_of_windows: int, number_of_cells: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     if isinstance(bias, dict):
  *         bias = convert_bias_map(bias, number_of_windows, number_of_cells)
@@ -15770,8 +15770,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(3, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_calculate_cells_map, 83, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 83, __pyx_L1_error)
 
   /* "smelly/layout/base.py":103
- * 
- * 
+ *
+ *
  * def layout_dimension(             # <<<<<<<<<<<<<<
  *     start_at: int,
  *     length: int,
@@ -15785,8 +15785,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__28);
 
   /* "smelly/layout/base.py":151
- * 
- * 
+ *
+ *
  * def blank_rects_for_window(wg: WindowGeometry) -> Generator[Rect, None, None]:             # <<<<<<<<<<<<<<
  *     left_width, right_width = wg.spaces.left, wg.spaces.right
  *     top_height, bottom_height = wg.spaces.top, wg.spaces.bottom
@@ -15797,8 +15797,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_blank_rects_for_window, 151, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 151, __pyx_L1_error)
 
   /* "smelly/layout/base.py":164
- * 
- * 
+ *
+ *
  * def window_geometry(xstart: int, xnum: int, ystart: int, ynum: int, left: int, top: int, right: int, bottom: int) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return WindowGeometry(
  *         left=xstart,
@@ -15809,11 +15809,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__31 = (PyObject*)__Pyx_PyCode_New(8, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_window_geometry, 164, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__31)) __PYX_ERR(0, 164, __pyx_L1_error)
 
   /* "smelly/layout/base.py":176
- * 
- * 
+ *
+ *
  * def window_geometry_from_layouts(x: LayoutData, y: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return window_geometry(x.content_pos, x.cells_per_window, y.content_pos, y.cells_per_window, x.space_before, y.space_before, x.space_after, y.space_after)
- * 
+ *
  */
   __pyx_tuple__32 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_y); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
@@ -15821,8 +15821,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_window_geometry_from_layouts, 176, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 176, __pyx_L1_error)
 
   /* "smelly/layout/base.py":180
- * 
- * 
+ *
+ *
  * def layout_single_window(xdecoration_pairs: DecorationPairs, ydecoration_pairs: DecorationPairs, left_align: bool = False) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     x = next(layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, xdecoration_pairs, left_align=lgd.align_top_left))
  *     y = next(layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, ydecoration_pairs, left_align=lgd.align_top_left))
@@ -15836,11 +15836,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__36);
 
   /* "smelly/layout/base.py":186
- * 
- * 
+ *
+ *
  * def safe_increment_bias(old_val: float, increment: float) -> float:             # <<<<<<<<<<<<<<
  *     return max(0.1, min(old_val + increment, 0.9))
- * 
+ *
  */
   __pyx_tuple__37 = PyTuple_Pack(2, __pyx_n_s_old_val, __pyx_n_s_increment); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
@@ -15848,8 +15848,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_safe_increment_bias, 186, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 186, __pyx_L1_error)
 
   /* "smelly/layout/base.py":190
- * 
- * 
+ *
+ *
  * def normalize_biases(biases: List[float]) -> List[float]:             # <<<<<<<<<<<<<<
  *     s = sum(biases)
  *     if s == 1.0:
@@ -15860,8 +15860,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__40 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_base_py, __pyx_n_s_normalize_biases, 190, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__40)) __PYX_ERR(0, 190, __pyx_L1_error)
 
   /* "smelly/layout/base.py":197
- * 
- * 
+ *
+ *
  * def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int, float]) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     if not index_bias_map:
  *         return base_bias
@@ -15873,7 +15873,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":217
  *     only_active_window_visible = False
- * 
+ *
  *     def __init__(self, os_window_id: int, tab_id: int, layout_opts: str = '') -> None:             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
  *         self.tab_id = tab_id
@@ -15888,7 +15888,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":229
  *         self.remove_all_biases()
- * 
+ *
  *     def bias_increment_for_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
@@ -15900,7 +15900,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":233
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
- * 
+ *
  *     def calculate_bias_increment_for_a_single_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         if is_horizontal:
  *             return (lgd.cell_width + 1) / lgd.central.width
@@ -15912,10 +15912,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":238
  *         return (lgd.cell_height + 1) / lgd.central.height
- * 
+ *
  *     def apply_bias(self, window_id: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
   __pyx_tuple__50 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_window_id, __pyx_n_s_increment, __pyx_n_s_all_windows, __pyx_n_s_is_horizontal); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 238, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
@@ -15927,10 +15927,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":241
  *         return False
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
   __pyx_tuple__53 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__53);
@@ -15939,7 +15939,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":244
  *         return False
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         idx = all_windows.group_idx_for_window(window_id)
  *         if idx is None:
@@ -15954,7 +15954,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":250
  *         return self.apply_bias(idx, increment, all_windows, is_horizontal)
- * 
+ *
  *     def parse_layout_opts(self, layout_opts: Optional[str] = None) -> LayoutOpts:             # <<<<<<<<<<<<<<
  *         data: Dict[str, str] = {}
  *         if layout_opts:
@@ -15969,10 +15969,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":259
  *         return type(self.layout_opts)(data)
- * 
+ *
  *     def nth_window(self, all_windows: WindowList, num: int) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  */
   __pyx_tuple__61 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_all_windows, __pyx_n_s_num); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 259, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
@@ -15981,10 +15981,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":262
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  *     def activate_nth_window(self, all_windows: WindowList, num: int) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  */
   __pyx_tuple__63 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_all_windows, __pyx_n_s_num); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
@@ -15993,10 +15993,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":265
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  *     def next_window(self, all_windows: WindowList, delta: int = 1) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  */
   __pyx_tuple__65 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_all_windows, __pyx_n_s_delta); if (unlikely(!__pyx_tuple__65)) __PYX_ERR(0, 265, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__65);
@@ -16008,7 +16008,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":268
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  *     def neighbors(self, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         w = all_windows.active_window
  *         assert w is not None
@@ -16020,7 +16020,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":273
  *         return self.neighbors_for_window(w, all_windows)
- * 
+ *
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         if all_windows.num_groups < 2 or not delta:
  *             return False
@@ -16035,10 +16035,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":279
  *         return all_windows.move_window_group(by=delta)
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  */
   __pyx_tuple__73 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_all_windows, __pyx_n_s_group); if (unlikely(!__pyx_tuple__73)) __PYX_ERR(0, 279, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__73);
@@ -16047,7 +16047,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":282
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False
  *     ) -> None:
@@ -16062,7 +16062,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":292
  *         self.add_non_overlay_window(all_windows, window, location)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         next_to: Optional[WindowType] = None
  *         before = False
@@ -16074,7 +16074,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":308
  *         all_windows.add_window(window, next_to=next_to, before=before)
- * 
+ *
  *     def update_visibility(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_window = all_windows.active_window
  *         for window, is_group_leader in all_windows.iter_windows_with_visibility():
@@ -16086,10 +16086,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":314
  *             window.set_visible_in_layout(is_visible)
- * 
+ *
  *     def _set_dimensions(self) -> None:             # <<<<<<<<<<<<<<
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  */
   __pyx_tuple__82 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_tab_bar, __pyx_n_s_vw, __pyx_n_s_vh); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__82);
@@ -16098,7 +16098,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":317
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  *     def __call__(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         self.update_visibility(all_windows)
@@ -16110,7 +16110,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":323
  *         self.do_layout(all_windows)
- * 
+ *
  *     def layout_single_window_group(self, wg: WindowGroup, add_blank_rects: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         bw = 1 if self.must_draw_borders else 0
  *         xdecoration_pairs = (
@@ -16125,7 +16125,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -16140,7 +16140,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -16155,7 +16155,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":378
  *         return layout_dimension(start, size, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def set_window_group_geometry(self, wg: WindowGroup, xl: LayoutData, yl: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *         geom = window_geometry_from_layouts(xl, yl)
  *         wg.set_geometry(geom)
@@ -16167,10 +16167,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":384
  *         return geom
- * 
+ *
  *     def do_layout(self, windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
   __pyx_tuple__97 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_windows); if (unlikely(!__pyx_tuple__97)) __PYX_ERR(0, 384, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__97);
@@ -16179,10 +16179,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":387
  *         raise NotImplementedError()
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  */
   __pyx_tuple__99 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_window, __pyx_n_s_windows); if (unlikely(!__pyx_tuple__99)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__99);
@@ -16191,10 +16191,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":390
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  *     def compute_needs_borders_map(self, all_windows: WindowList) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  */
   __pyx_tuple__101 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_all_windows); if (unlikely(!__pyx_tuple__101)) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__101);
@@ -16203,7 +16203,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":393
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         yield from self.minimal_borders(windows)
@@ -16215,7 +16215,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":397
  *         yield from self.minimal_borders(windows)
- * 
+ *
  *     def minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         return
  *         yield BorderLine()  # type: ignore
@@ -16227,10 +16227,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":401
  *         yield BorderLine()  # type: ignore
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_tuple__105 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_action_name, __pyx_n_s_args, __pyx_n_s_all_windows); if (unlikely(!__pyx_tuple__105)) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__105);
@@ -16239,7 +16239,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/base.py":404
  *         pass
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
  */
@@ -16611,7 +16611,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from functools import partial             # <<<<<<<<<<<<<<
  * from itertools import repeat
  * from typing import Any, Dict, Generator, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple, Union
@@ -16631,11 +16631,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":5
- * 
+ *
  * from functools import partial
  * from itertools import repeat             # <<<<<<<<<<<<<<
  * from typing import Any, Dict, Generator, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple, Union
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -16655,7 +16655,7 @@ if (!__Pyx_RefNanny) {
  * from functools import partial
  * from itertools import repeat
  * from typing import Any, Dict, Generator, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.borders import BorderColor
  */
   __pyx_t_1 = PyList_New(11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -16744,7 +16744,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":8
  * from typing import Any, Dict, Generator, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple, Union
- * 
+ *
  * from smelly.borders import BorderColor             # <<<<<<<<<<<<<<
  * from smelly.fast_data_types import Region, set_active_window, viewport_for_window
  * from smelly.options.types import Options
@@ -16764,7 +16764,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/base.py":9
- * 
+ *
  * from smelly.borders import BorderColor
  * from smelly.fast_data_types import Region, set_active_window, viewport_for_window             # <<<<<<<<<<<<<<
  * from smelly.options.types import Options
@@ -16852,7 +16852,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import Edges, WindowGeometry
  * from smelly.typing import TypedDict, WindowType             # <<<<<<<<<<<<<<
  * from smelly.window_list import WindowGroup, WindowList
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -16879,8 +16879,8 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import Edges, WindowGeometry
  * from smelly.typing import TypedDict, WindowType
  * from smelly.window_list import WindowGroup, WindowList             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -16904,8 +16904,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":16
- * 
- * 
+ *
+ *
  * class BorderLine(NamedTuple):             # <<<<<<<<<<<<<<
  *     edges: Edges = Edges()
  *     color: BorderColor = BorderColor.inactive
@@ -16923,11 +16923,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/layout/base.py":17
- * 
+ *
  * class BorderLine(NamedTuple):
  *     edges: Edges = Edges()             # <<<<<<<<<<<<<<
  *     color: BorderColor = BorderColor.inactive
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Edges); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -16953,8 +16953,8 @@ if (!__Pyx_RefNanny) {
  * class BorderLine(NamedTuple):
  *     edges: Edges = Edges()
  *     color: BorderColor = BorderColor.inactive             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_BorderColor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -16965,8 +16965,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/base.py":16
- * 
- * 
+ *
+ *
  * class BorderLine(NamedTuple):             # <<<<<<<<<<<<<<
  *     edges: Edges = Edges()
  *     color: BorderColor = BorderColor.inactive
@@ -16980,8 +16980,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/base.py":21
- * 
- * 
+ *
+ *
  * class LayoutOpts:             # <<<<<<<<<<<<<<
  *     def __init__(self, data: Dict[str, str]):
  *         pass
@@ -16990,11 +16990,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/layout/base.py":22
- * 
+ *
  * class LayoutOpts:
  *     def __init__(self, data: Dict[str, str]):             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17023,10 +17023,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":25
  *         pass
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -17056,8 +17056,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/base.py":21
- * 
- * 
+ *
+ *
  * class LayoutOpts:             # <<<<<<<<<<<<<<
  *     def __init__(self, data: Dict[str, str]):
  *         pass
@@ -17069,8 +17069,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/base.py":29
- * 
- * 
+ *
+ *
  * class LayoutData(NamedTuple):             # <<<<<<<<<<<<<<
  *     content_pos: int = 0
  *     cells_per_window: int = 0
@@ -17088,7 +17088,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/layout/base.py":30
- * 
+ *
  * class LayoutData(NamedTuple):
  *     content_pos: int = 0             # <<<<<<<<<<<<<<
  *     cells_per_window: int = 0
@@ -17119,7 +17119,7 @@ if (!__Pyx_RefNanny) {
  *     space_before: int = 0
  *     space_after: int = 0             # <<<<<<<<<<<<<<
  *     content_size: int = 0
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_space_after, __pyx_int_0) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
 
@@ -17127,14 +17127,14 @@ if (!__Pyx_RefNanny) {
  *     space_before: int = 0
  *     space_after: int = 0
  *     content_size: int = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_content_size, __pyx_int_0) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
 
   /* "smelly/layout/base.py":29
- * 
- * 
+ *
+ *
  * class LayoutData(NamedTuple):             # <<<<<<<<<<<<<<
  *     content_pos: int = 0
  *     cells_per_window: int = 0
@@ -17148,8 +17148,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/base.py":37
- * 
- * 
+ *
+ *
  * DecorationPairs = Sequence[Tuple[int, int]]             # <<<<<<<<<<<<<<
  * LayoutDimension = Generator[LayoutData, None, None]
  * ListOfWindows = List[WindowType]
@@ -17178,11 +17178,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/layout/base.py":38
- * 
+ *
  * DecorationPairs = Sequence[Tuple[int, int]]
  * LayoutDimension = Generator[LayoutData, None, None]             # <<<<<<<<<<<<<<
  * ListOfWindows = List[WindowType]
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Generator); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -17210,8 +17210,8 @@ if (!__Pyx_RefNanny) {
  * DecorationPairs = Sequence[Tuple[int, int]]
  * LayoutDimension = Generator[LayoutData, None, None]
  * ListOfWindows = List[WindowType]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_List); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17225,8 +17225,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/layout/base.py":42
- * 
- * 
+ *
+ *
  * class NeighborsMap(TypedDict):             # <<<<<<<<<<<<<<
  *     left: List[int]
  *     top: List[int]
@@ -17247,8 +17247,8 @@ if (!__Pyx_RefNanny) {
  *     top: List[int]
  *     right: List[int]
  *     bottom: List[int]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_4, __pyx_n_s_NeighborsMap, __pyx_t_5, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17259,8 +17259,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/base.py":49
- * 
- * 
+ *
+ *
  * class LayoutGlobalData:             # <<<<<<<<<<<<<<
  *     draw_minimal_borders: bool = True
  *     draw_active_borders: bool = True
@@ -17269,7 +17269,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/layout/base.py":50
- * 
+ *
  * class LayoutGlobalData:
  *     draw_minimal_borders: bool = True             # <<<<<<<<<<<<<<
  *     draw_active_borders: bool = True
@@ -17282,7 +17282,7 @@ if (!__Pyx_RefNanny) {
  *     draw_minimal_borders: bool = True
  *     draw_active_borders: bool = True             # <<<<<<<<<<<<<<
  *     align_top_left: bool = False
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_draw_active_borders, Py_True) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
 
@@ -17290,14 +17290,14 @@ if (!__Pyx_RefNanny) {
  *     draw_minimal_borders: bool = True
  *     draw_active_borders: bool = True
  *     align_top_left: bool = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     central: Region = Region((0, 0, 199, 199, 200, 200))
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_align_top_left, Py_False) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
 
   /* "smelly/layout/base.py":54
  *     align_top_left: bool = False
- * 
+ *
  *     central: Region = Region((0, 0, 199, 199, 200, 200))             # <<<<<<<<<<<<<<
  *     cell_width: int = 20
  *     cell_height: int = 20
@@ -17323,11 +17323,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/layout/base.py":55
- * 
+ *
  *     central: Region = Region((0, 0, 199, 199, 200, 200))
  *     cell_width: int = 20             # <<<<<<<<<<<<<<
  *     cell_height: int = 20
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_cell_width, __pyx_int_20) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
 
@@ -17335,14 +17335,14 @@ if (!__Pyx_RefNanny) {
  *     central: Region = Region((0, 0, 199, 199, 200, 200))
  *     cell_width: int = 20
  *     cell_height: int = 20             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_cell_height, __pyx_int_20) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
 
   /* "smelly/layout/base.py":49
- * 
- * 
+ *
+ *
  * class LayoutGlobalData:             # <<<<<<<<<<<<<<
  *     draw_minimal_borders: bool = True
  *     draw_active_borders: bool = True
@@ -17354,11 +17354,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/base.py":59
- * 
- * 
+ *
+ *
  * lgd = LayoutGlobalData()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_LayoutGlobalData); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -17369,8 +17369,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/layout/base.py":62
- * 
- * 
+ *
+ *
  * def idx_for_id(win_id: int, windows: Iterable[WindowType]) -> Optional[int]:             # <<<<<<<<<<<<<<
  *     for i, w in enumerate(windows):
  *         if w.id == win_id:
@@ -17403,8 +17403,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/base.py":69
- * 
- * 
+ *
+ *
  * def set_layout_options(opts: Options) -> None:             # <<<<<<<<<<<<<<
  *     lgd.draw_minimal_borders = opts.draw_minimal_borders and sum(opts.window_margin_width) == 0
  *     lgd.draw_active_borders = opts.active_border_color is not None
@@ -17424,8 +17424,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/layout/base.py":75
- * 
- * 
+ *
+ *
  * def convert_bias_map(bias: Dict[int, float], number_of_windows: int, number_of_cells: int) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     cells_per_window, extra = divmod(number_of_cells, number_of_windows)
  *     cell_map = list(repeat(cells_per_window, number_of_windows))
@@ -17465,8 +17465,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/base.py":83
- * 
- * 
+ *
+ *
  * def calculate_cells_map(bias: Union[None, Sequence[float], Dict[int, float]], number_of_windows: int, number_of_cells: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     if isinstance(bias, dict):
  *         bias = convert_bias_map(bias, number_of_windows, number_of_cells)
@@ -17528,8 +17528,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":103
- * 
- * 
+ *
+ *
  * def layout_dimension(             # <<<<<<<<<<<<<<
  *     start_at: int,
  *     length: int,
@@ -17620,8 +17620,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/base.py":103
- * 
- * 
+ *
+ *
  * def layout_dimension(             # <<<<<<<<<<<<<<
  *     start_at: int,
  *     length: int,
@@ -17635,8 +17635,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/base.py":144
- * 
- * 
+ *
+ *
  * class Rect(NamedTuple):             # <<<<<<<<<<<<<<
  *     left: int
  *     top: int
@@ -17657,8 +17657,8 @@ if (!__Pyx_RefNanny) {
  *     top: int
  *     right: int
  *     bottom: int             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_5, __pyx_n_s_Rect, __pyx_t_2, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17669,8 +17669,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":151
- * 
- * 
+ *
+ *
  * def blank_rects_for_window(wg: WindowGeometry) -> Generator[Rect, None, None]:             # <<<<<<<<<<<<<<
  *     left_width, right_width = wg.spaces.left, wg.spaces.right
  *     top_height, bottom_height = wg.spaces.top, wg.spaces.bottom
@@ -17710,8 +17710,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/base.py":164
- * 
- * 
+ *
+ *
  * def window_geometry(xstart: int, xnum: int, ystart: int, ynum: int, left: int, top: int, right: int, bottom: int) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return WindowGeometry(
  *         left=xstart,
@@ -17738,11 +17738,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":176
- * 
- * 
+ *
+ *
  * def window_geometry_from_layouts(x: LayoutData, y: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     return window_geometry(x.content_pos, x.cells_per_window, y.content_pos, y.cells_per_window, x.space_before, y.space_before, x.space_after, y.space_after)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17766,8 +17766,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/base.py":180
- * 
- * 
+ *
+ *
  * def layout_single_window(xdecoration_pairs: DecorationPairs, ydecoration_pairs: DecorationPairs, left_align: bool = False) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *     x = next(layout_dimension(lgd.central.left, lgd.central.width, lgd.cell_width, xdecoration_pairs, left_align=lgd.align_top_left))
  *     y = next(layout_dimension(lgd.central.top, lgd.central.height, lgd.cell_height, ydecoration_pairs, left_align=lgd.align_top_left))
@@ -17796,11 +17796,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":186
- * 
- * 
+ *
+ *
  * def safe_increment_bias(old_val: float, increment: float) -> float:             # <<<<<<<<<<<<<<
  *     return max(0.1, min(old_val + increment, 0.9))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17815,8 +17815,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/base.py":190
- * 
- * 
+ *
+ *
  * def normalize_biases(biases: List[float]) -> List[float]:             # <<<<<<<<<<<<<<
  *     s = sum(biases)
  *     if s == 1.0:
@@ -17845,8 +17845,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/base.py":197
- * 
- * 
+ *
+ *
  * def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int, float]) -> Sequence[float]:             # <<<<<<<<<<<<<<
  *     if not index_bias_map:
  *         return base_bias
@@ -17891,8 +17891,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/layout/base.py":210
- * 
- * 
+ *
+ *
  * class Layout:             # <<<<<<<<<<<<<<
  *     name: str = ''
  *     needs_window_borders = True
@@ -17901,7 +17901,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/layout/base.py":211
- * 
+ *
  * class Layout:
  *     name: str = ''             # <<<<<<<<<<<<<<
  *     needs_window_borders = True
@@ -17932,7 +17932,7 @@ if (!__Pyx_RefNanny) {
  *     must_draw_borders = False  # can be overridden to customize behavior from wellies
  *     layout_opts = LayoutOpts({})             # <<<<<<<<<<<<<<
  *     only_active_window_visible = False
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_LayoutOpts); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -17961,14 +17961,14 @@ if (!__Pyx_RefNanny) {
  *     must_draw_borders = False  # can be overridden to customize behavior from wellies
  *     layout_opts = LayoutOpts({})
  *     only_active_window_visible = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, os_window_id: int, tab_id: int, layout_opts: str = '') -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_only_active_window_visible, Py_False) < 0) __PYX_ERR(0, 215, __pyx_L1_error)
 
   /* "smelly/layout/base.py":217
  *     only_active_window_visible = False
- * 
+ *
  *     def __init__(self, os_window_id: int, tab_id: int, layout_opts: str = '') -> None:             # <<<<<<<<<<<<<<
  *         self.os_window_id = os_window_id
  *         self.tab_id = tab_id
@@ -17989,7 +17989,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":229
  *         self.remove_all_biases()
- * 
+ *
  *     def bias_increment_for_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
@@ -18012,7 +18012,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":233
  *         return self.calculate_bias_increment_for_a_single_cell(all_windows, window_id, is_horizontal)
- * 
+ *
  *     def calculate_bias_increment_for_a_single_cell(self, all_windows: WindowList, window_id: int, is_horizontal: bool) -> float:             # <<<<<<<<<<<<<<
  *         if is_horizontal:
  *             return (lgd.cell_width + 1) / lgd.central.width
@@ -18035,10 +18035,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":238
  *         return (lgd.cell_height + 1) / lgd.central.height
- * 
+ *
  *     def apply_bias(self, window_id: int, increment: float, all_windows: WindowList, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 238, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -18060,10 +18060,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":241
  *         return False
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18077,7 +18077,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":244
  *         return False
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         idx = all_windows.group_idx_for_window(window_id)
  *         if idx is None:
@@ -18102,7 +18102,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":250
  *         return self.apply_bias(idx, increment, all_windows, is_horizontal)
- * 
+ *
  *     def parse_layout_opts(self, layout_opts: Optional[str] = None) -> LayoutOpts:             # <<<<<<<<<<<<<<
  *         data: Dict[str, str] = {}
  *         if layout_opts:
@@ -18130,10 +18130,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":259
  *         return type(self.layout_opts)(data)
- * 
+ *
  *     def nth_window(self, all_windows: WindowList, num: int) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18161,10 +18161,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":262
  *         return all_windows.active_window_in_nth_group(num, clamp=True)
- * 
+ *
  *     def activate_nth_window(self, all_windows: WindowList, num: int) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18183,10 +18183,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":265
  *         all_windows.set_active_group_idx(num)
- * 
+ *
  *     def next_window(self, all_windows: WindowList, delta: int = 1) -> None:             # <<<<<<<<<<<<<<
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 265, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18206,7 +18206,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":268
  *         all_windows.activate_next_window_group(delta)
- * 
+ *
  *     def neighbors(self, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         w = all_windows.active_window
  *         assert w is not None
@@ -18230,7 +18230,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":273
  *         return self.neighbors_for_window(w, all_windows)
- * 
+ *
  *     def move_window(self, all_windows: WindowList, delta: int = 1) -> bool:             # <<<<<<<<<<<<<<
  *         if all_windows.num_groups < 2 or not delta:
  *             return False
@@ -18253,10 +18253,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":279
  *         return all_windows.move_window_group(by=delta)
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 279, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18275,7 +18275,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":282
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False
  *     ) -> None:
@@ -18284,7 +18284,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/layout/base.py":283
- * 
+ *
  *     def add_window(
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False             # <<<<<<<<<<<<<<
  *     ) -> None:
@@ -18325,7 +18325,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":282
  *         return all_windows.move_window_group(to_group=group)
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False
  *     ) -> None:
@@ -18340,7 +18340,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":292
  *         self.add_non_overlay_window(all_windows, window, location)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         next_to: Optional[WindowType] = None
  *         before = False
@@ -18372,7 +18372,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":308
  *         all_windows.add_window(window, next_to=next_to, before=before)
- * 
+ *
  *     def update_visibility(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         active_window = all_windows.active_window
  *         for window, is_group_leader in all_windows.iter_windows_with_visibility():
@@ -18393,10 +18393,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":314
  *             window.set_visible_in_layout(is_visible)
- * 
+ *
  *     def _set_dimensions(self) -> None:             # <<<<<<<<<<<<<<
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18410,7 +18410,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":317
  *         lgd.central, tab_bar, vw, vh, lgd.cell_width, lgd.cell_height = viewport_for_window(self.os_window_id)
- * 
+ *
  *     def __call__(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         self.update_visibility(all_windows)
@@ -18431,7 +18431,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":323
  *         self.do_layout(all_windows)
- * 
+ *
  *     def layout_single_window_group(self, wg: WindowGroup, add_blank_rects: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         bw = 1 if self.must_draw_borders else 0
  *         xdecoration_pairs = (
@@ -18454,7 +18454,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -18572,7 +18572,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":342
  *             self.blank_rects.extend(blank_rects_for_window(geom))
- * 
+ *
  *     def xlayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -18587,7 +18587,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -18705,7 +18705,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":360
  *         return layout_dimension(start, size, lgd.cell_width, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def ylayout(             # <<<<<<<<<<<<<<
  *         self,
  *         groups: Iterator[WindowGroup],
@@ -18720,7 +18720,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":378
  *         return layout_dimension(start, size, lgd.cell_height, decoration_pairs, bias=bias, left_align=lgd.align_top_left)
- * 
+ *
  *     def set_window_group_geometry(self, wg: WindowGroup, xl: LayoutData, yl: LayoutData) -> WindowGeometry:             # <<<<<<<<<<<<<<
  *         geom = window_geometry_from_layouts(xl, yl)
  *         wg.set_geometry(geom)
@@ -18752,10 +18752,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":384
  *         return geom
- * 
+ *
  *     def do_layout(self, windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         raise NotImplementedError()
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 384, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -18773,10 +18773,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":387
  *         raise NotImplementedError()
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18801,10 +18801,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":390
  *         return {'left': [], 'right': [], 'top': [], 'bottom': []}
- * 
+ *
  *     def compute_needs_borders_map(self, all_windows: WindowList) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 390, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -18837,7 +18837,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":393
  *         return all_windows.compute_needs_borders_map(lgd.draw_active_borders)
- * 
+ *
  *     def get_minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         self._set_dimensions()
  *         yield from self.minimal_borders(windows)
@@ -18878,7 +18878,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":397
  *         yield from self.minimal_borders(windows)
- * 
+ *
  *     def minimal_borders(self, windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         return
  *         yield BorderLine()  # type: ignore
@@ -18919,10 +18919,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":401
  *         yield BorderLine()  # type: ignore
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         pass
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 401, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18954,7 +18954,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/base.py":404
  *         pass
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {}
  */
@@ -18986,8 +18986,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/layout/base.py":210
- * 
- * 
+ *
+ *
  * class Layout:             # <<<<<<<<<<<<<<
  *     name: str = ''
  *     needs_window_borders = True
@@ -19001,7 +19001,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/layout/base.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -19333,8 +19333,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -20044,8 +20044,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -20195,8 +20195,8 @@ static PyObject* __Pyx_PyInt_FloorDivideObjC(PyObject *op1, PyObject *op2, CYTHO
                 }
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceFloorDivide : PyNumber_FloorDivide)(op1, op2);
@@ -20294,12 +20294,12 @@ static PyObject* __Pyx_PyFloat_EqObjC(PyObject *op1, PyObject *op2, double float
     }
     if (likely(PyFloat_CheckExact(op1))) {
         a = PyFloat_AS_DOUBLE(op1);
-        
+
     } else
     #if PY_MAJOR_VERSION < 3
     if (likely(PyInt_CheckExact(op1))) {
         a = (double) PyInt_AS_LONG(op1);
-        
+
     } else
     #endif
     if (likely(PyLong_CheckExact(op1))) {

@@ -1473,11 +1473,11 @@ static PyObject *__pyx_codeobj__5;
 /* Late includes */
 
 /* "smelly_tests/crypto.py":11
- * 
+ *
  * class TestCrypto(BaseTest):
  *     def test_elliptic_curve_data_exchange(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1496,7 +1496,7 @@ static PyObject *__pyx_pw_12smelly_tests_6crypto_10TestCrypto_1test_elliptic_cur
 
 /* "smelly_tests/crypto.py":33
  *         self.ae(q, plaintext)
- * 
+ *
  *         def corrupt_data(data):             # <<<<<<<<<<<<<<
  *             b = bytearray(data)
  *             b[0] = (b[0] + 13) % 256
@@ -1528,7 +1528,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_33test_elliptic_cu
   __Pyx_RefNannySetupContext("corrupt_data", 0);
 
   /* "smelly_tests/crypto.py":34
- * 
+ *
  *         def corrupt_data(data):
  *             b = bytearray(data)             # <<<<<<<<<<<<<<
  *             b[0] = (b[0] + 13) % 256
@@ -1544,7 +1544,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_33test_elliptic_cu
  *             b = bytearray(data)
  *             b[0] = (b[0] + 13) % 256             # <<<<<<<<<<<<<<
  *             return bytes(b)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_GetItemInt_ByteArray(__pyx_v_b, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_2 == -1)) __PYX_ERR(0, 35, __pyx_L1_error)
   if (unlikely(__Pyx_mod_long((__pyx_t_2 + 13), 0x100) < 0 || __Pyx_mod_long((__pyx_t_2 + 13), 0x100) > 255)) {
@@ -1556,7 +1556,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_33test_elliptic_cu
  *             b = bytearray(data)
  *             b[0] = (b[0] + 13) % 256
  *             return bytes(b)             # <<<<<<<<<<<<<<
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, corrupt_data(e.tag))
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1568,7 +1568,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_33test_elliptic_cu
 
   /* "smelly_tests/crypto.py":33
  *         self.ae(q, plaintext)
- * 
+ *
  *         def corrupt_data(data):             # <<<<<<<<<<<<<<
  *             b = bytearray(data)
  *             b[0] = (b[0] + 13) % 256
@@ -1587,11 +1587,11 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_33test_elliptic_cu
 }
 
 /* "smelly_tests/crypto.py":11
- * 
+ *
  * class TestCrypto(BaseTest):
  *     def test_elliptic_curve_data_exchange(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curve_data_exchange(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -1629,7 +1629,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  * class TestCrypto(BaseTest):
  *     def test_elliptic_curve_data_exchange(self):
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey             # <<<<<<<<<<<<<<
- * 
+ *
  *         alice = EllipticCurveKey()
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -1673,7 +1673,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
 
   /* "smelly_tests/crypto.py":14
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
- * 
+ *
  *         alice = EllipticCurveKey()             # <<<<<<<<<<<<<<
  *         bob = EllipticCurveKey()
  *         alice_secret = alice.derive_secret(bob.public)
@@ -1698,7 +1698,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
   __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":15
- * 
+ *
  *         alice = EllipticCurveKey()
  *         bob = EllipticCurveKey()             # <<<<<<<<<<<<<<
  *         alice_secret = alice.derive_secret(bob.public)
@@ -1849,7 +1849,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         self.assertEqual(len(alice_secret), 32)
  *         self.assertEqual(len(bob_secret), 32)             # <<<<<<<<<<<<<<
  *         self.assertEqual(alice_secret, bob_secret)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1909,7 +1909,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         self.assertEqual(len(alice_secret), 32)
  *         self.assertEqual(len(bob_secret), 32)
  *         self.assertEqual(alice_secret, bob_secret)             # <<<<<<<<<<<<<<
- * 
+ *
  *         auth_data = os.urandom(213)
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
@@ -1963,7 +1963,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
 
   /* "smelly_tests/crypto.py":22
  *         self.assertEqual(alice_secret, bob_secret)
- * 
+ *
  *         auth_data = os.urandom(213)             # <<<<<<<<<<<<<<
  *         plaintext = os.urandom(1011)
  *         e = AES256GCMEncrypt(alice_secret)
@@ -1992,7 +1992,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
   __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":23
- * 
+ *
  *         auth_data = os.urandom(213)
  *         plaintext = os.urandom(1011)             # <<<<<<<<<<<<<<
  *         e = AES256GCMEncrypt(alice_secret)
@@ -2052,7 +2052,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         e = AES256GCMEncrypt(alice_secret)
  *         e.add_authenticated_but_unencrypted_data(auth_data)             # <<<<<<<<<<<<<<
  *         ciphertext = e.add_data_to_be_encrypted(plaintext, True)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_e, __pyx_n_s_add_authenticated_but_unencrypte); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2077,7 +2077,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         e = AES256GCMEncrypt(alice_secret)
  *         e.add_authenticated_but_unencrypted_data(auth_data)
  *         ciphertext = e.add_data_to_be_encrypted(plaintext, True)             # <<<<<<<<<<<<<<
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_e, __pyx_n_s_add_data_to_be_encrypted); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
@@ -2132,7 +2132,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
 
   /* "smelly_tests/crypto.py":28
  *         ciphertext = e.add_data_to_be_encrypted(plaintext, True)
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)             # <<<<<<<<<<<<<<
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
  *         q = d.add_data_to_be_decrypted(ciphertext, True)
@@ -2198,7 +2198,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
   __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":29
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)             # <<<<<<<<<<<<<<
  *         q = d.add_data_to_be_decrypted(ciphertext, True)
@@ -2228,7 +2228,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
  *         q = d.add_data_to_be_decrypted(ciphertext, True)             # <<<<<<<<<<<<<<
  *         self.ae(q, plaintext)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_d, __pyx_n_s_add_data_to_be_decrypted); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -2284,7 +2284,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
  *         q = d.add_data_to_be_decrypted(ciphertext, True)
  *         self.ae(q, plaintext)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def corrupt_data(data):
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 31, __pyx_L1_error)
@@ -2338,7 +2338,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
 
   /* "smelly_tests/crypto.py":33
  *         self.ae(q, plaintext)
- * 
+ *
  *         def corrupt_data(data):             # <<<<<<<<<<<<<<
  *             b = bytearray(data)
  *             b[0] = (b[0] + 13) % 256
@@ -2350,7 +2350,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
 
   /* "smelly_tests/crypto.py":38
  *             return bytes(b)
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, corrupt_data(e.tag))             # <<<<<<<<<<<<<<
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
  *         self.assertRaises(
@@ -2419,7 +2419,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
   __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":39
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, corrupt_data(e.tag))
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)             # <<<<<<<<<<<<<<
  *         self.assertRaises(
@@ -2449,7 +2449,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
  *         self.assertRaises(             # <<<<<<<<<<<<<<
  *             CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertRaises); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -2458,7 +2458,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
  *         self.assertRaises(
  *             CryptoError, d.add_data_to_be_decrypted, ciphertext, True)             # <<<<<<<<<<<<<<
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_d, __pyx_n_s_add_data_to_be_decrypted); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
@@ -2520,7 +2520,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
 
   /* "smelly_tests/crypto.py":43
  *             CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)             # <<<<<<<<<<<<<<
  *         d.add_data_to_be_authenticated_but_not_decrypted(
  *             corrupt_data(
@@ -2586,7 +2586,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
   __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":44
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
  *         d.add_data_to_be_authenticated_but_not_decrypted(             # <<<<<<<<<<<<<<
  *             corrupt_data(
@@ -2627,7 +2627,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *                 auth_data))
  *         self.assertRaises(             # <<<<<<<<<<<<<<
  *             CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertRaises); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2636,7 +2636,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
  *                 auth_data))
  *         self.assertRaises(
  *             CryptoError, d.add_data_to_be_decrypted, ciphertext, True)             # <<<<<<<<<<<<<<
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_d, __pyx_n_s_add_data_to_be_decrypted); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -2698,7 +2698,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
 
   /* "smelly_tests/crypto.py":50
  *             CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)             # <<<<<<<<<<<<<<
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
  *         self.assertRaises(CryptoError, d.add_data_to_be_decrypted,
@@ -2764,7 +2764,7 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
   __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":51
- * 
+ *
  *         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
  *         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)             # <<<<<<<<<<<<<<
  *         self.assertRaises(CryptoError, d.add_data_to_be_decrypted,
@@ -2865,11 +2865,11 @@ static PyObject *__pyx_pf_12smelly_tests_6crypto_10TestCrypto_test_elliptic_curv
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":11
- * 
+ *
  * class TestCrypto(BaseTest):
  *     def test_elliptic_curve_data_exchange(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
- * 
+ *
  */
 
   /* function exit code */
@@ -3013,7 +3013,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/crypto.py":33
  *         self.ae(q, plaintext)
- * 
+ *
  *         def corrupt_data(data):             # <<<<<<<<<<<<<<
  *             b = bytearray(data)
  *             b[0] = (b[0] + 13) % 256
@@ -3024,11 +3024,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_crypto_py, __pyx_n_s_corrupt_data, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 33, __pyx_L1_error)
 
   /* "smelly_tests/crypto.py":11
- * 
+ *
  * class TestCrypto(BaseTest):
  *     def test_elliptic_curve_data_exchange(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(17, __pyx_n_s_self, __pyx_n_s_AES256GCMDecrypt, __pyx_n_s_AES256GCMEncrypt, __pyx_n_s_CryptoError, __pyx_n_s_EllipticCurveKey, __pyx_n_s_alice, __pyx_n_s_bob, __pyx_n_s_alice_secret, __pyx_n_s_bob_secret, __pyx_n_s_auth_data, __pyx_n_s_plaintext, __pyx_n_s_e, __pyx_n_s_ciphertext, __pyx_n_s_d, __pyx_n_s_q, __pyx_n_s_corrupt_data, __pyx_n_s_corrupt_data); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
@@ -3319,10 +3319,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/crypto.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -3332,10 +3332,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/crypto.py":7
  * import os
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3352,8 +3352,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/crypto.py":10
- * 
- * 
+ *
+ *
  * class TestCrypto(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_elliptic_curve_data_exchange(self):
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
@@ -3371,11 +3371,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/crypto.py":11
- * 
+ *
  * class TestCrypto(BaseTest):
  *     def test_elliptic_curve_data_exchange(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6crypto_10TestCrypto_1test_elliptic_curve_data_exchange, 0, __pyx_n_s_TestCrypto_test_elliptic_curve_d_2, NULL, __pyx_n_s_smelly_tests_crypto, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3383,8 +3383,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/crypto.py":10
- * 
- * 
+ *
+ *
  * class TestCrypto(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_elliptic_curve_data_exchange(self):
  *         from smelly.fast_data_types import AES256GCMDecrypt, AES256GCMEncrypt, CryptoError, EllipticCurveKey
@@ -3400,7 +3400,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/crypto.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

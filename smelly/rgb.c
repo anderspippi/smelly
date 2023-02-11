@@ -4055,8 +4055,8 @@ static PyObject *__pyx_codeobj__24;
 /* Late includes */
 
 /* "smelly/rgb.py":11
- * 
- * 
+ *
+ *
  * def alpha_blend_channel(             # <<<<<<<<<<<<<<
  *         top_color: int, bottom_color: int, alpha: float) -> int:
  *     return int(alpha * top_color + (1 - alpha) * bottom_color)
@@ -4153,8 +4153,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_alpha_blend_channel(CYTHON_UNUSED PyObjec
  * def alpha_blend_channel(
  *         top_color: int, bottom_color: int, alpha: float) -> int:
  *     return int(alpha * top_color + (1 - alpha) * bottom_color)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyFloat_FromDouble(__pyx_v_alpha); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -4179,8 +4179,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_alpha_blend_channel(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/rgb.py":11
- * 
- * 
+ *
+ *
  * def alpha_blend_channel(             # <<<<<<<<<<<<<<
  *         top_color: int, bottom_color: int, alpha: float) -> int:
  *     return int(alpha * top_color + (1 - alpha) * bottom_color)
@@ -4200,8 +4200,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_alpha_blend_channel(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/rgb.py":16
- * 
- * 
+ *
+ *
  * def alpha_blend(top_color: Color, bottom_color: Color, alpha: float) -> Color:             # <<<<<<<<<<<<<<
  *     return Color(
  *         alpha_blend_channel(top_color.red, bottom_color.red, alpha),
@@ -4304,7 +4304,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_2alpha_blend(CYTHON_UNUSED PyObject *__py
   __Pyx_RefNannySetupContext("alpha_blend", 0);
 
   /* "smelly/rgb.py":17
- * 
+ *
  * def alpha_blend(top_color: Color, bottom_color: Color, alpha: float) -> Color:
  *     return Color(             # <<<<<<<<<<<<<<
  *         alpha_blend_channel(top_color.red, bottom_color.red, alpha),
@@ -4459,7 +4459,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_2alpha_blend(CYTHON_UNUSED PyObject *__py
  *         alpha_blend_channel(top_color.green, bottom_color.green, alpha),
  *         alpha_blend_channel(top_color.blue, bottom_color.blue, alpha),             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_alpha_blend_channel); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
@@ -4582,8 +4582,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_2alpha_blend(CYTHON_UNUSED PyObject *__py
   goto __pyx_L0;
 
   /* "smelly/rgb.py":16
- * 
- * 
+ *
+ *
  * def alpha_blend(top_color: Color, bottom_color: Color, alpha: float) -> Color:             # <<<<<<<<<<<<<<
  *     return Color(
  *         alpha_blend_channel(top_color.red, bottom_color.red, alpha),
@@ -4611,8 +4611,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_2alpha_blend(CYTHON_UNUSED PyObject *__py
 }
 
 /* "smelly/rgb.py":24
- * 
- * 
+ *
+ *
  * def parse_single_color(c: str) -> int:             # <<<<<<<<<<<<<<
  *     if len(c) == 1:
  *         c += c
@@ -4654,7 +4654,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_4parse_single_color(CYTHON_UNUSED PyObjec
   __Pyx_INCREF(__pyx_v_c);
 
   /* "smelly/rgb.py":25
- * 
+ *
  * def parse_single_color(c: str) -> int:
  *     if len(c) == 1:             # <<<<<<<<<<<<<<
  *         c += c
@@ -4669,7 +4669,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_4parse_single_color(CYTHON_UNUSED PyObjec
  *     if len(c) == 1:
  *         c += c             # <<<<<<<<<<<<<<
  *     return int(c[:2], 16)
- * 
+ *
  */
     __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_v_c, __pyx_v_c); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -4677,7 +4677,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_4parse_single_color(CYTHON_UNUSED PyObjec
     __pyx_t_3 = 0;
 
     /* "smelly/rgb.py":25
- * 
+ *
  * def parse_single_color(c: str) -> int:
  *     if len(c) == 1:             # <<<<<<<<<<<<<<
  *         c += c
@@ -4689,8 +4689,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_4parse_single_color(CYTHON_UNUSED PyObjec
  *     if len(c) == 1:
  *         c += c
  *     return int(c[:2], 16)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_c == Py_None)) {
@@ -4715,8 +4715,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_4parse_single_color(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/rgb.py":24
- * 
- * 
+ *
+ *
  * def parse_single_color(c: str) -> int:             # <<<<<<<<<<<<<<
  *     if len(c) == 1:
  *         c += c
@@ -4736,8 +4736,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_4parse_single_color(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/rgb.py":30
- * 
- * 
+ *
+ *
  * def parse_sharp(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     if len(spec) in (3, 6, 9, 12):
  *         part_len = len(spec) // 3
@@ -4786,7 +4786,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_6parse_sharp(CYTHON_UNUSED PyObject *__py
   __Pyx_RefNannySetupContext("parse_sharp", 0);
 
   /* "smelly/rgb.py":31
- * 
+ *
  * def parse_sharp(spec: str) -> Optional[Color]:
  *     if len(spec) in (3, 6, 9, 12):             # <<<<<<<<<<<<<<
  *         part_len = len(spec) // 3
@@ -4915,7 +4915,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_6parse_sharp(CYTHON_UNUSED PyObject *__py
  *         colors = re.findall(fr'[a-fA-F0-9]{{{part_len}}}', spec)
  *         return Color(*map(parse_single_color, colors))             # <<<<<<<<<<<<<<
  *     return None
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Color); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
@@ -4945,7 +4945,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_6parse_sharp(CYTHON_UNUSED PyObject *__py
     goto __pyx_L0;
 
     /* "smelly/rgb.py":31
- * 
+ *
  * def parse_sharp(spec: str) -> Optional[Color]:
  *     if len(spec) in (3, 6, 9, 12):             # <<<<<<<<<<<<<<
  *         part_len = len(spec) // 3
@@ -4957,16 +4957,16 @@ static PyObject *__pyx_pf_6smelly_3rgb_6parse_sharp(CYTHON_UNUSED PyObject *__py
  *         colors = re.findall(fr'[a-fA-F0-9]{{{part_len}}}', spec)
  *         return Color(*map(parse_single_color, colors))
  *     return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
   /* "smelly/rgb.py":30
- * 
- * 
+ *
+ *
  * def parse_sharp(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     if len(spec) in (3, 6, 9, 12):
  *         part_len = len(spec) // 3
@@ -4989,8 +4989,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_6parse_sharp(CYTHON_UNUSED PyObject *__py
 }
 
 /* "smelly/rgb.py":38
- * 
- * 
+ *
+ *
  * def parse_rgb(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     colors = spec.split('/')
  *     if len(colors) == 3:
@@ -5033,7 +5033,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_8parse_rgb(CYTHON_UNUSED PyObject *__pyx_
   __Pyx_RefNannySetupContext("parse_rgb", 0);
 
   /* "smelly/rgb.py":39
- * 
+ *
  * def parse_rgb(spec: str) -> Optional[Color]:
  *     colors = spec.split('/')             # <<<<<<<<<<<<<<
  *     if len(colors) == 3:
@@ -5060,7 +5060,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_8parse_rgb(CYTHON_UNUSED PyObject *__pyx_
  *     if len(colors) == 3:
  *         return Color(*map(parse_single_color, colors))             # <<<<<<<<<<<<<<
  *     return None
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Color); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
@@ -5102,16 +5102,16 @@ static PyObject *__pyx_pf_6smelly_3rgb_8parse_rgb(CYTHON_UNUSED PyObject *__pyx_
  *     if len(colors) == 3:
  *         return Color(*map(parse_single_color, colors))
  *     return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
   /* "smelly/rgb.py":38
- * 
- * 
+ *
+ *
  * def parse_rgb(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     colors = spec.split('/')
  *     if len(colors) == 3:
@@ -5132,11 +5132,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_8parse_rgb(CYTHON_UNUSED PyObject *__pyx_
 }
 
 /* "smelly/rgb.py":45
- * 
- * 
+ *
+ *
  * def color_from_int(x: int) -> Color:             # <<<<<<<<<<<<<<
  *     return Color((x >> 16) & 255, (x >> 8) & 255, x & 255)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5170,11 +5170,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_10color_from_int(CYTHON_UNUSED PyObject *
   __Pyx_RefNannySetupContext("color_from_int", 0);
 
   /* "smelly/rgb.py":46
- * 
+ *
  * def color_from_int(x: int) -> Color:
  *     return Color((x >> 16) & 255, (x >> 8) & 255, x & 255)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
@@ -5250,11 +5250,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_10color_from_int(CYTHON_UNUSED PyObject *
   goto __pyx_L0;
 
   /* "smelly/rgb.py":45
- * 
- * 
+ *
+ *
  * def color_from_int(x: int) -> Color:             # <<<<<<<<<<<<<<
  *     return Color((x >> 16) & 255, (x >> 8) & 255, x & 255)
- * 
+ *
  */
 
   /* function exit code */
@@ -5275,11 +5275,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_10color_from_int(CYTHON_UNUSED PyObject *
 }
 
 /* "smelly/rgb.py":49
- * 
- * 
+ *
+ *
  * def color_as_int(x: Color) -> int:             # <<<<<<<<<<<<<<
  *     return int(x)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5306,11 +5306,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_12color_as_int(CYTHON_UNUSED PyObject *__
   __Pyx_RefNannySetupContext("color_as_int", 0);
 
   /* "smelly/rgb.py":50
- * 
+ *
  * def color_as_int(x: Color) -> int:
  *     return int(x)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
@@ -5320,11 +5320,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_12color_as_int(CYTHON_UNUSED PyObject *__
   goto __pyx_L0;
 
   /* "smelly/rgb.py":49
- * 
- * 
+ *
+ *
  * def color_as_int(x: Color) -> int:             # <<<<<<<<<<<<<<
  *     return int(x)
- * 
+ *
  */
 
   /* function exit code */
@@ -5339,11 +5339,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_12color_as_int(CYTHON_UNUSED PyObject *__
 }
 
 /* "smelly/rgb.py":53
- * 
- * 
+ *
+ *
  * def color_as_sharp(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sharp
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5370,11 +5370,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_14color_as_sharp(CYTHON_UNUSED PyObject *
   __Pyx_RefNannySetupContext("color_as_sharp", 0);
 
   /* "smelly/rgb.py":54
- * 
+ *
  * def color_as_sharp(x: Color) -> str:
  *     return x.as_sharp             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_as_sharp); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -5385,11 +5385,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_14color_as_sharp(CYTHON_UNUSED PyObject *
   goto __pyx_L0;
 
   /* "smelly/rgb.py":53
- * 
- * 
+ *
+ *
  * def color_as_sharp(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sharp
- * 
+ *
  */
 
   /* function exit code */
@@ -5404,11 +5404,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_14color_as_sharp(CYTHON_UNUSED PyObject *
 }
 
 /* "smelly/rgb.py":57
- * 
- * 
+ *
+ *
  * def color_as_sgr(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sgr
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5435,11 +5435,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_16color_as_sgr(CYTHON_UNUSED PyObject *__
   __Pyx_RefNannySetupContext("color_as_sgr", 0);
 
   /* "smelly/rgb.py":58
- * 
+ *
  * def color_as_sgr(x: Color) -> str:
  *     return x.as_sgr             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_as_sgr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
@@ -5450,11 +5450,11 @@ static PyObject *__pyx_pf_6smelly_3rgb_16color_as_sgr(CYTHON_UNUSED PyObject *__
   goto __pyx_L0;
 
   /* "smelly/rgb.py":57
- * 
- * 
+ *
+ *
  * def color_as_sgr(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sgr
- * 
+ *
  */
 
   /* function exit code */
@@ -5469,8 +5469,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_16color_as_sgr(CYTHON_UNUSED PyObject *__
 }
 
 /* "smelly/rgb.py":61
- * 
- * 
+ *
+ *
  * def to_color(raw: str, validate: bool = False) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     # See man XParseColor
  *     x = raw.strip().lower()
@@ -5886,7 +5886,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_18to_color(CYTHON_UNUSED PyObject *__pyx_
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 68, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -5952,7 +5952,7 @@ static PyObject *__pyx_pf_6smelly_3rgb_18to_color(CYTHON_UNUSED PyObject *__pyx_
  *     if val is None and validate:
  *         raise ValueError(f'Invalid color name: {raw}')             # <<<<<<<<<<<<<<
  *     return val
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_FormatSimple(__pyx_v_raw, __pyx_empty_unicode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -5979,8 +5979,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_18to_color(CYTHON_UNUSED PyObject *__pyx_
  *     if val is None and validate:
  *         raise ValueError(f'Invalid color name: {raw}')
  *     return val             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_val);
@@ -5988,8 +5988,8 @@ static PyObject *__pyx_pf_6smelly_3rgb_18to_color(CYTHON_UNUSED PyObject *__pyx_
   goto __pyx_L0;
 
   /* "smelly/rgb.py":61
- * 
- * 
+ *
+ *
  * def to_color(raw: str, validate: bool = False) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     # See man XParseColor
  *     x = raw.strip().lower()
@@ -6933,8 +6933,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly/rgb.py":11
- * 
- * 
+ *
+ *
  * def alpha_blend_channel(             # <<<<<<<<<<<<<<
  *         top_color: int, bottom_color: int, alpha: float) -> int:
  *     return int(alpha * top_color + (1 - alpha) * bottom_color)
@@ -6945,8 +6945,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_alpha_blend_channel, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "smelly/rgb.py":16
- * 
- * 
+ *
+ *
  * def alpha_blend(top_color: Color, bottom_color: Color, alpha: float) -> Color:             # <<<<<<<<<<<<<<
  *     return Color(
  *         alpha_blend_channel(top_color.red, bottom_color.red, alpha),
@@ -6957,8 +6957,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_alpha_blend, 16, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 16, __pyx_L1_error)
 
   /* "smelly/rgb.py":24
- * 
- * 
+ *
+ *
  * def parse_single_color(c: str) -> int:             # <<<<<<<<<<<<<<
  *     if len(c) == 1:
  *         c += c
@@ -6969,8 +6969,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_parse_single_color, 24, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 24, __pyx_L1_error)
 
   /* "smelly/rgb.py":30
- * 
- * 
+ *
+ *
  * def parse_sharp(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     if len(spec) in (3, 6, 9, 12):
  *         part_len = len(spec) // 3
@@ -6981,8 +6981,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_parse_sharp, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "smelly/rgb.py":38
- * 
- * 
+ *
+ *
  * def parse_rgb(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     colors = spec.split('/')
  *     if len(colors) == 3:
@@ -6993,11 +6993,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_parse_rgb, 38, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 38, __pyx_L1_error)
 
   /* "smelly/rgb.py":45
- * 
- * 
+ *
+ *
  * def color_from_int(x: int) -> Color:             # <<<<<<<<<<<<<<
  *     return Color((x >> 16) & 255, (x >> 8) & 255, x & 255)
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -7005,11 +7005,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_color_from_int, 45, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 45, __pyx_L1_error)
 
   /* "smelly/rgb.py":49
- * 
- * 
+ *
+ *
  * def color_as_int(x: Color) -> int:             # <<<<<<<<<<<<<<
  *     return int(x)
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -7017,11 +7017,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_color_as_int, 49, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 49, __pyx_L1_error)
 
   /* "smelly/rgb.py":53
- * 
- * 
+ *
+ *
  * def color_as_sharp(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sharp
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -7029,11 +7029,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_color_as_sharp, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 53, __pyx_L1_error)
 
   /* "smelly/rgb.py":57
- * 
- * 
+ *
+ *
  * def color_as_sgr(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sgr
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -7041,8 +7041,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_rgb_py, __pyx_n_s_color_as_sgr, 57, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 57, __pyx_L1_error)
 
   /* "smelly/rgb.py":61
- * 
- * 
+ *
+ *
  * def to_color(raw: str, validate: bool = False) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     # See man XParseColor
  *     x = raw.strip().lower()
@@ -13182,7 +13182,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rgb.py":4
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import re             # <<<<<<<<<<<<<<
  * from contextlib import suppress
  * from typing import Optional
@@ -13193,11 +13193,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rgb.py":5
- * 
+ *
  * import re
  * from contextlib import suppress             # <<<<<<<<<<<<<<
  * from typing import Optional
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13217,7 +13217,7 @@ if (!__Pyx_RefNanny) {
  * import re
  * from contextlib import suppress
  * from typing import Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .fast_data_types import Color
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -13236,10 +13236,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rgb.py":8
  * from typing import Optional
- * 
+ *
  * from .fast_data_types import Color             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13256,8 +13256,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rgb.py":11
- * 
- * 
+ *
+ *
  * def alpha_blend_channel(             # <<<<<<<<<<<<<<
  *         top_color: int, bottom_color: int, alpha: float) -> int:
  *     return int(alpha * top_color + (1 - alpha) * bottom_color)
@@ -13276,8 +13276,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rgb.py":16
- * 
- * 
+ *
+ *
  * def alpha_blend(top_color: Color, bottom_color: Color, alpha: float) -> Color:             # <<<<<<<<<<<<<<
  *     return Color(
  *         alpha_blend_channel(top_color.red, bottom_color.red, alpha),
@@ -13305,8 +13305,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rgb.py":24
- * 
- * 
+ *
+ *
  * def parse_single_color(c: str) -> int:             # <<<<<<<<<<<<<<
  *     if len(c) == 1:
  *         c += c
@@ -13323,8 +13323,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rgb.py":30
- * 
- * 
+ *
+ *
  * def parse_sharp(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     if len(spec) in (3, 6, 9, 12):
  *         part_len = len(spec) // 3
@@ -13350,8 +13350,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/rgb.py":38
- * 
- * 
+ *
+ *
  * def parse_rgb(spec: str) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     colors = spec.split('/')
  *     if len(colors) == 3:
@@ -13377,11 +13377,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rgb.py":45
- * 
- * 
+ *
+ *
  * def color_from_int(x: int) -> Color:             # <<<<<<<<<<<<<<
  *     return Color((x >> 16) & 255, (x >> 8) & 255, x & 255)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13398,11 +13398,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/rgb.py":49
- * 
- * 
+ *
+ *
  * def color_as_int(x: Color) -> int:             # <<<<<<<<<<<<<<
  *     return int(x)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -13419,11 +13419,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rgb.py":53
- * 
- * 
+ *
+ *
  * def color_as_sharp(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sharp
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13440,11 +13440,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/rgb.py":57
- * 
- * 
+ *
+ *
  * def color_as_sgr(x: Color) -> str:             # <<<<<<<<<<<<<<
  *     return x.as_sgr
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -13461,8 +13461,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rgb.py":61
- * 
- * 
+ *
+ *
  * def to_color(raw: str, validate: bool = False) -> Optional[Color]:             # <<<<<<<<<<<<<<
  *     # See man XParseColor
  *     x = raw.strip().lower()
@@ -24790,7 +24790,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rgb.py":836
  * # END_DATA_SECTION }}}
- * 
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     # Read RGB color table from specified rgb.txt file
  *     import pprint
@@ -24806,7 +24806,7 @@ if (!__Pyx_RefNanny) {
  *     # Read RGB color table from specified rgb.txt file
  *     import pprint             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
     __pyx_t_1 = __Pyx_Import(__pyx_n_s_pprint, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 838, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -24817,7 +24817,7 @@ if (!__Pyx_RefNanny) {
  *     # Read RGB color table from specified rgb.txt file
  *     import pprint
  *     import sys             # <<<<<<<<<<<<<<
- * 
+ *
  *     data = {}
  */
     __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 839, __pyx_L1_error)
@@ -24827,7 +24827,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rgb.py":841
  *     import sys
- * 
+ *
  *     data = {}             # <<<<<<<<<<<<<<
  *     with open(sys.argv[-1]) as f:
  *         for line in f:
@@ -24838,7 +24838,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/rgb.py":842
- * 
+ *
  *     data = {}
  *     with open(sys.argv[-1]) as f:             # <<<<<<<<<<<<<<
  *         for line in f:
@@ -25084,13 +25084,13 @@ if (!__Pyx_RefNanny) {
                 }
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
                 if (likely(PyTuple_CheckExact(sequence))) {
-                  __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-                  __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
-                  __pyx_t_14 = PyTuple_GET_ITEM(sequence, 2); 
+                  __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+                  __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
+                  __pyx_t_14 = PyTuple_GET_ITEM(sequence, 2);
                 } else {
-                  __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-                  __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
-                  __pyx_t_14 = PyList_GET_ITEM(sequence, 2); 
+                  __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+                  __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
+                  __pyx_t_14 = PyList_GET_ITEM(sequence, 2);
                 }
                 __Pyx_INCREF(__pyx_t_1);
                 __Pyx_INCREF(__pyx_t_2);
@@ -25228,7 +25228,7 @@ if (!__Pyx_RefNanny) {
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
             /* "smelly/rgb.py":842
- * 
+ *
  *     data = {}
  *     with open(sys.argv[-1]) as f:             # <<<<<<<<<<<<<<
  *         for line in f:
@@ -25268,7 +25268,7 @@ if (!__Pyx_RefNanny) {
               __Pyx_GIVEREF(__pyx_t_1);
               __Pyx_XGIVEREF(__pyx_t_14);
               __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_14);
-              __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_14 = 0; 
+              __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_14 = 0;
               __PYX_ERR(0, 842, __pyx_L9_except_error)
             }
             __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -25594,7 +25594,7 @@ if (!__Pyx_RefNanny) {
               __Pyx_GIVEREF(__pyx_t_15);
               __Pyx_XGIVEREF(__pyx_t_14);
               __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_15, __pyx_t_14);
-              __pyx_t_2 = 0; __pyx_t_15 = 0; __pyx_t_14 = 0; 
+              __pyx_t_2 = 0; __pyx_t_15 = 0; __pyx_t_14 = 0;
               __PYX_ERR(0, 854, __pyx_L30_except_error)
             }
             __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -25638,7 +25638,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rgb.py":836
  * # END_DATA_SECTION }}}
- * 
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     # Read RGB color table from specified rgb.txt file
  *     import pprint
@@ -25648,7 +25648,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rgb.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_14 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_14);
@@ -26538,8 +26538,8 @@ static PyObject* __Pyx_PyInt_AndObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla & llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceAnd : PyNumber_And)(op1, op2);
@@ -26649,8 +26649,8 @@ static PyObject* __Pyx_PyInt_RshiftObjC(PyObject *op1, PyObject *op2, CYTHON_UNU
                 llx = lla >> llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceRshift : PyNumber_Rshift)(op1, op2);

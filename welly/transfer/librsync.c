@@ -985,7 +985,7 @@ struct __pyx_defaults1 {
 
 /* "welly/transfer/librsync.py":24
  *         self.uncomsumed_data = b''
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if self.finished:
  *             if input_data:
@@ -1003,7 +1003,7 @@ struct __pyx_obj_5welly_8transfer_8librsync___pyx_scope_struct____call__ {
 
 /* "welly/transfer/librsync.py":44
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if not self.finished:
  *             yield from self()
@@ -1015,8 +1015,8 @@ struct __pyx_obj_5welly_8transfer_8librsync___pyx_scope_struct_1_get_remaining_o
 
 
 /* "welly/transfer/librsync.py":53
- * 
- * 
+ *
+ *
  * def drive_job_on_file(f: IO[bytes], job: 'JobCapsule', input_buf_size: int = IO_BUFFER_SIZE, output_buf_size: int = IO_BUFFER_SIZE) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     sj = StreamingJob(job, output_buf_size=output_buf_size)
  *     input_buf = bytearray(input_buf_size)
@@ -1034,8 +1034,8 @@ struct __pyx_obj_5welly_8transfer_8librsync___pyx_scope_struct_2_drive_job_on_fi
 
 
 /* "welly/transfer/librsync.py":65
- * 
- * 
+ *
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     with open(path, 'rb') as f:
  *         f.seek(0, os.SEEK_END)
@@ -1056,8 +1056,8 @@ struct __pyx_obj_5welly_8transfer_8librsync___pyx_scope_struct_3_signature_of_fi
 
 
 /* "welly/transfer/librsync.py":95
- * 
- * 
+ *
+ *
  * def delta_for_file(path: str, sig: 'SignatureCapsule') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     job = begin_create_delta(sig)
  *     with open(path, 'rb') as f:
@@ -2093,7 +2093,7 @@ static PyObject *__pyx_codeobj__39;
 
 /* "welly/transfer/librsync.py":17
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, job: 'JobCapsule', output_buf_size: int = IO_BUFFER_SIZE):             # <<<<<<<<<<<<<<
  *         self.job = job
  *         self.finished = False
@@ -2229,7 +2229,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_12StreamingJob___init__(CYT
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "welly/transfer/librsync.py":18
- * 
+ *
  *     def __init__(self, job: 'JobCapsule', output_buf_size: int = IO_BUFFER_SIZE):
  *         self.job = job             # <<<<<<<<<<<<<<
  *         self.finished = False
@@ -2260,7 +2260,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_12StreamingJob___init__(CYT
  *         self.calls_with_no_data = 0
  *         self.output_buf = bytearray(output_buf_size)             # <<<<<<<<<<<<<<
  *         self.uncomsumed_data = b''
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyByteArray_Type)), __pyx_v_output_buf_size); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2271,14 +2271,14 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_12StreamingJob___init__(CYT
  *         self.calls_with_no_data = 0
  *         self.output_buf = bytearray(output_buf_size)
  *         self.uncomsumed_data = b''             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_uncomsumed_data, __pyx_kp_b_) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":17
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, job: 'JobCapsule', output_buf_size: int = IO_BUFFER_SIZE):             # <<<<<<<<<<<<<<
  *         self.job = job
  *         self.finished = False
@@ -2300,7 +2300,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_4generator(_
 
 /* "welly/transfer/librsync.py":24
  *         self.uncomsumed_data = b''
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if self.finished:
  *             if input_data:
@@ -2446,7 +2446,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_4generator(_
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 24, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":25
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:
  *         if self.finished:             # <<<<<<<<<<<<<<
  *             if input_data:
@@ -2529,7 +2529,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_4generator(_
     goto __pyx_L0;
 
     /* "welly/transfer/librsync.py":25
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:
  *         if self.finished:             # <<<<<<<<<<<<<<
  *             if input_data:
@@ -2672,13 +2672,13 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_4generator(_
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_8);
@@ -2895,7 +2895,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_4generator(_
  *             input_data = memoryview(input_data)[-sz_of_unused_input:]
  *         if sz_of_unused_input:             # <<<<<<<<<<<<<<
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_sz_of_unused_input)) { __Pyx_RaiseUnboundLocalError("sz_of_unused_input"); __PYX_ERR(0, 41, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_sz_of_unused_input); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 41, __pyx_L1_error)
@@ -2905,7 +2905,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_4generator(_
  *             input_data = memoryview(input_data)[-sz_of_unused_input:]
  *         if sz_of_unused_input:
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_sz_of_unused_input)) { __Pyx_RaiseUnboundLocalError("sz_of_unused_input"); __PYX_ERR(0, 42, __pyx_L1_error) }
@@ -2925,14 +2925,14 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_4generator(_
  *             input_data = memoryview(input_data)[-sz_of_unused_input:]
  *         if sz_of_unused_input:             # <<<<<<<<<<<<<<
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/transfer/librsync.py":24
  *         self.uncomsumed_data = b''
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if self.finished:
  *             if input_data:
@@ -2963,7 +2963,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_7generator1(
 
 /* "welly/transfer/librsync.py":44
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if not self.finished:
  *             yield from self()
@@ -3046,7 +3046,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_7generator1(
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 44, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":45
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:
  *         if not self.finished:             # <<<<<<<<<<<<<<
  *             yield from self()
@@ -3103,7 +3103,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_7generator1(
     }
 
     /* "welly/transfer/librsync.py":45
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:
  *         if not self.finished:             # <<<<<<<<<<<<<<
  *             yield from self()
@@ -3167,7 +3167,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_7generator1(
  *             raise RsyncError('Insufficient input data')
  *         if self.uncomsumed_data:             # <<<<<<<<<<<<<<
  *             raise RsyncError(f'{len(self.uncomsumed_data)} bytes of unconsumed input data')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_uncomsumed_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3179,8 +3179,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_7generator1(
  *             raise RsyncError('Insufficient input data')
  *         if self.uncomsumed_data:
  *             raise RsyncError(f'{len(self.uncomsumed_data)} bytes of unconsumed input data')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_RsyncError); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -3218,14 +3218,14 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_7generator1(
  *             raise RsyncError('Insufficient input data')
  *         if self.uncomsumed_data:             # <<<<<<<<<<<<<<
  *             raise RsyncError(f'{len(self.uncomsumed_data)} bytes of unconsumed input data')
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/transfer/librsync.py":44
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if not self.finished:
  *             yield from self()
@@ -3253,8 +3253,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_12StreamingJob_7generator1(
 static PyObject *__pyx_gb_5welly_8transfer_8librsync_2generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/transfer/librsync.py":53
- * 
- * 
+ *
+ *
  * def drive_job_on_file(f: IO[bytes], job: 'JobCapsule', input_buf_size: int = IO_BUFFER_SIZE, output_buf_size: int = IO_BUFFER_SIZE) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     sj = StreamingJob(job, output_buf_size=output_buf_size)
  *     input_buf = bytearray(input_buf_size)
@@ -3468,7 +3468,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_2generator2(__pyx_Coroutine
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 53, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":54
- * 
+ *
  * def drive_job_on_file(f: IO[bytes], job: 'JobCapsule', input_buf_size: int = IO_BUFFER_SIZE, output_buf_size: int = IO_BUFFER_SIZE) -> Iterator[memoryview]:
  *     sj = StreamingJob(job, output_buf_size=output_buf_size)             # <<<<<<<<<<<<<<
  *     input_buf = bytearray(input_buf_size)
@@ -3621,7 +3621,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_2generator2(__pyx_Coroutine
  *             yield from sj.get_remaining_output()
  *             break             # <<<<<<<<<<<<<<
  *         yield from sj(memoryview(input_buf)[:sz])
- * 
+ *
  */
       goto __pyx_L5_break;
 
@@ -3638,8 +3638,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_2generator2(__pyx_Coroutine
  *             yield from sj.get_remaining_output()
  *             break
  *         yield from sj(memoryview(input_buf)[:sz])             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_memoryview); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -3690,8 +3690,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_2generator2(__pyx_Coroutine
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/transfer/librsync.py":53
- * 
- * 
+ *
+ *
  * def drive_job_on_file(f: IO[bytes], job: 'JobCapsule', input_buf_size: int = IO_BUFFER_SIZE, output_buf_size: int = IO_BUFFER_SIZE) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     sj = StreamingJob(job, output_buf_size=output_buf_size)
  *     input_buf = bytearray(input_buf_size)
@@ -3719,8 +3719,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_2generator2(__pyx_Coroutine
 static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/transfer/librsync.py":65
- * 
- * 
+ *
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     with open(path, 'rb') as f:
  *         f.seek(0, os.SEEK_END)
@@ -3819,7 +3819,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_Coroutine
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 65, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":66
- * 
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:
  *     with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *         f.seek(0, os.SEEK_END)
@@ -3995,13 +3995,13 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_Coroutine
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1); 
-              __pyx_t_5 = PyTuple_GET_ITEM(sequence, 2); 
+              __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_10 = PyTuple_GET_ITEM(sequence, 1);
+              __pyx_t_5 = PyTuple_GET_ITEM(sequence, 2);
             } else {
-              __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_10 = PyList_GET_ITEM(sequence, 1); 
-              __pyx_t_5 = PyList_GET_ITEM(sequence, 2); 
+              __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_10 = PyList_GET_ITEM(sequence, 1);
+              __pyx_t_5 = PyList_GET_ITEM(sequence, 2);
             }
             __Pyx_INCREF(__pyx_t_2);
             __Pyx_INCREF(__pyx_t_10);
@@ -4112,8 +4112,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_Coroutine
  *         f.seek(0)
  *         # see whole.c in librsync source for size calculations
  *         yield from drive_job_on_file(f, job, input_buf_size=4 * block_len, output_buf_size=12 + 4 * (4 + (strong_len or IO_BUFFER_SIZE)))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_drive_job_on_file); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L8_error)
           __Pyx_GOTREF(__pyx_t_4);
@@ -4201,7 +4201,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_Coroutine
           }
 
           /* "welly/transfer/librsync.py":66
- * 
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:
  *     with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *         f.seek(0, os.SEEK_END)
@@ -4240,7 +4240,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_Coroutine
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_5);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 66, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4284,8 +4284,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_Coroutine
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/transfer/librsync.py":65
- * 
- * 
+ *
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     with open(path, 'rb') as f:
  *         f.seek(0, os.SEEK_END)
@@ -4314,7 +4314,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_5generator3(__pyx_Coroutine
 
 /* "welly/transfer/librsync.py":81
  *     autocommit = True
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         job, self.signature = begin_load_signature()
  *         super().__init__(job, output_buf_size=0)
@@ -4349,11 +4349,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature___init__(CY
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "welly/transfer/librsync.py":82
- * 
+ *
  *     def __init__(self) -> None:
  *         job, self.signature = begin_load_signature()             # <<<<<<<<<<<<<<
  *         super().__init__(job, output_buf_size=0)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_begin_load_signature); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4382,11 +4382,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature___init__(CY
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -4427,7 +4427,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature___init__(CY
  *     def __init__(self) -> None:
  *         job, self.signature = begin_load_signature()
  *         super().__init__(job, output_buf_size=0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_chunk(self, chunk: bytes) -> None:
  */
   __pyx_t_1 = __Pyx_CyFunction_GetClassObj(__pyx_self);
@@ -4464,7 +4464,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature___init__(CY
 
   /* "welly/transfer/librsync.py":81
  *     autocommit = True
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         job, self.signature = begin_load_signature()
  *         super().__init__(job, output_buf_size=0)
@@ -4489,7 +4489,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature___init__(CY
 
 /* "welly/transfer/librsync.py":85
  *         super().__init__(job, output_buf_size=0)
- * 
+ *
  *     def add_chunk(self, chunk: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self(chunk):
  *             pass
@@ -4580,11 +4580,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature_2add_chunk(
   __Pyx_RefNannySetupContext("add_chunk", 0);
 
   /* "welly/transfer/librsync.py":86
- * 
+ *
  *     def add_chunk(self, chunk: bytes) -> None:
  *         for ignored in self(chunk):             # <<<<<<<<<<<<<<
  *             pass
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_self);
   __pyx_t_2 = __pyx_v_self; __pyx_t_3 = NULL;
@@ -4649,7 +4649,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature_2add_chunk(
 
   /* "welly/transfer/librsync.py":85
  *         super().__init__(job, output_buf_size=0)
- * 
+ *
  *     def add_chunk(self, chunk: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self(chunk):
  *             pass
@@ -4673,7 +4673,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature_2add_chunk(
 
 /* "welly/transfer/librsync.py":89
  *             pass
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self.get_remaining_output():
  *             pass
@@ -4709,7 +4709,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature_4commit(CYT
   __Pyx_RefNannySetupContext("commit", 0);
 
   /* "welly/transfer/librsync.py":90
- * 
+ *
  *     def commit(self) -> None:
  *         for ignored in self.get_remaining_output():             # <<<<<<<<<<<<<<
  *             pass
@@ -4781,8 +4781,8 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature_4commit(CYT
  *         for ignored in self.get_remaining_output():
  *             pass
  *         build_hash_table(self.signature)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_build_hash_table); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4808,7 +4808,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature_4commit(CYT
 
   /* "welly/transfer/librsync.py":89
  *             pass
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self.get_remaining_output():
  *             pass
@@ -4833,8 +4833,8 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_13LoadSignature_4commit(CYT
 static PyObject *__pyx_gb_5welly_8transfer_8librsync_8generator4(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/transfer/librsync.py":95
- * 
- * 
+ *
+ *
  * def delta_for_file(path: str, sig: 'SignatureCapsule') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     job = begin_create_delta(sig)
  *     with open(path, 'rb') as f:
@@ -4981,7 +4981,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_8generator4(__pyx_Coroutine
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 95, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":96
- * 
+ *
  * def delta_for_file(path: str, sig: 'SignatureCapsule') -> Iterator[memoryview]:
  *     job = begin_create_delta(sig)             # <<<<<<<<<<<<<<
  *     with open(path, 'rb') as f:
@@ -5064,8 +5064,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_8generator4(__pyx_Coroutine
  *     with open(path, 'rb') as f:
  *         # see whole.c in librsync source for size calculations
  *         yield from drive_job_on_file(f, job, input_buf_size=8 * IO_BUFFER_SIZE, output_buf_size=4 * IO_BUFFER_SIZE)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_drive_job_on_file); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L8_error)
           __Pyx_GOTREF(__pyx_t_3);
@@ -5178,7 +5178,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_8generator4(__pyx_Coroutine
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_1, __pyx_t_2);
-            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+            __pyx_t_5 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 97, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -5222,8 +5222,8 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_8generator4(__pyx_Coroutine
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/transfer/librsync.py":95
- * 
- * 
+ *
+ *
  * def delta_for_file(path: str, sig: 'SignatureCapsule') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     job = begin_create_delta(sig)
  *     with open(path, 'rb') as f:
@@ -5252,7 +5252,7 @@ static PyObject *__pyx_gb_5welly_8transfer_8librsync_8generator4(__pyx_Coroutine
 
 /* "welly/transfer/librsync.py":106
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, src_path: str, output_path: str = ''):             # <<<<<<<<<<<<<<
  *         self.overwrite_src = not output_path
  *         self.src_file = open(src_path, 'rb')
@@ -5364,7 +5364,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile___init__(CYTHON_
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "welly/transfer/librsync.py":107
- * 
+ *
  *     def __init__(self, src_path: str, output_path: str = ''):
  *         self.overwrite_src = not output_path             # <<<<<<<<<<<<<<
  *         self.src_file = open(src_path, 'rb')
@@ -5545,7 +5545,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile___init__(CYTHON_
  *             self.dest_file = open(output_path, 'wb')
  *         job = begin_patch(self.read_from_src)             # <<<<<<<<<<<<<<
  *         super().__init__(job, output_buf_size=4 * IO_BUFFER_SIZE)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_begin_patch); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5574,7 +5574,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile___init__(CYTHON_
  *             self.dest_file = open(output_path, 'wb')
  *         job = begin_patch(self.read_from_src)
  *         super().__init__(job, output_buf_size=4 * IO_BUFFER_SIZE)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def tell(self) -> int:
  */
   __pyx_t_3 = __Pyx_CyFunction_GetClassObj(__pyx_self);
@@ -5617,7 +5617,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile___init__(CYTHON_
 
   /* "welly/transfer/librsync.py":106
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, src_path: str, output_path: str = ''):             # <<<<<<<<<<<<<<
  *         self.overwrite_src = not output_path
  *         self.src_file = open(src_path, 'rb')
@@ -5647,7 +5647,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile___init__(CYTHON_
 
 /* "welly/transfer/librsync.py":116
  *         super().__init__(job, output_buf_size=4 * IO_BUFFER_SIZE)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.dest_file.closed:
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)
@@ -5682,7 +5682,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_2tell(CYTHON_UNU
   __Pyx_RefNannySetupContext("tell", 0);
 
   /* "welly/transfer/librsync.py":117
- * 
+ *
  *     def tell(self) -> int:
  *         if self.dest_file.closed:             # <<<<<<<<<<<<<<
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)
@@ -5702,7 +5702,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_2tell(CYTHON_UNU
  *         if self.dest_file.closed:
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)             # <<<<<<<<<<<<<<
  *         return self.dest_file.tell()
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
@@ -5755,7 +5755,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_2tell(CYTHON_UNU
     goto __pyx_L0;
 
     /* "welly/transfer/librsync.py":117
- * 
+ *
  *     def tell(self) -> int:
  *         if self.dest_file.closed:             # <<<<<<<<<<<<<<
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)
@@ -5767,7 +5767,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_2tell(CYTHON_UNU
  *         if self.dest_file.closed:
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)
  *         return self.dest_file.tell()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def read_from_src(self, b: memoryview, pos: int) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5797,7 +5797,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_2tell(CYTHON_UNU
 
   /* "welly/transfer/librsync.py":116
  *         super().__init__(job, output_buf_size=4 * IO_BUFFER_SIZE)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.dest_file.closed:
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)
@@ -5820,7 +5820,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_2tell(CYTHON_UNU
 
 /* "welly/transfer/librsync.py":121
  *         return self.dest_file.tell()
- * 
+ *
  *     def read_from_src(self, b: memoryview, pos: int) -> int:             # <<<<<<<<<<<<<<
  *         self.src_file.seek(pos)
  *         return self.src_file.readinto(b)
@@ -5914,11 +5914,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_4read_from_src(C
   __Pyx_RefNannySetupContext("read_from_src", 0);
 
   /* "welly/transfer/librsync.py":122
- * 
+ *
  *     def read_from_src(self, b: memoryview, pos: int) -> int:
  *         self.src_file.seek(pos)             # <<<<<<<<<<<<<<
  *         return self.src_file.readinto(b)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_src_file); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5946,7 +5946,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_4read_from_src(C
  *     def read_from_src(self, b: memoryview, pos: int) -> int:
  *         self.src_file.seek(pos)
  *         return self.src_file.readinto(b)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def close(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5976,7 +5976,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_4read_from_src(C
 
   /* "welly/transfer/librsync.py":121
  *         return self.dest_file.tell()
- * 
+ *
  *     def read_from_src(self, b: memoryview, pos: int) -> int:             # <<<<<<<<<<<<<<
  *         self.src_file.seek(pos)
  *         return self.src_file.readinto(b)
@@ -5997,7 +5997,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_4read_from_src(C
 
 /* "welly/transfer/librsync.py":125
  *         return self.src_file.readinto(b)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.src_file.closed:
  *             self.get_remaining_output()
@@ -6037,7 +6037,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_6close(CYTHON_UN
   __Pyx_RefNannySetupContext("close", 0);
 
   /* "welly/transfer/librsync.py":126
- * 
+ *
  *     def close(self) -> None:
  *         if not self.src_file.closed:             # <<<<<<<<<<<<<<
  *             self.get_remaining_output()
@@ -6215,7 +6215,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_6close(CYTHON_UN
  *             self.dest_file.close()
  *             if self.overwrite_src:             # <<<<<<<<<<<<<<
  *                 os.replace(self.dest_file.name, self.src_file.name)
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_overwrite_src); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 134, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -6227,7 +6227,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_6close(CYTHON_UN
  *             self.dest_file.close()
  *             if self.overwrite_src:
  *                 os.replace(self.dest_file.name, self.src_file.name)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def write(self, data: bytes) -> None:
  */
       __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
@@ -6301,12 +6301,12 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_6close(CYTHON_UN
  *             self.dest_file.close()
  *             if self.overwrite_src:             # <<<<<<<<<<<<<<
  *                 os.replace(self.dest_file.name, self.src_file.name)
- * 
+ *
  */
     }
 
     /* "welly/transfer/librsync.py":126
- * 
+ *
  *     def close(self) -> None:
  *         if not self.src_file.closed:             # <<<<<<<<<<<<<<
  *             self.get_remaining_output()
@@ -6316,7 +6316,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_6close(CYTHON_UN
 
   /* "welly/transfer/librsync.py":125
  *         return self.src_file.readinto(b)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.src_file.closed:
  *             self.get_remaining_output()
@@ -6343,7 +6343,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_6close(CYTHON_UN
 
 /* "welly/transfer/librsync.py":137
  *                 os.replace(self.dest_file.name, self.src_file.name)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for output in self(data):
  *             self.dest_file.write(output)
@@ -6435,11 +6435,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_8write(CYTHON_UN
   __Pyx_RefNannySetupContext("write", 0);
 
   /* "welly/transfer/librsync.py":138
- * 
+ *
  *     def write(self, data: bytes) -> None:
  *         for output in self(data):             # <<<<<<<<<<<<<<
  *             self.dest_file.write(output)
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_self);
   __pyx_t_2 = __pyx_v_self; __pyx_t_3 = NULL;
@@ -6504,7 +6504,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_8write(CYTHON_UN
  *     def write(self, data: bytes) -> None:
  *         for output in self(data):
  *             self.dest_file.write(output)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __enter__(self) -> 'PatchFile':
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_dest_file); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 139, __pyx_L1_error)
@@ -6530,18 +6530,18 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_8write(CYTHON_UN
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/transfer/librsync.py":138
- * 
+ *
  *     def write(self, data: bytes) -> None:
  *         for output in self(data):             # <<<<<<<<<<<<<<
  *             self.dest_file.write(output)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/transfer/librsync.py":137
  *                 os.replace(self.dest_file.name, self.src_file.name)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for output in self(data):
  *             self.dest_file.write(output)
@@ -6566,10 +6566,10 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_8write(CYTHON_UN
 
 /* "welly/transfer/librsync.py":141
  *             self.dest_file.write(output)
- * 
+ *
  *     def __enter__(self) -> 'PatchFile':             # <<<<<<<<<<<<<<
  *         return self
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6592,10 +6592,10 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_10__enter__(CYTH
   __Pyx_RefNannySetupContext("__enter__", 0);
 
   /* "welly/transfer/librsync.py":142
- * 
+ *
  *     def __enter__(self) -> 'PatchFile':
  *         return self             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __exit__(self, *a: object) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6605,10 +6605,10 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_10__enter__(CYTH
 
   /* "welly/transfer/librsync.py":141
  *             self.dest_file.write(output)
- * 
+ *
  *     def __enter__(self) -> 'PatchFile':             # <<<<<<<<<<<<<<
  *         return self
- * 
+ *
  */
 
   /* function exit code */
@@ -6620,10 +6620,10 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_10__enter__(CYTH
 
 /* "welly/transfer/librsync.py":144
  *         return self
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.close()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6706,11 +6706,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_12__exit__(CYTHO
   __Pyx_RefNannySetupContext("__exit__", 0);
 
   /* "welly/transfer/librsync.py":145
- * 
+ *
  *     def __exit__(self, *a: object) -> None:
  *         self.close()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_close); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6733,10 +6733,10 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_12__exit__(CYTHO
 
   /* "welly/transfer/librsync.py":144
  *         return self
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.close()
- * 
+ *
  */
 
   /* function exit code */
@@ -6755,11 +6755,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9PatchFile_12__exit__(CYTHO
 }
 
 /* "welly/transfer/librsync.py":148
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6810,10 +6810,10 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9develop(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("develop", 0);
 
   /* "welly/transfer/librsync.py":149
- * 
+ *
  * def develop() -> None:
  *     import sys             # <<<<<<<<<<<<<<
- * 
+ *
  *     src = sys.argv[-1]
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
@@ -6823,7 +6823,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9develop(CYTHON_UNUSED PyOb
 
   /* "welly/transfer/librsync.py":151
  *     import sys
- * 
+ *
  *     src = sys.argv[-1]             # <<<<<<<<<<<<<<
  *     sig_loader = LoadSignature()
  *     with open(f'{src}.sig', 'wb') as f:
@@ -6837,7 +6837,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9develop(CYTHON_UNUSED PyOb
   __pyx_t_2 = 0;
 
   /* "welly/transfer/librsync.py":152
- * 
+ *
  *     src = sys.argv[-1]
  *     sig_loader = LoadSignature()             # <<<<<<<<<<<<<<
  *     with open(f'{src}.sig', 'wb') as f:
@@ -7089,7 +7089,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9develop(CYTHON_UNUSED PyOb
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 153, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7503,7 +7503,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9develop(CYTHON_UNUSED PyOb
                     __Pyx_GIVEREF(__pyx_t_15);
                     __Pyx_XGIVEREF(__pyx_t_2);
                     __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_15, __pyx_t_2);
-                    __pyx_t_1 = 0; __pyx_t_15 = 0; __pyx_t_2 = 0; 
+                    __pyx_t_1 = 0; __pyx_t_15 = 0; __pyx_t_2 = 0;
                     __PYX_ERR(0, 158, __pyx_L35_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7577,7 +7577,7 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9develop(CYTHON_UNUSED PyOb
             __Pyx_GIVEREF(__pyx_t_15);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_15, __pyx_t_1);
-            __pyx_t_2 = 0; __pyx_t_15 = 0; __pyx_t_1 = 0; 
+            __pyx_t_2 = 0; __pyx_t_15 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 158, __pyx_L25_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -7620,11 +7620,11 @@ static PyObject *__pyx_pf_5welly_8transfer_8librsync_9develop(CYTHON_UNUSED PyOb
   }
 
   /* "welly/transfer/librsync.py":148
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
 
   /* function exit code */
@@ -8505,7 +8505,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_slice__3);
 
   /* "welly/transfer/librsync.py":66
- * 
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:
  *     with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *         f.seek(0, os.SEEK_END)
@@ -8517,7 +8517,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":17
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, job: 'JobCapsule', output_buf_size: int = IO_BUFFER_SIZE):             # <<<<<<<<<<<<<<
  *         self.job = job
  *         self.finished = False
@@ -8529,7 +8529,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":24
  *         self.uncomsumed_data = b''
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if self.finished:
  *             if input_data:
@@ -8544,7 +8544,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":44
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if not self.finished:
  *             yield from self()
@@ -8555,8 +8555,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_transfer_librsync_py, __pyx_n_s_get_remaining_output, 44, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 44, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":53
- * 
- * 
+ *
+ *
  * def drive_job_on_file(f: IO[bytes], job: 'JobCapsule', input_buf_size: int = IO_BUFFER_SIZE, output_buf_size: int = IO_BUFFER_SIZE) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     sj = StreamingJob(job, output_buf_size=output_buf_size)
  *     input_buf = bytearray(input_buf_size)
@@ -8567,8 +8567,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_transfer_librsync_py, __pyx_n_s_drive_job_on_file, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 53, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":65
- * 
- * 
+ *
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     with open(path, 'rb') as f:
  *         f.seek(0, os.SEEK_END)
@@ -8580,7 +8580,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":81
  *     autocommit = True
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         job, self.signature = begin_load_signature()
  *         super().__init__(job, output_buf_size=0)
@@ -8592,7 +8592,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":85
  *         super().__init__(job, output_buf_size=0)
- * 
+ *
  *     def add_chunk(self, chunk: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self(chunk):
  *             pass
@@ -8604,7 +8604,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":89
  *             pass
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self.get_remaining_output():
  *             pass
@@ -8615,8 +8615,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_transfer_librsync_py, __pyx_n_s_commit, 89, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 89, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":95
- * 
- * 
+ *
+ *
  * def delta_for_file(path: str, sig: 'SignatureCapsule') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     job = begin_create_delta(sig)
  *     with open(path, 'rb') as f:
@@ -8628,7 +8628,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":106
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, src_path: str, output_path: str = ''):             # <<<<<<<<<<<<<<
  *         self.overwrite_src = not output_path
  *         self.src_file = open(src_path, 'rb')
@@ -8643,7 +8643,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":116
  *         super().__init__(job, output_buf_size=4 * IO_BUFFER_SIZE)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.dest_file.closed:
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)
@@ -8655,7 +8655,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":121
  *         return self.dest_file.tell()
- * 
+ *
  *     def read_from_src(self, b: memoryview, pos: int) -> int:             # <<<<<<<<<<<<<<
  *         self.src_file.seek(pos)
  *         return self.src_file.readinto(b)
@@ -8667,7 +8667,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":125
  *         return self.src_file.readinto(b)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.src_file.closed:
  *             self.get_remaining_output()
@@ -8679,7 +8679,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":137
  *                 os.replace(self.dest_file.name, self.src_file.name)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for output in self(data):
  *             self.dest_file.write(output)
@@ -8691,10 +8691,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":141
  *             self.dest_file.write(output)
- * 
+ *
  *     def __enter__(self) -> 'PatchFile':             # <<<<<<<<<<<<<<
  *         return self
- * 
+ *
  */
   __pyx_tuple__34 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
@@ -8703,10 +8703,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/transfer/librsync.py":144
  *         return self
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.close()
- * 
+ *
  */
   __pyx_tuple__36 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_a); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
@@ -8714,11 +8714,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_transfer_librsync_py, __pyx_n_s_exit, 144, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 144, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":148
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
   __pyx_tuple__38 = PyTuple_Pack(6, __pyx_n_s_sys, __pyx_n_s_src, __pyx_n_s_sig_loader, __pyx_n_s_f, __pyx_n_s_chunk, __pyx_n_s_patcher); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
@@ -9063,7 +9063,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":4
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import tempfile
  * from typing import IO, TYPE_CHECKING, Iterator, Union
@@ -9074,11 +9074,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/transfer/librsync.py":5
- * 
+ *
  * import os
  * import tempfile             # <<<<<<<<<<<<<<
  * from typing import IO, TYPE_CHECKING, Iterator, Union
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9089,7 +9089,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import tempfile
  * from typing import IO, TYPE_CHECKING, Iterator, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .rsync import IO_BUFFER_SIZE, RsyncError, begin_create_delta, begin_create_signature, begin_load_signature, begin_patch, build_hash_table, iter_job
  */
   __pyx_t_1 = PyList_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -9129,9 +9129,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":8
  * from typing import IO, TYPE_CHECKING, Iterator, Union
- * 
+ *
  * from .rsync import IO_BUFFER_SIZE, RsyncError, begin_create_delta, begin_create_signature, begin_load_signature, begin_patch, build_hash_table, iter_job             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -9199,10 +9199,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":10
  * from .rsync import IO_BUFFER_SIZE, RsyncError, begin_create_delta, begin_create_signature, begin_load_signature, begin_patch, build_hash_table, iter_job
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .rsync import JobCapsule, SignatureCapsule
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9211,11 +9211,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "welly/transfer/librsync.py":11
- * 
+ *
  * if TYPE_CHECKING:
  *     from .rsync import JobCapsule, SignatureCapsule             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -9240,28 +9240,28 @@ if (!__Pyx_RefNanny) {
 
     /* "welly/transfer/librsync.py":10
  * from .rsync import IO_BUFFER_SIZE, RsyncError, begin_create_delta, begin_create_signature, begin_load_signature, begin_patch, build_hash_table, iter_job
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .rsync import JobCapsule, SignatureCapsule
- * 
+ *
  */
   }
 
   /* "welly/transfer/librsync.py":14
- * 
- * 
+ *
+ *
  * class StreamingJob:             # <<<<<<<<<<<<<<
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  */
   __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_StreamingJob, __pyx_n_s_StreamingJob, (PyObject *) NULL, __pyx_n_s_welly_transfer_librsync, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "welly/transfer/librsync.py":15
- * 
+ *
  * class StreamingJob:
  *     expected_input_size = IO_BUFFER_SIZE             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, job: 'JobCapsule', output_buf_size: int = IO_BUFFER_SIZE):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_IO_BUFFER_SIZE); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
@@ -9271,7 +9271,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":17
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, job: 'JobCapsule', output_buf_size: int = IO_BUFFER_SIZE):             # <<<<<<<<<<<<<<
  *         self.job = job
  *         self.finished = False
@@ -9296,7 +9296,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":24
  *         self.uncomsumed_data = b''
- * 
+ *
  *     def __call__(self, input_data: Union[memoryview, bytes] = b'') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if self.finished:
  *             if input_data:
@@ -9341,7 +9341,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":44
  *             self.uncomsumed_data = bytes(input_data[-sz_of_unused_input:])
- * 
+ *
  *     def get_remaining_output(self) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *         if not self.finished:
  *             yield from self()
@@ -9366,11 +9366,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/transfer/librsync.py":14
- * 
- * 
+ *
+ *
  * class StreamingJob:             # <<<<<<<<<<<<<<
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_StreamingJob, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -9379,8 +9379,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/transfer/librsync.py":53
- * 
- * 
+ *
+ *
  * def drive_job_on_file(f: IO[bytes], job: 'JobCapsule', input_buf_size: int = IO_BUFFER_SIZE, output_buf_size: int = IO_BUFFER_SIZE) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     sj = StreamingJob(job, output_buf_size=output_buf_size)
  *     input_buf = bytearray(input_buf_size)
@@ -9427,8 +9427,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "welly/transfer/librsync.py":65
- * 
- * 
+ *
+ *
  * def signature_of_file(path: str) -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     with open(path, 'rb') as f:
  *         f.seek(0, os.SEEK_END)
@@ -9454,8 +9454,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/transfer/librsync.py":76
- * 
- * 
+ *
+ *
  * class LoadSignature(StreamingJob):             # <<<<<<<<<<<<<<
  *     # see whole.c in librsync source for size calculations
  *     expected_input_size = 16 * 1024
@@ -9479,7 +9479,7 @@ if (!__Pyx_RefNanny) {
  *     # see whole.c in librsync source for size calculations
  *     expected_input_size = 16 * 1024             # <<<<<<<<<<<<<<
  *     autocommit = True
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_expected_input_size, __pyx_int_16384) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
 
@@ -9487,14 +9487,14 @@ if (!__Pyx_RefNanny) {
  *     # see whole.c in librsync source for size calculations
  *     expected_input_size = 16 * 1024
  *     autocommit = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_autocommit, Py_True) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
 
   /* "welly/transfer/librsync.py":81
  *     autocommit = True
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         job, self.signature = begin_load_signature()
  *         super().__init__(job, output_buf_size=0)
@@ -9514,7 +9514,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":85
  *         super().__init__(job, output_buf_size=0)
- * 
+ *
  *     def add_chunk(self, chunk: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self(chunk):
  *             pass
@@ -9532,7 +9532,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":89
  *             pass
- * 
+ *
  *     def commit(self) -> None:             # <<<<<<<<<<<<<<
  *         for ignored in self.get_remaining_output():
  *             pass
@@ -9548,8 +9548,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "welly/transfer/librsync.py":76
- * 
- * 
+ *
+ *
  * class LoadSignature(StreamingJob):             # <<<<<<<<<<<<<<
  *     # see whole.c in librsync source for size calculations
  *     expected_input_size = 16 * 1024
@@ -9565,8 +9565,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "welly/transfer/librsync.py":95
- * 
- * 
+ *
+ *
  * def delta_for_file(path: str, sig: 'SignatureCapsule') -> Iterator[memoryview]:             # <<<<<<<<<<<<<<
  *     job = begin_create_delta(sig)
  *     with open(path, 'rb') as f:
@@ -9593,8 +9593,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "welly/transfer/librsync.py":102
- * 
- * 
+ *
+ *
  * class PatchFile(StreamingJob):             # <<<<<<<<<<<<<<
  *     # see whole.c in librsync source for size calculations
  *     expected_input_size = IO_BUFFER_SIZE
@@ -9617,7 +9617,7 @@ if (!__Pyx_RefNanny) {
  * class PatchFile(StreamingJob):
  *     # see whole.c in librsync source for size calculations
  *     expected_input_size = IO_BUFFER_SIZE             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, src_path: str, output_path: str = ''):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_IO_BUFFER_SIZE); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 104, __pyx_L1_error)
@@ -9627,7 +9627,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":106
  *     expected_input_size = IO_BUFFER_SIZE
- * 
+ *
  *     def __init__(self, src_path: str, output_path: str = ''):             # <<<<<<<<<<<<<<
  *         self.overwrite_src = not output_path
  *         self.src_file = open(src_path, 'rb')
@@ -9649,7 +9649,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":116
  *         super().__init__(job, output_buf_size=4 * IO_BUFFER_SIZE)
- * 
+ *
  *     def tell(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.dest_file.closed:
  *             return os.path.getsize(self.src_file.name if self.overwrite_src else self.dest_file.name)
@@ -9666,7 +9666,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":121
  *         return self.dest_file.tell()
- * 
+ *
  *     def read_from_src(self, b: memoryview, pos: int) -> int:             # <<<<<<<<<<<<<<
  *         self.src_file.seek(pos)
  *         return self.src_file.readinto(b)
@@ -9688,7 +9688,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":125
  *         return self.src_file.readinto(b)
- * 
+ *
  *     def close(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.src_file.closed:
  *             self.get_remaining_output()
@@ -9705,7 +9705,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":137
  *                 os.replace(self.dest_file.name, self.src_file.name)
- * 
+ *
  *     def write(self, data: bytes) -> None:             # <<<<<<<<<<<<<<
  *         for output in self(data):
  *             self.dest_file.write(output)
@@ -9723,10 +9723,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":141
  *             self.dest_file.write(output)
- * 
+ *
  *     def __enter__(self) -> 'PatchFile':             # <<<<<<<<<<<<<<
  *         return self
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -9740,10 +9740,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/transfer/librsync.py":144
  *         return self
- * 
+ *
  *     def __exit__(self, *a: object) -> None:             # <<<<<<<<<<<<<<
  *         self.close()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9757,8 +9757,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/transfer/librsync.py":102
- * 
- * 
+ *
+ *
  * class PatchFile(StreamingJob):             # <<<<<<<<<<<<<<
  *     # see whole.c in librsync source for size calculations
  *     expected_input_size = IO_BUFFER_SIZE
@@ -9774,11 +9774,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "welly/transfer/librsync.py":148
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -9793,7 +9793,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/transfer/librsync.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -12380,8 +12380,8 @@ static PyObject* __Pyx_PyInt_AddCObj(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -12578,8 +12578,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

@@ -979,7 +979,7 @@ struct __pyx_defaults1 {
 };
 
 /* "smelly_tests/mouse.py":36
- * 
+ *
  * class TestMouse(BaseTest):
  *     def test_mouse_selection(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(
@@ -1813,8 +1813,8 @@ static PyObject *__pyx_codeobj__39;
 /* Late includes */
 
 /* "smelly_tests/mouse.py":19
- * 
- * 
+ *
+ *
  * def send_mouse_event(             # <<<<<<<<<<<<<<
  *     window,
  *     button=-1,
@@ -1966,8 +1966,8 @@ static PyObject *__pyx_pw_12smelly_tests_5mouse_1send_mouse_event(PyObject *__py
   __pyx_r = __pyx_pf_12smelly_tests_5mouse_send_mouse_event(__pyx_self, __pyx_v_window, __pyx_v_button, __pyx_v_modifiers, __pyx_v_is_release, __pyx_v_x, __pyx_v_y, __pyx_v_clear_click_queue);
 
   /* "smelly_tests/mouse.py":19
- * 
- * 
+ *
+ *
  * def send_mouse_event(             # <<<<<<<<<<<<<<
  *     window,
  *     button=-1,
@@ -2033,8 +2033,8 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_send_mouse_event(CYTHON_UNUSED P
  *     send_mock_mouse_event_to_window(
  *         window, button, modifiers, is_release, ix, y, clear_click_queue,
  *         in_left_half_of_cell)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_3 = NULL;
   __pyx_t_4 = 0;
@@ -2102,8 +2102,8 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_send_mouse_event(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/mouse.py":19
- * 
- * 
+ *
+ *
  * def send_mouse_event(             # <<<<<<<<<<<<<<
  *     window,
  *     button=-1,
@@ -2128,7 +2128,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_send_mouse_event(CYTHON_UNUSED P
 }
 
 /* "smelly_tests/mouse.py":36
- * 
+ *
  * class TestMouse(BaseTest):
  *     def test_mouse_selection(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(
@@ -2151,10 +2151,10 @@ static PyObject *__pyx_pw_12smelly_tests_5mouse_9TestMouse_1test_mouse_selection
 
 /* "smelly_tests/mouse.py":44
  *         ev = partial(send_mouse_event, w)
- * 
+ *
  *         def mouse_selection(code: int) -> None:             # <<<<<<<<<<<<<<
  *             mock_mouse_selection(w, s.callbacks.current_mouse_button, code)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2190,10 +2190,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/mouse.py":45
- * 
+ *
  *         def mouse_selection(code: int) -> None:
  *             mock_mouse_selection(w, s.callbacks.current_mouse_button, code)             # <<<<<<<<<<<<<<
- * 
+ *
  *         s.callbacks.mouse_selection = mouse_selection
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mock_mouse_selection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -2259,10 +2259,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":44
  *         ev = partial(send_mouse_event, w)
- * 
+ *
  *         def mouse_selection(code: int) -> None:             # <<<<<<<<<<<<<<
  *             mock_mouse_selection(w, s.callbacks.current_mouse_button, code)
- * 
+ *
  */
 
   /* function exit code */
@@ -2284,10 +2284,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
 /* "smelly_tests/mouse.py":49
  *         s.callbacks.mouse_selection = mouse_selection
- * 
+ *
  *         def sel():             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection())
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2320,10 +2320,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/mouse.py":50
- * 
+ *
  *         def sel():
  *             return ''.join(s.text_for_selection())             # <<<<<<<<<<<<<<
- * 
+ *
  *         def init():
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2354,10 +2354,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":49
  *         s.callbacks.mouse_selection = mouse_selection
- * 
+ *
  *         def sel():             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection())
- * 
+ *
  */
 
   /* function exit code */
@@ -2375,7 +2375,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
 /* "smelly_tests/mouse.py":52
  *             return ''.join(s.text_for_selection())
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('pqrst')
@@ -2411,7 +2411,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/mouse.py":53
- * 
+ *
  *         def init():
  *             s.reset()             # <<<<<<<<<<<<<<
  *             s.draw('pqrst')
@@ -2658,7 +2658,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
  *             s.draw('abcde')
  *             s.draw('fghij')             # <<<<<<<<<<<<<<
  *             s.draw('klmno')
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 62, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_draw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)
@@ -2684,7 +2684,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
  *             s.draw('abcde')
  *             s.draw('fghij')
  *             s.draw('klmno')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def press(x=0, y=0, modifiers=0, button=GLFW_MOUSE_BUTTON_LEFT):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_s)) { __Pyx_RaiseClosureNameError("s"); __PYX_ERR(0, 63, __pyx_L1_error) }
@@ -2709,7 +2709,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":52
  *             return ''.join(s.text_for_selection())
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('pqrst')
@@ -2732,10 +2732,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
 /* "smelly_tests/mouse.py":65
  *             s.draw('klmno')
- * 
+ *
  *         def press(x=0, y=0, modifiers=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_5mouse_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
@@ -2902,10 +2902,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/mouse.py":66
- * 
+ *
  *         def press(x=0, y=0, modifiers=0, button=GLFW_MOUSE_BUTTON_LEFT):
  *             ev(button, x=x, y=y, modifiers=modifiers)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def release(x=0, y=0, button=GLFW_MOUSE_BUTTON_LEFT):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_ev)) { __Pyx_RaiseClosureNameError("ev"); __PYX_ERR(0, 66, __pyx_L1_error) }
@@ -2927,10 +2927,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":65
  *             s.draw('klmno')
- * 
+ *
  *         def press(x=0, y=0, modifiers=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  */
 
   /* function exit code */
@@ -2950,10 +2950,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
 /* "smelly_tests/mouse.py":68
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  *         def release(x=0, y=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_5mouse_4__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
@@ -3104,10 +3104,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/mouse.py":69
- * 
+ *
  *         def release(x=0, y=0, button=GLFW_MOUSE_BUTTON_LEFT):
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def move(x=0, y=0, button=-1, q=None):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_ev)) { __Pyx_RaiseClosureNameError("ev"); __PYX_ERR(0, 69, __pyx_L1_error) }
@@ -3130,10 +3130,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":68
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  *         def release(x=0, y=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  */
 
   /* function exit code */
@@ -3153,7 +3153,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
 /* "smelly_tests/mouse.py":71
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  *         def move(x=0, y=0, button=-1, q=None):             # <<<<<<<<<<<<<<
  *             ev(x=x, y=y, button=button)
  *             if q is not None:
@@ -3282,7 +3282,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/mouse.py":72
- * 
+ *
  *         def move(x=0, y=0, button=-1, q=None):
  *             ev(x=x, y=y, button=button)             # <<<<<<<<<<<<<<
  *             if q is not None:
@@ -3315,7 +3315,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
  *             if q is not None:
  *                 s = sel()             # <<<<<<<<<<<<<<
  *                 self.ae(s, q, f'{s!r} != {q!r} after movement to x={x} y={y}')
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_sel)) { __Pyx_RaiseClosureNameError("sel"); __PYX_ERR(0, 74, __pyx_L1_error) }
     __pyx_t_2 = __pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selection_2sel(__pyx_cur_scope->__pyx_v_sel); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
@@ -3327,7 +3327,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
  *             if q is not None:
  *                 s = sel()
  *                 self.ae(s, q, f'{s!r} != {q!r} after movement to x={x} y={y}')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def multi_click(x=0, y=0, count=2):
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 75, __pyx_L1_error) }
@@ -3443,7 +3443,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":71
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  *         def move(x=0, y=0, button=-1, q=None):             # <<<<<<<<<<<<<<
  *             ev(x=x, y=y, button=button)
  *             if q is not None:
@@ -3469,7 +3469,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
 /* "smelly_tests/mouse.py":77
  *                 self.ae(s, q, f'{s!r} != {q!r} after movement to x={x} y={y}')
- * 
+ *
  *         def multi_click(x=0, y=0, count=2):             # <<<<<<<<<<<<<<
  *             clear_click_queue = True
  *             while count > 0:
@@ -3580,7 +3580,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __Pyx_INCREF(__pyx_v_count);
 
   /* "smelly_tests/mouse.py":78
- * 
+ *
  *         def multi_click(x=0, y=0, count=2):
  *             clear_click_queue = True             # <<<<<<<<<<<<<<
  *             while count > 0:
@@ -3638,7 +3638,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
  *                 ev(GLFW_MOUSE_BUTTON_LEFT, x=x, y=y,
  *                    clear_click_queue=clear_click_queue)             # <<<<<<<<<<<<<<
  *                 clear_click_queue = False
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyBool_FromLong(__pyx_v_clear_click_queue); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -3662,7 +3662,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
  *                 ev(GLFW_MOUSE_BUTTON_LEFT, x=x, y=y,
  *                    clear_click_queue=clear_click_queue)
  *                 clear_click_queue = False             # <<<<<<<<<<<<<<
- * 
+ *
  *         def scroll(x=0, y=0, up=True):
  */
     __pyx_v_clear_click_queue = 0;
@@ -3670,7 +3670,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":77
  *                 self.ae(s, q, f'{s!r} != {q!r} after movement to x={x} y={y}')
- * 
+ *
  *         def multi_click(x=0, y=0, count=2):             # <<<<<<<<<<<<<<
  *             clear_click_queue = True
  *             while count > 0:
@@ -3694,10 +3694,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
 /* "smelly_tests/mouse.py":85
  *                 clear_click_queue = False
- * 
+ *
  *         def scroll(x=0, y=0, up=True):             # <<<<<<<<<<<<<<
  *             move(x=x, y=y, button=-2 if up else -3)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3802,10 +3802,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/mouse.py":86
- * 
+ *
  *         def scroll(x=0, y=0, up=True):
  *             move(x=x, y=y, button=-2 if up else -3)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Single line click, move, release test
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_move)) { __Pyx_RaiseClosureNameError("move"); __PYX_ERR(0, 86, __pyx_L1_error) }
@@ -3830,10 +3830,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 
   /* "smelly_tests/mouse.py":85
  *                 clear_click_queue = False
- * 
+ *
  *         def scroll(x=0, y=0, up=True):             # <<<<<<<<<<<<<<
  *             move(x=x, y=y, button=-2 if up else -3)
- * 
+ *
  */
 
   /* function exit code */
@@ -3851,7 +3851,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_20test_mouse_selectio
 }
 
 /* "smelly_tests/mouse.py":36
- * 
+ *
  * class TestMouse(BaseTest):
  *     def test_mouse_selection(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(
@@ -3969,7 +3969,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *                 GLFW_MOD_CONTROL))
  *         w = create_mock_window(s)             # <<<<<<<<<<<<<<
  *         ev = partial(send_mouse_event, w)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_create_mock_window); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3996,7 +3996,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *                 GLFW_MOD_CONTROL))
  *         w = create_mock_window(s)
  *         ev = partial(send_mouse_event, w)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def mouse_selection(code: int) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_partial); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -4056,10 +4056,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":44
  *         ev = partial(send_mouse_event, w)
- * 
+ *
  *         def mouse_selection(code: int) -> None:             # <<<<<<<<<<<<<<
  *             mock_mouse_selection(w, s.callbacks.current_mouse_button, code)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4074,9 +4074,9 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":47
  *             mock_mouse_selection(w, s.callbacks.current_mouse_button, code)
- * 
+ *
  *         s.callbacks.mouse_selection = mouse_selection             # <<<<<<<<<<<<<<
- * 
+ *
  *         def sel():
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_callbacks); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
@@ -4086,10 +4086,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":49
  *         s.callbacks.mouse_selection = mouse_selection
- * 
+ *
  *         def sel():             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection())
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_5mouse_9TestMouse_20test_mouse_selection_3sel, 0, __pyx_n_s_TestMouse_test_mouse_selection_l_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_mouse, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4099,7 +4099,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":52
  *             return ''.join(s.text_for_selection())
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('pqrst')
@@ -4111,10 +4111,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":65
  *             s.draw('klmno')
- * 
+ *
  *         def press(x=0, y=0, modifiers=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_5mouse_9TestMouse_20test_mouse_selection_7press, 0, __pyx_n_s_TestMouse_test_mouse_selection_l_4, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_mouse, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4130,10 +4130,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":68
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  *         def release(x=0, y=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_5mouse_9TestMouse_20test_mouse_selection_9release, 0, __pyx_n_s_TestMouse_test_mouse_selection_l_5, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_mouse, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4149,7 +4149,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":71
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  *         def move(x=0, y=0, button=-1, q=None):             # <<<<<<<<<<<<<<
  *             ev(x=x, y=y, button=button)
  *             if q is not None:
@@ -4163,7 +4163,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":77
  *                 self.ae(s, q, f'{s!r} != {q!r} after movement to x={x} y={y}')
- * 
+ *
  *         def multi_click(x=0, y=0, count=2):             # <<<<<<<<<<<<<<
  *             clear_click_queue = True
  *             while count > 0:
@@ -4176,10 +4176,10 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
 
   /* "smelly_tests/mouse.py":85
  *                 clear_click_queue = False
- * 
+ *
  *         def scroll(x=0, y=0, up=True):             # <<<<<<<<<<<<<<
  *             move(x=x, y=y, button=-2 if up else -3)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_5mouse_9TestMouse_20test_mouse_selection_15scroll, 0, __pyx_n_s_TestMouse_test_mouse_selection_l_8, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_mouse, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4188,7 +4188,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __pyx_t_2 = 0;
 
   /* "smelly_tests/mouse.py":89
- * 
+ *
  *         # Single line click, move, release test
  *         init()             # <<<<<<<<<<<<<<
  *         press()
@@ -4305,7 +4305,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), '1234')
  *         press(x=4), release(x=0.6)             # <<<<<<<<<<<<<<
  *         self.ae(sel(), '234')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4333,7 +4333,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), '1234')
  *         press(x=4), release(x=0.6)
  *         self.ae(sel(), '234')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # multi line movement
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 95, __pyx_L1_error)
@@ -4390,7 +4390,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/mouse.py":98
- * 
+ *
  *         # multi line movement
  *         init()             # <<<<<<<<<<<<<<
  *         press(x=2, y=2)
@@ -4570,7 +4570,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         move(x=0.6, y=3, q='cdef')
  *         move(x=2.6, y=3, q='cdefgh')             # <<<<<<<<<<<<<<
  *         move(x=4.6, y=3, q='cdefghij')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4586,7 +4586,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         move(x=0.6, y=3, q='cdef')
  *         move(x=2.6, y=3, q='cdefgh')
  *         move(x=4.6, y=3, q='cdefghij')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Single cell select
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
@@ -4600,7 +4600,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/mouse.py":113
- * 
+ *
  *         # Single cell select
  *         init()             # <<<<<<<<<<<<<<
  *         press(), release(1)
@@ -4696,7 +4696,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), '1')
  *         press(3), release(2)             # <<<<<<<<<<<<<<
  *         self.ae(sel(), '3')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_press, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4716,7 +4716,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), '1')
  *         press(3), release(2)
  *         self.ae(sel(), '3')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Multi-line click release
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 117, __pyx_L1_error)
@@ -4773,7 +4773,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/mouse.py":120
- * 
+ *
  *         # Multi-line click release
  *         init()             # <<<<<<<<<<<<<<
  *         press(1, 1), release(3.6, 2)
@@ -5031,7 +5031,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), 'cdefghijklmn')
  *         press(3, 4), release(2.6, 2)             # <<<<<<<<<<<<<<
  *         self.ae(sel(), 'defghijklm')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_press, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5051,7 +5051,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), 'cdefghijklmn')
  *         press(3, 4), release(2.6, 2)
  *         self.ae(sel(), 'defghijklm')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Word select with drag
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
@@ -5108,7 +5108,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/mouse.py":131
- * 
+ *
  *         # Word select with drag
  *         s.reset()             # <<<<<<<<<<<<<<
  *         s.draw('ab cd')
@@ -6852,7 +6852,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), 'ab cd f gh')
  *         move(x=4.4)             # <<<<<<<<<<<<<<
  *         self.ae(sel(), 'ab cd')
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -6866,7 +6866,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), 'ab cd f gh')
  *         move(x=4.4)
  *         self.ae(sel(), 'ab cd')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Line select with drag
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 184, __pyx_L1_error)
@@ -6923,7 +6923,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/mouse.py":187
- * 
+ *
  *         # Line select with drag
  *         s.reset()             # <<<<<<<<<<<<<<
  *         s.draw('1 2 3')
@@ -8333,7 +8333,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         press(button=GLFW_MOUSE_BUTTON_RIGHT)
  *         self.ae(sel(), ' 123\n 456')             # <<<<<<<<<<<<<<
  *         release(button=GLFW_MOUSE_BUTTON_RIGHT)
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -8392,7 +8392,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         press(button=GLFW_MOUSE_BUTTON_RIGHT)
  *         self.ae(sel(), ' 123\n 456')
  *         release(button=GLFW_MOUSE_BUTTON_RIGHT)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Rectangle select
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 228, __pyx_L1_error)
@@ -8407,7 +8407,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/mouse.py":231
- * 
+ *
  *         # Rectangle select
  *         init()             # <<<<<<<<<<<<<<
  *         press(x=1, y=1, modifiers=GLFW_MOD_ALT | GLFW_MOD_CONTROL)
@@ -8762,7 +8762,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), '789bcdghi')
  *         release(x=1.6)             # <<<<<<<<<<<<<<
  *         self.ae(sel(), '3489')
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8776,7 +8776,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         self.ae(sel(), '789bcdghi')
  *         release(x=1.6)
  *         self.ae(sel(), '3489')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # scrolling
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 242, __pyx_L1_error)
@@ -8833,7 +8833,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/mouse.py":245
- * 
+ *
  *         # scrolling
  *         init()             # <<<<<<<<<<<<<<
  *         press(x=1.6)
@@ -9105,7 +9105,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         scroll(x=2.6, up=False)
  *         self.ae(sel(), '3')             # <<<<<<<<<<<<<<
  *         release()
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -9164,7 +9164,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
  *         scroll(x=2.6, up=False)
  *         self.ae(sel(), '3')
  *         release()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # extending selections
  */
   __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_v_release); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 255, __pyx_L1_error)
@@ -9172,7 +9172,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/mouse.py":258
- * 
+ *
  *         # extending selections
  *         init()             # <<<<<<<<<<<<<<
  *         press()
@@ -9582,7 +9582,7 @@ static PyObject *__pyx_pf_12smelly_tests_5mouse_9TestMouse_test_mouse_selection(
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/mouse.py":36
- * 
+ *
  * class TestMouse(BaseTest):
  *     def test_mouse_selection(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(
@@ -9965,10 +9965,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/mouse.py":44
  *         ev = partial(send_mouse_event, w)
- * 
+ *
  *         def mouse_selection(code: int) -> None:             # <<<<<<<<<<<<<<
  *             mock_mouse_selection(w, s.callbacks.current_mouse_button, code)
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_code); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -9977,16 +9977,16 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/mouse.py":49
  *         s.callbacks.mouse_selection = mouse_selection
- * 
+ *
  *         def sel():             # <<<<<<<<<<<<<<
  *             return ''.join(s.text_for_selection())
- * 
+ *
  */
   __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_mouse_py, __pyx_n_s_sel, 49, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 49, __pyx_L1_error)
 
   /* "smelly_tests/mouse.py":52
  *             return ''.join(s.text_for_selection())
- * 
+ *
  *         def init():             # <<<<<<<<<<<<<<
  *             s.reset()
  *             s.draw('pqrst')
@@ -9995,10 +9995,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/mouse.py":65
  *             s.draw('klmno')
- * 
+ *
  *         def press(x=0, y=0, modifiers=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  */
   __pyx_tuple__7 = PyTuple_Pack(4, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_modifiers, __pyx_n_s_button); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
@@ -10007,10 +10007,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/mouse.py":68
  *             ev(button, x=x, y=y, modifiers=modifiers)
- * 
+ *
  *         def release(x=0, y=0, button=GLFW_MOUSE_BUTTON_LEFT):             # <<<<<<<<<<<<<<
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  */
   __pyx_tuple__9 = PyTuple_Pack(3, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_button); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
@@ -10019,7 +10019,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/mouse.py":71
  *             ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
- * 
+ *
  *         def move(x=0, y=0, button=-1, q=None):             # <<<<<<<<<<<<<<
  *             ev(x=x, y=y, button=button)
  *             if q is not None:
@@ -10034,7 +10034,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/mouse.py":77
  *                 self.ae(s, q, f'{s!r} != {q!r} after movement to x={x} y={y}')
- * 
+ *
  *         def multi_click(x=0, y=0, count=2):             # <<<<<<<<<<<<<<
  *             clear_click_queue = True
  *             while count > 0:
@@ -10049,10 +10049,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/mouse.py":85
  *                 clear_click_queue = False
- * 
+ *
  *         def scroll(x=0, y=0, up=True):             # <<<<<<<<<<<<<<
  *             move(x=x, y=y, button=-2 if up else -3)
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(3, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_up); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -10078,7 +10078,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(sel(), '1')
  *         press(3), release(2)             # <<<<<<<<<<<<<<
  *         self.ae(sel(), '3')
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -10134,7 +10134,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(sel(), 'cdefghijklmn')
  *         press(3, 4), release(2.6, 2)             # <<<<<<<<<<<<<<
  *         self.ae(sel(), 'defghijklm')
- * 
+ *
  */
   __pyx_tuple__29 = PyTuple_Pack(2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
@@ -10188,8 +10188,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__34);
 
   /* "smelly_tests/mouse.py":19
- * 
- * 
+ *
+ *
  * def send_mouse_event(             # <<<<<<<<<<<<<<
  *     window,
  *     button=-1,
@@ -10203,7 +10203,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__37);
 
   /* "smelly_tests/mouse.py":36
- * 
+ *
  * class TestMouse(BaseTest):
  *     def test_mouse_selection(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(
@@ -10528,9 +10528,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/mouse.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from functools import partial             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import (
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -10548,7 +10548,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/mouse.py":7
- * 
+ *
  * from smelly.fast_data_types import (
  *     GLFW_MOD_ALT,             # <<<<<<<<<<<<<<
  *     GLFW_MOD_CONTROL,
@@ -10580,7 +10580,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/mouse.py":6
  * from functools import partial
- * 
+ *
  * from smelly.fast_data_types import (             # <<<<<<<<<<<<<<
  *     GLFW_MOD_ALT,
  *     GLFW_MOD_CONTROL,
@@ -10620,10 +10620,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/mouse.py":16
  * )
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10640,8 +10640,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/mouse.py":19
- * 
- * 
+ *
+ *
  * def send_mouse_event(             # <<<<<<<<<<<<<<
  *     window,
  *     button=-1,
@@ -10653,8 +10653,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/mouse.py":35
- * 
- * 
+ *
+ *
  * class TestMouse(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_mouse_selection(self):
  *         s = self.create_screen(
@@ -10672,7 +10672,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/mouse.py":36
- * 
+ *
  * class TestMouse(BaseTest):
  *     def test_mouse_selection(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen(
@@ -10684,8 +10684,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/mouse.py":35
- * 
- * 
+ *
+ *
  * class TestMouse(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_mouse_selection(self):
  *         s = self.create_screen(
@@ -10701,7 +10701,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/mouse.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11457,8 +11457,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

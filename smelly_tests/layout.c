@@ -969,8 +969,8 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_12smelly_tests_6layout___pyx_scope_struct__utils;
 
 /* "smelly_tests/layout.py":69
- * 
- * 
+ *
+ *
  * def utils(self, q, windows):             # <<<<<<<<<<<<<<
  *     def ids():
  *         return [w.id for w in windows.groups]
@@ -1832,7 +1832,7 @@ static PyObject *__pyx_codeobj__57;
 /* Late includes */
 
 /* "smelly_tests/layout.py":14
- * 
+ *
  * class Window:
  *     def __init__(self, win_id, overlay_for=None, overlay_window_id=None):             # <<<<<<<<<<<<<<
  *         self.id = win_id
@@ -2026,7 +2026,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window___init__(CYTHON_UNUSED 
  *         self.padding = EdgeWidths()
  *         self.margin = EdgeWidths()             # <<<<<<<<<<<<<<
  *         self.focused = False
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_EdgeWidths); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2052,13 +2052,13 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window___init__(CYTHON_UNUSED 
  *         self.padding = EdgeWidths()
  *         self.margin = EdgeWidths()
  *         self.focused = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def focus_changed(self, focused):
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_focused, Py_False) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "smelly_tests/layout.py":14
- * 
+ *
  * class Window:
  *     def __init__(self, win_id, overlay_for=None, overlay_window_id=None):             # <<<<<<<<<<<<<<
  *         self.id = win_id
@@ -2082,10 +2082,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window___init__(CYTHON_UNUSED 
 
 /* "smelly_tests/layout.py":24
  *         self.focused = False
- * 
+ *
  *     def focus_changed(self, focused):             # <<<<<<<<<<<<<<
  *         self.focused = focused
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2162,20 +2162,20 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_2focus_changed(CYTHON_U
   __Pyx_RefNannySetupContext("focus_changed", 0);
 
   /* "smelly_tests/layout.py":25
- * 
+ *
  *     def focus_changed(self, focused):
  *         self.focused = focused             # <<<<<<<<<<<<<<
- * 
+ *
  *     def effective_border(self):
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_focused, __pyx_v_focused) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
 
   /* "smelly_tests/layout.py":24
  *         self.focused = False
- * 
+ *
  *     def focus_changed(self, focused):             # <<<<<<<<<<<<<<
  *         self.focused = focused
- * 
+ *
  */
 
   /* function exit code */
@@ -2192,10 +2192,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_2focus_changed(CYTHON_U
 
 /* "smelly_tests/layout.py":27
  *         self.focused = focused
- * 
+ *
  *     def effective_border(self):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2218,10 +2218,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_4effective_border(CYTHO
   __Pyx_RefNannySetupContext("effective_border", 0);
 
   /* "smelly_tests/layout.py":28
- * 
+ *
  *     def effective_border(self):
  *         return 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def effective_padding(self, edge):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2231,10 +2231,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_4effective_border(CYTHO
 
   /* "smelly_tests/layout.py":27
  *         self.focused = focused
- * 
+ *
  *     def effective_border(self):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
 
   /* function exit code */
@@ -2246,10 +2246,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_4effective_border(CYTHO
 
 /* "smelly_tests/layout.py":30
  *         return 1
- * 
+ *
  *     def effective_padding(self, edge):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2323,10 +2323,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_6effective_padding(CYTH
   __Pyx_RefNannySetupContext("effective_padding", 0);
 
   /* "smelly_tests/layout.py":31
- * 
+ *
  *     def effective_padding(self, edge):
  *         return 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def effective_margin(self, edge, is_single_window=False):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2336,10 +2336,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_6effective_padding(CYTH
 
   /* "smelly_tests/layout.py":30
  *         return 1
- * 
+ *
  *     def effective_padding(self, edge):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
 
   /* function exit code */
@@ -2351,10 +2351,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_6effective_padding(CYTH
 
 /* "smelly_tests/layout.py":33
  *         return 1
- * 
+ *
  *     def effective_margin(self, edge, is_single_window=False):             # <<<<<<<<<<<<<<
  *         return 0 if is_single_window else 1
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2448,10 +2448,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_8effective_margin(CYTHO
   __Pyx_RefNannySetupContext("effective_margin", 0);
 
   /* "smelly_tests/layout.py":34
- * 
+ *
  *     def effective_margin(self, edge, is_single_window=False):
  *         return 0 if is_single_window else 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_visible_in_layout(self, val):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2469,10 +2469,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_8effective_margin(CYTHO
 
   /* "smelly_tests/layout.py":33
  *         return 1
- * 
+ *
  *     def effective_margin(self, edge, is_single_window=False):             # <<<<<<<<<<<<<<
  *         return 0 if is_single_window else 1
- * 
+ *
  */
 
   /* function exit code */
@@ -2488,10 +2488,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_8effective_margin(CYTHO
 
 /* "smelly_tests/layout.py":36
  *         return 0 if is_single_window else 1
- * 
+ *
  *     def set_visible_in_layout(self, val):             # <<<<<<<<<<<<<<
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2570,10 +2570,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_10set_visible_in_layout
   __Pyx_RefNannySetupContext("set_visible_in_layout", 0);
 
   /* "smelly_tests/layout.py":37
- * 
+ *
  *     def set_visible_in_layout(self, val):
  *         self.is_visible_in_layout = bool(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_geometry(self, geometry):
  */
   __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_val); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 37, __pyx_L1_error)
@@ -2584,10 +2584,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_10set_visible_in_layout
 
   /* "smelly_tests/layout.py":36
  *         return 0 if is_single_window else 1
- * 
+ *
  *     def set_visible_in_layout(self, val):             # <<<<<<<<<<<<<<
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2605,10 +2605,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_10set_visible_in_layout
 
 /* "smelly_tests/layout.py":39
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  *     def set_geometry(self, geometry):             # <<<<<<<<<<<<<<
  *         self.geometry = geometry
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2685,20 +2685,20 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_12set_geometry(CYTHON_U
   __Pyx_RefNannySetupContext("set_geometry", 0);
 
   /* "smelly_tests/layout.py":40
- * 
+ *
  *     def set_geometry(self, geometry):
  *         self.geometry = geometry             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_geometry, __pyx_v_geometry) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
 
   /* "smelly_tests/layout.py":39
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  *     def set_geometry(self, geometry):             # <<<<<<<<<<<<<<
  *         self.geometry = geometry
- * 
+ *
  */
 
   /* function exit code */
@@ -2714,8 +2714,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_6Window_12set_geometry(CYTHON_U
 }
 
 /* "smelly_tests/layout.py":43
- * 
- * 
+ *
+ *
  * def create_layout(cls, opts=None, border_width=2):             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -2845,7 +2845,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
  *     ans.set_active_window_in_os_window = lambda idx: None
  *     ans.swap_windows_in_os_window = lambda a, b: None             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2929,8 +2929,8 @@ static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* "smelly_tests/layout.py":43
- * 
- * 
+ *
+ *
  * def create_layout(cls, opts=None, border_width=2):             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -2950,7 +2950,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_create_layout(CYTHON_UNUSED PyO
   __Pyx_INCREF(__pyx_v_opts);
 
   /* "smelly_tests/layout.py":44
- * 
+ *
  * def create_layout(cls, opts=None, border_width=2):
  *     if opts is None:             # <<<<<<<<<<<<<<
  *         opts = defaults
@@ -2973,7 +2973,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_create_layout(CYTHON_UNUSED PyO
     __pyx_t_3 = 0;
 
     /* "smelly_tests/layout.py":44
- * 
+ *
  * def create_layout(cls, opts=None, border_width=2):
  *     if opts is None:             # <<<<<<<<<<<<<<
  *         opts = defaults
@@ -3010,7 +3010,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_create_layout(CYTHON_UNUSED PyO
  *     ans.set_active_window_in_os_window = lambda idx: None
  *     ans.swap_windows_in_os_window = lambda a, b: None             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_13create_layout_1lambda1, 0, __pyx_n_s_create_layout_locals_lambda, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3021,8 +3021,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_create_layout(CYTHON_UNUSED PyO
  *     ans.set_active_window_in_os_window = lambda idx: None
  *     ans.swap_windows_in_os_window = lambda a, b: None
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -3030,8 +3030,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_create_layout(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly_tests/layout.py":43
- * 
- * 
+ *
+ *
  * def create_layout(cls, opts=None, border_width=2):             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -3051,11 +3051,11 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_create_layout(CYTHON_UNUSED PyO
 }
 
 /* "smelly_tests/layout.py":53
- * 
+ *
  * class Tab:
  *     def active_window_changed(self):             # <<<<<<<<<<<<<<
  *         self.current_layout.update_visibility(self.windows)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3088,8 +3088,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_3Tab_active_window_changed(CYTH
  * class Tab:
  *     def active_window_changed(self):
  *         self.current_layout.update_visibility(self.windows)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_layout); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3117,11 +3117,11 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_3Tab_active_window_changed(CYTH
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":53
- * 
+ *
  * class Tab:
  *     def active_window_changed(self):             # <<<<<<<<<<<<<<
  *         self.current_layout.update_visibility(self.windows)
- * 
+ *
  */
 
   /* function exit code */
@@ -3141,8 +3141,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_3Tab_active_window_changed(CYTH
 }
 
 /* "smelly_tests/layout.py":57
- * 
- * 
+ *
+ *
  * def create_windows(layout, num=5):             # <<<<<<<<<<<<<<
  *     t = Tab()
  *     t.current_layout = layout
@@ -3238,7 +3238,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_2create_windows(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("create_windows", 0);
 
   /* "smelly_tests/layout.py":58
- * 
+ *
  * def create_windows(layout, num=5):
  *     t = Tab()             # <<<<<<<<<<<<<<
  *     t.current_layout = layout
@@ -3451,7 +3451,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_2create_windows(CYTHON_UNUSED P
  *         ans.add_window(Window(i + 1))
  *     ans.set_active_group_idx(0)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_ans, __pyx_n_s_set_active_group_idx); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3476,8 +3476,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_2create_windows(CYTHON_UNUSED P
  *         ans.add_window(Window(i + 1))
  *     ans.set_active_group_idx(0)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -3485,8 +3485,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_2create_windows(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly_tests/layout.py":57
- * 
- * 
+ *
+ *
  * def create_windows(layout, num=5):             # <<<<<<<<<<<<<<
  *     t = Tab()
  *     t.current_layout = layout
@@ -3513,8 +3513,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_2create_windows(CYTHON_UNUSED P
 }
 
 /* "smelly_tests/layout.py":69
- * 
- * 
+ *
+ *
  * def utils(self, q, windows):             # <<<<<<<<<<<<<<
  *     def ids():
  *         return [w.id for w in windows.groups]
@@ -3597,11 +3597,11 @@ static PyObject *__pyx_pw_12smelly_tests_6layout_5utils(PyObject *__pyx_self, Py
 }
 
 /* "smelly_tests/layout.py":70
- * 
+ *
  * def utils(self, q, windows):
  *     def ids():             # <<<<<<<<<<<<<<
  *         return [w.id for w in windows.groups]
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3640,7 +3640,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_ids(PyObject *__pyx_self
  * def utils(self, q, windows):
  *     def ids():
  *         return [w.id for w in windows.groups]             # <<<<<<<<<<<<<<
- * 
+ *
  *     def visible_ids():
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3702,11 +3702,11 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_ids(PyObject *__pyx_self
   goto __pyx_L0;
 
   /* "smelly_tests/layout.py":70
- * 
+ *
  * def utils(self, q, windows):
  *     def ids():             # <<<<<<<<<<<<<<
  *         return [w.id for w in windows.groups]
- * 
+ *
  */
 
   /* function exit code */
@@ -3725,10 +3725,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_ids(PyObject *__pyx_self
 
 /* "smelly_tests/layout.py":73
  *         return [w.id for w in windows.groups]
- * 
+ *
  *     def visible_ids():             # <<<<<<<<<<<<<<
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3765,10 +3765,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_2visible_ids(PyObject *_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/layout.py":74
- * 
+ *
  *     def visible_ids():
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def expect_ids(*a):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3845,10 +3845,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_2visible_ids(PyObject *_
 
   /* "smelly_tests/layout.py":73
  *         return [w.id for w in windows.groups]
- * 
+ *
  *     def visible_ids():             # <<<<<<<<<<<<<<
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  */
 
   /* function exit code */
@@ -3867,10 +3867,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_2visible_ids(PyObject *_
 
 /* "smelly_tests/layout.py":76
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  *     def expect_ids(*a):             # <<<<<<<<<<<<<<
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3911,10 +3911,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_4expect_ids(PyObject *__
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/layout.py":77
- * 
+ *
  *     def expect_ids(*a):
  *         self.assertEqual(tuple(ids()), a)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def check_visible():
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 77, __pyx_L1_error) }
@@ -3977,10 +3977,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_4expect_ids(PyObject *__
 
   /* "smelly_tests/layout.py":76
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  *     def expect_ids(*a):             # <<<<<<<<<<<<<<
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  */
 
   /* function exit code */
@@ -4002,7 +4002,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_4expect_ids(PyObject *__
 
 /* "smelly_tests/layout.py":79
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  *     def check_visible():             # <<<<<<<<<<<<<<
  *         if q.only_active_window_visible:
  *             self.ae(visible_ids(), {windows.active_group.id})
@@ -4046,7 +4046,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_6check_visible(PyObject 
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/layout.py":80
- * 
+ *
  *     def check_visible():
  *         if q.only_active_window_visible:             # <<<<<<<<<<<<<<
  *             self.ae(visible_ids(), {windows.active_group.id})
@@ -4134,7 +4134,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_6check_visible(PyObject 
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly_tests/layout.py":80
- * 
+ *
  *     def check_visible():
  *         if q.only_active_window_visible:             # <<<<<<<<<<<<<<
  *             self.ae(visible_ids(), {windows.active_group.id})
@@ -4147,7 +4147,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_6check_visible(PyObject 
  *             self.ae(visible_ids(), {windows.active_group.id})
  *         else:
  *             self.ae(visible_ids(), {gr.id for gr in windows.groups})             # <<<<<<<<<<<<<<
- * 
+ *
  *     return ids, visible_ids, expect_ids, check_visible
  */
   /*else*/ {
@@ -4273,7 +4273,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_6check_visible(PyObject 
 
   /* "smelly_tests/layout.py":79
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  *     def check_visible():             # <<<<<<<<<<<<<<
  *         if q.only_active_window_visible:
  *             self.ae(visible_ids(), {windows.active_group.id})
@@ -4299,8 +4299,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_5utils_6check_visible(PyObject 
 }
 
 /* "smelly_tests/layout.py":69
- * 
- * 
+ *
+ *
  * def utils(self, q, windows):             # <<<<<<<<<<<<<<
  *     def ids():
  *         return [w.id for w in windows.groups]
@@ -4336,11 +4336,11 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_4utils(CYTHON_UNUSED PyObject *
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_windows);
 
   /* "smelly_tests/layout.py":70
- * 
+ *
  * def utils(self, q, windows):
  *     def ids():             # <<<<<<<<<<<<<<
  *         return [w.id for w in windows.groups]
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_5utils_1ids, 0, __pyx_n_s_utils_locals_ids, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4350,10 +4350,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_4utils(CYTHON_UNUSED PyObject *
 
   /* "smelly_tests/layout.py":73
  *         return [w.id for w in windows.groups]
- * 
+ *
  *     def visible_ids():             # <<<<<<<<<<<<<<
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_5utils_3visible_ids, 0, __pyx_n_s_utils_locals_visible_ids, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4363,10 +4363,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_4utils(CYTHON_UNUSED PyObject *
 
   /* "smelly_tests/layout.py":76
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  *     def expect_ids(*a):             # <<<<<<<<<<<<<<
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_5utils_5expect_ids, 0, __pyx_n_s_utils_locals_expect_ids, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4375,7 +4375,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_4utils(CYTHON_UNUSED PyObject *
 
   /* "smelly_tests/layout.py":79
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  *     def check_visible():             # <<<<<<<<<<<<<<
  *         if q.only_active_window_visible:
  *             self.ae(visible_ids(), {windows.active_group.id})
@@ -4387,10 +4387,10 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_4utils(CYTHON_UNUSED PyObject *
 
   /* "smelly_tests/layout.py":85
  *             self.ae(visible_ids(), {gr.id for gr in windows.groups})
- * 
+ *
  *     return ids, visible_ids, expect_ids, check_visible             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
@@ -4412,8 +4412,8 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_4utils(CYTHON_UNUSED PyObject *
   goto __pyx_L0;
 
   /* "smelly_tests/layout.py":69
- * 
- * 
+ *
+ *
  * def utils(self, q, windows):             # <<<<<<<<<<<<<<
  *     def ids():
  *         return [w.id for w in windows.groups]
@@ -4434,7 +4434,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_4utils(CYTHON_UNUSED PyObject *
 }
 
 /* "smelly_tests/layout.py":89
- * 
+ *
  * class TestLayout(BaseTest):
  *     def do_ops_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
@@ -4628,15 +4628,15 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -4776,7 +4776,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_group_idx, 0)
  *         expect_ids(*range(1, len(windows) + 1))             # <<<<<<<<<<<<<<
  *         check_visible()
- * 
+ *
  */
   __pyx_t_9 = PyObject_Length(__pyx_v_windows); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 95, __pyx_L1_error)
   __pyx_t_1 = PyInt_FromSsize_t((__pyx_t_9 + 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
@@ -4804,7 +4804,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_group_idx, 0)
  *         expect_ids(*range(1, len(windows) + 1))
  *         check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test nth_window
  */
   __Pyx_INCREF(__pyx_v_check_visible);
@@ -4826,7 +4826,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":99
- * 
+ *
  *         # Test nth_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             q.activate_nth_window(windows, i)
@@ -5001,7 +5001,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *             self.ae(windows.active_group_idx, i)
  *             expect_ids(*range(1, len(windows) + 1))             # <<<<<<<<<<<<<<
  *             check_visible()
- * 
+ *
  */
     __pyx_t_11 = PyObject_Length(__pyx_v_windows); if (unlikely(__pyx_t_11 == ((Py_ssize_t)-1))) __PYX_ERR(0, 102, __pyx_L1_error)
     __pyx_t_6 = PyInt_FromSsize_t((__pyx_t_11 + 1)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -5029,7 +5029,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *             self.ae(windows.active_group_idx, i)
  *             expect_ids(*range(1, len(windows) + 1))
  *             check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test next_window
  */
     __Pyx_INCREF(__pyx_v_check_visible);
@@ -5051,7 +5051,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "smelly_tests/layout.py":99
- * 
+ *
  *         # Test nth_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             q.activate_nth_window(windows, i)
@@ -5061,7 +5061,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":106
- * 
+ *
  *         # Test next_window
  *         for i in range(2 * windows.num_groups):             # <<<<<<<<<<<<<<
  *             expected = (windows.active_group_idx + 1) % windows.num_groups
@@ -5230,7 +5230,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *             self.ae(windows.active_group_idx, expected)
  *             expect_ids(*range(1, len(windows) + 1))             # <<<<<<<<<<<<<<
  *             check_visible()
- * 
+ *
  */
     __pyx_t_11 = PyObject_Length(__pyx_v_windows); if (unlikely(__pyx_t_11 == ((Py_ssize_t)-1))) __PYX_ERR(0, 110, __pyx_L1_error)
     __pyx_t_7 = PyInt_FromSsize_t((__pyx_t_11 + 1)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 110, __pyx_L1_error)
@@ -5258,7 +5258,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *             self.ae(windows.active_group_idx, expected)
  *             expect_ids(*range(1, len(windows) + 1))
  *             check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test move_window
  */
     __Pyx_INCREF(__pyx_v_check_visible);
@@ -5280,7 +5280,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
     /* "smelly_tests/layout.py":106
- * 
+ *
  *         # Test next_window
  *         for i in range(2 * windows.num_groups):             # <<<<<<<<<<<<<<
  *             expected = (windows.active_group_idx + 1) % windows.num_groups
@@ -5290,7 +5290,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/layout.py":114
- * 
+ *
  *         # Test move_window
  *         windows.set_active_group_idx(0)             # <<<<<<<<<<<<<<
  *         expect_ids(1, 2, 3, 4, 5)
@@ -5565,7 +5565,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         q.move_window(windows, 3)
  *         expect_ids(*range(1, len(windows) + 1))             # <<<<<<<<<<<<<<
  *         check_visible()
- * 
+ *
  */
   __pyx_t_9 = PyObject_Length(__pyx_v_windows); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 122, __pyx_L1_error)
   __pyx_t_6 = PyInt_FromSsize_t((__pyx_t_9 + 1)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 122, __pyx_L1_error)
@@ -5593,7 +5593,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         q.move_window(windows, 3)
  *         expect_ids(*range(1, len(windows) + 1))
  *         check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test add_window
  */
   __Pyx_INCREF(__pyx_v_check_visible);
@@ -5615,7 +5615,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/layout.py":126
- * 
+ *
  *         # Test add_window
  *         windows.set_active_group_idx(4)             # <<<<<<<<<<<<<<
  *         q.add_window(windows, Window(6))
@@ -5840,7 +5840,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_group_idx, 5)
  *         expect_ids(*range(1, windows.num_groups + 1))             # <<<<<<<<<<<<<<
  *         check_visible()
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_windows, __pyx_n_s_num_groups); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -5870,7 +5870,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_group_idx, 5)
  *         expect_ids(*range(1, windows.num_groups + 1))
  *         check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test remove_window
  */
   __Pyx_INCREF(__pyx_v_check_visible);
@@ -5892,7 +5892,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/layout.py":134
- * 
+ *
  *         # Test remove_window
  *         prev_window = windows.active_window             # <<<<<<<<<<<<<<
  *         windows.set_active_group_idx(3)
@@ -6083,7 +6083,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_window, prev_window)
  *         check_visible()             # <<<<<<<<<<<<<<
  *         expect_ids(1, 2, 3, 5, 6)
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_check_visible);
   __pyx_t_6 = __pyx_v_check_visible; __pyx_t_2 = NULL;
@@ -6107,7 +6107,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_window, prev_window)
  *         check_visible()
  *         expect_ids(1, 2, 3, 5, 6)             # <<<<<<<<<<<<<<
- * 
+ *
  *         windows.set_active_group_idx(0)
  */
   __pyx_t_7 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 140, __pyx_L1_error)
@@ -6116,7 +6116,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
 
   /* "smelly_tests/layout.py":142
  *         expect_ids(1, 2, 3, 5, 6)
- * 
+ *
  *         windows.set_active_group_idx(0)             # <<<<<<<<<<<<<<
  *         to_remove = windows.active_window
  *         windows.set_active_group_idx(3)
@@ -6141,7 +6141,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/layout.py":143
- * 
+ *
  *         windows.set_active_group_idx(0)
  *         to_remove = windows.active_window             # <<<<<<<<<<<<<<
  *         windows.set_active_group_idx(3)
@@ -6269,7 +6269,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_group_idx, 3)
  *         check_visible()             # <<<<<<<<<<<<<<
  *         expect_ids(2, 3, 5, 6)
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_check_visible);
   __pyx_t_6 = __pyx_v_check_visible; __pyx_t_3 = NULL;
@@ -6293,7 +6293,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *         self.ae(windows.active_group_idx, 3)
  *         check_visible()
  *         expect_ids(2, 3, 5, 6)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test set_active_window
  */
   __pyx_t_7 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 148, __pyx_L1_error)
@@ -6301,7 +6301,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/layout.py":151
- * 
+ *
  *         # Test set_active_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             windows.set_active_group_idx(i)
@@ -6386,7 +6386,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *             windows.set_active_group_idx(i)
  *             self.ae(i, windows.active_group_idx)             # <<<<<<<<<<<<<<
  *             check_visible()
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -6445,7 +6445,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
  *             windows.set_active_group_idx(i)
  *             self.ae(i, windows.active_group_idx)
  *             check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def do_overlay_test(self, q):
  */
     __Pyx_INCREF(__pyx_v_check_visible);
@@ -6467,7 +6467,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "smelly_tests/layout.py":151
- * 
+ *
  *         # Test set_active_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             windows.set_active_group_idx(i)
@@ -6477,7 +6477,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/layout.py":89
- * 
+ *
  * class TestLayout(BaseTest):
  *     def do_ops_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
@@ -6513,7 +6513,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_do_ops_test(CYTHON
 
 /* "smelly_tests/layout.py":156
  *             check_visible()
- * 
+ *
  *     def do_overlay_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
  *         ids, visible_ids, expect_ids, check_visible = utils(self, q, windows)
@@ -6615,11 +6615,11 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __Pyx_RefNannySetupContext("do_overlay_test", 0);
 
   /* "smelly_tests/layout.py":157
- * 
+ *
  *     def do_overlay_test(self, q):
  *         windows = create_windows(q)             # <<<<<<<<<<<<<<
  *         ids, visible_ids, expect_ids, check_visible = utils(self, q, windows)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_create_windows); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6645,7 +6645,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *     def do_overlay_test(self, q):
  *         windows = create_windows(q)
  *         ids, visible_ids, expect_ids, check_visible = utils(self, q, windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test add_window
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_utils); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
@@ -6708,15 +6708,15 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
@@ -6767,7 +6767,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __pyx_t_6 = 0;
 
   /* "smelly_tests/layout.py":161
- * 
+ *
  *         # Test add_window
  *         w = Window(len(windows) + 1)             # <<<<<<<<<<<<<<
  *         before = windows.active_group_idx
@@ -6983,7 +6983,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         self.ae(w, windows.active_window)
  *         expect_ids(1, 2, 3, 4, 5)             # <<<<<<<<<<<<<<
  *         check_visible()
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -6993,7 +6993,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         self.ae(w, windows.active_window)
  *         expect_ids(1, 2, 3, 4, 5)
  *         check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test layout
  */
   __Pyx_INCREF(__pyx_v_check_visible);
@@ -7015,7 +7015,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/layout.py":172
- * 
+ *
  *         # Test layout
  *         q(windows)             # <<<<<<<<<<<<<<
  *         expect_ids(1, 2, 3, 4, 5)
@@ -7137,7 +7137,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         windows.add_window(w)
  *         expect_ids(1, 2, 3, 4, 5, 6)             # <<<<<<<<<<<<<<
  *         self.ae(windows.active_group_idx, windows.num_groups - 1)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7147,7 +7147,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         windows.add_window(w)
  *         expect_ids(1, 2, 3, 4, 5, 6)
  *         self.ae(windows.active_group_idx, windows.num_groups - 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test nth_window
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
@@ -7211,7 +7211,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/layout.py":181
- * 
+ *
  *         # Test nth_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             q.activate_nth_window(windows, i)
@@ -7470,7 +7470,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *                 self.ae(windows.active_window.id, overlay_window_id)
  *             expect_ids(1, 2, 3, 4, 5, 6)             # <<<<<<<<<<<<<<
  *             check_visible()
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -7480,7 +7480,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *                 self.ae(windows.active_window.id, overlay_window_id)
  *             expect_ids(1, 2, 3, 4, 5, 6)
  *             check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test next_window
  */
     __Pyx_INCREF(__pyx_v_check_visible);
@@ -7502,7 +7502,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly_tests/layout.py":181
- * 
+ *
  *         # Test nth_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             q.activate_nth_window(windows, i)
@@ -7512,7 +7512,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/layout.py":190
- * 
+ *
  *         # Test next_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             expected = (windows.active_group_idx + 1) % windows.num_groups
@@ -7678,7 +7678,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *             self.ae(windows.active_group_idx, expected)
  *             expect_ids(1, 2, 3, 4, 5, 6)             # <<<<<<<<<<<<<<
  *             check_visible()
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 194, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -7688,7 +7688,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *             self.ae(windows.active_group_idx, expected)
  *             expect_ids(1, 2, 3, 4, 5, 6)
  *             check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test move_window
  */
     __Pyx_INCREF(__pyx_v_check_visible);
@@ -7710,7 +7710,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "smelly_tests/layout.py":190
- * 
+ *
  *         # Test next_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             expected = (windows.active_group_idx + 1) % windows.num_groups
@@ -7720,7 +7720,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/layout.py":198
- * 
+ *
  *         # Test move_window
  *         windows.set_active_group_idx(overlaid_group)             # <<<<<<<<<<<<<<
  *         expect_ids(1, 2, 3, 4, 5, 6)
@@ -8058,7 +8058,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         q.move_window(windows, 3)
  *         expect_ids(1, 2, 3, 4, 5, 6)             # <<<<<<<<<<<<<<
  *         check_visible()
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8068,7 +8068,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         q.move_window(windows, 3)
  *         expect_ids(1, 2, 3, 4, 5, 6)
  *         check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test set_active_window
  */
   __Pyx_INCREF(__pyx_v_check_visible);
@@ -8090,7 +8090,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/layout.py":211
- * 
+ *
  *         # Test set_active_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             windows.set_active_group_idx(i)
@@ -8247,7 +8247,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *             if i == overlaid_group:
  *                 self.ae(windows.active_window.id, overlay_window_id)             # <<<<<<<<<<<<<<
  *             check_visible()
- * 
+ *
  */
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -8318,7 +8318,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *             if i == overlaid_group:
  *                 self.ae(windows.active_window.id, overlay_window_id)
  *             check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test remove_window
  */
     __Pyx_INCREF(__pyx_v_check_visible);
@@ -8340,7 +8340,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "smelly_tests/layout.py":211
- * 
+ *
  *         # Test set_active_window
  *         for i in range(windows.num_groups):             # <<<<<<<<<<<<<<
  *             windows.set_active_group_idx(i)
@@ -8350,7 +8350,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/layout.py":219
- * 
+ *
  *         # Test remove_window
  *         expect_ids(1, 2, 3, 4, 5, 6)             # <<<<<<<<<<<<<<
  *         windows.set_active_group_idx(overlaid_group)
@@ -8540,7 +8540,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         self.ae(windows.active_window.id, 1)
  *         expect_ids(1, 2, 3, 4, 5, 6)             # <<<<<<<<<<<<<<
  *         check_visible()
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_Call(__pyx_v_expect_ids, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8550,7 +8550,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
  *         self.ae(windows.active_window.id, 1)
  *         expect_ids(1, 2, 3, 4, 5, 6)
  *         check_visible()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_layout_operations(self):
  */
   __Pyx_INCREF(__pyx_v_check_visible);
@@ -8573,7 +8573,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
 
   /* "smelly_tests/layout.py":156
  *             check_visible()
- * 
+ *
  *     def do_overlay_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
  *         ids, visible_ids, expect_ids, check_visible = utils(self, q, windows)
@@ -8610,7 +8610,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_2do_overlay_test(C
 
 /* "smelly_tests/layout.py":227
  *         check_visible()
- * 
+ *
  *     def test_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -8647,7 +8647,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_4test_layout_opera
   __Pyx_RefNannySetupContext("test_layout_operations", 0);
 
   /* "smelly_tests/layout.py":228
- * 
+ *
  *     def test_layout_operations(self):
  *         for layout_class in (Stack, Horizontal, Tall, Grid):             # <<<<<<<<<<<<<<
  *             q = create_layout(layout_class)
@@ -8693,7 +8693,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_4test_layout_opera
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)             # <<<<<<<<<<<<<<
  *             self.do_ops_test(q)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_create_layout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -8719,7 +8719,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_4test_layout_opera
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
  *             self.do_ops_test(q)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_overlay_layout_operations(self):
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_do_ops_test); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
@@ -8742,7 +8742,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_4test_layout_opera
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly_tests/layout.py":228
- * 
+ *
  *     def test_layout_operations(self):
  *         for layout_class in (Stack, Horizontal, Tall, Grid):             # <<<<<<<<<<<<<<
  *             q = create_layout(layout_class)
@@ -8753,7 +8753,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_4test_layout_opera
 
   /* "smelly_tests/layout.py":227
  *         check_visible()
- * 
+ *
  *     def test_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -8780,7 +8780,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_4test_layout_opera
 
 /* "smelly_tests/layout.py":232
  *             self.do_ops_test(q)
- * 
+ *
  *     def test_overlay_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -8817,7 +8817,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_6test_overlay_layo
   __Pyx_RefNannySetupContext("test_overlay_layout_operations", 0);
 
   /* "smelly_tests/layout.py":233
- * 
+ *
  *     def test_overlay_layout_operations(self):
  *         for layout_class in (Stack, Horizontal, Tall, Grid):             # <<<<<<<<<<<<<<
  *             q = create_layout(layout_class)
@@ -8863,7 +8863,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_6test_overlay_layo
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)             # <<<<<<<<<<<<<<
  *             self.do_overlay_test(q)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_create_layout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 234, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -8889,7 +8889,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_6test_overlay_layo
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
  *             self.do_overlay_test(q)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_splits(self):
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_do_overlay_test); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 235, __pyx_L1_error)
@@ -8912,7 +8912,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_6test_overlay_layo
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "smelly_tests/layout.py":233
- * 
+ *
  *     def test_overlay_layout_operations(self):
  *         for layout_class in (Stack, Horizontal, Tall, Grid):             # <<<<<<<<<<<<<<
  *             q = create_layout(layout_class)
@@ -8923,7 +8923,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_6test_overlay_layo
 
   /* "smelly_tests/layout.py":232
  *             self.do_ops_test(q)
- * 
+ *
  *     def test_overlay_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -8950,7 +8950,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_6test_overlay_layo
 
 /* "smelly_tests/layout.py":237
  *             self.do_overlay_test(q)
- * 
+ *
  *     def test_splits(self):             # <<<<<<<<<<<<<<
  *         q = create_layout(Splits)
  *         all_windows = create_windows(q, num=0)
@@ -8990,7 +8990,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_8test_splits(CYTHO
   __Pyx_RefNannySetupContext("test_splits", 0);
 
   /* "smelly_tests/layout.py":238
- * 
+ *
  *     def test_splits(self):
  *         q = create_layout(Splits)             # <<<<<<<<<<<<<<
  *         all_windows = create_windows(q, num=0)
@@ -10287,7 +10287,7 @@ static PyObject *__pyx_pf_12smelly_tests_6layout_10TestLayout_8test_splits(CYTHO
 
   /* "smelly_tests/layout.py":237
  *             self.do_overlay_test(q)
- * 
+ *
  *     def test_splits(self):             # <<<<<<<<<<<<<<
  *         q = create_layout(Splits)
  *         all_windows = create_windows(q, num=0)
@@ -10679,11 +10679,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__2);
 
   /* "smelly_tests/layout.py":70
- * 
+ *
  * def utils(self, q, windows):
  *     def ids():             # <<<<<<<<<<<<<<
  *         return [w.id for w in windows.groups]
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_w); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -10692,10 +10692,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":73
  *         return [w.id for w in windows.groups]
- * 
+ *
  *     def visible_ids():             # <<<<<<<<<<<<<<
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(1, __pyx_n_s_gr); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -10704,10 +10704,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":76
  *         return {gr.id for gr in windows.groups if gr.is_visible_in_layout}
- * 
+ *
  *     def expect_ids(*a):             # <<<<<<<<<<<<<<
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  */
   __pyx_tuple__7 = PyTuple_Pack(1, __pyx_n_s_a); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
@@ -10716,7 +10716,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":79
  *         self.assertEqual(tuple(ids()), a)
- * 
+ *
  *     def check_visible():             # <<<<<<<<<<<<<<
  *         if q.only_active_window_visible:
  *             self.ae(visible_ids(), {windows.active_group.id})
@@ -10752,7 +10752,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(windows.active_window, prev_window)
  *         check_visible()
  *         expect_ids(1, 2, 3, 5, 6)             # <<<<<<<<<<<<<<
- * 
+ *
  *         windows.set_active_group_idx(0)
  */
   __pyx_tuple__13 = PyTuple_Pack(5, __pyx_int_1, __pyx_int_2, __pyx_int_3, __pyx_int_5, __pyx_int_6); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 140, __pyx_L1_error)
@@ -10763,7 +10763,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(windows.active_group_idx, 3)
  *         check_visible()
  *         expect_ids(2, 3, 5, 6)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test set_active_window
  */
   __pyx_tuple__14 = PyTuple_Pack(4, __pyx_int_2, __pyx_int_3, __pyx_int_5, __pyx_int_6); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 148, __pyx_L1_error)
@@ -10775,7 +10775,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         windows.add_window(w)
  *         expect_ids(1, 2, 3, 4, 5, 6)             # <<<<<<<<<<<<<<
  *         self.ae(windows.active_group_idx, windows.num_groups - 1)
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(6, __pyx_int_1, __pyx_int_2, __pyx_int_3, __pyx_int_4, __pyx_int_5, __pyx_int_6); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -10837,7 +10837,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__20);
 
   /* "smelly_tests/layout.py":14
- * 
+ *
  * class Window:
  *     def __init__(self, win_id, overlay_for=None, overlay_window_id=None):             # <<<<<<<<<<<<<<
  *         self.id = win_id
@@ -10853,10 +10853,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":24
  *         self.focused = False
- * 
+ *
  *     def focus_changed(self, focused):             # <<<<<<<<<<<<<<
  *         self.focused = focused
- * 
+ *
  */
   __pyx_tuple__25 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_focused); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
@@ -10865,10 +10865,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":27
  *         self.focused = focused
- * 
+ *
  *     def effective_border(self):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
@@ -10877,10 +10877,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":30
  *         return 1
- * 
+ *
  *     def effective_padding(self, edge):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
   __pyx_tuple__29 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_edge); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
@@ -10889,10 +10889,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":33
  *         return 1
- * 
+ *
  *     def effective_margin(self, edge, is_single_window=False):             # <<<<<<<<<<<<<<
  *         return 0 if is_single_window else 1
- * 
+ *
  */
   __pyx_tuple__31 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_edge, __pyx_n_s_is_single_window); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
@@ -10904,10 +10904,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":36
  *         return 0 if is_single_window else 1
- * 
+ *
  *     def set_visible_in_layout(self, val):             # <<<<<<<<<<<<<<
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  */
   __pyx_tuple__34 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_val); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
@@ -10916,10 +10916,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":39
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  *     def set_geometry(self, geometry):             # <<<<<<<<<<<<<<
  *         self.geometry = geometry
- * 
+ *
  */
   __pyx_tuple__36 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_geometry); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
@@ -10927,8 +10927,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_layout_py, __pyx_n_s_set_geometry, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 39, __pyx_L1_error)
 
   /* "smelly_tests/layout.py":43
- * 
- * 
+ *
+ *
  * def create_layout(cls, opts=None, border_width=2):             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -10942,11 +10942,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__40);
 
   /* "smelly_tests/layout.py":53
- * 
+ *
  * class Tab:
  *     def active_window_changed(self):             # <<<<<<<<<<<<<<
  *         self.current_layout.update_visibility(self.windows)
- * 
+ *
  */
   __pyx_tuple__41 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__41);
@@ -10954,8 +10954,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_layout_py, __pyx_n_s_active_window_changed, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 53, __pyx_L1_error)
 
   /* "smelly_tests/layout.py":57
- * 
- * 
+ *
+ *
  * def create_windows(layout, num=5):             # <<<<<<<<<<<<<<
  *     t = Tab()
  *     t.current_layout = layout
@@ -10969,8 +10969,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__45);
 
   /* "smelly_tests/layout.py":69
- * 
- * 
+ *
+ *
  * def utils(self, q, windows):             # <<<<<<<<<<<<<<
  *     def ids():
  *         return [w.id for w in windows.groups]
@@ -10981,7 +10981,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(3, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_layout_py, __pyx_n_s_utils, 69, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 69, __pyx_L1_error)
 
   /* "smelly_tests/layout.py":89
- * 
+ *
  * class TestLayout(BaseTest):
  *     def do_ops_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
@@ -10994,7 +10994,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":156
  *             check_visible()
- * 
+ *
  *     def do_overlay_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
  *         ids, visible_ids, expect_ids, check_visible = utils(self, q, windows)
@@ -11006,7 +11006,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":227
  *         check_visible()
- * 
+ *
  *     def test_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -11018,7 +11018,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":232
  *             self.do_ops_test(q)
- * 
+ *
  *     def test_overlay_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -11030,7 +11030,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/layout.py":237
  *             self.do_overlay_test(q)
- * 
+ *
  *     def test_splits(self):             # <<<<<<<<<<<<<<
  *         q = create_layout(Splits)
  *         all_windows = create_windows(q, num=0)
@@ -11348,7 +11348,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from smelly.config import defaults             # <<<<<<<<<<<<<<
  * from smelly.layout.interface import Grid, Horizontal, Splits, Stack, Tall
  * from smelly.types import WindowGeometry
@@ -11368,7 +11368,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/layout.py":5
- * 
+ *
  * from smelly.config import defaults
  * from smelly.layout.interface import Grid, Horizontal, Splits, Stack, Tall             # <<<<<<<<<<<<<<
  * from smelly.types import WindowGeometry
@@ -11442,7 +11442,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import WindowGeometry
  * from smelly.window import EdgeWidths             # <<<<<<<<<<<<<<
  * from smelly.window_list import WindowList, reset_group_id_counter
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11462,7 +11462,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import WindowGeometry
  * from smelly.window import EdgeWidths
  * from smelly.window_list import WindowList, reset_group_id_counter             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -11488,10 +11488,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":10
  * from smelly.window_list import WindowList, reset_group_id_counter
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11508,8 +11508,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":13
- * 
- * 
+ *
+ *
  * class Window:             # <<<<<<<<<<<<<<
  *     def __init__(self, win_id, overlay_for=None, overlay_window_id=None):
  *         self.id = win_id
@@ -11518,7 +11518,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly_tests/layout.py":14
- * 
+ *
  * class Window:
  *     def __init__(self, win_id, overlay_for=None, overlay_window_id=None):             # <<<<<<<<<<<<<<
  *         self.id = win_id
@@ -11532,10 +11532,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":24
  *         self.focused = False
- * 
+ *
  *     def focus_changed(self, focused):             # <<<<<<<<<<<<<<
  *         self.focused = focused
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_6Window_3focus_changed, 0, __pyx_n_s_Window_focus_changed, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11544,10 +11544,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":27
  *         self.focused = focused
- * 
+ *
  *     def effective_border(self):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_6Window_5effective_border, 0, __pyx_n_s_Window_effective_border, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11556,10 +11556,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":30
  *         return 1
- * 
+ *
  *     def effective_padding(self, edge):             # <<<<<<<<<<<<<<
  *         return 1
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_6Window_7effective_padding, 0, __pyx_n_s_Window_effective_padding, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11568,10 +11568,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":33
  *         return 1
- * 
+ *
  *     def effective_margin(self, edge, is_single_window=False):             # <<<<<<<<<<<<<<
  *         return 0 if is_single_window else 1
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_6Window_9effective_margin, 0, __pyx_n_s_Window_effective_margin, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11581,10 +11581,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":36
  *         return 0 if is_single_window else 1
- * 
+ *
  *     def set_visible_in_layout(self, val):             # <<<<<<<<<<<<<<
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_6Window_11set_visible_in_layout, 0, __pyx_n_s_Window_set_visible_in_layout, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11593,10 +11593,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":39
  *         self.is_visible_in_layout = bool(val)
- * 
+ *
  *     def set_geometry(self, geometry):             # <<<<<<<<<<<<<<
  *         self.geometry = geometry
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_6Window_13set_geometry, 0, __pyx_n_s_Window_set_geometry, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11604,8 +11604,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/layout.py":13
- * 
- * 
+ *
+ *
  * class Window:             # <<<<<<<<<<<<<<
  *     def __init__(self, win_id, overlay_for=None, overlay_window_id=None):
  *         self.id = win_id
@@ -11617,8 +11617,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":43
- * 
- * 
+ *
+ *
  * def create_layout(cls, opts=None, border_width=2):             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -11630,8 +11630,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":52
- * 
- * 
+ *
+ *
  * class Tab:             # <<<<<<<<<<<<<<
  *     def active_window_changed(self):
  *         self.current_layout.update_visibility(self.windows)
@@ -11640,11 +11640,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly_tests/layout.py":53
- * 
+ *
  * class Tab:
  *     def active_window_changed(self):             # <<<<<<<<<<<<<<
  *         self.current_layout.update_visibility(self.windows)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_6layout_3Tab_1active_window_changed, 0, __pyx_n_s_Tab_active_window_changed, NULL, __pyx_n_s_smelly_tests_layout, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11652,8 +11652,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/layout.py":52
- * 
- * 
+ *
+ *
  * class Tab:             # <<<<<<<<<<<<<<
  *     def active_window_changed(self):
  *         self.current_layout.update_visibility(self.windows)
@@ -11665,8 +11665,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":57
- * 
- * 
+ *
+ *
  * def create_windows(layout, num=5):             # <<<<<<<<<<<<<<
  *     t = Tab()
  *     t.current_layout = layout
@@ -11678,8 +11678,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":69
- * 
- * 
+ *
+ *
  * def utils(self, q, windows):             # <<<<<<<<<<<<<<
  *     def ids():
  *         return [w.id for w in windows.groups]
@@ -11690,8 +11690,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/layout.py":88
- * 
- * 
+ *
+ *
  * class TestLayout(BaseTest):             # <<<<<<<<<<<<<<
  *     def do_ops_test(self, q):
  *         windows = create_windows(q)
@@ -11709,7 +11709,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/layout.py":89
- * 
+ *
  * class TestLayout(BaseTest):
  *     def do_ops_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
@@ -11722,7 +11722,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":156
  *             check_visible()
- * 
+ *
  *     def do_overlay_test(self, q):             # <<<<<<<<<<<<<<
  *         windows = create_windows(q)
  *         ids, visible_ids, expect_ids, check_visible = utils(self, q, windows)
@@ -11734,7 +11734,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":227
  *         check_visible()
- * 
+ *
  *     def test_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -11746,7 +11746,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":232
  *             self.do_ops_test(q)
- * 
+ *
  *     def test_overlay_layout_operations(self):             # <<<<<<<<<<<<<<
  *         for layout_class in (Stack, Horizontal, Tall, Grid):
  *             q = create_layout(layout_class)
@@ -11758,7 +11758,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/layout.py":237
  *             self.do_overlay_test(q)
- * 
+ *
  *     def test_splits(self):             # <<<<<<<<<<<<<<
  *         q = create_layout(Splits)
  *         all_windows = create_windows(q, num=0)
@@ -11769,8 +11769,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/layout.py":88
- * 
- * 
+ *
+ *
  * class TestLayout(BaseTest):             # <<<<<<<<<<<<<<
  *     def do_ops_test(self, q):
  *         windows = create_windows(q)
@@ -11786,7 +11786,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/layout.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -13131,8 +13131,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -13358,8 +13358,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

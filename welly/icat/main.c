@@ -1558,7 +1558,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/icat/main.py":137
- * 
+ *
  * if __name__ == '__main__':
  *     raise SystemExit('This should be run as kitten icat')             # <<<<<<<<<<<<<<
  * elif __name__ == '__doc__':
@@ -1858,7 +1858,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/icat/main.py":4
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * OPTIONS = '''\             # <<<<<<<<<<<<<<
  * --align
  * type=choices
@@ -1866,7 +1866,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_OPTIONS, __pyx_kp_s_align_type_choices_choices_cent) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
 
   /* "welly/icat/main.py":126
- * 
+ *
  * help_text = (
  *     'A cat like utility to display images in the terminal.'             # <<<<<<<<<<<<<<
  *     ' You can specify multiple image files and/or directories.'
@@ -1878,14 +1878,14 @@ if (!__Pyx_RefNanny) {
  *     ' automatically downloaded and displayed.'
  * )
  * usage = 'image-file-or-url-or-directory ...'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_usage, __pyx_kp_s_image_file_or_url_or_directory) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
 
   /* "welly/icat/main.py":136
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     raise SystemExit('This should be run as kitten icat')
  * elif __name__ == '__doc__':
@@ -1897,7 +1897,7 @@ if (!__Pyx_RefNanny) {
   if (unlikely(__pyx_t_2)) {
 
     /* "welly/icat/main.py":137
- * 
+ *
  * if __name__ == '__main__':
  *     raise SystemExit('This should be run as kitten icat')             # <<<<<<<<<<<<<<
  * elif __name__ == '__doc__':
@@ -1910,8 +1910,8 @@ if (!__Pyx_RefNanny) {
     __PYX_ERR(0, 137, __pyx_L1_error)
 
     /* "welly/icat/main.py":136
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     raise SystemExit('This should be run as kitten icat')
  * elif __name__ == '__doc__':
@@ -1923,7 +1923,7 @@ if (!__Pyx_RefNanny) {
  *     raise SystemExit('This should be run as kitten icat')
  * elif __name__ == '__doc__':             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1935,7 +1935,7 @@ if (!__Pyx_RefNanny) {
  *     raise SystemExit('This should be run as kitten icat')
  * elif __name__ == '__doc__':
  *     import sys             # <<<<<<<<<<<<<<
- * 
+ *
  *     from smelly.cli import CompletionSpec
  */
     __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
@@ -1945,9 +1945,9 @@ if (!__Pyx_RefNanny) {
 
     /* "welly/icat/main.py":141
  *     import sys
- * 
+ *
  *     from smelly.cli import CompletionSpec             # <<<<<<<<<<<<<<
- * 
+ *
  *     cd = sys.cli_docs  # type: ignore
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
@@ -1966,7 +1966,7 @@ if (!__Pyx_RefNanny) {
 
     /* "welly/icat/main.py":143
  *     from smelly.cli import CompletionSpec
- * 
+ *
  *     cd = sys.cli_docs  # type: ignore             # <<<<<<<<<<<<<<
  *     cd['usage'] = usage
  *     cd['options'] = lambda: OPTIONS.format()
@@ -1980,7 +1980,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/icat/main.py":144
- * 
+ *
  *     cd = sys.cli_docs  # type: ignore
  *     cd['usage'] = usage             # <<<<<<<<<<<<<<
  *     cd['options'] = lambda: OPTIONS.format()
@@ -2059,14 +2059,14 @@ if (!__Pyx_RefNanny) {
  *     raise SystemExit('This should be run as kitten icat')
  * elif __name__ == '__doc__':             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
   }
 
   /* "welly/icat/main.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

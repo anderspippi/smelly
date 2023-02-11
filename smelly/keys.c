@@ -1469,8 +1469,8 @@ static PyObject *__pyx_codeobj__6;
 /* Late includes */
 
 /* "smelly/keys.py":13
- * 
- * 
+ *
+ *
  * def keyboard_mode_name(screen: ScreenType) -> str:             # <<<<<<<<<<<<<<
  *     flags = screen.current_key_encoding_flags()
  *     if flags:
@@ -1504,7 +1504,7 @@ static PyObject *__pyx_pf_6smelly_4keys_keyboard_mode_name(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("keyboard_mode_name", 0);
 
   /* "smelly/keys.py":14
- * 
+ *
  * def keyboard_mode_name(screen: ScreenType) -> str:
  *     flags = screen.current_key_encoding_flags()             # <<<<<<<<<<<<<<
  *     if flags:
@@ -1545,7 +1545,7 @@ static PyObject *__pyx_pf_6smelly_4keys_keyboard_mode_name(CYTHON_UNUSED PyObjec
  *     if flags:
  *         return 'smelly'             # <<<<<<<<<<<<<<
  *     return 'application' if screen.cursor_key_mode else 'normal'
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_n_s_smelly);
@@ -1565,8 +1565,8 @@ static PyObject *__pyx_pf_6smelly_4keys_keyboard_mode_name(CYTHON_UNUSED PyObjec
  *     if flags:
  *         return 'smelly'
  *     return 'application' if screen.cursor_key_mode else 'normal'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_screen, __pyx_n_s_cursor_key_mode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
@@ -1585,8 +1585,8 @@ static PyObject *__pyx_pf_6smelly_4keys_keyboard_mode_name(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "smelly/keys.py":13
- * 
- * 
+ *
+ *
  * def keyboard_mode_name(screen: ScreenType) -> str:             # <<<<<<<<<<<<<<
  *     flags = screen.current_key_encoding_flags()
  *     if flags:
@@ -1607,8 +1607,8 @@ static PyObject *__pyx_pf_6smelly_4keys_keyboard_mode_name(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/keys.py":20
- * 
- * 
+ *
+ *
  * def get_shortcut(keymap: Union[KeyMap, SequenceMap],             # <<<<<<<<<<<<<<
  *                  ev: KeyEvent) -> Union[str, SubSequenceMap, None]:
  *     mods = ev.mods & mod_mask
@@ -1976,7 +1976,7 @@ static PyObject *__pyx_pf_6smelly_4keys_2get_shortcut(CYTHON_UNUSED PyObject *__
  *     if ans is None:
  *         ans = keymap.get(SingleKey(mods, True, ev.native_key))             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_keymap, __pyx_n_s_get); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 30, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -2066,8 +2066,8 @@ static PyObject *__pyx_pf_6smelly_4keys_2get_shortcut(CYTHON_UNUSED PyObject *__
  *     if ans is None:
  *         ans = keymap.get(SingleKey(mods, True, ev.native_key))
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2075,8 +2075,8 @@ static PyObject *__pyx_pf_6smelly_4keys_2get_shortcut(CYTHON_UNUSED PyObject *__
   goto __pyx_L0;
 
   /* "smelly/keys.py":20
- * 
- * 
+ *
+ *
  * def get_shortcut(keymap: Union[KeyMap, SequenceMap],             # <<<<<<<<<<<<<<
  *                  ev: KeyEvent) -> Union[str, SubSequenceMap, None]:
  *     mods = ev.mods & mod_mask
@@ -2103,8 +2103,8 @@ static PyObject *__pyx_pf_6smelly_4keys_2get_shortcut(CYTHON_UNUSED PyObject *__
 }
 
 /* "smelly/keys.py":34
- * 
- * 
+ *
+ *
  * def shortcut_matches(s: SingleKey, ev: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *     mods = ev.mods & mod_mask
  *     smods = s.mods & mod_mask
@@ -2192,7 +2192,7 @@ static PyObject *__pyx_pf_6smelly_4keys_4shortcut_matches(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("shortcut_matches", 0);
 
   /* "smelly/keys.py":35
- * 
+ *
  * def shortcut_matches(s: SingleKey, ev: KeyEvent) -> bool:
  *     mods = ev.mods & mod_mask             # <<<<<<<<<<<<<<
  *     smods = s.mods & mod_mask
@@ -2436,8 +2436,8 @@ static PyObject *__pyx_pf_6smelly_4keys_4shortcut_matches(CYTHON_UNUSED PyObject
   goto __pyx_L0;
 
   /* "smelly/keys.py":34
- * 
- * 
+ *
+ *
  * def shortcut_matches(s: SingleKey, ev: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *     mods = ev.mods & mod_mask
  *     smods = s.mods & mod_mask
@@ -2563,8 +2563,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/keys.py":13
- * 
- * 
+ *
+ *
  * def keyboard_mode_name(screen: ScreenType) -> str:             # <<<<<<<<<<<<<<
  *     flags = screen.current_key_encoding_flags()
  *     if flags:
@@ -2575,8 +2575,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_keys_py, __pyx_n_s_keyboard_mode_name, 13, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 13, __pyx_L1_error)
 
   /* "smelly/keys.py":20
- * 
- * 
+ *
+ *
  * def get_shortcut(keymap: Union[KeyMap, SequenceMap],             # <<<<<<<<<<<<<<
  *                  ev: KeyEvent) -> Union[str, SubSequenceMap, None]:
  *     mods = ev.mods & mod_mask
@@ -2587,8 +2587,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_keys_py, __pyx_n_s_get_shortcut, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 20, __pyx_L1_error)
 
   /* "smelly/keys.py":34
- * 
- * 
+ *
+ *
  * def shortcut_matches(s: SingleKey, ev: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *     mods = ev.mods & mod_mask
  *     smods = s.mods & mod_mask
@@ -2881,9 +2881,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/keys.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .fast_data_types import GLFW_MOD_ALT, GLFW_MOD_CONTROL, GLFW_MOD_HYPER, GLFW_MOD_META, GLFW_MOD_SHIFT, GLFW_MOD_SUPER, KeyEvent, SingleKey
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2902,7 +2902,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/keys.py":6
  * from typing import Union
- * 
+ *
  * from .fast_data_types import GLFW_MOD_ALT, GLFW_MOD_CONTROL, GLFW_MOD_HYPER, GLFW_MOD_META, GLFW_MOD_SHIFT, GLFW_MOD_SUPER, KeyEvent, SingleKey             # <<<<<<<<<<<<<<
  * from .options.utils import KeyMap, SequenceMap, SubSequenceMap
  * from .typing import ScreenType
@@ -2971,11 +2971,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/keys.py":7
- * 
+ *
  * from .fast_data_types import GLFW_MOD_ALT, GLFW_MOD_CONTROL, GLFW_MOD_HYPER, GLFW_MOD_META, GLFW_MOD_SHIFT, GLFW_MOD_SUPER, KeyEvent, SingleKey
  * from .options.utils import KeyMap, SequenceMap, SubSequenceMap             # <<<<<<<<<<<<<<
  * from .typing import ScreenType
- * 
+ *
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3009,7 +3009,7 @@ if (!__Pyx_RefNanny) {
  * from .fast_data_types import GLFW_MOD_ALT, GLFW_MOD_CONTROL, GLFW_MOD_HYPER, GLFW_MOD_META, GLFW_MOD_SHIFT, GLFW_MOD_SUPER, KeyEvent, SingleKey
  * from .options.utils import KeyMap, SequenceMap, SubSequenceMap
  * from .typing import ScreenType             # <<<<<<<<<<<<<<
- * 
+ *
  * mod_mask = GLFW_MOD_ALT | GLFW_MOD_CONTROL | GLFW_MOD_SHIFT | GLFW_MOD_SUPER | GLFW_MOD_META | GLFW_MOD_HYPER
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -3028,10 +3028,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/keys.py":10
  * from .typing import ScreenType
- * 
+ *
  * mod_mask = GLFW_MOD_ALT | GLFW_MOD_CONTROL | GLFW_MOD_SHIFT | GLFW_MOD_SUPER | GLFW_MOD_META | GLFW_MOD_HYPER             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_GLFW_MOD_ALT); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3069,8 +3069,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/keys.py":13
- * 
- * 
+ *
+ *
  * def keyboard_mode_name(screen: ScreenType) -> str:             # <<<<<<<<<<<<<<
  *     flags = screen.current_key_encoding_flags()
  *     if flags:
@@ -3090,8 +3090,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/keys.py":20
- * 
- * 
+ *
+ *
  * def get_shortcut(keymap: Union[KeyMap, SequenceMap],             # <<<<<<<<<<<<<<
  *                  ev: KeyEvent) -> Union[str, SubSequenceMap, None]:
  *     mods = ev.mods & mod_mask
@@ -3120,7 +3120,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/keys.py":21
- * 
+ *
  * def get_shortcut(keymap: Union[KeyMap, SequenceMap],
  *                  ev: KeyEvent) -> Union[str, SubSequenceMap, None]:             # <<<<<<<<<<<<<<
  *     mods = ev.mods & mod_mask
@@ -3153,8 +3153,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/keys.py":20
- * 
- * 
+ *
+ *
  * def get_shortcut(keymap: Union[KeyMap, SequenceMap],             # <<<<<<<<<<<<<<
  *                  ev: KeyEvent) -> Union[str, SubSequenceMap, None]:
  *     mods = ev.mods & mod_mask
@@ -3167,8 +3167,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/keys.py":34
- * 
- * 
+ *
+ *
  * def shortcut_matches(s: SingleKey, ev: KeyEvent) -> bool:             # <<<<<<<<<<<<<<
  *     mods = ev.mods & mod_mask
  *     smods = s.mods & mod_mask
@@ -3194,7 +3194,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/keys.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

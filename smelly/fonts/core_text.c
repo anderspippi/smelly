@@ -970,8 +970,8 @@ struct __pyx_obj_6smelly_5fonts_9core_text___pyx_scope_struct__list_fonts;
 struct __pyx_obj_6smelly_5fonts_9core_text___pyx_scope_struct_1_find_best_match;
 
 /* "smelly/fonts/core_text.py":41
- * 
- * 
+ *
+ *
  * def list_fonts() -> Generator[ListedFont, None, None]:             # <<<<<<<<<<<<<<
  *     for fd in coretext_all_fonts():
  *         f = fd['family']
@@ -989,8 +989,8 @@ struct __pyx_obj_6smelly_5fonts_9core_text___pyx_scope_struct__list_fonts {
 
 
 /* "smelly/fonts/core_text.py":55
- * 
- * 
+ *
+ *
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:             # <<<<<<<<<<<<<<
  *     q = re.sub(r'\s+', ' ', family.lower())
  *     font_map = all_fonts_map()
@@ -1933,8 +1933,8 @@ static PyObject *__pyx_codeobj__28;
 /* Late includes */
 
 /* "smelly/fonts/core_text.py":21
- * 
- * 
+ *
+ *
  * def create_font_map(all_fonts: Iterable[CoreTextFont]) -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: FontMap = {'family_map': {}, 'ps_map': {}, 'full_map': {}}
  *     for x in all_fonts:
@@ -1982,7 +1982,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_create_font_map(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("create_font_map", 0);
 
   /* "smelly/fonts/core_text.py":22
- * 
+ *
  * def create_font_map(all_fonts: Iterable[CoreTextFont]) -> FontMap:
  *     ans: FontMap = {'family_map': {}, 'ps_map': {}, 'full_map': {}}             # <<<<<<<<<<<<<<
  *     for x in all_fonts:
@@ -2313,7 +2313,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_create_font_map(CYTHON_UNUSE
  *         ans['ps_map'].setdefault(ps, []).append(x)
  *         ans['full_map'].setdefault(f'{f} {s}', []).append(x)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __pyx_t_10 = __Pyx_PyDict_GetItem(__pyx_v_ans, __pyx_n_s_full_map); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 29, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
@@ -2413,8 +2413,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_create_font_map(CYTHON_UNUSE
  *         ans['ps_map'].setdefault(ps, []).append(x)
  *         ans['full_map'].setdefault(f'{f} {s}', []).append(x)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2422,8 +2422,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_create_font_map(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/fonts/core_text.py":21
- * 
- * 
+ *
+ *
  * def create_font_map(all_fonts: Iterable[CoreTextFont]) -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: FontMap = {'family_map': {}, 'ps_map': {}, 'full_map': {}}
  *     for x in all_fonts:
@@ -2452,8 +2452,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_create_font_map(CYTHON_UNUSE
 }
 
 /* "smelly/fonts/core_text.py":33
- * 
- * 
+ *
+ *
  * def all_fonts_map() -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: Optional[FontMap] = getattr(all_fonts_map, 'ans', None)
  *     if ans is None:
@@ -2491,7 +2491,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_2all_fonts_map(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("all_fonts_map", 0);
 
   /* "smelly/fonts/core_text.py":34
- * 
+ *
  * def all_fonts_map() -> FontMap:
  *     ans: Optional[FontMap] = getattr(all_fonts_map, 'ans', None)             # <<<<<<<<<<<<<<
  *     if ans is None:
@@ -2566,7 +2566,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_2all_fonts_map(CYTHON_UNUSED
  *         ans = create_font_map(coretext_all_fonts())
  *         setattr(all_fonts_map, 'ans', ans)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_all_fonts_map); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -2586,8 +2586,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_2all_fonts_map(CYTHON_UNUSED
  *         ans = create_font_map(coretext_all_fonts())
  *         setattr(all_fonts_map, 'ans', ans)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2595,8 +2595,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_2all_fonts_map(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/fonts/core_text.py":33
- * 
- * 
+ *
+ *
  * def all_fonts_map() -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: Optional[FontMap] = getattr(all_fonts_map, 'ans', None)
  *     if ans is None:
@@ -2620,8 +2620,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_2all_fonts_map(CYTHON_UNUSED
 static PyObject *__pyx_gb_6smelly_5fonts_9core_text_6generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/fonts/core_text.py":41
- * 
- * 
+ *
+ *
  * def list_fonts() -> Generator[ListedFont, None, None]:             # <<<<<<<<<<<<<<
  *     for fd in coretext_all_fonts():
  *         f = fd['family']
@@ -2704,7 +2704,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_9core_text_6generator(__pyx_CoroutineOb
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 41, __pyx_L1_error)
 
   /* "smelly/fonts/core_text.py":42
- * 
+ *
  * def list_fonts() -> Generator[ListedFont, None, None]:
  *     for fd in coretext_all_fonts():             # <<<<<<<<<<<<<<
  *         f = fd['family']
@@ -2862,7 +2862,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_9core_text_6generator(__pyx_CoroutineOb
  *             fn = f'{f} {fd.get("style", "")}'.strip()
  *             is_mono = bool(fd['monospace'])             # <<<<<<<<<<<<<<
  *             yield {'family': f, 'full_name': fn, 'postscript_name': fd['postscript_name'] or '', 'is_monospace': is_mono}
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_cur_scope->__pyx_v_fd, __pyx_n_s_monospace); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -2879,8 +2879,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_9core_text_6generator(__pyx_CoroutineOb
  *             fn = f'{f} {fd.get("style", "")}'.strip()
  *             is_mono = bool(fd['monospace'])
  *             yield {'family': f, 'full_name': fn, 'postscript_name': fd['postscript_name'] or '', 'is_monospace': is_mono}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -2933,7 +2933,7 @@ static PyObject *__pyx_gb_6smelly_5fonts_9core_text_6generator(__pyx_CoroutineOb
     }
 
     /* "smelly/fonts/core_text.py":42
- * 
+ *
  * def list_fonts() -> Generator[ListedFont, None, None]:
  *     for fd in coretext_all_fonts():             # <<<<<<<<<<<<<<
  *         f = fd['family']
@@ -2944,8 +2944,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_9core_text_6generator(__pyx_CoroutineOb
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/fonts/core_text.py":41
- * 
- * 
+ *
+ *
  * def list_fonts() -> Generator[ListedFont, None, None]:             # <<<<<<<<<<<<<<
  *     for fd in coretext_all_fonts():
  *         f = fd['family']
@@ -2973,8 +2973,8 @@ static PyObject *__pyx_gb_6smelly_5fonts_9core_text_6generator(__pyx_CoroutineOb
 }
 
 /* "smelly/fonts/core_text.py":50
- * 
- * 
+ *
+ *
  * def find_font_features(postscript_name: str) -> Tuple[FontFeature, ...]:             # <<<<<<<<<<<<<<
  *     """Not Implemented"""
  *     return ()
@@ -3012,8 +3012,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_7find_font_features(CYTHON_U
  * def find_font_features(postscript_name: str) -> Tuple[FontFeature, ...]:
  *     """Not Implemented"""
  *     return ()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_empty_tuple);
@@ -3021,8 +3021,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_7find_font_features(CYTHON_U
   goto __pyx_L0;
 
   /* "smelly/fonts/core_text.py":50
- * 
- * 
+ *
+ *
  * def find_font_features(postscript_name: str) -> Tuple[FontFeature, ...]:             # <<<<<<<<<<<<<<
  *     """Not Implemented"""
  *     return ()
@@ -3036,8 +3036,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_7find_font_features(CYTHON_U
 }
 
 /* "smelly/fonts/core_text.py":55
- * 
- * 
+ *
+ *
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:             # <<<<<<<<<<<<<<
  *     q = re.sub(r'\s+', ' ', family.lower())
  *     font_map = all_fonts_map()
@@ -3145,7 +3145,7 @@ static PyObject *__pyx_pw_6smelly_5fonts_9core_text_10find_best_match(PyObject *
 
 /* "smelly/fonts/core_text.py":59
  *     font_map = all_fonts_map()
- * 
+ *
  *     def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:             # <<<<<<<<<<<<<<
  *         style_match = 1 if candidate['bold'] == bold and candidate['italic'] == italic else 0
  *         monospace_match = 1 if candidate['monospace'] else 0
@@ -3191,7 +3191,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_15find_best_match_score(PyOb
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/fonts/core_text.py":60
- * 
+ *
  *     def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:
  *         style_match = 1 if candidate['bold'] == bold and candidate['italic'] == italic else 0             # <<<<<<<<<<<<<<
  *         monospace_match = 1 if candidate['monospace'] else 0
@@ -3274,7 +3274,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_15find_best_match_score(PyOb
  *         # overflow
  *         weight_distance_from_medium = abs(candidate['weight'])             # <<<<<<<<<<<<<<
  *         return style_match, monospace_match, 1 if is_regular_width else 0, 1 - weight_distance_from_medium
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_candidate, __pyx_n_s_weight); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3288,7 +3288,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_15find_best_match_score(PyOb
  *         # overflow
  *         weight_distance_from_medium = abs(candidate['weight'])
  *         return style_match, monospace_match, 1 if is_regular_width else 0, 1 - weight_distance_from_medium             # <<<<<<<<<<<<<<
- * 
+ *
  *     # First look for an exact match
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3325,7 +3325,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_15find_best_match_score(PyOb
 
   /* "smelly/fonts/core_text.py":59
  *     font_map = all_fonts_map()
- * 
+ *
  *     def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:             # <<<<<<<<<<<<<<
  *         style_match = 1 if candidate['bold'] == bold and candidate['italic'] == italic else 0
  *         monospace_match = 1 if candidate['monospace'] else 0
@@ -3348,8 +3348,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_15find_best_match_score(PyOb
 }
 
 /* "smelly/fonts/core_text.py":55
- * 
- * 
+ *
+ *
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:             # <<<<<<<<<<<<<<
  *     q = re.sub(r'\s+', ' ', family.lower())
  *     font_map = all_fonts_map()
@@ -3395,11 +3395,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_italic);
 
   /* "smelly/fonts/core_text.py":56
- * 
+ *
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:
  *     q = re.sub(r'\s+', ' ', family.lower())             # <<<<<<<<<<<<<<
  *     font_map = all_fonts_map()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_re); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3465,7 +3465,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:
  *     q = re.sub(r'\s+', ' ', family.lower())
  *     font_map = all_fonts_map()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_all_fonts_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -3490,7 +3490,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
 
   /* "smelly/fonts/core_text.py":59
  *     font_map = all_fonts_map()
- * 
+ *
  *     def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:             # <<<<<<<<<<<<<<
  *         style_match = 1 if candidate['bold'] == bold and candidate['italic'] == italic else 0
  *         monospace_match = 1 if candidate['monospace'] else 0
@@ -3531,7 +3531,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
   __pyx_t_2 = 0;
 
   /* "smelly/fonts/core_text.py":69
- * 
+ *
  *     # First look for an exact match
  *     for selector in ('ps_map', 'full_map'):             # <<<<<<<<<<<<<<
  *         candidates = font_map[selector].get(q)
@@ -3619,7 +3619,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
  *             possible = sorted(candidates, key=score)[-1]
  *             if possible != ignore_face:             # <<<<<<<<<<<<<<
  *                 return possible
- * 
+ *
  */
       __pyx_t_3 = PyObject_RichCompare(__pyx_v_possible, __pyx_v_ignore_face, Py_NE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 73, __pyx_L1_error)
       __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 73, __pyx_L1_error)
@@ -3630,7 +3630,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
  *             possible = sorted(candidates, key=score)[-1]
  *             if possible != ignore_face:
  *                 return possible             # <<<<<<<<<<<<<<
- * 
+ *
  *     # Let CoreText choose the font if the family exists, otherwise
  */
         __Pyx_XDECREF(__pyx_r);
@@ -3644,7 +3644,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
  *             possible = sorted(candidates, key=score)[-1]
  *             if possible != ignore_face:             # <<<<<<<<<<<<<<
  *                 return possible
- * 
+ *
  */
       }
 
@@ -3658,7 +3658,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
     }
 
     /* "smelly/fonts/core_text.py":69
- * 
+ *
  *     # First look for an exact match
  *     for selector in ('ps_map', 'full_map'):             # <<<<<<<<<<<<<<
  *         candidates = font_map[selector].get(q)
@@ -3754,7 +3754,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
  *         q = 'menlo'
  *     candidates = font_map['family_map'][q]             # <<<<<<<<<<<<<<
  *     return sorted(candidates, key=score)[-1]
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_font_map, __pyx_n_s_family_map); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3768,8 +3768,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
  *         q = 'menlo'
  *     candidates = font_map['family_map'][q]
  *     return sorted(candidates, key=score)[-1]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 82, __pyx_L1_error)
@@ -3792,8 +3792,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/fonts/core_text.py":55
- * 
- * 
+ *
+ *
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:             # <<<<<<<<<<<<<<
  *     q = re.sub(r'\s+', ' ', family.lower())
  *     font_map = all_fonts_map()
@@ -3822,8 +3822,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_9find_best_match(CYTHON_UNUS
 }
 
 /* "smelly/fonts/core_text.py":85
- * 
- * 
+ *
+ *
  * def resolve_family(f: str, main_family: str, bold: bool = False, italic: bool = False) -> str:             # <<<<<<<<<<<<<<
  *     if (bold or italic) and f == 'auto':
  *         f = main_family
@@ -3942,7 +3942,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_11resolve_family(CYTHON_UNUS
   __Pyx_INCREF(__pyx_v_f);
 
   /* "smelly/fonts/core_text.py":86
- * 
+ *
  * def resolve_family(f: str, main_family: str, bold: bool = False, italic: bool = False) -> str:
  *     if (bold or italic) and f == 'auto':             # <<<<<<<<<<<<<<
  *         f = main_family
@@ -3977,7 +3977,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_11resolve_family(CYTHON_UNUS
     __Pyx_DECREF_SET(__pyx_v_f, __pyx_v_main_family);
 
     /* "smelly/fonts/core_text.py":86
- * 
+ *
  * def resolve_family(f: str, main_family: str, bold: bool = False, italic: bool = False) -> str:
  *     if (bold or italic) and f == 'auto':             # <<<<<<<<<<<<<<
  *         f = main_family
@@ -4003,7 +4003,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_11resolve_family(CYTHON_UNUS
  *     if f.lower() == 'monospace':
  *         f = 'Menlo'             # <<<<<<<<<<<<<<
  *     return f
- * 
+ *
  */
     __Pyx_INCREF(__pyx_n_s_Menlo);
     __Pyx_DECREF_SET(__pyx_v_f, __pyx_n_s_Menlo);
@@ -4021,8 +4021,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_11resolve_family(CYTHON_UNUS
  *     if f.lower() == 'monospace':
  *         f = 'Menlo'
  *     return f             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_f);
@@ -4030,8 +4030,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_11resolve_family(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/fonts/core_text.py":85
- * 
- * 
+ *
+ *
  * def resolve_family(f: str, main_family: str, bold: bool = False, italic: bool = False) -> str:             # <<<<<<<<<<<<<<
  *     if (bold or italic) and f == 'auto':
  *         f = main_family
@@ -4050,8 +4050,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_11resolve_family(CYTHON_UNUS
 }
 
 /* "smelly/fonts/core_text.py":93
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, CoreTextFont]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, CoreTextFont] = {}
  *     for bold, italic in sorted(attr_map):
@@ -4100,7 +4100,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_13get_font_files(CYTHON_UNUS
   __Pyx_RefNannySetupContext("get_font_files", 0);
 
   /* "smelly/fonts/core_text.py":94
- * 
+ *
  * def get_font_files(opts: Options) -> Dict[str, CoreTextFont]:
  *     ans: Dict[str, CoreTextFont] = {}             # <<<<<<<<<<<<<<
  *     for bold, italic in sorted(attr_map):
@@ -4150,11 +4150,11 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_13get_font_files(CYTHON_UNUS
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_6);
@@ -4379,7 +4379,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_13get_font_files(CYTHON_UNUS
  *         if key == 'medium':
  *             setattr(get_font_files, 'medium_family', face['family'])             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_get_font_files); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 102, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
@@ -4412,8 +4412,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_13get_font_files(CYTHON_UNUS
  *         if key == 'medium':
  *             setattr(get_font_files, 'medium_family', face['family'])
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -4421,8 +4421,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_13get_font_files(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/fonts/core_text.py":93
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, CoreTextFont]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, CoreTextFont] = {}
  *     for bold, italic in sorted(attr_map):
@@ -4454,8 +4454,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_13get_font_files(CYTHON_UNUS
 }
 
 /* "smelly/fonts/core_text.py":106
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[CoreTextFont, bool, bool]:             # <<<<<<<<<<<<<<
  *     ans = find_best_match(resolve_family(family, getattr(get_font_files, 'medium_family')))
  *     return ans, ans['bold'], ans['italic']
@@ -4501,7 +4501,7 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_15font_for_family(CYTHON_UNU
   __Pyx_RefNannySetupContext("font_for_family", 0);
 
   /* "smelly/fonts/core_text.py":107
- * 
+ *
  * def font_for_family(family: str) -> Tuple[CoreTextFont, bool, bool]:
  *     ans = find_best_match(resolve_family(family, getattr(get_font_files, 'medium_family')))             # <<<<<<<<<<<<<<
  *     return ans, ans['bold'], ans['italic']
@@ -4607,8 +4607,8 @@ static PyObject *__pyx_pf_6smelly_5fonts_9core_text_15font_for_family(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/fonts/core_text.py":106
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[CoreTextFont, bool, bool]:             # <<<<<<<<<<<<<<
  *     ans = find_best_match(resolve_family(family, getattr(get_font_files, 'medium_family')))
  *     return ans, ans['bold'], ans['italic']
@@ -5060,7 +5060,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/fonts/core_text.py":59
  *     font_map = all_fonts_map()
- * 
+ *
  *     def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:             # <<<<<<<<<<<<<<
  *         style_match = 1 if candidate['bold'] == bold and candidate['italic'] == italic else 0
  *         monospace_match = 1 if candidate['monospace'] else 0
@@ -5071,7 +5071,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_core_text_py, __pyx_n_s_score, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "smelly/fonts/core_text.py":69
- * 
+ *
  *     # First look for an exact match
  *     for selector in ('ps_map', 'full_map'):             # <<<<<<<<<<<<<<
  *         candidates = font_map[selector].get(q)
@@ -5102,8 +5102,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__11);
 
   /* "smelly/fonts/core_text.py":21
- * 
- * 
+ *
+ *
  * def create_font_map(all_fonts: Iterable[CoreTextFont]) -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: FontMap = {'family_map': {}, 'ps_map': {}, 'full_map': {}}
  *     for x in all_fonts:
@@ -5114,8 +5114,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_core_text_py, __pyx_n_s_create_font_map, 21, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 21, __pyx_L1_error)
 
   /* "smelly/fonts/core_text.py":33
- * 
- * 
+ *
+ *
  * def all_fonts_map() -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: Optional[FontMap] = getattr(all_fonts_map, 'ans', None)
  *     if ans is None:
@@ -5126,8 +5126,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_core_text_py, __pyx_n_s_all_fonts_map, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 33, __pyx_L1_error)
 
   /* "smelly/fonts/core_text.py":41
- * 
- * 
+ *
+ *
  * def list_fonts() -> Generator[ListedFont, None, None]:             # <<<<<<<<<<<<<<
  *     for fd in coretext_all_fonts():
  *         f = fd['family']
@@ -5138,8 +5138,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_core_text_py, __pyx_n_s_list_fonts, 41, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 41, __pyx_L1_error)
 
   /* "smelly/fonts/core_text.py":50
- * 
- * 
+ *
+ *
  * def find_font_features(postscript_name: str) -> Tuple[FontFeature, ...]:             # <<<<<<<<<<<<<<
  *     """Not Implemented"""
  *     return ()
@@ -5150,8 +5150,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_core_text_py, __pyx_n_s_find_font_features, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 50, __pyx_L1_error)
 
   /* "smelly/fonts/core_text.py":55
- * 
- * 
+ *
+ *
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:             # <<<<<<<<<<<<<<
  *     q = re.sub(r'\s+', ' ', family.lower())
  *     font_map = all_fonts_map()
@@ -5165,8 +5165,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__21);
 
   /* "smelly/fonts/core_text.py":85
- * 
- * 
+ *
+ *
  * def resolve_family(f: str, main_family: str, bold: bool = False, italic: bool = False) -> str:             # <<<<<<<<<<<<<<
  *     if (bold or italic) and f == 'auto':
  *         f = main_family
@@ -5180,8 +5180,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__24);
 
   /* "smelly/fonts/core_text.py":93
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, CoreTextFont]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, CoreTextFont] = {}
  *     for bold, italic in sorted(attr_map):
@@ -5192,8 +5192,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(1, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_fonts_core_text_py, __pyx_n_s_get_font_files, 93, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 93, __pyx_L1_error)
 
   /* "smelly/fonts/core_text.py":106
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[CoreTextFont, bool, bool]:             # <<<<<<<<<<<<<<
  *     ans = find_best_match(resolve_family(family, getattr(get_font_files, 'medium_family')))
  *     return ans, ans['bold'], ans['italic']
@@ -5511,10 +5511,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/core_text.py":4
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import re             # <<<<<<<<<<<<<<
  * from typing import Dict, Generator, Iterable, List, Optional, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5522,10 +5522,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/core_text.py":5
- * 
+ *
  * import re
  * from typing import Dict, Generator, Iterable, List, Optional, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import coretext_all_fonts
  */
   __pyx_t_1 = PyList_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -5579,7 +5579,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/core_text.py":7
  * from typing import Dict, Generator, Iterable, List, Optional, Tuple
- * 
+ *
  * from smelly.fast_data_types import coretext_all_fonts             # <<<<<<<<<<<<<<
  * from smelly.fonts import FontFeature
  * from smelly.options.types import Options
@@ -5599,7 +5599,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/core_text.py":8
- * 
+ *
  * from smelly.fast_data_types import coretext_all_fonts
  * from smelly.fonts import FontFeature             # <<<<<<<<<<<<<<
  * from smelly.options.types import Options
@@ -5645,7 +5645,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.options.types import Options
  * from smelly.typing import CoreTextFont             # <<<<<<<<<<<<<<
  * from smelly.utils import log_error
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5665,7 +5665,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.options.types import Options
  * from smelly.typing import CoreTextFont
  * from smelly.utils import log_error             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import ListedFont
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -5684,9 +5684,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/core_text.py":13
  * from smelly.utils import log_error
- * 
+ *
  * from . import ListedFont             # <<<<<<<<<<<<<<
- * 
+ *
  * attr_map = {(False, False): 'font_family', (True, False): 'bold_font', (False, True): 'italic_font', (True, True): 'bold_italic_font'}
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -5705,10 +5705,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/fonts/core_text.py":15
  * from . import ListedFont
- * 
+ *
  * attr_map = {(False, False): 'font_family', (True, False): 'bold_font', (False, True): 'italic_font', (True, True): 'bold_italic_font'}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5720,11 +5720,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/core_text.py":18
- * 
- * 
+ *
+ *
  * FontMap = Dict[str, Dict[str, List[CoreTextFont]]]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Dict); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5766,8 +5766,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/core_text.py":21
- * 
- * 
+ *
+ *
  * def create_font_map(all_fonts: Iterable[CoreTextFont]) -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: FontMap = {'family_map': {}, 'ps_map': {}, 'full_map': {}}
  *     for x in all_fonts:
@@ -5796,8 +5796,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/core_text.py":33
- * 
- * 
+ *
+ *
  * def all_fonts_map() -> FontMap:             # <<<<<<<<<<<<<<
  *     ans: Optional[FontMap] = getattr(all_fonts_map, 'ans', None)
  *     if ans is None:
@@ -5816,8 +5816,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/core_text.py":41
- * 
- * 
+ *
+ *
  * def list_fonts() -> Generator[ListedFont, None, None]:             # <<<<<<<<<<<<<<
  *     for fd in coretext_all_fonts():
  *         f = fd['family']
@@ -5853,8 +5853,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/fonts/core_text.py":50
- * 
- * 
+ *
+ *
  * def find_font_features(postscript_name: str) -> Tuple[FontFeature, ...]:             # <<<<<<<<<<<<<<
  *     """Not Implemented"""
  *     return ()
@@ -5888,8 +5888,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/core_text.py":55
- * 
- * 
+ *
+ *
  * def find_best_match(family: str, bold: bool = False, italic: bool = False, ignore_face: Optional[CoreTextFont] = None) -> CoreTextFont:             # <<<<<<<<<<<<<<
  *     q = re.sub(r'\s+', ' ', family.lower())
  *     font_map = all_fonts_map()
@@ -5922,8 +5922,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/fonts/core_text.py":85
- * 
- * 
+ *
+ *
  * def resolve_family(f: str, main_family: str, bold: bool = False, italic: bool = False) -> str:             # <<<<<<<<<<<<<<
  *     if (bold or italic) and f == 'auto':
  *         f = main_family
@@ -5944,8 +5944,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/fonts/core_text.py":93
- * 
- * 
+ *
+ *
  * def get_font_files(opts: Options) -> Dict[str, CoreTextFont]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, CoreTextFont] = {}
  *     for bold, italic in sorted(attr_map):
@@ -5982,8 +5982,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/fonts/core_text.py":106
- * 
- * 
+ *
+ *
  * def font_for_family(family: str) -> Tuple[CoreTextFont, bool, bool]:             # <<<<<<<<<<<<<<
  *     ans = find_best_match(resolve_family(family, getattr(get_font_files, 'medium_family')))
  *     return ans, ans['bold'], ans['italic']
@@ -6022,7 +6022,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/fonts/core_text.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7022,8 +7022,8 @@ static PyObject* __Pyx_PyInt_SubtractCObj(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {

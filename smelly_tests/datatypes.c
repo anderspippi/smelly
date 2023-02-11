@@ -973,7 +973,7 @@ struct __pyx_obj_12smelly_tests_9datatypes___pyx_scope_struct_3_tp;
 struct __pyx_obj_12smelly_tests_9datatypes___pyx_scope_struct_4_test_strip_csi;
 
 /* "smelly_tests/datatypes.py":39
- * 
+ *
  * class TestDataTypes(BaseTest):
  *     def test_to_color(self):             # <<<<<<<<<<<<<<
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -987,10 +987,10 @@ struct __pyx_obj_12smelly_tests_9datatypes___pyx_scope_struct__test_to_color {
 
 /* "smelly_tests/datatypes.py":256
  *         self.assertEqualAttributes(l3.cursor_from(0), q)
- * 
+ *
  *     def test_url_at(self):             # <<<<<<<<<<<<<<
  *         self.set_options()
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_9datatypes___pyx_scope_struct_1_test_url_at {
   PyObject_HEAD
@@ -1001,7 +1001,7 @@ struct __pyx_obj_12smelly_tests_9datatypes___pyx_scope_struct_1_test_url_at {
 
 /* "smelly_tests/datatypes.py":386
  *         self.assertContinued(lb2, False, True, True, True)
- * 
+ *
  *     def test_utils(self):             # <<<<<<<<<<<<<<
  *         def w(x):
  *             return wcwidth(ord(x))
@@ -1014,7 +1014,7 @@ struct __pyx_obj_12smelly_tests_9datatypes___pyx_scope_struct_2_test_utils {
 
 /* "smelly_tests/datatypes.py":419
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):             # <<<<<<<<<<<<<<
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''
@@ -1029,7 +1029,7 @@ struct __pyx_obj_12smelly_tests_9datatypes___pyx_scope_struct_3_tp {
 
 /* "smelly_tests/datatypes.py":556
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])
- * 
+ *
  *     def test_strip_csi(self):             # <<<<<<<<<<<<<<
  *         def q(x, y=''):
  *             self.ae(y or x, strip_csi(x))
@@ -2872,8 +2872,8 @@ static PyObject *__pyx_codeobj__153;
 /* Late includes */
 
 /* "smelly_tests/datatypes.py":28
- * 
- * 
+ *
+ *
  * def create_lbuf(*lines):             # <<<<<<<<<<<<<<
  *     maxw = max(map(len, lines))
  *     ans = LineBuf(len(lines), maxw)
@@ -2923,7 +2923,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_create_lbuf(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("create_lbuf", 0);
 
   /* "smelly_tests/datatypes.py":29
- * 
+ *
  * def create_lbuf(*lines):
  *     maxw = max(map(len, lines))             # <<<<<<<<<<<<<<
  *     ans = LineBuf(len(lines), maxw)
@@ -3159,7 +3159,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_create_lbuf(CYTHON_UNUSED Py
  *         if i > 0:
  *             ans.set_continued(i, len(lines[i - 1]) == maxw)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_ans, __pyx_n_s_set_continued); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 34, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -3247,8 +3247,8 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_create_lbuf(CYTHON_UNUSED Py
  *         if i > 0:
  *             ans.set_continued(i, len(lines[i - 1]) == maxw)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -3256,8 +3256,8 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_create_lbuf(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly_tests/datatypes.py":28
- * 
- * 
+ *
+ *
  * def create_lbuf(*lines):             # <<<<<<<<<<<<<<
  *     maxw = max(map(len, lines))
  *     ans = LineBuf(len(lines), maxw)
@@ -3286,7 +3286,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_create_lbuf(CYTHON_UNUSED Py
 }
 
 /* "smelly_tests/datatypes.py":39
- * 
+ *
  * class TestDataTypes(BaseTest):
  *     def test_to_color(self):             # <<<<<<<<<<<<<<
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -3309,7 +3309,7 @@ static PyObject *__pyx_pw_12smelly_tests_9datatypes_13TestDataTypes_1test_to_col
 
 /* "smelly_tests/datatypes.py":43
  *             self.assertIsNone(to_color(x))
- * 
+ *
  *         def c(spec, r=0, g=0, b=0, a=0):             # <<<<<<<<<<<<<<
  *             c = to_color(spec)
  *             self.ae(c.red, r)
@@ -3443,7 +3443,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_13test_to_co
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/datatypes.py":44
- * 
+ *
  *         def c(spec, r=0, g=0, b=0, a=0):
  *             c = to_color(spec)             # <<<<<<<<<<<<<<
  *             self.ae(c.red, r)
@@ -3596,7 +3596,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_13test_to_co
  *             self.ae(c.green, g)
  *             self.ae(c.blue, b)             # <<<<<<<<<<<<<<
  *             self.ae(c.alpha, a)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 47, __pyx_L1_error) }
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
@@ -3656,7 +3656,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_13test_to_co
  *             self.ae(c.green, g)
  *             self.ae(c.blue, b)
  *             self.ae(c.alpha, a)             # <<<<<<<<<<<<<<
- * 
+ *
  *         c('#eee', 0xEE, 0xEE, 0xEE)
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 48, __pyx_L1_error) }
@@ -3715,7 +3715,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_13test_to_co
 
   /* "smelly_tests/datatypes.py":43
  *             self.assertIsNone(to_color(x))
- * 
+ *
  *         def c(spec, r=0, g=0, b=0, a=0):             # <<<<<<<<<<<<<<
  *             c = to_color(spec)
  *             self.ae(c.red, r)
@@ -3740,7 +3740,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_13test_to_co
 }
 
 /* "smelly_tests/datatypes.py":39
- * 
+ *
  * class TestDataTypes(BaseTest):
  *     def test_to_color(self):             # <<<<<<<<<<<<<<
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -3786,7 +3786,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
  *     def test_to_color(self):
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():             # <<<<<<<<<<<<<<
  *             self.assertIsNone(to_color(x))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_xxx_12_1234_rgb_a_b, __pyx_n_s_split); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3852,7 +3852,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
  *     def test_to_color(self):
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
  *             self.assertIsNone(to_color(x))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def c(spec, r=0, g=0, b=0, a=0):
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
@@ -3897,14 +3897,14 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
  *     def test_to_color(self):
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():             # <<<<<<<<<<<<<<
  *             self.assertIsNone(to_color(x))
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/datatypes.py":43
  *             self.assertIsNone(to_color(x))
- * 
+ *
  *         def c(spec, r=0, g=0, b=0, a=0):             # <<<<<<<<<<<<<<
  *             c = to_color(spec)
  *             self.ae(c.red, r)
@@ -3917,7 +3917,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
 
   /* "smelly_tests/datatypes.py":50
  *             self.ae(c.alpha, a)
- * 
+ *
  *         c('#eee', 0xEE, 0xEE, 0xEE)             # <<<<<<<<<<<<<<
  *         c('#234567', 0x23, 0x45, 0x67)
  *         c('#abcabcdef', 0xAB, 0xAB, 0xDE)
@@ -3927,7 +3927,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/datatypes.py":51
- * 
+ *
  *         c('#eee', 0xEE, 0xEE, 0xEE)
  *         c('#234567', 0x23, 0x45, 0x67)             # <<<<<<<<<<<<<<
  *         c('#abcabcdef', 0xAB, 0xAB, 0xDE)
@@ -4334,7 +4334,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
  *         self.ae(Color(1, 2, 3).as_sharp, '#010203')
  *         self.ae(Color(1, 2, 3, 4).as_sharp, '#04010203')             # <<<<<<<<<<<<<<
  *         self.ae(Color(1, 2, 3, 4).rgb, 0x10203)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4399,7 +4399,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
  *         self.ae(Color(1, 2, 3).as_sharp, '#010203')
  *         self.ae(Color(1, 2, 3, 4).as_sharp, '#04010203')
  *         self.ae(Color(1, 2, 3, 4).rgb, 0x10203)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_linebuf(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
@@ -4462,7 +4462,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":39
- * 
+ *
  * class TestDataTypes(BaseTest):
  *     def test_to_color(self):             # <<<<<<<<<<<<<<
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -4495,7 +4495,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_test_to_colo
 
 /* "smelly_tests/datatypes.py":67
  *         self.ae(Color(1, 2, 3, 4).rgb, 0x10203)
- * 
+ *
  *     def test_linebuf(self):             # <<<<<<<<<<<<<<
  *         old = filled_line_buf(2, 3, filled_cursor())
  *         new = LineBuf(1, 3)
@@ -4550,7 +4550,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
   __Pyx_RefNannySetupContext("test_linebuf", 0);
 
   /* "smelly_tests/datatypes.py":68
- * 
+ *
  *     def test_linebuf(self):
  *         old = filled_line_buf(2, 3, filled_cursor())             # <<<<<<<<<<<<<<
  *         new = LineBuf(1, 3)
@@ -5186,7 +5186,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         old.set_continued(1, True)
  *         self.assertTrue(old.is_continued(1))             # <<<<<<<<<<<<<<
  *         self.assertFalse(old.is_continued(0))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5229,7 +5229,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         old.set_continued(1, True)
  *         self.assertTrue(old.is_continued(1))
  *         self.assertFalse(old.is_continued(0))             # <<<<<<<<<<<<<<
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
@@ -5271,7 +5271,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
 
   /* "smelly_tests/datatypes.py":86
  *         self.assertFalse(old.is_continued(0))
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())             # <<<<<<<<<<<<<<
  *         lb2 = LineBuf(5, 5)
  *         lb2.copy_old(lb)
@@ -5349,7 +5349,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
   __pyx_t_2 = 0;
 
   /* "smelly_tests/datatypes.py":87
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  *         lb2 = LineBuf(5, 5)             # <<<<<<<<<<<<<<
  *         lb2.copy_old(lb)
@@ -6787,7 +6787,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         self.ae(lb.line(0), lb2.line(4))
  *         for i in range(1, 5):             # <<<<<<<<<<<<<<
  *             self.ae(lb.line(i), lb2.line(i - 1))
- * 
+ *
  */
   for (__pyx_t_12 = 1; __pyx_t_12 < 5; __pyx_t_12+=1) {
     __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_t_12); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
@@ -6799,7 +6799,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         self.ae(lb.line(0), lb2.line(4))
  *         for i in range(1, 5):
  *             self.ae(lb.line(i), lb2.line(i - 1))             # <<<<<<<<<<<<<<
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
@@ -6895,7 +6895,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
 
   /* "smelly_tests/datatypes.py":112
  *             self.ae(lb.line(i), lb2.line(i - 1))
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())             # <<<<<<<<<<<<<<
  *         clb = filled_line_buf(5, 5, filled_cursor())
  *         lb2 = LineBuf(1, 5)
@@ -6973,7 +6973,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
   __pyx_t_2 = 0;
 
   /* "smelly_tests/datatypes.py":113
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  *         clb = filled_line_buf(5, 5, filled_cursor())             # <<<<<<<<<<<<<<
  *         lb2 = LineBuf(1, 5)
@@ -8692,7 +8692,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         self.ae(lb.line(2), clb.line(1))
  *         self.ae(lb.line(3), clb.line(2))             # <<<<<<<<<<<<<<
  *         self.ae(lb.line(4), clb.line(4))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8785,7 +8785,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         self.ae(lb.line(2), clb.line(1))
  *         self.ae(lb.line(3), clb.line(2))
  *         self.ae(lb.line(4), clb.line(4))             # <<<<<<<<<<<<<<
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
@@ -8877,7 +8877,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
 
   /* "smelly_tests/datatypes.py":138
  *         self.ae(lb.line(4), clb.line(4))
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())             # <<<<<<<<<<<<<<
  *         lb.delete_lines(2, 1, lb.ynum - 1)
  *         self.ae(lb.line(0), clb.line(0))
@@ -8955,7 +8955,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":139
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  *         lb.delete_lines(2, 1, lb.ynum - 1)             # <<<<<<<<<<<<<<
  *         self.ae(lb.line(0), clb.line(0))
@@ -10580,7 +10580,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         self.ae(lb.line(2), clb.line(3))
  *         self.ae(lb.line(3), lb2.line(0))             # <<<<<<<<<<<<<<
  *         self.ae(lb.line(4), clb.line(4))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10673,7 +10673,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         self.ae(lb.line(2), clb.line(3))
  *         self.ae(lb.line(3), lb2.line(0))
  *         self.ae(lb.line(4), clb.line(4))             # <<<<<<<<<<<<<<
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 160, __pyx_L1_error)
@@ -10765,7 +10765,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
 
   /* "smelly_tests/datatypes.py":162
  *         self.ae(lb.line(4), clb.line(4))
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())             # <<<<<<<<<<<<<<
  *         l0 = lb.line(0)
  *         l0.add_combining_char(1, '\u0300')
@@ -10843,7 +10843,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":163
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  *         l0 = lb.line(0)             # <<<<<<<<<<<<<<
  *         l0.add_combining_char(1, '\u0300')
@@ -10902,7 +10902,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         l0.clear_text(1, 2)
  *         self.ae(str(l0), '0  00')             # <<<<<<<<<<<<<<
  *         self.assertEqualAttributes(l0.cursor_from(1), l0.cursor_from(0))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10961,7 +10961,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         l0.clear_text(1, 2)
  *         self.ae(str(l0), '0  00')
  *         self.assertEqualAttributes(l0.cursor_from(1), l0.cursor_from(0))             # <<<<<<<<<<<<<<
- * 
+ *
  *         lb = filled_line_buf(10, 10, filled_cursor())
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqualAttributes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error)
@@ -11053,7 +11053,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
 
   /* "smelly_tests/datatypes.py":169
  *         self.assertEqualAttributes(l0.cursor_from(1), l0.cursor_from(0))
- * 
+ *
  *         lb = filled_line_buf(10, 10, filled_cursor())             # <<<<<<<<<<<<<<
  *         lb.clear()
  *         lb2 = LineBuf(lb.ynum, lb.ynum)
@@ -11131,7 +11131,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":170
- * 
+ *
  *         lb = filled_line_buf(10, 10, filled_cursor())
  *         lb.clear()             # <<<<<<<<<<<<<<
  *         lb2 = LineBuf(lb.ynum, lb.ynum)
@@ -11226,7 +11226,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         lb2 = LineBuf(lb.ynum, lb.ynum)
  *         for i in range(lb.ynum):             # <<<<<<<<<<<<<<
  *             self.ae(lb.line(i), lb2.line(i))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_lb, __pyx_n_s_ynum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11280,7 +11280,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         lb2 = LineBuf(lb.ynum, lb.ynum)
  *         for i in range(lb.ynum):
  *             self.ae(lb.line(i), lb2.line(i))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_line(self):
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 173, __pyx_L1_error)
@@ -11375,14 +11375,14 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
  *         lb2 = LineBuf(lb.ynum, lb.ynum)
  *         for i in range(lb.ynum):             # <<<<<<<<<<<<<<
  *             self.ae(lb.line(i), lb2.line(i))
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":67
  *         self.ae(Color(1, 2, 3, 4).rgb, 0x10203)
- * 
+ *
  *     def test_linebuf(self):             # <<<<<<<<<<<<<<
  *         old = filled_line_buf(2, 3, filled_cursor())
  *         new = LineBuf(1, 3)
@@ -11422,7 +11422,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_2test_linebu
 
 /* "smelly_tests/datatypes.py":175
  *             self.ae(lb.line(i), lb2.line(i))
- * 
+ *
  *     def test_line(self):             # <<<<<<<<<<<<<<
  *         lb = LineBuf(2, 3)
  *         for y in range(lb.ynum):
@@ -11483,7 +11483,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
   __Pyx_RefNannySetupContext("test_line", 0);
 
   /* "smelly_tests/datatypes.py":176
- * 
+ *
  *     def test_line(self):
  *         lb = LineBuf(2, 3)             # <<<<<<<<<<<<<<
  *         for y in range(lb.ynum):
@@ -11901,7 +11901,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_5);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 182, __pyx_L13_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -12073,7 +12073,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_5);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 184, __pyx_L27_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -12894,7 +12894,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         self.ae(str(l0), t)
  *         l0.set_text('a', 0, 1, C())             # <<<<<<<<<<<<<<
  *         self.assertEqual(str(l0), 'a' + t[1:])
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_l0, __pyx_n_s_set_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12974,7 +12974,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         self.ae(str(l0), t)
  *         l0.set_text('a', 0, 1, C())
  *         self.assertEqual(str(l0), 'a' + t[1:])             # <<<<<<<<<<<<<<
- * 
+ *
  *         c = C(3, 5)
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
@@ -13039,7 +13039,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
 
   /* "smelly_tests/datatypes.py":206
  *         self.assertEqual(str(l0), 'a' + t[1:])
- * 
+ *
  *         c = C(3, 5)             # <<<<<<<<<<<<<<
  *         c.bold = c.italic = c.reverse = c.strikethrough = c.dim = True
  *         c.fg = c.bg = c.decoration_fg = 0x0101
@@ -13053,7 +13053,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":207
- * 
+ *
  *         c = C(3, 5)
  *         c.bold = c.italic = c.reverse = c.strikethrough = c.dim = True             # <<<<<<<<<<<<<<
  *         c.fg = c.bg = c.decoration_fg = 0x0101
@@ -13871,7 +13871,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         self.assertEqualAttributes(c3, l0.cursor_from(0))
  *         l0.copy_char(0, l0, 1)             # <<<<<<<<<<<<<<
  *         self.assertEqualAttributes(c3, l0.cursor_from(1))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_l0, __pyx_n_s_copy_char); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13929,7 +13929,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         self.assertEqualAttributes(c3, l0.cursor_from(0))
  *         l0.copy_char(0, l0, 1)
  *         self.assertEqualAttributes(c3, l0.cursor_from(1))             # <<<<<<<<<<<<<<
- * 
+ *
  *         t = '0123456789'
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqualAttributes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 224, __pyx_L1_error)
@@ -14002,7 +14002,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
 
   /* "smelly_tests/datatypes.py":226
  *         self.assertEqualAttributes(c3, l0.cursor_from(1))
- * 
+ *
  *         t = '0123456789'             # <<<<<<<<<<<<<<
  *         lb = LineBuf(1, len(t))
  *         l3 = lb.line(0)
@@ -14011,7 +14011,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
   __Pyx_DECREF_SET(__pyx_v_t, __pyx_kp_s_0123456789);
 
   /* "smelly_tests/datatypes.py":227
- * 
+ *
  *         t = '0123456789'
  *         lb = LineBuf(1, len(t))             # <<<<<<<<<<<<<<
  *         l3 = lb.line(0)
@@ -14818,7 +14818,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         l3.set_text(t, 0, len(t), C())
  *         l3.left_shift(7, 3)             # <<<<<<<<<<<<<<
  *         self.ae(str(l3), t)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_l3, __pyx_n_s_left_shift); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -14831,7 +14831,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         l3.set_text(t, 0, len(t), C())
  *         l3.left_shift(7, 3)
  *         self.ae(str(l3), t)             # <<<<<<<<<<<<<<
- * 
+ *
  *         l3.set_text(t, 0, len(t), C())
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 243, __pyx_L1_error)
@@ -14889,7 +14889,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
 
   /* "smelly_tests/datatypes.py":245
  *         self.ae(str(l3), t)
- * 
+ *
  *         l3.set_text(t, 0, len(t), C())             # <<<<<<<<<<<<<<
  *         q = C()
  *         q.bold = q.italic = q.reverse = q.strikethrough = c.dim = True
@@ -14974,7 +14974,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":246
- * 
+ *
  *         l3.set_text(t, 0, len(t), C())
  *         q = C()             # <<<<<<<<<<<<<<
  *         q.bold = q.italic = q.reverse = q.strikethrough = c.dim = True
@@ -15185,7 +15185,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         self.ae(str(l3), '012xy56789')
  *         l3.set_char(0, 'x', 1, q)             # <<<<<<<<<<<<<<
  *         self.assertEqualAttributes(l3.cursor_from(0), q)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_l3, __pyx_n_s_set_char); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 253, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -15246,7 +15246,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
  *         self.ae(str(l3), '012xy56789')
  *         l3.set_char(0, 'x', 1, q)
  *         self.assertEqualAttributes(l3.cursor_from(0), q)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_url_at(self):
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqualAttributes); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 254, __pyx_L1_error)
@@ -15319,7 +15319,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
 
   /* "smelly_tests/datatypes.py":175
  *             self.ae(lb.line(i), lb2.line(i))
- * 
+ *
  *     def test_line(self):             # <<<<<<<<<<<<<<
  *         lb = LineBuf(2, 3)
  *         for y in range(lb.ynum):
@@ -15357,10 +15357,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_4test_line(C
 
 /* "smelly_tests/datatypes.py":256
  *         self.assertEqualAttributes(l3.cursor_from(0), q)
- * 
+ *
  *     def test_url_at(self):             # <<<<<<<<<<<<<<
  *         self.set_options()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -15379,7 +15379,7 @@ static PyObject *__pyx_pw_12smelly_tests_9datatypes_13TestDataTypes_7test_url_at
 
 /* "smelly_tests/datatypes.py":259
  *         self.set_options()
- * 
+ *
  *         def create(t):             # <<<<<<<<<<<<<<
  *             lb = create.lb = LineBuf(1, len(t))
  *             lf = lb.line(0)
@@ -15422,7 +15422,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/datatypes.py":260
- * 
+ *
  *         def create(t):
  *             lb = create.lb = LineBuf(1, len(t))             # <<<<<<<<<<<<<<
  *             lf = lb.line(0)
@@ -15518,7 +15518,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
  *             lf = lb.line(0)
  *             lf.set_text(t, 0, len(t), C())             # <<<<<<<<<<<<<<
  *             return lf
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_lf, __pyx_n_s_set_text); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -15603,7 +15603,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
  *             lf = lb.line(0)
  *             lf.set_text(t, 0, len(t), C())
  *             return lf             # <<<<<<<<<<<<<<
- * 
+ *
  *         l0 = create('file:///etc/test')
  */
   __Pyx_XDECREF(__pyx_r);
@@ -15613,7 +15613,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
 
   /* "smelly_tests/datatypes.py":259
  *         self.set_options()
- * 
+ *
  *         def create(t):             # <<<<<<<<<<<<<<
  *             lb = create.lb = LineBuf(1, len(t))
  *             lf = lb.line(0)
@@ -15639,7 +15639,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
 
 /* "smelly_tests/datatypes.py":282
  *         self.ae(l3.url_start_at(5), 0)
- * 
+ *
  *         def lspace_test(n, scheme='http'):             # <<<<<<<<<<<<<<
  *             lf = create(' ' * n + scheme + '://acme.com')
  *             for i in range(0, n):
@@ -15740,7 +15740,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/datatypes.py":283
- * 
+ *
  *         def lspace_test(n, scheme='http'):
  *             lf = create(' ' * n + scheme + '://acme.com')             # <<<<<<<<<<<<<<
  *             for i in range(0, n):
@@ -15918,7 +15918,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
  *                 self.ae(lf.url_start_at(i), len(lf))
  *             for i in range(n, len(lf)):             # <<<<<<<<<<<<<<
  *                 self.ae(lf.url_start_at(i), n)
- * 
+ *
  */
   __pyx_t_3 = PyObject_Length(__pyx_v_lf); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 286, __pyx_L1_error)
   __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
@@ -15981,7 +15981,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
  *                 self.ae(lf.url_start_at(i), len(lf))
  *             for i in range(n, len(lf)):
  *                 self.ae(lf.url_start_at(i), n)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for i in range(7):
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 287, __pyx_L1_error) }
@@ -16058,14 +16058,14 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
  *                 self.ae(lf.url_start_at(i), len(lf))
  *             for i in range(n, len(lf)):             # <<<<<<<<<<<<<<
  *                 self.ae(lf.url_start_at(i), n)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":282
  *         self.ae(l3.url_start_at(5), 0)
- * 
+ *
  *         def lspace_test(n, scheme='http'):             # <<<<<<<<<<<<<<
  *             lf = create(' ' * n + scheme + '://acme.com')
  *             for i in range(0, n):
@@ -16094,7 +16094,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
 
 /* "smelly_tests/datatypes.py":303
  *                 2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))
- * 
+ *
  *         def no_url(t):             # <<<<<<<<<<<<<<
  *             lf = create(t)
  *             for s in range(len(lf)):
@@ -16140,7 +16140,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/datatypes.py":304
- * 
+ *
  *         def no_url(t):
  *             lf = create(t)             # <<<<<<<<<<<<<<
  *             for s in range(len(lf)):
@@ -16157,7 +16157,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
  *             lf = create(t)
  *             for s in range(len(lf)):             # <<<<<<<<<<<<<<
  *                 self.ae(lf.url_start_at(s), len(lf))
- * 
+ *
  */
   __pyx_t_2 = PyObject_Length(__pyx_v_lf); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 305, __pyx_L1_error)
   __pyx_t_3 = __pyx_t_2;
@@ -16168,7 +16168,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
  *             lf = create(t)
  *             for s in range(len(lf)):
  *                 self.ae(lf.url_start_at(s), len(lf))             # <<<<<<<<<<<<<<
- * 
+ *
  *         no_url('https:// testing.me a')
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 306, __pyx_L1_error) }
@@ -16251,7 +16251,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
 
   /* "smelly_tests/datatypes.py":303
  *                 2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))
- * 
+ *
  *         def no_url(t):             # <<<<<<<<<<<<<<
  *             lf = create(t)
  *             for s in range(len(lf)):
@@ -16278,10 +16278,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_a
 
 /* "smelly_tests/datatypes.py":256
  *         self.assertEqualAttributes(l3.cursor_from(0), q)
- * 
+ *
  *     def test_url_at(self):             # <<<<<<<<<<<<<<
  *         self.set_options()
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -16329,10 +16329,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/datatypes.py":257
- * 
+ *
  *     def test_url_at(self):
  *         self.set_options()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def create(t):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_set_options); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 257, __pyx_L1_error)
@@ -16356,7 +16356,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":259
  *         self.set_options()
- * 
+ *
  *         def create(t):             # <<<<<<<<<<<<<<
  *             lb = create.lb = LineBuf(1, len(t))
  *             lf = lb.line(0)
@@ -16369,10 +16369,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":265
  *             return lf
- * 
+ *
  *         l0 = create('file:///etc/test')             # <<<<<<<<<<<<<<
  *         self.ae(l0.url_start_at(0), 0)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_at_create(__pyx_cur_scope->__pyx_v_create, __pyx_kp_s_file_etc_test); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 265, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -16380,10 +16380,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":266
- * 
+ *
  *         l0 = create('file:///etc/test')
  *         self.ae(l0.url_start_at(0), 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for trail in '.,\\':
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 266, __pyx_L1_error)
@@ -16456,7 +16456,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":268
  *         self.ae(l0.url_start_at(0), 0)
- * 
+ *
  *         for trail in '.,\\':             # <<<<<<<<<<<<<<
  *             lx = create("http://xyz.com" + trail)
  *             self.ae(lx.url_end_at(0), len(lx) - 2)
@@ -16481,7 +16481,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
     __pyx_t_2 = 0;
 
     /* "smelly_tests/datatypes.py":269
- * 
+ *
  *         for trail in '.,\\':
  *             lx = create("http://xyz.com" + trail)             # <<<<<<<<<<<<<<
  *             self.ae(lx.url_end_at(0), len(lx) - 2)
@@ -16577,7 +16577,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
     /* "smelly_tests/datatypes.py":268
  *         self.ae(l0.url_start_at(0), 0)
- * 
+ *
  *         for trail in '.,\\':             # <<<<<<<<<<<<<<
  *             lx = create("http://xyz.com" + trail)
  *             self.ae(lx.url_end_at(0), len(lx) - 2)
@@ -16917,7 +16917,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *         l3 = create("http://ab.de           ")
  *         self.ae(l3.url_start_at(4), 0)             # <<<<<<<<<<<<<<
  *         self.ae(l3.url_start_at(5), 0)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -16991,7 +16991,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *         l3 = create("http://ab.de           ")
  *         self.ae(l3.url_start_at(4), 0)
  *         self.ae(l3.url_start_at(5), 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def lspace_test(n, scheme='http'):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
@@ -17064,7 +17064,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":282
  *         self.ae(l3.url_start_at(5), 0)
- * 
+ *
  *         def lspace_test(n, scheme='http'):             # <<<<<<<<<<<<<<
  *             lf = create(' ' * n + scheme + '://acme.com')
  *             for i in range(0, n):
@@ -17077,7 +17077,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":289
  *                 self.ae(lf.url_start_at(i), n)
- * 
+ *
  *         for i in range(7):             # <<<<<<<<<<<<<<
  *             for scheme in 'http https ftp file'.split():
  *                 lspace_test(i, scheme)
@@ -17086,7 +17086,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
     __pyx_v_i = __pyx_t_11;
 
     /* "smelly_tests/datatypes.py":290
- * 
+ *
  *         for i in range(7):
  *             for scheme in 'http https ftp file'.split():             # <<<<<<<<<<<<<<
  *                 lspace_test(i, scheme)
@@ -17167,7 +17167,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
       /* "smelly_tests/datatypes.py":290
- * 
+ *
  *         for i in range(7):
  *             for scheme in 'http https ftp file'.split():             # <<<<<<<<<<<<<<
  *                 lspace_test(i, scheme)
@@ -17429,7 +17429,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *             self.ae(
  *                 l3.url_start_at(s),             # <<<<<<<<<<<<<<
  *                 2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_l3, __pyx_n_s_url_start_at); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -17453,7 +17453,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *             self.ae(
  *                 l3.url_start_at(s),
  *                 2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def no_url(t):
  */
     __pyx_t_5 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_l3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 301, __pyx_L1_error)
@@ -17538,7 +17538,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":303
  *                 2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))
- * 
+ *
  *         def no_url(t):             # <<<<<<<<<<<<<<
  *             lf = create(t)
  *             for s in range(len(lf)):
@@ -17550,7 +17550,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":308
  *                 self.ae(lf.url_start_at(s), len(lf))
- * 
+ *
  *         no_url('https:// testing.me a')             # <<<<<<<<<<<<<<
  *         no_url('h ttp://acme.com')
  *         no_url('http: //acme.com')
@@ -17560,7 +17560,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":309
- * 
+ *
  *         no_url('https:// testing.me a')
  *         no_url('h ttp://acme.com')             # <<<<<<<<<<<<<<
  *         no_url('http: //acme.com')
@@ -17575,7 +17575,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *         no_url('h ttp://acme.com')
  *         no_url('http: //acme.com')             # <<<<<<<<<<<<<<
  *         no_url('http:/ /acme.com')
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_at_4no_url(__pyx_v_no_url, __pyx_kp_s_http_acme_com); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 310, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17585,7 +17585,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *         no_url('h ttp://acme.com')
  *         no_url('http: //acme.com')
  *         no_url('http:/ /acme.com')             # <<<<<<<<<<<<<<
- * 
+ *
  *         l4 = create(' xxxxxtekljhgdkjgd')
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_at_4no_url(__pyx_v_no_url, __pyx_kp_s_http_acme_com_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 311, __pyx_L1_error)
@@ -17594,10 +17594,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":313
  *         no_url('http:/ /acme.com')
- * 
+ *
  *         l4 = create(' xxxxxtekljhgdkjgd')             # <<<<<<<<<<<<<<
  *         self.ae(l4.url_end_at(0), 0)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_11test_url_at_create(__pyx_cur_scope->__pyx_v_create, __pyx_kp_s_xxxxxtekljhgdkjgd); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 313, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17605,10 +17605,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":314
- * 
+ *
  *         l4 = create(' xxxxxtekljhgdkjgd')
  *         self.ae(l4.url_end_at(0), 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for trail in '/-&':
  */
   __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 314, __pyx_L1_error)
@@ -17681,7 +17681,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":316
  *         self.ae(l4.url_end_at(0), 0)
- * 
+ *
  *         for trail in '/-&':             # <<<<<<<<<<<<<<
  *             l4 = create('http://a.b?q=1' + trail)
  *             self.ae(l4.url_end_at(1), len(l4) - 1)
@@ -17706,11 +17706,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
     __pyx_t_8 = 0;
 
     /* "smelly_tests/datatypes.py":317
- * 
+ *
  *         for trail in '/-&':
  *             l4 = create('http://a.b?q=1' + trail)             # <<<<<<<<<<<<<<
  *             self.ae(l4.url_end_at(1), len(l4) - 1)
- * 
+ *
  */
     __pyx_t_8 = PyNumber_Add(__pyx_kp_s_http_a_b_q_1, __pyx_v_trail); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 317, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
@@ -17724,7 +17724,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *         for trail in '/-&':
  *             l4 = create('http://a.b?q=1' + trail)
  *             self.ae(l4.url_end_at(1), len(l4) - 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *         l4 = create('http://a.b.')
  */
     __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 318, __pyx_L1_error)
@@ -17802,7 +17802,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
     /* "smelly_tests/datatypes.py":316
  *         self.ae(l4.url_end_at(0), 0)
- * 
+ *
  *         for trail in '/-&':             # <<<<<<<<<<<<<<
  *             l4 = create('http://a.b?q=1' + trail)
  *             self.ae(l4.url_end_at(1), len(l4) - 1)
@@ -17812,7 +17812,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":320
  *             self.ae(l4.url_end_at(1), len(l4) - 1)
- * 
+ *
  *         l4 = create('http://a.b.')             # <<<<<<<<<<<<<<
  *         self.ae(l4.url_end_at(0), len(l4) - 2)
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)
@@ -17823,11 +17823,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":321
- * 
+ *
  *         l4 = create('http://a.b.')
  *         self.ae(l4.url_end_at(0), len(l4) - 2)             # <<<<<<<<<<<<<<
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -17906,7 +17906,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
  *         l4 = create('http://a.b.')
  *         self.ae(l4.url_end_at(0), len(l4) - 2)
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def rewrap(self, lb, lb2):
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 322, __pyx_L1_error)
@@ -17972,10 +17972,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
   /* "smelly_tests/datatypes.py":256
  *         self.assertEqualAttributes(l3.cursor_from(0), q)
- * 
+ *
  *     def test_url_at(self):             # <<<<<<<<<<<<<<
  *         self.set_options()
- * 
+ *
  */
 
   /* function exit code */
@@ -18011,7 +18011,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_6test_url_at
 
 /* "smelly_tests/datatypes.py":324
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)
- * 
+ *
  *     def rewrap(self, lb, lb2):             # <<<<<<<<<<<<<<
  *         hb = HistoryBuf(lb2.ynum, lb2.xnum)
  *         cy = lb.rewrap(lb2, hb)
@@ -18111,7 +18111,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_8rewrap(CYTH
   __Pyx_RefNannySetupContext("rewrap", 0);
 
   /* "smelly_tests/datatypes.py":325
- * 
+ *
  *     def rewrap(self, lb, lb2):
  *         hb = HistoryBuf(lb2.ynum, lb2.xnum)             # <<<<<<<<<<<<<<
  *         cy = lb.rewrap(lb2, hb)
@@ -18180,7 +18180,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_8rewrap(CYTH
  *         hb = HistoryBuf(lb2.ynum, lb2.xnum)
  *         cy = lb.rewrap(lb2, hb)             # <<<<<<<<<<<<<<
  *         return hb, cy[1]
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_lb, __pyx_n_s_rewrap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18236,7 +18236,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_8rewrap(CYTH
  *         hb = HistoryBuf(lb2.ynum, lb2.xnum)
  *         cy = lb.rewrap(lb2, hb)
  *         return hb, cy[1]             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_rewrap_simple(self):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -18256,7 +18256,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_8rewrap(CYTH
 
   /* "smelly_tests/datatypes.py":324
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)
- * 
+ *
  *     def rewrap(self, lb, lb2):             # <<<<<<<<<<<<<<
  *         hb = HistoryBuf(lb2.ynum, lb2.xnum)
  *         cy = lb.rewrap(lb2, hb)
@@ -18282,7 +18282,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_8rewrap(CYTH
 
 /* "smelly_tests/datatypes.py":329
  *         return hb, cy[1]
- * 
+ *
  *     def test_rewrap_simple(self):             # <<<<<<<<<<<<<<
  *         'Same width buffers'
  *         lb = filled_line_buf(5, 5)
@@ -19446,7 +19446,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_rewra
  *             self.ae(lb2.line(i), lb.line(i + 2))
  *         self.assertFalse(lb.dirty_lines())             # <<<<<<<<<<<<<<
  *         self.ae(lb2.dirty_lines(), list(range(lb2.ynum)))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 349, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -19489,7 +19489,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_rewra
  *             self.ae(lb2.line(i), lb.line(i + 2))
  *         self.assertFalse(lb.dirty_lines())
  *         self.ae(lb2.dirty_lines(), list(range(lb2.ynum)))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def line_comparison(self, buf, *lines):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 350, __pyx_L1_error)
@@ -19572,7 +19572,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_rewra
 
   /* "smelly_tests/datatypes.py":329
  *         return hb, cy[1]
- * 
+ *
  *     def test_rewrap_simple(self):             # <<<<<<<<<<<<<<
  *         'Same width buffers'
  *         lb = filled_line_buf(5, 5)
@@ -19605,7 +19605,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_rewra
 
 /* "smelly_tests/datatypes.py":352
  *         self.ae(lb2.dirty_lines(), list(range(lb2.ynum)))
- * 
+ *
  *     def line_comparison(self, buf, *lines):             # <<<<<<<<<<<<<<
  *         for i, l0 in enumerate(lines):
  *             l2 = buf.line(i)
@@ -19711,7 +19711,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_12line_compa
   __Pyx_RefNannySetupContext("line_comparison", 0);
 
   /* "smelly_tests/datatypes.py":353
- * 
+ *
  *     def line_comparison(self, buf, *lines):
  *         for i, l0 in enumerate(lines):             # <<<<<<<<<<<<<<
  *             l2 = buf.line(i)
@@ -19743,7 +19743,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_12line_compa
  *         for i, l0 in enumerate(lines):
  *             l2 = buf.line(i)             # <<<<<<<<<<<<<<
  *             self.ae(l0, str(l2))
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_buf, __pyx_n_s_line); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 354, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -19769,7 +19769,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_12line_compa
  *         for i, l0 in enumerate(lines):
  *             l2 = buf.line(i)
  *             self.ae(l0, str(l2))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def line_comparison_rewrap(self, lb, *lines):
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 355, __pyx_L1_error)
@@ -19826,7 +19826,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_12line_compa
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "smelly_tests/datatypes.py":353
- * 
+ *
  *     def line_comparison(self, buf, *lines):
  *         for i, l0 in enumerate(lines):             # <<<<<<<<<<<<<<
  *             l2 = buf.line(i)
@@ -19838,7 +19838,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_12line_compa
 
   /* "smelly_tests/datatypes.py":352
  *         self.ae(lb2.dirty_lines(), list(range(lb2.ynum)))
- * 
+ *
  *     def line_comparison(self, buf, *lines):             # <<<<<<<<<<<<<<
  *         for i, l0 in enumerate(lines):
  *             l2 = buf.line(i)
@@ -19868,7 +19868,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_12line_compa
 
 /* "smelly_tests/datatypes.py":357
  *             self.ae(l0, str(l2))
- * 
+ *
  *     def line_comparison_rewrap(self, lb, *lines):             # <<<<<<<<<<<<<<
  *         lb2 = LineBuf(len(lines), max(map(len, lines)))
  *         self.rewrap(lb, lb2)
@@ -19971,7 +19971,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14line_compa
   __Pyx_RefNannySetupContext("line_comparison_rewrap", 0);
 
   /* "smelly_tests/datatypes.py":358
- * 
+ *
  *     def line_comparison_rewrap(self, lb, *lines):
  *         lb2 = LineBuf(len(lines), max(map(len, lines)))             # <<<<<<<<<<<<<<
  *         self.rewrap(lb, lb2)
@@ -20111,7 +20111,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14line_compa
  *         self.rewrap(lb, lb2)
  *         self.line_comparison(lb2, *lines)             # <<<<<<<<<<<<<<
  *         return lb2
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_line_comparison); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20133,7 +20133,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14line_compa
  *         self.rewrap(lb, lb2)
  *         self.line_comparison(lb2, *lines)
  *         return lb2             # <<<<<<<<<<<<<<
- * 
+ *
  *     def assertContinued(self, lb, *vals):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -20143,7 +20143,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14line_compa
 
   /* "smelly_tests/datatypes.py":357
  *             self.ae(l0, str(l2))
- * 
+ *
  *     def line_comparison_rewrap(self, lb, *lines):             # <<<<<<<<<<<<<<
  *         lb2 = LineBuf(len(lines), max(map(len, lines)))
  *         self.rewrap(lb, lb2)
@@ -20168,10 +20168,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14line_compa
 
 /* "smelly_tests/datatypes.py":363
  *         return lb2
- * 
+ *
  *     def assertContinued(self, lb, *vals):             # <<<<<<<<<<<<<<
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  */
 
 /* Python wrapper */
@@ -20275,10 +20275,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_16assertCont
   __Pyx_RefNannySetupContext("assertContinued", 0);
 
   /* "smelly_tests/datatypes.py":364
- * 
+ *
  *     def assertContinued(self, lb, *vals):
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_rewrap_wider(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 364, __pyx_L1_error)
@@ -20367,10 +20367,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_16assertCont
 
   /* "smelly_tests/datatypes.py":363
  *         return lb2
- * 
+ *
  *     def assertContinued(self, lb, *vals):             # <<<<<<<<<<<<<<
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  */
 
   /* function exit code */
@@ -20395,7 +20395,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_16assertCont
 
 /* "smelly_tests/datatypes.py":366
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  *     def test_rewrap_wider(self):             # <<<<<<<<<<<<<<
  *         'New buffer wider'
  *         lb = create_lbuf('0123 ', '56789')
@@ -20516,7 +20516,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_18test_rewra
  *         lb2 = self.line_comparison_rewrap(lb, '0123 5', '6789', '')
  *         self.assertContinued(lb2, False, True)             # <<<<<<<<<<<<<<
  *         self.ae(lb2.dirty_lines(), [0, 1])
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertContinued); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 370, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20574,7 +20574,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_18test_rewra
  *         lb2 = self.line_comparison_rewrap(lb, '0123 5', '6789', '')
  *         self.assertContinued(lb2, False, True)
  *         self.ae(lb2.dirty_lines(), [0, 1])             # <<<<<<<<<<<<<<
- * 
+ *
  *         lb = create_lbuf('12', 'abc')
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 371, __pyx_L1_error)
@@ -20657,7 +20657,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_18test_rewra
 
   /* "smelly_tests/datatypes.py":373
  *         self.ae(lb2.dirty_lines(), [0, 1])
- * 
+ *
  *         lb = create_lbuf('12', 'abc')             # <<<<<<<<<<<<<<
  *         lb2 = self.line_comparison_rewrap(lb, '12', 'abc')
  *         self.assertContinued(lb2, False, False)
@@ -20671,11 +20671,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_18test_rewra
   __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":374
- * 
+ *
  *         lb = create_lbuf('12', 'abc')
  *         lb2 = self.line_comparison_rewrap(lb, '12', 'abc')             # <<<<<<<<<<<<<<
  *         self.assertContinued(lb2, False, False)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_line_comparison_rewrap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 374, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20734,7 +20734,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_18test_rewra
  *         lb = create_lbuf('12', 'abc')
  *         lb2 = self.line_comparison_rewrap(lb, '12', 'abc')
  *         self.assertContinued(lb2, False, False)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_rewrap_narrower(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertContinued); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
@@ -20791,7 +20791,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_18test_rewra
 
   /* "smelly_tests/datatypes.py":366
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  *     def test_rewrap_wider(self):             # <<<<<<<<<<<<<<
  *         'New buffer wider'
  *         lb = create_lbuf('0123 ', '56789')
@@ -20819,7 +20819,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_18test_rewra
 
 /* "smelly_tests/datatypes.py":377
  *         self.assertContinued(lb2, False, False)
- * 
+ *
  *     def test_rewrap_narrower(self):             # <<<<<<<<<<<<<<
  *         'New buffer narrower'
  *         lb = create_lbuf('123', 'abcde')
@@ -21015,7 +21015,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_20test_rewra
  *         lb = create_lbuf('123  ', 'abcde')
  *         lb2 = self.line_comparison_rewrap(lb, '123', '  a', 'bcd', 'e')             # <<<<<<<<<<<<<<
  *         self.assertContinued(lb2, False, True, True, True)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_line_comparison_rewrap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -21080,7 +21080,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_20test_rewra
  *         lb = create_lbuf('123  ', 'abcde')
  *         lb2 = self.line_comparison_rewrap(lb, '123', '  a', 'bcd', 'e')
  *         self.assertContinued(lb2, False, True, True, True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_utils(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertContinued); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 384, __pyx_L1_error)
@@ -21143,7 +21143,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_20test_rewra
 
   /* "smelly_tests/datatypes.py":377
  *         self.assertContinued(lb2, False, False)
- * 
+ *
  *     def test_rewrap_narrower(self):             # <<<<<<<<<<<<<<
  *         'New buffer narrower'
  *         lb = create_lbuf('123', 'abcde')
@@ -21169,7 +21169,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_20test_rewra
 
 /* "smelly_tests/datatypes.py":386
  *         self.assertContinued(lb2, False, True, True, True)
- * 
+ *
  *     def test_utils(self):             # <<<<<<<<<<<<<<
  *         def w(x):
  *             return wcwidth(ord(x))
@@ -21190,11 +21190,11 @@ static PyObject *__pyx_pw_12smelly_tests_9datatypes_13TestDataTypes_23test_utils
 }
 
 /* "smelly_tests/datatypes.py":387
- * 
+ *
  *     def test_utils(self):
  *         def w(x):             # <<<<<<<<<<<<<<
  *             return wcwidth(ord(x))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -21228,7 +21228,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
  *     def test_utils(self):
  *         def w(x):
  *             return wcwidth(ord(x))             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(wcswidth('a\033[2mb'), 2)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -21258,11 +21258,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
   goto __pyx_L0;
 
   /* "smelly_tests/datatypes.py":387
- * 
+ *
  *     def test_utils(self):
  *         def w(x):             # <<<<<<<<<<<<<<
  *             return wcwidth(ord(x))
- * 
+ *
  */
 
   /* function exit code */
@@ -21281,7 +21281,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
 /* "smelly_tests/datatypes.py":419
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):             # <<<<<<<<<<<<<<
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''
@@ -21368,7 +21368,7 @@ static PyObject *__pyx_pw_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
 /* "smelly_tests/datatypes.py":424
  *             in_bp = ibp
- * 
+ *
  *             def on_csi(x):             # <<<<<<<<<<<<<<
  *                 nonlocal in_bp
  *                 if x == '200~':
@@ -21449,7 +21449,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
  *                 elif x == '201~':
  *                     in_bp = False             # <<<<<<<<<<<<<<
  *                 csi_r.append(x)
- * 
+ *
  */
     __Pyx_INCREF(Py_False);
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_in_bp);
@@ -21470,7 +21470,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
  *                 elif x == '201~':
  *                     in_bp = False
  *                 csi_r.append(x)             # <<<<<<<<<<<<<<
- * 
+ *
  *             for d in data:
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_csi_r)) { __Pyx_RaiseClosureNameError("csi_r"); __PYX_ERR(0, 430, __pyx_L1_error) }
@@ -21482,7 +21482,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
   /* "smelly_tests/datatypes.py":424
  *             in_bp = ibp
- * 
+ *
  *             def on_csi(x):             # <<<<<<<<<<<<<<
  *                 nonlocal in_bp
  *                 if x == '200~':
@@ -21502,7 +21502,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
 /* "smelly_tests/datatypes.py":419
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):             # <<<<<<<<<<<<<<
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''
@@ -21548,7 +21548,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
 
   /* "smelly_tests/datatypes.py":420
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):
  *             text_r, csi_r, apc_r, rest = [], [], [], []             # <<<<<<<<<<<<<<
  *             left = ''
@@ -21577,7 +21577,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''             # <<<<<<<<<<<<<<
  *             in_bp = ibp
- * 
+ *
  */
   __Pyx_INCREF(__pyx_kp_s__17);
   __pyx_v_left = __pyx_kp_s__17;
@@ -21586,7 +21586,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''
  *             in_bp = ibp             # <<<<<<<<<<<<<<
- * 
+ *
  *             def on_csi(x):
  */
   __Pyx_INCREF(__pyx_v_ibp);
@@ -21595,7 +21595,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
   /* "smelly_tests/datatypes.py":424
  *             in_bp = ibp
- * 
+ *
  *             def on_csi(x):             # <<<<<<<<<<<<<<
  *                 nonlocal in_bp
  *                 if x == '200~':
@@ -21607,7 +21607,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
   /* "smelly_tests/datatypes.py":432
  *                 csi_r.append(x)
- * 
+ *
  *             for d in data:             # <<<<<<<<<<<<<<
  *                 left = parse_input_from_terminal(
  *                     text_r.append, rest.append, on_csi, rest.append, rest.append, apc_r.append, left + d, in_bp)
@@ -21625,7 +21625,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
     __pyx_t_3 = 0;
 
     /* "smelly_tests/datatypes.py":433
- * 
+ *
  *             for d in data:
  *                 left = parse_input_from_terminal(             # <<<<<<<<<<<<<<
  *                     text_r.append, rest.append, on_csi, rest.append, rest.append, apc_r.append, left + d, in_bp)
@@ -21733,7 +21733,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
     /* "smelly_tests/datatypes.py":432
  *                 csi_r.append(x)
- * 
+ *
  *             for d in data:             # <<<<<<<<<<<<<<
  *                 left = parse_input_from_terminal(
  *                     text_r.append, rest.append, on_csi, rest.append, rest.append, apc_r.append, left + d, in_bp)
@@ -21928,7 +21928,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
  *             self.ae(csi, ' '.join(csi_r))
  *             self.ae(apc, ' '.join(apc_r))             # <<<<<<<<<<<<<<
  *             self.assertFalse(rest)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 438, __pyx_L1_error) }
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 438, __pyx_L1_error)
@@ -21988,7 +21988,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
  *             self.ae(csi, ' '.join(csi_r))
  *             self.ae(apc, ' '.join(apc_r))
  *             self.assertFalse(rest)             # <<<<<<<<<<<<<<
- * 
+ *
  *         tp('a\033[200~\033[32mxy\033[201~\033[33ma',
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 439, __pyx_L1_error) }
@@ -22013,7 +22013,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
   /* "smelly_tests/datatypes.py":419
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):             # <<<<<<<<<<<<<<
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''
@@ -22051,7 +22051,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_10test_utils
 
 /* "smelly_tests/datatypes.py":386
  *         self.assertContinued(lb2, False, True, True, True)
- * 
+ *
  *     def test_utils(self):             # <<<<<<<<<<<<<<
  *         def w(x):
  *             return wcwidth(ord(x))
@@ -22096,11 +22096,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/datatypes.py":387
- * 
+ *
  *     def test_utils(self):
  *         def w(x):             # <<<<<<<<<<<<<<
  *             return wcwidth(ord(x))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_9datatypes_13TestDataTypes_10test_utils_1w, 0, __pyx_n_s_TestDataTypes_test_utils_locals_2, NULL, __pyx_n_s_smelly_tests_datatypes, __pyx_d, ((PyObject *)__pyx_codeobj__70)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -22109,7 +22109,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
   /* "smelly_tests/datatypes.py":390
  *             return wcwidth(ord(x))
- * 
+ *
  *         self.ae(wcswidth('a\033[2mb'), 2)             # <<<<<<<<<<<<<<
  *         self.ae(wcswidth('\033a\033[2mb'), 2)
  *         self.ae(wcswidth('a\033]8;id=moo;https://foo\033\\a'), 2)
@@ -22183,7 +22183,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":391
- * 
+ *
  *         self.ae(wcswidth('a\033[2mb'), 2)
  *         self.ae(wcswidth('\033a\033[2mb'), 2)             # <<<<<<<<<<<<<<
  *         self.ae(wcswidth('a\033]8;id=moo;https://foo\033\\a'), 2)
@@ -23543,7 +23543,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
  *         self.ae(tpl('a\U0001f337', 3), 2)
  *         self.ae(tpl('a\U0001f337b', 4), 3)             # <<<<<<<<<<<<<<
  *         self.ae(tpl('a\x1b[31mbc', 2), 7)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -23602,7 +23602,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
  *         self.ae(tpl('a\U0001f337', 3), 2)
  *         self.ae(tpl('a\U0001f337b', 4), 3)
  *         self.ae(tpl('a\x1b[31mbc', 2), 7)             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 415, __pyx_L1_error)
@@ -23660,9 +23660,9 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
   /* "smelly_tests/datatypes.py":417
  *         self.ae(tpl('a\x1b[31mbc', 2), 7)
- * 
+ *
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 417, __pyx_L1_error)
@@ -23735,7 +23735,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
   /* "smelly_tests/datatypes.py":419
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):             # <<<<<<<<<<<<<<
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''
@@ -23755,7 +23755,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
   __pyx_t_2 = 0;
 
   /* "smelly_tests/datatypes.py":442
- * 
+ *
  *         tp('a\033[200~\033[32mxy\033[201~\033[33ma',
  *            text='a \033[32m xy a', csi='200~ 201~ 33m')             # <<<<<<<<<<<<<<
  *         tp('abc', text='abc')
@@ -23768,7 +23768,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
   /* "smelly_tests/datatypes.py":441
  *             self.assertFalse(rest)
- * 
+ *
  *         tp('a\033[200~\033[32mxy\033[201~\033[33ma',             # <<<<<<<<<<<<<<
  *            text='a \033[32m xy a', csi='200~ 201~ 33m')
  *         tp('abc', text='abc')
@@ -23862,7 +23862,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
  *         tp('a\033[', 'mb', text='a b', csi='m')
  *         tp('a\033', '_', 'x\033', '\\b', text='a b', apc='x')             # <<<<<<<<<<<<<<
  *         tp('a\033_', 'x', '\033', '\\', 'b', text='a b', apc='x')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -23877,7 +23877,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
  *         tp('a\033[', 'mb', text='a b', csi='m')
  *         tp('a\033', '_', 'x\033', '\\b', text='a b', apc='x')
  *         tp('a\033_', 'x', '\033', '\\', 'b', text='a b', apc='x')             # <<<<<<<<<<<<<<
- * 
+ *
  *         for prefix in ('/tmp', tempfile.gettempdir()):
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 449, __pyx_L1_error)
@@ -23891,7 +23891,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
   /* "smelly_tests/datatypes.py":451
  *         tp('a\033_', 'x', '\033', '\\', 'b', text='a b', apc='x')
- * 
+ *
  *         for prefix in ('/tmp', tempfile.gettempdir()):             # <<<<<<<<<<<<<<
  *             for path in ('a.png', 'x/b.jpg', 'y/../c.jpg'):
  *                 self.assertTrue(is_path_in_temp_dir(
@@ -23938,7 +23938,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
     __pyx_t_4 = 0;
 
     /* "smelly_tests/datatypes.py":452
- * 
+ *
  *         for prefix in ('/tmp', tempfile.gettempdir()):
  *             for path in ('a.png', 'x/b.jpg', 'y/../c.jpg'):             # <<<<<<<<<<<<<<
  *                 self.assertTrue(is_path_in_temp_dir(
@@ -24063,7 +24063,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
       /* "smelly_tests/datatypes.py":452
- * 
+ *
  *         for prefix in ('/tmp', tempfile.gettempdir()):
  *             for path in ('a.png', 'x/b.jpg', 'y/../c.jpg'):             # <<<<<<<<<<<<<<
  *                 self.assertTrue(is_path_in_temp_dir(
@@ -24074,7 +24074,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
     /* "smelly_tests/datatypes.py":451
  *         tp('a\033_', 'x', '\033', '\\', 'b', text='a b', apc='x')
- * 
+ *
  *         for prefix in ('/tmp', tempfile.gettempdir()):             # <<<<<<<<<<<<<<
  *             for path in ('a.png', 'x/b.jpg', 'y/../c.jpg'):
  *                 self.assertTrue(is_path_in_temp_dir(
@@ -24264,7 +24264,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
   /* "smelly_tests/datatypes.py":386
  *         self.assertContinued(lb2, False, True, True, True)
- * 
+ *
  *     def test_utils(self):             # <<<<<<<<<<<<<<
  *         def w(x):
  *             return wcwidth(ord(x))
@@ -24300,7 +24300,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_22test_utils
 
 /* "smelly_tests/datatypes.py":462
  *             'h://xn--ab-7kc.com/El Nio/')
- * 
+ *
  *     def test_color_profile(self):             # <<<<<<<<<<<<<<
  *         c = ColorProfile()
  *         c.update_ansi_color_table(build_ansi_color_table())
@@ -24340,7 +24340,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_24test_color
   __Pyx_RefNannySetupContext("test_color_profile", 0);
 
   /* "smelly_tests/datatypes.py":463
- * 
+ *
  *     def test_color_profile(self):
  *         c = ColorProfile()             # <<<<<<<<<<<<<<
  *         c.update_ansi_color_table(build_ansi_color_table())
@@ -24449,7 +24449,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_24test_color
  *             col = getattr(defaults, f'color{i}')
  *             self.ae(c.as_color(i << 8 | 1), col)             # <<<<<<<<<<<<<<
  *         self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 467, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -24530,7 +24530,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_24test_color
  *             col = getattr(defaults, f'color{i}')
  *             self.ae(c.as_color(i << 8 | 1), col)
  *         self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_historybuf(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 468, __pyx_L1_error)
@@ -24610,7 +24610,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_24test_color
 
   /* "smelly_tests/datatypes.py":462
  *             'h://xn--ab-7kc.com/El Nio/')
- * 
+ *
  *     def test_color_profile(self):             # <<<<<<<<<<<<<<
  *         c = ColorProfile()
  *         c.update_ansi_color_table(build_ansi_color_table())
@@ -24639,7 +24639,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_24test_color
 
 /* "smelly_tests/datatypes.py":470
  *         self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))
- * 
+ *
  *     def test_historybuf(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         hb = HistoryBuf(5, 5)
@@ -24695,7 +24695,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
   __Pyx_RefNannySetupContext("test_historybuf", 0);
 
   /* "smelly_tests/datatypes.py":471
- * 
+ *
  *     def test_historybuf(self):
  *         lb = filled_line_buf()             # <<<<<<<<<<<<<<
  *         hb = HistoryBuf(5, 5)
@@ -25692,7 +25692,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
  *             hb.push(line)
  *         for i in range(3000):             # <<<<<<<<<<<<<<
  *             self.ae(str(hb.line(i)).rstrip(), str(3000 - 1 - i))
- * 
+ *
  */
   for (__pyx_t_8 = 0; __pyx_t_8 < 0xBB8; __pyx_t_8+=1) {
     __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 491, __pyx_L1_error)
@@ -25704,7 +25704,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
  *             hb.push(line)
  *         for i in range(3000):
  *             self.ae(str(hb.line(i)).rstrip(), str(3000 - 1 - i))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # rewrap
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 492, __pyx_L1_error)
@@ -25805,7 +25805,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
   }
 
   /* "smelly_tests/datatypes.py":495
- * 
+ *
  *         # rewrap
  *         hb = filled_history_buf(5, 5)             # <<<<<<<<<<<<<<
  *         hb2 = HistoryBuf(hb.ynum, hb.xnum)
@@ -26457,7 +26457,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
               __Pyx_GIVEREF(__pyx_t_1);
               __Pyx_XGIVEREF(__pyx_t_3);
               __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_3);
-              __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+              __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
               __PYX_ERR(0, 505, __pyx_L21_except_error)
             }
             __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -26999,7 +26999,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
  *         hb2.rewrap(hb3)
  *         for i in range(hb.ynum):             # <<<<<<<<<<<<<<
  *             self.ae(hb.line(i), hb3.line(i))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_hb, __pyx_n_s_ynum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 517, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -27053,7 +27053,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
  *         hb2.rewrap(hb3)
  *         for i in range(hb.ynum):
  *             self.ae(hb.line(i), hb3.line(i))             # <<<<<<<<<<<<<<
- * 
+ *
  *         hb2 = HistoryBuf(hb.ynum, hb.xnum)
  */
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 518, __pyx_L1_error)
@@ -27148,14 +27148,14 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
  *         hb2.rewrap(hb3)
  *         for i in range(hb.ynum):             # <<<<<<<<<<<<<<
  *             self.ae(hb.line(i), hb3.line(i))
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/datatypes.py":520
  *             self.ae(hb.line(i), hb3.line(i))
- * 
+ *
  *         hb2 = HistoryBuf(hb.ynum, hb.xnum)             # <<<<<<<<<<<<<<
  *         large_hb.rewrap(hb2)
  *         hb2 = HistoryBuf(large_hb.ynum, large_hb.xnum)
@@ -27219,7 +27219,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
   __pyx_t_2 = 0;
 
   /* "smelly_tests/datatypes.py":521
- * 
+ *
  *         hb2 = HistoryBuf(hb.ynum, hb.xnum)
  *         large_hb.rewrap(hb2)             # <<<<<<<<<<<<<<
  *         hb2 = HistoryBuf(large_hb.ynum, large_hb.xnum)
@@ -27249,7 +27249,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
  *         large_hb.rewrap(hb2)
  *         hb2 = HistoryBuf(large_hb.ynum, large_hb.xnum)             # <<<<<<<<<<<<<<
  *         large_hb.rewrap(hb2)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_HistoryBuf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 522, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -27313,7 +27313,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
  *         large_hb.rewrap(hb2)
  *         hb2 = HistoryBuf(large_hb.ynum, large_hb.xnum)
  *         large_hb.rewrap(hb2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_ansi_repr(self):
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_large_hb, __pyx_n_s_rewrap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 523, __pyx_L1_error)
@@ -27337,7 +27337,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
 
   /* "smelly_tests/datatypes.py":470
  *         self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))
- * 
+ *
  *     def test_historybuf(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         hb = HistoryBuf(5, 5)
@@ -27373,7 +27373,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_26test_histo
 
 /* "smelly_tests/datatypes.py":525
  *         large_hb.rewrap(hb2)
- * 
+ *
  *     def test_ansi_repr(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         l0 = lb.line(0)
@@ -27419,7 +27419,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_28test_ansi_
   __Pyx_RefNannySetupContext("test_ansi_repr", 0);
 
   /* "smelly_tests/datatypes.py":526
- * 
+ *
  *     def test_ansi_repr(self):
  *         lb = filled_line_buf()             # <<<<<<<<<<<<<<
  *         l0 = lb.line(0)
@@ -28324,7 +28324,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_28test_ansi_
  *         a = []
  *         hb.as_ansi(a.append)             # <<<<<<<<<<<<<<
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_hb, __pyx_n_s_as_ansi); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 553, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -28352,7 +28352,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_28test_ansi_
  *         a = []
  *         hb.as_ansi(a.append)
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_strip_csi(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 554, __pyx_L1_error)
@@ -28498,7 +28498,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_28test_ansi_
 
   /* "smelly_tests/datatypes.py":525
  *         large_hb.rewrap(hb2)
- * 
+ *
  *     def test_ansi_repr(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         l0 = lb.line(0)
@@ -28532,7 +28532,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_28test_ansi_
 
 /* "smelly_tests/datatypes.py":556
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])
- * 
+ *
  *     def test_strip_csi(self):             # <<<<<<<<<<<<<<
  *         def q(x, y=''):
  *             self.ae(y or x, strip_csi(x))
@@ -28553,11 +28553,11 @@ static PyObject *__pyx_pw_12smelly_tests_9datatypes_13TestDataTypes_31test_strip
 }
 
 /* "smelly_tests/datatypes.py":557
- * 
+ *
  *     def test_strip_csi(self):
  *         def q(x, y=''):             # <<<<<<<<<<<<<<
  *             self.ae(y or x, strip_csi(x))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -28653,7 +28653,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14test_strip
  *     def test_strip_csi(self):
  *         def q(x, y=''):
  *             self.ae(y or x, strip_csi(x))             # <<<<<<<<<<<<<<
- * 
+ *
  *         q('test')
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 558, __pyx_L1_error) }
@@ -28738,11 +28738,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14test_strip
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":557
- * 
+ *
  *     def test_strip_csi(self):
  *         def q(x, y=''):             # <<<<<<<<<<<<<<
  *             self.ae(y or x, strip_csi(x))
- * 
+ *
  */
 
   /* function exit code */
@@ -28765,7 +28765,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14test_strip
 
 /* "smelly_tests/datatypes.py":556
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])
- * 
+ *
  *     def test_strip_csi(self):             # <<<<<<<<<<<<<<
  *         def q(x, y=''):
  *             self.ae(y or x, strip_csi(x))
@@ -28794,11 +28794,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_30test_strip
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/datatypes.py":557
- * 
+ *
  *     def test_strip_csi(self):
  *         def q(x, y=''):             # <<<<<<<<<<<<<<
  *             self.ae(y or x, strip_csi(x))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_9datatypes_13TestDataTypes_14test_strip_csi_1q, 0, __pyx_n_s_TestDataTypes_test_strip_csi_loc, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_datatypes, __pyx_d, ((PyObject *)__pyx_codeobj__105)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 557, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -28808,7 +28808,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_30test_strip
 
   /* "smelly_tests/datatypes.py":560
  *             self.ae(y or x, strip_csi(x))
- * 
+ *
  *         q('test')             # <<<<<<<<<<<<<<
  *         q('a\x1bbc', 'ac')
  *         q('a\x1b[bc', 'ac')
@@ -28818,7 +28818,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_30test_strip
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":561
- * 
+ *
  *         q('test')
  *         q('a\x1bbc', 'ac')             # <<<<<<<<<<<<<<
  *         q('a\x1b[bc', 'ac')
@@ -28833,7 +28833,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_30test_strip
  *         q('a\x1bbc', 'ac')
  *         q('a\x1b[bc', 'ac')             # <<<<<<<<<<<<<<
  *         q('a\x1b[12;34:43mbc', 'abc')
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14test_strip_csi_q(__pyx_v_q, __pyx_kp_s_a_bc_2, __pyx_n_s_ac); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 562, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -28843,7 +28843,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_30test_strip
  *         q('a\x1bbc', 'ac')
  *         q('a\x1b[bc', 'ac')
  *         q('a\x1b[12;34:43mbc', 'abc')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_single_key(self):
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_14test_strip_csi_q(__pyx_v_q, __pyx_kp_s_a_12_34_43mbc, __pyx_n_s_abc); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 563, __pyx_L1_error)
@@ -28852,7 +28852,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_30test_strip
 
   /* "smelly_tests/datatypes.py":556
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])
- * 
+ *
  *     def test_strip_csi(self):             # <<<<<<<<<<<<<<
  *         def q(x, y=''):
  *             self.ae(y or x, strip_csi(x))
@@ -28875,10 +28875,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_30test_strip
 
 /* "smelly_tests/datatypes.py":565
  *         q('a\x1b[12;34:43mbc', 'abc')
- * 
+ *
  *     def test_single_key(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey
- * 
+ *
  */
 
 /* Python wrapper */
@@ -28919,10 +28919,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
   __Pyx_RefNannySetupContext("test_single_key", 0);
 
   /* "smelly_tests/datatypes.py":566
- * 
+ *
  *     def test_single_key(self):
  *         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey             # <<<<<<<<<<<<<<
- * 
+ *
  *         for m in (GLFW_MOD_smelly, GLFW_MOD_SHIFT):
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 566, __pyx_L1_error)
@@ -28958,7 +28958,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
 
   /* "smelly_tests/datatypes.py":568
  *         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey
- * 
+ *
  *         for m in (GLFW_MOD_smelly, GLFW_MOD_SHIFT):             # <<<<<<<<<<<<<<
  *             s = SingleKey(mods=m)
  *             self.ae(s.mods, m)
@@ -28985,7 +28985,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
     __pyx_t_2 = 0;
 
     /* "smelly_tests/datatypes.py":569
- * 
+ *
  *         for m in (GLFW_MOD_smelly, GLFW_MOD_SHIFT):
  *             s = SingleKey(mods=m)             # <<<<<<<<<<<<<<
  *             self.ae(s.mods, m)
@@ -29062,7 +29062,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
 
     /* "smelly_tests/datatypes.py":568
  *         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey
- * 
+ *
  *         for m in (GLFW_MOD_smelly, GLFW_MOD_SHIFT):             # <<<<<<<<<<<<<<
  *             s = SingleKey(mods=m)
  *             self.ae(s.mods, m)
@@ -30044,7 +30044,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
  *             hash(SingleKey(key=1, mods=2)),
  *             hash(SingleKey(key=1)))             # <<<<<<<<<<<<<<
  *         self.assertNotEqual(SingleKey(key=1, mods=2), SingleKey(key=1))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 596, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -30111,7 +30111,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
  *             hash(SingleKey(key=1, mods=2)),
  *             hash(SingleKey(key=1)))
  *         self.assertNotEqual(SingleKey(key=1, mods=2), SingleKey(key=1))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_notify_identifier_sanitization(self):
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertNotEqual); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 597, __pyx_L1_error)
@@ -30182,10 +30182,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
 
   /* "smelly_tests/datatypes.py":565
  *         q('a\x1b[12;34:43mbc', 'abc')
- * 
+ *
  *     def test_single_key(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey
- * 
+ *
  */
 
   /* function exit code */
@@ -30213,10 +30213,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_32test_singl
 
 /* "smelly_tests/datatypes.py":599
  *         self.assertNotEqual(SingleKey(key=1, mods=2), SingleKey(key=1))
- * 
+ *
  *     def test_notify_identifier_sanitization(self):             # <<<<<<<<<<<<<<
  *         from smelly.notify import sanitize_identifier_pat
- * 
+ *
  */
 
 /* Python wrapper */
@@ -30249,10 +30249,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_34test_notif
   __Pyx_RefNannySetupContext("test_notify_identifier_sanitization", 0);
 
   /* "smelly_tests/datatypes.py":600
- * 
+ *
  *     def test_notify_identifier_sanitization(self):
  *         from smelly.notify import sanitize_identifier_pat             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 600, __pyx_L1_error)
@@ -30272,9 +30272,9 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_34test_notif
 
   /* "smelly_tests/datatypes.py":602
  *         from smelly.notify import sanitize_identifier_pat
- * 
+ *
  *         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_bracketed_paste_sanitizer(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 602, __pyx_L1_error)
@@ -30352,10 +30352,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_34test_notif
 
   /* "smelly_tests/datatypes.py":599
  *         self.assertNotEqual(SingleKey(key=1, mods=2), SingleKey(key=1))
- * 
+ *
  *     def test_notify_identifier_sanitization(self):             # <<<<<<<<<<<<<<
  *         from smelly.notify import sanitize_identifier_pat
- * 
+ *
  */
 
   /* function exit code */
@@ -30378,10 +30378,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_34test_notif
 
 /* "smelly_tests/datatypes.py":604
  *         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')
- * 
+ *
  *     def test_bracketed_paste_sanitizer(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import sanitize_for_bracketed_paste
- * 
+ *
  */
 
 /* Python wrapper */
@@ -30418,10 +30418,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
   __Pyx_RefNannySetupContext("test_bracketed_paste_sanitizer", 0);
 
   /* "smelly_tests/datatypes.py":605
- * 
+ *
  *     def test_bracketed_paste_sanitizer(self):
  *         from smelly.utils import sanitize_for_bracketed_paste             # <<<<<<<<<<<<<<
- * 
+ *
  *         for x in ('\x1b[201~ab\x9b201~cd', '\x1b[201\x1b[201~~ab'):  # ]]]
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 605, __pyx_L1_error)
@@ -30441,7 +30441,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
 
   /* "smelly_tests/datatypes.py":607
  *         from smelly.utils import sanitize_for_bracketed_paste
- * 
+ *
  *         for x in ('\x1b[201~ab\x9b201~cd', '\x1b[201\x1b[201~~ab'):  # ]]]             # <<<<<<<<<<<<<<
  *             q = sanitize_for_bracketed_paste(x.encode('utf-8'))
  *             self.assertNotIn(b'\x1b[201~', q)
@@ -30459,7 +30459,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
     __pyx_t_1 = 0;
 
     /* "smelly_tests/datatypes.py":608
- * 
+ *
  *         for x in ('\x1b[201~ab\x9b201~cd', '\x1b[201\x1b[201~~ab'):  # ]]]
  *             q = sanitize_for_bracketed_paste(x.encode('utf-8'))             # <<<<<<<<<<<<<<
  *             self.assertNotIn(b'\x1b[201~', q)
@@ -30563,7 +30563,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
  *             self.assertNotIn(b'\x1b[201~', q)
  *             self.assertNotIn('\x9b201~'.encode('utf-8'), q)             # <<<<<<<<<<<<<<
  *             self.assertIn(b'ab', q)
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertNotIn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 610, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -30637,7 +30637,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
  *             self.assertNotIn(b'\x1b[201~', q)
  *             self.assertNotIn('\x9b201~'.encode('utf-8'), q)
  *             self.assertIn(b'ab', q)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_expand_ansi_c_escapes(self):
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIn); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 611, __pyx_L1_error)
@@ -30691,7 +30691,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
 
     /* "smelly_tests/datatypes.py":607
  *         from smelly.utils import sanitize_for_bracketed_paste
- * 
+ *
  *         for x in ('\x1b[201~ab\x9b201~cd', '\x1b[201\x1b[201~~ab'):  # ]]]             # <<<<<<<<<<<<<<
  *             q = sanitize_for_bracketed_paste(x.encode('utf-8'))
  *             self.assertNotIn(b'\x1b[201~', q)
@@ -30701,10 +30701,10 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
 
   /* "smelly_tests/datatypes.py":604
  *         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')
- * 
+ *
  *     def test_bracketed_paste_sanitizer(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import sanitize_for_bracketed_paste
- * 
+ *
  */
 
   /* function exit code */
@@ -30730,7 +30730,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_36test_brack
 
 /* "smelly_tests/datatypes.py":613
  *             self.assertIn(b'ab', q)
- * 
+ *
  *     def test_expand_ansi_c_escapes(self):             # <<<<<<<<<<<<<<
  *         for src, expected in {
  *             'abc': 'abc',
@@ -30808,7 +30808,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_38test_expan
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":614
- * 
+ *
  *     def test_expand_ansi_c_escapes(self):
  *         for src, expected in {             # <<<<<<<<<<<<<<
  *             'abc': 'abc',
@@ -30864,11 +30864,11 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_38test_expan
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -30986,7 +30986,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_38test_expan
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "smelly_tests/datatypes.py":614
- * 
+ *
  *     def test_expand_ansi_c_escapes(self):
  *         for src, expected in {             # <<<<<<<<<<<<<<
  *             'abc': 'abc',
@@ -30997,7 +30997,7 @@ static PyObject *__pyx_pf_12smelly_tests_9datatypes_13TestDataTypes_38test_expan
 
   /* "smelly_tests/datatypes.py":613
  *             self.assertIn(b'ab', q)
- * 
+ *
  *     def test_expand_ansi_c_escapes(self):             # <<<<<<<<<<<<<<
  *         for src, expected in {
  *             'abc': 'abc',
@@ -32206,7 +32206,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":43
  *             self.assertIsNone(to_color(x))
- * 
+ *
  *         def c(spec, r=0, g=0, b=0, a=0):             # <<<<<<<<<<<<<<
  *             c = to_color(spec)
  *             self.ae(c.red, r)
@@ -32221,7 +32221,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":50
  *             self.ae(c.alpha, a)
- * 
+ *
  *         c('#eee', 0xEE, 0xEE, 0xEE)             # <<<<<<<<<<<<<<
  *         c('#234567', 0x23, 0x45, 0x67)
  *         c('#abcabcdef', 0xAB, 0xAB, 0xDE)
@@ -32231,7 +32231,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly_tests/datatypes.py":51
- * 
+ *
  *         c('#eee', 0xEE, 0xEE, 0xEE)
  *         c('#234567', 0x23, 0x45, 0x67)             # <<<<<<<<<<<<<<
  *         c('#abcabcdef', 0xAB, 0xAB, 0xDE)
@@ -32345,7 +32345,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(Color(1, 2, 3).as_sharp, '#010203')
  *         self.ae(Color(1, 2, 3, 4).as_sharp, '#04010203')             # <<<<<<<<<<<<<<
  *         self.ae(Color(1, 2, 3, 4).rgb, 0x10203)
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(4, __pyx_int_1, __pyx_int_2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -32385,7 +32385,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__19);
 
   /* "smelly_tests/datatypes.py":87
- * 
+ *
  *         lb = filled_line_buf(5, 5, filled_cursor())
  *         lb2 = LineBuf(5, 5)             # <<<<<<<<<<<<<<
  *         lb2.copy_old(lb)
@@ -32451,7 +32451,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__26);
 
   /* "smelly_tests/datatypes.py":176
- * 
+ *
  *     def test_line(self):
  *         lb = LineBuf(2, 3)             # <<<<<<<<<<<<<<
  *         for y in range(lb.ynum):
@@ -32520,7 +32520,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(str(l0), t)
  *         l0.set_text('a', 0, 1, C())
  *         self.assertEqual(str(l0), 'a' + t[1:])             # <<<<<<<<<<<<<<
- * 
+ *
  *         c = C(3, 5)
  */
   __pyx_slice__42 = PySlice_New(__pyx_int_1, Py_None, Py_None); if (unlikely(!__pyx_slice__42)) __PYX_ERR(0, 204, __pyx_L1_error)
@@ -32529,7 +32529,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":206
  *         self.assertEqual(str(l0), 'a' + t[1:])
- * 
+ *
  *         c = C(3, 5)             # <<<<<<<<<<<<<<
  *         c.bold = c.italic = c.reverse = c.strikethrough = c.dim = True
  *         c.fg = c.bg = c.decoration_fg = 0x0101
@@ -32609,7 +32609,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         l3.set_text(t, 0, len(t), C())
  *         l3.left_shift(7, 3)             # <<<<<<<<<<<<<<
  *         self.ae(str(l3), t)
- * 
+ *
  */
   __pyx_tuple__50 = PyTuple_Pack(2, __pyx_int_7, __pyx_int_3); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
@@ -32617,7 +32617,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":259
  *         self.set_options()
- * 
+ *
  *         def create(t):             # <<<<<<<<<<<<<<
  *             lb = create.lb = LineBuf(1, len(t))
  *             lf = lb.line(0)
@@ -32629,7 +32629,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":282
  *         self.ae(l3.url_start_at(5), 0)
- * 
+ *
  *         def lspace_test(n, scheme='http'):             # <<<<<<<<<<<<<<
  *             lf = create(' ' * n + scheme + '://acme.com')
  *             for i in range(0, n):
@@ -32644,7 +32644,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":303
  *                 2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))
- * 
+ *
  *         def no_url(t):             # <<<<<<<<<<<<<<
  *             lf = create(t)
  *             for s in range(len(lf)):
@@ -32658,7 +32658,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         l4 = create('http://a.b.')
  *         self.ae(l4.url_end_at(0), len(l4) - 2)
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def rewrap(self, lb, lb2):
  */
   __pyx_tuple__61 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_0, Py_True); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 322, __pyx_L1_error)
@@ -32689,7 +32689,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":373
  *         self.ae(lb2.dirty_lines(), [0, 1])
- * 
+ *
  *         lb = create_lbuf('12', 'abc')             # <<<<<<<<<<<<<<
  *         lb2 = self.line_comparison_rewrap(lb, '12', 'abc')
  *         self.assertContinued(lb2, False, False)
@@ -32722,7 +32722,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":424
  *             in_bp = ibp
- * 
+ *
  *             def on_csi(x):             # <<<<<<<<<<<<<<
  *                 nonlocal in_bp
  *                 if x == '200~':
@@ -32733,11 +32733,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__68 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__67, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_datatypes_py, __pyx_n_s_on_csi, 424, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__68)) __PYX_ERR(0, 424, __pyx_L1_error)
 
   /* "smelly_tests/datatypes.py":387
- * 
+ *
  *     def test_utils(self):
  *         def w(x):             # <<<<<<<<<<<<<<
  *             return wcwidth(ord(x))
- * 
+ *
  */
   __pyx_tuple__69 = PyTuple_Pack(1, __pyx_n_s_x); if (unlikely(!__pyx_tuple__69)) __PYX_ERR(0, 387, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__69);
@@ -32826,7 +32826,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(tpl('a\U0001f337', 3), 2)
  *         self.ae(tpl('a\U0001f337b', 4), 3)             # <<<<<<<<<<<<<<
  *         self.ae(tpl('a\x1b[31mbc', 2), 7)
- * 
+ *
  */
   __pyx_tuple__83 = PyTuple_Pack(2, __pyx_kp_s_a_U0001f337b, __pyx_int_4); if (unlikely(!__pyx_tuple__83)) __PYX_ERR(0, 414, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__83);
@@ -32836,7 +32836,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae(tpl('a\U0001f337', 3), 2)
  *         self.ae(tpl('a\U0001f337b', 4), 3)
  *         self.ae(tpl('a\x1b[31mbc', 2), 7)             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
  */
   __pyx_tuple__84 = PyTuple_Pack(2, __pyx_kp_s_a_31mbc, __pyx_int_2); if (unlikely(!__pyx_tuple__84)) __PYX_ERR(0, 415, __pyx_L1_error)
@@ -32845,7 +32845,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":419
  *         self.ae(sanitize_title('a\0\01 \t\n\f\rb'), 'a b')
- * 
+ *
  *         def tp(*data, leftover='', text='', csi='', apc='', ibp=False):             # <<<<<<<<<<<<<<
  *             text_r, csi_r, apc_r, rest = [], [], [], []
  *             left = ''
@@ -32857,7 +32857,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":441
  *             self.assertFalse(rest)
- * 
+ *
  *         tp('a\033[200~\033[32mxy\033[201~\033[33ma',             # <<<<<<<<<<<<<<
  *            text='a \033[32m xy a', csi='200~ 201~ 33m')
  *         tp('abc', text='abc')
@@ -32926,7 +32926,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         tp('a\033[', 'mb', text='a b', csi='m')
  *         tp('a\033', '_', 'x\033', '\\b', text='a b', apc='x')             # <<<<<<<<<<<<<<
  *         tp('a\033_', 'x', '\033', '\\', 'b', text='a b', apc='x')
- * 
+ *
  */
   __pyx_tuple__95 = PyTuple_Pack(4, __pyx_kp_s_a_6, __pyx_n_s__94, __pyx_kp_s_x_3, __pyx_kp_s_b_2); if (unlikely(!__pyx_tuple__95)) __PYX_ERR(0, 448, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__95);
@@ -32936,7 +32936,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         tp('a\033[', 'mb', text='a b', csi='m')
  *         tp('a\033', '_', 'x\033', '\\b', text='a b', apc='x')
  *         tp('a\033_', 'x', '\033', '\\', 'b', text='a b', apc='x')             # <<<<<<<<<<<<<<
- * 
+ *
  *         for prefix in ('/tmp', tempfile.gettempdir()):
  */
   __pyx_tuple__98 = PyTuple_Pack(5, __pyx_kp_s_a_8, __pyx_n_s_x, __pyx_kp_s__96, __pyx_kp_s__97, __pyx_n_s_b); if (unlikely(!__pyx_tuple__98)) __PYX_ERR(0, 449, __pyx_L1_error)
@@ -32944,7 +32944,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__98);
 
   /* "smelly_tests/datatypes.py":452
- * 
+ *
  *         for prefix in ('/tmp', tempfile.gettempdir()):
  *             for path in ('a.png', 'x/b.jpg', 'y/../c.jpg'):             # <<<<<<<<<<<<<<
  *                 self.assertTrue(is_path_in_temp_dir(
@@ -32969,7 +32969,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             col = getattr(defaults, f'color{i}')
  *             self.ae(c.as_color(i << 8 | 1), col)
  *         self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_historybuf(self):
  */
   __pyx_tuple__101 = PyTuple_Pack(3, __pyx_int_238, __pyx_int_238, __pyx_int_238); if (unlikely(!__pyx_tuple__101)) __PYX_ERR(0, 468, __pyx_L1_error)
@@ -32988,11 +32988,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__102);
 
   /* "smelly_tests/datatypes.py":557
- * 
+ *
  *     def test_strip_csi(self):
  *         def q(x, y=''):             # <<<<<<<<<<<<<<
  *             self.ae(y or x, strip_csi(x))
- * 
+ *
  */
   __pyx_tuple__104 = PyTuple_Pack(2, __pyx_n_s_x, __pyx_n_s_y); if (unlikely(!__pyx_tuple__104)) __PYX_ERR(0, 557, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__104);
@@ -33004,7 +33004,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":560
  *             self.ae(y or x, strip_csi(x))
- * 
+ *
  *         q('test')             # <<<<<<<<<<<<<<
  *         q('a\x1bbc', 'ac')
  *         q('a\x1b[bc', 'ac')
@@ -33026,9 +33026,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":602
  *         from smelly.notify import sanitize_identifier_pat
- * 
+ *
  *         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_bracketed_paste_sanitizer(self):
  */
   __pyx_tuple__110 = PyTuple_Pack(2, __pyx_kp_s__17, __pyx_kp_s_abc_2); if (unlikely(!__pyx_tuple__110)) __PYX_ERR(0, 602, __pyx_L1_error)
@@ -33037,7 +33037,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":607
  *         from smelly.utils import sanitize_for_bracketed_paste
- * 
+ *
  *         for x in ('\x1b[201~ab\x9b201~cd', '\x1b[201\x1b[201~~ab'):  # ]]]             # <<<<<<<<<<<<<<
  *             q = sanitize_for_bracketed_paste(x.encode('utf-8'))
  *             self.assertNotIn(b'\x1b[201~', q)
@@ -33047,8 +33047,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__111);
 
   /* "smelly_tests/datatypes.py":28
- * 
- * 
+ *
+ *
  * def create_lbuf(*lines):             # <<<<<<<<<<<<<<
  *     maxw = max(map(len, lines))
  *     ans = LineBuf(len(lines), maxw)
@@ -33059,7 +33059,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__113 = (PyObject*)__Pyx_PyCode_New(0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__112, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_datatypes_py, __pyx_n_s_create_lbuf, 28, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__113)) __PYX_ERR(0, 28, __pyx_L1_error)
 
   /* "smelly_tests/datatypes.py":39
- * 
+ *
  * class TestDataTypes(BaseTest):
  *     def test_to_color(self):             # <<<<<<<<<<<<<<
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -33072,7 +33072,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":67
  *         self.ae(Color(1, 2, 3, 4).rgb, 0x10203)
- * 
+ *
  *     def test_linebuf(self):             # <<<<<<<<<<<<<<
  *         old = filled_line_buf(2, 3, filled_cursor())
  *         new = LineBuf(1, 3)
@@ -33084,7 +33084,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":175
  *             self.ae(lb.line(i), lb2.line(i))
- * 
+ *
  *     def test_line(self):             # <<<<<<<<<<<<<<
  *         lb = LineBuf(2, 3)
  *         for y in range(lb.ynum):
@@ -33096,10 +33096,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":256
  *         self.assertEqualAttributes(l3.cursor_from(0), q)
- * 
+ *
  *     def test_url_at(self):             # <<<<<<<<<<<<<<
  *         self.set_options()
- * 
+ *
  */
   __pyx_tuple__120 = PyTuple_Pack(16, __pyx_n_s_self, __pyx_n_s_create, __pyx_n_s_create, __pyx_n_s_l0, __pyx_n_s_trail, __pyx_n_s_lx, __pyx_n_s_l2, __pyx_n_s_l3, __pyx_n_s_lspace_test, __pyx_n_s_lspace_test, __pyx_n_s_i, __pyx_n_s_scheme, __pyx_n_s_s, __pyx_n_s_no_url, __pyx_n_s_no_url, __pyx_n_s_l4); if (unlikely(!__pyx_tuple__120)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__120);
@@ -33108,7 +33108,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":324
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)
- * 
+ *
  *     def rewrap(self, lb, lb2):             # <<<<<<<<<<<<<<
  *         hb = HistoryBuf(lb2.ynum, lb2.xnum)
  *         cy = lb.rewrap(lb2, hb)
@@ -33120,7 +33120,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":329
  *         return hb, cy[1]
- * 
+ *
  *     def test_rewrap_simple(self):             # <<<<<<<<<<<<<<
  *         'Same width buffers'
  *         lb = filled_line_buf(5, 5)
@@ -33132,7 +33132,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":352
  *         self.ae(lb2.dirty_lines(), list(range(lb2.ynum)))
- * 
+ *
  *     def line_comparison(self, buf, *lines):             # <<<<<<<<<<<<<<
  *         for i, l0 in enumerate(lines):
  *             l2 = buf.line(i)
@@ -33144,7 +33144,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":357
  *             self.ae(l0, str(l2))
- * 
+ *
  *     def line_comparison_rewrap(self, lb, *lines):             # <<<<<<<<<<<<<<
  *         lb2 = LineBuf(len(lines), max(map(len, lines)))
  *         self.rewrap(lb, lb2)
@@ -33156,10 +33156,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":363
  *         return lb2
- * 
+ *
  *     def assertContinued(self, lb, *vals):             # <<<<<<<<<<<<<<
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  */
   __pyx_tuple__130 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_lb, __pyx_n_s_vals, __pyx_n_s_i); if (unlikely(!__pyx_tuple__130)) __PYX_ERR(0, 363, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__130);
@@ -33168,7 +33168,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":366
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  *     def test_rewrap_wider(self):             # <<<<<<<<<<<<<<
  *         'New buffer wider'
  *         lb = create_lbuf('0123 ', '56789')
@@ -33180,7 +33180,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":377
  *         self.assertContinued(lb2, False, False)
- * 
+ *
  *     def test_rewrap_narrower(self):             # <<<<<<<<<<<<<<
  *         'New buffer narrower'
  *         lb = create_lbuf('123', 'abcde')
@@ -33192,7 +33192,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":386
  *         self.assertContinued(lb2, False, True, True, True)
- * 
+ *
  *     def test_utils(self):             # <<<<<<<<<<<<<<
  *         def w(x):
  *             return wcwidth(ord(x))
@@ -33204,7 +33204,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":462
  *             'h://xn--ab-7kc.com/El Nio/')
- * 
+ *
  *     def test_color_profile(self):             # <<<<<<<<<<<<<<
  *         c = ColorProfile()
  *         c.update_ansi_color_table(build_ansi_color_table())
@@ -33216,7 +33216,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":470
  *         self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))
- * 
+ *
  *     def test_historybuf(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         hb = HistoryBuf(5, 5)
@@ -33228,7 +33228,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":525
  *         large_hb.rewrap(hb2)
- * 
+ *
  *     def test_ansi_repr(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         l0 = lb.line(0)
@@ -33240,7 +33240,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":556
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])
- * 
+ *
  *     def test_strip_csi(self):             # <<<<<<<<<<<<<<
  *         def q(x, y=''):
  *             self.ae(y or x, strip_csi(x))
@@ -33252,10 +33252,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":565
  *         q('a\x1b[12;34:43mbc', 'abc')
- * 
+ *
  *     def test_single_key(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey
- * 
+ *
  */
   __pyx_tuple__146 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_GLFW_MOD_smelly, __pyx_n_s_GLFW_MOD_SHIFT, __pyx_n_s_SingleKey, __pyx_n_s_m, __pyx_n_s_s); if (unlikely(!__pyx_tuple__146)) __PYX_ERR(0, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__146);
@@ -33264,10 +33264,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":599
  *         self.assertNotEqual(SingleKey(key=1, mods=2), SingleKey(key=1))
- * 
+ *
  *     def test_notify_identifier_sanitization(self):             # <<<<<<<<<<<<<<
  *         from smelly.notify import sanitize_identifier_pat
- * 
+ *
  */
   __pyx_tuple__148 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_sanitize_identifier_pat); if (unlikely(!__pyx_tuple__148)) __PYX_ERR(0, 599, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__148);
@@ -33276,10 +33276,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":604
  *         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')
- * 
+ *
  *     def test_bracketed_paste_sanitizer(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import sanitize_for_bracketed_paste
- * 
+ *
  */
   __pyx_tuple__150 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_sanitize_for_bracketed_paste, __pyx_n_s_x, __pyx_n_s_q); if (unlikely(!__pyx_tuple__150)) __PYX_ERR(0, 604, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__150);
@@ -33288,7 +33288,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/datatypes.py":613
  *             self.assertIn(b'ab', q)
- * 
+ *
  *     def test_expand_ansi_c_escapes(self):             # <<<<<<<<<<<<<<
  *         for src, expected in {
  *             'abc': 'abc',
@@ -33657,7 +33657,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import sys
  * import tempfile
@@ -33668,11 +33668,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":5
- * 
+ *
  * import os
  * import sys             # <<<<<<<<<<<<<<
  * import tempfile
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -33683,7 +33683,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import sys
  * import tempfile             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.config import build_ansi_color_table, defaults
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -33693,7 +33693,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":8
  * import tempfile
- * 
+ *
  * from smelly.config import build_ansi_color_table, defaults             # <<<<<<<<<<<<<<
  * from smelly.fast_data_types import (
  *     Color,
@@ -33760,7 +33760,7 @@ if (!__Pyx_RefNanny) {
   PyList_SET_ITEM(__pyx_t_2, 9, __pyx_n_s_wcwidth);
 
   /* "smelly_tests/datatypes.py":9
- * 
+ *
  * from smelly.config import build_ansi_color_table, defaults
  * from smelly.fast_data_types import (             # <<<<<<<<<<<<<<
  *     Color,
@@ -33837,7 +33837,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.fast_data_types import Cursor as C
  * from smelly.rgb import to_color             # <<<<<<<<<<<<<<
  * from smelly.utils import is_path_in_temp_dir, sanitize_title, sanitize_url_for_dispay_to_user
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -33857,7 +33857,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.fast_data_types import Cursor as C
  * from smelly.rgb import to_color
  * from smelly.utils import is_path_in_temp_dir, sanitize_title, sanitize_url_for_dispay_to_user             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest, filled_cursor, filled_history_buf, filled_line_buf
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -33890,10 +33890,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":25
  * from smelly.utils import is_path_in_temp_dir, sanitize_title, sanitize_url_for_dispay_to_user
- * 
+ *
  * from . import BaseTest, filled_cursor, filled_history_buf, filled_line_buf             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -33931,8 +33931,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":28
- * 
- * 
+ *
+ *
  * def create_lbuf(*lines):             # <<<<<<<<<<<<<<
  *     maxw = max(map(len, lines))
  *     ans = LineBuf(len(lines), maxw)
@@ -33943,8 +33943,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/datatypes.py":38
- * 
- * 
+ *
+ *
  * class TestDataTypes(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_to_color(self):
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -33962,7 +33962,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/datatypes.py":39
- * 
+ *
  * class TestDataTypes(BaseTest):
  *     def test_to_color(self):             # <<<<<<<<<<<<<<
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -33975,7 +33975,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":67
  *         self.ae(Color(1, 2, 3, 4).rgb, 0x10203)
- * 
+ *
  *     def test_linebuf(self):             # <<<<<<<<<<<<<<
  *         old = filled_line_buf(2, 3, filled_cursor())
  *         new = LineBuf(1, 3)
@@ -33987,7 +33987,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":175
  *             self.ae(lb.line(i), lb2.line(i))
- * 
+ *
  *     def test_line(self):             # <<<<<<<<<<<<<<
  *         lb = LineBuf(2, 3)
  *         for y in range(lb.ynum):
@@ -33999,10 +33999,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":256
  *         self.assertEqualAttributes(l3.cursor_from(0), q)
- * 
+ *
  *     def test_url_at(self):             # <<<<<<<<<<<<<<
  *         self.set_options()
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_9datatypes_13TestDataTypes_7test_url_at, 0, __pyx_n_s_TestDataTypes_test_url_at, NULL, __pyx_n_s_smelly_tests_datatypes, __pyx_d, ((PyObject *)__pyx_codeobj__121)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -34011,7 +34011,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":324
  *         self.ae(l4.url_end_at(0, 0, True), len(l4) - 1)
- * 
+ *
  *     def rewrap(self, lb, lb2):             # <<<<<<<<<<<<<<
  *         hb = HistoryBuf(lb2.ynum, lb2.xnum)
  *         cy = lb.rewrap(lb2, hb)
@@ -34023,7 +34023,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":329
  *         return hb, cy[1]
- * 
+ *
  *     def test_rewrap_simple(self):             # <<<<<<<<<<<<<<
  *         'Same width buffers'
  *         lb = filled_line_buf(5, 5)
@@ -34035,7 +34035,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":352
  *         self.ae(lb2.dirty_lines(), list(range(lb2.ynum)))
- * 
+ *
  *     def line_comparison(self, buf, *lines):             # <<<<<<<<<<<<<<
  *         for i, l0 in enumerate(lines):
  *             l2 = buf.line(i)
@@ -34047,7 +34047,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":357
  *             self.ae(l0, str(l2))
- * 
+ *
  *     def line_comparison_rewrap(self, lb, *lines):             # <<<<<<<<<<<<<<
  *         lb2 = LineBuf(len(lines), max(map(len, lines)))
  *         self.rewrap(lb, lb2)
@@ -34059,10 +34059,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":363
  *         return lb2
- * 
+ *
  *     def assertContinued(self, lb, *vals):             # <<<<<<<<<<<<<<
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_9datatypes_13TestDataTypes_17assertContinued, 0, __pyx_n_s_TestDataTypes_assertContinued, NULL, __pyx_n_s_smelly_tests_datatypes, __pyx_d, ((PyObject *)__pyx_codeobj__131)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 363, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -34071,7 +34071,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":366
  *         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
- * 
+ *
  *     def test_rewrap_wider(self):             # <<<<<<<<<<<<<<
  *         'New buffer wider'
  *         lb = create_lbuf('0123 ', '56789')
@@ -34083,7 +34083,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":377
  *         self.assertContinued(lb2, False, False)
- * 
+ *
  *     def test_rewrap_narrower(self):             # <<<<<<<<<<<<<<
  *         'New buffer narrower'
  *         lb = create_lbuf('123', 'abcde')
@@ -34095,7 +34095,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":386
  *         self.assertContinued(lb2, False, True, True, True)
- * 
+ *
  *     def test_utils(self):             # <<<<<<<<<<<<<<
  *         def w(x):
  *             return wcwidth(ord(x))
@@ -34107,7 +34107,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":462
  *             'h://xn--ab-7kc.com/El Nio/')
- * 
+ *
  *     def test_color_profile(self):             # <<<<<<<<<<<<<<
  *         c = ColorProfile()
  *         c.update_ansi_color_table(build_ansi_color_table())
@@ -34119,7 +34119,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":470
  *         self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))
- * 
+ *
  *     def test_historybuf(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         hb = HistoryBuf(5, 5)
@@ -34131,7 +34131,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":525
  *         large_hb.rewrap(hb2)
- * 
+ *
  *     def test_ansi_repr(self):             # <<<<<<<<<<<<<<
  *         lb = filled_line_buf()
  *         l0 = lb.line(0)
@@ -34143,7 +34143,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":556
  *         self.ae(a, [str(hb.line(i)) + '\n' for i in range(hb.count - 1, -1, -1)])
- * 
+ *
  *     def test_strip_csi(self):             # <<<<<<<<<<<<<<
  *         def q(x, y=''):
  *             self.ae(y or x, strip_csi(x))
@@ -34155,10 +34155,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":565
  *         q('a\x1b[12;34:43mbc', 'abc')
- * 
+ *
  *     def test_single_key(self):             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_9datatypes_13TestDataTypes_33test_single_key, 0, __pyx_n_s_TestDataTypes_test_single_key, NULL, __pyx_n_s_smelly_tests_datatypes, __pyx_d, ((PyObject *)__pyx_codeobj__147)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -34167,10 +34167,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":599
  *         self.assertNotEqual(SingleKey(key=1, mods=2), SingleKey(key=1))
- * 
+ *
  *     def test_notify_identifier_sanitization(self):             # <<<<<<<<<<<<<<
  *         from smelly.notify import sanitize_identifier_pat
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_9datatypes_13TestDataTypes_35test_notify_identifier_sanitization, 0, __pyx_n_s_TestDataTypes_test_notify_identi, NULL, __pyx_n_s_smelly_tests_datatypes, __pyx_d, ((PyObject *)__pyx_codeobj__149)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 599, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -34179,10 +34179,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":604
  *         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')
- * 
+ *
  *     def test_bracketed_paste_sanitizer(self):             # <<<<<<<<<<<<<<
  *         from smelly.utils import sanitize_for_bracketed_paste
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_9datatypes_13TestDataTypes_37test_bracketed_paste_sanitizer, 0, __pyx_n_s_TestDataTypes_test_bracketed_pas, NULL, __pyx_n_s_smelly_tests_datatypes, __pyx_d, ((PyObject *)__pyx_codeobj__151)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 604, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -34191,7 +34191,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/datatypes.py":613
  *             self.assertIn(b'ab', q)
- * 
+ *
  *     def test_expand_ansi_c_escapes(self):             # <<<<<<<<<<<<<<
  *         for src, expected in {
  *             'abc': 'abc',
@@ -34202,8 +34202,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/datatypes.py":38
- * 
- * 
+ *
+ *
  * class TestDataTypes(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_to_color(self):
  *         for x in 'xxx #12 #1234 rgb:a/b'.split():
@@ -34219,7 +34219,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/datatypes.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -34729,8 +34729,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -34904,8 +34904,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -36449,8 +36449,8 @@ static PyObject* __Pyx_PyInt_OrObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED 
                 llx = lla | llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceOr : PyNumber_Or)(op1, op2);
@@ -36571,8 +36571,8 @@ static PyObject* __Pyx_PyInt_LshiftObjC(PyObject *op1, PyObject *op2, CYTHON_UNU
                 if (likely(lla == llx >> llb))
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceLshift : PyNumber_Lshift)(op1, op2);
@@ -36686,8 +36686,8 @@ static PyObject* __Pyx_PyInt_SubtractCObj(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {

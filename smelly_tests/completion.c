@@ -973,8 +973,8 @@ struct __pyx_obj_12smelly_tests_10completion___pyx_scope_struct_3_is_delegate;
 struct __pyx_obj_12smelly_tests_10completion___pyx_scope_struct_4_completion;
 
 /* "smelly_tests/completion.py":30
- * 
- * 
+ *
+ *
  * def has_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -986,8 +986,8 @@ struct __pyx_obj_12smelly_tests_10completion___pyx_scope_struct__has_words {
 
 
 /* "smelly_tests/completion.py":40
- * 
- * 
+ *
+ *
  * def does_not_have_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -999,8 +999,8 @@ struct __pyx_obj_12smelly_tests_10completion___pyx_scope_struct_1_does_not_have_
 
 
 /* "smelly_tests/completion.py":51
- * 
- * 
+ *
+ *
  * def all_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         expected = set(words)
@@ -1012,8 +1012,8 @@ struct __pyx_obj_12smelly_tests_10completion___pyx_scope_struct_2_all_words {
 
 
 /* "smelly_tests/completion.py":61
- * 
- * 
+ *
+ *
  * def is_delegate(num_to_remove: int = 0, command: str = ''):             # <<<<<<<<<<<<<<
  *     q = {}
  *     if num_to_remove:
@@ -1025,8 +1025,8 @@ struct __pyx_obj_12smelly_tests_10completion___pyx_scope_struct_3_is_delegate {
 
 
 /* "smelly_tests/completion.py":75
- * 
- * 
+ *
+ *
  * def completion(self: TestCompletion, tdir: str):             # <<<<<<<<<<<<<<
  *     all_cmds = []
  *     all_argv = []
@@ -2182,7 +2182,7 @@ static PyObject *__pyx_codeobj__68;
 /* Late includes */
 
 /* "smelly_tests/completion.py":17
- * 
+ *
  * class TestCompletion(BaseTest):
  *     def test_completion(self):             # <<<<<<<<<<<<<<
  *         with tempfile.TemporaryDirectory() as tdir:
@@ -2229,7 +2229,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_14TestCompletion_test_comp
  *     def test_completion(self):
  *         with tempfile.TemporaryDirectory() as tdir:             # <<<<<<<<<<<<<<
  *             completion(self, tdir)
- * 
+ *
  */
   /*with:*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_tempfile); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
@@ -2290,8 +2290,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_14TestCompletion_test_comp
  *     def test_completion(self):
  *         with tempfile.TemporaryDirectory() as tdir:
  *             completion(self, tdir)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_completion); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_1);
@@ -2347,7 +2347,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_14TestCompletion_test_comp
  *     def test_completion(self):
  *         with tempfile.TemporaryDirectory() as tdir:             # <<<<<<<<<<<<<<
  *             completion(self, tdir)
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -2381,7 +2381,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_14TestCompletion_test_comp
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_5);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 18, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2424,7 +2424,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_14TestCompletion_test_comp
   }
 
   /* "smelly_tests/completion.py":17
- * 
+ *
  * class TestCompletion(BaseTest):
  *     def test_completion(self):             # <<<<<<<<<<<<<<
  *         with tempfile.TemporaryDirectory() as tdir:
@@ -2449,8 +2449,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_14TestCompletion_test_comp
 }
 
 /* "smelly_tests/completion.py":22
- * 
- * 
+ *
+ *
  * def get_all_words(result):             # <<<<<<<<<<<<<<
  *     all_words = set()
  *     for group in result.get('groups', ()):
@@ -2490,7 +2490,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_get_all_words(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("get_all_words", 0);
 
   /* "smelly_tests/completion.py":23
- * 
+ *
  * def get_all_words(result):
  *     all_words = set()             # <<<<<<<<<<<<<<
  *     for group in result.get('groups', ()):
@@ -2613,7 +2613,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_get_all_words(CYTHON_UNUSE
  *         for m in group['matches']:
  *             all_words.add(m['word'])             # <<<<<<<<<<<<<<
  *     return all_words
- * 
+ *
  */
       __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_m, __pyx_n_s_word); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -2644,8 +2644,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_get_all_words(CYTHON_UNUSE
  *         for m in group['matches']:
  *             all_words.add(m['word'])
  *     return all_words             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_all_words);
@@ -2653,8 +2653,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_get_all_words(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly_tests/completion.py":22
- * 
- * 
+ *
+ *
  * def get_all_words(result):             # <<<<<<<<<<<<<<
  *     all_words = set()
  *     for group in result.get('groups', ()):
@@ -2677,8 +2677,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_get_all_words(CYTHON_UNUSE
 }
 
 /* "smelly_tests/completion.py":30
- * 
- * 
+ *
+ *
  * def has_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -2704,7 +2704,7 @@ static PyObject *__pyx_pw_12smelly_tests_10completion_3has_words(PyObject *__pyx
 }
 
 /* "smelly_tests/completion.py":31
- * 
+ *
  * def has_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -2844,7 +2844,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9has_words_t(PyObject *__p
  *         missing = q - get_all_words(result)
  *         self.assertFalse(             # <<<<<<<<<<<<<<
  *             missing, f'Words missing. Command line: {self.current_cmd!r}')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2853,7 +2853,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9has_words_t(PyObject *__p
  *         missing = q - get_all_words(result)
  *         self.assertFalse(
  *             missing, f'Words missing. Command line: {self.current_cmd!r}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     return t
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_cmd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
@@ -2914,7 +2914,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9has_words_t(PyObject *__p
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":31
- * 
+ *
  * def has_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -2941,8 +2941,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9has_words_t(PyObject *__p
 }
 
 /* "smelly_tests/completion.py":30
- * 
- * 
+ *
+ *
  * def has_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -2971,7 +2971,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_2has_words(CYTHON_UNUSED P
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_words);
 
   /* "smelly_tests/completion.py":31
- * 
+ *
  * def has_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -2984,10 +2984,10 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_2has_words(CYTHON_UNUSED P
 
   /* "smelly_tests/completion.py":37
  *             missing, f'Words missing. Command line: {self.current_cmd!r}')
- * 
+ *
  *     return t             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_t);
@@ -2995,8 +2995,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_2has_words(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly_tests/completion.py":30
- * 
- * 
+ *
+ *
  * def has_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -3016,8 +3016,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_2has_words(CYTHON_UNUSED P
 }
 
 /* "smelly_tests/completion.py":40
- * 
- * 
+ *
+ *
  * def does_not_have_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -3043,7 +3043,7 @@ static PyObject *__pyx_pw_12smelly_tests_10completion_5does_not_have_words(PyObj
 }
 
 /* "smelly_tests/completion.py":41
- * 
+ *
  * def does_not_have_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -3191,7 +3191,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_19does_not_have_words_t(Py
  *         self.assertFalse(
  *             q & all_words,             # <<<<<<<<<<<<<<
  *             f'Words unexpectedly present. Command line: {self.current_cmd!r}')
- * 
+ *
  */
   __pyx_t_3 = PyNumber_And(__pyx_v_q, __pyx_v_all_words); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3200,7 +3200,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_19does_not_have_words_t(Py
  *         self.assertFalse(
  *             q & all_words,
  *             f'Words unexpectedly present. Command line: {self.current_cmd!r}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     return t
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_cmd); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
@@ -3263,7 +3263,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_19does_not_have_words_t(Py
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":41
- * 
+ *
  * def does_not_have_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -3291,8 +3291,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_19does_not_have_words_t(Py
 }
 
 /* "smelly_tests/completion.py":40
- * 
- * 
+ *
+ *
  * def does_not_have_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -3321,7 +3321,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_4does_not_have_words(CYTHO
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_words);
 
   /* "smelly_tests/completion.py":41
- * 
+ *
  * def does_not_have_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -3334,10 +3334,10 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_4does_not_have_words(CYTHO
 
   /* "smelly_tests/completion.py":48
  *             f'Words unexpectedly present. Command line: {self.current_cmd!r}')
- * 
+ *
  *     return t             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_t);
@@ -3345,8 +3345,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_4does_not_have_words(CYTHO
   goto __pyx_L0;
 
   /* "smelly_tests/completion.py":40
- * 
- * 
+ *
+ *
  * def does_not_have_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -3366,8 +3366,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_4does_not_have_words(CYTHO
 }
 
 /* "smelly_tests/completion.py":51
- * 
- * 
+ *
+ *
  * def all_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         expected = set(words)
@@ -3393,7 +3393,7 @@ static PyObject *__pyx_pw_12smelly_tests_10completion_7all_words(PyObject *__pyx
 }
 
 /* "smelly_tests/completion.py":52
- * 
+ *
  * def all_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         expected = set(words)
@@ -3530,7 +3530,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9all_words_t(PyObject *__p
  *         actual = get_all_words(result)
  *         self.assertEqual(expected, actual,             # <<<<<<<<<<<<<<
  *                          f'Command line: {self.current_cmd!r}')
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3539,7 +3539,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9all_words_t(PyObject *__p
  *         actual = get_all_words(result)
  *         self.assertEqual(expected, actual,
  *                          f'Command line: {self.current_cmd!r}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     return t
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_cmd); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
@@ -3603,7 +3603,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9all_words_t(PyObject *__p
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":52
- * 
+ *
  * def all_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         expected = set(words)
@@ -3630,8 +3630,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_9all_words_t(PyObject *__p
 }
 
 /* "smelly_tests/completion.py":51
- * 
- * 
+ *
+ *
  * def all_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         expected = set(words)
@@ -3660,7 +3660,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_6all_words(CYTHON_UNUSED P
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_words);
 
   /* "smelly_tests/completion.py":52
- * 
+ *
  * def all_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         expected = set(words)
@@ -3673,10 +3673,10 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_6all_words(CYTHON_UNUSED P
 
   /* "smelly_tests/completion.py":58
  *                          f'Command line: {self.current_cmd!r}')
- * 
+ *
  *     return t             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_t);
@@ -3684,8 +3684,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_6all_words(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly_tests/completion.py":51
- * 
- * 
+ *
+ *
  * def all_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         expected = set(words)
@@ -3705,8 +3705,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_6all_words(CYTHON_UNUSED P
 }
 
 /* "smelly_tests/completion.py":61
- * 
- * 
+ *
+ *
  * def is_delegate(num_to_remove: int = 0, command: str = ''):             # <<<<<<<<<<<<<<
  *     q = {}
  *     if num_to_remove:
@@ -3792,7 +3792,7 @@ static PyObject *__pyx_pw_12smelly_tests_10completion_9is_delegate(PyObject *__p
 
 /* "smelly_tests/completion.py":68
  *         q['command'] = command
- * 
+ *
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         d = result['delegate']
  *         self.assertEqual(d, q, f'Command line: {self.current_cmd!r}')
@@ -3883,11 +3883,11 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_11is_delegate_t(PyObject *
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/completion.py":69
- * 
+ *
  *     def t(self, result):
  *         d = result['delegate']             # <<<<<<<<<<<<<<
  *         self.assertEqual(d, q, f'Command line: {self.current_cmd!r}')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_result, __pyx_n_s_delegate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3898,7 +3898,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_11is_delegate_t(PyObject *
  *     def t(self, result):
  *         d = result['delegate']
  *         self.assertEqual(d, q, f'Command line: {self.current_cmd!r}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     return t
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
@@ -3966,7 +3966,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_11is_delegate_t(PyObject *
 
   /* "smelly_tests/completion.py":68
  *         q['command'] = command
- * 
+ *
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         d = result['delegate']
  *         self.assertEqual(d, q, f'Command line: {self.current_cmd!r}')
@@ -3991,8 +3991,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_11is_delegate_t(PyObject *
 }
 
 /* "smelly_tests/completion.py":61
- * 
- * 
+ *
+ *
  * def is_delegate(num_to_remove: int = 0, command: str = ''):             # <<<<<<<<<<<<<<
  *     q = {}
  *     if num_to_remove:
@@ -4019,7 +4019,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_8is_delegate(CYTHON_UNUSED
   }
 
   /* "smelly_tests/completion.py":62
- * 
+ *
  * def is_delegate(num_to_remove: int = 0, command: str = ''):
  *     q = {}             # <<<<<<<<<<<<<<
  *     if num_to_remove:
@@ -4064,7 +4064,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_8is_delegate(CYTHON_UNUSED
  *         q['num_to_remove'] = num_to_remove
  *     if command:             # <<<<<<<<<<<<<<
  *         q['command'] = command
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_command); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 65, __pyx_L1_error)
   if (__pyx_t_2) {
@@ -4073,7 +4073,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_8is_delegate(CYTHON_UNUSED
  *         q['num_to_remove'] = num_to_remove
  *     if command:
  *         q['command'] = command             # <<<<<<<<<<<<<<
- * 
+ *
  *     def t(self, result):
  */
     if (unlikely(PyDict_SetItem(__pyx_cur_scope->__pyx_v_q, __pyx_n_s_command, __pyx_v_command) < 0)) __PYX_ERR(0, 66, __pyx_L1_error)
@@ -4083,13 +4083,13 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_8is_delegate(CYTHON_UNUSED
  *         q['num_to_remove'] = num_to_remove
  *     if command:             # <<<<<<<<<<<<<<
  *         q['command'] = command
- * 
+ *
  */
   }
 
   /* "smelly_tests/completion.py":68
  *         q['command'] = command
- * 
+ *
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         d = result['delegate']
  *         self.assertEqual(d, q, f'Command line: {self.current_cmd!r}')
@@ -4101,10 +4101,10 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_8is_delegate(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":72
  *         self.assertEqual(d, q, f'Command line: {self.current_cmd!r}')
- * 
+ *
  *     return t             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_t);
@@ -4112,8 +4112,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_8is_delegate(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly_tests/completion.py":61
- * 
- * 
+ *
+ *
  * def is_delegate(num_to_remove: int = 0, command: str = ''):             # <<<<<<<<<<<<<<
  *     q = {}
  *     if num_to_remove:
@@ -4133,8 +4133,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_8is_delegate(CYTHON_UNUSED
 }
 
 /* "smelly_tests/completion.py":75
- * 
- * 
+ *
+ *
  * def completion(self: TestCompletion, tdir: str):             # <<<<<<<<<<<<<<
  *     all_cmds = []
  *     all_argv = []
@@ -4212,7 +4212,7 @@ static PyObject *__pyx_pw_12smelly_tests_10completion_11completion(PyObject *__p
 
 /* "smelly_tests/completion.py":80
  *     all_tests = []
- * 
+ *
  *     def add(cmdline: str, *tests):             # <<<<<<<<<<<<<<
  *         all_cmds.append(cmdline)
  *         new_word = cmdline.endswith(' ')
@@ -4311,7 +4311,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_add(PyObject 
   __Pyx_INCREF(__pyx_v_cmdline);
 
   /* "smelly_tests/completion.py":81
- * 
+ *
  *     def add(cmdline: str, *tests):
  *         all_cmds.append(cmdline)             # <<<<<<<<<<<<<<
  *         new_word = cmdline.endswith(' ')
@@ -4426,7 +4426,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_add(PyObject 
  *         if new_word:
  *             all_argv[-1].append('')             # <<<<<<<<<<<<<<
  *         all_tests.append(tests)
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_all_argv)) { __Pyx_RaiseClosureNameError("all_argv"); __PYX_ERR(0, 87, __pyx_L1_error) }
     if (unlikely(__pyx_cur_scope->__pyx_v_all_argv == Py_None)) {
@@ -4451,7 +4451,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_add(PyObject 
  *         if new_word:
  *             all_argv[-1].append('')
  *         all_tests.append(tests)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def run_tool():
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_all_tests)) { __Pyx_RaiseClosureNameError("all_tests"); __PYX_ERR(0, 88, __pyx_L1_error) }
@@ -4463,7 +4463,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_add(PyObject 
 
   /* "smelly_tests/completion.py":80
  *     all_tests = []
- * 
+ *
  *     def add(cmdline: str, *tests):             # <<<<<<<<<<<<<<
  *         all_cmds.append(cmdline)
  *         new_word = cmdline.endswith(' ')
@@ -4488,7 +4488,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_add(PyObject 
 
 /* "smelly_tests/completion.py":90
  *         all_tests.append(tests)
- * 
+ *
  *     def run_tool():             # <<<<<<<<<<<<<<
  *         env = os.environ.copy()
  *         env['PATH'] = os.path.join(tdir, 'bin')
@@ -4531,7 +4531,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_2run_tool(PyO
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/completion.py":91
- * 
+ *
  *     def run_tool():
  *         env = os.environ.copy()             # <<<<<<<<<<<<<<
  *         env['PATH'] = os.path.join(tdir, 'bin')
@@ -4936,7 +4936,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_2run_tool(PyO
  *             cp.returncode, 0,
  *             f'kitten __complete__ failed with exit code: {cp.returncode}')             # <<<<<<<<<<<<<<
  *         return json.loads(cp.stdout)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cp, __pyx_n_s_returncode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5004,7 +5004,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_2run_tool(PyO
  *             cp.returncode, 0,
  *             f'kitten __complete__ failed with exit code: {cp.returncode}')
  *         return json.loads(cp.stdout)             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly ', has_words('@', '@ls', '+', '+open'))
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5037,7 +5037,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_2run_tool(PyO
 
   /* "smelly_tests/completion.py":90
  *         all_tests.append(tests)
- * 
+ *
  *     def run_tool():             # <<<<<<<<<<<<<<
  *         env = os.environ.copy()
  *         env['PATH'] = os.path.join(tdir, 'bin')
@@ -5064,7 +5064,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_2run_tool(PyO
 
 /* "smelly_tests/completion.py":110
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
- * 
+ *
  *     def make_file(path, mode=None):             # <<<<<<<<<<<<<<
  *         with open(os.path.join(tdir, path), mode='x') as f:
  *             if mode is not None:
@@ -5166,7 +5166,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_4make_file(Py
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/completion.py":111
- * 
+ *
  *     def make_file(path, mode=None):
  *         with open(os.path.join(tdir, path), mode='x') as f:             # <<<<<<<<<<<<<<
  *             if mode is not None:
@@ -5278,7 +5278,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_4make_file(Py
  *         with open(os.path.join(tdir, path), mode='x') as f:
  *             if mode is not None:             # <<<<<<<<<<<<<<
  *                 os.chmod(f.fileno(), mode)
- * 
+ *
  */
           __pyx_t_10 = (__pyx_v_mode != Py_None);
           __pyx_t_11 = (__pyx_t_10 != 0);
@@ -5288,7 +5288,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_4make_file(Py
  *         with open(os.path.join(tdir, path), mode='x') as f:
  *             if mode is not None:
  *                 os.chmod(f.fileno(), mode)             # <<<<<<<<<<<<<<
- * 
+ *
  *     os.mkdir(os.path.join(tdir, 'bin'))
  */
             __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_os); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 113, __pyx_L7_error)
@@ -5367,12 +5367,12 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_4make_file(Py
  *         with open(os.path.join(tdir, path), mode='x') as f:
  *             if mode is not None:             # <<<<<<<<<<<<<<
  *                 os.chmod(f.fileno(), mode)
- * 
+ *
  */
           }
 
           /* "smelly_tests/completion.py":111
- * 
+ *
  *     def make_file(path, mode=None):
  *         with open(os.path.join(tdir, path), mode='x') as f:             # <<<<<<<<<<<<<<
  *             if mode is not None:
@@ -5411,7 +5411,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_4make_file(Py
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_12);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_12);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_12 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_12 = 0;
             __PYX_ERR(0, 111, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -5455,7 +5455,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_4make_file(Py
 
   /* "smelly_tests/completion.py":110
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
- * 
+ *
  *     def make_file(path, mode=None):             # <<<<<<<<<<<<<<
  *         with open(os.path.join(tdir, path), mode='x') as f:
  *             if mode is not None:
@@ -5480,8 +5480,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion_4make_file(Py
 }
 
 /* "smelly_tests/completion.py":75
- * 
- * 
+ *
+ *
  * def completion(self: TestCompletion, tdir: str):             # <<<<<<<<<<<<<<
  *     all_cmds = []
  *     all_argv = []
@@ -5530,7 +5530,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_tdir);
 
   /* "smelly_tests/completion.py":76
- * 
+ *
  * def completion(self: TestCompletion, tdir: str):
  *     all_cmds = []             # <<<<<<<<<<<<<<
  *     all_argv = []
@@ -5547,7 +5547,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     all_cmds = []
  *     all_argv = []             # <<<<<<<<<<<<<<
  *     all_tests = []
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5559,7 +5559,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     all_cmds = []
  *     all_argv = []
  *     all_tests = []             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add(cmdline: str, *tests):
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -5570,7 +5570,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":80
  *     all_tests = []
- * 
+ *
  *     def add(cmdline: str, *tests):             # <<<<<<<<<<<<<<
  *         all_cmds.append(cmdline)
  *         new_word = cmdline.endswith(' ')
@@ -5587,7 +5587,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":90
  *         all_tests.append(tests)
- * 
+ *
  *     def run_tool():             # <<<<<<<<<<<<<<
  *         env = os.environ.copy()
  *         env['PATH'] = os.path.join(tdir, 'bin')
@@ -5599,7 +5599,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":106
  *         return json.loads(cp.stdout)
- * 
+ *
  *     add('smelly ', has_words('@', '@ls', '+', '+open'))             # <<<<<<<<<<<<<<
  *     add('smelly @ l', has_words('ls', 'last-used-layout', 'launch'))
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
@@ -5623,11 +5623,11 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":107
- * 
+ *
  *     add('smelly ', has_words('@', '@ls', '+', '+open'))
  *     add('smelly @ l', has_words('ls', 'last-used-layout', 'launch'))             # <<<<<<<<<<<<<<
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_has_words); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5651,7 +5651,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly ', has_words('@', '@ls', '+', '+open'))
  *     add('smelly @ l', has_words('ls', 'last-used-layout', 'launch'))
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def make_file(path, mode=None):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_has_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -5674,7 +5674,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":110
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
- * 
+ *
  *     def make_file(path, mode=None):             # <<<<<<<<<<<<<<
  *         with open(os.path.join(tdir, path), mode='x') as f:
  *             if mode is not None:
@@ -5687,7 +5687,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":115
  *                 os.chmod(f.fileno(), mode)
- * 
+ *
  *     os.mkdir(os.path.join(tdir, 'bin'))             # <<<<<<<<<<<<<<
  *     os.mkdir(os.path.join(tdir, 'sub'))
  *     make_file('bin/exe1', 0o700)
@@ -5769,7 +5769,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":116
- * 
+ *
  *     os.mkdir(os.path.join(tdir, 'bin'))
  *     os.mkdir(os.path.join(tdir, 'sub'))             # <<<<<<<<<<<<<<
  *     make_file('bin/exe1', 0o700)
@@ -5900,7 +5900,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     make_file('exe-not2.jpeg')
  *     make_file('sub/exe3', 0o700)             # <<<<<<<<<<<<<<
  *     make_file('sub/exe-not3.png')
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_10completion_10completion_4make_file(__pyx_v_make_file, __pyx_kp_s_sub_exe3, __pyx_int_448); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5910,7 +5910,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     make_file('exe-not2.jpeg')
  *     make_file('sub/exe3', 0o700)
  *     make_file('sub/exe-not3.png')             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly x', all_words())
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_make_file, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
@@ -5919,7 +5919,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":124
  *     make_file('sub/exe-not3.png')
- * 
+ *
  *     add('smelly x', all_words())             # <<<<<<<<<<<<<<
  *     add('smelly e', all_words('exe1', 'exe2'))
  *     add('smelly ./', all_words('./bin/', './sub/', './exe2'))
@@ -5955,7 +5955,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":125
- * 
+ *
  *     add('smelly x', all_words())
  *     add('smelly e', all_words('exe1', 'exe2'))             # <<<<<<<<<<<<<<
  *     add('smelly ./', all_words('./bin/', './sub/', './exe2'))
@@ -6120,7 +6120,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly ~', all_words('~/exe3'))
  *     add('smelly ~/', all_words('~/exe3'))             # <<<<<<<<<<<<<<
  *     add('smelly ~/e', all_words('~/exe3'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_all_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6156,7 +6156,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly ~', all_words('~/exe3'))
  *     add('smelly ~/', all_words('~/exe3'))
  *     add('smelly ~/e', all_words('~/exe3'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly @ goto-layout ', has_words('tall', 'fat'))
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_all_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
@@ -6191,7 +6191,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":133
  *     add('smelly ~/e', all_words('~/exe3'))
- * 
+ *
  *     add('smelly @ goto-layout ', has_words('tall', 'fat'))             # <<<<<<<<<<<<<<
  *     add('smelly @ goto-layout spli', all_words('splits'))
  *     add('smelly @ goto-layout f f', all_words())
@@ -6215,7 +6215,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":134
- * 
+ *
  *     add('smelly @ goto-layout ', has_words('tall', 'fat'))
  *     add('smelly @ goto-layout spli', all_words('splits'))             # <<<<<<<<<<<<<<
  *     add('smelly @ goto-layout f f', all_words())
@@ -6392,7 +6392,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly @ set-window-logo e e', all_words())
  *     add('smelly +ope', has_words('+open'))             # <<<<<<<<<<<<<<
  *     add('smelly +open -', has_words('-1', '-T'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_has_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6428,7 +6428,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly @ set-window-logo e e', all_words())
  *     add('smelly +ope', has_words('+open'))
  *     add('smelly +open -', has_words('-1', '-T'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly -', has_words('-c', '-1', '--'),
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_has_words); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
@@ -6451,7 +6451,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":142
  *     add('smelly +open -', has_words('-1', '-T'))
- * 
+ *
  *     add('smelly -', has_words('-c', '-1', '--'),             # <<<<<<<<<<<<<<
  *         does_not_have_words('--config', '--single-instance'))
  *     add('smelly -c', all_words('-c'))
@@ -6463,7 +6463,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":143
- * 
+ *
  *     add('smelly -', has_words('-c', '-1', '--'),
  *         does_not_have_words('--config', '--single-instance'))             # <<<<<<<<<<<<<<
  *     add('smelly -c', all_words('-c'))
@@ -6477,7 +6477,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":142
  *     add('smelly +open -', has_words('-1', '-T'))
- * 
+ *
  *     add('smelly -', has_words('-c', '-1', '--'),             # <<<<<<<<<<<<<<
  *         does_not_have_words('--config', '--single-instance'))
  *     add('smelly -c', all_words('-c'))
@@ -7123,7 +7123,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('kitten ', has_words('@'))
  *     add('kitten ', does_not_have_words('__complete__'))             # <<<<<<<<<<<<<<
  *     add('kitten @launch --ty', has_words('--type'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_does_not_have_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7159,7 +7159,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('kitten ', has_words('@'))
  *     add('kitten ', does_not_have_words('__complete__'))
  *     add('kitten @launch --ty', has_words('--type'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly + ', has_words('launch', 'kitten'))
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_has_words); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
@@ -7194,7 +7194,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":168
  *     add('kitten @launch --ty', has_words('--type'))
- * 
+ *
  *     add('smelly + ', has_words('launch', 'kitten'))             # <<<<<<<<<<<<<<
  *     add('smelly + kitten ', has_words('icat', 'diff'))
  *     add('smelly +kitten icat ', has_words('sub/', 'exe-not2.jpeg'))
@@ -7218,7 +7218,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":169
- * 
+ *
  *     add('smelly + ', has_words('launch', 'kitten'))
  *     add('smelly + kitten ', has_words('icat', 'diff'))             # <<<<<<<<<<<<<<
  *     add('smelly +kitten icat ', has_words('sub/', 'exe-not2.jpeg'))
@@ -7420,7 +7420,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly + kitten themes D', has_words('Default'))
  *     add('smelly + kitten hyperlinked_grep ', is_delegate(3, 'rg'))             # <<<<<<<<<<<<<<
  *     add('smelly +kitten hyperlinked_grep ', is_delegate(2, 'rg'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_is_delegate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7444,7 +7444,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly + kitten themes D', has_words('Default'))
  *     add('smelly + kitten hyperlinked_grep ', is_delegate(3, 'rg'))
  *     add('smelly +kitten hyperlinked_grep ', is_delegate(2, 'rg'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('clone-in-smelly --ty', has_words('--type'))
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_is_delegate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 176, __pyx_L1_error)
@@ -7467,9 +7467,9 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":178
  *     add('smelly +kitten hyperlinked_grep ', is_delegate(2, 'rg'))
- * 
+ *
  *     add('clone-in-smelly --ty', has_words('--type'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly bash ', is_delegate(1, 'bash'))
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_has_words); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
@@ -7504,7 +7504,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":180
  *     add('clone-in-smelly --ty', has_words('--type'))
- * 
+ *
  *     add('smelly bash ', is_delegate(1, 'bash'))             # <<<<<<<<<<<<<<
  *     add('smelly -1 bash ', is_delegate(2, 'bash'))
  *     add('smelly -1 bash --n', is_delegate(2, 'bash'))
@@ -7528,7 +7528,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/completion.py":181
- * 
+ *
  *     add('smelly bash ', is_delegate(1, 'bash'))
  *     add('smelly -1 bash ', is_delegate(2, 'bash'))             # <<<<<<<<<<<<<<
  *     add('smelly -1 bash --n', is_delegate(2, 'bash'))
@@ -7607,7 +7607,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly @launch --type tab bash --n', is_delegate(4, 'bash'))
  *     add('smelly +kitten hyperlinked_grep --s', is_delegate(2, 'rg'))             # <<<<<<<<<<<<<<
  *     add('smelly @launch e', all_words('exe1', 'exe2'))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_is_delegate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 184, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7631,7 +7631,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
  *     add('smelly @launch --type tab bash --n', is_delegate(4, 'bash'))
  *     add('smelly +kitten hyperlinked_grep --s', is_delegate(2, 'rg'))
  *     add('smelly @launch e', all_words('exe1', 'exe2'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     for cmd, tests, result in zip(all_cmds, all_tests, run_tool()):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_all_words); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 185, __pyx_L1_error)
@@ -7654,7 +7654,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
   /* "smelly_tests/completion.py":187
  *     add('smelly @launch e', all_words('exe1', 'exe2'))
- * 
+ *
  *     for cmd, tests, result in zip(all_cmds, all_tests, run_tool()):             # <<<<<<<<<<<<<<
  *         self.current_cmd = cmd
  *         for test in tests:
@@ -7725,13 +7725,13 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_4);
@@ -7776,7 +7776,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
     __pyx_t_5 = 0;
 
     /* "smelly_tests/completion.py":188
- * 
+ *
  *     for cmd, tests, result in zip(all_cmds, all_tests, run_tool()):
  *         self.current_cmd = cmd             # <<<<<<<<<<<<<<
  *         for test in tests:
@@ -7896,7 +7896,7 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
 
     /* "smelly_tests/completion.py":187
  *     add('smelly @launch e', all_words('exe1', 'exe2'))
- * 
+ *
  *     for cmd, tests, result in zip(all_cmds, all_tests, run_tool()):             # <<<<<<<<<<<<<<
  *         self.current_cmd = cmd
  *         for test in tests:
@@ -7905,8 +7905,8 @@ static PyObject *__pyx_pf_12smelly_tests_10completion_10completion(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/completion.py":75
- * 
- * 
+ *
+ *
  * def completion(self: TestCompletion, tdir: str):             # <<<<<<<<<<<<<<
  *     all_cmds = []
  *     all_argv = []
@@ -8847,7 +8847,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     def test_completion(self):
  *         with tempfile.TemporaryDirectory() as tdir:             # <<<<<<<<<<<<<<
  *             completion(self, tdir)
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -8865,7 +8865,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__2);
 
   /* "smelly_tests/completion.py":31
- * 
+ *
  * def has_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -8877,7 +8877,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_completion_py, __pyx_n_s_t, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 31, __pyx_L1_error)
 
   /* "smelly_tests/completion.py":41
- * 
+ *
  * def does_not_have_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         q = set(words)
@@ -8889,7 +8889,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_completion_py, __pyx_n_s_t, 41, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 41, __pyx_L1_error)
 
   /* "smelly_tests/completion.py":52
- * 
+ *
  * def all_words(*words):
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         expected = set(words)
@@ -8902,7 +8902,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":68
  *         q['command'] = command
- * 
+ *
  *     def t(self, result):             # <<<<<<<<<<<<<<
  *         d = result['delegate']
  *         self.assertEqual(d, q, f'Command line: {self.current_cmd!r}')
@@ -8914,7 +8914,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":80
  *     all_tests = []
- * 
+ *
  *     def add(cmdline: str, *tests):             # <<<<<<<<<<<<<<
  *         all_cmds.append(cmdline)
  *         new_word = cmdline.endswith(' ')
@@ -8926,7 +8926,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":90
  *         all_tests.append(tests)
- * 
+ *
  *     def run_tool():             # <<<<<<<<<<<<<<
  *         env = os.environ.copy()
  *         env['PATH'] = os.path.join(tdir, 'bin')
@@ -8938,7 +8938,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":106
  *         return json.loads(cp.stdout)
- * 
+ *
  *     add('smelly ', has_words('@', '@ls', '+', '+open'))             # <<<<<<<<<<<<<<
  *     add('smelly @ l', has_words('ls', 'last-used-layout', 'launch'))
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
@@ -8948,11 +8948,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__19);
 
   /* "smelly_tests/completion.py":107
- * 
+ *
  *     add('smelly ', has_words('@', '@ls', '+', '+open'))
  *     add('smelly @ l', has_words('ls', 'last-used-layout', 'launch'))             # <<<<<<<<<<<<<<
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
- * 
+ *
  */
   __pyx_tuple__20 = PyTuple_Pack(3, __pyx_n_s_ls_2, __pyx_kp_s_last_used_layout, __pyx_n_s_launch); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
@@ -8962,7 +8962,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     add('smelly ', has_words('@', '@ls', '+', '+open'))
  *     add('smelly @ l', has_words('ls', 'last-used-layout', 'launch'))
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def make_file(path, mode=None):
  */
   __pyx_tuple__21 = PyTuple_Pack(3, __pyx_kp_s_ls, __pyx_kp_s_last_used_layout_2, __pyx_kp_s_launch_2); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -8971,7 +8971,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":110
  *     add('smelly @l', has_words('@ls', '@last-used-layout', '@launch'))
- * 
+ *
  *     def make_file(path, mode=None):             # <<<<<<<<<<<<<<
  *         with open(os.path.join(tdir, path), mode='x') as f:
  *             if mode is not None:
@@ -9010,7 +9010,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     make_file('exe-not2.jpeg')
  *     make_file('sub/exe3', 0o700)
  *     make_file('sub/exe-not3.png')             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly x', all_words())
  */
   __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_sub_exe_not3_png); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 122, __pyx_L1_error)
@@ -9018,7 +9018,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__27);
 
   /* "smelly_tests/completion.py":125
- * 
+ *
  *     add('smelly x', all_words())
  *     add('smelly e', all_words('exe1', 'exe2'))             # <<<<<<<<<<<<<<
  *     add('smelly ./', all_words('./bin/', './sub/', './exe2'))
@@ -9041,7 +9041,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":133
  *     add('smelly ~/e', all_words('~/exe3'))
- * 
+ *
  *     add('smelly @ goto-layout ', has_words('tall', 'fat'))             # <<<<<<<<<<<<<<
  *     add('smelly @ goto-layout spli', all_words('splits'))
  *     add('smelly @ goto-layout f f', all_words())
@@ -9065,7 +9065,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     add('smelly @ set-window-logo e e', all_words())
  *     add('smelly +ope', has_words('+open'))
  *     add('smelly +open -', has_words('-1', '-T'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('smelly -', has_words('-c', '-1', '--'),
  */
   __pyx_tuple__32 = PyTuple_Pack(2, __pyx_kp_s_1, __pyx_kp_s_T); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 140, __pyx_L1_error)
@@ -9074,7 +9074,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":142
  *     add('smelly +open -', has_words('-1', '-T'))
- * 
+ *
  *     add('smelly -', has_words('-c', '-1', '--'),             # <<<<<<<<<<<<<<
  *         does_not_have_words('--config', '--single-instance'))
  *     add('smelly -c', all_words('-c'))
@@ -9084,7 +9084,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__34);
 
   /* "smelly_tests/completion.py":143
- * 
+ *
  *     add('smelly -', has_words('-c', '-1', '--'),
  *         does_not_have_words('--config', '--single-instance'))             # <<<<<<<<<<<<<<
  *     add('smelly -c', all_words('-c'))
@@ -9206,7 +9206,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":168
  *     add('kitten @launch --ty', has_words('--type'))
- * 
+ *
  *     add('smelly + ', has_words('launch', 'kitten'))             # <<<<<<<<<<<<<<
  *     add('smelly + kitten ', has_words('icat', 'diff'))
  *     add('smelly +kitten icat ', has_words('sub/', 'exe-not2.jpeg'))
@@ -9216,7 +9216,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__46);
 
   /* "smelly_tests/completion.py":169
- * 
+ *
  *     add('smelly + ', has_words('launch', 'kitten'))
  *     add('smelly + kitten ', has_words('icat', 'diff'))             # <<<<<<<<<<<<<<
  *     add('smelly +kitten icat ', has_words('sub/', 'exe-not2.jpeg'))
@@ -9242,7 +9242,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     add('smelly + kitten themes D', has_words('Default'))
  *     add('smelly + kitten hyperlinked_grep ', is_delegate(3, 'rg'))             # <<<<<<<<<<<<<<
  *     add('smelly +kitten hyperlinked_grep ', is_delegate(2, 'rg'))
- * 
+ *
  */
   __pyx_tuple__49 = PyTuple_Pack(2, __pyx_int_3, __pyx_n_s_rg); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__49);
@@ -9252,7 +9252,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     add('smelly + kitten themes D', has_words('Default'))
  *     add('smelly + kitten hyperlinked_grep ', is_delegate(3, 'rg'))
  *     add('smelly +kitten hyperlinked_grep ', is_delegate(2, 'rg'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     add('clone-in-smelly --ty', has_words('--type'))
  */
   __pyx_tuple__50 = PyTuple_Pack(2, __pyx_int_2, __pyx_n_s_rg); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 176, __pyx_L1_error)
@@ -9261,7 +9261,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/completion.py":180
  *     add('clone-in-smelly --ty', has_words('--type'))
- * 
+ *
  *     add('smelly bash ', is_delegate(1, 'bash'))             # <<<<<<<<<<<<<<
  *     add('smelly -1 bash ', is_delegate(2, 'bash'))
  *     add('smelly -1 bash --n', is_delegate(2, 'bash'))
@@ -9271,7 +9271,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__51);
 
   /* "smelly_tests/completion.py":181
- * 
+ *
  *     add('smelly bash ', is_delegate(1, 'bash'))
  *     add('smelly -1 bash ', is_delegate(2, 'bash'))             # <<<<<<<<<<<<<<
  *     add('smelly -1 bash --n', is_delegate(2, 'bash'))
@@ -9293,7 +9293,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__53);
 
   /* "smelly_tests/completion.py":17
- * 
+ *
  * class TestCompletion(BaseTest):
  *     def test_completion(self):             # <<<<<<<<<<<<<<
  *         with tempfile.TemporaryDirectory() as tdir:
@@ -9305,8 +9305,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_completion_py, __pyx_n_s_test_completion, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 17, __pyx_L1_error)
 
   /* "smelly_tests/completion.py":22
- * 
- * 
+ *
+ *
  * def get_all_words(result):             # <<<<<<<<<<<<<<
  *     all_words = set()
  *     for group in result.get('groups', ()):
@@ -9317,8 +9317,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_completion_py, __pyx_n_s_get_all_words, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "smelly_tests/completion.py":30
- * 
- * 
+ *
+ *
  * def has_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -9329,8 +9329,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_completion_py, __pyx_n_s_has_words, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "smelly_tests/completion.py":40
- * 
- * 
+ *
+ *
  * def does_not_have_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -9341,8 +9341,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__61 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_completion_py, __pyx_n_s_does_not_have_words, 40, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__61)) __PYX_ERR(0, 40, __pyx_L1_error)
 
   /* "smelly_tests/completion.py":51
- * 
- * 
+ *
+ *
  * def all_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         expected = set(words)
@@ -9353,8 +9353,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__63 = (PyObject*)__Pyx_PyCode_New(0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__62, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_completion_py, __pyx_n_s_all_words, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__63)) __PYX_ERR(0, 51, __pyx_L1_error)
 
   /* "smelly_tests/completion.py":61
- * 
- * 
+ *
+ *
  * def is_delegate(num_to_remove: int = 0, command: str = ''):             # <<<<<<<<<<<<<<
  *     q = {}
  *     if num_to_remove:
@@ -9368,8 +9368,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__66);
 
   /* "smelly_tests/completion.py":75
- * 
- * 
+ *
+ *
  * def completion(self: TestCompletion, tdir: str):             # <<<<<<<<<<<<<<
  *     all_cmds = []
  *     all_argv = []
@@ -9712,8 +9712,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/completion.py":5
- * 
- * 
+ *
+ *
  * import json             # <<<<<<<<<<<<<<
  * import os
  * import shlex
@@ -9724,7 +9724,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":6
- * 
+ *
  * import json
  * import os             # <<<<<<<<<<<<<<
  * import shlex
@@ -9752,7 +9752,7 @@ if (!__Pyx_RefNanny) {
  * import shlex
  * import subprocess             # <<<<<<<<<<<<<<
  * import tempfile
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9763,7 +9763,7 @@ if (!__Pyx_RefNanny) {
  * import shlex
  * import subprocess
  * import tempfile             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.constants import kitten_exe as kitten
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -9773,9 +9773,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/completion.py":11
  * import tempfile
- * 
+ *
  * from smelly.constants import kitten_exe as kitten             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -9794,10 +9794,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/completion.py":13
  * from smelly.constants import kitten_exe as kitten
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9814,8 +9814,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":16
- * 
- * 
+ *
+ *
  * class TestCompletion(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_completion(self):
  *         with tempfile.TemporaryDirectory() as tdir:
@@ -9833,7 +9833,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/completion.py":17
- * 
+ *
  * class TestCompletion(BaseTest):
  *     def test_completion(self):             # <<<<<<<<<<<<<<
  *         with tempfile.TemporaryDirectory() as tdir:
@@ -9845,8 +9845,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/completion.py":16
- * 
- * 
+ *
+ *
  * class TestCompletion(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_completion(self):
  *         with tempfile.TemporaryDirectory() as tdir:
@@ -9860,8 +9860,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":22
- * 
- * 
+ *
+ *
  * def get_all_words(result):             # <<<<<<<<<<<<<<
  *     all_words = set()
  *     for group in result.get('groups', ()):
@@ -9872,8 +9872,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":30
- * 
- * 
+ *
+ *
  * def has_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -9884,8 +9884,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":40
- * 
- * 
+ *
+ *
  * def does_not_have_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         q = set(words)
@@ -9896,8 +9896,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":51
- * 
- * 
+ *
+ *
  * def all_words(*words):             # <<<<<<<<<<<<<<
  *     def t(self, result):
  *         expected = set(words)
@@ -9908,8 +9908,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/completion.py":61
- * 
- * 
+ *
+ *
  * def is_delegate(num_to_remove: int = 0, command: str = ''):             # <<<<<<<<<<<<<<
  *     q = {}
  *     if num_to_remove:
@@ -9927,8 +9927,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/completion.py":75
- * 
- * 
+ *
+ *
  * def completion(self: TestCompletion, tdir: str):             # <<<<<<<<<<<<<<
  *     all_cmds = []
  *     all_argv = []
@@ -9950,7 +9950,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/completion.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

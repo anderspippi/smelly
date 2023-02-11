@@ -1505,10 +1505,10 @@ static PyObject *__pyx_codeobj__4;
 
 /* "smelly/rc/focus_window.py":33
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1609,10 +1609,10 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_message_to_sm
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/focus_window.py":34
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {'match': opts.match}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1628,10 +1628,10 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_message_to_sm
 
   /* "smelly/rc/focus_window.py":33
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match}
- * 
+ *
  */
 
   /* function exit code */
@@ -1648,7 +1648,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_message_to_sm
 
 /* "smelly/rc/focus_window.py":36
  *         return {'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -1761,7 +1761,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_2response_fro
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/focus_window.py":37
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -1977,7 +1977,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_2response_fro
  *                     focus_os_window(os_window_id, True)
  *                 break             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       goto __pyx_L4_break;
 
@@ -1991,7 +1991,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_2response_fro
     }
 
     /* "smelly/rc/focus_window.py":37
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -2005,8 +2005,8 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_2response_fro
  *                     focus_os_window(os_window_id, True)
  *                 break
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2014,7 +2014,7 @@ static PyObject *__pyx_pf_6smelly_2rc_12focus_window_11FocusWindow_2response_fro
 
   /* "smelly/rc/focus_window.py":36
  *         return {'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2151,10 +2151,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/focus_window.py":33
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match}
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -2163,7 +2163,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/focus_window.py":36
  *         return {'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2458,10 +2458,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/focus_window.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import focus_os_window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2487,9 +2487,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_window.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from smelly.fast_data_types import focus_os_window             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2508,9 +2508,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_window.py":9
  * from smelly.fast_data_types import focus_os_window
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -2585,10 +2585,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_window.py":11
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import FocusWindowRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2597,11 +2597,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/focus_window.py":12
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import FocusWindowRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -2619,16 +2619,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/focus_window.py":11
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import FocusWindowRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/focus_window.py":15
- * 
- * 
+ *
+ *
  * class FocusWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The window to focus
@@ -2646,7 +2646,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/focus_window.py":16
- * 
+ *
  * class FocusWindow(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: The window to focus
@@ -2657,7 +2657,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_window.py":20
  *     '''
- * 
+ *
  *     short_desc = 'Focus the specified window'             # <<<<<<<<<<<<<<
  *     desc = 'Focus the specified window, if no window is specified, focus the window this command is run inside.'
  *     options_spec = (
@@ -2665,7 +2665,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_short_desc, __pyx_kp_s_Focus_the_specified_window) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
 
   /* "smelly/rc/focus_window.py":21
- * 
+ *
  *     short_desc = 'Focus the specified window'
  *     desc = 'Focus the specified window, if no window is specified, focus the window this command is run inside.'             # <<<<<<<<<<<<<<
  *     options_spec = (
@@ -2698,10 +2698,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_window.py":33
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match}
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2727,7 +2727,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_window.py":36
  *         return {'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2764,8 +2764,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/focus_window.py":15
- * 
- * 
+ *
+ *
  * class FocusWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The window to focus
@@ -2779,8 +2779,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/focus_window.py":46
- * 
- * 
+ *
+ *
  * focus_window = FocusWindow()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_FocusWindow); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
@@ -2794,7 +2794,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/focus_window.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

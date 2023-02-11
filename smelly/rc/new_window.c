@@ -1561,7 +1561,7 @@ static PyObject *__pyx_codeobj__4;
 
 /* "smelly/rc/new_window.py":78
  *     args = RemoteCommand.Args(spec='[CMD ...]', json_field='args')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or [], 'type': 'window'}
  *         for attr, val in opts.__dict__.items():
@@ -1676,7 +1676,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_message_to_smelly(
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/new_window.py":79
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         ans = {'args': args or [], 'type': 'window'}             # <<<<<<<<<<<<<<
  *         for attr, val in opts.__dict__.items():
@@ -1780,11 +1780,11 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_message_to_smelly(
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_7);
@@ -1933,7 +1933,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_message_to_smelly(
  *             else:
  *                 ans[attr] = val             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     /*else*/ {
       if (unlikely(PyDict_SetItem(__pyx_v_ans, __pyx_v_attr, __pyx_v_val) < 0)) __PYX_ERR(0, 88, __pyx_L1_error)
@@ -1954,7 +1954,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_message_to_smelly(
  *             else:
  *                 ans[attr] = val
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1964,7 +1964,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_message_to_smelly(
 
   /* "smelly/rc/new_window.py":78
  *     args = RemoteCommand.Args(spec='[CMD ...]', json_field='args')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or [], 'type': 'window'}
  *         for attr, val in opts.__dict__.items():
@@ -1990,10 +1990,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_message_to_smelly(
 
 /* "smelly/rc/new_window.py":91
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from .launch import launch
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2098,10 +2098,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_2response_from_sme
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/new_window.py":92
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         from .launch import launch             # <<<<<<<<<<<<<<
- * 
+ *
  *         return launch.response_from_smelly(boss, window, payload_get)
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -2121,10 +2121,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_2response_from_sme
 
   /* "smelly/rc/new_window.py":94
  *         from .launch import launch
- * 
+ *
  *         return launch.response_from_smelly(boss, window, payload_get)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_launch, __pyx_n_s_response_from_smelly); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
@@ -2183,10 +2183,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10new_window_9NewWindow_2response_from_sme
 
   /* "smelly/rc/new_window.py":91
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from .launch import launch
- * 
+ *
  */
 
   /* function exit code */
@@ -2328,7 +2328,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/new_window.py":78
  *     args = RemoteCommand.Args(spec='[CMD ...]', json_field='args')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or [], 'type': 'window'}
  *         for attr, val in opts.__dict__.items():
@@ -2340,10 +2340,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/new_window.py":91
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from .launch import launch
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get, __pyx_n_s_launch); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -2636,9 +2636,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/new_window.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2664,9 +2664,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/new_window.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2741,10 +2741,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/new_window.py":8
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import NewWindowRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2753,11 +2753,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/new_window.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import NewWindowRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2775,16 +2775,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/new_window.py":8
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import NewWindowRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/new_window.py":12
- * 
- * 
+ *
+ *
  * class NewWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
@@ -2802,7 +2802,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/new_window.py":13
- * 
+ *
  * class NewWindow(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
@@ -2813,7 +2813,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/new_window.py":24
  *     '''
- * 
+ *
  *     short_desc = 'Open new window'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'DEPRECATED: Use the :ref:`launch <at-launch>` command instead.\n\n'
@@ -2856,7 +2856,7 @@ if (!__Pyx_RefNanny) {
  * '''
  *     )
  *     args = RemoteCommand.Args(spec='[CMD ...]', json_field='args')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L1_error)
@@ -2877,7 +2877,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/new_window.py":78
  *     args = RemoteCommand.Args(spec='[CMD ...]', json_field='args')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'args': args or [], 'type': 'window'}
  *         for attr, val in opts.__dict__.items():
@@ -2906,10 +2906,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/new_window.py":91
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from .launch import launch
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2943,8 +2943,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/new_window.py":12
- * 
- * 
+ *
+ *
  * class NewWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
@@ -2958,8 +2958,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/new_window.py":97
- * 
- * 
+ *
+ *
  * new_window = NewWindow()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_NewWindow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
@@ -2973,7 +2973,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/new_window.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

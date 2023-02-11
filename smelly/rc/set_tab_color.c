@@ -1708,8 +1708,8 @@ static PyObject *__pyx_codeobj__9;
 /* Late includes */
 
 /* "smelly/rc/set_tab_color.py":18
- * 
- * 
+ *
+ *
  * def parse_colors(args: ArgsType) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Optional[int]] = {}
  *     for spec in args:
@@ -1754,7 +1754,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_parse_colors(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("parse_colors", 0);
 
   /* "smelly/rc/set_tab_color.py":19
- * 
+ *
  * def parse_colors(args: ArgsType) -> Dict[str, Optional[int]]:
  *     ans: Dict[str, Optional[int]] = {}             # <<<<<<<<<<<<<<
  *     for spec in args:
@@ -1836,11 +1836,11 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_parse_colors(CYTHON_UNUSED
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_6);
@@ -2077,7 +2077,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_parse_colors(CYTHON_UNUSED
  *                 col = int(q)
  *         ans[key.lower()] = col             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     if (unlikely(!__pyx_v_col)) { __Pyx_RaiseUnboundLocalError("col"); __PYX_ERR(0, 31, __pyx_L1_error) }
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_lower); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 31, __pyx_L1_error)
@@ -2114,8 +2114,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_parse_colors(CYTHON_UNUSED
  *                 col = int(q)
  *         ans[key.lower()] = col
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2123,8 +2123,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_parse_colors(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/rc/set_tab_color.py":18
- * 
- * 
+ *
+ *
  * def parse_colors(args: ArgsType) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Optional[int]] = {}
  *     for spec in args:
@@ -2153,7 +2153,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_parse_colors(CYTHON_UNUSED
 
 /* "smelly/rc/set_tab_color.py":61
  *     args = RemoteCommand.Args(spec='COLORS', json_field='colors', minimum_count=1, special_parse='parse_tab_colors(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         try:
  *             colors = parse_colors(args)
@@ -2270,7 +2270,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_message_to_s
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/set_tab_color.py":62
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         try:             # <<<<<<<<<<<<<<
  *             colors = parse_colors(args)
@@ -2313,7 +2313,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_message_to_s
       __pyx_t_4 = 0;
 
       /* "smelly/rc/set_tab_color.py":62
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         try:             # <<<<<<<<<<<<<<
  *             colors = parse_colors(args)
@@ -2381,7 +2381,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_message_to_s
     __pyx_L5_except_error:;
 
     /* "smelly/rc/set_tab_color.py":62
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         try:             # <<<<<<<<<<<<<<
  *             colors = parse_colors(args)
@@ -2411,7 +2411,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_message_to_s
  *         if not colors:
  *             raise ParsingOfArgsFailed('No colors specified')             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'self': opts.self, 'colors': colors}
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_ParsingOfArgsFailed); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -2447,7 +2447,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_message_to_s
  *         if not colors:
  *             raise ParsingOfArgsFailed('No colors specified')
  *         return {'match': opts.match, 'self': opts.self, 'colors': colors}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2468,7 +2468,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_message_to_s
 
   /* "smelly/rc/set_tab_color.py":61
  *     args = RemoteCommand.Args(spec='COLORS', json_field='colors', minimum_count=1, special_parse='parse_tab_colors(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         try:
  *             colors = parse_colors(args)
@@ -2495,7 +2495,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_message_to_s
 
 /* "smelly/rc/set_tab_color.py":70
  *         return {'match': opts.match, 'self': opts.self, 'colors': colors}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         colors = payload_get('colors')
  *         s = {k: None if colors[k] is None else int(colors[k]) for k in valid_color_names if k in colors}
@@ -2618,7 +2618,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_2response_fr
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/set_tab_color.py":71
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         colors = payload_get('colors')             # <<<<<<<<<<<<<<
  *         s = {k: None if colors[k] is None else int(colors[k]) for k in valid_color_names if k in colors}
@@ -2900,11 +2900,11 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_2response_fr
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(__pyx_t_8);
@@ -2965,7 +2965,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_2response_fr
  *                     setattr(tab, k, v)
  *                 tab.mark_tab_bar_dirty()             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_tab, __pyx_n_s_mark_tab_bar_dirty); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -3009,8 +3009,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_2response_fr
  *                     setattr(tab, k, v)
  *                 tab.mark_tab_bar_dirty()
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -3018,7 +3018,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13set_tab_color_11SetTabColor_2response_fr
 
   /* "smelly/rc/set_tab_color.py":70
  *         return {'match': opts.match, 'self': opts.self, 'colors': colors}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         colors = payload_get('colors')
  *         s = {k: None if colors[k] is None else int(colors[k]) for k in valid_color_names if k in colors}
@@ -3205,8 +3205,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__2);
 
   /* "smelly/rc/set_tab_color.py":18
- * 
- * 
+ *
+ *
  * def parse_colors(args: ArgsType) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Optional[int]] = {}
  *     for spec in args:
@@ -3218,7 +3218,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_tab_color.py":61
  *     args = RemoteCommand.Args(spec='COLORS', json_field='colors', minimum_count=1, special_parse='parse_tab_colors(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         try:
  *             colors = parse_colors(args)
@@ -3230,7 +3230,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_tab_color.py":70
  *         return {'match': opts.match, 'self': opts.self, 'colors': colors}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         colors = payload_get('colors')
  *         s = {k: None if colors[k] is None else int(colors[k]) for k in valid_color_names if k in colors}
@@ -3529,10 +3529,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/set_tab_color.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Dict, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.rgb import to_color
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -3565,9 +3565,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_tab_color.py":7
  * from typing import TYPE_CHECKING, Dict, Optional
- * 
+ *
  * from smelly.rgb import to_color             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, ParsingOfArgsFailed, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -3586,9 +3586,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_tab_color.py":9
  * from smelly.rgb import to_color
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, ParsingOfArgsFailed, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -3670,10 +3670,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_tab_color.py":11
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, ParsingOfArgsFailed, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetTabColorRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3682,11 +3682,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_tab_color.py":12
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetTabColorRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -3704,19 +3704,19 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_tab_color.py":11
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, ParsingOfArgsFailed, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetTabColorRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_tab_color.py":15
- * 
- * 
+ *
+ *
  * valid_color_names = frozenset('active_fg active_bg inactive_fg inactive_bg'.split())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_s_active_fg_active_bg_inactive_fg, __pyx_n_s_split); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3730,8 +3730,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_tab_color.py":18
- * 
- * 
+ *
+ *
  * def parse_colors(args: ArgsType) -> Dict[str, Optional[int]]:             # <<<<<<<<<<<<<<
  *     ans: Dict[str, Optional[int]] = {}
  *     for spec in args:
@@ -3771,8 +3771,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/rc/set_tab_color.py":35
- * 
- * 
+ *
+ *
  * class SetTabColor(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers. A color value of null indicates it should be unset.
@@ -3790,7 +3790,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/set_tab_color.py":36
- * 
+ *
  * class SetTabColor(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers. A color value of null indicates it should be unset.
@@ -3801,7 +3801,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_tab_color.py":42
  *     '''
- * 
+ *
  *     short_desc = 'Change the color of the specified tabs in the tab bar'             # <<<<<<<<<<<<<<
  *     desc = f'''
  * {short_desc}
@@ -3809,11 +3809,11 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_short_desc, __pyx_kp_s_Change_the_color_of_the_specifie) < 0) __PYX_ERR(0, 42, __pyx_L1_error)
 
   /* "smelly/rc/set_tab_color.py":43
- * 
+ *
  *     short_desc = 'Change the color of the specified tabs in the tab bar'
  *     desc = f'''             # <<<<<<<<<<<<<<
  * {short_desc}
- * 
+ *
  */
   __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3875,7 +3875,7 @@ if (!__Pyx_RefNanny) {
  * '''
  *     )
  *     args = RemoteCommand.Args(spec='COLORS', json_field='colors', minimum_count=1, special_parse='parse_tab_colors(args)')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
@@ -3898,7 +3898,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_tab_color.py":61
  *     args = RemoteCommand.Args(spec='COLORS', json_field='colors', minimum_count=1, special_parse='parse_tab_colors(args)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         try:
  *             colors = parse_colors(args)
@@ -3927,7 +3927,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_tab_color.py":70
  *         return {'match': opts.match, 'self': opts.self, 'colors': colors}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         colors = payload_get('colors')
  *         s = {k: None if colors[k] is None else int(colors[k]) for k in valid_color_names if k in colors}
@@ -3964,8 +3964,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
   /* "smelly/rc/set_tab_color.py":35
- * 
- * 
+ *
+ *
  * class SetTabColor(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers. A color value of null indicates it should be unset.
@@ -3979,8 +3979,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_tab_color.py":81
- * 
- * 
+ *
+ *
  * set_tab_color = SetTabColor()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SetTabColor); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
@@ -3994,7 +3994,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_tab_color.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);

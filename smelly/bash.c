@@ -1790,8 +1790,8 @@ static PyObject *__pyx_codeobj__36;
 /* Late includes */
 
 /* "smelly/bash.py":24
- * 
- * 
+ *
+ *
  * def ctrl_mask_char(ch: str) -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         o = ord(ch)
@@ -1837,7 +1837,7 @@ static PyObject *__pyx_pf_6smelly_4bash_ctrl_mask_char(CYTHON_UNUSED PyObject *_
   __Pyx_RefNannySetupContext("ctrl_mask_char", 0);
 
   /* "smelly/bash.py":25
- * 
+ *
  * def ctrl_mask_char(ch: str) -> str:
  *     try:             # <<<<<<<<<<<<<<
  *         o = ord(ch)
@@ -1863,7 +1863,7 @@ static PyObject *__pyx_pf_6smelly_4bash_ctrl_mask_char(CYTHON_UNUSED PyObject *_
       __pyx_v_o = __pyx_t_4;
 
       /* "smelly/bash.py":25
- * 
+ *
  * def ctrl_mask_char(ch: str) -> str:
  *     try:             # <<<<<<<<<<<<<<
  *         o = ord(ch)
@@ -1896,7 +1896,7 @@ static PyObject *__pyx_pf_6smelly_4bash_ctrl_mask_char(CYTHON_UNUSED PyObject *_
  *     except Exception:
  *         return ch             # <<<<<<<<<<<<<<
  *     return chr(o & 0b0011111)
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_ch);
@@ -1910,7 +1910,7 @@ static PyObject *__pyx_pf_6smelly_4bash_ctrl_mask_char(CYTHON_UNUSED PyObject *_
     __pyx_L5_except_error:;
 
     /* "smelly/bash.py":25
- * 
+ *
  * def ctrl_mask_char(ch: str) -> str:
  *     try:             # <<<<<<<<<<<<<<
  *         o = ord(ch)
@@ -1934,8 +1934,8 @@ static PyObject *__pyx_pf_6smelly_4bash_ctrl_mask_char(CYTHON_UNUSED PyObject *_
  *     except Exception:
  *         return ch
  *     return chr(o & 0b0011111)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_8 = __Pyx_PyInt_From_long((__pyx_v_o & 31)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 29, __pyx_L1_error)
@@ -1949,8 +1949,8 @@ static PyObject *__pyx_pf_6smelly_4bash_ctrl_mask_char(CYTHON_UNUSED PyObject *_
   goto __pyx_L0;
 
   /* "smelly/bash.py":24
- * 
- * 
+ *
+ *
  * def ctrl_mask_char(ch: str) -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         o = ord(ch)
@@ -1970,8 +1970,8 @@ static PyObject *__pyx_pf_6smelly_4bash_ctrl_mask_char(CYTHON_UNUSED PyObject *_
 }
 
 /* "smelly/bash.py":32
- * 
- * 
+ *
+ *
  * def read_digit(text: str, pos: int, max_len: int, valid_digits: str, base: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     epos = pos
  *     while (epos - pos) <= max_len and epos < len(text) and text[epos] in valid_digits:
@@ -2106,7 +2106,7 @@ static PyObject *__pyx_pf_6smelly_4bash_2read_digit(CYTHON_UNUSED PyObject *__py
   __Pyx_RefNannySetupContext("read_digit", 0);
 
   /* "smelly/bash.py":33
- * 
+ *
  * def read_digit(text: str, pos: int, max_len: int, valid_digits: str, base: int) -> Tuple[str, int]:
  *     epos = pos             # <<<<<<<<<<<<<<
  *     while (epos - pos) <= max_len and epos < len(text) and text[epos] in valid_digits:
@@ -2271,7 +2271,7 @@ static PyObject *__pyx_pf_6smelly_4bash_2read_digit(CYTHON_UNUSED PyObject *__py
  *         return chr(int(raw, base)), epos
  *     except Exception:             # <<<<<<<<<<<<<<
  *         return raw, epos
- * 
+ *
  */
     __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_12) {
@@ -2285,8 +2285,8 @@ static PyObject *__pyx_pf_6smelly_4bash_2read_digit(CYTHON_UNUSED PyObject *__py
  *         return chr(int(raw, base)), epos
  *     except Exception:
  *         return raw, epos             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_t_14 = PyTuple_New(2); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 40, __pyx_L10_except_error)
@@ -2334,8 +2334,8 @@ static PyObject *__pyx_pf_6smelly_4bash_2read_digit(CYTHON_UNUSED PyObject *__py
   }
 
   /* "smelly/bash.py":32
- * 
- * 
+ *
+ *
  * def read_digit(text: str, pos: int, max_len: int, valid_digits: str, base: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     epos = pos
  *     while (epos - pos) <= max_len and epos < len(text) and text[epos] in valid_digits:
@@ -2358,11 +2358,11 @@ static PyObject *__pyx_pf_6smelly_4bash_2read_digit(CYTHON_UNUSED PyObject *__py
 }
 
 /* "smelly/bash.py":43
- * 
- * 
+ *
+ *
  * def read_hex_digit(text: str, pos: int, max_len: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, max_len, string.digits + 'abcdefABCDEF', 16)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2461,11 +2461,11 @@ static PyObject *__pyx_pf_6smelly_4bash_4read_hex_digit(CYTHON_UNUSED PyObject *
   __Pyx_RefNannySetupContext("read_hex_digit", 0);
 
   /* "smelly/bash.py":44
- * 
+ *
  * def read_hex_digit(text: str, pos: int, max_len: int) -> Tuple[str, int]:
  *     return read_digit(text, pos, max_len, string.digits + 'abcdefABCDEF', 16)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_read_digit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
@@ -2539,11 +2539,11 @@ static PyObject *__pyx_pf_6smelly_4bash_4read_hex_digit(CYTHON_UNUSED PyObject *
   goto __pyx_L0;
 
   /* "smelly/bash.py":43
- * 
- * 
+ *
+ *
  * def read_hex_digit(text: str, pos: int, max_len: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, max_len, string.digits + 'abcdefABCDEF', 16)
- * 
+ *
  */
 
   /* function exit code */
@@ -2562,11 +2562,11 @@ static PyObject *__pyx_pf_6smelly_4bash_4read_hex_digit(CYTHON_UNUSED PyObject *
 }
 
 /* "smelly/bash.py":47
- * 
- * 
+ *
+ *
  * def read_octal_digit(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, 3, '01234567', 8)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2653,11 +2653,11 @@ static PyObject *__pyx_pf_6smelly_4bash_6read_octal_digit(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("read_octal_digit", 0);
 
   /* "smelly/bash.py":48
- * 
+ *
  * def read_octal_digit(text: str, pos: int) -> Tuple[str, int]:
  *     return read_digit(text, pos, 3, '01234567', 8)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_read_digit); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -2721,11 +2721,11 @@ static PyObject *__pyx_pf_6smelly_4bash_6read_octal_digit(CYTHON_UNUSED PyObject
   goto __pyx_L0;
 
   /* "smelly/bash.py":47
- * 
- * 
+ *
+ *
  * def read_octal_digit(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, 3, '01234567', 8)
- * 
+ *
  */
 
   /* function exit code */
@@ -2743,8 +2743,8 @@ static PyObject *__pyx_pf_6smelly_4bash_6read_octal_digit(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/bash.py":51
- * 
- * 
+ *
+ *
  * def decode_ansi_c_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     buf: List[str] = []
  *     a = buf.append
@@ -2848,7 +2848,7 @@ static PyObject *__pyx_pf_6smelly_4bash_8decode_ansi_c_quoted_string(CYTHON_UNUS
   __Pyx_INCREF(__pyx_v_pos);
 
   /* "smelly/bash.py":52
- * 
+ *
  * def decode_ansi_c_quoted_string(text: str, pos: int) -> Tuple[str, int]:
  *     buf: List[str] = []             # <<<<<<<<<<<<<<
  *     a = buf.append
@@ -3179,11 +3179,11 @@ static PyObject *__pyx_pf_6smelly_4bash_8decode_ansi_c_quoted_string(CYTHON_UNUS
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_11 = PyTuple_GET_ITEM(sequence, 1); 
+              __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_11 = PyTuple_GET_ITEM(sequence, 1);
             } else {
-              __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_11 = PyList_GET_ITEM(sequence, 1); 
+              __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_11 = PyList_GET_ITEM(sequence, 1);
             }
             __Pyx_INCREF(__pyx_t_5);
             __Pyx_INCREF(__pyx_t_11);
@@ -3343,11 +3343,11 @@ static PyObject *__pyx_pf_6smelly_4bash_8decode_ansi_c_quoted_string(CYTHON_UNUS
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_11 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+              __pyx_t_11 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
             } else {
-              __pyx_t_11 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+              __pyx_t_11 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
             }
             __Pyx_INCREF(__pyx_t_11);
             __Pyx_INCREF(__pyx_t_1);
@@ -3496,7 +3496,7 @@ static PyObject *__pyx_pf_6smelly_4bash_8decode_ansi_c_quoted_string(CYTHON_UNUS
  *         else:
  *             a(ch)             # <<<<<<<<<<<<<<
  *     return ''.join(buf), pos
- * 
+ *
  */
     /*else*/ {
 
@@ -3517,8 +3517,8 @@ static PyObject *__pyx_pf_6smelly_4bash_8decode_ansi_c_quoted_string(CYTHON_UNUS
  *         else:
  *             a(ch)
  *     return ''.join(buf), pos             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = __Pyx_PyString_Join(__pyx_kp_s__3, __pyx_v_buf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -3536,8 +3536,8 @@ static PyObject *__pyx_pf_6smelly_4bash_8decode_ansi_c_quoted_string(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/bash.py":51
- * 
- * 
+ *
+ *
  * def decode_ansi_c_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     buf: List[str] = []
  *     a = buf.append
@@ -3566,8 +3566,8 @@ static PyObject *__pyx_pf_6smelly_4bash_8decode_ansi_c_quoted_string(CYTHON_UNUS
 }
 
 /* "smelly/bash.py":83
- * 
- * 
+ *
+ *
  * def decode_double_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     escapes = r'"\$`'
  *     buf: List[str] = []
@@ -3663,7 +3663,7 @@ static PyObject *__pyx_pf_6smelly_4bash_10decode_double_quoted_string(CYTHON_UNU
   __Pyx_INCREF(__pyx_v_pos);
 
   /* "smelly/bash.py":84
- * 
+ *
  * def decode_double_quoted_string(text: str, pos: int) -> Tuple[str, int]:
  *     escapes = r'"\$`'             # <<<<<<<<<<<<<<
  *     buf: List[str] = []
@@ -3855,7 +3855,7 @@ static PyObject *__pyx_pf_6smelly_4bash_10decode_double_quoted_string(CYTHON_UNU
  *         else:
  *             a(ch)             # <<<<<<<<<<<<<<
  *     return ''.join(buf), pos
- * 
+ *
  */
     /*else*/ {
 
@@ -3877,8 +3877,8 @@ static PyObject *__pyx_pf_6smelly_4bash_10decode_double_quoted_string(CYTHON_UNU
  *         else:
  *             a(ch)
  *     return ''.join(buf), pos             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = __Pyx_PyString_Join(__pyx_kp_s__3, __pyx_v_buf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 100, __pyx_L1_error)
@@ -3896,8 +3896,8 @@ static PyObject *__pyx_pf_6smelly_4bash_10decode_double_quoted_string(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/bash.py":83
- * 
- * 
+ *
+ *
  * def decode_double_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     escapes = r'"\$`'
  *     buf: List[str] = []
@@ -3921,8 +3921,8 @@ static PyObject *__pyx_pf_6smelly_4bash_10decode_double_quoted_string(CYTHON_UNU
 }
 
 /* "smelly/bash.py":103
- * 
- * 
+ *
+ *
  * def parse_modern_bash_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.splitlines():
@@ -3973,7 +3973,7 @@ static PyObject *__pyx_pf_6smelly_4bash_12parse_modern_bash_env(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("parse_modern_bash_env", 0);
 
   /* "smelly/bash.py":104
- * 
+ *
  * def parse_modern_bash_env(text: str) -> Dict[str, str]:
  *     ans = {}             # <<<<<<<<<<<<<<
  *     for line in text.splitlines():
@@ -4307,7 +4307,7 @@ static PyObject *__pyx_pf_6smelly_4bash_12parse_modern_bash_env(CYTHON_UNUSED Py
  *             val = decode_ansi_c_quoted_string(val, 2)[0]
  *         ans[key] = val             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     if (unlikely(PyDict_SetItem(__pyx_v_ans, __pyx_v_key, __pyx_v_val) < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
 
@@ -4326,8 +4326,8 @@ static PyObject *__pyx_pf_6smelly_4bash_12parse_modern_bash_env(CYTHON_UNUSED Py
  *             val = decode_ansi_c_quoted_string(val, 2)[0]
  *         ans[key] = val
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -4335,8 +4335,8 @@ static PyObject *__pyx_pf_6smelly_4bash_12parse_modern_bash_env(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/bash.py":103
- * 
- * 
+ *
+ *
  * def parse_modern_bash_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.splitlines():
@@ -4363,8 +4363,8 @@ static PyObject *__pyx_pf_6smelly_4bash_12parse_modern_bash_env(CYTHON_UNUSED Py
 }
 
 /* "smelly/bash.py":119
- * 
- * 
+ *
+ *
  * def parse_bash_env(text: str, bash_version: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     # See https://www.gnu.org/software/bash/manual/html_node/Double-Quotes.html
  *     parts = bash_version.split('.')
@@ -4836,11 +4836,11 @@ static PyObject *__pyx_pf_6smelly_4bash_14parse_bash_env(CYTHON_UNUSED PyObject 
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_4);
@@ -4890,8 +4890,8 @@ static PyObject *__pyx_pf_6smelly_4bash_14parse_bash_env(CYTHON_UNUSED PyObject 
   goto __pyx_L0;
 
   /* "smelly/bash.py":119
- * 
- * 
+ *
+ *
  * def parse_bash_env(text: str, bash_version: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     # See https://www.gnu.org/software/bash/manual/html_node/Double-Quotes.html
  *     parts = bash_version.split('.')
@@ -5095,8 +5095,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__10);
 
   /* "smelly/bash.py":24
- * 
- * 
+ *
+ *
  * def ctrl_mask_char(ch: str) -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         o = ord(ch)
@@ -5107,8 +5107,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_bash_py, __pyx_n_s_ctrl_mask_char, 24, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 24, __pyx_L1_error)
 
   /* "smelly/bash.py":32
- * 
- * 
+ *
+ *
  * def read_digit(text: str, pos: int, max_len: int, valid_digits: str, base: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     epos = pos
  *     while (epos - pos) <= max_len and epos < len(text) and text[epos] in valid_digits:
@@ -5119,11 +5119,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(5, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_bash_py, __pyx_n_s_read_digit, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 32, __pyx_L1_error)
 
   /* "smelly/bash.py":43
- * 
- * 
+ *
+ *
  * def read_hex_digit(text: str, pos: int, max_len: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, max_len, string.digits + 'abcdefABCDEF', 16)
- * 
+ *
  */
   __pyx_tuple__25 = PyTuple_Pack(3, __pyx_n_s_text, __pyx_n_s_pos, __pyx_n_s_max_len); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
@@ -5131,11 +5131,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_bash_py, __pyx_n_s_read_hex_digit, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 43, __pyx_L1_error)
 
   /* "smelly/bash.py":47
- * 
- * 
+ *
+ *
  * def read_octal_digit(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, 3, '01234567', 8)
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(2, __pyx_n_s_text, __pyx_n_s_pos); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
@@ -5143,8 +5143,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_bash_py, __pyx_n_s_read_octal_digit, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 47, __pyx_L1_error)
 
   /* "smelly/bash.py":51
- * 
- * 
+ *
+ *
  * def decode_ansi_c_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     buf: List[str] = []
  *     a = buf.append
@@ -5155,8 +5155,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_bash_py, __pyx_n_s_decode_ansi_c_quoted_string, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 51, __pyx_L1_error)
 
   /* "smelly/bash.py":83
- * 
- * 
+ *
+ *
  * def decode_double_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     escapes = r'"\$`'
  *     buf: List[str] = []
@@ -5167,8 +5167,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_bash_py, __pyx_n_s_decode_double_quoted_string, 83, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 83, __pyx_L1_error)
 
   /* "smelly/bash.py":103
- * 
- * 
+ *
+ *
  * def parse_modern_bash_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.splitlines():
@@ -5179,8 +5179,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_bash_py, __pyx_n_s_parse_modern_bash_env, 103, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 103, __pyx_L1_error)
 
   /* "smelly/bash.py":119
- * 
- * 
+ *
+ *
  * def parse_bash_env(text: str, bash_version: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     # See https://www.gnu.org/software/bash/manual/html_node/Double-Quotes.html
  *     parts = bash_version.split('.')
@@ -5483,10 +5483,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/bash.py":4
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import string             # <<<<<<<<<<<<<<
  * from typing import Dict, List, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_string, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5494,10 +5494,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/bash.py":5
- * 
+ *
  * import string
  * from typing import Dict, List, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * ansi_c_escapes = {
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -5529,7 +5529,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/bash.py":8
- * 
+ *
  * ansi_c_escapes = {
  *     'a': '\a',             # <<<<<<<<<<<<<<
  *     'b': '\b',
@@ -5554,8 +5554,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/bash.py":24
- * 
- * 
+ *
+ *
  * def ctrl_mask_char(ch: str) -> str:             # <<<<<<<<<<<<<<
  *     try:
  *         o = ord(ch)
@@ -5572,8 +5572,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/bash.py":32
- * 
- * 
+ *
+ *
  * def read_digit(text: str, pos: int, max_len: int, valid_digits: str, base: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     epos = pos
  *     while (epos - pos) <= max_len and epos < len(text) and text[epos] in valid_digits:
@@ -5609,11 +5609,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/bash.py":43
- * 
- * 
+ *
+ *
  * def read_hex_digit(text: str, pos: int, max_len: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, max_len, string.digits + 'abcdefABCDEF', 16)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5644,11 +5644,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/bash.py":47
- * 
- * 
+ *
+ *
  * def read_octal_digit(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     return read_digit(text, pos, 3, '01234567', 8)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5678,8 +5678,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/bash.py":51
- * 
- * 
+ *
+ *
  * def decode_ansi_c_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     buf: List[str] = []
  *     a = buf.append
@@ -5712,8 +5712,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/bash.py":83
- * 
- * 
+ *
+ *
  * def decode_double_quoted_string(text: str, pos: int) -> Tuple[str, int]:             # <<<<<<<<<<<<<<
  *     escapes = r'"\$`'
  *     buf: List[str] = []
@@ -5746,8 +5746,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/bash.py":103
- * 
- * 
+ *
+ *
  * def parse_modern_bash_env(text: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for line in text.splitlines():
@@ -5779,8 +5779,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/bash.py":119
- * 
- * 
+ *
+ *
  * def parse_bash_env(text: str, bash_version: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     # See https://www.gnu.org/software/bash/manual/html_node/Double-Quotes.html
  *     parts = bash_version.split('.')
@@ -5815,7 +5815,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/bash.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -6718,8 +6718,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -7185,8 +7185,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

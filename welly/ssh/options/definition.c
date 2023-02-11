@@ -1548,7 +1548,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":15
  * copied as is.'''
- * 
+ *
  * definition = Definition(             # <<<<<<<<<<<<<<
  *     'wellies.ssh',
  * )
@@ -1559,9 +1559,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":23
  * opt = definition.add_option
- * 
+ *
  * agr('bootstrap', 'Host bootstrap configuration')  # {{{             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__2 = PyTuple_Pack(2, __pyx_n_s_bootstrap, __pyx_kp_s_Host_bootstrap_configuration); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -1570,7 +1570,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":25
  * agr('bootstrap', 'Host bootstrap configuration')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hostname',
  *     '*',
@@ -1581,7 +1581,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":41
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'interpreter',
  *     'sh',
@@ -1592,7 +1592,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":51
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remote_dir',
  *     '.local/share/smelly-ssh-kitten',
@@ -1603,7 +1603,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":60
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+copy',
  *     '',
@@ -1614,9 +1614,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":88
  * egr()  # }}}
- * 
+ *
  * agr('shell', 'Login shell environment')  # {{{             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__10 = PyTuple_Pack(2, __pyx_n_s_shell, __pyx_kp_s_Login_shell_environment); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 88, __pyx_L1_error)
@@ -1625,7 +1625,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":90
  * agr('shell', 'Login shell environment')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell_integration',
  *     'inherited',
@@ -1636,7 +1636,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":101
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'login_shell',
  *     '',
@@ -1647,7 +1647,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":110
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+env',
  *     '',
@@ -1658,7 +1658,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":131
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cwd',
  *     '',
@@ -1669,7 +1669,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":141
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color_scheme',
  *     '',
@@ -1680,7 +1680,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":154
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remote_smelly',
  *     'if-needed',
@@ -1702,9 +1702,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":176
  * egr()  # }}}
- * 
+ *
  * agr('ssh', 'SSH configuration')  # {{{             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __pyx_tuple__18 = PyTuple_Pack(2, __pyx_n_s_ssh, __pyx_kp_s_SSH_configuration); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 176, __pyx_L1_error)
@@ -1713,7 +1713,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":178
  * agr('ssh', 'SSH configuration')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'share_connections',
  *     'yes',
@@ -1724,7 +1724,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/ssh/options/definition.py":192
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'askpass',
  *     'unless-set',
@@ -2029,9 +2029,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":7
  * # After editing this file run ./gen-config.py to apply the changes
- * 
+ *
  * from smelly.conf.types import Definition             # <<<<<<<<<<<<<<
- * 
+ *
  * copy_message = '''\
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2050,7 +2050,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":9
  * from smelly.conf.types import Definition
- * 
+ *
  * copy_message = '''\             # <<<<<<<<<<<<<<
  * Copy files and directories from local to remote hosts. The specified files are
  * assumed to be relative to the HOME directory and copied to the HOME on the
@@ -2059,7 +2059,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":15
  * copied as is.'''
- * 
+ *
  * definition = Definition(             # <<<<<<<<<<<<<<
  *     'wellies.ssh',
  * )
@@ -2074,7 +2074,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":19
  * )
- * 
+ *
  * agr = definition.add_group             # <<<<<<<<<<<<<<
  * egr = definition.end_group
  * opt = definition.add_option
@@ -2088,11 +2088,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/options/definition.py":20
- * 
+ *
  * agr = definition.add_group
  * egr = definition.end_group             # <<<<<<<<<<<<<<
  * opt = definition.add_option
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_definition); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2106,7 +2106,7 @@ if (!__Pyx_RefNanny) {
  * agr = definition.add_group
  * egr = definition.end_group
  * opt = definition.add_option             # <<<<<<<<<<<<<<
- * 
+ *
  * agr('bootstrap', 'Host bootstrap configuration')  # {{{
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_definition); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
@@ -2119,9 +2119,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":23
  * opt = definition.add_option
- * 
+ *
  * agr('bootstrap', 'Host bootstrap configuration')  # {{{             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_agr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -2133,7 +2133,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":25
  * agr('bootstrap', 'Host bootstrap configuration')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hostname',
  *     '*',
@@ -2155,7 +2155,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":25
  * agr('bootstrap', 'Host bootstrap configuration')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'hostname',
  *     '*',
@@ -2168,7 +2168,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":41
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'interpreter',
  *     'sh',
@@ -2189,7 +2189,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":41
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'interpreter',
  *     'sh',
@@ -2202,7 +2202,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":51
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remote_dir',
  *     '.local/share/smelly-ssh-kitten',
@@ -2223,7 +2223,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":51
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remote_dir',
  *     '.local/share/smelly-ssh-kitten',
@@ -2236,7 +2236,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":60
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+copy',
  *     '',
@@ -2269,7 +2269,7 @@ if (!__Pyx_RefNanny) {
  *     add_to_default=False,
  *     long_text=f'''             # <<<<<<<<<<<<<<
  * {copy_message} For example::
- * 
+ *
  */
   __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2301,7 +2301,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":60
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+copy',
  *     '',
@@ -2316,7 +2316,7 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
+ *
  * agr('shell', 'Login shell environment')  # {{{
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_egr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 86, __pyx_L1_error)
@@ -2328,9 +2328,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":88
  * egr()  # }}}
- * 
+ *
  * agr('shell', 'Login shell environment')  # {{{             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_agr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
@@ -2342,7 +2342,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":90
  * agr('shell', 'Login shell environment')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell_integration',
  *     'inherited',
@@ -2363,7 +2363,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":90
  * agr('shell', 'Login shell environment')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'shell_integration',
  *     'inherited',
@@ -2376,7 +2376,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":101
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'login_shell',
  *     '',
@@ -2397,7 +2397,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":101
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'login_shell',
  *     '',
@@ -2410,7 +2410,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":110
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+env',
  *     '',
@@ -2441,7 +2441,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":110
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     '+env',
  *     '',
@@ -2454,7 +2454,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":131
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cwd',
  *     '',
@@ -2475,7 +2475,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":131
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'cwd',
  *     '',
@@ -2488,7 +2488,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":141
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color_scheme',
  *     '',
@@ -2509,7 +2509,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":141
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'color_scheme',
  *     '',
@@ -2522,7 +2522,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":154
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remote_smelly',
  *     'if-needed',
@@ -2544,7 +2544,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":154
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'remote_smelly',
  *     'if-needed',
@@ -2559,7 +2559,7 @@ if (!__Pyx_RefNanny) {
  * ''',
  * )
  * egr()  # }}}             # <<<<<<<<<<<<<<
- * 
+ *
  * agr('ssh', 'SSH configuration')  # {{{
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_egr); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 174, __pyx_L1_error)
@@ -2571,9 +2571,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":176
  * egr()  # }}}
- * 
+ *
  * agr('ssh', 'SSH configuration')  # {{{             # <<<<<<<<<<<<<<
- * 
+ *
  * opt(
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_agr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 176, __pyx_L1_error)
@@ -2585,7 +2585,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":178
  * agr('ssh', 'SSH configuration')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'share_connections',
  *     'yes',
@@ -2607,7 +2607,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":178
  * agr('ssh', 'SSH configuration')  # {{{
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'share_connections',
  *     'yes',
@@ -2620,7 +2620,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":192
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'askpass',
  *     'unless-set',
@@ -2642,7 +2642,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/options/definition.py":192
  * )
- * 
+ *
  * opt(             # <<<<<<<<<<<<<<
  *     'askpass',
  *     'unless-set',

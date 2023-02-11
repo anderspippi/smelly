@@ -974,7 +974,7 @@ struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct_4_genexpr;
 
 /* "welly/diff/patch.py":78
  *         self.right_count += 1
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
@@ -989,7 +989,7 @@ struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct__finalize {
  *     def finalize(self) -> None:
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __repr__(self) -> str:
  */
 struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct_1_genexpr {
@@ -1003,7 +1003,7 @@ struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct_1_genexpr {
 
 
 /* "welly/diff/patch.py":173
- * 
+ *
  * class Patch:
  *     def __init__(self, all_hunks: Sequence[Hunk]):             # <<<<<<<<<<<<<<
  *         self.all_hunks = all_hunks
@@ -1020,7 +1020,7 @@ struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct_2___init__ {
  *         self.largest_line_number = self.all_hunks[-1].largest_line_number if self.all_hunks else 0
  *         self.added_count = sum(h.added_count for h in all_hunks)             # <<<<<<<<<<<<<<
  *         self.removed_count = sum(h.removed_count for h in all_hunks)
- * 
+ *
  */
 struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct_3_genexpr {
   PyObject_HEAD
@@ -1036,7 +1036,7 @@ struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct_3_genexpr {
  *         self.largest_line_number = self.all_hunks[-1].largest_line_number if self.all_hunks else 0
  *         self.added_count = sum(h.added_count for h in all_hunks)
  *         self.removed_count = sum(h.removed_count for h in all_hunks)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:
  */
 struct __pyx_obj_5welly_4diff_5patch___pyx_scope_struct_4_genexpr {
@@ -2291,8 +2291,8 @@ static PyObject *__pyx_codeobj__65;
 /* Late includes */
 
 /* "welly/diff/patch.py":22
- * 
- * 
+ *
+ *
  * def find_differ() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     if shutil.which('git') and subprocess.Popen(['git', '--help'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL).wait() == 0:
  *         return GIT_DIFF
@@ -2329,7 +2329,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_find_differ(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("find_differ", 0);
 
   /* "welly/diff/patch.py":23
- * 
+ *
  * def find_differ() -> Optional[str]:
  *     if shutil.which('git') and subprocess.Popen(['git', '--help'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL).wait() == 0:             # <<<<<<<<<<<<<<
  *         return GIT_DIFF
@@ -2443,7 +2443,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_find_differ(CYTHON_UNUSED PyObject
     goto __pyx_L0;
 
     /* "welly/diff/patch.py":23
- * 
+ *
  * def find_differ() -> Optional[str]:
  *     if shutil.which('git') and subprocess.Popen(['git', '--help'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL).wait() == 0:             # <<<<<<<<<<<<<<
  *         return GIT_DIFF
@@ -2487,7 +2487,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_find_differ(CYTHON_UNUSED PyObject
  *     if shutil.which('diff'):
  *         return DIFF_DIFF             # <<<<<<<<<<<<<<
  *     return None
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_DIFF_DIFF); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 26, __pyx_L1_error)
@@ -2509,16 +2509,16 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_find_differ(CYTHON_UNUSED PyObject
  *     if shutil.which('diff'):
  *         return DIFF_DIFF
  *     return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
 
   /* "welly/diff/patch.py":22
- * 
- * 
+ *
+ *
  * def find_differ() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     if shutil.which('git') and subprocess.Popen(['git', '--help'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL).wait() == 0:
  *         return GIT_DIFF
@@ -2541,8 +2541,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_find_differ(CYTHON_UNUSED PyObject
 }
 
 /* "welly/diff/patch.py":30
- * 
- * 
+ *
+ *
  * def set_diff_command(opt: str) -> None:             # <<<<<<<<<<<<<<
  *     if opt == 'auto':
  *         cmd = find_differ()
@@ -2585,7 +2585,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_2set_diff_command(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("set_diff_command", 0);
 
   /* "welly/diff/patch.py":31
- * 
+ *
  * def set_diff_command(opt: str) -> None:
  *     if opt == 'auto':             # <<<<<<<<<<<<<<
  *         cmd = find_differ()
@@ -2656,7 +2656,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_2set_diff_command(CYTHON_UNUSED Py
     }
 
     /* "welly/diff/patch.py":31
- * 
+ *
  * def set_diff_command(opt: str) -> None:
  *     if opt == 'auto':             # <<<<<<<<<<<<<<
  *         cmd = find_differ()
@@ -2670,7 +2670,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_2set_diff_command(CYTHON_UNUSED Py
  *     else:
  *         cmd = opt             # <<<<<<<<<<<<<<
  *     global_data.cmd = cmd
- * 
+ *
  */
   /*else*/ {
     __Pyx_INCREF(__pyx_v_opt);
@@ -2682,8 +2682,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_2set_diff_command(CYTHON_UNUSED Py
  *     else:
  *         cmd = opt
  *     global_data.cmd = cmd             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_global_data); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2691,8 +2691,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_2set_diff_command(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/patch.py":30
- * 
- * 
+ *
+ *
  * def set_diff_command(opt: str) -> None:             # <<<<<<<<<<<<<<
  *     if opt == 'auto':
  *         cmd = find_differ()
@@ -2715,8 +2715,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_2set_diff_command(CYTHON_UNUSED Py
 }
 
 /* "welly/diff/patch.py":40
- * 
- * 
+ *
+ *
  * def run_diff(file1: str, file2: str, context: int = 3) -> Tuple[bool, Union[int, bool], str]:             # <<<<<<<<<<<<<<
  *     # returns: ok, is_different, patch
  *     cmd = shlex.split(global_data.cmd.replace('_CONTEXT_', str(context)))
@@ -3097,11 +3097,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4run_diff(CYTHON_UNUSED PyObject *
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_t_1);
@@ -3230,7 +3230,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4run_diff(CYTHON_UNUSED PyObject *
  *     if returncode in (0, 1):
  *         return True, returncode == 1, stdout.decode('utf-8')             # <<<<<<<<<<<<<<
  *     return False, returncode, stderr.decode('utf-8')
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_2 = __Pyx_PyInt_EqObjC(__pyx_v_returncode, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -3280,8 +3280,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4run_diff(CYTHON_UNUSED PyObject *
  *     if returncode in (0, 1):
  *         return True, returncode == 1, stdout.decode('utf-8')
  *     return False, returncode, stderr.decode('utf-8')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_stderr, __pyx_n_s_decode); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 55, __pyx_L1_error)
@@ -3317,8 +3317,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4run_diff(CYTHON_UNUSED PyObject *
   goto __pyx_L0;
 
   /* "welly/diff/patch.py":40
- * 
- * 
+ *
+ *
  * def run_diff(file1: str, file2: str, context: int = 3) -> Tuple[bool, Union[int, bool], str]:             # <<<<<<<<<<<<<<
  *     # returns: ok, is_different, patch
  *     cmd = shlex.split(global_data.cmd.replace('_CONTEXT_', str(context)))
@@ -3350,7 +3350,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4run_diff(CYTHON_UNUSED PyObject *
 
 /* "welly/diff/patch.py":61
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')
- * 
+ *
  *     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.is_context = is_context
  *         self.left_start = left_start
@@ -3456,7 +3456,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk___init__(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "welly/diff/patch.py":62
- * 
+ *
  *     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:
  *         self.is_context = is_context             # <<<<<<<<<<<<<<
  *         self.left_start = left_start
@@ -3487,7 +3487,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk___init__(CYTHON_UNUSED PyOb
  *         self.right_start = right_start
  *         self.left_count = self.right_count = 0             # <<<<<<<<<<<<<<
  *         self.centers: Optional[Tuple[Tuple[int, int], ...]] = None
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_left_count, __pyx_int_0) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_right_count, __pyx_int_0) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
@@ -3496,14 +3496,14 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk___init__(CYTHON_UNUSED PyOb
  *         self.right_start = right_start
  *         self.left_count = self.right_count = 0
  *         self.centers: Optional[Tuple[Tuple[int, int], ...]] = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_line(self) -> None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_centers, Py_None) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
 
   /* "welly/diff/patch.py":61
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')
- * 
+ *
  *     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.is_context = is_context
  *         self.left_start = left_start
@@ -3523,10 +3523,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk___init__(CYTHON_UNUSED PyOb
 
 /* "welly/diff/patch.py":68
  *         self.centers: Optional[Tuple[Tuple[int, int], ...]] = None
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.right_count += 1
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3554,10 +3554,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_2add_line(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("add_line", 0);
 
   /* "welly/diff/patch.py":69
- * 
+ *
  *     def add_line(self) -> None:
  *         self.right_count += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_line(self) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_right_count); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
@@ -3570,10 +3570,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_2add_line(CYTHON_UNUSED PyO
 
   /* "welly/diff/patch.py":68
  *         self.centers: Optional[Tuple[Tuple[int, int], ...]] = None
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.right_count += 1
- * 
+ *
  */
 
   /* function exit code */
@@ -3592,10 +3592,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_2add_line(CYTHON_UNUSED PyO
 
 /* "welly/diff/patch.py":71
  *         self.right_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3623,10 +3623,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_4remove_line(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("remove_line", 0);
 
   /* "welly/diff/patch.py":72
- * 
+ *
  *     def remove_line(self) -> None:
  *         self.left_count += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def context_line(self) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_left_count); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
@@ -3639,10 +3639,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_4remove_line(CYTHON_UNUSED 
 
   /* "welly/diff/patch.py":71
  *         self.right_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
- * 
+ *
  */
 
   /* function exit code */
@@ -3661,7 +3661,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_4remove_line(CYTHON_UNUSED 
 
 /* "welly/diff/patch.py":74
  *         self.left_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
  *         self.right_count += 1
@@ -3692,11 +3692,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_6context_line(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("context_line", 0);
 
   /* "welly/diff/patch.py":75
- * 
+ *
  *     def context_line(self) -> None:
  *         self.left_count += 1             # <<<<<<<<<<<<<<
  *         self.right_count += 1
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_left_count); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3710,7 +3710,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_6context_line(CYTHON_UNUSED
  *     def context_line(self) -> None:
  *         self.left_count += 1
  *         self.right_count += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def finalize(self) -> None:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_right_count); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
@@ -3723,7 +3723,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_6context_line(CYTHON_UNUSED
 
   /* "welly/diff/patch.py":74
  *         self.left_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
  *         self.right_count += 1
@@ -3745,7 +3745,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_6context_line(CYTHON_UNUSED
 
 /* "welly/diff/patch.py":78
  *         self.right_count += 1
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
@@ -3770,7 +3770,7 @@ static PyObject *__pyx_gb_5welly_4diff_5patch_5Chunk_8finalize_2generator(__pyx_
  *     def finalize(self) -> None:
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __repr__(self) -> str:
  */
 
@@ -4011,7 +4011,7 @@ static PyObject *__pyx_gb_5welly_4diff_5patch_5Chunk_8finalize_2generator(__pyx_
 
 /* "welly/diff/patch.py":78
  *         self.right_count += 1
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
@@ -4045,11 +4045,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_8finalize(CYTHON_UNUSED PyO
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "welly/diff/patch.py":79
- * 
+ *
  *     def finalize(self) -> None:
  *         if not self.is_context and self.left_count == self.right_count:             # <<<<<<<<<<<<<<
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_is_context); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4078,7 +4078,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_8finalize(CYTHON_UNUSED PyO
  *     def finalize(self) -> None:
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __repr__(self) -> str:
  */
     __pyx_t_6 = __pyx_pf_5welly_4diff_5patch_5Chunk_8finalize_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -4090,17 +4090,17 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_8finalize(CYTHON_UNUSED PyO
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "welly/diff/patch.py":79
- * 
+ *
  *     def finalize(self) -> None:
  *         if not self.is_context and self.left_count == self.right_count:             # <<<<<<<<<<<<<<
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
- * 
+ *
  */
   }
 
   /* "welly/diff/patch.py":78
  *         self.right_count += 1
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
@@ -4125,7 +4125,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_8finalize(CYTHON_UNUSED PyO
 
 /* "welly/diff/patch.py":82
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(
  *             self.is_context, self.left_start, self.left_count, self.right_start, self.right_count
@@ -4164,7 +4164,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_10__repr__(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("__repr__", 0);
 
   /* "welly/diff/patch.py":83
- * 
+ *
  *     def __repr__(self) -> str:
  *         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(             # <<<<<<<<<<<<<<
  *             self.is_context, self.left_start, self.left_count, self.right_start, self.right_count
@@ -4179,7 +4179,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_10__repr__(CYTHON_UNUSED Py
  *         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(
  *             self.is_context, self.left_start, self.left_count, self.right_start, self.right_count             # <<<<<<<<<<<<<<
  *         )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_is_context); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4257,7 +4257,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_10__repr__(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/patch.py":83
- * 
+ *
  *     def __repr__(self) -> str:
  *         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(             # <<<<<<<<<<<<<<
  *             self.is_context, self.left_start, self.left_count, self.right_start, self.right_count
@@ -4270,7 +4270,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_10__repr__(CYTHON_UNUSED Py
 
   /* "welly/diff/patch.py":82
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(
  *             self.is_context, self.left_start, self.left_count, self.right_start, self.right_count
@@ -4296,7 +4296,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Chunk_10__repr__(CYTHON_UNUSED Py
 }
 
 /* "welly/diff/patch.py":89
- * 
+ *
  * class Hunk:
  *     def __init__(self, title: str, left: Tuple[int, int], right: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *         self.left_start, self.left_count = left
@@ -4426,11 +4426,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk___init__(CYTHON_UNUSED PyObj
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_2);
@@ -4482,11 +4482,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk___init__(CYTHON_UNUSED PyObj
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_1);
@@ -4587,7 +4587,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk___init__(CYTHON_UNUSED PyObj
  *         self.chunks: List[Chunk] = []
  *         self.current_chunk: Optional[Chunk] = None             # <<<<<<<<<<<<<<
  *         self.largest_line_number = max(self.left_start + self.left_count, self.right_start + self.right_count)
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_current_chunk, Py_None) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
 
@@ -4595,7 +4595,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk___init__(CYTHON_UNUSED PyObj
  *         self.chunks: List[Chunk] = []
  *         self.current_chunk: Optional[Chunk] = None
  *         self.largest_line_number = max(self.left_start + self.left_count, self.right_start + self.right_count)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def new_chunk(self, is_context: bool = False) -> Chunk:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_right_start); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
@@ -4633,7 +4633,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk___init__(CYTHON_UNUSED PyObj
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/patch.py":89
- * 
+ *
  * class Hunk:
  *     def __init__(self, title: str, left: Tuple[int, int], right: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *         self.left_start, self.left_count = left
@@ -4658,7 +4658,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk___init__(CYTHON_UNUSED PyObj
 
 /* "welly/diff/patch.py":100
  *         self.largest_line_number = max(self.left_start + self.left_count, self.right_start + self.right_count)
- * 
+ *
  *     def new_chunk(self, is_context: bool = False) -> Chunk:             # <<<<<<<<<<<<<<
  *         if self.chunks:
  *             c = self.chunks[-1]
@@ -4751,7 +4751,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_2new_chunk(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("new_chunk", 0);
 
   /* "welly/diff/patch.py":101
- * 
+ *
  *     def new_chunk(self, is_context: bool = False) -> Chunk:
  *         if self.chunks:             # <<<<<<<<<<<<<<
  *             c = self.chunks[-1]
@@ -4815,7 +4815,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_2new_chunk(CYTHON_UNUSED PyO
     __pyx_t_3 = 0;
 
     /* "welly/diff/patch.py":101
- * 
+ *
  *     def new_chunk(self, is_context: bool = False) -> Chunk:
  *         if self.chunks:             # <<<<<<<<<<<<<<
  *             c = self.chunks[-1]
@@ -4842,7 +4842,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_2new_chunk(CYTHON_UNUSED PyO
  *             left_start = self.left_start
  *             right_start = self.right_start             # <<<<<<<<<<<<<<
  *         return Chunk(left_start, right_start, is_context)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_right_start); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -4855,7 +4855,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_2new_chunk(CYTHON_UNUSED PyO
  *             left_start = self.left_start
  *             right_start = self.right_start
  *         return Chunk(left_start, right_start, is_context)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def ensure_diff_chunk(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4915,7 +4915,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_2new_chunk(CYTHON_UNUSED PyO
 
   /* "welly/diff/patch.py":100
  *         self.largest_line_number = max(self.left_start + self.left_count, self.right_start + self.right_count)
- * 
+ *
  *     def new_chunk(self, is_context: bool = False) -> Chunk:             # <<<<<<<<<<<<<<
  *         if self.chunks:
  *             c = self.chunks[-1]
@@ -4940,7 +4940,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_2new_chunk(CYTHON_UNUSED PyO
 
 /* "welly/diff/patch.py":110
  *         return Chunk(left_start, right_start, is_context)
- * 
+ *
  *     def ensure_diff_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=False)
@@ -4975,7 +4975,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_4ensure_diff_chunk(CYTHON_UN
   __Pyx_RefNannySetupContext("ensure_diff_chunk", 0);
 
   /* "welly/diff/patch.py":111
- * 
+ *
  *     def ensure_diff_chunk(self) -> None:
  *         if self.current_chunk is None:             # <<<<<<<<<<<<<<
  *             self.current_chunk = self.new_chunk(is_context=False)
@@ -5008,7 +5008,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_4ensure_diff_chunk(CYTHON_UN
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "welly/diff/patch.py":111
- * 
+ *
  *     def ensure_diff_chunk(self) -> None:
  *         if self.current_chunk is None:             # <<<<<<<<<<<<<<
  *             self.current_chunk = self.new_chunk(is_context=False)
@@ -5038,7 +5038,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_4ensure_diff_chunk(CYTHON_UN
  *         elif self.current_chunk.is_context:
  *             self.chunks.append(self.current_chunk)             # <<<<<<<<<<<<<<
  *             self.current_chunk = self.new_chunk(is_context=False)
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_chunks); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -5052,7 +5052,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_4ensure_diff_chunk(CYTHON_UN
  *         elif self.current_chunk.is_context:
  *             self.chunks.append(self.current_chunk)
  *             self.current_chunk = self.new_chunk(is_context=False)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def ensure_context_chunk(self) -> None:
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_new_chunk); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
@@ -5079,7 +5079,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_4ensure_diff_chunk(CYTHON_UN
 
   /* "welly/diff/patch.py":110
  *         return Chunk(left_start, right_start, is_context)
- * 
+ *
  *     def ensure_diff_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=False)
@@ -5102,7 +5102,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_4ensure_diff_chunk(CYTHON_UN
 
 /* "welly/diff/patch.py":117
  *             self.current_chunk = self.new_chunk(is_context=False)
- * 
+ *
  *     def ensure_context_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=True)
@@ -5137,7 +5137,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_6ensure_context_chunk(CYTHON
   __Pyx_RefNannySetupContext("ensure_context_chunk", 0);
 
   /* "welly/diff/patch.py":118
- * 
+ *
  *     def ensure_context_chunk(self) -> None:
  *         if self.current_chunk is None:             # <<<<<<<<<<<<<<
  *             self.current_chunk = self.new_chunk(is_context=True)
@@ -5170,7 +5170,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_6ensure_context_chunk(CYTHON
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "welly/diff/patch.py":118
- * 
+ *
  *     def ensure_context_chunk(self) -> None:
  *         if self.current_chunk is None:             # <<<<<<<<<<<<<<
  *             self.current_chunk = self.new_chunk(is_context=True)
@@ -5201,7 +5201,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_6ensure_context_chunk(CYTHON
  *         elif not self.current_chunk.is_context:
  *             self.chunks.append(self.current_chunk)             # <<<<<<<<<<<<<<
  *             self.current_chunk = self.new_chunk(is_context=True)
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_chunks); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -5215,7 +5215,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_6ensure_context_chunk(CYTHON
  *         elif not self.current_chunk.is_context:
  *             self.chunks.append(self.current_chunk)
  *             self.current_chunk = self.new_chunk(is_context=True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_line(self) -> None:
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_new_chunk); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 122, __pyx_L1_error)
@@ -5242,7 +5242,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_6ensure_context_chunk(CYTHON
 
   /* "welly/diff/patch.py":117
  *             self.current_chunk = self.new_chunk(is_context=False)
- * 
+ *
  *     def ensure_context_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=True)
@@ -5265,7 +5265,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_6ensure_context_chunk(CYTHON
 
 /* "welly/diff/patch.py":124
  *             self.current_chunk = self.new_chunk(is_context=True)
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -5299,7 +5299,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_8add_line(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("add_line", 0);
 
   /* "welly/diff/patch.py":125
- * 
+ *
  *     def add_line(self) -> None:
  *         self.ensure_diff_chunk()             # <<<<<<<<<<<<<<
  *         if self.current_chunk is not None:
@@ -5343,7 +5343,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_8add_line(CYTHON_UNUSED PyOb
  *         if self.current_chunk is not None:
  *             self.current_chunk.add_line()             # <<<<<<<<<<<<<<
  *         self.added_count += 1
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_chunk); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -5380,7 +5380,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_8add_line(CYTHON_UNUSED PyOb
  *         if self.current_chunk is not None:
  *             self.current_chunk.add_line()
  *         self.added_count += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_line(self) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_added_count); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
@@ -5393,7 +5393,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_8add_line(CYTHON_UNUSED PyOb
 
   /* "welly/diff/patch.py":124
  *             self.current_chunk = self.new_chunk(is_context=True)
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -5416,7 +5416,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_8add_line(CYTHON_UNUSED PyOb
 
 /* "welly/diff/patch.py":130
  *         self.added_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -5450,7 +5450,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_10remove_line(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("remove_line", 0);
 
   /* "welly/diff/patch.py":131
- * 
+ *
  *     def remove_line(self) -> None:
  *         self.ensure_diff_chunk()             # <<<<<<<<<<<<<<
  *         if self.current_chunk is not None:
@@ -5494,7 +5494,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_10remove_line(CYTHON_UNUSED 
  *         if self.current_chunk is not None:
  *             self.current_chunk.remove_line()             # <<<<<<<<<<<<<<
  *         self.removed_count += 1
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_chunk); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -5531,7 +5531,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_10remove_line(CYTHON_UNUSED 
  *         if self.current_chunk is not None:
  *             self.current_chunk.remove_line()
  *         self.removed_count += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def context_line(self) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_removed_count); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
@@ -5544,7 +5544,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_10remove_line(CYTHON_UNUSED 
 
   /* "welly/diff/patch.py":130
  *         self.added_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -5567,7 +5567,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_10remove_line(CYTHON_UNUSED 
 
 /* "welly/diff/patch.py":136
  *         self.removed_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_context_chunk()
  *         if self.current_chunk is not None:
@@ -5601,7 +5601,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_12context_line(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("context_line", 0);
 
   /* "welly/diff/patch.py":137
- * 
+ *
  *     def context_line(self) -> None:
  *         self.ensure_context_chunk()             # <<<<<<<<<<<<<<
  *         if self.current_chunk is not None:
@@ -5631,7 +5631,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_12context_line(CYTHON_UNUSED
  *         self.ensure_context_chunk()
  *         if self.current_chunk is not None:             # <<<<<<<<<<<<<<
  *             self.current_chunk.context_line()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_chunk); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5644,7 +5644,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_12context_line(CYTHON_UNUSED
  *         self.ensure_context_chunk()
  *         if self.current_chunk is not None:
  *             self.current_chunk.context_line()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def finalize(self) -> None:
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_current_chunk); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
@@ -5674,13 +5674,13 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_12context_line(CYTHON_UNUSED
  *         self.ensure_context_chunk()
  *         if self.current_chunk is not None:             # <<<<<<<<<<<<<<
  *             self.current_chunk.context_line()
- * 
+ *
  */
   }
 
   /* "welly/diff/patch.py":136
  *         self.removed_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_context_chunk()
  *         if self.current_chunk is not None:
@@ -5703,7 +5703,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_12context_line(CYTHON_UNUSED
 
 /* "welly/diff/patch.py":141
  *             self.current_chunk.context_line()
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is not None:
  *             self.chunks.append(self.current_chunk)
@@ -5743,7 +5743,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_14finalize(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("finalize", 0);
 
   /* "welly/diff/patch.py":142
- * 
+ *
  *     def finalize(self) -> None:
  *         if self.current_chunk is not None:             # <<<<<<<<<<<<<<
  *             self.chunks.append(self.current_chunk)
@@ -5772,7 +5772,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_14finalize(CYTHON_UNUSED PyO
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "welly/diff/patch.py":142
- * 
+ *
  *     def finalize(self) -> None:
  *         if self.current_chunk is not None:             # <<<<<<<<<<<<<<
  *             self.chunks.append(self.current_chunk)
@@ -6009,7 +6009,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_14finalize(CYTHON_UNUSED PyO
  *             raise ValueError(f'Right side line mismatch {c.right_start + c.right_count} != {self.right_start + self.right_count}')
  *         for c in self.chunks:             # <<<<<<<<<<<<<<
  *             c.finalize()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_chunks); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6060,8 +6060,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_14finalize(CYTHON_UNUSED PyO
  *             raise ValueError(f'Right side line mismatch {c.right_start + c.right_count} != {self.right_start + self.right_count}')
  *         for c in self.chunks:
  *             c.finalize()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_c, __pyx_n_s_finalize); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -6087,14 +6087,14 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_14finalize(CYTHON_UNUSED PyO
  *             raise ValueError(f'Right side line mismatch {c.right_start + c.right_count} != {self.right_start + self.right_count}')
  *         for c in self.chunks:             # <<<<<<<<<<<<<<
  *             c.finalize()
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/diff/patch.py":141
  *             self.current_chunk.context_line()
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is not None:
  *             self.chunks.append(self.current_chunk)
@@ -6118,8 +6118,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_4Hunk_14finalize(CYTHON_UNUSED PyO
 }
 
 /* "welly/diff/patch.py":155
- * 
- * 
+ *
+ *
  * def parse_range(x: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     parts = x[1:].split(',', 1)
  *     start = abs(int(parts[0]))
@@ -6163,7 +6163,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6parse_range(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("parse_range", 0);
 
   /* "welly/diff/patch.py":156
- * 
+ *
  * def parse_range(x: str) -> Tuple[int, int]:
  *     parts = x[1:].split(',', 1)             # <<<<<<<<<<<<<<
  *     start = abs(int(parts[0]))
@@ -6207,7 +6207,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6parse_range(CYTHON_UNUSED PyObjec
  *     start = abs(int(parts[0]))
  *     count = 1 if len(parts) < 2 else int(parts[1])             # <<<<<<<<<<<<<<
  *     return start, count
- * 
+ *
  */
   __pyx_t_3 = PyObject_Length(__pyx_v_parts); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 158, __pyx_L1_error)
   if (((__pyx_t_3 < 2) != 0)) {
@@ -6229,8 +6229,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6parse_range(CYTHON_UNUSED PyObjec
  *     start = abs(int(parts[0]))
  *     count = 1 if len(parts) < 2 else int(parts[1])
  *     return start, count             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
@@ -6246,8 +6246,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6parse_range(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "welly/diff/patch.py":155
- * 
- * 
+ *
+ *
  * def parse_range(x: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     parts = x[1:].split(',', 1)
  *     start = abs(int(parts[0]))
@@ -6270,8 +6270,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6parse_range(CYTHON_UNUSED PyObjec
 }
 
 /* "welly/diff/patch.py":162
- * 
- * 
+ *
+ *
  * def parse_hunk_header(line: str) -> Hunk:             # <<<<<<<<<<<<<<
  *     parts: Tuple[str, ...] = tuple(filter(None, line.split('@@', 2)))
  *     linespec = parts[0].strip()
@@ -6321,7 +6321,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_8parse_hunk_header(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("parse_hunk_header", 0);
 
   /* "welly/diff/patch.py":163
- * 
+ *
  * def parse_hunk_header(line: str) -> Hunk:
  *     parts: Tuple[str, ...] = tuple(filter(None, line.split('@@', 2)))             # <<<<<<<<<<<<<<
  *     linespec = parts[0].strip()
@@ -6441,7 +6441,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_8parse_hunk_header(CYTHON_UNUSED P
  *         title = parts[1].strip()
  *     left, right = map(parse_range, linespec.split())             # <<<<<<<<<<<<<<
  *     return Hunk(title, left, right)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_range); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6483,11 +6483,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_8parse_hunk_header(CYTHON_UNUSED P
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_2);
@@ -6528,8 +6528,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_8parse_hunk_header(CYTHON_UNUSED P
  *         title = parts[1].strip()
  *     left, right = map(parse_range, linespec.split())
  *     return Hunk(title, left, right)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Hunk); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
@@ -6587,8 +6587,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_8parse_hunk_header(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "welly/diff/patch.py":162
- * 
- * 
+ *
+ *
  * def parse_hunk_header(line: str) -> Hunk:             # <<<<<<<<<<<<<<
  *     parts: Tuple[str, ...] = tuple(filter(None, line.split('@@', 2)))
  *     linespec = parts[0].strip()
@@ -6614,7 +6614,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_8parse_hunk_header(CYTHON_UNUSED P
 }
 
 /* "welly/diff/patch.py":173
- * 
+ *
  * class Patch:
  *     def __init__(self, all_hunks: Sequence[Hunk]):             # <<<<<<<<<<<<<<
  *         self.all_hunks = all_hunks
@@ -6692,7 +6692,7 @@ static PyObject *__pyx_gb_5welly_4diff_5patch_5Patch_8__init___2generator1(__pyx
  *         self.largest_line_number = self.all_hunks[-1].largest_line_number if self.all_hunks else 0
  *         self.added_count = sum(h.added_count for h in all_hunks)             # <<<<<<<<<<<<<<
  *         self.removed_count = sum(h.removed_count for h in all_hunks)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch_8__init___genexpr(PyObject *__pyx_self) {
@@ -6845,7 +6845,7 @@ static PyObject *__pyx_gb_5welly_4diff_5patch_5Patch_8__init___5generator2(__pyx
  *         self.largest_line_number = self.all_hunks[-1].largest_line_number if self.all_hunks else 0
  *         self.added_count = sum(h.added_count for h in all_hunks)
  *         self.removed_count = sum(h.removed_count for h in all_hunks)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:
  */
 
@@ -6995,7 +6995,7 @@ static PyObject *__pyx_gb_5welly_4diff_5patch_5Patch_8__init___5generator2(__pyx
 }
 
 /* "welly/diff/patch.py":173
- * 
+ *
  * class Patch:
  *     def __init__(self, all_hunks: Sequence[Hunk]):             # <<<<<<<<<<<<<<
  *         self.all_hunks = all_hunks
@@ -7071,7 +7071,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch___init__(CYTHON_UNUSED PyOb
  *         self.largest_line_number = self.all_hunks[-1].largest_line_number if self.all_hunks else 0
  *         self.added_count = sum(h.added_count for h in all_hunks)             # <<<<<<<<<<<<<<
  *         self.removed_count = sum(h.removed_count for h in all_hunks)
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_5welly_4diff_5patch_5Patch_8__init___genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7085,7 +7085,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch___init__(CYTHON_UNUSED PyOb
  *         self.largest_line_number = self.all_hunks[-1].largest_line_number if self.all_hunks else 0
  *         self.added_count = sum(h.added_count for h in all_hunks)
  *         self.removed_count = sum(h.removed_count for h in all_hunks)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:
  */
   __pyx_t_2 = __pyx_pf_5welly_4diff_5patch_5Patch_8__init___3genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 177, __pyx_L1_error)
@@ -7097,7 +7097,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch___init__(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/patch.py":173
- * 
+ *
  * class Patch:
  *     def __init__(self, all_hunks: Sequence[Hunk]):             # <<<<<<<<<<<<<<
  *         self.all_hunks = all_hunks
@@ -7124,10 +7124,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch___init__(CYTHON_UNUSED PyOb
 
 /* "welly/diff/patch.py":179
  *         self.removed_count = sum(h.removed_count for h in all_hunks)
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_hunks)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7155,10 +7155,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch_2__iter__(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("__iter__", 0);
 
   /* "welly/diff/patch.py":180
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:
  *         return iter(self.all_hunks)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __len__(self) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7173,10 +7173,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch_2__iter__(CYTHON_UNUSED PyO
 
   /* "welly/diff/patch.py":179
  *         self.removed_count = sum(h.removed_count for h in all_hunks)
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_hunks)
- * 
+ *
  */
 
   /* function exit code */
@@ -7193,10 +7193,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch_2__iter__(CYTHON_UNUSED PyO
 
 /* "welly/diff/patch.py":182
  *         return iter(self.all_hunks)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_hunks)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7224,11 +7224,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch_4__len__(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("__len__", 0);
 
   /* "welly/diff/patch.py":183
- * 
+ *
  *     def __len__(self) -> int:
  *         return len(self.all_hunks)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_hunks); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
@@ -7243,10 +7243,10 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch_4__len__(CYTHON_UNUSED PyOb
 
   /* "welly/diff/patch.py":182
  *         return iter(self.all_hunks)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_hunks)
- * 
+ *
  */
 
   /* function exit code */
@@ -7261,8 +7261,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_5Patch_4__len__(CYTHON_UNUSED PyOb
 }
 
 /* "welly/diff/patch.py":186
- * 
- * 
+ *
+ *
  * def parse_patch(raw: str) -> Patch:             # <<<<<<<<<<<<<<
  *     all_hunks = []
  *     current_hunk = None
@@ -7313,7 +7313,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_10parse_patch(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("parse_patch", 0);
 
   /* "welly/diff/patch.py":187
- * 
+ *
  * def parse_patch(raw: str) -> Patch:
  *     all_hunks = []             # <<<<<<<<<<<<<<
  *     current_hunk = None
@@ -7696,7 +7696,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_10parse_patch(CYTHON_UNUSED PyObje
  *     for h in all_hunks:
  *         h.finalize()             # <<<<<<<<<<<<<<
  *     return Patch(all_hunks)
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_h, __pyx_n_s_finalize); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 206, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -7731,8 +7731,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_10parse_patch(CYTHON_UNUSED PyObje
  *     for h in all_hunks:
  *         h.finalize()
  *     return Patch(all_hunks)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Patch); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
@@ -7757,8 +7757,8 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_10parse_patch(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "welly/diff/patch.py":186
- * 
- * 
+ *
+ *
  * def parse_patch(raw: str) -> Patch:             # <<<<<<<<<<<<<<
  *     all_hunks = []
  *     current_hunk = None
@@ -7785,7 +7785,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_10parse_patch(CYTHON_UNUSED PyObje
 
 /* "welly/diff/patch.py":213
  *     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap: Dict[str, str] = {}
  *         self.jobs: List[str] = []
@@ -7821,7 +7821,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ___init__(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "welly/diff/patch.py":214
- * 
+ *
  *     def __init__(self) -> None:
  *         self.jmap: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  *         self.jobs: List[str] = []
@@ -7849,7 +7849,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ___init__(CYTHON_UNUSED PyO
  *         self.jobs: List[str] = []
  *         if Differ.diff_executor is None:             # <<<<<<<<<<<<<<
  *             Differ.diff_executor = self.diff_executor = concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count())
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Differ); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7865,7 +7865,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ___init__(CYTHON_UNUSED PyO
  *         self.jobs: List[str] = []
  *         if Differ.diff_executor is None:
  *             Differ.diff_executor = self.diff_executor = concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_diff(self, file1: str, file2: str) -> None:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_concurrent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
@@ -7916,13 +7916,13 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ___init__(CYTHON_UNUSED PyO
  *         self.jobs: List[str] = []
  *         if Differ.diff_executor is None:             # <<<<<<<<<<<<<<
  *             Differ.diff_executor = self.diff_executor = concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count())
- * 
+ *
  */
   }
 
   /* "welly/diff/patch.py":213
  *     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap: Dict[str, str] = {}
  *         self.jobs: List[str] = []
@@ -7947,7 +7947,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ___init__(CYTHON_UNUSED PyO
 
 /* "welly/diff/patch.py":219
  *             Differ.diff_executor = self.diff_executor = concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count())
- * 
+ *
  *     def add_diff(self, file1: str, file2: str) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap[file1] = file2
  *         self.jobs.append(file1)
@@ -8046,11 +8046,11 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_2add_diff(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("add_diff", 0);
 
   /* "welly/diff/patch.py":220
- * 
+ *
  *     def add_diff(self, file1: str, file2: str) -> None:
  *         self.jmap[file1] = file2             # <<<<<<<<<<<<<<
  *         self.jobs.append(file1)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_jmap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8061,7 +8061,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_2add_diff(CYTHON_UNUSED Py
  *     def add_diff(self, file1: str, file2: str) -> None:
  *         self.jmap[file1] = file2
  *         self.jobs.append(file1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, context: int = 3) -> Union[str, Dict[str, Patch]]:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_jobs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L1_error)
@@ -8071,7 +8071,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_2add_diff(CYTHON_UNUSED Py
 
   /* "welly/diff/patch.py":219
  *             Differ.diff_executor = self.diff_executor = concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count())
- * 
+ *
  *     def add_diff(self, file1: str, file2: str) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap[file1] = file2
  *         self.jobs.append(file1)
@@ -8092,7 +8092,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_2add_diff(CYTHON_UNUSED Py
 
 /* "welly/diff/patch.py":223
  *         self.jobs.append(file1)
- * 
+ *
  *     def __call__(self, context: int = 3) -> Union[str, Dict[str, Patch]]:             # <<<<<<<<<<<<<<
  *         global left_lines, right_lines
  *         ans: Dict[str, Patch] = {}
@@ -8536,13 +8536,13 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_4__call__(CYTHON_UNUSED Py
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-            __pyx_t_12 = PyTuple_GET_ITEM(sequence, 2); 
+            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+            __pyx_t_12 = PyTuple_GET_ITEM(sequence, 2);
           } else {
-            __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-            __pyx_t_12 = PyList_GET_ITEM(sequence, 2); 
+            __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+            __pyx_t_12 = PyList_GET_ITEM(sequence, 2);
           }
           __Pyx_INCREF(__pyx_t_1);
           __Pyx_INCREF(__pyx_t_3);
@@ -8975,7 +8975,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_4__call__(CYTHON_UNUSED Py
  *                 patch = parse_patch(output)
  *             except Exception:             # <<<<<<<<<<<<<<
  *                 import traceback
- * 
+ *
  */
       __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_11) {
@@ -8989,7 +8989,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_4__call__(CYTHON_UNUSED Py
  *                 patch = parse_patch(output)
  *             except Exception:
  *                 import traceback             # <<<<<<<<<<<<<<
- * 
+ *
  *                 return f'{traceback.format_exc()}\nParsing diff for {left_path} vs. {right_path} failed'
  */
         __pyx_t_1 = __Pyx_Import(__pyx_n_s_traceback, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L28_except_error)
@@ -8999,7 +8999,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_4__call__(CYTHON_UNUSED Py
 
         /* "welly/diff/patch.py":247
  *                 import traceback
- * 
+ *
  *                 return f'{traceback.format_exc()}\nParsing diff for {left_path} vs. {right_path} failed'             # <<<<<<<<<<<<<<
  *             else:
  *                 ans[key] = patch
@@ -9117,7 +9117,7 @@ static PyObject *__pyx_pf_5welly_4diff_5patch_6Differ_4__call__(CYTHON_UNUSED Py
 
   /* "welly/diff/patch.py":223
  *         self.jobs.append(file1)
- * 
+ *
  *     def __call__(self, context: int = 3) -> Union[str, Dict[str, Patch]]:             # <<<<<<<<<<<<<<
  *         global left_lines, right_lines
  *         ans: Dict[str, Patch] = {}
@@ -10025,7 +10025,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple_);
 
   /* "welly/diff/patch.py":156
- * 
+ *
  * def parse_range(x: str) -> Tuple[int, int]:
  *     parts = x[1:].split(',', 1)             # <<<<<<<<<<<<<<
  *     start = abs(int(parts[0]))
@@ -10036,8 +10036,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "welly/diff/patch.py":22
- * 
- * 
+ *
+ *
  * def find_differ() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     if shutil.which('git') and subprocess.Popen(['git', '--help'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL).wait() == 0:
  *         return GIT_DIFF
@@ -10045,8 +10045,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_patch_py, __pyx_n_s_find_differ, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "welly/diff/patch.py":30
- * 
- * 
+ *
+ *
  * def set_diff_command(opt: str) -> None:             # <<<<<<<<<<<<<<
  *     if opt == 'auto':
  *         cmd = find_differ()
@@ -10057,8 +10057,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_patch_py, __pyx_n_s_set_diff_command, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 30, __pyx_L1_error)
 
   /* "welly/diff/patch.py":40
- * 
- * 
+ *
+ *
  * def run_diff(file1: str, file2: str, context: int = 3) -> Tuple[bool, Union[int, bool], str]:             # <<<<<<<<<<<<<<
  *     # returns: ok, is_different, patch
  *     cmd = shlex.split(global_data.cmd.replace('_CONTEXT_', str(context)))
@@ -10072,10 +10072,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__16);
 
   /* "welly/diff/patch.py":59
- * 
+ *
  * class Chunk:
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:
  */
   __pyx_tuple__17 = PyTuple_Pack(6, __pyx_n_s_is_context, __pyx_n_s_left_start, __pyx_n_s_right_start, __pyx_n_s_left_count, __pyx_n_s_right_count, __pyx_n_s_centers); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 59, __pyx_L1_error)
@@ -10084,7 +10084,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":61
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')
- * 
+ *
  *     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.is_context = is_context
  *         self.left_start = left_start
@@ -10099,10 +10099,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":68
  *         self.centers: Optional[Tuple[Tuple[int, int], ...]] = None
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.right_count += 1
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -10111,10 +10111,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":71
  *         self.right_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
- * 
+ *
  */
   __pyx_tuple__23 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
@@ -10123,7 +10123,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":74
  *         self.left_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
  *         self.right_count += 1
@@ -10135,7 +10135,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":78
  *         self.right_count += 1
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
@@ -10147,7 +10147,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":82
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(
  *             self.is_context, self.left_start, self.left_count, self.right_start, self.right_count
@@ -10158,7 +10158,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_patch_py, __pyx_n_s_repr, 82, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 82, __pyx_L1_error)
 
   /* "welly/diff/patch.py":89
- * 
+ *
  * class Hunk:
  *     def __init__(self, title: str, left: Tuple[int, int], right: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *         self.left_start, self.left_count = left
@@ -10171,7 +10171,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":100
  *         self.largest_line_number = max(self.left_start + self.left_count, self.right_start + self.right_count)
- * 
+ *
  *     def new_chunk(self, is_context: bool = False) -> Chunk:             # <<<<<<<<<<<<<<
  *         if self.chunks:
  *             c = self.chunks[-1]
@@ -10186,7 +10186,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":110
  *         return Chunk(left_start, right_start, is_context)
- * 
+ *
  *     def ensure_diff_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=False)
@@ -10198,7 +10198,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":117
  *             self.current_chunk = self.new_chunk(is_context=False)
- * 
+ *
  *     def ensure_context_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=True)
@@ -10210,7 +10210,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":124
  *             self.current_chunk = self.new_chunk(is_context=True)
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -10222,7 +10222,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":130
  *         self.added_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -10234,7 +10234,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":136
  *         self.removed_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_context_chunk()
  *         if self.current_chunk is not None:
@@ -10246,7 +10246,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":141
  *             self.current_chunk.context_line()
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is not None:
  *             self.chunks.append(self.current_chunk)
@@ -10257,8 +10257,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_patch_py, __pyx_n_s_finalize, 141, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 141, __pyx_L1_error)
 
   /* "welly/diff/patch.py":155
- * 
- * 
+ *
+ *
  * def parse_range(x: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     parts = x[1:].split(',', 1)
  *     start = abs(int(parts[0]))
@@ -10269,8 +10269,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_patch_py, __pyx_n_s_parse_range, 155, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 155, __pyx_L1_error)
 
   /* "welly/diff/patch.py":162
- * 
- * 
+ *
+ *
  * def parse_hunk_header(line: str) -> Hunk:             # <<<<<<<<<<<<<<
  *     parts: Tuple[str, ...] = tuple(filter(None, line.split('@@', 2)))
  *     linespec = parts[0].strip()
@@ -10281,7 +10281,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_patch_py, __pyx_n_s_parse_hunk_header, 162, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 162, __pyx_L1_error)
 
   /* "welly/diff/patch.py":173
- * 
+ *
  * class Patch:
  *     def __init__(self, all_hunks: Sequence[Hunk]):             # <<<<<<<<<<<<<<
  *         self.all_hunks = all_hunks
@@ -10294,10 +10294,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":179
  *         self.removed_count = sum(h.removed_count for h in all_hunks)
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_hunks)
- * 
+ *
  */
   __pyx_tuple__54 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__54);
@@ -10306,10 +10306,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":182
  *         return iter(self.all_hunks)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_hunks)
- * 
+ *
  */
   __pyx_tuple__56 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__56);
@@ -10317,8 +10317,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_patch_py, __pyx_n_s_len, 182, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 182, __pyx_L1_error)
 
   /* "welly/diff/patch.py":186
- * 
- * 
+ *
+ *
  * def parse_patch(raw: str) -> Patch:             # <<<<<<<<<<<<<<
  *     all_hunks = []
  *     current_hunk = None
@@ -10330,7 +10330,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":213
  *     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap: Dict[str, str] = {}
  *         self.jobs: List[str] = []
@@ -10342,7 +10342,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":219
  *             Differ.diff_executor = self.diff_executor = concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count())
- * 
+ *
  *     def add_diff(self, file1: str, file2: str) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap[file1] = file2
  *         self.jobs.append(file1)
@@ -10354,7 +10354,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/patch.py":223
  *         self.jobs.append(file1)
- * 
+ *
  *     def __call__(self, context: int = 3) -> Union[str, Dict[str, Patch]]:             # <<<<<<<<<<<<<<
  *         global left_lines, right_lines
  *         ans: Dict[str, Patch] = {}
@@ -10703,7 +10703,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import concurrent.futures             # <<<<<<<<<<<<<<
  * import os
  * import shlex
@@ -10714,7 +10714,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/patch.py":5
- * 
+ *
  * import concurrent.futures
  * import os             # <<<<<<<<<<<<<<
  * import shlex
@@ -10754,7 +10754,7 @@ if (!__Pyx_RefNanny) {
  * import shutil
  * import subprocess             # <<<<<<<<<<<<<<
  * from typing import Dict, Iterator, List, Optional, Sequence, Tuple, Union
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10765,7 +10765,7 @@ if (!__Pyx_RefNanny) {
  * import shutil
  * import subprocess
  * from typing import Dict, Iterator, List, Optional, Sequence, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import global_data
  */
   __pyx_t_1 = PyList_New(7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -10826,7 +10826,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":11
  * from typing import Dict, Iterator, List, Optional, Sequence, Tuple, Union
- * 
+ *
  * from . import global_data             # <<<<<<<<<<<<<<
  * from .collect import lines_for_path
  * from .diff_speedup import changed_center
@@ -10846,11 +10846,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/patch.py":12
- * 
+ *
  * from . import global_data
  * from .collect import lines_for_path             # <<<<<<<<<<<<<<
  * from .diff_speedup import changed_center
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10870,7 +10870,7 @@ if (!__Pyx_RefNanny) {
  * from . import global_data
  * from .collect import lines_for_path
  * from .diff_speedup import changed_center             # <<<<<<<<<<<<<<
- * 
+ *
  * left_lines: Tuple[str, ...] = ()
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -10889,7 +10889,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":15
  * from .diff_speedup import changed_center
- * 
+ *
  * left_lines: Tuple[str, ...] = ()             # <<<<<<<<<<<<<<
  * right_lines: Tuple[str, ...] = ()
  * GIT_DIFF = 'git diff --no-color --no-ext-diff --exit-code -U_CONTEXT_ --no-index --'
@@ -10897,7 +10897,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_left_lines, __pyx_empty_tuple) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
 
   /* "welly/diff/patch.py":16
- * 
+ *
  * left_lines: Tuple[str, ...] = ()
  * right_lines: Tuple[str, ...] = ()             # <<<<<<<<<<<<<<
  * GIT_DIFF = 'git diff --no-color --no-ext-diff --exit-code -U_CONTEXT_ --no-index --'
@@ -10919,7 +10919,7 @@ if (!__Pyx_RefNanny) {
  * GIT_DIFF = 'git diff --no-color --no-ext-diff --exit-code -U_CONTEXT_ --no-index --'
  * DIFF_DIFF = 'diff -p -U _CONTEXT_ --'             # <<<<<<<<<<<<<<
  * worker_processes: List[int] = []
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_DIFF_DIFF, __pyx_kp_s_diff_p_U__CONTEXT) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
 
@@ -10927,8 +10927,8 @@ if (!__Pyx_RefNanny) {
  * GIT_DIFF = 'git diff --no-color --no-ext-diff --exit-code -U_CONTEXT_ --no-index --'
  * DIFF_DIFF = 'diff -p -U _CONTEXT_ --'
  * worker_processes: List[int] = []             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10936,8 +10936,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/patch.py":22
- * 
- * 
+ *
+ *
  * def find_differ() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     if shutil.which('git') and subprocess.Popen(['git', '--help'], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL).wait() == 0:
  *         return GIT_DIFF
@@ -10959,8 +10959,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/patch.py":30
- * 
- * 
+ *
+ *
  * def set_diff_command(opt: str) -> None:             # <<<<<<<<<<<<<<
  *     if opt == 'auto':
  *         cmd = find_differ()
@@ -10977,8 +10977,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/patch.py":40
- * 
- * 
+ *
+ *
  * def run_diff(file1: str, file2: str, context: int = 3) -> Tuple[bool, Union[int, bool], str]:             # <<<<<<<<<<<<<<
  *     # returns: ok, is_different, patch
  *     cmd = shlex.split(global_data.cmd.replace('_CONTEXT_', str(context)))
@@ -11030,27 +11030,27 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/patch.py":58
- * 
- * 
+ *
+ *
  * class Chunk:             # <<<<<<<<<<<<<<
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')
- * 
+ *
  */
   __pyx_t_5 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Chunk, __pyx_n_s_Chunk, (PyObject *) NULL, __pyx_n_s_welly_diff_patch, (PyObject *) NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "welly/diff/patch.py":59
- * 
+ *
  * class Chunk:
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_5, __pyx_n_s_slots, __pyx_tuple__17) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
 
   /* "welly/diff/patch.py":61
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')
- * 
+ *
  *     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         self.is_context = is_context
  *         self.left_start = left_start
@@ -11071,10 +11071,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":68
  *         self.centers: Optional[Tuple[Tuple[int, int], ...]] = None
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.right_count += 1
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -11088,10 +11088,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":71
  *         self.right_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11105,7 +11105,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":74
  *         self.left_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.left_count += 1
  *         self.right_count += 1
@@ -11122,7 +11122,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":78
  *         self.right_count += 1
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if not self.is_context and self.left_count == self.right_count:
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
@@ -11139,7 +11139,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":82
  *             self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(
  *             self.is_context, self.left_start, self.left_count, self.right_start, self.right_count
@@ -11155,11 +11155,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/patch.py":58
- * 
- * 
+ *
+ *
  * class Chunk:             # <<<<<<<<<<<<<<
  *     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Chunk, __pyx_empty_tuple, __pyx_t_5, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -11168,8 +11168,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/patch.py":88
- * 
- * 
+ *
+ *
  * class Hunk:             # <<<<<<<<<<<<<<
  *     def __init__(self, title: str, left: Tuple[int, int], right: Tuple[int, int]) -> None:
  *         self.left_start, self.left_count = left
@@ -11178,7 +11178,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "welly/diff/patch.py":89
- * 
+ *
  * class Hunk:
  *     def __init__(self, title: str, left: Tuple[int, int], right: Tuple[int, int]) -> None:             # <<<<<<<<<<<<<<
  *         self.left_start, self.left_count = left
@@ -11229,7 +11229,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":100
  *         self.largest_line_number = max(self.left_start + self.left_count, self.right_start + self.right_count)
- * 
+ *
  *     def new_chunk(self, is_context: bool = False) -> Chunk:             # <<<<<<<<<<<<<<
  *         if self.chunks:
  *             c = self.chunks[-1]
@@ -11251,7 +11251,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":110
  *         return Chunk(left_start, right_start, is_context)
- * 
+ *
  *     def ensure_diff_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=False)
@@ -11268,7 +11268,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":117
  *             self.current_chunk = self.new_chunk(is_context=False)
- * 
+ *
  *     def ensure_context_chunk(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is None:
  *             self.current_chunk = self.new_chunk(is_context=True)
@@ -11285,7 +11285,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":124
  *             self.current_chunk = self.new_chunk(is_context=True)
- * 
+ *
  *     def add_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -11302,7 +11302,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":130
  *         self.added_count += 1
- * 
+ *
  *     def remove_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_diff_chunk()
  *         if self.current_chunk is not None:
@@ -11319,7 +11319,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":136
  *         self.removed_count += 1
- * 
+ *
  *     def context_line(self) -> None:             # <<<<<<<<<<<<<<
  *         self.ensure_context_chunk()
  *         if self.current_chunk is not None:
@@ -11336,7 +11336,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":141
  *             self.current_chunk.context_line()
- * 
+ *
  *     def finalize(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.current_chunk is not None:
  *             self.chunks.append(self.current_chunk)
@@ -11352,8 +11352,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/patch.py":88
- * 
- * 
+ *
+ *
  * class Hunk:             # <<<<<<<<<<<<<<
  *     def __init__(self, title: str, left: Tuple[int, int], right: Tuple[int, int]) -> None:
  *         self.left_start, self.left_count = left
@@ -11365,8 +11365,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/patch.py":155
- * 
- * 
+ *
+ *
  * def parse_range(x: str) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     parts = x[1:].split(',', 1)
  *     start = abs(int(parts[0]))
@@ -11398,8 +11398,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/patch.py":162
- * 
- * 
+ *
+ *
  * def parse_hunk_header(line: str) -> Hunk:             # <<<<<<<<<<<<<<
  *     parts: Tuple[str, ...] = tuple(filter(None, line.split('@@', 2)))
  *     linespec = parts[0].strip()
@@ -11419,8 +11419,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/patch.py":172
- * 
- * 
+ *
+ *
  * class Patch:             # <<<<<<<<<<<<<<
  *     def __init__(self, all_hunks: Sequence[Hunk]):
  *         self.all_hunks = all_hunks
@@ -11429,7 +11429,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "welly/diff/patch.py":173
- * 
+ *
  * class Patch:
  *     def __init__(self, all_hunks: Sequence[Hunk]):             # <<<<<<<<<<<<<<
  *         self.all_hunks = all_hunks
@@ -11456,10 +11456,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":179
  *         self.removed_count = sum(h.removed_count for h in all_hunks)
- * 
+ *
  *     def __iter__(self) -> Iterator[Hunk]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_hunks)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -11482,10 +11482,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":182
  *         return iter(self.all_hunks)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_hunks)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -11498,8 +11498,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/patch.py":172
- * 
- * 
+ *
+ *
  * class Patch:             # <<<<<<<<<<<<<<
  *     def __init__(self, all_hunks: Sequence[Hunk]):
  *         self.all_hunks = all_hunks
@@ -11511,8 +11511,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/patch.py":186
- * 
- * 
+ *
+ *
  * def parse_patch(raw: str) -> Patch:             # <<<<<<<<<<<<<<
  *     all_hunks = []
  *     current_hunk = None
@@ -11532,27 +11532,27 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/patch.py":210
- * 
- * 
+ *
+ *
  * class Differ:             # <<<<<<<<<<<<<<
  *     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None
- * 
+ *
  */
   __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Differ, __pyx_n_s_Differ, (PyObject *) NULL, __pyx_n_s_welly_diff_patch, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "welly/diff/patch.py":211
- * 
+ *
  * class Differ:
  *     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_diff_executor, Py_None) < 0) __PYX_ERR(0, 211, __pyx_L1_error)
 
   /* "welly/diff/patch.py":213
  *     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None
- * 
+ *
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap: Dict[str, str] = {}
  *         self.jobs: List[str] = []
@@ -11569,7 +11569,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":219
  *             Differ.diff_executor = self.diff_executor = concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count())
- * 
+ *
  *     def add_diff(self, file1: str, file2: str) -> None:             # <<<<<<<<<<<<<<
  *         self.jmap[file1] = file2
  *         self.jobs.append(file1)
@@ -11588,7 +11588,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/patch.py":223
  *         self.jobs.append(file1)
- * 
+ *
  *     def __call__(self, context: int = 3) -> Union[str, Dict[str, Patch]]:             # <<<<<<<<<<<<<<
  *         global left_lines, right_lines
  *         ans: Dict[str, Patch] = {}
@@ -11637,11 +11637,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/patch.py":210
- * 
- * 
+ *
+ *
  * class Differ:             # <<<<<<<<<<<<<<
  *     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None
- * 
+ *
  */
   __pyx_t_3 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Differ, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -11652,7 +11652,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/diff/patch.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -12936,8 +12936,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -13181,8 +13181,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

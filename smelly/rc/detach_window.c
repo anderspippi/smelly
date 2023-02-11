@@ -1600,10 +1600,10 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/detach_window.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1704,10 +1704,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13detach_window_12DetachWindow_message_to_
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/detach_window.py":39
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1731,10 +1731,10 @@ static PyObject *__pyx_pf_6smelly_2rc_13detach_window_12DetachWindow_message_to_
 
   /* "smelly/rc/detach_window.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  */
 
   /* function exit code */
@@ -1751,7 +1751,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13detach_window_12DetachWindow_message_to_
 
 /* "smelly/rc/detach_window.py":41
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         match = payload_get('target_tab')
@@ -1869,7 +1869,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13detach_window_12DetachWindow_2response_f
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/detach_window.py":42
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         windows = self.windows_for_match_payload(boss, window, payload_get)             # <<<<<<<<<<<<<<
  *         match = payload_get('target_tab')
@@ -2237,7 +2237,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13detach_window_12DetachWindow_2response_f
  *             if window:
  *                 boss._move_window_to(window=window, **kwargs)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_boss, __pyx_n_s_move_window_to); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -2280,8 +2280,8 @@ static PyObject *__pyx_pf_6smelly_2rc_13detach_window_12DetachWindow_2response_f
  *             if window:
  *                 boss._move_window_to(window=window, **kwargs)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2289,7 +2289,7 @@ static PyObject *__pyx_pf_6smelly_2rc_13detach_window_12DetachWindow_2response_f
 
   /* "smelly/rc/detach_window.py":41
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         match = payload_get('target_tab')
@@ -2448,7 +2448,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         + '\n\n'
  *         + MATCH_TAB_OPTION.replace('--match -m', '--target-tab -t')             # <<<<<<<<<<<<<<
  *         + '''Use the special value :code:`new` to move to a new tab.
- * 
+ *
  */
   __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_match_m, __pyx_kp_s_target_tab_t); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
@@ -2456,10 +2456,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/detach_window.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -2468,7 +2468,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/detach_window.py":41
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         match = payload_get('target_tab')
@@ -2764,9 +2764,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/detach_window.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, MatchError, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2799,9 +2799,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/detach_window.py":6
  * from typing import TYPE_CHECKING, Optional, Union
- * 
+ *
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, MatchError, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(11); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2890,10 +2890,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/detach_window.py":8
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, MatchError, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import DetachWindowRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2902,11 +2902,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/detach_window.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import DetachWindowRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2924,16 +2924,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/detach_window.py":8
  * from .base import MATCH_TAB_OPTION, MATCH_WINDOW_OPTION, ArgsType, Boss, MatchError, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import DetachWindowRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/detach_window.py":12
- * 
- * 
+ *
+ *
  * class DetachWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to detach
@@ -2951,7 +2951,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/detach_window.py":13
- * 
+ *
  * class DetachWindow(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: Which window to detach
@@ -2962,7 +2962,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/detach_window.py":19
  *     '''
- * 
+ *
  *     short_desc = 'Detach the specified windows and place them in a different/new tab'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Detach the specified windows and either move them into a new tab, a new OS window'
@@ -3004,7 +3004,7 @@ if (!__Pyx_RefNanny) {
  *         + '\n\n'
  *         + MATCH_TAB_OPTION.replace('--match -m', '--target-tab -t')             # <<<<<<<<<<<<<<
  *         + '''Use the special value :code:`new` to move to a new tab.
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_MATCH_TAB_OPTION); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3023,8 +3023,8 @@ if (!__Pyx_RefNanny) {
  *         + '\n\n'
  *         + MATCH_TAB_OPTION.replace('--match -m', '--target-tab -t')
  *         + '''Use the special value :code:`new` to move to a new tab.             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = PyNumber_Add(__pyx_t_7, __pyx_kp_s_Use_the_special_value_code_new_t); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3034,10 +3034,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/detach_window.py":38
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -3063,7 +3063,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/detach_window.py":41
  *         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         windows = self.windows_for_match_payload(boss, window, payload_get)
  *         match = payload_get('target_tab')
@@ -3100,8 +3100,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/detach_window.py":12
- * 
- * 
+ *
+ *
  * class DetachWindow(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: Which window to detach
@@ -3115,8 +3115,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/detach_window.py":61
- * 
- * 
+ *
+ *
  * detach_window = DetachWindow()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_DetachWindow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
@@ -3130,7 +3130,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/detach_window.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

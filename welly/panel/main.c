@@ -969,11 +969,11 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_5welly_5panel_4main___pyx_scope_struct__initial_window_size_func;
 
 /* "welly/panel/main.py":115
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  */
 struct __pyx_obj_5welly_5panel_4main___pyx_scope_struct__initial_window_size_func {
   PyObject_HEAD
@@ -1756,11 +1756,11 @@ static PyObject *__pyx_codeobj__24;
 /* Late includes */
 
 /* "welly/panel/main.py":65
- * 
- * 
+ *
+ *
  * def parse_panel_args(args: List[str]) -> Tuple[PanelCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args, OPTIONS, usage, help_text, 'smelly +kitten panel', result_class=PanelCLIOptions)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1791,11 +1791,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_parse_panel_args(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("parse_panel_args", 0);
 
   /* "welly/panel/main.py":66
- * 
+ *
  * def parse_panel_args(args: List[str]) -> Tuple[PanelCLIOptions, List[str]]:
  *     return parse_args(args, OPTIONS, usage, help_text, 'smelly +kitten panel', result_class=PanelCLIOptions)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_parse_args); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
@@ -1839,11 +1839,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_parse_panel_args(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "welly/panel/main.py":65
- * 
- * 
+ *
+ *
  * def parse_panel_args(args: List[str]) -> Tuple[PanelCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args, OPTIONS, usage, help_text, 'smelly +kitten panel', result_class=PanelCLIOptions)
- * 
+ *
  */
 
   /* function exit code */
@@ -1862,8 +1862,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_parse_panel_args(CYTHON_UNUSED PyO
 }
 
 /* "welly/panel/main.py":72
- * 
- * 
+ *
+ *
  * def create_strut(             # <<<<<<<<<<<<<<
  *     win_id: int,
  *     left: int = 0,
@@ -2094,8 +2094,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_2create_strut(CYTHON_UNUSED PyObje
  *     bottom_end_x: int = 0,
  * ) -> Strut:
  *     return left, right, top, bottom, left_start_y, left_end_y, right_start_y, right_end_y, top_start_x, top_end_x, bottom_start_x, bottom_end_x             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
@@ -2141,8 +2141,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_2create_strut(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "welly/panel/main.py":72
- * 
- * 
+ *
+ *
  * def create_strut(             # <<<<<<<<<<<<<<
  *     win_id: int,
  *     left: int = 0,
@@ -2160,11 +2160,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_2create_strut(CYTHON_UNUSED PyObje
 }
 
 /* "welly/panel/main.py":90
- * 
- * 
+ *
+ *
  * def create_top_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, top=height, top_end_x=width)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2256,11 +2256,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_4create_top_strut(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("create_top_strut", 0);
 
   /* "welly/panel/main.py":91
- * 
+ *
  * def create_top_strut(win_id: int, width: int, height: int) -> Strut:
  *     return create_strut(win_id, top=height, top_end_x=width)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_create_strut); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
@@ -2284,11 +2284,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_4create_top_strut(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "welly/panel/main.py":90
- * 
- * 
+ *
+ *
  * def create_top_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, top=height, top_end_x=width)
- * 
+ *
  */
 
   /* function exit code */
@@ -2306,11 +2306,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_4create_top_strut(CYTHON_UNUSED Py
 }
 
 /* "welly/panel/main.py":94
- * 
- * 
+ *
+ *
  * def create_bottom_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, bottom=height, bottom_end_x=width)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2402,11 +2402,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_6create_bottom_strut(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("create_bottom_strut", 0);
 
   /* "welly/panel/main.py":95
- * 
+ *
  * def create_bottom_strut(win_id: int, width: int, height: int) -> Strut:
  *     return create_strut(win_id, bottom=height, bottom_end_x=width)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_create_strut); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
@@ -2430,11 +2430,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_6create_bottom_strut(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "welly/panel/main.py":94
- * 
- * 
+ *
+ *
  * def create_bottom_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, bottom=height, bottom_end_x=width)
- * 
+ *
  */
 
   /* function exit code */
@@ -2452,11 +2452,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_6create_bottom_strut(CYTHON_UNUSED
 }
 
 /* "welly/panel/main.py":98
- * 
- * 
+ *
+ *
  * def create_left_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, left=width, left_end_y=height)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2548,11 +2548,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_8create_left_strut(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("create_left_strut", 0);
 
   /* "welly/panel/main.py":99
- * 
+ *
  * def create_left_strut(win_id: int, width: int, height: int) -> Strut:
  *     return create_strut(win_id, left=width, left_end_y=height)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_create_strut); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
@@ -2576,11 +2576,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_8create_left_strut(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "welly/panel/main.py":98
- * 
- * 
+ *
+ *
  * def create_left_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, left=width, left_end_y=height)
- * 
+ *
  */
 
   /* function exit code */
@@ -2598,11 +2598,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_8create_left_strut(CYTHON_UNUSED P
 }
 
 /* "welly/panel/main.py":102
- * 
- * 
+ *
+ *
  * def create_right_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, right=width, right_end_y=height)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2694,11 +2694,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_10create_right_strut(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("create_right_strut", 0);
 
   /* "welly/panel/main.py":103
- * 
+ *
  * def create_right_strut(win_id: int, width: int, height: int) -> Strut:
  *     return create_strut(win_id, right=width, right_end_y=height)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_create_strut); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
@@ -2722,11 +2722,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_10create_right_strut(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "welly/panel/main.py":102
- * 
- * 
+ *
+ *
  * def create_right_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, right=width, right_end_y=height)
- * 
+ *
  */
 
   /* function exit code */
@@ -2744,8 +2744,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_10create_right_strut(CYTHON_UNUSED
 }
 
 /* "welly/panel/main.py":109
- * 
- * 
+ *
+ *
  * def setup_x11_window(win_id: int) -> None:             # <<<<<<<<<<<<<<
  *     func = globals()[f'create_{args.edge}_strut']
  *     strut = func(win_id, window_width, window_height)
@@ -2785,7 +2785,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_12setup_x11_window(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("setup_x11_window", 0);
 
   /* "welly/panel/main.py":110
- * 
+ *
  * def setup_x11_window(win_id: int) -> None:
  *     func = globals()[f'create_{args.edge}_strut']             # <<<<<<<<<<<<<<
  *     strut = func(win_id, window_width, window_height)
@@ -2833,7 +2833,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_12setup_x11_window(CYTHON_UNUSED P
  *     func = globals()[f'create_{args.edge}_strut']
  *     strut = func(win_id, window_width, window_height)             # <<<<<<<<<<<<<<
  *     make_x11_window_a_dock_window(win_id, strut)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_window_width); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2899,8 +2899,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_12setup_x11_window(CYTHON_UNUSED P
  *     func = globals()[f'create_{args.edge}_strut']
  *     strut = func(win_id, window_width, window_height)
  *     make_x11_window_a_dock_window(win_id, strut)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_make_x11_window_a_dock_window); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2952,8 +2952,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_12setup_x11_window(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/panel/main.py":109
- * 
- * 
+ *
+ *
  * def setup_x11_window(win_id: int) -> None:             # <<<<<<<<<<<<<<
  *     func = globals()[f'create_{args.edge}_strut']
  *     strut = func(win_id, window_width, window_height)
@@ -2980,11 +2980,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_12setup_x11_window(CYTHON_UNUSED P
 }
 
 /* "welly/panel/main.py":115
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3054,7 +3054,7 @@ static PyObject *__pyx_pw_5welly_5panel_4main_15initial_window_size_func(PyObjec
 
 /* "welly/panel/main.py":118
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  *     def initial_window_size(cell_width: int, cell_height: int, dpi_x: float, dpi_y: float, xscale: float, yscale: float) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         global window_width, window_height
  *         monitor_width, monitor_height = glfw_primary_monitor_size()
@@ -3224,11 +3224,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_24initial_window_size_func_initial
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -3357,7 +3357,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_24initial_window_size_func_initial
  *             window_width = cell_width * args.columns + 1
  *             window_height = monitor_height             # <<<<<<<<<<<<<<
  *         return window_width, window_height
- * 
+ *
  */
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_window_height, __pyx_v_monitor_height) < 0) __PYX_ERR(0, 126, __pyx_L1_error)
   }
@@ -3367,7 +3367,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_24initial_window_size_func_initial
  *             window_width = cell_width * args.columns + 1
  *             window_height = monitor_height
  *         return window_width, window_height             # <<<<<<<<<<<<<<
- * 
+ *
  *     return initial_window_size
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3389,7 +3389,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_24initial_window_size_func_initial
 
   /* "welly/panel/main.py":118
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  *     def initial_window_size(cell_width: int, cell_height: int, dpi_x: float, dpi_y: float, xscale: float, yscale: float) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         global window_width, window_height
  *         monitor_width, monitor_height = glfw_primary_monitor_size()
@@ -3412,11 +3412,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_24initial_window_size_func_initial
 }
 
 /* "welly/panel/main.py":115
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  */
 
 static PyObject *__pyx_pf_5welly_5panel_4main_14initial_window_size_func(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_opts, CYTHON_UNUSED PyObject *__pyx_v_cached_values) {
@@ -3442,10 +3442,10 @@ static PyObject *__pyx_pf_5welly_5panel_4main_14initial_window_size_func(CYTHON_
   }
 
   /* "welly/panel/main.py":116
- * 
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:
  *     from smelly.fast_data_types import glfw_primary_monitor_size             # <<<<<<<<<<<<<<
- * 
+ *
  *     def initial_window_size(cell_width: int, cell_height: int, dpi_x: float, dpi_y: float, xscale: float, yscale: float) -> Tuple[int, int]:
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
@@ -3466,7 +3466,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_14initial_window_size_func(CYTHON_
 
   /* "welly/panel/main.py":118
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  *     def initial_window_size(cell_width: int, cell_height: int, dpi_x: float, dpi_y: float, xscale: float, yscale: float) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         global window_width, window_height
  *         monitor_width, monitor_height = glfw_primary_monitor_size()
@@ -3504,10 +3504,10 @@ static PyObject *__pyx_pf_5welly_5panel_4main_14initial_window_size_func(CYTHON_
 
   /* "welly/panel/main.py":129
  *         return window_width, window_height
- * 
+ *
  *     return initial_window_size             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_initial_window_size);
@@ -3515,11 +3515,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_14initial_window_size_func(CYTHON_
   goto __pyx_L0;
 
   /* "welly/panel/main.py":115
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  */
 
   /* function exit code */
@@ -3539,8 +3539,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_14initial_window_size_func(CYTHON_
 }
 
 /* "welly/panel/main.py":132
- * 
- * 
+ *
+ *
  * def main(sys_args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     global args
  *     if is_macos or not os.environ.get('DISPLAY'):
@@ -3689,11 +3689,11 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_5);
@@ -4147,7 +4147,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
  *     sys.argv.extend(items)
  *     from smelly.main import main as real_main             # <<<<<<<<<<<<<<
  *     from smelly.main import run_app
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4168,7 +4168,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
  *     sys.argv.extend(items)
  *     from smelly.main import main as real_main
  *     from smelly.main import run_app             # <<<<<<<<<<<<<<
- * 
+ *
  *     run_app.cached_values_name = 'panel'
  */
   __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
@@ -4188,7 +4188,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
 
   /* "welly/panel/main.py":151
  *     from smelly.main import run_app
- * 
+ *
  *     run_app.cached_values_name = 'panel'             # <<<<<<<<<<<<<<
  *     run_app.first_window_callback = setup_x11_window
  *     run_app.initial_window_size_func = initial_window_size_func
@@ -4196,7 +4196,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_run_app, __pyx_n_s_cached_values_name, __pyx_n_s_panel) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
 
   /* "welly/panel/main.py":152
- * 
+ *
  *     run_app.cached_values_name = 'panel'
  *     run_app.first_window_callback = setup_x11_window             # <<<<<<<<<<<<<<
  *     run_app.initial_window_size_func = initial_window_size_func
@@ -4212,7 +4212,7 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
  *     run_app.first_window_callback = setup_x11_window
  *     run_app.initial_window_size_func = initial_window_size_func             # <<<<<<<<<<<<<<
  *     real_main()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_initial_window_size_func); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4223,8 +4223,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
  *     run_app.first_window_callback = setup_x11_window
  *     run_app.initial_window_size_func = initial_window_size_func
  *     real_main()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_INCREF(__pyx_v_real_main);
   __pyx_t_5 = __pyx_v_real_main; __pyx_t_4 = NULL;
@@ -4245,8 +4245,8 @@ static PyObject *__pyx_pf_5welly_5panel_4main_16main(CYTHON_UNUSED PyObject *__p
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/panel/main.py":132
- * 
- * 
+ *
+ *
  * def main(sys_args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     global args
  *     if is_macos or not os.environ.get('DISPLAY'):
@@ -4568,7 +4568,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/panel/main.py":118
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  *     def initial_window_size(cell_width: int, cell_height: int, dpi_x: float, dpi_y: float, xscale: float, yscale: float) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *         global window_width, window_height
  *         monitor_width, monitor_height = glfw_primary_monitor_size()
@@ -4612,11 +4612,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "welly/panel/main.py":65
- * 
- * 
+ *
+ *
  * def parse_panel_args(args: List[str]) -> Tuple[PanelCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args, OPTIONS, usage, help_text, 'smelly +kitten panel', result_class=PanelCLIOptions)
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(1, __pyx_n_s_args); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -4624,8 +4624,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_panel_main_py, __pyx_n_s_parse_panel_args, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 65, __pyx_L1_error)
 
   /* "welly/panel/main.py":72
- * 
- * 
+ *
+ *
  * def create_strut(             # <<<<<<<<<<<<<<
  *     win_id: int,
  *     left: int = 0,
@@ -4639,11 +4639,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__10);
 
   /* "welly/panel/main.py":90
- * 
- * 
+ *
+ *
  * def create_top_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, top=height, top_end_x=width)
- * 
+ *
  */
   __pyx_tuple__11 = PyTuple_Pack(3, __pyx_n_s_win_id, __pyx_n_s_width, __pyx_n_s_height); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
@@ -4651,11 +4651,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_panel_main_py, __pyx_n_s_create_top_strut, 90, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 90, __pyx_L1_error)
 
   /* "welly/panel/main.py":94
- * 
- * 
+ *
+ *
  * def create_bottom_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, bottom=height, bottom_end_x=width)
- * 
+ *
  */
   __pyx_tuple__13 = PyTuple_Pack(3, __pyx_n_s_win_id, __pyx_n_s_width, __pyx_n_s_height); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
@@ -4663,11 +4663,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_panel_main_py, __pyx_n_s_create_bottom_strut, 94, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 94, __pyx_L1_error)
 
   /* "welly/panel/main.py":98
- * 
- * 
+ *
+ *
  * def create_left_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, left=width, left_end_y=height)
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(3, __pyx_n_s_win_id, __pyx_n_s_width, __pyx_n_s_height); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -4675,11 +4675,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_panel_main_py, __pyx_n_s_create_left_strut, 98, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 98, __pyx_L1_error)
 
   /* "welly/panel/main.py":102
- * 
- * 
+ *
+ *
  * def create_right_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, right=width, right_end_y=height)
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(3, __pyx_n_s_win_id, __pyx_n_s_width, __pyx_n_s_height); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -4687,8 +4687,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_panel_main_py, __pyx_n_s_create_right_strut, 102, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 102, __pyx_L1_error)
 
   /* "welly/panel/main.py":109
- * 
- * 
+ *
+ *
  * def setup_x11_window(win_id: int) -> None:             # <<<<<<<<<<<<<<
  *     func = globals()[f'create_{args.edge}_strut']
  *     strut = func(win_id, window_width, window_height)
@@ -4699,11 +4699,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_panel_main_py, __pyx_n_s_setup_x11_window, 109, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 109, __pyx_L1_error)
 
   /* "welly/panel/main.py":115
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(5, __pyx_n_s_opts, __pyx_n_s_cached_values, __pyx_n_s_glfw_primary_monitor_size, __pyx_n_s_initial_window_size, __pyx_n_s_initial_window_size); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -4711,8 +4711,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_panel_main_py, __pyx_n_s_initial_window_size_func, 115, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 115, __pyx_L1_error)
 
   /* "welly/panel/main.py":132
- * 
- * 
+ *
+ *
  * def main(sys_args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     global args
  *     if is_macos or not os.environ.get('DISPLAY'):
@@ -5023,7 +5023,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/panel/main.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import sys
  * from typing import Any, Callable, Dict, List, Tuple
@@ -5034,11 +5034,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/panel/main.py":5
- * 
+ *
  * import os
  * import sys             # <<<<<<<<<<<<<<
  * from typing import Any, Callable, Dict, List, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5049,7 +5049,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import sys
  * from typing import Any, Callable, Dict, List, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.cli import parse_args
  */
   __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -5096,7 +5096,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/panel/main.py":8
  * from typing import Any, Callable, Dict, List, Tuple
- * 
+ *
  * from smelly.cli import parse_args             # <<<<<<<<<<<<<<
  * from smelly.cli_stub import PanelCLIOptions
  * from smelly.constants import appname, is_macos
@@ -5116,7 +5116,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/panel/main.py":9
- * 
+ *
  * from smelly.cli import parse_args
  * from smelly.cli_stub import PanelCLIOptions             # <<<<<<<<<<<<<<
  * from smelly.constants import appname, is_macos
@@ -5169,7 +5169,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.constants import appname, is_macos
  * from smelly.fast_data_types import make_x11_window_a_dock_window             # <<<<<<<<<<<<<<
  * from smelly.os_window_size import WindowSizeData
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5189,7 +5189,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.constants import appname, is_macos
  * from smelly.fast_data_types import make_x11_window_a_dock_window
  * from smelly.os_window_size import WindowSizeData             # <<<<<<<<<<<<<<
- * 
+ *
  * OPTIONS = r'''
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
@@ -5221,7 +5221,7 @@ if (!__Pyx_RefNanny) {
  * '''.format(
  *     appname=appname             # <<<<<<<<<<<<<<
  * ).format
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5246,8 +5246,8 @@ if (!__Pyx_RefNanny) {
  * '''.format(
  *     appname=appname
  * ).format             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_format); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5256,8 +5256,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/panel/main.py":60
- * 
- * 
+ *
+ *
  * args = PanelCLIOptions()             # <<<<<<<<<<<<<<
  * help_text = 'Use a command line program to draw a GPU accelerated panel on your X11 desktop'
  * usage = 'program-to-run'
@@ -5271,11 +5271,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/panel/main.py":61
- * 
+ *
  * args = PanelCLIOptions()
  * help_text = 'Use a command line program to draw a GPU accelerated panel on your X11 desktop'             # <<<<<<<<<<<<<<
  * usage = 'program-to-run'
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_help_text, __pyx_kp_s_Use_a_command_line_program_to_dr) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
 
@@ -5283,17 +5283,17 @@ if (!__Pyx_RefNanny) {
  * args = PanelCLIOptions()
  * help_text = 'Use a command line program to draw a GPU accelerated panel on your X11 desktop'
  * usage = 'program-to-run'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_usage, __pyx_kp_s_program_to_run) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
 
   /* "welly/panel/main.py":65
- * 
- * 
+ *
+ *
  * def parse_panel_args(args: List[str]) -> Tuple[PanelCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     return parse_args(args, OPTIONS, usage, help_text, 'smelly +kitten panel', result_class=PanelCLIOptions)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5335,11 +5335,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/panel/main.py":69
- * 
- * 
+ *
+ *
  * Strut = Tuple[int, int, int, int, int, int, int, int, int, int, int, int]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Tuple); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -5389,8 +5389,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/panel/main.py":72
- * 
- * 
+ *
+ *
  * def create_strut(             # <<<<<<<<<<<<<<
  *     win_id: int,
  *     left: int = 0,
@@ -5416,7 +5416,7 @@ if (!__Pyx_RefNanny) {
  *     bottom_end_x: int = 0,
  * ) -> Strut:             # <<<<<<<<<<<<<<
  *     return left, right, top, bottom, left_start_y, left_end_y, right_start_y, right_end_y, top_start_x, top_end_x, bottom_start_x, bottom_end_x
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Strut); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5424,8 +5424,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/panel/main.py":72
- * 
- * 
+ *
+ *
  * def create_strut(             # <<<<<<<<<<<<<<
  *     win_id: int,
  *     left: int = 0,
@@ -5439,11 +5439,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/panel/main.py":90
- * 
- * 
+ *
+ *
  * def create_top_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, top=height, top_end_x=width)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5462,11 +5462,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/panel/main.py":94
- * 
- * 
+ *
+ *
  * def create_bottom_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, bottom=height, bottom_end_x=width)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5485,11 +5485,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/panel/main.py":98
- * 
- * 
+ *
+ *
  * def create_left_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, left=width, left_end_y=height)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5508,11 +5508,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/panel/main.py":102
- * 
- * 
+ *
+ *
  * def create_right_strut(win_id: int, width: int, height: int) -> Strut:             # <<<<<<<<<<<<<<
  *     return create_strut(win_id, right=width, right_end_y=height)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5531,18 +5531,18 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/panel/main.py":106
- * 
- * 
+ *
+ *
  * window_width = window_height = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_window_width, __pyx_int_0) < 0) __PYX_ERR(0, 106, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_window_height, __pyx_int_0) < 0) __PYX_ERR(0, 106, __pyx_L1_error)
 
   /* "welly/panel/main.py":109
- * 
- * 
+ *
+ *
  * def setup_x11_window(win_id: int) -> None:             # <<<<<<<<<<<<<<
  *     func = globals()[f'create_{args.edge}_strut']
  *     strut = func(win_id, window_width, window_height)
@@ -5559,11 +5559,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/panel/main.py":115
- * 
- * 
+ *
+ *
  * def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import glfw_primary_monitor_size
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -5647,8 +5647,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "welly/panel/main.py":132
- * 
- * 
+ *
+ *
  * def main(sys_args: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     global args
  *     if is_macos or not os.environ.get('DISPLAY'):
@@ -5671,8 +5671,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/panel/main.py":157
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main(sys.argv)
  * elif __name__ == '__doc__':
@@ -5684,7 +5684,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_7) {
 
     /* "welly/panel/main.py":158
- * 
+ *
  * if __name__ == '__main__':
  *     main(sys.argv)             # <<<<<<<<<<<<<<
  * elif __name__ == '__doc__':
@@ -5704,8 +5704,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "welly/panel/main.py":157
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main(sys.argv)
  * elif __name__ == '__doc__':
@@ -5796,7 +5796,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/panel/main.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -6788,8 +6788,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

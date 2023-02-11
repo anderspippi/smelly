@@ -1376,8 +1376,8 @@ static PyObject *__pyx_codeobj__2;
 /* Late includes */
 
 /* "welly/tui/operations_stub.py":9
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from wellies.tui.operations import as_type_stub
  *     from smelly.conf.utils import save_type_stub
@@ -1415,11 +1415,11 @@ static PyObject *__pyx_pf_5welly_3tui_15operations_stub_generate_stub(CYTHON_UNU
   __Pyx_RefNannySetupContext("generate_stub", 0);
 
   /* "welly/tui/operations_stub.py":10
- * 
+ *
  * def generate_stub() -> None:
  *     from wellies.tui.operations import as_type_stub             # <<<<<<<<<<<<<<
  *     from smelly.conf.utils import save_type_stub
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1440,7 +1440,7 @@ static PyObject *__pyx_pf_5welly_3tui_15operations_stub_generate_stub(CYTHON_UNU
  * def generate_stub() -> None:
  *     from wellies.tui.operations import as_type_stub
  *     from smelly.conf.utils import save_type_stub             # <<<<<<<<<<<<<<
- * 
+ *
  *     text = as_type_stub()
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -1460,7 +1460,7 @@ static PyObject *__pyx_pf_5welly_3tui_15operations_stub_generate_stub(CYTHON_UNU
 
   /* "welly/tui/operations_stub.py":13
  *     from smelly.conf.utils import save_type_stub
- * 
+ *
  *     text = as_type_stub()             # <<<<<<<<<<<<<<
  *     save_type_stub(text, __file__)
  */
@@ -1484,7 +1484,7 @@ static PyObject *__pyx_pf_5welly_3tui_15operations_stub_generate_stub(CYTHON_UNU
   __pyx_t_1 = 0;
 
   /* "welly/tui/operations_stub.py":14
- * 
+ *
  *     text = as_type_stub()
  *     save_type_stub(text, __file__)             # <<<<<<<<<<<<<<
  */
@@ -1541,8 +1541,8 @@ static PyObject *__pyx_pf_5welly_3tui_15operations_stub_generate_stub(CYTHON_UNU
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/operations_stub.py":9
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from wellies.tui.operations import as_type_stub
  *     from smelly.conf.utils import save_type_stub
@@ -1646,8 +1646,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/tui/operations_stub.py":9
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from wellies.tui.operations import as_type_stub
  *     from smelly.conf.utils import save_type_stub
@@ -1936,11 +1936,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/tui/operations_stub.py":5
- * 
- * 
+ *
+ *
  * class CMD:             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_CMD, __pyx_n_s_CMD, (PyObject *) NULL, __pyx_n_s_welly_tui_operations_stub, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1951,8 +1951,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/operations_stub.py":9
- * 
- * 
+ *
+ *
  * def generate_stub() -> None:             # <<<<<<<<<<<<<<
  *     from wellies.tui.operations import as_type_stub
  *     from smelly.conf.utils import save_type_stub
@@ -1970,7 +1970,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/tui/operations_stub.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

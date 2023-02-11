@@ -969,8 +969,8 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_5welly_16hyperlinked_grep_4main___pyx_scope_struct__main;
 
 /* "welly/hyperlinked_grep/main.py":57
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     i = 1
  *     args = parse_options(sys.argv[1:])
@@ -1991,8 +1991,8 @@ static PyObject *__pyx_codeobj__47;
 /* Late includes */
 
 /* "welly/hyperlinked_grep/main.py":16
- * 
- * 
+ *
+ *
  * def write_hyperlink(write: Callable[[bytes], None], url: bytes, line: bytes, frag: bytes = b'') -> None:             # <<<<<<<<<<<<<<
  *     text = b'\033]8;;' + url
  *     if frag:
@@ -2110,7 +2110,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_write_hyperlink(CYTHON
   __Pyx_RefNannySetupContext("write_hyperlink", 0);
 
   /* "welly/hyperlinked_grep/main.py":17
- * 
+ *
  * def write_hyperlink(write: Callable[[bytes], None], url: bytes, line: bytes, frag: bytes = b'') -> None:
  *     text = b'\033]8;;' + url             # <<<<<<<<<<<<<<
  *     if frag:
@@ -2160,7 +2160,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_write_hyperlink(CYTHON
  *         text += b'#' + frag
  *     text += b'\033\\' + line + b'\033]8;;\033\\'             # <<<<<<<<<<<<<<
  *     write(text)
- * 
+ *
  */
   __pyx_t_3 = PyNumber_Add(__pyx_kp_b__3, __pyx_v_line); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2177,8 +2177,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_write_hyperlink(CYTHON
  *         text += b'#' + frag
  *     text += b'\033\\' + line + b'\033]8;;\033\\'
  *     write(text)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_INCREF(__pyx_v_write);
   __pyx_t_1 = __pyx_v_write; __pyx_t_4 = NULL;
@@ -2199,8 +2199,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_write_hyperlink(CYTHON
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/hyperlinked_grep/main.py":16
- * 
- * 
+ *
+ *
  * def write_hyperlink(write: Callable[[bytes], None], url: bytes, line: bytes, frag: bytes = b'') -> None:             # <<<<<<<<<<<<<<
  *     text = b'\033]8;;' + url
  *     if frag:
@@ -2223,8 +2223,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_write_hyperlink(CYTHON
 }
 
 /* "welly/hyperlinked_grep/main.py":24
- * 
- * 
+ *
+ *
  * def parse_options(argv: List[str]) -> argparse.Namespace:             # <<<<<<<<<<<<<<
  *     p = argparse.ArgumentParser(add_help=False)
  *     p.add_argument('--context-separator', default='--')
@@ -2262,7 +2262,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_2parse_options(CYTHON_
   __Pyx_RefNannySetupContext("parse_options", 0);
 
   /* "welly/hyperlinked_grep/main.py":25
- * 
+ *
  * def parse_options(argv: List[str]) -> argparse.Namespace:
  *     p = argparse.ArgumentParser(add_help=False)             # <<<<<<<<<<<<<<
  *     p.add_argument('--context-separator', default='--')
@@ -2738,7 +2738,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_2parse_options(CYTHON_
  *     p.add_argument('--kitten', action='append', default=[])
  *     args, _ = p.parse_known_args(argv)             # <<<<<<<<<<<<<<
  *     return args
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_p, __pyx_n_s_parse_known_args); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2767,11 +2767,11 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_2parse_options(CYTHON_
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_2);
@@ -2812,8 +2812,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_2parse_options(CYTHON_
  *     p.add_argument('--kitten', action='append', default=[])
  *     args, _ = p.parse_known_args(argv)
  *     return args             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_args);
@@ -2821,8 +2821,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_2parse_options(CYTHON_
   goto __pyx_L0;
 
   /* "welly/hyperlinked_grep/main.py":24
- * 
- * 
+ *
+ *
  * def parse_options(argv: List[str]) -> argparse.Namespace:             # <<<<<<<<<<<<<<
  *     p = argparse.ArgumentParser(add_help=False)
  *     p.add_argument('--context-separator', default='--')
@@ -2847,8 +2847,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_2parse_options(CYTHON_
 }
 
 /* "welly/hyperlinked_grep/main.py":57
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     i = 1
  *     args = parse_options(sys.argv[1:])
@@ -2870,10 +2870,10 @@ static PyObject *__pyx_pw_5welly_16hyperlinked_grep_4main_5main(PyObject *__pyx_
 
 /* "welly/hyperlinked_grep/main.py":135
  *     hostname = get_hostname().encode('utf-8')
- * 
+ *
  *     def get_quoted_url(file_path: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2918,10 +2918,10 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main_get_quoted_url(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "welly/hyperlinked_grep/main.py":136
- * 
+ *
  *     def get_quoted_url(file_path: bytes) -> bytes:
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')             # <<<<<<<<<<<<<<
- * 
+ *
  *     try:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2998,10 +2998,10 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main_get_quoted_url(P
 
   /* "welly/hyperlinked_grep/main.py":135
  *     hostname = get_hostname().encode('utf-8')
- * 
+ *
  *     def get_quoted_url(file_path: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')
- * 
+ *
  */
 
   /* function exit code */
@@ -3022,8 +3022,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main_get_quoted_url(P
 }
 
 /* "welly/hyperlinked_grep/main.py":57
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     i = 1
  *     args = parse_options(sys.argv[1:])
@@ -3110,7 +3110,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
   }
 
   /* "welly/hyperlinked_grep/main.py":58
- * 
+ *
  * def main() -> None:
  *     i = 1             # <<<<<<<<<<<<<<
  *     args = parse_options(sys.argv[1:])
@@ -3175,7 +3175,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     all_link_options = {'matching_lines', 'context_lines', 'file_headers'}
  *     link_options = set()             # <<<<<<<<<<<<<<
  *     delegate_to_rg = False
- * 
+ *
  */
   __pyx_t_1 = PySet_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3186,14 +3186,14 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     all_link_options = {'matching_lines', 'context_lines', 'file_headers'}
  *     link_options = set()
  *     delegate_to_rg = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     for raw in args.kitten:
  */
   __pyx_v_delegate_to_rg = 0;
 
   /* "welly/hyperlinked_grep/main.py":64
  *     delegate_to_rg = False
- * 
+ *
  *     for raw in args.kitten:             # <<<<<<<<<<<<<<
  *         p, _, s = raw.partition('=')
  *         if p != 'hyperlink':
@@ -3244,7 +3244,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
     __pyx_t_1 = 0;
 
     /* "welly/hyperlinked_grep/main.py":65
- * 
+ *
  *     for raw in args.kitten:
  *         p, _, s = raw.partition('=')             # <<<<<<<<<<<<<<
  *         if p != 'hyperlink':
@@ -3277,13 +3277,13 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_4);
@@ -3600,7 +3600,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *             else:
  *                 link_options.add(option)             # <<<<<<<<<<<<<<
  *                 delegate_to_rg = False
- * 
+ *
  */
       /*else*/ {
         __pyx_t_13 = PySet_Add(__pyx_v_link_options, __pyx_v_option); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 79, __pyx_L1_error)
@@ -3609,7 +3609,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *             else:
  *                 link_options.add(option)
  *                 delegate_to_rg = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     while i < len(sys.argv):
  */
         __pyx_v_delegate_to_rg = 0;
@@ -3628,7 +3628,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
     /* "welly/hyperlinked_grep/main.py":64
  *     delegate_to_rg = False
- * 
+ *
  *     for raw in args.kitten:             # <<<<<<<<<<<<<<
  *         p, _, s = raw.partition('=')
  *         if p != 'hyperlink':
@@ -3638,7 +3638,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
   /* "welly/hyperlinked_grep/main.py":82
  *                 delegate_to_rg = False
- * 
+ *
  *     while i < len(sys.argv):             # <<<<<<<<<<<<<<
  *         if sys.argv[i] == '--kitten':
  *             del sys.argv[i : i + 2]
@@ -3660,7 +3660,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
     if (!__pyx_t_14) break;
 
     /* "welly/hyperlinked_grep/main.py":83
- * 
+ *
  *     while i < len(sys.argv):
  *         if sys.argv[i] == '--kitten':             # <<<<<<<<<<<<<<
  *             del sys.argv[i : i + 2]
@@ -3697,7 +3697,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
       /* "welly/hyperlinked_grep/main.py":83
- * 
+ *
  *     while i < len(sys.argv):
  *         if sys.argv[i] == '--kitten':             # <<<<<<<<<<<<<<
  *             del sys.argv[i : i + 2]
@@ -3833,7 +3833,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     link_file_headers = 'file_headers' in link_options
  *     link_context_lines = 'context_lines' in link_options             # <<<<<<<<<<<<<<
  *     link_matching_lines = 'matching_lines' in link_options
- * 
+ *
  */
   __pyx_t_10 = (__Pyx_PySet_ContainsTF(__pyx_n_s_context_lines, __pyx_v_link_options, Py_EQ)); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 92, __pyx_L1_error)
   __pyx_t_4 = __Pyx_PyBool_FromLong(__pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -3845,7 +3845,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     link_file_headers = 'file_headers' in link_options
  *     link_context_lines = 'context_lines' in link_options
  *     link_matching_lines = 'matching_lines' in link_options             # <<<<<<<<<<<<<<
- * 
+ *
  *     if any(
  */
   __pyx_t_10 = (__Pyx_PySet_ContainsTF(__pyx_n_s_matching_lines, __pyx_v_link_options, Py_EQ)); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 93, __pyx_L1_error)
@@ -4043,7 +4043,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
   /* "welly/hyperlinked_grep/main.py":95
  *     link_matching_lines = 'matching_lines' in link_options
- * 
+ *
  *     if any(             # <<<<<<<<<<<<<<
  *         (
  *             args.context_separator != '--',
@@ -4059,14 +4059,14 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *         )
  *     ):
  *         delegate_to_rg = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     if delegate_to_rg:
  */
     __pyx_v_delegate_to_rg = 1;
 
     /* "welly/hyperlinked_grep/main.py":95
  *     link_matching_lines = 'matching_lines' in link_options
- * 
+ *
  *     if any(             # <<<<<<<<<<<<<<
  *         (
  *             args.context_separator != '--',
@@ -4075,7 +4075,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
   /* "welly/hyperlinked_grep/main.py":113
  *         delegate_to_rg = True
- * 
+ *
  *     if delegate_to_rg:             # <<<<<<<<<<<<<<
  *         os.execlp('rg', 'rg', *sys.argv[1:])
  *     cmdline = ['rg', '--pretty', '--with-filename'] + sys.argv[1:]
@@ -4084,7 +4084,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
   if (__pyx_t_10) {
 
     /* "welly/hyperlinked_grep/main.py":114
- * 
+ *
  *     if delegate_to_rg:
  *         os.execlp('rg', 'rg', *sys.argv[1:])             # <<<<<<<<<<<<<<
  *     cmdline = ['rg', '--pretty', '--with-filename'] + sys.argv[1:]
@@ -4117,7 +4117,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
     /* "welly/hyperlinked_grep/main.py":113
  *         delegate_to_rg = True
- * 
+ *
  *     if delegate_to_rg:             # <<<<<<<<<<<<<<
  *         os.execlp('rg', 'rg', *sys.argv[1:])
  *     cmdline = ['rg', '--pretty', '--with-filename'] + sys.argv[1:]
@@ -4260,7 +4260,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     except FileNotFoundError:
  *         raise SystemExit('Could not find the rg executable in your PATH. Is ripgrep installed?')             # <<<<<<<<<<<<<<
  *     assert p.stdout is not None
- * 
+ *
  */
       __pyx_t_22 = __Pyx_PyObject_Call(__pyx_builtin_SystemExit, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_22)) __PYX_ERR(0, 119, __pyx_L19_except_error)
       __Pyx_GOTREF(__pyx_t_22);
@@ -4290,7 +4290,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     except FileNotFoundError:
  *         raise SystemExit('Could not find the rg executable in your PATH. Is ripgrep installed?')
  *     assert p.stdout is not None             # <<<<<<<<<<<<<<
- * 
+ *
  *     write: Callable[[bytes], None] = cast(Callable[[bytes], None], sys.stdout.buffer.write)
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
@@ -4308,7 +4308,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
   /* "welly/hyperlinked_grep/main.py":122
  *     assert p.stdout is not None
- * 
+ *
  *     write: Callable[[bytes], None] = cast(Callable[[bytes], None], sys.stdout.buffer.write)             # <<<<<<<<<<<<<<
  *     sgr_pat = re.compile(br'\x1b\[.*?m')
  *     osc_pat = re.compile(b'\x1b\\].*?\x1b\\\\')
@@ -4398,7 +4398,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
   __pyx_t_21 = 0;
 
   /* "welly/hyperlinked_grep/main.py":123
- * 
+ *
  *     write: Callable[[bytes], None] = cast(Callable[[bytes], None], sys.stdout.buffer.write)
  *     sgr_pat = re.compile(br'\x1b\[.*?m')             # <<<<<<<<<<<<<<
  *     osc_pat = re.compile(b'\x1b\\].*?\x1b\\\\')
@@ -4552,7 +4552,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     path_with_linenum_pat = re.compile(br'^(.*?):(\d+):')
  *     stats_pat = re.compile(br'^\d+ matches$')             # <<<<<<<<<<<<<<
  *     vimgrep_pat = re.compile(br'^(.*?):(\d+):(\d+):')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_18, __pyx_n_s_re); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
@@ -4581,7 +4581,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     path_with_linenum_pat = re.compile(br'^(.*?):(\d+):')
  *     stats_pat = re.compile(br'^\d+ matches$')
  *     vimgrep_pat = re.compile(br'^(.*?):(\d+):(\d+):')             # <<<<<<<<<<<<<<
- * 
+ *
  *     in_stats = False
  */
   __Pyx_GetModuleGlobalName(__pyx_t_19, __pyx_n_s_re); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 129, __pyx_L1_error)
@@ -4609,7 +4609,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
   /* "welly/hyperlinked_grep/main.py":131
  *     vimgrep_pat = re.compile(br'^(.*?):(\d+):(\d+):')
- * 
+ *
  *     in_stats = False             # <<<<<<<<<<<<<<
  *     in_result: bytes = b''
  *     hostname = get_hostname().encode('utf-8')
@@ -4617,11 +4617,11 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
   __pyx_v_in_stats = 0;
 
   /* "welly/hyperlinked_grep/main.py":132
- * 
+ *
  *     in_stats = False
  *     in_result: bytes = b''             # <<<<<<<<<<<<<<
  *     hostname = get_hostname().encode('utf-8')
- * 
+ *
  */
   __Pyx_INCREF(__pyx_kp_b_);
   __pyx_v_in_result = __pyx_kp_b_;
@@ -4630,7 +4630,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     in_stats = False
  *     in_result: bytes = b''
  *     hostname = get_hostname().encode('utf-8')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_quoted_url(file_path: bytes) -> bytes:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_19, __pyx_n_s_get_hostname); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 133, __pyx_L1_error)
@@ -4674,10 +4674,10 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
   /* "welly/hyperlinked_grep/main.py":135
  *     hostname = get_hostname().encode('utf-8')
- * 
+ *
  *     def get_quoted_url(file_path: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')
- * 
+ *
  */
   __pyx_t_21 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_21);
@@ -4692,7 +4692,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
   /* "welly/hyperlinked_grep/main.py":138
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         for line in p.stdout:
  *             line = osc_pat.sub(b'', line)  # remove any existing hyperlinks
@@ -4708,7 +4708,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
       /*try:*/ {
 
         /* "welly/hyperlinked_grep/main.py":139
- * 
+ *
  *     try:
  *         for line in p.stdout:             # <<<<<<<<<<<<<<
  *             line = osc_pat.sub(b'', line)  # remove any existing hyperlinks
@@ -5983,7 +5983,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
           __pyx_L36:;
 
           /* "welly/hyperlinked_grep/main.py":139
- * 
+ *
  *     try:
  *         for line in p.stdout:             # <<<<<<<<<<<<<<
  *             line = osc_pat.sub(b'', line)  # remove any existing hyperlinks
@@ -5995,7 +5995,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
         /* "welly/hyperlinked_grep/main.py":138
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         for line in p.stdout:
  *             line = osc_pat.sub(b'', line)  # remove any existing hyperlinks
@@ -6095,7 +6095,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
 
       /* "welly/hyperlinked_grep/main.py":138
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         for line in p.stdout:
  *             line = osc_pat.sub(b'', line)  # remove any existing hyperlinks
@@ -6119,7 +6119,7 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     finally:
  *         p.stdout.close()             # <<<<<<<<<<<<<<
  *     raise SystemExit(p.wait())
- * 
+ *
  */
   /*finally:*/ {
     /*normal exit:*/{
@@ -6229,8 +6229,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
  *     finally:
  *         p.stdout.close()
  *     raise SystemExit(p.wait())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_23 = __Pyx_PyObject_GetAttrStr(__pyx_v_p, __pyx_n_s_wait); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 188, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_23);
@@ -6257,8 +6257,8 @@ static PyObject *__pyx_pf_5welly_16hyperlinked_grep_4main_4main(CYTHON_UNUSED Py
   __PYX_ERR(0, 188, __pyx_L1_error)
 
   /* "welly/hyperlinked_grep/main.py":57
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     i = 1
  *     args = parse_options(sys.argv[1:])
@@ -6943,7 +6943,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_slice__28);
 
   /* "welly/hyperlinked_grep/main.py":114
- * 
+ *
  *     if delegate_to_rg:
  *         os.execlp('rg', 'rg', *sys.argv[1:])             # <<<<<<<<<<<<<<
  *     cmdline = ['rg', '--pretty', '--with-filename'] + sys.argv[1:]
@@ -6958,7 +6958,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     except FileNotFoundError:
  *         raise SystemExit('Could not find the rg executable in your PATH. Is ripgrep installed?')             # <<<<<<<<<<<<<<
  *     assert p.stdout is not None
- * 
+ *
  */
   __pyx_tuple__34 = PyTuple_Pack(1, __pyx_kp_s_Could_not_find_the_rg_executable); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
@@ -6966,10 +6966,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/hyperlinked_grep/main.py":135
  *     hostname = get_hostname().encode('utf-8')
- * 
+ *
  *     def get_quoted_url(file_path: bytes) -> bytes:             # <<<<<<<<<<<<<<
  *         return b'file://' + hostname + quote_from_bytes(os.path.abspath(file_path)).encode('utf-8')
- * 
+ *
  */
   __pyx_tuple__36 = PyTuple_Pack(1, __pyx_n_s_file_path); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
@@ -6977,8 +6977,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_hyperlinked_grep_main_py, __pyx_n_s_get_quoted_url, 135, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 135, __pyx_L1_error)
 
   /* "welly/hyperlinked_grep/main.py":16
- * 
- * 
+ *
+ *
  * def write_hyperlink(write: Callable[[bytes], None], url: bytes, line: bytes, frag: bytes = b'') -> None:             # <<<<<<<<<<<<<<
  *     text = b'\033]8;;' + url
  *     if frag:
@@ -6992,8 +6992,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__42);
 
   /* "welly/hyperlinked_grep/main.py":24
- * 
- * 
+ *
+ *
  * def parse_options(argv: List[str]) -> argparse.Namespace:             # <<<<<<<<<<<<<<
  *     p = argparse.ArgumentParser(add_help=False)
  *     p.add_argument('--context-separator', default='--')
@@ -7004,8 +7004,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_hyperlinked_grep_main_py, __pyx_n_s_parse_options, 24, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 24, __pyx_L1_error)
 
   /* "welly/hyperlinked_grep/main.py":57
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     i = 1
  *     args = parse_options(sys.argv[1:])
@@ -7315,7 +7315,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/hyperlinked_grep/main.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import argparse             # <<<<<<<<<<<<<<
  * import os
  * import re
@@ -7326,7 +7326,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/hyperlinked_grep/main.py":5
- * 
+ *
  * import argparse
  * import os             # <<<<<<<<<<<<<<
  * import re
@@ -7390,7 +7390,7 @@ if (!__Pyx_RefNanny) {
  * import sys
  * from typing import Callable, List, cast             # <<<<<<<<<<<<<<
  * from urllib.parse import quote_from_bytes
- * 
+ *
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7424,7 +7424,7 @@ if (!__Pyx_RefNanny) {
  * import sys
  * from typing import Callable, List, cast
  * from urllib.parse import quote_from_bytes             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.utils import get_hostname
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -7443,10 +7443,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/hyperlinked_grep/main.py":13
  * from urllib.parse import quote_from_bytes
- * 
+ *
  * from smelly.utils import get_hostname             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7463,8 +7463,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/hyperlinked_grep/main.py":16
- * 
- * 
+ *
+ *
  * def write_hyperlink(write: Callable[[bytes], None], url: bytes, line: bytes, frag: bytes = b'') -> None:             # <<<<<<<<<<<<<<
  *     text = b'\033]8;;' + url
  *     if frag:
@@ -7505,8 +7505,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/hyperlinked_grep/main.py":24
- * 
- * 
+ *
+ *
  * def parse_options(argv: List[str]) -> argparse.Namespace:             # <<<<<<<<<<<<<<
  *     p = argparse.ArgumentParser(add_help=False)
  *     p.add_argument('--context-separator', default='--')
@@ -7535,8 +7535,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/hyperlinked_grep/main.py":57
- * 
- * 
+ *
+ *
  * def main() -> None:             # <<<<<<<<<<<<<<
  *     i = 1
  *     args = parse_options(sys.argv[1:])
@@ -7552,8 +7552,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/hyperlinked_grep/main.py":191
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  * elif __name__ == '__wrapper_of__':
@@ -7565,7 +7565,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_5) {
 
     /* "welly/hyperlinked_grep/main.py":192
- * 
+ *
  * if __name__ == '__main__':
  *     main()             # <<<<<<<<<<<<<<
  * elif __name__ == '__wrapper_of__':
@@ -7579,8 +7579,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "welly/hyperlinked_grep/main.py":191
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  * elif __name__ == '__wrapper_of__':
@@ -7638,7 +7638,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/hyperlinked_grep/main.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -9125,8 +9125,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

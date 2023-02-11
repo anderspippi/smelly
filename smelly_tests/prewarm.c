@@ -976,10 +976,10 @@ struct __pyx_defaults {
 
 /* "smelly_tests/prewarm.py":22
  *     maxDiff = None
- * 
+ *
  *     def test_prewarming(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import fork_prewarm_process
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_7prewarm___pyx_scope_struct__test_prewarming {
   PyObject_HEAD
@@ -989,10 +989,10 @@ struct __pyx_obj_12smelly_tests_7prewarm___pyx_scope_struct__test_prewarming {
 
 /* "smelly_tests/prewarm.py":74
  *         self.ae(int(p.from_worker.readline()), data['pid'])
- * 
+ *
  *     def test_signal_handling(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_7prewarm___pyx_scope_struct_1_test_signal_handling {
   PyObject_HEAD
@@ -1837,10 +1837,10 @@ static PyObject *__pyx_codeobj__13;
 
 /* "smelly_tests/prewarm.py":22
  *     maxDiff = None
- * 
+ *
  *     def test_prewarming(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import fork_prewarm_process
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1936,10 +1936,10 @@ static PyObject *__pyx_lambda_funcdef_lambda(PyObject *__pyx_self) {
 
 /* "smelly_tests/prewarm.py":22
  *     maxDiff = None
- * 
+ *
  *     def test_prewarming(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import fork_prewarm_process
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -1979,10 +1979,10 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHO
   }
 
   /* "smelly_tests/prewarm.py":23
- * 
+ *
  *     def test_prewarming(self):
  *         from smelly.prewarm import fork_prewarm_process             # <<<<<<<<<<<<<<
- * 
+ *
  *         cwd = tempfile.gettempdir()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -2002,7 +2002,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHO
 
   /* "smelly_tests/prewarm.py":25
  *         from smelly.prewarm import fork_prewarm_process
- * 
+ *
  *         cwd = tempfile.gettempdir()             # <<<<<<<<<<<<<<
  *         env = {'TEST_ENV_PASS': 'xyz'}
  *         cols = 317
@@ -2031,7 +2031,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHO
   __pyx_t_2 = 0;
 
   /* "smelly_tests/prewarm.py":26
- * 
+ *
  *         cwd = tempfile.gettempdir()
  *         env = {'TEST_ENV_PASS': 'xyz'}             # <<<<<<<<<<<<<<
  *         cols = 317
@@ -2952,7 +2952,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHO
  *         self.assertNotIn('SHOULD_NOT_BE_PRESENT', data['env'])
  *         self.ae(data['font_family'], 'prewarm')             # <<<<<<<<<<<<<<
  *         self.ae(int(p.from_worker.readline()), data['pid'])
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3011,7 +3011,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHO
  *         self.assertNotIn('SHOULD_NOT_BE_PRESENT', data['env'])
  *         self.ae(data['font_family'], 'prewarm')
  *         self.ae(int(p.from_worker.readline()), data['pid'])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_signal_handling(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
@@ -3094,10 +3094,10 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHO
 
   /* "smelly_tests/prewarm.py":22
  *     maxDiff = None
- * 
+ *
  *     def test_prewarming(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import fork_prewarm_process
- * 
+ *
  */
 
   /* function exit code */
@@ -3130,10 +3130,10 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_test_prewarming(CYTHO
 
 /* "smelly_tests/prewarm.py":74
  *         self.ae(int(p.from_worker.readline()), data['pid'])
- * 
+ *
  *     def test_signal_handling(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3152,7 +3152,7 @@ static PyObject *__pyx_pw_12smelly_tests_7prewarm_7Prewarm_3test_signal_handling
 
 /* "smelly_tests/prewarm.py":82
  *         found_signal = False
- * 
+ *
  *         def handle_signals(signals):             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             for siginfo in signals:
@@ -3496,7 +3496,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
  *                     p.wait(1)
  *                     p.stdin.close()             # <<<<<<<<<<<<<<
  *                 found_signal = True
- * 
+ *
  */
       if (unlikely(!__pyx_cur_scope->__pyx_v_p)) { __Pyx_RaiseClosureNameError("p"); __PYX_ERR(0, 92, __pyx_L1_error) }
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_p, __pyx_n_s_stdin); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -3534,7 +3534,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
  *                     p.wait(1)
  *                     p.stdin.close()
  *                 found_signal = True             # <<<<<<<<<<<<<<
- * 
+ *
  *         def assert_signal():
  */
     __pyx_cur_scope->__pyx_v_found_signal = 1;
@@ -3552,7 +3552,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
 
   /* "smelly_tests/prewarm.py":82
  *         found_signal = False
- * 
+ *
  *         def handle_signals(signals):             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             for siginfo in signals:
@@ -3580,7 +3580,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
 
 /* "smelly_tests/prewarm.py":95
  *                 found_signal = True
- * 
+ *
  *         def assert_signal():             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             found_signal = False
@@ -3778,11 +3778,11 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_7);
@@ -3971,7 +3971,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
  *                     break
  *             self.assertTrue(             # <<<<<<<<<<<<<<
  *                 found_signal, f'Failed to get signal: {expecting_signal!r}')
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 107, __pyx_L1_error) }
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
@@ -3981,7 +3981,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
  *                     break
  *             self.assertTrue(
  *                 found_signal, f'Failed to get signal: {expecting_signal!r}')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def t(signal, q, expecting_sig=signal.SIGCHLD):
  */
   __pyx_t_7 = __Pyx_PyBool_FromLong(__pyx_cur_scope->__pyx_v_found_signal); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -4045,7 +4045,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
 
   /* "smelly_tests/prewarm.py":95
  *                 found_signal = True
- * 
+ *
  *         def assert_signal():             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             found_signal = False
@@ -4075,7 +4075,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
 
 /* "smelly_tests/prewarm.py":110
  *                 found_signal, f'Failed to get signal: {expecting_signal!r}')
- * 
+ *
  *         def t(signal, q, expecting_sig=signal.SIGCHLD):             # <<<<<<<<<<<<<<
  *             nonlocal expecting_code, found_signal, expecting_signal
  *             expecting_code = q
@@ -4258,7 +4258,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
  *             if signal is not None:
  *                 p.send_signal(signal)             # <<<<<<<<<<<<<<
  *             assert_signal()
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_p)) { __Pyx_RaiseClosureNameError("p"); __PYX_ERR(0, 115, __pyx_L1_error) }
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_p, __pyx_n_s_send_signal); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
@@ -4293,7 +4293,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
  *             if signal is not None:
  *                 p.send_signal(signal)
  *             assert_signal()             # <<<<<<<<<<<<<<
- * 
+ *
  *         poll = select.poll()
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_assert_signal)) { __Pyx_RaiseClosureNameError("assert_signal"); __PYX_ERR(0, 116, __pyx_L1_error) }
@@ -4303,7 +4303,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
 
   /* "smelly_tests/prewarm.py":110
  *                 found_signal, f'Failed to get signal: {expecting_signal!r}')
- * 
+ *
  *         def t(signal, q, expecting_sig=signal.SIGCHLD):             # <<<<<<<<<<<<<<
  *             nonlocal expecting_code, found_signal, expecting_signal
  *             expecting_code = q
@@ -4326,7 +4326,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
 
 /* "smelly_tests/prewarm.py":120
  *         poll = select.poll()
- * 
+ *
  *         def run():             # <<<<<<<<<<<<<<
  *             return subprocess.Popen(
  *                 [smelly_exe(),
@@ -4360,7 +4360,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
   __Pyx_RefNannySetupContext("run", 0);
 
   /* "smelly_tests/prewarm.py":121
- * 
+ *
  *         def run():
  *             return subprocess.Popen(             # <<<<<<<<<<<<<<
  *                 [smelly_exe(),
@@ -4410,7 +4410,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
   __pyx_t_1 = 0;
 
   /* "smelly_tests/prewarm.py":121
- * 
+ *
  *         def run():
  *             return subprocess.Popen(             # <<<<<<<<<<<<<<
  *                 [smelly_exe(),
@@ -4426,7 +4426,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
  *                 [smelly_exe(),
  *                  '+runpy', 'import sys; sys.stdin.read()'],
  *                 stderr=subprocess.DEVNULL, stdin=subprocess.PIPE)             # <<<<<<<<<<<<<<
- * 
+ *
  *         p = run()
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
@@ -4447,7 +4447,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/prewarm.py":121
- * 
+ *
  *         def run():
  *             return subprocess.Popen(             # <<<<<<<<<<<<<<
  *                 [smelly_exe(),
@@ -4464,7 +4464,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handlin
 
   /* "smelly_tests/prewarm.py":120
  *         poll = select.poll()
- * 
+ *
  *         def run():             # <<<<<<<<<<<<<<
  *             return subprocess.Popen(
  *                 [smelly_exe(),
@@ -4524,10 +4524,10 @@ static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self
 
 /* "smelly_tests/prewarm.py":74
  *         self.ae(int(p.from_worker.readline()), data['pid'])
- * 
+ *
  *     def test_signal_handling(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -4581,10 +4581,10 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/prewarm.py":75
- * 
+ *
  *     def test_signal_handling(self):
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death             # <<<<<<<<<<<<<<
- * 
+ *
  *         expecting_code = 0
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
@@ -4612,7 +4612,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
   /* "smelly_tests/prewarm.py":77
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
- * 
+ *
  *         expecting_code = 0             # <<<<<<<<<<<<<<
  *         expecting_signal = signal.SIGCHLD
  *         expecting_value = 0
@@ -4622,7 +4622,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
   __pyx_cur_scope->__pyx_v_expecting_code = __pyx_int_0;
 
   /* "smelly_tests/prewarm.py":78
- * 
+ *
  *         expecting_code = 0
  *         expecting_signal = signal.SIGCHLD             # <<<<<<<<<<<<<<
  *         expecting_value = 0
@@ -4642,7 +4642,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
  *         expecting_signal = signal.SIGCHLD
  *         expecting_value = 0             # <<<<<<<<<<<<<<
  *         found_signal = False
- * 
+ *
  */
   __pyx_cur_scope->__pyx_v_expecting_value = 0;
 
@@ -4650,14 +4650,14 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
  *         expecting_signal = signal.SIGCHLD
  *         expecting_value = 0
  *         found_signal = False             # <<<<<<<<<<<<<<
- * 
+ *
  *         def handle_signals(signals):
  */
   __pyx_cur_scope->__pyx_v_found_signal = 0;
 
   /* "smelly_tests/prewarm.py":82
  *         found_signal = False
- * 
+ *
  *         def handle_signals(signals):             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             for siginfo in signals:
@@ -4670,7 +4670,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
   /* "smelly_tests/prewarm.py":95
  *                 found_signal = True
- * 
+ *
  *         def assert_signal():             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             found_signal = False
@@ -4683,7 +4683,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
   /* "smelly_tests/prewarm.py":110
  *                 found_signal, f'Failed to get signal: {expecting_signal!r}')
- * 
+ *
  *         def t(signal, q, expecting_sig=signal.SIGCHLD):             # <<<<<<<<<<<<<<
  *             nonlocal expecting_code, found_signal, expecting_signal
  *             expecting_code = q
@@ -4705,9 +4705,9 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
   /* "smelly_tests/prewarm.py":118
  *             assert_signal()
- * 
+ *
  *         poll = select.poll()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def run():
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_select); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L1_error)
@@ -4736,7 +4736,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
   /* "smelly_tests/prewarm.py":120
  *         poll = select.poll()
- * 
+ *
  *         def run():             # <<<<<<<<<<<<<<
  *             return subprocess.Popen(
  *                 [smelly_exe(),
@@ -4748,7 +4748,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
   /* "smelly_tests/prewarm.py":126
  *                 stderr=subprocess.DEVNULL, stdin=subprocess.PIPE)
- * 
+ *
  *         p = run()             # <<<<<<<<<<<<<<
  *         orig_mask = signal.pthread_sigmask(signal.SIG_BLOCK, ())
  *         signal_read_fd = install_signal_handlers(
@@ -4760,7 +4760,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
   __pyx_t_1 = 0;
 
   /* "smelly_tests/prewarm.py":127
- * 
+ *
  *         p = run()
  *         orig_mask = signal.pthread_sigmask(signal.SIG_BLOCK, ())             # <<<<<<<<<<<<<<
  *         signal_read_fd = install_signal_handlers(
@@ -5224,7 +5224,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
  *             expecting_value = 17 if has_sigqueue else 0
  *             sigqueue(os.getpid(), signal.SIGUSR1.value, expecting_value)             # <<<<<<<<<<<<<<
  *             assert_signal()
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sigqueue); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -5318,7 +5318,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
  *             expecting_value = 17 if has_sigqueue else 0
  *             sigqueue(os.getpid(), signal.SIGUSR1.value, expecting_value)
  *             assert_signal()             # <<<<<<<<<<<<<<
- * 
+ *
  *             expecting_code = None
  */
     __pyx_t_1 = __pyx_pf_12smelly_tests_7prewarm_7Prewarm_20test_signal_handling_2assert_signal(__pyx_cur_scope->__pyx_v_assert_signal); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L4_error)
@@ -5327,7 +5327,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
     /* "smelly_tests/prewarm.py":144
  *             assert_signal()
- * 
+ *
  *             expecting_code = None             # <<<<<<<<<<<<<<
  *             expecting_value = 0
  *             p = run()
@@ -5338,7 +5338,7 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
     __Pyx_GIVEREF(Py_None);
 
     /* "smelly_tests/prewarm.py":145
- * 
+ *
  *             expecting_code = None
  *             expecting_value = 0             # <<<<<<<<<<<<<<
  *             p = run()
@@ -5731,11 +5731,11 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_10 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_10 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_10 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_10);
         __Pyx_INCREF(__pyx_t_2);
@@ -6076,10 +6076,10 @@ static PyObject *__pyx_pf_12smelly_tests_7prewarm_7Prewarm_2test_signal_handling
 
   /* "smelly_tests/prewarm.py":74
  *         self.ae(int(p.from_worker.readline()), data['pid'])
- * 
+ *
  *     def test_signal_handling(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
- * 
+ *
  */
 
   /* function exit code */
@@ -6612,7 +6612,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/prewarm.py":82
  *         found_signal = False
- * 
+ *
  *         def handle_signals(signals):             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             for siginfo in signals:
@@ -6624,7 +6624,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/prewarm.py":95
  *                 found_signal = True
- * 
+ *
  *         def assert_signal():             # <<<<<<<<<<<<<<
  *             nonlocal found_signal
  *             found_signal = False
@@ -6636,7 +6636,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/prewarm.py":110
  *                 found_signal, f'Failed to get signal: {expecting_signal!r}')
- * 
+ *
  *         def t(signal, q, expecting_sig=signal.SIGCHLD):             # <<<<<<<<<<<<<<
  *             nonlocal expecting_code, found_signal, expecting_signal
  *             expecting_code = q
@@ -6648,7 +6648,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/prewarm.py":120
  *         poll = select.poll()
- * 
+ *
  *         def run():             # <<<<<<<<<<<<<<
  *             return subprocess.Popen(
  *                 [smelly_exe(),
@@ -6657,10 +6657,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/prewarm.py":22
  *     maxDiff = None
- * 
+ *
  *     def test_prewarming(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import fork_prewarm_process
- * 
+ *
  */
   __pyx_tuple__10 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_fork_prewarm_process, __pyx_n_s_cwd, __pyx_n_s_env, __pyx_n_s_cols, __pyx_n_s_stdin_data, __pyx_n_s_pty, __pyx_n_s_ttyname, __pyx_n_s_opts, __pyx_n_s_p, __pyx_n_s_child, __pyx_n_s_data); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
@@ -6669,10 +6669,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/prewarm.py":74
  *         self.ae(int(p.from_worker.readline()), data['pid'])
- * 
+ *
  *     def test_signal_handling(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
- * 
+ *
  */
   __pyx_tuple__12 = PyTuple_Pack(22, __pyx_n_s_self, __pyx_n_s_restore_python_signal_handlers, __pyx_n_s_wait_for_child_death, __pyx_n_s_expecting_code, __pyx_n_s_expecting_signal, __pyx_n_s_expecting_value, __pyx_n_s_found_signal, __pyx_n_s_handle_signals, __pyx_n_s_handle_signals, __pyx_n_s_assert_signal, __pyx_n_s_assert_signal, __pyx_n_s_t, __pyx_n_s_t, __pyx_n_s_poll, __pyx_n_s_run, __pyx_n_s_run, __pyx_n_s_p, __pyx_n_s_orig_mask, __pyx_n_s_signal_read_fd, __pyx_n_s_s, __pyx_n_s_fd, __pyx_n_s_event); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
@@ -6989,8 +6989,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/prewarm.py":5
- * 
- * 
+ *
+ *
  * import json             # <<<<<<<<<<<<<<
  * import os
  * import select
@@ -7001,7 +7001,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/prewarm.py":6
- * 
+ *
  * import json
  * import os             # <<<<<<<<<<<<<<
  * import select
@@ -7053,7 +7053,7 @@ if (!__Pyx_RefNanny) {
  * import subprocess
  * import tempfile             # <<<<<<<<<<<<<<
  * import time
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7064,7 +7064,7 @@ if (!__Pyx_RefNanny) {
  * import subprocess
  * import tempfile
  * import time             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.constants import smelly_exe
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_time, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -7074,10 +7074,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/prewarm.py":13
  * import time
- * 
+ *
  * from smelly.constants import smelly_exe             # <<<<<<<<<<<<<<
  * from smelly.fast_data_types import CLD_EXITED, CLD_KILLED, CLD_STOPPED, get_options, has_sigqueue, install_signal_handlers, read_signals, sigqueue
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7094,10 +7094,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/prewarm.py":14
- * 
+ *
  * from smelly.constants import smelly_exe
  * from smelly.fast_data_types import CLD_EXITED, CLD_KILLED, CLD_STOPPED, get_options, has_sigqueue, install_signal_handlers, read_signals, sigqueue             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_2 = PyList_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -7165,10 +7165,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/prewarm.py":16
  * from smelly.fast_data_types import CLD_EXITED, CLD_KILLED, CLD_STOPPED, get_options, has_sigqueue, install_signal_handlers, read_signals, sigqueue
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7185,11 +7185,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/prewarm.py":19
- * 
- * 
+ *
+ *
  * class Prewarm(BaseTest):             # <<<<<<<<<<<<<<
  *     maxDiff = None
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_BaseTest); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7204,20 +7204,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly_tests/prewarm.py":20
- * 
+ *
  * class Prewarm(BaseTest):
  *     maxDiff = None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_prewarming(self):
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_maxDiff, Py_None) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
 
   /* "smelly_tests/prewarm.py":22
  *     maxDiff = None
- * 
+ *
  *     def test_prewarming(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import fork_prewarm_process
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_7prewarm_7Prewarm_1test_prewarming, 0, __pyx_n_s_Prewarm_test_prewarming, NULL, __pyx_n_s_smelly_tests_prewarm, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7226,10 +7226,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/prewarm.py":74
  *         self.ae(int(p.from_worker.readline()), data['pid'])
- * 
+ *
  *     def test_signal_handling(self):             # <<<<<<<<<<<<<<
  *         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
- * 
+ *
  */
   __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_7prewarm_7Prewarm_3test_signal_handling, 0, __pyx_n_s_Prewarm_test_signal_handling, NULL, __pyx_n_s_smelly_tests_prewarm, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7237,11 +7237,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/prewarm.py":19
- * 
- * 
+ *
+ *
  * class Prewarm(BaseTest):             # <<<<<<<<<<<<<<
  *     maxDiff = None
- * 
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_Prewarm, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7254,7 +7254,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/prewarm.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

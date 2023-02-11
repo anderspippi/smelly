@@ -981,8 +981,8 @@ struct __pyx_defaults {
 };
 
 /* "__main__.py":32
- * 
- * 
+ *
+ *
  * def flush(func):             # <<<<<<<<<<<<<<
  *     def ff(*args, **kwargs):
  *         sys.stdout.flush()
@@ -994,8 +994,8 @@ struct __pyx_obj_8__main_____pyx_scope_struct__flush {
 
 
 /* "__main__.py":59
- * 
- * 
+ *
+ *
  * def strip_files(files, argv_max=(256 * 1024)):             # <<<<<<<<<<<<<<
  *     """
  *     Strip a list of files
@@ -1023,8 +1023,8 @@ struct __pyx_obj_8__main_____pyx_scope_struct_2_genexpr {
 
 
 /* "__main__.py":83
- * 
- * 
+ *
+ *
  * def files_in(folder):             # <<<<<<<<<<<<<<
  *     for record in os.walk(folder):
  *         for f in record[-1]:
@@ -1044,8 +1044,8 @@ struct __pyx_obj_8__main_____pyx_scope_struct_3_files_in {
 
 
 /* "__main__.py":89
- * 
- * 
+ *
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):             # <<<<<<<<<<<<<<
  *     items = set(items)
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -1071,7 +1071,7 @@ struct __pyx_obj_8__main_____pyx_scope_struct_5_genexpr {
 
 
 /* "__main__.py":218
- * 
+ *
  *     @flush
  *     def get_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         install_name = subprocess.check_output(['otool', '-D', path_to_lib]).decode('utf-8').splitlines()[-1].strip()
@@ -1093,7 +1093,7 @@ struct __pyx_obj_8__main_____pyx_scope_struct_6_get_dependencies {
 
 
 /* "__main__.py":229
- * 
+ *
  *     @flush
  *     def get_local_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         for x, is_id in self.get_dependencies(path_to_lib):
@@ -2901,8 +2901,8 @@ static PyObject *__pyx_codeobj__91;
 /* Late includes */
 
 /* "__main__.py":89
- * 
- * 
+ *
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):             # <<<<<<<<<<<<<<
  *     items = set(items)
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -2968,8 +2968,8 @@ static PyObject *__pyx_lambda_funcdef_8__main___lambda1(CYTHON_UNUSED PyObject *
 }
 
 /* "__main__.py":32
- * 
- * 
+ *
+ *
  * def flush(func):             # <<<<<<<<<<<<<<
  *     def ff(*args, **kwargs):
  *         sys.stdout.flush()
@@ -2990,7 +2990,7 @@ static PyObject *__pyx_pw_8__main___1flush(PyObject *__pyx_self, PyObject *__pyx
 }
 
 /* "__main__.py":33
- * 
+ *
  * def flush(func):
  *     def ff(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         sys.stdout.flush()
@@ -3153,7 +3153,7 @@ static PyObject *__pyx_pf_8__main___5flush_ff(PyObject *__pyx_self, PyObject *__
  *         sys.stdout.flush()
  *         sys.stderr.flush()             # <<<<<<<<<<<<<<
  *         return ret
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_sys); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3184,7 +3184,7 @@ static PyObject *__pyx_pf_8__main___5flush_ff(PyObject *__pyx_self, PyObject *__
  *         sys.stdout.flush()
  *         sys.stderr.flush()
  *         return ret             # <<<<<<<<<<<<<<
- * 
+ *
  *     return ff
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3193,7 +3193,7 @@ static PyObject *__pyx_pf_8__main___5flush_ff(PyObject *__pyx_self, PyObject *__
   goto __pyx_L0;
 
   /* "__main__.py":33
- * 
+ *
  * def flush(func):
  *     def ff(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         sys.stdout.flush()
@@ -3215,8 +3215,8 @@ static PyObject *__pyx_pf_8__main___5flush_ff(PyObject *__pyx_self, PyObject *__
 }
 
 /* "__main__.py":32
- * 
- * 
+ *
+ *
  * def flush(func):             # <<<<<<<<<<<<<<
  *     def ff(*args, **kwargs):
  *         sys.stdout.flush()
@@ -3245,7 +3245,7 @@ static PyObject *__pyx_pf_8__main___flush(CYTHON_UNUSED PyObject *__pyx_self, Py
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_func);
 
   /* "__main__.py":33
- * 
+ *
  * def flush(func):
  *     def ff(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         sys.stdout.flush()
@@ -3258,10 +3258,10 @@ static PyObject *__pyx_pf_8__main___flush(CYTHON_UNUSED PyObject *__pyx_self, Py
 
   /* "__main__.py":41
  *         return ret
- * 
+ *
  *     return ff             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ff);
@@ -3269,8 +3269,8 @@ static PyObject *__pyx_pf_8__main___flush(CYTHON_UNUSED PyObject *__pyx_self, Py
   goto __pyx_L0;
 
   /* "__main__.py":32
- * 
- * 
+ *
+ *
  * def flush(func):             # <<<<<<<<<<<<<<
  *     def ff(*args, **kwargs):
  *         sys.stdout.flush()
@@ -3290,8 +3290,8 @@ static PyObject *__pyx_pf_8__main___flush(CYTHON_UNUSED PyObject *__pyx_self, Py
 }
 
 /* "__main__.py":44
- * 
- * 
+ *
+ *
  * def flipwritable(fn, mode=None):             # <<<<<<<<<<<<<<
  *     """
  *     Flip the writability of a file and return the old mode. Returns None
@@ -3509,7 +3509,7 @@ static PyObject *__pyx_pf_8__main___2flipwritable(CYTHON_UNUSED PyObject *__pyx_
  *     old_mode = os.stat(fn).st_mode
  *     os.chmod(fn, stat.S_IWRITE | old_mode)             # <<<<<<<<<<<<<<
  *     return old_mode
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3577,8 +3577,8 @@ static PyObject *__pyx_pf_8__main___2flipwritable(CYTHON_UNUSED PyObject *__pyx_
  *     old_mode = os.stat(fn).st_mode
  *     os.chmod(fn, stat.S_IWRITE | old_mode)
  *     return old_mode             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_old_mode);
@@ -3586,8 +3586,8 @@ static PyObject *__pyx_pf_8__main___2flipwritable(CYTHON_UNUSED PyObject *__pyx_
   goto __pyx_L0;
 
   /* "__main__.py":44
- * 
- * 
+ *
+ *
  * def flipwritable(fn, mode=None):             # <<<<<<<<<<<<<<
  *     """
  *     Flip the writability of a file and return the old mode. Returns None
@@ -3610,8 +3610,8 @@ static PyObject *__pyx_pf_8__main___2flipwritable(CYTHON_UNUSED PyObject *__pyx_
 }
 
 /* "__main__.py":59
- * 
- * 
+ *
+ *
  * def strip_files(files, argv_max=(256 * 1024)):             # <<<<<<<<<<<<<<
  *     """
  *     Strip a list of files
@@ -3815,8 +3815,8 @@ static PyObject *__pyx_gb_8__main___11strip_files_2generator3(__pyx_CoroutineObj
 }
 
 /* "__main__.py":59
- * 
- * 
+ *
+ *
  * def strip_files(files, argv_max=(256 * 1024)):             # <<<<<<<<<<<<<<
  *     """
  *     Strip a list of files
@@ -4085,11 +4085,11 @@ static PyObject *__pyx_pf_8__main___4strip_files(CYTHON_UNUSED PyObject *__pyx_s
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_2);
         __Pyx_INCREF(__pyx_t_6);
@@ -4274,7 +4274,7 @@ static PyObject *__pyx_pf_8__main___4strip_files(CYTHON_UNUSED PyObject *__pyx_s
  *         os.spawnv(os.P_WAIT, cmd[0], cmd)
  *         for args in flips:             # <<<<<<<<<<<<<<
  *             flipwritable(*args)
- * 
+ *
  */
     __pyx_t_6 = __pyx_v_flips; __Pyx_INCREF(__pyx_t_6); __pyx_t_3 = 0;
     for (;;) {
@@ -4292,8 +4292,8 @@ static PyObject *__pyx_pf_8__main___4strip_files(CYTHON_UNUSED PyObject *__pyx_s
  *         os.spawnv(os.P_WAIT, cmd[0], cmd)
  *         for args in flips:
  *             flipwritable(*args)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_flipwritable); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -4310,15 +4310,15 @@ static PyObject *__pyx_pf_8__main___4strip_files(CYTHON_UNUSED PyObject *__pyx_s
  *         os.spawnv(os.P_WAIT, cmd[0], cmd)
  *         for args in flips:             # <<<<<<<<<<<<<<
  *             flipwritable(*args)
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
 
   /* "__main__.py":59
- * 
- * 
+ *
+ *
  * def strip_files(files, argv_max=(256 * 1024)):             # <<<<<<<<<<<<<<
  *     """
  *     Strip a list of files
@@ -4353,8 +4353,8 @@ static PyObject *__pyx_pf_8__main___4strip_files(CYTHON_UNUSED PyObject *__pyx_s
 static PyObject *__pyx_gb_8__main___8generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "__main__.py":83
- * 
- * 
+ *
+ *
  * def files_in(folder):             # <<<<<<<<<<<<<<
  *     for record in os.walk(folder):
  *         for f in record[-1]:
@@ -4442,7 +4442,7 @@ static PyObject *__pyx_gb_8__main___8generator(__pyx_CoroutineObject *__pyx_gene
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 83, __pyx_L1_error)
 
   /* "__main__.py":84
- * 
+ *
  * def files_in(folder):
  *     for record in os.walk(folder):             # <<<<<<<<<<<<<<
  *         for f in record[-1]:
@@ -4518,7 +4518,7 @@ static PyObject *__pyx_gb_8__main___8generator(__pyx_CoroutineObject *__pyx_gene
  *     for record in os.walk(folder):
  *         for f in record[-1]:             # <<<<<<<<<<<<<<
  *             yield join(record[0], f)
- * 
+ *
  */
     __pyx_t_1 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_record, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4571,8 +4571,8 @@ static PyObject *__pyx_gb_8__main___8generator(__pyx_CoroutineObject *__pyx_gene
  *     for record in os.walk(folder):
  *         for f in record[-1]:
  *             yield join(record[0], f)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_join); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 86, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
@@ -4659,13 +4659,13 @@ static PyObject *__pyx_gb_8__main___8generator(__pyx_CoroutineObject *__pyx_gene
  *     for record in os.walk(folder):
  *         for f in record[-1]:             # <<<<<<<<<<<<<<
  *             yield join(record[0], f)
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
     /* "__main__.py":84
- * 
+ *
  * def files_in(folder):
  *     for record in os.walk(folder):             # <<<<<<<<<<<<<<
  *         for f in record[-1]:
@@ -4676,8 +4676,8 @@ static PyObject *__pyx_gb_8__main___8generator(__pyx_CoroutineObject *__pyx_gene
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "__main__.py":83
- * 
- * 
+ *
+ *
  * def files_in(folder):             # <<<<<<<<<<<<<<
  *     for record in os.walk(folder):
  *         for f in record[-1]:
@@ -4707,8 +4707,8 @@ static PyObject *__pyx_gb_8__main___8generator(__pyx_CoroutineObject *__pyx_gene
 }
 
 /* "__main__.py":89
- * 
- * 
+ *
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):             # <<<<<<<<<<<<<<
  *     items = set(items)
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -4991,8 +4991,8 @@ static PyObject *__pyx_gb_8__main___11expand_dirs_2generator4(__pyx_CoroutineObj
 }
 
 /* "__main__.py":89
- * 
- * 
+ *
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):             # <<<<<<<<<<<<<<
  *     items = set(items)
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -5039,7 +5039,7 @@ static PyObject *__pyx_pf_8__main___9expand_dirs(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_items);
 
   /* "__main__.py":90
- * 
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):
  *     items = set(items)             # <<<<<<<<<<<<<<
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -5119,7 +5119,7 @@ static PyObject *__pyx_pf_8__main___9expand_dirs(CYTHON_UNUSED PyObject *__pyx_s
  *     for x in dirs:
  *         items.update({y for y in files_in(x) if not exclude(y)})             # <<<<<<<<<<<<<<
  *     return items
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_items, __pyx_n_s_update); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -5240,8 +5240,8 @@ static PyObject *__pyx_pf_8__main___9expand_dirs(CYTHON_UNUSED PyObject *__pyx_s
  *     for x in dirs:
  *         items.update({y for y in files_in(x) if not exclude(y)})
  *     return items             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_items);
@@ -5249,8 +5249,8 @@ static PyObject *__pyx_pf_8__main___9expand_dirs(CYTHON_UNUSED PyObject *__pyx_s
   goto __pyx_L0;
 
   /* "__main__.py":89
- * 
- * 
+ *
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):             # <<<<<<<<<<<<<<
  *     items = set(items)
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -5280,8 +5280,8 @@ static PyObject *__pyx_pf_8__main___9expand_dirs(CYTHON_UNUSED PyObject *__pyx_s
 }
 
 /* "__main__.py":98
- * 
- * 
+ *
+ *
  * def do_sign(app_dir):             # <<<<<<<<<<<<<<
  *     with current_dir(join(app_dir, 'Contents')):
  *         # Sign all .so files
@@ -5334,7 +5334,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
   __Pyx_RefNannySetupContext("do_sign", 0);
 
   /* "__main__.py":99
- * 
+ *
  * def do_sign(app_dir):
  *     with current_dir(join(app_dir, 'Contents')):             # <<<<<<<<<<<<<<
  *         # Sign all .so files
@@ -5802,7 +5802,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
                     __Pyx_GIVEREF(__pyx_t_3);
                     __Pyx_XGIVEREF(__pyx_t_1);
                     __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_3, __pyx_t_1);
-                    __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
+                    __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0;
                     __PYX_ERR(0, 104, __pyx_L26_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -5849,7 +5849,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
  *         # Sign kitten
  *         with current_dir('MacOS'):             # <<<<<<<<<<<<<<
  *             codesign('kitten')
- * 
+ *
  */
           /*with:*/ {
             __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_current_dir); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L7_error)
@@ -5904,7 +5904,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
  *         # Sign kitten
  *         with current_dir('MacOS'):
  *             codesign('kitten')             # <<<<<<<<<<<<<<
- * 
+ *
  *     # Now sign the main app
  */
                   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_codesign); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L38_error)
@@ -5931,7 +5931,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
  *         # Sign kitten
  *         with current_dir('MacOS'):             # <<<<<<<<<<<<<<
  *             codesign('kitten')
- * 
+ *
  */
                 }
                 __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
@@ -5967,7 +5967,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
                     __Pyx_GIVEREF(__pyx_t_3);
                     __Pyx_XGIVEREF(__pyx_t_2);
                     __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-                    __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+                    __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
                     __PYX_ERR(0, 110, __pyx_L40_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -6010,7 +6010,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
           }
 
           /* "__main__.py":99
- * 
+ *
  * def do_sign(app_dir):
  *     with current_dir(join(app_dir, 'Contents')):             # <<<<<<<<<<<<<<
  *         # Sign all .so files
@@ -6050,7 +6050,7 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_3, __pyx_t_1);
-            __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
+            __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 99, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -6093,11 +6093,11 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
   }
 
   /* "__main__.py":114
- * 
+ *
  *     # Now sign the main app
  *     codesign(app_dir)             # <<<<<<<<<<<<<<
  *     verify_signature(app_dir)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_codesign); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -6122,8 +6122,8 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
  *     # Now sign the main app
  *     codesign(app_dir)
  *     verify_signature(app_dir)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_verify_signature); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -6145,8 +6145,8 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":98
- * 
- * 
+ *
+ *
  * def do_sign(app_dir):             # <<<<<<<<<<<<<<
  *     with current_dir(join(app_dir, 'Contents')):
  *         # Sign all .so files
@@ -6175,8 +6175,8 @@ static PyObject *__pyx_pf_8__main___11do_sign(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 /* "__main__.py":118
- * 
- * 
+ *
+ *
  * def sign_app(app_dir, notarize):             # <<<<<<<<<<<<<<
  *     # Copied from iTerm2: https://github.com/gnachman/iTerm2/blob/master/iTerm2.entitlements
  *     create_entitlements_file(
@@ -6454,7 +6454,7 @@ static PyObject *__pyx_pf_8__main___13sign_app(CYTHON_UNUSED PyObject *__pyx_sel
  *         do_sign(app_dir)
  *         if notarize:             # <<<<<<<<<<<<<<
  *             notarize_app(app_dir)
- * 
+ *
  */
           __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_v_notarize); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 134, __pyx_L7_error)
           if (__pyx_t_9) {
@@ -6463,8 +6463,8 @@ static PyObject *__pyx_pf_8__main___13sign_app(CYTHON_UNUSED PyObject *__pyx_sel
  *         do_sign(app_dir)
  *         if notarize:
  *             notarize_app(app_dir)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
             __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_notarize_app); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_2);
@@ -6490,7 +6490,7 @@ static PyObject *__pyx_pf_8__main___13sign_app(CYTHON_UNUSED PyObject *__pyx_sel
  *         do_sign(app_dir)
  *         if notarize:             # <<<<<<<<<<<<<<
  *             notarize_app(app_dir)
- * 
+ *
  */
           }
 
@@ -6533,7 +6533,7 @@ static PyObject *__pyx_pf_8__main___13sign_app(CYTHON_UNUSED PyObject *__pyx_sel
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 132, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -6576,8 +6576,8 @@ static PyObject *__pyx_pf_8__main___13sign_app(CYTHON_UNUSED PyObject *__pyx_sel
   }
 
   /* "__main__.py":118
- * 
- * 
+ *
+ *
  * def sign_app(app_dir, notarize):             # <<<<<<<<<<<<<<
  *     # Copied from iTerm2: https://github.com/gnachman/iTerm2/blob/master/iTerm2.entitlements
  *     create_entitlements_file(
@@ -6601,7 +6601,7 @@ static PyObject *__pyx_pf_8__main___13sign_app(CYTHON_UNUSED PyObject *__pyx_sel
 
 /* "__main__.py":141
  *     FID = '@executable_path/../Frameworks'
- * 
+ *
  *     def __init__(self, build_dir, dont_strip=False, sign_installers=False, notarize=False, skip_tests=False):             # <<<<<<<<<<<<<<
  *         self.build_dir = build_dir
  *         self.skip_tests = skip_tests
@@ -6742,7 +6742,7 @@ static PyObject *__pyx_pf_8__main___6Freeze___init__(CYTHON_UNUSED PyObject *__p
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "__main__.py":142
- * 
+ *
  *     def __init__(self, build_dir, dont_strip=False, sign_installers=False, notarize=False, skip_tests=False):
  *         self.build_dir = build_dir             # <<<<<<<<<<<<<<
  *         self.skip_tests = skip_tests
@@ -7087,7 +7087,7 @@ static PyObject *__pyx_pf_8__main___6Freeze___init__(CYTHON_UNUSED PyObject *__p
  *         self.python_stdlib = join(self.resources_dir, 'Python', 'lib', f'python{self.py_ver}')
  *         self.site_packages = self.python_stdlib  # hack to avoid needing to add site-packages to path             # <<<<<<<<<<<<<<
  *         self.obj_dir = mkdtemp('launchers-')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_python_stdlib); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 154, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7098,7 +7098,7 @@ static PyObject *__pyx_pf_8__main___6Freeze___init__(CYTHON_UNUSED PyObject *__p
  *         self.python_stdlib = join(self.resources_dir, 'Python', 'lib', f'python{self.py_ver}')
  *         self.site_packages = self.python_stdlib  # hack to avoid needing to add site-packages to path
  *         self.obj_dir = mkdtemp('launchers-')             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.run()
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mkdtemp); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L1_error)
@@ -7123,9 +7123,9 @@ static PyObject *__pyx_pf_8__main___6Freeze___init__(CYTHON_UNUSED PyObject *__p
 
   /* "__main__.py":157
  *         self.obj_dir = mkdtemp('launchers-')
- * 
+ *
  *         self.run()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def run_shell(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
@@ -7149,7 +7149,7 @@ static PyObject *__pyx_pf_8__main___6Freeze___init__(CYTHON_UNUSED PyObject *__p
 
   /* "__main__.py":141
  *     FID = '@executable_path/../Frameworks'
- * 
+ *
  *     def __init__(self, build_dir, dont_strip=False, sign_installers=False, notarize=False, skip_tests=False):             # <<<<<<<<<<<<<<
  *         self.build_dir = build_dir
  *         self.skip_tests = skip_tests
@@ -7175,7 +7175,7 @@ static PyObject *__pyx_pf_8__main___6Freeze___init__(CYTHON_UNUSED PyObject *__p
 
 /* "__main__.py":159
  *         self.run()
- * 
+ *
  *     def run_shell(self):             # <<<<<<<<<<<<<<
  *         with current_dir(self.contents_dir):
  *             run_shell()
@@ -7215,11 +7215,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_2run_shell(CYTHON_UNUSED PyObject *_
   __Pyx_RefNannySetupContext("run_shell", 0);
 
   /* "__main__.py":160
- * 
+ *
  *     def run_shell(self):
  *         with current_dir(self.contents_dir):             # <<<<<<<<<<<<<<
  *             run_shell()
- * 
+ *
  */
   /*with:*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_current_dir); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 160, __pyx_L1_error)
@@ -7277,7 +7277,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_2run_shell(CYTHON_UNUSED PyObject *_
  *     def run_shell(self):
  *         with current_dir(self.contents_dir):
  *             run_shell()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def run(self):
  */
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_run_shell); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 161, __pyx_L7_error)
@@ -7300,11 +7300,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_2run_shell(CYTHON_UNUSED PyObject *_
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
           /* "__main__.py":160
- * 
+ *
  *     def run_shell(self):
  *         with current_dir(self.contents_dir):             # <<<<<<<<<<<<<<
  *             run_shell()
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -7338,7 +7338,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_2run_shell(CYTHON_UNUSED PyObject *_
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 160, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7382,7 +7382,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_2run_shell(CYTHON_UNUSED PyObject *_
 
   /* "__main__.py":159
  *         self.run()
- * 
+ *
  *     def run_shell(self):             # <<<<<<<<<<<<<<
  *         with current_dir(self.contents_dir):
  *             run_shell()
@@ -7406,7 +7406,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_2run_shell(CYTHON_UNUSED PyObject *_
 
 /* "__main__.py":163
  *             run_shell()
- * 
+ *
  *     def run(self):             # <<<<<<<<<<<<<<
  *         ret = 0
  *         self.add_python_framework()
@@ -7447,7 +7447,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_4run(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_RefNannySetupContext("run", 0);
 
   /* "__main__.py":164
- * 
+ *
  *     def run(self):
  *         ret = 0             # <<<<<<<<<<<<<<
  *         self.add_python_framework()
@@ -7706,7 +7706,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_4run(CYTHON_UNUSED PyObject *__pyx_s
  *         if not self.skip_tests:
  *             self.run_tests()             # <<<<<<<<<<<<<<
  *         # self.run_shell()
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_tests); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 175, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -7738,9 +7738,9 @@ static PyObject *__pyx_pf_8__main___6Freeze_4run(CYTHON_UNUSED PyObject *__pyx_s
 
   /* "__main__.py":178
  *         # self.run_shell()
- * 
+ *
  *         ret = self.makedmg(self.build_dir, f'{APPNAME}-{VERSION}')             # <<<<<<<<<<<<<<
- * 
+ *
  *         return ret
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_makedmg); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 178, __pyx_L1_error)
@@ -7832,9 +7832,9 @@ static PyObject *__pyx_pf_8__main___6Freeze_4run(CYTHON_UNUSED PyObject *__pyx_s
 
   /* "__main__.py":180
  *         ret = self.makedmg(self.build_dir, f'{APPNAME}-{VERSION}')
- * 
+ *
  *         return ret             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7844,7 +7844,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_4run(CYTHON_UNUSED PyObject *__pyx_s
 
   /* "__main__.py":163
  *             run_shell()
- * 
+ *
  *     def run(self):             # <<<<<<<<<<<<<<
  *         ret = 0
  *         self.add_python_framework()
@@ -7868,7 +7868,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_4run(CYTHON_UNUSED PyObject *__pyx_s
 }
 
 /* "__main__.py":183
- * 
+ *
  *     @flush
  *     def add_ca_certs(self):             # <<<<<<<<<<<<<<
  *         print('\nDownloading CA certs...')
@@ -7924,7 +7924,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
  *     def add_ca_certs(self):
  *         print('\nDownloading CA certs...')             # <<<<<<<<<<<<<<
  *         from urllib.request import urlopen
- * 
+ *
  */
   if (__Pyx_PrintOne(0, __pyx_kp_s_Downloading_CA_certs) < 0) __PYX_ERR(0, 184, __pyx_L1_error)
 
@@ -7932,7 +7932,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
  *     def add_ca_certs(self):
  *         print('\nDownloading CA certs...')
  *         from urllib.request import urlopen             # <<<<<<<<<<<<<<
- * 
+ *
  *         cdata = None
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
@@ -7952,7 +7952,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
 
   /* "__main__.py":187
  *         from urllib.request import urlopen
- * 
+ *
  *         cdata = None             # <<<<<<<<<<<<<<
  *         for i in range(5):
  *             try:
@@ -7961,7 +7961,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
   __pyx_v_cdata = Py_None;
 
   /* "__main__.py":188
- * 
+ *
  *         cdata = None
  *         for i in range(5):             # <<<<<<<<<<<<<<
  *             try:
@@ -8065,7 +8065,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
  *                 break
  *             except Exception as e:             # <<<<<<<<<<<<<<
  *                 print(f'Downloading CA certs failed with error: {e}, retrying...')
- * 
+ *
  */
       __pyx_t_10 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
       if (__pyx_t_10) {
@@ -8081,7 +8081,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
  *                 break
  *             except Exception as e:
  *                 print(f'Downloading CA certs failed with error: {e}, retrying...')             # <<<<<<<<<<<<<<
- * 
+ *
  *         if cdata is None:
  */
         __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 193, __pyx_L7_except_error)
@@ -8145,7 +8145,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
 
   /* "__main__.py":195
  *                 print(f'Downloading CA certs failed with error: {e}, retrying...')
- * 
+ *
  *         if cdata is None:             # <<<<<<<<<<<<<<
  *             raise SystemExit('Downloading C certs failed, giving up')
  *         dest = join(self.contents_dir, 'Resources', 'cacert.pem')
@@ -8155,7 +8155,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
   if (unlikely(__pyx_t_14)) {
 
     /* "__main__.py":196
- * 
+ *
  *         if cdata is None:
  *             raise SystemExit('Downloading C certs failed, giving up')             # <<<<<<<<<<<<<<
  *         dest = join(self.contents_dir, 'Resources', 'cacert.pem')
@@ -8169,7 +8169,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
 
     /* "__main__.py":195
  *                 print(f'Downloading CA certs failed with error: {e}, retrying...')
- * 
+ *
  *         if cdata is None:             # <<<<<<<<<<<<<<
  *             raise SystemExit('Downloading C certs failed, giving up')
  *         dest = join(self.contents_dir, 'Resources', 'cacert.pem')
@@ -8245,7 +8245,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
  *         dest = join(self.contents_dir, 'Resources', 'cacert.pem')
  *         with open(dest, 'wb') as f:             # <<<<<<<<<<<<<<
  *             f.write(cdata)
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 198, __pyx_L1_error)
@@ -8297,7 +8297,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
  *         dest = join(self.contents_dir, 'Resources', 'cacert.pem')
  *         with open(dest, 'wb') as f:
  *             f.write(cdata)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
           __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_write); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 199, __pyx_L20_error)
@@ -8324,7 +8324,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
  *         dest = join(self.contents_dir, 'Resources', 'cacert.pem')
  *         with open(dest, 'wb') as f:             # <<<<<<<<<<<<<<
  *             f.write(cdata)
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -8359,7 +8359,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
             __Pyx_GIVEREF(__pyx_t_7);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_8, __pyx_t_7, __pyx_t_1);
-            __pyx_t_8 = 0; __pyx_t_7 = 0; __pyx_t_1 = 0; 
+            __pyx_t_8 = 0; __pyx_t_7 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 198, __pyx_L22_except_error)
           }
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -8402,7 +8402,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
   }
 
   /* "__main__.py":183
- * 
+ *
  *     @flush
  *     def add_ca_certs(self):             # <<<<<<<<<<<<<<
  *         print('\nDownloading CA certs...')
@@ -8432,7 +8432,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_6add_ca_certs(CYTHON_UNUSED PyObject
 }
 
 /* "__main__.py":202
- * 
+ *
  *     @flush
  *     def strip_files(self):             # <<<<<<<<<<<<<<
  *         print('\nStripping files...')
@@ -8470,7 +8470,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_8strip_files(CYTHON_UNUSED PyObject 
  *     def strip_files(self):
  *         print('\nStripping files...')             # <<<<<<<<<<<<<<
  *         strip_files(self.to_strip)
- * 
+ *
  */
   if (__Pyx_PrintOne(0, __pyx_kp_s_Stripping_files) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
 
@@ -8478,7 +8478,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_8strip_files(CYTHON_UNUSED PyObject 
  *     def strip_files(self):
  *         print('\nStripping files...')
  *         strip_files(self.to_strip)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_strip_files); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 204, __pyx_L1_error)
@@ -8504,7 +8504,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_8strip_files(CYTHON_UNUSED PyObject 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":202
- * 
+ *
  *     @flush
  *     def strip_files(self):             # <<<<<<<<<<<<<<
  *         print('\nStripping files...')
@@ -8528,11 +8528,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_8strip_files(CYTHON_UNUSED PyObject 
 }
 
 /* "__main__.py":207
- * 
+ *
  *     @flush
  *     def run_tests(self):             # <<<<<<<<<<<<<<
  *         iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8569,7 +8569,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_10run_tests(CYTHON_UNUSED PyObject *
  *     @flush
  *     def run_tests(self):
  *         iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_iv); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
@@ -8650,11 +8650,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_10run_tests(CYTHON_UNUSED PyObject *
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":207
- * 
+ *
  *     @flush
  *     def run_tests(self):             # <<<<<<<<<<<<<<
  *         iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
 
   /* function exit code */
@@ -8677,7 +8677,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_10run_tests(CYTHON_UNUSED PyObject *
 }
 
 /* "__main__.py":211
- * 
+ *
  *     @flush
  *     def set_id(self, path_to_lib, new_id):             # <<<<<<<<<<<<<<
  *         old_mode = flipwritable(path_to_lib)
@@ -8852,7 +8852,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_12set_id(CYTHON_UNUSED PyObject *__p
  *         subprocess.check_call(['install_name_tool', '-id', new_id, path_to_lib])
  *         if old_mode is not None:             # <<<<<<<<<<<<<<
  *             flipwritable(path_to_lib, old_mode)
- * 
+ *
  */
   __pyx_t_5 = (__pyx_v_old_mode != Py_None);
   __pyx_t_6 = (__pyx_t_5 != 0);
@@ -8862,7 +8862,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_12set_id(CYTHON_UNUSED PyObject *__p
  *         subprocess.check_call(['install_name_tool', '-id', new_id, path_to_lib])
  *         if old_mode is not None:
  *             flipwritable(path_to_lib, old_mode)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_flipwritable); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
@@ -8919,12 +8919,12 @@ static PyObject *__pyx_pf_8__main___6Freeze_12set_id(CYTHON_UNUSED PyObject *__p
  *         subprocess.check_call(['install_name_tool', '-id', new_id, path_to_lib])
  *         if old_mode is not None:             # <<<<<<<<<<<<<<
  *             flipwritable(path_to_lib, old_mode)
- * 
+ *
  */
   }
 
   /* "__main__.py":211
- * 
+ *
  *     @flush
  *     def set_id(self, path_to_lib, new_id):             # <<<<<<<<<<<<<<
  *         old_mode = flipwritable(path_to_lib)
@@ -8950,7 +8950,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_12set_id(CYTHON_UNUSED PyObject *__p
 static PyObject *__pyx_gb_8__main___6Freeze_16generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "__main__.py":218
- * 
+ *
  *     @flush
  *     def get_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         install_name = subprocess.check_output(['otool', '-D', path_to_lib]).decode('utf-8').splitlines()[-1].strip()
@@ -9429,7 +9429,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_16generator1(__pyx_CoroutineObject *
  *             idx = line.find('(')
  *             path = line[:idx].strip()             # <<<<<<<<<<<<<<
  *             yield path, path == install_name
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_cur_scope->__pyx_v_line, 0, 0, NULL, &__pyx_cur_scope->__pyx_v_idx, NULL, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 225, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -9460,7 +9460,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_16generator1(__pyx_CoroutineObject *
  *             idx = line.find('(')
  *             path = line[:idx].strip()
  *             yield path, path == install_name             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
     __pyx_t_1 = PyObject_RichCompare(__pyx_cur_scope->__pyx_v_path, __pyx_cur_scope->__pyx_v_install_name, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 226, __pyx_L1_error)
@@ -9505,7 +9505,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_16generator1(__pyx_CoroutineObject *
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "__main__.py":218
- * 
+ *
  *     @flush
  *     def get_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         install_name = subprocess.check_output(['otool', '-D', path_to_lib]).decode('utf-8').splitlines()[-1].strip()
@@ -9537,7 +9537,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_16generator1(__pyx_CoroutineObject *
 static PyObject *__pyx_gb_8__main___6Freeze_19generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "__main__.py":229
- * 
+ *
  *     @flush
  *     def get_local_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         for x, is_id in self.get_dependencies(path_to_lib):
@@ -9752,11 +9752,11 @@ static PyObject *__pyx_gb_8__main___6Freeze_19generator2(__pyx_CoroutineObject *
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -9927,7 +9927,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_19generator2(__pyx_CoroutineObject *
  *                         y = f'{PREFIX}/python/'
  *                     yield x, x[len(y) :], is_id             # <<<<<<<<<<<<<<
  *                     break
- * 
+ *
  */
         __pyx_t_11 = PyObject_Length(__pyx_cur_scope->__pyx_v_y); if (unlikely(__pyx_t_11 == ((Py_ssize_t)-1))) __PYX_ERR(0, 235, __pyx_L1_error)
         __pyx_t_3 = __Pyx_PyObject_GetSlice(__pyx_cur_scope->__pyx_v_x, __pyx_t_11, 0, NULL, NULL, NULL, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 235, __pyx_L1_error)
@@ -9974,7 +9974,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_19generator2(__pyx_CoroutineObject *
  *                         y = f'{PREFIX}/python/'
  *                     yield x, x[len(y) :], is_id
  *                     break             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
         goto __pyx_L9_break;
@@ -10011,7 +10011,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_19generator2(__pyx_CoroutineObject *
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "__main__.py":229
- * 
+ *
  *     @flush
  *     def get_local_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         for x, is_id in self.get_dependencies(path_to_lib):
@@ -10040,7 +10040,7 @@ static PyObject *__pyx_gb_8__main___6Freeze_19generator2(__pyx_CoroutineObject *
 }
 
 /* "__main__.py":239
- * 
+ *
  *     @flush
  *     def change_dep(self, old_dep, new_dep, is_id, path_to_lib):             # <<<<<<<<<<<<<<
  *         cmd = ['-id', new_dep] if is_id else ['-change', old_dep, new_dep]
@@ -10165,7 +10165,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_20change_dep(CYTHON_UNUSED PyObject 
  *     def change_dep(self, old_dep, new_dep, is_id, path_to_lib):
  *         cmd = ['-id', new_dep] if is_id else ['-change', old_dep, new_dep]             # <<<<<<<<<<<<<<
  *         subprocess.check_call(['install_name_tool'] + cmd + [path_to_lib])
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_is_id); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 240, __pyx_L1_error)
   if (__pyx_t_2) {
@@ -10201,7 +10201,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_20change_dep(CYTHON_UNUSED PyObject 
  *     def change_dep(self, old_dep, new_dep, is_id, path_to_lib):
  *         cmd = ['-id', new_dep] if is_id else ['-change', old_dep, new_dep]
  *         subprocess.check_call(['install_name_tool'] + cmd + [path_to_lib])             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_subprocess); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
@@ -10245,7 +10245,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_20change_dep(CYTHON_UNUSED PyObject 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":239
- * 
+ *
  *     @flush
  *     def change_dep(self, old_dep, new_dep, is_id, path_to_lib):             # <<<<<<<<<<<<<<
  *         cmd = ['-id', new_dep] if is_id else ['-change', old_dep, new_dep]
@@ -10271,7 +10271,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_20change_dep(CYTHON_UNUSED PyObject 
 }
 
 /* "__main__.py":244
- * 
+ *
  *     @flush
  *     def fix_dependencies_in_lib(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         self.to_strip.append(path_to_lib)
@@ -10485,13 +10485,13 @@ static PyObject *__pyx_pf_8__main___6Freeze_22fix_dependencies_in_lib(CYTHON_UNU
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_8 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_8 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_8 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_7);
@@ -10748,7 +10748,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_22fix_dependencies_in_lib(CYTHON_UNU
  *             raise SystemExit(1)
  *         if old_mode is not None:             # <<<<<<<<<<<<<<
  *             flipwritable(path_to_lib, old_mode)
- * 
+ *
  */
   __pyx_t_14 = (__pyx_v_old_mode != Py_None);
   __pyx_t_15 = (__pyx_t_14 != 0);
@@ -10758,7 +10758,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_22fix_dependencies_in_lib(CYTHON_UNU
  *             raise SystemExit(1)
  *         if old_mode is not None:
  *             flipwritable(path_to_lib, old_mode)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_flipwritable); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 256, __pyx_L1_error)
@@ -10815,12 +10815,12 @@ static PyObject *__pyx_pf_8__main___6Freeze_22fix_dependencies_in_lib(CYTHON_UNU
  *             raise SystemExit(1)
  *         if old_mode is not None:             # <<<<<<<<<<<<<<
  *             flipwritable(path_to_lib, old_mode)
- * 
+ *
  */
   }
 
   /* "__main__.py":244
- * 
+ *
  *     @flush
  *     def fix_dependencies_in_lib(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         self.to_strip.append(path_to_lib)
@@ -10852,7 +10852,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_22fix_dependencies_in_lib(CYTHON_UNU
 }
 
 /* "__main__.py":259
- * 
+ *
  *     @flush
  *     def add_python_framework(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding Python framework')
@@ -11805,7 +11805,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_24add_python_framework(CYTHON_UNUSED
  *             os.symlink(basename(curr), 'Versions/Current')
  *             for y in ('Python', 'Resources'):             # <<<<<<<<<<<<<<
  *                 os.symlink(f'Versions/Current/{y}', y)
- * 
+ *
  */
           __pyx_t_1 = __pyx_tuple__14; __Pyx_INCREF(__pyx_t_1); __pyx_t_8 = 0;
           for (;;) {
@@ -11823,7 +11823,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_24add_python_framework(CYTHON_UNUSED
  *             os.symlink(basename(curr), 'Versions/Current')
  *             for y in ('Python', 'Resources'):
  *                 os.symlink(f'Versions/Current/{y}', y)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
             __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_os); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 274, __pyx_L7_error)
@@ -11890,7 +11890,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_24add_python_framework(CYTHON_UNUSED
  *             os.symlink(basename(curr), 'Versions/Current')
  *             for y in ('Python', 'Resources'):             # <<<<<<<<<<<<<<
  *                 os.symlink(f'Versions/Current/{y}', y)
- * 
+ *
  */
           }
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -11937,7 +11937,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_24add_python_framework(CYTHON_UNUSED
             __Pyx_GIVEREF(__pyx_t_4);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_4, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 271, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -11980,7 +11980,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_24add_python_framework(CYTHON_UNUSED
   }
 
   /* "__main__.py":259
- * 
+ *
  *     @flush
  *     def add_python_framework(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding Python framework')
@@ -12013,7 +12013,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_24add_python_framework(CYTHON_UNUSED
 }
 
 /* "__main__.py":277
- * 
+ *
  *     @flush
  *     def install_dylib(self, path, set_id=True):             # <<<<<<<<<<<<<<
  *         shutil.copy2(path, self.frameworks_dir)
@@ -12198,7 +12198,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_26install_dylib(CYTHON_UNUSED PyObje
  *         if set_id:
  *             self.set_id(join(self.frameworks_dir, basename(path)), f'{self.FID}/{basename(path)}')             # <<<<<<<<<<<<<<
  *         self.fix_dependencies_in_lib(join(self.frameworks_dir, basename(path)))
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -12382,7 +12382,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_26install_dylib(CYTHON_UNUSED PyObje
  *         if set_id:
  *             self.set_id(join(self.frameworks_dir, basename(path)), f'{self.FID}/{basename(path)}')
  *         self.fix_dependencies_in_lib(join(self.frameworks_dir, basename(path)))             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fix_dependencies_in_lib); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 281, __pyx_L1_error)
@@ -12476,7 +12476,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_26install_dylib(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":277
- * 
+ *
  *     @flush
  *     def install_dylib(self, path, set_id=True):             # <<<<<<<<<<<<<<
  *         shutil.copy2(path, self.frameworks_dir)
@@ -12504,7 +12504,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_26install_dylib(CYTHON_UNUSED PyObje
 }
 
 /* "__main__.py":284
- * 
+ *
  *     @flush
  *     def add_misc_libraries(self):             # <<<<<<<<<<<<<<
  *         for x in (
@@ -12808,7 +12808,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_28add_misc_libraries(CYTHON_UNUSED P
  *             dest = join(self.frameworks_dir, x)
  *             self.set_id(dest, f'{self.FID}/{x}')             # <<<<<<<<<<<<<<
  *             self.fix_dependencies_in_lib(dest)
- * 
+ *
  */
     __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_id); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
@@ -12893,7 +12893,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_28add_misc_libraries(CYTHON_UNUSED P
  *             dest = join(self.frameworks_dir, x)
  *             self.set_id(dest, f'{self.FID}/{x}')
  *             self.fix_dependencies_in_lib(dest)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
     __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fix_dependencies_in_lib); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 301, __pyx_L1_error)
@@ -12926,7 +12926,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_28add_misc_libraries(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":284
- * 
+ *
  *     @flush
  *     def add_misc_libraries(self):             # <<<<<<<<<<<<<<
  *         for x in (
@@ -12955,7 +12955,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_28add_misc_libraries(CYTHON_UNUSED P
 }
 
 /* "__main__.py":304
- * 
+ *
  *     @flush
  *     def add_package_dir(self, x, dest=None):             # <<<<<<<<<<<<<<
  *         def ignore(root, files):
@@ -13242,7 +13242,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_15add_package_dir_ignore(CYTHON_UNUS
  *                 ext = os.path.splitext(y)[1]
  *                 if ext not in ('', '.py', '.so') or (not ext and not os.path.isdir(join(root, y))):             # <<<<<<<<<<<<<<
  *                     ans.append(y)
- * 
+ *
  */
     __Pyx_INCREF(__pyx_v_ext);
     __pyx_t_5 = __pyx_v_ext;
@@ -13357,7 +13357,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_15add_package_dir_ignore(CYTHON_UNUS
  *                 ext = os.path.splitext(y)[1]
  *                 if ext not in ('', '.py', '.so') or (not ext and not os.path.isdir(join(root, y))):
  *                     ans.append(y)             # <<<<<<<<<<<<<<
- * 
+ *
  *             return ans
  */
       __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_ans, __pyx_v_y); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 310, __pyx_L1_error)
@@ -13367,7 +13367,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_15add_package_dir_ignore(CYTHON_UNUS
  *                 ext = os.path.splitext(y)[1]
  *                 if ext not in ('', '.py', '.so') or (not ext and not os.path.isdir(join(root, y))):             # <<<<<<<<<<<<<<
  *                     ans.append(y)
- * 
+ *
  */
     }
 
@@ -13383,9 +13383,9 @@ static PyObject *__pyx_pf_8__main___6Freeze_15add_package_dir_ignore(CYTHON_UNUS
 
   /* "__main__.py":312
  *                     ans.append(y)
- * 
+ *
  *             return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *         if dest is None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13422,7 +13422,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_15add_package_dir_ignore(CYTHON_UNUS
 }
 
 /* "__main__.py":304
- * 
+ *
  *     @flush
  *     def add_package_dir(self, x, dest=None):             # <<<<<<<<<<<<<<
  *         def ignore(root, files):
@@ -13464,7 +13464,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
 
   /* "__main__.py":314
  *             return ans
- * 
+ *
  *         if dest is None:             # <<<<<<<<<<<<<<
  *             dest = self.site_packages
  *         dest = join(dest, basename(x))
@@ -13474,7 +13474,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
   if (__pyx_t_3) {
 
     /* "__main__.py":315
- * 
+ *
  *         if dest is None:
  *             dest = self.site_packages             # <<<<<<<<<<<<<<
  *         dest = join(dest, basename(x))
@@ -13487,7 +13487,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
 
     /* "__main__.py":314
  *             return ans
- * 
+ *
  *         if dest is None:             # <<<<<<<<<<<<<<
  *             dest = self.site_packages
  *         dest = join(dest, basename(x))
@@ -13673,7 +13673,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
  *         for f in walk(dest):
  *             if f.endswith('.so'):             # <<<<<<<<<<<<<<
  *                 self.fix_dependencies_in_lib(f)
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_endswith); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 319, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -13700,7 +13700,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
  *         for f in walk(dest):
  *             if f.endswith('.so'):
  *                 self.fix_dependencies_in_lib(f)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fix_dependencies_in_lib); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 320, __pyx_L1_error)
@@ -13727,7 +13727,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
  *         for f in walk(dest):
  *             if f.endswith('.so'):             # <<<<<<<<<<<<<<
  *                 self.fix_dependencies_in_lib(f)
- * 
+ *
  */
     }
 
@@ -13742,7 +13742,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "__main__.py":304
- * 
+ *
  *     @flush
  *     def add_package_dir(self, x, dest=None):             # <<<<<<<<<<<<<<
  *         def ignore(root, files):
@@ -13770,7 +13770,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_30add_package_dir(CYTHON_UNUSED PyOb
 }
 
 /* "__main__.py":323
- * 
+ *
  *     @flush
  *     def add_stdlib(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding python stdlib')
@@ -14469,7 +14469,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_32add_stdlib(CYTHON_UNUSED PyObject 
  *                 dest2 = join(dest, basename(x))
  *                 if dest2.endswith('.so'):             # <<<<<<<<<<<<<<
  *                     self.fix_dependencies_in_lib(dest2)
- * 
+ *
  */
       __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_dest2, __pyx_n_s_endswith); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 352, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
@@ -14496,7 +14496,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_32add_stdlib(CYTHON_UNUSED PyObject 
  *                 dest2 = join(dest, basename(x))
  *                 if dest2.endswith('.so'):
  *                     self.fix_dependencies_in_lib(dest2)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
         __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fix_dependencies_in_lib); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 353, __pyx_L1_error)
@@ -14523,7 +14523,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_32add_stdlib(CYTHON_UNUSED PyObject 
  *                 dest2 = join(dest, basename(x))
  *                 if dest2.endswith('.so'):             # <<<<<<<<<<<<<<
  *                     self.fix_dependencies_in_lib(dest2)
- * 
+ *
  */
       }
 
@@ -14549,7 +14549,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_32add_stdlib(CYTHON_UNUSED PyObject 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":323
- * 
+ *
  *     @flush
  *     def add_stdlib(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding python stdlib')
@@ -14579,7 +14579,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_32add_stdlib(CYTHON_UNUSED PyObject 
 }
 
 /* "__main__.py":356
- * 
+ *
  *     @flush
  *     def freeze_python(self):             # <<<<<<<<<<<<<<
  *         print('\nFreezing python')
@@ -16328,7 +16328,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_34freeze_python(CYTHON_UNUSED PyObje
  *         for f in walk(pdir):
  *             if f.endswith('.so') or f.endswith('.dylib'):             # <<<<<<<<<<<<<<
  *                 self.fix_dependencies_in_lib(f)
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_endswith); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 382, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -16381,7 +16381,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_34freeze_python(CYTHON_UNUSED PyObje
  *         for f in walk(pdir):
  *             if f.endswith('.so') or f.endswith('.dylib'):
  *                 self.fix_dependencies_in_lib(f)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fix_dependencies_in_lib); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 383, __pyx_L1_error)
@@ -16408,7 +16408,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_34freeze_python(CYTHON_UNUSED PyObje
  *         for f in walk(pdir):
  *             if f.endswith('.so') or f.endswith('.dylib'):             # <<<<<<<<<<<<<<
  *                 self.fix_dependencies_in_lib(f)
- * 
+ *
  */
     }
 
@@ -16423,7 +16423,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_34freeze_python(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /* "__main__.py":356
- * 
+ *
  *     @flush
  *     def freeze_python(self):             # <<<<<<<<<<<<<<
  *         print('\nFreezing python')
@@ -16458,11 +16458,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_34freeze_python(CYTHON_UNUSED PyObje
 }
 
 /* "__main__.py":386
- * 
+ *
  *     @flush
  *     def build_frozen_tools(self):             # <<<<<<<<<<<<<<
  *         iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -16499,7 +16499,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_36build_frozen_tools(CYTHON_UNUSED P
  *     @flush
  *     def build_frozen_tools(self):
  *         iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_iv); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 387, __pyx_L1_error)
@@ -16580,11 +16580,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_36build_frozen_tools(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":386
- * 
+ *
  *     @flush
  *     def build_frozen_tools(self):             # <<<<<<<<<<<<<<
  *         iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
 
   /* function exit code */
@@ -16607,7 +16607,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_36build_frozen_tools(CYTHON_UNUSED P
 }
 
 /* "__main__.py":390
- * 
+ *
  *     @flush
  *     def add_site_packages(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding site-packages')
@@ -17309,7 +17309,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_38add_site_packages(CYTHON_UNUSED Py
  *                 if tdir is not None:
  *                     shutil.rmtree(tdir)             # <<<<<<<<<<<<<<
  *         self.remove_bytecode(self.site_packages)
- * 
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_shutil); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 412, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
@@ -17372,7 +17372,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_38add_site_packages(CYTHON_UNUSED Py
  *                 if tdir is not None:
  *                     shutil.rmtree(tdir)             # <<<<<<<<<<<<<<
  *         self.remove_bytecode(self.site_packages)
- * 
+ *
  */
             __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_shutil); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 412, __pyx_L26_error)
             __Pyx_GOTREF(__pyx_t_5);
@@ -17448,7 +17448,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_38add_site_packages(CYTHON_UNUSED Py
  *                 if tdir is not None:
  *                     shutil.rmtree(tdir)
  *         self.remove_bytecode(self.site_packages)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_remove_bytecode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 413, __pyx_L1_error)
@@ -17474,7 +17474,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_38add_site_packages(CYTHON_UNUSED Py
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "__main__.py":390
- * 
+ *
  *     @flush
  *     def add_site_packages(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding site-packages')
@@ -17506,7 +17506,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_38add_site_packages(CYTHON_UNUSED Py
 }
 
 /* "__main__.py":416
- * 
+ *
  *     @flush
  *     def add_modules_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in glob.glob(join(src, '*.py')) + glob.glob(join(src, '*.so')):
@@ -17856,7 +17856,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_40add_modules_from_dir(CYTHON_UNUSED
  *             shutil.copy2(x, self.site_packages)
  *             if x.endswith('.so'):             # <<<<<<<<<<<<<<
  *                 self.fix_dependencies_in_lib(x)
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_endswith); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 419, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -17883,7 +17883,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_40add_modules_from_dir(CYTHON_UNUSED
  *             shutil.copy2(x, self.site_packages)
  *             if x.endswith('.so'):
  *                 self.fix_dependencies_in_lib(x)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fix_dependencies_in_lib); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 420, __pyx_L1_error)
@@ -17910,7 +17910,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_40add_modules_from_dir(CYTHON_UNUSED
  *             shutil.copy2(x, self.site_packages)
  *             if x.endswith('.so'):             # <<<<<<<<<<<<<<
  *                 self.fix_dependencies_in_lib(x)
- * 
+ *
  */
     }
 
@@ -17925,7 +17925,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_40add_modules_from_dir(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":416
- * 
+ *
  *     @flush
  *     def add_modules_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in glob.glob(join(src, '*.py')) + glob.glob(join(src, '*.so')):
@@ -17953,7 +17953,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_40add_modules_from_dir(CYTHON_UNUSED
 }
 
 /* "__main__.py":423
- * 
+ *
  *     @flush
  *     def add_packages_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in os.listdir(src):
@@ -18338,7 +18338,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_42add_packages_from_dir(CYTHON_UNUSE
  *                 if self.filter_package(basename(x)):
  *                     continue             # <<<<<<<<<<<<<<
  *                 self.add_package_dir(x)
- * 
+ *
  */
         goto __pyx_L3_continue;
 
@@ -18355,7 +18355,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_42add_packages_from_dir(CYTHON_UNUSE
  *                 if self.filter_package(basename(x)):
  *                     continue
  *                 self.add_package_dir(x)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_add_package_dir); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 429, __pyx_L1_error)
@@ -18398,7 +18398,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_42add_packages_from_dir(CYTHON_UNUSE
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":423
- * 
+ *
  *     @flush
  *     def add_packages_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in os.listdir(src):
@@ -18426,11 +18426,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_42add_packages_from_dir(CYTHON_UNUSE
 }
 
 /* "__main__.py":432
- * 
+ *
  *     @flush
  *     def filter_package(self, name):             # <<<<<<<<<<<<<<
  *         return name in ('Cython', 'modulegraph', 'macholib', 'py2app', 'bdist_mpkg', 'altgraph')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -18513,7 +18513,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_44filter_package(CYTHON_UNUSED PyObj
  *     @flush
  *     def filter_package(self, name):
  *         return name in ('Cython', 'modulegraph', 'macholib', 'py2app', 'bdist_mpkg', 'altgraph')             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __Pyx_XDECREF(__pyx_r);
@@ -18560,11 +18560,11 @@ static PyObject *__pyx_pf_8__main___6Freeze_44filter_package(CYTHON_UNUSED PyObj
   goto __pyx_L0;
 
   /* "__main__.py":432
- * 
+ *
  *     @flush
  *     def filter_package(self, name):             # <<<<<<<<<<<<<<
  *         return name in ('Cython', 'modulegraph', 'macholib', 'py2app', 'bdist_mpkg', 'altgraph')
- * 
+ *
  */
 
   /* function exit code */
@@ -18579,7 +18579,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_44filter_package(CYTHON_UNUSED PyObj
 }
 
 /* "__main__.py":436
- * 
+ *
  *     @flush
  *     def remove_bytecode(self, dest):             # <<<<<<<<<<<<<<
  *         for x in os.walk(dest):
@@ -18815,7 +18815,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_46remove_bytecode(CYTHON_UNUSED PyOb
  *             for f in x[-1]:
  *                 if os.path.splitext(f) == '.pyc':             # <<<<<<<<<<<<<<
  *                     os.remove(join(root, f))
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_os); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 440, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
@@ -18848,7 +18848,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_46remove_bytecode(CYTHON_UNUSED PyOb
  *             for f in x[-1]:
  *                 if os.path.splitext(f) == '.pyc':
  *                     os.remove(join(root, f))             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
         __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_os); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 441, __pyx_L1_error)
@@ -18926,7 +18926,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_46remove_bytecode(CYTHON_UNUSED PyOb
  *             for f in x[-1]:
  *                 if os.path.splitext(f) == '.pyc':             # <<<<<<<<<<<<<<
  *                     os.remove(join(root, f))
- * 
+ *
  */
       }
 
@@ -18951,7 +18951,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_46remove_bytecode(CYTHON_UNUSED PyOb
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":436
- * 
+ *
  *     @flush
  *     def remove_bytecode(self, dest):             # <<<<<<<<<<<<<<
  *         for x in os.walk(dest):
@@ -18982,7 +18982,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_46remove_bytecode(CYTHON_UNUSED PyOb
 }
 
 /* "__main__.py":444
- * 
+ *
  *     @flush
  *     def compile_py_modules(self):             # <<<<<<<<<<<<<<
  *         self.remove_bytecode(join(self.resources_dir, 'Python'))
@@ -19024,7 +19024,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_48compile_py_modules(CYTHON_UNUSED P
  *     def compile_py_modules(self):
  *         self.remove_bytecode(join(self.resources_dir, 'Python'))             # <<<<<<<<<<<<<<
  *         py_compile(join(self.resources_dir, 'Python'))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_remove_bytecode); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 445, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -19101,7 +19101,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_48compile_py_modules(CYTHON_UNUSED P
  *     def compile_py_modules(self):
  *         self.remove_bytecode(join(self.resources_dir, 'Python'))
  *         py_compile(join(self.resources_dir, 'Python'))             # <<<<<<<<<<<<<<
- * 
+ *
  *     @flush
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_py_compile); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 446, __pyx_L1_error)
@@ -19176,7 +19176,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_48compile_py_modules(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":444
- * 
+ *
  *     @flush
  *     def compile_py_modules(self):             # <<<<<<<<<<<<<<
  *         self.remove_bytecode(join(self.resources_dir, 'Python'))
@@ -19203,7 +19203,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_48compile_py_modules(CYTHON_UNUSED P
 }
 
 /* "__main__.py":449
- * 
+ *
  *     @flush
  *     def makedmg(self, d, volname, format='ULFO'):             # <<<<<<<<<<<<<<
  *         '''Copy a directory d into a dmg named volname'''
@@ -20020,7 +20020,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_50makedmg(CYTHON_UNUSED PyObject *__
               __Pyx_GIVEREF(__pyx_t_4);
               __Pyx_XGIVEREF(__pyx_t_3);
               __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_4, __pyx_t_3);
-              __pyx_t_2 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0; 
+              __pyx_t_2 = 0; __pyx_t_4 = 0; __pyx_t_3 = 0;
               __PYX_ERR(0, 466, __pyx_L17_except_error)
             }
             __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -20517,7 +20517,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_50makedmg(CYTHON_UNUSED PyObject *__
             __Pyx_GIVEREF(__pyx_t_6);
             __Pyx_XGIVEREF(__pyx_t_14);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_6, __pyx_t_14);
-            __pyx_t_3 = 0; __pyx_t_6 = 0; __pyx_t_14 = 0; 
+            __pyx_t_3 = 0; __pyx_t_6 = 0; __pyx_t_14 = 0;
             __PYX_ERR(0, 478, __pyx_L32_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -20651,7 +20651,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_50makedmg(CYTHON_UNUSED PyObject *__
  *         size = os.stat(dmg).st_size / (1024 * 1024.0)
  *         print(f'\nInstaller size: {size:.2f}MB\n')             # <<<<<<<<<<<<<<
  *         return dmg
- * 
+ *
  */
   __pyx_t_14 = PyTuple_New(3); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 483, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_14);
@@ -20682,8 +20682,8 @@ static PyObject *__pyx_pf_8__main___6Freeze_50makedmg(CYTHON_UNUSED PyObject *__
  *         size = os.stat(dmg).st_size / (1024 * 1024.0)
  *         print(f'\nInstaller size: {size:.2f}MB\n')
  *         return dmg             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_dmg);
@@ -20691,7 +20691,7 @@ static PyObject *__pyx_pf_8__main___6Freeze_50makedmg(CYTHON_UNUSED PyObject *__
   goto __pyx_L0;
 
   /* "__main__.py":449
- * 
+ *
  *     @flush
  *     def makedmg(self, d, volname, format='ULFO'):             # <<<<<<<<<<<<<<
  *         '''Copy a directory d into a dmg named volname'''
@@ -20723,8 +20723,8 @@ static PyObject *__pyx_pf_8__main___6Freeze_50makedmg(CYTHON_UNUSED PyObject *__
 }
 
 /* "__main__.py":487
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     args = globals()['args']
  *     ext_dir = globals()['ext_dir']
@@ -20762,7 +20762,7 @@ static PyObject *__pyx_pf_8__main___15main(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_RefNannySetupContext("main", 0);
 
   /* "__main__.py":488
- * 
+ *
  * def main():
  *     args = globals()['args']             # <<<<<<<<<<<<<<
  *     ext_dir = globals()['ext_dir']
@@ -20925,7 +20925,7 @@ static PyObject *__pyx_pf_8__main___15main(CYTHON_UNUSED PyObject *__pyx_self) {
  *         notarize=args.notarize,
  *         skip_tests=args.skip_tests,             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_args, __pyx_n_s_skip_tests); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 495, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -20947,8 +20947,8 @@ static PyObject *__pyx_pf_8__main___15main(CYTHON_UNUSED PyObject *__pyx_self) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "__main__.py":487
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     args = globals()['args']
  *     ext_dir = globals()['ext_dir']
@@ -22437,7 +22437,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "__main__.py":33
- * 
+ *
  * def flush(func):
  *     def ff(*args, **kwargs):             # <<<<<<<<<<<<<<
  *         sys.stdout.flush()
@@ -22460,7 +22460,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__5);
 
   /* "__main__.py":196
- * 
+ *
  *         if cdata is None:
  *             raise SystemExit('Downloading C certs failed, giving up')             # <<<<<<<<<<<<<<
  *         dest = join(self.contents_dir, 'Resources', 'cacert.pem')
@@ -22486,7 +22486,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             os.symlink(basename(curr), 'Versions/Current')
  *             for y in ('Python', 'Resources'):             # <<<<<<<<<<<<<<
  *                 os.symlink(f'Versions/Current/{y}', y)
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(2, __pyx_n_s_Python, __pyx_n_s_Resources); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -22527,8 +22527,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__19);
 
   /* "__main__.py":32
- * 
- * 
+ *
+ *
  * def flush(func):             # <<<<<<<<<<<<<<
  *     def ff(*args, **kwargs):
  *         sys.stdout.flush()
@@ -22539,8 +22539,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_flush, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 32, __pyx_L1_error)
 
   /* "__main__.py":44
- * 
- * 
+ *
+ *
  * def flipwritable(fn, mode=None):             # <<<<<<<<<<<<<<
  *     """
  *     Flip the writability of a file and return the old mode. Returns None
@@ -22554,19 +22554,19 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__25);
 
   /* "__main__.py":56
- * 
- * 
+ *
+ *
  * STRIPCMD = ('/usr/bin/strip', '-x', '-S', '-')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_tuple__26 = PyTuple_Pack(4, __pyx_kp_s_usr_bin_strip, __pyx_kp_s_x_2, __pyx_kp_s_S, __pyx_kp_s__6); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
 
   /* "__main__.py":59
- * 
- * 
+ *
+ *
  * def strip_files(files, argv_max=(256 * 1024)):             # <<<<<<<<<<<<<<
  *     """
  *     Strip a list of files
@@ -22580,8 +22580,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__29);
 
   /* "__main__.py":83
- * 
- * 
+ *
+ *
  * def files_in(folder):             # <<<<<<<<<<<<<<
  *     for record in os.walk(folder):
  *         for f in record[-1]:
@@ -22592,8 +22592,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__30, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_files_in, 83, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 83, __pyx_L1_error)
 
   /* "__main__.py":89
- * 
- * 
+ *
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):             # <<<<<<<<<<<<<<
  *     items = set(items)
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -22604,8 +22604,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_expand_dirs, 89, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 89, __pyx_L1_error)
 
   /* "__main__.py":98
- * 
- * 
+ *
+ *
  * def do_sign(app_dir):             # <<<<<<<<<<<<<<
  *     with current_dir(join(app_dir, 'Contents')):
  *         # Sign all .so files
@@ -22616,8 +22616,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_do_sign, 98, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 98, __pyx_L1_error)
 
   /* "__main__.py":118
- * 
- * 
+ *
+ *
  * def sign_app(app_dir, notarize):             # <<<<<<<<<<<<<<
  *     # Copied from iTerm2: https://github.com/gnachman/iTerm2/blob/master/iTerm2.entitlements
  *     create_entitlements_file(
@@ -22628,11 +22628,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__35, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_sign_app, 118, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 118, __pyx_L1_error)
 
   /* "__main__.py":138
- * 
- * 
+ *
+ *
  * class Freeze(object):             # <<<<<<<<<<<<<<
  *     FID = '@executable_path/../Frameworks'
- * 
+ *
  */
   __pyx_tuple__37 = PyTuple_Pack(1, __pyx_builtin_object); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
@@ -22640,7 +22640,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "__main__.py":141
  *     FID = '@executable_path/../Frameworks'
- * 
+ *
  *     def __init__(self, build_dir, dont_strip=False, sign_installers=False, notarize=False, skip_tests=False):             # <<<<<<<<<<<<<<
  *         self.build_dir = build_dir
  *         self.skip_tests = skip_tests
@@ -22655,7 +22655,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "__main__.py":159
  *         self.run()
- * 
+ *
  *     def run_shell(self):             # <<<<<<<<<<<<<<
  *         with current_dir(self.contents_dir):
  *             run_shell()
@@ -22667,7 +22667,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "__main__.py":163
  *             run_shell()
- * 
+ *
  *     def run(self):             # <<<<<<<<<<<<<<
  *         ret = 0
  *         self.add_python_framework()
@@ -22678,7 +22678,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__44 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__43, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_run, 163, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__44)) __PYX_ERR(0, 163, __pyx_L1_error)
 
   /* "__main__.py":183
- * 
+ *
  *     @flush
  *     def add_ca_certs(self):             # <<<<<<<<<<<<<<
  *         print('\nDownloading CA certs...')
@@ -22690,7 +22690,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__46 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__45, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_add_ca_certs, 183, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__46)) __PYX_ERR(0, 183, __pyx_L1_error)
 
   /* "__main__.py":202
- * 
+ *
  *     @flush
  *     def strip_files(self):             # <<<<<<<<<<<<<<
  *         print('\nStripping files...')
@@ -22702,11 +22702,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_strip_files, 202, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 202, __pyx_L1_error)
 
   /* "__main__.py":207
- * 
+ *
  *     @flush
  *     def run_tests(self):             # <<<<<<<<<<<<<<
  *         iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
   __pyx_tuple__49 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__49);
@@ -22714,7 +22714,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__50 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__49, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_run_tests, 207, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__50)) __PYX_ERR(0, 207, __pyx_L1_error)
 
   /* "__main__.py":211
- * 
+ *
  *     @flush
  *     def set_id(self, path_to_lib, new_id):             # <<<<<<<<<<<<<<
  *         old_mode = flipwritable(path_to_lib)
@@ -22726,7 +22726,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_set_id, 211, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(0, 211, __pyx_L1_error)
 
   /* "__main__.py":218
- * 
+ *
  *     @flush
  *     def get_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         install_name = subprocess.check_output(['otool', '-D', path_to_lib]).decode('utf-8').splitlines()[-1].strip()
@@ -22738,7 +22738,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_get_dependencies, 218, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 218, __pyx_L1_error)
 
   /* "__main__.py":229
- * 
+ *
  *     @flush
  *     def get_local_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         for x, is_id in self.get_dependencies(path_to_lib):
@@ -22750,7 +22750,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_get_local_dependencies, 229, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 229, __pyx_L1_error)
 
   /* "__main__.py":239
- * 
+ *
  *     @flush
  *     def change_dep(self, old_dep, new_dep, is_id, path_to_lib):             # <<<<<<<<<<<<<<
  *         cmd = ['-id', new_dep] if is_id else ['-change', old_dep, new_dep]
@@ -22762,7 +22762,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(5, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_change_dep, 239, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) __PYX_ERR(0, 239, __pyx_L1_error)
 
   /* "__main__.py":244
- * 
+ *
  *     @flush
  *     def fix_dependencies_in_lib(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         self.to_strip.append(path_to_lib)
@@ -22774,7 +22774,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__58 = (PyObject*)__Pyx_PyCode_New(2, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__57, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_fix_dependencies_in_lib, 244, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__58)) __PYX_ERR(0, 244, __pyx_L1_error)
 
   /* "__main__.py":259
- * 
+ *
  *     @flush
  *     def add_python_framework(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding Python framework')
@@ -22786,7 +22786,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__60 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__59, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_add_python_framework, 259, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__60)) __PYX_ERR(0, 259, __pyx_L1_error)
 
   /* "__main__.py":277
- * 
+ *
  *     @flush
  *     def install_dylib(self, path, set_id=True):             # <<<<<<<<<<<<<<
  *         shutil.copy2(path, self.frameworks_dir)
@@ -22801,7 +22801,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__63);
 
   /* "__main__.py":284
- * 
+ *
  *     @flush
  *     def add_misc_libraries(self):             # <<<<<<<<<<<<<<
  *         for x in (
@@ -22813,7 +22813,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__65 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__64, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_add_misc_libraries, 284, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__65)) __PYX_ERR(0, 284, __pyx_L1_error)
 
   /* "__main__.py":304
- * 
+ *
  *     @flush
  *     def add_package_dir(self, x, dest=None):             # <<<<<<<<<<<<<<
  *         def ignore(root, files):
@@ -22828,7 +22828,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__68);
 
   /* "__main__.py":323
- * 
+ *
  *     @flush
  *     def add_stdlib(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding python stdlib')
@@ -22840,7 +22840,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__70 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__69, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_add_stdlib, 323, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__70)) __PYX_ERR(0, 323, __pyx_L1_error)
 
   /* "__main__.py":356
- * 
+ *
  *     @flush
  *     def freeze_python(self):             # <<<<<<<<<<<<<<
  *         print('\nFreezing python')
@@ -22852,11 +22852,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__72 = (PyObject*)__Pyx_PyCode_New(1, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__71, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_freeze_python, 356, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__72)) __PYX_ERR(0, 356, __pyx_L1_error)
 
   /* "__main__.py":386
- * 
+ *
  *     @flush
  *     def build_frozen_tools(self):             # <<<<<<<<<<<<<<
  *         iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
   __pyx_tuple__73 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__73)) __PYX_ERR(0, 386, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__73);
@@ -22864,7 +22864,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__74 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__73, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_build_frozen_tools, 386, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__74)) __PYX_ERR(0, 386, __pyx_L1_error)
 
   /* "__main__.py":390
- * 
+ *
  *     @flush
  *     def add_site_packages(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding site-packages')
@@ -22876,7 +22876,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__76 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__75, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_add_site_packages, 390, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__76)) __PYX_ERR(0, 390, __pyx_L1_error)
 
   /* "__main__.py":416
- * 
+ *
  *     @flush
  *     def add_modules_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in glob.glob(join(src, '*.py')) + glob.glob(join(src, '*.so')):
@@ -22888,7 +22888,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__78 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__77, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_add_modules_from_dir, 416, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__78)) __PYX_ERR(0, 416, __pyx_L1_error)
 
   /* "__main__.py":423
- * 
+ *
  *     @flush
  *     def add_packages_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in os.listdir(src):
@@ -22900,11 +22900,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__80 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__79, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_add_packages_from_dir, 423, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__80)) __PYX_ERR(0, 423, __pyx_L1_error)
 
   /* "__main__.py":432
- * 
+ *
  *     @flush
  *     def filter_package(self, name):             # <<<<<<<<<<<<<<
  *         return name in ('Cython', 'modulegraph', 'macholib', 'py2app', 'bdist_mpkg', 'altgraph')
- * 
+ *
  */
   __pyx_tuple__81 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_name); if (unlikely(!__pyx_tuple__81)) __PYX_ERR(0, 432, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__81);
@@ -22912,7 +22912,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__82 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__81, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_filter_package, 432, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__82)) __PYX_ERR(0, 432, __pyx_L1_error)
 
   /* "__main__.py":436
- * 
+ *
  *     @flush
  *     def remove_bytecode(self, dest):             # <<<<<<<<<<<<<<
  *         for x in os.walk(dest):
@@ -22924,7 +22924,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__84 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__83, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_remove_bytecode, 436, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__84)) __PYX_ERR(0, 436, __pyx_L1_error)
 
   /* "__main__.py":444
- * 
+ *
  *     @flush
  *     def compile_py_modules(self):             # <<<<<<<<<<<<<<
  *         self.remove_bytecode(join(self.resources_dir, 'Python'))
@@ -22936,7 +22936,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__86 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__85, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_bypy_macos___main___py, __pyx_n_s_compile_py_modules, 444, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__86)) __PYX_ERR(0, 444, __pyx_L1_error)
 
   /* "__main__.py":449
- * 
+ *
  *     @flush
  *     def makedmg(self, d, volname, format='ULFO'):             # <<<<<<<<<<<<<<
  *         '''Copy a directory d into a dmg named volname'''
@@ -22951,8 +22951,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__89);
 
   /* "__main__.py":487
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     args = globals()['args']
  *     ext_dir = globals()['ext_dir']
@@ -23324,7 +23324,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":5
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import glob             # <<<<<<<<<<<<<<
  * import json
  * import os
@@ -23335,7 +23335,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":6
- * 
+ *
  * import glob
  * import json             # <<<<<<<<<<<<<<
  * import os
@@ -23411,7 +23411,7 @@ if (!__Pyx_RefNanny) {
  * import sys
  * import tempfile             # <<<<<<<<<<<<<<
  * import zipfile
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23422,7 +23422,7 @@ if (!__Pyx_RefNanny) {
  * import sys
  * import tempfile
  * import zipfile             # <<<<<<<<<<<<<<
- * 
+ *
  * from bypy.constants import PREFIX, PYTHON, SW, python_major_minor_version
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_zipfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -23432,7 +23432,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":15
  * import zipfile
- * 
+ *
  * from bypy.constants import PREFIX, PYTHON, SW, python_major_minor_version             # <<<<<<<<<<<<<<
  * from bypy.freeze import extract_extension_modules, freeze_python, path_to_freeze_dir
  * from bypy.macos_sign import codesign, create_entitlements_file, make_certificate_useable, notarize_app, verify_signature
@@ -23473,7 +23473,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "__main__.py":16
- * 
+ *
  * from bypy.constants import PREFIX, PYTHON, SW, python_major_minor_version
  * from bypy.freeze import extract_extension_modules, freeze_python, path_to_freeze_dir             # <<<<<<<<<<<<<<
  * from bypy.macos_sign import codesign, create_entitlements_file, make_certificate_useable, notarize_app, verify_signature
@@ -23512,7 +23512,7 @@ if (!__Pyx_RefNanny) {
  * from bypy.freeze import extract_extension_modules, freeze_python, path_to_freeze_dir
  * from bypy.macos_sign import codesign, create_entitlements_file, make_certificate_useable, notarize_app, verify_signature             # <<<<<<<<<<<<<<
  * from bypy.utils import current_dir, mkdtemp, py_compile, run_shell, timeit, walk
- * 
+ *
  */
   __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23560,7 +23560,7 @@ if (!__Pyx_RefNanny) {
  * from bypy.freeze import extract_extension_modules, freeze_python, path_to_freeze_dir
  * from bypy.macos_sign import codesign, create_entitlements_file, make_certificate_useable, notarize_app, verify_signature
  * from bypy.utils import current_dir, mkdtemp, py_compile, run_shell, timeit, walk             # <<<<<<<<<<<<<<
- * 
+ *
  * iv = globals()['init_env']
  */
   __pyx_t_2 = PyList_New(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
@@ -23614,7 +23614,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":20
  * from bypy.utils import current_dir, mkdtemp, py_compile, run_shell, timeit, walk
- * 
+ *
  * iv = globals()['init_env']             # <<<<<<<<<<<<<<
  * smelly_constants = iv['smelly_constants']
  * self_dir = os.path.dirname(os.path.abspath(__file__))
@@ -23628,7 +23628,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "__main__.py":21
- * 
+ *
  * iv = globals()['init_env']
  * smelly_constants = iv['smelly_constants']             # <<<<<<<<<<<<<<
  * self_dir = os.path.dirname(os.path.abspath(__file__))
@@ -23770,7 +23770,7 @@ if (!__Pyx_RefNanny) {
  * APPNAME = smelly_constants['appname']
  * VERSION = smelly_constants['version']             # <<<<<<<<<<<<<<
  * py_ver = '.'.join(map(str, python_major_minor_version()))
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_smelly_constants); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -23784,8 +23784,8 @@ if (!__Pyx_RefNanny) {
  * APPNAME = smelly_constants['appname']
  * VERSION = smelly_constants['version']
  * py_ver = '.'.join(map(str, python_major_minor_version()))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_python_major_minor_version); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -23810,8 +23810,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":32
- * 
- * 
+ *
+ *
  * def flush(func):             # <<<<<<<<<<<<<<
  *     def ff(*args, **kwargs):
  *         sys.stdout.flush()
@@ -23822,8 +23822,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":44
- * 
- * 
+ *
+ *
  * def flipwritable(fn, mode=None):             # <<<<<<<<<<<<<<
  *     """
  *     Flip the writability of a file and return the old mode. Returns None
@@ -23835,17 +23835,17 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":56
- * 
- * 
+ *
+ *
  * STRIPCMD = ('/usr/bin/strip', '-x', '-S', '-')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_STRIPCMD, __pyx_tuple__26) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
 
   /* "__main__.py":59
- * 
- * 
+ *
+ *
  * def strip_files(files, argv_max=(256 * 1024)):             # <<<<<<<<<<<<<<
  *     """
  *     Strip a list of files
@@ -23857,8 +23857,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":83
- * 
- * 
+ *
+ *
  * def files_in(folder):             # <<<<<<<<<<<<<<
  *     for record in os.walk(folder):
  *         for f in record[-1]:
@@ -23869,8 +23869,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":89
- * 
- * 
+ *
+ *
  * def expand_dirs(items, exclude=lambda x: x.endswith('.so')):             # <<<<<<<<<<<<<<
  *     items = set(items)
  *     dirs = set(x for x in items if os.path.isdir(x))
@@ -23888,8 +23888,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":98
- * 
- * 
+ *
+ *
  * def do_sign(app_dir):             # <<<<<<<<<<<<<<
  *     with current_dir(join(app_dir, 'Contents')):
  *         # Sign all .so files
@@ -23900,8 +23900,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":118
- * 
- * 
+ *
+ *
  * def sign_app(app_dir, notarize):             # <<<<<<<<<<<<<<
  *     # Copied from iTerm2: https://github.com/gnachman/iTerm2/blob/master/iTerm2.entitlements
  *     create_entitlements_file(
@@ -23912,11 +23912,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":138
- * 
- * 
+ *
+ *
  * class Freeze(object):             # <<<<<<<<<<<<<<
  *     FID = '@executable_path/../Frameworks'
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__37); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -23924,17 +23924,17 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "__main__.py":139
- * 
+ *
  * class Freeze(object):
  *     FID = '@executable_path/../Frameworks'             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, build_dir, dont_strip=False, sign_installers=False, notarize=False, skip_tests=False):
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_FID, __pyx_kp_s_executable_path_Frameworks) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
 
   /* "__main__.py":141
  *     FID = '@executable_path/../Frameworks'
- * 
+ *
  *     def __init__(self, build_dir, dont_strip=False, sign_installers=False, notarize=False, skip_tests=False):             # <<<<<<<<<<<<<<
  *         self.build_dir = build_dir
  *         self.skip_tests = skip_tests
@@ -23947,7 +23947,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":159
  *         self.run()
- * 
+ *
  *     def run_shell(self):             # <<<<<<<<<<<<<<
  *         with current_dir(self.contents_dir):
  *             run_shell()
@@ -23959,7 +23959,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":163
  *             run_shell()
- * 
+ *
  *     def run(self):             # <<<<<<<<<<<<<<
  *         ret = 0
  *         self.add_python_framework()
@@ -23971,7 +23971,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":182
  *         return ret
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_ca_certs(self):
  *         print('\nDownloading CA certs...')
@@ -23980,7 +23980,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":183
- * 
+ *
  *     @flush
  *     def add_ca_certs(self):             # <<<<<<<<<<<<<<
  *         print('\nDownloading CA certs...')
@@ -24009,7 +24009,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":201
  *             f.write(cdata)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def strip_files(self):
  *         print('\nStripping files...')
@@ -24018,7 +24018,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":202
- * 
+ *
  *     @flush
  *     def strip_files(self):             # <<<<<<<<<<<<<<
  *         print('\nStripping files...')
@@ -24047,7 +24047,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":206
  *         strip_files(self.to_strip)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def run_tests(self):
  *         iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))
@@ -24056,11 +24056,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":207
- * 
+ *
  *     @flush
  *     def run_tests(self):             # <<<<<<<<<<<<<<
  *         iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8__main___6Freeze_11run_tests, 0, __pyx_n_s_Freeze_run_tests, NULL, __pyx_n_s_main, __pyx_d, ((PyObject *)__pyx_codeobj__50)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -24085,7 +24085,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":210
  *         iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def set_id(self, path_to_lib, new_id):
  *         old_mode = flipwritable(path_to_lib)
@@ -24094,7 +24094,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":211
- * 
+ *
  *     @flush
  *     def set_id(self, path_to_lib, new_id):             # <<<<<<<<<<<<<<
  *         old_mode = flipwritable(path_to_lib)
@@ -24123,7 +24123,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":217
  *             flipwritable(path_to_lib, old_mode)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def get_dependencies(self, path_to_lib):
  *         install_name = subprocess.check_output(['otool', '-D', path_to_lib]).decode('utf-8').splitlines()[-1].strip()
@@ -24132,7 +24132,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":218
- * 
+ *
  *     @flush
  *     def get_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         install_name = subprocess.check_output(['otool', '-D', path_to_lib]).decode('utf-8').splitlines()[-1].strip()
@@ -24161,7 +24161,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":228
  *             yield path, path == install_name
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def get_local_dependencies(self, path_to_lib):
  *         for x, is_id in self.get_dependencies(path_to_lib):
@@ -24170,7 +24170,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":229
- * 
+ *
  *     @flush
  *     def get_local_dependencies(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         for x, is_id in self.get_dependencies(path_to_lib):
@@ -24199,7 +24199,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":238
  *                     break
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def change_dep(self, old_dep, new_dep, is_id, path_to_lib):
  *         cmd = ['-id', new_dep] if is_id else ['-change', old_dep, new_dep]
@@ -24208,7 +24208,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":239
- * 
+ *
  *     @flush
  *     def change_dep(self, old_dep, new_dep, is_id, path_to_lib):             # <<<<<<<<<<<<<<
  *         cmd = ['-id', new_dep] if is_id else ['-change', old_dep, new_dep]
@@ -24237,7 +24237,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":243
  *         subprocess.check_call(['install_name_tool'] + cmd + [path_to_lib])
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def fix_dependencies_in_lib(self, path_to_lib):
  *         self.to_strip.append(path_to_lib)
@@ -24246,7 +24246,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":244
- * 
+ *
  *     @flush
  *     def fix_dependencies_in_lib(self, path_to_lib):             # <<<<<<<<<<<<<<
  *         self.to_strip.append(path_to_lib)
@@ -24275,7 +24275,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":258
  *             flipwritable(path_to_lib, old_mode)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_python_framework(self):
  *         print('\nAdding Python framework')
@@ -24284,7 +24284,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":259
- * 
+ *
  *     @flush
  *     def add_python_framework(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding Python framework')
@@ -24313,7 +24313,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":276
  *                 os.symlink(f'Versions/Current/{y}', y)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def install_dylib(self, path, set_id=True):
  *         shutil.copy2(path, self.frameworks_dir)
@@ -24322,7 +24322,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":277
- * 
+ *
  *     @flush
  *     def install_dylib(self, path, set_id=True):             # <<<<<<<<<<<<<<
  *         shutil.copy2(path, self.frameworks_dir)
@@ -24352,7 +24352,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":283
  *         self.fix_dependencies_in_lib(join(self.frameworks_dir, basename(path)))
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_misc_libraries(self):
  *         for x in (
@@ -24361,7 +24361,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":284
- * 
+ *
  *     @flush
  *     def add_misc_libraries(self):             # <<<<<<<<<<<<<<
  *         for x in (
@@ -24390,7 +24390,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":303
  *             self.fix_dependencies_in_lib(dest)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_package_dir(self, x, dest=None):
  *         def ignore(root, files):
@@ -24399,7 +24399,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":304
- * 
+ *
  *     @flush
  *     def add_package_dir(self, x, dest=None):             # <<<<<<<<<<<<<<
  *         def ignore(root, files):
@@ -24429,7 +24429,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":322
  *                 self.fix_dependencies_in_lib(f)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_stdlib(self):
  *         print('\nAdding python stdlib')
@@ -24438,7 +24438,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":323
- * 
+ *
  *     @flush
  *     def add_stdlib(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding python stdlib')
@@ -24467,7 +24467,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":355
  *                     self.fix_dependencies_in_lib(dest2)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def freeze_python(self):
  *         print('\nFreezing python')
@@ -24476,7 +24476,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":356
- * 
+ *
  *     @flush
  *     def freeze_python(self):             # <<<<<<<<<<<<<<
  *         print('\nFreezing python')
@@ -24505,7 +24505,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":385
  *                 self.fix_dependencies_in_lib(f)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def build_frozen_tools(self):
  *         iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))
@@ -24514,11 +24514,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":386
- * 
+ *
  *     @flush
  *     def build_frozen_tools(self):             # <<<<<<<<<<<<<<
  *         iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8__main___6Freeze_37build_frozen_tools, 0, __pyx_n_s_Freeze_build_frozen_tools, NULL, __pyx_n_s_main, __pyx_d, ((PyObject *)__pyx_codeobj__74)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 386, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -24543,7 +24543,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":389
  *         iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_site_packages(self):
  *         print('\nAdding site-packages')
@@ -24552,7 +24552,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":390
- * 
+ *
  *     @flush
  *     def add_site_packages(self):             # <<<<<<<<<<<<<<
  *         print('\nAdding site-packages')
@@ -24581,7 +24581,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":415
  *         self.remove_bytecode(self.site_packages)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_modules_from_dir(self, src):
  *         for x in glob.glob(join(src, '*.py')) + glob.glob(join(src, '*.so')):
@@ -24590,7 +24590,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":416
- * 
+ *
  *     @flush
  *     def add_modules_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in glob.glob(join(src, '*.py')) + glob.glob(join(src, '*.so')):
@@ -24619,7 +24619,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":422
  *                 self.fix_dependencies_in_lib(x)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def add_packages_from_dir(self, src):
  *         for x in os.listdir(src):
@@ -24628,7 +24628,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":423
- * 
+ *
  *     @flush
  *     def add_packages_from_dir(self, src):             # <<<<<<<<<<<<<<
  *         for x in os.listdir(src):
@@ -24657,7 +24657,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":431
  *                 self.add_package_dir(x)
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def filter_package(self, name):
  *         return name in ('Cython', 'modulegraph', 'macholib', 'py2app', 'bdist_mpkg', 'altgraph')
@@ -24666,11 +24666,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":432
- * 
+ *
  *     @flush
  *     def filter_package(self, name):             # <<<<<<<<<<<<<<
  *         return name in ('Cython', 'modulegraph', 'macholib', 'py2app', 'bdist_mpkg', 'altgraph')
- * 
+ *
  */
   __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_8__main___6Freeze_45filter_package, 0, __pyx_n_s_Freeze_filter_package, NULL, __pyx_n_s_main, __pyx_d, ((PyObject *)__pyx_codeobj__82)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 432, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -24695,7 +24695,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":435
  *         return name in ('Cython', 'modulegraph', 'macholib', 'py2app', 'bdist_mpkg', 'altgraph')
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def remove_bytecode(self, dest):
  *         for x in os.walk(dest):
@@ -24704,7 +24704,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":436
- * 
+ *
  *     @flush
  *     def remove_bytecode(self, dest):             # <<<<<<<<<<<<<<
  *         for x in os.walk(dest):
@@ -24733,7 +24733,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":443
  *                     os.remove(join(root, f))
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def compile_py_modules(self):
  *         self.remove_bytecode(join(self.resources_dir, 'Python'))
@@ -24742,7 +24742,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":444
- * 
+ *
  *     @flush
  *     def compile_py_modules(self):             # <<<<<<<<<<<<<<
  *         self.remove_bytecode(join(self.resources_dir, 'Python'))
@@ -24771,7 +24771,7 @@ if (!__Pyx_RefNanny) {
 
   /* "__main__.py":448
  *         py_compile(join(self.resources_dir, 'Python'))
- * 
+ *
  *     @flush             # <<<<<<<<<<<<<<
  *     def makedmg(self, d, volname, format='ULFO'):
  *         '''Copy a directory d into a dmg named volname'''
@@ -24780,7 +24780,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "__main__.py":449
- * 
+ *
  *     @flush
  *     def makedmg(self, d, volname, format='ULFO'):             # <<<<<<<<<<<<<<
  *         '''Copy a directory d into a dmg named volname'''
@@ -24809,11 +24809,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "__main__.py":138
- * 
- * 
+ *
+ *
  * class Freeze(object):             # <<<<<<<<<<<<<<
  *     FID = '@executable_path/../Frameworks'
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_3, __pyx_n_s_Freeze, __pyx_tuple__37, __pyx_t_4, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -24823,8 +24823,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":487
- * 
- * 
+ *
+ *
  * def main():             # <<<<<<<<<<<<<<
  *     args = globals()['args']
  *     ext_dir = globals()['ext_dir']
@@ -24835,8 +24835,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "__main__.py":499
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -24847,7 +24847,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_7) {
 
     /* "__main__.py":500
- * 
+ *
  * if __name__ == '__main__':
  *     main()             # <<<<<<<<<<<<<<
  */
@@ -24859,8 +24859,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "__main__.py":499
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     main()
  */
@@ -27447,12 +27447,12 @@ static PyObject* __Pyx_PyFloat_DivideObjC(PyObject *op1, PyObject *op2, double f
     (void)zerodivision_check;
     if (likely(PyFloat_CheckExact(op1))) {
         a = PyFloat_AS_DOUBLE(op1);
-        
+
     } else
     #if PY_MAJOR_VERSION < 3
     if (likely(PyInt_CheckExact(op1))) {
         a = (double) PyInt_AS_LONG(op1);
-        
+
     } else
     #endif
     if (likely(PyLong_CheckExact(op1))) {
@@ -27502,12 +27502,12 @@ static PyObject* __Pyx_PyFloat_DivideObjC(PyObject *op1, PyObject *op2, double f
         #endif
             a = PyLong_AsDouble(op1);
             if (unlikely(a == -1.0 && PyErr_Occurred())) return NULL;
-            
+
         }
     } else {
         return (inplace ? __Pyx_PyNumber_InPlaceDivide(op1, op2) : __Pyx_PyNumber_Divide(op1, op2));
     }
-        
+
         PyFPE_START_PROTECT("divide", return NULL)
         result = a / b;
         PyFPE_END_PROTECT(result)

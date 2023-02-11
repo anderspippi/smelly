@@ -973,7 +973,7 @@ struct __pyx_obj_6smelly_11window_list___pyx_scope_struct_3_iter_windows_with_nu
 
 /* "smelly/window_list.py":221
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple             # <<<<<<<<<<<<<<
  *                                                        [WindowType, bool]]:
  *         for g in self.groups:
@@ -995,7 +995,7 @@ struct __pyx_obj_6smelly_11window_list___pyx_scope_struct__iter_windows_with_vis
 
 /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -1010,7 +1010,7 @@ struct __pyx_obj_6smelly_11window_list___pyx_scope_struct_1_iter_all_layoutable_
  *     def iter_all_layoutable_groups(
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:
  */
 struct __pyx_obj_6smelly_11window_list___pyx_scope_struct_2_genexpr {
@@ -1025,7 +1025,7 @@ struct __pyx_obj_6smelly_11window_list___pyx_scope_struct_2_genexpr {
 
 /* "smelly/window_list.py":232
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:             # <<<<<<<<<<<<<<
  *         for i, g in enumerate(self.groups):
  *             if not only_visible or g.is_visible_in_layout:
@@ -2413,8 +2413,8 @@ static PyObject *__pyx_codeobj__117;
 /* Late includes */
 
 /* "smelly/window_list.py":17
- * 
- * 
+ *
+ *
  * def reset_group_id_counter() -> None:             # <<<<<<<<<<<<<<
  *     global group_id_counter
  *     group_id_counter = count(start=1)
@@ -2449,8 +2449,8 @@ static PyObject *__pyx_pf_6smelly_11window_list_reset_group_id_counter(CYTHON_UN
  * def reset_group_id_counter() -> None:
  *     global group_id_counter
  *     group_id_counter = count(start=1)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_count); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2465,8 +2465,8 @@ static PyObject *__pyx_pf_6smelly_11window_list_reset_group_id_counter(CYTHON_UN
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/window_list.py":17
- * 
- * 
+ *
+ *
  * def reset_group_id_counter() -> None:             # <<<<<<<<<<<<<<
  *     global group_id_counter
  *     group_id_counter = count(start=1)
@@ -2488,8 +2488,8 @@ static PyObject *__pyx_pf_6smelly_11window_list_reset_group_id_counter(CYTHON_UN
 }
 
 /* "smelly/window_list.py":22
- * 
- * 
+ *
+ *
  * def wrap_increment(val: int, num: int, delta: int) -> int:             # <<<<<<<<<<<<<<
  *     mult = -1 if delta < 0 else 1
  *     delta = mult * (abs(delta) % num)
@@ -2585,7 +2585,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_2wrap_increment(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_v_delta);
 
   /* "smelly/window_list.py":23
- * 
+ *
  * def wrap_increment(val: int, num: int, delta: int) -> int:
  *     mult = -1 if delta < 0 else 1             # <<<<<<<<<<<<<<
  *     delta = mult * (abs(delta) % num)
@@ -2609,7 +2609,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_2wrap_increment(CYTHON_UNUSED Py
  *     mult = -1 if delta < 0 else 1
  *     delta = mult * (abs(delta) % num)             # <<<<<<<<<<<<<<
  *     return (val + num + delta) % num
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyNumber_Absolute(__pyx_v_delta); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2626,8 +2626,8 @@ static PyObject *__pyx_pf_6smelly_11window_list_2wrap_increment(CYTHON_UNUSED Py
  *     mult = -1 if delta < 0 else 1
  *     delta = mult * (abs(delta) % num)
  *     return (val + num + delta) % num             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyNumber_Add(__pyx_v_val, __pyx_v_num); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 25, __pyx_L1_error)
@@ -2643,8 +2643,8 @@ static PyObject *__pyx_pf_6smelly_11window_list_2wrap_increment(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/window_list.py":22
- * 
- * 
+ *
+ *
  * def wrap_increment(val: int, num: int, delta: int) -> int:             # <<<<<<<<<<<<<<
  *     mult = -1 if delta < 0 else 1
  *     delta = mult * (abs(delta) % num)
@@ -2665,7 +2665,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_2wrap_increment(CYTHON_UNUSED Py
 }
 
 /* "smelly/window_list.py":29
- * 
+ *
  * class WindowGroup:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowType] = []
@@ -2701,7 +2701,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup___init__(CYTHON_UN
  *     def __init__(self) -> None:
  *         self.windows: List[WindowType] = []             # <<<<<<<<<<<<<<
  *         self.id = next(group_id_counter)
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2712,7 +2712,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup___init__(CYTHON_UN
  *     def __init__(self) -> None:
  *         self.windows: List[WindowType] = []
  *         self.id = next(group_id_counter)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __len__(self) -> int:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_group_id_counter); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
@@ -2724,7 +2724,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup___init__(CYTHON_UN
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":29
- * 
+ *
  * class WindowGroup:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowType] = []
@@ -2747,10 +2747,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup___init__(CYTHON_UN
 
 /* "smelly/window_list.py":33
  *         self.id = next(group_id_counter)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.windows)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2778,10 +2778,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_2__len__(CYTHON_UN
   __Pyx_RefNannySetupContext("__len__", 0);
 
   /* "smelly/window_list.py":34
- * 
+ *
  *     def __len__(self) -> int:
  *         return len(self.windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __bool__(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2797,10 +2797,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_2__len__(CYTHON_UN
 
   /* "smelly/window_list.py":33
  *         self.id = next(group_id_counter)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.windows)
- * 
+ *
  */
 
   /* function exit code */
@@ -2816,10 +2816,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_2__len__(CYTHON_UN
 
 /* "smelly/window_list.py":36
  *         return len(self.windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.windows)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2847,10 +2847,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_4__bool__(CYTHON_U
   __Pyx_RefNannySetupContext("__bool__", 0);
 
   /* "smelly/window_list.py":37
- * 
+ *
  *     def __bool__(self) -> bool:
  *         return bool(self.windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2866,10 +2866,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_4__bool__(CYTHON_U
 
   /* "smelly/window_list.py":36
  *         return len(self.windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.windows)
- * 
+ *
  */
 
   /* function exit code */
@@ -2885,10 +2885,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_4__bool__(CYTHON_U
 
 /* "smelly/window_list.py":39
  *         return bool(self.windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.windows)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2916,10 +2916,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_6__iter__(CYTHON_U
   __Pyx_RefNannySetupContext("__iter__", 0);
 
   /* "smelly/window_list.py":40
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:
  *         return iter(self.windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __contains__(self, window: WindowType) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2934,10 +2934,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_6__iter__(CYTHON_U
 
   /* "smelly/window_list.py":39
  *         return bool(self.windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.windows)
- * 
+ *
  */
 
   /* function exit code */
@@ -2954,7 +2954,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_6__iter__(CYTHON_U
 
 /* "smelly/window_list.py":42
  *         return iter(self.windows)
- * 
+ *
  *     def __contains__(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             if w is window:
@@ -3041,7 +3041,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_8__contains__(CYTH
   __Pyx_RefNannySetupContext("__contains__", 0);
 
   /* "smelly/window_list.py":43
- * 
+ *
  *     def __contains__(self, window: WindowType) -> bool:
  *         for w in self.windows:             # <<<<<<<<<<<<<<
  *             if w is window:
@@ -3108,7 +3108,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_8__contains__(CYTH
  *             if w is window:
  *                 return True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(Py_True);
@@ -3126,7 +3126,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_8__contains__(CYTH
     }
 
     /* "smelly/window_list.py":43
- * 
+ *
  *     def __contains__(self, window: WindowType) -> bool:
  *         for w in self.windows:             # <<<<<<<<<<<<<<
  *             if w is window:
@@ -3139,7 +3139,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_8__contains__(CYTH
  *             if w is window:
  *                 return True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3149,7 +3149,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_8__contains__(CYTH
 
   /* "smelly/window_list.py":42
  *         return iter(self.windows)
- * 
+ *
  *     def __contains__(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             if w is window:
@@ -3169,7 +3169,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_8__contains__(CYTH
 }
 
 /* "smelly/window_list.py":49
- * 
+ *
  *     @property
  *     def needs_attention(self) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
@@ -3274,7 +3274,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_10needs_attention(
  *             if w.needs_attention:
  *                 return True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(Py_True);
@@ -3305,7 +3305,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_10needs_attention(
  *             if w.needs_attention:
  *                 return True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3314,7 +3314,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_10needs_attention(
   goto __pyx_L0;
 
   /* "smelly/window_list.py":49
- * 
+ *
  *     @property
  *     def needs_attention(self) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
@@ -3335,7 +3335,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_10needs_attention(
 }
 
 /* "smelly/window_list.py":56
- * 
+ *
  *     @property
  *     def main_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         for w in reversed(self.windows):
@@ -3453,7 +3453,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_12main_window_id(C
  *             if w.overlay_type is OverlayType.main:
  *                 return w.id             # <<<<<<<<<<<<<<
  *         return self.windows[0].id if self.windows else 0
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 59, __pyx_L1_error)
@@ -3486,7 +3486,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_12main_window_id(C
  *             if w.overlay_type is OverlayType.main:
  *                 return w.id
  *         return self.windows[0].id if self.windows else 0             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3514,7 +3514,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_12main_window_id(C
   goto __pyx_L0;
 
   /* "smelly/window_list.py":56
- * 
+ *
  *     @property
  *     def main_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         for w in reversed(self.windows):
@@ -3537,11 +3537,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_12main_window_id(C
 }
 
 /* "smelly/window_list.py":63
- * 
+ *
  *     @property
  *     def active_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3574,7 +3574,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_14active_window_id
  *     @property
  *     def active_window_id(self) -> int:
  *         return self.windows[-1].id if self.windows else 0             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_window(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3602,11 +3602,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_14active_window_id
   goto __pyx_L0;
 
   /* "smelly/window_list.py":63
- * 
+ *
  *     @property
  *     def active_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  */
 
   /* function exit code */
@@ -3624,7 +3624,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_14active_window_id
 
 /* "smelly/window_list.py":66
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, window: WindowType, head_of_group: bool = False) -> None:
  *         if head_of_group:
@@ -3648,7 +3648,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_11WindowGroup_17add_window(PyObj
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/window_list.py":67
- * 
+ *
  *     def add_window(
  *             self, window: WindowType, head_of_group: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         if head_of_group:
@@ -3715,7 +3715,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_11WindowGroup_17add_window(PyObj
 
   /* "smelly/window_list.py":66
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, window: WindowType, head_of_group: bool = False) -> None:
  *         if head_of_group:
@@ -3824,7 +3824,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_16add_window(CYTHO
  *             self.windows.insert(0, window)
  *         else:
  *             self.windows.append(window)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:
  */
   /*else*/ {
@@ -3837,7 +3837,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_16add_window(CYTHO
 
   /* "smelly/window_list.py":66
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, window: WindowType, head_of_group: bool = False) -> None:
  *         if head_of_group:
@@ -3861,7 +3861,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_16add_window(CYTHO
 
 /* "smelly/window_list.py":73
  *             self.windows.append(window)
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         try:
  *             idx = self.windows.index(window)
@@ -3952,7 +3952,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_18move_window_to_t
   __Pyx_RefNannySetupContext("move_window_to_top_of_group", 0);
 
   /* "smelly/window_list.py":74
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:
  *         try:             # <<<<<<<<<<<<<<
  *             idx = self.windows.index(window)
@@ -3998,7 +3998,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_18move_window_to_t
       __pyx_t_4 = 0;
 
       /* "smelly/window_list.py":74
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:
  *         try:             # <<<<<<<<<<<<<<
  *             idx = self.windows.index(window)
@@ -4048,7 +4048,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_18move_window_to_t
     __pyx_L5_except_error:;
 
     /* "smelly/window_list.py":74
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:
  *         try:             # <<<<<<<<<<<<<<
  *             idx = self.windows.index(window)
@@ -4125,7 +4125,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_18move_window_to_t
  *         del self.windows[idx]
  *         self.windows.append(window)             # <<<<<<<<<<<<<<
  *         return True
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_windows); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -4136,7 +4136,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_18move_window_to_t
  *         del self.windows[idx]
  *         self.windows.append(window)
  *         return True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4146,7 +4146,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_18move_window_to_t
 
   /* "smelly/window_list.py":73
  *             self.windows.append(window)
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         try:
  *             idx = self.windows.index(window)
@@ -4168,7 +4168,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_18move_window_to_t
 
 /* "smelly/window_list.py":84
  *         return True
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:             # <<<<<<<<<<<<<<
  *         with suppress(ValueError):
  *             self.windows.remove(window)
@@ -4259,11 +4259,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_20remove_window(CY
   __Pyx_RefNannySetupContext("remove_window", 0);
 
   /* "smelly/window_list.py":85
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:
  *         with suppress(ValueError):             # <<<<<<<<<<<<<<
  *             self.windows.remove(window)
- * 
+ *
  */
   /*with:*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_suppress); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
@@ -4318,7 +4318,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_20remove_window(CY
  *     def remove_window(self, window: WindowType) -> None:
  *         with suppress(ValueError):
  *             self.windows.remove(window)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:
  */
           __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_windows); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L7_error)
@@ -4344,11 +4344,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_20remove_window(CY
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
           /* "smelly/window_list.py":85
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:
  *         with suppress(ValueError):             # <<<<<<<<<<<<<<
  *             self.windows.remove(window)
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -4382,7 +4382,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_20remove_window(CY
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 85, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4426,7 +4426,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_20remove_window(CY
 
   /* "smelly/window_list.py":84
  *         return True
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:             # <<<<<<<<<<<<<<
  *         with suppress(ValueError):
  *             self.windows.remove(window)
@@ -4450,10 +4450,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_20remove_window(CY
 
 /* "smelly/window_list.py":88
  *             self.windows.remove(window)
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4488,10 +4488,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_22serialize_state(
   __Pyx_RefNannySetupContext("serialize_state", 0);
 
   /* "smelly/window_list.py":89
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4576,10 +4576,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_22serialize_state(
 
   /* "smelly/window_list.py":88
  *             self.windows.remove(window)
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  */
 
   /* function exit code */
@@ -4601,7 +4601,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_22serialize_state(
 
 /* "smelly/window_list.py":91
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,             # <<<<<<<<<<<<<<
  *                    is_single_window: bool = False) -> int:
  *         if not self.windows:
@@ -4627,7 +4627,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_11WindowGroup_25decoration(PyObj
     values[2] = ((PyObject *)((PyObject *)__pyx_int_1));
 
     /* "smelly/window_list.py":92
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,
  *                    is_single_window: bool = False) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
@@ -4705,7 +4705,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_11WindowGroup_25decoration(PyObj
 
   /* "smelly/window_list.py":91
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,             # <<<<<<<<<<<<<<
  *                    is_single_window: bool = False) -> int:
  *         if not self.windows:
@@ -4771,7 +4771,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_24decoration(CYTHO
  *             return 0
  *         w = self.windows[0]             # <<<<<<<<<<<<<<
  *         return w.effective_margin(which, is_single_window=is_single_window) + w.effective_border() * border_mult + w.effective_padding(which)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_windows); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4785,7 +4785,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_24decoration(CYTHO
  *             return 0
  *         w = self.windows[0]
  *         return w.effective_margin(which, is_single_window=is_single_window) + w.effective_border() * border_mult + w.effective_padding(which)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def effective_padding(self, which: EdgeLiteral) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4855,7 +4855,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_24decoration(CYTHO
 
   /* "smelly/window_list.py":91
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,             # <<<<<<<<<<<<<<
  *                    is_single_window: bool = False) -> int:
  *         if not self.windows:
@@ -4878,7 +4878,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_24decoration(CYTHO
 
 /* "smelly/window_list.py":98
  *         return w.effective_margin(which, is_single_window=is_single_window) + w.effective_border() * border_mult + w.effective_padding(which)
- * 
+ *
  *     def effective_padding(self, which: EdgeLiteral) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -4964,7 +4964,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_26effective_paddin
   __Pyx_RefNannySetupContext("effective_padding", 0);
 
   /* "smelly/window_list.py":99
- * 
+ *
  *     def effective_padding(self, which: EdgeLiteral) -> int:
  *         if not self.windows:             # <<<<<<<<<<<<<<
  *             return 0
@@ -4990,7 +4990,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_26effective_paddin
     goto __pyx_L0;
 
     /* "smelly/window_list.py":99
- * 
+ *
  *     def effective_padding(self, which: EdgeLiteral) -> int:
  *         if not self.windows:             # <<<<<<<<<<<<<<
  *             return 0
@@ -5003,7 +5003,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_26effective_paddin
  *             return 0
  *         w = self.windows[0]             # <<<<<<<<<<<<<<
  *         return w.effective_padding(which)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_windows); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5017,7 +5017,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_26effective_paddin
  *             return 0
  *         w = self.windows[0]
  *         return w.effective_padding(which)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def effective_border(self) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5044,7 +5044,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_26effective_paddin
 
   /* "smelly/window_list.py":98
  *         return w.effective_margin(which, is_single_window=is_single_window) + w.effective_border() * border_mult + w.effective_padding(which)
- * 
+ *
  *     def effective_padding(self, which: EdgeLiteral) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -5066,7 +5066,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_26effective_paddin
 
 /* "smelly/window_list.py":104
  *         return w.effective_padding(which)
- * 
+ *
  *     def effective_border(self) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -5101,7 +5101,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_28effective_border
   __Pyx_RefNannySetupContext("effective_border", 0);
 
   /* "smelly/window_list.py":105
- * 
+ *
  *     def effective_border(self) -> int:
  *         if not self.windows:             # <<<<<<<<<<<<<<
  *             return 0
@@ -5127,7 +5127,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_28effective_border
     goto __pyx_L0;
 
     /* "smelly/window_list.py":105
- * 
+ *
  *     def effective_border(self) -> int:
  *         if not self.windows:             # <<<<<<<<<<<<<<
  *             return 0
@@ -5140,7 +5140,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_28effective_border
  *             return 0
  *         w = self.windows[0]             # <<<<<<<<<<<<<<
  *         return w.effective_border()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_windows); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5154,7 +5154,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_28effective_border
  *             return 0
  *         w = self.windows[0]
  *         return w.effective_border()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_geometry(self, geom: WindowGeometry) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5181,7 +5181,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_28effective_border
 
   /* "smelly/window_list.py":104
  *         return w.effective_padding(which)
- * 
+ *
  *     def effective_border(self) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -5203,7 +5203,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_28effective_border
 
 /* "smelly/window_list.py":110
  *         return w.effective_border()
- * 
+ *
  *     def set_geometry(self, geom: WindowGeometry) -> None:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             w.set_geometry(geom)
@@ -5290,11 +5290,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_30set_geometry(CYT
   __Pyx_RefNannySetupContext("set_geometry", 0);
 
   /* "smelly/window_list.py":111
- * 
+ *
  *     def set_geometry(self, geom: WindowGeometry) -> None:
  *         for w in self.windows:             # <<<<<<<<<<<<<<
  *             w.set_geometry(geom)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_windows); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5345,7 +5345,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_30set_geometry(CYT
  *     def set_geometry(self, geom: WindowGeometry) -> None:
  *         for w in self.windows:
  *             w.set_geometry(geom)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_set_geometry); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
@@ -5368,18 +5368,18 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_30set_geometry(CYT
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/window_list.py":111
- * 
+ *
  *     def set_geometry(self, geom: WindowGeometry) -> None:
  *         for w in self.windows:             # <<<<<<<<<<<<<<
  *             w.set_geometry(geom)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":110
  *         return w.effective_border()
- * 
+ *
  *     def set_geometry(self, geom: WindowGeometry) -> None:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             w.set_geometry(geom)
@@ -5403,7 +5403,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_30set_geometry(CYT
 }
 
 /* "smelly/window_list.py":115
- * 
+ *
  *     @property
  *     def default_bg(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -5469,7 +5469,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_32default_bg(CYTHO
  *             w: WindowType = self.windows[-1]
  *             return w.screen.color_profile.default_bg             # <<<<<<<<<<<<<<
  *         return 0
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_screen); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L1_error)
@@ -5497,7 +5497,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_32default_bg(CYTHO
  *             w: WindowType = self.windows[-1]
  *             return w.screen.color_profile.default_bg
  *         return 0             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5506,7 +5506,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_32default_bg(CYTHO
   goto __pyx_L0;
 
   /* "smelly/window_list.py":115
- * 
+ *
  *     @property
  *     def default_bg(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -5527,7 +5527,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_32default_bg(CYTHO
 }
 
 /* "smelly/window_list.py":122
- * 
+ *
  *     @property
  *     def geometry(self) -> Optional[WindowGeometry]:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -5593,7 +5593,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_34geometry(CYTHON_
  *             w: WindowType = self.windows[-1]
  *             return w.geometry             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_geometry); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
@@ -5615,7 +5615,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_34geometry(CYTHON_
  *             w: WindowType = self.windows[-1]
  *             return w.geometry
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5623,7 +5623,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_34geometry(CYTHON_
   goto __pyx_L0;
 
   /* "smelly/window_list.py":122
- * 
+ *
  *     @property
  *     def geometry(self) -> Optional[WindowGeometry]:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -5644,7 +5644,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_34geometry(CYTHON_
 }
 
 /* "smelly/window_list.py":129
- * 
+ *
  *     @property
  *     def is_visible_in_layout(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -5710,7 +5710,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_36is_visible_in_la
  *             w: WindowType = self.windows[-1]
  *             return w.is_visible_in_layout             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_w, __pyx_n_s_is_visible_in_layout); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
@@ -5732,8 +5732,8 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_36is_visible_in_la
  *             w: WindowType = self.windows[-1]
  *             return w.is_visible_in_layout
  *         return False             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(Py_False);
@@ -5741,7 +5741,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_36is_visible_in_la
   goto __pyx_L0;
 
   /* "smelly/window_list.py":129
- * 
+ *
  *     @property
  *     def is_visible_in_layout(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -5762,7 +5762,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_11WindowGroup_36is_visible_in_la
 }
 
 /* "smelly/window_list.py":137
- * 
+ *
  * class WindowList:
  *     def __init__(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.all_windows: List[WindowType] = []
@@ -5895,7 +5895,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList___init__(CYTHON_UNU
  *         self._active_group_idx: int = -1
  *         self.active_group_history: Deque[int] = deque((), 64)             # <<<<<<<<<<<<<<
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_deque); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5909,7 +5909,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList___init__(CYTHON_UNU
  *         self._active_group_idx: int = -1
  *         self.active_group_history: Deque[int] = deque((), 64)
  *         self.tabref = weakref.ref(tab)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __len__(self) -> int:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_weakref); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
@@ -5936,7 +5936,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList___init__(CYTHON_UNU
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":137
- * 
+ *
  * class WindowList:
  *     def __init__(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.all_windows: List[WindowType] = []
@@ -5960,10 +5960,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList___init__(CYTHON_UNU
 
 /* "smelly/window_list.py":145
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_windows)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5991,10 +5991,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_2__len__(CYTHON_UNU
   __Pyx_RefNannySetupContext("__len__", 0);
 
   /* "smelly/window_list.py":146
- * 
+ *
  *     def __len__(self) -> int:
  *         return len(self.all_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __bool__(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6010,10 +6010,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_2__len__(CYTHON_UNU
 
   /* "smelly/window_list.py":145
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_windows)
- * 
+ *
  */
 
   /* function exit code */
@@ -6029,10 +6029,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_2__len__(CYTHON_UNU
 
 /* "smelly/window_list.py":148
  *         return len(self.all_windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.all_windows)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6060,10 +6060,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_4__bool__(CYTHON_UN
   __Pyx_RefNannySetupContext("__bool__", 0);
 
   /* "smelly/window_list.py":149
- * 
+ *
  *     def __bool__(self) -> bool:
  *         return bool(self.all_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6079,10 +6079,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_4__bool__(CYTHON_UN
 
   /* "smelly/window_list.py":148
  *         return len(self.all_windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.all_windows)
- * 
+ *
  */
 
   /* function exit code */
@@ -6098,10 +6098,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_4__bool__(CYTHON_UN
 
 /* "smelly/window_list.py":151
  *         return bool(self.all_windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_windows)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6129,10 +6129,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_6__iter__(CYTHON_UN
   __Pyx_RefNannySetupContext("__iter__", 0);
 
   /* "smelly/window_list.py":152
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:
  *         return iter(self.all_windows)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __contains__(self, window: WindowOrId) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6147,10 +6147,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_6__iter__(CYTHON_UN
 
   /* "smelly/window_list.py":151
  *         return bool(self.all_windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_windows)
- * 
+ *
  */
 
   /* function exit code */
@@ -6167,7 +6167,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_6__iter__(CYTHON_UN
 
 /* "smelly/window_list.py":154
  *         return iter(self.all_windows)
- * 
+ *
  *     def __contains__(self, window: WindowOrId) -> bool:             # <<<<<<<<<<<<<<
  *         q = window if isinstance(window, int) else window.id
  *         return q in self.id_map
@@ -6251,13 +6251,13 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_8__contains__(CYTHO
   __Pyx_RefNannySetupContext("__contains__", 0);
 
   /* "smelly/window_list.py":155
- * 
+ *
  *     def __contains__(self, window: WindowOrId) -> bool:
  *         q = window if isinstance(window, int) else window.id             # <<<<<<<<<<<<<<
  *         return q in self.id_map
- * 
+ *
  */
-  __pyx_t_2 = PyInt_Check(__pyx_v_window); 
+  __pyx_t_2 = PyInt_Check(__pyx_v_window);
   if ((__pyx_t_2 != 0)) {
     __Pyx_INCREF(__pyx_v_window);
     __pyx_t_1 = __pyx_v_window;
@@ -6274,7 +6274,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_8__contains__(CYTHO
  *     def __contains__(self, window: WindowOrId) -> bool:
  *         q = window if isinstance(window, int) else window.id
  *         return q in self.id_map             # <<<<<<<<<<<<<<
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6290,7 +6290,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_8__contains__(CYTHO
 
   /* "smelly/window_list.py":154
  *         return iter(self.all_windows)
- * 
+ *
  *     def __contains__(self, window: WindowOrId) -> bool:             # <<<<<<<<<<<<<<
  *         q = window if isinstance(window, int) else window.id
  *         return q in self.id_map
@@ -6311,7 +6311,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_8__contains__(CYTHO
 
 /* "smelly/window_list.py":158
  *         return q in self.id_map
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {
  *             'active_group_idx': self.active_group_idx,
@@ -6349,7 +6349,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_10serialize_state(C
   __Pyx_RefNannySetupContext("serialize_state", 0);
 
   /* "smelly/window_list.py":159
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:
  *         return {             # <<<<<<<<<<<<<<
  *             'active_group_idx': self.active_group_idx,
@@ -6391,7 +6391,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_10serialize_state(C
  *             'active_group_history': list(self.active_group_history),
  *             'window_groups': [g.serialize_state() for g in self.groups],             # <<<<<<<<<<<<<<
  *         }
- * 
+ *
  */
   __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -6468,7 +6468,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_10serialize_state(C
 
   /* "smelly/window_list.py":158
  *         return q in self.id_map
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {
  *             'active_group_idx': self.active_group_idx,
@@ -6492,11 +6492,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_10serialize_state(C
 }
 
 /* "smelly/window_list.py":166
- * 
+ *
  *     @property
  *     def active_group_idx(self) -> int:             # <<<<<<<<<<<<<<
  *         return self._active_group_idx
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6526,7 +6526,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_12active_group_idx(
  *     @property
  *     def active_group_idx(self) -> int:
  *         return self._active_group_idx             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6537,11 +6537,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_12active_group_idx(
   goto __pyx_L0;
 
   /* "smelly/window_list.py":166
- * 
+ *
  *     @property
  *     def active_group_idx(self) -> int:             # <<<<<<<<<<<<<<
  *         return self._active_group_idx
- * 
+ *
  */
 
   /* function exit code */
@@ -6556,7 +6556,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_12active_group_idx(
 }
 
 /* "smelly/window_list.py":170
- * 
+ *
  *     @property
  *     def active_window_history(self) -> List[int]:             # <<<<<<<<<<<<<<
  *         ans = []
@@ -6817,7 +6817,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_14active_window_his
  *                     seen.add(w)
  *                     ans.append(w)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
         __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_ans, __pyx_v_w); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 180, __pyx_L1_error)
 
@@ -6853,7 +6853,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_14active_window_his
  *                     seen.add(w)
  *                     ans.append(w)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def notify_on_active_window_change(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6862,7 +6862,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_14active_window_his
   goto __pyx_L0;
 
   /* "smelly/window_list.py":170
- * 
+ *
  *     @property
  *     def active_window_history(self) -> List[int]:             # <<<<<<<<<<<<<<
  *         ans = []
@@ -6891,7 +6891,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_14active_window_his
 
 /* "smelly/window_list.py":183
  *         return ans
- * 
+ *
  *     def notify_on_active_window_change(             # <<<<<<<<<<<<<<
  *             self, old_active_window: Optional[WindowType],
  *             new_active_window: Optional[WindowType]) -> None:
@@ -7111,7 +7111,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_16notify_on_active_
  *         tab = self.tabref()
  *         if tab is not None:             # <<<<<<<<<<<<<<
  *             tab.active_window_changed()
- * 
+ *
  */
   __pyx_t_1 = (__pyx_v_tab != Py_None);
   __pyx_t_2 = (__pyx_t_1 != 0);
@@ -7121,7 +7121,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_16notify_on_active_
  *         tab = self.tabref()
  *         if tab is not None:
  *             tab.active_window_changed()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_active_group_idx(self, i: int, notify: bool = True) -> bool:
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_tab, __pyx_n_s_active_window_changed); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L1_error)
@@ -7148,13 +7148,13 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_16notify_on_active_
  *         tab = self.tabref()
  *         if tab is not None:             # <<<<<<<<<<<<<<
  *             tab.active_window_changed()
- * 
+ *
  */
   }
 
   /* "smelly/window_list.py":183
  *         return ans
- * 
+ *
  *     def notify_on_active_window_change(             # <<<<<<<<<<<<<<
  *             self, old_active_window: Optional[WindowType],
  *             new_active_window: Optional[WindowType]) -> None:
@@ -7178,7 +7178,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_16notify_on_active_
 
 /* "smelly/window_list.py":194
  *             tab.active_window_changed()
- * 
+ *
  *     def set_active_group_idx(self, i: int, notify: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         changed = False
  *         if i != self._active_group_idx and 0 <= i < len(self.groups):
@@ -7291,7 +7291,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_18set_active_group_
   __Pyx_RefNannySetupContext("set_active_group_idx", 0);
 
   /* "smelly/window_list.py":195
- * 
+ *
  *     def set_active_group_idx(self, i: int, notify: bool = True) -> bool:
  *         changed = False             # <<<<<<<<<<<<<<
  *         if i != self._active_group_idx and 0 <= i < len(self.groups):
@@ -7497,7 +7497,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_18set_active_group_
                 __Pyx_GIVEREF(__pyx_t_6);
                 __Pyx_XGIVEREF(__pyx_t_2);
                 __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_6, __pyx_t_2);
-                __pyx_t_3 = 0; __pyx_t_6 = 0; __pyx_t_2 = 0; 
+                __pyx_t_3 = 0; __pyx_t_6 = 0; __pyx_t_2 = 0;
                 __PYX_ERR(0, 200, __pyx_L13_except_error)
               }
               __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -7683,7 +7683,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_18set_active_group_
  *                         old_active_window, new_active_window)
  *                 changed = True             # <<<<<<<<<<<<<<
  *         return changed
- * 
+ *
  */
       __pyx_v_changed = 1;
 
@@ -7709,7 +7709,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_18set_active_group_
  *                         old_active_window, new_active_window)
  *                 changed = True
  *         return changed             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_active_group(self, group_id: int) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7721,7 +7721,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_18set_active_group_
 
   /* "smelly/window_list.py":194
  *             tab.active_window_changed()
- * 
+ *
  *     def set_active_group_idx(self, i: int, notify: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         changed = False
  *         if i != self._active_group_idx and 0 <= i < len(self.groups):
@@ -7746,7 +7746,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_18set_active_group_
 
 /* "smelly/window_list.py":212
  *         return changed
- * 
+ *
  *     def set_active_group(self, group_id: int) -> bool:             # <<<<<<<<<<<<<<
  *         for i, gr in enumerate(self.groups):
  *             if gr.id == group_id:
@@ -7836,7 +7836,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_20set_active_group(
   __Pyx_RefNannySetupContext("set_active_group", 0);
 
   /* "smelly/window_list.py":213
- * 
+ *
  *     def set_active_group(self, group_id: int) -> bool:
  *         for i, gr in enumerate(self.groups):             # <<<<<<<<<<<<<<
  *             if gr.id == group_id:
@@ -7916,7 +7916,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_20set_active_group(
  *             if gr.id == group_id:
  *                 return self.set_active_group_idx(i)             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_active_group_idx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
@@ -7952,7 +7952,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_20set_active_group(
     }
 
     /* "smelly/window_list.py":213
- * 
+ *
  *     def set_active_group(self, group_id: int) -> bool:
  *         for i, gr in enumerate(self.groups):             # <<<<<<<<<<<<<<
  *             if gr.id == group_id:
@@ -7966,7 +7966,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_20set_active_group(
  *             if gr.id == group_id:
  *                 return self.set_active_group_idx(i)
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def change_tab(self, tab: TabType) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7976,7 +7976,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_20set_active_group(
 
   /* "smelly/window_list.py":212
  *         return changed
- * 
+ *
  *     def set_active_group(self, group_id: int) -> bool:             # <<<<<<<<<<<<<<
  *         for i, gr in enumerate(self.groups):
  *             if gr.id == group_id:
@@ -8001,10 +8001,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_20set_active_group(
 
 /* "smelly/window_list.py":218
  *         return False
- * 
+ *
  *     def change_tab(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8084,10 +8084,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_22change_tab(CYTHON
   __Pyx_RefNannySetupContext("change_tab", 0);
 
   /* "smelly/window_list.py":219
- * 
+ *
  *     def change_tab(self, tab: TabType) -> None:
  *         self.tabref = weakref.ref(tab)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_weakref); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 219, __pyx_L1_error)
@@ -8115,10 +8115,10 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_22change_tab(CYTHON
 
   /* "smelly/window_list.py":218
  *         return False
- * 
+ *
  *     def change_tab(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  */
 
   /* function exit code */
@@ -8139,7 +8139,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26generator(__pyx_C
 
 /* "smelly/window_list.py":221
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple             # <<<<<<<<<<<<<<
  *                                                        [WindowType, bool]]:
  *         for g in self.groups:
@@ -8295,7 +8295,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26generator(__pyx_C
  *             aw = g.active_window_id
  *             for window in g:             # <<<<<<<<<<<<<<
  *                 yield window, window.id == aw
- * 
+ *
  */
     if (likely(PyList_CheckExact(__pyx_cur_scope->__pyx_v_g)) || PyTuple_CheckExact(__pyx_cur_scope->__pyx_v_g)) {
       __pyx_t_1 = __pyx_cur_scope->__pyx_v_g; __Pyx_INCREF(__pyx_t_1); __pyx_t_5 = 0;
@@ -8345,7 +8345,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26generator(__pyx_C
  *             aw = g.active_window_id
  *             for window in g:
  *                 yield window, window.id == aw             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_all_layoutable_groups(
  */
       __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_window, __pyx_n_s_id); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 226, __pyx_L1_error)
@@ -8394,7 +8394,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26generator(__pyx_C
  *             aw = g.active_window_id
  *             for window in g:             # <<<<<<<<<<<<<<
  *                 yield window, window.id == aw
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -8412,7 +8412,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26generator(__pyx_C
 
   /* "smelly/window_list.py":221
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple             # <<<<<<<<<<<<<<
  *                                                        [WindowType, bool]]:
  *         for g in self.groups:
@@ -8440,7 +8440,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26generator(__pyx_C
 
 /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -8463,11 +8463,11 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_28iter_all_layoutab
     PyObject* values[2] = {0,0};
 
     /* "smelly/window_list.py":229
- * 
+ *
  *     def iter_all_layoutable_groups(
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:             # <<<<<<<<<<<<<<
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
- * 
+ *
  */
     values[1] = ((PyObject *)((PyObject *)Py_False));
     if (unlikely(__pyx_kwds)) {
@@ -8520,7 +8520,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_28iter_all_layoutab
 
   /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -8536,7 +8536,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26iter_all_layoutab
  *     def iter_all_layoutable_groups(
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:
  */
 
@@ -8695,7 +8695,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_26iter_all_layoutab
 
 /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -8730,7 +8730,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_27iter_all_layoutab
  *     def iter_all_layoutable_groups(
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8758,7 +8758,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_27iter_all_layoutab
 
   /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -8782,7 +8782,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_31generator1(__pyx_
 
 /* "smelly/window_list.py":232
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:             # <<<<<<<<<<<<<<
  *         for i, g in enumerate(self.groups):
  *             if not only_visible or g.is_visible_in_layout:
@@ -8928,7 +8928,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_31generator1(__pyx_
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 232, __pyx_L1_error)
 
   /* "smelly/window_list.py":233
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:
  *         for i, g in enumerate(self.groups):             # <<<<<<<<<<<<<<
  *             if not only_visible or g.is_visible_in_layout:
@@ -9099,7 +9099,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_31generator1(__pyx_
  *                     if window.id == aw:
  *                         yield i, window             # <<<<<<<<<<<<<<
  *                         break
- * 
+ *
  */
           __pyx_t_12 = PyTuple_New(2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 238, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
@@ -9147,7 +9147,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_31generator1(__pyx_
  *                     if window.id == aw:
  *                         yield i, window
  *                         break             # <<<<<<<<<<<<<<
- * 
+ *
  *     def make_previous_group_active(
  */
           goto __pyx_L10_break;
@@ -9182,7 +9182,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_31generator1(__pyx_
     }
 
     /* "smelly/window_list.py":233
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:
  *         for i, g in enumerate(self.groups):             # <<<<<<<<<<<<<<
  *             if not only_visible or g.is_visible_in_layout:
@@ -9195,7 +9195,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_31generator1(__pyx_
 
   /* "smelly/window_list.py":232
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:             # <<<<<<<<<<<<<<
  *         for i, g in enumerate(self.groups):
  *             if not only_visible or g.is_visible_in_layout:
@@ -9224,7 +9224,7 @@ static PyObject *__pyx_gb_6smelly_11window_list_10WindowList_31generator1(__pyx_
 
 /* "smelly/window_list.py":241
  *                         break
- * 
+ *
  *     def make_previous_group_active(             # <<<<<<<<<<<<<<
  *             self, which: int = 1, notify: bool = True) -> None:
  *         which = max(1, which)
@@ -9249,7 +9249,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_33make_previous_gro
     values[1] = ((PyObject *)((PyObject *)__pyx_int_1));
 
     /* "smelly/window_list.py":242
- * 
+ *
  *     def make_previous_group_active(
  *             self, which: int = 1, notify: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         which = max(1, which)
@@ -9317,7 +9317,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_33make_previous_gro
 
   /* "smelly/window_list.py":241
  *                         break
- * 
+ *
  *     def make_previous_group_active(             # <<<<<<<<<<<<<<
  *             self, which: int = 1, notify: bool = True) -> None:
  *         which = max(1, which)
@@ -9643,7 +9643,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_32make_previous_gro
  *                     self.set_active_group_idx(x, notify=notify)
  *                     return             # <<<<<<<<<<<<<<
  *         self.set_active_group_idx(len(self.groups) - 1, notify=notify)
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -9682,7 +9682,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_32make_previous_gro
  *                     self.set_active_group_idx(x, notify=notify)
  *                     return
  *         self.set_active_group_idx(len(self.groups) - 1, notify=notify)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_active_group_idx); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 255, __pyx_L1_error)
@@ -9710,7 +9710,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_32make_previous_gro
 
   /* "smelly/window_list.py":241
  *                         break
- * 
+ *
  *     def make_previous_group_active(             # <<<<<<<<<<<<<<
  *             self, which: int = 1, notify: bool = True) -> None:
  *         which = max(1, which)
@@ -9743,11 +9743,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_32make_previous_gro
 }
 
 /* "smelly/window_list.py":258
- * 
+ *
  *     @property
  *     def num_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.groups)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -9778,7 +9778,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_34num_groups(CYTHON
  *     @property
  *     def num_groups(self) -> int:
  *         return len(self.groups)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def group_for_window(self, x: WindowOrId) -> Optional[WindowGroup]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9793,11 +9793,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_34num_groups(CYTHON
   goto __pyx_L0;
 
   /* "smelly/window_list.py":258
- * 
+ *
  *     @property
  *     def num_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.groups)
- * 
+ *
  */
 
   /* function exit code */
@@ -9813,7 +9813,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_34num_groups(CYTHON
 
 /* "smelly/window_list.py":261
  *         return len(self.groups)
- * 
+ *
  *     def group_for_window(self, x: WindowOrId) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for g in self.groups:
@@ -9902,13 +9902,13 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_36group_for_window(
   __Pyx_RefNannySetupContext("group_for_window", 0);
 
   /* "smelly/window_list.py":262
- * 
+ *
  *     def group_for_window(self, x: WindowOrId) -> Optional[WindowGroup]:
  *         q = self.id_map[x] if isinstance(x, int) else x             # <<<<<<<<<<<<<<
  *         for g in self.groups:
  *             if q in g:
  */
-  __pyx_t_2 = PyInt_Check(__pyx_v_x); 
+  __pyx_t_2 = PyInt_Check(__pyx_v_x);
   if ((__pyx_t_2 != 0)) {
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -9992,7 +9992,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_36group_for_window(
  *             if q in g:
  *                 return g             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_g);
@@ -10023,7 +10023,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_36group_for_window(
  *             if q in g:
  *                 return g
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def group_idx_for_window(self, x: WindowOrId) -> Optional[int]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10032,7 +10032,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_36group_for_window(
 
   /* "smelly/window_list.py":261
  *         return len(self.groups)
- * 
+ *
  *     def group_for_window(self, x: WindowOrId) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for g in self.groups:
@@ -10055,7 +10055,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_36group_for_window(
 
 /* "smelly/window_list.py":268
  *         return None
- * 
+ *
  *     def group_idx_for_window(self, x: WindowOrId) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for i, g in enumerate(self.groups):
@@ -10145,13 +10145,13 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_38group_idx_for_win
   __Pyx_RefNannySetupContext("group_idx_for_window", 0);
 
   /* "smelly/window_list.py":269
- * 
+ *
  *     def group_idx_for_window(self, x: WindowOrId) -> Optional[int]:
  *         q = self.id_map[x] if isinstance(x, int) else x             # <<<<<<<<<<<<<<
  *         for i, g in enumerate(self.groups):
  *             if q in g:
  */
-  __pyx_t_2 = PyInt_Check(__pyx_v_x); 
+  __pyx_t_2 = PyInt_Check(__pyx_v_x);
   if ((__pyx_t_2 != 0)) {
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 269, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -10244,7 +10244,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_38group_idx_for_win
  *             if q in g:
  *                 return i             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_i);
@@ -10277,7 +10277,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_38group_idx_for_win
  *             if q in g:
  *                 return i
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10286,7 +10286,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_38group_idx_for_win
 
   /* "smelly/window_list.py":268
  *         return None
- * 
+ *
  *     def group_idx_for_window(self, x: WindowOrId) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for i, g in enumerate(self.groups):
@@ -10310,7 +10310,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_38group_idx_for_win
 
 /* "smelly/window_list.py":275
  *         return None
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(window)
  *         if g is None:
@@ -10401,7 +10401,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_40move_window_to_to
   __Pyx_RefNannySetupContext("move_window_to_top_of_group", 0);
 
   /* "smelly/window_list.py":276
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:
  *         g = self.group_for_window(window)             # <<<<<<<<<<<<<<
  *         if g is None:
@@ -10561,7 +10561,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_40move_window_to_to
  *         if changed:
  *             self.notify_on_active_window_change(before, after)             # <<<<<<<<<<<<<<
  *         return changed
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_notify_on_active_window_change); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -10625,7 +10625,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_40move_window_to_to
  *         if changed:
  *             self.notify_on_active_window_change(before, after)
  *         return changed             # <<<<<<<<<<<<<<
- * 
+ *
  *     def windows_in_group_of(self, x: WindowOrId) -> Iterator[WindowType]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10635,7 +10635,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_40move_window_to_to
 
   /* "smelly/window_list.py":275
  *         return None
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(window)
  *         if g is None:
@@ -10661,7 +10661,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_40move_window_to_to
 
 /* "smelly/window_list.py":288
  *         return changed
- * 
+ *
  *     def windows_in_group_of(self, x: WindowOrId) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(x)
  *         if g is not None:
@@ -10747,7 +10747,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_42windows_in_group_
   __Pyx_RefNannySetupContext("windows_in_group_of", 0);
 
   /* "smelly/window_list.py":289
- * 
+ *
  *     def windows_in_group_of(self, x: WindowOrId) -> Iterator[WindowType]:
  *         g = self.group_for_window(x)             # <<<<<<<<<<<<<<
  *         if g is not None:
@@ -10789,7 +10789,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_42windows_in_group_
  *         if g is not None:
  *             return iter(g)             # <<<<<<<<<<<<<<
  *         return iter(())
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_1 = PyObject_GetIter(__pyx_v_g); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
@@ -10811,7 +10811,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_42windows_in_group_
  *         if g is not None:
  *             return iter(g)
  *         return iter(())             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10823,7 +10823,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_42windows_in_group_
 
   /* "smelly/window_list.py":288
  *         return changed
- * 
+ *
  *     def windows_in_group_of(self, x: WindowOrId) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(x)
  *         if g is not None:
@@ -10844,7 +10844,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_42windows_in_group_
 }
 
 /* "smelly/window_list.py":295
- * 
+ *
  *     @property
  *     def active_group(self) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -10945,7 +10945,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_44active_group(CYTH
  *         with suppress(Exception):
  *             return self.groups[self.active_group_idx]             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_groups); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 297, __pyx_L7_error)
@@ -10995,7 +10995,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_44active_group(CYTH
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_2, __pyx_t_1);
-            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 296, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -11060,7 +11060,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_44active_group(CYTH
  *         with suppress(Exception):
  *             return self.groups[self.active_group_idx]
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11068,7 +11068,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_44active_group(CYTH
   goto __pyx_L0;
 
   /* "smelly/window_list.py":295
- * 
+ *
  *     @property
  *     def active_group(self) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -11090,7 +11090,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_44active_group(CYTH
 }
 
 /* "smelly/window_list.py":301
- * 
+ *
  *     @property
  *     def active_window(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -11191,7 +11191,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_46active_window(CYT
  *         with suppress(Exception):
  *             return self.id_map[self.groups[self.active_group_idx].active_window_id]             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 303, __pyx_L7_error)
@@ -11250,7 +11250,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_46active_window(CYT
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_3, __pyx_t_1);
-            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
+            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 302, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11315,7 +11315,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_46active_window(CYT
  *         with suppress(Exception):
  *             return self.id_map[self.groups[self.active_group_idx].active_window_id]
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11323,7 +11323,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_46active_window(CYT
   goto __pyx_L0;
 
   /* "smelly/window_list.py":301
- * 
+ *
  *     @property
  *     def active_window(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -11345,7 +11345,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_46active_window(CYT
 }
 
 /* "smelly/window_list.py":307
- * 
+ *
  *     @property
  *     def active_group_main(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -11446,7 +11446,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_48active_group_main
  *         with suppress(Exception):
  *             return self.id_map[self.groups[self.active_group_idx].main_window_id]             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L7_error)
@@ -11505,7 +11505,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_48active_group_main
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_3, __pyx_t_1);
-            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
+            __pyx_t_5 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 308, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -11570,7 +11570,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_48active_group_main
  *         with suppress(Exception):
  *             return self.id_map[self.groups[self.active_group_idx].main_window_id]
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11578,7 +11578,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_48active_group_main
   goto __pyx_L0;
 
   /* "smelly/window_list.py":307
- * 
+ *
  *     @property
  *     def active_group_main(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -11601,7 +11601,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_48active_group_main
 
 /* "smelly/window_list.py":312
  *         return None
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             q = self.id_map[x] if isinstance(x, int) else x
@@ -11714,7 +11714,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
   __Pyx_RefNannySetupContext("set_active_window_group_for", 0);
 
   /* "smelly/window_list.py":313
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:
  *         try:             # <<<<<<<<<<<<<<
  *             q = self.id_map[x] if isinstance(x, int) else x
@@ -11736,7 +11736,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
  *         except KeyError:
  *             return
  */
-      __pyx_t_5 = PyInt_Check(__pyx_v_x); 
+      __pyx_t_5 = PyInt_Check(__pyx_v_x);
       if ((__pyx_t_5 != 0)) {
         __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 314, __pyx_L3_error)
         __Pyx_GOTREF(__pyx_t_6);
@@ -11753,7 +11753,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
       __pyx_t_4 = 0;
 
       /* "smelly/window_list.py":313
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:
  *         try:             # <<<<<<<<<<<<<<
  *             q = self.id_map[x] if isinstance(x, int) else x
@@ -11802,7 +11802,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
     __pyx_L5_except_error:;
 
     /* "smelly/window_list.py":313
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:
  *         try:             # <<<<<<<<<<<<<<
  *             q = self.id_map[x] if isinstance(x, int) else x
@@ -11995,7 +11995,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
  *                     h.pop()
  *                     h.pop()             # <<<<<<<<<<<<<<
  *                 break
- * 
+ *
  */
         __pyx_t_7 = __Pyx_PyObject_Pop(__pyx_v_h); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 323, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
@@ -12014,7 +12014,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
  *                     h.pop()
  *                     h.pop()
  *                 break             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_window(
  */
       goto __pyx_L12_break;
@@ -12042,7 +12042,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
 
   /* "smelly/window_list.py":312
  *         return None
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             q = self.id_map[x] if isinstance(x, int) else x
@@ -12071,7 +12071,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_50set_active_window
 
 /* "smelly/window_list.py":326
  *                 break
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self,
  *         window: WindowType,
@@ -12246,7 +12246,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_53add_window(PyObje
 
   /* "smelly/window_list.py":326
  *                 break
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self,
  *         window: WindowType,
@@ -12302,7 +12302,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
  *         self.all_windows.append(window)
  *         self.id_map[window.id] = window             # <<<<<<<<<<<<<<
  *         target_group: Optional[WindowGroup] = None
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12316,7 +12316,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
  *         self.all_windows.append(window)
  *         self.id_map[window.id] = window
  *         target_group: Optional[WindowGroup] = None             # <<<<<<<<<<<<<<
- * 
+ *
  *         if group_of is not None:
  */
   __Pyx_INCREF(Py_None);
@@ -12324,7 +12324,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
 
   /* "smelly/window_list.py":339
  *         target_group: Optional[WindowGroup] = None
- * 
+ *
  *         if group_of is not None:             # <<<<<<<<<<<<<<
  *             target_group = self.group_for_window(group_of)
  *         if target_group is None and next_to is not None:
@@ -12334,7 +12334,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
   if (__pyx_t_5) {
 
     /* "smelly/window_list.py":340
- * 
+ *
  *         if group_of is not None:
  *             target_group = self.group_for_window(group_of)             # <<<<<<<<<<<<<<
  *         if target_group is None and next_to is not None:
@@ -12362,7 +12362,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
 
     /* "smelly/window_list.py":339
  *         target_group: Optional[WindowGroup] = None
- * 
+ *
  *         if group_of is not None:             # <<<<<<<<<<<<<<
  *             target_group = self.group_for_window(group_of)
  *         if target_group is None and next_to is not None:
@@ -12396,7 +12396,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
  *             pos = -1
  *             for i, g in enumerate(self.groups):
  */
-    __pyx_t_5 = PyInt_Check(__pyx_v_next_to); 
+    __pyx_t_5 = PyInt_Check(__pyx_v_next_to);
     if ((__pyx_t_5 != 0)) {
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 342, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -12784,7 +12784,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
  *                 self.groups.insert(0, target_group)
  *             else:
  *                 self.groups.append(target_group)             # <<<<<<<<<<<<<<
- * 
+ *
  *         old_active_window = self.active_window
  */
     /*else*/ {
@@ -12806,7 +12806,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
 
   /* "smelly/window_list.py":358
  *                 self.groups.append(target_group)
- * 
+ *
  *         old_active_window = self.active_window             # <<<<<<<<<<<<<<
  *         target_group.add_window(window, head_of_group=head_of_group)
  *         if make_active:
@@ -12817,7 +12817,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
   __pyx_t_3 = 0;
 
   /* "smelly/window_list.py":359
- * 
+ *
  *         old_active_window = self.active_window
  *         target_group.add_window(window, head_of_group=head_of_group)             # <<<<<<<<<<<<<<
  *         if make_active:
@@ -13023,7 +13023,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
  *             self.notify_on_active_window_change(
  *                 old_active_window, new_active_window)             # <<<<<<<<<<<<<<
  *         return target_group
- * 
+ *
  */
     __pyx_t_13 = NULL;
     __pyx_t_11 = 0;
@@ -13085,7 +13085,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
  *             self.notify_on_active_window_change(
  *                 old_active_window, new_active_window)
  *         return target_group             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_window(self, x: WindowOrId) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13095,7 +13095,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
 
   /* "smelly/window_list.py":326
  *                 break
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self,
  *         window: WindowType,
@@ -13126,7 +13126,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_52add_window(CYTHON
 
 /* "smelly/window_list.py":371
  *         return target_group
- * 
+ *
  *     def remove_window(self, x: WindowOrId) -> None:             # <<<<<<<<<<<<<<
  *         old_active_window = self.active_window
  *         q = self.id_map[x] if isinstance(x, int) else x
@@ -13224,7 +13224,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_54remove_window(CYT
   __Pyx_RefNannySetupContext("remove_window", 0);
 
   /* "smelly/window_list.py":372
- * 
+ *
  *     def remove_window(self, x: WindowOrId) -> None:
  *         old_active_window = self.active_window             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
@@ -13242,7 +13242,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_54remove_window(CYT
  *         try:
  *             self.all_windows.remove(q)
  */
-  __pyx_t_2 = PyInt_Check(__pyx_v_x); 
+  __pyx_t_2 = PyInt_Check(__pyx_v_x);
   if ((__pyx_t_2 != 0)) {
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 373, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -13684,7 +13684,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_54remove_window(CYT
  *         if old_active_window is not new_active_window:
  *             self.notify_on_active_window_change(             # <<<<<<<<<<<<<<
  *                 old_active_window, new_active_window)
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_notify_on_active_window_change); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 393, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -13693,7 +13693,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_54remove_window(CYT
  *         if old_active_window is not new_active_window:
  *             self.notify_on_active_window_change(
  *                 old_active_window, new_active_window)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def active_window_in_nth_group(
  */
     __pyx_t_10 = NULL;
@@ -13754,7 +13754,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_54remove_window(CYT
 
   /* "smelly/window_list.py":371
  *         return target_group
- * 
+ *
  *     def remove_window(self, x: WindowOrId) -> None:             # <<<<<<<<<<<<<<
  *         old_active_window = self.active_window
  *         q = self.id_map[x] if isinstance(x, int) else x
@@ -13784,7 +13784,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_54remove_window(CYT
 
 /* "smelly/window_list.py":396
  *                 old_active_window, new_active_window)
- * 
+ *
  *     def active_window_in_nth_group(             # <<<<<<<<<<<<<<
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:
  *         if clamp:
@@ -13808,7 +13808,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_57active_window_in_
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/window_list.py":397
- * 
+ *
  *     def active_window_in_nth_group(
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         if clamp:
@@ -13875,7 +13875,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_57active_window_in_
 
   /* "smelly/window_list.py":396
  *                 old_active_window, new_active_window)
- * 
+ *
  *     def active_window_in_nth_group(             # <<<<<<<<<<<<<<
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:
  *         if clamp:
@@ -13996,7 +13996,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_56active_window_in_
  *         if 0 <= n < self.num_groups:
  *             return self.id_map.get(self.groups[n].active_window_id)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_id_map); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 401, __pyx_L1_error)
@@ -14045,7 +14045,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_56active_window_in_
  *         if 0 <= n < self.num_groups:
  *             return self.id_map.get(self.groups[n].active_window_id)
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def activate_next_window_group(self, delta: int) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14054,7 +14054,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_56active_window_in_
 
   /* "smelly/window_list.py":396
  *                 old_active_window, new_active_window)
- * 
+ *
  *     def active_window_in_nth_group(             # <<<<<<<<<<<<<<
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:
  *         if clamp:
@@ -14077,7 +14077,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_56active_window_in_
 
 /* "smelly/window_list.py":404
  *         return None
- * 
+ *
  *     def activate_next_window_group(self, delta: int) -> None:             # <<<<<<<<<<<<<<
  *         self.set_active_group_idx(wrap_increment(
  *             self.active_group_idx, self.num_groups, delta))
@@ -14166,11 +14166,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_58activate_next_win
   __Pyx_RefNannySetupContext("activate_next_window_group", 0);
 
   /* "smelly/window_list.py":405
- * 
+ *
  *     def activate_next_window_group(self, delta: int) -> None:
  *         self.set_active_group_idx(wrap_increment(             # <<<<<<<<<<<<<<
  *             self.active_group_idx, self.num_groups, delta))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_set_active_group_idx); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 405, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14181,7 +14181,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_58activate_next_win
  *     def activate_next_window_group(self, delta: int) -> None:
  *         self.set_active_group_idx(wrap_increment(
  *             self.active_group_idx, self.num_groups, delta))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def move_window_group(
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_active_group_idx_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 406, __pyx_L1_error)
@@ -14260,7 +14260,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_58activate_next_win
 
   /* "smelly/window_list.py":404
  *         return None
- * 
+ *
  *     def activate_next_window_group(self, delta: int) -> None:             # <<<<<<<<<<<<<<
  *         self.set_active_group_idx(wrap_increment(
  *             self.active_group_idx, self.num_groups, delta))
@@ -14288,7 +14288,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_58activate_next_win
 
 /* "smelly/window_list.py":408
  *             self.active_group_idx, self.num_groups, delta))
- * 
+ *
  *     def move_window_group(             # <<<<<<<<<<<<<<
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
  *         if self.active_group_idx < 0 or not self.groups:
@@ -14312,7 +14312,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_61move_window_group
     PyObject* values[3] = {0,0,0};
 
     /* "smelly/window_list.py":409
- * 
+ *
  *     def move_window_group(
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:             # <<<<<<<<<<<<<<
  *         if self.active_group_idx < 0 or not self.groups:
@@ -14381,7 +14381,7 @@ static PyObject *__pyx_pw_6smelly_11window_list_10WindowList_61move_window_group
 
   /* "smelly/window_list.py":408
  *             self.active_group_idx, self.num_groups, delta))
- * 
+ *
  *     def move_window_group(             # <<<<<<<<<<<<<<
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
  *         if self.active_group_idx < 0 or not self.groups:
@@ -14810,7 +14810,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_60move_window_group
  *             self.set_active_group_idx(target)
  *             return True             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(Py_True);
@@ -14830,7 +14830,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_60move_window_group
  *             self.set_active_group_idx(target)
  *             return True
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def compute_needs_borders_map(self, draw_active_borders: bool) -> Dict[int, bool]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14840,7 +14840,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_60move_window_group
 
   /* "smelly/window_list.py":408
  *             self.active_group_idx, self.num_groups, delta))
- * 
+ *
  *     def move_window_group(             # <<<<<<<<<<<<<<
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
  *         if self.active_group_idx < 0 or not self.groups:
@@ -14867,7 +14867,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_60move_window_group
 
 /* "smelly/window_list.py":428
  *         return False
- * 
+ *
  *     def compute_needs_borders_map(self, draw_active_borders: bool) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         ag = self.active_group
  *         return {gr.id: ((gr is ag and draw_active_borders) or gr.needs_attention) for gr in self.groups}
@@ -14957,11 +14957,11 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_62compute_needs_bor
   __Pyx_RefNannySetupContext("compute_needs_borders_map", 0);
 
   /* "smelly/window_list.py":429
- * 
+ *
  *     def compute_needs_borders_map(self, draw_active_borders: bool) -> Dict[int, bool]:
  *         ag = self.active_group             # <<<<<<<<<<<<<<
  *         return {gr.id: ((gr is ag and draw_active_borders) or gr.needs_attention) for gr in self.groups}
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_active_group); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -14972,7 +14972,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_62compute_needs_bor
  *     def compute_needs_borders_map(self, draw_active_borders: bool) -> Dict[int, bool]:
  *         ag = self.active_group
  *         return {gr.id: ((gr is ag and draw_active_borders) or gr.needs_attention) for gr in self.groups}             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -15062,7 +15062,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_62compute_needs_bor
 
   /* "smelly/window_list.py":428
  *         return False
- * 
+ *
  *     def compute_needs_borders_map(self, draw_active_borders: bool) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         ag = self.active_group
  *         return {gr.id: ((gr is ag and draw_active_borders) or gr.needs_attention) for gr in self.groups}
@@ -15086,7 +15086,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_62compute_needs_bor
 }
 
 /* "smelly/window_list.py":433
- * 
+ *
  *     @property
  *     def num_visble_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         ans = 0
@@ -15238,7 +15238,7 @@ static PyObject *__pyx_pf_6smelly_11window_list_10WindowList_64num_visble_groups
   goto __pyx_L0;
 
   /* "smelly/window_list.py":433
- * 
+ *
  *     @property
  *     def num_visble_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         ans = 0
@@ -16049,11 +16049,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/window_list.py":85
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:
  *         with suppress(ValueError):             # <<<<<<<<<<<<<<
  *             self.windows.remove(window)
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -16064,15 +16064,15 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self._active_group_idx: int = -1
  *         self.active_group_history: Deque[int] = deque((), 64)             # <<<<<<<<<<<<<<
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  */
   __pyx_tuple__2 = PyTuple_Pack(2, __pyx_empty_tuple, __pyx_int_64); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
   /* "smelly/window_list.py":17
- * 
- * 
+ *
+ *
  * def reset_group_id_counter() -> None:             # <<<<<<<<<<<<<<
  *     global group_id_counter
  *     group_id_counter = count(start=1)
@@ -16080,8 +16080,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_reset_group_id_counter, 17, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 17, __pyx_L1_error)
 
   /* "smelly/window_list.py":22
- * 
- * 
+ *
+ *
  * def wrap_increment(val: int, num: int, delta: int) -> int:             # <<<<<<<<<<<<<<
  *     mult = -1 if delta < 0 else 1
  *     delta = mult * (abs(delta) % num)
@@ -16092,7 +16092,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_wrap_increment, 22, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 22, __pyx_L1_error)
 
   /* "smelly/window_list.py":29
- * 
+ *
  * class WindowGroup:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowType] = []
@@ -16105,10 +16105,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":33
  *         self.id = next(group_id_counter)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.windows)
- * 
+ *
  */
   __pyx_tuple__10 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
@@ -16117,10 +16117,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":36
  *         return len(self.windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.windows)
- * 
+ *
  */
   __pyx_tuple__12 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
@@ -16129,10 +16129,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":39
  *         return bool(self.windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.windows)
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -16141,7 +16141,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":42
  *         return iter(self.windows)
- * 
+ *
  *     def __contains__(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             if w is window:
@@ -16152,7 +16152,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_contains, 42, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 42, __pyx_L1_error)
 
   /* "smelly/window_list.py":49
- * 
+ *
  *     @property
  *     def needs_attention(self) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
@@ -16164,7 +16164,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_needs_attention, 49, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 49, __pyx_L1_error)
 
   /* "smelly/window_list.py":56
- * 
+ *
  *     @property
  *     def main_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         for w in reversed(self.windows):
@@ -16176,11 +16176,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_main_window_id, 56, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 56, __pyx_L1_error)
 
   /* "smelly/window_list.py":63
- * 
+ *
  *     @property
  *     def active_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  */
   __pyx_tuple__22 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
@@ -16189,7 +16189,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":66
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, window: WindowType, head_of_group: bool = False) -> None:
  *         if head_of_group:
@@ -16204,7 +16204,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":73
  *             self.windows.append(window)
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         try:
  *             idx = self.windows.index(window)
@@ -16216,7 +16216,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":84
  *         return True
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:             # <<<<<<<<<<<<<<
  *         with suppress(ValueError):
  *             self.windows.remove(window)
@@ -16228,10 +16228,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":88
  *             self.windows.remove(window)
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  */
   __pyx_tuple__31 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_w); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
@@ -16240,7 +16240,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":91
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,             # <<<<<<<<<<<<<<
  *                    is_single_window: bool = False) -> int:
  *         if not self.windows:
@@ -16255,7 +16255,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":98
  *         return w.effective_margin(which, is_single_window=is_single_window) + w.effective_border() * border_mult + w.effective_padding(which)
- * 
+ *
  *     def effective_padding(self, which: EdgeLiteral) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -16267,7 +16267,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":104
  *         return w.effective_padding(which)
- * 
+ *
  *     def effective_border(self) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -16279,7 +16279,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":110
  *         return w.effective_border()
- * 
+ *
  *     def set_geometry(self, geom: WindowGeometry) -> None:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             w.set_geometry(geom)
@@ -16290,7 +16290,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_set_geometry, 110, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 110, __pyx_L1_error)
 
   /* "smelly/window_list.py":115
- * 
+ *
  *     @property
  *     def default_bg(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -16302,7 +16302,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_default_bg, 115, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 115, __pyx_L1_error)
 
   /* "smelly/window_list.py":122
- * 
+ *
  *     @property
  *     def geometry(self) -> Optional[WindowGeometry]:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -16314,7 +16314,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_geometry, 122, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 122, __pyx_L1_error)
 
   /* "smelly/window_list.py":129
- * 
+ *
  *     @property
  *     def is_visible_in_layout(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -16326,7 +16326,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_is_visible_in_layout, 129, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 129, __pyx_L1_error)
 
   /* "smelly/window_list.py":137
- * 
+ *
  * class WindowList:
  *     def __init__(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.all_windows: List[WindowType] = []
@@ -16339,10 +16339,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":145
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_windows)
- * 
+ *
  */
   __pyx_tuple__50 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
@@ -16351,10 +16351,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":148
  *         return len(self.all_windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.all_windows)
- * 
+ *
  */
   __pyx_tuple__52 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__52);
@@ -16363,10 +16363,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":151
  *         return bool(self.all_windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_windows)
- * 
+ *
  */
   __pyx_tuple__54 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__54);
@@ -16375,7 +16375,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":154
  *         return iter(self.all_windows)
- * 
+ *
  *     def __contains__(self, window: WindowOrId) -> bool:             # <<<<<<<<<<<<<<
  *         q = window if isinstance(window, int) else window.id
  *         return q in self.id_map
@@ -16387,7 +16387,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":158
  *         return q in self.id_map
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {
  *             'active_group_idx': self.active_group_idx,
@@ -16398,11 +16398,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_serialize_state, 158, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 158, __pyx_L1_error)
 
   /* "smelly/window_list.py":166
- * 
+ *
  *     @property
  *     def active_group_idx(self) -> int:             # <<<<<<<<<<<<<<
  *         return self._active_group_idx
- * 
+ *
  */
   __pyx_tuple__60 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__60);
@@ -16410,7 +16410,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__61 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__60, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_active_group_idx_2, 166, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__61)) __PYX_ERR(0, 166, __pyx_L1_error)
 
   /* "smelly/window_list.py":170
- * 
+ *
  *     @property
  *     def active_window_history(self) -> List[int]:             # <<<<<<<<<<<<<<
  *         ans = []
@@ -16423,7 +16423,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":183
  *         return ans
- * 
+ *
  *     def notify_on_active_window_change(             # <<<<<<<<<<<<<<
  *             self, old_active_window: Optional[WindowType],
  *             new_active_window: Optional[WindowType]) -> None:
@@ -16435,7 +16435,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":194
  *             tab.active_window_changed()
- * 
+ *
  *     def set_active_group_idx(self, i: int, notify: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         changed = False
  *         if i != self._active_group_idx and 0 <= i < len(self.groups):
@@ -16450,7 +16450,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":212
  *         return changed
- * 
+ *
  *     def set_active_group(self, group_id: int) -> bool:             # <<<<<<<<<<<<<<
  *         for i, gr in enumerate(self.groups):
  *             if gr.id == group_id:
@@ -16462,10 +16462,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":218
  *         return False
- * 
+ *
  *     def change_tab(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  */
   __pyx_tuple__71 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_tab); if (unlikely(!__pyx_tuple__71)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__71);
@@ -16474,7 +16474,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":221
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple             # <<<<<<<<<<<<<<
  *                                                        [WindowType, bool]]:
  *         for g in self.groups:
@@ -16486,7 +16486,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -16501,7 +16501,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":232
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:             # <<<<<<<<<<<<<<
  *         for i, g in enumerate(self.groups):
  *             if not only_visible or g.is_visible_in_layout:
@@ -16516,7 +16516,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":241
  *                         break
- * 
+ *
  *     def make_previous_group_active(             # <<<<<<<<<<<<<<
  *             self, which: int = 1, notify: bool = True) -> None:
  *         which = max(1, which)
@@ -16530,11 +16530,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__81);
 
   /* "smelly/window_list.py":258
- * 
+ *
  *     @property
  *     def num_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.groups)
- * 
+ *
  */
   __pyx_tuple__82 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__82)) __PYX_ERR(0, 258, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__82);
@@ -16543,7 +16543,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":261
  *         return len(self.groups)
- * 
+ *
  *     def group_for_window(self, x: WindowOrId) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for g in self.groups:
@@ -16555,7 +16555,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":268
  *         return None
- * 
+ *
  *     def group_idx_for_window(self, x: WindowOrId) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for i, g in enumerate(self.groups):
@@ -16567,7 +16567,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":275
  *         return None
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(window)
  *         if g is None:
@@ -16579,7 +16579,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":288
  *         return changed
- * 
+ *
  *     def windows_in_group_of(self, x: WindowOrId) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(x)
  *         if g is not None:
@@ -16590,7 +16590,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__91 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__90, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_windows_in_group_of, 288, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__91)) __PYX_ERR(0, 288, __pyx_L1_error)
 
   /* "smelly/window_list.py":295
- * 
+ *
  *     @property
  *     def active_group(self) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -16602,7 +16602,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__93 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__92, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_active_group, 295, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__93)) __PYX_ERR(0, 295, __pyx_L1_error)
 
   /* "smelly/window_list.py":301
- * 
+ *
  *     @property
  *     def active_window(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -16614,7 +16614,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__95 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__94, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_active_window, 301, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__95)) __PYX_ERR(0, 301, __pyx_L1_error)
 
   /* "smelly/window_list.py":307
- * 
+ *
  *     @property
  *     def active_group_main(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -16627,7 +16627,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":312
  *         return None
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             q = self.id_map[x] if isinstance(x, int) else x
@@ -16642,7 +16642,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":326
  *                 break
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self,
  *         window: WindowType,
@@ -16657,7 +16657,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":371
  *         return target_group
- * 
+ *
  *     def remove_window(self, x: WindowOrId) -> None:             # <<<<<<<<<<<<<<
  *         old_active_window = self.active_window
  *         q = self.id_map[x] if isinstance(x, int) else x
@@ -16669,7 +16669,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":396
  *                 old_active_window, new_active_window)
- * 
+ *
  *     def active_window_in_nth_group(             # <<<<<<<<<<<<<<
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:
  *         if clamp:
@@ -16684,7 +16684,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":404
  *         return None
- * 
+ *
  *     def activate_next_window_group(self, delta: int) -> None:             # <<<<<<<<<<<<<<
  *         self.set_active_group_idx(wrap_increment(
  *             self.active_group_idx, self.num_groups, delta))
@@ -16696,7 +16696,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":408
  *             self.active_group_idx, self.num_groups, delta))
- * 
+ *
  *     def move_window_group(             # <<<<<<<<<<<<<<
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
  *         if self.active_group_idx < 0 or not self.groups:
@@ -16711,7 +16711,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/window_list.py":428
  *         return False
- * 
+ *
  *     def compute_needs_borders_map(self, draw_active_borders: bool) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         ag = self.active_group
  *         return {gr.id: ((gr is ag and draw_active_borders) or gr.needs_attention) for gr in self.groups}
@@ -16722,7 +16722,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__115 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__114, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_window_list_py, __pyx_n_s_compute_needs_borders_map, 428, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__115)) __PYX_ERR(0, 428, __pyx_L1_error)
 
   /* "smelly/window_list.py":433
- * 
+ *
  *     @property
  *     def num_visble_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         ans = 0
@@ -17061,7 +17061,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import weakref             # <<<<<<<<<<<<<<
  * from collections import deque
  * from contextlib import suppress
@@ -17072,7 +17072,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/window_list.py":5
- * 
+ *
  * import weakref
  * from collections import deque             # <<<<<<<<<<<<<<
  * from contextlib import suppress
@@ -17118,7 +17118,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from itertools import count             # <<<<<<<<<<<<<<
  * from typing import Any, Deque, Dict, Iterator, List, Optional, Tuple, Union
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17138,7 +17138,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import suppress
  * from itertools import count
  * from typing import Any, Deque, Dict, Iterator, List, Optional, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .types import OverlayType, WindowGeometry
  */
   __pyx_t_2 = PyList_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -17206,10 +17206,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":10
  * from typing import Any, Deque, Dict, Iterator, List, Optional, Tuple, Union
- * 
+ *
  * from .types import OverlayType, WindowGeometry             # <<<<<<<<<<<<<<
  * from .typing import EdgeLiteral, TabType, WindowType
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17233,10 +17233,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":11
- * 
+ *
  * from .types import OverlayType, WindowGeometry
  * from .typing import EdgeLiteral, TabType, WindowType             # <<<<<<<<<<<<<<
- * 
+ *
  * WindowOrId = Union[WindowType, int]
  */
   __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -17269,10 +17269,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":13
  * from .typing import EdgeLiteral, TabType, WindowType
- * 
+ *
  * WindowOrId = Union[WindowType, int]             # <<<<<<<<<<<<<<
  * group_id_counter = count(start=1)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Union); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17294,11 +17294,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":14
- * 
+ *
  * WindowOrId = Union[WindowType, int]
  * group_id_counter = count(start=1)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_count); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17313,8 +17313,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/window_list.py":17
- * 
- * 
+ *
+ *
  * def reset_group_id_counter() -> None:             # <<<<<<<<<<<<<<
  *     global group_id_counter
  *     group_id_counter = count(start=1)
@@ -17330,8 +17330,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/window_list.py":22
- * 
- * 
+ *
+ *
  * def wrap_increment(val: int, num: int, delta: int) -> int:             # <<<<<<<<<<<<<<
  *     mult = -1 if delta < 0 else 1
  *     delta = mult * (abs(delta) % num)
@@ -17350,8 +17350,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/window_list.py":28
- * 
- * 
+ *
+ *
  * class WindowGroup:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.windows: List[WindowType] = []
@@ -17360,7 +17360,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/window_list.py":29
- * 
+ *
  * class WindowGroup:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.windows: List[WindowType] = []
@@ -17378,10 +17378,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":33
  *         self.id = next(group_id_counter)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.windows)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17395,10 +17395,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":36
  *         return len(self.windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.windows)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17412,10 +17412,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":39
  *         return bool(self.windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.windows)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17438,7 +17438,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":42
  *         return iter(self.windows)
- * 
+ *
  *     def __contains__(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             if w is window:
@@ -17458,7 +17458,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":49
- * 
+ *
  *     @property
  *     def needs_attention(self) -> bool:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
@@ -17474,7 +17474,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":48
  *         return False
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def needs_attention(self) -> bool:
  *         for w in self.windows:
@@ -17486,7 +17486,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":56
- * 
+ *
  *     @property
  *     def main_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         for w in reversed(self.windows):
@@ -17502,7 +17502,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":55
  *         return False
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def main_window_id(self) -> int:
  *         for w in reversed(self.windows):
@@ -17514,11 +17514,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":63
- * 
+ *
  *     @property
  *     def active_window_id(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17530,7 +17530,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":62
  *         return self.windows[0].id if self.windows else 0
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def active_window_id(self) -> int:
  *         return self.windows[-1].id if self.windows else 0
@@ -17543,7 +17543,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":66
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, window: WindowType, head_of_group: bool = False) -> None:
  *         if head_of_group:
@@ -17552,7 +17552,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/window_list.py":67
- * 
+ *
  *     def add_window(
  *             self, window: WindowType, head_of_group: bool = False) -> None:             # <<<<<<<<<<<<<<
  *         if head_of_group:
@@ -17567,7 +17567,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":66
  *         return self.windows[-1].id if self.windows else 0
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *             self, window: WindowType, head_of_group: bool = False) -> None:
  *         if head_of_group:
@@ -17582,7 +17582,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":73
  *             self.windows.append(window)
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         try:
  *             idx = self.windows.index(window)
@@ -17603,7 +17603,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":84
  *         return True
- * 
+ *
  *     def remove_window(self, window: WindowType) -> None:             # <<<<<<<<<<<<<<
  *         with suppress(ValueError):
  *             self.windows.remove(window)
@@ -17624,10 +17624,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":88
  *             self.windows.remove(window)
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -17658,7 +17658,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":91
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,             # <<<<<<<<<<<<<<
  *                    is_single_window: bool = False) -> int:
  *         if not self.windows:
@@ -17672,7 +17672,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_border_mult, __pyx_n_u_int) < 0) __PYX_ERR(0, 91, __pyx_L1_error)
 
   /* "smelly/window_list.py":92
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,
  *                    is_single_window: bool = False) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
@@ -17683,7 +17683,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":91
  *         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
- * 
+ *
  *     def decoration(self, which: EdgeLiteral, border_mult: int = 1,             # <<<<<<<<<<<<<<
  *                    is_single_window: bool = False) -> int:
  *         if not self.windows:
@@ -17698,7 +17698,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":98
  *         return w.effective_margin(which, is_single_window=is_single_window) + w.effective_border() * border_mult + w.effective_padding(which)
- * 
+ *
  *     def effective_padding(self, which: EdgeLiteral) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -17719,7 +17719,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":104
  *         return w.effective_padding(which)
- * 
+ *
  *     def effective_border(self) -> int:             # <<<<<<<<<<<<<<
  *         if not self.windows:
  *             return 0
@@ -17736,7 +17736,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":110
  *         return w.effective_border()
- * 
+ *
  *     def set_geometry(self, geom: WindowGeometry) -> None:             # <<<<<<<<<<<<<<
  *         for w in self.windows:
  *             w.set_geometry(geom)
@@ -17756,7 +17756,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/window_list.py":115
- * 
+ *
  *     @property
  *     def default_bg(self) -> int:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -17772,7 +17772,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":114
  *             w.set_geometry(geom)
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def default_bg(self) -> int:
  *         if self.windows:
@@ -17784,7 +17784,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/window_list.py":122
- * 
+ *
  *     @property
  *     def geometry(self) -> Optional[WindowGeometry]:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -17809,7 +17809,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":121
  *         return 0
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def geometry(self) -> Optional[WindowGeometry]:
  *         if self.windows:
@@ -17821,7 +17821,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/window_list.py":129
- * 
+ *
  *     @property
  *     def is_visible_in_layout(self) -> bool:             # <<<<<<<<<<<<<<
  *         if self.windows:
@@ -17837,7 +17837,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":128
  *         return None
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def is_visible_in_layout(self) -> bool:
  *         if self.windows:
@@ -17849,8 +17849,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/window_list.py":28
- * 
- * 
+ *
+ *
  * class WindowGroup:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.windows: List[WindowType] = []
@@ -17862,8 +17862,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/window_list.py":136
- * 
- * 
+ *
+ *
  * class WindowList:             # <<<<<<<<<<<<<<
  *     def __init__(self, tab: TabType) -> None:
  *         self.all_windows: List[WindowType] = []
@@ -17872,7 +17872,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/window_list.py":137
- * 
+ *
  * class WindowList:
  *     def __init__(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.all_windows: List[WindowType] = []
@@ -17894,10 +17894,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":145
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.all_windows)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17911,10 +17911,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":148
  *         return len(self.all_windows)
- * 
+ *
  *     def __bool__(self) -> bool:             # <<<<<<<<<<<<<<
  *         return bool(self.all_windows)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -17928,10 +17928,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":151
  *         return bool(self.all_windows)
- * 
+ *
  *     def __iter__(self) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         return iter(self.all_windows)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17954,7 +17954,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":154
  *         return iter(self.all_windows)
- * 
+ *
  *     def __contains__(self, window: WindowOrId) -> bool:             # <<<<<<<<<<<<<<
  *         q = window if isinstance(window, int) else window.id
  *         return q in self.id_map
@@ -17975,7 +17975,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":158
  *         return q in self.id_map
- * 
+ *
  *     def serialize_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {
  *             'active_group_idx': self.active_group_idx,
@@ -18008,11 +18008,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/window_list.py":166
- * 
+ *
  *     @property
  *     def active_group_idx(self) -> int:             # <<<<<<<<<<<<<<
  *         return self._active_group_idx
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -18024,7 +18024,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":165
  *         }
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def active_group_idx(self) -> int:
  *         return self._active_group_idx
@@ -18036,7 +18036,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/window_list.py":170
- * 
+ *
  *     @property
  *     def active_window_history(self) -> List[int]:             # <<<<<<<<<<<<<<
  *         ans = []
@@ -18058,7 +18058,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":169
  *         return self._active_group_idx
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def active_window_history(self) -> List[int]:
  *         ans = []
@@ -18071,7 +18071,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":183
  *         return ans
- * 
+ *
  *     def notify_on_active_window_change(             # <<<<<<<<<<<<<<
  *             self, old_active_window: Optional[WindowType],
  *             new_active_window: Optional[WindowType]) -> None:
@@ -18080,7 +18080,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/window_list.py":184
- * 
+ *
  *     def notify_on_active_window_change(
  *             self, old_active_window: Optional[WindowType],             # <<<<<<<<<<<<<<
  *             new_active_window: Optional[WindowType]) -> None:
@@ -18118,7 +18118,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":183
  *         return ans
- * 
+ *
  *     def notify_on_active_window_change(             # <<<<<<<<<<<<<<
  *             self, old_active_window: Optional[WindowType],
  *             new_active_window: Optional[WindowType]) -> None:
@@ -18132,7 +18132,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":194
  *             tab.active_window_changed()
- * 
+ *
  *     def set_active_group_idx(self, i: int, notify: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         changed = False
  *         if i != self._active_group_idx and 0 <= i < len(self.groups):
@@ -18152,7 +18152,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":212
  *         return changed
- * 
+ *
  *     def set_active_group(self, group_id: int) -> bool:             # <<<<<<<<<<<<<<
  *         for i, gr in enumerate(self.groups):
  *             if gr.id == group_id:
@@ -18170,10 +18170,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":218
  *         return False
- * 
+ *
  *     def change_tab(self, tab: TabType) -> None:             # <<<<<<<<<<<<<<
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18191,7 +18191,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":221
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple             # <<<<<<<<<<<<<<
  *                                                        [WindowType, bool]]:
  *         for g in self.groups:
@@ -18204,7 +18204,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/window_list.py":222
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple
  *                                                        [WindowType, bool]]:             # <<<<<<<<<<<<<<
  *         for g in self.groups:
@@ -18227,7 +18227,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":221
  *         self.tabref = weakref.ref(tab)
- * 
+ *
  *     def iter_windows_with_visibility(self) -> Iterator[Tuple             # <<<<<<<<<<<<<<
  *                                                        [WindowType, bool]]:
  *         for g in self.groups:
@@ -18247,7 +18247,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -18256,11 +18256,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/window_list.py":229
- * 
+ *
  *     def iter_all_layoutable_groups(
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:             # <<<<<<<<<<<<<<
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
- * 
+ *
  */
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_only_visible, ((PyObject*)&PyBool_Type)) < 0) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Iterator); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L1_error)
@@ -18276,7 +18276,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":228
  *                 yield window, window.id == aw
- * 
+ *
  *     def iter_all_layoutable_groups(             # <<<<<<<<<<<<<<
  *             self, only_visible: bool = False) -> Iterator[WindowGroup]:
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
@@ -18291,7 +18291,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":232
  *         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
- * 
+ *
  *     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:             # <<<<<<<<<<<<<<
  *         for i, g in enumerate(self.groups):
  *             if not only_visible or g.is_visible_in_layout:
@@ -18333,7 +18333,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":241
  *                         break
- * 
+ *
  *     def make_previous_group_active(             # <<<<<<<<<<<<<<
  *             self, which: int = 1, notify: bool = True) -> None:
  *         which = max(1, which)
@@ -18343,7 +18343,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_which, __pyx_n_u_int) < 0) __PYX_ERR(0, 241, __pyx_L1_error)
 
   /* "smelly/window_list.py":242
- * 
+ *
  *     def make_previous_group_active(
  *             self, which: int = 1, notify: bool = True) -> None:             # <<<<<<<<<<<<<<
  *         which = max(1, which)
@@ -18354,7 +18354,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":241
  *                         break
- * 
+ *
  *     def make_previous_group_active(             # <<<<<<<<<<<<<<
  *             self, which: int = 1, notify: bool = True) -> None:
  *         which = max(1, which)
@@ -18368,11 +18368,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/window_list.py":258
- * 
+ *
  *     @property
  *     def num_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self.groups)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 258, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -18384,7 +18384,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":257
  *         self.set_active_group_idx(len(self.groups) - 1, notify=notify)
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def num_groups(self) -> int:
  *         return len(self.groups)
@@ -18397,7 +18397,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":261
  *         return len(self.groups)
- * 
+ *
  *     def group_for_window(self, x: WindowOrId) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for g in self.groups:
@@ -18427,7 +18427,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":268
  *         return None
- * 
+ *
  *     def group_idx_for_window(self, x: WindowOrId) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         q = self.id_map[x] if isinstance(x, int) else x
  *         for i, g in enumerate(self.groups):
@@ -18454,7 +18454,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":275
  *         return None
- * 
+ *
  *     def move_window_to_top_of_group(self, window: WindowType) -> bool:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(window)
  *         if g is None:
@@ -18475,7 +18475,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":288
  *         return changed
- * 
+ *
  *     def windows_in_group_of(self, x: WindowOrId) -> Iterator[WindowType]:             # <<<<<<<<<<<<<<
  *         g = self.group_for_window(x)
  *         if g is not None:
@@ -18504,7 +18504,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":295
- * 
+ *
  *     @property
  *     def active_group(self) -> Optional[WindowGroup]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -18529,7 +18529,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":294
  *         return iter(())
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def active_group(self) -> Optional[WindowGroup]:
  *         with suppress(Exception):
@@ -18541,7 +18541,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":301
- * 
+ *
  *     @property
  *     def active_window(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -18566,7 +18566,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":300
  *         return None
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def active_window(self) -> Optional[WindowType]:
  *         with suppress(Exception):
@@ -18578,7 +18578,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":307
- * 
+ *
  *     @property
  *     def active_group_main(self) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -18603,7 +18603,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":306
  *         return None
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def active_group_main(self) -> Optional[WindowType]:
  *         with suppress(Exception):
@@ -18616,7 +18616,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":312
  *         return None
- * 
+ *
  *     def set_active_window_group_for(self, x: WindowOrId, for_keep_focus: Optional[WindowType] = None) -> None:             # <<<<<<<<<<<<<<
  *         try:
  *             q = self.id_map[x] if isinstance(x, int) else x
@@ -18648,7 +18648,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":326
  *                 break
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self,
  *         window: WindowType,
@@ -18745,7 +18745,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":326
  *                 break
- * 
+ *
  *     def add_window(             # <<<<<<<<<<<<<<
  *         self,
  *         window: WindowType,
@@ -18760,7 +18760,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":371
  *         return target_group
- * 
+ *
  *     def remove_window(self, x: WindowOrId) -> None:             # <<<<<<<<<<<<<<
  *         old_active_window = self.active_window
  *         q = self.id_map[x] if isinstance(x, int) else x
@@ -18781,7 +18781,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":396
  *                 old_active_window, new_active_window)
- * 
+ *
  *     def active_window_in_nth_group(             # <<<<<<<<<<<<<<
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:
  *         if clamp:
@@ -18791,7 +18791,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_n, __pyx_n_u_int) < 0) __PYX_ERR(0, 396, __pyx_L1_error)
 
   /* "smelly/window_list.py":397
- * 
+ *
  *     def active_window_in_nth_group(
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:             # <<<<<<<<<<<<<<
  *         if clamp:
@@ -18811,7 +18811,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":396
  *                 old_active_window, new_active_window)
- * 
+ *
  *     def active_window_in_nth_group(             # <<<<<<<<<<<<<<
  *             self, n: int, clamp: bool = False) -> Optional[WindowType]:
  *         if clamp:
@@ -18826,7 +18826,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":404
  *         return None
- * 
+ *
  *     def activate_next_window_group(self, delta: int) -> None:             # <<<<<<<<<<<<<<
  *         self.set_active_group_idx(wrap_increment(
  *             self.active_group_idx, self.num_groups, delta))
@@ -18844,7 +18844,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":408
  *             self.active_group_idx, self.num_groups, delta))
- * 
+ *
  *     def move_window_group(             # <<<<<<<<<<<<<<
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
  *         if self.active_group_idx < 0 or not self.groups:
@@ -18853,7 +18853,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/window_list.py":409
- * 
+ *
  *     def move_window_group(
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:             # <<<<<<<<<<<<<<
  *         if self.active_group_idx < 0 or not self.groups:
@@ -18877,7 +18877,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":408
  *             self.active_group_idx, self.num_groups, delta))
- * 
+ *
  *     def move_window_group(             # <<<<<<<<<<<<<<
  *             self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
  *         if self.active_group_idx < 0 or not self.groups:
@@ -18892,7 +18892,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":428
  *         return False
- * 
+ *
  *     def compute_needs_borders_map(self, draw_active_borders: bool) -> Dict[int, bool]:             # <<<<<<<<<<<<<<
  *         ag = self.active_group
  *         return {gr.id: ((gr is ag and draw_active_borders) or gr.needs_attention) for gr in self.groups}
@@ -18924,7 +18924,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":433
- * 
+ *
  *     @property
  *     def num_visble_groups(self) -> int:             # <<<<<<<<<<<<<<
  *         ans = 0
@@ -18940,7 +18940,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/window_list.py":432
  *         return {gr.id: ((gr is ag and draw_active_borders) or gr.needs_attention) for gr in self.groups}
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def num_visble_groups(self) -> int:
  *         ans = 0
@@ -18952,8 +18952,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/window_list.py":136
- * 
- * 
+ *
+ *
  * class WindowList:             # <<<<<<<<<<<<<<
  *     def __init__(self, tab: TabType) -> None:
  *         self.all_windows: List[WindowType] = []
@@ -18967,7 +18967,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/window_list.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20326,8 +20326,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -20455,8 +20455,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

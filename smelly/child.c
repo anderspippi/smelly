@@ -972,7 +972,7 @@ struct __pyx_obj_6smelly_5child___pyx_scope_struct_2_genexpr;
 struct __pyx_obj_6smelly_5child___pyx_scope_struct_3_foreground_processes;
 
 /* "smelly/child.py":107
- * 
+ *
  * @contextmanager
  * def cached_process_data() -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *     try:
@@ -986,7 +986,7 @@ struct __pyx_obj_6smelly_5child___pyx_scope_struct__cached_process_data {
 
 /* "smelly/child.py":307
  *         return env
- * 
+ *
  *     def fork(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if self.forked:
  *             return None
@@ -1016,7 +1016,7 @@ struct __pyx_obj_6smelly_5child___pyx_scope_struct_2_genexpr {
 
 
 /* "smelly/child.py":403
- * 
+ *
  *     @property
  *     def foreground_processes(self) -> List[ProcessDesc]:             # <<<<<<<<<<<<<<
  *         if self.child_fd is None:
@@ -2545,10 +2545,10 @@ static PyObject *__pyx_codeobj__98;
 
 /* "smelly/child.py":30
  *     from smelly.fast_data_types import process_group_map as _process_group_map
- * 
+ *
  *     def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2579,10 +2579,10 @@ static PyObject *__pyx_pf_6smelly_5child_cwd_of_process(CYTHON_UNUSED PyObject *
   __Pyx_RefNannySetupContext("cwd_of_process", 0);
 
   /* "smelly/child.py":31
- * 
+ *
  *     def cwd_of_process(pid: int) -> str:
  *         return os.path.realpath(_cwd(pid))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2634,10 +2634,10 @@ static PyObject *__pyx_pf_6smelly_5child_cwd_of_process(CYTHON_UNUSED PyObject *
 
   /* "smelly/child.py":30
  *     from smelly.fast_data_types import process_group_map as _process_group_map
- * 
+ *
  *     def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  */
 
   /* function exit code */
@@ -2657,7 +2657,7 @@ static PyObject *__pyx_pf_6smelly_5child_cwd_of_process(CYTHON_UNUSED PyObject *
 
 /* "smelly/child.py":33
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for pid, pgid in _process_group_map():
@@ -2698,7 +2698,7 @@ static PyObject *__pyx_pf_6smelly_5child_2process_group_map(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("process_group_map", 0);
 
   /* "smelly/child.py":34
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)             # <<<<<<<<<<<<<<
  *         for pid, pgid in _process_group_map():
@@ -2798,11 +2798,11 @@ static PyObject *__pyx_pf_6smelly_5child_2process_group_map(CYTHON_UNUSED PyObje
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -2844,7 +2844,7 @@ static PyObject *__pyx_pf_6smelly_5child_2process_group_map(CYTHON_UNUSED PyObje
  *         for pid, pgid in _process_group_map():
  *             ans[pgid].append(pid)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_ans, __pyx_v_pgid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2865,7 +2865,7 @@ static PyObject *__pyx_pf_6smelly_5child_2process_group_map(CYTHON_UNUSED PyObje
  *         for pid, pgid in _process_group_map():
  *             ans[pgid].append(pid)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2875,7 +2875,7 @@ static PyObject *__pyx_pf_6smelly_5child_2process_group_map(CYTHON_UNUSED PyObje
 
   /* "smelly/child.py":33
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for pid, pgid in _process_group_map():
@@ -2901,10 +2901,10 @@ static PyObject *__pyx_pf_6smelly_5child_2process_group_map(CYTHON_UNUSED PyObje
 
 /* "smelly/child.py":39
  *         return ans
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         return cmdline_(pid)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2933,10 +2933,10 @@ static PyObject *__pyx_pf_6smelly_5child_4cmdline_of_pid(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("cmdline_of_pid", 0);
 
   /* "smelly/child.py":40
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:
  *         return cmdline_(pid)             # <<<<<<<<<<<<<<
- * 
+ *
  * else:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2963,10 +2963,10 @@ static PyObject *__pyx_pf_6smelly_5child_4cmdline_of_pid(CYTHON_UNUSED PyObject 
 
   /* "smelly/child.py":39
  *         return ans
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         return cmdline_(pid)
- * 
+ *
  */
 
   /* function exit code */
@@ -2984,7 +2984,7 @@ static PyObject *__pyx_pf_6smelly_5child_4cmdline_of_pid(CYTHON_UNUSED PyObject 
 
 /* "smelly/child.py":44
  * else:
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
@@ -3028,11 +3028,11 @@ static PyObject *__pyx_pf_6smelly_5child_6cmdline_of_pid(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("cmdline_of_pid", 0);
 
   /* "smelly/child.py":45
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:             # <<<<<<<<<<<<<<
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -3106,7 +3106,7 @@ static PyObject *__pyx_pf_6smelly_5child_6cmdline_of_pid(CYTHON_UNUSED PyObject 
  *     def cmdline_of_pid(pid: int) -> List[str]:
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))             # <<<<<<<<<<<<<<
- * 
+ *
  *     if is_freebsd:
  */
           __Pyx_XDECREF(__pyx_r);
@@ -3182,11 +3182,11 @@ static PyObject *__pyx_pf_6smelly_5child_6cmdline_of_pid(CYTHON_UNUSED PyObject 
           goto __pyx_L11_try_return;
 
           /* "smelly/child.py":45
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:             # <<<<<<<<<<<<<<
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
- * 
+ *
  */
         }
         __pyx_L7_error:;
@@ -3217,7 +3217,7 @@ static PyObject *__pyx_pf_6smelly_5child_6cmdline_of_pid(CYTHON_UNUSED PyObject 
             __Pyx_GIVEREF(__pyx_t_6);
             __Pyx_XGIVEREF(__pyx_t_4);
             __Pyx_ErrRestoreWithState(__pyx_t_7, __pyx_t_6, __pyx_t_4);
-            __pyx_t_7 = 0; __pyx_t_6 = 0; __pyx_t_4 = 0; 
+            __pyx_t_7 = 0; __pyx_t_6 = 0; __pyx_t_4 = 0;
             __PYX_ERR(0, 45, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -3280,7 +3280,7 @@ static PyObject *__pyx_pf_6smelly_5child_6cmdline_of_pid(CYTHON_UNUSED PyObject 
 
   /* "smelly/child.py":44
  * else:
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
@@ -3306,10 +3306,10 @@ static PyObject *__pyx_pf_6smelly_5child_6cmdline_of_pid(CYTHON_UNUSED PyObject 
 
 /* "smelly/child.py":50
  *     if is_freebsd:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             import subprocess
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3343,10 +3343,10 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("cwd_of_process", 0);
 
   /* "smelly/child.py":51
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:
  *             import subprocess             # <<<<<<<<<<<<<<
- * 
+ *
  *             cp = subprocess.run(['pwdx', str(pid)], capture_output=True)
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
@@ -3356,7 +3356,7 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
 
   /* "smelly/child.py":53
  *             import subprocess
- * 
+ *
  *             cp = subprocess.run(['pwdx', str(pid)], capture_output=True)             # <<<<<<<<<<<<<<
  *             if cp.returncode != 0:
  *                 raise ValueError(
@@ -3390,7 +3390,7 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
   __pyx_t_4 = 0;
 
   /* "smelly/child.py":54
- * 
+ *
  *             cp = subprocess.run(['pwdx', str(pid)], capture_output=True)
  *             if cp.returncode != 0:             # <<<<<<<<<<<<<<
  *                 raise ValueError(
@@ -3433,7 +3433,7 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
     __PYX_ERR(0, 55, __pyx_L1_error)
 
     /* "smelly/child.py":54
- * 
+ *
  *             cp = subprocess.run(['pwdx', str(pid)], capture_output=True)
  *             if cp.returncode != 0:             # <<<<<<<<<<<<<<
  *                 raise ValueError(
@@ -3446,7 +3446,7 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
  *                     f'Failed to find cwd of process with pid: {pid}')
  *             ans = cp.stdout.decode('utf-8', 'replace').split()[1]             # <<<<<<<<<<<<<<
  *             return os.path.realpath(ans)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_cp, __pyx_n_s_stdout); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3484,7 +3484,7 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
  *                     f'Failed to find cwd of process with pid: {pid}')
  *             ans = cp.stdout.decode('utf-8', 'replace').split()[1]
  *             return os.path.realpath(ans)             # <<<<<<<<<<<<<<
- * 
+ *
  *     else:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3518,10 +3518,10 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
 
   /* "smelly/child.py":50
  *     if is_freebsd:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             import subprocess
- * 
+ *
  */
 
   /* function exit code */
@@ -3543,7 +3543,7 @@ static PyObject *__pyx_pf_6smelly_5child_8cwd_of_process(CYTHON_UNUSED PyObject 
 
 /* "smelly/child.py":62
  *     else:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             ans = f'/proc/{pid}/cwd'
  *             return os.path.realpath(ans)
@@ -3578,11 +3578,11 @@ static PyObject *__pyx_pf_6smelly_5child_10cwd_of_process(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("cwd_of_process", 0);
 
   /* "smelly/child.py":63
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:
  *             ans = f'/proc/{pid}/cwd'             # <<<<<<<<<<<<<<
  *             return os.path.realpath(ans)
- * 
+ *
  */
   __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3613,7 +3613,7 @@ static PyObject *__pyx_pf_6smelly_5child_10cwd_of_process(CYTHON_UNUSED PyObject
  *         def cwd_of_process(pid: int) -> str:
  *             ans = f'/proc/{pid}/cwd'
  *             return os.path.realpath(ans)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _environ_of_process(pid: int) -> str:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3647,7 +3647,7 @@ static PyObject *__pyx_pf_6smelly_5child_10cwd_of_process(CYTHON_UNUSED PyObject
 
   /* "smelly/child.py":62
  *     else:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             ans = f'/proc/{pid}/cwd'
  *             return os.path.realpath(ans)
@@ -3669,7 +3669,7 @@ static PyObject *__pyx_pf_6smelly_5child_10cwd_of_process(CYTHON_UNUSED PyObject
 
 /* "smelly/child.py":66
  *             return os.path.realpath(ans)
- * 
+ *
  *     def _environ_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/environ', 'rb') as f:
  *             return f.read().decode('utf-8')
@@ -3713,11 +3713,11 @@ static PyObject *__pyx_pf_6smelly_5child_12_environ_of_process(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("_environ_of_process", 0);
 
   /* "smelly/child.py":67
- * 
+ *
  *     def _environ_of_process(pid: int) -> str:
  *         with open(f'/proc/{pid}/environ', 'rb') as f:             # <<<<<<<<<<<<<<
  *             return f.read().decode('utf-8')
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
@@ -3791,7 +3791,7 @@ static PyObject *__pyx_pf_6smelly_5child_12_environ_of_process(CYTHON_UNUSED PyO
  *     def _environ_of_process(pid: int) -> str:
  *         with open(f'/proc/{pid}/environ', 'rb') as f:
  *             return f.read().decode('utf-8')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:
  */
           __Pyx_XDECREF(__pyx_r);
@@ -3836,11 +3836,11 @@ static PyObject *__pyx_pf_6smelly_5child_12_environ_of_process(CYTHON_UNUSED PyO
           goto __pyx_L11_try_return;
 
           /* "smelly/child.py":67
- * 
+ *
  *     def _environ_of_process(pid: int) -> str:
  *         with open(f'/proc/{pid}/environ', 'rb') as f:             # <<<<<<<<<<<<<<
  *             return f.read().decode('utf-8')
- * 
+ *
  */
         }
         __pyx_L7_error:;
@@ -3870,7 +3870,7 @@ static PyObject *__pyx_pf_6smelly_5child_12_environ_of_process(CYTHON_UNUSED PyO
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_4);
             __Pyx_ErrRestoreWithState(__pyx_t_6, __pyx_t_1, __pyx_t_4);
-            __pyx_t_6 = 0; __pyx_t_1 = 0; __pyx_t_4 = 0; 
+            __pyx_t_6 = 0; __pyx_t_1 = 0; __pyx_t_4 = 0;
             __PYX_ERR(0, 67, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -3933,7 +3933,7 @@ static PyObject *__pyx_pf_6smelly_5child_12_environ_of_process(CYTHON_UNUSED PyO
 
   /* "smelly/child.py":66
  *             return os.path.realpath(ans)
- * 
+ *
  *     def _environ_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/environ', 'rb') as f:
  *             return f.read().decode('utf-8')
@@ -3958,7 +3958,7 @@ static PyObject *__pyx_pf_6smelly_5child_12_environ_of_process(CYTHON_UNUSED PyO
 
 /* "smelly/child.py":70
  *             return f.read().decode('utf-8')
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for x in os.listdir('/proc'):
@@ -4014,7 +4014,7 @@ static PyObject *__pyx_pf_6smelly_5child_14process_group_map(CYTHON_UNUSED PyObj
   __Pyx_RefNannySetupContext("process_group_map", 0);
 
   /* "smelly/child.py":71
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)             # <<<<<<<<<<<<<<
  *         for x in os.listdir('/proc'):
@@ -4382,7 +4382,7 @@ static PyObject *__pyx_pf_6smelly_5child_14process_group_map(CYTHON_UNUSED PyObj
                   __Pyx_GIVEREF(__pyx_t_10);
                   __Pyx_XGIVEREF(__pyx_t_2);
                   __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_10, __pyx_t_2);
-                  __pyx_t_1 = 0; __pyx_t_10 = 0; __pyx_t_2 = 0; 
+                  __pyx_t_1 = 0; __pyx_t_10 = 0; __pyx_t_2 = 0;
                   __PYX_ERR(0, 78, __pyx_L31_except_error)
                 }
                 __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4609,7 +4609,7 @@ static PyObject *__pyx_pf_6smelly_5child_14process_group_map(CYTHON_UNUSED PyObj
  *                 continue
  *             ans[q].append(pid)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_ans, __pyx_v_q); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4631,8 +4631,8 @@ static PyObject *__pyx_pf_6smelly_5child_14process_group_map(CYTHON_UNUSED PyObj
  *                 continue
  *             ans[q].append(pid)
  *         return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -4641,7 +4641,7 @@ static PyObject *__pyx_pf_6smelly_5child_14process_group_map(CYTHON_UNUSED PyObj
 
   /* "smelly/child.py":70
  *             return f.read().decode('utf-8')
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for x in os.listdir('/proc'):
@@ -4669,11 +4669,11 @@ static PyObject *__pyx_pf_6smelly_5child_14process_group_map(CYTHON_UNUSED PyObj
 }
 
 /* "smelly/child.py":91
- * 
+ *
  * @run_once
  * def checked_terminfo_dir() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     return terminfo_dir if os.path.isdir(terminfo_dir) else None
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4708,8 +4708,8 @@ static PyObject *__pyx_pf_6smelly_5child_16checked_terminfo_dir(CYTHON_UNUSED Py
  * @run_once
  * def checked_terminfo_dir() -> Optional[str]:
  *     return terminfo_dir if os.path.isdir(terminfo_dir) else None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -4754,11 +4754,11 @@ static PyObject *__pyx_pf_6smelly_5child_16checked_terminfo_dir(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/child.py":91
- * 
+ *
  * @run_once
  * def checked_terminfo_dir() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     return terminfo_dir if os.path.isdir(terminfo_dir) else None
- * 
+ *
  */
 
   /* function exit code */
@@ -4777,8 +4777,8 @@ static PyObject *__pyx_pf_6smelly_5child_16checked_terminfo_dir(CYTHON_UNUSED Py
 }
 
 /* "smelly/child.py":95
- * 
- * 
+ *
+ *
  * def processes_in_group(grp: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     gmap: Optional[DefaultDict[int, List[int]]] = getattr(
  *         process_group_map, 'cached_map', None)
@@ -4830,7 +4830,7 @@ static PyObject *__pyx_pf_6smelly_5child_18processes_in_group(CYTHON_UNUSED PyOb
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/child.py":96
- * 
+ *
  * def processes_in_group(grp: int) -> List[int]:
  *     gmap: Optional[DefaultDict[int, List[int]]] = getattr(             # <<<<<<<<<<<<<<
  *         process_group_map, 'cached_map', None)
@@ -4933,7 +4933,7 @@ static PyObject *__pyx_pf_6smelly_5child_18processes_in_group(CYTHON_UNUSED PyOb
  *         except Exception:
  *             gmap = defaultdict(list)             # <<<<<<<<<<<<<<
  *     return gmap.get(grp, [])
- * 
+ *
  */
         __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_defaultdict); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 102, __pyx_L6_except_error)
         __Pyx_GOTREF(__pyx_t_11);
@@ -4995,8 +4995,8 @@ static PyObject *__pyx_pf_6smelly_5child_18processes_in_group(CYTHON_UNUSED PyOb
  *         except Exception:
  *             gmap = defaultdict(list)
  *     return gmap.get(grp, [])             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_gmap, __pyx_n_s_get); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
@@ -5055,8 +5055,8 @@ static PyObject *__pyx_pf_6smelly_5child_18processes_in_group(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/child.py":95
- * 
- * 
+ *
+ *
  * def processes_in_group(grp: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     gmap: Optional[DefaultDict[int, List[int]]] = getattr(
  *         process_group_map, 'cached_map', None)
@@ -5081,7 +5081,7 @@ static PyObject *__pyx_pf_6smelly_5child_18processes_in_group(CYTHON_UNUSED PyOb
 static PyObject *__pyx_gb_6smelly_5child_22generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/child.py":107
- * 
+ *
  * @contextmanager
  * def cached_process_data() -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *     try:
@@ -5343,8 +5343,8 @@ static PyObject *__pyx_gb_6smelly_5child_22generator(__pyx_CoroutineObject *__py
  *         yield
  *     finally:
  *         delattr(process_group_map, 'cached_map')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*finally:*/ {
     /*normal exit:*/{
@@ -5410,7 +5410,7 @@ static PyObject *__pyx_gb_6smelly_5child_22generator(__pyx_CoroutineObject *__py
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/child.py":107
- * 
+ *
  * @contextmanager
  * def cached_process_data() -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *     try:
@@ -5440,8 +5440,8 @@ static PyObject *__pyx_gb_6smelly_5child_22generator(__pyx_CoroutineObject *__py
 }
 
 /* "smelly/child.py":119
- * 
- * 
+ *
+ *
  * def parse_environ_block(data: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     """Parse a C environ block of environment variables into a dictionary."""
  *     # The block is usually raw data from the target process.  It might contain
@@ -5498,7 +5498,7 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
  *     # trailing garbage and lines that do not look like assignments.
  *     ret: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  *     pos = 0
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5509,7 +5509,7 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
  *     # trailing garbage and lines that do not look like assignments.
  *     ret: Dict[str, str] = {}
  *     pos = 0             # <<<<<<<<<<<<<<
- * 
+ *
  *     while True:
  */
   __Pyx_INCREF(__pyx_int_0);
@@ -5517,7 +5517,7 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
 
   /* "smelly/child.py":126
  *     pos = 0
- * 
+ *
  *     while True:             # <<<<<<<<<<<<<<
  *         next_pos = data.find("\0", pos)
  *         # nul byte at the beginning or double nul byte means finish
@@ -5525,7 +5525,7 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
   while (1) {
 
     /* "smelly/child.py":127
- * 
+ *
  *     while True:
  *         next_pos = data.find("\0", pos)             # <<<<<<<<<<<<<<
  *         # nul byte at the beginning or double nul byte means finish
@@ -5715,7 +5715,7 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
  *             value = data[equal_pos + 1: next_pos]
  *             ret[key] = value             # <<<<<<<<<<<<<<
  *         pos = next_pos + 1
- * 
+ *
  */
       if (unlikely(PyDict_SetItem(__pyx_v_ret, __pyx_v_key, __pyx_v_value) < 0)) __PYX_ERR(0, 136, __pyx_L1_error)
 
@@ -5732,7 +5732,7 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
  *             value = data[equal_pos + 1: next_pos]
  *             ret[key] = value
  *         pos = next_pos + 1             # <<<<<<<<<<<<<<
- * 
+ *
  *     return ret
  */
     __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_v_next_pos, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
@@ -5744,10 +5744,10 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
 
   /* "smelly/child.py":139
  *         pos = next_pos + 1
- * 
+ *
  *     return ret             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ret);
@@ -5755,8 +5755,8 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly/child.py":119
- * 
- * 
+ *
+ *
  * def parse_environ_block(data: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     """Parse a C environ block of environment variables into a dictionary."""
  *     # The block is usually raw data from the target process.  It might contain
@@ -5783,11 +5783,11 @@ static PyObject *__pyx_pf_6smelly_5child_23parse_environ_block(CYTHON_UNUSED PyO
 }
 
 /* "smelly/child.py":142
- * 
- * 
+ *
+ *
  * def environ_of_process(pid: int) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     return parse_environ_block(_environ_of_process(pid))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5818,11 +5818,11 @@ static PyObject *__pyx_pf_6smelly_5child_25environ_of_process(CYTHON_UNUSED PyOb
   __Pyx_RefNannySetupContext("environ_of_process", 0);
 
   /* "smelly/child.py":143
- * 
+ *
  * def environ_of_process(pid: int) -> Dict[str, str]:
  *     return parse_environ_block(_environ_of_process(pid))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_environ_block); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
@@ -5865,11 +5865,11 @@ static PyObject *__pyx_pf_6smelly_5child_25environ_of_process(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/child.py":142
- * 
- * 
+ *
+ *
  * def environ_of_process(pid: int) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     return parse_environ_block(_environ_of_process(pid))
- * 
+ *
  */
 
   /* function exit code */
@@ -5888,8 +5888,8 @@ static PyObject *__pyx_pf_6smelly_5child_25environ_of_process(CYTHON_UNUSED PyOb
 }
 
 /* "smelly/child.py":146
- * 
- * 
+ *
+ *
  * def process_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = dict(os.environ)
  *     ssl_env_var = getattr(sys, 'smelly_ssl_env_var', None)
@@ -5924,7 +5924,7 @@ static PyObject *__pyx_pf_6smelly_5child_27process_env(CYTHON_UNUSED PyObject *_
   __Pyx_RefNannySetupContext("process_env", 0);
 
   /* "smelly/child.py":147
- * 
+ *
  * def process_env() -> Dict[str, str]:
  *     ans = dict(os.environ)             # <<<<<<<<<<<<<<
  *     ssl_env_var = getattr(sys, 'smelly_ssl_env_var', None)
@@ -5992,7 +5992,7 @@ static PyObject *__pyx_pf_6smelly_5child_27process_env(CYTHON_UNUSED PyObject *_
  *         ans.pop(ssl_env_var, None)
  *     ans.pop('XDG_ACTIVATION_TOKEN', None)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_Pop(__pyx_v_ans, __pyx_n_s_XDG_ACTIVATION_TOKEN, Py_None); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6002,8 +6002,8 @@ static PyObject *__pyx_pf_6smelly_5child_27process_env(CYTHON_UNUSED PyObject *_
  *         ans.pop(ssl_env_var, None)
  *     ans.pop('XDG_ACTIVATION_TOKEN', None)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -6011,8 +6011,8 @@ static PyObject *__pyx_pf_6smelly_5child_27process_env(CYTHON_UNUSED PyObject *_
   goto __pyx_L0;
 
   /* "smelly/child.py":146
- * 
- * 
+ *
+ *
  * def process_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = dict(os.environ)
  *     ssl_env_var = getattr(sys, 'smelly_ssl_env_var', None)
@@ -6033,8 +6033,8 @@ static PyObject *__pyx_pf_6smelly_5child_27process_env(CYTHON_UNUSED PyObject *_
 }
 
 /* "smelly/child.py":155
- * 
- * 
+ *
+ *
  * def default_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans: Optional[Dict[str, str]] = getattr(default_env, 'env', None)
  *     if ans is None:
@@ -6069,7 +6069,7 @@ static PyObject *__pyx_pf_6smelly_5child_29default_env(CYTHON_UNUSED PyObject *_
   __Pyx_RefNannySetupContext("default_env", 0);
 
   /* "smelly/child.py":156
- * 
+ *
  * def default_env() -> Dict[str, str]:
  *     ans: Optional[Dict[str, str]] = getattr(default_env, 'env', None)             # <<<<<<<<<<<<<<
  *     if ans is None:
@@ -6099,7 +6099,7 @@ static PyObject *__pyx_pf_6smelly_5child_29default_env(CYTHON_UNUSED PyObject *_
  *     if ans is None:
  *         return process_env()             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_process_env); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
@@ -6136,8 +6136,8 @@ static PyObject *__pyx_pf_6smelly_5child_29default_env(CYTHON_UNUSED PyObject *_
  *     if ans is None:
  *         return process_env()
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -6145,8 +6145,8 @@ static PyObject *__pyx_pf_6smelly_5child_29default_env(CYTHON_UNUSED PyObject *_
   goto __pyx_L0;
 
   /* "smelly/child.py":155
- * 
- * 
+ *
+ *
  * def default_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans: Optional[Dict[str, str]] = getattr(default_env, 'env', None)
  *     if ans is None:
@@ -6167,8 +6167,8 @@ static PyObject *__pyx_pf_6smelly_5child_29default_env(CYTHON_UNUSED PyObject *_
 }
 
 /* "smelly/child.py":162
- * 
- * 
+ *
+ *
  * def set_default_env(val: Optional[Dict[str, str]] = None) -> None:             # <<<<<<<<<<<<<<
  *     env = process_env().copy()
  *     has_lctype = False
@@ -6251,7 +6251,7 @@ static PyObject *__pyx_pf_6smelly_5child_31set_default_env(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("set_default_env", 0);
 
   /* "smelly/child.py":163
- * 
+ *
  * def set_default_env(val: Optional[Dict[str, str]] = None) -> None:
  *     env = process_env().copy()             # <<<<<<<<<<<<<<
  *     has_lctype = False
@@ -6368,7 +6368,7 @@ static PyObject *__pyx_pf_6smelly_5child_31set_default_env(CYTHON_UNUSED PyObjec
  *         env.update(val)
  *     setattr(default_env, 'env', env)             # <<<<<<<<<<<<<<
  *     setattr(default_env, 'lc_ctype_set_by_user', has_lctype)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_default_env); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6379,8 +6379,8 @@ static PyObject *__pyx_pf_6smelly_5child_31set_default_env(CYTHON_UNUSED PyObjec
  *         env.update(val)
  *     setattr(default_env, 'env', env)
  *     setattr(default_env, 'lc_ctype_set_by_user', has_lctype)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_default_env); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6388,8 +6388,8 @@ static PyObject *__pyx_pf_6smelly_5child_31set_default_env(CYTHON_UNUSED PyObjec
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":162
- * 
- * 
+ *
+ *
  * def set_default_env(val: Optional[Dict[str, str]] = None) -> None:             # <<<<<<<<<<<<<<
  *     env = process_env().copy()
  *     has_lctype = False
@@ -6414,11 +6414,11 @@ static PyObject *__pyx_pf_6smelly_5child_31set_default_env(CYTHON_UNUSED PyObjec
 }
 
 /* "smelly/child.py":172
- * 
- * 
+ *
+ *
  * def set_LANG_in_default_env(val: str) -> None:             # <<<<<<<<<<<<<<
  *     default_env().setdefault('LANG', val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6457,11 +6457,11 @@ static PyObject *__pyx_pf_6smelly_5child_33set_LANG_in_default_env(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("set_LANG_in_default_env", 0);
 
   /* "smelly/child.py":173
- * 
+ *
  * def set_LANG_in_default_env(val: str) -> None:
  *     default_env().setdefault('LANG', val)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_default_env); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -6531,11 +6531,11 @@ static PyObject *__pyx_pf_6smelly_5child_33set_LANG_in_default_env(CYTHON_UNUSED
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":172
- * 
- * 
+ *
+ *
  * def set_LANG_in_default_env(val: str) -> None:             # <<<<<<<<<<<<<<
  *     default_env().setdefault('LANG', val)
- * 
+ *
  */
 
   /* function exit code */
@@ -6555,8 +6555,8 @@ static PyObject *__pyx_pf_6smelly_5child_33set_LANG_in_default_env(CYTHON_UNUSED
 }
 
 /* "smelly/child.py":176
- * 
- * 
+ *
+ *
  * def openpty() -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     master, slave = os.openpty()  # Note that master and slave are in blocking mode
  *     os.set_inheritable(slave, True)
@@ -6593,7 +6593,7 @@ static PyObject *__pyx_pf_6smelly_5child_35openpty(CYTHON_UNUSED PyObject *__pyx
   __Pyx_RefNannySetupContext("openpty", 0);
 
   /* "smelly/child.py":177
- * 
+ *
  * def openpty() -> Tuple[int, int]:
  *     master, slave = os.openpty()  # Note that master and slave are in blocking mode             # <<<<<<<<<<<<<<
  *     os.set_inheritable(slave, True)
@@ -6629,11 +6629,11 @@ static PyObject *__pyx_pf_6smelly_5child_35openpty(CYTHON_UNUSED PyObject *__pyx
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_2);
@@ -6793,7 +6793,7 @@ static PyObject *__pyx_pf_6smelly_5child_35openpty(CYTHON_UNUSED PyObject *__pyx
  *     os.set_inheritable(master, False)
  *     fast_data_types.set_iutf8_fd(master, True)             # <<<<<<<<<<<<<<
  *     return master, slave
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_fast_data_types); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -6851,8 +6851,8 @@ static PyObject *__pyx_pf_6smelly_5child_35openpty(CYTHON_UNUSED PyObject *__pyx
  *     os.set_inheritable(master, False)
  *     fast_data_types.set_iutf8_fd(master, True)
  *     return master, slave             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
@@ -6868,8 +6868,8 @@ static PyObject *__pyx_pf_6smelly_5child_35openpty(CYTHON_UNUSED PyObject *__pyx
   goto __pyx_L0;
 
   /* "smelly/child.py":176
- * 
- * 
+ *
+ *
  * def openpty() -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     master, slave = os.openpty()  # Note that master and slave are in blocking mode
  *     os.set_inheritable(slave, True)
@@ -6892,11 +6892,11 @@ static PyObject *__pyx_pf_6smelly_5child_35openpty(CYTHON_UNUSED PyObject *__pyx
 }
 
 /* "smelly/child.py":185
- * 
+ *
  * @run_once
  * def getpid() -> str:             # <<<<<<<<<<<<<<
  *     return str(os.getpid())
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6928,8 +6928,8 @@ static PyObject *__pyx_pf_6smelly_5child_37getpid(CYTHON_UNUSED PyObject *__pyx_
  * @run_once
  * def getpid() -> str:
  *     return str(os.getpid())             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
@@ -6961,11 +6961,11 @@ static PyObject *__pyx_pf_6smelly_5child_37getpid(CYTHON_UNUSED PyObject *__pyx_
   goto __pyx_L0;
 
   /* "smelly/child.py":185
- * 
+ *
  * @run_once
  * def getpid() -> str:             # <<<<<<<<<<<<<<
  *     return str(os.getpid())
- * 
+ *
  */
 
   /* function exit code */
@@ -6982,8 +6982,8 @@ static PyObject *__pyx_pf_6smelly_5child_37getpid(CYTHON_UNUSED PyObject *__pyx_
 }
 
 /* "smelly/child.py":195
- * 
- * 
+ *
+ *
  * def is_prewarmable(argv: List[str]) -> Tuple[bool, List[str]]:             # <<<<<<<<<<<<<<
  *     if len(argv) < 3 or os.path.basename(argv[0]) != 'smelly':
  *         return False, argv
@@ -7023,7 +7023,7 @@ static PyObject *__pyx_pf_6smelly_5child_39is_prewarmable(CYTHON_UNUSED PyObject
   __Pyx_INCREF(__pyx_v_argv);
 
   /* "smelly/child.py":196
- * 
+ *
  * def is_prewarmable(argv: List[str]) -> Tuple[bool, List[str]]:
  *     if len(argv) < 3 or os.path.basename(argv[0]) != 'smelly':             # <<<<<<<<<<<<<<
  *         return False, argv
@@ -7089,7 +7089,7 @@ static PyObject *__pyx_pf_6smelly_5child_39is_prewarmable(CYTHON_UNUSED PyObject
     goto __pyx_L0;
 
     /* "smelly/child.py":196
- * 
+ *
  * def is_prewarmable(argv: List[str]) -> Tuple[bool, List[str]]:
  *     if len(argv) < 3 or os.path.basename(argv[0]) != 'smelly':             # <<<<<<<<<<<<<<
  *         return False, argv
@@ -7433,7 +7433,7 @@ static PyObject *__pyx_pf_6smelly_5child_39is_prewarmable(CYTHON_UNUSED PyObject
  *             del argv[1]
  *         return False, argv             # <<<<<<<<<<<<<<
  *     return True, argv
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 218, __pyx_L1_error)
@@ -7461,8 +7461,8 @@ static PyObject *__pyx_pf_6smelly_5child_39is_prewarmable(CYTHON_UNUSED PyObject
  *             del argv[1]
  *         return False, argv
  *     return True, argv             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 219, __pyx_L1_error)
@@ -7478,8 +7478,8 @@ static PyObject *__pyx_pf_6smelly_5child_39is_prewarmable(CYTHON_UNUSED PyObject
   goto __pyx_L0;
 
   /* "smelly/child.py":195
- * 
- * 
+ *
+ *
  * def is_prewarmable(argv: List[str]) -> Tuple[bool, List[str]]:             # <<<<<<<<<<<<<<
  *     if len(argv) < 3 or os.path.basename(argv[0]) != 'smelly':
  *         return False, argv
@@ -7503,7 +7503,7 @@ static PyObject *__pyx_pf_6smelly_5child_39is_prewarmable(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/child.py":223
- * 
+ *
  * @run_once
  * def cmdline_of_prewarmer() -> List[str]:             # <<<<<<<<<<<<<<
  *     # we need this check in case the prewarmed process has done an exec and
@@ -7605,7 +7605,7 @@ static PyObject *__pyx_pf_6smelly_5child_41cmdline_of_prewarmer(CYTHON_UNUSED Py
  *     with suppress(Exception):
  *         return cmdline_of_pid(fast_data_types.get_boss().prewarm.worker_pid)             # <<<<<<<<<<<<<<
  *     return ['']
- * 
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_cmdline_of_pid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L7_error)
@@ -7692,7 +7692,7 @@ static PyObject *__pyx_pf_6smelly_5child_41cmdline_of_prewarmer(CYTHON_UNUSED Py
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 226, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7757,8 +7757,8 @@ static PyObject *__pyx_pf_6smelly_5child_41cmdline_of_prewarmer(CYTHON_UNUSED Py
  *     with suppress(Exception):
  *         return cmdline_of_pid(fast_data_types.get_boss().prewarm.worker_pid)
  *     return ['']             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 228, __pyx_L1_error)
@@ -7771,7 +7771,7 @@ static PyObject *__pyx_pf_6smelly_5child_41cmdline_of_prewarmer(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/child.py":223
- * 
+ *
  * @run_once
  * def cmdline_of_prewarmer() -> List[str]:             # <<<<<<<<<<<<<<
  *     # we need this check in case the prewarmed process has done an exec and
@@ -7795,7 +7795,7 @@ static PyObject *__pyx_pf_6smelly_5child_41cmdline_of_prewarmer(CYTHON_UNUSED Py
 
 /* "smelly/child.py":237
  *     is_prewarmed = False
- * 
+ *
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
  *         argv: Sequence[str],
@@ -7975,7 +7975,7 @@ static PyObject *__pyx_pw_6smelly_5child_5Child_1__init__(PyObject *__pyx_self, 
 
   /* "smelly/child.py":237
  *     is_prewarmed = False
- * 
+ *
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
  *         argv: Sequence[str],
@@ -8406,7 +8406,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child___init__(CYTHON_UNUSED PyObject 
  *         self.cwd = os.path.abspath(cwd)
  *         self.stdin = stdin             # <<<<<<<<<<<<<<
  *         self.env = env or {}
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_stdin, __pyx_v_stdin) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
 
@@ -8414,7 +8414,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child___init__(CYTHON_UNUSED PyObject 
  *         self.cwd = os.path.abspath(cwd)
  *         self.stdin = stdin
  *         self.env = env or {}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def final_env(self) -> Dict[str, str]:
  */
   __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_env); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 261, __pyx_L1_error)
@@ -8435,7 +8435,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child___init__(CYTHON_UNUSED PyObject 
 
   /* "smelly/child.py":237
  *     is_prewarmed = False
- * 
+ *
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
  *         argv: Sequence[str],
@@ -8465,10 +8465,10 @@ static PyObject *__pyx_pf_6smelly_5child_5Child___init__(CYTHON_UNUSED PyObject 
 
 /* "smelly/child.py":263
  *         self.env = env or {}
- * 
+ *
  *     def final_env(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         from smelly.options.utils import DELETE_ENV_VAR
- * 
+ *
  */
 
 /* Python wrapper */
@@ -8515,10 +8515,10 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("final_env", 0);
 
   /* "smelly/child.py":264
- * 
+ *
  *     def final_env(self) -> Dict[str, str]:
  *         from smelly.options.utils import DELETE_ENV_VAR             # <<<<<<<<<<<<<<
- * 
+ *
  *         env = default_env().copy()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 264, __pyx_L1_error)
@@ -8538,7 +8538,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
 
   /* "smelly/child.py":266
  *         from smelly.options.utils import DELETE_ENV_VAR
- * 
+ *
  *         env = default_env().copy()             # <<<<<<<<<<<<<<
  *         boss = fast_data_types.get_boss()
  *         if (
@@ -8582,7 +8582,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
   __pyx_t_2 = 0;
 
   /* "smelly/child.py":267
- * 
+ *
  *         env = default_env().copy()
  *         boss = fast_data_types.get_boss()             # <<<<<<<<<<<<<<
  *         if (
@@ -9068,7 +9068,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
  *         self.unmodified_argv = list(self.argv)
  *         if 'disabled' not in opts.shell_integration:             # <<<<<<<<<<<<<<
  *             from .shell_integration import modify_shell_environ
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_opts, __pyx_n_s_shell_integration); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 295, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9081,7 +9081,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
  *         self.unmodified_argv = list(self.argv)
  *         if 'disabled' not in opts.shell_integration:
  *             from .shell_integration import modify_shell_environ             # <<<<<<<<<<<<<<
- * 
+ *
  *             modify_shell_environ(opts, env, self.argv)
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 296, __pyx_L1_error)
@@ -9101,7 +9101,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
 
     /* "smelly/child.py":298
  *             from .shell_integration import modify_shell_environ
- * 
+ *
  *             modify_shell_environ(opts, env, self.argv)             # <<<<<<<<<<<<<<
  *         env = {k: v for k, v in env.items() if v is not DELETE_ENV_VAR}
  *         if self.is_clone_launch:
@@ -9166,12 +9166,12 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
  *         self.unmodified_argv = list(self.argv)
  *         if 'disabled' not in opts.shell_integration:             # <<<<<<<<<<<<<<
  *             from .shell_integration import modify_shell_environ
- * 
+ *
  */
   }
 
   /* "smelly/child.py":299
- * 
+ *
  *             modify_shell_environ(opts, env, self.argv)
  *         env = {k: v for k, v in env.items() if v is not DELETE_ENV_VAR}             # <<<<<<<<<<<<<<
  *         if self.is_clone_launch:
@@ -9247,11 +9247,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_2);
         __Pyx_INCREF(__pyx_t_4);
@@ -9355,7 +9355,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
  *         else:
  *             env.pop('smelly_IS_CLONE_LAUNCH', None)             # <<<<<<<<<<<<<<
  *         return env
- * 
+ *
  */
   /*else*/ {
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_env, __pyx_n_s_pop); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
@@ -9371,7 +9371,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
  *         else:
  *             env.pop('smelly_IS_CLONE_LAUNCH', None)
  *         return env             # <<<<<<<<<<<<<<
- * 
+ *
  *     def fork(self) -> Optional[int]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9381,10 +9381,10 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
 
   /* "smelly/child.py":263
  *         self.env = env or {}
- * 
+ *
  *     def final_env(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         from smelly.options.utils import DELETE_ENV_VAR
- * 
+ *
  */
 
   /* function exit code */
@@ -9413,7 +9413,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_2final_env(CYTHON_UNUSED PyObjec
 
 /* "smelly/child.py":307
  *         return env
- * 
+ *
  *     def fork(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if self.forked:
  *             return None
@@ -9592,11 +9592,11 @@ static PyObject *__pyx_gb_6smelly_5child_5Child_4fork_2generator1(__pyx_Coroutin
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_4);
@@ -9707,7 +9707,7 @@ static PyObject *__pyx_gb_6smelly_5child_5Child_4fork_2generator1(__pyx_Coroutin
 
 /* "smelly/child.py":307
  *         return env
- * 
+ *
  *     def fork(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if self.forked:
  *             return None
@@ -9760,7 +9760,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly/child.py":308
- * 
+ *
  *     def fork(self) -> Optional[int]:
  *         if self.forked:             # <<<<<<<<<<<<<<
  *             return None
@@ -9784,7 +9784,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
     goto __pyx_L0;
 
     /* "smelly/child.py":308
- * 
+ *
  *     def fork(self) -> Optional[int]:
  *         if self.forked:             # <<<<<<<<<<<<<<
  *             return None
@@ -9835,11 +9835,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
@@ -9929,11 +9929,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -10021,11 +10021,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_3);
@@ -10228,11 +10228,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_5);
@@ -11216,7 +11216,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
  *         if self.child_fd is not None:
  *             os.set_blocking(self.child_fd, False)             # <<<<<<<<<<<<<<
  *         return pid
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_os); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 375, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
@@ -11287,7 +11287,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
  *         if self.child_fd is not None:
  *             os.set_blocking(self.child_fd, False)
  *         return pid             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __del__(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11297,7 +11297,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
 
   /* "smelly/child.py":307
  *         return env
- * 
+ *
  *     def fork(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if self.forked:
  *             return None
@@ -11338,7 +11338,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_4fork(CYTHON_UNUSED PyObject *__
 
 /* "smelly/child.py":378
  *         return pid
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         fd = getattr(self, 'terminal_ready_fd', -1)
  *         if fd > -1:
@@ -11372,7 +11372,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_6__del__(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("__del__", 0);
 
   /* "smelly/child.py":379
- * 
+ *
  *     def __del__(self) -> None:
  *         fd = getattr(self, 'terminal_ready_fd', -1)             # <<<<<<<<<<<<<<
  *         if fd > -1:
@@ -11400,7 +11400,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_6__del__(CYTHON_UNUSED PyObject 
  *         if fd > -1:
  *             os.close(fd)             # <<<<<<<<<<<<<<
  *         self.terminal_ready_fd = -1
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 381, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -11437,14 +11437,14 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_6__del__(CYTHON_UNUSED PyObject 
  *         if fd > -1:
  *             os.close(fd)
  *         self.terminal_ready_fd = -1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def mark_terminal_ready(self) -> None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_terminal_ready_fd, __pyx_int_neg_1) < 0) __PYX_ERR(0, 382, __pyx_L1_error)
 
   /* "smelly/child.py":378
  *         return pid
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         fd = getattr(self, 'terminal_ready_fd', -1)
  *         if fd > -1:
@@ -11468,7 +11468,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_6__del__(CYTHON_UNUSED PyObject 
 
 /* "smelly/child.py":384
  *         self.terminal_ready_fd = -1
- * 
+ *
  *     def mark_terminal_ready(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.is_prewarmed:
  *             fast_data_types.get_boss().prewarm.mark_child_as_ready(
@@ -11502,7 +11502,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_8mark_terminal_ready(CYTHON_UNUS
   __Pyx_RefNannySetupContext("mark_terminal_ready", 0);
 
   /* "smelly/child.py":385
- * 
+ *
  *     def mark_terminal_ready(self) -> None:
  *         if self.is_prewarmed:             # <<<<<<<<<<<<<<
  *             fast_data_types.get_boss().prewarm.mark_child_as_ready(
@@ -11579,7 +11579,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_8mark_terminal_ready(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/child.py":385
- * 
+ *
  *     def mark_terminal_ready(self) -> None:
  *         if self.is_prewarmed:             # <<<<<<<<<<<<<<
  *             fast_data_types.get_boss().prewarm.mark_child_as_ready(
@@ -11593,7 +11593,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_8mark_terminal_ready(CYTHON_UNUS
  *         else:
  *             os.close(self.terminal_ready_fd)             # <<<<<<<<<<<<<<
  *             self.terminal_ready_fd = -1
- * 
+ *
  */
   /*else*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 389, __pyx_L1_error)
@@ -11625,7 +11625,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_8mark_terminal_ready(CYTHON_UNUS
  *         else:
  *             os.close(self.terminal_ready_fd)
  *             self.terminal_ready_fd = -1             # <<<<<<<<<<<<<<
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_terminal_ready_fd, __pyx_int_neg_1) < 0) __PYX_ERR(0, 390, __pyx_L1_error)
@@ -11634,7 +11634,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_8mark_terminal_ready(CYTHON_UNUS
 
   /* "smelly/child.py":384
  *         self.terminal_ready_fd = -1
- * 
+ *
  *     def mark_terminal_ready(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.is_prewarmed:
  *             fast_data_types.get_boss().prewarm.mark_child_as_ready(
@@ -11658,7 +11658,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_8mark_terminal_ready(CYTHON_UNUS
 
 /* "smelly/child.py":392
  *             self.terminal_ready_fd = -1
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
  *             ans = cmdline_of_pid(pid)
@@ -11750,7 +11750,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_10cmdline_of_pid(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("cmdline_of_pid", 0);
 
   /* "smelly/child.py":393
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:
  *         try:             # <<<<<<<<<<<<<<
  *             ans = cmdline_of_pid(pid)
@@ -11793,7 +11793,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_10cmdline_of_pid(CYTHON_UNUSED P
       __pyx_t_4 = 0;
 
       /* "smelly/child.py":393
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:
  *         try:             # <<<<<<<<<<<<<<
  *             ans = cmdline_of_pid(pid)
@@ -11844,7 +11844,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_10cmdline_of_pid(CYTHON_UNUSED P
     __pyx_L5_except_error:;
 
     /* "smelly/child.py":393
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:
  *         try:             # <<<<<<<<<<<<<<
  *             ans = cmdline_of_pid(pid)
@@ -11943,7 +11943,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_10cmdline_of_pid(CYTHON_UNUSED P
  *                 not ans or (self.is_prewarmed and ans == cmdline_of_prewarmer())):
  *             ans = list(self.argv)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_argv); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 399, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -11966,7 +11966,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_10cmdline_of_pid(CYTHON_UNUSED P
  *                 not ans or (self.is_prewarmed and ans == cmdline_of_prewarmer())):
  *             ans = list(self.argv)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11976,7 +11976,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_10cmdline_of_pid(CYTHON_UNUSED P
 
   /* "smelly/child.py":392
  *             self.terminal_ready_fd = -1
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
  *             ans = cmdline_of_pid(pid)
@@ -11998,7 +11998,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_10cmdline_of_pid(CYTHON_UNUSED P
 }
 
 /* "smelly/child.py":403
- * 
+ *
  *     @property
  *     def foreground_processes(self) -> List[ProcessDesc]:             # <<<<<<<<<<<<<<
  *         if self.child_fd is None:
@@ -12021,7 +12021,7 @@ static PyObject *__pyx_pw_6smelly_5child_5Child_13foreground_processes(PyObject 
 
 /* "smelly/child.py":411
  *                 pgrp) if pgrp >= 0 else []
- * 
+ *
  *             def process_desc(pid: int) -> ProcessDesc:             # <<<<<<<<<<<<<<
  *                 ans: ProcessDesc = {'pid': pid, 'cmdline': None, 'cwd': None}
  *                 with suppress(Exception):
@@ -12066,7 +12066,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20foreground_processes_process_d
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly/child.py":412
- * 
+ *
  *             def process_desc(pid: int) -> ProcessDesc:
  *                 ans: ProcessDesc = {'pid': pid, 'cmdline': None, 'cwd': None}             # <<<<<<<<<<<<<<
  *                 with suppress(Exception):
@@ -12203,7 +12203,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20foreground_processes_process_d
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 413, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -12306,7 +12306,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20foreground_processes_process_d
  *                 with suppress(Exception):
  *                     ans['cwd'] = cwd_of_process(pid) or None             # <<<<<<<<<<<<<<
  *                 return ans
- * 
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_cwd_of_process); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 416, __pyx_L21_error)
           __Pyx_GOTREF(__pyx_t_1);
@@ -12379,7 +12379,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20foreground_processes_process_d
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_2, __pyx_t_1);
-            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 415, __pyx_L23_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -12425,7 +12425,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20foreground_processes_process_d
  *                 with suppress(Exception):
  *                     ans['cwd'] = cwd_of_process(pid) or None
  *                 return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *             return [process_desc(x) for x in foreground_processes]
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12435,7 +12435,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20foreground_processes_process_d
 
   /* "smelly/child.py":411
  *                 pgrp) if pgrp >= 0 else []
- * 
+ *
  *             def process_desc(pid: int) -> ProcessDesc:             # <<<<<<<<<<<<<<
  *                 ans: ProcessDesc = {'pid': pid, 'cmdline': None, 'cwd': None}
  *                 with suppress(Exception):
@@ -12457,7 +12457,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20foreground_processes_process_d
 }
 
 /* "smelly/child.py":403
- * 
+ *
  *     @property
  *     def foreground_processes(self) -> List[ProcessDesc]:             # <<<<<<<<<<<<<<
  *         if self.child_fd is None:
@@ -12590,7 +12590,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
  *             pgrp = os.tcgetpgrp(self.child_fd)
  *             foreground_processes = processes_in_group(
  *                 pgrp) if pgrp >= 0 else []             # <<<<<<<<<<<<<<
- * 
+ *
  *             def process_desc(pid: int) -> ProcessDesc:
  */
       __pyx_t_8 = PyObject_RichCompare(__pyx_v_pgrp, __pyx_int_0, Py_GE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 409, __pyx_L4_error)
@@ -12603,7 +12603,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
  *             pgrp = os.tcgetpgrp(self.child_fd)
  *             foreground_processes = processes_in_group(             # <<<<<<<<<<<<<<
  *                 pgrp) if pgrp >= 0 else []
- * 
+ *
  */
         __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_processes_in_group); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 408, __pyx_L4_error)
         __Pyx_GOTREF(__pyx_t_7);
@@ -12612,7 +12612,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
  *             pgrp = os.tcgetpgrp(self.child_fd)
  *             foreground_processes = processes_in_group(
  *                 pgrp) if pgrp >= 0 else []             # <<<<<<<<<<<<<<
- * 
+ *
  *             def process_desc(pid: int) -> ProcessDesc:
  */
         __pyx_t_9 = NULL;
@@ -12643,7 +12643,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
 
       /* "smelly/child.py":411
  *                 pgrp) if pgrp >= 0 else []
- * 
+ *
  *             def process_desc(pid: int) -> ProcessDesc:             # <<<<<<<<<<<<<<
  *                 ans: ProcessDesc = {'pid': pid, 'cmdline': None, 'cwd': None}
  *                 with suppress(Exception):
@@ -12664,7 +12664,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
 
       /* "smelly/child.py":419
  *                 return ans
- * 
+ *
  *             return [process_desc(x) for x in foreground_processes]             # <<<<<<<<<<<<<<
  *         except Exception:
  *             return []
@@ -12738,11 +12738,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
     __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
 
     /* "smelly/child.py":420
- * 
+ *
  *             return [process_desc(x) for x in foreground_processes]
  *         except Exception:             # <<<<<<<<<<<<<<
  *             return []
- * 
+ *
  */
     __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_12) {
@@ -12756,7 +12756,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
  *             return [process_desc(x) for x in foreground_processes]
  *         except Exception:
  *             return []             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
       __Pyx_XDECREF(__pyx_r);
@@ -12799,7 +12799,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
   }
 
   /* "smelly/child.py":403
- * 
+ *
  *     @property
  *     def foreground_processes(self) -> List[ProcessDesc]:             # <<<<<<<<<<<<<<
  *         if self.child_fd is None:
@@ -12826,7 +12826,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_12foreground_processes(CYTHON_UN
 }
 
 /* "smelly/child.py":424
- * 
+ *
  *     @property
  *     def cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -12971,7 +12971,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_14cmdline(CYTHON_UNUSED PyObject
  *             return self.cmdline_of_pid(self.pid) or list(self.argv)
  *         except Exception:             # <<<<<<<<<<<<<<
  *             return list(self.argv)
- * 
+ *
  */
     __pyx_t_10 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_10) {
@@ -12985,7 +12985,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_14cmdline(CYTHON_UNUSED PyObject
  *             return self.cmdline_of_pid(self.pid) or list(self.argv)
  *         except Exception:
  *             return list(self.argv)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
       __Pyx_XDECREF(__pyx_r);
@@ -13031,7 +13031,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_14cmdline(CYTHON_UNUSED PyObject
   }
 
   /* "smelly/child.py":424
- * 
+ *
  *     @property
  *     def cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -13054,7 +13054,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_14cmdline(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/child.py":432
- * 
+ *
  *     @property
  *     def foreground_cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -13196,7 +13196,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_16foreground_cmdline(CYTHON_UNUS
  *             return self.cmdline_of_pid(self.pid_for_cwd) or self.cmdline
  *         except Exception:             # <<<<<<<<<<<<<<
  *             return self.cmdline
- * 
+ *
  */
     __pyx_t_10 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_10) {
@@ -13210,7 +13210,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_16foreground_cmdline(CYTHON_UNUS
  *             return self.cmdline_of_pid(self.pid_for_cwd) or self.cmdline
  *         except Exception:
  *             return self.cmdline             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
       __Pyx_XDECREF(__pyx_r);
@@ -13253,7 +13253,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_16foreground_cmdline(CYTHON_UNUS
   }
 
   /* "smelly/child.py":432
- * 
+ *
  *     @property
  *     def foreground_cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -13276,7 +13276,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_16foreground_cmdline(CYTHON_UNUS
 }
 
 /* "smelly/child.py":440
- * 
+ *
  *     @property
  *     def environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -13401,7 +13401,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_18environ(CYTHON_UNUSED PyObject
  *             return environ_of_process(self.pid)
  *         except Exception:             # <<<<<<<<<<<<<<
  *             return {}
- * 
+ *
  */
     __pyx_t_9 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_9) {
@@ -13415,7 +13415,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_18environ(CYTHON_UNUSED PyObject
  *             return environ_of_process(self.pid)
  *         except Exception:
  *             return {}             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
       __Pyx_XDECREF(__pyx_r);
@@ -13458,7 +13458,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_18environ(CYTHON_UNUSED PyObject
   }
 
   /* "smelly/child.py":440
- * 
+ *
  *     @property
  *     def environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -13480,7 +13480,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_18environ(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/child.py":448
- * 
+ *
  *     @property
  *     def current_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -13601,7 +13601,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20current_cwd(CYTHON_UNUSED PyOb
  *             assert self.pid is not None
  *             return cwd_of_process(self.pid)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
           __Pyx_XDECREF(__pyx_r);
           __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_cwd_of_process); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 451, __pyx_L7_error)
@@ -13663,7 +13663,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20current_cwd(CYTHON_UNUSED PyOb
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 449, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -13728,7 +13728,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20current_cwd(CYTHON_UNUSED PyOb
  *             assert self.pid is not None
  *             return cwd_of_process(self.pid)
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_pid_for_cwd(self, oldest: bool = False) -> Optional[int]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -13736,7 +13736,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20current_cwd(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/child.py":448
- * 
+ *
  *     @property
  *     def current_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -13759,7 +13759,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_20current_cwd(CYTHON_UNUSED PyOb
 
 /* "smelly/child.py":454
  *         return None
- * 
+ *
  *     def get_pid_for_cwd(self, oldest: bool = False) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             assert self.child_fd is not None
@@ -13856,7 +13856,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_22get_pid_for_cwd(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("get_pid_for_cwd", 0);
 
   /* "smelly/child.py":455
- * 
+ *
  *     def get_pid_for_cwd(self, oldest: bool = False) -> Optional[int]:
  *         with suppress(Exception):             # <<<<<<<<<<<<<<
  *             assert self.child_fd is not None
@@ -14050,7 +14050,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_22get_pid_for_cwd(CYTHON_UNUSED 
  *                 return min(foreground_processes) if oldest else max(
  *                     foreground_processes)             # <<<<<<<<<<<<<<
  *         return self.pid
- * 
+ *
  */
               __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_max, __pyx_v_foreground_processes); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 471, __pyx_L7_error)
               __Pyx_GOTREF(__pyx_t_3);
@@ -14071,7 +14071,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_22get_pid_for_cwd(CYTHON_UNUSED 
           }
 
           /* "smelly/child.py":455
- * 
+ *
  *     def get_pid_for_cwd(self, oldest: bool = False) -> Optional[int]:
  *         with suppress(Exception):             # <<<<<<<<<<<<<<
  *             assert self.child_fd is not None
@@ -14109,7 +14109,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_22get_pid_for_cwd(CYTHON_UNUSED 
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 455, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14175,7 +14175,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_22get_pid_for_cwd(CYTHON_UNUSED 
  *                 return min(foreground_processes) if oldest else max(
  *                     foreground_processes)
  *         return self.pid             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14187,7 +14187,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_22get_pid_for_cwd(CYTHON_UNUSED 
 
   /* "smelly/child.py":454
  *         return None
- * 
+ *
  *     def get_pid_for_cwd(self, oldest: bool = False) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             assert self.child_fd is not None
@@ -14210,11 +14210,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_22get_pid_for_cwd(CYTHON_UNUSED 
 }
 
 /* "smelly/child.py":476
- * 
+ *
  *     @property
  *     def pid_for_cwd(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         return self.get_pid_for_cwd()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -14246,7 +14246,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_24pid_for_cwd(CYTHON_UNUSED PyOb
  *     @property
  *     def pid_for_cwd(self) -> Optional[int]:
  *         return self.get_pid_for_cwd()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_foreground_cwd(self, oldest: bool = False) -> Optional[str]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14272,11 +14272,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_24pid_for_cwd(CYTHON_UNUSED PyOb
   goto __pyx_L0;
 
   /* "smelly/child.py":476
- * 
+ *
  *     @property
  *     def pid_for_cwd(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         return self.get_pid_for_cwd()
- * 
+ *
  */
 
   /* function exit code */
@@ -14294,7 +14294,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_24pid_for_cwd(CYTHON_UNUSED PyOb
 
 /* "smelly/child.py":479
  *         return self.get_pid_for_cwd()
- * 
+ *
  *     def get_foreground_cwd(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -14390,7 +14390,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_26get_foreground_cwd(CYTHON_UNUS
   __Pyx_RefNannySetupContext("get_foreground_cwd", 0);
 
   /* "smelly/child.py":480
- * 
+ *
  *     def get_foreground_cwd(self, oldest: bool = False) -> Optional[str]:
  *         with suppress(Exception):             # <<<<<<<<<<<<<<
  *             pid = self.get_pid_for_cwd(oldest)
@@ -14488,7 +14488,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_26get_foreground_cwd(CYTHON_UNUS
  *             if pid is not None:
  *                 return cwd_of_process(pid) or None             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
             __Pyx_XDECREF(__pyx_r);
             __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_cwd_of_process); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 483, __pyx_L7_error)
@@ -14534,7 +14534,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_26get_foreground_cwd(CYTHON_UNUS
           }
 
           /* "smelly/child.py":480
- * 
+ *
  *     def get_foreground_cwd(self, oldest: bool = False) -> Optional[str]:
  *         with suppress(Exception):             # <<<<<<<<<<<<<<
  *             pid = self.get_pid_for_cwd(oldest)
@@ -14572,7 +14572,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_26get_foreground_cwd(CYTHON_UNUS
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 480, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14638,7 +14638,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_26get_foreground_cwd(CYTHON_UNUS
  *             if pid is not None:
  *                 return cwd_of_process(pid) or None
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def get_foreground_exe(self, oldest: bool = False) -> Optional[str]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14647,7 +14647,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_26get_foreground_cwd(CYTHON_UNUS
 
   /* "smelly/child.py":479
  *         return self.get_pid_for_cwd()
- * 
+ *
  *     def get_foreground_cwd(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -14670,7 +14670,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_26get_foreground_cwd(CYTHON_UNUS
 
 /* "smelly/child.py":486
  *         return None
- * 
+ *
  *     def get_foreground_exe(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -14767,7 +14767,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_28get_foreground_exe(CYTHON_UNUS
   __Pyx_RefNannySetupContext("get_foreground_exe", 0);
 
   /* "smelly/child.py":487
- * 
+ *
  *     def get_foreground_exe(self, oldest: bool = False) -> Optional[str]:
  *         with suppress(Exception):             # <<<<<<<<<<<<<<
  *             pid = self.get_pid_for_cwd(oldest)
@@ -14902,7 +14902,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_28get_foreground_exe(CYTHON_UNUS
  *                 if c:
  *                     return c[0]             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
               __Pyx_XDECREF(__pyx_r);
               __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_c, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 492, __pyx_L7_error)
@@ -14930,7 +14930,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_28get_foreground_exe(CYTHON_UNUS
           }
 
           /* "smelly/child.py":487
- * 
+ *
  *     def get_foreground_exe(self, oldest: bool = False) -> Optional[str]:
  *         with suppress(Exception):             # <<<<<<<<<<<<<<
  *             pid = self.get_pid_for_cwd(oldest)
@@ -14968,7 +14968,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_28get_foreground_exe(CYTHON_UNUS
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 487, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15034,7 +15034,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_28get_foreground_exe(CYTHON_UNUS
  *                 if c:
  *                     return c[0]
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -15043,7 +15043,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_28get_foreground_exe(CYTHON_UNUS
 
   /* "smelly/child.py":486
  *         return None
- * 
+ *
  *     def get_foreground_exe(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -15066,11 +15066,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_28get_foreground_exe(CYTHON_UNUS
 }
 
 /* "smelly/child.py":496
- * 
+ *
  *     @property
  *     def foreground_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         return self.get_foreground_cwd()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -15102,7 +15102,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_30foreground_cwd(CYTHON_UNUSED P
  *     @property
  *     def foreground_cwd(self) -> Optional[str]:
  *         return self.get_foreground_cwd()             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -15128,11 +15128,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_30foreground_cwd(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly/child.py":496
- * 
+ *
  *     @property
  *     def foreground_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         return self.get_foreground_cwd()
- * 
+ *
  */
 
   /* function exit code */
@@ -15149,7 +15149,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_30foreground_cwd(CYTHON_UNUSED P
 }
 
 /* "smelly/child.py":500
- * 
+ *
  *     @property
  *     def foreground_environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         pid = self.pid_for_cwd
@@ -15333,7 +15333,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_32foreground_environ(CYTHON_UNUS
               __Pyx_GIVEREF(__pyx_t_4);
               __Pyx_XGIVEREF(__pyx_t_5);
               __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_4, __pyx_t_5);
-              __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_5 = 0; 
+              __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_5 = 0;
               __PYX_ERR(0, 503, __pyx_L10_except_error)
             }
             __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15487,7 +15487,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_32foreground_environ(CYTHON_UNUS
  *             with suppress(Exception):
  *                 return environ_of_process(pid)             # <<<<<<<<<<<<<<
  *         return {}
- * 
+ *
  */
             __Pyx_XDECREF(__pyx_r);
             __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_environ_of_process_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 508, __pyx_L23_error)
@@ -15546,7 +15546,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_32foreground_environ(CYTHON_UNUS
               __Pyx_GIVEREF(__pyx_t_4);
               __Pyx_XGIVEREF(__pyx_t_1);
               __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_4, __pyx_t_1);
-              __pyx_t_5 = 0; __pyx_t_4 = 0; __pyx_t_1 = 0; 
+              __pyx_t_5 = 0; __pyx_t_4 = 0; __pyx_t_1 = 0;
               __PYX_ERR(0, 507, __pyx_L25_except_error)
             }
             __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -15620,7 +15620,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_32foreground_environ(CYTHON_UNUS
  *             with suppress(Exception):
  *                 return environ_of_process(pid)
  *         return {}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def send_signal_for_key(self, key_num: int) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -15631,7 +15631,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_32foreground_environ(CYTHON_UNUS
   goto __pyx_L0;
 
   /* "smelly/child.py":500
- * 
+ *
  *     @property
  *     def foreground_environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         pid = self.pid_for_cwd
@@ -15655,7 +15655,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_32foreground_environ(CYTHON_UNUS
 
 /* "smelly/child.py":511
  *         return {}
- * 
+ *
  *     def send_signal_for_key(self, key_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         import signal
  *         import termios
@@ -15748,11 +15748,11 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_34send_signal_for_key(CYTHON_UNU
   __Pyx_RefNannySetupContext("send_signal_for_key", 0);
 
   /* "smelly/child.py":512
- * 
+ *
  *     def send_signal_for_key(self, key_num: int) -> bool:
  *         import signal             # <<<<<<<<<<<<<<
  *         import termios
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_signal, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 512, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -15763,7 +15763,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_34send_signal_for_key(CYTHON_UNU
  *     def send_signal_for_key(self, key_num: int) -> bool:
  *         import signal
  *         import termios             # <<<<<<<<<<<<<<
- * 
+ *
  *         if self.child_fd is None:
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_termios, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 513, __pyx_L1_error)
@@ -15773,7 +15773,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_34send_signal_for_key(CYTHON_UNU
 
   /* "smelly/child.py":515
  *         import termios
- * 
+ *
  *         if self.child_fd is None:             # <<<<<<<<<<<<<<
  *             return False
  *         t = termios.tcgetattr(self.child_fd)
@@ -15786,7 +15786,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_34send_signal_for_key(CYTHON_UNU
   if (__pyx_t_3) {
 
     /* "smelly/child.py":516
- * 
+ *
  *         if self.child_fd is None:
  *             return False             # <<<<<<<<<<<<<<
  *         t = termios.tcgetattr(self.child_fd)
@@ -15799,7 +15799,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_34send_signal_for_key(CYTHON_UNU
 
     /* "smelly/child.py":515
  *         import termios
- * 
+ *
  *         if self.child_fd is None:             # <<<<<<<<<<<<<<
  *             return False
  *         t = termios.tcgetattr(self.child_fd)
@@ -16127,7 +16127,7 @@ static PyObject *__pyx_pf_6smelly_5child_5Child_34send_signal_for_key(CYTHON_UNU
 
   /* "smelly/child.py":511
  *         return {}
- * 
+ *
  *     def send_signal_for_key(self, key_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         import signal
  *         import termios
@@ -16975,11 +16975,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/child.py":45
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:             # <<<<<<<<<<<<<<
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
- * 
+ *
  */
   __pyx_tuple__2 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
@@ -16990,7 +16990,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                     f'Failed to find cwd of process with pid: {pid}')
  *             ans = cp.stdout.decode('utf-8', 'replace').split()[1]             # <<<<<<<<<<<<<<
  *             return os.path.realpath(ans)
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(2, __pyx_kp_s_utf_8, __pyx_n_s_replace); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -17056,7 +17056,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         else:
  *             env.pop('smelly_IS_CLONE_LAUNCH', None)             # <<<<<<<<<<<<<<
  *         return env
- * 
+ *
  */
   __pyx_tuple__14 = PyTuple_Pack(2, __pyx_n_s_smelly_IS_CLONE_LAUNCH, Py_None); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
@@ -17064,7 +17064,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":411
  *                 pgrp) if pgrp >= 0 else []
- * 
+ *
  *             def process_desc(pid: int) -> ProcessDesc:             # <<<<<<<<<<<<<<
  *                 ans: ProcessDesc = {'pid': pid, 'cmdline': None, 'cwd': None}
  *                 with suppress(Exception):
@@ -17076,10 +17076,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":30
  *     from smelly.fast_data_types import process_group_map as _process_group_map
- * 
+ *
  *     def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  */
   __pyx_tuple__20 = PyTuple_Pack(1, __pyx_n_s_pid); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
@@ -17088,7 +17088,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":33
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for pid, pgid in _process_group_map():
@@ -17100,10 +17100,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":39
  *         return ans
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         return cmdline_(pid)
- * 
+ *
  */
   __pyx_tuple__24 = PyTuple_Pack(1, __pyx_n_s_pid); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
@@ -17112,7 +17112,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":44
  * else:
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
@@ -17124,10 +17124,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":50
  *     if is_freebsd:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             import subprocess
- * 
+ *
  */
   __pyx_tuple__28 = PyTuple_Pack(4, __pyx_n_s_pid, __pyx_n_s_subprocess, __pyx_n_s_cp, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
@@ -17136,7 +17136,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":62
  *     else:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             ans = f'/proc/{pid}/cwd'
  *             return os.path.realpath(ans)
@@ -17148,7 +17148,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":66
  *             return os.path.realpath(ans)
- * 
+ *
  *     def _environ_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/environ', 'rb') as f:
  *             return f.read().decode('utf-8')
@@ -17160,7 +17160,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":70
  *             return f.read().decode('utf-8')
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for x in os.listdir('/proc'):
@@ -17171,17 +17171,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_process_group_map_2, 70, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 70, __pyx_L1_error)
 
   /* "smelly/child.py":91
- * 
+ *
  * @run_once
  * def checked_terminfo_dir() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     return terminfo_dir if os.path.isdir(terminfo_dir) else None
- * 
+ *
  */
   __pyx_codeobj__36 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_checked_terminfo_dir, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__36)) __PYX_ERR(0, 91, __pyx_L1_error)
 
   /* "smelly/child.py":95
- * 
- * 
+ *
+ *
  * def processes_in_group(grp: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     gmap: Optional[DefaultDict[int, List[int]]] = getattr(
  *         process_group_map, 'cached_map', None)
@@ -17192,7 +17192,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_processes_in_group, 95, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 95, __pyx_L1_error)
 
   /* "smelly/child.py":107
- * 
+ *
  * @contextmanager
  * def cached_process_data() -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *     try:
@@ -17204,8 +17204,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__39, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_cached_process_data, 107, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 107, __pyx_L1_error)
 
   /* "smelly/child.py":119
- * 
- * 
+ *
+ *
  * def parse_environ_block(data: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     """Parse a C environ block of environment variables into a dictionary."""
  *     # The block is usually raw data from the target process.  It might contain
@@ -17216,11 +17216,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_parse_environ_block, 119, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 119, __pyx_L1_error)
 
   /* "smelly/child.py":142
- * 
- * 
+ *
+ *
  * def environ_of_process(pid: int) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     return parse_environ_block(_environ_of_process(pid))
- * 
+ *
  */
   __pyx_tuple__42 = PyTuple_Pack(1, __pyx_n_s_pid); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
@@ -17228,8 +17228,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_environ_of_process_2, 142, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 142, __pyx_L1_error)
 
   /* "smelly/child.py":146
- * 
- * 
+ *
+ *
  * def process_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = dict(os.environ)
  *     ssl_env_var = getattr(sys, 'smelly_ssl_env_var', None)
@@ -17240,8 +17240,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_process_env, 146, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 146, __pyx_L1_error)
 
   /* "smelly/child.py":155
- * 
- * 
+ *
+ *
  * def default_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans: Optional[Dict[str, str]] = getattr(default_env, 'env', None)
  *     if ans is None:
@@ -17252,8 +17252,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_default_env, 155, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 155, __pyx_L1_error)
 
   /* "smelly/child.py":162
- * 
- * 
+ *
+ *
  * def set_default_env(val: Optional[Dict[str, str]] = None) -> None:             # <<<<<<<<<<<<<<
  *     env = process_env().copy()
  *     has_lctype = False
@@ -17267,11 +17267,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__50);
 
   /* "smelly/child.py":172
- * 
- * 
+ *
+ *
  * def set_LANG_in_default_env(val: str) -> None:             # <<<<<<<<<<<<<<
  *     default_env().setdefault('LANG', val)
- * 
+ *
  */
   __pyx_tuple__51 = PyTuple_Pack(1, __pyx_n_s_val); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__51);
@@ -17279,8 +17279,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__52 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__51, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_set_LANG_in_default_env, 172, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__52)) __PYX_ERR(0, 172, __pyx_L1_error)
 
   /* "smelly/child.py":176
- * 
- * 
+ *
+ *
  * def openpty() -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     master, slave = os.openpty()  # Note that master and slave are in blocking mode
  *     os.set_inheritable(slave, True)
@@ -17291,17 +17291,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_openpty, 176, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 176, __pyx_L1_error)
 
   /* "smelly/child.py":185
- * 
+ *
  * @run_once
  * def getpid() -> str:             # <<<<<<<<<<<<<<
  *     return str(os.getpid())
- * 
+ *
  */
   __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_getpid, 185, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 185, __pyx_L1_error)
 
   /* "smelly/child.py":195
- * 
- * 
+ *
+ *
  * def is_prewarmable(argv: List[str]) -> Tuple[bool, List[str]]:             # <<<<<<<<<<<<<<
  *     if len(argv) < 3 or os.path.basename(argv[0]) != 'smelly':
  *         return False, argv
@@ -17312,7 +17312,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__57 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__56, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_is_prewarmable, 195, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__57)) __PYX_ERR(0, 195, __pyx_L1_error)
 
   /* "smelly/child.py":223
- * 
+ *
  * @run_once
  * def cmdline_of_prewarmer() -> List[str]:             # <<<<<<<<<<<<<<
  *     # we need this check in case the prewarmed process has done an exec and
@@ -17322,7 +17322,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":237
  *     is_prewarmed = False
- * 
+ *
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
  *         argv: Sequence[str],
@@ -17337,10 +17337,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":263
  *         self.env = env or {}
- * 
+ *
  *     def final_env(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         from smelly.options.utils import DELETE_ENV_VAR
- * 
+ *
  */
   __pyx_tuple__62 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_DELETE_ENV_VAR, __pyx_n_s_env, __pyx_n_s_boss, __pyx_n_s_tdir, __pyx_n_s_opts, __pyx_n_s_modify_shell_environ, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__62);
@@ -17349,7 +17349,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":307
  *         return env
- * 
+ *
  *     def fork(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if self.forked:
  *             return None
@@ -17361,7 +17361,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":378
  *         return pid
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         fd = getattr(self, 'terminal_ready_fd', -1)
  *         if fd > -1:
@@ -17373,7 +17373,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":384
  *         self.terminal_ready_fd = -1
- * 
+ *
  *     def mark_terminal_ready(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.is_prewarmed:
  *             fast_data_types.get_boss().prewarm.mark_child_as_ready(
@@ -17385,7 +17385,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":392
  *             self.terminal_ready_fd = -1
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
  *             ans = cmdline_of_pid(pid)
@@ -17396,7 +17396,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__71 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__70, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_cmdline_of_pid, 392, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__71)) __PYX_ERR(0, 392, __pyx_L1_error)
 
   /* "smelly/child.py":403
- * 
+ *
  *     @property
  *     def foreground_processes(self) -> List[ProcessDesc]:             # <<<<<<<<<<<<<<
  *         if self.child_fd is None:
@@ -17408,7 +17408,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__73 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__72, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_foreground_processes, 403, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__73)) __PYX_ERR(0, 403, __pyx_L1_error)
 
   /* "smelly/child.py":424
- * 
+ *
  *     @property
  *     def cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -17420,7 +17420,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__75 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__74, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_cmdline_3, 424, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__75)) __PYX_ERR(0, 424, __pyx_L1_error)
 
   /* "smelly/child.py":432
- * 
+ *
  *     @property
  *     def foreground_cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -17432,7 +17432,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__77 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__76, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_foreground_cmdline, 432, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__77)) __PYX_ERR(0, 432, __pyx_L1_error)
 
   /* "smelly/child.py":440
- * 
+ *
  *     @property
  *     def environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -17444,7 +17444,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__79 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__78, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_environ_2, 440, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__79)) __PYX_ERR(0, 440, __pyx_L1_error)
 
   /* "smelly/child.py":448
- * 
+ *
  *     @property
  *     def current_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -17457,7 +17457,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":454
  *         return None
- * 
+ *
  *     def get_pid_for_cwd(self, oldest: bool = False) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             assert self.child_fd is not None
@@ -17471,11 +17471,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__84);
 
   /* "smelly/child.py":476
- * 
+ *
  *     @property
  *     def pid_for_cwd(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         return self.get_pid_for_cwd()
- * 
+ *
  */
   __pyx_tuple__85 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__85)) __PYX_ERR(0, 476, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__85);
@@ -17484,7 +17484,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":479
  *         return self.get_pid_for_cwd()
- * 
+ *
  *     def get_foreground_cwd(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -17499,7 +17499,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":486
  *         return None
- * 
+ *
  *     def get_foreground_exe(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -17513,11 +17513,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__92);
 
   /* "smelly/child.py":496
- * 
+ *
  *     @property
  *     def foreground_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         return self.get_foreground_cwd()
- * 
+ *
  */
   __pyx_tuple__93 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__93)) __PYX_ERR(0, 496, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__93);
@@ -17525,7 +17525,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__94 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__93, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_child_py, __pyx_n_s_foreground_cwd, 496, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__94)) __PYX_ERR(0, 496, __pyx_L1_error)
 
   /* "smelly/child.py":500
- * 
+ *
  *     @property
  *     def foreground_environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         pid = self.pid_for_cwd
@@ -17538,7 +17538,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/child.py":511
  *         return {}
- * 
+ *
  *     def send_signal_for_key(self, key_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         import signal
  *         import termios
@@ -17882,7 +17882,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import sys
  * from collections import defaultdict
@@ -17893,7 +17893,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":5
- * 
+ *
  * import os
  * import sys             # <<<<<<<<<<<<<<
  * from collections import defaultdict
@@ -17930,7 +17930,7 @@ if (!__Pyx_RefNanny) {
  * from collections import defaultdict
  * from contextlib import contextmanager, suppress             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, DefaultDict, Dict, Generator, List, Optional, Sequence, Tuple
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -17957,7 +17957,7 @@ if (!__Pyx_RefNanny) {
  * from collections import defaultdict
  * from contextlib import contextmanager, suppress
  * from typing import TYPE_CHECKING, DefaultDict, Dict, Generator, List, Optional, Sequence, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * import smelly.fast_data_types as fast_data_types
  */
   __pyx_t_1 = PyList_New(8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -18025,9 +18025,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":10
  * from typing import TYPE_CHECKING, DefaultDict, Dict, Generator, List, Optional, Sequence, Tuple
- * 
+ *
  * import smelly.fast_data_types as fast_data_types             # <<<<<<<<<<<<<<
- * 
+ *
  * from .constants import handled_signals, is_freebsd, is_macos, kitten_exe, smelly_base_dir, shell_path, terminfo_dir, wrapped_kitten_names
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -18043,7 +18043,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":12
  * import smelly.fast_data_types as fast_data_types
- * 
+ *
  * from .constants import handled_signals, is_freebsd, is_macos, kitten_exe, smelly_base_dir, shell_path, terminfo_dir, wrapped_kitten_names             # <<<<<<<<<<<<<<
  * from .types import run_once
  * from .utils import log_error, which
@@ -18112,11 +18112,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/child.py":13
- * 
+ *
  * from .constants import handled_signals, is_freebsd, is_macos, kitten_exe, smelly_base_dir, shell_path, terminfo_dir, wrapped_kitten_names
  * from .types import run_once             # <<<<<<<<<<<<<<
  * from .utils import log_error, which
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18136,7 +18136,7 @@ if (!__Pyx_RefNanny) {
  * from .constants import handled_signals, is_freebsd, is_macos, kitten_exe, smelly_base_dir, shell_path, terminfo_dir, wrapped_kitten_names
  * from .types import run_once
  * from .utils import log_error, which             # <<<<<<<<<<<<<<
- * 
+ *
  * try:
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -18162,7 +18162,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":16
  * from .utils import log_error, which
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from typing import TypedDict
  * except ImportError:
@@ -18177,7 +18177,7 @@ if (!__Pyx_RefNanny) {
     /*try:*/ {
 
       /* "smelly/child.py":17
- * 
+ *
  * try:
  *     from typing import TypedDict             # <<<<<<<<<<<<<<
  * except ImportError:
@@ -18199,7 +18199,7 @@ if (!__Pyx_RefNanny) {
 
       /* "smelly/child.py":16
  * from .utils import log_error, which
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from typing import TypedDict
  * except ImportError:
@@ -18246,7 +18246,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":16
  * from .utils import log_error, which
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from typing import TypedDict
  * except ImportError:
@@ -18269,7 +18269,7 @@ if (!__Pyx_RefNanny) {
  *     TypedDict = dict
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .window import CwdRequest
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -18281,8 +18281,8 @@ if (!__Pyx_RefNanny) {
  *     TypedDict = dict
  * if TYPE_CHECKING:
  *     from .window import CwdRequest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 21, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
@@ -18303,13 +18303,13 @@ if (!__Pyx_RefNanny) {
  *     TypedDict = dict
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .window import CwdRequest
- * 
+ *
  */
   }
 
   /* "smelly/child.py":24
- * 
- * 
+ *
+ *
  * if is_macos:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import cmdline_of_process as cmdline_
  *     from smelly.fast_data_types import cwd_of_process as _cwd
@@ -18321,7 +18321,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_8) {
 
     /* "smelly/child.py":25
- * 
+ *
  * if is_macos:
  *     from smelly.fast_data_types import cmdline_of_process as cmdline_             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import cwd_of_process as _cwd
@@ -18367,7 +18367,7 @@ if (!__Pyx_RefNanny) {
  *     from smelly.fast_data_types import cwd_of_process as _cwd
  *     from smelly.fast_data_types import environ_of_process as _environ_of_process             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import process_group_map as _process_group_map
- * 
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -18387,7 +18387,7 @@ if (!__Pyx_RefNanny) {
  *     from smelly.fast_data_types import cwd_of_process as _cwd
  *     from smelly.fast_data_types import environ_of_process as _environ_of_process
  *     from smelly.fast_data_types import process_group_map as _process_group_map             # <<<<<<<<<<<<<<
- * 
+ *
  *     def cwd_of_process(pid: int) -> str:
  */
     __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 28, __pyx_L1_error)
@@ -18406,10 +18406,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":30
  *     from smelly.fast_data_types import process_group_map as _process_group_map
- * 
+ *
  *     def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -18424,7 +18424,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":33
  *         return os.path.realpath(_cwd(pid))
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for pid, pgid in _process_group_map():
@@ -18461,10 +18461,10 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":39
  *         return ans
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         return cmdline_(pid)
- * 
+ *
  */
     __pyx_t_9 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
@@ -18484,8 +18484,8 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly/child.py":24
- * 
- * 
+ *
+ *
  * if is_macos:             # <<<<<<<<<<<<<<
  *     from smelly.fast_data_types import cmdline_of_process as cmdline_
  *     from smelly.fast_data_types import cwd_of_process as _cwd
@@ -18495,7 +18495,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":44
  * else:
- * 
+ *
  *     def cmdline_of_pid(pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/cmdline', 'rb') as f:
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
@@ -18520,9 +18520,9 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":48
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
- * 
+ *
  *     if is_freebsd:             # <<<<<<<<<<<<<<
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:
  */
     __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_is_freebsd); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -18533,10 +18533,10 @@ if (!__Pyx_RefNanny) {
 
       /* "smelly/child.py":50
  *     if is_freebsd:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             import subprocess
- * 
+ *
  */
       __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
@@ -18551,9 +18551,9 @@ if (!__Pyx_RefNanny) {
 
       /* "smelly/child.py":48
  *             return list(filter(None, f.read().decode('utf-8').split('\0')))
- * 
+ *
  *     if is_freebsd:             # <<<<<<<<<<<<<<
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:
  */
       goto __pyx_L12;
@@ -18561,7 +18561,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":62
  *     else:
- * 
+ *
  *         def cwd_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *             ans = f'/proc/{pid}/cwd'
  *             return os.path.realpath(ans)
@@ -18582,7 +18582,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":66
  *             return os.path.realpath(ans)
- * 
+ *
  *     def _environ_of_process(pid: int) -> str:             # <<<<<<<<<<<<<<
  *         with open(f'/proc/{pid}/environ', 'rb') as f:
  *             return f.read().decode('utf-8')
@@ -18600,7 +18600,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/child.py":70
  *             return f.read().decode('utf-8')
- * 
+ *
  *     def process_group_map() -> DefaultDict[int, List[int]]:             # <<<<<<<<<<<<<<
  *         ans: DefaultDict[int, List[int]] = defaultdict(list)
  *         for x in os.listdir('/proc'):
@@ -18638,8 +18638,8 @@ if (!__Pyx_RefNanny) {
   __pyx_L11:;
 
   /* "smelly/child.py":90
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def checked_terminfo_dir() -> Optional[str]:
  *     return terminfo_dir if os.path.isdir(terminfo_dir) else None
@@ -18648,11 +18648,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/child.py":91
- * 
+ *
  * @run_once
  * def checked_terminfo_dir() -> Optional[str]:             # <<<<<<<<<<<<<<
  *     return terminfo_dir if os.path.isdir(terminfo_dir) else None
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18669,8 +18669,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":90
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def checked_terminfo_dir() -> Optional[str]:
  *     return terminfo_dir if os.path.isdir(terminfo_dir) else None
@@ -18683,8 +18683,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":95
- * 
- * 
+ *
+ *
  * def processes_in_group(grp: int) -> List[int]:             # <<<<<<<<<<<<<<
  *     gmap: Optional[DefaultDict[int, List[int]]] = getattr(
  *         process_group_map, 'cached_map', None)
@@ -18707,8 +18707,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/child.py":106
- * 
- * 
+ *
+ *
  * @contextmanager             # <<<<<<<<<<<<<<
  * def cached_process_data() -> Generator[None, None, None]:
  *     try:
@@ -18717,7 +18717,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/child.py":107
- * 
+ *
  * @contextmanager
  * def cached_process_data() -> Generator[None, None, None]:             # <<<<<<<<<<<<<<
  *     try:
@@ -18738,8 +18738,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":106
- * 
- * 
+ *
+ *
  * @contextmanager             # <<<<<<<<<<<<<<
  * def cached_process_data() -> Generator[None, None, None]:
  *     try:
@@ -18752,8 +18752,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":119
- * 
- * 
+ *
+ *
  * def parse_environ_block(data: str) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     """Parse a C environ block of environment variables into a dictionary."""
  *     # The block is usually raw data from the target process.  It might contain
@@ -18785,11 +18785,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/child.py":142
- * 
- * 
+ *
+ *
  * def environ_of_process(pid: int) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     return parse_environ_block(_environ_of_process(pid))
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -18818,8 +18818,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /* "smelly/child.py":146
- * 
- * 
+ *
+ *
  * def process_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans = dict(os.environ)
  *     ssl_env_var = getattr(sys, 'smelly_ssl_env_var', None)
@@ -18850,8 +18850,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":155
- * 
- * 
+ *
+ *
  * def default_env() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     ans: Optional[Dict[str, str]] = getattr(default_env, 'env', None)
  *     if ans is None:
@@ -18882,8 +18882,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/child.py":162
- * 
- * 
+ *
+ *
  * def set_default_env(val: Optional[Dict[str, str]] = None) -> None:             # <<<<<<<<<<<<<<
  *     env = process_env().copy()
  *     has_lctype = False
@@ -18922,11 +18922,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /* "smelly/child.py":172
- * 
- * 
+ *
+ *
  * def set_LANG_in_default_env(val: str) -> None:             # <<<<<<<<<<<<<<
  *     default_env().setdefault('LANG', val)
- * 
+ *
  */
   __pyx_t_9 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
@@ -18940,8 +18940,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/child.py":176
- * 
- * 
+ *
+ *
  * def openpty() -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *     master, slave = os.openpty()  # Note that master and slave are in blocking mode
  *     os.set_inheritable(slave, True)
@@ -18972,8 +18972,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":184
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def getpid() -> str:
  *     return str(os.getpid())
@@ -18982,11 +18982,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/child.py":185
- * 
+ *
  * @run_once
  * def getpid() -> str:             # <<<<<<<<<<<<<<
  *     return str(os.getpid())
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -18997,8 +18997,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/child.py":184
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def getpid() -> str:
  *     return str(os.getpid())
@@ -19011,8 +19011,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/child.py":189
- * 
- * 
+ *
+ *
  * class ProcessDesc(TypedDict):             # <<<<<<<<<<<<<<
  *     cwd: Optional[str]
  *     pid: int
@@ -19033,8 +19033,8 @@ if (!__Pyx_RefNanny) {
  *     cwd: Optional[str]
  *     pid: int
  *     cmdline: Optional[Sequence[str]]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_9 = __Pyx_Py3ClassCreate(__pyx_t_7, __pyx_n_s_ProcessDesc, __pyx_t_10, __pyx_t_1, NULL, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
@@ -19045,8 +19045,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
   /* "smelly/child.py":195
- * 
- * 
+ *
+ *
  * def is_prewarmable(argv: List[str]) -> Tuple[bool, List[str]]:             # <<<<<<<<<<<<<<
  *     if len(argv) < 3 or os.path.basename(argv[0]) != 'smelly':
  *         return False, argv
@@ -19089,8 +19089,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /* "smelly/child.py":222
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def cmdline_of_prewarmer() -> List[str]:
  *     # we need this check in case the prewarmed process has done an exec and
@@ -19099,7 +19099,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_9);
 
   /* "smelly/child.py":223
- * 
+ *
  * @run_once
  * def cmdline_of_prewarmer() -> List[str]:             # <<<<<<<<<<<<<<
  *     # we need this check in case the prewarmed process has done an exec and
@@ -19120,8 +19120,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
   /* "smelly/child.py":222
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def cmdline_of_prewarmer() -> List[str]:
  *     # we need this check in case the prewarmed process has done an exec and
@@ -19134,8 +19134,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
   /* "smelly/child.py":231
- * 
- * 
+ *
+ *
  * class Child:             # <<<<<<<<<<<<<<
  *     child_fd: Optional[int] = None
  *     pid: Optional[int] = None
@@ -19144,7 +19144,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_10);
 
   /* "smelly/child.py":232
- * 
+ *
  * class Child:
  *     child_fd: Optional[int] = None             # <<<<<<<<<<<<<<
  *     pid: Optional[int] = None
@@ -19166,7 +19166,7 @@ if (!__Pyx_RefNanny) {
  *     pid: Optional[int] = None
  *     forked = False             # <<<<<<<<<<<<<<
  *     is_prewarmed = False
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_10, __pyx_n_s_forked, Py_False) < 0) __PYX_ERR(0, 234, __pyx_L1_error)
 
@@ -19174,14 +19174,14 @@ if (!__Pyx_RefNanny) {
  *     pid: Optional[int] = None
  *     forked = False
  *     is_prewarmed = False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(
  */
   if (__Pyx_SetNameInClass(__pyx_t_10, __pyx_n_s_is_prewarmed, Py_False) < 0) __PYX_ERR(0, 235, __pyx_L1_error)
 
   /* "smelly/child.py":237
  *     is_prewarmed = False
- * 
+ *
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
  *         argv: Sequence[str],
@@ -19277,7 +19277,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":237
  *     is_prewarmed = False
- * 
+ *
  *     def __init__(             # <<<<<<<<<<<<<<
  *         self,
  *         argv: Sequence[str],
@@ -19292,10 +19292,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":263
  *         self.env = env or {}
- * 
+ *
  *     def final_env(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         from smelly.options.utils import DELETE_ENV_VAR
- * 
+ *
  */
   __pyx_t_11 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
@@ -19324,7 +19324,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":307
  *         return env
- * 
+ *
  *     def fork(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         if self.forked:
  *             return None
@@ -19347,7 +19347,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":378
  *         return pid
- * 
+ *
  *     def __del__(self) -> None:             # <<<<<<<<<<<<<<
  *         fd = getattr(self, 'terminal_ready_fd', -1)
  *         if fd > -1:
@@ -19364,7 +19364,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":384
  *         self.terminal_ready_fd = -1
- * 
+ *
  *     def mark_terminal_ready(self) -> None:             # <<<<<<<<<<<<<<
  *         if self.is_prewarmed:
  *             fast_data_types.get_boss().prewarm.mark_child_as_ready(
@@ -19381,7 +19381,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":392
  *             self.terminal_ready_fd = -1
- * 
+ *
  *     def cmdline_of_pid(self, pid: int) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
  *             ans = cmdline_of_pid(pid)
@@ -19404,7 +19404,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly/child.py":403
- * 
+ *
  *     @property
  *     def foreground_processes(self) -> List[ProcessDesc]:             # <<<<<<<<<<<<<<
  *         if self.child_fd is None:
@@ -19429,7 +19429,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":402
  *         return ans
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def foreground_processes(self) -> List[ProcessDesc]:
  *         if self.child_fd is None:
@@ -19441,7 +19441,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly/child.py":424
- * 
+ *
  *     @property
  *     def cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -19463,7 +19463,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":423
  *             return []
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def cmdline(self) -> List[str]:
  *         try:
@@ -19475,7 +19475,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly/child.py":432
- * 
+ *
  *     @property
  *     def foreground_cmdline(self) -> List[str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -19497,7 +19497,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":431
  *             return list(self.argv)
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def foreground_cmdline(self) -> List[str]:
  *         try:
@@ -19509,7 +19509,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly/child.py":440
- * 
+ *
  *     @property
  *     def environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         try:
@@ -19540,7 +19540,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":439
  *             return self.cmdline
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def environ(self) -> Dict[str, str]:
  *         try:
@@ -19552,7 +19552,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly/child.py":448
- * 
+ *
  *     @property
  *     def current_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
@@ -19574,7 +19574,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":447
  *             return {}
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def current_cwd(self) -> Optional[str]:
  *         with suppress(Exception):
@@ -19587,7 +19587,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":454
  *         return None
- * 
+ *
  *     def get_pid_for_cwd(self, oldest: bool = False) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             assert self.child_fd is not None
@@ -19611,11 +19611,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/child.py":476
- * 
+ *
  *     @property
  *     def pid_for_cwd(self) -> Optional[int]:             # <<<<<<<<<<<<<<
  *         return self.get_pid_for_cwd()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 476, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -19633,7 +19633,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":475
  *         return self.pid
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def pid_for_cwd(self) -> Optional[int]:
  *         return self.get_pid_for_cwd()
@@ -19646,7 +19646,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":479
  *         return self.get_pid_for_cwd()
- * 
+ *
  *     def get_foreground_cwd(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -19671,7 +19671,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":486
  *         return None
- * 
+ *
  *     def get_foreground_exe(self, oldest: bool = False) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         with suppress(Exception):
  *             pid = self.get_pid_for_cwd(oldest)
@@ -19695,11 +19695,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /* "smelly/child.py":496
- * 
+ *
  *     @property
  *     def foreground_cwd(self) -> Optional[str]:             # <<<<<<<<<<<<<<
  *         return self.get_foreground_cwd()
- * 
+ *
  */
   __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 496, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
@@ -19717,7 +19717,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":495
  *         return None
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def foreground_cwd(self) -> Optional[str]:
  *         return self.get_foreground_cwd()
@@ -19729,7 +19729,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
   /* "smelly/child.py":500
- * 
+ *
  *     @property
  *     def foreground_environ(self) -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *         pid = self.pid_for_cwd
@@ -19760,7 +19760,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":499
  *         return self.get_foreground_cwd()
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def foreground_environ(self) -> Dict[str, str]:
  *         pid = self.pid_for_cwd
@@ -19773,7 +19773,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/child.py":511
  *         return {}
- * 
+ *
  *     def send_signal_for_key(self, key_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         import signal
  *         import termios
@@ -19790,8 +19790,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/child.py":231
- * 
- * 
+ *
+ *
  * class Child:             # <<<<<<<<<<<<<<
  *     child_fd: Optional[int] = None
  *     pid: Optional[int] = None
@@ -19805,7 +19805,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/child.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_10 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
@@ -21326,8 +21326,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

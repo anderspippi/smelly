@@ -970,8 +970,8 @@ struct __pyx_obj_6smelly_15multiprocessing___pyx_scope_struct__spawnv_passfds;
 struct __pyx_obj_6smelly_15multiprocessing___pyx_scope_struct_1_genexpr;
 
 /* "smelly/multiprocessing.py":35
- * 
- * 
+ *
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:             # <<<<<<<<<<<<<<
  *     if '-c' in args:
  *         idx = args.index('-c')
@@ -1851,11 +1851,11 @@ static PyObject *__pyx_codeobj__14;
 /* Late includes */
 
 /* "smelly/multiprocessing.py":26
- * 
+ *
  *     class SupportsTrunc(Protocol):
  *         def __trunc__(self) -> int:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1885,8 +1885,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_13SupportsTrunc___trunc__(CY
 }
 
 /* "smelly/multiprocessing.py":35
- * 
- * 
+ *
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:             # <<<<<<<<<<<<<<
  *     if '-c' in args:
  *         idx = args.index('-c')
@@ -2135,8 +2135,8 @@ static PyObject *__pyx_gb_6smelly_15multiprocessing_14spawnv_passfds_2generator(
 }
 
 /* "smelly/multiprocessing.py":35
- * 
- * 
+ *
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:             # <<<<<<<<<<<<<<
  *     if '-c' in args:
  *         idx = args.index('-c')
@@ -2178,7 +2178,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_spawnv_passfds(CYTHON_UNUSED
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_args);
 
   /* "smelly/multiprocessing.py":36
- * 
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:
  *     if '-c' in args:             # <<<<<<<<<<<<<<
  *         idx = args.index('-c')
@@ -2282,7 +2282,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_spawnv_passfds(CYTHON_UNUSED
     __pyx_t_3 = 0;
 
     /* "smelly/multiprocessing.py":36
- * 
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:
  *     if '-c' in args:             # <<<<<<<<<<<<<<
  *         idx = args.index('-c')
@@ -2353,7 +2353,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_spawnv_passfds(CYTHON_UNUSED
  *         prog %= ', '.join(str(item) for item in args[idx + 1:])
  *         patched_args = [spawn.get_executable(), '+runpy', prog]             # <<<<<<<<<<<<<<
  *     return orig_spawn_passfds(os.fsencode(smelly_exe()), patched_args, passfds)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_spawn); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -2395,8 +2395,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_spawnv_passfds(CYTHON_UNUSED
  *         prog %= ', '.join(str(item) for item in args[idx + 1:])
  *         patched_args = [spawn.get_executable(), '+runpy', prog]
  *     return orig_spawn_passfds(os.fsencode(smelly_exe()), patched_args, passfds)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_orig_spawn_passfds); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -2494,8 +2494,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_spawnv_passfds(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly/multiprocessing.py":35
- * 
- * 
+ *
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:             # <<<<<<<<<<<<<<
  *     if '-c' in args:
  *         idx = args.index('-c')
@@ -2523,8 +2523,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_spawnv_passfds(CYTHON_UNUSED
 }
 
 /* "smelly/multiprocessing.py":48
- * 
- * 
+ *
+ *
  * def monkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     # Use smelly to run the worker process used by multiprocessing
  *     spawn.set_executable(smelly_exe())
@@ -2562,7 +2562,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_2monkey_patch_multiprocessin
  *     # Use smelly to run the worker process used by multiprocessing
  *     spawn.set_executable(smelly_exe())             # <<<<<<<<<<<<<<
  *     util.spawnv_passfds = spawnv_passfds
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_spawn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2608,8 +2608,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_2monkey_patch_multiprocessin
  *     # Use smelly to run the worker process used by multiprocessing
  *     spawn.set_executable(smelly_exe())
  *     util.spawnv_passfds = spawnv_passfds             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_spawnv_passfds); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2620,8 +2620,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_2monkey_patch_multiprocessin
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/multiprocessing.py":48
- * 
- * 
+ *
+ *
  * def monkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     # Use smelly to run the worker process used by multiprocessing
  *     spawn.set_executable(smelly_exe())
@@ -2645,8 +2645,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_2monkey_patch_multiprocessin
 }
 
 /* "smelly/multiprocessing.py":54
- * 
- * 
+ *
+ *
  * def unmonkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     spawn.set_executable(orig_executable)
  *     util.spawnv_passfds = orig_spawn_passfds
@@ -2679,11 +2679,11 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_4unmonkey_patch_multiprocess
   __Pyx_RefNannySetupContext("unmonkey_patch_multiprocessing", 0);
 
   /* "smelly/multiprocessing.py":55
- * 
+ *
  * def unmonkey_patch_multiprocessing() -> None:
  *     spawn.set_executable(orig_executable)             # <<<<<<<<<<<<<<
  *     util.spawnv_passfds = orig_spawn_passfds
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_spawn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2714,8 +2714,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_4unmonkey_patch_multiprocess
  * def unmonkey_patch_multiprocessing() -> None:
  *     spawn.set_executable(orig_executable)
  *     util.spawnv_passfds = orig_spawn_passfds             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_orig_spawn_passfds); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2726,8 +2726,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_4unmonkey_patch_multiprocess
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/multiprocessing.py":54
- * 
- * 
+ *
+ *
  * def unmonkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     spawn.set_executable(orig_executable)
  *     util.spawnv_passfds = orig_spawn_passfds
@@ -2750,8 +2750,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_4unmonkey_patch_multiprocess
 }
 
 /* "smelly/multiprocessing.py":59
- * 
- * 
+ *
+ *
  * def get_process_pool_executor(             # <<<<<<<<<<<<<<
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,
  *         initializer: Optional[Callable[..., None]] = None,
@@ -2776,7 +2776,7 @@ static PyObject *__pyx_pw_6smelly_15multiprocessing_7get_process_pool_executor(P
     PyObject* values[4] = {0,0,0,0};
 
     /* "smelly/multiprocessing.py":60
- * 
+ *
  * def get_process_pool_executor(
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,             # <<<<<<<<<<<<<<
  *         initializer: Optional[Callable[..., None]] = None,
@@ -2876,8 +2876,8 @@ static PyObject *__pyx_pw_6smelly_15multiprocessing_7get_process_pool_executor(P
   __pyx_r = __pyx_pf_6smelly_15multiprocessing_6get_process_pool_executor(__pyx_self, __pyx_v_prefer_fork, __pyx_v_max_workers, __pyx_v_initializer, __pyx_v_initargs);
 
   /* "smelly/multiprocessing.py":59
- * 
- * 
+ *
+ *
  * def get_process_pool_executor(             # <<<<<<<<<<<<<<
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,
  *         initializer: Optional[Callable[..., None]] = None,
@@ -3148,7 +3148,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_6get_process_pool_executor(C
  *         return ProcessPoolExecutor(
  *             max_workers=max_workers, initializer=initializer,             # <<<<<<<<<<<<<<
  *             initargs=initargs)
- * 
+ *
  */
       __pyx_t_12 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 75, __pyx_L8_except_error)
       __Pyx_GOTREF(__pyx_t_12);
@@ -3159,8 +3159,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_6get_process_pool_executor(C
  *         return ProcessPoolExecutor(
  *             max_workers=max_workers, initializer=initializer,
  *             initargs=initargs)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_initargs, __pyx_v_initargs) < 0) __PYX_ERR(0, 75, __pyx_L8_except_error)
 
@@ -3212,8 +3212,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_6get_process_pool_executor(C
   }
 
   /* "smelly/multiprocessing.py":59
- * 
- * 
+ *
+ *
  * def get_process_pool_executor(             # <<<<<<<<<<<<<<
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,
  *         initializer: Optional[Callable[..., None]] = None,
@@ -3237,8 +3237,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_6get_process_pool_executor(C
 }
 
 /* "smelly/multiprocessing.py":79
- * 
- * 
+ *
+ *
  * def test_spawn() -> None:             # <<<<<<<<<<<<<<
  *     monkey_patch_multiprocessing()
  *     try:
@@ -3285,7 +3285,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_8test_spawn(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("test_spawn", 0);
 
   /* "smelly/multiprocessing.py":80
- * 
+ *
  * def test_spawn() -> None:
  *     monkey_patch_multiprocessing()             # <<<<<<<<<<<<<<
  *     try:
@@ -3315,7 +3315,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_8test_spawn(CYTHON_UNUSED Py
  *     monkey_patch_multiprocessing()
  *     try:             # <<<<<<<<<<<<<<
  *         from multiprocessing import get_context
- * 
+ *
  */
   /*try:*/ {
 
@@ -3323,7 +3323,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_8test_spawn(CYTHON_UNUSED Py
  *     monkey_patch_multiprocessing()
  *     try:
  *         from multiprocessing import get_context             # <<<<<<<<<<<<<<
- * 
+ *
  *         ctx = get_context('spawn')
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L4_error)
@@ -3343,7 +3343,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_8test_spawn(CYTHON_UNUSED Py
 
     /* "smelly/multiprocessing.py":84
  *         from multiprocessing import get_context
- * 
+ *
  *         ctx = get_context('spawn')             # <<<<<<<<<<<<<<
  *         q = ctx.Queue()
  *         p = ctx.Process(target=q.put, args=('hello',))
@@ -3368,7 +3368,7 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_8test_spawn(CYTHON_UNUSED Py
     __pyx_t_2 = 0;
 
     /* "smelly/multiprocessing.py":85
- * 
+ *
  *         ctx = get_context('spawn')
  *         q = ctx.Queue()             # <<<<<<<<<<<<<<
  *         p = ctx.Process(target=q.put, args=('hello',))
@@ -3600,8 +3600,8 @@ static PyObject *__pyx_pf_6smelly_15multiprocessing_8test_spawn(CYTHON_UNUSED Py
   }
 
   /* "smelly/multiprocessing.py":79
- * 
- * 
+ *
+ *
  * def test_spawn() -> None:             # <<<<<<<<<<<<<<
  *     monkey_patch_multiprocessing()
  *     try:
@@ -4036,11 +4036,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__2);
 
   /* "smelly/multiprocessing.py":26
- * 
+ *
  *     class SupportsTrunc(Protocol):
  *         def __trunc__(self) -> int:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -4048,8 +4048,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_multiprocessing_py, __pyx_n_s_trunc, 26, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 26, __pyx_L1_error)
 
   /* "smelly/multiprocessing.py":35
- * 
- * 
+ *
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:             # <<<<<<<<<<<<<<
  *     if '-c' in args:
  *         idx = args.index('-c')
@@ -4060,8 +4060,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_multiprocessing_py, __pyx_n_s_spawnv_passfds, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 35, __pyx_L1_error)
 
   /* "smelly/multiprocessing.py":48
- * 
- * 
+ *
+ *
  * def monkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     # Use smelly to run the worker process used by multiprocessing
  *     spawn.set_executable(smelly_exe())
@@ -4069,8 +4069,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_multiprocessing_py, __pyx_n_s_monkey_patch_multiprocessing, 48, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 48, __pyx_L1_error)
 
   /* "smelly/multiprocessing.py":54
- * 
- * 
+ *
+ *
  * def unmonkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     spawn.set_executable(orig_executable)
  *     util.spawnv_passfds = orig_spawn_passfds
@@ -4078,8 +4078,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_multiprocessing_py, __pyx_n_s_unmonkey_patch_multiprocessing, 54, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 54, __pyx_L1_error)
 
   /* "smelly/multiprocessing.py":59
- * 
- * 
+ *
+ *
  * def get_process_pool_executor(             # <<<<<<<<<<<<<<
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,
  *         initializer: Optional[Callable[..., None]] = None,
@@ -4104,8 +4104,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__12);
 
   /* "smelly/multiprocessing.py":79
- * 
- * 
+ *
+ *
  * def test_spawn() -> None:             # <<<<<<<<<<<<<<
  *     monkey_patch_multiprocessing()
  *     try:
@@ -4427,8 +4427,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/multiprocessing.py":8
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * from concurrent.futures import ProcessPoolExecutor
  * from multiprocessing import context, get_all_start_methods, get_context, spawn, util
@@ -4439,7 +4439,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/multiprocessing.py":9
- * 
+ *
  * import os
  * from concurrent.futures import ProcessPoolExecutor             # <<<<<<<<<<<<<<
  * from multiprocessing import context, get_all_start_methods, get_context, spawn, util
@@ -4464,7 +4464,7 @@ if (!__Pyx_RefNanny) {
  * from concurrent.futures import ProcessPoolExecutor
  * from multiprocessing import context, get_all_start_methods, get_context, spawn, util             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Any, Callable, Optional, Sequence, Tuple, Union
- * 
+ *
  */
   __pyx_t_2 = PyList_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4512,7 +4512,7 @@ if (!__Pyx_RefNanny) {
  * from concurrent.futures import ProcessPoolExecutor
  * from multiprocessing import context, get_all_start_methods, get_context, spawn, util
  * from typing import TYPE_CHECKING, Any, Callable, Optional, Sequence, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from .constants import smelly_exe
  */
   __pyx_t_1 = PyList_New(7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -4573,9 +4573,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/multiprocessing.py":13
  * from typing import TYPE_CHECKING, Any, Callable, Optional, Sequence, Tuple, Union
- * 
+ *
  * from .constants import smelly_exe             # <<<<<<<<<<<<<<
- * 
+ *
  * orig_spawn_passfds = util.spawnv_passfds
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -4594,10 +4594,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/multiprocessing.py":15
  * from .constants import smelly_exe
- * 
+ *
  * orig_spawn_passfds = util.spawnv_passfds             # <<<<<<<<<<<<<<
  * orig_executable = spawn.get_executable()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_util); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4608,10 +4608,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/multiprocessing.py":16
- * 
+ *
  * orig_spawn_passfds = util.spawnv_passfds
  * orig_executable = spawn.get_executable()             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_spawn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
@@ -4627,7 +4627,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/multiprocessing.py":18
  * orig_executable = spawn.get_executable()
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from array import array
  *     from ctypes import _CData
@@ -4639,7 +4639,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/multiprocessing.py":19
- * 
+ *
  * if TYPE_CHECKING:
  *     from array import array             # <<<<<<<<<<<<<<
  *     from ctypes import _CData
@@ -4706,7 +4706,7 @@ if (!__Pyx_RefNanny) {
  *     from mmap import mmap
  *     from pickle import PickleBuffer             # <<<<<<<<<<<<<<
  *     from typing import Protocol, SupportsIndex, SupportsInt
- * 
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4726,7 +4726,7 @@ if (!__Pyx_RefNanny) {
  *     from mmap import mmap
  *     from pickle import PickleBuffer
  *     from typing import Protocol, SupportsIndex, SupportsInt             # <<<<<<<<<<<<<<
- * 
+ *
  *     class SupportsTrunc(Protocol):
  */
     __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -4759,7 +4759,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/multiprocessing.py":25
  *     from typing import Protocol, SupportsIndex, SupportsInt
- * 
+ *
  *     class SupportsTrunc(Protocol):             # <<<<<<<<<<<<<<
  *         def __trunc__(self) -> int:
  *             ...
@@ -4777,11 +4777,11 @@ if (!__Pyx_RefNanny) {
     __Pyx_GOTREF(__pyx_t_4);
 
     /* "smelly/multiprocessing.py":26
- * 
+ *
  *     class SupportsTrunc(Protocol):
  *         def __trunc__(self) -> int:             # <<<<<<<<<<<<<<
  *             ...
- * 
+ *
  */
     __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 26, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -4795,7 +4795,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/multiprocessing.py":25
  *     from typing import Protocol, SupportsIndex, SupportsInt
- * 
+ *
  *     class SupportsTrunc(Protocol):             # <<<<<<<<<<<<<<
  *         def __trunc__(self) -> int:
  *             ...
@@ -4810,7 +4810,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/multiprocessing.py":29
  *             ...
- * 
+ *
  *     ArgsType = Sequence[Union[str, Union[bytes, Union[bytearray, memoryview, array[Any],             # <<<<<<<<<<<<<<
  *                                                       mmap, _CData, PickleBuffer]], SupportsInt, SupportsIndex, SupportsTrunc]]
  * else:
@@ -4835,7 +4835,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
     /* "smelly/multiprocessing.py":30
- * 
+ *
  *     ArgsType = Sequence[Union[str, Union[bytes, Union[bytearray, memoryview, array[Any],
  *                                                       mmap, _CData, PickleBuffer]], SupportsInt, SupportsIndex, SupportsTrunc]]             # <<<<<<<<<<<<<<
  * else:
@@ -4850,7 +4850,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/multiprocessing.py":29
  *             ...
- * 
+ *
  *     ArgsType = Sequence[Union[str, Union[bytes, Union[bytearray, memoryview, array[Any],             # <<<<<<<<<<<<<<
  *                                                       mmap, _CData, PickleBuffer]], SupportsInt, SupportsIndex, SupportsTrunc]]
  * else:
@@ -4893,7 +4893,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
     /* "smelly/multiprocessing.py":30
- * 
+ *
  *     ArgsType = Sequence[Union[str, Union[bytes, Union[bytearray, memoryview, array[Any],
  *                                                       mmap, _CData, PickleBuffer]], SupportsInt, SupportsIndex, SupportsTrunc]]             # <<<<<<<<<<<<<<
  * else:
@@ -4908,7 +4908,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/multiprocessing.py":29
  *             ...
- * 
+ *
  *     ArgsType = Sequence[Union[str, Union[bytes, Union[bytearray, memoryview, array[Any],             # <<<<<<<<<<<<<<
  *                                                       mmap, _CData, PickleBuffer]], SupportsInt, SupportsIndex, SupportsTrunc]]
  * else:
@@ -4943,7 +4943,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/multiprocessing.py":18
  * orig_executable = spawn.get_executable()
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from array import array
  *     from ctypes import _CData
@@ -4955,8 +4955,8 @@ if (!__Pyx_RefNanny) {
  *                                                       mmap, _CData, PickleBuffer]], SupportsInt, SupportsIndex, SupportsTrunc]]
  * else:
  *     ArgsType = Sequence[str]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   /*else*/ {
     __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_Sequence); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 32, __pyx_L1_error)
@@ -4970,8 +4970,8 @@ if (!__Pyx_RefNanny) {
   __pyx_L2:;
 
   /* "smelly/multiprocessing.py":35
- * 
- * 
+ *
+ *
  * def spawnv_passfds(path: bytes, args: ArgsType, passfds: Sequence[int]) -> int:             # <<<<<<<<<<<<<<
  *     if '-c' in args:
  *         idx = args.index('-c')
@@ -4999,8 +4999,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/multiprocessing.py":48
- * 
- * 
+ *
+ *
  * def monkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     # Use smelly to run the worker process used by multiprocessing
  *     spawn.set_executable(smelly_exe())
@@ -5016,8 +5016,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/multiprocessing.py":54
- * 
- * 
+ *
+ *
  * def unmonkey_patch_multiprocessing() -> None:             # <<<<<<<<<<<<<<
  *     spawn.set_executable(orig_executable)
  *     util.spawnv_passfds = orig_spawn_passfds
@@ -5033,8 +5033,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/multiprocessing.py":59
- * 
- * 
+ *
+ *
  * def get_process_pool_executor(             # <<<<<<<<<<<<<<
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,
  *         initializer: Optional[Callable[..., None]] = None,
@@ -5043,7 +5043,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/multiprocessing.py":60
- * 
+ *
  * def get_process_pool_executor(
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,             # <<<<<<<<<<<<<<
  *         initializer: Optional[Callable[..., None]] = None,
@@ -5110,8 +5110,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/multiprocessing.py":59
- * 
- * 
+ *
+ *
  * def get_process_pool_executor(             # <<<<<<<<<<<<<<
  *         prefer_fork: bool = False, max_workers: Optional[int] = None,
  *         initializer: Optional[Callable[..., None]] = None,
@@ -5125,8 +5125,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/multiprocessing.py":79
- * 
- * 
+ *
+ *
  * def test_spawn() -> None:             # <<<<<<<<<<<<<<
  *     monkey_patch_multiprocessing()
  *     try:
@@ -5144,7 +5144,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/multiprocessing.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5505,8 +5505,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

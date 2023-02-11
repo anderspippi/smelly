@@ -983,8 +983,8 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_13_genexp
 struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_14_test_path_mapping_send;
 
 /* "smelly_tests/file_transmission.py":41
- * 
- * 
+ *
+ *
  * def names_in(path):             # <<<<<<<<<<<<<<
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:
@@ -1007,7 +1007,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct__names_in
 
 /* "smelly_tests/file_transmission.py":84
  *         self.responses = []
- * 
+ *
  *     def cr(self, a, b):             # <<<<<<<<<<<<<<
  *         def f(r):
  *             r.pop('size', None)
@@ -1022,7 +1022,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_1_cr {
 
 /* "smelly_tests/file_transmission.py":89
  *             return r
- * 
+ *
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')             # <<<<<<<<<<<<<<
  *         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')
  *         self.ae(a, b)
@@ -1038,11 +1038,11 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_2_genexpr
 
 
 /* "smelly_tests/file_transmission.py":90
- * 
+ *
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')
  *         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')             # <<<<<<<<<<<<<<
  *         self.ae(a, b)
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_3_genexpr {
   PyObject_HEAD
@@ -1056,7 +1056,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_3_genexpr
 
 /* "smelly_tests/file_transmission.py":102
  *         self.ae(a, b)
- * 
+ *
  *     def test_rsync_roundtrip(self):             # <<<<<<<<<<<<<<
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')
@@ -1070,7 +1070,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_4_test_rs
 
 /* "smelly_tests/file_transmission.py":139
  *         patch(a_path, a_path, c_path, max_delta_len=256)
- * 
+ *
  *     def test_file_get(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -1103,7 +1103,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_6_genexpr
  *                     compression=compress))
  *             received = b''.join(x['data'] for x in ft.test_responses)             # <<<<<<<<<<<<<<
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_7_genexpr {
   PyObject_HEAD
@@ -1117,7 +1117,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_7_genexpr
 
 /* "smelly_tests/file_transmission.py":236
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  *     def test_file_put(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -1132,7 +1132,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_8_test_fi
 
 /* "smelly_tests/file_transmission.py":412
  *         self.assertFalse(ft.active_receives)
- * 
+ *
  *     def test_parse_ftc(self):             # <<<<<<<<<<<<<<
  *         def t(raw, *expected):
  *             a = []
@@ -1144,11 +1144,11 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_9_test_pa
 
 
 /* "smelly_tests/file_transmission.py":413
- * 
+ *
  *     def test_parse_ftc(self):
  *         def t(raw, *expected):             # <<<<<<<<<<<<<<
  *             a = []
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_10_t {
   PyObject_HEAD
@@ -1159,7 +1159,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_10_t {
 
 /* "smelly_tests/file_transmission.py":431
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  *     def test_path_mapping_receive(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -1175,7 +1175,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_11_test_p
 
 /* "smelly_tests/file_transmission.py":444
  *             self.ae(kw, m)
- * 
+ *
  *         def gm(all_specs):             # <<<<<<<<<<<<<<
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))
  *             files = []
@@ -1187,7 +1187,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_12_gm {
 
 
 /* "smelly_tests/file_transmission.py":445
- * 
+ *
  *         def gm(all_specs):
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))             # <<<<<<<<<<<<<<
  *             files = []
@@ -1203,7 +1203,7 @@ struct __pyx_obj_12smelly_tests_17file_transmission___pyx_scope_struct_13_genexp
 
 /* "smelly_tests/file_transmission.py":498
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)
- * 
+ *
  *     def test_path_mapping_send(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -2790,8 +2790,8 @@ static PyObject *__pyx_codeobj__73;
 /* Late includes */
 
 /* "smelly_tests/file_transmission.py":24
- * 
- * 
+ *
+ *
  * def response(             # <<<<<<<<<<<<<<
  *         id='test', msg='', file_id='', name='', action='status', status='',
  *         size=-1):
@@ -3088,7 +3088,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_response(CYTHON_UNU
  *     if size > -1:
  *         ans['size'] = size             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     if (unlikely(PyDict_SetItem(__pyx_v_ans, __pyx_n_s_size, __pyx_v_size) < 0)) __PYX_ERR(0, 37, __pyx_L1_error)
 
@@ -3105,8 +3105,8 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_response(CYTHON_UNU
  *     if size > -1:
  *         ans['size'] = size
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -3114,8 +3114,8 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_response(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly_tests/file_transmission.py":24
- * 
- * 
+ *
+ *
  * def response(             # <<<<<<<<<<<<<<
  *         id='test', msg='', file_id='', name='', action='status', status='',
  *         size=-1):
@@ -3135,8 +3135,8 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_response(CYTHON_UNU
 static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/file_transmission.py":41
- * 
- * 
+ *
+ *
  * def names_in(path):             # <<<<<<<<<<<<<<
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:
@@ -3226,7 +3226,7 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_Co
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 41, __pyx_L1_error)
 
   /* "smelly_tests/file_transmission.py":42
- * 
+ *
  * def names_in(path):
  *     for dirpath, dirnames, filenames in os.walk(path):             # <<<<<<<<<<<<<<
  *         for d in dirnames + filenames:
@@ -3302,13 +3302,13 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_Co
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_7 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_7 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_7 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_6);
@@ -3363,7 +3363,7 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_Co
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:             # <<<<<<<<<<<<<<
  *             yield os.path.relpath(os.path.join(dirpath, d), path)
- * 
+ *
  */
     __pyx_t_1 = PyNumber_Add(__pyx_cur_scope->__pyx_v_dirnames, __pyx_cur_scope->__pyx_v_filenames); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3416,8 +3416,8 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_Co
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:
  *             yield os.path.relpath(os.path.join(dirpath, d), path)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_os); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
@@ -3561,13 +3561,13 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_Co
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:             # <<<<<<<<<<<<<<
  *             yield os.path.relpath(os.path.join(dirpath, d), path)
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
     /* "smelly_tests/file_transmission.py":42
- * 
+ *
  * def names_in(path):
  *     for dirpath, dirnames, filenames in os.walk(path):             # <<<<<<<<<<<<<<
  *         for d in dirnames + filenames:
@@ -3578,8 +3578,8 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_Co
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly_tests/file_transmission.py":41
- * 
- * 
+ *
+ *
  * def names_in(path):             # <<<<<<<<<<<<<<
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:
@@ -3610,8 +3610,8 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_4generator(__pyx_Co
 }
 
 /* "smelly_tests/file_transmission.py":47
- * 
- * 
+ *
+ *
  * def serialized_cmd(**fields) -> str:             # <<<<<<<<<<<<<<
  *     if 'id' not in fields:
  *         fields['id'] = 'test'
@@ -3658,7 +3658,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
   __Pyx_RefNannySetupContext("serialized_cmd", 0);
 
   /* "smelly_tests/file_transmission.py":48
- * 
+ *
  * def serialized_cmd(**fields) -> str:
  *     if 'id' not in fields:             # <<<<<<<<<<<<<<
  *         fields['id'] = 'test'
@@ -3678,7 +3678,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
     if (unlikely(PyDict_SetItem(__pyx_v_fields, __pyx_n_s_id, __pyx_n_s_test) < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
 
     /* "smelly_tests/file_transmission.py":48
- * 
+ *
  * def serialized_cmd(**fields) -> str:
  *     if 'id' not in fields:             # <<<<<<<<<<<<<<
  *         fields['id'] = 'test'
@@ -3806,8 +3806,8 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
         __PYX_ERR(0, 50, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_5);
       #else
@@ -3879,7 +3879,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
  */
   __pyx_t_7 = __Pyx_PyDict_GetItemDefault(__pyx_v_fields, __pyx_n_s_data, Py_None); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_1 = PyString_Check(__pyx_t_7); 
+  __pyx_t_1 = PyString_Check(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
@@ -3928,7 +3928,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
  *         fields['data'] = fields['data'].encode('utf-8')
  *     ans = FileTransmissionCommand(**fields)             # <<<<<<<<<<<<<<
  *     return ans.serialize()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_FileTransmissionCommand); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -3945,8 +3945,8 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
  *         fields['data'] = fields['data'].encode('utf-8')
  *     ans = FileTransmissionCommand(**fields)
  *     return ans.serialize()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_ans, __pyx_n_s_serialize); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
@@ -3972,8 +3972,8 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
   goto __pyx_L0;
 
   /* "smelly_tests/file_transmission.py":47
- * 
- * 
+ *
+ *
  * def serialized_cmd(**fields) -> str:             # <<<<<<<<<<<<<<
  *     if 'id' not in fields:
  *         fields['id'] = 'test'
@@ -3998,7 +3998,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_5serialized_cmd(CYT
 }
 
 /* "smelly_tests/file_transmission.py":64
- * 
+ *
  * class TestFileTransmission(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -4132,7 +4132,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
  *         self.responses = []             # <<<<<<<<<<<<<<
  *         self.orig_home = os.environ.get('HOME')
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4143,7 +4143,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
  *         self.responses = []
  *         self.orig_home = os.environ.get('HOME')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def tearDown(self):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
@@ -4173,7 +4173,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":64
- * 
+ *
  * class TestFileTransmission(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -4199,7 +4199,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":70
  *         self.orig_home = os.environ.get('HOME')
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.responses = []
@@ -4234,7 +4234,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_RefNannySetupContext("tearDown", 0);
 
   /* "smelly_tests/file_transmission.py":71
- * 
+ *
  *     def tearDown(self):
  *         shutil.rmtree(self.tdir)             # <<<<<<<<<<<<<<
  *         self.responses = []
@@ -4326,7 +4326,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         else:
  *             os.environ['HOME'] = self.orig_home             # <<<<<<<<<<<<<<
  *         super().tearDown()
- * 
+ *
  */
   /*else*/ {
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_orig_home); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
@@ -4346,7 +4346,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         else:
  *             os.environ['HOME'] = self.orig_home
  *         super().tearDown()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def clean_tdir(self):
  */
   __pyx_t_2 = __Pyx_CyFunction_GetClassObj(__pyx_self);
@@ -4385,7 +4385,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":70
  *         self.orig_home = os.environ.get('HOME')
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.responses = []
@@ -4409,7 +4409,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":79
  *         super().tearDown()
- * 
+ *
  *     def clean_tdir(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
@@ -4443,7 +4443,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_RefNannySetupContext("clean_tdir", 0);
 
   /* "smelly_tests/file_transmission.py":80
- * 
+ *
  *     def clean_tdir(self):
  *         shutil.rmtree(self.tdir)             # <<<<<<<<<<<<<<
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
@@ -4479,7 +4479,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         shutil.rmtree(self.tdir)
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())             # <<<<<<<<<<<<<<
  *         self.responses = []
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4532,7 +4532,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         shutil.rmtree(self.tdir)
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
  *         self.responses = []             # <<<<<<<<<<<<<<
- * 
+ *
  *     def cr(self, a, b):
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
@@ -4542,7 +4542,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":79
  *         super().tearDown()
- * 
+ *
  *     def clean_tdir(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
@@ -4567,7 +4567,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":84
  *         self.responses = []
- * 
+ *
  *     def cr(self, a, b):             # <<<<<<<<<<<<<<
  *         def f(r):
  *             r.pop('size', None)
@@ -4650,7 +4650,7 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 }
 
 /* "smelly_tests/file_transmission.py":85
- * 
+ *
  *     def cr(self, a, b):
  *         def f(r):             # <<<<<<<<<<<<<<
  *             r.pop('size', None)
@@ -4686,7 +4686,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         def f(r):
  *             r.pop('size', None)             # <<<<<<<<<<<<<<
  *             return r
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_r, __pyx_n_s_pop); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4699,7 +4699,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         def f(r):
  *             r.pop('size', None)
  *             return r             # <<<<<<<<<<<<<<
- * 
+ *
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4708,7 +4708,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   goto __pyx_L0;
 
   /* "smelly_tests/file_transmission.py":85
- * 
+ *
  *     def cr(self, a, b):
  *         def f(r):             # <<<<<<<<<<<<<<
  *             r.pop('size', None)
@@ -4730,7 +4730,7 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":89
  *             return r
- * 
+ *
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')             # <<<<<<<<<<<<<<
  *         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')
  *         self.ae(a, b)
@@ -4910,11 +4910,11 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmiss
 static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmission_2cr_7generator2(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/file_transmission.py":90
- * 
+ *
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')
  *         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')             # <<<<<<<<<<<<<<
  *         self.ae(a, b)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmission_2cr_5genexpr(PyObject *__pyx_self) {
@@ -5091,7 +5091,7 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":84
  *         self.responses = []
- * 
+ *
  *     def cr(self, a, b):             # <<<<<<<<<<<<<<
  *         def f(r):
  *             r.pop('size', None)
@@ -5128,7 +5128,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_b);
 
   /* "smelly_tests/file_transmission.py":85
- * 
+ *
  *     def cr(self, a, b):
  *         def f(r):             # <<<<<<<<<<<<<<
  *             r.pop('size', None)
@@ -5142,7 +5142,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":89
  *             return r
- * 
+ *
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')             # <<<<<<<<<<<<<<
  *         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')
  *         self.ae(a, b)
@@ -5158,11 +5158,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __pyx_t_2 = 0;
 
   /* "smelly_tests/file_transmission.py":90
- * 
+ *
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')
  *         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')             # <<<<<<<<<<<<<<
  *         self.ae(a, b)
- * 
+ *
  */
   __pyx_t_2 = __pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmission_2cr_5genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5178,7 +5178,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')
  *         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')
  *         self.ae(a, b)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def assertResponses(self, ft, limit=1024, **kw):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
@@ -5232,7 +5232,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":84
  *         self.responses = []
- * 
+ *
  *     def cr(self, a, b):             # <<<<<<<<<<<<<<
  *         def f(r):
  *             r.pop('size', None)
@@ -5259,7 +5259,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":93
  *         self.ae(a, b)
- * 
+ *
  *     def assertResponses(self, ft, limit=1024, **kw):             # <<<<<<<<<<<<<<
  *         self.responses.append(response(**kw))
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
@@ -5367,11 +5367,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_RefNannySetupContext("assertResponses", 0);
 
   /* "smelly_tests/file_transmission.py":94
- * 
+ *
  *     def assertResponses(self, ft, limit=1024, **kw):
  *         self.responses.append(response(**kw))             # <<<<<<<<<<<<<<
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_responses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5391,7 +5391,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *     def assertResponses(self, ft, limit=1024, **kw):
  *         self.responses.append(response(**kw))
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])             # <<<<<<<<<<<<<<
- * 
+ *
  *     def assertPathEqual(self, a, b):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
@@ -5459,7 +5459,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":93
  *         self.ae(a, b)
- * 
+ *
  *     def assertResponses(self, ft, limit=1024, **kw):             # <<<<<<<<<<<<<<
  *         self.responses.append(response(**kw))
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
@@ -5485,7 +5485,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":97
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
- * 
+ *
  *     def assertPathEqual(self, a, b):             # <<<<<<<<<<<<<<
  *         a = os.path.abspath(os.path.realpath(a))
  *         b = os.path.abspath(os.path.realpath(b))
@@ -5584,7 +5584,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_INCREF(__pyx_v_b);
 
   /* "smelly_tests/file_transmission.py":98
- * 
+ *
  *     def assertPathEqual(self, a, b):
  *         a = os.path.abspath(os.path.realpath(a))             # <<<<<<<<<<<<<<
  *         b = os.path.abspath(os.path.realpath(b))
@@ -5645,7 +5645,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         a = os.path.abspath(os.path.realpath(a))
  *         b = os.path.abspath(os.path.realpath(b))             # <<<<<<<<<<<<<<
  *         self.ae(a, b)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5701,7 +5701,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         a = os.path.abspath(os.path.realpath(a))
  *         b = os.path.abspath(os.path.realpath(b))
  *         self.ae(a, b)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_rsync_roundtrip(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
@@ -5755,7 +5755,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":97
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
- * 
+ *
  *     def assertPathEqual(self, a, b):             # <<<<<<<<<<<<<<
  *         a = os.path.abspath(os.path.realpath(a))
  *         b = os.path.abspath(os.path.realpath(b))
@@ -5782,7 +5782,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":102
  *         self.ae(a, b)
- * 
+ *
  *     def test_rsync_roundtrip(self):             # <<<<<<<<<<<<<<
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')
@@ -5804,7 +5804,7 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":107
  *         c_path = os.path.join(self.tdir, 'c')
- * 
+ *
  *         def files_equal(a_path, c_path):             # <<<<<<<<<<<<<<
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:
@@ -5908,7 +5908,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/file_transmission.py":108
- * 
+ *
  *         def files_equal(a_path, c_path):
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))             # <<<<<<<<<<<<<<
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:
@@ -6019,7 +6019,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:             # <<<<<<<<<<<<<<
  *                 self.ae(b.read(), c.read())
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
@@ -6116,7 +6116,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:
  *                 self.ae(b.read(), c.read())             # <<<<<<<<<<<<<<
- * 
+ *
  *         def patch(old_path, new_path, output_path, max_delta_len=0):
  */
                   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 110, __pyx_L17_error) }
@@ -6212,7 +6212,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:             # <<<<<<<<<<<<<<
  *                 self.ae(b.read(), c.read())
- * 
+ *
  */
                 }
                 __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -6248,7 +6248,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
                     __Pyx_GIVEREF(__pyx_t_2);
                     __Pyx_XGIVEREF(__pyx_t_5);
                     __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_2, __pyx_t_5);
-                    __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0; 
+                    __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0;
                     __PYX_ERR(0, 109, __pyx_L19_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -6323,7 +6323,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_2, __pyx_t_1);
-            __pyx_t_5 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_5 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 109, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -6367,7 +6367,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":107
  *         c_path = os.path.join(self.tdir, 'c')
- * 
+ *
  *         def files_equal(a_path, c_path):             # <<<<<<<<<<<<<<
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:
@@ -6395,7 +6395,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":112
  *                 self.ae(b.read(), c.read())
- * 
+ *
  *         def patch(old_path, new_path, output_path, max_delta_len=0):             # <<<<<<<<<<<<<<
  *             sig_loader = LoadSignature()
  *             for chunk in signature_of_file(old_path):
@@ -6525,7 +6525,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/file_transmission.py":113
- * 
+ *
  *         def patch(old_path, new_path, output_path, max_delta_len=0):
  *             sig_loader = LoadSignature()             # <<<<<<<<<<<<<<
  *             for chunk in signature_of_file(old_path):
@@ -7032,7 +7032,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_12);
             __Pyx_XGIVEREF(__pyx_t_6);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_12, __pyx_t_6);
-            __pyx_t_2 = 0; __pyx_t_12 = 0; __pyx_t_6 = 0; 
+            __pyx_t_2 = 0; __pyx_t_12 = 0; __pyx_t_6 = 0;
             __PYX_ERR(0, 119, __pyx_L11_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -7120,7 +7120,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             if max_delta_len:
  *                 self.assertLessEqual(delta_len, max_delta_len)             # <<<<<<<<<<<<<<
  *             files_equal(output_path, new_path)
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 126, __pyx_L1_error) }
     __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertLessEqual); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 126, __pyx_L1_error)
@@ -7185,7 +7185,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             if max_delta_len:
  *                 self.assertLessEqual(delta_len, max_delta_len)
  *             files_equal(output_path, new_path)             # <<<<<<<<<<<<<<
- * 
+ *
  *         sz = 1024 * 1024 + 37
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_files_equal)) { __Pyx_RaiseClosureNameError("files_equal"); __PYX_ERR(0, 127, __pyx_L1_error) }
@@ -7195,7 +7195,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":112
  *                 self.ae(b.read(), c.read())
- * 
+ *
  *         def patch(old_path, new_path, output_path, max_delta_len=0):             # <<<<<<<<<<<<<<
  *             sig_loader = LoadSignature()
  *             for chunk in signature_of_file(old_path):
@@ -7224,7 +7224,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":102
  *         self.ae(a, b)
- * 
+ *
  *     def test_rsync_roundtrip(self):             # <<<<<<<<<<<<<<
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')
@@ -7271,7 +7271,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/file_transmission.py":103
- * 
+ *
  *     def test_rsync_roundtrip(self):
  *         a_path = os.path.join(self.tdir, 'a')             # <<<<<<<<<<<<<<
  *         b_path = os.path.join(self.tdir, 'b')
@@ -7342,7 +7342,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')             # <<<<<<<<<<<<<<
  *         c_path = os.path.join(self.tdir, 'c')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7408,7 +7408,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')
  *         c_path = os.path.join(self.tdir, 'c')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def files_equal(a_path, c_path):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
@@ -7473,7 +7473,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":107
  *         c_path = os.path.join(self.tdir, 'c')
- * 
+ *
  *         def files_equal(a_path, c_path):             # <<<<<<<<<<<<<<
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:
@@ -7486,7 +7486,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":112
  *                 self.ae(b.read(), c.read())
- * 
+ *
  *         def patch(old_path, new_path, output_path, max_delta_len=0):             # <<<<<<<<<<<<<<
  *             sig_loader = LoadSignature()
  *             for chunk in signature_of_file(old_path):
@@ -7499,7 +7499,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":129
  *             files_equal(output_path, new_path)
- * 
+ *
  *         sz = 1024 * 1024 + 37             # <<<<<<<<<<<<<<
  *         with open(a_path, 'wb') as f:
  *             f.write(os.urandom(sz))
@@ -7507,7 +7507,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __pyx_v_sz = 0x100025;
 
   /* "smelly_tests/file_transmission.py":130
- * 
+ *
  *         sz = 1024 * 1024 + 37
  *         with open(a_path, 'wb') as f:             # <<<<<<<<<<<<<<
  *             f.write(os.urandom(sz))
@@ -7610,7 +7610,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
           /* "smelly_tests/file_transmission.py":130
- * 
+ *
  *         sz = 1024 * 1024 + 37
  *         with open(a_path, 'wb') as f:             # <<<<<<<<<<<<<<
  *             f.write(os.urandom(sz))
@@ -7650,7 +7650,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_2, __pyx_t_1);
-            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 130, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -7697,7 +7697,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             f.write(os.urandom(sz))
  *         with open(b_path, 'wb') as f:             # <<<<<<<<<<<<<<
  *             f.write(os.urandom(sz))
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
@@ -7749,7 +7749,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             f.write(os.urandom(sz))
  *         with open(b_path, 'wb') as f:
  *             f.write(os.urandom(sz))             # <<<<<<<<<<<<<<
- * 
+ *
  *         patch(a_path, b_path, c_path)
  */
           __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L21_error)
@@ -7800,7 +7800,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             f.write(os.urandom(sz))
  *         with open(b_path, 'wb') as f:             # <<<<<<<<<<<<<<
  *             f.write(os.urandom(sz))
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -7836,7 +7836,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_2, __pyx_t_1);
-            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 132, __pyx_L23_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -7880,7 +7880,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":135
  *             f.write(os.urandom(sz))
- * 
+ *
  *         patch(a_path, b_path, c_path)             # <<<<<<<<<<<<<<
  *         # test size of delta
  *         patch(a_path, a_path, c_path, max_delta_len=256)
@@ -7905,7 +7905,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         patch(a_path, b_path, c_path)
  *         # test size of delta
  *         patch(a_path, a_path, c_path, max_delta_len=256)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_file_get(self):
  */
   __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
@@ -7930,7 +7930,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":102
  *         self.ae(a, b)
- * 
+ *
  *     def test_rsync_roundtrip(self):             # <<<<<<<<<<<<<<
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')
@@ -7962,7 +7962,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":139
  *         patch(a_path, a_path, c_path, max_delta_len=256)
- * 
+ *
  *     def test_file_get(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -8145,7 +8145,7 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     compression=compress))
  *             received = b''.join(x['data'] for x in ft.test_responses)             # <<<<<<<<<<<<<<
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmission_13test_file_get_3genexpr(PyObject *__pyx_self) {
@@ -8298,7 +8298,7 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":139
  *         patch(a_path, a_path, c_path, max_delta_len=256)
- * 
+ *
  *     def test_file_get(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -9369,7 +9369,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
                     __Pyx_GIVEREF(__pyx_t_1);
                     __Pyx_XGIVEREF(__pyx_t_10);
                     __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_10);
-                    __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_10 = 0; 
+                    __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_10 = 0;
                     __PYX_ERR(0, 170, __pyx_L21_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9630,7 +9630,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
                     __Pyx_GIVEREF(__pyx_t_10);
                     __Pyx_XGIVEREF(__pyx_t_4);
                     __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_10, __pyx_t_4);
-                    __pyx_t_5 = 0; __pyx_t_10 = 0; __pyx_t_4 = 0; 
+                    __pyx_t_5 = 0; __pyx_t_10 = 0; __pyx_t_4 = 0;
                     __PYX_ERR(0, 173, __pyx_L35_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -10943,7 +10943,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_7);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_10, __pyx_t_7, __pyx_t_5);
-            __pyx_t_10 = 0; __pyx_t_7 = 0; __pyx_t_5 = 0; 
+            __pyx_t_10 = 0; __pyx_t_7 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 152, __pyx_L11_except_error)
           }
           __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -11296,7 +11296,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_10);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_10, __pyx_t_5);
-            __pyx_t_1 = 0; __pyx_t_10 = 0; __pyx_t_5 = 0; 
+            __pyx_t_1 = 0; __pyx_t_10 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 206, __pyx_L60_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -11991,7 +11991,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     compression=compress))
  *             received = b''.join(x['data'] for x in ft.test_responses)             # <<<<<<<<<<<<<<
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  */
     __pyx_t_4 = __pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmission_13test_file_get_3genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -12005,7 +12005,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     compression=compress))
  *             received = b''.join(x['data'] for x in ft.test_responses)
  *             self.ae(received.decode('utf-8'), src)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_file_put(self):
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 234, __pyx_L1_error)
@@ -12088,7 +12088,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":139
  *         patch(a_path, a_path, c_path, max_delta_len=256)
- * 
+ *
  *     def test_file_get(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -12134,7 +12134,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":236
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  *     def test_file_put(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -12156,7 +12156,7 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":361
  *         fid = 0
- * 
+ *
  *         def send(name, data, **kw):             # <<<<<<<<<<<<<<
  *             nonlocal fid
  *             fid += 1
@@ -12508,7 +12508,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                         data=data))
  *                 self.assertResponses(             # <<<<<<<<<<<<<<
  *                     ft, status='OK', name=name, file_id=str(fid))
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 377, __pyx_L1_error) }
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertResponses); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 377, __pyx_L1_error)
@@ -12518,7 +12518,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                         data=data))
  *                 self.assertResponses(
  *                     ft, status='OK', name=name, file_id=str(fid))             # <<<<<<<<<<<<<<
- * 
+ *
  *         send(dest, b'xyz', permissions=0o777, mtime=13000)
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_ft)) { __Pyx_RaiseClosureNameError("ft"); __PYX_ERR(0, 378, __pyx_L1_error) }
@@ -12528,7 +12528,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                         data=data))
  *                 self.assertResponses(             # <<<<<<<<<<<<<<
  *                     ft, status='OK', name=name, file_id=str(fid))
- * 
+ *
  */
     __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 377, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -12540,7 +12540,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                         data=data))
  *                 self.assertResponses(
  *                     ft, status='OK', name=name, file_id=str(fid))             # <<<<<<<<<<<<<<
- * 
+ *
  *         send(dest, b'xyz', permissions=0o777, mtime=13000)
  */
     __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 378, __pyx_L1_error)
@@ -12557,7 +12557,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                         data=data))
  *                 self.assertResponses(             # <<<<<<<<<<<<<<
  *                     ft, status='OK', name=name, file_id=str(fid))
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 377, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -12577,7 +12577,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":361
  *         fid = 0
- * 
+ *
  *         def send(name, data, **kw):             # <<<<<<<<<<<<<<
  *             nonlocal fid
  *             fid += 1
@@ -12602,7 +12602,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":236
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  *     def test_file_put(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -14104,7 +14104,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
               __Pyx_GIVEREF(__pyx_t_5);
               __Pyx_XGIVEREF(__pyx_t_13);
               __Pyx_ErrRestoreWithState(__pyx_t_6, __pyx_t_5, __pyx_t_13);
-              __pyx_t_6 = 0; __pyx_t_5 = 0; __pyx_t_13 = 0; 
+              __pyx_t_6 = 0; __pyx_t_5 = 0; __pyx_t_13 = 0;
               __PYX_ERR(0, 272, __pyx_L15_except_error)
             }
             __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -15594,7 +15594,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         with open(dest, 'rb') as f:
  *             self.ae(f.read(), odata)             # <<<<<<<<<<<<<<
  *         del odata
- * 
+ *
  */
           __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 311, __pyx_L29_error)
           __Pyx_GOTREF(__pyx_t_7);
@@ -15709,7 +15709,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_7);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_7, __pyx_t_3);
-            __pyx_t_1 = 0; __pyx_t_7 = 0; __pyx_t_3 = 0; 
+            __pyx_t_1 = 0; __pyx_t_7 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 310, __pyx_L31_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15755,14 +15755,14 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         with open(dest, 'rb') as f:
  *             self.ae(f.read(), odata)
  *         del odata             # <<<<<<<<<<<<<<
- * 
+ *
  *         # overwriting
  */
   __Pyx_DECREF(__pyx_v_odata);
   __pyx_v_odata = NULL;
 
   /* "smelly_tests/file_transmission.py":315
- * 
+ *
  *         # overwriting
  *         self.clean_tdir()             # <<<<<<<<<<<<<<
  *         ft = FileTransmission()
@@ -16482,7 +16482,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_6);
             __Pyx_ErrRestoreWithState(__pyx_t_13, __pyx_t_3, __pyx_t_6);
-            __pyx_t_13 = 0; __pyx_t_3 = 0; __pyx_t_6 = 0; 
+            __pyx_t_13 = 0; __pyx_t_3 = 0; __pyx_t_6 = 0;
             __PYX_ERR(0, 328, __pyx_L45_except_error)
           }
           __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
@@ -16984,7 +16984,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_6);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_6);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_6 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_6 = 0;
             __PYX_ERR(0, 339, __pyx_L59_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -17276,7 +17276,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         ft.handle_serialized_command(serialized_cmd(action='finish'))
  *         with open(three) as f:             # <<<<<<<<<<<<<<
  *             self.ae(f.read(), '11')
- * 
+ *
  */
   /*with:*/ {
     __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_open, __pyx_v_three); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 350, __pyx_L1_error)
@@ -17319,7 +17319,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         ft.handle_serialized_command(serialized_cmd(action='finish'))
  *         with open(three) as f:
  *             self.ae(f.read(), '11')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # multi file send
  */
           __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 351, __pyx_L71_error)
@@ -17395,7 +17395,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         ft.handle_serialized_command(serialized_cmd(action='finish'))
  *         with open(three) as f:             # <<<<<<<<<<<<<<
  *             self.ae(f.read(), '11')
- * 
+ *
  */
         }
         __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
@@ -17435,7 +17435,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_6);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_7, __pyx_t_6, __pyx_t_3);
-            __pyx_t_7 = 0; __pyx_t_6 = 0; __pyx_t_3 = 0; 
+            __pyx_t_7 = 0; __pyx_t_6 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 350, __pyx_L73_except_error)
           }
           __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -17478,7 +17478,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   }
 
   /* "smelly_tests/file_transmission.py":354
- * 
+ *
  *         # multi file send
  *         self.clean_tdir()             # <<<<<<<<<<<<<<
  *         ft = FileTransmission()
@@ -17640,7 +17640,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         ft.handle_serialized_command(serialized_cmd(action='send'))
  *         self.assertResponses(ft, status='OK')             # <<<<<<<<<<<<<<
  *         fid = 0
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertResponses); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 358, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17663,7 +17663,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         ft.handle_serialized_command(serialized_cmd(action='send'))
  *         self.assertResponses(ft, status='OK')
  *         fid = 0             # <<<<<<<<<<<<<<
- * 
+ *
  *         def send(name, data, **kw):
  */
   __Pyx_INCREF(__pyx_int_0);
@@ -17672,7 +17672,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":361
  *         fid = 0
- * 
+ *
  *         def send(name, data, **kw):             # <<<<<<<<<<<<<<
  *             nonlocal fid
  *             fid += 1
@@ -17684,7 +17684,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":380
  *                     ft, status='OK', name=name, file_id=str(fid))
- * 
+ *
  *         send(dest, b'xyz', permissions=0o777, mtime=13000)             # <<<<<<<<<<<<<<
  *         st = os.stat(dest)
  *         self.ae(st.st_nlink, 1)
@@ -17708,7 +17708,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly_tests/file_transmission.py":381
- * 
+ *
  *         send(dest, b'xyz', permissions=0o777, mtime=13000)
  *         st = os.stat(dest)             # <<<<<<<<<<<<<<
  *         self.ae(st.st_nlink, 1)
@@ -19007,7 +19007,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_6);
             __Pyx_XGIVEREF(__pyx_t_13);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_6, __pyx_t_13);
-            __pyx_t_1 = 0; __pyx_t_6 = 0; __pyx_t_13 = 0; 
+            __pyx_t_1 = 0; __pyx_t_6 = 0; __pyx_t_13 = 0;
             __PYX_ERR(0, 402, __pyx_L87_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -19054,7 +19054,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             self.ae(f.read(), 'in_dir')
  *         self.assertTrue(os.path.isdir(dest + 'd1'))             # <<<<<<<<<<<<<<
  *         self.assertTrue(os.path.isdir(dest + 'd2'))
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 404, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -19106,7 +19106,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             self.ae(f.read(), 'in_dir')
  *         self.assertTrue(os.path.isdir(dest + 'd1'))
  *         self.assertTrue(os.path.isdir(dest + 'd2'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         ft.handle_serialized_command(serialized_cmd(action='finish'))
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertTrue); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 405, __pyx_L1_error)
@@ -19157,7 +19157,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":407
  *         self.assertTrue(os.path.isdir(dest + 'd2'))
- * 
+ *
  *         ft.handle_serialized_command(serialized_cmd(action='finish'))             # <<<<<<<<<<<<<<
  *         self.ae(os.stat(dest + 'd1').st_mtime_ns, 29000)
  *         self.ae(os.stat(dest + 'd2').st_mtime_ns, 29000)
@@ -19192,7 +19192,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
 
   /* "smelly_tests/file_transmission.py":408
- * 
+ *
  *         ft.handle_serialized_command(serialized_cmd(action='finish'))
  *         self.ae(os.stat(dest + 'd1').st_mtime_ns, 29000)             # <<<<<<<<<<<<<<
  *         self.ae(os.stat(dest + 'd2').st_mtime_ns, 29000)
@@ -19280,7 +19280,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         self.ae(os.stat(dest + 'd1').st_mtime_ns, 29000)
  *         self.ae(os.stat(dest + 'd2').st_mtime_ns, 29000)             # <<<<<<<<<<<<<<
  *         self.assertFalse(ft.active_receives)
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 409, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -19363,7 +19363,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         self.ae(os.stat(dest + 'd1').st_mtime_ns, 29000)
  *         self.ae(os.stat(dest + 'd2').st_mtime_ns, 29000)
  *         self.assertFalse(ft.active_receives)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_parse_ftc(self):
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertFalse); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 410, __pyx_L1_error)
@@ -19390,7 +19390,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":236
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  *     def test_file_put(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -19431,7 +19431,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":412
  *         self.assertFalse(ft.active_receives)
- * 
+ *
  *     def test_parse_ftc(self):             # <<<<<<<<<<<<<<
  *         def t(raw, *expected):
  *             a = []
@@ -19452,11 +19452,11 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 }
 
 /* "smelly_tests/file_transmission.py":413
- * 
+ *
  *     def test_parse_ftc(self):
  *         def t(raw, *expected):             # <<<<<<<<<<<<<<
  *             a = []
- * 
+ *
  */
 
 /* Python wrapper */
@@ -19529,7 +19529,7 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":416
  *             a = []
- * 
+ *
  *             def c(k, v, has_semicolons):             # <<<<<<<<<<<<<<
  *                 a.append(decode_utf8_buffer(k))
  *                 if has_semicolons:
@@ -19630,7 +19630,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_INCREF(__pyx_v_v);
 
   /* "smelly_tests/file_transmission.py":417
- * 
+ *
  *             def c(k, v, has_semicolons):
  *                 a.append(decode_utf8_buffer(k))             # <<<<<<<<<<<<<<
  *                 if has_semicolons:
@@ -19676,7 +19676,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                 if has_semicolons:
  *                     v = bytes(v).replace(b';;', b';')             # <<<<<<<<<<<<<<
  *                 a.append(decode_utf8_buffer(v))
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyBytes_Type)), __pyx_v_v); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 419, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -19702,7 +19702,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                 if has_semicolons:
  *                     v = bytes(v).replace(b';;', b';')
  *                 a.append(decode_utf8_buffer(v))             # <<<<<<<<<<<<<<
- * 
+ *
  *             parse_ftc(raw, c)
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_a)) { __Pyx_RaiseClosureNameError("a"); __PYX_ERR(0, 420, __pyx_L1_error) }
@@ -19732,7 +19732,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":416
  *             a = []
- * 
+ *
  *             def c(k, v, has_semicolons):             # <<<<<<<<<<<<<<
  *                 a.append(decode_utf8_buffer(k))
  *                 if has_semicolons:
@@ -19755,11 +19755,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 }
 
 /* "smelly_tests/file_transmission.py":413
- * 
+ *
  *     def test_parse_ftc(self):
  *         def t(raw, *expected):             # <<<<<<<<<<<<<<
  *             a = []
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmission_14test_parse_ftc_t(PyObject *__pyx_self, PyObject *__pyx_v_raw, PyObject *__pyx_v_expected) {
@@ -19793,7 +19793,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *     def test_parse_ftc(self):
  *         def t(raw, *expected):
  *             a = []             # <<<<<<<<<<<<<<
- * 
+ *
  *             def c(k, v, has_semicolons):
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 414, __pyx_L1_error)
@@ -19804,7 +19804,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":416
  *             a = []
- * 
+ *
  *             def c(k, v, has_semicolons):             # <<<<<<<<<<<<<<
  *                 a.append(decode_utf8_buffer(k))
  *                 if has_semicolons:
@@ -19816,10 +19816,10 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":422
  *                 a.append(decode_utf8_buffer(v))
- * 
+ *
  *             parse_ftc(raw, c)             # <<<<<<<<<<<<<<
  *             self.ae(tuple(a), expected)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_ftc); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 422, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -19871,10 +19871,10 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":423
- * 
+ *
  *             parse_ftc(raw, c)
  *             self.ae(tuple(a), expected)             # <<<<<<<<<<<<<<
- * 
+ *
  *         t('a=b', 'a', 'b')
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 423, __pyx_L1_error) }
@@ -19932,11 +19932,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":413
- * 
+ *
  *     def test_parse_ftc(self):
  *         def t(raw, *expected):             # <<<<<<<<<<<<<<
  *             a = []
- * 
+ *
  */
 
   /* function exit code */
@@ -19960,7 +19960,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":412
  *         self.assertFalse(ft.active_receives)
- * 
+ *
  *     def test_parse_ftc(self):             # <<<<<<<<<<<<<<
  *         def t(raw, *expected):
  *             a = []
@@ -19989,11 +19989,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/file_transmission.py":413
- * 
+ *
  *     def test_parse_ftc(self):
  *         def t(raw, *expected):             # <<<<<<<<<<<<<<
  *             a = []
- * 
+ *
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_17file_transmission_20TestFileTransmission_14test_parse_ftc_1t, 0, __pyx_n_s_TestFileTransmission_test_parse_2, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_file_transmission, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 413, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20002,7 +20002,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":425
  *             self.ae(tuple(a), expected)
- * 
+ *
  *         t('a=b', 'a', 'b')             # <<<<<<<<<<<<<<
  *         t('a=b;', 'a', 'b')
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
@@ -20012,7 +20012,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":426
- * 
+ *
  *         t('a=b', 'a', 'b')
  *         t('a=b;', 'a', 'b')             # <<<<<<<<<<<<<<
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
@@ -20038,7 +20038,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
  *         t('a1=b1;c=d;;e', 'a1', 'b1', 'c', 'd;e')             # <<<<<<<<<<<<<<
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_t, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 428, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20048,7 +20048,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
  *         t('a1=b1;c=d;;e', 'a1', 'b1', 'c', 'd;e')
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_path_mapping_receive(self):
  */
   __pyx_t_1 = __Pyx_PyObject_Call(__pyx_v_t, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 429, __pyx_L1_error)
@@ -20057,7 +20057,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":412
  *         self.assertFalse(ft.active_receives)
- * 
+ *
  *     def test_parse_ftc(self):             # <<<<<<<<<<<<<<
  *         def t(raw, *expected):
  *             a = []
@@ -20080,7 +20080,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":431
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  *     def test_path_mapping_receive(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -20102,7 +20102,7 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":439
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.remote_path: f.expanded_local_path for f in files}
  *             kw = {str(k): expand_home(str(v)) for k, v in kw.items()}
@@ -20202,7 +20202,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_INCREF(__pyx_v_kw);
 
   /* "smelly_tests/file_transmission.py":440
- * 
+ *
  *         def am(files, kw):
  *             m = {f.remote_path: f.expanded_local_path for f in files}             # <<<<<<<<<<<<<<
  *             kw = {str(k): expand_home(str(v)) for k, v in kw.items()}
@@ -20276,7 +20276,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             m = {f.remote_path: f.expanded_local_path for f in files}
  *             kw = {str(k): expand_home(str(v)) for k, v in kw.items()}             # <<<<<<<<<<<<<<
  *             self.ae(kw, m)
- * 
+ *
  */
   { /* enter inner scope */
     __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 441, __pyx_L11_error)
@@ -20348,11 +20348,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_5);
         __Pyx_INCREF(__pyx_t_7);
@@ -20431,7 +20431,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             m = {f.remote_path: f.expanded_local_path for f in files}
  *             kw = {str(k): expand_home(str(v)) for k, v in kw.items()}
  *             self.ae(kw, m)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def gm(all_specs):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 442, __pyx_L1_error) }
@@ -20486,7 +20486,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":439
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.remote_path: f.expanded_local_path for f in files}
  *             kw = {str(k): expand_home(str(v)) for k, v in kw.items()}
@@ -20518,7 +20518,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":444
  *             self.ae(kw, m)
- * 
+ *
  *         def gm(all_specs):             # <<<<<<<<<<<<<<
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))
  *             files = []
@@ -20540,7 +20540,7 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmission_25test_path_mapping_receive_2gm_2generator5(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/file_transmission.py":445
- * 
+ *
  *         def gm(all_specs):
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))             # <<<<<<<<<<<<<<
  *             files = []
@@ -20706,7 +20706,7 @@ static PyObject *__pyx_gb_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":444
  *             self.ae(kw, m)
- * 
+ *
  *         def gm(all_specs):             # <<<<<<<<<<<<<<
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))
  *             files = []
@@ -20746,7 +20746,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_all_specs);
 
   /* "smelly_tests/file_transmission.py":445
- * 
+ *
  *         def gm(all_specs):
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))             # <<<<<<<<<<<<<<
  *             files = []
@@ -20846,7 +20846,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     raise x
  *                 files.append(File(x))
  */
-    __pyx_t_6 = __Pyx_PyException_Check(__pyx_v_x); 
+    __pyx_t_6 = __Pyx_PyException_Check(__pyx_v_x);
     __pyx_t_7 = (__pyx_t_6 != 0);
     if (unlikely(__pyx_t_7)) {
 
@@ -20874,7 +20874,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     raise x
  *                 files.append(File(x))             # <<<<<<<<<<<<<<
  *             return files, specs
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_File); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 450, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -20910,7 +20910,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     raise x
  *                 files.append(File(x))
  *             return files, specs             # <<<<<<<<<<<<<<
- * 
+ *
  *         def tf(args, expected, different_home=''):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -20928,7 +20928,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":444
  *             self.ae(kw, m)
- * 
+ *
  *         def gm(all_specs):             # <<<<<<<<<<<<<<
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))
  *             files = []
@@ -20955,7 +20955,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":453
  *             return files, specs
- * 
+ *
  *         def tf(args, expected, different_home=''):             # <<<<<<<<<<<<<<
  *             if opts.mode == 'mirror':
  *                 all_specs = args
@@ -21075,7 +21075,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/file_transmission.py":454
- * 
+ *
  *         def tf(args, expected, different_home=''):
  *             if opts.mode == 'mirror':             # <<<<<<<<<<<<<<
  *                 all_specs = args
@@ -21109,7 +21109,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
     __pyx_v_dest = __pyx_kp_s_;
 
     /* "smelly_tests/file_transmission.py":454
- * 
+ *
  *         def tf(args, expected, different_home=''):
  *             if opts.mode == 'mirror':             # <<<<<<<<<<<<<<
  *                 all_specs = args
@@ -21165,11 +21165,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
@@ -21441,7 +21441,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     opts, dest, files, orig_home, specs))
  *                 self.ae(len(files), len(expected))             # <<<<<<<<<<<<<<
  *                 am(files, expected)
- * 
+ *
  */
           if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 465, __pyx_L12_error) }
           __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 465, __pyx_L12_error)
@@ -21507,7 +21507,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *                     opts, dest, files, orig_home, specs))
  *                 self.ae(len(files), len(expected))
  *                 am(files, expected)             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts.mode = 'mirror'
  */
           if (unlikely(!__pyx_cur_scope->__pyx_v_am)) { __Pyx_RaiseClosureNameError("am"); __PYX_ERR(0, 466, __pyx_L12_error) }
@@ -21556,7 +21556,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_7);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_7);
-            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_7 = 0; 
+            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_7 = 0;
             __PYX_ERR(0, 462, __pyx_L14_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -21600,7 +21600,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":453
  *             return files, specs
- * 
+ *
  *         def tf(args, expected, different_home=''):             # <<<<<<<<<<<<<<
  *             if opts.mode == 'mirror':
  *                 all_specs = args
@@ -21631,7 +21631,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":431
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  *     def test_path_mapping_receive(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -21676,7 +21676,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/file_transmission.py":432
- * 
+ *
  *     def test_path_mapping_receive(self):
  *         opts = parse_transfer_args([])[0]             # <<<<<<<<<<<<<<
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -21868,7 +21868,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         open(b / 'r', 'w').close()
  *         os.mkdir(b / 'd')             # <<<<<<<<<<<<<<
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 436, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -21899,7 +21899,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         open(b / 'r', 'w').close()
  *         os.mkdir(b / 'd')
  *         open(b / 'd' / 'r', 'w').close()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def am(files, kw):
  */
   __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_b, __pyx_n_s_d); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 437, __pyx_L1_error)
@@ -21940,7 +21940,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":439
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.remote_path: f.expanded_local_path for f in files}
  *             kw = {str(k): expand_home(str(v)) for k, v in kw.items()}
@@ -21953,7 +21953,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":444
  *             self.ae(kw, m)
- * 
+ *
  *         def gm(all_specs):             # <<<<<<<<<<<<<<
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))
  *             files = []
@@ -21966,7 +21966,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":453
  *             return files, specs
- * 
+ *
  *         def tf(args, expected, different_home=''):             # <<<<<<<<<<<<<<
  *             if opts.mode == 'mirror':
  *                 all_specs = args
@@ -21979,7 +21979,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":468
  *                 am(files, expected)
- * 
+ *
  *         opts.mode = 'mirror'             # <<<<<<<<<<<<<<
  *         with set_paths(cwd=b, home='/foo/bar'):
  *             tf([b / 'r', b / 'd'], {b / 'r': b / 'r',
@@ -21987,7 +21987,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_opts, __pyx_n_s_mode, __pyx_n_s_mirror) < 0) __PYX_ERR(0, 468, __pyx_L1_error)
 
   /* "smelly_tests/file_transmission.py":469
- * 
+ *
  *         opts.mode = 'mirror'
  *         with set_paths(cwd=b, home='/foo/bar'):             # <<<<<<<<<<<<<<
  *             tf([b / 'r', b / 'd'], {b / 'r': b / 'r',
@@ -22183,7 +22183,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
           /* "smelly_tests/file_transmission.py":469
- * 
+ *
  *         opts.mode = 'mirror'
  *         with set_paths(cwd=b, home='/foo/bar'):             # <<<<<<<<<<<<<<
  *             tf([b / 'r', b / 'd'], {b / 'r': b / 'r',
@@ -22224,7 +22224,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_8, __pyx_t_1, __pyx_t_2);
-            __pyx_t_8 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+            __pyx_t_8 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 469, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -22445,7 +22445,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_3);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 474, __pyx_L23_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -22723,7 +22723,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_8, __pyx_t_2, __pyx_t_3);
-            __pyx_t_8 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            __pyx_t_8 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 479, __pyx_L37_except_error)
           }
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -22924,7 +22924,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_3);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 484, __pyx_L51_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -23461,7 +23461,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             self.assertEqual(files[1].remote_target, files[2].remote_id)
  *             self.assertEqual(files[3].ftype, FileType.link)             # <<<<<<<<<<<<<<
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)
- * 
+ *
  */
           __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 495, __pyx_L63_error)
           __Pyx_GOTREF(__pyx_t_2);
@@ -23530,7 +23530,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             self.assertEqual(files[1].remote_target, files[2].remote_id)
  *             self.assertEqual(files[3].ftype, FileType.link)
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_path_mapping_send(self):
  */
           __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 496, __pyx_L63_error)
@@ -23638,7 +23638,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_2);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_2, __pyx_t_1);
-            __pyx_t_4 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0; 
+            __pyx_t_4 = 0; __pyx_t_2 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 490, __pyx_L65_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -23682,7 +23682,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":431
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  *     def test_path_mapping_receive(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -23713,7 +23713,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":498
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)
- * 
+ *
  *     def test_path_mapping_send(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -23735,10 +23735,10 @@ static PyObject *__pyx_pw_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":506
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def gm(*args):             # <<<<<<<<<<<<<<
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  */
 
 /* Python wrapper */
@@ -23779,10 +23779,10 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/file_transmission.py":507
- * 
+ *
  *         def gm(*args):
  *             return files_for_send(opts, list(map(str, args)))             # <<<<<<<<<<<<<<
- * 
+ *
  *         def am(files, kw):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -23856,10 +23856,10 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":506
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def gm(*args):             # <<<<<<<<<<<<<<
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  */
 
   /* function exit code */
@@ -23879,7 +23879,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":509
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.expanded_local_path: f.remote_path for f in files}
  *             kw = {str(k): str(v) for k, v in kw.items()}
@@ -23978,7 +23978,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_INCREF(__pyx_v_kw);
 
   /* "smelly_tests/file_transmission.py":510
- * 
+ *
  *         def am(files, kw):
  *             m = {f.expanded_local_path: f.remote_path for f in files}             # <<<<<<<<<<<<<<
  *             kw = {str(k): str(v) for k, v in kw.items()}
@@ -24052,7 +24052,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             m = {f.expanded_local_path: f.remote_path for f in files}
  *             kw = {str(k): str(v) for k, v in kw.items()}             # <<<<<<<<<<<<<<
  *             self.ae(m, kw)
- * 
+ *
  */
   { /* enter inner scope */
     __pyx_t_1 = PyDict_New(); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 511, __pyx_L11_error)
@@ -24124,11 +24124,11 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_5);
         __Pyx_INCREF(__pyx_t_7);
@@ -24189,7 +24189,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             m = {f.expanded_local_path: f.remote_path for f in files}
  *             kw = {str(k): str(v) for k, v in kw.items()}
  *             self.ae(m, kw)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def tf(args, expected):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 512, __pyx_L1_error) }
@@ -24244,7 +24244,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":509
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.expanded_local_path: f.remote_path for f in files}
  *             kw = {str(k): str(v) for k, v in kw.items()}
@@ -24275,7 +24275,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":514
  *             self.ae(m, kw)
- * 
+ *
  *         def tf(args, expected):             # <<<<<<<<<<<<<<
  *             files = gm(*args)
  *             self.ae(len(files), len(expected))
@@ -24368,7 +24368,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/file_transmission.py":515
- * 
+ *
  *         def tf(args, expected):
  *             files = gm(*args)             # <<<<<<<<<<<<<<
  *             self.ae(len(files), len(expected))
@@ -24388,7 +24388,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             files = gm(*args)
  *             self.ae(len(files), len(expected))             # <<<<<<<<<<<<<<
  *             am(files, expected)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 516, __pyx_L1_error) }
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 516, __pyx_L1_error)
@@ -24454,7 +24454,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *             files = gm(*args)
  *             self.ae(len(files), len(expected))
  *             am(files, expected)             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts.mode = 'mirror'
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_am)) { __Pyx_RaiseClosureNameError("am"); __PYX_ERR(0, 517, __pyx_L1_error) }
@@ -24464,7 +24464,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":514
  *             self.ae(m, kw)
- * 
+ *
  *         def tf(args, expected):             # <<<<<<<<<<<<<<
  *             files = gm(*args)
  *             self.ae(len(files), len(expected))
@@ -24491,7 +24491,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
 /* "smelly_tests/file_transmission.py":498
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)
- * 
+ *
  *     def test_path_mapping_send(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -24536,7 +24536,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/file_transmission.py":499
- * 
+ *
  *     def test_path_mapping_send(self):
  *         opts = parse_transfer_args([])[0]             # <<<<<<<<<<<<<<
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -24728,7 +24728,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         open(b / 'r', 'w').close()
  *         os.mkdir(b / 'd')             # <<<<<<<<<<<<<<
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_os); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 503, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -24759,7 +24759,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         open(b / 'r', 'w').close()
  *         os.mkdir(b / 'd')
  *         open(b / 'd' / 'r', 'w').close()             # <<<<<<<<<<<<<<
- * 
+ *
  *         def gm(*args):
  */
   __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_b, __pyx_n_s_d); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 504, __pyx_L1_error)
@@ -24800,10 +24800,10 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":506
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def gm(*args):             # <<<<<<<<<<<<<<
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_17file_transmission_20TestFileTransmission_22test_path_mapping_send_1gm, 0, __pyx_n_s_TestFileTransmission_test_path_m_5, ((PyObject*)__pyx_cur_scope), __pyx_n_s_smelly_tests_file_transmission, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -24813,7 +24813,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":509
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.expanded_local_path: f.remote_path for f in files}
  *             kw = {str(k): str(v) for k, v in kw.items()}
@@ -24826,7 +24826,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":514
  *             self.ae(m, kw)
- * 
+ *
  *         def tf(args, expected):             # <<<<<<<<<<<<<<
  *             files = gm(*args)
  *             self.ae(len(files), len(expected))
@@ -24838,7 +24838,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":519
  *             am(files, expected)
- * 
+ *
  *         opts.mode = 'mirror'             # <<<<<<<<<<<<<<
  *         with set_paths(cwd=b, home='/foo/bar'):
  *             tf(['r', 'd'], {b / 'r': b / 'r',
@@ -24846,7 +24846,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_opts, __pyx_n_s_mode, __pyx_n_s_mirror) < 0) __PYX_ERR(0, 519, __pyx_L1_error)
 
   /* "smelly_tests/file_transmission.py":520
- * 
+ *
  *         opts.mode = 'mirror'
  *         with set_paths(cwd=b, home='/foo/bar'):             # <<<<<<<<<<<<<<
  *             tf(['r', 'd'], {b / 'r': b / 'r',
@@ -25004,7 +25004,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
           /* "smelly_tests/file_transmission.py":520
- * 
+ *
  *         opts.mode = 'mirror'
  *         with set_paths(cwd=b, home='/foo/bar'):             # <<<<<<<<<<<<<<
  *             tf(['r', 'd'], {b / 'r': b / 'r',
@@ -25045,7 +25045,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_8);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_3, __pyx_t_8);
-            __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_8 = 0; 
+            __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_8 = 0;
             __PYX_ERR(0, 520, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -25235,7 +25235,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 524, __pyx_L23_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -25499,7 +25499,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 528, __pyx_L37_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -25595,7 +25595,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         with set_paths(cwd=b, home='/foo/bar'):
  *             tf(['r', 'd', '/dest'], {b / 'r': '/dest/r',             # <<<<<<<<<<<<<<
  *                b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
- * 
+ *
  */
           __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 534, __pyx_L49_error)
           __Pyx_GOTREF(__pyx_t_1);
@@ -25619,7 +25619,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         with set_paths(cwd=b, home='/foo/bar'):
  *             tf(['r', 'd', '/dest'], {b / 'r': '/dest/r',
  *                b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})             # <<<<<<<<<<<<<<
- * 
+ *
  *         os.symlink('/foo/b', b / 'e')
  */
           __pyx_t_2 = __Pyx_PyNumber_Divide(__pyx_v_b, __pyx_n_s_d); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 535, __pyx_L49_error)
@@ -25639,7 +25639,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
  *         with set_paths(cwd=b, home='/foo/bar'):
  *             tf(['r', 'd', '/dest'], {b / 'r': '/dest/r',             # <<<<<<<<<<<<<<
  *                b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
- * 
+ *
  */
           __pyx_t_8 = __pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmission_22test_path_mapping_send_4tf(__pyx_v_tf, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 534, __pyx_L49_error)
           __Pyx_GOTREF(__pyx_t_8);
@@ -25689,7 +25689,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_8, __pyx_t_3, __pyx_t_1);
-            __pyx_t_8 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
+            __pyx_t_8 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0;
             __PYX_ERR(0, 533, __pyx_L51_except_error)
           }
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -25733,7 +25733,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":537
  *                b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
- * 
+ *
  *         os.symlink('/foo/b', b / 'e')             # <<<<<<<<<<<<<<
  *         os.symlink('r', b / 's')
  *         os.link(b / 'r', b / 'h')
@@ -25795,7 +25795,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":538
- * 
+ *
  *         os.symlink('/foo/b', b / 'e')
  *         os.symlink('r', b / 's')             # <<<<<<<<<<<<<<
  *         os.link(b / 'r', b / 'h')
@@ -26443,7 +26443,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
             __Pyx_GIVEREF(__pyx_t_3);
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_3, __pyx_t_5);
-            __pyx_t_4 = 0; __pyx_t_3 = 0; __pyx_t_5 = 0; 
+            __pyx_t_4 = 0; __pyx_t_3 = 0; __pyx_t_5 = 0;
             __PYX_ERR(0, 540, __pyx_L65_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -26487,7 +26487,7 @@ static PyObject *__pyx_pf_12smelly_tests_17file_transmission_20TestFileTransmiss
 
   /* "smelly_tests/file_transmission.py":498
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)
- * 
+ *
  *     def test_path_mapping_send(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -28801,14 +28801,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         def f(r):
  *             r.pop('size', None)             # <<<<<<<<<<<<<<
  *             return r
- * 
+ *
  */
   __pyx_tuple__4 = PyTuple_Pack(2, __pyx_n_s_size, Py_None); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
   /* "smelly_tests/file_transmission.py":85
- * 
+ *
  *     def cr(self, a, b):
  *         def f(r):             # <<<<<<<<<<<<<<
  *             r.pop('size', None)
@@ -28824,7 +28824,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:             # <<<<<<<<<<<<<<
  *                 self.ae(b.read(), c.read())
- * 
+ *
  */
   __pyx_tuple__7 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
@@ -28832,7 +28832,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":107
  *         c_path = os.path.join(self.tdir, 'c')
- * 
+ *
  *         def files_equal(a_path, c_path):             # <<<<<<<<<<<<<<
  *             self.ae(os.path.getsize(a_path), os.path.getsize(c_path))
  *             with open(c_path, 'rb') as b, open(c_path, 'rb') as c:
@@ -28844,7 +28844,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":112
  *                 self.ae(b.read(), c.read())
- * 
+ *
  *         def patch(old_path, new_path, output_path, max_delta_len=0):             # <<<<<<<<<<<<<<
  *             sig_loader = LoadSignature()
  *             for chunk in signature_of_file(old_path):
@@ -28881,7 +28881,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":361
  *         fid = 0
- * 
+ *
  *         def send(name, data, **kw):             # <<<<<<<<<<<<<<
  *             nonlocal fid
  *             fid += 1
@@ -28896,7 +28896,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *                 if has_semicolons:
  *                     v = bytes(v).replace(b';;', b';')             # <<<<<<<<<<<<<<
  *                 a.append(decode_utf8_buffer(v))
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(2, __pyx_kp_b__17, __pyx_kp_b__18); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 419, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -28904,7 +28904,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":416
  *             a = []
- * 
+ *
  *             def c(k, v, has_semicolons):             # <<<<<<<<<<<<<<
  *                 a.append(decode_utf8_buffer(k))
  *                 if has_semicolons:
@@ -28915,11 +28915,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_file_transmission_p, __pyx_n_s_c, 416, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 416, __pyx_L1_error)
 
   /* "smelly_tests/file_transmission.py":413
- * 
+ *
  *     def test_parse_ftc(self):
  *         def t(raw, *expected):             # <<<<<<<<<<<<<<
  *             a = []
- * 
+ *
  */
   __pyx_tuple__22 = PyTuple_Pack(5, __pyx_n_s_raw, __pyx_n_s_expected, __pyx_n_s_a, __pyx_n_s_c, __pyx_n_s_c); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 413, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
@@ -28928,7 +28928,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":425
  *             self.ae(tuple(a), expected)
- * 
+ *
  *         t('a=b', 'a', 'b')             # <<<<<<<<<<<<<<
  *         t('a=b;', 'a', 'b')
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
@@ -28938,7 +28938,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__24);
 
   /* "smelly_tests/file_transmission.py":426
- * 
+ *
  *         t('a=b', 'a', 'b')
  *         t('a=b;', 'a', 'b')             # <<<<<<<<<<<<<<
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
@@ -28964,7 +28964,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
  *         t('a1=b1;c=d;;e', 'a1', 'b1', 'c', 'd;e')             # <<<<<<<<<<<<<<
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(5, __pyx_kp_s_a1_b1_c_d_e, __pyx_n_s_a1, __pyx_n_s_b1, __pyx_n_s_c, __pyx_kp_s_d_e); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 428, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
@@ -28974,7 +28974,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         t('a1=b1;c=d;;', 'a1', 'b1', 'c', 'd;')
  *         t('a1=b1;c=d;;e', 'a1', 'b1', 'c', 'd;e')
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_path_mapping_receive(self):
  */
   __pyx_tuple__28 = PyTuple_Pack(7, __pyx_kp_s_a1_b1_c_d_1_1, __pyx_n_s_a1, __pyx_n_s_b1, __pyx_n_s_c, __pyx_kp_s_d_2, __pyx_kp_s_1, __pyx_kp_s_1); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 429, __pyx_L1_error)
@@ -28994,7 +28994,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":439
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.remote_path: f.expanded_local_path for f in files}
  *             kw = {str(k): expand_home(str(v)) for k, v in kw.items()}
@@ -29006,7 +29006,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":444
  *             self.ae(kw, m)
- * 
+ *
  *         def gm(all_specs):             # <<<<<<<<<<<<<<
  *             specs = list((str(i), str(s)) for i, s in enumerate(all_specs))
  *             files = []
@@ -29018,7 +29018,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":453
  *             return files, specs
- * 
+ *
  *         def tf(args, expected, different_home=''):             # <<<<<<<<<<<<<<
  *             if opts.mode == 'mirror':
  *                 all_specs = args
@@ -29033,10 +29033,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":506
  *         open(b / 'd' / 'r', 'w').close()
- * 
+ *
  *         def gm(*args):             # <<<<<<<<<<<<<<
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  */
   __pyx_tuple__37 = PyTuple_Pack(1, __pyx_n_s_args); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 506, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
@@ -29045,7 +29045,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":509
  *             return files_for_send(opts, list(map(str, args)))
- * 
+ *
  *         def am(files, kw):             # <<<<<<<<<<<<<<
  *             m = {f.expanded_local_path: f.remote_path for f in files}
  *             kw = {str(k): str(v) for k, v in kw.items()}
@@ -29057,7 +29057,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":514
  *             self.ae(m, kw)
- * 
+ *
  *         def tf(args, expected):             # <<<<<<<<<<<<<<
  *             files = gm(*args)
  *             self.ae(len(files), len(expected))
@@ -29068,8 +29068,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__42 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__41, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_file_transmission_p, __pyx_n_s_tf, 514, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__42)) __PYX_ERR(0, 514, __pyx_L1_error)
 
   /* "smelly_tests/file_transmission.py":24
- * 
- * 
+ *
+ *
  * def response(             # <<<<<<<<<<<<<<
  *         id='test', msg='', file_id='', name='', action='status', status='',
  *         size=-1):
@@ -29083,8 +29083,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__45);
 
   /* "smelly_tests/file_transmission.py":41
- * 
- * 
+ *
+ *
  * def names_in(path):             # <<<<<<<<<<<<<<
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:
@@ -29095,8 +29095,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_file_transmission_p, __pyx_n_s_names_in, 41, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 41, __pyx_L1_error)
 
   /* "smelly_tests/file_transmission.py":47
- * 
- * 
+ *
+ *
  * def serialized_cmd(**fields) -> str:             # <<<<<<<<<<<<<<
  *     if 'id' not in fields:
  *         fields['id'] = 'test'
@@ -29107,7 +29107,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__48 = (PyObject*)__Pyx_PyCode_New(0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__47, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_file_transmission_p, __pyx_n_s_serialized_cmd, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__48)) __PYX_ERR(0, 47, __pyx_L1_error)
 
   /* "smelly_tests/file_transmission.py":64
- * 
+ *
  * class TestFileTransmission(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -29120,7 +29120,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":70
  *         self.orig_home = os.environ.get('HOME')
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.responses = []
@@ -29132,7 +29132,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":79
  *         super().tearDown()
- * 
+ *
  *     def clean_tdir(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
@@ -29144,7 +29144,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":84
  *         self.responses = []
- * 
+ *
  *     def cr(self, a, b):             # <<<<<<<<<<<<<<
  *         def f(r):
  *             r.pop('size', None)
@@ -29156,7 +29156,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":93
  *         self.ae(a, b)
- * 
+ *
  *     def assertResponses(self, ft, limit=1024, **kw):             # <<<<<<<<<<<<<<
  *         self.responses.append(response(**kw))
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
@@ -29171,7 +29171,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":97
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
- * 
+ *
  *     def assertPathEqual(self, a, b):             # <<<<<<<<<<<<<<
  *         a = os.path.abspath(os.path.realpath(a))
  *         b = os.path.abspath(os.path.realpath(b))
@@ -29183,7 +29183,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":102
  *         self.ae(a, b)
- * 
+ *
  *     def test_rsync_roundtrip(self):             # <<<<<<<<<<<<<<
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')
@@ -29195,7 +29195,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":139
  *         patch(a_path, a_path, c_path, max_delta_len=256)
- * 
+ *
  *     def test_file_get(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -29207,7 +29207,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":236
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  *     def test_file_put(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -29219,7 +29219,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":412
  *         self.assertFalse(ft.active_receives)
- * 
+ *
  *     def test_parse_ftc(self):             # <<<<<<<<<<<<<<
  *         def t(raw, *expected):
  *             a = []
@@ -29231,7 +29231,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":431
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  *     def test_path_mapping_receive(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -29243,7 +29243,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/file_transmission.py":498
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)
- * 
+ *
  *     def test_path_mapping_send(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -29676,8 +29676,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly_tests/file_transmission.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * import shutil
  * import stat
@@ -29688,7 +29688,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":6
- * 
+ *
  * import os
  * import shutil             # <<<<<<<<<<<<<<
  * import stat
@@ -29728,7 +29728,7 @@ if (!__Pyx_RefNanny) {
  * import tempfile
  * import zlib             # <<<<<<<<<<<<<<
  * from pathlib import Path
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_zlib, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -29739,7 +29739,7 @@ if (!__Pyx_RefNanny) {
  * import tempfile
  * import zlib
  * from pathlib import Path             # <<<<<<<<<<<<<<
- * 
+ *
  * from wellies.transfer.librsync import LoadSignature, PatchFile, delta_for_file, signature_of_file
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -29758,7 +29758,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":12
  * from pathlib import Path
- * 
+ *
  * from wellies.transfer.librsync import LoadSignature, PatchFile, delta_for_file, signature_of_file             # <<<<<<<<<<<<<<
  * from wellies.transfer.main import parse_transfer_args
  * from wellies.transfer.receive import File, files_for_receive
@@ -29799,7 +29799,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":13
- * 
+ *
  * from wellies.transfer.librsync import LoadSignature, PatchFile, delta_for_file, signature_of_file
  * from wellies.transfer.main import parse_transfer_args             # <<<<<<<<<<<<<<
  * from wellies.transfer.receive import File, files_for_receive
@@ -29943,7 +29943,7 @@ if (!__Pyx_RefNanny) {
  * from wellies.transfer.utils import cwd_path, expand_home, home_path, set_paths
  * from smelly.file_transmission import Action, Compression, FileTransmissionCommand, FileType, TransmissionType, ZlibDecompressor, iter_file_metadata             # <<<<<<<<<<<<<<
  * from smelly.file_transmission import TestFileTransmission as FileTransmission
- * 
+ *
  */
   __pyx_t_2 = PyList_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -30005,7 +30005,7 @@ if (!__Pyx_RefNanny) {
  * from wellies.transfer.utils import cwd_path, expand_home, home_path, set_paths
  * from smelly.file_transmission import Action, Compression, FileTransmissionCommand, FileType, TransmissionType, ZlibDecompressor, iter_file_metadata
  * from smelly.file_transmission import TestFileTransmission as FileTransmission             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
@@ -30024,10 +30024,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":21
  * from smelly.file_transmission import TestFileTransmission as FileTransmission
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -30044,8 +30044,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":24
- * 
- * 
+ *
+ *
  * def response(             # <<<<<<<<<<<<<<
  *         id='test', msg='', file_id='', name='', action='status', status='',
  *         size=-1):
@@ -30057,8 +30057,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":41
- * 
- * 
+ *
+ *
  * def names_in(path):             # <<<<<<<<<<<<<<
  *     for dirpath, dirnames, filenames in os.walk(path):
  *         for d in dirnames + filenames:
@@ -30069,8 +30069,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/file_transmission.py":47
- * 
- * 
+ *
+ *
  * def serialized_cmd(**fields) -> str:             # <<<<<<<<<<<<<<
  *     if 'id' not in fields:
  *         fields['id'] = 'test'
@@ -30086,8 +30086,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/file_transmission.py":63
- * 
- * 
+ *
+ *
  * class TestFileTransmission(BaseTest):             # <<<<<<<<<<<<<<
  *     def setUp(self):
  *         super().setUp()
@@ -30107,7 +30107,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly_tests/file_transmission.py":64
- * 
+ *
  * class TestFileTransmission(BaseTest):
  *     def setUp(self):             # <<<<<<<<<<<<<<
  *         super().setUp()
@@ -30123,7 +30123,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":70
  *         self.orig_home = os.environ.get('HOME')
- * 
+ *
  *     def tearDown(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.responses = []
@@ -30138,7 +30138,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":79
  *         super().tearDown()
- * 
+ *
  *     def clean_tdir(self):             # <<<<<<<<<<<<<<
  *         shutil.rmtree(self.tdir)
  *         self.tdir = os.path.realpath(tempfile.mkdtemp())
@@ -30150,7 +30150,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":84
  *         self.responses = []
- * 
+ *
  *     def cr(self, a, b):             # <<<<<<<<<<<<<<
  *         def f(r):
  *             r.pop('size', None)
@@ -30162,7 +30162,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":93
  *         self.ae(a, b)
- * 
+ *
  *     def assertResponses(self, ft, limit=1024, **kw):             # <<<<<<<<<<<<<<
  *         self.responses.append(response(**kw))
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
@@ -30175,7 +30175,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":97
  *         self.cr(ft.test_responses[:limit], self.responses[:limit])
- * 
+ *
  *     def assertPathEqual(self, a, b):             # <<<<<<<<<<<<<<
  *         a = os.path.abspath(os.path.realpath(a))
  *         b = os.path.abspath(os.path.realpath(b))
@@ -30187,7 +30187,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":102
  *         self.ae(a, b)
- * 
+ *
  *     def test_rsync_roundtrip(self):             # <<<<<<<<<<<<<<
  *         a_path = os.path.join(self.tdir, 'a')
  *         b_path = os.path.join(self.tdir, 'b')
@@ -30199,7 +30199,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":139
  *         patch(a_path, a_path, c_path, max_delta_len=256)
- * 
+ *
  *     def test_file_get(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -30211,7 +30211,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":236
  *             self.ae(received.decode('utf-8'), src)
- * 
+ *
  *     def test_file_put(self):             # <<<<<<<<<<<<<<
  *         # send refusal
  *         for quiet in (0, 1, 2):
@@ -30223,7 +30223,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":412
  *         self.assertFalse(ft.active_receives)
- * 
+ *
  *     def test_parse_ftc(self):             # <<<<<<<<<<<<<<
  *         def t(raw, *expected):
  *             a = []
@@ -30235,7 +30235,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":431
  *         t('a1=b1;c=d;;;1=1', 'a1', 'b1', 'c', 'd;', '1', '1')
- * 
+ *
  *     def test_path_mapping_receive(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -30247,7 +30247,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/file_transmission.py":498
  *             self.assertEqual(files[3].remote_target, files[2].remote_id)
- * 
+ *
  *     def test_path_mapping_send(self):             # <<<<<<<<<<<<<<
  *         opts = parse_transfer_args([])[0]
  *         b = Path(os.path.join(self.tdir, 'b'))
@@ -30258,8 +30258,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/file_transmission.py":63
- * 
- * 
+ *
+ *
  * class TestFileTransmission(BaseTest):             # <<<<<<<<<<<<<<
  *     def setUp(self):
  *         super().setUp()
@@ -30277,7 +30277,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/file_transmission.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -32635,8 +32635,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

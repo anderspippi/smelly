@@ -971,7 +971,7 @@ struct __pyx_obj_6smelly_2rc_15set_window_logo___pyx_scope_struct_1_file_pipe;
 
 /* "smelly/rc/set_window_logo.py":79
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -984,7 +984,7 @@ struct __pyx_obj_6smelly_2rc_15set_window_logo___pyx_scope_struct__message_to_sm
 
 /* "smelly/rc/set_window_logo.py":95
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -1863,7 +1863,7 @@ static PyObject *__pyx_codeobj__10;
 
 /* "smelly/rc/set_window_logo.py":79
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -1959,7 +1959,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
 
 /* "smelly/rc/set_window_logo.py":95
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -2058,7 +2058,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 95, __pyx_L1_error)
 
   /* "smelly/rc/set_window_logo.py":96
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -2268,7 +2268,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
           __pyx_L15_break:;
 
           /* "smelly/rc/set_window_logo.py":96
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -2306,7 +2306,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_1, __pyx_t_2);
-            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+            __pyx_t_4 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 96, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2353,7 +2353,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
  *                     yield ret
  *             ret['data'] = ''             # <<<<<<<<<<<<<<
  *             yield ret
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret)) { __Pyx_RaiseClosureNameError("ret"); __PYX_ERR(0, 103, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret == Py_None)) {
@@ -2366,7 +2366,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
  *                     yield ret
  *             ret['data'] = ''
  *             yield ret             # <<<<<<<<<<<<<<
- * 
+ *
  *         return file_pipe(path)
  */
   if (unlikely(!__pyx_cur_scope->__pyx_outer_scope->__pyx_v_ret)) { __Pyx_RaiseClosureNameError("ret"); __PYX_ERR(0, 104, __pyx_L1_error) }
@@ -2384,7 +2384,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
 
   /* "smelly/rc/set_window_logo.py":95
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -2412,7 +2412,7 @@ static PyObject *__pyx_gb_6smelly_2rc_15set_window_logo_13SetWindowLogo_17messag
 
 /* "smelly/rc/set_window_logo.py":79
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2445,7 +2445,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
   }
 
   /* "smelly/rc/set_window_logo.py":80
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) != 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2482,7 +2482,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/set_window_logo.py":80
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         if len(args) != 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2642,7 +2642,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
  *             return ret
  *         if imghdr.what(path) != 'png':             # <<<<<<<<<<<<<<
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_imghdr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -2672,7 +2672,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
  *             return ret
  *         if imghdr.what(path) != 'png':
  *             self.fatal(f'{path} is not a PNG image')             # <<<<<<<<<<<<<<
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fatal); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 93, __pyx_L1_error)
@@ -2705,13 +2705,13 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
  *             return ret
  *         if imghdr.what(path) != 'png':             # <<<<<<<<<<<<<<
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_window_logo.py":95
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -2732,9 +2732,9 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
 
   /* "smelly/rc/set_window_logo.py":106
  *             yield ret
- * 
+ *
  *         return file_pipe(path)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -2747,7 +2747,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
 
   /* "smelly/rc/set_window_logo.py":79
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -2773,7 +2773,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_message_
 
 /* "smelly/rc/set_window_logo.py":108
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         alpha = float(payload_get('alpha', '-1'))
@@ -2899,7 +2899,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/set_window_logo.py":109
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         data = payload_get('data')             # <<<<<<<<<<<<<<
  *         alpha = float(payload_get('alpha', '-1'))
@@ -3157,7 +3157,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
  *                 return q
  *             path = q.name             # <<<<<<<<<<<<<<
  *             tfile = q
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_q, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -3168,7 +3168,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
  *                 return q
  *             path = q.name
  *             tfile = q             # <<<<<<<<<<<<<<
- * 
+ *
  *         with tfile:
  */
     __Pyx_INCREF(__pyx_v_q);
@@ -3178,7 +3178,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
 
   /* "smelly/rc/set_window_logo.py":122
  *             tfile = q
- * 
+ *
  *         with tfile:             # <<<<<<<<<<<<<<
  *             for window in self.windows_for_match_payload(boss, window, payload_get):
  *                 if window:
@@ -3215,7 +3215,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
         /*try:*/ {
 
           /* "smelly/rc/set_window_logo.py":123
- * 
+ *
  *         with tfile:
  *             for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *                 if window:
@@ -3329,7 +3329,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
  *                 if window:
  *                     window.set_logo(path, position, alpha)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
               __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_set_logo); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L11_error)
               __Pyx_GOTREF(__pyx_t_3);
@@ -3397,7 +3397,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
             }
 
             /* "smelly/rc/set_window_logo.py":123
- * 
+ *
  *         with tfile:
  *             for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *                 if window:
@@ -3408,7 +3408,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
 
           /* "smelly/rc/set_window_logo.py":122
  *             tfile = q
- * 
+ *
  *         with tfile:             # <<<<<<<<<<<<<<
  *             for window in self.windows_for_match_payload(boss, window, payload_get):
  *                 if window:
@@ -3447,7 +3447,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
             __Pyx_GIVEREF(__pyx_t_1);
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_3);
-            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
+            __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0;
             __PYX_ERR(0, 122, __pyx_L13_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -3493,8 +3493,8 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
  *                 if window:
  *                     window.set_logo(path, position, alpha)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -3502,7 +3502,7 @@ static PyObject *__pyx_pf_6smelly_2rc_15set_window_logo_13SetWindowLogo_2respons
 
   /* "smelly/rc/set_window_logo.py":108
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         alpha = float(payload_get('alpha', '-1'))
@@ -3949,7 +3949,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "smelly/rc/set_window_logo.py":96
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:
  *             with open(path, 'rb') as f:             # <<<<<<<<<<<<<<
  *                 while True:
@@ -3961,7 +3961,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_window_logo.py":95
  *             self.fatal(f'{path} is not a PNG image')
- * 
+ *
  *         def file_pipe(path: str) -> CmdGenerator:             # <<<<<<<<<<<<<<
  *             with open(path, 'rb') as f:
  *                 while True:
@@ -3984,7 +3984,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_window_logo.py":79
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -3996,7 +3996,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_window_logo.py":108
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         alpha = float(payload_get('alpha', '-1'))
@@ -4315,8 +4315,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/set_window_logo.py":5
- * 
- * 
+ *
+ *
  * import imghdr             # <<<<<<<<<<<<<<
  * import os
  * from base64 import standard_b64decode, standard_b64encode
@@ -4327,7 +4327,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_window_logo.py":6
- * 
+ *
  * import imghdr
  * import os             # <<<<<<<<<<<<<<
  * from base64 import standard_b64decode, standard_b64encode
@@ -4343,7 +4343,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * from base64 import standard_b64decode, standard_b64encode             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4370,7 +4370,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * from base64 import standard_b64decode, standard_b64encode
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.types import AsyncResponse
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -4396,9 +4396,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_logo.py":10
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from smelly.types import AsyncResponse             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import (
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -4416,7 +4416,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/set_window_logo.py":13
- * 
+ *
  * from .base import (
  *     MATCH_WINDOW_OPTION,             # <<<<<<<<<<<<<<
  *     ArgsType,
@@ -4463,7 +4463,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_logo.py":12
  * from smelly.types import AsyncResponse
- * 
+ *
  * from .base import (             # <<<<<<<<<<<<<<
  *     MATCH_WINDOW_OPTION,
  *     ArgsType,
@@ -4523,10 +4523,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_logo.py":27
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetWindowLogoRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4535,11 +4535,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_window_logo.py":28
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetWindowLogoRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4557,16 +4557,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_window_logo.py":27
  * )
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetWindowLogoRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_window_logo.py":31
- * 
- * 
+ *
+ *
  * class SetWindowLogo(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     data+/str: Chunk of PNG data, base64 encoded no more than 2048 bytes. Must send an empty chunk to indicate end of image. \
@@ -4584,7 +4584,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/set_window_logo.py":32
- * 
+ *
  * class SetWindowLogo(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     data+/str: Chunk of PNG data, base64 encoded no more than 2048 bytes. Must send an empty chunk to indicate end of image. \
@@ -4595,7 +4595,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_logo.py":41
  *     '''
- * 
+ *
  *     short_desc = 'Set the window logo'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Set the logo image for the specified windows. You must specify the path to a PNG image that'
@@ -4612,7 +4612,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_desc, __pyx_kp_s_Set_the_logo_image_for_the_speci) < 0) __PYX_ERR(0, 42, __pyx_L1_error)
 
   /* "smelly/rc/set_window_logo.py":49
- * 
+ *
  *     options_spec = (
  *         MATCH_WINDOW_OPTION             # <<<<<<<<<<<<<<
  *         + '''\n
@@ -4683,14 +4683,14 @@ if (!__Pyx_RefNanny) {
  *         spec='PATH_TO_PNG_IMAGE', count=1, json_field='data', special_parse='!read_window_logo(io_data, args[0])', completion=ImageCompletion
  *     )
  *     reads_streaming_data = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_reads_streaming_data, Py_True) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
 
   /* "smelly/rc/set_window_logo.py":79
  *     reads_streaming_data = True
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) != 1:
  *             self.fatal('Must specify path to exactly one PNG image')
@@ -4719,7 +4719,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_logo.py":108
  *         return file_pipe(path)
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = payload_get('data')
  *         alpha = float(payload_get('alpha', '-1'))
@@ -4756,8 +4756,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/set_window_logo.py":31
- * 
- * 
+ *
+ *
  * class SetWindowLogo(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     data+/str: Chunk of PNG data, base64 encoded no more than 2048 bytes. Must send an empty chunk to indicate end of image. \
@@ -4771,8 +4771,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_window_logo.py":129
- * 
- * 
+ *
+ *
  * set_window_logo = SetWindowLogo()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SetWindowLogo); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
@@ -4786,7 +4786,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_window_logo.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

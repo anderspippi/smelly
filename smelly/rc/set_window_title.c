@@ -1554,7 +1554,7 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/set_window_title.py":38
  *     args = RemoteCommand.Args(json_field='title', spec='[TITLE ...]', special_parse='expand_ansi_c_escapes_in_args(args...)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'match': opts.match, 'temporary': opts.temporary}
  *         title = ' '.join(args)
@@ -1661,7 +1661,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_messag
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/set_window_title.py":39
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         ans = {'match': opts.match, 'temporary': opts.temporary}             # <<<<<<<<<<<<<<
  *         title = ' '.join(args)
@@ -1725,7 +1725,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_messag
  *         # defaults to set the window title this command is run in
  *         ans['self'] = True             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
   if (unlikely(PyDict_SetItem(__pyx_v_ans, __pyx_n_s_self, Py_True) < 0)) __PYX_ERR(0, 44, __pyx_L1_error)
 
@@ -1733,7 +1733,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_messag
  *         # defaults to set the window title this command is run in
  *         ans['self'] = True
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1743,7 +1743,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_messag
 
   /* "smelly/rc/set_window_title.py":38
  *     args = RemoteCommand.Args(json_field='title', spec='[TITLE ...]', special_parse='expand_ansi_c_escapes_in_args(args...)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'match': opts.match, 'temporary': opts.temporary}
  *         title = ' '.join(args)
@@ -1765,7 +1765,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_messag
 
 /* "smelly/rc/set_window_title.py":47
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -1878,7 +1878,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_2respo
   __Pyx_INCREF(__pyx_v_window);
 
   /* "smelly/rc/set_window_title.py":48
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -2081,7 +2081,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_2respo
  *                 else:
  *                     window.set_title(payload_get('title'))             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       /*else*/ {
         __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_window, __pyx_n_s_set_title); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -2132,7 +2132,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_2respo
     }
 
     /* "smelly/rc/set_window_title.py":48
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for window in self.windows_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if window:
@@ -2145,8 +2145,8 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_2respo
  *                 else:
  *                     window.set_title(payload_get('title'))
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2154,7 +2154,7 @@ static PyObject *__pyx_pf_6smelly_2rc_16set_window_title_14SetWindowTitle_2respo
 
   /* "smelly/rc/set_window_title.py":47
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2302,7 +2302,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_window_title.py":38
  *     args = RemoteCommand.Args(json_field='title', spec='[TITLE ...]', special_parse='expand_ansi_c_escapes_in_args(args...)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'match': opts.match, 'temporary': opts.temporary}
  *         title = ' '.join(args)
@@ -2314,7 +2314,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/set_window_title.py":47
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2610,9 +2610,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_title.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -2638,9 +2638,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_title.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -2715,10 +2715,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_title.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetWindowTitleRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2727,11 +2727,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/set_window_title.py":9
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import SetWindowTitleRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2749,16 +2749,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/set_window_title.py":8
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import SetWindowTitleRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/set_window_title.py":12
- * 
- * 
+ *
+ *
  * class SetWindowTitle(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     title/str: The new title
@@ -2776,7 +2776,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/set_window_title.py":13
- * 
+ *
  * class SetWindowTitle(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     title/str: The new title
@@ -2787,7 +2787,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_title.py":19
  *     '''
- * 
+ *
  *     short_desc = 'Set the window title'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Set the title for the specified windows. If you use the :option:`smelly @ set-window-title --match` option'
@@ -2833,7 +2833,7 @@ if (!__Pyx_RefNanny) {
  *         + MATCH_WINDOW_OPTION
  *     )
  *     args = RemoteCommand.Args(json_field='title', spec='[TITLE ...]', special_parse='expand_ansi_c_escapes_in_args(args...)')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 36, __pyx_L1_error)
@@ -2855,7 +2855,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_title.py":38
  *     args = RemoteCommand.Args(json_field='title', spec='[TITLE ...]', special_parse='expand_ansi_c_escapes_in_args(args...)')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         ans = {'match': opts.match, 'temporary': opts.temporary}
  *         title = ' '.join(args)
@@ -2884,7 +2884,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/set_window_title.py":47
  *         return ans
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for window in self.windows_for_match_payload(boss, window, payload_get):
  *             if window:
@@ -2921,8 +2921,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/set_window_title.py":12
- * 
- * 
+ *
+ *
  * class SetWindowTitle(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     title/str: The new title
@@ -2936,8 +2936,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/set_window_title.py":58
- * 
- * 
+ *
+ *
  * set_window_title = SetWindowTitle()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_SetWindowTitle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
@@ -2951,7 +2951,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/set_window_title.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

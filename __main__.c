@@ -1618,11 +1618,11 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "__main__.py":5
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     from smelly.entry_points import main
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -1631,10 +1631,10 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_2) {
 
     /* "__main__.py":6
- * 
+ *
  * if __name__ == '__main__':
  *     from smelly.entry_points import main             # <<<<<<<<<<<<<<
- * 
+ *
  *     main()
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
@@ -1653,7 +1653,7 @@ if (!__Pyx_RefNanny) {
 
     /* "__main__.py":8
  *     from smelly.entry_points import main
- * 
+ *
  *     main()             # <<<<<<<<<<<<<<
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_main_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -1664,18 +1664,18 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "__main__.py":5
- * 
- * 
+ *
+ *
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  *     from smelly.entry_points import main
- * 
+ *
  */
   }
 
   /* "__main__.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2015, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

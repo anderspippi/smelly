@@ -3031,7 +3031,7 @@ static PyObject *__pyx_codeobj__659;
 /* Late includes */
 
 /* "welly/tui/spinners.py":699
- * 
+ *
  * class Spinner:
  *     def __init__(self, name: str = 'dots'):             # <<<<<<<<<<<<<<
  *         definition = spinners[name]
@@ -3170,7 +3170,7 @@ static PyObject *__pyx_pf_5welly_3tui_8spinners_7Spinner___init__(CYTHON_UNUSED 
  *         self.frames = definition['frames']
  *         self.current_frame = -1             # <<<<<<<<<<<<<<
  *         self.last_change_at = -self.interval
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_current_frame, __pyx_int_neg_1) < 0) __PYX_ERR(0, 703, __pyx_L1_error)
 
@@ -3178,7 +3178,7 @@ static PyObject *__pyx_pf_5welly_3tui_8spinners_7Spinner___init__(CYTHON_UNUSED 
  *         self.frames = definition['frames']
  *         self.current_frame = -1
  *         self.last_change_at = -self.interval             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self) -> str:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_interval); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 704, __pyx_L1_error)
@@ -3190,7 +3190,7 @@ static PyObject *__pyx_pf_5welly_3tui_8spinners_7Spinner___init__(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/tui/spinners.py":699
- * 
+ *
  * class Spinner:
  *     def __init__(self, name: str = 'dots'):             # <<<<<<<<<<<<<<
  *         definition = spinners[name]
@@ -3214,7 +3214,7 @@ static PyObject *__pyx_pf_5welly_3tui_8spinners_7Spinner___init__(CYTHON_UNUSED 
 
 /* "welly/tui/spinners.py":706
  *         self.last_change_at = -self.interval
- * 
+ *
  *     def __call__(self) -> str:             # <<<<<<<<<<<<<<
  *         now = monotonic()
  *         if now - self.last_change_at >= self.interval:
@@ -3249,7 +3249,7 @@ static PyObject *__pyx_pf_5welly_3tui_8spinners_7Spinner_2__call__(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "welly/tui/spinners.py":707
- * 
+ *
  *     def __call__(self) -> str:
  *         now = monotonic()             # <<<<<<<<<<<<<<
  *         if now - self.last_change_at >= self.interval:
@@ -3359,7 +3359,7 @@ static PyObject *__pyx_pf_5welly_3tui_8spinners_7Spinner_2__call__(CYTHON_UNUSED
 
   /* "welly/tui/spinners.py":706
  *         self.last_change_at = -self.interval
- * 
+ *
  *     def __call__(self) -> str:             # <<<<<<<<<<<<<<
  *         now = monotonic()
  *         if now - self.last_change_at >= self.interval:
@@ -4239,7 +4239,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/tui/spinners.py":699
- * 
+ *
  * class Spinner:
  *     def __init__(self, name: str = 'dots'):             # <<<<<<<<<<<<<<
  *         definition = spinners[name]
@@ -4255,7 +4255,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/spinners.py":706
  *         self.last_change_at = -self.interval
- * 
+ *
  *     def __call__(self) -> str:             # <<<<<<<<<<<<<<
  *         now = monotonic()
  *         if now - self.last_change_at >= self.interval:
@@ -4566,10 +4566,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/spinners.py":4
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from time import monotonic             # <<<<<<<<<<<<<<
  * from typing import Dict, Sequence
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4586,10 +4586,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/tui/spinners.py":5
- * 
+ *
  * from time import monotonic
  * from typing import Dict, Sequence             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.typing import TypedDict
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -4615,10 +4615,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/spinners.py":7
  * from typing import Dict, Sequence
- * 
+ *
  * from smelly.typing import TypedDict             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4635,8 +4635,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/tui/spinners.py":10
- * 
- * 
+ *
+ *
  * class SpinnerDef(TypedDict):             # <<<<<<<<<<<<<<
  *     interval: int
  *     frames: Sequence[str]
@@ -4657,8 +4657,8 @@ if (!__Pyx_RefNanny) {
  * class SpinnerDef(TypedDict):
  *     interval: int
  *     frames: Sequence[str]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_SpinnerDef, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -9141,7 +9141,7 @@ if (!__Pyx_RefNanny) {
  *     "timeTravel": {"interval": 100, "frames": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]},
  *     "aesthetic": {"interval": 80, "frames": ["", "", "", "", "", "", "", ""]},             # <<<<<<<<<<<<<<
  * }  # }}}
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 694, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9180,8 +9180,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/spinners.py":698
- * 
- * 
+ *
+ *
  * class Spinner:             # <<<<<<<<<<<<<<
  *     def __init__(self, name: str = 'dots'):
  *         definition = spinners[name]
@@ -9190,7 +9190,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "welly/tui/spinners.py":699
- * 
+ *
  * class Spinner:
  *     def __init__(self, name: str = 'dots'):             # <<<<<<<<<<<<<<
  *         definition = spinners[name]
@@ -9209,7 +9209,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/spinners.py":706
  *         self.last_change_at = -self.interval
- * 
+ *
  *     def __call__(self) -> str:             # <<<<<<<<<<<<<<
  *         now = monotonic()
  *         if now - self.last_change_at >= self.interval:
@@ -9225,8 +9225,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/tui/spinners.py":698
- * 
- * 
+ *
+ *
  * class Spinner:             # <<<<<<<<<<<<<<
  *     def __init__(self, name: str = 'dots'):
  *         definition = spinners[name]
@@ -9240,7 +9240,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/tui/spinners.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2021, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9933,8 +9933,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

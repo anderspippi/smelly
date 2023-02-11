@@ -969,7 +969,7 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_6smelly_6config___pyx_scope_struct__cached_values_for;
 
 /* "smelly/config.py":57
- * 
+ *
  * @contextmanager
  * def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:             # <<<<<<<<<<<<<<
  *     cached_path = os.path.join(cache_dir(), f'{name}.json')
@@ -2097,11 +2097,11 @@ static PyObject *__pyx_codeobj__27;
 /* Late includes */
 
 /* "smelly/config.py":19
- * 
- * 
+ *
+ *
  * def option_names_for_completion() -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *     return option_names
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2128,11 +2128,11 @@ static PyObject *__pyx_pf_6smelly_6config_option_names_for_completion(CYTHON_UNU
   __Pyx_RefNannySetupContext("option_names_for_completion", 0);
 
   /* "smelly/config.py":20
- * 
+ *
  * def option_names_for_completion() -> Tuple[str, ...]:
  *     return option_names             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_option_names); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
@@ -2142,11 +2142,11 @@ static PyObject *__pyx_pf_6smelly_6config_option_names_for_completion(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/config.py":19
- * 
- * 
+ *
+ *
  * def option_names_for_completion() -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *     return option_names
- * 
+ *
  */
 
   /* function exit code */
@@ -2161,8 +2161,8 @@ static PyObject *__pyx_pf_6smelly_6config_option_names_for_completion(CYTHON_UNU
 }
 
 /* "smelly/config.py":23
- * 
- * 
+ *
+ *
  * def build_ansi_color_table(opts: Optional[Options] = None) -> int:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -2249,7 +2249,7 @@ static PyObject *__pyx_pf_6smelly_6config_2build_ansi_color_table(CYTHON_UNUSED 
   __Pyx_INCREF(__pyx_v_opts);
 
   /* "smelly/config.py":24
- * 
+ *
  * def build_ansi_color_table(opts: Optional[Options] = None) -> int:
  *     if opts is None:             # <<<<<<<<<<<<<<
  *         opts = defaults
@@ -2272,7 +2272,7 @@ static PyObject *__pyx_pf_6smelly_6config_2build_ansi_color_table(CYTHON_UNUSED 
     __pyx_t_3 = 0;
 
     /* "smelly/config.py":24
- * 
+ *
  * def build_ansi_color_table(opts: Optional[Options] = None) -> int:
  *     if opts is None:             # <<<<<<<<<<<<<<
  *         opts = defaults
@@ -2317,11 +2317,11 @@ static PyObject *__pyx_pf_6smelly_6config_2build_ansi_color_table(CYTHON_UNUSED 
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_t_4);
@@ -2390,7 +2390,7 @@ static PyObject *__pyx_pf_6smelly_6config_2build_ansi_color_table(CYTHON_UNUSED 
  *         raise TypeError(
  *             f'The color table has incorrect size length: {length} typecode: {opts.color_table.typecode}')             # <<<<<<<<<<<<<<
  *     return addr
- * 
+ *
  */
     __pyx_t_4 = PyTuple_New(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -2455,8 +2455,8 @@ static PyObject *__pyx_pf_6smelly_6config_2build_ansi_color_table(CYTHON_UNUSED 
  *         raise TypeError(
  *             f'The color table has incorrect size length: {length} typecode: {opts.color_table.typecode}')
  *     return addr             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_addr);
@@ -2464,8 +2464,8 @@ static PyObject *__pyx_pf_6smelly_6config_2build_ansi_color_table(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly/config.py":23
- * 
- * 
+ *
+ *
  * def build_ansi_color_table(opts: Optional[Options] = None) -> int:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -2489,8 +2489,8 @@ static PyObject *__pyx_pf_6smelly_6config_2build_ansi_color_table(CYTHON_UNUSED 
 }
 
 /* "smelly/config.py":33
- * 
- * 
+ *
+ *
  * def atomic_save(data: bytes, path: str) -> None:             # <<<<<<<<<<<<<<
  *     import shutil
  *     import tempfile
@@ -2608,11 +2608,11 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
   __Pyx_INCREF(__pyx_v_path);
 
   /* "smelly/config.py":34
- * 
+ *
  * def atomic_save(data: bytes, path: str) -> None:
  *     import shutil             # <<<<<<<<<<<<<<
  *     import tempfile
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_shutil, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2623,7 +2623,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
  * def atomic_save(data: bytes, path: str) -> None:
  *     import shutil
  *     import tempfile             # <<<<<<<<<<<<<<
- * 
+ *
  *     path = os.path.realpath(path)
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
@@ -2633,7 +2633,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
 
   /* "smelly/config.py":37
  *     import tempfile
- * 
+ *
  *     path = os.path.realpath(path)             # <<<<<<<<<<<<<<
  *     fd, p = tempfile.mkstemp(dir=os.path.dirname(path), suffix='.tmp')
  *     try:
@@ -2666,7 +2666,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
   __pyx_t_1 = 0;
 
   /* "smelly/config.py":38
- * 
+ *
  *     path = os.path.realpath(path)
  *     fd, p = tempfile.mkstemp(dir=os.path.dirname(path), suffix='.tmp')             # <<<<<<<<<<<<<<
  *     try:
@@ -2716,11 +2716,11 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_1);
@@ -2924,7 +2924,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
               __Pyx_GIVEREF(__pyx_t_3);
               __Pyx_XGIVEREF(__pyx_t_2);
               __Pyx_ErrRestoreWithState(__pyx_t_4, __pyx_t_3, __pyx_t_2);
-              __pyx_t_4 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+              __pyx_t_4 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
               __PYX_ERR(0, 40, __pyx_L14_except_error)
             }
             __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3121,7 +3121,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
               __Pyx_GIVEREF(__pyx_t_3);
               __Pyx_XGIVEREF(__pyx_t_1);
               __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_3, __pyx_t_1);
-              __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
+              __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0;
               __PYX_ERR(0, 42, __pyx_L28_except_error)
             }
             __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -3359,7 +3359,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
  *         except Exception as err:
  *             log_error(             # <<<<<<<<<<<<<<
  *                 f'Failed to delete temp file {p} for atomic save with error: {err}')
- * 
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_log_error); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L38_except_error)
           __Pyx_GOTREF(__pyx_t_5);
@@ -3368,8 +3368,8 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
  *         except Exception as err:
  *             log_error(
  *                 f'Failed to delete temp file {p} for atomic save with error: {err}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __pyx_t_15 = PyTuple_New(4); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 53, __pyx_L38_except_error)
           __Pyx_GOTREF(__pyx_t_15);
@@ -3566,7 +3566,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
  *         except Exception as err:
  *             log_error(             # <<<<<<<<<<<<<<
  *                 f'Failed to delete temp file {p} for atomic save with error: {err}')
- * 
+ *
  */
             __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_log_error); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L48_except_error)
             __Pyx_GOTREF(__pyx_t_5);
@@ -3575,8 +3575,8 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
  *         except Exception as err:
  *             log_error(
  *                 f'Failed to delete temp file {p} for atomic save with error: {err}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
             __pyx_t_18 = PyTuple_New(4); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 53, __pyx_L48_except_error)
             __Pyx_GOTREF(__pyx_t_18);
@@ -3682,8 +3682,8 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
   }
 
   /* "smelly/config.py":33
- * 
- * 
+ *
+ *
  * def atomic_save(data: bytes, path: str) -> None:             # <<<<<<<<<<<<<<
  *     import shutil
  *     import tempfile
@@ -3717,7 +3717,7 @@ static PyObject *__pyx_pf_6smelly_6config_4atomic_save(CYTHON_UNUSED PyObject *_
 static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly/config.py":57
- * 
+ *
  * @contextmanager
  * def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:             # <<<<<<<<<<<<<<
  *     cached_path = os.path.join(cache_dir(), f'{name}.json')
@@ -4099,7 +4099,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
                 __Pyx_GIVEREF(__pyx_t_7);
                 __Pyx_XGIVEREF(__pyx_t_2);
                 __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_7, __pyx_t_2);
-                __pyx_t_1 = 0; __pyx_t_7 = 0; __pyx_t_2 = 0; 
+                __pyx_t_1 = 0; __pyx_t_7 = 0; __pyx_t_2 = 0;
                 __PYX_ERR(0, 61, __pyx_L16_except_error)
               }
               __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4185,7 +4185,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
  *         pass
  *     except Exception as err:             # <<<<<<<<<<<<<<
  *         log_error(f'Failed to load cached in {name} values with error: {err}')
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_6) {
@@ -4202,7 +4202,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
  *         pass
  *     except Exception as err:
  *         log_error(f'Failed to load cached in {name} values with error: {err}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     yield cached_values
  */
       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_log_error); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 66, __pyx_L6_except_error)
@@ -4283,9 +4283,9 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
 
   /* "smelly/config.py":68
  *         log_error(f'Failed to load cached in {name} values with error: {err}')
- * 
+ *
  *     yield cached_values             # <<<<<<<<<<<<<<
- * 
+ *
  *     try:
  */
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_cached_values);
@@ -4301,7 +4301,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
 
   /* "smelly/config.py":70
  *     yield cached_values
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         data = json.dumps(cached_values).encode('utf-8')
  *         atomic_save(data, cached_path)
@@ -4314,7 +4314,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
     /*try:*/ {
 
       /* "smelly/config.py":71
- * 
+ *
  *     try:
  *         data = json.dumps(cached_values).encode('utf-8')             # <<<<<<<<<<<<<<
  *         atomic_save(data, cached_path)
@@ -4420,7 +4420,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
 
       /* "smelly/config.py":70
  *     yield cached_values
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         data = json.dumps(cached_values).encode('utf-8')
  *         atomic_save(data, cached_path)
@@ -4444,7 +4444,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
  *         atomic_save(data, cached_path)
  *     except Exception as err:             # <<<<<<<<<<<<<<
  *         log_error(f'Failed to save cached values with error: {err}')
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_6) {
@@ -4462,8 +4462,8 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
  *         atomic_save(data, cached_path)
  *     except Exception as err:
  *         log_error(f'Failed to save cached values with error: {err}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_log_error); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 74, __pyx_L29_except_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -4499,7 +4499,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
 
     /* "smelly/config.py":70
  *     yield cached_values
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         data = json.dumps(cached_values).encode('utf-8')
  *         atomic_save(data, cached_path)
@@ -4519,7 +4519,7 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/config.py":57
- * 
+ *
  * @contextmanager
  * def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:             # <<<<<<<<<<<<<<
  *     cached_path = os.path.join(cache_dir(), f'{name}.json')
@@ -4550,11 +4550,11 @@ static PyObject *__pyx_gb_6smelly_6config_8generator(__pyx_CoroutineObject *__py
 }
 
 /* "smelly/config.py":77
- * 
- * 
+ *
+ *
  * def commented_out_default_config() -> str:             # <<<<<<<<<<<<<<
  *     from .options.definition import definition
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4584,10 +4584,10 @@ static PyObject *__pyx_pf_6smelly_6config_9commented_out_default_config(CYTHON_U
   __Pyx_RefNannySetupContext("commented_out_default_config", 0);
 
   /* "smelly/config.py":78
- * 
+ *
  * def commented_out_default_config() -> str:
  *     from .options.definition import definition             # <<<<<<<<<<<<<<
- * 
+ *
  *     return '\n'.join(definition.as_conf(commented=True))
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -4607,10 +4607,10 @@ static PyObject *__pyx_pf_6smelly_6config_9commented_out_default_config(CYTHON_U
 
   /* "smelly/config.py":80
  *     from .options.definition import definition
- * 
+ *
  *     return '\n'.join(definition.as_conf(commented=True))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_definition, __pyx_n_s_as_conf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
@@ -4631,11 +4631,11 @@ static PyObject *__pyx_pf_6smelly_6config_9commented_out_default_config(CYTHON_U
   goto __pyx_L0;
 
   /* "smelly/config.py":77
- * 
- * 
+ *
+ *
  * def commented_out_default_config() -> str:             # <<<<<<<<<<<<<<
  *     from .options.definition import definition
- * 
+ *
  */
 
   /* function exit code */
@@ -4653,8 +4653,8 @@ static PyObject *__pyx_pf_6smelly_6config_9commented_out_default_config(CYTHON_U
 }
 
 /* "smelly/config.py":83
- * 
- * 
+ *
+ *
  * def prepare_config_file_for_editing() -> str:             # <<<<<<<<<<<<<<
  *     if not os.path.exists(defconf):
  *         d = os.path.dirname(defconf)
@@ -4697,7 +4697,7 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
   __Pyx_RefNannySetupContext("prepare_config_file_for_editing", 0);
 
   /* "smelly/config.py":84
- * 
+ *
  * def prepare_config_file_for_editing() -> str:
  *     if not os.path.exists(defconf):             # <<<<<<<<<<<<<<
  *         d = os.path.dirname(defconf)
@@ -4897,7 +4897,7 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
               __Pyx_GIVEREF(__pyx_t_3);
               __Pyx_XGIVEREF(__pyx_t_2);
               __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
-              __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
+              __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0;
               __PYX_ERR(0, 86, __pyx_L10_except_error)
             }
             __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -5003,7 +5003,7 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
  *         with open(defconf, 'w', encoding='utf-8') as f:
  *             f.write(commented_out_default_config())             # <<<<<<<<<<<<<<
  *     return defconf
- * 
+ *
  */
             __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L22_error)
             __Pyx_GOTREF(__pyx_t_1);
@@ -5082,7 +5082,7 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
               __Pyx_GIVEREF(__pyx_t_1);
               __Pyx_XGIVEREF(__pyx_t_2);
               __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_2);
-              __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
+              __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0;
               __PYX_ERR(0, 88, __pyx_L24_except_error)
             }
             __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -5125,7 +5125,7 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
     }
 
     /* "smelly/config.py":84
- * 
+ *
  * def prepare_config_file_for_editing() -> str:
  *     if not os.path.exists(defconf):             # <<<<<<<<<<<<<<
  *         d = os.path.dirname(defconf)
@@ -5137,8 +5137,8 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
  *         with open(defconf, 'w', encoding='utf-8') as f:
  *             f.write(commented_out_default_config())
  *     return defconf             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_defconf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
@@ -5149,8 +5149,8 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
   goto __pyx_L0;
 
   /* "smelly/config.py":83
- * 
- * 
+ *
+ *
  * def prepare_config_file_for_editing() -> str:             # <<<<<<<<<<<<<<
  *     if not os.path.exists(defconf):
  *         d = os.path.dirname(defconf)
@@ -5174,8 +5174,8 @@ static PyObject *__pyx_pf_6smelly_6config_11prepare_config_file_for_editing(CYTH
 }
 
 /* "smelly/config.py":93
- * 
- * 
+ *
+ *
  * def finalize_keys(opts: Options,             # <<<<<<<<<<<<<<
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
  *     defns: List[KeyDefinition] = []
@@ -5198,7 +5198,7 @@ static PyObject *__pyx_pw_6smelly_6config_14finalize_keys(PyObject *__pyx_self, 
     PyObject* values[2] = {0,0};
 
     /* "smelly/config.py":94
- * 
+ *
  * def finalize_keys(opts: Options,
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:             # <<<<<<<<<<<<<<
  *     defns: List[KeyDefinition] = []
@@ -5254,8 +5254,8 @@ static PyObject *__pyx_pw_6smelly_6config_14finalize_keys(PyObject *__pyx_self, 
   __pyx_r = __pyx_pf_6smelly_6config_13finalize_keys(__pyx_self, __pyx_v_opts, __pyx_v_accumulate_bad_lines);
 
   /* "smelly/config.py":93
- * 
- * 
+ *
+ *
  * def finalize_keys(opts: Options,             # <<<<<<<<<<<<<<
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
  *     defns: List[KeyDefinition] = []
@@ -5576,7 +5576,7 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
  *                 else:
  *                     accumulate_bad_lines.append(BadLine(             # <<<<<<<<<<<<<<
  *                         d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
- * 
+ *
  */
           /*else*/ {
             __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_BadLine); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 107, __pyx_L8_except_error)
@@ -5586,7 +5586,7 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
  *                 else:
  *                     accumulate_bad_lines.append(BadLine(
  *                         d.definition_location.number, d.definition_location.line, err, d.definition_location.file))             # <<<<<<<<<<<<<<
- * 
+ *
  *     keymap: KeyMap = {}
  */
             __pyx_t_20 = __Pyx_PyObject_GetAttrStr(__pyx_v_d, __pyx_n_s_definition_location); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 108, __pyx_L8_except_error)
@@ -5667,7 +5667,7 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
  *                 else:
  *                     accumulate_bad_lines.append(BadLine(             # <<<<<<<<<<<<<<
  *                         d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
- * 
+ *
  */
             __pyx_t_13 = __Pyx_PyObject_Append(__pyx_v_accumulate_bad_lines, __pyx_t_12); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 107, __pyx_L8_except_error)
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -5715,10 +5715,10 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
 
   /* "smelly/config.py":110
  *                         d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
- * 
+ *
  *     keymap: KeyMap = {}             # <<<<<<<<<<<<<<
  *     sequence_map: SequenceMap = {}
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5726,10 +5726,10 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
   __pyx_t_2 = 0;
 
   /* "smelly/config.py":111
- * 
+ *
  *     keymap: KeyMap = {}
  *     sequence_map: SequenceMap = {}             # <<<<<<<<<<<<<<
- * 
+ *
  *     for defn in defns:
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
@@ -5739,7 +5739,7 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
 
   /* "smelly/config.py":113
  *     sequence_map: SequenceMap = {}
- * 
+ *
  *     for defn in defns:             # <<<<<<<<<<<<<<
  *         is_no_op = defn.is_no_op
  *         if defn.is_sequence:
@@ -5757,7 +5757,7 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
     __pyx_t_11 = 0;
 
     /* "smelly/config.py":114
- * 
+ *
  *     for defn in defns:
  *         is_no_op = defn.is_no_op             # <<<<<<<<<<<<<<
  *         if defn.is_sequence:
@@ -6024,7 +6024,7 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
 
     /* "smelly/config.py":113
  *     sequence_map: SequenceMap = {}
- * 
+ *
  *     for defn in defns:             # <<<<<<<<<<<<<<
  *         is_no_op = defn.is_no_op
  *         if defn.is_sequence:
@@ -6037,7 +6037,7 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
  *                 keymap[defn.trigger] = defn.definition
  *     opts.keymap = keymap             # <<<<<<<<<<<<<<
  *     opts.sequence_map = sequence_map
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_opts, __pyx_n_s_keymap, __pyx_v_keymap) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
 
@@ -6045,14 +6045,14 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
  *                 keymap[defn.trigger] = defn.definition
  *     opts.keymap = keymap
  *     opts.sequence_map = sequence_map             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_opts, __pyx_n_s_sequence_map, __pyx_v_sequence_map) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
 
   /* "smelly/config.py":93
- * 
- * 
+ *
+ *
  * def finalize_keys(opts: Options,             # <<<<<<<<<<<<<<
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
  *     defns: List[KeyDefinition] = []
@@ -6090,8 +6090,8 @@ static PyObject *__pyx_pf_6smelly_6config_13finalize_keys(CYTHON_UNUSED PyObject
 }
 
 /* "smelly/config.py":134
- * 
- * 
+ *
+ *
  * def finalize_mouse_mappings(opts: Options, accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:             # <<<<<<<<<<<<<<
  *     defns: List[MouseMapping] = []
  *     for d in opts.mouse_map:
@@ -6203,7 +6203,7 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("finalize_mouse_mappings", 0);
 
   /* "smelly/config.py":135
- * 
+ *
  * def finalize_mouse_mappings(opts: Options, accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
  *     defns: List[MouseMapping] = []             # <<<<<<<<<<<<<<
  *     for d in opts.mouse_map:
@@ -6485,7 +6485,7 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
  *                     accumulate_bad_lines.append(BadLine(
  *                         d.definition_location.number, d.definition_location.line, err, d.definition_location.file))             # <<<<<<<<<<<<<<
  *     mousemap: MouseMap = {}
- * 
+ *
  */
             __pyx_t_20 = __Pyx_PyObject_GetAttrStr(__pyx_v_d, __pyx_n_s_definition_location); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 148, __pyx_L8_except_error)
             __Pyx_GOTREF(__pyx_t_20);
@@ -6615,7 +6615,7 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
  *                     accumulate_bad_lines.append(BadLine(
  *                         d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
  *     mousemap: MouseMap = {}             # <<<<<<<<<<<<<<
- * 
+ *
  *     for defn in defns:
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 149, __pyx_L1_error)
@@ -6625,7 +6625,7 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
 
   /* "smelly/config.py":151
  *     mousemap: MouseMap = {}
- * 
+ *
  *     for defn in defns:             # <<<<<<<<<<<<<<
  *         is_no_op = defn.is_no_op
  *         if is_no_op:
@@ -6643,7 +6643,7 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
     __pyx_t_11 = 0;
 
     /* "smelly/config.py":152
- * 
+ *
  *     for defn in defns:
  *         is_no_op = defn.is_no_op             # <<<<<<<<<<<<<<
  *         if is_no_op:
@@ -6693,7 +6693,7 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
  *         else:
  *             mousemap[defn.trigger] = defn.definition             # <<<<<<<<<<<<<<
  *     opts.mousemap = mousemap
- * 
+ *
  */
     /*else*/ {
       __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_defn, __pyx_n_s_definition); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 156, __pyx_L1_error)
@@ -6708,7 +6708,7 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
 
     /* "smelly/config.py":151
  *     mousemap: MouseMap = {}
- * 
+ *
  *     for defn in defns:             # <<<<<<<<<<<<<<
  *         is_no_op = defn.is_no_op
  *         if is_no_op:
@@ -6720,14 +6720,14 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
  *         else:
  *             mousemap[defn.trigger] = defn.definition
  *     opts.mousemap = mousemap             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_opts, __pyx_n_s_mousemap, __pyx_v_mousemap) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
 
   /* "smelly/config.py":134
- * 
- * 
+ *
+ *
  * def finalize_mouse_mappings(opts: Options, accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:             # <<<<<<<<<<<<<<
  *     defns: List[MouseMapping] = []
  *     for d in opts.mouse_map:
@@ -6763,11 +6763,11 @@ static PyObject *__pyx_pf_6smelly_6config_15finalize_mouse_mappings(CYTHON_UNUSE
 }
 
 /* "smelly/config.py":160
- * 
- * 
+ *
+ *
  * def parse_config(lines: Iterable[str], accumulate_bad_lines: Optional[List[BadLine]] = None) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, parse_conf_item
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6855,10 +6855,10 @@ static PyObject *__pyx_pf_6smelly_6config_17parse_config(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("parse_config", 0);
 
   /* "smelly/config.py":161
- * 
+ *
  * def parse_config(lines: Iterable[str], accumulate_bad_lines: Optional[List[BadLine]] = None) -> Dict[str, Any]:
  *     from .options.parse import create_result_dict, parse_conf_item             # <<<<<<<<<<<<<<
- * 
+ *
  *     ans: Dict[str, Any] = create_result_dict()
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
@@ -6886,7 +6886,7 @@ static PyObject *__pyx_pf_6smelly_6config_17parse_config(CYTHON_UNUSED PyObject 
 
   /* "smelly/config.py":163
  *     from .options.parse import create_result_dict, parse_conf_item
- * 
+ *
  *     ans: Dict[str, Any] = create_result_dict()             # <<<<<<<<<<<<<<
  *     parse_config_base(lines, parse_conf_item, ans,
  *                       accumulate_bad_lines=accumulate_bad_lines)
@@ -6911,7 +6911,7 @@ static PyObject *__pyx_pf_6smelly_6config_17parse_config(CYTHON_UNUSED PyObject 
   __pyx_t_2 = 0;
 
   /* "smelly/config.py":164
- * 
+ *
  *     ans: Dict[str, Any] = create_result_dict()
  *     parse_config_base(lines, parse_conf_item, ans,             # <<<<<<<<<<<<<<
  *                       accumulate_bad_lines=accumulate_bad_lines)
@@ -6936,14 +6936,14 @@ static PyObject *__pyx_pf_6smelly_6config_17parse_config(CYTHON_UNUSED PyObject 
  *     parse_config_base(lines, parse_conf_item, ans,
  *                       accumulate_bad_lines=accumulate_bad_lines)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_accumulate_bad_lines, __pyx_v_accumulate_bad_lines) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
 
   /* "smelly/config.py":164
- * 
+ *
  *     ans: Dict[str, Any] = create_result_dict()
  *     parse_config_base(lines, parse_conf_item, ans,             # <<<<<<<<<<<<<<
  *                       accumulate_bad_lines=accumulate_bad_lines)
@@ -6960,8 +6960,8 @@ static PyObject *__pyx_pf_6smelly_6config_17parse_config(CYTHON_UNUSED PyObject 
  *     parse_config_base(lines, parse_conf_item, ans,
  *                       accumulate_bad_lines=accumulate_bad_lines)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -6969,11 +6969,11 @@ static PyObject *__pyx_pf_6smelly_6config_17parse_config(CYTHON_UNUSED PyObject 
   goto __pyx_L0;
 
   /* "smelly/config.py":160
- * 
- * 
+ *
+ *
  * def parse_config(lines: Iterable[str], accumulate_bad_lines: Optional[List[BadLine]] = None) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, parse_conf_item
- * 
+ *
  */
 
   /* function exit code */
@@ -6994,8 +6994,8 @@ static PyObject *__pyx_pf_6smelly_6config_17parse_config(CYTHON_UNUSED PyObject 
 }
 
 /* "smelly/config.py":169
- * 
- * 
+ *
+ *
  * def load_config(             # <<<<<<<<<<<<<<
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -7029,7 +7029,7 @@ static PyObject *__pyx_pw_6smelly_6config_20load_config(PyObject *__pyx_self, Py
     PyObject* values[2] = {0,0};
 
     /* "smelly/config.py":170
- * 
+ *
  * def load_config(
  *         *paths: str, overrides: Optional[Iterable[str]] = None,             # <<<<<<<<<<<<<<
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -7042,7 +7042,7 @@ static PyObject *__pyx_pw_6smelly_6config_20load_config(PyObject *__pyx_self, Py
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:             # <<<<<<<<<<<<<<
  *     from .options.parse import merge_result_dicts
- * 
+ *
  */
     values[1] = ((PyObject *)((PyObject *)Py_None));
     if (unlikely(__pyx_kwds)) {
@@ -7082,8 +7082,8 @@ static PyObject *__pyx_pw_6smelly_6config_20load_config(PyObject *__pyx_self, Py
   __pyx_r = __pyx_pf_6smelly_6config_19load_config(__pyx_self, __pyx_v_overrides, __pyx_v_accumulate_bad_lines, __pyx_v_paths);
 
   /* "smelly/config.py":169
- * 
- * 
+ *
+ *
  * def load_config(             # <<<<<<<<<<<<<<
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -7122,7 +7122,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
  *     from .options.parse import merge_result_dicts             # <<<<<<<<<<<<<<
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
@@ -7142,7 +7142,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
 
   /* "smelly/config.py":174
  *     from .options.parse import merge_result_dicts
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()             # <<<<<<<<<<<<<<
  *     opts_dict, paths = _load_config(
  *         defaults,
@@ -7161,7 +7161,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
   __pyx_t_2 = 0;
 
   /* "smelly/config.py":175
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  *     opts_dict, paths = _load_config(             # <<<<<<<<<<<<<<
  *         defaults,
@@ -7206,7 +7206,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/config.py":175
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  *     opts_dict, paths = _load_config(             # <<<<<<<<<<<<<<
  *         defaults,
@@ -7229,13 +7229,13 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
  *         partial(parse_config, accumulate_bad_lines=accumulate_bad_lines),
  *         merge_result_dicts, *paths, overrides=overrides)             # <<<<<<<<<<<<<<
  *     opts = Options(opts_dict)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PySequence_Tuple(__pyx_v_paths); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "smelly/config.py":175
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  *     opts_dict, paths = _load_config(             # <<<<<<<<<<<<<<
  *         defaults,
@@ -7251,14 +7251,14 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
  *         partial(parse_config, accumulate_bad_lines=accumulate_bad_lines),
  *         merge_result_dicts, *paths, overrides=overrides)             # <<<<<<<<<<<<<<
  *     opts = Options(opts_dict)
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 178, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_overrides, __pyx_v_overrides) < 0) __PYX_ERR(0, 178, __pyx_L1_error)
 
   /* "smelly/config.py":175
- * 
+ *
  *     overrides = tuple(overrides) if overrides is not None else ()
  *     opts_dict, paths = _load_config(             # <<<<<<<<<<<<<<
  *         defaults,
@@ -7279,11 +7279,11 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_t_1);
@@ -7324,7 +7324,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
  *         partial(parse_config, accumulate_bad_lines=accumulate_bad_lines),
  *         merge_result_dicts, *paths, overrides=overrides)
  *     opts = Options(opts_dict)             # <<<<<<<<<<<<<<
- * 
+ *
  *     opts.alias_map = build_action_aliases(opts.kitten_alias, 'kitten')
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Options); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 179, __pyx_L1_error)
@@ -7349,7 +7349,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
 
   /* "smelly/config.py":181
  *     opts = Options(opts_dict)
- * 
+ *
  *     opts.alias_map = build_action_aliases(opts.kitten_alias, 'kitten')             # <<<<<<<<<<<<<<
  *     opts.alias_map.update(build_action_aliases(opts.action_alias))
  *     finalize_keys(opts, accumulate_bad_lines)
@@ -7409,7 +7409,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/config.py":182
- * 
+ *
  *     opts.alias_map = build_action_aliases(opts.kitten_alias, 'kitten')
  *     opts.alias_map.update(build_action_aliases(opts.action_alias))             # <<<<<<<<<<<<<<
  *     finalize_keys(opts, accumulate_bad_lines)
@@ -7704,7 +7704,7 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
  *     opts.config_paths = paths
  *     opts.config_overrides = overrides             # <<<<<<<<<<<<<<
  *     return opts
- * 
+ *
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_opts, __pyx_n_s_config_overrides, __pyx_v_overrides) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
 
@@ -7712,8 +7712,8 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
  *     opts.config_paths = paths
  *     opts.config_overrides = overrides
  *     return opts             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_opts);
@@ -7721,8 +7721,8 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
   goto __pyx_L0;
 
   /* "smelly/config.py":169
- * 
- * 
+ *
+ *
  * def load_config(             # <<<<<<<<<<<<<<
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -7750,8 +7750,8 @@ static PyObject *__pyx_pf_6smelly_6config_19load_config(CYTHON_UNUSED PyObject *
 }
 
 /* "smelly/config.py":204
- * 
- * 
+ *
+ *
  * def common_opts_as_dict(opts: Optional[Options] = None) -> smellyCommonOpts:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -7831,7 +7831,7 @@ static PyObject *__pyx_pf_6smelly_6config_21common_opts_as_dict(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_v_opts);
 
   /* "smelly/config.py":205
- * 
+ *
  * def common_opts_as_dict(opts: Optional[Options] = None) -> smellyCommonOpts:
  *     if opts is None:             # <<<<<<<<<<<<<<
  *         opts = defaults
@@ -7854,7 +7854,7 @@ static PyObject *__pyx_pf_6smelly_6config_21common_opts_as_dict(CYTHON_UNUSED Py
     __pyx_t_3 = 0;
 
     /* "smelly/config.py":205
- * 
+ *
  * def common_opts_as_dict(opts: Optional[Options] = None) -> smellyCommonOpts:
  *     if opts is None:             # <<<<<<<<<<<<<<
  *         opts = defaults
@@ -7912,8 +7912,8 @@ static PyObject *__pyx_pf_6smelly_6config_21common_opts_as_dict(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly/config.py":204
- * 
- * 
+ *
+ *
  * def common_opts_as_dict(opts: Optional[Options] = None) -> smellyCommonOpts:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -8308,17 +8308,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple_);
 
   /* "smelly/config.py":19
- * 
- * 
+ *
+ *
  * def option_names_for_completion() -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *     return option_names
- * 
+ *
  */
   __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_config_py, __pyx_n_s_option_names_for_completion, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 19, __pyx_L1_error)
 
   /* "smelly/config.py":23
- * 
- * 
+ *
+ *
  * def build_ansi_color_table(opts: Optional[Options] = None) -> int:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -8332,8 +8332,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__7);
 
   /* "smelly/config.py":33
- * 
- * 
+ *
+ *
  * def atomic_save(data: bytes, path: str) -> None:             # <<<<<<<<<<<<<<
  *     import shutil
  *     import tempfile
@@ -8344,7 +8344,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(2, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_config_py, __pyx_n_s_atomic_save, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 33, __pyx_L1_error)
 
   /* "smelly/config.py":57
- * 
+ *
  * @contextmanager
  * def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:             # <<<<<<<<<<<<<<
  *     cached_path = os.path.join(cache_dir(), f'{name}.json')
@@ -8356,11 +8356,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_config_py, __pyx_n_s_cached_values_for, 57, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 57, __pyx_L1_error)
 
   /* "smelly/config.py":77
- * 
- * 
+ *
+ *
  * def commented_out_default_config() -> str:             # <<<<<<<<<<<<<<
  *     from .options.definition import definition
- * 
+ *
  */
   __pyx_tuple__11 = PyTuple_Pack(1, __pyx_n_s_definition); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
@@ -8368,8 +8368,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_config_py, __pyx_n_s_commented_out_default_config, 77, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 77, __pyx_L1_error)
 
   /* "smelly/config.py":83
- * 
- * 
+ *
+ *
  * def prepare_config_file_for_editing() -> str:             # <<<<<<<<<<<<<<
  *     if not os.path.exists(defconf):
  *         d = os.path.dirname(defconf)
@@ -8380,8 +8380,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_config_py, __pyx_n_s_prepare_config_file_for_editing, 83, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 83, __pyx_L1_error)
 
   /* "smelly/config.py":93
- * 
- * 
+ *
+ *
  * def finalize_keys(opts: Options,             # <<<<<<<<<<<<<<
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
  *     defns: List[KeyDefinition] = []
@@ -8395,8 +8395,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__17);
 
   /* "smelly/config.py":134
- * 
- * 
+ *
+ *
  * def finalize_mouse_mappings(opts: Options, accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:             # <<<<<<<<<<<<<<
  *     defns: List[MouseMapping] = []
  *     for d in opts.mouse_map:
@@ -8410,11 +8410,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__20);
 
   /* "smelly/config.py":160
- * 
- * 
+ *
+ *
  * def parse_config(lines: Iterable[str], accumulate_bad_lines: Optional[List[BadLine]] = None) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, parse_conf_item
- * 
+ *
  */
   __pyx_tuple__21 = PyTuple_Pack(5, __pyx_n_s_lines, __pyx_n_s_accumulate_bad_lines, __pyx_n_s_create_result_dict, __pyx_n_s_parse_conf_item, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
@@ -8425,8 +8425,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__23);
 
   /* "smelly/config.py":169
- * 
- * 
+ *
+ *
  * def load_config(             # <<<<<<<<<<<<<<
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -8437,8 +8437,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(0, 2, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARARGS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_config_py, __pyx_n_s_load_config_2, 169, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 169, __pyx_L1_error)
 
   /* "smelly/config.py":204
- * 
- * 
+ *
+ *
  * def common_opts_as_dict(opts: Optional[Options] = None) -> smellyCommonOpts:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -8755,7 +8755,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/config.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import json             # <<<<<<<<<<<<<<
  * import os
  * from contextlib import contextmanager, suppress
@@ -8766,7 +8766,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/config.py":5
- * 
+ *
  * import json
  * import os             # <<<<<<<<<<<<<<
  * from contextlib import contextmanager, suppress
@@ -8810,7 +8810,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import contextmanager, suppress
  * from functools import partial             # <<<<<<<<<<<<<<
  * from typing import Any, Dict, Generator, Iterable, List, Optional, Tuple
- * 
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8830,7 +8830,7 @@ if (!__Pyx_RefNanny) {
  * from contextlib import contextmanager, suppress
  * from functools import partial
  * from typing import Any, Dict, Generator, Iterable, List, Optional, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from .conf.utils import BadLine, parse_config_base
  */
   __pyx_t_1 = PyList_New(7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -8891,7 +8891,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/config.py":10
  * from typing import Any, Dict, Generator, Iterable, List, Optional, Tuple
- * 
+ *
  * from .conf.utils import BadLine, parse_config_base             # <<<<<<<<<<<<<<
  * from .conf.utils import load_config as _load_config
  * from .constants import cache_dir, defconf
@@ -8918,7 +8918,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/config.py":11
- * 
+ *
  * from .conf.utils import BadLine, parse_config_base
  * from .conf.utils import load_config as _load_config             # <<<<<<<<<<<<<<
  * from .constants import cache_dir, defconf
@@ -9062,7 +9062,7 @@ if (!__Pyx_RefNanny) {
  * from .options.utils import KeyDefinition, KeyMap, MouseMap, MouseMapping, SequenceMap, build_action_aliases
  * from .typing import TypedDict             # <<<<<<<<<<<<<<
  * from .utils import log_error
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9082,8 +9082,8 @@ if (!__Pyx_RefNanny) {
  * from .options.utils import KeyDefinition, KeyMap, MouseMap, MouseMapping, SequenceMap, build_action_aliases
  * from .typing import TypedDict
  * from .utils import log_error             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9100,11 +9100,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/config.py":19
- * 
- * 
+ *
+ *
  * def option_names_for_completion() -> Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *     return option_names
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9132,8 +9132,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/config.py":23
- * 
- * 
+ *
+ *
  * def build_ansi_color_table(opts: Optional[Options] = None) -> int:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -9160,8 +9160,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/config.py":33
- * 
- * 
+ *
+ *
  * def atomic_save(data: bytes, path: str) -> None:             # <<<<<<<<<<<<<<
  *     import shutil
  *     import tempfile
@@ -9179,8 +9179,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/config.py":56
- * 
- * 
+ *
+ *
  * @contextmanager             # <<<<<<<<<<<<<<
  * def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:
  *     cached_path = os.path.join(cache_dir(), f'{name}.json')
@@ -9189,7 +9189,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/config.py":57
- * 
+ *
  * @contextmanager
  * def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:             # <<<<<<<<<<<<<<
  *     cached_path = os.path.join(cache_dir(), f'{name}.json')
@@ -9239,8 +9239,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/config.py":56
- * 
- * 
+ *
+ *
  * @contextmanager             # <<<<<<<<<<<<<<
  * def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:
  *     cached_path = os.path.join(cache_dir(), f'{name}.json')
@@ -9253,11 +9253,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/config.py":77
- * 
- * 
+ *
+ *
  * def commented_out_default_config() -> str:             # <<<<<<<<<<<<<<
  *     from .options.definition import definition
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9270,8 +9270,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/config.py":83
- * 
- * 
+ *
+ *
  * def prepare_config_file_for_editing() -> str:             # <<<<<<<<<<<<<<
  *     if not os.path.exists(defconf):
  *         d = os.path.dirname(defconf)
@@ -9287,8 +9287,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/config.py":93
- * 
- * 
+ *
+ *
  * def finalize_keys(opts: Options,             # <<<<<<<<<<<<<<
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
  *     defns: List[KeyDefinition] = []
@@ -9301,7 +9301,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/config.py":94
- * 
+ *
  * def finalize_keys(opts: Options,
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:             # <<<<<<<<<<<<<<
  *     defns: List[KeyDefinition] = []
@@ -9326,8 +9326,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, Py_None) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
 
   /* "smelly/config.py":93
- * 
- * 
+ *
+ *
  * def finalize_keys(opts: Options,             # <<<<<<<<<<<<<<
  *                   accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
  *     defns: List[KeyDefinition] = []
@@ -9341,8 +9341,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/config.py":134
- * 
- * 
+ *
+ *
  * def finalize_mouse_mappings(opts: Options, accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:             # <<<<<<<<<<<<<<
  *     defns: List[MouseMapping] = []
  *     for d in opts.mouse_map:
@@ -9379,11 +9379,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/config.py":160
- * 
- * 
+ *
+ *
  * def parse_config(lines: Iterable[str], accumulate_bad_lines: Optional[List[BadLine]] = None) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *     from .options.parse import create_result_dict, parse_conf_item
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -9437,8 +9437,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly/config.py":169
- * 
- * 
+ *
+ *
  * def load_config(             # <<<<<<<<<<<<<<
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -9451,7 +9451,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_5);
 
   /* "smelly/config.py":170
- * 
+ *
  * def load_config(
  *         *paths: str, overrides: Optional[Iterable[str]] = None,             # <<<<<<<<<<<<<<
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -9476,7 +9476,7 @@ if (!__Pyx_RefNanny) {
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:             # <<<<<<<<<<<<<<
  *     from .options.parse import merge_result_dicts
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Optional); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9501,8 +9501,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/config.py":169
- * 
- * 
+ *
+ *
  * def load_config(             # <<<<<<<<<<<<<<
  *         *paths: str, overrides: Optional[Iterable[str]] = None,
  *         accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
@@ -9517,8 +9517,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/config.py":198
- * 
- * 
+ *
+ *
  * class smellyCommonOpts(TypedDict):             # <<<<<<<<<<<<<<
  *     select_by_word_characters: str
  *     open_url_with: List[str]
@@ -9539,8 +9539,8 @@ if (!__Pyx_RefNanny) {
  *     select_by_word_characters: str
  *     open_url_with: List[str]
  *     url_prefixes: Tuple[str, ...]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = __Pyx_Py3ClassCreate(__pyx_t_4, __pyx_n_s_smellyCommonOpts, __pyx_t_5, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 198, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9551,8 +9551,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/config.py":204
- * 
- * 
+ *
+ *
  * def common_opts_as_dict(opts: Optional[Options] = None) -> smellyCommonOpts:             # <<<<<<<<<<<<<<
  *     if opts is None:
  *         opts = defaults
@@ -9584,7 +9584,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/config.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

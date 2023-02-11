@@ -984,7 +984,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_14_layout_state;
 
 /* "smelly/layout/splits.py":34
  *         )
- * 
+ *
  *     def all_window_ids(self) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.one is not None:
  *             if isinstance(self.one, Pair):
@@ -997,7 +997,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct__all_window_ids {
 
 /* "smelly/layout/splits.py":46
  *                 yield self.two
- * 
+ *
  *     def self_and_descendants(self) -> Generator['Pair', None, None]:             # <<<<<<<<<<<<<<
  *         yield self
  *         if isinstance(self.one, Pair):
@@ -1010,7 +1010,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_1_self_and_descendan
 
 /* "smelly/layout/splits.py":107
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':             # <<<<<<<<<<<<<<
  *         if self.one is None or self.two is None:
  *             if self.one is None:
@@ -1057,7 +1057,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_4_genexpr {
 
 /* "smelly/layout/splits.py":251
  *         return False
- * 
+ *
  *     def borders_for_window(self, layout_object: 'Splits', window_id: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *         is_first = self.one == window_id
  *         if self.between_borders:
@@ -1081,7 +1081,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_5_borders_for_window
 
 /* "smelly/layout/splits.py":300
  *                             yield edges._replace(top=extent.start, bottom=extent.end)
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:
  *             if is_horizontal:
@@ -1097,7 +1097,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_6_neighbors_for_wind
 
 /* "smelly/layout/splits.py":312
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:             # <<<<<<<<<<<<<<
  *             if not ans[which] and other:
  *                 if isinstance(other, Pair):
@@ -1130,7 +1130,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_8_genexpr {
 
 /* "smelly/layout/splits.py":320
  *                     ans[which].append(other)
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:             # <<<<<<<<<<<<<<
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
@@ -1143,7 +1143,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_9_is_neighbouring_ge
 
 /* "smelly/layout/splits.py":341
  *             child = parent
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.is_redundant:
  *             q = self.one or self.two
@@ -1161,7 +1161,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_10_edge_windows {
 
 /* "smelly/layout/splits.py":407
  *                 self.pairs_root = q
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -1190,7 +1190,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_12_genexpr {
 
 /* "smelly/layout/splits.py":468
  *         return True
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -1221,7 +1221,7 @@ struct __pyx_obj_6smelly_6layout_6splits___pyx_scope_struct_13_minimal_borders {
 
 /* "smelly/layout/splits.py":546
  *         return None
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         def add_pair(p: Pair) -> Dict[str, Any]:
  *             ans: Dict[str, Any] = {}
@@ -2651,7 +2651,7 @@ static PyObject *__pyx_codeobj__88;
 /* Late includes */
 
 /* "smelly/layout/splits.py":20
- * 
+ *
  * class Pair:
  *     def __init__(self, horizontal: bool = True):             # <<<<<<<<<<<<<<
  *         self.horizontal = horizontal
@@ -2791,7 +2791,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair___init__(CYTHON_UNUSED P
  *         self.top = self.left = self.width = self.height = 0
  *         self.between_borders: List[Edges] = []             # <<<<<<<<<<<<<<
  *         self.first_extent = self.second_extent = Extent()
- * 
+ *
  */
   __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2802,7 +2802,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair___init__(CYTHON_UNUSED P
  *         self.top = self.left = self.width = self.height = 0
  *         self.between_borders: List[Edges] = []
  *         self.first_extent = self.second_extent = Extent()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __repr__(self) -> str:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Extent); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
@@ -2827,7 +2827,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair___init__(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/splits.py":20
- * 
+ *
  * class Pair:
  *     def __init__(self, horizontal: bool = True):             # <<<<<<<<<<<<<<
  *         self.horizontal = horizontal
@@ -2851,7 +2851,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair___init__(CYTHON_UNUSED P
 
 /* "smelly/layout/splits.py":29
  *         self.first_extent = self.second_extent = Extent()
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(
  *             self.horizontal, self.bias, self.one, self.two, self.between_borders
@@ -2890,7 +2890,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_2__repr__(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("__repr__", 0);
 
   /* "smelly/layout/splits.py":30
- * 
+ *
  *     def __repr__(self) -> str:
  *         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(             # <<<<<<<<<<<<<<
  *             self.horizontal, self.bias, self.one, self.two, self.between_borders
@@ -2905,7 +2905,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_2__repr__(CYTHON_UNUSED 
  *         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(
  *             self.horizontal, self.bias, self.one, self.two, self.between_borders             # <<<<<<<<<<<<<<
  *         )
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_horizontal); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2983,7 +2983,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_2__repr__(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/splits.py":30
- * 
+ *
  *     def __repr__(self) -> str:
  *         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(             # <<<<<<<<<<<<<<
  *             self.horizontal, self.bias, self.one, self.two, self.between_borders
@@ -2996,7 +2996,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_2__repr__(CYTHON_UNUSED 
 
   /* "smelly/layout/splits.py":29
  *         self.first_extent = self.second_extent = Extent()
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(
  *             self.horizontal, self.bias, self.one, self.two, self.between_borders
@@ -3024,7 +3024,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_6generator(__pyx_Corouti
 
 /* "smelly/layout/splits.py":34
  *         )
- * 
+ *
  *     def all_window_ids(self) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.one is not None:
  *             if isinstance(self.one, Pair):
@@ -3108,7 +3108,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_6generator(__pyx_Corouti
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 34, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":35
- * 
+ *
  *     def all_window_ids(self) -> Generator[int, None, None]:
  *         if self.one is not None:             # <<<<<<<<<<<<<<
  *             if isinstance(self.one, Pair):
@@ -3219,7 +3219,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_6generator(__pyx_Corouti
     __pyx_L5:;
 
     /* "smelly/layout/splits.py":35
- * 
+ *
  *     def all_window_ids(self) -> Generator[int, None, None]:
  *         if self.one is not None:             # <<<<<<<<<<<<<<
  *             if isinstance(self.one, Pair):
@@ -3319,7 +3319,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_6generator(__pyx_Corouti
  *                 yield from self.two.all_window_ids()
  *             else:
  *                 yield self.two             # <<<<<<<<<<<<<<
- * 
+ *
  *     def self_and_descendants(self) -> Generator['Pair', None, None]:
  */
     /*else*/ {
@@ -3350,7 +3350,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_6generator(__pyx_Corouti
 
   /* "smelly/layout/splits.py":34
  *         )
- * 
+ *
  *     def all_window_ids(self) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.one is not None:
  *             if isinstance(self.one, Pair):
@@ -3378,7 +3378,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_9generator1(__pyx_Corout
 
 /* "smelly/layout/splits.py":46
  *                 yield self.two
- * 
+ *
  *     def self_and_descendants(self) -> Generator['Pair', None, None]:             # <<<<<<<<<<<<<<
  *         yield self
  *         if isinstance(self.one, Pair):
@@ -3461,7 +3461,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_9generator1(__pyx_Corout
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 46, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":47
- * 
+ *
  *     def self_and_descendants(self) -> Generator['Pair', None, None]:
  *         yield self             # <<<<<<<<<<<<<<
  *         if isinstance(self.one, Pair):
@@ -3556,7 +3556,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_9generator1(__pyx_Corout
  *             yield from self.one.self_and_descendants()
  *         if isinstance(self.two, Pair):             # <<<<<<<<<<<<<<
  *             yield from self.two.self_and_descendants()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_two); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3572,7 +3572,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_9generator1(__pyx_Corout
  *             yield from self.one.self_and_descendants()
  *         if isinstance(self.two, Pair):
  *             yield from self.two.self_and_descendants()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def pair_for_window(self, window_id: int) -> Optional['Pair']:
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_two); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
@@ -3620,14 +3620,14 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_9generator1(__pyx_Corout
  *             yield from self.one.self_and_descendants()
  *         if isinstance(self.two, Pair):             # <<<<<<<<<<<<<<
  *             yield from self.two.self_and_descendants()
- * 
+ *
  */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "smelly/layout/splits.py":46
  *                 yield self.two
- * 
+ *
  *     def self_and_descendants(self) -> Generator['Pair', None, None]:             # <<<<<<<<<<<<<<
  *         yield self
  *         if isinstance(self.one, Pair):
@@ -3654,7 +3654,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_9generator1(__pyx_Corout
 
 /* "smelly/layout/splits.py":53
  *             yield from self.two.self_and_descendants()
- * 
+ *
  *     def pair_for_window(self, window_id: int) -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         if self.one == window_id or self.two == window_id:
  *             return self
@@ -3741,7 +3741,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_10pair_for_window(CYTHON
   __Pyx_RefNannySetupContext("pair_for_window", 0);
 
   /* "smelly/layout/splits.py":54
- * 
+ *
  *     def pair_for_window(self, window_id: int) -> Optional['Pair']:
  *         if self.one == window_id or self.two == window_id:             # <<<<<<<<<<<<<<
  *             return self
@@ -3781,7 +3781,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_10pair_for_window(CYTHON
     goto __pyx_L0;
 
     /* "smelly/layout/splits.py":54
- * 
+ *
  *     def pair_for_window(self, window_id: int) -> Optional['Pair']:
  *         if self.one == window_id or self.two == window_id:             # <<<<<<<<<<<<<<
  *             return self
@@ -3886,7 +3886,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_10pair_for_window(CYTHON
  *         if ans is None and isinstance(self.two, Pair):
  *             ans = self.two.pair_for_window(window_id)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_two); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -3924,7 +3924,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_10pair_for_window(CYTHON
  *         if ans is None and isinstance(self.two, Pair):
  *             ans = self.two.pair_for_window(window_id)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def swap_windows(self, a: int, b: int) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3934,7 +3934,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_10pair_for_window(CYTHON
 
   /* "smelly/layout/splits.py":53
  *             yield from self.two.self_and_descendants()
- * 
+ *
  *     def pair_for_window(self, window_id: int) -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         if self.one == window_id or self.two == window_id:
  *             return self
@@ -3956,7 +3956,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_10pair_for_window(CYTHON
 
 /* "smelly/layout/splits.py":63
  *         return ans
- * 
+ *
  *     def swap_windows(self, a: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *         pa = self.pair_for_window(a)
  *         pb = self.pair_for_window(b)
@@ -4055,7 +4055,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_12swap_windows(CYTHON_UN
   __Pyx_RefNannySetupContext("swap_windows", 0);
 
   /* "smelly/layout/splits.py":64
- * 
+ *
  *     def swap_windows(self, a: int, b: int) -> None:
  *         pa = self.pair_for_window(a)             # <<<<<<<<<<<<<<
  *         pb = self.pair_for_window(b)
@@ -4279,7 +4279,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_12swap_windows(CYTHON_UN
  *                 pa.two, pb.one = pb.one, pa.two
  *             else:
  *                 pa.two, pb.two = pb.two, pa.two             # <<<<<<<<<<<<<<
- * 
+ *
  *     def parent(self, root: 'Pair') -> Optional['Pair']:
  */
     /*else*/ {
@@ -4298,7 +4298,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_12swap_windows(CYTHON_UN
 
   /* "smelly/layout/splits.py":63
  *         return ans
- * 
+ *
  *     def swap_windows(self, a: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *         pa = self.pair_for_window(a)
  *         pb = self.pair_for_window(b)
@@ -4323,7 +4323,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_12swap_windows(CYTHON_UN
 
 /* "smelly/layout/splits.py":79
  *                 pa.two, pb.two = pb.two, pa.two
- * 
+ *
  *     def parent(self, root: 'Pair') -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         for q in root.self_and_descendants():
  *             if q.one is self or q.two is self:
@@ -4412,7 +4412,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_14parent(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("parent", 0);
 
   /* "smelly/layout/splits.py":80
- * 
+ *
  *     def parent(self, root: 'Pair') -> Optional['Pair']:
  *         for q in root.self_and_descendants():             # <<<<<<<<<<<<<<
  *             if q.one is self or q.two is self:
@@ -4509,7 +4509,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_14parent(CYTHON_UNUSED P
  *             if q.one is self or q.two is self:
  *                 return q             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_q);
@@ -4527,7 +4527,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_14parent(CYTHON_UNUSED P
     }
 
     /* "smelly/layout/splits.py":80
- * 
+ *
  *     def parent(self, root: 'Pair') -> Optional['Pair']:
  *         for q in root.self_and_descendants():             # <<<<<<<<<<<<<<
  *             if q.one is self or q.two is self:
@@ -4540,7 +4540,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_14parent(CYTHON_UNUSED P
  *             if q.one is self or q.two is self:
  *                 return q
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_windows(self, window_ids: Collection[int]) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4549,7 +4549,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_14parent(CYTHON_UNUSED P
 
   /* "smelly/layout/splits.py":79
  *                 pa.two, pb.two = pb.two, pa.two
- * 
+ *
  *     def parent(self, root: 'Pair') -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         for q in root.self_and_descendants():
  *             if q.one is self or q.two is self:
@@ -4571,7 +4571,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_14parent(CYTHON_UNUSED P
 
 /* "smelly/layout/splits.py":85
  *         return None
- * 
+ *
  *     def remove_windows(self, window_ids: Collection[int]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(self.one, int) and self.one in window_ids:
  *             self.one = None
@@ -4656,7 +4656,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
   __Pyx_RefNannySetupContext("remove_windows", 0);
 
   /* "smelly/layout/splits.py":86
- * 
+ *
  *     def remove_windows(self, window_ids: Collection[int]) -> None:
  *         if isinstance(self.one, int) and self.one in window_ids:             # <<<<<<<<<<<<<<
  *             self.one = None
@@ -4664,7 +4664,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_one); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyInt_Check(__pyx_t_2); 
+  __pyx_t_3 = PyInt_Check(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_4 = (__pyx_t_3 != 0);
   if (__pyx_t_4) {
@@ -4691,7 +4691,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_one, Py_None) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
 
     /* "smelly/layout/splits.py":86
- * 
+ *
  *     def remove_windows(self, window_ids: Collection[int]) -> None:
  *         if isinstance(self.one, int) and self.one in window_ids:             # <<<<<<<<<<<<<<
  *             self.one = None
@@ -4708,7 +4708,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_two); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyInt_Check(__pyx_t_2); 
+  __pyx_t_3 = PyInt_Check(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_4 = (__pyx_t_3 != 0);
   if (__pyx_t_4) {
@@ -4748,7 +4748,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
  *             self.two = None
  *         if self.one is None and self.two is not None:             # <<<<<<<<<<<<<<
  *             self.one, self.two = self.two, None
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_one); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4773,7 +4773,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
  *             self.two = None
  *         if self.one is None and self.two is not None:
  *             self.one, self.two = self.two, None             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_two); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
@@ -4790,13 +4790,13 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
  *             self.two = None
  *         if self.one is None and self.two is not None:             # <<<<<<<<<<<<<<
  *             self.one, self.two = self.two, None
- * 
+ *
  */
   }
 
   /* "smelly/layout/splits.py":85
  *         return None
- * 
+ *
  *     def remove_windows(self, window_ids: Collection[int]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(self.one, int) and self.one in window_ids:
  *             self.one = None
@@ -4817,11 +4817,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_16remove_windows(CYTHON_
 }
 
 /* "smelly/layout/splits.py":94
- * 
+ *
  *     @property
  *     def is_redundant(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.one is None or self.two is None
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4853,7 +4853,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_18is_redundant(CYTHON_UN
  *     @property
  *     def is_redundant(self) -> bool:
  *         return self.one is None or self.two is None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def collapse_redundant_pairs(self) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4883,11 +4883,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_18is_redundant(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly/layout/splits.py":94
- * 
+ *
  *     @property
  *     def is_redundant(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.one is None or self.two is None
- * 
+ *
  */
 
   /* function exit code */
@@ -4904,7 +4904,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_18is_redundant(CYTHON_UN
 
 /* "smelly/layout/splits.py":97
  *         return self.one is None or self.two is None
- * 
+ *
  *     def collapse_redundant_pairs(self) -> None:             # <<<<<<<<<<<<<<
  *         while isinstance(self.one, Pair) and self.one.is_redundant:
  *             self.one = self.one.one or self.one.two
@@ -4939,7 +4939,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20collapse_redundant_pai
   __Pyx_RefNannySetupContext("collapse_redundant_pairs", 0);
 
   /* "smelly/layout/splits.py":98
- * 
+ *
  *     def collapse_redundant_pairs(self) -> None:
  *         while isinstance(self.one, Pair) and self.one.is_redundant:             # <<<<<<<<<<<<<<
  *             self.one = self.one.one or self.one.two
@@ -5130,7 +5130,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20collapse_redundant_pai
  *             self.one.collapse_redundant_pairs()
  *         if isinstance(self.two, Pair):             # <<<<<<<<<<<<<<
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_two); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5146,7 +5146,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20collapse_redundant_pai
  *             self.one.collapse_redundant_pairs()
  *         if isinstance(self.two, Pair):
  *             self.two.collapse_redundant_pairs()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_two); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
@@ -5176,13 +5176,13 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20collapse_redundant_pai
  *             self.one.collapse_redundant_pairs()
  *         if isinstance(self.two, Pair):             # <<<<<<<<<<<<<<
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  */
   }
 
   /* "smelly/layout/splits.py":97
  *         return self.one is None or self.two is None
- * 
+ *
  *     def collapse_redundant_pairs(self) -> None:             # <<<<<<<<<<<<<<
  *         while isinstance(self.one, Pair) and self.one.is_redundant:
  *             self.one = self.one.one or self.one.two
@@ -5205,7 +5205,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20collapse_redundant_pai
 
 /* "smelly/layout/splits.py":107
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':             # <<<<<<<<<<<<<<
  *         if self.one is None or self.two is None:
  *             if self.one is None:
@@ -5628,7 +5628,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_12balanced_add_5generato
 
 /* "smelly/layout/splits.py":107
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':             # <<<<<<<<<<<<<<
  *         if self.one is None or self.two is None:
  *             if self.one is None:
@@ -5669,7 +5669,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_22balanced_add(CYTHON_UN
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly/layout/splits.py":108
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':
  *         if self.one is None or self.two is None:             # <<<<<<<<<<<<<<
  *             if self.one is None:
@@ -5799,7 +5799,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_22balanced_add(CYTHON_UN
     goto __pyx_L0;
 
     /* "smelly/layout/splits.py":108
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':
  *         if self.one is None or self.two is None:             # <<<<<<<<<<<<<<
  *             if self.one is None:
@@ -6191,7 +6191,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_22balanced_add(CYTHON_UN
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
   if (unlikely(!Py_OptimizeFlag)) {
-    __pyx_t_3 = PyInt_Check(__pyx_v_window_to_be_split); 
+    __pyx_t_3 = PyInt_Check(__pyx_v_window_to_be_split);
     if (unlikely(!(__pyx_t_3 != 0))) {
       PyErr_SetNone(PyExc_AssertionError);
       __PYX_ERR(0, 133, __pyx_L1_error)
@@ -6230,7 +6230,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_22balanced_add(CYTHON_UN
  *         pair.balanced_add(window_to_be_split)
  *         pair.balanced_add(window_id)             # <<<<<<<<<<<<<<
  *         return pair
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_pair, __pyx_n_s_balanced_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6255,7 +6255,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_22balanced_add(CYTHON_UN
  *         pair.balanced_add(window_to_be_split)
  *         pair.balanced_add(window_id)
  *         return pair             # <<<<<<<<<<<<<<
- * 
+ *
  *     def split_and_add(self, existing_window_id: int, new_window_id: int, horizontal: bool, after: bool) -> 'Pair':
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6265,7 +6265,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_22balanced_add(CYTHON_UN
 
   /* "smelly/layout/splits.py":107
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':             # <<<<<<<<<<<<<<
  *         if self.one is None or self.two is None:
  *             if self.one is None:
@@ -6295,7 +6295,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_22balanced_add(CYTHON_UN
 
 /* "smelly/layout/splits.py":138
  *         return pair
- * 
+ *
  *     def split_and_add(self, existing_window_id: int, new_window_id: int, horizontal: bool, after: bool) -> 'Pair':             # <<<<<<<<<<<<<<
  *         q = (existing_window_id, new_window_id) if after else (new_window_id, existing_window_id)
  *         if self.is_redundant:
@@ -6414,7 +6414,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_24split_and_add(CYTHON_U
   __Pyx_RefNannySetupContext("split_and_add", 0);
 
   /* "smelly/layout/splits.py":139
- * 
+ *
  *     def split_and_add(self, existing_window_id: int, new_window_id: int, horizontal: bool, after: bool) -> 'Pair':
  *         q = (existing_window_id, new_window_id) if after else (new_window_id, existing_window_id)             # <<<<<<<<<<<<<<
  *         if self.is_redundant:
@@ -6495,8 +6495,8 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_24split_and_add(CYTHON_U
         __PYX_ERR(0, 143, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_3);
       #else
@@ -6594,7 +6594,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_24split_and_add(CYTHON_U
  *                 self.two = pair
  *             tuple(map(pair.balanced_add, q))             # <<<<<<<<<<<<<<
  *         return pair
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_pair, __pyx_n_s_balanced_add); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -6620,7 +6620,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_24split_and_add(CYTHON_U
  *                 self.two = pair
  *             tuple(map(pair.balanced_add, q))
  *         return pair             # <<<<<<<<<<<<<<
- * 
+ *
  *     def apply_window_geometry(self, window_id: int, window_geometry: WindowGeometry, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6630,7 +6630,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_24split_and_add(CYTHON_U
 
   /* "smelly/layout/splits.py":138
  *         return pair
- * 
+ *
  *     def split_and_add(self, existing_window_id: int, new_window_id: int, horizontal: bool, after: bool) -> 'Pair':             # <<<<<<<<<<<<<<
  *         q = (existing_window_id, new_window_id) if after else (new_window_id, existing_window_id)
  *         if self.is_redundant:
@@ -6653,7 +6653,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_24split_and_add(CYTHON_U
 
 /* "smelly/layout/splits.py":153
  *         return pair
- * 
+ *
  *     def apply_window_geometry(self, window_id: int, window_geometry: WindowGeometry, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         wg = id_window_map[window_id]
  *         wg.set_geometry(window_geometry)
@@ -6772,7 +6772,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_26apply_window_geometry(
   __Pyx_RefNannySetupContext("apply_window_geometry", 0);
 
   /* "smelly/layout/splits.py":154
- * 
+ *
  *     def apply_window_geometry(self, window_id: int, window_geometry: WindowGeometry, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:
  *         wg = id_window_map[window_id]             # <<<<<<<<<<<<<<
  *         wg.set_geometry(window_geometry)
@@ -6788,7 +6788,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_26apply_window_geometry(
  *         wg = id_window_map[window_id]
  *         wg.set_geometry(window_geometry)             # <<<<<<<<<<<<<<
  *         layout_object.blank_rects.extend(blank_rects_for_window(window_geometry))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_wg, __pyx_n_s_set_geometry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6813,7 +6813,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_26apply_window_geometry(
  *         wg = id_window_map[window_id]
  *         wg.set_geometry(window_geometry)
  *         layout_object.blank_rects.extend(blank_rects_for_window(window_geometry))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def effective_border(self, id_window_map: Dict[int, WindowGroup]) -> int:
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_layout_object, __pyx_n_s_blank_rects); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
@@ -6858,7 +6858,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_26apply_window_geometry(
 
   /* "smelly/layout/splits.py":153
  *         return pair
- * 
+ *
  *     def apply_window_geometry(self, window_id: int, window_geometry: WindowGeometry, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         wg = id_window_map[window_id]
  *         wg.set_geometry(window_geometry)
@@ -6884,7 +6884,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_26apply_window_geometry(
 
 /* "smelly/layout/splits.py":158
  *         layout_object.blank_rects.extend(blank_rects_for_window(window_geometry))
- * 
+ *
  *     def effective_border(self, id_window_map: Dict[int, WindowGroup]) -> int:             # <<<<<<<<<<<<<<
  *         for wid in self.all_window_ids():
  *             return id_window_map[wid].effective_border()
@@ -6971,7 +6971,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_28effective_border(CYTHO
   __Pyx_RefNannySetupContext("effective_border", 0);
 
   /* "smelly/layout/splits.py":159
- * 
+ *
  *     def effective_border(self, id_window_map: Dict[int, WindowGroup]) -> int:
  *         for wid in self.all_window_ids():             # <<<<<<<<<<<<<<
  *             return id_window_map[wid].effective_border()
@@ -7042,7 +7042,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_28effective_border(CYTHO
  *         for wid in self.all_window_ids():
  *             return id_window_map[wid].effective_border()             # <<<<<<<<<<<<<<
  *         return 0
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_id_window_map, __pyx_v_wid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
@@ -7071,7 +7071,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_28effective_border(CYTHO
     goto __pyx_L0;
 
     /* "smelly/layout/splits.py":159
- * 
+ *
  *     def effective_border(self, id_window_map: Dict[int, WindowGroup]) -> int:
  *         for wid in self.all_window_ids():             # <<<<<<<<<<<<<<
  *             return id_window_map[wid].effective_border()
@@ -7084,7 +7084,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_28effective_border(CYTHO
  *         for wid in self.all_window_ids():
  *             return id_window_map[wid].effective_border()
  *         return 0             # <<<<<<<<<<<<<<
- * 
+ *
  *     def layout_pair(self, left: int, top: int, width: int, height: int, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7094,7 +7094,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_28effective_border(CYTHO
 
   /* "smelly/layout/splits.py":158
  *         layout_object.blank_rects.extend(blank_rects_for_window(window_geometry))
- * 
+ *
  *     def effective_border(self, id_window_map: Dict[int, WindowGroup]) -> int:             # <<<<<<<<<<<<<<
  *         for wid in self.all_window_ids():
  *             return id_window_map[wid].effective_border()
@@ -7117,7 +7117,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_28effective_border(CYTHO
 
 /* "smelly/layout/splits.py":163
  *         return 0
- * 
+ *
  *     def layout_pair(self, left: int, top: int, width: int, height: int, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         self.between_borders = []
  *         self.left, self.top, self.width, self.height = left, top, width, height
@@ -7279,7 +7279,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_30layout_pair(CYTHON_UNU
   __Pyx_INCREF(__pyx_v_top);
 
   /* "smelly/layout/splits.py":164
- * 
+ *
  *     def layout_pair(self, left: int, top: int, width: int, height: int, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:
  *         self.between_borders = []             # <<<<<<<<<<<<<<
  *         self.left, self.top, self.width, self.height = left, top, width, height
@@ -9950,7 +9950,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_30layout_pair(CYTHON_UNU
  *                 yl = next(layout_object.ylayout(iter((wg,)), start=top + h1, size=h2, border_mult=border_mult))
  *                 geom = window_geometry_from_layouts(xl, yl)             # <<<<<<<<<<<<<<
  *                 self.apply_window_geometry(self.two, geom, id_window_map, layout_object)
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_window_geometry_from_layouts); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
@@ -10006,7 +10006,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_30layout_pair(CYTHON_UNU
  *                 yl = next(layout_object.ylayout(iter((wg,)), start=top + h1, size=h2, border_mult=border_mult))
  *                 geom = window_geometry_from_layouts(xl, yl)
  *                 self.apply_window_geometry(self.two, geom, id_window_map, layout_object)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def modify_size_of_child(self, which: int, increment: float, is_horizontal: bool, layout_object: 'Splits') -> bool:
  */
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_apply_window_geometry); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 234, __pyx_L1_error)
@@ -10074,7 +10074,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_30layout_pair(CYTHON_UNU
 
   /* "smelly/layout/splits.py":163
  *         return 0
- * 
+ *
  *     def layout_pair(self, left: int, top: int, width: int, height: int, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         self.between_borders = []
  *         self.left, self.top, self.width, self.height = left, top, width, height
@@ -10115,7 +10115,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_30layout_pair(CYTHON_UNU
 
 /* "smelly/layout/splits.py":236
  *                 self.apply_window_geometry(self.two, geom, id_window_map, layout_object)
- * 
+ *
  *     def modify_size_of_child(self, which: int, increment: float, is_horizontal: bool, layout_object: 'Splits') -> bool:             # <<<<<<<<<<<<<<
  *         if is_horizontal == self.horizontal and not self.is_redundant:
  *             if which == 2:
@@ -10241,7 +10241,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_32modify_size_of_child(C
   __Pyx_INCREF(__pyx_v_which);
 
   /* "smelly/layout/splits.py":237
- * 
+ *
  *     def modify_size_of_child(self, which: int, increment: float, is_horizontal: bool, layout_object: 'Splits') -> bool:
  *         if is_horizontal == self.horizontal and not self.is_redundant:             # <<<<<<<<<<<<<<
  *             if which == 2:
@@ -10414,7 +10414,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_32modify_size_of_child(C
     goto __pyx_L0;
 
     /* "smelly/layout/splits.py":237
- * 
+ *
  *     def modify_size_of_child(self, which: int, increment: float, is_horizontal: bool, layout_object: 'Splits') -> bool:
  *         if is_horizontal == self.horizontal and not self.is_redundant:             # <<<<<<<<<<<<<<
  *             if which == 2:
@@ -10489,7 +10489,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_32modify_size_of_child(C
  *             which = 1 if parent.one is self else 2
  *             return parent.modify_size_of_child(which, increment, is_horizontal, layout_object)             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_parent, __pyx_n_s_modify_size_of_child); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 248, __pyx_L1_error)
@@ -10566,7 +10566,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_32modify_size_of_child(C
  *             which = 1 if parent.one is self else 2
  *             return parent.modify_size_of_child(which, increment, is_horizontal, layout_object)
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def borders_for_window(self, layout_object: 'Splits', window_id: int) -> Generator[Edges, None, None]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10576,7 +10576,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_32modify_size_of_child(C
 
   /* "smelly/layout/splits.py":236
  *                 self.apply_window_geometry(self.two, geom, id_window_map, layout_object)
- * 
+ *
  *     def modify_size_of_child(self, which: int, increment: float, is_horizontal: bool, layout_object: 'Splits') -> bool:             # <<<<<<<<<<<<<<
  *         if is_horizontal == self.horizontal and not self.is_redundant:
  *             if which == 2:
@@ -10603,7 +10603,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_36generator2(__pyx_Corou
 
 /* "smelly/layout/splits.py":251
  *         return False
- * 
+ *
  *     def borders_for_window(self, layout_object: 'Splits', window_id: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *         is_first = self.one == window_id
  *         if self.between_borders:
@@ -10761,7 +10761,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_36generator2(__pyx_Corou
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 251, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":252
- * 
+ *
  *     def borders_for_window(self, layout_object: 'Splits', window_id: int) -> Generator[Edges, None, None]:
  *         is_first = self.one == window_id             # <<<<<<<<<<<<<<
  *         if self.between_borders:
@@ -11619,7 +11619,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_36generator2(__pyx_Corou
  *                             yield edges._replace(left=extent.start, right=extent.end)
  *                         else:
  *                             yield edges._replace(top=extent.start, bottom=extent.end)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:
  */
           /*else*/ {
@@ -11671,7 +11671,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_36generator2(__pyx_Corou
 
   /* "smelly/layout/splits.py":251
  *         return False
- * 
+ *
  *     def borders_for_window(self, layout_object: 'Splits', window_id: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *         is_first = self.one == window_id
  *         if self.between_borders:
@@ -11700,7 +11700,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_36generator2(__pyx_Corou
 
 /* "smelly/layout/splits.py":300
  *                             yield edges._replace(top=extent.start, bottom=extent.end)
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:
  *             if is_horizontal:
@@ -11805,7 +11805,7 @@ static PyObject *__pyx_pw_6smelly_6layout_6splits_4Pair_38neighbors_for_window(P
 }
 
 /* "smelly/layout/splits.py":301
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:             # <<<<<<<<<<<<<<
  *             if is_horizontal:
@@ -11963,7 +11963,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_q
  *             if is_first:
  *                 return 'top', 'bottom'             # <<<<<<<<<<<<<<
  *             return 'bottom', 'top'
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(__pyx_tuple__6);
@@ -11983,7 +11983,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_q
  *             if is_first:
  *                 return 'top', 'bottom'
  *             return 'bottom', 'top'             # <<<<<<<<<<<<<<
- * 
+ *
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
  */
   __Pyx_XDECREF(__pyx_r);
@@ -11992,7 +11992,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_q
   goto __pyx_L0;
 
   /* "smelly/layout/splits.py":301
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:             # <<<<<<<<<<<<<<
  *             if is_horizontal:
@@ -12011,7 +12011,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_q
 
 /* "smelly/layout/splits.py":312
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:             # <<<<<<<<<<<<<<
  *             if not ans[which] and other:
  *                 if isinstance(other, Pair):
@@ -12302,7 +12302,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_20neighbors_for_window_6
 
 /* "smelly/layout/splits.py":312
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:             # <<<<<<<<<<<<<<
  *             if not ans[which] and other:
  *                 if isinstance(other, Pair):
@@ -12347,7 +12347,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_which);
 
   /* "smelly/layout/splits.py":313
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:
  *             if not ans[which] and other:             # <<<<<<<<<<<<<<
  *                 if isinstance(other, Pair):
@@ -12442,7 +12442,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
  *                     ans[which].extend(neighbors)
  *                 else:
  *                     ans[which].append(other)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:
  */
     /*else*/ {
@@ -12455,7 +12455,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
     __pyx_L6:;
 
     /* "smelly/layout/splits.py":313
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:
  *             if not ans[which] and other:             # <<<<<<<<<<<<<<
  *                 if isinstance(other, Pair):
@@ -12465,7 +12465,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
 
   /* "smelly/layout/splits.py":312
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:             # <<<<<<<<<<<<<<
  *             if not ans[which] and other:
  *                 if isinstance(other, Pair):
@@ -12491,7 +12491,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
 
 /* "smelly/layout/splits.py":320
  *                     ans[which].append(other)
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:             # <<<<<<<<<<<<<<
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
@@ -12579,11 +12579,11 @@ static PyObject *__pyx_pw_6smelly_6layout_6splits_4Pair_20neighbors_for_window_5
 }
 
 /* "smelly/layout/splits.py":321
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -12624,7 +12624,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)             # <<<<<<<<<<<<<<
- * 
+ *
  *             a1, a2 = edges(a)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12679,11 +12679,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
   goto __pyx_L0;
 
   /* "smelly/layout/splits.py":321
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
- * 
+ *
  */
 
   /* function exit code */
@@ -12703,7 +12703,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_2
 
 /* "smelly/layout/splits.py":320
  *                     ans[which].append(other)
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:             # <<<<<<<<<<<<<<
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
@@ -12741,11 +12741,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_direction);
 
   /* "smelly/layout/splits.py":321
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12778,10 +12778,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
 
   /* "smelly/layout/splits.py":324
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
- * 
+ *
  *             a1, a2 = edges(a)             # <<<<<<<<<<<<<<
  *             b1, b2 = edges(b)
- * 
+ *
  */
   __pyx_t_4 = __pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_24is_neighbouring_geometry_edges(__pyx_v_edges, __pyx_v_a); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 324, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -12795,11 +12795,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
@@ -12837,10 +12837,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
   __pyx_t_3 = 0;
 
   /* "smelly/layout/splits.py":325
- * 
+ *
  *             a1, a2 = edges(a)
  *             b1, b2 = edges(b)             # <<<<<<<<<<<<<<
- * 
+ *
  *             return a1 < b2 and a2 > b1
  */
   __pyx_t_4 = __pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_24is_neighbouring_geometry_edges(__pyx_v_edges, __pyx_v_b); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 325, __pyx_L1_error)
@@ -12855,11 +12855,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_1);
@@ -12898,9 +12898,9 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
 
   /* "smelly/layout/splits.py":327
  *             b1, b2 = edges(b)
- * 
+ *
  *             return a1 < b2 and a2 > b1             # <<<<<<<<<<<<<<
- * 
+ *
  *         other = self.two if self.one == window_id else self.one
  */
   __Pyx_XDECREF(__pyx_r);
@@ -12925,7 +12925,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
 
   /* "smelly/layout/splits.py":320
  *                     ans[which].append(other)
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:             # <<<<<<<<<<<<<<
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
@@ -12953,7 +12953,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_20neighbors_for_window_4
 
 /* "smelly/layout/splits.py":300
  *                             yield edges._replace(top=extent.start, bottom=extent.end)
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:
  *             if is_horizontal:
@@ -12998,7 +12998,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_ans);
 
   /* "smelly/layout/splits.py":301
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:             # <<<<<<<<<<<<<<
  *             if is_horizontal:
@@ -13037,9 +13037,9 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
 
   /* "smelly/layout/splits.py":310
  *             return 'bottom', 'top'
- * 
+ *
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}             # <<<<<<<<<<<<<<
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:
  */
   { /* enter inner scope */
@@ -13117,7 +13117,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
 
   /* "smelly/layout/splits.py":312
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:             # <<<<<<<<<<<<<<
  *             if not ans[which] and other:
  *                 if isinstance(other, Pair):
@@ -13161,7 +13161,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
 
   /* "smelly/layout/splits.py":320
  *                     ans[which].append(other)
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:             # <<<<<<<<<<<<<<
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
@@ -13188,10 +13188,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
 
   /* "smelly/layout/splits.py":329
  *             return a1 < b2 and a2 > b1
- * 
+ *
  *         other = self.two if self.one == window_id else self.one             # <<<<<<<<<<<<<<
  *         extend(other, *quadrant(self.horizontal, self.one == window_id))
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_one); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 329, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -13214,10 +13214,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
   __pyx_t_4 = 0;
 
   /* "smelly/layout/splits.py":330
- * 
+ *
  *         other = self.two if self.one == window_id else self.one
  *         extend(other, *quadrant(self.horizontal, self.one == window_id))             # <<<<<<<<<<<<<<
- * 
+ *
  *         child = self
  */
   __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 330, __pyx_L1_error)
@@ -13249,7 +13249,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
 
   /* "smelly/layout/splits.py":332
  *         extend(other, *quadrant(self.horizontal, self.one == window_id))
- * 
+ *
  *         child = self             # <<<<<<<<<<<<<<
  *         while True:
  *             parent = child.parent(layout_object.pairs_root)
@@ -13258,7 +13258,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
   __pyx_v_child = __pyx_v_self;
 
   /* "smelly/layout/splits.py":333
- * 
+ *
  *         child = self
  *         while True:             # <<<<<<<<<<<<<<
  *             parent = child.parent(layout_object.pairs_root)
@@ -13355,7 +13355,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
  *             other = parent.two if child is parent.one else parent.one
  *             extend(other, *quadrant(parent.horizontal, child is parent.one))             # <<<<<<<<<<<<<<
  *             child = parent
- * 
+ *
  */
     __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 338, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -13390,7 +13390,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
  *             other = parent.two if child is parent.one else parent.one
  *             extend(other, *quadrant(parent.horizontal, child is parent.one))
  *             child = parent             # <<<<<<<<<<<<<<
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:
  */
     __Pyx_INCREF(__pyx_v_parent);
@@ -13400,7 +13400,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_4Pair_37neighbors_for_window(C
 
   /* "smelly/layout/splits.py":300
  *                             yield edges._replace(top=extent.start, bottom=extent.end)
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:
  *             if is_horizontal:
@@ -13433,7 +13433,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_41generator3(__pyx_Corou
 
 /* "smelly/layout/splits.py":341
  *             child = parent
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.is_redundant:
  *             q = self.one or self.two
@@ -13582,7 +13582,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_41generator3(__pyx_Corou
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 341, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":342
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:
  *         if self.is_redundant:             # <<<<<<<<<<<<<<
  *             q = self.one or self.two
@@ -13731,7 +13731,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_41generator3(__pyx_Corou
     }
 
     /* "smelly/layout/splits.py":342
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:
  *         if self.is_redundant:             # <<<<<<<<<<<<<<
  *             q = self.one or self.two
@@ -14051,8 +14051,8 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_41generator3(__pyx_Corou
  *                         yield from q.edge_windows(edge)
  *                     else:
  *                         yield q             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         /*else*/ {
           __Pyx_INCREF(__pyx_cur_scope->__pyx_v_q);
@@ -14099,7 +14099,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_41generator3(__pyx_Corou
 
   /* "smelly/layout/splits.py":341
  *             child = parent
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.is_redundant:
  *             q = self.one or self.two
@@ -14128,10 +14128,10 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_4Pair_41generator3(__pyx_Corou
 
 /* "smelly/layout/splits.py":369
  *     default_axis_is_horizontal: bool = True
- * 
+ *
  *     def __init__(self, data: Dict[str, str]):             # <<<<<<<<<<<<<<
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  */
 
 /* Python wrapper */
@@ -14210,10 +14210,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_16SplitsLayoutOpts___init__(CY
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/layout/splits.py":370
- * 
+ *
  *     def __init__(self, data: Dict[str, str]):
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'             # <<<<<<<<<<<<<<
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_data, __pyx_n_s_get); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 370, __pyx_L1_error)
@@ -14228,10 +14228,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_16SplitsLayoutOpts___init__(CY
 
   /* "smelly/layout/splits.py":369
  *     default_axis_is_horizontal: bool = True
- * 
+ *
  *     def __init__(self, data: Dict[str, str]):             # <<<<<<<<<<<<<<
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  */
 
   /* function exit code */
@@ -14250,10 +14250,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_16SplitsLayoutOpts___init__(CY
 
 /* "smelly/layout/splits.py":372
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'default_axis_is_horizontal': self.default_axis_is_horizontal}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -14281,11 +14281,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_16SplitsLayoutOpts_2serialized
   __Pyx_RefNannySetupContext("serialized", 0);
 
   /* "smelly/layout/splits.py":373
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:
  *         return {'default_axis_is_horizontal': self.default_axis_is_horizontal}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 373, __pyx_L1_error)
@@ -14300,10 +14300,10 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_16SplitsLayoutOpts_2serialized
 
   /* "smelly/layout/splits.py":372
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'default_axis_is_horizontal': self.default_axis_is_horizontal}
- * 
+ *
  */
 
   /* function exit code */
@@ -14319,11 +14319,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_16SplitsLayoutOpts_2serialized
 }
 
 /* "smelly/layout/splits.py":383
- * 
+ *
  *     @property
  *     def default_axis_is_horizontal(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.layout_opts.default_axis_is_horizontal
- * 
+ *
  */
 
 /* Python wrapper */
@@ -14354,7 +14354,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_default_axis_is_horizo
  *     @property
  *     def default_axis_is_horizontal(self) -> bool:
  *         return self.layout_opts.default_axis_is_horizontal             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14368,11 +14368,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_default_axis_is_horizo
   goto __pyx_L0;
 
   /* "smelly/layout/splits.py":383
- * 
+ *
  *     @property
  *     def default_axis_is_horizontal(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.layout_opts.default_axis_is_horizontal
- * 
+ *
  */
 
   /* function exit code */
@@ -14388,7 +14388,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_default_axis_is_horizo
 }
 
 /* "smelly/layout/splits.py":387
- * 
+ *
  *     @property
  *     def pairs_root(self) -> Pair:             # <<<<<<<<<<<<<<
  *         root: Optional[Pair] = getattr(self, '_pairs_root', None)
@@ -14451,7 +14451,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_2pairs_root(CYTHON_UNU
  *         if root is None:
  *             self._pairs_root = root = Pair(horizontal=self.default_axis_is_horizontal)             # <<<<<<<<<<<<<<
  *         return root
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Pair); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 390, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -14483,7 +14483,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_2pairs_root(CYTHON_UNU
  *         if root is None:
  *             self._pairs_root = root = Pair(horizontal=self.default_axis_is_horizontal)
  *         return root             # <<<<<<<<<<<<<<
- * 
+ *
  *     @pairs_root.setter
  */
   __Pyx_XDECREF(__pyx_r);
@@ -14492,7 +14492,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_2pairs_root(CYTHON_UNU
   goto __pyx_L0;
 
   /* "smelly/layout/splits.py":387
- * 
+ *
  *     @property
  *     def pairs_root(self) -> Pair:             # <<<<<<<<<<<<<<
  *         root: Optional[Pair] = getattr(self, '_pairs_root', None)
@@ -14514,11 +14514,11 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_2pairs_root(CYTHON_UNU
 }
 
 /* "smelly/layout/splits.py":394
- * 
+ *
  *     @pairs_root.setter
  *     def pairs_root(self, root: Pair) -> None:             # <<<<<<<<<<<<<<
  *         self._pairs_root = root
- * 
+ *
  */
 
 /* Python wrapper */
@@ -14598,17 +14598,17 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_4pairs_root(CYTHON_UNU
  *     @pairs_root.setter
  *     def pairs_root(self, root: Pair) -> None:
  *         self._pairs_root = root             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_windows(self, *windows_to_remove: int) -> None:
  */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pairs_root_2, __pyx_v_root) < 0) __PYX_ERR(0, 395, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":394
- * 
+ *
  *     @pairs_root.setter
  *     def pairs_root(self, root: Pair) -> None:             # <<<<<<<<<<<<<<
  *         self._pairs_root = root
- * 
+ *
  */
 
   /* function exit code */
@@ -14625,7 +14625,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_4pairs_root(CYTHON_UNU
 
 /* "smelly/layout/splits.py":397
  *         self._pairs_root = root
- * 
+ *
  *     def remove_windows(self, *windows_to_remove: int) -> None:             # <<<<<<<<<<<<<<
  *         root = self.pairs_root
  *         for pair in root.self_and_descendants():
@@ -14720,7 +14720,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_6remove_windows(CYTHON
   __Pyx_RefNannySetupContext("remove_windows", 0);
 
   /* "smelly/layout/splits.py":398
- * 
+ *
  *     def remove_windows(self, *windows_to_remove: int) -> None:
  *         root = self.pairs_root             # <<<<<<<<<<<<<<
  *         for pair in root.self_and_descendants():
@@ -14918,7 +14918,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_6remove_windows(CYTHON
  *             q = root.one or root.two
  *             if isinstance(q, Pair):             # <<<<<<<<<<<<<<
  *                 self.pairs_root = q
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Pair); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 404, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -14931,7 +14931,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_6remove_windows(CYTHON
  *             q = root.one or root.two
  *             if isinstance(q, Pair):
  *                 self.pairs_root = q             # <<<<<<<<<<<<<<
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:
  */
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pairs_root, __pyx_v_q) < 0) __PYX_ERR(0, 405, __pyx_L1_error)
@@ -14941,7 +14941,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_6remove_windows(CYTHON
  *             q = root.one or root.two
  *             if isinstance(q, Pair):             # <<<<<<<<<<<<<<
  *                 self.pairs_root = q
- * 
+ *
  */
     }
 
@@ -14956,7 +14956,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_6remove_windows(CYTHON
 
   /* "smelly/layout/splits.py":397
  *         self._pairs_root = root
- * 
+ *
  *     def remove_windows(self, *windows_to_remove: int) -> None:             # <<<<<<<<<<<<<<
  *         root = self.pairs_root
  *         for pair in root.self_and_descendants():
@@ -14983,7 +14983,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_6remove_windows(CYTHON
 
 /* "smelly/layout/splits.py":407
  *                 self.pairs_root = q
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -15181,7 +15181,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_9do_layout_2generator8
 
 /* "smelly/layout/splits.py":407
  *                 self.pairs_root = q
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -15230,7 +15230,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
   }
 
   /* "smelly/layout/splits.py":408
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:
  *         groups = tuple(all_windows.iter_all_layoutable_groups())             # <<<<<<<<<<<<<<
  *         window_count = len(groups)
@@ -15495,7 +15495,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
  *         if windows_to_add:
  *             for wid in sorted(windows_to_add, key=id_idx_map.__getitem__):             # <<<<<<<<<<<<<<
  *                 root.balanced_add(wid)
- * 
+ *
  */
     __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 420, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -15559,7 +15559,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
  *         if windows_to_add:
  *             for wid in sorted(windows_to_add, key=id_idx_map.__getitem__):
  *                 root.balanced_add(wid)             # <<<<<<<<<<<<<<
- * 
+ *
  *         if window_count == 1:
  */
       __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_balanced_add); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 421, __pyx_L1_error)
@@ -15586,7 +15586,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
  *         if windows_to_add:
  *             for wid in sorted(windows_to_add, key=id_idx_map.__getitem__):             # <<<<<<<<<<<<<<
  *                 root.balanced_add(wid)
- * 
+ *
  */
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15602,7 +15602,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
 
   /* "smelly/layout/splits.py":423
  *                 root.balanced_add(wid)
- * 
+ *
  *         if window_count == 1:             # <<<<<<<<<<<<<<
  *             self.layout_single_window_group(groups[0])
  *         else:
@@ -15611,7 +15611,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
   if (__pyx_t_5) {
 
     /* "smelly/layout/splits.py":424
- * 
+ *
  *         if window_count == 1:
  *             self.layout_single_window_group(groups[0])             # <<<<<<<<<<<<<<
  *         else:
@@ -15641,7 +15641,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
 
     /* "smelly/layout/splits.py":423
  *                 root.balanced_add(wid)
- * 
+ *
  *         if window_count == 1:             # <<<<<<<<<<<<<<
  *             self.layout_single_window_group(groups[0])
  *         else:
@@ -15653,7 +15653,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
  *             self.layout_single_window_group(groups[0])
  *         else:
  *             root.layout_pair(lgd.central.left, lgd.central.top, lgd.central.width, lgd.central.height, id_window_map, self)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:
  */
   /*else*/ {
@@ -15762,7 +15762,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
 
   /* "smelly/layout/splits.py":407
  *                 self.pairs_root = q
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -15803,7 +15803,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_8do_layout(CYTHON_UNUS
 
 /* "smelly/layout/splits.py":428
  *             root.layout_pair(lgd.central.left, lgd.central.top, lgd.central.width, lgd.central.height, id_window_map, self)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         horizontal = self.default_axis_is_horizontal
  *         after = True
@@ -15923,7 +15923,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_10add_non_overlay_wind
   __Pyx_RefNannySetupContext("add_non_overlay_window", 0);
 
   /* "smelly/layout/splits.py":429
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:
  *         horizontal = self.default_axis_is_horizontal             # <<<<<<<<<<<<<<
  *         after = True
@@ -16331,7 +16331,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_10add_non_overlay_wind
  *                 pair.split_and_add(group_id, target_group.id, horizontal, after)
  *                 return             # <<<<<<<<<<<<<<
  *         all_windows.add_window(window)
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -16359,7 +16359,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_10add_non_overlay_wind
  *                 pair.split_and_add(group_id, target_group.id, horizontal, after)
  *                 return
  *         all_windows.add_window(window)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_all_windows, __pyx_n_s_add_window); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 451, __pyx_L1_error)
@@ -16383,7 +16383,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_10add_non_overlay_wind
 
   /* "smelly/layout/splits.py":428
  *             root.layout_pair(lgd.central.left, lgd.central.top, lgd.central.width, lgd.central.height, id_window_map, self)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         horizontal = self.default_axis_is_horizontal
  *         after = True
@@ -16417,7 +16417,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_10add_non_overlay_wind
 
 /* "smelly/layout/splits.py":453
  *         all_windows.add_window(window)
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         grp = all_windows.group_for_window(window_id)
  *         if grp is None:
@@ -16547,7 +16547,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12modify_size_of_windo
   __Pyx_RefNannySetupContext("modify_size_of_window", 0);
 
   /* "smelly/layout/splits.py":454
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:
  *         grp = all_windows.group_for_window(window_id)             # <<<<<<<<<<<<<<
  *         if grp is None:
@@ -16675,7 +16675,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12modify_size_of_windo
  *             return False
  *         which = 1 if pair.one == grp.id else 2             # <<<<<<<<<<<<<<
  *         return pair.modify_size_of_child(which, increment, is_horizontal, self)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_pair, __pyx_n_s_one); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 460, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -16697,7 +16697,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12modify_size_of_windo
  *             return False
  *         which = 1 if pair.one == grp.id else 2
  *         return pair.modify_size_of_child(which, increment, is_horizontal, self)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def remove_all_biases(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -16768,7 +16768,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12modify_size_of_windo
 
   /* "smelly/layout/splits.py":453
  *         all_windows.add_window(window)
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         grp = all_windows.group_for_window(window_id)
  *         if grp is None:
@@ -16794,7 +16794,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12modify_size_of_windo
 
 /* "smelly/layout/splits.py":463
  *         return pair.modify_size_of_child(which, increment, is_horizontal, self)
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         for pair in self.pairs_root.self_and_descendants():
  *             pair.bias = 0.5
@@ -16829,7 +16829,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_14remove_all_biases(CY
   __Pyx_RefNannySetupContext("remove_all_biases", 0);
 
   /* "smelly/layout/splits.py":464
- * 
+ *
  *     def remove_all_biases(self) -> bool:
  *         for pair in self.pairs_root.self_and_descendants():             # <<<<<<<<<<<<<<
  *             pair.bias = 0.5
@@ -16903,12 +16903,12 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_14remove_all_biases(CY
  *         for pair in self.pairs_root.self_and_descendants():
  *             pair.bias = 0.5             # <<<<<<<<<<<<<<
  *         return True
- * 
+ *
  */
     if (__Pyx_PyObject_SetAttrStr(__pyx_v_pair, __pyx_n_s_bias, __pyx_float_0_5) < 0) __PYX_ERR(0, 465, __pyx_L1_error)
 
     /* "smelly/layout/splits.py":464
- * 
+ *
  *     def remove_all_biases(self) -> bool:
  *         for pair in self.pairs_root.self_and_descendants():             # <<<<<<<<<<<<<<
  *             pair.bias = 0.5
@@ -16921,7 +16921,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_14remove_all_biases(CY
  *         for pair in self.pairs_root.self_and_descendants():
  *             pair.bias = 0.5
  *         return True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -16931,7 +16931,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_14remove_all_biases(CY
 
   /* "smelly/layout/splits.py":463
  *         return pair.modify_size_of_child(which, increment, is_horizontal, self)
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         for pair in self.pairs_root.self_and_descendants():
  *             pair.bias = 0.5
@@ -16954,7 +16954,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
 
 /* "smelly/layout/splits.py":468
  *         return True
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -17100,7 +17100,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 468, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":469
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:
  *         groups = tuple(all_windows.iter_all_layoutable_groups())             # <<<<<<<<<<<<<<
  *         window_count = len(groups)
@@ -17526,11 +17526,11 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_11 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_11 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_11 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_11 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_11);
       __Pyx_INCREF(__pyx_t_1);
@@ -17659,7 +17659,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
  *                     color = BorderColor.active if grp_id is active_group_id else BorderColor.bell
  *                     for edges in qpair.borders_for_window(self, grp_id):             # <<<<<<<<<<<<<<
  *                         yield BorderLine(edges, color)
- * 
+ *
  */
         __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_qpair, __pyx_n_s_borders_for_window); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 484, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
@@ -17757,7 +17757,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
  *                     color = BorderColor.active if grp_id is active_group_id else BorderColor.bell
  *                     for edges in qpair.borders_for_window(self, grp_id):
  *                         yield BorderLine(edges, color)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:
  */
           __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_BorderLine); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 485, __pyx_L1_error)
@@ -17841,7 +17841,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
  *                     color = BorderColor.active if grp_id is active_group_id else BorderColor.bell
  *                     for edges in qpair.borders_for_window(self, grp_id):             # <<<<<<<<<<<<<<
  *                         yield BorderLine(edges, color)
- * 
+ *
  */
         }
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -17877,7 +17877,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
 
   /* "smelly/layout/splits.py":468
  *         return True
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -17907,7 +17907,7 @@ static PyObject *__pyx_gb_6smelly_6layout_6splits_6Splits_18generator4(__pyx_Cor
 
 /* "smelly/layout/splits.py":487
  *                         yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -18009,7 +18009,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_19neighbors_for_window
   __Pyx_RefNannySetupContext("neighbors_for_window", 0);
 
   /* "smelly/layout/splits.py":488
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:
  *         wg = all_windows.group_for_window(window)             # <<<<<<<<<<<<<<
  *         assert wg is not None
@@ -18129,7 +18129,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_19neighbors_for_window
  *         if pair is not None:
  *             pair.neighbors_for_window(wg.id, ans, self, all_windows)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_pair, __pyx_n_s_neighbors_for_window); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 493, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -18203,7 +18203,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_19neighbors_for_window
  *         if pair is not None:
  *             pair.neighbors_for_window(wg.id, ans, self, all_windows)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -18213,7 +18213,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_19neighbors_for_window
 
   /* "smelly/layout/splits.py":487
  *                         yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -18239,7 +18239,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_19neighbors_for_window
 
 /* "smelly/layout/splits.py":496
  *         return ans
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = all_windows.active_group
  *         if before is None:
@@ -18343,7 +18343,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_21move_window_to_group
   __Pyx_RefNannySetupContext("move_window_to_group", 0);
 
   /* "smelly/layout/splits.py":497
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:
  *         before = all_windows.active_group             # <<<<<<<<<<<<<<
  *         if before is None:
@@ -18516,7 +18516,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_21move_window_to_group
  *         if moved and before.id != after.id:
  *             self.pairs_root.swap_windows(before.id, after.id)             # <<<<<<<<<<<<<<
  *         return moved
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pairs_root); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 504, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -18591,7 +18591,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_21move_window_to_group
  *         if moved and before.id != after.id:
  *             self.pairs_root.swap_windows(before.id, after.id)
  *         return moved             # <<<<<<<<<<<<<<
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -18601,7 +18601,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_21move_window_to_group
 
   /* "smelly/layout/splits.py":496
  *         return ans
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = all_windows.active_group
  *         if before is None:
@@ -18629,7 +18629,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_21move_window_to_group
 
 /* "smelly/layout/splits.py":507
  *         return moved
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         if action_name == 'rotate':
  *             args = args or ('90',)
@@ -18756,7 +18756,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_23layout_action(CYTHON
   __Pyx_INCREF(__pyx_v_args);
 
   /* "smelly/layout/splits.py":508
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:
  *         if action_name == 'rotate':             # <<<<<<<<<<<<<<
  *             args = args or ('90',)
@@ -19175,7 +19175,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_23layout_action(CYTHON
     }
 
     /* "smelly/layout/splits.py":508
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:
  *         if action_name == 'rotate':             # <<<<<<<<<<<<<<
  *             args = args or ('90',)
@@ -19435,7 +19435,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_23layout_action(CYTHON
  *                     new_root.two = wg.id
  *                 self.pairs_root = new_root             # <<<<<<<<<<<<<<
  *                 return True
- * 
+ *
  */
       if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_pairs_root, __pyx_v_new_root) < 0) __PYX_ERR(0, 541, __pyx_L1_error)
 
@@ -19443,7 +19443,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_23layout_action(CYTHON
  *                     new_root.two = wg.id
  *                 self.pairs_root = new_root
  *                 return True             # <<<<<<<<<<<<<<
- * 
+ *
  *         return None
  */
       __Pyx_XDECREF(__pyx_r);
@@ -19472,9 +19472,9 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_23layout_action(CYTHON
 
   /* "smelly/layout/splits.py":544
  *                 return True
- * 
+ *
  *         return None             # <<<<<<<<<<<<<<
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -19483,7 +19483,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_23layout_action(CYTHON
 
   /* "smelly/layout/splits.py":507
  *         return moved
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         if action_name == 'rotate':
  *             args = args or ('90',)
@@ -19511,7 +19511,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_23layout_action(CYTHON
 
 /* "smelly/layout/splits.py":546
  *         return None
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         def add_pair(p: Pair) -> Dict[str, Any]:
  *             ans: Dict[str, Any] = {}
@@ -19532,7 +19532,7 @@ static PyObject *__pyx_pw_6smelly_6layout_6splits_6Splits_26layout_state(PyObjec
 }
 
 /* "smelly/layout/splits.py":547
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:
  *         def add_pair(p: Pair) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *             ans: Dict[str, Any] = {}
@@ -19747,7 +19747,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12layout_state_add_pai
  *             elif p.two is not None:
  *                 ans['two'] = p.two             # <<<<<<<<<<<<<<
  *             return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_p, __pyx_n_s_two); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 558, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -19768,7 +19768,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12layout_state_add_pai
  *             elif p.two is not None:
  *                 ans['two'] = p.two
  *             return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *         return {'pairs': add_pair(self.pairs_root)}
  */
   __Pyx_XDECREF(__pyx_r);
@@ -19777,7 +19777,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12layout_state_add_pai
   goto __pyx_L0;
 
   /* "smelly/layout/splits.py":547
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:
  *         def add_pair(p: Pair) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *             ans: Dict[str, Any] = {}
@@ -19799,7 +19799,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_12layout_state_add_pai
 
 /* "smelly/layout/splits.py":546
  *         return None
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         def add_pair(p: Pair) -> Dict[str, Any]:
  *             ans: Dict[str, Any] = {}
@@ -19827,7 +19827,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_25layout_state(CYTHON_
   }
 
   /* "smelly/layout/splits.py":547
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:
  *         def add_pair(p: Pair) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *             ans: Dict[str, Any] = {}
@@ -19867,7 +19867,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_25layout_state(CYTHON_
 
   /* "smelly/layout/splits.py":561
  *             return ans
- * 
+ *
  *         return {'pairs': add_pair(self.pairs_root)}             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
@@ -19886,7 +19886,7 @@ static PyObject *__pyx_pf_6smelly_6layout_6splits_6Splits_25layout_state(CYTHON_
 
   /* "smelly/layout/splits.py":546
  *         return None
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         def add_pair(p: Pair) -> Dict[str, Any]:
  *             ans: Dict[str, Any] = {}
@@ -22125,7 +22125,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             if is_first:
  *                 return 'top', 'bottom'             # <<<<<<<<<<<<<<
  *             return 'bottom', 'top'
- * 
+ *
  */
   __pyx_tuple__6 = PyTuple_Pack(2, __pyx_n_s_top, __pyx_n_s_bottom); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 307, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
@@ -22135,7 +22135,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *             if is_first:
  *                 return 'top', 'bottom'
  *             return 'bottom', 'top'             # <<<<<<<<<<<<<<
- * 
+ *
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
  */
   __pyx_tuple__7 = PyTuple_Pack(2, __pyx_n_s_bottom, __pyx_n_s_top); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 308, __pyx_L1_error)
@@ -22143,11 +22143,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__7);
 
   /* "smelly/layout/splits.py":321
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:             # <<<<<<<<<<<<<<
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(1, __pyx_n_s_g); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 321, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -22155,7 +22155,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_splits_py, __pyx_n_s_edges, 321, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 321, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":301
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:             # <<<<<<<<<<<<<<
  *             if is_horizontal:
@@ -22168,7 +22168,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":312
  *         geometries = {group.id: group.geometry for group in all_windows.groups if group.geometry}
- * 
+ *
  *         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:             # <<<<<<<<<<<<<<
  *             if not ans[which] and other:
  *                 if isinstance(other, Pair):
@@ -22180,7 +22180,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":320
  *                     ans[which].append(other)
- * 
+ *
  *         def is_neighbouring_geometry(a: WindowGeometry, b: WindowGeometry, direction: str) -> bool:             # <<<<<<<<<<<<<<
  *             def edges(g: WindowGeometry) -> Tuple[int, int]:
  *                 return (g.top, g.bottom) if direction in ['left', 'right'] else (g.left, g.right)
@@ -22191,10 +22191,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(3, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_splits_py, __pyx_n_s_is_neighbouring_geometry, 320, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 320, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":370
- * 
+ *
  *     def __init__(self, data: Dict[str, str]):
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'             # <<<<<<<<<<<<<<
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:
  */
   __pyx_tuple__17 = PyTuple_Pack(2, __pyx_n_s_split_axis, __pyx_n_s_horizontal); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 370, __pyx_L1_error)
@@ -22224,7 +22224,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__20);
 
   /* "smelly/layout/splits.py":547
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:
  *         def add_pair(p: Pair) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *             ans: Dict[str, Any] = {}
@@ -22236,7 +22236,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_splits_py, __pyx_n_s_add_pair, 547, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 547, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":20
- * 
+ *
  * class Pair:
  *     def __init__(self, horizontal: bool = True):             # <<<<<<<<<<<<<<
  *         self.horizontal = horizontal
@@ -22252,7 +22252,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":29
  *         self.first_extent = self.second_extent = Extent()
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(
  *             self.horizontal, self.bias, self.one, self.two, self.between_borders
@@ -22264,7 +22264,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":34
  *         )
- * 
+ *
  *     def all_window_ids(self) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.one is not None:
  *             if isinstance(self.one, Pair):
@@ -22276,7 +22276,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":46
  *                 yield self.two
- * 
+ *
  *     def self_and_descendants(self) -> Generator['Pair', None, None]:             # <<<<<<<<<<<<<<
  *         yield self
  *         if isinstance(self.one, Pair):
@@ -22291,7 +22291,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":53
  *             yield from self.two.self_and_descendants()
- * 
+ *
  *     def pair_for_window(self, window_id: int) -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         if self.one == window_id or self.two == window_id:
  *             return self
@@ -22303,7 +22303,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":63
  *         return ans
- * 
+ *
  *     def swap_windows(self, a: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *         pa = self.pair_for_window(a)
  *         pb = self.pair_for_window(b)
@@ -22315,7 +22315,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":79
  *                 pa.two, pb.two = pb.two, pa.two
- * 
+ *
  *     def parent(self, root: 'Pair') -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         for q in root.self_and_descendants():
  *             if q.one is self or q.two is self:
@@ -22327,7 +22327,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":85
  *         return None
- * 
+ *
  *     def remove_windows(self, window_ids: Collection[int]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(self.one, int) and self.one in window_ids:
  *             self.one = None
@@ -22338,11 +22338,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__38 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__37, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_splits_py, __pyx_n_s_remove_windows, 85, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__38)) __PYX_ERR(0, 85, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":94
- * 
+ *
  *     @property
  *     def is_redundant(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.one is None or self.two is None
- * 
+ *
  */
   __pyx_tuple__39 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__39);
@@ -22351,7 +22351,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":97
  *         return self.one is None or self.two is None
- * 
+ *
  *     def collapse_redundant_pairs(self) -> None:             # <<<<<<<<<<<<<<
  *         while isinstance(self.one, Pair) and self.one.is_redundant:
  *             self.one = self.one.one or self.one.two
@@ -22363,7 +22363,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":107
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':             # <<<<<<<<<<<<<<
  *         if self.one is None or self.two is None:
  *             if self.one is None:
@@ -22375,7 +22375,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":138
  *         return pair
- * 
+ *
  *     def split_and_add(self, existing_window_id: int, new_window_id: int, horizontal: bool, after: bool) -> 'Pair':             # <<<<<<<<<<<<<<
  *         q = (existing_window_id, new_window_id) if after else (new_window_id, existing_window_id)
  *         if self.is_redundant:
@@ -22387,7 +22387,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":153
  *         return pair
- * 
+ *
  *     def apply_window_geometry(self, window_id: int, window_geometry: WindowGeometry, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         wg = id_window_map[window_id]
  *         wg.set_geometry(window_geometry)
@@ -22399,7 +22399,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":158
  *         layout_object.blank_rects.extend(blank_rects_for_window(window_geometry))
- * 
+ *
  *     def effective_border(self, id_window_map: Dict[int, WindowGroup]) -> int:             # <<<<<<<<<<<<<<
  *         for wid in self.all_window_ids():
  *             return id_window_map[wid].effective_border()
@@ -22411,7 +22411,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":163
  *         return 0
- * 
+ *
  *     def layout_pair(self, left: int, top: int, width: int, height: int, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         self.between_borders = []
  *         self.left, self.top, self.width, self.height = left, top, width, height
@@ -22423,7 +22423,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":236
  *                 self.apply_window_geometry(self.two, geom, id_window_map, layout_object)
- * 
+ *
  *     def modify_size_of_child(self, which: int, increment: float, is_horizontal: bool, layout_object: 'Splits') -> bool:             # <<<<<<<<<<<<<<
  *         if is_horizontal == self.horizontal and not self.is_redundant:
  *             if which == 2:
@@ -22435,7 +22435,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":251
  *         return False
- * 
+ *
  *     def borders_for_window(self, layout_object: 'Splits', window_id: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *         is_first = self.one == window_id
  *         if self.between_borders:
@@ -22447,7 +22447,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":300
  *                             yield edges._replace(top=extent.start, bottom=extent.end)
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:
  *             if is_horizontal:
@@ -22459,7 +22459,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":341
  *             child = parent
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.is_redundant:
  *             q = self.one or self.two
@@ -22471,10 +22471,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":369
  *     default_axis_is_horizontal: bool = True
- * 
+ *
  *     def __init__(self, data: Dict[str, str]):             # <<<<<<<<<<<<<<
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_data); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 369, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
@@ -22483,10 +22483,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":372
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'default_axis_is_horizontal': self.default_axis_is_horizontal}
- * 
+ *
  */
   __pyx_tuple__61 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 372, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
@@ -22494,11 +22494,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_splits_py, __pyx_n_s_serialized, 372, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 372, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":383
- * 
+ *
  *     @property
  *     def default_axis_is_horizontal(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.layout_opts.default_axis_is_horizontal
- * 
+ *
  */
   __pyx_tuple__63 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
@@ -22506,7 +22506,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__64 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__63, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_splits_py, __pyx_n_s_default_axis_is_horizontal, 383, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__64)) __PYX_ERR(0, 383, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":387
- * 
+ *
  *     @property
  *     def pairs_root(self) -> Pair:             # <<<<<<<<<<<<<<
  *         root: Optional[Pair] = getattr(self, '_pairs_root', None)
@@ -22518,11 +22518,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__66 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__65, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_layout_splits_py, __pyx_n_s_pairs_root, 387, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__66)) __PYX_ERR(0, 387, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":394
- * 
+ *
  *     @pairs_root.setter
  *     def pairs_root(self, root: Pair) -> None:             # <<<<<<<<<<<<<<
  *         self._pairs_root = root
- * 
+ *
  */
   __pyx_tuple__67 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_root); if (unlikely(!__pyx_tuple__67)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__67);
@@ -22531,7 +22531,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":397
  *         self._pairs_root = root
- * 
+ *
  *     def remove_windows(self, *windows_to_remove: int) -> None:             # <<<<<<<<<<<<<<
  *         root = self.pairs_root
  *         for pair in root.self_and_descendants():
@@ -22543,7 +22543,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":407
  *                 self.pairs_root = q
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -22555,7 +22555,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":428
  *             root.layout_pair(lgd.central.left, lgd.central.top, lgd.central.width, lgd.central.height, id_window_map, self)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         horizontal = self.default_axis_is_horizontal
  *         after = True
@@ -22567,7 +22567,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":453
  *         all_windows.add_window(window)
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         grp = all_windows.group_for_window(window_id)
  *         if grp is None:
@@ -22582,7 +22582,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":463
  *         return pair.modify_size_of_child(which, increment, is_horizontal, self)
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         for pair in self.pairs_root.self_and_descendants():
  *             pair.bias = 0.5
@@ -22594,7 +22594,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":468
  *         return True
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -22606,7 +22606,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":487
  *                         yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -22618,7 +22618,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":496
  *         return ans
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = all_windows.active_group
  *         if before is None:
@@ -22630,7 +22630,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":507
  *         return moved
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         if action_name == 'rotate':
  *             args = args or ('90',)
@@ -22642,7 +22642,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/layout/splits.py":546
  *         return None
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         def add_pair(p: Pair) -> Dict[str, Any]:
  *             ans: Dict[str, Any] = {}
@@ -23072,9 +23072,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Any, Collection, Dict, Generator, List, NamedTuple, Optional, Sequence, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.borders import BorderColor
  */
   __pyx_t_1 = PyList_New(10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -23156,7 +23156,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":6
  * from typing import Any, Collection, Dict, Generator, List, NamedTuple, Optional, Sequence, Tuple, Union
- * 
+ *
  * from smelly.borders import BorderColor             # <<<<<<<<<<<<<<
  * from smelly.types import Edges, WindowGeometry
  * from smelly.typing import EdgeLiteral, WindowType
@@ -23176,7 +23176,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/splits.py":7
- * 
+ *
  * from smelly.borders import BorderColor
  * from smelly.types import Edges, WindowGeometry             # <<<<<<<<<<<<<<
  * from smelly.typing import EdgeLiteral, WindowType
@@ -23208,7 +23208,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import Edges, WindowGeometry
  * from smelly.typing import EdgeLiteral, WindowType             # <<<<<<<<<<<<<<
  * from smelly.window_list import WindowGroup, WindowList
- * 
+ *
  */
   __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -23235,7 +23235,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.types import Edges, WindowGeometry
  * from smelly.typing import EdgeLiteral, WindowType
  * from smelly.window_list import WindowGroup, WindowList             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import BorderLine, Layout, LayoutOpts, NeighborsMap, blank_rects_for_window, lgd, window_geometry_from_layouts
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -23261,10 +23261,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":11
  * from smelly.window_list import WindowGroup, WindowList
- * 
+ *
  * from .base import BorderLine, Layout, LayoutOpts, NeighborsMap, blank_rects_for_window, lgd, window_geometry_from_layouts             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -23323,8 +23323,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/splits.py":14
- * 
- * 
+ *
+ *
  * class Extent(NamedTuple):             # <<<<<<<<<<<<<<
  *     start: int = 0
  *     end: int = 0
@@ -23342,11 +23342,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/layout/splits.py":15
- * 
+ *
  * class Extent(NamedTuple):
  *     start: int = 0             # <<<<<<<<<<<<<<
  *     end: int = 0
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start, __pyx_int_0) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
 
@@ -23354,14 +23354,14 @@ if (!__Pyx_RefNanny) {
  * class Extent(NamedTuple):
  *     start: int = 0
  *     end: int = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_end, __pyx_int_0) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":14
- * 
- * 
+ *
+ *
  * class Extent(NamedTuple):             # <<<<<<<<<<<<<<
  *     start: int = 0
  *     end: int = 0
@@ -23375,8 +23375,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/splits.py":19
- * 
- * 
+ *
+ *
  * class Pair:             # <<<<<<<<<<<<<<
  *     def __init__(self, horizontal: bool = True):
  *         self.horizontal = horizontal
@@ -23385,7 +23385,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "smelly/layout/splits.py":20
- * 
+ *
  * class Pair:
  *     def __init__(self, horizontal: bool = True):             # <<<<<<<<<<<<<<
  *         self.horizontal = horizontal
@@ -23404,7 +23404,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":29
  *         self.first_extent = self.second_extent = Extent()
- * 
+ *
  *     def __repr__(self) -> str:             # <<<<<<<<<<<<<<
  *         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(
  *             self.horizontal, self.bias, self.one, self.two, self.between_borders
@@ -23421,7 +23421,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":34
  *         )
- * 
+ *
  *     def all_window_ids(self) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.one is not None:
  *             if isinstance(self.one, Pair):
@@ -23456,7 +23456,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":46
  *                 yield self.two
- * 
+ *
  *     def self_and_descendants(self) -> Generator['Pair', None, None]:             # <<<<<<<<<<<<<<
  *         yield self
  *         if isinstance(self.one, Pair):
@@ -23479,7 +23479,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":53
  *             yield from self.two.self_and_descendants()
- * 
+ *
  *     def pair_for_window(self, window_id: int) -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         if self.one == window_id or self.two == window_id:
  *             return self
@@ -23503,7 +23503,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":63
  *         return ans
- * 
+ *
  *     def swap_windows(self, a: int, b: int) -> None:             # <<<<<<<<<<<<<<
  *         pa = self.pair_for_window(a)
  *         pb = self.pair_for_window(b)
@@ -23522,7 +23522,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":79
  *                 pa.two, pb.two = pb.two, pa.two
- * 
+ *
  *     def parent(self, root: 'Pair') -> Optional['Pair']:             # <<<<<<<<<<<<<<
  *         for q in root.self_and_descendants():
  *             if q.one is self or q.two is self:
@@ -23546,7 +23546,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":85
  *         return None
- * 
+ *
  *     def remove_windows(self, window_ids: Collection[int]) -> None:             # <<<<<<<<<<<<<<
  *         if isinstance(self.one, int) and self.one in window_ids:
  *             self.one = None
@@ -23569,11 +23569,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/splits.py":94
- * 
+ *
  *     @property
  *     def is_redundant(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.one is None or self.two is None
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -23585,7 +23585,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":93
  *             self.one, self.two = self.two, None
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def is_redundant(self) -> bool:
  *         return self.one is None or self.two is None
@@ -23598,7 +23598,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":97
  *         return self.one is None or self.two is None
- * 
+ *
  *     def collapse_redundant_pairs(self) -> None:             # <<<<<<<<<<<<<<
  *         while isinstance(self.one, Pair) and self.one.is_redundant:
  *             self.one = self.one.one or self.one.two
@@ -23615,7 +23615,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":107
  *             self.two.collapse_redundant_pairs()
- * 
+ *
  *     def balanced_add(self, window_id: int) -> 'Pair':             # <<<<<<<<<<<<<<
  *         if self.one is None or self.two is None:
  *             if self.one is None:
@@ -23633,7 +23633,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":138
  *         return pair
- * 
+ *
  *     def split_and_add(self, existing_window_id: int, new_window_id: int, horizontal: bool, after: bool) -> 'Pair':             # <<<<<<<<<<<<<<
  *         q = (existing_window_id, new_window_id) if after else (new_window_id, existing_window_id)
  *         if self.is_redundant:
@@ -23654,7 +23654,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":153
  *         return pair
- * 
+ *
  *     def apply_window_geometry(self, window_id: int, window_geometry: WindowGeometry, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         wg = id_window_map[window_id]
  *         wg.set_geometry(window_geometry)
@@ -23698,7 +23698,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":158
  *         layout_object.blank_rects.extend(blank_rects_for_window(window_geometry))
- * 
+ *
  *     def effective_border(self, id_window_map: Dict[int, WindowGroup]) -> int:             # <<<<<<<<<<<<<<
  *         for wid in self.all_window_ids():
  *             return id_window_map[wid].effective_border()
@@ -23733,7 +23733,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":163
  *         return 0
- * 
+ *
  *     def layout_pair(self, left: int, top: int, width: int, height: int, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:             # <<<<<<<<<<<<<<
  *         self.between_borders = []
  *         self.left, self.top, self.width, self.height = left, top, width, height
@@ -23776,7 +23776,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":236
  *                 self.apply_window_geometry(self.two, geom, id_window_map, layout_object)
- * 
+ *
  *     def modify_size_of_child(self, which: int, increment: float, is_horizontal: bool, layout_object: 'Splits') -> bool:             # <<<<<<<<<<<<<<
  *         if is_horizontal == self.horizontal and not self.is_redundant:
  *             if which == 2:
@@ -23797,7 +23797,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":251
  *         return False
- * 
+ *
  *     def borders_for_window(self, layout_object: 'Splits', window_id: int) -> Generator[Edges, None, None]:             # <<<<<<<<<<<<<<
  *         is_first = self.one == window_id
  *         if self.between_borders:
@@ -23836,7 +23836,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":300
  *                             yield edges._replace(top=extent.start, bottom=extent.end)
- * 
+ *
  *     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:
  *             if is_horizontal:
@@ -23863,7 +23863,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":341
  *             child = parent
- * 
+ *
  *     def edge_windows(self, edge: str) -> Generator[int, None, None]:             # <<<<<<<<<<<<<<
  *         if self.is_redundant:
  *             q = self.one or self.two
@@ -23898,8 +23898,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/splits.py":19
- * 
- * 
+ *
+ *
  * class Pair:             # <<<<<<<<<<<<<<
  *     def __init__(self, horizontal: bool = True):
  *         self.horizontal = horizontal
@@ -23911,11 +23911,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/layout/splits.py":366
- * 
- * 
+ *
+ *
  * class SplitsLayoutOpts(LayoutOpts):             # <<<<<<<<<<<<<<
  *     default_axis_is_horizontal: bool = True
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_LayoutOpts); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 366, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -23930,20 +23930,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/layout/splits.py":367
- * 
+ *
  * class SplitsLayoutOpts(LayoutOpts):
  *     default_axis_is_horizontal: bool = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, data: Dict[str, str]):
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_default_axis_is_horizontal, Py_True) < 0) __PYX_ERR(0, 367, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":369
  *     default_axis_is_horizontal: bool = True
- * 
+ *
  *     def __init__(self, data: Dict[str, str]):             # <<<<<<<<<<<<<<
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 369, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -23972,10 +23972,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":372
  *         self.default_axis_is_horizontal = data.get('split_axis', 'horizontal') == 'horizontal'
- * 
+ *
  *     def serialized(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         return {'default_axis_is_horizontal': self.default_axis_is_horizontal}
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 372, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -24005,11 +24005,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "smelly/layout/splits.py":366
- * 
- * 
+ *
+ *
  * class SplitsLayoutOpts(LayoutOpts):             # <<<<<<<<<<<<<<
  *     default_axis_is_horizontal: bool = True
- * 
+ *
  */
   __pyx_t_6 = __Pyx_Py3ClassCreate(__pyx_t_2, __pyx_n_s_SplitsLayoutOpts, __pyx_t_1, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 366, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -24020,8 +24020,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/layout/splits.py":376
- * 
- * 
+ *
+ *
  * class Splits(Layout):             # <<<<<<<<<<<<<<
  *     name = 'splits'
  *     needs_all_windows = True
@@ -24041,7 +24041,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_6);
 
   /* "smelly/layout/splits.py":377
- * 
+ *
  * class Splits(Layout):
  *     name = 'splits'             # <<<<<<<<<<<<<<
  *     needs_all_windows = True
@@ -24063,7 +24063,7 @@ if (!__Pyx_RefNanny) {
  *     needs_all_windows = True
  *     layout_opts = SplitsLayoutOpts({})             # <<<<<<<<<<<<<<
  *     no_minimal_window_borders = True
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_SplitsLayoutOpts); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 379, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -24092,17 +24092,17 @@ if (!__Pyx_RefNanny) {
  *     needs_all_windows = True
  *     layout_opts = SplitsLayoutOpts({})
  *     no_minimal_window_borders = True             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
   if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_no_minimal_window_borders, Py_True) < 0) __PYX_ERR(0, 380, __pyx_L1_error)
 
   /* "smelly/layout/splits.py":383
- * 
+ *
  *     @property
  *     def default_axis_is_horizontal(self) -> bool:             # <<<<<<<<<<<<<<
  *         return self.layout_opts.default_axis_is_horizontal
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 383, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -24114,7 +24114,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":382
  *     no_minimal_window_borders = True
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def default_axis_is_horizontal(self) -> bool:
  *         return self.layout_opts.default_axis_is_horizontal
@@ -24126,7 +24126,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/layout/splits.py":387
- * 
+ *
  *     @property
  *     def pairs_root(self) -> Pair:             # <<<<<<<<<<<<<<
  *         root: Optional[Pair] = getattr(self, '_pairs_root', None)
@@ -24145,7 +24145,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":386
  *         return self.layout_opts.default_axis_is_horizontal
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def pairs_root(self) -> Pair:
  *         root: Optional[Pair] = getattr(self, '_pairs_root', None)
@@ -24158,7 +24158,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":393
  *         return root
- * 
+ *
  *     @pairs_root.setter             # <<<<<<<<<<<<<<
  *     def pairs_root(self, root: Pair) -> None:
  *         self._pairs_root = root
@@ -24175,11 +24175,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/splits.py":394
- * 
+ *
  *     @pairs_root.setter
  *     def pairs_root(self, root: Pair) -> None:             # <<<<<<<<<<<<<<
  *         self._pairs_root = root
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -24213,7 +24213,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":397
  *         self._pairs_root = root
- * 
+ *
  *     def remove_windows(self, *windows_to_remove: int) -> None:             # <<<<<<<<<<<<<<
  *         root = self.pairs_root
  *         for pair in root.self_and_descendants():
@@ -24231,7 +24231,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":407
  *                 self.pairs_root = q
- * 
+ *
  *     def do_layout(self, all_windows: WindowList) -> None:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -24252,7 +24252,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":428
  *             root.layout_pair(lgd.central.left, lgd.central.top, lgd.central.width, lgd.central.height, id_window_map, self)
- * 
+ *
  *     def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:             # <<<<<<<<<<<<<<
  *         horizontal = self.default_axis_is_horizontal
  *         after = True
@@ -24284,7 +24284,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":453
  *         all_windows.add_window(window)
- * 
+ *
  *     def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:             # <<<<<<<<<<<<<<
  *         grp = all_windows.group_for_window(window_id)
  *         if grp is None:
@@ -24309,7 +24309,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":463
  *         return pair.modify_size_of_child(which, increment, is_horizontal, self)
- * 
+ *
  *     def remove_all_biases(self) -> bool:             # <<<<<<<<<<<<<<
  *         for pair in self.pairs_root.self_and_descendants():
  *             pair.bias = 0.5
@@ -24326,7 +24326,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":468
  *         return True
- * 
+ *
  *     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:             # <<<<<<<<<<<<<<
  *         groups = tuple(all_windows.iter_all_layoutable_groups())
  *         window_count = len(groups)
@@ -24367,7 +24367,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":487
  *                         yield BorderLine(edges, color)
- * 
+ *
  *     def neighbors_for_window(self, window: WindowType, all_windows: WindowList) -> NeighborsMap:             # <<<<<<<<<<<<<<
  *         wg = all_windows.group_for_window(window)
  *         assert wg is not None
@@ -24395,7 +24395,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":496
  *         return ans
- * 
+ *
  *     def move_window_to_group(self, all_windows: WindowList, group: int) -> bool:             # <<<<<<<<<<<<<<
  *         before = all_windows.active_group
  *         if before is None:
@@ -24420,7 +24420,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":507
  *         return moved
- * 
+ *
  *     def layout_action(self, action_name: str, args: Sequence[str], all_windows: WindowList) -> Optional[bool]:             # <<<<<<<<<<<<<<
  *         if action_name == 'rotate':
  *             args = args or ('90',)
@@ -24455,7 +24455,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/layout/splits.py":546
  *         return None
- * 
+ *
  *     def layout_state(self) -> Dict[str, Any]:             # <<<<<<<<<<<<<<
  *         def add_pair(p: Pair) -> Dict[str, Any]:
  *             ans: Dict[str, Any] = {}
@@ -24488,8 +24488,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly/layout/splits.py":376
- * 
- * 
+ *
+ *
  * class Splits(Layout):             # <<<<<<<<<<<<<<
  *     name = 'splits'
  *     needs_all_windows = True
@@ -24507,7 +24507,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/layout/splits.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -26890,8 +26890,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

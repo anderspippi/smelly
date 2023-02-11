@@ -992,8 +992,8 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_22_expand;
 struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_23_genexpr;
 
 /* "smelly_tests/graphics.py":90
- * 
- * 
+ *
+ *
  * def load_helpers(self):             # <<<<<<<<<<<<<<
  *     s = self.create_screen()
  *     g = s.grman
@@ -1009,7 +1009,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct__load_helpers {
 
 /* "smelly_tests/graphics.py":94
  *     g = s.grman
- * 
+ *
  *     def pl(payload, **kw):             # <<<<<<<<<<<<<<
  *         kw.setdefault('i', 1)
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -1040,11 +1040,11 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_2_genexpr {
 
 
 /* "smelly_tests/graphics.py":118
- * 
- * 
+ *
+ *
  * def put_helpers(self, cw, ch):             # <<<<<<<<<<<<<<
  *     iid = 0
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_3_put_helpers {
   PyObject_HEAD
@@ -1059,8 +1059,8 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_3_put_helpers {
 
 
 /* "smelly_tests/graphics.py":175
- * 
- * 
+ *
+ *
  * def make_send_command(screen):             # <<<<<<<<<<<<<<
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):
  *         if s:
@@ -1072,7 +1072,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_4_make_send_command
 
 
 /* "smelly_tests/graphics.py":176
- * 
+ *
  * def make_send_command(screen):
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):             # <<<<<<<<<<<<<<
  *         if s:
@@ -1121,7 +1121,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_7_xor {
  *             return bytes(
  *                 bytearray(
  *                     k ^ d for k, d in zip(ckey, bytearray(data))))             # <<<<<<<<<<<<<<
- * 
+ *
  *         base_data = os.urandom(64)
  */
 struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_8_genexpr {
@@ -1137,7 +1137,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_8_genexpr {
 
 /* "smelly_tests/graphics.py":208
  *                 self.assertEqual(xor_data(key, data), xor(key, data))
- * 
+ *
  *     def test_disk_cache(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache
@@ -1152,7 +1152,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_9_test_disk_cache {
 
 
 /* "smelly_tests/graphics.py":389
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')
  *     def test_load_png(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
@@ -1166,7 +1166,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_10_test_load_png {
 
 /* "smelly_tests/graphics.py":432
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')
- * 
+ *
  *     def test_gr_operations_with_numbers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -1179,7 +1179,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_11_test_gr_operatio
 
 /* "smelly_tests/graphics.py":437
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def li(payload, **kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)
@@ -1192,7 +1192,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_12_li {
 
 
 /* "smelly_tests/graphics.py":438
- * 
+ *
  *         def li(payload, **kw):
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             res = send_command(s, cmd, payload)
@@ -1210,7 +1210,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_13_genexpr {
 
 
 /* "smelly_tests/graphics.py":472
- * 
+ *
  *         # test put with number
  *         def put(**kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -1242,7 +1242,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_15_genexpr {
 
 
 /* "smelly_tests/graphics.py":483
- * 
+ *
  *         # test delete with number
  *         def delete(ac='N', **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
@@ -1260,7 +1260,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_16_delete {
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             send_command(s, cmd)
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_17_genexpr {
   PyObject_HEAD
@@ -1275,7 +1275,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_17_genexpr {
 
 /* "smelly_tests/graphics.py":609
  *         self.ae(s.grman.image_count, 1)
- * 
+ *
  *     def test_gr_delete(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -1288,7 +1288,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_18_test_gr_delete {
 
 /* "smelly_tests/graphics.py":614
  *             self, cw, ch)
- * 
+ *
  *         def delete(ac=None, **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
  *             if ac:
@@ -1305,7 +1305,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_19_delete {
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             send_command(s, cmd)
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_20_genexpr {
   PyObject_HEAD
@@ -1320,7 +1320,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_20_genexpr {
 
 /* "smelly_tests/graphics.py":666
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_animation_frame_loading(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -1334,7 +1334,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_21_test_animation_f
 
 /* "smelly_tests/graphics.py":706
  *         img = g.image_for_client_id(1)
- * 
+ *
  *         def expand(*rows):             # <<<<<<<<<<<<<<
  *             ans = []
  *             for r in rows:
@@ -1350,7 +1350,7 @@ struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_22_expand {
  *             for r in rows:
  *                 ans.append(''.join(x * 3 for x in str(r)))             # <<<<<<<<<<<<<<
  *             return ''.join(ans).encode('ascii')
- * 
+ *
  */
 struct __pyx_obj_12smelly_tests_8graphics___pyx_scope_struct_23_genexpr {
   PyObject_HEAD
@@ -3249,8 +3249,8 @@ static PyObject *__pyx_codeobj__136;
 /* Late includes */
 
 /* "smelly_tests/graphics.py":25
- * 
- * 
+ *
+ *
  * def send_command(screen, cmd, payload=b''):             # <<<<<<<<<<<<<<
  *     cmd = '\033_G' + cmd
  *     if payload:
@@ -3356,7 +3356,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_send_command(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_v_payload);
 
   /* "smelly_tests/graphics.py":26
- * 
+ *
  * def send_command(screen, cmd, payload=b''):
  *     cmd = '\033_G' + cmd             # <<<<<<<<<<<<<<
  *     if payload:
@@ -3384,7 +3384,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_send_command(CYTHON_UNUSED Py
  *             payload = payload.encode('utf-8')
  *         payload = standard_b64encode(payload).decode('ascii')
  */
-    __pyx_t_2 = PyString_Check(__pyx_v_payload); 
+    __pyx_t_2 = PyString_Check(__pyx_v_payload);
     __pyx_t_3 = (__pyx_t_2 != 0);
     if (__pyx_t_3) {
 
@@ -3548,7 +3548,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_send_command(CYTHON_UNUSED Py
  *     c.clear()
  *     parse_bytes(screen, cmd.encode('ascii'))             # <<<<<<<<<<<<<<
  *     return c.wtcbuf
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_parse_bytes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3622,8 +3622,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_send_command(CYTHON_UNUSED Py
  *     c.clear()
  *     parse_bytes(screen, cmd.encode('ascii'))
  *     return c.wtcbuf             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_c, __pyx_n_s_wtcbuf); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 36, __pyx_L1_error)
@@ -3633,8 +3633,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_send_command(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":25
- * 
- * 
+ *
+ *
  * def send_command(screen, cmd, payload=b''):             # <<<<<<<<<<<<<<
  *     cmd = '\033_G' + cmd
  *     if payload:
@@ -3659,8 +3659,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_send_command(CYTHON_UNUSED Py
 }
 
 /* "smelly_tests/graphics.py":39
- * 
- * 
+ *
+ *
  * def parse_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -3696,7 +3696,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_2parse_response(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("parse_response", 0);
 
   /* "smelly_tests/graphics.py":40
- * 
+ *
  * def parse_response(res):
  *     if not res:             # <<<<<<<<<<<<<<
  *         return
@@ -3711,14 +3711,14 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_2parse_response(CYTHON_UNUSED
  *     if not res:
  *         return             # <<<<<<<<<<<<<<
  *     return res.decode('ascii').partition(';')[2].partition('\033')[0]
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
     /* "smelly_tests/graphics.py":40
- * 
+ *
  * def parse_response(res):
  *     if not res:             # <<<<<<<<<<<<<<
  *         return
@@ -3730,8 +3730,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_2parse_response(CYTHON_UNUSED
  *     if not res:
  *         return
  *     return res.decode('ascii').partition(';')[2].partition('\033')[0]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_res, __pyx_n_s_decode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -3798,8 +3798,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_2parse_response(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":39
- * 
- * 
+ *
+ *
  * def parse_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -3821,8 +3821,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_2parse_response(CYTHON_UNUSED
 }
 
 /* "smelly_tests/graphics.py":45
- * 
- * 
+ *
+ *
  * def parse_response_with_ids(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -3861,7 +3861,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_4parse_response_with_ids(CYTH
   __Pyx_RefNannySetupContext("parse_response_with_ids", 0);
 
   /* "smelly_tests/graphics.py":46
- * 
+ *
  * def parse_response_with_ids(res):
  *     if not res:             # <<<<<<<<<<<<<<
  *         return
@@ -3883,7 +3883,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_4parse_response_with_ids(CYTH
     goto __pyx_L0;
 
     /* "smelly_tests/graphics.py":46
- * 
+ *
  * def parse_response_with_ids(res):
  *     if not res:             # <<<<<<<<<<<<<<
  *         return
@@ -3931,11 +3931,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_4parse_response_with_ids(CYTH
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_5);
@@ -4016,7 +4016,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_4parse_response_with_ids(CYTH
  *     code = b.partition('\033')[0].split(':', 1)[0]
  *     a = a.split('G', 1)[1]             # <<<<<<<<<<<<<<
  *     return code, a
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_a, __pyx_n_s_split); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -4033,8 +4033,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_4parse_response_with_ids(CYTH
  *     code = b.partition('\033')[0].split(':', 1)[0]
  *     a = a.split('G', 1)[1]
  *     return code, a             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
@@ -4050,8 +4050,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_4parse_response_with_ids(CYTH
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":45
- * 
- * 
+ *
+ *
  * def parse_response_with_ids(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -4075,8 +4075,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_4parse_response_with_ids(CYTH
 }
 
 /* "smelly_tests/graphics.py":63
- * 
- * 
+ *
+ *
  * def parse_full_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -4125,7 +4125,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
   __Pyx_RefNannySetupContext("parse_full_response", 0);
 
   /* "smelly_tests/graphics.py":64
- * 
+ *
  * def parse_full_response(res):
  *     if not res:             # <<<<<<<<<<<<<<
  *         return
@@ -4147,7 +4147,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
     goto __pyx_L0;
 
     /* "smelly_tests/graphics.py":64
- * 
+ *
  * def parse_full_response(res):
  *     if not res:             # <<<<<<<<<<<<<<
  *         return
@@ -4195,11 +4195,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_5);
@@ -4333,11 +4333,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_3);
@@ -4507,13 +4507,13 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
-        __pyx_t_10 = PyTuple_GET_ITEM(sequence, 2); 
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
+        __pyx_t_10 = PyTuple_GET_ITEM(sequence, 2);
       } else {
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
-        __pyx_t_10 = PyList_GET_ITEM(sequence, 2); 
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
+        __pyx_t_10 = PyList_GET_ITEM(sequence, 2);
       }
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_6);
@@ -4562,7 +4562,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
  *         ans[{'i': 'image_id', 'I': 'image_number',
  *             'r': 'frame_number'}[k]] = int(v)             # <<<<<<<<<<<<<<
  *     return Response(**ans)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyNumber_Int(__pyx_v_v); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -4585,7 +4585,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
  *         ans[{'i': 'image_id', 'I': 'image_number',
  *             'r': 'frame_number'}[k]] = int(v)             # <<<<<<<<<<<<<<
  *     return Response(**ans)
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyDict_GetItem(__pyx_t_10, __pyx_v_k); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -4608,8 +4608,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
  *         ans[{'i': 'image_id', 'I': 'image_number',
  *             'r': 'frame_number'}[k]] = int(v)
  *     return Response(**ans)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Response); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 79, __pyx_L1_error)
@@ -4625,8 +4625,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":63
- * 
- * 
+ *
+ *
  * def parse_full_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -4658,8 +4658,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_6parse_full_response(CYTHON_U
 }
 
 /* "smelly_tests/graphics.py":85
- * 
- * 
+ *
+ *
  * def byte_block(sz):             # <<<<<<<<<<<<<<
  *     d, m = divmod(sz, len(all_bytes))
  *     return (all_bytes * d) + all_bytes[:m]
@@ -4696,11 +4696,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_8byte_block(CYTHON_UNUSED PyO
   __Pyx_RefNannySetupContext("byte_block", 0);
 
   /* "smelly_tests/graphics.py":86
- * 
+ *
  * def byte_block(sz):
  *     d, m = divmod(sz, len(all_bytes))             # <<<<<<<<<<<<<<
  *     return (all_bytes * d) + all_bytes[:m]
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_all_bytes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4721,11 +4721,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_8byte_block(CYTHON_UNUSED PyO
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_4);
@@ -4766,8 +4766,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_8byte_block(CYTHON_UNUSED PyO
  * def byte_block(sz):
  *     d, m = divmod(sz, len(all_bytes))
  *     return (all_bytes * d) + all_bytes[:m]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_all_bytes); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
@@ -4789,8 +4789,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_8byte_block(CYTHON_UNUSED PyO
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":85
- * 
- * 
+ *
+ *
  * def byte_block(sz):             # <<<<<<<<<<<<<<
  *     d, m = divmod(sz, len(all_bytes))
  *     return (all_bytes * d) + all_bytes[:m]
@@ -4813,8 +4813,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_8byte_block(CYTHON_UNUSED PyO
 }
 
 /* "smelly_tests/graphics.py":90
- * 
- * 
+ *
+ *
  * def load_helpers(self):             # <<<<<<<<<<<<<<
  *     s = self.create_screen()
  *     g = s.grman
@@ -4836,7 +4836,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_11load_helpers(PyObject *__py
 
 /* "smelly_tests/graphics.py":94
  *     g = s.grman
- * 
+ *
  *     def pl(payload, **kw):             # <<<<<<<<<<<<<<
  *         kw.setdefault('i', 1)
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -5031,11 +5031,11 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12load_helpers_2pl_2generator
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -5146,7 +5146,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12load_helpers_2pl_2generator
 
 /* "smelly_tests/graphics.py":94
  *     g = s.grman
- * 
+ *
  *     def pl(payload, **kw):             # <<<<<<<<<<<<<<
  *         kw.setdefault('i', 1)
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -5184,7 +5184,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_pl(PyObject *_
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_kw);
 
   /* "smelly_tests/graphics.py":95
- * 
+ *
  *     def pl(payload, **kw):
  *         kw.setdefault('i', 1)             # <<<<<<<<<<<<<<
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -5214,7 +5214,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_pl(PyObject *_
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *         res = send_command(s, cmd, payload)             # <<<<<<<<<<<<<<
  *         return parse_response(res)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_send_command); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5274,7 +5274,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_pl(PyObject *_
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *         res = send_command(s, cmd, payload)
  *         return parse_response(res)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def sl(payload, **kw):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5301,7 +5301,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_pl(PyObject *_
 
   /* "smelly_tests/graphics.py":94
  *     g = s.grman
- * 
+ *
  *     def pl(payload, **kw):             # <<<<<<<<<<<<<<
  *         kw.setdefault('i', 1)
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -5327,7 +5327,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_pl(PyObject *_
 
 /* "smelly_tests/graphics.py":100
  *         return parse_response(res)
- * 
+ *
  *     def sl(payload, **kw):             # <<<<<<<<<<<<<<
  *         if isinstance(payload, str):
  *             payload = payload.encode('utf-8')
@@ -5420,13 +5420,13 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_2sl(PyObject *
   __Pyx_INCREF(__pyx_v_payload);
 
   /* "smelly_tests/graphics.py":101
- * 
+ *
  *     def sl(payload, **kw):
  *         if isinstance(payload, str):             # <<<<<<<<<<<<<<
  *             payload = payload.encode('utf-8')
  *         data = kw.pop('expecting_data', payload)
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_payload); 
+  __pyx_t_1 = PyString_Check(__pyx_v_payload);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -5458,7 +5458,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_2sl(PyObject *
     __pyx_t_3 = 0;
 
     /* "smelly_tests/graphics.py":101
- * 
+ *
  *     def sl(payload, **kw):
  *         if isinstance(payload, str):             # <<<<<<<<<<<<<<
  *             payload = payload.encode('utf-8')
@@ -5902,7 +5902,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_2sl(PyObject *
  *             self.ae((kw['s'], kw['v']), (img['width'], img['height']))
  *         self.ae(img['is_4byte_aligned'], kw.get('f') != 24)             # <<<<<<<<<<<<<<
  *         return img
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 112, __pyx_L1_error) }
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
@@ -5969,7 +5969,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_2sl(PyObject *
  *             self.ae((kw['s'], kw['v']), (img['width'], img['height']))
  *         self.ae(img['is_4byte_aligned'], kw.get('f') != 24)
  *         return img             # <<<<<<<<<<<<<<
- * 
+ *
  *     return s, g, pl, sl
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5979,7 +5979,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_2sl(PyObject *
 
   /* "smelly_tests/graphics.py":100
  *         return parse_response(res)
- * 
+ *
  *     def sl(payload, **kw):             # <<<<<<<<<<<<<<
  *         if isinstance(payload, str):
  *             payload = payload.encode('utf-8')
@@ -6006,8 +6006,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12load_helpers_2sl(PyObject *
 }
 
 /* "smelly_tests/graphics.py":90
- * 
- * 
+ *
+ *
  * def load_helpers(self):             # <<<<<<<<<<<<<<
  *     s = self.create_screen()
  *     g = s.grman
@@ -6038,11 +6038,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_10load_helpers(CYTHON_UNUSED 
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/graphics.py":91
- * 
+ *
  * def load_helpers(self):
  *     s = self.create_screen()             # <<<<<<<<<<<<<<
  *     g = s.grman
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6069,7 +6069,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_10load_helpers(CYTHON_UNUSED 
  * def load_helpers(self):
  *     s = self.create_screen()
  *     g = s.grman             # <<<<<<<<<<<<<<
- * 
+ *
  *     def pl(payload, **kw):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_grman); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -6080,7 +6080,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_10load_helpers(CYTHON_UNUSED 
 
   /* "smelly_tests/graphics.py":94
  *     g = s.grman
- * 
+ *
  *     def pl(payload, **kw):             # <<<<<<<<<<<<<<
  *         kw.setdefault('i', 1)
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -6093,7 +6093,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_10load_helpers(CYTHON_UNUSED 
 
   /* "smelly_tests/graphics.py":100
  *         return parse_response(res)
- * 
+ *
  *     def sl(payload, **kw):             # <<<<<<<<<<<<<<
  *         if isinstance(payload, str):
  *             payload = payload.encode('utf-8')
@@ -6105,10 +6105,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_10load_helpers(CYTHON_UNUSED 
 
   /* "smelly_tests/graphics.py":115
  *         return img
- * 
+ *
  *     return s, g, pl, sl             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
@@ -6130,8 +6130,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_10load_helpers(CYTHON_UNUSED 
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":90
- * 
- * 
+ *
+ *
  * def load_helpers(self):             # <<<<<<<<<<<<<<
  *     s = self.create_screen()
  *     g = s.grman
@@ -6153,11 +6153,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_10load_helpers(CYTHON_UNUSED 
 }
 
 /* "smelly_tests/graphics.py":118
- * 
- * 
+ *
+ *
  * def put_helpers(self, cw, ch):             # <<<<<<<<<<<<<<
  *     iid = 0
- * 
+ *
  */
 
 /* Python wrapper */
@@ -6238,7 +6238,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_13put_helpers(PyObject *__pyx
 
 /* "smelly_tests/graphics.py":121
  *     iid = 0
- * 
+ *
  *     def create_screen():             # <<<<<<<<<<<<<<
  *         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)
  *         return s, 2 / s.columns, 2 / s.lines
@@ -6275,11 +6275,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_create_screen(P
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":122
- * 
+ *
  *     def create_screen():
  *         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)             # <<<<<<<<<<<<<<
  *         return s, 2 / s.columns, 2 / s.lines
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 122, __pyx_L1_error) }
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_create_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
@@ -6301,7 +6301,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_create_screen(P
  *     def create_screen():
  *         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)
  *         return s, 2 / s.columns, 2 / s.lines             # <<<<<<<<<<<<<<
- * 
+ *
  *     def put_cmd(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6332,7 +6332,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_create_screen(P
 
   /* "smelly_tests/graphics.py":121
  *     iid = 0
- * 
+ *
  *     def create_screen():             # <<<<<<<<<<<<<<
  *         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)
  *         return s, 2 / s.columns, 2 / s.lines
@@ -6354,7 +6354,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_create_screen(P
 
 /* "smelly_tests/graphics.py":125
  *         return s, 2 / s.columns, 2 / s.lines
- * 
+ *
  *     def put_cmd(             # <<<<<<<<<<<<<<
  *             z=0, num_cols=0, num_lines=0, x_off=0, y_off=0, width=0, height=0,
  *             cell_x_off=0, cell_y_off=0, placement_id=0, cursor_movement=0):
@@ -6628,7 +6628,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_2put_cmd(CYTHON
 
   /* "smelly_tests/graphics.py":125
  *         return s, 2 / s.columns, 2 / s.lines
- * 
+ *
  *     def put_cmd(             # <<<<<<<<<<<<<<
  *             z=0, num_cols=0, num_lines=0, x_off=0, y_off=0, width=0, height=0,
  *             cell_x_off=0, cell_y_off=0, placement_id=0, cursor_movement=0):
@@ -6648,7 +6648,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_2put_cmd(CYTHON
 
 /* "smelly_tests/graphics.py":142
  *         )
- * 
+ *
  *     def put_image(screen, w, h, **kw):             # <<<<<<<<<<<<<<
  *         nonlocal iid
  *         iid += 1
@@ -6918,7 +6918,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_4put_image(PyOb
  *         data = b'x' * w * h * 3
  *         res = send_command(screen, cmd, data)             # <<<<<<<<<<<<<<
  *         return imgid, parse_response(res)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_send_command); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6977,7 +6977,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_4put_image(PyOb
  *         data = b'x' * w * h * 3
  *         res = send_command(screen, cmd, data)
  *         return imgid, parse_response(res)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def put_ref(screen, **kw):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7012,7 +7012,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_4put_image(PyOb
 
   /* "smelly_tests/graphics.py":142
  *         )
- * 
+ *
  *     def put_image(screen, w, h, **kw):             # <<<<<<<<<<<<<<
  *         nonlocal iid
  *         iid += 1
@@ -7039,7 +7039,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_4put_image(PyOb
 
 /* "smelly_tests/graphics.py":155
  *         return imgid, parse_response(res)
- * 
+ *
  *     def put_ref(screen, **kw):             # <<<<<<<<<<<<<<
  *         imgid = kw.pop('id', None) or iid
  *         cmd = 'a=p,i=%d,%s' % (imgid, put_cmd(**kw))
@@ -7127,7 +7127,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_6put_ref(PyObje
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":156
- * 
+ *
  *     def put_ref(screen, **kw):
  *         imgid = kw.pop('id', None) or iid             # <<<<<<<<<<<<<<
  *         cmd = 'a=p,i=%d,%s' % (imgid, put_cmd(**kw))
@@ -7156,7 +7156,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_6put_ref(PyObje
  *         imgid = kw.pop('id', None) or iid
  *         cmd = 'a=p,i=%d,%s' % (imgid, put_cmd(**kw))             # <<<<<<<<<<<<<<
  *         return imgid, parse_response_with_ids(send_command(screen, cmd))
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_put_cmd)) { __Pyx_RaiseClosureNameError("put_cmd"); __PYX_ERR(0, 157, __pyx_L1_error) }
   __pyx_t_1 = PyDict_Copy(__pyx_v_kw); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 157, __pyx_L1_error)
@@ -7182,7 +7182,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_6put_ref(PyObje
  *         imgid = kw.pop('id', None) or iid
  *         cmd = 'a=p,i=%d,%s' % (imgid, put_cmd(**kw))
  *         return imgid, parse_response_with_ids(send_command(screen, cmd))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def layers(screen, scrolled_by=0, xstart=-1, ystart=1):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7265,7 +7265,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_6put_ref(PyObje
 
   /* "smelly_tests/graphics.py":155
  *         return imgid, parse_response(res)
- * 
+ *
  *     def put_ref(screen, **kw):             # <<<<<<<<<<<<<<
  *         imgid = kw.pop('id', None) or iid
  *         cmd = 'a=p,i=%d,%s' % (imgid, put_cmd(**kw))
@@ -7291,7 +7291,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_6put_ref(PyObje
 
 /* "smelly_tests/graphics.py":160
  *         return imgid, parse_response_with_ids(send_command(screen, cmd))
- * 
+ *
  *     def layers(screen, scrolled_by=0, xstart=-1, ystart=1):             # <<<<<<<<<<<<<<
  *         return screen.grman.update_layers(
  *             scrolled_by, xstart, ystart, dx, dy, screen.columns, screen.lines,
@@ -7412,7 +7412,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_8layers(PyObjec
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":161
- * 
+ *
  *     def layers(screen, scrolled_by=0, xstart=-1, ystart=1):
  *         return screen.grman.update_layers(             # <<<<<<<<<<<<<<
  *             scrolled_by, xstart, ystart, dx, dy, screen.columns, screen.lines,
@@ -7430,7 +7430,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_8layers(PyObjec
  *         return screen.grman.update_layers(
  *             scrolled_by, xstart, ystart, dx, dy, screen.columns, screen.lines,             # <<<<<<<<<<<<<<
  *             cw, ch)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_dx)) { __Pyx_RaiseClosureNameError("dx"); __PYX_ERR(0, 162, __pyx_L1_error) }
   if (unlikely(!__pyx_cur_scope->__pyx_v_dy)) { __Pyx_RaiseClosureNameError("dy"); __PYX_ERR(0, 162, __pyx_L1_error) }
@@ -7443,7 +7443,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_8layers(PyObjec
  *         return screen.grman.update_layers(
  *             scrolled_by, xstart, ystart, dx, dy, screen.columns, screen.lines,
  *             cw, ch)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def rect_eq(r, left, top, right, bottom):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_cw)) { __Pyx_RaiseClosureNameError("cw"); __PYX_ERR(0, 163, __pyx_L1_error) }
@@ -7524,7 +7524,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_8layers(PyObjec
 
   /* "smelly_tests/graphics.py":160
  *         return imgid, parse_response_with_ids(send_command(screen, cmd))
- * 
+ *
  *     def layers(screen, scrolled_by=0, xstart=-1, ystart=1):             # <<<<<<<<<<<<<<
  *         return screen.grman.update_layers(
  *             scrolled_by, xstart, ystart, dx, dy, screen.columns, screen.lines,
@@ -7548,7 +7548,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_8layers(PyObjec
 
 /* "smelly_tests/graphics.py":165
  *             cw, ch)
- * 
+ *
  *     def rect_eq(r, left, top, right, bottom):             # <<<<<<<<<<<<<<
  *         for side in 'left top right bottom'.split():
  *             a, b = r[side], locals()[side]
@@ -7678,7 +7678,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_10rect_eq(PyObj
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":166
- * 
+ *
  *     def rect_eq(r, left, top, right, bottom):
  *         for side in 'left top right bottom'.split():             # <<<<<<<<<<<<<<
  *             a, b = r[side], locals()[side]
@@ -7792,7 +7792,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_10rect_eq(PyObj
  *             a, b = r[side], locals()[side]
  *             if abs(a - b) > 0.0001:             # <<<<<<<<<<<<<<
  *                 self.ae(a, b, 'the %s side is not equal' % side)
- * 
+ *
  */
     __pyx_t_6 = PyNumber_Subtract(__pyx_v_a, __pyx_v_b); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
@@ -7809,7 +7809,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_10rect_eq(PyObj
  *             a, b = r[side], locals()[side]
  *             if abs(a - b) > 0.0001:
  *                 self.ae(a, b, 'the %s side is not equal' % side)             # <<<<<<<<<<<<<<
- * 
+ *
  *     s, dx, dy = create_screen()
  */
       if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 169, __pyx_L1_error) }
@@ -7874,12 +7874,12 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_10rect_eq(PyObj
  *             a, b = r[side], locals()[side]
  *             if abs(a - b) > 0.0001:             # <<<<<<<<<<<<<<
  *                 self.ae(a, b, 'the %s side is not equal' % side)
- * 
+ *
  */
     }
 
     /* "smelly_tests/graphics.py":166
- * 
+ *
  *     def rect_eq(r, left, top, right, bottom):
  *         for side in 'left top right bottom'.split():             # <<<<<<<<<<<<<<
  *             a, b = r[side], locals()[side]
@@ -7890,7 +7890,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_10rect_eq(PyObj
 
   /* "smelly_tests/graphics.py":165
  *             cw, ch)
- * 
+ *
  *     def rect_eq(r, left, top, right, bottom):             # <<<<<<<<<<<<<<
  *         for side in 'left top right bottom'.split():
  *             a, b = r[side], locals()[side]
@@ -7918,11 +7918,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_11put_helpers_10rect_eq(PyObj
 }
 
 /* "smelly_tests/graphics.py":118
- * 
- * 
+ *
+ *
  * def put_helpers(self, cw, ch):             # <<<<<<<<<<<<<<
  *     iid = 0
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_cw, PyObject *__pyx_v_ch) {
@@ -7964,10 +7964,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_ch);
 
   /* "smelly_tests/graphics.py":119
- * 
+ *
  * def put_helpers(self, cw, ch):
  *     iid = 0             # <<<<<<<<<<<<<<
- * 
+ *
  *     def create_screen():
  */
   __Pyx_INCREF(__pyx_int_0);
@@ -7976,7 +7976,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 
   /* "smelly_tests/graphics.py":121
  *     iid = 0
- * 
+ *
  *     def create_screen():             # <<<<<<<<<<<<<<
  *         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)
  *         return s, 2 / s.columns, 2 / s.lines
@@ -7988,7 +7988,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 
   /* "smelly_tests/graphics.py":125
  *         return s, 2 / s.columns, 2 / s.lines
- * 
+ *
  *     def put_cmd(             # <<<<<<<<<<<<<<
  *             z=0, num_cols=0, num_lines=0, x_off=0, y_off=0, width=0, height=0,
  *             cell_x_off=0, cell_y_off=0, placement_id=0, cursor_movement=0):
@@ -8002,7 +8002,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 
   /* "smelly_tests/graphics.py":142
  *         )
- * 
+ *
  *     def put_image(screen, w, h, **kw):             # <<<<<<<<<<<<<<
  *         nonlocal iid
  *         iid += 1
@@ -8014,7 +8014,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 
   /* "smelly_tests/graphics.py":155
  *         return imgid, parse_response(res)
- * 
+ *
  *     def put_ref(screen, **kw):             # <<<<<<<<<<<<<<
  *         imgid = kw.pop('id', None) or iid
  *         cmd = 'a=p,i=%d,%s' % (imgid, put_cmd(**kw))
@@ -8026,7 +8026,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 
   /* "smelly_tests/graphics.py":160
  *         return imgid, parse_response_with_ids(send_command(screen, cmd))
- * 
+ *
  *     def layers(screen, scrolled_by=0, xstart=-1, ystart=1):             # <<<<<<<<<<<<<<
  *         return screen.grman.update_layers(
  *             scrolled_by, xstart, ystart, dx, dy, screen.columns, screen.lines,
@@ -8039,7 +8039,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 
   /* "smelly_tests/graphics.py":165
  *             cw, ch)
- * 
+ *
  *     def rect_eq(r, left, top, right, bottom):             # <<<<<<<<<<<<<<
  *         for side in 'left top right bottom'.split():
  *             a, b = r[side], locals()[side]
@@ -8051,10 +8051,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 
   /* "smelly_tests/graphics.py":171
  *                 self.ae(a, b, 'the %s side is not equal' % side)
- * 
+ *
  *     s, dx, dy = create_screen()             # <<<<<<<<<<<<<<
  *     return s, dx, dy, put_image, put_ref, layers, rect_eq
- * 
+ *
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_8graphics_11put_helpers_create_screen(__pyx_v_create_screen); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8068,13 +8068,13 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -8121,11 +8121,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
   __pyx_t_4 = 0;
 
   /* "smelly_tests/graphics.py":172
- * 
+ *
  *     s, dx, dy = create_screen()
  *     return s, dx, dy, put_image, put_ref, layers, rect_eq             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
@@ -8156,11 +8156,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":118
- * 
- * 
+ *
+ *
  * def put_helpers(self, cw, ch):             # <<<<<<<<<<<<<<
  *     iid = 0
- * 
+ *
  */
 
   /* function exit code */
@@ -8186,8 +8186,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12put_helpers(CYTHON_UNUSED P
 }
 
 /* "smelly_tests/graphics.py":175
- * 
- * 
+ *
+ *
  * def make_send_command(screen):             # <<<<<<<<<<<<<<
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):
  *         if s:
@@ -8208,7 +8208,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_15make_send_command(PyObject 
 }
 
 /* "smelly_tests/graphics.py":176
- * 
+ *
  * def make_send_command(screen):
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):             # <<<<<<<<<<<<<<
  *         if s:
@@ -8475,11 +8475,11 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_17make_send_command_2li_2gene
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -8589,7 +8589,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_17make_send_command_2li_2gene
 }
 
 /* "smelly_tests/graphics.py":176
- * 
+ *
  * def make_send_command(screen):
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):             # <<<<<<<<<<<<<<
  *         if s:
@@ -8769,7 +8769,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_17make_send_command_li(PyObje
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *         res = send_command(screen, cmd, payload)             # <<<<<<<<<<<<<<
  *         return parse_full_response(res)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_send_command); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8829,7 +8829,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_17make_send_command_li(PyObje
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *         res = send_command(screen, cmd, payload)
  *         return parse_full_response(res)             # <<<<<<<<<<<<<<
- * 
+ *
  *     return li
  */
   __Pyx_XDECREF(__pyx_r);
@@ -8855,7 +8855,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_17make_send_command_li(PyObje
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":176
- * 
+ *
  * def make_send_command(screen):
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):             # <<<<<<<<<<<<<<
  *         if s:
@@ -8881,8 +8881,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_17make_send_command_li(PyObje
 }
 
 /* "smelly_tests/graphics.py":175
- * 
- * 
+ *
+ *
  * def make_send_command(screen):             # <<<<<<<<<<<<<<
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):
  *         if s:
@@ -8911,7 +8911,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_14make_send_command(CYTHON_UN
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_screen);
 
   /* "smelly_tests/graphics.py":176
- * 
+ *
  * def make_send_command(screen):
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):             # <<<<<<<<<<<<<<
  *         if s:
@@ -8925,10 +8925,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_14make_send_command(CYTHON_UN
 
   /* "smelly_tests/graphics.py":190
  *         return parse_full_response(res)
- * 
+ *
  *     return li             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_li);
@@ -8936,8 +8936,8 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_14make_send_command(CYTHON_UN
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":175
- * 
- * 
+ *
+ *
  * def make_send_command(screen):             # <<<<<<<<<<<<<<
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):
  *         if s:
@@ -8957,7 +8957,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_14make_send_command(CYTHON_UN
 }
 
 /* "smelly_tests/graphics.py":194
- * 
+ *
  * class TestGraphics(BaseTest):
  *     def test_xor_data(self):             # <<<<<<<<<<<<<<
  *         def xor(skey, data):
@@ -9056,7 +9056,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_13test_xor_dat
  *             return bytes(
  *                 bytearray(
  *                     k ^ d for k, d in zip(ckey, bytearray(data))))             # <<<<<<<<<<<<<<
- * 
+ *
  *         base_data = os.urandom(64)
  */
 
@@ -9187,11 +9187,11 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_13test_xor_dat
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -9354,7 +9354,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_xor_dat
  *             return bytes(
  *                 bytearray(
  *                     k ^ d for k, d in zip(ckey, bytearray(data))))             # <<<<<<<<<<<<<<
- * 
+ *
  *         base_data = os.urandom(64)
  */
   __pyx_t_1 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_xor_data_3xor_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
@@ -9365,7 +9365,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_xor_dat
  *             return bytes(
  *                 bytearray(             # <<<<<<<<<<<<<<
  *                     k ^ d for k, d in zip(ckey, bytearray(data))))
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyByteArray_Type)), __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 198, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -9410,7 +9410,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_xor_dat
 }
 
 /* "smelly_tests/graphics.py":194
- * 
+ *
  * class TestGraphics(BaseTest):
  *     def test_xor_data(self):             # <<<<<<<<<<<<<<
  *         def xor(skey, data):
@@ -9457,7 +9457,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_test_xor_data(
 
   /* "smelly_tests/graphics.py":201
  *                     k ^ d for k, d in zip(ckey, bytearray(data))))
- * 
+ *
  *         base_data = os.urandom(64)             # <<<<<<<<<<<<<<
  *         key = os.urandom(len(base_data))
  *         for base in (b'', base_data):
@@ -9486,7 +9486,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_test_xor_data(
   __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":202
- * 
+ *
  *         base_data = os.urandom(64)
  *         key = os.urandom(len(base_data))             # <<<<<<<<<<<<<<
  *         for base in (b'', base_data):
@@ -9564,7 +9564,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_test_xor_data(
  *             for extra in range(len(base_data)):
  *                 data = base + base_data[:extra]             # <<<<<<<<<<<<<<
  *                 self.assertEqual(xor_data(key, data), xor(key, data))
- * 
+ *
  */
       __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_base_data, 0, __pyx_v_extra, NULL, NULL, NULL, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
@@ -9578,7 +9578,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_test_xor_data(
  *             for extra in range(len(base_data)):
  *                 data = base + base_data[:extra]
  *                 self.assertEqual(xor_data(key, data), xor(key, data))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_disk_cache(self):
  */
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
@@ -9695,7 +9695,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_test_xor_data(
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/graphics.py":194
- * 
+ *
  * class TestGraphics(BaseTest):
  *     def test_xor_data(self):             # <<<<<<<<<<<<<<
  *         def xor(skey, data):
@@ -9728,7 +9728,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_test_xor_data(
 
 /* "smelly_tests/graphics.py":208
  *                 self.assertEqual(xor_data(key, data), xor(key, data))
- * 
+ *
  *     def test_disk_cache(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache
@@ -9750,7 +9750,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_12TestGraphics_3test_disk_cac
 
 /* "smelly_tests/graphics.py":213
  *         data = {}
- * 
+ *
  *         def key_as_bytes(key):             # <<<<<<<<<<<<<<
  *             if isinstance(key, int):
  *                 key = str(key)
@@ -9785,13 +9785,13 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
   __Pyx_INCREF(__pyx_v_key);
 
   /* "smelly_tests/graphics.py":214
- * 
+ *
  *         def key_as_bytes(key):
  *             if isinstance(key, int):             # <<<<<<<<<<<<<<
  *                 key = str(key)
  *             if isinstance(key, str):
  */
-  __pyx_t_1 = PyInt_Check(__pyx_v_key); 
+  __pyx_t_1 = PyInt_Check(__pyx_v_key);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -9808,7 +9808,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
     __pyx_t_3 = 0;
 
     /* "smelly_tests/graphics.py":214
- * 
+ *
  *         def key_as_bytes(key):
  *             if isinstance(key, int):             # <<<<<<<<<<<<<<
  *                 key = str(key)
@@ -9823,7 +9823,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *                 key = key.encode('utf-8')
  *             return bytes(key)
  */
-  __pyx_t_2 = PyString_Check(__pyx_v_key); 
+  __pyx_t_2 = PyString_Check(__pyx_v_key);
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
@@ -9832,7 +9832,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *             if isinstance(key, str):
  *                 key = key.encode('utf-8')             # <<<<<<<<<<<<<<
  *             return bytes(key)
- * 
+ *
  */
     __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_encode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -9867,7 +9867,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *             if isinstance(key, str):
  *                 key = key.encode('utf-8')
  *             return bytes(key)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def add(key, val):
  */
   __Pyx_XDECREF(__pyx_r);
@@ -9879,7 +9879,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
   /* "smelly_tests/graphics.py":213
  *         data = {}
- * 
+ *
  *         def key_as_bytes(key):             # <<<<<<<<<<<<<<
  *             if isinstance(key, int):
  *                 key = str(key)
@@ -9901,7 +9901,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
 /* "smelly_tests/graphics.py":220
  *             return bytes(key)
- * 
+ *
  *         def add(key, val):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data[key] = key_as_bytes(val)
@@ -9992,7 +9992,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":221
- * 
+ *
  *         def add(key, val):
  *             bkey = key_as_bytes(key)             # <<<<<<<<<<<<<<
  *             data[key] = key_as_bytes(val)
@@ -10009,7 +10009,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *             bkey = key_as_bytes(key)
  *             data[key] = key_as_bytes(val)             # <<<<<<<<<<<<<<
  *             dc.add(bkey, data[key])
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_key_as_bytes)) { __Pyx_RaiseClosureNameError("key_as_bytes"); __PYX_ERR(0, 222, __pyx_L1_error) }
   __pyx_t_1 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_cache_key_as_bytes(__pyx_cur_scope->__pyx_v_key_as_bytes, __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 222, __pyx_L1_error)
@@ -10026,7 +10026,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *             bkey = key_as_bytes(key)
  *             data[key] = key_as_bytes(val)
  *             dc.add(bkey, data[key])             # <<<<<<<<<<<<<<
- * 
+ *
  *         def remove(key):
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_dc)) { __Pyx_RaiseClosureNameError("dc"); __PYX_ERR(0, 223, __pyx_L1_error) }
@@ -10090,7 +10090,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
   /* "smelly_tests/graphics.py":220
  *             return bytes(key)
- * 
+ *
  *         def add(key, val):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data[key] = key_as_bytes(val)
@@ -10116,7 +10116,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
 /* "smelly_tests/graphics.py":225
  *             dc.add(bkey, data[key])
- * 
+ *
  *         def remove(key):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data.pop(key, None)
@@ -10153,7 +10153,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":226
- * 
+ *
  *         def remove(key):
  *             bkey = key_as_bytes(key)             # <<<<<<<<<<<<<<
  *             data.pop(key, None)
@@ -10170,7 +10170,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *             bkey = key_as_bytes(key)
  *             data.pop(key, None)             # <<<<<<<<<<<<<<
  *             return dc.remove(bkey)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_data)) { __Pyx_RaiseClosureNameError("data"); __PYX_ERR(0, 227, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_v_data == Py_None)) {
@@ -10185,7 +10185,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *             bkey = key_as_bytes(key)
  *             data.pop(key, None)
  *             return dc.remove(bkey)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def check_data():
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10213,7 +10213,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
   /* "smelly_tests/graphics.py":225
  *             dc.add(bkey, data[key])
- * 
+ *
  *         def remove(key):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data.pop(key, None)
@@ -10235,7 +10235,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
 /* "smelly_tests/graphics.py":230
  *             return dc.remove(bkey)
- * 
+ *
  *         def check_data():             # <<<<<<<<<<<<<<
  *             for key, val in data.items():
  *                 self.ae(dc.get(key_as_bytes(key)), val)
@@ -10281,11 +10281,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":231
- * 
+ *
  *         def check_data():
  *             for key, val in data.items():             # <<<<<<<<<<<<<<
  *                 self.ae(dc.get(key_as_bytes(key)), val)
- * 
+ *
  */
   if (unlikely(!__pyx_cur_scope->__pyx_v_data)) { __Pyx_RaiseClosureNameError("data"); __PYX_ERR(0, 231, __pyx_L1_error) }
   if (unlikely(__pyx_cur_scope->__pyx_v_data == Py_None)) {
@@ -10344,11 +10344,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -10389,7 +10389,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
  *         def check_data():
  *             for key, val in data.items():
  *                 self.ae(dc.get(key_as_bytes(key)), val)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for i in range(25):
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 232, __pyx_L1_error) }
@@ -10467,18 +10467,18 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "smelly_tests/graphics.py":231
- * 
+ *
  *         def check_data():
  *             for key, val in data.items():             # <<<<<<<<<<<<<<
  *                 self.ae(dc.get(key_as_bytes(key)), val)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/graphics.py":230
  *             return dc.remove(bkey)
- * 
+ *
  *         def check_data():             # <<<<<<<<<<<<<<
  *             for key, val in data.items():
  *                 self.ae(dc.get(key_as_bytes(key)), val)
@@ -10507,10 +10507,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
 /* "smelly_tests/graphics.py":294
  *         self.assertEqual(dc.num_cached_in_ram(), num_in_ram)
- * 
+ *
  *         def clear_predicate(key):             # <<<<<<<<<<<<<<
  *             return key.startswith(b'1:')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -10539,10 +10539,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
   __Pyx_RefNannySetupContext("clear_predicate", 0);
 
   /* "smelly_tests/graphics.py":295
- * 
+ *
  *         def clear_predicate(key):
  *             return key.startswith(b'1:')             # <<<<<<<<<<<<<<
- * 
+ *
  *         dc.remove_from_ram(clear_predicate)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -10569,10 +10569,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
   /* "smelly_tests/graphics.py":294
  *         self.assertEqual(dc.num_cached_in_ram(), num_in_ram)
- * 
+ *
  *         def clear_predicate(key):             # <<<<<<<<<<<<<<
  *             return key.startswith(b'1:')
- * 
+ *
  */
 
   /* function exit code */
@@ -10590,7 +10590,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_ca
 
 /* "smelly_tests/graphics.py":208
  *                 self.assertEqual(xor_data(key, data), xor(key, data))
- * 
+ *
  *     def test_disk_cache(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache
@@ -10643,7 +10643,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/graphics.py":209
- * 
+ *
  *     def test_disk_cache(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         dc = s.grman.disk_cache
@@ -10674,7 +10674,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache             # <<<<<<<<<<<<<<
  *         data = {}
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_grman); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 210, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -10689,7 +10689,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache
  *         data = {}             # <<<<<<<<<<<<<<
- * 
+ *
  *         def key_as_bytes(key):
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 211, __pyx_L1_error)
@@ -10700,7 +10700,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":213
  *         data = {}
- * 
+ *
  *         def key_as_bytes(key):             # <<<<<<<<<<<<<<
  *             if isinstance(key, int):
  *                 key = str(key)
@@ -10713,7 +10713,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":220
  *             return bytes(key)
- * 
+ *
  *         def add(key, val):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data[key] = key_as_bytes(val)
@@ -10725,7 +10725,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":225
  *             dc.add(bkey, data[key])
- * 
+ *
  *         def remove(key):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data.pop(key, None)
@@ -10737,7 +10737,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":230
  *             return dc.remove(bkey)
- * 
+ *
  *         def check_data():             # <<<<<<<<<<<<<<
  *             for key, val in data.items():
  *                 self.ae(dc.get(key_as_bytes(key)), val)
@@ -10749,10 +10749,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":234
  *                 self.ae(dc.get(key_as_bytes(key)), val)
- * 
+ *
  *         for i in range(25):             # <<<<<<<<<<<<<<
  *             self.assertIsNone(add(i, f'{i}' * i))
- * 
+ *
  */
   for (__pyx_t_4 = 0; __pyx_t_4 < 25; __pyx_t_4+=1) {
     __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 234, __pyx_L1_error)
@@ -10761,10 +10761,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
     __pyx_t_2 = 0;
 
     /* "smelly_tests/graphics.py":235
- * 
+ *
  *         for i in range(25):
  *             self.assertIsNone(add(i, f'{i}' * i))             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.assertEqual(dc.total_size, sum(map(len, data.values())))
  */
     __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 235, __pyx_L1_error)
@@ -10798,7 +10798,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":237
  *             self.assertIsNone(add(i, f'{i}' * i))
- * 
+ *
  *         self.assertEqual(dc.total_size, sum(map(len, data.values())))             # <<<<<<<<<<<<<<
  *         self.assertTrue(dc.wait_for_write())
  *         check_data()
@@ -10877,7 +10877,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/graphics.py":238
- * 
+ *
  *         self.assertEqual(dc.total_size, sum(map(len, data.values())))
  *         self.assertTrue(dc.wait_for_write())             # <<<<<<<<<<<<<<
  *         check_data()
@@ -11532,7 +11532,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *         while dc.size_on_disk() and time.monotonic() - st < 2:
  *             time.sleep(0.001)             # <<<<<<<<<<<<<<
  *         self.assertEqual(dc.size_on_disk(), 0)
- * 
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -11561,7 +11561,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *         while dc.size_on_disk() and time.monotonic() - st < 2:
  *             time.sleep(0.001)
  *         self.assertEqual(dc.size_on_disk(), 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         data.clear()
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 257, __pyx_L1_error)
@@ -11634,7 +11634,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":259
  *         self.assertEqual(dc.size_on_disk(), 0)
- * 
+ *
  *         data.clear()             # <<<<<<<<<<<<<<
  *         for i in range(25):
  *             self.assertIsNone(add(i, f'{i}' * i))
@@ -11642,7 +11642,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
   __pyx_t_13 = __Pyx_PyDict_Clear(__pyx_cur_scope->__pyx_v_data); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 259, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":260
- * 
+ *
  *         data.clear()
  *         for i in range(25):             # <<<<<<<<<<<<<<
  *             self.assertIsNone(add(i, f'{i}' * i))
@@ -11695,7 +11695,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *             self.assertIsNone(add(i, f'{i}' * i))
  *         dc.wait_for_write()             # <<<<<<<<<<<<<<
  *         check_data()
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_dc, __pyx_n_s_wait_for_write); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -11720,7 +11720,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *             self.assertIsNone(add(i, f'{i}' * i))
  *         dc.wait_for_write()
  *         check_data()             # <<<<<<<<<<<<<<
- * 
+ *
  *         before = dc.size_on_disk()
  */
   __pyx_t_2 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_cache_6check_data(__pyx_v_check_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 263, __pyx_L1_error)
@@ -11729,7 +11729,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":265
  *         check_data()
- * 
+ *
  *         before = dc.size_on_disk()             # <<<<<<<<<<<<<<
  *         while dc.total_size > before // 3:
  *             key = random.choice(tuple(data))
@@ -11755,7 +11755,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
   __pyx_t_2 = 0;
 
   /* "smelly_tests/graphics.py":266
- * 
+ *
  *         before = dc.size_on_disk()
  *         while dc.total_size > before // 3:             # <<<<<<<<<<<<<<
  *             key = random.choice(tuple(data))
@@ -11964,7 +11964,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *         self.assertLess(dc.size_on_disk(), before)
  *         check_data()             # <<<<<<<<<<<<<<
  *         dc.clear()
- * 
+ *
  */
   __pyx_t_3 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_15test_disk_cache_6check_data(__pyx_v_check_data); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -11974,7 +11974,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *         self.assertLess(dc.size_on_disk(), before)
  *         check_data()
  *         dc.clear()             # <<<<<<<<<<<<<<
- * 
+ *
  *         st = time.monotonic()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_dc, __pyx_n_s_clear); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
@@ -11998,7 +11998,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":276
  *         dc.clear()
- * 
+ *
  *         st = time.monotonic()             # <<<<<<<<<<<<<<
  *         while dc.size_on_disk() and time.monotonic() - st < 20:
  *             time.sleep(0.01)
@@ -12027,7 +12027,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
   __pyx_t_3 = 0;
 
   /* "smelly_tests/graphics.py":277
- * 
+ *
  *         st = time.monotonic()
  *         while dc.size_on_disk() and time.monotonic() - st < 20:             # <<<<<<<<<<<<<<
  *             time.sleep(0.01)
@@ -12616,7 +12616,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *             dc.get(key_as_bytes(f'1:{frame}'), True)
  *             num_in_ram += 1             # <<<<<<<<<<<<<<
  *         self.assertEqual(dc.num_cached_in_ram(), num_in_ram)
- * 
+ *
  */
     __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_num_in_ram, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -12628,7 +12628,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
  *             dc.get(key_as_bytes(f'1:{frame}'), True)
  *             num_in_ram += 1
  *         self.assertEqual(dc.num_cached_in_ram(), num_in_ram)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def clear_predicate(key):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
@@ -12701,10 +12701,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":294
  *         self.assertEqual(dc.num_cached_in_ram(), num_in_ram)
- * 
+ *
  *         def clear_predicate(key):             # <<<<<<<<<<<<<<
  *             return key.startswith(b'1:')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_8graphics_12TestGraphics_15test_disk_cache_9clear_predicate, 0, __pyx_n_s_TestGraphics_test_disk_cache_loc_5, NULL, __pyx_n_s_smelly_tests_graphics, __pyx_d, ((PyObject *)__pyx_codeobj__46)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 294, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -12713,10 +12713,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":297
  *             return key.startswith(b'1:')
- * 
+ *
  *         dc.remove_from_ram(clear_predicate)             # <<<<<<<<<<<<<<
  *         self.assertEqual(dc.num_cached_in_ram(), 0)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_dc, __pyx_n_s_remove_from_ram); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -12738,10 +12738,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/graphics.py":298
- * 
+ *
  *         dc.remove_from_ram(clear_predicate)
  *         self.assertEqual(dc.num_cached_in_ram(), 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_suppressing_gr_command_responses(self):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 298, __pyx_L1_error)
@@ -12814,7 +12814,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
   /* "smelly_tests/graphics.py":208
  *                 self.assertEqual(xor_data(key, data), xor(key, data))
- * 
+ *
  *     def test_disk_cache(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache
@@ -12854,7 +12854,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_2test_disk_cac
 
 /* "smelly_tests/graphics.py":300
  *         self.assertEqual(dc.num_cached_in_ram(), 0)
- * 
+ *
  *     def test_suppressing_gr_command_responses(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.ae(
@@ -12896,7 +12896,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
   __Pyx_RefNannySetupContext("test_suppressing_gr_command_responses", 0);
 
   /* "smelly_tests/graphics.py":301
- * 
+ *
  *     def test_suppressing_gr_command_responses(self):
  *         s, g, pl, sl = load_helpers(self)             # <<<<<<<<<<<<<<
  *         self.ae(
@@ -12929,15 +12929,15 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -13237,7 +13237,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
  *         self.assertIsNone(pl('efgh', m=1))
  *         self.assertIsNone(pl('ijkl', m=1))             # <<<<<<<<<<<<<<
  *         self.assertIsNone(pl('mnop', m=0))
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 310, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -13269,7 +13269,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
  *         self.assertIsNone(pl('efgh', m=1))
  *         self.assertIsNone(pl('ijkl', m=1))
  *         self.assertIsNone(pl('mnop', m=0))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # errors
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 311, __pyx_L1_error)
@@ -13299,7 +13299,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":314
- * 
+ *
  *         # errors
  *         self.assertIsNone(pl('abcd', s=2, v=2, m=1, q=1))             # <<<<<<<<<<<<<<
  *         self.ae(pl('mnop', m=0), 'ENODATA:Insufficient image data: 8 < 16')
@@ -13403,7 +13403,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
  *         self.ae(pl('mnop', m=0), 'ENODATA:Insufficient image data: 8 < 16')
  *         self.assertIsNone(pl('abcd', s=2, v=2, m=1, q=2))             # <<<<<<<<<<<<<<
  *         self.assertIsNone(pl('mnop', m=0))
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 316, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -13438,7 +13438,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
  *         self.ae(pl('mnop', m=0), 'ENODATA:Insufficient image data: 8 < 16')
  *         self.assertIsNone(pl('abcd', s=2, v=2, m=1, q=2))
  *         self.assertIsNone(pl('mnop', m=0))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # frames
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 317, __pyx_L1_error)
@@ -13468,7 +13468,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":320
- * 
+ *
  *         # frames
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         li = make_send_command(s)
@@ -13876,7 +13876,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
  *         self.ae(li(payload='2' * 12).code, 'ENODATA')
  *         self.assertIsNone(li(payload='2' * 12, z=77, m=1, q=2))             # <<<<<<<<<<<<<<
  *         self.assertIsNone(li(payload='2' * 12))
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 330, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -13911,7 +13911,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
  *         self.ae(li(payload='2' * 12).code, 'ENODATA')
  *         self.assertIsNone(li(payload='2' * 12, z=77, m=1, q=2))
  *         self.assertIsNone(li(payload='2' * 12))             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_load_images(self):
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertIsNone); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 331, __pyx_L1_error)
@@ -13942,7 +13942,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
 
   /* "smelly_tests/graphics.py":300
  *         self.assertEqual(dc.num_cached_in_ram(), 0)
- * 
+ *
  *     def test_suppressing_gr_command_responses(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.ae(
@@ -13973,7 +13973,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_4test_suppress
 
 /* "smelly_tests/graphics.py":333
  *         self.assertIsNone(li(payload='2' * 12))
- * 
+ *
  *     def test_load_images(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -14024,11 +14024,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_RefNannySetupContext("test_load_images", 0);
 
   /* "smelly_tests/graphics.py":334
- * 
+ *
  *     def test_load_images(self):
  *         s, g, pl, sl = load_helpers(self)             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_load_helpers); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -14057,15 +14057,15 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -14119,7 +14119,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *     def test_load_images(self):
  *         s, g, pl, sl = load_helpers(self)
  *         self.assertEqual(g.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test load query
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 335, __pyx_L1_error)
@@ -14179,11 +14179,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":338
- * 
+ *
  *         # Test load query
  *         self.ae(pl('abcd', s=1, v=1, a='q'), 'OK')             # <<<<<<<<<<<<<<
  *         self.ae(g.image_count, 0)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 338, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -14248,7 +14248,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         # Test load query
  *         self.ae(pl('abcd', s=1, v=1, a='q'), 'OK')
  *         self.ae(g.image_count, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test simple load
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 339, __pyx_L1_error)
@@ -14305,7 +14305,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":342
- * 
+ *
  *         # Test simple load
  *         for f in 32, 24:             # <<<<<<<<<<<<<<
  *             p = 'abc' + ('d' if f == 32 else '')
@@ -14352,7 +14352,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *             p = 'abc' + ('d' if f == 32 else '')
  *             img = sl(p, s=1, v=1, f=f)             # <<<<<<<<<<<<<<
  *             self.ae(bool(img['is_4byte_aligned']), f == 32)
- * 
+ *
  */
     __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 344, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -14375,7 +14375,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *             p = 'abc' + ('d' if f == 32 else '')
  *             img = sl(p, s=1, v=1, f=f)
  *             self.ae(bool(img['is_4byte_aligned']), f == 32)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test chunked load
  */
     __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 345, __pyx_L1_error)
@@ -14440,7 +14440,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "smelly_tests/graphics.py":342
- * 
+ *
  *         # Test simple load
  *         for f in 32, 24:             # <<<<<<<<<<<<<<
  *             p = 'abc' + ('d' if f == 32 else '')
@@ -14450,7 +14450,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":348
- * 
+ *
  *         # Test chunked load
  *         self.assertIsNone(pl('abcd', s=2, v=2, m=1))             # <<<<<<<<<<<<<<
  *         self.assertIsNone(pl('efgh', m=1))
@@ -14619,7 +14619,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         self.ae(pl('mnop', m=0), 'OK')
  *         img = g.image_for_client_id(1)             # <<<<<<<<<<<<<<
  *         self.ae(img['data'], b'abcdefghijklmnop')
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_image_for_client_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 352, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -14645,7 +14645,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         self.ae(pl('mnop', m=0), 'OK')
  *         img = g.image_for_client_id(1)
  *         self.ae(img['data'], b'abcdefghijklmnop')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test compression
  */
   __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 353, __pyx_L1_error)
@@ -14702,7 +14702,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":356
- * 
+ *
  *         # Test compression
  *         random_data = byte_block(3 * 1024)             # <<<<<<<<<<<<<<
  *         compressed_random_data = zlib.compress(random_data)
@@ -14733,7 +14733,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         random_data = byte_block(3 * 1024)
  *         compressed_random_data = zlib.compress(random_data)             # <<<<<<<<<<<<<<
  *         sl(compressed_random_data, s=24, v=32, o='z', expecting_data=random_data)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_zlib); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 357, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -14762,7 +14762,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         random_data = byte_block(3 * 1024)
  *         compressed_random_data = zlib.compress(random_data)
  *         sl(compressed_random_data, s=24, v=32, o='z', expecting_data=random_data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test chunked + compressed
  */
   __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 358, __pyx_L1_error)
@@ -14783,7 +14783,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/graphics.py":361
- * 
+ *
  *         # Test chunked + compressed
  *         b = len(compressed_random_data) // 2             # <<<<<<<<<<<<<<
  *         self.assertIsNone(
@@ -14937,7 +14937,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         self.ae(pl(compressed_random_data[b:], m=0), 'OK')
  *         img = g.image_for_client_id(1)             # <<<<<<<<<<<<<<
  *         self.ae(img['data'], random_data)
- * 
+ *
  */
   __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_image_for_client_id); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 366, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
@@ -14963,7 +14963,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         self.ae(pl(compressed_random_data[b:], m=0), 'OK')
  *         img = g.image_for_client_id(1)
  *         self.ae(img['data'], random_data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test loading from file
  */
   __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 367, __pyx_L1_error)
@@ -15020,7 +15020,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/graphics.py":370
- * 
+ *
  *         # Test loading from file
  *         f = tempfile.NamedTemporaryFile(prefix='tty-graphics-protocol-')             # <<<<<<<<<<<<<<
  *         f.write(random_data), f.flush()
@@ -15293,7 +15293,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         sl(f.name, s=24, v=32, t='t', o='z', expecting_data=random_data)
  *         # check that file was deleted
  *         self.assertRaises(FileNotFoundError, f.close)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test loading from POSIX SHM
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertRaises); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 377, __pyx_L1_error)
@@ -15354,7 +15354,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/graphics.py":380
- * 
+ *
  *         # Test loading from POSIX SHM
  *         name = '/smelly-test-shm'             # <<<<<<<<<<<<<<
  *         shm_write(name, random_data)
@@ -15515,7 +15515,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         self.assertRaises(FileNotFoundError, shm_unlink, name)
  *         s.reset()             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 385, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -15540,7 +15540,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
  *         self.assertRaises(FileNotFoundError, shm_unlink, name)
  *         s.reset()
  *         self.assertEqual(g.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 386, __pyx_L1_error)
@@ -15601,7 +15601,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
 
   /* "smelly_tests/graphics.py":333
  *         self.assertIsNone(li(payload='2' * 12))
- * 
+ *
  *     def test_load_images(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -15637,7 +15637,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_6test_load_ima
 }
 
 /* "smelly_tests/graphics.py":389
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')
  *     def test_load_png(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
@@ -15660,7 +15660,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_12TestGraphics_9test_load_png
 
 /* "smelly_tests/graphics.py":397
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def png(mode='RGBA'):             # <<<<<<<<<<<<<<
  *             buf = BytesIO()
  *             i = img
@@ -15747,7 +15747,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_load_pn
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":398
- * 
+ *
  *         def png(mode='RGBA'):
  *             buf = BytesIO()             # <<<<<<<<<<<<<<
  *             i = img
@@ -15841,7 +15841,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_load_pn
  *                 i = img.convert(mode)
  *             i.save(buf, 'PNG')             # <<<<<<<<<<<<<<
  *             return buf.getvalue()
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_i, __pyx_n_s_save); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 402, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -15896,7 +15896,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_load_pn
  *                 i = img.convert(mode)
  *             i.save(buf, 'PNG')
  *             return buf.getvalue()             # <<<<<<<<<<<<<<
- * 
+ *
  *         for mode in 'RGBA RGB'.split():
  */
   __Pyx_XDECREF(__pyx_r);
@@ -15923,7 +15923,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_load_pn
 
   /* "smelly_tests/graphics.py":397
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def png(mode='RGBA'):             # <<<<<<<<<<<<<<
  *             buf = BytesIO()
  *             i = img
@@ -15946,7 +15946,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_load_pn
 }
 
 /* "smelly_tests/graphics.py":389
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')
  *     def test_load_png(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
@@ -16027,15 +16027,15 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -16213,7 +16213,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *         img = Image.frombytes('RGBA', (w, h), rgba_data)
  *         rgb_data = img.convert('RGB').convert('RGBA').tobytes()             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_img, __pyx_n_s_convert); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 394, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -16275,7 +16275,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *         img = Image.frombytes('RGBA', (w, h), rgba_data)
  *         rgb_data = img.convert('RGB').convert('RGBA').tobytes()
  *         self.assertEqual(g.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def png(mode='RGBA'):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 395, __pyx_L1_error)
@@ -16336,7 +16336,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
 
   /* "smelly_tests/graphics.py":397
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def png(mode='RGBA'):             # <<<<<<<<<<<<<<
  *             buf = BytesIO()
  *             i = img
@@ -16349,7 +16349,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
 
   /* "smelly_tests/graphics.py":405
  *             return buf.getvalue()
- * 
+ *
  *         for mode in 'RGBA RGB'.split():             # <<<<<<<<<<<<<<
  *             data = png(mode)
  *             sl(data, f=100, expecting_data=rgb_data
@@ -16415,7 +16415,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
     __pyx_t_5 = 0;
 
     /* "smelly_tests/graphics.py":406
- * 
+ *
  *         for mode in 'RGBA RGB'.split():
  *             data = png(mode)             # <<<<<<<<<<<<<<
  *             sl(data, f=100, expecting_data=rgb_data
@@ -16431,7 +16431,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *             data = png(mode)
  *             sl(data, f=100, expecting_data=rgb_data             # <<<<<<<<<<<<<<
  *                if mode == 'RGB' else rgba_data)
- * 
+ *
  */
     __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 407, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -16446,7 +16446,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *             data = png(mode)
  *             sl(data, f=100, expecting_data=rgb_data
  *                if mode == 'RGB' else rgba_data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for m in 'LP':
  */
     __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_v_mode, __pyx_n_s_RGB, Py_EQ)); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 408, __pyx_L1_error)
@@ -16457,7 +16457,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *             data = png(mode)
  *             sl(data, f=100, expecting_data=rgb_data             # <<<<<<<<<<<<<<
  *                if mode == 'RGB' else rgba_data)
- * 
+ *
  */
       __Pyx_INCREF(__pyx_v_rgb_data);
       __pyx_t_2 = __pyx_v_rgb_data;
@@ -16467,7 +16467,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *             data = png(mode)
  *             sl(data, f=100, expecting_data=rgb_data
  *                if mode == 'RGB' else rgba_data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         for m in 'LP':
  */
       __Pyx_INCREF(__pyx_v_rgba_data);
@@ -16481,7 +16481,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *             data = png(mode)
  *             sl(data, f=100, expecting_data=rgb_data             # <<<<<<<<<<<<<<
  *                if mode == 'RGB' else rgba_data)
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyObject_Call(__pyx_v_sl, __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 407, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -16491,7 +16491,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
 
     /* "smelly_tests/graphics.py":405
  *             return buf.getvalue()
- * 
+ *
  *         for mode in 'RGBA RGB'.split():             # <<<<<<<<<<<<<<
  *             data = png(mode)
  *             sl(data, f=100, expecting_data=rgb_data
@@ -16501,7 +16501,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
 
   /* "smelly_tests/graphics.py":410
  *                if mode == 'RGB' else rgba_data)
- * 
+ *
  *         for m in 'LP':             # <<<<<<<<<<<<<<
  *             img = img.convert(m)
  *             rgba_data = img.convert('RGBA').tobytes()
@@ -16526,7 +16526,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
     __pyx_t_2 = 0;
 
     /* "smelly_tests/graphics.py":411
- * 
+ *
  *         for m in 'LP':
  *             img = img.convert(m)             # <<<<<<<<<<<<<<
  *             rgba_data = img.convert('RGBA').tobytes()
@@ -16604,7 +16604,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *             rgba_data = img.convert('RGBA').tobytes()
  *             data = png(m)             # <<<<<<<<<<<<<<
  *         sl(data, f=100, expecting_data=rgba_data)
- * 
+ *
  */
     __pyx_t_2 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_13test_load_png_png(__pyx_v_png, __pyx_v_m); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 413, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -16613,7 +16613,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
 
     /* "smelly_tests/graphics.py":410
  *                if mode == 'RGB' else rgba_data)
- * 
+ *
  *         for m in 'LP':             # <<<<<<<<<<<<<<
  *             img = img.convert(m)
  *             rgba_data = img.convert('RGBA').tobytes()
@@ -16625,7 +16625,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *             rgba_data = img.convert('RGBA').tobytes()
  *             data = png(m)
  *         sl(data, f=100, expecting_data=rgba_data)             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.ae(pl(b'a' * 20, f=100, S=20).partition(':')[0], 'EBADPNG')
  */
   if (unlikely(!__pyx_v_data)) { __Pyx_RaiseUnboundLocalError("data"); __PYX_ERR(0, 414, __pyx_L1_error) }
@@ -16646,7 +16646,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
 
   /* "smelly_tests/graphics.py":416
  *         sl(data, f=100, expecting_data=rgba_data)
- * 
+ *
  *         self.ae(pl(b'a' * 20, f=100, S=20).partition(':')[0], 'EBADPNG')             # <<<<<<<<<<<<<<
  *         s.reset()
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -16731,11 +16731,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/graphics.py":417
- * 
+ *
  *         self.ae(pl(b'a' * 20, f=100, S=20).partition(':')[0], 'EBADPNG')
  *         s.reset()             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 417, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -16760,7 +16760,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
  *         self.ae(pl(b'a' * 20, f=100, S=20).partition(':')[0], 'EBADPNG')
  *         s.reset()
  *         self.assertEqual(g.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_load_png_simple(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 418, __pyx_L1_error)
@@ -16820,7 +16820,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "smelly_tests/graphics.py":389
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')
  *     def test_load_png(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
@@ -16860,7 +16860,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_8test_load_png
 
 /* "smelly_tests/graphics.py":420
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_load_png_simple(self):             # <<<<<<<<<<<<<<
  *         # 1x1 transparent PNG
  *         png_data = standard_b64decode(
@@ -17061,15 +17061,15 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_10test_load_pn
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 3);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 3); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 3);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_7);
@@ -17146,7 +17146,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_10test_load_pn
  *         # test error handling for loading bad png data
  *         self.assertRaisesRegex(             # <<<<<<<<<<<<<<
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertRaisesRegex); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 429, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -17155,7 +17155,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_10test_load_pn
  *         # test error handling for loading bad png data
  *         self.assertRaisesRegex(
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_gr_operations_with_numbers(self):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_load_png_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 430, __pyx_L1_error)
@@ -17217,7 +17217,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_10test_load_pn
 
   /* "smelly_tests/graphics.py":420
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_load_png_simple(self):             # <<<<<<<<<<<<<<
  *         # 1x1 transparent PNG
  *         png_data = standard_b64decode(
@@ -17249,7 +17249,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_10test_load_pn
 
 /* "smelly_tests/graphics.py":432
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')
- * 
+ *
  *     def test_gr_operations_with_numbers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -17271,7 +17271,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_12TestGraphics_13test_gr_oper
 
 /* "smelly_tests/graphics.py":437
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def li(payload, **kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)
@@ -17338,7 +17338,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_operations_with_numbers_2li_2generator3(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "smelly_tests/graphics.py":438
- * 
+ *
  *         def li(payload, **kw):
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             res = send_command(s, cmd, payload)
@@ -17466,11 +17466,11 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -17581,7 +17581,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 
 /* "smelly_tests/graphics.py":437
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def li(payload, **kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)
@@ -17619,7 +17619,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_kw);
 
   /* "smelly_tests/graphics.py":438
- * 
+ *
  *         def li(payload, **kw):
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             res = send_command(s, cmd, payload)
@@ -17638,7 +17638,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)             # <<<<<<<<<<<<<<
  *             return parse_response_with_ids(res)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_send_command); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 439, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -17698,7 +17698,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)
  *             return parse_response_with_ids(res)             # <<<<<<<<<<<<<<
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1, i=3)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -17725,7 +17725,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 
   /* "smelly_tests/graphics.py":437
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def li(payload, **kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)
@@ -17750,7 +17750,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 }
 
 /* "smelly_tests/graphics.py":472
- * 
+ *
  *         # test put with number
  *         def put(**kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -17908,11 +17908,11 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -18022,7 +18022,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 }
 
 /* "smelly_tests/graphics.py":472
- * 
+ *
  *         # test put with number
  *         def put(**kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -18081,7 +18081,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             cmd = 'a=p,' + cmd             # <<<<<<<<<<<<<<
  *             return parse_response_with_ids(send_command(s, cmd))
- * 
+ *
  */
   __pyx_t_2 = PyNumber_Add(__pyx_kp_s_a_p, __pyx_v_cmd); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 474, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -18092,7 +18092,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             cmd = 'a=p,' + cmd
  *             return parse_response_with_ids(send_command(s, cmd))             # <<<<<<<<<<<<<<
- * 
+ *
  *         code, idstr = put(c=2, r=2, I=93)
  */
   __Pyx_XDECREF(__pyx_r);
@@ -18167,7 +18167,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
   goto __pyx_L0;
 
   /* "smelly_tests/graphics.py":472
- * 
+ *
  *         # test put with number
  *         def put(**kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -18194,7 +18194,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 }
 
 /* "smelly_tests/graphics.py":483
- * 
+ *
  *         # test delete with number
  *         def delete(ac='N', **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
@@ -18272,7 +18272,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             send_command(s, cmd)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_operations_with_numbers_6delete_genexpr(PyObject *__pyx_self) {
@@ -18396,11 +18396,11 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -18510,7 +18510,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 }
 
 /* "smelly_tests/graphics.py":483
- * 
+ *
  *         # test delete with number
  *         def delete(ac='N', **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
@@ -18610,7 +18610,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             send_command(s, cmd)
- * 
+ *
  */
     __pyx_t_2 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_operations_with_numbers_6delete_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 488, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -18639,7 +18639,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())
  *             send_command(s, cmd)             # <<<<<<<<<<<<<<
- * 
+ *
  *         count = s.grman.image_count
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_send_command); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 489, __pyx_L1_error)
@@ -18693,7 +18693,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/graphics.py":483
- * 
+ *
  *         # test delete with number
  *         def delete(ac='N', **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
@@ -18721,7 +18721,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_31test_gr_oper
 
 /* "smelly_tests/graphics.py":432
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')
- * 
+ *
  *     def test_gr_operations_with_numbers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -18762,7 +18762,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   }
 
   /* "smelly_tests/graphics.py":433
- * 
+ *
  *     def test_gr_operations_with_numbers(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         g = s.grman
@@ -18794,7 +18794,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         s = self.create_screen()
  *         g = s.grman             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_grman); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 434, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18805,7 +18805,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         s = self.create_screen()
  *         g = s.grman
  *         self.assertEqual(g.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def li(payload, **kw):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 435, __pyx_L1_error)
@@ -18866,7 +18866,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
 
   /* "smelly_tests/graphics.py":437
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def li(payload, **kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)
@@ -18878,10 +18878,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
 
   /* "smelly_tests/graphics.py":442
  *             return parse_response_with_ids(res)
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1, i=3)             # <<<<<<<<<<<<<<
  *         self.ae(code, 'EINVAL')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 442, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -18903,11 +18903,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_6);
@@ -18945,10 +18945,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   __pyx_t_6 = 0;
 
   /* "smelly_tests/graphics.py":443
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1, i=3)
  *         self.ae(code, 'EINVAL')             # <<<<<<<<<<<<<<
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1)
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 443, __pyx_L1_error)
@@ -19002,7 +19002,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
 
   /* "smelly_tests/graphics.py":445
  *         self.ae(code, 'EINVAL')
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1)             # <<<<<<<<<<<<<<
  *         self.ae((code, ids), ('OK', 'i=1,I=1'))
  *         img = g.image_for_client_number(1)
@@ -19026,11 +19026,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_4);
@@ -19068,7 +19068,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   __pyx_t_4 = 0;
 
   /* "smelly_tests/graphics.py":446
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1)
  *         self.ae((code, ids), ('OK', 'i=1,I=1'))             # <<<<<<<<<<<<<<
  *         img = g.image_for_client_number(1)
@@ -19306,11 +19306,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_t_2);
@@ -19586,11 +19586,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_6);
@@ -19719,11 +19719,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -19831,7 +19831,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         self.ae((code, ids), ('OK', 'i=5'))
  *         code, ids = li('abc', s=1, v=1, f=24, I=3)             # <<<<<<<<<<<<<<
  *         self.ae((code, ids), ('OK', 'i=4,I=3'))
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 459, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -19852,11 +19852,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_t_1);
@@ -19897,7 +19897,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         self.ae((code, ids), ('OK', 'i=5'))
  *         code, ids = li('abc', s=1, v=1, f=24, I=3)
  *         self.ae((code, ids), ('OK', 'i=4,I=3'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test chunked load with number
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 460, __pyx_L1_error)
@@ -19960,7 +19960,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/graphics.py":463
- * 
+ *
  *         # Test chunked load with number
  *         self.assertIsNone(li('abcd', s=2, v=2, m=1, I=93))             # <<<<<<<<<<<<<<
  *         self.assertIsNone(li('efgh', m=1))
@@ -20157,7 +20157,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         img = g.image_for_client_number(93)
  *         self.ae(img['data'], b'abcdefghijkxmnop')             # <<<<<<<<<<<<<<
  *         self.ae(img['client_id'], 6)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 468, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20216,7 +20216,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         img = g.image_for_client_number(93)
  *         self.ae(img['data'], b'abcdefghijkxmnop')
  *         self.ae(img['client_id'], 6)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test put with number
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 469, __pyx_L1_error)
@@ -20273,7 +20273,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/graphics.py":472
- * 
+ *
  *         # test put with number
  *         def put(**kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -20286,7 +20286,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
 
   /* "smelly_tests/graphics.py":477
  *             return parse_response_with_ids(send_command(s, cmd))
- * 
+ *
  *         code, idstr = put(c=2, r=2, I=93)             # <<<<<<<<<<<<<<
  *         self.ae((code, idstr), ('OK', 'i=6,I=93'))
  *         code, idstr = put(c=2, r=2, I=94)
@@ -20309,11 +20309,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_4);
@@ -20351,7 +20351,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   __pyx_t_4 = 0;
 
   /* "smelly_tests/graphics.py":478
- * 
+ *
  *         code, idstr = put(c=2, r=2, I=93)
  *         self.ae((code, idstr), ('OK', 'i=6,I=93'))             # <<<<<<<<<<<<<<
  *         code, idstr = put(c=2, r=2, I=94)
@@ -20421,7 +20421,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         self.ae((code, idstr), ('OK', 'i=6,I=93'))
  *         code, idstr = put(c=2, r=2, I=94)             # <<<<<<<<<<<<<<
  *         self.ae(code, 'ENOENT')
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 479, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -20441,11 +20441,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_2);
@@ -20486,7 +20486,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         self.ae((code, idstr), ('OK', 'i=6,I=93'))
  *         code, idstr = put(c=2, r=2, I=94)
  *         self.ae(code, 'ENOENT')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test delete with number
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 480, __pyx_L1_error)
@@ -20539,7 +20539,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly_tests/graphics.py":483
- * 
+ *
  *         # test delete with number
  *         def delete(ac='N', **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
@@ -20553,7 +20553,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
 
   /* "smelly_tests/graphics.py":491
  *             send_command(s, cmd)
- * 
+ *
  *         count = s.grman.image_count             # <<<<<<<<<<<<<<
  *         put(i=1), put(i=2), put(i=3), put(i=4), put(i=5)
  *         delete(I=94)
@@ -20567,7 +20567,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
   __pyx_t_2 = 0;
 
   /* "smelly_tests/graphics.py":492
- * 
+ *
  *         count = s.grman.image_count
  *         put(i=1), put(i=2), put(i=3), put(i=4), put(i=5)             # <<<<<<<<<<<<<<
  *         delete(I=94)
@@ -20869,7 +20869,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         self.ae(s.grman.image_count, count - 2)
  *         s.reset()             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 499, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -20894,7 +20894,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
  *         self.ae(s.grman.image_count, count - 2)
  *         s.reset()
  *         self.assertEqual(g.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_image_put(self):
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
@@ -20955,7 +20955,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
 
   /* "smelly_tests/graphics.py":432
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')
- * 
+ *
  *     def test_gr_operations_with_numbers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -20991,7 +20991,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_12test_gr_oper
 
 /* "smelly_tests/graphics.py":502
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_image_put(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -21049,7 +21049,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
   __Pyx_RefNannySetupContext("test_image_put", 0);
 
   /* "smelly_tests/graphics.py":503
- * 
+ *
  *     def test_image_put(self):
  *         cw, ch = 10, 20             # <<<<<<<<<<<<<<
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -21139,21 +21139,21 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 4); 
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 5); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 6); 
+      __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 3);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 4);
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 5);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 6);
     } else {
-      __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 3); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 4); 
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 5); 
-      __pyx_t_9 = PyList_GET_ITEM(sequence, 6); 
+      __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 3);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 4);
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 5);
+      __pyx_t_9 = PyList_GET_ITEM(sequence, 6);
     }
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_5);
@@ -21795,11 +21795,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_5);
@@ -21843,11 +21843,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_t_9);
@@ -22864,7 +22864,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
  *         self.ae(s.cursor.x, 0), self.ae(s.cursor.y, 1)
  *         s.reset()             # <<<<<<<<<<<<<<
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 529, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -22889,7 +22889,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
  *         self.ae(s.cursor.x, 0), self.ae(s.cursor.y, 1)
  *         s.reset()
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_gr_scroll(self):
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 530, __pyx_L1_error)
@@ -22953,7 +22953,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
 
   /* "smelly_tests/graphics.py":502
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_image_put(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -22998,7 +22998,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_image_p
 
 /* "smelly_tests/graphics.py":532
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_scroll(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -23054,7 +23054,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
   __Pyx_RefNannySetupContext("test_gr_scroll", 0);
 
   /* "smelly_tests/graphics.py":533
- * 
+ *
  *     def test_gr_scroll(self):
  *         cw, ch = 10, 20             # <<<<<<<<<<<<<<
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -23146,21 +23146,21 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
-      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 4); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 5); 
-      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 6); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
+      __pyx_t_8 = PyTuple_GET_ITEM(sequence, 4);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 5);
+      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 6);
     } else {
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
-      __pyx_t_8 = PyList_GET_ITEM(sequence, 4); 
-      __pyx_t_9 = PyList_GET_ITEM(sequence, 5); 
-      __pyx_t_10 = PyList_GET_ITEM(sequence, 6); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
+      __pyx_t_8 = PyList_GET_ITEM(sequence, 4);
+      __pyx_t_9 = PyList_GET_ITEM(sequence, 5);
+      __pyx_t_10 = PyList_GET_ITEM(sequence, 6);
     }
     __Pyx_INCREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_t_7);
@@ -23805,7 +23805,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
  *             self.ae(len(layers(s)), 0), self.ae(s.grman.image_count, 1)
  *         s.index()             # <<<<<<<<<<<<<<
  *         self.ae(s.grman.image_count, 0)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_index); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 544, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -23830,7 +23830,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
  *             self.ae(len(layers(s)), 0), self.ae(s.grman.image_count, 1)
  *         s.index()
  *         self.ae(s.grman.image_count, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Now test with margins
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 545, __pyx_L1_error)
@@ -23890,7 +23890,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly_tests/graphics.py":548
- * 
+ *
  *         # Now test with margins
  *         s.reset()             # <<<<<<<<<<<<<<
  *         # Test images outside page area untouched
@@ -25580,7 +25580,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
  *         self.ae(s.grman.image_count, 2)
  *         s.reset()             # <<<<<<<<<<<<<<
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 591, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -25605,7 +25605,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
  *         self.ae(s.grman.image_count, 2)
  *         s.reset()
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_gr_reset(self):
  */
   __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 592, __pyx_L1_error)
@@ -25669,7 +25669,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
 
   /* "smelly_tests/graphics.py":532
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_scroll(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -25708,7 +25708,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_16test_gr_scro
 
 /* "smelly_tests/graphics.py":594
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_reset(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -25762,7 +25762,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_18test_gr_rese
   __Pyx_RefNannySetupContext("test_gr_reset", 0);
 
   /* "smelly_tests/graphics.py":595
- * 
+ *
  *     def test_gr_reset(self):
  *         cw, ch = 10, 20             # <<<<<<<<<<<<<<
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -25856,21 +25856,21 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_18test_gr_rese
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 4); 
-      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 5); 
-      __pyx_t_11 = PyTuple_GET_ITEM(sequence, 6); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 4);
+      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 5);
+      __pyx_t_11 = PyTuple_GET_ITEM(sequence, 6);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 4); 
-      __pyx_t_10 = PyList_GET_ITEM(sequence, 5); 
-      __pyx_t_11 = PyList_GET_ITEM(sequence, 6); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 4);
+      __pyx_t_10 = PyList_GET_ITEM(sequence, 5);
+      __pyx_t_11 = PyList_GET_ITEM(sequence, 6);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_9);
@@ -26395,7 +26395,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_18test_gr_rese
  *             s.index()
  *         s.reset()             # <<<<<<<<<<<<<<
  *         self.ae(s.grman.image_count, 1)
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_reset); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 606, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -26420,7 +26420,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_18test_gr_rese
  *             s.index()
  *         s.reset()
  *         self.ae(s.grman.image_count, 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_gr_delete(self):
  */
   __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 607, __pyx_L1_error)
@@ -26481,7 +26481,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_18test_gr_rese
 
   /* "smelly_tests/graphics.py":594
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_reset(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -26518,7 +26518,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_18test_gr_rese
 
 /* "smelly_tests/graphics.py":609
  *         self.ae(s.grman.image_count, 1)
- * 
+ *
  *     def test_gr_delete(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -26540,7 +26540,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_12TestGraphics_21test_gr_dele
 
 /* "smelly_tests/graphics.py":614
  *             self, cw, ch)
- * 
+ *
  *         def delete(ac=None, **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
  *             if ac:
@@ -26617,7 +26617,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             send_command(s, cmd)
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_gr_delete_6delete_genexpr(PyObject *__pyx_self) {
@@ -26741,11 +26741,11 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_5 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
@@ -26856,7 +26856,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
 
 /* "smelly_tests/graphics.py":614
  *             self, cw, ch)
- * 
+ *
  *         def delete(ac=None, **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
  *             if ac:
@@ -26894,7 +26894,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_kw);
 
   /* "smelly_tests/graphics.py":615
- * 
+ *
  *         def delete(ac=None, **kw):
  *             cmd = 'a=d'             # <<<<<<<<<<<<<<
  *             if ac:
@@ -26955,7 +26955,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())             # <<<<<<<<<<<<<<
  *             send_command(s, cmd)
- * 
+ *
  */
     __pyx_t_2 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_gr_delete_6delete_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 619, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -26984,7 +26984,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
  *             if kw:
  *                 cmd += ',' + ','.join(f'{k}={v}' for k, v in kw.items())
  *             send_command(s, cmd)             # <<<<<<<<<<<<<<
- * 
+ *
  *         put_image(s, cw, ch)
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_send_command); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 620, __pyx_L1_error)
@@ -27039,7 +27039,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
 
   /* "smelly_tests/graphics.py":614
  *             self, cw, ch)
- * 
+ *
  *         def delete(ac=None, **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
  *             if ac:
@@ -27066,7 +27066,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_14test_gr_dele
 
 /* "smelly_tests/graphics.py":609
  *         self.ae(s.grman.image_count, 1)
- * 
+ *
  *     def test_gr_delete(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -27114,7 +27114,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
   }
 
   /* "smelly_tests/graphics.py":610
- * 
+ *
  *     def test_gr_delete(self):
  *         cw, ch = 10, 20             # <<<<<<<<<<<<<<
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -27130,7 +27130,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(             # <<<<<<<<<<<<<<
  *             self, cw, ch)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_put_helpers); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 611, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -27139,7 +27139,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
  *             self, cw, ch)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def delete(ac=None, **kw):
  */
   __pyx_t_5 = __Pyx_PyInt_From_long(__pyx_v_cw); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 612, __pyx_L1_error)
@@ -27208,21 +27208,21 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3); 
-      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 4); 
-      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 5); 
-      __pyx_t_11 = PyTuple_GET_ITEM(sequence, 6); 
+      __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyTuple_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 3);
+      __pyx_t_7 = PyTuple_GET_ITEM(sequence, 4);
+      __pyx_t_10 = PyTuple_GET_ITEM(sequence, 5);
+      __pyx_t_11 = PyTuple_GET_ITEM(sequence, 6);
     } else {
-      __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
-      __pyx_t_6 = PyList_GET_ITEM(sequence, 2); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 3); 
-      __pyx_t_7 = PyList_GET_ITEM(sequence, 4); 
-      __pyx_t_10 = PyList_GET_ITEM(sequence, 5); 
-      __pyx_t_11 = PyList_GET_ITEM(sequence, 6); 
+      __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
+      __pyx_t_6 = PyList_GET_ITEM(sequence, 2);
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 3);
+      __pyx_t_7 = PyList_GET_ITEM(sequence, 4);
+      __pyx_t_10 = PyList_GET_ITEM(sequence, 5);
+      __pyx_t_11 = PyList_GET_ITEM(sequence, 6);
     }
     __Pyx_INCREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_t_9);
@@ -27272,7 +27272,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(             # <<<<<<<<<<<<<<
  *             self, cw, ch)
- * 
+ *
  */
   __Pyx_GIVEREF(__pyx_t_4);
   __pyx_cur_scope->__pyx_v_s = __pyx_t_4;
@@ -27292,7 +27292,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
 
   /* "smelly_tests/graphics.py":614
  *             self, cw, ch)
- * 
+ *
  *         def delete(ac=None, **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
  *             if ac:
@@ -27305,7 +27305,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
 
   /* "smelly_tests/graphics.py":622
  *             send_command(s, cmd)
- * 
+ *
  *         put_image(s, cw, ch)             # <<<<<<<<<<<<<<
  *         delete()
  *         self.ae(len(layers(s)), 0), self.ae(s.grman.image_count, 1)
@@ -27370,7 +27370,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "smelly_tests/graphics.py":623
- * 
+ *
  *         put_image(s, cw, ch)
  *         delete()             # <<<<<<<<<<<<<<
  *         self.ae(len(layers(s)), 0), self.ae(s.grman.image_count, 1)
@@ -28649,7 +28649,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
  *         delete('Z', z=9)
  *         self.ae(s.grman.image_count, 0)             # <<<<<<<<<<<<<<
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 651, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
@@ -28711,7 +28711,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
  *         delete('Z', z=9)
  *         self.ae(s.grman.image_count, 0)
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test put + delete + put
  */
   __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 652, __pyx_L1_error)
@@ -28774,7 +28774,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":655
- * 
+ *
  *         # test put + delete + put
  *         iid = 999999             # <<<<<<<<<<<<<<
  *         self.ae(put_image(s, cw, ch, id=iid), (iid, 'OK'))
@@ -29250,7 +29250,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
  *         self.ae(put_ref(s, id=iid), (iid, ('ENOENT', f'i={iid}')))
  *         self.ae(s.grman.image_count, 0)             # <<<<<<<<<<<<<<
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 663, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
@@ -29312,7 +29312,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
  *         self.ae(put_ref(s, id=iid), (iid, ('ENOENT', f'i={iid}')))
  *         self.ae(s.grman.image_count, 0)
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def test_animation_frame_loading(self):
  */
   __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 664, __pyx_L1_error)
@@ -29376,7 +29376,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
 
   /* "smelly_tests/graphics.py":609
  *         self.ae(s.grman.image_count, 1)
- * 
+ *
  *     def test_gr_delete(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -29414,7 +29414,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_20test_gr_dele
 
 /* "smelly_tests/graphics.py":666
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_animation_frame_loading(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -29436,7 +29436,7 @@ static PyObject *__pyx_pw_12smelly_tests_8graphics_12TestGraphics_23test_animati
 
 /* "smelly_tests/graphics.py":671
  *         li = make_send_command(s)
- * 
+ *
  *         def t(code='OK', image_id=1, frame_number=2, **kw):             # <<<<<<<<<<<<<<
  *             res = li(**kw)
  *             if code is not None:
@@ -29558,7 +29558,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "smelly_tests/graphics.py":672
- * 
+ *
  *         def t(code='OK', image_id=1, frame_number=2, **kw):
  *             res = li(**kw)             # <<<<<<<<<<<<<<
  *             if code is not None:
@@ -29795,7 +29795,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
  *                 self.assertEqual(image_id, res.image_id)
  *             if frame_number is not None:             # <<<<<<<<<<<<<<
  *                 self.assertEqual(frame_number, res.frame_number)
- * 
+ *
  */
   __pyx_t_3 = (__pyx_v_frame_number != Py_None);
   __pyx_t_4 = (__pyx_t_3 != 0);
@@ -29805,7 +29805,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
  *                 self.assertEqual(image_id, res.image_id)
  *             if frame_number is not None:
  *                 self.assertEqual(frame_number, res.frame_number)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test error on send frame for non-existent image
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 679, __pyx_L1_error) }
@@ -29867,13 +29867,13 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
  *                 self.assertEqual(image_id, res.image_id)
  *             if frame_number is not None:             # <<<<<<<<<<<<<<
  *                 self.assertEqual(frame_number, res.frame_number)
- * 
+ *
  */
   }
 
   /* "smelly_tests/graphics.py":671
  *         li = make_send_command(s)
- * 
+ *
  *         def t(code='OK', image_id=1, frame_number=2, **kw):             # <<<<<<<<<<<<<<
  *             res = li(**kw)
  *             if code is not None:
@@ -29900,7 +29900,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
 
 /* "smelly_tests/graphics.py":706
  *         img = g.image_for_client_id(1)
- * 
+ *
  *         def expand(*rows):             # <<<<<<<<<<<<<<
  *             ans = []
  *             for r in rows:
@@ -29931,7 +29931,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_28test_animati
  *             for r in rows:
  *                 ans.append(''.join(x * 3 for x in str(r)))             # <<<<<<<<<<<<<<
  *             return ''.join(ans).encode('ascii')
- * 
+ *
  */
 
 static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animation_frame_loading_6expand_genexpr(PyObject *__pyx_self) {
@@ -30084,7 +30084,7 @@ static PyObject *__pyx_gb_12smelly_tests_8graphics_12TestGraphics_28test_animati
 
 /* "smelly_tests/graphics.py":706
  *         img = g.image_for_client_id(1)
- * 
+ *
  *         def expand(*rows):             # <<<<<<<<<<<<<<
  *             ans = []
  *             for r in rows:
@@ -30115,7 +30115,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
   }
 
   /* "smelly_tests/graphics.py":707
- * 
+ *
  *         def expand(*rows):
  *             ans = []             # <<<<<<<<<<<<<<
  *             for r in rows:
@@ -30152,7 +30152,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
  *             for r in rows:
  *                 ans.append(''.join(x * 3 for x in str(r)))             # <<<<<<<<<<<<<<
  *             return ''.join(ans).encode('ascii')
- * 
+ *
  */
     __pyx_t_3 = __pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animation_frame_loading_6expand_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 709, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -30176,7 +30176,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
  *             for r in rows:
  *                 ans.append(''.join(x * 3 for x in str(r)))
  *             return ''.join(ans).encode('ascii')             # <<<<<<<<<<<<<<
- * 
+ *
  *         self.assertEqual(
  */
   __Pyx_XDECREF(__pyx_r);
@@ -30206,7 +30206,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
 
   /* "smelly_tests/graphics.py":706
  *         img = g.image_for_client_id(1)
- * 
+ *
  *         def expand(*rows):             # <<<<<<<<<<<<<<
  *             ans = []
  *             for r in rows:
@@ -30230,7 +30230,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_28test_animati
 
 /* "smelly_tests/graphics.py":666
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_animation_frame_loading(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -30270,7 +30270,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "smelly_tests/graphics.py":667
- * 
+ *
  *     def test_animation_frame_loading(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         g = s.grman
@@ -30301,7 +30301,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         s = self.create_screen()
  *         g = s.grman             # <<<<<<<<<<<<<<
  *         li = make_send_command(s)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_s, __pyx_n_s_grman); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 668, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -30312,7 +30312,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         s = self.create_screen()
  *         g = s.grman
  *         li = make_send_command(s)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def t(code='OK', image_id=1, frame_number=2, **kw):
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_make_send_command); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 669, __pyx_L1_error)
@@ -30338,7 +30338,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
 
   /* "smelly_tests/graphics.py":671
  *         li = make_send_command(s)
- * 
+ *
  *         def t(code='OK', image_id=1, frame_number=2, **kw):             # <<<<<<<<<<<<<<
  *             res = li(**kw)
  *             if code is not None:
@@ -30350,10 +30350,10 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
   __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":682
- * 
+ *
  *         # test error on send frame for non-existent image
  *         self.assertEqual(li().code, 'ENOENT')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # create image
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 682, __pyx_L1_error)
@@ -30427,11 +30427,11 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":685
- * 
+ *
  *         # create image
  *         self.assertEqual(li(a='t').code, 'OK')             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 36)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 685, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -30497,7 +30497,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         # create image
  *         self.assertEqual(li(a='t').code, 'OK')
  *         self.assertEqual(g.disk_cache.total_size, 36)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # simple new frame (width=4, height=3)
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 686, __pyx_L1_error)
@@ -30557,7 +30557,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":689
- * 
+ *
  *         # simple new frame (width=4, height=3)
  *         self.assertIsNone(li(payload='2' * 12, z=77, m=1))             # <<<<<<<<<<<<<<
  *         self.assertIsNone(li(payload='2' * 12, z=77, m=1))
@@ -30893,7 +30893,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         # test editing part of a frame
  *         t(payload='4' * 12, r=2, s=2, v=2)             # <<<<<<<<<<<<<<
  *         img = g.image_for_client_id(1)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 703, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -30910,7 +30910,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         # test editing part of a frame
  *         t(payload='4' * 12, r=2, s=2, v=2)
  *         img = g.image_for_client_id(1)             # <<<<<<<<<<<<<<
- * 
+ *
  *         def expand(*rows):
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_image_for_client_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 704, __pyx_L1_error)
@@ -30935,7 +30935,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
 
   /* "smelly_tests/graphics.py":706
  *         img = g.image_for_client_id(1)
- * 
+ *
  *         def expand(*rows):             # <<<<<<<<<<<<<<
  *             ans = []
  *             for r in rows:
@@ -30947,7 +30947,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
 
   /* "smelly_tests/graphics.py":712
  *             return ''.join(ans).encode('ascii')
- * 
+ *
  *         self.assertEqual(             # <<<<<<<<<<<<<<
  *             img['extra_frames'],
  *             ({'gap': 77, 'id': 2, 'data': expand(4433, 4433, 3333)},))
@@ -30956,7 +30956,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly_tests/graphics.py":713
- * 
+ *
  *         self.assertEqual(
  *             img['extra_frames'],             # <<<<<<<<<<<<<<
  *             ({'gap': 77, 'id': 2, 'data': expand(4433, 4433, 3333)},))
@@ -31930,7 +31930,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         self.assertIsNone(li(a='a', i=1, c=2))
  *         img = g.image_for_client_id(1)             # <<<<<<<<<<<<<<
  *         self.assertEqual(img['current_frame_index'], 1)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_image_for_client_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 746, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -31956,7 +31956,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         self.assertIsNone(li(a='a', i=1, c=2))
  *         img = g.image_for_client_id(1)
  *         self.assertEqual(img['current_frame_index'], 1)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test delete of frames
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 747, __pyx_L1_error)
@@ -32013,7 +32013,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":750
- * 
+ *
  *         # test delete of frames
  *         t(payload='5' * 36, frame_number=4)             # <<<<<<<<<<<<<<
  *         img = g.image_for_client_id(1)
@@ -33304,7 +33304,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         self.assertIsNone(li(a='d', d='F', i=1))
  *         self.ae(g.image_count, 0)             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_ae); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 787, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -33363,7 +33363,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
  *         self.assertIsNone(li(a='d', d='F', i=1))
  *         self.ae(g.image_count, 0)
  *         self.assertEqual(g.disk_cache.total_size, 0)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # test frame composition
  */
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 788, __pyx_L1_error)
@@ -33423,7 +33423,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly_tests/graphics.py":791
- * 
+ *
  *         # test frame composition
  *         self.assertEqual(li(a='t').code, 'OK')             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 36)
@@ -34222,7 +34222,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
 
   /* "smelly_tests/graphics.py":666
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_animation_frame_loading(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -34255,7 +34255,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_22test_animati
 
 /* "smelly_tests/graphics.py":824
  *         )
- * 
+ *
  *     def test_graphics_quota_enforcement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -34296,7 +34296,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_24test_graphic
   __Pyx_RefNannySetupContext("test_graphics_quota_enforcement", 0);
 
   /* "smelly_tests/graphics.py":825
- * 
+ *
  *     def test_graphics_quota_enforcement(self):
  *         s = self.create_screen()             # <<<<<<<<<<<<<<
  *         g = s.grman
@@ -34984,7 +34984,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_24test_graphic
  *         self.assertEqual(li(payload='x' * 36, i=2).code, 'ENOSPC')
  *         # test editing should not trigger quota
  *         self.assertEqual(li(payload='4' * 12, r=2, s=2, v=2, i=2).code, 'OK')             # <<<<<<<<<<<<<<
- * 
+ *
  *         s.reset()
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_assertEqual); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 842, __pyx_L1_error)
@@ -35053,7 +35053,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_24test_graphic
 
   /* "smelly_tests/graphics.py":844
  *         self.assertEqual(li(payload='4' * 12, r=2, s=2, v=2, i=2).code, 'OK')
- * 
+ *
  *         s.reset()             # <<<<<<<<<<<<<<
  *         self.ae(g.image_count, 0)
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -35078,7 +35078,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_24test_graphic
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":845
- * 
+ *
  *         s.reset()
  *         self.ae(g.image_count, 0)             # <<<<<<<<<<<<<<
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -35199,7 +35199,7 @@ static PyObject *__pyx_pf_12smelly_tests_8graphics_12TestGraphics_24test_graphic
 
   /* "smelly_tests/graphics.py":824
  *         )
- * 
+ *
  *     def test_graphics_quota_enforcement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -38713,7 +38713,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     code = b.partition('\033')[0].split(':', 1)[0]
  *     a = a.split('G', 1)[1]             # <<<<<<<<<<<<<<
  *     return code, a
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(2, __pyx_n_s_G_2, __pyx_int_1); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
@@ -38721,7 +38721,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":94
  *     g = s.grman
- * 
+ *
  *     def pl(payload, **kw):             # <<<<<<<<<<<<<<
  *         kw.setdefault('i', 1)
  *         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -38733,7 +38733,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":100
  *         return parse_response(res)
- * 
+ *
  *     def sl(payload, **kw):             # <<<<<<<<<<<<<<
  *         if isinstance(payload, str):
  *             payload = payload.encode('utf-8')
@@ -38744,11 +38744,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(1, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_sl, 100, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 100, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":122
- * 
+ *
  *     def create_screen():
  *         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)             # <<<<<<<<<<<<<<
  *         return s, 2 / s.columns, 2 / s.lines
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(2, __pyx_int_10, __pyx_int_5); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -38756,7 +38756,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":121
  *     iid = 0
- * 
+ *
  *     def create_screen():             # <<<<<<<<<<<<<<
  *         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)
  *         return s, 2 / s.columns, 2 / s.lines
@@ -38768,7 +38768,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":125
  *         return s, 2 / s.columns, 2 / s.lines
- * 
+ *
  *     def put_cmd(             # <<<<<<<<<<<<<<
  *             z=0, num_cols=0, num_lines=0, x_off=0, y_off=0, width=0, height=0,
  *             cell_x_off=0, cell_y_off=0, placement_id=0, cursor_movement=0):
@@ -38783,7 +38783,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":142
  *         )
- * 
+ *
  *     def put_image(screen, w, h, **kw):             # <<<<<<<<<<<<<<
  *         nonlocal iid
  *         iid += 1
@@ -38795,7 +38795,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":155
  *         return imgid, parse_response(res)
- * 
+ *
  *     def put_ref(screen, **kw):             # <<<<<<<<<<<<<<
  *         imgid = kw.pop('id', None) or iid
  *         cmd = 'a=p,i=%d,%s' % (imgid, put_cmd(**kw))
@@ -38807,7 +38807,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":160
  *         return imgid, parse_response_with_ids(send_command(screen, cmd))
- * 
+ *
  *     def layers(screen, scrolled_by=0, xstart=-1, ystart=1):             # <<<<<<<<<<<<<<
  *         return screen.grman.update_layers(
  *             scrolled_by, xstart, ystart, dx, dy, screen.columns, screen.lines,
@@ -38822,7 +38822,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":165
  *             cw, ch)
- * 
+ *
  *     def rect_eq(r, left, top, right, bottom):             # <<<<<<<<<<<<<<
  *         for side in 'left top right bottom'.split():
  *             a, b = r[side], locals()[side]
@@ -38833,7 +38833,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__29 = (PyObject*)__Pyx_PyCode_New(5, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__28, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_rect_eq, 165, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__29)) __PYX_ERR(0, 165, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":176
- * 
+ *
  * def make_send_command(screen):
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):             # <<<<<<<<<<<<<<
  *         if s:
@@ -38861,7 +38861,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":213
  *         data = {}
- * 
+ *
  *         def key_as_bytes(key):             # <<<<<<<<<<<<<<
  *             if isinstance(key, int):
  *                 key = str(key)
@@ -38873,7 +38873,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":220
  *             return bytes(key)
- * 
+ *
  *         def add(key, val):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data[key] = key_as_bytes(val)
@@ -38885,7 +38885,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":225
  *             dc.add(bkey, data[key])
- * 
+ *
  *         def remove(key):             # <<<<<<<<<<<<<<
  *             bkey = key_as_bytes(key)
  *             data.pop(key, None)
@@ -38897,7 +38897,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":230
  *             return dc.remove(bkey)
- * 
+ *
  *         def check_data():             # <<<<<<<<<<<<<<
  *             for key, val in data.items():
  *                 self.ae(dc.get(key_as_bytes(key)), val)
@@ -38931,10 +38931,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":294
  *         self.assertEqual(dc.num_cached_in_ram(), num_in_ram)
- * 
+ *
  *         def clear_predicate(key):             # <<<<<<<<<<<<<<
  *             return key.startswith(b'1:')
- * 
+ *
  */
   __pyx_tuple__45 = PyTuple_Pack(1, __pyx_n_s_key); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 294, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
@@ -38968,7 +38968,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.assertIsNone(pl('efgh', m=1))
  *         self.assertIsNone(pl('ijkl', m=1))             # <<<<<<<<<<<<<<
  *         self.assertIsNone(pl('mnop', m=0))
- * 
+ *
  */
   __pyx_tuple__49 = PyTuple_Pack(1, __pyx_n_s_ijkl); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 310, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__49);
@@ -38978,7 +38978,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.assertIsNone(pl('efgh', m=1))
  *         self.assertIsNone(pl('ijkl', m=1))
  *         self.assertIsNone(pl('mnop', m=0))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # errors
  */
   __pyx_tuple__50 = PyTuple_Pack(1, __pyx_n_s_mnop); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 311, __pyx_L1_error)
@@ -38986,7 +38986,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__50);
 
   /* "smelly_tests/graphics.py":342
- * 
+ *
  *         # Test simple load
  *         for f in 32, 24:             # <<<<<<<<<<<<<<
  *             p = 'abc' + ('d' if f == 32 else '')
@@ -38998,7 +38998,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":397
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def png(mode='RGBA'):             # <<<<<<<<<<<<<<
  *             buf = BytesIO()
  *             i = img
@@ -39013,7 +39013,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":416
  *         sl(data, f=100, expecting_data=rgba_data)
- * 
+ *
  *         self.ae(pl(b'a' * 20, f=100, S=20).partition(':')[0], 'EBADPNG')             # <<<<<<<<<<<<<<
  *         s.reset()
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -39024,7 +39024,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":437
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *         def li(payload, **kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
  *             res = send_command(s, cmd, payload)
@@ -39036,17 +39036,17 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":442
  *             return parse_response_with_ids(res)
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1, i=3)             # <<<<<<<<<<<<<<
  *         self.ae(code, 'EINVAL')
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(1, __pyx_n_s_abc); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 442, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
   __Pyx_GIVEREF(__pyx_tuple__59);
 
   /* "smelly_tests/graphics.py":446
- * 
+ *
  *         code, ids = li('abc', s=1, v=1, f=24, I=1)
  *         self.ae((code, ids), ('OK', 'i=1,I=1'))             # <<<<<<<<<<<<<<
  *         img = g.image_for_client_number(1)
@@ -39093,7 +39093,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         self.ae((code, ids), ('OK', 'i=5'))
  *         code, ids = li('abc', s=1, v=1, f=24, I=3)
  *         self.ae((code, ids), ('OK', 'i=4,I=3'))             # <<<<<<<<<<<<<<
- * 
+ *
  *         # Test chunked load with number
  */
   __pyx_tuple__64 = PyTuple_Pack(2, __pyx_n_s_OK, __pyx_kp_s_i_4_I_3); if (unlikely(!__pyx_tuple__64)) __PYX_ERR(0, 460, __pyx_L1_error)
@@ -39123,7 +39123,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__66);
 
   /* "smelly_tests/graphics.py":472
- * 
+ *
  *         # test put with number
  *         def put(**kw):             # <<<<<<<<<<<<<<
  *             cmd = ','.join(f'{k}={v}' for k, v in kw.items())
@@ -39135,7 +39135,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__68 = (PyObject*)__Pyx_PyCode_New(0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__67, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_put, 472, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__68)) __PYX_ERR(0, 472, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":483
- * 
+ *
  *         # test delete with number
  *         def delete(ac='N', **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
@@ -39162,7 +39162,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":614
  *             self, cw, ch)
- * 
+ *
  *         def delete(ac=None, **kw):             # <<<<<<<<<<<<<<
  *             cmd = 'a=d'
  *             if ac:
@@ -39254,7 +39254,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":671
  *         li = make_send_command(s)
- * 
+ *
  *         def t(code='OK', image_id=1, frame_number=2, **kw):             # <<<<<<<<<<<<<<
  *             res = li(**kw)
  *             if code is not None:
@@ -39269,7 +39269,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":706
  *         img = g.image_for_client_id(1)
- * 
+ *
  *         def expand(*rows):             # <<<<<<<<<<<<<<
  *             ans = []
  *             for r in rows:
@@ -39302,8 +39302,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__91);
 
   /* "smelly_tests/graphics.py":25
- * 
- * 
+ *
+ *
  * def send_command(screen, cmd, payload=b''):             # <<<<<<<<<<<<<<
  *     cmd = '\033_G' + cmd
  *     if payload:
@@ -39317,8 +39317,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__94);
 
   /* "smelly_tests/graphics.py":39
- * 
- * 
+ *
+ *
  * def parse_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -39329,8 +39329,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__96 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__95, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_parse_response, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__96)) __PYX_ERR(0, 39, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":45
- * 
- * 
+ *
+ *
  * def parse_response_with_ids(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -39341,8 +39341,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__98 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__97, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_parse_response_with_ids, 45, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__98)) __PYX_ERR(0, 45, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":63
- * 
- * 
+ *
+ *
  * def parse_full_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -39353,19 +39353,19 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__101 = (PyObject*)__Pyx_PyCode_New(1, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__100, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_parse_full_response, 63, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__101)) __PYX_ERR(0, 63, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":82
- * 
- * 
+ *
+ *
  * all_bytes = bytes(bytearray(range(256)))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_tuple__102 = PyTuple_Pack(1, __pyx_int_256); if (unlikely(!__pyx_tuple__102)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__102);
   __Pyx_GIVEREF(__pyx_tuple__102);
 
   /* "smelly_tests/graphics.py":85
- * 
- * 
+ *
+ *
  * def byte_block(sz):             # <<<<<<<<<<<<<<
  *     d, m = divmod(sz, len(all_bytes))
  *     return (all_bytes * d) + all_bytes[:m]
@@ -39376,8 +39376,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__104 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__103, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_byte_block, 85, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__104)) __PYX_ERR(0, 85, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":90
- * 
- * 
+ *
+ *
  * def load_helpers(self):             # <<<<<<<<<<<<<<
  *     s = self.create_screen()
  *     g = s.grman
@@ -39388,11 +39388,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__106 = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__105, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_load_helpers, 90, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__106)) __PYX_ERR(0, 90, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":118
- * 
- * 
+ *
+ *
  * def put_helpers(self, cw, ch):             # <<<<<<<<<<<<<<
  *     iid = 0
- * 
+ *
  */
   __pyx_tuple__107 = PyTuple_Pack(19, __pyx_n_s_self, __pyx_n_s_cw, __pyx_n_s_ch, __pyx_n_s_iid, __pyx_n_s_create_screen, __pyx_n_s_create_screen, __pyx_n_s_put_cmd, __pyx_n_s_put_cmd, __pyx_n_s_put_image, __pyx_n_s_put_image, __pyx_n_s_put_ref, __pyx_n_s_put_ref, __pyx_n_s_layers, __pyx_n_s_layers, __pyx_n_s_rect_eq, __pyx_n_s_rect_eq, __pyx_n_s_s, __pyx_n_s_dx, __pyx_n_s_dy); if (unlikely(!__pyx_tuple__107)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__107);
@@ -39400,8 +39400,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__108 = (PyObject*)__Pyx_PyCode_New(3, 0, 19, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__107, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_put_helpers, 118, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__108)) __PYX_ERR(0, 118, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":175
- * 
- * 
+ *
+ *
  * def make_send_command(screen):             # <<<<<<<<<<<<<<
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):
  *         if s:
@@ -39412,7 +39412,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__110 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__109, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_make_send_command, 175, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__110)) __PYX_ERR(0, 175, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":194
- * 
+ *
  * class TestGraphics(BaseTest):
  *     def test_xor_data(self):             # <<<<<<<<<<<<<<
  *         def xor(skey, data):
@@ -39425,7 +39425,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":208
  *                 self.assertEqual(xor_data(key, data), xor(key, data))
- * 
+ *
  *     def test_disk_cache(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache
@@ -39437,7 +39437,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":300
  *         self.assertEqual(dc.num_cached_in_ram(), 0)
- * 
+ *
  *     def test_suppressing_gr_command_responses(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.ae(
@@ -39449,7 +39449,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":333
  *         self.assertIsNone(li(payload='2' * 12))
- * 
+ *
  *     def test_load_images(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -39460,7 +39460,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__118 = (PyObject*)__Pyx_PyCode_New(1, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__117, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_smelly_tests_graphics_py, __pyx_n_s_test_load_images, 333, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__118)) __PYX_ERR(0, 333, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":389
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')
  *     def test_load_png(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
@@ -39473,7 +39473,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":420
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_load_png_simple(self):             # <<<<<<<<<<<<<<
  *         # 1x1 transparent PNG
  *         png_data = standard_b64decode(
@@ -39485,7 +39485,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":432
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')
- * 
+ *
  *     def test_gr_operations_with_numbers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -39497,7 +39497,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":502
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_image_put(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -39509,7 +39509,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":532
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_scroll(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -39521,7 +39521,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":594
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_reset(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -39533,7 +39533,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":609
  *         self.ae(s.grman.image_count, 1)
- * 
+ *
  *     def test_gr_delete(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -39545,7 +39545,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":666
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_animation_frame_loading(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -39557,7 +39557,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly_tests/graphics.py":824
  *         )
- * 
+ *
  *     def test_graphics_quota_enforcement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -40104,7 +40104,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":4
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import random
  * import tempfile
@@ -40115,7 +40115,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly_tests/graphics.py":5
- * 
+ *
  * import os
  * import random             # <<<<<<<<<<<<<<
  * import tempfile
@@ -40228,7 +40228,7 @@ if (!__Pyx_RefNanny) {
  * from dataclasses import dataclass
  * from io import BytesIO             # <<<<<<<<<<<<<<
  * from itertools import cycle
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -40248,7 +40248,7 @@ if (!__Pyx_RefNanny) {
  * from dataclasses import dataclass
  * from io import BytesIO
  * from itertools import cycle             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import load_png_data, parse_bytes, shm_unlink, shm_write, xor_data
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -40267,9 +40267,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":15
  * from itertools import cycle
- * 
+ *
  * from smelly.fast_data_types import load_png_data, parse_bytes, shm_unlink, shm_write, xor_data             # <<<<<<<<<<<<<<
- * 
+ *
  * from . import BaseTest
  */
   __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
@@ -40316,9 +40316,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":17
  * from smelly.fast_data_types import load_png_data, parse_bytes, shm_unlink, shm_write, xor_data
- * 
+ *
  * from . import BaseTest             # <<<<<<<<<<<<<<
- * 
+ *
  * try:
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
@@ -40337,7 +40337,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":19
  * from . import BaseTest
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from PIL import Image
  * except ImportError:
@@ -40352,7 +40352,7 @@ if (!__Pyx_RefNanny) {
     /*try:*/ {
 
       /* "smelly_tests/graphics.py":20
- * 
+ *
  * try:
  *     from PIL import Image             # <<<<<<<<<<<<<<
  * except ImportError:
@@ -40374,7 +40374,7 @@ if (!__Pyx_RefNanny) {
 
       /* "smelly_tests/graphics.py":19
  * from . import BaseTest
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from PIL import Image
  * except ImportError:
@@ -40393,7 +40393,7 @@ if (!__Pyx_RefNanny) {
  *     from PIL import Image
  * except ImportError:             # <<<<<<<<<<<<<<
  *     Image = None
- * 
+ *
  */
     __pyx_t_6 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_6) {
@@ -40407,8 +40407,8 @@ if (!__Pyx_RefNanny) {
  *     from PIL import Image
  * except ImportError:
  *     Image = None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
       if (PyDict_SetItem(__pyx_d, __pyx_n_s_Image, Py_None) < 0) __PYX_ERR(0, 22, __pyx_L4_except_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -40421,7 +40421,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly_tests/graphics.py":19
  * from . import BaseTest
- * 
+ *
  * try:             # <<<<<<<<<<<<<<
  *     from PIL import Image
  * except ImportError:
@@ -40440,8 +40440,8 @@ if (!__Pyx_RefNanny) {
   }
 
   /* "smelly_tests/graphics.py":25
- * 
- * 
+ *
+ *
  * def send_command(screen, cmd, payload=b''):             # <<<<<<<<<<<<<<
  *     cmd = '\033_G' + cmd
  *     if payload:
@@ -40453,8 +40453,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":39
- * 
- * 
+ *
+ *
  * def parse_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -40465,8 +40465,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":45
- * 
- * 
+ *
+ *
  * def parse_response_with_ids(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -40477,7 +40477,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":55
- * 
+ *
  * @dataclass(frozen=True)
  * class Response:             # <<<<<<<<<<<<<<
  *     code: str = 'OK'
@@ -40518,7 +40518,7 @@ if (!__Pyx_RefNanny) {
  *     image_id: int = 0
  *     image_number: int = 0             # <<<<<<<<<<<<<<
  *     frame_number: int = 0
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_7, __pyx_n_s_image_number, __pyx_int_0) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
 
@@ -40526,14 +40526,14 @@ if (!__Pyx_RefNanny) {
  *     image_id: int = 0
  *     image_number: int = 0
  *     frame_number: int = 0             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_7, __pyx_n_s_frame_number, __pyx_int_0) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
 
   /* "smelly_tests/graphics.py":54
- * 
- * 
+ *
+ *
  * @dataclass(frozen=True)             # <<<<<<<<<<<<<<
  * class Response:
  *     code: str = 'OK'
@@ -40549,7 +40549,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly_tests/graphics.py":55
- * 
+ *
  * @dataclass(frozen=True)
  * class Response:             # <<<<<<<<<<<<<<
  *     code: str = 'OK'
@@ -40578,8 +40578,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":63
- * 
- * 
+ *
+ *
  * def parse_full_response(res):             # <<<<<<<<<<<<<<
  *     if not res:
  *         return
@@ -40590,11 +40590,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":82
- * 
- * 
+ *
+ *
  * all_bytes = bytes(bytearray(range(256)))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_tuple__102, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -40608,8 +40608,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":85
- * 
- * 
+ *
+ *
  * def byte_block(sz):             # <<<<<<<<<<<<<<
  *     d, m = divmod(sz, len(all_bytes))
  *     return (all_bytes * d) + all_bytes[:m]
@@ -40620,8 +40620,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":90
- * 
- * 
+ *
+ *
  * def load_helpers(self):             # <<<<<<<<<<<<<<
  *     s = self.create_screen()
  *     g = s.grman
@@ -40632,11 +40632,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":118
- * 
- * 
+ *
+ *
  * def put_helpers(self, cw, ch):             # <<<<<<<<<<<<<<
  *     iid = 0
- * 
+ *
  */
   __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_12smelly_tests_8graphics_13put_helpers, 0, __pyx_n_s_put_helpers, NULL, __pyx_n_s_smelly_tests_graphics, __pyx_d, ((PyObject *)__pyx_codeobj__108)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -40644,8 +40644,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":175
- * 
- * 
+ *
+ *
  * def make_send_command(screen):             # <<<<<<<<<<<<<<
  *     def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):
  *         if s:
@@ -40656,8 +40656,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly_tests/graphics.py":193
- * 
- * 
+ *
+ *
  * class TestGraphics(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_xor_data(self):
  *         def xor(skey, data):
@@ -40675,7 +40675,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_9);
 
   /* "smelly_tests/graphics.py":194
- * 
+ *
  * class TestGraphics(BaseTest):
  *     def test_xor_data(self):             # <<<<<<<<<<<<<<
  *         def xor(skey, data):
@@ -40688,7 +40688,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":208
  *                 self.assertEqual(xor_data(key, data), xor(key, data))
- * 
+ *
  *     def test_disk_cache(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         dc = s.grman.disk_cache
@@ -40700,7 +40700,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":300
  *         self.assertEqual(dc.num_cached_in_ram(), 0)
- * 
+ *
  *     def test_suppressing_gr_command_responses(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.ae(
@@ -40712,7 +40712,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":333
  *         self.assertIsNone(li(payload='2' * 12))
- * 
+ *
  *     def test_load_images(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
  *         self.assertEqual(g.disk_cache.total_size, 0)
@@ -40724,7 +40724,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":388
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')             # <<<<<<<<<<<<<<
  *     def test_load_png(self):
  *         s, g, pl, sl = load_helpers(self)
@@ -40789,7 +40789,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
   /* "smelly_tests/graphics.py":389
- * 
+ *
  *     @unittest.skipIf(Image is None, 'PIL not available, skipping PNG tests')
  *     def test_load_png(self):             # <<<<<<<<<<<<<<
  *         s, g, pl, sl = load_helpers(self)
@@ -40818,7 +40818,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":420
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_load_png_simple(self):             # <<<<<<<<<<<<<<
  *         # 1x1 transparent PNG
  *         png_data = standard_b64decode(
@@ -40830,7 +40830,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":432
  *             ValueError, '[EBADPNG]', load_png_data, b'dsfsdfsfsfd')
- * 
+ *
  *     def test_gr_operations_with_numbers(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -40842,7 +40842,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":502
  *         self.assertEqual(g.disk_cache.total_size, 0)
- * 
+ *
  *     def test_image_put(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -40854,7 +40854,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":532
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_scroll(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -40866,7 +40866,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":594
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_gr_reset(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -40878,7 +40878,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":609
  *         self.ae(s.grman.image_count, 1)
- * 
+ *
  *     def test_gr_delete(self):             # <<<<<<<<<<<<<<
  *         cw, ch = 10, 20
  *         s, dx, dy, put_image, put_ref, layers, rect_eq = put_helpers(
@@ -40890,7 +40890,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":666
  *         self.assertEqual(s.grman.disk_cache.total_size, 0)
- * 
+ *
  *     def test_animation_frame_loading(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -40902,7 +40902,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly_tests/graphics.py":824
  *         )
- * 
+ *
  *     def test_graphics_quota_enforcement(self):             # <<<<<<<<<<<<<<
  *         s = self.create_screen()
  *         g = s.grman
@@ -40913,8 +40913,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly_tests/graphics.py":193
- * 
- * 
+ *
+ *
  * class TestGraphics(BaseTest):             # <<<<<<<<<<<<<<
  *     def test_xor_data(self):
  *         def xor(skey, data):
@@ -40930,7 +40930,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly_tests/graphics.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2016, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -42911,8 +42911,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -43119,8 +43119,8 @@ static PyObject* __Pyx_PyInt_FloorDivideObjC(PyObject *op1, PyObject *op2, CYTHO
                 }
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceFloorDivide : PyNumber_FloorDivide)(op1, op2);
@@ -43680,8 +43680,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -43804,8 +43804,8 @@ static PyObject* __Pyx_PyInt_AddCObj(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {
@@ -43928,8 +43928,8 @@ static PyObject* __Pyx_PyInt_SubtractCObj(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op2)) {

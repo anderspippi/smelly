@@ -1620,10 +1620,10 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/ls.py":36
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1724,10 +1724,10 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_message_to_smelly(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/ls.py":37
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {'all_env_vars': opts.all_env_vars}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1743,10 +1743,10 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_message_to_smelly(CYTHON_UNUSED Py
 
   /* "smelly/rc/ls.py":36
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  */
 
   /* function exit code */
@@ -1763,7 +1763,7 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_message_to_smelly(CYTHON_UNUSED Py
 
 /* "smelly/rc/ls.py":39
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = list(boss.list_os_windows(window))
  *         if not payload_get('all_env_vars'):
@@ -1896,7 +1896,7 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_2response_from_smelly(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/ls.py":40
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         data = list(boss.list_os_windows(window))             # <<<<<<<<<<<<<<
  *         if not payload_get('all_env_vars'):
@@ -2331,11 +2331,11 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_2response_from_smelly(CYTHON_UNUSE
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
             if (likely(PyTuple_CheckExact(sequence))) {
-              __pyx_t_12 = PyTuple_GET_ITEM(sequence, 0); 
-              __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1); 
+              __pyx_t_12 = PyTuple_GET_ITEM(sequence, 0);
+              __pyx_t_9 = PyTuple_GET_ITEM(sequence, 1);
             } else {
-              __pyx_t_12 = PyList_GET_ITEM(sequence, 0); 
-              __pyx_t_9 = PyList_GET_ITEM(sequence, 1); 
+              __pyx_t_12 = PyList_GET_ITEM(sequence, 0);
+              __pyx_t_9 = PyList_GET_ITEM(sequence, 1);
             }
             __Pyx_INCREF(__pyx_t_12);
             __Pyx_INCREF(__pyx_t_9);
@@ -2431,7 +2431,7 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_2response_from_smelly(CYTHON_UNUSE
  *                     for r in remove_env_vars:
  *                         env.pop(r, None)             # <<<<<<<<<<<<<<
  *         return json.dumps(data, indent=2, sort_keys=True)
- * 
+ *
  */
           __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_env, __pyx_n_s_pop); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 58, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
@@ -2516,8 +2516,8 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_2response_from_smelly(CYTHON_UNUSE
  *                     for r in remove_env_vars:
  *                         env.pop(r, None)
  *         return json.dumps(data, indent=2, sort_keys=True)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_json); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
@@ -2545,7 +2545,7 @@ static PyObject *__pyx_pf_6smelly_2rc_2ls_2LS_2response_from_smelly(CYTHON_UNUSE
 
   /* "smelly/rc/ls.py":39
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = list(boss.list_os_windows(window))
  *         if not payload_get('all_env_vars'):
@@ -2740,10 +2740,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/ls.py":36
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -2752,7 +2752,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/ls.py":39
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = list(boss.list_os_windows(window))
  *         if not payload_get('all_env_vars'):
@@ -3051,10 +3051,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/ls.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import json             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Dict, List, Optional, Set, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_json, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3062,10 +3062,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/ls.py":5
- * 
+ *
  * import json
  * from typing import TYPE_CHECKING, Dict, List, Optional, Set, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.constants import appname
  */
   __pyx_t_1 = PyList_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -3119,9 +3119,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/ls.py":7
  * from typing import TYPE_CHECKING, Dict, List, Optional, Set, Tuple
- * 
+ *
  * from smelly.constants import appname             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -3140,9 +3140,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/ls.py":9
  * from smelly.constants import appname
- * 
+ *
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -3210,10 +3210,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/ls.py":11
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import LSRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3222,11 +3222,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/ls.py":12
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import LSRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -3244,16 +3244,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/ls.py":11
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import LSRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/ls.py":15
- * 
- * 
+ *
+ *
  * class LS(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     all_env_vars/bool: Whether to send all environment variables for every window rather than just differing ones
@@ -3271,7 +3271,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/ls.py":16
- * 
+ *
  * class LS(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     all_env_vars/bool: Whether to send all environment variables for every window rather than just differing ones
@@ -3282,7 +3282,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/ls.py":20
  *     '''
- * 
+ *
  *     short_desc = 'List all tabs/windows'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'List all windows. The list is returned as JSON tree. The top-level is a list of'
@@ -3351,10 +3351,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/ls.py":36
  * '''
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  */
   __pyx_t_9 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
@@ -3380,7 +3380,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/ls.py":39
  *         return {'all_env_vars': opts.all_env_vars}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         data = list(boss.list_os_windows(window))
  *         if not payload_get('all_env_vars'):
@@ -3417,8 +3417,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
   /* "smelly/rc/ls.py":15
- * 
- * 
+ *
+ *
  * class LS(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     all_env_vars/bool: Whether to send all environment variables for every window rather than just differing ones
@@ -3432,8 +3432,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/ls.py":62
- * 
- * 
+ *
+ *
  * ls = LS()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_LS); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)
@@ -3447,7 +3447,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/ls.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

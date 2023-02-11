@@ -1551,7 +1551,7 @@ static PyObject *__pyx_codeobj__7;
 
 /* "smelly/rc/env.py":22
  *     args = RemoteCommand.Args(spec='env_var1=val env_var2=val ...', minimum_count=1, json_field='env')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify at least one env var to set')
@@ -1667,7 +1667,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_message_to_smelly(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/env.py":23
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:
  *         if len(args) < 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify at least one env var to set')
@@ -1704,7 +1704,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_message_to_smelly(CYTHON_UNUSED 
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
     /* "smelly/rc/env.py":23
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:
  *         if len(args) < 1:             # <<<<<<<<<<<<<<
  *             self.fatal('Must specify at least one env var to set')
@@ -1806,11 +1806,11 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_message_to_smelly(CYTHON_UNUSED 
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_4 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_8 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_4 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_8 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_8);
@@ -1871,7 +1871,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_message_to_smelly(CYTHON_UNUSED 
  *             else:
  *                 env[x + '='] = ''             # <<<<<<<<<<<<<<
  *         return {'env': env}
- * 
+ *
  */
     /*else*/ {
       __pyx_t_5 = PyNumber_Add(__pyx_v_x, __pyx_kp_s_); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 31, __pyx_L1_error)
@@ -1895,7 +1895,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_message_to_smelly(CYTHON_UNUSED 
  *             else:
  *                 env[x + '='] = ''
  *         return {'env': env}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1908,7 +1908,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_message_to_smelly(CYTHON_UNUSED 
 
   /* "smelly/rc/env.py":22
  *     args = RemoteCommand.Args(spec='env_var1=val env_var2=val ...', minimum_count=1, json_field='env')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify at least one env var to set')
@@ -1935,7 +1935,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_message_to_smelly(CYTHON_UNUSED 
 
 /* "smelly/rc/env.py":34
  *         return {'env': env}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.child import default_env, set_default_env
  *         from smelly.utils import expandvars
@@ -2055,11 +2055,11 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/env.py":35
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         from smelly.child import default_env, set_default_env             # <<<<<<<<<<<<<<
  *         from smelly.utils import expandvars
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2088,7 +2088,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         from smelly.child import default_env, set_default_env
  *         from smelly.utils import expandvars             # <<<<<<<<<<<<<<
- * 
+ *
  *         new_env = payload_get('env') or {}
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
@@ -2108,7 +2108,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
 
   /* "smelly/rc/env.py":38
  *         from smelly.utils import expandvars
- * 
+ *
  *         new_env = payload_get('env') or {}             # <<<<<<<<<<<<<<
  *         env = default_env().copy()
  *         for k, v in new_env.items():
@@ -2148,7 +2148,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
   __pyx_t_1 = 0;
 
   /* "smelly/rc/env.py":39
- * 
+ *
  *         new_env = payload_get('env') or {}
  *         env = default_env().copy()             # <<<<<<<<<<<<<<
  *         for k, v in new_env.items():
@@ -2265,11 +2265,11 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_4);
@@ -2486,7 +2486,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
  *                 env[k] = expandvars(v or '', env)
  *         set_default_env(env)             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
   __Pyx_INCREF(__pyx_v_set_default_env);
   __pyx_t_1 = __pyx_v_set_default_env; __pyx_t_8 = NULL;
@@ -2510,8 +2510,8 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
  *                 env[k] = expandvars(v or '', env)
  *         set_default_env(env)
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -2519,7 +2519,7 @@ static PyObject *__pyx_pf_6smelly_2rc_3env_3Env_2response_from_smelly(CYTHON_UNU
 
   /* "smelly/rc/env.py":34
  *         return {'env': env}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.child import default_env, set_default_env
  *         from smelly.utils import expandvars
@@ -2686,7 +2686,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/env.py":22
  *     args = RemoteCommand.Args(spec='env_var1=val env_var2=val ...', minimum_count=1, json_field='env')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify at least one env var to set')
@@ -2698,7 +2698,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/env.py":34
  *         return {'env': env}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.child import default_env, set_default_env
  *         from smelly.utils import expandvars
@@ -2994,9 +2994,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/env.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import Any, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -3022,10 +3022,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/env.py":6
  * from typing import Any, Optional
- * 
+ *
  * from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3091,8 +3091,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/env.py":9
- * 
- * 
+ *
+ *
  * class Env(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     env+/dict.str: Dictionary of environment variables to values. When a env var ends with = it is removed from the environment.
@@ -3110,7 +3110,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "smelly/rc/env.py":10
- * 
+ *
  * class Env(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     env+/dict.str: Dictionary of environment variables to values. When a env var ends with = it is removed from the environment.
@@ -3121,7 +3121,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/env.py":14
  *     '''
- * 
+ *
  *     short_desc = 'Change environment variables seen by future children'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Change the environment variables that will be seen in newly launched windows.'
@@ -3141,7 +3141,7 @@ if (!__Pyx_RefNanny) {
  *         ' If no = is present, the variable is removed from the environment.'
  *     )
  *     args = RemoteCommand.Args(spec='env_var1=val env_var2=val ...', minimum_count=1, json_field='env')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_RemoteCommand); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
@@ -3163,7 +3163,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/env.py":22
  *     args = RemoteCommand.Args(spec='env_var1=val env_var2=val ...', minimum_count=1, json_field='env')
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: Any, args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         if len(args) < 1:
  *             self.fatal('Must specify at least one env var to set')
@@ -3195,7 +3195,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/env.py":34
  *         return {'env': env}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.child import default_env, set_default_env
  *         from smelly.utils import expandvars
@@ -3232,8 +3232,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/rc/env.py":9
- * 
- * 
+ *
+ *
  * class Env(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     env+/dict.str: Dictionary of environment variables to values. When a env var ends with = it is removed from the environment.
@@ -3247,8 +3247,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/env.py":49
- * 
- * 
+ *
+ *
  * env = Env()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Env); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
@@ -3262,7 +3262,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/env.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

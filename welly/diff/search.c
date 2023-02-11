@@ -970,7 +970,7 @@ struct __pyx_obj_5welly_4diff_6search___pyx_scope_struct____call__;
 
 /* "welly/diff/search.py":34
  *             raise BadRegex(f'Not a valid regex: {query}')
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:             # <<<<<<<<<<<<<<
  *         self.matches = {}
  *         self.count = 0
@@ -1783,7 +1783,7 @@ static PyObject *__pyx_codeobj__18;
 /* Late includes */
 
 /* "welly/diff/search.py":23
- * 
+ *
  * class Search:
  *     def __init__(self, opts: DiffOptions, query: str, is_regex: bool, is_backward: bool):             # <<<<<<<<<<<<<<
  *         self.matches: Dict[int, List[Tuple[int, str]]] = {}
@@ -2106,7 +2106,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search___init__(CYTHON_UNUSED Py
  *             self.pat = re.compile(query, flags=re.UNICODE | re.IGNORECASE)
  *         except Exception:             # <<<<<<<<<<<<<<
  *             raise BadRegex(f'Not a valid regex: {query}')
- * 
+ *
  */
     __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(((PyObject *)(&((PyTypeObject*)PyExc_Exception)[0])));
     if (__pyx_t_12) {
@@ -2120,7 +2120,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search___init__(CYTHON_UNUSED Py
  *             self.pat = re.compile(query, flags=re.UNICODE | re.IGNORECASE)
  *         except Exception:
  *             raise BadRegex(f'Not a valid regex: {query}')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:
  */
       __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_BadRegex); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 32, __pyx_L6_except_error)
@@ -2169,7 +2169,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search___init__(CYTHON_UNUSED Py
   }
 
   /* "welly/diff/search.py":23
- * 
+ *
  * class Search:
  *     def __init__(self, opts: DiffOptions, query: str, is_regex: bool, is_backward: bool):             # <<<<<<<<<<<<<<
  *         self.matches: Dict[int, List[Tuple[int, str]]] = {}
@@ -2198,7 +2198,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search___init__(CYTHON_UNUSED Py
 
 /* "welly/diff/search.py":34
  *             raise BadRegex(f'Not a valid regex: {query}')
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:             # <<<<<<<<<<<<<<
  *         self.matches = {}
  *         self.count = 0
@@ -2293,7 +2293,7 @@ static PyObject *__pyx_pw_5welly_4diff_6search_6Search_3__call__(PyObject *__pyx
 
 /* "welly/diff/search.py":46
  *             matches = []
- * 
+ *
  *             def add(which: str, offset: int) -> None:             # <<<<<<<<<<<<<<
  *                 for m in find(which):
  *                     before = which[: m.start()]
@@ -2395,7 +2395,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8__call___add(PyObject *_
   __pyx_cur_scope = __pyx_outer_scope;
 
   /* "welly/diff/search.py":47
- * 
+ *
  *             def add(which: str, offset: int) -> None:
  *                 for m in find(which):             # <<<<<<<<<<<<<<
  *                     before = which[: m.start()]
@@ -2507,7 +2507,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8__call___add(PyObject *_
  *                     before = which[: m.start()]
  *                     matches.append((wcswidth(before) + offset, m.group()))             # <<<<<<<<<<<<<<
  *                     self.count += 1
- * 
+ *
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_matches)) { __Pyx_RaiseClosureNameError("matches"); __PYX_ERR(0, 49, __pyx_L1_error) }
     if (unlikely(__pyx_cur_scope->__pyx_v_matches == Py_None)) {
@@ -2566,7 +2566,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8__call___add(PyObject *_
  *                     before = which[: m.start()]
  *                     matches.append((wcswidth(before) + offset, m.group()))
  *                     self.count += 1             # <<<<<<<<<<<<<<
- * 
+ *
  *             add(left, margin_size)
  */
     if (unlikely(!__pyx_cur_scope->__pyx_v_self)) { __Pyx_RaiseClosureNameError("self"); __PYX_ERR(0, 50, __pyx_L1_error) }
@@ -2580,7 +2580,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8__call___add(PyObject *_
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/diff/search.py":47
- * 
+ *
  *             def add(which: str, offset: int) -> None:
  *                 for m in find(which):             # <<<<<<<<<<<<<<
  *                     before = which[: m.start()]
@@ -2591,7 +2591,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8__call___add(PyObject *_
 
   /* "welly/diff/search.py":46
  *             matches = []
- * 
+ *
  *             def add(which: str, offset: int) -> None:             # <<<<<<<<<<<<<<
  *                 for m in find(which):
  *                     before = which[: m.start()]
@@ -2618,7 +2618,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8__call___add(PyObject *_
 
 /* "welly/diff/search.py":34
  *             raise BadRegex(f'Not a valid regex: {query}')
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:             # <<<<<<<<<<<<<<
  *         self.matches = {}
  *         self.count = 0
@@ -2665,7 +2665,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
 
   /* "welly/diff/search.py":35
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:
  *         self.matches = {}             # <<<<<<<<<<<<<<
  *         self.count = 0
@@ -2882,7 +2882,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
  *             text = strip_pat.sub('', line.text)
  *             left, right = text[margin_size : half_width + 1], text[right_offset:]             # <<<<<<<<<<<<<<
  *             matches = []
- * 
+ *
  */
     __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_v_half_width, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -2900,7 +2900,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
  *             text = strip_pat.sub('', line.text)
  *             left, right = text[margin_size : half_width + 1], text[right_offset:]
  *             matches = []             # <<<<<<<<<<<<<<
- * 
+ *
  *             def add(which: str, offset: int) -> None:
  */
     __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
@@ -2912,7 +2912,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
 
     /* "welly/diff/search.py":46
  *             matches = []
- * 
+ *
  *             def add(which: str, offset: int) -> None:             # <<<<<<<<<<<<<<
  *                 for m in find(which):
  *                     before = which[: m.start()]
@@ -2931,7 +2931,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
 
     /* "welly/diff/search.py":52
  *                     self.count += 1
- * 
+ *
  *             add(left, margin_size)             # <<<<<<<<<<<<<<
  *             add(right, right_offset)
  *             if matches:
@@ -2942,7 +2942,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "welly/diff/search.py":53
- * 
+ *
  *             add(left, margin_size)
  *             add(right, right_offset)             # <<<<<<<<<<<<<<
  *             if matches:
@@ -2968,7 +2968,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
  *             if matches:
  *                 self.matches[i] = matches             # <<<<<<<<<<<<<<
  *         return bool(self.matches)
- * 
+ *
  */
       __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_matches); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
@@ -2999,7 +2999,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
  *             if matches:
  *                 self.matches[i] = matches
  *         return bool(self.matches)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __contains__(self, i: int) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3015,7 +3015,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
 
   /* "welly/diff/search.py":34
  *             raise BadRegex(f'Not a valid regex: {query}')
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:             # <<<<<<<<<<<<<<
  *         self.matches = {}
  *         self.count = 0
@@ -3050,10 +3050,10 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_2__call__(CYTHON_UNUSED P
 
 /* "welly/diff/search.py":58
  *         return bool(self.matches)
- * 
+ *
  *     def __contains__(self, i: int) -> bool:             # <<<<<<<<<<<<<<
  *         return i in self.matches
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3132,10 +3132,10 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_4__contains__(CYTHON_UNUS
   __Pyx_RefNannySetupContext("__contains__", 0);
 
   /* "welly/diff/search.py":59
- * 
+ *
  *     def __contains__(self, i: int) -> bool:
  *         return i in self.matches             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __len__(self) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3151,10 +3151,10 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_4__contains__(CYTHON_UNUS
 
   /* "welly/diff/search.py":58
  *         return bool(self.matches)
- * 
+ *
  *     def __contains__(self, i: int) -> bool:             # <<<<<<<<<<<<<<
  *         return i in self.matches
- * 
+ *
  */
 
   /* function exit code */
@@ -3170,10 +3170,10 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_4__contains__(CYTHON_UNUS
 
 /* "welly/diff/search.py":61
  *         return i in self.matches
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.count
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3200,10 +3200,10 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_6__len__(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("__len__", 0);
 
   /* "welly/diff/search.py":62
- * 
+ *
  *     def __len__(self) -> int:
  *         return self.count             # <<<<<<<<<<<<<<
- * 
+ *
  *     def highlight_line(self, write: Callable[[str], None], line_num: int) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3215,10 +3215,10 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_6__len__(CYTHON_UNUSED Py
 
   /* "welly/diff/search.py":61
  *         return i in self.matches
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.count
- * 
+ *
  */
 
   /* function exit code */
@@ -3234,7 +3234,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_6__len__(CYTHON_UNUSED Py
 
 /* "welly/diff/search.py":64
  *         return self.count
- * 
+ *
  *     def highlight_line(self, write: Callable[[str], None], line_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         highlights = self.matches.get(line_num)
  *         if not highlights:
@@ -3340,7 +3340,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8highlight_line(CYTHON_UN
   __Pyx_RefNannySetupContext("highlight_line", 0);
 
   /* "welly/diff/search.py":65
- * 
+ *
  *     def highlight_line(self, write: Callable[[str], None], line_num: int) -> bool:
  *         highlights = self.matches.get(line_num)             # <<<<<<<<<<<<<<
  *         if not highlights:
@@ -3485,11 +3485,11 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8highlight_line(CYTHON_UN
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -3627,7 +3627,7 @@ static PyObject *__pyx_pf_5welly_4diff_6search_6Search_8highlight_line(CYTHON_UN
 
   /* "welly/diff/search.py":64
  *         return self.count
- * 
+ *
  *     def highlight_line(self, write: Callable[[str], None], line_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         highlights = self.matches.get(line_num)
  *         if not highlights:
@@ -3957,7 +3957,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/search.py":46
  *             matches = []
- * 
+ *
  *             def add(which: str, offset: int) -> None:             # <<<<<<<<<<<<<<
  *                 for m in find(which):
  *                     before = which[: m.start()]
@@ -3968,18 +3968,18 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_search_py, __pyx_n_s_add, 46, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 46, __pyx_L1_error)
 
   /* "welly/diff/search.py":18
- * 
- * 
+ *
+ *
  * class BadRegex(ValueError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_tuple__8 = PyTuple_Pack(1, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
   /* "welly/diff/search.py":23
- * 
+ *
  * class Search:
  *     def __init__(self, opts: DiffOptions, query: str, is_regex: bool, is_backward: bool):             # <<<<<<<<<<<<<<
  *         self.matches: Dict[int, List[Tuple[int, str]]] = {}
@@ -3992,7 +3992,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/search.py":34
  *             raise BadRegex(f'Not a valid regex: {query}')
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:             # <<<<<<<<<<<<<<
  *         self.matches = {}
  *         self.count = 0
@@ -4004,10 +4004,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/search.py":58
  *         return bool(self.matches)
- * 
+ *
  *     def __contains__(self, i: int) -> bool:             # <<<<<<<<<<<<<<
  *         return i in self.matches
- * 
+ *
  */
   __pyx_tuple__13 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_i); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
@@ -4016,10 +4016,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/search.py":61
  *         return i in self.matches
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.count
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -4028,7 +4028,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/search.py":64
  *         return self.count
- * 
+ *
  *     def highlight_line(self, write: Callable[[str], None], line_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         highlights = self.matches.get(line_num)
  *         if not highlights:
@@ -4339,10 +4339,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":4
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import re             # <<<<<<<<<<<<<<
  * from typing import TYPE_CHECKING, Callable, Dict, Iterable, List, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4350,10 +4350,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/search.py":5
- * 
+ *
  * import re
  * from typing import TYPE_CHECKING, Callable, Dict, Iterable, List, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import wcswidth
  */
   __pyx_t_1 = PyList_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -4407,9 +4407,9 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":7
  * from typing import TYPE_CHECKING, Callable, Dict, Iterable, List, Tuple
- * 
+ *
  * from smelly.fast_data_types import wcswidth             # <<<<<<<<<<<<<<
- * 
+ *
  * from ..tui.operations import styled
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -4428,10 +4428,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":9
  * from smelly.fast_data_types import wcswidth
- * 
+ *
  * from ..tui.operations import styled             # <<<<<<<<<<<<<<
  * from .options.types import Options as DiffOptions
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4448,10 +4448,10 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/search.py":10
- * 
+ *
  * from ..tui.operations import styled
  * from .options.types import Options as DiffOptions             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -4470,10 +4470,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":12
  * from .options.types import Options as DiffOptions
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .render import Line
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4482,10 +4482,10 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "welly/diff/search.py":13
- * 
+ *
  * if TYPE_CHECKING:
  *     from .render import Line             # <<<<<<<<<<<<<<
- * 
+ *
  *     Line
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -4504,10 +4504,10 @@ if (!__Pyx_RefNanny) {
 
     /* "welly/diff/search.py":15
  *     from .render import Line
- * 
+ *
  *     Line             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Line); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -4515,19 +4515,19 @@ if (!__Pyx_RefNanny) {
 
     /* "welly/diff/search.py":12
  * from .options.types import Options as DiffOptions
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from .render import Line
- * 
+ *
  */
   }
 
   /* "welly/diff/search.py":18
- * 
- * 
+ *
+ *
  * class BadRegex(ValueError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_2 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4541,8 +4541,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/search.py":22
- * 
- * 
+ *
+ *
  * class Search:             # <<<<<<<<<<<<<<
  *     def __init__(self, opts: DiffOptions, query: str, is_regex: bool, is_backward: bool):
  *         self.matches: Dict[int, List[Tuple[int, str]]] = {}
@@ -4551,7 +4551,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "welly/diff/search.py":23
- * 
+ *
  * class Search:
  *     def __init__(self, opts: DiffOptions, query: str, is_regex: bool, is_backward: bool):             # <<<<<<<<<<<<<<
  *         self.matches: Dict[int, List[Tuple[int, str]]] = {}
@@ -4575,7 +4575,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":34
  *             raise BadRegex(f'Not a valid regex: {query}')
- * 
+ *
  *     def __call__(self, diff_lines: Iterable['Line'], margin_size: int, cols: int) -> bool:             # <<<<<<<<<<<<<<
  *         self.matches = {}
  *         self.count = 0
@@ -4601,10 +4601,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":58
  *         return bool(self.matches)
- * 
+ *
  *     def __contains__(self, i: int) -> bool:             # <<<<<<<<<<<<<<
  *         return i in self.matches
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -4619,10 +4619,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":61
  *         return i in self.matches
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return self.count
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -4636,7 +4636,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/search.py":64
  *         return self.count
- * 
+ *
  *     def highlight_line(self, write: Callable[[str], None], line_num: int) -> bool:             # <<<<<<<<<<<<<<
  *         highlights = self.matches.get(line_num)
  *         if not highlights:
@@ -4674,8 +4674,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/search.py":22
- * 
- * 
+ *
+ *
  * class Search:             # <<<<<<<<<<<<<<
  *     def __init__(self, opts: DiffOptions, query: str, is_regex: bool, is_backward: bool):
  *         self.matches: Dict[int, List[Tuple[int, str]]] = {}
@@ -4689,7 +4689,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/diff/search.py":1
  * #!/usr/bin/env python3             # <<<<<<<<<<<<<<
  * # License: GPL v3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5818,8 +5818,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -5969,8 +5969,8 @@ static PyObject* __Pyx_PyInt_FloorDivideObjC(PyObject *op1, PyObject *op2, CYTHO
                 }
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceFloorDivide : PyNumber_FloorDivide)(op1, op2);

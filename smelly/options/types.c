@@ -3469,7 +3469,7 @@ static PyObject *__pyx_codeobj__68;
 
 /* "smelly/options/types.py":918
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         self.color_table = array(self.color_table.typecode, self.color_table)
  *         if options_dict is not None:
@@ -3568,7 +3568,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options___init__(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("__init__", 0);
 
   /* "smelly/options/types.py":919
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:
  *         self.color_table = array(self.color_table.typecode, self.color_table)             # <<<<<<<<<<<<<<
  *         if options_dict is not None:
@@ -3772,7 +3772,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options___init__(CYTHON_UNUSE
  *                 val = options_dict.get(key, null)
  *                 if val is not null:             # <<<<<<<<<<<<<<
  *                     setattr(self, key, val)
- * 
+ *
  */
       __pyx_t_9 = (__pyx_v_val != __pyx_v_null);
       __pyx_t_8 = (__pyx_t_9 != 0);
@@ -3782,7 +3782,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options___init__(CYTHON_UNUSE
  *                 val = options_dict.get(key, null)
  *                 if val is not null:
  *                     setattr(self, key, val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     @property
  */
         __pyx_t_12 = PyObject_SetAttr(__pyx_v_self, __pyx_v_key, __pyx_v_val); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 925, __pyx_L1_error)
@@ -3792,7 +3792,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options___init__(CYTHON_UNUSE
  *                 val = options_dict.get(key, null)
  *                 if val is not null:             # <<<<<<<<<<<<<<
  *                     setattr(self, key, val)
- * 
+ *
  */
       }
 
@@ -3817,7 +3817,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options___init__(CYTHON_UNUSE
 
   /* "smelly/options/types.py":918
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         self.color_table = array(self.color_table.typecode, self.color_table)
  *         if options_dict is not None:
@@ -3845,11 +3845,11 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options___init__(CYTHON_UNUSE
 }
 
 /* "smelly/options/types.py":928
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3879,7 +3879,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_2_fields(CYTHON_UNUSE
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:
  *         return option_names             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3890,11 +3890,11 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_2_fields(CYTHON_UNUSE
   goto __pyx_L0;
 
   /* "smelly/options/types.py":928
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
 
   /* function exit code */
@@ -3910,10 +3910,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_2_fields(CYTHON_UNUSE
 
 /* "smelly/options/types.py":931
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3941,10 +3941,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_4__iter__(CYTHON_UNUS
   __Pyx_RefNannySetupContext("__iter__", 0);
 
   /* "smelly/options/types.py":932
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:
  *         return iter(self._fields)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __len__(self) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3959,10 +3959,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_4__iter__(CYTHON_UNUS
 
   /* "smelly/options/types.py":931
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
 
   /* function exit code */
@@ -3979,10 +3979,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_4__iter__(CYTHON_UNUS
 
 /* "smelly/options/types.py":934
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4010,10 +4010,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_6__len__(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("__len__", 0);
 
   /* "smelly/options/types.py":935
- * 
+ *
  *     def __len__(self) -> int:
  *         return len(self._fields)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4029,10 +4029,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_6__len__(CYTHON_UNUSE
 
   /* "smelly/options/types.py":934
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
 
   /* function exit code */
@@ -4048,7 +4048,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_6__len__(CYTHON_UNUSE
 
 /* "smelly/options/types.py":937
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -4139,7 +4139,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_8_copy_of_val(CYTHON_
   __Pyx_RefNannySetupContext("_copy_of_val", 0);
 
   /* "smelly/options/types.py":938
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:
  *         ans = getattr(self, name)             # <<<<<<<<<<<<<<
  *         if isinstance(ans, dict):
@@ -4157,7 +4157,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_8_copy_of_val(CYTHON_
  *             ans = ans.copy()
  *         elif isinstance(ans, list):
  */
-  __pyx_t_2 = PyDict_Check(__pyx_v_ans); 
+  __pyx_t_2 = PyDict_Check(__pyx_v_ans);
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
@@ -4205,7 +4205,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_8_copy_of_val(CYTHON_
  *             ans = ans[:]
  *         return ans
  */
-  __pyx_t_3 = PyList_Check(__pyx_v_ans); 
+  __pyx_t_3 = PyList_Check(__pyx_v_ans);
   __pyx_t_2 = (__pyx_t_3 != 0);
   if (__pyx_t_2) {
 
@@ -4214,7 +4214,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_8_copy_of_val(CYTHON_
  *         elif isinstance(ans, list):
  *             ans = ans[:]             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_ans, 0, 0, NULL, NULL, &__pyx_slice_, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 942, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -4235,7 +4235,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_8_copy_of_val(CYTHON_
  *         elif isinstance(ans, list):
  *             ans = ans[:]
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4245,7 +4245,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_8_copy_of_val(CYTHON_
 
   /* "smelly/options/types.py":937
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -4267,10 +4267,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_8_copy_of_val(CYTHON_
 
 /* "smelly/options/types.py":945
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4304,10 +4304,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_10_asdict(CYTHON_UNUS
   __Pyx_RefNannySetupContext("_asdict", 0);
 
   /* "smelly/options/types.py":946
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:
  *         return {k: self._copy_of_val(k) for k in self}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4389,10 +4389,10 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_10_asdict(CYTHON_UNUS
 
   /* "smelly/options/types.py":945
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
 
   /* function exit code */
@@ -4413,7 +4413,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_10_asdict(CYTHON_UNUS
 
 /* "smelly/options/types.py":948
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -4499,7 +4499,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_12_replace(CYTHON_UNU
   __Pyx_RefNannySetupContext("_replace", 0);
 
   /* "smelly/options/types.py":949
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":
  *         ans = Options()             # <<<<<<<<<<<<<<
  *         for name in self:
@@ -4670,11 +4670,11 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_12_replace(CYTHON_UNU
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -4716,7 +4716,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_12_replace(CYTHON_UNU
  *         for name, val in kw.items():
  *             setattr(ans, name, val)             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
     __pyx_t_7 = PyObject_SetAttr(__pyx_v_ans, __pyx_v_name, __pyx_v_val); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 953, __pyx_L1_error)
 
@@ -4734,7 +4734,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_12_replace(CYTHON_UNU
  *         for name, val in kw.items():
  *             setattr(ans, name, val)
  *         return ans             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4744,7 +4744,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_12_replace(CYTHON_UNU
 
   /* "smelly/options/types.py":948
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -4770,7 +4770,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_12_replace(CYTHON_UNU
 
 /* "smelly/options/types.py":956
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -4859,13 +4859,13 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_14__getitem__(CYTHON_
   __Pyx_RefNannySetupContext("__getitem__", 0);
 
   /* "smelly/options/types.py":957
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:
  *         k = option_names[key] if isinstance(key, int) else key             # <<<<<<<<<<<<<<
  *         try:
  *             return getattr(self, k)
  */
-  __pyx_t_2 = PyInt_Check(__pyx_v_key); 
+  __pyx_t_2 = PyInt_Check(__pyx_v_key);
   if ((__pyx_t_2 != 0)) {
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_option_names); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 957, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -4968,7 +4968,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_14__getitem__(CYTHON_
  *         except AttributeError:
  *             pass
  *         raise KeyError(f"No option named: {k}")             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __getattr__(self, key: str) -> typing.Any:
  */
   __pyx_t_1 = __Pyx_PyObject_FormatSimple(__pyx_v_k, __pyx_empty_unicode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 962, __pyx_L1_error)
@@ -4985,7 +4985,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_14__getitem__(CYTHON_
 
   /* "smelly/options/types.py":956
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -5007,7 +5007,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_14__getitem__(CYTHON_
 
 /* "smelly/options/types.py":964
  *         raise KeyError(f"No option named: {k}")
- * 
+ *
  *     def __getattr__(self, key: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -5104,7 +5104,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_16__getattr__(CYTHON_
   __Pyx_RefNannySetupContext("__getattr__", 0);
 
   /* "smelly/options/types.py":965
- * 
+ *
  *     def __getattr__(self, key: str) -> typing.Any:
  *         if key.startswith("color"):             # <<<<<<<<<<<<<<
  *             q = key[5:]
@@ -5209,7 +5209,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_16__getattr__(CYTHON_
  *                     x = self.color_table[k]
  *                     return Color((x >> 16) & 255, (x >> 8) & 255, x & 255)             # <<<<<<<<<<<<<<
  *         raise AttributeError(key)
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 971, __pyx_L1_error)
@@ -5303,7 +5303,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_16__getattr__(CYTHON_
     }
 
     /* "smelly/options/types.py":965
- * 
+ *
  *     def __getattr__(self, key: str) -> typing.Any:
  *         if key.startswith("color"):             # <<<<<<<<<<<<<<
  *             q = key[5:]
@@ -5315,7 +5315,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_16__getattr__(CYTHON_
  *                     x = self.color_table[k]
  *                     return Color((x >> 16) & 255, (x >> 8) & 255, x & 255)
  *         raise AttributeError(key)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __setattr__(self, key: str, val: typing.Any) -> typing.Any:
  */
   __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_AttributeError, __pyx_v_key); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 972, __pyx_L1_error)
@@ -5326,7 +5326,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_16__getattr__(CYTHON_
 
   /* "smelly/options/types.py":964
  *         raise KeyError(f"No option named: {k}")
- * 
+ *
  *     def __getattr__(self, key: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -5354,7 +5354,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_16__getattr__(CYTHON_
 
 /* "smelly/options/types.py":974
  *         raise AttributeError(key)
- * 
+ *
  *     def __setattr__(self, key: str, val: typing.Any) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -5458,7 +5458,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_18__setattr__(CYTHON_
   __Pyx_RefNannySetupContext("__setattr__", 0);
 
   /* "smelly/options/types.py":975
- * 
+ *
  *     def __setattr__(self, key: str, val: typing.Any) -> typing.Any:
  *         if key.startswith("color"):             # <<<<<<<<<<<<<<
  *             q = key[5:]
@@ -5563,7 +5563,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_18__setattr__(CYTHON_
  *                     self.color_table[k] = int(val)
  *                     return             # <<<<<<<<<<<<<<
  *         object.__setattr__(self, key, val)
- * 
+ *
  */
         __Pyx_XDECREF(__pyx_r);
         __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -5588,7 +5588,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_18__setattr__(CYTHON_
     }
 
     /* "smelly/options/types.py":975
- * 
+ *
  *     def __setattr__(self, key: str, val: typing.Any) -> typing.Any:
  *         if key.startswith("color"):             # <<<<<<<<<<<<<<
  *             q = key[5:]
@@ -5600,8 +5600,8 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_18__setattr__(CYTHON_
  *                     self.color_table[k] = int(val)
  *                     return
  *         object.__setattr__(self, key, val)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_builtin_object, __pyx_n_s_setattr); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 982, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5657,7 +5657,7 @@ static PyObject *__pyx_pf_6smelly_7options_5types_7Options_18__setattr__(CYTHON_
 
   /* "smelly/options/types.py":974
  *         raise AttributeError(key)
- * 
+ *
  *     def __setattr__(self, key: str, val: typing.Any) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -6475,14 +6475,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *         elif isinstance(ans, list):
  *             ans = ans[:]             # <<<<<<<<<<<<<<
  *         return ans
- * 
+ *
  */
   __pyx_slice_ = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice_)) __PYX_ERR(0, 942, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice_);
   __Pyx_GIVEREF(__pyx_slice_);
 
   /* "smelly/options/types.py":17
- * 
+ *
  * if typing.TYPE_CHECKING:
  *     choices_for_allow_cloning = typing.Literal['yes', 'y', 'true', 'no', 'n', 'false', 'ask']             # <<<<<<<<<<<<<<
  *     choices_for_allow_remote_control = typing.Literal['password', 'socket-only', 'socket', 'no', 'n', 'false', 'yes', 'y', 'true']
@@ -6647,7 +6647,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__16);
 
   /* "smelly/options/types.py":54
- * 
+ *
  * option_names = (  # {{{
  *     'action_alias',             # <<<<<<<<<<<<<<
  *     'active_border_color',
@@ -6658,7 +6658,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__17);
 
   /* "smelly/options/types.py":474
- * 
+ *
  * class Options:
  *     active_border_color: typing.Optional[smelly.fast_data_types.Color] = Color(0, 255, 0)             # <<<<<<<<<<<<<<
  *     active_tab_background: Color = Color(238, 238, 238)
@@ -6934,7 +6934,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":918
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         self.color_table = array(self.color_table.typecode, self.color_table)
  *         if options_dict is not None:
@@ -6948,11 +6948,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__50);
 
   /* "smelly/options/types.py":928
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
   __pyx_tuple__51 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 928, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__51);
@@ -6961,10 +6961,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":931
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
   __pyx_tuple__53 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 931, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__53);
@@ -6973,10 +6973,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":934
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
   __pyx_tuple__55 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 934, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__55);
@@ -6985,7 +6985,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":937
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -6997,10 +6997,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":945
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
   __pyx_tuple__59 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_k); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__59);
@@ -7009,7 +7009,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":948
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -7021,7 +7021,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":956
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -7033,7 +7033,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":964
  *         raise KeyError(f"No option named: {k}")
- * 
+ *
  *     def __getattr__(self, key: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -7045,7 +7045,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/options/types.py":974
  *         raise AttributeError(key)
- * 
+ *
  *     def __setattr__(self, key: str, val: typing.Any) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -7788,7 +7788,7 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/options/types.py":4
- * 
+ *
  * # isort: skip_file
  * import typing             # <<<<<<<<<<<<<<
  * from array import array
@@ -7985,7 +7985,7 @@ if (!__Pyx_RefNanny) {
  * import smelly.options.utils
  * from smelly.types import FloatEdges             # <<<<<<<<<<<<<<
  * import smelly.types
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8005,7 +8005,7 @@ if (!__Pyx_RefNanny) {
  * import smelly.options.utils
  * from smelly.types import FloatEdges
  * import smelly.types             # <<<<<<<<<<<<<<
- * 
+ *
  * if typing.TYPE_CHECKING:
  */
   __pyx_t_2 = __Pyx_Import(__pyx_n_s_smelly_types, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -8015,7 +8015,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":16
  * import smelly.types
- * 
+ *
  * if typing.TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     choices_for_allow_cloning = typing.Literal['yes', 'y', 'true', 'no', 'n', 'false', 'ask']
  *     choices_for_allow_remote_control = typing.Literal['password', 'socket-only', 'socket', 'no', 'n', 'false', 'yes', 'y', 'true']
@@ -8030,7 +8030,7 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/options/types.py":17
- * 
+ *
  * if typing.TYPE_CHECKING:
  *     choices_for_allow_cloning = typing.Literal['yes', 'y', 'true', 'no', 'n', 'false', 'ask']             # <<<<<<<<<<<<<<
  *     choices_for_allow_remote_control = typing.Literal['password', 'socket-only', 'socket', 'no', 'n', 'false', 'yes', 'y', 'true']
@@ -8337,7 +8337,7 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/options/types.py":16
  * import smelly.types
- * 
+ *
  * if typing.TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     choices_for_allow_cloning = typing.Literal['yes', 'y', 'true', 'no', 'n', 'false', 'ask']
  *     choices_for_allow_remote_control = typing.Literal['password', 'socket-only', 'socket', 'no', 'n', 'false', 'yes', 'y', 'true']
@@ -8486,7 +8486,7 @@ if (!__Pyx_RefNanny) {
  *     choices_for_tab_switch_strategy = str
  *     choices_for_undercurl_style = str             # <<<<<<<<<<<<<<
  *     choices_for_window_logo_position = str
- * 
+ *
  */
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_choices_for_undercurl_style, ((PyObject *)(&PyString_Type))) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
 
@@ -8494,7 +8494,7 @@ if (!__Pyx_RefNanny) {
  *     choices_for_tab_switch_strategy = str
  *     choices_for_undercurl_style = str
  *     choices_for_window_logo_position = str             # <<<<<<<<<<<<<<
- * 
+ *
  * option_names = (  # {{{
  */
     if (PyDict_SetItem(__pyx_d, __pyx_n_s_choices_for_window_logo_position, ((PyObject *)(&PyString_Type))) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
@@ -8502,7 +8502,7 @@ if (!__Pyx_RefNanny) {
   __pyx_L2:;
 
   /* "smelly/options/types.py":54
- * 
+ *
  * option_names = (  # {{{
  *     'action_alias',             # <<<<<<<<<<<<<<
  *     'active_border_color',
@@ -8511,8 +8511,8 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_option_names, __pyx_tuple__17) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
 
   /* "smelly/options/types.py":473
- * 
- * 
+ *
+ *
  * class Options:             # <<<<<<<<<<<<<<
  *     active_border_color: typing.Optional[smelly.fast_data_types.Color] = Color(0, 255, 0)
  *     active_tab_background: Color = Color(238, 238, 238)
@@ -8521,7 +8521,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "smelly/options/types.py":474
- * 
+ *
  * class Options:
  *     active_border_color: typing.Optional[smelly.fast_data_types.Color] = Color(0, 255, 0)             # <<<<<<<<<<<<<<
  *     active_tab_background: Color = Color(238, 238, 238)
@@ -10344,7 +10344,7 @@ if (!__Pyx_RefNanny) {
  *     )
  *     config_paths: typing.Tuple[str, ...] = ()             # <<<<<<<<<<<<<<
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  */
   if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_config_paths, __pyx_empty_tuple) < 0) __PYX_ERR(0, 915, __pyx_L1_error)
 
@@ -10352,14 +10352,14 @@ if (!__Pyx_RefNanny) {
  *     )
  *     config_paths: typing.Tuple[str, ...] = ()
  *     config_overrides: typing.Tuple[str, ...] = ()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:
  */
   if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_config_overrides, __pyx_empty_tuple) < 0) __PYX_ERR(0, 916, __pyx_L1_error)
 
   /* "smelly/options/types.py":918
  *     config_overrides: typing.Tuple[str, ...] = ()
- * 
+ *
  *     def __init__(self, options_dict: typing.Optional[typing.Dict[str, typing.Any]] = None) -> None:             # <<<<<<<<<<<<<<
  *         self.color_table = array(self.color_table.typecode, self.color_table)
  *         if options_dict is not None:
@@ -10409,11 +10409,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "smelly/options/types.py":928
- * 
+ *
  *     @property
  *     def _fields(self) -> typing.Tuple[str, ...]:             # <<<<<<<<<<<<<<
  *         return option_names
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 928, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -10443,7 +10443,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":927
  *                     setattr(self, key, val)
- * 
+ *
  *     @property             # <<<<<<<<<<<<<<
  *     def _fields(self) -> typing.Tuple[str, ...]:
  *         return option_names
@@ -10456,10 +10456,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":931
  *         return option_names
- * 
+ *
  *     def __iter__(self) -> typing.Iterator[str]:             # <<<<<<<<<<<<<<
  *         return iter(self._fields)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 931, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -10482,10 +10482,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":934
  *         return iter(self._fields)
- * 
+ *
  *     def __len__(self) -> int:             # <<<<<<<<<<<<<<
  *         return len(self._fields)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 934, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -10499,7 +10499,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":937
  *         return len(self._fields)
- * 
+ *
  *     def _copy_of_val(self, name: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         ans = getattr(self, name)
  *         if isinstance(ans, dict):
@@ -10523,10 +10523,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":945
  *         return ans
- * 
+ *
  *     def _asdict(self) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 945, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -10563,7 +10563,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":948
  *         return {k: self._copy_of_val(k) for k in self}
- * 
+ *
  *     def _replace(self, **kw: typing.Any) -> "Options":             # <<<<<<<<<<<<<<
  *         ans = Options()
  *         for name in self:
@@ -10587,7 +10587,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":956
  *         return ans
- * 
+ *
  *     def __getitem__(self, key: typing.Union[int, str]) -> typing.Any:             # <<<<<<<<<<<<<<
  *         k = option_names[key] if isinstance(key, int) else key
  *         try:
@@ -10629,7 +10629,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":964
  *         raise KeyError(f"No option named: {k}")
- * 
+ *
  *     def __getattr__(self, key: str) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -10653,7 +10653,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":974
  *         raise AttributeError(key)
- * 
+ *
  *     def __setattr__(self, key: str, val: typing.Any) -> typing.Any:             # <<<<<<<<<<<<<<
  *         if key.startswith("color"):
  *             q = key[5:]
@@ -10683,8 +10683,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/options/types.py":473
- * 
- * 
+ *
+ *
  * class Options:             # <<<<<<<<<<<<<<
  *     active_border_color: typing.Optional[smelly.fast_data_types.Color] = Color(0, 255, 0)
  *     active_tab_background: Color = Color(238, 238, 238)
@@ -10696,8 +10696,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/options/types.py":985
- * 
- * 
+ *
+ *
  * defaults = Options()             # <<<<<<<<<<<<<<
  * defaults.action_alias = {}
  * defaults.env = {}
@@ -10711,7 +10711,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "smelly/options/types.py":986
- * 
+ *
  * defaults = Options()
  * defaults.action_alias = {}             # <<<<<<<<<<<<<<
  * defaults.env = {}
@@ -15916,7 +15916,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/options/types.py":1
  * # generated by gen-config.py DO NOT edit             # <<<<<<<<<<<<<<
- * 
+ *
  * # isort: skip_file
  */
   __pyx_t_51 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_51)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -17395,8 +17395,8 @@ static PyObject* __Pyx_PyInt_AndObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla & llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceAnd : PyNumber_And)(op1, op2);
@@ -17506,8 +17506,8 @@ static PyObject* __Pyx_PyInt_RshiftObjC(PyObject *op1, PyObject *op2, CYTHON_UNU
                 llx = lla >> llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     return (inplace ? PyNumber_InPlaceRshift : PyNumber_Rshift)(op1, op2);

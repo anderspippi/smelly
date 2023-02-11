@@ -972,10 +972,10 @@ struct __pyx_obj_5welly_3tui_9dircolors___pyx_scope_struct_2_genexpr;
 
 /* "welly/tui/dircolors.py":323
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
- * 
+ *
  *     def generate_lscolors(self) -> str:             # <<<<<<<<<<<<<<
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  */
 struct __pyx_obj_5welly_3tui_9dircolors___pyx_scope_struct__generate_lscolors {
   PyObject_HEAD
@@ -986,7 +986,7 @@ struct __pyx_obj_5welly_3tui_9dircolors___pyx_scope_struct__generate_lscolors {
 
 /* "welly/tui/dircolors.py":326
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  *         def gen_pairs() -> Generator[Tuple[str, str], None, None]:             # <<<<<<<<<<<<<<
  *             for pair in self.codes.items():
  *                 yield pair
@@ -1003,9 +1003,9 @@ struct __pyx_obj_5welly_3tui_9dircolors___pyx_scope_struct_1_gen_pairs {
 
 /* "welly/tui/dircolors.py":333
  *                 yield '*' + pair[0], pair[1]
- * 
+ *
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:
  */
 struct __pyx_obj_5welly_3tui_9dircolors___pyx_scope_struct_2_genexpr {
@@ -2181,8 +2181,8 @@ static PyObject *__pyx_codeobj__47;
 /* Late includes */
 
 /* "welly/tui/dircolors.py":239
- * 
- * 
+ *
+ *
  * def stat_at(file: str, cwd: Optional[Union[int, str]] = None, follow_symlinks: bool = False) -> os.stat_result:             # <<<<<<<<<<<<<<
  *     dirfd: Optional[int] = None
  *     need_to_close = False
@@ -2303,7 +2303,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("stat_at", 0);
 
   /* "welly/tui/dircolors.py":240
- * 
+ *
  * def stat_at(file: str, cwd: Optional[Union[int, str]] = None, follow_symlinks: bool = False) -> os.stat_result:
  *     dirfd: Optional[int] = None             # <<<<<<<<<<<<<<
  *     need_to_close = False
@@ -2328,7 +2328,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *         dirfd = os.open(cwd, os.O_RDONLY | getattr(os, 'O_CLOEXEC', 0))
  *         need_to_close = True
  */
-  __pyx_t_1 = PyString_Check(__pyx_v_cwd); 
+  __pyx_t_1 = PyString_Check(__pyx_v_cwd);
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
@@ -2432,9 +2432,9 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *         need_to_close = True
  *     elif isinstance(cwd, int):             # <<<<<<<<<<<<<<
  *         dirfd = cwd
- * 
+ *
  */
-  __pyx_t_2 = PyInt_Check(__pyx_v_cwd); 
+  __pyx_t_2 = PyInt_Check(__pyx_v_cwd);
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
@@ -2442,7 +2442,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *         need_to_close = True
  *     elif isinstance(cwd, int):
  *         dirfd = cwd             # <<<<<<<<<<<<<<
- * 
+ *
  *     try:
  */
     __Pyx_INCREF(__pyx_v_cwd);
@@ -2453,14 +2453,14 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *         need_to_close = True
  *     elif isinstance(cwd, int):             # <<<<<<<<<<<<<<
  *         dirfd = cwd
- * 
+ *
  */
   }
   __pyx_L3:;
 
   /* "welly/tui/dircolors.py":248
  *         dirfd = cwd
- * 
+ *
  *     try:             # <<<<<<<<<<<<<<
  *         return os.stat(file, dir_fd=dirfd, follow_symlinks=follow_symlinks)
  *     finally:
@@ -2468,7 +2468,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
   /*try:*/ {
 
     /* "welly/tui/dircolors.py":249
- * 
+ *
  *     try:
  *         return os.stat(file, dir_fd=dirfd, follow_symlinks=follow_symlinks)             # <<<<<<<<<<<<<<
  *     finally:
@@ -2504,7 +2504,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *     finally:
  *         if need_to_close and dirfd is not None:             # <<<<<<<<<<<<<<
  *             os.close(dirfd)
- * 
+ *
  */
   /*finally:*/ {
     __pyx_L5_error:;
@@ -2543,8 +2543,8 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *     finally:
  *         if need_to_close and dirfd is not None:
  *             os.close(dirfd)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
           __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_os); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 252, __pyx_L8_error)
           __Pyx_GOTREF(__pyx_t_6);
@@ -2573,7 +2573,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *     finally:
  *         if need_to_close and dirfd is not None:             # <<<<<<<<<<<<<<
  *             os.close(dirfd)
- * 
+ *
  */
         }
       }
@@ -2622,8 +2622,8 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *     finally:
  *         if need_to_close and dirfd is not None:
  *             os.close(dirfd)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
         __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 252, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
@@ -2652,7 +2652,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
  *     finally:
  *         if need_to_close and dirfd is not None:             # <<<<<<<<<<<<<<
  *             os.close(dirfd)
- * 
+ *
  */
       }
       __pyx_r = __pyx_t_16;
@@ -2662,8 +2662,8 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
   }
 
   /* "welly/tui/dircolors.py":239
- * 
- * 
+ *
+ *
  * def stat_at(file: str, cwd: Optional[Union[int, str]] = None, follow_symlinks: bool = False) -> os.stat_result:             # <<<<<<<<<<<<<<
  *     dirfd: Optional[int] = None
  *     need_to_close = False
@@ -2686,7 +2686,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_stat_at(CYTHON_UNUSED PyObject 
 }
 
 /* "welly/tui/dircolors.py":256
- * 
+ *
  * class Dircolors:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes: Dict[str, str] = {}
@@ -2750,7 +2750,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors___init__(CYTHON_UNUS
  *         self.extensions: Dict[str, str] = {}
  *         if not self.load_from_environ() and not self.load_from_file():             # <<<<<<<<<<<<<<
  *             self.load_defaults()
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_from_environ); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 259, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -2805,7 +2805,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors___init__(CYTHON_UNUS
  *         self.extensions: Dict[str, str] = {}
  *         if not self.load_from_environ() and not self.load_from_file():
  *             self.load_defaults()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def clear(self) -> None:
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_defaults); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 260, __pyx_L1_error)
@@ -2832,12 +2832,12 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors___init__(CYTHON_UNUS
  *         self.extensions: Dict[str, str] = {}
  *         if not self.load_from_environ() and not self.load_from_file():             # <<<<<<<<<<<<<<
  *             self.load_defaults()
- * 
+ *
  */
   }
 
   /* "welly/tui/dircolors.py":256
- * 
+ *
  * class Dircolors:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes: Dict[str, str] = {}
@@ -2861,7 +2861,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors___init__(CYTHON_UNUS
 
 /* "welly/tui/dircolors.py":262
  *             self.load_defaults()
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes.clear()
  *         self.extensions.clear()
@@ -2893,11 +2893,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_2clear(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("clear", 0);
 
   /* "welly/tui/dircolors.py":263
- * 
+ *
  *     def clear(self) -> None:
  *         self.codes.clear()             # <<<<<<<<<<<<<<
  *         self.extensions.clear()
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_codes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 263, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -2925,7 +2925,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_2clear(CYTHON_UNUSED
  *     def clear(self) -> None:
  *         self.codes.clear()
  *         self.extensions.clear()             # <<<<<<<<<<<<<<
- * 
+ *
  *     def load_from_file(self) -> bool:
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_extensions); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 264, __pyx_L1_error)
@@ -2952,7 +2952,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_2clear(CYTHON_UNUSED
 
   /* "welly/tui/dircolors.py":262
  *             self.load_defaults()
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes.clear()
  *         self.extensions.clear()
@@ -2975,7 +2975,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_2clear(CYTHON_UNUSED
 
 /* "welly/tui/dircolors.py":266
  *         self.extensions.clear()
- * 
+ *
  *     def load_from_file(self) -> bool:             # <<<<<<<<<<<<<<
  *         for candidate in (os.path.expanduser('~/.dir_colors'), '/etc/DIR_COLORS'):
  *             with suppress(Exception):
@@ -3024,7 +3024,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
   __Pyx_RefNannySetupContext("load_from_file", 0);
 
   /* "welly/tui/dircolors.py":267
- * 
+ *
  *     def load_from_file(self) -> bool:
  *         for candidate in (os.path.expanduser('~/.dir_colors'), '/etc/DIR_COLORS'):             # <<<<<<<<<<<<<<
  *             with suppress(Exception):
@@ -3179,7 +3179,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
  *                 with open(candidate) as f:
  *                     return self.load_from_dircolors(f.read())             # <<<<<<<<<<<<<<
  *         return False
- * 
+ *
  */
                     __Pyx_XDECREF(__pyx_r);
                     __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_load_from_dircolors); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L25_error)
@@ -3258,7 +3258,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
                       __Pyx_GIVEREF(__pyx_t_2);
                       __Pyx_XGIVEREF(__pyx_t_3);
                       __Pyx_ErrRestoreWithState(__pyx_t_5, __pyx_t_2, __pyx_t_3);
-                      __pyx_t_5 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+                      __pyx_t_5 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0;
                       __PYX_ERR(0, 269, __pyx_L27_except_error)
                     }
                     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3359,7 +3359,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
               __Pyx_GIVEREF(__pyx_t_2);
               __Pyx_XGIVEREF(__pyx_t_5);
               __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_2, __pyx_t_5);
-              __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0; 
+              __pyx_t_3 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0;
               __PYX_ERR(0, 268, __pyx_L13_except_error)
             }
             __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3422,7 +3422,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
     }
 
     /* "welly/tui/dircolors.py":267
- * 
+ *
  *     def load_from_file(self) -> bool:
  *         for candidate in (os.path.expanduser('~/.dir_colors'), '/etc/DIR_COLORS'):             # <<<<<<<<<<<<<<
  *             with suppress(Exception):
@@ -3435,7 +3435,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
  *                 with open(candidate) as f:
  *                     return self.load_from_dircolors(f.read())
  *         return False             # <<<<<<<<<<<<<<
- * 
+ *
  *     def load_from_lscolors(self, lscolors: str) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3445,7 +3445,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
 
   /* "welly/tui/dircolors.py":266
  *         self.extensions.clear()
- * 
+ *
  *     def load_from_file(self) -> bool:             # <<<<<<<<<<<<<<
  *         for candidate in (os.path.expanduser('~/.dir_colors'), '/etc/DIR_COLORS'):
  *             with suppress(Exception):
@@ -3471,7 +3471,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_4load_from_file(CYTH
 
 /* "welly/tui/dircolors.py":273
  *         return False
- * 
+ *
  *     def load_from_lscolors(self, lscolors: str) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         if not lscolors:
@@ -3573,7 +3573,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
   __Pyx_RefNannySetupContext("load_from_lscolors", 0);
 
   /* "welly/tui/dircolors.py":274
- * 
+ *
  *     def load_from_lscolors(self, lscolors: str) -> bool:
  *         self.clear()             # <<<<<<<<<<<<<<
  *         if not lscolors:
@@ -3603,7 +3603,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
  *         self.clear()
  *         if not lscolors:             # <<<<<<<<<<<<<<
  *             return False
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_lscolors); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 275, __pyx_L1_error)
   __pyx_t_5 = ((!__pyx_t_4) != 0);
@@ -3613,7 +3613,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
  *         self.clear()
  *         if not lscolors:
  *             return False             # <<<<<<<<<<<<<<
- * 
+ *
  *         for item in lscolors.split(':'):
  */
     __Pyx_XDECREF(__pyx_r);
@@ -3626,13 +3626,13 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
  *         self.clear()
  *         if not lscolors:             # <<<<<<<<<<<<<<
  *             return False
- * 
+ *
  */
   }
 
   /* "welly/tui/dircolors.py":278
  *             return False
- * 
+ *
  *         for item in lscolors.split(':'):             # <<<<<<<<<<<<<<
  *             try:
  *                 code, color = item.split('=', 1)
@@ -3683,7 +3683,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
     __pyx_t_1 = 0;
 
     /* "welly/tui/dircolors.py":279
- * 
+ *
  *         for item in lscolors.split(':'):
  *             try:             # <<<<<<<<<<<<<<
  *                 code, color = item.split('=', 1)
@@ -3720,11 +3720,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_11 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_11 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_11 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_11 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_1);
           __Pyx_INCREF(__pyx_t_11);
@@ -3762,7 +3762,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
         __pyx_t_11 = 0;
 
         /* "welly/tui/dircolors.py":279
- * 
+ *
  *         for item in lscolors.split(':'):
  *             try:             # <<<<<<<<<<<<<<
  *                 code, color = item.split('=', 1)
@@ -3812,7 +3812,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
       __pyx_L8_except_error:;
 
       /* "welly/tui/dircolors.py":279
- * 
+ *
  *         for item in lscolors.split(':'):
  *             try:             # <<<<<<<<<<<<<<
  *                 code, color = item.split('=', 1)
@@ -3889,7 +3889,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
  *                 self.extensions[code[1:]] = color
  *             else:
  *                 self.codes[code] = color             # <<<<<<<<<<<<<<
- * 
+ *
  *         return bool(self.codes or self.extensions)
  */
     /*else*/ {
@@ -3902,7 +3902,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
 
     /* "welly/tui/dircolors.py":278
  *             return False
- * 
+ *
  *         for item in lscolors.split(':'):             # <<<<<<<<<<<<<<
  *             try:
  *                 code, color = item.split('=', 1)
@@ -3913,9 +3913,9 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
 
   /* "welly/tui/dircolors.py":288
  *                 self.codes[code] = color
- * 
+ *
  *         return bool(self.codes or self.extensions)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def load_from_environ(self, envvar: str = 'LS_COLORS') -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -3942,7 +3942,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
 
   /* "welly/tui/dircolors.py":273
  *         return False
- * 
+ *
  *     def load_from_lscolors(self, lscolors: str) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         if not lscolors:
@@ -3968,10 +3968,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_6load_from_lscolors(
 
 /* "welly/tui/dircolors.py":290
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_from_environ(self, envvar: str = 'LS_COLORS') -> bool:             # <<<<<<<<<<<<<<
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4064,10 +4064,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_8load_from_environ(C
   __Pyx_RefNannySetupContext("load_from_environ", 0);
 
   /* "welly/tui/dircolors.py":291
- * 
+ *
  *     def load_from_environ(self, envvar: str = 'LS_COLORS') -> bool:
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')             # <<<<<<<<<<<<<<
- * 
+ *
  *     def load_from_dircolors(self, database: str, strict: bool = False) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4130,10 +4130,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_8load_from_environ(C
 
   /* "welly/tui/dircolors.py":290
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_from_environ(self, envvar: str = 'LS_COLORS') -> bool:             # <<<<<<<<<<<<<<
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  */
 
   /* function exit code */
@@ -4154,10 +4154,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_8load_from_environ(C
 
 /* "welly/tui/dircolors.py":293
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  *     def load_from_dircolors(self, database: str, strict: bool = False) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4270,10 +4270,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
   __Pyx_RefNannySetupContext("load_from_dircolors", 0);
 
   /* "welly/tui/dircolors.py":294
- * 
+ *
  *     def load_from_dircolors(self, database: str, strict: bool = False) -> bool:
  *         self.clear()             # <<<<<<<<<<<<<<
- * 
+ *
  *         for line in database.splitlines():
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_clear); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 294, __pyx_L1_error)
@@ -4297,7 +4297,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
 
   /* "welly/tui/dircolors.py":296
  *         self.clear()
- * 
+ *
  *         for line in database.splitlines():             # <<<<<<<<<<<<<<
  *             line = line.split('#')[0].strip()
  *             if not line:
@@ -4348,7 +4348,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
     __pyx_t_1 = 0;
 
     /* "welly/tui/dircolors.py":297
- * 
+ *
  *         for line in database.splitlines():
  *             line = line.split('#')[0].strip()             # <<<<<<<<<<<<<<
  *             if not line:
@@ -4400,7 +4400,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *             line = line.split('#')[0].strip()
  *             if not line:             # <<<<<<<<<<<<<<
  *                 continue
- * 
+ *
  */
     __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_v_line); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 298, __pyx_L1_error)
     __pyx_t_9 = ((!__pyx_t_8) != 0);
@@ -4410,7 +4410,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *             line = line.split('#')[0].strip()
  *             if not line:
  *                 continue             # <<<<<<<<<<<<<<
- * 
+ *
  *             split = line.split()
  */
       goto __pyx_L3_continue;
@@ -4420,13 +4420,13 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *             line = line.split('#')[0].strip()
  *             if not line:             # <<<<<<<<<<<<<<
  *                 continue
- * 
+ *
  */
     }
 
     /* "welly/tui/dircolors.py":301
  *                 continue
- * 
+ *
  *             split = line.split()             # <<<<<<<<<<<<<<
  *             if len(split) != 2:
  *                 if strict:
@@ -4452,7 +4452,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
     __pyx_t_1 = 0;
 
     /* "welly/tui/dircolors.py":302
- * 
+ *
  *             split = line.split()
  *             if len(split) != 2:             # <<<<<<<<<<<<<<
  *                 if strict:
@@ -4477,7 +4477,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *                 if strict:
  *                     raise ValueError(f'Warning: unable to parse dircolors line "{line}"')             # <<<<<<<<<<<<<<
  *                 continue
- * 
+ *
  */
         __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
@@ -4521,13 +4521,13 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *                 if strict:
  *                     raise ValueError(f'Warning: unable to parse dircolors line "{line}"')
  *                 continue             # <<<<<<<<<<<<<<
- * 
+ *
  *             key, val = split
  */
       goto __pyx_L3_continue;
 
       /* "welly/tui/dircolors.py":302
- * 
+ *
  *             split = line.split()
  *             if len(split) != 2:             # <<<<<<<<<<<<<<
  *                 if strict:
@@ -4537,7 +4537,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
 
     /* "welly/tui/dircolors.py":307
  *                 continue
- * 
+ *
  *             key, val = split             # <<<<<<<<<<<<<<
  *             if key == 'TERM':
  *                 continue
@@ -4552,11 +4552,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_3);
@@ -4592,7 +4592,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
     __pyx_t_3 = 0;
 
     /* "welly/tui/dircolors.py":308
- * 
+ *
  *             key, val = split
  *             if key == 'TERM':             # <<<<<<<<<<<<<<
  *                 continue
@@ -4611,7 +4611,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
       goto __pyx_L3_continue;
 
       /* "welly/tui/dircolors.py":308
- * 
+ *
  *             key, val = split
  *             if key == 'TERM':             # <<<<<<<<<<<<<<
  *                 continue
@@ -4716,7 +4716,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *                 self.extensions[key] = val
  *             elif strict:             # <<<<<<<<<<<<<<
  *                 raise ValueError(f'Warning: unable to parse dircolors line "{line}"')
- * 
+ *
  */
     __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_v_strict); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 314, __pyx_L1_error)
     if (unlikely(__pyx_t_8)) {
@@ -4725,7 +4725,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *                 self.extensions[key] = val
  *             elif strict:
  *                 raise ValueError(f'Warning: unable to parse dircolors line "{line}"')             # <<<<<<<<<<<<<<
- * 
+ *
  *         return bool(self.codes or self.extensions)
  */
       __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 315, __pyx_L1_error)
@@ -4762,14 +4762,14 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
  *                 self.extensions[key] = val
  *             elif strict:             # <<<<<<<<<<<<<<
  *                 raise ValueError(f'Warning: unable to parse dircolors line "{line}"')
- * 
+ *
  */
     }
     __pyx_L11:;
 
     /* "welly/tui/dircolors.py":296
  *         self.clear()
- * 
+ *
  *         for line in database.splitlines():             # <<<<<<<<<<<<<<
  *             line = line.split('#')[0].strip()
  *             if not line:
@@ -4780,9 +4780,9 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
 
   /* "welly/tui/dircolors.py":317
  *                 raise ValueError(f'Warning: unable to parse dircolors line "{line}"')
- * 
+ *
  *         return bool(self.codes or self.extensions)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def load_defaults(self) -> bool:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4809,10 +4809,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
 
   /* "welly/tui/dircolors.py":293
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  *     def load_from_dircolors(self, database: str, strict: bool = False) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
- * 
+ *
  */
 
   /* function exit code */
@@ -4836,7 +4836,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_10load_from_dircolor
 
 /* "welly/tui/dircolors.py":319
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_defaults(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
@@ -4871,11 +4871,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_12load_defaults(CYTH
   __Pyx_RefNannySetupContext("load_defaults", 0);
 
   /* "welly/tui/dircolors.py":320
- * 
+ *
  *     def load_defaults(self) -> bool:
  *         self.clear()             # <<<<<<<<<<<<<<
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_clear); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 320, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4900,7 +4900,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_12load_defaults(CYTH
  *     def load_defaults(self) -> bool:
  *         self.clear()
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def generate_lscolors(self) -> str:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4961,7 +4961,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_12load_defaults(CYTH
 
   /* "welly/tui/dircolors.py":319
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_defaults(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
@@ -4984,10 +4984,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_12load_defaults(CYTH
 
 /* "welly/tui/dircolors.py":323
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
- * 
+ *
  *     def generate_lscolors(self) -> str:             # <<<<<<<<<<<<<<
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5008,7 +5008,7 @@ static PyObject *__pyx_gb_5welly_3tui_9dircolors_9Dircolors_17generate_lscolors_
 
 /* "welly/tui/dircolors.py":326
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  *         def gen_pairs() -> Generator[Tuple[str, str], None, None]:             # <<<<<<<<<<<<<<
  *             for pair in self.codes.items():
  *                 yield pair
@@ -5091,7 +5091,7 @@ static PyObject *__pyx_gb_5welly_3tui_9dircolors_9Dircolors_17generate_lscolors_
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 326, __pyx_L1_error)
 
   /* "welly/tui/dircolors.py":327
- * 
+ *
  *         def gen_pairs() -> Generator[Tuple[str, str], None, None]:
  *             for pair in self.codes.items():             # <<<<<<<<<<<<<<
  *                 yield pair
@@ -5191,7 +5191,7 @@ static PyObject *__pyx_gb_5welly_3tui_9dircolors_9Dircolors_17generate_lscolors_
     if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 328, __pyx_L1_error)
 
     /* "welly/tui/dircolors.py":327
- * 
+ *
  *         def gen_pairs() -> Generator[Tuple[str, str], None, None]:
  *             for pair in self.codes.items():             # <<<<<<<<<<<<<<
  *                 yield pair
@@ -5277,7 +5277,7 @@ static PyObject *__pyx_gb_5welly_3tui_9dircolors_9Dircolors_17generate_lscolors_
  *             for pair in self.extensions.items():
  *                 # change .xyz to *.xyz
  *                 yield '*' + pair[0], pair[1]             # <<<<<<<<<<<<<<
- * 
+ *
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())
  */
     __pyx_t_3 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_pair, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 331, __pyx_L1_error)
@@ -5328,7 +5328,7 @@ static PyObject *__pyx_gb_5welly_3tui_9dircolors_9Dircolors_17generate_lscolors_
 
   /* "welly/tui/dircolors.py":326
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  *         def gen_pairs() -> Generator[Tuple[str, str], None, None]:             # <<<<<<<<<<<<<<
  *             for pair in self.codes.items():
  *                 yield pair
@@ -5357,9 +5357,9 @@ static PyObject *__pyx_gb_5welly_3tui_9dircolors_9Dircolors_17generate_lscolors_
 
 /* "welly/tui/dircolors.py":333
  *                 yield '*' + pair[0], pair[1]
- * 
+ *
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:
  */
 
@@ -5523,10 +5523,10 @@ static PyObject *__pyx_gb_5welly_3tui_9dircolors_9Dircolors_17generate_lscolors_
 
 /* "welly/tui/dircolors.py":323
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
- * 
+ *
  *     def generate_lscolors(self) -> str:             # <<<<<<<<<<<<<<
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  */
 
 static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_14generate_lscolors(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
@@ -5558,7 +5558,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_14generate_lscolors(
 
   /* "welly/tui/dircolors.py":326
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  *         def gen_pairs() -> Generator[Tuple[str, str], None, None]:             # <<<<<<<<<<<<<<
  *             for pair in self.codes.items():
  *                 yield pair
@@ -5608,9 +5608,9 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_14generate_lscolors(
 
   /* "welly/tui/dircolors.py":333
  *                 yield '*' + pair[0], pair[1]
- * 
+ *
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5626,10 +5626,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_14generate_lscolors(
 
   /* "welly/tui/dircolors.py":323
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
- * 
+ *
  *     def generate_lscolors(self) -> str:             # <<<<<<<<<<<<<<
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  */
 
   /* function exit code */
@@ -5652,7 +5652,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_14generate_lscolors(
 
 /* "welly/tui/dircolors.py":335
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.codes.get(code)
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -5758,11 +5758,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_16_format_code(CYTHO
   __Pyx_RefNannySetupContext("_format_code", 0);
 
   /* "welly/tui/dircolors.py":336
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:
  *         val = self.codes.get(code)             # <<<<<<<<<<<<<<
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_codes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 336, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5791,7 +5791,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_16_format_code(CYTHO
  *     def _format_code(self, text: str, code: str) -> str:
  *         val = self.codes.get(code)
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _format_ext(self, text: str, ext: str) -> str:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5870,7 +5870,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_16_format_code(CYTHO
 
   /* "welly/tui/dircolors.py":335
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.codes.get(code)
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -5895,7 +5895,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_16_format_code(CYTHO
 
 /* "welly/tui/dircolors.py":339
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def _format_ext(self, text: str, ext: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.extensions.get(ext, '0')
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -6001,11 +6001,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_18_format_ext(CYTHON
   __Pyx_RefNannySetupContext("_format_ext", 0);
 
   /* "welly/tui/dircolors.py":340
- * 
+ *
  *     def _format_ext(self, text: str, ext: str) -> str:
  *         val = self.extensions.get(ext, '0')             # <<<<<<<<<<<<<<
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_extensions); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 340, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6064,7 +6064,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_18_format_ext(CYTHON
  *     def _format_ext(self, text: str, ext: str) -> str:
  *         val = self.extensions.get(ext, '0')
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text             # <<<<<<<<<<<<<<
- * 
+ *
  *     def format_mode(self, text: str, sr: os.stat_result) -> str:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -6143,7 +6143,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_18_format_ext(CYTHON
 
   /* "welly/tui/dircolors.py":339
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def _format_ext(self, text: str, ext: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.extensions.get(ext, '0')
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -6168,7 +6168,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_18_format_ext(CYTHON
 
 /* "welly/tui/dircolors.py":343
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def format_mode(self, text: str, sr: os.stat_result) -> str:             # <<<<<<<<<<<<<<
  *         mode = sr.st_mode
  *         if stat.S_ISDIR(mode):
@@ -6278,7 +6278,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
   __Pyx_RefNannySetupContext("format_mode", 0);
 
   /* "welly/tui/dircolors.py":344
- * 
+ *
  *     def format_mode(self, text: str, sr: os.stat_result) -> str:
  *         mode = sr.st_mode             # <<<<<<<<<<<<<<
  *         if stat.S_ISDIR(mode):
@@ -6614,7 +6614,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
  *                 return self._format_code(text, 'ow')
  *             # normal directory
  *             return self._format_code(text, 'di')             # <<<<<<<<<<<<<<
- * 
+ *
  *         for mask, code in special_types:
  */
     __Pyx_XDECREF(__pyx_r);
@@ -6681,7 +6681,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
 
   /* "welly/tui/dircolors.py":358
  *             return self._format_code(text, 'di')
- * 
+ *
  *         for mask, code in special_types:             # <<<<<<<<<<<<<<
  *             if (mode & mask) == mask:
  *                 return self._format_code(text, code)
@@ -6738,11 +6738,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_3);
@@ -6780,11 +6780,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
     __pyx_t_3 = 0;
 
     /* "welly/tui/dircolors.py":359
- * 
+ *
  *         for mask, code in special_types:
  *             if (mode & mask) == mask:             # <<<<<<<<<<<<<<
  *                 return self._format_code(text, code)
- * 
+ *
  */
     __pyx_t_5 = PyNumber_And(__pyx_v_mode, __pyx_v_mask); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 359, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -6798,7 +6798,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
  *         for mask, code in special_types:
  *             if (mode & mask) == mask:
  *                 return self._format_code(text, code)             # <<<<<<<<<<<<<<
- * 
+ *
  *         # executable file?
  */
       __Pyx_XDECREF(__pyx_r);
@@ -6856,17 +6856,17 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
       goto __pyx_L0;
 
       /* "welly/tui/dircolors.py":359
- * 
+ *
  *         for mask, code in special_types:
  *             if (mode & mask) == mask:             # <<<<<<<<<<<<<<
  *                 return self._format_code(text, code)
- * 
+ *
  */
     }
 
     /* "welly/tui/dircolors.py":358
  *             return self._format_code(text, 'di')
- * 
+ *
  *         for mask, code in special_types:             # <<<<<<<<<<<<<<
  *             if (mode & mask) == mask:
  *                 return self._format_code(text, code)
@@ -6875,11 +6875,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/dircolors.py":363
- * 
+ *
  *         # executable file?
  *         if mode & (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH):             # <<<<<<<<<<<<<<
  *             return self._format_code(text, 'ex')
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_stat); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 363, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6915,7 +6915,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
  *         # executable file?
  *         if mode & (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH):
  *             return self._format_code(text, 'ex')             # <<<<<<<<<<<<<<
- * 
+ *
  *         # regular file, format according to its extension
  */
     __Pyx_XDECREF(__pyx_r);
@@ -6972,16 +6972,16 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
     goto __pyx_L0;
 
     /* "welly/tui/dircolors.py":363
- * 
+ *
  *         # executable file?
  *         if mode & (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH):             # <<<<<<<<<<<<<<
  *             return self._format_code(text, 'ex')
- * 
+ *
  */
   }
 
   /* "welly/tui/dircolors.py":367
- * 
+ *
  *         # regular file, format according to its extension
  *         ext = os.path.splitext(text)[1]             # <<<<<<<<<<<<<<
  *         if ext:
@@ -7031,7 +7031,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
  *         if ext:
  *             return self._format_ext(text, ext)             # <<<<<<<<<<<<<<
  *         return text
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_format_ext); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 369, __pyx_L1_error)
@@ -7099,7 +7099,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
  *         if ext:
  *             return self._format_ext(text, ext)
  *         return text             # <<<<<<<<<<<<<<
- * 
+ *
  *     def __call__(self, path: str, text: str, cwd: Optional[Union[int, str]] = None) -> str:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7109,7 +7109,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
 
   /* "welly/tui/dircolors.py":343
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def format_mode(self, text: str, sr: os.stat_result) -> str:             # <<<<<<<<<<<<<<
  *         mode = sr.st_mode
  *         if stat.S_ISDIR(mode):
@@ -7136,7 +7136,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_20format_mode(CYTHON
 
 /* "welly/tui/dircolors.py":372
  *         return text
- * 
+ *
  *     def __call__(self, path: str, text: str, cwd: Optional[Union[int, str]] = None) -> str:             # <<<<<<<<<<<<<<
  *         follow_symlinks = self.codes.get('ln') == 'target'
  *         try:
@@ -7258,7 +7258,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_22__call__(CYTHON_UN
   __Pyx_RefNannySetupContext("__call__", 0);
 
   /* "welly/tui/dircolors.py":373
- * 
+ *
  *     def __call__(self, path: str, text: str, cwd: Optional[Union[int, str]] = None) -> str:
  *         follow_symlinks = self.codes.get('ln') == 'target'             # <<<<<<<<<<<<<<
  *         try:
@@ -7403,7 +7403,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_22__call__(CYTHON_UN
  *         except OSError:
  *             return text             # <<<<<<<<<<<<<<
  *         return self.format_mode(text, sr)
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_v_text);
@@ -7441,8 +7441,8 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_22__call__(CYTHON_UN
  *         except OSError:
  *             return text
  *         return self.format_mode(text, sr)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_format_mode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 378, __pyx_L1_error)
@@ -7499,7 +7499,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_22__call__(CYTHON_UN
 
   /* "welly/tui/dircolors.py":372
  *         return text
- * 
+ *
  *     def __call__(self, path: str, text: str, cwd: Optional[Union[int, str]] = None) -> str:             # <<<<<<<<<<<<<<
  *         follow_symlinks = self.codes.get('ln') == 'target'
  *         try:
@@ -7522,11 +7522,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_9Dircolors_22__call__(CYTHON_UN
 }
 
 /* "welly/tui/dircolors.py":381
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
 
 /* Python wrapper */
@@ -7560,10 +7560,10 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_2develop(CYTHON_UNUSED PyObject
   __Pyx_RefNannySetupContext("develop", 0);
 
   /* "welly/tui/dircolors.py":382
- * 
+ *
  * def develop() -> None:
  *     import sys             # <<<<<<<<<<<<<<
- * 
+ *
  *     print(Dircolors()(sys.argv[-1], sys.argv[-1]))
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 382, __pyx_L1_error)
@@ -7573,7 +7573,7 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_2develop(CYTHON_UNUSED PyObject
 
   /* "welly/tui/dircolors.py":384
  *     import sys
- * 
+ *
  *     print(Dircolors()(sys.argv[-1], sys.argv[-1]))             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Dircolors); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 384, __pyx_L1_error)
@@ -7656,11 +7656,11 @@ static PyObject *__pyx_pf_5welly_3tui_9dircolors_2develop(CYTHON_UNUSED PyObject
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/dircolors.py":381
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
 
   /* function exit code */
@@ -8319,7 +8319,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":326
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  *         def gen_pairs() -> Generator[Tuple[str, str], None, None]:             # <<<<<<<<<<<<<<
  *             for pair in self.codes.items():
  *                 yield pair
@@ -8333,7 +8333,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  *     def _format_code(self, text: str, code: str) -> str:
  *         val = self.codes.get(code)
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text             # <<<<<<<<<<<<<<
- * 
+ *
  *     def _format_ext(self, text: str, ext: str) -> str:
  */
   __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_rs, __pyx_kp_s_0); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 337, __pyx_L1_error)
@@ -8341,8 +8341,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__15);
 
   /* "welly/tui/dircolors.py":239
- * 
- * 
+ *
+ *
  * def stat_at(file: str, cwd: Optional[Union[int, str]] = None, follow_symlinks: bool = False) -> os.stat_result:             # <<<<<<<<<<<<<<
  *     dirfd: Optional[int] = None
  *     need_to_close = False
@@ -8356,7 +8356,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__18);
 
   /* "welly/tui/dircolors.py":256
- * 
+ *
  * class Dircolors:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes: Dict[str, str] = {}
@@ -8369,7 +8369,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":262
  *             self.load_defaults()
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes.clear()
  *         self.extensions.clear()
@@ -8381,7 +8381,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":266
  *         self.extensions.clear()
- * 
+ *
  *     def load_from_file(self) -> bool:             # <<<<<<<<<<<<<<
  *         for candidate in (os.path.expanduser('~/.dir_colors'), '/etc/DIR_COLORS'):
  *             with suppress(Exception):
@@ -8393,7 +8393,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":273
  *         return False
- * 
+ *
  *     def load_from_lscolors(self, lscolors: str) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         if not lscolors:
@@ -8405,10 +8405,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":290
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_from_environ(self, envvar: str = 'LS_COLORS') -> bool:             # <<<<<<<<<<<<<<
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_envvar); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 290, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
@@ -8420,10 +8420,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":293
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  *     def load_from_dircolors(self, database: str, strict: bool = False) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
- * 
+ *
  */
   __pyx_tuple__30 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_database, __pyx_n_s_strict, __pyx_n_s_line, __pyx_n_s_split, __pyx_n_s_key, __pyx_n_s_val); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
@@ -8435,7 +8435,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":319
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_defaults(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
@@ -8447,10 +8447,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":323
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
- * 
+ *
  *     def generate_lscolors(self) -> str:             # <<<<<<<<<<<<<<
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  */
   __pyx_tuple__35 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_gen_pairs, __pyx_n_s_gen_pairs, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 323, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
@@ -8459,7 +8459,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":335
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.codes.get(code)
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -8471,7 +8471,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":339
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def _format_ext(self, text: str, ext: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.extensions.get(ext, '0')
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -8483,7 +8483,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":343
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def format_mode(self, text: str, sr: os.stat_result) -> str:             # <<<<<<<<<<<<<<
  *         mode = sr.st_mode
  *         if stat.S_ISDIR(mode):
@@ -8495,7 +8495,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/tui/dircolors.py":372
  *         return text
- * 
+ *
  *     def __call__(self, path: str, text: str, cwd: Optional[Union[int, str]] = None) -> str:             # <<<<<<<<<<<<<<
  *         follow_symlinks = self.codes.get('ln') == 'target'
  *         try:
@@ -8509,11 +8509,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__45);
 
   /* "welly/tui/dircolors.py":381
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
   __pyx_tuple__46 = PyTuple_Pack(1, __pyx_n_s_sys); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
@@ -8840,7 +8840,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * import os             # <<<<<<<<<<<<<<
  * import stat
  * from contextlib import suppress
@@ -8851,7 +8851,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/tui/dircolors.py":5
- * 
+ *
  * import os
  * import stat             # <<<<<<<<<<<<<<
  * from contextlib import suppress
@@ -8867,7 +8867,7 @@ if (!__Pyx_RefNanny) {
  * import stat
  * from contextlib import suppress             # <<<<<<<<<<<<<<
  * from typing import Dict, Generator, Optional, Tuple, Union
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8887,7 +8887,7 @@ if (!__Pyx_RefNanny) {
  * import stat
  * from contextlib import suppress
  * from typing import Dict, Generator, Optional, Tuple, Union             # <<<<<<<<<<<<<<
- * 
+ *
  * DEFAULT_DIRCOLORS = r"""# {{{
  */
   __pyx_t_2 = PyList_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -8934,7 +8934,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":9
  * from typing import Dict, Generator, Optional, Tuple, Union
- * 
+ *
  * DEFAULT_DIRCOLORS = r"""# {{{             # <<<<<<<<<<<<<<
  * # Configuration file for dircolors, a utility to help you set the
  * # LS_COLORS environment variable used by GNU ls with the --color option.
@@ -9072,7 +9072,7 @@ if (!__Pyx_RefNanny) {
  *     (stat.S_ISUID, 'su'),  # setuid
  *     (stat.S_ISGID, 'sg'),  # setgid             # <<<<<<<<<<<<<<
  * )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_stat); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -9122,7 +9122,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "welly/tui/dircolors.py":218
- * 
+ *
  * CODE_MAP = {
  *     'RESET': 'rs',             # <<<<<<<<<<<<<<
  *     'DIR': 'di',
@@ -9152,8 +9152,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "welly/tui/dircolors.py":239
- * 
- * 
+ *
+ *
  * def stat_at(file: str, cwd: Optional[Union[int, str]] = None, follow_symlinks: bool = False) -> os.stat_result:             # <<<<<<<<<<<<<<
  *     dirfd: Optional[int] = None
  *     need_to_close = False
@@ -9200,8 +9200,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/tui/dircolors.py":255
- * 
- * 
+ *
+ *
  * class Dircolors:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.codes: Dict[str, str] = {}
@@ -9210,7 +9210,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "welly/tui/dircolors.py":256
- * 
+ *
  * class Dircolors:
  *     def __init__(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes: Dict[str, str] = {}
@@ -9228,7 +9228,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":262
  *             self.load_defaults()
- * 
+ *
  *     def clear(self) -> None:             # <<<<<<<<<<<<<<
  *         self.codes.clear()
  *         self.extensions.clear()
@@ -9245,7 +9245,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":266
  *         self.extensions.clear()
- * 
+ *
  *     def load_from_file(self) -> bool:             # <<<<<<<<<<<<<<
  *         for candidate in (os.path.expanduser('~/.dir_colors'), '/etc/DIR_COLORS'):
  *             with suppress(Exception):
@@ -9262,7 +9262,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":273
  *         return False
- * 
+ *
  *     def load_from_lscolors(self, lscolors: str) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         if not lscolors:
@@ -9280,10 +9280,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":290
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_from_environ(self, envvar: str = 'LS_COLORS') -> bool:             # <<<<<<<<<<<<<<
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  */
   __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 290, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
@@ -9299,10 +9299,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":293
  *         return self.load_from_lscolors(os.environ.get(envvar) or '')
- * 
+ *
  *     def load_from_dircolors(self, database: str, strict: bool = False) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -9319,7 +9319,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":319
  *         return bool(self.codes or self.extensions)
- * 
+ *
  *     def load_defaults(self) -> bool:             # <<<<<<<<<<<<<<
  *         self.clear()
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
@@ -9336,10 +9336,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":323
  *         return self.load_from_dircolors(DEFAULT_DIRCOLORS, True)
- * 
+ *
  *     def generate_lscolors(self) -> str:             # <<<<<<<<<<<<<<
  *         """Output the database in the format used by the LS_COLORS environment variable."""
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 323, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -9353,7 +9353,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":335
  *         return ':'.join('{}={}'.format(*pair) for pair in gen_pairs())
- * 
+ *
  *     def _format_code(self, text: str, code: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.codes.get(code)
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -9372,7 +9372,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":339
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def _format_ext(self, text: str, ext: str) -> str:             # <<<<<<<<<<<<<<
  *         val = self.extensions.get(ext, '0')
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
@@ -9391,7 +9391,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":343
  *         return '\033[{}m{}\033[{}m'.format(val, text, self.codes.get('rs', '0')) if val else text
- * 
+ *
  *     def format_mode(self, text: str, sr: os.stat_result) -> str:             # <<<<<<<<<<<<<<
  *         mode = sr.st_mode
  *         if stat.S_ISDIR(mode):
@@ -9416,7 +9416,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/tui/dircolors.py":372
  *         return text
- * 
+ *
  *     def __call__(self, path: str, text: str, cwd: Optional[Union[int, str]] = None) -> str:             # <<<<<<<<<<<<<<
  *         follow_symlinks = self.codes.get('ln') == 'target'
  *         try:
@@ -9457,8 +9457,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "welly/tui/dircolors.py":255
- * 
- * 
+ *
+ *
  * class Dircolors:             # <<<<<<<<<<<<<<
  *     def __init__(self) -> None:
  *         self.codes: Dict[str, str] = {}
@@ -9470,11 +9470,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "welly/tui/dircolors.py":381
- * 
- * 
+ *
+ *
  * def develop() -> None:             # <<<<<<<<<<<<<<
  *     import sys
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 381, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -9489,7 +9489,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/tui/dircolors.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);

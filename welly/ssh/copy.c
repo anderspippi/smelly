@@ -970,8 +970,8 @@ struct __pyx_obj_5welly_3ssh_4copy___pyx_scope_struct__resolve_file_spec;
 struct __pyx_obj_5welly_3ssh_4copy___pyx_scope_struct_1_parse_copy_instructions;
 
 /* "welly/ssh/copy.py":63
- * 
- * 
+ *
+ *
  * def resolve_file_spec(spec: str, is_glob: bool) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     ans = os.path.expandvars(expand_home(spec))
  *     if not os.path.isabs(ans):
@@ -990,8 +990,8 @@ struct __pyx_obj_5welly_3ssh_4copy___pyx_scope_struct__resolve_file_spec {
 
 
 /* "welly/ssh/copy.py":101
- * 
- * 
+ *
+ *
  * def parse_copy_instructions(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     opts, args = parse_copy_args(shlex.split(val))
  *     locations: List[str] = []
@@ -1828,7 +1828,7 @@ static PyObject *__pyx_codeobj__12;
 /* Late includes */
 
 /* "welly/ssh/copy.py":19
- * 
+ *
  * @run_once
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -1867,7 +1867,7 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_option_text(CYTHON_UNUSED PyObject *
   goto __pyx_L0;
 
   /* "welly/ssh/copy.py":19
- * 
+ *
  * @run_once
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -1882,8 +1882,8 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_option_text(CYTHON_UNUSED PyObject *
 }
 
 /* "welly/ssh/copy.py":54
- * 
- * 
+ *
+ *
  * def parse_copy_args(args: Optional[Sequence[str]] = None) -> Tuple[CopyCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -1971,7 +1971,7 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_2parse_copy_args(CYTHON_UNUSED PyObj
   __Pyx_INCREF(__pyx_v_args);
 
   /* "welly/ssh/copy.py":55
- * 
+ *
  * def parse_copy_args(args: Optional[Sequence[str]] = None) -> Tuple[CopyCLIOptions, List[str]]:
  *     args = list(args or ())             # <<<<<<<<<<<<<<
  *     try:
@@ -2043,11 +2043,11 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_2parse_copy_args(CYTHON_UNUSED PyObj
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_1 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_1 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_1);
         __Pyx_INCREF(__pyx_t_3);
@@ -2124,7 +2124,7 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_2parse_copy_args(CYTHON_UNUSED PyObj
  *     except SystemExit as e:
  *         raise CopyCLIError from e             # <<<<<<<<<<<<<<
  *     return opts, args
- * 
+ *
  */
       __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_CopyCLIError); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 59, __pyx_L7_except_error)
       __Pyx_GOTREF(__pyx_t_8);
@@ -2154,8 +2154,8 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_2parse_copy_args(CYTHON_UNUSED PyObj
  *     except SystemExit as e:
  *         raise CopyCLIError from e
  *     return opts, args             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
@@ -2171,8 +2171,8 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_2parse_copy_args(CYTHON_UNUSED PyObj
   goto __pyx_L0;
 
   /* "welly/ssh/copy.py":54
- * 
- * 
+ *
+ *
  * def parse_copy_args(args: Optional[Sequence[str]] = None) -> Tuple[CopyCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -2197,8 +2197,8 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_2parse_copy_args(CYTHON_UNUSED PyObj
 static PyObject *__pyx_gb_5welly_3ssh_4copy_6generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/ssh/copy.py":63
- * 
- * 
+ *
+ *
  * def resolve_file_spec(spec: str, is_glob: bool) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     ans = os.path.expandvars(expand_home(spec))
  *     if not os.path.isabs(ans):
@@ -2344,7 +2344,7 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_6generator(__pyx_CoroutineObject *__
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 63, __pyx_L1_error)
 
   /* "welly/ssh/copy.py":64
- * 
+ *
  * def resolve_file_spec(spec: str, is_glob: bool) -> Iterator[str]:
  *     ans = os.path.expandvars(expand_home(spec))             # <<<<<<<<<<<<<<
  *     if not os.path.isabs(ans):
@@ -2681,7 +2681,7 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_6generator(__pyx_CoroutineObject *__
  *         files = [ans]
  *     for x in files:             # <<<<<<<<<<<<<<
  *         yield os.path.normpath(x).replace(os.sep, '/')
- * 
+ *
  */
   if (likely(PyList_CheckExact(__pyx_cur_scope->__pyx_v_files)) || PyTuple_CheckExact(__pyx_cur_scope->__pyx_v_files)) {
     __pyx_t_1 = __pyx_cur_scope->__pyx_v_files; __Pyx_INCREF(__pyx_t_1); __pyx_t_8 = 0;
@@ -2731,8 +2731,8 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_6generator(__pyx_CoroutineObject *__
  *         files = [ans]
  *     for x in files:
  *         yield os.path.normpath(x).replace(os.sep, '/')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_os); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
@@ -2837,15 +2837,15 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_6generator(__pyx_CoroutineObject *__
  *         files = [ans]
  *     for x in files:             # <<<<<<<<<<<<<<
  *         yield os.path.normpath(x).replace(os.sep, '/')
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/ssh/copy.py":63
- * 
- * 
+ *
+ *
  * def resolve_file_spec(spec: str, is_glob: bool) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     ans = os.path.expandvars(expand_home(spec))
  *     if not os.path.isabs(ans):
@@ -2874,8 +2874,8 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_6generator(__pyx_CoroutineObject *__
 }
 
 /* "welly/ssh/copy.py":83
- * 
- * 
+ *
+ *
  * def get_arcname(loc: str, dest: Optional[str], home: str) -> str:             # <<<<<<<<<<<<<<
  *     if dest:
  *         arcname = dest
@@ -2981,7 +2981,7 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_7get_arcname(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("get_arcname", 0);
 
   /* "welly/ssh/copy.py":84
- * 
+ *
  * def get_arcname(loc: str, dest: Optional[str], home: str) -> str:
  *     if dest:             # <<<<<<<<<<<<<<
  *         arcname = dest
@@ -3001,7 +3001,7 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_7get_arcname(CYTHON_UNUSED PyObject 
     __pyx_v_arcname = __pyx_v_dest;
 
     /* "welly/ssh/copy.py":84
- * 
+ *
  * def get_arcname(loc: str, dest: Optional[str], home: str) -> str:
  *     if dest:             # <<<<<<<<<<<<<<
  *         arcname = dest
@@ -3239,7 +3239,7 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_7get_arcname(CYTHON_UNUSED PyObject 
  *     arcname = os.path.normpath(arcname).replace(os.sep, '/')
  *     prefix = 'root' if arcname.startswith('/') else 'home/'             # <<<<<<<<<<<<<<
  *     return prefix + arcname
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_arcname, __pyx_n_s_startswith); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -3274,8 +3274,8 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_7get_arcname(CYTHON_UNUSED PyObject 
  *     arcname = os.path.normpath(arcname).replace(os.sep, '/')
  *     prefix = 'root' if arcname.startswith('/') else 'home/'
  *     return prefix + arcname             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = PyNumber_Add(__pyx_v_prefix, __pyx_v_arcname); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
@@ -3286,8 +3286,8 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_7get_arcname(CYTHON_UNUSED PyObject 
   goto __pyx_L0;
 
   /* "welly/ssh/copy.py":83
- * 
- * 
+ *
+ *
  * def get_arcname(loc: str, dest: Optional[str], home: str) -> str:             # <<<<<<<<<<<<<<
  *     if dest:
  *         arcname = dest
@@ -3312,8 +3312,8 @@ static PyObject *__pyx_pf_5welly_3ssh_4copy_7get_arcname(CYTHON_UNUSED PyObject 
 static PyObject *__pyx_gb_5welly_3ssh_4copy_11generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
 /* "welly/ssh/copy.py":101
- * 
- * 
+ *
+ *
  * def parse_copy_instructions(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     opts, args = parse_copy_args(shlex.split(val))
  *     locations: List[str] = []
@@ -3462,7 +3462,7 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_11generator1(__pyx_CoroutineObject *
   if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 101, __pyx_L1_error)
 
   /* "welly/ssh/copy.py":102
- * 
+ *
  * def parse_copy_instructions(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:
  *     opts, args = parse_copy_args(shlex.split(val))             # <<<<<<<<<<<<<<
  *     locations: List[str] = []
@@ -3516,11 +3516,11 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_11generator1(__pyx_CoroutineObject *
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -4124,8 +4124,8 @@ static PyObject *__pyx_gb_5welly_3ssh_4copy_11generator1(__pyx_CoroutineObject *
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
   /* "welly/ssh/copy.py":101
- * 
- * 
+ *
+ *
  * def parse_copy_instructions(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     opts, args = parse_copy_args(shlex.split(val))
  *     locations: List[str] = []
@@ -4579,7 +4579,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/ssh/copy.py":19
- * 
+ *
  * @run_once
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -4588,8 +4588,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_copy_py, __pyx_n_s_option_text, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 19, __pyx_L1_error)
 
   /* "welly/ssh/copy.py":54
- * 
- * 
+ *
+ *
  * def parse_copy_args(args: Optional[Sequence[str]] = None) -> Tuple[CopyCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -4603,8 +4603,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__8);
 
   /* "welly/ssh/copy.py":63
- * 
- * 
+ *
+ *
  * def resolve_file_spec(spec: str, is_glob: bool) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     ans = os.path.expandvars(expand_home(spec))
  *     if not os.path.isabs(ans):
@@ -4615,19 +4615,19 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_copy_py, __pyx_n_s_resolve_file_spec, 63, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 63, __pyx_L1_error)
 
   /* "welly/ssh/copy.py":79
- * 
- * 
+ *
+ *
  * class CopyCLIError(ValueError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_tuple__10 = PyTuple_Pack(1, __pyx_builtin_ValueError); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
   /* "welly/ssh/copy.py":83
- * 
- * 
+ *
+ *
  * def get_arcname(loc: str, dest: Optional[str], home: str) -> str:             # <<<<<<<<<<<<<<
  *     if dest:
  *         arcname = dest
@@ -4638,8 +4638,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_copy_py, __pyx_n_s_get_arcname, 83, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 83, __pyx_L1_error)
 
   /* "welly/ssh/copy.py":101
- * 
- * 
+ *
+ *
  * def parse_copy_instructions(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     opts, args = parse_copy_args(shlex.split(val))
  *     locations: List[str] = []
@@ -4953,8 +4953,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/ssh/copy.py":5
- * 
- * 
+ *
+ *
  * import glob             # <<<<<<<<<<<<<<
  * import os
  * import shlex
@@ -4965,7 +4965,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/copy.py":6
- * 
+ *
  * import glob
  * import os             # <<<<<<<<<<<<<<
  * import shlex
@@ -4993,7 +4993,7 @@ if (!__Pyx_RefNanny) {
  * import shlex
  * import uuid             # <<<<<<<<<<<<<<
  * from typing import Dict, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_uuid, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5004,7 +5004,7 @@ if (!__Pyx_RefNanny) {
  * import shlex
  * import uuid
  * from typing import Dict, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.cli import parse_args
  */
   __pyx_t_1 = PyList_New(8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
@@ -5072,7 +5072,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/copy.py":11
  * from typing import Dict, Iterable, Iterator, List, NamedTuple, Optional, Sequence, Tuple
- * 
+ *
  * from smelly.cli import parse_args             # <<<<<<<<<<<<<<
  * from smelly.cli_stub import CopyCLIOptions
  * from smelly.types import run_once
@@ -5092,11 +5092,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/copy.py":12
- * 
+ *
  * from smelly.cli import parse_args
  * from smelly.cli_stub import CopyCLIOptions             # <<<<<<<<<<<<<<
  * from smelly.types import run_once
- * 
+ *
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5116,7 +5116,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.cli import parse_args
  * from smelly.cli_stub import CopyCLIOptions
  * from smelly.types import run_once             # <<<<<<<<<<<<<<
- * 
+ *
  * from ..transfer.utils import expand_home, home_path
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
@@ -5135,10 +5135,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/copy.py":15
  * from smelly.types import run_once
- * 
+ *
  * from ..transfer.utils import expand_home, home_path             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -5162,8 +5162,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/copy.py":18
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def option_text() -> str:
  *     return '''
@@ -5172,7 +5172,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_2);
 
   /* "welly/ssh/copy.py":19
- * 
+ *
  * @run_once
  * def option_text() -> str:             # <<<<<<<<<<<<<<
  *     return '''
@@ -5187,8 +5187,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/copy.py":18
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def option_text() -> str:
  *     return '''
@@ -5201,8 +5201,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/copy.py":54
- * 
- * 
+ *
+ *
  * def parse_copy_args(args: Optional[Sequence[str]] = None) -> Tuple[CopyCLIOptions, List[str]]:             # <<<<<<<<<<<<<<
  *     args = list(args or ())
  *     try:
@@ -5254,8 +5254,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/ssh/copy.py":63
- * 
- * 
+ *
+ *
  * def resolve_file_spec(spec: str, is_glob: bool) -> Iterator[str]:             # <<<<<<<<<<<<<<
  *     ans = os.path.expandvars(expand_home(spec))
  *     if not os.path.isabs(ans):
@@ -5279,11 +5279,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/copy.py":79
- * 
- * 
+ *
+ *
  * class CopyCLIError(ValueError):             # <<<<<<<<<<<<<<
  *     pass
- * 
+ *
  */
   __pyx_t_3 = __Pyx_CalculateMetaclass(NULL, __pyx_tuple__10); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -5297,8 +5297,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/copy.py":83
- * 
- * 
+ *
+ *
  * def get_arcname(loc: str, dest: Optional[str], home: str) -> str:             # <<<<<<<<<<<<<<
  *     if dest:
  *         arcname = dest
@@ -5323,8 +5323,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/copy.py":95
- * 
- * 
+ *
+ *
  * class CopyInstruction(NamedTuple):             # <<<<<<<<<<<<<<
  *     local_path: str
  *     arcname: str
@@ -5345,8 +5345,8 @@ if (!__Pyx_RefNanny) {
  *     local_path: str
  *     arcname: str
  *     exclude_patterns: Tuple[str, ...]             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_CopyInstruction, __pyx_t_3, __pyx_t_5, NULL, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5357,8 +5357,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/copy.py":101
- * 
- * 
+ *
+ *
  * def parse_copy_instructions(val: str, current_val: Dict[str, str]) -> Iterable[Tuple[str, CopyInstruction]]:             # <<<<<<<<<<<<<<
  *     opts, args = parse_copy_args(shlex.split(val))
  *     locations: List[str] = []
@@ -5416,7 +5416,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/ssh/copy.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);

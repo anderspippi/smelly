@@ -1503,10 +1503,10 @@ static PyObject *__pyx_codeobj__4;
 
 /* "smelly/rc/focus_tab.py":32
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1607,10 +1607,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_message_to_smelly(CYT
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/focus_tab.py":33
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {'match': opts.match, 'no_response': opts.no_response}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1630,10 +1630,10 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_message_to_smelly(CYT
 
   /* "smelly/rc/focus_tab.py":32
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  */
 
   /* function exit code */
@@ -1650,7 +1650,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_message_to_smelly(CYT
 
 /* "smelly/rc/focus_tab.py":35
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -1761,7 +1761,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_2response_from_smelly
   __Pyx_RefNannySetupContext("response_from_smelly", 0);
 
   /* "smelly/rc/focus_tab.py":36
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if tab:
@@ -1901,7 +1901,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_2response_from_smelly
  *                 boss.set_active_tab(tab)
  *                 break             # <<<<<<<<<<<<<<
  *         return None
- * 
+ *
  */
       goto __pyx_L4_break;
 
@@ -1915,7 +1915,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_2response_from_smelly
     }
 
     /* "smelly/rc/focus_tab.py":36
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):             # <<<<<<<<<<<<<<
  *             if tab:
@@ -1929,8 +1929,8 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_2response_from_smelly
  *                 boss.set_active_tab(tab)
  *                 break
  *         return None             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -1938,7 +1938,7 @@ static PyObject *__pyx_pf_6smelly_2rc_9focus_tab_8FocusTab_2response_from_smelly
 
   /* "smelly/rc/focus_tab.py":35
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -2072,10 +2072,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/focus_tab.py":32
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -2084,7 +2084,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/focus_tab.py":35
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -2379,10 +2379,10 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "smelly/rc/focus_tab.py":5
- * 
- * 
+ *
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
@@ -2408,9 +2408,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_tab.py":7
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_2 = PyList_New(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -2485,10 +2485,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_tab.py":9
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import FocusTabRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2497,11 +2497,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/focus_tab.py":10
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import FocusTabRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -2519,16 +2519,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/focus_tab.py":9
  * from .base import MATCH_TAB_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import FocusTabRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/focus_tab.py":13
- * 
- * 
+ *
+ *
  * class FocusTab(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The tab to focus
@@ -2546,7 +2546,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/focus_tab.py":14
- * 
+ *
  * class FocusTab(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: The tab to focus
@@ -2557,7 +2557,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_tab.py":18
  *     '''
- * 
+ *
  *     short_desc = 'Focus the specified tab'             # <<<<<<<<<<<<<<
  *     desc = 'The active window in the specified tab will be focused.'
  *     options_spec = (
@@ -2565,7 +2565,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_short_desc, __pyx_kp_s_Focus_the_specified_tab) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
 
   /* "smelly/rc/focus_tab.py":19
- * 
+ *
  *     short_desc = 'Focus the specified tab'
  *     desc = 'The active window in the specified tab will be focused.'             # <<<<<<<<<<<<<<
  *     options_spec = (
@@ -2578,7 +2578,7 @@ if (!__Pyx_RefNanny) {
  *     options_spec = (
  *         MATCH_TAB_OPTION             # <<<<<<<<<<<<<<
  *         + '''
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_MATCH_TAB_OPTION); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -2587,7 +2587,7 @@ if (!__Pyx_RefNanny) {
  *     options_spec = (
  *         MATCH_TAB_OPTION
  *         + '''             # <<<<<<<<<<<<<<
- * 
+ *
  * --no-response
  */
   __pyx_t_6 = PyNumber_Add(__pyx_t_5, __pyx_kp_s_no_response_type_bool_set_defau); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 22, __pyx_L1_error)
@@ -2598,10 +2598,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_tab.py":32
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -2627,7 +2627,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/focus_tab.py":35
  *         return {'match': opts.match, 'no_response': opts.no_response}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         for tab in self.tabs_for_match_payload(boss, window, payload_get):
  *             if tab:
@@ -2664,8 +2664,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/focus_tab.py":13
- * 
- * 
+ *
+ *
  * class FocusTab(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The tab to focus
@@ -2679,8 +2679,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/focus_tab.py":43
- * 
- * 
+ *
+ *
  * focus_tab = FocusTab()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_FocusTab); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
@@ -2694,7 +2694,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/focus_tab.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

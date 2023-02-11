@@ -2000,7 +2000,7 @@ static PyObject *__pyx_codeobj__34;
 /* Late includes */
 
 /* "welly/ssh/utils.py":13
- * 
+ *
  * @run_once
  * def ssh_options() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     try:
@@ -2266,7 +2266,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_ssh_options(CYTHON_UNUSED PyObject 
 
   /* "welly/ssh/utils.py":65
  *         }
- * 
+ *
  *     ans: Dict[str, str] = {}             # <<<<<<<<<<<<<<
  *     pos = 0
  *     while True:
@@ -2277,7 +2277,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_ssh_options(CYTHON_UNUSED PyObject 
   __pyx_t_8 = 0;
 
   /* "welly/ssh/utils.py":66
- * 
+ *
  *     ans: Dict[str, str] = {}
  *     pos = 0             # <<<<<<<<<<<<<<
  *     while True:
@@ -2583,11 +2583,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_ssh_options(CYTHON_UNUSED PyObject 
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
-          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+          __pyx_t_8 = PyTuple_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1);
         } else {
-          __pyx_t_8 = PyList_GET_ITEM(sequence, 0); 
-          __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+          __pyx_t_8 = PyList_GET_ITEM(sequence, 0);
+          __pyx_t_5 = PyList_GET_ITEM(sequence, 1);
         }
         __Pyx_INCREF(__pyx_t_8);
         __Pyx_INCREF(__pyx_t_5);
@@ -2651,7 +2651,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_ssh_options(CYTHON_UNUSED PyObject 
  *         else:
  *             ans.update(dict.fromkeys(q[1:], ''))             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     /*else*/ {
       __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)(&PyDict_Type)), __pyx_n_s_fromkeys); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 86, __pyx_L1_error)
@@ -2719,8 +2719,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_ssh_options(CYTHON_UNUSED PyObject 
  *         else:
  *             ans.update(dict.fromkeys(q[1:], ''))
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -2728,7 +2728,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_ssh_options(CYTHON_UNUSED PyObject 
   goto __pyx_L0;
 
   /* "welly/ssh/utils.py":13
- * 
+ *
  * @run_once
  * def ssh_options() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     try:
@@ -2760,8 +2760,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_ssh_options(CYTHON_UNUSED PyObject 
 }
 
 /* "welly/ssh/utils.py":90
- * 
- * 
+ *
+ *
  * def is_kitten_cmdline(q: Sequence[str]) -> bool:             # <<<<<<<<<<<<<<
  *     if not q:
  *         return False
@@ -2799,7 +2799,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_2is_kitten_cmdline(CYTHON_UNUSED Py
   __Pyx_RefNannySetupContext("is_kitten_cmdline", 0);
 
   /* "welly/ssh/utils.py":91
- * 
+ *
  * def is_kitten_cmdline(q: Sequence[str]) -> bool:
  *     if not q:             # <<<<<<<<<<<<<<
  *         return False
@@ -2822,7 +2822,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_2is_kitten_cmdline(CYTHON_UNUSED Py
     goto __pyx_L0;
 
     /* "welly/ssh/utils.py":91
- * 
+ *
  * def is_kitten_cmdline(q: Sequence[str]) -> bool:
  *     if not q:             # <<<<<<<<<<<<<<
  *         return False
@@ -3051,7 +3051,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_2is_kitten_cmdline(CYTHON_UNUSED Py
  *     if q[1:3] == ['+kitten', 'ssh'] or q[1:4] == ['+', 'kitten', 'ssh']:
  *         return True             # <<<<<<<<<<<<<<
  *     return q[1:3] == ['+runpy', 'from wellies.runner import main; main()'] and len(q) >= 6 and q[5] == 'ssh'
- * 
+ *
  */
     __Pyx_XDECREF(__pyx_r);
     __Pyx_INCREF(Py_True);
@@ -3071,8 +3071,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_2is_kitten_cmdline(CYTHON_UNUSED Py
  *     if q[1:3] == ['+kitten', 'ssh'] or q[1:4] == ['+', 'kitten', 'ssh']:
  *         return True
  *     return q[1:3] == ['+runpy', 'from wellies.runner import main; main()'] and len(q) >= 6 and q[5] == 'ssh'             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = __Pyx_PyObject_GetSlice(__pyx_v_q, 1, 3, NULL, NULL, &__pyx_slice__9, 1, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -3120,8 +3120,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_2is_kitten_cmdline(CYTHON_UNUSED Py
   goto __pyx_L0;
 
   /* "welly/ssh/utils.py":90
- * 
- * 
+ *
+ *
  * def is_kitten_cmdline(q: Sequence[str]) -> bool:             # <<<<<<<<<<<<<<
  *     if not q:
  *         return False
@@ -3144,8 +3144,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_2is_kitten_cmdline(CYTHON_UNUSED Py
 }
 
 /* "welly/ssh/utils.py":105
- * 
- * 
+ *
+ *
  * def patch_cmdline(key: str, val: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     for i, arg in enumerate(tuple(argv)):
  *         if arg.startswith(f'--kitten={key}='):
@@ -3257,7 +3257,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_4patch_cmdline(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("patch_cmdline", 0);
 
   /* "welly/ssh/utils.py":106
- * 
+ *
  * def patch_cmdline(key: str, val: str, argv: List[str]) -> None:
  *     for i, arg in enumerate(tuple(argv)):             # <<<<<<<<<<<<<<
  *         if arg.startswith(f'--kitten={key}='):
@@ -3517,7 +3517,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_4patch_cmdline(CYTHON_UNUSED PyObje
     }
 
     /* "welly/ssh/utils.py":106
- * 
+ *
  * def patch_cmdline(key: str, val: str, argv: List[str]) -> None:
  *     for i, arg in enumerate(tuple(argv)):             # <<<<<<<<<<<<<<
  *         if arg.startswith(f'--kitten={key}='):
@@ -3532,7 +3532,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_4patch_cmdline(CYTHON_UNUSED PyObje
  *             return
  *     idx = argv.index('ssh')             # <<<<<<<<<<<<<<
  *     argv.insert(idx + 1, f'--kitten={key}={val}')
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_argv, __pyx_n_s_index); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3558,8 +3558,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_4patch_cmdline(CYTHON_UNUSED PyObje
  *             return
  *     idx = argv.index('ssh')
  *     argv.insert(idx + 1, f'--kitten={key}={val}')             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_argv, __pyx_n_s_insert); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -3646,8 +3646,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_4patch_cmdline(CYTHON_UNUSED PyObje
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":105
- * 
- * 
+ *
+ *
  * def patch_cmdline(key: str, val: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     for i, arg in enumerate(tuple(argv)):
  *         if arg.startswith(f'--kitten={key}='):
@@ -3675,11 +3675,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_4patch_cmdline(CYTHON_UNUSED PyObje
 }
 
 /* "welly/ssh/utils.py":117
- * 
- * 
+ *
+ *
  * def set_cwd_in_cmdline(cwd: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('cwd', cwd, argv)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3766,11 +3766,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_6set_cwd_in_cmdline(CYTHON_UNUSED P
   __Pyx_RefNannySetupContext("set_cwd_in_cmdline", 0);
 
   /* "welly/ssh/utils.py":118
- * 
+ *
  * def set_cwd_in_cmdline(cwd: str, argv: List[str]) -> None:
  *     patch_cmdline('cwd', cwd, argv)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_patch_cmdline); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 118, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3825,11 +3825,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_6set_cwd_in_cmdline(CYTHON_UNUSED P
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":117
- * 
- * 
+ *
+ *
  * def set_cwd_in_cmdline(cwd: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('cwd', cwd, argv)
- * 
+ *
  */
 
   /* function exit code */
@@ -3849,8 +3849,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_6set_cwd_in_cmdline(CYTHON_UNUSED P
 }
 
 /* "welly/ssh/utils.py":121
- * 
- * 
+ *
+ *
  * def create_shared_memory(data: Any, prefix: str) -> str:             # <<<<<<<<<<<<<<
  *     import atexit
  *     import json
@@ -3952,11 +3952,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("create_shared_memory", 0);
 
   /* "welly/ssh/utils.py":122
- * 
+ *
  * def create_shared_memory(data: Any, prefix: str) -> str:
  *     import atexit             # <<<<<<<<<<<<<<
  *     import json
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_atexit, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3967,7 +3967,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
  * def create_shared_memory(data: Any, prefix: str) -> str:
  *     import atexit
  *     import json             # <<<<<<<<<<<<<<
- * 
+ *
  *     from smelly.shm import SharedMemory
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_json, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
@@ -3977,9 +3977,9 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
 
   /* "welly/ssh/utils.py":125
  *     import json
- * 
+ *
  *     from smelly.shm import SharedMemory             # <<<<<<<<<<<<<<
- * 
+ *
  *     db = json.dumps(data).encode('utf-8')
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
@@ -3999,7 +3999,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
 
   /* "welly/ssh/utils.py":127
  *     from smelly.shm import SharedMemory
- * 
+ *
  *     db = json.dumps(data).encode('utf-8')             # <<<<<<<<<<<<<<
  *     with SharedMemory(size=len(db) + SharedMemory.num_bytes_for_size, prefix=prefix) as shm:
  *         shm.write_data_with_size(db)
@@ -4043,7 +4043,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
   __pyx_t_2 = 0;
 
   /* "welly/ssh/utils.py":128
- * 
+ *
  *     db = json.dumps(data).encode('utf-8')
  *     with SharedMemory(size=len(db) + SharedMemory.num_bytes_for_size, prefix=prefix) as shm:             # <<<<<<<<<<<<<<
  *         shm.write_data_with_size(db)
@@ -4158,7 +4158,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
  *         shm.flush()
  *         atexit.register(shm.unlink)             # <<<<<<<<<<<<<<
  *     return shm.name
- * 
+ *
  */
           __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_atexit, __pyx_n_s_register); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L7_error)
           __Pyx_GOTREF(__pyx_t_4);
@@ -4183,7 +4183,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
           /* "welly/ssh/utils.py":128
- * 
+ *
  *     db = json.dumps(data).encode('utf-8')
  *     with SharedMemory(size=len(db) + SharedMemory.num_bytes_for_size, prefix=prefix) as shm:             # <<<<<<<<<<<<<<
  *         shm.write_data_with_size(db)
@@ -4221,7 +4221,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
             __Pyx_GIVEREF(__pyx_t_4);
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_4, __pyx_t_2);
-            __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_2 = 0; 
+            __pyx_t_1 = 0; __pyx_t_4 = 0; __pyx_t_2 = 0;
             __PYX_ERR(0, 128, __pyx_L9_except_error)
           }
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4267,8 +4267,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
  *         shm.flush()
  *         atexit.register(shm.unlink)
  *     return shm.name             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(!__pyx_v_shm)) { __Pyx_RaiseUnboundLocalError("shm"); __PYX_ERR(0, 132, __pyx_L1_error) }
@@ -4280,8 +4280,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
   goto __pyx_L0;
 
   /* "welly/ssh/utils.py":121
- * 
- * 
+ *
+ *
  * def create_shared_memory(data: Any, prefix: str) -> str:             # <<<<<<<<<<<<<<
  *     import atexit
  *     import json
@@ -4307,11 +4307,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_8create_shared_memory(CYTHON_UNUSED
 }
 
 /* "welly/ssh/utils.py":135
- * 
- * 
+ *
+ *
  * def set_env_in_cmdline(env: Dict[str, str], argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('clone_env', create_shared_memory(env, 'ksse-'), argv)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4395,11 +4395,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_10set_env_in_cmdline(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("set_env_in_cmdline", 0);
 
   /* "welly/ssh/utils.py":136
- * 
+ *
  * def set_env_in_cmdline(env: Dict[str, str], argv: List[str]) -> None:
  *     patch_cmdline('clone_env', create_shared_memory(env, 'ksse-'), argv)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_patch_cmdline); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -4503,11 +4503,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_10set_env_in_cmdline(CYTHON_UNUSED 
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":135
- * 
- * 
+ *
+ *
  * def set_env_in_cmdline(env: Dict[str, str], argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('clone_env', create_shared_memory(env, 'ksse-'), argv)
- * 
+ *
  */
 
   /* function exit code */
@@ -4529,8 +4529,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_10set_env_in_cmdline(CYTHON_UNUSED 
 }
 
 /* "welly/ssh/utils.py":139
- * 
- * 
+ *
+ *
  * def get_ssh_cli() -> Tuple[Set[str], Set[str]]:             # <<<<<<<<<<<<<<
  *     other_ssh_args: Set[str] = set()
  *     boolean_ssh_args: Set[str] = set()
@@ -4573,7 +4573,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_12get_ssh_cli(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("get_ssh_cli", 0);
 
   /* "welly/ssh/utils.py":140
- * 
+ *
  * def get_ssh_cli() -> Tuple[Set[str], Set[str]]:
  *     other_ssh_args: Set[str] = set()             # <<<<<<<<<<<<<<
  *     boolean_ssh_args: Set[str] = set()
@@ -4688,11 +4688,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_12get_ssh_cli(CYTHON_UNUSED PyObjec
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_4 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_4 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_4);
@@ -4778,7 +4778,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_12get_ssh_cli(CYTHON_UNUSED PyObjec
  *         else:
  *             boolean_ssh_args.add(k)             # <<<<<<<<<<<<<<
  *     return boolean_ssh_args, other_ssh_args
- * 
+ *
  */
     /*else*/ {
       __pyx_t_10 = PySet_Add(__pyx_v_boolean_ssh_args, __pyx_v_k); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 147, __pyx_L1_error)
@@ -4799,8 +4799,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_12get_ssh_cli(CYTHON_UNUSED PyObjec
  *         else:
  *             boolean_ssh_args.add(k)
  *     return boolean_ssh_args, other_ssh_args             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 148, __pyx_L1_error)
@@ -4816,8 +4816,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_12get_ssh_cli(CYTHON_UNUSED PyObjec
   goto __pyx_L0;
 
   /* "welly/ssh/utils.py":139
- * 
- * 
+ *
+ *
  * def get_ssh_cli() -> Tuple[Set[str], Set[str]]:             # <<<<<<<<<<<<<<
  *     other_ssh_args: Set[str] = set()
  *     boolean_ssh_args: Set[str] = set()
@@ -4843,8 +4843,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_12get_ssh_cli(CYTHON_UNUSED PyObjec
 }
 
 /* "welly/ssh/utils.py":151
- * 
- * 
+ *
+ *
  * def is_extra_arg(arg: str, extra_args: Tuple[str, ...]) -> str:             # <<<<<<<<<<<<<<
  *     for x in extra_args:
  *         if arg == x or arg.startswith(f'{x}='):
@@ -4937,7 +4937,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_14is_extra_arg(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("is_extra_arg", 0);
 
   /* "welly/ssh/utils.py":152
- * 
+ *
  * def is_extra_arg(arg: str, extra_args: Tuple[str, ...]) -> str:
  *     for x in extra_args:             # <<<<<<<<<<<<<<
  *         if arg == x or arg.startswith(f'{x}='):
@@ -5018,7 +5018,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_14is_extra_arg(CYTHON_UNUSED PyObje
  *         if arg == x or arg.startswith(f'{x}='):
  *             return x             # <<<<<<<<<<<<<<
  *     return ''
- * 
+ *
  */
       __Pyx_XDECREF(__pyx_r);
       if (!(likely(PyString_CheckExact(__pyx_v_x))||((__pyx_v_x) == Py_None)||((void)PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "str", Py_TYPE(__pyx_v_x)->tp_name), 0))) __PYX_ERR(0, 154, __pyx_L1_error)
@@ -5037,7 +5037,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_14is_extra_arg(CYTHON_UNUSED PyObje
     }
 
     /* "welly/ssh/utils.py":152
- * 
+ *
  * def is_extra_arg(arg: str, extra_args: Tuple[str, ...]) -> str:
  *     for x in extra_args:             # <<<<<<<<<<<<<<
  *         if arg == x or arg.startswith(f'{x}='):
@@ -5050,8 +5050,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_14is_extra_arg(CYTHON_UNUSED PyObje
  *         if arg == x or arg.startswith(f'{x}='):
  *             return x
  *     return ''             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_kp_s_);
@@ -5059,8 +5059,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_14is_extra_arg(CYTHON_UNUSED PyObje
   goto __pyx_L0;
 
   /* "welly/ssh/utils.py":151
- * 
- * 
+ *
+ *
  * def is_extra_arg(arg: str, extra_args: Tuple[str, ...]) -> str:             # <<<<<<<<<<<<<<
  *     for x in extra_args:
  *         if arg == x or arg.startswith(f'{x}='):
@@ -5081,8 +5081,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_14is_extra_arg(CYTHON_UNUSED PyObje
 }
 
 /* "welly/ssh/utils.py":161
- * 
- * 
+ *
+ *
  * def set_server_args_in_cmdline(server_args: List[str], argv: List[str], extra_args: Tuple[str, ...] = ('--kitten',), allocate_tty: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     boolean_ssh_args, other_ssh_args = get_ssh_cli()
  *     ssh_args = []
@@ -5222,7 +5222,7 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_16set_server_args_in_cmdline(CYTHON
   __Pyx_RefNannySetupContext("set_server_args_in_cmdline", 0);
 
   /* "welly/ssh/utils.py":162
- * 
+ *
  * def set_server_args_in_cmdline(server_args: List[str], argv: List[str], extra_args: Tuple[str, ...] = ('--kitten',), allocate_tty: bool = False) -> None:
  *     boolean_ssh_args, other_ssh_args = get_ssh_cli()             # <<<<<<<<<<<<<<
  *     ssh_args = []
@@ -5255,11 +5255,11 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_16set_server_args_in_cmdline(CYTHON
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_2 = PyList_GET_ITEM(sequence, 0);
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
     }
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
@@ -6224,8 +6224,8 @@ static PyObject *__pyx_pf_5welly_3ssh_5utils_16set_server_args_in_cmdline(CYTHON
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":161
- * 
- * 
+ *
+ *
  * def set_server_args_in_cmdline(server_args: List[str], argv: List[str], extra_args: Tuple[str, ...] = ('--kitten',), allocate_tty: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     boolean_ssh_args, other_ssh_args = get_ssh_cli()
  *     ssh_args = []
@@ -6558,7 +6558,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_slice__10);
 
   /* "welly/ssh/utils.py":128
- * 
+ *
  *     db = json.dumps(data).encode('utf-8')
  *     with SharedMemory(size=len(db) + SharedMemory.num_bytes_for_size, prefix=prefix) as shm:             # <<<<<<<<<<<<<<
  *         shm.write_data_with_size(db)
@@ -6569,8 +6569,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__13);
 
   /* "welly/ssh/utils.py":161
- * 
- * 
+ *
+ *
  * def set_server_args_in_cmdline(server_args: List[str], argv: List[str], extra_args: Tuple[str, ...] = ('--kitten',), allocate_tty: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     boolean_ssh_args, other_ssh_args = get_ssh_cli()
  *     ssh_args = []
@@ -6589,7 +6589,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_slice__16);
 
   /* "welly/ssh/utils.py":13
- * 
+ *
  * @run_once
  * def ssh_options() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     try:
@@ -6601,8 +6601,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_ssh_options, 13, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 13, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":90
- * 
- * 
+ *
+ *
  * def is_kitten_cmdline(q: Sequence[str]) -> bool:             # <<<<<<<<<<<<<<
  *     if not q:
  *         return False
@@ -6613,8 +6613,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_is_kitten_cmdline, 90, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 90, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":105
- * 
- * 
+ *
+ *
  * def patch_cmdline(key: str, val: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     for i, arg in enumerate(tuple(argv)):
  *         if arg.startswith(f'--kitten={key}='):
@@ -6625,11 +6625,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(3, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_patch_cmdline, 105, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 105, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":117
- * 
- * 
+ *
+ *
  * def set_cwd_in_cmdline(cwd: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('cwd', cwd, argv)
- * 
+ *
  */
   __pyx_tuple__23 = PyTuple_Pack(2, __pyx_n_s_cwd, __pyx_n_s_argv); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
@@ -6637,8 +6637,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_set_cwd_in_cmdline, 117, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 117, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":121
- * 
- * 
+ *
+ *
  * def create_shared_memory(data: Any, prefix: str) -> str:             # <<<<<<<<<<<<<<
  *     import atexit
  *     import json
@@ -6649,11 +6649,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_create_shared_memory, 121, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 121, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":135
- * 
- * 
+ *
+ *
  * def set_env_in_cmdline(env: Dict[str, str], argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('clone_env', create_shared_memory(env, 'ksse-'), argv)
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(2, __pyx_n_s_env, __pyx_n_s_argv); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
@@ -6661,8 +6661,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_set_env_in_cmdline, 135, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 135, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":139
- * 
- * 
+ *
+ *
  * def get_ssh_cli() -> Tuple[Set[str], Set[str]]:             # <<<<<<<<<<<<<<
  *     other_ssh_args: Set[str] = set()
  *     boolean_ssh_args: Set[str] = set()
@@ -6673,8 +6673,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_get_ssh_cli, 139, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 139, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":151
- * 
- * 
+ *
+ *
  * def is_extra_arg(arg: str, extra_args: Tuple[str, ...]) -> str:             # <<<<<<<<<<<<<<
  *     for x in extra_args:
  *         if arg == x or arg.startswith(f'{x}='):
@@ -6685,8 +6685,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_ssh_utils_py, __pyx_n_s_is_extra_arg, 151, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 151, __pyx_L1_error)
 
   /* "welly/ssh/utils.py":161
- * 
- * 
+ *
+ *
  * def set_server_args_in_cmdline(server_args: List[str], argv: List[str], extra_args: Tuple[str, ...] = ('--kitten',), allocate_tty: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     boolean_ssh_args, other_ssh_args = get_ssh_cli()
  *     ssh_args = []
@@ -6990,8 +6990,8 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/ssh/utils.py":5
- * 
- * 
+ *
+ *
  * import os             # <<<<<<<<<<<<<<
  * import subprocess
  * from typing import Any, Dict, List, Sequence, Set, Tuple
@@ -7002,11 +7002,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":6
- * 
+ *
  * import os
  * import subprocess             # <<<<<<<<<<<<<<
  * from typing import Any, Dict, List, Sequence, Set, Tuple
- * 
+ *
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_subprocess, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7017,7 +7017,7 @@ if (!__Pyx_RefNanny) {
  * import os
  * import subprocess
  * from typing import Any, Dict, List, Sequence, Set, Tuple             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.types import run_once
  */
   __pyx_t_1 = PyList_New(6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -7071,10 +7071,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/ssh/utils.py":9
  * from typing import Any, Dict, List, Sequence, Set, Tuple
- * 
+ *
  * from smelly.types import run_once             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7091,8 +7091,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":12
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def ssh_options() -> Dict[str, str]:
  *     try:
@@ -7101,7 +7101,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "welly/ssh/utils.py":13
- * 
+ *
  * @run_once
  * def ssh_options() -> Dict[str, str]:             # <<<<<<<<<<<<<<
  *     try:
@@ -7131,8 +7131,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/utils.py":12
- * 
- * 
+ *
+ *
  * @run_once             # <<<<<<<<<<<<<<
  * def ssh_options() -> Dict[str, str]:
  *     try:
@@ -7145,8 +7145,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/utils.py":90
- * 
- * 
+ *
+ *
  * def is_kitten_cmdline(q: Sequence[str]) -> bool:             # <<<<<<<<<<<<<<
  *     if not q:
  *         return False
@@ -7169,8 +7169,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":105
- * 
- * 
+ *
+ *
  * def patch_cmdline(key: str, val: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     for i, arg in enumerate(tuple(argv)):
  *         if arg.startswith(f'--kitten={key}='):
@@ -7195,11 +7195,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/ssh/utils.py":117
- * 
- * 
+ *
+ *
  * def set_cwd_in_cmdline(cwd: str, argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('cwd', cwd, argv)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7220,8 +7220,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/ssh/utils.py":121
- * 
- * 
+ *
+ *
  * def create_shared_memory(data: Any, prefix: str) -> str:             # <<<<<<<<<<<<<<
  *     import atexit
  *     import json
@@ -7242,11 +7242,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/ssh/utils.py":135
- * 
- * 
+ *
+ *
  * def set_env_in_cmdline(env: Dict[str, str], argv: List[str]) -> None:             # <<<<<<<<<<<<<<
  *     patch_cmdline('clone_env', create_shared_memory(env, 'ksse-'), argv)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7282,8 +7282,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/ssh/utils.py":139
- * 
- * 
+ *
+ *
  * def get_ssh_cli() -> Tuple[Set[str], Set[str]]:             # <<<<<<<<<<<<<<
  *     other_ssh_args: Set[str] = set()
  *     boolean_ssh_args: Set[str] = set()
@@ -7324,8 +7324,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/ssh/utils.py":151
- * 
- * 
+ *
+ *
  * def is_extra_arg(arg: str, extra_args: Tuple[str, ...]) -> str:             # <<<<<<<<<<<<<<
  *     for x in extra_args:
  *         if arg == x or arg.startswith(f'{x}='):
@@ -7358,11 +7358,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/ssh/utils.py":158
- * 
- * 
+ *
+ *
  * passthrough_args = {f'-{x}' for x in 'NnfGT'}             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   { /* enter inner scope */
     __pyx_t_5 = PySet_New(NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 158, __pyx_L4_error)
@@ -7409,8 +7409,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/ssh/utils.py":161
- * 
- * 
+ *
+ *
  * def set_server_args_in_cmdline(server_args: List[str], argv: List[str], extra_args: Tuple[str, ...] = ('--kitten',), allocate_tty: bool = False) -> None:             # <<<<<<<<<<<<<<
  *     boolean_ssh_args, other_ssh_args = get_ssh_cli()
  *     ssh_args = []
@@ -7460,7 +7460,7 @@ if (!__Pyx_RefNanny) {
   /* "welly/ssh/utils.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8125,8 +8125,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -9077,8 +9077,8 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, CYTHON_U
                 llx = lla - llb;
             return PyLong_FromLongLong(llx);
 #endif
-        
-        
+
+
     }
     #endif
     if (PyFloat_CheckExact(op1)) {

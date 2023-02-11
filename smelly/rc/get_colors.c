@@ -971,10 +971,10 @@ struct __pyx_obj_6smelly_2rc_10get_colors___pyx_scope_struct_1_genexpr;
 
 /* "smelly/rc/get_colors.py":42
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
 struct __pyx_obj_6smelly_2rc_10get_colors___pyx_scope_struct__response_from_smelly {
   PyObject_HEAD
@@ -988,8 +988,8 @@ struct __pyx_obj_6smelly_2rc_10get_colors___pyx_scope_struct__response_from_smel
  *         all_keys = natsort_ints(ans)
  *         maxlen = max(map(len, all_keys))
  *         return '\n'.join(('{:%ds} {}' % maxlen).format(key, color_as_sharp(ans[key])) for key in all_keys)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
 struct __pyx_obj_6smelly_2rc_10get_colors___pyx_scope_struct_1_genexpr {
   PyObject_HEAD
@@ -1808,10 +1808,10 @@ static PyObject *__pyx_codeobj__6;
 
 /* "smelly/rc/get_colors.py":39
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1912,10 +1912,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_message_to_smelly(
   __Pyx_RefNannySetupContext("message_to_smelly", 0);
 
   /* "smelly/rc/get_colors.py":40
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
  *         return {'configured': opts.configured, 'match': opts.match}             # <<<<<<<<<<<<<<
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  */
   __Pyx_XDECREF(__pyx_r);
@@ -1935,10 +1935,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_message_to_smelly(
 
   /* "smelly/rc/get_colors.py":39
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  */
 
   /* function exit code */
@@ -1955,10 +1955,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_message_to_smelly(
 
 /* "smelly/rc/get_colors.py":42
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2053,8 +2053,8 @@ static PyObject *__pyx_gb_6smelly_2rc_10get_colors_9GetColors_20response_from_sm
  *         all_keys = natsort_ints(ans)
  *         maxlen = max(map(len, all_keys))
  *         return '\n'.join(('{:%ds} {}' % maxlen).format(key, color_as_sharp(ans[key])) for key in all_keys)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_20response_from_smelly_genexpr(PyObject *__pyx_self) {
@@ -2291,10 +2291,10 @@ static PyObject *__pyx_gb_6smelly_2rc_10get_colors_9GetColors_20response_from_sm
 
 /* "smelly/rc/get_colors.py":42
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
 
 static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_smelly(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_boss, PyObject *__pyx_v_window, PyObject *__pyx_v_payload_get) {
@@ -2335,10 +2335,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_sme
   }
 
   /* "smelly/rc/get_colors.py":43
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
  *         from smelly.fast_data_types import get_options             # <<<<<<<<<<<<<<
- * 
+ *
  *         opts = get_options()
  */
   __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
@@ -2358,7 +2358,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_sme
 
   /* "smelly/rc/get_colors.py":45
  *         from smelly.fast_data_types import get_options
- * 
+ *
  *         opts = get_options()             # <<<<<<<<<<<<<<
  *         ans = {k: getattr(opts, k) for k in opts if isinstance(getattr(opts, k), Color)}
  *         if not payload_get('configured'):
@@ -2383,7 +2383,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_sme
   __pyx_t_2 = 0;
 
   /* "smelly/rc/get_colors.py":46
- * 
+ *
  *         opts = get_options()
  *         ans = {k: getattr(opts, k) for k in opts if isinstance(getattr(opts, k), Color)}             # <<<<<<<<<<<<<<
  *         if not payload_get('configured'):
@@ -2649,11 +2649,11 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_sme
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
-            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-            __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+            __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+            __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
           } else {
-            __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-            __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+            __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+            __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
           }
           __Pyx_INCREF(__pyx_t_3);
           __Pyx_INCREF(__pyx_t_6);
@@ -2915,7 +2915,7 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_sme
  *         all_keys = natsort_ints(ans)
  *         maxlen = max(map(len, all_keys))             # <<<<<<<<<<<<<<
  *         return '\n'.join(('{:%ds} {}' % maxlen).format(key, color_as_sharp(ans[key])) for key in all_keys)
- * 
+ *
  */
   __pyx_t_1 = __Pyx_GetBuiltinName(__pyx_n_s_len); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -2941,8 +2941,8 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_sme
  *         all_keys = natsort_ints(ans)
  *         maxlen = max(map(len, all_keys))
  *         return '\n'.join(('{:%ds} {}' % maxlen).format(key, color_as_sharp(ans[key])) for key in all_keys)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_6 = __pyx_pf_6smelly_2rc_10get_colors_9GetColors_20response_from_smelly_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 61, __pyx_L1_error)
@@ -2956,10 +2956,10 @@ static PyObject *__pyx_pf_6smelly_2rc_10get_colors_9GetColors_2response_from_sme
 
   /* "smelly/rc/get_colors.py":42
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
 
   /* function exit code */
@@ -3387,10 +3387,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/get_colors.py":39
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_global_opts, __pyx_n_s_opts, __pyx_n_s_args); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -3399,10 +3399,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "smelly/rc/get_colors.py":42
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(17, __pyx_n_s_self, __pyx_n_s_boss, __pyx_n_s_window, __pyx_n_s_payload_get, __pyx_n_s_get_options, __pyx_n_s_opts, __pyx_n_s_ans, __pyx_n_s_windows, __pyx_n_s_k, __pyx_n_s_v, __pyx_n_s_tab, __pyx_n_s_tm, __pyx_n_s_all_keys, __pyx_n_s_maxlen, __pyx_n_s_k, __pyx_n_s_genexpr, __pyx_n_s_genexpr); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -3719,9 +3719,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_colors.py":4
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  * from typing import TYPE_CHECKING, Optional             # <<<<<<<<<<<<<<
- * 
+ *
  * from smelly.fast_data_types import Color
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -3747,7 +3747,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_colors.py":6
  * from typing import TYPE_CHECKING, Optional
- * 
+ *
  * from smelly.fast_data_types import Color             # <<<<<<<<<<<<<<
  * from smelly.rgb import color_as_sharp, color_from_int
  * from smelly.utils import natsort_ints
@@ -3767,11 +3767,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "smelly/rc/get_colors.py":7
- * 
+ *
  * from smelly.fast_data_types import Color
  * from smelly.rgb import color_as_sharp, color_from_int             # <<<<<<<<<<<<<<
  * from smelly.utils import natsort_ints
- * 
+ *
  */
   __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -3798,7 +3798,7 @@ if (!__Pyx_RefNanny) {
  * from smelly.fast_data_types import Color
  * from smelly.rgb import color_as_sharp, color_from_int
  * from smelly.utils import natsort_ints             # <<<<<<<<<<<<<<
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
@@ -3817,9 +3817,9 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_colors.py":10
  * from smelly.utils import natsort_ints
- * 
+ *
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window             # <<<<<<<<<<<<<<
- * 
+ *
  * if TYPE_CHECKING:
  */
   __pyx_t_1 = PyList_New(9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
@@ -3894,10 +3894,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_colors.py":12
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import GetColorsRCOptions as CLIOptions
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_TYPE_CHECKING); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3906,11 +3906,11 @@ if (!__Pyx_RefNanny) {
   if (__pyx_t_3) {
 
     /* "smelly/rc/get_colors.py":13
- * 
+ *
  * if TYPE_CHECKING:
  *     from smelly.cli_stub import GetColorsRCOptions as CLIOptions             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
@@ -3928,16 +3928,16 @@ if (!__Pyx_RefNanny) {
 
     /* "smelly/rc/get_colors.py":12
  * from .base import MATCH_WINDOW_OPTION, ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, RemoteCommand, ResponseType, Window
- * 
+ *
  * if TYPE_CHECKING:             # <<<<<<<<<<<<<<
  *     from smelly.cli_stub import GetColorsRCOptions as CLIOptions
- * 
+ *
  */
   }
 
   /* "smelly/rc/get_colors.py":16
- * 
- * 
+ *
+ *
  * class GetColors(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The window to get the colors for
@@ -3955,7 +3955,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_4);
 
   /* "smelly/rc/get_colors.py":17
- * 
+ *
  * class GetColors(RemoteCommand):
  *     protocol_spec = __doc__ = '''             # <<<<<<<<<<<<<<
  *     match/str: The window to get the colors for
@@ -3966,7 +3966,7 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_colors.py":22
  *     '''
- * 
+ *
  *     short_desc = 'Get terminal colors'             # <<<<<<<<<<<<<<
  *     desc = (
  *         'Get the terminal colors for the specified window (defaults to active window).'
@@ -3983,7 +3983,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_n_s_desc, __pyx_kp_s_Get_the_terminal_colors_for_the) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
   /* "smelly/rc/get_colors.py":35
- * 
+ *
  * '''
  *         + '\n\n'             # <<<<<<<<<<<<<<
  *         + MATCH_WINDOW_OPTION
@@ -3997,7 +3997,7 @@ if (!__Pyx_RefNanny) {
  *         + '\n\n'
  *         + MATCH_WINDOW_OPTION             # <<<<<<<<<<<<<<
  *     )
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_MATCH_WINDOW_OPTION); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -4010,10 +4010,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_colors.py":39
  *     )
- * 
+ *
  *     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:             # <<<<<<<<<<<<<<
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  */
   __pyx_t_7 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
@@ -4039,10 +4039,10 @@ if (!__Pyx_RefNanny) {
 
   /* "smelly/rc/get_colors.py":42
  *         return {'configured': opts.configured, 'match': opts.match}
- * 
+ *
  *     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:             # <<<<<<<<<<<<<<
  *         from smelly.fast_data_types import get_options
- * 
+ *
  */
   __pyx_t_6 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 42, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
@@ -4076,8 +4076,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
   /* "smelly/rc/get_colors.py":16
- * 
- * 
+ *
+ *
  * class GetColors(RemoteCommand):             # <<<<<<<<<<<<<<
  *     protocol_spec = __doc__ = '''
  *     match/str: The window to get the colors for
@@ -4091,8 +4091,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "smelly/rc/get_colors.py":67
- * 
- * 
+ *
+ *
  * get_colors = GetColors()             # <<<<<<<<<<<<<<
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_GetColors); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
@@ -4106,7 +4106,7 @@ if (!__Pyx_RefNanny) {
   /* "smelly/rc/get_colors.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<
  * # License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
- * 
+ *
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

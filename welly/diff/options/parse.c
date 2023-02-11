@@ -1750,11 +1750,11 @@ static PyObject *__pyx_codeobj__60;
 /* Late includes */
 
 /* "welly/diff/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -1853,7 +1853,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_added_bg(CYTHON_U
  * class Parser:
  *     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['added_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def added_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
@@ -1877,11 +1877,11 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_added_bg(CYTHON_U
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -1901,10 +1901,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_added_bg(CYTHON_U
 
 /* "welly/diff/options/parse.py":13
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  *     def added_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2000,10 +2000,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_2added_margin_bg(
   __Pyx_RefNannySetupContext("added_margin_bg", 0);
 
   /* "welly/diff/options/parse.py":14
- * 
+ *
  *     def added_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['added_margin_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def background(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
@@ -2028,10 +2028,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_2added_margin_bg(
 
   /* "welly/diff/options/parse.py":13
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  *     def added_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2051,10 +2051,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_2added_margin_bg(
 
 /* "welly/diff/options/parse.py":16
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  *     def background(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['background'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2150,10 +2150,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_4background(CYTHO
   __Pyx_RefNannySetupContext("background", 0);
 
   /* "welly/diff/options/parse.py":17
- * 
+ *
  *     def background(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['background'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def diff_cmd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
@@ -2178,10 +2178,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_4background(CYTHO
 
   /* "welly/diff/options/parse.py":16
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  *     def background(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['background'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2201,10 +2201,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_4background(CYTHO
 
 /* "welly/diff/options/parse.py":19
  *         ans['background'] = to_color(val)
- * 
+ *
  *     def diff_cmd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2298,10 +2298,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_6diff_cmd(CYTHON_
   __Pyx_RefNannySetupContext("diff_cmd", 0);
 
   /* "welly/diff/options/parse.py":20
- * 
+ *
  *     def diff_cmd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['diff_cmd'] = str(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
@@ -2311,10 +2311,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_6diff_cmd(CYTHON_
 
   /* "welly/diff/options/parse.py":19
  *         ans['background'] = to_color(val)
- * 
+ *
  *     def diff_cmd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2332,10 +2332,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_6diff_cmd(CYTHON_
 
 /* "welly/diff/options/parse.py":22
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  *     def filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2431,10 +2431,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_8filler_bg(CYTHON
   __Pyx_RefNannySetupContext("filler_bg", 0);
 
   /* "welly/diff/options/parse.py":23
- * 
+ *
  *     def filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['filler_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def foreground(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 23, __pyx_L1_error)
@@ -2459,10 +2459,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_8filler_bg(CYTHON
 
   /* "welly/diff/options/parse.py":22
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  *     def filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2482,10 +2482,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_8filler_bg(CYTHON
 
 /* "welly/diff/options/parse.py":25
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  *     def foreground(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['foreground'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2581,10 +2581,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_10foreground(CYTH
   __Pyx_RefNannySetupContext("foreground", 0);
 
   /* "welly/diff/options/parse.py":26
- * 
+ *
  *     def foreground(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['foreground'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def highlight_added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
@@ -2609,10 +2609,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_10foreground(CYTH
 
   /* "welly/diff/options/parse.py":25
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  *     def foreground(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['foreground'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2632,10 +2632,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_10foreground(CYTH
 
 /* "welly/diff/options/parse.py":28
  *         ans['foreground'] = to_color(val)
- * 
+ *
  *     def highlight_added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2731,10 +2731,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_12highlight_added
   __Pyx_RefNannySetupContext("highlight_added_bg", 0);
 
   /* "welly/diff/options/parse.py":29
- * 
+ *
  *     def highlight_added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['highlight_added_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def highlight_removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
@@ -2759,10 +2759,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_12highlight_added
 
   /* "welly/diff/options/parse.py":28
  *         ans['foreground'] = to_color(val)
- * 
+ *
  *     def highlight_added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2782,10 +2782,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_12highlight_added
 
 /* "welly/diff/options/parse.py":31
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  *     def highlight_removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -2881,10 +2881,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_14highlight_remov
   __Pyx_RefNannySetupContext("highlight_removed_bg", 0);
 
   /* "welly/diff/options/parse.py":32
- * 
+ *
  *     def highlight_removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['highlight_removed_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def hunk_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
@@ -2909,10 +2909,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_14highlight_remov
 
   /* "welly/diff/options/parse.py":31
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  *     def highlight_removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -2932,10 +2932,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_14highlight_remov
 
 /* "welly/diff/options/parse.py":34
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  *     def hunk_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3031,10 +3031,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_16hunk_bg(CYTHON_
   __Pyx_RefNannySetupContext("hunk_bg", 0);
 
   /* "welly/diff/options/parse.py":35
- * 
+ *
  *     def hunk_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['hunk_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def hunk_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
@@ -3059,10 +3059,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_16hunk_bg(CYTHON_
 
   /* "welly/diff/options/parse.py":34
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  *     def hunk_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3082,10 +3082,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_16hunk_bg(CYTHON_
 
 /* "welly/diff/options/parse.py":37
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  *     def hunk_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3181,10 +3181,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_18hunk_margin_bg(
   __Pyx_RefNannySetupContext("hunk_margin_bg", 0);
 
   /* "welly/diff/options/parse.py":38
- * 
+ *
  *     def hunk_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['hunk_margin_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
@@ -3209,10 +3209,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_18hunk_margin_bg(
 
   /* "welly/diff/options/parse.py":37
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  *     def hunk_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3232,7 +3232,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_18hunk_margin_bg(
 
 /* "welly/diff/options/parse.py":40
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in store_multiple(val, ans["ignore_name"]):
  *             ans["ignore_name"][k] = v
@@ -3339,11 +3339,11 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_20ignore_name(CYT
   __Pyx_RefNannySetupContext("ignore_name", 0);
 
   /* "welly/diff/options/parse.py":41
- * 
+ *
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in store_multiple(val, ans["ignore_name"]):             # <<<<<<<<<<<<<<
  *             ans["ignore_name"][k] = v
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_store_multiple); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -3446,11 +3446,11 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_20ignore_name(CYT
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_3);
@@ -3491,7 +3491,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_20ignore_name(CYT
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in store_multiple(val, ans["ignore_name"]):
  *             ans["ignore_name"][k] = v             # <<<<<<<<<<<<<<
- * 
+ *
  *     def margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
     __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_ans, __pyx_n_s_ignore_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 42, __pyx_L1_error)
@@ -3500,18 +3500,18 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_20ignore_name(CYT
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/diff/options/parse.py":41
- * 
+ *
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k, v in store_multiple(val, ans["ignore_name"]):             # <<<<<<<<<<<<<<
  *             ans["ignore_name"][k] = v
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/options/parse.py":40
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in store_multiple(val, ans["ignore_name"]):
  *             ans["ignore_name"][k] = v
@@ -3538,10 +3538,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_20ignore_name(CYT
 
 /* "welly/diff/options/parse.py":44
  *             ans["ignore_name"][k] = v
- * 
+ *
  *     def margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3637,10 +3637,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_22margin_bg(CYTHO
   __Pyx_RefNannySetupContext("margin_bg", 0);
 
   /* "welly/diff/options/parse.py":45
- * 
+ *
  *     def margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['margin_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def margin_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
@@ -3665,10 +3665,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_22margin_bg(CYTHO
 
   /* "welly/diff/options/parse.py":44
  *             ans["ignore_name"][k] = v
- * 
+ *
  *     def margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3688,10 +3688,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_22margin_bg(CYTHO
 
 /* "welly/diff/options/parse.py":47
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  *     def margin_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3787,10 +3787,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_24margin_fg(CYTHO
   __Pyx_RefNannySetupContext("margin_fg", 0);
 
   /* "welly/diff/options/parse.py":48
- * 
+ *
  *     def margin_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['margin_fg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def margin_filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
@@ -3815,10 +3815,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_24margin_fg(CYTHO
 
   /* "welly/diff/options/parse.py":47
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  *     def margin_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3838,10 +3838,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_24margin_fg(CYTHO
 
 /* "welly/diff/options/parse.py":50
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  *     def margin_filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -3937,10 +3937,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_26margin_filler_b
   __Pyx_RefNannySetupContext("margin_filler_bg", 0);
 
   /* "welly/diff/options/parse.py":51
- * 
+ *
  *     def margin_filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['margin_filler_bg'] = to_color_or_none(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def num_context_lines(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color_or_none); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
@@ -3965,10 +3965,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_26margin_filler_b
 
   /* "welly/diff/options/parse.py":50
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  *     def margin_filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -3988,10 +3988,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_26margin_filler_b
 
 /* "welly/diff/options/parse.py":53
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  *     def num_context_lines(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4087,10 +4087,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_28num_context_lin
   __Pyx_RefNannySetupContext("num_context_lines", 0);
 
   /* "welly/diff/options/parse.py":54
- * 
+ *
  *     def num_context_lines(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['num_context_lines'] = positive_int(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def pygments_style(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_positive_int); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
@@ -4115,10 +4115,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_28num_context_lin
 
   /* "welly/diff/options/parse.py":53
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  *     def num_context_lines(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -4138,10 +4138,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_28num_context_lin
 
 /* "welly/diff/options/parse.py":56
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  *     def pygments_style(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['pygments_style'] = str(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4235,10 +4235,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_30pygments_style(
   __Pyx_RefNannySetupContext("pygments_style", 0);
 
   /* "welly/diff/options/parse.py":57
- * 
+ *
  *     def pygments_style(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['pygments_style'] = str(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __pyx_t_1 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyString_Type)), __pyx_v_val); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
@@ -4248,10 +4248,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_30pygments_style(
 
   /* "welly/diff/options/parse.py":56
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  *     def pygments_style(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['pygments_style'] = str(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -4269,10 +4269,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_30pygments_style(
 
 /* "welly/diff/options/parse.py":59
  *         ans['pygments_style'] = str(val)
- * 
+ *
  *     def removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4368,10 +4368,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_32removed_bg(CYTH
   __Pyx_RefNannySetupContext("removed_bg", 0);
 
   /* "welly/diff/options/parse.py":60
- * 
+ *
  *     def removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['removed_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def removed_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
@@ -4396,10 +4396,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_32removed_bg(CYTH
 
   /* "welly/diff/options/parse.py":59
  *         ans['pygments_style'] = str(val)
- * 
+ *
  *     def removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -4419,10 +4419,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_32removed_bg(CYTH
 
 /* "welly/diff/options/parse.py":62
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  *     def removed_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4518,10 +4518,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_34removed_margin_
   __Pyx_RefNannySetupContext("removed_margin_bg", 0);
 
   /* "welly/diff/options/parse.py":63
- * 
+ *
  *     def removed_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['removed_margin_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def replace_tab_by(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
@@ -4546,10 +4546,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_34removed_margin_
 
   /* "welly/diff/options/parse.py":62
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  *     def removed_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -4569,10 +4569,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_34removed_margin_
 
 /* "welly/diff/options/parse.py":65
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  *     def replace_tab_by(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4668,10 +4668,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_36replace_tab_by(
   __Pyx_RefNannySetupContext("replace_tab_by", 0);
 
   /* "welly/diff/options/parse.py":66
- * 
+ *
  *     def replace_tab_by(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['replace_tab_by'] = python_string(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def search_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_python_string); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
@@ -4696,10 +4696,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_36replace_tab_by(
 
   /* "welly/diff/options/parse.py":65
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  *     def replace_tab_by(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -4719,10 +4719,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_36replace_tab_by(
 
 /* "welly/diff/options/parse.py":68
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  *     def search_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4818,10 +4818,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_38search_bg(CYTHO
   __Pyx_RefNannySetupContext("search_bg", 0);
 
   /* "welly/diff/options/parse.py":69
- * 
+ *
  *     def search_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['search_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def search_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
@@ -4846,10 +4846,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_38search_bg(CYTHO
 
   /* "welly/diff/options/parse.py":68
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  *     def search_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -4869,10 +4869,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_38search_bg(CYTHO
 
 /* "welly/diff/options/parse.py":71
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  *     def search_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -4968,10 +4968,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_40search_fg(CYTHO
   __Pyx_RefNannySetupContext("search_fg", 0);
 
   /* "welly/diff/options/parse.py":72
- * 
+ *
  *     def search_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['search_fg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def select_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
@@ -4996,10 +4996,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_40search_fg(CYTHO
 
   /* "welly/diff/options/parse.py":71
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  *     def search_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -5019,10 +5019,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_40search_fg(CYTHO
 
 /* "welly/diff/options/parse.py":74
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  *     def select_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5118,10 +5118,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_42select_bg(CYTHO
   __Pyx_RefNannySetupContext("select_bg", 0);
 
   /* "welly/diff/options/parse.py":75
- * 
+ *
  *     def select_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['select_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def select_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
@@ -5146,10 +5146,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_42select_bg(CYTHO
 
   /* "welly/diff/options/parse.py":74
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  *     def select_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -5169,10 +5169,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_42select_bg(CYTHO
 
 /* "welly/diff/options/parse.py":77
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  *     def select_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5268,10 +5268,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_44select_fg(CYTHO
   __Pyx_RefNannySetupContext("select_fg", 0);
 
   /* "welly/diff/options/parse.py":78
- * 
+ *
  *     def select_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['select_fg'] = to_color_or_none(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def syntax_aliases(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color_or_none); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
@@ -5296,10 +5296,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_44select_fg(CYTHO
 
   /* "welly/diff/options/parse.py":77
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  *     def select_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -5319,10 +5319,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_44select_fg(CYTHO
 
 /* "welly/diff/options/parse.py":80
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  *     def syntax_aliases(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5418,10 +5418,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_46syntax_aliases(
   __Pyx_RefNannySetupContext("syntax_aliases", 0);
 
   /* "welly/diff/options/parse.py":81
- * 
+ *
  *     def syntax_aliases(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['syntax_aliases'] = syntax_aliases(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def title_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_syntax_aliases); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
@@ -5446,10 +5446,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_46syntax_aliases(
 
   /* "welly/diff/options/parse.py":80
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  *     def syntax_aliases(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -5469,10 +5469,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_46syntax_aliases(
 
 /* "welly/diff/options/parse.py":83
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  *     def title_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5568,10 +5568,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_48title_bg(CYTHON
   __Pyx_RefNannySetupContext("title_bg", 0);
 
   /* "welly/diff/options/parse.py":84
- * 
+ *
  *     def title_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['title_bg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def title_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 84, __pyx_L1_error)
@@ -5596,10 +5596,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_48title_bg(CYTHON
 
   /* "welly/diff/options/parse.py":83
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  *     def title_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -5619,10 +5619,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_48title_bg(CYTHON
 
 /* "welly/diff/options/parse.py":86
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  *     def title_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  */
 
 /* Python wrapper */
@@ -5718,10 +5718,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_50title_fg(CYTHON
   __Pyx_RefNannySetupContext("title_fg", 0);
 
   /* "welly/diff/options/parse.py":87
- * 
+ *
  *     def title_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['title_fg'] = to_color(val)             # <<<<<<<<<<<<<<
- * 
+ *
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_to_color); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
@@ -5746,10 +5746,10 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_50title_fg(CYTHON
 
   /* "welly/diff/options/parse.py":86
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  *     def title_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  */
 
   /* function exit code */
@@ -5769,7 +5769,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_50title_fg(CYTHON
 
 /* "welly/diff/options/parse.py":89
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k in parse_map(val):
  *             ans['map'].append(k)
@@ -5872,11 +5872,11 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_52map(CYTHON_UNUS
   __Pyx_RefNannySetupContext("map", 0);
 
   /* "welly/diff/options/parse.py":90
- * 
+ *
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k in parse_map(val):             # <<<<<<<<<<<<<<
  *             ans['map'].append(k)
- * 
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_parse_map); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5942,8 +5942,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_52map(CYTHON_UNUS
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k in parse_map(val):
  *             ans['map'].append(k)             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
     __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_ans, __pyx_n_s_map); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -5951,18 +5951,18 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_52map(CYTHON_UNUS
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "welly/diff/options/parse.py":90
- * 
+ *
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         for k in parse_map(val):             # <<<<<<<<<<<<<<
  *             ans['map'].append(k)
- * 
+ *
  */
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "welly/diff/options/parse.py":89
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k in parse_map(val):
  *             ans['map'].append(k)
@@ -5985,8 +5985,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_6Parser_52map(CYTHON_UNUS
 }
 
 /* "welly/diff/options/parse.py":94
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'ignore_name': {},
@@ -6017,7 +6017,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_create_result_dict(CYTHON
   __Pyx_RefNannySetupContext("create_result_dict", 0);
 
   /* "welly/diff/options/parse.py":95
- * 
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:
  *     return {             # <<<<<<<<<<<<<<
  *         'ignore_name': {},
@@ -6044,7 +6044,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_create_result_dict(CYTHON
  *         'ignore_name': {},
  *         'map': [],             # <<<<<<<<<<<<<<
  *     }
- * 
+ *
  */
   __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -6055,8 +6055,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_create_result_dict(CYTHON
   goto __pyx_L0;
 
   /* "welly/diff/options/parse.py":94
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'ignore_name': {},
@@ -6075,8 +6075,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_create_result_dict(CYTHON
 }
 
 /* "welly/diff/options/parse.py":104
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -6173,7 +6173,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_2merge_result_dicts(CYTHO
   __Pyx_RefNannySetupContext("merge_result_dicts", 0);
 
   /* "welly/diff/options/parse.py":105
- * 
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:
  *     ans = {}             # <<<<<<<<<<<<<<
  *     for k, v in defaults.items():
@@ -6258,11 +6258,11 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_2merge_result_dicts(CYTHO
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
-        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyTuple_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyTuple_GET_ITEM(sequence, 1);
       } else {
-        __pyx_t_3 = PyList_GET_ITEM(sequence, 0); 
-        __pyx_t_6 = PyList_GET_ITEM(sequence, 1); 
+        __pyx_t_3 = PyList_GET_ITEM(sequence, 0);
+        __pyx_t_6 = PyList_GET_ITEM(sequence, 1);
       }
       __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_t_6);
@@ -6306,7 +6306,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_2merge_result_dicts(CYTHO
  *             ans[k] = merge_dicts(v, vals.get(k, {}))
  *         elif k in actions:
  */
-    __pyx_t_9 = PyDict_Check(__pyx_v_v); 
+    __pyx_t_9 = PyDict_Check(__pyx_v_v);
     __pyx_t_10 = (__pyx_t_9 != 0);
     if (__pyx_t_10) {
 
@@ -6523,7 +6523,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_2merge_result_dicts(CYTHO
  *         else:
  *             ans[k] = vals.get(k, v)             # <<<<<<<<<<<<<<
  *     return ans
- * 
+ *
  */
     /*else*/ {
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_vals, __pyx_n_s_get); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
@@ -6592,8 +6592,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_2merge_result_dicts(CYTHO
  *         else:
  *             ans[k] = vals.get(k, v)
  *     return ans             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_ans);
@@ -6601,8 +6601,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_2merge_result_dicts(CYTHO
   goto __pyx_L0;
 
   /* "welly/diff/options/parse.py":104
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -6630,8 +6630,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_2merge_result_dicts(CYTHO
 }
 
 /* "welly/diff/options/parse.py":119
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -6736,7 +6736,7 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_4parse_conf_item(CYTHON_U
   __Pyx_RefNannySetupContext("parse_conf_item", 0);
 
   /* "welly/diff/options/parse.py":120
- * 
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:
  *     func = getattr(parser, key, None)             # <<<<<<<<<<<<<<
  *     if func is not None:
@@ -6847,8 +6847,8 @@ static PyObject *__pyx_pf_5welly_4diff_7options_5parse_4parse_conf_item(CYTHON_U
   goto __pyx_L0;
 
   /* "welly/diff/options/parse.py":119
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -7024,11 +7024,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
   /* "welly/diff/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple_ = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
@@ -7037,10 +7037,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":13
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  *     def added_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__3 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
@@ -7049,10 +7049,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":16
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  *     def background(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['background'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__5 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
@@ -7061,10 +7061,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":19
  *         ans['background'] = to_color(val)
- * 
+ *
  *     def diff_cmd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  */
   __pyx_tuple__7 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
@@ -7073,10 +7073,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":22
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  *     def filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__9 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
@@ -7085,10 +7085,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":25
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  *     def foreground(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['foreground'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__11 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
@@ -7097,10 +7097,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":28
  *         ans['foreground'] = to_color(val)
- * 
+ *
  *     def highlight_added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__13 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
@@ -7109,10 +7109,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":31
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  *     def highlight_removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__15 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
@@ -7121,10 +7121,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":34
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  *     def hunk_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__17 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
@@ -7133,10 +7133,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":37
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  *     def hunk_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__19 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
@@ -7145,7 +7145,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":40
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in store_multiple(val, ans["ignore_name"]):
  *             ans["ignore_name"][k] = v
@@ -7157,10 +7157,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":44
  *             ans["ignore_name"][k] = v
- * 
+ *
  *     def margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__23 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
@@ -7169,10 +7169,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":47
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  *     def margin_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__25 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
@@ -7181,10 +7181,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":50
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  *     def margin_filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  */
   __pyx_tuple__27 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
@@ -7193,10 +7193,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":53
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  *     def num_context_lines(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  */
   __pyx_tuple__29 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
@@ -7205,10 +7205,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":56
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  *     def pygments_style(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['pygments_style'] = str(val)
- * 
+ *
  */
   __pyx_tuple__31 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
@@ -7217,10 +7217,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":59
  *         ans['pygments_style'] = str(val)
- * 
+ *
  *     def removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__33 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
@@ -7229,10 +7229,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":62
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  *     def removed_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__35 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
@@ -7241,10 +7241,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":65
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  *     def replace_tab_by(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  */
   __pyx_tuple__37 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
@@ -7253,10 +7253,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":68
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  *     def search_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__39 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__39);
@@ -7265,10 +7265,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":71
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  *     def search_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__41 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__41);
@@ -7277,10 +7277,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":74
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  *     def select_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__43 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__43);
@@ -7289,10 +7289,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":77
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  *     def select_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  */
   __pyx_tuple__45 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
@@ -7301,10 +7301,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":80
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  *     def syntax_aliases(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  */
   __pyx_tuple__47 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__47);
@@ -7313,10 +7313,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":83
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  *     def title_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__49 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__49);
@@ -7325,10 +7325,10 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":86
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  *     def title_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  */
   __pyx_tuple__51 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_val, __pyx_n_s_ans); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__51);
@@ -7337,7 +7337,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "welly/diff/options/parse.py":89
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k in parse_map(val):
  *             ans['map'].append(k)
@@ -7348,8 +7348,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__54 = (PyObject*)__Pyx_PyCode_New(3, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__53, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_parse_py, __pyx_n_s_map, 89, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__54)) __PYX_ERR(0, 89, __pyx_L1_error)
 
   /* "welly/diff/options/parse.py":94
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'ignore_name': {},
@@ -7357,19 +7357,19 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_parse_py, __pyx_n_s_create_result_dict, 94, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 94, __pyx_L1_error)
 
   /* "welly/diff/options/parse.py":101
- * 
- * 
+ *
+ *
  * actions: typing.FrozenSet[str] = frozenset(('map',))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_tuple__56 = PyTuple_Pack(1, __pyx_n_s_map); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__56);
   __Pyx_GIVEREF(__pyx_tuple__56);
 
   /* "welly/diff/options/parse.py":104
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -7380,8 +7380,8 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__58 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__57, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_welly_diff_options_parse_py, __pyx_n_s_merge_result_dicts, 104, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__58)) __PYX_ERR(0, 104, __pyx_L1_error)
 
   /* "welly/diff/options/parse.py":119
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -7673,7 +7673,7 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "welly/diff/options/parse.py":4
- * 
+ *
  * # isort: skip_file
  * import typing             # <<<<<<<<<<<<<<
  * from wellies.diff.options.utils import parse_map, store_multiple, syntax_aliases
@@ -7689,7 +7689,7 @@ if (!__Pyx_RefNanny) {
  * import typing
  * from wellies.diff.options.utils import parse_map, store_multiple, syntax_aliases             # <<<<<<<<<<<<<<
  * from smelly.conf.utils import merge_dicts, positive_int, python_string, to_color, to_color_or_none
- * 
+ *
  */
   __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -7723,8 +7723,8 @@ if (!__Pyx_RefNanny) {
  * import typing
  * from wellies.diff.options.utils import parse_map, store_multiple, syntax_aliases
  * from smelly.conf.utils import merge_dicts, positive_int, python_string, to_color, to_color_or_none             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_2 = PyList_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7769,8 +7769,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/options/parse.py":9
- * 
- * 
+ *
+ *
  * class Parser:             # <<<<<<<<<<<<<<
  *     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['added_bg'] = to_color(val)
@@ -7779,11 +7779,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_GOTREF(__pyx_t_1);
 
   /* "welly/diff/options/parse.py":10
- * 
+ *
  * class Parser:
  *     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7822,10 +7822,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":13
  *         ans['added_bg'] = to_color(val)
- * 
+ *
  *     def added_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -7864,10 +7864,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":16
  *         ans['added_margin_bg'] = to_color(val)
- * 
+ *
  *     def background(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['background'] = to_color(val)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -7906,10 +7906,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":19
  *         ans['background'] = to_color(val)
- * 
+ *
  *     def diff_cmd(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -7948,10 +7948,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":22
  *         ans['diff_cmd'] = str(val)
- * 
+ *
  *     def filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -7990,10 +7990,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":25
  *         ans['filler_bg'] = to_color(val)
- * 
+ *
  *     def foreground(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['foreground'] = to_color(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8032,10 +8032,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":28
  *         ans['foreground'] = to_color(val)
- * 
+ *
  *     def highlight_added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8074,10 +8074,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":31
  *         ans['highlight_added_bg'] = to_color(val)
- * 
+ *
  *     def highlight_removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8116,10 +8116,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":34
  *         ans['highlight_removed_bg'] = to_color(val)
- * 
+ *
  *     def hunk_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8158,10 +8158,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":37
  *         ans['hunk_bg'] = to_color(val)
- * 
+ *
  *     def hunk_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8200,7 +8200,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":40
  *         ans['hunk_margin_bg'] = to_color(val)
- * 
+ *
  *     def ignore_name(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k, v in store_multiple(val, ans["ignore_name"]):
  *             ans["ignore_name"][k] = v
@@ -8242,10 +8242,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":44
  *             ans["ignore_name"][k] = v
- * 
+ *
  *     def margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8284,10 +8284,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":47
  *         ans['margin_bg'] = to_color(val)
- * 
+ *
  *     def margin_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8326,10 +8326,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":50
  *         ans['margin_fg'] = to_color(val)
- * 
+ *
  *     def margin_filler_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8368,10 +8368,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":53
  *         ans['margin_filler_bg'] = to_color_or_none(val)
- * 
+ *
  *     def num_context_lines(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8410,10 +8410,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":56
  *         ans['num_context_lines'] = positive_int(val)
- * 
+ *
  *     def pygments_style(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['pygments_style'] = str(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8452,10 +8452,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":59
  *         ans['pygments_style'] = str(val)
- * 
+ *
  *     def removed_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8494,10 +8494,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":62
  *         ans['removed_bg'] = to_color(val)
- * 
+ *
  *     def removed_margin_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8536,10 +8536,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":65
  *         ans['removed_margin_bg'] = to_color(val)
- * 
+ *
  *     def replace_tab_by(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8578,10 +8578,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":68
  *         ans['replace_tab_by'] = python_string(val)
- * 
+ *
  *     def search_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8620,10 +8620,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":71
  *         ans['search_bg'] = to_color(val)
- * 
+ *
  *     def search_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8662,10 +8662,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":74
  *         ans['search_fg'] = to_color(val)
- * 
+ *
  *     def select_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8704,10 +8704,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":77
  *         ans['select_bg'] = to_color(val)
- * 
+ *
  *     def select_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -8746,10 +8746,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":80
  *         ans['select_fg'] = to_color_or_none(val)
- * 
+ *
  *     def syntax_aliases(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  */
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -8788,10 +8788,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":83
  *         ans['syntax_aliases'] = syntax_aliases(val)
- * 
+ *
  *     def title_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -8830,10 +8830,10 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":86
  *         ans['title_bg'] = to_color(val)
- * 
+ *
  *     def title_fg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  */
   __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8872,7 +8872,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":89
  *         ans['title_fg'] = to_color(val)
- * 
+ *
  *     def map(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:             # <<<<<<<<<<<<<<
  *         for k in parse_map(val):
  *             ans['map'].append(k)
@@ -8913,8 +8913,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "welly/diff/options/parse.py":9
- * 
- * 
+ *
+ *
  * class Parser:             # <<<<<<<<<<<<<<
  *     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
  *         ans['added_bg'] = to_color(val)
@@ -8926,8 +8926,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/options/parse.py":94
- * 
- * 
+ *
+ *
  * def create_result_dict() -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     return {
  *         'ignore_name': {},
@@ -8966,11 +8966,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/parse.py":101
- * 
- * 
+ *
+ *
  * actions: typing.FrozenSet[str] = frozenset(('map',))             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __pyx_t_5 = __Pyx_PyFrozenSet_New(__pyx_tuple__56); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -8978,8 +8978,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/parse.py":104
- * 
- * 
+ *
+ *
  * def merge_result_dicts(defaults: typing.Dict[str, typing.Any], vals: typing.Dict[str, typing.Any]) -> typing.Dict[str, typing.Any]:             # <<<<<<<<<<<<<<
  *     ans = {}
  *     for k, v in defaults.items():
@@ -9066,11 +9066,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "welly/diff/options/parse.py":116
- * 
- * 
+ *
+ *
  * parser = Parser()             # <<<<<<<<<<<<<<
- * 
- * 
+ *
+ *
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Parser); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -9081,8 +9081,8 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "welly/diff/options/parse.py":119
- * 
- * 
+ *
+ *
  * def parse_conf_item(key: str, val: str, ans: typing.Dict[str, typing.Any]) -> bool:             # <<<<<<<<<<<<<<
  *     func = getattr(parser, key, None)
  *     if func is not None:
@@ -9125,7 +9125,7 @@ if (!__Pyx_RefNanny) {
 
   /* "welly/diff/options/parse.py":1
  * # generated by gen-config.py DO NOT edit             # <<<<<<<<<<<<<<
- * 
+ *
  * # isort: skip_file
  */
   __pyx_t_4 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 1, __pyx_L1_error)
