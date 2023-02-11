@@ -5,7 +5,7 @@ env:
     ASAN_OPTIONS: leak_check_at_exit=0
     LC_ALL: en_US.UTF-8
     LANG: en_US.UTF-8
-    GO_INSTALL_VERSION: ">=1.20.0"
+    GO_INSTALL_VERSION: "1.15"
 
 permissions:
   contents: write # to fetch code (actions/checkout)
@@ -13,7 +13,7 @@ permissions:
 jobs:
     linux:
         name: Linux (python=${{ matrix.pyver }} cc=${{ matrix.cc }} sanitize=${{ matrix.sanitize }})
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         env:
             CC: ${{ matrix.cc }}
             smelly_SANITIZE: ${{ matrix.sanitize }}
