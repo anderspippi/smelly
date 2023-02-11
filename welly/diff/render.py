@@ -32,19 +32,16 @@ def images_supported() -> bool:
 
 
 class Ref:
-
     __slots__: Tuple[str, ...] = ()
 
     def __setattr__(self, name: str, value: object) -> None:
         raise AttributeError("can't set attribute")
 
     def __repr__(self) -> str:
-        return '{}({})'.format(self.__class__.__name__, ', '.join(
-            f'{n}={getattr(self, n)}' for n in self.__slots__ if n != '_hash'))
+        return '{}({})'.format(self.__class__.__name__, ', '.join(f'{n}={getattr(self, n)}' for n in self.__slots__ if n != '_hash'))
 
 
 class LineRef(Ref):
-
     __slots__ = ('src_line_number', 'wrapped_line_idx')
     src_line_number: int
     wrapped_line_idx: int
@@ -55,7 +52,6 @@ class LineRef(Ref):
 
 
 class Reference(Ref):
-
     __slots__ = ('path', 'extra')
     path: str
     extra: Optional[LineRef]
@@ -66,15 +62,10 @@ class Reference(Ref):
 
 
 class Line:
-
     __slots__ = ('text', 'ref', 'is_change_start', 'image_data')
 
     def __init__(
-        self,
-        text: str,
-        ref: Reference,
-        change_start: bool = False,
-        image_data: Optional[Tuple[Optional['ImagePlacement'], Optional['ImagePlacement']]] = None
+        self, text: str, ref: Reference, change_start: bool = False, image_data: Optional[Tuple[Optional['ImagePlacement'], Optional['ImagePlacement']]] = None
     ) -> None:
         self.text = text
         self.ref = ref
@@ -89,15 +80,15 @@ def yield_lines_from(iterator: Iterable[str], reference: Reference, is_change_st
 
 
 def human_readable(size: int, sep: str = ' ') -> str:
-    """ Convert a size in bytes into a human readable form """
+    """Convert a size in bytes into a human readable form"""
     divisor, suffix = 1, "B"
     for i, candidate in enumerate(('B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB')):
         if size < (1 << ((i + 1) * 10)):
             divisor, suffix = (1 << (i * 10)), candidate
             break
-    s = str(float(size)/divisor)
+    s = str(float(size) / divisor)
     if s.find(".") > -1:
-        s = s[:s.find(".")+2]
+        s = s[: s.find(".") + 2]
     if s.endswith('.0'):
         s = s[:-2]
     return f'{s}{sep}{suffix}'
@@ -127,6 +118,7 @@ def format_func(which: str) -> Callable[[str], str]:
     def formatted(text: str) -> str:
         fmt = formats[which]
         return f'\x1b[{fmt}m{text}\x1b[0m'
+
     formatted.__name__ = f'{which}_format'
     return formatted
 
@@ -218,7 +210,6 @@ text_bg_map = {'filler': filler_format, 'remove': removed_format, 'add': added_f
 
 
 class DiffData:
-
     def __init__(self, left_path: str, right_path: str, available_cols: int, margin_size: int):
         self.left_path, self.right_path = left_path, right_path
         self.available_cols = available_cols
@@ -248,15 +239,20 @@ def render_diff_line(number: Optional[str], text: str, ltype: str, margin_size: 
 
 
 def render_diff_pair(
-    left_line_number: Optional[str], left: str, left_is_change: bool,
-    right_line_number: Optional[str], right: str, right_is_change: bool,
-    is_first: bool, margin_size: int, available_cols: int
+    left_line_number: Optional[str],
+    left: str,
+    left_is_change: bool,
+    right_line_number: Optional[str],
+    right: str,
+    right_is_change: bool,
+    is_first: bool,
+    margin_size: int,
+    available_cols: int,
 ) -> str:
     ltype = 'filler' if left_line_number is None else ('remove' if left_is_change else 'context')
     rtype = 'filler' if right_line_number is None else ('add' if right_is_change else 'context')
-    return (
-            render_diff_line(left_line_number if is_first else None, left, ltype, margin_size, available_cols) +
-            render_diff_line(right_line_number if is_first else None, right, rtype, margin_size, available_cols)
+    return render_diff_line(left_line_number if is_first else None, left, ltype, margin_size, available_cols) + render_diff_line(
+        right_line_number if is_first else None, right, rtype, margin_size, available_cols
     )
 
 
@@ -267,13 +263,7 @@ def hunk_title(hunk_num: int, hunk: Hunk, margin_size: int, available_cols: int)
 
 
 def render_half_line(
-    line_number: int,
-    line: str,
-    highlights: List[Segment],
-    ltype: str,
-    margin_size: int,
-    available_cols: int,
-    changed_center: Optional[Tuple[int, int]] = None
+    line_number: int, line: str, highlights: List[Segment], ltype: str, margin_size: int, available_cols: int, changed_center: Optional[Tuple[int, int]] = None
 ) -> Generator[str, None, None]:
     bg_highlight: Optional[Segment] = None
     if changed_center is not None and changed_center[0]:
@@ -323,17 +313,31 @@ def lines_for_chunk(data: DiffData, hunk_num: int, chunk: Chunk, chunk_num: int)
             rl: List[str] = []
             if i < chunk.left_count:
                 rln = ref_ln = chunk.left_start + i
-                ll.extend(render_half_line(
-                    rln, data.left_lines[rln], data.left_highlights_for_line(rln),
-                    'remove', data.margin_size, data.available_cols,
-                    None if chunk.centers is None else chunk.centers[i]))
+                ll.extend(
+                    render_half_line(
+                        rln,
+                        data.left_lines[rln],
+                        data.left_highlights_for_line(rln),
+                        'remove',
+                        data.margin_size,
+                        data.available_cols,
+                        None if chunk.centers is None else chunk.centers[i],
+                    )
+                )
                 ref_path = data.left_path
             if i < chunk.right_count:
                 rln = ref_ln = chunk.right_start + i
-                rl.extend(render_half_line(
-                    rln, data.right_lines[rln], data.right_highlights_for_line(rln),
-                    'add', data.margin_size, data.available_cols,
-                    None if chunk.centers is None else chunk.centers[i]))
+                rl.extend(
+                    render_half_line(
+                        rln,
+                        data.right_lines[rln],
+                        data.right_highlights_for_line(rln),
+                        'add',
+                        data.margin_size,
+                        data.available_cols,
+                        None if chunk.centers is None else chunk.centers[i],
+                    )
+                )
                 ref_path = data.right_path
             if i < common:
                 extra = len(ll) - len(rl)
@@ -383,22 +387,20 @@ def all_lines(path: str, args: DiffCLIOptions, columns: int, margin_size: int, i
             empty = filler
             if not msg_written:
                 msg_written = True
-                empty = render_diff_line(
-                        '', _('This file was added') if is_add else _('This file was removed'),
-                        'filler', margin_size, available_cols)
+                empty = render_diff_line('', _('This file was added') if is_add else _('This file was removed'), 'filler', margin_size, available_cols)
             text = (empty + hl) if is_add else (hl + empty)
             yield Line(text, ref, line_number == 0 and i == 0)
 
 
 def rename_lines(path: str, other_path: str, args: DiffCLIOptions, columns: int, margin_size: int) -> Generator[str, None, None]:
     m = ' ' * margin_size
-    for line in split_to_size(_('The file {0} was renamed to {1}').format(
-            sanitize(path_name_map[path]), sanitize(path_name_map[other_path])), columns - margin_size):
+    for line in split_to_size(
+        _('The file {0} was renamed to {1}').format(sanitize(path_name_map[path]), sanitize(path_name_map[other_path])), columns - margin_size
+    ):
         yield m + line
 
 
 class Image:
-
     def __init__(self, image_id: int, width: int, height: int, margin_size: int, screen_size: ScreenSize) -> None:
         self.image_id = image_id
         self.width, self.height = width, height
@@ -408,17 +410,13 @@ class Image:
 
 
 class ImagePlacement:
-
     def __init__(self, image: Image, row: int) -> None:
         self.image = image
         self.row = row
 
 
 def render_image(
-    path: str,
-    is_left: bool,
-    available_cols: int, margin_size: int,
-    image_manager: ImageManager
+    path: str, is_left: bool, available_cols: int, margin_size: int, image_manager: ImageManager
 ) -> Generator[Tuple[str, Reference, Optional[ImagePlacement]], None, None]:
     lnum = 0
     margin_fmt = removed_margin_format if is_left else added_margin_format
@@ -437,8 +435,7 @@ def render_image(
         yield from yield_split(_('Failed to render image, with error:'))
         yield from yield_split(' '.join(str(e).splitlines()))
         return
-    meta = _('Dimensions: {0}x{1} pixels Size: {2}').format(
-            width, height, human_readable(len(data_for_path(path))))
+    meta = _('Dimensions: {0}x{1} pixels Size: {2}').format(width, height, human_readable(len(data_for_path(path))))
     yield from yield_split(meta)
     bg_line = m + fmt(' ' * available_cols)
     img = Image(image_id, width, height, margin_size, image_manager.screen_size)
@@ -448,11 +445,7 @@ def render_image(
 
 
 def image_lines(
-    left_path: Optional[str],
-    right_path: Optional[str],
-    columns: int,
-    margin_size: int,
-    image_manager: ImageManager
+    left_path: Optional[str], right_path: Optional[str], columns: int, margin_size: int, image_manager: ImageManager
 ) -> Generator[Line, None, None]:
     available_cols = columns // 2 - margin_size
     left_lines: Iterable[Tuple[str, Reference, Optional[ImagePlacement]]] = iter(())
@@ -480,16 +473,10 @@ def image_lines(
 
 
 class RenderDiff:
-
     margin_size: int = 0
 
     def __call__(
-        self,
-        collection: Collection,
-        diff_map: Dict[str, Patch],
-        args: DiffCLIOptions,
-        columns: int,
-        image_manager: ImageManager
+        self, collection: Collection, diff_map: Dict[str, Patch], args: DiffCLIOptions, columns: int, image_manager: ImageManager
     ) -> Generator[Line, None, None]:
         largest_line_number = 0
         for path, item_type, other_path in collection:

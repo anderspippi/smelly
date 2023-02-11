@@ -62,7 +62,6 @@ def parse_colors(args: Iterable[str]) -> Dict[str, Optional[int]]:
 
 
 class SetColors(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers or null for nullable colors
     match_window/str: Window to change colors in
@@ -80,7 +79,8 @@ class SetColors(RemoteCommand):
         ' for example::\n\n'
         '    smelly @ set-colors foreground=red background=white'
     )
-    options_spec = '''\
+    options_spec = (
+        '''\
 --all -a
 type=bool-set
 By default, colors are only changed for the currently active window. This option will
@@ -97,9 +97,18 @@ windows or after a reset).
 type=bool-set
 Restore all colors to the values they had at smelly startup. Note that if you specify
 this option, any color arguments are ignored and :option:`smelly @ set-colors --configured` and :option:`smelly @ set-colors --all` are implied.
-''' + '\n\n' + MATCH_WINDOW_OPTION + '\n\n' + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
-    args = RemoteCommand.Args(spec='COLOR_OR_FILE ...', json_field='colors', special_parse='parse_colors_and_files(args)',
-                              completion=RemoteCommand.CompletionSpec.from_string('type:file group:"CONF files", ext:conf'))
+'''
+        + '\n\n'
+        + MATCH_WINDOW_OPTION
+        + '\n\n'
+        + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
+    )
+    args = RemoteCommand.Args(
+        spec='COLOR_OR_FILE ...',
+        json_field='colors',
+        special_parse='parse_colors_and_files(args)',
+        completion=RemoteCommand.CompletionSpec.from_string('type:file group:"CONF files", ext:conf'),
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         final_colors: Dict[str, Optional[int]] = {}
@@ -111,9 +120,12 @@ this option, any color arguments are ignored and :option:`smelly @ set-colors --
             except Exception as err:
                 raise ParsingOfArgsFailed(str(err)) from err
         ans = {
-            'match_window': opts.match, 'match_tab': opts.match_tab,
-            'all': opts.all or opts.reset, 'configured': opts.configured or opts.reset,
-            'colors': final_colors, 'reset': opts.reset,
+            'match_window': opts.match,
+            'match_tab': opts.match_tab,
+            'all': opts.all or opts.reset,
+            'configured': opts.configured or opts.reset,
+            'colors': final_colors,
+            'reset': opts.reset,
         }
         return ans
 

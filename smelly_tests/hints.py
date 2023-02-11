@@ -7,9 +7,9 @@ from . import BaseTest
 
 
 class TestHints(BaseTest):
-
     def test_url_hints(self):
         from wellies.hints.main import Mark, convert_text, functions_for, linenum_marks, linenum_process_result, mark, parse_hints_args, process_escape_codes
+
         args = parse_hints_args([])[0]
         pattern, post_processors = functions_for(args)
 
@@ -35,7 +35,6 @@ class TestHints(BaseTest):
         t('\x1b[mhttp://test.me/12345\r\x1b[m6\n\x1b[mx', 'http://test.me/123456')
 
         def m(text, path, line, cols=20):
-
             def adapt(pattern, postprocessors, text, *a):
                 return linenum_marks(text, args, Mark, ())
 
@@ -53,6 +52,7 @@ class TestHints(BaseTest):
 
     def test_ip_hints(self):
         from wellies.hints.main import convert_text, functions_for, mark, parse_hints_args
+
         args = parse_hints_args(['--type', 'ip'])[0]
         pattern, post_processors = functions_for(args)
 

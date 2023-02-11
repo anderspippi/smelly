@@ -31,12 +31,11 @@ def create_lbuf(*lines):
     for i, l0 in enumerate(lines):
         ans.line(i).set_text(l0, 0, len(l0), C())
         if i > 0:
-            ans.set_continued(i, len(lines[i-1]) == maxw)
+            ans.set_continued(i, len(lines[i - 1]) == maxw)
     return ans
 
 
 class TestDataTypes(BaseTest):
-
     def test_to_color(self):
         for x in 'xxx #12 #1234 rgb:a/b'.split():
             self.assertIsNone(to_color(x))
@@ -48,13 +47,13 @@ class TestDataTypes(BaseTest):
             self.ae(c.blue, b)
             self.ae(c.alpha, a)
 
-        c('#eee', 0xee, 0xee, 0xee)
+        c('#eee', 0xEE, 0xEE, 0xEE)
         c('#234567', 0x23, 0x45, 0x67)
-        c('#abcabcdef', 0xab, 0xab, 0xde)
-        c('rgb:e/e/e', 0xee, 0xee, 0xee)
+        c('#abcabcdef', 0xAB, 0xAB, 0xDE)
+        c('rgb:e/e/e', 0xEE, 0xEE, 0xEE)
         c('rgb:23/45/67', 0x23, 0x45, 0x67)
-        c('rgb:abc/abc/def', 0xab, 0xab, 0xde)
-        c('red', 0xff)
+        c('rgb:abc/abc/def', 0xAB, 0xAB, 0xDE)
+        c('red', 0xFF)
         self.ae(int(Color(1, 2, 3)), 0x10203)
         base = Color(12, 12, 12)
         a = Color(23, 23, 23)
@@ -286,6 +285,7 @@ class TestDataTypes(BaseTest):
                 self.ae(lf.url_start_at(i), len(lf))
             for i in range(n, len(lf)):
                 self.ae(lf.url_start_at(i), n)
+
         for i in range(7):
             for scheme in 'http https ftp file'.split():
                 lspace_test(i, scheme)
@@ -299,6 +299,7 @@ class TestDataTypes(BaseTest):
             lf = create(t)
             for s in range(len(lf)):
                 self.ae(lf.url_start_at(s), len(lf))
+
         no_url('https:// testing.me a')
         no_url('h ttp://acme.com')
         no_url('http: //acme.com')
@@ -321,7 +322,7 @@ class TestDataTypes(BaseTest):
         return hb, cy[1]
 
     def test_rewrap_simple(self):
-        ' Same width buffers '
+        'Same width buffers'
         lb = filled_line_buf(5, 5)
         lb2 = LineBuf(lb.ynum, lb.xnum)
         self.rewrap(lb, lb2)
@@ -358,7 +359,7 @@ class TestDataTypes(BaseTest):
         self.ae(list(vals), [lb.is_continued(i) for i in range(len(vals))])
 
     def test_rewrap_wider(self):
-        ' New buffer wider '
+        'New buffer wider'
         lb = create_lbuf('0123 ', '56789')
         lb2 = self.line_comparison_rewrap(lb, '0123 5', '6789', '')
         self.assertContinued(lb2, False, True)
@@ -369,7 +370,7 @@ class TestDataTypes(BaseTest):
         self.assertContinued(lb2, False, False)
 
     def test_rewrap_narrower(self):
-        ' New buffer narrower '
+        'New buffer narrower'
         lb = create_lbuf('123', 'abcde')
         lb2 = self.line_comparison_rewrap(lb, '123', 'abc', 'de')
         self.assertContinued(lb2, False, False, True)
@@ -380,6 +381,7 @@ class TestDataTypes(BaseTest):
     def test_utils(self):
         def w(x):
             return wcwidth(ord(x))
+
         self.ae(wcswidth('a\033[2mb'), 2)
         self.ae(wcswidth('\033a\033[2mb'), 2)
         self.ae(wcswidth('a\033]8;id=moo;https://foo\033\\a'), 2)
@@ -444,8 +446,7 @@ class TestDataTypes(BaseTest):
                 self.assertTrue(is_path_in_temp_dir(os.path.join(prefix, path)))
         for path in ('/home/xy/d.png', '/tmp/../home/x.jpg'):
             self.assertFalse(is_path_in_temp_dir(os.path.join(path)))
-        self.ae(sanitize_url_for_dispay_to_user(
-            'h://a\u0430b.com/El%20Ni%C3%B1o/'), 'h://xn--ab-7kc.com/El Niño/')
+        self.ae(sanitize_url_for_dispay_to_user('h://a\u0430b.com/El%20Ni%C3%B1o/'), 'h://xn--ab-7kc.com/El Niño/')
 
     def test_color_profile(self):
         c = ColorProfile()
@@ -453,7 +454,7 @@ class TestDataTypes(BaseTest):
         for i in range(8):
             col = getattr(defaults, f'color{i}')
             self.ae(c.as_color(i << 8 | 1), col)
-        self.ae(c.as_color(255 << 8 | 1), Color(0xee, 0xee, 0xee))
+        self.ae(c.as_color(255 << 8 | 1), Color(0xEE, 0xEE, 0xEE))
 
     def test_historybuf(self):
         lb = filled_line_buf()
@@ -524,8 +525,7 @@ class TestDataTypes(BaseTest):
         c.bg = (1 << 24) | (2 << 16) | (3 << 8) | 2
         c.decoration_fg = (5 << 8) | 1
         l2.set_text('1', 0, 1, c)
-        self.ae(l2.as_ansi(), '\x1b[1;2;3;7;9;34;48:2:1:2:3;58:5:5m' '1'
-                '\x1b[22;23;27;29;39;49;59m' '0000')
+        self.ae(l2.as_ansi(), '\x1b[1;2;3;7;9;34;48:2:1:2:3;58:5:5m' '1' '\x1b[22;23;27;29;39;49;59m' '0000')
         lb = filled_line_buf()
         for i in range(1, lb.ynum + 1):
             lb.set_continued(i, True)
@@ -540,6 +540,7 @@ class TestDataTypes(BaseTest):
     def test_strip_csi(self):
         def q(x, y=''):
             self.ae(y or x, strip_csi(x))
+
         q('test')
         q('a\x1bbc', 'ac')
         q('a\x1b[bc', 'ac')
@@ -547,6 +548,7 @@ class TestDataTypes(BaseTest):
 
     def test_single_key(self):
         from smelly.fast_data_types import GLFW_MOD_smelly, GLFW_MOD_SHIFT, SingleKey
+
         for m in (GLFW_MOD_smelly, GLFW_MOD_SHIFT):
             s = SingleKey(mods=m)
             self.ae(s.mods, m)
@@ -556,7 +558,7 @@ class TestDataTypes(BaseTest):
         self.ae(repr(SingleKey(key=23, mods=2, is_native=True)), 'SingleKey(mods=2, is_native=True, key=23)')
         self.ae(repr(SingleKey(key=23, mods=2)), 'SingleKey(mods=2, key=23)')
         self.ae(repr(SingleKey(key=23)), 'SingleKey(key=23)')
-        self.ae(repr(SingleKey(key=0x1008ff57)), 'SingleKey(key=269025111)')
+        self.ae(repr(SingleKey(key=0x1008FF57)), 'SingleKey(key=269025111)')
         self.ae(repr(SingleKey(key=23)._replace(mods=2)), 'SingleKey(mods=2, key=23)')
         self.ae(repr(SingleKey(key=23)._replace(key=-1, mods=GLFW_MOD_smelly)), f'SingleKey(mods={GLFW_MOD_smelly})')
         self.assertEqual(SingleKey(key=1), SingleKey(key=1))
@@ -566,10 +568,12 @@ class TestDataTypes(BaseTest):
 
     def test_notify_identifier_sanitization(self):
         from smelly.notify import sanitize_identifier_pat
+
         self.ae(sanitize_identifier_pat().sub('', '\x1b\nabc\n[*'), 'abc')
 
     def test_bracketed_paste_sanitizer(self):
         from smelly.utils import sanitize_for_bracketed_paste
+
         for x in ('\x1b[201~ab\x9b201~cd', '\x1b[201\x1b[201~~ab'):  # ]]]
             q = sanitize_for_bracketed_paste(x.encode('utf-8'))
             self.assertNotIn(b'\x1b[201~', q)
@@ -593,7 +597,7 @@ class TestDataTypes(BaseTest):
             r'a\128b': 'a\0128b',
             r'a\u1234e': 'a\u1234e',
             r'a\U1f1eez': 'a\U0001f1eez',
-            r'a\x1\\':    "a\x01\\",
+            r'a\x1\\': "a\x01\\",
         }.items():
             actual = expand_ansi_c_escapes(src)
             self.ae(expected, actual)

@@ -24,10 +24,7 @@ from smelly.utils import log_error
 
 from . import FontFeature, ListedFont
 
-attr_map = {(False, False): 'font_family',
-            (True, False): 'bold_font',
-            (False, True): 'italic_font',
-            (True, True): 'bold_italic_font'}
+attr_map = {(False, False): 'font_family', (True, False): 'bold_font', (False, True): 'italic_font', (True, True): 'bold_italic_font'}
 
 
 FontMap = Dict[str, Dict[str, List[FontConfigPattern]]]
@@ -160,10 +157,7 @@ def get_font_files(opts: Options) -> Dict[str, FontConfigPattern]:
     for (bold, italic), attr in attr_map.items():
         rf = resolve_family(getattr(opts, attr), opts.font_family, bold, italic)
         font = find_best_match(rf, bold, italic)
-        key = {(False, False): 'medium',
-               (True, False): 'bold',
-               (False, True): 'italic',
-               (True, True): 'bi'}[(bold, italic)]
+        key = {(False, False): 'medium', (True, False): 'bold', (False, True): 'italic', (True, True): 'bi'}[(bold, italic)]
         ans[key] = font
     return ans
 

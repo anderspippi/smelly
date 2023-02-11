@@ -48,8 +48,7 @@ def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, hostname
     overrides = tuple(overrides) if overrides is not None else ()
     first_seen_positions.clear()
     first_seen_positions['*'] = 0
-    opts_dict, paths = _load_config(
-        defaults, parse_config, merge_dicts, *paths, overrides=overrides, initialize_defaults=init_results_dict)
+    opts_dict, paths = _load_config(defaults, parse_config, merge_dicts, *paths, overrides=overrides, initialize_defaults=init_results_dict)
     phd = get_per_hosts_dict(opts_dict)
     final_dict: Dict[str, Any] = {}
     for hostname_pat in sorted(phd, key=first_seen_positions.__getitem__):

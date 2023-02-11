@@ -28,13 +28,23 @@ HEX, NAME, EMOTICONS, FAVORITES = 'HEX', 'NAME', 'EMOTICONS', 'FAVORITES'
 favorites_path = os.path.join(config_dir, 'unicode-input-favorites.conf')
 INDEX_CHAR = '.'
 INDEX_BASE = 36
-DEFAULT_SET = tuple(map(
-    ord,
-    '‘’“”‹›«»‚„' '😀😛😇😈😉😍😎😮👍👎' '—–§¶†‡©®™' '→⇒•·°±−×÷¼½½¾'
-    '…µ¢£€¿¡¨´¸ˆ˜' 'ÀÁÂÃÄÅÆÇÈÉÊË' 'ÌÍÎÏÐÑÒÓÔÕÖØ' 'ŒŠÙÚÛÜÝŸÞßàá' 'âãäåæçèéêëìí'
-    'îïðñòóôõöøœš' 'ùúûüýÿþªºαΩ∞'
-))
-EMOTICONS_SET = tuple(range(0x1f600, 0x1f64f + 1))
+DEFAULT_SET = tuple(
+    map(
+        ord,
+        '‘’“”‹›«»‚„'
+        '😀😛😇😈😉😍😎😮👍👎'
+        '—–§¶†‡©®™'
+        '→⇒•·°±−×÷¼½½¾'
+        '…µ¢£€¿¡¨´¸ˆ˜'
+        'ÀÁÂÃÄÅÆÇÈÉÊË'
+        'ÌÍÎÏÐÑÒÓÔÕÖØ'
+        'ŒŠÙÚÛÜÝŸÞßàá'
+        'âãäåæçèéêëìí'
+        'îïðñòóôõöøœš'
+        'ùúûüýÿþªºαΩ∞',
+    )
+)
+EMOTICONS_SET = tuple(range(0x1F600, 0x1F64F + 1))
 all_modes = (
     (_('Code'), 'F1', HEX),
     (_('Name'), 'F2', NAME),
@@ -44,18 +54,20 @@ all_modes = (
 
 
 def codepoint_ok(code: int) -> bool:
-    return not (code <= 32 or code == 127 or 128 <= code <= 159 or 0xd800 <= code <= 0xdbff or 0xDC00 <= code <= 0xDFFF)
+    return not (code <= 32 or code == 127 or 128 <= code <= 159 or 0xD800 <= code <= 0xDBFF or 0xDC00 <= code <= 0xDFFF)
 
 
 @lru_cache(maxsize=256)
 def points_for_word(w: str) -> FrozenSet[int]:
     from .unicode_names import codepoints_for_word
+
     return codepoints_for_word(w.lower())
 
 
 @lru_cache(maxsize=4096)
 def name(cp: Union[int, str]) -> str:
     from .unicode_names import name_for_codepoint
+
     c = ord(cp[0]) if isinstance(cp, str) else cp
     return (name_for_codepoint(c) or '').capitalize()
 
@@ -135,7 +147,6 @@ def decode_hint(x: str) -> int:
 
 
 class Table:
-
     def __init__(self, emoji_variation: str) -> None:
         self.emoji_variation = emoji_variation
         self.layout_dirty: bool = True
@@ -177,6 +188,7 @@ class Table:
             return ans
 
         if self.mode is NAME:
+
             def as_parts(i: int, codepoint: int) -> Tuple[str, str, str]:
                 return encode_hint(i).ljust(idx_size), safe_chr(codepoint), name(codepoint)
 
@@ -197,6 +209,7 @@ class Table:
                 yield styled(text, reverse=True if is_current else None)
 
         else:
+
             def as_parts(i: int, codepoint: int) -> Tuple[str, str, str]:
                 return encode_hint(i).ljust(idx_size), safe_chr(codepoint), ''
 
@@ -236,7 +249,7 @@ class Table:
                 continue
             buf.extend(cell(i, idx, c, desc))
             a('  ')
-            if i > 0 and (i+1) % num_cols == 0:
+            if i > 0 and (i + 1) % num_cols == 0:
                 rows_left -= 1
                 if rows_left == 0:
                     break
@@ -275,7 +288,6 @@ def is_index(w: str) -> bool:
 
 
 class UnicodeInput(Handler):
-
     overlay_ready_report_needed = True
 
     def __init__(self, cached_values: Dict[str, Any], emoji_variation: str = 'none') -> None:
@@ -323,7 +335,7 @@ class UnicodeInput(Handler):
                 index_words = [i for i, w in enumerate(words) if i > 0 and is_index(w)]
                 if index_words:
                     index_word = words[index_words[0]]
-                    words = words[:index_words[0]]
+                    words = words[: index_words[0]]
                     iindex_word = int(index_word.lstrip(INDEX_CHAR), INDEX_BASE)
                 codepoints = codepoints_matching_search(tuple(words))
         if q != self.last_updated_code_point_at:
@@ -363,8 +375,7 @@ class UnicodeInput(Handler):
             c, color = self.current_char, 'green'
             if self.emoji_variation and is_emoji_presentation_base(ord(c[0])):
                 c += self.emoji_variation
-            self.choice_line = _('Chosen:') + ' {} U+{} {}'.format(
-                colored(c, 'green'), hex(ord(c[0]))[2:], faint(styled(name(c) or '', italic=True)))
+            self.choice_line = _('Chosen:') + ' {} U+{} {}'.format(colored(c, 'green'), hex(ord(c[0]))[2:], faint(styled(name(c) or '', italic=True)))
         self.prompt = self.prompt_template.format(colored(c, color))
 
     def init_terminal_state(self) -> None:
@@ -574,7 +585,7 @@ def main(args: List[str]) -> Optional[str]:
             with suppress(Exception):
                 handler.recent.remove(ord(handler.current_char))
             recent = [ord(handler.current_char)] + handler.recent
-            cached_values['recent'] = recent[:len(DEFAULT_SET)]
+            cached_values['recent'] = recent[: len(DEFAULT_SET)]
             return handler.resolved_current_char
     if loop.return_code != 0:
         raise SystemExit(loop.return_code)

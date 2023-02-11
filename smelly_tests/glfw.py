@@ -11,7 +11,6 @@ is_macos = 'darwin' in _plat
 
 
 class TestGLFW(BaseTest):
-
     def test_os_window_size_calculation(self):
         from smelly.utils import get_new_os_window_size
 
@@ -21,10 +20,16 @@ class TestGLFW(BaseTest):
         with self.subTest(has_window_scaling=False):
             has_window_scaling = False
             metrics = {
-                'width': 200, 'height': 100,
-                'framebuffer_width': 200, 'framebuffer_height': 100,
-                'xscale': 2.0, 'yscale': 2.0, 'xdpi': 192.0, 'ydpi': 192.0,
-                'cell_width': 8, 'cell_height': 16
+                'width': 200,
+                'height': 100,
+                'framebuffer_width': 200,
+                'framebuffer_height': 100,
+                'xscale': 2.0,
+                'yscale': 2.0,
+                'xdpi': 192.0,
+                'ydpi': 192.0,
+                'cell_width': 8,
+                'cell_height': 16,
             }
             t(80 * metrics['cell_width'], 100, 80)
             t(80 * metrics['cell_width'] + metrics['width'], 100, 80, incremental=True)
@@ -71,7 +76,8 @@ class TestGLFW(BaseTest):
                 self.ae(utf_8_strndup(string_bytes, length_bytes).value, part_bytes)
                 prev_part_bytes = part_bytes
                 prev_length_bytes = length_bytes
-            self.ae(utf_8_strndup(string_bytes, len(string_bytes) + 1).value, string_bytes)  # Try to go one character after the end of the string
+            # Try to go one character after the end of the string
+            self.ae(utf_8_strndup(string_bytes, len(string_bytes) + 1).value, string_bytes)
 
         self.ae(utf_8_strndup(None, 2).value, None)
         self.ae(utf_8_strndup(b'', 2).value, b'')

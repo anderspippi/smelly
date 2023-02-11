@@ -11,6 +11,7 @@ from .options.types import Options as DiffOptions
 
 if TYPE_CHECKING:
     from .render import Line
+
     Line
 
 
@@ -19,7 +20,6 @@ class BadRegex(ValueError):
 
 
 class Search:
-
     def __init__(self, opts: DiffOptions, query: str, is_regex: bool, is_backward: bool):
         self.matches: Dict[int, List[Tuple[int, str]]] = {}
         self.count = 0
@@ -40,12 +40,12 @@ class Search:
         find = self.pat.finditer
         for i, line in enumerate(diff_lines):
             text = strip_pat.sub('', line.text)
-            left, right = text[margin_size:half_width + 1], text[right_offset:]
+            left, right = text[margin_size : half_width + 1], text[right_offset:]
             matches = []
 
             def add(which: str, offset: int) -> None:
                 for m in find(which):
-                    before = which[:m.start()]
+                    before = which[: m.start()]
                     matches.append((wcswidth(before) + offset, m.group()))
                     self.count += 1
 

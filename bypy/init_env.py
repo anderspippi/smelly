@@ -26,9 +26,7 @@ def initialize_constants():
     src = read_src_file('constants.py')
     nv = re.search(r'Version\((\d+), (\d+), (\d+)\)', src)
     smelly_constants['version'] = f'{nv.group(1)}.{nv.group(2)}.{nv.group(3)}'
-    smelly_constants['appname'] = re.search(
-            r'appname: str\s+=\s+(u{0,1})[\'"]([^\'"]+)[\'"]', src
-    ).group(2)
+    smelly_constants['appname'] = re.search(r'appname: str\s+=\s+(u{0,1})[\'"]([^\'"]+)[\'"]', src).group(2)
     smelly_constants['cacerts_url'] = 'https://curl.haxx.se/ca/cacert.pem'
     return smelly_constants
 
@@ -62,10 +60,7 @@ def build_frozen_launcher(extra_include_dirs):
 
 def run_tests(smelly_exe):
     with tempfile.TemporaryDirectory() as tdir:
-        uenv = {
-            'smelly_CONFIG_DIRECTORY': os.path.join(tdir, 'conf'),
-            'smelly_CACHE_DIRECTORY': os.path.join(tdir, 'cache')
-        }
+        uenv = {'smelly_CONFIG_DIRECTORY': os.path.join(tdir, 'conf'), 'smelly_CACHE_DIRECTORY': os.path.join(tdir, 'cache')}
         [os.mkdir(x) for x in uenv.values()]
         env = os.environ.copy()
         env.update(uenv)
@@ -97,8 +92,8 @@ def build_c_extensions(ext_dir, args):
     writeable_src_dir = os.path.join(ext_dir, 'src')
     build_frozen_launcher.writeable_src_dir = writeable_src_dir
     shutil.copytree(
-        smelly_DIR, writeable_src_dir, symlinks=True,
-        ignore=shutil.ignore_patterns('b', 'build', 'dist', '*_commands.json', '*.o', '*.so', '*.dylib', '*.pyd'))
+        smelly_DIR, writeable_src_dir, symlinks=True, ignore=shutil.ignore_patterns('b', 'build', 'dist', '*_commands.json', '*.o', '*.so', '*.dylib', '*.pyd')
+    )
 
     with suppress(FileNotFoundError):
         os.unlink(os.path.join(writeable_src_dir, 'smelly', 'launcher', 'smelly'))

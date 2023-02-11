@@ -43,9 +43,7 @@ the font size for any newly created OS Windows in the future.
         return {'size': abs(float(fs)), 'all': opts.all, 'increment_op': inc}
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
-        boss.change_font_size(
-            payload_get('all'),
-            payload_get('increment_op'), payload_get('size') or 0)
+        boss.change_font_size(payload_get('all'), payload_get('increment_op'), payload_get('size') or 0)
         return None
 
 

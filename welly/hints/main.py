@@ -28,10 +28,12 @@ from ..tui.utils import report_error, report_unhandled_error
 @lru_cache()
 def smelly_common_opts() -> smellyCommonOpts:
     import json
+
     v = os.environ.get('smelly_COMMON_OPTS')
     if v:
         return cast(smellyCommonOpts, json.loads(v))
     from smelly.config import common_opts_as_dict
+
     return common_opts_as_dict()
 
 
@@ -43,17 +45,9 @@ DEFAULT_LINENUM_REGEX = fr'(?P<path>{PATH_REGEX}):(?P<line>\d+)'
 
 
 class Mark:
-
     __slots__ = ('index', 'start', 'end', 'text', 'is_hyperlink', 'group_id', 'groupdict')
 
-    def __init__(
-            self,
-            index: int, start: int, end: int,
-            text: str,
-            groupdict: Any,
-            is_hyperlink: bool = False,
-            group_id: Optional[str] = None
-    ):
+    def __init__(self, index: int, start: int, end: int, text: str, groupdict: Any, is_hyperlink: bool = False, group_id: Optional[str] = None):
         self.index, self.start, self.end = index, start, end
         self.text = text
         self.groupdict = groupdict
@@ -61,8 +55,10 @@ class Mark:
         self.group_id = group_id
 
     def __repr__(self) -> str:
-        return (f'Mark(index={self.index!r}, start={self.start!r}, end={self.end!r},'
-                f' text={self.text!r}, groupdict={self.groupdict!r}, is_hyperlink={self.is_hyperlink!r}, group_id={self.group_id!r})')
+        return (
+            f'Mark(index={self.index!r}, start={self.start!r}, end={self.end!r},'
+            f' text={self.text!r}, groupdict={self.groupdict!r}, is_hyperlink={self.is_hyperlink!r}, group_id={self.group_id!r})'
+        )
 
 
 @lru_cache(maxsize=2048)
@@ -88,20 +84,14 @@ def highlight_mark(m: Mark, text: str, current_input: str, alphabet: str, colors
     hint = encode_hint(m.index, alphabet)
     if current_input and not hint.startswith(current_input):
         return faint(text)
-    hint = hint[len(current_input):] or ' '
-    text = text[len(hint):]
-    return styled(
-        hint,
-        fg=colors['foreground'],
-        bg=colors['background'],
-        bold=True
-    ) + styled(
-        text, fg=colors['text'], fg_intense=True, bold=True
-    )
+    hint = hint[len(current_input) :] or ' '
+    text = text[len(hint) :]
+    return styled(hint, fg=colors['foreground'], bg=colors['background'], bold=True) + styled(text, fg=colors['text'], fg_intense=True, bold=True)
 
 
 def debug(*a: Any, **kw: Any) -> None:
     from ..tui.loop import debug as d
+
     d(*a, **kw)
 
 
@@ -109,24 +99,21 @@ def render(text: str, current_input: str, all_marks: Sequence[Mark], ignore_mark
     for mark in reversed(all_marks):
         if mark.index in ignore_mark_indices:
             continue
-        mtext = highlight_mark(mark, text[mark.start:mark.end], current_input, alphabet, colors)
-        text = text[:mark.start] + mtext + text[mark.end:]
+        mtext = highlight_mark(mark, text[mark.start : mark.end], current_input, alphabet, colors)
+        text = text[: mark.start] + mtext + text[mark.end :]
 
     text = text.replace('\0', '')
     return re.sub('[\r\n]', '\r\n', text).rstrip()
 
 
 class Hints(Handler):
-
     use_alternate_screen = False  # disabled to avoid screen being blanked at exit causing flicker
     overlay_ready_report_needed = True
 
     def __init__(self, text: str, all_marks: Sequence[Mark], index_map: Dict[int, Mark], args: HintsCLIOptions):
         self.text, self.index_map = text, index_map
         self.alphabet = args.alphabet or DEFAULT_HINT_ALPHABET
-        self.colors = {'foreground': args.hints_foreground_color,
-                       'background': args.hints_background_color,
-                       'text': args.hints_text_color}
+        self.colors = {'foreground': args.hints_foreground_color, 'background': args.hints_background_color, 'text': args.hints_text_color}
         self.all_marks = all_marks
         self.ignore_mark_indices: Set[int] = set()
         self.args = args
@@ -171,10 +158,7 @@ class Hints(Handler):
                 self.current_input += c
                 changed = True
         if changed:
-            matches = [
-                m for idx, m in self.index_map.items()
-                if encode_hint(idx, self.alphabet).startswith(self.current_input)
-            ]
+            matches = [m for idx, m in self.index_map.items() if encode_hint(idx, self.alphabet).startswith(self.current_input)]
             if len(matches) == 1:
                 self.chosen.append(matches[0])
                 if self.multiple:
@@ -229,7 +213,7 @@ def regex_finditer(pat: 'Pattern[str]', minimum_match_length: int, text: str) ->
     has_named_groups = bool(pat.groupindex)
     for m in pat.finditer(text):
         s, e = m.span(0 if has_named_groups else pat.groups)
-        while e > s + 1 and text[e-1] == '\0':
+        while e > s + 1 and text[e - 1] == '\0':
             e -= 1
         if e - s >= minimum_match_length:
             yield s, e, m
@@ -248,12 +232,13 @@ def postprocessor(func: PostprocessorFunc) -> PostprocessorFunc:
 
 class InvalidMatch(Exception):
     """Raised when a match turns out to be invalid."""
+
     pass
 
 
 @postprocessor
 def url(text: str, s: int, e: int) -> Tuple[int, int]:
-    if s > 4 and text[s - 5:s] == 'link:':  # asciidoc URLs
+    if s > 4 and text[s - 5 : s] == 'link:':  # asciidoc URLs
         url = text[s:e]
         idx = url.rfind('[')
         if idx > -1:
@@ -261,13 +246,13 @@ def url(text: str, s: int, e: int) -> Tuple[int, int]:
     while text[e - 1] in '.,?!' and e > 1:  # remove trailing punctuation
         e -= 1
     # truncate url at closing bracket/quote
-    if s > 0 and e <= len(text) and text[s-1] in opening_brackets:
-        q = closing_bracket_map[text[s-1]]
+    if s > 0 and e <= len(text) and text[s - 1] in opening_brackets:
+        q = closing_bracket_map[text[s - 1]]
         idx = text.find(q, s)
         if idx > s:
             e = idx
     # Restructured Text URLs
-    if e > 3 and text[e-2:e] == '`_':
+    if e > 3 and text[e - 2 : e] == '`_':
         e -= 2
 
     return s, e
@@ -280,10 +265,10 @@ def brackets(text: str, s: int, e: int) -> Tuple[int, int]:
         before = text[s]
         if before in '({[<':
             q = closing_bracket_map[before]
-            if text[e-1] == q:
+            if text[e - 1] == q:
                 s += 1
                 e -= 1
-            elif text[e:e+1] == q:
+            elif text[e : e + 1] == q:
                 s += 1
     return s, e
 
@@ -295,10 +280,10 @@ def quotes(text: str, s: int, e: int) -> Tuple[int, int]:
         before = text[s]
         if before in '\'"“‘':
             q = closing_bracket_map[before]
-            if text[e-1] == q:
+            if text[e - 1] == q:
                 s += 1
                 e -= 1
-            elif text[e:e+1] == q:
+            elif text[e : e + 1] == q:
                 s += 1
     return s, e
 
@@ -343,9 +328,13 @@ def run_loop(args: HintsCLIOptions, text: str, all_marks: Sequence[Mark], index_
     loop.loop(handler)
     if handler.chosen and loop.return_code == 0:
         return {
-            'match': handler.text_matches, 'programs': args.program,
-            'multiple_joiner': args.multiple_joiner, 'customize_processing': args.customize_processing,
-            'type': args.type, 'groupdicts': handler.groupdicts, 'extra_cli_args': extra_cli_args,
+            'match': handler.text_matches,
+            'programs': args.program,
+            'multiple_joiner': args.multiple_joiner,
+            'customize_processing': args.customize_processing,
+            'type': args.type,
+            'groupdicts': handler.groupdicts,
+            'extra_cli_args': extra_cli_args,
             'linenum_action': args.linenum_action,
             'cwd': os.getcwd(),
         }
@@ -364,9 +353,8 @@ def functions_for(args: HintsCLIOptions) -> Tuple[str, List[PostprocessorFunc]]:
         else:
             url_prefixes = tuple(args.url_prefixes.split(','))
         from .url_regex import url_delimiters
-        pattern = '(?:{})://[^{}]{{3,}}'.format(
-            '|'.join(url_prefixes), url_delimiters
-        )
+
+        pattern = '(?:{})://[^{}]{{3,}}'.format('|'.join(url_prefixes), url_delimiters)
         post_processors.append(url)
     elif args.type == 'path':
         pattern = PATH_REGEX
@@ -436,12 +424,14 @@ def linenum_marks(text: str, args: HintsCLIOptions, Mark: Type[Mark], extra_cli_
 def load_custom_processor(customize_processing: str) -> Any:
     if customize_processing.startswith('::import::'):
         import importlib
-        m = importlib.import_module(customize_processing[len('::import::'):])
+
+        m = importlib.import_module(customize_processing[len('::import::') :])
         return {k: getattr(m, k) for k in dir(m)}
     if customize_processing == '::linenum::':
         return {'mark': linenum_marks, 'handle_result': linenum_handle_result}
     custom_path = resolve_custom_file(customize_processing)
     import runpy
+
     return runpy.run_path(custom_path, run_name='__main__')
 
 
@@ -455,12 +445,7 @@ def process_escape_codes(text: str) -> Tuple[str, Tuple[Mark, ...]]:
     def add_hyperlink(end: int) -> None:
         nonlocal idx, active_hyperlink_url, active_hyperlink_id, active_hyperlink_start_offset
         assert active_hyperlink_url is not None
-        hyperlinks.append(Mark(
-            idx, active_hyperlink_start_offset, end,
-            active_hyperlink_url,
-            groupdict={},
-            is_hyperlink=True, group_id=active_hyperlink_id
-        ))
+        hyperlinks.append(Mark(idx, active_hyperlink_start_offset, end, active_hyperlink_url, groupdict={}, is_hyperlink=True, group_id=active_hyperlink_id))
         active_hyperlink_url = active_hyperlink_id = None
         active_hyperlink_start_offset = 0
         idx += 1
@@ -688,7 +673,8 @@ The title for the hints window, default title is based on the type of text being
 hinted.
 '''.format(
     default_regex=DEFAULT_REGEX,
-    line='{{line}}', path='{{path}}',
+    line='{{line}}',
+    path='{{path}}',
     hints_url=website_url('wellies/hints'),
 ).format
 help_text = 'Select text from the screen using the keyboard. Defaults to searching for URLs.'
@@ -757,15 +743,15 @@ def linenum_handle_result(args: List[str], data: Dict[str, Any], target_window_i
                     set_primary_selection(text)
             else:
                 import shlex
+
                 text = ' '.join(shlex.quote(arg) for arg in cmd)
                 w.paste_bytes(f'{text}\r')
     elif action == 'background':
         import subprocess
+
         subprocess.Popen(cmd, cwd=data['cwd'])
     else:
-        getattr(boss, {
-            'window': 'new_window_with_cwd', 'tab': 'new_tab_with_cwd', 'os_window': 'new_os_window_with_cwd'
-            }[action])(*cmd)
+        getattr(boss, {'window': 'new_window_with_cwd', 'tab': 'new_tab_with_cwd', 'os_window': 'new_os_window_with_cwd'}[action])(*cmd)
 
 
 @result_handler(type_of_input='screen-ansi', has_ready_notification=Hints.overlay_ready_report_needed)
@@ -799,6 +785,7 @@ def handle_result(args: List[str], data: Dict[str, Any], target_window_id: int, 
                 return matches[-1]
         if joiner == 'json':
             import json
+
             return json.dumps(matches, ensure_ascii=False, indent='\t')
         if joiner == 'auto':
             q = '\n\r' if text_type in ('line', 'url') else ' '
@@ -817,6 +804,7 @@ def handle_result(args: List[str], data: Dict[str, Any], target_window_id: int, 
             set_primary_selection(joined_text())
         else:
             from smelly.conf.utils import to_cmdline
+
             cwd = data['cwd']
             program = get_options().open_url_with if program == 'default' else program
             if text_type == 'hyperlink':

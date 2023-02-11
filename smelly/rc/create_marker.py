@@ -12,7 +12,6 @@ if TYPE_CHECKING:
 
 
 class CreateMarker(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     match/str: Which window to create the marker in
     self/bool: Boolean indicating whether to create marker in the window the command is run in
@@ -24,11 +23,14 @@ class CreateMarker(RemoteCommand):
         'Create a marker which can highlight text in the specified window. For example:'
         ' :code:`create_marker text 1 ERROR`. For full details see: :doc:`marks`'
     )
-    options_spec = MATCH_WINDOW_OPTION + '''\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n
 --self
 type=bool-set
 Apply marker to the window this command is run in, rather than the active window.
 '''
+    )
     args = RemoteCommand.Args(spec='MARKER SPECIFICATION', json_field='marker_spec', minimum_count=2)
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:

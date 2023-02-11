@@ -27,19 +27,12 @@ def send_mouse_event(
 ):
     ix = int(x)
     in_left_half_of_cell = x - ix < 0.5
-    send_mock_mouse_event_to_window(
-        window, button, modifiers, is_release, ix, y, clear_click_queue, in_left_half_of_cell
-    )
+    send_mock_mouse_event_to_window(window, button, modifiers, is_release, ix, y, clear_click_queue, in_left_half_of_cell)
 
 
 class TestMouse(BaseTest):
-
     def test_mouse_selection(self):
-        s = self.create_screen(
-            options=dict(
-                rectangle_select_modifiers=GLFW_MOD_ALT | GLFW_MOD_CONTROL
-            )
-        )
+        s = self.create_screen(options=dict(rectangle_select_modifiers=GLFW_MOD_ALT | GLFW_MOD_CONTROL))
         w = create_mock_window(s)
         ev = partial(send_mouse_event, w)
 
@@ -68,13 +61,7 @@ class TestMouse(BaseTest):
             ev(button, x=x, y=y, modifiers=modifiers)
 
         def release(x=0, y=0, button=GLFW_MOUSE_BUTTON_LEFT):
-            ev(
-                button,
-                x=x,
-                y=y,
-                is_release=True,
-                clear_click_queue=True
-            )
+            ev(button, x=x, y=y, is_release=True, clear_click_queue=True)
 
         def move(x=0, y=0, button=-1, q=None):
             ev(x=x, y=y, button=button)

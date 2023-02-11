@@ -7,7 +7,6 @@ from smelly.conf.utils import merge_dicts, to_bool
 
 
 class Parser:
-
     def askpass(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
         val = val.lower()
         if val not in self.choices_for_askpass:

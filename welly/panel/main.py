@@ -52,7 +52,9 @@ Set the class part of the :italic:`WM_CLASS` window property. On Wayland, it set
 --name
 condition=not is_macos
 Set the name part of the :italic:`WM_CLASS` property (defaults to using the value from :option:`{appname} --class`)
-'''.format(appname=appname).format
+'''.format(
+    appname=appname
+).format
 
 
 args = PanelCLIOptions()
@@ -69,9 +71,18 @@ Strut = Tuple[int, int, int, int, int, int, int, int, int, int, int, int]
 
 def create_strut(
     win_id: int,
-    left: int = 0, right: int = 0, top: int = 0, bottom: int = 0, left_start_y: int = 0, left_end_y: int = 0,
-    right_start_y: int = 0, right_end_y: int = 0, top_start_x: int = 0, top_end_x: int = 0,
-    bottom_start_x: int = 0, bottom_end_x: int = 0
+    left: int = 0,
+    right: int = 0,
+    top: int = 0,
+    bottom: int = 0,
+    left_start_y: int = 0,
+    left_end_y: int = 0,
+    right_start_y: int = 0,
+    right_end_y: int = 0,
+    top_start_x: int = 0,
+    top_end_x: int = 0,
+    bottom_start_x: int = 0,
+    bottom_end_x: int = 0,
 ) -> Strut:
     return left, right, top, bottom, left_start_y, left_end_y, right_start_y, right_end_y, top_start_x, top_end_x, bottom_start_x, bottom_end_x
 
@@ -136,6 +147,7 @@ def main(sys_args: List[str]) -> None:
     sys.argv.extend(items)
     from smelly.main import main as real_main
     from smelly.main import run_app
+
     run_app.cached_values_name = 'panel'
     run_app.first_window_callback = setup_x11_window
     run_app.initial_window_size_func = initial_window_size_func

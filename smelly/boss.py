@@ -165,6 +165,7 @@ class OSWindowDict(TypedDict):
 
 def listen_on(spec: str) -> int:
     import socket
+
     family, address, socket_path = parse_address_spec(spec)
     s = socket.socket(family)
     atexit.register(remove_socket_file, s, socket_path)
@@ -215,7 +216,6 @@ def data_for_at(w: Optional[Window], arg: str, add_wrap_markers: bool = False) -
 
 
 class DumpCommands:  # {{{
-
     def __init__(self, args: CLIOptions):
         self.draw_dump_buf: List[str] = []
         if args.dump_bytes:
@@ -238,11 +238,12 @@ class DumpCommands:  # {{{
                     safe_print('draw', ''.join(self.draw_dump_buf))
                     self.draw_dump_buf = []
                 safe_print(*a)
+
+
 # }}}
 
 
 class VisualSelect:
-
     def __init__(
         self,
         tab_id: int,
@@ -251,7 +252,7 @@ class VisualSelect:
         prev_os_window_id: Optional[int],
         title: str,
         callback: Callable[[Optional[Tab], Optional[Window]], None],
-        reactivate_prev_tab: bool
+        reactivate_prev_tab: bool,
     ) -> None:
         self.tab_id = tab_id
         self.os_window_id = os_window_id
@@ -310,7 +311,6 @@ class VisualSelect:
 
 
 class Boss:
-
     def __init__(
         self,
         opts: Options,
@@ -332,7 +332,8 @@ class Boss:
         self.current_visual_select: Optional[VisualSelect] = None
         self.startup_cursor_text_color = opts.cursor_text_color
         self.pending_sequences: Optional[SubSequenceMap] = None
-        # A list of events received so far that are potentially part of a sequence keybinding.
+        # A list of events received so far that are potentially part of a
+        # sequence keybinding.
         self.current_sequence: List[KeyEvent] = []
         self.default_pending_action: str = ''
         self.cached_values = cached_values
@@ -356,9 +357,7 @@ class Boss:
             self.listening_on = args.listen_on
         self.prewarm = prewarm
         self.child_monitor = ChildMonitor(
-            self.on_child_death,
-            DumpCommands(args) if args.dump_commands or args.dump_bytes else None,
-            talk_fd, listen_fd, self.prewarm.take_from_worker_fd()
+            self.on_child_death, DumpCommands(args) if args.dump_commands or args.dump_bytes else None, talk_fd, listen_fd, self.prewarm.take_from_worker_fd()
         )
         set_boss(self)
         self.args = args
@@ -368,6 +367,7 @@ class Boss:
         self.update_keymap()
         if is_macos:
             from .fast_data_types import cocoa_set_notification_activated_callback
+
             cocoa_set_notification_activated_callback(notification_activated)
 
     def update_keymap(self) -> None:
@@ -411,9 +411,13 @@ class Boss:
             wtitle = override_title or self.args.title
             with startup_notification_handler(do_notify=startup_id is not None, startup_id=startup_id) as pre_show_callback:
                 os_window_id = create_os_window(
-                        initial_window_size_func(size_data, self.cached_values),
-                        pre_show_callback,
-                        wtitle or appname, wname, wclass, disallow_override_title=bool(wtitle))
+                    initial_window_size_func(size_data, self.cached_values),
+                    pre_show_callback,
+                    wtitle or appname,
+                    wname,
+                    wclass,
+                    disallow_override_title=bool(wtitle),
+                )
         else:
             wname = self.args.name or self.args.cls or appname
             wclass = self.args.cls or appname
@@ -433,7 +437,7 @@ class Boss:
                     'last_focused': os_window_id == last_focused_os_window_id(),
                     'tabs': list(tm.list_tabs(self_window)),
                     'wm_class': tm.wm_class,
-                    'wm_name': tm.wm_name
+                    'wm_name': tm.wm_name,
                 }
 
     @property
@@ -455,6 +459,7 @@ class Boss:
             yield from self.all_windows
             return
         from .search_query_parser import search
+
         tab = self.active_tab
         if current_focused_os_window_id() <= 0:
             tm = self.os_window_map.get(last_focused_os_window_id())
@@ -472,9 +477,7 @@ class Boss:
                     query = str(window_id_limit + q)
             return {wid for wid in candidates if self.window_id_map[wid].matches_query(location, query, tab, self_window)}
 
-        for wid in search(match, (
-                'id', 'title', 'pid', 'cwd', 'cmdline', 'num', 'env', 'recent', 'state'
-        ), set(self.window_id_map), get_matches):
+        for wid in search(match, ('id', 'title', 'pid', 'cwd', 'cmdline', 'num', 'env', 'recent', 'state'), set(self.window_id_map), get_matches):
             yield self.window_id_map[wid]
 
     def tab_for_window(self, window: Window) -> Optional[Tab]:
@@ -489,6 +492,7 @@ class Boss:
             yield from self.all_tabs
             return
         from .search_query_parser import search
+
         tm = self.active_tab_manager
         if current_focused_os_window_id() <= 0:
             tm = self.os_window_map.get(last_focused_os_window_id()) or tm
@@ -508,9 +512,9 @@ class Boss:
             return {wid for wid in candidates if tim[wid].matches_query(location, query, tm)}
 
         found = False
-        for tid in search(match, (
-                'id', 'index', 'title', 'window_id', 'window_title', 'pid', 'cwd', 'env', 'cmdline', 'recent', 'state'
-        ), set(tim), get_matches):
+        for tid in search(
+            match, ('id', 'index', 'title', 'window_id', 'window_title', 'pid', 'cwd', 'env', 'cmdline', 'recent', 'state'), set(tim), get_matches
+        ):
             found = True
             yield tim[tid]
 
@@ -571,6 +575,7 @@ class Boss:
 
     def _handle_remote_command(self, cmd: str, window: Optional[Window] = None, peer_id: int = 0) -> RCResponse:
         from .remote_control import is_cmd_allowed, parse_cmd
+
         response = None
         window = window or None
         window_has_remote_control = bool(window and window.allow_remote_control)
@@ -601,8 +606,10 @@ class Boss:
         extra_data: Dict[str, Any] = {}
         try:
             allowed_unconditionally = (
-                self.allow_remote_control == 'y' or (peer_id > 0 and self.allow_remote_control in ('socket-only', 'socket')) or
-                (window and window.remote_control_allowed(pcmd, extra_data)))
+                self.allow_remote_control == 'y'
+                or (peer_id > 0 and self.allow_remote_control in ('socket-only', 'socket'))
+                or (window and window.remote_control_allowed(pcmd, extra_data))
+            )
         except PermissionError:
             return {'ok': False, 'error': 'Remote control disallowed by window specific password'}
         if allowed_unconditionally:
@@ -625,6 +632,7 @@ class Boss:
         self, pcmd: Dict[str, Any], window: Optional[Window] = None, peer_id: int = 0, self_window: Optional[Window] = None
     ) -> bool:
         from wellies.tui.operations import styled
+
         in_flight = 0
         for w in self.window_id_map.values():
             if w.window_custom_type == 'remote_command_permission_dialog':
@@ -635,16 +643,22 @@ class Boss:
         wid = 0 if window is None else window.id
         hidden_text = styled(pcmd['password'], fg='yellow')
         overlay_window = self.choose(
-            _('A program wishes to control smelly.\n'
-              'Action: {1}\n' 'Password: {0}\n\n' '{2}'
-              ).format(
-                  hidden_text, styled(pcmd['cmd'], fg='magenta'),
-                  '\x1b[m' + styled(_(
-                      'Note that allowing the password will allow all future actions using the same password, in this smelly instance.'
-                  ), dim=True, italic=True)),
+            _('A program wishes to control smelly.\n' 'Action: {1}\n' 'Password: {0}\n\n' '{2}').format(
+                hidden_text,
+                styled(pcmd['cmd'], fg='magenta'),
+                '\x1b[m'
+                + styled(
+                    _('Note that allowing the password will allow all future actions using the same password, in this smelly instance.'), dim=True, italic=True
+                ),
+            ),
             partial(self.remote_cmd_permission_received, pcmd, wid, peer_id, self_window),
-            'a;green:Allow request', 'p;yellow:Allow password', 'r;magenta:Deny request', 'd;red:Deny password',
-            window=window, default='a', hidden_text=hidden_text
+            'a;green:Allow request',
+            'p;yellow:Allow password',
+            'r;magenta:Deny request',
+            'd;red:Deny password',
+            window=window,
+            default='a',
+            hidden_text=hidden_text,
         )
         if overlay_window is None:
             return False
@@ -653,6 +667,7 @@ class Boss:
 
     def remote_cmd_permission_received(self, pcmd: Dict[str, Any], window_id: int, peer_id: int, self_window: Optional[Window], choice: str) -> None:
         from .remote_control import encode_response_for_peer, set_user_password_allowed
+
         response: RCResponse = None
         window = self.window_id_map.get(window_id)
         choice = choice or 'r'
@@ -678,16 +693,20 @@ class Boss:
         self, pcmd: Dict[str, Any], window: Optional[Window] = None, peer_id: int = 0, self_window: Optional[Window] = None
     ) -> RCResponse:
         from .remote_control import handle_cmd
+
         try:
             response = handle_cmd(self, window, pcmd, peer_id, self_window)
         except Exception as err:
             import traceback
+
             response = {'ok': False, 'error': str(err)}
             if not getattr(err, 'hide_traceback', False):
                 response['tb'] = traceback.format_exc()
         return response
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Run a remote control command
 
         For example::
@@ -695,18 +714,21 @@ class Boss:
             map f1 remote_control set-spacing margin=30
 
         See :ref:`rc_mapping` for details.
-        ''')
+        ''',
+    )
     def remote_control(self, *args: str) -> None:
         try:
             self.call_remote_control(self.active_window, args)
         except (Exception, SystemExit):
             import traceback
+
             tb = traceback.format_exc()
             self.show_error(_('remote_control mapping failed'), tb)
 
     def call_remote_control(self, active_window: Optional[Window], args: Tuple[str, ...]) -> 'ResponseType':
         from .rc.base import PayloadGetter, command_for_name, parse_subcommand_cli
         from .remote_control import parse_rc_args
+
         aa = list(args)
         silent = False
         if aa and aa[0].startswith('!'):
@@ -723,6 +745,7 @@ class Boss:
         except SystemExit as e:
             raise Exception(str(e)) from e
         import types
+
         try:
             if isinstance(payload, types.GeneratorType):
                 for x in payload:
@@ -739,18 +762,20 @@ class Boss:
         cmd_prefix = b'\x1bP@smelly-cmd'
         terminator = b'\x1b\\'
         if msg_bytes.startswith(cmd_prefix) and msg_bytes.endswith(terminator):
-            cmd = msg_bytes[len(cmd_prefix):-len(terminator)].decode('utf-8')
+            cmd = msg_bytes[len(cmd_prefix) : -len(terminator)].decode('utf-8')
             response = self._handle_remote_command(cmd, peer_id=peer_id)
             if response is None:
                 return None
             if isinstance(response, AsyncResponse):
                 return True
             from smelly.remote_control import encode_response_for_peer
+
             return encode_response_for_peer(response)
 
-        data:SingleInstanceData = json.loads(msg_bytes.decode('utf-8'))
+        data: SingleInstanceData = json.loads(msg_bytes.decode('utf-8'))
         if isinstance(data, dict) and data.get('cmd') == 'new_instance':
             from .cli_stub import CLIOptions
+
             startup_id = data['environ'].get('DESKTOP_STARTUP_ID', '')
             activation_token = data['environ'].get('XDG_ACTIVATION_TOKEN', '')
             args, rest = parse_args(list(data['args'][1:]), result_class=CLIOptions)
@@ -762,6 +787,7 @@ class Boss:
             opts = create_opts(args)
             if data['session_data']:
                 from .session import PreReadSession
+
                 args.session = PreReadSession(data['session_data'], data['environ'])
             else:
                 args.session = ''
@@ -770,8 +796,8 @@ class Boss:
             focused_os_window = os_window_id = 0
             for session in create_sessions(opts, args, respect_cwd=True):
                 os_window_id = self.add_os_window(
-                    session, wclass=args.cls, wname=args.name, opts_for_size=opts, startup_id=startup_id,
-                    override_title=args.title or None)
+                    session, wclass=args.cls, wname=args.name, opts_for_size=opts, startup_id=startup_id, override_title=args.title or None
+                )
                 if session.focus_os_window:
                     focused_os_window = os_window_id
                 if opts.background_opacity != get_options().background_opacity:
@@ -816,6 +842,7 @@ class Boss:
                 close_action(window)
             except Exception:
                 import traceback
+
                 traceback.print_exc()
         os_window_id = window.os_window_id
         window.destroy()
@@ -834,6 +861,7 @@ class Boss:
                 removal_action(window)
             except Exception:
                 import traceback
+
                 traceback.print_exc()
         del window.actions_on_close[:], window.actions_on_removal[:]
         window = self.active_window
@@ -857,7 +885,9 @@ class Boss:
     def close_window(self) -> None:
         self.mark_window_for_close()
 
-    @ac('win', '''
+    @ac(
+        'win',
+        '''
     Close window with confirmation
 
     Asks for confirmation before closing the window. If you don't want the
@@ -865,7 +895,8 @@ class Boss:
     (requires :ref:`shell_integration`), use::
 
         map f1 close_window_with_confirmation ignore-shell
-    ''')
+    ''',
+    )
     def close_window_with_confirmation(self, ignore_shell: bool = False) -> None:
         window = self.active_window
         if window is None:
@@ -898,10 +929,12 @@ class Boss:
                     self.close_tab(tab)
 
     def confirm(
-        self, msg: str,  # can contain newlines and ANSI formatting
+        self,
+        msg: str,  # can contain newlines and ANSI formatting
         callback: Callable[..., None],  # called with True or False and *args
         *args: Any,  # passed to the callback function
-        window: Optional[Window] = None,  # the window associated with the confirmation
+        window: Optional[Window] = None,
+        # the window associated with the confirmation
         confirm_on_cancel: bool = False,  # on closing window
         confirm_on_accept: bool = True,  # on pressing enter
     ) -> None:
@@ -915,18 +948,26 @@ class Boss:
             callback(result, *args)
 
         self.run_kitten_with_metadata(
-            'ask', ['--type=yesno', '--message', msg, '--default', 'y' if confirm_on_accept else 'n'],
-            window=window, custom_callback=callback_, action_on_removal=on_popup_overlay_removal,
-            default_data={'response': 'y' if confirm_on_cancel else 'n'})
+            'ask',
+            ['--type=yesno', '--message', msg, '--default', 'y' if confirm_on_accept else 'n'],
+            window=window,
+            custom_callback=callback_,
+            action_on_removal=on_popup_overlay_removal,
+            default_data={'response': 'y' if confirm_on_cancel else 'n'},
+        )
 
     def choose(
-        self, msg: str,  # can contain newlines and ANSI formatting
-        callback: Callable[..., None],  # called with the choice or empty string when aborted
-        *choices: str,   # The choices, see the help for the ask kitten for format of a choice
-        window: Optional[Window] = None,  # the window associated with the confirmation
+        self,
+        msg: str,  # can contain newlines and ANSI formatting
+        # called with the choice or empty string when aborted
+        callback: Callable[..., None],
+        *choices: str,  # The choices, see the help for the ask kitten for format of a choice
+        window: Optional[Window] = None,
+        # the window associated with the confirmation
         default: str = '',  # the default choice when the user presses Enter
         hidden_text: str = '',  # text to hide in the message
-        hidden_text_placeholder: str = 'HIDDEN_TEXT_PLACEHOLDER',  # placeholder text to insert in to message
+        # placeholder text to insert in to message
+        hidden_text_placeholder: str = 'HIDDEN_TEXT_PLACEHOLDER',
         unhide_key: str = 'u',  # key to press to unhide hidden text
     ) -> Optional[Window]:
         result: str = ''
@@ -952,19 +993,27 @@ class Boss:
             callback(result)
 
         ans = self.run_kitten_with_metadata(
-            'ask', cmd, window=window, custom_callback=callback_, input_data=input_data, default_data={'response': ''},
-            action_on_removal=on_popup_overlay_removal
+            'ask',
+            cmd,
+            window=window,
+            custom_callback=callback_,
+            input_data=input_data,
+            default_data={'response': ''},
+            action_on_removal=on_popup_overlay_removal,
         )
         if isinstance(ans, Window):
             return ans
         return None
 
     def get_line(
-        self, msg: str,  # can contain newlines and ANSI formatting
-        callback: Callable[..., None],  # called with the answer or empty string when aborted
-        window: Optional[Window] = None,  # the window associated with the confirmation
+        self,
+        msg: str,  # can contain newlines and ANSI formatting
+        # called with the answer or empty string when aborted
+        callback: Callable[..., None],
+        window: Optional[Window] = None,
+        # the window associated with the confirmation
         prompt: str = '> ',
-        is_password: bool = False
+        is_password: bool = False,
     ) -> None:
         result: str = ''
 
@@ -991,10 +1040,10 @@ class Boss:
             tm = tab.tab_manager_ref()
             if tm is not None:
                 tm.set_active_tab(tab)
-        self.confirm(_(
-            'Are you sure you want to close this tab, it has {}'
-            ' windows running?').format(num),
-            self.handle_close_tab_confirmation, tab.id,
+        self.confirm(
+            _('Are you sure you want to close this tab, it has {}' ' windows running?').format(num),
+            self.handle_close_tab_confirmation,
+            tab.id,
             window=tab.active_window,
         )
 
@@ -1057,6 +1106,7 @@ class Boss:
 
         if get_options().update_check_interval > 0 and not self.update_check_started and getattr(sys, 'frozen', False):
             from .update_check import run_update_check
+
             run_update_check(get_options().update_check_interval * 60 * 60)
             self.update_check_started = True
 
@@ -1073,7 +1123,9 @@ class Boss:
             if tm is not None:
                 tm.resize()
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Clear the terminal
 
         See :sc:`reset_terminal <reset_terminal>` for details. For example::
@@ -1088,7 +1140,8 @@ class Boss:
             map f1 clear_terminal scroll active
             # Clear everything up to the line with the cursor
             map f1 clear_terminal to_cursor active
-        ''')
+        ''',
+    )
     def clear_terminal(self, action: str, only_active: bool) -> None:
         if only_active:
             windows = []
@@ -1127,11 +1180,14 @@ class Boss:
     def set_font_size(self, new_size: float) -> None:  # legacy
         self.change_font_size(True, None, new_size)
 
-    @ac('win', '''
+    @ac(
+        'win',
+        '''
         Change the font size for the current or all OS Windows
 
         See :ref:`conf-smelly-shortcuts.fonts` for details.
-        ''')
+        ''',
+    )
     def change_font_size(self, all_windows: bool, increment_operation: Optional[str], amt: float) -> None:
         def calc_new_size(old_size: float) -> float:
             new_size = old_size
@@ -1188,7 +1244,9 @@ class Boss:
     def _set_os_window_background_opacity(self, os_window_id: int, opacity: float) -> None:
         change_background_opacity(os_window_id, max(0.1, min(opacity, 1.0)))
 
-    @ac('win', '''
+    @ac(
+        'win',
+        '''
         Set the background opacity for the active OS Window
 
         For example::
@@ -1196,15 +1254,17 @@ class Boss:
             map f1 set_background_opacity +0.1
             map f2 set_background_opacity -0.1
             map f3 set_background_opacity 0.5
-        ''')
+        ''',
+    )
     def set_background_opacity(self, opacity: str) -> None:
         window = self.active_window
         if window is None or not opacity:
             return
         if not get_options().dynamic_background_opacity:
             self.show_error(
-                    _('Cannot change background opacity'),
-                    _('You must set the dynamic_background_opacity option in smelly.conf to be able to change background opacity'))
+                _('Cannot change background opacity'),
+                _('You must set the dynamic_background_opacity option in smelly.conf to be able to change background opacity'),
+            )
             return
         os_window_id = window.os_window_id
         if opacity[0] in '+-':
@@ -1308,13 +1368,15 @@ class Boss:
             self.current_visual_select = None
 
     def visual_window_select_action(
-        self, tab: Tab,
+        self,
+        tab: Tab,
         callback: Callable[[Optional[Tab], Optional[Window]], None],
         choose_msg: str,
         only_window_ids: Container[int] = (),
-        reactivate_prev_tab: bool = False
+        reactivate_prev_tab: bool = False,
     ) -> None:
         import string
+
         self.cancel_current_visual_select()
         initial_tab_id: Optional[int] = None
         initial_os_window_id = current_os_window()
@@ -1374,17 +1436,17 @@ class Boss:
             self.visual_window_select_action_trigger()
 
     def mouse_event(
-        self, in_tab_bar: bool, window_id: int, action: int, modifiers: int, button: int,
-        currently_pressed_button: int, x: float, y: float
+        self, in_tab_bar: bool, window_id: int, action: int, modifiers: int, button: int, currently_pressed_button: int, x: float, y: float
     ) -> None:
         if self.mouse_handler is not None:
             ev = WindowSystemMouseEvent(in_tab_bar, window_id, action, modifiers, button, currently_pressed_button, x, y)
             self.mouse_handler(ev)
 
     def select_window_in_tab_using_overlay(self, tab: Tab, msg: str, only_window_ids: Container[int] = ()) -> Optional[Window]:
-        windows = tuple((None, f'Current window: {w.title}' if w is self.active_window else w.title)
-                        if only_window_ids and w.id not in only_window_ids else (w.id, w.title)
-                        for i, w in tab.windows.iter_windows_with_number(only_visible=False))
+        windows = tuple(
+            (None, f'Current window: {w.title}' if w is self.active_window else w.title) if only_window_ids and w.id not in only_window_ids else (w.id, w.title)
+            for i, w in tab.windows.iter_windows_with_number(only_visible=False)
+        )
         if len(windows) < 1:
             self.visual_window_select_action_trigger(windows[0][0] if windows and windows[0][0] is not None else 0)
             if get_options().enable_audio_bell:
@@ -1400,19 +1462,22 @@ class Boss:
 
         return self.choose_entry(msg, windows, chosen, hints_args=('--hints-offset=0', '--alphabet', get_options().visual_window_select_characters.lower()))
 
-    @ac('win', '''
+    @ac(
+        'win',
+        '''
         Resize the active window interactively
 
         See :ref:`window_resizing` for details.
-        ''')
+        ''',
+    )
     def start_resizing_window(self) -> None:
         w = self.active_window
         if w is None:
             return
-        overlay_window = self.run_kitten_with_metadata('resize_window', args=[
-            f'--horizontal-increment={get_options().window_resize_step_cells}',
-            f'--vertical-increment={get_options().window_resize_step_lines}'
-        ])
+        overlay_window = self.run_kitten_with_metadata(
+            'resize_window',
+            args=[f'--horizontal-increment={get_options().window_resize_step_cells}', f'--vertical-increment={get_options().window_resize_step_lines}'],
+        )
         if overlay_window is not None:
             overlay_window.allow_remote_control = True
 
@@ -1453,13 +1518,7 @@ class Boss:
                 if t is not None:
                     t.relayout_borders()
 
-    def dispatch_action(
-        self,
-        key_action: KeyAction,
-        window_for_dispatch: Optional[Window] = None,
-        dispatch_type: str = 'KeyPress'
-    ) -> bool:
-
+    def dispatch_action(self, key_action: KeyAction, window_for_dispatch: Optional[Window] = None, dispatch_type: str = 'KeyPress') -> bool:
         def report_match(f: Callable[..., Any]) -> None:
             if self.args.debug_keyboard:
                 prefix = '\n' if dispatch_type == 'KeyPress' else ''
@@ -1489,7 +1548,9 @@ class Boss:
                     return True
         return False
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Combine multiple actions and map to a single keypress
 
         The syntax is::
@@ -1499,7 +1560,8 @@ class Boss:
         For example::
 
             map smelly_mod+e combine : new_window : next_layout
-        ''')
+        ''',
+    )
     def combine(self, action_definition: str, window_for_dispatch: Optional[Window] = None, dispatch_type: str = 'KeyPress') -> bool:
         consumed = False
         if action_definition:
@@ -1507,6 +1569,7 @@ class Boss:
                 actions = get_options().alias_map.resolve_aliases(action_definition, 'map' if dispatch_type == 'KeyPress' else 'mouse_map')
             except Exception as e:
                 import traceback
+
                 traceback.print_exc()
                 self.show_error('Failed to parse action', f'{action_definition}\n{e}')
                 return True
@@ -1518,6 +1581,7 @@ class Boss:
                             self.drain_actions(list(actions[1:]), window_for_dispatch, dispatch_type)
                 except Exception as e:
                     import traceback
+
                     traceback.print_exc()
                     self.show_error('Key action failed', f'{actions[0].pretty()}\n{e}')
                     consumed = True
@@ -1554,6 +1618,7 @@ class Boss:
                     urls = parse_uri_list(text)
                     if w.at_prompt:
                         import shlex
+
                         text = ' '.join(map(shlex.quote, urls))
                     else:
                         text = '\n'.join(urls)
@@ -1583,9 +1648,9 @@ class Boss:
         if tm is not None:
             w = tm.active_window
             self.confirm(
-                _('Are you sure you want to close this OS window, it has {}'
-                  ' windows running?').format(num),
-                self.handle_close_os_window_confirmation, os_window_id,
+                _('Are you sure you want to close this OS window, it has {}' ' windows running?').format(num),
+                self.handle_close_os_window_confirmation,
+                os_window_id,
                 window=w,
             )
 
@@ -1634,6 +1699,7 @@ class Boss:
 
     def notify_on_os_window_death(self, address: str) -> None:
         import socket
+
         s = socket.socket(family=socket.AF_UNIX)
         with suppress(Exception):
             s.connect(address)
@@ -1643,7 +1709,6 @@ class Boss:
             s.close()
 
     def display_scrollback(self, window: Window, data: Union[bytes, str], input_line_number: int = 0, title: str = '', report_cursor: bool = True) -> None:
-
         def prepare_arg(x: str) -> str:
             x = x.replace('INPUT_LINE_NUMBER', str(input_line_number))
             x = x.replace('CURSOR_LINE', str(window.screen.cursor.y + 1) if report_cursor else '0')
@@ -1660,7 +1725,8 @@ class Boss:
         if tab is not None:
             bdata = data.encode('utf-8') if isinstance(data, str) else data
             if is_macos and cmd[0] == '/usr/bin/less' and macos_version()[:2] < (12, 3):
-                # the system less before macOS 12.3 barfs up OSC codes, so sanitize them ourselves
+                # the system less before macOS 12.3 barfs up OSC codes, so
+                # sanitize them ourselves
                 sentinel = os.path.join(cache_dir(), 'less-is-new-enough')
                 if not os.path.exists(sentinel):
                     if less_version(cmd[0]) >= 581:
@@ -1669,9 +1735,8 @@ class Boss:
                         bdata = re.sub(br'\x1b\].*?\x1b\\', b'', bdata)
 
             tab.new_special_window(
-                SpecialWindow(cmd, bdata, title or _('History'), overlay_for=window.id, cwd=window.cwd_of_child),
-                copy_colors_from=self.active_window
-                )
+                SpecialWindow(cmd, bdata, title or _('History'), overlay_for=window.id, cwd=window.cwd_of_child), copy_colors_from=self.active_window
+            )
 
     @ac('misc', 'Edit the smelly.conf config file in your favorite text editor')
     def edit_config_file(self, *a: Any) -> None:
@@ -1687,10 +1752,11 @@ class Boss:
         window: Optional[Window] = None,
         custom_callback: Optional[Callable[[Dict[str, Any], int, 'Boss'], None]] = None,
         action_on_removal: Optional[Callable[[int, 'Boss'], None]] = None,
-        default_data: Optional[Dict[str, Any]] = None
+        default_data: Optional[Dict[str, Any]] = None,
     ) -> Any:
         orig_args, args = list(args), list(args)
         from wellies.runner import create_kitten_handler
+
         end_kitten = create_kitten_handler(kitten, orig_args)
         if window is None:
             w = self.active_window
@@ -1715,8 +1781,10 @@ class Boss:
                     data = sel.encode('utf-8') if sel else None
                 elif q[0] in ('output', 'first_output', 'last_visited_output'):
                     which = {
-                        'output': CommandOutput.last_run, 'first_output': CommandOutput.first_on_screen,
-                        'last_visited_output': CommandOutput.last_visited}[q[0]]
+                        'output': CommandOutput.last_run,
+                        'first_output': CommandOutput.first_on_screen,
+                        'last_visited_output': CommandOutput.last_visited,
+                    }[q[0]]
                     data = w.cmd_output(which, as_ansi='ansi' in q, add_wrap_markers='screen' in q).encode('utf-8')
                 else:
                     raise ValueError(f'Unknown type_of_input: {type_of_input}')
@@ -1745,7 +1813,7 @@ class Boss:
                     overlay_for=w.id,
                     overlay_behind=end_kitten.has_ready_notification,
                 ),
-                copy_colors_from=w
+                copy_colors_from=w,
             )
             wid = w.id
             overlay_window.actions_on_close.append(partial(self.on_kitten_finish, wid, custom_callback or end_kitten, default_data=default_data))
@@ -1754,8 +1822,10 @@ class Boss:
                 def callback_wrapper(*a: Any) -> None:
                     if action_on_removal is not None:
                         action_on_removal(wid, self)
+
                 overlay_window.actions_on_removal.append(callback_wrapper)
             return overlay_window
+
     _run_kitten = run_kitten_with_metadata
 
     @ac('misc', 'Run the specified kitten. See :doc:`/wellies/custom` for details')
@@ -1766,9 +1836,11 @@ class Boss:
         self.run_kitten_with_metadata(kitten, args)
 
     def on_kitten_finish(
-        self, target_window_id: int, end_kitten: Callable[[Dict[str, Any], int, 'Boss'], None],
+        self,
+        target_window_id: int,
+        end_kitten: Callable[[Dict[str, Any], int, 'Boss'], None],
         source_window: Window,
-        default_data: Optional[Dict[str, Any]] = None
+        default_data: Optional[Dict[str, Any]] = None,
     ) -> None:
         data, source_window.kitten_result = source_window.kitten_result, None
         if data is None:
@@ -1781,7 +1853,8 @@ class Boss:
         self.run_kitten_with_metadata('unicode_input')
 
     @ac(
-        'tab', '''
+        'tab',
+        '''
         Change the title of the active tab interactively, by typing in the new title.
         If you specify an argument to this action then that is used as the title instead of asking for it.
         Use the empty string ("") to reset the title to default. For example::
@@ -1792,7 +1865,7 @@ class Boss:
             map f2 set_tab_title some title
             # reset to default
             map f3 set_tab_title ""
-        '''
+        ''',
     )
     def set_tab_title(self, title: Optional[str] = None) -> None:
         tab = self.active_tab
@@ -1803,8 +1876,14 @@ class Boss:
                 tab.set_title(title)
                 return
             args = [
-                '--name=tab-title', '--message', _('Enter the new title for this tab below.'),
-                '--default', tab.name or tab.title, 'do_set_tab_title', str(tab.id)]
+                '--name=tab-title',
+                '--message',
+                _('Enter the new title for this tab below.'),
+                '--default',
+                tab.name or tab.title,
+                'do_set_tab_title',
+                str(tab.id),
+            ]
             self.run_kitten_with_metadata('ask', args)
 
     def do_set_tab_title(self, title: str, tab_id: int) -> None:
@@ -1821,6 +1900,7 @@ class Boss:
         tb = ''
         if ec != (None, None, None):
             import traceback
+
             tb = traceback.format_exc()
         self.run_kitten_with_metadata('show_error', args=['--title', title], input_data=json.dumps({'msg': msg, 'tb': tb}))
 
@@ -1842,11 +1922,12 @@ class Boss:
                     except Exception as err:
                         self.show_error(_('Invalid marker specification'), str(err))
 
-            self.run_kitten_with_metadata('ask', [
-                '--name=create-marker', '--message',
-                _('Create marker, for example:\ntext 1 ERROR\nSee {}\n').format(website_url('marks'))
-                ],
-                custom_callback=done, action_on_removal=done2)
+            self.run_kitten_with_metadata(
+                'ask',
+                ['--name=create-marker', '--message', _('Create marker, for example:\ntext 1 ERROR\nSee {}\n').format(website_url('marks'))],
+                custom_callback=done,
+                action_on_removal=done2,
+            )
 
     @ac('misc', 'Run the smelly shell to control smelly with commands')
     def smelly_shell(self, window_type: str = 'window') -> None:
@@ -1900,6 +1981,7 @@ class Boss:
         found_action = False
         if program is None:
             from .open_actions import actions_for_url
+
             actions = list(actions_for_url(url))
             if actions:
                 found_action = True
@@ -1930,11 +2012,11 @@ class Boss:
         self.run_kitten_with_metadata('hints')
 
     def drain_actions(self, actions: List[KeyAction], window_for_dispatch: Optional[Window] = None, dispatch_type: str = 'KeyPress') -> None:
-
         def callback(timer_id: Optional[int]) -> None:
             self.dispatch_action(actions.pop(0), window_for_dispatch, dispatch_type)
             if actions:
                 self.drain_actions(actions)
+
         add_timer(callback, 0, False)
 
     def destroy(self) -> None:
@@ -1991,11 +2073,14 @@ class Boss:
             return w.has_selection()
         return False
 
-    @ac('cp', '''
+    @ac(
+        'cp',
+        '''
         Copy the selection from the active window to the specified buffer
 
         See :ref:`cpbuf` for details.
-        ''')
+        ''',
+    )
     def copy_to_buffer(self, buffer_name: str) -> None:
         w = self.active_window
         if w is not None and not w.destroyed:
@@ -2008,11 +2093,14 @@ class Boss:
                 else:
                     self.clipboard_buffers[buffer_name] = text
 
-    @ac('cp', '''
+    @ac(
+        'cp',
+        '''
         Paste from the specified buffer to the active window
 
         See :ref:`cpbuf` for details.
-        ''')
+        ''',
+    )
     def paste_from_buffer(self, buffer_name: str) -> None:
         if buffer_name == 'clipboard':
             text: Optional[str] = get_clipboard_string()
@@ -2023,11 +2111,14 @@ class Boss:
         if text:
             self.paste_to_active_window(text)
 
-    @ac('tab', '''
+    @ac(
+        'tab',
+        '''
         Go to the specified tab, by number, starting with 1
 
         Zero and negative numbers go to previously active tabs
-        ''')
+        ''',
+    )
     def goto_tab(self, tab_num: int) -> None:
         tm = self.active_tab_manager
         if tm is not None:
@@ -2054,8 +2145,7 @@ class Boss:
     prev_tab = previous_tab
 
     def process_stdin_source(
-        self, window: Optional[Window] = None,
-        stdin: Optional[str] = None, copy_pipe_data: Optional[Dict[str, Any]] = None
+        self, window: Optional[Window] = None, stdin: Optional[str] = None, copy_pipe_data: Optional[Dict[str, Any]] = None
     ) -> Tuple[Optional[Dict[str, str]], Optional[bytes]]:
         w = window or self.active_window
         if not w:
@@ -2065,17 +2155,14 @@ class Boss:
         if stdin:
             add_wrap_markers = stdin.endswith('_wrap')
             if add_wrap_markers:
-                stdin = stdin[:-len('_wrap')]
+                stdin = stdin[: -len('_wrap')]
             stdin = data_for_at(w, stdin, add_wrap_markers=add_wrap_markers)
             if stdin is not None:
                 pipe_data = w.pipe_data(stdin, has_wrap_markers=add_wrap_markers) if w else None
                 if pipe_data:
                     if copy_pipe_data is not None:
                         copy_pipe_data.update(pipe_data)
-                    env = {
-                        'smelly_PIPE_DATA':
-                        '{scrolled_by}:{cursor_x},{cursor_y}:{lines},{columns}'.format(**pipe_data)
-                    }
+                    env = {'smelly_PIPE_DATA': '{scrolled_by}:{cursor_x},{cursor_y}:{lines},{columns}'.format(**pipe_data)}
                 input_data = stdin.encode('utf-8')
         return env, input_data
 
@@ -2086,11 +2173,7 @@ class Boss:
         return data_for_at(window, which, add_wrap_markers=add_wrap_markers)
 
     def special_window_for_cmd(
-        self, cmd: List[str],
-        window: Optional[Window] = None,
-        stdin: Optional[str] = None,
-        cwd_from: Optional[CwdRequest] = None,
-        as_overlay: bool = False
+        self, cmd: List[str], window: Optional[Window] = None, stdin: Optional[str] = None, cwd_from: Optional[CwdRequest] = None, as_overlay: bool = False
     ) -> SpecialWindowInstance:
         w = window or self.active_window
         env, input_data = self.process_stdin_source(w, stdin)
@@ -2111,9 +2194,10 @@ class Boss:
         cwd: Optional[str] = None,
         env: Optional[Dict[str, str]] = None,
         stdin: Optional[bytes] = None,
-        cwd_from: Optional[CwdRequest] = None
+        cwd_from: Optional[CwdRequest] = None,
     ) -> None:
         import subprocess
+
         env = env or None
         if env:
             env_ = default_env().copy()
@@ -2141,6 +2225,7 @@ class Boss:
                     os.close(r)
             else:
                 subprocess.Popen(cmd, env=env, cwd=cwd, preexec_fn=clear_handled_signals)
+
         if is_wayland():
             run_with_activation_token(doit)
         else:
@@ -2152,8 +2237,7 @@ class Boss:
         cwd_from = CwdRequest(window) if window else None
 
         def create_window() -> SpecialWindowInstance:
-            return self.special_window_for_cmd(
-                cmd, stdin=source, as_overlay=dest == 'overlay', cwd_from=cwd_from)
+            return self.special_window_for_cmd(cmd, stdin=source, as_overlay=dest == 'overlay', cwd_from=cwd_from)
 
         if dest == 'overlay' or dest == 'window':
             tab = self.active_tab
@@ -2255,9 +2339,7 @@ class Boss:
             args = args[1:]
             allow_remote_control = True
         if args:
-            return tab.new_special_window(
-                self.args_to_special_window(args, cwd_from=cwd_from),
-                location=location, allow_remote_control=allow_remote_control)
+            return tab.new_special_window(self.args_to_special_window(args, cwd_from=cwd_from), location=location, allow_remote_control=allow_remote_control)
         else:
             return tab.new_window(cwd_from=cwd_from, location=location, allow_remote_control=allow_remote_control)
 
@@ -2272,13 +2354,17 @@ class Boss:
             return self.new_window(*args)
         self._new_window(list(args), cwd_from=CwdRequest(w))
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Launch the specified program in a new window/tab/etc.
 
         See :doc:`launch` for details
-        ''')
+        ''',
+    )
     def launch(self, *args: str) -> None:
         from smelly.launch import launch, parse_launch_args
+
         opts, args_ = parse_launch_args(args)
         launch(self, opts, args_)
 
@@ -2294,11 +2380,14 @@ class Boss:
         if tm is not None:
             tm.move_tab(-1)
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Turn on/off ligatures in the specified window
 
         See :opt:`disable_ligatures` for details
-        ''')
+        ''',
+    )
     def disable_ligatures_in(self, where: Union[str, Iterable[Window]], strategy: int) -> None:
         if isinstance(where, str):
             windows: List[Window] = []
@@ -2318,6 +2407,7 @@ class Boss:
 
     def patch_colors(self, spec: Dict[str, Optional[int]], configured: bool = False) -> None:
         from smelly.rc.set_colors import nullable_colors
+
         opts = get_options()
         if configured:
             for k, v in spec.items():
@@ -2347,6 +2437,7 @@ class Boss:
         # Update font data
         set_scale(opts.box_drawing_scale)
         from .fonts.render import set_font_family
+
         set_font_family(opts, debug_font_matching=self.args.debug_font_fallback)
         for os_window_id, tm in self.os_window_map.items():
             if tm is not None:
@@ -2363,7 +2454,9 @@ class Boss:
             w.refresh()
         self.prewarm.reload_smelly_config()
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Reload the config file
 
         If mapped without arguments reloads the default config file, otherwise loads
@@ -2371,10 +2464,12 @@ class Boss:
         config options. For example::
 
             map f5 load_config_file /path/to/some/smelly.conf
-        ''')
+        ''',
+    )
     def load_config_file(self, *paths: str, apply_overrides: bool = True) -> None:
         from .cli import default_config_paths
         from .config import load_config
+
         old_opts = get_options()
         prev_paths = old_opts.config_paths or default_config_paths(self.args.config)
         paths = paths or prev_paths
@@ -2384,6 +2479,7 @@ class Boss:
             self.show_bad_config_lines(bad_lines)
         self.apply_new_options(opts)
         from .open_actions import clear_caches
+
         clear_caches()
 
     def safe_delete_temp_file(self, path: str) -> None:
@@ -2403,6 +2499,7 @@ class Boss:
         if update_check_process is not None and pid == update_check_process.pid:
             self.update_check_process = None
             from .update_check import process_current_release
+
             try:
                 assert update_check_process.stdout is not None
                 raw = update_check_process.stdout.read().decode('utf-8')
@@ -2416,6 +2513,7 @@ class Boss:
 
     def dbus_notification_callback(self, activated: bool, a: int, b: Union[int, str]) -> None:
         from .notify import dbus_notification_activated, dbus_notification_created
+
         if activated:
             assert isinstance(b, str)
             dbus_notification_activated(a, b)
@@ -2424,7 +2522,6 @@ class Boss:
             dbus_notification_created(a, b)
 
     def show_bad_config_lines(self, bad_lines: Iterable[BadLine]) -> None:
-
         def format_bad_line(bad_line: BadLine) -> str:
             return f'{bad_line.number}:{bad_line.exception} in line: {bad_line.line}\n'
 
@@ -2441,16 +2538,20 @@ class Boss:
         msg = '\n'.join(ans).rstrip()
         self.show_error(_('Errors parsing configuration'), msg)
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Change colors in the specified windows
 
         For details, see :ref:`at-set-colors`. For example::
 
             map f5 set_colors --configured /path/to/some/config/file/colors.conf
-        ''')
+        ''',
+    )
     def set_colors(self, *args: str) -> None:
         from smelly.rc.base import PayloadGetter, command_for_name, parse_subcommand_cli
         from smelly.remote_control import parse_rc_args
+
         c = command_for_name('set_colors')
         try:
             opts, items = parse_subcommand_cli(c, ['set-colors'] + list(args))
@@ -2465,10 +2566,7 @@ class Boss:
         c.response_from_smelly(self, self.active_window, PayloadGetter(c, payload if isinstance(payload, dict) else {}))
 
     def _move_window_to(
-        self,
-        window: Optional[Window] = None,
-        target_tab_id: Optional[Union[str, int]] = None,
-        target_os_window_id: Optional[Union[str, int]] = None
+        self, window: Optional[Window] = None, target_tab_id: Optional[Union[str, int]] = None, target_os_window_id: Optional[Union[str, int]] = None
     ) -> None:
         window = window or self.active_window
         if not window:
@@ -2520,7 +2618,9 @@ class Boss:
         target_tab.make_active()
 
     def choose_entry(
-        self, title: str, entries: Iterable[Tuple[Union[_T, str, None], str]],
+        self,
+        title: str,
+        entries: Iterable[Tuple[Union[_T, str, None], str]],
         callback: Callable[[Union[_T, str, None]], None],
         subtitle: str = '',
         hints_args: Optional[Tuple[str, ...]] = None,
@@ -2545,17 +2645,16 @@ class Boss:
             callback(ans)
 
         q = self.run_kitten_with_metadata(
-            'hints', args=(
-                '--ascending', '--customize-processing=::import::smelly.choose_entry',
-                '--window-title', title,
-                *(hints_args or ())
-            ), input_data='\r\n'.join(lines).encode('utf-8'), custom_callback=done, action_on_removal=done2
+            'hints',
+            args=('--ascending', '--customize-processing=::import::smelly.choose_entry', '--window-title', title, *(hints_args or ())),
+            input_data='\r\n'.join(lines).encode('utf-8'),
+            custom_callback=done,
+            action_on_removal=done2,
         )
         return q if isinstance(q, Window) else None
 
     @ac('tab', 'Interactively select a tab to switch to')
     def select_tab(self) -> None:
-
         def chosen(ans: Union[None, str, int]) -> None:
             if isinstance(ans, int):
                 for tab in self.all_tabs:
@@ -2570,14 +2669,17 @@ class Boss:
         self.choose_entry(
             'Choose a tab to switch to',
             ((None, f'Current tab: {format_tab_title(t)}') if t is ct else (t.id, format_tab_title(t)) for t in self.all_tabs),
-            chosen
+            chosen,
         )
 
-    @ac('win', '''
+    @ac(
+        'win',
+        '''
         Detach a window, moving it to another tab or OS Window
 
         See :ref:`detaching windows <detach_window>` for details.
-        ''')
+        ''',
+    )
     def detach_window(self, *args: str) -> None:
         if not args or args[0] == 'new':
             return self._move_window_to(target_os_window_id='new')
@@ -2602,11 +2704,14 @@ class Boss:
 
         self.choose_entry('Choose a tab to move the window to', items, chosen)
 
-    @ac('tab', '''
+    @ac(
+        'tab',
+        '''
         Detach a tab, moving it to another OS Window
 
         See :ref:`detaching windows <detach_window>` for details.
-        ''')
+        ''',
+    )
     def detach_tab(self, *args: str) -> None:
         if not args or args[0] == 'new':
             return self._move_tab_to()
@@ -2634,6 +2739,7 @@ class Boss:
     # Can be called with smelly -o "map f1 send_test_notification"
     def send_test_notification(self) -> None:
         from .notify import notify
+
         now = monotonic()
         ident = f'test-notify-{now}'
         notify(f'Test {now}', f'At: {now}', identifier=ident, subtitle=f'Test subtitle {now}')
@@ -2657,17 +2763,21 @@ class Boss:
             output = '\n'.join(f'{k}={v}' for k, v in env.items())
             self.display_scrollback(w, output, title=_('Current smelly env vars'), report_cursor=False)
 
-    @ac('debug', '''
+    @ac(
+        'debug',
+        '''
         Close all shared SSH connections
 
         See :opt:`share_connections <kitten-ssh.share_connections>` for details.
-        ''')
+        ''',
+    )
     def close_shared_ssh_connections(self) -> None:
         cleanup_ssh_control_masters()
 
     def launch_urls(self, *urls: str, no_replace_window: bool = False) -> None:
         from .launch import force_window_launch
         from .open_actions import actions_for_launch
+
         actions: List[KeyAction] = []
         failures = []
         for url in urls:
@@ -2693,6 +2803,7 @@ class Boss:
 
         if failures:
             from wellies.tui.operations import styled
+
             spec = '\n  '.join(styled(u, fg='yellow') for u in failures)
             bdata = json.dumps({'msg': f"Unknown URL type, cannot open:\n  {spec}"}).encode('utf-8')
             special_window = SpecialWindow([smelly_exe(), '+kitten', 'show_error', '--title', 'Open URL Error'], bdata, 'Open URL Error')
@@ -2712,6 +2823,7 @@ class Boss:
     @ac('debug', 'Show the effective configuration smelly is running with')
     def debug_config(self) -> None:
         from .debug_config import debug_config
+
         w = self.active_window
         if w is not None:
             output = debug_config(get_options())
@@ -2722,6 +2834,7 @@ class Boss:
     @ac('misc', 'Discard this event completely ignoring it')
     def discard_event(self) -> None:
         pass
+
     mouse_discard_event = discard_event
 
     def sanitize_url_for_dispay_to_user(self, url: str) -> str:

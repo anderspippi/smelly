@@ -30,7 +30,6 @@ def calc_grid_size(n: int) -> Tuple[int, int, int, int]:
 
 
 class Grid(Layout):
-
     name: str = 'grid'
     no_minimal_window_borders = True
 
@@ -70,8 +69,7 @@ class Grid(Layout):
                 row_num = 0
                 col_num += 1
 
-            for window_idx, xl, yl in self.layout_windows(
-                    num_windows, nrows, ncols, special_rows, special_col, on_col_done):
+            for window_idx, xl, yl in self.layout_windows(num_windows, nrows, ncols, special_rows, special_col, on_col_done):
                 if idx == window_idx:
                     return row_num, col_num
                 row_num += 1
@@ -109,11 +107,7 @@ class Grid(Layout):
         return True
 
     def layout_windows(
-        self,
-        num_windows: int,
-        nrows: int, ncols: int,
-        special_rows: int, special_col: int,
-        on_col_done: Callable[[List[int]], None] = lambda col_windows: None
+        self, num_windows: int, nrows: int, ncols: int, special_rows: int, special_col: int, on_col_done: Callable[[List[int]], None] = lambda col_windows: None
     ) -> Generator[Tuple[int, LayoutData, LayoutData], None, None]:
         # Distribute windows top-to-bottom, left-to-right (i.e. in columns)
         xlayout = self.variable_layout(self.column_layout, ncols, self.biased_cols)
@@ -168,8 +162,7 @@ class Grid(Layout):
             yl = layout(yl, lgd.cell_height, edges.top, edges.bottom)
             self.set_window_group_geometry(wg, xl, yl)
 
-        for window_idx, xl, yl in self.layout_windows(
-                n, nrows, ncols, special_rows, special_col, on_col_done):
+        for window_idx, xl, yl in self.layout_windows(n, nrows, ncols, special_rows, special_col, on_col_done):
             position_window_in_grid_cell(window_idx, xl, yl)
 
     def minimal_borders(self, all_windows: WindowList) -> Generator[BorderLine, None, None]:
@@ -283,14 +276,11 @@ class Grid(Layout):
             return xs
 
         return {
-            'top': neighbors(row-1, col) if row else [],
+            'top': neighbors(row - 1, col) if row else [],
             'bottom': neighbors(row + 1, col),
             'left': side(row, col, -1) if col else [],
             'right': side(row, col, 1) if col < ncols - 1 else [],
         }
 
     def layout_state(self) -> Dict[str, Any]:
-        return {
-            'biased_cols': self.biased_cols,
-            'biased_rows': self.biased_rows
-        }
+        return {'biased_cols': self.biased_cols, 'biased_rows': self.biased_rows}

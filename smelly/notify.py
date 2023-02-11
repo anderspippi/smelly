@@ -29,7 +29,6 @@ if is_macos:
         cocoa_send_notification(identifier, title, body, subtitle)
 
 else:
-
     from .fast_data_types import dbus_send_notification
 
     alloc_map: Dict[int, str] = {}
@@ -68,7 +67,6 @@ def notify_implementation(title: str, body: str, identifier: str) -> None:
 
 
 class NotificationCommand:
-
     done: bool = True
     identifier: str = '0'
     title: str = ''
@@ -187,6 +185,7 @@ def register_identifier(identifier: str, cmd: NotificationCommand, window_id: in
 def notification_activated(identifier: str, activated_implementation: Optional[Callable[[str, int, bool, bool], None]] = None) -> None:
     if identifier == 'new-version':
         from .update_check import notification_activated as do
+
         do()
     elif identifier.startswith('test-notify-'):
         log_error(f'Test notification {identifier} activated')
@@ -215,11 +214,7 @@ def notify_with_command(cmd: NotificationCommand, window_id: int, notify_impleme
 
 
 def handle_notification_cmd(
-    osc_code: int,
-    raw_data: str,
-    window_id: int,
-    prev_cmd: NotificationCommand,
-    notify_implementation: NotifyImplementation = notify_implementation
+    osc_code: int, raw_data: str, window_id: int, prev_cmd: NotificationCommand, notify_implementation: NotifyImplementation = notify_implementation
 ) -> Optional[NotificationCommand]:
     if osc_code == 99:
         cmd = merge_osc_99(prev_cmd, parse_osc_99(raw_data))

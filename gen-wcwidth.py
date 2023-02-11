@@ -28,12 +28,12 @@ from urllib.request import urlopen
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-non_characters = frozenset(range(0xfffe, 0x10ffff, 0x10000))
-non_characters |= frozenset(range(0xffff, 0x10ffff + 1, 0x10000))
-non_characters |= frozenset(range(0xfdd0, 0xfdf0))
+non_characters = frozenset(range(0xFFFE, 0x10FFFF, 0x10000))
+non_characters |= frozenset(range(0xFFFF, 0x10FFFF + 1, 0x10000))
+non_characters |= frozenset(range(0xFDD0, 0xFDF0))
 if len(non_characters) != 66:
     raise SystemExit('non_characters table incorrect')
-emoji_skin_tone_modifiers = frozenset(range(0x1f3fb, 0x1F3FF + 1))
+emoji_skin_tone_modifiers = frozenset(range(0x1F3FB, 0x1F3FF + 1))
 
 
 def get_data(fname: str, folder: str = 'UCD') -> Iterable[str]:
@@ -67,7 +67,7 @@ class_maps: Dict[str, Set[int]] = {}
 all_symbols: Set[int] = set()
 name_map: Dict[int, str] = {}
 word_search_map: DefaultDict[str, Set[int]] = defaultdict(set)
-soft_hyphen = 0xad
+soft_hyphen = 0xAD
 flag_codepoints = frozenset(range(0x1F1E6, 0x1F1E6 + 26))
 # See https://github.com/harfbuzz/harfbuzz/issues/169
 marks = set(emoji_skin_tone_modifiers) | flag_codepoints
@@ -89,7 +89,6 @@ def parse_prop_list() -> None:
 
 
 def parse_ucd() -> None:
-
     def add_word(w: str, c: int) -> None:
         if c <= 32 or c == 127 or 128 <= c <= 159:
             return
@@ -100,7 +99,7 @@ def parse_ucd() -> None:
     for word, c in html5.items():
         if len(c) == 1:
             add_word(word.rstrip(';'), ord(c))
-    word_search_map['nnbsp'].add(0x202f)
+    word_search_map['nnbsp'].add(0x202F)
     for line in get_data('ucd/UnicodeData.txt'):
         parts = [x.strip() for x in line.split(';')]
         codepoint = int(parts[0], 16)
@@ -263,7 +262,7 @@ def parse_eaw() -> None:
 
 def get_ranges(items: List[int]) -> Generator[Union[int, Tuple[int, int]], None, None]:
     items.sort()
-    for k, g in groupby(enumerate(items), lambda m: m[0]-m[1]):
+    for k, g in groupby(enumerate(items), lambda m: m[0] - m[1]):
         group = tuple(map(itemgetter(1), g))
         a, b = group[0], group[-1]
         if a == b:
@@ -331,7 +330,7 @@ def category_test(
     extra_chars: Union[FrozenSet[int], Set[int]] = frozenset(),
     exclude: Union[Set[int], FrozenSet[int]] = frozenset(),
     least_check_return: Optional[str] = None,
-    ascii_range: Optional[str] = None
+    ascii_range: Optional[str] = None,
 ) -> None:
     static = 'static inline ' if use_static else ''
     chars: Set[int] = set()
@@ -360,7 +359,7 @@ def codepoint_to_mark_map(p: Callable[..., None], mark_map: List[int]) -> Dict[i
     for spec in get_ranges(mark_map):
         if isinstance(spec, tuple):
             s = rmap[spec[0]]
-            cases = ' '.join(f'case {i}:' for i in range(spec[0], spec[1]+1))
+            cases = ' '.join(f'case {i}:' for i in range(spec[0], spec[1] + 1))
             p(f'\t\t{cases} return {s} + c - {spec[0]};')
         else:
             p(f'\t\tcase {spec}: return {rmap[spec]};')
@@ -379,7 +378,7 @@ def classes_to_regex(classes: Iterable[str], exclude: str = '') -> Iterable[str]
     def as_string(codepoint: int) -> str:
         if codepoint < 256:
             return fr'\x{codepoint:02x}'
-        if codepoint <= 0xffff:
+        if codepoint <= 0xFFFF:
             return fr'\u{codepoint:04x}'
         return fr'\U{codepoint:08x}'
 
@@ -394,24 +393,15 @@ def gen_ucd() -> None:
     cz = {c for c in class_maps if c[0] in 'CZ'}
     with create_header('smelly/unicode-data.c') as p:
         p('#include "unicode-data.h"')
+        category_test('is_combining_char', p, (), 'Combining and default ignored characters', extra_chars=marks, least_check_return='false')
+        category_test('is_ignored_char', p, 'Cc Cs'.split(), 'Control characters and non-characters', extra_chars=non_characters, ascii_range='false')
         category_test(
-                'is_combining_char', p,
-                (),
-                'Combining and default ignored characters',
-                extra_chars=marks,
-                least_check_return='false'
-        )
-        category_test(
-            'is_ignored_char', p, 'Cc Cs'.split(),
-            'Control characters and non-characters',
-            extra_chars=non_characters,
-            ascii_range='false'
-        )
-        category_test(
-            'is_non_rendered_char', p, 'Cc Cs Cf'.split(),
+            'is_non_rendered_char',
+            p,
+            'Cc Cs Cf'.split(),
             'Other_Default_Ignorable_Code_Point and soft hyphen',
-            extra_chars=property_maps['Other_Default_Ignorable_Code_Point'] | set(range(0xfe00, 0xfe0f + 1)),
-            ascii_range='false'
+            extra_chars=property_maps['Other_Default_Ignorable_Code_Point'] | set(range(0xFE00, 0xFE0F + 1)),
+            ascii_range='false',
         )
         category_test('is_word_char', p, {c for c in class_maps if c[0] in 'LN'}, 'L and N categories')
         category_test('is_CZ_category', p, cz, 'C and Z categories')
@@ -430,9 +420,10 @@ def gen_ucd() -> None:
             f.seek(0)
             raw, num = re.subn(
                 r'^// START_KNOWN_MARKS.+?^// END_KNOWN_MARKS',
-                '// START_KNOWN_MARKS\nstatic const combining_type '
-                f'VS15 = {rmap[0xfe0e]}, VS16 = {rmap[0xfe0f]};'
-                '\n// END_KNOWN_MARKS', raw, flags=re.MULTILINE | re.DOTALL)
+                '// START_KNOWN_MARKS\nstatic const combining_type ' f'VS15 = {rmap[0xfe0e]}, VS16 = {rmap[0xfe0f]};' '\n// END_KNOWN_MARKS',
+                raw,
+                flags=re.MULTILINE | re.DOTALL,
+            )
             if not num:
                 raise SystemExit('Faile dto patch mark definitions in unicode-data.h')
             f.truncate()
@@ -501,7 +492,6 @@ def gen_names() -> None:
         all_trie_nodes: List['TrieNode'] = []
 
         class TrieNode:
-
             def __init__(self) -> None:
                 self.match_offset = 0
                 self.children_offset = 0
@@ -534,7 +524,7 @@ def gen_names() -> None:
                 node.children_offset = len(children_array)
                 children_array.append(len(node.children))
                 for letter, child_offset in node.children.items():
-                    children_array.append((child_offset << 8) | (letter & 0xff))
+                    children_array.append((child_offset << 8) | (letter & 0xFF))
 
         p(f'static const word_trie all_trie_nodes[{len(all_trie_nodes)}] = {{' ' // {{{')
         p(',\n'.join(map(str, all_trie_nodes)))

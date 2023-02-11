@@ -34,7 +34,6 @@ class CompletionRelativeTo(Enum):
 
 @dataclass
 class CompletionSpec:
-
     type: CompletionType = CompletionType.none
     kwds: Sequence[str] = ()
     extensions: Sequence[str] = ()
@@ -113,12 +112,18 @@ def serialize_as_go_string(x: str) -> str:
 
 
 go_type_map = {
-    'bool-set': 'bool', 'bool-reset': 'bool', 'int': 'int', 'float': 'float64',
-    '': 'string', 'list': '[]string', 'choices': 'string', 'str': 'string'}
+    'bool-set': 'bool',
+    'bool-reset': 'bool',
+    'int': 'int',
+    'float': 'float64',
+    '': 'string',
+    'list': '[]string',
+    'choices': 'string',
+    'str': 'string',
+}
 
 
 class GoOption:
-
     def __init__(self, x: OptionDict) -> None:
         flags = sorted(x['aliases'], key=len)
         short = ''
@@ -201,8 +206,7 @@ with lower priority) than any user config files. It can be used to specify
 system-wide defaults for all users. You can use either :code:`-` or
 :file:`/dev/stdin` to read the config from STDIN.
 '''.replace(
-    '{macos_confpath}',
-    (' :file:`~/Library/Preferences/{appname}/{conf_name}.conf`,' if is_macos else ''), 1
+    '{macos_confpath}', (' :file:`~/Library/Preferences/{appname}/{conf_name}.conf`,' if is_macos else ''), 1
 )
 
 
@@ -306,6 +310,7 @@ role_map['envvar'] = role_map['env']
 @run_once
 def hostname() -> str:
     from .utils import get_hostname
+
     return get_hostname(fallback='localhost')
 
 
@@ -334,6 +339,7 @@ def doc(x: str) -> str:
     t, q = text_and_target(x)
     if t == q:
         from .conf.types import ref_map
+
         m = ref_map()['doc']
         q = q.strip('/')
         if q in m:
@@ -388,8 +394,15 @@ def parse_option_spec(spec: Optional[str] = None) -> Tuple[OptionSpecSeq, Option
     disabled: OptionSpecSeq = []
     mpat = re.compile('([a-z]+)=(.+)')
     current_cmd: OptionDict = {
-        'dest': '', 'aliases': frozenset(), 'help': '', 'choices': frozenset(),
-        'type': '', 'condition': False, 'default': None, 'completion': CompletionSpec(), 'name': ''
+        'dest': '',
+        'aliases': frozenset(),
+        'help': '',
+        'choices': frozenset(),
+        'type': '',
+        'condition': False,
+        'default': None,
+        'completion': CompletionSpec(),
+        'name': '',
     }
     empty_cmd = current_cmd
 
@@ -408,9 +421,15 @@ def parse_option_spec(spec: Optional[str] = None) -> Tuple[OptionSpecSeq, Option
                 parts = line.split(' ')
                 defdest = parts[0][2:].replace('-', '_')
                 current_cmd = {
-                    'dest': defdest, 'aliases': frozenset(parts), 'help': '',
-                    'choices': frozenset(), 'type': '', 'name': defdest,
-                    'default': None, 'condition': True, 'completion': CompletionSpec(),
+                    'dest': defdest,
+                    'aliases': frozenset(parts),
+                    'help': '',
+                    'choices': frozenset(),
+                    'type': '',
+                    'name': defdest,
+                    'default': None,
+                    'condition': True,
+                    'completion': CompletionSpec(),
                 }
                 state = METADATA
                 continue
@@ -467,7 +486,6 @@ def parse_option_spec(spec: Optional[str] = None) -> Tuple[OptionSpecSeq, Option
 
 
 def prettify(text: str) -> str:
-
     def identity(x: str) -> str:
         return x
 
@@ -486,6 +504,7 @@ def prettify_rst(text: str) -> str:
 def version(add_rev: bool = False) -> str:
     rev = ''
     from . import fast_data_types
+
     if add_rev and hasattr(fast_data_types, 'smelly_VCS_REV'):
         rev = f' ({fast_data_types.smelly_VCS_REV[:10]})'
     return '{} {}{} created by {}'.format(italic(appname), green(str_version), rev, title('anders Goyal'))
@@ -525,7 +544,7 @@ def wrap(text: str, limit: int = 80) -> Iterator[str]:
         if in_escape > 0:
             if in_escape == 1 and ch in '[]':
                 in_escape = 2 if ch == '[' else 3
-            if (in_escape == 2 and ch == 'm') or (in_escape == 3 and ch == '\\' and text[i-1] == '\x1b'):
+            if (in_escape == 2 and ch == 'm') or (in_escape == 3 and ch == '\\' and text[i - 1] == '\x1b'):
                 in_escape = 0
             escapes.append(ch)
             continue
@@ -552,22 +571,23 @@ def get_defaults_from_seq(seq: OptionSpecSeq) -> Dict[str, Any]:
     return ans
 
 
-default_msg = ('''\
+default_msg = (
+    '''\
 Run the :italic:`{appname}` terminal emulator. You can also specify the
 :italic:`program` to run inside :italic:`{appname}` as normal arguments
 following the :italic:`options`.
 For example: {appname} --hold sh -c "echo hello, world"
 
-For comprehensive documentation for smelly, please see: {url}''').format(
-    appname=appname, url=website_url())
+For comprehensive documentation for smelly, please see: {url}'''
+).format(appname=appname, url=website_url())
 
 
 class PrintHelpForSeq:
-
     allow_pager = True
 
     def __call__(self, seq: OptionSpecSeq, usage: Optional[str], message: Optional[str], appname: str) -> None:
         from smelly.utils import screen_size_function
+
         screen_size = screen_size_function()
         try:
             linesz = min(screen_size().cols, 76)
@@ -622,6 +642,7 @@ class PrintHelpForSeq:
         text = '\n'.join(blocks) + '\n\n' + version()
         if print_help_for_seq.allow_pager and sys.stdout.isatty():
             import subprocess
+
             try:
                 p = subprocess.Popen(default_pager_for_help, stdin=subprocess.PIPE, preexec_fn=clear_handled_signals)
             except FileNotFoundError:
@@ -639,14 +660,9 @@ class PrintHelpForSeq:
 print_help_for_seq = PrintHelpForSeq()
 
 
-def seq_as_rst(
-    seq: OptionSpecSeq,
-    usage: Optional[str],
-    message: Optional[str],
-    appname: Optional[str],
-    heading_char: str = '-'
-) -> str:
+def seq_as_rst(seq: OptionSpecSeq, usage: Optional[str], message: Optional[str], appname: Optional[str], heading_char: str = '-') -> str:
     import textwrap
+
     blocks: List[str] = []
     a = blocks.append
 
@@ -695,6 +711,7 @@ def seq_as_rst(
 
 def as_type_stub(seq: OptionSpecSeq, disabled: OptionSpecSeq, class_name: str, extra_fields: Sequence[str] = ()) -> str:
     from itertools import chain
+
     ans: List[str] = [f'class {class_name}:']
     for opt in chain(seq, disabled):
         if isinstance(opt, str):
@@ -738,7 +755,6 @@ def defval_for_opt(opt: OptionDict) -> Any:
 
 
 class Options:
-
     def __init__(self, seq: OptionSpecSeq, usage: Optional[str], message: Optional[str], appname: Optional[str]):
         self.alias_map = {}
         self.seq = seq
@@ -786,16 +802,14 @@ class Options:
         elif typ == 'choices':
             choices = opt['choices']
             if val not in choices:
-                raise SystemExit('{} is not a valid value for the {} option. Valid values are: {}'.format(
-                    val, emph(alias), ', '.join(choices)))
+                raise SystemExit('{} is not a valid value for the {} option. Valid values are: {}'.format(val, emph(alias), ', '.join(choices)))
             self.values_map[name] = val
         elif typ in nmap:
             f = nmap[typ]
             try:
                 self.values_map[name] = f(val)
             except Exception:
-                raise SystemExit('{} is not a valid value for the {} option, a number is required.'.format(
-                    val, emph(alias)))
+                raise SystemExit('{} is not a valid value for the {} option, a number is required.'.format(val, emph(alias)))
         else:
             self.values_map[name] = val
 
@@ -1009,24 +1023,26 @@ This option is deprecated in favor of the :opt:`watcher` option in
 type=bool-set
 !
 '''
-        setattr(options_spec, 'ans', OPTIONS.format(
-            appname=appname, conf_name=appname,
-            config_help=CONFIG_HELP.format(appname=appname, conf_name=appname),
-        ))
+        setattr(
+            options_spec,
+            'ans',
+            OPTIONS.format(
+                appname=appname,
+                conf_name=appname,
+                config_help=CONFIG_HELP.format(appname=appname, conf_name=appname),
+            ),
+        )
     ans: str = getattr(options_spec, 'ans')
     return ans
 
 
 def options_for_completion() -> OptionSpecSeq:
-    raw = '--help -h\ntype=bool-set\nShow help for {appname} command line options\n\n{raw}'.format(
-            appname=appname, raw=options_spec())
+    raw = '--help -h\ntype=bool-set\nShow help for {appname} command line options\n\n{raw}'.format(appname=appname, raw=options_spec())
     return parse_option_spec(raw)[0]
 
 
 def option_spec_as_rst(
-    ospec: Callable[[], str] = options_spec,
-    usage: Optional[str] = None, message: Optional[str] = None, appname: Optional[str] = None,
-    heading_char: str = '-'
+    ospec: Callable[[], str] = options_spec, usage: Optional[str] = None, message: Optional[str] = None, appname: Optional[str] = None, heading_char: str = '-'
 ) -> str:
     options = parse_option_spec(ospec())
     seq, disabled = options
@@ -1064,6 +1080,7 @@ def default_config_paths(conf_paths: Sequence[str]) -> Tuple[str, ...]:
 
 def create_opts(args: CLIOptions, accumulate_bad_lines: Optional[List[BadLineType]] = None) -> smellyOpts:
     from .config import load_config
+
     config = default_config_paths(args.config)
     # Does not cover the case where `name =` when `=` is the value.
     pat = re.compile(r'^([a-zA-Z0-9_]+)[ \t]*=')
@@ -1074,6 +1091,7 @@ def create_opts(args: CLIOptions, accumulate_bad_lines: Optional[List[BadLineTyp
 
 def create_default_opts() -> smellyOpts:
     from .config import load_config
+
     config = default_config_paths(())
     opts = load_config(*config)
     return opts

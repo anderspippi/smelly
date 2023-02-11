@@ -10,7 +10,6 @@ if TYPE_CHECKING:
 
 
 class NewWindow(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
     match/str: The tab to open the new window in
@@ -33,7 +32,9 @@ class NewWindow(RemoteCommand):
         ' are provided, the default shell is run. For example::\n\n'
         '    smelly @ new-window --title Email mutt'
     )
-    options_spec = MATCH_TAB_OPTION + '''\n
+    options_spec = (
+        MATCH_TAB_OPTION
+        + '''\n
 --title
 The title for the new window. By default it will use the title set by the
 program running in it.
@@ -71,6 +72,7 @@ Don't wait for a response giving the id of the newly opened window. Note that
 using this option means that you will not be notified of failures and that
 the id of the new window will not be printed out.
 '''
+    )
     args = RemoteCommand.Args(spec='[CMD ...]', json_field='args')
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
@@ -88,6 +90,7 @@ the id of the new window will not be printed out.
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
         from .launch import launch
+
         return launch.response_from_smelly(boss, window, payload_get)
 
 

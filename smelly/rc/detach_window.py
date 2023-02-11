@@ -10,7 +10,6 @@ if TYPE_CHECKING:
 
 
 class DetachWindow(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     match/str: Which window to detach
     target_tab/str: Which tab to move the detached window to
@@ -24,14 +23,17 @@ class DetachWindow(RemoteCommand):
         ' to move to a new tab. If no target tab is specified the windows are moved to a new OS window.'
     )
     options_spec = (
-        MATCH_WINDOW_OPTION + '\n\n' + MATCH_TAB_OPTION.replace('--match -m', '--target-tab -t') +
-        '''Use the special value :code:`new` to move to a new tab.
+        MATCH_WINDOW_OPTION
+        + '\n\n'
+        + MATCH_TAB_OPTION.replace('--match -m', '--target-tab -t')
+        + '''Use the special value :code:`new` to move to a new tab.
 
 
 --self
 type=bool-set
 Detach the window this command is run in, rather than the active window.
-''')
+'''
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         return {'match': opts.match, 'target_tab': opts.target_tab, 'self': opts.self}

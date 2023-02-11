@@ -44,7 +44,8 @@ def parse_options(argv: List[str]) -> argparse.Namespace:
     p.add_argument('-V', '--version', action='store_true')
     p.add_argument('--vimgrep', action='store_true')
     p.add_argument(
-        '-p', '--pretty',
+        '-p',
+        '--pretty',
         default=sys.stdout.isatty(),
         action='store_true',
     )
@@ -80,7 +81,7 @@ def main() -> None:
 
     while i < len(sys.argv):
         if sys.argv[i] == '--kitten':
-            del sys.argv[i:i+2]
+            del sys.argv[i : i + 2]
         elif sys.argv[i].startswith('--kitten='):
             del sys.argv[i]
         else:
@@ -91,20 +92,22 @@ def main() -> None:
     link_context_lines = 'context_lines' in link_options
     link_matching_lines = 'matching_lines' in link_options
 
-    if any((
-        args.context_separator != '--',
-        args.field_context_separator != '-',
-        args.field_match_separator != '-',
-        args.help,
-        args.json,
-        args.no_filename,
-        args.null,
-        args.null_data,
-        args.path_separator != os.path.sep,
-        args.type_list,
-        args.version,
-        not args.pretty,
-    )):
+    if any(
+        (
+            args.context_separator != '--',
+            args.field_context_separator != '-',
+            args.field_match_separator != '-',
+            args.help,
+            args.json,
+            args.no_filename,
+            args.null,
+            args.null_data,
+            args.path_separator != os.path.sep,
+            args.type_list,
+            args.version,
+            not args.pretty,
+        )
+    ):
         delegate_to_rg = True
 
     if delegate_to_rg:

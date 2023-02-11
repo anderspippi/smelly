@@ -18,7 +18,9 @@ class CloseWindow(RemoteCommand):
     '''
 
     short_desc = 'Close the specified windows'
-    options_spec = MATCH_WINDOW_OPTION + '''\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n
 --no-response
 type=bool-set
 default=false
@@ -35,6 +37,7 @@ Close the window this command is run in, rather than the active window.
 type=bool-set
 Do not return an error if no windows are matched to be closed.
 '''
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         return {'match': opts.match, 'self': opts.self, 'ignore_no_match': opts.ignore_no_match}

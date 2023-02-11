@@ -37,7 +37,6 @@ T = TypeVar('T')
 
 
 class OptionsProtocol(Protocol):
-
     def _asdict(self) -> Dict[str, Any]:
         pass
 
@@ -77,7 +76,6 @@ def to_bool(x: str) -> bool:
 
 
 class ToCmdline:
-
     def __init__(self) -> None:
         self.override_env: Optional[Dict[str, str]] = None
 
@@ -97,14 +95,7 @@ class ToCmdline:
         ans = shlex.split(x)
         if expand:
             ans = list(
-                map(
-                    lambda y: expandvars(
-                        os.path.expanduser(y),
-                        os.environ if self.override_env is None else self.override_env,
-                        fallback_to_os_env=False
-                    ),
-                    ans
-                )
+                map(lambda y: expandvars(os.path.expanduser(y), os.environ if self.override_env is None else self.override_env, fallback_to_os_env=False), ans)
             )
         return ans
 
@@ -118,12 +109,12 @@ def to_cmdline(x: str, expand: bool = True) -> List[str]:
 
 def python_string(text: str) -> str:
     from ast import literal_eval
+
     ans: str = literal_eval("'''" + text.replace("'''", "'\\''") + "'''")
     return ans
 
 
 class Choice:
-
     def __init__(self, choices: Sequence[str]):
         self.defval = choices[0]
         self.all_choices = frozenset(choices)
@@ -185,7 +176,6 @@ def os_name() -> str:
 
 
 class NamedLineIterator:
-
     def __init__(self, name: str, lines: Iterator[str]):
         self.lines = lines
         self.name = name
@@ -195,11 +185,7 @@ class NamedLineIterator:
 
 
 def parse_line(
-    line: str,
-    parse_conf_item: ItemParser,
-    ans: Dict[str, Any],
-    base_path_for_includes: str,
-    accumulate_bad_lines: Optional[List[BadLine]] = None
+    line: str, parse_conf_item: ItemParser, ans: Dict[str, Any], base_path_for_includes: str, accumulate_bad_lines: Optional[List[BadLine]] = None
 ) -> None:
     line = line.strip()
     if not line or line.startswith('#'):
@@ -213,9 +199,11 @@ def parse_line(
         val = expandvars(os.path.expanduser(val.strip()), {'smelly_OS': os_name()})
         if key == 'globinclude':
             from pathlib import Path
+
             vals = tuple(map(lambda x: str(os.fspath(x)), sorted(Path(base_path_for_includes).glob(val))))
         elif key == 'envinclude':
             from fnmatch import fnmatchcase
+
             for x in os.environ:
                 if fnmatchcase(x, val):
                     with currently_parsing.set_file(f'<env var: {x}>'):
@@ -223,7 +211,7 @@ def parse_line(
                             NamedLineIterator(os.path.join(base_path_for_includes, ''), iter(os.environ[x].splitlines())),
                             parse_conf_item,
                             ans,
-                            accumulate_bad_lines
+                            accumulate_bad_lines,
                         )
             return
         else:
@@ -236,31 +224,21 @@ def parse_line(
                     with currently_parsing.set_file(val):
                         _parse(include, parse_conf_item, ans, accumulate_bad_lines)
             except FileNotFoundError:
-                log_error(
-                    'Could not find included config file: {}, ignoring'.
-                    format(val)
-                )
+                log_error('Could not find included config file: {}, ignoring'.format(val))
             except OSError:
-                log_error(
-                    'Could not read from included config file: {}, ignoring'.
-                    format(val)
-                )
+                log_error('Could not read from included config file: {}, ignoring'.format(val))
         return
     if not parse_conf_item(key, val, ans):
         log_error(f'Ignoring unknown config key: {key}')
 
 
-def _parse(
-    lines: Iterable[str],
-    parse_conf_item: ItemParser,
-    ans: Dict[str, Any],
-    accumulate_bad_lines: Optional[List[BadLine]] = None
-) -> None:
+def _parse(lines: Iterable[str], parse_conf_item: ItemParser, ans: Dict[str, Any], accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
     name = getattr(lines, 'name', None)
     if name:
         base_path_for_includes = os.path.abspath(name) if name.endswith(os.path.sep) else os.path.dirname(os.path.abspath(name))
     else:
         from ..constants import config_dir
+
         base_path_for_includes = config_dir
     for i, line in enumerate(lines):
         try:
@@ -272,15 +250,8 @@ def _parse(
             accumulate_bad_lines.append(BadLine(i + 1, line.rstrip(), e, currently_parsing.file))
 
 
-def parse_config_base(
-    lines: Iterable[str],
-    parse_conf_item: ItemParser,
-    ans: Dict[str, Any],
-    accumulate_bad_lines: Optional[List[BadLine]] = None
-) -> None:
-    _parse(
-        lines, parse_conf_item, ans, accumulate_bad_lines
-    )
+def parse_config_base(lines: Iterable[str], parse_conf_item: ItemParser, ans: Dict[str, Any], accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
+    _parse(lines, parse_conf_item, ans, accumulate_bad_lines)
 
 
 def merge_dicts(defaults: Dict[str, Any], newvals: Dict[str, Any]) -> Dict[str, Any]:
@@ -341,12 +312,12 @@ class KeyFuncWrapper(Generic[ReturnType]):
         self.args_funcs: Dict[str, KeyFunc[ReturnType]] = {}
 
     def __call__(self, *names: str) -> Callable[[KeyFunc[ReturnType]], KeyFunc[ReturnType]]:
-
         def w(f: KeyFunc[ReturnType]) -> KeyFunc[ReturnType]:
             for name in names:
                 if self.args_funcs.setdefault(name, f) is not f:
                     raise ValueError(f'the args_func {name} is being redefined')
             return f
+
         return w
 
     def get(self, name: str) -> Optional[KeyFunc[ReturnType]]:
@@ -379,9 +350,7 @@ def parse_wellies_func_args(action: str, args_funcs: Dict[str, KeyFunc[Tuple[str
     try:
         parser = args_funcs[func]
     except KeyError as e:
-        raise KeyError(
-            f'Unknown action: {func}. Check if map action: {action} is valid'
-        ) from e
+        raise KeyError(f'Unknown action: {func}. Check if map action: {action} is valid') from e
 
     try:
         func, args = parser(func, rest)
@@ -389,7 +358,7 @@ def parse_wellies_func_args(action: str, args_funcs: Dict[str, KeyFunc[Tuple[str
         raise ValueError(f'Unknown key action: {action}')
 
     if not isinstance(args, (list, tuple)):
-        args = (args, )
+        args = (args,)
 
     return KeyAction(func, tuple(args))
 
@@ -398,10 +367,9 @@ welliesKeyDefinition = Tuple[ParsedShortcut, KeyAction]
 welliesKeyMap = Dict[ParsedShortcut, KeyAction]
 
 
-def parse_wellies_key(
-    val: str, funcs_with_args: Dict[str, KeyFunc[Tuple[str, Any]]]
-) -> Optional[welliesKeyDefinition]:
+def parse_wellies_key(val: str, funcs_with_args: Dict[str, KeyFunc[Tuple[str, Any]]]) -> Optional[welliesKeyDefinition]:
     from ..key_encoding import parse_shortcut
+
     sc, action = val.partition(' ')[::2]
     if not sc or not action:
         return None

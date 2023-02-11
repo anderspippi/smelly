@@ -18,12 +18,16 @@ def patch_color_list(path: str, colors: List[str], name: str, spc: str = '    ')
             nraw = re.sub(
                 fr'(// {name}_COLORS_START).+?(\s+// {name}_COLORS_END)',
                 r'\1' + f'\n{spc}' + f'\n{spc}'.join(map(lambda x: f'"{x}":true,', colors)) + r'\2',
-                raw, flags=re.DOTALL | re.MULTILINE)
+                raw,
+                flags=re.DOTALL | re.MULTILINE,
+            )
         else:
             nraw = re.sub(
                 fr'(# {name}_COLORS_START).+?(\s+# {name}_COLORS_END)',
                 r'\1' + f'\n{spc}' + f'\n{spc}'.join(map(lambda x: f'{x!r},', colors)) + r'\2',
-                raw, flags=re.DOTALL | re.MULTILINE)
+                raw,
+                flags=re.DOTALL | re.MULTILINE,
+            )
         if nraw != raw:
             f.seek(0)
             f.truncate()
@@ -35,6 +39,7 @@ def patch_color_list(path: str, colors: List[str], name: str, spc: str = '    ')
 
 def main() -> None:
     from smelly.options.definition import definition
+
     write_output('smelly', definition)
     nullable_colors = []
     all_colors = []
@@ -50,8 +55,10 @@ def main() -> None:
     patch_color_list('wellies/themes/collection.py', all_colors, 'ALL', ' ' * 8)
 
     from wellies.diff.options.definition import definition as kd
+
     write_output('wellies.diff', kd)
     from wellies.ssh.options.definition import definition as sd
+
     write_output('wellies.ssh', sd)
 
 

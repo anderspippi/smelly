@@ -9,12 +9,14 @@ from typing import List
 
 def icat(args: List[str]) -> None:
     from wellies.runner import run_kitten as rk
+
     sys.argv = args
     rk('icat')
 
 
 def list_fonts(args: List[str]) -> None:
     from smelly.fonts.list import main as list_main
+
     list_main(args)
 
 
@@ -27,6 +29,7 @@ def runpy(args: List[str]) -> None:
 
 def hold(args: List[str]) -> None:
     from smelly.constants import kitten_exe
+
     args = ['kitten', '__hold_till_enter__'] + args[1:]
     os.execvp(kitten_exe(), args)
 
@@ -37,9 +40,10 @@ def complete(args: List[str]) -> None:
         raise SystemExit(1)
     if args[1] == 'fish2':
         args[1:1] = ['fish', '_legacy_completion=fish2']
-    elif len(args) >= 3 and args [1:3] == ['setup', 'fish2']:
+    elif len(args) >= 3 and args[1:3] == ['setup', 'fish2']:
         args[2] = 'fish'
     from smelly.constants import kitten_exe
+
     args = ['kitten', '__complete__'] + args[1:]
     os.execvp(kitten_exe(), args)
 
@@ -48,11 +52,13 @@ def open_urls(args: List[str]) -> None:
     setattr(sys, 'cmdline_args_for_open', True)
     sys.argv = ['smelly'] + args[1:]
     from smelly.main import main as smelly_main
+
     smelly_main()
 
 
 def launch(args: List[str]) -> None:
     import runpy
+
     sys.argv = args[1:]
     try:
         exe = args[1]
@@ -65,6 +71,7 @@ def launch(args: List[str]) -> None:
         )
     if exe.startswith(':'):
         import shutil
+
         q = shutil.which(exe[1:])
         if not q:
             raise SystemExit(f'{exe[1:]} not found in PATH')
@@ -78,17 +85,23 @@ def edit(args: List[str]) -> None:
     import shutil
 
     from .constants import is_macos
+
     if is_macos:
-        # On macOS vim fails to handle SIGWINCH if it occurs early, so add a small delay.
+        # On macOS vim fails to handle SIGWINCH if it occurs early, so add a
+        # small delay.
         import time
+
         time.sleep(0.05)
     exe = args[1]
     if not os.path.isabs(exe):
         exe = shutil.which(exe) or ''
     if not exe or not os.access(exe, os.X_OK):
-        print('Cannot find an editor on your system. Set the \x1b[33meditor\x1b[39m value in smelly.conf'
-              ' to the absolute path of your editor of choice.', file=sys.stderr)
+        print(
+            'Cannot find an editor on your system. Set the \x1b[33meditor\x1b[39m value in smelly.conf' ' to the absolute path of your editor of choice.',
+            file=sys.stderr,
+        )
         from smelly.utils import hold_till_enter
+
         hold_till_enter()
         raise SystemExit(1)
     os.execv(exe, args[1:])
@@ -120,10 +133,12 @@ def run_kitten(args: List[str]) -> None:
         kitten = args[1]
     except IndexError:
         from wellies.runner import list_wellies
+
         list_wellies()
         raise SystemExit(1)
     sys.argv = args[1:]
     from wellies.runner import run_kitten as rk
+
     rk(kitten)
 
 
@@ -131,6 +146,7 @@ def edit_config_file(args: List[str]) -> None:
     from smelly.cli import create_default_opts
     from smelly.fast_data_types import set_options
     from smelly.utils import edit_config_file as f
+
     set_options(create_default_opts())
     f()
 
@@ -152,7 +168,6 @@ entry_points = {
     # These two are here for backwards compat
     'icat': icat,
     'list-fonts': list_fonts,
-
     '+': namespaced,
 }
 namespaced_entry_points = {k: v for k, v in entry_points.items() if k[0] not in '+@'}
@@ -192,6 +207,7 @@ def main() -> None:
             namespaced(['+', first_arg[1:]] + sys.argv[2:])
         else:
             from smelly.main import main as smelly_main
+
             smelly_main()
     else:
         func(sys.argv[1:])

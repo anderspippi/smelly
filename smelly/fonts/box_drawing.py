@@ -12,7 +12,7 @@ from functools import partial as p
 from itertools import repeat
 from typing import Any, Callable, Dict, Iterable, Iterator, List, MutableSequence, Optional, Sequence, Tuple
 
-scale = (0.001, 1., 1.5, 2.)
+scale = (0.001, 1.0, 1.5, 2.0)
 _dpi = 96.0
 BufType = MutableSequence[int]
 
@@ -28,7 +28,7 @@ def thickness(level: int = 1, horizontal: bool = True) -> int:
 
 
 def draw_hline(buf: BufType, width: int, x1: int, x2: int, y: int, level: int) -> None:
-    ' Draw a horizontal line between [x1, x2) centered at y with the thickness given by level '
+    'Draw a horizontal line between [x1, x2) centered at y with the thickness given by level'
     sz = thickness(level=level, horizontal=False)
     start = y - sz // 2
     for y in range(start, start + sz):
@@ -38,7 +38,7 @@ def draw_hline(buf: BufType, width: int, x1: int, x2: int, y: int, level: int) -
 
 
 def draw_vline(buf: BufType, width: int, y1: int, y2: int, x: int, level: int) -> None:
-    ' Draw a vertical line between [y1, y2) centered at x with the thickness given by level '
+    'Draw a vertical line between [y1, y2) centered at x with the thickness given by level'
     sz = thickness(level=level, horizontal=True)
     start = x - sz // 2
     for x in range(start, start + sz):
@@ -60,7 +60,7 @@ def get_holes(sz: int, hole_sz: int, num: int) -> List[Tuple[int, ...]]:
     all_holes_use = (num + 1) * hole_sz
     individual_block_size = (sz - all_holes_use) // (num + 1)
     half_hole_sz = hole_sz // 2
-    pos = - half_hole_sz
+    pos = -half_hole_sz
     holes = []
     while pos < sz:
         left = max(0, pos)
@@ -178,7 +178,9 @@ def supersampled(supersample_factor: int = 4) -> Callable[[Callable[..., None]],
             ssbuf.supersample_factor = supersample_factor
             f(ssbuf, w, h, *args, **kw)
             downsample(ssbuf, buf, width, height, factor=supersample_factor)
+
         return supersampled_wrapper
+
     return create_wrapper
 
 
@@ -218,15 +220,15 @@ def corner_triangle(buf: SSByteArray, width: int, height: int, corner: str) -> N
     if corner == 'top-right' or corner == 'bottom-left':
         diagonal_y = line_equation(0, 0, width - 1, height - 1)
         if corner == 'top-right':
-            xlimits = [(0., diagonal_y(x)) for x in range(width)]
+            xlimits = [(0.0, diagonal_y(x)) for x in range(width)]
         elif corner == 'bottom-left':
-            xlimits = [(diagonal_y(x), height - 1.) for x in range(width)]
+            xlimits = [(diagonal_y(x), height - 1.0) for x in range(width)]
     else:
         diagonal_y = line_equation(width - 1, 0, 0, height - 1)
         if corner == 'top-left':
-            xlimits = [(0., diagonal_y(x)) for x in range(width)]
+            xlimits = [(0.0, diagonal_y(x)) for x in range(width)]
         elif corner == 'bottom-right':
-            xlimits = [(diagonal_y(x), height - 1.) for x in range(width)]
+            xlimits = [(diagonal_y(x), height - 1.0) for x in range(width)]
     fill_region(buf, width, height, xlimits)
 
 
@@ -323,14 +325,13 @@ ParameterizedFunc = Callable[[float], float]
 
 
 def cubic_bezier(start: Tuple[int, int], end: Tuple[int, int], c1: Tuple[int, int], c2: Tuple[int, int]) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
-
     def bezier_eq(p0: int, p1: int, p2: int, p3: int) -> ParameterizedFunc:
-
         def f(t: float) -> float:
             tm1 = 1 - t
             tm1_3 = tm1 * tm1 * tm1
             t_3 = t * t * t
             return tm1_3 * p0 + 3 * t * tm1 * (tm1 * p1 + t * p2) + t_3 * p3
+
         return f
 
     bezier_x = bezier_eq(start[0], c1[0], c2[0], end[0])
@@ -355,7 +356,7 @@ def find_bezier_for_D(width: int, height: int) -> int:
 def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) -> Iterator[Tuple[float, float]]:
     start_x = int(bezier_x(0))
     max_x = int(bezier_x(0.5))
-    last_t, t_limit = 0., 0.5
+    last_t, t_limit = 0.0, 0.5
 
     def find_t_for_x(x: int, start_t: float) -> float:
         if abs(bezier_x(start_t) - x) < 0.1:
@@ -365,7 +366,7 @@ def get_bezier_limits(bezier_x: ParameterizedFunc, bezier_y: ParameterizedFunc) 
             return start_t
         while True:
             q = bezier_x(start_t + increment)
-            if (abs(q - x) < 0.1):
+            if abs(q - x) < 0.1:
                 return start_t + increment
             if q > x:
                 increment /= 2
@@ -407,10 +408,7 @@ def D(buf: SSByteArray, width: int, height: int, left: bool = True) -> None:
                 buf[offset + dest_x] = mbuf[offset + src_x]
 
 
-def draw_parametrized_curve(
-    buf: SSByteArray, width: int, height: int, level: int,
-    xfunc: ParameterizedFunc, yfunc: ParameterizedFunc
-) -> None:
+def draw_parametrized_curve(buf: SSByteArray, width: int, height: int, level: int, xfunc: ParameterizedFunc, yfunc: ParameterizedFunc) -> None:
     supersample_factor = buf.supersample_factor
     num_samples = height * 8
     delta, extra = divmod(thickness(level), 2)
@@ -433,10 +431,7 @@ def draw_parametrized_curve(
                         buf[pos] = min(255, buf[pos] + 255)
 
 
-def rectircle_equations(
-    cell_width: int, cell_height: int, supersample_factor: int,
-    which: str = '╭'
-) -> Tuple[ParameterizedFunc, ParameterizedFunc]:
+def rectircle_equations(cell_width: int, cell_height: int, supersample_factor: int, which: str = '╭') -> Tuple[ParameterizedFunc, ParameterizedFunc]:
     '''
     Return two functions, x(t) and y(t) that map the parameter t which must be
     in the range [0, 1] to x and y co-ordinates in the cell. The rectircle equation
@@ -464,19 +459,25 @@ def rectircle_equations(
     adjust_x = cell_width_is_odd * supersample_factor
 
     if lower_quadrants:
+
         def y(t: float) -> float:  # 0 -> top of cell, 1 -> middle of cell
             return t * b
+
     else:
+
         def y(t: float) -> float:  # 0 -> bottom of cell, 1 -> middle of cell
             return (2 - t) * b
 
     # x(t). To get this we first need |y(t)|/b. This is just t since as t goes
     # from 0 to 1 y goes from either 0 to b or 0 to -b
     if left_quadrants:
+
         def x(t: float) -> float:
             xterm = 1 - pow(t, yexp)
             return math.floor(cell_width - abs(a * pow(xterm, xexp)) - adjust_x)
+
     else:
+
         def x(t: float) -> float:
             xterm = 1 - pow(t, yexp)
             return math.ceil(abs(a * pow(xterm, xexp)))
@@ -664,7 +665,6 @@ def quad(buf: BufType, width: int, height: int, x: int = 0, y: int = 0) -> None:
 
 
 def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 0) -> None:
-
     def draw_sextant(row: int = 0, col: int = 0) -> None:
         if row == 0:
             y_start, y_end = 0, height // 3
@@ -694,8 +694,7 @@ def sextant(buf: BufType, width: int, height: int, level: int = 1, which: int = 
 
 @supersampled()
 def smooth_mosaic(
-    buf: SSByteArray, width: int, height: int, level: int = 1,
-    lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
+    buf: SSByteArray, width: int, height: int, level: int = 1, lower: bool = True, a: Tuple[float, float] = (0, 0), b: Tuple[float, float] = (0, 0)
 ) -> None:
     ax, ay = int(a[0] * (width - 1)), int(a[1] * (height - 1))
     bx, by = int(b[0] * (width - 1)), int(b[1] * (height - 1))
@@ -764,7 +763,7 @@ def distribute_dots(available_space: int, num_of_dots: int) -> Tuple[Tuple[int, 
             idx = (idx + 1) % len(gaps)
             extra -= 1
     gaps[0] //= 2
-    summed_gaps = tuple(sum(gaps[:i + 1]) for i in range(len(gaps)))
+    summed_gaps = tuple(sum(gaps[: i + 1]) for i in range(len(gaps)))
     return summed_gaps, dot_size
 
 
@@ -838,29 +837,17 @@ box_chars: Dict[str, List[Callable[[BufType, int, int], Any]]] = {
     '': [cross_line],
     '═': [dhline],
     '║': [dvline],
-
     '╞': [vline, p(half_dhline, which='right')],
-
     '╡': [vline, half_dhline],
-
     '╥': [hline, p(half_dvline, which='bottom')],
-
     '╨': [hline, half_dvline],
-
     '╪': [vline, half_dhline, p(half_dhline, which='right')],
-
     '╫': [hline, half_dvline, p(half_dvline, which='bottom')],
-
     '╬': [p(inner_corner, which=x) for x in 'tl tr bl br'.split()],
-
     '╠': [p(inner_corner, which='tr'), p(inner_corner, which='br'), p(dvline, only='left')],
-
     '╣': [p(inner_corner, which='tl'), p(inner_corner, which='bl'), p(dvline, only='right')],
-
     '╦': [p(inner_corner, which='bl'), p(inner_corner, which='br'), p(dhline, only='top')],
-
     '╩': [p(inner_corner, which='tl'), p(inner_corner, which='tr'), p(dhline, only='bottom')],
-
     '╱': [p(cross_line, left=False)],
     '╲': [cross_line],
     '╳': [cross_line, p(cross_line, left=False)],
@@ -896,59 +883,50 @@ box_chars: Dict[str, List[Callable[[BufType, int, int], Any]]] = {
     '▝': [p(quad, x=1)],
     '▞': [p(quad, x=1), p(quad, y=1)],
     '▟': [p(quad, x=1), p(quad, y=1), p(quad, x=1, y=1)],
-
     '🬼': [p(smooth_mosaic, a=(0, 0.75), b=(0.5, 1))],
     '🬽': [p(smooth_mosaic, a=(0, 0.75), b=(1, 1))],
     '🬾': [p(smooth_mosaic, a=(0, 0.25), b=(0.5, 1))],
     '🬿': [p(smooth_mosaic, a=(0, 0.25), b=(1, 1))],
     '🭀': [p(smooth_mosaic, a=(0, 0), b=(0.5, 1))],
-
     '🭁': [p(smooth_mosaic, a=(0, 0.25), b=(0.5, 0))],
     '🭂': [p(smooth_mosaic, a=(0, 0.25), b=(1, 0))],
     '🭃': [p(smooth_mosaic, a=(0, 0.75), b=(0.5, 0))],
     '🭄': [p(smooth_mosaic, a=(0, 0.75), b=(1, 0))],
     '🭅': [p(smooth_mosaic, a=(0, 1), b=(0.5, 0))],
     '🭆': [p(smooth_mosaic, a=(0, 0.75), b=(1, 0.25))],
-
     '🭇': [p(smooth_mosaic, a=(0.5, 1), b=(1, 0.75))],
     '🭈': [p(smooth_mosaic, a=(0, 1), b=(1, 0.75))],
     '🭉': [p(smooth_mosaic, a=(0.5, 1), b=(1, 0.25))],
     '🭊': [p(smooth_mosaic, a=(0, 1), b=(1, 0.25))],
     '🭋': [p(smooth_mosaic, a=(0.5, 1), b=(1, 0))],
-
     '🭌': [p(smooth_mosaic, a=(0.5, 0), b=(1, 0.25))],
     '🭍': [p(smooth_mosaic, a=(0, 0), b=(1, 0.25))],
     '🭎': [p(smooth_mosaic, a=(0.5, 0), b=(1, 0.75))],
     '🭏': [p(smooth_mosaic, a=(0, 0), b=(1, 0.75))],
     '🭐': [p(smooth_mosaic, a=(0.5, 0), b=(1, 1))],
     '🭑': [p(smooth_mosaic, a=(0, 0.25), b=(1, 0.75))],
-
     '🭒': [p(smooth_mosaic, lower=False, a=(0, 0.75), b=(0.5, 1))],
     '🭓': [p(smooth_mosaic, lower=False, a=(0, 0.75), b=(1, 1))],
     '🭔': [p(smooth_mosaic, lower=False, a=(0, 0.25), b=(0.5, 1))],
     '🭕': [p(smooth_mosaic, lower=False, a=(0, 0.25), b=(1, 1))],
     '🭖': [p(smooth_mosaic, lower=False, a=(0, 0), b=(0.5, 1))],
-
     '🭗': [p(smooth_mosaic, lower=False, a=(0, 0.25), b=(0.5, 0))],
     '🭘': [p(smooth_mosaic, lower=False, a=(0, 0.25), b=(1, 0))],
     '🭙': [p(smooth_mosaic, lower=False, a=(0, 0.75), b=(0.5, 0))],
     '🭚': [p(smooth_mosaic, lower=False, a=(0, 0.75), b=(1, 0))],
     '🭛': [p(smooth_mosaic, lower=False, a=(0, 1), b=(0.5, 0))],
-
     '🭜': [p(smooth_mosaic, lower=False, a=(0, 0.75), b=(1, 0.25))],
     '🭝': [p(smooth_mosaic, lower=False, a=(0.5, 1), b=(1, 0.75))],
     '🭞': [p(smooth_mosaic, lower=False, a=(0, 1), b=(1, 0.75))],
     '🭟': [p(smooth_mosaic, lower=False, a=(0.5, 1), b=(1, 0.25))],
     '🭠': [p(smooth_mosaic, lower=False, a=(0, 1), b=(1, 0.25))],
     '🭡': [p(smooth_mosaic, lower=False, a=(0.5, 1), b=(1, 0))],
-
     '🭢': [p(smooth_mosaic, lower=False, a=(0.5, 0), b=(1, 0.25))],
     '🭣': [p(smooth_mosaic, lower=False, a=(0, 0), b=(1, 0.25))],
     '🭤': [p(smooth_mosaic, lower=False, a=(0.5, 0), b=(1, 0.75))],
     '🭥': [p(smooth_mosaic, lower=False, a=(0, 0), b=(1, 0.75))],
     '🭦': [p(smooth_mosaic, lower=False, a=(0.5, 0), b=(1, 1))],
     '🭧': [p(smooth_mosaic, lower=False, a=(0, 0.25), b=(1, 0.75))],
-
     '🭨': [p(half_triangle, inverted=True)],
     '🭩': [p(half_triangle, which='top', inverted=True)],
     '🭪': [p(half_triangle, which='right', inverted=True)],
@@ -957,15 +935,17 @@ box_chars: Dict[str, List[Callable[[BufType, int, int], Any]]] = {
     '🭭': [p(half_triangle, which='top')],
     '🭮': [p(half_triangle, which='right')],
     '🭯': [p(half_triangle, which='bottom')],
-
     '🭼': [eight_bar, p(eight_bar, which=7, horizontal=True)],
     '🭽': [eight_bar, p(eight_bar, horizontal=True)],
     '🭾': [p(eight_bar, which=7), p(eight_bar, horizontal=True)],
     '🭿': [p(eight_bar, which=7), p(eight_bar, which=7, horizontal=True)],
     '🮀': [p(eight_bar, horizontal=True), p(eight_bar, which=7, horizontal=True)],
     '🮁': [
-        p(eight_bar, horizontal=True), p(eight_bar, which=2, horizontal=True),
-        p(eight_bar, which=4, horizontal=True), p(eight_bar, which=7, horizontal=True)],
+        p(eight_bar, horizontal=True),
+        p(eight_bar, which=2, horizontal=True),
+        p(eight_bar, which=4, horizontal=True),
+        p(eight_bar, which=7, horizontal=True),
+    ],
     '🮂': [p(eight_block, horizontal=True, which=(0, 1))],
     '🮃': [p(eight_block, horizontal=True, which=(0, 1, 2))],
     '🮄': [p(eight_block, horizontal=True, which=(0, 1, 2, 3, 4))],
@@ -976,7 +956,6 @@ box_chars: Dict[str, List[Callable[[BufType, int, int], Any]]] = {
     '🮉': [p(eight_block, which=(3, 4, 5, 6, 7))],
     '🮊': [p(eight_block, which=(2, 3, 4, 5, 6, 7))],
     '🮋': [p(eight_block, which=(1, 2, 3, 4, 5, 6, 7))],
-
     '🮠': [mid_lines],
     '🮡': [p(mid_lines, pts=('tr',))],
     '🮢': [p(mid_lines, pts=('lb',))],
@@ -1001,16 +980,31 @@ for start in '┌┐└┘':
 for ch in '╭╮╰╯':
     box_chars[ch] = [p(rounded_corner, which=ch)]
 
-for i, (a_, b_, c_, d_) in enumerate((
-        (t, t, t, t), (f, t, t, t), (t, f, t, t), (f, f, t, t), (t, t, f, t), (t, t, t, f), (t, t, f, f),
-        (f, t, f, t), (t, f, f, t), (f, t, t, f), (t, f, t, f), (f, f, f, t), (f, f, t, f), (f, t, f, f),
-        (t, f, f, f), (f, f, f, f)
-)):
+for i, (a_, b_, c_, d_) in enumerate(
+    (
+        (t, t, t, t),
+        (f, t, t, t),
+        (t, f, t, t),
+        (f, f, t, t),
+        (t, t, f, t),
+        (t, t, t, f),
+        (t, t, f, f),
+        (f, t, f, t),
+        (t, f, f, t),
+        (f, t, t, f),
+        (t, f, t, f),
+        (f, f, f, t),
+        (f, f, t, f),
+        (f, t, f, f),
+        (t, f, f, f),
+        (f, f, f, f),
+    )
+):
     box_chars[chr(ord('┼') + i)] = [p(cross, a=a_, b=b_, c=c_, d=d_)]
 
 for starts, func, pattern in (
-        ('├┤', vert_t, ((t, t, t), (t, f, t), (f, t, t), (t, t, f), (f, t, f), (f, f, t), (t, f, f), (f, f, f))),
-        ('┬┴', horz_t, ((t, t, t), (f, t, t), (t, f, t), (f, f, t), (t, t, f), (f, t, f), (t, f, f), (f, f, f))),
+    ('├┤', vert_t, ((t, t, t), (t, f, t), (f, t, t), (t, t, f), (f, t, f), (f, f, t), (t, f, f), (f, f, f))),
+    ('┬┴', horz_t, ((t, t, t), (f, t, t), (t, f, t), (f, f, t), (t, t, f), (f, t, f), (t, f, f), (f, f, f))),
 ):
     for start in starts:
         for i, (a_, b_, c_) in enumerate(pattern):
@@ -1024,15 +1018,15 @@ for i in range(256):
     box_chars[chr(0x2800 + i)] = [p(braille, which=i)]
 
 
-c = 0x1fb00
+c = 0x1FB00
 for i in range(1, 63):
     if i not in (21, 42):
         box_chars[chr(c)] = [p(sextant, which=i)]
         c += 1
 
 for i in range(1, 7):
-    box_chars[chr(0x1fb6f + i)] = [p(eight_bar, which=i)]
-    box_chars[chr(0x1fb75 + i)] = [p(eight_bar, which=i, horizontal=True)]
+    box_chars[chr(0x1FB6F + i)] = [p(eight_bar, which=i)]
+    box_chars[chr(0x1FB75 + i)] = [p(eight_bar, which=i, horizontal=True)]
 
 
 def render_box_char(ch: str, buf: BufType, width: int, height: int, dpi: float = 96.0) -> BufType:
@@ -1057,6 +1051,7 @@ def test_char(ch: str, sz: int = 48) -> None:
     from smelly.fast_data_types import concat_cells, set_send_sprite_to_gpu
 
     from .render import display_bitmap, setup_for_testing
+
     with setup_for_testing('monospace', sz) as (_, width, height):
         buf = bytearray(width * height)
         try:

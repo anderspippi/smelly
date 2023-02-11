@@ -73,11 +73,10 @@ def user_filter(q: Theme) -> bool:
 
 def mark_shortcut(text: str, acc: str) -> str:
     acc_idx = text.lower().index(acc.lower())
-    return text[:acc_idx] + styled(text[acc_idx], underline='straight', bold=True, fg_intense=True) + text[acc_idx+1:]
+    return text[:acc_idx] + styled(text[acc_idx], underline='straight', bold=True, fg_intense=True) + text[acc_idx + 1 :]
 
 
 class ThemesList:
-
     def __init__(self) -> None:
         self.themes = Themes()
         self.current_search: str = ''
@@ -136,9 +135,7 @@ class ThemesList:
 
 
 def colors_as_escape_codes(o: smellyOptions) -> str:
-    ans = set_default_colors(
-        fg=o.foreground, bg=o.background, cursor=o.cursor, select_bg=o.selection_background, select_fg=o.selection_foreground
-    )
+    ans = set_default_colors(fg=o.foreground, bg=o.background, cursor=o.cursor, select_bg=o.selection_background, select_fg=o.selection_foreground)
     cmds = []
     for i in range(256):
         col = color_as_sharp(color_from_int(o.color_table[i]))
@@ -147,16 +144,17 @@ def colors_as_escape_codes(o: smellyOptions) -> str:
 
 
 class ThemesHandler(Handler):
-
     def __init__(self, cached_values: Dict[str, Any], cli_opts: ThemesCLIOptions) -> None:
         self.cached_values = cached_values
         self.cli_opts = cli_opts
         self.state = State.fetching
         self.report_traceback_on_exit: Optional[str] = None
         self.filter_map: Dict[str, Callable[[Theme], bool]] = {
-            'dark': dark_filter, 'light': light_filter, 'all': all_filter,
+            'dark': dark_filter,
+            'light': light_filter,
+            'all': all_filter,
             'recent': create_recent_filter(self.cached_values.get('recent', ())),
-            'user': user_filter
+            'user': user_filter,
         }
         self.themes_list = ThemesList()
         self.colors_set_once = False
@@ -222,7 +220,6 @@ class ThemesHandler(Handler):
 
     # Theme fetching {{{
     def fetch_themes(self) -> None:
-
         def fetching_done(themes_or_exception: Union[Themes, str]) -> None:
             if isinstance(themes_or_exception, str):
                 self.report_traceback_on_exit = themes_or_exception
@@ -234,6 +231,7 @@ class ThemesHandler(Handler):
 
         def fetch() -> None:
             from urllib.error import URLError
+
             try:
                 themes: Union[Themes, str] = load_themes(self.cli_opts.cache_age)
             except URLError as e:
@@ -276,7 +274,7 @@ class ThemesHandler(Handler):
     def draw_bottom_bar(self) -> None:
         self.cmd.set_cursor_position(0, self.screen_size.rows)
         self.print(styled(' ' * self.screen_size.cols, reverse=True), end='\r')
-        for (t, sc) in (('search (/)', 's'), ('accept (⏎)', 'c')):
+        for t, sc in (('search (/)', 's'), ('accept (⏎)', 'c')):
             text = mark_shortcut(t.capitalize(), sc)
             self.cmd.styled(f' {text} ', reverse=True)
         self.cmd.sgr('0')
@@ -439,6 +437,7 @@ class ThemesHandler(Handler):
             self.draw_screen()
         else:
             self.cmd.bell()
+
     # }}}
 
     # Accepting {{{
@@ -481,6 +480,7 @@ class ThemesHandler(Handler):
             self.update_recent()
             self.quit_on_next_key_release = 0
             return
+
     # }}}
 
     def on_key_event(self, key_event: KeyEventType, in_bracketed_paste: bool = False) -> None:
@@ -519,10 +519,7 @@ class ThemesHandler(Handler):
         self.quit_loop(1)
 
 
-help_text = (
-    'Change the smelly theme. If no theme name is supplied, run interactively, otherwise'
-    ' change the current theme to the specified theme name.'
-)
+help_text = 'Change the smelly theme. If no theme name is supplied, run interactively, otherwise' ' change the current theme to the specified theme name.'
 usage = '[theme name to switch to]'
 OPTIONS = '''
 --cache-age

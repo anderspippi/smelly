@@ -16,7 +16,6 @@ if TYPE_CHECKING:
 
 
 class Launch(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
     match/str: The tab to open the new window in
@@ -57,7 +56,10 @@ class Launch(RemoteCommand):
         ' are provided, the default shell is run. For example::\n\n'
         '    smelly @ launch --title=Email mutt'
     )
-    options_spec = MATCH_TAB_OPTION + '\n\n' + '''\
+    options_spec = (
+        MATCH_TAB_OPTION
+        + '\n\n'
+        + '''\
 --no-response
 type=bool-set
 Do not print out the id of the newly created window.
@@ -67,9 +69,13 @@ Do not print out the id of the newly created window.
 type=bool-set
 If specified the tab containing the window this command is run in is used
 instead of the active tab
-    ''' + '\n\n' + launch_options_spec().replace(':option:`launch', ':option:`smelly @ launch')
-    args = RemoteCommand.Args(spec='[CMD ...]', json_field='args', completion=RemoteCommand.CompletionSpec.from_string(
-        'type:special group:cli.CompleteExecutableFirstArg'))
+    '''
+        + '\n\n'
+        + launch_options_spec().replace(':option:`launch', ':option:`smelly @ launch')
+    )
+    args = RemoteCommand.Args(
+        spec='[CMD ...]', json_field='args', completion=RemoteCommand.CompletionSpec.from_string('type:special group:cli.CompleteExecutableFirstArg')
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         ans = {'args': args or []}

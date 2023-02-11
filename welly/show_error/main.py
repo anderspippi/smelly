@@ -37,6 +37,7 @@ def real_main(args: List[str]) -> None:
         import select
 
         from wellies.tui.operations import init_state, set_cursor_visible
+
         fd, original_termios = open_tty()
         msg = '\n\r\x1b[1;32mPress e to see detailed traceback or any other key to exit\x1b[m'
         write_all(fd, msg)
@@ -65,6 +66,7 @@ def main(args: List[str]) -> None:
             real_main(args)
     except Exception:
         import traceback
+
         traceback.print_exc()
         input('Press Enter to close')
 

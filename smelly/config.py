@@ -32,6 +32,7 @@ def build_ansi_color_table(opts: Optional[Options] = None) -> int:
 def atomic_save(data: bytes, path: str) -> None:
     import shutil
     import tempfile
+
     path = os.path.realpath(path)
     fd, p = tempfile.mkstemp(dir=os.path.dirname(path), suffix='.tmp')
     try:
@@ -73,6 +74,7 @@ def cached_values_for(name: str) -> Generator[Dict[str, Any], None, None]:
 
 def commented_out_default_config() -> str:
     from .options.definition import definition
+
     return '\n'.join(definition.as_conf(commented=True))
 
 
@@ -150,13 +152,9 @@ def finalize_mouse_mappings(opts: Options, accumulate_bad_lines: Optional[List[B
 
 def parse_config(lines: Iterable[str], accumulate_bad_lines: Optional[List[BadLine]] = None) -> Dict[str, Any]:
     from .options.parse import create_result_dict, parse_conf_item
+
     ans: Dict[str, Any] = create_result_dict()
-    parse_config_base(
-        lines,
-        parse_conf_item,
-        ans,
-        accumulate_bad_lines=accumulate_bad_lines
-    )
+    parse_config_base(lines, parse_conf_item, ans, accumulate_bad_lines=accumulate_bad_lines)
     return ans
 
 

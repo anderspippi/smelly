@@ -6,16 +6,16 @@ from . import BaseTest
 
 
 class TestDiff(BaseTest):
-
     def test_changed_center(self):
         from wellies.diff.diff_speedup import changed_center
+
         for left, right, prefix, suffix in [
-                ('abc', 'def', '', ''),
-                ('', 'def', '', ''),
-                ('abc', '', '', ''),
-                ('abc', 'abc', 'abc', ''),
-                ('abc', 'abcdef', 'abc', ''),
-                ('aa111bb', 'aa2bb', 'aa', 'bb'),
+            ('abc', 'def', '', ''),
+            ('', 'def', '', ''),
+            ('abc', '', '', ''),
+            ('abc', 'abc', 'abc', ''),
+            ('abc', 'abcdef', 'abc', ''),
+            ('aa111bb', 'aa2bb', 'aa', 'bb'),
         ]:
             pc, sc = changed_center(left, right)
             for src in (left, right):
@@ -23,12 +23,13 @@ class TestDiff(BaseTest):
 
     def test_split_with_highlights(self):
         from wellies.diff.render import Segment, split_with_highlights, truncate_points
+
         self.ae(list(truncate_points('1234567890ab', 3)), [3, 6, 9])
         for line, width, prefix_count, suffix_count, expected in [
-                ('abcdefgh', 20, 2, 3, ('abSScdeEEfgh',)),
-                ('abcdefgh', 20, 2, 0, ('abSScdefghEE',)),
-                ('abcdefgh', 3, 2, 3, ('abSScEE', 'SSdeEEf', 'gh')),
-                ('abcdefgh', 2, 4, 1, ('ab', 'cd', 'SSefEE', 'SSgEEh')),
+            ('abcdefgh', 20, 2, 3, ('abSScdeEEfgh',)),
+            ('abcdefgh', 20, 2, 0, ('abSScdefghEE',)),
+            ('abcdefgh', 3, 2, 3, ('abSScEE', 'SSdeEEf', 'gh')),
+            ('abcdefgh', 2, 4, 1, ('ab', 'cd', 'SSefEE', 'SSgEEh')),
         ]:
             seg = Segment(prefix_count, 'SS')
             seg.end = len(line) - suffix_count
@@ -73,12 +74,7 @@ class TestDiff(BaseTest):
             Path(tmpdir, "f/g").touch()
             Path(tmpdir, "h space").touch()
             expected_names = {"d", "e", "f/g", "h space"}
-            expected_pmap = {
-                "d": f"{tmpdir}/d",
-                "e": f"{tmpdir}/e",
-                "f/g": f"{tmpdir}/f/g",
-                "h space": f"{tmpdir}/h space"
-            }
+            expected_pmap = {"d": f"{tmpdir}/d", "e": f"{tmpdir}/e", "f/g": f"{tmpdir}/f/g", "h space": f"{tmpdir}/h space"}
             names = set()
             pmap = {}
             walk(tmpdir, names, pmap, ("*~", "#*#", "b"))

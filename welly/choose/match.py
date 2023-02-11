@@ -17,7 +17,7 @@ def match(
     limit: int = 0,
     mark_before: str = '',
     mark_after: str = '',
-    delimiter: str = '\n'
+    delimiter: str = '\n',
 ) -> List[str]:
     if isinstance(input_data, str):
         idata = [x.encode('utf-8') for x in input_data.split(delimiter)]
@@ -29,10 +29,7 @@ def match(
     level1 = level1.lower()
     level2 = level2.lower()
     level3 = level3.lower()
-    data = subseq_matcher.match(
-        idata, (level1, level2, level3), query,
-        positions, limit, threads,
-        mark_before, mark_after, delimiter)
+    data = subseq_matcher.match(idata, (level1, level2, level3), query, positions, limit, threads, mark_before, mark_after, delimiter)
     if data is None:
         return []
     return list(filter(None, data.split(delimiter or '\n')))

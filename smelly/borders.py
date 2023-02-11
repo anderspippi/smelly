@@ -66,7 +66,6 @@ def load_borders_program() -> None:
 
 
 class Borders:
-
     def __init__(self, os_window_id: int, tab_id: int):
         self.os_window_id = os_window_id
         self.tab_id = tab_id

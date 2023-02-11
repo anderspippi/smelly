@@ -10,13 +10,11 @@ from .utils import log_error
 
 
 class WindowSize(NamedTuple):
-
     size: int
     unit: str
 
 
 class WindowSizes(NamedTuple):
-
     width: WindowSize
     height: WindowSize
 
@@ -35,7 +33,6 @@ def sanitize_window_size(x: Any) -> int:
 
 
 def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:
-
     if 'window-size' in cached_values and opts.remember_window_size:
         ws = cached_values['window-size']
         try:
@@ -43,6 +40,7 @@ def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]
 
             def initial_window_size(*a: Any) -> Tuple[int, int]:
                 return w, h
+
             return initial_window_size
         except Exception:
             log_error('Invalid cached window size, ignoring')

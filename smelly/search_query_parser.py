@@ -8,7 +8,6 @@ from typing import Callable, Iterator, List, NamedTuple, Optional, Sequence, Set
 
 
 class ParseException(Exception):
-
     @property
     def msg(self) -> str:
         if len(self.args) > 0:
@@ -51,7 +50,6 @@ class SearchTreeNode:
 
 
 class OrNode(SearchTreeNode):
-
     def __init__(self, lhs: SearchTreeNode, rhs: SearchTreeNode) -> None:
         self.lhs = lhs
         self.rhs = rhs
@@ -113,18 +111,20 @@ class Token(NamedTuple):
     val: str
 
 
-lex_scanner = getattr(re, 'Scanner')([
+lex_scanner = getattr(re, 'Scanner')(
+    [
         (r'[()]', lambda x, t: Token(TokenType.OPCODE, t)),
         (r'@.+?:[^")\s]+', lambda x, t: Token(TokenType.WORD, str(t))),
         (r'[^"()\s]+', lambda x, t: Token(TokenType.WORD, str(t))),
         (r'".*?((?<!\\)")', lambda x, t: Token(TokenType.QUOTED_WORD, t[1:-1])),
-        (r'\s+',              None)
-], flags=re.DOTALL)
+        (r'\s+', None),
+    ],
+    flags=re.DOTALL,
+)
 REPLACEMENTS = tuple(('\\' + x, chr(i + 1)) for i, x in enumerate('\\"()'))
 
 
 class Parser:
-
     def __init__(self, allow_no_location: bool = False) -> None:
         self.current_token = 0
         self.tokens: List[Token] = []
@@ -169,10 +169,7 @@ class Parser:
                 x = x.replace(v, k[1:])
             return x
 
-        return [
-            Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv)
-            for tt, tv in tokens
-        ]
+        return [Token(tt, unescape(tv) if tt in (TokenType.WORD, TokenType.QUOTED_WORD) else tv) for tt, tv in tokens]
 
     def parse(self, expr: str, locations: Sequence[str]) -> SearchTreeNode:
         self.locations = locations
@@ -197,7 +194,7 @@ class Parser:
             return AndNode(lhs, self.and_expression())
 
         # Account for the optional 'and'
-        if ((self.token_type() in (TokenType.WORD, TokenType.QUOTED_WORD) or self.token() == '(') and self.lcase_token() != 'or'):
+        if (self.token_type() in (TokenType.WORD, TokenType.QUOTED_WORD) or self.token() == '(') and self.lcase_token() != 'or':
             return AndNode(lhs, self.and_expression())
         return lhs
 
@@ -268,7 +265,10 @@ def build_tree(query: str, locations: Union[str, Tuple[str, ...]], allow_no_loca
 
 
 def search(
-    query: str, locations: Union[str, Tuple[str, ...]], universal_set: Set[T], get_matches: GetMatches[T],
+    query: str,
+    locations: Union[str, Tuple[str, ...]],
+    universal_set: Set[T],
+    get_matches: GetMatches[T],
     allow_no_location: bool = False,
 ) -> Set[T]:
     return build_tree(query, locations, allow_no_location).search(universal_set, get_matches)

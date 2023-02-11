@@ -34,14 +34,12 @@ ResizeSpec = Tuple[str, int]
 
 
 class WindowSpec:
-
     def __init__(self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
         self.launch_spec = launch_spec
         self.resize_spec: Optional[ResizeSpec] = None
 
 
 class Tab:
-
     def __init__(self, opts: Options, name: str):
         self.windows: List[WindowSpec] = []
         self.pending_resize_spec: Optional[ResizeSpec] = None
@@ -54,7 +52,6 @@ class Tab:
 
 
 class Session:
-
     def __init__(self, default_title: Optional[str] = None):
         self.tabs: List[Tab] = []
         self.active_tab_idx = 0
@@ -78,6 +75,7 @@ class Session:
 
     def add_window(self, cmd: Union[None, str, List[str]], expand: Callable[[str], str] = lambda x: x) -> None:
         from .launch import parse_launch_args
+
         needs_expandvars = False
         if isinstance(cmd, str):
             needs_expandvars = True
@@ -128,9 +126,9 @@ class Session:
 
 
 def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] = None) -> Generator[Session, None, None]:
-
     def finalize_session(ans: Session) -> Session:
         from .tabs import SpecialWindow
+
         for t in ans.tabs:
             if not t.windows:
                 t.windows.append(WindowSpec(SpecialWindow(cmd=resolved_shell(opts))))
@@ -185,7 +183,6 @@ def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] 
 
 
 class PreReadSession(str):
-
     def __new__(cls, val: str, associated_environ: Mapping[str, str]) -> 'PreReadSession':
         ans: PreReadSession = str.__new__(cls, val)
         ans.pre_read = True  # type: ignore
@@ -233,6 +230,7 @@ def create_sessions(
         if args and args.hold:
             cmd = [kitten_exe(), '__hold_till_enter__'] + cmd
         from smelly.tabs import SpecialWindow
+
         cwd: Optional[str] = args.directory if respect_cwd and args else None
         special_window = SpecialWindow(cmd, cwd_from=cwd_from, cwd=cwd)
     ans.add_special_window(special_window)

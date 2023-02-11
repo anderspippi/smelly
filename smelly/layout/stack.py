@@ -8,7 +8,6 @@ from .base import Layout, NeighborsMap
 
 
 class Stack(Layout):
-
     name = 'stack'
     needs_window_borders = False
     only_active_window_visible = True
@@ -23,6 +22,6 @@ class Stack(Layout):
         assert wg is not None
         groups = tuple(all_windows.iter_all_layoutable_groups())
         idx = groups.index(wg)
-        before = [] if wg is groups[0] else [groups[idx-1].id]
-        after = [] if wg is groups[-1] else [groups[idx+1].id]
+        before = [] if wg is groups[0] else [groups[idx - 1].id]
+        after = [] if wg is groups[-1] else [groups[idx + 1].id]
         return {'top': before, 'left': before, 'right': after, 'bottom': after}

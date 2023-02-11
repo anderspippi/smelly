@@ -13,7 +13,6 @@ class ListedFont(TypedDict):
 
 
 class FontFeature:
-
     __slots__ = 'name', 'parsed'
 
     def __init__(self, name: str, parsed: bytes):

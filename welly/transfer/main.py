@@ -60,10 +60,7 @@ actually degrade performance on fast links with small files, so use with care.
 
 
 def parse_transfer_args(args: List[str]) -> Tuple[TransferCLIOptions, List[str]]:
-    return parse_args(
-        args[1:], option_text, usage, help_text,
-        'smelly +kitten transfer', result_class=TransferCLIOptions
-    )
+    return parse_args(args[1:], option_text, usage, help_text, 'smelly +kitten transfer', result_class=TransferCLIOptions)
 
 
 def read_bypass(loc: str) -> str:

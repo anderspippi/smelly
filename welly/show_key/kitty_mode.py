@@ -28,18 +28,13 @@ def format_mods(mods: int) -> str:
 
 
 class KeysHandler(Handler):
-
     def initialize(self) -> None:
         self.cmd.set_window_title('smelly extended keyboard protocol demo')
         self.cmd.set_cursor_visible(False)
         self.print('Press any keys - Ctrl+C or Ctrl+D will terminate')
 
     def on_key_event(self, key_event: KeyEvent, in_bracketed_paste: bool = False) -> None:
-        etype = {
-            PRESS: 'PRESS',
-            REPEAT: 'REPEAT',
-            RELEASE: 'RELEASE'
-        }[key_event.type]
+        etype = {PRESS: 'PRESS', REPEAT: 'REPEAT', RELEASE: 'RELEASE'}[key_event.type]
         mods = format_mods(key_event.mods)
         if mods:
             mods += '+'
@@ -54,7 +49,7 @@ class KeysHandler(Handler):
         rep = f'CSI {encode_key_event(key_event)[2:]}'
         rep = rep.replace(';', ' ; ').replace(':', ' : ')[:-1] + ' ' + rep[-1]
         self.cmd.styled(rep, fg='magenta')
-        if (key_event.shifted_key or key_event.alternate_key):
+        if key_event.shifted_key or key_event.alternate_key:
             self.print()
             if key_event.shifted_key:
                 self.cmd.colored('Shifted key: ', 'gray')

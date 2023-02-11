@@ -8,7 +8,6 @@ from . import BaseTest
 
 
 class TestClipboard(BaseTest):
-
     def test_clipboard_write_request(self):
         wr = WriteRequest(max_size=64)
         wr.add_base64_data('bGlnaHQgd29yaw')

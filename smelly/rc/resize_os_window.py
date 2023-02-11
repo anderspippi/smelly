@@ -26,7 +26,9 @@ class ResizeOSWindow(RemoteCommand):
         ' Note that some window managers/environments do not allow applications to resize'
         ' their windows, for example, tiling window managers.'
     )
-    options_spec = MATCH_WINDOW_OPTION + '''\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n
 --action
 default=resize
 choices=resize,toggle-fullscreen,toggle-maximized
@@ -68,12 +70,17 @@ default=false
 Don't wait for a response indicating the success of the action. Note that
 using this option means that you will not be notified of failures.
 '''
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         return {
-            'match': opts.match, 'action': opts.action, 'unit': opts.unit,
-            'width': opts.width, 'height': opts.height, 'self': opts.self,
-            'incremental': opts.incremental
+            'match': opts.match,
+            'action': opts.action,
+            'unit': opts.unit,
+            'width': opts.width,
+            'height': opts.height,
+            'self': opts.self,
+            'incremental': opts.incremental,
         }
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
@@ -83,8 +90,7 @@ using this option means that you will not be notified of failures.
             for os_window_id in {w.os_window_id for w in windows if w}:
                 if ac == 'resize':
                     boss.resize_os_window(
-                        os_window_id, width=payload_get('width'), height=payload_get('height'),
-                        unit=payload_get('unit'), incremental=payload_get('incremental')
+                        os_window_id, width=payload_get('width'), height=payload_get('height'), unit=payload_get('unit'), incremental=payload_get('incremental')
                     )
                 elif ac == 'toggle-fullscreen':
                     boss.toggle_fullscreen(os_window_id)

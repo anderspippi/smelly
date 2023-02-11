@@ -10,7 +10,6 @@ if TYPE_CHECKING:
 
 
 class Kitten(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     kitten+/str: The name of the kitten to run
     args/list.str: Arguments to pass to the kitten as a list

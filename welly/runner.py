@@ -64,6 +64,7 @@ def import_kitten_main_module(config_dir: str, kitten: str) -> Dict[str, Any]:
 
 def create_kitten_handler(kitten: str, orig_args: List[str]) -> Any:
     from smelly.constants import config_dir
+
     kitten = resolved_kitten(kitten)
     m = import_kitten_main_module(config_dir, kitten)
     ans = partial(m['end'], [kitten] + orig_args)
@@ -77,6 +78,7 @@ def set_debug(kitten: str) -> None:
     import builtins
 
     from wellies.tui.loop import debug
+
     setattr(builtins, 'debug', debug)
 
 
@@ -95,6 +97,7 @@ def launch(args: List[str]) -> None:
     if result is not None:
         import base64
         import json
+
         data = base64.b85encode(json.dumps(result).encode('utf-8'))
         sys.stdout.buffer.write(b'\x1bP@smelly-kitten-result|')
         sys.stdout.buffer.write(data)
@@ -105,6 +108,7 @@ def launch(args: List[str]) -> None:
 
 def run_kitten(kitten: str, run_name: str = '__main__') -> None:
     import runpy
+
     original_kitten_name = kitten
     kitten = resolved_kitten(kitten)
     set_debug(kitten)
@@ -115,6 +119,7 @@ def run_kitten(kitten: str, run_name: str = '__main__') -> None:
     if not kitten.endswith('.py'):
         kitten += '.py'
     from smelly.constants import config_dir
+
     path = path_to_custom_kitten(config_dir, kitten)
     if not os.path.exists(path):
         print('Available builtin wellies:', file=sys.stderr)
@@ -123,6 +128,7 @@ def run_kitten(kitten: str, run_name: str = '__main__') -> None:
         raise SystemExit(f'No kitten named {original_kitten_name}')
     m = runpy.run_path(path, init_globals={'sys': sys, 'os': os}, run_name='__run_kitten__')
     from smelly.fast_data_types import set_options
+
     try:
         m['main'](sys.argv)
     finally:
@@ -186,5 +192,6 @@ def main() -> None:
     except Exception:
         print('Unhandled exception running kitten:')
         import traceback
+
         traceback.print_exc()
         input('Press Enter to quit')

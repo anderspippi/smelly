@@ -55,7 +55,6 @@ def serialized_cmd(**fields) -> str:
 
 
 class TestFileTransmission(BaseTest):
-
     def setUp(self):
         super().setUp()
         self.tdir = os.path.realpath(tempfile.mkdtemp())
@@ -80,6 +79,7 @@ class TestFileTransmission(BaseTest):
         def f(r):
             r.pop('size', None)
             return r
+
         a = tuple(f(r) for r in a if r.get('status') != 'PROGRESS')
         b = tuple(f(r) for r in b if r.get('status') != 'PROGRESS')
         self.ae(a, b)
@@ -407,21 +407,21 @@ class TestFileTransmission(BaseTest):
 
         opts.mode = 'mirror'
         with set_paths(cwd=b, home='/foo/bar'):
-            tf([b/'r', b/'d'], {b/'r': b/'r', b/'d': b/'d', b/'d'/'r': b/'d'/'r'})
-            tf([b/'r', b/'d/r'], {b/'r': b/'r', b/'d'/'r': b/'d'/'r'})
+            tf([b / 'r', b / 'd'], {b / 'r': b / 'r', b / 'd': b / 'd', b / 'd' / 'r': b / 'd' / 'r'})
+            tf([b / 'r', b / 'd/r'], {b / 'r': b / 'r', b / 'd' / 'r': b / 'd' / 'r'})
         with set_paths(cwd=b, home=self.tdir):
-            tf([b/'r', b/'d'], {b/'r': '~/b/r', b/'d': '~/b/d', b/'d'/'r': '~/b/d/r'}, different_home='/foo/bar')
+            tf([b / 'r', b / 'd'], {b / 'r': '~/b/r', b / 'd': '~/b/d', b / 'd' / 'r': '~/b/d/r'}, different_home='/foo/bar')
         opts.mode = 'normal'
         with set_paths(cwd='/some/else', home='/foo/bar'):
-            tf([b/'r', b/'d', '/dest'], {b/'r': '/dest/r', b/'d': '/dest/d', b/'d'/'r': '/dest/d/r'})
-            tf([b/'r', b/'d', '~/dest'], {b/'r': '~/dest/r', b/'d': '~/dest/d', b/'d'/'r': '~/dest/d/r'})
+            tf([b / 'r', b / 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
+            tf([b / 'r', b / 'd', '~/dest'], {b / 'r': '~/dest/r', b / 'd': '~/dest/d', b / 'd' / 'r': '~/dest/d/r'})
         with set_paths(cwd=b, home='/foo/bar'):
-            tf([b/'r', b/'d', '/dest'], {b/'r': '/dest/r', b/'d': '/dest/d', b/'d'/'r': '/dest/d/r'})
+            tf([b / 'r', b / 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
         os.symlink('/foo/b', b / 'e')
         os.symlink('r', b / 's')
         os.link(b / 'r', b / 'h')
         with set_paths(cwd='/some/else', home='/foo/bar'):
-            files = gm((b/'e', b/'s', b/'r', b / 'h'))[0]
+            files = gm((b / 'e', b / 's', b / 'r', b / 'h'))[0]
             self.assertEqual(files[0].ftype, FileType.symlink)
             self.assertEqual(files[1].ftype, FileType.symlink)
             self.assertEqual(files[1].remote_target, files[2].remote_id)
@@ -451,16 +451,16 @@ class TestFileTransmission(BaseTest):
 
         opts.mode = 'mirror'
         with set_paths(cwd=b, home='/foo/bar'):
-            tf(['r', 'd'], {b/'r': b/'r', b/'d': b/'d', b/'d'/'r': b/'d'/'r'})
-            tf(['r', 'd/r'], {b/'r': b/'r', b/'d'/'r': b/'d'/'r'})
+            tf(['r', 'd'], {b / 'r': b / 'r', b / 'd': b / 'd', b / 'd' / 'r': b / 'd' / 'r'})
+            tf(['r', 'd/r'], {b / 'r': b / 'r', b / 'd' / 'r': b / 'd' / 'r'})
         with set_paths(cwd=b, home=self.tdir):
-            tf(['r', 'd'], {b/'r': '~/b/r', b/'d': '~/b/d', b/'d'/'r': '~/b/d/r'})
+            tf(['r', 'd'], {b / 'r': '~/b/r', b / 'd': '~/b/d', b / 'd' / 'r': '~/b/d/r'})
         opts.mode = 'normal'
         with set_paths(cwd='/some/else', home='/foo/bar'):
-            tf([b/'r', b/'d', '/dest'], {b/'r': '/dest/r', b/'d': '/dest/d', b/'d'/'r': '/dest/d/r'})
-            tf([b/'r', b/'d', '~/dest'], {b/'r': '~/dest/r', b/'d': '~/dest/d', b/'d'/'r': '~/dest/d/r'})
+            tf([b / 'r', b / 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
+            tf([b / 'r', b / 'd', '~/dest'], {b / 'r': '~/dest/r', b / 'd': '~/dest/d', b / 'd' / 'r': '~/dest/d/r'})
         with set_paths(cwd=b, home='/foo/bar'):
-            tf(['r', 'd', '/dest'], {b/'r': '/dest/r', b/'d': '/dest/d', b/'d'/'r': '/dest/d/r'})
+            tf(['r', 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
 
         os.symlink('/foo/b', b / 'e')
         os.symlink('r', b / 's')

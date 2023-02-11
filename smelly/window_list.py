@@ -26,7 +26,6 @@ def wrap_increment(val: int, num: int, delta: int) -> int:
 
 
 class WindowGroup:
-
     def __init__(self) -> None:
         self.windows: List[WindowType] = []
         self.id = next(group_id_counter)
@@ -86,10 +85,7 @@ class WindowGroup:
             self.windows.remove(window)
 
     def serialize_state(self) -> Dict[str, Any]:
-        return {
-            'id': self.id,
-            'windows': [w.serialize_state() for w in self.windows]
-        }
+        return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
 
     def decoration(self, which: EdgeLiteral, border_mult: int = 1, is_single_window: bool = False) -> int:
         if not self.windows:
@@ -136,7 +132,6 @@ class WindowGroup:
 
 
 class WindowList:
-
     def __init__(self, tab: TabType) -> None:
         self.all_windows: List[WindowType] = []
         self.id_map: Dict[int, WindowType] = {}
@@ -162,7 +157,7 @@ class WindowList:
         return {
             'active_group_idx': self.active_group_idx,
             'active_group_history': list(self.active_group_history),
-            'window_groups': [g.serialize_state() for g in self.groups]
+            'window_groups': [g.serialize_state() for g in self.groups],
         }
 
     @property

@@ -12,18 +12,19 @@ else:
     choices_for_remote_smelly = str
 
 option_names = (  # {{{
- 'askpass',
- 'color_scheme',
- 'copy',
- 'cwd',
- 'env',
- 'hostname',
- 'interpreter',
- 'login_shell',
- 'remote_dir',
- 'remote_smelly',
- 'share_connections',
- 'shell_integration')  # }}}
+    'askpass',
+    'color_scheme',
+    'copy',
+    'cwd',
+    'env',
+    'hostname',
+    'interpreter',
+    'login_shell',
+    'remote_dir',
+    'remote_smelly',
+    'share_connections',
+    'shell_integration',
+)  # }}}
 
 
 class Options:

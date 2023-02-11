@@ -34,14 +34,7 @@ constants = os.path.join('smelly', 'constants.py')
 with open(constants, 'rb') as f:
     constants = f.read().decode('utf-8')
 appname = re.search(r"^appname: str = '([^']+)'", constants, re.MULTILINE).group(1)  # type: ignore
-version = tuple(
-    map(
-        int,
-        re.search(  # type: ignore
-            r"^version: Version = Version\((\d+), (\d+), (\d+)\)", constants, re.MULTILINE
-        ).group(1, 2, 3)
-    )
-)
+version = tuple(map(int, re.search(r"^version: Version = Version\((\d+), (\d+), (\d+)\)", constants, re.MULTILINE).group(1, 2, 3)))  # type: ignore
 _plat = sys.platform.lower()
 is_macos = 'darwin' in _plat
 is_openbsd = 'openbsd' in _plat
@@ -98,14 +91,7 @@ def pkg_config(pkg: str, *args: str, extra_pc_dir: str = '', fatal: bool = True)
         env['PKG_CONFIG_PATH'] = f'{pp}{extra_pc_dir}'
     cmd = [PKGCONFIG, pkg] + list(args)
     try:
-        return list(
-            filter(
-                None,
-                shlex.split(
-                    subprocess.check_output(cmd, env=env, stderr=None if fatal else subprocess.DEVNULL).decode('utf-8')
-                )
-            )
-        )
+        return list(filter(None, shlex.split(subprocess.check_output(cmd, env=env, stderr=None if fatal else subprocess.DEVNULL).decode('utf-8'))))
     except subprocess.CalledProcessError:
         if fatal:
             raise SystemExit(f'The package {error(pkg)} was not found on your system')
@@ -113,8 +99,7 @@ def pkg_config(pkg: str, *args: str, extra_pc_dir: str = '', fatal: bool = True)
 
 
 def pkg_version(package: str) -> Tuple[int, int]:
-    ver = subprocess.check_output([
-        PKGCONFIG, package, '--modversion']).decode('utf-8').strip()
+    ver = subprocess.check_output([PKGCONFIG, package, '--modversion']).decode('utf-8').strip()
     m = re.match(r'(\d+).(\d+)', ver)
     if m is not None:
         qmajor, qminor = map(int, m.groups())
@@ -133,6 +118,7 @@ def libcrypto_flags() -> Tuple[List[str], List[str]]:
     except subprocess.CalledProcessError:
         if is_macos:
             import ssl
+
             v = ssl.OPENSSL_VERSION_INFO
             pats = f'{v[0]}.{v[1]}', f'{v[0]}'
             for pat in pats:
@@ -149,12 +135,10 @@ def libcrypto_flags() -> Tuple[List[str], List[str]]:
 
 def at_least_version(package: str, major: int, minor: int = 0) -> None:
     q = f'{major}.{minor}'
-    if subprocess.run([PKGCONFIG, package, f'--atleast-version={q}']
-                      ).returncode != 0:
+    if subprocess.run([PKGCONFIG, package, f'--atleast-version={q}']).returncode != 0:
         qmajor = qminor = 0
         try:
-            ver = subprocess.check_output([PKGCONFIG, package, '--modversion']
-                                          ).decode('utf-8').strip()
+            ver = subprocess.check_output([PKGCONFIG, package, '--modversion']).decode('utf-8').strip()
             m = re.match(r'(\d+).(\d+)', ver)
             if m is not None:
                 qmajor, qminor = map(int, m.groups())
@@ -212,10 +196,8 @@ def get_python_flags(cflags: List[str], for_main_executable: bool = False) -> Li
         for var in 'data include stdlib'.split():
             val = sysconfig.get_path(var)
             if val and f'/{fw}.framework' in val:
-                fdir = val[:val.index(f'/{fw}.framework')]
-                if os.path.isdir(
-                    os.path.join(fdir, f'{fw}.framework')
-                ):
+                fdir = val[: val.index(f'/{fw}.framework')]
+                if os.path.isdir(os.path.join(fdir, f'{fw}.framework')):
                     framework_dir = fdir
                     break
         else:
@@ -250,7 +232,8 @@ def get_sanitize_args(cc: List[str], ccver: Tuple[int, int]) -> List[str]:
 
 
 def test_compile(
-    cc: List[str], *cflags: str,
+    cc: List[str],
+    *cflags: str,
     src: str = '',
     source_ext: str = 'c',
     link_also: bool = True,
@@ -262,13 +245,21 @@ def test_compile(
     with tempfile.TemporaryDirectory(prefix='smelly-test-compile-') as tdir:
         with open(os.path.join(tdir, f'source.{source_ext}'), 'w', encoding='utf-8') as srcf:
             print(src, file=srcf)
-        return subprocess.Popen(
-            cc + ['-Werror=implicit-function-declaration'] + list(cflags) + ([] if link_also else ['-c']) +
-            ['-o', os.path.join(tdir, 'source.output'), srcf.name] +
-            [f'-l{x}' for x in libraries] + list(ldflags),
-            stdout=subprocess.DEVNULL, stdin=subprocess.DEVNULL,
-            stderr=None if show_stderr else subprocess.DEVNULL
-        ).wait() == 0
+        return (
+            subprocess.Popen(
+                cc
+                + ['-Werror=implicit-function-declaration']
+                + list(cflags)
+                + ([] if link_also else ['-c'])
+                + ['-o', os.path.join(tdir, 'source.output'), srcf.name]
+                + [f'-l{x}' for x in libraries]
+                + list(ldflags),
+                stdout=subprocess.DEVNULL,
+                stdin=subprocess.DEVNULL,
+                stderr=None if show_stderr else subprocess.DEVNULL,
+            ).wait()
+            == 0
+        )
 
 
 def first_successful_compile(cc: List[str], *cflags: str, src: str = '', source_ext: str = 'c') -> str:
@@ -292,24 +283,29 @@ def set_arches(flags: List[str], arches: Iterable[str] = ('x86_64', 'arm64')) ->
 
 def detect_librsync(cc: List[str], cflags: List[str], ldflags: List[str]) -> str:
     if not test_compile(
-            cc, *cflags, libraries=('rsync',), ldflags=ldflags, show_stderr=True,
-            src='#include <librsync.h>\nint main(void) { rs_strerror(0); return 0; }'):
+        cc, *cflags, libraries=('rsync',), ldflags=ldflags, show_stderr=True, src='#include <librsync.h>\nint main(void) { rs_strerror(0); return 0; }'
+    ):
         raise SystemExit('The librsync library is required')
     # check for rs_sig_args() which was added to librsync in Apr 2020 version 2.3.0
-    if test_compile(cc, *cflags, libraries=('rsync',), ldflags=ldflags, src='''
+    if test_compile(
+        cc,
+        *cflags,
+        libraries=('rsync',),
+        ldflags=ldflags,
+        src='''
 #include <librsync.h>
 int main(void) {
     rs_magic_number magic_number = 0;
     size_t block_len = 0, strong_len = 0;
     rs_sig_args(1024, &magic_number, &block_len, &strong_len);
     return 0;
-}'''):
+}''',
+    ):
         return '-Dsmelly_HAS_RS_SIG_ARGS'
     return ''
 
 
 def is_gcc(cc: Iterable[str]) -> bool:
-
     @lru_cache()
     def f(cc: Tuple[str]) -> bool:
         raw = subprocess.check_output(cc + ('--version',)).decode('utf-8').splitlines()[0]
@@ -333,7 +329,7 @@ def init_env(
     ignore_compiler_warnings: bool = False,
     build_universal_binary: bool = False,
     extra_library_dirs: Iterable[str] = (),
-    verbose: bool = True
+    verbose: bool = True,
 ) -> Env:
     native_optimizations = native_optimizations and not sanitize and not debug
     if native_optimizations and is_macos and is_arm:
@@ -356,7 +352,8 @@ def init_env(
     optimize = df if debug or sanitize else '-O3'
     sanitize_args = get_sanitize_args(cc, ccver) if sanitize else set()
     cppflags_ = os.environ.get(
-        'OVERRIDE_CPPFLAGS', '-D{}DEBUG'.format('' if debug else 'N'),
+        'OVERRIDE_CPPFLAGS',
+        '-D{}DEBUG'.format('' if debug else 'N'),
     )
     cppflags = shlex.split(cppflags_)
     for el in extra_logging:
@@ -369,19 +366,15 @@ def init_env(
     sanitize_flag = ' '.join(sanitize_args)
     march = '-march=native' if native_optimizations else ''
     cflags_ = os.environ.get(
-        'OVERRIDE_CFLAGS', (
+        'OVERRIDE_CFLAGS',
+        (
             f'-Wextra {float_conversion} -Wno-missing-field-initializers -Wall -Wstrict-prototypes {std}'
             f' {werror} {optimize} {sanitize_flag} -fwrapv {stack_protector} {missing_braces}'
             f' -pipe {march} -fvisibility=hidden {fortify_source}'
-        )
+        ),
     )
-    cflags = shlex.split(cflags_) + shlex.split(
-        sysconfig.get_config_var('CCSHARED') or ''
-    )
-    ldflags_ = os.environ.get(
-        'OVERRIDE_LDFLAGS',
-        '-Wall ' + ' '.join(sanitize_args) + ('' if debug else ' -O3')
-    )
+    cflags = shlex.split(cflags_) + shlex.split(sysconfig.get_config_var('CCSHARED') or '')
+    ldflags_ = os.environ.get('OVERRIDE_LDFLAGS', '-Wall ' + ' '.join(sanitize_args) + ('' if debug else ' -O3'))
     ldflags = shlex.split(ldflags_)
     ldflags.append('-shared')
     cppflags += shlex.split(os.environ.get('CPPFLAGS', ''))
@@ -448,12 +441,16 @@ def smelly_env() -> Env:
     cflags.extend(libcrypto_cflags)
     if is_macos:
         platform_libs = [
-            '-framework', 'Carbon', '-framework', 'CoreText', '-framework', 'CoreGraphics',
+            '-framework',
+            'Carbon',
+            '-framework',
+            'CoreText',
+            '-framework',
+            'CoreGraphics',
         ]
         test_program_src = '''#include <UserNotifications/UserNotifications.h>
         int main(void) { return 0; }\n'''
-        user_notifications_framework = first_successful_compile(
-            ans.cc, '-framework UserNotifications', src=test_program_src, source_ext='m')
+        user_notifications_framework = first_successful_compile(ans.cc, '-framework UserNotifications', src=test_program_src, source_ext='m')
         if user_notifications_framework:
             platform_libs.extend(shlex.split(user_notifications_framework))
         else:
@@ -554,16 +551,12 @@ def dependecies_for(src: str, obj: str, all_headers: Iterable[str]) -> Iterable[
         yield src
         yield from iter(all_headers)
     else:
-        RE_INC = re.compile(
-            r'^(?P<target>.+?):\s+(?P<deps>.+?)$', re.MULTILINE
-        )
+        RE_INC = re.compile(r'^(?P<target>.+?):\s+(?P<deps>.+?)$', re.MULTILINE)
         SPACE_TOK = '\x1B'
 
         text = deps.replace('\\\n', ' ').replace('\\ ', SPACE_TOK)
         for match in RE_INC.finditer(text):
-            files = (
-                f.replace(SPACE_TOK, ' ') for f in match.group('deps').split()
-            )
+            files = (f.replace(SPACE_TOK, ' ') for f in match.group('deps').split())
             for path in files:
                 path = os.path.abspath(path)
                 if path.startswith(src_base):
@@ -588,7 +581,7 @@ def parallel_run(items: List[Command]) -> None:
         compile_cmd, w = workers.pop(pid, (None, None))
         if compile_cmd is None:
             return
-        if ((s & 0xff) != 0 or ((s >> 8) & 0xff) != 0):
+        if (s & 0xFF) != 0 or ((s >> 8) & 0xFF) != 0:
             if failed is None:
                 failed = compile_cmd
         elif compile_cmd.on_success is not None:
@@ -620,7 +613,6 @@ def parallel_run(items: List[Command]) -> None:
 
 
 class CompilationDatabase:
-
     def __init__(self, incremental: bool):
         self.incremental = incremental
         self.compile_commands: List[Command] = []
@@ -633,7 +625,7 @@ class CompilationDatabase:
         is_newer_func: Callable[[], bool],
         key: Optional[CompileKey] = None,
         on_success: Optional[Callable[[], None]] = None,
-        keyfile: Optional[str] = None
+        keyfile: Optional[str] = None,
     ) -> None:
         def no_op() -> None:
             pass
@@ -642,7 +634,6 @@ class CompilationDatabase:
         queue.append(Command(desc, cmd, is_newer_func, on_success or no_op, key, keyfile))
 
     def build_all(self) -> None:
-
         def sort_key(compile_cmd: Command) -> int:
             if compile_cmd.keyfile:
                 return os.path.getsize(compile_cmd.keyfile)
@@ -679,9 +670,7 @@ class CompilationDatabase:
                 link_database = json.load(f)
         except FileNotFoundError:
             link_database = []
-        compilation_database = {
-            CompileKey(k['file'], k['output']): k['arguments'] for k in compilation_database
-        }
+        compilation_database = {CompileKey(k['file'], k['output']): k['arguments'] for k in compilation_database}
         self.db = compilation_database
         self.linkdb = {tuple(k['output']): k['arguments'] for k in link_database}
         return self
@@ -700,18 +689,10 @@ class CompilationDatabase:
 
 
 def compile_c_extension(
-    kenv: Env,
-    module: str,
-    compilation_database: CompilationDatabase,
-    sources: List[str],
-    headers: List[str],
-    desc_prefix: str = ''
+    kenv: Env, module: str, compilation_database: CompilationDatabase, sources: List[str], headers: List[str], desc_prefix: str = ''
 ) -> None:
     prefix = os.path.basename(module)
-    objects = [
-        os.path.join(build_dir, f'{prefix}-{os.path.basename(src)}.o')
-        for src in sources
-    ]
+    objects = [os.path.join(build_dir, f'{prefix}-{os.path.basename(src)}.o') for src in sources]
 
     for original_src, dest in zip(sources, objects):
         src = original_src
@@ -744,11 +725,9 @@ def compile_c_extension(
 def find_c_files() -> Tuple[List[str], List[str]]:
     ans, headers = [], []
     d = 'smelly'
-    exclude = {
-        'fontconfig.c', 'freetype.c', 'desktop.c', 'freetype_render_ui_text.c'
-    } if is_macos else {
-        'core_text.m', 'cocoa_window.m', 'macos_process_info.c'
-    }
+    exclude = (
+        {'fontconfig.c', 'freetype.c', 'desktop.c', 'freetype_render_ui_text.c'} if is_macos else {'core_text.m', 'cocoa_window.m', 'macos_process_info.c'}
+    )
     for x in sorted(os.listdir(d)):
         ext = os.path.splitext(x)[1]
         if ext in ('.c', '.m') and os.path.basename(x) not in exclude:
@@ -779,9 +758,7 @@ def compile_glfw(compilation_database: CompilationDatabase) -> None:
                 print(err, file=sys.stderr)
                 print(error('Disabling building of wayland backend'), file=sys.stderr)
                 continue
-        compile_c_extension(
-            genv, f'smelly/glfw-{module}', compilation_database,
-            sources, all_headers, desc_prefix=f'[{module}] ')
+        compile_c_extension(genv, f'smelly/glfw-{module}', compilation_database, sources, all_headers, desc_prefix=f'[{module}] ')
 
 
 def wellies_env() -> Env:
@@ -801,12 +778,13 @@ def compile_wellies(compilation_database: CompilationDatabase) -> None:
         return sorted(glob.glob(q))
 
     def files(
-            kitten: str,
-            output: str,
-            extra_headers: Sequence[str] = (),
-            extra_sources: Sequence[str] = (),
-            filter_sources: Optional[Callable[[str], bool]] = None,
-            includes: Sequence[str] = (), libraries: Sequence[str] = (),
+        kitten: str,
+        output: str,
+        extra_headers: Sequence[str] = (),
+        extra_sources: Sequence[str] = (),
+        filter_sources: Optional[Callable[[str], bool]] = None,
+        includes: Sequence[str] = (),
+        libraries: Sequence[str] = (),
     ) -> Tuple[str, List[str], List[str], str, Sequence[str], Sequence[str]]:
         sources = list(filter(filter_sources, list(extra_sources) + list_files(os.path.join('wellies', kitten, '*.c'))))
         headers = list_files(os.path.join('wellies', kitten, '*.h')) + list(extra_headers)
@@ -817,25 +795,37 @@ def compile_wellies(compilation_database: CompilationDatabase) -> None:
         files('diff', 'diff_speedup'),
         files('transfer', 'rsync', libraries=('rsync',)),
         files(
-            'choose', 'subseq_matcher',
+            'choose',
+            'subseq_matcher',
             extra_headers=('smelly/charsets.h',),
             extra_sources=('smelly/charsets.c',),
-            filter_sources=lambda x: 'windows_compat.c' not in x),
+            filter_sources=lambda x: 'windows_compat.c' not in x,
+        ),
     ):
         final_env = kenv.copy()
         final_env.cflags.extend(f'-I{x}' for x in includes)
         final_env.ldpaths[:0] = list(f'-l{x}' for x in libraries)
-        compile_c_extension(
-            final_env, dest, compilation_database, sources, all_headers + ['smelly/data-types.h'])
+        compile_c_extension(final_env, dest, compilation_database, sources, all_headers + ['smelly/data-types.h'])
 
 
 def init_env_from_args(args: Options, native_optimizations: bool = False) -> None:
     global env
     env = init_env(
-        args.debug, args.sanitize, native_optimizations, args.link_time_optimization, args.profile,
-        args.egl_library, args.startup_notification_library, args.canberra_library, args.fontconfig_library,
-        args.extra_logging, args.extra_include_dirs, args.ignore_compiler_warnings,
-        args.build_universal_binary, args.extra_library_dirs, verbose=args.verbose > 0
+        args.debug,
+        args.sanitize,
+        native_optimizations,
+        args.link_time_optimization,
+        args.profile,
+        args.egl_library,
+        args.startup_notification_library,
+        args.canberra_library,
+        args.fontconfig_library,
+        args.extra_logging,
+        args.extra_include_dirs,
+        args.ignore_compiler_warnings,
+        args.build_universal_binary,
+        args.extra_library_dirs,
+        verbose=args.verbose > 0,
     )
 
 
@@ -873,9 +863,7 @@ def build(args: Options, native_optimizations: bool = True, call_init: bool = Tr
         init_env_from_args(args, native_optimizations)
     sources, headers = find_c_files()
     headers.append(build_ref_map())
-    compile_c_extension(
-        smelly_env(), 'smelly/fast_data_types', args.compilation_database, sources, headers
-    )
+    compile_c_extension(smelly_env(), 'smelly/fast_data_types', args.compilation_database, sources, headers)
     compile_glfw(args.compilation_database)
     compile_wellies(args.compilation_database)
 
@@ -897,8 +885,7 @@ def update_go_generated_files(args: Options, smelly_exe: str) -> None:
 
 
 def build_static_wellies(
-    args: Options, launcher_dir: str, destination_dir: str = '', for_freeze: bool = False,
-    for_platform: Optional[Tuple[str, str]] = None
+    args: Options, launcher_dir: str, destination_dir: str = '', for_freeze: bool = False, for_platform: Optional[Tuple[str, str]] = None
 ) -> str:
     sys.stdout.flush()
     sys.stderr.flush()
@@ -953,7 +940,11 @@ def build_static_wellies(
 def build_static_binaries(args: Options, launcher_dir: str) -> None:
     arches = 'amd64', 'arm64'
     for os_, arches_ in {
-        'darwin': arches, 'linux': arches + ('arm', '386'), 'freebsd': arches, 'netbsd': arches, 'openbsd': arches,
+        'darwin': arches,
+        'linux': arches + ('arm', '386'),
+        'freebsd': arches,
+        'netbsd': arches,
+        'openbsd': arches,
         'dragonfly': ('amd64',),
     }.items():
         for arch in arches_:
@@ -1034,11 +1025,13 @@ def copy_man_pages(ddir: str) -> None:
             shutil.rmtree(os.path.join(mandir, f'man{x}'))
     src = 'docs/_build/man'
     if not os.path.exists(src):
-        raise SystemExit('''\
+        raise SystemExit(
+            '''\
 The smelly man pages are missing. If you are building from git then run:
 make && make docs
 (needs the sphinx documentation system to be installed)
-''')
+'''
+        )
     for x in man_levels:
         os.makedirs(os.path.join(mandir, f'man{x}'))
         for y in glob.glob(os.path.join(src, f'*.{x}')):
@@ -1052,17 +1045,20 @@ def copy_html_docs(ddir: str) -> None:
         shutil.rmtree(htmldir)
     src = 'docs/_build/html'
     if not os.path.exists(src):
-        raise SystemExit('''\
+        raise SystemExit(
+            '''\
 The smelly html docs are missing. If you are building from git then run:
 make && make docs
 (needs the sphinx documentation system to be installed)
-''')
+'''
+        )
     shutil.copytree(src, htmldir)
 
 
 def compile_python(base_path: str) -> None:
     import compileall
     import py_compile
+
     try:
         num_workers = max(1, os.cpu_count() or 1)
     except Exception:
@@ -1091,7 +1087,7 @@ def create_linux_bundle_gunk(ddir: str, libdir_name: str) -> None:
         run_tool([make, 'docs'])
     copy_man_pages(ddir)
     copy_html_docs(ddir)
-    for (icdir, ext) in {'256x256': 'png', 'scalable': 'svg'}.items():
+    for icdir, ext in {'256x256': 'png', 'scalable': 'svg'}.items():
         icdir = os.path.join(ddir, 'share', 'icons', 'hicolor', icdir, 'apps')
         safe_makedirs(icdir)
         shutil.copy2(f'logo/smelly.{ext}', icdir)
@@ -1111,7 +1107,7 @@ Exec=smelly
 Icon=smelly
 Categories=System;TerminalEmulator;
 '''
-            )
+        )
     with open(os.path.join(deskdir, 'smelly-open.desktop'), 'w') as f:
         f.write(
             '''\
@@ -1128,7 +1124,7 @@ Categories=System;TerminalEmulator;
 NoDisplay=true
 MimeType=image/*;application/x-sh;application/x-shellscript;inode/directory;text/*;x-scheme-handler/smelly;
 '''
-            )
+        )
 
     base = Path(ddir)
     in_src_launcher = base / (f'{libdir_name}/smelly/smelly/launcher/smelly')
@@ -1141,6 +1137,7 @@ MimeType=image/*;application/x-sh;application/x-shellscript;inode/directory;text
 
 def macos_info_plist() -> bytes:
     import plistlib
+
     VERSION = '.'.join(map(str, version))
 
     def access(what: str, verb: str = 'would like to access') -> str:
@@ -1329,21 +1326,23 @@ def create_macos_app_icon(where: str = 'Resources') -> None:
     iconset_dir = os.path.abspath(os.path.join('logo', f'{appname}.iconset'))
     icns_dir = os.path.join(where, f'{appname}.icns')
     try:
-        subprocess.check_call([
-            'iconutil', '-c', 'icns', iconset_dir, '-o', icns_dir
-        ])
+        subprocess.check_call(['iconutil', '-c', 'icns', iconset_dir, '-o', icns_dir])
     except FileNotFoundError:
         print(f'{error("iconutil not found")}, using png2icns (without retina support) to convert the logo', file=sys.stderr)
-        subprocess.check_call([
-            'png2icns', icns_dir
-        ] + [os.path.join(iconset_dir, logo) for logo in [
-            # png2icns does not support retina icons, so only pass the non-retina icons
-            'icon_16x16.png',
-            'icon_32x32.png',
-            'icon_128x128.png',
-            'icon_256x256.png',
-            'icon_512x512.png',
-        ]])
+        subprocess.check_call(
+            ['png2icns', icns_dir]
+            + [
+                os.path.join(iconset_dir, logo)
+                for logo in [
+                    # png2icns does not support retina icons, so only pass the non-retina icons
+                    'icon_16x16.png',
+                    'icon_32x32.png',
+                    'icon_128x128.png',
+                    'icon_256x256.png',
+                    'icon_512x512.png',
+                ]
+            ]
+        )
 
 
 def create_minimal_macos_bundle(args: Options, launcher_dir: str) -> None:
@@ -1385,8 +1384,7 @@ def create_macos_bundle_gunk(dest: str, for_freeze: bool, args: Options) -> str:
     create_macos_app_icon(os.path.join(ddir, 'Contents', 'Resources'))
     if not for_freeze:
         kitten_exe = build_static_wellies(args, launcher_dir=os.path.dirname(smelly_exe))
-        os.symlink(os.path.relpath(kitten_exe, os.path.dirname(in_src_launcher)),
-                   os.path.join(os.path.dirname(in_src_launcher), os.path.basename(kitten_exe)))
+        os.symlink(os.path.relpath(kitten_exe, os.path.dirname(in_src_launcher)), os.path.join(os.path.dirname(in_src_launcher), os.path.basename(kitten_exe)))
     return str(smelly_exe)
 
 
@@ -1421,11 +1419,7 @@ def package(args: Options, bundle_type: str) -> None:
     allowed_extensions = frozenset('py glsl so'.split())
 
     def src_ignore(parent: str, entries: Iterable[str]) -> List[str]:
-        return [
-            x for x in entries
-            if '.' in x and x.rpartition('.')[2] not in
-            allowed_extensions
-        ]
+        return [x for x in entries if '.' in x and x.rpartition('.')[2] not in allowed_extensions]
 
     shutil.copytree('smelly', os.path.join(libdir, 'smelly'), ignore=src_ignore)
     shutil.copytree('wellies', os.path.join(libdir, 'wellies'), ignore=src_ignore)
@@ -1472,6 +1466,8 @@ def package(args: Options, bundle_type: str) -> None:
 
     if bundle_type.startswith('macos-'):
         create_macos_bundle_gunk(ddir, for_freeze, args)
+
+
 # }}}
 
 
@@ -1484,7 +1480,6 @@ def clean_launcher_dir(launcher_dir: str) -> None:
 
 
 def clean() -> None:
-
     def safe_remove(*entries: str) -> None:
         for x in entries:
             if os.path.exists(x):
@@ -1493,10 +1488,7 @@ def clean() -> None:
                 else:
                     os.unlink(x)
 
-    safe_remove(
-        'build', 'compile_commands.json', 'link_commands.json',
-        'linux-package', 'smelly.app', 'asan-launcher',
-        'smelly-profile', 'docs/generated')
+    safe_remove('build', 'compile_commands.json', 'link_commands.json', 'linux-package', 'smelly.app', 'asan-launcher', 'smelly-profile', 'docs/generated')
     clean_launcher_dir('smelly/launcher')
 
     def excluded(root: str, d: str) -> bool:
@@ -1524,148 +1516,102 @@ def option_parser() -> argparse.ArgumentParser:  # {{{
         'action',
         nargs='?',
         default=Options.action,
-        choices=('build',
-                 'test',
-                 'linux-package',
-                 'smelly.app',
-                 'linux-freeze',
-                 'macos-freeze',
-                 'build-launcher',
-                 'build-frozen-launcher',
-                 'build-frozen-tools',
-                 'clean',
-                 'export-ci-bundles',
-                 'build-dep',
-                 'build-static-binaries',
-                 ),
-        help='Action to perform (default is build)'
+        choices=(
+            'build',
+            'test',
+            'linux-package',
+            'smelly.app',
+            'linux-freeze',
+            'macos-freeze',
+            'build-launcher',
+            'build-frozen-launcher',
+            'build-frozen-tools',
+            'clean',
+            'export-ci-bundles',
+            'build-dep',
+            'build-static-binaries',
+        ),
+        help='Action to perform (default is build)',
     )
-    p.add_argument(
-        '--debug',
-        default=Options.debug,
-        action='store_true',
-        help='Build extension modules with debugging symbols'
-    )
-    p.add_argument(
-        '-v', '--verbose',
-        default=Options.verbose,
-        action='count',
-        help='Be verbose'
-    )
+    p.add_argument('--debug', default=Options.debug, action='store_true', help='Build extension modules with debugging symbols')
+    p.add_argument('-v', '--verbose', default=Options.verbose, action='count', help='Be verbose')
     p.add_argument(
         '--sanitize',
         default=Options.sanitize,
         action='store_true',
-        help='Turn on sanitization to detect memory access errors and undefined behavior. This is a big performance hit.'
+        help='Turn on sanitization to detect memory access errors and undefined behavior. This is a big performance hit.',
     )
+    p.add_argument('--prefix', default=Options.prefix, help='Where to create the linux package')
+    p.add_argument('--dir-for-static-binaries', default=Options.dir_for_static_binaries, help='Where to create the static kitten binary')
+    p.add_argument('--full', dest='incremental', default=Options.incremental, action='store_false', help='Do a full build, even for unchanged files')
+    p.add_argument('--profile', default=Options.profile, action='store_true', help='Use the -pg compile flag to add profiling information')
     p.add_argument(
-        '--prefix',
-        default=Options.prefix,
-        help='Where to create the linux package'
-    )
-    p.add_argument(
-        '--dir-for-static-binaries',
-        default=Options.dir_for_static_binaries,
-        help='Where to create the static kitten binary'
-    )
-    p.add_argument(
-        '--full',
-        dest='incremental',
-        default=Options.incremental,
-        action='store_false',
-        help='Do a full build, even for unchanged files'
-    )
-    p.add_argument(
-        '--profile',
-        default=Options.profile,
-        action='store_true',
-        help='Use the -pg compile flag to add profiling information'
-    )
-    p.add_argument(
-        '--libdir-name',
-        default=Options.libdir_name,
-        help='The name of the directory inside --prefix in which to store compiled files. Defaults to "lib"'
+        '--libdir-name', default=Options.libdir_name, help='The name of the directory inside --prefix in which to store compiled files. Defaults to "lib"'
     )
     p.add_argument(
         '--extra-logging',
         action='append',
         default=Options.extra_logging,
         choices=('event-loop',),
-        help='Turn on extra logging for debugging in this build. Can be specified multiple times, to turn'
-        ' on different types of logging.'
+        help='Turn on extra logging for debugging in this build. Can be specified multiple times, to turn' ' on different types of logging.',
     )
-    p.add_argument(
-        '--extra-include-dirs', '-I',
-        action='append',
-        default=Options.extra_include_dirs,
-        help='Extra include directories to use while compiling'
-    )
-    p.add_argument(
-        '--extra-library-dirs', '-L',
-        action='append',
-        default=Options.extra_library_dirs,
-        help='Extra library directories to use while linking'
-    )
+    p.add_argument('--extra-include-dirs', '-I', action='append', default=Options.extra_include_dirs, help='Extra include directories to use while compiling')
+    p.add_argument('--extra-library-dirs', '-L', action='append', default=Options.extra_library_dirs, help='Extra library directories to use while linking')
     p.add_argument(
         '--update-check-interval',
         type=float,
         default=Options.update_check_interval,
         help='When building a package, the default value for the update_check_interval setting will'
-        ' be set to this number. Use zero to disable update checking.'
+        ' be set to this number. Use zero to disable update checking.',
     )
     p.add_argument(
         '--shell-integration',
         type=str,
         default=Options.shell_integration,
         help='When building a package, the default value for the shell_integration setting will'
-        ' be set to this. Use "enabled no-rc" if you intend to install the shell integration scripts system wide.'
+        ' be set to this. Use "enabled no-rc" if you intend to install the shell integration scripts system wide.',
     )
     p.add_argument(
         '--egl-library',
         type=str,
         default=Options.egl_library,
-        help='The filename argument passed to dlopen for libEGL.'
-        ' This can be used to change the name of the loaded library or specify an absolute path.'
+        help='The filename argument passed to dlopen for libEGL.' ' This can be used to change the name of the loaded library or specify an absolute path.',
     )
     p.add_argument(
         '--startup-notification-library',
         type=str,
         default=Options.startup_notification_library,
         help='The filename argument passed to dlopen for libstartup-notification-1.'
-        ' This can be used to change the name of the loaded library or specify an absolute path.'
+        ' This can be used to change the name of the loaded library or specify an absolute path.',
     )
     p.add_argument(
         '--canberra-library',
         type=str,
         default=Options.canberra_library,
         help='The filename argument passed to dlopen for libcanberra.'
-        ' This can be used to change the name of the loaded library or specify an absolute path.'
+        ' This can be used to change the name of the loaded library or specify an absolute path.',
     )
     p.add_argument(
         '--fontconfig-library',
         type=str,
         default=Options.fontconfig_library,
         help='The filename argument passed to dlopen for libfontconfig.'
-        ' This can be used to change the name of the loaded library or specify an absolute path.'
+        ' This can be used to change the name of the loaded library or specify an absolute path.',
     )
     p.add_argument(
         '--disable-link-time-optimization',
         dest='link_time_optimization',
         default=Options.link_time_optimization,
         action='store_false',
-        help='Turn off Link Time Optimization (LTO).'
+        help='Turn off Link Time Optimization (LTO).',
     )
+    p.add_argument('--ignore-compiler-warnings', default=False, action='store_true', help='Ignore any warnings from the compiler while building')
     p.add_argument(
-        '--ignore-compiler-warnings',
-        default=False, action='store_true',
-        help='Ignore any warnings from the compiler while building'
-    )
-    p.add_argument(
-        '--build-universal-binary',
-        default=False, action='store_true',
-        help='Build a universal binary (ARM + Intel on macOS, ignored on other platforms)'
+        '--build-universal-binary', default=False, action='store_true', help='Build a universal binary (ARM + Intel on macOS, ignored on other platforms)'
     )
     return p
+
+
 # }}}
 
 
@@ -1675,18 +1621,8 @@ def build_dep() -> None:
         deps: List[str]
 
     p = argparse.ArgumentParser(prog=f'{sys.argv[0]} build-dep', description='Build dependencies for the smelly binary packages')
-    p.add_argument(
-        '--platform',
-        default='all',
-        choices='all macos linux linux-32 linux-arm64 linux-64'.split(),
-        help='Platforms to build the dep for'
-    )
-    p.add_argument(
-        'deps',
-        nargs='*',
-        default=[],
-        help='Names of the dependencies, if none provided, build all'
-    )
+    p.add_argument('--platform', default='all', choices='all macos linux linux-32 linux-arm64 linux-64'.split(), help='Platforms to build the dep for')
+    p.add_argument('deps', nargs='*', default=[], help='Names of the dependencies, if none provided, build all')
     args = p.parse_args(sys.argv[2:], namespace=Options)
     linux_platforms = [
         ['linux', '--arch=64'],

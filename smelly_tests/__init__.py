@@ -24,7 +24,6 @@ from smelly.window import process_remote_print, process_title_from_child
 
 
 class Callbacks:
-
     def __init__(self, pty=None) -> None:
         self.clear()
         self.pty = pty
@@ -49,6 +48,7 @@ class Callbacks:
 
     def request_capabilities(self, q) -> None:
         from smelly.terminfo import get_capabilities
+
         for c in get_capabilities(q, None):
             self.write(c.encode('ascii'))
 
@@ -103,6 +103,7 @@ class Callbacks:
             if self.current_clone_data:
                 cdata, self.current_clone_data = self.current_clone_data, ''
                 from smelly.launch import CloneCmd
+
                 self.clone_cmds.append(CloneCmd(cdata))
             self.current_clone_data = ''
             return
@@ -113,12 +114,14 @@ class Callbacks:
 
     def handle_remote_ssh(self, msg):
         from wellies.ssh.main import get_ssh_data
+
         if self.pty:
             for line in get_ssh_data(msg, "testing"):
                 self.pty.write_to_child(line)
 
     def handle_remote_echo(self, msg):
         from base64 import standard_b64decode
+
         if self.pty:
             data = standard_b64decode(msg)
             self.pty.write_to_child(data)
@@ -151,7 +154,6 @@ def filled_history_buf(ynum=5, xnum=5, cursor=Cursor()):
 
 
 class BaseTest(TestCase):
-
     ae = TestCase.assertEqual
     maxDiff = 2048
     is_ci = os.environ.get('CI') == 'true'
@@ -171,6 +173,7 @@ class BaseTest(TestCase):
 
     def cmd_to_run_python_code(self, code):
         from smelly.constants import smelly_exe
+
         return [smelly_exe(), '+runpy', code]
 
     def create_screen(self, cols=5, lines=5, scrollback=5, cell_width=10, cell_height=20, options=None):
@@ -180,8 +183,7 @@ class BaseTest(TestCase):
         return s
 
     def create_pty(
-            self, argv=None, cols=80, lines=100, scrollback=100, cell_width=10, cell_height=20,
-            options=None, cwd=None, env=None, stdin_fd=None, stdout_fd=None
+        self, argv=None, cols=80, lines=100, scrollback=100, cell_width=10, cell_height=20, options=None, cwd=None, env=None, stdin_fd=None, stdout_fd=None
     ):
         self.set_options(options)
         return PTY(argv, lines, cols, scrollback, cell_width, cell_height, cwd, env, stdin_fd=stdin_fd, stdout_fd=stdout_fd)
@@ -196,17 +198,14 @@ class BaseTest(TestCase):
 
 
 class PTY:
-
-    def __init__(
-        self, argv=None, rows=25, columns=80, scrollback=100, cell_width=10, cell_height=20,
-        cwd=None, env=None, stdin_fd=None, stdout_fd=None
-    ):
+    def __init__(self, argv=None, rows=25, columns=80, scrollback=100, cell_width=10, cell_height=20, cwd=None, env=None, stdin_fd=None, stdout_fd=None):
         self.is_child = False
         if isinstance(argv, str):
             argv = shlex.split(argv)
         self.write_buf = b''
         if argv is None:
             from smelly.child import openpty
+
             self.master_fd, self.slave_fd = openpty()
         else:
             self.child_pid, self.master_fd = fork()
@@ -314,4 +313,5 @@ class PTY:
 
     def last_cmd_output(self, as_ansi=False, add_wrap_markers=False):
         from smelly.window import cmd_output
+
         return cmd_output(self.screen, as_ansi=as_ansi, add_wrap_markers=add_wrap_markers)

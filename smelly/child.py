@@ -38,6 +38,7 @@ if is_macos:
 
     def cmdline_of_pid(pid: int) -> List[str]:
         return cmdline_(pid)
+
 else:
 
     def cmdline_of_pid(pid: int) -> List[str]:
@@ -45,14 +46,18 @@ else:
             return list(filter(None, f.read().decode('utf-8').split('\0')))
 
     if is_freebsd:
+
         def cwd_of_process(pid: int) -> str:
             import subprocess
+
             cp = subprocess.run(['pwdx', str(pid)], capture_output=True)
             if cp.returncode != 0:
                 raise ValueError(f'Failed to find cwd of process with pid: {pid}')
             ans = cp.stdout.decode('utf-8', 'replace').split()[1]
             return os.path.realpath(ans)
+
     else:
+
         def cwd_of_process(pid: int) -> str:
             ans = f'/proc/{pid}/cwd'
             return os.path.realpath(ans)
@@ -125,7 +130,7 @@ def parse_environ_block(data: str) -> Dict[str, str]:
         equal_pos = data.find("=", pos, next_pos)
         if equal_pos > pos:
             key = data[pos:equal_pos]
-            value = data[equal_pos + 1:next_pos]
+            value = data[equal_pos + 1 : next_pos]
             ret[key] = value
         pos = next_pos + 1
 
@@ -222,7 +227,6 @@ def cmdline_of_prewarmer() -> List[str]:
 
 
 class Child:
-
     child_fd: Optional[int] = None
     pid: Optional[int] = None
     forked = False
@@ -254,10 +258,15 @@ class Child:
 
     def final_env(self) -> Dict[str, str]:
         from smelly.options.utils import DELETE_ENV_VAR
+
         env = default_env().copy()
         boss = fast_data_types.get_boss()
-        if is_macos and env.get('LC_CTYPE') == 'UTF-8' and not getattr(sys, 'smelly_run_data').get(
-                'lc_ctype_before_python') and not getattr(default_env, 'lc_ctype_set_by_user', False):
+        if (
+            is_macos
+            and env.get('LC_CTYPE') == 'UTF-8'
+            and not getattr(sys, 'smelly_run_data').get('lc_ctype_before_python')
+            and not getattr(default_env, 'lc_ctype_set_by_user', False)
+        ):
             del env['LC_CTYPE']
         env.update(self.env)
         env['TERM'] = fast_data_types.get_options().term
@@ -281,6 +290,7 @@ class Child:
         self.unmodified_argv = list(self.argv)
         if 'disabled' not in opts.shell_integration:
             from .shell_integration import modify_shell_environ
+
             modify_shell_environ(opts, env, self.argv)
         env = {k: v for k, v in env.items() if v is not DELETE_ENV_VAR}
         if self.is_clone_launch:
@@ -325,7 +335,7 @@ class Child:
             # https://github.com/backbiter-no/smelly/issues/1870
             # xterm, urxvt, konsole and gnome-terminal do not do it in my
             # testing.
-            argv[0] = (f'-{exe.split("/")[-1]}')
+            argv[0] = f'-{exe.split("/")[-1]}'
         self.final_exe = which(exe) or exe
         self.final_argv0 = argv[0]
         if self.is_prewarmed:
@@ -334,8 +344,19 @@ class Child:
             pid = self.prewarmed_child.child_process_pid
         else:
             pid = fast_data_types.spawn(
-                self.final_exe, self.cwd, tuple(argv), env, master, slave, stdin_read_fd, stdin_write_fd,
-                ready_read_fd, ready_write_fd, tuple(handled_signals), kitten_exe())
+                self.final_exe,
+                self.cwd,
+                tuple(argv),
+                env,
+                master,
+                slave,
+                stdin_read_fd,
+                stdin_write_fd,
+                ready_read_fd,
+                ready_write_fd,
+                tuple(handled_signals),
+                kitten_exe(),
+            )
         os.close(slave)
         self.pid = pid
         self.child_fd = master
@@ -480,6 +501,7 @@ class Child:
     def send_signal_for_key(self, key_num: int) -> bool:
         import signal
         import termios
+
         if self.child_fd is None:
             return False
         t = termios.tcgetattr(self.child_fd)

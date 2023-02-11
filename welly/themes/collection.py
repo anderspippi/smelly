@@ -391,7 +391,6 @@ def fetch_themes(
 
 
 def zip_file_loader(path_to_zip: str, theme_file_name: str, file_name: str) -> Callable[[], str]:
-
     name = os.path.join(os.path.dirname(theme_file_name), file_name)
 
     def zip_loader() -> str:
@@ -413,7 +412,6 @@ def theme_name_from_file_name(fname: str) -> str:
 
 
 class LineParser:
-
     def __init__(self) -> None:
         self.in_metadata = False
         self.in_blurb = False
@@ -459,8 +457,7 @@ def parse_theme(fname: str, raw: str, exc_class: Type[BaseException] = SystemExi
         try:
             parser(line, ans)
         except Exception as e:
-            raise exc_class(
-                f'Failed to parse {fname} line {i+1} with error: {e}')
+            raise exc_class(f'Failed to parse {fname} line {i+1} with error: {e}')
         if not parser.keep_going:
             break
     if is_dark:
@@ -550,7 +547,6 @@ class Theme:
 
 
 class Themes:
-
     def __init__(self) -> None:
         self.themes: Dict[str, Theme] = {}
         self.index_map: Tuple[str, ...] = ()
@@ -618,9 +614,7 @@ class Themes:
         ans.index_map = self.index_map
         return ans
 
-    def apply_search(
-        self, expression: str, mark_before: str = MARK_BEFORE, mark_after: str = MARK_AFTER
-    ) -> Iterator[str]:
+    def apply_search(self, expression: str, mark_before: str = MARK_BEFORE, mark_after: str = MARK_AFTER) -> Iterator[str]:
         raw = '\n'.join(self.themes)
         results = match(raw, expression, positions=True, level1=' ')
         themes: Dict[str, Theme] = {}
@@ -629,14 +623,14 @@ class Themes:
             positions = tuple(map(int, pos.split(',')))
             text = k
             for p in reversed(positions):
-                text = text[:p] + mark_before + text[p] + mark_after + text[p+1:]
+                text = text[:p] + mark_before + text[p] + mark_after + text[p + 1 :]
             themes[k] = self.themes[k]
             yield text
         self.themes = themes
         self.index_map = tuple(self.themes)
 
 
-def load_themes(cache_age: float = 1., ignore_no_cache: bool = False) -> Themes:
+def load_themes(cache_age: float = 1.0, ignore_no_cache: bool = False) -> Themes:
     ans = Themes()
     try:
         fetched = fetch_themes(cache_age=cache_age)

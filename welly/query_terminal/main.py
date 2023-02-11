@@ -101,6 +101,7 @@ class FontFamily(Query):
     @staticmethod
     def get_result(opts: Options) -> str:
         from smelly.fast_data_types import current_fonts
+
         cf = current_fonts()
         return str(cf['medium'].display_name())
 
@@ -113,6 +114,7 @@ class BoldFont(Query):
     @staticmethod
     def get_result(opts: Options) -> str:
         from smelly.fast_data_types import current_fonts
+
         cf = current_fonts()
         return str(cf['bold'].display_name())
 
@@ -125,6 +127,7 @@ class ItalicFont(Query):
     @staticmethod
     def get_result(opts: Options) -> str:
         from smelly.fast_data_types import current_fonts
+
         cf = current_fonts()
         return str(cf['italic'].display_name())
 
@@ -137,6 +140,7 @@ class BiFont(Query):
     @staticmethod
     def get_result(opts: Options) -> str:
         from smelly.fast_data_types import current_fonts
+
         cf = current_fonts()
         return str(cf['bi'].display_name())
 
@@ -163,6 +167,7 @@ class ClipboardControl(Query):
 
 def get_result(name: str) -> Optional[str]:
     from smelly.fast_data_types import get_options
+
     q = all_queries.get(name)
     if q is None:
         return None
@@ -225,20 +230,14 @@ Available queries are:
 
 {}
 
-'''.format('\n'.join(
-    f':code:`{name}`:\n  {c.help_text}\n' for name, c in all_queries.items()))
+'''.format(
+    '\n'.join(f':code:`{name}`:\n  {c.help_text}\n' for name, c in all_queries.items())
+)
 usage = '[query1 query2 ...]'
 
 
 def main(args: List[str] = sys.argv) -> None:
-    cli_opts, items_ = parse_args(
-        args[1:],
-        options_spec,
-        usage,
-        help_text,
-        f'{appname} +kitten query_terminal',
-        result_class=QueryTerminalCLIOptions
-    )
+    cli_opts, items_ = parse_args(args[1:], options_spec, usage, help_text, f'{appname} +kitten query_terminal', result_class=QueryTerminalCLIOptions)
     queries: List[str] = list(items_)
     if 'all' in queries or not queries:
         queries = sorted(all_queries)

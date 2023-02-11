@@ -17,7 +17,6 @@ class Extent(NamedTuple):
 
 
 class Pair:
-
     def __init__(self, horizontal: bool = True):
         self.horizontal = horizontal
         self.one: Optional[Union[Pair, int]] = None
@@ -29,7 +28,8 @@ class Pair:
 
     def __repr__(self) -> str:
         return 'Pair(horizontal={}, bias={:.2f}, one={}, two={}, between_borders={})'.format(
-                self.horizontal, self.bias, self.one, self.two, self.between_borders)
+            self.horizontal, self.bias, self.one, self.two, self.between_borders
+        )
 
     def all_window_ids(self) -> Generator[int, None, None]:
         if self.one is not None:
@@ -150,12 +150,7 @@ class Pair:
             tuple(map(pair.balanced_add, q))
         return pair
 
-    def apply_window_geometry(
-        self, window_id: int,
-        window_geometry: WindowGeometry,
-        id_window_map: Dict[int, WindowGroup],
-        layout_object: Layout
-    ) -> None:
+    def apply_window_geometry(self, window_id: int, window_geometry: WindowGeometry, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:
         wg = id_window_map[window_id]
         wg.set_geometry(window_geometry)
         layout_object.blank_rects.extend(blank_rects_for_window(window_geometry))
@@ -165,12 +160,7 @@ class Pair:
             return id_window_map[wid].effective_border()
         return 0
 
-    def layout_pair(
-        self,
-        left: int, top: int, width: int, height: int,
-        id_window_map: Dict[int, WindowGroup],
-        layout_object: Layout
-    ) -> None:
+    def layout_pair(self, left: int, top: int, width: int, height: int, id_window_map: Dict[int, WindowGroup], layout_object: Layout) -> None:
         self.between_borders = []
         self.left, self.top, self.width, self.height = left, top, width, height
         bw = self.effective_border(id_window_map) if lgd.draw_minimal_borders else 0
@@ -191,8 +181,8 @@ class Pair:
             self.apply_window_geometry(q, geom, id_window_map, layout_object)
             return
         if self.horizontal:
-            w1 = max(2*lgd.cell_width + 1, int(self.bias * width) - bw)
-            w2 = max(2*lgd.cell_width + 1, width - w1 - bw2)
+            w1 = max(2 * lgd.cell_width + 1, int(self.bias * width) - bw)
+            w2 = max(2 * lgd.cell_width + 1, width - w1 - bw2)
             self.first_extent = Extent(max(0, left - bw), left + w1 + bw)
             self.second_extent = Extent(left + w1 + bw, left + width + bw)
             if isinstance(self.one, Pair):
@@ -217,8 +207,8 @@ class Pair:
                 geom = window_geometry_from_layouts(xl, yl)
                 self.apply_window_geometry(self.two, geom, id_window_map, layout_object)
         else:
-            h1 = max(2*lgd.cell_height + 1, int(self.bias * height) - bw)
-            h2 = max(2*lgd.cell_height + 1, height - h1 - bw2)
+            h1 = max(2 * lgd.cell_height + 1, int(self.bias * height) - bw)
+            h2 = max(2 * lgd.cell_height + 1, height - h1 - bw2)
             self.first_extent = Extent(max(0, top - bw), top + h1 + bw)
             self.second_extent = Extent(top + h1 + bw, top + height + bw)
             if isinstance(self.one, Pair):
@@ -308,7 +298,6 @@ class Pair:
                             yield edges._replace(top=extent.start, bottom=extent.end)
 
     def neighbors_for_window(self, window_id: int, ans: NeighborsMap, layout_object: 'Splits', all_windows: WindowList) -> None:
-
         def quadrant(is_horizontal: bool, is_first: bool) -> Tuple[EdgeLiteral, EdgeLiteral]:
             if is_horizontal:
                 if is_first:
@@ -323,9 +312,7 @@ class Pair:
         def extend(other: Union[int, 'Pair', None], edge: EdgeLiteral, which: EdgeLiteral) -> None:
             if not ans[which] and other:
                 if isinstance(other, Pair):
-                    neighbors = (
-                        w for w in other.edge_windows(edge)
-                        if is_neighbouring_geometry(geometries[w], geometries[window_id], which))
+                    neighbors = (w for w in other.edge_windows(edge) if is_neighbouring_geometry(geometries[w], geometries[window_id], which))
                     ans[which].extend(neighbors)
                 else:
                     ans[which].append(other)
@@ -377,7 +364,6 @@ class Pair:
 
 
 class SplitsLayoutOpts(LayoutOpts):
-
     default_axis_is_horizontal: bool = True
 
     def __init__(self, data: Dict[str, str]):
@@ -439,12 +425,7 @@ class Splits(Layout):
         else:
             root.layout_pair(lgd.central.left, lgd.central.top, lgd.central.width, lgd.central.height, id_window_map, self)
 
-    def add_non_overlay_window(
-        self,
-        all_windows: WindowList,
-        window: WindowType,
-        location: Optional[str]
-    ) -> None:
+    def add_non_overlay_window(self, all_windows: WindowList, window: WindowType, location: Optional[str]) -> None:
         horizontal = self.default_axis_is_horizontal
         after = True
         if location == 'vsplit':
@@ -469,13 +450,7 @@ class Splits(Layout):
                 return
         all_windows.add_window(window)
 
-    def modify_size_of_window(
-        self,
-        all_windows: WindowList,
-        window_id: int,
-        increment: float,
-        is_horizontal: bool = True
-    ) -> bool:
+    def modify_size_of_window(self, all_windows: WindowList, window_id: int, increment: float, is_horizontal: bool = True) -> bool:
         grp = all_windows.group_for_window(window_id)
         if grp is None:
             return False
@@ -569,7 +544,6 @@ class Splits(Layout):
         return None
 
     def layout_state(self) -> Dict[str, Any]:
-
         def add_pair(p: Pair) -> Dict[str, Any]:
             ans: Dict[str, Any] = {}
             ans['horizontal'] = p.horizontal

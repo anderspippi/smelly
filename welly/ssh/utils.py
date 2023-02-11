@@ -16,13 +16,50 @@ def ssh_options() -> Dict[str, str]:
         raw = p.stderr or ''
     except FileNotFoundError:
         return {
-            '4': '', '6': '', 'A': '', 'a': '', 'C': '', 'f': '', 'G': '', 'g': '', 'K': '', 'k': '',
-            'M': '', 'N': '', 'n': '', 'q': '', 's': '', 'T': '', 't': '', 'V': '', 'v': '', 'X': '',
-            'x': '', 'Y': '', 'y': '', 'B': 'bind_interface', 'b': 'bind_address', 'c': 'cipher_spec',
-            'D': '[bind_address:]port', 'E': 'log_file', 'e': 'escape_char', 'F': 'configfile', 'I': 'pkcs11',
-            'i': 'identity_file', 'J': '[user@]host[:port]', 'L': 'address', 'l': 'login_name', 'm': 'mac_spec',
-            'O': 'ctl_cmd', 'o': 'option', 'p': 'port', 'Q': 'query_option', 'R': 'address',
-            'S': 'ctl_path', 'W': 'host:port', 'w': 'local_tun[:remote_tun]'
+            '4': '',
+            '6': '',
+            'A': '',
+            'a': '',
+            'C': '',
+            'f': '',
+            'G': '',
+            'g': '',
+            'K': '',
+            'k': '',
+            'M': '',
+            'N': '',
+            'n': '',
+            'q': '',
+            's': '',
+            'T': '',
+            't': '',
+            'V': '',
+            'v': '',
+            'X': '',
+            'x': '',
+            'Y': '',
+            'y': '',
+            'B': 'bind_interface',
+            'b': 'bind_address',
+            'c': 'cipher_spec',
+            'D': '[bind_address:]port',
+            'E': 'log_file',
+            'e': 'escape_char',
+            'F': 'configfile',
+            'I': 'pkcs11',
+            'i': 'identity_file',
+            'J': '[user@]host[:port]',
+            'L': 'address',
+            'l': 'login_name',
+            'm': 'mac_spec',
+            'O': 'ctl_cmd',
+            'o': 'option',
+            'p': 'port',
+            'Q': 'query_option',
+            'R': 'address',
+            'S': 'ctl_path',
+            'W': 'host:port',
+            'w': 'local_tun[:remote_tun]',
         }
 
     ans: Dict[str, str] = {}
@@ -38,7 +75,7 @@ def ssh_options() -> Dict[str, str]:
             if raw[epos] not in '[]':
                 continue
             num += 1 if raw[epos] == '[' else -1
-        q = raw[pos+1:epos]
+        q = raw[pos + 1 : epos]
         pos = epos
         if len(q) < 2 or q[0] != '-':
             continue
@@ -70,7 +107,7 @@ def patch_cmdline(key: str, val: str, argv: List[str]) -> None:
         if arg.startswith(f'--kitten={key}='):
             argv[i] = f'--kitten={key}={val}'
             return
-        elif i > 0 and argv[i-1] == '--kitten' and (arg.startswith(f'{key}=') or arg.startswith(f'{key} ')):
+        elif i > 0 and argv[i - 1] == '--kitten' and (arg.startswith(f'{key}=') or arg.startswith(f'{key} ')):
             argv[i] = val
             return
     idx = argv.index('ssh')
@@ -86,6 +123,7 @@ def create_shared_memory(data: Any, prefix: str) -> str:
     import json
 
     from smelly.shm import SharedMemory
+
     db = json.dumps(data).encode('utf-8')
     with SharedMemory(size=len(db) + SharedMemory.num_bytes_for_size, prefix=prefix) as shm:
         shm.write_data_with_size(db)
@@ -96,7 +134,6 @@ def create_shared_memory(data: Any, prefix: str) -> str:
 
 def set_env_in_cmdline(env: Dict[str, str], argv: List[str]) -> None:
     patch_cmdline('clone_env', create_shared_memory(env, 'ksse-'), argv)
-
 
 
 def get_ssh_cli() -> Tuple[Set[str], Set[str]]:
@@ -121,11 +158,7 @@ def is_extra_arg(arg: str, extra_args: Tuple[str, ...]) -> str:
 passthrough_args = {f'-{x}' for x in 'NnfGT'}
 
 
-def set_server_args_in_cmdline(
-    server_args: List[str], argv: List[str],
-    extra_args: Tuple[str, ...] = ('--kitten',),
-    allocate_tty: bool = False
-) -> None:
+def set_server_args_in_cmdline(server_args: List[str], argv: List[str], extra_args: Tuple[str, ...] = ('--kitten',), allocate_tty: bool = False) -> None:
     boolean_ssh_args, other_ssh_args = get_ssh_cli()
     ssh_args = []
     expecting_option_val = False
@@ -139,8 +172,8 @@ def set_server_args_in_cmdline(
             continue
         if argument.startswith('-') and not expecting_option_val:
             if argument == '--':
-                del ans[i+2:]
-                if allocate_tty and ans[i-1] != '-t':
+                del ans[i + 2 :]
+                if allocate_tty and ans[i - 1] != '-t':
                     ans.insert(i, '-t')
                 break
             if extra_args:
@@ -162,7 +195,7 @@ def set_server_args_in_cmdline(
                     continue
                 if arg in other_ssh_args:
                     ssh_args.append(arg)
-                    rest = all_args[i+1:]
+                    rest = all_args[i + 1 :]
                     if rest:
                         ssh_args.append(rest)
                     else:
@@ -178,7 +211,7 @@ def set_server_args_in_cmdline(
                 ssh_args.append(argument)
             expecting_option_val = False
             continue
-        del ans[i+1:]
+        del ans[i + 1 :]
         if allocate_tty and ans[i] != '-t':
             ans.insert(i, '-t')
         break

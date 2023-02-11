@@ -85,7 +85,6 @@ def wait_for_child_death(child_pid: int, timeout: float = 1, options: int = 0) -
 
 
 class PrewarmProcess:
-
     def __init__(
         self,
         prewarm_process_pid: int,
@@ -158,7 +157,10 @@ class PrewarmProcess:
         if env is None:
             env = dict(os.environ)
         cmd: Dict[str, Union[int, List[str], str, Dict[str, str]]] = {
-            'tty_name': tty_name, 'cwd': cwd or os.getcwd(), 'argv': argv, 'env': env,
+            'tty_name': tty_name,
+            'cwd': cwd or os.getcwd(),
+            'argv': argv,
+            'env': env,
         }
         total_size = 0
         if stdin_data is not None:
@@ -175,7 +177,7 @@ class PrewarmProcess:
             input_buf = b''
             st = time.monotonic()
             while time.monotonic() - st < timeout:
-                for (fd, event) in self.poll.poll(2):
+                for fd, event in self.poll.poll(2):
                     if event & error_events:
                         raise PrewarmProcessFailed('Failed doing I/O with prewarm process')
                     if fd == self.read_from_process_fd and event & select.POLLIN:
@@ -183,7 +185,7 @@ class PrewarmProcess:
                         input_buf += d
                         while (idx := input_buf.find(b'\n')) > -1:
                             line = input_buf[:idx].decode()
-                            input_buf = input_buf[idx+1:]
+                            input_buf = input_buf[idx + 1 :]
                             if line.startswith('CHILD:'):
                                 _, cid, pid = line.split(':')
                                 child = self.add_child(int(cid), int(pid))
@@ -203,7 +205,7 @@ class PrewarmProcess:
         st = time.monotonic()
         while time.monotonic() - st < timeout and output_buf:
             self.poll_to_send(bool(output_buf))
-            for (fd, event) in self.poll.poll(2):
+            for fd, event in self.poll.poll(2):
                 if event & error_events:
                     raise PrewarmProcessFailed(f'Failed doing I/O with prewarm process: {event}')
                 if fd == self.write_to_process_fd and event & select.POLLOUT:
@@ -224,18 +226,19 @@ class PrewarmProcess:
 def reload_smelly_config(payload: str) -> None:
     d = json.loads(payload)
     from wellies.tui.utils import set_smelly_opts
+
     set_smelly_opts(paths=d['paths'], overrides=d['overrides'])
 
 
 def prewarm() -> None:
     from wellies.runner import all_kitten_names
+
     for kitten in all_kitten_names():
         with suppress(Exception):
             import_module(f'wellies.{kitten}.main')
 
 
 class MemoryViewReadWrapperBytes(io.BufferedIOBase):
-
     def __init__(self, mw: memoryview):
         self.mw = mw
         self.pos = 0
@@ -250,7 +253,7 @@ class MemoryViewReadWrapperBytes(io.BufferedIOBase):
         self.pos = min(len(self.mw), self.pos + size)
         if self.pos <= oldpos:
             return b''
-        return bytes(self.mw[oldpos:self.pos])
+        return bytes(self.mw[oldpos : self.pos])
 
     def readinto(self, b: 'WriteableBuffer') -> int:
         if not isinstance(b, memoryview):
@@ -260,6 +263,7 @@ class MemoryViewReadWrapperBytes(io.BufferedIOBase):
         n = len(data)
         b[:n] = data
         return n
+
     readinto1 = readinto
 
     def readall(self) -> bytes:
@@ -273,7 +277,6 @@ class MemoryViewReadWrapperBytes(io.BufferedIOBase):
 
 
 class MemoryViewReadWrapper(io.TextIOWrapper):
-
     def __init__(self, mw: memoryview):
         super().__init__(cast(IO[bytes], MemoryViewReadWrapperBytes(mw)), encoding='utf-8', errors='replace')
 
@@ -367,7 +370,7 @@ def fork(shm_address: str, free_non_child_resources: Callable[[], None]) -> Tupl
         child_main(cmd, ready_fd_read)
     else:
         with SharedMemory(shm_address, unlink_on_exit=True) as shm:
-            stdin_data = memoryview(shm.mmap)[pos:pos + sz]
+            stdin_data = memoryview(shm.mmap)[pos : pos + sz]
             if stdin_data:
                 sys.stdin = MemoryViewReadWrapper(stdin_data)
             try:
@@ -386,6 +389,7 @@ def eintr_retry(func: Funtion) -> Funtion:
         while True:
             with suppress(InterruptedError):
                 return func(*a, **kw)
+
     return cast(Funtion, ret)
 
 
@@ -405,9 +409,7 @@ def establish_controlling_tty(fd_or_tty_name: Union[str, int], *dups: int, close
         return -1 if closefd else tty_fd
 
 
-interactive_and_job_control_signals = (
-    signal.SIGINT, signal.SIGQUIT, signal.SIGTSTP, signal.SIGTTIN, signal.SIGTTOU
-)
+interactive_and_job_control_signals = (signal.SIGINT, signal.SIGQUIT, signal.SIGTSTP, signal.SIGTTIN, signal.SIGTTOU)
 
 
 def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
@@ -460,7 +462,7 @@ def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
         input_buf += d
         while (idx := input_buf.find(b'\n')) > -1:
             line = input_buf[:idx].decode()
-            input_buf = input_buf[idx+1:]
+            input_buf = input_buf[idx + 1 :]
             cmd, _, payload = line.partition(':')
             if cmd == 'reload_smelly_config':
                 reload_smelly_config(payload)
@@ -547,7 +549,7 @@ def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
                 poll.register(stdout_fd, select.POLLOUT)
             if child_death_buf:
                 poll.register(notify_child_death_fd, select.POLLOUT)
-            for (q, event) in poll.poll():
+            for q, event in poll.poll():
                 if q == stdin_fd:
                     handle_input(event)
                 elif q == stdout_fd:
@@ -593,11 +595,15 @@ def fork_prewarm_process(opts: Options, use_exec: bool = False) -> Optional[Prew
     death_notify_read, death_notify_write = safe_pipe()
     if use_exec:
         import subprocess
+
         tp = subprocess.Popen(
             [smelly_exe(), '+runpy', f'from smelly.prewarm import exec_main; exec_main({stdin_read}, {stdout_write}, {death_notify_write})'],
-            pass_fds=(stdin_read, stdout_write, death_notify_write))
+            pass_fds=(stdin_read, stdout_write, death_notify_write),
+        )
         child_pid = tp.pid
-        tp.returncode = 0  # prevent a warning when the popen object is deleted with the process still running
+        # prevent a warning when the popen object is deleted with the process
+        # still running
+        tp.returncode = 0
         os.set_blocking(stdout_read, True)
         os.set_blocking(stdout_read, False)
     else:

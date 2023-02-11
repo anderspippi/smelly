@@ -53,8 +53,10 @@ def main():
             t1 = t2
             cnt = 0
         elif cnt >= 100:
-            print("Cannot print fast enough, printed %d lines in %f seconds instead of %f seconds target" %
-                  (cnt * args.linesperwrite, t2 - t1, cnt * time_per_print))
+            print(
+                "Cannot print fast enough, printed %d lines in %f seconds instead of %f seconds target"
+                % (cnt * args.linesperwrite, t2 - t1, cnt * time_per_print)
+            )
             break
         else:
             cnt += 1

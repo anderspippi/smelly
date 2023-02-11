@@ -140,7 +140,6 @@ class CwdRequestType(Enum):
 
 
 class CwdRequest:
-
     def __init__(self, window: Optional['Window'] = None, request_type: CwdRequestType = CwdRequestType.current) -> None:
         self.window_id = -1 if window is None else window.id
         self.request_type = request_type
@@ -176,6 +175,7 @@ class CwdRequest:
                 run_shell = argv[0] == resolved_shell(get_options())[0]
                 server_args = [] if run_shell else list(argv)
                 from wellies.ssh.utils import set_cwd_in_cmdline, set_server_args_in_cmdline
+
                 argv[:] = ssh_kitten_cmdline
                 set_cwd_in_cmdline(reported_cwd, argv)
                 set_server_args_in_cmdline(server_args, argv, allocate_tty=not run_shell)
@@ -188,6 +188,7 @@ class CwdRequest:
 def process_title_from_child(title: str, is_base64: bool) -> str:
     if is_base64:
         from base64 import standard_b64decode
+
         try:
             title = standard_b64decode(title).decode('utf-8', 'replace')
         except Exception:
@@ -254,17 +255,15 @@ DYNAMIC_COLOR_CODES = {
     17: DynamicColor.highlight_bg,
     19: DynamicColor.highlight_fg,
 }
-DYNAMIC_COLOR_CODES.update({k+100: v for k, v in DYNAMIC_COLOR_CODES.items()})
+DYNAMIC_COLOR_CODES.update({k + 100: v for k, v in DYNAMIC_COLOR_CODES.items()})
 
 
 class Watcher:
-
     def __call__(self, boss: BossType, window: 'Window', data: Dict[str, Any]) -> None:
         pass
 
 
 class Watchers:
-
     on_resize: List[Watcher]
     on_close: List[Watcher]
     on_focus_change: List[Watcher]
@@ -279,6 +278,7 @@ class Watchers:
             for x in other:
                 if x not in base:
                     base.append(x)
+
         merge(self.on_resize, others.on_resize)
         merge(self.on_close, others.on_close)
         merge(self.on_focus_change, others.on_focus_change)
@@ -299,7 +299,6 @@ class Watchers:
 
 
 def call_watchers(windowref: Callable[[], Optional['Window']], which: str, data: Dict[str, Any]) -> None:
-
     def callback(timer_id: Optional[int]) -> None:
         w = windowref()
         if w is not None:
@@ -318,12 +317,7 @@ def pagerhist(screen: Screen, as_ansi: bool = False, add_wrap_markers: bool = Tr
 
 
 def as_text(
-    screen: Screen,
-    as_ansi: bool = False,
-    add_history: bool = False,
-    add_wrap_markers: bool = False,
-    alternate_screen: bool = False,
-    add_cursor: bool = False
+    screen: Screen, as_ansi: bool = False, add_history: bool = False, add_wrap_markers: bool = False, alternate_screen: bool = False, add_cursor: bool = False
 ) -> str:
     lines: List[str] = []
     add_history = add_history and not (screen.is_using_alternate_linebuf() ^ alternate_screen)
@@ -372,16 +366,15 @@ def multi_replace(src: str, **replacements: Any) -> str:
 
 
 class LoadShaderPrograms:
-
     def __call__(self, semi_transparent: bool = False) -> None:
         compile_program(BLIT_PROGRAM, *load_shaders('blit'))
         v, f = load_shaders('cell')
 
         for which, p in {
-                'SIMPLE': CELL_PROGRAM,
-                'BACKGROUND': CELL_BG_PROGRAM,
-                'SPECIAL': CELL_SPECIAL_PROGRAM,
-                'FOREGROUND': CELL_FG_PROGRAM,
+            'SIMPLE': CELL_PROGRAM,
+            'BACKGROUND': CELL_BG_PROGRAM,
+            'SPECIAL': CELL_SPECIAL_PROGRAM,
+            'FOREGROUND': CELL_FG_PROGRAM,
         }.items():
             ff = f.replace('{WHICH_PROGRAM}', which)
             vv = multi_replace(
@@ -403,9 +396,9 @@ class LoadShaderPrograms:
 
         v, f = load_shaders('graphics')
         for which, p in {
-                'SIMPLE': GRAPHICS_PROGRAM,
-                'PREMULT': GRAPHICS_PREMULT_PROGRAM,
-                'ALPHA_MASK': GRAPHICS_ALPHA_MASK_PROGRAM,
+            'SIMPLE': GRAPHICS_PROGRAM,
+            'PREMULT': GRAPHICS_PREMULT_PROGRAM,
+            'ALPHA_MASK': GRAPHICS_ALPHA_MASK_PROGRAM,
         }.items():
             ff = f.replace('ALPHA_TYPE', which)
             compile_program(p, v, ff)
@@ -424,12 +417,16 @@ def setup_colors(screen: Screen, opts: Options) -> None:
     screen.color_profile.update_ansi_color_table(build_ansi_color_table(opts))
 
     def s(c: Optional[Color]) -> int:
-        return 0 if c is None else (0xff000000 | int(c))
+        return 0 if c is None else (0xFF000000 | int(c))
+
     screen.color_profile.set_configured_colors(
-        s(opts.foreground), s(opts.background),
-        s(opts.cursor), s(opts.cursor_text_color),
-        s(opts.selection_foreground), s(opts.selection_background),
-        s(opts.visual_bell_color)
+        s(opts.foreground),
+        s(opts.background),
+        s(opts.cursor),
+        s(opts.cursor_text_color),
+        s(opts.selection_foreground),
+        s(opts.selection_background),
+        s(opts.visual_bell_color),
     )
 
 
@@ -437,6 +434,7 @@ def setup_colors(screen: Screen, opts: Options) -> None:
 def load_paste_filter() -> Callable[[str], str]:
     import runpy
     import traceback
+
     try:
         m = runpy.run_path(os.path.join(config_dir, 'paste-actions.py'))
         func: Callable[[str], str] = m['filter_paste']
@@ -447,6 +445,7 @@ def load_paste_filter() -> Callable[[str], str]:
 
         def func(text: str) -> str:
             return text
+
     return func
 
 
@@ -486,6 +485,7 @@ def process_remote_print(msg: str) -> str:
     from base64 import standard_b64decode
 
     from .cli import green
+
     text = standard_b64decode(msg).decode('utf-8', 'replace')
     return text.replace('\x1b', green(r'\e')).replace('\a', green(r'\a')).replace('\0', green(r'\0'))
 
@@ -510,7 +510,6 @@ class EdgeWidths:
 
 
 class GlobalWatchers:
-
     def __init__(self) -> None:
         self.options_spec: Optional[Dict[str, str]] = None
         self.ans = Watchers()
@@ -521,6 +520,7 @@ class GlobalWatchers:
         if spec == self.options_spec:
             return self.ans
         from .launch import load_watch_modules
+
         if self.extra:
             spec = spec.copy()
             spec[self.extra] = self.extra
@@ -536,7 +536,6 @@ global_watchers = GlobalWatchers()
 
 
 class Window:
-
     window_custom_type: str = ''
     overlay_type = OverlayType.transient
 
@@ -556,8 +555,8 @@ class Window:
             self.watchers.add(global_watchers())
         else:
             self.watchers = global_watchers().copy()
-        self.last_focused_at = 0.
-        self.last_resized_at = 0.
+        self.last_focused_at = 0.0
+        self.last_resized_at = 0.0
         self.started_at = monotonic()
         self.current_remote_data: List[str] = []
         self.current_mouse_event_button = 0
@@ -614,6 +613,7 @@ class Window:
                 raise PermissionError()
             return False
         from .remote_control import password_authorizer
+
         pa = password_authorizer(auth_items)
         if not pa.is_cmd_allowed(pcmd, self, False, extra_data):
             raise PermissionError()
@@ -624,6 +624,7 @@ class Window:
         ans: Optional['FileTransmission'] = getattr(self, '_file_transmission', None)
         if ans is None:
             from .file_transmission import FileTransmission
+
             ans = self._file_transmission = FileTransmission(self.id)
         return ans
 
@@ -656,9 +657,14 @@ class Window:
 
     def update_effective_padding(self) -> None:
         set_window_padding(
-            self.os_window_id, self.tab_id, self.id,
-            self.effective_padding('left'), self.effective_padding('top'),
-            self.effective_padding('right'), self.effective_padding('bottom'))
+            self.os_window_id,
+            self.tab_id,
+            self.id,
+            self.effective_padding('left'),
+            self.effective_padding('top'),
+            self.effective_padding('right'),
+            self.effective_padding('bottom'),
+        )
 
     def patch_edge_width(self, which: str, edge: EdgeLiteral, val: Optional[float]) -> None:
         q = self.padding if which == 'padding' else self.margin
@@ -751,8 +757,7 @@ class Window:
             assert isinstance(pat, tuple)
             key_pat, val_pat = pat
             for key, val in self.child.environ.items():
-                if key_pat.search(key) is not None and (
-                        val_pat is None or val_pat.search(val) is not None):
+                if key_pat.search(key) is not None and (val_pat is None or val_pat.search(val) is not None):
                     return True
             return False
         assert not isinstance(pat, tuple)
@@ -829,8 +834,11 @@ class Window:
             self.needs_layout = False
             call_watchers(weakref.ref(self), 'on_resize', {'old_geometry': self.geometry, 'new_geometry': new_geometry})
         current_pty_size = (
-            self.screen.lines, self.screen.columns,
-            max(0, new_geometry.right - new_geometry.left), max(0, new_geometry.bottom - new_geometry.top))
+            self.screen.lines,
+            self.screen.columns,
+            max(0, new_geometry.right - new_geometry.left),
+            max(0, new_geometry.bottom - new_geometry.top),
+        )
         update_ime_position = False
         if current_pty_size != self.last_reported_pty_size:
             get_boss().child_monitor.resize_pty(self.id, *current_pty_size)
@@ -856,11 +864,14 @@ class Window:
     def close(self) -> None:
         get_boss().mark_window_for_close(self)
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Send the specified text to the active window
 
         See :sc:`send_text <send_text>` for details.
-        ''')
+        ''',
+    )
     def send_text(self, *args: str) -> bool:
         mode = keyboard_mode_name(self.screen)
         required_mode_, text = args[-2:]
@@ -903,7 +914,7 @@ class Window:
             if not raw_data.startswith('notify;'):
                 log_error(f'Ignoring unknown OSC 777: {raw_data}')
                 return  # unknown OSC 777
-            raw_data = raw_data[len('notify;'):]
+            raw_data = raw_data[len('notify;') :]
         cmd = handle_notification_cmd(osc_code, raw_data, self.id, self.prev_osc99_cmd)
         if cmd is not None and osc_code == 99:
             self.prev_osc99_cmd = cmd
@@ -927,13 +938,15 @@ class Window:
             if not opts.allow_hyperlinks:
                 return
             from urllib.parse import unquote, urlparse, urlunparse
+
             try:
                 purl = urlparse(url)
             except Exception:
                 return
-            if (not purl.scheme or purl.scheme == 'file'):
+            if not purl.scheme or purl.scheme == 'file':
                 if purl.netloc:
                     from .utils import get_hostname
+
                     hostname = get_hostname()
                     remote_hostname = purl.netloc.partition(':')[0]
                     if remote_hostname and remote_hostname != hostname and remote_hostname != 'localhost':
@@ -942,10 +955,14 @@ class Window:
                     url = urlunparse(purl._replace(netloc=''))
             if opts.allow_hyperlinks & 0b10:
                 from wellies.tui.operations import styled
+
                 get_boss().choose(
                     'What would you like to do with this URL:\n' + styled(sanitize_url_for_dispay_to_user(url), fg='yellow'),
                     partial(self.hyperlink_open_confirmed, url, cwd),
-                    'o:Open', 'c:Copy to clipboard', 'n;red:Nothing', default='o',
+                    'o:Open',
+                    'c:Copy to clipboard',
+                    'n;red:Nothing',
+                    default='o',
                     window=self,
                 )
                 return
@@ -962,23 +979,21 @@ class Window:
         from wellies.ssh.main import get_connection_data
 
         from .utils import SSHConnectionData
+
         args = self.ssh_kitten_cmdline()
         conn_data: Union[None, List[str], SSHConnectionData] = None
         if args:
             ssh_cmdline = sorted(self.child.foreground_processes, key=lambda p: p['pid'])[-1]['cmdline'] or ['']
             if 'ControlPath=' in ' '.join(ssh_cmdline):
                 idx = ssh_cmdline.index('--')
-                conn_data = [is_ssh_kitten_sentinel] + list(ssh_cmdline[:idx + 2])
+                conn_data = [is_ssh_kitten_sentinel] + list(ssh_cmdline[: idx + 2])
         if conn_data is None:
             args = self.child.foreground_cmdline
             conn_data = get_connection_data(args, self.child.foreground_cwd or self.child.current_cwd or '')
             if conn_data is None:
                 get_boss().show_error('Could not handle remote file', f'No SSH connection data found in: {args}')
                 return
-        get_boss().run_kitten(
-            'remote_file', '--hostname', netloc.partition(':')[0], '--path', remote_path,
-            '--ssh-connection-data', json.dumps(conn_data)
-        )
+        get_boss().run_kitten('remote_file', '--hostname', netloc.partition(':')[0], '--path', remote_path, '--ssh-connection-data', json.dumps(conn_data))
 
     def send_signal_for_key(self, key_num: int) -> bool:
         try:
@@ -996,6 +1011,7 @@ class Window:
                 c(self, focused)
             except Exception:
                 import traceback
+
                 traceback.print_exc()
         self.screen.focus_changed(focused)
         if focused:
@@ -1029,7 +1045,8 @@ class Window:
 
     def on_activity_since_last_focus(self) -> bool:
         if get_options().tab_activity_symbol and (monotonic() - self.last_resized_at) > 0.5:
-            # Ignore activity soon after a resize as the child program is probably redrawing the screen
+            # Ignore activity soon after a resize as the child program is
+            # probably redrawing the screen
             get_boss().on_activity_since_last_focus(self)
             return True
         return False
@@ -1039,6 +1056,7 @@ class Window:
         if cb and cb != ['none']:
             import shlex
             import subprocess
+
             env = self.child.foreground_environ
             env['smelly_CHILD_CMDLINE'] = ' '.join(map(shlex.quote, self.child.cmdline))
             subprocess.Popen(cb, env=env, cwd=self.child.foreground_cwd, preexec_fn=clear_handled_signals)
@@ -1055,7 +1073,7 @@ class Window:
         opts = get_options()
         val = opts.macos_titlebar_color if is_macos else opts.wayland_titlebar_color
         if val > 0:
-            if (val & 0xff) == 1:
+            if (val & 0xFF) == 1:
                 val = self.screen.color_profile.default_bg
             else:
                 val = val >> 8
@@ -1072,7 +1090,7 @@ class Window:
             v = to_color(raw)
             if v is None:
                 return 0
-            return 0xff000000 | int(v)
+            return 0xFF000000 | int(v)
 
         for which, val_ in changes.items():
             val = item(val_)
@@ -1108,7 +1126,7 @@ class Window:
             if w is not None:
                 if val == '?':
                     col = getattr(self.screen.color_profile, w.name)
-                    self.report_color(str(code), col >> 16, (col >> 8) & 0xff, col & 0xff)
+                    self.report_color(str(code), col >> 16, (col >> 8) & 0xFF, col & 0xFF)
                 else:
                     q = None if code >= 100 else val
                     color_changes[w] = q
@@ -1152,22 +1170,26 @@ class Window:
 
     def handle_remote_echo(self, msg: str) -> None:
         from base64 import standard_b64decode
+
         data = standard_b64decode(msg)
         self.write_to_child(data)
 
     def handle_remote_ssh(self, msg: str) -> None:
         from wellies.ssh.main import get_ssh_data
+
         for line in get_ssh_data(msg, f'{os.getpid()}-{self.id}'):
             self.write_to_child(line)
 
     def handle_kitten_result(self, msg: str) -> None:
         import base64
+
         self.kitten_result = json.loads(base64.b85decode(msg))
         for processor in self.kitten_result_processors:
             try:
                 processor(self, self.kitten_result)
             except Exception:
                 import traceback
+
                 traceback.print_exc()
 
     def add_kitten_result_processor(self, callback: Callable[['Window', Any], None]) -> None:
@@ -1195,6 +1217,7 @@ class Window:
         cdata = self.append_remote_data(msg)
         if cdata:
             from .launch import remote_edit
+
             remote_edit(cdata, self)
 
     def handle_remote_clone(self, msg: str) -> None:
@@ -1202,10 +1225,10 @@ class Window:
         if cdata:
             ac = get_options().allow_cloning
             if ac == 'ask':
-                get_boss().confirm(_(
-                    'A program running in this window wants to clone it into another window.'
-                    ' Allow it do so, once?'),
-                    partial(self.handle_remote_clone_confirmation, cdata), window=self,
+                get_boss().confirm(
+                    _('A program running in this window wants to clone it into another window.' ' Allow it do so, once?'),
+                    partial(self.handle_remote_clone_confirmation, cdata),
+                    window=self,
                 )
             elif ac in ('yes', 'y', 'true'):
                 self.handle_remote_clone_confirmation(cdata, True)
@@ -1213,10 +1236,12 @@ class Window:
     def handle_remote_clone_confirmation(self, cdata: str, confirmed: bool) -> None:
         if confirmed:
             from .launch import clone_and_launch
+
             clone_and_launch(cdata, self)
 
     def handle_remote_askpass(self, msg: str) -> None:
         from .shm import SharedMemory
+
         with SharedMemory(name=msg, readonly=True) as shm:
             shm.seek(1)
             data = json.loads(shm.read_data_with_size())
@@ -1233,14 +1258,16 @@ class Window:
         message: str = data['message']
         if data['type'] == 'confirm':
             get_boss().confirm(
-                message, callback, window=self, confirm_on_cancel=bool(data.get('confirm_on_cancel')),
-                confirm_on_accept=bool(data.get('confirm_on_accept', True)))
+                message,
+                callback,
+                window=self,
+                confirm_on_cancel=bool(data.get('confirm_on_cancel')),
+                confirm_on_accept=bool(data.get('confirm_on_accept', True)),
+            )
         elif data['type'] == 'choose':
-            get_boss().choose(
-                message, callback, *data['choices'], window=self, default=data.get('default', ''))
+            get_boss().choose(message, callback, *data['choices'], window=self, default=data.get('default', ''))
         elif data['type'] == 'get_line':
-            get_boss().get_line(
-                message, callback, window=self, is_password=bool(data.get('is_password')), prompt=data.get('prompt', '> '))
+            get_boss().get_line(message, callback, window=self, is_password=bool(data.get('is_password')), prompt=data.get('prompt', '> '))
         else:
             log_error(f'Ignoring ask request with unknown type: {data["type"]}')
 
@@ -1270,10 +1297,13 @@ class Window:
             else:
                 if self.child_title:
                     self.title_stack.append(self.child_title)
+
     # }}}
 
     # mouse actions {{{
-    @ac('mouse', '''
+    @ac(
+        'mouse',
+        '''
         Handle a mouse click
 
         Try to perform the specified actions one after the other till one of them is successful.
@@ -1284,7 +1314,8 @@ class Window:
             prompt - if the mouse click happens at a shell prompt move the cursor to the mouse location
 
         For examples, see :ref:`conf-smelly-mouse.mousemap`
-        ''')
+        ''',
+    )
     def mouse_handle_click(self, *actions: str) -> None:
         for a in actions:
             if a == 'selection':
@@ -1297,7 +1328,8 @@ class Window:
                 # Do not send move cursor events too soon after the window is
                 # focused, this is because there are people that click on
                 # windows and start typing immediately and the cursor event
-                # can interfere with that. See https://github.com/backbiter-no/smelly/issues/4128
+                # can interfere with that. See
+                # https://github.com/backbiter-no/smelly/issues/4128
                 if monotonic() - self.last_focused_at < 1.5 * get_click_interval():
                     return
                 if move_cursor_to_mouse_if_in_prompt(self.os_window_id, self.tab_id, self.id):
@@ -1312,11 +1344,14 @@ class Window:
     def mouse_click_url_or_select(self) -> None:
         self.mouse_handle_click('selection', 'link')
 
-    @ac('mouse', '''
+    @ac(
+        'mouse',
+        '''
         Manipulate the selection based on the current mouse position
 
         For examples, see :ref:`conf-smelly-mouse.mousemap`
-        ''')
+        ''',
+    )
     def mouse_selection(self, code: int) -> None:
         mouse_selection(self.os_window_id, self.tab_id, self.id, code, self.current_mouse_event_button)
 
@@ -1332,22 +1367,29 @@ class Window:
         if txt:
             self.paste_with_actions(txt)
 
-    @ac('mouse', '''
+    @ac(
+        'mouse',
+        '''
         Select clicked command output
 
         Requires :ref:`shell_integration` to work
-        ''')
+        ''',
+    )
     def mouse_select_command_output(self) -> None:
         click_mouse_cmd_output(self.os_window_id, self.tab_id, self.id, True)
 
-    @ac('mouse', '''
+    @ac(
+        'mouse',
+        '''
         Show clicked command output in a pager like less
 
         Requires :ref:`shell_integration` to work
-        ''')
+        ''',
+    )
     def mouse_show_command_output(self) -> None:
         if click_mouse_cmd_output(self.os_window_id, self.tab_id, self.id, False):
             self.show_cmd_output(CommandOutput.last_visited, 'Clicked command output')
+
     # }}}
 
     def text_for_selection(self, as_ansi: bool = False) -> str:
@@ -1366,6 +1408,7 @@ class Window:
                 w(boss, self, data)
             except Exception:
                 import traceback
+
                 traceback.print_exc()
 
     def destroy(self) -> None:
@@ -1382,12 +1425,7 @@ class Window:
             del self.screen
 
     def as_text(
-        self,
-        as_ansi: bool = False,
-        add_history: bool = False,
-        add_wrap_markers: bool = False,
-        alternate_screen: bool = False,
-        add_cursor: bool = False
+        self, as_ansi: bool = False, add_history: bool = False, add_wrap_markers: bool = False, alternate_screen: bool = False, add_cursor: bool = False
     ) -> str:
         return as_text(self.screen, as_ansi, add_history, add_wrap_markers, alternate_screen, add_cursor)
 
@@ -1425,6 +1463,7 @@ class Window:
 
     def ssh_kitten_cmdline(self) -> List[str]:
         from wellies.ssh.utils import is_kitten_cmdline
+
         for p in self.child.foreground_processes:
             q = list(p['cmdline'] or ())
             if is_kitten_cmdline(q):
@@ -1436,7 +1475,7 @@ class Window:
         if has_wrap_markers:
             text = text.replace('\r\n', '\n').replace('\r', '\n')
         lines = text.count('\n')
-        input_line_number = (lines - (self.screen.lines - 1) - self.screen.scrolled_by)
+        input_line_number = lines - (self.screen.lines - 1) - self.screen.scrolled_by
         return {
             'input_line_number': input_line_number,
             'scrolled_by': self.screen.scrolled_by,
@@ -1444,7 +1483,7 @@ class Window:
             'cursor_y': self.screen.cursor.y + 1,
             'lines': self.screen.lines,
             'columns': self.screen.columns,
-            'text': text
+            'text': text,
         }
 
     def set_logo(self, path: str, position: str = '', alpha: float = -1) -> None:
@@ -1466,6 +1505,7 @@ class Window:
                 scheme, rest = m.group(1), m.group(2)
                 if rest.startswith('//') or scheme in ('mailto', 'irc'):
                     import shlex
+
                     text = shlex.quote(text)
         btext = text.encode('utf-8')
         if 'confirm' in opts.paste_actions:
@@ -1498,7 +1538,8 @@ class Window:
                 text = sanitize_for_bracketed_paste(text)
             else:
                 # Workaround for broken editors like nano that cannot handle
-                # newlines in pasted text see https://github.com/backbiter-no/smelly/issues/994
+                # newlines in pasted text see
+                # https://github.com/backbiter-no/smelly/issues/994
                 text = text.replace(b'\r\n', b'\n').replace(b'\n', b'\r')
             self.screen.paste(text)
 
@@ -1523,36 +1564,48 @@ class Window:
         text = text.replace('\r\n', '\n').replace('\r', '\n')
         get_boss().display_scrollback(self, text, title=title, report_cursor=False)
 
-    @ac('cp', '''
+    @ac(
+        'cp',
+        '''
         Show output from the first shell command on screen in a pager like less
 
         Requires :ref:`shell_integration` to work
-        ''')
+        ''',
+    )
     def show_first_command_output_on_screen(self) -> None:
         self.show_cmd_output(CommandOutput.first_on_screen, 'First command output on screen')
 
-    @ac('cp', '''
+    @ac(
+        'cp',
+        '''
         Show output from the last shell command in a pager like less
 
         Requires :ref:`shell_integration` to work
-        ''')
+        ''',
+    )
     def show_last_command_output(self) -> None:
         self.show_cmd_output(CommandOutput.last_run, 'Last command output')
 
-    @ac('cp', '''
+    @ac(
+        'cp',
+        '''
         Show the first command output below the last scrolled position via scroll_to_prompt
         or the last mouse clicked command output in a pager like less
 
         Requires :ref:`shell_integration` to work
-        ''')
+        ''',
+    )
     def show_last_visited_command_output(self) -> None:
         self.show_cmd_output(CommandOutput.last_visited, 'Last visited command output')
 
-    @ac('cp', '''
+    @ac(
+        'cp',
+        '''
         Show the last non-empty output from a shell command in a pager like less
 
         Requires :ref:`shell_integration` to work
-        ''')
+        ''',
+    )
     def show_last_non_empty_command_output(self) -> None:
         self.show_cmd_output(CommandOutput.last_non_empty, 'Last non-empty command output')
 
@@ -1574,8 +1627,12 @@ class Window:
 
     def encoded_key(self, key_event: KeyEvent) -> bytes:
         return encode_key_for_tty(
-            key=key_event.key, shifted_key=key_event.shifted_key, alternate_key=key_event.alternate_key,
-            mods=key_event.mods, action=key_event.action, text=key_event.text,
+            key=key_event.key,
+            shifted_key=key_event.shifted_key,
+            alternate_key=key_event.alternate_key,
+            mods=key_event.mods,
+            action=key_event.action,
+            text=key_event.text,
             key_encoding_flags=self.screen.current_key_encoding_flags(),
             cursor_key_mode=self.screen.cursor_key_mode,
         ).encode('ascii')
@@ -1650,7 +1707,9 @@ class Window:
             return None
         return True
 
-    @ac('sc', '''
+    @ac(
+        'sc',
+        '''
         Scroll to the previous/next shell command prompt
         Allows easy jumping from one command to the next. Requires working
         :ref:`shell_integration`. Takes a single, optional, number as argument which is
@@ -1661,7 +1720,8 @@ class Window:
             map ctrl+p scroll_to_prompt -1  # jump to previous
             map ctrl+n scroll_to_prompt 1   # jump to next
             map ctrl+o scroll_to_prompt 0   # jump to last visited
-        ''')
+        ''',
+    )
     def scroll_to_prompt(self, num_of_prompts: int = -1) -> Optional[bool]:
         if self.screen.is_main_linebuf():
             self.screen.scroll_to_prompt(num_of_prompts)
@@ -1689,6 +1749,7 @@ class Window:
     @ac('mk', 'Toggle the current marker on/off')
     def toggle_marker(self, ftype: str, spec: Union[str, Tuple[Tuple[int, str], ...]], flags: int) -> None:
         from .marks import marker_from_spec
+
         key = ftype, spec
         if key == self.current_marker_spec:
             self.remove_marker()
@@ -1699,6 +1760,7 @@ class Window:
     def set_marker(self, spec: Union[str, Sequence[str]]) -> None:
         from .marks import marker_from_spec
         from .options.utils import parse_marker_spec, toggle_marker
+
         if isinstance(spec, str):
             func, (ftype, spec_, flags) = toggle_marker('toggle_marker', spec)
         else:
@@ -1717,20 +1779,25 @@ class Window:
     def scroll_to_mark(self, prev: bool = True, mark: int = 0) -> None:
         self.screen.scroll_to_next_mark(mark, prev)
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
         Send the specified SIGNAL to the foreground process in the active window
 
         For example::
 
             map f1 signal_child SIGTERM
-        ''')
+        ''',
+    )
     def signal_child(self, *signals: int) -> None:
         pid = self.child.pid_for_cwd
         if pid is not None:
             for sig in signals:
                 os.kill(pid, sig)
 
-    @ac('misc', '''
+    @ac(
+        'misc',
+        '''
     Display the specified smelly documentation, preferring a local copy, if found.
 
     For example::
@@ -1739,8 +1806,10 @@ class Window:
         map f1 show_smelly_doc conf
         # show the ssh kitten docs
         map f1 show_smelly_doc wellies/ssh
-    ''')
+    ''',
+    )
     def show_smelly_doc(self, which: str = '') -> None:
         url = docs_url(which)
         get_boss().open_url(url)
+
     # }}}

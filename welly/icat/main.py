@@ -123,12 +123,12 @@ Wait for a key press before exiting after displaying the images.
 '''
 
 help_text = (
-        'A cat like utility to display images in the terminal.'
-        ' You can specify multiple image files and/or directories.'
-        ' Directories are scanned recursively for image files. If STDIN'
-        ' is not a terminal, image data will be read from it as well.'
-        ' You can also specify HTTP(S) or FTP URLs which will be'
-        ' automatically downloaded and displayed.'
+    'A cat like utility to display images in the terminal.'
+    ' You can specify multiple image files and/or directories.'
+    ' Directories are scanned recursively for image files. If STDIN'
+    ' is not a terminal, image data will be read from it as well.'
+    ' You can also specify HTTP(S) or FTP URLs which will be'
+    ' automatically downloaded and displayed.'
 )
 usage = 'image-file-or-url-or-directory ...'
 
@@ -139,6 +139,7 @@ elif __name__ == '__doc__':
     import sys
 
     from smelly.cli import CompletionSpec
+
     cd = sys.cli_docs  # type: ignore
     cd['usage'] = usage
     cd['options'] = lambda: OPTIONS.format()

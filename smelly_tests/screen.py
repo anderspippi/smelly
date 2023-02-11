@@ -9,7 +9,6 @@ from . import BaseTest
 
 
 class TestScreen(BaseTest):
-
     def test_draw_fast(self):
         s = self.create_screen()
 
@@ -97,14 +96,14 @@ class TestScreen(BaseTest):
         parse_bytes(s, b'\x1b[b')
         self.ae(str(s.line(0)), 'aa')
         parse_bytes(s, b'\x1b[3b')
-        self.ae(str(s.line(0)), 'a'*5)
+        self.ae(str(s.line(0)), 'a' * 5)
         s.draw(' ')
         parse_bytes(s, b'\x1b[3b')
-        self.ae(str(s.line(1)), ' '*4)
+        self.ae(str(s.line(1)), ' ' * 4)
 
     def test_emoji_skin_tone_modifiers(self):
         s = self.create_screen()
-        q = chr(0x1f469) + chr(0x1f3fd)
+        q = chr(0x1F469) + chr(0x1F3FD)
         s.draw(q)
         self.ae(str(s.line(0)), q)
         self.ae(s.cursor.x, 2)
@@ -281,14 +280,14 @@ class TestScreen(BaseTest):
         s = self.create_screen(scrollback=6)
         s.draw(''.join([str(i) * s.columns for i in range(s.lines)]))
         s.resize(3, 10)
-        self.ae(str(s.line(0)), '0'*5 + '1'*5)
-        self.ae(str(s.line(1)), '2'*5 + '3'*5)
-        self.ae(str(s.line(2)), '4'*5)
+        self.ae(str(s.line(0)), '0' * 5 + '1' * 5)
+        self.ae(str(s.line(1)), '2' * 5 + '3' * 5)
+        self.ae(str(s.line(2)), '4' * 5)
         s.resize(5, 1)
         self.ae(str(s.line(0)), '4')
         self.ae(str(s.historybuf), '3\n3\n3\n3\n3\n2')
         s = self.create_screen(scrollback=20)
-        s.draw(''.join(str(i) * s.columns for i in range(s.lines*2)))
+        s.draw(''.join(str(i) * s.columns for i in range(s.lines * 2)))
         self.ae(str(s.linebuf), '55555\n66666\n77777\n88888\n99999')
         s.resize(5, 2)
         self.ae(str(s.linebuf), '88\n88\n99\n99\n9')
@@ -306,7 +305,6 @@ class TestScreen(BaseTest):
         self.ae(str(s.linebuf), 'xxx\nxx\nbb\n\n')
 
     def test_cursor_after_resize(self):
-
         def draw(text, end_line=True):
             s.draw(text)
             if end_line:
@@ -315,7 +313,7 @@ class TestScreen(BaseTest):
         s = self.create_screen()
         draw('123'), draw('123')
         y_before = s.cursor.y
-        s.resize(s.lines, s.columns-1)
+        s.resize(s.lines, s.columns - 1)
         self.ae(y_before, s.cursor.y)
 
         s = self.create_screen(cols=5, lines=8)
@@ -358,7 +356,8 @@ class TestScreen(BaseTest):
         s.reverse_scroll(2, True)
         assert_lines('0', '1', '2', '3', '4')
 
-        # Height increased, width unchanged → pull down lines to fill new space at the top
+        # Height increased, width unchanged → pull down lines to fill new space
+        # at the top
         s = prepare_screen(map(str, range(6)))
         assert_lines('2', '3', '4', '5', '')
         dist_from_bottom = s.lines - s.cursor.y
@@ -418,7 +417,7 @@ class TestScreen(BaseTest):
             s.tab()
             s.draw('*')
         s.cursor_position(2, 2)
-        self.ae(str(s.line(0)), '\t*'*13)
+        self.ae(str(s.line(0)), '\t*' * 13)
 
     def test_margins(self):
         # Taken from vttest/main.c
@@ -602,6 +601,7 @@ class TestScreen(BaseTest):
 
     def test_serialize(self):
         from smelly.window import as_text
+
         s = self.create_screen()
         s.draw('ab' * s.columns)
         s.carriage_return(), s.linefeed()
@@ -635,6 +635,7 @@ class TestScreen(BaseTest):
 
     def test_wrapping_serialization(self):
         from smelly.window import as_text
+
         s = self.create_screen(cols=2, lines=2, scrollback=2, options={'scrollback_pager_history_size': 128})
         s.draw('aabbccddeeff')
         self.ae(as_text(s, add_history=True), 'aabbccddeeff')
@@ -714,7 +715,6 @@ class TestScreen(BaseTest):
         self.ae(contents(), 'abcde')
 
     def test_user_marking(self):
-
         def cells(*a, y=0, mark=3):
             return [(x, y, mark) for x in a]
 
@@ -823,7 +823,7 @@ class TestScreen(BaseTest):
         s = self.create_screen()
         set_link('u' * 2048, 'i' * 300)
         s.draw('a')
-        self.ae([('i'*256 + ':' + 'u' * (2045 - 256), 1)], s.hyperlinks_as_list())
+        self.ae([('i' * 256 + ':' + 'u' * (2045 - 256), 1)], s.hyperlinks_as_list())
 
         s = self.create_screen()
         set_link('1'), s.draw('1')
@@ -1009,7 +1009,7 @@ class TestScreen(BaseTest):
 
         t('http://moo.com')
         t('http://moo.com/something?else=+&what-')
-        for (st, e) in '() {} [] <>'.split():
+        for st, e in '() {} [] <>'.split():
             t('http://moo.com', before=st, after=e)
         for trailer in ')-=]}':
             t('http://moo.com' + trailer)
@@ -1157,7 +1157,7 @@ class TestScreen(BaseTest):
         draw_prompt('b'), mark_output()
         self.ae(lco(), '')
         self.ae(lco(which=3), '0a\n1a')
-        s.draw('running'), s.index(),  s.carriage_return()
+        s.draw('running'), s.index(), s.carriage_return()
         self.ae(lco(which=3), 'running\n')
         s = self.create_screen()
         draw_prompt('p1')

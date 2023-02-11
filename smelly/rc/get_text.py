@@ -11,7 +11,6 @@ if TYPE_CHECKING:
 
 
 class GetText(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     match/str: The window to get text from
     extent/choices.screen.first_cmd_output_on_screen.last_cmd_output.last_visited_cmd_output.all.selection: \
@@ -25,7 +24,9 @@ class GetText(RemoteCommand):
     '''
 
     short_desc = 'Get text from the specified window'
-    options_spec = MATCH_WINDOW_OPTION + '''\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n
 --extent
 default=screen
 choices=screen, all, selection, first_cmd_output_on_screen, last_cmd_output, last_visited_cmd_output, last_non_empty_output
@@ -65,6 +66,7 @@ Clear the selection in the matched window, if any.
 type=bool-set
 Get text from the window this command is run in, rather than the active window.
 '''
+    )
 
     field_to_option_map = {'wrap_markers': 'add_wrap_markers', 'cursor': 'add_cursor'}
 
@@ -81,6 +83,7 @@ Get text from the window this command is run in, rather than the active window.
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
         from smelly.window import CommandOutput
+
         windows = self.windows_for_match_payload(boss, window, payload_get)
         if windows and windows[0]:
             window = windows[0]

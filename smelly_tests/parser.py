@@ -13,13 +13,11 @@ from . import BaseTest
 
 
 class CmdDump(list):
-
     def __call__(self, *a):
         self.append(a)
 
 
 class TestParser(BaseTest):
-
     def parse_bytes_dump(self, s, x, *cmds):
         cd = CmdDump()
         if isinstance(x, str):
@@ -69,7 +67,7 @@ class TestParser(BaseTest):
         self.ae(str(s.line(0)), '12')
         self.ae(str(s.line(1)), '  a')
         pb('\033x', ('Unknown char after ESC: 0x%x' % ord('x'),))
-        pb('\033c123', ('screen_reset', ), '123')
+        pb('\033c123', ('screen_reset',), '123')
         self.ae(str(s.line(0)), '123')
 
     def test_charsets(self):
@@ -144,8 +142,12 @@ class TestParser(BaseTest):
         pb('\033[58;2;1;2;3m', ('select_graphic_rendition', '58 2 1 2 3 '))
         pb('\033[38;2;1;2;3m', ('select_graphic_rendition', '38 2 1 2 3 '))
         pb('\033[1001:2:1:2:3m', ('select_graphic_rendition', '1001 2 1 2 3 '))
-        pb('\033[38:2:1:2:3;48:5:9;58;5;7m', (
-            'select_graphic_rendition', '38 2 1 2 3 '), ('select_graphic_rendition', '48 5 9 '), ('select_graphic_rendition', '58 5 7 '))
+        pb(
+            '\033[38:2:1:2:3;48:5:9;58;5;7m',
+            ('select_graphic_rendition', '38 2 1 2 3 '),
+            ('select_graphic_rendition', '48 5 9 '),
+            ('select_graphic_rendition', '58 5 7 '),
+        )
         c = s.callbacks
         pb('\033[5n', ('report_device_status', 5, 0))
         self.ae(c.wtcbuf, b'\033[0n')
@@ -361,29 +363,39 @@ class TestParser(BaseTest):
         pb('\033P=1s\033\\e', ('screen_start_pending_mode',))
         pb('\033P'), pb('='), pb('2s')
         pb('\033\\', ('draw', 'e'), ('screen_stop_pending_mode',))
-        pb('\033P=1sxyz;.;\033\\''\033P=2skjf".,><?_+)98\033\\', ('screen_start_pending_mode',))
+        pb('\033P=1sxyz;.;\033\\' '\033P=2skjf".,><?_+)98\033\\', ('screen_start_pending_mode',))
         pb('\033P=1s\033\\f\033P=1s\033\\', ('screen_start_pending_mode',), ('screen_start_pending_mode',))
         pb('\033P=2s\033\\', ('draw', 'f'), ('screen_stop_pending_mode',))
         pb('\033P=1s\033\\XXX\033P=2s\033\\', ('screen_start_pending_mode',), ('draw', 'XXX'), ('screen_stop_pending_mode',))
 
         pb('\033[?2026hXXX\033[?2026l', ('screen_set_mode', 2026, 1), ('draw', 'XXX'), ('screen_reset_mode', 2026, 1))
         pb('\033[?2026h\033[32ma\033[?2026l', ('screen_set_mode', 2026, 1), ('select_graphic_rendition', '32 '), ('draw', 'a'), ('screen_reset_mode', 2026, 1))
-        pb('\033[?2026h\033P+q544e\033\\ama\033P=2s\033\\',
-           ('screen_set_mode', 2026, 1), ('screen_request_capabilities', 43, '544e'), ('draw', 'ama'), ('screen_stop_pending_mode',))
+        pb(
+            '\033[?2026h\033P+q544e\033\\ama\033P=2s\033\\',
+            ('screen_set_mode', 2026, 1),
+            ('screen_request_capabilities', 43, '544e'),
+            ('draw', 'ama'),
+            ('screen_stop_pending_mode',),
+        )
         pb('\033P=1s\033\\\033(B\033P=2s\033\\', ('screen_start_pending_mode',), ('screen_designate_charset', 0, 66), ('screen_stop_pending_mode',))
 
         s.reset()
         s.set_pending_timeout(timeout)
-        pb('\033[?2026h', ('screen_set_mode', 2026, 1),)
+        pb(
+            '\033[?2026h',
+            ('screen_set_mode', 2026, 1),
+        )
         pb('\033P+q')
         time.sleep(1.2 * timeout)
         pb(
             '544e' + '\033\\\033P=2s\033\\',
             ('screen_request_capabilities', 43, '544e'),
-            ('Pending mode stop command issued while not in pending mode, this can be '
-             'either a bug in the terminal application or caused by a timeout with no '
-             'data received for too long or by too much data in pending mode',),
-            ('screen_stop_pending_mode',)
+            (
+                'Pending mode stop command issued while not in pending mode, this can be '
+                'either a bug in the terminal application or caused by a timeout with no '
+                'data received for too long or by too much data in pending mode',
+            ),
+            ('screen_stop_pending_mode',),
         )
         self.assertEqual(str(s.line(0)), '')
 
@@ -409,8 +421,10 @@ class TestParser(BaseTest):
                     k[p] = v.encode('ascii')
             for f in 'action delete_action transmission_type compressed'.split():
                 k.setdefault(f, b'\0')
-            for f in ('format more id data_sz data_offset width height x_offset y_offset data_height data_width cursor_movement'
-                      ' num_cells num_lines cell_x_offset cell_y_offset z_index placement_id image_number quiet').split():
+            for f in (
+                'format more id data_sz data_offset width height x_offset y_offset data_height data_width cursor_movement'
+                ' num_cells num_lines cell_x_offset cell_y_offset z_index placement_id image_number quiet'
+            ).split():
                 k.setdefault(f, 0)
             p = k.pop('payload', '').encode('utf-8')
             k['payload_sz'] = len(p)
@@ -445,8 +459,13 @@ class TestParser(BaseTest):
         s = self.create_screen()
         pb = partial(self.parse_bytes_dump, s)
         pb('\033[$r', ('deccara', '0 0 0 0 0 '))
-        pb('\033[;;;;4:3;38:5:10;48:2:1:2:3;1$r',
-           ('deccara', '0 0 0 0 4 3 '), ('deccara', '0 0 0 0 38 5 10 '), ('deccara', '0 0 0 0 48 2 1 2 3 '), ('deccara', '0 0 0 0 1 '))
+        pb(
+            '\033[;;;;4:3;38:5:10;48:2:1:2:3;1$r',
+            ('deccara', '0 0 0 0 4 3 '),
+            ('deccara', '0 0 0 0 38 5 10 '),
+            ('deccara', '0 0 0 0 48 2 1 2 3 '),
+            ('deccara', '0 0 0 0 1 '),
+        )
         for y in range(s.lines):
             line = s.line(y)
             for x in range(s.columns):

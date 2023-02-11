@@ -24,7 +24,6 @@ def add_remote_dir(val: str) -> None:
 
 
 class Segment:
-
     __slots__ = ('start', 'end', 'start_code', 'end_code')
 
     def __init__(self, start: int, start_code: str):
@@ -38,7 +37,6 @@ class Segment:
 
 
 class Collection:
-
     ignore_names: Tuple[str, ...] = ()
 
     def __init__(self) -> None:
@@ -189,7 +187,6 @@ def data_for_path(path: str) -> Union[str, bytes]:
 
 
 class LinesForPath:
-
     replace_tab_by = ' ' * 4
 
     @lru_cache(maxsize=1024)

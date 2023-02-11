@@ -73,14 +73,12 @@ def flatten_sequence_map(m: SequenceMap) -> ShortcutMap:
 
 def compare_opts(opts: smellyOpts, print: Print) -> None:
     from .config import load_config
+
     print()
     print('Config options different from defaults:')
     default_opts = load_config()
     ignored = ('keymap', 'sequence_map', 'mousemap', 'map', 'mouse_map')
-    changed_opts = [
-        f for f in sorted(defaults._fields)
-        if f not in ignored and getattr(opts, f) != getattr(defaults, f)
-    ]
+    changed_opts = [f for f in sorted(defaults._fields) if f not in ignored and getattr(opts, f) != getattr(defaults, f)]
     field_len = max(map(len, changed_opts)) if changed_opts else 20
     fmt = f'{{:{field_len:d}s}}'
     colors = []
@@ -120,7 +118,6 @@ def compare_opts(opts: smellyOpts, print: Print) -> None:
 
 
 class IssueData:
-
     def __init__(self) -> None:
         self.uname = os.uname()
         self.s, self.n, self.r, self.v, self.m = self.uname
@@ -178,12 +175,14 @@ def format_tty_name(raw: str) -> str:
 
 def debug_config(opts: smellyOpts) -> str:
     from io import StringIO
+
     out = StringIO()
     p = partial(print, file=out)
     p(version(add_rev=True))
     p(' '.join(os.uname()))
     if is_macos:
         import subprocess
+
         p(' '.join(subprocess.check_output(['sw_vers']).decode('utf-8').splitlines()).strip())
     if os.path.exists('/etc/issue'):
         try:

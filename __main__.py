@@ -4,4 +4,5 @@
 
 if __name__ == '__main__':
     from smelly.entry_points import main
+
     main()

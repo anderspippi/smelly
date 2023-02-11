@@ -30,6 +30,7 @@ from ..tui.operations import MouseTracking, alternate_screen, styled
 
 if TYPE_CHECKING:
     import readline
+
     debug
 else:
     readline = None
@@ -44,7 +45,6 @@ def sort_key(item: str) -> Tuple[int, str]:
 
 
 class HistoryCompleter:
-
     def __init__(self, name: Optional[str] = None):
         self.matches: List[str] = []
         self.history_path = None
@@ -59,8 +59,7 @@ class HistoryCompleter:
         if state == 0:
             history_values = get_history_items()
             if text:
-                self.matches = sorted(
-                        (h for h in history_values if h and h.startswith(text)), key=sort_key)
+                self.matches = sorted((h for h in history_values if h and h.startswith(text)), key=sort_key)
             else:
                 self.matches = []
         try:
@@ -165,12 +164,12 @@ def extra_for(width: int, screen_width: int) -> int:
 
 
 class Password(Handler):
-
     def __init__(self, cli_opts: AskCLIOptions, prompt: str, is_password: bool = True, initial_text: str = '') -> None:
         self.cli_opts = cli_opts
         self.prompt = prompt
         self.initial_text = initial_text
         from wellies.tui.line_edit import LineEdit
+
         self.line_edit = LineEdit(is_password=is_password)
 
     def initialize(self) -> None:
@@ -207,6 +206,7 @@ class Password(Handler):
 
     def on_interrupt(self) -> None:
         self.quit_loop(1)
+
     on_eot = on_interrupt
 
     @property
@@ -252,8 +252,8 @@ class Choose(Handler):  # {{{
             if self.hidden_text_start_pos > -1:
                 self.hidden_text = sys.stdin.read().rstrip()
                 self.hidden_text_end_pos = self.hidden_text_start_pos + len(t)
-                suffix = self.message[self.hidden_text_start_pos + len(self.cli_opts.hidden_text_placeholder):]
-                self.message = self.message[:self.hidden_text_start_pos] + t + suffix
+                suffix = self.message[self.hidden_text_start_pos + len(self.cli_opts.hidden_text_placeholder) :]
+                self.message = self.message[: self.hidden_text_start_pos] + t + suffix
 
     def initialize(self) -> None:
         self.cmd.set_cursor_visible(False)
@@ -283,7 +283,7 @@ class Choose(Handler):  # {{{
                 msg_lines.extend(self.draw_long_text(line))
         y = self.screen_size.rows - len(msg_lines)
         y = max(0, (y // 2) - 2)
-        self.print(end='\r\n'*y)
+        self.print(end='\r\n' * y)
         for line in msg_lines:
             if self.replacement_text in line:
                 idx = line.find(self.replacement_text)
@@ -310,9 +310,9 @@ class Choose(Handler):  # {{{
 
         for choice in choices:
             self.clickable_ranges[choice.letter] = []
-            text = ' ' + choice.text[:choice.idx]
+            text = ' ' + choice.text[: choice.idx]
             text += styled(choice.text[choice.idx], fg=choice.color or 'green')
-            text += choice.text[choice.idx + 1:] + ' '
+            text += choice.text[choice.idx + 1 :] + ' '
             sz = wcswidth(text)
             if sz + sep_sz + current_line_length > width:
                 lines.append(current_line)
@@ -342,7 +342,7 @@ class Choose(Handler):  # {{{
             texts = []
             positions = []
             x = 0
-            for (letter, text) in items:
+            for letter, text in items:
                 positions.append((letter, x, wcswidth(text) + 2))
                 text = add_borders(text)
                 if letter == self.response_on_accept:
@@ -352,7 +352,7 @@ class Choose(Handler):  # {{{
                 texts.append(text)
             line = ''.join(texts).rstrip()
             offset = extra_for(wcswidth(line), width)
-            for (letter, x, sz) in positions:
+            for letter, x, sz in positions:
                 x += offset
                 self.clickable_ranges[letter].append(Range(x, x + sz - 1, y))
             self.print(' ' * offset, line, sep='', end='' if is_last else '\r\n')
@@ -386,9 +386,9 @@ class Choose(Handler):  # {{{
             current_line = ''
 
         for letter, choice in self.choices.items():
-            text = choice.text[:choice.idx]
+            text = choice.text[: choice.idx]
             text += styled(choice.text[choice.idx], fg=choice.color or 'green', underline='straight' if letter == self.response_on_accept else None)
-            text += choice.text[choice.idx + 1:]
+            text += choice.text[choice.idx + 1 :]
             text += '  '
             sz = wcswidth(text)
             if sz + wcswidth(current_line) >= width:
@@ -424,7 +424,7 @@ class Choose(Handler):  # {{{
 
     def unhide(self) -> None:
         if self.hidden_text and self.message:
-            self.message = self.message[:self.hidden_text_start_pos] + self.hidden_text + self.message[self.hidden_text_end_pos:]
+            self.message = self.message[: self.hidden_text_start_pos] + self.hidden_text + self.message[self.hidden_text_end_pos :]
             self.hidden_text = ''
             self.draw_screen()
 
@@ -451,13 +451,17 @@ class Choose(Handler):  # {{{
 
     def on_interrupt(self) -> None:
         self.quit_loop(1)
+
     on_eot = on_interrupt
+
+
 # }}}
 
 
 @run_once
 def init_readline() -> None:
     import readline
+
     with suppress(OSError):
         readline.read_init_file()
     if 'libedit' in readline.__doc__:
@@ -504,6 +508,7 @@ def main(args: List[str]) -> Response:
         with open(os.ctermid(), 'w') as tty:
             os.dup2(tty.fileno(), sys.stdout.fileno())
         import readline as rl
+
         readline = rl
         init_readline()
         response = None
@@ -512,9 +517,11 @@ def main(args: List[str]) -> Response:
             if cli_opts.message:
                 print(styled(cli_opts.message, bold=True))
             if cli_opts.default:
+
                 def prefill_text() -> None:
                     readline.insert_text(cli_opts.default or '')
                     readline.redisplay()
+
                 readline.set_pre_input_hook(prefill_text)
                 response = input(prompt)
                 readline.set_pre_input_hook()
@@ -538,4 +545,5 @@ if __name__ == '__main__':
     ans = main(sys.argv)
     if ans:
         import json
+
         print(json.dumps(ans))

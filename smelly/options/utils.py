@@ -37,8 +37,18 @@ SubSequenceMap = Dict[KeySequence, str]
 SequenceMap = Dict[SingleKey, SubSequenceMap]
 MINIMUM_FONT_SIZE = 4
 default_tab_separator = ' ┇'
-mod_map = {'⌃': 'CONTROL', 'CTRL': 'CONTROL', '⇧': 'SHIFT', '⌥': 'ALT', 'OPTION': 'ALT', 'OPT': 'ALT',
-           '⌘': 'SUPER', 'COMMAND': 'SUPER', 'CMD': 'SUPER', 'smelly_MOD': 'smelly'}
+mod_map = {
+    '⌃': 'CONTROL',
+    'CTRL': 'CONTROL',
+    '⇧': 'SHIFT',
+    '⌥': 'ALT',
+    'OPTION': 'ALT',
+    'OPT': 'ALT',
+    '⌘': 'SUPER',
+    'COMMAND': 'SUPER',
+    'CMD': 'SUPER',
+    'smelly_MOD': 'smelly',
+}
 character_key_name_aliases_with_ascii_lowercase: Dict[str, str] = character_key_name_aliases.copy()
 for x in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
     character_key_name_aliases_with_ascii_lowercase[x] = x.lower()
@@ -56,10 +66,16 @@ class InvalidMods(ValueError):
 
 # Actions {{{
 @func_with_args(
-    'pass_selection_to_program', 'new_window', 'new_tab', 'new_os_window',
-    'new_window_with_cwd', 'new_tab_with_cwd', 'new_os_window_with_cwd',
-    'launch', 'mouse_handle_click'
-    )
+    'pass_selection_to_program',
+    'new_window',
+    'new_tab',
+    'new_os_window',
+    'new_window_with_cwd',
+    'new_tab_with_cwd',
+    'new_os_window_with_cwd',
+    'launch',
+    'mouse_handle_click',
+)
 def shlex_parse(func: str, rest: str) -> FuncArgsType:
     return func, to_cmdline(rest)
 
@@ -95,11 +111,17 @@ def kitten_parse(func: str, rest: str) -> FuncArgsType:
 @func_with_args('open_url')
 def open_url_parse(func: str, rest: str) -> FuncArgsType:
     from urllib.parse import urlparse
+
     url = ''
     try:
         url = python_string(rest)
         tokens = urlparse(url)
-        if not all((tokens.scheme, tokens.netloc,)):
+        if not all(
+            (
+                tokens.scheme,
+                tokens.netloc,
+            )
+        ):
             raise ValueError('Invalid URL')
     except Exception:
         log_error('Ignoring invalid URL string: ' + rest)
@@ -108,7 +130,7 @@ def open_url_parse(func: str, rest: str) -> FuncArgsType:
 
 @func_with_args('goto_tab')
 def goto_tab_parse(func: str, rest: str) -> FuncArgsType:
-    args = (max(0, int(rest)), )
+    args = (max(0, int(rest)),)
     return func, args
 
 
@@ -147,6 +169,7 @@ def float_parse(func: str, rest: str) -> FuncArgsType:
 @func_with_args('signal_child')
 def signal_child_parse(func: str, rest: str) -> FuncArgsType:
     import signal
+
     signals = []
     for q in rest.split():
         try:
@@ -181,7 +204,13 @@ def clear_terminal(func: str, rest: str) -> FuncArgsType:
         args = ['reset', True]
     else:
         action = vals[0].lower()
-        if action not in ('reset', 'scroll', 'scrollback', 'clear', 'to_cursor',):
+        if action not in (
+            'reset',
+            'scroll',
+            'scrollback',
+            'clear',
+            'to_cursor',
+        ):
             log_error(f'{action} is unknown for clear_terminal, using reset')
             action = 'reset'
         args = [action, vals[1].lower() == 'active']
@@ -256,6 +285,7 @@ def move_window(func: str, rest: str) -> FuncArgsType:
 @func_with_args('pipe')
 def pipe(func: str, rest: str) -> FuncArgsType:
     import shlex
+
     r = shlex.split(rest)
     if len(r) < 3:
         log_error('Too few arguments to pipe function')
@@ -266,6 +296,7 @@ def pipe(func: str, rest: str) -> FuncArgsType:
 @func_with_args('set_colors')
 def set_colors(func: str, rest: str) -> FuncArgsType:
     import shlex
+
     r = shlex.split(rest)
     if len(r) < 1:
         log_error('Too few arguments to set_colors function')
@@ -352,6 +383,7 @@ def parse_marker_spec(ftype: str, parts: Sequence[str]) -> Tuple[str, Union[str,
 @func_with_args('toggle_marker')
 def toggle_marker(func: str, rest: str) -> FuncArgsType:
     import shlex
+
     parts = rest.split(maxsplit=1)
     if len(parts) != 2:
         raise ValueError(f'{rest} is not a valid marker specification')
@@ -396,12 +428,14 @@ def mouse_selection(func: str, rest: str) -> FuncArgsType:
 @func_with_args('load_config_file')
 def load_config_file(func: str, rest: str) -> FuncArgsType:
     import shlex
+
     return func, shlex.split(rest)
+
+
 # }}}
 
 
 def parse_mods(parts: Iterable[str], sc: str) -> Optional[int]:
-
     def map_mod(m: str) -> str:
         return mod_map.get(m, m)
 
@@ -479,28 +513,20 @@ def cursor_text_color(x: str) -> Optional[Color]:
     return to_color(x)
 
 
-cshapes = {
-    'block': CURSOR_BLOCK,
-    'beam': CURSOR_BEAM,
-    'underline': CURSOR_UNDERLINE
-}
+cshapes = {'block': CURSOR_BLOCK, 'beam': CURSOR_BEAM, 'underline': CURSOR_UNDERLINE}
 
 
 def to_cursor_shape(x: str) -> int:
     try:
         return cshapes[x.lower()]
     except KeyError:
-        raise ValueError(
-            'Invalid cursor shape: {} allowed values are {}'.format(
-                x, ', '.join(cshapes)
-            )
-        )
+        raise ValueError('Invalid cursor shape: {} allowed values are {}'.format(x, ', '.join(cshapes)))
 
 
 def scrollback_lines(x: str) -> int:
     ans = int(x)
     if ans < 0:
-        ans = 2 ** 32 - 1
+        ans = 2**32 - 1
     return ans
 
 
@@ -539,6 +565,7 @@ def window_size(val: str) -> Tuple[int, str]:
 
 def parse_layout_names(parts: Iterable[str]) -> List[str]:
     from smelly.layout.interface import all_layouts
+
     ans = []
     for p in parts:
         p = p.lower()
@@ -606,6 +633,7 @@ def resize_draw_strategy(x: str) -> int:
 
 def visual_window_select_characters(x: str) -> str:
     import string
+
     valid_characters = string.digits + string.ascii_uppercase
     ans = x.upper()
     ans_chars = set(ans)
@@ -633,11 +661,7 @@ def tab_bar_edge(x: str) -> int:
 
 
 def tab_font_style(x: str) -> Tuple[bool, bool]:
-    return {
-        'bold-italic': (True, True),
-        'bold': (True, False),
-        'italic': (False, True)
-    }.get(x.lower().replace('_', '-'), (False, False))
+    return {'bold-italic': (True, True), 'bold': (True, False), 'italic': (False, True)}.get(x.lower().replace('_', '-'), (False, False))
 
 
 def tab_bar_min_tabs(x: str) -> int:
@@ -938,7 +962,6 @@ class ActionAlias(NamedTuple):
 
 
 class AliasMap:
-
     def __init__(self) -> None:
         self.aliases: Dict[str, List[ActionAlias]] = {}
 
@@ -964,9 +987,7 @@ def build_action_aliases(raw: Dict[str, str], first_arg_replacement: str = '') -
     return ans
 
 
-def resolve_aliases_and_parse_actions(
-    defn: str, aliases: Dict[str, List[ActionAlias]], map_type: str
-) -> Iterator[KeyAction]:
+def resolve_aliases_and_parse_actions(defn: str, aliases: Dict[str, List[ActionAlias]], map_type: str) -> Iterator[KeyAction]:
     parts = defn.split(maxsplit=1)
     if len(parts) == 1:
         possible_alias = defn
@@ -1035,10 +1056,7 @@ def resolve_key_mods(smelly_mod: int, mods: int) -> int:
 class MouseMapping(BaseDefinition):
     map_type: str = 'mouse_map'
 
-    def __init__(
-        self, button: int = 0, mods: int = 0, repeat_count: int = 1, grabbed: bool = False,
-        definition: str = ''
-    ):
+    def __init__(self, button: int = 0, mods: int = 0, repeat_count: int = 1, grabbed: bool = False, definition: str = ''):
         super().__init__(definition)
         self.button = button
         self.mods = mods
@@ -1049,9 +1067,7 @@ class MouseMapping(BaseDefinition):
         return self.pretty_repr('button', 'mods', 'repeat_count', 'grabbed')
 
     def resolve_and_copy(self, smelly_mod: int) -> 'MouseMapping':
-        ans = MouseMapping(
-            self.button, resolve_key_mods(smelly_mod, self.mods), self.repeat_count, self.grabbed,
-            self.definition)
+        ans = MouseMapping(self.button, resolve_key_mods(smelly_mod, self.mods), self.repeat_count, self.grabbed, self.definition)
         ans.definition_location = self.definition_location
         return ans
 
@@ -1061,11 +1077,7 @@ class MouseMapping(BaseDefinition):
 
 
 class KeyDefinition(BaseDefinition):
-
-    def __init__(
-        self, is_sequence: bool = False, trigger: SingleKey = SingleKey(),
-            rest: Tuple[SingleKey, ...] = (), definition: str = ''
-    ):
+    def __init__(self, is_sequence: bool = False, trigger: SingleKey = SingleKey(), rest: Tuple[SingleKey, ...] = (), definition: str = ''):
         super().__init__(definition)
         self.is_sequence = is_sequence
         self.trigger = trigger
@@ -1077,10 +1089,8 @@ class KeyDefinition(BaseDefinition):
     def resolve_and_copy(self, smelly_mod: int) -> 'KeyDefinition':
         def r(k: SingleKey) -> SingleKey:
             return k.resolve_smelly_mod(smelly_mod)
-        ans = KeyDefinition(
-            self.is_sequence, r(self.trigger), tuple(map(r, self.rest)),
-            self.definition
-        )
+
+        ans = KeyDefinition(self.is_sequence, r(self.trigger), tuple(map(r, self.rest)), self.definition)
         ans.definition_location = self.definition_location
         return ans
 

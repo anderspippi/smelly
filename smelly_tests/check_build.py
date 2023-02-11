@@ -13,9 +13,9 @@ from . import BaseTest
 
 
 class TestBuild(BaseTest):
-
     def test_exe(self) -> None:
         from smelly.constants import kitten_exe, smelly_exe, str_version
+
         exe = smelly_exe()
         self.assertTrue(os.access(exe, os.X_OK))
         self.assertTrue(os.path.isfile(exe))
@@ -31,15 +31,18 @@ class TestBuild(BaseTest):
         from wellies.diff import diff_speedup
         from wellies.transfer import rsync
         from wellies.unicode_input import unicode_names
+
         del fdt, unicode_names, subseq_matcher, diff_speedup, rsync
 
     def test_loading_shaders(self) -> None:
         from smelly.utils import load_shaders
+
         for name in 'cell border bgimage tint blit graphics'.split():
             load_shaders(name)
 
     def test_glfw_modules(self) -> None:
         from smelly.constants import glfw_path, is_macos
+
         linux_backends = ['x11']
         if not self.is_ci:
             linux_backends.append('wayland')
@@ -51,6 +54,7 @@ class TestBuild(BaseTest):
 
     def test_all_kitten_names(self) -> None:
         from wellies.runner import all_kitten_names
+
         names = all_kitten_names()
         self.assertIn('diff', names)
         self.assertIn('hints', names)
@@ -58,6 +62,7 @@ class TestBuild(BaseTest):
 
     def test_filesystem_locations(self) -> None:
         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
+
         zsh = os.path.join(shell_integration_dir, 'zsh')
         self.assertTrue(os.path.isdir(terminfo_dir), f'Terminfo dir: {terminfo_dir}')
         self.assertTrue(os.path.exists(logo_png_file), f'Logo file: {logo_png_file}')
@@ -76,6 +81,7 @@ class TestBuild(BaseTest):
 
     def test_ca_certificates(self):
         import ssl
+
         if not getattr(sys, 'frozen', False):
             self.skipTest('CA certificates are only tested on frozen builds')
         c = ssl.create_default_context()
@@ -85,6 +91,7 @@ class TestBuild(BaseTest):
         if not getattr(sys, 'frozen', False):
             self.skipTest('Pygments is only tested on frozen builds')
         import pygments
+
         del pygments
 
     def test_docs_url(self):
@@ -94,6 +101,7 @@ class TestBuild(BaseTest):
         def run_tests(p, base, suffix='.html'):
             def t(x, e):
                 self.ae(p(x), base + e)
+
             t('', 'index.html' if suffix == '.html' else '')
             t('conf', f'conf{suffix}')
             t('wellies/ssh#frag', f'wellies/ssh{suffix}#frag')
@@ -114,8 +122,13 @@ class TestBuild(BaseTest):
         import subprocess
 
         from smelly.constants import smelly_exe
+
         exe = smelly_exe()
-        cp = subprocess.run([exe, '+runpy', f'''\
+        cp = subprocess.run(
+            [
+                exe,
+                '+runpy',
+                f'''\
 import os, sys
 if sys.stdin:
     os.close(sys.stdin.fileno())
@@ -124,7 +137,9 @@ if sys.stdout:
 if sys.stderr:
     os.close(sys.stderr.fileno())
 os.execlp({exe!r}, 'smelly', '+runpy', 'import sys; raise SystemExit(1 if sys.stdout is None or sys.stdin is None or sys.stderr is None else 0)')
-'''])
+''',
+            ]
+        )
         self.assertEqual(cp.returncode, 0)
 
 

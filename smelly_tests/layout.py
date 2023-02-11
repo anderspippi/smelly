@@ -11,7 +11,6 @@ from . import BaseTest
 
 
 class Window:
-
     def __init__(self, win_id, overlay_for=None, overlay_window_id=None):
         self.id = win_id
         self.overlay_for = overlay_for
@@ -51,7 +50,6 @@ def create_layout(cls, opts=None, border_width=2):
 
 
 class Tab:
-
     def active_window_changed(self):
         self.current_layout.update_visibility(self.windows)
 
@@ -83,25 +81,25 @@ def utils(self, q, windows):
             self.ae(visible_ids(), {windows.active_group.id})
         else:
             self.ae(visible_ids(), {gr.id for gr in windows.groups})
+
     return ids, visible_ids, expect_ids, check_visible
 
 
 class TestLayout(BaseTest):
-
     def do_ops_test(self, q):
         windows = create_windows(q)
         ids, visible_ids, expect_ids, check_visible = utils(self, q, windows)
         # Test layout
         q(windows)
         self.ae(windows.active_group_idx, 0)
-        expect_ids(*range(1, len(windows)+1))
+        expect_ids(*range(1, len(windows) + 1))
         check_visible()
 
         # Test nth_window
         for i in range(windows.num_groups):
             q.activate_nth_window(windows, i)
             self.ae(windows.active_group_idx, i)
-            expect_ids(*range(1, len(windows)+1))
+            expect_ids(*range(1, len(windows) + 1))
             check_visible()
 
         # Test next_window
@@ -109,7 +107,7 @@ class TestLayout(BaseTest):
             expected = (windows.active_group_idx + 1) % windows.num_groups
             q.next_window(windows)
             self.ae(windows.active_group_idx, expected)
-            expect_ids(*range(1, len(windows)+1))
+            expect_ids(*range(1, len(windows) + 1))
             check_visible()
 
         # Test move_window
@@ -121,7 +119,7 @@ class TestLayout(BaseTest):
         check_visible()
         windows.set_active_group_idx(0)
         q.move_window(windows, 3)
-        expect_ids(*range(1, len(windows)+1))
+        expect_ids(*range(1, len(windows) + 1))
         check_visible()
 
         # Test add_window
@@ -129,7 +127,7 @@ class TestLayout(BaseTest):
         q.add_window(windows, Window(6))
         self.ae(windows.num_groups, 6)
         self.ae(windows.active_group_idx, 5)
-        expect_ids(*range(1, windows.num_groups+1))
+        expect_ids(*range(1, windows.num_groups + 1))
         check_visible()
 
         # Test remove_window

@@ -177,7 +177,7 @@ def dump_faces(ftypes: List[str], indices: Dict[str, int]) -> None:
     for ftype in ftypes:
         if indices[ftype]:
             log_error(ftype, 'face:', face_str(current_faces[indices[ftype]]))
-    si_faces = current_faces[max(indices.values())+1:]
+    si_faces = current_faces[max(indices.values()) + 1 :]
     if si_faces:
         log_error('Symbol map faces:')
         for face in si_faces:
@@ -207,9 +207,17 @@ def set_font_family(opts: Optional[Options] = None, override_font_size: Optional
     if debug_font_matching:
         dump_faces(ftypes, indices)
     set_font_data(
-        render_box_drawing, prerender_function, descriptor_for_idx,
-        indices['bold'], indices['italic'], indices['bi'], num_symbol_fonts,
-        sm, sz, font_features, ns
+        render_box_drawing,
+        prerender_function,
+        descriptor_for_idx,
+        indices['bold'],
+        indices['italic'],
+        indices['bi'],
+        num_symbol_fonts,
+        sm,
+        sz,
+        font_features,
+        ns,
     )
 
 
@@ -290,29 +298,30 @@ def add_dots(buf: CBufType, cell_width: int, position: int, thickness: int, cell
     y = 1 + position - thickness // 2
     for i in range(y, min(y + thickness, cell_height)):
         for j, s in enumerate(spacing):
-            buf[cell_width * i + j * size + s: cell_width * i + (j + 1) * size + s] = [255] * size
+            buf[cell_width * i + j * size + s : cell_width * i + (j + 1) * size + s] = [255] * size
 
 
 def add_dashes(buf: CBufType, cell_width: int, position: int, thickness: int, cell_height: int) -> None:
     halfspace_width = cell_width // 4
     y = 1 + position - thickness // 2
     for i in range(y, min(y + thickness, cell_height)):
-        buf[cell_width * i:cell_width * i + (cell_width - 3 * halfspace_width)] = [255] * (cell_width - 3 * halfspace_width)
-        buf[cell_width * i + 3 * halfspace_width:cell_width * (i + 1)] = [255] * (cell_width - 3 * halfspace_width)
+        buf[cell_width * i : cell_width * i + (cell_width - 3 * halfspace_width)] = [255] * (cell_width - 3 * halfspace_width)
+        buf[cell_width * i + 3 * halfspace_width : cell_width * (i + 1)] = [255] * (cell_width - 3 * halfspace_width)
 
 
 def render_special(
     underline: int = 0,
     strikethrough: bool = False,
     missing: bool = False,
-    cell_width: int = 0, cell_height: int = 0,
+    cell_width: int = 0,
+    cell_height: int = 0,
     baseline: int = 0,
     underline_position: int = 0,
     underline_thickness: int = 0,
     strikethrough_position: int = 0,
     strikethrough_thickness: int = 0,
-    dpi_x: float = 96.,
-    dpi_y: float = 96.,
+    dpi_x: float = 96.0,
+    dpi_y: float = 96.0,
 ) -> CBufType:
     underline_position = min(underline_position, cell_height - sum(divmod(underline_thickness, 2)))
     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
@@ -342,13 +351,7 @@ def render_special(
 
 
 def render_cursor(
-    which: int,
-    cursor_beam_thickness: float,
-    cursor_underline_thickness: float,
-    cell_width: int = 0,
-    cell_height: int = 0,
-    dpi_x: float = 0,
-    dpi_y: float = 0
+    which: int, cursor_beam_thickness: float, cursor_underline_thickness: float, cell_width: int = 0, cell_height: int = 0, dpi_x: float = 0, dpi_y: float = 0
 ) -> CBufType:
     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
     ans = CharTexture()
@@ -392,19 +395,30 @@ def prerender_function(
     cursor_beam_thickness: float,
     cursor_underline_thickness: float,
     dpi_x: float,
-    dpi_y: float
+    dpi_y: float,
 ) -> Tuple[Tuple[int, ...], Tuple[CBufType, ...]]:
     # Pre-render the special underline, strikethrough and missing and cursor cells
     f = partial(
-        render_special, cell_width=cell_width, cell_height=cell_height, baseline=baseline,
-        underline_position=underline_position, underline_thickness=underline_thickness,
-        strikethrough_position=strikethrough_position, strikethrough_thickness=strikethrough_thickness,
-        dpi_x=dpi_x, dpi_y=dpi_y
+        render_special,
+        cell_width=cell_width,
+        cell_height=cell_height,
+        baseline=baseline,
+        underline_position=underline_position,
+        underline_thickness=underline_thickness,
+        strikethrough_position=strikethrough_position,
+        strikethrough_thickness=strikethrough_thickness,
+        dpi_x=dpi_x,
+        dpi_y=dpi_y,
     )
     c = partial(
-        render_cursor, cursor_beam_thickness=cursor_beam_thickness,
-        cursor_underline_thickness=cursor_underline_thickness, cell_width=cell_width,
-        cell_height=cell_height, dpi_x=dpi_x, dpi_y=dpi_y)
+        render_cursor,
+        cursor_beam_thickness=cursor_beam_thickness,
+        cursor_underline_thickness=cursor_underline_thickness,
+        cell_width=cell_width,
+        cell_height=cell_height,
+        dpi_x=dpi_x,
+        dpi_y=dpi_y,
+    )
     # If you change the mapping of these cells you will need to change
     # NUM_UNDERLINE_STYLES and BEAM_IDX in shader.c and STRIKE_SPRITE_INDEX in
     # window.py and MISSING_GLYPH in font.c
@@ -419,14 +433,11 @@ def prerender_function(
 def render_box_drawing(codepoint: int, cell_width: int, cell_height: int, dpi: float) -> Tuple[int, CBufType]:
     CharTexture = ctypes.c_ubyte * (cell_width * cell_height)
     buf = CharTexture()
-    render_box_char(
-        chr(codepoint), cast(BufType, buf), cell_width, cell_height, dpi
-    )
+    render_box_char(chr(codepoint), cast(BufType, buf), cell_width, cell_height, dpi)
     return ctypes.addressof(buf), buf
 
 
 class setup_for_testing:
-
     def __init__(self, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0):
         self.family, self.size, self.dpi = family, size, dpi
 
@@ -454,7 +465,7 @@ class setup_for_testing:
 
 def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi: float = 96.0) -> Tuple[int, int, List[bytes]]:
     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):
-        s = Screen(None, 1, len(text)*2)
+        s = Screen(None, 1, len(text) * 2)
         line = s.line(0)
         s.draw(text)
         test_render_line(line)
@@ -462,7 +473,7 @@ def render_string(text: str, family: str = 'monospace', size: float = 11.0, dpi:
     found_content = False
     for i in reversed(range(s.columns)):
         sp = list(line.sprite_at(i))
-        sp[2] &= 0xfff
+        sp[2] &= 0xFFF
         tsp = sp[0], sp[1], sp[2]
         if tsp == (0, 0, 0) and not found_content:
             continue
@@ -475,7 +486,7 @@ def shape_string(
     text: str = "abcd", family: str = 'monospace', size: float = 11.0, dpi: float = 96.0, path: Optional[str] = None
 ) -> List[Tuple[int, int, int, Tuple[int, ...]]]:
     with setup_for_testing(family, size, dpi) as (sprites, cell_width, cell_height):
-        s = Screen(None, 1, len(text)*2)
+        s = Screen(None, 1, len(text) * 2)
         line = s.line(0)
         s.draw(text)
         return test_shape(line, path)
@@ -486,6 +497,7 @@ def show(outfile: str, width: int, height: int, fmt: int) -> None:
     from base64 import standard_b64encode
 
     from wellies.tui.images import GraphicsCommand
+
     cmd = GraphicsCommand()
     cmd.a = 'T'
     cmd.f = fmt
@@ -499,6 +511,7 @@ def show(outfile: str, width: int, height: int, fmt: int) -> None:
 
 def display_bitmap(rgb_data: bytes, width: int, height: int) -> None:
     from tempfile import NamedTemporaryFile
+
     setattr(display_bitmap, 'detected', True)
     with NamedTemporaryFile(suffix='.rgba', delete=False) as f:
         f.write(rgb_data)
@@ -506,12 +519,7 @@ def display_bitmap(rgb_data: bytes, width: int, height: int) -> None:
     show(f.name, width, height, 32)
 
 
-def test_render_string(
-        text: str = 'Hello, world!',
-        family: str = 'monospace',
-        size: float = 64.0,
-        dpi: float = 96.0
-) -> None:
+def test_render_string(text: str = 'Hello, world!', family: str = 'monospace', size: float = 64.0, dpi: float = 96.0) -> None:
     from smelly.fast_data_types import concat_cells, current_fonts
 
     cell_width, cell_height, cells = render_string(text, family, size, dpi)

@@ -62,7 +62,6 @@ def call(*cmd: str, cwd: Optional[str] = None, echo: bool = False) -> None:
 
 
 def run_build(args: Any) -> None:
-
     def run_with_retry(cmd: str) -> None:
         try:
             call(cmd, echo=True)
@@ -102,7 +101,8 @@ def run_html(args: Any) -> None:
 
 def generate_redirect_html(link_name: str, bname: str) -> None:
     with open(link_name, 'w') as f:
-        f.write(f'''
+        f.write(
+            f'''
 <html>
 <head>
 <title>Redirecting...</title>
@@ -118,7 +118,8 @@ window.location.replace('./{bname}/' + window.location.hash);
 <p>Redirecting, please wait...</p>
 </body>
 </html>
-''')
+'''
+        )
 
 
 def add_old_redirects(loc: str) -> None:
@@ -158,10 +159,7 @@ def sign_file(path: str) -> None:
     dest = f'{path}.sig'
     with suppress(FileNotFoundError):
         os.remove(dest)
-    subprocess.check_call([
-        os.environ['PENV'] + '/gpg-as-anders', '--output', f'{path}.sig',
-        '--detach-sig', path
-    ])
+    subprocess.check_call([os.environ['PENV'] + '/gpg-as-anders', '--output', f'{path}.sig', '--detach-sig', path])
 
 
 def run_sdist(args: Any) -> None:
@@ -211,8 +209,7 @@ class ReadFileWithProgressReporting(io.FileIO):  # {{{
         eta = int((self._total - self.tell()) / bit_rate) + 1
         eta_m, eta_s = divmod(eta, 60)
         if sys.stdout.isatty():
-            write(
-                f'\r\033[K\033[?7h {frac}% {mb_pos:.1f}/{mb_tot:.1f}MB {kb_rate:.1f} KB/sec {eta_m} minutes, {eta_s} seconds left\033[?7l')
+            write(f'\r\033[K\033[?7h {frac}% {mb_pos:.1f}/{mb_tot:.1f}MB {kb_rate:.1f} KB/sec {eta_m} minutes, {eta_s} seconds left\033[?7l')
         if self.tell() >= self._total:
             t = int(time.monotonic() - self.start_time) + 1
             print(f'\nUpload took {t//60} minutes and {t%60} seconds at {kb_rate:.1f} KB/sec')
@@ -223,20 +220,10 @@ class ReadFileWithProgressReporting(io.FileIO):  # {{{
 
 
 class GitHub:  # {{{
-
     API = 'https://api.github.com'
 
-    def __init__(
-        self,
-        files: Dict[str, str],
-        reponame: str,
-        version: str,
-        username: str,
-        password: str,
-        replace: bool = False
-    ):
-        self.files, self.reponame, self.version, self.username, self.password, self.replace = (
-            files, reponame, version, username, password, replace)
+    def __init__(self, files: Dict[str, str], reponame: str, version: str, username: str, password: str, replace: bool = False):
+        self.files, self.reponame, self.version, self.username, self.password, self.replace = (files, reponame, version, username, password, replace)
         self.current_tag_name = self.version if self.version == 'nightly' else f'v{self.version}'
         self.is_nightly = self.current_tag_name == 'nightly'
         self.auth = 'Basic ' + base64.standard_b64encode(f'{self.username}:{self.password}'.encode()).decode()
@@ -249,11 +236,14 @@ class GitHub:  # {{{
         print(*args, flush=True, file=sys.stderr)
 
     def make_request(
-        self, url: str, data: Optional[Dict[str, Any]] = None, method:str = 'GET',
+        self,
+        url: str,
+        data: Optional[Dict[str, Any]] = None,
+        method: str = 'GET',
         upload_data: Optional[ReadFileWithProgressReporting] = None,
         params: Optional[Dict[str, str]] = None,
     ) -> HTTPSConnection:
-        headers={
+        headers = {
             'Authorization': self.auth,
             'Accept': 'application/vnd.github+json',
             'User-Agent': 'smelly',
@@ -276,8 +266,12 @@ class GitHub:  # {{{
         return conn
 
     def make_request_with_retries(
-        self, url: str, data: Optional[Dict[str, str]] = None, method:str = 'GET',
-        num_tries: int = 2, sleep_between_tries: float = 15,
+        self,
+        url: str,
+        data: Optional[Dict[str, str]] = None,
+        method: str = 'GET',
+        num_tries: int = 2,
+        sleep_between_tries: float = 15,
         success_codes: Tuple[int, ...] = (200,),
         failure_msg: str = 'Request failed',
         return_data: bool = False,
@@ -295,7 +289,7 @@ class GitHub:  # {{{
                     r = conn.getresponse()
                     if r.status in success_codes:
                         return json.loads(r.read()) if return_data else None
-                    if i == num_tries -1 :
+                    if i == num_tries - 1:
                         self.fail(r, failure_msg)
                     else:
                         self.print_failed_response_details(r, failure_msg)
@@ -314,16 +308,16 @@ class GitHub:  # {{{
         now = str(datetime.datetime.utcnow()).split('.')[0] + ' UTC'
         commit = subprocess.check_output(['git', 'rev-parse', '--verify', '--end-of-options', 'master^{commit}']).decode('utf-8').strip()
         self.patch(
-            url, 'Failed to update nightly release description',
+            url,
+            'Failed to update nightly release description',
             body=f'Nightly release, generated on: {now} from commit: {commit}.'
-            ' For how to install nightly builds, see: https://sw.backbiter-no.net/smelly/binary/#customizing-the-installation'
+            ' For how to install nightly builds, see: https://sw.backbiter-no.net/smelly/binary/#customizing-the-installation',
         )
 
     def delete_asset(self, url: str, fname: str) -> None:
         self.make_request_with_retries(
-            url, method='DELETE', num_tries=5, sleep_between_tries=2,
-            success_codes=(204, 404),
-            failure_msg=f'Failed to delete {fname} from GitHub')
+            url, method='DELETE', num_tries=5, sleep_between_tries=2, success_codes=(204, 404), failure_msg=f'Failed to delete {fname} from GitHub'
+        )
 
     def __call__(self) -> None:
         # See https://docs.github.com/en/rest/releases/assets#upload-a-release-asset
@@ -357,10 +351,15 @@ class GitHub:  # {{{
                     self.info(f'Deleting {fname} from GitHub with id: {asset_id}')
                     delete_asset(asset_id)
 
-
             self.make_request_with_retries(
-                upload_url, upload_path=path, params=params, num_tries=num_tries, sleep_between_tries=sleep_time,
-                failure_msg=f'Failed to upload file: {fname}', success_codes=(201,), failure_callback=handle_failure
+                upload_url,
+                upload_path=path,
+                params=params,
+                num_tries=num_tries,
+                sleep_between_tries=sleep_time,
+                failure_msg=f'Failed to upload file: {fname}',
+                success_codes=(201,),
+                failure_callback=handle_failure,
             )
 
         if self.is_nightly:
@@ -377,8 +376,7 @@ class GitHub:  # {{{
             if release.get('assets') and release['tag_name'] != self.current_tag_name:
                 self.info(f'\nDeleting old released installers from: {release["tag_name"]}')
                 for asset in release['assets']:
-                    self.delete_asset(
-                        f'{self.url_base}/assets/{asset["id"]}', asset['name'])
+                    self.delete_asset(f'{self.url_base}/assets/{asset["id"]}', asset['name'])
 
     def print_failed_response_details(self, r: HTTPResponse, msg: str) -> None:
         self.error(msg, f'\nStatus Code: {r.status} {r.reason}')
@@ -400,7 +398,7 @@ class GitHub:  # {{{
         return {asset['name']: asset['id'] for asset in d}
 
     def create_release(self) -> Dict[str, Any]:
-        ' Create a release on GitHub or if it already exists, return the existing release '
+        'Create a release on GitHub or if it already exists, return the existing release'
         # Check for existing release
         url = f'{self.url_base}/tags/{self.current_tag_name}'
         with contextlib.closing(self.make_request(url)) as conn:
@@ -417,13 +415,15 @@ class GitHub:  # {{{
             ' For changelog, see https://sw.backbiter-no.net/smelly/changelog/#detailed-list-of-changes'
             ' GPG key used for signing tarballs is: https://calibre-ebook.com/signatures/anders.gpg',
             'draft': False,
-            'prerelease': False
+            'prerelease': False,
         }
         with contextlib.closing(self.make_request(self.url_base, method='POST', data=data)) as conn:
             r = conn.getresponse()
             if r.status != 201:
                 self.fail(r, f'Failed to create release for version: {self.version}')
             return {str(k): v for k, v in json.loads(r.read()).items()}
+
+
 # }}}
 
 
@@ -538,21 +538,10 @@ def main() -> None:
     global building_nightly
     parser = argparse.ArgumentParser(description='Publish smelly')
     parser.add_argument(
-        '--only',
-        default=False,
-        action='store_true',
-        help='Only run the specified action, by default the specified action and all sub-sequent actions are run')
-    parser.add_argument(
-        '--nightly',
-        default=False,
-        action='store_true',
-        help='Upload a nightly release, ignores all other arguments')
-    parser.add_argument(
-        'action',
-        default='all',
-        nargs='?',
-        choices=list(ALL_ACTIONS) + ['all', 'upload_nightly'],
-        help='The action to start with')
+        '--only', default=False, action='store_true', help='Only run the specified action, by default the specified action and all sub-sequent actions are run'
+    )
+    parser.add_argument('--nightly', default=False, action='store_true', help='Upload a nightly release, ignores all other arguments')
+    parser.add_argument('action', default='all', nargs='?', choices=list(ALL_ACTIONS) + ['all', 'upload_nightly'], help='The action to start with')
     args = parser.parse_args()
     require_penv()
     if args.nightly:

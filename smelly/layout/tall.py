@@ -15,18 +15,14 @@ from .vertical import borders
 
 
 def neighbors_for_tall_window(
-        num_full_size_windows: int,
-        window: WindowType,
-        all_windows: WindowList,
-        mirrored: bool = False,
-        main_is_horizontal: bool = True
+    num_full_size_windows: int, window: WindowType, all_windows: WindowList, mirrored: bool = False, main_is_horizontal: bool = True
 ) -> NeighborsMap:
     wg = all_windows.group_for_window(window)
     assert wg is not None
     groups = tuple(all_windows.iter_all_layoutable_groups())
     idx = groups.index(wg)
-    prev = None if idx == 0 else groups[idx-1]
-    nxt = None if idx == len(groups) - 1 else groups[idx+1]
+    prev = None if idx == 0 else groups[idx - 1]
+    nxt = None if idx == len(groups) - 1 else groups[idx + 1]
     ans: NeighborsMap = {'left': [], 'right': [], 'top': [], 'bottom': []}
     main_before: EdgeLiteral = 'left' if main_is_horizontal else 'top'
     main_after: EdgeLiteral = 'right' if main_is_horizontal else 'bottom'
@@ -40,7 +36,7 @@ def neighbors_for_tall_window(
         if nxt is not None:
             ans[main_after] = [nxt.id]
     elif idx == num_full_size_windows - 1:
-        ans[main_after] = [w.id for w in groups[idx+1:]]
+        ans[main_after] = [w.id for w in groups[idx + 1 :]]
     else:
         ans[main_before] = [groups[num_full_size_windows - 1].id]
         if idx > num_full_size_windows and prev is not None:
@@ -77,7 +73,6 @@ class TallLayoutOpts(LayoutOpts):
 
 
 class Tall(Layout):
-
     name = 'tall'
     main_is_horizontal = True
     no_minimal_window_borders = True
@@ -105,9 +100,7 @@ class Tall(Layout):
             before_main_bias = self.main_bias
             ncols = self.num_full_size_windows + 1
             biased_col = idx if idx < self.num_full_size_windows else (ncols - 1)
-            self.main_bias = [
-                safe_increment_bias(self.main_bias[i], increment * (1 if i == biased_col else -1)) for i in range(ncols)
-            ]
+            self.main_bias = [safe_increment_bias(self.main_bias[i], increment * (1 if i == biased_col else -1)) for i in range(ncols)]
             self.main_bias = normalize_biases(self.main_bias)
             return self.main_bias != before_main_bias
 
@@ -116,7 +109,7 @@ class Tall(Layout):
             return False
         idx -= self.num_full_size_windows
         before_layout = list(self.variable_layout(all_windows, self.biased_map))
-        before = self.biased_map.get(idx, 0.)
+        before = self.biased_map.get(idx, 0.0)
         candidate = self.biased_map.copy()
         candidate[idx] = after = before + increment
         if before_layout == list(self.variable_layout(all_windows, candidate)):
@@ -149,7 +142,7 @@ class Tall(Layout):
         start = lgd.central.top if is_fat else lgd.central.left
         size = 0
         if mirrored:
-            fsg = groups[:self.num_full_size_windows + 1]
+            fsg = groups[: self.num_full_size_windows + 1]
             xlayout = self.main_axis_layout(reversed(fsg), bias=main_bias)
             for i, wg in enumerate(reversed(fsg)):
                 xl = next(xlayout)
@@ -265,7 +258,7 @@ class Tall(Layout):
                         xl.content_pos - xl.space_before,
                         yl.content_pos - yl.space_before,
                         xl.content_pos + xl.content_size + xl.space_after,
-                        yl.content_pos - yl.space_before + bw
+                        yl.content_pos - yl.space_before + bw,
                     )
                     e3 = Edges(
                         xl.content_pos - xl.space_before,
@@ -303,22 +296,14 @@ class Tall(Layout):
                 perp_borders.append(BorderLine(e3, color))
 
         mirrored = self.layout_opts.mirrored
-        yield from borders(
-            main_layouts, self.main_is_horizontal, all_windows,
-            start_offset=int(not mirrored), end_offset=int(mirrored)
-        )
+        yield from borders(main_layouts, self.main_is_horizontal, all_windows, start_offset=int(not mirrored), end_offset=int(mirrored))
         yield from perp_borders[1:-1]
 
     def layout_state(self) -> Dict[str, Any]:
-        return {
-            'num_full_size_windows': self.num_full_size_windows,
-            'main_bias': self.main_bias,
-            'biased_map': self.biased_map
-        }
+        return {'num_full_size_windows': self.num_full_size_windows, 'main_bias': self.main_bias, 'biased_map': self.biased_map}
 
 
 class Fat(Tall):
-
     name = 'fat'
     main_is_horizontal = False
     main_axis_layout = Layout.ylayout

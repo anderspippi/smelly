@@ -82,6 +82,7 @@ def set_custom_ibeam_cursor() -> None:
 def talk_to_instance(args: CLIOptions) -> None:
     import json
     import socket
+
     session_data = ''
     if args.session == '-':
         session_data = sys.stdin.read()
@@ -90,8 +91,13 @@ def talk_to_instance(args: CLIOptions) -> None:
             session_data = f.read()
 
     data: SingleInstanceData = {
-        'cmd': 'new_instance', 'args': tuple(sys.argv), 'cmdline_args_for_open': getattr(sys, 'cmdline_args_for_open', ()),
-        'cwd': os.getcwd(), 'session_data': session_data, 'environ': dict(os.environ), 'notify_on_os_window_death': None
+        'cmd': 'new_instance',
+        'args': tuple(sys.argv),
+        'cmdline_args_for_open': getattr(sys, 'cmdline_args_for_open', ()),
+        'cwd': os.getcwd(),
+        'session_data': session_data,
+        'environ': dict(os.environ),
+        'notify_on_os_window_death': None,
     }
     notify_socket = None
     if args.wait_for_single_instance_window_close:
@@ -138,9 +144,7 @@ def init_glfw(opts: Options, debug_keyboard: bool = False, debug_rendering: bool
     return glfw_module
 
 
-def get_macos_shortcut_for(
-    func_map: Dict[Tuple[str, ...], List[SingleKey]], defn: str = 'new_os_window', lookup_name: str = ''
-) -> Optional[SingleKey]:
+def get_macos_shortcut_for(func_map: Dict[Tuple[str, ...], List[SingleKey]], defn: str = 'new_os_window', lookup_name: str = '') -> Optional[SingleKey]:
     # for maximum robustness we should use opts.alias_map to resolve
     # aliases however this requires parsing everything on startup which could
     # be potentially slow. Lets just hope the user doesnt alias these
@@ -151,8 +155,10 @@ def get_macos_shortcut_for(
     candidates = func_map[qkey]
     if candidates:
         from .fast_data_types import cocoa_set_global_shortcut
+
         alt_mods = GLFW_MOD_ALT, GLFW_MOD_ALT | GLFW_MOD_SHIFT
-        # Reverse list so that later defined keyboard shortcuts take priority over earlier defined ones
+        # Reverse list so that later defined keyboard shortcuts take priority
+        # over earlier defined ones
         for candidate in reversed(candidates):
             if candidate.mods in alt_mods:
                 # Option based shortcuts dont work in the global menubar,
@@ -177,6 +183,7 @@ def set_macos_app_custom_icon() -> None:
         custom_icon_mtime = safe_mtime(icon_path)
         if custom_icon_mtime is not None:
             from .fast_data_types import cocoa_set_app_icon, cocoa_set_dock_icon
+
             krd = getattr(sys, 'smelly_run_data')
             bundle_path = os.path.dirname(os.path.dirname(krd.get('bundle_exe_dir')))
             icon_sentinel = os.path.join(bundle_path, 'Icon\r')
@@ -205,14 +212,29 @@ def _run_app(opts: Options, args: CLIOptions, prewarm: PrewarmProcess, bad_lines
     global_shortcuts: Dict[str, SingleKey] = {}
     if is_macos:
         from collections import defaultdict
+
         func_map = defaultdict(list)
         for k, v in opts.keymap.items():
             parts = tuple(v.split())
             func_map[parts].append(k)
 
-        for ac in ('new_os_window', 'close_os_window', 'close_tab', 'edit_config_file', 'previous_tab',
-                   'next_tab', 'new_tab', 'new_window', 'close_window', 'toggle_macos_secure_keyboard_entry', 'toggle_fullscreen',
-                   'hide_macos_app', 'hide_macos_other_apps', 'minimize_macos_window', 'quit'):
+        for ac in (
+            'new_os_window',
+            'close_os_window',
+            'close_tab',
+            'edit_config_file',
+            'previous_tab',
+            'next_tab',
+            'new_tab',
+            'new_window',
+            'close_window',
+            'toggle_macos_secure_keyboard_entry',
+            'toggle_fullscreen',
+            'hide_macos_app',
+            'hide_macos_other_apps',
+            'minimize_macos_window',
+            'quit',
+        ):
             val = get_macos_shortcut_for(func_map, ac)
             if val is not None:
                 global_shortcuts[ac] = val
@@ -240,10 +262,14 @@ def _run_app(opts: Options, args: CLIOptions, prewarm: PrewarmProcess, bad_lines
         wincls = (startup_sessions[0].os_window_class if startup_sessions else '') or args.cls or appname
         with startup_notification_handler(extra_callback=run_app.first_window_callback) as pre_show_callback:
             window_id = create_os_window(
-                    run_app.initial_window_size_func(get_os_window_sizing_data(opts, startup_sessions[0] if startup_sessions else None), cached_values),
-                    pre_show_callback,
-                    args.title or appname, args.name or args.cls or appname,
-                    wincls, load_all_shaders, disallow_override_title=bool(args.title))
+                run_app.initial_window_size_func(get_os_window_sizing_data(opts, startup_sessions[0] if startup_sessions else None), cached_values),
+                pre_show_callback,
+                args.title or appname,
+                args.name or args.cls or appname,
+                wincls,
+                load_all_shaders,
+                disallow_override_title=bool(args.title),
+            )
         boss = Boss(opts, args, cached_values, global_shortcuts, prewarm)
         boss.start(window_id, startup_sessions)
         if bad_lines:
@@ -255,7 +281,6 @@ def _run_app(opts: Options, args: CLIOptions, prewarm: PrewarmProcess, bad_lines
 
 
 class AppRunner:
-
     def __init__(self) -> None:
         self.cached_values_name = 'main'
         self.first_window_callback = lambda window_handle: None
@@ -269,11 +294,14 @@ class AppRunner:
             _run_app(opts, args, prewarm, bad_lines)
         finally:
             set_options(None)
-            free_font_data()  # must free font data before glfw/freetype/fontconfig/opengl etc are finalized
+            # must free font data before glfw/freetype/fontconfig/opengl etc
+            # are finalized
+            free_font_data()
             if is_macos:
                 from smelly.fast_data_types import (
                     cocoa_set_notification_activated_callback,
                 )
+
                 cocoa_set_notification_activated_callback(None)
 
 
@@ -284,6 +312,7 @@ def ensure_macos_locale() -> None:
     # Ensure the LANG env var is set. See
     # https://github.com/backbiter-no/smelly/issues/90
     from .fast_data_types import cocoa_get_lang, locale_is_valid
+
     if 'LANG' not in os.environ:
         lang = cocoa_get_lang()
         if lang is not None:
@@ -300,6 +329,7 @@ def ensure_macos_locale() -> None:
 def setup_profiling() -> Generator[None, None, None]:
     try:
         from .fast_data_types import start_profiler, stop_profiler
+
         do_profile = True
     except ImportError:
         do_profile = False
@@ -308,6 +338,7 @@ def setup_profiling() -> Generator[None, None, None]:
     yield
     if do_profile:
         import subprocess
+
         stop_profiler()
         exe = smelly_exe()
         cg = '/tmp/smelly-profile.callgrind'
@@ -328,6 +359,7 @@ def macos_cmdline(argv_args: List[str]) -> List[str]:
     except FileNotFoundError:
         return argv_args
     import shlex
+
     raw = raw.strip()
     ans = shlex.split(raw)
     if ans and ans[0] == 'smelly':
@@ -341,12 +373,13 @@ def expand_listen_on(listen_on: str, from_config_file: bool) -> str:
         listen_on += '-{smelly_pid}'
     listen_on = listen_on.replace('{smelly_pid}', str(os.getpid()))
     if listen_on.startswith('unix:'):
-        path = listen_on[len('unix:'):]
+        path = listen_on[len('unix:') :]
         if not path.startswith('@'):
             if path.startswith('~'):
                 listen_on = f'unix:{os.path.expanduser(path)}'
             elif not os.path.isabs(path):
                 import tempfile
+
                 listen_on = f'unix:{os.path.join(tempfile.gettempdir(), path)}'
     return listen_on
 
@@ -358,7 +391,8 @@ def safe_samefile(a: str, b: str) -> bool:
 
 
 def prepend_if_not_present(path: str, paths_serialized: str) -> str:
-    # prepend a path only if path/smelly is not already present, even as a symlink
+    # prepend a path only if path/smelly is not already present, even as a
+    # symlink
     pq = os.path.join(path, 'smelly')
     for candidate in paths_serialized.split(os.pathsep):
         q = os.path.join(candidate, 'smelly')
@@ -397,6 +431,7 @@ def setup_manpath(env: Dict[str, str]) -> None:
     if not getattr(sys, 'frozen', False):
         return
     from .constants import local_docs
+
     mp = os.environ.get('MANPATH', env.get('MANPATH', ''))
     d = os.path.dirname
     smelly_man = os.path.join(d(d(d(local_docs()))), 'man')
@@ -466,7 +501,8 @@ def _main() -> None:
         msg: Optional[str] = (
             'Run smelly and open the specified files or URLs in it, using launch-actions.conf. For details'
             ' see https://sw.backbiter-no.net/smelly/open_actions/#scripting-the-opening-of-files-with-smelly-on-macos'
-            '\n\nAll the normal smelly options can be used.')
+            '\n\nAll the normal smelly options can be used.'
+        )
     else:
         usage = msg = appname = None
     cli_opts, rest = parse_args(args=args, result_class=CLIOptions, usage=usage, message=msg, appname=appname)
@@ -478,10 +514,12 @@ def _main() -> None:
     if cli_opts.detach:
         if cli_opts.session == '-':
             from .session import PreReadSession
+
             cli_opts.session = PreReadSession(sys.stdin.read(), os.environ)
         detach()
     if cli_opts.replay_commands:
         from smelly.client import main as client_main
+
         client_main(cli_opts.replay_commands)
         return
     if cli_opts.single_instance:
@@ -507,11 +545,13 @@ def _main() -> None:
 
     # mask the signals now as on some platforms the display backend starts
     # threads. These threads must not handle the masked signals, to ensure
-    # smelly can handle them. See https://github.com/backbiter-no/smelly/issues/4636
+    # smelly can handle them. See
+    # https://github.com/backbiter-no/smelly/issues/4636
     mask_smelly_signals_process_wide()
     init_glfw(opts, cli_opts.debug_keyboard, cli_opts.debug_rendering)
     if cli_opts.watcher:
         from .window import global_watchers
+
         global_watchers.set_extra(cli_opts.watcher)
         log_error('The --watcher command line option has been deprecated in favor of using the watcher option in smelly.conf')
     try:
@@ -528,6 +568,7 @@ def main() -> None:
         _main()
     except Exception:
         import traceback
+
         tb = traceback.format_exc()
         log_error(tb)
         raise SystemExit(1)

@@ -6,7 +6,6 @@ from . import BaseTest
 
 
 class UTMPTest(BaseTest):
-
     def test_num_users(self):
         # who is the control
         try:

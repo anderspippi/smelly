@@ -34,6 +34,7 @@ def contents(package: str) -> Iterator[str]:
         from importlib.resources import files
     except ImportError:
         from importlib.resources import contents
+
         return iter(contents(package))
     return (path.name for path in files(package).iterdir())
 
@@ -122,7 +123,7 @@ def find_testable_go_packages() -> Tuple[Set[str], Dict[str, List[str]]]:
     ans = set()
     base = os.getcwd()
     pat = re.compile(r'^func Test([A-Z]\w+)', re.MULTILINE)
-    for (dirpath, dirnames, filenames) in os.walk(base):
+    for dirpath, dirnames, filenames in os.walk(base):
         for f in filenames:
             if f.endswith('_test.go'):
                 q = os.path.relpath(dirpath, base)

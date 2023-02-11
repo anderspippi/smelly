@@ -40,7 +40,6 @@ else:
 
 
 class Flag:
-
     def __init__(self, initial_val: bool = True) -> None:
         self.val = initial_val
 
@@ -95,10 +94,12 @@ def smelly_ansi_sanitizer_pat() -> 're.Pattern[str]':
 def platform_window_id(os_window_id: int) -> Optional[int]:
     if is_macos:
         from .fast_data_types import cocoa_window_id
+
         with suppress(Exception):
             return cocoa_window_id(os_window_id)
     if not is_wayland():
         from .fast_data_types import x11_window_id
+
         with suppress(Exception):
             return x11_window_id(os_window_id)
     return None
@@ -121,6 +122,7 @@ def safe_print(*a: Any, **k: Any) -> None:
 
 def log_error(*a: Any, **k: str) -> None:
     from .fast_data_types import log_error_string
+
     output = getattr(log_error, 'redirect', log_error_string)
     with suppress(Exception):
         msg = k.get('sep', ' ').join(map(str, a)) + k.get('end', '').replace('\0', '')
@@ -149,7 +151,7 @@ def sanitize_title(x: str) -> str:
 
 
 def color_as_int(val: Color) -> int:
-    return int(val) & 0xffffff
+    return int(val) & 0xFFFFFF
 
 
 def color_from_int(val: int) -> Color:
@@ -161,7 +163,7 @@ def parse_color_set(raw: str) -> Generator[Tuple[int, Optional[int]], None, None
     lp = len(parts)
     if lp % 2 != 0:
         return
-    for c_, spec in [parts[i:i + 2] for i in range(0, len(parts), 2)]:
+    for c_, spec in [parts[i : i + 2] for i in range(0, len(parts), 2)]:
         try:
             c = int(c_)
             if c < 0 or c > 255:
@@ -171,7 +173,7 @@ def parse_color_set(raw: str) -> Generator[Tuple[int, Optional[int]], None, None
             else:
                 q = to_color(spec)
                 if q is not None:
-                    yield c, int(q) & 0xffffff
+                    yield c, int(q) & 0xFFFFFF
         except Exception:
             continue
 
@@ -189,6 +191,7 @@ def read_screen_size(fd: int = -1) -> ScreenSize:
     import array
     import fcntl
     import termios
+
     buf = array.array('H', [0, 0, 0, 0])
     if fd < 0:
         fd = sys.stdout.fileno()
@@ -222,6 +225,7 @@ def screen_size_function(fd: Optional[int] = None) -> ScreenSizeGetter:
 
 def fit_image(width: int, height: int, pwidth: int, pheight: int) -> Tuple[int, int]:
     from math import floor
+
     if height > pheight:
         corrf = pheight / float(height)
         width, height = floor(corrf * width), pheight
@@ -235,11 +239,7 @@ def fit_image(width: int, height: int, pwidth: int, pheight: int) -> Tuple[int, 
     return int(width), int(height)
 
 
-def base64_encode(
-    integer: int,
-    chars: str = string.ascii_uppercase + string.ascii_lowercase + string.digits +
-    '+/'
-) -> str:
+def base64_encode(integer: int, chars: str = string.ascii_uppercase + string.ascii_lowercase + string.digits + '+/') -> str:
     ans = ''
     while True:
         integer, remainder = divmod(integer, 64)
@@ -252,6 +252,7 @@ def base64_encode(
 def command_for_open(program: Union[str, List[str]] = 'default') -> List[str]:
     if isinstance(program, str):
         from .conf.utils import to_cmdline
+
         program = to_cmdline(program)
     if program == ['default']:
         cmd = ['open'] if is_macos else ['xdg-open']
@@ -260,9 +261,11 @@ def command_for_open(program: Union[str, List[str]] = 'default') -> List[str]:
     return cmd
 
 
-def open_cmd(cmd: Union[Iterable[str], List[str]], arg: Union[None, Iterable[str], str] = None,
-             cwd: Optional[str] = None, extra_env: Optional[Dict[str, str]] = None) -> 'PopenType[bytes]':
+def open_cmd(
+    cmd: Union[Iterable[str], List[str]], arg: Union[None, Iterable[str], str] = None, cwd: Optional[str] = None, extra_env: Optional[Dict[str, str]] = None
+) -> 'PopenType[bytes]':
     import subprocess
+
     if arg is not None:
         cmd = list(cmd)
         if isinstance(arg, str):
@@ -274,8 +277,8 @@ def open_cmd(cmd: Union[Iterable[str], List[str]], arg: Union[None, Iterable[str
         env = os.environ.copy()
         env.update(extra_env)
     return subprocess.Popen(
-        tuple(cmd), stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, cwd=cwd or None,
-        preexec_fn=clear_handled_signals, env=env)
+        tuple(cmd), stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, cwd=cwd or None, preexec_fn=clear_handled_signals, env=env
+    )
 
 
 def open_url(url: str, program: Union[str, List[str]] = 'default', cwd: Optional[str] = None, extra_env: Optional[Dict[str, str]] = None) -> 'PopenType[bytes]':
@@ -291,16 +294,20 @@ def detach(fork: bool = True, setsid: bool = True, redirect: bool = True) -> Non
         os.setsid()
     if redirect:
         from .fast_data_types import redirect_std_streams
+
         redirect_std_streams(os.devnull)
 
 
 def init_startup_notification_x11(window_handle: int, startup_id: Optional[str] = None) -> Optional['StartupCtx']:
     # https://specifications.freedesktop.org/startup-notification-spec/startup-notification-latest.txt
     from smelly.fast_data_types import init_x11_startup_notification
-    sid = startup_id or os.environ.pop('DESKTOP_STARTUP_ID', None)  # ensure child processes don't get this env var
+
+    # ensure child processes don't get this env var
+    sid = startup_id or os.environ.pop('DESKTOP_STARTUP_ID', None)
     if not sid:
         return None
     from .fast_data_types import x11_display
+
     display = x11_display()
     if not display:
         return None
@@ -309,6 +316,7 @@ def init_startup_notification_x11(window_handle: int, startup_id: Optional[str] 
 
 def end_startup_notification_x11(ctx: 'StartupCtx') -> None:
     from smelly.fast_data_types import end_x11_startup_notification
+
     end_x11_startup_notification(ctx)
 
 
@@ -326,9 +334,11 @@ def init_startup_notification(window_handle: Optional[int], startup_id: Optional
                 raise e
             log_error(
                 f'{e}. This has two main effects:',
-                'There will be no startup feedback and when using --single-instance, smelly windows may start on an incorrect desktop/workspace.')
+                'There will be no startup feedback and when using --single-instance, smelly windows may start on an incorrect desktop/workspace.',
+            )
     except Exception:
         import traceback
+
         traceback.print_exc()
     return None
 
@@ -342,11 +352,11 @@ def end_startup_notification(ctx: Optional['StartupCtx']) -> None:
         end_startup_notification_x11(ctx)
     except Exception:
         import traceback
+
         traceback.print_exc()
 
 
 class startup_notification_handler:
-
     def __init__(self, do_notify: bool = True, startup_id: Optional[str] = None, extra_callback: Optional[Callable[[int], None]] = None):
         self.do_notify = do_notify
         self.startup_id = startup_id
@@ -354,7 +364,6 @@ class startup_notification_handler:
         self.ctx: Optional['StartupCtx'] = None
 
     def __enter__(self) -> Callable[[int], None]:
-
         def pre_show_callback(window_handle: int) -> None:
             if self.extra_callback is not None:
                 self.extra_callback(window_handle)
@@ -381,10 +390,12 @@ def remove_socket_file(s: 'Socket', path: Optional[str] = None, is_dir: Optional
 
 def unix_socket_directories() -> Iterator[str]:
     import tempfile
+
     home = os.path.expanduser('~')
     candidates = [tempfile.gettempdir(), home]
     if is_macos:
         from .fast_data_types import user_cache_dir
+
         candidates = [user_cache_dir(), '/Library/Caches']
     for loc in candidates:
         if os.access(loc, os.W_OK | os.R_OK | os.X_OK):
@@ -405,6 +416,7 @@ def random_unix_socket() -> 'Socket':
     import tempfile
 
     from smelly.fast_data_types import random_unix_socket as rus
+
     try:
         fd = rus()
     except OSError:
@@ -425,6 +437,7 @@ def random_unix_socket() -> 'Socket':
 
 def single_instance_unix(name: str) -> bool:
     import socket
+
     for path in unix_socket_paths(name):
         socket_path = path.rpartition('.')[0] + '.sock'
         fd = os.open(path, os.O_CREAT | os.O_WRONLY | os.O_TRUNC | os.O_CLOEXEC)
@@ -456,11 +469,11 @@ def single_instance_unix(name: str) -> bool:
 
 
 class SingleInstance:
-
     socket: Optional['Socket'] = None
 
     def __call__(self, group_id: Optional[str] = None) -> bool:
         import socket
+
         name = f'{appname}-ipc-{os.geteuid()}'
         if group_id:
             name += f'-{group_id}'
@@ -490,6 +503,7 @@ single_instance = SingleInstance()
 
 def parse_address_spec(spec: str) -> Tuple[AddressFamily, Union[Tuple[str, int], str], Optional[str]]:
     import socket
+
     protocol, rest = spec.split(':', 1)
     socket_path = None
     address: Union[str, Tuple[str, int]] = ''
@@ -526,7 +540,6 @@ def write_all(fd: int, data: Union[str, bytes], block_until_written: bool = True
 
 
 class TTYIO:
-
     def __init__(self, read_with_timeout: bool = True):
         self.read_with_timeout = read_with_timeout
 
@@ -536,12 +549,14 @@ class TTYIO:
 
     def __exit__(self, *a: Any) -> None:
         from .fast_data_types import close_tty
+
         close_tty(self.tty_fd, self.original_termios)
 
     def wait_till_read_available(self) -> bool:
         if self.read_with_timeout:
             raise ValueError('Cannot wait when TTY is set to read with timeout')
         import select
+
         rd = select.select([self.tty_fd], [], [])[0]
         return bool(rd)
 
@@ -568,6 +583,7 @@ class TTYIO:
 
 def set_echo(fd: int = -1, on: bool = False) -> Tuple[int, List[Union[int, List[Union[bytes, int]]]]]:
     import termios
+
     if fd < 0:
         fd = sys.stdin.fileno()
     old = termios.tcgetattr(fd)
@@ -583,6 +599,7 @@ def set_echo(fd: int = -1, on: bool = False) -> Tuple[int, List[Union[int, List[
 @contextmanager
 def no_echo(fd: int = -1) -> Iterator[None]:
     import termios
+
     fd, old = set_echo(fd)
     try:
         yield
@@ -591,7 +608,6 @@ def no_echo(fd: int = -1) -> Iterator[None]:
 
 
 def natsort_ints(iterable: Iterable[str]) -> List[str]:
-
     def convert(text: str) -> Union[int, str]:
         return int(text) if text.isdigit() else text
 
@@ -603,6 +619,7 @@ def natsort_ints(iterable: Iterable[str]) -> List[str]:
 
 def get_hostname(fallback: str = '') -> str:
     import socket
+
     try:
         return socket.gethostname() or fallback
     except Exception:
@@ -611,6 +628,7 @@ def get_hostname(fallback: str = '') -> str:
 
 def resolve_editor_cmd(editor: str, shell_env: Mapping[str, str]) -> Optional[str]:
     import shlex
+
     editor_cmd = shlex.split(editor)
     editor_exe = (editor_cmd or ('',))[0]
     if editor_exe and os.path.isabs(editor_exe):
@@ -628,6 +646,7 @@ def resolve_editor_cmd(editor: str, shell_env: Mapping[str, str]) -> Optional[st
             return patched(q)
     elif 'PATH' in shell_env:
         import shutil
+
         q = shutil.which(editor_exe, path=shell_env['PATH'])
         if q:
             return patched(q)
@@ -663,16 +682,19 @@ def get_editor_from_env_vars(opts: Optional[Options] = None) -> List[str]:
 def get_editor(opts: Optional[Options] = None, path_to_edit: str = '', line_number: int = 0) -> List[str]:
     if opts is None:
         from .fast_data_types import get_options
+
         try:
             opts = get_options()
         except RuntimeError:
             # we are in a kitten
             from .cli import create_default_opts
+
             opts = create_default_opts()
     if opts.editor == '.':
         ans = get_editor_from_env_vars()
     else:
         import shlex
+
         ans = shlex.split(opts.editor)
     ans[0] = os.path.expanduser(ans[0])
     if path_to_edit:
@@ -697,6 +719,7 @@ def is_path_in_temp_dir(path: str) -> bool:
         return x or ''
 
     import tempfile
+
     path = abspath(path)
     candidates = frozenset(map(abspath, ('/tmp', '/dev/shm', os.environ.get('TMPDIR', None), tempfile.gettempdir())))
     for q in candidates:
@@ -715,6 +738,7 @@ def resolve_abs_or_config_path(path: str, env: Optional[Mapping[str, str]] = Non
 
 def resolve_custom_file(path: str) -> str:
     from .fast_data_types import get_options
+
     opts: Optional[Options] = None
     with suppress(RuntimeError):
         opts = get_options()
@@ -735,6 +759,7 @@ def resolved_shell(opts: Optional[Options] = None) -> List[str]:
         ans = [shell_path]
     else:
         import shlex
+
         ans = shlex.split(q)
     return ans
 
@@ -755,6 +780,7 @@ def system_paths_on_macos() -> Tuple[str, ...]:
                     if os.path.isdir(line):
                         seen.add(line)
                         entries.append(line)
+
     try:
         files = os.listdir('/etc/paths.d')
     except FileNotFoundError:
@@ -771,6 +797,7 @@ def which(name: str, only_system: bool = False) -> Optional[str]:
     import shutil
 
     from .fast_data_types import get_options
+
     opts: Optional[Options] = None
     with suppress(RuntimeError):
         opts = get_options()
@@ -827,9 +854,11 @@ def read_shell_environment(opts: Optional[Options] = None) -> Dict[str, str]:
     ans: Optional[Dict[str, str]] = getattr(read_shell_environment, 'ans', None)
     if ans is None:
         from .child import openpty
+
         ans = {}
         setattr(read_shell_environment, 'ans', ans)
         import subprocess
+
         shell = resolved_shell(opts)
         master, slave = openpty()
         os.set_blocking(master, False)
@@ -839,14 +868,15 @@ def read_shell_environment(opts: Optional[Options] = None) -> Dict[str, str]:
             shell += ['-i']
         try:
             p = subprocess.Popen(
-                shell + ['-c', 'env'], stdout=slave, stdin=slave, stderr=slave, start_new_session=True, close_fds=True,
-                preexec_fn=clear_handled_signals)
+                shell + ['-c', 'env'], stdout=slave, stdin=slave, stderr=slave, start_new_session=True, close_fds=True, preexec_fn=clear_handled_signals
+            )
         except FileNotFoundError:
             log_error('Could not find shell to read environment')
             return ans
         with os.fdopen(master, 'rb') as stdout, os.fdopen(slave, 'wb'):
             raw = b''
             from time import monotonic
+
             start_time = monotonic()
             while monotonic() - start_time < 1.5:
                 try:
@@ -880,8 +910,9 @@ def read_shell_environment(opts: Optional[Options] = None) -> Dict[str, str]:
 
 
 def parse_uri_list(text: str) -> Generator[str, None, None]:
-    ' Get paths from file:// URLs '
+    'Get paths from file:// URLs'
     from urllib.parse import unquote, urlparse
+
     for line in text.splitlines():
         if not line or line.startswith('#'):
             continue
@@ -899,6 +930,7 @@ def parse_uri_list(text: str) -> Generator[str, None, None]:
 
 def edit_config_file() -> None:
     from smelly.config import prepare_config_file_for_editing
+
     p = prepare_config_file_for_editing()
     editor = get_editor()
     os.execvp(editor[0], editor + [p])
@@ -935,6 +967,7 @@ def get_new_os_window_size(
 def get_all_processes() -> Iterable[int]:
     if is_macos:
         from smelly.fast_data_types import get_all_processes as f
+
         yield from f()
     else:
         for c in os.listdir('/proc'):
@@ -986,20 +1019,27 @@ def hold_till_enter() -> None:
     import subprocess
 
     from .constants import kitten_exe
+
     subprocess.Popen([kitten_exe(), '__hold_till_enter__']).wait()
 
 
 def cleanup_ssh_control_masters() -> None:
     import glob
     import subprocess
+
     try:
-        files = frozenset(glob.glob(os.path.join(runtime_dir(), ssh_control_master_template.format(
-            smelly_pid=os.getpid(), ssh_placeholder='*'))))
+        files = frozenset(glob.glob(os.path.join(runtime_dir(), ssh_control_master_template.format(smelly_pid=os.getpid(), ssh_placeholder='*'))))
     except OSError:
         return
-    workers = tuple(subprocess.Popen([
-        'ssh', '-o', f'ControlPath={x}', '-O', 'exit', 'smelly-unused-host-name'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-        preexec_fn=clear_handled_signals) for x in files)
+    workers = tuple(
+        subprocess.Popen(
+            ['ssh', '-o', f'ControlPath={x}', '-O', 'exit', 'smelly-unused-host-name'],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            preexec_fn=clear_handled_signals,
+        )
+        for x in files
+    )
     for w in workers:
         w.wait()
     for x in files:
@@ -1012,14 +1052,17 @@ def path_from_osc7_url(url: str) -> str:
         return '/' + url.split('/', 3)[-1]
     if url.startswith('file://'):
         from urllib.parse import unquote, urlparse
+
         return unquote(urlparse(url).path)
     return ''
 
 
 @run_once
 def macos_version() -> Tuple[int, ...]:
-    # platform.mac_ver does not work thanks to Apple's stupid "hardening", so just use sw_vers
+    # platform.mac_ver does not work thanks to Apple's stupid "hardening", so
+    # just use sw_vers
     import subprocess
+
     try:
         o = subprocess.check_output(['sw_vers', '-productVersion'], stderr=subprocess.STDOUT).decode()
     except Exception:
@@ -1030,6 +1073,7 @@ def macos_version() -> Tuple[int, ...]:
 @lru_cache(maxsize=2)
 def less_version(less_exe: str = 'less') -> int:
     import subprocess
+
     o = subprocess.check_output([less_exe, '-V'], stderr=subprocess.STDOUT).decode()
     m = re.match(r'less (\d+)', o)
     if m is None:
@@ -1052,10 +1096,12 @@ def safer_fork() -> int:
     if pid:
         # master
         import ssl
+
         ssl.RAND_add(os.urandom(32), 0.0)
     else:
         # child
         import atexit
+
         atexit._clear()
     return pid
 
@@ -1065,6 +1111,7 @@ def docs_url(which: str = '', local_docs_root: Optional[str] = '') -> str:
 
     from .conf.types import resolve_ref
     from .constants import local_docs, website_url
+
     if local_docs_root is None:
         ld = ''
     else:
@@ -1101,6 +1148,7 @@ def sanitize_for_bracketed_paste(text: bytes) -> bytes:
 @lru_cache(maxsize=64)
 def sanitize_url_for_dispay_to_user(url: str) -> str:
     from urllib.parse import unquote, urlparse, urlunparse
+
     try:
         purl = urlparse(url)
         if purl.netloc:

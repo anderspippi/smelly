@@ -19,9 +19,9 @@ q = {
 }
 
 data = json.dumps(q)
-with SharedMemory(
-    size=len(data) + 1 + SharedMemory.num_bytes_for_size, unlink_on_exit=True, prefix=f'askpass-{os.getpid()}-') as shm, \
-        open(os.ctermid(), 'wb') as tty:
+with SharedMemory(size=len(data) + 1 + SharedMemory.num_bytes_for_size, unlink_on_exit=True, prefix=f'askpass-{os.getpid()}-') as shm, open(
+    os.ctermid(), 'wb'
+) as tty:
     shm.write(b'\0')
     shm.write_data_with_size(data)
     shm.flush()

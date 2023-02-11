@@ -19,7 +19,6 @@ class BorderLine(NamedTuple):
 
 
 class LayoutOpts:
-
     def __init__(self, data: Dict[str, str]):
         pass
 
@@ -81,10 +80,7 @@ def convert_bias_map(bias: Dict[int, float], number_of_windows: int, number_of_c
     return distribute_indexed_bias(base_bias, bias)
 
 
-def calculate_cells_map(
-    bias: Union[None, Sequence[float], Dict[int, float]],
-    number_of_windows: int, number_of_cells: int
-) -> List[int]:
+def calculate_cells_map(bias: Union[None, Sequence[float], Dict[int, float]], number_of_windows: int, number_of_cells: int) -> List[int]:
     if isinstance(bias, dict):
         bias = convert_bias_map(bias, number_of_windows, number_of_cells)
     cells_per_window = number_of_cells // number_of_windows
@@ -105,10 +101,12 @@ def calculate_cells_map(
 
 
 def layout_dimension(
-    start_at: int, length: int, cell_length: int,
+    start_at: int,
+    length: int,
+    cell_length: int,
     decoration_pairs: DecorationPairs,
     left_align: bool = False,
-    bias: Union[None, Sequence[float], Dict[int, float]] = None
+    bias: Union[None, Sequence[float], Dict[int, float]] = None,
 ) -> LayoutDimension:
     number_of_windows = len(decoration_pairs)
     number_of_cells = length // cell_length
@@ -165,9 +163,13 @@ def blank_rects_for_window(wg: WindowGeometry) -> Generator[Rect, None, None]:
 
 def window_geometry(xstart: int, xnum: int, ystart: int, ynum: int, left: int, top: int, right: int, bottom: int) -> WindowGeometry:
     return WindowGeometry(
-        left=xstart, top=ystart, xnum=xnum, ynum=ynum,
-        right=xstart + lgd.cell_width * xnum, bottom=ystart + lgd.cell_height * ynum,
-        spaces=Edges(left, top, right, bottom)
+        left=xstart,
+        top=ystart,
+        xnum=xnum,
+        ynum=ynum,
+        right=xstart + lgd.cell_width * xnum,
+        bottom=ystart + lgd.cell_height * ynum,
+        spaces=Edges(left, top, right, bottom),
     )
 
 
@@ -189,7 +191,7 @@ def normalize_biases(biases: List[float]) -> List[float]:
     s = sum(biases)
     if s == 1.0:
         return biases
-    return [x/s for x in biases]
+    return [x / s for x in biases]
 
 
 def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int, float]) -> Sequence[float]:
@@ -206,7 +208,6 @@ def distribute_indexed_bias(base_bias: Sequence[float], index_bias_map: Dict[int
 
 
 class Layout:
-
     name: str = ''
     needs_window_borders = True
     must_draw_borders = False  # can be overridden to customize behavior from wellies
@@ -279,8 +280,7 @@ class Layout:
         return all_windows.move_window_group(to_group=group)
 
     def add_window(
-        self, all_windows: WindowList, window: WindowType, location: Optional[str] = None,
-        overlay_for: Optional[int] = None, put_overlay_behind: bool = False
+        self, all_windows: WindowList, window: WindowType, location: Optional[str] = None, overlay_for: Optional[int] = None, put_overlay_behind: bool = False
     ) -> None:
         if overlay_for is not None and overlay_for in all_windows:
             all_windows.add_window(window, group_of=overlay_for, head_of_group=put_overlay_behind)
@@ -322,14 +322,18 @@ class Layout:
 
     def layout_single_window_group(self, wg: WindowGroup, add_blank_rects: bool = True) -> None:
         bw = 1 if self.must_draw_borders else 0
-        xdecoration_pairs = ((
-            wg.decoration('left', border_mult=bw, is_single_window=True),
-            wg.decoration('right', border_mult=bw, is_single_window=True),
-        ),)
-        ydecoration_pairs = ((
-            wg.decoration('top', border_mult=bw, is_single_window=True),
-            wg.decoration('bottom', border_mult=bw, is_single_window=True),
-        ),)
+        xdecoration_pairs = (
+            (
+                wg.decoration('left', border_mult=bw, is_single_window=True),
+                wg.decoration('right', border_mult=bw, is_single_window=True),
+            ),
+        )
+        ydecoration_pairs = (
+            (
+                wg.decoration('top', border_mult=bw, is_single_window=True),
+                wg.decoration('bottom', border_mult=bw, is_single_window=True),
+            ),
+        )
         geom = layout_single_window(xdecoration_pairs, ydecoration_pairs, left_align=lgd.align_top_left)
         wg.set_geometry(geom)
         if add_blank_rects and wg:
@@ -342,11 +346,10 @@ class Layout:
         start: Optional[int] = None,
         size: Optional[int] = None,
         offset: int = 0,
-        border_mult: int = 1
+        border_mult: int = 1,
     ) -> LayoutDimension:
         decoration_pairs = tuple(
-            (g.decoration('left', border_mult=border_mult), g.decoration('right', border_mult=border_mult)) for i, g in
-            enumerate(groups) if i >= offset
+            (g.decoration('left', border_mult=border_mult), g.decoration('right', border_mult=border_mult)) for i, g in enumerate(groups) if i >= offset
         )
         if start is None:
             start = lgd.central.left
@@ -361,11 +364,10 @@ class Layout:
         start: Optional[int] = None,
         size: Optional[int] = None,
         offset: int = 0,
-        border_mult: int = 1
+        border_mult: int = 1,
     ) -> LayoutDimension:
         decoration_pairs = tuple(
-            (g.decoration('top', border_mult=border_mult), g.decoration('bottom', border_mult=border_mult)) for i, g in
-            enumerate(groups) if i >= offset
+            (g.decoration('top', border_mult=border_mult), g.decoration('bottom', border_mult=border_mult)) for i, g in enumerate(groups) if i >= offset
         )
         if start is None:
             start = lgd.central.top

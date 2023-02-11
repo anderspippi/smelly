@@ -11,6 +11,7 @@ def run(input_data, query, **kw):
     kw['threads'] = kw.get('threads', 1)
     mark = kw.pop('mark', False)
     from wellies.choose.match import match
+
     mark_before = mark_after = ''
     if mark:
         if mark is True:
@@ -22,7 +23,6 @@ def run(input_data, query, **kw):
 
 
 class TestMatcher(BaseTest):
-
     def run_matcher(self, *args, **kwargs):
         result = run(*args, **kwargs)
         return result
@@ -36,7 +36,7 @@ class TestMatcher(BaseTest):
         return out
 
     def test_filtering(self):
-        ' Non matching entries must be removed '
+        'Non matching entries must be removed'
         self.basic_test('test\nxyz', 'te', 'test')
         self.basic_test('abc\nxyz', 'ba', '')
         self.basic_test('abc\n123', 'abc', 'abc')
@@ -48,24 +48,20 @@ class TestMatcher(BaseTest):
         self.basic_test('test\nXYZ', 'mn', '')
 
     def test_marking(self):
-        ' Marking of matched characters '
-        self.basic_test(
-            'test\nxyz',
-            'ts',
-            '\x1b[32mt\x1b[39me\x1b[32ms\x1b[39mt',
-            mark=True)
+        'Marking of matched characters'
+        self.basic_test('test\nxyz', 'ts', '\x1b[32mt\x1b[39me\x1b[32ms\x1b[39mt', mark=True)
 
     def test_positions(self):
-        ' Output of positions '
+        'Output of positions'
         self.basic_test('abc\nac', 'ac', '0,1:ac\n0,2:abc', positions=True)
         self.basic_test('abc\nv', 'a', '0:abc', positions=True)
 
     def test_delimiter(self):
-        ' Test using a custom line delimiter '
+        'Test using a custom line delimiter'
         self.basic_test('abc\n21ac', 'ac', 'ac1abc\n2', delimiter='1')
 
     def test_scoring(self):
-        ' Scoring algorithm '
+        'Scoring algorithm'
         # Match at start
         self.basic_test('archer\nelementary', 'e', 'elementary\narcher')
         # Match at level factor
@@ -82,12 +78,13 @@ class TestMatcher(BaseTest):
         self.basic_test('xa/a', 'a', 'xa/|a|', mark='|')
 
     def test_threading(self):
-        ' Test matching on a large data set with different number of threads '
+        'Test matching on a large data set with different number of threads'
         alphabet = string.ascii_lowercase + string.ascii_uppercase + string.digits
 
         def random_word():
             sz = random.randint(2, 10)
             return ''.join(random.choice(alphabet) for x in range(sz))
+
         words = [random_word() for i in range(400)]
 
         def random_item():

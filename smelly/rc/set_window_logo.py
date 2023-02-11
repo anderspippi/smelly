@@ -45,7 +45,9 @@ class SetWindowLogo(RemoteCommand):
         ' be removed.'
     )
 
-    options_spec = MATCH_WINDOW_OPTION + '''\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n
 --self
 type=bool-set
 Act on the window this command is run in, rather than the active window.
@@ -68,8 +70,10 @@ default=false
 Don't wait for a response from smelly. This means that even if setting the image
 failed, the command will exit with a success code.
 '''
-    args = RemoteCommand.Args(spec='PATH_TO_PNG_IMAGE', count=1, json_field='data', special_parse='!read_window_logo(io_data, args[0])',
-                              completion=ImageCompletion)
+    )
+    args = RemoteCommand.Args(
+        spec='PATH_TO_PNG_IMAGE', count=1, json_field='data', special_parse='!read_window_logo(io_data, args[0])', completion=ImageCompletion
+    )
     reads_streaming_data = True
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
@@ -98,6 +102,7 @@ failed, the command will exit with a success code.
                     yield ret
             ret['data'] = ''
             yield ret
+
         return file_pipe(path)
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:

@@ -77,6 +77,7 @@ def mod_to_names(mods: int, has_smelly_mod: bool = False, smelly_mod: int = 0) -
 
 def human_repr_of_single_key(self: 'SingleKey', smelly_mod: int) -> str:
     from .fast_data_types import glfw_get_key_name
+
     names = []
     names = list(mod_to_names(self.mods, self.defined_with_smelly_mod, smelly_mod))
     if self.key > 0:
@@ -137,16 +138,26 @@ class AsyncResponse:
 
 
 if TYPE_CHECKING:
+
     class RunOnce(Generic[_T]):
+        def __init__(self, func: Callable[[], _T]):
+            ...
 
-        def __init__(self, func: Callable[[], _T]): ...
-        def __call__(self) -> _T: ...
-        def set_override(self, val: _T) -> None: ...
-        def clear_override(self) -> None: ...
-        def clear_cached(self) -> None: ...
+        def __call__(self) -> _T:
+            ...
+
+        def set_override(self, val: _T) -> None:
+            ...
+
+        def clear_override(self) -> None:
+            ...
+
+        def clear_cached(self) -> None:
+            ...
+
 else:
-    class RunOnce:
 
+    class RunOnce:
         def __init__(self, f):
             self._override = RunOnce
             self._cached_result = RunOnce
@@ -187,13 +198,21 @@ def modmap() -> Dict[str, int]:
         GLFW_MOD_SUPER,
     )
 
-    return {'ctrl': GLFW_MOD_CONTROL, 'shift': GLFW_MOD_SHIFT, ('opt' if is_macos else 'alt'): GLFW_MOD_ALT,
-            ('cmd' if is_macos else 'super'): GLFW_MOD_SUPER, 'hyper': GLFW_MOD_HYPER, 'meta': GLFW_MOD_META,
-            'caps_lock': GLFW_MOD_CAPS_LOCK, 'num_lock': GLFW_MOD_NUM_LOCK}
+    return {
+        'ctrl': GLFW_MOD_CONTROL,
+        'shift': GLFW_MOD_SHIFT,
+        ('opt' if is_macos else 'alt'): GLFW_MOD_ALT,
+        ('cmd' if is_macos else 'super'): GLFW_MOD_SUPER,
+        'hyper': GLFW_MOD_HYPER,
+        'meta': GLFW_MOD_META,
+        'caps_lock': GLFW_MOD_CAPS_LOCK,
+        'num_lock': GLFW_MOD_NUM_LOCK,
+    }
 
 
 if TYPE_CHECKING:
     from typing import Literal
+
     ActionGroup = Literal['cp', 'sc', 'win', 'tab', 'mouse', 'mk', 'lay', 'misc', 'debug']
 else:
     ActionGroup = str
@@ -208,6 +227,7 @@ def ac(group: ActionGroup, doc: str) -> Callable[[_T], _T]:
     def w(f: _T) -> _T:
         setattr(f, 'action_spec', ActionSpec(group, doc))
         return f
+
     return w
 
 

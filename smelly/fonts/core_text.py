@@ -12,10 +12,7 @@ from smelly.utils import log_error
 
 from . import ListedFont
 
-attr_map = {(False, False): 'font_family',
-            (True, False): 'bold_font',
-            (False, True): 'italic_font',
-            (True, True): 'bold_italic_font'}
+attr_map = {(False, False): 'font_family', (True, False): 'bold_font', (False, True): 'italic_font', (True, True): 'bold_italic_font'}
 
 
 FontMap = Dict[str, Dict[str, List[CoreTextFont]]]
@@ -60,9 +57,7 @@ def find_best_match(family: str, bold: bool = False, italic: bool = False, ignor
     font_map = all_fonts_map()
 
     def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:
-        style_match = 1 if candidate['bold'] == bold and candidate[
-            'italic'
-        ] == italic else 0
+        style_match = 1 if candidate['bold'] == bold and candidate['italic'] == italic else 0
         monospace_match = 1 if candidate['monospace'] else 0
         is_regular_width = not candidate['expanded'] and not candidate['condensed']
         # prefer semi-bold to bold to heavy, less bold means less chance of
@@ -97,12 +92,9 @@ def resolve_family(f: str, main_family: str, bold: bool = False, italic: bool = 
 
 def get_font_files(opts: Options) -> Dict[str, CoreTextFont]:
     ans: Dict[str, CoreTextFont] = {}
-    for (bold, italic) in sorted(attr_map):
+    for bold, italic in sorted(attr_map):
         attr = attr_map[(bold, italic)]
-        key = {(False, False): 'medium',
-               (True, False): 'bold',
-               (False, True): 'italic',
-               (True, True): 'bi'}[(bold, italic)]
+        key = {(False, False): 'medium', (True, False): 'bold', (False, True): 'italic', (True, True): 'bi'}[(bold, italic)]
         ignore_face = None if key == 'medium' else ans['medium']
         face = find_best_match(resolve_family(getattr(opts, attr), opts.font_family, bold, italic), bold, italic, ignore_face=ignore_face)
         ans[key] = face

@@ -10,7 +10,6 @@ if TYPE_CHECKING:
 
 
 class SetWindowTitle(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     title/str: The new title
     match/str: Which windows to change the title in
@@ -24,12 +23,16 @@ class SetWindowTitle(RemoteCommand):
         ' in which the command is run is affected. If you do not specify a title, the'
         ' last title set by the child process running in the window will be used.'
     )
-    options_spec = '''\
+    options_spec = (
+        '''\
 --temporary
 type=bool-set
 By default, the title will be permanently changed and programs running in the window will not be able to change it
 again. If you want to allow other programs to change it afterwards, use this option.
-    ''' + '\n\n' + MATCH_WINDOW_OPTION
+    '''
+        + '\n\n'
+        + MATCH_WINDOW_OPTION
+    )
     args = RemoteCommand.Args(json_field='title', spec='[TITLE ...]', special_parse='expand_ansi_c_escapes_in_args(args...)')
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:

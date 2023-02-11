@@ -11,7 +11,6 @@ if TYPE_CHECKING:
 
 
 class CloseTab(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     match/str: Which tab to close
     self/bool: Boolean indicating whether to close the tab of the window the command is run in
@@ -26,7 +25,9 @@ tabs in the currently focused OS window, use::
 
     smelly @ close-tab --match "not state:focused and state:parent_focused"
 '''
-    options_spec = MATCH_TAB_OPTION + '''\n
+    options_spec = (
+        MATCH_TAB_OPTION
+        + '''\n
 --no-response
 type=bool-set
 default=false
@@ -43,6 +44,7 @@ Close the tab of the window this command is run in, rather than the active tab.
 type=bool-set
 Do not return an error if no tabs are matched to be closed.
 '''
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         return {'match': opts.match, 'self': opts.self, 'ignore_no_match': opts.ignore_no_match}

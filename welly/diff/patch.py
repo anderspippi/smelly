@@ -45,9 +45,7 @@ def run_diff(file1: str, file2: str, context: int = 3) -> Tuple[bool, Union[int,
     # we always want symlinks to be followed.
     path1 = os.path.realpath(file1)
     path2 = os.path.realpath(file2)
-    p = subprocess.Popen(
-            cmd + [path1, path2],
-            stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.DEVNULL)
+    p = subprocess.Popen(cmd + [path1, path2], stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.DEVNULL)
     worker_processes.append(p.pid)
     stdout, stderr = p.communicate()
     returncode = p.wait()
@@ -58,7 +56,6 @@ def run_diff(file1: str, file2: str, context: int = 3) -> Tuple[bool, Union[int,
 
 
 class Chunk:
-
     __slots__ = ('is_context', 'left_start', 'right_start', 'left_count', 'right_count', 'centers')
 
     def __init__(self, left_start: int, right_start: int, is_context: bool = False) -> None:
@@ -80,18 +77,15 @@ class Chunk:
 
     def finalize(self) -> None:
         if not self.is_context and self.left_count == self.right_count:
-            self.centers = tuple(
-                changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i])
-                for i in range(self.left_count)
-            )
+            self.centers = tuple(changed_center(left_lines[self.left_start + i], right_lines[self.right_start + i]) for i in range(self.left_count))
 
     def __repr__(self) -> str:
         return 'Chunk(is_context={}, left_start={}, left_count={}, right_start={}, right_count={})'.format(
-                self.is_context, self.left_start, self.left_count, self.right_start, self.right_count)
+            self.is_context, self.left_start, self.left_count, self.right_start, self.right_count
+        )
 
 
 class Hunk:
-
     def __init__(self, title: str, left: Tuple[int, int], right: Tuple[int, int]) -> None:
         self.left_start, self.left_count = left
         self.right_start, self.right_count = right
@@ -176,7 +170,6 @@ def parse_hunk_header(line: str) -> Hunk:
 
 
 class Patch:
-
     def __init__(self, all_hunks: Sequence[Hunk]):
         self.all_hunks = all_hunks
         self.largest_line_number = self.all_hunks[-1].largest_line_number if self.all_hunks else 0
@@ -215,7 +208,6 @@ def parse_patch(raw: str) -> Patch:
 
 
 class Differ:
-
     diff_executor: Optional[concurrent.futures.ThreadPoolExecutor] = None
 
     def __init__(self) -> None:
@@ -251,6 +243,7 @@ class Differ:
                 patch = parse_patch(output)
             except Exception:
                 import traceback
+
                 return f'{traceback.format_exc()}\nParsing diff for {left_path} vs. {right_path} failed'
             else:
                 ans[key] = patch

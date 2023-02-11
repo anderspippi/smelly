@@ -65,10 +65,9 @@ extensions = [
 
 # URL for OpenGraph tags
 ogp_site_url = website_url()
-# OGP needs a PNG image because of: https://github.com/wpilibsuite/sphinxext-opengraph/issues/96
-ogp_social_cards = {
-    'image': '../logo/smelly.png'
-}
+# OGP needs a PNG image because of:
+# https://github.com/wpilibsuite/sphinxext-opengraph/issues/96
+ogp_social_cards = {'image': '../logo/smelly.png'}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -92,10 +91,7 @@ language: str = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = [
-    '_build', 'Thumbs.db', '.DS_Store', 'basic.rst',
-    'generated/cli-*.rst', 'generated/conf-*.rst', 'generated/actions.rst'
-]
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'basic.rst', 'generated/cli-*.rst', 'generated/conf-*.rst', 'generated/actions.rst']
 
 rst_prolog = '''
 .. |smelly| replace:: *smelly*
@@ -103,7 +99,9 @@ rst_prolog = '''
 .. _tarball: https://github.com/backbiter-no/smelly/releases/download/vVERSION/smelly-VERSION.tar.xz
 .. role:: italic
 
-'''.replace('VERSION', str_version)
+'''.replace(
+    'VERSION', str_version
+)
 smartquotes_action = 'qe'  # educate quotes and ellipses but not dashes
 
 string_replacements = {
@@ -166,10 +164,7 @@ manpages_url = 'https://man7.org/linux/man-pages/man{section}/{page}.{section}.h
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    ('invocation', 'smelly', 'smelly Documentation', [author], 1),
-    ('conf', 'smelly.conf', 'smelly.conf Documentation', [author], 5)
-]
+man_pages = [('invocation', 'smelly', 'smelly Documentation', [author], 1), ('conf', 'smelly.conf', 'smelly.conf Documentation', [author], 5)]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -178,9 +173,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'smelly', 'smelly Documentation',
-     author, 'smelly', 'Cross-platform, fast, feature-rich, GPU based terminal',
-     'Miscellaneous'),
+    (master_doc, 'smelly', 'smelly Documentation', author, 'smelly', 'Cross-platform, fast, feature-rich, GPU based terminal', 'Miscellaneous'),
 ]
 # }}}
 
@@ -197,21 +190,20 @@ extlinks = {
 def commit_role(
     name: str, rawtext: str, text: str, lineno: int, inliner: Any, options: Any = {}, content: Any = []
 ) -> Tuple[List[nodes.reference], List[nodes.problematic]]:
-    ' Link to a github commit '
+    'Link to a github commit'
     try:
-        commit_id = subprocess.check_output(
-            f'git rev-list --max-count=1 --skip=# {text}'.split()).decode('utf-8').strip()
+        commit_id = subprocess.check_output(f'git rev-list --max-count=1 --skip=# {text}'.split()).decode('utf-8').strip()
     except Exception:
-        msg = inliner.reporter.error(
-            f'GitHub commit id "{text}" not recognized.', line=lineno)
+        msg = inliner.reporter.error(f'GitHub commit id "{text}" not recognized.', line=lineno)
         prb = inliner.problematic(rawtext, rawtext, msg)
         return [prb], [msg]
     url = f'https://github.com/backbiter-no/smelly/commit/{commit_id}'
     set_classes(options)
-    short_id = subprocess.check_output(
-        f'git rev-list --max-count=1 --abbrev-commit --skip=# {commit_id}'.split()).decode('utf-8').strip()
+    short_id = subprocess.check_output(f'git rev-list --max-count=1 --abbrev-commit --skip=# {commit_id}'.split()).decode('utf-8').strip()
     node = nodes.reference(rawtext, f'commit: {short_id}', refuri=url, **options)
     return [node], []
+
+
 # }}}
 
 
@@ -221,34 +213,36 @@ def write_cli_docs(all_kitten_names: Iterable[str]) -> None:
     from wellies.ssh.options.definition import copy_message
     from smelly.cli import option_spec_as_rst
     from smelly.launch import options_spec as launch_options_spec
+
     with open('generated/ssh-copy.rst', 'w') as f:
-        f.write(option_spec_as_rst(
-            appname='copy', ospec=option_text, heading_char='^',
-            usage='file-or-dir-to-copy ...', message=copy_message
-        ))
+        f.write(option_spec_as_rst(appname='copy', ospec=option_text, heading_char='^', usage='file-or-dir-to-copy ...', message=copy_message))
     with open('generated/launch.rst', 'w') as f:
-        f.write(option_spec_as_rst(
-            appname='launch', ospec=launch_options_spec, heading_char='_',
-            message='''\
+        f.write(
+            option_spec_as_rst(
+                appname='launch',
+                ospec=launch_options_spec,
+                heading_char='_',
+                message='''\
 Launch an arbitrary program in a new smelly window/tab. Note that
 if you specify a program-to-run you can use the special placeholder
 :code:`@selection` which will be replaced by the current selection.
-'''
-        ))
+''',
+            )
+        )
     with open('generated/cli-smelly.rst', 'w') as f:
-        f.write(option_spec_as_rst(appname='smelly').replace(
-            'smelly --to', 'smelly @ --to'))
+        f.write(option_spec_as_rst(appname='smelly').replace('smelly --to', 'smelly @ --to'))
     as_rst = partial(option_spec_as_rst, heading_char='_')
     from smelly.rc.base import all_command_names, command_for_name
     from smelly.remote_control import cli_msg, global_options_spec
+
     with open('generated/cli-smelly-at.rst', 'w') as f:
         p = partial(print, file=f)
         p('smelly @')
         p('-' * 80)
         p('.. program::', 'smelly @')
-        p('\n\n' + as_rst(
-            global_options_spec, message=cli_msg, usage='command ...', appname='smelly @'))
+        p('\n\n' + as_rst(global_options_spec, message=cli_msg, usage='command ...', appname='smelly @'))
         from smelly.rc.base import cli_params_for
+
         for cmd_name in sorted(all_command_names()):
             func = command_for_name(cmd_name)
             p(f'.. _at-{func.name}:\n')
@@ -274,15 +268,18 @@ if you specify a program-to-run you can use the special placeholder
                 p(f'\nThe source code for this kitten is `available on GitHub <{scurl}>`_.')
                 p('\nCommand Line Interface')
                 p('-' * 72)
-                p('\n\n' + option_spec_as_rst(
-                    data['options'], message=data['help_text'], usage=data['usage'], appname=f'smelly +kitten {kitten}',
-                    heading_char='^'))
+                p(
+                    '\n\n'
+                    + option_spec_as_rst(data['options'], message=data['help_text'], usage=data['usage'], appname=f'smelly +kitten {kitten}', heading_char='^')
+                )
+
 
 # }}}
 
 
 def write_remote_control_protocol_docs() -> None:  # {{{
     from smelly.rc.base import RemoteCommand, all_command_names, command_for_name
+
     field_pat = re.compile(r'\s*([^:]+?)\s*:\s*(.+)')
 
     def format_cmd(p: Callable[..., None], name: str, cmd: RemoteCommand) -> None:
@@ -298,7 +295,7 @@ def write_remote_control_protocol_docs() -> None:  # {{{
                 fields.append((m.group(1).split('/')[0], m.group(2)))
         if fields:
             p('\nFields are:\n')
-            for (name, desc) in fields:
+            for name, desc in fields:
                 if '+' in name:
                     title = name.replace('+', ' (required)')
                 else:
@@ -320,6 +317,8 @@ def write_remote_control_protocol_docs() -> None:  # {{{
                 continue
             name = name.replace('_', '-')
             format_cmd(p, name, cmd)
+
+
 # }}}
 
 
@@ -328,6 +327,8 @@ def replace_string(app: Any, docname: str, source: List[str]) -> None:  # {{{
     for k, v in app.config.string_replacements.items():
         src = src.replace(k, v)
     source[0] = src
+
+
 # }}}
 
 # config file docs {{{
@@ -344,14 +345,14 @@ class ConfLexer(RegexLexer):  # type: ignore
             (r'\s+$', Whitespace),
             (r'\s+', Whitespace),
             (r'(include)(\s+)(.+?)$', bygroups(Comment.Preproc, Whitespace, Name.Namespace)),
-            (r'(map)(\s+)(\S+)(\s+)', bygroups(
-                Keyword.Declaration, Whitespace, String, Whitespace), 'action'),
-            (r'(mouse_map)(\s+)(\S+)(\s+)(\S+)(\s+)(\S+)(\s+)', bygroups(
-                Keyword.Declaration, Whitespace, String, Whitespace, Name.Variable, Whitespace, String, Whitespace), 'action'),
-            (r'(symbol_map)(\s+)(\S+)(\s+)(.+?)$', bygroups(
-                Keyword.Declaration, Whitespace, String, Whitespace, Literal)),
-            (r'([a-zA-Z_0-9]+)(\s+)', bygroups(
-                Name.Variable, Whitespace), 'args'),
+            (r'(map)(\s+)(\S+)(\s+)', bygroups(Keyword.Declaration, Whitespace, String, Whitespace), 'action'),
+            (
+                r'(mouse_map)(\s+)(\S+)(\s+)(\S+)(\s+)(\S+)(\s+)',
+                bygroups(Keyword.Declaration, Whitespace, String, Whitespace, Name.Variable, Whitespace, String, Whitespace),
+                'action',
+            ),
+            (r'(symbol_map)(\s+)(\S+)(\s+)(.+?)$', bygroups(Keyword.Declaration, Whitespace, String, Whitespace, Literal)),
+            (r'([a-zA-Z_0-9]+)(\s+)', bygroups(Name.Variable, Whitespace), 'args'),
         ],
         'action': [
             (r'[a-z_0-9]+$', Name.Function, 'root'),
@@ -384,7 +385,7 @@ class SessionLexer(RegexLexer):  # type: ignore
         ],
         'args': [
             (r'.*?$', Literal, 'root'),
-        ]
+        ],
     }
 
 
@@ -473,7 +474,8 @@ def process_shortcut_link(env: Any, refnode: Any, has_explicit_title: bool, titl
 def write_conf_docs(app: Any, all_kitten_names: Iterable[str]) -> None:
     app.add_lexer('conf', ConfLexer() if version_info[0] < 3 else ConfLexer)
     app.add_object_type(
-        'opt', 'opt',
+        'opt',
+        'opt',
         indextemplate="pair: %s; Config Setting",
         parse_node=parse_opt_node,
     )
@@ -483,7 +485,8 @@ def write_conf_docs(app: Any, all_kitten_names: Iterable[str]) -> None:
     opt_role.process_link = process_opt_link
 
     app.add_object_type(
-        'shortcut', 'sc',
+        'shortcut',
+        'sc',
         indextemplate="pair: %s; Keyboard Shortcut",
         parse_node=parse_shortcut_node,
     )
@@ -493,7 +496,8 @@ def write_conf_docs(app: Any, all_kitten_names: Iterable[str]) -> None:
     shortcut_slugs.clear()
 
     app.add_object_type(
-        'action', 'ac',
+        'action',
+        'ac',
         indextemplate="pair: %s; Action",
         parse_node=parse_action_node,
     )
@@ -512,17 +516,22 @@ def write_conf_docs(app: Any, all_kitten_names: Iterable[str]) -> None:
             print(text, file=f)
 
     from smelly.options.definition import definition
+
     generate_default_config(definition, 'smelly')
 
     from wellies.runner import get_kitten_conf_docs
+
     for kitten in all_kitten_names:
         definition = get_kitten_conf_docs(kitten)
         if definition:
             generate_default_config(definition, f'kitten-{kitten}')
 
     from smelly.actions import as_rst
+
     with open('generated/actions.rst', 'w', encoding='utf-8') as f:
         f.write(as_rst())
+
+
 # }}}
 
 
@@ -543,6 +552,7 @@ def add_html_context(app: Any, pagename: str, templatename: str, context: Any, d
 def setup(app: Any) -> None:
     os.makedirs('generated/conf', exist_ok=True)
     from wellies.runner import all_kitten_names
+
     kn = all_kitten_names()
     write_cli_docs(kn)
     write_remote_control_protocol_docs()

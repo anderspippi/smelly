@@ -320,7 +320,6 @@ def get_env(opts: LaunchCLIOptions, active_child: Optional[Child] = None) -> Dic
 
 
 def tab_for_window(boss: Boss, opts: LaunchCLIOptions, target_tab: Optional[Tab] = None) -> Optional[Tab]:
-
     def create_tab(tm: Optional[TabManager] = None) -> Tab:
         if tm is None:
             oswid = boss.add_os_window(wclass=opts.os_window_class, wname=opts.os_window_name, override_title=opts.os_window_title or None)
@@ -351,6 +350,7 @@ def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:
     if not watchers:
         return None
     import runpy
+
     ans = Watchers()
     for path in watchers:
         path = resolve_custom_file(path)
@@ -360,6 +360,7 @@ def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:
                 m = runpy.run_path(path, run_name='__smelly_watcher__')
             except Exception as err:
                 import traceback
+
                 log_error(traceback.format_exc())
                 log_error(f'Failed to load watcher from {path} with error: {err}')
                 watcher_modules[path] = False
@@ -380,7 +381,6 @@ def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:
 
 
 class LaunchKwds(TypedDict):
-
     allow_remote_control: bool
     remote_control_passwords: Optional[Dict[str, Sequence[str]]]
     cwd_from: Optional[CwdRequest]
@@ -396,13 +396,13 @@ class LaunchKwds(TypedDict):
 
 def apply_colors(window: Window, spec: Sequence[str]) -> None:
     from smelly.rc.set_colors import parse_colors
+
     colors = parse_colors(spec)
-    profiles = window.screen.color_profile,
+    profiles = (window.screen.color_profile,)
     patch_color_profiles(colors, profiles, True)
 
 
 class ForceWindowLaunch:
-
     def __init__(self) -> None:
         self.force = False
 
@@ -451,6 +451,7 @@ def launch(
     remote_control_restrictions: Optional[Dict[str, Sequence[str]]] = None
     if opts.allow_remote_control and opts.remote_control_password:
         from smelly.options.utils import remote_control_password
+
         remote_control_restrictions = {}
         for rcp in opts.remote_control_password:
             for pw, rcp_items in remote_control_password(rcp, {}):
@@ -466,11 +467,12 @@ def launch(
         'marker': opts.marker or None,
         'cmd': None,
         'overlay_for': None,
-        'stdin': None
+        'stdin': None,
     }
     spacing = {}
     if opts.spacing:
         from .rc.set_spacing import parse_spacing_settings, patch_window_edges
+
         spacing = parse_spacing_settings(opts.spacing)
     if opts.cwd:
         if opts.cwd == 'current':
@@ -497,8 +499,15 @@ def launch(
     if opts.stdin_source != 'none':
         q = str(opts.stdin_source)
         if opts.stdin_add_formatting:
-            if q in ('@screen', '@screen_scrollback', '@alternate', '@alternate_scrollback',
-                     '@first_cmd_output_on_screen', '@last_cmd_output', '@last_visited_cmd_output'):
+            if q in (
+                '@screen',
+                '@screen_scrollback',
+                '@alternate',
+                '@alternate_scrollback',
+                '@first_cmd_output_on_screen',
+                '@last_cmd_output',
+                '@last_visited_cmd_output',
+            ):
                 q = f'@ansi_{q[1:]}'
         if opts.stdin_add_line_wrap_markers:
             q += '_wrap'
@@ -593,11 +602,26 @@ def launch(
 
 @run_once
 def clone_safe_opts() -> FrozenSet[str]:
-    return frozenset((
-        'window_title', 'tab_title', 'type', 'keep_focus', 'cwd', 'env', 'hold',
-        'location', 'os_window_class', 'os_window_name', 'os_window_title',
-        'logo', 'logo_position', 'logo_alpha', 'color', 'spacing',
-    ))
+    return frozenset(
+        (
+            'window_title',
+            'tab_title',
+            'type',
+            'keep_focus',
+            'cwd',
+            'env',
+            'hold',
+            'location',
+            'os_window_class',
+            'os_window_name',
+            'os_window_title',
+            'logo',
+            'logo_position',
+            'logo_alpha',
+            'color',
+            'spacing',
+        )
+    )
 
 
 def parse_opts_for_clone(args: List[str]) -> Tuple[LaunchCLIOptions, List[str]]:
@@ -623,6 +647,7 @@ def parse_null_env(text: str) -> Dict[str, str]:
 
 def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]:
     from base64 import standard_b64decode
+
     for x in msg.split(','):
         try:
             k, v = x.split('=', 1)
@@ -634,7 +659,6 @@ def parse_message(msg: str, simple: Container[str]) -> Iterator[Tuple[str, str]]
 
 
 class EditCmd:
-
     def __init__(self, msg: str) -> None:
         self.tdir = ''
         self.args: List[str] = []
@@ -655,6 +679,7 @@ class EditCmd:
                 self.args.append(v)
             elif k == 'file_data':
                 import base64
+
                 self.file_data = base64.standard_b64decode(v)
             elif k == 'version':
                 self.version = int(v)
@@ -668,6 +693,7 @@ class EditCmd:
         self.file_spec = extra_args.pop()
         self.line_number = 0
         import re
+
         pat = re.compile(r'\+(-?\d+)')
         for x in extra_args:
             m = pat.match(x)
@@ -681,6 +707,7 @@ class EditCmd:
             self.is_local_file = (st.st_dev, st.st_ino) == self.file_inode
         if not self.is_local_file:
             import tempfile
+
             self.tdir = tempfile.mkdtemp()
             self.file_localpath = os.path.join(self.tdir, self.file_name)
             with open(self.file_localpath, 'wb') as f:
@@ -735,6 +762,7 @@ class EditCmd:
         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
         if data:
             import base64
+
             mv = memoryview(base64.standard_b64encode(data))
             while mv:
                 window.write_to_child(bytes(mv[:512]))
@@ -744,7 +772,6 @@ class EditCmd:
 
 
 class CloneCmd:
-
     def __init__(self, msg: str) -> None:
         self.args: List[str] = []
         self.env: Optional[Dict[str, str]] = None
@@ -770,22 +797,54 @@ class CloneCmd:
             elif k == 'env':
                 if self.envfmt == 'bash':
                     from .bash import parse_bash_env
+
                     env = parse_bash_env(v, self.bash_version)
                 else:
                     env = parse_null_env(v)
-                self.env = {k: v for k, v in env.items() if k not in {
-                    'HOME', 'LOGNAME', 'USER', 'PWD',
-                    # some people export these. We want the shell rc files to recreate them
-                    'PS0', 'PS1', 'PS2', 'PS3', 'PS4', 'RPS1', 'PROMPT_COMMAND', 'SHLVL',
-                    # conda state env vars
-                    'CONDA_SHLVL', 'CONDA_PREFIX', 'CONDA_PROMPT_MODIFIER', 'CONDA_EXE', 'CONDA_PYTHON_EXE', '_CE_CONDA', '_CE_M',
-                    # skip SSH environment variables
-                    'SSH_CLIENT', 'SSH_CONNECTION', 'SSH_ORIGINAL_COMMAND', 'SSH_TTY', 'SSH2_TTY',
-                    'SSH_TUNNEL', 'SSH_USER_AUTH', 'SSH_AUTH_SOCK',
-                } and not k.startswith((
-                    # conda state env vars for multi-level virtual environments
-                    'CONDA_PREFIX_',
-                ))}
+                self.env = {
+                    k: v
+                    for k, v in env.items()
+                    if k
+                    not in {
+                        'HOME',
+                        'LOGNAME',
+                        'USER',
+                        'PWD',
+                        # some people export these. We want the shell rc files to
+                        # recreate them
+                        'PS0',
+                        'PS1',
+                        'PS2',
+                        'PS3',
+                        'PS4',
+                        'RPS1',
+                        'PROMPT_COMMAND',
+                        'SHLVL',
+                        # conda state env vars
+                        'CONDA_SHLVL',
+                        'CONDA_PREFIX',
+                        'CONDA_PROMPT_MODIFIER',
+                        'CONDA_EXE',
+                        'CONDA_PYTHON_EXE',
+                        '_CE_CONDA',
+                        '_CE_M',
+                        # skip SSH environment variables
+                        'SSH_CLIENT',
+                        'SSH_CONNECTION',
+                        'SSH_ORIGINAL_COMMAND',
+                        'SSH_TTY',
+                        'SSH2_TTY',
+                        'SSH_TUNNEL',
+                        'SSH_USER_AUTH',
+                        'SSH_AUTH_SOCK',
+                    }
+                    and not k.startswith(
+                        (
+                            # conda state env vars for multi-level virtual environments
+                            'CONDA_PREFIX_',
+                        )
+                    )
+                }
             elif k == 'cwd':
                 self.cwd = v
             elif k == 'history':
@@ -817,6 +876,7 @@ def remote_edit(msg: str, window: Window) -> None:
 
 def clone_and_launch(msg: str, window: Window) -> None:
     from .shell_integration import serialize_env
+
     c = CloneCmd(msg)
     if c.cwd and not c.opts.cwd:
         c.opts.cwd = c.cwd
@@ -834,21 +894,24 @@ def clone_and_launch(msg: str, window: Window) -> None:
     ssh_kitten_cmdline = window.ssh_kitten_cmdline()
     if ssh_kitten_cmdline:
         from wellies.ssh.utils import patch_cmdline, set_cwd_in_cmdline, set_env_in_cmdline
+
         cmdline = ssh_kitten_cmdline
         if c.opts.cwd:
             set_cwd_in_cmdline(c.opts.cwd, cmdline)
             c.opts.cwd = None
         if c.env:
-            set_env_in_cmdline({
-                'smelly_IS_CLONE_LAUNCH': is_clone_launch,
-            }, cmdline)
+            set_env_in_cmdline(
+                {
+                    'smelly_IS_CLONE_LAUNCH': is_clone_launch,
+                },
+                cmdline,
+            )
             c.env = None
         if c.opts.env:
             for entry in reversed(c.opts.env):
                 patch_cmdline('env', entry, cmdline)
             c.opts.env = []
     else:
-
         try:
             cmdline = window.child.cmdline_of_pid(c.pid)
         except Exception:

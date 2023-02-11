@@ -44,6 +44,7 @@ class Mouse(Handler):
 
     def on_interrupt(self) -> None:
         self.quit_loop(0)
+
     on_eot = on_interrupt
 
 

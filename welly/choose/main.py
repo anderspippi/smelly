@@ -11,7 +11,6 @@ from ..tui.loop import Loop
 
 
 class ChooseHandler(Handler):
-
     def initialize(self) -> None:
         pass
 

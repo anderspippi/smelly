@@ -7,7 +7,6 @@ from .base import ArgsType, Boss, PayloadGetType, PayloadType, RCOptions, Remote
 
 
 class Env(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     env+/dict.str: Dictionary of environment variables to values. When a env var ends with = it is removed from the environment.
     '''
@@ -35,6 +34,7 @@ class Env(RemoteCommand):
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
         from smelly.child import default_env, set_default_env
         from smelly.utils import expandvars
+
         new_env = payload_get('env') or {}
         env = default_env().copy()
         for k, v in new_env.items():

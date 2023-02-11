@@ -121,14 +121,19 @@ def put_helpers(self, cw, ch):
         s = self.create_screen(10, 5, cell_width=cw, cell_height=ch)
         return s, 2 / s.columns, 2 / s.lines
 
-    def put_cmd(
-            z=0, num_cols=0, num_lines=0, x_off=0, y_off=0, width=0,
-            height=0, cell_x_off=0, cell_y_off=0, placement_id=0,
-            cursor_movement=0
-    ):
+    def put_cmd(z=0, num_cols=0, num_lines=0, x_off=0, y_off=0, width=0, height=0, cell_x_off=0, cell_y_off=0, placement_id=0, cursor_movement=0):
         return 'z=%d,c=%d,r=%d,x=%d,y=%d,w=%d,h=%d,X=%d,Y=%d,p=%d,C=%d' % (
-            z, num_cols, num_lines, x_off, y_off, width, height, cell_x_off,
-            cell_y_off, placement_id, cursor_movement
+            z,
+            num_cols,
+            num_lines,
+            x_off,
+            y_off,
+            width,
+            height,
+            cell_x_off,
+            cell_y_off,
+            placement_id,
+            cursor_movement,
         )
 
     def put_image(screen, w, h, **kw):
@@ -163,7 +168,7 @@ def put_helpers(self, cw, ch):
 
 
 def make_send_command(screen):
-    def li(payload='abcdefghijkl'*3, s=4, v=3, f=24, a='f', i=1, **kw):
+    def li(payload='abcdefghijkl' * 3, s=4, v=3, f=24, a='f', i=1, **kw):
         if s:
             kw['s'] = s
         if v:
@@ -176,13 +181,12 @@ def make_send_command(screen):
         cmd = ','.join(f'{k}={v}' for k, v in kw.items())
         res = send_command(screen, cmd, payload)
         return parse_full_response(res)
+
     return li
 
 
 class TestGraphics(BaseTest):
-
     def test_xor_data(self):
-
         def xor(skey, data):
             ckey = cycle(bytearray(skey))
             return bytes(bytearray(k ^ d for k, d in zip(ckey, bytearray(data))))
@@ -233,7 +237,7 @@ class TestGraphics(BaseTest):
             check_data()
             self.assertRaises(KeyError, dc.get, key_as_bytes(x))
             self.assertEqual(sz, dc.size_on_disk())
-        for x in ('xy', 'C'*4, 'B'*6, 'A'*8):
+        for x in ('xy', 'C' * 4, 'B' * 6, 'A' * 8):
             add(x, x)
             self.assertTrue(dc.wait_for_write())
             self.assertEqual(sz, dc.size_on_disk())
@@ -342,13 +346,7 @@ class TestGraphics(BaseTest):
         # Test compression
         random_data = byte_block(3 * 1024)
         compressed_random_data = zlib.compress(random_data)
-        sl(
-            compressed_random_data,
-            s=24,
-            v=32,
-            o='z',
-            expecting_data=random_data
-        )
+        sl(compressed_random_data, s=24, v=32, o='z', expecting_data=random_data)
 
         # Test chunked + compressed
         b = len(compressed_random_data) // 2
@@ -364,17 +362,13 @@ class TestGraphics(BaseTest):
         self.assertTrue(os.path.exists(f.name))
         f.seek(0), f.truncate(), f.write(compressed_random_data), f.flush()
         sl(f.name, s=24, v=32, t='t', o='z', expecting_data=random_data)
-        self.assertRaises(
-            FileNotFoundError, f.close
-        )  # check that file was deleted
+        self.assertRaises(FileNotFoundError, f.close)  # check that file was deleted
 
         # Test loading from POSIX SHM
         name = '/smelly-test-shm'
         shm_write(name, random_data)
         sl(name, s=24, v=32, t='s', expecting_data=random_data)
-        self.assertRaises(
-            FileNotFoundError, shm_unlink, name
-        )  # check that file was deleted
+        self.assertRaises(FileNotFoundError, shm_unlink, name)  # check that file was deleted
         s.reset()
         self.assertEqual(g.disk_cache.total_size, 0)
 
@@ -503,7 +497,7 @@ class TestGraphics(BaseTest):
         self.ae(idstr, f'i={iid},p=17')
         l2 = layers(s)
         self.ae(len(l2), 2)
-        rect_eq(l2[0]['src_rect'], 2 / 10, 1 / 20, (2 + 3) / 10, (1 + 5)/20)
+        rect_eq(l2[0]['src_rect'], 2 / 10, 1 / 20, (2 + 3) / 10, (1 + 5) / 20)
         left, top = -1 + dx + 3 * dx / cw, 1 - 1 * dy / ch
         rect_eq(l2[0]['dest_rect'], left, top, -1 + (1 + s.columns) * dx, top - dy * 5 / ch)
         rect_eq(l2[1]['src_rect'], 0, 0, 1, 1)
@@ -544,19 +538,19 @@ class TestGraphics(BaseTest):
         for i in range(s.lines):  # ensure cursor is at top margin
             s.reverse_index()
         # Test clipped scrolling during index
-        put_image(s, cw, 2*ch, z=-1, no_id=True)  # 1x2 cell image
+        put_image(s, cw, 2 * ch, z=-1, no_id=True)  # 1x2 cell image
         self.ae(s.grman.image_count, 3)
         self.ae(layers(s)[0]['src_rect'], {'left': 0.0, 'top': 0.0, 'right': 1.0, 'bottom': 1.0})
         s.index(), s.index()
         l0 = layers(s)
         self.ae(len(l0), 3)
-        self.ae(layers(s)[0]['src_rect'],  {'left': 0.0, 'top': 0.5, 'right': 1.0, 'bottom': 1.0})
+        self.ae(layers(s)[0]['src_rect'], {'left': 0.0, 'top': 0.5, 'right': 1.0, 'bottom': 1.0})
         s.index()
         self.ae(s.grman.image_count, 2)
         # Test clipped scrolling during reverse_index
         for i in range(s.lines):
             s.reverse_index()
-        put_image(s, cw, 2*ch, z=-1, no_id=True)  # 1x2 cell image
+        put_image(s, cw, 2 * ch, z=-1, no_id=True)  # 1x2 cell image
         self.ae(s.grman.image_count, 3)
         self.ae(layers(s)[0]['src_rect'], {'left': 0.0, 'top': 0.0, 'right': 1.0, 'bottom': 1.0})
         while s.cursor.y != 1:
@@ -689,10 +683,13 @@ class TestGraphics(BaseTest):
         # test loading from previous frame
         t(payload='4' * 12, c=2, s=2, v=2, z=101, frame_number=3)
         img = g.image_for_client_id(1)
-        self.assertEqual(img['extra_frames'], (
-            {'gap': 77, 'id': 2, 'data': b'3' * 36},
-            {'gap': 101, 'id': 3, 'data': b'444444333333444444333333333333333333'},
-        ))
+        self.assertEqual(
+            img['extra_frames'],
+            (
+                {'gap': 77, 'id': 2, 'data': b'3' * 36},
+                {'gap': 101, 'id': 3, 'data': b'444444333333444444333333333333333333'},
+            ),
+        )
         # test changing gaps
         img = g.image_for_client_id(1)
         self.assertEqual(img['root_frame_gap'], 0)
@@ -712,20 +709,26 @@ class TestGraphics(BaseTest):
         # test delete of frames
         t(payload='5' * 36, frame_number=4)
         img = g.image_for_client_id(1)
-        self.assertEqual(img['extra_frames'], (
-            {'gap': 43, 'id': 2, 'data': b'3' * 36},
-            {'gap': 101, 'id': 3, 'data': b'444444333333444444333333333333333333'},
-            {'gap': 40, 'id': 4, 'data': b'5' * 36},
-        ))
+        self.assertEqual(
+            img['extra_frames'],
+            (
+                {'gap': 43, 'id': 2, 'data': b'3' * 36},
+                {'gap': 101, 'id': 3, 'data': b'444444333333444444333333333333333333'},
+                {'gap': 40, 'id': 4, 'data': b'5' * 36},
+            ),
+        )
         self.assertEqual(img['current_frame_index'], 1)
         self.assertIsNone(li(a='d', d='f', i=1, r=1))
         img = g.image_for_client_id(1)
         self.assertEqual(img['current_frame_index'], 0)
         self.assertEqual(img['data'], b'3' * 36)
-        self.assertEqual(img['extra_frames'], (
-            {'gap': 101, 'id': 3, 'data': b'444444333333444444333333333333333333'},
-            {'gap': 40, 'id': 4, 'data': b'5' * 36},
-        ))
+        self.assertEqual(
+            img['extra_frames'],
+            (
+                {'gap': 101, 'id': 3, 'data': b'444444333333444444333333333333333333'},
+                {'gap': 40, 'id': 4, 'data': b'5' * 36},
+            ),
+        )
         self.assertIsNone(li(a='a', i=1, c=3))
         img = g.image_for_client_id(1)
         self.assertEqual(img['current_frame_index'], 2)
@@ -733,9 +736,7 @@ class TestGraphics(BaseTest):
         img = g.image_for_client_id(1)
         self.assertEqual(img['current_frame_index'], 1)
         self.assertEqual(img['data'], b'3' * 36)
-        self.assertEqual(img['extra_frames'], (
-            {'gap': 40, 'id': 4, 'data': b'5' * 36},
-        ))
+        self.assertEqual(img['extra_frames'], ({'gap': 40, 'id': 4, 'data': b'5' * 36},))
         self.assertIsNone(li(a='d', d='f', i=1))
         img = g.image_for_client_id(1)
         self.assertEqual(img['current_frame_index'], 0)
@@ -754,28 +755,37 @@ class TestGraphics(BaseTest):
         t(payload='2' * 36)
         t(payload='3' * 36, frame_number=3)
         img = g.image_for_client_id(1)
-        self.assertEqual(img['extra_frames'], (
-            {'gap': 40, 'id': 2, 'data': b'2' * 36},
-            {'gap': 40, 'id': 3, 'data': b'3' * 36},
-        ))
+        self.assertEqual(
+            img['extra_frames'],
+            (
+                {'gap': 40, 'id': 2, 'data': b'2' * 36},
+                {'gap': 40, 'id': 3, 'data': b'3' * 36},
+            ),
+        )
         self.assertEqual(li(a='c', i=11).code, 'ENOENT')
         self.assertEqual(li(a='c', i=1, r=1, c=2).code, 'OK')
         img = g.image_for_client_id(1)
-        self.assertEqual(img['extra_frames'], (
-            {'gap': 40, 'id': 2, 'data': b'abcdefghijkl'*3},
-            {'gap': 40, 'id': 3, 'data': b'3' * 36},
-        ))
+        self.assertEqual(
+            img['extra_frames'],
+            (
+                {'gap': 40, 'id': 2, 'data': b'abcdefghijkl' * 3},
+                {'gap': 40, 'id': 3, 'data': b'3' * 36},
+            ),
+        )
         self.assertEqual(li(a='c', i=1, r=2, c=3, w=1, h=2, x=1, y=1).code, 'OK')
         img = g.image_for_client_id(1)
-        self.assertEqual(img['extra_frames'], (
-            {'gap': 40, 'id': 2, 'data': b'abcdefghijkl'*3},
-            {'gap': 40, 'id': 3, 'data': b'3' * 12 + (b'333abc' + b'3' * 6) * 2},
-        ))
+        self.assertEqual(
+            img['extra_frames'],
+            (
+                {'gap': 40, 'id': 2, 'data': b'abcdefghijkl' * 3},
+                {'gap': 40, 'id': 3, 'data': b'3' * 12 + (b'333abc' + b'3' * 6) * 2},
+            ),
+        )
 
     def test_graphics_quota_enforcement(self):
         s = self.create_screen()
         g = s.grman
-        g.storage_limit = 36*2
+        g.storage_limit = 36 * 2
         li = make_send_command(s)
         # test quota for simple images
         self.assertEqual(li(a='T').code, 'OK')

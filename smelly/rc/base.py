@@ -15,6 +15,7 @@ if TYPE_CHECKING:
     from smelly.boss import Boss as B
     from smelly.tabs import Tab
     from smelly.window import Window as W
+
     Window = W
     Boss = B
     Tab
@@ -30,11 +31,20 @@ class NoResponse:
 class NamedTemporaryFile:
     name: str = ''
 
-    def __enter__(self) -> None: ...
-    def __exit__(self, exc: Any, value: Any, tb: Any) -> None: ...
-    def close(self) -> None: ...
-    def write(self, data: bytes) -> None: ...
-    def flush(self) -> None: ...
+    def __enter__(self) -> None:
+        ...
+
+    def __exit__(self, exc: Any, value: Any, tb: Any) -> None:
+        ...
+
+    def close(self) -> None:
+        ...
+
+    def write(self, data: bytes) -> None:
+        ...
+
+    def flush(self) -> None:
+        ...
 
 
 class RemoteControlError(Exception):
@@ -42,7 +52,6 @@ class RemoteControlError(Exception):
 
 
 class MatchError(ValueError):
-
     hide_traceback = True
 
     def __init__(self, expression: str, target: str = 'windows'):
@@ -50,22 +59,18 @@ class MatchError(ValueError):
 
 
 class OpacityError(ValueError):
-
     hide_traceback = True
 
 
 class UnknownLayout(ValueError):
-
     hide_traceback = True
 
 
 class StreamError(ValueError):
-
     hide_traceback = True
 
 
 class PayloadGetter:
-
     def __init__(self, cmd: 'RemoteCommand', payload: Dict[str, Any]):
         self.payload = payload
         self.cmd = cmd
@@ -169,7 +174,6 @@ class ParsingOfArgsFailed(ValueError):
 
 
 class AsyncResponder:
-
     def __init__(self, payload_get: PayloadGetType, window: Optional[Window]) -> None:
         self.async_id: str = payload_get('async_id', missing='')
         self.peer_id: int = payload_get('peer_id', missing=0)
@@ -177,16 +181,17 @@ class AsyncResponder:
 
     def send_data(self, data: Any) -> None:
         from smelly.remote_control import send_response_to_client
+
         send_response_to_client(data=data, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
 
     def send_error(self, error: str) -> None:
         from smelly.remote_control import send_response_to_client
+
         send_response_to_client(error=error, peer_id=self.peer_id, window_id=self.window_id, async_id=self.async_id)
 
 
 @dataclass(frozen=True)
 class ArgsHandling:
-
     json_field: str = ''
     count: Optional[int] = None
     spec: str = ''
@@ -276,13 +281,13 @@ class ArgsHandling:
 
 
 class StreamInFlight:
-
     def __init__(self) -> None:
         self.stream_id = ''
         self.tempfile: Optional[NamedTemporaryFile] = None
 
     def handle_data(self, stream_id: str, data: bytes) -> Union[AsyncResponse, NamedTemporaryFile]:
         from ..remote_control import close_active_stream
+
         if stream_id != self.stream_id:
             close_active_stream(self.stream_id)
             if self.tempfile is not None:
@@ -313,7 +318,7 @@ class RemoteCommand:
     desc: str = ''
     args: ArgsHandling = ArgsHandling()
     options_spec: Optional[str] = None
-    response_timeout: float = 10.  # seconds
+    response_timeout: float = 10.0  # seconds
     string_return_is_error: bool = False
     defaults: Optional[Dict[str, Any]] = None
     is_asynchronous: bool = False
@@ -431,6 +436,7 @@ def display_subcommand_help(func: RemoteCommand) -> None:
 
 def command_for_name(cmd_name: str) -> RemoteCommand:
     from importlib import import_module
+
     cmd_name = cmd_name.replace('-', '_')
     try:
         m = import_module(f'smelly.rc.{cmd_name}')
@@ -440,7 +446,6 @@ def command_for_name(cmd_name: str) -> RemoteCommand:
 
 
 def all_command_names() -> FrozenSet[str]:
-
     def ok(name: str) -> bool:
         root, _, ext = name.rpartition('.')
         return bool(ext in ('py', 'pyc', 'pyo') and root and root not in ('base', '__init__'))

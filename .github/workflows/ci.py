@@ -34,15 +34,18 @@ def install_deps():
         openssl = 'openssl'
         items.remove('go')  # already installed by ci.yml
         import ssl
+
         if ssl.OPENSSL_VERSION_INFO[0] == 1:
             openssl += '@1.1'
         run('brew', 'install', 'fish', openssl, *items)
     else:
         run('sudo apt-get update')
-        run('sudo apt-get install -y libgl1-mesa-dev libxi-dev libxrandr-dev libxinerama-dev ca-certificates'
+        run(
+            'sudo apt-get install -y libgl1-mesa-dev libxi-dev libxrandr-dev libxinerama-dev ca-certificates'
             ' libxcursor-dev libxcb-xkb-dev libdbus-1-dev libxkbcommon-dev libharfbuzz-dev libx11-xcb-dev zsh'
             ' libpng-dev liblcms2-dev libfontconfig-dev libxkbcommon-x11-dev libcanberra-dev librsync-dev uuid-dev'
-            ' zsh bash dash')
+            ' zsh bash dash'
+        )
         # for some reason these directories are world writable which causes zsh
         # compinit to break
         run('sudo chmod -R og-w /usr/share/zsh')
@@ -98,8 +101,7 @@ def install_bundle():
     cwd = os.getcwd()
     os.makedirs(SW)
     os.chdir(SW)
-    with urlopen('https://download.calibre-ebook.com/ci/smelly/{}-64.tar.xz'.format(
-            'macos' if is_macos else 'linux')) as f:
+    with urlopen('https://download.calibre-ebook.com/ci/smelly/{}-64.tar.xz'.format('macos' if is_macos else 'linux')) as f:
         data = f.read()
     with tarfile.open(fileobj=io.BytesIO(data), mode='r:xz') as tf:
         tf.extractall()

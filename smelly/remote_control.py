@@ -75,13 +75,13 @@ def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str
         if abs(delta) > 5 * 60 * 1e9:
             log_error(
                 f'Ignoring encrypted rc command with timestamp {delta / 1e9:.1f} seconds from now.'
-                ' Could be an attempt at a replay attack or an incorrect clock on a remote machine.')
+                ' Could be an attempt at a replay attack or an incorrect clock on a remote machine.'
+            )
             return {}
     return pcmd
 
 
 class CMDChecker:
-
     def __call__(self, pcmd: Dict[str, Any], window: Optional['Window'], from_socket: bool, extra_data: Dict[str, Any]) -> Optional[bool]:
         return False
 
@@ -89,6 +89,7 @@ class CMDChecker:
 @lru_cache(maxsize=64)
 def is_cmd_allowed_loader(path: str) -> CMDChecker:
     import runpy
+
     try:
         m = runpy.run_path(path)
         func: CMDChecker = m['is_cmd_allowed']
@@ -101,11 +102,11 @@ def is_cmd_allowed_loader(path: str) -> CMDChecker:
 @lru_cache(maxsize=1024)
 def fnmatch_pattern(pat: str) -> 're.Pattern[str]':
     from fnmatch import translate
+
     return re.compile(translate(pat))
 
 
 class PasswordAuthorizer:
-
     def __init__(self, auth_items: FrozenSet[str]) -> None:
         self.command_patterns = []
         self.function_checkers = []
@@ -131,6 +132,7 @@ class PasswordAuthorizer:
                 ret = f(pcmd, window, from_socket, extra_data)
             except Exception as e:
                 import traceback
+
                 traceback.print_exc()
                 log_error(f'There was an error using a custom RC auth function, blocking the remote command. Error: {e}')
                 ret = False
@@ -236,7 +238,8 @@ def handle_cmd(
     return None
 
 
-global_options_spec = partial('''\
+global_options_spec = partial(
+    '''\
 --to
 An address for the smelly instance to control. Corresponds to the address given
 to the smelly instance via the :option:`smelly --listen-on` option or the
@@ -274,7 +277,9 @@ choices=if-available,never,always
 If no password is available, smelly will usually just send the remote control command
 without a password. This option can be used to force it to :code:`always` or :code:`never` use
 the supplied password.
-'''.format, appname=appname)
+'''.format,
+    appname=appname,
+)
 
 
 def encode_send(send: Any) -> bytes:
@@ -287,24 +292,27 @@ class SocketClosed(EOFError):
 
 
 class SocketIO:
-
     def __init__(self, to: str):
         self.family, self.address = parse_address_spec(to)[:2]
 
     def __enter__(self) -> None:
         import socket
+
         self.socket = socket.socket(self.family)
         self.socket.setblocking(True)
         self.socket.connect(self.address)
 
     def __exit__(self, *a: Any) -> None:
         import socket
-        with suppress(OSError):  # on some OSes such as macOS the socket is already closed at this point
+
+        # on some OSes such as macOS the socket is already closed at this point
+        with suppress(OSError):
             self.socket.shutdown(socket.SHUT_RDWR)
         self.socket.close()
 
     def send(self, data: Union[bytes, Iterable[Union[str, bytes]]]) -> None:
         import socket
+
         with self.socket.makefile('wb') as out:
             if isinstance(data, bytes):
                 out.write(data)
@@ -331,25 +339,24 @@ class SocketIO:
 
 
 class RCIO(TTYIO):
-
     def simple_recv(self, timeout: float) -> bytes:
         ans: List[bytes] = []
         read_command_response(self.tty_fd, timeout, ans)
         return b''.join(ans)
 
 
-def do_io(
-    to: Optional[str], original_cmd: Dict[str, Any], no_response: bool, response_timeout: float, encrypter: 'CommandEncrypter'
-) -> Dict[str, Any]:
+def do_io(to: Optional[str], original_cmd: Dict[str, Any], no_response: bool, response_timeout: float, encrypter: 'CommandEncrypter') -> Dict[str, Any]:
     payload = original_cmd.get('payload')
     if not isinstance(payload, GeneratorType):
         send_data: Union[bytes, Iterator[bytes]] = encode_send(encrypter(original_cmd))
     else:
+
         def send_generator() -> Iterator[bytes]:
             assert payload is not None
             for chunk in payload:
                 original_cmd['payload'] = chunk
                 yield encode_send(encrypter(original_cmd))
+
         send_data = send_generator()
 
     io: Union[SocketIO, RCIO] = SocketIO(to) if to else RCIO()
@@ -363,19 +370,16 @@ def do_io(
 
 
 cli_msg = (
-    'Control {appname} by sending it commands. Set the'
-    ' :opt:`allow_remote_control` option in :file:`smelly.conf` or use a password, for this'
-    ' to work.'
+    'Control {appname} by sending it commands. Set the' ' :opt:`allow_remote_control` option in :file:`smelly.conf` or use a password, for this' ' to work.'
 ).format(appname=appname)
 
 
 def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:
     cmap = {name: command_for_name(name) for name in sorted(all_command_names())}
     cmds = (f'  :green:`{cmd.name}`\n    {cmd.short_desc}' for c, cmd in cmap.items())
-    msg = cli_msg + (
-            '\n\n:title:`Commands`:\n{cmds}\n\n'
-            'You can get help for each individual command by using:\n'
-            '{appname} @ :italic:`command` -h').format(appname=appname, cmds='\n'.join(cmds))
+    msg = cli_msg + ('\n\n:title:`Commands`:\n{cmds}\n\n' 'You can get help for each individual command by using:\n' '{appname} @ :italic:`command` -h').format(
+        appname=appname, cmds='\n'.join(cmds)
+    )
     return parse_args(args[1:], global_options_spec, 'command ...', msg, f'{appname} @', result_class=RCOptions)
 
 
@@ -384,7 +388,6 @@ def encode_as_base85(data: bytes) -> str:
 
 
 class CommandEncrypter:
-
     encrypts: bool = True
 
     def __init__(self, pubkey: bytes, encryption_version: str, password: str) -> None:
@@ -401,8 +404,11 @@ class CommandEncrypter:
         raw = json.dumps(cmd).encode('utf-8')
         encrypted = encrypter.add_data_to_be_encrypted(raw, True)
         ans = {
-            'version': version, 'iv': encode_as_base85(encrypter.iv), 'tag': encode_as_base85(encrypter.tag),
-            'pubkey': encode_as_base85(self.pubkey), 'encrypted': encode_as_base85(encrypted),
+            'version': version,
+            'iv': encode_as_base85(encrypter.iv),
+            'tag': encode_as_base85(encrypter.tag),
+            'pubkey': encode_as_base85(self.pubkey),
+            'encrypted': encode_as_base85(encrypted),
         }
         if self.encryption_version != '1':
             ans['enc_proto'] = self.encryption_version
@@ -413,10 +419,10 @@ class CommandEncrypter:
 
 
 class NoEncryption(CommandEncrypter):
-
     encrypts: bool = False
 
-    def __init__(self) -> None: ...
+    def __init__(self) -> None:
+        ...
 
     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:
         return cmd
@@ -431,6 +437,7 @@ def create_basic_command(name: str, payload: Any = None, no_response: bool = Fal
         ans['payload'] = payload
     if is_asynchronous:
         from smelly.short_uuid import uuid4
+
         ans['async'] = uuid4()
     return ans
 
@@ -460,6 +467,7 @@ def get_password(opts: RCOptions) -> str:
         if opts.password_file == '-':
             if sys.stdin.isatty():
                 from getpass import getpass
+
                 ans = getpass()
             else:
                 ans = sys.stdin.read().rstrip()
@@ -493,4 +501,5 @@ def get_pubkey() -> Tuple[str, bytes]:
     if version != RC_ENCRYPTION_PROTOCOL_VERSION:
         raise SystemExit('smelly_PUBLIC_KEY has unknown version, if you are running on a remote system, update smelly on this system')
     from base64 import b85decode
+
     return version, b85decode(pubkey)

@@ -73,12 +73,15 @@ def serialize_env(literal_env: Dict[str, str], env: Dict[str, str], base_env: Di
     literal_quote = True
 
     if for_python:
+
         def a(k: str, val: str = '', prefix: str = 'export') -> None:
             if val:
                 lines.append(f'{prefix} {json.dumps((k, val, literal_quote))}')
             else:
                 lines.append(f'{prefix} {json.dumps((k,))}')
+
     else:
+
         def a(k: str, val: str = '', prefix: str = 'export') -> None:
             if val:
                 lines.append(f'{prefix} {shlex.quote(k)}={quote_env_val(val, literal_quote)}')
@@ -103,7 +106,6 @@ def serialize_env(literal_env: Dict[str, str], env: Dict[str, str], base_env: Di
 
 
 def make_tarfile(ssh_opts: SSHOptions, base_env: Dict[str, str], compression: str = 'gz', literal_env: Dict[str, str] = {}) -> bytes:
-
     def normalize_tarinfo(tarinfo: tarfile.TarInfo) -> tarfile.TarInfo:
         tarinfo.uname = tarinfo.gname = ''
         tarinfo.uid = tarinfo.gid = 0
@@ -133,14 +135,17 @@ def make_tarfile(ssh_opts: SSHOptions, base_env: Dict[str, str], compression: st
                 if fnmatch.fnmatch(tarinfo.name, pat):
                     return None
             return normalize_tarinfo(tarinfo)
+
         return filter
 
     from smelly.shell_integration import get_effective_ksi_env_var
+
     if ssh_opts.shell_integration == 'inherited':
         ksi = get_effective_ksi_env_var(smelly_opts())
     else:
         from smelly.options.types import Options
         from smelly.options.utils import shell_integration
+
         ksi = get_effective_ksi_env_var(Options({'shell_integration': shell_integration(ssh_opts.shell_integration)}))
 
     env = {
@@ -174,10 +179,14 @@ def make_tarfile(ssh_opts: SSHOptions, base_env: Dict[str, str], compression: st
             tf.add(f'{shell_integration_dir}/ssh/bootstrap-utils.sh', arcname='bootstrap-utils.sh', filter=normalize_tarinfo)
         if ksi:
             arcname = 'home/' + rd + '/shell-integration'
-            tf.add(shell_integration_dir, arcname=arcname, filter=filter_from_globs(
-                f'{arcname}/ssh/*',          # bootstrap files are sent as command line args
-                f'{arcname}/zsh/smelly.zsh',  # present for legacy compat not needed by ssh kitten
-            ))
+            tf.add(
+                shell_integration_dir,
+                arcname=arcname,
+                filter=filter_from_globs(
+                    f'{arcname}/ssh/*',  # bootstrap files are sent as command line args
+                    f'{arcname}/zsh/smelly.zsh',  # present for legacy compat not needed by ssh kitten
+                ),
+            )
         if ssh_opts.remote_smelly != 'no':
             arcname = 'home/' + rd + '/smelly'
             add_data_as_file(tf, arcname + '/version', str_version.encode('ascii'))
@@ -263,9 +272,16 @@ def prepare_export_home_cmd(ssh_opts: SSHOptions, is_python: bool) -> str:
 
 
 def bootstrap_script(
-    ssh_opts: SSHOptions, script_type: str = 'sh', remote_args: Sequence[str] = (),
-    test_script: str = '', request_id: Optional[str] = None, cli_hostname: str = '', cli_uname: str = '',
-    request_data: bool = False, echo_on: bool = True, literal_env: Dict[str, str] = {}
+    ssh_opts: SSHOptions,
+    script_type: str = 'sh',
+    remote_args: Sequence[str] = (),
+    test_script: str = '',
+    request_id: Optional[str] = None,
+    cli_hostname: str = '',
+    cli_uname: str = '',
+    request_data: bool = False,
+    echo_on: bool = True,
+    literal_env: Dict[str, str] = {},
 ) -> Tuple[str, Dict[str, str], str]:
     if request_id is None:
         request_id = os.environ['smelly_PID'] + '-' + os.environ['smelly_WINDOW_ID']
@@ -281,8 +297,10 @@ def bootstrap_script(
     sensitive_data = {'REQUEST_ID': request_id, 'DATA_PASSWORD': pw, 'PASSWORD_FILENAME': shm_name}
     replacements = {
         'EXPORT_HOME_CMD': export_home_cmd,
-        'EXEC_CMD': exec_cmd, 'TEST_SCRIPT': test_script,
-        'REQUEST_DATA': '1' if request_data else '0', 'ECHO_ON': '1' if echo_on else '0',
+        'EXEC_CMD': exec_cmd,
+        'TEST_SCRIPT': test_script,
+        'REQUEST_DATA': '1' if request_data else '0',
+        'ECHO_ON': '1' if echo_on else '0',
     }
     sd = replacements.copy()
     if request_data:
@@ -358,6 +376,7 @@ def get_connection_data(args: List[str], cwd: str = '', extra_args: Tuple[str, .
         return None
     if host_name.startswith('ssh://'):
         from urllib.parse import urlparse
+
         purl = urlparse(host_name)
         if purl.hostname:
             host_name = purl.hostname
@@ -375,7 +394,6 @@ def get_connection_data(args: List[str], cwd: str = '', extra_args: Tuple[str, .
 
 
 class InvalidSSHArgs(ValueError):
-
     def __init__(self, msg: str = ''):
         super().__init__(msg)
         self.err_msg = msg
@@ -424,7 +442,7 @@ def parse_ssh_args(args: List[str], extra_args: Tuple[str, ...] = ()) -> Tuple[L
                     continue
                 if arg in other_ssh_args:
                     ssh_args.append(arg)
-                    rest = all_args[i+1:]
+                    rest = all_args[i + 1 :]
                     if rest:
                         ssh_args.append(rest)
                     else:
@@ -472,15 +490,27 @@ def wrap_bootstrap_script(sh_script: str, interpreter: str) -> List[str]:
 
 
 def get_remote_command(
-    remote_args: List[str], ssh_opts: SSHOptions, cli_hostname: str = '', cli_uname: str = '',
-    echo_on: bool = True, request_data: bool = False, literal_env: Dict[str, str] = {}
+    remote_args: List[str],
+    ssh_opts: SSHOptions,
+    cli_hostname: str = '',
+    cli_uname: str = '',
+    echo_on: bool = True,
+    request_data: bool = False,
+    literal_env: Dict[str, str] = {},
 ) -> Tuple[List[str], Dict[str, str], str]:
     interpreter = ssh_opts.interpreter
     q = os.path.basename(interpreter).lower()
     is_python = 'python' in q
     sh_script, replacements, shm_name = bootstrap_script(
-        ssh_opts, script_type='py' if is_python else 'sh', remote_args=remote_args, literal_env=literal_env,
-        cli_hostname=cli_hostname, cli_uname=cli_uname, echo_on=echo_on, request_data=request_data)
+        ssh_opts,
+        script_type='py' if is_python else 'sh',
+        remote_args=remote_args,
+        literal_env=literal_env,
+        cli_hostname=cli_hostname,
+        cli_uname=cli_uname,
+        echo_on=echo_on,
+        request_data=request_data,
+    )
     return wrap_bootstrap_script(sh_script, interpreter), replacements, shm_name
 
 
@@ -509,12 +539,18 @@ def connection_sharing_args(smelly_pid: int) -> List[str]:
 
     cp = os.path.join(rd, ssh_control_master_template.format(smelly_pid=smelly_pid, ssh_placeholder='%C'))
     ans: List[str] = [
-        '-o', 'ControlMaster=auto',
-        '-o', f'ControlPath={cp}',
-        '-o', 'ControlPersist=yes',
-        '-o', 'ServerAliveInterval=60',
-        '-o', 'ServerAliveCountMax=5',
-        '-o', 'TCPKeepAlive=no',
+        '-o',
+        'ControlMaster=auto',
+        '-o',
+        f'ControlPath={cp}',
+        '-o',
+        'ControlPersist=yes',
+        '-o',
+        'ServerAliveInterval=60',
+        '-o',
+        'ServerAliveCountMax=5',
+        '-o',
+        'TCPKeepAlive=no',
     ]
     return ans
 
@@ -570,6 +606,7 @@ def drain_potential_tty_garbage(p: 'subprocess.Popen[bytes]', data_request: str)
             # discard queued input data on tty in case data transmission was
             # interrupted due to SSH failure, avoids spewing garbage to screen
             from uuid import uuid4
+
             canary = uuid4().hex.encode('ascii')
             turn_off_echo(tty.fileno())
             tty.write(dcs_to_smelly(canary + b'\n\r', type='echo'))
@@ -593,6 +630,7 @@ def change_colors(color_scheme: str) -> bool:
         return False
     from wellies.themes.collection import NoCacheFound, load_themes, text_as_opts
     from wellies.themes.main import colors_as_escape_codes
+
     if color_scheme.endswith('.conf'):
         conf_file = resolve_abs_or_config_path(color_scheme)
         try:
@@ -635,6 +673,7 @@ def run_ssh(ssh_args: List[str], server_args: List[str], found_extra_args: Tuple
     uname = getuser()
     if hostname.startswith('ssh://'):
         from urllib.parse import urlparse
+
         purl = urlparse(hostname)
         hostname_for_match = purl.hostname or hostname[6:].split('/', 1)[0]
         uname = purl.username or uname
@@ -678,7 +717,8 @@ def run_ssh(ssh_args: List[str], server_args: List[str], found_extra_args: Tuple
             need_to_request_data = False
     with restore_terminal_state() as echo_on:
         rcmd, replacements, shm_name = get_remote_command(
-            remote_args, host_opts, hostname_for_match, uname, echo_on, request_data=need_to_request_data, literal_env=literal_env)
+            remote_args, host_opts, hostname_for_match, uname, echo_on, request_data=need_to_request_data, literal_env=literal_env
+        )
         cmd += rcmd
         colors_changed = change_colors(host_opts.color_scheme)
         try:
@@ -725,4 +765,5 @@ elif __name__ == '__wrapper_of__':
     cd['wrapper_of'] = 'ssh'
 elif __name__ == '__conf__':
     from .options.definition import definition
+
     sys.options_definition = definition  # type: ignore

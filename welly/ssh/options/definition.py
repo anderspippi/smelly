@@ -22,7 +22,11 @@ opt = definition.add_option
 
 agr('bootstrap', 'Host bootstrap configuration')  # {{{
 
-opt('hostname', '*', option_type='hostname', long_text='''
+opt(
+    'hostname',
+    '*',
+    option_type='hostname',
+    long_text='''
 The hostname that the following options apply to. A glob pattern to match
 multiple hosts can be used. Multiple hostnames can also be specified, separated
 by spaces. The hostname can include an optional username in the form
@@ -31,20 +35,34 @@ first hostname specification is found. Note that matching of hostname is done
 against the name you specify on the command line to connect to the remote host.
 If you wish to include the same basic configuration for many different hosts,
 you can do so with the :ref:`include <include>` directive.
-''')
+''',
+)
 
-opt('interpreter', 'sh', long_text='''
+opt(
+    'interpreter',
+    'sh',
+    long_text='''
 The interpreter to use on the remote host. Must be either a POSIX complaint
 shell or a :program:`python` executable. If the default :program:`sh` is not
 available or broken, using an alternate interpreter can be useful.
-''')
+''',
+)
 
-opt('remote_dir', '.local/share/smelly-ssh-kitten', long_text='''
+opt(
+    'remote_dir',
+    '.local/share/smelly-ssh-kitten',
+    long_text='''
 The location on the remote host where the files needed for this kitten are
 installed. Relative paths are resolved with respect to :code:`$HOME`.
-''')
+''',
+)
 
-opt('+copy', '', option_type='copy', add_to_default=False, long_text=f'''
+opt(
+    '+copy',
+    '',
+    option_type='copy',
+    add_to_default=False,
+    long_text=f'''
 {copy_message} For example::
 
     copy .vimrc .zshrc .config/some-dir
@@ -63,24 +81,38 @@ Files can be excluded when copying with :code:`--exclude`::
 
 Files whose remote name matches the exclude pattern will not be copied.
 For more details, see :ref:`ssh_copy_command`.
-''')
+''',
+)
 egr()  # }}}
 
 agr('shell', 'Login shell environment')  # {{{
 
-opt('shell_integration', 'inherited', long_text='''
+opt(
+    'shell_integration',
+    'inherited',
+    long_text='''
 Control the shell integration on the remote host. See :ref:`shell_integration`
 for details on how this setting works. The special value :code:`inherited` means
 use the setting from :file:`smelly.conf`. This setting is useful for overriding
 integration on a per-host basis.
-''')
+''',
+)
 
-opt('login_shell', '', long_text='''
+opt(
+    'login_shell',
+    '',
+    long_text='''
 The login shell to execute on the remote host. By default, the remote user
 account's login shell is used.
-''')
+''',
+)
 
-opt('+env', '', option_type='env', add_to_default=False, long_text='''
+opt(
+    '+env',
+    '',
+    option_type='env',
+    add_to_default=False,
+    long_text='''
 Specify the environment variables to be set on the remote host. Using the
 name with an equal sign (e.g. :code:`env VAR=`) will set it to the empty string.
 Specifying only the name (e.g. :code:`env VAR`) will remove the variable from
@@ -93,24 +125,37 @@ are expanded recursively, for example::
     env VAR2=${HOME}/${VAR1}/b
 
 The value of :code:`VAR2` will be :code:`<path to home directory>/a/b`.
-''')
+''',
+)
 
-opt('cwd', '', long_text='''
+opt(
+    'cwd',
+    '',
+    long_text='''
 The working directory on the remote host to change to. Environment variables in
 this value are expanded. The default is empty so no changing is done, which
 usually means the HOME directory is used.
-''')
+''',
+)
 
-opt('color_scheme', '', long_text='''
+opt(
+    'color_scheme',
+    '',
+    long_text='''
 Specify a color scheme to use when connecting to the remote host. If this option
 ends with :code:`.conf`, it is assumed to be the name of a config file to load
 from the smelly config directory, otherwise it is assumed to be the name of a
 color theme to load via the :doc:`themes kitten </wellies/themes>`. Note that
 only colors applying to the text/background are changed, other config settings
 in the .conf files/themes are ignored.
-''')
+''',
+)
 
-opt('remote_smelly', 'if-needed', choices=('if-needed', 'no', 'yes'), long_text='''
+opt(
+    'remote_smelly',
+    'if-needed',
+    choices=('if-needed', 'no', 'yes'),
+    long_text='''
 Make :program:`smelly` available on the remote host. Useful to run wellies such
 as the :doc:`icat kitten </wellies/icat>` to display images or the
 :doc:`transfer file kitten </wellies/transfer>` to transfer files. Only works if
@@ -124,21 +169,31 @@ is installed even if already present, and the installed smelly takes precedence.
 Finally, :code:`no` means no smelly is installed on the remote host. The
 installed smelly can be updated by running: :code:`smelly +update-smelly` on the
 remote host.
-''')
+''',
+)
 egr()  # }}}
 
 agr('ssh', 'SSH configuration')  # {{{
 
-opt('share_connections', 'yes', option_type='to_bool', long_text='''
+opt(
+    'share_connections',
+    'yes',
+    option_type='to_bool',
+    long_text='''
 Within a single smelly instance, all connections to a particular server can be
 shared. This reduces startup latency for subsequent connections and means that
 you have to enter the password only once. Under the hood, it uses SSH
 ControlMasters and these are automatically cleaned up by smelly when it quits.
 You can map a shortcut to :ac:`close_shared_ssh_connections` to disconnect all
 active shared connections.
-''')
+''',
+)
 
-opt('askpass', 'unless-set', choices=('unless-set', 'ssh', 'native'), long_text='''
+opt(
+    'askpass',
+    'unless-set',
+    choices=('unless-set', 'ssh', 'native'),
+    long_text='''
 Control the program SSH uses to ask for passwords or confirmation of host keys
 etc. The default is to use smelly's native :program:`askpass`, unless the
 :envvar:`SSH_ASKPASS` environment variable is set. Set this option to
@@ -149,5 +204,6 @@ using the smelly askpass implementation means that SSH might need to use the
 terminal before the connection is established, so the kitten cannot use the
 terminal to send data without an extra roundtrip, adding to initial connection
 latency.
-''')
+''',
+)
 egr()  # }}}

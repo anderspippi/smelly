@@ -19,13 +19,16 @@ class FocusWindow(RemoteCommand):
 
     short_desc = 'Focus the specified window'
     desc = 'Focus the specified window, if no window is specified, focus the window this command is run inside.'
-    options_spec = MATCH_WINDOW_OPTION + '''\n\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n\n
 --no-response
 type=bool-set
 default=false
 Don't wait for a response from smelly. This means that even if no matching window is found,
 the command will exit with a success code.
 '''
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         return {'match': opts.match}

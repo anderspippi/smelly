@@ -12,7 +12,6 @@ if TYPE_CHECKING:
 
 
 class StreamingJob:
-
     expected_input_size = IO_BUFFER_SIZE
 
     def __init__(self, job: 'JobCapsule', output_buf_size: int = IO_BUFFER_SIZE):
@@ -75,7 +74,6 @@ def signature_of_file(path: str) -> Iterator[memoryview]:
 
 
 class LoadSignature(StreamingJob):
-
     # see whole.c in librsync source for size calculations
     expected_input_size = 16 * 1024
     autocommit = True
@@ -102,7 +100,6 @@ def delta_for_file(path: str, sig: 'SignatureCapsule') -> Iterator[memoryview]:
 
 
 class PatchFile(StreamingJob):
-
     # see whole.c in librsync source for size calculations
     expected_input_size = IO_BUFFER_SIZE
 
@@ -150,6 +147,7 @@ class PatchFile(StreamingJob):
 
 def develop() -> None:
     import sys
+
     src = sys.argv[-1]
     sig_loader = LoadSignature()
     with open(f'{src}.sig', 'wb') as f:

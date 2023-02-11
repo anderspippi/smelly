@@ -65,6 +65,6 @@ def init_config(args: DiffCLIOptions) -> DiffOptions:
     overrides = (a.replace('=', ' ', 1) for a in args.override or ())
     opts = load_config(*config, overrides=overrides)
     set_formats(opts)
-    for (sc, action) in opts.map:
+    for sc, action in opts.map:
         opts.key_definitions[sc] = action
     return opts

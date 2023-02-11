@@ -46,6 +46,7 @@ def hostname(val: str, dict_with_parse_results: Optional[Dict[str, Any]] = None)
         ch = dict_with_parse_results['hostname']
         if val != ch:
             from .parse import create_result_dict
+
             phd = get_per_hosts_dict(dict_with_parse_results)
             dict_with_parse_results.clear()
             dict_with_parse_results.update(phd.pop(val, create_result_dict()))

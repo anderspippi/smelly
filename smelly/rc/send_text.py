@@ -42,13 +42,11 @@ sessions_map: Dict[str, Session] = {}
 
 
 class SessionAction:
-
     def __init__(self, sid: str):
         self.sid = sid
 
 
 class ClearSession(SessionAction):
-
     def __call__(self, *a: Any) -> None:
         s = sessions_map.pop(self.sid, None)
         if s is not None:
@@ -60,7 +58,6 @@ class ClearSession(SessionAction):
 
 
 class FocusChangedSession(SessionAction):
-
     def __call__(self, window: Window, focused: bool) -> None:
         s = sessions_map.get(self.sid)
         if s is not None:
@@ -91,7 +88,11 @@ class SendText(RemoteCommand):
         ' the text will be sent to all matched windows. By default, text is sent to'
         ' only the currently active window.'
     )
-    options_spec = MATCH_WINDOW_OPTION + '\n\n' + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t') + '''\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '\n\n'
+        + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
+        + '''\n
 --all
 type=bool-set
 Match all windows.
@@ -112,6 +113,7 @@ not interpreted for escapes. If stdin is a terminal, you can press :kbd:`Ctrl+D`
 Path to a file whose contents you wish to send. Note that in this case the file contents
 are sent as is, not interpreted for escapes.
 '''
+    )
     args = RemoteCommand.Args(spec='[TEXT TO SEND]', json_field='data', special_parse='+session_id:parse_send_text(io_data, args)')
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
@@ -123,6 +125,7 @@ are sent as is, not interpreted for escapes.
                 ret['exclude_active'] = True
                 keep_going = True
                 from smelly.utils import TTYIO
+
                 with TTYIO(read_with_timeout=False) as tty:
                     while keep_going:
                         if not tty.wait_till_read_available():
@@ -132,7 +135,7 @@ are sent as is, not interpreted for escapes.
                             break
                         decoded_data = data.decode('utf-8')
                         if '\x04' in decoded_data:
-                            decoded_data = decoded_data[:decoded_data.index('\x04')]
+                            decoded_data = decoded_data[: decoded_data.index('\x04')]
                             keep_going = False
                         ret['data'] = f'text:{decoded_data}'
                         yield ret
@@ -174,6 +177,7 @@ are sent as is, not interpreted for escapes.
         def chain() -> CmdGenerator:
             for src in sources:
                 yield from src
+
         return chain()
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
@@ -219,6 +223,7 @@ are sent as is, not interpreted for escapes.
         def create_or_update_session() -> Session:
             s = sessions_map.setdefault(sid, Session(sid))
             return s
+
         if session == 'end':
             s = create_or_update_session()
             for w in actual_windows:

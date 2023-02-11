@@ -17,7 +17,6 @@ from . import BaseTest
 
 
 class Rendering(BaseTest):
-
     def setUp(self):
         super().setUp()
         self.test_ctx = setup_for_testing()
@@ -73,7 +72,6 @@ class Rendering(BaseTest):
         self.ae(len(cells), sz)
 
     def test_shaping(self):
-
         font_path_cache = {}
 
         def path_for_font(name):
@@ -114,8 +112,7 @@ class Rendering(BaseTest):
         self.ae(groups('9:30', font='FiraCode-Medium.otf'), [(1, 1), (1, 1), (1, 1), (1, 1)])
 
         self.ae(groups('|\U0001F601|\U0001F64f|\U0001F63a|'), [(1, 1), (2, 1), (1, 1), (2, 1), (1, 1), (2, 1), (1, 1)])
-        self.ae(groups('He\u0347\u0305llo\u0337,', font='LiberationMono-Regular.ttf'),
-                [(1, 1), (1, 3), (1, 1), (1, 1), (1, 2), (1, 1)])
+        self.ae(groups('He\u0347\u0305llo\u0337,', font='LiberationMono-Regular.ttf'), [(1, 1), (1, 3), (1, 1), (1, 1), (1, 2), (1, 1)])
 
         self.ae(groups('i\u0332\u0308', font='LiberationMono-Regular.ttf'), [(1, 2)])
         self.ae(groups('u\u0332 u\u0332\u0301', font='LiberationMono-Regular.ttf'), [(1, 2), (1, 1), (1, 2)])
@@ -151,6 +148,7 @@ class Rendering(BaseTest):
         # Ensure that the LastResort font is not reported as a fallback font on
         # macOS. See https://github.com/backbiter-no/smelly/issues/799
         from io import StringIO
+
         orig, buf = sys.stderr, StringIO()
         sys.stderr = buf
         try:
@@ -177,5 +175,4 @@ class Rendering(BaseTest):
         q = {(4, 5): 'b', (1, 4): 'a'}
         self.ae(coalesce_symbol_maps(q), {(1, 4): 'a', (5, 5): 'b'})
         q = {(0, 30): 'a', (10, 10): 'b', (11, 11): 'b', (2, 2): 'c', (1, 1): 'c'}
-        self.ae(coalesce_symbol_maps(q), {
-            (0, 0): 'a', (1, 2): 'c', (3, 9): 'a', (10, 11): 'b', (12, 30): 'a'})
+        self.ae(coalesce_symbol_maps(q), {(0, 0): 'a', (1, 2): 'c', (3, 9): 'a', (10, 11): 'b', (12, 30): 'a'})

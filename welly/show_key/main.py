@@ -69,6 +69,7 @@ def main(args: List[str]) -> None:
     cli_opts, items = parse_args(args[1:], OPTIONS, '', help_text, 'smelly +kitten show_key', result_class=ShowKeyCLIOptions)
     if cli_opts.key_mode == 'smelly':
         from .smelly_mode import main as smelly_main
+
         return smelly_main()
     if cli_opts.key_mode != 'unchanged':
         print(end='\x1b[?1' + ('l' if cli_opts.key_mode == 'normal' else 'h'), flush=True)

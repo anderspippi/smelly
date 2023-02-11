@@ -33,7 +33,6 @@ def parse_colors(args: ArgsType) -> Dict[str, Optional[int]]:
 
 
 class SetTabColor(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers. A color value of null indicates it should be unset.
     match/str: Which tab to change the color of
@@ -49,11 +48,14 @@ The syntax for specifying colors is: active_fg=color active_bg=color inactive_fg
 inactive_bg=color. Where color can be either a color name or a value of the form #rrggbb or \
 the keyword NONE to revert to using the default colors.
 '''
-    options_spec = MATCH_TAB_OPTION + '''\n
+    options_spec = (
+        MATCH_TAB_OPTION
+        + '''\n
 --self
 type=bool-set
 Close the tab this command is run in, rather than the active tab.
 '''
+    )
     args = RemoteCommand.Args(spec='COLORS', json_field='colors', minimum_count=1, special_parse='parse_tab_colors(args)')
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:

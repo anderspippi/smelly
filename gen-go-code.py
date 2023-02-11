@@ -33,6 +33,7 @@ changed: List[str] = []
 
 # Utils {{{
 
+
 def serialize_go_dict(x: Union[Dict[str, int], Dict[int, str], Dict[int, int], Dict[str, str]]) -> str:
     ans = []
 
@@ -50,14 +51,18 @@ def replace(template: str, **kw: str) -> str:
     for k, v in kw.items():
         template = template.replace(k, v)
     return template
+
+
 # }}}
 
 
 # Completions {{{
 
+
 @lru_cache
 def kitten_cli_docs(kitten: str) -> Any:
     from wellies.runner import get_kitten_cli_docs
+
     return get_kitten_cli_docs(kitten)
 
 
@@ -72,6 +77,7 @@ def go_options_for_kitten(kitten: str) -> Tuple[Sequence[GoOption], Optional[Com
 
 def generate_wellies_completion() -> None:
     from wellies.runner import all_kitten_names, get_kitten_wrapper_of
+
     for kitten in sorted(all_kitten_names()):
         kn = 'kitten_' + kitten
         print(f'{kn} := plus_kitten.AddSubCommand(&cli.Command{{Name:"{kitten}", Group: "wellies"}})')
@@ -93,6 +99,7 @@ def generate_wellies_completion() -> None:
 @lru_cache
 def clone_safe_launch_opts() -> Sequence[GoOption]:
     from smelly.launch import clone_safe_opts, options_spec
+
     ans = []
     allowed = clone_safe_opts()
     for o in go_options_for_seq(parse_option_spec(options_spec())[0]):
@@ -109,6 +116,7 @@ def completion_for_launch_wrappers(*names: str) -> None:
 
 def generate_completions_for_smelly() -> None:
     from smelly.config import option_names_for_completion
+
     print('package completion\n')
     print('import "smelly/tools/cli"')
     print('import "smelly/tools/cmd/tool"')
@@ -119,8 +127,10 @@ def generate_completions_for_smelly() -> None:
     print('func smelly(root *cli.Command) {')
 
     # The smelly exe
-    print('k := root.AddSubCommand(&cli.Command{'
-          'Name:"smelly", SubCommandIsOptional: true, ArgCompleter: cli.CompleteExecutableFirstArg, SubCommandMustBeFirst: true })')
+    print(
+        'k := root.AddSubCommand(&cli.Command{'
+        'Name:"smelly", SubCommandIsOptional: true, ArgCompleter: cli.CompleteExecutableFirstArg, SubCommandMustBeFirst: true })'
+    )
     print('kt := root.AddSubCommand(&cli.Command{Name:"kitten", SubCommandMustBeFirst: true })')
     print('tool.smellyToolEntryPoints(kt)')
     for opt in go_options_for_seq(parse_option_spec()[0]):
@@ -130,23 +140,31 @@ def generate_completions_for_smelly() -> None:
     print('plus := k.AddSubCommand(&cli.Command{Name:"+", Group:"Entry points", ShortDescription: "Various special purpose tools and wellies"})')
 
     # smelly +launch
-    print('plus_launch := plus.AddSubCommand(&cli.Command{'
-          'Name:"launch", Group:"Entry points", ShortDescription: "Launch Python scripts", ArgCompleter: complete_plus_launch})')
+    print(
+        'plus_launch := plus.AddSubCommand(&cli.Command{'
+        'Name:"launch", Group:"Entry points", ShortDescription: "Launch Python scripts", ArgCompleter: complete_plus_launch})'
+    )
     print('k.AddClone("", plus_launch).Name = "+launch"')
 
     # smelly +list-fonts
-    print('plus_list_fonts := plus.AddSubCommand(&cli.Command{'
-          'Name:"list-fonts", Group:"Entry points", ShortDescription: "List all available monospaced fonts"})')
+    print(
+        'plus_list_fonts := plus.AddSubCommand(&cli.Command{'
+        'Name:"list-fonts", Group:"Entry points", ShortDescription: "List all available monospaced fonts"})'
+    )
     print('k.AddClone("", plus_list_fonts).Name = "+list-fonts"')
 
     # smelly +runpy
-    print('plus_runpy := plus.AddSubCommand(&cli.Command{'
-          'Name: "runpy", Group:"Entry points", ArgCompleter: complete_plus_runpy, ShortDescription: "Run Python code"})')
+    print(
+        'plus_runpy := plus.AddSubCommand(&cli.Command{'
+        'Name: "runpy", Group:"Entry points", ArgCompleter: complete_plus_runpy, ShortDescription: "Run Python code"})'
+    )
     print('k.AddClone("", plus_runpy).Name = "+runpy"')
 
     # smelly +open
-    print('plus_open := plus.AddSubCommand(&cli.Command{'
-          'Name:"open", Group:"Entry points", ArgCompleter: complete_plus_open, ShortDescription: "Open files and URLs"})')
+    print(
+        'plus_open := plus.AddSubCommand(&cli.Command{'
+        'Name:"open", Group:"Entry points", ArgCompleter: complete_plus_open, ShortDescription: "Open files and URLs"})'
+    )
     print('for _, og := range k.OptionGroups { plus_open.OptionGroups = append(plus_open.OptionGroups, og.Clone(plus_open)) }')
     print('k.AddClone("", plus_open).Name = "+open"')
 
@@ -166,13 +184,22 @@ def generate_completions_for_smelly() -> None:
     print('func init() {')
     print('cli.RegisterExeForCompletion(smelly)')
     print('}')
+
+
 # }}}
 
 
 # rc command wrappers {{{
 json_field_types: Dict[str, str] = {
-    'bool': 'bool', 'str': 'escaped_string', 'list.str': '[]escaped_string', 'dict.str': 'map[escaped_string]escaped_string', 'float': 'float64', 'int': 'int',
-    'scroll_amount': 'any', 'spacing': 'any', 'colors': 'any',
+    'bool': 'bool',
+    'str': 'escaped_string',
+    'list.str': '[]escaped_string',
+    'dict.str': 'map[escaped_string]escaped_string',
+    'float': 'float64',
+    'int': 'int',
+    'scroll_amount': 'any',
+    'spacing': 'any',
+    'colors': 'any',
 }
 
 
@@ -190,7 +217,6 @@ def go_field_type(json_field_type: str) -> str:
 
 
 class JSONField:
-
     def __init__(self, line: str) -> None:
         field_def = line.split(':', 1)[0]
         self.required = False
@@ -205,7 +231,7 @@ class JSONField:
 
 
 def go_code_for_remote_command(name: str, cmd: RemoteCommand, template: str) -> str:
-    template = '\n' + template[len('//go:build exclude'):]
+    template = '\n' + template[len('//go:build exclude') :]
     NO_RESPONSE_BASE = 'false'
     af: List[str] = []
     a = af.append
@@ -275,23 +301,30 @@ def go_code_for_remote_command(name: str, cmd: RemoteCommand, template: str) -> 
         argspec = ' ' + argspec
     ans = replace(
         template,
-        CMD_NAME=name, __FILE__=__file__, CLI_NAME=name.replace('_', '-'),
+        CMD_NAME=name,
+        __FILE__=__file__,
+        CLI_NAME=name.replace('_', '-'),
         SHORT_DESC=serialize_as_go_string(cmd.short_desc),
         LONG_DESC=serialize_as_go_string(cmd.desc.strip()),
         IS_ASYNC='true' if cmd.is_asynchronous else 'false',
-        NO_RESPONSE_BASE=NO_RESPONSE_BASE, ADD_FLAGS_CODE='\n'.join(af),
+        NO_RESPONSE_BASE=NO_RESPONSE_BASE,
+        ADD_FLAGS_CODE='\n'.join(af),
         WAIT_TIMEOUT=str(cmd.response_timeout),
         OPTIONS_DECLARATION_CODE='\n'.join(od),
         JSON_DECLARATION_CODE='\n'.join(jd),
-        JSON_INIT_CODE='\n'.join(jc), ARGSPEC=argspec,
+        JSON_INIT_CODE='\n'.join(jc),
+        ARGSPEC=argspec,
         STRING_RESPONSE_IS_ERROR='true' if cmd.string_return_is_error else 'false',
         STREAM_WANTED='true' if cmd.reads_streaming_data else 'false',
     )
     return ans
+
+
 # }}}
 
 
 # wellies {{{
+
 
 @lru_cache
 def wrapped_wellies() -> Sequence[str]:
@@ -341,10 +374,12 @@ def kitten_clis() -> None:
             print('\n'.join(od))
             print('}')
 
+
 # }}}
 
 
 # Constants {{{
+
 
 def generate_spinners() -> str:
     ans = ['package tui', 'import "time"', 'func NewSpinner(name string) *Spinner {', 'var ans *Spinner', 'switch name {']
@@ -368,11 +403,14 @@ def generate_spinners() -> str:
 
 
 def generate_color_names() -> str:
-    return 'package style\n\nvar ColorNames = map[string]RGBA{' + '\n'.join(
-        f'\t"{name}": RGBA{{ Red:{val.red}, Green:{val.green}, Blue:{val.blue} }},'
-        for name, val in color_names.items()
-    ) + '\n}' + '\n\nvar ColorTable = [256]uint32{' + ', '.join(
-        f'{x}' for x in Options.color_table) + '}\n'
+    return (
+        'package style\n\nvar ColorNames = map[string]RGBA{'
+        + '\n'.join(f'\t"{name}": RGBA{{ Red:{val.red}, Green:{val.green}, Blue:{val.blue} }},' for name, val in color_names.items())
+        + '\n}'
+        + '\n\nvar ColorTable = [256]uint32{'
+        + ', '.join(f'{x}' for x in Options.color_table)
+        + '}\n'
+    )
 
 
 def load_ref_map() -> Dict[str, Dict[str, str]]:
@@ -410,6 +448,7 @@ var DocTitleMap = map[string]string{serialize_go_dict(ref_map['doc'])}
 
 
 # Boilerplate {{{
+
 
 @contextmanager
 def replace_if_needed(path: str, show_diff: bool = False) -> Iterator[io.StringIO]:
@@ -493,7 +532,7 @@ def define_enum(package_name: str, type_name: str, items: str, underlying_type: 
         if x:
             actions.append(x)
     ans = [f'package {package_name}', 'import "strconv"', f'type {type_name} {underlying_type}', 'const (']
-    stringer = [f'func (ac {type_name}) String() string ''{', 'switch(ac) {']
+    stringer = [f'func (ac {type_name}) String() string ' '{', 'switch(ac) {']
     for i, ac in enumerate(actions):
         stringer.append(f'case {ac}: return "{ac}"')
         if i == 0:
@@ -505,7 +544,10 @@ def define_enum(package_name: str, type_name: str, items: str, underlying_type: 
 
 
 def generate_readline_actions() -> str:
-    return define_enum('readline', 'Action', '''\
+    return define_enum(
+        'readline',
+        'Action',
+        '''\
         ActionNil
 
         ActionBackspace
@@ -560,15 +602,23 @@ def generate_readline_actions() -> str:
 
         ActionCompleteForward
         ActionCompleteBackward
-    ''')
+    ''',
+    )
 
 
 def generate_mimetypes() -> str:
     import mimetypes
+
     if not mimetypes.inited:
         mimetypes.init()
-    ans = ['package utils', 'import "sync"', 'var only_once sync.Once', 'var builtin_types_map map[string]string',
-           'func set_builtins() {', 'builtin_types_map = map[string]string{',]
+    ans = [
+        'package utils',
+        'import "sync"',
+        'var only_once sync.Once',
+        'var builtin_types_map map[string]string',
+        'func set_builtins() {',
+        'builtin_types_map = map[string]string{',
+    ]
     for k, v in mimetypes.types_map.items():
         ans.append(f'  "{serialize_as_go_string(k)}": "{serialize_as_go_string(v)}",')
     ans.append('}}')
@@ -576,7 +626,10 @@ def generate_mimetypes() -> str:
 
 
 def generate_textual_mimetypes() -> str:
-    ans = ['package utils', 'var KnownTextualMimes = map[string]bool{',]
+    ans = [
+        'package utils',
+        'var KnownTextualMimes = map[string]bool{',
+    ]
     for k in text_mimes:
         ans.append(f'  "{serialize_as_go_string(k)}": true,')
     ans.append('}')

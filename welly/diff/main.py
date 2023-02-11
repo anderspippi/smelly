@@ -68,6 +68,7 @@ try:
         highlight_collection,
         initialize_highlighter,
     )
+
     has_highlighter = True
     DiffHighlight
 except ImportError:
@@ -110,7 +111,6 @@ def generate_diff(collection: Collection, context: int) -> Union[str, Dict[str, 
 
 
 class DiffHandler(Handler):
-
     image_manager_class = ImageManager
 
     def __init__(self, args: DiffCLIOptions, opts: DiffOptions, left: str, right: str) -> None:
@@ -170,7 +170,6 @@ class DiffHandler(Handler):
                 return
 
     def create_collection(self) -> None:
-
         def collect_done(collection: Collection) -> None:
             self.doing_background_work = BackgroundWork.none
             self.collection = collection
@@ -185,7 +184,6 @@ class DiffHandler(Handler):
         self.doing_background_work = BackgroundWork.collecting
 
     def generate_diff(self) -> None:
-
         def diff_done(diff_map: Union[str, Dict[str, Patch]]) -> None:
             self.doing_background_work = BackgroundWork.none
             if isinstance(diff_map, str):
@@ -203,6 +201,7 @@ class DiffHandler(Handler):
             self.draw_screen()
             if has_highlighter and not self.highlighting_done:
                 from .highlight import StyleNotFound
+
                 self.highlighting_done = True
                 try:
                     initialize_highlighter(self.opts.pygments_style)
@@ -220,7 +219,6 @@ class DiffHandler(Handler):
         self.doing_background_work = BackgroundWork.diffing
 
     def syntax_highlight(self) -> None:
-
         def highlighting_done(hdata: Union[str, Dict[str, 'DiffHighlight']]) -> None:
             self.doing_background_work = BackgroundWork.none
             if isinstance(hdata, str):
@@ -336,9 +334,8 @@ class DiffHandler(Handler):
         self.cmd.set_line_wrapping(False)
         self.cmd.set_window_title(global_data.title)
         self.cmd.set_default_colors(
-            fg=self.opts.foreground, bg=self.opts.background,
-            cursor=self.opts.foreground, select_fg=self.opts.select_fg,
-            select_bg=self.opts.select_bg)
+            fg=self.opts.foreground, bg=self.opts.background, cursor=self.opts.foreground, select_fg=self.opts.select_fg, select_bg=self.opts.select_bg
+        )
         self.cmd.set_cursor_shape('beam')
 
     def finalize(self) -> None:
@@ -451,8 +448,7 @@ class DiffHandler(Handler):
             xpos, visible_frac = q
             height = int(visible_frac * placement.image.height)
             top = placement.image.height - height
-            self.image_manager.show_image(placement.image.image_id, xpos, row, src_rect=(
-                0, top, placement.image.width, height))
+            self.image_manager.show_image(placement.image.image_id, xpos, row, src_rect=(0, top, placement.image.width, height))
 
     def draw_screen(self) -> None:
         self.enforce_cursor_state()
@@ -480,9 +476,9 @@ class DiffHandler(Handler):
             scroll_frac = styled(sp, fg=self.opts.margin_fg)
             if self.current_search is None:
                 counts = '{}{}{}'.format(
-                        styled(str(self.added_count), fg=self.opts.highlight_added_bg),
-                        styled(',', fg=self.opts.margin_fg),
-                        styled(str(self.removed_count), fg=self.opts.highlight_removed_bg)
+                    styled(str(self.added_count), fg=self.opts.highlight_added_bg),
+                    styled(',', fg=self.opts.margin_fg),
+                    styled(str(self.removed_count), fg=self.opts.highlight_removed_bg),
                 )
             else:
                 counts = styled(f'{len(self.current_search)} matches', fg=self.opts.margin_fg)
@@ -587,7 +583,8 @@ class DiffHandler(Handler):
         self.terminate(1)
 
 
-OPTIONS = partial('''\
+OPTIONS = partial(
+    '''\
 --context
 type=int
 default=-1
@@ -606,11 +603,12 @@ type=list
 Override individual configuration options, can be specified multiple times.
 Syntax: :italic:`name=value`. For example: :italic:`-o background=gray`
 
-'''.format, config_help=CONFIG_HELP.format(conf_name='diff', appname=appname))
+'''.format,
+    config_help=CONFIG_HELP.format(conf_name='diff', appname=appname),
+)
 
 
 class ShowWarning:
-
     def __init__(self) -> None:
         self.warnings: List[str] = []
 
@@ -634,6 +632,7 @@ def get_ssh_file(hostname: str, rpath: str) -> str:
     import io
     import shutil
     import tarfile
+
     tdir = tempfile.mkdtemp(suffix=f'-{hostname}')
     add_remote_dir(tdir)
     atexit.register(shutil.rmtree, tdir)
@@ -689,6 +688,7 @@ def main(args: List[str]) -> None:
     loop.loop(handler)
     for message in showwarning.warnings:
         from smelly.utils import safe_print
+
         safe_print(message, file=sys.stderr)
     if handler.doing_background_work is BackgroundWork.highlighting:
         terminate_processes(tuple(get_highlight_processes()))
@@ -711,4 +711,5 @@ elif __name__ == '__doc__':
     cd['args_completion'] = CompletionSpec.from_string('type:file mime:text/* mime:image/* group:"Text and image files"')
 elif __name__ == '__conf__':
     from .options.definition import definition
+
     sys.options_definition = definition  # type: ignore

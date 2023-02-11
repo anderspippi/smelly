@@ -50,7 +50,8 @@ def setup_zsh_env(env: Dict[str, str], argv: List[str]) -> None:
     zdotdir = env.get('ZDOTDIR')
     if is_new_zsh_install(env, zdotdir):
         if zdotdir is None:
-            # Try to get ZDOTDIR from /etc/zshenv, when all startup files are not present
+            # Try to get ZDOTDIR from /etc/zshenv, when all startup files are
+            # not present
             zdotdir = get_zsh_zdotdir_from_global_zshenv(env, argv)
             if zdotdir is None or is_new_zsh_install(env, zdotdir):
                 return
@@ -123,8 +124,8 @@ def setup_bash_env(env: Dict[str, str], argv: List[str]) -> None:
                 remove_args.add(i)
             elif arg in ('--rcfile', '--init-file') and i + 1 < len(argv):
                 expecting_option_arg = True
-                rcfile = argv[i+1]
-                remove_args |= {i, i+1}
+                rcfile = argv[i + 1]
+                remove_args |= {i, i + 1}
         else:
             file_arg_set = True
             break
@@ -140,7 +141,8 @@ def setup_bash_env(env: Dict[str, str], argv: List[str]) -> None:
     for i in sorted(remove_args, reverse=True):
         del argv[i]
     if 'HISTFILE' not in env and 'posix' not in inject:
-        # In POSIX mode the default history file is ~/.sh_history instead of ~/.bash_history
+        # In POSIX mode the default history file is ~/.sh_history instead of
+        # ~/.bash_history
         env['HISTFILE'] = os.path.expanduser('~/.bash_history')
         env['smelly_BASH_UNEXPORT_HISTFILE'] = '1'
     argv.insert(1, '--posix')
@@ -177,7 +179,7 @@ ENV_MODIFIERS = {
 }
 
 ENV_SERIALIZERS: Dict[str, Callable[[Dict[str, str]], str]] = {
-    'zsh':  posix_serialize_env,
+    'zsh': posix_serialize_env,
     'bash': posix_serialize_env,
     'fish': fish_serialize_env,
 }
@@ -229,5 +231,6 @@ def modify_shell_environ(opts: Options, env: Dict[str, str], argv: List[str]) ->
             f(env, argv)
         except Exception:
             import traceback
+
             traceback.print_exc()
             log_error(f'Failed to setup shell integration for: {shell}')

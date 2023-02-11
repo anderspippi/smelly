@@ -23,7 +23,6 @@ class StyleNotFound(Exception):
 
 
 class DiffFormatter(Formatter):  # type: ignore
-
     def __init__(self, style: str = 'default') -> None:
         try:
             Formatter.__init__(self, style=style)
@@ -166,6 +165,7 @@ def highlight_collection(collection: Collection, aliases: Optional[Dict[str, str
                 highlights = future.result()
             except Exception as e:
                 import traceback
+
                 tb = traceback.format_exc()
                 return f'Running syntax highlighting for {path} generated an exception: {e} with traceback:\n{tb}'
             ans[path] = highlights
@@ -177,6 +177,7 @@ def main() -> None:
     import sys
 
     from .options.types import defaults
+
     initialize_highlighter()
     with open(sys.argv[-1]) as f:
         highlighted = highlight_data(f.read(), f.name, defaults.syntax_aliases)

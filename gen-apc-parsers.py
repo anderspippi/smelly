@@ -28,7 +28,9 @@ def enum(keymap: KeymapType) -> str:
     enum KEYS {{
         {}
     }};
-    '''.format(',\n'.join(lines))
+    '''.format(
+        ',\n'.join(lines)
+    )
 
 
 def parse_key(keymap: KeymapType) -> str:
@@ -44,7 +46,8 @@ def parse_flag(keymap: KeymapType, type_map: Dict[str, Any], command_class: str)
     for ch in type_map['flag']:
         attr, allowed_values = keymap[ch]
         q = ' && '.join(f"g.{attr} != '{x}'" for x in sorted(allowed_values))
-        lines.append(f'''
+        lines.append(
+            f'''
             case {attr}: {{
                 g.{attr} = screen->parser_buf[pos++] & 0xff;
                 if ({q}) {{
@@ -53,7 +56,8 @@ def parse_flag(keymap: KeymapType, type_map: Dict[str, Any], command_class: str)
                 }};
             }}
             break;
-        ''')
+        '''
+        )
     return '        \n'.join(lines)
 
 
@@ -90,13 +94,7 @@ def cmd_for_report(report_name: str, keymap: KeymapType, type_map: Dict[str, Any
 
 
 def generate(
-    function_name: str,
-    callback_name: str,
-    report_name: str,
-    keymap: KeymapType,
-    command_class: str,
-    initial_key: str = 'a',
-    payload_allowed: bool = True
+    function_name: str, callback_name: str, report_name: str, keymap: KeymapType, command_class: str, initial_key: str = 'a', payload_allowed: bool = True
 ) -> str:
     type_map = resolve_keys(keymap)
     keys_enum = enum(keymap)

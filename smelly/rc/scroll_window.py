@@ -11,7 +11,6 @@ if TYPE_CHECKING:
 
 
 class ScrollWindow(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     amount+/list.scroll_amount: The amount to scroll, a two item list with the first item being \
              either a number or the keywords, start and end. \
@@ -28,13 +27,16 @@ class ScrollWindow(RemoteCommand):
         ' will scroll up 2 pages and :code:`0.5p`will scroll down half page. :code:`3u` will *unscroll* by 3 lines, which means that 3 lines will move from the'
         ' scrollback buffer onto the top of the screen.'
     )
-    options_spec = MATCH_WINDOW_OPTION + '''\n
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n
 --no-response
 type=bool-set
 default=false
 Don't wait for a response indicating the success of the action. Note that
 using this option means that you will not be notified of failures.
 '''
+    )
     args = RemoteCommand.Args(spec='SCROLL_AMOUNT', count=1, special_parse='parse_scroll_amount(args[0])', json_field='amount')
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:

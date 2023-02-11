@@ -24,9 +24,9 @@ def patch_env(**kw):
 
 
 class TestOpenActions(BaseTest):
-
     def test_parsing_of_open_actions(self):
         from smelly.open_actions import KeyAction, actions_for_url
+
         self.set_options()
         spec = '''
 protocol file

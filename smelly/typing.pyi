@@ -51,19 +51,57 @@ GRT_m = Literal[0, 1]
 GRT_C = Literal[0, 1]
 GRT_d = Literal['a', 'A', 'c', 'C', 'i', 'I', 'p', 'P', 'q', 'Q', 'x', 'X', 'y', 'Y', 'z', 'Z', 'f', 'F']
 
-
 class WindowSystemMouseEvent(TypedDict):
     button: int
     count: int
     mods: int
 
-
 __all__ = (
-    'EdgeLiteral', 'MatchType', 'GRT_a', 'GRT_f', 'GRT_t', 'GRT_o', 'GRT_m', 'GRT_d',
-    'GraphicsCommandType', 'HandlerType', 'AbstractEventLoop', 'AddressFamily', 'Socket', 'CompletedProcess',
-    'PopenType', 'Protocol', 'TypedDict', 'MarkType', 'ImageManagerType', 'Debug', 'LoopType', 'MouseEvent',
-    'TermManagerType', 'BossType', 'ChildType', 'BadLineType', 'MouseButton',
-    'KeyActionType', 'KeyMap', 'smellyCommonOpts', 'AliasMap', 'SequenceMap', 'CoreTextFont', 'WindowSystemMouseEvent',
-    'FontConfigPattern', 'ScreenType', 'StartupCtx', 'KeyEventType', 'LayoutType', 'PowerlineStyle',
-    'RemoteCommandType', 'SessionType', 'SessionTab', 'SpecialWindowInstance', 'TabType', 'ScreenSize', 'WindowType'
+    'EdgeLiteral',
+    'MatchType',
+    'GRT_a',
+    'GRT_f',
+    'GRT_t',
+    'GRT_o',
+    'GRT_m',
+    'GRT_d',
+    'GraphicsCommandType',
+    'HandlerType',
+    'AbstractEventLoop',
+    'AddressFamily',
+    'Socket',
+    'CompletedProcess',
+    'PopenType',
+    'Protocol',
+    'TypedDict',
+    'MarkType',
+    'ImageManagerType',
+    'Debug',
+    'LoopType',
+    'MouseEvent',
+    'TermManagerType',
+    'BossType',
+    'ChildType',
+    'BadLineType',
+    'MouseButton',
+    'KeyActionType',
+    'KeyMap',
+    'smellyCommonOpts',
+    'AliasMap',
+    'SequenceMap',
+    'CoreTextFont',
+    'WindowSystemMouseEvent',
+    'FontConfigPattern',
+    'ScreenType',
+    'StartupCtx',
+    'KeyEventType',
+    'LayoutType',
+    'PowerlineStyle',
+    'RemoteCommandType',
+    'SessionType',
+    'SessionTab',
+    'SpecialWindowInstance',
+    'TabType',
+    'ScreenSize',
+    'WindowType',
 )

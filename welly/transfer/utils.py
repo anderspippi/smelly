@@ -17,7 +17,7 @@ from ..tui.utils import format_number, human_size
 _cwd = _home = ''
 
 
-def safe_divide(numerator: Union[int, float], denominator: Union[int, float], zero_val: float = 0.) -> float:
+def safe_divide(numerator: Union[int, float], denominator: Union[int, float], zero_val: float = 0.0) -> float:
     return numerator / denominator if denominator else zero_val
 
 
@@ -80,7 +80,7 @@ def render_progress_in_width(
     max_path_length: int = 80,
     spinner_char: str = '⠋',
     bytes_per_sec: float = 1024,
-    secs_so_far: float = 100.,
+    secs_so_far: float = 100.0,
     bytes_so_far: int = 33070,
     total_bytes: int = 50000,
     width: int = 80,
@@ -169,7 +169,6 @@ def set_paths(cwd: str = '', home: str = '') -> Generator[None, None, None]:
 
 
 class IdentityCompressor:
-
     def compress(self, data: bytes) -> bytes:
         return data
 
@@ -178,9 +177,9 @@ class IdentityCompressor:
 
 
 class ZlibCompressor:
-
     def __init__(self) -> None:
         import zlib
+
         self.c = zlib.compressobj()
 
     def compress(self, data: bytes) -> bytes:

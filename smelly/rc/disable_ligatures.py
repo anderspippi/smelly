@@ -11,7 +11,6 @@ if TYPE_CHECKING:
 
 
 class DisableLigatures(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     strategy+/choices.never.always.cursor: One of :code:`never`, :code:`always` or :code:`cursor`
     match_window/str: Window to change opacity in
@@ -24,25 +23,31 @@ class DisableLigatures(RemoteCommand):
         'Control ligature rendering for the specified windows/tabs (defaults to active window). The :italic:`STRATEGY`'
         ' can be one of: :code:`never`, :code:`always`, :code:`cursor`.'
     )
-    options_spec = '''\
+    options_spec = (
+        '''\
 --all -a
 type=bool-set
 By default, ligatures are only affected in the active window. This option will
 cause ligatures to be changed in all windows.
 
-''' + '\n\n' + MATCH_WINDOW_OPTION + '\n\n' + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
+'''
+        + '\n\n'
+        + MATCH_WINDOW_OPTION
+        + '\n\n'
+        + MATCH_TAB_OPTION.replace('--match -m', '--match-tab -t')
+    )
     args = RemoteCommand.Args(spec='STRATEGY', count=1, json_field='strategy')
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         if not args:
-            self.fatal(
-                'You must specify the STRATEGY for disabling ligatures, must be one of'
-                ' never, always or cursor')
+            self.fatal('You must specify the STRATEGY for disabling ligatures, must be one of' ' never, always or cursor')
         strategy = args[0]
         if strategy not in ('never', 'always', 'cursor'):
             self.fatal(f'{strategy} is not a valid disable_ligatures strategy')
         return {
-            'strategy': strategy, 'match_window': opts.match, 'match_tab': opts.match_tab,
+            'strategy': strategy,
+            'match_window': opts.match,
+            'match_tab': opts.match_tab,
             'all': opts.all,
         }
 
@@ -50,6 +55,8 @@ cause ligatures to be changed in all windows.
         windows = self.windows_for_payload(boss, window, payload_get)
         boss.disable_ligatures_in(windows, payload_get('strategy'))
         return None
+
+
 # }}}
 
 

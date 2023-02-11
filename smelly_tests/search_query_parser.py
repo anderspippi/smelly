@@ -6,9 +6,9 @@ from . import BaseTest
 
 
 class TestSQP(BaseTest):
-
     def test_search_query_parser(self):
         from smelly.search_query_parser import ParseException, search
+
         locations = 'id'
         universal_set = {1, 2, 3, 4, 5}
 

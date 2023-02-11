@@ -23,7 +23,6 @@ from .utils import log_error
 
 
 class Tempfile:
-
     def __init__(self, max_size: int) -> None:
         self.file: Union[io.BytesIO, IO[bytes]] = io.BytesIO()
         self.max_size = max_size
@@ -60,7 +59,9 @@ class Tempfile:
                 ans = self.read(pos, min(io.DEFAULT_BUFFER_SIZE, limit - pos))
                 pos = self.file.tell()
                 return ans
+
             return chunker
+
         return chunk_creator
 
 
@@ -79,7 +80,6 @@ class ClipboardType(IntEnum):
 
 
 class Clipboard:
-
     def __init__(self, clipboard_type: ClipboardType = ClipboardType.clipboard) -> None:
         self.data: Dict[str, DataType] = {}
         self.clipboard_type = clipboard_type
@@ -139,12 +139,14 @@ class Clipboard:
         if isinstance(data, str):
             data = data.encode('utf-8')  # type: ignore
         if isinstance(data, bytes):
+
             def chunker() -> bytes:
                 nonlocal data
                 assert isinstance(data, bytes)
                 ans = data
                 data = b''
                 return ans
+
             return chunker
 
         return data()
@@ -170,11 +172,13 @@ def develop() -> Tuple[Clipboard, Clipboard]:
     from .constants import detect_if_wayland_ok, is_macos
     from .fast_data_types import set_boss
     from .main import init_glfw_module
+
     glfw_module = 'cocoa' if is_macos else ('wayland' if detect_if_wayland_ok() else 'x11')
 
     class Boss:
         clipboard = Clipboard()
         primary_selection = Clipboard(ClipboardType.primary_selection)
+
     init_glfw_module(glfw_module)
     set_boss(Boss())  # type: ignore
     return Boss.clipboard, Boss.primary_selection
@@ -187,12 +191,14 @@ class ProtocolType(Enum):
 
 def encode_mime(x: str) -> str:
     import base64
+
     return base64.standard_b64encode(x.encode('utf-8')).decode('ascii')
 
 
 def decode_metadata_value(k: str, x: str) -> str:
     if k == 'mime':
         import base64
+
         x = base64.standard_b64decode(x).decode('utf-8')
     return x
 
@@ -214,14 +220,15 @@ class ReadRequest(NamedTuple):
         a = ans.encode('ascii')
         if payload:
             import base64
+
             a += b';' + base64.standard_b64encode(payload)
         return a
 
 
 def encode_osc52(loc: str, response: str) -> str:
     from base64 import standard_b64encode
-    return '52;{};{}'.format(
-        loc, standard_b64encode(response.encode('utf-8')).decode('ascii'))
+
+    return '52;{};{}'.format(loc, standard_b64encode(response.encode('utf-8')).decode('ascii'))
 
 
 class MimePos(NamedTuple):
@@ -230,10 +237,13 @@ class MimePos(NamedTuple):
 
 
 class WriteRequest:
-
     def __init__(
-        self, is_primary_selection: bool = False, protocol_type: ProtocolType = ProtocolType.osc_52, id: str = '',
-        rollover_size: int = 16 * 1024 * 1024, max_size: int = -1,
+        self,
+        is_primary_selection: bool = False,
+        protocol_type: ProtocolType = ProtocolType.osc_52,
+        id: str = '',
+        rollover_size: int = 16 * 1024 * 1024,
+        max_size: int = -1,
     ) -> None:
         self.id = id
         self.is_primary_selection = is_primary_selection
@@ -314,6 +324,7 @@ class WriteRequest:
 
     def write_base64_data(self, b: bytes) -> None:
         from base64 import standard_b64decode
+
         if not self.max_size_exceeded:
             d = standard_b64decode(b)
             self.tempfile.write(d)
@@ -325,11 +336,10 @@ class WriteRequest:
         start, full_size = self.mime_map[mime]
         if size == -1:
             size = full_size
-        return self.tempfile.read(start+offset, size)
+        return self.tempfile.read(start + offset, size)
 
 
 class ClipboardRequestManager:
-
     def __init__(self, window_id: int) -> None:
         self.window_id = window_id
         self.currently_asking_permission_for: Optional[ReadRequest] = None
@@ -339,6 +349,7 @@ class ClipboardRequestManager:
         import base64
 
         from .notify import sanitize_id
+
         metadata, _, epayload = data.partition(';')
         m: Dict[str, str] = {}
         for record in metadata.split(':'):
@@ -354,13 +365,13 @@ class ClipboardRequestManager:
             rr = ReadRequest(
                 is_primary_selection=m.get('loc', '') == 'primary',
                 mime_types=tuple(payload.decode('utf-8').split()),
-                protocol_type=ProtocolType.osc_5522, id=sanitize_id(m.get('id', ''))
+                protocol_type=ProtocolType.osc_5522,
+                id=sanitize_id(m.get('id', '')),
             )
             self.handle_read_request(rr)
         elif typ == 'write':
             self.in_flight_write_request = WriteRequest(
-                is_primary_selection=m.get('loc', '') == 'primary',
-                protocol_type=ProtocolType.osc_5522, id=sanitize_id(m.get('id', ''))
+                is_primary_selection=m.get('loc', '') == 'primary', protocol_type=ProtocolType.osc_5522, id=sanitize_id(m.get('id', ''))
             )
             self.handle_write_request(self.in_flight_write_request)
         elif typ == 'walias':
@@ -512,10 +523,10 @@ class ClipboardRequestManager:
         w = get_boss().window_id_map.get(self.window_id)
         if w is not None:
             self.currently_asking_permission_for = rr
-            get_boss().confirm(_(
-                'A program running in this window wants to read from the system clipboard.'
-                ' Allow it to do so, once?'),
-                self.handle_clipboard_confirmation, window=w,
+            get_boss().confirm(
+                _('A program running in this window wants to read from the system clipboard.' ' Allow it to do so, once?'),
+                self.handle_clipboard_confirmation,
+                window=w,
             )
 
     def handle_clipboard_confirmation(self, confirmed: bool) -> None:

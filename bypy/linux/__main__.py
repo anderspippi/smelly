@@ -27,23 +27,48 @@ smelly_constants = iv['smelly_constants']
 
 
 def binary_includes():
-    return tuple(map(get_dll_path, (
-            'expat', 'sqlite3', 'ffi', 'z', 'lzma', 'png16', 'lcms2', 'crypt',
-            'iconv', 'pcre', 'graphite2', 'glib-2.0', 'freetype', 'rsync',
-            'harfbuzz', 'xkbcommon', 'xkbcommon-x11',
-            # fontconfig is not bundled because in typical brain dead Linux
-            # distro fashion, different distros use different default config
-            # paths for fontconfig.
-            'ncursesw', 'readline', 'brotlicommon', 'brotlienc', 'brotlidec',
-            'wayland-client', 'wayland-cursor',
-        ))) + (
-                get_dll_path('bz2', 2), get_dll_path('ssl', 2), get_dll_path('crypto', 2),
-                get_dll_path(f'python{py_ver}', 2),
+    return tuple(
+        map(
+            get_dll_path,
+            (
+                'expat',
+                'sqlite3',
+                'ffi',
+                'z',
+                'lzma',
+                'png16',
+                'lcms2',
+                'crypt',
+                'iconv',
+                'pcre',
+                'graphite2',
+                'glib-2.0',
+                'freetype',
+                'rsync',
+                'harfbuzz',
+                'xkbcommon',
+                'xkbcommon-x11',
+                # fontconfig is not bundled because in typical brain dead Linux
+                # distro fashion, different distros use different default config
+                # paths for fontconfig.
+                'ncursesw',
+                'readline',
+                'brotlicommon',
+                'brotlienc',
+                'brotlidec',
+                'wayland-client',
+                'wayland-cursor',
+            ),
         )
+    ) + (
+        get_dll_path('bz2', 2),
+        get_dll_path('ssl', 2),
+        get_dll_path('crypto', 2),
+        get_dll_path(f'python{py_ver}', 2),
+    )
 
 
 class Env:
-
     def __init__(self, package_dir):
         self.base = package_dir
         self.lib_dir = j(self.base, 'lib')
@@ -99,6 +124,7 @@ def copy_libs(env):
 def add_ca_certs(env):
     print('Downloading CA certs...')
     from urllib.request import urlopen
+
     cdata = urlopen(smelly_constants['cacerts_url']).read()
     dest = os.path.join(env.lib_dir, 'cacert.pem')
     with open(dest, 'wb') as f:
@@ -112,8 +138,7 @@ def copy_python(env):
     for x in os.listdir(srcdir):
         y = j(srcdir, x)
         ext = os.path.splitext(x)[1]
-        if os.path.isdir(y) and x not in ('test', 'hotshot', 'distutils', 'tkinter', 'turtledemo',
-                                          'site-packages', 'idlelib', 'lib2to3', 'dist-packages'):
+        if os.path.isdir(y) and x not in ('test', 'hotshot', 'distutils', 'tkinter', 'turtledemo', 'site-packages', 'idlelib', 'lib2to3', 'dist-packages'):
             shutil.copytree(y, j(env.py_dir, x), ignore=ignore_in_lib)
         if os.path.isfile(y) and ext in ('.py', '.so'):
             shutil.copy2(y, env.py_dir)
@@ -161,8 +186,8 @@ STRIPCMD = ['strip']
 
 def find_binaries(env):
     files = {j(env.bin_dir, x) for x in os.listdir(env.bin_dir)} | {
-        x for x in {
-            j(os.path.dirname(env.bin_dir), x) for x in os.listdir(env.bin_dir)} if os.path.exists(x)}
+        x for x in {j(os.path.dirname(env.bin_dir), x) for x in os.listdir(env.bin_dir)} if os.path.exists(x)
+    }
     for x in walk(env.lib_dir):
         x = os.path.realpath(x)
         if x not in files and is_elf(x):
@@ -171,7 +196,7 @@ def find_binaries(env):
 
 
 def strip_files(files, argv_max=(256 * 1024)):
-    """ Strip a list of files """
+    """Strip a list of files"""
     while files:
         cmd = list(STRIPCMD)
         pathlen = sum(len(s) + 1 for s in cmd)
@@ -180,7 +205,7 @@ def strip_files(files, argv_max=(256 * 1024)):
             cmd.append(f)
             pathlen += len(f) + 1
         if len(cmd) > len(STRIPCMD):
-            all_files = cmd[len(STRIPCMD):]
+            all_files = cmd[len(STRIPCMD) :]
             unwritable_files = tuple(filter(None, (None if os.access(x, os.W_OK) else (x, os.stat(x).st_mode) for x in all_files)))
             [os.chmod(x, stat.S_IWRITE | old_mode) for x, old_mode in unwritable_files]
             subprocess.check_call(cmd)
@@ -192,7 +217,7 @@ def strip_binaries(files):
     before = sum(os.path.getsize(x) for x in files)
     strip_files(files)
     after = sum(os.path.getsize(x) for x in files)
-    print('Stripped {:.1f} MB'.format((before - after) / (1024 * 1024.)))
+    print('Stripped {:.1f} MB'.format((before - after) / (1024 * 1024.0)))
 
 
 def create_tarfile(env, compression_level='9'):
@@ -220,8 +245,7 @@ def create_tarfile(env, compression_level='9'):
     secs = time.time() - start_time
     print('Compressed in {} minutes {} seconds'.format(secs // 60, secs % 60))
     os.rename(f'{dist}.xz', ans)
-    print('Archive {} created: {:.2f} MB'.format(
-        os.path.basename(ans), os.stat(ans).st_size / (1024.**2)))
+    print('Archive {} created: {:.2f} MB'.format(os.path.basename(ans), os.stat(ans).st_size / (1024.0**2)))
 
 
 def main():

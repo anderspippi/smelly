@@ -55,6 +55,7 @@ if getattr(sys, 'frozen', False):
             ans = os.path.dirname(os.path.dirname(ans))
         ans = os.path.join(ans, 'smelly')
         return ans
+
     smelly_base_dir = get_frozen_base()
     del get_frozen_base
 else:
@@ -105,12 +106,15 @@ def _get_config_dir() -> str:
     def make_tmp_conf() -> None:
         import atexit
         import tempfile
+
         ans = tempfile.mkdtemp(prefix='smelly-conf-')
 
         def cleanup() -> None:
             import shutil
+
             with suppress(Exception):
                 shutil.rmtree(ans)
+
         atexit.register(cleanup)
 
     candidate = os.path.abspath(os.path.expanduser(os.environ.get('XDG_CONFIG_HOME') or '~/.config'))
@@ -152,6 +156,7 @@ def runtime_dir() -> str:
         candidate = os.path.abspath(os.environ['smelly_RUNTIME_DIRECTORY'])
     elif is_macos:
         from .fast_data_types import user_cache_dir
+
         candidate = user_cache_dir()
     elif 'XDG_RUNTIME_DIR' in os.environ:
         candidate = os.path.abspath(os.environ['XDG_RUNTIME_DIR'])
@@ -161,6 +166,7 @@ def runtime_dir() -> str:
             candidate = os.path.join(cache_dir(), 'run')
     os.makedirs(candidate, exist_ok=True)
     import stat
+
     if stat.S_IMODE(os.stat(candidate).st_mode) != 0o700:
         os.chmod(candidate, 0o700)
     return candidate
@@ -168,6 +174,7 @@ def runtime_dir() -> str:
 
 def wakeup_io_loop() -> None:
     from .fast_data_types import get_boss
+
     b = get_boss()
     if b is not None:
         b.child_monitor.wakeup()
@@ -233,6 +240,7 @@ def list_smelly_resources(package: str = 'smelly') -> Iterator[str]:
         from importlib.resources import files
     except ImportError:
         from importlib.resources import contents
+
         return iter(contents(package))
     else:
         return (path.name for path in files(package).iterdir())
@@ -245,6 +253,7 @@ def read_smelly_resource(name: str, package_name: str = 'smelly') -> bytes:
         from importlib.resources import files
     except ImportError:
         from importlib.resources import read_binary
+
         return read_binary(package_name, name)
     else:
         return (files(package_name) / name).read_bytes()
@@ -267,6 +276,7 @@ def clear_handled_signals(*a: Any) -> None:
     if not handled_signals:
         return
     import signal
+
     if hasattr(signal, 'pthread_sigmask'):
         signal.pthread_sigmask(signal.SIG_UNBLOCK, handled_signals)
     for s in handled_signals:
@@ -302,4 +312,5 @@ def local_docs() -> str:
 @run_once
 def wrapped_kitten_names() -> FrozenSet[str]:
     import smelly.fast_data_types as f
+
     return frozenset(f.wrapped_kitten_names())

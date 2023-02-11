@@ -49,11 +49,10 @@ class State(NameReprEnum):
 
 
 class File:
-
     def __init__(self, ftc: FileTransmissionCommand):
         self.expected_size = ftc.size
         self.expect_diff = False
-        self.transmit_started_at = self.done_at = 0.
+        self.transmit_started_at = self.done_at = 0.0
         self.written_bytes = 0
         self.received_bytes = 0
         self.sent_bytes = 0
@@ -114,7 +113,6 @@ class File:
 
 
 class TreeNode:
-
     def __init__(self, file: File, local_name: str, parent: Optional['TreeNode'] = None):
         self.entry = file
         self.entry.expanded_local_path = local_name
@@ -190,7 +188,6 @@ def files_for_receive(cli_opts: TransferCLIOptions, dest: str, files: List[File]
 
 
 class ProgressTracker:
-
     def __init__(self) -> None:
         self.total_size_of_all_files = 0
         self.total_bytes_to_transfer = 0
@@ -198,8 +195,8 @@ class ProgressTracker:
         self.total_transferred = 0
         self.transfers: Deque[Transfer] = deque()
         self.transfered_stats_amt = 0
-        self.transfered_stats_interval = 0.
-        self.started_at = 0.
+        self.transfered_stats_interval = 0.0
+        self.started_at = 0.0
         self.done_files: List[File] = []
 
     def change_active_file(self, nf: File) -> None:
@@ -228,11 +225,7 @@ class ProgressTracker:
 
 
 class Manager:
-
-    def __init__(
-        self, request_id: str, spec: List[str], dest: str,
-        bypass: Optional[str] = None, use_rsync: bool = False
-    ):
+    def __init__(self, request_id: str, spec: List[str], dest: str, bypass: Optional[str] = None, use_rsync: bool = False):
         self.request_id = request_id
         self.spec = spec
         self.failed_specs: Dict[int, str] = {}
@@ -311,8 +304,11 @@ class Manager:
                 else:
                     read_signature = sr.st_size > 4096
             yield FileTransmissionCommand(
-                action=Action.file, name=f.remote_path, file_id=f.file_id, ttype=TransmissionType.rsync if read_signature else TransmissionType.simple,
-                compression=Compression.zlib if isinstance(f.decompressor, ZlibDecompressor) else Compression.none
+                action=Action.file,
+                name=f.remote_path,
+                file_id=f.file_id,
+                ttype=TransmissionType.rsync if read_signature else TransmissionType.simple,
+                compression=Compression.zlib if isinstance(f.decompressor, ZlibDecompressor) else Compression.none,
             ).serialize()
             if read_signature:
                 f.expect_diff = True
@@ -495,8 +491,8 @@ class Receive(Handler):
 
     def print_continue_msg(self) -> None:
         self.print(
-            'Press', styled('y', fg='green', bold=True, fg_intense=True), 'to continue or',
-            styled('n', fg='red', bold=True, fg_intense=True), 'to abort')
+            'Press', styled('y', fg='green', bold=True, fg_intense=True), 'to continue or', styled('n', fg='red', bold=True, fg_intense=True), 'to abort'
+        )
 
     def start_transfer(self) -> None:
         self.transmit_started = True
@@ -548,25 +544,42 @@ class Receive(Handler):
         self.asyncio_loop.call_later(delay, self.quit_loop, 1)
 
     def render_progress(
-        self, name: str, spinner_char: str = ' ', bytes_so_far: int = 0, total_bytes: int = 0,
-        secs_so_far: float = 0., bytes_per_sec: float = 0., is_complete: bool = False
+        self,
+        name: str,
+        spinner_char: str = ' ',
+        bytes_so_far: int = 0,
+        total_bytes: int = 0,
+        secs_so_far: float = 0.0,
+        bytes_per_sec: float = 0.0,
+        is_complete: bool = False,
     ) -> None:
         if is_complete:
             bytes_so_far = total_bytes
-        self.write(render_progress_in_width(
-            name, width=self.screen_size.cols, max_path_length=self.max_name_length, spinner_char=spinner_char,
-            bytes_so_far=bytes_so_far, total_bytes=total_bytes, secs_so_far=secs_so_far,
-            bytes_per_sec=bytes_per_sec, is_complete=is_complete
-        ))
+        self.write(
+            render_progress_in_width(
+                name,
+                width=self.screen_size.cols,
+                max_path_length=self.max_name_length,
+                spinner_char=spinner_char,
+                bytes_so_far=bytes_so_far,
+                total_bytes=total_bytes,
+                secs_so_far=secs_so_far,
+                bytes_per_sec=bytes_per_sec,
+                is_complete=is_complete,
+            )
+        )
 
     def draw_progress_for_current_file(self, af: File, spinner_char: str = ' ', is_complete: bool = False) -> None:
         p = self.manager.progress_tracker
         now = monotonic()
         self.render_progress(
-            af.display_name, spinner_char=spinner_char, is_complete=is_complete,
-            bytes_so_far=af.written_bytes, total_bytes=af.expected_size,
+            af.display_name,
+            spinner_char=spinner_char,
+            is_complete=is_complete,
+            bytes_so_far=af.written_bytes,
+            total_bytes=af.expected_size,
             secs_so_far=(af.done_at or now) - af.transmit_started_at,
-            bytes_per_sec=safe_divide(p.transfered_stats_amt, p.transfered_stats_interval)
+            bytes_per_sec=safe_divide(p.transfered_stats_amt, p.transfered_stats_interval),
         )
 
     def erase_progress(self) -> None:
@@ -616,10 +629,13 @@ class Receive(Handler):
             self.print()
             if p.total_transferred > 0:
                 self.render_progress(
-                    'Total', spinner_char=sc,
-                    bytes_so_far=p.total_transferred, total_bytes=p.total_bytes_to_transfer,
-                    secs_so_far=now - p.started_at, is_complete=is_complete,
-                    bytes_per_sec=safe_divide(p.transfered_stats_amt, p.transfered_stats_interval)
+                    'Total',
+                    spinner_char=sc,
+                    bytes_so_far=p.total_transferred,
+                    total_bytes=p.total_bytes_to_transfer,
+                    secs_so_far=now - p.started_at,
+                    is_complete=is_complete,
+                    bytes_per_sec=safe_divide(p.transfered_stats_amt, p.transfered_stats_interval),
                 )
             else:
                 self.print('File data transfer has not yet started', end='')

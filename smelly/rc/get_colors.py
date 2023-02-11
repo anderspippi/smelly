@@ -14,7 +14,6 @@ if TYPE_CHECKING:
 
 
 class GetColors(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     match/str: The window to get the colors for
     configured/bool: Boolean indicating whether to get configured or current colors
@@ -25,19 +24,24 @@ class GetColors(RemoteCommand):
         'Get the terminal colors for the specified window (defaults to active window).'
         ' Colors will be output to stdout in the same syntax as used for :file:`smelly.conf`.'
     )
-    options_spec = '''\
+    options_spec = (
+        '''\
 --configured -c
 type=bool-set
 Instead of outputting the colors for the specified window, output the currently
 configured colors.
 
-''' + '\n\n' + MATCH_WINDOW_OPTION
+'''
+        + '\n\n'
+        + MATCH_WINDOW_OPTION
+    )
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
         return {'configured': opts.configured, 'match': opts.match}
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:
         from smelly.fast_data_types import get_options
+
         opts = get_options()
         ans = {k: getattr(opts, k) for k in opts if isinstance(getattr(opts, k), Color)}
         if not payload_get('configured'):
@@ -55,6 +59,8 @@ configured colors.
         all_keys = natsort_ints(ans)
         maxlen = max(map(len, all_keys))
         return '\n'.join(('{:%ds} {}' % maxlen).format(key, color_as_sharp(ans[key])) for key in all_keys)
+
+
 # }}}
 
 

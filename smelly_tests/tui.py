@@ -6,9 +6,9 @@ from . import BaseTest
 
 
 class TestTUI(BaseTest):
-
     def test_line_edit(self):
         from wellies.tui.line_edit import LineEdit
+
         le = LineEdit()
         le.on_text('abcd', False)
         self.ae(le.cursor_pos, 4)
@@ -44,4 +44,5 @@ class TestTUI(BaseTest):
 
     def test_multiprocessing_spawn(self):
         from smelly.multiprocessing import test_spawn
+
         test_spawn()

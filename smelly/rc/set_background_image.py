@@ -31,7 +31,6 @@ layout_choices = 'tiled,scaled,mirror-tiled,clamped,configured'
 
 
 class SetBackgroundImage(RemoteCommand):
-
     protocol_spec = __doc__ = '''
     data+/str: Chunk of at most 512 bytes of PNG data, base64 encoded. Must send an empty chunk to indicate end of image. \
     Or the special value - to indicate image must be removed.
@@ -47,7 +46,8 @@ class SetBackgroundImage(RemoteCommand):
         ' will be used as the background. If you specify the special value :code:`none` then any existing image will'
         ' be removed.'
     )
-    options_spec = f'''\
+    options_spec = (
+        f'''\
 --all -a
 type=bool-set
 By default, background image is only changed for the currently active OS window. This option will
@@ -71,9 +71,13 @@ type=bool-set
 default=false
 Don't wait for a response from smelly. This means that even if setting the background image
 failed, the command will exit with a success code.
-''' + '\n\n' + MATCH_WINDOW_OPTION
-    args = RemoteCommand.Args(spec='PATH_TO_PNG_IMAGE', count=1, json_field='data', special_parse='!read_window_logo(io_data, args[0])',
-                              completion=ImageCompletion)
+'''
+        + '\n\n'
+        + MATCH_WINDOW_OPTION
+    )
+    args = RemoteCommand.Args(
+        spec='PATH_TO_PNG_IMAGE', count=1, json_field='data', special_parse='!read_window_logo(io_data, args[0])', completion=ImageCompletion
+    )
     reads_streaming_data = True
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
@@ -102,6 +106,7 @@ failed, the command will exit with a success code.
                     yield ret
             ret['data'] = ''
             yield ret
+
         return file_pipe(path)
 
     def response_from_smelly(self, boss: Boss, window: Optional[Window], payload_get: PayloadGetType) -> ResponseType:

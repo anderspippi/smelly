@@ -16,7 +16,7 @@ from .utils import log_error, open_url
 
 CHANGELOG_URL = website_url('changelog')
 RELEASED_VERSION_URL = website_url() + 'current-version.txt'
-CHECK_INTERVAL = 24 * 60 * 60.
+CHECK_INTERVAL = 24 * 60 * 60.0
 
 
 class Notification(NamedTuple):
@@ -38,9 +38,9 @@ def version_notification_log() -> str:
 
 def notify_new_version(release_version: Version) -> None:
     notify(
-            'smelly update available!',
-            'smelly version {} released'.format('.'.join(map(str, release_version))),
-            identifier='new-version',
+        'smelly update available!',
+        'smelly version {} released'.format('.'.join(map(str, release_version))),
+        identifier='new-version',
     )
 
 
@@ -88,10 +88,7 @@ def save_notification(version: Version) -> None:
     lines = []
     for version in sorted(notified_versions):
         n = notified_versions[version]
-        lines.append('{},{},{}'.format(
-            '.'.join(map(str, n.version)),
-            n.time_of_last_notification,
-            n.notification_count))
+        lines.append('{},{},{}'.format('.'.join(map(str, n.version)), n.time_of_last_notification, n.notification_count))
     atomic_save('\n'.join(lines).encode('utf-8'), version_notification_log())
 
 
@@ -105,6 +102,7 @@ def process_current_release(raw: str) -> None:
 def run_worker() -> None:
     import random
     import time
+
     time.sleep(random.randint(1000, 4000) / 1000)
     with suppress(BrokenPipeError):  # happens if parent process is killed before us
         print(get_released_version())
@@ -112,10 +110,9 @@ def run_worker() -> None:
 
 def update_check() -> bool:
     try:
-        p = subprocess.Popen([
-            smelly_exe(), '+runpy',
-            'from smelly.update_check import run_worker; run_worker()'
-        ], stdout=subprocess.PIPE, preexec_fn=clear_handled_signals)
+        p = subprocess.Popen(
+            [smelly_exe(), '+runpy', 'from smelly.update_check import run_worker; run_worker()'], stdout=subprocess.PIPE, preexec_fn=clear_handled_signals
+        )
     except OSError as e:
         log_error(f'Failed to run smelly for update check, with error: {e}')
         return False

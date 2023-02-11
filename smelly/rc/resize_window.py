@@ -18,11 +18,10 @@ class ResizeWindow(RemoteCommand):
     '''
 
     short_desc = 'Resize the specified windows'
-    desc = (
-        'Resize the specified windows in the current layout.'
-        ' Note that not all layouts can resize all windows in all directions.'
-    )
-    options_spec = MATCH_WINDOW_OPTION + '''\n
+    desc = 'Resize the specified windows in the current layout.' ' Note that not all layouts can resize all windows in all directions.'
+    options_spec = (
+        MATCH_WINDOW_OPTION
+        + '''\n
 --increment -i
 type=int
 default=2
@@ -43,6 +42,7 @@ The special value :code:`reset` will reset the layout to its default configurati
 type=bool-set
 Resize the window this command is run in, rather than the active window.
 '''
+    )
     string_return_is_error = True
 
     def message_to_smelly(self, global_opts: RCOptions, opts: 'CLIOptions', args: ArgsType) -> PayloadType:
@@ -53,8 +53,7 @@ Resize the window this command is run in, rather than the active window.
         resized: Union[bool, None, str] = False
         if windows and windows[0]:
             resized = boss.resize_layout_window(
-                windows[0], increment=payload_get('increment'), is_horizontal=payload_get('axis') == 'horizontal',
-                reset=payload_get('axis') == 'reset'
+                windows[0], increment=payload_get('increment'), is_horizontal=payload_get('axis') == 'horizontal', reset=payload_get('axis') == 'reset'
             )
         return resized
 

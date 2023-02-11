@@ -7,7 +7,6 @@ from smelly.conf.utils import merge_dicts, positive_int, python_string, to_color
 
 
 class Parser:
-
     def added_bg(self, val: str, ans: typing.Dict[str, typing.Any]) -> None:
         ans['added_bg'] = to_color(val)
 

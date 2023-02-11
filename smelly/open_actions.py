@@ -72,11 +72,9 @@ def parse(lines: Iterable[str]) -> Iterator[OpenAction]:
         entries.append((tuple(match_criteria), tuple(raw_actions)))
 
     with to_cmdline_implementation.filter_env_vars(
-        'URL', 'FILE_PATH', 'FILE', 'FRAGMENT', 'URL_PATH',
-        EDITOR=shlex.join(get_editor()),
-        SHELL=resolved_shell(get_options())[0]
+        'URL', 'FILE_PATH', 'FILE', 'FRAGMENT', 'URL_PATH', EDITOR=shlex.join(get_editor()), SHELL=resolved_shell(get_options())[0]
     ):
-        for (mc, action_defns) in entries:
+        for mc, action_defns in entries:
             actions: List[KeyAction] = []
             for defn in action_defns:
                 actions.extend(resolve_aliases_and_parse_actions(defn, alias_map, 'open_action'))
@@ -86,6 +84,7 @@ def parse(lines: Iterable[str]) -> Iterator[OpenAction]:
 def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc: MatchCriteria) -> bool:
     if mc.type == 'url':
         import re
+
         try:
             pat = re.compile(mc.value)
         except re.error:
@@ -94,6 +93,7 @@ def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc:
 
     if mc.type == 'mime':
         import fnmatch
+
         mt = guess_type(unquoted_path, allow_filesystem_access=purl.scheme in ('', 'file'))
         if not mt:
             return False
@@ -124,6 +124,7 @@ def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc:
 
     if mc.type == 'fragment_matches':
         import re
+
         try:
             pat = re.compile(mc.value)
         except re.error:
@@ -133,6 +134,7 @@ def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc:
 
     if mc.type == 'path':
         import fnmatch
+
         try:
             return fnmatch.fnmatchcase(unquoted_path.lower(), mc.value)
         except Exception:
@@ -140,6 +142,7 @@ def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc:
 
     if mc.type == 'file':
         import fnmatch
+
         try:
             fname = posixpath.basename(unquoted_path)
         except Exception:
@@ -172,13 +175,7 @@ def actions_for_url_from_list(url: str, actions: Iterable[OpenAction]) -> Iterat
     if purl.fragment:
         up += f'#{purl.fragment}'
 
-    env = {
-        'URL': url,
-        'FILE_PATH': path,
-        'URL_PATH': up,
-        'FILE': posixpath.basename(path),
-        'FRAGMENT': unquote(purl.fragment)
-    }
+    env = {'URL': url, 'FILE_PATH': path, 'URL_PATH': up, 'FILE': posixpath.basename(path), 'FRAGMENT': unquote(purl.fragment)}
 
     def expand(x: Any) -> Any:
         as_bytes = isinstance(x, bytes)
@@ -225,16 +222,22 @@ def clear_caches() -> None:
 
 @run_once
 def default_open_actions() -> Tuple[OpenAction, ...]:
-    return tuple(parse('''\
+    return tuple(
+        parse(
+            '''\
 # Open smelly HTML docs links
 protocol smelly+doc
 action show_smelly_doc $URL_PATH
-    '''.splitlines()))
+    '''.splitlines()
+        )
+    )
 
 
 @run_once
 def default_launch_actions() -> Tuple[OpenAction, ...]:
-    return tuple(parse('''\
+    return tuple(
+        parse(
+            '''\
 # Open script files
 protocol file
 ext sh,command,tool
@@ -268,7 +271,9 @@ action launch --type=os-window smelly +kitten icat --hold $FILE_PATH
 # Open ssh URLs with ssh command
 protocol ssh
 action launch --type=os-window ssh $URL
-'''.splitlines()))
+'''.splitlines()
+        )
+    )
 
 
 def actions_for_url(url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
@@ -285,7 +290,8 @@ def actions_for_url(url: str, actions_spec: Optional[str] = None) -> Iterator[Ke
 
 
 def actions_for_launch(url: str) -> Iterator[KeyAction]:
-    # Custom launch actions using smelly URL scheme needs to be prefixed with `smelly:///launch/`
+    # Custom launch actions using smelly URL scheme needs to be prefixed with
+    # `smelly:///launch/`
     if url.startswith('smelly://') and not url.startswith('smelly:///launch/'):
         return
     found = False

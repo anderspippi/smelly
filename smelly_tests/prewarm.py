@@ -17,7 +17,6 @@ from . import BaseTest
 
 
 class Prewarm(BaseTest):
-
     maxDiff = None
 
     def test_prewarming(self):
@@ -30,14 +29,19 @@ class Prewarm(BaseTest):
         pty = self.create_pty(cols=cols)
         ttyname = os.ttyname(pty.slave_fd)
         opts = get_options()
-        opts.config_overrides = 'font_family prewarm',
+        opts.config_overrides = ('font_family prewarm',)
         os.environ['SHOULD_NOT_BE_PRESENT'] = '1'
         p = fork_prewarm_process(opts, use_exec=True)
         del os.environ['SHOULD_NOT_BE_PRESENT']
         if p is None:
             return
         p.take_from_worker_fd(create_file=True)
-        child = p(pty.slave_fd, [smelly_exe(), '+runpy', """\
+        child = p(
+            pty.slave_fd,
+            [
+                smelly_exe(),
+                '+runpy',
+                """\
 import os, json; from smelly.utils import *; from smelly.fast_data_types import get_options; print(json.dumps({
         'cterm': os.ctermid(),
         'ttyname': os.ttyname(sys.stdout.fileno()),
@@ -47,7 +51,13 @@ import os, json; from smelly.utils import *; from smelly.fast_data_types import 
         'pid': os.getpid(),
         'font_family': get_options().font_family,
         'stdin': sys.stdin.read(),
-        }, indent=2), "ALL_OUTPUT_PRESENT", sep="")"""], cwd=cwd, env=env, stdin_data=stdin_data, timeout=15.0)
+        }, indent=2), "ALL_OUTPUT_PRESENT", sep="")""",
+            ],
+            cwd=cwd,
+            env=env,
+            stdin_data=stdin_data,
+            timeout=15.0,
+        )
         self.assertFalse(pty.screen_contents().strip())
         p.mark_child_as_ready(child.child_id)
         pty.wait_till(lambda: 'ALL_OUTPUT_PRESENT' in pty.screen_contents())
@@ -63,6 +73,7 @@ import os, json; from smelly.utils import *; from smelly.fast_data_types import 
 
     def test_signal_handling(self):
         from smelly.prewarm import restore_python_signal_handlers, wait_for_child_death
+
         expecting_code = 0
         expecting_signal = signal.SIGCHLD
         expecting_value = 0
@@ -86,7 +97,7 @@ import os, json; from smelly.utils import *; from smelly.fast_data_types import 
             found_signal = False
             st = time.monotonic()
             while time.monotonic() - st < 30:
-                for (fd, event) in poll.poll(10):
+                for fd, event in poll.poll(10):
                     if fd == signal_read_fd:
                         signals = []
                         read_signals(signal_read_fd, signals.append)
@@ -107,6 +118,7 @@ import os, json; from smelly.utils import *; from smelly.fast_data_types import 
 
         def run():
             return subprocess.Popen([smelly_exe(), '+runpy', 'import sys; sys.stdin.read()'], stderr=subprocess.DEVNULL, stdin=subprocess.PIPE)
+
         p = run()
         orig_mask = signal.pthread_sigmask(signal.SIG_BLOCK, ())
         signal_read_fd = install_signal_handlers(signal.SIGCHLD, signal.SIGUSR1)[0]
