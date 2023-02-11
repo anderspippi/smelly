@@ -1,0 +1,12 @@
+{
+  "name": "smelly",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/anderspippi/smelly.git",
+    "type": "git"
+  },
+  "author": "anderspippi@blckswan.no",
+  "license": "MIT"
+}
