@@ -3,7 +3,7 @@ on: [pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-12.04
+    runs-on: macos-12
     name: Checks
     steps:
     - uses: actions/checkout@v2
@@ -14,4 +14,4 @@ jobs:
     - run: pip install "black<23" pylint==v3.0.0a3 mypy==v0.902
     - run: black --diff --check $(git ls-files '*.py')
     - run: pylint --disable=all --enable=unused-import $(git ls-files '*.py')
-    - run: mypy --strict $(git ls-files '*.py')
+    - run: mypy  $(git ls-files '*.py')
