@@ -2,7 +2,7 @@ name: "Code scanning - action"
 
 on:
   push:
-    branches: [master, ]
+    branches: [master]
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [master]
@@ -16,7 +16,7 @@ jobs:
   CodeQL-Build:
 
     permissions:
-      contents: read # to fetch code (actions/checkout)
+      contents: write # to fetch code (actions/checkout)
       security-events: write # to upload SARIF results (github/codeql-action/analyze)
 
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
     - name: Install Go
       uses: actions/setup-go@v3
       with:
-        go-version: ">=1.20.0"
+        go-version: "=1.15.0"
 
     - name: Checkout repository
       uses: actions/checkout@v3
