@@ -59,7 +59,8 @@ if getattr(sys, 'frozen', False):
     smelly_base_dir = get_frozen_base()
     del get_frozen_base
 else:
-    smelly_base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    smelly_base_dir = os.path.dirname(
+        os.path.dirname(os.path.abspath(__file__)))
     extensions_dir = os.path.join(smelly_base_dir, 'smelly')
 
 
@@ -67,7 +68,8 @@ else:
 def smelly_exe() -> str:
     rpath = getattr(sys, 'smelly_run_data').get('bundle_exe_dir')
     if not rpath:
-        items = os.environ.get('PATH', '').split(os.pathsep) + [os.path.join(smelly_base_dir, 'smelly', 'launcher')]
+        items = os.environ.get('PATH', '').split(
+            os.pathsep) + [os.path.join(smelly_base_dir, 'smelly', 'launcher')]
         seen: Set[str] = set()
         for candidate in filter(None, items):
             if candidate not in seen:
@@ -87,20 +89,26 @@ def kitten_exe() -> str:
 
 def _get_config_dir() -> str:
     if 'smelly_CONFIG_DIRECTORY' in os.environ:
-        return os.path.abspath(os.path.expanduser(os.environ['smelly_CONFIG_DIRECTORY']))
+        return os.path.abspath(
+            os.path.expanduser(os.environ['smelly_CONFIG_DIRECTORY']))
 
     locations = []
     if 'XDG_CONFIG_HOME' in os.environ:
-        locations.append(os.path.abspath(os.path.expanduser(os.environ['XDG_CONFIG_HOME'])))
+        locations.append(
+            os.path.abspath(
+                os.path.expanduser(os.environ['XDG_CONFIG_HOME'])))
     locations.append(os.path.expanduser('~/.config'))
     if is_macos:
         locations.append(os.path.expanduser('~/Library/Preferences'))
-    for loc in filter(None, os.environ.get('XDG_CONFIG_DIRS', '').split(os.pathsep)):
+    for loc in filter(None, os.environ.get('XDG_CONFIG_DIRS', '').split(
+            os.pathsep)):
         locations.append(os.path.abspath(os.path.expanduser(loc)))
     for loc in locations:
         if loc:
             q = os.path.join(loc, appname)
-            if os.access(q, os.W_OK) and os.path.exists(os.path.join(q, 'smelly.conf')):
+            if os.access(
+                    q, os.W_OK) and os.path.exists(
+                    os.path.join(q, 'smelly.conf')):
                 return q
 
     def make_tmp_conf() -> None:
@@ -117,12 +125,14 @@ def _get_config_dir() -> str:
 
         atexit.register(cleanup)
 
-    candidate = os.path.abspath(os.path.expanduser(os.environ.get('XDG_CONFIG_HOME') or '~/.config'))
+    candidate = os.path.abspath(os.path.expanduser(
+        os.environ.get('XDG_CONFIG_HOME') or '~/.config'))
     ans = os.path.join(candidate, appname)
     try:
         os.makedirs(ans, exist_ok=True)
     except FileExistsError:
-        raise SystemExit(f'A file {ans} already exists. It must be a directory, not a file.')
+        raise SystemExit(
+            f'A file {ans} already exists. It must be a directory, not a file.')
     except PermissionError:
         make_tmp_conf()
     except OSError as err:
@@ -142,7 +152,9 @@ def cache_dir() -> str:
     if 'smelly_CACHE_DIRECTORY' in os.environ:
         candidate = os.path.abspath(os.environ['smelly_CACHE_DIRECTORY'])
     elif is_macos:
-        candidate = os.path.join(os.path.expanduser('~/Library/Caches'), appname)
+        candidate = os.path.join(
+            os.path.expanduser('~/Library/Caches'),
+            appname)
     else:
         candidate = os.environ.get('XDG_CACHE_HOME', '~/.cache')
         candidate = os.path.join(os.path.expanduser(candidate), appname)
@@ -162,7 +174,8 @@ def runtime_dir() -> str:
         candidate = os.path.abspath(os.environ['XDG_RUNTIME_DIR'])
     else:
         candidate = f'/run/user/{os.geteuid()}'
-        if not os.path.isdir(candidate) or not os.access(candidate, os.X_OK | os.W_OK | os.R_OK):
+        if not os.path.isdir(candidate) or not os.access(
+                candidate, os.X_OK | os.W_OK | os.R_OK):
             candidate = os.path.join(cache_dir(), 'run')
     os.makedirs(candidate, exist_ok=True)
     import stat
@@ -182,13 +195,16 @@ def wakeup_io_loop() -> None:
 
 terminfo_dir = os.path.join(smelly_base_dir, 'terminfo')
 logo_png_file = os.path.join(smelly_base_dir, 'logo', 'smelly.png')
-beam_cursor_data_file = os.path.join(smelly_base_dir, 'logo', 'beam-cursor.png')
+beam_cursor_data_file = os.path.join(
+    smelly_base_dir, 'logo', 'beam-cursor.png')
 shell_integration_dir = os.path.join(smelly_base_dir, 'shell-integration')
 try:
     shell_path = pwd.getpwuid(os.geteuid()).pw_shell or '/bin/sh'
 except KeyError:
     with suppress(Exception):
-        print('Failed to read login shell via getpwuid() for current user, falling back to /bin/sh', file=sys.stderr)
+        print(
+            'Failed to read login shell via getpwuid() for current user, falling back to /bin/sh',
+            file=sys.stderr)
     shell_path = '/bin/sh'
 # Keep this short as it is limited to 103 bytes on macOS
 # https://github.com/ansible/ansible/issues/11536#issuecomment-153030743
@@ -236,7 +252,8 @@ def running_in_smelly(set_val: Optional[bool] = None) -> bool:
 def list_smelly_resources(package: str = 'smelly') -> Iterator[str]:
     try:
         if sys.version_info[:2] < (3, 10):
-            raise ImportError('importlib.resources.files() doesnt work with frozen builds on python 3.9')
+            raise ImportError(
+                'importlib.resources.files() doesnt work with frozen builds on python 3.9')
         from importlib.resources import files
     except ImportError:
         from importlib.resources import contents
@@ -249,7 +266,8 @@ def list_smelly_resources(package: str = 'smelly') -> Iterator[str]:
 def read_smelly_resource(name: str, package_name: str = 'smelly') -> bytes:
     try:
         if sys.version_info[:2] < (3, 10):
-            raise ImportError('importlib.resources.files() doesnt work with frozen builds on python 3.9')
+            raise ImportError(
+                'importlib.resources.files() doesnt work with frozen builds on python 3.9')
         from importlib.resources import files
     except ImportError:
         from importlib.resources import read_binary

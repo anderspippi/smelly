@@ -54,6 +54,10 @@ action two
             self.ae(acts[0].func, func)
             self.ae(acts[0].args, args)
 
-        single('file://hostname/tmp/moo.txt#23', 'launch', *get_editor(), '/tmp/moo.txt', '23')
+        single('file://hostname/tmp/moo.txt#23', 'launch',
+               *get_editor(), '/tmp/moo.txt', '23')
         single('some thing.txt', 'ignored')
-        self.ae(actions('x:///a.txt'), (KeyAction('one', ()), KeyAction('two', ())))
+        self.ae(
+            actions('x:///a.txt'),
+            (KeyAction('one', ()),
+             KeyAction('two', ())))

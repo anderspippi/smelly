@@ -32,7 +32,10 @@ def sanitize_window_size(x: Any) -> int:
     return max(20, min(ans, 50000))
 
 
-def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]) -> Callable[[int, int, float, float, float, float], Tuple[int, int]]:
+def initial_window_size_func(opts: WindowSizeData, cached_values:
+                             Dict[str, Any]) -> Callable[[int, int, float,
+                                                         float, float, float],
+                                                         Tuple[int, int]]:
     if 'window-size' in cached_values and opts.remember_window_size:
         ws = cached_values['window-size']
         try:
@@ -48,7 +51,10 @@ def initial_window_size_func(opts: WindowSizeData, cached_values: Dict[str, Any]
     w, w_unit = opts.initial_window_sizes.width
     h, h_unit = opts.initial_window_sizes.height
 
-    def get_window_size(cell_width: int, cell_height: int, dpi_x: float, dpi_y: float, xscale: float, yscale: float) -> Tuple[int, int]:
+    def get_window_size(
+            cell_width: int, cell_height: int, dpi_x: float, dpi_y: float,
+            xscale: float, yscale: float) -> Tuple[
+            int, int]:
         if not is_macos and not is_wayland():
             # Not sure what the deal with scaling on X11 is
             xscale = yscale = 1

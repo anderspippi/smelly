@@ -133,18 +133,25 @@ def load_all_shaders(semi_transparent: bool = False) -> None:
     load_borders_program()
 
 
-def init_glfw_module(glfw_module: str, debug_keyboard: bool = False, debug_rendering: bool = False) -> None:
+def init_glfw_module(
+        glfw_module: str, debug_keyboard: bool = False,
+        debug_rendering: bool = False) -> None:
     if not glfw_init(glfw_path(glfw_module), debug_keyboard, debug_rendering):
         raise SystemExit('GLFW initialization failed')
 
 
-def init_glfw(opts: Options, debug_keyboard: bool = False, debug_rendering: bool = False) -> str:
-    glfw_module = 'cocoa' if is_macos else ('wayland' if is_wayland(opts) else 'x11')
+def init_glfw(opts: Options, debug_keyboard: bool = False,
+              debug_rendering: bool = False) -> str:
+    glfw_module = 'cocoa' if is_macos else (
+        'wayland' if is_wayland(opts) else 'x11')
     init_glfw_module(glfw_module, debug_keyboard, debug_rendering)
     return glfw_module
 
 
-def get_macos_shortcut_for(func_map: Dict[Tuple[str, ...], List[SingleKey]], defn: str = 'new_os_window', lookup_name: str = '') -> Optional[SingleKey]:
+def get_macos_shortcut_for(
+        func_map: Dict[Tuple[str, ...],
+                       List[SingleKey]],
+        defn: str = 'new_os_window', lookup_name: str = '') -> Optional[SingleKey]:
     # for maximum robustness we should use opts.alias_map to resolve
     # aliases however this requires parsing everything on startup which could
     # be potentially slow. Lets just hope the user doesnt alias these
@@ -165,7 +172,10 @@ def get_macos_shortcut_for(func_map: Dict[Tuple[str, ...], List[SingleKey]], def
                 # presumably because Apple reserves them for IME, see
                 # https://github.com/backbiter-no/smelly/issues/3515
                 continue
-            if cocoa_set_global_shortcut(lookup_name or qkey[0], candidate[0], candidate[2]):
+            if cocoa_set_global_shortcut(
+                    lookup_name or qkey[0],
+                    candidate[0],
+                    candidate[2]):
                 ans = candidate
                 break
     return ans
@@ -185,7 +195,8 @@ def set_macos_app_custom_icon() -> None:
             from .fast_data_types import cocoa_set_app_icon, cocoa_set_dock_icon
 
             krd = getattr(sys, 'smelly_run_data')
-            bundle_path = os.path.dirname(os.path.dirname(krd.get('bundle_exe_dir')))
+            bundle_path = os.path.dirname(
+                os.path.dirname(krd.get('bundle_exe_dir')))
             icon_sentinel = os.path.join(bundle_path, 'Icon\r')
             sentinel_mtime = safe_mtime(icon_sentinel)
             if sentinel_mtime is None or sentinel_mtime < custom_icon_mtime:
@@ -208,7 +219,9 @@ def set_x11_window_icon() -> None:
     set_default_window_icon(f'{path}-128{ext}')
 
 
-def _run_app(opts: Options, args: CLIOptions, prewarm: PrewarmProcess, bad_lines: Sequence[BadLine] = ()) -> None:
+def _run_app(
+        opts: Options, args: CLIOptions, prewarm: PrewarmProcess,
+        bad_lines: Sequence[BadLine] = ()) -> None:
     global_shortcuts: Dict[str, SingleKey] = {}
     if is_macos:
         from collections import defaultdict
@@ -238,16 +251,23 @@ def _run_app(opts: Options, args: CLIOptions, prewarm: PrewarmProcess, bad_lines
             val = get_macos_shortcut_for(func_map, ac)
             if val is not None:
                 global_shortcuts[ac] = val
-        val = get_macos_shortcut_for(func_map, 'clear_terminal reset active', lookup_name='reset_terminal')
+        val = get_macos_shortcut_for(
+            func_map, 'clear_terminal reset active',
+            lookup_name='reset_terminal')
         if val is not None:
             global_shortcuts['reset_terminal'] = val
-        val = get_macos_shortcut_for(func_map, 'clear_terminal to_cursor active', lookup_name='clear_terminal_and_scrollback')
+        val = get_macos_shortcut_for(
+            func_map, 'clear_terminal to_cursor active',
+            lookup_name='clear_terminal_and_scrollback')
         if val is not None:
             global_shortcuts['clear_terminal_and_scrollback'] = val
-        val = get_macos_shortcut_for(func_map, 'load_config_file', lookup_name='reload_config')
+        val = get_macos_shortcut_for(
+            func_map, 'load_config_file', lookup_name='reload_config')
         if val is not None:
             global_shortcuts['reload_config'] = val
-        val = get_macos_shortcut_for(func_map, f'open_url {website_url()}', lookup_name='open_smelly_website')
+        val = get_macos_shortcut_for(
+            func_map, f'open_url {website_url()}',
+            lookup_name='open_smelly_website')
         if val is not None:
             global_shortcuts['open_smelly_website'] = val
 
@@ -258,18 +278,22 @@ def _run_app(opts: Options, args: CLIOptions, prewarm: PrewarmProcess, bad_lines
     if not is_wayland() and not is_macos:  # no window icons on wayland
         set_x11_window_icon()
     with cached_values_for(run_app.cached_values_name) as cached_values:
-        startup_sessions = tuple(create_sessions(opts, args, default_session=opts.startup_session))
-        wincls = (startup_sessions[0].os_window_class if startup_sessions else '') or args.cls or appname
+        startup_sessions = tuple(
+            create_sessions(
+                opts, args,
+                default_session=opts.startup_session))
+        wincls = (startup_sessions[0].os_window_class
+                  if startup_sessions else '') or args.cls or appname
         with startup_notification_handler(extra_callback=run_app.first_window_callback) as pre_show_callback:
             window_id = create_os_window(
-                run_app.initial_window_size_func(get_os_window_sizing_data(opts, startup_sessions[0] if startup_sessions else None), cached_values),
-                pre_show_callback,
-                args.title or appname,
-                args.name or args.cls or appname,
-                wincls,
-                load_all_shaders,
-                disallow_override_title=bool(args.title),
-            )
+                run_app.initial_window_size_func(
+                    get_os_window_sizing_data(
+                        opts, startup_sessions[0]
+                        if startup_sessions else None),
+                    cached_values),
+                pre_show_callback, args.title or appname, args.
+                name or args.cls or appname, wincls, load_all_shaders,
+                disallow_override_title=bool(args.title),)
         boss = Boss(opts, args, cached_values, global_shortcuts, prewarm)
         boss.start(window_id, startup_sessions)
         if bad_lines:
@@ -286,9 +310,13 @@ class AppRunner:
         self.first_window_callback = lambda window_handle: None
         self.initial_window_size_func = initial_window_size_func
 
-    def __call__(self, opts: Options, args: CLIOptions, prewarm: PrewarmProcess, bad_lines: Sequence[BadLine] = ()) -> None:
+    def __call__(
+            self, opts: Options, args: CLIOptions, prewarm: PrewarmProcess,
+            bad_lines: Sequence[BadLine] = ()) -> None:
         set_scale(opts.box_drawing_scale)
-        set_options(opts, is_wayland(), args.debug_rendering, args.debug_font_fallback)
+        set_options(
+            opts, is_wayland(),
+            args.debug_rendering, args.debug_font_fallback)
         try:
             set_font_family(opts, debug_font_matching=args.debug_font_fallback)
             _run_app(opts, args, prewarm, bad_lines)
@@ -320,7 +348,8 @@ def ensure_macos_locale() -> None:
                 if lang.startswith('en_'):
                     lang = 'en_US'
                 else:
-                    log_error(f'Could not set LANG Cocoa returns language as: {lang}')
+                    log_error(
+                        f'Could not set LANG Cocoa returns language as: {lang}')
             os.environ['LANG'] = f'{lang}.UTF-8'
             set_LANG_in_default_env(os.environ['LANG'])
 
@@ -344,11 +373,16 @@ def setup_profiling() -> Generator[None, None, None]:
         cg = '/tmp/smelly-profile.callgrind'
         print('Post processing profile data for', exe, '...')
         with open(cg, 'wb') as f:
-            subprocess.call(['pprof', '--callgrind', exe, '/tmp/smelly-profile.log'], stdout=f)
+            subprocess.call(
+                ['pprof', '--callgrind', exe, '/tmp/smelly-profile.log'],
+                stdout=f)
         try:
-            subprocess.Popen(['kcachegrind', cg], preexec_fn=clear_handled_signals)
+            subprocess.Popen(
+                ['kcachegrind', cg],
+                preexec_fn=clear_handled_signals)
         except FileNotFoundError:
-            subprocess.call(['pprof', '--text', exe, '/tmp/smelly-profile.log'])
+            subprocess.call(
+                ['pprof', '--text', exe, '/tmp/smelly-profile.log'])
             print('To view the graphical call data, use: kcachegrind', cg)
 
 
@@ -373,7 +407,7 @@ def expand_listen_on(listen_on: str, from_config_file: bool) -> str:
         listen_on += '-{smelly_pid}'
     listen_on = listen_on.replace('{smelly_pid}', str(os.getpid()))
     if listen_on.startswith('unix:'):
-        path = listen_on[len('unix:') :]
+        path = listen_on[len('unix:'):]
         if not path.startswith('@'):
             if path.startswith('~'):
                 listen_on = f'unix:{os.path.expanduser(path)}'
@@ -387,7 +421,9 @@ def expand_listen_on(listen_on: str, from_config_file: bool) -> str:
 def safe_samefile(a: str, b: str) -> bool:
     with suppress(OSError):
         return os.path.samefile(a, b)
-    return os.path.abspath(os.path.realpath(a)) == os.path.abspath(os.path.realpath(b))
+    return os.path.abspath(
+        os.path.realpath(a)) == os.path.abspath(
+        os.path.realpath(b))
 
 
 def prepend_if_not_present(path: str, paths_serialized: str) -> str:
@@ -408,7 +444,8 @@ def ensure_smelly_in_path() -> None:
     if not rpath:
         return
     if rpath:
-        modify_path = is_macos or getattr(sys, 'frozen', False) or krd.get('from_source')
+        modify_path = is_macos or getattr(
+            sys, 'frozen', False) or krd.get('from_source')
         existing = shutil.which('smelly')
         if modify_path or not existing:
             env_path = os.environ.get('PATH', '')
@@ -423,7 +460,8 @@ def ensure_kitten_in_path() -> None:
     if existing and safe_samefile(existing, correct_kitten):
         return
     env_path = os.environ.get('PATH', '')
-    os.environ['PATH'] = prepend_if_not_present(os.path.dirname(correct_kitten), env_path)
+    os.environ['PATH'] = prepend_if_not_present(
+        os.path.dirname(correct_kitten), env_path)
 
 
 def setup_manpath(env: Dict[str, str]) -> None:
@@ -449,7 +487,8 @@ def setup_environment(opts: Options, cli_opts: CLIOptions) -> None:
         cli_opts.listen_on = opts.listen_on
         from_config_file = True
     if cli_opts.listen_on:
-        cli_opts.listen_on = expand_listen_on(cli_opts.listen_on, from_config_file)
+        cli_opts.listen_on = expand_listen_on(
+            cli_opts.listen_on, from_config_file)
     env = opts.env.copy()
     ensure_smelly_in_path()
     ensure_kitten_in_path()
@@ -459,7 +498,8 @@ def setup_environment(opts: Options, cli_opts: CLIOptions) -> None:
         # if child_path is None it will be inherited from os.environ,
         # the other values mean the user doesn't want a PATH
         if child_path not in ('', DELETE_ENV_VAR) and child_path is not None:
-            env['PATH'] = prepend_if_not_present(os.path.dirname(smelly_path), env['PATH'])
+            env['PATH'] = prepend_if_not_present(
+                os.path.dirname(smelly_path), env['PATH'])
     setup_manpath(env)
     set_default_env(env)
 
@@ -485,7 +525,8 @@ def _main() -> None:
     running_in_smelly(True)
 
     args = sys.argv[1:]
-    if is_macos and os.environ.pop('smelly_LAUNCHED_BY_LAUNCH_SERVICES', None) == '1':
+    if is_macos and os.environ.pop(
+            'smelly_LAUNCHED_BY_LAUNCH_SERVICES', None) == '1':
         os.chdir(os.path.expanduser('~'))
         args = macos_cmdline(args)
         getattr(sys, 'smelly_run_data')['launched_by_launch_services'] = True
@@ -501,11 +542,12 @@ def _main() -> None:
         msg: Optional[str] = (
             'Run smelly and open the specified files or URLs in it, using launch-actions.conf. For details'
             ' see https://sw.backbiter-no.net/smelly/open_actions/#scripting-the-opening-of-files-with-smelly-on-macos'
-            '\n\nAll the normal smelly options can be used.'
-        )
+            '\n\nAll the normal smelly options can be used.')
     else:
         usage = msg = appname = None
-    cli_opts, rest = parse_args(args=args, result_class=CLIOptions, usage=usage, message=msg, appname=appname)
+    cli_opts, rest = parse_args(
+        args=args, result_class=CLIOptions, usage=usage, message=msg,
+        appname=appname)
     if getattr(sys, 'cmdline_args_for_open', False):
         setattr(sys, 'cmdline_args_for_open', rest)
         cli_opts.args = []
@@ -553,7 +595,8 @@ def _main() -> None:
         from .window import global_watchers
 
         global_watchers.set_extra(cli_opts.watcher)
-        log_error('The --watcher command line option has been deprecated in favor of using the watcher option in smelly.conf')
+        log_error(
+            'The --watcher command line option has been deprecated in favor of using the watcher option in smelly.conf')
     try:
         with setup_profiling():
             # Avoid needing to launch threads to reap zombies

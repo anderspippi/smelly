@@ -39,10 +39,13 @@ class SearchTreeNode:
     def __init__(self, type: ExpressionType) -> None:
         self.type = type
 
-    def search(self, universal_set: Set[T], get_matches: GetMatches[T]) -> Set[T]:
+    def search(self, universal_set: Set[T],
+               get_matches: GetMatches[T]) -> Set[T]:
         return self(universal_set, get_matches)
 
-    def __call__(self, candidates: Set[T], get_matches: GetMatches[T]) -> Set[T]:
+    def __call__(
+            self, candidates: Set[T],
+            get_matches: GetMatches[T]) -> Set[T]:
         return set()
 
     def iter_token_nodes(self) -> Iterator['TokenNode']:
@@ -54,7 +57,9 @@ class OrNode(SearchTreeNode):
         self.lhs = lhs
         self.rhs = rhs
 
-    def __call__(self, candidates: Set[T], get_matches: GetMatches[T]) -> Set[T]:
+    def __call__(
+            self, candidates: Set[T],
+            get_matches: GetMatches[T]) -> Set[T]:
         lhs = self.lhs(candidates, get_matches)
         return lhs.union(self.rhs(candidates.difference(lhs), get_matches))
 
@@ -70,7 +75,9 @@ class AndNode(SearchTreeNode):
         self.lhs = lhs
         self.rhs = rhs
 
-    def __call__(self, candidates: Set[T], get_matches: GetMatches[T]) -> Set[T]:
+    def __call__(
+            self, candidates: Set[T],
+            get_matches: GetMatches[T]) -> Set[T]:
         lhs = self.lhs(candidates, get_matches)
         return self.rhs(lhs, get_matches)
 
@@ -85,7 +92,9 @@ class NotNode(SearchTreeNode):
     def __init__(self, rhs: SearchTreeNode) -> None:
         self.rhs = rhs
 
-    def __call__(self, candidates: Set[T], get_matches: GetMatches[T]) -> Set[T]:
+    def __call__(
+            self, candidates: Set[T],
+            get_matches: GetMatches[T]) -> Set[T]:
         return candidates.difference(self.rhs(candidates, get_matches))
 
     def iter_token_nodes(self) -> Iterator['TokenNode']:
@@ -99,7 +108,9 @@ class TokenNode(SearchTreeNode):
         self.location = location
         self.query = query
 
-    def __call__(self, candidates: Set[T], get_matches: GetMatches[T]) -> Set[T]:
+    def __call__(
+            self, candidates: Set[T],
+            get_matches: GetMatches[T]) -> Set[T]:
         return get_matches(self.location, self.query, candidates)
 
     def iter_token_nodes(self) -> Iterator['TokenNode']:
@@ -111,16 +122,15 @@ class Token(NamedTuple):
     val: str
 
 
-lex_scanner = getattr(re, 'Scanner')(
-    [
-        (r'[()]', lambda x, t: Token(TokenType.OPCODE, t)),
-        (r'@.+?:[^")\s]+', lambda x, t: Token(TokenType.WORD, str(t))),
-        (r'[^"()\s]+', lambda x, t: Token(TokenType.WORD, str(t))),
-        (r'".*?((?<!\\)")', lambda x, t: Token(TokenType.QUOTED_WORD, t[1:-1])),
-        (r'\s+', None),
-    ],
-    flags=re.DOTALL,
-)
+lex_scanner = getattr(
+    re, 'Scanner')(
+    [(r'[()]', lambda x, t: Token(TokenType.OPCODE, t)),
+     (r'@.+?:[^")\s]+', lambda x, t: Token(TokenType.WORD, str(t))),
+     (r'[^"()\s]+', lambda x, t: Token(TokenType.WORD, str(t))),
+     (r'".*?((?<!\\)")', lambda x, t: Token(
+         TokenType.QUOTED_WORD, t[1: -1])),
+     (r'\s+', None),],
+    flags=re.DOTALL,)
 REPLACEMENTS = tuple(('\\' + x, chr(i + 1)) for i, x in enumerate('\\"()'))
 
 
@@ -212,7 +222,8 @@ class Parser:
                 raise ParseException(_('missing )'))
             return res
         if self.token_type() not in (TokenType.WORD, TokenType.QUOTED_WORD):
-            raise ParseException(_('Invalid syntax. Expected a lookup name or a word'))
+            raise ParseException(
+                _('Invalid syntax. Expected a lookup name or a word'))
 
         return self.base_token()
 
@@ -254,14 +265,17 @@ class Parser:
 
 
 @lru_cache(maxsize=64)
-def build_tree(query: str, locations: Union[str, Tuple[str, ...]], allow_no_location: bool = False) -> SearchTreeNode:
+def build_tree(
+        query: str, locations: Union[str, Tuple[str, ...]],
+        allow_no_location: bool = False) -> SearchTreeNode:
     if isinstance(locations, str):
         locations = tuple(locations.split())
     p = Parser(allow_no_location)
     try:
         return p.parse(query, locations)
     except RuntimeError as e:
-        raise ParseException(f'Failed to parse {query!r}, too much recursion required') from e
+        raise ParseException(
+            f'Failed to parse {query!r}, too much recursion required') from e
 
 
 def search(
@@ -271,4 +285,6 @@ def search(
     get_matches: GetMatches[T],
     allow_no_location: bool = False,
 ) -> Set[T]:
-    return build_tree(query, locations, allow_no_location).search(universal_set, get_matches)
+    return build_tree(
+        query, locations, allow_no_location).search(
+        universal_set, get_matches)

@@ -162,10 +162,14 @@ class BaseTest(TestCase):
         set_options(None)
 
     def set_options(self, options=None):
-        final_options = {'scrollback_pager_history_size': 1024, 'click_interval': 0.5}
+        final_options = {'scrollback_pager_history_size': 1024,
+                         'click_interval': 0.5}
         if options:
             final_options.update(options)
-        options = Options(merge_result_dicts(defaults._asdict(), final_options))
+        options = Options(
+            merge_result_dicts(
+                defaults._asdict(),
+                final_options))
         finalize_keys(options, {})
         finalize_mouse_mappings(options, {})
         set_options(options)
@@ -176,17 +180,22 @@ class BaseTest(TestCase):
 
         return [smelly_exe(), '+runpy', code]
 
-    def create_screen(self, cols=5, lines=5, scrollback=5, cell_width=10, cell_height=20, options=None):
+    def create_screen(
+            self, cols=5, lines=5, scrollback=5, cell_width=10, cell_height=20,
+            options=None):
         self.set_options(options)
         c = Callbacks()
         s = Screen(c, lines, cols, scrollback, cell_width, cell_height, 0, c)
         return s
 
     def create_pty(
-        self, argv=None, cols=80, lines=100, scrollback=100, cell_width=10, cell_height=20, options=None, cwd=None, env=None, stdin_fd=None, stdout_fd=None
-    ):
+            self, argv=None, cols=80, lines=100, scrollback=100, cell_width=10,
+            cell_height=20, options=None, cwd=None, env=None, stdin_fd=None,
+            stdout_fd=None):
         self.set_options(options)
-        return PTY(argv, lines, cols, scrollback, cell_width, cell_height, cwd, env, stdin_fd=stdin_fd, stdout_fd=stdout_fd)
+        return PTY(
+            argv, lines, cols, scrollback, cell_width, cell_height, cwd, env,
+            stdin_fd=stdin_fd, stdout_fd=stdout_fd)
 
     def assertEqualAttributes(self, c1, c2):
         x1, y1, c1.x, c1.y = c1.x, c1.y, 0, 0
@@ -198,7 +207,10 @@ class BaseTest(TestCase):
 
 
 class PTY:
-    def __init__(self, argv=None, rows=25, columns=80, scrollback=100, cell_width=10, cell_height=20, cwd=None, env=None, stdin_fd=None, stdout_fd=None):
+    def __init__(
+            self, argv=None, rows=25, columns=80, scrollback=100,
+            cell_width=10, cell_height=20, cwd=None, env=None, stdin_fd=None,
+            stdout_fd=None):
         self.is_child = False
         if isinstance(argv, str):
             argv = shlex.split(argv)
@@ -232,7 +244,9 @@ class PTY:
         self.cell_height = cell_height
         self.set_window_size(rows=rows, columns=columns)
         self.callbacks = Callbacks(self)
-        self.screen = Screen(self.callbacks, rows, columns, scrollback, cell_width, cell_height, 0, self.callbacks)
+        self.screen = Screen(
+            self.callbacks, rows, columns, scrollback, cell_width, cell_height,
+            0, self.callbacks)
         self.received_bytes = b''
 
     def turn_off_echo(self):
@@ -264,7 +278,10 @@ class PTY:
         self.write_to_child(cmd + '\r', flush=flush)
 
     def process_input_from_child(self, timeout=10):
-        rd, wd, err = select.select([self.master_fd], [self.master_fd] if self.write_buf else [], [], timeout)
+        rd, wd, err = select.select(
+            [self.master_fd],
+            [self.master_fd] if self.write_buf else [], [],
+            timeout)
         while wd:
             try:
                 n = os.write(self.master_fd, self.write_buf)
@@ -290,9 +307,11 @@ class PTY:
     def wait_till(self, q, timeout=10):
         end_time = time.monotonic() + timeout
         while not q() and time.monotonic() <= end_time:
-            self.process_input_from_child(timeout=max(0, end_time - time.monotonic()))
+            self.process_input_from_child(
+                timeout=max(0, end_time - time.monotonic()))
         if not q():
-            raise TimeoutError(f'The condition was not met. Screen contents: \n {repr(self.screen_contents())}')
+            raise TimeoutError(
+                f'The condition was not met. Screen contents: \n {repr(self.screen_contents())}')
 
     def set_window_size(self, rows=25, columns=80, send_signal=True):
         if hasattr(self, 'screen'):
@@ -314,4 +333,5 @@ class PTY:
     def last_cmd_output(self, as_ansi=False, add_wrap_markers=False):
         from smelly.window import cmd_output
 
-        return cmd_output(self.screen, as_ansi=as_ansi, add_wrap_markers=add_wrap_markers)
+        return cmd_output(self.screen, as_ansi=as_ansi,
+                          add_wrap_markers=add_wrap_markers)

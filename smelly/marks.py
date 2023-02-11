@@ -13,7 +13,8 @@ pointer_to_uint = POINTER(c_uint)
 MarkerFunc = Callable[[str, int, int, int], Generator[None, None, None]]
 
 
-def get_output_variables(left_address: int, right_address: int, color_address: int) -> Tuple[c_uint, c_uint, c_uint]:
+def get_output_variables(left_address: int, right_address: int,
+                         color_address: int) -> Tuple[c_uint, c_uint, c_uint]:
     return (
         cast(c_void_p(left_address), pointer_to_uint).contents,
         cast(c_void_p(right_address), pointer_to_uint).contents,
@@ -21,15 +22,19 @@ def get_output_variables(left_address: int, right_address: int, color_address: i
     )
 
 
-def marker_from_regex(expression: Union[str, 'Pattern[str]'], color: int, flags: int = re.UNICODE) -> MarkerFunc:
+def marker_from_regex(
+        expression: Union[str, 'Pattern[str]'],
+        color: int, flags: int = re.UNICODE) -> MarkerFunc:
     color = max(1, min(color, 3))
     if isinstance(expression, str):
         pat = re.compile(expression, flags=flags)
     else:
         pat = expression
 
-    def marker(text: str, left_address: int, right_address: int, color_address: int) -> Generator[None, None, None]:
-        left, right, colorv = get_output_variables(left_address, right_address, color_address)
+    def marker(text: str, left_address: int, right_address: int,
+               color_address: int) -> Generator[None, None, None]:
+        left, right, colorv = get_output_variables(
+            left_address, right_address, color_address)
         colorv.value = color
         for match in pat.finditer(text):
             left.value = match.start()
@@ -39,7 +44,9 @@ def marker_from_regex(expression: Union[str, 'Pattern[str]'], color: int, flags:
     return marker
 
 
-def marker_from_multiple_regex(regexes: Iterable[Tuple[int, str]], flags: int = re.UNICODE) -> MarkerFunc:
+def marker_from_multiple_regex(
+        regexes: Iterable[Tuple[int, str]],
+        flags: int = re.UNICODE) -> MarkerFunc:
     expr = ''
     color_map = {}
     for i, (color, spec) in enumerate(regexes):
@@ -49,8 +56,10 @@ def marker_from_multiple_regex(regexes: Iterable[Tuple[int, str]], flags: int = 
     expr = expr[1:]
     pat = re.compile(expr, flags=flags)
 
-    def marker(text: str, left_address: int, right_address: int, color_address: int) -> Generator[None, None, None]:
-        left, right, color = get_output_variables(left_address, right_address, color_address)
+    def marker(text: str, left_address: int, right_address: int,
+               color_address: int) -> Generator[None, None, None]:
+        left, right, color = get_output_variables(
+            left_address, right_address, color_address)
         for match in pat.finditer(text):
             left.value = match.start()
             right.value = match.end() - 1
@@ -65,9 +74,13 @@ def marker_from_text(expression: str, color: int) -> MarkerFunc:
     return marker_from_regex(re.escape(expression), color)
 
 
-def marker_from_function(func: Callable[[str], Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
-    def marker(text: str, left_address: int, right_address: int, color_address: int) -> Generator[None, None, None]:
-        left, right, colorv = get_output_variables(left_address, right_address, color_address)
+def marker_from_function(
+        func: Callable[[str],
+                       Iterable[Tuple[int, int, int]]]) -> MarkerFunc:
+    def marker(text: str, left_address: int, right_address: int,
+               color_address: int) -> Generator[None, None, None]:
+        left, right, colorv = get_output_variables(
+            left_address, right_address, color_address)
         for ll, r, c in func(text):
             left.value = ll
             right.value = r
@@ -77,7 +90,9 @@ def marker_from_function(func: Callable[[str], Iterable[Tuple[int, int, int]]]) 
     return marker
 
 
-def marker_from_spec(ftype: str, spec: Union[str, Sequence[Tuple[int, str]]], flags: int) -> MarkerFunc:
+def marker_from_spec(
+        ftype: str, spec: Union[str, Sequence[Tuple[int, str]]],
+        flags: int) -> MarkerFunc:
     if ftype == 'regex':
         assert not isinstance(spec, str)
         if len(spec) == 1:
@@ -88,5 +103,6 @@ def marker_from_spec(ftype: str, spec: Union[str, Sequence[Tuple[int, str]]], fl
 
         assert isinstance(spec, str)
         path = resolve_custom_file(spec)
-        return marker_from_function(runpy.run_path(path, run_name='__marker__')["marker"])
+        return marker_from_function(
+            runpy.run_path(path, run_name='__marker__')["marker"])
     raise ValueError(f'Unknown marker type: {ftype}')

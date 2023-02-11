@@ -22,19 +22,25 @@ if TYPE_CHECKING:
     from .window import CwdRequest
 
 
-def get_os_window_sizing_data(opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
+def get_os_window_sizing_data(
+        opts: Options, session: Optional['Session'] = None) -> WindowSizeData:
     if session is None or session.os_window_size is None:
-        sizes = WindowSizes(WindowSize(*opts.initial_window_width), WindowSize(*opts.initial_window_height))
+        sizes = WindowSizes(
+            WindowSize(*opts.initial_window_width),
+            WindowSize(*opts.initial_window_height))
     else:
         sizes = session.os_window_size
-    return WindowSizeData(sizes, opts.remember_window_size, opts.single_window_margin_width, opts.window_margin_width, opts.window_padding_width)
+    return WindowSizeData(
+        sizes, opts.remember_window_size, opts.single_window_margin_width,
+        opts.window_margin_width, opts.window_padding_width)
 
 
 ResizeSpec = Tuple[str, int]
 
 
 class WindowSpec:
-    def __init__(self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
+    def __init__(
+            self, launch_spec: Union['LaunchSpec', 'SpecialWindowInstance']):
         self.launch_spec = launch_spec
         self.resize_spec: Optional[ResizeSpec] = None
 
@@ -73,7 +79,10 @@ class Session:
             raise ValueError(f'{val} is not a valid layout')
         self.tabs[-1].layout = val
 
-    def add_window(self, cmd: Union[None, str, List[str]], expand: Callable[[str], str] = lambda x: x) -> None:
+    def add_window(
+            self, cmd: Union[None, str, List[str]],
+            expand: Callable[[str],
+                             str] = lambda x: x) -> None:
         from .launch import parse_launch_args
 
         needs_expandvars = False
@@ -114,7 +123,8 @@ class Session:
 
     def focus(self) -> None:
         self.active_tab_idx = max(0, len(self.tabs) - 1)
-        self.tabs[-1].active_window_idx = max(0, len(self.tabs[-1].windows) - 1)
+        self.tabs[-1].active_window_idx = max(0,
+                                              len(self.tabs[-1].windows) - 1)
 
     def set_enabled_layouts(self, raw: str) -> None:
         self.tabs[-1].enabled_layouts = to_layout_names(raw)
@@ -131,7 +141,10 @@ def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] 
 
         for t in ans.tabs:
             if not t.windows:
-                t.windows.append(WindowSpec(SpecialWindow(cmd=resolved_shell(opts))))
+                t.windows.append(
+                    WindowSpec(
+                        SpecialWindow(
+                            cmd=resolved_shell(opts))))
         return ans
 
     if environ is None:
@@ -172,7 +185,8 @@ def parse_session(raw: str, opts: Options, environ: Optional[Mapping[str, str]] 
                 ans.set_next_title(rest)
             elif cmd == 'os_window_size':
                 w, h = map(window_size, rest.split(maxsplit=1))
-                ans.os_window_size = WindowSizes(WindowSize(*w), WindowSize(*h))
+                ans.os_window_size = WindowSizes(
+                    WindowSize(*w), WindowSize(*h))
             elif cmd == 'os_window_class':
                 ans.os_window_class = rest
             elif cmd == 'resize_window':
@@ -217,7 +231,8 @@ def create_sessions(
             with open(default_session) as f:
                 session_data = f.read()
         except OSError:
-            log_error(f'Failed to read from session file, ignoring: {default_session}')
+            log_error(
+                f'Failed to read from session file, ignoring: {default_session}')
         else:
             yield from parse_session(session_data, opts)
             return

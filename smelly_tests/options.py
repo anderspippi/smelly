@@ -50,14 +50,20 @@ class TestConfParsing(BaseTest):
         self.assertFalse(opts.keymap)
         opts = p('clear_all_shortcuts y', 'map f1 next_window')
         self.ae(len(opts.keymap), 1)
-        opts = p('clear_all_mouse_actions y', 'mouse_map left click ungrabbed mouse_click_url_or_select')
+        opts = p(
+            'clear_all_mouse_actions y',
+            'mouse_map left click ungrabbed mouse_click_url_or_select')
         self.ae(len(opts.mousemap), 1)
         opts = p('strip_trailing_spaces always')
         self.ae(opts.strip_trailing_spaces, 'always')
         self.assertFalse(bad_lines)
         opts = p('pointer_shape_when_grabbed XXX', bad_line_num=1)
-        self.ae(opts.pointer_shape_when_grabbed, defaults.pointer_shape_when_grabbed)
-        opts = p('modify_font underline_position -2', 'modify_font underline_thickness 150%', 'modify_font size Test -1px')
+        self.ae(opts.pointer_shape_when_grabbed,
+                defaults.pointer_shape_when_grabbed)
+        opts = p(
+            'modify_font underline_position -2',
+            'modify_font underline_thickness 150%',
+            'modify_font size Test -1px')
         self.ae(
             opts.modify_font,
             {
@@ -68,7 +74,9 @@ class TestConfParsing(BaseTest):
         )
 
         # test the aliasing options
-        opts = p('env A=1', 'env B=x$A', 'env C=', 'env D', 'clear_all_shortcuts y', 'kitten_alias a b --moo', 'map f1 kitten a arg')
+        opts = p('env A=1', 'env B=x$A', 'env C=', 'env D',
+                 'clear_all_shortcuts y', 'kitten_alias a b --moo',
+                 'map f1 kitten a arg')
         self.ae(opts.env, {'A': '1', 'B': 'x1', 'C': '', 'D': DELETE_ENV_VAR})
 
         def ac(which=0):
@@ -80,40 +88,54 @@ class TestConfParsing(BaseTest):
         self.ae(ka.func, 'kitten')
         self.ae(ka.args, ('b', '--moo', 'arg'))
 
-        opts = p('clear_all_shortcuts y', 'kitten_alias hints hints --hi', 'map f1 kitten hints XXX')
+        opts = p(
+            'clear_all_shortcuts y', 'kitten_alias hints hints --hi',
+            'map f1 kitten hints XXX')
         ka = ac()
         self.ae(ka.func, 'kitten')
         self.ae(ka.args, ('hints', '--hi', 'XXX'))
 
-        opts = p('clear_all_shortcuts y', 'action_alias la launch --moo', 'map f1 la XXX')
+        opts = p('clear_all_shortcuts y',
+                 'action_alias la launch --moo', 'map f1 la XXX')
         ka = ac()
         self.ae(ka.func, 'launch')
         self.ae(ka.args, ('--moo', 'XXX'))
 
-        opts = p('clear_all_shortcuts y', 'action_alias one launch --moo', 'action_alias two one recursive', 'map f1 two XXX')
+        opts = p('clear_all_shortcuts y', 'action_alias one launch --moo',
+                 'action_alias two one recursive', 'map f1 two XXX')
         ka = ac()
         self.ae(ka.func, 'launch')
         self.ae(ka.args, ('--moo', 'recursive', 'XXX'))
 
-        opts = p('clear_all_shortcuts y', 'action_alias launch two 1', 'action_alias two launch 2', 'map f1 launch 3')
+        opts = p('clear_all_shortcuts y', 'action_alias launch two 1',
+                 'action_alias two launch 2', 'map f1 launch 3')
         ka = ac()
         self.ae(ka.func, 'launch')
         self.ae(ka.args, ('2', '1', '3'))
 
-        opts = p('clear_all_shortcuts y', 'action_alias launch launch --moo', 'map f1 launch XXX')
+        opts = p(
+            'clear_all_shortcuts y', 'action_alias launch launch --moo',
+            'map f1 launch XXX')
         ka = ac()
         self.ae(ka.func, 'launch')
         self.ae(ka.args, ('--moo', 'XXX'))
 
-        opts = p('clear_all_shortcuts y', 'action_alias cfs change_font_size current', 'map f1 cfs +2')
+        opts = p(
+            'clear_all_shortcuts y',
+            'action_alias cfs change_font_size current', 'map f1 cfs +2')
         ka = ac()
         self.ae(ka.func, 'change_font_size')
         self.ae(ka.args, (False, '+', 2.0))
 
-        opts = p('clear_all_shortcuts y', 'action_alias la launch --moo', 'map f1 combine : new_window : la ')
+        opts = p(
+            'clear_all_shortcuts y', 'action_alias la launch --moo',
+            'map f1 combine : new_window : la ')
         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))
 
-        opts = p('clear_all_shortcuts y', 'action_alias cc combine : new_window : launch --moo', 'map f1 cc XXX')
+        opts = p(
+            'clear_all_shortcuts y',
+            'action_alias cc combine : new_window : launch --moo',
+            'map f1 cc XXX')
         self.ae((ac().func, ac(1).func), ('new_window', 'launch'))
         self.ae(ac(1).args, ('--moo', 'XXX'))
 
@@ -124,6 +146,8 @@ class TestConfParsing(BaseTest):
         # deprecation handling
         opts = p('clear_all_shortcuts y', 'send_text all f1 hello')
         self.ae(len(opts.keymap), 1)
-        opts = p('macos_hide_titlebar y' if is_macos else 'x11_hide_window_decorations y')
+        opts = p(
+            'macos_hide_titlebar y'
+            if is_macos else 'x11_hide_window_decorations y')
         self.assertTrue(opts.hide_window_decorations)
         self.ae(len(self.error_messages), 1)

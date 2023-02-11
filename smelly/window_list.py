@@ -63,7 +63,8 @@ class WindowGroup:
     def active_window_id(self) -> int:
         return self.windows[-1].id if self.windows else 0
 
-    def add_window(self, window: WindowType, head_of_group: bool = False) -> None:
+    def add_window(
+            self, window: WindowType, head_of_group: bool = False) -> None:
         if head_of_group:
             self.windows.insert(0, window)
         else:
@@ -87,7 +88,8 @@ class WindowGroup:
     def serialize_state(self) -> Dict[str, Any]:
         return {'id': self.id, 'windows': [w.serialize_state() for w in self.windows]}
 
-    def decoration(self, which: EdgeLiteral, border_mult: int = 1, is_single_window: bool = False) -> int:
+    def decoration(self, which: EdgeLiteral, border_mult: int = 1,
+                   is_single_window: bool = False) -> int:
         if not self.windows:
             return 0
         w = self.windows[0]
@@ -178,7 +180,9 @@ class WindowList:
                     ans.append(w)
         return ans
 
-    def notify_on_active_window_change(self, old_active_window: Optional[WindowType], new_active_window: Optional[WindowType]) -> None:
+    def notify_on_active_window_change(
+            self, old_active_window: Optional[WindowType],
+            new_active_window: Optional[WindowType]) -> None:
         if old_active_window is not None:
             old_active_window.focus_changed(False)
         if new_active_window is not None:
@@ -200,7 +204,8 @@ class WindowList:
             new_active_window = self.active_window
             if old_active_window is not new_active_window:
                 if notify:
-                    self.notify_on_active_window_change(old_active_window, new_active_window)
+                    self.notify_on_active_window_change(
+                        old_active_window, new_active_window)
                 changed = True
         return changed
 
@@ -213,13 +218,15 @@ class WindowList:
     def change_tab(self, tab: TabType) -> None:
         self.tabref = weakref.ref(tab)
 
-    def iter_windows_with_visibility(self) -> Iterator[Tuple[WindowType, bool]]:
+    def iter_windows_with_visibility(self) -> Iterator[Tuple
+                                                       [WindowType, bool]]:
         for g in self.groups:
             aw = g.active_window_id
             for window in g:
                 yield window, window.id == aw
 
-    def iter_all_layoutable_groups(self, only_visible: bool = False) -> Iterator[WindowGroup]:
+    def iter_all_layoutable_groups(
+            self, only_visible: bool = False) -> Iterator[WindowGroup]:
         return iter(g for g in self.groups if g.is_visible_in_layout) if only_visible else iter(self.groups)
 
     def iter_windows_with_number(self, only_visible: bool = True) -> Iterator[Tuple[int, WindowType]]:
@@ -231,7 +238,8 @@ class WindowList:
                         yield i, window
                         break
 
-    def make_previous_group_active(self, which: int = 1, notify: bool = True) -> None:
+    def make_previous_group_active(
+            self, which: int = 1, notify: bool = True) -> None:
         which = max(1, which)
         gid_map = {g.id: i for i, g in enumerate(self.groups)}
         num = len(self.active_group_history)
@@ -356,7 +364,8 @@ class WindowList:
                     break
         new_active_window = self.active_window
         if new_active_window is not old_active_window:
-            self.notify_on_active_window_change(old_active_window, new_active_window)
+            self.notify_on_active_window_change(
+                old_active_window, new_active_window)
         return target_group
 
     def remove_window(self, x: WindowOrId) -> None:
@@ -381,9 +390,11 @@ class WindowList:
                 break
         new_active_window = self.active_window
         if old_active_window is not new_active_window:
-            self.notify_on_active_window_change(old_active_window, new_active_window)
+            self.notify_on_active_window_change(
+                old_active_window, new_active_window)
 
-    def active_window_in_nth_group(self, n: int, clamp: bool = False) -> Optional[WindowType]:
+    def active_window_in_nth_group(
+            self, n: int, clamp: bool = False) -> Optional[WindowType]:
         if clamp:
             n = max(0, min(n, self.num_groups - 1))
         if 0 <= n < self.num_groups:
@@ -391,9 +402,11 @@ class WindowList:
         return None
 
     def activate_next_window_group(self, delta: int) -> None:
-        self.set_active_group_idx(wrap_increment(self.active_group_idx, self.num_groups, delta))
+        self.set_active_group_idx(wrap_increment(
+            self.active_group_idx, self.num_groups, delta))
 
-    def move_window_group(self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
+    def move_window_group(
+            self, by: Optional[int] = None, to_group: Optional[int] = None) -> bool:
         if self.active_group_idx < 0 or not self.groups:
             return False
         target = -1

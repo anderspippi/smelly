@@ -23,7 +23,9 @@ class Rendering(BaseTest):
         self.test_ctx.__enter__()
         self.sprites, self.cell_width, self.cell_height = self.test_ctx.__enter__()
         try:
-            self.assertEqual([k[0] for k in self.sprites], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+            self.assertEqual(
+                [k[0] for k in self.sprites],
+                [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
         except Exception:
             self.test_ctx.__exit__()
             del self.test_ctx
@@ -78,7 +80,8 @@ class Rendering(BaseTest):
             if name not in font_path_cache:
                 with open(os.path.join(self.tdir, name), 'wb') as f:
                     font_path_cache[name] = f.name
-                    data = read_smelly_resource(name, __name__.rpartition('.')[0])
+                    data = read_smelly_resource(
+                        name, __name__.rpartition('.')[0])
                     f.write(data)
             return font_path_cache[name]
 
@@ -89,7 +92,9 @@ class Rendering(BaseTest):
         def groups(text, font=None):
             return [x[:2] for x in ss(text, font)]
 
-        for font in ('FiraCode-Medium.otf', 'CascadiaCode-Regular.otf', 'iosevka-regular.ttf'):
+        for font in (
+            'FiraCode-Medium.otf', 'CascadiaCode-Regular.otf',
+                'iosevka-regular.ttf'):
             g = partial(groups, font=font)
             self.ae(g('abcd'), [(1, 1) for i in range(4)])
             self.ae(g('A===B!=C'), [(1, 1), (3, 3), (1, 1), (2, 2), (1, 1)])
@@ -103,19 +108,46 @@ class Rendering(BaseTest):
                 self.ae(g('----'), [(4, 4)])
                 self.ae(g('F--a--'), [(1, 1), (2, 2), (1, 1), (2, 2)])
                 self.ae(g('===--<>=='), [(3, 3), (2, 2), (2, 2), (2, 2)])
-                self.ae(g('==!=<>==<><><>'), [(4, 4), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2)])
+                self.ae(
+                    g('==!=<>==<><><>'),
+                    [(4, 4),
+                     (2, 2),
+                     (2, 2),
+                     (2, 2),
+                     (2, 2),
+                     (2, 2)])
                 self.ae(g('-' * 18), [(18, 18)])
             self.ae(g('a>\u2060<b'), [(1, 1), (1, 2), (1, 1), (1, 1)])
         colon_glyph = ss('9:30', font='FiraCode-Medium.otf')[1][2]
-        self.assertNotEqual(colon_glyph, ss(':', font='FiraCode-Medium.otf')[0][2])
+        self.assertNotEqual(colon_glyph, ss(
+            ':', font='FiraCode-Medium.otf')[0][2])
         self.ae(colon_glyph, 1031)
-        self.ae(groups('9:30', font='FiraCode-Medium.otf'), [(1, 1), (1, 1), (1, 1), (1, 1)])
+        self.ae(groups('9:30', font='FiraCode-Medium.otf'),
+                [(1, 1), (1, 1), (1, 1), (1, 1)])
 
-        self.ae(groups('|\U0001F601|\U0001F64f|\U0001F63a|'), [(1, 1), (2, 1), (1, 1), (2, 1), (1, 1), (2, 1), (1, 1)])
-        self.ae(groups('He\u0347\u0305llo\u0337,', font='LiberationMono-Regular.ttf'), [(1, 1), (1, 3), (1, 1), (1, 1), (1, 2), (1, 1)])
+        self.ae(groups('|\U0001F601|\U0001F64f|\U0001F63a|'), [
+                (1, 1), (2, 1), (1, 1), (2, 1), (1, 1), (2, 1), (1, 1)])
+        self.ae(
+            groups(
+                'He\u0347\u0305llo\u0337,',
+                font='LiberationMono-Regular.ttf'),
+            [(1, 1),
+             (1, 3),
+             (1, 1),
+             (1, 1),
+             (1, 2),
+             (1, 1)])
 
-        self.ae(groups('i\u0332\u0308', font='LiberationMono-Regular.ttf'), [(1, 2)])
-        self.ae(groups('u\u0332 u\u0332\u0301', font='LiberationMono-Regular.ttf'), [(1, 2), (1, 1), (1, 2)])
+        self.ae(
+            groups('i\u0332\u0308', font='LiberationMono-Regular.ttf'),
+            [(1, 2)])
+        self.ae(
+            groups(
+                'u\u0332 u\u0332\u0301',
+                font='LiberationMono-Regular.ttf'),
+            [(1, 2),
+             (1, 1),
+             (1, 2)])
 
     def test_emoji_presentation(self):
         s = self.create_screen()
@@ -152,16 +184,22 @@ class Rendering(BaseTest):
         orig, buf = sys.stderr, StringIO()
         sys.stderr = buf
         try:
-            self.assertRaises(ValueError, get_fallback_font, '\U0010FFFF', False, False)
+            self.assertRaises(ValueError, get_fallback_font,
+                              '\U0010FFFF', False, False)
         finally:
             sys.stderr = orig
         self.assertIn('LastResort', buf.getvalue())
 
     def test_coalesce_symbol_maps(self):
-        q = {(2, 3): 'a', (4, 6): 'b', (5, 5): 'b', (7, 7): 'b', (9, 9): 'b', (1, 1): 'a'}
-        self.ae(coalesce_symbol_maps(q), {(1, 3): 'a', (4, 7): 'b', (9, 9): 'b'})
+        q = {(2, 3): 'a', (4, 6): 'b', (5, 5): 'b',
+             (7, 7): 'b', (9, 9): 'b', (1, 1): 'a'}
+        self.ae(
+            coalesce_symbol_maps(q),
+            {(1, 3): 'a', (4, 7): 'b', (9, 9): 'b'})
         q = {(1, 4): 'a', (2, 3): 'b'}
-        self.ae(coalesce_symbol_maps(q), {(1, 1): 'a', (2, 3): 'b', (4, 4): 'a'})
+        self.ae(
+            coalesce_symbol_maps(q),
+            {(1, 1): 'a', (2, 3): 'b', (4, 4): 'a'})
         q = {(2, 3): 'b', (1, 4): 'a'}
         self.ae(coalesce_symbol_maps(q), {(1, 4): 'a'})
         q = {(1, 4): 'a', (2, 5): 'b'}
@@ -174,5 +212,7 @@ class Rendering(BaseTest):
         self.ae(coalesce_symbol_maps(q), {(1, 3): 'a', (4, 5): 'b'})
         q = {(4, 5): 'b', (1, 4): 'a'}
         self.ae(coalesce_symbol_maps(q), {(1, 4): 'a', (5, 5): 'b'})
-        q = {(0, 30): 'a', (10, 10): 'b', (11, 11): 'b', (2, 2): 'c', (1, 1): 'c'}
-        self.ae(coalesce_symbol_maps(q), {(0, 0): 'a', (1, 2): 'c', (3, 9): 'a', (10, 11): 'b', (12, 30): 'a'})
+        q = {(0, 30): 'a', (10, 10): 'b', (11, 11)
+              : 'b', (2, 2): 'c', (1, 1): 'c'}
+        self.ae(coalesce_symbol_maps(q), {
+                (0, 0): 'a', (1, 2): 'c', (3, 9): 'a', (10, 11): 'b', (12, 30): 'a'})

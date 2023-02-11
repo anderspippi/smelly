@@ -104,7 +104,8 @@ import os, json; from smelly.utils import *; from smelly.fast_data_types import 
                         handle_signals(signals)
                 if found_signal:
                     break
-            self.assertTrue(found_signal, f'Failed to get signal: {expecting_signal!r}')
+            self.assertTrue(
+                found_signal, f'Failed to get signal: {expecting_signal!r}')
 
         def t(signal, q, expecting_sig=signal.SIGCHLD):
             nonlocal expecting_code, found_signal, expecting_signal
@@ -117,11 +118,15 @@ import os, json; from smelly.utils import *; from smelly.fast_data_types import 
         poll = select.poll()
 
         def run():
-            return subprocess.Popen([smelly_exe(), '+runpy', 'import sys; sys.stdin.read()'], stderr=subprocess.DEVNULL, stdin=subprocess.PIPE)
+            return subprocess.Popen(
+                [smelly_exe(),
+                 '+runpy', 'import sys; sys.stdin.read()'],
+                stderr=subprocess.DEVNULL, stdin=subprocess.PIPE)
 
         p = run()
         orig_mask = signal.pthread_sigmask(signal.SIG_BLOCK, ())
-        signal_read_fd = install_signal_handlers(signal.SIGCHLD, signal.SIGUSR1)[0]
+        signal_read_fd = install_signal_handlers(
+            signal.SIGCHLD, signal.SIGUSR1)[0]
         try:
             poll.register(signal_read_fd, select.POLLIN)
             t(signal.SIGINT, CLD_KILLED)

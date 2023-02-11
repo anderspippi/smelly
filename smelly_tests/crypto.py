@@ -37,12 +37,17 @@ class TestCrypto(BaseTest):
 
         d = AES256GCMDecrypt(bob_secret, e.iv, corrupt_data(e.tag))
         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
-        self.assertRaises(CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
+        self.assertRaises(
+            CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
 
         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
-        d.add_data_to_be_authenticated_but_not_decrypted(corrupt_data(auth_data))
-        self.assertRaises(CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
+        d.add_data_to_be_authenticated_but_not_decrypted(
+            corrupt_data(
+                auth_data))
+        self.assertRaises(
+            CryptoError, d.add_data_to_be_decrypted, ciphertext, True)
 
         d = AES256GCMDecrypt(bob_secret, e.iv, e.tag)
         d.add_data_to_be_authenticated_but_not_decrypted(auth_data)
-        self.assertRaises(CryptoError, d.add_data_to_be_decrypted, corrupt_data(ciphertext), True)
+        self.assertRaises(CryptoError, d.add_data_to_be_decrypted,
+                          corrupt_data(ciphertext), True)

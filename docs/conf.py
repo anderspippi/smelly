@@ -91,7 +91,9 @@ language: str = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'basic.rst', 'generated/cli-*.rst', 'generated/conf-*.rst', 'generated/actions.rst']
+exclude_patterns = [
+    '_build', 'Thumbs.db', '.DS_Store', 'basic.rst', 'generated/cli-*.rst',
+    'generated/conf-*.rst', 'generated/actions.rst']
 
 rst_prolog = '''
 .. |smelly| replace:: *smelly*
@@ -105,8 +107,8 @@ rst_prolog = '''
 smartquotes_action = 'qe'  # educate quotes and ellipses but not dashes
 
 string_replacements = {
-    '_smelly_install_cmd': 'curl -L https://sw.backbiter-no.net/smelly/installer.sh | sh /dev/stdin',
-}
+    '_smelly_install_cmd':
+    'curl -L https://sw.backbiter-no.net/smelly/installer.sh | sh /dev/stdin', }
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -164,7 +166,8 @@ manpages_url = 'https://man7.org/linux/man-pages/man{section}/{page}.{section}.h
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [('invocation', 'smelly', 'smelly Documentation', [author], 1), ('conf', 'smelly.conf', 'smelly.conf Documentation', [author], 5)]
+man_pages = [('invocation', 'smelly', 'smelly Documentation', [author], 1),
+             ('conf', 'smelly.conf', 'smelly.conf Documentation', [author], 5)]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -173,8 +176,9 @@ man_pages = [('invocation', 'smelly', 'smelly Documentation', [author], 1), ('co
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'smelly', 'smelly Documentation', author, 'smelly', 'Cross-platform, fast, feature-rich, GPU based terminal', 'Miscellaneous'),
-]
+    (master_doc, 'smelly', 'smelly Documentation', author, 'smelly',
+     'Cross-platform, fast, feature-rich, GPU based terminal',
+     'Miscellaneous'),]
 # }}}
 
 
@@ -187,20 +191,25 @@ extlinks = {
 }
 
 
-def commit_role(
-    name: str, rawtext: str, text: str, lineno: int, inliner: Any, options: Any = {}, content: Any = []
-) -> Tuple[List[nodes.reference], List[nodes.problematic]]:
+def commit_role(name: str, rawtext: str, text: str, lineno: int, inliner: Any,
+                options: Any = {},
+                content: Any = []) -> Tuple[List[nodes.reference],
+                                            List[nodes.problematic]]:
     'Link to a github commit'
     try:
-        commit_id = subprocess.check_output(f'git rev-list --max-count=1 --skip=# {text}'.split()).decode('utf-8').strip()
+        commit_id = subprocess.check_output(
+            f'git rev-list --max-count=1 --skip=# {text}'.split()).decode('utf-8').strip()
     except Exception:
-        msg = inliner.reporter.error(f'GitHub commit id "{text}" not recognized.', line=lineno)
+        msg = inliner.reporter.error(
+            f'GitHub commit id "{text}" not recognized.', line=lineno)
         prb = inliner.problematic(rawtext, rawtext, msg)
         return [prb], [msg]
     url = f'https://github.com/backbiter-no/smelly/commit/{commit_id}'
     set_classes(options)
-    short_id = subprocess.check_output(f'git rev-list --max-count=1 --abbrev-commit --skip=# {commit_id}'.split()).decode('utf-8').strip()
-    node = nodes.reference(rawtext, f'commit: {short_id}', refuri=url, **options)
+    short_id = subprocess.check_output(
+        f'git rev-list --max-count=1 --abbrev-commit --skip=# {commit_id}'.split()).decode('utf-8').strip()
+    node = nodes.reference(
+        rawtext, f'commit: {short_id}', refuri=url, **options)
     return [node], []
 
 
@@ -215,7 +224,10 @@ def write_cli_docs(all_kitten_names: Iterable[str]) -> None:
     from smelly.launch import options_spec as launch_options_spec
 
     with open('generated/ssh-copy.rst', 'w') as f:
-        f.write(option_spec_as_rst(appname='copy', ospec=option_text, heading_char='^', usage='file-or-dir-to-copy ...', message=copy_message))
+        f.write(
+            option_spec_as_rst(
+                appname='copy', ospec=option_text, heading_char='^',
+                usage='file-or-dir-to-copy ...', message=copy_message))
     with open('generated/launch.rst', 'w') as f:
         f.write(
             option_spec_as_rst(
@@ -230,7 +242,8 @@ if you specify a program-to-run you can use the special placeholder
             )
         )
     with open('generated/cli-smelly.rst', 'w') as f:
-        f.write(option_spec_as_rst(appname='smelly').replace('smelly --to', 'smelly @ --to'))
+        f.write(option_spec_as_rst(appname='smelly').replace(
+            'smelly --to', 'smelly @ --to'))
     as_rst = partial(option_spec_as_rst, heading_char='_')
     from smelly.rc.base import all_command_names, command_for_name
     from smelly.remote_control import cli_msg, global_options_spec
@@ -240,7 +253,8 @@ if you specify a program-to-run you can use the special placeholder
         p('smelly @')
         p('-' * 80)
         p('.. program::', 'smelly @')
-        p('\n\n' + as_rst(global_options_spec, message=cli_msg, usage='command ...', appname='smelly @'))
+        p('\n\n' + as_rst(global_options_spec, message=cli_msg,
+          usage='command ...', appname='smelly @'))
         from smelly.rc.base import cli_params_for
 
         for cmd_name in sorted(all_command_names()):
@@ -265,13 +279,16 @@ if you specify a program-to-run you can use the special placeholder
                     scurl = f'https://github.com/backbiter-no/smelly/tree/master/tools/cmd/{kitten}'
                 else:
                     scurl = f'https://github.com/backbiter-no/smelly/tree/master/wellies/{kitten}'
-                p(f'\nThe source code for this kitten is `available on GitHub <{scurl}>`_.')
+                p(
+                    f'\nThe source code for this kitten is `available on GitHub <{scurl}>`_.')
                 p('\nCommand Line Interface')
                 p('-' * 72)
-                p(
-                    '\n\n'
-                    + option_spec_as_rst(data['options'], message=data['help_text'], usage=data['usage'], appname=f'smelly +kitten {kitten}', heading_char='^')
-                )
+                p('\n\n' +
+                  option_spec_as_rst(
+                      data['options'],
+                      message=data['help_text'],
+                      usage=data['usage'],
+                      appname=f'smelly +kitten {kitten}', heading_char='^'))
 
 
 # }}}
@@ -282,7 +299,9 @@ def write_remote_control_protocol_docs() -> None:  # {{{
 
     field_pat = re.compile(r'\s*([^:]+?)\s*:\s*(.+)')
 
-    def format_cmd(p: Callable[..., None], name: str, cmd: RemoteCommand) -> None:
+    def format_cmd(
+            p: Callable[..., None],
+            name: str, cmd: RemoteCommand) -> None:
         p(name)
         p('-' * 80)
         lines = (cmd.__doc__ or '').strip().splitlines()
@@ -389,13 +408,15 @@ class SessionLexer(RegexLexer):  # type: ignore
     }
 
 
-def link_role(
-    name: str, rawtext: str, text: str, lineno: int, inliner: Any, options: Any = {}, content: Any = []
-) -> Tuple[List[nodes.reference], List[nodes.problematic]]:
+def link_role(name: str, rawtext: str, text: str, lineno: int, inliner: Any,
+              options: Any = {},
+              content: Any = []) -> Tuple[List[nodes.reference],
+                                          List[nodes.problematic]]:
     text = text.replace('\n', ' ')
     m = re.match(r'(.+)\s+<(.+?)>', text)
     if m is None:
-        msg = inliner.reporter.error(f'link "{text}" not recognized', line=lineno)
+        msg = inliner.reporter.error(
+            f'link "{text}" not recognized', line=lineno)
         prb = inliner.problematic(rawtext, rawtext, msg)
         return [prb], [msg]
     text, url = m.group(1, 2)
@@ -444,7 +465,8 @@ def parse_action_node(env: Any, sig: str, signode: Any) -> str:
     return sig
 
 
-def process_opt_link(env: Any, refnode: Any, has_explicit_title: bool, title: str, target: str) -> Tuple[str, str]:
+def process_opt_link(env: Any, refnode: Any, has_explicit_title: bool,
+                     title: str, target: str) -> Tuple[str, str]:
     conf_name, opt = target.partition('.')[::2]
     if not opt:
         conf_name, opt = 'smelly', conf_name
@@ -452,11 +474,13 @@ def process_opt_link(env: Any, refnode: Any, has_explicit_title: bool, title: st
     return title, opt_aliases.get(full_name, full_name)
 
 
-def process_action_link(env: Any, refnode: Any, has_explicit_title: bool, title: str, target: str) -> Tuple[str, str]:
+def process_action_link(env: Any, refnode: Any, has_explicit_title: bool,
+                        title: str, target: str) -> Tuple[str, str]:
     return title, target
 
 
-def process_shortcut_link(env: Any, refnode: Any, has_explicit_title: bool, title: str, target: str) -> Tuple[str, str]:
+def process_shortcut_link(env: Any, refnode: Any, has_explicit_title: bool,
+                          title: str, target: str) -> Tuple[str, str]:
     conf_name, slug = target.partition('.')[::2]
     if not slug:
         conf_name, slug = 'smelly', conf_name
@@ -535,7 +559,9 @@ def write_conf_docs(app: Any, all_kitten_names: Iterable[str]) -> None:
 # }}}
 
 
-def add_html_context(app: Any, pagename: str, templatename: str, context: Any, doctree: Any, *args: Any) -> None:
+def add_html_context(
+        app: Any, pagename: str, templatename: str, context: Any, doctree: Any,
+        *args: Any) -> None:
     context['analytics_id'] = app.config.analytics_id
     if 'toctree' in context:
         # this is needed with furo to use all titles from pages
@@ -561,7 +587,8 @@ def setup(app: Any) -> None:
     app.connect('source-read', replace_string)
     app.add_config_value('analytics_id', '', 'env')
     app.connect('html-page-context', add_html_context)
-    app.add_lexer('session', SessionLexer() if version_info[0] < 3 else SessionLexer)
+    app.add_lexer('session', SessionLexer()
+                  if version_info[0] < 3 else SessionLexer)
     app.add_role('link', link_role)
     app.add_role('commit', commit_role)
     # monkey patch sphinx_inline_tabs to avoid a warning about parallel reads

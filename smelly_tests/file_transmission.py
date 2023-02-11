@@ -21,7 +21,9 @@ from smelly.file_transmission import TestFileTransmission as FileTransmission
 from . import BaseTest
 
 
-def response(id='test', msg='', file_id='', name='', action='status', status='', size=-1):
+def response(
+        id='test', msg='', file_id='', name='', action='status', status='',
+        size=-1):
     ans = {'action': 'status'}
     if id:
         ans['id'] = id
@@ -45,7 +47,11 @@ def names_in(path):
 def serialized_cmd(**fields) -> str:
     if 'id' not in fields:
         fields['id'] = 'test'
-    for k, A in (('action', Action), ('ftype', FileType), ('ttype', TransmissionType), ('compression', Compression)):
+    for k, A in (
+        ('action', Action),
+        ('ftype', FileType),
+        ('ttype', TransmissionType),
+            ('compression', Compression)):
         if k in fields:
             fields[k] = A[fields[k]]
     if isinstance(fields.get('data'), str):
@@ -134,8 +140,10 @@ class TestFileTransmission(BaseTest):
         # send refusal
         for quiet in (0, 1, 2):
             ft = FileTransmission(allow=False)
-            ft.handle_serialized_command(serialized_cmd(action='receive', id='x', quiet=quiet))
-            self.cr(ft.test_responses, [] if quiet == 2 else [response(id='x', status='EPERM:User refused the transfer')])
+            ft.handle_serialized_command(serialized_cmd(
+                action='receive', id='x', quiet=quiet))
+            self.cr(ft.test_responses, [] if quiet == 2 else [
+                    response(id='x', status='EPERM:User refused the transfer')])
             self.assertFalse(ft.active_sends)
         # reading metadata for specs
         cwd = os.path.join(self.tdir, 'cwd')
@@ -144,14 +152,20 @@ class TestFileTransmission(BaseTest):
         with set_paths(cwd=cwd, home=home):
             ft = FileTransmission()
             self.responses = []
-            ft.handle_serialized_command(serialized_cmd(action='receive', size=1))
+            ft.handle_serialized_command(
+                serialized_cmd(action='receive', size=1))
             self.assertResponses(ft, status='OK')
-            ft.handle_serialized_command(serialized_cmd(action='file', file_id='missing', name='XXX'))
-            self.responses.append(response(status='ENOENT:Failed to read spec', file_id='missing'))
+            ft.handle_serialized_command(serialized_cmd(
+                action='file', file_id='missing', name='XXX'))
+            self.responses.append(
+                response(
+                    status='ENOENT:Failed to read spec',
+                    file_id='missing'))
             self.assertResponses(ft, status='OK', name=home)
             ft = FileTransmission()
             self.responses = []
-            ft.handle_serialized_command(serialized_cmd(action='receive', size=2))
+            ft.handle_serialized_command(
+                serialized_cmd(action='receive', size=2))
             self.assertResponses(ft, status='OK')
             with open(os.path.join(home, 'a'), 'w') as f:
                 f.write('a')
@@ -161,9 +175,13 @@ class TestFileTransmission(BaseTest):
             os.symlink(f.name, f.name + 'd/s')
             os.link(f.name, f.name + 'd/h')
             os.symlink('XXX', f.name + 'd/q')
-            ft.handle_serialized_command(serialized_cmd(action='file', file_id='a', name='a'))
-            ft.handle_serialized_command(serialized_cmd(action='file', file_id='b', name='ad'))
-            files = {r['name']: r for r in ft.test_responses if r['action'] == 'file'}
+            ft.handle_serialized_command(serialized_cmd(
+                action='file', file_id='a', name='a'))
+            ft.handle_serialized_command(serialized_cmd(
+                action='file', file_id='b', name='ad'))
+            files = {
+                r['name']: r for r in ft.test_responses
+                if r['action'] == 'file'}
             self.ae(len(files), 6)
             q = files[f.name]
             tgt = q['status'].encode('ascii')
@@ -192,18 +210,26 @@ class TestFileTransmission(BaseTest):
         for compress in ('none', 'zlib'):
             ft = FileTransmission()
             self.responses = []
-            ft.handle_serialized_command(serialized_cmd(action='receive', size=1))
+            ft.handle_serialized_command(
+                serialized_cmd(action='receive', size=1))
             self.assertResponses(ft, status='OK')
-            ft.handle_serialized_command(serialized_cmd(action='file', file_id='src', name=src))
+            ft.handle_serialized_command(serialized_cmd(
+                action='file', file_id='src', name=src))
             ft.active_sends['test'].metadata_sent = True
             ft.test_responses = []
-            ft.handle_serialized_command(serialized_cmd(action='file', file_id='src', name=src, compression=compress))
+            ft.handle_serialized_command(
+                serialized_cmd(
+                    action='file', file_id='src', name=src,
+                    compression=compress))
             received = b''.join(x['data'] for x in ft.test_responses)
             if compress == 'zlib':
                 received = ZlibDecompressor()(received, True)
             self.ae(data, received)
             ft.test_responses = []
-            ft.handle_serialized_command(serialized_cmd(action='file', file_id='sl', name=sl, compression=compress))
+            ft.handle_serialized_command(
+                serialized_cmd(
+                    action='file', file_id='sl', name=sl,
+                    compression=compress))
             received = b''.join(x['data'] for x in ft.test_responses)
             self.ae(received.decode('utf-8'), src)
 
@@ -211,24 +237,35 @@ class TestFileTransmission(BaseTest):
         # send refusal
         for quiet in (0, 1, 2):
             ft = FileTransmission(allow=False)
-            ft.handle_serialized_command(serialized_cmd(action='send', id='x', quiet=quiet))
-            self.cr(ft.test_responses, [] if quiet == 2 else [response(id='x', status='EPERM:User refused the transfer')])
+            ft.handle_serialized_command(
+                serialized_cmd(
+                    action='send', id='x',
+                    quiet=quiet))
+            self.cr(ft.test_responses, [] if quiet == 2 else [
+                    response(id='x', status='EPERM:User refused the transfer')])
             self.assertFalse(ft.active_receives)
         # simple single file send
         for quiet in (0, 1, 2):
             ft = FileTransmission()
             dest = os.path.join(self.tdir, '1.bin')
-            ft.handle_serialized_command(serialized_cmd(action='send', quiet=quiet))
+            ft.handle_serialized_command(
+                serialized_cmd(action='send', quiet=quiet))
             self.assertIn('test', ft.active_receives)
-            self.cr(ft.test_responses, [] if quiet else [response(status='OK')])
-            ft.handle_serialized_command(serialized_cmd(action='file', name=dest))
+            self.cr(ft.test_responses, [] if quiet else [
+                    response(status='OK')])
+            ft.handle_serialized_command(
+                serialized_cmd(action='file', name=dest))
             self.assertPathEqual(ft.active_file('test').name, dest)
             self.assertIsNone(ft.active_file('test').actual_file)
-            self.cr(ft.test_responses, [] if quiet else [response(status='OK'), response(status='STARTED', name=dest)])
-            ft.handle_serialized_command(serialized_cmd(action='data', data='abcd'))
+            self.cr(ft.test_responses, [] if quiet else [response(
+                status='OK'), response(status='STARTED', name=dest)])
+            ft.handle_serialized_command(
+                serialized_cmd(action='data', data='abcd'))
             self.assertPathEqual(ft.active_file('test').name, dest)
-            ft.handle_serialized_command(serialized_cmd(action='end_data', data='123'))
-            self.cr(ft.test_responses, [] if quiet else [response(status='OK'), response(status='STARTED', name=dest), response(status='OK', name=dest)])
+            ft.handle_serialized_command(
+                serialized_cmd(action='end_data', data='123'))
+            self.cr(ft.test_responses, [] if quiet else [response(status='OK'), response(
+                status='STARTED', name=dest), response(status='OK', name=dest)])
             self.assertTrue(ft.active_receives)
             ft.handle_serialized_command(serialized_cmd(action='finish'))
             self.assertFalse(ft.active_receives)
@@ -241,24 +278,34 @@ class TestFileTransmission(BaseTest):
         self.cr(ft.test_responses, [response(status='OK')])
         ft.handle_serialized_command(serialized_cmd(action='file', name=dest))
         self.assertPathEqual(ft.active_file('test').name, dest)
-        ft.handle_serialized_command(serialized_cmd(action='data', data='abcd'))
+        ft.handle_serialized_command(
+            serialized_cmd(action='data', data='abcd'))
         self.assertTrue(os.path.exists(dest))
         ft.handle_serialized_command(serialized_cmd(action='cancel'))
-        self.cr(ft.test_responses, [response(status='OK'), response(status='STARTED', name=dest), response(status='CANCELED')])
+        self.cr(ft.test_responses, [response(status='OK'), response(
+            status='STARTED', name=dest), response(status='CANCELED')])
         self.assertFalse(ft.active_receives)
         # compress with zlib
         ft = FileTransmission()
         dest = os.path.join(self.tdir, '3.bin')
         ft.handle_serialized_command(serialized_cmd(action='send'))
         self.cr(ft.test_responses, [response(status='OK')])
-        ft.handle_serialized_command(serialized_cmd(action='file', name=dest, compression='zlib'))
+        ft.handle_serialized_command(
+            serialized_cmd(
+                action='file', name=dest,
+                compression='zlib'))
         self.assertPathEqual(ft.active_file('test').name, dest)
         odata = b'abcd' * 1024 + b'xyz'
         c = zlib.compressobj()
-        ft.handle_serialized_command(serialized_cmd(action='data', data=c.compress(odata)))
+        ft.handle_serialized_command(
+            serialized_cmd(
+                action='data',
+                data=c.compress(odata)))
         self.assertTrue(os.path.exists(dest))
-        ft.handle_serialized_command(serialized_cmd(action='end_data', data=c.flush()))
-        self.cr(ft.test_responses, [response(status='OK'), response(status='STARTED', name=dest), response(status='OK', name=dest)])
+        ft.handle_serialized_command(
+            serialized_cmd(action='end_data', data=c.flush()))
+        self.cr(ft.test_responses, [response(status='OK'), response(
+            status='STARTED', name=dest), response(status='OK', name=dest)])
         ft.handle_serialized_command(serialized_cmd(action='finish'))
         with open(dest, 'rb') as f:
             self.ae(f.read(), odata)
@@ -274,7 +321,8 @@ class TestFileTransmission(BaseTest):
         os.symlink(two, one)
         ft.handle_serialized_command(serialized_cmd(action='send'))
         ft.handle_serialized_command(serialized_cmd(action='file', name=one))
-        ft.handle_serialized_command(serialized_cmd(action='end_data', data='abcd'))
+        ft.handle_serialized_command(
+            serialized_cmd(action='end_data', data='abcd'))
         ft.handle_serialized_command(serialized_cmd(action='finish'))
         self.assertFalse(os.path.islink(one))
         with open(one) as f:
@@ -282,8 +330,10 @@ class TestFileTransmission(BaseTest):
         self.assertTrue(os.path.isfile(two))
         ft = FileTransmission()
         ft.handle_serialized_command(serialized_cmd(action='send'))
-        ft.handle_serialized_command(serialized_cmd(action='file', name=two, ftype='symlink'))
-        ft.handle_serialized_command(serialized_cmd(action='end_data', data='path:/abcd'))
+        ft.handle_serialized_command(serialized_cmd(
+            action='file', name=two, ftype='symlink'))
+        ft.handle_serialized_command(serialized_cmd(
+            action='end_data', data='path:/abcd'))
         ft.handle_serialized_command(serialized_cmd(action='finish'))
         self.ae(os.readlink(two), '/abcd')
         with open(three, 'w') as f:
@@ -294,7 +344,8 @@ class TestFileTransmission(BaseTest):
         self.assertResponses(ft, status='OK')
         ft.handle_serialized_command(serialized_cmd(action='file', name=three))
         self.assertResponses(ft, status='STARTED', name=three, size=4)
-        ft.handle_serialized_command(serialized_cmd(action='end_data', data='11'))
+        ft.handle_serialized_command(
+            serialized_cmd(action='end_data', data='11'))
         ft.handle_serialized_command(serialized_cmd(action='finish'))
         with open(three) as f:
             self.ae(f.read(), '11')
@@ -314,17 +365,25 @@ class TestFileTransmission(BaseTest):
             kw['file_id'] = str(fid)
             kw['name'] = name
             ft.handle_serialized_command(serialized_cmd(**kw))
-            self.assertResponses(ft, status='OK' if not data else 'STARTED', name=name, file_id=str(fid))
+            self.assertResponses(
+                ft, status='OK' if not data else 'STARTED', name=name,
+                file_id=str(fid))
             if data:
-                ft.handle_serialized_command(serialized_cmd(action='end_data', file_id=str(fid), data=data))
-                self.assertResponses(ft, status='OK', name=name, file_id=str(fid))
+                ft.handle_serialized_command(
+                    serialized_cmd(
+                        action='end_data',
+                        file_id=str(fid),
+                        data=data))
+                self.assertResponses(
+                    ft, status='OK', name=name, file_id=str(fid))
 
         send(dest, b'xyz', permissions=0o777, mtime=13000)
         st = os.stat(dest)
         self.ae(st.st_nlink, 1)
         self.ae(stat.S_IMODE(st.st_mode), 0o777)
         self.ae(st.st_mtime_ns, 13000)
-        send(dest + 's1', 'path:' + os.path.basename(dest), permissions=0o777, mtime=17000, ftype='symlink')
+        send(dest + 's1', 'path:' + os.path.basename(dest),
+             permissions=0o777, mtime=17000, ftype='symlink')
         st = os.stat(dest + 's1', follow_symlinks=False)
         self.ae(stat.S_IMODE(st.st_mode), 0o777)
         self.ae(st.st_mtime_ns, 17000)
@@ -401,22 +460,30 @@ class TestFileTransmission(BaseTest):
             files, specs = gm(all_specs)
             orig_home = home_path()
             with set_paths(cwd_path(), different_home or orig_home):
-                files = list(files_for_receive(opts, dest, files, orig_home, specs))
+                files = list(files_for_receive(
+                    opts, dest, files, orig_home, specs))
                 self.ae(len(files), len(expected))
                 am(files, expected)
 
         opts.mode = 'mirror'
         with set_paths(cwd=b, home='/foo/bar'):
-            tf([b / 'r', b / 'd'], {b / 'r': b / 'r', b / 'd': b / 'd', b / 'd' / 'r': b / 'd' / 'r'})
-            tf([b / 'r', b / 'd/r'], {b / 'r': b / 'r', b / 'd' / 'r': b / 'd' / 'r'})
+            tf([b / 'r', b / 'd'], {b / 'r': b / 'r',
+               b / 'd': b / 'd', b / 'd' / 'r': b / 'd' / 'r'})
+            tf([b / 'r', b / 'd/r'],
+               {b / 'r': b / 'r', b / 'd' / 'r': b / 'd' / 'r'})
         with set_paths(cwd=b, home=self.tdir):
-            tf([b / 'r', b / 'd'], {b / 'r': '~/b/r', b / 'd': '~/b/d', b / 'd' / 'r': '~/b/d/r'}, different_home='/foo/bar')
+            tf([b / 'r', b / 'd'],
+               {b / 'r': '~/b/r', b / 'd': '~/b/d', b / 'd' / 'r': '~/b/d/r'},
+               different_home='/foo/bar')
         opts.mode = 'normal'
         with set_paths(cwd='/some/else', home='/foo/bar'):
-            tf([b / 'r', b / 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
-            tf([b / 'r', b / 'd', '~/dest'], {b / 'r': '~/dest/r', b / 'd': '~/dest/d', b / 'd' / 'r': '~/dest/d/r'})
+            tf([b / 'r', b / 'd', '/dest'],
+               {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
+            tf([b / 'r', b / 'd', '~/dest'],
+               {b / 'r': '~/dest/r', b / 'd': '~/dest/d', b / 'd' / 'r': '~/dest/d/r'})
         with set_paths(cwd=b, home='/foo/bar'):
-            tf([b / 'r', b / 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
+            tf([b / 'r', b / 'd', '/dest'],
+               {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
         os.symlink('/foo/b', b / 'e')
         os.symlink('r', b / 's')
         os.link(b / 'r', b / 'h')
@@ -451,16 +518,21 @@ class TestFileTransmission(BaseTest):
 
         opts.mode = 'mirror'
         with set_paths(cwd=b, home='/foo/bar'):
-            tf(['r', 'd'], {b / 'r': b / 'r', b / 'd': b / 'd', b / 'd' / 'r': b / 'd' / 'r'})
+            tf(['r', 'd'], {b / 'r': b / 'r',
+               b / 'd': b / 'd', b / 'd' / 'r': b / 'd' / 'r'})
             tf(['r', 'd/r'], {b / 'r': b / 'r', b / 'd' / 'r': b / 'd' / 'r'})
         with set_paths(cwd=b, home=self.tdir):
-            tf(['r', 'd'], {b / 'r': '~/b/r', b / 'd': '~/b/d', b / 'd' / 'r': '~/b/d/r'})
+            tf(['r', 'd'], {b / 'r': '~/b/r',
+               b / 'd': '~/b/d', b / 'd' / 'r': '~/b/d/r'})
         opts.mode = 'normal'
         with set_paths(cwd='/some/else', home='/foo/bar'):
-            tf([b / 'r', b / 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
-            tf([b / 'r', b / 'd', '~/dest'], {b / 'r': '~/dest/r', b / 'd': '~/dest/d', b / 'd' / 'r': '~/dest/d/r'})
+            tf([b / 'r', b / 'd', '/dest'],
+               {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
+            tf([b / 'r', b / 'd', '~/dest'],
+               {b / 'r': '~/dest/r', b / 'd': '~/dest/d', b / 'd' / 'r': '~/dest/d/r'})
         with set_paths(cwd=b, home='/foo/bar'):
-            tf(['r', 'd', '/dest'], {b / 'r': '/dest/r', b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
+            tf(['r', 'd', '/dest'], {b / 'r': '/dest/r',
+               b / 'd': '/dest/d', b / 'd' / 'r': '/dest/d/r'})
 
         os.symlink('/foo/b', b / 'e')
         os.symlink('r', b / 's')

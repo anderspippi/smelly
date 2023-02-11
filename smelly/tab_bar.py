@@ -120,7 +120,10 @@ class ColorFormatter:
         if q == 'default':
             ans = '9'
         elif q == 'tab':
-            col = color_from_int((self.draw_data.tab_bg if self.which == '4' else self.draw_data.tab_fg)(self.tab_data))
+            col = color_from_int(
+                (self.draw_data.tab_bg
+                 if self.which == '4' else self.draw_data.tab_fg)
+                (self.tab_data))
             ans = f'8{color_as_sgr(col)}'
         else:
             if name.startswith('_'):
@@ -143,17 +146,22 @@ class Formatter:
 
 
 @run_once
-def super_sub_maps() -> Tuple[Dict[int, Union[None, int]], Dict[int, Union[None, int]]]:
+def super_sub_maps() -> Tuple[Dict[int, Union[None, int]],
+                              Dict[int, Union[None, int]]]:
     import string
 
     sup_table = str.maketrans(
         string.ascii_lowercase + string.ascii_uppercase + string.digits + '+-=()',
-        'ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖqʳˢᵗᵘᵛʷˣʸᶻ' 'ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾQᴿˢᵀᵁⱽᵂˣʸᶻ' '⁰¹²³⁴⁵⁶⁷⁸⁹' '⁺⁻⁼⁽⁾',
-    )
+        'ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖqʳˢᵗᵘᵛʷˣʸᶻ'
+        'ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾQᴿˢᵀᵁⱽᵂˣʸᶻ'
+        '⁰¹²³⁴⁵⁶⁷⁸⁹'
+        '⁺⁻⁼⁽⁾',)
     sub_table = str.maketrans(
         string.ascii_lowercase + string.ascii_uppercase + string.digits + '+-=()',
-        'ₐbcdₑfgₕᵢⱼₖₗₘₙₒₚqᵣₛₜᵤᵥwₓyz' 'ₐbcdₑfgₕᵢⱼₖₗₘₙₒₚqᵣₛₜᵤᵥwₓyz' '₀₁₂₃₄₅₆₇₈₉' '₊₋₌₍₎',
-    )
+        'ₐbcdₑfgₕᵢⱼₖₗₘₙₒₚqᵣₛₜᵤᵥwₓyz'
+        'ₐbcdₑfgₕᵢⱼₖₗₘₙₒₚqᵣₛₜᵤᵥwₓyz'
+        '₀₁₂₃₄₅₆₇₈₉'
+        '₊₋₌₍₎',)
     return sup_table, sub_table
 
 
@@ -214,12 +222,14 @@ class TabAccessor:
     @property
     def active_exe(self) -> str:
         tab = get_boss().tab_for_id(self.tab_id)
-        return os.path.basename((tab.get_exe_of_active_window() if tab else '') or '')
+        return os.path.basename(
+            (tab.get_exe_of_active_window() if tab else '') or '')
 
     @property
     def active_oldest_exe(self) -> str:
         tab = get_boss().tab_for_id(self.tab_id)
-        return os.path.basename((tab.get_exe_of_active_window(oldest=True) if tab else '') or '')
+        return os.path.basename(
+            (tab.get_exe_of_active_window(oldest=True) if tab else '') or '')
 
 
 safe_builtins = {
@@ -235,7 +245,9 @@ safe_builtins = {
 }
 
 
-def draw_title(draw_data: DrawData, screen: Screen, tab: TabBarData, index: int, max_title_length: int = 0) -> None:
+def draw_title(
+        draw_data: DrawData, screen: Screen, tab: TabBarData, index: int,
+        max_title_length: int = 0) -> None:
     ta = TabAccessor(tab.tab_id)
     data = {
         'index': index,
@@ -246,35 +258,37 @@ def draw_title(draw_data: DrawData, screen: Screen, tab: TabBarData, index: int,
         'tab': ta,
     }
     if draw_data.max_tab_title_length > 0:
-        max_title_length = min(max_title_length, draw_data.max_tab_title_length)
+        max_title_length = min(
+            max_title_length, draw_data.max_tab_title_length)
     ColorFormatter.draw_data = draw_data
     ColorFormatter.tab_data = tab
     eval_locals = {
-        'index': index,
-        'layout_name': tab.layout_name,
+        'index': index, 'layout_name': tab.layout_name,
         'num_windows': tab.num_windows,
-        'num_window_groups': tab.num_window_groups,
-        'title': tab.title,
-        'tab': ta,
-        'fmt': Formatter,
-        'sup': SupSub(data),
+        'num_window_groups': tab.num_window_groups, 'title': tab.title,
+        'tab': ta, 'fmt': Formatter, 'sup': SupSub(data),
         'sub': SupSub(data, True),
         'bell_symbol': draw_data.bell_on_tab if tab.needs_attention else '',
-        'activity_symbol': draw_data.tab_activity_symbol if tab.has_activity_since_last_focus else '',
-        'max_title_length': max_title_length,
-    }
+        'activity_symbol': draw_data.tab_activity_symbol
+        if tab.has_activity_since_last_focus else '',
+        'max_title_length': max_title_length, }
     template = draw_data.title_template
     if tab.is_active and draw_data.active_title_template is not None:
         template = draw_data.active_title_template
     prefix = ''
-    if eval_locals['bell_symbol'] and not template_has_field(template, 'bell_symbol'):
+    if eval_locals['bell_symbol'] and not template_has_field(
+            template, 'bell_symbol'):
         prefix = '{bell_symbol}'
-    if eval_locals['activity_symbol'] and not template_has_field(template, 'activity_symbol'):
+    if eval_locals['activity_symbol'] and not template_has_field(
+            template, 'activity_symbol'):
         prefix += '{activity_symbol}'
     if prefix:
         template = '{fmt.fg.red}' + prefix + '{fmt.fg.tab}' + template
     try:
-        title = eval(compile_template(template), {'__builtins__': safe_builtins}, eval_locals)
+        title = eval(
+            compile_template(template),
+            {'__builtins__': safe_builtins},
+            eval_locals)
     except Exception as e:
         report_template_failure(template, str(e))
         title = tab.title
@@ -287,14 +301,17 @@ def draw_title(draw_data: DrawData, screen: Screen, tab: TabBarData, index: int,
             screen.draw('…')
 
 
-DrawTabFunc = Callable[[DrawData, Screen, TabBarData, int, int, int, bool, ExtraData], int]
+DrawTabFunc = Callable[[DrawData, Screen,
+                        TabBarData, int, int, int, bool, ExtraData], int]
 
 
-def draw_tab_with_slant(
-    draw_data: DrawData, screen: Screen, tab: TabBarData, before: int, max_tab_length: int, index: int, is_last: bool, extra_data: ExtraData
-) -> int:
+def draw_tab_with_slant(draw_data: DrawData, screen: Screen, tab: TabBarData,
+                        before: int, max_tab_length: int, index: int,
+                        is_last: bool, extra_data: ExtraData) -> int:
     orig_fg = screen.cursor.fg
-    left_sep, right_sep = ('', '') if draw_data.tab_bar_edge == 'top' else ('', '')
+    left_sep, right_sep = (
+        '', '') if draw_data.tab_bar_edge == 'top' else (
+        '', '')
     tab_bg = screen.cursor.bg
     slant_fg = as_rgb(color_as_int(draw_data.default_bg))
 
@@ -312,7 +329,8 @@ def draw_tab_with_slant(
         screen.draw('…|')
     elif max_tab_length < 6:
         draw_sep(left_sep)
-        screen.draw((' ' if max_tab_length == 5 else '') + '…' + (' ' if max_tab_length >= 4 else ''))
+        screen.draw((' ' if max_tab_length == 5 else '') + '…' +
+                    (' ' if max_tab_length >= 4 else ''))
         draw_sep(right_sep)
     else:
         draw_sep(left_sep)
@@ -355,12 +373,17 @@ def draw_tab_with_separator(
     return end
 
 
-def draw_tab_with_fade(
-    draw_data: DrawData, screen: Screen, tab: TabBarData, before: int, max_tab_length: int, index: int, is_last: bool, extra_data: ExtraData
-) -> int:
+def draw_tab_with_fade(draw_data: DrawData, screen: Screen, tab: TabBarData,
+                       before: int, max_tab_length: int, index: int,
+                       is_last: bool, extra_data: ExtraData) -> int:
     orig_bg = screen.cursor.bg
     tab_bg = color_from_int(orig_bg >> 8)
-    fade_colors = [as_rgb(color_as_int(alpha_blend(tab_bg, draw_data.default_bg, alpha))) for alpha in draw_data.alpha]
+    fade_colors = [
+        as_rgb(
+            color_as_int(
+                alpha_blend(
+                    tab_bg, draw_data.default_bg, alpha)))
+        for alpha in draw_data.alpha]
     for bg in fade_colors:
         screen.cursor.bg = bg
         screen.draw(' ')
@@ -386,7 +409,8 @@ def draw_tab_with_fade(
     return end
 
 
-powerline_symbols: Dict[PowerlineStyle, Tuple[str, str]] = {'slanted': ('', '╱'), 'round': ('', '')}
+powerline_symbols: Dict[PowerlineStyle, Tuple[str, str]] = {
+    'slanted': ('', '╱'), 'round': ('', '')}
 
 
 def draw_tab_with_powerline(
@@ -402,7 +426,8 @@ def draw_tab_with_powerline(
         next_tab_bg = default_bg
         needs_soft_separator = False
 
-    separator_symbol, soft_separator_symbol = powerline_symbols.get(draw_data.powerline_style, ('', ''))
+    separator_symbol, soft_separator_symbol = powerline_symbols.get(
+        draw_data.powerline_style, ('', ''))
     min_title_length = 1 + 2
     start_draw = 2
 
@@ -459,13 +484,18 @@ def load_custom_draw_tab() -> DrawTabFunc:
 
     @wraps(func)
     def draw_tab(
-        draw_data: DrawData, screen: Screen, tab: TabBarData, before: int, max_tab_length: int, index: int, is_last: bool, extra_data: ExtraData
-    ) -> int:
+            draw_data: DrawData, screen: Screen, tab: TabBarData, before: int,
+            max_tab_length: int, index: int, is_last: bool,
+            extra_data: ExtraData) -> int:
         try:
-            return func(draw_data, screen, tab, before, max_tab_length, index, is_last, extra_data)
+            return func(
+                draw_data, screen, tab, before, max_tab_length, index, is_last,
+                extra_data)
         except Exception as e:
             log_error(f'Custom draw tab function failed with error: {e}')
-            return draw_tab_with_fade(draw_data, screen, tab, before, max_tab_length, index, is_last, extra_data)
+            return draw_tab_with_fade(
+                draw_data, screen, tab, before, max_tab_length, index, is_last,
+                extra_data)
 
     return draw_tab
 
@@ -483,14 +513,18 @@ class TabBar:
     def apply_options(self) -> None:
         opts = get_options()
         self.dirty = True
-        self.margin_width = pt_to_px(opts.tab_bar_margin_width, self.os_window_id)
+        self.margin_width = pt_to_px(
+            opts.tab_bar_margin_width, self.os_window_id)
         self.cell_width, cell_height = cell_size_for_window(self.os_window_id)
         if not hasattr(self, 'screen'):
-            self.screen = s = Screen(None, 1, 10, 0, self.cell_width, cell_height)
+            self.screen = s = Screen(
+                None, 1, 10, 0, self.cell_width, cell_height)
         else:
             s = self.screen
         s.color_profile.update_ansi_color_table(build_ansi_color_table(opts))
-        s.color_profile.set_configured_colors(color_as_int(opts.inactive_tab_foreground), color_as_int(opts.tab_bar_background or opts.background))
+        s.color_profile.set_configured_colors(
+            color_as_int(opts.inactive_tab_foreground),
+            color_as_int(opts.tab_bar_background or opts.background))
         sep = opts.tab_separator
         self.trailing_spaces = self.leading_spaces = 0
         while sep and sep[0] == ' ':
@@ -546,21 +580,26 @@ class TabBar:
         atf = spec.get('active_tab_foreground')
         if isinstance(atf, int):
             self.active_fg = (atf << 8) | 2
-            self.draw_data = self.draw_data._replace(active_fg=color_from_int(atf))
+            self.draw_data = self.draw_data._replace(
+                active_fg=color_from_int(atf))
         atb = spec.get('active_tab_background')
         if isinstance(atb, int):
             self.active_bg = (atb << 8) | 2
-            self.draw_data = self.draw_data._replace(active_bg=color_from_int(atb))
+            self.draw_data = self.draw_data._replace(
+                active_bg=color_from_int(atb))
         itb = spec.get('inactive_tab_background')
         if isinstance(itb, int):
-            self.draw_data = self.draw_data._replace(inactive_bg=color_from_int(itb))
+            self.draw_data = self.draw_data._replace(
+                inactive_bg=color_from_int(itb))
         if 'tab_bar_background' in spec:
             val = spec['tab_bar_background']
             if val is None:
                 val = color_as_int(opts.background)
-            self.draw_data = self.draw_data._replace(default_bg=color_from_int(val))
+            self.draw_data = self.draw_data._replace(
+                default_bg=color_from_int(val))
         elif not opts.tab_bar_background:
-            self.draw_data = self.draw_data._replace(default_bg=opts.background)
+            self.draw_data = self.draw_data._replace(
+                default_bg=opts.background)
         bg = spec.get('tab_bar_background', False)
         if bg is None:
             bg = color_as_int(opts.background)
@@ -585,21 +624,25 @@ class TabBar:
             'tab_bar_background': self.draw_data.default_bg,
         }
 
-    def update_blank_rects(self, central: Region, tab_bar: Region, vw: int, vh: int) -> None:
+    def update_blank_rects(
+            self, central: Region, tab_bar: Region, vw: int, vh: int) -> None:
         opts = get_options()
         blank_rects: List[Border] = []
         bg = BorderColor.tab_bar_margin_color if opts.tab_bar_margin_color is not None else BorderColor.default_bg
         if opts.tab_bar_margin_height:
             if opts.tab_bar_edge == 3:  # bottom
                 if opts.tab_bar_margin_height.outer:
-                    blank_rects.append(Border(0, tab_bar.bottom + 1, vw, vh, bg))
+                    blank_rects.append(
+                        Border(0, tab_bar.bottom + 1, vw, vh, bg))
                 if opts.tab_bar_margin_height.inner:
-                    blank_rects.append(Border(0, central.bottom + 1, vw, vh, bg))
+                    blank_rects.append(
+                        Border(0, central.bottom + 1, vw, vh, bg))
             else:  # top
                 if opts.tab_bar_margin_height.outer:
                     blank_rects.append(Border(0, 0, vw, tab_bar.top, bg))
                 if opts.tab_bar_margin_height.inner:
-                    blank_rects.append(Border(0, tab_bar.bottom + 1, vw, central.top, bg))
+                    blank_rects.append(
+                        Border(0, tab_bar.bottom + 1, vw, central.top, bg))
         g = self.window_geometry
         left_bg = right_bg = bg
         if opts.tab_bar_margin_color is None:
@@ -608,22 +651,28 @@ class TabBar:
         if g.left > 0:
             blank_rects.append(Border(0, g.top, g.left, g.bottom + 1, left_bg))
         if g.right - 1 < vw:
-            blank_rects.append(Border(g.right - 1, g.top, vw, g.bottom + 1, right_bg))
+            blank_rects.append(
+                Border(
+                    g.right - 1, g.top, vw, g.bottom + 1,
+                    right_bg))
         self.blank_rects = tuple(blank_rects)
 
     def layout(self) -> None:
-        central, tab_bar, vw, vh, cell_width, cell_height = viewport_for_window(self.os_window_id)
+        central, tab_bar, vw, vh, cell_width, cell_height = viewport_for_window(
+            self.os_window_id)
         if tab_bar.width < 2:
             return
         self.cell_width = cell_width
         s = self.screen
-        viewport_width = max(4 * cell_width, tab_bar.width - 2 * self.margin_width)
+        viewport_width = max(
+            4 * cell_width, tab_bar.width - 2 * self.margin_width)
         ncells = viewport_width // cell_width
         s.resize(1, ncells)
         s.reset_mode(DECAWM)
         self.laid_out_once = True
         margin = (viewport_width - ncells * cell_width) // 2 + self.margin_width
-        self.window_geometry = g = WindowGeometry(margin, tab_bar.top, viewport_width - margin, tab_bar.bottom, s.columns, s.lines)
+        self.window_geometry = g = WindowGeometry(
+            margin, tab_bar.top, viewport_width - margin, tab_bar.bottom, s.columns, s.lines)
         self.update_blank_rects(central, tab_bar, vw, vh)
         set_tab_bar_render_data(self.os_window_id, self.screen, *g[:4])
 
@@ -634,14 +683,18 @@ class TabBar:
         last_tab = data[-1] if data else None
         ed = ExtraData()
 
-        def draw_tab(i: int, tab: TabBarData, cell_ranges: List[Tuple[int, int]], max_tab_length: int) -> None:
+        def draw_tab(
+                i: int, tab: TabBarData, cell_ranges: List[Tuple[int, int]],
+                max_tab_length: int) -> None:
             ed.prev_tab = data[i - 1] if i > 0 else None
             ed.next_tab = data[i + 1] if i + 1 < len(data) else None
             s.cursor.bg = as_rgb(self.draw_data.tab_bg(t))
             s.cursor.fg = as_rgb(self.draw_data.tab_fg(t))
             s.cursor.bold, s.cursor.italic = self.active_font_style if t.is_active else self.inactive_font_style
             before = s.cursor.x
-            end = self.draw_func(self.draw_data, s, t, before, max_tab_length, i + 1, t is last_tab, ed)
+            end = self.draw_func(
+                self.draw_data, s, t, before, max_tab_length, i + 1, t
+                is last_tab, ed)
             s.cursor.bg = s.cursor.fg = 0
             cell_ranges.append((before, end))
             if not ed.for_layout and t is not last_tab and s.cursor.x > s.columns - max_tab_lengths[i + 1]:
@@ -670,11 +723,15 @@ class TabBar:
                 extra += default_max_tab_length - tl
         if extra > 0:
             if ideal_tab_lengths[active_idx] > max_tab_lengths[active_idx]:
-                d = min(extra, ideal_tab_lengths[active_idx] - max_tab_lengths[active_idx])
+                d = min(
+                    extra, ideal_tab_lengths[active_idx] -
+                    max_tab_lengths[active_idx])
                 max_tab_lengths[active_idx] += d
                 extra -= d
             if extra > 0:
-                over_achievers = tuple(i for i in range(len(data)) if ideal_tab_lengths[i] > max_tab_lengths[i])
+                over_achievers = tuple(
+                    i for i in range(len(data))
+                    if ideal_tab_lengths[i] > max_tab_lengths[i])
                 if over_achievers:
                     amt_per_over_achiever = extra // len(over_achievers)
                     if amt_per_over_achiever > 0:
@@ -704,7 +761,8 @@ class TabBar:
             shift = (self.screen.columns - end) // factor
             self.screen.cursor.x = 0
             self.screen.insert_characters(shift)
-            self.cell_ranges = [(s + shift, e + shift) for (s, e) in self.cell_ranges]
+            self.cell_ranges = [(s + shift, e + shift)
+                                for (s, e) in self.cell_ranges]
 
     def destroy(self) -> None:
         self.screen.reset_callbacks()

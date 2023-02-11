@@ -32,14 +32,17 @@ class TestHints(BaseTest):
         t(f'`xyz <{u}>`_.', u)
         t(f'<a href="{u}">moo', u)
         t('\x1b[mhttp://test.me/1234\n\x1b[mx', 'http://test.me/1234')
-        t('\x1b[mhttp://test.me/12345\r\x1b[m6\n\x1b[mx', 'http://test.me/123456')
+        t('\x1b[mhttp://test.me/12345\r\x1b[m6\n\x1b[mx',
+          'http://test.me/123456')
 
         def m(text, path, line, cols=20):
             def adapt(pattern, postprocessors, text, *a):
                 return linenum_marks(text, args, Mark, ())
 
             marks = create_marks(text, cols, mark=adapt)
-            data = {'groupdicts': [m.groupdict for m in marks], 'match': [m.text for m in marks]}
+            data = {
+                'groupdicts': [m.groupdict for m in marks],
+                'match': [m.text for m in marks]}
             self.ae(linenum_process_result(data), (path, line))
 
         args = parse_hints_args('--type=linenum'.split())[0]
@@ -62,11 +65,13 @@ class TestHints(BaseTest):
 
         testcases = (
             ('100.64.0.0', ['100.64.0.0']),
-            ('2001:0db8:0000:0000:0000:ff00:0042:8329', ['2001:0db8:0000:0000:0000:ff00:0042:8329']),
+            ('2001:0db8:0000:0000:0000:ff00:0042:8329', [
+             '2001:0db8:0000:0000:0000:ff00:0042:8329']),
             ('2001:db8:0:0:0:ff00:42:8329', ['2001:db8:0:0:0:ff00:42:8329']),
             ('2001:db8::ff00:42:8329', ['2001:db8::ff00:42:8329']),
             ('2001:DB8::FF00:42:8329', ['2001:DB8::FF00:42:8329']),
-            ('0000:0000:0000:0000:0000:0000:0000:0001', ['0000:0000:0000:0000:0000:0000:0000:0001']),
+            ('0000:0000:0000:0000:0000:0000:0000:0001', [
+             '0000:0000:0000:0000:0000:0000:0000:0001']),
             ('::1', ['::1']),
             # Invalid IPs won't match
             ('255.255.255.256', []),

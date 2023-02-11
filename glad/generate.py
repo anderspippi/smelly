@@ -11,8 +11,7 @@ import subprocess
 cmdline = (
     'glad --out-path {dest} --api gl:core=3.1 '
     ' --extensions GL_ARB_texture_storage,GL_ARB_copy_image,GL_ARB_multisample,GL_ARB_robustness,GL_ARB_instanced_arrays,GL_KHR_debug '
-    'c --header-only --debug'
-)
+    'c --header-only --debug')
 
 
 def clean(x):

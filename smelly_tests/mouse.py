@@ -27,12 +27,17 @@ def send_mouse_event(
 ):
     ix = int(x)
     in_left_half_of_cell = x - ix < 0.5
-    send_mock_mouse_event_to_window(window, button, modifiers, is_release, ix, y, clear_click_queue, in_left_half_of_cell)
+    send_mock_mouse_event_to_window(
+        window, button, modifiers, is_release, ix, y, clear_click_queue,
+        in_left_half_of_cell)
 
 
 class TestMouse(BaseTest):
     def test_mouse_selection(self):
-        s = self.create_screen(options=dict(rectangle_select_modifiers=GLFW_MOD_ALT | GLFW_MOD_CONTROL))
+        s = self.create_screen(
+            options=dict(
+                rectangle_select_modifiers=GLFW_MOD_ALT |
+                GLFW_MOD_CONTROL))
         w = create_mock_window(s)
         ev = partial(send_mouse_event, w)
 
@@ -73,7 +78,8 @@ class TestMouse(BaseTest):
             clear_click_queue = True
             while count > 0:
                 count -= 1
-                ev(GLFW_MOUSE_BUTTON_LEFT, x=x, y=y, clear_click_queue=clear_click_queue)
+                ev(GLFW_MOUSE_BUTTON_LEFT, x=x, y=y,
+                   clear_click_queue=clear_click_queue)
                 clear_click_queue = False
 
         def scroll(x=0, y=0, up=True):

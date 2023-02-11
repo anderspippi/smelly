@@ -17,11 +17,15 @@ def keyboard_mode_name(screen: ScreenType) -> str:
     return 'application' if screen.cursor_key_mode else 'normal'
 
 
-def get_shortcut(keymap: Union[KeyMap, SequenceMap], ev: KeyEvent) -> Union[str, SubSequenceMap, None]:
+def get_shortcut(keymap: Union[KeyMap, SequenceMap],
+                 ev: KeyEvent) -> Union[str, SubSequenceMap, None]:
     mods = ev.mods & mod_mask
     ans = keymap.get(SingleKey(mods, False, ev.key))
     if ans is None and ev.shifted_key and mods & GLFW_MOD_SHIFT:
-        ans = keymap.get(SingleKey(mods & (~GLFW_MOD_SHIFT), False, ev.shifted_key))
+        ans = keymap.get(
+            SingleKey(
+                mods & (~GLFW_MOD_SHIFT),
+                False, ev.shifted_key))
     if ans is None:
         ans = keymap.get(SingleKey(mods, True, ev.native_key))
     return ans
@@ -34,6 +38,7 @@ def shortcut_matches(s: SingleKey, ev: KeyEvent) -> bool:
         return s.key == ev.native_key and smods == mods
     if s.key == ev.key and mods == smods:
         return True
-    if ev.shifted_key and mods & GLFW_MOD_SHIFT and (mods & ~GLFW_MOD_SHIFT) == smods and ev.shifted_key == s.key:
+    if ev.shifted_key and mods & GLFW_MOD_SHIFT and (
+            mods & ~GLFW_MOD_SHIFT) == smods and ev.shifted_key == s.key:
         return True
     return False

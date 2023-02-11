@@ -26,7 +26,8 @@ def make_filename(prefix: str) -> str:
     plen = len(prefix.encode('utf-8'))
     safe_length = min(plen + 64, SHM_NAME_MAX)
     if safe_length - plen < 2:
-        raise OSError(errno.ENAMETOOLONG, f'SHM filename prefix {prefix} is too long')
+        raise OSError(errno.ENAMETOOLONG,
+                      f'SHM filename prefix {prefix} is too long')
     nbytes = (safe_length - plen) // 2
     name = prefix + secrets.token_hex(nbytes)
     return name
@@ -81,7 +82,8 @@ class SharedMemory:
             except FileExistsError:
                 continue
         if tries <= 0:
-            raise OSError(f'Failed to create a uniquely named SHM file, try shortening the prefix from: {prefix}')
+            raise OSError(
+                f'Failed to create a uniquely named SHM file, try shortening the prefix from: {prefix}')
         if self._fd < 0:
             self._fd = shm_open(name, flags, mode)
         self._name = name
@@ -90,7 +92,9 @@ class SharedMemory:
                 os.ftruncate(self._fd, size)
             self.stats = os.fstat(self._fd)
             size = self.stats.st_size
-            self._mmap = mmap.mmap(self._fd, size, access=mmap.ACCESS_READ if readonly else mmap.ACCESS_WRITE)
+            self._mmap = mmap.mmap(
+                self._fd, size, access=mmap.ACCESS_READ
+                if readonly else mmap.ACCESS_WRITE)
         except OSError:
             self.unlink()
             raise
@@ -122,7 +126,8 @@ class SharedMemory:
         self.write(data)
 
     def read_data_with_size(self) -> bytes:
-        sz = struct.unpack(self.size_fmt, self.read(self.num_bytes_for_size))[0]
+        sz = struct.unpack(self.size_fmt, self.read(
+            self.num_bytes_for_size))[0]
         return self.read(sz)
 
     def __del__(self) -> None:
@@ -151,7 +156,8 @@ class SharedMemory:
     def mmap(self) -> mmap.mmap:
         ans = self._mmap
         if ans is None:
-            raise RuntimeError('Cannot access the mmap of a closed shared memory object')
+            raise RuntimeError(
+                'Cannot access the mmap of a closed shared memory object')
         return ans
 
     def fileno(self) -> int:

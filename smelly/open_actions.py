@@ -77,11 +77,14 @@ def parse(lines: Iterable[str]) -> Iterator[OpenAction]:
         for mc, action_defns in entries:
             actions: List[KeyAction] = []
             for defn in action_defns:
-                actions.extend(resolve_aliases_and_parse_actions(defn, alias_map, 'open_action'))
+                actions.extend(
+                    resolve_aliases_and_parse_actions(
+                        defn, alias_map, 'open_action'))
             yield OpenAction(mc, tuple(actions))
 
 
-def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc: MatchCriteria) -> bool:
+def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str,
+                          mc: MatchCriteria) -> bool:
     if mc.type == 'url':
         import re
 
@@ -94,7 +97,9 @@ def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc:
     if mc.type == 'mime':
         import fnmatch
 
-        mt = guess_type(unquoted_path, allow_filesystem_access=purl.scheme in ('', 'file'))
+        mt = guess_type(
+            unquoted_path, allow_filesystem_access=purl.scheme in (
+                '', 'file'))
         if not mt:
             return False
         mt = mt.lower()
@@ -153,7 +158,9 @@ def url_matches_criterion(purl: 'ParseResult', url: str, unquoted_path: str, mc:
             return False
 
 
-def url_matches_criteria(purl: 'ParseResult', url: str, unquoted_path: str, criteria: Iterable[MatchCriteria]) -> bool:
+def url_matches_criteria(
+        purl: 'ParseResult', url: str, unquoted_path: str,
+        criteria: Iterable[MatchCriteria]) -> bool:
     for x in criteria:
         try:
             if not url_matches_criterion(purl, url, unquoted_path, x):
@@ -163,7 +170,8 @@ def url_matches_criteria(purl: 'ParseResult', url: str, unquoted_path: str, crit
     return True
 
 
-def actions_for_url_from_list(url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
+def actions_for_url_from_list(
+        url: str, actions: Iterable[OpenAction]) -> Iterator[KeyAction]:
     try:
         purl = urlparse(url)
     except Exception:
@@ -175,7 +183,9 @@ def actions_for_url_from_list(url: str, actions: Iterable[OpenAction]) -> Iterat
     if purl.fragment:
         up += f'#{purl.fragment}'
 
-    env = {'URL': url, 'FILE_PATH': path, 'URL_PATH': up, 'FILE': posixpath.basename(path), 'FRAGMENT': unquote(purl.fragment)}
+    env = {'URL': url, 'FILE_PATH': path, 'URL_PATH': up,
+           'FILE': posixpath.basename(path),
+           'FRAGMENT': unquote(purl.fragment)}
 
     def expand(x: Any) -> Any:
         as_bytes = isinstance(x, bytes)
@@ -276,7 +286,8 @@ action launch --type=os-window ssh $URL
     )
 
 
-def actions_for_url(url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
+def actions_for_url(
+        url: str, actions_spec: Optional[str] = None) -> Iterator[KeyAction]:
     if actions_spec is None:
         actions = load_open_actions()
     else:

@@ -56,7 +56,9 @@ class Flag:
 disallow_expand_vars = Flag(False)
 
 
-def expandvars(val: str, env: Mapping[str, str] = {}, fallback_to_os_env: bool = True) -> str:
+def expandvars(
+        val: str, env: Mapping[str, str] = {},
+        fallback_to_os_env: bool = True) -> str:
     '''
     Expand $VAR and ${VAR} Use $$ for a literal $
     '''
@@ -73,7 +75,9 @@ def expandvars(val: str, env: Mapping[str, str] = {}, fallback_to_os_env: bool =
     if disallow_expand_vars or '$' not in val:
         return val
 
-    return re.sub(r'\$(?:(\w+)|\{([^}]+)\})', sub, val.replace('$$', '\0')).replace('\0', '$')
+    return re.sub(
+        r'\$(?:(\w+)|\{([^}]+)\})', sub, val.replace('$$', '\0')).replace(
+        '\0', '$')
 
 
 @lru_cache(maxsize=2)
@@ -125,7 +129,8 @@ def log_error(*a: Any, **k: str) -> None:
 
     output = getattr(log_error, 'redirect', log_error_string)
     with suppress(Exception):
-        msg = k.get('sep', ' ').join(map(str, a)) + k.get('end', '').replace('\0', '')
+        msg = k.get('sep', ' ').join(
+            map(str, a)) + k.get('end', '').replace('\0', '')
         output(msg)
 
 
@@ -163,7 +168,7 @@ def parse_color_set(raw: str) -> Generator[Tuple[int, Optional[int]], None, None
     lp = len(parts)
     if lp % 2 != 0:
         return
-    for c_, spec in [parts[i : i + 2] for i in range(0, len(parts), 2)]:
+    for c_, spec in [parts[i: i + 2] for i in range(0, len(parts), 2)]:
         try:
             c = int(c_)
             if c < 0 or c > 255:
@@ -239,7 +244,9 @@ def fit_image(width: int, height: int, pwidth: int, pheight: int) -> Tuple[int, 
     return int(width), int(height)
 
 
-def base64_encode(integer: int, chars: str = string.ascii_uppercase + string.ascii_lowercase + string.digits + '+/') -> str:
+def base64_encode(
+        integer: int, chars: str = string.ascii_uppercase + string.
+        ascii_lowercase + string.digits + '+/') -> str:
     ans = ''
     while True:
         integer, remainder = divmod(integer, 64)
@@ -262,8 +269,11 @@ def command_for_open(program: Union[str, List[str]] = 'default') -> List[str]:
 
 
 def open_cmd(
-    cmd: Union[Iterable[str], List[str]], arg: Union[None, Iterable[str], str] = None, cwd: Optional[str] = None, extra_env: Optional[Dict[str, str]] = None
-) -> 'PopenType[bytes]':
+        cmd: Union[Iterable[str],
+                   List[str]],
+        arg: Union[None, Iterable[str],
+                   str] = None, cwd: Optional[str] = None,
+        extra_env: Optional[Dict[str, str]] = None) -> 'PopenType[bytes]':
     import subprocess
 
     if arg is not None:
@@ -277,12 +287,16 @@ def open_cmd(
         env = os.environ.copy()
         env.update(extra_env)
     return subprocess.Popen(
-        tuple(cmd), stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, cwd=cwd or None, preexec_fn=clear_handled_signals, env=env
-    )
+        tuple(cmd),
+        stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL, cwd=cwd or None,
+        preexec_fn=clear_handled_signals, env=env)
 
 
 def open_url(url: str, program: Union[str, List[str]] = 'default', cwd: Optional[str] = None, extra_env: Optional[Dict[str, str]] = None) -> 'PopenType[bytes]':
-    return open_cmd(command_for_open(program), url, cwd=cwd, extra_env=extra_env)
+    return open_cmd(
+        command_for_open(program),
+        url, cwd=cwd, extra_env=extra_env)
 
 
 def detach(fork: bool = True, setsid: bool = True, redirect: bool = True) -> None:
@@ -298,7 +312,9 @@ def detach(fork: bool = True, setsid: bool = True, redirect: bool = True) -> Non
         redirect_std_streams(os.devnull)
 
 
-def init_startup_notification_x11(window_handle: int, startup_id: Optional[str] = None) -> Optional['StartupCtx']:
+def init_startup_notification_x11(
+        window_handle: int, startup_id: Optional[str] = None) -> Optional[
+        'StartupCtx']:
     # https://specifications.freedesktop.org/startup-notification-spec/startup-notification-latest.txt
     from smelly.fast_data_types import init_x11_startup_notification
 
@@ -320,11 +336,14 @@ def end_startup_notification_x11(ctx: 'StartupCtx') -> None:
     end_x11_startup_notification(ctx)
 
 
-def init_startup_notification(window_handle: Optional[int], startup_id: Optional[str] = None) -> Optional['StartupCtx']:
+def init_startup_notification(
+        window_handle: Optional[int],
+        startup_id: Optional[str] = None) -> Optional['StartupCtx']:
     if is_macos or is_wayland():
         return None
     if window_handle is None:
-        log_error('Could not perform startup notification as window handle not present')
+        log_error(
+            'Could not perform startup notification as window handle not present')
         return None
     try:
         try:
@@ -357,7 +376,10 @@ def end_startup_notification(ctx: Optional['StartupCtx']) -> None:
 
 
 class startup_notification_handler:
-    def __init__(self, do_notify: bool = True, startup_id: Optional[str] = None, extra_callback: Optional[Callable[[int], None]] = None):
+    def __init__(
+            self, do_notify: bool = True, startup_id: Optional[str] = None,
+            extra_callback: Optional[Callable[[int],
+                                              None]] = None):
         self.do_notify = do_notify
         self.startup_id = startup_id
         self.extra_callback = extra_callback
@@ -368,7 +390,8 @@ class startup_notification_handler:
             if self.extra_callback is not None:
                 self.extra_callback(window_handle)
             if self.do_notify:
-                self.ctx = init_startup_notification(window_handle, self.startup_id)
+                self.ctx = init_startup_notification(
+                    window_handle, self.startup_id)
 
         return pre_show_callback
 
@@ -377,7 +400,10 @@ class startup_notification_handler:
             end_startup_notification(self.ctx)
 
 
-def remove_socket_file(s: 'Socket', path: Optional[str] = None, is_dir: Optional[Callable[[str], None]] = None) -> None:
+def remove_socket_file(
+        s: 'Socket', path: Optional[str] = None,
+        is_dir: Optional[Callable[[str],
+                                  None]] = None) -> None:
     with suppress(OSError):
         s.close()
     if path:
@@ -421,7 +447,8 @@ def random_unix_socket() -> 'Socket':
         fd = rus()
     except OSError:
         for path in unix_socket_directories():
-            ans = socket.socket(family=socket.AF_UNIX, type=socket.SOCK_STREAM, proto=0)
+            ans = socket.socket(family=socket.AF_UNIX,
+                                type=socket.SOCK_STREAM, proto=0)
             tdir = tempfile.mkdtemp(prefix='.smelly-', dir=path)
             atexit.register(remove_socket_file, ans, tdir, shutil.rmtree)
             path = os.path.join(tdir, 's')
@@ -429,7 +456,8 @@ def random_unix_socket() -> 'Socket':
             os.chmod(path, stat.S_IRUSR | stat.S_IWUSR)
             break
     else:
-        ans = socket.socket(family=socket.AF_UNIX, type=socket.SOCK_STREAM, proto=0, fileno=fd)
+        ans = socket.socket(family=socket.AF_UNIX,
+                            type=socket.SOCK_STREAM, proto=0, fileno=fd)
     ans.set_inheritable(False)
     ans.setblocking(False)
     return ans
@@ -440,7 +468,8 @@ def single_instance_unix(name: str) -> bool:
 
     for path in unix_socket_paths(name):
         socket_path = path.rpartition('.')[0] + '.sock'
-        fd = os.open(path, os.O_CREAT | os.O_WRONLY | os.O_TRUNC | os.O_CLOEXEC)
+        fd = os.open(path, os.O_CREAT | os.O_WRONLY |
+                     os.O_TRUNC | os.O_CLOEXEC)
         try:
             fcntl.lockf(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except OSError as err:
@@ -501,7 +530,10 @@ class SingleInstance:
 single_instance = SingleInstance()
 
 
-def parse_address_spec(spec: str) -> Tuple[AddressFamily, Union[Tuple[str, int], str], Optional[str]]:
+def parse_address_spec(spec: str) -> Tuple[AddressFamily,
+                                           Union[Tuple[str, int],
+                                                 str],
+                                           Optional[str]]:
     import socket
 
     protocol, rest = spec.split(':', 1)
@@ -523,7 +555,9 @@ def parse_address_spec(spec: str) -> Tuple[AddressFamily, Union[Tuple[str, int],
     return family, address, socket_path
 
 
-def write_all(fd: int, data: Union[str, bytes], block_until_written: bool = True) -> None:
+def write_all(
+        fd: int, data: Union[str, bytes],
+        block_until_written: bool = True) -> None:
     if isinstance(data, str):
         data = data.encode('utf-8')
     mvd = memoryview(data)
@@ -554,7 +588,8 @@ class TTYIO:
 
     def wait_till_read_available(self) -> bool:
         if self.read_with_timeout:
-            raise ValueError('Cannot wait when TTY is set to read with timeout')
+            raise ValueError(
+                'Cannot wait when TTY is set to read with timeout')
         import select
 
         rd = select.select([self.tty_fd], [], [])[0]
@@ -563,14 +598,18 @@ class TTYIO:
     def read(self, limit: int) -> bytes:
         return os.read(self.tty_fd, limit)
 
-    def send(self, data: Union[str, bytes, Iterable[Union[str, bytes]]]) -> None:
+    def send(
+            self, data: Union[str, bytes, Iterable[Union[str, bytes]]]) -> None:
         if isinstance(data, (str, bytes)):
             write_all(self.tty_fd, data)
         else:
             for chunk in data:
                 write_all(self.tty_fd, chunk)
 
-    def recv(self, more_needed: Callable[[bytes], bool], timeout: float, sz: int = 1) -> None:
+    def recv(
+            self, more_needed: Callable[[bytes],
+                                        bool],
+            timeout: float, sz: int = 1) -> None:
         fd = self.tty_fd
         start_time = monotonic()
         while timeout > monotonic() - start_time:
@@ -581,7 +620,8 @@ class TTYIO:
                 break
 
 
-def set_echo(fd: int = -1, on: bool = False) -> Tuple[int, List[Union[int, List[Union[bytes, int]]]]]:
+def set_echo(fd: int = -1, on: bool = False) -> Tuple[int,
+                                                      List[Union[int, List[Union[bytes, int]]]]]:
     import termios
 
     if fd < 0:
@@ -626,7 +666,8 @@ def get_hostname(fallback: str = '') -> str:
         return fallback
 
 
-def resolve_editor_cmd(editor: str, shell_env: Mapping[str, str]) -> Optional[str]:
+def resolve_editor_cmd(
+        editor: str, shell_env: Mapping[str, str]) -> Optional[str]:
     import shlex
 
     editor_cmd = shlex.split(editor)
@@ -671,7 +712,8 @@ def get_editor_from_env_vars(opts: Optional[Options] = None) -> List[str]:
         shell_env = read_shell_environment(opts)
         editor = get_editor_from_env(shell_env)
 
-    for ans in (editor, 'vim', 'nvim', 'vi', 'emacs', 'kak', 'micro', 'nano', 'vis'):
+    for ans in (
+            editor, 'vim', 'nvim', 'vi', 'emacs', 'kak', 'micro', 'nano', 'vis'):
         if ans and which(shlex.split(ans)[0], only_system=True):
             break
     else:
@@ -679,7 +721,8 @@ def get_editor_from_env_vars(opts: Optional[Options] = None) -> List[str]:
     return shlex.split(ans)
 
 
-def get_editor(opts: Optional[Options] = None, path_to_edit: str = '', line_number: int = 0) -> List[str]:
+def get_editor(opts: Optional[Options] = None, path_to_edit: str = '',
+               line_number: int = 0) -> List[str]:
     if opts is None:
         from .fast_data_types import get_options
 
@@ -721,14 +764,17 @@ def is_path_in_temp_dir(path: str) -> bool:
     import tempfile
 
     path = abspath(path)
-    candidates = frozenset(map(abspath, ('/tmp', '/dev/shm', os.environ.get('TMPDIR', None), tempfile.gettempdir())))
+    candidates = frozenset(map(abspath, ('/tmp', '/dev/shm',
+                           os.environ.get('TMPDIR', None), tempfile.gettempdir())))
     for q in candidates:
         if q and path.startswith(q):
             return True
     return False
 
 
-def resolve_abs_or_config_path(path: str, env: Optional[Mapping[str, str]] = None, conf_dir: Optional[str] = None) -> str:
+def resolve_abs_or_config_path(
+        path: str, env: Optional[Mapping[str, str]] = None,
+        conf_dir: Optional[str] = None) -> str:
     path = os.path.expanduser(path)
     path = expandvars(path, env or {})
     if not os.path.isabs(path):
@@ -821,14 +867,16 @@ def which(name: str, only_system: bool = False) -> Optional[str]:
     paths.append(os.path.expanduser('~/.local/bin'))
     paths.append(os.path.expanduser('~/bin'))
     paths.extend(append_paths)
-    ans = shutil.which(name, path=os.pathsep.join(x for x in paths if x not in tried_paths))
+    ans = shutil.which(name, path=os.pathsep.join(
+        x for x in paths if x not in tried_paths))
     if ans:
         return ans
     # In case PATH is messed up try a default set of paths
     if is_macos:
         system_paths = system_paths_on_macos()
     else:
-        system_paths = ('/usr/local/bin', '/opt/bin', '/usr/bin', '/bin', '/usr/sbin', '/sbin')
+        system_paths = ('/usr/local/bin', '/opt/bin',
+                        '/usr/bin', '/bin', '/usr/sbin', '/sbin')
     tried_paths |= set(paths)
     system_paths = tuple(x for x in system_paths if x not in tried_paths)
     if system_paths:
@@ -842,7 +890,8 @@ def which(name: str, only_system: bool = False) -> Optional[str]:
     for xenv in (shell_env, opts.env):
         q = xenv.get('PATH')
         if q:
-            paths = [x for x in xenv['PATH'].split(os.pathsep) if x not in tried_paths]
+            paths = [x for x in xenv['PATH'].split(
+                os.pathsep) if x not in tried_paths]
             ans = shutil.which(name, path=os.pathsep.join(paths))
             if ans:
                 return ans
@@ -851,7 +900,8 @@ def which(name: str, only_system: bool = False) -> Optional[str]:
 
 
 def read_shell_environment(opts: Optional[Options] = None) -> Dict[str, str]:
-    ans: Optional[Dict[str, str]] = getattr(read_shell_environment, 'ans', None)
+    ans: Optional[Dict[str, str]] = getattr(
+        read_shell_environment, 'ans', None)
     if ans is None:
         from .child import openpty
 
@@ -868,8 +918,10 @@ def read_shell_environment(opts: Optional[Options] = None) -> Dict[str, str]:
             shell += ['-i']
         try:
             p = subprocess.Popen(
-                shell + ['-c', 'env'], stdout=slave, stdin=slave, stderr=slave, start_new_session=True, close_fds=True, preexec_fn=clear_handled_signals
-            )
+                shell + ['-c', 'env'],
+                stdout=slave, stdin=slave, stderr=slave,
+                start_new_session=True, close_fds=True,
+                preexec_fn=clear_handled_signals)
         except FileNotFoundError:
             log_error('Could not find shell to read environment')
             return ans
@@ -888,7 +940,8 @@ def read_shell_environment(opts: Optional[Options] = None) -> Dict[str, str]:
                 if ret is not None:
                     break
             if cast(Optional[int], p.returncode) is None:
-                log_error('Timed out waiting for shell to quit while reading shell environment')
+                log_error(
+                    'Timed out waiting for shell to quit while reading shell environment')
                 p.kill()
             elif p.returncode == 0:
                 while True:
@@ -944,9 +997,9 @@ class SSHConnectionData(NamedTuple):
     extra_args: Tuple[Tuple[str, str], ...] = ()
 
 
-def get_new_os_window_size(
-    metrics: 'OSWindowSize', width: int, height: int, unit: str, incremental: bool = False, has_window_scaling: bool = True
-) -> Tuple[int, int]:
+def get_new_os_window_size(metrics: 'OSWindowSize', width: int, height: int,
+                           unit: str, incremental: bool = False,
+                           has_window_scaling: bool = True) -> Tuple[int, int]:
     if unit == 'cells':
         cw = metrics['cell_width']
         ch = metrics['cell_height']
@@ -1028,7 +1081,13 @@ def cleanup_ssh_control_masters() -> None:
     import subprocess
 
     try:
-        files = frozenset(glob.glob(os.path.join(runtime_dir(), ssh_control_master_template.format(smelly_pid=os.getpid(), ssh_placeholder='*'))))
+        files = frozenset(
+            glob.glob(
+                os.path.join(
+                    runtime_dir(),
+                    ssh_control_master_template.format(
+                        smelly_pid=os.getpid(),
+                        ssh_placeholder='*'))))
     except OSError:
         return
     workers = tuple(
@@ -1064,7 +1123,9 @@ def macos_version() -> Tuple[int, ...]:
     import subprocess
 
     try:
-        o = subprocess.check_output(['sw_vers', '-productVersion'], stderr=subprocess.STDOUT).decode()
+        o = subprocess.check_output(
+            ['sw_vers', '-productVersion'],
+            stderr=subprocess.STDOUT).decode()
     except Exception:
         return 0, 0, 0
     return tuple(map(int, o.strip().split('.')))
@@ -1074,7 +1135,9 @@ def macos_version() -> Tuple[int, ...]:
 def less_version(less_exe: str = 'less') -> int:
     import subprocess
 
-    o = subprocess.check_output([less_exe, '-V'], stderr=subprocess.STDOUT).decode()
+    o = subprocess.check_output(
+        [less_exe, '-V'],
+        stderr=subprocess.STDOUT).decode()
     m = re.match(r'less (\d+)', o)
     if m is None:
         raise ValueError(f'Invalid version string for less: {o}')
@@ -1152,7 +1215,8 @@ def sanitize_url_for_dispay_to_user(url: str) -> str:
     try:
         purl = urlparse(url)
         if purl.netloc:
-            purl = purl._replace(netloc=purl.netloc.encode('idna').decode('ascii'))
+            purl = purl._replace(
+                netloc=purl.netloc.encode('idna').decode('ascii'))
         if purl.path:
             purl = purl._replace(path=unquote(purl.path))
         url = urlunparse(purl)
@@ -1170,11 +1234,13 @@ def extract_all_from_tarfile_safely(tf: 'tarfile.TarFile', dest: str) -> None:
         prefix = os.path.commonprefix((abs_directory, abs_target))
         return prefix == abs_directory
 
-    def safe_extract(tar: 'tarfile.TarFile', path: str = ".", numeric_owner: bool = False) -> None:
+    def safe_extract(tar: 'tarfile.TarFile', path: str = ".",
+                     numeric_owner: bool = False) -> None:
         for member in tar.getmembers():
             member_path = os.path.join(path, member.name)
             if not is_within_directory(path, member_path):
-                raise ValueError(f'Attempted path traversal in tar file: {member.name}')
+                raise ValueError(
+                    f'Attempted path traversal in tar file: {member.name}')
         tar.extractall(path, tar.getmembers(), numeric_owner=numeric_owner)
 
     safe_extract(tf, dest)

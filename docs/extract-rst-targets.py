@@ -45,7 +45,8 @@ def main() -> Dict[str, Dict[str, str]]:
                         if first_line.startswith(f'.. _{explicit_target}:'):
                             refs[explicit_target] = href
                             continue
-                    refs[explicit_target] = href + f'#{explicit_target.replace("_", "-")}'
+                    refs[explicit_target] = href + \
+                        f'#{explicit_target.replace("_", "-")}'
     return {'ref': refs, 'doc': docs}
 
 

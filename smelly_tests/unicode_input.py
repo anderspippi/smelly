@@ -15,7 +15,10 @@ class TestUnicodeInput(BaseTest):
                 ans &= codepoints_for_word(w)
             return set(ans)
 
-        self.ae(matches('horiz', 'ell'), {0x2026, 0x22EF, 0x2B2C, 0x2B2D, 0xFE19})
-        self.ae(matches('horizontal', 'ell'), {0x2026, 0x22EF, 0x2B2C, 0x2B2D, 0xFE19})
+        self.ae(
+            matches('horiz', 'ell'),
+            {0x2026, 0x22EF, 0x2B2C, 0x2B2D, 0xFE19})
+        self.ae(matches('horizontal', 'ell'), {
+                0x2026, 0x22EF, 0x2B2C, 0x2B2D, 0xFE19})
         self.assertFalse(matches('sfgsfgsfgfgsdg'))
         self.assertIn(0x1F41D, matches('bee'))

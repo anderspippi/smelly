@@ -106,10 +106,14 @@ def SpecialWindow(
     watchers: Optional[Watchers] = None,
     overlay_behind: bool = False,
 ) -> SpecialWindowInstance:
-    return SpecialWindowInstance(cmd, stdin, override_title, cwd_from, cwd, overlay_for, env, watchers, overlay_behind)
+    return SpecialWindowInstance(
+        cmd, stdin, override_title, cwd_from, cwd, overlay_for, env, watchers,
+        overlay_behind)
 
 
-def add_active_id_to_history(items: Deque[int], item_id: int, maxlen: int = 64) -> None:
+def add_active_id_to_history(
+        items: Deque[int],
+        item_id: int, maxlen: int = 64) -> None:
     with suppress(ValueError):
         items.remove(item_id)
     items.append(item_id)
@@ -135,10 +139,14 @@ class Tab:  # {{{
         self.os_window_id: int = tab_manager.os_window_id
         self.id: int = add_tab(self.os_window_id)
         if not self.id:
-            raise Exception(f'No OS window with id {self.os_window_id} found, or tab counter has wrapped')
+            raise Exception(
+                f'No OS window with id {self.os_window_id} found, or tab counter has wrapped')
         self.args = tab_manager.args
         self.name = getattr(session_tab, 'name', '')
-        self.enabled_layouts = [x.lower() for x in getattr(session_tab, 'enabled_layouts', None) or get_options().enabled_layouts]
+        self.enabled_layouts = [
+            x.lower()
+            for x in getattr(session_tab, 'enabled_layouts', None) or
+            get_options().enabled_layouts]
         self.borders = Borders(self.os_window_id, self.id)
         self.windows = WindowList(self)
         self._last_used_layout: Optional[str] = None
@@ -202,11 +210,13 @@ class Tab:  # {{{
             else:
                 from .launch import launch
 
-                launch(get_boss(), spec.opts, spec.args, target_tab=self, force_target_tab=True)
+                launch(get_boss(), spec.opts, spec.args,
+                       target_tab=self, force_target_tab=True)
             if window.resize_spec is not None:
                 self.resize_window(*window.resize_spec)
 
-        self.windows.set_active_window_group_for(self.windows.all_windows[session_tab.active_window_idx])
+        self.windows.set_active_window_group_for(
+            self.windows.all_windows[session_tab.active_window_idx])
 
     def serialize_state(self) -> Dict[str, Any]:
         return {
@@ -290,11 +300,12 @@ class Tab:  # {{{
             w = self.active_window
             ly = self.current_layout
             self.borders(
-                all_windows=self.windows,
-                current_layout=ly,
+                all_windows=self.windows, current_layout=ly,
                 tab_bar_rects=tm.tab_bar_rects,
-                draw_window_borders=(ly.needs_window_borders and self.windows.num_visble_groups > 1) or ly.must_draw_borders,
-            )
+                draw_window_borders=(ly.
+                                     needs_window_borders
+                                     and self.windows.num_visble_groups > 1)
+                or ly.must_draw_borders,)
             if w is not None:
                 w.change_titlebar_color()
 
@@ -330,7 +341,8 @@ class Tab:  # {{{
             map f1 goto_layout tall
         ''',
     )
-    def goto_layout(self, layout_name: str, raise_exception: bool = False) -> None:
+    def goto_layout(
+            self, layout_name: str, raise_exception: bool = False) -> None:
         layout_name = layout_name.lower()
         if layout_name not in self.enabled_layouts:
             if raise_exception:
@@ -358,9 +370,12 @@ class Tab:  # {{{
         else:
             self.goto_layout(layout_name)
 
-    def resize_window_by(self, window_id: int, increment: float, is_horizontal: bool) -> Optional[str]:
-        increment_as_percent = self.current_layout.bias_increment_for_cell(self.windows, window_id, is_horizontal) * increment
-        if self.current_layout.modify_size_of_window(self.windows, window_id, increment_as_percent, is_horizontal):
+    def resize_window_by(self, window_id: int, increment: float,
+                         is_horizontal: bool) -> Optional[str]:
+        increment_as_percent = self.current_layout.bias_increment_for_cell(
+            self.windows, window_id, is_horizontal) * increment
+        if self.current_layout.modify_size_of_window(
+                self.windows, window_id, increment_as_percent, is_horizontal):
             self.relayout()
             return None
         return 'Could not resize'
@@ -382,7 +397,8 @@ class Tab:  # {{{
         is_horizontal = quality in ('wider', 'narrower')
         increment *= 1 if quality in ('wider', 'taller') else -1
         w = self.active_window
-        if w is not None and self.resize_window_by(w.id, increment, is_horizontal) is not None:
+        if w is not None and self.resize_window_by(
+                w.id, increment, is_horizontal) is not None:
             if get_options().enable_audio_bell:
                 ring_bell()
 
@@ -393,7 +409,8 @@ class Tab:  # {{{
 
     @ac('lay', 'Perform a layout specific action. See :doc:`layouts` for details')
     def layout_action(self, action_name: str, args: Sequence[str]) -> None:
-        ret = self.current_layout.layout_action(action_name, args, self.windows)
+        ret = self.current_layout.layout_action(
+            action_name, args, self.windows)
         if ret is None:
             if get_options().enable_audio_bell:
                 ring_bell()
@@ -428,7 +445,8 @@ class Tab:  # {{{
                 from .utils import which
 
                 actual_exe = which(old_exe)
-                old_exe = actual_exe if actual_exe else os.path.abspath(old_exe)
+                old_exe = actual_exe if actual_exe else os.path.abspath(
+                    old_exe)
             try:
                 is_executable = os.access(old_exe, os.X_OK)
             except OSError:
@@ -451,7 +469,8 @@ class Tab:  # {{{
                                     line = f.read(4096).splitlines()[0]
                                     cmd[:0] = shlex.split(line)
                                 else:
-                                    cmd[:0] = [resolved_shell(get_options())[0]]
+                                    cmd[:0] = [resolved_shell(
+                                        get_options())[0]]
                                 cmd[:0] = [kitten_exe(), '__hold_till_enter__']
         fenv: Dict[str, str] = {}
         if env:
@@ -460,12 +479,19 @@ class Tab:  # {{{
         pwid = platform_window_id(self.os_window_id)
         if pwid is not None:
             fenv['WINDOWID'] = str(pwid)
-        ans = Child(cmd, cwd or self.cwd, stdin, fenv, cwd_from, is_clone_launch=is_clone_launch, add_listen_on_env_var=add_listen_on_env_var)
+        ans = Child(
+            cmd, cwd or self.cwd, stdin, fenv, cwd_from,
+            is_clone_launch=is_clone_launch,
+            add_listen_on_env_var=add_listen_on_env_var)
         ans.fork()
         return ans
 
-    def _add_window(self, window: Window, location: Optional[str] = None, overlay_for: Optional[int] = None, overlay_behind: bool = False) -> None:
-        self.current_layout.add_window(self.windows, window, location, overlay_for, put_overlay_behind=overlay_behind)
+    def _add_window(self, window: Window, location: Optional[str] = None,
+                    overlay_for: Optional[int] = None, overlay_behind:
+                    bool = False) -> None:
+        self.current_layout.add_window(
+            self.windows, window, location, overlay_for,
+            put_overlay_behind=overlay_behind)
         self.mark_tab_bar_dirty()
         self.relayout()
 
@@ -489,15 +515,10 @@ class Tab:  # {{{
         remote_control_passwords: Optional[Dict[str, Sequence[str]]] = None,
     ) -> Window:
         child = self.launch_child(
-            use_shell=use_shell,
-            cmd=cmd,
-            stdin=stdin,
-            cwd_from=cwd_from,
-            cwd=cwd,
-            env=env,
-            is_clone_launch=is_clone_launch,
-            add_listen_on_env_var=False if allow_remote_control and remote_control_passwords else True,
-        )
+            use_shell=use_shell, cmd=cmd, stdin=stdin, cwd_from=cwd_from,
+            cwd=cwd, env=env, is_clone_launch=is_clone_launch,
+            add_listen_on_env_var=False
+            if allow_remote_control and remote_control_passwords else True,)
         window = Window(
             self,
             child,
@@ -510,7 +531,9 @@ class Tab:  # {{{
         )
         # Must add child before laying out so that resize_pty succeeds
         get_boss().add_child(window)
-        self._add_window(window, location=location, overlay_for=overlay_for, overlay_behind=overlay_behind)
+        self._add_window(
+            window, location=location, overlay_for=overlay_for,
+            overlay_behind=overlay_behind)
         if marker:
             try:
                 window.set_marker(marker)
@@ -587,8 +610,11 @@ class Tab:  # {{{
         attach_window(self.os_window_id, self.id, window.id)
         self._add_window(window)
 
-    def set_active_window(self, x: Union[Window, int], for_keep_focus: Optional[Window] = None) -> None:
-        self.windows.set_active_window_group_for(x, for_keep_focus=for_keep_focus)
+    def set_active_window(
+            self, x: Union[Window, int],
+            for_keep_focus: Optional[Window] = None) -> None:
+        self.windows.set_active_window_group_for(
+            x, for_keep_focus=for_keep_focus)
 
     def get_nth_window(self, n: int) -> Optional[Window]:
         if self.windows:
@@ -612,7 +638,8 @@ class Tab:  # {{{
             if num < 0:
                 self.windows.make_previous_group_active(-num)
             elif self.windows.num_groups:
-                self.current_layout.activate_nth_window(self.windows, min(num, self.windows.num_groups - 1))
+                self.current_layout.activate_nth_window(
+                    self.windows, min(num, self.windows.num_groups - 1))
             self.relayout_borders()
 
     @ac('win', 'Focus the first window')
@@ -729,7 +756,8 @@ class Tab:  # {{{
         elif isinstance(delta, str):
             neighbor = self.neighboring_group_id(delta)
             if neighbor:
-                if self.current_layout.move_window_to_group(self.windows, neighbor):
+                if self.current_layout.move_window_to_group(
+                        self.windows, neighbor):
                     self.relayout()
 
     def swap_active_window_with(self, window_id: int) -> None:
@@ -737,7 +765,8 @@ class Tab:  # {{{
         if group is not None:
             w = self.active_window
             if w is not None and w.id != window_id:
-                if self.current_layout.move_window_to_group(self.windows, group.id):
+                if self.current_layout.move_window_to_group(
+                        self.windows, group.id):
                     self.relayout()
 
     @property
@@ -760,7 +789,9 @@ class Tab:  # {{{
             if tab and window:
                 tab.set_active_window(window)
 
-        get_boss().visual_window_select_action(self, callback, 'Choose window to switch to', only_window_ids=self.all_window_ids_except_active_window)
+        get_boss().visual_window_select_action(
+            self, callback, 'Choose window to switch to',
+            only_window_ids=self.all_window_ids_except_active_window)
 
     @ac('win', 'Swap the current window with another window in the current tab, selected visually. See :opt:`visual_window_select_characters`')
     def swap_with_window(self) -> None:
@@ -768,7 +799,9 @@ class Tab:  # {{{
             if tab and window:
                 tab.swap_active_window_with(window.id)
 
-        get_boss().visual_window_select_action(self, callback, 'Choose window to swap with', only_window_ids=self.all_window_ids_except_active_window)
+        get_boss().visual_window_select_action(
+            self, callback, 'Choose window to swap with',
+            only_window_ids=self.all_window_ids_except_active_window)
 
     @ac('win', 'Move active window to the top (make it the first window)')
     def move_window_to_top(self) -> None:
@@ -791,7 +824,9 @@ class Tab:  # {{{
                 is_active=w is active_window, is_focused=w.os_window_id == current_focused_os_window_id() and w is active_window, is_self=w is self_window
             )
 
-    def matches_query(self, field: str, query: str, active_tab_manager: Optional['TabManager'] = None) -> bool:
+    def matches_query(
+            self, field: str, query: str,
+            active_tab_manager: Optional['TabManager'] = None) -> bool:
         if field == 'title':
             return re.search(query, self.effective_title) is not None
         if field == 'id':
@@ -804,7 +839,8 @@ class Tab:  # {{{
             return False
         if field == 'index':
             if active_tab_manager and len(active_tab_manager.tabs):
-                idx = (int(query) + len(active_tab_manager.tabs)) % len(active_tab_manager.tabs)
+                idx = (int(query) + len(active_tab_manager.tabs)
+                       ) % len(active_tab_manager.tabs)
                 return active_tab_manager.tabs[idx] is self
             return False
         if field == 'recent':
@@ -860,7 +896,9 @@ class Tab:  # {{{
 
 
 class TabManager:  # {{{
-    def __init__(self, os_window_id: int, args: CLIOptions, wm_class: str, wm_name: str, startup_session: Optional[SessionType] = None):
+    def __init__(
+            self, os_window_id: int, args: CLIOptions, wm_class: str,
+            wm_name: str, startup_session: Optional[SessionType] = None):
         self.os_window_id = os_window_id
         self.wm_class = wm_class
         self.recent_mouse_events: Deque[TabMouseEvent] = deque()
@@ -876,7 +914,8 @@ class TabManager:  # {{{
         if startup_session is not None:
             for t in startup_session.tabs:
                 self._add_tab(Tab(self, session_tab=t))
-            self._set_active_tab(max(0, min(startup_session.active_tab_idx, len(self.tabs) - 1)))
+            self._set_active_tab(
+                max(0, min(startup_session.active_tab_idx, len(self.tabs) - 1)))
 
     @property
     def active_tab_idx(self) -> int:
@@ -893,7 +932,8 @@ class TabManager:  # {{{
             old_active_tab = None
         else:
             assert old_active_tab is not None
-            add_active_id_to_history(self.active_tab_history, old_active_tab.id)
+            add_active_id_to_history(
+                self.active_tab_history, old_active_tab.id)
         self._active_tab_idx = new_active_tab_idx
         try:
             new_active_tab: Optional[Tab] = self.tabs[self._active_tab_idx]
@@ -969,7 +1009,8 @@ class TabManager:  # {{{
             tab.relayout_borders()
         self.mark_tab_bar_dirty()
 
-    def set_active_tab(self, tab: Tab, for_keep_focus: Optional[Tab] = None) -> bool:
+    def set_active_tab(
+            self, tab: Tab, for_keep_focus: Optional[Tab] = None) -> bool:
         try:
             idx = self.tabs.index(tab)
         except Exception:
@@ -983,7 +1024,8 @@ class TabManager:  # {{{
 
     def next_tab(self, delta: int = 1) -> None:
         if len(self.tabs) > 1:
-            self.set_active_tab_idx((self.active_tab_idx + len(self.tabs) + delta) % len(self.tabs))
+            self.set_active_tab_idx(
+                (self.active_tab_idx + len(self.tabs) + delta) % len(self.tabs))
 
     def tab_at_location(self, loc: str) -> Optional[Tab]:
         if loc == 'prev':
@@ -1017,7 +1059,8 @@ class TabManager:  # {{{
         if n <= 0:
             return self.active_tab
         tab_ids = tuple(reversed(self.active_tab_history))
-        return self.tab_for_id(tab_ids[min(n - 1, len(tab_ids) - 1)]) if tab_ids else None
+        return self.tab_for_id(
+            tab_ids[min(n - 1, len(tab_ids) - 1)]) if tab_ids else None
 
     def __iter__(self) -> Iterator[Tab]:
         return iter(self.tabs)
@@ -1104,7 +1147,8 @@ class TabManager:  # {{{
     ) -> Tab:
         idx = len(self.tabs)
         orig_active_tab_idx = self.active_tab_idx
-        self._add_tab(Tab(self, no_initial_window=True) if empty_tab else Tab(self, special_window=special_window, cwd_from=cwd_from))
+        self._add_tab(Tab(self, no_initial_window=True) if empty_tab else Tab(
+            self, special_window=special_window, cwd_from=cwd_from))
         if as_neighbor:
             location = 'after'
         if location == 'neighbor':
@@ -1115,7 +1159,9 @@ class TabManager:  # {{{
             if location == 'first':
                 desired_idx = 0
             else:
-                desired_idx = orig_active_tab_idx + (0 if location == 'before' else 1)
+                desired_idx = orig_active_tab_idx + (0
+                                                     if location == 'before' else
+                                                     1)
             if idx != desired_idx:
                 for i in range(idx, desired_idx, -1):
                     self.tabs[i], self.tabs[i - 1] = self.tabs[i - 1], self.tabs[i]
@@ -1156,7 +1202,8 @@ class TabManager:  # {{{
                 next_active_tab = len(self.tabs) - 1
 
             if next_active_tab < 0:
-                next_active_tab = max(0, min(self.active_tab_idx, len(self.tabs) - 1))
+                next_active_tab = max(
+                    0, min(self.active_tab_idx, len(self.tabs) - 1))
 
             self._set_active_tab(next_active_tab, store_in_history=False)
         elif active_tab_before_removal is not None:
@@ -1200,7 +1247,8 @@ class TabManager:  # {{{
             )
         return ans
 
-    def handle_click_on_tab(self, x: int, button: int, modifiers: int, action: int) -> None:
+    def handle_click_on_tab(
+            self, x: int, button: int, modifiers: int, action: int) -> None:
         i = self.tab_bar.tab_at(x)
         now = monotonic()
         if i is None:
@@ -1228,7 +1276,8 @@ class TabManager:  # {{{
                 if p.button == button and p.action == GLFW_PRESS and p.tab_idx == i:
                     tab = self.tabs[i]
                     get_boss().close_tab(tab)
-        self.recent_mouse_events.append(TabMouseEvent(button, modifiers, action, now, i))
+        self.recent_mouse_events.append(
+            TabMouseEvent(button, modifiers, action, now, i))
         if len(self.recent_mouse_events) > 5:
             self.recent_mouse_events.popleft()
 

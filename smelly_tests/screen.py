@@ -196,7 +196,8 @@ class TestScreen(BaseTest):
         self.ae(str(s.line(0)), '')
         init()
         s.erase_in_line(2, True)
-        self.ae((False, False, False, False, False), tuple(map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
+        self.ae((False, False, False, False, False), tuple(
+            map(lambda i: s.line(0).cursor_from(i).bold, range(5))))
 
     def test_erase_in_screen(self):
         s = self.create_screen()
@@ -213,7 +214,8 @@ class TestScreen(BaseTest):
             return tuple(str(s.line(i)) for i in range(s.lines))
 
         def continuations(s):
-            return tuple(s.line(i).last_char_has_wrapped_flag() for i in range(s.lines))
+            return tuple(s.line(i).last_char_has_wrapped_flag()
+                         for i in range(s.lines))
 
         init()
         s.erase_in_display(0)
@@ -340,7 +342,8 @@ class TestScreen(BaseTest):
 
     def test_scrollback_fill_after_resize(self):
         def prepare_screen(content=()):
-            ans = self.create_screen(options={'scrollback_fill_enlarged_window': True})
+            ans = self.create_screen(
+                options={'scrollback_fill_enlarged_window': True})
             for line in content:
                 ans.draw(line)
                 ans.linefeed()
@@ -348,7 +351,8 @@ class TestScreen(BaseTest):
             return ans
 
         def assert_lines(*lines):
-            return self.ae(lines, tuple(str(s.line(i)) for i in range(s.lines)))
+            return self.ae(
+                lines, tuple(str(s.line(i)) for i in range(s.lines)))
 
         # test the reverse scroll function
         s = prepare_screen(map(str, range(6)))
@@ -390,7 +394,8 @@ class TestScreen(BaseTest):
         assert_lines('2', '333333333333', '333', '')
 
         # Height increased with large continued text
-        s = self.create_screen(options={'scrollback_fill_enlarged_window': True})
+        s = self.create_screen(
+            options={'scrollback_fill_enlarged_window': True})
         s.draw(('x' * (s.columns * s.lines * 2)) + 'abcde')
         s.carriage_return(), s.linefeed()
         s.draw('>')
@@ -440,18 +445,24 @@ class TestScreen(BaseTest):
                 which = i % 4
                 if which == 0:
                     s.cursor_position(region + 1, 1), s.draw(ch)
-                    s.cursor_position(region + 1, s.columns), s.draw(ch.lower())
+                    s.cursor_position(
+                        region + 1, s.columns), s.draw(ch.lower())
                     nl()
                 elif which == 1:
                     # Simple wrapping
-                    s.cursor_position(region, s.columns), s.draw(chr(ord('A') + i - 1).lower() + ch)
+                    s.cursor_position(
+                        region, s.columns), s.draw(
+                        chr(ord('A') + i - 1).lower() + ch)
                     # Backspace at right margin
-                    s.cursor_position(region + 1, s.columns), s.draw(ch), s.backspace(), s.draw(ch.lower())
+                    s.cursor_position(
+                        region + 1, s.columns), s.draw(ch), s.backspace(), s.draw(ch.lower())
                     nl()
                 elif which == 2:
                     # Tab to right margin
-                    s.cursor_position(region + 1, s.columns), s.draw(ch), s.backspace(), s.backspace(), s.tab(), s.tab(), s.draw(ch.lower())
-                    s.cursor_position(region + 1, 2), s.backspace(), s.draw(ch), nl()
+                    s.cursor_position(region + 1, s.columns), s.draw(
+                        ch), s.backspace(), s.backspace(), s.tab(), s.tab(), s.draw(ch.lower())
+                    s.cursor_position(
+                        region + 1, 2), s.backspace(), s.draw(ch), nl()
                 else:
                     s.cursor_position(region + 1, 1), nl()
                     s.cursor_position(region, 1), s.draw(ch)
@@ -459,7 +470,9 @@ class TestScreen(BaseTest):
             for ln in range(2, region + 2):
                 c = chr(ord('I') + ln - 2)
                 before = '\t' if ln % 4 == 0 else ' '
-                self.ae(c + ' ' * (s.columns - 3) + before + c.lower(), str(s.line(ln)))
+                self.ae(
+                    c + ' ' * (s.columns - 3) + before + c.lower(),
+                    str(s.line(ln)))
             s.reset_mode(DECOM)
         # Test that moving cursor outside the margins works as expected
         s = self.create_screen(10, 10)
@@ -549,7 +562,8 @@ class TestScreen(BaseTest):
         def ts(*args):
             return ''.join(s.text_for_selection(*args))
 
-        expected = ''.join(('55555', '\n66666', '\n77777', '\n88888', '\n99999'))
+        expected = ''.join(
+            ('55555', '\n66666', '\n77777', '\n88888', '\n99999'))
         self.ae(ts(), expected)
         s.scroll(2, True)
         self.ae(ts(), expected)
@@ -574,8 +588,11 @@ class TestScreen(BaseTest):
         s.start_selection(0, 0)
         s.update_selection(1, 3)
         self.ae(s.text_for_selection(), ('abc  ', 'xy'))
-        self.ae(s.text_for_selection(True), ('a\x1b[32mb\x1b[39mc  ', 'xy', '\x1b[m'))
-        self.ae(s.text_for_selection(True, True), ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
+        self.ae(
+            s.text_for_selection(True),
+            ('a\x1b[32mb\x1b[39mc  ', 'xy', '\x1b[m'))
+        self.ae(s.text_for_selection(True, True),
+                ('a\x1b[32mb\x1b[39mc', 'xy', '\x1b[m'))
 
     def test_soft_hyphen(self):
         s = self.create_screen()
@@ -614,34 +631,45 @@ class TestScreen(BaseTest):
         for i in range(1, 7):
             s.select_graphic_rendition(30 + i)
             s.draw(f'{i}' * s.columns)
-        self.ae(as_text(s, True, True), '\x1b[m\x1b[31m11\x1b[m\x1b[32m22\x1b[m\x1b[33m33\x1b[m\x1b[34m44\x1b[m\x1b[m\x1b[35m55\x1b[m\x1b[36m66')
+        self.ae(
+            as_text(s, True, True),
+            '\x1b[m\x1b[31m11\x1b[m\x1b[32m22\x1b[m\x1b[33m33\x1b[m\x1b[34m44\x1b[m\x1b[m\x1b[35m55\x1b[m\x1b[36m66')
 
         def set_link(url=None, id=None):
-            parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(id or '', url or '').encode('utf-8'))
+            parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
+                id or '', url or '').encode('utf-8'))
 
         s = self.create_screen()
         s.draw('a')
         set_link('moo', 'foo')
         s.draw('bcdef')
-        self.ae(as_text(s, True), '\x1b[ma\x1b]8;id=foo;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
+        self.ae(
+            as_text(s, True),
+            '\x1b[ma\x1b]8;id=foo;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
         set_link()
         s.draw('gh')
-        self.ae(as_text(s, True), '\x1b[ma\x1b]8;id=foo;moo\x1b\\bcde\x1b[mf\x1b]8;;\x1b\\gh\n\n\n')
+        self.ae(
+            as_text(s, True),
+            '\x1b[ma\x1b]8;id=foo;moo\x1b\\bcde\x1b[mf\x1b]8;;\x1b\\gh\n\n\n')
         s = self.create_screen()
         s.draw('a')
         set_link('moo')
         s.draw('bcdef')
-        self.ae(as_text(s, True), '\x1b[ma\x1b]8;;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
+        self.ae(
+            as_text(s, True),
+            '\x1b[ma\x1b]8;;moo\x1b\\bcde\x1b[mf\n\n\n\x1b]8;;\x1b\\')
 
     def test_wrapping_serialization(self):
         from smelly.window import as_text
 
-        s = self.create_screen(cols=2, lines=2, scrollback=2, options={'scrollback_pager_history_size': 128})
+        s = self.create_screen(cols=2, lines=2, scrollback=2, options={
+                               'scrollback_pager_history_size': 128})
         s.draw('aabbccddeeff')
         self.ae(as_text(s, add_history=True), 'aabbccddeeff')
         self.assertNotIn('\n', as_text(s, add_history=True, as_ansi=True))
 
-        s = self.create_screen(cols=2, lines=2, scrollback=2, options={'scrollback_pager_history_size': 128})
+        s = self.create_screen(cols=2, lines=2, scrollback=2, options={
+                               'scrollback_pager_history_size': 128})
         s.draw('1'), s.carriage_return(), s.linefeed()
         s.draw('2'), s.carriage_return(), s.linefeed()
         s.draw('3'), s.carriage_return(), s.linefeed()
@@ -651,24 +679,28 @@ class TestScreen(BaseTest):
         s.draw('7')
         self.ae(as_text(s, add_history=True), '1\n2\n3\n4\n5\n6\n7')
 
-        s = self.create_screen(cols=2, lines=2, scrollback=2, options={'scrollback_pager_history_size': 128})
+        s = self.create_screen(cols=2, lines=2, scrollback=2, options={
+                               'scrollback_pager_history_size': 128})
         s.draw('aabb')
         s.cursor.y = 0
         s.carriage_return(), s.linefeed()
         self.ae(as_text(s, add_history=True), 'aabb')
 
-        s = self.create_screen(cols=2, lines=2, scrollback=2, options={'scrollback_pager_history_size': 128})
+        s = self.create_screen(cols=2, lines=2, scrollback=2, options={
+                               'scrollback_pager_history_size': 128})
         s.draw('a'), s.carriage_return(), s.linefeed()
         s.cursor.y = 0
         s.draw('aabb')
         self.ae(as_text(s), 'aabb')
-        s = self.create_screen(cols=2, lines=2, scrollback=2, options={'scrollback_pager_history_size': 128})
+        s = self.create_screen(cols=2, lines=2, scrollback=2, options={
+                               'scrollback_pager_history_size': 128})
         s.draw('a😀')
         self.ae(as_text(s), 'a😀')
 
     def test_pagerhist(self):
         hsz = 8
-        s = self.create_screen(cols=2, lines=2, scrollback=2, options={'scrollback_pager_history_size': hsz})
+        s = self.create_screen(cols=2, lines=2, scrollback=2, options={
+                               'scrollback_pager_history_size': hsz})
 
         def contents():
             return s.historybuf.pagerhist_as_text()
@@ -779,12 +811,15 @@ class TestScreen(BaseTest):
         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
 
         def set_link(url=None, id=None):
-            parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(id or '', url or '').encode('utf-8'))
+            parse_bytes(s, '\x1b]8;id={};{}\x1b\\'.format(
+                id or '', url or '').encode('utf-8'))
 
         set_link('url-a', 'a')
         self.ae(s.line(0).hyperlink_ids(), tuple(0 for x in range(s.columns)))
         s.draw('a')
-        self.ae(s.line(0).hyperlink_ids(), (1,) + tuple(0 for x in range(s.columns - 1)))
+        self.ae(
+            s.line(0).hyperlink_ids(),
+            (1,) + tuple(0 for x in range(s.columns - 1)))
         s.draw('bc')
         self.ae(s.line(0).hyperlink_ids(), (1, 1, 1, 0, 0))
         set_link()
@@ -823,7 +858,8 @@ class TestScreen(BaseTest):
         s = self.create_screen()
         set_link('u' * 2048, 'i' * 300)
         s.draw('a')
-        self.ae([('i' * 256 + ':' + 'u' * (2045 - 256), 1)], s.hyperlinks_as_list())
+        self.ae([('i' * 256 + ':' + 'u' * (2045 - 256), 1)],
+                s.hyperlinks_as_list())
 
         s = self.create_screen()
         set_link('1'), s.draw('1')
@@ -847,7 +883,8 @@ class TestScreen(BaseTest):
         self.ae([(':2', 2), (':1', 1)], s.hyperlinks_as_list())
 
         s = self.create_screen()
-        set_link('1'), s.draw('12'), set_link(), s.draw('X'), set_link('1'), s.draw('3')
+        set_link('1'), s.draw('12'), set_link(), s.draw(
+            'X'), set_link('1'), s.draw('3')
         s.linefeed(), s.carriage_return()
         s.draw('abc')
         s.linefeed(), s.carriage_return()
@@ -917,7 +954,8 @@ class TestScreen(BaseTest):
 
         for use_pending_mode in (False, True):
             t('XYZ', use_pending_mode, ('p;XYZ', False))
-            t('a' * 8192, use_pending_mode, ('p;' + 'a' * (8192 - 6), True), (';' + 'a' * 6, False))
+            t('a' * 8192, use_pending_mode,
+              ('p;' + 'a' * (8192 - 6), True), (';' + 'a' * 6, False))
             t('', use_pending_mode, ('p;', False))
             t('!', use_pending_mode, ('p;!', False))
 
@@ -1126,7 +1164,9 @@ class TestScreen(BaseTest):
 
         # resize
         # get last cmd output with continued output mark
-        draw_prompt('3'), draw_output(1, 'long_line'), draw_output(2, 'l', False)
+        draw_prompt('3'), draw_output(
+            1, 'long_line'), draw_output(
+            2, 'l', False)
         s.resize(4, 5)
         s.scroll_to_prompt(-4)
         self.ae(str(s.visual_line(0)), '$ 0')

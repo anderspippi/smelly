@@ -288,11 +288,12 @@ string_capabilities = {
 }
 
 string_capabilities.update(
-    {
-        f'kf{n}': encode_keystring(modify_key_bytes(b'\033' + value, 0))
-        for n, value in zip(range(1, 13), b'OP OQ OR OS [15~ [17~ [18~ [19~ [20~ [21~ [23~ [24~'.split())
-    }
-)
+    {f'kf{n}': encode_keystring(modify_key_bytes(b'\033' + value, 0)) for n,
+     value
+     in
+     zip(
+         range(1, 13),
+         b'OP OQ OR OS [15~ [17~ [18~ [19~ [20~ [21~ [23~ [24~'.split())})
 
 string_capabilities.update(
     {
@@ -304,16 +305,19 @@ string_capabilities.update(
 )
 
 string_capabilities.update(
-    {
-        name.format(unmod=unmod, key=key): encode_keystring(modify_key_bytes(b'\033' + value, mod))
-        for unmod, key, value in zip(
-            'cuu1 cud1 cuf1 cub1 beg end home ich1 dch1 pp  np'.split(),
-            'UP   DN   RIT  LFT  BEG END HOM  IC   DC   PRV NXT'.split(),
-            b'OA  OB   OC   OD   OE  OF  OH   [2~  [3~  [5~ [6~'.split(),
-        )
-        for name, mod in {'k{unmod}': 0, 'k{key}': 2, 'k{key}3': 3, 'k{key}4': 4, 'k{key}5': 5, 'k{key}6': 6, 'k{key}7': 7}.items()
-    }
-)
+    {name.format(unmod=unmod, key=key):
+     encode_keystring(modify_key_bytes(b'\033' + value, mod)) for unmod, key,
+     value
+     in
+     zip(
+         'cuu1 cud1 cuf1 cub1 beg end home ich1 dch1 pp  np'.split(),
+         'UP   DN   RIT  LFT  BEG END HOM  IC   DC   PRV NXT'.split(),
+         b'OA  OB   OC   OD   OE  OF  OH   [2~  [3~  [5~ [6~'.split(),)
+     for name,
+     mod
+     in
+     {'k{unmod}': 0, 'k{key}': 2, 'k{key}3': 3, 'k{key}4': 4, 'k{key}5': 5,
+      'k{key}6': 6, 'k{key}7': 7}.items()})
 
 termcap_aliases.update(
     {
@@ -451,13 +455,16 @@ termcap_aliases.update(
 
 queryable_capabilities = cast(Dict[str, str], numeric_capabilities.copy())
 queryable_capabilities.update(string_capabilities)
-extra = (bool_capabilities | numeric_capabilities.keys() | string_capabilities.keys()) - set(termcap_aliases.values())
+extra = (bool_capabilities | numeric_capabilities.keys() |
+         string_capabilities.keys()) - set(termcap_aliases.values())
 no_termcap_for = frozenset(
-    'Su Smulx Sync Tc setrgbf setrgbb fullkbd kUP kDN kbeg kBEG'.split()
-    + [f'k{key}{mod}' for key in 'UP DN RIT LFT BEG END HOM IC DC PRV NXT'.split() for mod in range(3, 8)]
-)
+    'Su Smulx Sync Tc setrgbf setrgbb fullkbd kUP kDN kbeg kBEG'.split() +
+    [f'k{key}{mod}'
+     for key in 'UP DN RIT LFT BEG END HOM IC DC PRV NXT'.split()
+     for mod in range(3, 8)])
 if extra - no_termcap_for:
-    raise Exception(f'Termcap aliases not complete, missing: {extra - no_termcap_for}')
+    raise Exception(
+        f'Termcap aliases not complete, missing: {extra - no_termcap_for}')
 del extra
 
 
@@ -465,8 +472,10 @@ def generate_terminfo() -> str:
     # Use ./build-terminfo to update definition files
     ans = ['|'.join(names)]
     ans.extend(sorted(bool_capabilities))
-    ans.extend(f'{k}#{numeric_capabilities[k]}' for k in sorted(numeric_capabilities))
-    ans.extend(f'{k}={string_capabilities[k]}' for k in sorted(string_capabilities))
+    ans.extend(f'{k}#{numeric_capabilities[k]}'
+               for k in sorted(numeric_capabilities))
+    ans.extend(f'{k}={string_capabilities[k]}'
+               for k in sorted(string_capabilities))
     return ',\n\t'.join(ans) + ',\n'
 
 
@@ -496,7 +505,7 @@ def get_capabilities(query_string: str, opts: 'Options') -> Generator[str, None,
         elif name.startswith('smelly-query-'):
             from wellies.query_terminal.main import get_result
 
-            name = name[len('smelly-query-') :]
+            name = name[len('smelly-query-'):]
             rval = get_result(name)
             if rval is None:
                 from .utils import log_error

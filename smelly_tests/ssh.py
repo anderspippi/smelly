@@ -48,24 +48,30 @@ print(' '.join(map(str, buf)))'''
         self.ae(pty.screen_contents(), '13 77 770 260')
 
     def test_ssh_connection_data(self):
-        def t(cmdline, binary='ssh', host='main', port=None, identity_file='', extra_args=()):
+        def t(
+                cmdline, binary='ssh', host='main', port=None,
+                identity_file='', extra_args=()):
             if identity_file:
                 identity_file = os.path.abspath(identity_file)
             en = set(f'{x[0]}' for x in extra_args)
             q = get_connection_data(cmdline.split(), extra_args=en)
-            self.ae(q, SSHConnectionData(binary, host, port, identity_file, extra_args))
+            self.ae(q, SSHConnectionData(binary, host,
+                    port, identity_file, extra_args))
 
         t('ssh main')
         t('ssh un@ip -i ident -p34', host='un@ip', port=34, identity_file='ident')
         t('ssh un@ip -iident -p34', host='un@ip', port=34, identity_file='ident')
         t('ssh -p 33 main', port=33)
         t('ssh -p 34 ssh://un@ip:33/', host='un@ip', port=34)
-        t('ssh --kitten=one -p 12 --kitten two -ix main', identity_file='x', port=12, extra_args=(('--kitten', 'one'), ('--kitten', 'two')))
+        t('ssh --kitten=one -p 12 --kitten two -ix main', identity_file='x',
+          port=12, extra_args=(('--kitten', 'one'), ('--kitten', 'two')))
         self.assertTrue(runtime_dir())
 
     def test_ssh_config_parsing(self):
         def parse(conf, hostname='unmatched_host', username=''):
-            return load_config(overrides=conf.splitlines(), hostname=hostname, username=username)
+            return load_config(
+                overrides=conf.splitlines(),
+                hostname=hostname, username=username)
 
         self.ae(parse('').env, {})
         self.ae(parse('env a=b').env, {'a': 'b'})
@@ -85,7 +91,10 @@ print(' '.join(map(str, buf)))'''
 
     def test_ssh_bootstrap_sh_cmd_limit(self):
         # dropbear has a 9000 bytes maximum command length limit
-        sh_script, _, _ = bootstrap_script(SSHOptions({'interpreter': 'sh'}), script_type='sh', remote_args=[], request_id='123-123')
+        sh_script, _, _ = bootstrap_script(
+            SSHOptions({'interpreter': 'sh'}),
+            script_type='sh', remote_args=[],
+            request_id='123-123')
         rcmd = wrap_bootstrap_script(sh_script, 'sh')
         self.assertLessEqual(sum(len(x) for x in rcmd), 9000)
 
@@ -93,7 +102,10 @@ print(' '.join(map(str, buf)))'''
     @lru_cache()
     def all_possible_sh(self):
         python = 'python3' if shutil.which('python3') else 'python'
-        return tuple(filter(shutil.which, ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
+        return tuple(
+            filter(
+                shutil.which,
+                ('dash', 'zsh', 'bash', 'posh', 'sh', python)))
 
     def test_ssh_copy(self):
         simple_data = 'rkjlhfwf9whoaa'
@@ -120,14 +132,20 @@ copy --dest=a/sfa simple-file
 copy --glob g.*
 copy --exclude */w.* d1
 '''
-                copy = load_config(overrides=filter(None, conf.splitlines())).copy
-                self.check_bootstrap(sh, remote_home, test_script='env; exit 0', SHELL_INTEGRATION_VALUE='', ssh_opts={'copy': copy})
+                copy = load_config(overrides=filter(
+                    None, conf.splitlines())).copy
+                self.check_bootstrap(sh, remote_home,
+                                     test_script='env; exit 0',
+                                     SHELL_INTEGRATION_VALUE='',
+                                     ssh_opts={'copy': copy})
                 tname = '.terminfo'
                 if os.path.exists('/usr/share/misc/terminfo.cdb'):
                     tname += '.cdb'
                 self.assertTrue(os.path.lexists(f'{remote_home}/{tname}/78'))
-                self.assertTrue(os.path.exists(f'{remote_home}/{tname}/78/xterm-smelly'))
-                self.assertTrue(os.path.exists(f'{remote_home}/{tname}/x/xterm-smelly'))
+                self.assertTrue(os.path.exists(
+                    f'{remote_home}/{tname}/78/xterm-smelly'))
+                self.assertTrue(os.path.exists(
+                    f'{remote_home}/{tname}/x/xterm-smelly'))
                 for w in ('simple-file', 'a/sfa', 's2'):
                     with open(os.path.join(remote_home, w), 'r') as f:
                         self.ae(f.read(), simple_data)
@@ -159,7 +177,9 @@ copy --exclude */w.* d1
                         '.local/share/smelly-ssh-kitten/smelly/bin/kitten',
                     },
                 )
-                self.ae(len(glob.glob(f'{remote_home}/{tname}/*/xterm-smelly')), 2)
+                self.ae(
+                    len(glob.glob(f'{remote_home}/{tname}/*/xterm-smelly')),
+                    2)
 
     def test_ssh_env_vars(self):
         tset = '$A-$(echo no)-`echo no2` !Q5 "something\nelse"'
@@ -180,7 +200,9 @@ copy --exclude */w.* d1
                         },
                     },
                 )
-                pty.wait_till(lambda: 'TSET={}'.format(tset.replace('$A', 'AAA')) in pty.screen_contents())
+                pty.wait_till(lambda: 'TSET={}'.format(
+                    tset.replace('$A', 'AAA'))
+                    in pty.screen_contents())
                 self.assertNotIn('COLORTERM', pty.screen_contents())
                 pty.wait_till(lambda: '/cwd' in pty.screen_contents())
                 self.assertTrue(pty.is_echo_on())
@@ -194,7 +216,9 @@ copy --exclude */w.* d1
                     q = shutil.which(launcher)
                     if q:
                         with self.subTest(sh=sh, launcher=q), tempfile.TemporaryDirectory() as tdir:
-                            self.check_bootstrap(sh, tdir, test_script='env; exit 0', SHELL_INTEGRATION_VALUE='', launcher=q)
+                            self.check_bootstrap(
+                                sh, tdir, test_script='env; exit 0',
+                                SHELL_INTEGRATION_VALUE='', launcher=q)
 
     def test_ssh_leading_data(self):
         script = 'echo "ld:$leading_data"; exit 0'
@@ -202,12 +226,15 @@ copy --exclude */w.* d1
             if 'python' in sh:
                 script = 'print("ld:" + leading_data.decode("ascii")); raise SystemExit(0);'
             with self.subTest(sh=sh), tempfile.TemporaryDirectory() as tdir:
-                pty = self.check_bootstrap(sh, tdir, test_script=script, SHELL_INTEGRATION_VALUE='', pre_data='before_tarfile')
+                pty = self.check_bootstrap(
+                    sh, tdir, test_script=script, SHELL_INTEGRATION_VALUE='',
+                    pre_data='before_tarfile')
                 self.ae(pty.screen_contents(), 'UNTAR_DONE\nld:before_tarfile')
 
     def test_ssh_login_shell_detection(self):
         methods = []
-        if shutil.which('python') or shutil.which('python3') or shutil.which('python2'):
+        if shutil.which('python') or shutil.which('python3') or shutil.which(
+                'python2'):
             methods.append('using_python')
         if is_macos:
             methods += ['using_id']
@@ -221,19 +248,25 @@ copy --exclude */w.* d1
 
         expected_login_shell = pwd.getpwuid(os.geteuid()).pw_shell
         if os.path.basename(expected_login_shell) == 'nologin':
-            self.skipTest('Skipping login shell detection as login shell is set to nologin')
+            self.skipTest(
+                'Skipping login shell detection as login shell is set to nologin')
         for m in methods:
             for sh in self.all_possible_sh:
                 if 'python' in sh:
                     continue
                 with self.subTest(sh=sh, method=m), tempfile.TemporaryDirectory() as tdir:
-                    pty = self.check_bootstrap(sh, tdir, test_script=f'{m}; echo "$login_shell"; exit 0', SHELL_INTEGRATION_VALUE='')
+                    pty = self.check_bootstrap(
+                        sh, tdir,
+                        test_script=f'{m}; echo "$login_shell"; exit 0',
+                        SHELL_INTEGRATION_VALUE='')
                     self.assertIn(expected_login_shell, pty.screen_contents())
 
     def test_ssh_shell_integration(self):
         ok_login_shell = ''
         for sh in self.all_possible_sh:
-            for login_shell in {'fish', 'zsh', 'bash'} & set(self.all_possible_sh):
+            for login_shell in {
+                    'fish', 'zsh', 'bash'} & set(
+                    self.all_possible_sh):
                 if login_shell == 'bash' and not bash_ok():
                     continue
                 ok_login_shell = login_shell
@@ -241,25 +274,34 @@ copy --exclude */w.* d1
                     pty = self.check_bootstrap(sh, tdir, login_shell)
                     if login_shell == 'bash':
                         pty.send_cmd_to_child('echo $HISTFILE')
-                        pty.wait_till(lambda: '/.bash_history' in pty.screen_contents())
+                        pty.wait_till(
+                            lambda: '/.bash_history' in pty.screen_contents())
                     elif login_shell == 'zsh':
                         pty.send_cmd_to_child('echo "login_shell=$ZSH_NAME"')
-                        pty.wait_till(lambda: 'login_shell=zsh' in pty.screen_contents())
+                        pty.wait_till(
+                            lambda: 'login_shell=zsh' in pty.screen_contents())
                     self.assertIn(b'\x1b]133;', pty.received_bytes)
         # check that turning off shell integration works
         if ok_login_shell in ('bash', 'zsh'):
             for val in ('', 'no-rc', 'enabled no-rc'):
                 for sh in self.all_possible_sh:
                     with tempfile.TemporaryDirectory() as tdir:
-                        pty = self.check_bootstrap(sh, tdir, ok_login_shell, val)
+                        pty = self.check_bootstrap(
+                            sh, tdir, ok_login_shell, val)
                         num_lines = len(pty.screen_contents().splitlines())
                         pty.send_cmd_to_child('echo "$TERM=fruity"')
-                        pty.wait_till(lambda: 'smelly=fruity' in pty.screen_contents(), timeout=30)
-                        pty.wait_till(lambda: len(pty.screen_contents().splitlines()) >= num_lines + 2)
+                        pty.wait_till(
+                            lambda: 'smelly=fruity' in pty.screen_contents(),
+                            timeout=30)
+                        pty.wait_till(
+                            lambda: len(pty.screen_contents().splitlines()) >=
+                            num_lines + 2)
                         self.assertEqual(pty.screen.cursor.shape, 0)
                         self.assertNotIn(b'\x1b]133;', pty.received_bytes)
 
-    def check_bootstrap(self, sh, home_dir, login_shell='', SHELL_INTEGRATION_VALUE='enabled', test_script='', pre_data='', ssh_opts=None, launcher='sh'):
+    def check_bootstrap(self, sh, home_dir, login_shell='',
+                        SHELL_INTEGRATION_VALUE='enabled', test_script='',
+                        pre_data='', ssh_opts=None, launcher='sh'):
         ssh_opts = ssh_opts or {}
         if login_shell:
             ssh_opts['login_shell'] = login_shell
@@ -271,16 +313,27 @@ copy --exclude */w.* d1
             test_script = f'echo "UNTAR_DONE"; {test_script}'
         ssh_opts['shell_integration'] = SHELL_INTEGRATION_VALUE or 'disabled'
         script, replacements, shm_name = bootstrap_script(
-            SSHOptions(ssh_opts), script_type='py' if 'python' in sh else 'sh', request_id="testing", test_script=test_script, request_data=True
-        )
+            SSHOptions(ssh_opts),
+            script_type='py'
+            if 'python' in sh else
+            'sh',
+            request_id="testing",
+            test_script=test_script,
+            request_data=True)
         try:
             env = basic_shell_env(home_dir)
             # Avoid generating unneeded completion scripts
-            os.makedirs(os.path.join(home_dir, '.local', 'share', 'fish', 'generated_completions'), exist_ok=True)
+            os.makedirs(
+                os.path.join(
+                    home_dir, '.local', 'share', 'fish',
+                    'generated_completions'),
+                exist_ok=True)
             # prevent newuser-install from running
             open(os.path.join(home_dir, '.zshrc'), 'w').close()
             cmd = wrap_bootstrap_script(script, sh)
-            pty = self.create_pty([launcher, '-c', ' '.join(cmd)], cwd=home_dir, env=env)
+            pty = self.create_pty(
+                [launcher, '-c', ' '.join(cmd)],
+                cwd=home_dir, env=env)
             pty.turn_off_echo()
             del cmd
             if pre_data:
@@ -290,16 +343,21 @@ copy --exclude */w.* d1
             def check_untar_or_fail():
                 q = pty.screen_contents()
                 if 'bzip2' in q:
-                    raise ValueError('Untarring failed with screen contents:\n' + q)
+                    raise ValueError(
+                        'Untarring failed with screen contents:\n' + q)
                 return 'UNTAR_DONE' in q
 
             pty.wait_till(check_untar_or_fail, timeout=30)
-            self.assertTrue(os.path.exists(os.path.join(home_dir, '.terminfo/smelly.terminfo')))
+            self.assertTrue(os.path.exists(os.path.join(
+                home_dir, '.terminfo/smelly.terminfo')))
             if SHELL_INTEGRATION_VALUE != 'enabled':
-                pty.wait_till(lambda: len(pty.screen_contents().splitlines()) > 1, timeout=30)
+                pty.wait_till(
+                    lambda: len(pty.screen_contents().splitlines()) > 1,
+                    timeout=30)
                 self.assertEqual(pty.screen.cursor.shape, 0)
             else:
-                pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM, timeout=30)
+                pty.wait_till(lambda: pty.screen.cursor.shape ==
+                              CURSOR_BEAM, timeout=30)
             return pty
         finally:
             with suppress(FileNotFoundError):

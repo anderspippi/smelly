@@ -25,7 +25,8 @@ def build_ansi_color_table(opts: Optional[Options] = None) -> int:
         opts = defaults
     addr, length = opts.color_table.buffer_info()
     if length != 256 or opts.color_table.typecode != 'L':
-        raise TypeError(f'The color table has incorrect size length: {length} typecode: {opts.color_table.typecode}')
+        raise TypeError(
+            f'The color table has incorrect size length: {length} typecode: {opts.color_table.typecode}')
     return addr
 
 
@@ -48,7 +49,8 @@ def atomic_save(data: bytes, path: str) -> None:
         except FileNotFoundError:
             pass
         except Exception as err:
-            log_error(f'Failed to delete temp file {p} for atomic save with error: {err}')
+            log_error(
+                f'Failed to delete temp file {p} for atomic save with error: {err}')
 
 
 @contextmanager
@@ -88,7 +90,8 @@ def prepare_config_file_for_editing() -> str:
     return defconf
 
 
-def finalize_keys(opts: Options, accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
+def finalize_keys(opts: Options,
+                  accumulate_bad_lines: Optional[List[BadLine]] = None) -> None:
     defns: List[KeyDefinition] = []
     for d in opts.map:
         if d is None:  # clear_all_shortcuts
@@ -98,9 +101,11 @@ def finalize_keys(opts: Options, accumulate_bad_lines: Optional[List[BadLine]] =
                 defns.append(d.resolve_and_copy(opts.smelly_mod))
             except Exception as err:
                 if accumulate_bad_lines is None:
-                    log_error(f'Ignoring map with invalid action: {d.definition}. Error: {err}')
+                    log_error(
+                        f'Ignoring map with invalid action: {d.definition}. Error: {err}')
                 else:
-                    accumulate_bad_lines.append(BadLine(d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
+                    accumulate_bad_lines.append(BadLine(
+                        d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
 
     keymap: KeyMap = {}
     sequence_map: SequenceMap = {}
@@ -136,9 +141,11 @@ def finalize_mouse_mappings(opts: Options, accumulate_bad_lines: Optional[List[B
                 defns.append(d.resolve_and_copy(opts.smelly_mod))
             except Exception as err:
                 if accumulate_bad_lines is None:
-                    log_error(f'Ignoring mouse_map with invalid action: {d.definition}. Error: {err}')
+                    log_error(
+                        f'Ignoring mouse_map with invalid action: {d.definition}. Error: {err}')
                 else:
-                    accumulate_bad_lines.append(BadLine(d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
+                    accumulate_bad_lines.append(BadLine(
+                        d.definition_location.number, d.definition_location.line, err, d.definition_location.file))
     mousemap: MouseMap = {}
 
     for defn in defns:
@@ -154,15 +161,21 @@ def parse_config(lines: Iterable[str], accumulate_bad_lines: Optional[List[BadLi
     from .options.parse import create_result_dict, parse_conf_item
 
     ans: Dict[str, Any] = create_result_dict()
-    parse_config_base(lines, parse_conf_item, ans, accumulate_bad_lines=accumulate_bad_lines)
+    parse_config_base(lines, parse_conf_item, ans,
+                      accumulate_bad_lines=accumulate_bad_lines)
     return ans
 
 
-def load_config(*paths: str, overrides: Optional[Iterable[str]] = None, accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
+def load_config(
+        *paths: str, overrides: Optional[Iterable[str]] = None,
+        accumulate_bad_lines: Optional[List[BadLine]] = None) -> Options:
     from .options.parse import merge_result_dicts
 
     overrides = tuple(overrides) if overrides is not None else ()
-    opts_dict, paths = _load_config(defaults, partial(parse_config, accumulate_bad_lines=accumulate_bad_lines), merge_result_dicts, *paths, overrides=overrides)
+    opts_dict, paths = _load_config(
+        defaults,
+        partial(parse_config, accumulate_bad_lines=accumulate_bad_lines),
+        merge_result_dicts, *paths, overrides=overrides)
     opts = Options(opts_dict)
 
     opts.alias_map = build_action_aliases(opts.kitten_alias, 'kitten')

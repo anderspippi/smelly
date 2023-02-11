@@ -291,9 +291,14 @@ class TestDataTypes(BaseTest):
                 lspace_test(i, scheme)
         l3 = create('b https://testing.me a')
         for s in (0, 1, len(l3) - 1, len(l3) - 2):
-            self.ae(l3.url_start_at(s), len(l3), 'failed with start at: %d' % s)
+            self.ae(
+                l3.url_start_at(s),
+                len(l3),
+                'failed with start at: %d' % s)
         for s in range(2, len(l3) - 2):
-            self.ae(l3.url_start_at(s), 2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))
+            self.ae(
+                l3.url_start_at(s),
+                2, 'failed with start at: %d (%s)' % (s, str(l3)[s:]))
 
         def no_url(t):
             lf = create(t)
@@ -425,14 +430,16 @@ class TestDataTypes(BaseTest):
                 csi_r.append(x)
 
             for d in data:
-                left = parse_input_from_terminal(text_r.append, rest.append, on_csi, rest.append, rest.append, apc_r.append, left + d, in_bp)
+                left = parse_input_from_terminal(
+                    text_r.append, rest.append, on_csi, rest.append, rest.append, apc_r.append, left + d, in_bp)
             self.ae(left, leftover)
             self.ae(text, ' '.join(text_r))
             self.ae(csi, ' '.join(csi_r))
             self.ae(apc, ' '.join(apc_r))
             self.assertFalse(rest)
 
-        tp('a\033[200~\033[32mxy\033[201~\033[33ma', text='a \033[32m xy a', csi='200~ 201~ 33m')
+        tp('a\033[200~\033[32mxy\033[201~\033[33ma',
+           text='a \033[32m xy a', csi='200~ 201~ 33m')
         tp('abc', text='abc')
         tp('a\033[38:5:12:32mb', text='a b', csi='38:5:12:32m')
         tp('a\033_x,;(\033\\b', text='a b', apc='x,;(')
@@ -443,10 +450,14 @@ class TestDataTypes(BaseTest):
 
         for prefix in ('/tmp', tempfile.gettempdir()):
             for path in ('a.png', 'x/b.jpg', 'y/../c.jpg'):
-                self.assertTrue(is_path_in_temp_dir(os.path.join(prefix, path)))
+                self.assertTrue(is_path_in_temp_dir(
+                    os.path.join(prefix, path)))
         for path in ('/home/xy/d.png', '/tmp/../home/x.jpg'):
             self.assertFalse(is_path_in_temp_dir(os.path.join(path)))
-        self.ae(sanitize_url_for_dispay_to_user('h://a\u0430b.com/El%20Ni%C3%B1o/'), 'h://xn--ab-7kc.com/El Niño/')
+        self.ae(
+            sanitize_url_for_dispay_to_user(
+                'h://a\u0430b.com/El%20Ni%C3%B1o/'),
+            'h://xn--ab-7kc.com/El Niño/')
 
     def test_color_profile(self):
         c = ColorProfile()
@@ -525,7 +536,12 @@ class TestDataTypes(BaseTest):
         c.bg = (1 << 24) | (2 << 16) | (3 << 8) | 2
         c.decoration_fg = (5 << 8) | 1
         l2.set_text('1', 0, 1, c)
-        self.ae(l2.as_ansi(), '\x1b[1;2;3;7;9;34;48:2:1:2:3;58:5:5m' '1' '\x1b[22;23;27;29;39;49;59m' '0000')
+        self.ae(
+            l2.as_ansi(),
+            '\x1b[1;2;3;7;9;34;48:2:1:2:3;58:5:5m'
+            '1'
+            '\x1b[22;23;27;29;39;49;59m'
+            '0000')
         lb = filled_line_buf()
         for i in range(1, lb.ynum + 1):
             lb.set_continued(i, True)
@@ -553,17 +569,31 @@ class TestDataTypes(BaseTest):
             s = SingleKey(mods=m)
             self.ae(s.mods, m)
         self.ae(tuple(iter(SingleKey())), (0, False, 0))
-        self.ae(tuple(SingleKey(key=sys.maxunicode, mods=GLFW_MOD_SHIFT, is_native=True)), (GLFW_MOD_SHIFT, True, sys.maxunicode))
+        self.ae(
+            tuple(
+                SingleKey(
+                    key=sys.maxunicode, mods=GLFW_MOD_SHIFT,
+                    is_native=True)),
+            (GLFW_MOD_SHIFT, True, sys.maxunicode))
         self.ae(repr(SingleKey()), 'SingleKey()')
-        self.ae(repr(SingleKey(key=23, mods=2, is_native=True)), 'SingleKey(mods=2, is_native=True, key=23)')
+        self.ae(repr(SingleKey(key=23, mods=2, is_native=True)),
+                'SingleKey(mods=2, is_native=True, key=23)')
         self.ae(repr(SingleKey(key=23, mods=2)), 'SingleKey(mods=2, key=23)')
         self.ae(repr(SingleKey(key=23)), 'SingleKey(key=23)')
         self.ae(repr(SingleKey(key=0x1008FF57)), 'SingleKey(key=269025111)')
-        self.ae(repr(SingleKey(key=23)._replace(mods=2)), 'SingleKey(mods=2, key=23)')
-        self.ae(repr(SingleKey(key=23)._replace(key=-1, mods=GLFW_MOD_smelly)), f'SingleKey(mods={GLFW_MOD_smelly})')
+        self.ae(
+            repr(SingleKey(key=23)._replace(mods=2)),
+            'SingleKey(mods=2, key=23)')
+        self.ae(
+            repr(
+                SingleKey(key=23)._replace(
+                    key=-1, mods=GLFW_MOD_smelly)),
+            f'SingleKey(mods={GLFW_MOD_smelly})')
         self.assertEqual(SingleKey(key=1), SingleKey(key=1))
         self.assertEqual(hash(SingleKey(key=1)), hash(SingleKey(key=1)))
-        self.assertNotEqual(hash(SingleKey(key=1, mods=2)), hash(SingleKey(key=1)))
+        self.assertNotEqual(
+            hash(SingleKey(key=1, mods=2)),
+            hash(SingleKey(key=1)))
         self.assertNotEqual(SingleKey(key=1, mods=2), SingleKey(key=1))
 
     def test_notify_identifier_sanitization(self):

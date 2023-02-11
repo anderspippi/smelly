@@ -49,7 +49,8 @@ class TestParser(BaseTest):
         pb('3456', '3456')
         self.ae(str(s.line(0)), '12345')
         self.ae(str(s.line(1)), '6')
-        pb(b'\n123\n\r45', ('screen_linefeed',), '123', ('screen_linefeed',), ('screen_carriage_return',), '45')
+        pb(b'\n123\n\r45', ('screen_linefeed',), '123',
+           ('screen_linefeed',), ('screen_carriage_return',), '45')
         self.ae(str(s.line(1)), '6')
         self.ae(str(s.line(2)), ' 123')
         self.ae(str(s.line(3)), '45')
@@ -77,7 +78,8 @@ class TestParser(BaseTest):
         pb(b'\xa1', ('draw', b'\xc3\xa1'.decode('utf-8')))
         s = self.create_screen()
         pb = partial(self.parse_bytes_dump, s)
-        pb('\033)0\x0e/_', ('screen_designate_charset', 1, ord('0')), ('screen_change_charset', 1), '/_')
+        pb('\033)0\x0e/_', ('screen_designate_charset', 1,
+           ord('0')), ('screen_change_charset', 1), '/_')
         self.ae(str(s.line(0)), '/\xa0')
         self.assertTrue(s.callbacks.iutf8)
         pb('\033%@_', ('screen_use_latin1', 1), '_')
@@ -96,8 +98,12 @@ class TestParser(BaseTest):
         self.ae(str(s.line(0)), 'xy bc')
         pb('x\033[2;7@y', 'x', ('CSI code @ has 2 > 1 parameters',), 'y')
         pb('x\033[2;-7@y', 'x', ('CSI code @ has 2 > 1 parameters',), 'y')
-        pb('x\033[-2@y', 'x', ('CSI code @ is not allowed to have negative parameter (-2)',), 'y')
-        pb('x\033[2-3@y', 'x', ('CSI code can contain hyphens only at the start of numbers',), 'y')
+        pb('x\033[-2@y', 'x',
+           ('CSI code @ is not allowed to have negative parameter (-2)',),
+           'y')
+        pb('x\033[2-3@y', 'x',
+           ('CSI code can contain hyphens only at the start of numbers',),
+           'y')
         pb('x\033[@y', 'x', ('screen_insert_characters', 1), 'y')
         pb('x\033[345@y', 'x', ('screen_insert_characters', 345), 'y')
         pb('x\033[345;@y', 'x', ('screen_insert_characters', 345), 'y')
@@ -107,15 +113,18 @@ class TestParser(BaseTest):
         pb('\033[4;0H', ('screen_cursor_position', 4, 0))
         pb('\033[3;2H', ('screen_cursor_position', 3, 2))
         pb('\033[3;2;H', ('screen_cursor_position', 3, 2))
-        pb('\033[00000000003;0000000000000002H', ('screen_cursor_position', 3, 2))
+        pb('\033[00000000003;0000000000000002H',
+           ('screen_cursor_position', 3, 2))
         self.ae(s.cursor.x, 1), self.ae(s.cursor.y, 2)
         pb('\033[J', ('screen_erase_in_display', 0, 0))
         pb('\033[?J', ('screen_erase_in_display', 0, 1))
         pb('\033[?2J', ('screen_erase_in_display', 2, 1))
         pb('\033[h')
         pb('\033[20;4h', ('screen_set_mode', 20, 0), ('screen_set_mode', 4, 0))
-        pb('\033[?1000;1004h', ('screen_set_mode', 1000, 1), ('screen_set_mode', 1004, 1))
-        pb('\033[20;4;20l', ('screen_reset_mode', 20, 0), ('screen_reset_mode', 4, 0), ('screen_reset_mode', 20, 0))
+        pb('\033[?1000;1004h', ('screen_set_mode',
+           1000, 1), ('screen_set_mode', 1004, 1))
+        pb('\033[20;4;20l', ('screen_reset_mode', 20, 0),
+           ('screen_reset_mode', 4, 0), ('screen_reset_mode', 20, 0))
         pb('\033[=c', ('report_device_attributes', 0, 61))
         s.reset()
 
@@ -128,10 +137,13 @@ class TestParser(BaseTest):
         self.ae(s.cursor.decoration, 1)
         self.ae(s.cursor.fg, 4 << 8 | 1)
         self.ae(s.cursor.bg, 4 << 8 | 1)
-        pb('\033[38;5;1;48;5;7m', ('select_graphic_rendition', '38 5 1 '), ('select_graphic_rendition', '48 5 7 '))
+        pb('\033[38;5;1;48;5;7m', ('select_graphic_rendition',
+           '38 5 1 '), ('select_graphic_rendition', '48 5 7 '))
         self.ae(s.cursor.fg, 1 << 8 | 1)
         self.ae(s.cursor.bg, 7 << 8 | 1)
-        pb('\033[38;2;1;2;3;48;2;7;8;9m', ('select_graphic_rendition', '38 2 1 2 3 '), ('select_graphic_rendition', '48 2 7 8 9 '))
+        pb('\033[38;2;1;2;3;48;2;7;8;9m',
+           ('select_graphic_rendition', '38 2 1 2 3 '),
+           ('select_graphic_rendition', '48 2 7 8 9 '))
         self.ae(s.cursor.fg, 1 << 24 | 2 << 16 | 3 << 8 | 2)
         self.ae(s.cursor.bg, 7 << 24 | 8 << 16 | 9 << 8 | 2)
         pb('\033[0;2m', *sgr('0 2'))
@@ -194,7 +206,8 @@ class TestParser(BaseTest):
         pb('x\033[7b', 'x', ('screen_repeat_character', 7))
         self.ae(str(s.line(0)), 'xxxxxxxx')
         pb('\033[1;3H', ('screen_cursor_position', 1, 3))
-        pb('\033[byz\033[b', ('screen_repeat_character', 1), 'yz', ('screen_repeat_character', 1))
+        pb('\033[byz\033[b', ('screen_repeat_character', 1),
+           'yz', ('screen_repeat_character', 1))
         # repeat 'x' at 3, then 'yz' at 4-5, then repeat 'z' at 6
         self.ae(str(s.line(0)), 'xxxyzzxx')
         s.reset()
@@ -230,16 +243,22 @@ class TestParser(BaseTest):
         pb('\033]9;\x07', ('desktop_notify', 9, ''))
         pb('\033]9;test it\x07', ('desktop_notify', 9, 'test it'))
         pb('\033]99;moo=foo;test it\x07', ('desktop_notify', 99, 'moo=foo;test it'))
-        self.ae(c.notifications, [(9, ''), (9, 'test it'), (99, 'moo=foo;test it')])
+        self.ae(
+            c.notifications,
+            [(9, ''),
+             (9, 'test it'),
+             (99, 'moo=foo;test it')])
         c.clear()
         pb('\033]8;;\x07', ('set_active_hyperlink', None, None))
         pb('\033]8moo\x07', ('Ignoring malformed OSC 8 code',))
         pb('\033]8;moo\x07', ('Ignoring malformed OSC 8 code',))
         pb('\033]8;id=xyz;\x07', ('set_active_hyperlink', 'xyz', None))
-        pb('\033]8;moo:x=z:id=xyz:id=abc;http://yay;.com\x07', ('set_active_hyperlink', 'xyz', 'http://yay;.com'))
+        pb('\033]8;moo:x=z:id=xyz:id=abc;http://yay;.com\x07',
+           ('set_active_hyperlink', 'xyz', 'http://yay;.com'))
         c.clear()
         payload = '1' * 1024
-        pb(f'\033]52;p;{payload}\x07', ('clipboard_control', 52, f'p;{payload}'))
+        pb(f'\033]52;p;{payload}\x07',
+           ('clipboard_control', 52, f'p;{payload}'))
         c.clear()
         pb('\033]52;p;xyz\x07', ('clipboard_control', 52, 'p;xyz'))
 
@@ -261,7 +280,8 @@ class TestParser(BaseTest):
 
         def h(raw_data, osc_code=99, window_id=1):
             nonlocal prev_cmd
-            x = handle_notification_cmd(osc_code, raw_data, window_id, prev_cmd, notify)
+            x = handle_notification_cmd(
+                osc_code, raw_data, window_id, prev_cmd, notify)
             if x is not None and osc_code == 99:
                 prev_cmd = x
 
@@ -311,7 +331,8 @@ class TestParser(BaseTest):
         c = s.callbacks
         pb = partial(self.parse_bytes_dump, s)
         q = hexlify(b'kind').decode('ascii')
-        pb(f'a\033P+q{q}\x9cbcde', 'a', ('screen_request_capabilities', 43, q), 'bcde')
+        pb(f'a\033P+q{q}\x9cbcde', 'a',
+           ('screen_request_capabilities', 43, q), 'bcde')
         self.ae(str(s.line(0)), 'abcde')
         self.ae(c.wtcbuf, '1+r{}={}'.format(q, '1b5b313b3242').encode('ascii'))
         c.clear()
@@ -328,7 +349,8 @@ class TestParser(BaseTest):
             self.ae(expected, set(r.split(';')))
         c.clear()
         pb('\033P$qr\033\\', ('screen_request_capabilities', ord('$'), 'r'))
-        self.ae(c.wtcbuf, f'\033P1$r{s.margin_top + 1};{s.margin_bottom + 1}r\033\\'.encode('ascii'))
+        self.ae(
+            c.wtcbuf, f'\033P1$r{s.margin_top + 1};{s.margin_bottom + 1}r\033\\'.encode('ascii'))
 
     def test_sc81t(self):
         s = self.create_screen()
@@ -363,13 +385,20 @@ class TestParser(BaseTest):
         pb('\033P=1s\033\\e', ('screen_start_pending_mode',))
         pb('\033P'), pb('='), pb('2s')
         pb('\033\\', ('draw', 'e'), ('screen_stop_pending_mode',))
-        pb('\033P=1sxyz;.;\033\\' '\033P=2skjf".,><?_+)98\033\\', ('screen_start_pending_mode',))
-        pb('\033P=1s\033\\f\033P=1s\033\\', ('screen_start_pending_mode',), ('screen_start_pending_mode',))
+        pb('\033P=1sxyz;.;\033\\' '\033P=2skjf".,><?_+)98\033\\',
+           ('screen_start_pending_mode',))
+        pb('\033P=1s\033\\f\033P=1s\033\\',
+           ('screen_start_pending_mode',), ('screen_start_pending_mode',))
         pb('\033P=2s\033\\', ('draw', 'f'), ('screen_stop_pending_mode',))
-        pb('\033P=1s\033\\XXX\033P=2s\033\\', ('screen_start_pending_mode',), ('draw', 'XXX'), ('screen_stop_pending_mode',))
+        pb('\033P=1s\033\\XXX\033P=2s\033\\', ('screen_start_pending_mode',),
+           ('draw', 'XXX'), ('screen_stop_pending_mode',))
 
-        pb('\033[?2026hXXX\033[?2026l', ('screen_set_mode', 2026, 1), ('draw', 'XXX'), ('screen_reset_mode', 2026, 1))
-        pb('\033[?2026h\033[32ma\033[?2026l', ('screen_set_mode', 2026, 1), ('select_graphic_rendition', '32 '), ('draw', 'a'), ('screen_reset_mode', 2026, 1))
+        pb('\033[?2026hXXX\033[?2026l', ('screen_set_mode', 2026, 1),
+           ('draw', 'XXX'), ('screen_reset_mode', 2026, 1))
+        pb('\033[?2026h\033[32ma\033[?2026l', ('screen_set_mode', 2026, 1),
+           ('select_graphic_rendition', '32 '),
+           ('draw', 'a'),
+           ('screen_reset_mode', 2026, 1))
         pb(
             '\033[?2026h\033P+q544e\033\\ama\033P=2s\033\\',
             ('screen_set_mode', 2026, 1),
@@ -377,7 +406,10 @@ class TestParser(BaseTest):
             ('draw', 'ama'),
             ('screen_stop_pending_mode',),
         )
-        pb('\033P=1s\033\\\033(B\033P=2s\033\\', ('screen_start_pending_mode',), ('screen_designate_charset', 0, 66), ('screen_stop_pending_mode',))
+        pb('\033P=1s\033\\\033(B\033P=2s\033\\',
+           ('screen_start_pending_mode',),
+           ('screen_designate_charset', 0, 66),
+           ('screen_stop_pending_mode',))
 
         s.reset()
         s.set_pending_timeout(timeout)
@@ -387,16 +419,13 @@ class TestParser(BaseTest):
         )
         pb('\033P+q')
         time.sleep(1.2 * timeout)
-        pb(
-            '544e' + '\033\\\033P=2s\033\\',
-            ('screen_request_capabilities', 43, '544e'),
-            (
-                'Pending mode stop command issued while not in pending mode, this can be '
-                'either a bug in the terminal application or caused by a timeout with no '
-                'data received for too long or by too much data in pending mode',
-            ),
-            ('screen_stop_pending_mode',),
-        )
+        pb('544e' + '\033\\\033P=2s\033\\',
+           ('screen_request_capabilities', 43, '544e'),
+           (
+               'Pending mode stop command issued while not in pending mode, this can be '
+               'either a bug in the terminal application or caused by a timeout with no '
+               'data received for too long or by too much data in pending mode',),
+           ('screen_stop_pending_mode',),)
         self.assertEqual(str(s.line(0)), '')
 
     def test_oth_codes(self):
@@ -404,16 +433,19 @@ class TestParser(BaseTest):
         pb = partial(self.parse_bytes_dump, s)
         for prefix in '\033_', '\u009f':
             for suffix in '\u009c', '\033\\':
-                pb(f'a{prefix}+\\++{suffix}bcde', ('draw', 'a'), ('Unrecognized APC code: 0x2b',), ('draw', 'bcde'))
+                pb(f'a{prefix}+\\++{suffix}bcde', ('draw', 'a'),
+                   ('Unrecognized APC code: 0x2b',), ('draw', 'bcde'))
         for prefix in '\033^', '\u009e':
             for suffix in '\u009c', '\033\\':
-                pb(f'a{prefix}+\\++{suffix}bcde', ('draw', 'a'), ('Unrecognized PM code: 0x2b',), ('draw', 'bcde'))
+                pb(f'a{prefix}+\\++{suffix}bcde', ('draw', 'a'),
+                   ('Unrecognized PM code: 0x2b',), ('draw', 'bcde'))
 
     def test_graphics_command(self):
         from base64 import standard_b64encode
 
         def enc(x):
-            return standard_b64encode(x.encode('utf-8') if isinstance(x, str) else x).decode('ascii')
+            return standard_b64encode(
+                x.encode('utf-8') if isinstance(x, str) else x).decode('ascii')
 
         def c(**k):
             for p, v in tuple(k.items()):
@@ -441,11 +473,15 @@ class TestParser(BaseTest):
         uint32_max = 2**32 - 1
         t('i=%d' % uint32_max, id=uint32_max)
         t('i=3,p=4', id=3, placement_id=4)
-        e('i=%d' % (uint32_max + 1), 'Malformed GraphicsCommand control block, number is too large')
+        e('i=%d' % (uint32_max + 1),
+          'Malformed GraphicsCommand control block, number is too large')
         pb('\033_Gi=12\033\\', c(id=12))
-        t('a=t,t=d,s=100,z=-9', payload='X', action='t', transmission_type='d', data_width=100, z_index=-9, payload_sz=1)
-        t('a=t,t=d,s=100,z=9', payload='payload', action='t', transmission_type='d', data_width=100, z_index=9, payload_sz=7)
-        t('a=t,t=d,s=100,z=9,q=2', action='t', transmission_type='d', data_width=100, z_index=9, quiet=2)
+        t('a=t,t=d,s=100,z=-9', payload='X', action='t',
+          transmission_type='d', data_width=100, z_index=-9, payload_sz=1)
+        t('a=t,t=d,s=100,z=9', payload='payload', action='t',
+          transmission_type='d', data_width=100, z_index=9, payload_sz=7)
+        t('a=t,t=d,s=100,z=9,q=2', action='t',
+          transmission_type='d', data_width=100, z_index=9, quiet=2)
         e(',s=1', 'Malformed GraphicsCommand control block, invalid key character: 0x2c')
         e('W=1', 'Malformed GraphicsCommand control block, invalid key character: 0x57')
         e('1=1', 'Malformed GraphicsCommand control block, invalid key character: 0x31')
@@ -476,7 +512,8 @@ class TestParser(BaseTest):
                 self.ae(c.fg, (10 << 8) | 1)
                 self.ae(c.bg, (1 << 24 | 2 << 16 | 3 << 8 | 2))
         self.ae(s.line(0).cursor_from(0).bold, True)
-        pb('\033[1;2;2;3;22;39$r', ('deccara', '1 2 2 3 22 '), ('deccara', '1 2 2 3 39 '))
+        pb('\033[1;2;2;3;22;39$r', ('deccara', '1 2 2 3 22 '),
+           ('deccara', '1 2 2 3 39 '))
         self.ae(s.line(0).cursor_from(0).bold, True)
         line = s.line(0)
         for x in range(1, s.columns):
@@ -488,8 +525,10 @@ class TestParser(BaseTest):
             c = line.cursor_from(x)
             self.ae(c.bold, False)
         self.ae(line.cursor_from(3).bold, True)
-        pb('\033[2*x\033[3;2;4;3;34$r\033[*x', ('screen_decsace', 2), ('deccara', '3 2 4 3 34 '), ('screen_decsace', 0))
+        pb('\033[2*x\033[3;2;4;3;34$r\033[*x', ('screen_decsace', 2),
+           ('deccara', '3 2 4 3 34 '), ('screen_decsace', 0))
         for y in range(2, 4):
             line = s.line(y)
             for x in range(s.columns):
-                self.ae(line.cursor_from(x).fg, (10 << 8 | 1) if x < 1 or x > 2 else (4 << 8) | 1)
+                self.ae(line.cursor_from(x).fg, (10 << 8 | 1)
+                        if x < 1 or x > 2 else (4 << 8) | 1)

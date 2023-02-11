@@ -24,7 +24,8 @@ def bash_ok():
     v = shutil.which('bash')
     if not v:
         return False
-    o = subprocess.check_output([v, '-c', 'echo "${BASH_VERSINFO[0]}\n${BASH_VERSINFO[4]}"']).decode('utf-8').splitlines()
+    o = subprocess.check_output(
+        [v, '-c', 'echo "${BASH_VERSINFO[0]}\n${BASH_VERSINFO[4]}"']).decode('utf-8').splitlines()
     if not o:
         return False
     major_ver, relstatus = o[0], o[-1]
@@ -33,15 +34,13 @@ def bash_ok():
 
 def basic_shell_env(home_dir):
     ans = {
-        'PATH': os.environ.get('PATH', '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'),
-        'HOME': home_dir,
-        'TERM': 'xterm-smelly',
-        'TERMINFO': terminfo_dir,
+        'PATH': os.environ.get(
+            'PATH', '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'),
+        'HOME': home_dir, 'TERM': 'xterm-smelly', 'TERMINFO': terminfo_dir,
         'smelly_SHELL_INTEGRATION': 'enabled',
         'smelly_INSTALLATION_DIR': smelly_base_dir,
         'BASH_SILENCE_DEPRECATION_WARNING': '1',
-        'PYTHONDONTWRITEBYTECODE': '1',
-    }
+        'PYTHONDONTWRITEBYTECODE': '1', }
     for x in ('USER', 'LANG'):
         if os.environ.get(x):
             ans[x] = os.environ[x]
@@ -59,7 +58,10 @@ def safe_env_for_running_shell(argv, home_dir, rc='', shell='zsh'):
         conf_dir = os.path.join(home_dir, '.config', 'fish')
         os.makedirs(conf_dir, exist_ok=True)
         # Avoid generating unneeded completion scripts
-        os.makedirs(os.path.join(home_dir, '.local', 'share', 'fish', 'generated_completions'), exist_ok=True)
+        os.makedirs(os.path.join(
+            home_dir, '.local', 'share', 'fish',
+            'generated_completions'),
+            exist_ok=True)
         with open(os.path.join(conf_dir, 'config.fish'), 'w') as f:
             print(rc + '\n', file=f)
         setup_fish_env(ans, argv)
@@ -81,7 +83,8 @@ class ShellIntegration(BaseTest):
         home_dir = self.home_dir = os.path.realpath(tempfile.mkdtemp())
         cmd = cmd or shell
         cmd = shlex.split(cmd.format(**locals()))
-        env = (setup_env or safe_env_for_running_shell)(cmd, home_dir, rc=rc, shell=shell)
+        env = (setup_env or safe_env_for_running_shell)(
+            cmd, home_dir, rc=rc, shell=shell)
         try:
             pty = self.create_pty(cmd, cwd=home_dir, env=env)
             i = 10
@@ -106,19 +109,22 @@ RPS1="{rps1}"
             try:
                 pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
             except TimeoutError as e:
-                raise AssertionError(f'Cursor was not changed to beam. Screen contents: {repr(pty.screen_contents())}') from e
+                raise AssertionError(
+                    f'Cursor was not changed to beam. Screen contents: {repr(pty.screen_contents())}') from e
             pty.wait_till(lambda: pty.screen_contents() == q)
             self.ae(pty.callbacks.titlebuf[-1], '~')
             pty.callbacks.clear()
             pty.send_cmd_to_child('mkdir test && ls -a')
             pty.wait_till(lambda: pty.screen_contents().count(rps1) == 2)
             self.ae(pty.callbacks.titlebuf[-2:], ['mkdir test && ls -a', '~'])
-            q = '\n'.join(str(pty.screen.line(i)) for i in range(1, pty.screen.cursor.y))
+            q = '\n'.join(str(pty.screen.line(i))
+                          for i in range(1, pty.screen.cursor.y))
             self.ae(pty.last_cmd_output(), q)
             # shrink the screen
             pty.write_to_child(r'echo $COLUMNS')
             pty.set_window_size(rows=20, columns=40)
-            q = ps1 + 'echo $COLUMNS' + ' ' * (40 - len(ps1) - len(rps1) - len('echo $COLUMNS')) + rps1
+            q = ps1 + 'echo $COLUMNS' + ' ' * (40 - len(ps1) - len(rps1) -
+                                               len('echo $COLUMNS')) + rps1
             pty.process_input_from_child()
 
             def redrawn():
@@ -143,7 +149,8 @@ RPS1="{rps1}"
             pty.callbacks.clear()
             pty.send_cmd_to_child('printf "%s\x16\a%s" "a" "b"')
             pty.wait_till(lambda: 'ab' in pty.screen_contents())
-            self.assertTrue(pty.screen.last_reported_cwd.endswith(self.home_dir))
+            self.assertTrue(pty.screen.last_reported_cwd.endswith(
+                self.home_dir))
             self.assertIn('%s^G%s', pty.screen_contents())
             q = os.path.join(self.home_dir, 'testing-cwd-notification-🐱')
             os.mkdir(q)
@@ -159,7 +166,9 @@ RPS1="{rps1}"
     @unittest.skipUnless(shutil.which('fish'), 'fish not installed')
     def test_fish_integration(self):
         fish_prompt, right_prompt = 'left>', '<right'
-        completions_dir = os.path.join(smelly_base_dir, 'shell-integration', 'fish', 'vendor_completions.d')
+        completions_dir = os.path.join(
+            smelly_base_dir, 'shell-integration', 'fish',
+            'vendor_completions.d')
         with self.run_shell(
             shell='fish',
             rc=f'''
@@ -171,37 +180,48 @@ function _set_key; set -g fish_key_bindings fish_$argv[1]_key_bindings; end
 function _set_status_prompt; function fish_prompt; echo -n "$pipestatus $status {fish_prompt}"; end; end
 ''',
         ) as pty:
-            q = fish_prompt + ' ' * (pty.screen.columns - len(fish_prompt) - len(right_prompt)) + right_prompt
-            pty.wait_till(lambda: pty.screen_contents().count(right_prompt) == 1)
+            q = fish_prompt + ' ' * (pty.screen.columns - len(fish_prompt) -
+                                     len(right_prompt)) + right_prompt
+            pty.wait_till(
+                lambda: pty.screen_contents().count(right_prompt) == 1)
             self.ae(pty.screen_contents(), q)
 
             # shell integration dir must no be in XDG_DATA_DIRS
-            pty.send_cmd_to_child(f'string match -q -- "*{shell_integration_dir}*" "$XDG_DATA_DIRS" || echo "XDD_OK"')
+            pty.send_cmd_to_child(
+                f'string match -q -- "*{shell_integration_dir}*" "$XDG_DATA_DIRS" || echo "XDD_OK"')
             pty.wait_till(lambda: 'XDD_OK' in pty.screen_contents())
 
             # CWD reporting
-            self.assertTrue(pty.screen.last_reported_cwd.endswith(self.home_dir))
+            self.assertTrue(pty.screen.last_reported_cwd.endswith(
+                self.home_dir))
             q = os.path.join(self.home_dir, 'testing-cwd-notification-🐱')
             os.mkdir(q)
             pty.send_cmd_to_child(f'cd {q}')
             pty.wait_till(lambda: pty.screen.last_reported_cwd.endswith(q))
             pty.send_cmd_to_child('cd -')
-            pty.wait_till(lambda: pty.screen.last_reported_cwd.endswith(self.home_dir))
+            pty.wait_till(lambda: pty.screen.last_reported_cwd.endswith(
+                self.home_dir))
 
             # completion and prompt marking
-            pty.wait_till(lambda: 'cd -' not in pty.screen_contents().splitlines()[-1])
+            pty.wait_till(
+                lambda: 'cd -' not in pty.screen_contents().splitlines()
+                [-1])
             pty.send_cmd_to_child('clear')
-            pty.wait_till(lambda: pty.screen_contents().count(right_prompt) == 1)
+            pty.wait_till(
+                lambda: pty.screen_contents().count(right_prompt) == 1)
             pty.send_cmd_to_child('_test_comp_path')
-            pty.wait_till(lambda: pty.screen_contents().count(right_prompt) == 2)
-            q = '\n'.join(str(pty.screen.line(i)) for i in range(1, pty.screen.cursor.y))
+            pty.wait_till(
+                lambda: pty.screen_contents().count(right_prompt) == 2)
+            q = '\n'.join(str(pty.screen.line(i))
+                          for i in range(1, pty.screen.cursor.y))
             self.ae(q, 'ok')
             self.ae(pty.last_cmd_output(), q)
 
             # resize and redraw (fish_handle_reflow)
             pty.write_to_child(r'echo $COLUMNS')
             pty.set_window_size(rows=20, columns=40)
-            q = fish_prompt + 'echo $COLUMNS' + ' ' * (40 - len(fish_prompt) - len(right_prompt) - len('echo $COLUMNS')) + right_prompt
+            q = fish_prompt + 'echo $COLUMNS' + ' ' * (40 - len(fish_prompt) - len(
+                right_prompt) - len('echo $COLUMNS')) + right_prompt
             pty.process_input_from_child()
 
             def redrawn():
@@ -211,21 +231,25 @@ function _set_status_prompt; function fish_prompt; echo -n "$pipestatus $status 
             pty.wait_till(redrawn)
             self.ae(q, str(pty.screen.line(pty.screen.cursor.y)))
             pty.write_to_child('\r')
-            pty.wait_till(lambda: pty.screen_contents().count(right_prompt) == 3)
+            pty.wait_till(
+                lambda: pty.screen_contents().count(right_prompt) == 3)
             self.ae('40', str(pty.screen.line(pty.screen.cursor.y - 1)))
             self.ae(q, str(pty.screen.line(pty.screen.cursor.y - 2)))
 
             # cursor shapes
             pty.send_cmd_to_child('clear')
-            q = fish_prompt + ' ' * (pty.screen.columns - len(fish_prompt) - len(right_prompt)) + right_prompt
+            q = fish_prompt + ' ' * (pty.screen.columns - len(fish_prompt) -
+                                     len(right_prompt)) + right_prompt
             pty.wait_till(lambda: pty.screen_contents() == q)
             pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
             pty.send_cmd_to_child('echo; cat')
-            pty.wait_till(lambda: pty.screen.cursor.shape == 0 and pty.screen.cursor.y > 1)
+            pty.wait_till(lambda: pty.screen.cursor.shape ==
+                          0 and pty.screen.cursor.y > 1)
             pty.write_to_child('\x04')
             pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
             pty.send_cmd_to_child('_set_key vi')
-            pty.wait_till(lambda: pty.screen_contents().count(right_prompt) == 3)
+            pty.wait_till(
+                lambda: pty.screen_contents().count(right_prompt) == 3)
             pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
             pty.write_to_child('\x1b')
             pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BLOCK)
@@ -236,12 +260,14 @@ function _set_status_prompt; function fish_prompt; echo -n "$pipestatus $status 
             pty.write_to_child('i')
             pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
             pty.send_cmd_to_child('_set_key default')
-            pty.wait_till(lambda: pty.screen_contents().count(right_prompt) == 4)
+            pty.wait_till(
+                lambda: pty.screen_contents().count(right_prompt) == 4)
             pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
 
             pty.send_cmd_to_child('exit')
 
-    @unittest.skipUnless(bash_ok(), 'bash not installed, too old, or debug build')
+    @unittest.skipUnless(bash_ok(),
+                         'bash not installed, too old, or debug build')
     def test_bash_integration(self):
         ps1 = 'prompt> '
         with self.run_shell(
@@ -253,16 +279,20 @@ PS1="{ps1}"
             try:
                 pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
             except TimeoutError as e:
-                raise AssertionError(f'Cursor was not changed to beam. Screen contents: {repr(pty.screen_contents())}') from e
+                raise AssertionError(
+                    f'Cursor was not changed to beam. Screen contents: {repr(pty.screen_contents())}') from e
             pty.wait_till(lambda: pty.screen_contents().count(ps1) == 1)
             self.ae(pty.screen_contents(), ps1)
             pty.wait_till(lambda: pty.callbacks.titlebuf[-1:] == ['~'])
             self.ae(pty.callbacks.titlebuf[-1], '~')
             pty.callbacks.clear()
             pty.send_cmd_to_child('mkdir test && ls -a')
-            pty.wait_till(lambda: pty.callbacks.titlebuf[-2:] == ['mkdir test && ls -a', '~'])
+            pty.wait_till(
+                lambda: pty.callbacks.titlebuf[-2:] ==
+                ['mkdir test && ls -a', '~'])
             pty.wait_till(lambda: pty.screen_contents().count(ps1) == 2)
-            q = '\n'.join(str(pty.screen.line(i)) for i in range(1, pty.screen.cursor.y))
+            q = '\n'.join(str(pty.screen.line(i))
+                          for i in range(1, pty.screen.cursor.y))
             self.ae(pty.last_cmd_output(), q)
             # shrink the screen
             pty.write_to_child(r'echo $COLUMNS')
@@ -274,11 +304,15 @@ PS1="{ps1}"
                 return '$COLUMNS' in q and q.count(ps1) == 2
 
             pty.wait_till(redrawn)
-            self.ae(ps1 + 'echo $COLUMNS', str(pty.screen.line(pty.screen.cursor.y)))
+            self.ae(
+                ps1 + 'echo $COLUMNS',
+                str(pty.screen.line(pty.screen.cursor.y)))
             pty.write_to_child('\r')
             pty.wait_till(lambda: pty.screen_contents().count(ps1) == 3)
             self.ae('40', str(pty.screen.line(pty.screen.cursor.y - 1)))
-            self.ae(ps1 + 'echo $COLUMNS', str(pty.screen.line(pty.screen.cursor.y - 2)))
+            self.ae(
+                ps1 + 'echo $COLUMNS',
+                str(pty.screen.line(pty.screen.cursor.y - 2)))
             pty.send_cmd_to_child('clear')
             pty.wait_till(lambda: pty.screen_contents() == ps1)
             pty.wait_till(lambda: pty.screen.cursor.shape == CURSOR_BEAM)
@@ -297,8 +331,11 @@ PS1="{ps1}"
             pty.callbacks.clear()
             pty.send_cmd_to_child('printf "%s\x16\a%s" "a" "b"')
             pty.wait_till(lambda: pty.screen_contents().count(ps1) == 2)
-            self.ae(pty.screen_contents(), f'{ps1}printf "%s^G%s" "a" "b"\nab{ps1}')
-            self.assertTrue(pty.screen.last_reported_cwd.endswith(self.home_dir))
+            self.ae(
+                pty.screen_contents(),
+                f'{ps1}printf "%s^G%s" "a" "b"\nab{ps1}')
+            self.assertTrue(pty.screen.last_reported_cwd.endswith(
+                self.home_dir))
             pty.send_cmd_to_child('echo $HISTFILE')
             pty.wait_till(lambda: '.bash_history' in pty.screen_contents())
             q = os.path.join(self.home_dir, 'testing-cwd-notification-🐱')
@@ -326,18 +363,24 @@ PS1="{ps1}"
                 pty.set_window_size(rows=20, columns=40)
                 pty.process_input_from_child()
                 pty.wait_till(redrawn)
-                self.ae(ps1.splitlines()[-1] + 'echo $COLUMNS', str(pty.screen.line(pty.screen.cursor.y)))
+                self.ae(
+                    ps1.splitlines()[-1] + 'echo $COLUMNS',
+                    str(pty.screen.line(pty.screen.cursor.y)))
                 pty.write_to_child('\r')
                 pty.wait_till(lambda: pty.screen_contents().count(ps1) == 3)
-                self.ae('40', str(pty.screen.line(pty.screen.cursor.y - len(ps1.splitlines()))))
-                self.ae(ps1.splitlines()[-1] + 'echo $COLUMNS', str(pty.screen.line(pty.screen.cursor.y - 1 - len(ps1.splitlines()))))
+                self.ae('40', str(pty.screen.line(
+                    pty.screen.cursor.y - len(ps1.splitlines()))))
+                self.ae(ps1.splitlines()[-1] + 'echo $COLUMNS', str(
+                    pty.screen.line(pty.screen.cursor.y - 1 - len(ps1.splitlines()))))
 
         # test startup file sourcing
 
         def setup_env(excluded, argv, home_dir, rc='', shell='bash'):
             ans = basic_shell_env(home_dir)
             setup_bash_env(ans, argv)
-            for x in {'profile', 'bash.bashrc', '.bash_profile', '.bash_login', '.profile', '.bashrc', 'rcfile'} - excluded:
+            for x in {
+                'profile', 'bash.bashrc', '.bash_profile', '.bash_login',
+                    '.profile', '.bashrc', 'rcfile'} - excluded:
                 with open(os.path.join(home_dir, x), 'w') as f:
                     if x == '.bashrc' and rc:
                         print(rc, file=f)
@@ -347,7 +390,9 @@ PS1="{ps1}"
             ans['PS1'] = 'PROMPT $ '
             return ans
 
-        def run_test(argv, *expected, excluded=(), rc='', wait_string='PROMPT $', assert_not_in=False):
+        def run_test(
+                argv, *expected, excluded=(),
+                rc='', wait_string='PROMPT $', assert_not_in=False):
             with self.subTest(argv=argv), self.run_shell(shell='bash', setup_env=partial(setup_env, set(excluded)), cmd=argv, rc=rc) as pty:
                 pty.wait_till(lambda: wait_string in pty.screen_contents())
                 q = pty.screen_contents()
@@ -363,14 +408,22 @@ PS1="{ps1}"
         run_test('bash --norc')
         run_test('bash -l', 'profile', '.bash_profile')
         run_test('bash --noprofile -l')
-        run_test('bash -l', 'profile', '.bash_login', excluded=('.bash_profile',))
-        run_test('bash -l', 'profile', '.profile', excluded=('.bash_profile', '.bash_login'))
+        run_test('bash -l', 'profile', '.bash_login',
+                 excluded=('.bash_profile',))
+        run_test('bash -l', 'profile', '.profile',
+                 excluded=('.bash_profile', '.bash_login'))
 
         # test argument parsing and non-interactive shell
-        run_test('bash -s arg1 --rcfile rcfile', 'rcfile', rc='echo ok;read', wait_string='ok', assert_not_in=True)
-        run_test('bash +O login_shell -ic "echo ok;read"', 'bash.bashrc', excluded=('.bash_profile'), wait_string='ok', assert_not_in=True)
-        run_test('bash -l .bashrc', 'profile', rc='echo ok;read', wait_string='ok', assert_not_in=True)
-        run_test('bash -il -- .bashrc', 'profile', rc='echo ok;read', wait_string='ok')
+        run_test('bash -s arg1 --rcfile rcfile', 'rcfile',
+                 rc='echo ok;read', wait_string='ok', assert_not_in=True)
+        run_test(
+            'bash +O login_shell -ic "echo ok;read"', 'bash.bashrc',
+            excluded=('.bash_profile'),
+            wait_string='ok', assert_not_in=True)
+        run_test('bash -l .bashrc', 'profile', rc='echo ok;read',
+                 wait_string='ok', assert_not_in=True)
+        run_test('bash -il -- .bashrc', 'profile',
+                 rc='echo ok;read', wait_string='ok')
 
         with self.run_shell(
             shell='bash', setup_env=partial(setup_env, set()), cmd='bash', rc=f'''PS1="{ps1}"\nexport ES=$'a\n `b` c\n$d'\nexport ES2="XXX" '''
@@ -379,8 +432,11 @@ PS1="{ps1}"
             pty.send_cmd_to_child('clone-in-smelly')
             pty.wait_till(lambda: len(pty.callbacks.clone_cmds) == 1)
             env = pty.callbacks.clone_cmds[0].env
-            self.ae(env.get('ES'), 'a\n `b` c\n$d', f'Screen contents: {pty.screen_contents()!r}')
-            self.ae(env.get('ES2'), 'XXX', f'Screen contents: {pty.screen_contents()!r}')
+            self.ae(env.get('ES'), 'a\n `b` c\n$d',
+                    f'Screen contents: {pty.screen_contents()!r}')
+            self.ae(
+                env.get('ES2'),
+                'XXX', f'Screen contents: {pty.screen_contents()!r}')
         for q, e in {
             'a': 'a',
             r'a\ab': 'a\ab',
@@ -390,4 +446,5 @@ PS1="{ps1}"
             r'a\c b': 'a\0b',
         }.items():
             q = q + "'"
-            self.ae(decode_ansi_c_quoted_string(q, 0)[0], e, f'Failed to decode: {q!r}')
+            self.ae(decode_ansi_c_quoted_string(q, 0)[
+                    0], e, f'Failed to decode: {q!r}')

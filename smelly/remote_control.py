@@ -61,13 +61,18 @@ def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str
     pcmd.pop('password', None)
     if 'encrypted' in pcmd:
         if pcmd.get('enc_proto', '1') != RC_ENCRYPTION_PROTOCOL_VERSION:
-            log_error(f'Ignoring encrypted rc command with unsupported protocol: {pcmd.get("enc_proto")}')
+            log_error(
+                f'Ignoring encrypted rc command with unsupported protocol: {pcmd.get("enc_proto")}')
             return {}
         pubkey = pcmd.get('pubkey', '')
         if not pubkey:
             log_error('Ignoring encrypted rc command without a public key')
-        d = AES256GCMDecrypt(encryption_key.derive_secret(base64.b85decode(pubkey)), base64.b85decode(pcmd['iv']), base64.b85decode(pcmd['tag']))
-        data = d.add_data_to_be_decrypted(base64.b85decode(pcmd['encrypted']), True)
+        d = AES256GCMDecrypt(encryption_key.derive_secret(
+            base64.b85decode(pubkey)),
+            base64.b85decode(pcmd['iv']),
+            base64.b85decode(pcmd['tag']))
+        data = d.add_data_to_be_decrypted(
+            base64.b85decode(pcmd['encrypted']), True)
         pcmd = json.loads(data)
         if not isinstance(pcmd, dict) or 'version' not in pcmd:
             return {}
@@ -82,7 +87,10 @@ def parse_cmd(serialized_cmd: str, encryption_key: EllipticCurveKey) -> Dict[str
 
 
 class CMDChecker:
-    def __call__(self, pcmd: Dict[str, Any], window: Optional['Window'], from_socket: bool, extra_data: Dict[str, Any]) -> Optional[bool]:
+    def __call__(
+            self, pcmd: Dict[str, Any],
+            window: Optional['Window'],
+            from_socket: bool, extra_data: Dict[str, Any]) -> Optional[bool]:
         return False
 
 
@@ -94,7 +102,8 @@ def is_cmd_allowed_loader(path: str) -> CMDChecker:
         m = runpy.run_path(path)
         func: CMDChecker = m['is_cmd_allowed']
     except Exception as e:
-        log_error(f'Failed to load cmd check function from {path} with error: {e}')
+        log_error(
+            f'Failed to load cmd check function from {path} with error: {e}')
         func = CMDChecker()
     return func
 
@@ -118,7 +127,10 @@ class PasswordAuthorizer:
             else:
                 self.command_patterns.append(fnmatch_pattern(item))
 
-    def is_cmd_allowed(self, pcmd: Dict[str, Any], window: Optional['Window'], from_socket: bool, extra_data: Dict[str, Any]) -> bool:
+    def is_cmd_allowed(
+            self, pcmd: Dict[str, Any],
+            window: Optional['Window'],
+            from_socket: bool, extra_data: Dict[str, Any]) -> bool:
         cmd_name = pcmd.get('cmd')
         if not cmd_name:
             return False
@@ -134,7 +146,8 @@ class PasswordAuthorizer:
                 import traceback
 
                 traceback.print_exc()
-                log_error(f'There was an error using a custom RC auth function, blocking the remote command. Error: {e}')
+                log_error(
+                    f'There was an error using a custom RC auth function, blocking the remote command. Error: {e}')
                 ret = False
             if ret is not None:
                 return ret
@@ -149,7 +162,10 @@ def password_authorizer(auth_items: FrozenSet[str]) -> PasswordAuthorizer:
 user_password_allowed: Dict[str, bool] = {}
 
 
-def is_cmd_allowed(pcmd: Dict[str, Any], window: Optional['Window'], from_socket: bool, extra_data: Dict[str, Any]) -> Optional[bool]:
+def is_cmd_allowed(
+        pcmd: Dict[str, Any],
+        window: Optional['Window'],
+        from_socket: bool, extra_data: Dict[str, Any]) -> Optional[bool]:
     sid = pcmd.get('stream_id', '')
     if sid and active_streams.get(sid, '') == pcmd['cmd']:
         return True
@@ -212,14 +228,16 @@ def handle_cmd(
         payload['async_id'] = async_id
         if 'cancel_async' in cmd:
             active_async_requests.pop(async_id, None)
-            c.cancel_async_request(boss, self_window or window, PayloadGetter(c, payload))
+            c.cancel_async_request(
+                boss, self_window or window, PayloadGetter(c, payload))
             return None
         active_async_requests[async_id] = monotonic()
         if len(active_async_requests) > 32:
             oldest = next(iter(active_async_requests))
             del active_async_requests[oldest]
     try:
-        ans = c.response_from_smelly(boss, self_window or window, PayloadGetter(c, payload))
+        ans = c.response_from_smelly(
+            boss, self_window or window, PayloadGetter(c, payload))
     except Exception:
         if no_response:  # don't report errors if --no-response was used
             return None
@@ -333,8 +351,10 @@ class SocketIO:
         m = dcs.search(data)
         if m is None:
             if monotonic() - st > timeout:
-                raise TimeoutError('Timed out while waiting to read cmd response')
-            raise SocketClosed('Remote control connection was closed by smelly without any response being received')
+                raise TimeoutError(
+                    'Timed out while waiting to read cmd response')
+            raise SocketClosed(
+                'Remote control connection was closed by smelly without any response being received')
         return bytes(m.group(1))
 
 
@@ -345,10 +365,14 @@ class RCIO(TTYIO):
         return b''.join(ans)
 
 
-def do_io(to: Optional[str], original_cmd: Dict[str, Any], no_response: bool, response_timeout: float, encrypter: 'CommandEncrypter') -> Dict[str, Any]:
+def do_io(to: Optional[str],
+          original_cmd: Dict[str, Any],
+          no_response: bool, response_timeout: float,
+          encrypter: 'CommandEncrypter') -> Dict[str, Any]:
     payload = original_cmd.get('payload')
     if not isinstance(payload, GeneratorType):
-        send_data: Union[bytes, Iterator[bytes]] = encode_send(encrypter(original_cmd))
+        send_data: Union[bytes, Iterator[bytes]
+                         ] = encode_send(encrypter(original_cmd))
     else:
 
         def send_generator() -> Iterator[bytes]:
@@ -370,17 +394,26 @@ def do_io(to: Optional[str], original_cmd: Dict[str, Any], no_response: bool, re
 
 
 cli_msg = (
-    'Control {appname} by sending it commands. Set the' ' :opt:`allow_remote_control` option in :file:`smelly.conf` or use a password, for this' ' to work.'
-).format(appname=appname)
+    'Control {appname} by sending it commands. Set the'
+    ' :opt:`allow_remote_control` option in :file:`smelly.conf` or use a password, for this'
+    ' to work.').format(
+    appname=appname)
 
 
 def parse_rc_args(args: List[str]) -> Tuple[RCOptions, List[str]]:
-    cmap = {name: command_for_name(name) for name in sorted(all_command_names())}
-    cmds = (f'  :green:`{cmd.name}`\n    {cmd.short_desc}' for c, cmd in cmap.items())
-    msg = cli_msg + ('\n\n:title:`Commands`:\n{cmds}\n\n' 'You can get help for each individual command by using:\n' '{appname} @ :italic:`command` -h').format(
-        appname=appname, cmds='\n'.join(cmds)
-    )
-    return parse_args(args[1:], global_options_spec, 'command ...', msg, f'{appname} @', result_class=RCOptions)
+    cmap = {name: command_for_name(name)
+            for name in sorted(all_command_names())}
+    cmds = (
+        f'  :green:`{cmd.name}`\n    {cmd.short_desc}' for c, cmd in cmap.items())
+    msg = cli_msg + (
+        '\n\n:title:`Commands`:\n{cmds}\n\n'
+        'You can get help for each individual command by using:\n'
+        '{appname} @ :italic:`command` -h').format(appname=appname,
+                                                   cmds='\n'.join(cmds))
+    return parse_args(
+        args[1:],
+        global_options_spec, 'command ...', msg, f'{appname} @',
+        result_class=RCOptions)
 
 
 def encode_as_base85(data: bytes) -> str:
@@ -414,7 +447,8 @@ class CommandEncrypter:
             ans['enc_proto'] = self.encryption_version
         return ans
 
-    def adjust_response_timeout_for_password(self, response_timeout: float) -> float:
+    def adjust_response_timeout_for_password(
+            self, response_timeout: float) -> float:
         return max(response_timeout, 120)
 
 
@@ -427,11 +461,13 @@ class NoEncryption(CommandEncrypter):
     def __call__(self, cmd: Dict[str, Any]) -> Dict[str, Any]:
         return cmd
 
-    def adjust_response_timeout_for_password(self, response_timeout: float) -> float:
+    def adjust_response_timeout_for_password(
+            self, response_timeout: float) -> float:
         return response_timeout
 
 
-def create_basic_command(name: str, payload: Any = None, no_response: bool = False, is_asynchronous: bool = False) -> Dict[str, Any]:
+def create_basic_command(name: str, payload: Any = None, no_response: bool = False,
+                         is_asynchronous: bool = False) -> Dict[str, Any]:
     ans = {'cmd': name, 'version': version, 'no_response': no_response}
     if payload is not None:
         ans['payload'] = payload
@@ -442,11 +478,14 @@ def create_basic_command(name: str, payload: Any = None, no_response: bool = Fal
     return ans
 
 
-def send_response_to_client(data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0, async_id: str = '') -> None:
+def send_response_to_client(
+        data: Any = None, error: str = '', peer_id: int = 0, window_id: int = 0,
+        async_id: str = '') -> None:
     if active_async_requests.pop(async_id, None) is None:
         return
     if error:
-        response: Dict[str, Union[bool, int, str]] = {'ok': False, 'error': error}
+        response: Dict[str, Union[bool, int, str]] = {
+            'ok': False, 'error': error}
     else:
         response = {'ok': True, 'data': data}
     if peer_id > 0:
@@ -496,10 +535,12 @@ def get_password(opts: RCOptions) -> str:
 def get_pubkey() -> Tuple[str, bytes]:
     raw = os.environ.get('smelly_PUBLIC_KEY', '')
     if not raw:
-        raise SystemExit('Password usage requested but smelly_PUBLIC_KEY environment variable is not available')
+        raise SystemExit(
+            'Password usage requested but smelly_PUBLIC_KEY environment variable is not available')
     version, pubkey = raw.split(':', 1)
     if version != RC_ENCRYPTION_PROTOCOL_VERSION:
-        raise SystemExit('smelly_PUBLIC_KEY has unknown version, if you are running on a remote system, update smelly on this system')
+        raise SystemExit(
+            'smelly_PUBLIC_KEY has unknown version, if you are running on a remote system, update smelly on this system')
     from base64 import b85decode
 
     return version, b85decode(pubkey)

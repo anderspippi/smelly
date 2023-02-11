@@ -70,7 +70,8 @@ def create_kitten_handler(kitten: str, orig_args: List[str]) -> Any:
     ans = partial(m['end'], [kitten] + orig_args)
     setattr(ans, 'type_of_input', getattr(m['end'], 'type_of_input', None))
     setattr(ans, 'no_ui', getattr(m['end'], 'no_ui', False))
-    setattr(ans, 'has_ready_notification', getattr(m['end'], 'has_ready_notification', False))
+    setattr(ans, 'has_ready_notification', getattr(
+        m['end'], 'has_ready_notification', False))
     return ans
 
 
@@ -126,7 +127,9 @@ def run_kitten(kitten: str, run_name: str = '__main__') -> None:
         for kitten in all_kitten_names():
             print(kitten, file=sys.stderr)
         raise SystemExit(f'No kitten named {original_kitten_name}')
-    m = runpy.run_path(path, init_globals={'sys': sys, 'os': os}, run_name='__run_kitten__')
+    m = runpy.run_path(
+        path, init_globals={'sys': sys, 'os': os},
+        run_name='__run_kitten__')
     from smelly.fast_data_types import set_options
 
     try:

@@ -8,7 +8,8 @@ from typing import Optional
 from .fast_data_types import Color
 
 
-def alpha_blend_channel(top_color: int, bottom_color: int, alpha: float) -> int:
+def alpha_blend_channel(
+        top_color: int, bottom_color: int, alpha: float) -> int:
     return int(alpha * top_color + (1 - alpha) * bottom_color)
 
 
@@ -847,7 +848,9 @@ if __name__ == '__main__':
             r, g, b = map(int, parts[:3])
             name = ' '.join(parts[3:]).lower()
             data[name] = data[name.replace(' ', '')] = r, g, b
-    formatted_data = pprint.pformat(data).replace('{', '{\n ').replace('(', 'Color(')
+    formatted_data = pprint.pformat(data).replace(
+        '{', '{\n ').replace(
+        '(', 'Color(')
     with open(__file__, 'r+') as src:
         raw = src.read()
         raw = re.sub(

@@ -62,14 +62,17 @@ def initialize_mime_database() -> None:
         init((local_defs,))
 
 
-def guess_type(path: str, allow_filesystem_access: bool = False) -> Optional[str]:
+def guess_type(
+        path: str, allow_filesystem_access: bool = False) -> Optional[str]:
     is_dir = is_exe = False
 
     if allow_filesystem_access:
         with suppress(OSError):
             st = os.stat(path)
             is_dir = bool(stat.S_ISDIR(st.st_mode))
-            is_exe = bool(not is_dir and st.st_mode & (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH) and os.access(path, os.X_OK))
+            is_exe = bool(not is_dir and st.st_mode &
+                          (stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
+                          and os.access(path, os.X_OK))
 
     if is_dir:
         return 'inode/directory'

@@ -57,7 +57,8 @@ else:
         icf = ''
         if icon is True:
             icf = logo_png_file
-        alloc_id = dbus_send_notification(application, icf, title, body, 'Click to see changes', timeout)
+        alloc_id = dbus_send_notification(
+            application, icf, title, body, 'Click to see changes', timeout)
         if alloc_id and identifier is not None:
             alloc_map[alloc_id] = identifier
 
@@ -130,7 +131,8 @@ def parse_osc_99(raw: str) -> NotificationCommand:
         try:
             payload = standard_b64decode(payload).decode('utf-8')
         except Exception:
-            log_error('Malformed OSC 99: payload is not base64 encoded UTF-8 text')
+            log_error(
+                'Malformed OSC 99: payload is not base64 encoded UTF-8 text')
             return NotificationCommand()
     if payload_type == 'title':
         cmd.title = payload
@@ -176,13 +178,18 @@ class RegisteredNotification:
         self.identifier = cmd.identifier
 
 
-def register_identifier(identifier: str, cmd: NotificationCommand, window_id: int) -> None:
+def register_identifier(
+        identifier: str, cmd: NotificationCommand, window_id: int) -> None:
     identifier_registry[identifier] = RegisteredNotification(cmd, window_id)
     if len(identifier_registry) > 100:
         identifier_registry.popitem(False)
 
 
-def notification_activated(identifier: str, activated_implementation: Optional[Callable[[str, int, bool, bool], None]] = None) -> None:
+def notification_activated(
+        identifier: str,
+        activated_implementation:
+        Optional[Callable[[str, int, bool, bool],
+                          None]] = None) -> None:
     if identifier == 'new-version':
         from .update_check import notification_activated as do
 
@@ -195,7 +202,8 @@ def notification_activated(identifier: str, activated_implementation: Optional[C
             if activated_implementation is None:
                 get_boss().notification_activated(r.identifier, r.window_id, r.focus, r.report)
             else:
-                activated_implementation(r.identifier, r.window_id, r.focus, r.report)
+                activated_implementation(
+                    r.identifier, r.window_id, r.focus, r.report)
 
 
 def reset_registry() -> None:
@@ -204,7 +212,9 @@ def reset_registry() -> None:
     id_counter = count()
 
 
-def notify_with_command(cmd: NotificationCommand, window_id: int, notify_implementation: NotifyImplementation = notify_implementation) -> None:
+def notify_with_command(cmd: NotificationCommand, window_id: int,
+                        notify_implementation:
+                        NotifyImplementation = notify_implementation) -> None:
     title = cmd.title or cmd.body
     body = cmd.body if cmd.title else ''
     if title:

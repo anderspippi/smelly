@@ -68,7 +68,8 @@ class Child:
     child_process_pid: int
 
 
-def wait_for_child_death(child_pid: int, timeout: float = 1, options: int = 0) -> Optional[int]:
+def wait_for_child_death(
+        child_pid: int, timeout: float = 1, options: int = 0) -> Optional[int]:
     st = time.monotonic()
     while not timeout or time.monotonic() - st < timeout:
         try:
@@ -103,7 +104,8 @@ class PrewarmProcess:
     def take_from_worker_fd(self, create_file: bool = False) -> int:
         if create_file:
             os.set_blocking(self.from_prewarm_death_notify, True)
-            self.from_worker = open(self.from_prewarm_death_notify, mode='r', closefd=True)
+            self.from_worker = open(
+                self.from_prewarm_death_notify, mode='r', closefd=True)
             self.from_prewarm_death_notify = -1
             return -1
         ans, self.from_prewarm_death_notify = self.from_prewarm_death_notify, -1
@@ -125,7 +127,8 @@ class PrewarmProcess:
             del self.from_worker
         if self.worker_pid > 0:
             if wait_for_child_death(self.worker_pid) is None:
-                log_error('Prewarm process failed to quit gracefully, killing it')
+                log_error(
+                    'Prewarm process failed to quit gracefully, killing it')
                 os.kill(self.worker_pid, signal.SIGKILL)
                 os.waitpid(self.worker_pid, 0)
 
@@ -138,7 +141,8 @@ class PrewarmProcess:
     def reload_smelly_config(self, opts: Optional[Options] = None) -> None:
         if opts is None:
             opts = get_options()
-        data = json.dumps({'paths': opts.config_paths, 'overrides': opts.config_overrides})
+        data = json.dumps({'paths': opts.config_paths,
+                          'overrides': opts.config_overrides})
         if self.write_to_process_fd > -1:
             self.send_to_prewarm_process(f'reload_smelly_config:{data}\n')
 
@@ -179,27 +183,32 @@ class PrewarmProcess:
             while time.monotonic() - st < timeout:
                 for fd, event in self.poll.poll(2):
                     if event & error_events:
-                        raise PrewarmProcessFailed('Failed doing I/O with prewarm process')
+                        raise PrewarmProcessFailed(
+                            'Failed doing I/O with prewarm process')
                     if fd == self.read_from_process_fd and event & select.POLLIN:
-                        d = os.read(self.read_from_process_fd, io.DEFAULT_BUFFER_SIZE)
+                        d = os.read(self.read_from_process_fd,
+                                    io.DEFAULT_BUFFER_SIZE)
                         input_buf += d
                         while (idx := input_buf.find(b'\n')) > -1:
                             line = input_buf[:idx].decode()
-                            input_buf = input_buf[idx + 1 :]
+                            input_buf = input_buf[idx + 1:]
                             if line.startswith('CHILD:'):
                                 _, cid, pid = line.split(':')
                                 child = self.add_child(int(cid), int(pid))
                                 shm.unlink_on_exit = False
                                 return child
                             if line.startswith('ERR:'):
-                                raise PrewarmProcessFailed(line.split(':', 1)[-1])
-        raise PrewarmProcessFailed('Timed out waiting for I/O with prewarm process')
+                                raise PrewarmProcessFailed(
+                                    line.split(':', 1)[-1])
+        raise PrewarmProcessFailed(
+            'Timed out waiting for I/O with prewarm process')
 
     def add_child(self, child_id: int, pid: int) -> Child:
         self.children[child_id] = c = Child(child_id, pid)
         return c
 
-    def send_to_prewarm_process(self, output_buf: Union[str, bytes] = b'', timeout: float = TIMEOUT) -> None:
+    def send_to_prewarm_process(self, output_buf: Union[str, bytes] = b'',
+                                timeout: float = TIMEOUT) -> None:
         if isinstance(output_buf, str):
             output_buf = output_buf.encode()
         st = time.monotonic()
@@ -207,13 +216,15 @@ class PrewarmProcess:
             self.poll_to_send(bool(output_buf))
             for fd, event in self.poll.poll(2):
                 if event & error_events:
-                    raise PrewarmProcessFailed(f'Failed doing I/O with prewarm process: {event}')
+                    raise PrewarmProcessFailed(
+                        f'Failed doing I/O with prewarm process: {event}')
                 if fd == self.write_to_process_fd and event & select.POLLOUT:
                     n = os.write(self.write_to_process_fd, output_buf)
                     output_buf = output_buf[n:]
         self.poll_to_send(False)
         if output_buf:
-            raise PrewarmProcessFailed('Timed out waiting to write to prewarm process')
+            raise PrewarmProcessFailed(
+                'Timed out waiting to write to prewarm process')
 
     def mark_child_as_ready(self, child_id: int) -> bool:
         c = self.children.pop(child_id, None)
@@ -253,7 +264,7 @@ class MemoryViewReadWrapperBytes(io.BufferedIOBase):
         self.pos = min(len(self.mw), self.pos + size)
         if self.pos <= oldpos:
             return b''
-        return bytes(self.mw[oldpos : self.pos])
+        return bytes(self.mw[oldpos: self.pos])
 
     def readinto(self, b: 'WriteableBuffer') -> int:
         if not isinstance(b, memoryview):
@@ -278,7 +289,10 @@ class MemoryViewReadWrapperBytes(io.BufferedIOBase):
 
 class MemoryViewReadWrapper(io.TextIOWrapper):
     def __init__(self, mw: memoryview):
-        super().__init__(cast(IO[bytes], MemoryViewReadWrapperBytes(mw)), encoding='utf-8', errors='replace')
+        super().__init__(
+            cast(IO[bytes],
+                 MemoryViewReadWrapperBytes(mw)),
+            encoding='utf-8', errors='replace')
 
 
 parent_tty_name = ''
@@ -291,7 +305,9 @@ def debug(*a: Any) -> None:
             print(*a, file=f)
 
 
-def child_main(cmd: Dict[str, Any], ready_fd: int = -1, prewarm_type: str = 'direct') -> NoReturn:
+def child_main(
+        cmd: Dict[str, Any],
+        ready_fd: int = -1, prewarm_type: str = 'direct') -> NoReturn:
     getattr(sys, 'smelly_run_data')['prewarmed'] = prewarm_type
     cwd = cmd.get('cwd')
     if cwd:
@@ -364,13 +380,16 @@ def fork(shm_address: str, free_non_child_resources: Callable[[], None]) -> Tupl
     if tty_name:
         sys.__stdout__.flush()
         sys.__stderr__.flush()
-        establish_controlling_tty(tty_name, sys.__stdin__.fileno(), sys.__stdout__.fileno(), sys.__stderr__.fileno())
+        establish_controlling_tty(
+            tty_name, sys.__stdin__.fileno(),
+            sys.__stdout__.fileno(),
+            sys.__stderr__.fileno())
     safe_close(w)
     if shm.unlink_on_exit:
         child_main(cmd, ready_fd_read)
     else:
         with SharedMemory(shm_address, unlink_on_exit=True) as shm:
-            stdin_data = memoryview(shm.mmap)[pos : pos + sz]
+            stdin_data = memoryview(shm.mmap)[pos: pos + sz]
             if stdin_data:
                 sys.stdin = MemoryViewReadWrapper(stdin_data)
             try:
@@ -399,8 +418,11 @@ safe_ioctl = eintr_retry(fcntl.ioctl)
 safe_dup2 = eintr_retry(os.dup2)
 
 
-def establish_controlling_tty(fd_or_tty_name: Union[str, int], *dups: int, closefd: bool = True) -> int:
-    tty_name = os.ttyname(fd_or_tty_name) if isinstance(fd_or_tty_name, int) else fd_or_tty_name
+def establish_controlling_tty(
+        fd_or_tty_name: Union[str, int],
+        *dups: int, closefd: bool = True) -> int:
+    tty_name = os.ttyname(fd_or_tty_name) if isinstance(
+        fd_or_tty_name, int) else fd_or_tty_name
     with open(safe_open(tty_name, os.O_RDWR | os.O_CLOEXEC), 'w', closefd=closefd) as f:
         tty_fd = f.fileno()
         safe_ioctl(tty_fd, termios.TIOCSCTTY, 0)
@@ -409,7 +431,8 @@ def establish_controlling_tty(fd_or_tty_name: Union[str, int], *dups: int, close
         return -1 if closefd else tty_fd
 
 
-interactive_and_job_control_signals = (signal.SIGINT, signal.SIGQUIT, signal.SIGTSTP, signal.SIGTTIN, signal.SIGTTOU)
+interactive_and_job_control_signals = (
+    signal.SIGINT, signal.SIGQUIT, signal.SIGTSTP, signal.SIGTTIN, signal.SIGTTOU)
 
 
 def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
@@ -462,7 +485,7 @@ def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
         input_buf += d
         while (idx := input_buf.find(b'\n')) > -1:
             line = input_buf[:idx].decode()
-            input_buf = input_buf[idx + 1 :]
+            input_buf = input_buf[idx + 1:]
             cmd, _, payload = line.partition(':')
             if cmd == 'reload_smelly_config':
                 reload_smelly_config(payload)
@@ -475,7 +498,8 @@ def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
                 raise SystemExit(0)
             elif cmd == 'fork':
                 try:
-                    child_pid, ready_fd_write = fork(payload, free_non_child_resources)
+                    child_pid, ready_fd_write = fork(
+                        payload, free_non_child_resources)
                 except Exception as e:
                     es = str(e).replace('\n', ' ')
                     output_buf += f'ERR:{es}\n'.encode()
@@ -527,7 +551,8 @@ def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
             return
 
         def handle_signal(siginfo: SignalInfo) -> None:
-            if siginfo.si_signo != signal.SIGCHLD or siginfo.si_code not in (CLD_KILLED, CLD_EXITED, CLD_STOPPED):
+            if siginfo.si_signo != signal.SIGCHLD or siginfo.si_code not in (
+                    CLD_KILLED, CLD_EXITED, CLD_STOPPED):
                 return
             while True:
                 try:
@@ -574,7 +599,8 @@ def main(stdin_fd: int, stdout_fd: int, notify_child_death_fd: int) -> None:
                     safe_close(fmd)
 
 
-def exec_main(stdin_read: int, stdout_write: int, death_notify_write: int) -> None:
+def exec_main(
+        stdin_read: int, stdout_write: int, death_notify_write: int) -> None:
     os.setsid()
     os.set_inheritable(stdin_read, False)
     os.set_inheritable(stdout_write, False)
@@ -589,7 +615,8 @@ def exec_main(stdin_read: int, stdout_write: int, death_notify_write: int) -> No
         set_options(None)
 
 
-def fork_prewarm_process(opts: Options, use_exec: bool = False) -> Optional[PrewarmProcess]:
+def fork_prewarm_process(
+        opts: Options, use_exec: bool = False) -> Optional[PrewarmProcess]:
     stdin_read, stdin_write = safe_pipe()
     stdout_read, stdout_write = safe_pipe()
     death_notify_read, death_notify_write = safe_pipe()
@@ -597,9 +624,10 @@ def fork_prewarm_process(opts: Options, use_exec: bool = False) -> Optional[Prew
         import subprocess
 
         tp = subprocess.Popen(
-            [smelly_exe(), '+runpy', f'from smelly.prewarm import exec_main; exec_main({stdin_read}, {stdout_write}, {death_notify_write})'],
-            pass_fds=(stdin_read, stdout_write, death_notify_write),
-        )
+            [smelly_exe(),
+             '+runpy',
+             f'from smelly.prewarm import exec_main; exec_main({stdin_read}, {stdout_write}, {death_notify_write})'],
+            pass_fds=(stdin_read, stdout_write, death_notify_write),)
         child_pid = tp.pid
         # prevent a warning when the popen object is deleted with the process
         # still running
@@ -613,7 +641,8 @@ def fork_prewarm_process(opts: Options, use_exec: bool = False) -> Optional[Prew
         safe_close(stdin_read)
         safe_close(stdout_write)
         safe_close(death_notify_write)
-        p = PrewarmProcess(child_pid, stdin_write, stdout_read, death_notify_read)
+        p = PrewarmProcess(child_pid, stdin_write,
+                           stdout_read, death_notify_read)
         if use_exec:
             p.reload_smelly_config()
         return p

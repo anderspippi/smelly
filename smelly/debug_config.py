@@ -44,20 +44,28 @@ def print_event(ev: str, defn: str, print: Print) -> None:
     print(f'\t{ev} →  {defn}')
 
 
-def print_mapping_changes(defns: Dict[str, str], changes: Set[str], text: str, print: Print) -> None:
+def print_mapping_changes(
+        defns: Dict[str, str],
+        changes: Set[str],
+        text: str, print: Print) -> None:
     if changes:
         print(title(text))
         for k in sorted(changes):
             print_event(k, defns[k], print)
 
 
-def compare_maps(final: Dict[AnyEvent, str], final_smelly_mod: int, initial: Dict[AnyEvent, str], initial_smelly_mod: int, print: Print) -> None:
+def compare_maps(
+        final: Dict[AnyEvent, str],
+        final_smelly_mod: int, initial: Dict[AnyEvent, str],
+        initial_smelly_mod: int, print: Print) -> None:
     ei = {k.human_repr(initial_smelly_mod): v for k, v in initial.items()}
     ef = {k.human_repr(final_smelly_mod): v for k, v in final.items()}
     added = set(ef) - set(ei)
     removed = set(ei) - set(ef)
     changed = {k for k in set(ef) & set(ei) if ef[k] != ei[k]}
-    which = 'shortcuts' if isinstance(next(iter(initial)), Shortcut) else 'mouse actions'
+    which = 'shortcuts' if isinstance(
+        next(iter(initial)),
+        Shortcut) else 'mouse actions'
     print_mapping_changes(ef, added, f'Added {which}:', print)
     print_mapping_changes(ei, removed, f'Removed {which}:', print)
     print_mapping_changes(ef, changed, f'Changed {which}:', print)
@@ -78,7 +86,9 @@ def compare_opts(opts: smellyOpts, print: Print) -> None:
     print('Config options different from defaults:')
     default_opts = load_config()
     ignored = ('keymap', 'sequence_map', 'mousemap', 'map', 'mouse_map')
-    changed_opts = [f for f in sorted(defaults._fields) if f not in ignored and getattr(opts, f) != getattr(defaults, f)]
+    changed_opts = [
+        f for f in sorted(defaults._fields)
+        if f not in ignored and getattr(opts, f) != getattr(defaults, f)]
     field_len = max(map(len, changed_opts)) if changed_opts else 20
     fmt = f'{{:{field_len:d}s}}'
     colors = []
@@ -97,21 +107,28 @@ def compare_opts(opts: smellyOpts, print: Print) -> None:
         else:
             val = getattr(opts, f)
             if isinstance(val, Color):
-                colors.append(fmt.format(f) + ' ' + color_as_sharp(val) + ' ' + styled('  ', bg=val))
+                colors.append(
+                    fmt.format(f) + ' ' + color_as_sharp(val) + ' ' +
+                    styled('  ', bg=val))
             else:
                 if f == 'smelly_mod':
-                    print(fmt.format(f), '+'.join(mod_to_names(getattr(opts, f))))
+                    print(
+                        fmt.format(f),
+                        '+'.join(mod_to_names(getattr(opts, f))))
                 else:
                     print(fmt.format(f), str(getattr(opts, f)))
 
-    compare_maps(opts.mousemap, opts.smelly_mod, default_opts.mousemap, default_opts.smelly_mod, print)
+    compare_maps(opts.mousemap, opts.smelly_mod,
+                 default_opts.mousemap, default_opts.smelly_mod, print)
     final_, initial_ = opts.keymap, default_opts.keymap
     final: ShortcutMap = {Shortcut((k,)): v for k, v in final_.items()}
     initial: ShortcutMap = {Shortcut((k,)): v for k, v in initial_.items()}
-    final_s, initial_s = map(flatten_sequence_map, (opts.sequence_map, default_opts.sequence_map))
+    final_s, initial_s = map(flatten_sequence_map,
+                             (opts.sequence_map, default_opts.sequence_map))
     final.update(final_s)
     initial.update(initial_s)
-    compare_maps(final, opts.smelly_mod, initial, default_opts.smelly_mod, print)
+    compare_maps(final, opts.smelly_mod, initial,
+                 default_opts.smelly_mod, print)
     if colors:
         print(f'{title("Colors")}:', end='\n\t')
         print('\n\t'.join(sorted(colors)))
@@ -183,7 +200,8 @@ def debug_config(opts: smellyOpts) -> str:
     if is_macos:
         import subprocess
 
-        p(' '.join(subprocess.check_output(['sw_vers']).decode('utf-8').splitlines()).strip())
+        p(' '.join(subprocess.check_output(
+            ['sw_vers']).decode('utf-8').splitlines()).strip())
     if os.path.exists('/etc/issue'):
         try:
             idata = IssueData()

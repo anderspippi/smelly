@@ -97,9 +97,9 @@ def edit(args: List[str]) -> None:
         exe = shutil.which(exe) or ''
     if not exe or not os.access(exe, os.X_OK):
         print(
-            'Cannot find an editor on your system. Set the \x1b[33meditor\x1b[39m value in smelly.conf' ' to the absolute path of your editor of choice.',
-            file=sys.stderr,
-        )
+            'Cannot find an editor on your system. Set the \x1b[33meditor\x1b[39m value in smelly.conf'
+            ' to the absolute path of your editor of choice.',
+            file=sys.stderr,)
         from smelly.utils import hold_till_enter
 
         hold_till_enter()
@@ -161,7 +161,8 @@ def namespaced(args: List[str]) -> None:
     else:
         func(args[1:])
         return
-    raise SystemExit(f'{args[1]} is not a known entry point. Choices are: ' + ', '.join(namespaced_entry_points))
+    raise SystemExit(
+        f'{args[1]} is not a known entry point. Choices are: ' + ', '.join(namespaced_entry_points))
 
 
 entry_points = {
@@ -170,7 +171,8 @@ entry_points = {
     'list-fonts': list_fonts,
     '+': namespaced,
 }
-namespaced_entry_points = {k: v for k, v in entry_points.items() if k[0] not in '+@'}
+namespaced_entry_points = {k: v for k,
+                           v in entry_points.items() if k[0] not in '+@'}
 namespaced_entry_points['hold'] = hold
 namespaced_entry_points['complete'] = complete
 namespaced_entry_points['runpy'] = runpy

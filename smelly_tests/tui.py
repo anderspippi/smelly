@@ -13,14 +13,18 @@ class TestTUI(BaseTest):
         le.on_text('abcd', False)
         self.ae(le.cursor_pos, 4)
         for i in range(5):
-            self.assertTrue(le.left()) if i < 4 else self.assertFalse(le.left())
+            self.assertTrue(
+                le.left()) if i < 4 else self.assertFalse(
+                le.left())
             self.ae(le.cursor_pos, max(0, 3 - i))
         self.ae(le.pending_bell, True)
         le.clear()
         le.on_text('abcd', False), le.home()
         self.ae(le.cursor_pos, 0)
         for i in range(5):
-            self.assertTrue(le.right()) if i < 4 else self.assertFalse(le.right())
+            self.assertTrue(
+                le.right()) if i < 4 else self.assertFalse(
+                le.right())
             self.ae(le.cursor_pos, min(4, i + 1))
         self.ae(le.pending_bell, True)
         le.clear()

@@ -8,7 +8,9 @@ from .cli_stub import HintsCLIOptions
 from .typing import MarkType
 
 
-def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType], extra_cli_args: List[str], *a: Any) -> Generator[MarkType, None, None]:
+def mark(text: str, args: HintsCLIOptions, Mark: Type[MarkType],
+         extra_cli_args: List[str],
+         *a: Any) -> Generator[MarkType, None, None]:
     idx = 0
     found_start_line = False
     for m in re.finditer(r'(?m)^.+$', text):

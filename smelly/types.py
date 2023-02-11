@@ -79,9 +79,12 @@ def human_repr_of_single_key(self: 'SingleKey', smelly_mod: int) -> str:
     from .fast_data_types import glfw_get_key_name
 
     names = []
-    names = list(mod_to_names(self.mods, self.defined_with_smelly_mod, smelly_mod))
+    names = list(
+        mod_to_names(
+            self.mods, self.defined_with_smelly_mod, smelly_mod))
     if self.key > 0:
-        kname = (glfw_get_key_name(0, self.key) if self.is_native else glfw_get_key_name(self.key, 0)) or f'{self.key}'
+        kname = (glfw_get_key_name(0, self.key) if self.is_native else glfw_get_key_name(
+            self.key, 0)) or f'{self.key}'
         kname = {' ': 'space'}.get(kname, kname)
         names.append(kname)
     return '+'.join(names)
@@ -91,7 +94,8 @@ class Shortcut(NamedTuple):
     keys: Tuple['SingleKey', ...]
 
     def human_repr(self, smelly_mod: int = 0) -> str:
-        return ' > '.join(human_repr_of_single_key(k, smelly_mod) for k in self.keys)
+        return ' > '.join(human_repr_of_single_key(k, smelly_mod)
+                          for k in self.keys)
 
 
 class MouseEvent(NamedTuple):
@@ -109,11 +113,13 @@ class MouseEvent(NamedTuple):
             return button_map.get(name, name)
 
         def mouse_trigger_count_to_name(count: int) -> str:
-            trigger_count_map = {str(v): k for k, v in mouse_trigger_count_map.items()}
+            trigger_count_map = {
+                str(v): k for k, v in mouse_trigger_count_map.items()}
             k = str(count)
             return trigger_count_map.get(k, k)
 
-        names = list(mod_to_names(self.mods)) + [mouse_button_num_to_name(self.button)]
+        names = list(mod_to_names(self.mods)
+                     ) + [mouse_button_num_to_name(self.button)]
         when = mouse_trigger_count_to_name(self.repeat_count)
         grabbed = 'grabbed' if self.grabbed else 'ungrabbed'
         return ' '.join(('+'.join(names), when, grabbed))
@@ -213,7 +219,8 @@ def modmap() -> Dict[str, int]:
 if TYPE_CHECKING:
     from typing import Literal
 
-    ActionGroup = Literal['cp', 'sc', 'win', 'tab', 'mouse', 'mk', 'lay', 'misc', 'debug']
+    ActionGroup = Literal['cp', 'sc', 'win', 'tab',
+                          'mouse', 'mk', 'lay', 'misc', 'debug']
 else:
     ActionGroup = str
 

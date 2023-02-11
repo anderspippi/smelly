@@ -30,7 +30,8 @@ from typing import (
 def contents(package: str) -> Iterator[str]:
     try:
         if sys.version_info[:2] < (3, 10):
-            raise ImportError('importlib.resources.files() doesnt work with frozen builds on python 3.9')
+            raise ImportError(
+                'importlib.resources.files() doesnt work with frozen builds on python 3.9')
         from importlib.resources import files
     except ImportError:
         from importlib.resources import contents
@@ -55,7 +56,8 @@ def itertests(suite: unittest.TestSuite) -> Generator[unittest.TestCase, None, N
 def find_all_tests(package: str = '', excludes: Sequence[str] = ('main', 'gr')) -> unittest.TestSuite:
     suits = []
     if not package:
-        package = __name__.rpartition('.')[0] if '.' in __name__ else 'smelly_tests'
+        package = __name__.rpartition(
+            '.')[0] if '.' in __name__ else 'smelly_tests'
     for x in contents(package):
         name, ext = os.path.splitext(x)
         if ext in ('.py', '.pyc') and name not in excludes:
@@ -64,7 +66,9 @@ def find_all_tests(package: str = '', excludes: Sequence[str] = ('main', 'gr')) 
     return unittest.TestSuite(suits)
 
 
-def filter_tests(suite: unittest.TestSuite, test_ok: Callable[[unittest.TestCase], bool]) -> unittest.TestSuite:
+def filter_tests(suite: unittest.TestSuite,
+                 test_ok: Callable[[unittest.TestCase],
+                                   bool]) -> unittest.TestSuite:
     ans = unittest.TestSuite()
     added: Set[unittest.TestCase] = set()
     for test in itertests(suite):
@@ -74,7 +78,8 @@ def filter_tests(suite: unittest.TestSuite, test_ok: Callable[[unittest.TestCase
     return ans
 
 
-def filter_tests_by_name(suite: unittest.TestSuite, *names: str) -> unittest.TestSuite:
+def filter_tests_by_name(
+        suite: unittest.TestSuite, *names: str) -> unittest.TestSuite:
     names_ = {x if x.startswith('test_') else 'test_' + x for x in names}
 
     def q(test: unittest.TestCase) -> bool:
@@ -83,7 +88,8 @@ def filter_tests_by_name(suite: unittest.TestSuite, *names: str) -> unittest.Tes
     return filter_tests(suite, q)
 
 
-def filter_tests_by_module(suite: unittest.TestSuite, *names: str) -> unittest.TestSuite:
+def filter_tests_by_module(
+        suite: unittest.TestSuite, *names: str) -> unittest.TestSuite:
     names_ = frozenset(names)
 
     def q(test: unittest.TestCase) -> bool:
@@ -148,12 +154,15 @@ def run_go(packages: Set[str], names: str) -> 'subprocess.Popen[bytes]':
         cmd.extend(('-run', name))
     cmd += go_pkg_args
     print(shlex.join(cmd), flush=True)
-    return subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    return subprocess.Popen(cmd, stdout=subprocess.PIPE,
+                            stderr=subprocess.STDOUT)
 
 
 def reduce_go_pkgs(module: str, names: Sequence[str]) -> Set[str]:
     if not go_exe():
-        raise SystemExit('go executable not found, current path: ' + repr(os.environ.get('PATH', '')))
+        raise SystemExit(
+            'go executable not found, current path: ' +
+            repr(os.environ.get('PATH', '')))
     go_packages, go_functions = find_testable_go_packages()
     if module:
         go_packages &= {module}
@@ -165,7 +174,8 @@ def reduce_go_pkgs(module: str, names: Sequence[str]) -> Set[str]:
     return go_packages
 
 
-def run_python_tests(args: Any, go_proc: 'Optional[subprocess.Popen[bytes]]' = None) -> None:
+def run_python_tests(
+        args: Any, go_proc: 'Optional[subprocess.Popen[bytes]]' = None) -> None:
     tests = find_all_tests()
 
     def print_go() -> None:
@@ -206,24 +216,22 @@ def run_tests(report_env: bool = False) -> None:
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        'name',
-        nargs='*',
-        default=[],
+        'name', nargs='*', default=[],
         help='The name of the test to run, for e.g. linebuf corresponds to test_linebuf. Can be specified multiple times.'
-        ' For go tests Something corresponds to TestSometing.',
-    )
-    parser.add_argument('--verbosity', default=4, type=int, help='Test verbosity')
+        ' For go tests Something corresponds to TestSometing.',)
+    parser.add_argument('--verbosity', default=4,
+                        type=int, help='Test verbosity')
     parser.add_argument(
-        '--module',
-        default='',
-        help='Name of a test module to restrict to. For example: ssh.' ' For Go tests this is the name of a package, for example: tools/cli',
-    )
+        '--module', default='',
+        help='Name of a test module to restrict to. For example: ssh.'
+        ' For Go tests this is the name of a package, for example: tools/cli',)
     args = parser.parse_args()
     if args.name and args.name[0] in ('type-check', 'type_check', 'mypy'):
         type_check()
     go_pkgs = reduce_go_pkgs(args.module, args.name)
     if go_pkgs:
-        go_proc: 'Optional[subprocess.Popen[bytes]]' = run_go(go_pkgs, args.name)
+        go_proc: 'Optional[subprocess.Popen[bytes]]' = run_go(
+            go_pkgs, args.name)
     else:
         go_proc = None
     with env_for_python_tests(report_env):
@@ -248,9 +256,12 @@ def env_vars(**kw: str) -> Iterator[None]:
 def env_for_python_tests(report_env: bool = False) -> Iterator[None]:
     gohome = os.path.expanduser('~/go')
     current_home = os.path.expanduser('~') + os.sep
-    paths = os.environ.get('PATH', '/usr/local/sbin:/usr/local/bin:/usr/bin').split(os.pathsep)
+    paths = os.environ.get(
+        'PATH', '/usr/local/sbin:/usr/local/bin:/usr/bin').split(os.pathsep)
     path = os.pathsep.join(x for x in paths if not x.startswith(current_home))
-    launcher_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'smelly', 'launcher')
+    launcher_dir = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        'smelly', 'launcher')
     path = f'{launcher_dir}{os.pathsep}{path}'
     python_for_type_check()
     if os.environ.get('CI') == 'true' or report_env:

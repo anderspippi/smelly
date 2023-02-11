@@ -125,7 +125,8 @@ from .utils import (
     sanitize_url_for_dispay_to_user,
 )
 
-MatchPatternType = Union[Pattern[str], Tuple[Pattern[str], Optional[Pattern[str]]]]
+MatchPatternType = Union[Pattern[str],
+                         Tuple[Pattern[str], Optional[Pattern[str]]]]
 
 
 if TYPE_CHECKING:
@@ -140,7 +141,9 @@ class CwdRequestType(Enum):
 
 
 class CwdRequest:
-    def __init__(self, window: Optional['Window'] = None, request_type: CwdRequestType = CwdRequestType.current) -> None:
+    def __init__(
+            self, window: Optional['Window'] = None,
+            request_type: CwdRequestType = CwdRequestType.current) -> None:
         self.window_id = -1 if window is None else window.id
         self.request_type = request_type
         self.rc_from_window_id = 0
@@ -157,19 +160,27 @@ class CwdRequest:
         window = self.window
         if not window:
             return ''
-        reported_cwd = path_from_osc7_url(window.screen.last_reported_cwd) if window.screen.last_reported_cwd else ''
-        if reported_cwd and not window.child_is_remote and (self.request_type is CwdRequestType.last_reported or window.at_prompt):
+        reported_cwd = path_from_osc7_url(
+            window.screen.last_reported_cwd) if window.screen.last_reported_cwd else ''
+        if reported_cwd and not window.child_is_remote and (
+                self.request_type is CwdRequestType.
+                last_reported or window.at_prompt):
             return reported_cwd
         if self.request_type is CwdRequestType.root:
             return window.get_cwd_of_root_child() or ''
-        return window.get_cwd_of_child(oldest=self.request_type is CwdRequestType.oldest) or ''
+        return window.get_cwd_of_child(
+            oldest=self.request_type is CwdRequestType.oldest) or ''
 
     def modify_argv_for_launch_with_cwd(self, argv: List[str]) -> str:
         window = self.window
         if not window:
             return ''
-        reported_cwd = path_from_osc7_url(window.screen.last_reported_cwd) if window.screen.last_reported_cwd else ''
-        if reported_cwd and (self.request_type is not CwdRequestType.root or window.root_in_foreground_processes):
+        reported_cwd = path_from_osc7_url(
+            window.screen.last_reported_cwd) if window.screen.last_reported_cwd else ''
+        if reported_cwd and (
+                self.
+                request_type
+                is not CwdRequestType.root or window.root_in_foreground_processes):
             ssh_kitten_cmdline = window.ssh_kitten_cmdline()
             if ssh_kitten_cmdline:
                 run_shell = argv[0] == resolved_shell(get_options())[0]
@@ -178,11 +189,16 @@ class CwdRequest:
 
                 argv[:] = ssh_kitten_cmdline
                 set_cwd_in_cmdline(reported_cwd, argv)
-                set_server_args_in_cmdline(server_args, argv, allocate_tty=not run_shell)
+                set_server_args_in_cmdline(
+                    server_args, argv, allocate_tty=not run_shell)
                 return ''
-            if not window.child_is_remote and (self.request_type is CwdRequestType.last_reported or window.at_prompt):
+            if not window.child_is_remote and (
+                    self.
+                    request_type is CwdRequestType.last_reported or window.
+                    at_prompt):
                 return reported_cwd
-        return window.get_cwd_of_child(oldest=self.request_type is CwdRequestType.oldest) or ''
+        return window.get_cwd_of_child(
+            oldest=self.request_type is CwdRequestType.oldest) or ''
 
 
 def process_title_from_child(title: str, is_base64: bool) -> str:
@@ -241,7 +257,8 @@ class ClipboardPending(NamedTuple):
 
 
 class DynamicColor(IntEnum):
-    default_fg, default_bg, cursor_color, highlight_fg, highlight_bg = range(1, 6)
+    default_fg, default_bg, cursor_color, highlight_fg, highlight_bg = range(
+        1, 6)
 
 
 class CommandOutput(IntEnum):
@@ -255,11 +272,13 @@ DYNAMIC_COLOR_CODES = {
     17: DynamicColor.highlight_bg,
     19: DynamicColor.highlight_fg,
 }
-DYNAMIC_COLOR_CODES.update({k + 100: v for k, v in DYNAMIC_COLOR_CODES.items()})
+DYNAMIC_COLOR_CODES.update(
+    {k + 100: v for k, v in DYNAMIC_COLOR_CODES.items()})
 
 
 class Watcher:
-    def __call__(self, boss: BossType, window: 'Window', data: Dict[str, Any]) -> None:
+    def __call__(self, boss: BossType, window: 'Window', data: Dict
+                 [str, Any]) -> None:
         pass
 
 
@@ -298,7 +317,10 @@ class Watchers:
         return bool(self.on_close or self.on_resize or self.on_focus_change)
 
 
-def call_watchers(windowref: Callable[[], Optional['Window']], which: str, data: Dict[str, Any]) -> None:
+def call_watchers(
+        windowref: Callable[[],
+                            Optional['Window']],
+        which: str, data: Dict[str, Any]) -> None:
     def callback(timer_id: Optional[int]) -> None:
         w = windowref()
         if w is not None:
@@ -308,7 +330,9 @@ def call_watchers(windowref: Callable[[], Optional['Window']], which: str, data:
     add_timer(callback, 0, False)
 
 
-def pagerhist(screen: Screen, as_ansi: bool = False, add_wrap_markers: bool = True, upto_output_start: bool = False) -> str:
+def pagerhist(
+        screen: Screen, as_ansi: bool = False, add_wrap_markers: bool = True,
+        upto_output_start: bool = False) -> str:
     pht = screen.historybuf.pagerhist_as_text(upto_output_start)
     if pht and (not as_ansi or not add_wrap_markers):
         sanitizer = text_sanitizer(as_ansi, add_wrap_markers)
@@ -317,10 +341,12 @@ def pagerhist(screen: Screen, as_ansi: bool = False, add_wrap_markers: bool = Tr
 
 
 def as_text(
-    screen: Screen, as_ansi: bool = False, add_history: bool = False, add_wrap_markers: bool = False, alternate_screen: bool = False, add_cursor: bool = False
-) -> str:
+        screen: Screen, as_ansi: bool = False, add_history: bool = False,
+        add_wrap_markers: bool = False, alternate_screen: bool = False,
+        add_cursor: bool = False) -> str:
     lines: List[str] = []
-    add_history = add_history and not (screen.is_using_alternate_linebuf() ^ alternate_screen)
+    add_history = add_history and not (
+        screen.is_using_alternate_linebuf() ^ alternate_screen)
     if alternate_screen:
         f = screen.as_text_alternate
     else:
@@ -334,7 +360,8 @@ def as_text(
         if shape == NO_CURSOR_SHAPE:
             ctext += '\x1b[?12' + ('h' if screen.cursor.blink else 'l')
         else:
-            code = {CURSOR_BLOCK: 1, CURSOR_UNDERLINE: 3, CURSOR_BEAM: 5}[shape]
+            code = {CURSOR_BLOCK: 1, CURSOR_UNDERLINE: 3,
+                    CURSOR_BEAM: 5}[shape]
             if not screen.cursor.blink:
                 code += 1
             ctext += f'\x1b[{code} q'
@@ -390,8 +417,10 @@ class LoadShaderPrograms:
                 STRIKE_SPRITE_INDEX=NUM_UNDERLINE_STYLES + 1,
             )
             if semi_transparent:
-                vv = vv.replace('#define NOT_TRANSPARENT', '#define TRANSPARENT')
-                ff = ff.replace('#define NOT_TRANSPARENT', '#define TRANSPARENT')
+                vv = vv.replace('#define NOT_TRANSPARENT',
+                                '#define TRANSPARENT')
+                ff = ff.replace('#define NOT_TRANSPARENT',
+                                '#define TRANSPARENT')
             compile_program(p, vv, ff)
 
         v, f = load_shaders('graphics')
@@ -467,9 +496,12 @@ def text_sanitizer(as_ansi: bool, add_wrap_markers: bool) -> Callable[[str], str
     return remove_wrap_markers
 
 
-def cmd_output(screen: Screen, which: CommandOutput = CommandOutput.last_run, as_ansi: bool = False, add_wrap_markers: bool = False) -> str:
+def cmd_output(
+        screen: Screen, which: CommandOutput = CommandOutput.last_run,
+        as_ansi: bool = False, add_wrap_markers: bool = False) -> str:
     lines: List[str] = []
-    search_in_pager_hist = screen.cmd_output(which, lines.append, as_ansi, add_wrap_markers)
+    search_in_pager_hist = screen.cmd_output(
+        which, lines.append, as_ansi, add_wrap_markers)
     if search_in_pager_hist:
         pht = pagerhist(screen, as_ansi, add_wrap_markers, True)
         if pht:
@@ -487,7 +519,10 @@ def process_remote_print(msg: str) -> str:
     from .cli import green
 
     text = standard_b64decode(msg).decode('utf-8', 'replace')
-    return text.replace('\x1b', green(r'\e')).replace('\a', green(r'\a')).replace('\0', green(r'\0'))
+    return text.replace(
+        '\x1b', green(r'\e')).replace(
+        '\a', green(r'\a')).replace(
+        '\0', green(r'\0'))
 
 
 class EdgeWidths:
@@ -496,7 +531,8 @@ class EdgeWidths:
     right: Optional[float]
     bottom: Optional[float]
 
-    def __init__(self, serialized: Optional[Dict[str, Optional[float]]] = None):
+    def __init__(
+            self, serialized: Optional[Dict[str, Optional[float]]] = None):
         if serialized is not None:
             self.left = serialized['left']
             self.right = serialized['right']
@@ -563,10 +599,13 @@ class Window:
         self.current_clipboard_read_ask: Optional[bool] = None
         self.prev_osc99_cmd = NotificationCommand()
         self.actions_on_close: List[Callable[['Window'], None]] = []
-        self.actions_on_focus_change: List[Callable[['Window', bool], None]] = []
+        self.actions_on_focus_change: List[Callable[[
+            'Window', bool], None]] = []
         self.actions_on_removal: List[Callable[['Window'], None]] = []
-        self.current_marker_spec: Optional[Tuple[str, Union[str, Tuple[Tuple[int, str], ...]]]] = None
-        self.kitten_result_processors: List[Callable[['Window', Any], None]] = []
+        self.current_marker_spec: Optional[Tuple[str,
+                                                 Union[str, Tuple[Tuple[int, str], ...]]]] = None
+        self.kitten_result_processors: List[Callable[[
+            'Window', Any], None]] = []
         self.pty_resized_once = False
         self.last_reported_pty_size = (-1, -1, -1, -1)
         self.needs_attention = False
@@ -580,7 +619,8 @@ class Window:
         self.padding = EdgeWidths()
         self.kitten_result: Optional[Dict[str, Any]] = None
         if not self.id:
-            raise Exception(f'No tab with id: {tab.id} in OS Window: {tab.os_window_id} was found, or the window counter wrapped')
+            raise Exception(
+                f'No tab with id: {tab.id} in OS Window: {tab.os_window_id} was found, or the window counter wrapped')
         self.tab_id = tab.id
         self.os_window_id = tab.os_window_id
         self.tabref: Callable[[], Optional[TabType]] = weakref.ref(tab)
@@ -591,7 +631,8 @@ class Window:
         self.child = child
         cell_width, cell_height = cell_size_for_window(self.os_window_id)
         opts = get_options()
-        self.screen: Screen = Screen(self, 24, 80, opts.scrollback_lines, cell_width, cell_height, self.id)
+        self.screen: Screen = Screen(
+            self, 24, 80, opts.scrollback_lines, cell_width, cell_height, self.id)
         if copy_colors_from is not None:
             self.screen.copy_colors_from(copy_colors_from.screen)
         else:
@@ -599,7 +640,9 @@ class Window:
         self.remote_control_passwords = remote_control_passwords
         self.allow_remote_control = allow_remote_control
 
-    def remote_control_allowed(self, pcmd: Dict[str, Any], extra_data: Dict[str, Any]) -> bool:
+    def remote_control_allowed(
+            self, pcmd: Dict[str, Any],
+            extra_data: Dict[str, Any]) -> bool:
         if not self.allow_remote_control:
             return False
         if not self.remote_control_passwords:
@@ -621,7 +664,8 @@ class Window:
 
     @property
     def file_transmission_control(self) -> 'FileTransmission':
-        ans: Optional['FileTransmission'] = getattr(self, '_file_transmission', None)
+        ans: Optional['FileTransmission'] = getattr(
+            self, '_file_transmission', None)
         if ans is None:
             from .file_transmission import FileTransmission
 
@@ -636,7 +680,8 @@ class Window:
         self.os_window_id = tab.os_window_id
         self.tabref = weakref.ref(tab)
 
-    def effective_margin(self, edge: EdgeLiteral, is_single_window: bool = False) -> int:
+    def effective_margin(
+            self, edge: EdgeLiteral, is_single_window: bool = False) -> int:
         q = getattr(self.margin, edge)
         if q is not None:
             return pt_to_px(q, self.os_window_id)
@@ -666,7 +711,8 @@ class Window:
             self.effective_padding('bottom'),
         )
 
-    def patch_edge_width(self, which: str, edge: EdgeLiteral, val: Optional[float]) -> None:
+    def patch_edge_width(self, which: str, edge: EdgeLiteral,
+                         val: Optional[float]) -> None:
         q = self.padding if which == 'padding' else self.margin
         setattr(q, edge, val)
         if q is self.padding:
@@ -693,7 +739,8 @@ class Window:
     def __repr__(self) -> str:
         return f'Window(title={self.title}, id={self.id})'
 
-    def as_dict(self, is_focused: bool = False, is_self: bool = False, is_active: bool = False) -> WindowDict:
+    def as_dict(self, is_focused: bool = False, is_self: bool = False,
+                is_active: bool = False) -> WindowDict:
         return dict(
             id=self.id,
             is_focused=is_focused,
@@ -757,7 +804,8 @@ class Window:
             assert isinstance(pat, tuple)
             key_pat, val_pat = pat
             for key, val in self.child.environ.items():
-                if key_pat.search(key) is not None and (val_pat is None or val_pat.search(val) is not None):
+                if key_pat.search(key) is not None and (
+                        val_pat is None or val_pat.search(val) is not None):
                     return True
             return False
         assert not isinstance(pat, tuple)
@@ -769,7 +817,8 @@ class Window:
         if field == 'title':
             return pat.search(self.override_title or self.title) is not None
         if field in 'cwd':
-            return pat.search(self.child.current_cwd or self.child.cwd) is not None
+            return pat.search(
+                self.child.current_cwd or self.child.cwd) is not None
         if field == 'cmdline':
             for x in self.child.cmdline:
                 if pat.search(x) is not None:
@@ -777,7 +826,9 @@ class Window:
             return False
         return False
 
-    def matches_query(self, field: str, query: str, active_tab: Optional[TabType] = None, self_window: Optional['Window'] = None) -> bool:
+    def matches_query(self, field: str, query: str,
+                      active_tab: Optional[TabType] = None,
+                      self_window: Optional['Window'] = None) -> bool:
         if field in ('num', 'recent'):
             if active_tab is not None:
                 try:
@@ -817,7 +868,8 @@ class Window:
         val = bool(val)
         if val is not self.is_visible_in_layout:
             self.is_visible_in_layout = val
-            update_window_visibility(self.os_window_id, self.tab_id, self.id, val)
+            update_window_visibility(
+                self.os_window_id, self.tab_id, self.id, val)
             if val:
                 self.refresh()
 
@@ -832,7 +884,10 @@ class Window:
         if self.needs_layout or new_geometry.xnum != self.screen.columns or new_geometry.ynum != self.screen.lines:
             self.screen.resize(new_geometry.ynum, new_geometry.xnum)
             self.needs_layout = False
-            call_watchers(weakref.ref(self), 'on_resize', {'old_geometry': self.geometry, 'new_geometry': new_geometry})
+            call_watchers(
+                weakref.ref(self),
+                'on_resize',
+                {'old_geometry': self.geometry, 'new_geometry': new_geometry})
         current_pty_size = (
             self.screen.lines,
             self.screen.columns,
@@ -852,7 +907,8 @@ class Window:
             mark_os_window_dirty(self.os_window_id)
 
         self.geometry = g = new_geometry
-        set_window_render_data(self.os_window_id, self.tab_id, self.id, self.screen, *g[:4])
+        set_window_render_data(
+            self.os_window_id, self.tab_id, self.id, self.screen, *g[:4])
         self.update_effective_padding()
         if update_ime_position:
             update_ime_position_for_window(self.id, True)
@@ -895,10 +951,12 @@ class Window:
             if isinstance(data, str):
                 data = data.encode('utf-8')
             if get_boss().child_monitor.needs_write(self.id, data) is not True:
-                log_error(f'Failed to write to child {self.id} as it does not exist')
+                log_error(
+                    f'Failed to write to child {self.id} as it does not exist')
 
     def title_updated(self) -> None:
-        update_window_title(self.os_window_id, self.tab_id, self.id, self.title)
+        update_window_title(self.os_window_id, self.tab_id,
+                            self.id, self.title)
         t = self.tabref()
         if t is not None:
             t.title_changed(self)
@@ -914,8 +972,9 @@ class Window:
             if not raw_data.startswith('notify;'):
                 log_error(f'Ignoring unknown OSC 777: {raw_data}')
                 return  # unknown OSC 777
-            raw_data = raw_data[len('notify;') :]
-        cmd = handle_notification_cmd(osc_code, raw_data, self.id, self.prev_osc99_cmd)
+            raw_data = raw_data[len('notify;'):]
+        cmd = handle_notification_cmd(
+            osc_code, raw_data, self.id, self.prev_osc99_cmd)
         if cmd is not None and osc_code == 99:
             self.prev_osc99_cmd = cmd
 
@@ -932,7 +991,8 @@ class Window:
             return False
         return get_boss().combine(action, window_for_dispatch=self, dispatch_type='MouseEvent')
 
-    def open_url(self, url: str, hyperlink_id: int, cwd: Optional[str] = None) -> None:
+    def open_url(
+            self, url: str, hyperlink_id: int, cwd: Optional[str] = None) -> None:
         opts = get_options()
         if hyperlink_id:
             if not opts.allow_hyperlinks:
@@ -950,25 +1010,27 @@ class Window:
                     hostname = get_hostname()
                     remote_hostname = purl.netloc.partition(':')[0]
                     if remote_hostname and remote_hostname != hostname and remote_hostname != 'localhost':
-                        self.handle_remote_file(purl.netloc, unquote(purl.path))
+                        self.handle_remote_file(
+                            purl.netloc, unquote(purl.path))
                         return
                     url = urlunparse(purl._replace(netloc=''))
             if opts.allow_hyperlinks & 0b10:
                 from wellies.tui.operations import styled
 
                 get_boss().choose(
-                    'What would you like to do with this URL:\n' + styled(sanitize_url_for_dispay_to_user(url), fg='yellow'),
+                    'What would you like to do with this URL:\n' +
+                    styled(
+                        sanitize_url_for_dispay_to_user(url),
+                        fg='yellow'),
                     partial(self.hyperlink_open_confirmed, url, cwd),
-                    'o:Open',
-                    'c:Copy to clipboard',
-                    'n;red:Nothing',
-                    default='o',
-                    window=self,
-                )
+                    'o:Open', 'c:Copy to clipboard', 'n;red:Nothing',
+                    default='o', window=self,)
                 return
         get_boss().open_url(url, cwd=cwd)
 
-    def hyperlink_open_confirmed(self, url: str, cwd: Optional[str], q: str) -> None:
+    def hyperlink_open_confirmed(
+            self, url: str, cwd: Optional[str],
+            q: str) -> None:
         if q == 'o':
             get_boss().open_url(url, cwd=cwd)
         elif q == 'c':
@@ -983,29 +1045,37 @@ class Window:
         args = self.ssh_kitten_cmdline()
         conn_data: Union[None, List[str], SSHConnectionData] = None
         if args:
-            ssh_cmdline = sorted(self.child.foreground_processes, key=lambda p: p['pid'])[-1]['cmdline'] or ['']
+            ssh_cmdline = sorted(
+                self.child.foreground_processes, key=lambda p: p['pid'])[-1]['cmdline'] or ['']
             if 'ControlPath=' in ' '.join(ssh_cmdline):
                 idx = ssh_cmdline.index('--')
-                conn_data = [is_ssh_kitten_sentinel] + list(ssh_cmdline[: idx + 2])
+                conn_data = [
+                    is_ssh_kitten_sentinel] + list(ssh_cmdline[: idx + 2])
         if conn_data is None:
             args = self.child.foreground_cmdline
-            conn_data = get_connection_data(args, self.child.foreground_cwd or self.child.current_cwd or '')
+            conn_data = get_connection_data(
+                args, self.child.foreground_cwd or self.child.current_cwd or '')
             if conn_data is None:
-                get_boss().show_error('Could not handle remote file', f'No SSH connection data found in: {args}')
+                get_boss().show_error('Could not handle remote file',
+                                      f'No SSH connection data found in: {args}')
                 return
-        get_boss().run_kitten('remote_file', '--hostname', netloc.partition(':')[0], '--path', remote_path, '--ssh-connection-data', json.dumps(conn_data))
+        get_boss().run_kitten('remote_file', '--hostname', netloc.partition(':')
+                              [0], '--path', remote_path, '--ssh-connection-data', json.dumps(conn_data))
 
     def send_signal_for_key(self, key_num: int) -> bool:
         try:
             return self.child.send_signal_for_key(key_num)
         except OSError as err:
-            log_error(f'Failed to send signal for key to child with err: {err}')
+            log_error(
+                f'Failed to send signal for key to child with err: {err}')
             return False
 
     def focus_changed(self, focused: bool) -> None:
         if self.destroyed:
             return
-        call_watchers(weakref.ref(self), 'on_focus_change', {'focused': focused})
+        call_watchers(
+            weakref.ref(self),
+            'on_focus_change', {'focused': focused})
         for c in self.actions_on_focus_change:
             try:
                 c(self, focused)
@@ -1027,8 +1097,11 @@ class Window:
             # Cancel IME composition after loses focus
             update_ime_position_for_window(self.id, False, -1)
 
-    def title_changed(self, new_title: Optional[str], is_base64: bool = False) -> None:
-        self.child_title = process_title_from_child(new_title or self.default_title, is_base64)
+    def title_changed(
+            self, new_title: Optional[str],
+            is_base64: bool = False) -> None:
+        self.child_title = process_title_from_child(
+            new_title or self.default_title, is_base64)
         if self.override_title is None:
             self.title_updated()
 
@@ -1044,7 +1117,8 @@ class Window:
         return self.screen.has_activity_since_last_focus()
 
     def on_activity_since_last_focus(self) -> bool:
-        if get_options().tab_activity_symbol and (monotonic() - self.last_resized_at) > 0.5:
+        if get_options().tab_activity_symbol and (
+                monotonic() - self.last_resized_at) > 0.5:
             # Ignore activity soon after a resize as the child program is
             # probably redrawing the screen
             get_boss().on_activity_since_last_focus(self)
@@ -1058,8 +1132,11 @@ class Window:
             import subprocess
 
             env = self.child.foreground_environ
-            env['smelly_CHILD_CMDLINE'] = ' '.join(map(shlex.quote, self.child.cmdline))
-            subprocess.Popen(cb, env=env, cwd=self.child.foreground_cwd, preexec_fn=clear_handled_signals)
+            env['smelly_CHILD_CMDLINE'] = ' '.join(
+                map(shlex.quote, self.child.cmdline))
+            subprocess.Popen(
+                cb, env=env, cwd=self.child.foreground_cwd,
+                preexec_fn=clear_handled_signals)
         if not self.is_active:
             changed = not self.needs_attention
             self.needs_attention = True
@@ -1081,7 +1158,8 @@ class Window:
         else:
             set_titlebar_color(self.os_window_id, 0, True, -val)
 
-    def change_colors(self, changes: Dict[DynamicColor, Optional[str]]) -> None:
+    def change_colors(
+            self, changes: Dict[DynamicColor, Optional[str]]) -> None:
         dirtied = default_bg_changed = False
 
         def item(raw: Optional[str]) -> int:
@@ -1111,7 +1189,8 @@ class Window:
         r |= r << 8
         g |= g << 8
         b |= b << 8
-        self.screen.send_escape_code_to_child(OSC, f'{code};rgb:{r:04x}/{g:04x}/{b:04x}')
+        self.screen.send_escape_code_to_child(
+            OSC, f'{code};rgb:{r:04x}/{g:04x}/{b:04x}')
 
     def report_notification_activated(self, identifier: str) -> None:
         identifier = sanitize_identifier_pat().sub('', identifier)
@@ -1126,7 +1205,9 @@ class Window:
             if w is not None:
                 if val == '?':
                     col = getattr(self.screen.color_profile, w.name)
-                    self.report_color(str(code), col >> 16, (col >> 8) & 0xFF, col & 0xFF)
+                    self.report_color(
+                        str(code),
+                        col >> 16, (col >> 8) & 0xFF, col & 0xFF)
                 else:
                     q = None if code >= 100 else val
                     color_changes[w] = q
@@ -1192,7 +1273,9 @@ class Window:
 
                 traceback.print_exc()
 
-    def add_kitten_result_processor(self, callback: Callable[['Window', Any], None]) -> None:
+    def add_kitten_result_processor(
+            self, callback: Callable[['Window', Any],
+                                     None]) -> None:
         self.kitten_result_processors.append(callback)
 
     def handle_overlay_ready(self, msg: str) -> None:
@@ -1226,14 +1309,16 @@ class Window:
             ac = get_options().allow_cloning
             if ac == 'ask':
                 get_boss().confirm(
-                    _('A program running in this window wants to clone it into another window.' ' Allow it do so, once?'),
+                    _(
+                        'A program running in this window wants to clone it into another window.'
+                        ' Allow it do so, once?'),
                     partial(self.handle_remote_clone_confirmation, cdata),
-                    window=self,
-                )
+                    window=self,)
             elif ac in ('yes', 'y', 'true'):
                 self.handle_remote_clone_confirmation(cdata, True)
 
-    def handle_remote_clone_confirmation(self, cdata: str, confirmed: bool) -> None:
+    def handle_remote_clone_confirmation(
+            self, cdata: str, confirmed: bool) -> None:
         if confirmed:
             from .launch import clone_and_launch
 
@@ -1265,11 +1350,17 @@ class Window:
                 confirm_on_accept=bool(data.get('confirm_on_accept', True)),
             )
         elif data['type'] == 'choose':
-            get_boss().choose(message, callback, *data['choices'], window=self, default=data.get('default', ''))
+            get_boss().choose(
+                message, callback, *data['choices'],
+                window=self, default=data.get('default', ''))
         elif data['type'] == 'get_line':
-            get_boss().get_line(message, callback, window=self, is_password=bool(data.get('is_password')), prompt=data.get('prompt', '> '))
+            get_boss().get_line(
+                message, callback, window=self,
+                is_password=bool(data.get('is_password')),
+                prompt=data.get('prompt', '> '))
         else:
-            log_error(f'Ignoring ask request with unknown type: {data["type"]}')
+            log_error(
+                f'Ignoring ask request with unknown type: {data["type"]}')
 
     def handle_remote_print(self, msg: str) -> None:
         text = process_remote_print(msg)
@@ -1277,12 +1368,14 @@ class Window:
         sys.stderr.flush()
 
     def send_cmd_response(self, response: Any) -> None:
-        self.screen.send_escape_code_to_child(DCS, '@smelly-cmd' + json.dumps(response))
+        self.screen.send_escape_code_to_child(
+            DCS, '@smelly-cmd' + json.dumps(response))
 
     def file_transmission(self, data: str) -> None:
         self.file_transmission_control.handle_serialized_command(data)
 
-    def clipboard_control(self, data: str, is_partial: Optional[bool] = False) -> None:
+    def clipboard_control(
+            self, data: str, is_partial: Optional[bool] = False) -> None:
         if is_partial is None:
             self.clipboard_request_manager.parse_osc_5522(data)
         else:
@@ -1332,7 +1425,8 @@ class Window:
                 # https://github.com/backbiter-no/smelly/issues/4128
                 if monotonic() - self.last_focused_at < 1.5 * get_click_interval():
                     return
-                if move_cursor_to_mouse_if_in_prompt(self.os_window_id, self.tab_id, self.id):
+                if move_cursor_to_mouse_if_in_prompt(
+                        self.os_window_id, self.tab_id, self.id):
                     self.screen.ignore_bells_for(1)
                     break
 
@@ -1353,7 +1447,8 @@ class Window:
         ''',
     )
     def mouse_selection(self, code: int) -> None:
-        mouse_selection(self.os_window_id, self.tab_id, self.id, code, self.current_mouse_event_button)
+        mouse_selection(self.os_window_id, self.tab_id, self.id,
+                        code, self.current_mouse_event_button)
 
     @ac('mouse', 'Paste the current primary selection')
     def paste_selection(self) -> None:
@@ -1387,21 +1482,26 @@ class Window:
         ''',
     )
     def mouse_show_command_output(self) -> None:
-        if click_mouse_cmd_output(self.os_window_id, self.tab_id, self.id, False):
-            self.show_cmd_output(CommandOutput.last_visited, 'Clicked command output')
+        if click_mouse_cmd_output(
+                self.os_window_id, self.tab_id, self.id, False):
+            self.show_cmd_output(CommandOutput.last_visited,
+                                 'Clicked command output')
 
     # }}}
 
     def text_for_selection(self, as_ansi: bool = False) -> str:
         sts = get_options().strip_trailing_spaces
-        strip_trailing_spaces = sts == 'always' or (sts == 'smart' and not self.screen.is_rectangle_select())
+        strip_trailing_spaces = sts == 'always' or (
+            sts == 'smart' and not self.screen.is_rectangle_select())
         lines = self.screen.text_for_selection(as_ansi, strip_trailing_spaces)
         return ''.join(lines)
 
     def has_selection(self) -> bool:
         return self.screen.has_selection()
 
-    def call_watchers(self, which: Iterable[Watcher], data: Dict[str, Any]) -> None:
+    def call_watchers(
+            self, which: Iterable[Watcher],
+            data: Dict[str, Any]) -> None:
         boss = get_boss()
         for w in which:
             try:
@@ -1425,11 +1525,16 @@ class Window:
             del self.screen
 
     def as_text(
-        self, as_ansi: bool = False, add_history: bool = False, add_wrap_markers: bool = False, alternate_screen: bool = False, add_cursor: bool = False
-    ) -> str:
-        return as_text(self.screen, as_ansi, add_history, add_wrap_markers, alternate_screen, add_cursor)
+            self, as_ansi: bool = False, add_history: bool = False,
+            add_wrap_markers: bool = False, alternate_screen: bool = False,
+            add_cursor: bool = False) -> str:
+        return as_text(
+            self.screen, as_ansi, add_history, add_wrap_markers,
+            alternate_screen, add_cursor)
 
-    def cmd_output(self, which: CommandOutput = CommandOutput.last_run, as_ansi: bool = False, add_wrap_markers: bool = False) -> str:
+    def cmd_output(
+            self, which: CommandOutput = CommandOutput.last_run,
+            as_ansi: bool = False, add_wrap_markers: bool = False) -> str:
         return cmd_output(self.screen, which, as_ansi, add_wrap_markers)
 
     def get_cwd_of_child(self, oldest: bool = False) -> Optional[str]:
@@ -1475,7 +1580,8 @@ class Window:
         if has_wrap_markers:
             text = text.replace('\r\n', '\n').replace('\r', '\n')
         lines = text.count('\n')
-        input_line_number = lines - (self.screen.lines - 1) - self.screen.scrolled_by
+        input_line_number = lines - (
+            self.screen.lines - 1) - self.screen.scrolled_by
         return {
             'input_line_number': input_line_number,
             'scrolled_by': self.screen.scrolled_by,
@@ -1488,7 +1594,8 @@ class Window:
 
     def set_logo(self, path: str, position: str = '', alpha: float = -1) -> None:
         path = resolve_custom_file(path) if path else ''
-        set_window_logo(self.os_window_id, self.tab_id, self.id, path, position or '', alpha)
+        set_window_logo(self.os_window_id, self.tab_id,
+                        self.id, path, position or '', alpha)
 
     def paste_with_actions(self, text: str) -> None:
         if self.destroyed or not text:
@@ -1512,11 +1619,16 @@ class Window:
             msg = ''
             limit = 16 * 1024
             if not self.screen.in_bracketed_paste_mode:
-                msg = _('Pasting text into shells that do not support bracketed paste can be dangerous.')
+                msg = _(
+                    'Pasting text into shells that do not support bracketed paste can be dangerous.')
             elif len(btext) > limit:
-                msg = _('Pasting very large amounts of text ({} bytes) can be slow.').format(len(btext))
+                msg = _('Pasting very large amounts of text ({} bytes) can be slow.').format(
+                    len(btext))
             if msg:
-                get_boss().confirm(msg + _(' Are you sure?'), partial(self.handle_paste_confirmation, btext), window=self)
+                get_boss().confirm(
+                    msg + _(' Are you sure?'),
+                    partial(self.handle_paste_confirmation, btext),
+                    window=self)
                 return
         self.paste_text(btext)
 
@@ -1543,7 +1655,8 @@ class Window:
                 text = text.replace(b'\r\n', b'\n').replace(b'\n', b'\r')
             self.screen.paste(text)
 
-    def clear_screen(self, reset: bool = False, scrollback: bool = False) -> None:
+    def clear_screen(
+            self, reset: bool = False, scrollback: bool = False) -> None:
         self.screen.cursor.x = self.screen.cursor.y = 0
         if reset:
             self.screen.reset()
@@ -1554,13 +1667,20 @@ class Window:
 
     @ac('cp', 'Show scrollback in a pager like less')
     def show_scrollback(self) -> None:
-        text = self.as_text(as_ansi=True, add_history=True, add_wrap_markers=True)
+        text = self.as_text(as_ansi=True, add_history=True,
+                            add_wrap_markers=True)
         data = self.pipe_data(text, has_wrap_markers=True)
         cursor_on_screen = self.screen.scrolled_by < self.screen.lines - self.screen.cursor.y
-        get_boss().display_scrollback(self, data['text'], data['input_line_number'], report_cursor=cursor_on_screen)
+        get_boss().display_scrollback(
+            self, data['text'],
+            data['input_line_number'],
+            report_cursor=cursor_on_screen)
 
-    def show_cmd_output(self, which: CommandOutput, title: str = 'Command output', as_ansi: bool = True, add_wrap_markers: bool = True) -> None:
-        text = self.cmd_output(which, as_ansi=as_ansi, add_wrap_markers=add_wrap_markers)
+    def show_cmd_output(
+            self, which: CommandOutput, title: str = 'Command output',
+            as_ansi: bool = True, add_wrap_markers: bool = True) -> None:
+        text = self.cmd_output(which, as_ansi=as_ansi,
+                               add_wrap_markers=add_wrap_markers)
         text = text.replace('\r\n', '\n').replace('\r', '\n')
         get_boss().display_scrollback(self, text, title=title, report_cursor=False)
 
@@ -1573,7 +1693,8 @@ class Window:
         ''',
     )
     def show_first_command_output_on_screen(self) -> None:
-        self.show_cmd_output(CommandOutput.first_on_screen, 'First command output on screen')
+        self.show_cmd_output(CommandOutput.first_on_screen,
+                             'First command output on screen')
 
     @ac(
         'cp',
@@ -1596,7 +1717,8 @@ class Window:
         ''',
     )
     def show_last_visited_command_output(self) -> None:
-        self.show_cmd_output(CommandOutput.last_visited, 'Last visited command output')
+        self.show_cmd_output(CommandOutput.last_visited,
+                             'Last visited command output')
 
     @ac(
         'cp',
@@ -1607,7 +1729,8 @@ class Window:
         ''',
     )
     def show_last_non_empty_command_output(self) -> None:
-        self.show_cmd_output(CommandOutput.last_non_empty, 'Last non-empty command output')
+        self.show_cmd_output(CommandOutput.last_non_empty,
+                             'Last non-empty command output')
 
     @ac('cp', 'Paste the specified text into the current window. ANSI C escapes are decoded.')
     def paste(self, text: str) -> None:
@@ -1644,7 +1767,8 @@ class Window:
             set_clipboard_string(text)
         else:
             self.scroll_end()
-            self.write_to_child(self.encoded_key(KeyEvent(key=ord('c'), mods=GLFW_MOD_CONTROL)))
+            self.write_to_child(self.encoded_key(
+                KeyEvent(key=ord('c'), mods=GLFW_MOD_CONTROL)))
 
     @ac('cp', 'Copy the selected text from the active window to the clipboard and clear selection, if no selection, send SIGINT (aka :kbd:`ctrl+c`)')
     def copy_and_clear_or_interrupt(self) -> None:
@@ -1729,7 +1853,8 @@ class Window:
         return True
 
     @ac('sc', 'Scroll prompt to the top of the screen, filling screen with empty lines, when in main screen')
-    def scroll_prompt_to_top(self, clear_scrollback: bool = False) -> Optional[bool]:
+    def scroll_prompt_to_top(
+            self, clear_scrollback: bool = False) -> Optional[bool]:
         if self.screen.is_main_linebuf():
             self.screen.scroll_until_cursor_prompt()
             if clear_scrollback:
@@ -1747,7 +1872,10 @@ class Window:
         return True
 
     @ac('mk', 'Toggle the current marker on/off')
-    def toggle_marker(self, ftype: str, spec: Union[str, Tuple[Tuple[int, str], ...]], flags: int) -> None:
+    def toggle_marker(self, ftype: str,
+                      spec: Union[str, Tuple[Tuple[int, str],
+                                             ...]],
+                      flags: int) -> None:
         from .marks import marker_from_spec
 
         key = ftype, spec

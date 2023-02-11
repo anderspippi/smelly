@@ -24,7 +24,9 @@ class TestKeys(BaseTest):
         num_lock, caps_lock = defines.GLFW_MOD_NUM_LOCK, defines.GLFW_MOD_CAPS_LOCK
         press, repeat, release = defines.GLFW_PRESS, defines.GLFW_REPEAT, defines.GLFW_RELEASE  # noqa
 
-        def csi(mods=0, num=1, action=1, shifted_key=0, alternate_key=0, text=None, trailer='u'):
+        def csi(
+                mods=0, num=1, action=1, shifted_key=0, alternate_key=0,
+                text=None, trailer='u'):
             ans = '\033['
             if isinstance(num, str):
                 num = ord(num)
@@ -62,7 +64,9 @@ class TestKeys(BaseTest):
                 ans += ';' + ':'.join(map(str, map(ord, text)))
             return ans + trailer
 
-        def mods_test(key, plain=None, shift=None, ctrl=None, alt=None, calt=None, cshift=None, ashift=None, csi_num=None, trailer='u'):
+        def mods_test(
+                key, plain=None, shift=None, ctrl=None, alt=None, calt=None,
+                cshift=None, ashift=None, csi_num=None, trailer='u'):
             c = partial(csi, num=csi_num or key, trailer=trailer)
             e = partial(enc, key=key)
 
@@ -75,19 +79,29 @@ class TestKeys(BaseTest):
             a(e(), plain or c())
             a(e(mods=defines.GLFW_MOD_SHIFT), w(shift, defines.GLFW_MOD_SHIFT))
             a(e(mods=defines.GLFW_MOD_CONTROL), w(ctrl, defines.GLFW_MOD_CONTROL))
-            a(e(mods=defines.GLFW_MOD_ALT | defines.GLFW_MOD_CONTROL), w(calt, defines.GLFW_MOD_ALT | defines.GLFW_MOD_CONTROL))
-            a(e(mods=defines.GLFW_MOD_SHIFT | defines.GLFW_MOD_CONTROL), w(cshift, defines.GLFW_MOD_CONTROL | defines.GLFW_MOD_SHIFT))
-            a(e(mods=defines.GLFW_MOD_SHIFT | defines.GLFW_MOD_ALT), w(ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
+            a(e(mods=defines.GLFW_MOD_ALT | defines.GLFW_MOD_CONTROL),
+              w(calt, defines.GLFW_MOD_ALT | defines.GLFW_MOD_CONTROL))
+            a(e(mods=defines.GLFW_MOD_SHIFT | defines.GLFW_MOD_CONTROL), w(
+                cshift, defines.GLFW_MOD_CONTROL | defines.GLFW_MOD_SHIFT))
+            a(e(mods=defines.GLFW_MOD_SHIFT | defines.GLFW_MOD_ALT), w(
+                ashift, defines.GLFW_MOD_ALT | defines.GLFW_MOD_SHIFT))
 
         def mkp(name, *a, **kw):
             for x in (f'GLFW_FKEY_{name}', f'GLFW_FKEY_KP_{name}'):
                 k = getattr(defines, x)
                 mods_test(k, *a, **kw)
 
-        mkp('ENTER', '\x0d', alt='\033\x0d', ctrl='\x0d', shift='\x0d', ashift='\033\x0d', calt='\033\x0d', cshift='\x0d')
-        mods_test(defines.GLFW_FKEY_ESCAPE, '\x1b', alt='\033\033', ctrl='\x1b', shift='\x1b', calt='\x1b\x1b', cshift='\x1b', ashift='\x1b\x1b')
-        mods_test(defines.GLFW_FKEY_BACKSPACE, '\x7f', alt='\033\x7f', ctrl='\x08', shift='\x7f', ashift='\033\x7f', cshift='\x08', calt='\x1b\x08')
-        mods_test(defines.GLFW_FKEY_TAB, '\t', alt='\033\t', shift='\x1b[Z', ctrl='\t', ashift='\x1b\x1b[Z', cshift='\x1b[Z', calt='\x1b\t')
+        mkp('ENTER', '\x0d', alt='\033\x0d', ctrl='\x0d', shift='\x0d',
+            ashift='\033\x0d', calt='\033\x0d', cshift='\x0d')
+        mods_test(
+            defines.GLFW_FKEY_ESCAPE, '\x1b', alt='\033\033', ctrl='\x1b',
+            shift='\x1b', calt='\x1b\x1b', cshift='\x1b', ashift='\x1b\x1b')
+        mods_test(
+            defines.GLFW_FKEY_BACKSPACE, '\x7f', alt='\033\x7f', ctrl='\x08',
+            shift='\x7f', ashift='\033\x7f', cshift='\x08', calt='\x1b\x08')
+        mods_test(
+            defines.GLFW_FKEY_TAB, '\t', alt='\033\t', shift='\x1b[Z',
+            ctrl='\t', ashift='\x1b\x1b[Z', cshift='\x1b[Z', calt='\x1b\t')
         mkp('INSERT', csi_num=2, trailer='~')
         mkp('DELETE', csi_num=3, trailer='~')
         mkp('PAGE_UP', csi_num=5, trailer='~')
@@ -197,7 +211,8 @@ class TestKeys(BaseTest):
         ae(enc(ord('['), shifted_key=ord('{'), mods=alt), "\x1b" + '[')
         ae(enc(ord('['), shifted_key=ord('{'), mods=shift | alt), "\x1b" + '{')
         ae(enc(ord('['), shifted_key=ord('{'), mods=ctrl), '\x1b')
-        ae(enc(ord('['), shifted_key=ord('{'), mods=ctrl | alt), "\x1b" + '\x1b')
+        ae(enc(ord('['), shifted_key=ord('{'),
+           mods=ctrl | alt), "\x1b" + '\x1b')
         ae(enc(ord(']'), shifted_key=ord('}')), ']')
         ae(enc(ord(']'), shifted_key=ord('}'), mods=shift), '}')
         ae(enc(ord(']'), shifted_key=ord('}'), mods=alt), "\x1b" + ']')
@@ -443,15 +458,18 @@ class TestKeys(BaseTest):
         ae(tq(ord('a')), 'a')
         ae(tq(ord('a'), action=defines.GLFW_REPEAT), csi(num='a', action=2))
         ae(tq(ord('a'), action=defines.GLFW_RELEASE), csi(num='a', action=3))
-        ae(tq(ord('a'), action=defines.GLFW_RELEASE, mods=shift), csi(shift, num='a', action=3))
+        ae(tq(ord('a'), action=defines.GLFW_RELEASE,
+           mods=shift), csi(shift, num='a', action=3))
 
         # test alternate key reporting
         aq = partial(enc, key_encoding_flags=0b100)
         ae(aq(ord('a')), 'a')
         ae(aq(ord('a'), shifted_key=ord('A')), 'a')
-        ae(aq(ord('a'), mods=shift, shifted_key=ord('A')), csi(shift, 'a', shifted_key='A'))
+        ae(aq(ord('a'), mods=shift, shifted_key=ord('A')),
+           csi(shift, 'a', shifted_key='A'))
         ae(aq(ord('a'), alternate_key=ord('A')), csi(num='a', alternate_key='A'))
-        ae(aq(ord('a'), mods=shift, shifted_key=ord('A'), alternate_key=ord('b')), csi(shift, 'a', shifted_key='A', alternate_key='b'))
+        ae(aq(ord('a'), mods=shift, shifted_key=ord('A'), alternate_key=ord(
+            'b')), csi(shift, 'a', shifted_key='A', alternate_key='b'))
 
         # test report all keys
         kq = partial(enc, key_encoding_flags=0b1000)
@@ -459,7 +477,8 @@ class TestKeys(BaseTest):
         ae(kq(ord('a'), action=defines.GLFW_REPEAT), csi(num='a'))
         ae(kq(ord('a'), mods=ctrl), csi(ctrl, num='a'))
         ae(kq(defines.GLFW_FKEY_UP), '\x1b[A')
-        ae(kq(defines.GLFW_FKEY_LEFT_SHIFT), csi(num=defines.GLFW_FKEY_LEFT_SHIFT))
+        ae(kq(defines.GLFW_FKEY_LEFT_SHIFT), csi(
+            num=defines.GLFW_FKEY_LEFT_SHIFT))
         ae(kq(defines.GLFW_FKEY_ENTER), '\x1b[13u')
         ae(kq(defines.GLFW_FKEY_TAB), '\x1b[9u')
         ae(kq(defines.GLFW_FKEY_BACKSPACE), '\x1b[127u')
@@ -501,7 +520,8 @@ class TestKeys(BaseTest):
         protocol = SGR_PROTOCOL
 
         def enc(button=L, action=defines.PRESS, mods=0, x=1, y=1):
-            return defines.test_encode_mouse(x, y, protocol, button, action, mods)
+            return defines.test_encode_mouse(
+                x, y, protocol, button, action, mods)
 
         self.ae(enc(), '<0;1;1M')
         self.ae(enc(action=defines.RELEASE), '<0;1;1m')

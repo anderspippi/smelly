@@ -60,7 +60,8 @@ class CompletionSpec:
                 if vv == 'conf':
                     self.relative_to = CompletionRelativeTo.config_dir
                 else:
-                    raise ValueError(f'Unknown completion relative to value: {vv}')
+                    raise ValueError(
+                        f'Unknown completion relative to value: {vv}')
             else:
                 raise KeyError(f'Unknown completion property: {ck}')
         return self
@@ -70,7 +71,8 @@ class CompletionSpec:
         if self.kwds:
             kwds = (f'"{serialize_as_go_string(x)}"' for x in self.kwds)
             g = (self.group if self.type is CompletionType.keyword else '') or "Keywords"
-            completers.append(f'cli.NamesCompleter("{serialize_as_go_string(g)}", ' + ', '.join(kwds) + ')')
+            completers.append(
+                f'cli.NamesCompleter("{serialize_as_go_string(g)}", ' + ', '.join(kwds) + ')')
         relative_to = 'CONFIG' if self.relative_to is CompletionRelativeTo.config_dir else 'CWD'
         if self.type is CompletionType.file:
             g = serialize_as_go_string(self.group or 'Files')
@@ -78,15 +80,19 @@ class CompletionSpec:
             if self.extensions:
                 added = True
                 pats = (f'"*.{ext}"' for ext in self.extensions)
-                completers.append(f'cli.FnmatchCompleter("{g}", cli.{relative_to}, ' + ', '.join(pats) + ')')
+                completers.append(
+                    f'cli.FnmatchCompleter("{g}", cli.{relative_to}, ' + ', '.join(pats) + ')')
             if self.mime_patterns:
                 added = True
-                completers.append(f'cli.MimepatCompleter("{g}", cli.{relative_to}, ' + ', '.join(f'"{p}"' for p in self.mime_patterns) + ')')
+                completers.append(f'cli.MimepatCompleter("{g}", cli.{relative_to}, ' + ', '.join(
+                    f'"{p}"' for p in self.mime_patterns) + ')')
             if not added:
-                completers.append(f'cli.FnmatchCompleter("{g}", cli.{relative_to}, "*")')
+                completers.append(
+                    f'cli.FnmatchCompleter("{g}", cli.{relative_to}, "*")')
         if self.type is CompletionType.directory:
             g = serialize_as_go_string(self.group or 'Directories')
-            completers.append(f'cli.DirectoryCompleter("{g}", cli.{relative_to})')
+            completers.append(
+                f'cli.DirectoryCompleter("{g}", cli.{relative_to})')
         if self.type is CompletionType.special:
             completers.append(self.group)
         if len(completers) > 1:
@@ -141,15 +147,18 @@ class GoOption:
         self.obj_dict = x
         self.go_type = go_type_map[self.type]
         if x['dest']:
-            self.go_var_name = ''.join(x.capitalize() for x in x['dest'].replace('-', '_').split('_'))
+            self.go_var_name = ''.join(x.capitalize()
+                                       for x in x['dest'].replace('-', '_').split('_'))
         else:
-            self.go_var_name = ''.join(x.capitalize() for x in self.long.replace('-', '_').split('_'))
+            self.go_var_name = ''.join(x.capitalize()
+                                       for x in self.long.replace('-', '_').split('_'))
         self.help_text = serialize_as_go_string(self.obj_dict['help'].strip())
 
     def struct_declaration(self) -> str:
         return f'{self.go_var_name} {self.go_type}'
 
-    def as_option(self, cmd_name: str = 'cmd', depth: int = 0, group: str = '') -> str:
+    def as_option(
+            self, cmd_name: str = 'cmd', depth: int = 0, group: str = '') -> str:
         add = f'AddToGroup("{serialize_as_go_string(group)}", ' if group else 'Add('
         aliases = ' '.join(sorted(self.obj_dict['aliases']))
         ans = f'''{cmd_name}.{add}cli.OptionSpec{{
@@ -160,11 +169,13 @@ class GoOption:
         '''
         if self.type in ('choice', 'choices'):
             c = ', '.join(self.sorted_choices)
-            cx = ', '.join(f'"{serialize_as_go_string(x)}"' for x in self.sorted_choices)
+            cx = ', '.join(f'"{serialize_as_go_string(x)}"'
+                           for x in self.sorted_choices)
             ans += f'\nChoices: "{serialize_as_go_string(c)}",\n'
             ans += f'\nCompleter: cli.NamesCompleter("Choices for {self.long}", {cx}),'
         elif self.obj_dict['completion'].type is not CompletionType.none:
-            ans += ''.join(self.obj_dict['completion'].as_go_code('Completer', ': ')) + ','
+            ans += ''.join(self.obj_dict['completion'].as_go_code(
+                'Completer', ': ')) + ','
         if depth > 0:
             ans += f'\nDepth: {depth},\n'
         if self.default:
@@ -382,7 +393,8 @@ def disc(x: str) -> str:
 OptionSpecSeq = List[Union[str, OptionDict]]
 
 
-def parse_option_spec(spec: Optional[str] = None) -> Tuple[OptionSpecSeq, OptionSpecSeq]:
+def parse_option_spec(spec: Optional[str] = None) -> Tuple[OptionSpecSeq,
+                                                           OptionSpecSeq]:
     if spec is None:
         spec = options_spec()
     NORMAL, METADATA, HELP = 'NORMAL', 'METADATA', 'HELP'
@@ -458,7 +470,8 @@ def parse_option_spec(spec: Optional[str] = None) -> Tuple[OptionSpecSeq, Option
                     elif k == 'condition':
                         current_cmd['condition'] = bool(eval(v))
                     elif k == 'completion':
-                        current_cmd['completion'] = CompletionSpec.from_string(v)
+                        current_cmd['completion'] = CompletionSpec.from_string(
+                            v)
         elif state is HELP:
             if line:
                 current_indent = indent_of_line(line)
@@ -473,14 +486,17 @@ def parse_option_spec(spec: Optional[str] = None) -> Tuple[OptionSpecSeq, Option
             else:
                 prev_indent = 0
                 if prev_line:
-                    current_cmd['help'] += '\n' if current_cmd['help'].endswith('::') else '\n\n'
+                    current_cmd['help'] += '\n' if current_cmd['help'].endswith(
+                        '::') else '\n\n'
                 else:
                     state = NORMAL
-                    (seq if current_cmd.get('condition', True) else disabled).append(current_cmd)
+                    (seq if current_cmd.get('condition', True)
+                     else disabled).append(current_cmd)
                     current_cmd = empty_cmd
         prev_line = line
     if current_cmd is not empty_cmd:
-        (seq if current_cmd.get('condition', True) else disabled).append(current_cmd)
+        (seq if current_cmd.get('condition', True)
+         else disabled).append(current_cmd)
 
     return seq, disabled
 
@@ -498,7 +514,8 @@ def prettify(text: str) -> str:
 
 
 def prettify_rst(text: str) -> str:
-    return re.sub(r':([a-z]+):`([^`]+)`(=[^\s.]+)', r':\1:`\2`:code:`\3`', text)
+    return re.sub(
+        r':([a-z]+):`([^`]+)`(=[^\s.]+)', r':\1:`\2`:code:`\3`', text)
 
 
 def version(add_rev: bool = False) -> str:
@@ -507,7 +524,10 @@ def version(add_rev: bool = False) -> str:
 
     if add_rev and hasattr(fast_data_types, 'smelly_VCS_REV'):
         rev = f' ({fast_data_types.smelly_VCS_REV[:10]})'
-    return '{} {}{} created by {}'.format(italic(appname), green(str_version), rev, title('anders Goyal'))
+    return '{} {}{} created by {}'.format(
+        italic(appname),
+        green(str_version),
+        rev, title('anders Goyal'))
 
 
 def wrap(text: str, limit: int = 80) -> Iterator[str]:
@@ -585,7 +605,10 @@ For comprehensive documentation for smelly, please see: {url}'''
 class PrintHelpForSeq:
     allow_pager = True
 
-    def __call__(self, seq: OptionSpecSeq, usage: Optional[str], message: Optional[str], appname: str) -> None:
+    def __call__(
+            self, seq: OptionSpecSeq, usage: Optional[str],
+            message: Optional[str],
+            appname: str) -> None:
         from smelly.utils import screen_size_function
 
         screen_size = screen_size_function()
@@ -607,7 +630,10 @@ class PrintHelpForSeq:
 
         usage = '[program-to-run ...]' if usage is None else usage
         optstring = '[options] ' if seq else ''
-        a('{}: {} {}{}'.format(title('Usage'), bold(yellow(appname)), optstring, usage))
+        a('{}: {} {}{}'.format(
+            title('Usage'),
+            bold(yellow(appname)),
+            optstring, usage))
         a('')
         message = message or default_msg
         # replace rst literal code block syntax
@@ -623,7 +649,8 @@ class PrintHelpForSeq:
             help_text = opt['help']
             if help_text == '!':
                 continue  # hidden option
-            a('  ' + ', '.join(map(green, sorted(opt['aliases'], reverse=True))))
+            a('  ' + ', '.join(map(green,
+              sorted(opt['aliases'], reverse=True))))
             defval = opt.get('default')
             if not opt.get('type', '').startswith('bool-'):
                 if defval:
@@ -636,7 +663,8 @@ class PrintHelpForSeq:
                 t = t.replace('#placeholder_for_formatting#', '')
                 wa(prettify(t), indent=4)
                 if opt.get('choices'):
-                    wa('Choices: {}'.format(', '.join(opt['choices'])), indent=4)
+                    wa('Choices: {}'.format(
+                        ', '.join(opt['choices'])), indent=4)
                 a('')
 
         text = '\n'.join(blocks) + '\n\n' + version()
@@ -644,7 +672,9 @@ class PrintHelpForSeq:
             import subprocess
 
             try:
-                p = subprocess.Popen(default_pager_for_help, stdin=subprocess.PIPE, preexec_fn=clear_handled_signals)
+                p = subprocess.Popen(
+                    default_pager_for_help, stdin=subprocess.PIPE,
+                    preexec_fn=clear_handled_signals)
             except FileNotFoundError:
                 print(text)
             else:
@@ -660,7 +690,11 @@ class PrintHelpForSeq:
 print_help_for_seq = PrintHelpForSeq()
 
 
-def seq_as_rst(seq: OptionSpecSeq, usage: Optional[str], message: Optional[str], appname: Optional[str], heading_char: str = '-') -> str:
+def seq_as_rst(
+        seq: OptionSpecSeq, usage: Optional[str],
+        message: Optional[str],
+        appname: Optional[str],
+        heading_char: str = '-') -> str:
     import textwrap
 
     blocks: List[str] = []
@@ -702,14 +736,21 @@ def seq_as_rst(seq: OptionSpecSeq, usage: Optional[str], message: Optional[str],
             if defval is not None:
                 a(textwrap.indent(f'Default: :code:`{defval}`', ' ' * 4))
             if opt.get('choices'):
-                a(textwrap.indent('Choices: {}'.format(', '.join(f':code:`{c}`' for c in sorted(opt['choices']))), ' ' * 4))
+                a(textwrap.indent(
+                    'Choices: {}'.format(
+                        ', '.join(
+                            f':code:`{c}`' for c in sorted(
+                                opt['choices']))),
+                    ' ' * 4))
             a('')
 
     text = '\n'.join(blocks)
     return text
 
 
-def as_type_stub(seq: OptionSpecSeq, disabled: OptionSpecSeq, class_name: str, extra_fields: Sequence[str] = ()) -> str:
+def as_type_stub(
+        seq: OptionSpecSeq, disabled: OptionSpecSeq, class_name: str,
+        extra_fields: Sequence[str] = ()) -> str:
     from itertools import chain
 
     ans: List[str] = [f'class {class_name}:']
@@ -726,7 +767,9 @@ def as_type_stub(seq: OptionSpecSeq, disabled: OptionSpecSeq, class_name: str, e
             t = 'typing.Sequence[str]'
         elif otype in ('choice', 'choices'):
             if opt['choices']:
-                t = 'typing.Literal[{}]'.format(','.join(f'{x!r}' for x in opt['choices']))
+                t = 'typing.Literal[{}]'.format(','.join(
+                    f'{x!r}'
+                    for x in opt['choices']))
             else:
                 t = 'str'
         elif otype.startswith('bool-'):
@@ -755,7 +798,10 @@ def defval_for_opt(opt: OptionDict) -> Any:
 
 
 class Options:
-    def __init__(self, seq: OptionSpecSeq, usage: Optional[str], message: Optional[str], appname: Optional[str]):
+    def __init__(
+            self, seq: OptionSpecSeq, usage: Optional[str],
+            message: Optional[str],
+            appname: Optional[str]):
         self.alias_map = {}
         self.seq = seq
         self.names_map: Dict[str, OptionDict] = {}
@@ -778,7 +824,8 @@ class Options:
 
     def needs_arg(self, alias: str) -> bool:
         if alias in ('-h', '--help'):
-            print_help_for_seq(self.seq, self.usage, self.message, self.appname or appname)
+            print_help_for_seq(self.seq, self.usage,
+                               self.message, self.appname or appname)
             raise SystemExit(0)
         opt = self.opt_for_alias(alias)
         if opt['dest'] == 'version':
@@ -802,19 +849,23 @@ class Options:
         elif typ == 'choices':
             choices = opt['choices']
             if val not in choices:
-                raise SystemExit('{} is not a valid value for the {} option. Valid values are: {}'.format(val, emph(alias), ', '.join(choices)))
+                raise SystemExit('{} is not a valid value for the {} option. Valid values are: {}'.format(
+                    val, emph(alias), ', '.join(choices)))
             self.values_map[name] = val
         elif typ in nmap:
             f = nmap[typ]
             try:
                 self.values_map[name] = f(val)
             except Exception:
-                raise SystemExit('{} is not a valid value for the {} option, a number is required.'.format(val, emph(alias)))
+                raise SystemExit(
+                    '{} is not a valid value for the {} option, a number is required.'.format(val, emph(alias)))
         else:
             self.values_map[name] = val
 
 
-def parse_cmdline(oc: Options, disabled: OptionSpecSeq, ans: Any, args: Optional[List[str]] = None) -> List[str]:
+def parse_cmdline(
+        oc: Options, disabled: OptionSpecSeq, ans: Any,
+        args: Optional[List[str]] = None) -> List[str]:
     NORMAL, EXPECTING_ARG = 'NORMAL', 'EXPECTING_ARG'
     state = NORMAL
     dargs = deque(sys.argv[1:] if args is None else args)
@@ -832,7 +883,8 @@ def parse_cmdline(oc: Options, disabled: OptionSpecSeq, ans: Any, args: Optional
                 needs_arg = oc.needs_arg(parts[0])
                 if not needs_arg:
                     if len(parts) != 1:
-                        raise SystemExit(f'The {emph(parts[0])} option does not accept arguments')
+                        raise SystemExit(
+                            f'The {emph(parts[0])} option does not accept arguments')
                     oc.process_arg(parts[0])
                     continue
                 if len(parts) == 1:
@@ -847,7 +899,8 @@ def parse_cmdline(oc: Options, disabled: OptionSpecSeq, ans: Any, args: Optional
             oc.process_arg(current_option, arg)
             current_option, state = None, NORMAL
     if state is EXPECTING_ARG:
-        raise SystemExit(f'An argument is required for the option: {emph(arg)}')
+        raise SystemExit(
+            f'An argument is required for the option: {emph(arg)}')
 
     for key, val in oc.values_map.items():
         setattr(ans, key, val)
@@ -1023,31 +1076,30 @@ This option is deprecated in favor of the :opt:`watcher` option in
 type=bool-set
 !
 '''
-        setattr(
-            options_spec,
-            'ans',
-            OPTIONS.format(
-                appname=appname,
-                conf_name=appname,
-                config_help=CONFIG_HELP.format(appname=appname, conf_name=appname),
-            ),
-        )
+        setattr(options_spec, 'ans', OPTIONS.format(
+            appname=appname, conf_name=appname,
+            config_help=CONFIG_HELP.format(
+                appname=appname, conf_name=appname),),)
     ans: str = getattr(options_spec, 'ans')
     return ans
 
 
 def options_for_completion() -> OptionSpecSeq:
-    raw = '--help -h\ntype=bool-set\nShow help for {appname} command line options\n\n{raw}'.format(appname=appname, raw=options_spec())
+    raw = '--help -h\ntype=bool-set\nShow help for {appname} command line options\n\n{raw}'.format(
+        appname=appname, raw=options_spec())
     return parse_option_spec(raw)[0]
 
 
 def option_spec_as_rst(
-    ospec: Callable[[], str] = options_spec, usage: Optional[str] = None, message: Optional[str] = None, appname: Optional[str] = None, heading_char: str = '-'
-) -> str:
+        ospec: Callable[[],
+                        str] = options_spec, usage: Optional[str] = None,
+        message: Optional[str] = None, appname: Optional[str] = None,
+        heading_char: str = '-') -> str:
     options = parse_option_spec(ospec())
     seq, disabled = options
     oc = Options(seq, usage, message, appname)
-    return seq_as_rst(oc.seq, oc.usage, oc.message, oc.appname, heading_char=heading_char)
+    return seq_as_rst(oc.seq, oc.usage, oc.message, oc.appname,
+                      heading_char=heading_char)
 
 
 T = TypeVar('T')
@@ -1078,14 +1130,18 @@ def default_config_paths(conf_paths: Sequence[str]) -> Tuple[str, ...]:
     return tuple(resolve_config(SYSTEM_CONF, defconf, conf_paths))
 
 
-def create_opts(args: CLIOptions, accumulate_bad_lines: Optional[List[BadLineType]] = None) -> smellyOpts:
+def create_opts(
+        args: CLIOptions, accumulate_bad_lines:
+        Optional[List[BadLineType]] = None) -> smellyOpts:
     from .config import load_config
 
     config = default_config_paths(args.config)
     # Does not cover the case where `name =` when `=` is the value.
     pat = re.compile(r'^([a-zA-Z0-9_]+)[ \t]*=')
     overrides = (pat.sub(r'\1 ', a.lstrip()) for a in args.override or ())
-    opts = load_config(*config, overrides=overrides, accumulate_bad_lines=accumulate_bad_lines)
+    opts = load_config(
+        *config, overrides=overrides,
+        accumulate_bad_lines=accumulate_bad_lines)
     return opts
 
 

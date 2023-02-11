@@ -48,7 +48,10 @@ def get_all_actions() -> Dict[ActionGroup, List[Action]]:
         short_help = first
         long_help = '\n'.join(lines).strip()
         assert spec.group in groups
-        return Action(getattr(x, '__name__'), cast(ActionGroup, spec.group), short_help, long_help)
+        return Action(
+            getattr(x, '__name__'),
+            cast(ActionGroup, spec.group),
+            short_help, long_help)
 
     seen = set()
     for cls in (Window, Tab, Boss):
@@ -60,12 +63,9 @@ def get_all_actions() -> Dict[ActionGroup, List[Action]]:
 
     ans['misc'].append(
         Action(
-            'no_op',
-            'misc',
-            'Unbind a shortcut',
-            'Mapping a shortcut to no_op causes smelly to not intercept the key stroke anymore,' ' instead passing it to the program running inside it.',
-        )
-    )
+            'no_op', 'misc', 'Unbind a shortcut',
+            'Mapping a shortcut to no_op causes smelly to not intercept the key stroke anymore,'
+            ' instead passing it to the program running inside it.',))
     return ans
 
 
@@ -117,10 +117,14 @@ def as_rst() -> str:
                 a('Default shortcuts using this action:')
                 if action.name == 'kitten':
                     a('')
-                    scs = {(kitten_link(m.parseable_text), m.short_text, f':sc:`smelly.{m.name}`') for m in maps[action.name]}
+                    scs = {
+                        (kitten_link(m.parseable_text),
+                         m.short_text, f':sc:`smelly.{m.name}`')
+                        for m in maps[action.name]}
                     for s in sorted(scs):
                         a(f'- {s[0]} - {s[2]} {s[1]}')
                 else:
-                    sscs = {f':sc:`smelly.{m.name}`' for m in maps[action.name]}
+                    sscs = {f':sc:`smelly.{m.name}`' for m in maps
+                            [action.name]}
                     a(', '.join(sorted(sscs)))
     return '\n'.join(lines)

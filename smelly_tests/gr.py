@@ -27,7 +27,8 @@ def write_gr_cmd(cmd, payload):
 
 def display(data, width, height, x, y, z, ncols=0, nrows=0):
     move_cursor(x, y)
-    cmd = {'a': 'T', 's': width, 'v': height, 'c': ncols, 'r': nrows, 'S': len(data), 'z': z}
+    cmd = {'a': 'T', 's': width, 'v': height,
+           'c': ncols, 'r': nrows, 'S': len(data), 'z': z}
     data = zlib.compress(data)
     cmd['o'] = 'z'
     data = standard_b64encode(data)

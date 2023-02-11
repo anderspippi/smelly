@@ -31,7 +31,8 @@ def has_words(*words):
     def t(self, result):
         q = set(words)
         missing = q - get_all_words(result)
-        self.assertFalse(missing, f'Words missing. Command line: {self.current_cmd!r}')
+        self.assertFalse(
+            missing, f'Words missing. Command line: {self.current_cmd!r}')
 
     return t
 
@@ -40,7 +41,9 @@ def does_not_have_words(*words):
     def t(self, result):
         q = set(words)
         all_words = get_all_words(result)
-        self.assertFalse(q & all_words, f'Words unexpectedly present. Command line: {self.current_cmd!r}')
+        self.assertFalse(
+            q & all_words,
+            f'Words unexpectedly present. Command line: {self.current_cmd!r}')
 
     return t
 
@@ -49,7 +52,8 @@ def all_words(*words):
     def t(self, result):
         expected = set(words)
         actual = get_all_words(result)
-        self.assertEqual(expected, actual, f'Command line: {self.current_cmd!r}')
+        self.assertEqual(expected, actual,
+                         f'Command line: {self.current_cmd!r}')
 
     return t
 
@@ -88,8 +92,15 @@ def completion(self: TestCompletion, tdir: str):
         env['PATH'] = os.path.join(tdir, 'bin')
         env['HOME'] = os.path.join(tdir, 'sub')
         env['smelly_CONFIG_DIRECTORY'] = os.path.join(tdir, 'sub')
-        cp = subprocess.run([kitten(), '__complete__', 'json'], check=True, stdout=subprocess.PIPE, cwd=tdir, input=json.dumps(all_argv).encode(), env=env)
-        self.assertEqual(cp.returncode, 0, f'kitten __complete__ failed with exit code: {cp.returncode}')
+        cp = subprocess.run(
+            [kitten(),
+             '__complete__', 'json'],
+            check=True, stdout=subprocess.PIPE, cwd=tdir,
+            input=json.dumps(all_argv).encode(),
+            env=env)
+        self.assertEqual(
+            cp.returncode, 0,
+            f'kitten __complete__ failed with exit code: {cp.returncode}')
         return json.loads(cp.stdout)
 
     add('smelly ', has_words('@', '@ls', '+', '+open'))
@@ -128,12 +139,14 @@ def completion(self: TestCompletion, tdir: str):
     add('smelly +ope', has_words('+open'))
     add('smelly +open -', has_words('-1', '-T'))
 
-    add('smelly -', has_words('-c', '-1', '--'), does_not_have_words('--config', '--single-instance'))
+    add('smelly -', has_words('-c', '-1', '--'),
+        does_not_have_words('--config', '--single-instance'))
     add('smelly -c', all_words('-c'))
     add('smelly --', has_words('--config', '--single-instance', '--'))
     add('smelly --s', has_words('--session', '--start-as'))
     add('smelly --start-as', all_words('--start-as'))
-    add('smelly --start-as ', all_words('minimized', 'maximized', 'fullscreen', 'normal'))
+    add('smelly --start-as ', all_words('minimized',
+        'maximized', 'fullscreen', 'normal'))
     add('smelly -1 ', does_not_have_words('@ls', '@'))
     add('smelly --directory ', all_words('bin/', 'sub/'))
     add('smelly -1d ', all_words('exe1'))

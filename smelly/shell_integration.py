@@ -39,10 +39,14 @@ def is_new_zsh_install(env: Dict[str, str], zdotdir: Optional[str]) -> bool:
     return True
 
 
-def get_zsh_zdotdir_from_global_zshenv(env: Dict[str, str], argv: List[str]) -> Optional[str]:
+def get_zsh_zdotdir_from_global_zshenv(
+        env: Dict[str, str],
+        argv: List[str]) -> Optional[str]:
     exe = which(argv[0], only_system=True) or 'zsh'
     with suppress(Exception):
-        return subprocess.check_output([exe, '--norcs', '--interactive', '-c', 'echo -n $ZDOTDIR'], env=env).decode('utf-8')
+        return subprocess.check_output(
+            [exe, '--norcs', '--interactive', '-c', 'echo -n $ZDOTDIR'],
+            env=env).decode('utf-8')
     return None
 
 
@@ -158,7 +162,9 @@ def as_fish_str_literal(x: str) -> str:
     return f"'{x}'"
 
 
-def posix_serialize_env(env: Dict[str, str], prefix: str = 'builtin export', sep: str = '=') -> str:
+def posix_serialize_env(
+        env: Dict[str, str],
+        prefix: str = 'builtin export', sep: str = '=') -> str:
     ans = []
     for k, v in env.items():
         ans.append(f'{prefix} {as_str_literal(k)}{sep}{as_str_literal(v)}')
@@ -168,7 +174,8 @@ def posix_serialize_env(env: Dict[str, str], prefix: str = 'builtin export', sep
 def fish_serialize_env(env: Dict[str, str]) -> str:
     ans = []
     for k, v in env.items():
-        ans.append(f'set -gx {as_fish_str_literal(k)} {as_fish_str_literal(v)}')
+        ans.append(
+            f'set -gx {as_fish_str_literal(k)} {as_fish_str_literal(v)}')
     return '\n'.join(ans)
 
 
@@ -217,7 +224,9 @@ def get_effective_ksi_env_var(opts: Optional[Options] = None) -> str:
     return ' '.join(opts.shell_integration)
 
 
-def modify_shell_environ(opts: Options, env: Dict[str, str], argv: List[str]) -> None:
+def modify_shell_environ(
+        opts: Options, env: Dict[str, str],
+        argv: List[str]) -> None:
     shell = get_supported_shell_name(argv[0])
     ksi = get_effective_ksi_env_var(opts)
     if shell is None or not ksi:

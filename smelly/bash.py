@@ -63,7 +63,8 @@ def decode_ansi_c_quoted_string(text: str, pos: int) -> Tuple[str, int]:
                     a(ctrl_mask_char(text[pos]))
                     pos += 1
                 elif ec in 'xuU' and pos + 1 < len(text):
-                    hd, pos = read_hex_digit(text, pos, {'x': 2, 'u': 4, 'U': 8}[ec])
+                    hd, pos = read_hex_digit(
+                        text, pos, {'x': 2, 'u': 4, 'U': 8}[ec])
                     a(hd)
                 elif ec.isdigit():
                     hd, pos = read_octal_digit(text, pos - 1)
@@ -106,7 +107,7 @@ def parse_modern_bash_env(text: str) -> Dict[str, str]:
         if idx < 0:
             break
         key = line[:idx].rpartition(' ')[2]
-        val = line[idx + 1 :]
+        val = line[idx + 1:]
         if val.startswith('"'):
             val = decode_double_quoted_string(val, 1)[0]
         else:
@@ -130,7 +131,7 @@ def parse_bash_env(text: str, bash_version: str) -> Dict[str, str]:
         i = text.rfind(' ', 0, idx)
         if i < 0:
             break
-        key = text[i + 1 : idx]
+        key = text[i + 1: idx]
         pos = idx + 2
         ans[key], pos = decode_double_quoted_string(text, pos)
     return ans

@@ -28,7 +28,8 @@ class Tempfile:
         self.max_size = max_size
 
     def rollover_if_needed(self, sz: int) -> None:
-        if isinstance(self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
+        if isinstance(
+                self.file, io.BytesIO) and self.file.tell() + sz > self.max_size:
             before = self.file.getvalue()
             self.file = TemporaryFile()
             self.file.write(before)
@@ -47,7 +48,9 @@ class Tempfile:
         self.file.seek(offset)
         return self.file.read(size)
 
-    def create_chunker(self, offset: int, size: int) -> Callable[[], Callable[[], bytes]]:
+    def create_chunker(self, offset: int, size: int) -> Callable[[],
+                                                                 Callable[[],
+                                                                          bytes]]:
         def chunk_creator() -> Callable[[], bytes]:
             pos = offset
             limit = offset + size
@@ -173,7 +176,8 @@ def develop() -> Tuple[Clipboard, Clipboard]:
     from .fast_data_types import set_boss
     from .main import init_glfw_module
 
-    glfw_module = 'cocoa' if is_macos else ('wayland' if detect_if_wayland_ok() else 'x11')
+    glfw_module = 'cocoa' if is_macos else (
+        'wayland' if detect_if_wayland_ok() else 'x11')
 
     class Boss:
         clipboard = Clipboard()
@@ -209,7 +213,8 @@ class ReadRequest(NamedTuple):
     id: str = ''
     protocol_type: ProtocolType = ProtocolType.osc_52
 
-    def encode_response(self, status: str = 'DATA', mime: str = '', payload: bytes = b'') -> bytes:
+    def encode_response(self, status: str = 'DATA', mime: str = '',
+                        payload: bytes = b'') -> bytes:
         ans = f'{self.protocol_type.value};type=read:status={status}'
         if status == 'OK' and self.is_primary_selection:
             ans += ':loc=primary'
@@ -228,7 +233,8 @@ class ReadRequest(NamedTuple):
 def encode_osc52(loc: str, response: str) -> str:
     from base64 import standard_b64encode
 
-    return '52;{};{}'.format(loc, standard_b64encode(response.encode('utf-8')).decode('ascii'))
+    return '52;{};{}'.format(
+        loc, standard_b64encode(response.encode('utf-8')).decode('ascii'))
 
 
 class MimePos(NamedTuple):
@@ -253,7 +259,8 @@ class WriteRequest:
         self.mime_map: Dict[str, MimePos] = {}
         self.currently_writing_mime = ''
         self.current_leftover_bytes = memoryview(b'')
-        self.max_size = (get_options().clipboard_max_size * 1024 * 1024) if max_size < 0 else max_size
+        self.max_size = (
+            get_options().clipboard_max_size * 1024 * 1024) if max_size < 0 else max_size
         self.aliases: Dict[str, str] = {}
         self.commited = False
 
@@ -274,10 +281,14 @@ class WriteRequest:
                 pos = self.mime_map.get(src)
                 if pos is not None:
                     self.mime_map[alias] = pos
-            x = {mime: self.tempfile.create_chunker(pos.start, pos.size) for mime, pos in self.mime_map.items()}
+            x = {
+                mime: self.tempfile.create_chunker(pos.start, pos.size)
+                for mime, pos in self.mime_map.items()}
             cp.set_mime(x)
 
-    def add_base64_data(self, data: Union[str, bytes], mime: str = 'text/plain') -> None:
+    def add_base64_data(
+            self, data: Union[str, bytes],
+            mime: str = 'text/plain') -> None:
         if isinstance(data, str):
             data = data.encode('ascii')
         if self.currently_writing_mime and self.currently_writing_mime != mime:
@@ -302,12 +313,17 @@ class WriteRequest:
         if len(self.current_leftover_bytes) > 0:
             extra = 4 - len(self.current_leftover_bytes)
             if len(data) >= extra:
-                self.write_base64_data(memoryview(bytes(self.current_leftover_bytes) + data[:extra]))
+                self.write_base64_data(
+                    memoryview(
+                        bytes(
+                            self.current_leftover_bytes) +
+                        data[: extra]))
                 self.current_leftover_bytes = memoryview(b'')
                 data = memoryview(data)[extra:]
                 write_saving_leftover_bytes(data)
             else:
-                self.current_leftover_bytes = memoryview(bytes(self.current_leftover_bytes) + data)
+                self.current_leftover_bytes = memoryview(
+                    bytes(self.current_leftover_bytes) + data)
         else:
             write_saving_leftover_bytes(data)
 
@@ -318,7 +334,8 @@ class WriteRequest:
             if padding in (1, 2):
                 self.write_base64_data(memoryview(bytes(b) + b'=' * padding))
             start = self.mime_map[self.currently_writing_mime][0]
-            self.mime_map[self.currently_writing_mime] = MimePos(start, self.tempfile.tell() - start)
+            self.mime_map[self.currently_writing_mime] = MimePos(
+                start, self.tempfile.tell() - start)
             self.currently_writing_mime = ''
             self.current_leftover_bytes = memoryview(b'')
 
@@ -329,10 +346,12 @@ class WriteRequest:
             d = standard_b64decode(b)
             self.tempfile.write(d)
             if self.max_size > 0 and self.tempfile.tell() > (self.max_size * 1024 * 1024):
-                log_error(f'Clipboard write request has more data than allowed by clipboard_max_size ({self.max_size}), truncating')
+                log_error(
+                    f'Clipboard write request has more data than allowed by clipboard_max_size ({self.max_size}), truncating')
                 self.max_size_exceeded = True
 
-    def data_for(self, mime: str = 'text/plain', offset: int = 0, size: int = -1) -> bytes:
+    def data_for(
+            self, mime: str = 'text/plain', offset: int = 0, size: int = -1) -> bytes:
         start, full_size = self.mime_map[mime]
         if size == -1:
             size = full_size
@@ -371,14 +390,16 @@ class ClipboardRequestManager:
             self.handle_read_request(rr)
         elif typ == 'write':
             self.in_flight_write_request = WriteRequest(
-                is_primary_selection=m.get('loc', '') == 'primary', protocol_type=ProtocolType.osc_5522, id=sanitize_id(m.get('id', ''))
-            )
+                is_primary_selection=m.get('loc', '') == 'primary',
+                protocol_type=ProtocolType.osc_5522,
+                id=sanitize_id(m.get('id', '')))
             self.handle_write_request(self.in_flight_write_request)
         elif typ == 'walias':
             wr = self.in_flight_write_request
             mime = m.get('mime', '')
             if mime and wr is not None:
-                aliases = base64.standard_b64decode(epayload).decode('utf-8').split()
+                aliases = base64.standard_b64decode(
+                    epayload).decode('utf-8').split()
                 for alias in aliases:
                     wr.aliases[alias] = mime
         elif typ == 'wdata':
@@ -392,12 +413,14 @@ class ClipboardRequestManager:
                     wr.add_base64_data(epayload, mime)
                 except OSError:
                     if w is not None:
-                        w.screen.send_escape_code_to_child(OSC, wr.encode_response(status='EIO'))
+                        w.screen.send_escape_code_to_child(
+                            OSC, wr.encode_response(status='EIO'))
                     self.in_flight_write_request = None
                     raise
                 except Exception:
                     if w is not None:
-                        w.screen.send_escape_code_to_child(OSC, wr.encode_response(status='EINVAL'))
+                        w.screen.send_escape_code_to_child(
+                            OSC, wr.encode_response(status='EINVAL'))
                     self.in_flight_write_request = None
                     raise
             else:
@@ -405,17 +428,20 @@ class ClipboardRequestManager:
                 wr.commit()
                 self.in_flight_write_request = None
                 if w is not None:
-                    w.screen.send_escape_code_to_child(OSC, wr.encode_response(status='DONE'))
+                    w.screen.send_escape_code_to_child(
+                        OSC, wr.encode_response(status='DONE'))
 
     def parse_osc_52(self, data: str, is_partial: bool = False) -> None:
         where, text = data.partition(';')[::2]
         if text == '?':
-            rr = ReadRequest(is_primary_selection=ClipboardType.from_osc52_where_field(where) is ClipboardType.primary_selection)
+            rr = ReadRequest(is_primary_selection=ClipboardType.from_osc52_where_field(
+                where) is ClipboardType.primary_selection)
             self.handle_read_request(rr)
         else:
             wr = self.in_flight_write_request
             if wr is None:
-                wr = self.in_flight_write_request = WriteRequest(ClipboardType.from_osc52_where_field(where) is ClipboardType.primary_selection)
+                wr = self.in_flight_write_request = WriteRequest(
+                    ClipboardType.from_osc52_where_field(where) is ClipboardType.primary_selection)
             wr.add_base64_data(text)
             if is_partial:
                 return
@@ -428,7 +454,8 @@ class ClipboardRequestManager:
         allowed = q in get_options().clipboard_control
         self.fulfill_write_request(wr, allowed)
 
-    def fulfill_write_request(self, wr: WriteRequest, allowed: bool = True) -> None:
+    def fulfill_write_request(
+            self, wr: WriteRequest, allowed: bool = True) -> None:
         if wr.protocol_type is ProtocolType.osc_52:
             self.fulfill_legacy_write_request(wr, allowed)
             return
@@ -437,9 +464,12 @@ class ClipboardRequestManager:
         if not allowed or not cp.enabled:
             self.in_flight_write_request = None
             if w is not None:
-                w.screen.send_escape_code_to_child(OSC, wr.encode_response(status='EPERM' if not allowed else 'ENOSYS'))
+                w.screen.send_escape_code_to_child(
+                    OSC, wr.encode_response(
+                        status='EPERM' if not allowed else 'ENOSYS'))
 
-    def fulfill_legacy_write_request(self, wr: WriteRequest, allowed: bool = True) -> None:
+    def fulfill_legacy_write_request(
+            self, wr: WriteRequest, allowed: bool = True) -> None:
         cp = get_boss().primary_selection if wr.is_primary_selection else get_boss().clipboard
         w = get_boss().window_id_map.get(self.window_id)
         if w is not None and cp.enabled and allowed:
@@ -458,7 +488,8 @@ class ClipboardRequestManager:
         else:
             self.fulfill_read_request(rr, allowed=allowed)
 
-    def fulfill_read_request(self, rr: ReadRequest, allowed: bool = True) -> None:
+    def fulfill_read_request(
+            self, rr: ReadRequest, allowed: bool = True) -> None:
         if rr.protocol_type is ProtocolType.osc_52:
             return self.fulfill_legacy_read_request(rr, allowed)
         w = get_boss().window_id_map.get(self.window_id)
@@ -466,12 +497,15 @@ class ClipboardRequestManager:
             return
         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
         if not cp.enabled:
-            w.screen.send_escape_code_to_child(OSC, rr.encode_response(status='ENOSYS'))
+            w.screen.send_escape_code_to_child(
+                OSC, rr.encode_response(status='ENOSYS'))
             return
         if not allowed:
-            w.screen.send_escape_code_to_child(OSC, rr.encode_response(status='EPERM'))
+            w.screen.send_escape_code_to_child(
+                OSC, rr.encode_response(status='EPERM'))
             return
-        w.screen.send_escape_code_to_child(OSC, rr.encode_response(status='OK'))
+        w.screen.send_escape_code_to_child(
+            OSC, rr.encode_response(status='OK'))
 
         current_mime = ''
 
@@ -479,31 +513,41 @@ class ClipboardRequestManager:
             assert w is not None
             mv = memoryview(data)
             while mv:
-                w.screen.send_escape_code_to_child(OSC, rr.encode_response(payload=mv[:4096], mime=current_mime))
+                w.screen.send_escape_code_to_child(
+                    OSC, rr.encode_response(
+                        payload=mv[: 4096],
+                        mime=current_mime))
                 mv = mv[4096:]
 
         for mime in rr.mime_types:
             current_mime = mime
             if mime == TARGETS_MIME:
-                payload = ' '.join(cp.get_available_mime_types_for_paste()).encode('utf-8')
+                payload = ' '.join(
+                    cp.get_available_mime_types_for_paste()).encode('utf-8')
                 if payload:
                     payload += b'\n'
-                w.screen.send_escape_code_to_child(OSC, rr.encode_response(payload=payload, mime=current_mime))
+                w.screen.send_escape_code_to_child(
+                    OSC, rr.encode_response(
+                        payload=payload, mime=current_mime))
                 continue
             try:
                 cp.get_mime(mime, write_chunks)
             except Exception as e:
-                log_error(f'Failed to read requested mime type {mime} with error: {e}')
-        w.screen.send_escape_code_to_child(OSC, rr.encode_response(status='DONE'))
+                log_error(
+                    f'Failed to read requested mime type {mime} with error: {e}')
+        w.screen.send_escape_code_to_child(
+            OSC, rr.encode_response(status='DONE'))
 
     def reject_read_request(self, rr: ReadRequest) -> None:
         if rr.protocol_type is ProtocolType.osc_52:
             return self.fulfill_legacy_read_request(rr, False)
         w = get_boss().window_id_map.get(self.window_id)
         if w is not None:
-            w.screen.send_escape_code_to_child(OSC, rr.encode_response(status='EPERM'))
+            w.screen.send_escape_code_to_child(
+                OSC, rr.encode_response(status='EPERM'))
 
-    def fulfill_legacy_read_request(self, rr: ReadRequest, allowed: bool = True) -> None:
+    def fulfill_legacy_read_request(
+            self, rr: ReadRequest, allowed: bool = True) -> None:
         cp = get_boss().primary_selection if rr.is_primary_selection else get_boss().clipboard
         w = get_boss().window_id_map.get(self.window_id)
         if w is not None:
@@ -524,10 +568,10 @@ class ClipboardRequestManager:
         if w is not None:
             self.currently_asking_permission_for = rr
             get_boss().confirm(
-                _('A program running in this window wants to read from the system clipboard.' ' Allow it to do so, once?'),
-                self.handle_clipboard_confirmation,
-                window=w,
-            )
+                _(
+                    'A program running in this window wants to read from the system clipboard.'
+                    ' Allow it to do so, once?'),
+                self.handle_clipboard_confirmation, window=w,)
 
     def handle_clipboard_confirmation(self, confirmed: bool) -> None:
         rr = self.currently_asking_permission_for

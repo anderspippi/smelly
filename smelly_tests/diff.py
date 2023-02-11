@@ -19,7 +19,10 @@ class TestDiff(BaseTest):
         ]:
             pc, sc = changed_center(left, right)
             for src in (left, right):
-                self.assertEqual((prefix, suffix), (src[:pc], src[-sc:] if sc else ''))
+                self.assertEqual(
+                    (prefix, suffix),
+                    (src[: pc],
+                     src[-sc:] if sc else ''))
 
     def test_split_with_highlights(self):
         from wellies.diff.render import Segment, split_with_highlights, truncate_points
@@ -43,7 +46,9 @@ class TestDiff(BaseTest):
             return ans
 
         highlights = [h(0, 1, 1), h(1, 3, 2)]
-        self.ae(['S1SaE1ES2SbcE2Ed'], split_with_highlights('abcd', 10, highlights))
+        self.ae(
+            ['S1SaE1ES2SbcE2Ed'],
+            split_with_highlights('abcd', 10, highlights))
 
     def test_walk(self):
         import tempfile
@@ -74,7 +79,9 @@ class TestDiff(BaseTest):
             Path(tmpdir, "f/g").touch()
             Path(tmpdir, "h space").touch()
             expected_names = {"d", "e", "f/g", "h space"}
-            expected_pmap = {"d": f"{tmpdir}/d", "e": f"{tmpdir}/e", "f/g": f"{tmpdir}/f/g", "h space": f"{tmpdir}/h space"}
+            expected_pmap = {
+                "d": f"{tmpdir}/d", "e": f"{tmpdir}/e", "f/g": f"{tmpdir}/f/g",
+                "h space": f"{tmpdir}/h space"}
             names = set()
             pmap = {}
             walk(tmpdir, names, pmap, ("*~", "#*#", "b"))

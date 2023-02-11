@@ -15,7 +15,11 @@ class TestGLFW(BaseTest):
         from smelly.utils import get_new_os_window_size
 
         def t(w, h, width=0, height=0, unit='cells', incremental=False):
-            self.ae((w, h), get_new_os_window_size(metrics, width, height, unit, incremental, has_window_scaling))
+            self.ae(
+                (w, h),
+                get_new_os_window_size(
+                    metrics, width, height, unit, incremental,
+                    has_window_scaling))
 
         with self.subTest(has_window_scaling=False):
             has_window_scaling = False
@@ -32,20 +36,27 @@ class TestGLFW(BaseTest):
                 'cell_height': 16,
             }
             t(80 * metrics['cell_width'], 100, 80)
-            t(80 * metrics['cell_width'] + metrics['width'], 100, 80, incremental=True)
+            t(80 * metrics['cell_width'] + metrics['width'],
+              100, 80, incremental=True)
             t(1217, 100, 1217, unit='pixels')
-            t(1217 + metrics['width'], 100, 1217, unit='pixels', incremental=True)
+            t(1217 + metrics['width'], 100, 1217,
+              unit='pixels', incremental=True)
 
         with self.subTest(has_window_scaling=True):
             has_window_scaling = True
             metrics['framebuffer_width'] = metrics['width'] * 2
             metrics['framebuffer_height'] = metrics['height'] * 2
             t(80 * metrics['cell_width'] / metrics['xscale'], 100, 80)
-            t(80 * metrics['cell_width'] / metrics['xscale'] + metrics['width'], 100, 80, incremental=True)
+            t(80 * metrics['cell_width'] / metrics['xscale'] + metrics
+              ['width'],
+              100, 80, incremental=True)
             t(1217, 100, 1217, unit='pixels')
-            t(1217 + metrics['width'], 100, 1217, unit='pixels', incremental=True)
+            t(1217 + metrics['width'], 100, 1217,
+              unit='pixels', incremental=True)
 
-    @unittest.skipIf(is_macos, 'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
+    @unittest.skipIf(
+        is_macos,
+        'Skipping test on macOS because glfw-cocoa.so is not built with backend_utils')
     def test_utf_8_strndup(self):
         import ctypes
 
@@ -71,13 +82,19 @@ class TestGLFW(BaseTest):
                 part = string[:length]
                 part_bytes = bytes(part, 'utf-8')
                 length_bytes = len(part_bytes)
-                for length_bytes_2 in range(prev_length_bytes + 1, length_bytes):
-                    self.ae(utf_8_strndup(string_bytes, length_bytes_2).value, prev_part_bytes)
-                self.ae(utf_8_strndup(string_bytes, length_bytes).value, part_bytes)
+                for length_bytes_2 in range(
+                        prev_length_bytes + 1, length_bytes):
+                    self.ae(
+                        utf_8_strndup(string_bytes, length_bytes_2).value,
+                        prev_part_bytes)
+                self.ae(
+                    utf_8_strndup(string_bytes, length_bytes).value,
+                    part_bytes)
                 prev_part_bytes = part_bytes
                 prev_length_bytes = length_bytes
             # Try to go one character after the end of the string
-            self.ae(utf_8_strndup(string_bytes, len(string_bytes) + 1).value, string_bytes)
+            self.ae(utf_8_strndup(string_bytes, len(
+                string_bytes) + 1).value, string_bytes)
 
         self.ae(utf_8_strndup(None, 2).value, None)
         self.ae(utf_8_strndup(b'', 2).value, b'')

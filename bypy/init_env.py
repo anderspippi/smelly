@@ -26,7 +26,8 @@ def initialize_constants():
     src = read_src_file('constants.py')
     nv = re.search(r'Version\((\d+), (\d+), (\d+)\)', src)
     smelly_constants['version'] = f'{nv.group(1)}.{nv.group(2)}.{nv.group(3)}'
-    smelly_constants['appname'] = re.search(r'appname: str\s+=\s+(u{0,1})[\'"]([^\'"]+)[\'"]', src).group(2)
+    smelly_constants['appname'] = re.search(
+        r'appname: str\s+=\s+(u{0,1})[\'"]([^\'"]+)[\'"]', src).group(2)
     smelly_constants['cacerts_url'] = 'https://curl.haxx.se/ca/cacert.pem'
     return smelly_constants
 
@@ -49,7 +50,8 @@ SETUP_CMD = [PYTHON, 'setup.py', '--build-universal-binary']
 
 def build_frozen_launcher(extra_include_dirs):
     inc_dirs = [f'--extra-include-dirs={x}' for x in extra_include_dirs]
-    cmd = SETUP_CMD + ['--prefix', build_frozen_launcher.prefix] + inc_dirs + ['build-frozen-launcher']
+    cmd = SETUP_CMD + ['--prefix',
+                       build_frozen_launcher.prefix] + inc_dirs + ['build-frozen-launcher']
     if run(*cmd, cwd=build_frozen_launcher.writeable_src_dir) != 0:
         print('Building of frozen smelly launcher failed', file=sys.stderr)
         os.chdir(smelly_DIR)
@@ -60,21 +62,27 @@ def build_frozen_launcher(extra_include_dirs):
 
 def run_tests(smelly_exe):
     with tempfile.TemporaryDirectory() as tdir:
-        uenv = {'smelly_CONFIG_DIRECTORY': os.path.join(tdir, 'conf'), 'smelly_CACHE_DIRECTORY': os.path.join(tdir, 'cache')}
+        uenv = {'smelly_CONFIG_DIRECTORY': os.path.join(
+            tdir, 'conf'), 'smelly_CACHE_DIRECTORY': os.path.join(tdir, 'cache')}
         [os.mkdir(x) for x in uenv.values()]
         env = os.environ.copy()
         env.update(uenv)
-        cmd = [smelly_exe, '+runpy', 'from smelly_tests.main import run_tests; run_tests(report_env=True)']
+        cmd = [
+            smelly_exe, '+runpy',
+            'from smelly_tests.main import run_tests; run_tests(report_env=True)']
         print(*map(shlex.quote, cmd), flush=True)
-        if subprocess.call(cmd, env=env, cwd=build_frozen_launcher.writeable_src_dir) != 0:
-            print('Checking of smelly build failed, in directory:', build_frozen_launcher.writeable_src_dir, file=sys.stderr)
+        if subprocess.call(cmd, env=env,
+                           cwd=build_frozen_launcher.writeable_src_dir) != 0:
+            print('Checking of smelly build failed, in directory:',
+                  build_frozen_launcher.writeable_src_dir, file=sys.stderr)
             os.chdir(os.path.dirname(smelly_exe))
             run_shell()
             raise SystemExit('Checking of smelly build failed')
 
 
 def build_frozen_tools(smelly_exe):
-    cmd = SETUP_CMD + ['--prefix', os.path.dirname(smelly_exe)] + ['build-frozen-tools']
+    cmd = SETUP_CMD + ['--prefix',
+                       os.path.dirname(smelly_exe)] + ['build-frozen-tools']
     if run(*cmd, cwd=build_frozen_launcher.writeable_src_dir) != 0:
         print('Building of frozen kitten failed', file=sys.stderr)
         os.chdir(smelly_DIR)
@@ -92,11 +100,14 @@ def build_c_extensions(ext_dir, args):
     writeable_src_dir = os.path.join(ext_dir, 'src')
     build_frozen_launcher.writeable_src_dir = writeable_src_dir
     shutil.copytree(
-        smelly_DIR, writeable_src_dir, symlinks=True, ignore=shutil.ignore_patterns('b', 'build', 'dist', '*_commands.json', '*.o', '*.so', '*.dylib', '*.pyd')
-    )
+        smelly_DIR, writeable_src_dir, symlinks=True,
+        ignore=shutil.ignore_patterns(
+            'b', 'build', 'dist', '*_commands.json', '*.o', '*.so', '*.dylib',
+            '*.pyd'))
 
     with suppress(FileNotFoundError):
-        os.unlink(os.path.join(writeable_src_dir, 'smelly', 'launcher', 'smelly'))
+        os.unlink(os.path.join(writeable_src_dir,
+                  'smelly', 'launcher', 'smelly'))
 
     cmd = SETUP_CMD + ['macos-freeze' if ismacos else 'linux-freeze']
     if args.dont_strip:

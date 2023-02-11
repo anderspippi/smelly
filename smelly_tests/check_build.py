@@ -23,7 +23,8 @@ class TestBuild(BaseTest):
         exe = kitten_exe()
         self.assertTrue(os.access(exe, os.X_OK))
         self.assertTrue(os.path.isfile(exe))
-        self.assertIn(str_version, subprocess.check_output([exe, '--version']).decode())
+        self.assertIn(str_version, subprocess.check_output(
+            [exe, '--version']).decode())
 
     def test_loading_extensions(self) -> None:
         import smelly.fast_data_types as fdt
@@ -50,7 +51,9 @@ class TestBuild(BaseTest):
         for name in modules:
             path = glfw_path(name)
             self.assertTrue(os.path.isfile(path), f'{path} is not a file')
-            self.assertTrue(os.access(path, os.X_OK), f'{path} is not executable')
+            self.assertTrue(
+                os.access(path, os.X_OK),
+                f'{path} is not executable')
 
     def test_all_kitten_names(self) -> None:
         from wellies.runner import all_kitten_names
@@ -64,8 +67,12 @@ class TestBuild(BaseTest):
         from smelly.constants import local_docs, logo_png_file, shell_integration_dir, terminfo_dir
 
         zsh = os.path.join(shell_integration_dir, 'zsh')
-        self.assertTrue(os.path.isdir(terminfo_dir), f'Terminfo dir: {terminfo_dir}')
-        self.assertTrue(os.path.exists(logo_png_file), f'Logo file: {logo_png_file}')
+        self.assertTrue(
+            os.path.isdir(terminfo_dir),
+            f'Terminfo dir: {terminfo_dir}')
+        self.assertTrue(
+            os.path.exists(logo_png_file),
+            f'Logo file: {logo_png_file}')
         self.assertTrue(os.path.exists(zsh), f'Shell integration: {zsh}')
 
         def is_executable(x):
@@ -77,7 +84,9 @@ class TestBuild(BaseTest):
             x = os.path.join(shell_integration_dir, 'ssh', x)
             self.assertTrue(is_executable(x), f'{x} is not executable')
         if getattr(sys, 'frozen', False):
-            self.assertTrue(os.path.isdir(local_docs()), f'Local docs: {local_docs()}')
+            self.assertTrue(
+                os.path.isdir(local_docs()),
+                f'Local docs: {local_docs()}')
 
     def test_ca_certificates(self):
         import ssl
@@ -107,7 +116,8 @@ class TestBuild(BaseTest):
             t('wellies/ssh#frag', f'wellies/ssh{suffix}#frag')
             t('#ref=confloc', f'conf{suffix}#confloc')
             t('#ref=conf-smelly-fonts', f'conf{suffix}#conf-smelly-fonts')
-            t('#ref=conf-kitten-ssh-xxx', f'wellies/ssh{suffix}#conf-kitten-ssh-xxx')
+            t('#ref=conf-kitten-ssh-xxx',
+              f'wellies/ssh{suffix}#conf-kitten-ssh-xxx')
             t('#ref=at_close_tab', f'remote-control{suffix}#at-close-tab')
             t('#ref=at-close-tab', f'remote-control{suffix}#at-close-tab')
             t('#ref=action-copy', f'actions{suffix}#copy')
@@ -116,7 +126,9 @@ class TestBuild(BaseTest):
         run_tests(partial(docs_url, local_docs_root='/docs'), 'file:///docs/')
         w = website_url()
         run_tests(partial(docs_url, local_docs_root=None), w, '/')
-        self.ae(docs_url('#ref=issues-123'), 'https://github.com/backbiter-no/smelly/issues/123')
+        self.ae(
+            docs_url('#ref=issues-123'),
+            'https://github.com/backbiter-no/smelly/issues/123')
 
     def test_launcher_ensures_stdio(self):
         import subprocess

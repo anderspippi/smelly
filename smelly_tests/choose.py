@@ -49,7 +49,9 @@ class TestMatcher(BaseTest):
 
     def test_marking(self):
         'Marking of matched characters'
-        self.basic_test('test\nxyz', 'ts', '\x1b[32mt\x1b[39me\x1b[32ms\x1b[39mt', mark=True)
+        self.basic_test(
+            'test\nxyz', 'ts', '\x1b[32mt\x1b[39me\x1b[32ms\x1b[39mt',
+            mark=True)
 
     def test_positions(self):
         'Output of positions'

@@ -9,15 +9,30 @@ from time import CLOCK_MONOTONIC, clock_gettime, sleep
 
 def main():
     parser = ArgumentParser(description='Generate text')
-    parser.add_argument('--freq', default=10000, type=int, help='Number of lines to try to write per second. Will warn if not attained.')
-    parser.add_argument('--color', action='store_true', help='Add color to the output')
-    parser.add_argument('--unicode', action='store_true', help='Mix in some unicode characters')
-    parser.add_argument('--length', default=50, type=int, help='Average line length')
-    parser.add_argument('--lengthvar', default=0.3, type=float, help='Variation for line length, in ratio of line length')
-    parser.add_argument('--emptylines', default=0.1, type=float, help='ratio of empty lines')
-    parser.add_argument('--linesperwrite', default=1, type=int, help='number of lines to repeat/write at a time')
-    parser.add_argument('--patterns', default=1000, type=int, help='number of different pattern to alternate')
-    parser.add_argument('--seed', default=sys.argv[0], type=str, help='seed to get different output')
+    parser.add_argument(
+        '--freq', default=10000, type=int,
+        help='Number of lines to try to write per second. Will warn if not attained.')
+    parser.add_argument('--color', action='store_true',
+                        help='Add color to the output')
+    parser.add_argument(
+        '--unicode', action='store_true',
+        help='Mix in some unicode characters')
+    parser.add_argument('--length', default=50, type=int,
+                        help='Average line length')
+    parser.add_argument(
+        '--lengthvar', default=0.3, type=float,
+        help='Variation for line length, in ratio of line length')
+    parser.add_argument('--emptylines', default=0.1,
+                        type=float, help='ratio of empty lines')
+    parser.add_argument(
+        '--linesperwrite', default=1, type=int,
+        help='number of lines to repeat/write at a time')
+    parser.add_argument(
+        '--patterns', default=1000, type=int,
+        help='number of different pattern to alternate')
+    parser.add_argument(
+        '--seed', default=sys.argv[0],
+        type=str, help='seed to get different output')
     args = parser.parse_args()
 
     rng = Random()
@@ -25,7 +40,8 @@ def main():
 
     characters = [c for c in printable if c not in '\r\n\x0b\x0c']
     if args.color:
-        characters += ['\x1b[91m', '\x1b[0m', '\x1b[1;32m', '\x1b[22m', '\x1b[35m']
+        characters += ['\x1b[91m', '\x1b[0m',
+                       '\x1b[1;32m', '\x1b[22m', '\x1b[35m']
 
     if args.unicode:
         characters += ['日', '本', '💜', '☃', '🎩', '🍀', '、']

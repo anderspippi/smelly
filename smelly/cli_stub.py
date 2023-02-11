@@ -22,9 +22,11 @@ def generate_stub() -> None:
 
     text = 'import typing\n\n\n'
 
-    def do(otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
+    def do(
+            otext=None, cls: str = 'CLIOptions', extra_fields: Sequence[str] = ()):
         nonlocal text
-        text += as_type_stub(*parse_option_spec(otext), class_name=cls, extra_fields=extra_fields)
+        text += as_type_stub(*parse_option_spec(otext),
+                             class_name=cls, extra_fields=extra_fields)
 
     do(extra_fields=('args: typing.List[str]',))
 
@@ -113,4 +115,6 @@ def generate_stub() -> None:
 if __name__ == '__main__':
     import subprocess
 
-    subprocess.Popen(['smelly', '+runpy', 'from smelly.cli_stub import generate_stub; generate_stub()'])
+    subprocess.Popen(
+        ['smelly', '+runpy',
+         'from smelly.cli_stub import generate_stub; generate_stub()'])

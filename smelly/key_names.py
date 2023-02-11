@@ -81,7 +81,8 @@ else:
         f.argtypes = [ctypes.c_char_p, ctypes.c_int]
         f.restype = ctypes.c_int
 
-        def xkb_lookup(name: str, case_sensitive: bool = False) -> Optional[int]:
+        def xkb_lookup(
+                name: str, case_sensitive: bool = False) -> Optional[int]:
             q = name.encode('utf-8')
             return f(q, int(case_sensitive)) or None
 
@@ -93,7 +94,9 @@ else:
             try:
                 ans = load_libxkb_lookup()
             except Exception as e:
-                print('Failed to load libxkbcommon.xkb_keysym_from_name with error:', e, file=sys.stderr)
+                print(
+                    'Failed to load libxkbcommon.xkb_keysym_from_name with error:',
+                    e, file=sys.stderr)
                 ans = null_lookup
             setattr(get_key_name_lookup, 'ans', ans)
         return ans

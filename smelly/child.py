@@ -52,7 +52,8 @@ else:
 
             cp = subprocess.run(['pwdx', str(pid)], capture_output=True)
             if cp.returncode != 0:
-                raise ValueError(f'Failed to find cwd of process with pid: {pid}')
+                raise ValueError(
+                    f'Failed to find cwd of process with pid: {pid}')
             ans = cp.stdout.decode('utf-8', 'replace').split()[1]
             return os.path.realpath(ans)
 
@@ -92,7 +93,8 @@ def checked_terminfo_dir() -> Optional[str]:
 
 
 def processes_in_group(grp: int) -> List[int]:
-    gmap: Optional[DefaultDict[int, List[int]]] = getattr(process_group_map, 'cached_map', None)
+    gmap: Optional[DefaultDict[int, List[int]]] = getattr(
+        process_group_map, 'cached_map', None)
     if gmap is None:
         try:
             gmap = process_group_map()
@@ -130,7 +132,7 @@ def parse_environ_block(data: str) -> Dict[str, str]:
         equal_pos = data.find("=", pos, next_pos)
         if equal_pos > pos:
             key = data[pos:equal_pos]
-            value = data[equal_pos + 1 : next_pos]
+            value = data[equal_pos + 1: next_pos]
             ret[key] = value
         pos = next_pos + 1
 
@@ -247,9 +249,11 @@ class Child:
         self.argv = list(argv)
         if cwd_from:
             try:
-                cwd = cwd_from.modify_argv_for_launch_with_cwd(self.argv) or cwd
+                cwd = cwd_from.modify_argv_for_launch_with_cwd(
+                    self.argv) or cwd
             except Exception as err:
-                log_error(f'Failed to read cwd of {cwd_from} with error: {err}')
+                log_error(
+                    f'Failed to read cwd of {cwd_from} with error: {err}')
         else:
             cwd = os.path.expandvars(os.path.expanduser(cwd or os.getcwd()))
         self.cwd = os.path.abspath(cwd)
@@ -340,7 +344,8 @@ class Child:
         self.final_argv0 = argv[0]
         if self.is_prewarmed:
             fe = self.final_env()
-            self.prewarmed_child = fast_data_types.get_boss().prewarm(slave, self.argv, self.cwd, fe, stdin)
+            self.prewarmed_child = fast_data_types.get_boss().prewarm(
+                slave, self.argv, self.cwd, fe, stdin)
             pid = self.prewarmed_child.child_process_pid
         else:
             pid = fast_data_types.spawn(
@@ -378,7 +383,8 @@ class Child:
 
     def mark_terminal_ready(self) -> None:
         if self.is_prewarmed:
-            fast_data_types.get_boss().prewarm.mark_child_as_ready(self.prewarmed_child.child_id)
+            fast_data_types.get_boss().prewarm.mark_child_as_ready(
+                self.prewarmed_child.child_id)
         else:
             os.close(self.terminal_ready_fd)
             self.terminal_ready_fd = -1
@@ -388,7 +394,8 @@ class Child:
             ans = cmdline_of_pid(pid)
         except Exception:
             ans = []
-        if pid == self.pid and (not ans or (self.is_prewarmed and ans == cmdline_of_prewarmer())):
+        if pid == self.pid and (
+                not ans or (self.is_prewarmed and ans == cmdline_of_prewarmer())):
             ans = list(self.argv)
         return ans
 
@@ -398,7 +405,8 @@ class Child:
             return []
         try:
             pgrp = os.tcgetpgrp(self.child_fd)
-            foreground_processes = processes_in_group(pgrp) if pgrp >= 0 else []
+            foreground_processes = processes_in_group(
+                pgrp) if pgrp >= 0 else []
 
             def process_desc(pid: int) -> ProcessDesc:
                 ans: ProcessDesc = {'pid': pid, 'cmdline': None, 'cwd': None}
@@ -447,7 +455,8 @@ class Child:
         with suppress(Exception):
             assert self.child_fd is not None
             pgrp = os.tcgetpgrp(self.child_fd)
-            foreground_processes = processes_in_group(pgrp) if pgrp >= 0 else []
+            foreground_processes = processes_in_group(
+                pgrp) if pgrp >= 0 else []
             if foreground_processes:
                 # there is no easy way that I know of to know which process is the
                 # foreground process in this group from the users perspective,
@@ -459,7 +468,8 @@ class Child:
                 # vim
                 # With this script , the foreground process group will contain
                 # both the bash instance running the script and vim.
-                return min(foreground_processes) if oldest else max(foreground_processes)
+                return min(foreground_processes) if oldest else max(
+                    foreground_processes)
         return self.pid
 
     @property

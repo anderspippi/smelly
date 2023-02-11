@@ -19,7 +19,8 @@ def run(*args):
     try:
         subprocess.check_call(args)
     except OSError:
-        raise SystemExit(f'You are missing the {args[0]} program needed to generate the smelly logo')
+        raise SystemExit(
+            f'You are missing the {args[0]} program needed to generate the smelly logo')
 
 
 def render(output, sz=256, src=unframed_src):

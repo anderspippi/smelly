@@ -303,7 +303,8 @@ Relative paths are resolved relative to the :ref:`smelly config directory
 def parse_launch_args(args: Optional[Sequence[str]] = None) -> LaunchSpec:
     args = list(args or ())
     try:
-        opts, args = parse_args(result_class=LaunchCLIOptions, args=args, ospec=options_spec)
+        opts, args = parse_args(
+            result_class=LaunchCLIOptions, args=args, ospec=options_spec)
     except SystemExit as e:
         raise ValueError from e
     return LaunchSpec(opts, args)
@@ -319,10 +320,13 @@ def get_env(opts: LaunchCLIOptions, active_child: Optional[Child] = None) -> Dic
     return env
 
 
-def tab_for_window(boss: Boss, opts: LaunchCLIOptions, target_tab: Optional[Tab] = None) -> Optional[Tab]:
+def tab_for_window(boss: Boss, opts: LaunchCLIOptions,
+                   target_tab: Optional[Tab] = None) -> Optional[Tab]:
     def create_tab(tm: Optional[TabManager] = None) -> Tab:
         if tm is None:
-            oswid = boss.add_os_window(wclass=opts.os_window_class, wname=opts.os_window_name, override_title=opts.os_window_title or None)
+            oswid = boss.add_os_window(
+                wclass=opts.os_window_class, wname=opts.os_window_name,
+                override_title=opts.os_window_title or None)
             tm = boss.os_window_map[oswid]
         tab = tm.new_tab(empty_tab=True, location=opts.location)
         if opts.tab_title:
@@ -362,7 +366,8 @@ def load_watch_modules(watchers: Iterable[str]) -> Optional[Watchers]:
                 import traceback
 
                 log_error(traceback.format_exc())
-                log_error(f'Failed to load watcher from {path} with error: {err}')
+                log_error(
+                    f'Failed to load watcher from {path} with error: {err}')
                 watcher_modules[path] = False
                 continue
             watcher_modules[path] = m
@@ -446,7 +451,8 @@ def launch(
         opts.tab_title = atab.effective_title if atab else None
     if opts.os_window_title == 'current':
         tm = boss.active_tab_manager
-        opts.os_window_title = get_os_window_title(tm.os_window_id) if tm else None
+        opts.os_window_title = get_os_window_title(
+            tm.os_window_id) if tm else None
     env = get_env(opts, active_child)
     remote_control_restrictions: Optional[Dict[str, Sequence[str]]] = None
     if opts.allow_remote_control and opts.remote_control_password:
@@ -480,7 +486,8 @@ def launch(
                 kw['cwd_from'] = CwdRequest(active)
         elif opts.cwd == 'last_reported':
             if active:
-                kw['cwd_from'] = CwdRequest(active, CwdRequestType.last_reported)
+                kw['cwd_from'] = CwdRequest(
+                    active, CwdRequestType.last_reported)
         elif opts.cwd == 'oldest':
             if active:
                 kw['cwd_from'] = CwdRequest(active, CwdRequestType.oldest)
@@ -511,7 +518,8 @@ def launch(
                 q = f'@ansi_{q[1:]}'
         if opts.stdin_add_line_wrap_markers:
             q += '_wrap'
-        penv, stdin = boss.process_stdin_source(window=active, stdin=q, copy_pipe_data=pipe_data)
+        penv, stdin = boss.process_stdin_source(
+            window=active, stdin=q, copy_pipe_data=pipe_data)
         if stdin:
             kw['stdin'] = stdin
             if penv:
@@ -565,8 +573,12 @@ def launch(
     if opts.type == 'background':
         cmd = kw['cmd']
         if not cmd:
-            raise ValueError('The cmd to run must be specified when running a background process')
-        boss.run_background_process(cmd, cwd=kw['cwd'], cwd_from=kw['cwd_from'], env=env or None, stdin=kw['stdin'])
+            raise ValueError(
+                'The cmd to run must be specified when running a background process')
+        boss.run_background_process(
+            cmd, cwd=kw['cwd'],
+            cwd_from=kw['cwd_from'],
+            env=env or None, stdin=kw['stdin'])
     elif opts.type in ('clipboard', 'primary'):
         stdin = kw.get('stdin')
         if stdin is not None:
@@ -584,16 +596,21 @@ def launch(
             tab = tab_for_window(boss, opts, target_tab)
         if tab is not None:
             watchers = load_watch_modules(opts.watcher)
-            new_window: Window = tab.new_window(env=env or None, watchers=watchers or None, is_clone_launch=is_clone_launch, **kw)
+            new_window: Window = tab.new_window(
+                env=env or None, watchers=watchers or None,
+                is_clone_launch=is_clone_launch, **kw)
             if spacing:
                 patch_window_edges(new_window, spacing)
                 tab.relayout()
             if opts.color:
                 apply_colors(new_window, opts.color)
             if opts.keep_focus and active:
-                boss.set_active_window(active, switch_os_window_if_needed=True, for_keep_focus=True)
+                boss.set_active_window(
+                    active, switch_os_window_if_needed=True,
+                    for_keep_focus=True)
             if opts.logo:
-                new_window.set_logo(opts.logo, opts.logo_position or '', opts.logo_alpha)
+                new_window.set_logo(
+                    opts.logo, opts.logo_position or '', opts.logo_alpha)
             if opts.type == 'overlay-main':
                 new_window.overlay_type = OverlayType.main
             return new_window
@@ -688,8 +705,10 @@ class EditCmd:
         if self.abort_signaled:
             return
         if self.version > 0:
-            raise ValueError(f'Unsupported version received in edit protocol: {self.version}')
-        self.opts, extra_args = parse_opts_for_clone(['--type=overlay'] + self.args)
+            raise ValueError(
+                f'Unsupported version received in edit protocol: {self.version}')
+        self.opts, extra_args = parse_opts_for_clone(
+            ['--type=overlay'] + self.args)
         self.file_spec = extra_args.pop()
         self.line_number = 0
         import re
@@ -700,7 +719,8 @@ class EditCmd:
             if m is not None:
                 self.line_number = int(m.group(1))
         self.file_name = os.path.basename(self.file_spec)
-        self.file_localpath = os.path.normpath(os.path.join(self.cwd, self.file_spec))
+        self.file_localpath = os.path.normpath(
+            os.path.join(self.cwd, self.file_spec))
         self.is_local_file = False
         with suppress(OSError):
             st = os.stat(self.file_localpath)
@@ -758,7 +778,8 @@ class EditCmd:
         else:
             self.schedule_check()
 
-    def send_data(self, window: Window, data_type: str, data: bytes = b'') -> None:
+    def send_data(
+            self, window: Window, data_type: str, data: bytes = b'') -> None:
         window.write_to_child(f'smelly_DATA_START\n{data_type}\n')
         if data:
             import base64
@@ -861,7 +882,8 @@ def remote_edit(msg: str, window: Window) -> None:
         if q is not None:
             q.abort_signaled = c.abort_signaled
         return
-    cmdline = get_editor(path_to_edit=c.file_localpath, line_number=c.line_number)
+    cmdline = get_editor(path_to_edit=c.file_localpath,
+                         line_number=c.line_number)
     w = launch(get_boss(), c.opts, cmdline, active=window)
     if w is not None:
         c.source_window_id = window.id
@@ -889,7 +911,8 @@ def clone_and_launch(msg: str, window: Window) -> None:
         # only pass VIRTUAL_ENV if it is currently active
         if f"{env_to_serialize['VIRTUAL_ENV']}/bin" not in env_to_serialize['PATH'].split(os.pathsep):
             del env_to_serialize['VIRTUAL_ENV']
-    env_to_serialize['smelly_CLONE_SOURCE_STRATEGIES'] = ',' + ','.join(get_options().clone_source_strategies) + ','
+    env_to_serialize['smelly_CLONE_SOURCE_STRATEGIES'] = ',' + \
+        ','.join(get_options().clone_source_strategies) + ','
     is_clone_launch = serialize_env(c.shell, env_to_serialize)
     ssh_kitten_cmdline = window.ssh_kitten_cmdline()
     if ssh_kitten_cmdline:
@@ -922,4 +945,5 @@ def clone_and_launch(msg: str, window: Window) -> None:
             cmdline[0] = window.child.final_exe
         if cmdline and cmdline == [window.child.final_exe] + window.child.argv[1:]:
             cmdline = window.child.unmodified_argv
-    launch(get_boss(), c.opts, cmdline, active=window, is_clone_launch=is_clone_launch)
+    launch(get_boss(), c.opts, cmdline, active=window,
+           is_clone_launch=is_clone_launch)
