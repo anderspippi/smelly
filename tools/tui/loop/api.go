@@ -195,11 +195,11 @@ func (self *Loop) Println(args ...any) {
 	self.QueueWriteString("\r\n")
 }
 
-func (self *Loop) SaveCursor() {
+func (self *Loop) SaveCursorPosition() {
 	self.QueueWriteString("\x1b7")
 }
 
-func (self *Loop) RestoreCursor() {
+func (self *Loop) RestoreCursorPosition() {
 	self.QueueWriteString("\x1b8")
 }
 

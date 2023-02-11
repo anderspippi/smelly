@@ -159,7 +159,7 @@ type handler struct {
 	checkpoints_key checkpoints_key
 	table           table
 
-	current_tab_formatter, tab_bar_formatter, chosen_formatter, chosen_name_formatter func(...any) string
+	current_tab_formatter, tab_bar_formatter, chosen_formatter, chosen_name_formatter, dim_formatter func(...any) string
 }
 
 func (self *handler) initialize() {
@@ -172,6 +172,7 @@ func (self *handler) initialize() {
 	self.tab_bar_formatter = self.ctx.SprintFunc("reverse=true")
 	self.chosen_formatter = self.ctx.SprintFunc("fg=green")
 	self.chosen_name_formatter = self.ctx.SprintFunc("italic=true dim=true")
+	self.dim_formatter = self.ctx.SprintFunc("dim=true")
 	self.rl = readline.New(self.lp, readline.RlInit{Prompt: "> "})
 	self.rl.Start()
 	self.draw_screen()
@@ -319,7 +320,23 @@ func (self *handler) draw_screen() {
 		writeln("Enter the index for the character you want from the list below")
 	}
 	self.rl.RedrawNonAtomic()
-	// TODO: Implement rest of this
+	self.lp.SaveCursorPosition()
+	defer self.lp.RestoreCursorPosition()
+	writeln()
+	writeln(self.choice_line)
+	switch self.mode {
+	case HEX:
+		writeln(self.dim_formatter(fmt.Sprintf("Type %s followed by the index for the recent entries below", INDEX_CHAR)))
+	case NAME:
+		writeln(self.dim_formatter(fmt.Sprintf("Use Tab or arrow keys to choose a character. Type space and %s to select by index", INDEX_CHAR)))
+	case FAVORITES:
+		writeln(self.dim_formatter("Press F12 to edit the list of favorites"))
+	}
+	sz, _ := self.lp.ScreenSize()
+	q := self.table.layout(int(sz.HeightCells)-y, int(sz.WidthCells))
+	if q != "" {
+		self.lp.QueueWriteString(q)
+	}
 }
 
 func (self *handler) on_text(text string, from_key_event, in_bracketed_paste bool) error {
