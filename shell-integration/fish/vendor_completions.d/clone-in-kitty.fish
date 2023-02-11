@@ -4,4 +4,4 @@ function __ksi_completions
     printf "%s\n" $tokens $ct | command kitten __complete__ fish | source -
 end
 
-complete -f -c clone-in-kitty -a "(__ksi_completions)"
+complete -f -c clone-in-smelly -a "(__ksi_completions)"

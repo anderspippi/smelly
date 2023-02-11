@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package utils
 
@@ -12,7 +12,7 @@ type RemoteControlCmd struct {
 	CancelAsync   bool   `json:"cancel_async,omitempty"`
 	Stream        bool   `json:"stream,omitempty"`
 	StreamId      string `json:"stream_id,omitempty"`
-	KittyWindowId uint   `json:"kitty_window_id,omitempty"`
+	smellyWindowId uint   `json:"smelly_window_id,omitempty"`
 	Payload       any    `json:"payload,omitempty"`
 }
 

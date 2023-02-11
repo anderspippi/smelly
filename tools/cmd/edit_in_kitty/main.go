@@ -1,6 +1,6 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
-package edit_in_kitty
+package edit_in_smelly
 
 import (
 	"encoding/base64"
@@ -13,11 +13,11 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"kitty/tools/cli"
-	"kitty/tools/tui"
-	"kitty/tools/tui/loop"
-	"kitty/tools/utils"
-	"kitty/tools/utils/humanize"
+	"smelly/tools/cli"
+	"smelly/tools/tui"
+	"smelly/tools/tui/loop"
+	"smelly/tools/utils"
+	"smelly/tools/utils/humanize"
 )
 
 var _ = fmt.Print
@@ -48,7 +48,7 @@ func edit_loop(data_to_send string, kill_if_signaled bool, on_data OnDataCallbac
 			if update_type == "" {
 				update_type = line
 			} else {
-				if line == "KITTY_DATA_END" {
+				if line == "smelly_DATA_END" {
 					lp.QueueWriteString(update_type + "\r\n")
 					if update_type == "DONE" {
 						lp.Quit(0)
@@ -70,7 +70,7 @@ func edit_loop(data_to_send string, kill_if_signaled bool, on_data OnDataCallbac
 				}
 			}
 		} else {
-			if line == "KITTY_DATA_START" {
+			if line == "smelly_DATA_START" {
 				started = true
 				update_type = ""
 			}
@@ -109,13 +109,13 @@ func edit_loop(data_to_send string, kill_if_signaled bool, on_data OnDataCallbac
 			if limit <= pos {
 				break
 			}
-			lp.QueueWriteString("\x1bP@kitty-edit|" + strconv.Itoa(chunk_num) + ":")
+			lp.QueueWriteString("\x1bP@smelly-edit|" + strconv.Itoa(chunk_num) + ":")
 			lp.QueueWriteString(data_to_send[pos:limit])
 			lp.QueueWriteString("\x1b\\")
 			chunk_num++
 			pos = limit
 		}
-		lp.QueueWriteString("\x1bP@kitty-edit|\x1b\\")
+		lp.QueueWriteString("\x1bP@smelly-edit|\x1b\\")
 		return "", nil
 	}
 
@@ -130,7 +130,7 @@ func edit_loop(data_to_send string, kill_if_signaled bool, on_data OnDataCallbac
 		return nil
 	}
 
-	const abort_msg = "\x1bP@kitty-edit|0:abort_signaled=interrupt\x1b\\\x1bP@kitty-edit|\x1b\\"
+	const abort_msg = "\x1bP@smelly-edit|0:abort_signaled=interrupt\x1b\\\x1bP@smelly-edit|\x1b\\"
 
 	lp.OnKeyEvent = func(event *loop.KeyEvent) error {
 		if event.MatchesPressOrRepeat("ctrl+c") || event.MatchesPressOrRepeat("esc") {
@@ -164,7 +164,7 @@ func edit_loop(data_to_send string, kill_if_signaled bool, on_data OnDataCallbac
 	return
 }
 
-func edit_in_kitty(path string, opts *Options) (err error) {
+func edit_in_smelly(path string, opts *Options) (err error) {
 	read_file, err := os.Open(path)
 	if err != nil {
 		return fmt.Errorf("Failed to open %s for reading with error: %w", path, err)
@@ -234,11 +234,11 @@ type Options struct {
 
 func EntryPoint(parent *cli.Command) *cli.Command {
 	sc := parent.AddSubCommand(&cli.Command{
-		Name:             "edit-in-kitty",
+		Name:             "edit-in-smelly",
 		Usage:            "[options] file-to-edit",
-		ShortDescription: "Edit a file in a kitty overlay window",
-		HelpText: "Edit the specified file in a kitty overlay window. Works over SSH as well.\n\n" +
-			"For usage instructions see: https://sw.kovidgoyal.net/kitty/shell-integration/#edit-file",
+		ShortDescription: "Edit a file in a smelly overlay window",
+		HelpText: "Edit the specified file in a smelly overlay window. Works over SSH as well.\n\n" +
+			"For usage instructions see: https://sw.backbiter-no.net/smelly/shell-integration/#edit-file",
 		Run: func(cmd *cli.Command, args []string) (ret int, err error) {
 			if len(args) == 0 {
 				fmt.Fprintln(os.Stderr, "Usage:", cmd.Usage)
@@ -253,7 +253,7 @@ func EntryPoint(parent *cli.Command) *cli.Command {
 			if err != nil {
 				return 1, err
 			}
-			err = edit_in_kitty(args[0], &opts)
+			err = edit_in_smelly(args[0], &opts)
 			return 0, err
 		},
 	})

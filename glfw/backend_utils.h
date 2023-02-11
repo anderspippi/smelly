@@ -1,7 +1,7 @@
 //========================================================================
 // GLFW 3.4
 //------------------------------------------------------------------------
-// Copyright (c) 2014 Kovid Goyal
+// Copyright (c) 2014 anders Goyal
 //
 // This software is provided 'as-is', without any express or implied
 // warranty. In no event will the authors be held liable for any damages
@@ -25,7 +25,7 @@
 //========================================================================
 
 #pragma once
-#include "../kitty/monotonic.h"
+#include "../smelly/monotonic.h"
 #include <poll.h>
 #include <unistd.h>
 #include <stdbool.h>

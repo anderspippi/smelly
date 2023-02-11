@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2023, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2023, anders Goyal, <anders at backbiter-no.net>
 
 package icat
 
@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"image"
 	"image/gif"
-	"kitty/tools/tui/graphics"
-	"kitty/tools/utils"
-	"kitty/tools/utils/images"
-	"kitty/tools/utils/shm"
+	"smelly/tools/tui/graphics"
+	"smelly/tools/utils"
+	"smelly/tools/utils/images"
+	"smelly/tools/utils/shm"
 
 	"github.com/disintegration/imaging"
 )
@@ -27,7 +27,7 @@ func resize_frame(imgd *image_data, img image.Image) (image.Image, image.Rectang
 	return img, image.Rect(newleft, newtop, newleft+new_width, newtop+new_height)
 }
 
-const shm_template = "kitty-icat-*"
+const shm_template = "smelly-icat-*"
 
 func add_frame(ctx *images.Context, imgd *image_data, img image.Image) *image_frame {
 	is_opaque := false

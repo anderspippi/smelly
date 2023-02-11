@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package at
 
@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"kitty/tools/utils"
+	"smelly/tools/utils"
 )
 
 var valid_color_names = map[string]bool{"active_fg": true, "active_bg": true, "inactive_fg": true, "inactive_bg": true}

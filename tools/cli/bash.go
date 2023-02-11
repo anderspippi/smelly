@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package cli
 
@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"kitty/tools/utils"
+	"smelly/tools/utils"
 )
 
 var _ = fmt.Print
@@ -23,9 +23,9 @@ func bash_completion_script(commands []string) (string, error) {
     fi
 }
 
-builtin complete -F _ksi_completions kitty
-builtin complete -F _ksi_completions edit-in-kitty
-builtin complete -F _ksi_completions clone-in-kitty
+builtin complete -F _ksi_completions smelly
+builtin complete -F _ksi_completions edit-in-smelly
+builtin complete -F _ksi_completions clone-in-smelly
 builtin complete -F _ksi_completions kitten
 `, nil
 }

@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 // TODO: Move to crypto/ecdh with go >= 1.20
 
 package crypto
@@ -12,7 +12,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/jamesruan/go-rfc1924/base85"
-	"kitty/tools/utils"
+	"smelly/tools/utils"
 	"time"
 )
 

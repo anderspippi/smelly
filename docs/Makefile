@@ -8,7 +8,7 @@ endif
 # You can set these variables from the command line.
 SPHINXOPTS    = -n -q -j auto -T $(FAIL_WARN) $(OPTS)
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = kitty
+SPHINXPROJ    = smelly
 SOURCEDIR     = .
 BUILDDIR      = _build
 
@@ -25,4 +25,4 @@ help:
 
 
 develop-docs:
-	sphinx-autobuild --ignore "$(abspath $(SOURCEDIR))/generated/*" --watch ../kitty --watch ../kittens -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+	sphinx-autobuild --ignore "$(abspath $(SOURCEDIR))/generated/*" --watch ../smelly --watch ../wellies -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)

@@ -1,24 +1,24 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package cli
 
 import (
 	"bufio"
 	"fmt"
-	"kitty/tools/cli/markup"
-	"kitty/tools/tty"
-	"kitty/tools/utils"
-	"kitty/tools/utils/style"
-	"kitty/tools/wcswidth"
+	"smelly/tools/cli/markup"
+	"smelly/tools/tty"
+	"smelly/tools/utils"
+	"smelly/tools/utils/style"
+	"smelly/tools/wcswidth"
 	"strings"
 )
 
 var _ = fmt.Print
 
 func zsh_completion_script(commands []string) (string, error) {
-	return `#compdef kitty
+	return `#compdef smelly
 
-_kitty() {
+_smelly() {
     (( ${+commands[kitten]} )) || builtin return
     builtin local src cmd=${(F)words:0:$CURRENT}
     # Send all words up to the word the cursor is currently on.
@@ -27,9 +27,9 @@ _kitty() {
 }
 
 if (( $+functions[compdef] )); then
-    compdef _kitty kitty
-    compdef _kitty clone-in-kitty
-    compdef _kitty kitten
+    compdef _smelly smelly
+    compdef _smelly clone-in-smelly
+    compdef _smelly kitten
 fi
 `, nil
 }

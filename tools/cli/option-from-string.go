@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package cli
 
@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"kitty/tools/utils"
+	"smelly/tools/utils"
 )
 
 var _ = fmt.Print

@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package completion
 
@@ -9,23 +9,23 @@ import (
 	"os/exec"
 	"strings"
 
-	"kitty/tools/cli"
-	"kitty/tools/utils"
+	"smelly/tools/cli"
+	"smelly/tools/utils"
 )
 
 var _ = fmt.Print
 
-func complete_kitty_override(completions *cli.Completions, word string, arg_num int) {
+func complete_smelly_override(completions *cli.Completions, word string, arg_num int) {
 	mg := completions.AddMatchGroup("Config directives")
 	mg.NoTrailingSpace = true
-	for _, q := range kitty_option_names_for_completion {
+	for _, q := range smelly_option_names_for_completion {
 		if strings.HasPrefix(q, word) {
 			mg.AddMatch(q + "=")
 		}
 	}
 }
 
-func complete_kitty_listen_on(completions *cli.Completions, word string, arg_num int) {
+func complete_smelly_listen_on(completions *cli.Completions, word string, arg_num int) {
 	if !strings.Contains(word, ":") {
 		mg := completions.AddMatchGroup("Address family")
 		mg.NoTrailingSpace = true
@@ -66,9 +66,9 @@ func complete_plus_open(completions *cli.Completions, word string, arg_num int) 
 }
 
 func complete_themes(completions *cli.Completions, word string, arg_num int) {
-	kitty, err := utils.KittyExe()
+	smelly, err := utils.smellyExe()
 	if err == nil {
-		out, err := exec.Command(kitty, "+runpy", "from kittens.themes.collection import *; print_theme_names()").Output()
+		out, err := exec.Command(smelly, "+runpy", "from wellies.themes.collection import *; print_theme_names()").Output()
 		if err == nil {
 			mg := completions.AddMatchGroup("Themes")
 			scanner := bufio.NewScanner(bytes.NewReader(out))
@@ -86,8 +86,8 @@ func EntryPoint(tool_root *cli.Command) {
 	tool_root.AddSubCommand(&cli.Command{
 		Name: "__complete__", Hidden: true,
 		Usage:            "output_type [shell state...]",
-		ShortDescription: "Generate completions for kitty commands",
-		HelpText:         "Generate completion candidates for kitty commands. The command line is read from STDIN. output_type can be one of the supported shells: :code:`zsh`, :code:`fish`, :code:`bash`, or :code:`setup` for completion setup script following with the shell name, or :code:`json` for JSON output.",
+		ShortDescription: "Generate completions for smelly commands",
+		HelpText:         "Generate completion candidates for smelly commands. The command line is read from STDIN. output_type can be one of the supported shells: :code:`zsh`, :code:`fish`, :code:`bash`, or :code:`setup` for completion setup script following with the shell name, or :code:`json` for JSON output.",
 		Run: func(cmd *cli.Command, args []string) (ret int, err error) {
 			return ret, cli.GenerateCompletions(args)
 		},

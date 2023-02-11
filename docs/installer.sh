@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2018 Kovid Goyal <kovid at kovidgoyal.net>
+# Copyright (C) 2018 anders Goyal <anders at backbiter-no.net>
 #
 # Distributed under terms of the GPLv3 license.
 
@@ -34,7 +34,7 @@ detect_network_tool() {
             command wget --quiet -O- "$1"
         }
     else
-        die "Neither curl nor wget available, cannot download kitty"
+        die "Neither curl nor wget available, cannot download smelly"
     fi
 }
 
@@ -54,7 +54,7 @@ detect_os() {
                 *) die "Unknown CPU architecture $(command uname -m)";;
             esac
             ;;
-        *) die "kitty binaries are not available for $(command uname)"
+        *) die "smelly binaries are not available for $(command uname)"
     esac
 }
 
@@ -81,12 +81,12 @@ parse_args() {
     done
     dest=$(expand_tilde "${dest}")
     [ "$launch" != "y" -a "$launch" != "n" ] && die "Unrecognized command line option: launch=$launch"
-    dest="$dest/kitty.app"
+    dest="$dest/smelly.app"
 }
 
 
 get_file_url() {
-    url="https://github.com/kovidgoyal/kitty/releases/download/$1/kitty-$2"
+    url="https://github.com/backbiter-no/smelly/releases/download/$1/smelly-$2"
     if [ "$OS" = "macos" ]; then
         url="$url.dmg"
     else
@@ -95,8 +95,8 @@ get_file_url() {
 }
 
 get_release_url() {
-    release_version=$(fetch_quiet "https://sw.kovidgoyal.net/kitty/current-version.txt")
-    [ $? -ne 0 -o -z "$release_version" ] && die "Could not get kitty latest release version"
+    release_version=$(fetch_quiet "https://sw.backbiter-no.net/smelly/current-version.txt")
+    [ $? -ne 0 -o -z "$release_version" ] && die "Could not get smelly latest release version"
     get_file_url "v$release_version" "$release_version"
 }
 
@@ -124,20 +124,20 @@ linux_install() {
 }
 
 macos_install() {
-    tdir=$(command mktemp -d "/tmp/kitty-install-XXXXXXXXXXXX")
+    tdir=$(command mktemp -d "/tmp/smelly-install-XXXXXXXXXXXX")
     [ "$installer_is_file" != "y" ] && {
-        installer="$tdir/kitty.dmg"
+        installer="$tdir/smelly.dmg"
         printf '%s\n\n' "Downloading from: $url"
         fetch "$url" > "$installer" || die "Failed to download: $url"
     }
     command mkdir "$tdir/mp"
-    command hdiutil attach "$installer" "-mountpoint" "$tdir/mp" || die "Failed to mount kitty.dmg"
-    command ditto -v "$tdir/mp/kitty.app" "$dest"
+    command hdiutil attach "$installer" "-mountpoint" "$tdir/mp" || die "Failed to mount smelly.dmg"
+    command ditto -v "$tdir/mp/smelly.app" "$dest"
     rc="$?"
     command hdiutil detach "$tdir/mp"
     command rm -rf "$tdir"
     tdir=''
-    [ "$rc" != "0" ] && die "Failed to copy kitty.app from mounted dmg"
+    [ "$rc" != "0" ] && die "Failed to copy smelly.app from mounted dmg"
 }
 
 prepare_install_dest() {
@@ -146,13 +146,13 @@ prepare_install_dest() {
     command mkdir -p "$dest" || die "Failed to create the directory: $dest"
 }
 
-exec_kitty() {
+exec_smelly() {
     if [ "$OS" = "macos" ]; then
         exec "open" "$dest"
     else
-        exec "$dest/bin/kitty" "--detach"
+        exec "$dest/bin/smelly" "--detach"
     fi
-    die "Failed to launch kitty"
+    die "Failed to launch smelly"
 }
 
 main() {
@@ -166,7 +166,7 @@ main() {
     else
         linux_install
     fi
-    [ "$launch" = "y" ] && exec_kitty
+    [ "$launch" = "y" ] && exec_smelly
     exit 0
 }
 

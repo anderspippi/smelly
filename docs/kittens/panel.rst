@@ -29,7 +29,7 @@ activity, CPU load, date/time, etc.
 
 Using this kitten is simple, for example::
 
-    kitty +kitten panel sh -c 'printf "\n\n\nHello, world."; sleep 5s'
+    smelly +kitten panel sh -c 'printf "\n\n\nHello, world."; sleep 5s'
 
 This will show ``Hello, world.`` at the top edge of your screen for five
 seconds. Here the terminal program we are running is :program:`sh` with a script

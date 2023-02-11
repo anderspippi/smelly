@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package cli
 
@@ -11,10 +11,10 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"kitty"
-	"kitty/tools/cli/markup"
-	"kitty/tools/tty"
-	"kitty/tools/utils/style"
+	"smelly"
+	"smelly/tools/cli/markup"
+	"smelly/tools/tty"
+	"smelly/tools/utils/style"
 )
 
 var _ = fmt.Print
@@ -26,7 +26,7 @@ func ShowError(err error) {
 }
 
 func (self *Command) version_string(formatter *markup.Context) string {
-	return fmt.Sprintln(formatter.Italic(self.CommandStringForUsage()), formatter.Opt(kitty.VersionString), "created by", formatter.Title("Kovid Goyal"))
+	return fmt.Sprintln(formatter.Italic(self.CommandStringForUsage()), formatter.Opt(smelly.VersionString), "created by", formatter.Title("anders Goyal"))
 }
 
 func (self *Command) ShowVersion() {
@@ -93,7 +93,7 @@ func (self *Command) ShowHelp() {
 }
 
 func ShowHelpInPager(text string) {
-	pager := exec.Command(kitty.DefaultPager[0], kitty.DefaultPager[1:]...)
+	pager := exec.Command(smelly.DefaultPager[0], smelly.DefaultPager[1:]...)
 	pager.Stdin = strings.NewReader(text)
 	pager.Stdout = os.Stdout
 	pager.Stderr = os.Stderr

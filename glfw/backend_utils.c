@@ -1,6 +1,6 @@
 /*
  * backend_utils.c
- * Copyright (C) 2018 Kovid Goyal <kovid at kovidgoyal.net>
+ * Copyright (C) 2018 anders Goyal <anders at backbiter-no.net>
  *
  * Distributed under terms of the GPL3 license.
  */

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# License: GPLv3 Copyright: 2018, Kovid Goyal <kovid at kovidgoyal.net>
+# License: GPLv3 Copyright: 2018, anders Goyal <anders at backbiter-no.net>
 
 import os
 import subprocess
@@ -276,7 +276,7 @@ def graphics_parser() -> None:
         'C': ('cursor_movement', 'uint'),
     }
     text = generate('parse_graphics_code', 'screen_handle_graphics_command', 'graphics_command', keymap, 'GraphicsCommand')
-    write_header(text, 'kitty/parse-graphics-command.h')
+    write_header(text, 'smelly/parse-graphics-command.h')
 
 
 graphics_parser()

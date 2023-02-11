@@ -1,6 +1,6 @@
 /*
  * linux_notify.c
- * Copyright (C) 2019 Kovid Goyal <kovid at kovidgoyal.net>
+ * Copyright (C) 2019 anders Goyal <anders at backbiter-no.net>
  *
  * Distributed under terms of the GPL3 license.
  */

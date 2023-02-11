@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # vim:fileencoding=utf-8
-# License: GPL v3 Copyright: 2017, Kovid Goyal <kovid at kovidgoyal.net>
+# License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
 
 import os
 import shlex
@@ -12,18 +12,18 @@ from contextlib import suppress
 
 if False:
     tarball = sys.argv[-1]
-    dest = os.path.expanduser('~/.local/kitty.app')
+    dest = os.path.expanduser('~/.local/smelly.app')
     shutil.rmtree(dest, ignore_errors=True)
     os.makedirs(dest)
     os.chdir(dest)
-    dest = os.path.expanduser('~/.local/bin/kitty')
+    dest = os.path.expanduser('~/.local/bin/smelly')
     with suppress(OSError):
         os.remove(dest)
     with suppress(OSError):
         os.makedirs(os.path.dirname(dest))
     subprocess.check_call(['tar', 'xJf', tarball])
-    os.symlink(os.path.abspath('bin/kitty'), dest)
-    print('kitty installed to ~/.local/kitty.app')
+    os.symlink(os.path.abspath('bin/smelly'), dest)
+    print('smelly installed to ~/.local/smelly.app')
 
 
 # EOF_REMOTE
@@ -33,9 +33,9 @@ HOST = 'ubuntu'
 base = os.path.dirname(os.path.abspath(__file__))
 if True:
     sys.path.insert(0, base)
-    from kitty.constants import str_version
+    from smelly.constants import str_version
 
-tarball = f'kitty-{str_version}-x86_64.txz'
+tarball = f'smelly-{str_version}-x86_64.txz'
 
 
 def run(what):

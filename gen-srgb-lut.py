@@ -40,7 +40,7 @@ def generate_srgb_gamma_c() -> str:
 
 def main() -> None:
     c = generate_srgb_gamma_c()
-    with open(os.path.join('kitty', 'srgb_gamma.c'), 'w') as f:
+    with open(os.path.join('smelly', 'srgb_gamma.c'), 'w') as f:
         f.write(f'{c}\n')
 
 

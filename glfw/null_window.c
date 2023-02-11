@@ -28,7 +28,7 @@
 //========================================================================
 
 #include "internal.h"
-#include "../kitty/monotonic.h"
+#include "../smelly/monotonic.h"
 
 #include <stdlib.h>
 

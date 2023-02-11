@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package cli
 
@@ -6,18 +6,18 @@ import (
 	"fmt"
 	"strings"
 
-	"kitty/tools/cli/markup"
-	"kitty/tools/utils"
+	"smelly/tools/cli/markup"
+	"smelly/tools/utils"
 )
 
 var _ = fmt.Print
 
 func fish_completion_script(commands []string) (string, error) {
 	// One command in fish requires one completion script.
-	// Usage: kitten __complete__ setup fish [kitty|kitten|clone-in-kitty]
+	// Usage: kitten __complete__ setup fish [smelly|kitten|clone-in-smelly]
 	all_commands := map[string]bool{
-		"kitty":          true,
-		"clone-in-kitty": true,
+		"smelly":          true,
+		"clone-in-smelly": true,
 		"kitten":         true,
 	}
 	if len(commands) == 0 {

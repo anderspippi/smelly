@@ -1,14 +1,14 @@
-= kitty - the fast, feature-rich, cross-platform, GPU based terminal
+= smelly - the fast, feature-rich, cross-platform, GPU based terminal
 
-See https://sw.kovidgoyal.net/kitty/[the kitty website].
+See https://sw.backbiter-no.net/smelly/[the smelly website].
 
-image:https://github.com/kovidgoyal/kitty/workflows/CI/badge.svg["Build status", link="https://github.com/kovidgoyal/kitty/actions?query=workflow%3ACI"]
+image:https://github.com/backbiter-no/smelly/workflows/CI/badge.svg["Build status", link="https://github.com/backbiter-no/smelly/actions?query=workflow%3ACI"]
 
-https://sw.kovidgoyal.net/kitty/faq/[Frequently Asked Questions]
+https://sw.backbiter-no.net/smelly/faq/[Frequently Asked Questions]
 
-To ask other questions about kitty usage, use either the https://github.com/kovidgoyal/kitty/discussions/[discussions on GitHub] or the
-https://www.reddit.com/r/KittyTerminal[Reddit community]
+To ask other questions about smelly usage, use either the https://github.com/backbiter-no/smelly/discussions/[discussions on GitHub] or the
+https://www.reddit.com/r/smellyTerminal[Reddit community]
 
 Packaging status in various repositories:
 
-image:https://repology.org/badge/vertical-allrepos/kitty.svg["Packaging status", link="https://repology.org/project/kitty/versions"]
+image:https://repology.org/badge/vertical-allrepos/smelly.svg["Packaging status", link="https://repology.org/project/smelly/versions"]

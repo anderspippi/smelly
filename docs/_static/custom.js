@@ -1,6 +1,6 @@
 /* vim:fileencoding=utf-8
  *
- * Copyright (C) 2021 Kovid Goyal <kovid at kovidgoyal.net>
+ * Copyright (C) 2021 anders Goyal <anders at backbiter-no.net>
  *
  * Distributed under terms of the GPLv3 license
  */

@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2018 Kovid Goyal <kovid at kovidgoyal.net>
+# Copyright (C) 2018 anders Goyal <anders at backbiter-no.net>
 #
 # Distributed under terms of the GPLv3 license.
 
@@ -8,27 +8,27 @@
 
 die() { printf "\033[31m%s\033[m\n\r" "$*" > /dev/stderr; exit 1; }
 
-exec_kitty() {
-    [ -n "$kitty_exe" ] && exec "$kitty_exe" "$@"
-    die "Failed to execute kitty"
+exec_smelly() {
+    [ -n "$smelly_exe" ] && exec "$smelly_exe" "$@"
+    die "Failed to execute smelly"
 }
 
 script_path="$(command readlink -f "$0" 2> /dev/null)"
 [ $? = 0 ] || script_path="$0"
 script_dir="$(command dirname "$script_path")"
 install_dir="$(command dirname "$script_dir")/install-tool"
-remote_kitty_version_file="$script_dir/../version"
-local_kitty_version_file="$install_dir/installed-kitten-version"
-kitty_exe="$install_dir/kitten"
-local_kitty_version=""
+remote_smelly_version_file="$script_dir/../version"
+local_smelly_version_file="$install_dir/installed-kitten-version"
+smelly_exe="$install_dir/kitten"
+local_smelly_version=""
 
-[ -f "$kitty_exe" -a -x "$kitty_exe" ] && exec_kitty "$@"
+[ -f "$smelly_exe" -a -x "$smelly_exe" ] && exec_smelly "$@"
 
-# Use kitten from the downloaded kitty installation, if available.
+# Use kitten from the downloaded smelly installation, if available.
 embed_exe="$(command dirname "$script_dir")/install/bin/kitten"
 [ -f "$embed_exe" -a -x "$embed_exe" ] && {
-    kitty_exe="$embed_exe"
-    exec_kitty "$@"
+    smelly_exe="$embed_exe"
+    exec_smelly "$@"
 }
 
 case "$(command uname)" in
@@ -69,17 +69,17 @@ case "$(command uname -m)" in
     *) die "Unknown CPU architecture $(command uname -m)";;
 esac
 
-url="https://github.com/kovidgoyal/kitty/releases/latest/download/kitten-$OS-$arch"
+url="https://github.com/backbiter-no/smelly/releases/latest/download/kitten-$OS-$arch"
 
 printf "\033[33mkitten needs to be installed\033[m\n\n"
 command mkdir -p "$install_dir"
 printf "Downloading kitten from: \033[32m%s\033[m\n\n" "$url"
-download_dest="$(command mktemp "$kitty_exe.XXXXXXXXXX")"
+download_dest="$(command mktemp "$smelly_exe.XXXXXXXXXX")"
 fetch "$url" > "$download_dest" || {
     command rm -f "$download_dest"
     die "Failed to download kitten"
 }
 command chmod 755 "$download_dest"
-command mv "$download_dest" "$kitty_exe"
-command "$kitty_exe" --version | cut -d" " -f2 > "$local_kitty_version_file"
-exec_kitty "$@"
+command mv "$download_dest" "$smelly_exe"
+command "$smelly_exe" --version | cut -d" " -f2 > "$local_smelly_version_file"
+exec_smelly "$@"

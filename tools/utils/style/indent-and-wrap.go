@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package style
 
@@ -8,7 +8,7 @@ import (
 	"strings"
 	"unicode"
 
-	"kitty/tools/wcswidth"
+	"smelly/tools/wcswidth"
 )
 
 type sgr_color struct {

@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package loop
 
@@ -14,8 +14,8 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"kitty/tools/tty"
-	"kitty/tools/utils"
+	"smelly/tools/tty"
+	"smelly/tools/utils"
 )
 
 var SIGNULL unix.Signal
@@ -24,7 +24,7 @@ func new_loop() *Loop {
 	l := Loop{controlling_term: nil, timers_temp: make([]*timer, 4)}
 	l.terminal_options.alternate_screen = true
 	l.terminal_options.restore_colors = true
-	l.terminal_options.kitty_keyboard_mode = 0b11111
+	l.terminal_options.smelly_keyboard_mode = 0b11111
 	l.escape_code_parser.HandleCSI = l.handle_csi
 	l.escape_code_parser.HandleOSC = l.handle_osc
 	l.escape_code_parser.HandleDCS = l.handle_dcs
@@ -111,8 +111,8 @@ func (self *Loop) handle_osc(raw []byte) error {
 }
 
 func (self *Loop) handle_dcs(raw []byte) error {
-	if self.OnRCResponse != nil && bytes.HasPrefix(raw, utils.UnsafeStringToBytes("@kitty-cmd")) {
-		return self.OnRCResponse(raw[len("@kitty-cmd"):])
+	if self.OnRCResponse != nil && bytes.HasPrefix(raw, utils.UnsafeStringToBytes("@smelly-cmd")) {
+		return self.OnRCResponse(raw[len("@smelly-cmd"):])
 	}
 	if self.OnEscapeCode != nil {
 		return self.OnEscapeCode(DCS, raw)

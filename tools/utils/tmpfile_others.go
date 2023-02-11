@@ -1,6 +1,6 @@
 //go:build !linux
 
-// License: GPLv3 Copyright: 2023, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2023, anders Goyal, <anders at backbiter-no.net>
 
 package utils
 

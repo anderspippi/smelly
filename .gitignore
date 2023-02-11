@@ -8,9 +8,9 @@
 /tags
 /build/
 /linux-package/
-/kitty.app/
+/smelly.app/
 /glad/out/
-/kitty/launcher/kitt*
+/smelly/launcher/kitt*
 /*.dSYM/
 __pycache__/
 /glfw/wayland-*-client-protocol.[ch]

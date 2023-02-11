@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package at
 
@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"kitty/tools/tui/loop"
+	"smelly/tools/tui/loop"
 )
 
 type stream_response struct {

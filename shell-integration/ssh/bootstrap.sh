@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2022 Kovid Goyal <kovid at kovidgoyal.net>
+# Copyright (C) 2022 anders Goyal <anders at backbiter-no.net>
 # Distributed under terms of the GPLv3 license.
 
 { \unalias command; \unset -f command; } >/dev/null 2>&1
@@ -62,9 +62,9 @@ else
     die "base64 executable not present on remote host, ssh kitten cannot function."
 fi
 
-dcs_to_kitty() { printf "\033P@kitty-$1|%s\033\134" "$(printf "%s" "$2" | base64_encode)" > /dev/tty; }
-debug() { dcs_to_kitty "print" "debug: $1"; }
-echo_via_kitty() { dcs_to_kitty "echo" "$1"; }
+dcs_to_smelly() { printf "\033P@smelly-$1|%s\033\134" "$(printf "%s" "$2" | base64_encode)" > /dev/tty; }
+debug() { dcs_to_smelly "print" "debug: $1"; }
+echo_via_smelly() { dcs_to_smelly "echo" "$1"; }
 
 # If $HOME is configured set it here
 EXPORT_HOME_CMD
@@ -82,12 +82,12 @@ request_data="REQUEST_DATA"
 trap "cleanup_on_bootstrap_exit" EXIT
 [ "$request_data" = "1" ] && {
     command stty "-echo" < /dev/tty
-    dcs_to_kitty "ssh" "id="REQUEST_ID":pwfile="PASSWORD_FILENAME":pw="DATA_PASSWORD""
+    dcs_to_smelly "ssh" "id="REQUEST_ID":pwfile="PASSWORD_FILENAME":pw="DATA_PASSWORD""
 }
 
 read_base64_from_tty() {
     while IFS= read -r line; do
-        [ "$line" = "KITTY_DATA_END" ] && return 0
+        [ "$line" = "smelly_DATA_END" ] && return 0
         printf "%s" "$line"
     done
 }
@@ -96,7 +96,7 @@ untar_and_read_env() {
     # extract the tar file atomically, in the sense that any file from the
     # tarfile is only put into place after it has been fully written to disk
     command -v tar > /dev/null 2> /dev/null || die "tar is not availiable on this server. The ssh kitten requires tar."
-    tdir=$(command mktemp -d "$HOME/.kitty-ssh-kitten-untar-XXXXXXXXXXXX")
+    tdir=$(command mktemp -d "$HOME/.smelly-ssh-kitten-untar-XXXXXXXXXXXX")
     [ $? = 0 ] || die "Creating temp directory failed"
     # suppress STDERR for tar as tar prints various warnings if for instance, timestamps are in the future
     old_umask=$(umask)
@@ -105,19 +105,19 @@ untar_and_read_env() {
     umask "$old_umask"
     . "$tdir/bootstrap-utils.sh"
     . "$tdir/data.sh"
-    [ -z "$KITTY_SSH_KITTEN_DATA_DIR" ] && die "Failed to read SSH data from tty"
-    case "$KITTY_SSH_KITTEN_DATA_DIR" in
-        /*) data_dir="$KITTY_SSH_KITTEN_DATA_DIR" ;;
-        *) data_dir="$HOME/$KITTY_SSH_KITTEN_DATA_DIR"
+    [ -z "$smelly_SSH_KITTEN_DATA_DIR" ] && die "Failed to read SSH data from tty"
+    case "$smelly_SSH_KITTEN_DATA_DIR" in
+        /*) data_dir="$smelly_SSH_KITTEN_DATA_DIR" ;;
+        *) data_dir="$HOME/$smelly_SSH_KITTEN_DATA_DIR"
     esac
     shell_integration_dir="$data_dir/shell-integration"
-    unset KITTY_SSH_KITTEN_DATA_DIR
-    login_shell="$KITTY_LOGIN_SHELL"
-    unset KITTY_LOGIN_SHELL
-    login_cwd="$KITTY_LOGIN_CWD"
-    unset KITTY_LOGIN_CWD
-    kitty_remote="$KITTY_REMOTE"
-    unset KITTY_REMOTE
+    unset smelly_SSH_KITTEN_DATA_DIR
+    login_shell="$smelly_LOGIN_SHELL"
+    unset smelly_LOGIN_SHELL
+    login_cwd="$smelly_LOGIN_CWD"
+    unset smelly_LOGIN_CWD
+    smelly_remote="$smelly_REMOTE"
+    unset smelly_REMOTE
     compile_terminfo "$tdir/home"
     mv_files_and_dirs "$tdir/home" "$HOME"
     [ -e "$tdir/root" ] && mv_files_and_dirs "$tdir/root" ""
@@ -132,7 +132,7 @@ get_data() {
             [ "$line" = "OK" ] && break
             die "$line"
         else
-            if [ "$line" = "KITTY_DATA_START" ]; then
+            if [ "$line" = "smelly_DATA_START" ]; then
                 started="y"
             else
                 leading_data="$leading_data$line"

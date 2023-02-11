@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # vim:fileencoding=utf-8
-# License: GPL v3 Copyright: 2017, Kovid Goyal <kovid at kovidgoyal.net>
+# License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
 
 import os
 import shutil
 import subprocess
 
 base = os.path.dirname(os.path.abspath(__file__))
-unframed_src = os.path.join(base, 'kitty.svg')
-framed_src = os.path.join(base, 'kitty-framed.svg')
+unframed_src = os.path.join(base, 'smelly.svg')
+framed_src = os.path.join(base, 'smelly-framed.svg')
 
 
 def abspath(x):
@@ -19,7 +19,7 @@ def run(*args):
     try:
         subprocess.check_call(args)
     except OSError:
-        raise SystemExit(f'You are missing the {args[0]} program needed to generate the kitty logo')
+        raise SystemExit(f'You are missing the {args[0]} program needed to generate the smelly logo')
 
 
 def render(output, sz=256, src=unframed_src):
@@ -29,9 +29,9 @@ def render(output, sz=256, src=unframed_src):
 
 
 def main():
-    render(abspath('kitty.png'))
-    render(abspath('kitty-128.png'), sz=128)
-    iconset = abspath('kitty.iconset')
+    render(abspath('smelly.png'))
+    render(abspath('smelly-128.png'), sz=128)
+    iconset = abspath('smelly.iconset')
     if os.path.exists(iconset):
         shutil.rmtree(iconset)
     os.mkdir(iconset)

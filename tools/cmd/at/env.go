@@ -1,9 +1,9 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package at
 
 import (
-	"kitty/tools/utils"
+	"smelly/tools/utils"
 )
 
 func parse_key_val_args(args []string) map[escaped_string]escaped_string {

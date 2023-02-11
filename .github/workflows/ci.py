@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # vim:fileencoding=utf-8
-# License: GPLv3 Copyright: 2020, Kovid Goyal <kovid at kovidgoyal.net>
+# License: GPLv3 Copyright: 2020, Anders Pippi Tednes <theblckswan@protonmail.com>
 
 import io
 import os
@@ -11,7 +11,7 @@ import sys
 import tarfile
 from urllib.request import urlopen
 
-is_bundle = os.environ.get('KITTY_BUNDLE') == '1'
+is_bundle = os.environ.get('smelly_BUNDLE') == '1'
 is_macos = 'darwin' in sys.platform.lower()
 SW = None
 
@@ -27,7 +27,7 @@ def run(*a):
 
 
 def install_deps():
-    print('Installing kitty dependencies...')
+    print('Installing smelly dependencies...')
     sys.stdout.flush()
     if is_macos:
         items = [x.split()[1].strip('"') for x in open('Brewfile').readlines() if x.strip().startswith('brew ')]
@@ -55,24 +55,24 @@ def install_deps():
         run(cmd)
 
 
-def build_kitty():
+def build_smelly():
     python = shutil.which('python3') if is_bundle else sys.executable
     cmd = f'{python} setup.py build --verbose'
-    if os.environ.get('KITTY_SANITIZE') == '1':
+    if os.environ.get('smelly_SANITIZE') == '1':
         cmd += ' --debug --sanitize'
     run(cmd)
 
 
-def test_kitty():
+def test_smelly():
     run('./test.py')
 
 
-def package_kitty():
+def package_smelly():
     python = 'python3' if is_macos else 'python'
     run(f'{python} setup.py linux-package --update-check-interval=0 --verbose')
     if is_macos:
-        run('python3 setup.py kitty.app --update-check-interval=0 --verbose')
-        run('kitty.app/Contents/MacOS/kitty +runpy "from kitty.constants import *; print(kitty_exe())"')
+        run('python3 setup.py smelly.app --update-check-interval=0 --verbose')
+        run('smelly.app/Contents/MacOS/smelly +runpy "from smelly.constants import *; print(smelly_exe())"')
 
 
 def replace_in_file(path, src, dest):
@@ -84,7 +84,7 @@ def replace_in_file(path, src, dest):
 
 def setup_bundle_env():
     global SW
-    os.environ['SW'] = SW = '/Users/Shared/kitty-build/sw/sw' if is_macos else os.path.join(os.environ['GITHUB_WORKSPACE'], 'sw')
+    os.environ['SW'] = SW = '/Users/Shared/smelly-build/sw/sw' if is_macos else os.path.join(os.environ['GITHUB_WORKSPACE'], 'sw')
     os.environ['PKG_CONFIG_PATH'] = os.path.join(SW, 'lib', 'pkgconfig')
     if is_macos:
         os.environ['PATH'] = '{}:{}'.format('/usr/local/opt/sphinx-doc/bin', os.environ['PATH'])
@@ -98,7 +98,7 @@ def install_bundle():
     cwd = os.getcwd()
     os.makedirs(SW)
     os.chdir(SW)
-    with urlopen('https://download.calibre-ebook.com/ci/kitty/{}-64.tar.xz'.format(
+    with urlopen('https://download.calibre-ebook.com/ci/smelly/{}-64.tar.xz'.format(
             'macos' if is_macos else 'linux')) as f:
         data = f.read()
     with tarfile.open(fileobj=io.BytesIO(data), mode='r:xz') as tf:
@@ -125,11 +125,11 @@ def main():
     if action in ('build', 'package'):
         install_deps()
     if action == 'build':
-        build_kitty()
+        build_smelly()
     elif action == 'package':
-        package_kitty()
+        package_smelly()
     elif action == 'test':
-        test_kitty()
+        test_smelly()
     elif action == 'gofmt':
         q = subprocess.check_output('gofmt -s -l tools'.split())
         if q.strip():

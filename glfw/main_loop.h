@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 Kovid Goyal <kovid at kovidgoyal.net>
+ * Copyright (C) 2019 anders Goyal <anders at backbiter-no.net>
  *
  * Distributed under terms of the GPL3 license.
  */
@@ -7,7 +7,7 @@
 #pragma once
 
 #include "internal.h"
-#include "../kitty/monotonic.h"
+#include "../smelly/monotonic.h"
 
 #ifndef GLFW_LOOP_BACKEND
 #define GLFW_LOOP_BACKEND x11

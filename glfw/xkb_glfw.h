@@ -1,7 +1,7 @@
 //========================================================================
 // GLFW 3.4 XKB - www.glfw.org
 //------------------------------------------------------------------------
-// Copyright (c) 2018 Kovid Goyal <kovid@kovidgoyal.net>
+// Copyright (c) 2018 anders Goyal <anders@backbiter-no.net>
 //
 // This software is provided 'as-is', without any express or implied
 // warranty. In no event will the authors be held liable for any damages

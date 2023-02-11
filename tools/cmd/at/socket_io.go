@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package at
 
@@ -10,9 +10,9 @@ import (
 	"net"
 	"time"
 
-	"kitty/tools/tui/loop"
-	"kitty/tools/utils"
-	"kitty/tools/wcswidth"
+	"smelly/tools/tui/loop"
+	"smelly/tools/utils"
+	"smelly/tools/wcswidth"
 )
 
 var _ = fmt.Print
@@ -46,8 +46,8 @@ func read_response_from_conn(conn *net.Conn, timeout time.Duration) (serialized_
 	p := wcswidth.EscapeCodeParser{}
 	keep_going := true
 	p.HandleDCS = func(data []byte) error {
-		if bytes.HasPrefix(data, []byte("@kitty-cmd")) {
-			serialized_response = data[len("@kitty-cmd"):]
+		if bytes.HasPrefix(data, []byte("@smelly-cmd")) {
+			serialized_response = data[len("@smelly-cmd"):]
 			keep_going = false
 		}
 		return nil
@@ -66,7 +66,7 @@ func read_response_from_conn(conn *net.Conn, timeout time.Duration) (serialized_
 	return
 }
 
-const cmd_escape_code_prefix = "\x1bP@kitty-cmd"
+const cmd_escape_code_prefix = "\x1bP@smelly-cmd"
 const cmd_escape_code_suffix = "\x1b\\"
 
 func run_stdin_echo_loop(conn *net.Conn, io_data *rc_io_data) (err error) {

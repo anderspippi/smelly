@@ -1,13 +1,13 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package readline
 
 import (
 	"container/list"
 	"fmt"
-	"kitty/tools/cli"
-	"kitty/tools/tui/loop"
-	"kitty/tools/utils/shlex"
+	"smelly/tools/cli"
+	"smelly/tools/tui/loop"
+	"smelly/tools/utils/shlex"
 	"strconv"
 	"strings"
 	"testing"

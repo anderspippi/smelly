@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package icat
 
@@ -14,10 +14,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"kitty/tools/tui/graphics"
-	"kitty/tools/tui/loop"
-	"kitty/tools/utils"
-	"kitty/tools/utils/shm"
+	"smelly/tools/tui/graphics"
+	"smelly/tools/tui/loop"
+	"smelly/tools/utils"
+	"smelly/tools/utils/shm"
 )
 
 var _ = fmt.Print

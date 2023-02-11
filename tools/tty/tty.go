@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package tty
 
@@ -12,7 +12,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"kitty/tools/utils"
+	"smelly/tools/utils"
 )
 
 const (
@@ -290,7 +290,7 @@ func (self *Term) DebugPrintln(a ...any) {
 		chunk := msg[i:end]
 		encoded = encoded[:cap(encoded)]
 		base64.StdEncoding.Encode(encoded, chunk)
-		self.WriteString("\x1bP@kitty-print|")
+		self.WriteString("\x1bP@smelly-print|")
 		self.Write(encoded)
 		self.WriteString("\x1b\\")
 	}

@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package readline
 
@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"kitty/tools/utils"
-	"kitty/tools/utils/shlex"
-	"kitty/tools/wcswidth"
+	"smelly/tools/utils"
+	"smelly/tools/utils/shlex"
+	"smelly/tools/wcswidth"
 )
 
 var _ = fmt.Print

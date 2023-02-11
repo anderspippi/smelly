@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package readline
 
@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"kitty/tools/tui/loop"
-	"kitty/tools/tui/shortcuts"
+	"smelly/tools/tui/loop"
+	"smelly/tools/tui/shortcuts"
 )
 
 var _ = fmt.Print

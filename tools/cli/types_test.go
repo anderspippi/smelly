@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package cli
 
@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"kitty/tools/utils/shlex"
+	"smelly/tools/utils/shlex"
 )
 
 var _ = fmt.Print

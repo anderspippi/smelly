@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package readline
 
@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
-	"kitty/tools/cli"
-	"kitty/tools/utils"
-	"kitty/tools/wcswidth"
+	"smelly/tools/cli"
+	"smelly/tools/utils"
+	"smelly/tools/wcswidth"
 )
 
 var _ = fmt.Print

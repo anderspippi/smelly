@@ -1,11 +1,11 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package clipboard
 
 import (
 	"os"
 
-	"kitty/tools/cli"
+	"smelly/tools/cli"
 )
 
 func run_mime_loop(opts *Options, args []string) (err error) {

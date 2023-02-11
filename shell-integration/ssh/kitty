@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2018 Kovid Goyal <kovid at kovidgoyal.net>
+# Copyright (C) 2018 anders Goyal <anders at backbiter-no.net>
 #
 # Distributed under terms of the GPLv3 license.
 
@@ -16,17 +16,17 @@ delete_lock_dir() {
     }
 }
 
-exec_kitty() {
+exec_smelly() {
     delete_lock_dir
-    [ -n "$kitty_exe" ] && exec "$kitty_exe" "$@"
-    die "Failed to execute kitty"
+    [ -n "$smelly_exe" ] && exec "$smelly_exe" "$@"
+    die "Failed to execute smelly"
 }
 
 
 is_wrapped_kitten() {
-    wrapped_kittens="clipboard icat"
+    wrapped_wellies="clipboard icat"
     [ -n "$1" ] && {
-        case " $wrapped_kittens " in
+        case " $wrapped_wellies " in
             *" $1 "*) printf "%s" "$1" ;;
         esac
     }
@@ -42,17 +42,17 @@ script_path="$(command readlink -f "$0" 2> /dev/null)"
 [ $? = 0 ] || script_path="$0"
 script_dir="$(command dirname "$script_path")"
 install_dir="$(command dirname "$script_dir")/install"
-remote_kitty_version_file="$script_dir/../version"
-local_kitty_version_file="$install_dir/installed-kitty-version"
-kitty_exe="$install_dir/bin/kitty"
-local_kitty_version=""
+remote_smelly_version_file="$script_dir/../version"
+local_smelly_version_file="$install_dir/installed-smelly-version"
+smelly_exe="$install_dir/bin/smelly"
+local_smelly_version=""
 
-[ -f "$kitty_exe" -a -x "$kitty_exe" -a "$1" != "+update-kitty" ] && exec_kitty "$@"
+[ -f "$smelly_exe" -a -x "$smelly_exe" -a "$1" != "+update-smelly" ] && exec_smelly "$@"
 
 case "$(command uname)" in
     'Linux') OS="linux";;
     'Darwin') OS="macos";;
-    *) die "kitty pre-built binaries are not available for the $(command uname) operating system";;
+    *) die "smelly pre-built binaries are not available for the $(command uname) operating system";;
 esac
 
 if command -v curl 2> /dev/null > /dev/null; then
@@ -70,7 +70,7 @@ elif command -v wget 2> /dev/null > /dev/null; then
         command wget --quiet -O- "$1"
     }
 else
-    die "Neither curl nor wget available, cannot download kitty"
+    die "Neither curl nor wget available, cannot download smelly"
 fi
 
 if [ "$OS" = "linux" ]; then
@@ -84,50 +84,50 @@ if [ "$OS" = "linux" ]; then
     esac
 fi
 
-release_version=$(fetch_quiet "https://sw.kovidgoyal.net/kitty/current-version.txt")
+release_version=$(fetch_quiet "https://sw.backbiter-no.net/smelly/current-version.txt")
 [ $? -ne 0 -o -z "$release_version" ] && {
-    [ -n "$local_kitty_version" ] && exec_kitty "$@"
-    die "Could not get kitty latest release version"
+    [ -n "$local_smelly_version" ] && exec_smelly "$@"
+    die "Could not get smelly latest release version"
 }
 
 if [ "$OS" = "linux" ]; then
-    url="https://github.com/kovidgoyal/kitty/releases/download/v$release_version/kitty-$release_version-$arch.txz"
+    url="https://github.com/backbiter-no/smelly/releases/download/v$release_version/smelly-$release_version-$arch.txz"
 else
-    url="https://github.com/kovidgoyal/kitty/releases/download/v$release_version/kitty-$release_version.dmg"
+    url="https://github.com/backbiter-no/smelly/releases/download/v$release_version/smelly-$release_version.dmg"
 fi
 
-lock_dir="$script_dir/kitty-install-lock"
+lock_dir="$script_dir/smelly-install-lock"
 if ! command mkdir "$lock_dir" 2> /dev/null; then
     ed="$lock_dir"
     lock_dir="";
-    die "Failed to create lock dir another instance of the kitty bootstrap script is running. If you are sure that is not the case delete: $ed";
+    die "Failed to create lock dir another instance of the smelly bootstrap script is running. If you are sure that is not the case delete: $ed";
 fi
 trap 'delete_lock_dir' EXIT INT QUIT TERM
 
-printf "\033[33mkitty needs to be installed\033[m\n\n"
+printf "\033[33msmelly needs to be installed\033[m\n\n"
 command rm -rf "$install_dir"
 command mkdir -p "$install_dir"
-printf "Downloading kitty from: \033[32m%s\033[m\n\n" "$url"
+printf "Downloading smelly from: \033[32m%s\033[m\n\n" "$url"
 
 if [ "$OS" = "linux" ]; then
     old_umask=$(umask)
     umask 000
     fetch "$url" | command tar -C "$install_dir" -xJof -
     umask "$old_umask"
-    [ $? = 0 ] || die "Failed to download and install kitty"
+    [ $? = 0 ] || die "Failed to download and install smelly"
 else
     tdir=$(command mktemp -d "$install_dir/tmp-for-dmg-XXXXXXXXXXXX")
     [ $? = 0 ] || die "Creating temp directory failed"
-    fetch "$url" > "$tdir/kitty.dmg"
+    fetch "$url" > "$tdir/smelly.dmg"
     command mkdir "$tdir/mp"
-    command hdiutil attach "$tdir/kitty.dmg" "-mountpoint" "$tdir/mp" || die "Failed to mount kitty.dmg"
-    command ditto -v "$tdir/mp/kitty.app" "$install_dir/kitty.app"
+    command hdiutil attach "$tdir/smelly.dmg" "-mountpoint" "$tdir/mp" || die "Failed to mount smelly.dmg"
+    command ditto -v "$tdir/mp/smelly.app" "$install_dir/smelly.app"
     rc="$?"
     command hdiutil detach "$tdir/mp"
     command rm -rf "$tdir"
-    [ "$rc" != "0" ] && die "Failed to copy kitty.app from mounted dmg"
+    [ "$rc" != "0" ] && die "Failed to copy smelly.app from mounted dmg"
     command mkdir "$install_dir/bin"
-    command ln -sf "$install_dir/kitty.app/Contents/MacOS/kitty" "$install_dir/bin/kitty"
+    command ln -sf "$install_dir/smelly.app/Contents/MacOS/smelly" "$install_dir/bin/smelly"
 fi
-command "$kitty_exe" +runpy "from kitty.constants import str_version; print(end=str_version)" > "$local_kitty_version_file"
-exec_kitty "$@"
+command "$smelly_exe" +runpy "from smelly.constants import str_version; print(end=str_version)" > "$local_smelly_version_file"
+exec_smelly "$@"

@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package markup
 
@@ -9,9 +9,9 @@ import (
 	"strings"
 	"unicode"
 
-	"kitty"
-	"kitty/tools/utils"
-	"kitty/tools/utils/style"
+	"smelly"
+	"smelly/tools/utils"
+	"smelly/tools/utils/style"
 )
 
 var _ = fmt.Print
@@ -119,7 +119,7 @@ func (self *Context) link(x string) string {
 
 func (self *Context) ref_hyperlink(x string, prefix string) string {
 	text, target := text_and_target(x)
-	url := "kitty+doc://" + utils.CachedHostname() + "/#ref=" + prefix + target
+	url := "smelly+doc://" + utils.CachedHostname() + "/#ref=" + prefix + target
 	text = replace_all_rst_roles(text, func(group rst_format_match) string {
 		return group.payload
 	})
@@ -131,7 +131,7 @@ func (self *Context) Prettify(text string) string {
 		val := group.payload
 		switch group.role {
 		case "file":
-			if val == "kitty.conf" && self.fmt_ctx.AllowEscapeCodes {
+			if val == "smelly.conf" && self.fmt_ctx.AllowEscapeCodes {
 				path := filepath.Join(utils.ConfigDir(), val)
 				val = self.hyperlink_for_path(path, val)
 			}
@@ -142,7 +142,7 @@ func (self *Context) Prettify(text string) string {
 			text, target := text_and_target(val)
 			if text == target {
 				target = strings.Trim(target, "/")
-				if title, ok := kitty.DocTitleMap[target]; ok {
+				if title, ok := smelly.DocTitleMap[target]; ok {
 					val = title + " <" + target + ">"
 				}
 			}

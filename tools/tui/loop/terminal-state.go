@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package loop
 
@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"kitty"
+	"smelly"
 )
 
 const (
@@ -53,7 +53,7 @@ const (
 	ALTERNATE_SCREEN       Mode = 1049 | private
 	BRACKETED_PASTE        Mode = 2004 | private
 	PENDING_UPDATE         Mode = 2026 | private
-	HANDLE_TERMIOS_SIGNALS Mode = kitty.HandleTermiosSignals | private
+	HANDLE_TERMIOS_SIGNALS Mode = smelly.HandleTermiosSignals | private
 )
 
 func (self Mode) escape_code(which string) string {
@@ -86,7 +86,7 @@ const (
 type TerminalStateOptions struct {
 	alternate_screen, restore_colors bool
 	mouse_tracking                   MouseTracking
-	kitty_keyboard_mode              int
+	smelly_keyboard_mode              int
 }
 
 func set_modes(sb *strings.Builder, modes ...Mode) {
@@ -121,8 +121,8 @@ func (self *TerminalStateOptions) SetStateEscapeCodes() string {
 		set_modes(&sb, ALTERNATE_SCREEN)
 		sb.WriteString(CLEAR_SCREEN)
 	}
-	if self.kitty_keyboard_mode > 0 {
-		sb.WriteString(fmt.Sprintf("\033[>%du", self.kitty_keyboard_mode))
+	if self.smelly_keyboard_mode > 0 {
+		sb.WriteString(fmt.Sprintf("\033[>%du", self.smelly_keyboard_mode))
 	} else {
 		sb.WriteString("\033[>u")
 	}

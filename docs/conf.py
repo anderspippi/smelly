@@ -22,19 +22,19 @@ from pygments.token import Comment, Keyword, Literal, Name, Number, String, Whit
 from sphinx import addnodes, version_info
 from sphinx.util.logging import getLogger
 
-kitty_src = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if kitty_src not in sys.path:
-    sys.path.insert(0, kitty_src)
+smelly_src = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if smelly_src not in sys.path:
+    sys.path.insert(0, smelly_src)
 
-from kitty.conf.types import Definition, expand_opt_references  # noqa
-from kitty.constants import str_version, website_url  # noqa
+from smelly.conf.types import Definition, expand_opt_references  # noqa
+from smelly.constants import str_version, website_url  # noqa
 
 # config {{{
 # -- Project information -----------------------------------------------------
 
-project = 'kitty'
-copyright = time.strftime('%Y, Kovid Goyal')
-author = 'Kovid Goyal'
+project = 'smelly'
+copyright = time.strftime('%Y, anders Goyal')
+author = 'anders Goyal'
 building_man_pages = 'man' in sys.argv
 
 # The short X.Y version
@@ -67,7 +67,7 @@ extensions = [
 ogp_site_url = website_url()
 # OGP needs a PNG image because of: https://github.com/wpilibsuite/sphinxext-opengraph/issues/96
 ogp_social_cards = {
-    'image': '../logo/kitty.png'
+    'image': '../logo/smelly.png'
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -98,16 +98,16 @@ exclude_patterns = [
 ]
 
 rst_prolog = '''
-.. |kitty| replace:: *kitty*
+.. |smelly| replace:: *smelly*
 .. |version| replace:: VERSION
-.. _tarball: https://github.com/kovidgoyal/kitty/releases/download/vVERSION/kitty-VERSION.tar.xz
+.. _tarball: https://github.com/backbiter-no/smelly/releases/download/vVERSION/smelly-VERSION.tar.xz
 .. role:: italic
 
 '''.replace('VERSION', str_version)
 smartquotes_action = 'qe'  # educate quotes and ellipses but not dashes
 
 string_replacements = {
-    '_kitty_install_cmd': 'curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin',
+    '_smelly_install_cmd': 'curl -L https://sw.backbiter-no.net/smelly/installer.sh | sh /dev/stdin',
 }
 
 
@@ -117,7 +117,7 @@ string_replacements = {
 # a list of builtin themes.
 #
 html_theme = 'furo'
-html_title = 'kitty'
+html_title = 'smelly'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -130,7 +130,7 @@ html_theme_options: Dict[str, Any] = {
     'footer_icons': [
         {
             "name": "GitHub",
-            "url": "https://github.com/kovidgoyal/kitty",
+            "url": "https://github.com/backbiter-no/smelly",
             "html": f"""
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="{github_icon_path}"></path>
@@ -146,7 +146,7 @@ html_theme_options: Dict[str, Any] = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_favicon = html_logo = '../logo/kitty.svg'
+html_favicon = html_logo = '../logo/smelly.svg'
 html_css_files = ['custom.css']
 html_js_files = ['custom.js']
 
@@ -167,8 +167,8 @@ manpages_url = 'https://man7.org/linux/man-pages/man{section}/{page}.{section}.h
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('invocation', 'kitty', 'kitty Documentation', [author], 1),
-    ('conf', 'kitty.conf', 'kitty.conf Documentation', [author], 5)
+    ('invocation', 'smelly', 'smelly Documentation', [author], 1),
+    ('conf', 'smelly.conf', 'smelly.conf Documentation', [author], 5)
 ]
 
 
@@ -178,8 +178,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'kitty', 'kitty Documentation',
-     author, 'kitty', 'Cross-platform, fast, feature-rich, GPU based terminal',
+    (master_doc, 'smelly', 'smelly Documentation',
+     author, 'smelly', 'Cross-platform, fast, feature-rich, GPU based terminal',
      'Miscellaneous'),
 ]
 # }}}
@@ -188,9 +188,9 @@ texinfo_documents = [
 # GitHub linking inline roles {{{
 
 extlinks = {
-    'iss': ('https://github.com/kovidgoyal/kitty/issues/%s', '#%s'),
-    'pull': ('https://github.com/kovidgoyal/kitty/pull/%s', '#%s'),
-    'disc': ('https://github.com/kovidgoyal/kitty/discussions/%s', '#%s'),
+    'iss': ('https://github.com/backbiter-no/smelly/issues/%s', '#%s'),
+    'pull': ('https://github.com/backbiter-no/smelly/pull/%s', '#%s'),
+    'disc': ('https://github.com/backbiter-no/smelly/discussions/%s', '#%s'),
 }
 
 
@@ -206,7 +206,7 @@ def commit_role(
             f'GitHub commit id "{text}" not recognized.', line=lineno)
         prb = inliner.problematic(rawtext, rawtext, msg)
         return [prb], [msg]
-    url = f'https://github.com/kovidgoyal/kitty/commit/{commit_id}'
+    url = f'https://github.com/backbiter-no/smelly/commit/{commit_id}'
     set_classes(options)
     short_id = subprocess.check_output(
         f'git rev-list --max-count=1 --abbrev-commit --skip=# {commit_id}'.split()).decode('utf-8').strip()
@@ -217,10 +217,10 @@ def commit_role(
 
 # CLI docs {{{
 def write_cli_docs(all_kitten_names: Iterable[str]) -> None:
-    from kittens.ssh.copy import option_text
-    from kittens.ssh.options.definition import copy_message
-    from kitty.cli import option_spec_as_rst
-    from kitty.launch import options_spec as launch_options_spec
+    from wellies.ssh.copy import option_text
+    from wellies.ssh.options.definition import copy_message
+    from smelly.cli import option_spec_as_rst
+    from smelly.launch import options_spec as launch_options_spec
     with open('generated/ssh-copy.rst', 'w') as f:
         f.write(option_spec_as_rst(
             appname='copy', ospec=option_text, heading_char='^',
@@ -230,59 +230,59 @@ def write_cli_docs(all_kitten_names: Iterable[str]) -> None:
         f.write(option_spec_as_rst(
             appname='launch', ospec=launch_options_spec, heading_char='_',
             message='''\
-Launch an arbitrary program in a new kitty window/tab. Note that
+Launch an arbitrary program in a new smelly window/tab. Note that
 if you specify a program-to-run you can use the special placeholder
 :code:`@selection` which will be replaced by the current selection.
 '''
         ))
-    with open('generated/cli-kitty.rst', 'w') as f:
-        f.write(option_spec_as_rst(appname='kitty').replace(
-            'kitty --to', 'kitty @ --to'))
+    with open('generated/cli-smelly.rst', 'w') as f:
+        f.write(option_spec_as_rst(appname='smelly').replace(
+            'smelly --to', 'smelly @ --to'))
     as_rst = partial(option_spec_as_rst, heading_char='_')
-    from kitty.rc.base import all_command_names, command_for_name
-    from kitty.remote_control import cli_msg, global_options_spec
-    with open('generated/cli-kitty-at.rst', 'w') as f:
+    from smelly.rc.base import all_command_names, command_for_name
+    from smelly.remote_control import cli_msg, global_options_spec
+    with open('generated/cli-smelly-at.rst', 'w') as f:
         p = partial(print, file=f)
-        p('kitty @')
+        p('smelly @')
         p('-' * 80)
-        p('.. program::', 'kitty @')
+        p('.. program::', 'smelly @')
         p('\n\n' + as_rst(
-            global_options_spec, message=cli_msg, usage='command ...', appname='kitty @'))
-        from kitty.rc.base import cli_params_for
+            global_options_spec, message=cli_msg, usage='command ...', appname='smelly @'))
+        from smelly.rc.base import cli_params_for
         for cmd_name in sorted(all_command_names()):
             func = command_for_name(cmd_name)
             p(f'.. _at-{func.name}:\n')
-            p('kitty @', func.name)
+            p('smelly @', func.name)
             p('-' * 120)
-            p('.. program::', 'kitty @', func.name)
+            p('.. program::', 'smelly @', func.name)
             p('\n\n' + as_rst(*cli_params_for(func)))
-    from kittens.runner import get_kitten_cli_docs
-    from kitty.fast_data_types import wrapped_kitten_names
+    from wellies.runner import get_kitten_cli_docs
+    from smelly.fast_data_types import wrapped_kitten_names
 
     for kitten in all_kitten_names:
         data = get_kitten_cli_docs(kitten)
         if data:
             with open(f'generated/cli-kitten-{kitten}.rst', 'w') as f:
                 p = partial(print, file=f)
-                p('.. program::', 'kitty +kitten', kitten)
+                p('.. program::', 'smelly +kitten', kitten)
                 p('\nSource code for', kitten)
                 p('-' * 72)
                 if kitten in wrapped_kitten_names():
-                    scurl = f'https://github.com/kovidgoyal/kitty/tree/master/tools/cmd/{kitten}'
+                    scurl = f'https://github.com/backbiter-no/smelly/tree/master/tools/cmd/{kitten}'
                 else:
-                    scurl = f'https://github.com/kovidgoyal/kitty/tree/master/kittens/{kitten}'
+                    scurl = f'https://github.com/backbiter-no/smelly/tree/master/wellies/{kitten}'
                 p(f'\nThe source code for this kitten is `available on GitHub <{scurl}>`_.')
                 p('\nCommand Line Interface')
                 p('-' * 72)
                 p('\n\n' + option_spec_as_rst(
-                    data['options'], message=data['help_text'], usage=data['usage'], appname=f'kitty +kitten {kitten}',
+                    data['options'], message=data['help_text'], usage=data['usage'], appname=f'smelly +kitten {kitten}',
                     heading_char='^'))
 
 # }}}
 
 
 def write_remote_control_protocol_docs() -> None:  # {{{
-    from kitty.rc.base import RemoteCommand, all_command_names, command_for_name
+    from smelly.rc.base import RemoteCommand, all_command_names, command_for_name
     field_pat = re.compile(r'\s*([^:]+?)\s*:\s*(.+)')
 
     def format_cmd(p: Callable[..., None], name: str, cmd: RemoteCommand) -> None:
@@ -446,7 +446,7 @@ def parse_action_node(env: Any, sig: str, signode: Any) -> str:
 def process_opt_link(env: Any, refnode: Any, has_explicit_title: bool, title: str, target: str) -> Tuple[str, str]:
     conf_name, opt = target.partition('.')[::2]
     if not opt:
-        conf_name, opt = 'kitty', conf_name
+        conf_name, opt = 'smelly', conf_name
     full_name = f'{conf_name}.{opt}'
     return title, opt_aliases.get(full_name, full_name)
 
@@ -458,7 +458,7 @@ def process_action_link(env: Any, refnode: Any, has_explicit_title: bool, title:
 def process_shortcut_link(env: Any, refnode: Any, has_explicit_title: bool, title: str, target: str) -> Tuple[str, str]:
     conf_name, slug = target.partition('.')[::2]
     if not slug:
-        conf_name, slug = 'kitty', conf_name
+        conf_name, slug = 'smelly', conf_name
     full_name = f'{conf_name}.{slug}'
     try:
         target, stitle = shortcut_slugs[full_name]
@@ -511,16 +511,16 @@ def write_conf_docs(app: Any, all_kitten_names: Iterable[str]) -> None:
             text = '\n'.join(definition.as_conf(commented=True))
             print(text, file=f)
 
-    from kitty.options.definition import definition
-    generate_default_config(definition, 'kitty')
+    from smelly.options.definition import definition
+    generate_default_config(definition, 'smelly')
 
-    from kittens.runner import get_kitten_conf_docs
+    from wellies.runner import get_kitten_conf_docs
     for kitten in all_kitten_names:
         definition = get_kitten_conf_docs(kitten)
         if definition:
             generate_default_config(definition, f'kitten-{kitten}')
 
-    from kitty.actions import as_rst
+    from smelly.actions import as_rst
     with open('generated/actions.rst', 'w', encoding='utf-8') as f:
         f.write(as_rst())
 # }}}
@@ -542,7 +542,7 @@ def add_html_context(app: Any, pagename: str, templatename: str, context: Any, d
 
 def setup(app: Any) -> None:
     os.makedirs('generated/conf', exist_ok=True)
-    from kittens.runner import all_kitten_names
+    from wellies.runner import all_kitten_names
     kn = all_kitten_names()
     write_cli_docs(kn)
     write_remote_control_protocol_docs()

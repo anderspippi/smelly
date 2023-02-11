@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package style
 
@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"kitty/tools/utils/shlex"
+	"smelly/tools/utils/shlex"
 )
 
 type escape_code interface {

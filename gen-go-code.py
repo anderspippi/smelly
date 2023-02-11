@@ -1,5 +1,5 @@
-#!./kitty/launcher/kitty +launch
-# License: GPLv3 Copyright: 2022, Kovid Goyal <kovid at kovidgoyal.net>
+#!./smelly/launcher/smelly +launch
+# License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
 
 import io
 import json
@@ -10,23 +10,23 @@ from contextlib import contextmanager, suppress
 from functools import lru_cache
 from typing import Any, Dict, Iterator, List, Optional, Sequence, Set, Tuple, Union
 
-import kitty.constants as kc
-from kittens.tui.operations import Mode
-from kittens.tui.spinners import spinners
-from kitty.cli import (
+import smelly.constants as kc
+from wellies.tui.operations import Mode
+from wellies.tui.spinners import spinners
+from smelly.cli import (
     CompletionSpec,
     GoOption,
     go_options_for_seq,
     parse_option_spec,
     serialize_as_go_string,
 )
-from kitty.guess_mime_type import text_mimes
-from kitty.key_encoding import config_mod_map
-from kitty.key_names import character_key_name_aliases, functional_key_name_aliases
-from kitty.options.types import Options
-from kitty.rc.base import RemoteCommand, all_command_names, command_for_name
-from kitty.remote_control import global_options_spec
-from kitty.rgb import color_names
+from smelly.guess_mime_type import text_mimes
+from smelly.key_encoding import config_mod_map
+from smelly.key_names import character_key_name_aliases, functional_key_name_aliases
+from smelly.options.types import Options
+from smelly.rc.base import RemoteCommand, all_command_names, command_for_name
+from smelly.remote_control import global_options_spec
+from smelly.rgb import color_names
 
 changed: List[str] = []
 
@@ -57,7 +57,7 @@ def replace(template: str, **kw: str) -> str:
 
 @lru_cache
 def kitten_cli_docs(kitten: str) -> Any:
-    from kittens.runner import get_kitten_cli_docs
+    from wellies.runner import get_kitten_cli_docs
     return get_kitten_cli_docs(kitten)
 
 
@@ -70,11 +70,11 @@ def go_options_for_kitten(kitten: str) -> Tuple[Sequence[GoOption], Optional[Com
     return (), None
 
 
-def generate_kittens_completion() -> None:
-    from kittens.runner import all_kitten_names, get_kitten_wrapper_of
+def generate_wellies_completion() -> None:
+    from wellies.runner import all_kitten_names, get_kitten_wrapper_of
     for kitten in sorted(all_kitten_names()):
         kn = 'kitten_' + kitten
-        print(f'{kn} := plus_kitten.AddSubCommand(&cli.Command{{Name:"{kitten}", Group: "Kittens"}})')
+        print(f'{kn} := plus_kitten.AddSubCommand(&cli.Command{{Name:"{kitten}", Group: "wellies"}})')
         wof = get_kitten_wrapper_of(kitten)
         if wof:
             print(f'{kn}.ArgCompleter = cli.CompletionForWrapper("{serialize_as_go_string(wof)}")')
@@ -92,7 +92,7 @@ def generate_kittens_completion() -> None:
 
 @lru_cache
 def clone_safe_launch_opts() -> Sequence[GoOption]:
-    from kitty.launch import clone_safe_opts, options_spec
+    from smelly.launch import clone_safe_opts, options_spec
     ans = []
     allowed = clone_safe_opts()
     for o in go_options_for_seq(parse_option_spec(options_spec())[0]):
@@ -107,64 +107,64 @@ def completion_for_launch_wrappers(*names: str) -> None:
             print(o.as_option(name))
 
 
-def generate_completions_for_kitty() -> None:
-    from kitty.config import option_names_for_completion
+def generate_completions_for_smelly() -> None:
+    from smelly.config import option_names_for_completion
     print('package completion\n')
-    print('import "kitty/tools/cli"')
-    print('import "kitty/tools/cmd/tool"')
-    print('import "kitty/tools/cmd/at"')
+    print('import "smelly/tools/cli"')
+    print('import "smelly/tools/cmd/tool"')
+    print('import "smelly/tools/cmd/at"')
     conf_names = ', '.join((f'"{serialize_as_go_string(x)}"' for x in option_names_for_completion()))
-    print('var kitty_option_names_for_completion = []string{' + conf_names + '}')
+    print('var smelly_option_names_for_completion = []string{' + conf_names + '}')
 
-    print('func kitty(root *cli.Command) {')
+    print('func smelly(root *cli.Command) {')
 
-    # The kitty exe
+    # The smelly exe
     print('k := root.AddSubCommand(&cli.Command{'
-          'Name:"kitty", SubCommandIsOptional: true, ArgCompleter: cli.CompleteExecutableFirstArg, SubCommandMustBeFirst: true })')
+          'Name:"smelly", SubCommandIsOptional: true, ArgCompleter: cli.CompleteExecutableFirstArg, SubCommandMustBeFirst: true })')
     print('kt := root.AddSubCommand(&cli.Command{Name:"kitten", SubCommandMustBeFirst: true })')
-    print('tool.KittyToolEntryPoints(kt)')
+    print('tool.smellyToolEntryPoints(kt)')
     for opt in go_options_for_seq(parse_option_spec()[0]):
         print(opt.as_option('k'))
 
-    # kitty +
-    print('plus := k.AddSubCommand(&cli.Command{Name:"+", Group:"Entry points", ShortDescription: "Various special purpose tools and kittens"})')
+    # smelly +
+    print('plus := k.AddSubCommand(&cli.Command{Name:"+", Group:"Entry points", ShortDescription: "Various special purpose tools and wellies"})')
 
-    # kitty +launch
+    # smelly +launch
     print('plus_launch := plus.AddSubCommand(&cli.Command{'
           'Name:"launch", Group:"Entry points", ShortDescription: "Launch Python scripts", ArgCompleter: complete_plus_launch})')
     print('k.AddClone("", plus_launch).Name = "+launch"')
 
-    # kitty +list-fonts
+    # smelly +list-fonts
     print('plus_list_fonts := plus.AddSubCommand(&cli.Command{'
           'Name:"list-fonts", Group:"Entry points", ShortDescription: "List all available monospaced fonts"})')
     print('k.AddClone("", plus_list_fonts).Name = "+list-fonts"')
 
-    # kitty +runpy
+    # smelly +runpy
     print('plus_runpy := plus.AddSubCommand(&cli.Command{'
           'Name: "runpy", Group:"Entry points", ArgCompleter: complete_plus_runpy, ShortDescription: "Run Python code"})')
     print('k.AddClone("", plus_runpy).Name = "+runpy"')
 
-    # kitty +open
+    # smelly +open
     print('plus_open := plus.AddSubCommand(&cli.Command{'
           'Name:"open", Group:"Entry points", ArgCompleter: complete_plus_open, ShortDescription: "Open files and URLs"})')
     print('for _, og := range k.OptionGroups { plus_open.OptionGroups = append(plus_open.OptionGroups, og.Clone(plus_open)) }')
     print('k.AddClone("", plus_open).Name = "+open"')
 
-    # kitty +kitten
-    print('plus_kitten := plus.AddSubCommand(&cli.Command{Name:"kitten", Group:"Kittens", SubCommandMustBeFirst: true})')
-    generate_kittens_completion()
+    # smelly +kitten
+    print('plus_kitten := plus.AddSubCommand(&cli.Command{Name:"kitten", Group:"wellies", SubCommandMustBeFirst: true})')
+    generate_wellies_completion()
     print('k.AddClone("", plus_kitten).Name = "+kitten"')
 
     # @
     print('at.EntryPoint(k)')
 
-    # clone-in-kitty, edit-in-kitty
-    print('cik := root.AddSubCommand(&cli.Command{Name:"clone-in-kitty"})')
+    # clone-in-smelly, edit-in-smelly
+    print('cik := root.AddSubCommand(&cli.Command{Name:"clone-in-smelly"})')
     completion_for_launch_wrappers('cik')
 
     print('}')
     print('func init() {')
-    print('cli.RegisterExeForCompletion(kitty)')
+    print('cli.RegisterExeForCompletion(smelly)')
     print('}')
 # }}}
 
@@ -291,26 +291,26 @@ def go_code_for_remote_command(name: str, cmd: RemoteCommand, template: str) -> 
 # }}}
 
 
-# kittens {{{
+# wellies {{{
 
 @lru_cache
-def wrapped_kittens() -> Sequence[str]:
-    with open('shell-integration/ssh/kitty') as f:
+def wrapped_wellies() -> Sequence[str]:
+    with open('shell-integration/ssh/smelly') as f:
         for line in f:
-            if line.startswith('    wrapped_kittens="'):
+            if line.startswith('    wrapped_wellies="'):
                 val = line.strip().partition('"')[2][:-1]
                 return tuple(sorted(filter(None, val.split())))
-    raise Exception('Failed to read wrapped kittens from kitty wrapper script')
+    raise Exception('Failed to read wrapped wellies from smelly wrapper script')
 
 
 def kitten_clis() -> None:
-    for kitten in wrapped_kittens():
+    for kitten in wrapped_wellies():
         with replace_if_needed(f'tools/cmd/{kitten}/cli_generated.go'):
             od = []
             kcd = kitten_cli_docs(kitten)
             has_underscore = '_' in kitten
             print(f'package {kitten}')
-            print('import "kitty/tools/cli"')
+            print('import "smelly/tools/cli"')
             print('func create_cmd(root *cli.Command, run_func func(*cli.Command, *Options, []string)(int, error)) {')
             print('ans := root.AddSubCommand(&cli.Command{')
             print(f'Name: "{kitten}",')
@@ -376,7 +376,7 @@ def generate_color_names() -> str:
 
 
 def load_ref_map() -> Dict[str, Dict[str, str]]:
-    with open('kitty/docs_ref_map_generated.h') as f:
+    with open('smelly/docs_ref_map_generated.h') as f:
         raw = f.read()
     raw = raw.split('{', 1)[1].split('}', 1)[0]
     data = json.loads(bytes(bytearray(json.loads(f'[{raw}]'))))
@@ -387,7 +387,7 @@ def generate_constants() -> str:
     ref_map = load_ref_map()
     dp = ", ".join(map(lambda x: f'"{serialize_as_go_string(x)}"', kc.default_pager_for_help))
     return f'''\
-package kitty
+package smelly
 
 type VersionType struct {{
     Major, Minor, Patch int
@@ -460,7 +460,7 @@ def update_at_commands() -> None:
     odef = '\n'.join(opt_def)
     code = f'''
 package at
-import "kitty/tools/cli"
+import "smelly/tools/cli"
 type rc_global_options struct {{
 {sdef}
 }}
@@ -475,11 +475,11 @@ func add_rc_global_opts(cmd *cli.Command) {{
 
 
 def update_completion() -> None:
-    with replace_if_needed('tools/cmd/completion/kitty_generated.go'):
-        generate_completions_for_kitty()
-    with replace_if_needed('tools/cmd/edit_in_kitty/launch_generated.go'):
-        print('package edit_in_kitty')
-        print('import "kitty/tools/cli"')
+    with replace_if_needed('tools/cmd/completion/smelly_generated.go'):
+        generate_completions_for_smelly()
+    with replace_if_needed('tools/cmd/edit_in_smelly/launch_generated.go'):
+        print('package edit_in_smelly')
+        print('import "smelly/tools/cli"')
         print('func AddCloneSafeOpts(cmd *cli.Command) {')
         completion_for_launch_wrappers('cmd')
         print(''.join(CompletionSpec.from_string('type:file mime:text/* group:"Text files"').as_go_code('cmd.ArgCompleter', ' = ')))

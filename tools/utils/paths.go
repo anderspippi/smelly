@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package utils
 
@@ -57,28 +57,28 @@ func Abspath(path string) string {
 	return path
 }
 
-var config_dir, kitty_exe, cache_dir string
-var kitty_exe_err error
-var config_dir_once, kitty_exe_once, cache_dir_once sync.Once
+var config_dir, smelly_exe, cache_dir string
+var smelly_exe_err error
+var config_dir_once, smelly_exe_once, cache_dir_once sync.Once
 
-func find_kitty_exe() {
+func find_smelly_exe() {
 	exe, err := os.Executable()
 	if err == nil {
-		kitty_exe = filepath.Join(filepath.Dir(exe), "kitty")
-		kitty_exe_err = unix.Access(kitty_exe, unix.X_OK)
+		smelly_exe = filepath.Join(filepath.Dir(exe), "smelly")
+		smelly_exe_err = unix.Access(smelly_exe, unix.X_OK)
 	} else {
-		kitty_exe_err = err
+		smelly_exe_err = err
 	}
 }
 
-func KittyExe() (string, error) {
-	kitty_exe_once.Do(find_kitty_exe)
-	return kitty_exe, kitty_exe_err
+func smellyExe() (string, error) {
+	smelly_exe_once.Do(find_smelly_exe)
+	return smelly_exe, smelly_exe_err
 }
 
 func find_config_dir() {
-	if os.Getenv("KITTY_CONFIG_DIRECTORY") != "" {
-		config_dir = Abspath(Expanduser(os.Getenv("KITTY_CONFIG_DIRECTORY")))
+	if os.Getenv("smelly_CONFIG_DIRECTORY") != "" {
+		config_dir = Abspath(Expanduser(os.Getenv("smelly_CONFIG_DIRECTORY")))
 	} else {
 		var locations []string
 		if os.Getenv("XDG_CONFIG_HOME") != "" {
@@ -90,8 +90,8 @@ func find_config_dir() {
 		}
 		for _, loc := range locations {
 			if loc != "" {
-				q := filepath.Join(loc, "kitty")
-				if _, err := os.Stat(filepath.Join(q, "kitty.conf")); err == nil {
+				q := filepath.Join(loc, "smelly")
+				if _, err := os.Stat(filepath.Join(q, "smelly.conf")); err == nil {
 					config_dir = q
 					break
 				}
@@ -99,7 +99,7 @@ func find_config_dir() {
 		}
 		for _, loc := range locations {
 			if loc != "" {
-				config_dir = filepath.Join(loc, "kitty")
+				config_dir = filepath.Join(loc, "smelly")
 				break
 			}
 		}
@@ -113,16 +113,16 @@ func ConfigDir() string {
 
 func find_cache_dir() {
 	candidate := ""
-	if edir := os.Getenv("KITTY_CACHE_DIRECTORY"); edir != "" {
+	if edir := os.Getenv("smelly_CACHE_DIRECTORY"); edir != "" {
 		candidate = Abspath(Expanduser(edir))
 	} else if runtime.GOOS == "darwin" {
-		candidate = Expanduser("~/Library/Caches/kitty")
+		candidate = Expanduser("~/Library/Caches/smelly")
 	} else {
 		candidate = os.Getenv("XDG_CACHE_HOME")
 		if candidate == "" {
 			candidate = "~/.cache"
 		}
-		candidate = filepath.Join(Expanduser(candidate), "kitty")
+		candidate = filepath.Join(Expanduser(candidate), "smelly")
 	}
 	os.MkdirAll(candidate, 0o755)
 	cache_dir = candidate

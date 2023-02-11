@@ -1,19 +1,19 @@
 #!/bin/zsh
 #
-# Enables integration between zsh and kitty based on KITTY_SHELL_INTEGRATION.
-# The latter is set by kitty based on kitty.conf.
+# Enables integration between zsh and smelly based on smelly_SHELL_INTEGRATION.
+# The latter is set by smelly based on smelly.conf.
 #
 # This is an autoloadable function. It's invoked automatically in shells
-# directly spawned by kitty but not in any other shells. For example, running
+# directly spawned by smelly but not in any other shells. For example, running
 # `exec zsh`, `sudo -E zsh`, `tmux`, or plain `zsh` will create a shell where
-# kitty-integration won't automatically run. Zsh users who want integration with
-# kitty in all shells should add the following lines to their .zshrc:
+# smelly-integration won't automatically run. Zsh users who want integration with
+# smelly in all shells should add the following lines to their .zshrc:
 #
-#   if [[ -n $KITTY_INSTALLATION_DIR ]]; then
-#     export KITTY_SHELL_INTEGRATION="enabled"
-#     autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
-#     kitty-integration
-#     unfunction kitty-integration
+#   if [[ -n $smelly_INSTALLATION_DIR ]]; then
+#     export smelly_SHELL_INTEGRATION="enabled"
+#     autoload -Uz -- "$smelly_INSTALLATION_DIR"/shell-integration/zsh/smelly-integration
+#     smelly-integration
+#     unfunction smelly-integration
 #   fi
 #
 # Implementation note: We can assume that alias expansion is disabled in this
@@ -24,7 +24,7 @@
 builtin emulate -L zsh -o no_warn_create_global -o no_aliases
 
 [[ -o interactive ]]              || builtin return 0  # non-interactive shell
-[[ -n $KITTY_SHELL_INTEGRATION ]] || builtin return 0  # integration disabled
+[[ -n $smelly_SHELL_INTEGRATION ]] || builtin return 0  # integration disabled
 (( ! $+_ksi_state ))              || builtin return 0  # already initialized
 
 # 0: no OSC 133 [AC] marks have been written yet.
@@ -61,13 +61,13 @@ typeset -gi _ksi_fd
     }
 } 2>/dev/null || (( _ksi_fd = 1 ))
 
-# Asks kitty to print $@ to its STDERR. This is for debugging.
+# Asks smelly to print $@ to its STDERR. This is for debugging.
 _ksi_debug_print() {
     builtin local data
     data=$(builtin command base64 <<<"${(j: :)@}") || builtin return
     # Removing all spaces rather than just \n allows this code to
     # work on broken systems where base64 outputs \r\n.
-    builtin print -nu "$_ksi_fd" '\eP@kitty-print|'"${data//[[:space:]]}"'\e\\'
+    builtin print -nu "$_ksi_fd" '\eP@smelly-print|'"${data//[[:space:]]}"'\e\\'
 }
 
 # We defer initialization until precmd for several reasons:
@@ -76,7 +76,7 @@ _ksi_debug_print() {
 #   zle-line-finish hooks when they initialize.
 # - By deferring initialization we allow user rc files to opt out from some
 #   parts of integration. For example, if a zshrc theme prints OSC 133
-#   marks, it can append " no-prompt-mark" to KITTY_SHELL_INTEGRATION during
+#   marks, it can append " no-prompt-mark" to smelly_SHELL_INTEGRATION during
 #   initialization to avoid redundant marks from our code.
 builtin typeset -ag precmd_functions
 precmd_functions+=(_ksi_deferred_init)
@@ -86,32 +86,32 @@ _ksi_deferred_init() {
 
     # Recognized options: no-cursor, no-title, no-prompt-mark, no-complete, no-cwd.
     builtin local -a opt
-    opt=(${(s: :)KITTY_SHELL_INTEGRATION})
-    builtin unset KITTY_SHELL_INTEGRATION
+    opt=(${(s: :)smelly_SHELL_INTEGRATION})
+    builtin unset smelly_SHELL_INTEGRATION
 
-    # The directory where kitty-integration is located: /.../shell-integration/zsh.
+    # The directory where smelly-integration is located: /.../shell-integration/zsh.
     builtin local self_dir="${functions_source[_ksi_deferred_init]:A:h}"
-    # The directory with _kitty. We store it in a directory of its own rather than
+    # The directory with _smelly. We store it in a directory of its own rather than
     # in $self_dir because we are adding it to fpath and we don't want any other
     # files to be accidentally autoloadable.
     builtin local comp_dir="$self_dir/completions"
 
-    # Enable completions for `kitty` command.
-    if (( ! opt[(Ie)no-complete] )) && [[ -r $comp_dir/_kitty ]]; then
+    # Enable completions for `smelly` command.
+    if (( ! opt[(Ie)no-complete] )) && [[ -r $comp_dir/_smelly ]]; then
         if (( $+functions[compdef] )); then
             # If compdef is defined, then either compinit has already run or it's
             # a shim that records all calls for the purpose of replaying them after
-            # compinit. Either way we clobber the existing completion for kitty and
+            # compinit. Either way we clobber the existing completion for smelly and
             # install our own.
-            builtin unset "functions[_kitty]"
-            builtin autoload -Uz -- $comp_dir/_kitty
-            compdef _kitty kitty
-            compdef _kitty clone-in-kitty
-            compdef _kitty kitten
+            builtin unset "functions[_smelly]"
+            builtin autoload -Uz -- $comp_dir/_smelly
+            compdef _smelly smelly
+            compdef _smelly clone-in-smelly
+            compdef _smelly kitten
         fi
 
         # If compdef is not set, compinit has not run yet. In this case we must
-        # add our completions directory to fpath so that _kitty gets picked up by
+        # add our completions directory to fpath so that _smelly gets picked up by
         # compinit.
         #
         # We extend fpath even if compinit has run because it might run again.
@@ -219,8 +219,8 @@ _ksi_deferred_init() {
             (( _ksi_state = 1 ))
         }
 
-        # the following two lines are commented out as currently kitty doesn't use B prompt marking
-        # and hooking zle widgets in ZSH is a total minefield, see https://github.com/kovidgoyal/kitty/issues/4428
+        # the following two lines are commented out as currently smelly doesn't use B prompt marking
+        # and hooking zle widgets in ZSH is a total minefield, see https://github.com/backbiter-no/smelly/issues/4428
         # so we can at least tell users to use no-cursor and with that avoid hooking ZLE widgets at all
         # functions[_ksi_zle_line_init]+='
         #     builtin print -nu "$_ksi_fd" "\\e]133;B\\a"'
@@ -228,7 +228,7 @@ _ksi_deferred_init() {
 
     # Enable reporting current working dir to terminal
     if (( ! opt[(Ie)no-cwd] )); then
-        _ksi_report_pwd() { builtin print -nu $_ksi_fd '\e]7;kitty-shell-cwd://'"$HOST""$PWD"'\a'; }
+        _ksi_report_pwd() { builtin print -nu $_ksi_fd '\e]7;smelly-shell-cwd://'"$HOST""$PWD"'\a'; }
         chpwd_functions=(${chpwd_functions[@]} "_ksi_report_pwd")
         # An executed program could change cwd and report the changed cwd, so also report cwd at each new prompt
         # as in this case chpwd_functions is insufficient. chpwd_functions is still needed for things like: cd x && something
@@ -246,9 +246,9 @@ _ksi_deferred_init() {
         # (LF becomes \n, etc.). This isn't necessary in precmd because (%) does it
         # for us.
         builtin local is_ssh_session="n"
-        if [[ -n "$KITTY_PID" ]]; then
-            # kitty running locally
-        elif [[ -n "$SSH_TTY" || -n "$SSH2_TTY$KITTY_WINDOW_ID" ]]; then
+        if [[ -n "$smelly_PID" ]]; then
+            # smelly running locally
+        elif [[ -n "$SSH_TTY" || -n "$SSH2_TTY$smelly_WINDOW_ID" ]]; then
             # connected to most SSH servers
             # or use ssh kitten to connected to some SSH servers that do not set SSH_TTY
             is_ssh_session="y"
@@ -355,14 +355,14 @@ _ksi_deferred_init() {
         precmd_functions=(${precmd_functions:#_ksi_deferred_init})
     fi
 
-    if [ -n "${KITTY_IS_CLONE_LAUNCH}" ]; then
+    if [ -n "${smelly_IS_CLONE_LAUNCH}" ]; then
         builtin local orig_conda_env="$CONDA_DEFAULT_ENV"
-        builtin eval "${KITTY_IS_CLONE_LAUNCH}"
+        builtin eval "${smelly_IS_CLONE_LAUNCH}"
         builtin hash -r 2> /dev/null 1> /dev/null
         builtin local venv="${VIRTUAL_ENV}/bin/activate"
         builtin local sourced=""
         _ksi_s_is_ok() {
-            [[ -z "$sourced" && "$KITTY_CLONE_SOURCE_STRATEGIES" == *",$1,"* ]] && builtin return 0
+            [[ -z "$sourced" && "$smelly_CLONE_SOURCE_STRATEGIES" == *",$1,"* ]] && builtin return 0
             builtin return 1
         }
 
@@ -373,20 +373,20 @@ _ksi_deferred_init() {
         fi; if _ksi_s_is_ok "conda" && [[ -n "${CONDA_DEFAULT_ENV}" && (( $+commands[conda] )) && "${CONDA_DEFAULT_ENV}" != "$orig_conda_env" ]]; then
             sourced="y"
             conda activate "${CONDA_DEFAULT_ENV}"
-        fi; if _ksi_s_is_ok "env_var" && [[ -n "${KITTY_CLONE_SOURCE_CODE}" ]]; then
+        fi; if _ksi_s_is_ok "env_var" && [[ -n "${smelly_CLONE_SOURCE_CODE}" ]]; then
             sourced="y"
-            builtin eval "${KITTY_CLONE_SOURCE_CODE}"
-        fi; if _ksi_s_is_ok "path" && [[ -r "${KITTY_CLONE_SOURCE_PATH}" ]]; then
+            builtin eval "${smelly_CLONE_SOURCE_CODE}"
+        fi; if _ksi_s_is_ok "path" && [[ -r "${smelly_CLONE_SOURCE_PATH}" ]]; then
             sourced="y"
-            builtin source "${KITTY_CLONE_SOURCE_PATH}"
+            builtin source "${smelly_CLONE_SOURCE_PATH}"
         fi
         builtin unfunction _ksi_s_is_ok
         # Ensure PATH has no duplicate entries
         builtin typeset -gxU PATH="$PATH"
     fi
-    builtin unset KITTY_IS_CLONE_LAUNCH KITTY_CLONE_SOURCE_STRATEGIES
+    builtin unset smelly_IS_CLONE_LAUNCH smelly_CLONE_SOURCE_STRATEGIES
 
-    builtin alias edit-in-kitty="kitten edit-in-kitty"
+    builtin alias edit-in-smelly="kitten edit-in-smelly"
 
     # Map alt+left/right to move by word if not already mapped. This is expected behavior on macOS and I am tired
     # of answering questions about it.
@@ -394,7 +394,7 @@ _ksi_deferred_init() {
     [[ $(builtin bindkey "^[[1;3D") == *" undefined-key" ]] && builtin bindkey "^[[1;3D" "backward-word" 
 
     # Unfunction _ksi_deferred_init to save memory. Don't unfunction
-    # kitty-integration though because decent public functions aren't supposed to
+    # smelly-integration though because decent public functions aren't supposed to
     # to unfunction themselves when invoked. Unfunctioning is done by calling code.
     builtin unfunction _ksi_deferred_init
 }
@@ -406,21 +406,21 @@ _ksi_transmit_data() {
     while [ $pos -lt ${#data} ]; do
         builtin local chunk="${data:$pos:2048}"
         pos=$(($pos+2048))
-        builtin print -nu "$_ksi_fd" -f '\eP@kitty-%s|%s:%s\e\\' "${2}" "${chunk_num}" "${chunk}"
+        builtin print -nu "$_ksi_fd" -f '\eP@smelly-%s|%s:%s\e\\' "${2}" "${chunk_num}" "${chunk}"
         chunk_num=$(($chunk_num+1))
     done
     # save history so it is available in new shell
     [ "$3" = "save_history" ] && builtin fc -AI
-    builtin print -nu "$_ksi_fd" -f '\eP@kitty-%s|\e\\' "${2}"
+    builtin print -nu "$_ksi_fd" -f '\eP@smelly-%s|\e\\' "${2}"
 }
 
-clone-in-kitty() {
+clone-in-smelly() {
     builtin local data="shell=zsh,pid=$$,cwd=$(builtin printf "%s" "$PWD" | builtin command base64)"
     while :; do
         case "$1" in
             "") break;;
             -h|--help)
-                builtin printf "%s\n\n%s\n" "Clone the current zsh session into a new kitty window." "For usage instructions see: https://sw.kovidgoyal.net/kitty/shell-integration/#clone-shell"
+                builtin printf "%s\n\n%s\n" "Clone the current zsh session into a new smelly window." "For usage instructions see: https://sw.backbiter-no.net/smelly/shell-integration/#clone-shell"
                 builtin return
                 ;;
             *) data="$data,a=$(builtin printf "%s" "$1" | builtin command base64)";;

@@ -8,7 +8,7 @@ simply by clicking on the result you want.
 
 .. versionadded:: 0.19.0
 
-To set it up, first create :file:`~/.config/kitty/open-actions.conf` with the
+To set it up, first create :file:`~/.config/smelly/open-actions.conf` with the
 following contents:
 
 .. code:: conf
@@ -26,7 +26,7 @@ following contents:
 
 Now, run a search with::
 
-    kitty +kitten hyperlinked_grep something
+    smelly +kitten hyperlinked_grep something
 
 Hold down the :kbd:`Ctrl+Shift` keys and click on any of the result lines, to
 open the file in :program:`vim` at the matching line. If you use some editor
@@ -36,14 +36,14 @@ accordingly.
 Finally, add an alias to your shell's rc files to invoke the kitten as
 :command:`hg`::
 
-    alias hg="kitty +kitten hyperlinked_grep"
+    alias hg="smelly +kitten hyperlinked_grep"
 
 
 You can now run searches with::
 
     hg some-search-term
 
-To learn more about kitty's powerful framework for customizing URL click
+To learn more about smelly's powerful framework for customizing URL click
 actions, see :doc:`here </open_actions>`.
 
 By default, this kitten adds hyperlinks for several parts of ripgrep output:

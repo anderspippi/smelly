@@ -33,7 +33,7 @@ profile:
 	python3 setup.py build $(VVAL) --profile
 
 app:
-	python3 setup.py kitty.app $(VVAL)
+	python3 setup.py smelly.app $(VVAL)
 
 linux-package: FORCE
 	rm -rf linux-package

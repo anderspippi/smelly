@@ -1,12 +1,12 @@
-#!/usr/bin/env -S kitty +launch
-# License: GPLv3 Copyright: 2022, Kovid Goyal <kovid at kovidgoyal.net>
+#!/usr/bin/env -S smelly +launch
+# License: GPLv3 Copyright: 2022, anders Goyal <anders at backbiter-no.net>
 
 import json
 import os
 import sys
 import time
 
-from kitty.shm import SharedMemory
+from smelly.shm import SharedMemory
 
 msg = sys.argv[-1]
 prompt = os.environ.get('SSH_ASKPASS_PROMPT', '')
@@ -26,7 +26,7 @@ with SharedMemory(
     shm.write_data_with_size(data)
     shm.flush()
     with open(os.ctermid(), 'wb') as f:
-        f.write(f'\x1bP@kitty-ask|{shm.name}\x1b\\'.encode('ascii'))
+        f.write(f'\x1bP@smelly-ask|{shm.name}\x1b\\'.encode('ascii'))
         f.flush()
     while True:
         # TODO: Replace sleep() with a mutex and condition variable created in the shared memory

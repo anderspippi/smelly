@@ -19,7 +19,7 @@ terminals. They include:
   for this, leading to bugs, for example:
   `neovim #2035 <https://github.com/neovim/neovim/issues/2035>`_.
 
-To solve these issues and others, kitty has created a new keyboard protocol,
+To solve these issues and others, smelly has created a new keyboard protocol,
 that is backward compatible but allows applications to opt-in to support more
 advanced usages. The protocol is based on initial work in `fixterms
 <http://www.leonerd.org.uk/hacks/fixterms/>`_, however, it corrects various
@@ -28,14 +28,14 @@ issues in that proposal, listed at the :ref:`bottom of this document
 
 You can see this protocol with all enhancements in action by running::
 
-    kitty +kitten show_key -m kitty
+    smelly +kitten show_key -m smelly
 
-inside the kitty terminal to report key events.
+inside the smelly terminal to report key events.
 
-In addition to kitty, this protocol is also implemented in:
+In addition to smelly, this protocol is also implemented in:
 
 * The `foot terminal <https://codeberg.org/dnkl/foot/issues/319>`__
-* The `WezTerm terminal <https://wezfurlong.org/wezterm/config/lua/config/enable_kitty_keyboard.html>`__
+* The `WezTerm terminal <https://wezfurlong.org/wezterm/config/lua/config/enable_smelly_keyboard.html>`__
 * The `notcurses library
   <https://github.com/dankamongmen/notcurses/issues/2131>`__
 * The `crossterm library
@@ -416,7 +416,7 @@ second form when modifiers are present (``SS3 is the bytes 0x1b 0x4f``).
 
 These sequences must match entries in the terminfo database for maximum
 compatibility. The table below lists the key, its terminfo entry name and
-the escape code used for it by kitty. A different terminal would use whatever
+the escape code used for it by smelly. A different terminal would use whatever
 escape code is present in its terminfo database for the key.
 Some keys have an alternate representation when the terminal is in *cursor key
 mode* (the ``smkx/rmkx`` terminfo capabilities). This form is used only in

@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package at
 
@@ -8,8 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"kitty/tools/utils"
-	"kitty/tools/utils/style"
+	"smelly/tools/utils"
+	"smelly/tools/utils/style"
 )
 
 var nullable_colors = map[string]bool{

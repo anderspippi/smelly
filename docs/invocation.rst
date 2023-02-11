@@ -1,15 +1,15 @@
 :orphan:
 
-The kitty command line interface
+The smelly command line interface
 ====================================
 
-.. program:: kitty
+.. program:: smelly
 
-.. include:: generated/cli-kitty.rst
+.. include:: generated/cli-smelly.rst
 
 .. include:: basic.rst
 
 See also
 -----------
 
-See kitty.conf(5)
+See smelly.conf(5)

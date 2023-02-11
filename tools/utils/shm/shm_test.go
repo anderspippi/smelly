@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package shm
 
@@ -17,7 +17,7 @@ var _ = fmt.Print
 func TestSHM(t *testing.T) {
 	data := make([]byte, 13347)
 	rand.Read(data)
-	mm, err := CreateTemp("test-kitty-shm-", uint64(len(data)))
+	mm, err := CreateTemp("test-smelly-shm-", uint64(len(data)))
 	if err != nil {
 		t.Fatal(err)
 	}

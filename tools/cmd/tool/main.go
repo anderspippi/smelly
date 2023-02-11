@@ -1,30 +1,30 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package tool
 
 import (
 	"fmt"
 
-	"kitty/tools/cli"
-	"kitty/tools/cmd/at"
-	"kitty/tools/cmd/clipboard"
-	"kitty/tools/cmd/edit_in_kitty"
-	"kitty/tools/cmd/icat"
-	"kitty/tools/cmd/update_self"
-	"kitty/tools/tui"
+	"smelly/tools/cli"
+	"smelly/tools/cmd/at"
+	"smelly/tools/cmd/clipboard"
+	"smelly/tools/cmd/edit_in_smelly"
+	"smelly/tools/cmd/icat"
+	"smelly/tools/cmd/update_self"
+	"smelly/tools/tui"
 )
 
 var _ = fmt.Print
 
-func KittyToolEntryPoints(root *cli.Command) {
+func smellyToolEntryPoints(root *cli.Command) {
 	root.Add(cli.OptionSpec{
 		Name: "--version", Type: "bool-set", Help: "The current kitten version."})
 	// @
 	at.EntryPoint(root)
 	// update-self
 	update_self.EntryPoint(root)
-	// edit-in-kitty
-	edit_in_kitty.EntryPoint(root)
+	// edit-in-smelly
+	edit_in_smelly.EntryPoint(root)
 	// clipboard
 	clipboard.EntryPoint(root)
 	// icat

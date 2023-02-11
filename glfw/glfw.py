@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # vim:fileencoding=utf-8
-# License: GPL v3 Copyright: 2017, Kovid Goyal <kovid at kovidgoyal.net>
+# License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
 
 import json
 import os
@@ -298,7 +298,7 @@ typedef void (*GLFWDBusnotificationactivatedfun)(uint32_t, const char*);
 
 const char* load_glfw(const char* path);
 '''.format(preamble, '\n\n'.join(declarations))
-    with open('../kitty/glfw-wrapper.h', 'w') as f:
+    with open('../smelly/glfw-wrapper.h', 'w') as f:
         f.write(header)
 
     code = '''
@@ -330,7 +330,7 @@ unload_glfw(void) {
     if (handle) { dlclose(handle); handle = NULL; }
 }
 '''.replace('LOAD', '\n\n    '.join(f.load() for f in functions))
-    with open('../kitty/glfw-wrapper.c', 'w') as f:
+    with open('../smelly/glfw-wrapper.c', 'w') as f:
         f.write(code)
 
 

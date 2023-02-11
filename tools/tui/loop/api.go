@@ -1,17 +1,17 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package loop
 
 import (
 	"encoding/base64"
 	"fmt"
-	"kitty/tools/tty"
+	"smelly/tools/tty"
 	"strings"
 	"time"
 
 	"golang.org/x/sys/unix"
 
-	"kitty/tools/wcswidth"
+	"smelly/tools/wcswidth"
 )
 
 type ScreenSize struct {
@@ -125,21 +125,21 @@ func NoAlternateScreen(self *Loop) {
 }
 
 func (self *Loop) OnlyDisambiguateKeys() *Loop {
-	self.terminal_options.kitty_keyboard_mode = 0b1
+	self.terminal_options.smelly_keyboard_mode = 0b1
 	return self
 }
 
 func OnlyDisambiguateKeys(self *Loop) {
-	self.terminal_options.kitty_keyboard_mode = 0b1
+	self.terminal_options.smelly_keyboard_mode = 0b1
 }
 
 func (self *Loop) FullKeyboardProtocol() *Loop {
-	self.terminal_options.kitty_keyboard_mode = 0b11111
+	self.terminal_options.smelly_keyboard_mode = 0b11111
 	return self
 }
 
 func FullKeyboardProtocol(self *Loop) {
-	self.terminal_options.kitty_keyboard_mode = 0b11111
+	self.terminal_options.smelly_keyboard_mode = 0b11111
 }
 
 func (self *Loop) MouseTrackingMode(mt MouseTracking) *Loop {
@@ -209,7 +209,7 @@ func (self *Loop) DebugPrintln(args ...any) {
 			if end > len(msg) {
 				end = len(msg)
 			}
-			self.QueueWriteString("\x1bP@kitty-print|")
+			self.QueueWriteString("\x1bP@smelly-print|")
 			self.QueueWriteString(base64.StdEncoding.EncodeToString([]byte(msg[i:end])))
 			self.QueueWriteString("\x1b\\")
 		}

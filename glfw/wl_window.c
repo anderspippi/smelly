@@ -33,7 +33,7 @@
 #include "memfd.h"
 #include "linux_notify.h"
 #include "wl_client_side_decorations.h"
-#include "../kitty/monotonic.h"
+#include "../smelly/monotonic.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -444,7 +444,7 @@ static bool createSurface(_GLFWwindow* window,
     // If we already have been notified of the primary monitor scale, assume
     // the window will be created on it and so avoid a rescale roundtrip in the common
     // case of the window being shown on the primary monitor or all monitors having the same scale.
-    // If you change this also change get_window_content_scale() in the kitty code.
+    // If you change this also change get_window_content_scale() in the smelly code.
     GLFWmonitor* monitor = glfwGetPrimaryMonitor();
     float xscale = 1.0, yscale = 1.0;
     int scale = 1;

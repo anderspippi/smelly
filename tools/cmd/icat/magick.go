@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2023, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2023, anders Goyal, <anders at backbiter-no.net>
 
 package icat
 
@@ -16,10 +16,10 @@ import (
 	"strings"
 	"sync"
 
-	"kitty/tools/tui/graphics"
-	"kitty/tools/utils"
-	"kitty/tools/utils/images"
-	"kitty/tools/utils/shm"
+	"smelly/tools/tui/graphics"
+	"smelly/tools/utils"
+	"smelly/tools/utils/images"
+	"smelly/tools/utils/shm"
 )
 
 var _ = fmt.Print
@@ -205,7 +205,7 @@ func make_temp_dir() (ans string, err error) {
 
 func check_resize(frame *image_frame) error {
 	// ImageMagick sometimes generates RGBA images smaller than the specified
-	// size. See https://github.com/kovidgoyal/kitty/issues/276 for examples
+	// size. See https://github.com/backbiter-no/smelly/issues/276 for examples
 	s, err := os.Stat(frame.filename)
 	if err != nil {
 		return err

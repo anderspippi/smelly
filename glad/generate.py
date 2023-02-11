@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # vim:fileencoding=utf-8
-# License: GPL v3 Copyright: 2017, Kovid Goyal <kovid at kovidgoyal.net>
+# License: GPL v3 Copyright: 2017, anders Goyal <anders at backbiter-no.net>
 
 import os
 import re
@@ -37,7 +37,7 @@ def export():
         data = source.read()
         data = strip_trailing_whitespace(data)
 
-        with open('../kitty/gl-wrapper.h', 'w', encoding='utf-8') as dest:
+        with open('../smelly/gl-wrapper.h', 'w', encoding='utf-8') as dest:
             dest.write(data)
 
 

@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package icat
 
@@ -11,13 +11,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"kitty/tools/cli"
-	"kitty/tools/tty"
-	"kitty/tools/tui"
-	"kitty/tools/tui/graphics"
-	"kitty/tools/utils"
-	"kitty/tools/utils/images"
-	"kitty/tools/utils/style"
+	"smelly/tools/cli"
+	"smelly/tools/tty"
+	"smelly/tools/tui"
+	"smelly/tools/tui/graphics"
+	"smelly/tools/utils"
+	"smelly/tools/utils/images"
+	"smelly/tools/utils/style"
 
 	"golang.org/x/sys/unix"
 )
@@ -165,7 +165,7 @@ func main(cmd *cli.Command, o *Options, args []string) (rc int, err error) {
 		cc.WriteWithPayloadTo(os.Stdout, nil)
 	}
 	if screen_size.Xpixel == 0 || screen_size.Ypixel == 0 {
-		return 1, fmt.Errorf("Terminal does not support reporting screen sizes in pixels, use a terminal such as kitty, WezTerm, Konsole, etc. that does.")
+		return 1, fmt.Errorf("Terminal does not support reporting screen sizes in pixels, use a terminal such as smelly, WezTerm, Konsole, etc. that does.")
 	}
 
 	items, err := process_dirs(args...)
@@ -197,7 +197,7 @@ func main(cmd *cli.Command, o *Options, args []string) (rc int, err error) {
 		}
 		if !direct {
 			keep_going.Store(false)
-			return 1, fmt.Errorf("This terminal does not support the graphics protocol use a terminal such as kitty, WezTerm or Konsole that does. If you are running inside a terminal multiplexer such as tmux or screen that might be interfering as well.")
+			return 1, fmt.Errorf("This terminal does not support the graphics protocol use a terminal such as smelly, WezTerm or Konsole that does. If you are running inside a terminal multiplexer such as tmux or screen that might be interfering as well.")
 		}
 		if memory {
 			transfer_by_memory = supported

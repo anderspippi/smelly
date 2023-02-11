@@ -7,12 +7,12 @@
 #
 #   alias -g -- -r='$RANDOM'
 #
-# For this reason users are discouraged from sourcing kitty.zsh in favor of
-# invoking kitty-integration directly.
+# For this reason users are discouraged from sourcing smelly.zsh in favor of
+# invoking smelly-integration directly.
 
 # ${(%):-%x} is the path to the current file.
 # On top of it we add :A:h to get the directory.
-'builtin' 'typeset' _ksi_file="${${(%):-%x}:A:h}"/kitty-integration
+'builtin' 'typeset' _ksi_file="${${(%):-%x}:A:h}"/smelly-integration
 if [[ -r "$_ksi_file" ]]; then
     'builtin' 'autoload' '-Uz' '--' "$_ksi_file"
     "${_ksi_file:t}"

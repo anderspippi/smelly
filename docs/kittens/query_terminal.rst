@@ -1,7 +1,7 @@
 Query terminal
 =================
 
-This kitten is used to query |kitty| from terminal programs about version, values
+This kitten is used to query |smelly| from terminal programs about version, values
 of various runtime options controlling its features, etc.
 
 The querying is done using the (*semi*) standard XTGETTCAP escape sequence

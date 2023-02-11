@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package clipboard
 
@@ -12,10 +12,10 @@ import (
 	"strings"
 	"sync"
 
-	"kitty/tools/tty"
-	"kitty/tools/tui/loop"
-	"kitty/tools/utils"
-	"kitty/tools/utils/images"
+	"smelly/tools/tty"
+	"smelly/tools/tui/loop"
+	"smelly/tools/utils"
+	"smelly/tools/utils/images"
 )
 
 var _ = fmt.Print

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # vim:fileencoding=utf-8
-# License: GPLv3 Copyright: 2020, Kovid Goyal <kovid at kovidgoyal.net>
+# License: GPLv3 Copyright: 2020, anders Goyal <anders at backbiter-no.net>
 
 import glob
 import json
@@ -18,14 +18,14 @@ from bypy.macos_sign import codesign, create_entitlements_file, make_certificate
 from bypy.utils import current_dir, mkdtemp, py_compile, run_shell, timeit, walk
 
 iv = globals()['init_env']
-kitty_constants = iv['kitty_constants']
+smelly_constants = iv['smelly_constants']
 self_dir = os.path.dirname(os.path.abspath(__file__))
 join = os.path.join
 basename = os.path.basename
 dirname = os.path.dirname
 abspath = os.path.abspath
-APPNAME = kitty_constants['appname']
-VERSION = kitty_constants['version']
+APPNAME = smelly_constants['appname']
+VERSION = smelly_constants['version']
 py_ver = '.'.join(map(str, python_major_minor_version()))
 
 
@@ -185,7 +185,7 @@ class Freeze(object):
         cdata = None
         for i in range(5):
             try:
-                cdata = urlopen(kitty_constants['cacerts_url']).read()
+                cdata = urlopen(smelly_constants['cacerts_url']).read()
                 break
             except Exception as e:
                 print(f'Downloading CA certs failed with error: {e}, retrying...')
@@ -203,7 +203,7 @@ class Freeze(object):
 
     @flush
     def run_tests(self):
-        iv['run_tests'](join(self.contents_dir, 'MacOS', 'kitty'))
+        iv['run_tests'](join(self.contents_dir, 'MacOS', 'smelly'))
 
     @flush
     def set_id(self, path_to_lib, new_id):
@@ -348,16 +348,16 @@ class Freeze(object):
     @flush
     def freeze_python(self):
         print('\nFreezing python')
-        kitty_dir = join(self.resources_dir, 'kitty')
-        bases = ('kitty', 'kittens', 'kitty_tests')
+        smelly_dir = join(self.resources_dir, 'smelly')
+        bases = ('smelly', 'wellies', 'smelly_tests')
         for x in bases:
             dest = join(self.python_stdlib, x)
-            os.rename(join(kitty_dir, x), dest)
-            if x == 'kitty':
+            os.rename(join(smelly_dir, x), dest)
+            if x == 'smelly':
                 shutil.rmtree(join(dest, 'launcher'))
-        os.rename(join(kitty_dir, '__main__.py'), join(self.python_stdlib, 'kitty_main.py'))
-        shutil.rmtree(join(kitty_dir, '__pycache__'))
-        pdir = join(dirname(self.python_stdlib), 'kitty-extensions')
+        os.rename(join(smelly_dir, '__main__.py'), join(self.python_stdlib, 'smelly_main.py'))
+        shutil.rmtree(join(smelly_dir, '__pycache__'))
+        pdir = join(dirname(self.python_stdlib), 'smelly-extensions')
         os.mkdir(pdir)
         print('Extracting extension modules from', self.python_stdlib, 'to', pdir)
         ext_map = extract_extension_modules(self.python_stdlib, pdir)
@@ -365,19 +365,19 @@ class Freeze(object):
         for x in bases:
             iv['sanitize_source_folder'](join(self.python_stdlib, x))
         self.compile_py_modules()
-        freeze_python(self.python_stdlib, pdir, self.obj_dir, ext_map, develop_mode_env_var='KITTY_DEVELOP_FROM', remove_pyc_files=True)
+        freeze_python(self.python_stdlib, pdir, self.obj_dir, ext_map, develop_mode_env_var='smelly_DEVELOP_FROM', remove_pyc_files=True)
         shutil.rmtree(self.python_stdlib)
         iv['build_frozen_launcher']([path_to_freeze_dir(), self.obj_dir])
-        os.rename(join(dirname(self.contents_dir), 'bin', 'kitty'), join(self.contents_dir, 'MacOS', 'kitty'))
+        os.rename(join(dirname(self.contents_dir), 'bin', 'smelly'), join(self.contents_dir, 'MacOS', 'smelly'))
         shutil.rmtree(join(dirname(self.contents_dir), 'bin'))
-        self.fix_dependencies_in_lib(join(self.contents_dir, 'MacOS', 'kitty'))
+        self.fix_dependencies_in_lib(join(self.contents_dir, 'MacOS', 'smelly'))
         for f in walk(pdir):
             if f.endswith('.so') or f.endswith('.dylib'):
                 self.fix_dependencies_in_lib(f)
 
     @flush
     def build_frozen_tools(self):
-        iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'kitty'))
+        iv['build_frozen_tools'](join(self.contents_dir, 'MacOS', 'smelly'))
 
     @flush
     def add_site_packages(self):
@@ -488,7 +488,7 @@ def main():
     args = globals()['args']
     ext_dir = globals()['ext_dir']
     Freeze(
-        join(ext_dir, f'{kitty_constants["appname"]}.app'),
+        join(ext_dir, f'{smelly_constants["appname"]}.app'),
         dont_strip=args.dont_strip,
         sign_installers=args.sign_installers,
         notarize=args.notarize,

@@ -1,4 +1,4 @@
-kitty
+smelly
 ==========================================================
 
 *The fast, feature-rich, GPU based terminal emulator*
@@ -21,7 +21,7 @@ kitty
 
    * Offloads rendering to the GPU for :doc:`lower system load <performance>`
    * Uses threaded rendering for :iss:`absolutely minimal latency <2701#issuecomment-636497270>`
-   * Performance tradeoffs can be :ref:`tuned <conf-kitty-performance>`
+   * Performance tradeoffs can be :ref:`tuned <conf-smelly-performance>`
 
 .. tab:: Capable
 
@@ -32,7 +32,7 @@ kitty
 .. tab:: Scriptable
 
    * Control from :doc:`scripts or the shell <remote-control>`
-   * Extend with :ref:`kittens <kittens>` using the Python language
+   * Extend with :ref:`wellies <wellies>` using the Python language
    * Use :ref:`startup sessions <sessions>` to specify working environments
 
 .. tab:: Composable
@@ -40,7 +40,7 @@ kitty
    * Programmable tabs, :ref:`splits <splits_layout>` and multiple :doc:`layouts <layouts>` to manage windows
    * Browse the :ref:`entire history <scrollback>` or the :sc:`output from the last command <show_last_command_output>`
      comfortably in pagers and editors
-   * Edit or download :doc:`remote files <kittens/remote_file>` in an existing SSH session
+   * Edit or download :doc:`remote files <wellies/remote_file>` in an existing SSH session
 
 .. tab:: Cross-platform
 
@@ -62,13 +62,13 @@ kitty
     .. raw:: html
 
         <video controls width="640" height="360" poster="_static/poster.png">
-            <source src="https://download.calibre-ebook.com/videos/kitty.mp4" type="video/mp4">
-            <source src="https://download.calibre-ebook.com/videos/kitty.webm" type="video/webm">
+            <source src="https://download.calibre-ebook.com/videos/smelly.mp4" type="video/mp4">
+            <source src="https://download.calibre-ebook.com/videos/smelly.webm" type="video/webm">
         </video>
 
     .. rst-class:: caption caption-text
 
-        Watch kitty in action!
+        Watch smelly in action!
 
 
 To get started see :doc:`quickstart`.

@@ -1,4 +1,4 @@
-#compdef kitty
+#compdef smelly
 
 (( ${+commands[kitten]} )) || builtin return
 builtin local src cmd=${(F)words:0:$CURRENT}

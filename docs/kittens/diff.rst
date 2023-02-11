@@ -1,4 +1,4 @@
-kitty-diff
+smelly-diff
 ================================================================================
 
 *A fast side-by-side diff tool with syntax highlighting and images*
@@ -10,7 +10,7 @@ Major Features
 
 .. container:: major-features
 
-    * Displays diffs side-by-side in the kitty terminal
+    * Displays diffs side-by-side in the smelly terminal
 
     * Does syntax highlighting of the displayed diffs, asynchronously, for
       maximum speed
@@ -31,19 +31,19 @@ Major Features
 Installation
 ---------------
 
-Simply :ref:`install kitty <quickstart>`.  You also need to have either the `git
+Simply :ref:`install smelly <quickstart>`.  You also need to have either the `git
 <https://git-scm.com/>`__ program or the :program:`diff` program installed.
 Additionally, for syntax highlighting to work, `pygments
 <https://pygments.org/>`__ must be installed (note that pygments is included in
-the official kitty binary builds).
+the official smelly binary builds).
 
 
 Usage
 --------
 
-In the kitty terminal, run::
+In the smelly terminal, run::
 
-    kitty +kitten diff file1 file2
+    smelly +kitten diff file1 file2
 
 to see the diff between :file:`file1` and :file:`file2`.
 
@@ -52,7 +52,7 @@ example:
 
 .. code-block:: sh
 
-    alias d="kitty +kitten diff"
+    alias d="smelly +kitten diff"
 
 Now all you need to do to diff two files is::
 
@@ -99,34 +99,34 @@ Add the following to :file:`~/.gitconfig`:
 .. code-block:: ini
 
     [diff]
-        tool = kitty
-        guitool = kitty.gui
+        tool = smelly
+        guitool = smelly.gui
     [difftool]
         prompt = false
         trustExitCode = true
-    [difftool "kitty"]
-        cmd = kitty +kitten diff $LOCAL $REMOTE
-    [difftool "kitty.gui"]
-        cmd = kitty kitty +kitten diff $LOCAL $REMOTE
+    [difftool "smelly"]
+        cmd = smelly +kitten diff $LOCAL $REMOTE
+    [difftool "smelly.gui"]
+        cmd = smelly smelly +kitten diff $LOCAL $REMOTE
 
-Now to use kitty-diff to view git diffs, you can simply do::
+Now to use smelly-diff to view git diffs, you can simply do::
 
     git difftool --no-symlinks --dir-diff
 
 Once again, creating an alias for this command is useful.
 
 
-Why does this work only in kitty?
+Why does this work only in smelly?
 ----------------------------------------
 
-The diff kitten makes use of various features that are :doc:`kitty only
-</protocol-extensions>`, such as the :doc:`kitty graphics protocol
+The diff kitten makes use of various features that are :doc:`smelly only
+</protocol-extensions>`, such as the :doc:`smelly graphics protocol
 </graphics-protocol>`, the :doc:`extended keyboard protocol
 </keyboard-protocol>`, etc. It also leverages terminal program infrastructure
-I created for all of kitty's other kittens to reduce the amount of code needed
+I created for all of smelly's other wellies to reduce the amount of code needed
 (the entire implementation is under 2000 lines of code).
 
-And fundamentally, it's kitty only because I wrote it for myself, and I am
+And fundamentally, it's smelly only because I wrote it for myself, and I am
 highly unlikely to use any other terminals :)
 
 
@@ -135,7 +135,7 @@ Configuration
 
 You can configure the colors used, keyboard shortcuts, the diff implementation,
 the default lines of context, etc. by creating a :file:`diff.conf` file in your
-:ref:`kitty config folder <confloc>`. See below for the supported configuration
+:ref:`smelly config folder <confloc>`. See below for the supported configuration
 directives.
 
 

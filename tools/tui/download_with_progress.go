@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package tui
 
@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"kitty/tools/tui/loop"
-	"kitty/tools/utils"
-	"kitty/tools/utils/humanize"
+	"smelly/tools/tui/loop"
+	"smelly/tools/utils"
+	"smelly/tools/utils/humanize"
 )
 
 var _ = fmt.Print

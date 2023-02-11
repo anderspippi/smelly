@@ -1,7 +1,7 @@
 //========================================================================
 // GLFW 3.4 XKB - www.glfw.org
 //------------------------------------------------------------------------
-// Copyright (c) 2018 Kovid Goyal <kovid@kovidgoyal.net>
+// Copyright (c) 2018 anders Goyal <anders@backbiter-no.net>
 //
 // This software is provided 'as-is', without any express or implied
 // warranty. In no event will the authors be held liable for any damages
@@ -32,8 +32,8 @@
  * ibus engine name
  * You can list available engines with:
  * ibus list-engine
- * Then run kitty as:
- * GLFW_IM_MODULE=ibus kitty
+ * Then run smelly as:
+ * GLFW_IM_MODULE=ibus smelly
  */
 #define _GNU_SOURCE
 #include <stdio.h>

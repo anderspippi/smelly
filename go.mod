@@ -1,4 +1,4 @@
-module kitty
+module smelly
 
 go 1.20
 

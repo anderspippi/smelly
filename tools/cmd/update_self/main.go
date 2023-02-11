@@ -1,18 +1,18 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package update_self
 
 import (
 	"fmt"
-	"kitty"
+	"smelly"
 	"os"
 	"path/filepath"
 	"runtime"
 
-	"kitty/tools/cli"
-	"kitty/tools/tty"
-	"kitty/tools/tui"
-	"kitty/tools/utils"
+	"smelly/tools/cli"
+	"smelly/tools/tty"
+	"smelly/tools/tui"
+	"smelly/tools/utils"
 
 	"golang.org/x/sys/unix"
 )
@@ -33,16 +33,16 @@ func update_self(version string) (err error) {
 	if err != nil {
 		return err
 	}
-	if !kitty.IsStandaloneBuild {
-		return fmt.Errorf("This is not a standalone kitten executable. You must update all of kitty instead.")
+	if !smelly.IsStandaloneBuild {
+		return fmt.Errorf("This is not a standalone kitten executable. You must update all of smelly instead.")
 	}
 	rv := "v" + version
 	if version == "nightly" {
 		rv = version
 	}
-	url_base := fmt.Sprintf("https://github.com/kovidgoyal/kitty/releases/download/%s", rv)
+	url_base := fmt.Sprintf("https://github.com/backbiter-no/smelly/releases/download/%s", rv)
 	if version == "latest" {
-		url_base = "https://github.com/kovidgoyal/kitty/releases/latest/download"
+		url_base = "https://github.com/backbiter-no/smelly/releases/latest/download"
 	}
 	url := fmt.Sprintf("%s/kitten-%s-%s", url_base, runtime.GOOS, runtime.GOARCH)
 	dest, err := os.CreateTemp(filepath.Dir(exe), "kitten.")
@@ -89,7 +89,7 @@ func EntryPoint(root *cli.Command) *cli.Command {
 	sc.Add(cli.OptionSpec{
 		Name:    "--fetch-version",
 		Default: "latest",
-		Help:    fmt.Sprintf("The version to fetch. The special words :code:`latest` and :code:`nightly` fetch the latest stable and nightly release respectively. Other values can be, for example: :code:`%s`.", kitty.VersionString),
+		Help:    fmt.Sprintf("The version to fetch. The special words :code:`latest` and :code:`nightly` fetch the latest stable and nightly release respectively. Other values can be, for example: :code:`%s`.", smelly.VersionString),
 	})
 	return sc
 }

@@ -1,8 +1,8 @@
 Changelog
 ==============
 
-|kitty| is a feature-rich, cross-platform, *fast*, GPU based terminal.
-To update |kitty|, :doc:`follow the instructions <binary>`.
+|smelly| is a feature-rich, cross-platform, *fast*, GPU based terminal.
+To update |smelly|, :doc:`follow the instructions <binary>`.
 
 .. recent major features {{{
 
@@ -12,7 +12,7 @@ Recent major new features
 Truly convenient SSH
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :doc:`ssh kitten <kittens/ssh>` is redesigned with powerful new features:
+The :doc:`ssh kitten <wellies/ssh>` is redesigned with powerful new features:
 
 * Automatic :ref:`shell_integration` on remote machines
 * Easily :ref:`clone local shell/editor config <real_world_ssh_kitten_config>` on remote machines
@@ -23,7 +23,7 @@ The :doc:`ssh kitten <kittens/ssh>` is redesigned with powerful new features:
 Shell integration
 ~~~~~~~~~~~~~~~~~~~~~
 
-kitty automatically integrates with common shells to allow browsing the
+smelly automatically integrates with common shells to allow browsing the
 output of the previous command in a pager by pressing
 :sc:`show_last_command_output`, jumping to previous prompt locations in the
 scrollback by pressing :sc:`scroll_to_previous_prompt` and clicking with the
@@ -40,7 +40,7 @@ Detailed list of changes
 
 - Text rendering: Use sRGB correct linear gamma blending for nicer font rendering and better color accuracy with transparent windows. See the option :opt:`text_composition_strategy` for details. The obsolete :opt:`macos_thicken_font` will make the font too thick and needs to be removed manually if it is configured. (:pull:`5969`)
 
-- Fix a regression in 0.27.0 that broke kitty @ set-font-size 0 (:iss:`5992`)
+- Fix a regression in 0.27.0 that broke smelly @ set-font-size 0 (:iss:`5992`)
 
 - launch: When using ``--cwd=current`` for a remote system support running non shell commands as well (:disc:`5987`)
 
@@ -56,7 +56,7 @@ Detailed list of changes
 
 - Fix :opt:`modify_font` not working for strikethrough position (:iss:`5946`)
 
-- Fix a regression causing the ``edit-in-kitty`` command not working if :file:`kitten` is not added
+- Fix a regression causing the ``edit-in-smelly`` command not working if :file:`kitten` is not added
   to PATH (:iss:`5956`)
 
 - icat kitten: Fix a regression that broke display of animated GIFs over SSH (:iss:`5958`)
@@ -65,9 +65,9 @@ Detailed list of changes
 
 - Fix regression in previous release that caused incorrect entries in terminfo for modifier+F3 key combinations (:pull:`5970`)
 
-- Bring back the deprecated and removed ``kitty +complete`` and delegate it to :program:`kitten` for backward compatibility (:pull:`5977`)
+- Bring back the deprecated and removed ``smelly +complete`` and delegate it to :program:`kitten` for backward compatibility (:pull:`5977`)
 
-- Bump the version of Go needed to build kitty to ``1.20`` so we can use the Go stdlib ecdh package for crypto.
+- Bump the version of Go needed to build smelly to ``1.20`` so we can use the Go stdlib ecdh package for crypto.
 
 
 0.27.0 [2023-01-31]
@@ -77,9 +77,9 @@ Detailed list of changes
   that can be used on all UNIX-like servers for remote control (``kitten @``),
   viewing images (``kitten icat``), manipulating the clipboard (``kitten clipboard``), etc.
 
-- :doc:`clipboard kitten </kittens/clipboard>`: Allow copying arbitrary data types to/from the clipboard, not just plain text
+- :doc:`clipboard kitten </wellies/clipboard>`: Allow copying arbitrary data types to/from the clipboard, not just plain text
 
-- Speed up the ``kitty @`` executable by ~10x reducing the time for typical
+- Speed up the ``smelly @`` executable by ~10x reducing the time for typical
   remote control commands from ~50ms to ~5ms
 
 - icat kitten: Speed up by using POSIX shared memory when possible to transfer
@@ -96,23 +96,23 @@ Detailed list of changes
 
 - Pass key events mapped to scroll actions to the program running in the terminal when the terminal is in alternate screen mode (:iss:`5839`)
 
-- Implement :ref:`edit-in-kitty <edit_file>` using the new ``kitten`` static executable (:iss:`5546`, :iss:`5630`)
+- Implement :ref:`edit-in-smelly <edit_file>` using the new ``kitten`` static executable (:iss:`5546`, :iss:`5630`)
 
 - Add an option :opt:`background_tint_gaps` to control background image tinting for window gaps (:iss:`5596`)
 
 - A new option :opt:`undercurl_style` to control the rendering of undercurls (:pull:`5883`)
 
-- Bash integration: Fix ``clone-in-kitty`` not working on bash >= 5.2 if environment variable values contain newlines or other special characters (:iss:`5629`)
+- Bash integration: Fix ``clone-in-smelly`` not working on bash >= 5.2 if environment variable values contain newlines or other special characters (:iss:`5629`)
 
-- A new :ac:`sleep` action useful in combine based mappings to make kitty sleep before executing the next action
+- A new :ac:`sleep` action useful in combine based mappings to make smelly sleep before executing the next action
 
-- Wayland GNOME: Workaround for latest mutter release breaking full screen for semi-transparent kitty windows (:iss:`5677`)
+- Wayland GNOME: Workaround for latest mutter release breaking full screen for semi-transparent smelly windows (:iss:`5677`)
 
 - A new option :opt:`tab_title_max_length` to limit the length of tab (:iss:`5718`)
 
 - When drawing the tab bar have the default left and right margins drawn in a color matching the neighboring tab (:iss:`5719`)
 
-- When using the :code:`include` directive in :file:`kitty.conf` make the environment variable :envvar:`KITTY_OS` available for OS specific config
+- When using the :code:`include` directive in :file:`smelly.conf` make the environment variable :envvar:`smelly_OS` available for OS specific config
 
 - Wayland: Fix signal handling not working with some GPU drivers (:iss:`4636`)
 
@@ -132,7 +132,7 @@ Detailed list of changes
 
 - Fix ssh kitten not working on FreeBSD (:iss:`5928`)
 
-- macOS: Export kitty selected text to the system for use with services that accept it (patch by Sertaç Ö. Yıldız)
+- macOS: Export smelly selected text to the system for use with services that accept it (patch by Sertaç Ö. Yıldız)
 
 
 0.26.5 [2022-11-07]
@@ -160,7 +160,7 @@ Detailed list of changes
 0.26.4 [2022-10-17]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- macOS: Allow changing the kitty icon by placing a custom icon in the kitty config folder (:pull:`5464`)
+- macOS: Allow changing the smelly icon by placing a custom icon in the smelly config folder (:pull:`5464`)
 
 - Allow centering the :opt:`background_image` (:iss:`5525`)
 
@@ -186,20 +186,20 @@ Detailed list of changes
 
 - Allow passing null bytes through the system clipboard (:iss:`5483`)
 
-- ssh kitten: Fix :envvar:`KITTY_PUBLIC_KEY` not being encoded properly when transmitting (:iss:`5496`)
+- ssh kitten: Fix :envvar:`smelly_PUBLIC_KEY` not being encoded properly when transmitting (:iss:`5496`)
 
 - Sessions: Allow controlling which OS Window is active via the ``focus_os_window`` directive
 
 - Wayland: Fix for bug in NVIDIA drivers that prevents transparency working (:iss:`5479`)
 
-- Wayland: Fix for a bug that could cause kitty to become non-responsive when
+- Wayland: Fix for a bug that could cause smelly to become non-responsive when
   using multiple OS windows in a single instance on some compositors (:iss:`5495`)
 
-- Wayland: Fix for a bug preventing kitty from starting on Hyprland when using a non-unit scale (:iss:`5467`)
+- Wayland: Fix for a bug preventing smelly from starting on Hyprland when using a non-unit scale (:iss:`5467`)
 
 - Wayland: Generate a XDG_ACTIVATION_TOKEN when opening URLs or running programs in the background via the launch action
 
-- Fix a regression that caused kitty not to restore SIGPIPE after python nukes it when launching children. Affects bash which does not sanitize its signal mask. (:iss:`5500`)
+- Fix a regression that caused smelly not to restore SIGPIPE after python nukes it when launching children. Affects bash which does not sanitize its signal mask. (:iss:`5500`)
 
 - Fix a use-after-free when handling fake mouse clicks and the action causes windows to be removed/re-allocated (:iss:`5506`)
 
@@ -209,11 +209,11 @@ Detailed list of changes
 
 - Allow creating :code:`overlay-main` windows, which are treated as the active window unlike normal overlays (:iss:`5392`)
 
-- hints kitten: Allow using :doc:`launch` as the program to run, to open the result in a new kitty tab/window/etc. (:iss:`5462`)
+- hints kitten: Allow using :doc:`launch` as the program to run, to open the result in a new smelly tab/window/etc. (:iss:`5462`)
 
 - hyperlinked_grep kitten: Allow control over which parts of ``rg`` output are hyperlinked (:pull:`5428`)
 
-- Fix regression in 0.26.0 that caused launching kitty without working STDIO handles to result in high CPU usage and prewarming failing (:iss:`5444`)
+- Fix regression in 0.26.0 that caused launching smelly without working STDIO handles to result in high CPU usage and prewarming failing (:iss:`5444`)
 
 - :doc:`/launch`: Allow setting the margin and padding for newly created windows (:iss:`5463`)
 
@@ -233,9 +233,9 @@ Detailed list of changes
 0.26.1 [2022-08-30]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- ssh kitten: Fix executable permission missing from kitty bootstrap script (:iss:`5438`)
+- ssh kitten: Fix executable permission missing from smelly bootstrap script (:iss:`5438`)
 
-- Fix a regression in 0.26.0 that caused kitty to no longer set the ``LANG`` environment variable on macOS (:iss:`5439`)
+- Fix a regression in 0.26.0 that caused smelly to no longer set the ``LANG`` environment variable on macOS (:iss:`5439`)
 
 - Allow specifying a title when using the :ac:`set_tab_title` action (:iss:`5441`)
 
@@ -245,11 +245,11 @@ Detailed list of changes
 
 - A new option :opt:`remote_control_password` to use fine grained permissions for what can be remote controlled (:disc:`5320`)
 
-- Reduce startup latency by ~30 milliseconds when running kittens via key bindings inside kitty (:iss:`5159`)
+- Reduce startup latency by ~30 milliseconds when running wellies via key bindings inside smelly (:iss:`5159`)
 
 - A new option :opt:`modify_font` to adjust various font metrics like underlines, cell sizes etc. (:pull:`5265`)
 
-- A new shortcut :sc:`show_kitty_doc` to display the kitty docs in a browser
+- A new shortcut :sc:`show_smelly_doc` to display the smelly docs in a browser
 
 - Graphics protocol: Only delete temp files if they have the string
   :code:`tty-graphics-protocol` in their file paths. This prevents deletion of arbitrary files in :file:`/tmp`.
@@ -267,7 +267,7 @@ Detailed list of changes
 
 - macOS: Fix unable to open new tab or new window when there is no OS window (:iss:`5276`)
 
-- kitty @ set-colors: Fix changing inactive_tab_foreground not working (:iss:`5214`)
+- smelly @ set-colors: Fix changing inactive_tab_foreground not working (:iss:`5214`)
 
 - macOS: Fix a regression that caused switching keyboard input using Eisu and
   Kana keys not working (:iss:`5232`)
@@ -284,7 +284,7 @@ Detailed list of changes
   changes (:iss:`5241`)
 
 - ssh kitten: Allow ssh kitten to work from inside tmux, provided the tmux
-  session inherits the correct KITTY env vars (:iss:`5227`)
+  session inherits the correct smelly env vars (:iss:`5227`)
 
 - ssh kitten: A new option :code:`--symlink-strategy` to control how symlinks
   are copied to the remote machine (:iss:`5249`)
@@ -296,7 +296,7 @@ Detailed list of changes
 
 - Bash integration: Fix the inherit_errexit option being set by shell integration (:iss:`5349`)
 
-- :command:`kitty @ scroll-window` allow scrolling by fractions of a screen
+- :command:`smelly @ scroll-window` allow scrolling by fractions of a screen
   (:iss:`5294`)
 
 - remote files kitten: Fix working with files whose names have characters that
@@ -320,7 +320,7 @@ Detailed list of changes
 0.25.2 [2022-06-07]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- A new command :command:`edit-in-kitty` to :ref:`edit_file`
+- A new command :command:`edit-in-smelly` to :ref:`edit_file`
 
 - Allow getting the last non-empty command output easily via an action or
   remote control (:pull:`4973`)
@@ -329,12 +329,12 @@ Detailed list of changes
 
 - diff kitten: A new option :opt:`kitten-diff.ignore_name` to exclude files and directories from being scanned (:pull:`5171`)
 
-- ssh kitten: Fix bash not being executed as a login shell since kitty 0.25.0 (:iss:`5130`)
+- ssh kitten: Fix bash not being executed as a login shell since smelly 0.25.0 (:iss:`5130`)
 
 - macOS: When pasting text and the clipboard has a filesystem path, paste the
   full path instead of the text, which is sometimes just the file name (:pull:`5142`)
 
-- macOS: Allow opening executables without a file extension with kitty as well
+- macOS: Allow opening executables without a file extension with smelly as well
   (:iss:`5160`)
 
 - Themes kitten: Add a tab to show user defined custom color themes separately
@@ -347,8 +347,8 @@ Detailed list of changes
   window resize (:iss:`5162`)
 
 - Remote control: Fix commands with large or asynchronous payloads like
-  :command:`kitty @ set-backround-image`, :command:`kitty @ set-window-logo`
-  and :command:`kitty @ select-window` not working correctly
+  :command:`smelly @ set-backround-image`, :command:`smelly @ set-window-logo`
+  and :command:`smelly @ select-window` not working correctly
   when using a socket (:iss:`5165`)
 
 - hints kitten: Fix surrounding quotes/brackets and embedded carriage returns
@@ -382,18 +382,18 @@ Detailed list of changes
   which characters are considered part of a word to the right when double clicking to select
   words (:pull:`5103`)
 
-- macOS: Make the global menu shortcut to open kitty website configurable (:pull:`5004`)
+- macOS: Make the global menu shortcut to open smelly website configurable (:pull:`5004`)
 
 - macOS: Add the :opt:`macos_colorspace` option to control what color space colors are rendered in (:iss:`4686`)
 
-- Fix reloading of config not working when :file:`kitty.conf` does not exist when kitty is launched (:iss:`5071`)
+- Fix reloading of config not working when :file:`smelly.conf` does not exist when smelly is launched (:iss:`5071`)
 
 - Fix deleting images by row not calculating image bounds correctly (:iss:`5081`)
 
 - Increase the max number of combining chars per cell from two to three, without increasing memory usage.
 
 - Linux: Load libfontconfig at runtime to allow the binaries to work for
-  running kittens on servers without FontConfig
+  running wellies on servers without FontConfig
 
 - GNOME: Fix for high CPU usage caused by GNOME's text input subsystem going
   into an infinite loop when IME cursor position is updated after a done event
@@ -403,7 +403,7 @@ Detailed list of changes
 0.25.0 [2022-04-11]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- :doc:`kittens/ssh`: automatic shell integration when using SSH. Easily
+- :doc:`wellies/ssh`: automatic shell integration when using SSH. Easily
   clone local shell and editor configuration on remote machines, and automatic
   re-use of existing connections to avoid connection setup latency.
 
@@ -417,7 +417,7 @@ Detailed list of changes
 
 - diff kitten: Fix incorrect rendering in rare circumstances when scrolling after changing the context size (:iss:`4831`)
 
-- icat kitten: Fix a regression that broke :option:`kitty +kitten icat --print-window-size` (:pull:`4818`)
+- icat kitten: Fix a regression that broke :option:`smelly +kitten icat --print-window-size` (:pull:`4818`)
 
 - Wayland: Fix :opt:`hide_window_decorations` causing docked windows to be resized on blur (:iss:`4797`)
 
@@ -427,13 +427,13 @@ Detailed list of changes
 
 - Fix continued lines not having their continued status reset on line feed (:iss:`4837`)
 
-- macOS: Allow the New kitty Tab/Window Here services to open multiple selected folders.  (:pull:`4848`)
+- macOS: Allow the New smelly Tab/Window Here services to open multiple selected folders.  (:pull:`4848`)
 
 - Wayland: Fix a regression that broke IME when changing windows/tabs (:iss:`4853`)
 
 - macOS: Fix Unicode paths not decoded correctly when dropping files (:pull:`4879`)
 
-- Avoid flicker when starting kittens such as the hints kitten (:iss:`4674`)
+- Avoid flicker when starting wellies such as the hints kitten (:iss:`4674`)
 
 - A new action :ac:`scroll_prompt_to_top` to move the current prompt to the top (:pull:`4891`)
 
@@ -457,7 +457,7 @@ Detailed list of changes
 
 - Linux binaries: Fix binaries not working on systems with older Wayland client libraries (:iss:`4760`)
 
-- Fix a regression in the previous release that broke kittens launched with :code:`STDIN` not connected to a terminal (:iss:`4763`)
+- Fix a regression in the previous release that broke wellies launched with :code:`STDIN` not connected to a terminal (:iss:`4763`)
 
 - Wayland: Fix surface configure events not being acknowledged before commit
   the resized buffer (:pull:`4768`)
@@ -469,10 +469,10 @@ Detailed list of changes
 - Bash integration: No longer modify :file:`~/.bashrc` to load :ref:`shell integration <shell_integration>`.
   It is recommended to remove the lines used to load the shell integration from :file:`~/.bashrc` as they are no-ops.
 
-- macOS: Allow kitty to handle various URL types. Can be configured via
+- macOS: Allow smelly to handle various URL types. Can be configured via
   :ref:`launch_actions` (:pull:`4618`)
 
-- macOS: Add a new service ``Open with kitty`` to open file types that are not
+- macOS: Add a new service ``Open with smelly`` to open file types that are not
   recognized by the system (:pull:`4641`)
 
 - Splits layout: A new value for :option:`launch --location` to auto-select the split axis when splitting existing windows.
@@ -485,7 +485,7 @@ Detailed list of changes
 - Fix :ac:`show_last_command_output` not working when the output is stored
   partially in the scrollback pager history buffer (:iss:`4435`)
 
-- When dropping URLs/files onto kitty at a shell prompt insert them appropriately quoted and space
+- When dropping URLs/files onto smelly at a shell prompt insert them appropriately quoted and space
   separated (:iss:`4734`)
 
 - Improve CWD detection when there are multiple foreground processes in the TTY process group
@@ -557,10 +557,10 @@ Detailed list of changes
 0.24.2 [2022-02-03]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- macOS: Allow opening text files, images and directories with kitty when
+- macOS: Allow opening text files, images and directories with smelly when
   launched using "Open with" in Finder (:iss:`4460`)
 
-- Allow including config files matching glob patterns in :file:`kitty.conf`
+- Allow including config files matching glob patterns in :file:`smelly.conf`
   (:iss:`4533`)
 
 - Shell integration: Fix bash integration not working when ``PROMPT_COMMAND``
@@ -621,7 +621,7 @@ Detailed list of changes
 - Fix clicking in a window to focus it and typing immediately sometimes having
   unexpected effects if at a shell prompt (:iss:`4128`)
 
-- themes kitten: Allow writing to a different file than :file:`kitty.conf`.
+- themes kitten: Allow writing to a different file than :file:`smelly.conf`.
 
 
 0.24.1 [2022-01-06]
@@ -634,7 +634,7 @@ Detailed list of changes
 
 - Fix using ``--shell-integration`` with :file:`setup.py` broken (:iss:`4434`)
 
-- Fix showing debug information not working if kitty's :file:`STDIN` is not a tty
+- Fix showing debug information not working if smelly's :file:`STDIN` is not a tty
   (:iss:`4424`)
 
 - Linux: Fix a regression that broke rendering of emoji with variation selectors
@@ -644,7 +644,7 @@ Detailed list of changes
 0.24.0 [2022-01-04]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Integrate kitty closely with common shells such as zsh, fish and bash.
+- Integrate smelly closely with common shells such as zsh, fish and bash.
   This allows lots of niceties such as jumping to previous prompts, opening the
   output of the last command in a new window, etc. See :ref:`shell_integration`
   for details. Packagers please read :ref:`packagers`.
@@ -654,7 +654,7 @@ Detailed list of changes
   and you can press the number to focus the corresponding window (:iss:`4110`)
 
 - A new facility :opt:`window_logo_path` to draw an arbitrary PNG image as
-  logo in the corner of a kitty window (:pull:`4167`)
+  logo in the corner of a smelly window (:pull:`4167`)
 
 - Allow rendering the cursor with a *reverse video* effect. See :opt:`cursor`
   for details (:iss:`126`)
@@ -668,10 +668,10 @@ Detailed list of changes
 - Allow the user to supply a custom Python function to draw tab bar. See
   :opt:`tab_bar_style`
 
-- A new remote control command to :program:`change the tab color <kitty @
+- A new remote control command to :program:`change the tab color <smelly @
   set-tab-color>` (:iss:`1287`)
 
-- A new remote control command to :program:`visually select a window <kitty @
+- A new remote control command to :program:`visually select a window <smelly @
   select-window>` (:iss:`4165`)
 
 - Add support for reporting mouse events with pixel co-ordinates using the
@@ -683,28 +683,28 @@ Detailed list of changes
 
 - A new mappable action ``swap_with_window`` to swap the current window with another window in the tab, visually
 
-- A new :program:`remote control command <kitty @ set-enabled-layouts>` to change
+- A new :program:`remote control command <smelly @ set-enabled-layouts>` to change
   the enabled layouts in a tab (:iss:`4129`)
 
 - A new option :opt:`bell_path` to specify the path to a sound file
   to use as the bell sound
 
-- A new option :opt:`exe_search_path` to modify the locations kitty searches
+- A new option :opt:`exe_search_path` to modify the locations smelly searches
   for executables to run (:iss:`4324`)
 
 - broadcast kitten: Show a "fake" cursor in all windows being broadcast too
   (:iss:`4225`)
 
-- Allow defining :opt:`aliases <action_alias>` for more general actions, not just kittens
+- Allow defining :opt:`aliases <action_alias>` for more general actions, not just wellies
   (:pull:`4260`)
 
-- Fix a regression that caused :option:`kitty --title` to not work when
-  opening new OS windows using :option:`kitty --single-instance` (:iss:`3893`)
+- Fix a regression that caused :option:`smelly --title` to not work when
+  opening new OS windows using :option:`smelly --single-instance` (:iss:`3893`)
 
 - icat kitten: Fix display of JPEG images that are rotated via EXIF data and
   larger than available screen size (:iss:`3949`)
 
-- macOS: Fix SIGUSR1 quitting kitty instead of reloading the config file (:iss:`3952`)
+- macOS: Fix SIGUSR1 quitting smelly instead of reloading the config file (:iss:`3952`)
 
 - Launch command: Allow specifying the OS window title
 
@@ -739,11 +739,11 @@ Detailed list of changes
 - Allow middle clicking on a tab to close it (:iss:`4151`)
 
 - The command line option ``--watcher`` has been deprecated in favor of the
-  :opt:`watcher` option in :file:`kitty.conf`. It has the advantage of
+  :opt:`watcher` option in :file:`smelly.conf`. It has the advantage of
   applying to all windows, not just the initially created ones. Note that
   ``--watcher`` now also applies to all windows, not just initially created ones.
 
-- **Backward incompatibility**: No longer turn on the kitty extended keyboard
+- **Backward incompatibility**: No longer turn on the smelly extended keyboard
   protocol's disambiguate mode when the client sends the XTMODKEYS escape code.
   Applications must use the dedicated escape code to turn on the protocol.
   (:iss:`4075`)
@@ -757,10 +757,10 @@ Detailed list of changes
 - macOS: Fix :opt:`resize_in_steps` not working correctly on high DPI screens
   (:iss:`4114`)
 
-- Fix the :program:`resize OS Windows <kitty @ resize-os-window>` setting a
+- Fix the :program:`resize OS Windows <smelly @ resize-os-window>` setting a
   slightly incorrect size on high DPI screens (:iss:`4114`)
 
-- :program:`kitty @ launch` - when creating tabs with the ``--match`` option create
+- :program:`smelly @ launch` - when creating tabs with the ``--match`` option create
   the tab in the OS Window containing the result of the match rather than
   the active OS Window (:iss:`4126`)
 
@@ -791,11 +791,11 @@ Detailed list of changes
 - A new mappable action ``nth_os_window`` to to focus the specified nth OS
   window. (:pull:`4316`)
 
-- macOS: The kitty window can be scrolled by the mouse wheel when OS window not
+- macOS: The smelly window can be scrolled by the mouse wheel when OS window not
   in focus. (:pull:`4371`)
 
 - macOS: Light or dark system appearance can be specified in
-  :opt:`macos_titlebar_color` and used in kitty themes. (:pull:`4378`)
+  :opt:`macos_titlebar_color` and used in smelly themes. (:pull:`4378`)
 
 
 0.23.1 [2021-08-17]
@@ -805,10 +805,10 @@ Detailed list of changes
   root certificates (:iss:`3936`)
 
 - A new option :opt:`clipboard_max_size` to control the maximum size
-  of data that kitty will transmit to the system clipboard on behalf of
+  of data that smelly will transmit to the system clipboard on behalf of
   programs running inside it (:iss:`3937`)
 
-- When matching windows/tabs in kittens or using remote control, allow matching
+- When matching windows/tabs in wellies or using remote control, allow matching
   by recency. ``recent:0`` matches the active window/tab, ``recent:1`` matches
   the previous window/tab and so on
 
@@ -819,9 +819,9 @@ Detailed list of changes
 0.23.0 [2021-08-16]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- A new :doc:`themes kitten </kittens/themes>` to easily change kitty themes.
-  Choose from almost two hundred themes in the `kitty themes repository
-  <https://github.com/kovidgoyal/kitty-themes>`_
+- A new :doc:`themes kitten </wellies/themes>` to easily change smelly themes.
+  Choose from almost two hundred themes in the `smelly themes repository
+  <https://github.com/backbiter-no/smelly-themes>`_
 
 - A new style for the tab bar that makes tabs looks like the tabs in a physical
   tabbed file, see :opt:`tab_bar_style`
@@ -829,7 +829,7 @@ Detailed list of changes
 - Make the visual bell flash more gentle, especially on dark themes
   (:pull:`2937`)
 
-- Fix :option:`kitty --title` not overriding the OS Window title when multiple
+- Fix :option:`smelly --title` not overriding the OS Window title when multiple
   tabs are present. Also this option is no longer used as the default title for
   windows, allowing individual tabs/windows to have their own titles, even when
   the OS Window has a fixed overall title (:iss:`3893`)
@@ -857,15 +857,15 @@ Detailed list of changes
 - When dragging word or line selections, ensure the initially selected item is
   never deselected. This matches behavior in most other programs (:iss:`3930`)
 
-- hints kitten: Make copy/paste with the :option:`kitty +kitten hints
+- hints kitten: Make copy/paste with the :option:`smelly +kitten hints
   --program` option work when using the ``self``
-  :option:`kitty +kitten hints --linenum-action` (:iss:`3931`)
+  :option:`smelly +kitten hints --linenum-action` (:iss:`3931`)
 
 
 0.22.2 [2021-08-02]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- macOS: Fix a long standing bug that could cause kitty windows to stop
+- macOS: Fix a long standing bug that could cause smelly windows to stop
   updating, that got worse in the previous release (:iss:`3890` and
   :iss:`2016`)
 
@@ -876,7 +876,7 @@ Detailed list of changes
 0.22.1 [2021-07-31]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Fix a regression in the previous release that broke ``kitty --help`` (:iss:`3869`)
+- Fix a regression in the previous release that broke ``smelly --help`` (:iss:`3869`)
 
 - Graphics protocol: Fix composing onto currently displayed frame not updating the frame on the GPU (:iss:`3874`)
 
@@ -909,7 +909,7 @@ Detailed list of changes
   (:pull:`3836`)
 
 - When using the OSC 52 escape code to copy to clipboard allow large
-  copies (up to 8MB) without needing a kitty specific chunking protocol.
+  copies (up to 8MB) without needing a smelly specific chunking protocol.
   Note that if you used the chunking protocol in the past, it will no longer
   work and you should switch to using the unmodified protocol which has the
   advantage of working with all terminal emulators.
@@ -918,7 +918,7 @@ Detailed list of changes
   could cause incorrect parsing if either the pending buffer capacity or the
   pending timeout were exceeded (:iss:`3779`)
 
-- A new remote control command to :program:`resize the OS Window <kitty @
+- A new remote control command to :program:`resize the OS Window <smelly @
   resize-os-window>`
 
 - Graphics protocol: Add support for composing rectangles from one animation
@@ -941,7 +941,7 @@ Detailed list of changes
 - Wayland: Fix :opt:`initial_window_width/height <remember_window_size>` specified
   in cells not working on High DPI screens (:iss:`3834`)
 
-- A new theme for the kitty website with support for dark mode.
+- A new theme for the smelly website with support for dark mode.
 
 - Render ┄ ┅ ┆ ┇ ┈ ┉ ┊ ┋ with spaces at the edges. Matches rendering in
   most other programs and allows long chains of them to look better
@@ -963,7 +963,7 @@ Detailed list of changes
   (:iss:`3861`)
 
 - clipboard kitten: fix copies to clipboard not working without the
-  :option:`kitty +kitten clipboard --wait-for-completion` option
+  :option:`smelly +kitten clipboard --wait-for-completion` option
 
 
 0.21.2 [2021-06-28]
@@ -1025,28 +1025,28 @@ Detailed list of changes
 0.21.0 [2021-06-12]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Allow reloading the :file:`kitty.conf` config file by pressing
+- Allow reloading the :file:`smelly.conf` config file by pressing
   :sc:`reload_config_file`. (:iss:`1292`)
 
 - Allow clicking URLs to open them without needing to also hold
   :kbd:`ctrl+shift`
 
 - Allow remapping all mouse button press/release events to perform arbitrary
-  actions. :ref:`See details <conf-kitty-mouse.mousemap>` (:iss:`1033`)
+  actions. :ref:`See details <conf-smelly-mouse.mousemap>` (:iss:`1033`)
 
 - Support infinite length ligatures (:iss:`3504`)
 
 - **Backward incompatibility**: The options to control which modifiers keys to
   press for various mouse actions have been removed, if you used these options,
   you will need to replace them with configuration using the new
-  :ref:`mouse actions framework <conf-kitty-mouse.mousemap>` as they will be
+  :ref:`mouse actions framework <conf-smelly-mouse.mousemap>` as they will be
   ignored. The options were: ``terminal_select_modifiers``,
   ``rectangle_select_modifiers`` and ``open_url_modifiers``.
 
 - Add a configurable mouse action (:kbd:`ctrl+alt+triplepress` to select from the
   clicked point to the end of the line. (:iss:`3585`)
 
-- Add the ability to un-scroll the screen to the ``kitty @ scroll-window``
+- Add the ability to un-scroll the screen to the ``smelly @ scroll-window``
   remote control command (:iss:`3604`)
 
 - A new option, :opt:`tab_bar_margin_height` to add margins around the
@@ -1071,7 +1071,7 @@ Detailed list of changes
   applications for some fonts (:iss:`2022`)
 
 - Add a few more special commandline arguments for the launch command. Now all
-  ``KITTY_PIPE_DATA`` is also available via command line argument substitution
+  ``smelly_PIPE_DATA`` is also available via command line argument substitution
   (:iss:`3593`)
 
 - Fix dynamically changing the background color in a window causing rendering
@@ -1083,10 +1083,10 @@ Detailed list of changes
 - Fix deleting windows that are not the last window via remote control leaving
   no window focused (:iss:`3619`)
 
-- Add an option :option:`kitty @ get-text --add-cursor` to also get the current
+- Add an option :option:`smelly @ get-text --add-cursor` to also get the current
   cursor position and state as ANSI escape codes (:iss:`3625`)
 
-- Add an option :option:`kitty @ get-text --add-wrap-markers` to add line wrap
+- Add an option :option:`smelly @ get-text --add-wrap-markers` to add line wrap
   markers to the output (:pull:`3633`)
 
 - Improve rendering of curly underlines on HiDPI screens (:pull:`3637`)
@@ -1146,13 +1146,13 @@ Detailed list of changes
 - A new remote control command :ref:`at-env` to change the default
   environment passed to newly created windows (:iss:`3529`)
 
-- Linux: Fix binary kitty builds not able to load fonts in WOFF2 format
+- Linux: Fix binary smelly builds not able to load fonts in WOFF2 format
   (:iss:`3506`)
 
 - macOS: Prevent :kbd:`option` based shortcuts for being used for global menu
   actions (:iss:`3515`)
 
-- Fix ``kitty @ close-tab`` not working with pipe based remote control
+- Fix ``smelly @ close-tab`` not working with pipe based remote control
   (:iss:`3510`)
 
 - Fix removal of inactive tab that is before the currently active tab causing
@@ -1165,15 +1165,15 @@ Detailed list of changes
   decorations are hidden (:iss:`3507`)
 
 - GNOME: Add a new :opt:`wayland_titlebar_color` option to control the color of the
-  kitty window title bar
+  smelly window title bar
 
-- Fix reading :option:`kitty --session` from ``STDIN`` not working when the
-  :code:`kitty --detach` option is used (:iss:`3523`)
+- Fix reading :option:`smelly --session` from ``STDIN`` not working when the
+  :code:`smelly --detach` option is used (:iss:`3523`)
 
 - Special case rendering of the few remaining Powerline box drawing chars
   (:iss:`3535`)
 
-- Fix ``kitty @ set-colors`` not working for the :opt:`active_tab_foreground`.
+- Fix ``smelly @ set-colors`` not working for the :opt:`active_tab_foreground`.
 
 
 0.20.1 [2021-04-19]
@@ -1192,8 +1192,8 @@ Detailed list of changes
 0.20.0 [2021-04-19]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Support display of animated images ``kitty +kitten icat animation.gif``. See
-  :ref:`animation_protocol` for details on animation support in the kitty
+- Support display of animated images ``smelly +kitten icat animation.gif``. See
+  :ref:`animation_protocol` for details on animation support in the smelly
   graphics protocol.
 
 - A new keyboard reporting protocol with various advanced features that can be
@@ -1231,11 +1231,11 @@ Detailed list of changes
 
 - Double clicking on empty tab bar area now opens a new tab (:iss:`3201`)
 
-- kitty @ ls: Show only environment variables that are different for each
+- smelly @ ls: Show only environment variables that are different for each
   window, by default.
 
 - When passing a directory or a non-executable file as the program to run to
-  kitty opens it with the shell or by parsing the shebang, instead of just failing.
+  smelly opens it with the shell or by parsing the shebang, instead of just failing.
 
 - Linux: Fix rendering of emoji followed by the graphics variation selector not
   being colored with some fonts (:iss:`3211`)
@@ -1257,7 +1257,7 @@ Detailed list of changes
 
 - macOS: Add menu items to close the OS window and the current tab (:pull:`3240`, :iss:`3246`)
 
-- macOS: Allow opening script and command files with kitty (:iss:`3366`)
+- macOS: Allow opening script and command files with smelly (:iss:`3366`)
 
 - Also detect ``gemini://`` URLs when hovering with the mouse (:iss:`3370`)
 
@@ -1316,9 +1316,9 @@ Detailed list of changes
 0.19.3 [2020-12-19]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Happy holidays to all kitty users!
+- Happy holidays to all smelly users!
 
-- A new :doc:`broadcast <kittens/broadcast>` kitten to type in all kitty windows
+- A new :doc:`broadcast <wellies/broadcast>` kitten to type in all smelly windows
   simultaneously (:iss:`1569`)
 
 - Add a new mappable `select_tab` action to choose a tab to switch to even
@@ -1348,7 +1348,7 @@ Detailed list of changes
 - Wayland: Fix key repeat being stopped by the release of an unrelated key
   (:iss:`2191`)
 
-- Add an option, :opt:`detect_urls` to control whether kitty will detect URLs
+- Add an option, :opt:`detect_urls` to control whether smelly will detect URLs
   when the mouse moves over them (:pull:`3118`)
 
 - Graphics protocol: Dont return filename in the error message when opening file
@@ -1371,14 +1371,14 @@ Detailed list of changes
 - Fix a regression in 0.19.0 that caused a rare crash when using the optional
   :opt:`scrollback_pager_history_size` (:iss:`3049`)
 
-- Full screen kittens: Fix incorrect cursor position after kitten quits
+- Full screen wellies: Fix incorrect cursor position after kitten quits
   (:iss:`3176`)
 
 
 0.19.2 [2020-11-13]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- A new :doc:`kittens/query_terminal` kitten to easily query the running kitty
+- A new :doc:`wellies/query_terminal` kitten to easily query the running smelly
   via escape codes to detect its version, and the values of
   configuration options that enable or disable terminal features.
 
@@ -1401,11 +1401,11 @@ Detailed list of changes
 - Fix selections created by dragging upwards not being auto-cleared when
   screen contents change (:pull:`3028`)
 
-- macOS: Fix kitty not being added to PATH automatically when using pre-built
+- macOS: Fix smelly not being added to PATH automatically when using pre-built
   binaries (:iss:`3063`)
 
-- Allow adding MIME definitions to kitty by placing a ``mime.types`` file in
-  the kitty config directory (:iss:`3056`)
+- Allow adding MIME definitions to smelly by placing a ``mime.types`` file in
+  the smelly config directory (:iss:`3056`)
 
 - Dont ignore :option:`--title` when using a session file that defines no
   windows (:iss:`3055`)
@@ -1438,12 +1438,12 @@ Detailed list of changes
   Controlled via :opt:`allow_hyperlinks` (:iss:`68`)
 
 - Add support for easily editing or downloading files over SSH sessions
-  without the need for any special software, see :doc:`kittens/remote_file`
+  without the need for any special software, see :doc:`wellies/remote_file`
 
-- A new :doc:`kittens/hyperlinked_grep` kitten to easily search files and open
+- A new :doc:`wellies/hyperlinked_grep` kitten to easily search files and open
   the results at the matched line by clicking on them.
 
-- Allow customizing the :doc:`actions kitty takes <open_actions>` when clicking on URLs
+- Allow customizing the :doc:`actions smelly takes <open_actions>` when clicking on URLs
 
 - Improve rendering of borders when using minimal borders. Use less space and
   do not display a box around active windows
@@ -1463,7 +1463,7 @@ Detailed list of changes
 - Add support for displaying correct colors with non-sRGB PNG files (Adds a
   dependency on liblcms2)
 
-- hints kitten: Add a new :option:`kitty +kitten hints --type` of ``hyperlink`` useful
+- hints kitten: Add a new :option:`smelly +kitten hints --type` of ``hyperlink`` useful
   for activating hyperlinks using just the keyboard
 
 - Allow tracking focus change events in watchers (:iss:`2918`)
@@ -1478,7 +1478,7 @@ Detailed list of changes
 - macOS: Switch to using the User Notifications framework for notifications.
   The current notifications framework has been deprecated in Big Sur. The new
   framework only allows notifications from signed and notarized applications,
-  so people using kitty from homebrew/source are out of luck. Complain to
+  so people using smelly from homebrew/source are out of luck. Complain to
   Apple.
 
 - When in the main screen and a program grabs the mouse, do not use the scroll
@@ -1534,7 +1534,7 @@ Detailed list of changes
 - Improve anti-aliasing of triangular box drawing characters, noticeable on
   low-resolution screens (:iss:`2844`)
 
-- Fix ``kitty @ send-text`` not working reliably when using a socket for remote
+- Fix ``smelly @ send-text`` not working reliably when using a socket for remote
   control (:iss:`2852`)
 
 - Implement support for box drawing rounded-corners characters (:iss:`2240`)
@@ -1552,12 +1552,12 @@ Detailed list of changes
 - Make neighboring window selection in grid and splits layouts more intelligent
   (:pull:`2840`)
 
-- Allow passing the current selection to kittens (:iss:`2796`)
+- Allow passing the current selection to wellies (:iss:`2796`)
 
 - Fix pre-edit text not always being cleared with ibus input (:iss:`2862`)
 
 - Allow setting the :opt:`background_opacity` of new OS windows created via
-  :option:`kitty --single-instance` using the :option:`kitty --override` command line
+  :option:`smelly --single-instance` using the :option:`smelly --override` command line
   argument (:iss:`2806`)
 
 - Fix the CSI J (Erase in display ED) escape code not removing line continued
@@ -1600,7 +1600,7 @@ Detailed list of changes
 - Allow multiple overlay windows per normal window
 
 - Add an option :opt:`confirm_os_window_close` to ask for confirmation
-  when closing an OS window with multiple kitty windows.
+  when closing an OS window with multiple smelly windows.
 
 - Tall and Fat layouts: Add a ``mirrored`` option to put the full size window
   on the opposite edge of the screen (:iss:`2654`)
@@ -1609,23 +1609,23 @@ Detailed list of changes
   of full size windows (:iss:`2688`)
 
 - Allow sending arbitrary signals to the current foreground process in a window
-  using either a mapping in kitty.conf or via remote control (:iss:`2778`)
+  using either a mapping in smelly.conf or via remote control (:iss:`2778`)
 
 - Allow sending the back and forward mouse buttons to terminal applications
   (:pull:`2742`)
 
 - **Backwards incompatibility**: The numbers used to encode mouse buttons
-  for the ``send_mouse_event`` function that can be used in kittens have
+  for the ``send_mouse_event`` function that can be used in wellies have
   been changed (see :ref:`send_mouse_event`).
 
-- Add a new mappable ``quit`` action to quit kitty completely.
+- Add a new mappable ``quit`` action to quit smelly completely.
 
 - Fix marks using different colors with regexes using only a single color
   (:pull:`2663`)
 
 - Linux: Workaround for broken Nvidia drivers for old cards (:iss:`456`)
 
-- Wayland: Fix kitty being killed on some Wayland compositors if a hidden window
+- Wayland: Fix smelly being killed on some Wayland compositors if a hidden window
   has a lot of output (:iss:`2329`)
 
 - BSD: Fix controlling terminal not being established (:pull:`2686`)
@@ -1639,9 +1639,9 @@ Detailed list of changes
 - X11: Reduce startup time by ~25% by only querying GLX for framebuffer
   configurations once (:iss:`2754`)
 
-- macOS: Notarize the kitty application bundle (:iss:`2040`)
+- macOS: Notarize the smelly application bundle (:iss:`2040`)
 
-- Fix the kitty shell launched via a mapping needlessly requiring
+- Fix the smelly shell launched via a mapping needlessly requiring
   :opt:`allow_remote_control` to be turned on.
 
 
@@ -1664,8 +1664,8 @@ Detailed list of changes
 
 - Report modifier key state when sending wheel events to the terminal program
 
-- Fix kitty @ send-text not working with text larger than 1024 bytes when using
-  :option:`kitty --listen-on` (:iss:`2607`)
+- Fix smelly @ send-text not working with text larger than 1024 bytes when using
+  :option:`smelly --listen-on` (:iss:`2607`)
 
 - Wayland: Fix OS window title not updating for hidden windows (:iss:`2629`)
 
@@ -1683,7 +1683,7 @@ Detailed list of changes
   background image (:iss:`2419`)
 
 - Allow mapping arbitrary remote control commands to key presses in
-  :file:`kitty.conf`
+  :file:`smelly.conf`
 
 - X11: Fix crash when doing drag and drop from some applications (:iss:`2505`)
 
@@ -1712,10 +1712,10 @@ Detailed list of changes
 - Marks: Fix marks not handling wide characters and tab characters correctly
   (:iss:`2534`)
 
-- Add a new :opt:`listen_on` option in kitty.conf to set :option:`kitty --listen-on`
+- Add a new :opt:`listen_on` option in smelly.conf to set :option:`smelly --listen-on`
   globally. Also allow using environment variables in this option (:iss:`2569`).
 
-- Allow sending mouse events in kittens (:pull:`2538`)
+- Allow sending mouse events in wellies (:pull:`2538`)
 
 - icat kitten: Fix display of 16-bit depth images (:iss:`2542`)
 
@@ -1751,7 +1751,7 @@ Detailed list of changes
 - Fix regression causing incorrect rendering of separators in tab bar when
   defining a tab bar background color (:pull:`2480`)
 
-- Fix a regression in 0.17 that broke the kitty @ launch remote command and
+- Fix a regression in 0.17 that broke the smelly @ launch remote command and
   also broke the --tab-title option when creating a new tab. (:iss:`2488`)
 
 - Linux: Fix selection of fonts with multiple width variants not preferring
@@ -1769,7 +1769,7 @@ Detailed list of changes
 - macOS: Fix a regression in 0.17 that caused incorrect variants to be
   automatically selected for some fonts (:iss:`2462`)
 
-- Fix a regression in 0.17 that caused kitty @ set-colors to require setting
+- Fix a regression in 0.17 that caused smelly @ set-colors to require setting
   cursor_text_color (:iss:`2470`)
 
 
@@ -1800,7 +1800,7 @@ Detailed list of changes
 - X11: Fix arrow mouse cursor using right pointing instead of the default left
   pointing arrow (:iss:`2341`)
 
-- Allow passing the currently active kitty window id in the launch command
+- Allow passing the currently active smelly window id in the launch command
   (:iss:`2391`)
 
 - unicode input kitten: Allow pressing :kbd:`ctrl+tab` to change the input mode
@@ -1855,7 +1855,7 @@ Detailed list of changes
 
 - Drop support for python 3.5
 
-- Wayland: Fix a crash when drag and dropping into kitty (:iss:`2432`)
+- Wayland: Fix a crash when drag and dropping into smelly (:iss:`2432`)
 
 - diff kitten: Fix images lingering as blank rectangles after the kitten quits
   (:iss:`2449`)
@@ -1918,7 +1918,7 @@ Detailed list of changes
 - Fix a crash/incorrect rendering when detaching a window in some circumstances
   (:iss:`2173`)
 
-- hints kitten: Add an option :option:`kitty +kitten hints --ascending` to
+- hints kitten: Add an option :option:`smelly +kitten hints --ascending` to
   control if the hints numbers increase or decrease from top to bottom
 
 - Fix :opt:`background_opacity` incorrectly applying to selected text and
@@ -1944,11 +1944,11 @@ Detailed list of changes
   window into a different tab (:iss:`1310`)
 
 - Add a new action :doc:`launch <launch>` that unifies launching of processes
-  in new kitty windows/tabs.
+  in new smelly windows/tabs.
 
 - Add a new style ``powerline`` for tab bar rendering, see :opt:`tab_bar_style` (:pull:`2021`)
 
-- Allow changing colors by mapping a keyboard shortcut to read a kitty config
+- Allow changing colors by mapping a keyboard shortcut to read a smelly config
   file with color definitions. See the :doc:`FAQ <faq>` for details
   (:iss:`2083`)
 
@@ -1963,7 +1963,7 @@ Detailed list of changes
 
 - diff kitten: Allow diffing remote files easily via ssh (:iss:`727`)
 
-- unicode input kitten: Add an option :option:`kitty +kitten unicode_input
+- unicode input kitten: Add an option :option:`smelly +kitten unicode_input
   --emoji-variation` to control the presentation variant of selected emojis
   (:iss:`2139`)
 
@@ -1971,7 +1971,7 @@ Detailed list of changes
   (:pull:`2074` and :pull:`2021`)
 
 - Add a new socket only mode for :opt:`allow_remote_control`. This makes
-  it possible for programs running on the local machine to control kitty
+  it possible for programs running on the local machine to control smelly
   but not programs running over ssh.
 
 - hints kitten: Allow using named groups in the regular expression. The named
@@ -1993,7 +1993,7 @@ Detailed list of changes
 - macOS: Fix a regression in the previous release that caused a crash when
   pressing a unprintable key, such as the POWER key (:iss:`1997`)
 
-- Fix a regression in the previous release that caused kitty to not always
+- Fix a regression in the previous release that caused smelly to not always
   respond to DPI changes (:pull:`1999`)
 
 
@@ -2024,10 +2024,10 @@ Detailed list of changes
 0.14.4 [2019-08-31]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- hints kitten: Add a :option:`kitty +kitten hints --alphabet` option to
+- hints kitten: Add a :option:`smelly +kitten hints --alphabet` option to
   control what alphabets are used for hints (:iss:`1879`)
 
-- hints kitten: Allow specifying :option:`kitty +kitten hints --program`
+- hints kitten: Allow specifying :option:`smelly +kitten hints --program`
   multiple times to run multiple programs  (:iss:`1879`)
 
 - Add a :opt:`kitten_alias` option that can be used to alias kitten invocation
@@ -2036,10 +2036,10 @@ Detailed list of changes
 - macOS: Add an option :opt:`macos_show_window_title_in` to control
   showing the window title in the menubar/titlebar (:pull:`1837`)
 
-- macOS: Allow drag and drop of text from other applications into kitty
+- macOS: Allow drag and drop of text from other applications into smelly
   (:pull:`1921`)
 
-- When running kittens, use the colorscheme of the current window
+- When running wellies, use the colorscheme of the current window
   rather than the configured colorscheme (:iss:`1906`)
 
 - Don't fail to start if running the shell to read the EDITOR env var fails
@@ -2063,12 +2063,12 @@ Detailed list of changes
 0.14.3 [2019-07-29]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Remote control: Add a command `kitty @ scroll-window` to scroll windows
+- Remote control: Add a command `smelly @ scroll-window` to scroll windows
 
 - Allow passing a ``!neighbor`` argument to the new_window mapping to open a
   new window next to the active window (:iss:`1746`)
 
-- Document the kitty remote control protocol (:iss:`1646`)
+- Document the smelly remote control protocol (:iss:`1646`)
 
 - Add a new option :opt:`pointer_shape_when_grabbed` that allows you to control
   the mouse pointer shape when the terminal programs grabs the pointer
@@ -2102,7 +2102,7 @@ Detailed list of changes
 - Linux: Use the system "bell" sound for the terminal bell. Adds libcanberra
   as a new dependency to play the system sound.
 
-- macOS: Fix a rare deadlock causing kitty to hang (:iss:`1779`)
+- macOS: Fix a rare deadlock causing smelly to hang (:iss:`1779`)
 
 - Linux: Fix a regression in 0.14.0 that caused the event loop to tick
   continuously, wasting CPU even when idle (:iss:`1782`)
@@ -2122,7 +2122,7 @@ Detailed list of changes
   aligned inside the window when the window size is not an exact multiple
   of the cell size (:pull:`1670`)
 
-- hints kitten: Add a :option:`kitty +kitten hints --multiple-joiner` option to
+- hints kitten: Add a :option:`smelly +kitten hints --multiple-joiner` option to
   control how multiple selections are serialized when copying to clipboard
   or inserting into the terminal. You can have them on separate lines,
   separated by arbitrary characters, or even serialized as JSON (:iss:`1665`)
@@ -2136,7 +2136,7 @@ Detailed list of changes
 - icat kitten: Fix a regression that broke passing directories to icat
   (:iss:`1683`)
 
-- clipboard kitten: Add a :option:`kitty +kitten clipboard --wait-for-completion`
+- clipboard kitten: Add a :option:`smelly +kitten clipboard --wait-for-completion`
   option to have the kitten wait till copying to clipboard is complete
   (:iss:`1693`)
 
@@ -2148,7 +2148,7 @@ Detailed list of changes
   :opt:`linux_display_server`.
 
 - Add an option to control the default :opt:`update_check_interval` when
-  building kitty packages
+  building smelly packages
 
 - Wayland: Fix resizing the window on a compositor that does not provide
   server side window decorations, such a GNOME or Weston not working
@@ -2174,7 +2174,7 @@ Detailed list of changes
 - Fix colors not being preserved when using the pipe command with
   the pager history buffer (:pull:`1657`)
 
-- macOS: Fix a regression that could cause rendering of a kitty window
+- macOS: Fix a regression that could cause rendering of a smelly window
   to occasionally freeze in certain situations, such as moving it between
   monitors or transitioning from/to fullscreen (:iss:`1641`)
 
@@ -2205,7 +2205,7 @@ Detailed list of changes
 - Allow using the new private internal clipboard buffers with the
   :opt:`copy_on_select` option (:iss:`1390`)
 
-- macOS: Allow opening new kitty tabs/top-level windows from Finder
+- macOS: Allow opening new smelly tabs/top-level windows from Finder
   (:pull:`1350`)
 
 - Add an option :opt:`disable_ligatures` to disable
@@ -2220,7 +2220,7 @@ Detailed list of changes
   tab becomes active when the current tab is closed (:pull:`1524`)
 
 - Allow specifying a value of ``none`` for the :opt:`selection_foreground`
-  which will cause kitty to not change text color in selections (:iss:`1358`)
+  which will cause smelly to not change text color in selections (:iss:`1358`)
 
 - Make live resizing of OS windows smoother and add an option
   :opt:`resize_draw_strategy` to control what is drawn while a
@@ -2272,7 +2272,7 @@ Detailed list of changes
 - Fix scrollback pager history not being cleared when clearing the
   main scrollback buffer (:iss:`1387`)
 
-- macOS: When closing a top-level window only switch focus to the previous kitty
+- macOS: When closing a top-level window only switch focus to the previous smelly
   window if it is on the same workspace (:iss:`1379`)
 
 - macOS: Fix :opt:`sync_to_monitor` not working on Mojave.
@@ -2280,12 +2280,12 @@ Detailed list of changes
 - macOS: Use the system cursor blink interval by default
   :opt:`cursor_blink_interval`.
 
-- Wayland: Use the kitty Wayland backend by default. Can be switched back
+- Wayland: Use the smelly Wayland backend by default. Can be switched back
   to using XWayland by setting the environment variable:
-  ``KITTY_DISABLE_WAYLAND=1``
+  ``smelly_DISABLE_WAYLAND=1``
 
 - Add a ``no-append`` setting to :opt:`clipboard_control` to disable
-  the kitty copy concatenation protocol extension for OSC 52.
+  the smelly copy concatenation protocol extension for OSC 52.
 
 - Update to using the Unicode 12 standard
 
@@ -2308,7 +2308,7 @@ Detailed list of changes
 - Use negative values for :opt:`mouse_hide_wait` to hide the mouse cursor
   immediately when pressing a key (:iss:`1534`)
 
-- When encountering errors in :file:`kitty.conf` report them to the user
+- When encountering errors in :file:`smelly.conf` report them to the user
   instead of failing to start.
 
 - Allow the user to control the resize debounce time via
@@ -2340,15 +2340,15 @@ Detailed list of changes
 - Fix a regression in the previous release that broke using ``background`` for
   :opt:`cursor_text_color` (:iss:`1288`)
 
-- macOS: Fix dragging kitty window tabs in traditional full screen mode causing
+- macOS: Fix dragging smelly window tabs in traditional full screen mode causing
   crashes (:iss:`1296`)
 
-- macOS: Ensure that when running from a bundle, the bundle kitty exe is
-  preferred over any kitty in PATH (:iss:`1280`)
+- macOS: Ensure that when running from a bundle, the bundle smelly exe is
+  preferred over any smelly in PATH (:iss:`1280`)
 
 - macOS: Fix a regression that broke mapping of :kbd:`ctrl+tab` (:iss:`1304`)
 
-- Add a list of user-created kittens to the docs
+- Add a list of user-created wellies to the docs
 
 - Fix a regression that broke changing mouse wheel scroll direction with
   negative :opt:`wheel_scroll_multiplier` values in full-screen applications
@@ -2357,13 +2357,13 @@ Detailed list of changes
 - Fix :opt:`background_opacity` not working with pure white backgrounds
   (:iss:`1285`)
 
-- macOS: Fix "New OS Window" dock action not working when kitty is not focused
+- macOS: Fix "New OS Window" dock action not working when smelly is not focused
   (:iss:`1312`)
 
 - macOS: Add aliases for close window and new tab actions that conform to common
   Apple shortcuts for these actions (:iss:`1313`)
 
-- macOS: Fix some kittens causing 100% CPU usage
+- macOS: Fix some wellies causing 100% CPU usage
 
 
 0.13.2 [2019-01-04]
@@ -2374,7 +2374,7 @@ Detailed list of changes
   the tab number next to the title (:iss:`1223`)
 
 - Report the current foreground processes as well as the original child process,
-  when using `kitty @ ls`
+  when using `smelly @ ls`
 
 - Use the current working directory of the foreground process for the
   `*_with_cwd` actions that open a new window with the current working
@@ -2398,7 +2398,7 @@ Detailed list of changes
 - Fix changing :opt:`cursor_text_color` via remote control not working
   (:iss:`1229`)
 
-- Add an action to resize windows that can be mapped to shortcuts in :file:`kitty.conf`
+- Add an action to resize windows that can be mapped to shortcuts in :file:`smelly.conf`
   (:pull:`1245`)
 
 - Fix using the ``new_tab !neighbor`` action changing the order of the
@@ -2425,14 +2425,14 @@ Detailed list of changes
 0.13.0 [2018-12-05]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Add an option :opt:`scrollback_pager_history_size` to tell kitty to store
+- Add an option :opt:`scrollback_pager_history_size` to tell smelly to store
   extended scrollback to use when viewing the scrollback buffer in a pager
   (:iss:`970`)
 
-- Modify the kittens sub-system to allow creating custom kittens without any
+- Modify the wellies sub-system to allow creating custom wellies without any
   user interface. This is useful for creating more complex actions that can
-  be bound to key presses in :file:`kitty.conf`. See
-  doc:`kittens/custom`. (:iss:`870`)
+  be bound to key presses in :file:`smelly.conf`. See
+  doc:`wellies/custom`. (:iss:`870`)
 
 - Add a new ``nth_window`` action that can be used to go to the nth window and
   also previously active windows, using negative numbers. Similarly,
@@ -2483,7 +2483,7 @@ Detailed list of changes
 - Linux: Fix a crash when using the GNU Unifont as a fallback font
   (:iss:`1087`)
 
-- Wayland: Fix copying from hidden kitty windows hanging (:iss:`1051`)
+- Wayland: Fix copying from hidden smelly windows hanging (:iss:`1051`)
 
 - Wayland: Add support for the primary selection protocol
   implemented by some compositors (:pull:`1095`)
@@ -2523,7 +2523,7 @@ Detailed list of changes
 0.12.3 [2018-09-29]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- macOS: Fix kitty window not being rendered on macOS Mojave until the window is
+- macOS: Fix smelly window not being rendered on macOS Mojave until the window is
   moved or resized at least once (:iss:`887`)
 
 - Unicode input: Fix an error when searching for the string 'fir' (:iss:`1035`)
@@ -2543,7 +2543,7 @@ Detailed list of changes
   and scrollback buffer to any desired program running in a new window, tab or
   overlay window. (:iss:`933`)
 
-- Add a new :option:`kitty --start-as` command line flag to start kitty
+- Add a new :option:`smelly --start-as` command line flag to start smelly
   full-screen/maximized/minimized. This replaces the ``--start-in-fullscreen``
   flag introduced in the previous release (:iss:`935`)
 
@@ -2555,7 +2555,7 @@ Detailed list of changes
   sub-pixel antialiasing (:pull:`950`)
 
 - macOS: Add an option :opt:`macos_traditional_fullscreen` to make
-  full-screening of kitty windows much faster, but less pretty. (:iss:`911`)
+  full-screening of smelly windows much faster, but less pretty. (:iss:`911`)
 
 - Fix a bug causing incorrect line ordering when viewing the scrollback buffer
   if the scrollback buffer is full (:iss:`960`)
@@ -2566,19 +2566,19 @@ Detailed list of changes
 - Workaround for broken editors like nano that cannot handle newlines in pasted text
   (:iss:`994`)
 
-- Linux: Ensure that the python embedded in the kitty binary build uses
+- Linux: Ensure that the python embedded in the smelly binary build uses
   UTF-8 mode to process command-line arguments (:iss:`924`)
 
 - Linux: Handle fonts that contain monochrome bitmaps (such as the Terminus TTF
   font) (:pull:`934`)
 
-- Have the :option:`kitty --title` flag apply to all windows created
-  using :option:`kitty --session` (:iss:`921`)
+- Have the :option:`smelly --title` flag apply to all windows created
+  using :option:`smelly --session` (:iss:`921`)
 
 - Revert change for backspacing of wide characters in the previous release,
   as it breaks backspacing in some wide character aware programs (:iss:`875`)
 
-- Fix kitty @set-colors not working for tab backgrounds when using the `fade` tabbar style
+- Fix smelly @set-colors not working for tab backgrounds when using the `fade` tabbar style
   (:iss:`937`)
 
 - macOS: Fix resizing semi-transparent windows causing the windows to be
@@ -2591,17 +2591,17 @@ Detailed list of changes
   (:iss:`359`)
 
 - Remote control: Fix the ``focus_window`` command not focusing the
-  top-level OS window of the specified kitty window (:iss:`1003`)
+  top-level OS window of the specified smelly window (:iss:`1003`)
 
 - Fix using :opt:`focus_follows_mouse` causing text selection with the
-  mouse to malfunction when using multiple kitty windows (:iss:`1002`)
+  mouse to malfunction when using multiple smelly windows (:iss:`1002`)
 
 
 0.12.1 [2018-09-08]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Add a new ``--start-in-fullscreen`` command line flag to start
-  kitty in full screen mode (:iss:`856`)
+  smelly in full screen mode (:iss:`856`)
 
 - macOS: Fix a character that cannot be rendered in any font causing
   font fallback for all subsequent characters that cannot be rendered in the
@@ -2621,16 +2621,16 @@ Detailed list of changes
 
 - Allow mapping of individual key-presses without modifiers as shortcuts
 
-- Fix legacy invocation of icat as `kitty icat` not working (:iss:`850`)
+- Fix legacy invocation of icat as `smelly icat` not working (:iss:`850`)
 
 - Improve rendering of wavy underline at small font sizes (:iss:`853`)
 
 - Fix a regression in 0.12.0 that broke dynamic resizing of layouts (:iss:`860`)
 
-- Wayland: Allow using the :code:`kitty --class` command line flag
+- Wayland: Allow using the :code:`smelly --class` command line flag
   to set the app id (:iss:`862`)
 
-- Add completion of the kitty command for the fish shell (:pull:`829`)
+- Add completion of the smelly command for the fish shell (:pull:`829`)
 
 - Linux: Fix XCompose rules with no defined symbol not working (:iss:`880`)
 
@@ -2652,14 +2652,14 @@ Detailed list of changes
   using standard keyboards) via `IBus
   <https://github.com/ibus/ibus/wiki/ReadMe>`_ (:iss:`469`)
 
-- Implement completion for the kitty command in bash and zsh. See
+- Implement completion for the smelly command in bash and zsh. See
   :ref:`shell_integration`.
 
 - Render the text under the cursor in a fixed color, configurable via
   the option :opt:`cursor_text_color` (:iss:`126`)
 
 - Add an option :opt:`env` to set environment variables in child processes
-  from kitty.conf
+  from smelly.conf
 
 - Add an action to the ``clear_terminal`` function to scroll the screen
   contents into the scrollback buffer (:iss:`1113`)
@@ -2676,9 +2676,9 @@ Detailed list of changes
 - Remote control: Allow matching windows by the environment variables of their
   child process as well
 
-- Allow running kittens via the remote control system (:iss:`738`)
+- Allow running wellies via the remote control system (:iss:`738`)
 
-- Allow enabling remote control in only some kitty windows
+- Allow enabling remote control in only some smelly windows
 
 - Add a keyboard shortcut to reset the terminal (:sc:`reset_terminal`). It
   takes parameters so you can define your own shortcuts to clear the
@@ -2690,10 +2690,10 @@ Detailed list of changes
 - diff kitten: Fix error when right hand side file is binary and left hand side
   file is text (:pull:`752`)
 
-- kitty @ new-window: Add a new option :option:`kitty @ new-window --window-type`
+- smelly @ new-window: Add a new option :option:`smelly @ new-window --window-type`
   to create top-level OS windows (:iss:`770`)
 
-- macOS: The :opt:`focus_follows_mouse` option now also works across top-level kitty OS windows
+- macOS: The :opt:`focus_follows_mouse` option now also works across top-level smelly OS windows
   (:iss:`754`)
 
 - Fix detection of URLs in HTML source code (URLs inside quotes) (:iss:`785`)
@@ -2702,7 +2702,7 @@ Detailed list of changes
 
 - Round-trip the zwj unicode character. Rendering of sequences containing zwj
   is still not implemented, since it can cause the collapse of an unbounded
-  number of characters into a single cell. However, kitty at least preserves
+  number of characters into a single cell. However, smelly at least preserves
   the zwj by storing it as a combining character.
 
 - macOS: Disable the custom mouse cursor. Using a custom cursor fails on dual
@@ -2712,7 +2712,7 @@ Detailed list of changes
 - macOS: Fix control+tab key combination not working (:iss:`801`)
 
 - Linux: Fix slow startup on some systems caused by GLFW searching for
-  joysticks. Since kitty does not use joysticks, disable joystick support.
+  joysticks. Since smelly does not use joysticks, disable joystick support.
   (:iss:`830`)
 
 
@@ -2723,9 +2723,9 @@ Detailed list of changes
   that separate the inactive window from a neighbor. Note that setting
   a non-zero window margin overrides this and causes all borders to be drawn.
   The old behavior of drawing all borders can be restored via the
-  :opt:`draw_minimal_borders` setting in kitty.conf. (:iss:`699`)
+  :opt:`draw_minimal_borders` setting in smelly.conf. (:iss:`699`)
 
-- macOS: Add an option :opt:`macos_window_resizable` to control if kitty
+- macOS: Add an option :opt:`macos_window_resizable` to control if smelly
   top-level windows are resizable using the mouse or not (:iss:`698`)
 
 - macOS: Use a custom mouse cursor that shows up well on both light and dark backgrounds
@@ -2755,13 +2755,13 @@ Detailed list of changes
 
 - Linux: Allow using XKB key names to bind shortcuts to keys not supported by GLFW (:pull:`665`)
 
-- kitty shell: Ignore failure to read readline history file. Happens if the
-  user migrates their kitty cache directory between systems with incompatible
+- smelly shell: Ignore failure to read readline history file. Happens if the
+  user migrates their smelly cache directory between systems with incompatible
   readline implementations.
 
 - macOS: Fix an error in remote control when using --listen-on (:iss:`679`)
 
-- hints kitten: Add a :option:`kitty +kitten hints --multiple` option to select
+- hints kitten: Add a :option:`smelly +kitten hints --multiple` option to select
   multiple items (:iss:`687`)
 
 - Fix pasting large amounts of text very slow (:iss:`682`)
@@ -2769,13 +2769,13 @@ Detailed list of changes
 - Add an option :opt:`single_window_margin_width` to allow different margins
   when only a single window is visible in the layout (:iss:`688`)
 
-- Add a :option:`kitty --hold` command line option to stay open after the child process exits (:iss:`667`)
+- Add a :option:`smelly --hold` command line option to stay open after the child process exits (:iss:`667`)
 
 - diff kitten: When triggering a search scroll to the first match automatically
 
-- :option:`kitty --debug-font-fallback` also prints out what basic fonts were matched
+- :option:`smelly --debug-font-fallback` also prints out what basic fonts were matched
 
-- When closing a kitty window reset the mouse cursor to its default shape and ensure it is visible (:iss:`655`).
+- When closing a smelly window reset the mouse cursor to its default shape and ensure it is visible (:iss:`655`).
 
 - Remote control: Speed-up reading of command responses
 
@@ -2792,11 +2792,11 @@ Detailed list of changes
 
 - diff kitten: Implement searching for text in the diff (:iss:`574`)
 
-- Add an option :opt:`startup_session` to :file:`kitty.conf` to specify a
+- Add an option :opt:`startup_session` to :file:`smelly.conf` to specify a
   default startup session (:iss:`641`)
 
-- Add a command line option :option:`kitty --wait-for-single-instance-window-close`
-  to make :option:`kitty --single-instance` wait for the closing of the newly opened
+- Add a command line option :option:`smelly --wait-for-single-instance-window-close`
+  to make :option:`smelly --single-instance` wait for the closing of the newly opened
   window before quitting (:iss:`630`)
 
 - diff kitten: Allow theming the selection background/foreground as well
@@ -2807,7 +2807,7 @@ Detailed list of changes
 - diff kitten: Fix default foreground/background colors not being restored when
   kitten quits (:iss:`637`)
 
-- Fix :option:`kitty @ set-colors --all` not working when more than one window
+- Fix :option:`smelly @ set-colors --all` not working when more than one window
   present (:iss:`632`)
 
 - Fix a regression that broke the legacy increase/decrease_font_size actions
@@ -2825,7 +2825,7 @@ Detailed list of changes
 - :doc:`Pre-compiled binaries <binary>` with all bundled dependencies for Linux
   (:iss:`595`)
 
-- A :doc:`new kitten <kittens/panel>` to create dock panels on X11 desktops
+- A :doc:`new kitten <wellies/panel>` to create dock panels on X11 desktops
   showing the output from arbitrary terminal programs.
 
 - Reduce data sent to the GPU per render by 30% (:commit:`8dea5b3`)
@@ -2833,14 +2833,14 @@ Detailed list of changes
 - Implement changing the font size for individual top level (OS) windows
   (:iss:`408`)
 
-- When viewing the scrollback in less using :sc:`show_scrollback` and kitty
-  is currently scrolled, position the scrollback in less to match kitty's
+- When viewing the scrollback in less using :sc:`show_scrollback` and smelly
+  is currently scrolled, position the scrollback in less to match smelly's
   scroll position. (:iss:`148`)
 
 - ssh kitten: Support all SSH options. It can now be aliased directly to ssh
   for convenience. (:pull:`591`)
 
-- icat kitten: Add :option:`kitty +kitten icat --print-window-size` to easily
+- icat kitten: Add :option:`smelly +kitten icat --print-window-size` to easily
   detect the window size in pixels from scripting languages (:iss:`581`)
 
 - hints kitten: Allow selecting hashes from the terminal with
@@ -2855,15 +2855,15 @@ Detailed list of changes
 - When closing a tab switch to the last active tab instead of the right-most
   tab (:iss:`585`)
 
-- Wayland: Fix kitty not starting when using wl_roots based compositors
+- Wayland: Fix smelly not starting when using wl_roots based compositors
   (:iss:`157`)
 
 - Wayland: Fix mouse wheel/touchpad scrolling in opposite direction to other apps (:iss:`594`)
 
 - macOS: Fix the new OS window keyboard shortcut (:sc:`new_os_window`) not
-  working if no kitty window currently has focus. (:iss:`524`)
+  working if no smelly window currently has focus. (:iss:`524`)
 
-- macOS: Keep kitty running even when the last window is closed. This is in
+- macOS: Keep smelly running even when the last window is closed. This is in
   line with how applications are supposed to behave on macOS (:iss:`543`).
   There is a new option (:opt:`macos_quit_when_last_window_closed`) to control
   this.
@@ -2871,7 +2871,7 @@ Detailed list of changes
 - macOS: Add macOS standard shortcuts for copy, paste and new OS window
   (⌘+C, ⌘+V, ⌘+N)
 
-- Add a config option (:opt:`editor`) to set the EDITOR kitty uses (:iss:`580`)
+- Add a config option (:opt:`editor`) to set the EDITOR smelly uses (:iss:`580`)
 
 - Add a config option (``x11_hide_window_decorations``) to hide window
   decorations under X11/Wayland (:iss:`607`)
@@ -2891,15 +2891,15 @@ Detailed list of changes
 
 - Fix :opt:`inactive_text_alpha` also applying to the tab bar (:iss:`612`)
 
-- :doc:`hints kitten <kittens/hints>`: Fix a regression that caused some blank lines to be not
+- :doc:`hints kitten <wellies/hints>`: Fix a regression that caused some blank lines to be not
   be displayed.
 
 - Linux: Include a man page and the HTML docs when building the linux-package
 
-- Remote control: Fix kitty @ sometimes failing to read the response from
-  kitty. (:iss:`614`)
+- Remote control: Fix smelly @ sometimes failing to read the response from
+  smelly. (:iss:`614`)
 
-- Fix `kitty @ set-colors` not working with the window border colors.
+- Fix `smelly @ set-colors` not working with the window border colors.
   (:iss:`623`)
 
 - Fix a regression in 0.10 that caused incorrect rendering of the status bar in
@@ -2910,13 +2910,13 @@ Detailed list of changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Add a kitten to easily ssh into servers that automatically copies the
-  terminfo files over. ``kitty +kitten ssh myserver``.
+  terminfo files over. ``smelly +kitten ssh myserver``.
 
 - diff kitten: Make the keyboard shortcuts configurable (:iss:`563`)
 
 - Allow controlling *background_opacity* via either keyboard shortcuts or
   remote control. Note that you must set *dynamic_background_opacity yes* in
-  kitty.conf first. (:iss:`569`)
+  smelly.conf first. (:iss:`569`)
 
 - diff kitten: Add keybindings to scroll by page
 
@@ -2924,7 +2924,7 @@ Detailed list of changes
   yaml
 
 - macOS: Fix regression that caused the *macos_option_as_alt* setting to always
-  be disabled for all OS windows in a kitty instance after the first window
+  be disabled for all OS windows in a smelly instance after the first window
   (:iss:`571`)
 
 - Fix Ctrl+Alt+Space not working in normal and application keyboard modes
@@ -2935,9 +2935,9 @@ Detailed list of changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - A diff kitten to show side-by-side diffs with syntax highlighting and support
-  for images. See :doc:`diff kitten <kittens/diff>`.
+  for images. See :doc:`diff kitten <wellies/diff>`.
 
-- Make windows in the various kitty layouts manually resizable. See
+- Make windows in the various smelly layouts manually resizable. See
   :ref:`layouts` for details.
 
 - Implement support for the SGR *faint* escape code to make text blend
@@ -2947,15 +2947,15 @@ Detailed list of changes
   so that URLs that stretch over multiple lines are detected. Also improve
   detection of surrounding brackets/quotes.
 
-- Make the kitty window id available as the environment variable
-  ``KITTY_WINDOW_ID`` (:iss:`532`).
+- Make the smelly window id available as the environment variable
+  ``smelly_WINDOW_ID`` (:iss:`532`).
 
 - Add a "fat" layout that is similar to the "tall" layout but vertically
   oriented.
 
 - Expand environment variables in config file include directives
 
-- Allow programs running in kitty to read/write from the clipboard (:commit:`889ca77`).
+- Allow programs running in smelly to read/write from the clipboard (:commit:`889ca77`).
   By default only writing is allowed. This feature is supported in many
   terminals, search for `OSC 52 clipboard` to find out more about using it.
 
@@ -3004,7 +3004,7 @@ Detailed list of changes
 
 - Remote control: Allow matching windows by number (visible position).
 
-- macOS: Fix changing tab title and kitty shell not working
+- macOS: Fix changing tab title and smelly shell not working
 
 - When triple-clicking select all wrapped lines belonging to a single logical line.
 
@@ -3013,16 +3013,16 @@ Detailed list of changes
 - When calling pass_selection_to_program use the current directory of the child
   process as the cwd of the program.
 
-- Add macos_hide_from_tasks option to hide kitty from the macOS task switcher
+- Add macos_hide_from_tasks option to hide smelly from the macOS task switcher
 
 - macOS: When the macos_titlebar_color is set to background change the titlebar
-  colors to match the current background color of the active kitty window
+  colors to match the current background color of the active smelly window
 
 - Add a setting to clear all shortcuts defined up to that point in the config
   file(s)
 
-- Add a setting (kitty_mod) to change the modifier used by all the default
-  kitty shortcuts, globally
+- Add a setting (smelly_mod) to change the modifier used by all the default
+  smelly shortcuts, globally
 
 - Fix Shift+function key not working
 
@@ -3037,7 +3037,7 @@ Detailed list of changes
   colors for the two cells.
 
 - Fix passing @text to other programs such as when viewing the scrollback
-  buffer not working correctly if kitty is itself scrolled up.
+  buffer not working correctly if smelly is itself scrolled up.
 
 - Fix window focus gained/lost events not being reported to child programs when
   switching windows/tabs using the various keyboard shortcuts.
@@ -3052,7 +3052,7 @@ Detailed list of changes
 0.9.0 [2018-04-15]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- A new kitty command shell to allow controlling kitty via commands. Press
+- A new smelly command shell to allow controlling smelly via commands. Press
   `ctrl+shift+escape` to run the shell.
 
 - The hints kitten has become much more powerful. Now in addition to URLs you
@@ -3060,7 +3060,7 @@ Detailed list of changes
   These can be inserted into the terminal, copied to clipboard or sent to
   external programs.
 
-- Linux: Switch to libxkbcommon for keyboard handling. It allows kitty to
+- Linux: Switch to libxkbcommon for keyboard handling. It allows smelly to
   support XCompose and dead keys and also react to keyboard remapping/layout
   change without needing a restart.
 
@@ -3079,12 +3079,12 @@ Detailed list of changes
 
 - Allow setting all 256 terminal colors in the config file
 
-- Fix using `kitty --single-instance` to open a new window in a running kitty
+- Fix using `smelly --single-instance` to open a new window in a running smelly
   instance, not respecting the `--directory` flag
 
 - URL hints: Exclude trailing punctuation from URLs
 
-- URL hints: Launch the browser from the kitty parent process rather than the
+- URL hints: Launch the browser from the smelly parent process rather than the
   hints kitten. Fixes launching on some systems where xdg-open doesn't like
   being run from a kitten.
 
@@ -3097,7 +3097,7 @@ Detailed list of changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Fix presence of XDG_CONFIG_DIRS and absence of XDG_CONFIG_HOME preventing
-  kitty from starting
+  smelly from starting
 
 - Revert change in last release to cell width calculation. Instead just clip
   the right edges of characters that overflow the cell by at most two pixels
@@ -3120,10 +3120,10 @@ Detailed list of changes
   now calculated by actually rendering bitmaps, which is slower but more
   accurate)
 
-- Allow specifying a system wide kitty config file, for all users
+- Allow specifying a system wide smelly config file, for all users
 
 - Add a --debug-config command line flag to output data about the system and
-  kitty configuration.
+  smelly configuration.
 
 - Wayland: Fix auto-repeat of keys not working
 
@@ -3135,15 +3135,15 @@ Detailed list of changes
 
 - Add a configurable keyboard shortcut and remote command to set the font size to a specific value
 
-- Add an option to have kitty close the window when the main processes running in it exits, even if there are still background processes writing to that terminal
+- Add an option to have smelly close the window when the main processes running in it exits, even if there are still background processes writing to that terminal
 
 - Add configurable keyboard shortcuts to switch to a specific layout
 
-- Add a keyboard shortcut to edit the kitty config file easily
+- Add a keyboard shortcut to edit the smelly config file easily
 
 - macOS: Fix restoring of window size not correct on Retina screens
 
-- macOS: Add a facility to specify command line arguments when running kitty from the GUI
+- macOS: Add a facility to specify command line arguments when running smelly from the GUI
 
 - Add a focus-tab remote command
 
@@ -3155,8 +3155,8 @@ Detailed list of changes
 0.8.1 [2018-03-09]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Extend kitty's remote control feature to work over both UNIX and TCP sockets,
-  so now you can control kitty from across the internet, if you want to.
+- Extend smelly's remote control feature to work over both UNIX and TCP sockets,
+  so now you can control smelly from across the internet, if you want to.
 
 - Render private use unicode characters that are followed by a space as a two
   character ligature. This fixes rendering for applications that misuse
@@ -3187,20 +3187,20 @@ Detailed list of changes
 0.8.0 [2018-02-24]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- A framework for kittens, that is, small terminal programs designed to run
-  inside kitty and extend its capabilities. Examples include unicode input and
+- A framework for wellies, that is, small terminal programs designed to run
+  inside smelly and extend its capabilities. Examples include unicode input and
   selecting URLs with the keyboard.
 
 - Input arbitrary unicode characters by pressing Ctrl+Shift+u. You can choose
   characters by name, by hex code, by recently used, etc. There is even and
   editable Favorites list.
 
-- Open URLs using only the keyboard. kitty has a new "hints mode". Press
+- Open URLs using only the keyboard. smelly has a new "hints mode". Press
   Ctrl+Shift+e and all detected URLs on the screen are highlighted with a key
   to press to open them. The facility is customizable so you can change
   what is detected as a URL and which program is used to open it.
 
-- Add an option to change the titlebar color of kitty windows on macOS
+- Add an option to change the titlebar color of smelly windows on macOS
 
 - Only consider Emoji characters with default Emoji presentation to be two
   cells wide. This matches the standard. Also add support for the Unicode Emoji
@@ -3245,7 +3245,7 @@ Detailed list of changes
 0.7.0 [2018-01-24]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Allow controlling kitty from the shell prompt/scripts. You can
+- Allow controlling smelly from the shell prompt/scripts. You can
   open/close/rename windows and tabs and even send input to specific windows.
   See the README for details.
 
@@ -3272,7 +3272,7 @@ Detailed list of changes
 - macOS: Fix alt+arrow keys not working when disabling the macos_option_as_alt
   config option.
 
-- kitty icat: Workaround for bug in ImageMagick that would cause some images
+- smelly icat: Workaround for bug in ImageMagick that would cause some images
   to fail to display at certain sizes.
 
 - Fix rendering of text with ligature fonts that do not use dummy glyphs
@@ -3295,7 +3295,7 @@ Detailed list of changes
 - Add new actions to open windows/tabs/etc. with the working directory set to
   the working directory of the current window.
 
-- Automatically adjust cell size when DPI changes, for example when kitty is
+- Automatically adjust cell size when DPI changes, for example when smelly is
   moved from one monitor to another with a different DPI
 
 - Ensure underlines are rendered even for fonts with very poor metrics
@@ -3319,7 +3319,7 @@ Detailed list of changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Support background transparency via the background_opacity option. Provided
-  that your OS/window manager supports transparency, you can now have kitty
+  that your OS/window manager supports transparency, you can now have smelly
   render pixels that have only the default background color as
   semi-transparent.
 
@@ -3328,7 +3328,7 @@ Detailed list of changes
   the shortcut `ctrl+shift+n` to open a new top-level window.
 
 - Add support for a *daemon* mode using the `--single-instance` command line
-  option. With this option you can have only a single kitty instance running.
+  option. With this option you can have only a single smelly instance running.
   All future invocations simply open new top-level windows in the existing
   instance.
 
@@ -3340,7 +3340,7 @@ Detailed list of changes
 
 - Add a new "grid" window layout
 
-- Drop the dependency on glfw (kitty now uses a modified, bundled copy of glfw)
+- Drop the dependency on glfw (smelly now uses a modified, bundled copy of glfw)
 
 - Add an option to control the audio bell volume on X11 systems
 
@@ -3352,7 +3352,7 @@ Detailed list of changes
 - Add more options to customize the tab-bar's appearance (font styles and
   separator)
 
-- Allow drag and drop of files into kitty. On drop kitty will paste the
+- Allow drag and drop of files into smelly. On drop smelly will paste the
   file path to the running program.
 
 - Add an option to control the underline style for URL highlighting on hover
@@ -3386,12 +3386,12 @@ Detailed list of changes
 0.5.0 [2017-11-19]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Add support for ligature fonts such as Fira Code, Hasklig, etc. kitty now
+- Add support for ligature fonts such as Fira Code, Hasklig, etc. smelly now
   uses harfbuzz for text shaping which allow it to support advanced OpenType
   features such as contextual alternates/ligatures/combining glyphs/etc.
 
 - Make it easy to select fonts by allowing listing of monospace fonts using:
-  kitty list-fonts
+  smelly list-fonts
 
 - Add an option to have window focus follow mouse
 
@@ -3400,7 +3400,7 @@ Detailed list of changes
 - macOS: Fix handling of option key. It now behaves just like the alt key on
   Linux. There is an option to make it type unicode characters instead.
 
-- Linux: Add support for startup notification on X11 desktops. kitty will
+- Linux: Add support for startup notification on X11 desktops. smelly will
   now inform the window manager when its startup is complete.
 
 - Fix shell prompt being duplicated when window is resized
@@ -3408,7 +3408,7 @@ Detailed list of changes
 - Fix crash when displaying more than 64 images in the same session
 
 - Add support for colons in SGR color codes. These are generated by some
-  applications such as neovim when they mistakenly identify kitty as a libvte
+  applications such as neovim when they mistakenly identify smelly as a libvte
   based terminal.
 
 - Fix mouse interaction not working in apps using obsolete mouse interaction
@@ -3424,7 +3424,7 @@ Detailed list of changes
 
 - Fix a regression in 0.4.0 that broke support for non-QWERTY keyboard layouts
 
-- Avoid using threads to reap zombie child processes. Also prevent kitty from
+- Avoid using threads to reap zombie child processes. Also prevent smelly from
   hanging if the open program hangs when clicking on a URL.
 
 
@@ -3432,17 +3432,17 @@ Detailed list of changes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Support for drawing arbitrary raster graphics (images) in the terminal via a
-  new graphics protocol. kitty can draw images with full 32-bit color using both
+  new graphics protocol. smelly can draw images with full 32-bit color using both
   ssh connections and files/shared memory (when available) for better
   performance. The drawing primitives support alpha blending and z-index.
   Images can be drawn both above and below text. See :doc:`graphics-protocol`.
   for details.
 
-- Refactor kitty's internals to make it even faster and more efficient. The CPU
-  usage of kitty + X server while doing intensive tasks such as scrolling a
+- Refactor smelly's internals to make it even faster and more efficient. The CPU
+  usage of smelly + X server while doing intensive tasks such as scrolling a
   file continuously in less has been reduced by 50%. There are now two
   configuration options ``repaint_delay`` and ``input_delay`` you can use to
-  fine tune kitty's performance vs CPU usage profile. The CPU usage of kitty +
+  fine tune smelly's performance vs CPU usage profile. The CPU usage of smelly +
   X when scrolling in less is now significantly better than most (all?) other
   terminals. See :doc:`performance`.
 

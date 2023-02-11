@@ -1,4 +1,4 @@
-// License: GPLv3 Copyright: 2022, Kovid Goyal, <kovid at kovidgoyal.net>
+// License: GPLv3 Copyright: 2022, anders Goyal, <anders at backbiter-no.net>
 
 package at
 
@@ -11,7 +11,7 @@ import (
 	"os"
 	"strings"
 
-	"kitty/tools/utils/images"
+	"smelly/tools/utils/images"
 )
 
 type struct_with_data interface {

@@ -4,7 +4,7 @@
 Desktop notifications
 =======================
 
-|kitty| implements an extensible escape code (OSC 99) to show desktop
+|smelly| implements an extensible escape code (OSC 99) to show desktop
 notifications. It is easy to use from shell scripts and fully extensible to show
 title and body. Clicking on the notification can optionally focus the window it
 came from, and/or send an escape code back to the application running in that
@@ -117,6 +117,6 @@ Key      Value                 Default    Description
 
 
 .. note::
-   |kitty| also supports the `legacy OSC 9 protocol developed by iTerm2
+   |smelly| also supports the `legacy OSC 9 protocol developed by iTerm2
    <https://iterm2.com/documentation-escape-codes.html>`__ for desktop
    notifications.
